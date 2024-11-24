@@ -1,0 +1,57 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Pants_Name: "パンツ" #!String
+    Pants_Description: "パンツのウェアラブルペア。" #!String
+    FarmerPants_Name: "ファーマーパンツ" #!String
+    FarmerPants_Description: "この分野では長時間快適で丈夫。" #!String
+    Shorts_Name: "ショーツ" #!String
+    Shorts_Description: "暑い夏の日に最適...足に感謝。" #!String
+    Dress_Name: "ロングドレス" #!String
+    Dress_Description: "長くて華やかなドレス。" #!String
+    Skirt_Name: "スカート" #!String
+    Skirt_Description: "かわいいスカート。" #!String
+    PleatedSkirt_Name: "プリーツスカート" #!String
+    PleatedSkirt_Description: "かわいいプリーツスカート。" #!String
+    DinosaurPants_Name: "恐竜のパンツ" #!String
+    DinosaurPants_Description: "このパンツはずっと前に絶滅したと考えられていた！" #!String
+    GrassSkirt_Name: "グラススカート" #!String
+    GrassSkirt_Description: "乾いた草で作られたスカート。" #!String
+    LuauSkirt_Name: "ルアウスカート" #!String
+    LuauSkirt_Description: "「ルアウ」パーティーに参加するためのスカート！" #!String
+    GeniePants_Name: "魔神のパンツ" #!String
+    GeniePants_Description: "ボトム近くから吹き出したパンツ。あなたの願いは答えられました！" #!String
+    TightPants_Name: "タイトパンツ" #!String
+    TightPants_Description: "とてもタイトなパンツ。" #!String
+    BaggyPants_Name: "バギーパンツ" #!String
+    BaggyPants_Description: "パンツのルーズペア。" #!String
+    SimpleDress_Name: "シンプルドレス" #!String
+    SimpleDress_Description: "やわらかくて滑らかなミディアム丈のドレス" #!String
+    RelaxedFitPants_Name: "リラックスフィットパンツ" #!String
+    RelaxedFitPants_Description: "これらのパンツは足の部分に少し余裕があります。" #!String
+    RelaxedFitShorts_Name: "リラックスフィットショーツ" #!String
+    RelaxedFitShorts_Description: "これらのショーツは足の部分に少し余裕があります。" #!String
+    PolkaDotShorts_Name: "ポルカドットショーツ" #!String
+    PolkaDotShorts_Description: "おっと！" #!String
+    TrimmedLuckyPurpleShorts_Name: "ラッキーパープルショートパンツ" #!String
+    TrimmedLuckyPurpleShorts_Description: "豪華なゴールドが付いたパープルシルクショートパンツ..." #!String
+    PrismaticPants_Name: "プリズムパンツ" #!String
+    PrismaticPants_Description: "プリズムエネルギーできらめくパンツ。" #!String
+    PrismaticGeniePants_Name: "プリズムジニーパンツ" #!String
+    PrismaticGeniePants_Description: "プリズムエネルギーできらめくパンツ。" #!String
+

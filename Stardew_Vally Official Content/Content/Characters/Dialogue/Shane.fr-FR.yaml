@@ -1,0 +1,90 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Mon: "Je ne te connais pas. Pourquoi tu viens me parler ?" #!String
+    AcceptBirthdayGift_Loved: "Ho, c’est mon anniversaire ? J’espérais l’oublier.#$b#C’est vraiment très gentil. Merci.$h" #!String
+    AcceptBirthdayGift_Liked: "Ho, c’est mon anniversaire ? C’est vrai... J’ai failli oublier. Merci." #!String
+    GreenRain: "Je n’ai pas besoin d’aller travailler aujourd’hui, alors je ne vais pas me plaindre..." #!String
+    GreenRain_2: "Ho, il fait un temps bizarre aujourd’hui ? Je n’avais pas remarqué." #!String
+    AcceptGift_(O)StardropTea: "Hé... merci. Ça a le même goût que de la bière." #!String
+    FlowerDance_Accept: "Euh... bien sûr.#$e#Je ferais mieux d’arrêter de manger..." #!String
+    AcceptGift_(O)203: "Ho, c’est toi qui l’as fait ? *aplatît*... Euh... *tape*... Je pense que je vais m’en tenir aux pizzas surgelées. Mais merci quand même." #!String
+    eventSeen_611944_memory_oneweek: "As-tu essayé le nouveau Bubblerito de Joja ? J’en ai mangé deux d’un coup hier... C’était une mauvaise idée..." #!String
+    dating_Shane: "Je... Je ne m’attendais pas vraiment à ça, après tout ce que je t’ai fait subir..." #!String
+    dating_Shane_memory_oneday: "Je pense que je suis l’homme le plus chanceux du monde...$h" #!String
+    eventSeen_3910975: "Désolé que tu m’aies vu dans cet état, @...$s" #!String
+    eventSeen_3910975_memory_oneweek: "J’essaie de limiter ma consommation de boissons... ça ne va pas être facile." #!String
+    Resort_Entering: "Buh... J’espère que le bar est ouvert." #!String
+    Resort_Leaving: "Bon... Je me suis ressourcé en vitamine D pour le reste de l’année. Maintenant, je peux jouer aux jeux vidéo avec les stores fermés jusqu’à la fin de l’année." #!String
+    Resort_Shore: "C’est exact... Je ne porte pas de chaussures ou de chaussettes.#$b#Certains appellent ça un risque pour la santé publique.#$b#Par contre, les crabes semblent adorer.$h" #!String
+    Resort_Chair: "Oh... Ça fait du bien de reposer mes bons petits cuissots.#$b#Si quelqu’un a besoin de moi, je serai assis ici, en train de me prélasser." #!String
+    Resort_Bar: "Pfiou... ça fait du bien de boire une boisson fraîche...#$e#Peut-être même plus qu’une..." #!String
+    Resort: "Ok, ce sable est brulant. Je regrette de ne pas avoir mis de chaussures...$s" #!String
+    FlowerDance_Accept_Spouse: "Danser ? Oh. D’accord... laisse-moi boire un peu plus avant..." #!String
+    FlowerDance_Decline: "... Non.$s" #!String
+    pamHouseUpgrade: "J’ai entendu dire que tu avais construit une maison pour Pam... C’est vraiment très généreux...#$b#Tu sais, moi aussi j’aurais besoin de 100 000 pièces d’or.#$e#... Euh... Je plaisante. ...Ha ha." #!String
+    pamHouseUpgradeAnonymous: "J’ai entendu dire que quelqu’un a acheté une maison pour Pam... *Soupir*... Qu’est-ce que Pam a fait pour mériter une telle générosité !" #!String
+    divorced: "...$a#$e#... Laisse-moi tranquille.$a" #!String
+    breakUp: "*Avale sa salive* Oh... euh, d’accord... J’aurais dû voir ça venir.$s#$b#Je... euh... j’imagine que je te verrai au bar." #!String
+    dumped_Guys: "%Shane a un regard vitreux. Il ne te parlera pas." #!String
+    secondChance_Guys: "Je ne te comprends pas... *Soupir*..." #!String
+    Mon2: "Je te connais à peine. Pourquoi tu viens me parler ?||À quoi bon me parler ? Je ne veux pas d’amis." #!String
+    Mon4: "Hé. Désolé si je me suis montré désagréable lors de notre première rencontre.#$e#Il me faut du temps pour m’ouvrir aux inconnus.||Ça demande beaucoup d’efforts d’être ami avec quelqu’un. C’est plus facile d’être seul." #!String
+    Mon6: "Je vais être honnête, je ne comprends toujours pas pourquoi tu veux te lier d’amitié avec moi.||La vie n’est pas juste, et je ne peux pas m’empêcher de me sentir amer à ce sujet." #!String
+    Mon10: "Tu n’as jamais eu le sentiment que le monde entier t’observe comme si tu étais un insecte dégoutant ?" #!String
+    Tue: "Quoi ? Qu’est-ce que tu veux ? Va-t’en." #!String
+    Tue2: "Qu’est-ce que tu veux ? De l’argent ? Je te donnerais un pot d’or si tu me laisses tranquille !" #!String
+    Tue4: "Chaque fois que j’essaie quelque chose de nouveau, ça se passe très mal. Du coup, je me suis forgé une carapace." #!String
+    Tue6: "La vie n’est pas si mal... au moins j’ai des pizzas surgelées et des oeufs.$u" #!String
+    Tue8: "Nous devrions aller voir un match des Tunneliers un de ces jours. Quand j’y vais seul, je bois souvent beaucoup trop de bière." #!String
+    Tue10: "Il faut que je me tienne à carreau pour le bien de Jas. Je ne veux pas être un mauvais modèle parental pour elle.||Je suis un peu comme une figure paternelle pour Jas. J’espère juste que je ne l’ai pas trop déçue.$s" #!String
+    Wed: "Non, je n’ai pas le temps de discuter avec toi." #!String
+    Wed8: "Je me suis attaché à Marnie et Jas. On forme un drôle de groupe mais on se sent comme une famille un peu étrange.#$e#Je n’ai jamais vraiment eu une famille quand j’étais enfant.$s" #!String
+    Wed4: "$d Joja#*Soupir*... Chaque jour se ressemble. Stocker ces horribles étagères, aller au saloon, tourner dans son lit toute la nuit.$s|Je détestais mon travail au Marché Joja, mais maintenant que je suis au chômage, je me sens encore pire.$s" #!String
+    Thu: "Qu’est-ce que tu veux ? Laisse-moi tranquille." #!String
+    Thu4: "Tu es tenace. Je suis juste surpris que quelqu’un puisse avoir envie de me parler." #!String
+    Thu6: "Euh... Où est la Joja Cola ?||Pourquoi essayer ? La vie, c’est juste un coup de dés.#$e#Quand ils ont lancé les miens, les dés sont tombés de la table." #!String
+    Thu8: "Tu aimes parler avec moi ? Je veux bien te croire... peut-être que tu es aussi bizarre que moi.$h" #!String
+    Fri: "Tu n’as pas de travail à faire ?" #!String
+    JojaMart: "%Shane travaille. Il n’a pas l’air de vouloir discuter." #!String
+    Fri4: "$d Joja#Quel est l’intérêt de vivre si on passe son temps à travailler ?|Je n’ai pas pu payer mon loyer, mais Marnie me permet quand même de rester. J’ai de la chance." #!String
+    Fri6: "Je vais certainement aller au saloon ce soir. Qu’est-ce que je pourrais bien faire d’autre ?" #!String
+    Fri8: "Beurk... Tu imagines à quel point mon foie doit être dégoûtant ?$s#$e#Mon corps a l’impression d’avoir vingt ans de plus qu’il ne devrait...$s" #!String
+    Fri10: "Mon corps me fait beaucoup moins souffrir depuis que j’ai réduit ma consommation d’alcool...#$e#Mais j’ai toujours l’impression d’être au bord du gouffre...$s" #!String
+    Sat: "Pourquoi tu me déranges ? J’ai envie d’être seul." #!String
+    Sat2: "#$1 ShaneJOSH#Je suis surpris que tu veuilles te lier d’amitié avec moi. Je n’ai pas été assez désagréable avec toi ?#$e#*Soupir*...$s" #!String
+    Sat4: "$d Joja#Je loue une chambre à Marnie à un très bon prix. C’est petit, mais je ne vais pas me plaindre.|Si je pouvais reprendre ma vie à zéro, j’achèterais une ferme de poulets. Uniquement des poules en liberté, bien sûr." #!String
+    Sat8: "Je suis vraiment attaché aux poules de Marnie.$h||Une poule ne te laissera jamais tomber. Les humains, par contre..." #!String
+    Sat10: "Ta ferme semble être un endroit idéal pour élever des poules.$h" #!String
+    Sun: "Je suis occupé, ça ne se voit pas ?||...Je n’ai pas envie de parler à qui que ce soit." #!String
+    Sun2: "Encore toi ? Combien de fois dois-je te dire de me laisser tranquille ?$s" #!String
+    Sun4: "Mmm... il est %time. Est-ce que je fais réchauffer une pizza au micro-onde ou j’attends encore un peu ?$u||Si les Tunnelers gagnent, je boirai une bière bien fraîche pour fêter ça.#$e#S’ils perdent ? J’en prendrai une pour noyer mon chagrin." #!String
+    Sun6: "... Je crois que je suis en train de prendre du poids.$s" #!String
+    Sun8: "Si je regardais encore plus la télé, ça me permettrait d’oublier ma vie. Ça serait reposant.$u" #!String
+    Sun10: "Salut, @. Ma journée ne s’est pas trop mal passée jusqu’à présent.$h" #!String
+    event_room1: "D’accord... mais il faudra un bon script. Je demanderai peut-être des conseils à Elliott la prochaine fois que je le verrai au saloon.$s" #!String
+    event_room2: "Ça a l’air génial. Je vais créer un tas d’effets pour que ce soit vraiment cool." #!String
+    event_noLoan1: "Je ne savais pas que tu étais si avare...$s" #!String
+    event_noLoan2: "OK, papa...$s^OK, maman...$s" #!String
+    event_noLoan3: "Oh, waouh...$s" #!String
+    event_apologize1: "... Oui, moi aussi." #!String
+    event_apologize2: "Je sais... c’est pour ça que je suis venu t’en parler." #!String
+    event_apologize3: "Waouh, c’était si grave que ça ? Je m’en souviens à peine..." #!String
+    event_stadium1: "Ah, oui ? C’est logique.$6#$b#Moi ? Je m’ennuie parfois à Pélican Ville.#$b#Mais... ça me plaît que tu ne sois pas comme les autres. Comme ça, nous nous complétons l’un, l’autre.$l" #!String
+    event_stadium2: "Ah, vraiment ? Je suis surpris... Je croyais que tu avais emménagé à Stardew Valley pour échapper au bruit de la ville ?$6#$b#Je veux dire... Ne te méprends pas, je comprends parfaitement. Après tout, ma vie est insipide à Pélican Ville." #!String
+

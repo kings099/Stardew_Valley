@@ -1,0 +1,68 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Rainy_Day_0: "Con todo este espacio, puedo entrenar el cuerpo por completo." #!String
+    Rainy_Day_1: "Nunca he tenido muchos amigos en el pueblo... A veces me pregunto qué hubiera sido de mí si tú no hubieras venido.$9" #!String
+    Rainy_Day_2: "¡Oh...! Iba a salir a hacer jogging. Pero no puedo con este tiempo." #!String
+    Rainy_Day_3: "*Meh...* Me acabo de despertar y me apetecen proteínas.$9" #!String
+    Rainy_Day_4: "A lo mejor empiezo a leer libros. ¡No me quiero estancar ahora que soy un tío casado!" #!String
+    patio_Alex: "Unghh... uno... Unghhh... dos.. ¡Qué maravilla levantar pesas fuera de casa!$6" #!String
+    Rainy_Night_0: "¿Ey, has tenido un buen día? Seguro que mañana es aún mejor.$h" #!String
+    Rainy_Night_1: "¿Cómo va eso? Llevo paseando mi pelota de gridball todo el día. Aunque solo sea para guardar las apariencias...$u" #!String
+    Rainy_Night_2: "Oh... ¿Este olor? Llevo comiendo ajo todo el día. Estoy intentando mantenerme viril... Lo siento.$l" #!String
+    Rainy_Night_3: "He estado guardando sobras para Dusty. Se merece un premio de vez en cuando." #!String
+    Rainy_Night_4: "Tenía hambre, así que he hecho la cena. Toma, te he guardado un plato. [241 242 225 214 198]$h" #!String
+    Indoor_Day_0: "Ahh... ¡Nada como una noche arropada junto a mi marido!$h^Ahh... ¡Nada como una noche arropada junto a mi mujer!$h" #!String
+    Indoor_Day_1: "¡Ey, cariño! Te he preparado un desayuno calentito.[195 210 211]#$e#¡Si quieres estar fuerte, tendrás que comer en serio!" #!String
+    Indoor_Day_2: "Ven aquí. *Espachurre*Mmhmm. Te estás poniendo en forma con todo ese trabajo en la granja." #!String
+    Indoor_Day_3: "Aún me estoy acostumbrando a cocinar y a hacer la colada... No son mis actividades favoritas, precisamente, pero ya sabía a lo que venía cuando me casé contigo.$h" #!String
+    Indoor_Day_4: "Hay un par de cosillas en casa que voy a intentar arreglar hoy. No te preocupes, yo no me aburro." #!String
+    Indoor_Night_0: "Poner el cuerpo al límite sienta muy bien, ¿a que sí? Creo que hoy te has ganado tu lugar en nuestra cama blandita." #!String
+    Indoor_Night_1: "¿Te has cortado el pelo o algo? Tienes muy buen aspecto hoy. A lo mejor es por el aire fresco...$l" #!String
+    Indoor_Night_2: "Cuéntame qué tal el día. Es bueno desahogarse de vez en cuando." #!String
+    Indoor_Night_3: "Ey... Me he comprado unos pantalones nuevos. Por si te interesa saberlo...$l" #!String
+    Indoor_Night_4: "Si necesitas tiempo para ti, por mí no hay problema." #!String
+    Outdoor_0: "Buenas. Cuando estoy aquí y observo nuestra tierra... El orgullo me invade. Has hecho un gran trabajo." #!String
+    Outdoor_1: "Este lugar es genial para tener hijos. Me hubiera encantado vivir en un lugar así cuando era pequeño. ¡Con tanto espacio para correr!" #!String
+    Outdoor_2: "Me gusta estar fuera todo el tiempo posible. Simplemente, me siento mejor al aire libre." #!String
+    Outdoor_3: "Míranos, aquí en nuestra granjita. Hacemos una pareja muy mona.$h^Ey. Quizá sea por esta luz dorada, pero hoy estás resplandeciente.$l" #!String
+    Outdoor_4: "Ahh... Qué bien se está aquí fuera. Stardew Valley es un lugar precioso..." #!String
+    OneKid_0: "Aún me estoy acostumbrando a mi nueva vida como papá y amo de casa.$h" #!String
+    OneKid_1: "%kid1 va a ser muy fuerte, igual que su papá." #!String
+    OneKid_3: "Me pregunto cómo es eso de estar embarazada...$h" #!String
+    TwoKids_2: "A lo mejor %kid2 consigue participar en la liga profesional de gridball. ¡Nadie en Pueblo Pelícano lo ha logrado aún!$h" #!String
+    TwoKids_3: "Por fin tengo la vida familiar que de niño no tuve... Gracias.$l" #!String
+    Good_0: "@... Siempre te querré.$l" #!String
+    Good_1: "Eres muy guapo... ¿Te lo había dicho alguna vez?$l^Eres preciosa... ¿Te lo había dicho alguna vez?$l" #!String
+    Good_6: "Sé que eres fuerte, pero a veces me preocupa que se te coman las babas... O algo peor. Ten cuidado.$9" #!String
+    funLeave_Alex: "Hoy me voy al pueblo. Nos vemos esta noche." #!String
+    funReturn_Alex: "Hoy he tenido un buen día. Me gusta ir a ver a mis abuelos a menudo, están ya muy mayores." #!String
+    spring_1: "¡Por fin se ha derretido la nieve y ha vuelto el sol! Me siento genial.$h" #!String
+    spring_6: "Me pregunto si el polvo de fruta estelar me ayudaría a ponerme cachas..." #!String
+    spring_12: "¿Tienes ganas de que llegue el festival de mañana? Supongo que es momento de hacerse con un montón de huevos gratis." #!String
+    spring_23: "Oh... La danza floral es mañana, ¿no? Más vale que haga unas flexiones extra esta noche.$9#$e#Los trajes de baile van bastante apretados... Y todo el mundo se fija mucho." #!String
+    summer_1: "El verano es una estación muy enérgica, ¡y el cuerpo también lo nota! Estoy macizo." #!String
+    summer_10: "¿Has pensado ya qué vas a echar en la sopa del luau?#$e#No tengo ni idea de qué puede combinar bien... ¡La cocina se te da mejor a ti!$h" #!String
+    summer_27: "Oh... El verano ya casi ha acabado. Mis músculos empiezan a desinflarse...$s" #!String
+    fall_1: "Bueno, se acabó el verano... Pero voy a seguir siendo positivo. Las estaciones cálidas siempre vuelven." #!String
+    fall_15: "Mañana es la feria, ¿vamos a ir?#$e#A mí me da lo mismo." #!String
+    fall_26: "Espero que mis abuelos estén bien. El yayo es tan tacaño que no enciende la calefacción hasta que no le queda otro remedio." #!String
+    winter_1: "Asegúrate de no pasar frío este invierno. Me preocupa tu delicada piel." #!String
+    winter_7: "¿Vas a participar en el concurso de pesca de mañana? ¡Creo que podrías ganarlo!" #!String
+    winter_28: "Ha sido un año genial, @. ¡Qué ganas de que llegue el próximo año! Ahora acércate... $l" #!String
+

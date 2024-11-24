@@ -1,0 +1,25 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    winter_18.000: "Ma meg kell látogatnom az orvost, de én nem félek!" #!String
+    winter_15.001: "Bárcsak elég idős lennék ahhoz, hogy megnézhessem a sellős műsort...$s" #!String
+    winter_18.001: "Megmutatná nekem Dr. Harvey, hogy ez az eszköz hogyan működik?" #!String
+    summer.000: "1... 2... 3... 4... Itt jön a hullám! *kacaj*$h" #!String
+    winter_15.000: "1... 2... 3... 4... Jaj ne! Már megint elrontottam." #!String
+    spring.000: "1... 2... 3... 4... Jaj ne! Már megint elrontottam." #!String
+

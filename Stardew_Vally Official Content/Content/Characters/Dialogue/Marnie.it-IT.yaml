@@ -1,0 +1,59 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Introduction: "Ah, il sindaco Lewis mi ha detto che sei qui da pochissimo. Sono Marnie!#$e#Vendo bestiame e prodotti per la cura degli animali al mio ranch. Dovresti passarci ogni tanto.$h" #!String
+    AcceptGift_(O)StardropTea: "Wow, un milione di grazie, @. Me ne ricorderò!" #!String
+    AcceptGift_(O)SkillBook_0: "Grazie, @. Sono sempre contenta di avere una copia dell'Almanacco a disposizione. È molto accurato!$h" #!String
+    gotPet: "Penso che ti piacerà avere un amichetto con te alla fattoria." #!String
+    gotPet_memory_oneday: "Sicuramente %pet sarà un po' titubante all'inizio. Ci vuole del tempo perché un animale si trovi a suo agio in un nuovo ambiente." #!String
+    gotPet_memory_oneweek: "Si sta ambientando %pet alla fattoria? È un bel territorio da esplorare per un animale." #!String
+    gotPet_memory_oneyear: "Mi sono appena ricordata... che è passato un anno, più o meno, da quando hai adottato %pet. Scommetto che ormai siete inseparabili!" #!String
+    structureBuilt_Stable: "Oh, hai preso un cavallo? Stupendo! I cavalli sono animali incredibili.$h" #!String
+    dating_Shane_memory_oneweek: "Ultimamente, sembra che a Shane sia tornata la speranza e la voglia di vivere.#$b#Sono davvero felice che tu sia qui, e che vada così d'accordo con lui!$h" #!String
+    married_Shane: "Sono contenta che Shane si trasferisca alla tua fattoria... Può tenere viva la tradizione di famiglia!" #!String
+    Resort: "Hehe... finalmente posso raccogliere i frutti della fatica fatta al circolo di aerobica.$h" #!String
+    Resort_Leaving: "Mi sono scaldata." #!String
+    Resort_Shore: "Hii hii... È interessante vedere tutti in costume da bagno." #!String
+    Resort_Chair: "Bleh... la sedia è bagnata." #!String
+    Resort_Bar: "Fiù... Che caldo!$s" #!String
+    reject_789: "Gah!$4#$b#...Ehm... Cosa? Heh.. Non so cosa sia...$3" #!String
+    Mon: "Io amo gli animali, signor @. Se tratti i tuoi come si deve, sono sicura che diverremo buoni amici!^Io adoro gli animali, signorina @. Trattali bene e saremo grandi amiche, ne sono certa!" #!String
+    Mon4: "Gli animali sono così innocenti, così dolci. E se non mi prendo cura io di loro, chi lo farà?$s#$e#Spero solo che le mie galline non si offendano troppo, quando prendo le loro uova.$s" #!String
+    Thu_2: "Ormai sei qui da un po'... come va la fattoria?#$e#È facile prendersi cura degli animali: basta non dimenticarsene!$h" #!String
+    Saloon: "Ora che sono qui posso rilassarmi, finalmente, e socializzare un po'." #!String
+    Saloon_Tue: "Oggi non ci sono molte persone qui...$s" #!String
+    Saloon_Wed: "#$1 marnieAnimalSal#Oggi ho rovesciato per terra un intero secchio di latte, è stato orribile. E il duro lavoro della mia povera Belinda, sprecato!$k$s#$e#Che bello che ci sia anche tu! Adesso c'è un po' più di vita." #!String
+    Saloon_Thu: "Fiù! Certo che è un gran piacere riposarsi, dopo una giornata di duro lavoro." #!String
+    Saloon_Fri: "%Marnie non sembra notare che ci sei..." #!String
+    Saloon_Sun: "*sospira*... Oggi non sono stata molto produttiva." #!String
+    Saloon_Sat: "Vedo sempre Clint qui, ma non parla mai con nessuno. Si limita, ogni tanto, a lanciarsi un'occhiata dietro le spalle.$s" #!String
+    Tue: "$query PLAYER_NPC_RELATIONSHIP any Shane married roommate#Ora che Shane se n'è andato, dovrò insegnare a Jas a badare ai polli.|Mio nipote Shane sta a casa mia da qualche mese.#$e#Mi dà una mano con i polli, quindi non mi lamento." #!String
+    GreenRain: "Questa pioggia non ti preoccupa? Allora sono un po' più tranquilla...#$e#Spero solo che le mucche si facciano una scorpacciata...$s" #!String
+    GreenRainFinished: "Beh, a quanto pare ci siamo spaventati tutti per nulla... La pioggia era totalmente innocua!" #!String
+    GreenRain_2: "Sembra che la pioggia piaccia agli animali... Credo che metta nutrienti extra nell'erba." #!String
+    Wed: "Puoi usare una falce per tagliare l'erba e farne mangime.#$e#Oppure puoi comprarlo da me, ovviamente!$h#$e#Il denaro mi farebbe comodo...$u#$e#Adios." #!String
+    Thu: "Ciao. Serve niente?#$e#Forse in futuro prenderò animali diversi.#$e#Anche se bisognerà che m'accerti che ci sia la richiesta, per cui prima dovrai dimostrare la tua bravura nell'allevamento.#$e#Basta che continui a trattare i tuoi animali con rispetto, e succederanno cose buone." #!String
+    Fri: "La gran parte delle serate, mi trovi al saloon.#$e#Gli animali tengono molta compagnia, ma ho bisogno di stare anche con le persone." #!String
+    Fri6: "Mi chiedo se il signor Lewis si senta solo in quella sua grande villa... $s#$e#Sembra essere così vuota, non trovi?" #!String
+    Sat: "Hai visitato la strana torre a ovest di casa mia?#$e#Una volta ho sentito provenire da lì un rumore terribile, ultraterreno.$s#$e#Se fossi in te, girerei al largo..." #!String
+    Sun: "Ehilà, che bello vederti!#$e#Facci pure visita tutte le volte che vuoi." #!String
+    Sun8: "Ciao @!$h#$e#Sono contenta che abbiamo legato. So che posso fidarmi di te, per la cura dei miei animali." #!String
+    Fair_Judging: "Beh, o la va o la spacca..." #!String
+    Fair_Judged: "Beh, non ho vinto... ma è stato comunque appagante condividere il mio duro lavoro!" #!String
+    Fair_Judged_PlayerLost_PurpleShorts: "Era una lattuga viola proprio strana, quella della tua bancarella!$h#$b#Giuro, mi ha ricordato un sacco il sindaco e quelle sue mut... $3#$b#Oh!... heh... lascia stare!$4" #!String
+

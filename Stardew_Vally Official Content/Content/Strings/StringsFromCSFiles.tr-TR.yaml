@@ -1,0 +1,1694 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Buff.cs.453: "Yanık" #!String
+    Buff.cs.456: "Tok" #!String
+    Buff.cs.457: "Su Verilmiş" #!String
+    Buff.cs.458: "Sarsılmış" #!String
+    Buff.cs.460: "Balçıklanmış" #!String
+    Buff.cs.462: "Ürkmüş" #!String
+    Buff.cs.464: "Büyülenmiş" #!String
+    Buff.cs.466: "Donmuş" #!String
+    Buff.cs.468: "Savaşçı Enerjisi" #!String
+    Buff.cs.470: "Yoba'nın Kutsaması" #!String
+    Buff.cs.471: "Yenilmez" #!String
+    Buff.cs.472: "Adrenalin Akışı" #!String
+    Buff.cs.474: "Sarımsak Yağı" #!String
+    Buff.cs.475: "Cildin keskin bir koku yayar." #!String
+    Buff.cs.476: "Süre: " #!String
+    Buff.cs.480: " Çiftçilik" #!String
+    Buff.cs.483: " Balıkçılık" #!String
+    Buff.cs.486: " Madencilik" #!String
+    Buff.cs.489: " Şans" #!String
+    Buff.cs.492: " Toplayıcılık" #!String
+    Buff.cs.495: " Toplam Enerji" #!String
+    Buff.cs.498: " Çekim Alanı" #!String
+    Buff.cs.501: " Savunma" #!String
+    Buff.cs.504: " Saldırı" #!String
+    Buff.cs.507: " Hız" #!String
+    Buff.cs.508: "Kaynak: " #!String
+    CraftingRecipe.cs.567: "Malzemeler:" #!String
+    CraftingRecipe.cs.568: "Yeşillik (Herhangi Bir)" #!String
+    CraftingRecipe.cs.569: "Değerli Taş (Herhangi Bir)" #!String
+    CraftingRecipe.cs.570: "Sebze (Herhangi Bir)" #!String
+    CraftingRecipe.cs.571: "Balık (Herhangi Bir)" #!String
+    CraftingRecipe.cs.572: "Yumurta (Herhangi Bir)" #!String
+    CraftingRecipe.cs.573: "Süt (Herhangi Bir)" #!String
+    CraftingRecipe.cs.574: "Yabani Tohum (Herhangi Bir)" #!String
+    CraftingRecipe.cs.575: "Yanlış Nesne" #!String
+    UnnamedItem: "İsimsiz Nesne" #!String
+    Crop.cs.588: "Envanter Dolu" #!String
+    Debris.cs.621: "Bakır" #!String
+    Debris.cs.622: "Demir" #!String
+    Debris.cs.623: "Kömür" #!String
+    Debris.cs.624: "Altın" #!String
+    Debris.cs.625: "Sikke" #!String
+    Debris.cs.626: "İridyum" #!String
+    Debris.cs.627: "Odun" #!String
+    Debris.cs.628: "Taş" #!String
+    Debris.cs.629: "Yakıt" #!String
+    Debris.cs.630: "Kuvars" #!String
+    Dialogue.cs.679: "Mor" #!String
+    Dialogue.cs.680: "Yapışkan" #!String
+    Dialogue.cs.681: "Kireçli" #!String
+    Dialogue.cs.682: "Yeşil" #!String
+    Dialogue.cs.683: "Pelüş" #!String
+    Dialogue.cs.684: "Bodur" #!String
+    Dialogue.cs.685: "Devasa" #!String
+    Dialogue.cs.686: "Kaygan" #!String
+    Dialogue.cs.687: "Kasvetli" #!String
+    Dialogue.cs.688: "Pratik" #!String
+    Dialogue.cs.689: "Uzun" #!String
+    Dialogue.cs.690: "Uyuşuk" #!String
+    Dialogue.cs.691: "Huysuz" #!String
+    Dialogue.cs.692: "Şahane" #!String
+    Dialogue.cs.693: "Sert" #!String
+    Dialogue.cs.694: "Aptal" #!String
+    Dialogue.cs.695: "Cesur" #!String
+    Dialogue.cs.696: "Mantıklı" #!String
+    Dialogue.cs.697: "Yalnız" #!String
+    Dialogue.cs.698: "Acı" #!String
+    Dialogue.cs.699: "Ejderha" #!String
+    Dialogue.cs.700: "Büfe" #!String
+    Dialogue.cs.701: "Bisküvi" #!String
+    Dialogue.cs.702: "Robot" #!String
+    Dialogue.cs.703: "Gezegen" #!String
+    Dialogue.cs.704: "Biber" #!String
+    Dialogue.cs.705: "Mezar" #!String
+    Dialogue.cs.706: "Sırtlan" #!String
+    Dialogue.cs.707: "Dudak" #!String
+    Dialogue.cs.708: "Bıldırcın" #!String
+    Dialogue.cs.709: "Peynir" #!String
+    Dialogue.cs.710: "Felaket" #!String
+    Dialogue.cs.711: "Yağmurluk" #!String
+    Dialogue.cs.712: "Ayakkabı" #!String
+    Dialogue.cs.713: "Kale" #!String
+    Dialogue.cs.714: "Elf" #!String
+    Dialogue.cs.715: "Pompa" #!String
+    Dialogue.cs.716: "Gevrek" #!String
+    Dialogue.cs.717: "Peruk" #!String
+    Dialogue.cs.718: "Denizkızı" #!String
+    Dialogue.cs.719: "Baget" #!String
+    Dialogue.cs.720: "Kukla" #!String
+    Dialogue.cs.721: "Denizaltı" #!String
+    Dialogue.cs.722: "kaçtı" #!String
+    Dialogue.cs.723: "dans etti" #!String
+    Dialogue.cs.724: "konuştu" #!String
+    Dialogue.cs.725: "koşturdu" #!String
+    Dialogue.cs.726: "yedi" #!String
+    Dialogue.cs.727: "süzüldü" #!String
+    Dialogue.cs.728: "durdu" #!String
+    Dialogue.cs.729: "aktı" #!String
+    Dialogue.cs.730: "koktu" #!String
+    Dialogue.cs.731: "yüzdü" #!String
+    Dialogue.cs.732: "kızardı" #!String
+    Dialogue.cs.733: "çatladı" #!String
+    Dialogue.cs.734: "eridi" #!String
+    Dialogue.cs.735: "üstünde" #!String
+    Dialogue.cs.736: "yakınında" #!String
+    Dialogue.cs.737: "ile birlikte" #!String
+    Dialogue.cs.738: "yanında" #!String
+    Dialogue.cs.739: "uzağında" #!String
+    Dialogue.cs.740: "çok yakınında" #!String
+    Dialogue.cs.741: "tehlikeli derecede yakınında" #!String
+    Dialogue.cs.742: "çok ama çok uzağında" #!String
+    Dialogue.cs.743: "rahatsız edecek şekilde yakınında" #!String
+    Dialogue.cs.744: "çok üstünde" #!String
+    Dialogue.cs.745: "çok altında" #!String
+    Dialogue.cs.746: "farklı bir gezegenden" #!String
+    Dialogue.cs.747: "farklı bir yüzyıldan" #!String
+    Dialogue.cs.748: "Kale Kasabası" #!String
+    Dialogue.cs.749: "Sepet Kasabası" #!String
+    Dialogue.cs.750: "Çamova Şehri" #!String
+    Dialogue.cs.751: "Ejder Burnu" #!String
+    Dialogue.cs.752: "Bakar Vadi" #!String
+    Dialogue.cs.753: "Ozanlıköy" #!String
+    Dialogue.cs.754: "Zuzu Şehri" #!String
+    Dialogue.cs.755: "sahile yakın küçük bir ada" #!String
+    Dialogue.cs.756: "Josa Kalesi" #!String
+    Dialogue.cs.757: "Konakdere" #!String
+    Dialogue.cs.758: "Eğrelti Otu Adaları" #!String
+    Dialogue.cs.759: "Odacık Korusu" #!String
+    Dialogue.cs.792: "Merhaba." #!String
+    Dialogue.cs.793: "bebek" #!String
+    Dialogue.cs.794: "ikinci bebek" #!String
+    Dialogue.cs.795: "/koyu kırmızı" #!String
+    Dialogue.cs.796: "/yeşil" #!String
+    Dialogue.cs.797: "/esmer" #!String
+    Dialogue.cs.798: "/mor" #!String
+    Dialogue.cs.799: "/koyu mavi" #!String
+    Dialogue.cs.800: "/neon pembesi" #!String
+    Dialogue.cs.801: "/açık/sarı" #!String
+    Dialogue.cs.802: "/koyu/kahverengi" #!String
+    Dialogue.cs.803: "/gök/mavisi" #!String
+    Dialogue.cs.804: "/sakız/pembesi" #!String
+    Dialogue.cs.805: "/kan/kırmızısı" #!String
+    Dialogue.cs.806: "/açık/turuncu" #!String
+    Dialogue.cs.807: "/deniz/yeşili" #!String
+    Dialogue.cs.808: "/gümüş" #!String
+    Dialogue.cs.809: "/parıldayan/altın" #!String
+    Dialogue.cs.810: "/gökkuşağı" #!String
+    Event.cs.1018: "Kendimi bilmezlik etmiş olabilirim... Özür dilerim.$5" #!String
+    Event.cs.1020: "Laboratuvarda yardımcı olduğun için teşekkürler.$h" #!String
+    Event.cs.1025: "Harika bir törendi. Tebrikler!$h" #!String
+    Event.cs.1057: "Ay..." #!String
+    Event.cs.1058: "Sanırım {0}g düşürmüşüm." #!String
+    Event.cs.1060: "Sanırım çantamdan " #!String
+    Event.cs.1061: "bir nesne düşürmüşüm." #!String
+    Event.cs.1062: "{0} nesne düşürmüşüm." #!String
+    Event.cs.1063: ", ve " #!String
+    Event.cs.1068: "Muayene için Dr. Harvey'e {0}g ödeyeceğim." #!String
+    Event.cs.1070: "Param yok. Yine de Harvey hayatımı kurtarmak zorundaydı." #!String
+    Event.cs.1071: "Sanırım şunları da kaybetmişim, " #!String
+    Event.cs.1159: "1.000g alındı " #!String
+    Event.cs.1164: "2.000g alındı " #!String
+    Event.cs.1220: "Mantarlar" #!String
+    Event.cs.1222: "Yarasalar" #!String
+    Event.cs.1223: "Hangisini tercih edersin? " #!String
+    Event.cs.1236: "İsim Seç" #!String
+    AdoptPet: "Bu {0} sahiplenecek misin?" #!String
+    Event.cs.1242: "(kediyi)" #!String
+    Event.cs.1243: "(köpeği)" #!String
+    Event.cs.1257: "Yazmayı tamamladığım kitabım bir gizem romanı oldu çıktı! Bana gizemi sevdiğini söylediğin zamanı hatırlıyor musun?$h#$b#İşte '%book', aldatma ve entrikalarla dolu nefes kesici bir hikaye!$u#$b#Neredeyse geliri seninle paylaşmam gerekiyormuş gibi düşüneceğim, özellikle de bana ne kadar yardımcı olduğunu düşünürsek!$h" #!String
+    Event.cs.1258: "Yazmayı tamamladığım kitabım bir aşk romanı oldu çıktı! Bir keresinde aşk romanlarını sevdiğini söylemiştin. Son zamanlarda hayatımda yaşananlardan da ilham almadım değil. $l#$b#İşte '%book'. Bir tren görevlisi, seyahat etmekte olan bir mimara aşık oluyor... Gel gör ki mimarımız kondüktörün kızı ile nişanlı! #$b#Geliri seninle paylaşmam gerektiğini düşünmeme *az kaldı*, özellikle de bana ne kadar yardımcı olduğunu düşünürsek!$h" #!String
+    Event.cs.1259: "Yazmayı tamamladığım kitabım bir bilim kurgu romanı oldu çıktı! Bilim kurguyu sevdiğini söylediğin günü hatırlıyor musun?$h#$b#İşte '%book'. Bir çocuk, yarı telepatik bir yaşam formu ile ortakyaşar bir ilişki kuruyor. Birlikte yıldızlararası bir komplonun karanlık gizemlerini ortaya çıkartıyorlar.$u#$b#Geliri seninle paylaşmam gerektiğini düşünmeme *az kaldı*, özellikle de bana ne kadar yardımcı olduğunu düşünürsek!$h" #!String
+    Event.cs.1260: "Kitabımı yazmayı tamamladım! $h#$b#İşte '%book'. Devlet adına çalışan bir haritacı küçük, ayrık bir maden kasabasını ziyaret ediyor... ve rahatsız edici sırlardan haberdar oluyor.$u#$b#Geliri seninle paylaşmam gerektiğini düşünmeme *az kaldı*, özellikle de bana ne kadar yardımcı olduğunu düşünürsek!$h" #!String
+    Event.cs.1306: "Son görüşmemizden bu yana çiftlik pek değişmemiş... Bu hiç sıkıntı değil.#$b#Benim için önemli olan tek şey yeni hayatından memnun olman...#$b#Şimdilik öteki dünyaya dönmem gerekiyor... Hazır olduğunda tekrardan beni çağırabilirsin." #!String
+    Event.cs.1307: "Son görüşmemizden bu yana çiftliği geliştirerek iyi iş çıkarmışsın.#$b#Elinden geleni yapmışsın... Daha fazlasını isteyemem zaten. Seninle gurur duyuyorum.#$b#Şimdilik öteki dünyaya dönmem gerekiyor... Hazır olduğundan beni çağırabilirsin." #!String
+    Event.cs.1308: "Aferin oğlum.^Aferin yavrum.#$b#%farm Çiftliği hiç bu kadar iyi görünmemişti. Soyadımızın hakkını veriyorsun.#$b#Büyükbaban durumdan memnun.#$b#Şimdilik öteki dünyaya dönmem gerekiyor... Hazır olduğundan beni çağırabilirsin." #!String
+    Event.cs.1309: "Evladım, seninle gurur duyuyorum!^Yavrum, seninle gurur duyuyorum!#$b#Son görüşmemizden bu yana burada devrim üstüne devrim yapmışsın!#$b#Benden çok daha iyi bir çiftçi olarak soyadımızı onurlandırıyorsun.#$b#Hissedebiliyorum... Ruhum sonunda huzur buluyor. Eksik olmayasın." #!String
+    Event.cs.1315: "Son birkaç yılda çiflikte değişen pek bir şey olmamış... Hiç sıkıntı değil.#$b#Benim için önemli olan tek şey yeni hayatından memnun olman..." #!String
+    Event.cs.1316: "Çiftikte harika şeyler başarmışsın.#$b#Görünüşe göre elinden geleni yapmışsın... Daha ne isteyebilirim ki? Seninle gurur duyuyorum." #!String
+    Event.cs.1317: "Aferin, oğlum.^Aferin, yavrum.#$b#%farm Çiftliği hiç bu kadar iyi görünmemişti. Soyadımızın hakkını veriyorsun.#$b#Büyükbaban durumdan memnun." #!String
+    Event.cs.1318: "Evladım, seninle gurur duyuyorum!^Yavrum, seninle gurur duyuyorum!#$b#Benden çok daha iyi bir çiftçi olarak soyadımızı onurlandırıyorsun.#$b#Hissedebiliyorum... Ruhum sonunda huzur buluyor. Eksik olmayasın." #!String
+    Event.cs.1497: "Ehem, affedersin.#$b#Senin için bir hediyem var. Bunu geçen yaz kumsalda oynarken bulmuştum. Beğeneceğini umuyorum.$h" #!String
+    Event.cs.1498: "Buraya taşındığına sevindim, çiftçi @!$h" #!String
+    Event.cs.1499: "Merhaba @. Bu yılki gizli hediyeni ben takdim edeceğim.#$b#Al bakalım. Aç hadi.$h" #!String
+    Event.cs.1500: "Çok bir şey değil ama yine de beğeneceğini umuyorum.$h" #!String
+    Event.cs.1501: "Selam. Bu yılki gizli hediyeni ben takdim edeceğim.#$b#Evet, açsana!" #!String
+    Event.cs.1504: "Şaşaalı bir şey değil. Gücüm anca buna yetti." #!String
+    Event.cs.1514: "Süre: {0}" #!String
+    Event.cs.1515: "Yumurta: {0}" #!String
+    Event.cs.1521: "$q -1 null#Sence herkes yumurta avına hazır mıdır?#$r -1 0 yes#Evet, başlayalım.#$r -1 0 no#Henüz değillerdir." #!String
+    Event.cs.1524: "$q -1 null#Dansa başlasak mı?#$r -1 0 yes#Evet, dans başlasın.#$r -1 0 no#Henüz başlamayalım." #!String
+    Event.cs.1527: "$q -1 null#Luau'yu başlatmalı mıyız? Vali Bey biraz acıkmış gibi.#$r -1 0 yes#Aynen, başlayalım.#$r -1 0 no#Henüz başlamayalım." #!String
+    Event.cs.1531: "$q -1 null#Ne diyorsun... tekneyi çalıştırayım mı?#$r -1 0 yes#Evet.#$r -1 0 no#Henüz çalıştırma." #!String
+    Event.cs.1535: "$q -1 null#Ah... Çiftlik serginin hazırlıklarını tamamladın mı?#$r -1 0 yes#Evet.#$r -1 0 no#Henüz tamamlamadım." #!String
+    Event.cs.1548: "$q -1 null#Buzda balık avlama yarışmasına hazır mısın?#$r -1 0 yes#Evet.#$r -1 0 no#Henüz değilim." #!String
+    Event.cs.1584: "Çiftlik sergin değerlendirildi. Sonuçlar için Başkan Lewis'e dön!" #!String
+    Event.cs.1632: "Elbette seninle dans ederim!$h" #!String
+    Event.cs.1633: "Çiçek dansında eşim mi olmak istiyorsun?#$b#Tamam. Dansı dört gözle bekliyor olacağım.$h" #!String
+    Event.cs.1634: "Çiçek dansında benimle mi eşleşmek istiyorsun?#$b#Tamam! Seve seve.$h" #!String
+    Event.cs.1635: "Üzgünüm... Zaten bir eşim var." #!String
+    Event.cs.1645: "Turuncu" #!String
+    Event.cs.1647: "Yeşil" #!String
+    Event.cs.1650: "Oynamak istemiyorum." #!String
+    Event.cs.1652: "Yaklaş! Renk seç ve bahsin iki katını kazanma şansını elde et!" #!String
+    Event.cs.1654: "Satın Al" #!String
+    Event.cs.1656: "Ayrıl" #!String
+    Event.cs.1659: "Tanesi 50g'den Yıldız Jetonu satıyorum!" #!String
+    Event.cs.1662: "Oyna (50g)" #!String
+    Event.cs.1663: "Ayrıl" #!String
+    Event.cs.1666: "Sapanla vurma oyununu oyna ve yıldız jetonu kazan!" #!String
+    Event.cs.1672: "Yıldız jetonlarıyla ödül alınsın mı?" #!String
+    Event.cs.1681: "Şansını balık tutmada denemeye ne dersin? Büyük kazanımlar elde edebilirsin." #!String
+    Event.cs.1684: "Lütfen kırmızı okta dur." #!String
+    Event.cs.1688: "Fal baktır (100g)" #!String
+    Event.cs.1690: "Teşekkürler" #!String
+    Event.cs.1691: "Ah, evet... Kristal küremde geleceğini görebiliyorum, çocuğum." #!String
+    Event.cs.1694: "Falına baktım ya zaten... Git buradan." #!String
+    Event.cs.1695: "Falın ücretini ödemeye yetecek paran yok... Yazık." #!String
+    Event.cs.1714: "Bitti." #!String
+    Event.cs.1719: "Eklemek istediğin malzemeyi seç." #!String
+    Event.cs.1723: "Tebrikler! {0} puan ile 1. oldun!#$b#Ödül olarak 1.000 yıldız jetonu senindir! Bunları akıllıca harca.$h#$b#Ah, çiftlik sergi kutunu temizlemeyi de unutma." #!String
+    Event.cs.1726: "Hey, hiç fena değil! {0} puan ile 2. oldun!#$b#Ödül olarak 500 yıldız jetonu senindir! Bunları akıllıca harca.$h#$b#Ah, çiftlik sergi kutunu temizlemeyi de unutma." #!String
+    Event.cs.1729: "Selam @. Görünüşe göre {0} puan ile 3. olmuşsun!#$b#Ödül olarak 200 yıldız jetonu senindir! Bunları akıllıca harca.$h#$b#Ah, çiftlik sergi kutunu temizlemeyi de unutma." #!String
+    Event.cs.1730: "Sen!!! Hastalıklı bir şaka yaptığını falan mı sanıyorsun?! Bu fazlasıyla özel bir şey!$4#$b#Al, 750 yıldız jetonu. Bundan kimseye bahsetmeyeceksin.$3#$b#Şimdi gidip kutunu temizle ve bana... benim olanı getir... yarın.$3" #!String
+    Event.cs.1732: "Merhaba @. {0} puan ile 4. oldun!#$b#Katılımı ödülü olan 50 yıldız jetonu senindir! Seneye çok daha iyi olabilirsin.$h#$b#Ah, çiftlik sergi kutunu temizlemeyi de unutma." #!String
+    Event.cs.1736: "$q -1 null#...Efendim canım?#$r -1 0 danceAsk#({0} ile dansta eş olmayı teklif et)#$r -1 0 null#Boş ver..." #!String
+    Event.cs.1738: "$q -1 null#...Efendim?#$r -1 0 danceAsk#({0} ile dansta eş olmayı teklif et)#$r -1 0 null#Boş ver..." #!String
+    Event.cs.1740: "{0} ile görüşülüp gizli hediyesi verilsin mi?" #!String
+    Event.cs.1741: "{0} ile görüşülüp gizli hediyesi verilsin mi?" #!String
+    Event.cs.1758: "{0} terk edilsin mi? Ayrılırsan şölen sonlanacak." #!String
+    Event.cs.1760: "Senin için olabilir ama benim için değil işte! Asla anlamayacaksın...  Git... buradan.$7#$b#...Ah...$7#$b#Bekle...$7" #!String
+    Event.cs.1761: "...Haklısın. Jas... Ah, Tanrım... Korkunç, *hıçkırır*... bencil biriyim.$7#$b#Şimdi çok daha kötü hissediyorum...$7" #!String
+    Event.cs.1763: "Ne... Yoba mı...? @, benim... benim ateist olduğumu bilmiyor musun? Ah... $7" #!String
+    Event.cs.1764: "...$7#$b#Teşekkürler... Bunun için minnettarım... Gerçekten.$7" #!String
+    Event.cs.1774: "Kaç yıldız jetonu satın almak istersin?" #!String
+    Event.cs.1776: "Kaç yıldız jetonuna bahse girmek istersin?" #!String
+    Event.cs.1780: "Elinde yeterli miktarda para bulunmuyor." #!String
+    Event.cs.1785: "Dükkandaki her şeyi aldın zaten!" #!String
+    Event.cs.1788: "{0} için bir hediye seç." #!String
+    Event.cs.1794: "Dudley" #!String
+    Event.cs.1795: "Yogi" #!String
+    Event.cs.1796: "Miso" #!String
+    Event.cs.1797: "Snooch" #!String
+    Event.cs.1798: "Hayır mı? Peki... Bu zavallıcığa başka bir ev bulurum.$s" #!String
+    Event.cs.1801: "Ah! Sendin demek.$h#$b#Ah... {1} {0}! Teşekkürler." #!String
+    Event.cs.1803: "Bu geçerli bir hediye değil." #!String
+    Event.cs.1810: "Ah... Seni salonda görüyorum. Arkadaşlarınla birliktesin. En yakın arkadaş kavramını umursamıyorsun anlaşılan... Herkesle iyi geçiniyorsun!" #!String
+    Event.cs.1811: "Ah... Evet. Seni kumsalda görüyorum. Bir çeşit etkinlik var. {0} ile konuşuyorsun, komik bir şeyler söylüyorsun... Hım... Sanırım yakın arkadaşsınız." #!String
+    Event.cs.1813: "Ah... Evet. {0} doğum gününü kutluyor. " #!String
+    Event.cs.1815: "Herkesin unuttuğunu sanıyor ama sen elinde hediyeyle çıkageliyorsun. Çok iyi bir arkadaşsın." #!String
+    Event.cs.1816: "Herkesin unuttuğunu sanıyor ama sen elinde hediyeyle çıkageliyorsun. Çok iyi bir arkadaşsın." #!String
+    Event.cs.1818: "Hım... Yatakta yatıyorsun... Bulunduğun yer hastaneye benziyor. {0}, sen iyileşirken sana refakat ediyor. Ne kadar da iyi bir arkadaş." #!String
+    Event.cs.1820: "Ah... Kesinlikle. Odanın birinde bir adamla konuşuyorsun." #!String
+    Event.cs.1821: "Ah... Kesinlikle. Odanın birinde bir kadınla konuşuyorsun." #!String
+    Event.cs.1823: "...Ah! {0} yanında. Yakın arkadaşlar gibisiniz." #!String
+    Event.cs.1825: "Hım... Şöminenin önünde lüks bir sandalyede oturuyorsun... Etrafın lüks eşyalarla dolu ama yalnızlığında boğuluyorsun." #!String
+    Event.cs.1826: "...Ah? Anlaşılan insanların kalbini kırıyorsun... Sana kalpten güvenen insanlarla oyun mu oynuyorsun yoksa? Hım... " #!String
+    Event.cs.1827: "Sen ve {0} çimenlerin arasındasınız. Mutlu görünüyorsun." #!String
+    Event.cs.1829: "Sen ve {0} loş bir odadasınız. Ciddi duruyorsun... Mutsuz değilsin ama. Önemli bir şeyler oluyor gibi." #!String
+    Event.cs.1831: "Aha... Hava karanlık. Genç bir delikanlı ile birliktesin. Biraz utangaç gibi ama yanında olmaktan mutlu." #!String
+    Event.cs.1832: "Aha... Hava karanlık. Genç bir delikanlı ile birliktesin. Oldukça umutlu duruyor. Seninle zaman geçirmek istiyor." #!String
+    Event.cs.1833: "Aha... Hava karanlık. Genç bir hanım kızımızla birliktesin. Biraz utangaç gibi ama yanında olmaktan mutlu." #!String
+    Event.cs.1834: "Aha... Hava karanlık. Genç bir hanım kızımızla birliktesin. Oldukça umutlu duruyor. Seninle zaman geçirmek istiyor." #!String
+    Event.cs.1837: "Hım... Bu delikanlının adı neymiş bakalım... Sanırım '{0}' ile başlıyor." #!String
+    Event.cs.1838: "Hım... Bu hanım kızımızın adı neymiş bakalım... Sanırım '{0}' ile başlıyor." #!String
+    Event.cs.1843: "İlginç... Sen ve {0} birlikte çiftlikte çalışıyorsunuz. Bir konudan ötürü memnun görünüyorsun." #!String
+    Event.cs.1845: "Görüyorum, ömrünün ortalarındasın. Alacakaranlıkta kasabada yürüyüşe çıkmışsın. Bir pencerenin önünde durup yemek yiyen bir aileye bakıyorsun. Başını öne eğip hızla karanlığa çekiliyorsun." #!String
+    Event.cs.1846: "Kürede hareketlilik var... Olgun, büyük bir kavunu bahçenden alıyorsun. Çiftliğin harika görünüyor, hayatla dolup taşıyor!" #!String
+    Event.cs.1847: "Kürede hareketlilik var... Karanlık bir yerlerdesin... Değerli bir taşı inceliyorsun! Tuttuğun küçük fenerin ışığında ışıl ışıl parıldıyor." #!String
+    Event.cs.1848: "Kürede hareketlilik var... AH! Saldırı altındasın! Karanlığın içinde seni korkutan bir şey var. Gerçi onunla yüzleşmek için hazır gibi duruyorsun." #!String
+    Event.cs.1849: "Kürede hareketlilik var... Nehrin kıyısında dinleniyorsun. Elinde bir olta var. Ah! Anlaşılan büyük bir balık yakalamak üzeresin!" #!String
+    Event.cs.1850: "Kürede hareketlilik var... Sen... ormanın içindesin. Çalıların dibinde, ender bulunan lezzetli mantarlardan olduğunu görüyorsun... Ne keşif ama!" #!String
+    Event.cs.1851: "Kürede hareketlilik var... Altın bir odadasın... Sırıtıyorsun. Ah, şimdi anladım... Bir çeşit oyun oynuyorsun ve kaybetmek istemiyorsun!" #!String
+    Event.cs.1852: "Ah... Küre söndü. Sana söyleyebileceğim bir şey kalmadı, yavrucuğum." #!String
+    Event.cs.1853: "Bak, geleceğin taşta yazılmadığını aklından çıkartma! Kalbini açtığın takdirde bugün sana söylediklerim değişebilir. Hoşça kal." #!String
+    Event.cs.1857: "Çorbaya {0} ekledin." #!String
+    Event.cs.1862: "Abigail!" #!String
+    Event.cs.1864: "İlişki:" #!String
+    Event.cs.1865: " ve" #!String
+    Event.cs.1871: "5 büyük ve taze balıkla Willy!" #!String
+    Event.cs.1872: "{1} büyük ve pis balıkla {0}!" #!String
+    Farmer.cs.1918: "15 yaban havucu tohumu alındı!^^'İşine başlaman için ufak bir hediye yolladım.^-Başkan Lewis'" #!String
+    Farmer.cs.1919: "{0} aldın!" #!String
+    Farmer.cs.1922: "{1} x{0} aldın!" #!String
+    Farmer.cs.1972: "çiftlik" #!String
+    Farmer.cs.1986: "Aşırı çabaladığın için zayıfladın." #!String
+    Farmer.cs.1987: "Yorulmaya başladın." #!String
+    Farmer.cs.1991: "Çiftçilik" #!String
+    Farmer.cs.1992: "Madencilik" #!String
+    Farmer.cs.1993: "Balıkçılık" #!String
+    Farmer.cs.1994: "Toplayıcılık" #!String
+    Farmer.cs.1995: "Şans" #!String
+    Farmer.cs.1996: "Savaşma" #!String
+    Farmer.cs.2003: "{0} Seviye Atlandı" #!String
+    Farmer.cs.2010: "Güzel deneme..." #!String
+    Farmer.cs.2011: "Yeni Günlük Girdisi" #!String
+    Farmer.cs.2016: "Çiftlik Kralı" #!String
+    Farmer.cs.2017: "Ekin Uzmanı" #!String
+    Farmer.cs.2018: "Ziraatçı" #!String
+    Farmer.cs.2019: "Çiftçi" #!String
+    Farmer.cs.2020: "Çiftlik Sahibi" #!String
+    Farmer.cs.2021: "Ekici" #!String
+    Farmer.cs.2022: "Çiftlik Uzmanı" #!String
+    Farmer.cs.2023: "Irgat" #!String
+    Farmer.cs.2024: "Irgat" #!String
+    Farmer.cs.2025: "Çayır Uzmanı" #!String
+    Farmer.cs.2026: "Arazi Sahibi" #!String
+    Farmer.cs.2027: "Fidancı" #!String
+    Farmer.cs.2028: "Çiftlik Çalışanı" #!String
+    Farmer.cs.2029: "Kovboy" #!String
+    Farmer.cs.2030: "Hödük" #!String
+    Farmer.cs.2031: "Çaylak" #!String
+    Farmer.cs.2032: "Acemi" #!String
+    Game1.cs.2156: "Kabayoncalar" #!String
+    Game1.cs.2157: "Mavi Kule" #!String
+    Game1.cs.2574: "Kontrol cihazı modu etkinleştirildi." #!String
+    Game1.cs.2575: "Kumandanın bağlantısı koptu." #!String
+    Game1.cs.2634: "Marnie'nin çiftliğine git." #!String
+    Game1.cs.2635: "Ormana git." #!String
+    Game1.cs.2637: "Kasaba meydanına git." #!String
+    Game1.cs.2639: "Kumsala git." #!String
+    Game1.cs.2640: "{0} başladı. " #!String
+    Game1.cs.2652: "Geç oluyor..." #!String
+    Game1.cs.2782: "Düğün harikaydı... değil mi, canım?$h#$e#Tabii çiftliği unutamayız... Çalışma zamanı geldi." #!String
+    Game1.cs.2898: "Şu anda susamış değilim..." #!String
+    Game1.cs.2899: "Tokum..." #!String
+    Game1.cs.2973: "Bugünkü şölen için hazırlanılıyor. Daha sonra gel." #!String
+    Game1.cs.3042: "Paz" #!String
+    Game1.cs.3043: "Pzt" #!String
+    Game1.cs.3044: "Sal" #!String
+    Game1.cs.3045: "Çar" #!String
+    Game1.cs.3046: "Per" #!String
+    Game1.cs.3047: "Cum" #!String
+    Game1.cs.3048: "Cmr" #!String
+    Game1.cs.3094: "Zihnini bazı düşünceler dolduruyor. Bu, " #!String
+    Game1.cs.3095: "Garip anca tadı sana bir şeyleri anımsatıyor. Bu, " #!String
+    Game1.cs.3097: "Bizzat vadiyle sarsılmaz bir bağlantın olduğunu hissediyorsun" #!String
+    Game1.cs.3099: "Zihnini bazı düşünceler dolduruyor. Bu... ConcernedApe? (Şey, teşekkürler!)" #!String
+    Game1.cs.3100: "Yıldızkaydı= buldun! " #!String
+    Game1.cs.3101: ". ^^Maksimum enerji seviyesi arttı." #!String
+    Game1.cs.3116: "+{0} Enerji" #!String
+    Game1.cs.3118: "+{0} Sağlık" #!String
+    Game1.cs.3159: "{0} içilsin mi?" #!String
+    Game1.cs.3160: "{0} yenilsin mi?" #!String
+    Game1.cs.3191: " ...Kare konuma tıklanması bekleniyor..." #!String
+    Game1.cs.3206: "Merhaba! Bu bir denemedir." #!String
+    Game1.cs.3209: "Kumanda kullanıyor." #!String
+    Game1.cs.3210: "Kumanda kullanılmıyor." #!String
+    Game1.cs.3332: "{0} gün oynandı." #!String
+    Game1.cs.3666: "Ekran görüntüsü modu etkinleştirildi. Çıkmak için 'F4' tuşuna bas." #!String
+    Game1.cs.3685: "Stardew Valley hata verdi..." #!String
+    Game1.cs.3686: "Lütfen bu hata raporunu ya da bu iletinin ekran görüntüsünü @ConcernedApe'e ilet. (http://stardewvalley.net/contact/)" #!String
+    Game1.cs.3688: "Yükleniyor" #!String
+    Game1.cs.3689: "Yükleniyor..." #!String
+    Game1.cs.3747: "Yorgun" #!String
+    Game1.cs.3756: "Bay Lewis" #!String
+    HUDMessage.cs.3824: "Yeni Başarım: " #!String
+    NameSelect.cs.3864: "Tamamla" #!String
+    NPC.cs.3926: "Sabırlı ol. Hâlâ yapacak işlerim var." #!String
+    NPC.cs.3927: "Evin yarına hazır olur." #!String
+    NPC.cs.3954: "Yanlış Kişi" #!String
+    NPC.cs.3955: "{0} ile çıkamazsın." #!String
+    NPC.cs.3956: "Ah... Hiç sanmıyorum." #!String
+    NPC.cs.3957: "Şaka mı bu? Anlamadım." #!String
+    NPC.cs.3958: "...Seni gerçekten yeterince tanımıyorum...$s" #!String
+    NPC.cs.3959: "Ah... Bu uygun değil. Bak, seni gerçekten doğru düzgün tanımıyorum bile...$s" #!String
+    NPC.cs.3960: "Ne? ...Üzgünüm... Buna hazır değilim.$s" #!String
+    NPC.cs.3961: "...Bilmiyordum. Şey... Üzgünüm ama hayır.$s" #!String
+    Wilted_Bouquet_Meaningless: "{0} ve buket... Düşününcen bunu vermek anlamsız olur." #!String
+    Wilted_Bouquet_Effect: "Artık {0} ile birlikte değilsin." #!String
+    NPC.cs.3962: "...Kabul ediyorum. Teşekkür ederim.$l#$e#Senin de aynı şeyi hissettiğini bilmiyordum.$l/...Kabul ediyorum. Teşekkür ederim.$l#$e#Senin de aynı şeyi hissettiğini bilmiyordum.$l" #!String
+    NPC.cs.3963: "...Ciddi mi düşünüyorsun? Ben de.$l#$e#Birazcık gerginim. Sen değil misin?$l" #!String
+    NPC.cs.3965: "Nişanlandın! Ne düşünüyorsun?$s" #!String
+    NPC.cs.3966: "Ne? Başkasına evlenme teklifi etmemiş miydin? Sen delirmişsin!$s" #!String
+    NPC.cs.3967: "Ah, sen zaten evli değil misin?" #!String
+    NPC.cs.3968: "Tuhafsın, çünkü zaten evlisin!$s" #!String
+    NPC.cs.3969: "{0} şu anda seninle evlenmek istemiyor." #!String
+    NPC.cs.3970: "Garipsin.$s" #!String
+    NPC.cs.3971: "Heh. Komikmiş." #!String
+    NPC.cs.3972: "Ah!.. $l #$b#@... Üzgünüm ama olmaz. Şu anda seninle evlenemem.$s" #!String
+    NPC.cs.3973: "Şey... Üzgünüm ama senin hakkında aynı şekilde düşünmüyorum...$s" #!String
+    NPC.cs.3974: "Bak, sana bir kere hayır demiştim zaten! Benden uzak dur.$a" #!String
+    NPC.cs.3975: "Daha önce de sormuştun. 'HAYIR' sözcüğünün nesini anlamadın?!$a" #!String
+    NPC.cs.3980: "...!!! $l#$b#Kabul ediyorum! $h#$b#...$l#$b#Ben her şeyi ayarlarım. 3 gün sonra töreni yaparız, tamam mı?$h" #!String
+    NPC.cs.3981: "{0} bugün senden hediye aldı zaten." #!String
+    NPC.cs.3985: "Heh... {0} bugün senden gizli hediyesini almış...$s#$e#Senden şüphelenmeli miyim?$s#$e#...$a" #!String
+    NPC.cs.3987: "{0} bu hafta senden {1} hediye aldı! Daha fazla alamaz." #!String
+    NPC.cs.3990: "İnsan bir ziyaretçi mi? Alışılmadık bir durum...#$e#Ben Krobus. Nadir bulunan, egzotik mallardan satıyorum." #!String
+    NPC.cs.4001: "Tatlım... Aşkımı simgesi olarak bu meyveyi sana vermek istedim.$l" #!String
+    NPC.cs.4018: "Evet." #!String
+    NPC.cs.4020: "Aynen. Çekil kenara, mankafa." #!String
+    NPC.cs.4021: "!!! Bu... Bu bir 'Kulüp Kartı' mı?" #!String
+    NPC.cs.4058: "Selam..." #!String
+    NPC.cs.4059: "Selam!" #!String
+    NPC.cs.4060: "Merhaba." #!String
+    NPC.cs.4061: "Merhaba." #!String
+    NPC.cs.4062: "Selamlar!" #!String
+    NPC.cs.4063: "Günaydın." #!String
+    NPC.cs.4064: "İyi öğlenler." #!String
+    NPC.cs.4065: "İyi akşamlar." #!String
+    NPC.cs.4066: "{0}!" #!String
+    NPC.cs.4068: "Selam {0}!" #!String
+    NPC.cs.4071: "Merhaba {0}." #!String
+    NPC.cs.4072: "Merhaba." #!String
+    NPC.cs.4079: "{0}m" #!String
+    NPC.cs.4080: "{0}m" #!String
+    NPC.cs.4083: "Biliyor musun, {0}" #!String
+    NPC.cs.4084: " ile '{0}' arasında bir şeyler varmış." #!String
+    NPC.cs.4086: "{0} ile '{1}' arasında bir şeyler varmış!" #!String
+    NPC.cs.4088: "Söylemişti.$h" #!String
+    NPC.cs.4089: "Söylemişti.$h" #!String
+    NPC.cs.4091: "Sana bir sır vereyim, {0} ile '{1}' arasında bir şeyler varmış." #!String
+    NPC.cs.4094: "{0} seni sevsin istiyorsan, ona '{1}' ver." #!String
+    NPC.cs.4097: "{0} seni sevsin istiyorsan, ona '{1}' ver." #!String
+    NPC.cs.4100: "{0} ile yakınlık kurmak istiyorsan, ona '{1}' ver." #!String
+    NPC.cs.4103: "{0} ile yakınlık kurmak istiyorsan, ona '{1}' ver." #!String
+    NPC.cs.4106: "{0} ile arkadaş olmak istiyorsan, '{1}' ile ters düşmemelisin." #!String
+    NPC.cs.4109: " En sevdiği bu." #!String
+    NPC.cs.4111: " En sevdiği bu." #!String
+    NPC.cs.4113: " Bunu seviyor." #!String
+    NPC.cs.4114: " Buna bayılıyor." #!String
+    NPC.cs.4115: " Bunu seviyor." #!String
+    NPC.cs.4116: " Buna bayılıyor." #!String
+    NPC.cs.4118: " Bir ara ona vermiştim. Sonrasında sürekli sözünü eder oldu." #!String
+    NPC.cs.4120: " Bir ara ona vermiştim. Sonrasında sürekli sözünü eder oldu." #!String
+    NPC.cs.4125: " Bundan harika hediye olur." #!String
+    NPC.cs.4126: " Bununla onu mutlu edebilirsin." #!String
+    NPC.cs.4128: " Bununla onu mutlu edebilirsin." #!String
+    NPC.cs.4135: " '{0}' sevmez, hatta nefret eder. Kesinlikle {1} buluyor." #!String
+    NPC.cs.4138: " '{0}' sevmez, hatta nefret eder. Kesinlikle {1} buluyor." #!String
+    NPC.cs.4141: "{0} hiç mi hiç '{1}' sevmez! Bana söylemişti.$h" #!String
+    NPC.cs.4144: "{0} hiç mi hiç '{1}' sevmez! Bana söylemişti.$h" #!String
+    NPC.cs.4146: "Ben uyarmış olayım: " #!String
+    NPC.cs.4147: "{0}, '{1}' varya ondan gerçekten nefret ediyor." #!String
+    NPC.cs.4149: "{0} senden hoşlanmasın istiyorsan, ona '{1}' ver. Bundan tutkulu bir şekilde nefret ediyor." #!String
+    NPC.cs.4152: "{0} senden hoşlanmasın istiyorsan, ona '{1}' ver. Bundan tutkulu bir şekilde nefret eder." #!String
+    NPC.cs.4153: "{0} senden hoşlanmasın istiyorsan, ona '{1}' ver. Bundan tutkulu bir şekilde nefret ediyor." #!String
+    NPC.cs.4154: "{0} senden hoşlanmasın istiyorsan, ona '{1}' ver. Bundan tutkulu bir şekilde nefret eder." #!String
+    NPC.cs.4161: "{0}, '{1}' hiç sevmez. Ona hoş olmayan bir şaka yapmak istiyorsan ondan verebilirsin. Seni affetmeyebilir yalnız." #!String
+    NPC.cs.4164: "{0}, '{1}' hiç sevmez. Ona hoş olmayan bir şaka yapmak istiyorsan ondan verebilirsin. Seni affetmeyebilir yalnız." #!String
+    NPC.cs.4170: " Bunu tecrübe ederek öğrendim." #!String
+    NPC.cs.4171: " Nedeninden emin değilim." #!String
+    NPC.cs.4172: " Düşüncesi bile sinirlerini bozabilir." #!String
+    NPC.cs.4174: " Düşüncesi bile sinirlerini bozabilir." #!String
+    NPC.cs.4176: " Alerjisi olabilir." #!String
+    NPC.cs.4178: " Alerjisi olabilir." #!String
+    NPC.cs.4180: " Herkesin bir şeye takıntısı var sonuçta." #!String
+    NPC.cs.4182: "{0} hiç mi hiç '{1}' sevmez. Nedenini falan bilmek istemezsin. Güven bana." #!String
+    NPC.cs.4192: "...#$e#...#$e#...#$e#Bir tek üyeler girebilir, evlat. Uza bakalım.#$e#..." #!String
+    NPC.cs.4274: "Doğum günümü unutmadın mı? Etkilendim doğrusu. Teşekkürler.$h" #!String
+    NPC.cs.4275: "Doğum günü hediyesi mi? Çok naziksin! Çok beğendim.$h" #!String
+    NPC.cs.4276: "Ah, bugün doğum günüm müymüş? Öyleymiş. Teşekkürler. Bu çok hoş.$h/Ah, bugün doğum günüm müymüş? Öyleymiş. Teşekkürler. Bu çok hoş.$h" #!String
+    NPC.cs.4277: "Doğum günümü hatırlamışsın! Teşekkür ederim. Harikasın.$h" #!String
+    NPC.cs.4278: "Doğum günümde bana bunu mu veriyorsun? Bu bir çeşit şaka mı?$s/Doğum günümde bana bunu mu veriyorsun? Bu bir çeşit şaka mı?$s" #!String
+    NPC.cs.4279: "Ah... Doğum günüm için mi?.. Teşekkürler.$s/Ah... Doğum günüm için mi?.. Teşekkürler$s" #!String
+    NPC.cs.4280: "Doğum günüm için mi? Teşekkürler." #!String
+    NPC.cs.4281: "Ah, doğum günü hediyem! Teşekkür ederim./Ah, doğum günü hediyem! Teşekkür ederim." #!String
+    NPC.cs.4293: "Ah! Bana bunu yaptığına inanamıyorum!$s" #!String
+    NPC.cs.4294: "Çok bozuldum! Sorunun ne ki senin?$s" #!String
+    NPC.cs.4406: "Bugün sanki uyuyormuşum gibi geçiyor.$a" #!String
+    NPC.cs.4420: "*iç çeker*...$s" #!String
+    NPC.cs.4421: "Sıkıldım...$s" #!String
+    NPC.cs.4422: "Bazen hayatta doğru şeyi yapıp yapmadığımı merak ediyorum...$s" #!String
+    NPC.cs.4423: "Ha? Bir şey yok... Ben iyiyim.$s" #!String
+    NPC.cs.4424: "Bugün enerjik değilim, o kadar.$s" #!String
+    NPC.cs.4425: "Evlendiğimizden beri hayatım kesinlikle çok ama çok değişti...$s" #!String
+    NPC.cs.4426: "Ne... Temizlik yapmamı, sana yemek hazırlamamı mı istiyorsun? *iç çeker*...$a" #!String
+    NPC.cs.4427: "*iç çeker*... Cildim bugün korkunç görünüyor.$s#$b#Korkunç işte... Bana bakış biçiminden belli oluyor.$a" #!String
+    NPC.cs.4429: "*iç çeker*... Saçım bugün korkunç görünüyor.$s#$b#Korkunç işte... Bana bakış biçiminden belli oluyor.$a" #!String
+    NPC.cs.4431: "...$s#$e#Hiç köşeye sıkıştığını hissetmez misin?$s" #!String
+    NPC.cs.4432: "*söylenir*... Ev işleri... $a" #!String
+    NPC.cs.4433: "Yapacak işin yok mu?$a" #!String
+    NPC.cs.4439: "Acaba bebişimiz hayatımızı ne kadar değiştirecek?$s" #!String
+    NPC.cs.4440: "{0}, umarım evlat edinme isteğimiz kabul edilir. Çocuğum olsun istiyorum.$l" #!String
+    NPC.cs.4441: "{0}, evlat edinme belgelerini doldurdum. Geriye bir tek dua edip beklemek kaldı.$l" #!String
+    NPC.cs.4442: "Ah... Uyandığımdan beri midem bulanıyor.$s" #!String
+    NPC.cs.4443: "Hamileyim ya... Kahvaltını kendin hazırlayamaz mısın?$s" #!String
+    NPC.cs.4444: "{0}, yakında çocuğumuz olacak.$l" #!String
+    NPC.cs.4445: "{0}, hamileyim. Bu harika değil mi?$l" #!String
+    NPC.cs.4446: "Bugün uyumak istiyorum. Endişelenecek bir şey yok.$a" #!String
+    NPC.cs.4447: "{0}, yakında bir bebeğimiz olacak.$l" #!String
+    NPC.cs.4448: "{0}, anlamadın mı? Hamilesin işte.$l" #!String
+    NPC.cs.4449: "Ebeveyn olmak can sıkabiliyor... Bazı zamanlar hiç kalkmak istemiyorum.$a" #!String
+    NPC.cs.4452: "Biraz yalnız kalmalıyım... Değişiklik olsun diye neden çocuklarla sen ilgilenmiyorsun?$a" #!String
+    NPC.cs.4455: "Sana kahvaltı hazırlayacaktım ama vazgeçtim.$a" #!String
+    NPC.cs.4462: "Erkenden uyanıp bazı ekinleri suladım. Umarım bugünkü işini hafifletebilmişimdir." #!String
+    NPC.cs.4463: "#$e#Ayrıca {0} için koyduğumuz kap boştu, bende doldurdum." #!String
+    MultiplePetBowls_watered: "#$e#Ayrıca hayvanların taslarını doldurdum." #!String
+    NPC.cs.4465: "Merhaba {0}! " #!String
+    NPC.cs.4466: "Günaydın {0}! " #!String
+    NPC.cs.4470: "Erkenden uyanınca ekinleri sulayayım dedim ama çoktan sulanmışlardı! Çiflikte düzeni kurmuşsun gerçekten.$h" #!String
+    NPC.cs.4474: "Erkenden uyanıp tüm hayvanları yedirdim. Umarım bugünkü işini hafifletebilmişimdir." #!String
+    NPC.cs.4481: "Bu sabah çitlerin bir kısmını onardım. Yeni gibi oldular." #!String
+    NPC.cs.4486: "{0}, ne düşünüyorsun? " #!String
+    NPC.cs.4488: "Bunu daha geçen gün söylemiştim. Hemencecik gelmiş." #!String
+    NPC.cs.4489: "Bu odaya azıcık süs iyi gider diye düşündüm." #!String
+    NPC.cs.4490: "Bugün etrafı biraz süsleyecektim ama vazgeçtim.$a" #!String
+    NPC.cs.4496: "Yeni duvar kağıdı seçimim hakkında ne düşünüyorsun?" #!String
+    NPC.cs.4497: "Yeni döşeme seçimim hakkında ne düşünüyorsun?" #!String
+    NPC.cs.4498: "*iç çeker*... Bazen eski hayatımı özlüyorum.$s" #!String
+    NPC.cs.4499: "Hava yataktan çıkmak için fazla kasvetli.$s" #!String
+    NPC.cs.4500: "Ben yokken burayı temizleyebilirdin...$a#$e#Sabahtan akşama kadar çalıştıktan sonra çöplerin arasından ağır ağır ve güçlükle ilerlemek hiç hoş değil.$a" #!String
+    NPC.cs.4507: "Canısı" #!String
+    NPC.cs.4508: "Aşkım" #!String
+    NPC.cs.4509: "Biriciğim" #!String
+    NPC.cs.4510: "Sevgi kelebeğim" #!String
+    NPC.cs.4511: "Bir tanem" #!String
+    NPC.cs.4512: "Şeftalim" #!String
+    NPC.cs.4513: "Şekerim" #!String
+    NPC.cs.4514: "Ördeğim" #!String
+    NPC.cs.4515: "Yakışıklım" #!String
+    NPC.cs.4516: "Sevgilim" #!String
+    NPC.cs.4517: "Balım" #!String
+    NPC.cs.4518: "Canım" #!String
+    NPC.cs.4519: "Tatlım" #!String
+    NPC.cs.4522: "Meleğim" #!String
+    NPC.cs.4523: "Bebeğim" #!String
+    Options.cs.4556: "Otomatik Koşma" #!String
+    Options.cs.4557: "Müzik Düzeyi" #!String
+    Options.cs.4558: "Ses Efekti Düzeyi" #!String
+    Options.cs.4559: "Yazma Sesi Düzeyi" #!String
+    Options.cs.4560: "Tam Ekran" #!String
+    Options.cs.4561: "Pencereli - Sınırsız" #!String
+    Options.cs.4562: "Çözünürlük" #!String
+    Options.cs.4563: "Yakınlaştırma Düzeyi: " #!String
+    Options.cs.4564: "Pencereli" #!String
+    SaveGame.cs.4690: "Yükleniyor..." #!String
+    SaveGame.cs.4697: "Oyun dünyası oluşturuluyor..." #!String
+    SaveGame.cs.4698: "Oyuncu yükleniyor..." #!String
+    SaveGame.cs.4699: "Haritalar yükleniyor..." #!String
+    SaveGame.cs.4700: "Madenler yükleniyor..." #!String
+    SaveGame.cs.4701: "Çeşitli görevler tamamlanıyor..." #!String
+    Stats.cs.5129: "Canavar avı görevi tamamlandı! Ödülünü almak için Gil ile görüş." #!String
+    Utility.cs.5367: "@ Pelikan Kasabası'na taşındığında kimse toplumumuza uyum sağlayıp sağlayamayacağını bilmiyordu...#$b#Ancak, bugünden itibaren @ her birimiz gibi bu kasabanın gerçek bir mensubu olacak!$h#$b#{1} ayının {0}. günü olan bu güzel günde @ ve %spouse evlilik bağıyla bir araya gelmektedir. Bunu gerçekleştirmek benim için de büyük bir onurdur." #!String
+    Utility.cs.5369: "@ Pelikan Kasabası'na taşındığında kimse toplumumuza uyum sağlayıp sağlayamayacağını bilmiyordu...#$b#Ancak, bugünden itibaren @ her birimiz gibi bu kasabanın gerçek bir mensubu olacak!$h#$b#{1} ayının {0}. günü olan bu güzel günde @ ve %spouse evlilik bağıyla bir araya gelmektedir. Bunu gerçekleştirmek benim için de büyük bir onurdur." #!String
+    Utility.cs.5370: "Direkt konuya girelim o zaman!" #!String
+    Utility.cs.5371: "@... %spouse... #$b# Pelikan Kasabası'nın başkanı ve evlilik mührünün bölge taşıyıcısı olarak sizleri koca ve... şey, koca, ilan ediyorum!$h" #!String
+    Utility.cs.5373: "@... %spouse... #$b# Pelikan Kasabası'nın başkanı ve evlilik mührünün bölge taşıyıcısı olarak sizleri karı koca ilan ediyorum!$h" #!String
+    Utility.cs.5375: "@... %spouse... #$b# Pelikan Kasabası'nın başkanı ve evlilik mührünün bölge taşıyıcısı olarak sizleri karı ve... şey, karı, ilan ediyorum!$h" #!String
+    Utility.cs.5377: "@... %spouse... #$b# Pelikan Kasabası'nın başkanı ve evlilik mührünün bölge taşıyıcısı olarak sizleri karı koca ilan ediyorum!$h" #!String
+    Utility.cs.5379: "Öpüşebilirsiniz." #!String
+    Utility.cs.5381: "Hayat bundan sonra çok daha farklı olacak..." #!String
+    Utility.cs.5383: "...Ancak, geleceğiniz parlak!" #!String
+    Utility.cs.5677: "İlk Gece" #!String
+    Utility.cs.5678: "{1} Mevsiminin {0}. Günü, {2}. Yıl" #!String
+    Utility.cs.5680: "Bahar" #!String
+    Utility.cs.5681: "Yaz" #!String
+    Utility.cs.5682: "Güz" #!String
+    Utility.cs.5683: "Kış" #!String
+    Utility.cs.5718: "Bahar (Dışarıda Büyük Bir Dünya Var)" #!String
+    Utility.cs.5720: "Bahar (Vadi Canlanıyor)" #!String
+    Utility.cs.5722: "Bahar (Bayır Turpu Reçeli)" #!String
+    Utility.cs.5724: "Güzel Anılar" #!String
+    Utility.cs.5726: "Durgun Yağmur (Tekli)" #!String
+    Utility.cs.5728: "Durgun Yağmur (Düet)" #!String
+    Utility.cs.5730: "Aerobik Sınıfı" #!String
+    Utility.cs.5732: "Kış (Buzul Müziği)" #!String
+    Utility.cs.5734: "Kış (Rüzgar Durgun Olabilir)" #!String
+    Utility.cs.5736: "Kış (Eskiler)" #!String
+    Utility.cs.5738: "Madenler (Bilinmeyenlerin Misafiri)" #!String
+    Utility.cs.5740: "Yaz (Büyüyen Doğa)" #!String
+    Utility.cs.5742: "Yaz (Güneş Turuncu Göğü Bükebilir)" #!String
+    Utility.cs.5744: "Yaz (Tropikallik)" #!String
+    Utility.cs.5746: "Güz (Mantar Kokusu)" #!String
+    Utility.cs.5748: "Güz (Hayaletlerin Karışımı)" #!String
+    Utility.cs.5750: "Güz (Kuzgunun Düşüşü)" #!String
+    Utility.cs.5752: "Yeşil ve Altının Diyarı" #!String
+    Utility.cs.5754: "Kış Şöleni" #!String
+    Utility.cs.5756: "Madenler (Bez)" #!String
+    Utility.cs.5758: "Bulut Ülkesi" #!String
+    Utility.cs.5760: "Madenler (Lav Sakinleri)" #!String
+    Utility.cs.5762: "Büyükbaba'nın Müziği" #!String
+    Utility.cs.5764: "Çiçek Dansı" #!String
+    Utility.cs.5766: "Yıldızçiyi Vadisi Şölen Müziği" #!String
+    Utility.cs.5768: "Madenler (Buz Saçağı)" #!String
+    Utility.cs.5770: "Madenler (Donmuş Kemiklerin Marimbası)" #!String
+    Utility.cs.5772: "Öteki Dünyaya Anlık Bakış" #!String
+    Utility.cs.5774: "Ormanın Derinliklerinde" #!String
+    Utility.cs.5776: "Düğün Müziği" #!String
+    Utility.cs.5778: "Madenler (Tehlike!)" #!String
+    Utility.cs.5780: "Müzik Kutusu Şarkısı" #!String
+    Utility.cs.5782: "Şölen Oyunu" #!String
+    Utility.cs.5784: "Yıldızvuran" #!String
+    Utility.cs.5786: "Pelikan Kasabası" #!String
+    Utility.cs.5788: "Ruhluk Arefesi Şöleni" #!String
+    Utility.cs.5790: "Yıldızbekçisi" #!String
+    Utility.cs.5792: "Sam'in Grubu (Elektronik)" #!String
+    Utility.cs.5794: "Sam'in Grubu (Ağır)" #!String
+    Utility.cs.5796: "Taşınma" #!String
+    Utility.cs.5798: "Madenler (Yıldız Yumrusu)" #!String
+    Utility.cs.5800: "Grup Denemesi" #!String
+    Utility.cs.5802: "Yıldızkaydı Salonu" #!String
+    Utility.cs.5804: "Geçmişin Karanlık Köşesi" #!String
+    Utility.cs.5806: "Sam'in Grubu (Pop)" #!String
+    Utility.cs.5808: "Oyunbaz" #!String
+    Utility.cs.5810: "Madenler (Büyülü Ayakkabılar)" #!String
+    Utility.cs.5812: "Ayışığı Denizanalarının Dansı" #!String
+    Utility.cs.5814: "Taşra Bakkalı" #!String
+    Utility.cs.5816: "Marlon'un Müziği" #!String
+    Utility.cs.5819: "Yıldızçiyi Vadisi Giriş Müziği" #!String
+    Utility.cs.5821: "Yükleme Ekranı Müziği" #!String
+    Utility.cs.5823: "Kütüphane ve Müze" #!String
+    Utility.cs.5825: "Bir Altın Yıldız Doğuyor" #!String
+    Utility.cs.5827: "Altıntoptan Gökyüzü" #!String
+    Utility.cs.5829: "Gösterişli" #!String
+    Utility.cs.5831: "Sam'in Grubu (Bluegrass)" #!String
+    Utility.cs.5833: "Keman (Tekli)" #!String
+    Utility.cs.5835: "Eğlence Şöleni" #!String
+    Utility.cs.5837: "Luau Şöleni" #!String
+    Utility.cs.5839: "Piyano (Tekli)" #!String
+    Utility.cs.5841: "Yankılar" #!String
+    Utility.cs.5843: "Uzaklardaki Banjo" #!String
+    Utility.cs.5845: "Hüzünlü Bir Hikaye" #!String
+    Utility.cs.5847: "Madenler (Kristal Çanlar)" #!String
+    Utility.cs.5849: "Çayır Kralı'nın Yolculuğu (Bitik Dünya)" #!String
+    Utility.cs.5851: "Çayır Kralı'nın Yolculuğu (Haydut)" #!String
+    Utility.cs.5853: "Çayır Kralı'nın Yolculuğu (Ölümsüzler)" #!String
+    Utility.cs.5855: "Çayır Kralı'nın Yolculuğu (Ana Düşman)" #!String
+    Utility.cs.5857: "Çayır Kralı'nın Yolculuğu (Son)" #!String
+    Utility.cs.5859: "Madenler (Derinlerdeki Titreşim)" #!String
+    Utility.cs.5861: "Patisko Çölü" #!String
+    Utility.cs.5863: "Joja Ofisinin Ortamı" #!String
+    Utility.cs.5864_1: "Turşu Kavanozu Azarı" #!String
+    Utility.cs.5864_2: "Düğünçiçeği Melodisi" #!String
+    Utility.cs.5864_3: "Shane'in Müziği" #!String
+    Utility.cs.5864_4: "Tüylerin Şarkısı" #!String
+    Utility.cs.5864_5: "Emily'nin Dansı" #!String
+    Utility.cs.5864_6: "Düşvari Sahne" #!String
+    Utility.cs.5864_8: "Müzik Kutusu Şarkısı" #!String
+    Utility.cs.5864_9: "Mutant Böcek Ortamı" #!String
+    Utility.cs.5922: "Tavuk" #!String
+    Utility.cs.5926: "Kümes yapılması gerekir." #!String
+    Utility.cs.5927: "Süt İneği" #!String
+    Utility.cs.5931: "Ahır yapılması gerekir." #!String
+    Utility.cs.5933: "Keçi" #!String
+    Utility.cs.5936: "Büyük Ahır yapılması gerekir." #!String
+    Utility.cs.5937: "Ördek" #!String
+    Utility.cs.5940: "Büyük Kümes yapılması gerekir." #!String
+    Utility.cs.5942: "Koyun" #!String
+    Utility.cs.5944: "Kocaman Ahır yapılması gerekir." #!String
+    Utility.cs.5945: "Tavşan" #!String
+    Utility.cs.5947: "Kocaman Kümes yapılması gerekir." #!String
+    Utility.cs.5948: "Domuz" #!String
+    Utility.cs.5950: "Lüks Ahır yapılması gerekir." #!String
+    Junimo.cs.6625: "Kal!" #!String
+    Junimo.cs.6626: "Hoşça kal!" #!String
+    spring: "Bahar" #!String
+    winter: "Kış" #!String
+    fall: "Güz" #!String
+    summer: "Yaz" #!String
+    DiaryEvent.cs.6658: "Sanırım günlüğüme bu akşam yazacağım..." #!String
+    DiaryEvent.cs.6660: "Sanırım günlüğüme bu akşam yazacağım..." #!String
+    DiaryEvent.cs.6664: "Son günlerde {0} ile çok vakit geçiriyorum..." #!String
+    DiaryEvent.cs.6667: "...İyi birer arkadaş oluyoruz. Umarım ilişkimiz bu şekilde devam eder." #!String
+    DiaryEvent.cs.6669: "...Onu bir arkadaştan daha yakın görüyorum." #!String
+    DiaryEvent.cs.6670: "...Onu bir arkadaştan daha çok seviyorum." #!String
+    QuestionEvent.cs.6692: "Ad Seç:" #!String
+    GameLocation.cs.8175: "Kilitli" #!String
+    GameLocation.cs.8214: "Unop dunyuu doo pusutn snaus^Op hanp o toeday na doo smol^Vhu lonozol yenn huot olait tol" #!String
+    GameLocation.cs.8429: "Posta bulunmuyor." #!String
+    GameLocation.cs.8525: "Pierre dükkandayken geri gel." #!String
+    GameLocation.cs.8708: "Büyük Paket" #!String
+    GameLocation.cs.8709: "Lüks Paket" #!String
+    GameLocation.cs.8715: "Hata: Yeterince para bulunmuyor." #!String
+    MineShaft.cs.9484: "Aşağıya giden bir geçit ortaya çıktı." #!String
+    SeedShop.cs.9701: "temiz" #!String
+    BlueprintsMenu.cs.10002: "Yeterince kaynak bulunmuyor." #!String
+    ChatBox.cs.10261: " Geçersiz Komut ::" #!String
+    DayTimeMoneyBox.cs.10370: "öö" #!String
+    DayTimeMoneyBox.cs.10371: "ös" #!String
+    DayTimeMoneyBox.cs.10378: "Durduruldu" #!String
+    FishingGame.cs.10444: "Puan: {0}" #!String
+    FishingGame.cs.12010: "Yakalanan Balık: {0}" #!String
+    FishingGame.cs.12011: "{0} Bitirme Bonusu!" #!String
+    FishingGame.cs.12012: "Bitirme bonusu bulunmuyor." #!String
+    FishingGame.cs.12013: "Ödül: {0} Yıldız Jetonu" #!String
+    FishingGame.cs.12021: "Ödül yok... Daha fazla uğraş." #!String
+    JunimoNoteMenu.cs.10783: "Ödüller" #!String
+    JunimoNoteMenu.cs.10786: "Biz    Junimolar    yardım etmekten    memnunuz.  Karşılığında     senden     Vadi'nin hediyelerini istiyoruz.    Eğer    orman      büyüsüne     hâkimsen    bu tomarın     mahiyetini    görebilirsin." #!String
+    LoadGameMenu.cs.10992: "Tamam" #!String
+    LoadGameMenu.cs.10993: "Vazgeç" #!String
+    LoadGameMenu.cs.10994: "Dosyayı Sil" #!String
+    LoadGameMenu.cs.11019: "{0} Çiftliği" #!String
+    LoadGameMenu.cs.11020: "{0}g" #!String
+    LoadGameMenu.cs.11022: "Kayıtlı oyun bulunamadı." #!String
+    LoadGameMenu.cs.11023: "{0} dosyası gerçekten silinsin mi?" #!String
+    MapPage.cs.11062: "Patisko Çölü" #!String
+    MapPage.cs.11064: "{0} Çiftliği" #!String
+    MapPage.cs.11065: "Ormanönü" #!String
+    MapPage.cs.11066: "Otobüs Durağı" #!String
+    MapPage.cs.11067: "Büyücü'nün Kulesi" #!String
+    MapPage.cs.11068: "Marnie'nin Çiftliği" #!String
+    MapPage.cs.11069: "Çoğu günler sabah 9 ile öğleden sonra 4 arası açıktır." #!String
+    MapPage.cs.11070: "Leah'nın Barakası" #!String
+    MapPage.cs.11071: "Söğüt Sokağı, No: 1" #!String
+    MapPage.cs.11072: "Jodi, Kent & Sam'in Evi" #!String
+    MapPage.cs.11073: "Söğüt Sokağı, No: 2" #!String
+    MapPage.cs.11074: "Emily & Haley'nin Evi" #!String
+    MapPage.cs.11075: "Kasaba Meydanı" #!String
+    MapPage.cs.11076: "Harvey'nin Sağlık Ocağı" #!String
+    MapPage.cs.11077: "Sabah 9 ile öğleden sonra 3 arası açıktır." #!String
+    MapPage.cs.11078: "Pierre'in Bakkalı" #!String
+    MapPage.cs.11079: "Pierre, Caroline & Abigail'in Evi " #!String
+    MapPage.cs.11080: "Sabah 9 ile öğleden sonra 5 arası açıktır (Çarşambaları kapalıdır)." #!String
+    MapPage.cs.11080_ExtendedHours: "Sabah 9 ile öğleden sonra 5 arası açıktır." #!String
+    MapPage.cs.11081: "Demirci" #!String
+    MapPage.cs.11082: "Sabah 9 ile öğleden sonra 4 arası açıktır." #!String
+    MapPage.cs.11083: "Salon" #!String
+    MapPage.cs.11084: "Öğlen 12 ile gece 12 arası açıktır." #!String
+    MapPage.cs.11085: "Başkan'ın Köşkü" #!String
+    MapPage.cs.11086: "Yıldızçiyi Vadisi Müzesi & Kütüphanesi" #!String
+    MapPage.cs.11087: "Sabah 8 ile akşam 6 arası açıktır." #!String
+    MapPage.cs.11088: "Elliott'ın Barakası" #!String
+    MapPage.cs.11089: "Lağım" #!String
+    MapPage.cs.11090: "Mezarlık" #!String
+    MapPage.cs.11091: "Karavan" #!String
+    MapPage.PamHouse: "Irmak Sokağı, No: 2" #!String
+    MapPage.PamHouseHomeOf: "Pam & Penny'nin Evi" #!String
+    MapPage.cs.11092: "Irmak Sokağı, No: 1" #!String
+    MapPage.cs.11093: "George, Evelyn & Alex'in Evi" #!String
+    MapPage.cs.11094: "Marangoz Atölyesi" #!String
+    MapPage.cs.11095: "Robin, Demetrius, Sebastian & Maru'nun Evi" #!String
+    MapPage.cs.11096: "Çoğu günler sabah 9 ile öğleden sonra 5 arası açıktır." #!String
+    MapPage.cs.11097: "Çadır" #!String
+    MapPage.cs.11098: "Maden" #!String
+    MapPage.cs.11099: "Maceraperestler Loncası" #!String
+    MapPage.cs.11100: "Öğlen 2 ile gece 2 arası açıktır." #!String
+    MapPage.cs.11103: "Taş Ocağı" #!String
+    MapPage.cs.11105: "JojaMart" #!String
+    AbandonedJojaMart: "Terkedilmiş JojaMart" #!String
+    MovieTheater_Map: "Sinema Salonu" #!String
+    MovieTheater_Hours: "Sabah ile akşam 6 arası açıktır." #!String
+    MapPage.cs.11106: "Sabah 9 ile akşam 11 arası açıktır." #!String
+    MapPage.cs.11107: "Balıkçı" #!String
+    MapPage.cs.11108: "Sabah 9 ile öğleden sonra 5 arası açıktır." #!String
+    MapPage.cs.11110: "Hamam" #!String
+    MapPage.cs.11111: "Her gün açıktır." #!String
+    MapPage.cs.11114: "Gizli Koru" #!String
+    MapPage.cs.11116: "Yıkık Ev" #!String
+    MapPage.cs.11117: "Halkevi" #!String
+    MapPage.cs.11118: "Lağım Borusu" #!String
+    MapPage.cs.11119: "Demiryolu" #!String
+    MapPage.cs.11122: "Yalnız Taş" #!String
+    MapPage.cs.11172: "Yıldızkaydı Salonu" #!String
+    MapPage.cs.11174: "Pelikan Kumsalı" #!String
+    MapPage.cs.11176: "Dağlar" #!String
+    MapPage.cs.11177: "Dağ Gölü" #!String
+    MapPage.cs.11178: "Taş Ocağı" #!String
+    MapPage.cs.11179: "Tünel" #!String
+    MapPage.cs.11186: "Kömürözü Ormanı" #!String
+    MapPage.cs.11190: "Pelikan Kasabası" #!String
+    OptionsElement.cs.11225: "Yeni tuşa bas..." #!String
+    OptionsElement.cs.11228: "Bu tuş kullanılıyor. Yeniden dene..." #!String
+    OptionsPage.cs.11233: "Genel:" #!String
+    OptionsPage.cs.11234: "Otomatik Koşma" #!String
+    OptionsPage.cs.11235: "Portreleri Göster" #!String
+    OptionsPage.cs.11236: "Tacir Portrelerini Göster" #!String
+    OptionsPage.cs.11237: "Alet Kullanım Noktasını Göster" #!String
+    OptionsPage.cs.11238: "Hareket Ederken Alet Kullanm Noktasını Gizle" #!String
+    OptionsPage.cs.11240: "Oyun Penceresi Etkin Değilken Durdur" #!String
+    OptionsPage.cs.11241: "Ses:" #!String
+    OptionsPage.cs.11242: "Müzik" #!String
+    OptionsPage.cs.11243: "Sesler" #!String
+    OptionsPage.cs.11244: "Ortam Sesi" #!String
+    OptionsPage.cs.11245: "Adım Sesi" #!String
+    OptionsPage.cs.11246: "Yazı Yazma Sesi" #!String
+    OptionsPage.cs.11247: "Görüntü:" #!String
+    OptionsPage.cs.11248: "Pencere Modu" #!String
+    OptionsPage.cs.11251: "Çözünürlük" #!String
+    OptionsPage.cs.11252: "Menü Arka Planı" #!String
+    OptionsPage.cs.11253: "Araç Çubuğunu Kilitle" #!String
+    OptionsPage.cs.11254: "Yakınlaştırma Düzeyi" #!String
+    OptionsPage.cs.11266: "Yakınlaştırma Tuşları" #!String
+    OptionsPage.cs.11271: "Kar Saydamlığı" #!String
+    OptionsPage.cs.11272: "Parıltı Efektlerini Göster" #!String
+    OptionsPage.cs.11273: "Donanım İmlecini Kullan" #!String
+    OptionsPage.cs.11274: "Kontroller:" #!String
+    OptionsPage.cs.11276: "Araç Çubuğu Kaydırma Yönünü Tersine Çevir" #!String
+    OptionsPage.cs.11277: "Kontrolleri Varsayılana Döndür" #!String
+    OptionsPage.cs.11278: "İnceleme/Eylem Gerçekleştirme" #!String
+    OptionsPage.cs.11279: "Araç (Alet) Kullanma" #!String
+    OptionsPage.cs.11280: "Menüye Erişme" #!String
+    OptionsPage.cs.11281: "Günlüğe Erişme" #!String
+    OptionsPage.cs.11282: "Haritaya Erişme" #!String
+    OptionsPage.cs.11283: "Yukarı Gitme" #!String
+    OptionsPage.cs.11284: "Sola Gitme" #!String
+    OptionsPage.cs.11285: "Aşağı Gitme" #!String
+    OptionsPage.cs.11286: "Sağa Gitme" #!String
+    OptionsPage.cs.11287: "Sohbet Kutusu" #!String
+    OptionsPage.cs.11288: "Koşma" #!String
+    OptionsPage.cs.11289: "Envanter Yuvası #1" #!String
+    OptionsPage.cs.11290: "Envanter Yuvası #2" #!String
+    OptionsPage.cs.11291: "Envanter Yuvası #3" #!String
+    OptionsPage.cs.11292: "Envanter Yuvası #4" #!String
+    OptionsPage.cs.11293: "Envanter Yuvası #5" #!String
+    OptionsPage.cs.11294: "Envanter Yuvası #6" #!String
+    OptionsPage.cs.11295: "Envanter Yuvası #7" #!String
+    OptionsPage.cs.11296: "Envanter Yuvası #8" #!String
+    OptionsPage.cs.11297: "Envanter Yuvası #9" #!String
+    OptionsPage.cs.11298: "Envanter Yuvası #10" #!String
+    OptionsPage.cs.11299: "Envanter Yuvası #11" #!String
+    OptionsPage.cs.11300: "Envanter Yuvası #12" #!String
+    PurchaseAnimalsMenu.cs.11308: "Ad mevcut değil." #!String
+    PurchaseAnimalsMenu.ChooseLocation: "Hayvanları nereye istiyorsun?" #!String
+    PurchaseAnimalsMenu.cs.11311: "Harika! Küçük {0} biraz sonra yeni evine doğru yola çıkacak." #!String
+    PurchaseAnimalsMenu.cs.11314: "Harika! Küçük {0} biraz sonra yeni evine doğru yola çıkacak." #!String
+    PurchaseAnimalsMenu.cs.11321: "Yapı dolu." #!String
+    PurchaseAnimalsMenu.cs.11325: "Yeterli para bulunmuyor." #!String
+    PurchaseAnimalsMenu.cs.11326: "{0} orada yaşayamaz." #!String
+    PurchaseAnimalsMenu.cs.11334: "İyi bakılan yetişkin tavuklar her gün yumurta verir." #!String
+    PurchaseAnimalsMenu.cs.11335: "Kümeste yaşar." #!String
+    PurchaseAnimalsMenu.cs.11337: "Mutlu yetişkinler her gün ördek yumurtası verir." #!String
+    PurchaseAnimalsMenu.cs.11340: "Bunlar yünlü tavşanlardır! Birkaç günde bir değerli yünlerini dökerler." #!String
+    PurchaseAnimalsMenu.cs.11343: "Yetişkinlerden her gün süt sağılabilir. Süt sağmak için süt kovası gerekir." #!String
+    PurchaseAnimalsMenu.cs.11344: "Ahırda yaşar." #!String
+    PurchaseAnimalsMenu.cs.11346: "Bu domuzlar yermantarı bulmak üzere eğitilmiştir!" #!String
+    PurchaseAnimalsMenu.cs.11349: "Yetişkinler her gün keçi sütü verir. Süt sağmak için süt kovası gerekir." #!String
+    PurchaseAnimalsMenu.cs.11352: "Yetişkinler yünleri için kırpılabilir. Sahipleriyle sıkı bağ kuran koyunların yünü daha hızlı çıkar. Yün kırpmak için makas gerekir." #!String
+    PurchaseAnimalsMenu.cs.11354: "Çiftlik Hayvanları:" #!String
+    PurchaseAnimalsMenu.cs.11355: "Yeni {1} için bir {0} seç." #!String
+    PurchaseAnimalsMenu.cs.11357: "Yeni Hayvanının Adı:" #!String
+    QuestLog.cs.11364: "Görevi Yapmaktan Vazgeç" #!String
+    QuestLog.cs.11373: "Günlük" #!String
+    QuestLog.cs.11374: "{0} Gün" #!String
+    QuestLog.cs.11375: "{0} Gün" #!String
+    QuestLog.cs.11376: "Ödül:" #!String
+    SaveGameMenu.cs.11378: "İlerlemen kaydedildi." #!String
+    SaveGameMenu.cs.11381: "Kaydediliyor..." #!String
+    ShippingMenu.cs.11389: "Çiftçilik" #!String
+    ShippingMenu.cs.11390: "Toplayıcılık" #!String
+    ShippingMenu.cs.11391: "Balıkçılık" #!String
+    ShippingMenu.cs.11392: "Madencilik" #!String
+    ShippingMenu.cs.11393: "Diğer" #!String
+    ShippingMenu.cs.11394: "Toplam" #!String
+    ShopMenu.cs.11457: "Mallarıma göz at." #!String
+    ShopMenu.cs.blueboat: "Dış mekân mimarisinde uzmanım. Gözüne ilişen bir şey var mı?" #!String
+    ShopMenu.cs.travelernightmarket: "Beni gördüğüne şaşırdın mı? Denizdeyken bile ticaret yapıyorum! Domuz güzelcene yüzmeyi seviyor." #!String
+    ShopMenu.cs.magicBoat: "...H...Her gün... Y...Yeni mal..." #!String
+    ShopMenu.cs.11460: "Yapı malzemesi mi bakınıyorsun? Yoksa süs için bir şeyler mi lazım?" #!String
+    ShopMenu.cs.11461: "Elimde dolu bir ev yapımı mobilya menüsü var." #!String
+    ShopMenu.cs.11462: "Satılık güzel mobilyalarım var." #!String
+    ShopMenu.cs.11463: "Satabileceğin fazla yapı malzemen var mı?" #!String
+    ShopMenu.cs.11464: "Elimde {2} {0} var ki evinde {1} duracağına emin olabilirsin." #!String
+    ShopMenu.cs.11469: "Kendi cevherini çıkarmaya mı üşeniyorsun? Hiç sıkıntı değil." #!String
+    ShopMenu.cs.11470: "Satılık bir yığın cevher ve metalim var. Kafana göre." #!String
+    ShopMenu.cs.11471: "Satılık metal ya da mineral mi arıyorsun?" #!String
+    ShopMenu.cs.11474: "Alet edevatlarını güçlendirip geliştirebilirim. Ancak, onları birkaç günlüğüne bana bırakman gerekecek." #!String
+    ShopMenu.cs.11477: "Balıkçılık malzemeleri mi lazım? Doğru yere geldin." #!String
+    ShopMenu.cs.11478: "Koku için özür dilerim." #!String
+    ShopMenu.cs.11481: "Erzak, malzeme falan mı lazımdı?" #!String
+    ShopMenu.cs.11482: "Günlük duvar kağıdı ve döşeme seçimime göz atmayı unutma!" #!String
+    ShopMenu.cs.11483: "Sana ne verebilirim?" #!String
+    ShopMenu.cs.11484: "Bende yalnızca en iyi mallar bulunur." #!String
+    ShopMenu.cs.11485: "Kaliteli mallar satıyorum." #!String
+    ShopMenu.cs.11486: "Alacak bir şeyler mi arıyorsun?" #!String
+    ShopMenu.cs.11487: "Satmak istediğin bir şey var mı?" #!String
+    ShopMenu.cs.11488: "Pierre'in Bakkalı'na hoş geldin! " #!String
+    ShopMenu.cs.11489: "Mevsim sonlanmak üzere. Yarın mallarda değişikliğe gideceğim." #!String
+    ShopMenu.cs.11492: "Alacağın bir şey var mı?" #!String
+    ShopMenu.cs.11494: "Selam kıvırak şey. Zikken var mı? Eyi. Ben satmak şapğalar." #!String
+    ShopMenu.cs.11497: "Ender Bulunan Mallar" #!String
+    ShopMenu.cs.11499: "Her şeyden azar azar var. Bir bak bakalım!" #!String
+    ShopMenu.cs.11500: "Bu malları Gotoro İmparatorluğu'ndan kaçak getirdim. Neden bu kadar pahalılar sanıyorsun?" #!String
+    ShopMenu.cs.11501: "Her hafta yeni mallar getiriyorum. Geri gelmeyi unutma!" #!String
+    ShopMenu.cs.11502: "Bir bakayım... Ah! Tam ihtiyacın olan şey, {0}!" #!String
+    ShopMenu.cs.11504: "Ülkeniz çok güzel. Burası en sevdiğim pazarlarımdan biri. Domuz da seviyor tabii." #!String
+    ShopMenu.cs.11507: "Satılık hayvan erzaklarım var!" #!String
+    ShopMenu.cs.11508: "*iç çeker*... Kapı açıldığında Lewis geldi sandım." #!String
+    ShopMenu.cs.11511: "Ne istiyorsun?" #!String
+    ShopMenu.cs.11512: "Kokuyu alıyor musun? {0} kokuyor." #!String
+    ShopMenu.cs.11513: "Aç mısın? Su ister misin? Ne ararsan var." #!String
+    ShopMenu.cs.11514: "Yıldızkaydı Salonu'na hoş geldin! Sana ne vereyim?" #!String
+    ShopMenu.cs.11517: "Mağaralar tehlikeli olabilir. Hazırlıklarını tamamladığından emin ol." #!String
+    ShopMenu.cs.11518: "Yeni bir silah mı arıyorsun?" #!String
+    ShopMenu.cs.11519: "Maceraperestler Loncası'na hoş geldin." #!String
+    ShopMenu.cs.11520: "Hiç yaratık kestin mi? Yaratıklardan yağmaladığın şeyleri alabilirim." #!String
+    ShopMenu.cs.11521: "Mağaralar tehlikeli olabiliyor. Bu gözü nasıl kaybettim sanıyorsun?" #!String
+    ShopMenu.cs.11524: "Bu malları başka hiçbir yerde bulamazsın!" #!String
+    ShopMenu.cs.11525: "Aradığın şey tam olarak bende." #!String
+    ShopMenu.cs.11583: "Tükendi." #!String
+    SkillsPage.cs.11587: "Cüce Diline Çeviri Rehberi" #!String
+    SkillsPage.cs.11588: "Paslı Anahtar" #!String
+    SkillsPage.cs.11589: "Kulüp Kartı" #!String
+    SkillsPage.cs.11590: "Özel Tılsım" #!String
+    SkillsPage.cs.11591: "Kafatası Anahtarı" #!String
+    SkillsPage.cs.magnifyingglass: "Büyüteç" #!String
+    SkillsPage.cs.11592: "+{0} Çapa Verimliliği" #!String
+    SkillsPage.cs.11594: "+{0} Sulama Kabı Uzmanlığı" #!String
+    SkillsPage.cs.11596: "+{0} Balta Uzmanlığı" #!String
+    SkillsPage.cs.11598: "+{0} Olta Uzmanlığı" #!String
+    SkillsPage.cs.11600: "+{0} Kazma Uzmanlığı" #!String
+    SkillsPage.cs.11602: "+{0} Sağlık" #!String
+    SkillsPage.cs.11604: "Çiftçilik" #!String
+    SkillsPage.cs.11605: "Madencilik" #!String
+    SkillsPage.cs.11606: "Toplayıcılık" #!String
+    SkillsPage.cs.11607: "Balıkçılık" #!String
+    SkillsPage.cs.11608: "Savaşma" #!String
+    SkillsPage.cs.11609: "Şans" #!String
+    SkillsPage.cs.11610: "Cüzdan" #!String
+    SocialPage_Relationship_Single_Female: "(bekâr)" #!String
+    SocialPage_Relationship_Single_Male: "(bekâr)" #!String
+    SocialPage_Relationship_Husband: "(eş)" #!String
+    SocialPage_Relationship_Wife: "(eş)" #!String
+    SocialPage_Relationship_Boyfriend: "(erkek arkadaş)" #!String
+    SocialPage_Relationship_Girlfriend: "(kız arkadaş)" #!String
+    SocialPage_Relationship_ExHusband: "(eski eş)" #!String
+    SocialPage_Relationship_ExWife: "(eski eş)" #!String
+    StrengthGame.cs.11660: "HA! Görmek istediğim şey bu işte! Al bakalım, benden sana bir yıldız jetonu." #!String
+    StrengthGame.cs.11661: "Mamut" #!String
+    StrengthGame.cs.11662: "Goril" #!String
+    StrengthGame.cs.11663: "Dozer" #!String
+    StrengthGame.cs.11664: "Öküz" #!String
+    StrengthGame.cs.11665: "At" #!String
+    StrengthGame.cs.11666: "Oduncu" #!String
+    StrengthGame.cs.11667: "Dağ Trolü" #!String
+    StrengthGame.cs.11668: "Vücut Geliştirici" #!String
+    StrengthGame.cs.11669: "Demir" #!String
+    StrengthGame.cs.11670: "Ağaç Gövdesi" #!String
+    StrengthGame.cs.11671: "Ork" #!String
+    StrengthGame.cs.11672: "Spor Hocası" #!String
+    StrengthGame.cs.11673: "Kaya" #!String
+    StrengthGame.cs.11674: "Öfkeli Domuz" #!String
+    StrengthGame.cs.11675: "Küçük Eşek" #!String
+    StrengthGame.cs.11676: "Çoban Köpeği" #!String
+    StrengthGame.cs.11677: "Kumtaşı" #!String
+    StrengthGame.cs.11678: "Hurda Metal" #!String
+    StrengthGame.cs.11679: "Sıcak Hardal" #!String
+    StrengthGame.cs.11680: "Deri Çizme" #!String
+    StrengthGame.cs.11681: "Çayır Köpeği" #!String
+    StrengthGame.cs.11682: "Sertleştirilmiş Kil" #!String
+    StrengthGame.cs.11683: "Sal Ağacı Kerestesi" #!String
+    StrengthGame.cs.11684: "Karton" #!String
+    StrengthGame.cs.11685: "Gözleme" #!String
+    StrengthGame.cs.11686: "Yayık Ayranı" #!String
+    StrengthGame.cs.11687: "Kağıt Hamuru" #!String
+    StrengthGame.cs.11688: "Alabalık" #!String
+    StrengthGame.cs.11689: "Dal" #!String
+    StrengthGame.cs.11690: "Ödüllü Ceza" #!String
+    StrengthGame.cs.11691: "Fare" #!String
+    StrengthGame.cs.11692: "George'un Dizi" #!String
+    StrengthGame.cs.11693: "Ördek Yavrusu" #!String
+    StrengthGame.cs.11694: "Hamurlaşmış Çubuk Makarna" #!String
+    StrengthGame.cs.11695: "Japon Balığı" #!String
+    StrengthGame.cs.11696: "Karides" #!String
+    StrengthGame.cs.11697: "Kürdan" #!String
+    StrengthGame.cs.11698: "Alfredo Sosu" #!String
+    StrengthGame.cs.11699: "Islak Peçete" #!String
+    StrengthGame.cs.11700: "Az Yağlı Süt" #!String
+    StrengthGame.cs.11701: "Plankton" #!String
+    StrengthGame.cs.11703: "Güç Seviyesi: {0}" #!String
+    StrengthGame.cs.11705: "Vay. Güç sıfır. Bu kadar zayıf olmandan etkilendiğim doğrusu. Al sana bir yıldız jetonu." #!String
+    TitleMenu.cs.11717: "Tekrar hoş geldin!" #!String
+    TitleMenu.cs.11718: "Kumanda modunu etkinleştirmek için Xbox One ya da Xbox 360 kumandası bağlamalısın." #!String
+    TitleMenu.cs.11719: "İpucu: Hediye vermek, Yıldızçiyi Vadisi sakinleri ile arkadaş olmanın sağlam yollarından biridir." #!String
+    TitleMenu.cs.11720: "İpucu: Bir seferde 5 nesne satın almak için Shift'e basılı tutarak tıkla." #!String
+    TitleMenu.cs.11721: "Çapa ve sulama kabını geliştirdikten sonra, etki alanını artırmak için alet tuşuna basılı tut!" #!String
+    TitleMenu.cs.11722: "İpucu: Silahların özel hareketlerini kullanmak için sağ fare tuşuna tıkla." #!String
+    TitleMenu.cs.11723: "İpuçları, yemek tarifleri ve daha pek çok şeyi öğrenmek için televizyon izle!" #!String
+    TitleMenu.cs.11724: "Gezgin tüccar haftada bir Yıldızçiyi Vadisi'ne uğrar. Çok çeşitli malları genelde fahiş fiyatlara satar!" #!String
+    TitleMenu.cs.11725: "Oynadığın için teşekkürler!" #!String
+    TitleMenu.cs.11726: "Elliott'ın Son Cümlesi:" #!String
+    TitleMenu.cs.11731: "Mücadele: Çayır Kralı'nın Yolculuğu'nu ölmeden tamamla." #!String
+    TitleMenu.cs.11732: "Oyunu 100. kez başlattın." #!String
+    TitleMenu.cs.11733: "Oyunu 1.000. kez başlattın!" #!String
+    TitleMenu.cs.11734: "Oyunu 10.000. kez başlattın! Etkilendim. -Ape" #!String
+    TitleMenu.cs.11738: "Çık" #!String
+    TitleMenu.cs.11739: "Geri" #!String
+    TitleMenu.cs.11740: "Hakkında" #!String
+    TitleMenu.cs.11741: "Geç" #!String
+    TutorialMenu.cs.11805: "Ekinlere Giriş" #!String
+    TutorialMenu.cs.11807: "Balıkçılık" #!String
+    TutorialMenu.cs.11809: "Madencilik" #!String
+    TutorialMenu.cs.11811: "Nesne Oluşturma" #!String
+    TutorialMenu.cs.11813: "Yapılar ve İnşaat" #!String
+    TutorialMenu.cs.11815: "Arkadaş Edinme" #!String
+    TutorialMenu.cs.11817: "Kasaba Bilgisi" #!String
+    TutorialMenu.cs.11819: "Hayvan Yetiştirme" #!String
+    WheelSpinGame.cs.11829: "Kazandın!" #!String
+    WheelSpinGame.cs.11830: "Kaybettin." #!String
+    AbigailGame.cs.11896: "Geliyor!" #!String
+    AbigailGame.cs.11897: "Yarısı tamamdır!" #!String
+    AbigailGame.cs.11898: "Hey! Başardık!" #!String
+    AbigailGame.cs.11901: "Ah ya..." #!String
+    AbigailGame.cs.11902: "Hayır!" #!String
+    AbigailGame.cs.11914: "Oyun Bitti" #!String
+    AbigailGame.cs.11917: "Yeniden Başla" #!String
+    AbigailGame.cs.11919: "Çık" #!String
+    CalicoJack.cs.11924: "Kart Çek" #!String
+    CalicoJack.cs.11927: "Kal" #!String
+    CalicoJack.cs.11930: "İki Katı ya da Çıkış" #!String
+    CalicoJack.cs.11933: "Yeni Oyun" #!String
+    CalicoJack.cs.11936: "Çık" #!String
+    CalicoJack.cs.11943: "Kazandın!" #!String
+    CalicoJack.cs.11944: "Bu tam bir Patiskobir idi!" #!String
+    CalicoJack.cs.11946: "Kaybettin." #!String
+    CalicoJack.cs.11947: "Battın!" #!String
+    CalicoJack.cs.11950: "Dağıtıcı Battı!" #!String
+    CalicoJack.cs.11951: "Beraberlik." #!String
+    CalicoJack.cs.11952: "Kazanan çıkmadı." #!String
+    CalicoJack.cs.11955: "{0} noktasına yakınsın." #!String
+    CalicoJack.cs.11958: "Dağıtıcı {0} noktasına yakın." #!String
+    CalicoJack.cs.11965: "Sonuç: {0}" #!String
+    CalicoJack.cs.11970: "Dağıtıcı: {0}" #!String
+    CalicoJack.cs.11972: "Bahis: {0}" #!String
+    FantasyBoardGame.cs.11980: "Senaryoyu '{0}' derecesiyle tamamladın." #!String
+    GrandpaStory.cs.12026: "...biricik torunuma:" #!String
+    GrandpaStory.cs.12028: "...biricik torunuma:" #!String
+    GrandpaStory.cs.12029: "Bu mühürlü zarfı almanı istiyorum." #!String
+    GrandpaStory.cs.12030: "Yok, yok. Henüz açma... Sabırlı ol." #!String
+    GrandpaStory.cs.12031: "Şimdi, dikkatlice dinle..." #!String
+    GrandpaStory.cs.12034: "Modern hayatın yükleri tarafından ezildiğini hissedeceğin günler gelecek..." #!String
+    GrandpaStory.cs.12035: "...Düşeceğin boşluk, ince ruhunu tüketecek." #!String
+    GrandpaStory.cs.12036: "İşte o gün geldiğinde, hediyemi almaya hazır olacaksın." #!String
+    GrandpaStory.cs.12038: "İşte o gün geldiğinde, hediyemi almaya hazır olacaksın." #!String
+    GrandpaStory.cs.12040: "Büyükbaban artık dinlenecek..." #!String
+    GrandpaStory.cs.12051: "Sevgili {0},^^Eğer bunu okuyorsan, aşırı şekilde değişikliğe ihtiyacın var demektir.^^Uzun zaman önce aynısı bana da olmuştu. Hayattaki en önemli şeyi... insanlar ve doğayla kurulması gereken bağlantıyı görme yetimi kaybetmiştim. Her şeyi geride bırakıp ait olduğum yere yerleştim.^^^Her şeyimi oraya... gururuma ve sevincime, {1} Çiftliği'ne adadım. Çiftlik, güney kıyısındaki Yıldızçiyi Vadisi'nde bulunuyor. Yeni hayatına başlamak için daha iyi bir yer bulamazsın.^^Bu benim en değerli hediyemdi. Artık senin. Soyadımızı şereflendireceğini biliyorum, evladım. Şansın bol olsun.^^Sevgilerle, Büyükbaban.^^Not: Lewis hayattaysa o ihtiyara selamımı söyle, tamam mı?" #!String
+    GrandpaStory.cs.12055: "Sevgili {0},^^Eğer bunu okuyorsan, aşırı şekilde değişikliğe ihtiyacın var demektir.^^Uzun zaman önce aynısı bana da olmuştu. Hayattaki en önemli şeyi... insanlar ve doğayla kurulması gereken bağlantıyı görme yetimi kaybetmiştim. Her şeyi geride bırakıp ait olduğum yere yerleştim.^^^Her şeyimi oraya... gururuma ve sevincime, {1} Çiftliği'ne adadım. Çiftlik, güney kıyısındaki Yıldızçiyi Vadisi'nde bulunuyor. Yeni hayatına başlamak için daha iyi bir yer bulamazsın.^^Bu benim en değerli hediyemdi. Artık senin. Soyadımızı şereflendireceğini biliyorum, evladım. Şansın bol olsun.^^Sevgilerle, Büyükbaban.^^Not: Lewis hayattaysa o ihtiyara selamımı söyle, tamam mı?" #!String
+    GrandpaStory.cs.12059: "XX Yıl Sonra" #!String
+    MineCart.cs.12106: "Junimo Kart'ı tamamladın! " #!String
+    MineCart.cs.12115: "En İyi: " #!String
+    Slots.cs.12117: "Bahis10" #!String
+    Slots.cs.12118: "Bahis100" #!String
+    TargetGame.cs.12154: "Has.: %{0}" #!String
+    TargetGame.cs.12157: "Hassasiyet: %{0}      {1} / {2} Başarılı Atış" #!String
+    TargetGame.cs.12161: "x{0} Hassasiyet Çarpanı!" #!String
+    TargetGame.cs.12163: "Hassasiyet bonusu bulunmuyor." #!String
+    Boots.cs.12500: "Seviye {0}" #!String
+    Boots.cs.12501: "Ayakkabı" #!String
+    Furniture.cs.12623: "Evin içine yerleştirilebilir." #!String
+    Furniture.cs.12629: "Duvara asılmalıdır." #!String
+    Furniture.cs.12632: "Buraya yerleştirilemez." #!String
+    Furniture.cs.12633: "Duvara asılamaz." #!String
+    Object.cs.12657: " (Tarif)" #!String
+    Object.cs.12689: "Eril bir balçıkça türedi." #!String
+    Object.cs.12691: "Dişi bir balçıkça türedi." #!String
+    Object.cs.12721: "5 kahve çekirdeği gerekir." #!String
+    Object.cs.12772: "1 kömür gerekir." #!String
+    Object.cs.12777: "5 cevher gerekir." #!String
+    Object.cs.12783: "10 odun gerekir." #!String
+    Object.cs.12787: "100 balçıkça gerekir." #!String
+    Object.cs.12822: "Bulutlar toplanıyor..." #!String
+    Object.cs.12847: "Mobilya" #!String
+    Object.cs.12849: "Eser" #!String
+    Object.cs.12850: "Mineral" #!String
+    Object.cs.12851: "Sebze" #!String
+    Object.cs.12852: "Balık" #!String
+    Object.cs.12853: "Yemek" #!String
+    Object.cs.12854: "Meyve" #!String
+    Object.cs.12855: "Tohum" #!String
+    Object.cs.12856: "Gübre" #!String
+    Object.cs.12857: "Yem" #!String
+    Object.cs.12858: "Olta Takımı" #!String
+    Object.cs.12859: "Süs" #!String
+    Object.cs.12860: "Çöp" #!String
+    Object.cs.12862: "Zanaat Ürünü" #!String
+    Object.cs.12863: "Oluşturulmuş Nesne" #!String
+    Object.cs.12864: "Hayvansal Ürün" #!String
+    Object.cs.12866: "Çiçek" #!String
+    Object.cs.12867: "Canavar Yağması" #!String
+    Object.cs.12868: "Kaynak" #!String
+    Object.cs.12869: "Toplama" #!String
+    category_clothes: "Giysiler" #!String
+    Object.cs.12873: "İlerleme Modu" #!String
+    Object.cs.12875: "Sonsuzluk Modu" #!String
+    Object.cs.12926: "Henüz kargayla karşılaşmadım." #!String
+    Object.cs.12927: "1 karga korkuttum." #!String
+    Object.cs.12929: "{0} karga korkuttum." #!String
+    Object.cs.12942: "Ambar boş. Doldurmak için silo yap ve tırpanla ot kes." #!String
+    Object.cs.12993: "Yapay nesne buldun! Bölgedeki müzenin müdürü bundan haberdar olmak isteyebilir." #!String
+    Object.cs.12994: "'Kayıp Kitap' buldun. Kütüphane'nin koleksiyonu büyüdü!" #!String
+    Object.cs.12995: "'Jeot' buldun! Bölgedeki demirci jeotu açabilir. Kim bilir içinde neler saklıdır..." #!String
+    Object.cs.12996: "Büyükbaba'nın mabedinin arkasında özel bir heykel buldun." #!String
+    Object.cs.13021: "Geçersiz Konum." #!String
+    Object.cs.13053: "Uygunsuz Konum." #!String
+    Object.cs.13060: "Başka bir ağaca çok yakın." #!String
+    Object.cs.13068: "Buraya yerleştirilemez." #!String
+    Object.cs.13073: "{0} yapma tarifi." #!String
+    Object.cs.13074: "{0} oluşturma planı." #!String
+    Object.cs.13078: "Müze'ye bağışta bulunursan, Gunther bu konuda sana daha fazla bilgi verebilir." #!String
+    SpecialItem.cs.13088: "Kafatası Anahtarı" #!String
+    SpecialItem.cs.13089: "Kulüp Kartı" #!String
+    SpecialItem.cs.13090: "Odun parçasının altında {0} buldun! Ne işe yaradığını bilmiyorsun ama önemliymiş gibi görünüyor. Cüzdana eklendi." #!String
+    SpecialItem.cs.13092: "{0} buldun! Ne işe yaradığını bilmiyorsun ama önemliymiş gibi görünüyor. Cüzdana eklendi." #!String
+    SpecialItem.cs.13094: "{0} aldın! Envanterdeki yuva sayısı {1} oldu." #!String
+    TV.cs.13105: "Hava Durumu" #!String
+    TV.cs.13107: "Falcı" #!String
+    TV.cs.13111: "Topraktan Geçinmek" #!String
+    TV.cs.13114: "Soslar Kraliçesi" #!String
+    TV.cs.13117: "Soslar Kraliçesi (Tekrar)" #!String
+    TV.cs.13118: "(Ayrıl)" #!String
+    TV.cs.13120: "Kanal Seçimi:" #!String
+    TV.cs.13124: "\"Topraktan Geçinmek\" programına hoş geldiniz. Bugün sizlere başka bir ipucu vereceğiz. Şimdi dinleyin:" #!String
+    TV.cs.13127: "Selamlar! Bugün ben, soslar kraliçesi... sizlere gizli yemek kitabımdan ağzınızın suyunu akıtacak yeni bir tarif göstereceğim. Bu haftanın yemeği..." #!String
+    TV.cs.13128: "Ah... Yeni bir izleyicinin bize katıldığını hissediyorum. Yıldızçiyi Vadisi'nden... genç bir adam sanırım. Hoş geldiniz, hoş geldiniz!" #!String
+    TV.cs.13130: "Ah... Yeni bir izleyicinin bize katıldığını hissediyorum. Yıldızçiyi Vadisi'nden... genç bir hanım sanırım. Hoş geldiniz, hoş geldiniz!" #!String
+    TV.cs.13132: "Ah... Evet, ruhların kulağıma fısıldadığını duyabiliyorum... " #!String
+    TV.cs.13133: "'Welwick'in Kerameti' programına tekrar hoş geldiniz... Geleceğe dair gizemli bilgiler arayışındaysanız, doğru yere geldiniz." #!String
+    TV.cs.13134: "Uhu... Küremde bir parıltı görüyorum... Gelecekten bir bilgi kırığı görüyorum!" #!String
+    TV.cs.13135: "Welwick'in Kerameti programına... Ruhların sesinin bizzat... bizzat SİZLERE yönlendirildiği TEK programa tekrar hoş geldiniz." #!String
+    TV.cs.13136: "Bir numaralı hava durumu, haber ve eğlence kaynağınız KOZU 5'e hoş geldiniz.^Şimdi de, karşınızda yarının hava durumu..." #!String
+    TV.cs.13148: "Şaka yapıyorum... Hazır değilim. Bugün senlik bir şeyim yok." #!String
+    TV.cs.13151: "{0} yapmayı zaten biliyorsun." #!String
+    TV.cs.13153: "'{0}' yapmayı öğrendin!" #!String
+    TV.cs.13164: "Hım... Tufah. Elimdeki bilgi formu 'boş'. Bu yüz kızartıcı... " #!String
+    TV.cs.13170: "Pelikan Kasabası'nda" #!String
+    TV.cs.13172: "kumsalda" #!String
+    TV.cs.13174: "ormanda" #!String
+    TV.cs.13175: "Yarın açık ve güneşli bir gün olacak... {0} için mükemmel bir gün! Etkinlik {1} gerçekleşecek. {2} ile {3} arasında başlayacak. Geç kalmayın!" #!String
+    TV.cs.13180: "Sıkı giyinin, millet. Yarın kar yağacak!" #!String
+    TV.cs.13181: "Yarın birkaç santimetre uzunluğa ulaşacak kar yağışı bekleniyor." #!String
+    TV.cs.13182: "Yarın güzel, güneşli bir gün olacak!" #!String
+    TV.cs.13183: "Hava tüm gün boyunca açık ve güneşli olacak." #!String
+    TV.cs.13184: "Yarın bütün gün yağmur yağacak." #!String
+    TV.cs.13185: "Görünüşe göre fırtına çıkacak. Gök gürültüsü ve yıldırım bekleniyor." #!String
+    TV.cs.13187: "Parçalı bulutlu havamız hafif esintilerle desteklenecek. Polenlerin havada uçuşması bekleniyor!" #!String
+    TV.cs.13189: "Ani rüzgarlarla dolu bulutlu bir gün olacak." #!String
+    TV.cs.13190: "Bütün gün kar yağacak. Sıkı giyindiğinizden emin olun, millet!" #!String
+    TV.cs.13191: "Ruhlar öfkeli. Anlaşılan birisi onlara değersiz bir adak adamış... Hım. Ruhlarla dalga geçmek akılsızcadır!" #!String
+    TV.cs.13192: "Ruhlar bugün mutsuz. Hayatınızı zorlaştırmak için ellerinde geleni yapacaklar." #!String
+    TV.cs.13193: "Ruhlar bugün bir nebze sinirli. Şans yanınızda olmayacak." #!String
+    TV.cs.13195: "Ruhlar bugün bir nebze kaygılı. Şans yanınızda olmayacak." #!String
+    TV.cs.13197: "Ruhlar sevinçli! Birisi onlara güzel bir adak adamış. Bundan memnun kalmışlar." #!String
+    TV.cs.13198: "Ruhlar bugün fazlasıyla mutlu! Herkese iyi talihlerini saçmak için ellerinden geleni yapacaklar." #!String
+    TV.cs.13199: "Bugün ruhların keyfi yerinde. Bence şansınız yaver gidecek." #!String
+    TV.cs.13200: "Ruhlar bugün ne iyi ne kötü. Bugün olacaklar sizin elinizde." #!String
+    TV.cs.13201: "Bu çok nadir görülür. Ruhlar bugün kesinlikle tarafsız bakıyorlar." #!String
+    Wallpaper.cs.13203: "Döşeme" #!String
+    Wallpaper.cs.13204: "Duvar Kağıdı" #!String
+    Wallpaper.cs.13205: "Bir odanın döşemelerini şekillendirir." #!String
+    Wallpaper.cs.13206: "Bir odanın duvar kağıdını şekillendirir." #!String
+    FishingQuest.cs.13227: "Balıkçılık" #!String
+    FishingQuest.cs.13228: "Bölgedeki {0} nüfusu türümüzü tehdit etmeye başladı. Benim için {1} tane yakalayabilirsen fazlasıyla yardımcı olmuş olursun.   -Demetrius" #!String
+    FishingQuest.cs.13231: "Teşekkürler @!$h#$b#{0} nüfusu {1} kontrolden çıkıyordu." #!String
+    FishingQuest.cs.13233: "sudaki çevre kirleticiler üreme döngülerini hızlandırdığından" #!String
+    FishingQuest.cs.13234: "dikkatsiz balıkçılar bölgesel turnuva için çok fazla bıraktığından" #!String
+    FishingQuest.cs.13235: "rakip türler fazla avlandığı için beslendikleri yiyeceklere erişim kolaylaştığından" #!String
+    FishingQuest.cs.13236: "genetiği düzenlenmiş 'süper {0}' balık yatağından kaçıp çoğaldığından" #!String
+    FishingQuest.cs.13243: "{0}/{1} ahtapot yakalandı." #!String
+    FishingQuest.cs.13244: "{0}/{1} {2} yakalandı." #!String
+    FishingQuest.cs.13248: "Balıkçılık sanatını hayatta tutmaya çalışıyorum... {1} {2} yakalayan bir ${balıkçıya^balık sevdalısına}$ {0}g ödemeye yapacağım. İyi şanslar!  -Willy" #!String
+    FishingQuest.cs.13253: "Mürekkepbalığı" #!String
+    FishingQuest.cs.13255: "{0}/{1} mürekkepbalığı yakalandı." #!String
+    FishingQuest.cs.13256: "Hey, başarmışsın @!$h#$b#{0} heyecan verici bir av, sence de öyle değil mi?" #!String
+    FishingQuest.cs.13258: "Hep en olağan dışı yerlerde saklanıyorlar." #!String
+    FishingQuest.cs.13259: "Çok güçlü yüzücüler." #!String
+    FishingQuest.cs.13260: "Bir keresinde{0} büyüklüğünde bir tane yakalamıştım!" #!String
+    FishingQuest.cs.13261: " küçük bir motorsiklet" #!String
+    FishingQuest.cs.13262: " katlanır koltuk" #!String
+    FishingQuest.cs.13263: " çim biçme makinesi" #!String
+    FishingQuest.cs.13264: " ansiklopedi seti" #!String
+    FishingQuest.cs.13265: " oyun makinesi" #!String
+    FishingQuest.cs.13266: " buzağı" #!String
+    FishingQuest.cs.13267: "Bazen çok akıllı duruyorlar. Adamı korkutuyorlar.$u" #!String
+    FishingQuest.cs.13268: "#$b#Al bakalım ödülünü. Tebrikler.$h" #!String
+    FishingQuest.cs.13274: "\n\n- {0}g ödül." #!String
+    FishingQuest.cs.13275: "\n- Balık sende kalacak." #!String
+    FishingQuest.cs.13277: "{0} ile konuş." #!String
+    ItemDeliveryQuest.cs.13285: "Teslimat" #!String
+    ItemDeliveryQuest.cs.13299: "Baktığım şey," #!String
+    ItemDeliveryQuest.cs.13300: "Alışverişe çıkma nedenim," #!String
+    ItemDeliveryQuest.cs.13301: "Aslında aradığım şey," #!String
+    ItemDeliveryQuest.cs.13302: " tarladan çıkma bir {0}. " #!String
+    ItemDeliveryQuest.cs.13303: " lezzetli bir {0}. " #!String
+    ItemDeliveryQuest.cs.13304: " olgun bir {0}. " #!String
+    ItemDeliveryQuest.cs.13306: "Bölgemizdeki çiftçilerden biri bana bulabilir mi?" #!String
+    ItemDeliveryQuest.cs.13307: "Bana getiriseniz size ödeme yaparım." #!String
+    ItemDeliveryQuest.cs.13308: "Birisi bana getirebilirse çok memnun olurum." #!String
+    ItemDeliveryQuest.cs.13311: "Selamlar! Ben Demetrius. Birisi bana {0} getirebilir mi?\nBiyolojik araştırmamın bir parçası olarak üzerlerinde çalışmam gerekiyor." #!String
+    ItemDeliveryQuest.cs.13314: "İncelemek üzere {0} arıyorum. Lütfen Dağ Sokağı, No: 24'de oturan Demetrius'a ulaştırın." #!String
+    ItemDeliveryQuest.cs.13317: "Merhaba komşularım! Keçilerim {0} için ölüyor. Ben bulamadım! Yardım edebilir misiniz?     -Marnie" #!String
+    ItemDeliveryQuest.cs.13320: "Merhaba komşularım! Süt üretimini artırmak için {0} ineklerime vermek istiyorum. Bulursanız geçerken bir tane de bana bırakır mısınız?     -Marnie" #!String
+    ItemDeliveryQuest.cs.13324: "İçim karardı... {0} beni neşelendirebilir.     -Sebastian" #!String
+    ItemDeliveryQuest.cs.13327: "Dağın yüzüne karşı tüm kuvvetimle {0} fırlatmak istiyorum. Lütfen Dağ Sokağı, No: 24'de oturan Sebastian'a teslim edin." #!String
+    ItemDeliveryQuest.cs.13333: "{1} için {0} arıyorum." #!String
+    ItemDeliveryQuest.cs.13334: "{1} için {0} lazım." #!String
+    ItemDeliveryQuest.cs.13336: "Öğlenki çay partim" #!String
+    ItemDeliveryQuest.cs.13337: "Bu akşam kırmızı şarapla götürmek" #!String
+    ItemDeliveryQuest.cs.13338: "Taze ekmeğin yanında götürmek" #!String
+    ItemDeliveryQuest.cs.13339: "Akşamki kitap kulübüne götürmek" #!String
+    ItemDeliveryQuest.cs.13340: "Yorucu bir günün ardından keyif çatmak" #!String
+    ItemDeliveryQuest.cs.13341: "Televizyon izlerken yemek" #!String
+    ItemDeliveryQuest.cs.13342: "{0} okurken tüketmek" #!String
+    ItemDeliveryQuest.cs.13346: "En sevdiğim radyo programını dinlerken tüketmek" #!String
+    ItemDeliveryQuest.cs.13347: "Yeni '{0}' kaydını dinlerken tüketmek" #!String
+    ItemDeliveryQuest.cs.13349: "Akşamleyin karnımı doyurmak" #!String
+    ItemDeliveryQuest.cs.13350: "Atıştırmalık olarak saklamak" #!String
+    ItemDeliveryQuest.cs.13351: "Yarın öğlen yemeğinde mideye indirmek" #!String
+    ItemDeliveryQuest.cs.13353: "Kış şölenini çeşitlendirmek" #!String
+    ItemDeliveryQuest.cs.13355: "Yazın ikram etmek" #!String
+    ItemDeliveryQuest.cs.13356: "Neşelenmek" #!String
+    ItemDeliveryQuest.cs.13357: "Sabah kahvaltısında masaya koymak" #!String
+    ItemDeliveryQuest.cs.13360: "Sabah uyandığımda keşke akşama yemekte {0} olsa diye düşündüm.\nBirisi benim için yapabilir mi?" #!String
+    ItemDeliveryQuest.cs.13364: "Şiddetle {0} istiyorum. Lütfen benim oraya getirin." #!String
+    ItemDeliveryQuest.cs.13367: "Gübre yığınım için {0} gerekiyor. Teşekkürler." #!String
+    ItemDeliveryQuest.cs.13370: "ÇOK açım. {0} istiyorum." #!String
+    ItemDeliveryQuest.cs.13373: "Yıldızçiyi Vadisi Yemek Servisi {0} tarihinde {2} adresine {1} teslim edecek geçici bir çalışan aramaktadır. Ödeme teslimat üzerine yapılacaktır." #!String
+    ItemDeliveryQuest.cs.13378: "İçim karardı... {0} beni neşelendirebilir.\n     -Sebastian" #!String
+    ItemDeliveryQuest.cs.13381: "...Her nedense canım {0} istiyor. Lütfen Dağ Sokağı, No: 24'de oturan Sebastian'a ulaştırın." #!String
+    ItemDeliveryQuest.cs.13383: "{1} yapmak için {0} arıyorum. " #!String
+    ItemDeliveryQuest.cs.13385: "Çorba" #!String
+    ItemDeliveryQuest.cs.13386: "Pizza" #!String
+    ItemDeliveryQuest.cs.13387: "Salata" #!String
+    ItemDeliveryQuest.cs.13388: "Yahni" #!String
+    ItemDeliveryQuest.cs.13389: "Güveç" #!String
+    ItemDeliveryQuest.cs.13390: "Vogda kızartma" #!String
+    ItemDeliveryQuest.cs.13391: "Calzone" #!String
+    ItemDeliveryQuest.cs.13392: "Tako" #!String
+    ItemDeliveryQuest.cs.13393: "Burrito" #!String
+    ItemDeliveryQuest.cs.13394: "Öğün" #!String
+    ItemDeliveryQuest.cs.13395: "Tatlı" #!String
+    ItemDeliveryQuest.cs.13396: "Yeni bir tarif" #!String
+    ItemDeliveryQuest.cs.13398: "Birisi bana ulaştırabilir mi?" #!String
+    ItemDeliveryQuest.cs.13400: "Şiddetle {0} istiyorum." #!String
+    ItemDeliveryQuest.cs.13402: "Lütfen benim oraya getirin." #!String
+    ItemDeliveryQuest.cs.13420: "Bu akşamki yemek" #!String
+    ItemDeliveryQuest.cs.13421: "Turşu yapmak" #!String
+    ItemDeliveryQuest.cs.13422: "Kışın tüketmek üzere kurutmak" #!String
+    ItemDeliveryQuest.cs.13424: "İçten bir kış pastasına koymak" #!String
+    ItemDeliveryQuest.cs.13426: "Barbeküde ızgara" #!String
+    ItemDeliveryQuest.cs.13427: "Şişkebap" #!String
+    ItemDeliveryQuest.cs.13446: "Taze {0} ezmesinden harika {1} toniği oluyor. Bir tane bulursan bu şekilde yararlanabilirsin.       -Dr. Harvey " #!String
+    ItemDeliveryQuest.cs.13448: "dil şişmesi" #!String
+    ItemDeliveryQuest.cs.13449: "soğuk algınlığı" #!String
+    ItemDeliveryQuest.cs.13450: "dekübitus ülseri" #!String
+    ItemDeliveryQuest.cs.13451: "gut" #!String
+    ItemDeliveryQuest.cs.13452: "ağız kokusu" #!String
+    ItemDeliveryQuest.cs.13453: "saç dökülmesi" #!String
+    ItemDeliveryQuest.cs.13454: "sivilce" #!String
+    ItemDeliveryQuest.cs.13455: "geniz akıntısı" #!String
+    ItemDeliveryQuest.cs.13456: "diş ağrısı" #!String
+    ItemDeliveryQuest.cs.13457: "hazımsızlık" #!String
+    ItemDeliveryQuest.cs.13458: "migren" #!String
+    ItemDeliveryQuest.cs.13459: "deri döküntüsü" #!String
+    ItemDeliveryQuest.cs.13462: "Selam! Aklımdaki yeni aperatif için {0} gerekiyor. Salona bir tane bırakırsanız çok memnun olurum.     -Gus" #!String
+    ItemDeliveryQuest.cs.13464: "{1} {0} koymak istiyorum. Lütfen bugün bir ara getirin." #!String
+    ItemDeliveryQuest.cs.13465: "Dolabımın rafına" #!String
+    ItemDeliveryQuest.cs.13466: "Masamın üzerine" #!String
+    ItemDeliveryQuest.cs.13467: "Yastığımın altına" #!String
+    ItemDeliveryQuest.cs.13468: "Çekmeceme" #!String
+    ItemDeliveryQuest.cs.13469: "Büyük büyükbabamın mezar taşına" #!String
+    ItemDeliveryQuest.cs.13473: "Merhaba, ben Emily. Mücevher oluşturmak üzere {0} satın almak istiyorum. Teşekkürler!" #!String
+    ItemDeliveryQuest.cs.13476: "Dikmekte olduğum bir giysiye düğme yapmak üzere {0} arıyorum. Bulursanız getirebilir misiniz?     -Emily" #!String
+    ItemDeliveryQuest.cs.13480: "{0} {1} bulmaya çalışıyor." #!String
+    ItemDeliveryQuest.cs.13481: "{0} arıyor." #!String
+    ItemDeliveryQuest.cs.13482: " Teslimat sonrası sabit ödeme yapacak." #!String
+    ItemDeliveryQuest.cs.13483: " Teslimat sonrası nakitle ödeme yapacak." #!String
+    ItemDeliveryQuest.cs.13485: "Birisi bana {0} getirebilir mi?" #!String
+    ItemDeliveryQuest.cs.13487: " Onlara bayılıyorum." #!String
+    ItemDeliveryQuest.cs.13488: " Onlara doyamıyorum!" #!String
+    ItemDeliveryQuest.cs.13489: " Bir tanesi hiç fena olmazdı." #!String
+    ItemDeliveryQuest.cs.13491: "Kimsede fazladan {0} var mı?" #!String
+    ItemDeliveryQuest.cs.13492: "Kimsenin elinde fazladan {0} bulunuyor mu?" #!String
+    ItemDeliveryQuest.cs.13494: "Eğer sakıncası yoksa bana {0} getirebilir misin? " #!String
+    ItemDeliveryQuest.cs.13497: "Elimde pek {0} kalmadı. Birisi getirebilirse çok makbule geçer." #!String
+    ItemDeliveryQuest.cs.13500: "Ağrıyan {1} sürmek için {0} lazım. " #!String
+    ItemDeliveryQuest.cs.13502: "dizime" #!String
+    ItemDeliveryQuest.cs.13503: "dirseğime" #!String
+    ItemDeliveryQuest.cs.13504: "sırtıma" #!String
+    ItemDeliveryQuest.cs.13505: "başıma" #!String
+    ItemDeliveryQuest.cs.13506: "burnuma" #!String
+    ItemDeliveryQuest.cs.13507: "ayak parmağıma" #!String
+    ItemDeliveryQuest.cs.13508: "diş etime" #!String
+    ItemDeliveryQuest.cs.13509: "kulağıma" #!String
+    ItemDeliveryQuest.cs.13510: "bacaklarıma" #!String
+    ItemDeliveryQuest.cs.13511: "dişime" #!String
+    ItemDeliveryQuest.cs.13512: "kalçama" #!String
+    ItemDeliveryQuest.cs.13513: "baldırıma" #!String
+    ItemDeliveryQuest.cs.13514: " En kısa zamanda bir tane ulaştırın lütfen!" #!String
+    ItemDeliveryQuest.cs.13516: " Lütfen mümkün olan en kısa zamanda ulaştırın!" #!String
+    ItemDeliveryQuest.cs.13518: "{0}, gidip {1} getirecek birini tutmak istiyor. Ayırdığın zamanın karşılığını alacaksın." #!String
+    ItemDeliveryQuest.cs.13520: "1 {0} için pazar fiyatının üç katını veririm! Direkt bana getir lütfen." #!String
+    ItemDeliveryQuest.cs.13523: "1 {0} için pazar fiyatının üç katını veririm! Bizzat bana teslim et lütfen." #!String
+    ItemDeliveryQuest.cs.13526: "Ah!" #!String
+    ItemDeliveryQuest.cs.13527: "Hey!" #!String
+    ItemDeliveryQuest.cs.13528: "Merhaba @!" #!String
+    ItemDeliveryQuest.cs.13530: " Bu istediğim {0} mı?" #!String
+    ItemDeliveryQuest.cs.13532: " İstediğim şeyi getirmişsin!" #!String
+    ItemDeliveryQuest.cs.13534: " Astığım ilanı mı gördün?" #!String
+    ItemDeliveryQuest.cs.13535: " Astığım duyuruyu mu gördün?" #!String
+    ItemDeliveryQuest.cs.13536: " Astığım bildiriyi mi gördün?" #!String
+    ItemDeliveryQuest.cs.13538: " Çok teşekkür ederim!" #!String
+    ItemDeliveryQuest.cs.13539: " Gerçekten müteşekkirim." #!String
+    ItemDeliveryQuest.cs.13540: " Mükemmel görünüyor." #!String
+    ItemDeliveryQuest.cs.13542: "$h#$b# Sıkıntını çözecek küçük bir şey getirdim." #!String
+    ItemDeliveryQuest.cs.13543: "$h#$b# Söz verdiğim gibi ödemeni buyur." #!String
+    ItemDeliveryQuest.cs.13544: "$h#$b# ...Bir bakalım. Sana borcum bu kadar." #!String
+    ItemDeliveryQuest.cs.13546: "İksir hazırlamak için {0} bulmam gerekiyor. Lütfen doğrudan çalıştığım kuleye ulaştırın.     -Büyücü M. Rasmodius" #!String
+    ItemDeliveryQuest.cs.13548: "Büyücü M. Rasmodius incelemek için bir {0} istiyor. Teslimat karşılığında ödüllendirileceksiniz." #!String
+    ItemDeliveryQuest.cs.13551: "Deneylerim için {0} gerekiyor.    -Büyücü M. Rasmodius" #!String
+    ItemDeliveryQuest.cs.13553: "Bölgedeki büyücünüz taze {0} arıyor." #!String
+    ItemDeliveryQuest.cs.13555: "Ah, istediğim nesne.#$b#Tatmin oldum. İşte ücretin." #!String
+    ItemDeliveryQuest.cs.13557: "Bana {0} getirirsen sonsuza kadar seninle < olacağım!     -Haley" #!String
+    ItemDeliveryQuest.cs.13560: "${Yakışıklı bir delikanlının bana {0} getireceğini umuyorum.       -Haley^YALNIZCA KIZLARA: Pişt... {0} bulmam gerekiyor... Nedenini biliyorsunuz. Kimseye söylemeyin, tamam mı?      -Haley}$" #!String
+    ItemDeliveryQuest.cs.13566: "Ah! Tam da ihtiyacım olan şey! Hehehe! Çok mutlu oldum!$h" #!String
+    ItemDeliveryQuest.cs.13568: "Üzerinde çalıştığım proje için {0} lazım oldu.    -Sam" #!String
+    ItemDeliveryQuest.cs.13571: "${Bana {0} getirecek bir arkadaş arıyorum.       -Sam¦Tatlı bir kızcağızın bana {0} getirmesini bekliyorum.  (^_-)      -Sam}$" #!String
+    ItemDeliveryQuest.cs.13577: "Milyonlarca kez teşekkürler, @! Bu işi halledecek kişinin sen olacağını bilmeliydim.$h" #!String
+    ItemDeliveryQuest.cs.13580: "Son projem için {0} bulmalıyım. Bana yardım edin!    -Maru" #!String
+    ItemDeliveryQuest.cs.13583: "Son icadımı çalıştırmak için {0} bulmalıyım. Başka HİÇBİR şey icadımı çalıştıramaz!       -Maru" #!String
+    ItemDeliveryQuest.cs.13585: "Ah! Mükemmel! Artık projem üstünde çalışmaya devam edebilirim.$h#$b#Çok teşekkürler @.$h" #!String
+    ItemDeliveryQuest.cs.13587: "Ah, bu tam olarak son icadım için ihtiyacım olan şey, @!#$b#Teşekkür ederim!$h" #!String
+    ItemDeliveryQuest.cs.13590: "Sıkıldım... Biri bana {0} ulaştırabilir mi?    -Abby" #!String
+    ItemDeliveryQuest.cs.13593: "Babama şaka yapmak istiyorum. Bunun için {0} bulmam gerek. Kimseye söylemeyin :)      -Abigail" #!String
+    ItemDeliveryQuest.cs.13597: "Hım... Bu düşündüğüm kadar heyecan verici değil...$s#$b#Tabii bu senin suçun değil! Haha. İlanımla ilgilendiğin için teşekkür ederim, @.$h" #!String
+    ItemDeliveryQuest.cs.13599: " Heh heh... Mükemmel. İşte ödülün, @. Babama tek kelime etme ama. $h" #!String
+    ItemDeliveryQuest.cs.13602: "Hey, yardımın için teşekkürler. Bu, tam da istediğim şey.$h" #!String
+    ItemDeliveryQuest.cs.13604: "Ah, istediğim {0}! Çok güzel bu! Çok çok teşekkür ederim @." #!String
+    ItemDeliveryQuest.cs.13607: "\n\n- Teslimat karşılığında {0}g verilecek." #!String
+    ItemDeliveryQuest.cs.13608: "\n- {0} mutlu olacak." #!String
+    ItemDeliveryQuest.cs.13610: "\n- {0} müteşekkir olacak." #!String
+    ItemDeliveryQuest.cs.13612: "\n- {0} memnun olacak." #!String
+    ItemDeliveryQuest.cs.13614: "{0}, kendisine {1} götürmeni istiyor." #!String
+    ItemDeliveryQuest.cs.13615: "Bu yeterli değil... Toplamda {0} tane getirmen gerekiyor." #!String
+    ItemDeliveryQuest.cs.13620: "\n                                - {0}\n" #!String
+    Quest.cs.13636: "Günlük güncellendi." #!String
+    ResourceCollectionQuest.cs.13640: "Toplama" #!String
+    ResourceCollectionQuest.cs.13647: "Birinin bana, {2} {0} {1} getirmesini bekliyorum.    -Clint" #!String
+    ResourceCollectionQuest.cs.13649: "bölgedeki mineralleri tanımak için" #!String
+    ResourceCollectionQuest.cs.13650: "inceleme için" #!String
+    ResourceCollectionQuest.cs.13651: "coğrafik yer seçimi için" #!String
+    ResourceCollectionQuest.cs.13652: "içinde ender bulunan taş falan var mı diye bakmak için" #!String
+    ResourceCollectionQuest.cs.13655: "İstediğim cevherleri getirmişsin. " #!String
+    ResourceCollectionQuest.cs.13656: "Mükemmel." #!String
+    ResourceCollectionQuest.cs.13657: "Teşekkür ederim." #!String
+    ResourceCollectionQuest.cs.13658: "Çok iyi." #!String
+    ResourceCollectionQuest.cs.13659: "#$b#Hım... Görünüşe göre bu cevherlerin içinde ender bulunan taş falan yok. Sıkıntı değil.#$b#Cevherleri alabilirsin. Söz verdiğim gibi ücretin de buada." #!String
+    ResourceCollectionQuest.cs.13662: "İstediğim cevherleri getirmişsin! " #!String
+    ResourceCollectionQuest.cs.13667: "#$b#Zaman zaman, kalite ve doluluk kalitesini izlemek için bölgede çıkan cevherleri incelemek isterim.#$b#Şunlara bir bakayım... Hım... Anlaşıldı.#$b#Teşekkür ederim. Cevherler sende kalabilir. {0} bir kalite düzeyine sahipler." #!String
+    ResourceCollectionQuest.cs.13668: "Mükemmel" #!String
+    ResourceCollectionQuest.cs.13669: "Makul" #!String
+    ResourceCollectionQuest.cs.13670: "İyi" #!String
+    ResourceCollectionQuest.cs.13672: "#$b#Bu cevherlerin kalitesi iyi görünüyor... Sende kalabilirler elbette. Ben yalnızca bölge jeolojisinin ne durumda olduğunu görmek istemiştim." #!String
+    ResourceCollectionQuest.cs.13673: "#$b#...Bu arada, söz verdiğim gibi ücretin burada." #!String
+    ResourceCollectionQuest.cs.13674: "Merhaba! Ben Robin. Birisi bana {0} tane {1} getirebilir mi? Taze olmaları gerekiyor... Yani bugün toplanmış olmalılar. Teşekkürler!" #!String
+    ResourceCollectionQuest.cs.13677: "Hey, anlaşılan istediğim {0} getirmişsin. " #!String
+    ResourceCollectionQuest.cs.13678: "odunları" #!String
+    ResourceCollectionQuest.cs.13679: "taşları" #!String
+    ResourceCollectionQuest.cs.13681: "Harika!$h" #!String
+    ResourceCollectionQuest.cs.13682: "Çok büyük yardımda bulundun... Teşekkürler!$h" #!String
+    ResourceCollectionQuest.cs.13683: "Teşekkür ederim!$h" #!String
+    ResourceCollectionQuest.cs.13688: "\n- Clint onları inceledikten sonra cevherleri geri alabilirsin." #!String
+    ResourceCollectionQuest.cs.13691: "{0}/{1} {2} toplandı." #!String
+    SlayMonsterQuest.cs.13696: "Canavar Kesme" #!String
+    SlayMonsterQuest.cs.13711: "'Kazılca' olarak bilinen yaratıklar madende ortalığı dağıtıyor! Oluşturdukları deliklerle madenin yapısal bütünlüğünü zayıflatabilirler. Birisi bu yaratıklardan {0} tanesini öldürebilir mi?" #!String
+    SlayMonsterQuest.cs.13723: "{0} {1} kesecek balçıkça avcısı aranıyor." #!String
+    SlayMonsterQuest.cs.13725: "ayazca (madenin donmuş derinliklerinde bulunur)" #!String
+    SlayMonsterQuest.cs.13727: "kızılca (madenin derin lav mağaralarında bulunur)" #!String
+    SlayMonsterQuest.cs.13728: "yeşil balçıkça (madende bulunur)" #!String
+    SlayMonsterQuest.cs.13730: "Ah, @! Balçıkça sorunumuzda bize yardımcı olan sendin demek. Teşekkür ederiz!$h#$b#Umarım çok fazla sorunla karşılaşmamışsındır... " #!String
+    SlayMonsterQuest.cs.13731: " Balçığı giysilerden çıkarmanın ne kadar zor olduğunu biliyorum.#$b#Benim de birkaç pantolonum batmıştı, hele ki o küçük " #!String
+    SlayMonsterQuest.cs.13732: "yaramazları yakalamaya çalışırken. " #!String
+    SlayMonsterQuest.cs.13733: "soluncaları yakalamaya çalışırken. " #!String
+    SlayMonsterQuest.cs.13734: "O yeni {2} her yanına o {1} balçıkçalardan bulaştırınca {0} hatırlıyorum... $h#$b#Her neyse... Ödülünün tadını çıkar." #!String
+    SlayMonsterQuest.cs.13735: "annemin tepesinin attığını" #!String
+    SlayMonsterQuest.cs.13736: "babamın çılgına döndüğünü" #!String
+    SlayMonsterQuest.cs.13740: "giysinin" #!String
+    SlayMonsterQuest.cs.13741: "ipeğin" #!String
+    SlayMonsterQuest.cs.13742: "kumaşın" #!String
+    SlayMonsterQuest.cs.13744: "Balçıkçalar sürü halindeyken epey tehlikeli olabiliyor.#$b#Sayende artık mağaraları daha rahat keşfedebileceğiz. Ödünün tadını çıkar!" #!String
+    SlayMonsterQuest.cs.13747: "Madende yaşayan saldırgan bir yengeç türü bölgemizin yaban hayatını tehdit ediyor! Bu yaratıklar kendilerini taş şeklinde gizlemeleri ile tanınıyor. Bunlardan {0} tane kesene ödeme yapacağım.  -Demetrius" #!String
+    SlayMonsterQuest.cs.13750: "Hey, {0} nüfusunu birazcık telef etmişsin bakıyorum. Mağaralardaki beşeri faliyetlerden ötürü normalden daha hızlı çoğalıyorlardı. Umarım emeklerin sayesinde diğer türleri tehdit etmelerinin önüne geçilir.#$b#Bölgemizin yaban hayatı bugün yaptıkların için minnettar, @. Ödülünün tadını çıkar.$h" #!String
+    SlayMonsterQuest.cs.13752: "{0} adıyla bilinen yaratıklar, elemental dengesini bozuyor. Maceraperest bir arkadaşımızın madenlere girip bu {2} {1} tane kesmesini istiyorum.  -Büyücü M. Rasmodius" #!String
+    SlayMonsterQuest.cs.13755: "yaratıklardan" #!String
+    SlayMonsterQuest.cs.13756: "iblislerden" #!String
+    SlayMonsterQuest.cs.13757: "varlıklardan" #!String
+    SlayMonsterQuest.cs.13760: "Elementaller yaptığın işten memnun kalmış. Söz verdiğim üzere ücretini alabilirsin." #!String
+    SlayMonsterQuest.cs.13764: "Madenlerde {0} {1} kesecek canavar avcısı aranıyor." #!String
+    SlayMonsterQuest.cs.13767: "Ah, @! Canavar sorunumuzda bize yardımcı olan sendin demek. Teşekkür ederiz!$h#$b#Umarım çok fazla sorunla karşılaşmamışsındır..." #!String
+    SlayMonsterQuest.cs.13770: "{0}/{1} {2} kesildi." #!String
+    SlayMonsterQuest.cs.13772: "Ayazca" #!String
+    SocializeQuest.cs.13785: "'Selam' Söylemek" #!String
+    SocializeQuest.cs.13786: "Hey! Birisi benim kasabadaki herkese 'selamımı' söyleyebilir mi? Bugün {0} mesajı vermek istiyorum!   -Emily" #!String
+    SocializeQuest.cs.13787: "sevinç" #!String
+    SocializeQuest.cs.13788: "barış & iyi niyet" #!String
+    SocializeQuest.cs.13789: "toplum ruhu" #!String
+    SocializeQuest.cs.13791: "\n\n- Herkes seni biraz daha sevecek." #!String
+    SocializeQuest.cs.13802: "{0}/{1} kişiyle tanışıldı." #!String
+    HoeDirt.cs.13915: "Tırpan gereklidir." #!String
+    HoeDirt.cs.13916: "Ekmeden önce eklenmelidir." #!String
+    HoeDirt.cs.13916-2: "Bu nokta çoktan gübrelenmiş." #!String
+    HoeDirt.cs.13919: "Tarlaya ekilmelidir." #!String
+    HoeDirt.cs.13924: "Turfanda." #!String
+    HoeDirt.cs.13925: "Buraya ekilemez." #!String
+    ResourceClump.cs.13945: "Baltan bu kütüğü kesmek için yeterince güçlü değil." #!String
+    ResourceClump.cs.13948: "Baltan bu keresteyi kesmek için yeterince güçlü değil." #!String
+    ResourceClump.cs.13952: "Kazman bunu kırmak için yeterince güçlü değil." #!String
+    ResourceClump.cs.13956: "Kazman bu kayayı kırmak için yeterince güçlü değil." #!String
+    ResourceClump.cs.13962: "Görünüşe göre bu boğumlu eski keresteyi kesmek için geliştirilmiş balta kullanman gerekiyor." #!String
+    ResourceClump.cs.13963: "Görünüşe göre bu yoğun taşı kırmak için geliştirilmiş kazma kullanman gerekiyor." #!String
+    ResourceClump.cs.13964: "Çok sağlam duruyor... Belki çok güçlü bir kazmayla kırabilirim..." #!String
+    TreeFertilizer1: "Çoktan yetişmiş." #!String
+    TreeFertilizer2: "Çoktan gübrelenmiş." #!String
+    Axe.cs.14023: "Yalnızca çiftliğinde bulunan odunları kesebilirsin... Bu, kasabanın kurallarındandır." #!String
+    FishingRod.cs.14068: "Efsanevi balıklardan birini yakaladın." #!String
+    FishingRod.cs.14069: "Yeni Rekor!" #!String
+    FishingRod.cs.14082: "Uzunluk:" #!String
+    FishingRod.cs.14083: "{0} cm." #!String
+    FishingRod.cs.14085: "Son yemini de kullandın." #!String
+    FishingRod.cs.14086: "Oltanın zokası kırıldı." #!String
+    FishingRod.cs.14100: "Kayıp bir kitap buldun. Kütüphane koleksiyonu büyüdü." #!String
+    MeleeWeapon.cs.14122: "Prizma parçası gözlerinin önünde şekil değiştirdi! Ortaya çıkan güç muazzam.^^     =Galaksi Kılıcı= bulundu.  ^" #!String
+    MeleeWeapon.cs.14132: "{0} - {1} Hasar" #!String
+    MeleeWeapon.cs.14134: "{0}{1} Hız" #!String
+    MeleeWeapon.cs.14136: "+{0} Menzil" #!String
+    MeleeWeapon.cs.14138: "+{0} Hassasiyet" #!String
+    MeleeWeapon.cs.14140: "+{0} Savunma" #!String
+    MeleeWeapon.cs.14142: "+{0} Kritik Vuruş Şansı" #!String
+    MeleeWeapon.cs.14144: "+{0} Kritik Vuruş Gücü" #!String
+    MilkPail.cs.14175: "{0} süt üretmiyor." #!String
+    MilkPail.cs.14176: "{0} süt üretmek için çok küçük." #!String
+    MilkPail.cs.14177: "{0} şu anda sütsüz." #!String
+    Pickaxe.cs.14194: "Kazman bunu kırmak için yeterince güçlü değil." #!String
+    Raft.cs.14204: "Sal" #!String
+    Raft.cs.14205: "Denizde kullanılmaya uygun değildir." #!String
+    Shears.cs.14245: "{0} yün üretmiyor." #!String
+    Shears.cs.14246: "{0} kırpılmak için çok küçük." #!String
+    Shears.cs.14247: "{0} şu anda yünsüz." #!String
+    Slingshot.cs.14254: "Cephane bitti." #!String
+    Slingshot.cs.14256: "{0} {1} kullanır. {1} doldurmak için sağ fare tuşuna tıkla." #!String
+    Slingshot.cs.14258: "{0} çıkarılabilir. Çıkarmak için sağ fare tuşuna tıkla." #!String
+    Tool.cs.14303: "{0}. Seviye {1}" #!String
+    Tool.cs.14304: "Hançer" #!String
+    Tool.cs.14305: "Sopa" #!String
+    Tool.cs.14306: "Kılıç" #!String
+    Tool.cs.14307: "Araç" #!String
+    Tool.cs.14317: "Teşekkürler. En kısa zamanda bunun üzerinde çalışmaya başlayacağım. Birkaç güne hazır olur." #!String
+    WateringCan_enchant: "Ellerin bu sulama kabına değdiği sürece içindeki su bitmeyecek." #!String
+    WateringCan.cs.14335: "Su bitti." #!String
+    Language.1: "İngilizce" #!String
+    Language.2: "Almanca" #!String
+    Language.3: "Rusça" #!String
+    Language.4: "Japonca" #!String
+    Language.5: "Çince" #!String
+    Language.6: "Portekizce" #!String
+    Language.7: "Tayca" #!String
+    Language.8: "İspanyolca" #!String
+    RandomSentence.1: "Mor Ejderha ile Robot dans etti." #!String
+    RandomSentence.2: "Yapışkan Büfe, Kale'nin üstünden konuştu." #!String
+    RandomSentence.3: "Kireçli Bisküvi, Gezegen'in çok çok üstünde çatladı." #!String
+    RandomSentence.4: "Yeşil Biber, Peynir ile birlikte kızardı." #!String
+    RandomSentence.5: "Bodur Yağmulruk, Ayakkabı'ya tehlike uyandıracak kadar yakından koktu." #!String
+    RandomSentence.6: "Devasa Denizaltı, Denizkızı'na rahatsız edici derecede yakın yüzdü." #!String
+    RandomSentence.7: "Yağlı Sırtlan, diğer Sırtlan'a çok yaklaştı." #!String
+    RandomSentence.8: "Hüzünlü Elf, Mezar'ın üstünde dans etti." #!String
+    RandomSentence.9: "Huysuz Dudak, Bisküvi'nin çok üzerinde çatladı." #!String
+    RandomSentence.10: "Sert Elf, Felaket'in yakınına üşüştü." #!String
+    RandomSentence.11: "Cesur Bıldırcın, diğer Bıldırcın'ın çok ama çok uzağında kızardı." #!String
+    RandomSentence.12: "Akıllı Sırtlan ile Ayakkabı konuştu." #!String
+    RandomSentence.13: "Kullanışlı Denizaltı, Denizkızı'nın kilometrelerce altında parçalandı." #!String
+    RandomSentence.14: "Yalnız Kukla, Gezegen'den çok ama çok uzağa kaçtı." #!String
+    Ring.cs.1: "Yüzük" #!String
+    Back: "Back" #!String
+    Tab: "Tab" #!String
+    Enter: "Enter" #!String
+    Pause: "Pause" #!String
+    CapsLock: "CapsLock" #!String
+    Kana: "Kana" #!String
+    Kanji: "Kanji" #!String
+    Escape: "Esc" #!String
+    ImeConvert: "ImeConvert" #!String
+    ImeNoConvert: "ImeNoConvert" #!String
+    Space: "Boşluk" #!String
+    PageUp: "PageUp" #!String
+    PageDown: "PageDown" #!String
+    End: "End" #!String
+    Home: "Home" #!String
+    Left: "Sol" #!String
+    Up: "Yukarı" #!String
+    Right: "Sağ" #!String
+    Down: "Aşağı" #!String
+    Select: "Seç" #!String
+    Print: "Print" #!String
+    Execute: "Execute" #!String
+    Insert: "Insert" #!String
+    Delete: "Delete" #!String
+    Help: "Help" #!String
+    PrintScreen: "PrintScreen" #!String
+    LeftWindows: "Sol Windows" #!String
+    RightWindows: "Sağ Windows" #!String
+    Apps: "Apps" #!String
+    Sleep: "Sleep" #!String
+    Multiply: "Çarpı" #!String
+    Add: "Artı" #!String
+    Separator: "Separator" #!String
+    Subtract: "Eksi" #!String
+    Decimal: "Decimal" #!String
+    Divide: "Bölü" #!String
+    NumLock: "NumLock" #!String
+    Scroll: "Scroll" #!String
+    LeftShift: "Sol Shift" #!String
+    RightShift: "Sağ Shift" #!String
+    LeftControl: "Sol Control" #!String
+    RightControl: "Sağ Control" #!String
+    LeftAlt: "Sol Alt" #!String
+    RightAlt: "Sağ Alt" #!String
+    BrowserBack: "BrowserBack" #!String
+    BrowserForward: "BrowserForward" #!String
+    BrowserRefresh: "BrowserRefresh" #!String
+    BrowserStop: "BrowserStop" #!String
+    BrowserSearch: "BrowserSearch" #!String
+    BrowserFavorites: "BrowserFavorites" #!String
+    BrowserHome: "BrowserHome" #!String
+    VolumeMute: "VolumeMute" #!String
+    VolumeDown: "VolumeDown" #!String
+    VolumeUp: "VolumeUp" #!String
+    MediaNextTrack: "MediaNextTrack" #!String
+    MediaPreviousTrack: "MediaPreviousTrack" #!String
+    MediaStop: "MediaStop" #!String
+    MediaPlayPause: "MediaPlayPause" #!String
+    LaunchMail: "LaunchMail" #!String
+    SelectMedia: "SelectMedia" #!String
+    LaunchApplication1: "LaunchApplication1" #!String
+    LaunchApplication2: "LaunchApplication2" #!String
+    Semicolon: "Noktalı Virgül" #!String
+    Plus: "Artı" #!String
+    Comma: "Virgül" #!String
+    Minus: "Eksi" #!String
+    Period: "Nokta" #!String
+    Question: "Soru İşareti" #!String
+    Tilde: "Tırnak" #!String
+    ChatPadGreen: "ChatPadGreen" #!String
+    ChatPadOrange: "ChatPadOrange" #!String
+    OpenBrackets: "OpenBrackets" #!String
+    Pipe: "Pipe" #!String
+    CloseBrackets: "CloseBrackets" #!String
+    Quotes: "Tırnak" #!String
+    Backslash: "Ters Eğik Çizgi" #!String
+    ProcessKey: "ProcessKey" #!String
+    Copy: "Copy" #!String
+    Auto: "Auto" #!String
+    EnlW: "EnlW" #!String
+    Attn: "Attn" #!String
+    Crsel: "Crsel" #!String
+    Exsel: "Exsel" #!String
+    EraseEof: "EraseEof" #!String
+    Play: "Play" #!String
+    Zoom: "Zoom" #!String
+    Pa1: "Pa1" #!String
+    Clear: "Clear" #!String
+    Left-Click: "Sol Fare Tuşu" #!String
+    Right-Click: "Sağ Fare Tuşu" #!String
+    NewReward: "Yeni Ödül!" #!String
+    OptionsPage.cs.11239: "Kumanda Birim Yerleştirme Göstergesi" #!String
+    OptionsPage.cs.11239.ps4: "Birim Yerleştirme Göstergesi" #!String
+    OptionsPage.cs.11239.console: "Birim Yerleştirme Göstergesi" #!String
+    OptionsPage.cs.11275: "Kumanda Gürültüsü" #!String
+    OptionsPage.cs.11275.ps4: "Kontrol Cihazı Titreşimi" #!String
+    OptionsPage.cs.11275.console: "Kumanda Titreşimi" #!String
+    OptionsPage.cs.toolbarSwap: "Araç Çubuğunu Kaydır" #!String
+    ToolReady: "{0} hazır edildi." #!String
+    ItemRecovery_Description: "Eşyalarını mı kaybettin? Ücreti karşılığında onları geri getirebilirim. Kararını dikkatlice ver." #!String
+    ItemRecovery_Engaged: "Tamamdır. Bu gece kayıp {0} ortaya çıkacak mı bir bakacağım. Bulursam sabahleyin posta kutundan alırsın." #!String
+    ItemRecovery_Engaged_Stack: "Tamamdır. Bu gece kayıp {0} ortaya çıkacak mı bir bakacağım. Bulursam sabahleyin posta kutundan alırsın." #!String
+    Krobus_Engaged: "Boşluk Hayaleti'nin Kolyesi! Nasıl oldu da...?$3#$b#Vay be.$7#$b#@... Evet, istediğin buysa gelip seninle yaşamayı kabul ediyorum. Fakat bunu gizli tutmalıyız.#$b#Birkaç güne evine gelirim... olur mu?$h" #!String
+    Krobus_AfterWedding: "Günaydın @... Dün gece gizlice girdim.$l#$b#Yeni hayatıma alışmam zaman alacak... Burası lağımdan çok farklı..." #!String
+    TriedToMarryButKrobus: "Ev arkadaşın varken birisine evlenme teklifinde bulunamazsın." #!String
+    KrobusShopGone: "Dışarıdayım. Lütfen ücreti kutuya bırakın. -Krobus" #!String
+    SocialPage_Relationship_Housemate_Female: "(ev arkadaşı)" #!String
+    SocialPage_Relationship_Housemate_Male: "(ev arkadaşı)" #!String
+    MovieTheaterBoxOffice: "Sinema biletlerinizi buradan alın! Arkadaşınıza da bilet alıp filmi birlikte izleyebilirsiniz!" #!String
+    MovieTheaterConcessions0: "Merhaba! Nasıl yardımcı olabilirim?" #!String
+    MovieTheaterConcessions1: "Film sırasında yemek için atıştırmalık mı alacaksınız?" #!String
+    MovieTheaterConcessions2: "Arkadaşınız acıkmış gibi... Karnını doyuracak bir şeylerim olduğuna eminim!" #!String
+    MovieTheaterConcessions3: "Son seferkinin üstüne kattım..." #!String
+    MovieTheaterConcessions4: "Arkadaşınızın canı bir şeyler atıştırmak istiyor gibi. Ne vereyim?" #!String
+    Cursed_Doll: "Bu belayı kendi başına açtın... artık özgürüm... He he he!" #!String
+    sam_acoustic1: "Mutlu Junimo Gösterisi" #!String
+    sam_acoustic2: "Sam'in Akustik Macerası" #!String
+    harveys_theme_jazz: "Greyfurtlu Gökyüzü (Çubuk Makarna Miksi)" #!String
+    movie_classic: "Zuzu Şehri Ekspresi" #!String
+    movie_nature: "Canlı Dünyamızı Keşfediyoruz" #!String
+    movie_wumbus: "Vumbus" #!String
+    movietheater: "Sinema Salonu" #!String
+    movietheaterafter: "Sinema Salonu (Kapanış Saati)" #!String
+    crane_game: "Vinç Oyunu" #!String
+    crane_game_fast: "Vinç Oyunu (Yakaladım!)" #!String
+    junimokart: "Junimo Kart (Jenerik Müziği)" #!String
+    junimokart_whalemusic: "Junimo Kart (Mücevher Denizi Devi)" #!String
+    junimokart_mushroommusic: "Junimo Kart (Parıltar Mağara)" #!String
+    junimokart_ghostmusic: "Junimo Kart (Soluk Kalyon)" #!String
+    junimokart_slimemusic: "Junimo Kart (Boş Tepinme)" #!String
+    SunRoom: "Rahatlatıcı Çayla Yapayalnız" #!String
+    DesertTrader4_male: "Deve sizi sevdi gibi, beyefendi. Bu iyiye işaret eder." #!String
+    DesertTrader4_female: "Deve sizi sevdi gibi, hanımefendi. Bu iyiye işaret eder." #!String
+    DesertTrader3: "Geldiğim yerde paranın önemi yoktur... Verebileceğin başka bir şey var mı?" #!String
+    DesertTrader2: "Egzotik mallar satıyorum!" #!String
+    DesertTrader1: "Hoş geldin yolcu... Alışveriş yapmak ister misin?" #!String
+    CustomizedBootItemName: "Özel Dikim {0}" #!String
+    Ostrich_Description: "Yetişkin devekuşları haftada bir defa yumurtlar." #!String
+    Furniture_Outdoors: "Bahçe Mobilyaları" #!String
+    Furniture_Outdoors_Description: "Bahçeye yerleştirilebilir." #!String
+    Furniture_Outdoors_Message: "Sadece bahçeye yerleştirilebilir." #!String
+    Furniture_Decoration: "Süs" #!String
+    Furniture_Decoration_Description: "Süs olarak yerleştirilebilir." #!String
+    Object.cs.13060_Fruit: "Başka bir meyve ağacına çok yakın." #!String
+    VolcanoShop0: "Dilimizi konuşabilen bir insan mı? Etkileyici..." #!String
+    VolcanoShop1: "Lütfen burada kal ve dinlen. Burada canavar yok." #!String
+    VolcanoShop2: "Yıllardır insan görmemiştim..." #!String
+    VolcanoShop3: "Buraya gelerek ne kadar cesur olduğunu gösterdin. Mallarımı incele lütfen." #!String
+    VolcanoShop4: "Bu dağ atalarımın yuvasıydı. Ben ise o yüce uygarlıklarının kalıntıları arasında hayatımı sürdürüyorum." #!String
+    JukeboxRandomTrack: "Rastgele" #!String
+    FishTank_Full: "Bu türden daha fazla ekleyemezsin." #!String
+    OptionsPage_UIScale: "Arayüz Ölçeği" #!String
+    NoSprinklers: "Fıskiyeler bu zemin türünde çalışmaz." #!String
+    MonsterMusk_BuffName: "Canavar Kokusu" #!String
+    MonsterMusk_BuffDescription: "Kokun canavarlar için dayanılmaz bir hal aldı." #!String
+    Nauseous_BuffName: "Mide Bulantısı" #!String
+    Nauseous_BuffDescription: "Öğk... Bir şey yiyemeyecek kadar hastasın." #!String
+    Nauseous_CantEat: "Miden bulanıyor..." #!String
+    Darkness_BuffName: "Karanlık" #!String
+    Darkness_BuffDescription: "Karanlık görüşünü azaltıyor." #!String
+    OnlyPlaceOnFarm: "Sadece çiftliğe yerleştirilebilir." #!String
+    OnlyPlaceTwo: "Sadece iki tane yerleştirilebilir." #!String
+    MiniObelisk_NeedsPair: "İkinci bir dikilitaş gerekiyor." #!String
+    MiniObelisk_NeedsSpace: "Işınlanma noktası engellenmiş." #!String
+    FarmComputer_Intro_Farm: "{0} Çiftliği İncelemesi:" #!String
+    FarmComputer_Intro_NamedLocation: "{0} İncelemesi:" #!String
+    FarmComputer_Intro_Generic: "Konum İncelemesi:" #!String
+    FarmComputer_PiecesHay: "Saman Balyası: {0}/{1}" #!String
+    FarmComputer_FarmCave: "Çiftlik Mağarasının Durumu: {0}" #!String
+    FarmComputer_TotalCrops: "Toplam Ekin Sayısı: {0}" #!String
+    FarmComputer_CropsReadyForHarvest: "Hazır Ekin Sayısı: {0}" #!String
+    FarmComputer_CropsReadyForHarvest_Greenhouse: "Seradaki Hazır Ekin Sayısı: {0}" #!String
+    FarmComputer_TotalOpenHoeDirt: "Sürülmüş Toprak Sayısı: {0}" #!String
+    FarmComputer_TotalForage: "Ot Sayısı: {0}" #!String
+    FarmComputer_MachinesReady: "Hazır Makine Sayısı: {0}" #!String
+    FarmComputer_CropsUnwatered: "Sulanmayan Ekin: {0}" #!String
+    MustBePlacedInBarn: "Sadece ahıra yerleştirilebilir." #!String
+    MapPage.cs.11108_newHours: "Sabah 8 ile öğleden sonra 5 arası açıktır." #!String
+    TV_Fishing_Channel: "Balıkçılık Bilgisi" #!String
+    Fishing_Channel_Intro: "B.B.Y.S.'yi ya da açılımıyla Balıkçılık Bilgi ve Yayın Servisi'ni izlediğiniz için teşekkürler. Mevsimsel balıkçılık fırsatları konusunda sizlere en doğru bilgiyi sağlıyoruz." #!String
+    TV_Fishing_Channel_sunny: "güneşli günler" #!String
+    TV_Fishing_Channel_rainy: "yağmurlu günler" #!String
+    TV_Fishing_Channel_River: "ırmak" #!String
+    TV_Fishing_Channel_Lake: "göl" #!String
+    TV_Fishing_Channel_Ocean: "okyanus" #!String
+    bonemill_5: "5 parça gerekiyor." #!String
+    NewLostAndFoundItems: "Bazı eşyalar kasabanın kayıp eşya kutusuna konuldu." #!String
+    IslandTrader4_male: "Kardeş, benimle takas yapsana..." #!String
+    IslandTrader4_female: "Kardeş, benimle takas yapsana..." #!String
+    IslandTrader3: "Ucuz! Ucuz!" #!String
+    IslandTrader2: "Para mı? Yok... Takas!" #!String
+    IslandTrader1: "Takas yapalım... Güzel mal var!" #!String
+    IslandMusic: "Zencefil Adası" #!String
+    fieldOfficeTentMusic: "Salyangoz Hoca'nın Programı" #!String
+    VolcanoMines1: "Yanardağ Madenleri (Eriyik Pelte)" #!String
+    VolcanoMines2: "Yanardağ Madenleri (Unutulmuş Dünya)" #!String
+    caldera: "Kalderanın Gizemi" #!String
+    FrogCave: "Oburun Mağarası" #!String
+    sad_kid: "Leo'nun Şarkısı" #!String
+    PIRATE_THEME: "Korsan Ezgisi" #!String
+    PIRATE_THEME_MUFFLED: "Korsan Ezgisi (Boğuk)" #!String
+    HorseFlute: "At Flütü" #!String
+    KeyToTheTown: "Kasaba Anahtarı" #!String
+    KeyToTheTown_desc: "Kasabadaki tüm yapılara istediğin zaman girebilmeni sağlar." #!String
+    IslandName: "Zencefil Adası" #!String
+    Debuff_Weakness: "Güçsüzlük" #!String
+    Deconstructor_fail: "Bu nesne parçalarına ayrılamaz." #!String
+    HorseFlute_NoHorse: "Atın bulunmuyor." #!String
+    HorseFlute_InvalidLocation: "Atını buraya çağıramazsın." #!String
+    HorseFlute_NoClearance: "Atını çağırmak için yeterli alan bulunmuyor." #!String
+    TV_IslandWeatherIntro: "...Şimdi de Eğrelti Otu Adaları için hazırladığımız özel hava durumu raporu sunacağız. " #!String
+    Seasoning_UsedLast: "Elindeki tüm Qi Çeşnisini kullandın." #!String
+    Fresh_Prefix: "Taze {0}" #!String
+    BiteChime: "Balık Isırma Sesi" #!String
+    BiteChime_Default: "Varsayılan" #!String
+    IslandTraderSecret: "Pişt! Mevsimin son günlerinde sana özel mallar getirdim. Bana parıldayan yeşil çubuklardan getir." #!String
+    HorseFlute_InUse: "Binilen bir atı çağıramazsın." #!String
+    Buff_Ravioli_Title: "Mürekkepli Makarna" #!String
+    Buff_Ravioli_Description: "Olumsuz etkilerden korunuyorsun." #!String
+    Options_ToggleAnimalSounds: "Hayvan Seslerini Kapat" #!String
+    Furniture_NotOutdoors: "Bu eşya dışarıya konulamaz." #!String
+    EndCredits_SongName: "Sonsuza Dek Yıldızçiyi Vadisi" #!String
+    RenovationBlocked: "Yenileme alanından tüm öğeleri kaldırın." #!String
+    Quest_FinalDay: "Son Gün" #!String
+    Attack_Miss: "ıska" #!String
+

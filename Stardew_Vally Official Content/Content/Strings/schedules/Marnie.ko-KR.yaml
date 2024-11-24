@@ -1,0 +1,25 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    winter_18.000: "재스가 병원에 가는 걸 좋아하는 것 같아. 참 특이한 여자아이야." #!String
+    fall_18.000: "어... 하비 선생님? 이건 비밀 보장되는 거죠, 맞죠?" #!String
+    Tue.000: "오늘 밤은 정말 잘 잘 수 있겠어.$h" #!String
+    winter_18.001: "여기 한시 반 예약이 있어서 왔어." #!String
+    winter_18.002: "어... 하비 선생님? 재스가 주사 맞고 나서 사탕 두 개 받아도 될까요?" #!String
+    winter_16.000: "오오... 고운 보라색 비단이야. 이런 건 조자 마트에 없지!" #!String
+

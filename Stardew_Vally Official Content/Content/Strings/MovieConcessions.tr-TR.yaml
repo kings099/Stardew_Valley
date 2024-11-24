@@ -1,0 +1,67 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    AppleSlices_Name: "Elma Dilimi" #!String
+    AppleSlices_Description: "Sert ve tatlı dilimler." #!String
+    BlackLicorice_Name: "Meyan Şekeri" #!String
+    BlackLicorice_Description: "Yoğun ve keskin tada sahip olan çiğnenebilir bir şeker." #!String
+    CappuccinoMousseCake_Name: "Kremalı Kek" #!String
+    CappuccinoMousseCake_Description: "Kremayla kaplanmış küçük bir kek." #!String
+    ChocolatePopcorn_Name: "Çikolatalı Patlamış Mısır" #!String
+    ChocolatePopcorn_Description: "Bildiğimiz patlamış mısır... Bir tek çikolata ile kaplanmış." #!String
+    CottonCandy_Name: "Pamuk Şeker" #!String
+    CottonCandy_Description: "Büyük ve pembe bir pamuk şeker." #!String
+    Fries_Name: "Patates Kızartması" #!String
+    Fries_Description: "Bol yağda kızartılmış ve hafifçe tuzlanmış ince patates dilimleri." #!String
+    HummusSnackPack_Name: "Çerez Paketi" #!String
+    HummusSnackPack_Description: "Çıtır çıtır ve sağlıklı." #!String
+    IceCreamSandwich_Name: "Dondurmalı Sandviç" #!String
+    IceCreamSandwich_Description: "İki çikolatalı kurabiye arasına konulan vanilyalı dondurma." #!String
+    JasmineTea_Name: "Yasemin Çayı" #!String
+    JasmineTea_Description: "Yasemin çiçeği ile tatlandırılmış yeşil çay." #!String
+    Jawbreaker_Name: "Çenekıran" #!String
+    Jawbreaker_Description: "Film bitene dek anca tüketilen büyük ve sert bir şeker!" #!String
+    JojaCola_Name: "Joja Kola" #!String
+    JojaCola_Description: "Joja'nın baş içeceğinin ekstra büyük boy hali." #!String
+    JojaCorn_Name: "JojaMısır" #!String
+    JojaCorn_Description: "Joja'nın patentli mısır öğünü. Tereyağlı sosa batırılarak yapılır." #!String
+    KaleSmoothie_Name: "Lahana Püresi" #!String
+    KaleSmoothie_Description: "Vitamin ve lif içerir." #!String
+    Nachos_Name: "Naço" #!String
+    Nachos_Description: "Taze kızarmış tortilla cipsinin üstüne baharatlı peynir dökülmüş yapış yapış bir atıştırmalık." #!String
+    PanzanellaSalad_Name: "Panzanella" #!String
+    PanzanellaSalad_Description: "İçinde ekmek kırıntıları ve domates bulunan bir çeşit yaz salatası." #!String
+    PersonalPizza_Name: "Tekli Pizza" #!String
+    PersonalPizza_Description: "Atıştırmalık olarak yenilebilecek küçüklükte pizza." #!String
+    Popcorn_Name: "Patlamış Mısır" #!String
+    Popcorn_Description: "Hafif tuz ve yağ serpilen, patlamış tane mısırlar." #!String
+    RockCandy_Name: "Akide Şekeri" #!String
+    RockCandy_Description: "Çubuğa tutturulan tatlandırılmış şeker parçacıkları." #!String
+    SalmonBurger_Name: "Somonburger" #!String
+    SalmonBurger_Description: "Az pişmiş susamlı ekmeğin arasına konmuş ince bir somon dilimi." #!String
+    SaltedPeanuts_Name: "Tuzlu Fıstık" #!String
+    SaltedPeanuts_Description: "Çok bilinen tuzlu bir ikramlık." #!String
+    SourSlimes_Name: "Tozlu Balçıkçalar" #!String
+    SourSlimes_Description: "Küçük ve renkli yapışkan balçıkçalar. Üstlerine ekşileştirici bir toz serpilmiş." #!String
+    StarCookie_Name: "Yıldız Kurabiye" #!String
+    StarCookie_Description: "Üstünde renkli parçacıklar bulunan yıldız şeklinde bir kurabiye." #!String
+    StardropSorbet_Name: "Yıldızkaydı Şerbeti" #!String
+    StardropSorbet_Description: "Tek bir damla yıldızkaydı özü ile olağanüstü bir ikramlığa dönüşen şerbet." #!String
+    TrufflePopcorn_Name: "Yermantarlı Patlamış Mısır" #!String
+    TrufflePopcorn_Description: "Üstüne yermantarı yağı dökülen bir tür patlamış mısır." #!String
+

@@ -1,0 +1,27 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    fall_9.000: "Ehm... Dottor Harvey? Questo è del tutto confidenziale, sì?" #!String
+    15.000: "Mi piace controllare le attività locali e vedere come vanno." #!String
+    6.000: "Sono qui per riscuotere l'imposta sugli affari di Clint." #!String
+    1.000: "Beh, il pesce ha senz'altro un odore fresco, in questa stagione." #!String
+    Tue.000: "Io compro tutta la mia spesa qui.$h" #!String
+    3.000: "Sono qui solo per accertarmi che tutte le esigenze dell'attività di Marnie siano soddisfatte." #!String
+    6.001: "La biblioteca è uno dei vanti principali di Pelican Town. È finanziata con le imposte riscosse dalle attività locali." #!String
+    winter_16.000: "Sai, in questo mercato ho comprato alcuni dei miei oggetti preferiti..." #!String
+

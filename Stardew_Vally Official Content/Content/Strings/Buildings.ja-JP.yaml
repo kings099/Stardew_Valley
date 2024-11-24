@@ -1,0 +1,85 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    UnderConstruction: "- 工事中 -" #!String
+    DismountBeforeEntering: "入るまえにウマからおりてください" #!String
+    PiecesOfHay: "たくわえたほし草：{0}/{1}" #!String
+    AddedHay: "ほし草を{0}つサイロに入れた。" #!String
+    MillFull: "場所がありません" #!String
+    CantMill: "ウスにかけられません" #!String
+    NeedSilo: "サイロが必要です" #!String
+    CantEnter: "今は入れない" #!String
+    WrongFishType: "あなたの{0}は{1}池に住みたくありません。" #!String
+    WrongFishTypeCoral: "{0}は{0}池にのみ配置が可能です。" #!String
+    CantPutInPonds: "{0}はそこでは幸せみはなれないでしょう。" #!String
+    NoFish: "この池に魚を投入することができます。" #!String
+    PondFull: "この池はいっぱいです。" #!String
+    Paint_Region_Building: "建物" #!String
+    Paint_Region_Roof: "屋根" #!String
+    Paint_Region_Trim: "縁取り" #!String
+    BuildingSkinMenu_ChooseAppearance: "{0}外見を選んでください" #!String
+    Construction_ChooseLocation: "どの施設を管理しますか？" #!String
+    Barn_Name: "家畜小屋" #!String
+    Barn_Description: "動物小屋用の動物を4頭飼える。" #!String
+    BigBarn_Name: "大型の家畜小屋" #!String
+    BigBarn_Description: "動物小屋用の動物を8頭飼える。動物が子どもを産むようになる。ヤギが飼えるようになる。" #!String
+    BigCoop_Name: "大型の小屋" #!String
+    BigCoop_Description: "トリ小屋用の動物を8匹飼える。ふ卵器つき。アヒルが飼えるようになる。" #!String
+    BigShed_Name: "ビッグシェッド" #!String
+    BigShed_Description: "小屋のサイズを2倍にします。インテリアを飾ることができます。" #!String
+    Cabin_Name: "小屋" #!String
+    Cabin_Description: "お友達のお家！町の農業基金の助成によって建てられる。" #!String
+    Coop_Name: "小屋" #!String
+    Coop_Description: "トリ小屋用の動物を4匹飼える。" #!String
+    DeluxeBarn_Name: "デラックス家畜小屋" #!String
+    DeluxeBarn_Description: "動物小屋用の動物を12頭飼える。自動エサやり装置つき。ヒツジとブタが飼えるようになる。" #!String
+    DeluxeCoop_Name: "デラックス小屋" #!String
+    DeluxeCoop_Description: "トリ小屋用の動物を12匹飼える。自動エサやり装置つき。ウサギが飼えるようになる。" #!String
+    DesertObelisk_Name: "砂漠のオベリスク" #!String
+    DesertObelisk_Description: "砂漠にワープします。" #!String
+    EarthObelisk_Name: "地球のオベリスク" #!String
+    EarthObelisk_Description: "山にワープできる。" #!String
+    FishPond_Name: "魚のいる池" #!String
+    FishPond_Description: "魚を育てて、彼らの農産物を収穫するの。時間が経つと魚は増殖するよ。" #!String
+    GoldClock_Name: "金時計" #!String
+    GoldClock_Description: "岩や倒木、雑草の発生や、フェンスの劣化をふせいでくれる。" #!String
+    Greenhouse_Name: "温室" #!String
+    Greenhouse_Description: "どんな季節でも一年中、好きな作物を育てられる！" #!String
+    IslandObelisk_Name: "アイランドオベリスク" #!String
+    IslandObelisk_Description: "ジンジャーアイランドにワープする。る。" #!String
+    JunimoHut_Name: "ジュニモ小屋" #!String
+    JunimoHut_Description: "小屋のまわりの作物を、ジュニモが収穫してくれる。" #!String
+    Mill_Name: "製粉機" #!String
+    Mill_Description: "コムギ、ビーツ、米を製粉できる。" #!String
+    Shed_Name: "納屋" #!String
+    Shed_Description: "からっぽの小屋。好きなものを入れよう！なかには家具を設置できる。" #!String
+    ShippingBin_Name: "出荷箱" #!String
+    ShippingBin_Description: "アイテムを中に入れておくと一晩で売れる" #!String
+    Silo_Name: "サイロ" #!String
+    Silo_Description: "刈った草を動物のエサとしてたくわえられる。" #!String
+    SlimeHutch_Name: "スライムハッチ" #!String
+    SlimeHutch_Description: "スライムを20匹まで飼える。エサ箱に水を満たしておくと、スライムがスライムボールをつくる。" #!String
+    Stable_Name: "馬小屋" #!String
+    Stable_Description: "乗ることができるウマを飼える。建てると、ウマがセットでついてくる。" #!String
+    WaterObelisk_Name: "水のオベリスク" #!String
+    WaterObelisk_Description: "浜辺にワープできる。" #!String
+    Well_Name: "井戸" #!String
+    Well_Description: "ジョウロに水をくめる。" #!String
+    PetBowl_Name: "ペット用ボウル" #!String
+    PetBowl_Description: "ペット1匹に心地よい暮らしを提供する。" #!String
+

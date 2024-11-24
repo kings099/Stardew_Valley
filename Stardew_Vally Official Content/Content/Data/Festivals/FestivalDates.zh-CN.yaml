@@ -1,0 +1,27 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    spring13: "复活节" #!String
+    spring24: "花舞节" #!String
+    summer11: "夏威夷宴会" #!String
+    summer28: "月光水母起舞" #!String
+    fall16: "星露谷展览会" #!String
+    fall27: "万灵节" #!String
+    winter8: "冰雪节" #!String
+    winter25: "冬日星盛宴" #!String
+

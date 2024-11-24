@@ -1,0 +1,610 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    DarkPiano: "Sötét pianínó" #!String
+    OakChair: "Tölgyfa szék" #!String
+    WalnutChair: "Diófa szék" #!String
+    BirchChair: "Nyírfa szék" #!String
+    MahoganyChair: "Mahagóni szék" #!String
+    RedDinerChair: "Vörös étkezőszék" #!String
+    BlueDinerChair: "Kék étkezőszék" #!String
+    CountryChair: "Vidéki szék" #!String
+    BreakfastChair: "Reggeli szék" #!String
+    PinkOfficeChair: "Rózsaszín irodai szék" #!String
+    PurpleOfficeChair: "Lila irodai szék" #!String
+    GreenOfficeStool: "Zöld irodai zsámoly" #!String
+    OrangeOfficeStool: "Narancs irodai zsámoly" #!String
+    DarkThrone: "Sötét trón" #!String
+    DiningChair: "Étkezőszék" #!String
+    GreenPlushSeat: "Zöld plüss szék" #!String
+    PinkPlushSeat: "Rózsaszín plüss szék" #!String
+    WinterChair: "Téli szék" #!String
+    GroovyChair: "Klassz szék" #!String
+    CuteChair: "Cuki szék" #!String
+    StumpSeat: "Farönk szék" #!String
+    MetalChair: "Fém szék" #!String
+    GreenStool: "Zöld zsámoly" #!String
+    BlueStool: "Kék zsámoly" #!String
+    KingChair: "Király szék" #!String
+    CrystalChair: "Kristály szék" #!String
+    OakBench: "Tölgyfa pad" #!String
+    WalnutBench: "Diófa pad" #!String
+    BirchBench: "Nyírfa pad" #!String
+    MahoganyBench: "Mahagóni pad" #!String
+    ModernBench: "Modern pad" #!String
+    BlueArmchair: "Kék fotel" #!String
+    RedArmchair: "Vörös fotel" #!String
+    GreenArmchair: "Zöld fotel" #!String
+    YellowArmchair: "Sárga fotel" #!String
+    BrownArmchair: "Barna fotel" #!String
+    BlueCouch: "Kék kanapé" #!String
+    RedCouch: "Vörös kanapé" #!String
+    GreenCouch: "Zöld kanapé" #!String
+    YellowCouch: "Sárga kanapé" #!String
+    BrownCouch: "Barna kanapé" #!String
+    DarkCouch: "Sötét kanapé" #!String
+    WizardCouch: "Varázsló kanapé" #!String
+    WoodsyCouch: "Fás kanapé" #!String
+    OakDresser: "Tölgyfa komód" #!String
+    WalnutDresser: "Diófa komód" #!String
+    BirchDresser: "Nyírfa komód" #!String
+    MahoganyDresser: "Mahagóni komód" #!String
+    CoffeeTable: "Kávésasztal" #!String
+    StoneSlab: "Kőtábla" #!String
+    WinterDiningTable: "Téli ebédlőasztal" #!String
+    FestiveDiningTable: "Ünnepi ebédlőasztal" #!String
+    MahoganyDiningTable: "Mahagóni ebédlőasztal" #!String
+    ModernDiningTable: "Modern ebédlőasztal" #!String
+    OakTable: "Tölgyfa asztal" #!String
+    WalnutTable: "Diófa asztal" #!String
+    BirchTable: "Nyírfa asztal" #!String
+    MahoganyTable: "Mahagóni asztal" #!String
+    SunTable: "Nap asztal" #!String
+    MoonTable: "Hold asztal" #!String
+    ModernTable: "Modern asztal" #!String
+    PubTable: "Kocsma asztal" #!String
+    LuxuryTable: "Luxus asztal" #!String
+    DivinerTable: "Jövendőmondó asztal" #!String
+    NeolithicTable: "Neolitikus asztal" #!String
+    PuzzleTable: "Puzzle asztal" #!String
+    WinterTable: "Téli asztal" #!String
+    CandyTable: "Cukorka asztal" #!String
+    LuauTable: "Luau asztal" #!String
+    DarkTable: "Sötét asztal" #!String
+    OakTeaTable: "Tölgyfa teázó asztal" #!String
+    WalnutTeaTable: "Diófa teázó asztal" #!String
+    BirchTeaTable: "Nyírfa teázó asztal" #!String
+    MahoganyTeaTable: "Mahagóni teázó asztal" #!String
+    ModernTeaTable: "Modern teázó asztal" #!String
+    FurnitureCatalogue: "Bútorkatalógus" #!String
+    ChinaCabinet: "Kínai vitrin" #!String
+    ArtistBookcase: "Művészi könyvespolc" #!String
+    LuxuryBookcase: "Luxus könyvespolc" #!String
+    ModernBookcase: "Modern könyvespolc" #!String
+    DarkBookcase: "Sötét könyvespolc" #!String
+    CeramicPillar: "Kerámia oszlop" #!String
+    GoldPillar: "Arany oszlop" #!String
+    IndustrialPipe: "Ipari cső" #!String
+    IndoorPalm: "Beltéri pálma" #!String
+    TotemPole: "Totemoszlop" #!String
+    ManicuredPine: "Lenyírt fenyő" #!String
+    TopiaryTree: "Műkertészi fa" #!String
+    StandingGeode: "Álló geóda" #!String
+    ObsidianVase: "Obszidián váza" #!String
+    SingingStone: "Éneklő kő" #!String
+    SlothSkeletonL: "B. Lajhár csontváz" #!String
+    SlothSkeletonM: "K. Lajhár csontváz" #!String
+    SlothSkeletonR: "J. Lajhár csontváz" #!String
+    Skeleton: "Csontváz" #!String
+    ChickenStatue: "Csirke szobor" #!String
+    LeahsSculpture: "Leah szobra" #!String
+    DriedSunflowers: "Szárított napraforgó" #!String
+    Catalogue: "Katalógus" #!String
+    SamsBoombox: "Sam zenelejátszója" #!String
+    SmallPlant: "Kicsi növény" #!String
+    TablePlant: "Asztali növény" #!String
+    DecorativeBowl: "Dekoratív edény" #!String
+    FutanBear: "Kitömött mackó" #!String
+    Globe: "Földgömb" #!String
+    ModelShip: "Hajómodell" #!String
+    SmallCrystal: "Apró kristály" #!String
+    DecorativeLantern: "Dekoratív lámpás" #!String
+    HousePlant: "Szobanövény" #!String
+    OakEndTable: "Tölgyfa éjjeliszekrény" #!String
+    WalnutEndTable: "Diófa éjjeliszekrény" #!String
+    BirchEndTable: "Nyírfa éjjeliszekrény" #!String
+    MahoganyEndTable: "Mahagóni éjjeliszekrény" #!String
+    ModernEndTable: "Modern éjjeliszekrény" #!String
+    GrandmotherEndTable: "Nagymama éjjeliszekrény" #!String
+    WinterEndTable: "Téli éjjeliszekrény" #!String
+    Calendar: "Naptár" #!String
+    TreeoftheWinterStar: "A Téli Csillag fája" #!String
+    CountryLamp: "Vidéki lámpa" #!String
+    BoxLamp: "Doboz lámpa" #!String
+    ModernLamp: "Modern lámpa" #!String
+    ClassicLamp: "Klasszikus lámpa" #!String
+    RedRug: "Vörös szőnyeg" #!String
+    PatchworkRug: "Kockás szőnyeg" #!String
+    DarkRug: "Sötét szőnyeg" #!String
+    BudgetTV: "Olcsó tévé" #!String
+    PlasmaTV: "Plazmatévé" #!String
+    TheMuzzamaroo: "'A Muzzamaroo'" #!String
+    ANightOnEcoHill: "'Éjszaka az Öko-dombon'" #!String
+    Pathways: "'Útvonalak'" #!String
+    BurntOffering: "'Égő ajánlás'" #!String
+    QueenoftheGemSea: "'Drágakő-tenger királynője'" #!String
+    VanillaVilla: "'Kedves villa'" #!String
+    PrimalMotion: "'Ősi mozzanat'" #!String
+    JadeHills: "'Jáde hegyek'" #!String
+    Sun44: "'44. nap'" #!String
+    WallflowerPal: "Falnövény pajtás" #!String
+    Spires: "'Tornyok'" #!String
+    Highway89: "'89-es főút'" #!String
+    CalicoFalls: "Calico vízesés" #!String
+    NeedlepointFlower: "Tüskés szárú virág" #!String
+    SkullPoster: "Koponya poszter" #!String
+    Sun45: "'45. nap'" #!String
+    LittleTree: "'Kicsi fa'" #!String
+    Blueberries: "'Kék áfonyák'" #!String
+    BlueCity: "'Kék város'" #!String
+    LittlePhotos: "Apró fotók" #!String
+    DancingGrass: "'Táncoló fű'" #!String
+    VGAParadise: "'VGA paradicsom'" #!String
+    JColaLight: "Joja Cola fény" #!String
+    Kitemaster95: "'Sárkánymester 95'" #!String
+    BasicWindow: "Alap ablak" #!String
+    SmallWindow: "Kicsi ablak" #!String
+    RedCottageRug: "Vörös kunyhós szőnyeg" #!String
+    GreenCottageRug: "Zöld kunyhós szőnyeg" #!String
+    MonsterRug: "Szörny szőnyeg" #!String
+    BoardedWindow: "Bedeszkázott ablak" #!String
+    MysticRug: "Rejtélyes szőnyeg" #!String
+    LgFutanBear: "Nagy kitömött mackó" #!String
+    JunimoPlush: "Junimo plüss" #!String
+    BearStatue: "Medve szobor" #!String
+    Porthole: "Hajóablak" #!String
+    Anchor: "Horgony" #!String
+    WorldMap: "Világtérkép" #!String
+    OrnateWindow: "Díszes ablak" #!String
+    FloorTV: "Padló tévé" #!String
+    CarvedWindow: "Faragott ablak" #!String
+    NauticalRug: "Tengeri szőnyeg" #!String
+    BurlapRug: "Zsákszövetes szőnyeg" #!String
+    TreeColumn: "Faoszlop" #!String
+    LLightString: "Nagy koszorú" #!String
+    SPine: "Kicsi fenyő" #!String
+    BonsaiTree: "Bonsai fa" #!String
+    MetalWindow: "Fémes ablak" #!String
+    CandleLamp: "Gyertya lámpa" #!String
+    MinersCrest: "Bányászok címere" #!String
+    BambooMat: "Bambusz szőnyeg" #!String
+    OrnateLamp: "Díszes lámpa" #!String
+    WoodcutRug: "Fametszetes szőnyeg" #!String
+    HangingShield: "Függő pajzs" #!String
+    MonsterDanglers: "Szörny kitűzők" #!String
+    CeilingFlags: "Plafon zászlók" #!String
+    RedEagle: "'Vörös sas'" #!String
+    PortraitOfAMermaid: "'Egy sellő portréja'" #!String
+    SolarKingdom: "'Napkirályság'" #!String
+    Clouds: "'Felhők'" #!String
+    1000YearsFromNow: "'Mától 1.000 év múlva'" #!String
+    ThreeTrees: "'Három fa'" #!String
+    TheSerpent: "'A kígyó'" #!String
+    TropicalFish173: "'173. trópusi hal'" #!String
+    LandOfClay: "'Agyagföldek'" #!String
+    BrickFireplace: "Tégla tűzhely" #!String
+    StoneFireplace: "Kő tűzhely" #!String
+    IridiumFireplace: "Irídium tűzhely" #!String
+    StoveFireplace: "Kemencés tűzhely" #!String
+    MonsterFireplace: "Szörny tűzhely" #!String
+    MyFirstPainting: "Az első festményem" #!String
+    ElegantFireplace: "Elegáns tűzhely" #!String
+    PirateFlag: "Kalóz zászló" #!String
+    PirateRug: "Kalóz szőnyeg" #!String
+    BoneRug: "Csont szőnyeg" #!String
+    ButterflyHutch: "Pillangó kunyhó" #!String
+    StrawberryDecal: "Eper matrica" #!String
+    FruitSaladRug: "Gyümölcssalátás szőnyeg" #!String
+    NightSkyDecal1: "1. éjféli matrica" #!String
+    SnowyRug: "Havas szőnyeg" #!String
+    NightSkyDecal2: "2. éjféli matrica" #!String
+    NightSkyDecal3: "3. éjféli matrica" #!String
+    TheBraveLittleSapling: "'A bátor kis csemete'" #!String
+    Mysterium: "'Mysterium'" #!String
+    JourneyOfThePrairieKingTheMotionPicture: "'Journey Of The Prairie King: A Film'" #!String
+    Wumbus: "'Wumbus'" #!String
+    TheZuzuCityExpress: "'A Zuzu város expressz'" #!String
+    TheMiracleAtColdstarRanch: "'A Hűvöscsillag tanya csodája'" #!String
+    NaturalWondersExploringOurVibrantWorld: "'Természeti csodák: Fedezzük fel élénk világunkat'" #!String
+    ItHowlsInTheRain: "'Az esőben üvölt'" #!String
+    IndoorHangingBasket: "Beltéri függőkosár" #!String
+    WinterTreeDecal: "Téli fa matrica" #!String
+    SmallJunimoPlush: "Kicsi Junimo plüss" #!String
+    FutanRabbit: "Kitömött nyúl" #!String
+    WumbusStatue: "Wumbus szobor" #!String
+    BoboStatue: "Bobo szobor" #!String
+    PurpleSerpentStatue: "Lila kígyó szobor" #!String
+    GreenSerpentStatue: "Zöld kígyó szobor" #!String
+    LongPalm: "Hosszú pálma" #!String
+    LongCactus: "Hosszú kaktusz" #!String
+    ExoticTree: "Egzotikus fa" #!String
+    DeluxeTree: "Luxus fa" #!String
+    WallPumpkin: "Fali tök" #!String
+    SmallWallPumpkin: "Apró fali tök" #!String
+    Bed: "Ágy" #!String
+    DoubleBed: "Dupla ágy" #!String
+    StarryDoubleBed: "Csillagos dupla ágy" #!String
+    StrawberryDoubleBed: "Epres dupla ágy" #!String
+    PirateDoubleBed: "Kalóz dupla ágy" #!String
+    ChildBed: "Gyerekágy" #!String
+    TropicalBed: "Trópusi ágy" #!String
+    TropicalDoubleBed: "Trópusi dupla ágy" #!String
+    DeluxeRedDoubleBed: "Luxus vörös dupla ágy" #!String
+    ModernDoubleBed: "Modern dupla ágy" #!String
+    LargeFishTank: "Nagy haltartály" #!String
+    DeluxeFishTank: "Luxus haltartály" #!String
+    SmallFishTank: "Kicsi haltartály" #!String
+    OceanicRug: "Óceán szőnyeg" #!String
+    TropicalTV: "Trópusi tévé" #!String
+    VolcanoPhoto: "'Vulkán' fotó" #!String
+    JungleTorch: "Dzsungel fáklya" #!String
+    PalmWallOrnament: "Pálma fali dísz" #!String
+    TropicalChair: "Trópusi szék" #!String
+    AquaticSanctuary: "Vizes menedék" #!String
+    ModernFishTank: "Modern haltartály" #!String
+    WildDoubleBed: "Vad dupla ágy" #!String
+    FisherDoubleBed: "Horgász dupla ágy" #!String
+    BirchDoubleBed: "Birs dupla ágy" #!String
+    ExoticDoubleBed: "Egzotikus dupla ágy" #!String
+    Lifesaver: "Mentőöv" #!String
+    FoliagePrint: "Lomb lenyomat" #!String
+    Boat: "'Hajó'" #!String
+    Vista: "'Kilátás'" #!String
+    WallBasket: "Fali kosár" #!String
+    DecorativeTrashCan: "Dekoratív kuka" #!String
+    IridiumKrobus: "Irídium Krobus" #!String
+    GourmandStatue: "Falánk szobor" #!String
+    PyramidDecal: "Piramis matrica" #!String
+    PlainTorch: "Egyszerű fáklya" #!String
+    StumpTorch: "Farönk fáklya" #!String
+    WallFlower: "Fali virág" #!String
+    SWallFlower: "Kis fali virág" #!String
+    CloudsBanner: "Felhő lobogó" #!String
+    ColorfulSet: "Színes szett" #!String
+    PastelBanner: "Pasztell lobogó" #!String
+    WinterBanner: "Téli lobogó" #!String
+    MoonlightJelliesBanner: "Holdfény medúza lobogó" #!String
+    JungleDecal: "Dzsungel matrica" #!String
+    StarportDecal: "Csillagos kikötő matrica" #!String
+    DecorativePitchfork: "Dekoratív vasvilla" #!String
+    WoodPanel: "Faburkolat" #!String
+    DecorativeAxe: "Dekoratív balta" #!String
+    LogPanel: "Farönk burkolat" #!String
+    CeilingLeaves: "Plafon levelek" #!String
+    CloudDecal: "Felhő matrica" #!String
+    FloorDividerR: "Jobb padlóelválasztó" #!String
+    FloorDividerL: "Bal padlóelválasztó" #!String
+    LightGreenRug: "Világoszöld szőnyeg" #!String
+    JadeHillsExtended: "'Kibővített Jáde hegyek'" #!String
+    LargeBrownCouch: "Nagy barna kanapé" #!String
+    LargeGreenRug: "Nagy zöld szőnyeg" #!String
+    IcyRug: "Jeges szőnyeg" #!String
+    OldWorldRug: "Régi világi szőnyeg" #!String
+    LargeRedRug: "Nagy vörös szőnyeg" #!String
+    FrozenDreams: "'Fagyos álmok'" #!String
+    IcyBanner: "Jeges lobogó" #!String
+    WallPalm: "Fali pálma" #!String
+    WallCactus: "Fali kaktusz" #!String
+    LargeCottageRug: "Nagy kunyhós szőnyeg" #!String
+    Physics101: "'Fizika 101'" #!String
+    WallSconce: "Fali gyertyatartó" #!String
+    BlossomRug: "Virágzó szőnyeg" #!String
+    FunkyRug: "Menő szőnyeg" #!String
+    ModernRug: "Modern szőnyeg" #!String
+    SquirrelFigurine: "Mókus figura" #!String
+    Cactus: "Kaktusz" #!String
+    HangingFish: "Lógó hal" #!String
+    RetroTV: "Retro tévé" #!String
+    ArtPhoto: "Művészeti fotó" #!String
+    ArtPhoto2: "Művészeti fotó 2" #!String
+    ShortBookcase: "Kicsi könyvespolc" #!String
+    PierresSign: "Pierre táblája" #!String
+    SamsSkateboard: "Sam gördeszkája" #!String
+    ChickenDecal: "Csirkés matrica" #!String
+    ExoticPalace: "Egzotikus palota" #!String
+    PeriodicTable: "Periódusos rendszer" #!String
+    DustySkull: "Poros koponya" #!String
+    RadioDesk: "Rádiós asztal" #!String
+    ModelPlanes: "Repülőgép modellek" #!String
+    CalicoStatue: "Calico szobor" #!String
+    SunDunes: "Napos dűnék" #!String
+    DesertTable: "Sivatagi asztal" #!String
+    DesertChair: "Sivatagi szék" #!String
+    DesertFireplace: "Sivatagi tűzhely" #!String
+    SandyRug: "Homokos szőnyeg" #!String
+    DesertRug: "Sivatagi szőnyeg" #!String
+    DesertEndTable: "Sivatagi éjjeliszekrény" #!String
+    DesertFlags: "Sivatagi zászlók" #!String
+    DecorativeBarrel: "Dekoratív hordó" #!String
+    MountedTrout: "Felszerelt pisztráng" #!String
+    SquidKid: "'Tintahal kölyök'" #!String
+    CowDecal: "Tehenes matrica" #!String
+    BluePinstripeBed: "Kék csíkos ágy" #!String
+    JungleTank: "Dzsungel tartály" #!String
+    CCFishTank: "KK. Haltartály" #!String
+    BluePinstripeDoubleBed: "Kék csíkos dupla ágy" #!String
+    JojaBed: "Joja ágy" #!String
+    JojaVault: "Joja páncélszekrény" #!String
+    JojaChair: "Joja szék" #!String
+    J: "J" #!String
+    JojaColaTeaTable: "Joja Cola teázó asztal" #!String
+    JojaTable: "Joja asztal" #!String
+    JPainting: "J. festmény" #!String
+    JLight: "J. fény" #!String
+    JojaCatalogue: "Joja bútorkatalógus" #!String
+    JojaColaPainting: "Joja Cola festmény" #!String
+    JojaColaOrnament: "Joja Cola dísz" #!String
+    JojaFireplace: "Joja tűzhely" #!String
+    JojaColaCans: "Joja Cola dobozok" #!String
+    CashRegister: "Pénztárgép" #!String
+    PlasticPlant: "Műanyag növény" #!String
+    PlasticSapling: "Műanyag hajtás" #!String
+    GrayJojaCushion: "Szürke Joja párna" #!String
+    JojaCushion: "Joja párna" #!String
+    StackedJojaBoxes: "Halmozott Joja dobozok" #!String
+    JojaCouch: "Joja kanapé" #!String
+    MorrisPortrait: "Az Év Menedzsere" #!String
+    JojaHQPainting: "Joja főhadiszállás festmény" #!String
+    JojaCrate: "Joja láda" #!String
+    JojaShoppingCart: "Joja bevásárlókocsi" #!String
+    LargeJojaCrate: "Nagy Joja láda" #!String
+    JojaColaFridge: "Joja Cola hűtő" #!String
+    JojaDresser: "Joja komód" #!String
+    GrayJojaDresser: "Szürke Joja komód" #!String
+    LargeJojaRug: "Nagy Joja szőnyeg" #!String
+    SmallJojaRug: "Kicsi Joja szőnyeg" #!String
+    SquareJojaRug: "Négyzetes Joja szőnyeg" #!String
+    JojaRug: "Joja szőnyeg" #!String
+    JojaCoffeeTable: "Joja kávésasztal" #!String
+    GrayJojaCoffeeTable: "Szürke Joja kávésasztal" #!String
+    JojaLamp: "Joja lámpa" #!String
+    GrayJojaBookcase: "Szürke Joja könyvespolc" #!String
+    JojaBookcase: "Joja könyvespolc" #!String
+    JojaStool: "Joja zsámoly" #!String
+    JojaEndTable: "Joja éjjeliszekrény" #!String
+    GrayJojaEndTable: "Szürke Joja éjjeliszekrény" #!String
+    DecorativeJojaDoor: "Dekoratív Joja ajtó" #!String
+    WizardBed: "Varázsló ágy" #!String
+    LargeWizardBookcase: "Nagy varázsló könyvespolc" #!String
+    WizardBookcase: "Varázsló könyvespolc" #!String
+    ShortWizardBookcase: "Alacsony varázsló könyvespolc" #!String
+    SmallWizardBookcase: "Kicsi varázsló könyvespolc" #!String
+    WizardStool: "Varázsló zsámoly" #!String
+    WizardFireplace: "Varázsló tűzhely" #!String
+    WizardDresser: "Varázsló komód" #!String
+    WizardStudy: "Varázsló íróasztal" #!String
+    WizardEndTable: "Varázsló éjjeliszekrény" #!String
+    WitchBroom: "Boszorkány seprű" #!String
+    Cauldron: "Üst" #!String
+    CurlyTree: "Kanyargós fa" #!String
+    LeafyPlant: "Mocsári növény" #!String
+    WizardChair: "Varázsló szék" #!String
+    WizardTable: "Varázsló asztal" #!String
+    WizardCushion: "Varázsló párna" #!String
+    DarkWizardCushion: "Sötét varázsló párna" #!String
+    WizardTeaTable: "Varázsló teázó asztal" #!String
+    SmallElixirShelf: "Kicsi elixíres polc" #!String
+    ElixirShelf: "Elixíres polc" #!String
+    SmallStackedElixirShelf: "Kicsi halmozott elixíres polc" #!String
+    StackedElixirShelf: "Halmozott elixíres polc" #!String
+    ElixirBundle: "Elixír csomag" #!String
+    CoupleElixirs: "Két elixír" #!String
+    ElixirTable: "Elixír asztal" #!String
+    LongElixirTable: "Hosszú elixír asztal" #!String
+    WizardLamp: "Varázsló lámpa" #!String
+    Runes: "'Rúnák'" #!String
+    WizardTower: "'A varázsló tornya'" #!String
+    PottedRedMushroom: "Cserepes vörös gomba" #!String
+    WizardCatalogue: "Varázsló katalógus" #!String
+    VoidSwirls: "'Űrörvények'" #!String
+    WizardBookshelf: "Varázsló könyvespolc" #!String
+    Glyph: "Véset" #!String
+    StoneFlooring: "Kőpadlózat" #!String
+    RuneRug: "Rúnás szőnyeg" #!String
+    SwirlRug: "Kavargó szőnyeg" #!String
+    StarryMoonRug: "Csillagos Hold szőnyeg" #!String
+    CrystalBall: "Kristálygömb" #!String
+    AmethystCrystalBall: "Ametiszt kristálygömb" #!String
+    TopazCrystalBall: "Topáz kristálygömb" #!String
+    AquamarineCrystalBall: "Akvamarin kristálygömb" #!String
+    EmeraldCrystalBall: "Smaragd kristálygömb" #!String
+    RubyCrystalBall: "Rubin kristálygömb" #!String
+    SmallBookStack: "Kicsi könyvhalom" #!String
+    BookStack: "Könyvhalom" #!String
+    LargeBookStack: "Nagy könyvhalom" #!String
+    PurpleBook: "Lila könyv" #!String
+    BlueBook: "Kék könyv" #!String
+    YellowBook: "Sárga könyv" #!String
+    RedBook: "Vörös könyv" #!String
+    GreenBook: "Zöld könyv" #!String
+    BrownBook: "Barna könyv" #!String
+    FallenPurpleBook: "Leesett lila könyv" #!String
+    FallenBlueBook: "Leesett kék könyv" #!String
+    FallenYellowBook: "Leesett sárga könyv" #!String
+    FallenRedBook: "Leesett vörös könyv" #!String
+    FallenGreenBook: "Leesett zöld könyv" #!String
+    FallenBrownBook: "Leesett barna könyv" #!String
+    SmallBookPile: "Kicsi könyvkupac" #!String
+    BookPile: "Könyvkupac" #!String
+    LargeBookPile: "Nagy könyvkupac" #!String
+    DecorativeWizardDoor: "Dekoratív varázsló ajtó" #!String
+    JunimoBed: "Junimo ágy" #!String
+    JunimoHut: "Junimo kunyhó" #!String
+    LargeJunimoHut: "Nagy Junimo kunyhó" #!String
+    SmallJunimoHut: "Kicsi Junimo kunyhó" #!String
+    JunimoFireplace: "Junimo tűzhely" #!String
+    JunimoBookcase: "Junimo könyvespolc" #!String
+    JunimoPot: "Junimo edény" #!String
+    JunimoBag: "Junimo zsák" #!String
+    JunimoBundle: "Junimo csomag" #!String
+    JunimoStool: "Junimo zsámoly" #!String
+    JunimoTable: "Junimo asztal" #!String
+    JunimoChair: "Junimo szék" #!String
+    SmallJunimoPot: "Kicsi Junimo edény" #!String
+    JunimoFlower: "Junimo virág" #!String
+    JunimoEndTable: "Junimo éjjeliszekrény" #!String
+    JunimoCatalogue: "Junimo katalógus" #!String
+    JunimoTeaTable: "Junimo teázó asztal" #!String
+    JunimoDresser: "Junimo komód" #!String
+    JunimoLamp: "Junimo lámpa" #!String
+    JunimoPlant: "Junimo növény" #!String
+    JunimoWallPlaque: "Junimo fali dísztábla" #!String
+    JunimoPlaque: "Junimo dísztábla" #!String
+    JunimoCushion: "Junimo párna" #!String
+    DarkJunimoCushion: "Sötét Junimo párna" #!String
+    JunimoTree: "Junimo fa" #!String
+    JunimoCouch: "Junimo kanapé" #!String
+    GreenSleepingJunimo: "Zöld alvó Junimo" #!String
+    BlueSleepingJunimo: "Kék alvó Junimo" #!String
+    RedSleepingJunimo: "Vörös alvó Junimo" #!String
+    PurpleSleepingJunimo: "Lila alvó Junimo" #!String
+    YellowSleepingJunimo: "Sárga alvó Junimo" #!String
+    OrangeSleepingJunimo: "Narancssárga alvó Junimo" #!String
+    GraySleepingJunimo: "Szürke alvó Junimo" #!String
+    SquareJunimoRug: "Négyzetes Junimo szőnyeg" #!String
+    JunimoRug: "Junimo szőnyeg" #!String
+    JunimoMat: "Junimo lábtörlő" #!String
+    CircularJunimoRug: "Kerek Junimo szőnyeg" #!String
+    SmallJunimoMat: "Kicsi Junimo lábtörlő" #!String
+    CommunityCenter: "'Közösségi központ'" #!String
+    LittleBuddies: "'Kis barátok'" #!String
+    Stardrop: "'Csillaghulló'" #!String
+    Hut: "'Kunyhó'" #!String
+    AbigailPortrait: "Abigail portréja" #!String
+    EmilyPortrait: "Emily portréja" #!String
+    HaleyPortrait: "Haley portréja" #!String
+    LeahPortrait: "Leah portréja" #!String
+    MaruPortrait: "Maru portréja" #!String
+    PennyPortrait: "Penny portréja" #!String
+    AlexPortrait: "Alex portréja" #!String
+    ElliottPortrait: "Elliott portréja" #!String
+    HarveyPortrait: "Harvey portréja" #!String
+    SamPortrait: "Sam portréja" #!String
+    SebastianPortrait: "Sebastian portréja" #!String
+    ShanePortrait: "Shane portréja" #!String
+    KrobusPortrait: "Krobus portréja" #!String
+    JunimoStar: "Junimo csillag" #!String
+    BulletinBoard: "Közleményes tábla" #!String
+    BrochureCabinet: "Prospektusos szekrény" #!String
+    LeafyWallPanel: "Leveles falpanel" #!String
+    LightLeafyWallPanel: "Világos leveles falpanel" #!String
+    DarkLeafyWallPanel: "Sötét leveles falpanel" #!String
+    DecorativeJunimoDoor: "Dekoratív Junimo ajtó" #!String
+    RetroBed: "Retro ágy" #!String
+    RetroDresser: "Retro komód" #!String
+    RetroBookcase: "Retro könyvespolc" #!String
+    RetroFireplace: "Retro tűzhely" #!String
+    RetroCouch: "Retro kanapé" #!String
+    RetroCushion: "Retro párna" #!String
+    DarkRetroCushion: "Sötét retro párna" #!String
+    RetroStool: "Retro zsámoly" #!String
+    RetroFlower: "Retro virág" #!String
+    RetroChair: "Retro szék" #!String
+    RetroTable: "Retro asztal" #!String
+    RetroPlant: "Retro növény" #!String
+    RetroEndTable: "Retro éjjeliszekrény" #!String
+    RetroTeaTable: "Retro teázó asztal" #!String
+    RetroCatalogue: "Retro katalógus" #!String
+    RetroCabinet: "Retro szekrény" #!String
+    RetroRadio: "Retro rádió" #!String
+    RetroBanner: "Retro lobogó" #!String
+    Groovy: "'Klassz'" #!String
+    RetroLamp: "Retro lámpa" #!String
+    RetroRug: "Retro szőnyeg" #!String
+    RetroSquareRug: "Négyzetes retro szőnyeg" #!String
+    RetroMat: "Retro lábtörlő" #!String
+    LargeRetroRug: "Nagy retro szőnyeg" #!String
+    Abstract: "'Absztrakt'" #!String
+    Starship: "'Űrhajó'" #!String
+    Binary: "'Bináris'" #!String
+    Checkers: "'Dáma'" #!String
+    UFO: "'UFO'" #!String
+    DecorativeRetroDoor: "Dekoratív retro ajtó" #!String
+    DecorativeDoor1: "Dekoratív ajtó" #!String
+    DecorativeDoor2: "Dekoratív ajtó" #!String
+    DecorativeDoor3: "Dekoratív ajtó" #!String
+    DecorativeDoor4: "Dekoratív ajtó" #!String
+    DecorativeDoor5: "Dekoratív ajtó" #!String
+    DecorativeDoor6: "Dekoratív ajtó" #!String
+    WallClock: "Falióra" #!String
+    DecorativeHatch: "Dekoratív nyílás" #!String
+    DecorativeOakLadder: "Dekoratív tölgyfa létra" #!String
+    DecorativeWalnutLadder: "Dekoratív diófa létra" #!String
+    UprightPiano: "Pianínó" #!String
+    CoatStand: "Állófogas" #!String
+    BirdHouse: "Madárház" #!String
+    DecorativeShovel: "Dekoratív ásó" #!String
+    WallSword: "Fali kard" #!String
+    DecorativeSword: "Dekoratív kard" #!String
+    WineTable: "Borozó asztal" #!String
+    SpiritsTable: "Italos asztal" #!String
+    TallHousePlant: "Magas szobanövény" #!String
+    CornPlant: "Kukorica növény" #!String
+    BlueCushion: "Kék párna" #!String
+    YellowCushion: "Sárga párna" #!String
+    GreenCushion: "Zöld párna" #!String
+    RedCushion: "Vörös párna" #!String
+    BrownCushion: "Barna párna" #!String
+    BlackCushion: "Fekete párna" #!String
+    FoodPetBowl: "Háziállat ételes tálka" #!String
+    WaterPetBowl: "Háziállat vizes tálka" #!String
+    OakLampEndTable: "Tölgyfa lámpás éjjeliszekrény" #!String
+    WalnutLampEndTable: "Diófa lámpás éjjeliszekrény" #!String
+    BirchLampEndTable: "Nyírfa lámpás éjjeliszekrény" #!String
+    MahoganyLampEndTable: "Mahagóni lámpás éjjeliszekrény" #!String
+    TriangleWindow: "Háromszögletű ablak" #!String
+    Clothesline: "Ruhaszárító" #!String
+    TrashCatalogue: "Szemét katalógus" #!String
+    ElegantVase: "Elegáns váza" #!String
+    CatTree: "Macskás fa" #!String
+    DarkCatTree: "Sötét macskás fa" #!String
+    LightSwitch: "Villanykapcsoló" #!String
+    Outlet: "Konnektor" #!String
+    Doghouse: "Kutyaház" #!String
+    DarkDoghouse: "Sötét kutyaház" #!String
+    BountifulDiningTable: "Bőséges ebédlőasztal" #!String
+    PlasticLawnEndTable: "Műanyag kerti asztal" #!String
+    PlasticLawnChair: "Műanyag kerti szék" #!String
+    BrokenTelevision: "Törött tévé" #!String
+    SixPackRings: "Hat palackos gyűrű" #!String
+    GreenBottle: "Zöld üveg" #!String
+    PlasticBag: "Műanyag zacskó" #!String
+    AluminumCan: "Alumínium doboz" #!String
+    BlueBottle: "Kék üveg" #!String
+    BuriedTire: "Elásott kerék" #!String
+    Tire: "Kerék" #!String
+    Wrapper: "Csomagoló" #!String
+    SpilledBeverage: "Kifolyt üdítő" #!String
+    MessyShirt: "Piszkos ing" #!String
+    MessyShorts: "Piszkos nadrág" #!String
+    MoldyCouch: "Penészes kanapé" #!String
+    FancyHousePlant: "Csicsás szobanövény" #!String
+    PigPainting: "Disznó festmény" #!String
+    MidnightBed: "Éjféli strand ágy" #!String
+    MidnightDoubleBed: "Éjféli strand dupla ágy" #!String
+

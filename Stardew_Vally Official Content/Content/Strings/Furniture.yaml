@@ -1,0 +1,610 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    DarkPiano: "Dark Piano" #!String
+    OakChair: "Oak Chair" #!String
+    WalnutChair: "Walnut Chair" #!String
+    BirchChair: "Birch Chair" #!String
+    MahoganyChair: "Mahogany Chair" #!String
+    RedDinerChair: "Red Diner Chair" #!String
+    BlueDinerChair: "Blue Diner Chair" #!String
+    CountryChair: "Country Chair" #!String
+    BreakfastChair: "Breakfast Chair" #!String
+    PinkOfficeChair: "Pink Office Chair" #!String
+    PurpleOfficeChair: "Purple Office Chair" #!String
+    GreenOfficeStool: "Green Office Stool" #!String
+    OrangeOfficeStool: "Orange Office Stool" #!String
+    DarkThrone: "Dark Throne" #!String
+    DiningChair: "Dining Chair" #!String
+    GreenPlushSeat: "Green Plush Seat" #!String
+    PinkPlushSeat: "Pink Plush Seat" #!String
+    WinterChair: "Winter Chair" #!String
+    GroovyChair: "Groovy Chair" #!String
+    CuteChair: "Cute Chair" #!String
+    StumpSeat: "Stump Seat" #!String
+    MetalChair: "Metal Chair" #!String
+    GreenStool: "Green Stool" #!String
+    BlueStool: "Blue Stool" #!String
+    KingChair: "King Chair" #!String
+    CrystalChair: "Crystal Chair" #!String
+    OakBench: "Oak Bench" #!String
+    WalnutBench: "Walnut Bench" #!String
+    BirchBench: "Birch Bench" #!String
+    MahoganyBench: "Mahogany Bench" #!String
+    ModernBench: "Modern Bench" #!String
+    BlueArmchair: "Blue Armchair" #!String
+    RedArmchair: "Red Armchair" #!String
+    GreenArmchair: "Green Armchair" #!String
+    YellowArmchair: "Yellow Armchair" #!String
+    BrownArmchair: "Brown Armchair" #!String
+    BlueCouch: "Blue Couch" #!String
+    RedCouch: "Red Couch" #!String
+    GreenCouch: "Green Couch" #!String
+    YellowCouch: "Yellow Couch" #!String
+    BrownCouch: "Brown Couch" #!String
+    DarkCouch: "Dark Couch" #!String
+    WizardCouch: "Wizard Couch" #!String
+    WoodsyCouch: "Woodsy Couch" #!String
+    OakDresser: "Oak Dresser" #!String
+    WalnutDresser: "Walnut Dresser" #!String
+    BirchDresser: "Birch Dresser" #!String
+    MahoganyDresser: "Mahogany Dresser" #!String
+    CoffeeTable: "Coffee Table" #!String
+    StoneSlab: "Stone Slab" #!String
+    WinterDiningTable: "Winter Dining Table" #!String
+    FestiveDiningTable: "Festive Dining Table" #!String
+    MahoganyDiningTable: "Mahogany Dining Table" #!String
+    ModernDiningTable: "Modern Dining Table" #!String
+    OakTable: "Oak Table" #!String
+    WalnutTable: "Walnut Table" #!String
+    BirchTable: "Birch Table" #!String
+    MahoganyTable: "Mahogany Table" #!String
+    SunTable: "Sun Table" #!String
+    MoonTable: "Moon Table" #!String
+    ModernTable: "Modern Table" #!String
+    PubTable: "Pub Table" #!String
+    LuxuryTable: "Luxury Table" #!String
+    DivinerTable: "Diviner Table" #!String
+    NeolithicTable: "Neolithic Table" #!String
+    PuzzleTable: "Puzzle Table" #!String
+    WinterTable: "Winter Table" #!String
+    CandyTable: "Candy Table" #!String
+    LuauTable: "Luau Table" #!String
+    DarkTable: "Dark Table" #!String
+    OakTeaTable: "Oak Tea-Table" #!String
+    WalnutTeaTable: "Walnut Tea-Table" #!String
+    BirchTeaTable: "Birch Tea-Table" #!String
+    MahoganyTeaTable: "Mahogany Tea-Table" #!String
+    ModernTeaTable: "Modern Tea-Table" #!String
+    FurnitureCatalogue: "Furniture Catalogue" #!String
+    ChinaCabinet: "China Cabinet" #!String
+    ArtistBookcase: "Artist Bookcase" #!String
+    LuxuryBookcase: "Luxury Bookcase" #!String
+    ModernBookcase: "Modern Bookcase" #!String
+    DarkBookcase: "Dark Bookcase" #!String
+    CeramicPillar: "Ceramic Pillar" #!String
+    GoldPillar: "Gold Pillar" #!String
+    IndustrialPipe: "Industrial Pipe" #!String
+    IndoorPalm: "Indoor Palm" #!String
+    TotemPole: "Totem Pole" #!String
+    ManicuredPine: "Manicured Pine" #!String
+    TopiaryTree: "Topiary Tree" #!String
+    StandingGeode: "Standing Geode" #!String
+    ObsidianVase: "Obsidian Vase" #!String
+    SingingStone: "Singing Stone" #!String
+    SlothSkeletonL: "Sloth Skeleton L" #!String
+    SlothSkeletonM: "Sloth Skeleton M" #!String
+    SlothSkeletonR: "Sloth Skeleton R" #!String
+    Skeleton: "Skeleton" #!String
+    ChickenStatue: "Chicken Statue" #!String
+    LeahsSculpture: "Leah's Sculpture" #!String
+    DriedSunflowers: "Dried Sunflowers" #!String
+    Catalogue: "Catalogue" #!String
+    SamsBoombox: "Sam's Boombox" #!String
+    SmallPlant: "Small Plant" #!String
+    TablePlant: "Table Plant" #!String
+    DecorativeBowl: "Decorative Bowl" #!String
+    FutanBear: "Futan Bear" #!String
+    Globe: "Globe" #!String
+    ModelShip: "Model Ship" #!String
+    SmallCrystal: "Small Crystal" #!String
+    DecorativeLantern: "Decorative Lantern" #!String
+    HousePlant: "House Plant" #!String
+    OakEndTable: "Oak End Table" #!String
+    WalnutEndTable: "Walnut End Table" #!String
+    BirchEndTable: "Birch End Table" #!String
+    MahoganyEndTable: "Mahogany End Table" #!String
+    ModernEndTable: "Modern End Table" #!String
+    GrandmotherEndTable: "Grandmother End Table" #!String
+    WinterEndTable: "Winter End Table" #!String
+    Calendar: "Calendar" #!String
+    TreeoftheWinterStar: "Tree of the Winter Star" #!String
+    CountryLamp: "Country Lamp" #!String
+    BoxLamp: "Box Lamp" #!String
+    ModernLamp: "Modern Lamp" #!String
+    ClassicLamp: "Classic Lamp" #!String
+    RedRug: "Red Rug" #!String
+    PatchworkRug: "Patchwork Rug" #!String
+    DarkRug: "Dark Rug" #!String
+    BudgetTV: "Budget TV" #!String
+    PlasmaTV: "Plasma TV" #!String
+    TheMuzzamaroo: "'The Muzzamaroo'" #!String
+    ANightOnEcoHill: "'A Night On Eco-Hill'" #!String
+    Pathways: "'Pathways'" #!String
+    BurntOffering: "'Burnt Offering'" #!String
+    QueenoftheGemSea: "'Queen of the Gem Sea'" #!String
+    VanillaVilla: "'Vanilla Villa'" #!String
+    PrimalMotion: "'Primal Motion'" #!String
+    JadeHills: "'Jade Hills'" #!String
+    Sun44: "'Sun #44'" #!String
+    WallflowerPal: "Wallflower Pal" #!String
+    Spires: "'Spires'" #!String
+    Highway89: "'Highway 89'" #!String
+    CalicoFalls: "Calico Falls" #!String
+    NeedlepointFlower: "Needlepoint Flower" #!String
+    SkullPoster: "Skull Poster" #!String
+    Sun45: "'Sun #45'" #!String
+    LittleTree: "'Little Tree'" #!String
+    Blueberries: "'Blueberries'" #!String
+    BlueCity: "'Blue City'" #!String
+    LittlePhotos: "Little Photos" #!String
+    DancingGrass: "'Dancing Grass'" #!String
+    VGAParadise: "'VGA Paradise'" #!String
+    JColaLight: "J. Cola Light" #!String
+    Kitemaster95: "'Kitemaster '95'" #!String
+    BasicWindow: "Basic Window" #!String
+    SmallWindow: "Small Window" #!String
+    RedCottageRug: "Red Cottage Rug" #!String
+    GreenCottageRug: "Green Cottage Rug" #!String
+    MonsterRug: "Monster Rug" #!String
+    BoardedWindow: "Boarded Window" #!String
+    MysticRug: "Mystic Rug" #!String
+    LgFutanBear: "Lg. Futan Bear" #!String
+    JunimoPlush: "Junimo Plush" #!String
+    BearStatue: "Bear Statue" #!String
+    Porthole: "Porthole" #!String
+    Anchor: "Anchor" #!String
+    WorldMap: "World Map" #!String
+    OrnateWindow: "Ornate Window" #!String
+    FloorTV: "Floor TV" #!String
+    CarvedWindow: "Carved Window" #!String
+    NauticalRug: "Nautical Rug" #!String
+    BurlapRug: "Burlap Rug" #!String
+    TreeColumn: "Tree Column" #!String
+    LLightString: "L. Light String" #!String
+    SPine: "S. Pine" #!String
+    BonsaiTree: "Bonsai Tree" #!String
+    MetalWindow: "Metal Window" #!String
+    CandleLamp: "Candle Lamp" #!String
+    MinersCrest: "Miner's Crest" #!String
+    BambooMat: "Bamboo Mat" #!String
+    OrnateLamp: "Ornate Lamp" #!String
+    WoodcutRug: "Woodcut Rug" #!String
+    HangingShield: "Hanging Shield" #!String
+    MonsterDanglers: "Monster Danglers" #!String
+    CeilingFlags: "Ceiling Flags" #!String
+    RedEagle: "'Red Eagle'" #!String
+    PortraitOfAMermaid: "'Portrait Of A Mermaid'" #!String
+    SolarKingdom: "'Solar Kingdom'" #!String
+    Clouds: "'Clouds'" #!String
+    1000YearsFromNow: "'1000 Years From Now'" #!String
+    ThreeTrees: "'Three Trees'" #!String
+    TheSerpent: "'The Serpent'" #!String
+    TropicalFish173: "'Tropical Fish #173'" #!String
+    LandOfClay: "'Land Of Clay'" #!String
+    BrickFireplace: "Brick Fireplace" #!String
+    StoneFireplace: "Stone Fireplace" #!String
+    IridiumFireplace: "Iridium Fireplace" #!String
+    StoveFireplace: "Stove Fireplace" #!String
+    MonsterFireplace: "Monster Fireplace" #!String
+    MyFirstPainting: "My First Painting" #!String
+    ElegantFireplace: "Elegant Fireplace" #!String
+    PirateFlag: "Pirate Flag" #!String
+    PirateRug: "Pirate Rug" #!String
+    BoneRug: "Bone Rug" #!String
+    ButterflyHutch: "Butterfly Hutch" #!String
+    StrawberryDecal: "Strawberry Decal" #!String
+    FruitSaladRug: "Fruit Salad Rug" #!String
+    NightSkyDecal1: "Night Sky Decal #1" #!String
+    SnowyRug: "Snowy Rug" #!String
+    NightSkyDecal2: "Night Sky Decal #2" #!String
+    NightSkyDecal3: "Night Sky Decal #3" #!String
+    TheBraveLittleSapling: "'The Brave Little Sapling'" #!String
+    Mysterium: "'Mysterium'" #!String
+    JourneyOfThePrairieKingTheMotionPicture: "'Journey Of The Prairie King: The Motion Picture'" #!String
+    Wumbus: "'Wumbus'" #!String
+    TheZuzuCityExpress: "'The Zuzu City Express'" #!String
+    TheMiracleAtColdstarRanch: "'The Miracle At Coldstar Ranch'" #!String
+    NaturalWondersExploringOurVibrantWorld: "'Natural Wonders: Exploring Our Vibrant World'" #!String
+    ItHowlsInTheRain: "'It Howls In The Rain'" #!String
+    IndoorHangingBasket: "Indoor Hanging Basket" #!String
+    WinterTreeDecal: "Winter Tree Decal" #!String
+    SmallJunimoPlush: "Small Junimo Plush" #!String
+    FutanRabbit: "Futan Rabbit" #!String
+    WumbusStatue: "Wumbus Statue" #!String
+    BoboStatue: "Bobo Statue" #!String
+    PurpleSerpentStatue: "Purple Serpent Statue" #!String
+    GreenSerpentStatue: "Green Serpent Statue" #!String
+    LongPalm: "Long Palm" #!String
+    LongCactus: "Long Cactus" #!String
+    ExoticTree: "Exotic Tree" #!String
+    DeluxeTree: "Deluxe Tree" #!String
+    WallPumpkin: "Wall Pumpkin" #!String
+    SmallWallPumpkin: "Small Wall Pumpkin" #!String
+    Bed: "Bed" #!String
+    DoubleBed: "Double Bed" #!String
+    StarryDoubleBed: "Starry Double Bed" #!String
+    StrawberryDoubleBed: "Strawberry Double Bed" #!String
+    PirateDoubleBed: "Pirate Double Bed" #!String
+    ChildBed: "Child Bed" #!String
+    TropicalBed: "Tropical Bed" #!String
+    TropicalDoubleBed: "Tropical Double Bed" #!String
+    DeluxeRedDoubleBed: "Deluxe Red Double Bed" #!String
+    ModernDoubleBed: "Modern Double Bed" #!String
+    LargeFishTank: "Large Fish Tank" #!String
+    DeluxeFishTank: "Deluxe Fish Tank" #!String
+    SmallFishTank: "Small Fish Tank" #!String
+    OceanicRug: "Oceanic Rug" #!String
+    TropicalTV: "Tropical TV" #!String
+    VolcanoPhoto: "'Volcano' Photo" #!String
+    JungleTorch: "Jungle Torch" #!String
+    PalmWallOrnament: "Palm Wall Ornament" #!String
+    TropicalChair: "Tropical Chair" #!String
+    AquaticSanctuary: "Aquatic Sanctuary" #!String
+    ModernFishTank: "Modern Fish Tank" #!String
+    WildDoubleBed: "Wild Double Bed" #!String
+    FisherDoubleBed: "Fisher Double Bed" #!String
+    BirchDoubleBed: "Birch Double Bed" #!String
+    ExoticDoubleBed: "Exotic Double Bed" #!String
+    Lifesaver: "Lifesaver" #!String
+    FoliagePrint: "Foliage Print" #!String
+    Boat: "'Boat'" #!String
+    Vista: "'Vista'" #!String
+    WallBasket: "Wall Basket" #!String
+    DecorativeTrashCan: "Decorative Trash Can" #!String
+    IridiumKrobus: "Iridium Krobus" #!String
+    GourmandStatue: "Gourmand Statue" #!String
+    PyramidDecal: "Pyramid Decal" #!String
+    PlainTorch: "Plain Torch" #!String
+    StumpTorch: "Stump Torch" #!String
+    WallFlower: "Wall Flower" #!String
+    SWallFlower: "S. Wall Flower" #!String
+    CloudsBanner: "Clouds Banner" #!String
+    ColorfulSet: "Colorful Set" #!String
+    PastelBanner: "Pastel Banner" #!String
+    WinterBanner: "Winter Banner" #!String
+    MoonlightJelliesBanner: "Moonlight Jellies Banner" #!String
+    JungleDecal: "Jungle Decal" #!String
+    StarportDecal: "Starport Decal" #!String
+    DecorativePitchfork: "Decorative Pitchfork" #!String
+    WoodPanel: "Wood Panel" #!String
+    DecorativeAxe: "Decorative Axe" #!String
+    LogPanel: "Log Panel" #!String
+    CeilingLeaves: "Ceiling Leaves" #!String
+    CloudDecal: "Cloud Decal" #!String
+    FloorDividerR: "Floor Divider R" #!String
+    FloorDividerL: "Floor Divider L" #!String
+    LightGreenRug: "Light Green Rug" #!String
+    JadeHillsExtended: "'Jade Hills Extended'" #!String
+    LargeBrownCouch: "Large Brown Couch" #!String
+    LargeGreenRug: "Large Green Rug" #!String
+    IcyRug: "Icy Rug" #!String
+    OldWorldRug: "Old World Rug" #!String
+    LargeRedRug: "Large Red Rug" #!String
+    FrozenDreams: "'Frozen Dreams'" #!String
+    IcyBanner: "Icy Banner" #!String
+    WallPalm: "Wall Palm" #!String
+    WallCactus: "Wall Cactus" #!String
+    LargeCottageRug: "Large Cottage Rug" #!String
+    Physics101: "'Physics 101'" #!String
+    WallSconce: "Wall Sconce" #!String
+    BlossomRug: "Blossom Rug" #!String
+    FunkyRug: "Funky Rug" #!String
+    ModernRug: "Modern Rug" #!String
+    SquirrelFigurine: "Squirrel Figurine" #!String
+    Cactus: "Cactus" #!String
+    HangingFish: "Hanging Fish" #!String
+    RetroTV: "Retro TV" #!String
+    ArtPhoto: "Art Photo" #!String
+    ArtPhoto2: "Art Photo 2" #!String
+    ShortBookcase: "Short Bookcase" #!String
+    PierresSign: "Pierre's Sign" #!String
+    SamsSkateboard: "Sam's Skateboard" #!String
+    ChickenDecal: "Chicken Decal" #!String
+    ExoticPalace: "Exotic Palace" #!String
+    PeriodicTable: "Periodic Table" #!String
+    DustySkull: "Dusty Skull" #!String
+    RadioDesk: "Radio Desk" #!String
+    ModelPlanes: "Model Planes" #!String
+    CalicoStatue: "Calico Statue" #!String
+    SunDunes: "Sun Dunes" #!String
+    DesertTable: "Desert Table" #!String
+    DesertChair: "Desert Chair" #!String
+    DesertFireplace: "Desert Fireplace" #!String
+    SandyRug: "Sandy Rug" #!String
+    DesertRug: "Desert Rug" #!String
+    DesertEndTable: "Desert End Table" #!String
+    DesertFlags: "Desert Flags" #!String
+    DecorativeBarrel: "Decorative Barrel" #!String
+    MountedTrout: "Mounted Trout" #!String
+    SquidKid: "'Squid Kid'" #!String
+    CowDecal: "Cow Decal" #!String
+    BluePinstripeBed: "Blue Pinstripe Bed" #!String
+    JungleTank: "Jungle Tank" #!String
+    CCFishTank: "CCFishTank" #!String
+    BluePinstripeDoubleBed: "Blue Pinstripe Double Bed" #!String
+    JojaBed: "Joja Bed" #!String
+    JojaVault: "Joja Vault" #!String
+    JojaChair: "Joja Chair" #!String
+    J: "J" #!String
+    JojaColaTeaTable: "Joja Cola Tea Table" #!String
+    JojaTable: "Joja Table" #!String
+    JPainting: "J. Painting" #!String
+    JLight: "J. Light" #!String
+    JojaCatalogue: "Joja Furniture Catalogue" #!String
+    JojaColaPainting: "Joja Cola Painting" #!String
+    JojaColaOrnament: "Joja Cola Ornament" #!String
+    JojaFireplace: "Joja Fireplace" #!String
+    JojaColaCans: "Joja Cola Cans" #!String
+    CashRegister: "Cash Register" #!String
+    PlasticPlant: "Plastic Plant" #!String
+    PlasticSapling: "Plastic Sapling" #!String
+    GrayJojaCushion: "Gray Joja Cushion" #!String
+    JojaCushion: "Joja Cushion" #!String
+    StackedJojaBoxes: "Stacked Joja Boxes" #!String
+    JojaCouch: "Joja Couch" #!String
+    MorrisPortrait: "Manager of the Year" #!String
+    JojaHQPainting: "Joja HQ Painting" #!String
+    JojaCrate: "Joja Crate" #!String
+    JojaShoppingCart: "Joja Shopping Cart" #!String
+    LargeJojaCrate: "Large Joja Crate" #!String
+    JojaColaFridge: "Joja Cola Fridge" #!String
+    JojaDresser: "Joja Dresser" #!String
+    GrayJojaDresser: "Gray Joja Dresser" #!String
+    LargeJojaRug: "Large Joja Rug" #!String
+    SmallJojaRug: "Small Joja Rug" #!String
+    SquareJojaRug: "Square Joja Rug" #!String
+    JojaRug: "Joja Rug" #!String
+    JojaCoffeeTable: "Joja Coffee Table" #!String
+    GrayJojaCoffeeTable: "Gray Joja Coffee Table" #!String
+    JojaLamp: "Joja Lamp" #!String
+    GrayJojaBookcase: "Gray Joja Bookcase" #!String
+    JojaBookcase: "Joja Bookcase" #!String
+    JojaStool: "Joja Stool" #!String
+    JojaEndTable: "Joja End Table" #!String
+    GrayJojaEndTable: "Gray Joja End Table" #!String
+    DecorativeJojaDoor: "Decorative Joja Door" #!String
+    WizardBed: "Wizard Bed" #!String
+    LargeWizardBookcase: "Large Wizard Bookcase" #!String
+    WizardBookcase: "Wizard Bookcase" #!String
+    ShortWizardBookcase: "Short Wizard Bookcase" #!String
+    SmallWizardBookcase: "Small Wizard Bookcase" #!String
+    WizardStool: "Wizard Stool" #!String
+    WizardFireplace: "Wizard Fireplace" #!String
+    WizardDresser: "Wizard Dresser" #!String
+    WizardStudy: "Wizard Study" #!String
+    WizardEndTable: "Wizard End Table" #!String
+    WitchBroom: "Witch's Broom" #!String
+    Cauldron: "Cauldron" #!String
+    CurlyTree: "Curly Tree" #!String
+    LeafyPlant: "Swamp Plant" #!String
+    WizardChair: "Wizard Chair" #!String
+    WizardTable: "Wizard Table" #!String
+    WizardCushion: "Wizard Cushion" #!String
+    DarkWizardCushion: "Dark Wizard Cushion" #!String
+    WizardTeaTable: "Wizard Tea Table" #!String
+    SmallElixirShelf: "Small Elixir Shelf" #!String
+    ElixirShelf: "Elixir Shelf" #!String
+    SmallStackedElixirShelf: "Small Stacked Elixir Shelf" #!String
+    StackedElixirShelf: "Stacked Elixir Shelf" #!String
+    ElixirBundle: "Elixir Bundle" #!String
+    CoupleElixirs: "Two Elixirs" #!String
+    ElixirTable: "Elixir Table" #!String
+    LongElixirTable: "Long Elixir Table" #!String
+    WizardLamp: "Wizard Lamp" #!String
+    Runes: "'Runes'" #!String
+    WizardTower: "'Wizard's Tower'" #!String
+    PottedRedMushroom: "Potted Red Mushroom" #!String
+    WizardCatalogue: "Wizard Catalogue" #!String
+    VoidSwirls: "'Void Swirls'" #!String
+    WizardBookshelf: "Wizard Bookshelf" #!String
+    Glyph: "Glyph" #!String
+    StoneFlooring: "Stone Flooring" #!String
+    RuneRug: "Rune Rug" #!String
+    SwirlRug: "Swirl Rug" #!String
+    StarryMoonRug: "Starry Moon Rug" #!String
+    CrystalBall: "Crystal Ball" #!String
+    AmethystCrystalBall: "Amethyst Crystal Ball" #!String
+    TopazCrystalBall: "Topaz Crystal Ball" #!String
+    AquamarineCrystalBall: "Aquamarine Crystal Ball" #!String
+    EmeraldCrystalBall: "Emerald Crystal Ball" #!String
+    RubyCrystalBall: "Ruby Crystal Ball" #!String
+    SmallBookStack: "Small Book Stack" #!String
+    BookStack: "Book Stack" #!String
+    LargeBookStack: "Large Book Stack" #!String
+    PurpleBook: "Purple Book" #!String
+    BlueBook: "Blue Book" #!String
+    YellowBook: "Yellow Book" #!String
+    RedBook: "Red Book" #!String
+    GreenBook: "Green Book" #!String
+    BrownBook: "Brown Book" #!String
+    FallenPurpleBook: "Fallen Purple Book" #!String
+    FallenBlueBook: "Fallen Blue Book" #!String
+    FallenYellowBook: "Fallen Yellow Book" #!String
+    FallenRedBook: "Fallen Red Book" #!String
+    FallenGreenBook: "Fallen Green Book" #!String
+    FallenBrownBook: "Fallen Brown Book" #!String
+    SmallBookPile: "Small Book Pile" #!String
+    BookPile: "Book Pile" #!String
+    LargeBookPile: "Large Book Pile" #!String
+    DecorativeWizardDoor: "Decorative Wizard Door" #!String
+    JunimoBed: "Junimo Bed" #!String
+    JunimoHut: "Junimo Hut" #!String
+    LargeJunimoHut: "Large Junimo Hut" #!String
+    SmallJunimoHut: "Small Junimo Hut" #!String
+    JunimoFireplace: "Junimo Fireplace" #!String
+    JunimoBookcase: "Junimo Bookcase" #!String
+    JunimoPot: "Junimo Pot" #!String
+    JunimoBag: "Junimo Bag" #!String
+    JunimoBundle: "Junimo Bundle" #!String
+    JunimoStool: "Junimo Stool" #!String
+    JunimoTable: "Junimo Table" #!String
+    JunimoChair: "Junimo Chair" #!String
+    SmallJunimoPot: "Small Junimo Pot" #!String
+    JunimoFlower: "Junimo Flower" #!String
+    JunimoEndTable: "Junimo End Table" #!String
+    JunimoCatalogue: "Junimo Catalogue" #!String
+    JunimoTeaTable: "Junimo Tea Table" #!String
+    JunimoDresser: "Junimo Dresser" #!String
+    JunimoLamp: "Junimo Lamp" #!String
+    JunimoPlant: "Junimo Plant" #!String
+    JunimoWallPlaque: "Junimo Wall Plaque" #!String
+    JunimoPlaque: "Junimo Plaque" #!String
+    JunimoCushion: "Junimo Cushion" #!String
+    DarkJunimoCushion: "Dark Junimo Cushion" #!String
+    JunimoTree: "Junimo Tree" #!String
+    JunimoCouch: "Junimo Couch" #!String
+    GreenSleepingJunimo: "Green Sleeping Junimo" #!String
+    BlueSleepingJunimo: "Blue Sleeping Junimo" #!String
+    RedSleepingJunimo: "Red Sleeping Junimo" #!String
+    PurpleSleepingJunimo: "Purple Sleeping Junimo" #!String
+    YellowSleepingJunimo: "Yellow Sleeping Junimo" #!String
+    OrangeSleepingJunimo: "Orange Sleeping Junimo" #!String
+    GraySleepingJunimo: "Gray Sleeping Junimo" #!String
+    SquareJunimoRug: "Square Junimo Rug" #!String
+    JunimoRug: "Junimo Rug" #!String
+    JunimoMat: "Junimo Mat" #!String
+    CircularJunimoRug: "Circular Junimo Rug" #!String
+    SmallJunimoMat: "Small Junimo Mat" #!String
+    CommunityCenter: "'Community Center'" #!String
+    LittleBuddies: "'Little Buddies'" #!String
+    Stardrop: "'Stardrop'" #!String
+    Hut: "'Hut'" #!String
+    AbigailPortrait: "Abigail Portrait" #!String
+    EmilyPortrait: "Emily Portrait" #!String
+    HaleyPortrait: "Haley Portrait" #!String
+    LeahPortrait: "Leah Portrait" #!String
+    MaruPortrait: "Maru Portrait" #!String
+    PennyPortrait: "Penny Portrait" #!String
+    AlexPortrait: "Alex Portrait" #!String
+    ElliottPortrait: "Elliott Portrait" #!String
+    HarveyPortrait: "Harvey Portrait" #!String
+    SamPortrait: "Sam Portrait" #!String
+    SebastianPortrait: "Sebastian Portrait" #!String
+    ShanePortrait: "Shane Portrait" #!String
+    KrobusPortrait: "Krobus Portrait" #!String
+    JunimoStar: "Junimo Star" #!String
+    BulletinBoard: "Bulletin Board" #!String
+    BrochureCabinet: "Brochure Cabinet" #!String
+    LeafyWallPanel: "Leafy Wall Panel" #!String
+    LightLeafyWallPanel: "Light Leafy Wall Panel" #!String
+    DarkLeafyWallPanel: "Dark Leafy Wall Panel" #!String
+    DecorativeJunimoDoor: "Decorative Junimo Door" #!String
+    RetroBed: "Retro Bed" #!String
+    RetroDresser: "Retro Dresser" #!String
+    RetroBookcase: "Retro Bookcase" #!String
+    RetroFireplace: "Retro Fireplace" #!String
+    RetroCouch: "Retro Couch" #!String
+    RetroCushion: "Retro Cushion" #!String
+    DarkRetroCushion: "Dark Retro Cushion" #!String
+    RetroStool: "Retro Stool" #!String
+    RetroFlower: "Retro Flower" #!String
+    RetroChair: "Retro Chair" #!String
+    RetroTable: "Retro Table" #!String
+    RetroPlant: "Retro Plant" #!String
+    RetroEndTable: "Retro End Table" #!String
+    RetroTeaTable: "Retro Tea Table" #!String
+    RetroCatalogue: "Retro Catalogue" #!String
+    RetroCabinet: "Retro Cabinet" #!String
+    RetroRadio: "Retro Radio" #!String
+    RetroBanner: "Retro Banner" #!String
+    Groovy: "'Groovy'" #!String
+    RetroLamp: "Retro Lamp" #!String
+    RetroRug: "Retro Rug" #!String
+    RetroSquareRug: "Retro Square Rug" #!String
+    RetroMat: "Retro Mat" #!String
+    LargeRetroRug: "Large Retro Rug" #!String
+    Abstract: "'Abstract'" #!String
+    Starship: "'Starship'" #!String
+    Binary: "'Binary'" #!String
+    Checkers: "'Checkers'" #!String
+    UFO: "'UFO'" #!String
+    DecorativeRetroDoor: "Decorative Retro Door" #!String
+    DecorativeDoor1: "Decorative Door" #!String
+    DecorativeDoor2: "Decorative Door" #!String
+    DecorativeDoor3: "Decorative Door" #!String
+    DecorativeDoor4: "Decorative Door" #!String
+    DecorativeDoor5: "Decorative Door" #!String
+    DecorativeDoor6: "Decorative Door" #!String
+    WallClock: "Wall Clock" #!String
+    DecorativeHatch: "Decorative Hatch" #!String
+    DecorativeOakLadder: "Decorative Oak Ladder" #!String
+    DecorativeWalnutLadder: "Decorative Walnut Ladder" #!String
+    UprightPiano: "Upright Piano" #!String
+    CoatStand: "Coat Stand" #!String
+    BirdHouse: "Bird House" #!String
+    DecorativeShovel: "Decorative Shovel" #!String
+    WallSword: "Wall Sword" #!String
+    DecorativeSword: "Decorative Sword" #!String
+    WineTable: "Wine Table" #!String
+    SpiritsTable: "Spirits Table" #!String
+    TallHousePlant: "Tall House Plant" #!String
+    CornPlant: "Corn Plant" #!String
+    BlueCushion: "Blue Cushion" #!String
+    YellowCushion: "Yellow Cushion" #!String
+    GreenCushion: "Green Cushion" #!String
+    RedCushion: "Red Cushion" #!String
+    BrownCushion: "Brown Cushion" #!String
+    BlackCushion: "Black Cushion" #!String
+    FoodPetBowl: "Food Pet Bowl" #!String
+    WaterPetBowl: "Water Pet Bowl" #!String
+    OakLampEndTable: "Oak Lamp End Table" #!String
+    WalnutLampEndTable: "Walnut Lamp End Table" #!String
+    BirchLampEndTable: "Birch Lamp End Table" #!String
+    MahoganyLampEndTable: "Mahogany Lamp End Table" #!String
+    TriangleWindow: "Triangle Window" #!String
+    Clothesline: "Clothesline" #!String
+    TrashCatalogue: "Trash Catalogue" #!String
+    ElegantVase: "Elegant Vase" #!String
+    CatTree: "Cat Tree" #!String
+    DarkCatTree: "Dark Cat Tree" #!String
+    LightSwitch: "Light Switch" #!String
+    Outlet: "Outlet" #!String
+    Doghouse: "Doghouse" #!String
+    DarkDoghouse: "Dark Doghouse" #!String
+    BountifulDiningTable: "Bountiful Dining Table" #!String
+    PlasticLawnEndTable: "Plastic Lawn End Table" #!String
+    PlasticLawnChair: "Plastic Lawn Chair" #!String
+    BrokenTelevision: "Broken Television" #!String
+    SixPackRings: "Six-Pack Rings" #!String
+    GreenBottle: "Green Bottle" #!String
+    PlasticBag: "Plastic Bag" #!String
+    AluminumCan: "Aluminum Can" #!String
+    BlueBottle: "Blue Bottle" #!String
+    BuriedTire: "Buried Tire" #!String
+    Tire: "Tire" #!String
+    Wrapper: "Wrapper" #!String
+    SpilledBeverage: "Spilled Beverage" #!String
+    MessyShirt: "Messy Shirt" #!String
+    MessyShorts: "Messy Shorts" #!String
+    MoldyCouch: "Moldy Couch" #!String
+    FancyHousePlant: "Fancy House Plant" #!String
+    PigPainting: "Pig Painting" #!String
+    MidnightBed: "Midnight Beach Bed" #!String
+    MidnightDoubleBed: "Midnight Beach Double Bed" #!String
+

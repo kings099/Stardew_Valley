@@ -1,0 +1,27 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    winter_4.001: "Hé ! Un peu d’intimité, s’il te plaît ?$a" #!String
+    marriage_Mon.002: "Je me demande si Maru va se marier un jour ? " #!String
+    marriageJob.000: "Bonjour, mon coeur. C’est gentil de ta part de me rendre visite au travail.$h" #!String
+    marriage_Mon.001: "Ne t’inquiète pas, je vais l'acheter avec mon propre argent." #!String
+    marriage_Mon.000: "Bonjour, mon coeur ! Je fais quelques courses." #!String
+    winter_15.000: "Tu sens cette odeur ? L'air est si épicé par ici..." #!String
+    winter_4.000: "J’ai un rendez-vous chez le médecin cet après-midi." #!String
+    rain2.000: "Je vais rentrer, je voulais juste être tranquille un moment." #!String
+

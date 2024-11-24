@@ -1,0 +1,53 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Mon: "Hallo.#$e#Ich war so lange weg... Ich fühle mich wie ein Fremder." #!String
+    AcceptGift_(O)StardropTea: "Für mich? Nun, das ist unerwartet... Aber ich werde nicht nein sagen. Vielen Dank!" #!String
+    AcceptGift_(O)Book_Bombs: "Nun, ich kann kein Zwergisch lesen, aber es ist ein interessantes Sammlerstück. Ich danke dir." #!String
+    GreenRain_2: "Heh... Der Regen ist ein Segen. Eine Erinnerung daran, dass es immer Mächte geben wird, die größer sind als alles, was der Mensch sich ausdenkt.#$e#Das ist eigentlich ein Trost, @." #!String
+    Resort_Entering: "Hallo, @. Schön, dich zu sehen." #!String
+    Resort_Leaving: "Zeit, nach Hause zu gehen." #!String
+    Resort_Shore: "An diesem Strand... fühle ich ein seltenes Gefühl von Frieden.$h#$e#Der Ozean ist etwas ganz Besonderes." #!String
+    Resort_Chair: "Dies ist ein großartiger Ort, um Zeit mit der Familie zu verbringen und sich näher zu kommen. Ich weiß es wirklich zu schätzen, dass Du es hergerichtet hast." #!String
+    Resort_Bar: "Ich hole nur etwas Wasser." #!String
+    married_Sam: "Es macht einen Vater stolz, wenn er sieht, wie aus seinem Jungen ein Mann wird. Ihr habt meinen herzlichen Segen.$h" #!String
+    Resort: "Die Bootsfahrt hat Spaß gemacht. Ich durfte sogar einen Teil meiner nautischen Ausbildung nutzen, um beim Navigieren zu helfen.$h" #!String
+    eventSeen_100_memory_oneday: "Ich entschuldige mich für neulich.#$e#Ich will keine Sonderbehandlung. Ich möchte einfach ein normaler Mensch sein, wie jeder andere auch." #!String
+    MovieInvitation: "Ähm... okay. Ich danke dir. Ich werde dich dort treffen.$h" #!String
+    accept_864: "...!$4#$b#...Wo hast du das gefunden?$4#$b#...$5#$b#Dieser Mann... Wir waren gemeinsam im Krieg, @. Er war wie ein Bruder. #$b#Aber... nur einer von uns schaffte es zurück.$5#$b#Er verlor jedoch nie den Mut. Selbst im Angesicht des Todes. Ein wahrer Held... Ich werde ihn nie vergessen.#$b#Danke, dass Du mir das gebracht hast... Es bedeutet mir sehr viel.#$b#Hier, nimm das. Es steht seit Jahren hinten in unserem Schrank, und wir haben es nie benutzt." #!String
+    reject_865: "Ja... Es wurde fest verschlossen, also sollte der Geschmack immer noch sehr stark sein." #!String
+    Mon4: "Ich weiß nicht, ob ich mich je wieder daran gewöhnen kann, zurück zu sein.#$e#Die friedliche Atmosphäre der Stadt fühlt sich an wie eine Maske. Dabei geht es aber vermutlich nur mir so." #!String
+    Tue: "Die Dinge haben sich nicht wirklich verändert, seit ich weg war.#$e#Außer der Tatsache, dass du hier bist." #!String
+    Tue2: "Die Dinge haben sich nicht wirklich verändert, seit ich weg war.#$e#Außer, dass wir einen neuen Bauern im Ort haben.$h" #!String
+    Tue6: "Ich habe das Gefühl, dass ich mich wieder ganz gut eingelebt habe. Es ist schön, einen Freund in der Stadt zu haben.$h" #!String
+    Wed6: "... Ich habe viele Freunde im Kampf verloren.$s#$e#Das Traurige ist, dass ich mich nicht mal an ihre Gesichter erinnern kann.#$e#..." #!String
+    Wed: "Du bist schon eine ganze Weile hier, nicht? Dein Hof läuft wohl gut." #!String
+    Wed10: "Am Leben zu sein ist ein besonderes Geschenk, und es kommt und geht in einem Augenblick... verliere das nie aus den Augen." #!String
+    Thu6: "#$1 Kent1#Ich bin schon seit 4 Uhr wach... Manchmal frage ich mich, ob ich jemals wieder einen normalen Schlafrhythmus haben werde.$k#$e#Sam ist in meiner Abwesenheit wirklich groß geworden. Er ist jetzt erwachsen.#$e#Ich wünschte, ich hätte für ihn da sein können.$s" #!String
+    Thu: "Du bist mit meinem Sohn befreundet?#$e#Du kennst ihn vermutlich besser als ich...$s" #!String
+    Thu_inlaw_Sam: "Hey, @. Genießt du dein Eheleben?" #!String
+    Fri: "Sieht nach einem guten Tag zum Fischen aus, nicht?" #!String
+    Fri4: "Ich sollte mit dem Angeln anfangen. Dann hätte ich etwas zu tun und könnte meine Hände beschäftigen." #!String
+    Sat: "Jodi sagt mir, dass du wirklich ein Teil dieser Gemeinde geworden bist. Ich bin froh, das zu hören." #!String
+    Sat8: "Ich habe Schlafprobleme, also entschuldige bitte, wenn ich müde aussehe.#$e#Ich bin mir sicher, dass du das verstehst." #!String
+    Sun: "Ich weiß nicht, was ich mit mir anfangen soll, seit ich zurück bin.#$e#Ich bin an mehr Struktur in meinem Alltag gewöhnt." #!String
+    Sun4: "Du hast eine Routine, die dich auf Trab hält, was? Das ist eine gute Sache.#$e#Zu viel Freiheit kann erdrückend sein. Wir alle profitieren davon, etwas Struktur in unser Leben zu bringen." #!String
+    event_popcorn1: "Du bleibst ruhig! Hör auf, mich gegen meine Frau auszuspielen.$u" #!String
+    event_popcorn2: "...$s#$b#Du hast absolut Recht, @.$s" #!String
+    event_popcorn3: "Lüg mich nicht an! Ich hasse Lügen mehr als alles andere!$u" #!String
+

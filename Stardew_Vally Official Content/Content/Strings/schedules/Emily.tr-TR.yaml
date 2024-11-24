@@ -1,0 +1,35 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Fri.000: "Ne güzel bir dokuma tezgâhı. Şu an cennetteyim." #!String
+    marriage_Mon.002: "Gus ben yokken her şeyi organize etmekte zorluk çekiyor gibi." #!String
+    winter_11.000: "Çoğumuz yıllık kontrol için doktora görünürüz." #!String
+    marriage_Fri.001: "Buraya meyve kokusunu almaya geldim." #!String
+    winter_11.001: "Doktor, olabildiğince 'doğal ilaç' tedavisi istiyorum." #!String
+    marriage_Mon.001: "Bugün iyi bir yürüyüş yapmaya çalışıyorum. Bacaklarım peynirli makarna gibi." #!String
+    marriage_Fri.000: "Sadece denizkızlarını arıyorum." #!String
+    marriage_Mon.000: "Eski evimi ziyaret etmek güzeldi. Burası anılarla dolu." #!String
+    marriage_Fri.002: "Cuma geceleri yoğun geçiyor, ben de eski zamanların hatrına yardım ediyorum. Eğlenceli oluyor!$h" #!String
+    winter_15.000: "Sanırım bu tekne benim favorim. Çok eşsiz!" #!String
+    Sandy_Birthday_Greeting: "Selam Sandy! Sana hediye aldım. Umarım beğenirsin!$h" #!String
+    Sandy_Birthday_Hangout: "Bugün işten izin alabildiğim için çok sevinçliyim!$h#$e#Keyfim yerinde." #!String
+    Sandy_Birthday_Lake: "Of... Çok sıcak!#$e#Bugün yüzesim var.#$e#Su da ne serindir şimdi.$h" #!String
+    Sandy_Birthday_Bones: "Burayı aklın alıyor mu?#$e#Çok gizemli..." #!String
+    Sandy_Birthday_Camel: "Hayvanlarla zaman geçirmeyi seviyorum.#$e#Dünyamız büyüyle dolu." #!String
+    Sandy_Birthday_Bye: "Çok eğlendim!#$b#Yakında yeniden geleceğim!$h" #!String
+

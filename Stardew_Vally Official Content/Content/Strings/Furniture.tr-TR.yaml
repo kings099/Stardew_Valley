@@ -1,0 +1,610 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    DarkPiano: "Karanlık Piyano" #!String
+    OakChair: "Meşe Sandalye" #!String
+    WalnutChair: "Ceviz Sandalye" #!String
+    BirchChair: "Huş Sandalye" #!String
+    MahoganyChair: "Maun Sandalye" #!String
+    RedDinerChair: "Kırmızı Masa Sandalyesi" #!String
+    BlueDinerChair: "Mavi Masa Sandalyesi" #!String
+    CountryChair: "Kırsal Sandalyesi" #!String
+    BreakfastChair: "Kahvaltı Sandalyesi" #!String
+    PinkOfficeChair: "Pembe Ofis Sandalyesi" #!String
+    PurpleOfficeChair: "Mor Ofis Sandalyesi" #!String
+    GreenOfficeStool: "Yeşil Ofis Taburesi" #!String
+    OrangeOfficeStool: "Turuncu Ofis Taburesi" #!String
+    DarkThrone: "Kara Taht" #!String
+    DiningChair: "Masa Sandalyesi" #!String
+    GreenPlushSeat: "Yeşil Yumuş Koltuk" #!String
+    PinkPlushSeat: "Pembe Yumuş Koltuk" #!String
+    WinterChair: "Kış Sandalyesi" #!String
+    GroovyChair: "Modern Sandalye" #!String
+    CuteChair: "Tatlış Sandalye" #!String
+    StumpSeat: "Kütük Sandalye" #!String
+    MetalChair: "Metal Sandalye" #!String
+    GreenStool: "Yeşil Tabure" #!String
+    BlueStool: "Mavi Tabure" #!String
+    KingChair: "Kral Sandalyesi" #!String
+    CrystalChair: "Kristal Sandalye" #!String
+    OakBench: "Meşe Oturak" #!String
+    WalnutBench: "Ceviz Oturak" #!String
+    BirchBench: "Huş Oturak" #!String
+    MahoganyBench: "Maun Oturak" #!String
+    ModernBench: "Modern Oturak" #!String
+    BlueArmchair: "Mavi Koltuk" #!String
+    RedArmchair: "Kırmızı Koltuk" #!String
+    GreenArmchair: "Yeşil Koltuk" #!String
+    YellowArmchair: "Sarı Koltuk" #!String
+    BrownArmchair: "Kahverengi Koltuk" #!String
+    BlueCouch: "Mavi Kanepe" #!String
+    RedCouch: "Kırmızı Kanepe" #!String
+    GreenCouch: "Yeşil Kanepe" #!String
+    YellowCouch: "Sarı Kanepe" #!String
+    BrownCouch: "Kahverengi Kanepe" #!String
+    DarkCouch: "Kara Kanepe" #!String
+    WizardCouch: "Büyücü Kanepesi" #!String
+    WoodsyCouch: "Odunsu Kanepe" #!String
+    OakDresser: "Meşe Şifonyer" #!String
+    WalnutDresser: "Ceviz Şifonyer" #!String
+    BirchDresser: "Huş Şifonyer" #!String
+    MahoganyDresser: "Maun Şifonyer" #!String
+    CoffeeTable: "Kahve Masası" #!String
+    StoneSlab: "Taş Levha" #!String
+    WinterDiningTable: "Kışlık Yemek Masası" #!String
+    FestiveDiningTable: "Şölenlik Yemek Masası" #!String
+    MahoganyDiningTable: "Maun Yemek Masası" #!String
+    ModernDiningTable: "Modern Yemek Masası" #!String
+    OakTable: "Meşe Masa" #!String
+    WalnutTable: "Ceviz Masa" #!String
+    BirchTable: "Huş Masa" #!String
+    MahoganyTable: "Maun Masa" #!String
+    SunTable: "Güneş Masası" #!String
+    MoonTable: "Ay Masası" #!String
+    ModernTable: "Modern Masa" #!String
+    PubTable: "Bar Masası" #!String
+    LuxuryTable: "Lüks Masa" #!String
+    DivinerTable: "Falcı Masası" #!String
+    NeolithicTable: "Cilalı Taş Masası" #!String
+    PuzzleTable: "Yapboz Masası" #!String
+    WinterTable: "Kış Masası" #!String
+    CandyTable: "Şeker Masası" #!String
+    LuauTable: "Luau Masası" #!String
+    DarkTable: "Kara Masa" #!String
+    OakTeaTable: "Meşe Sehpa" #!String
+    WalnutTeaTable: "Ceviz Sehpa" #!String
+    BirchTeaTable: "Huş Sehpa" #!String
+    MahoganyTeaTable: "Maun Sehpa" #!String
+    ModernTeaTable: "Modern Sehpa" #!String
+    FurnitureCatalogue: "Mobilya Kataloğu" #!String
+    ChinaCabinet: "Çin Dolabı" #!String
+    ArtistBookcase: "Sanatçı Kitaplığı" #!String
+    LuxuryBookcase: "Lüks Kitaplık" #!String
+    ModernBookcase: "Modern Kitaplık" #!String
+    DarkBookcase: "Kara Kitaplık" #!String
+    CeramicPillar: "Seramik Sütun" #!String
+    GoldPillar: "Altın Sütun" #!String
+    IndustrialPipe: "Soba Borusu" #!String
+    IndoorPalm: "Ev Palmiyesi" #!String
+    TotemPole: "Totem Direği" #!String
+    ManicuredPine: "Cilalı Çam" #!String
+    TopiaryTree: "Budama Ağacı" #!String
+    StandingGeode: "Dikili Jeot" #!String
+    ObsidianVase: "Obsidyen Vazo" #!String
+    SingingStone: "Şarkıcı Taş" #!String
+    SlothSkeletonL: "Tembel Hayvan İskeleti" #!String
+    SlothSkeletonM: "Tembel Hayvan İskeleti" #!String
+    SlothSkeletonR: "Tembel Hayvan İskeleti" #!String
+    Skeleton: "İskelet" #!String
+    ChickenStatue: "Tavuk Heykelciği" #!String
+    LeahsSculpture: "Leah'nın Heykeli" #!String
+    DriedSunflowers: "Kurumuş Ayçiçekleri" #!String
+    Catalogue: "Katalog" #!String
+    SamsBoombox: "Sam'in Seyyar Teybi" #!String
+    SmallPlant: "Ufak Bitki" #!String
+    TablePlant: "Masa Bitkisi" #!String
+    DecorativeBowl: "Dekoratif Kase" #!String
+    FutanBear: "Futan Ayısı" #!String
+    Globe: "Küre" #!String
+    ModelShip: "Gemi Maketi" #!String
+    SmallCrystal: "Ufak Kristal" #!String
+    DecorativeLantern: "Dekoratif Lamba" #!String
+    HousePlant: "Ev Bitkisi" #!String
+    OakEndTable: "Meşe Komodin" #!String
+    WalnutEndTable: "Ceviz Komodin" #!String
+    BirchEndTable: "Huş Komodin" #!String
+    MahoganyEndTable: "Maun Komodin" #!String
+    ModernEndTable: "Modern Komodin" #!String
+    GrandmotherEndTable: "Nine Komodini" #!String
+    WinterEndTable: "Kış Komodini" #!String
+    Calendar: "Takvim" #!String
+    TreeoftheWinterStar: "Kış Yıldızı Ağacı" #!String
+    CountryLamp: "Kırsal Lambası" #!String
+    BoxLamp: "Kutu Lamba" #!String
+    ModernLamp: "Modern Lamba" #!String
+    ClassicLamp: "Klasik Lamba" #!String
+    RedRug: "Kırmızı Kilim" #!String
+    PatchworkRug: "Yamalı Kilim" #!String
+    DarkRug: "Kara Kilim" #!String
+    BudgetTV: "Ucuz Televizyon" #!String
+    PlasmaTV: "Plazma Televizyon" #!String
+    TheMuzzamaroo: "'Muzzamaro'" #!String
+    ANightOnEcoHill: "'Tepede Bir Gece'" #!String
+    Pathways: "'Patikalar'" #!String
+    BurntOffering: "'Yanık Teklifler'" #!String
+    QueenoftheGemSea: "'Mücevher Denizi'nin Kraliçesi'" #!String
+    VanillaVilla: "'Beyaz Köşk'" #!String
+    PrimalMotion: "'İlkel Hareket'" #!String
+    JadeHills: "'Yeşim Taşı Tepeleri'" #!String
+    Sun44: "'44. Güneş'" #!String
+    WallflowerPal: "Dost Askı" #!String
+    Spires: "'Minareler'" #!String
+    Highway89: "'89. Otoyol'" #!String
+    CalicoFalls: "Patisko Şelalesi" #!String
+    NeedlepointFlower: "İğneucu Çiceği" #!String
+    SkullPoster: "Kafatası Posteri" #!String
+    Sun45: "'45. Güneş'" #!String
+    LittleTree: "'Ufak Ağaç'" #!String
+    Blueberries: "'Böğürtlenler'" #!String
+    BlueCity: "'Mavi Şehir'" #!String
+    LittlePhotos: "Ufak Fotoğraflar" #!String
+    DancingGrass: "'Dans Eden Çimen'" #!String
+    VGAParadise: "'V.G.A. Cenneti'" #!String
+    JColaLight: "J. Kola Işığı" #!String
+    Kitemaster95: "'1995 Uçurtma Şampiyonu'" #!String
+    BasicWindow: "Temel Pencere" #!String
+    SmallWindow: "Ufak Pencere" #!String
+    RedCottageRug: "Kırmızı Baraka Kilimi" #!String
+    GreenCottageRug: "Yeşil Baraka Kilimi" #!String
+    MonsterRug: "Canavar Kilimi" #!String
+    BoardedWindow: "Kapalı Pencere" #!String
+    MysticRug: "Mistik Kilim" #!String
+    LgFutanBear: "Koca Futan Ayısı" #!String
+    JunimoPlush: "Pelüş Junimo" #!String
+    BearStatue: "Ayı Heykelciği" #!String
+    Porthole: "Lombar" #!String
+    Anchor: "Çapa" #!String
+    WorldMap: "Dünya Haritası" #!String
+    OrnateWindow: "Süslü Pencere" #!String
+    FloorTV: "Yer Televizyonu" #!String
+    CarvedWindow: "Oyuk Pencere" #!String
+    NauticalRug: "Deniz Kilimi" #!String
+    BurlapRug: "Çuval Kilim" #!String
+    TreeColumn: "Ağaç Sütun" #!String
+    LLightString: "Büyük Işık Askısı" #!String
+    SPine: "Ufak Çam" #!String
+    BonsaiTree: "Bonzai Bitkisi" #!String
+    MetalWindow: "Metal Pencere" #!String
+    CandleLamp: "Mum Lamba" #!String
+    MinersCrest: "Madenci Arması" #!String
+    BambooMat: "Bambu Hasırı" #!String
+    OrnateLamp: "Süslü Lamba" #!String
+    WoodcutRug: "Gravür Kilim" #!String
+    HangingShield: "Asılı Kalkan" #!String
+    MonsterDanglers: "Canavar Sarkacı" #!String
+    CeilingFlags: "Tavan Bayrakları" #!String
+    RedEagle: "'Kırmızı Kartal'" #!String
+    PortraitOfAMermaid: "'Bir Denizkızı'nın Portresi'" #!String
+    SolarKingdom: "'Güneşin Krallığı'" #!String
+    Clouds: "'Bulutlar'" #!String
+    1000YearsFromNow: "'Bin Yıl Sonrası'" #!String
+    ThreeTrees: "'Üç Ağaç'" #!String
+    TheSerpent: "'Yılan'" #!String
+    TropicalFish173: "'173. Tropik Balık'" #!String
+    LandOfClay: "'Kilden Memleket'" #!String
+    BrickFireplace: "Tuğla Şömine" #!String
+    StoneFireplace: "Taş Şömine" #!String
+    IridiumFireplace: "İridyum Şömine" #!String
+    StoveFireplace: "Soba" #!String
+    MonsterFireplace: "Canavar Şöminesi" #!String
+    MyFirstPainting: "İlk Resmim" #!String
+    ElegantFireplace: "Zarif Şömine" #!String
+    PirateFlag: "Korsan Bayrağı" #!String
+    PirateRug: "Korsan Kilimi" #!String
+    BoneRug: "Kemik Kilimi" #!String
+    ButterflyHutch: "Kelebek Kafesi" #!String
+    StrawberryDecal: "Çilek Çıkartması" #!String
+    FruitSaladRug: "Meyve Salatası Kilimi" #!String
+    NightSkyDecal1: "Gece Gökyüzü Çıkartması 1" #!String
+    SnowyRug: "Kar Kilimi" #!String
+    NightSkyDecal2: "Gece Gökyüzü Çıkartması 2" #!String
+    NightSkyDecal3: "Gece Gökyüzü Çıkartması 3" #!String
+    TheBraveLittleSapling: "'Küçük Cesur Fidan'" #!String
+    Mysterium: "'Gizem'" #!String
+    JourneyOfThePrairieKingTheMotionPicture: "'Çayır Kralı'nın Yolculuğu: Sinema Filmi'" #!String
+    Wumbus: "'Vumbus'" #!String
+    TheZuzuCityExpress: "'Zuzu Şehri Ekspresi'" #!String
+    TheMiracleAtColdstarRanch: "'Soğukyıldız Çiftliği Mucizesi'" #!String
+    NaturalWondersExploringOurVibrantWorld: "'Doğa Harikaları: Canlı Dünyamızı Keşfediyoruz'" #!String
+    ItHowlsInTheRain: "'Yağmurda Uluyan'" #!String
+    IndoorHangingBasket: "Ev İçi Asılı Sepet" #!String
+    WinterTreeDecal: "Kış Ağacı Çıkartması" #!String
+    SmallJunimoPlush: "Küçük Junimo Pelüşü" #!String
+    FutanRabbit: "Futan Tavşanı" #!String
+    WumbusStatue: "Vumbus Heykeli" #!String
+    BoboStatue: "Bobo Heykeli" #!String
+    PurpleSerpentStatue: "Mor Yılan Heykeli" #!String
+    GreenSerpentStatue: "Yeşil Yılan Heykeli" #!String
+    LongPalm: "Uzun Palmiye" #!String
+    LongCactus: "Uzun Kaktüs" #!String
+    ExoticTree: "Egzotik Ağaç" #!String
+    DeluxeTree: "Şatafatlı Ağaç" #!String
+    WallPumpkin: "Duvar Kabağı" #!String
+    SmallWallPumpkin: "Küçük Duvar Kabağı" #!String
+    Bed: "Yatak" #!String
+    DoubleBed: "Çift Kişilik Yatak" #!String
+    StarryDoubleBed: "Yıldızlı Çift Kişilik Yatak" #!String
+    StrawberryDoubleBed: "Çilekli Çift Kişilik Yatak" #!String
+    PirateDoubleBed: "Korsanlı Çift Kişilik Yatak" #!String
+    ChildBed: "Çocuk Yatağı" #!String
+    TropicalBed: "Tropik Yatak" #!String
+    TropicalDoubleBed: "Tropik Çift Kişilik Yatak" #!String
+    DeluxeRedDoubleBed: "Kırmızı Çift Kişilik Yatak" #!String
+    ModernDoubleBed: "Çağdaş Çift Kişilik Yatak" #!String
+    LargeFishTank: "Büyük Akvaryum" #!String
+    DeluxeFishTank: "Devasa Akvaryum" #!String
+    SmallFishTank: "Küçük Akvaryum" #!String
+    OceanicRug: "Okyanus Kilimi" #!String
+    TropicalTV: "Tropik Televizyon" #!String
+    VolcanoPhoto: "'Yanardağ' Fotoğrafı" #!String
+    JungleTorch: "Orman Meşalesi" #!String
+    PalmWallOrnament: "Palmiye Süsü" #!String
+    TropicalChair: "Tropik Sandalye" #!String
+    AquaticSanctuary: "Su Sığınağı" #!String
+    ModernFishTank: "Modern Akvaryum" #!String
+    WildDoubleBed: "Yabani Çift Kişilik Yatak" #!String
+    FisherDoubleBed: "Dalyan Çift Kişilik Yatak" #!String
+    BirchDoubleBed: "Huş Çift Kişilik Yatak" #!String
+    ExoticDoubleBed: "Egzotik Çift Kişilik Yatak" #!String
+    Lifesaver: "Can Simidi" #!String
+    FoliagePrint: "Yaprak Çalışması" #!String
+    Boat: "'Tekne'" #!String
+    Vista: "'Manzara'" #!String
+    WallBasket: "Duvar Sepeti" #!String
+    DecorativeTrashCan: "Süs Çöp Kutusu" #!String
+    IridiumKrobus: "İridyum Krobus" #!String
+    GourmandStatue: "Gurme Heykelciği" #!String
+    PyramidDecal: "Piramit Çıkartması" #!String
+    PlainTorch: "Düz Meşale" #!String
+    StumpTorch: "Kütük Meşale" #!String
+    WallFlower: "Duvar Çiçeği" #!String
+    SWallFlower: "Küçük Duvar Çiçeği" #!String
+    CloudsBanner: "Bulut Afişi" #!String
+    ColorfulSet: "Renkli Resimler" #!String
+    PastelBanner: "Pastel Afiş" #!String
+    WinterBanner: "Kış Afişi" #!String
+    MoonlightJelliesBanner: "Ayışığı Denizanası Afişi" #!String
+    JungleDecal: "Orman Çıkartması" #!String
+    StarportDecal: "Uzay Çıkartması" #!String
+    DecorativePitchfork: "Süs Dirgen" #!String
+    WoodPanel: "Ahşap Panel" #!String
+    DecorativeAxe: "Süs Balta" #!String
+    LogPanel: "Kütük Paneli" #!String
+    CeilingLeaves: "Tavan Asması" #!String
+    CloudDecal: "Bulut Çıkartması" #!String
+    FloorDividerR: "Sol Zemin Bölücü" #!String
+    FloorDividerL: "Sağ Zemin Bölücü" #!String
+    LightGreenRug: "Açık Yeşil Halı" #!String
+    JadeHillsExtended: "'Büyük Yeşim Taşı Tepeleri'" #!String
+    LargeBrownCouch: "Büyük Kahverengi Kanepe" #!String
+    LargeGreenRug: "Büyük Yeşil Halı" #!String
+    IcyRug: "Buzul Halı" #!String
+    OldWorldRug: "Rustik Halı" #!String
+    LargeRedRug: "Büyük Kırmızı Halı" #!String
+    FrozenDreams: "'Donmuş Düşler'" #!String
+    IcyBanner: "Buz Afişi" #!String
+    WallPalm: "Palmiye Ağacı Çıkartması" #!String
+    WallCactus: "Kaktüs Çıkartması" #!String
+    LargeCottageRug: "Büyük Rustik Halı" #!String
+    Physics101: "'Fizik 101'" #!String
+    WallSconce: "Duvar Lambası" #!String
+    BlossomRug: "Çiçekli Halı" #!String
+    FunkyRug: "Garip Halı" #!String
+    ModernRug: "Modern Halı" #!String
+    SquirrelFigurine: "Sincap Heykelciği" #!String
+    Cactus: "Kaktüs" #!String
+    HangingFish: "Asılı Balık" #!String
+    RetroTV: "Retro Televizyon" #!String
+    ArtPhoto: "Sanat Fotoğrafı" #!String
+    ArtPhoto2: "Sanat Fotoğrafı 2" #!String
+    ShortBookcase: "Kısa Kitaplık" #!String
+    PierresSign: "Pierre'in Tabelası" #!String
+    SamsSkateboard: "Sam'in Kaykayı" #!String
+    ChickenDecal: "Tavuk Çıkartması" #!String
+    ExoticPalace: "Egzotik Saray" #!String
+    PeriodicTable: "Periyodik Cetvel" #!String
+    DustySkull: "Tozlu Kafatası" #!String
+    RadioDesk: "Radyo Masası" #!String
+    ModelPlanes: "Model Uçaklar" #!String
+    CalicoStatue: "Patisko Heykeli" #!String
+    SunDunes: "Güneş Kumulları" #!String
+    DesertTable: "Çöl Masası" #!String
+    DesertChair: "Çöl Sandalyesi" #!String
+    DesertFireplace: "Çöl Şöminesi" #!String
+    SandyRug: "Kumlu Halı" #!String
+    DesertRug: "Çöl Halısı" #!String
+    DesertEndTable: "Çöl Sehpası" #!String
+    DesertFlags: "Çöl Bayrakları" #!String
+    DecorativeBarrel: "Dekoratif Varil" #!String
+    MountedTrout: "Asılı Alabalık" #!String
+    SquidKid: "'Kalamar Çocuk'" #!String
+    CowDecal: "İnek Çıkartması" #!String
+    BluePinstripeBed: "Mavi Çizgili Yatak" #!String
+    JungleTank: "Orman Akvaryumu" #!String
+    CCFishTank: "Balık Akvaryumu" #!String
+    BluePinstripeDoubleBed: "Mavi Çizgili Çift Kişilik Yatak" #!String
+    JojaBed: "Joja Yatağı" #!String
+    JojaVault: "Joja Kasası" #!String
+    JojaChair: "Joja Sandalyesi" #!String
+    J: "J" #!String
+    JojaColaTeaTable: "Joja Kola Çay Sehpası" #!String
+    JojaTable: "Joja Masası" #!String
+    JPainting: "J. Tablosu" #!String
+    JLight: "J. Işığı" #!String
+    JojaCatalogue: "Joja Mobilya Kataloğu" #!String
+    JojaColaPainting: "Joja Kola Tablosu" #!String
+    JojaColaOrnament: "Joja Kola Süsü" #!String
+    JojaFireplace: "Joja Şöminesi" #!String
+    JojaColaCans: "Joja Kola Tenekeleri" #!String
+    CashRegister: "Yazar Kasa" #!String
+    PlasticPlant: "Plastik Bitki" #!String
+    PlasticSapling: "Plastik Fidan" #!String
+    GrayJojaCushion: "Gri Joja Yastığı" #!String
+    JojaCushion: "Joja Yastığı" #!String
+    StackedJojaBoxes: "Üst Üste Yığılmış Joja Kutuları" #!String
+    JojaCouch: "Joja Kanepe" #!String
+    MorrisPortrait: "Yılın Yöneticisi" #!String
+    JojaHQPainting: "Joja Genel Merkezi Tablosu" #!String
+    JojaCrate: "Joja Kutusu" #!String
+    JojaShoppingCart: "Joja Alışveriş Sepeti" #!String
+    LargeJojaCrate: "Büyük Joja Kutusu" #!String
+    JojaColaFridge: "Joja Kola Buzdolabı" #!String
+    JojaDresser: "Joja Şifonyeri" #!String
+    GrayJojaDresser: "Gri Joja Şifonyeri" #!String
+    LargeJojaRug: "Büyük Joja Halısı" #!String
+    SmallJojaRug: "Küçük Joja Halısı" #!String
+    SquareJojaRug: "Kare Joja Halısı" #!String
+    JojaRug: "Joja Halısı" #!String
+    JojaCoffeeTable: "Joja Kahve Sehpası" #!String
+    GrayJojaCoffeeTable: "Gri Joja Kahve Sehpası" #!String
+    JojaLamp: "Joja Lambası" #!String
+    GrayJojaBookcase: "Gri Joja Kitaplığı" #!String
+    JojaBookcase: "Joja Kitaplığı" #!String
+    JojaStool: "Joja Taburesi" #!String
+    JojaEndTable: "Joja Sehpası" #!String
+    GrayJojaEndTable: "Gri Joja Sehpası" #!String
+    DecorativeJojaDoor: "Dekoratif Joja Kapısı" #!String
+    WizardBed: "Büyücü Yatağı" #!String
+    LargeWizardBookcase: "Büyük Büyücü Kitaplığı" #!String
+    WizardBookcase: "Büyücü Kitaplığı" #!String
+    ShortWizardBookcase: "Kısa Büyücü Kitaplığı" #!String
+    SmallWizardBookcase: "Küçük Büyücü Kitaplığı" #!String
+    WizardStool: "Büyücü Taburesi" #!String
+    WizardFireplace: "Büyücü Şöminesi" #!String
+    WizardDresser: "Büyücü Şifonyeri" #!String
+    WizardStudy: "Büyücü Çalışma Alanı" #!String
+    WizardEndTable: "Büyücü Sehpası" #!String
+    WitchBroom: "Cadının Süpürgesi" #!String
+    Cauldron: "Kazan" #!String
+    CurlyTree: "Kıvırcık Ağaç" #!String
+    LeafyPlant: "Bataklık Bitkisi" #!String
+    WizardChair: "Büyücü Sandalyesi" #!String
+    WizardTable: "Büyücü Masası" #!String
+    WizardCushion: "Büyücü Yastığı" #!String
+    DarkWizardCushion: "Karanlık Büyücü Yastığı" #!String
+    WizardTeaTable: "Büyücü Çay Sehpası" #!String
+    SmallElixirShelf: "Küçük İksir Rafı" #!String
+    ElixirShelf: "İksir Rafı" #!String
+    SmallStackedElixirShelf: "Küçük Üst Üste Yığılmış İksir Rafı" #!String
+    StackedElixirShelf: "Üst Üste Yığılmış İksir Rafı" #!String
+    ElixirBundle: "İksir Yığını" #!String
+    CoupleElixirs: "İki İksir" #!String
+    ElixirTable: "İksir Masası" #!String
+    LongElixirTable: "Uzun İksir Masası" #!String
+    WizardLamp: "Büyücü Lambası" #!String
+    Runes: "Rünler" #!String
+    WizardTower: "'Büyücü'nün Kulesi'" #!String
+    PottedRedMushroom: "Saksıda Kırmızı Mantar" #!String
+    WizardCatalogue: "Büyücü Kataloğu" #!String
+    VoidSwirls: "'Boşluk Girdapları'" #!String
+    WizardBookshelf: "Büyücü Rafı" #!String
+    Glyph: "Glif" #!String
+    StoneFlooring: "Taş Döşeme" #!String
+    RuneRug: "Rün Halısı" #!String
+    SwirlRug: "Girdap Halısı" #!String
+    StarryMoonRug: "Yıldızlı Ay Halısı" #!String
+    CrystalBall: "Kristal Küre" #!String
+    AmethystCrystalBall: "Ametist Kristal Küre" #!String
+    TopazCrystalBall: "Topaz Kristal Küre" #!String
+    AquamarineCrystalBall: "Gök Zümrütü Kristal Küre" #!String
+    EmeraldCrystalBall: "Zümrüt Kristal Küre" #!String
+    RubyCrystalBall: "Yakut Kristal Küre" #!String
+    SmallBookStack: "Küçük Kitap Yığını" #!String
+    BookStack: "Kitap Yığını" #!String
+    LargeBookStack: "Büyük Kitap Yığını" #!String
+    PurpleBook: "Mor Kitap" #!String
+    BlueBook: "Mavi Kitap" #!String
+    YellowBook: "Sarı Kitap" #!String
+    RedBook: "Kırmızı Kitap" #!String
+    GreenBook: "Yeşil Kitap" #!String
+    BrownBook: "Kahverengi Kitap" #!String
+    FallenPurpleBook: "Yere Düşmüş Mor Kitap" #!String
+    FallenBlueBook: "Yere Düşmüş Mavi Kitap" #!String
+    FallenYellowBook: "Yere Düşmüş Sarı Kitap" #!String
+    FallenRedBook: "Yere Düşmüş Kırmızı Kitap" #!String
+    FallenGreenBook: "Yere Düşmüş Yeşil Kitap" #!String
+    FallenBrownBook: "Yere Düşmüş Kahverengi Kitap" #!String
+    SmallBookPile: "Küçük Yığılmış Kitaplar" #!String
+    BookPile: "Yığılmış Kitaplar" #!String
+    LargeBookPile: "Büyük Yığılmış Kitaplar" #!String
+    DecorativeWizardDoor: "Dekoratif Büyücü Kapısı" #!String
+    JunimoBed: "Junimo Yatağı" #!String
+    JunimoHut: "Junimo Barakası" #!String
+    LargeJunimoHut: "Büyük Junimo Barakası" #!String
+    SmallJunimoHut: "Küçük Junimo Barakası" #!String
+    JunimoFireplace: "Junimo Şöminesi" #!String
+    JunimoBookcase: "Junimo Kitaplığı" #!String
+    JunimoPot: "Junimo Saksısı" #!String
+    JunimoBag: "Junimo Çantası" #!String
+    JunimoBundle: "Junimo Yığını" #!String
+    JunimoStool: "Junimo Taburesi" #!String
+    JunimoTable: "Junimo Masası" #!String
+    JunimoChair: "Junimo Sandalyesi" #!String
+    SmallJunimoPot: "Küçük Junimo Saksısı" #!String
+    JunimoFlower: "Junimo Çiçeği" #!String
+    JunimoEndTable: "Junimo Sehpası" #!String
+    JunimoCatalogue: "Junimo Kataloğu" #!String
+    JunimoTeaTable: "Junimo Çay Sehpası" #!String
+    JunimoDresser: "Junimo Şifonyeri" #!String
+    JunimoLamp: "Junimo Lambası" #!String
+    JunimoPlant: "Junimo Bitkisi" #!String
+    JunimoWallPlaque: "Junimo Duvar Plaketi" #!String
+    JunimoPlaque: "Junimo Plaket" #!String
+    JunimoCushion: "Junimo Yastık" #!String
+    DarkJunimoCushion: "Koyu Junimo Yastık" #!String
+    JunimoTree: "Junimo Ağacı" #!String
+    JunimoCouch: "Junimo Kanepesi" #!String
+    GreenSleepingJunimo: "Yeşil Uyuyan Junimo" #!String
+    BlueSleepingJunimo: "Mavi Uyuyan Junimo" #!String
+    RedSleepingJunimo: "Kırmızı Uyuyan Junimo" #!String
+    PurpleSleepingJunimo: "Mor Uyuyan Junimo" #!String
+    YellowSleepingJunimo: "Sarı Uyuyan Junimo" #!String
+    OrangeSleepingJunimo: "Turuncu Uyuyan Junimo" #!String
+    GraySleepingJunimo: "Gri Uyuyan Junimo" #!String
+    SquareJunimoRug: "Kare Junimo Halı" #!String
+    JunimoRug: "Junimo Halısı" #!String
+    JunimoMat: "Junimo Paspası" #!String
+    CircularJunimoRug: "Yuvarlak Junimo Halısı" #!String
+    SmallJunimoMat: "Küçük Junimo Paspası" #!String
+    CommunityCenter: "'Halkevi'" #!String
+    LittleBuddies: "'Küçük Arkadaşlar'" #!String
+    Stardrop: "'Yıldızkaydı'" #!String
+    Hut: "'Baraka'" #!String
+    AbigailPortrait: "Abigail'in Portresi" #!String
+    EmilyPortrait: "Emily'nin Portresi" #!String
+    HaleyPortrait: "Haley'nin Portresi" #!String
+    LeahPortrait: "Leah'nın Portresi" #!String
+    MaruPortrait: "Maru'nun Portresi" #!String
+    PennyPortrait: "Penny'nin Portresi" #!String
+    AlexPortrait: "Alex'in Portresi" #!String
+    ElliottPortrait: "Elliott'ın Portresi" #!String
+    HarveyPortrait: "Harvey'nin Portresi" #!String
+    SamPortrait: "Sam'in Portresi" #!String
+    SebastianPortrait: "Sebastian'ın Portresi" #!String
+    ShanePortrait: "Shane'in Portresi" #!String
+    KrobusPortrait: "Krobus'un Portresi" #!String
+    JunimoStar: "Junimo Yıldızı" #!String
+    BulletinBoard: "Duyuru Panosu" #!String
+    BrochureCabinet: "Broşür Dolabı" #!String
+    LeafyWallPanel: "Yapraklı Duvar Paneli" #!String
+    LightLeafyWallPanel: "Açık Yapraklı Duvar Paneli" #!String
+    DarkLeafyWallPanel: "Koyu Yapraklı Duvar Paneli" #!String
+    DecorativeJunimoDoor: "Dekoratif Junimo Kapısı" #!String
+    RetroBed: "Retro Yatak" #!String
+    RetroDresser: "Retro Şifonyer" #!String
+    RetroBookcase: "Retro Kitaplık" #!String
+    RetroFireplace: "Retro Şömine" #!String
+    RetroCouch: "Retro Kanepe" #!String
+    RetroCushion: "Retro Yastık" #!String
+    DarkRetroCushion: "Koyu Retro Yastık" #!String
+    RetroStool: "Retro Tabure" #!String
+    RetroFlower: "Retro Çiçek" #!String
+    RetroChair: "Retro Sandalye" #!String
+    RetroTable: "Retro Masa" #!String
+    RetroPlant: "Retro Bitki" #!String
+    RetroEndTable: "Retro Sehpa" #!String
+    RetroTeaTable: "Retro Çay Masası" #!String
+    RetroCatalogue: "Retro Katalog" #!String
+    RetroCabinet: "Retro Dolap" #!String
+    RetroRadio: "Retro Radyo" #!String
+    RetroBanner: "Retro Pankart" #!String
+    Groovy: "'Şık'" #!String
+    RetroLamp: "Retro Lamba" #!String
+    RetroRug: "Retro Halı" #!String
+    RetroSquareRug: "Retro Kare Halı" #!String
+    RetroMat: "Retro Paspas" #!String
+    LargeRetroRug: "Büyük Retro Halı" #!String
+    Abstract: "'Soyut'" #!String
+    Starship: "'Yıldız Gemisi'" #!String
+    Binary: "'İkili'" #!String
+    Checkers: "'Damalı'" #!String
+    UFO: "'UFO'" #!String
+    DecorativeRetroDoor: "Dekoratif Retro Kapı" #!String
+    DecorativeDoor1: "Dekoratif Kapı" #!String
+    DecorativeDoor2: "Dekoratif Kapı" #!String
+    DecorativeDoor3: "Dekoratif Kapı" #!String
+    DecorativeDoor4: "Dekoratif Kapı" #!String
+    DecorativeDoor5: "Dekoratif Kapı" #!String
+    DecorativeDoor6: "Dekoratif Kapı" #!String
+    WallClock: "Duvar Saati" #!String
+    DecorativeHatch: "Dekoratif Kapak" #!String
+    DecorativeOakLadder: "Dekoratif Meşe Merdiven" #!String
+    DecorativeWalnutLadder: "Dekoratif Ceviz Merdiven" #!String
+    UprightPiano: "Dik Piyano" #!String
+    CoatStand: "Palto Askılığı" #!String
+    BirdHouse: "Kuş Evi" #!String
+    DecorativeShovel: "Dekoratif Kürek" #!String
+    WallSword: "Duvar Kılıcı" #!String
+    DecorativeSword: "Dekoratif Kılıç" #!String
+    WineTable: "Şarap Sehpası" #!String
+    SpiritsTable: "İçki Sehpası" #!String
+    TallHousePlant: "Uzun Ev Bitkisi" #!String
+    CornPlant: "Mısır Bitkisi" #!String
+    BlueCushion: "Mavi Yastık" #!String
+    YellowCushion: "Sarı Yastık" #!String
+    GreenCushion: "Yeşil Yastık" #!String
+    RedCushion: "Kırmızı Yastık" #!String
+    BrownCushion: "Kahverengi Yastık" #!String
+    BlackCushion: "Siyah Yastık" #!String
+    FoodPetBowl: "Evcil Hayvan Mama Kabı" #!String
+    WaterPetBowl: "Evcil Hayvan Su Kabı" #!String
+    OakLampEndTable: "Lambalı Meşe Komodin" #!String
+    WalnutLampEndTable: "Lambalı Ceviz Komodin" #!String
+    BirchLampEndTable: "Lambalı Huş Komodin" #!String
+    MahoganyLampEndTable: "Lambalı Maun Komodin" #!String
+    TriangleWindow: "Üçgen Pencere" #!String
+    Clothesline: "Çamaşır İpi" #!String
+    TrashCatalogue: "Çöp Kataloğu" #!String
+    ElegantVase: "Şık Vazo" #!String
+    CatTree: "Kedi Ağacı" #!String
+    DarkCatTree: "Koyu Kedi Ağacı" #!String
+    LightSwitch: "Işık Düğmesi" #!String
+    Outlet: "Priz" #!String
+    Doghouse: "Köpek Kulübesi" #!String
+    DarkDoghouse: "Koyu Köpek Kulübesi" #!String
+    BountifulDiningTable: "Dolu Yemek Masası" #!String
+    PlasticLawnEndTable: "Plastik Bahçe Komodini" #!String
+    PlasticLawnChair: "Plastik Bahçe Sandalyesi" #!String
+    BrokenTelevision: "Bozuk Televizyon" #!String
+    SixPackRings: "Altılı Paket Halkaları" #!String
+    GreenBottle: "Yeşil Şişe" #!String
+    PlasticBag: "Plastik Poşet" #!String
+    AluminumCan: "Alüminyum Teneke" #!String
+    BlueBottle: "Mavi Şişe" #!String
+    BuriedTire: "Gömülü Lastik" #!String
+    Tire: "Lastik" #!String
+    Wrapper: "Ambalaj" #!String
+    SpilledBeverage: "Dökülmüş İçecek" #!String
+    MessyShirt: "Dağınık Gömlek" #!String
+    MessyShorts: "Dağınık Şort" #!String
+    MoldyCouch: "Küflü Kanepe" #!String
+    FancyHousePlant: "Şık Ev Bitkisi" #!String
+    PigPainting: "Domuz Resmi" #!String
+    MidnightBed: "Gece Yarısı Kumsallı Yatak" #!String
+    MidnightDoubleBed: "Gece Yarısı Kumsallı Çift Kişilik Yatak" #!String
+

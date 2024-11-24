@@ -1,0 +1,104 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    name: "Virágtánc" #!String
+    conditions: "Forest/900 1400" #!String
+    set-up: "event1/22 22/farmer 76 17 1/changeToTemporaryMap Forest-FlowerFestival/viewport -1000 -1000/loadActors Set-Up/advancedMove Vincent true -6 0 0 -1 6 0 0 1/advancedMove Jas true 1 0 0 1 -6 0 0 -1 5 0/advancedMove Pam true 2 25000 0 -3 4 0 4 25000 -4 0 0 3/advancedMove Haley true 0 1 2 3000 2 0 0 -1 -2 0 3 500 4 500 1 500 2 500 2 0 1 500 2 500 3 500 4 500 0 2 0 -2 -2 0/advancedMove Caroline true 7 0 0 1 1 18000 0 -1 -7 0 3 18000/advancedMove Willy true 2 25000 1 500 7 0 1 500 2 12500 3 500 -7 0 3 500 2 1000/playerControl flowerFestival/viewport player clamp true unfreeze/globalFadeToClear" #!String
+    mainEvent: "pause 500/playMusic none/pause 500/globalFade/viewport -1000 -1000/loadActors MainEvent/warpFarmers 14 30 0 3 22 1 3 26 1 7 31 0 12 31 0 18 31 0 25 29 3 right 24 25 3/warp Girls 9 24/warp Guys 9 27/showFrame Girls 40/showFrame Guys 44/viewport 14 25 clamp true/pause 2000/playMusic FlowerDance/pause 600/animate Girls false true 600 43 41 43 42/animate Guys false true 600 44 45/pause 9600/animate Girls false true 600 46 47/animate Guys false true 300 46 47/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/pause 300/positionOffset Guys 0 -2/animate Girls false true 600 43 41 43 42/animate Guys false true 600 44 45/pause 7600/stopAnimation Girls/stopAnimation Guys/pause 3000/globalFade/viewport -1000 -1000/message \"Ez jó móka volt! Ideje hazamenni...\"/waitForOtherPlayers festivalEnd/end" #!String
+    Abigail: "Nagyon utálok mindenki előtt táncolni... Annyira kínos.#$e#Anyu kényszerít rá.$u" #!String
+    Robin: "Ahh... Olyan édes a levegő ettől a sok virágtól.$h" #!String
+    Demetrius: "Ezek a tavaszi táncok ősi termékenységi rituálékhoz köthetőek.#$e#Hé... Gazda létedre neked tudnod kellene ezekről." #!String
+    Maru: "Szeretek táncolni, de ez egy kissé erőltetett. Bár az öregeknek bejön." #!String
+    Sebastian: "Uhh..." #!String
+    Linus: "Ó, üdv néked. Kedves tőled, hogy beszélsz velem.#$b#Hamarosan véget ér a tavasz... milyen kár." #!String
+    Pierre: "Micsoda! Hogy kerülsz ide?$u#$b#Ne nyúlj semmihez." #!String
+    Caroline: "Bárcsak Pierre az idejét most a családjával töltené...$s" #!String
+    Alex: "Én csak élvezem a kilátást... hehe." #!String
+    George: "Virágok? Alig látom őket.#$e#Túlságosan világos van idekint!" #!String
+    Evelyn: "Egy hete dolgozom a virágok elrendezésén. Tetszenek?" #!String
+    Lewis: "Ha táncolni akarsz a többi fiatallal, akkor keresned kell magadnak egy párt." #!String
+    Clint: "Vajon Emily táncolna velem?" #!String
+    Penny: "*nyel*... Feszült vagyok.$s" #!String
+    Pam: "Na ez ám az élet... Ugye, kölyök? Édes bor, csobogó patak, meleg levegő... A bort említettem már?" #!String
+    Emily: "Tyűűű... Tele vagyok. Hé, próbálkoztál már a vörös zselével?" #!String
+    Haley: "Gyakorlom a táncmozdulataimat... Tökéletesnek kell lennie.#$e#Az elmúlt 5 évben én voltam a virágkirálynő, és még nem kívánok lemondani a trónról!" #!String
+    Jodi: "Te is fogsz ma táncolni, @?$h" #!String
+    Kent: "Ez a nyílt terep... nyugtalanná tesz.#$e#*suttogva* Boldog gondolatok, Kent. Boldog gondolatok." #!String
+    Marlon: "Marnie ma nagyon jól néz ki..." #!String
+    Sam: "Tudod mit? Be kell vallanom... Szeretem a virágokat!" #!String
+    Leah: "Szia @. Örülök, hogy itt látlak.$h" #!String
+    Shane: "Mmm... kiváló szósz. *szürcsöl*#$e#Ah, ez a zöld cucc fűszeres! *nyammog*#$b#*ropp* ...aú.$s" #!String
+    Marnie: "*sóhaj*... Szerelem van a levegőben... És én még mindig szingli vagyok.$s" #!String
+    Elliott: "A legjobb göncömet viselem a tánchoz... Effajta dolgok nem történnek oly gyakran!" #!String
+    Gus: "Kezd beütni a békák szezonja." #!String
+    Dwarf: "Azt mondod, hogy odafent esik? *meghökken*#$e#Eső... Számunkra szinte rejtély. Egyesek közülünk egész életüket úgy élik le, hogy sose tapasztalják meg." #!String
+    Wizard: "Nem kellene idefent lenned." #!String
+    Harvey: "Próbálok bátorságot szerezni ahhoz, hogy valakit táncolni hívjak.$11" #!String
+    Sandy: "Úgy hallottam, hogy odahaza esik. Ezért jöttél ide?$h#$e#Nekem valójában kissé hiányzik az eső...$s" #!String
+    Jas: "Egy napon én leszek majd a virágkirálynő!" #!String
+    Vincent: "Ez nem igazságos... Én miért nem lehetek virágkirálynő?" #!String
+    Willy: "Elhozhattam volna a horgászbotomat." #!String
+    Leo: "Itt nagyon szépek a virágok, de nem olyan színesek, mint az otthonomban!$h#$e#Azon gondolkozom, hogy vajon egyszer én is odamehetek és táncolhatok majd...$u" #!String
+    set-up_y2: "event1/22 22/farmer 76 17 1/changeToTemporaryMap Forest-FlowerFestival2/viewport -1000 -1000/loadActors Set-Up/advancedMove Jas true 3 620 4 620 1 620 2 620/advancedMove Vincent true 0 4 2 0 0 -4 -2 0/advancedMove Haley true 0 1 2 3000 2 0 0 -1 -2 0 3 500 4 500 1 500 2 500 2 0 1 500 2 500 3 500 4 500 0 2 0 -2 -2 0/advancedMove Alex true 4 12500 1 2000/advancedMove Gus true 4 8000 -2 0 3 400 4 6000 2 0 4 1000/advancedMove Elliott true 4 14500 1 2350/advancedMove Emily true 2 2000 1 1200 1 0 3 1750 4 650 3 600 2 500 1 675 4 1000 0 -1 4 1250 3 600 2 600 1 600 4 600 3 1000 -1 0 3 1000 2 800 1 800 4 800 3 800 2 2000 0 1 2 2000 1 500 2 500 3 500 4 500 1 500 2 500/positionOffset Sebastian -6 -20/positionOffset Leah -24 10/positionOffset Clint -12 24/positionOffset Caroline -12 12/positionOffset Jodi 16 6/positionOffset Robin -6 12/positionOffset Kent? -12 24/positionOffset Marlon -16 0/positionOffset Penny -20 -9/positionOffset Sam 6 12/positionOffset Shane 12 -12/playerControl flowerFestival/viewport player clamp true unfreeze/globalFadeToClear" #!String
+    Abigail_spouse_y2: "Ha nem akarsz, akkor nem kell táncolnunk!$1" #!String
+    Penny_spouse_y2: "Eltudom képzelni kettőnket, hogy valamikor egy ehhez hasonló helyre költözünk.$h" #!String
+    Leah_spouse_y2: "Egyszer eljöhetnénk ebbe az erdőbe túrázni! Biztos gombák is lesznek..." #!String
+    Haley_spouse_y2: "Ma van a nagy nap! Mi leszünk az egész tánc középpontja!$1" #!String
+    Maru_spouse_y2: "Korábban nem gyakoroltam túl sokat, de igyekszem kettőnkért mindent beleadni.$0" #!String
+    Emily_spouse_y2: "Hé, már azon gondolkodtam, hogy mire készülsz!$0" #!String
+    Harvey_spouse_y2: "A legjobb nyakkendőmet vettem fel erre az alkalomra.$4" #!String
+    Alex_spouse_y2: "Hé, egész jó érzésem van a mai nappal kapcsolatban. Jók leszünk a ceremónián... csak kövess engem.$0" #!String
+    Sam_spouse_y2: "Tyűha, ma nagyon jól nézel ki!$0" #!String
+    Sebastian_spouse_y2: "Te vagy az egyetlen oka annak, hogy idáig jöttem...$1" #!String
+    Elliott_spouse_y2: "Szabad egy táncra?$4" #!String
+    Shane_spouse_y2: "*böff* Lehet túl sokat ettem a táncoláshoz... bocsánat.$0" #!String
+    Abigail_y2: "Ma az idősebbeknek is táncolniuk kellene. Biztos imádnák!" #!String
+    Robin_y2: "Ez csak nem virágillat? Vagy inkább Caroline parfümje?$0" #!String
+    Demetrius_y2: "Az ilyen összejövetelek azonosságot adnak a közösségünknek.#$b#Vagy ahogy a feleségem mondja... 'ettől lesz élettel teli a város'!" #!String
+    Maru_y2: "Elég idegfeszítő tud lenni, ha valaki táncolni hív téged.$0" #!String
+    Sebastian_y2: "Nem saját akaratomból jöttem ide.$0" #!String
+    Linus_y2: "Sikeres díszszeder szüreted volt?$0#$b#Én eleget szedtem ahhoz, hogy édes és savanykás zselét készítsek! Ma mindenkinek hoztam egy kicsit kóstolóként.$1" #!String
+    Pierre_y2: "Hé, nem szabadna itt lenned!$3#$e#Nos, ha már itt vagy... nem bánnád, ha vigyáznál egy kicsit a bódéra? Meg akarom kóstolni Linus édes és savanykás zseléjét.#$e#Csak vicceltem, nem bírnám elviselni azt, hogy távol kerüljek a kasszától...$2" #!String
+    Caroline_y2: "Megkérném a férjemet, hogy táncoljon velem, de ő nem igazán tud.$0" #!String
+    Alex_y2: "A tánc titka az, hogy magabiztosnak kell lenned.$1" #!String
+    George_y2: "Virágok? Inkább poszméh mágnesek. Hmph. Amúgy is kevésbé érzem a szagokat.$0" #!String
+    Evelyn_y2: "Fiatalabb koromban sokszor meglátogattam ezt a helyet. Nem változott sokat az elmúlt évek alatt.$0" #!String
+    Lewis_y2: "Szép délutánt, @. Ennél tökéletesebb nem is lehetne az időjárás a mai fesztiválhoz.$0#$b#Beszélj velem, ha készen állsz az ünneplésre.$0" #!String
+    Clint_y2: "*sóhaj* Mindenkinek van már párja... és én ismét magamra maradtam...$2#$e#Áh, nos... a bánatomat majd abba az édes és savanykás zselébe fogom fojtani." #!String
+    Penny_y2: "Vincent felkért, hogy táncoljak vele. Hát nem cuki?$0" #!String
+    Pam_y2: "A szélben lebegő vörös zselé úgy néz ki, mintha táncolna!$1#$e#Heh... Lehet csak a bor beszél belőlem.$0" #!String
+    Emily_y2: "Ó, hé! Idén a nővéremmel versengek a virágkirálynő címért.$0#$b#A koreográfiámon dolgoztam!$1" #!String
+    Haley_y2: "Egy, két, há'... egy, két, há'... Ó, szia. Kissé elfoglalt vagyok.$0" #!String
+    Jodi_y2: "Van egy pár különleges fülbevalóm, amit évente egyszer, ezen eseményre viselek.$0#$e#Ilyen kicsi nárciszok... látod?$h" #!String
+    Kent_y2: "Elgondolkoztál már azon... hogy miért találjuk a virágokat gyönyörűnek?#$e#Ha Jodinak és nekem valaha lányunk születne, akkor talán egy virág után neveznénk el őt.$h" #!String
+    Marlon_y2: "Hmm. Mintha láttam volna valamit a vízben úszni.$0" #!String
+    Sam_y2: "*szipog* Jobban élvezném ezt az összejövetelt, ha nem lennék allergiás. Azt hiszem csak ki kell bírnom!$0" #!String
+    Leah_y2: "Olyan távol vagyunk a várostól, hogy érzem a kapcsolatomat a természettel.$0" #!String
+    Shane_y2: "Egy tiszta inget se találtam, szóval ez megteszi.$0" #!String
+    Marnie_y2: "Ez a nagy nyílt tér tökéletes legelő lehet az állatok számára, nem gondolod?$0#$e#Psszt... Szerintem Lewis ma felkér majd táncolni engem!$1" #!String
+    Elliott_y2: "Igazán élénkítő élmény tud lenni egy bohókás virágos helyen táncolni.$1" #!String
+    Gus_y2: "Próbáltad már a pitypang salátát? Itt készítem, frissiben!$0" #!String
+    Dwarf_y2: "Azt mondod, hogy odafent esik?#$e#Eső... Számunkra szinte rejtély. Egyesek közülünk egész életüket úgy élik le, hogy sose tapasztalják meg." #!String
+    Wizard_y2: "Hmm? Te meg hogyan másztál fel ide?$0" #!String
+    Harvey_y2: "Ha kis időt töltesz az élet nehézségein gondolkodva, az más nézőpontba helyezi a dolgokat.$0#$b#Hirtelen nem is tűnik olyan rossznak az egész város előtt ilyen béna ruházatban táncolni!$h" #!String
+    Sandy_y2: "Úgy hallottam, hogy odahaza esik. Ezért jöttél ide?$h#$e#Valójában nekem egy kicsit hiányzik az eső...$s" #!String
+    Jas_y2: "*kacag* Jól csinálom?$1" #!String
+    Vincent_y2: "Ha van virágkirálynő... akkor biztos van virágkirály is!$0" #!String
+    Willy_y2: "Aye, ezek a vizek biztos tele vannak nagy halakkal. Kár, hogy nem hoztam el a horgászbotomat!$0" #!String
+    Leo_y2: "Egy társra van szükséged ahhoz, hogy részt vehess a táncban? Egy madár is megteszi?$0" #!String
+

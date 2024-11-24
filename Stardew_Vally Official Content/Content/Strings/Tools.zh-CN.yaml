@@ -1,0 +1,73 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Axe_Name: "斧头" #!String
+    Axe_Description: "用于砍柴。" #!String
+    Axe_Copper_Name: "铜斧头" #!String
+    Axe_Steel_Name: "钢斧头" #!String
+    Axe_Gold_Name: "金斧头" #!String
+    Axe_Iridium_Name: "铱斧头" #!String
+    FishingRod_Description: "用于在水中捕鱼。" #!String
+    FishingRod_Training_Name: "训练用鱼竿" #!String
+    FishingRod_Training_Description: "它比其他鱼竿容易使用，但只能钓到基础鱼类。" #!String
+    FishingRod_Bamboo_Name: "竹鱼竿" #!String
+    FishingRod_Fiberglass_Name: "玻璃纤维棒" #!String
+    FishingRod_Iridium_Name: "铱金鱼竿" #!String
+    FishingRod_AdvancedIridium_Name: "高级铱金鱼竿" #!String
+    FishingRod_AdvancedIridium_Description: "可以在水中钓鱼。最多同时安装两个浮漂。" #!String
+    Hoe_Name: "锄头" #!String
+    Hoe_Description: "用于犁地和耕地。" #!String
+    Hoe_Copper_Name: "铜锄头" #!String
+    Hoe_Steel_Name: "钢锄头" #!String
+    Hoe_Gold_Name: "金锄头" #!String
+    Hoe_Iridium_Name: "铱锄头" #!String
+    Lantern_Name: "灯笼" #!String
+    Lantern_Description: "点亮暗处。" #!String
+    MilkPail_Name: "挤奶桶" #!String
+    MilkPail_Description: "给牲畜挤奶。" #!String
+    Pan_Description: "用来从溪流中收集矿石。" #!String
+    Pan_Copper_Name: "铜淘盘" #!String
+    Pan_Steel_Name: "钢淘盘" #!String
+    Pan_Steel_Description: "可以收集河流中的矿石，产出的矿石比铜淘盘更多、品质更好。有小概率立即引出另一个淘金地点。" #!String
+    Pan_Gold_Name: "金淘盘" #!String
+    Pan_Gold_Description: "可以收集河流中的矿石，产出的矿石比钢淘盘更多、品质更好。有小概率立即引出另一个淘金地点。" #!String
+    Pan_Iridium_Name: "铱淘盘" #!String
+    Pan_Iridium_Description: "可以收集河流中的矿石，产出的矿石最多、品质最好。有一定概率立即引出另一个淘金地点。" #!String
+    Pickaxe_Name: "十字镐" #!String
+    Pickaxe_Description: "用来敲碎石头。" #!String
+    Pickaxe_Copper_Name: "铜十字镐" #!String
+    Pickaxe_Steel_Name: "钢十字镐" #!String
+    Pickaxe_Gold_Name: "金十字镐" #!String
+    Pickaxe_Iridium_Name: "铱十字镐" #!String
+    ReturnScepter_Name: "回程魔杖" #!String
+    ReturnScepter_Description: "金光闪闪的手柄中蕴含着巨大的原始魔力。手持这个魔杖指向天空就可以随时回家。" #!String
+    Shears_Name: "剪刀" #!String
+    Shears_Description: "用这个来从羊身上剪毛" #!String
+    TrashCan_Name: "垃圾桶" #!String
+    TrashCan_Description: "丢弃物品时，你能回收物品价值的 {0}%。" #!String
+    TrashCan_Copper_Name: "铜垃圾桶" #!String
+    TrashCan_Steel_Name: "钢垃圾桶" #!String
+    TrashCan_Gold_Name: "金垃圾桶" #!String
+    TrashCan_Iridium_Name: "铱垃圾桶" #!String
+    WateringCan_Name: "喷壶" #!String
+    WateringCan_Description: "用于灌溉作物。可以在任意水源重新装满。" #!String
+    WateringCan_Copper_Name: "铜喷壶" #!String
+    WateringCan_Steel_Name: "钢喷壶" #!String
+    WateringCan_Gold_Name: "金喷壶" #!String
+    WateringCan_Iridium_Name: "铱喷壶" #!String
+

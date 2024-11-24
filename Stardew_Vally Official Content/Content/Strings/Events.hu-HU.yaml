@@ -1,0 +1,46 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    BirthMessage_Adoption: "Éjszaka az örökbefogadó ügynökség leadta az új {0}gyermekedet." #!String
+    BirthMessage_PlayerMother: "Az éjszaka alatt megszülted a {0}gyermekedet." #!String
+    BirthMessage_SpouseMother: "Az éjszaka alatt {1} megszülte a {0}gyermekét." #!String
+    BirthMessage_SpouseNaming_Male: "{0} elnevezi a kisfiút." #!String
+    BirthMessage_SpouseNaming_Female: "{0} elnevezi a kislányt." #!String
+    BabyNamingTitle_Male: "Mi legyen a fiú neve?" #!String
+    BabyNamingTitle_Female: "Mi legyen a lány neve?" #!String
+    HaveBabyQuestion: "Legyen egy gyerekünk, {0}?" #!String
+    HaveBabyQuestion_Adoption: "Adoptáljunk egy gyereket, {0}?" #!String
+    HaveBabyAnswer_Yes: "Igen" #!String
+    HaveBabyAnswer_No: "Még ne..." #!String
+    HavePlayerBabyQuestion: "Akarsz közös gyereket tőle: {0}?" #!String
+    HavePlayerBabyQuestion_Adoption: "Akarsz gyereket örökbe fogadni vele: {0}?" #!String
+    AnimalBirth: "Az éjszaka alatt született egy {1}, akinek {0} az anyja." #!String
+    AnimalNamingTitle: "Mi legyen az új {0} neve?" #!String
+    SoundInTheNight_UFO: "Egy furcsa hangot lehetett hallani az éjjel..." #!String
+    SoundInTheNight_Meteorite: "Egy robbanást lehetett hallani az éjjel..." #!String
+    SoundInTheNight_Earthquake: "Földrengés volt az éjjel." #!String
+    BeachNightMarket_NowOpen: "Megnyílt az Éjszakai piac." #!String
+    Maru_comet5: "Boldog vagyok, hogy ebben az élénk világban élhetek veled!" #!String
+    Maru_comet4: "Annyira üres, annyira magányos..." #!String
+    Maru_comet3: "Egy múló pillanatra tűnik fel végtelen útján." #!String
+    Maru_comet2: "A kozmosz egy ritka csodája..." #!String
+    Maru_comet1: "Gyönyörű, nemde?" #!String
+    ElliottBook_mystery: "A Kék torony" #!String
+    ElliottBook_romance: "Kamélia állomás" #!String
+    ElliottBook_default: "A Yazzo bolygó felemelkedése és bukása" #!String
+

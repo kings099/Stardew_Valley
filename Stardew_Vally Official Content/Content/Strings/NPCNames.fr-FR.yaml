@@ -1,0 +1,68 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Abigail: "Abigail" #!String
+    Alex: "Alex" #!String
+    Bear: "Ours" #!String
+    Birdie: "Birdie" #!String
+    Bouncer: "Videur" #!String
+    Caroline: "Caroline" #!String
+    Clint: "Clint" #!String
+    Demetrius: "Demetrius" #!String
+    Dwarf: "Nain" #!String
+    Elliott: "Elliott" #!String
+    Emily: "Emily" #!String
+    Evelyn: "Evelyn" #!String
+    George: "George" #!String
+    Gil: "Gil" #!String
+    Governor: "Gouverneur" #!String
+    Grandpa: "Grand-père" #!String
+    Gunther: "Gunther" #!String
+    Gus: "Gus" #!String
+    Haley: "Haley" #!String
+    Harvey: "Harvey" #!String
+    Henchman: "Mercenaire" #!String
+    Jas: "Jas" #!String
+    Jodi: "Jodi" #!String
+    Kent: "Kent" #!String
+    Krobus: "Krobus" #!String
+    Leah: "Leah" #!String
+    Leo: "Léo" #!String
+    Lewis: "Lewis" #!String
+    Linus: "Linus" #!String
+    Marlon: "Marlon" #!String
+    Marnie: "Marnie" #!String
+    Maru: "Maru" #!String
+    MisterQi: "Monsieur Qi" #!String
+    Morris: "Morris" #!String
+    OldMariner: "Vieux marinier" #!String
+    Pam: "Pam" #!String
+    Penny: "Penny" #!String
+    Pierre: "Pierre" #!String
+    ProfessorSnail: "Professeur Snail" #!String
+    Robin: "Robine" #!String
+    Sam: "Sam" #!String
+    Sandy: "Sandy" #!String
+    Sebastian: "Sebastian" #!String
+    Shane: "Shane" #!String
+    Vincent: "Vincent" #!String
+    Welwick: "Welwick" #!String
+    Willy: "Willy" #!String
+    Wizard: "Sorcier" #!String
+    Fizz: "Fizz" #!String
+

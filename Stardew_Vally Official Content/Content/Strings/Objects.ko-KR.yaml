@@ -1,0 +1,1548 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    AncientFruitPot: "뿌리가 깊이 날 식물입니다... 여기에서는 행복하지 않을 것입니다." #!String
+    CactusSeedsOutside: "실내 혹은 진저 섬에만 심을 수 있습니다." #!String
+    CaskNoCellar: "지하실에서만 사용 가능합니다." #!String
+    DarkTalisman: "어둠의 탈리스만" #!String
+    MagicInk: "마법 잉크" #!String
+    MagnifyingGlass: "돋보기" #!String
+    BearPaw: "곰의 지식" #!String
+    SpringOnionBugs: "파 마스터리" #!String
+    SpecialCharm: "특별한 부적" #!String
+    CatalogueDescription: "벽지와 바닥재를 무한히 제공받을 수 있습니다... 그것도 전부 집에서 말이죠!" #!String
+    FurnitureCatalogueDescription: "거의 모든 가구를 무한히 제공받을 수 있습니다... 그것도 전부 집에서 말이죠!" #!String
+    DarkTalismanDescription: "{0}을 찾았습니다! 벌레 즙으로 뒤덮여있습니다..." #!String
+    MagicInkDescription: "마법사가 잃어버린 {0}를 찾았습니다! 돌려주러 가야겠습니다." #!String
+    MagnifyingGlassDescription: "{0}를 받았습니다! 이제 '비밀 쪽지'를 발견할 수 있습니다. 비밀 쪽지에는 귀하고 유용한 정보가 적혀 있으며, 수집품창에서 확인할 수 있습니다." #!String
+    SpecialCharmDescription: "{0}을 받았습니다! 행운의 기운이 주변을 감싸는 것이 느껴집니다 (행운이 영구적으로 증가했습니다)!" #!String
+    ParsnipSeedPackage_SomeoneElse: "이 소포는 다른 사람의 것입니다." #!String
+    Machine_NeedsInputCount: "{0}조각 필요." #!String
+    CraftingRecipe_IronBar: "철 변환" #!String
+    CraftingRecipe_GoldBar: "금 변환" #!String
+    CraftingRecipe_SpringSeeds: "야생 씨앗 (봄)" #!String
+    CraftingRecipe_SummerSeeds: "야생 씨앗 (여름)" #!String
+    CraftingRecipe_FallSeeds: "야생 씨앗 (가을)" #!String
+    CraftingRecipe_WinterSeeds: "야생 씨앗 (겨울)" #!String
+    Acorn_Name: "도토리" #!String
+    Acorn_Description: "심으면 참나무가 자랍니다." #!String
+    AdvancedTVRemote_Name: "고급 TV 리모콘" #!String
+    AdvancedTVRemote_Description: "일반 리모콘보다 버튼이 많습니다. TV를 많이 보는 사람에게 적격입니다!" #!String
+    Aerinite_Name: "에어리나이트" #!String
+    Aerinite_Description: "수정이 신기할 정도로 가볍습니다." #!String
+    AgedRoe_Name: "숙성된 어란" #!String
+    AgedRoe_Description: "소금과 숙성시켜 풍미가 깊어진 생선 알." #!String
+    AgedRoe_Flavored_Name: "숙성된 {0} 어란" #!String
+    Alamite_Name: "알라마이트" #!String
+    Alamite_Description: "특유의 형광성 때문에 돌 수집가들이 선호하는 돌입니다." #!String
+    Albacore_Name: "날개다랑어" #!String
+    Albacore_Description: "시원한 물과 따뜻한 물이 만나는 온도 \"변두리\"를 선호합니다." #!String
+    AlgaeSoup_Name: "녹조류 스프" #!String
+    AlgaeSoup_Description: "좀 끈적끈적합니다." #!String
+    Amaranth_Name: "아마란스" #!String
+    Amaranth_Description: "고대 문명이 재배하던 보라색 곡물." #!String
+    AmaranthSeeds_Name: "아마란스 씨앗" #!String
+    AmaranthSeeds_Description: "가을 작물. 성장하려면 7일 소요됩니다. 낫으로 수확할 수 있습니다." #!String
+    Amethyst_Name: "자수정" #!String
+    Amethyst_Description: "보랏빛이 나는 석영." #!String
+    AmethystRing_Name: "자수정 반지" #!String
+    AmethystRing_Description: "적을 10% 더 멀리 밀쳐냅니다." #!String
+    AmethystStone_Name: "자수정석" #!String
+    AmethystStone_Description: "깨뜨려서 자수정을 얻을 수 있습니다." #!String
+    AmphibianFossil_Name: "양서류 화석" #!String
+    AmphibianFossil_Description: "상대적으로 짧은 뒷다리로 보아 어떤 종류의 원시 두꺼비였던 듯합니다." #!String
+    Anchor_Name: "닻" #!String
+    Anchor_Description: "고대 해적의 물건이었을 수도 있습니다." #!String
+    Anchovy_Name: "멸치" #!String
+    Anchovy_Description: "바다에서 발견되는 작은 은색 생선." #!String
+    AncientDoll_Name: "고대 인형" #!String
+    AncientDoll_Description: "때가 낀 고대 인형. 장난감이나 장식, 혹은 어떤 의식에서 사용되었던 것 같습니다." #!String
+    AncientDrum_Name: "고대 북" #!String
+    AncientDrum_Description: "나무와 동물 가죽으로 제작된 북. 낮게 울리는 소리를 냅니다." #!String
+    AncientFruit_Name: "고대 과일" #!String
+    AncientFruit_Description: "아주 오랜 시간 동안 아무 활동이 없었습니다." #!String
+    AncientSeed_Name: "고대 씨앗" #!String
+    AncientSeed_Description: "어떤 고대 식물의 오래되고 마른 씨앗입니다. 아무리 봐도 죽은 지 오래된 것 같습니다..." #!String
+    AncientSeeds_Name: "고대 씨앗" #!String
+    AncientSeeds_Description: "아직 자랄 수 있을까요?" #!String
+    AncientSword_Name: "고대 검" #!String
+    AncientSword_Description: "고대 검의 잔해입니다. 날은 대부분 녹슬었지만, 손잡이 부분은 섬세하게 제작되었습니다." #!String
+    Angler_Name: "아귀" #!String
+    Angler_Description: "생물발광을 이용해서 먹이를 유인합니다." #!String
+    Apple_Name: "사과" #!String
+    Apple_Description: "주스 혹은 과일주를 담그는 데 쓰는 아삭한 과일." #!String
+    AppleSapling_Name: "사과나무 묘목" #!String
+    AppleSapling_Description: "28일 후 성목이 됩니다. 가을에 열매가 맺힙니다. 주변 8칸이 비어있어야 자랍니다." #!String
+    Apricot_Name: "살구" #!String
+    Apricot_Description: "돌처럼 단단한 씨가 있는 부드럽고 작은 열매." #!String
+    ApricotSapling_Name: "살구나무 묘목" #!String
+    ApricotSapling_Description: "28일 후 성목이 됩니다. 봄에 열매가 맺힙니다. 주변 8칸이 비어있어야 자랍니다." #!String
+    Aquamarine_Name: "아쿠아마린" #!String
+    Aquamarine_Description: "아른아른 빛나는 청록색 보석." #!String
+    AquamarineRing_Name: "아쿠아마린 반지" #!String
+    AquamarineRing_Description: "치명타 확률을 10% 증가시켜줍니다." #!String
+    AquamarineStone_Name: "아쿠아마린석" #!String
+    AquamarineStone_Description: "깨뜨려서 아쿠아마린을 얻을 수 있습니다." #!String
+    ArcticShard_Name: "북극 파편" #!String
+    ArcticShard_Description: "초자연적인 푸른빛이 나는 파편." #!String
+    Arrowhead_Name: "화살촉" #!String
+    Arrowhead_Description: "사냥에 사용되는 투박하고 뾰족한 조각입니다." #!String
+    Artichoke_Name: "아티초크" #!String
+    Artichoke_Description: "엉겅퀴 풀의 싹. 가시 돋친 잎은 부드럽고 포만감을 주는 속을 숨기고 있습니다." #!String
+    ArtichokeDip_Name: "아티초크 소스" #!String
+    ArtichokeDip_Description: "시원하고 신선합니다." #!String
+    ArtichokeSeeds_Name: "아티초크 씨앗" #!String
+    ArtichokeSeeds_Description: "가을 작물. 성장하려면 8일 소요됩니다." #!String
+    ArtifactSpot_Name: "유물 위치" #!String
+    ArtifactSpot_Description: "어... 이게 어떻게 소지품창에 있는 거죠? Ape가 실수했나 보군요." #!String
+    ArtifactTrove_Name: "유물 상자" #!String
+    ArtifactTrove_Description: "대장장이가 열어줄 수 있습니다. 이런 상자에는 주로 고대 유물이 담겨있습니다." #!String
+    AutumnsBounty_Name: "가을의 수확" #!String
+    AutumnsBounty_Description: "한 계절의 풍미." #!String
+    Bait_Name: "미끼" #!String
+    Bait_Description: "물고기가 더 빨리 물게끔 합니다. 낚싯대에 연결해서 사용해야 합니다." #!String
+    BakedFish_Name: "생선구이" #!String
+    BakedFish_Description: "허브를 깔고 구운 생선." #!String
+    Banana_Name: "바나나" #!String
+    Banana_Description: "달콤하고 녹말이 많은 열대 지방 과일." #!String
+    BananaPudding_Name: "바나나 푸딩" #!String
+    BananaPudding_Description: "환상적인 열대의 맛을 담은 크림 디저트." #!String
+    BananaSapling_Name: "바나나 나무 묘목" #!String
+    BananaSapling_Description: "28일 후 바나나 성목이 됩니다. 여름에만 과일이 자라지만, 진저 섬에 심으면 사시사철 과일이 납니다." #!String
+    BarbedHook_Name: "가시 돋친 낚시바늘" #!String
+    BarbedHook_Description: "낚은 것을 더 꽉 잡아서, \"낚시 막대\"가 잡힌 것에 달라붙게 합니다. 약하고 느린 물고기를 상대로 제일 효과가 큽니다." #!String
+    Baryte_Name: "중정석" #!String
+    Baryte_Description: "최고급 표본은 사막 장미를 닮았습니다." #!String
+    Basalt_Name: "현무암" #!String
+    Basalt_Description: "엄청나게 뜨거운 마그마 근처에서 형성됩니다." #!String
+    BasicFertilizer_Name: "기본 비료" #!String
+    BasicFertilizer_Description: "토양의 질을 향상시켜 더 높은 등급의 작물이 자랄 확률을 높입니다. 호미질한 땅에 섞어 쓰십시오." #!String
+    BasicRetainingSoil_Name: "기본 보습 토양" #!String
+    BasicRetainingSoil_Description: "수분을 잃지 않을 확률이 있는 토양. 호미질한 땅에 섞어 쓰십시오." #!String
+    BatteryPack_Name: "배터리 팩" #!String
+    BatteryPack_Description: "귀중한 에너지가 충전되어 있습니다." #!String
+    BatWing_Name: "박쥐 날개" #!String
+    BatWing_Description: "놀라울 만큼 연약합니다." #!String
+    BeanHotpot_Name: "콩 스튜" #!String
+    BeanHotpot_Description: "확실히 건강한 음식입니다." #!String
+    BeanStarter_Name: "콩 종자" #!String
+    BeanStarter_Description: "봄 작물. 성장하려면 10일 소요되지만, 수확한 후에도 계속 작물이 생산됩니다. 격자 구조물에 감겨 자랍니다." #!String
+    Beer_Name: "맥주" #!String
+    Beer_Description: "음주는 절제해서." #!String
+    Beet_Name: "사탕무" #!String
+    Beet_Description: "달콤하고 대지의 향이 나는 뿌리채소. 보너스로, 잎사귀로 만든 샐러드도 맛있습니다." #!String
+    BeetSeeds_Name: "사탕무 씨앗" #!String
+    BeetSeeds_Description: "가을 작물. 성장하려면 6일 소요됩니다." #!String
+    BerryBasket_Name: "베리 바구니" #!String
+    BerryBasket_Description: "섬유가 베리 과즙으로 얼룩져있다." #!String
+    Bixite_Name: "빅사이트" #!String
+    Bixite_Description: "정육면체 구조 때문에 인기 있는 어두운 금속 재질의 광물." #!String
+    Blackberry_Name: "블랙베리" #!String
+    Blackberry_Description: "초가을 별미." #!String
+    BlackberryCobbler_Name: "블랙베리 코블러" #!String
+    BlackberryCobbler_Description: "이거만 한 게 없습니다." #!String
+    Blobfish_Name: "블롭피쉬" #!String
+    Blobfish_Description: "이 이상한 생명체는 해저에 둥둥 떠다니며 먹을 수 있는 것은 전부 먹어치웁니다." #!String
+    Blueberry_Name: "블루베리" #!String
+    Blueberry_Description: "건강에 이로운 영향이 많다고 알려진 베리. 푸른 껍질 부분이 영양분 농도가 제일 높습니다." #!String
+    BlueberrySeeds_Name: "블루베리 씨앗" #!String
+    BlueberrySeeds_Description: "여름 작물. 성장하려면 13일 소요되며, 수확한 후에도 계속 작물이 생산됩니다." #!String
+    BlueberryTart_Name: "블루베리 타르트" #!String
+    BlueberryTart_Description: "은은하고 상큼합니다." #!String
+    BlueDiscus_Name: "블루 디스커스" #!String
+    BlueDiscus_Description: "색이 밝은 열대어. 수족관에서 인기가 많습니다." #!String
+    BlueGrassStarter_Name: "번식용 파란 잔디" #!String
+    BlueGrassStarter_Description: "농장에 심어서 새로운 파란 잔디밭을 시작할 수 있습니다." #!String
+    BlueJazz_Name: "푸른 재즈" #!String
+    BlueJazz_Description: "최대한 많은 수의 나비를 받아들이기 위해 꽃이 구형으로 자랍니다." #!String
+    BlueSlimeEgg_Name: "푸른 슬라임 알" #!String
+    BlueSlimeEgg_Description: "슬라임 부화기에서 부화시킬 수 있습니다." #!String
+    BokChoy_Name: "청경채" #!String
+    BokChoy_Description: "녹색 이파리와 섬유질이 풍부한 줄기는 몸에 좋고 맛있습니다." #!String
+    BokChoySeeds_Name: "청경채 씨앗" #!String
+    BokChoySeeds_Description: "가을 작물. 성장하려면 4일 소요됩니다." #!String
+    Bomb_Name: "폭탄" #!String
+    Bomb_Description: "폭발을 일으킵니다. 조심해요!" #!String
+    BoneFlute_Name: "뼈피리" #!String
+    BoneFlute_Description: "동물의 뼈를 깎아 만든 선사 시대의 관악기. 스산한 소리를 냅니다." #!String
+    BoneFragment_Name: "뼛조각" #!String
+    BoneFragment_Description: "작은 뼈 조각." #!String
+    Book_AnimalCatalogue_Name: "동물 카탈로그" #!String
+    Book_AnimalCatalogue_Description: "마니가 자리에 없어도 마니의 상점을 이용할 수 있습니다." #!String
+    Book_Artifact_Name: "고대의 보물: 감정 가이드" #!String
+    Book_Artifact_Description: "유물을 판매할 때 더 좋은 가격을 제시할 수 있습니다." #!String
+    Book_Bombs_Name: "드워프 안전 지침서" #!String
+    Book_Bombs_Description: "폭탄으로부터 25% 적은 피해를 받습니다." #!String
+    Book_Crabbing_Name: "게잡이의 기술" #!String
+    Book_Crabbing_Description: "게잡이 통발에서 25% 확률로 아이템을 2배 획득합니다." #!String
+    Book_Defense_Name: "날렵하렴 잭, 두꺼우렴 잭" #!String
+    Book_Defense_Description: "방어 +1." #!String
+    Book_Diamonds_Name: "다이아몬드 사냥꾼" #!String
+    Book_Diamonds_Description: "직접 돌을 캐면 작은 확률로 다이아몬드를 발견할 수 있습니다." #!String
+    Book_Friendship_Name: "우정 101" #!String
+    Book_Friendship_Description: "사람들과 조금 더 빠르게 친해질 수 있습니다." #!String
+    Book_Marlon_Name: "동굴 지도 제작법" #!String
+    Book_Marlon_Description: "말론의 아이템 회수 서비스를 50% 할인된 가격으로 이용할 수 있습니다." #!String
+    Book_Mystery_Name: "미스테리의 책" #!String
+    Book_Mystery_Description: "미스테리 박스를 발견할 확률이 약간 증가합니다." #!String
+    Book_PriceCatalogue_Name: "가격 카탈로그" #!String
+    Book_PriceCatalogue_Description: "소유 중인 아이템의 가격을 볼 수 있습니다." #!String
+    Book_QueenOfSauce_Name: "소스의 여왕 요리서" #!String
+    Book_QueenOfSauce_Description: "아직 배우지 못한, 소스의 여왕 레시피를 배웁니다." #!String
+    Book_Riding_Name: "말의 모든 것" #!String
+    Book_Riding_Description: "말을 탔을 때 속도가 약간 증가합니다." #!String
+    Book_Roe_Name: "바다의 보석" #!String
+    Book_Roe_Description: "낚시 보물 상자에서 확률적으로 생선 알을 획득할 수 있습니다." #!String
+    Book_Speed_Name: "바람의 길 파트 1" #!String
+    Book_Speed_Description: "조금 더 빨리 달릴 수 있습니다." #!String
+    Book_Speed2_Name: "바람의 길 파트 2" #!String
+    Book_Speed2_Description: "조금 더 빨리 달릴 수 있습니다." #!String
+    Book_Trash_Name: "골목 뷔페" #!String
+    Book_Trash_Description: "쓰레기통에서 더 높은 확률로 아이템을 발견할 수 있습니다." #!String
+    Book_Void_Name: "몬스터 개요서" #!String
+    Book_Void_Description: "몬스터에게 작은 확률로 2배의 전리품을 획득합니다." #!String
+    Book_WildSeeds_Name: "너구리 일기" #!String
+    Book_WildSeeds_Description: "잡초에서 씨앗 모음을 획득할 확률이 증가합니다." #!String
+    Book_Woodcutting_Name: "우디의 비밀" #!String
+    Book_Woodcutting_Description: "나무를 자르면 5% 확률로 2배의 목재를 획득합니다." #!String
+    Bouquet_Name: "부케" #!String
+    Bouquet_Description: "연애의 관심을 표하는 선물." #!String
+    Bread_Name: "빵" #!String
+    Bread_Description: "껍질이 딱딱한 바게트" #!String
+    Bream_Name: "도미" #!String
+    Bream_Description: "흔한 강 어류. 야행성입니다." #!String
+    BrickFloor_Name: "벽돌 바닥" #!String
+    BrickFloor_Description: "바닥을 장식하거나 길을 만들 수 있습니다." #!String
+    Broccoli_Name: "브로콜리" #!String
+    Broccoli_Description: "브로콜리 식물의 꽃봉오리. 작은 봉오리 덕분에 식감이 독특합니다." #!String
+    BroccoliSeeds_Name: "브로콜리 씨앗" #!String
+    BroccoliSeeds_Description: "가을 작물. 성장하려면 8일 소요되며, 수확한 후에도 계속 작물이 생산됩니다." #!String
+    BrokenCD_Name: "깨진 CD" #!String
+    BrokenCD_Description: "조자넷 2.0 체험판 CD. 수십억 개는 만들었을 것입니다." #!String
+    BrokenGlasses_Name: "깨진 안경" #!String
+    BrokenGlasses_Description: "누군가 안경을 잃어버렸나 봅니다. 게다가 망가져있습니다." #!String
+    BrownEgg_Name: "달걀" #!String
+    BrownEgg_Description: "평범한 갈색 달걀." #!String
+    Bruschetta_Name: "브루쉐타" #!String
+    Bruschetta_Description: "바삭한 흰 빵 위에 올린 익힌 토마토." #!String
+    BugMeat_Name: "벌레 고기" #!String
+    BugMeat_Description: "즙 많은 벌레 살코기 한 뭉치." #!String
+    BugSteak_Name: "벌레 스테이크" #!String
+    BugSteak_Description: "배고픈 동굴 탐사꾼을 위한 최후의 비책." #!String
+    Bullhead_Name: "눈동자개" #!String
+    Bullhead_Description: "메기의 먼 친척으로 호수 바닥에서 다양한 음식을 먹습니다." #!String
+    BurglarsRing_Name: "도둑의 반지" #!String
+    BurglarsRing_Description: "몬스터가 아이템을 떨어트릴 확률이 높아집니다." #!String
+    ButterflyPowder_Name: "나비 가루" #!String
+    ButterflyPowder_Description: "반려동물에게 뿌려서 농장에서 추방합니다. 이 과정은 돌이킬 수 없습니다." #!String
+    CactusFruit_Name: "선인장 열매" #!String
+    CactusFruit_Description: "부채선인장의 달콤한 열매." #!String
+    CactusSeeds_Name: "선인장 씨앗" #!String
+    CactusSeeds_Description: "실내에서만 키울 수 있습니다. 성장하려면 12일 소요되고, 3일마다 과일을 생산합니다." #!String
+    Calcite_Name: "방해석" #!String
+    Calcite_Description: "이 노란 수정은 빛나는 단괴들로 얼룩덜룩합니다." #!String
+    CalicoEgg_Name: "칼리코 달걀" #!String
+    CalicoEgg_Description: "사막 축제에서 발견할 수 있는 독특한 달걀." #!String
+    CalicoEggStone_Name: "칼리코 달걀석" #!String
+    CalicoEggStone_Description: "깨서 칼리코 달걀을 획득할 수 있습니다." #!String
+    CampingStove_Name: "캠핑용 스토브" #!String
+    CampingStove_Description: "스토브를 사용해 어디서든 요리할 수 있으며, 사용 시 소모되지 않습니다." #!String
+    Carp_Name: "잉어" #!String
+    Carp_Description: "연못의 흔한 생선." #!String
+    CarpSurprise_Name: "깜짝잉어" #!String
+    CarpSurprise_Description: "기름지고 별다른 맛은 없습니다." #!String
+    Carrot_Name: "당근" #!String
+    Carrot_Description: "빠르게 자라는 간식으로 적합한 알록달록한 덩이줄기." #!String
+    CarrotSeeds_Name: "당근 씨앗" #!String
+    CarrotSeeds_Description: "봄 작물. 성장하려면 3일 소요됩니다." #!String
+    Catfish_Name: "메기" #!String
+    Catfish_Description: "강에서 드물게 발견되는 고기" #!String
+    Cauliflower_Name: "콜리플라워" #!String
+    Cauliflower_Description: "값이 비싸지만, 천천히 자랍니다. 창백한 색과는 다르게, 꽃 부분에 영양소가 풍부합니다." #!String
+    CauliflowerSeeds_Name: "콜리플라워 씨앗" #!String
+    CauliflowerSeeds_Description: "봄 작물. 심으면 12일 후 큰 콜리플라워를 생산합니다." #!String
+    CaveCarrot_Name: "동굴 당근" #!String
+    CaveCarrot_Description: "동굴에서 발견되는 전분이 많은 간식. 광부들이 일을 더 오래할 수 있게 해줍니다." #!String
+    CaveJelly_Name: "동굴 젤리" #!String
+    CaveJelly_Description: "지하 호수에서 발견되는 희귀한 젤리." #!String
+    Caviar_Name: "캐비아" #!String
+    Caviar_Description: "소금에 절인 철갑상어의 알. 호화로운 진미로 알려져 있습니다!" #!String
+    Celestine_Name: "천청석" #!String
+    Celestine_Description: "몇몇 초기 생물체의 뼈가 이 광석과 같은 재질로 만들어졌습니다." #!String
+    ChallengeBait_Name: "도전 미끼" #!String
+    ChallengeBait_Description: "\"완벽하게\" 물고기를 낚으면 물고기를 3배로 받습니다. 다만, 물고기가 \"낚시 막대\"를 벗어날 때마다 획득량이 줄어듭니다." #!String
+    Chanterelle_Name: "살구버섯" #!String
+    Chanterelle_Description: "과일 향에 후추 맛이 약간 나는 맛있는 버섯." #!String
+    Cheese_Name: "치즈" #!String
+    Cheese_Description: "기본적인 치즈." #!String
+    CheeseCauliflower_Name: "치즈 콜리플라워" #!String
+    CheeseCauliflower_Description: "냄새가 너무 좋습니다!" #!String
+    Cherry_Name: "체리" #!String
+    Cherry_Description: "인기가 좋고, 다른 과일보다 일찍 익습니다." #!String
+    CherryBomb_Name: "체리 폭탄" #!String
+    CherryBomb_Description: "작은 폭발을 일으킵니다. 물러서세요!" #!String
+    CherrySapling_Name: "체리나무 묘목" #!String
+    CherrySapling_Description: "28일 후 성목이 됩니다. 봄에 열매가 맺힙니다. 주변 8칸이 비어있어야 자랍니다." #!String
+    ChewingStick_Name: "씹는 막대" #!String
+    ChewingStick_Description: "고대 사람들은 이를 닦기 위해 이런 막대기를 씹었습니다." #!String
+    ChickenStatue_Name: "닭 동상" #!String
+    ChickenStatue_Description: "청동 받침대 위에 있는 닭 동상입니다. 이 지역의 고대인들은 닭을 무척 좋아했던 것 같습니다." #!String
+    ChippedAmphora_Name: "깨진 암포라" #!String
+    ChippedAmphora_Description: "고대의 도자기. 건조하거나 젖은 물품을 운반하는 데에 사용됩니다." #!String
+    ChocolateCake_Name: "초콜릿 케이크" #!String
+    ChocolateCake_Description: "진하고 촉촉하고, 두꺼운 퍼지 아이싱이 올라가 있습니다." #!String
+    Chowder_Name: "차우더" #!String
+    Chowder_Description: "바다에서 추운 밤을 보낸 뒤 몸을 데우는 데 안성맞춤입니다." #!String
+    Chub_Name: "피라미" #!String
+    Chub_Description: "식욕이 왕성한 것으로 유명한 흔한 민물고기." #!String
+    CinderShard_Name: "잉걸불 파편" #!String
+    CinderShard_Description: "돌에서 따뜻한 기운이 느껴집니다." #!String
+    CinderShardStone_Name: "잉걸불 파편석" #!String
+    CinderShardStone_Description: "깨뜨려서 잉걸불 파편을 얻을 수 있습니다." #!String
+    Clam_Name: "조개" #!String
+    Clam_Description: "한때 누군가 여기 살았습니다." #!String
+    Clay_Name: "점토" #!String
+    Clay_Description: "건축이나 물품을 제작할 때 사용됩니다." #!String
+    ClayStone_Name: "점토석" #!String
+    ClayStone_Description: "깨뜨려서 점토를 얻을 수 있습니다." #!String
+    Cloth_Name: "옷감" #!String
+    Cloth_Description: "질 좋은 털 모직 한 필." #!String
+    Coal_Name: "석탄" #!String
+    Coal_Description: "제작과 제련 활동에 사용되는 불이 잘 붙는 돌." #!String
+    CobblestonePath_Name: "조약돌 길" #!String
+    CobblestonePath_Description: "바닥을 장식하거나 길을 만들 수 있습니다." #!String
+    Cockle_Name: "새조개" #!String
+    Cockle_Description: "바다에 서식하는 흔한 조개." #!String
+    Coconut_Name: "코코넛" #!String
+    Coconut_Description: "코코넛 야자수의 씨앗. 식용으로 다양하게 사용됩니다." #!String
+    Coffee_Name: "커피" #!String
+    Coffee_Description: "정말 맛있는 향이 납니다. 분명 기운을 북돋아줄 것입니다." #!String
+    CoffeeBean_Name: "커피콩" #!String
+    CoffeeBean_Description: "봄이나 여름에 심어서 커피나무를 기를 수 있습니다. 커피콩 다섯 개를 술통에 넣어 커피를 만들 수도 있습니다." #!String
+    Coleslaw_Name: "코울슬로" #!String
+    Coleslaw_Description: "가볍고, 신선하고, 아주 건강한 음식." #!String
+    CombinedRing_Name: "혼합 반지" #!String
+    CombinedRing_Description: "..." #!String
+    CommonMushroom_Name: "흔한 버섯" #!String
+    CommonMushroom_Description: "살짝 견과 향이 나고 질감이 좋습니다." #!String
+    CompleteBreakfast_Name: "완벽한 아침" #!String
+    CompleteBreakfast_Description: "세상 모든 일을 해낼 수 있을 것 같은 기분입니다!" #!String
+    ConcernedApeMask_Name: "???" #!String
+    ConcernedApeMask_Description: "???" #!String
+    Cookie_Name: "쿠키" #!String
+    Cookie_Description: "쫀득쫀득합니다." #!String
+    CookoutKit_Name: "야외 요리 키트" #!String
+    CookoutKit_Description: "요리용 모닥불을 피워서, 야외에서도 요리를 할 수 있습니다!" #!String
+    CopperBar_Name: "구리 주괴" #!String
+    CopperBar_Description: "순수한 구리 주괴 하나." #!String
+    CopperOre_Name: "구리광석" #!String
+    CopperOre_Description: "주괴로 제련할 수 있는 흔한 광석." #!String
+    CopperStone_Name: "구리석" #!String
+    CopperStone_Description: "이 돌 안에 구리광석이 들어있습니다." #!String
+    Coral_Name: "산호" #!String
+    Coral_Description: "작은 생물체들이 무리 지어 형성한 아름다운 구조물." #!String
+    CorkBobber_Name: "코르크 찌" #!String
+    CorkBobber_Description: "\"낚시 막대\"의 크기를 약간 늘려줍니다." #!String
+    Corn_Name: "옥수수" #!String
+    Corn_Description: "제일 인기가 많은 곡물 중 하나. 달콤하고 신선한 옥수수는 여름철에 특히 인기가 많습니다." #!String
+    CornSeeds_Name: "옥수수 씨앗" #!String
+    CornSeeds_Description: "여름 혹은 가을 작물. 성장하려면 14일 소요되며, 수확한 후에도 계속 작물이 생산됩니다." #!String
+    Crab_Name: "게" #!String
+    Crab_Description: "두 개의 강한 집게발이 있는 바다에 서식하는 갑각류." #!String
+    CrabCakes_Name: "게살 케이크" #!String
+    CrabCakes_Description: "게살, 빵가루, 계란으로 반죽을 한 뒤 황금빛 갈색이 되도록 구워낸 요리." #!String
+    CrabPot_Name: "게잡이 통발" #!String
+    CrabPot_Description: "물속에 설치한 뒤, 미끼를 장착하고 다음날 무언가 잡혔는지 확인하세요. 개울, 강, 바다에서 사용할 수 있습니다." #!String
+    CrabshellRing_Name: "게딱지 반지" #!String
+    CrabshellRing_Description: "반지의 윗부분은 마법을 걸은 게딱지로 만들었습니다." #!String
+    Cranberries_Name: "크랜베리" #!String
+    Cranberries_Description: "이 시큼한 빨간 베리는 전통적인 겨울철 음식입니다." #!String
+    CranberryCandy_Name: "크랜베리 캔디" #!String
+    CranberryCandy_Description: "과일 특유의 쓴맛을 가릴 만큼 달콤합니다." #!String
+    CranberrySauce_Name: "크랜베리 소스" #!String
+    CranberrySauce_Description: "축제 기간의 별미." #!String
+    CranberrySeeds_Name: "크랜베리 씨앗" #!String
+    CranberrySeeds_Description: "가을 작물. 성장하려면 7일 소요되며, 수확한 후에도 계속 작물이 생산됩니다." #!String
+    Crayfish_Name: "민물가재" #!String
+    Crayfish_Description: "바닷가재보다 작고 민물에 삽니다." #!String
+    Crimsonfish_Name: "크림슨피쉬" #!String
+    Crimsonfish_Description: "심해에 살지만, 따뜻한 여름철에 알을 낳는 것을 선호합니다." #!String
+    CrispyBass_Name: "우럭 튀김" #!String
+    CrispyBass_Description: "와우, 브레딩이 완벽합니다." #!String
+    Crocus_Name: "크로커스" #!String
+    Crocus_Description: "겨울에 피는 꽃." #!String
+    CrystalFloor_Name: "수정 바닥" #!String
+    CrystalFloor_Description: "바닥을 장식하거나 길을 만들 수 있습니다." #!String
+    CrystalFruit_Name: "수정 과일" #!String
+    CrystalFruit_Description: "눈에서 솟아나는 여린 과일." #!String
+    CrystalPath_Name: "수정 길" #!String
+    CrystalPath_Description: "바닥을 장식하거나 길을 만들 수 있습니다." #!String
+    CuriosityLure_Name: "호기심 미끼" #!String
+    CuriosityLure_Description: "희귀 물고기를 잡을 확률이 증가됩니다." #!String
+    Daffodil_Name: "수선화" #!String
+    Daffodil_Description: "전형적인 봄꽃으로, 선물로도 좋습니다." #!String
+    Dandelion_Name: "민들레" #!String
+    Dandelion_Description: "가장 예쁜 꽃은 아니지만, 잎으로 맛있는 샐러드를 만들 수 있습니다." #!String
+    DecorativePot_Name: "장식용 항아리" #!String
+    DecorativePot_Description: "고대 항아리의 모형." #!String
+    DeluxeBait_Name: "디럭스 미끼" #!String
+    DeluxeBait_Description: "물고기가 더 빠르게 물게 하고 \"낚시 막대\"의 크기를 증가시켜줍니다." #!String
+    DeluxeFertilizer_Name: "디럭스 비료" #!String
+    DeluxeFertilizer_Description: "토양의 질을 크게 향상시켜 더 높은 등급의 작물이 자랄 확률을 높입니다. 호미질한 땅에 섞어 쓰십시오." #!String
+    DeluxeRetainingSoil_Name: "디럭스 보습 토양" #!String
+    DeluxeRetainingSoil_Description: "밤사이 수분을 잃지 않을 확률이 100%인 토양. 호미질한 땅에 섞어 쓰십시오." #!String
+    DeluxeSpeedGro_Name: "디럭스 성장 촉진제" #!String
+    DeluxeSpeedGro_Description: "잎이 피는 것을 촉진합니다. 성장 속도를 최소 20% 빠르게 해줍니다. 호미질한 땅에 섞어 쓰십시오." #!String
+    Diamond_Name: "다이아몬드" #!String
+    Diamond_Description: "희귀하고 값비싼 보석." #!String
+    DiamondStone_Name: "다이아몬드석" #!String
+    DiamondStone_Description: "깨뜨려서 다이아몬드를 얻을 수 있습니다." #!String
+    DinosaurEgg_Name: "공룡알" #!String
+    DinosaurEgg_Description: "거대한 공룡알... 게다가 껍데기조차 깨지지 않았습니다!" #!String
+    DinosaurMayonnaise_Name: "공룡 마요네즈" #!String
+    DinosaurMayonnaise_Description: "두터운 크림 같은 촉감에 강렬한 초록색입니다. 잔디와 가죽 냄새가 납니다." #!String
+    DishOTheSea_Name: "바다의 요리" #!String
+    DishOTheSea_Description: "찬 바닷바람에도 당신을 따뜻하게 해줍니다." #!String
+    Dolomite_Name: "백운석" #!String
+    Dolomite_Description: "산호초, 혹은 수중 화산 근처에서 발생합니다." #!String
+    Dorado_Name: "만새기" #!String
+    Dorado_Description: "밝은 주황색 비늘이 있는 사나운 육식 생선." #!String
+    DragonTooth_Name: "용의 이빨" #!String
+    DragonTooth_Description: "고대 용의 이빨이라는 소문이 있습니다. 에나멜은 순 이리듐 재질입니다!" #!String
+    DressedSpinner_Name: "꾸며진 회전식 미끼" #!String
+    DressedSpinner_Description: "금속 탭과 형형색색의 띠가 물고기에게 유혹적인 장관을 펼칩니다. 낚시 중 물고기가 무는 속도를 증가시킵니다." #!String
+    DriedFruit_Name: "말린" #!String
+    DriedFruit_Description: "식감이 쫄깃한 말린 {0}." #!String
+    DriedFruit_CollectionsTabDescription: "씹는 맛이 있는 말린 과일." #!String
+    DriedFruit_CollectionsTabName: "말린 과일" #!String
+    DriedFruit_Flavored_Name: "말린 {0}" #!String
+    DriedMushrooms_Name: "말린" #!String
+    DriedMushrooms_Description: "미식가를 위한 버섯 한 묶음." #!String
+    DriedMushrooms_CollectionsTabDescription: "미식가를 위한 버섯 한 묶음." #!String
+    DriedMushrooms_CollectionsTabName: "말린 버섯" #!String
+    DriedStarfish_Name: "말린 불가사리" #!String
+    DriedStarfish_Description: "태고의 바다에서 온 불가사리입니다. 유달리 상태가 매우 좋은 표본입니다!" #!String
+    Driftwood_Name: "유목" #!String
+    Driftwood_Description: "바다에서 표류하던 나뭇조각." #!String
+    DrumBlock_Name: "드럼 블록" #!String
+    DrumBlock_Description: "지나갈 때 드럼 소리를 냅니다." #!String
+    DuckEgg_Name: "오리알" #!String
+    DuckEgg_Description: "아직 따뜻합니다." #!String
+    DuckFeather_Name: "오리깃털" #!String
+    DuckFeather_Description: "색이 다채롭습니다." #!String
+    DuckMayonnaise_Name: "오리 마요네즈" #!String
+    DuckMayonnaise_Description: "노란색의 진한 마요네즈." #!String
+    DwarfGadget_Name: "드워프 도구" #!String
+    DwarfGadget_Description: "드워프들이 한때 사용하던 고도로 발전된 장비의 한 조각. 아직 빛과 소리가 나지만, 어떤 원리로 작동하는지 알 수 없습니다." #!String
+    DwarfScrollI_Name: "드워프 두루마리 I" #!String
+    DwarfScrollI_Description: "드워프어가 적혀있는 빛바랜 양피지 두루마리. 붉은 매듭으로 묶여있습니다 " #!String
+    DwarfScrollII_Name: "드워프 두루마리 II" #!String
+    DwarfScrollII_Description: "드워프어가 적혀있는 빛바랜 양피지 두루마리. 녹색 리본으로 묶여있습니다." #!String
+    DwarfScrollIII_Name: "드워프 두루마리 III" #!String
+    DwarfScrollIII_Description: "드워프어가 적혀있는 빛바랜 양피지 두루마리. 파란 밧줄로 묶여있습니다." #!String
+    DwarfScrollIV_Name: "드워프 두루마리 IV" #!String
+    DwarfScrollIV_Description: "드워프어가 적혀있는 빛바랜 양피지 두루마리. 황금 사슬로 묶여있습니다." #!String
+    DwarvishHelm_Name: "드워프 투구" #!String
+    DwarvishHelm_Description: "드워프들이 자주 쓰는 투구. 두꺼운 판금이 떨어지는 잔해나 종유석으로부터 착용자를 보호해 줍니다." #!String
+    DwarvishTranslationGuide_Name: "드워프어 번역 가이드" #!String
+    DwarvishTranslationGuide_Description: "드워프어를 배울 수 있습니다." #!String
+    EarthCrystal_Name: "땅의 수정" #!String
+    EarthCrystal_Description: "지면에서 발견되는 수지성의 물질." #!String
+    Ectoplasm_Name: "심령체" #!String
+    Ectoplasm_Description: "걸쭉한 슬라임 같은 액체. 무슨 이유에선가 마법사가 찾고 있습니다." #!String
+    Eel_Name: "장어" #!String
+    Eel_Description: "길고 미끌미끌한 작은 생선." #!String
+    Eggplant_Name: "가지" #!String
+    Eggplant_Description: "맛이 깊고 몸에 좋은 토마토의 사촌. 튀김이나 스튜가 정말 맛있습니다." #!String
+    EggplantParmesan_Name: "가지 파마산" #!String
+    EggplantParmesan_Description: "톡 쏘는 치즈 향이 훌륭합니다." #!String
+    EggplantSeeds_Name: "가지 씨앗" #!String
+    EggplantSeeds_Description: "가을 작물. 성장하려면 5일 소요되며, 수확한 후에도 계속 작물이 생산됩니다." #!String
+    ElvishJewelry_Name: "엘프 장신구" #!String
+    ElvishJewelry_Description: "더러워졌지만 여전히 아름답습니다. 측면에는 고대 엘프 언어로 추정되는 흐르는 듯한 글씨가 있습니다. 엘프의 뼈는 발견된 적이 없습니다." #!String
+    Emerald_Name: "에메랄드" #!String
+    Emerald_Description: "밝은 초록빛의 보석." #!String
+    EmeraldRing_Name: "에메랄드 반지" #!String
+    EmeraldRing_Description: "무기 속도를 10% 증가시켜줍니다." #!String
+    EmeraldStone_Name: "에메랄드석" #!String
+    EmeraldStone_Description: "깨뜨려서 에메랄드를 얻을 수 있습니다." #!String
+    EnergyTonic_Name: "자양강장제" #!String
+    EnergyTonic_Description: "많은 양의 에너지를 회복합니다." #!String
+    Enricher_Name: "비료 분사기" #!String
+    Enricher_Description: "스프링클러에 설치하고 비료를 넣어두면 주변에 씨앗을 심을 때 자동으로 비료를 사용합니다." #!String
+    Escargot_Name: "에스카르고" #!String
+    Escargot_Description: "완벽하게 조리된 버터에 절인 달팽이." #!String
+    Esperite_Name: "에스퍼라이트" #!String
+    Esperite_Description: "자극을 받으면 수정이 밝은 녹색으로 빛납니다." #!String
+    ExplosiveAmmo_Name: "폭발성 탄약" #!String
+    ExplosiveAmmo_Description: "새총으로 발사할 수 있습니다." #!String
+    FairyDust_Name: "요정 가루" #!String
+    FairyDust_Description: "술통이나 용광로 등 정제설비에 뿌려서 즉시 생산품을 받을 수 있습니다." #!String
+    FairyRose_Name: "요정장미" #!String
+    FairyRose_Description: "전설에 의하면 이 꽃의 달콤한 향이 요정들을 끌어들인다고 합니다." #!String
+    FairySeeds_Name: "요정장미 씨앗" #!String
+    FairySeeds_Description: "가을에 심으세요. 12일 후 신비한 꽃이 핍니다. 여러가지 색이 있습니다." #!String
+    FairyStone_Name: "요정석" #!String
+    FairyStone_Description: "옛 광부들의 노래를 들어보면 이 돌은 고대 요정의 뼈가 굳어 만들어졌다고 합니다." #!String
+    FallSeeds_Name: "가을 씨앗 모음" #!String
+    FallSeeds_Description: "가을철의 야생 씨앗 모음." #!String
+    FarAwayStone_Name: "먼 곳의 돌" #!String
+    FarAwayStone_Description: "유래를 알 수 없는 돌. 무언가에 올려놓을 수 있을 것 같습니다." #!String
+    FarmersLunch_Name: "농부의 점심" #!String
+    FarmersLunch_Description: "이거면 계속 일할 수 있습니다." #!String
+    Fiber_Name: "섬유" #!String
+    Fiber_Description: "식물에서 나온 원자재." #!String
+    FiberSeeds_Name: "섬유 씨앗" #!String
+    FiberSeeds_Description: "모든 계절에 심을 수 있습니다. 물을 줄 필요가 없습니다. 낫으로 수확할 수 있습니다. 성장하려면 7일 소요됩니다." #!String
+    FiddleheadFern_Name: "청나래고사리" #!String
+    FiddleheadFern_Description: "어린 새싹은 식용가능한 별미입니다." #!String
+    FiddleheadRisotto_Name: "청나래고사리 리조또" #!String
+    FiddleheadRisotto_Description: "기름에 데친 고사리와 함께 먹는 크리미한 쌀 요리. 약간 맛이 밋밋합니다." #!String
+    FieldSnack_Name: "수제 에너지바" #!String
+    FieldSnack_Description: "배고픈 채집가를 위한 간식." #!String
+    FireOpal_Name: "화단백석" #!String
+    FireOpal_Description: "붉은 반점 때문에 이름이 붙여진, 희귀한 종류의 오팔." #!String
+    FireQuartz_Name: "불의 석영" #!String
+    FireQuartz_Description: "뜨거운 용암 근처에서 발견되는 붉게 빛나는 수정." #!String
+    FireworksGreen_Name: "폭죽 (초록)" #!String
+    FireworksGreen_Description: "축하행사의 오랜 전통. 취급에 주의하세요!" #!String
+    FireworksPurple_Name: "폭죽 (보라)" #!String
+    FireworksPurple_Description: "축하행사의 오랜 전통. 취급에 주의하세요!" #!String
+    FireworksRed_Name: "폭죽 (빨강)" #!String
+    FireworksRed_Description: "축하행사의 오랜 전통. 취급에 주의하세요!" #!String
+    FishStew_Name: "생선 스튜" #!String
+    FishStew_Description: "바다 냄새가 많이 납니다. 그래도, 냄새보단 맛있습니다." #!String
+    FishTaco_Name: "생선 타코" #!String
+    FishTaco_Description: "맛있는 향이 납니다." #!String
+    Flounder_Name: "가자미" #!String
+    Flounder_Description: "그것은 바닥에 살기 때문에 두 눈이 머리 위에 있습니다." #!String
+    Fluorapatite_Name: "플루오르 인회석" #!String
+    Fluorapatite_Description: "사람 치아에서도 소량 발견됩니다." #!String
+    FluteBlock_Name: "플루트 블록" #!String
+    FluteBlock_Description: "지나갈 때 플루트 소리를 냅니다." #!String
+    FossilizedLeg_Name: "화석화된 다리" #!String
+    FossilizedLeg_Description: "두껍고 견고한 다리뼈." #!String
+    FossilizedRibs_Name: "화석화된 늑골" #!String
+    FossilizedRibs_Description: "오래전, 이 뼈는 어느 큰 동물의 몸을 보호했습니다." #!String
+    FossilizedSkull_Name: "화석화된 두개골" #!String
+    FossilizedSkull_Description: "완벽한 표본입니다!" #!String
+    FossilizedSpine_Name: "화석화된 척추" #!String
+    FossilizedSpine_Description: "맞물려 있는 척추뼈 한 기둥." #!String
+    FossilizedTail_Name: "화석화된 꼬리" #!String
+    FossilizedTail_Description: "꼬리 끝 모양이 몽둥이같이 생겼습니다." #!String
+    FossilStone_Name: "화석돌" #!String
+    FossilStone_Description: "깨뜨려서 화석과 뼈를 얻을 수 있습니다." #!String
+    FriedCalamari_Name: "오징어튀김" #!String
+    FriedCalamari_Description: "너무 쫄깃쫄깃합니다." #!String
+    FriedEel_Name: "장어튀김" #!String
+    FriedEel_Description: "기름지지만 향이 깊습니다." #!String
+    FriedEgg_Name: "계란 프라이" #!String
+    FriedEgg_Description: "한쪽만 익힌 계란 프라이." #!String
+    FriedMushroom_Name: "버섯구이" #!String
+    FriedMushroom_Description: "진한 대지의 향기가 납니다." #!String
+    FrozenGeode_Name: "얼어붙은 정동석" #!String
+    FrozenGeode_Description: "대장장이가 깨서 열어줄 수 있습니다." #!String
+    FrozenGeodeStone_Name: "얼어붙은 정동석 돌" #!String
+    FrozenGeodeStone_Description: "깨뜨려서 얼어붙은 정동석을 얻을 수 있습니다." #!String
+    FrozenTear_Name: "얼어붙은 눈물" #!String
+    FrozenTear_Description: "예티의 얼어붙은 눈물로 만들어졌다는 수정." #!String
+    FruitSalad_Name: "과일 샐러드" #!String
+    FruitSalad_Description: "여름 과일의 맛있는 조합." #!String
+    GalaxySoul_Name: "갤럭시 소울" #!String
+    GalaxySoul_Description: "3개의 영혼을 갤럭시 무기와 단조하여 최종 형태를 해방합니다." #!String
+    Garlic_Name: "마늘" #!String
+    Garlic_Description: "요리에 훌륭한 풍미를 더해줍니다. 품질 좋은 마늘은 꽤 매콤할 수 있습니다." #!String
+    GarlicSeeds_Name: "마늘 씨앗" #!String
+    GarlicSeeds_Description: "봄 작물. 성장하려면 4일 소요됩니다." #!String
+    Gate_Name: "울타리 문" #!String
+    Gate_Description: "울타리를 지나갈 수 있게 해줍니다." #!String
+    Geminite_Name: "제미나이트" #!String
+    Geminite_Description: "밝게 빛나는 무리의 형태로 발생합니다." #!String
+    GemStone_Name: "보석돌" #!String
+    GemStone_Description: "깨뜨려서 돌, 광석, 혹은 정동석을 얻을 수 있습니다." #!String
+    Geode_Name: "정동석" #!String
+    Geode_Description: "대장장이가 깨서 열어줄 수 있습니다." #!String
+    GeodeStone_Name: "정동석 돌" #!String
+    GeodeStone_Description: "깨뜨려서 정동석을 얻을 수 있습니다." #!String
+    GhostCrystal_Name: "유령수정" #!String
+    GhostCrystal_Description: "수정 주변에 차가운 기운이 돌고 있습니다." #!String
+    Ghostfish_Name: "귀신물고기" #!String
+    Ghostfish_Description: "지하 호수에서 발견되는 창백하고 눈먼 생선." #!String
+    Ginger_Name: "생강" #!String
+    Ginger_Description: "강렬한 맛이 나는 이 뿌리는 활력증진에 도움이 된다 합니다." #!String
+    GingerAle_Name: "진저 에일" #!String
+    GingerAle_Description: "속을 진정시키는 효과가 있는 톡 쏘는 맛의 탄산음료." #!String
+    Glacierfish_Name: "빙하고기" #!String
+    Glacierfish_Description: "빙하 아랫면에 둥지를 틉니다." #!String
+    GlacierfishJr_Name: "빙하고기 주니어" #!String
+    GlacierfishJr_Description: "빙하고기에겐 아들이 있었는데..." #!String
+    GlassShards_Name: "유리 파편" #!String
+    GlassShards_Description: "수 세기 동안 파도에 의해 부드럽게 마모된 유리 파편들. 고대 모자이크나 목걸이의 일부였을 수도 있습니다." #!String
+    GlazedYams_Name: "맛탕" #!String
+    GlazedYams_Description: "달콤하고 만족스럽습니다... 설탕에서 캐러멜의 향이 납니다." #!String
+    GlowRing_Name: "빛 반지" #!String
+    GlowRing_Description: "빛이 지속적으로 납니다." #!String
+    GlowstoneRing_Name: "발광석 반지" #!String
+    GlowstoneRing_Description: "지속적으로 빛을 내며, 아이템 수집 범위를 증가시켜줍니다." #!String
+    GoatCheese_Name: "염소 치즈" #!String
+    GoatCheese_Description: "염소 우유로 만든 부드러운 치즈." #!String
+    GoatMilk_Name: "염소젖" #!String
+    GoatMilk_Description: "염소의 젖." #!String
+    Goby_Name: "망둑어" #!String
+    Goby_Description: "몇 가지 망둑어는 폭포를 거슬러올라갈 수 있습니다." #!String
+    GoldBar_Name: "금 주괴" #!String
+    GoldBar_Description: "순수한 금 주괴 하나." #!String
+    GoldCoin_Name: "황금 동전" #!String
+    GoldCoin_Description: "황금 동전 1개." #!String
+    GoldenAnimalCracker_Name: "황금 동물 과자" #!String
+    GoldenAnimalCracker_Description: "가축에게 주면 영구적으로 생산량을 2배로 증가시킵니다. 돼지에게는 효과가 없습니다." #!String
+    GoldenBobber_Name: "황금 찌" #!String
+    GoldenBobber_Description: "윌리가 찾고 있던 물건." #!String
+    GoldenCoconut_Name: "황금 코코넛" #!String
+    GoldenCoconut_Description: "깨기 쉬워 보이진 않지만, 전문가라면 이것을 깰 수 있을지도 모릅니다." #!String
+    GoldenEgg_Name: "황금 알" #!String
+    GoldenEgg_Description: "정말 희귀하고 특별한 순금 껍데기의 알." #!String
+    GoldenMask_Name: "황금 가면" #!String
+    GoldenMask_Description: "고대 마법 의식에 사용된 것 같은 으스스한 가면. 이마에 있는 홈에 큰 보라색 보석이 있습니다." #!String
+    GoldenMysteryBox_Name: "황금 미스테리 박스" #!String
+    GoldenPumpkin_Name: "황금 호박" #!String
+    GoldenPumpkin_Description: "값이 비싸지만 다른 용도는 없습니다." #!String
+    GoldenRelic_Name: "황금 유물" #!String
+    GoldenRelic_Description: "앞면에 상형 문자와 그림이 새겨져있는 황금 판." #!String
+    GoldenWalnut_Name: "황금 호두" #!String
+    GoldenWalnut_Description: "진저 섬의 앵무새들에겐 최고의 진미입니다." #!String
+    GoldOre_Name: "금광석" #!String
+    GoldOre_Description: "주괴로 제련할 수 있는 귀한 광석." #!String
+    GoldStone_Name: "금광석돌" #!String
+    GoldStone_Description: "깨뜨려서 금광석을 얻을 수 있습니다." #!String
+    GourmetTomatoSalt_Name: "미식가의 토마토 소금" #!String
+    GourmetTomatoSalt_Description: "구수한 풍미가 있는 희귀한 소금." #!String
+    Granite_Name: "화강암" #!String
+    Granite_Description: "건축에 자주 사용되는 얼룩덜룩한 광물." #!String
+    Grape_Name: "포도" #!String
+    Grape_Description: "달콤한 과일 한 송이." #!String
+    GrapeStarter_Name: "포도 종자" #!String
+    GrapeStarter_Description: "가을 작물. 성장하려면 10일 소요되지만, 수확한 후에도 계속 작물이 생산됩니다. 격자 구조물에 감겨 자랍니다." #!String
+    GrassBook_Name: "늙은 미끌다리" #!String
+    GrassBook_Description: "잔디나 작물 사이로 빠르게 뛸 수 있습니다." #!String
+    GrassStarter_Name: "번식용 잔디" #!String
+    GrassStarter_Description: "농장에 심어서 새로운 잔디밭을 시작할 수 있습니다." #!String
+    GravelPath_Name: "자갈 길" #!String
+    GravelPath_Description: "바닥을 장식하거나 길을 만들 수 있습니다." #!String
+    GreenAlgae_Name: "녹조류" #!String
+    GreenAlgae_Description: "점액질 같은 질감이 강합니다." #!String
+    GreenBean_Name: "완두콩" #!String
+    GreenBean_Description: "시원하고 바삭한 맛이 있는 통통한 콩." #!String
+    GreenRainWeeds_Name: "녹색 비 잡초" #!String
+    GreenRainWeeds_Description: "섬유나 씨앗 모음이 들어있을 수 있습니다." #!String
+    GreenSlimeEgg_Name: "초록 슬라임 알" #!String
+    GreenSlimeEgg_Description: "슬라임 부화기에서 부화시킬 수 있습니다." #!String
+    GreenTea_Name: "녹차" #!String
+    GreenTea_Description: "찻잎을 약간 가공하여 만든 기운을 북돋아주는 상쾌한 음료." #!String
+    HaleysLostBracelet_Name: "헤일리의 잃어버린 팔찌" #!String
+    HaleysLostBracelet_Description: "한 가족의 가보." #!String
+    Halibut_Name: "넙치" #!String
+    Halibut_Description: "바다 바닥에 사는 납작한 물고기." #!String
+    Hardwood_Name: "단단한 나무" #!String
+    Hardwood_Description: "우수한 내구성과 아름다움을 갖춘 특별한 목재." #!String
+    HardwoodFence_Name: "단단한 나무 울타리" #!String
+    HardwoodFence_Description: "가장 튼튼한 울타리입니다." #!String
+    Hashbrowns_Name: "해시브라운" #!String
+    Hashbrowns_Description: "바삭하고 황금빛 도는 갈색입니다!" #!String
+    Hay_Name: "건초" #!String
+    Hay_Description: "동물 사료로 사용되는 말린 잔디." #!String
+    Hazelnut_Name: "헤이즐넛" #!String
+    Hazelnut_Description: "정말 큰 헤이즐넛입니다!" #!String
+    Hedge_Name: "생울타리" #!String
+    Hedge_Description: "울타리 역할을 하는 모양 잡힌 덤불." #!String
+    Helvite_Name: "헬바이트" #!String
+    Helvite_Description: "삼각기둥 형태로 자랍니다." #!String
+    Hematite_Name: "적철석" #!String
+    Hematite_Description: "자성이 있는 주 성분이 철인 광물." #!String
+    Herring_Name: "청어" #!String
+    Herring_Description: "흔한 바다고기." #!String
+    Holly_Name: "호랑가시나무 열매" #!String
+    Holly_Description: "잎사귀와 밝은 붉은색 베리는 겨울철 장식으로 유명합니다." #!String
+    Honey_Name: "벌꿀" #!String
+    Honey_Description: "벌이 생산한 달콤한 시럽." #!String
+    Honey_Flavored_Name: "{0} 벌꿀" #!String
+    Honey_Wild_Name: "야생 벌꿀" #!String
+    Hops_Name: "홉" #!String
+    Hops_Description: "맥주 향을 만드는 씁쓸하고 신맛이 나는 꽃." #!String
+    HopsStarter_Name: "홉 종자" #!String
+    HopsStarter_Description: "여름 작물. 성장하려면 11일 소요되지만, 수확한 후에도 계속 작물이 생산됩니다. 격자 구조물에 감겨 자랍니다." #!String
+    HorseFlute_Name: "말 피리" #!String
+    HorseFlute_Description: "피리를 연주하면 말을 소환합니다. 실외에서만 가능합니다." #!String
+    HotJavaRing_Name: "핫 자바 반지" #!String
+    HotJavaRing_Description: "몬스터를 처치할 때 커피를 획득할 확률이 크게 증가합니다." #!String
+    HotPepper_Name: "매운 고추" #!String
+    HotPepper_Description: "매운 와중에 살짝 달콤한 맛도 납니다." #!String
+    HyperSpeedGro_Name: "하이퍼 성장 촉진제" #!String
+    HyperSpeedGro_Description: "잎이 피는 것을 촉진합니다. 성장 속도를 최소 33% 빠르게 해줍니다. 호미질한 땅에 섞어 쓰십시오." #!String
+    IceCream_Name: "아이스크림" #!String
+    IceCream_Description: "이건 싫어하는 사람이 거의 없습니다." #!String
+    IceCrystal_Name: "얼음 수정" #!String
+    IceCrystal_Description: "정제된 석영이 들어있을 수 있습니다." #!String
+    IcePip_Name: "아이스핍" #!String
+    IcePip_Description: "매우 추운 환경에서 잘 자라는 희귀한 생선." #!String
+    ImmunityBand_Name: "면역의 띠" #!String
+    ImmunityBand_Description: "윗부분은 마법이 담긴 보랏빛 양털 재질입니다." #!String
+    IridiumBand_Name: "이리듐 밴드" #!String
+    IridiumBand_Description: "빛이 나고, 아이템을 끌어들이며, 공격력을 10% 증가시켜줍니다." #!String
+    IridiumBar_Name: "이리듐 주괴" #!String
+    IridiumBar_Description: "순수한 이리듐 주괴 하나." #!String
+    IridiumMilk_Name: "이리듐 우유" #!String
+    IridiumMilk_Description: "출처를 알 수 없는 강력한 '우유'입니다..." #!String
+    IridiumOre_Name: "이리듐광석" #!String
+    IridiumOre_Description: "진기한 특성이 많은 이국적인 광석. 주괴로 제련할 수 있습니다." #!String
+    IridiumSprinkler_Name: "이리듐 스프링클러" #!String
+    IridiumSprinkler_Description: "매일 아침 주변 24칸에 물을 뿌립니다." #!String
+    IridiumStone_Name: "이리듐석" #!String
+    IridiumStone_Description: "깨뜨려서 이리듐광석을 얻을 수 있습니다." #!String
+    IronBar_Name: "철 주괴" #!String
+    IronBar_Description: "순수한 철 주괴 하나." #!String
+    IronFence_Name: "철 울타리" #!String
+    IronFence_Description: "돌 울타리보다 오래 지속됩니다." #!String
+    IronOre_Name: "철광석" #!String
+    IronOre_Description: "주괴로 제련할 수 있는 그럭저럭 흔한 광석." #!String
+    IronStone_Name: "철광석돌" #!String
+    IronStone_Description: "깨뜨려서 철광석을 얻을 수 있습니다." #!String
+    JackOLantern_Name: "호박등" #!String
+    JackOLantern_Description: "기발한 가을 장식." #!String
+    Jade_Name: "옥" #!String
+    Jade_Description: "연한 초록색의 장식용 돌." #!String
+    JadeRing_Name: "옥 반지" #!String
+    JadeRing_Description: "치명타 위력을 10% 증가시켜줍니다." #!String
+    JadeStone_Name: "옥석" #!String
+    JadeStone_Description: "깨뜨려서 옥을 얻을 수 있습니다." #!String
+    Jagoite_Name: "재고아이트" #!String
+    Jagoite_Description: "미세한 수정들이 큰 부피로 모여서 반짝반짝 빛납니다." #!String
+    Jamborite_Name: "잠보라이트" #!String
+    Jamborite_Description: "수정이 너무나 촘촘히 뭉쳐있어서 털이 복슬복슬하게 난 모양을 연상시킵니다." #!String
+    Jasper_Name: "벽옥" #!String
+    Jasper_Description: "윤기가 나도록 잘 닦으면 보기 좋은 광채가 납니다. 고대 시대부터 수천 년 동안 소중한 돌로 취급받았습니다." #!String
+    JazzSeeds_Name: "재즈 씨앗" #!String
+    JazzSeeds_Description: "봄에 심으세요. 7일 후 푸른 민들레 꽃이 핍니다." #!String
+    Jelly_Name: "젤리" #!String
+    Jelly_Description: "끈적입니다." #!String
+    Jelly_Flavored_Name: "{0} 젤리" #!String
+    JojaCola_Name: "조자 콜라" #!String
+    JojaCola_Description: "조자 기업의 주력 상품." #!String
+    JournalScrap_Name: "일지 조각" #!String
+    JournalScrap_Description: "축축하고 찢어진 오래된 일지 한 페이지..." #!String
+    Juice_Name: "주스" #!String
+    Juice_Description: "달콤하고 영양가 높은 음료." #!String
+    Juice_Flavored_Name: "{0} 주스" #!String
+    JukeboxRing_Name: "주크박스 반지" #!String
+    JukeboxRing_Description: "지금까지 들어본 노래를 무작위로 들려줍니다." #!String
+    Kale_Name: "케일" #!String
+    Kale_Description: "스프나 볶음요리에 알맞은 잎사귀." #!String
+    KaleSeeds_Name: "케일 씨앗" #!String
+    KaleSeeds_Description: "봄 작물. 성장하려면 6일 소요됩니다. 낫으로 수확할 수 있습니다." #!String
+    Kyanite_Name: "남정석" #!String
+    Kyanite_Description: "기하학적인 표면들이 유리처럼 매끄럽습니다." #!String
+    LargeBrownEgg_Name: "큰 달걀" #!String
+    LargeBrownEgg_Description: "흔치 않은 크기의 갈색 달걀입니다!" #!String
+    LargeMilk_Name: "큰 우유" #!String
+    LargeMilk_Description: "우유가 가득한 큰 통." #!String
+    LargemouthBass_Name: "큰입우럭" #!String
+    LargemouthBass_Description: "호수에 사는 인기 좋은 생선." #!String
+    LargeWhiteEgg_Name: "큰 달걀" #!String
+    LargeWhiteEgg_Description: "흔치 않은 크기의 흰 달걀입니다!" #!String
+    LavaEel_Name: "용암 장어" #!String
+    LavaEel_Description: "놀랍게도 뜨거운 용암 속에서 살아갑니다." #!String
+    LeadBobber_Name: "무거운 찌" #!String
+    LeadBobber_Description: "\"낚시 막대\"에 무게를 더해서, 바닥에 닿을 때 튕기지 않게 합니다." #!String
+    Leek_Name: "리크" #!String
+    Leek_Description: "양파의 맛있는 친척." #!String
+    Legend_Name: "전설의 물고기" #!String
+    Legend_Description: "모든 물고기의 왕! 한 번도 잡힌 적이 없다고 합니다." #!String
+    LegendII_Name: "전설의 물고기 II" #!String
+    LegendII_Description: "초대 전설의 물고기의 계승자입니다." #!String
+    LemonStone_Name: "레몬 스톤" #!String
+    LemonStone_Description: "몇몇에 의하면 이 수정의 가루가 드워프들에겐 별미라고 합니다." #!String
+    LGoatMilk_Name: "큰 염소젖" #!String
+    LGoatMilk_Description: "크림 같은 염소젖 한 갤런." #!String
+    LifeElixir_Name: "생명의 영약" #!String
+    LifeElixir_Description: "체력을 최대치까지 회복시켜줍니다." #!String
+    Limestone_Name: "석회석" #!String
+    Limestone_Description: "정말 흔한 종류의 돌. 큰 가치는 없습니다." #!String
+    Lingcod_Name: "범노래미" #!String
+    Lingcod_Description: "입에 넣을 수 있는 건 뭐든지 먹는 무시무시한 포식자." #!String
+    Lionfish_Name: "쏠배감펭" #!String
+    Lionfish_Description: "등지느러미에 독을 품은 공격적인 포식자." #!String
+    Lobster_Name: "바닷가재" #!String
+    Lobster_Description: "바다에 서식하는 강한 꼬리가 있는 갑각류." #!String
+    LobsterBisque_Name: "가재 비스크" #!String
+    LobsterBisque_Description: "이 우아한 스프는 윌리네 가족의 비밀 레시피입니다." #!String
+    LostAxe_Name: "잃어버린 도끼" #!String
+    LostAxe_Description: "로빈이 애타게 찾고 있습니다." #!String
+    LostBook_Name: "잃어버린 책" #!String
+    LostBook_Description: "다양한 시대의 글귀가 적혀있습니다." #!String
+    LuckyLunch_Name: "행운의 점심" #!String
+    LuckyLunch_Description: "특별한 작은 식사." #!String
+    LuckyPurpleShorts_Name: "행운의 보라 반바지" #!String
+    LuckyPurpleShorts_Description: "너무 자세히 조사하진 마세요." #!String
+    LuckyRing_Name: "행운의 반지" #!String
+    LuckyRing_Description: "착용자에게 행운을 가져다준다는 달 문양이 새겨진 반지." #!String
+    Lumber_Name: "목재" #!String
+    Lumber_Description: "건축자재와 연료로 사용할 수 있는 다재다능한 자원." #!String
+    Lunarite_Name: "루나라이트" #!String
+    Lunarite_Description: "홈이 패인 흰 구체 여럿이 단단히 뭉쳐있습니다." #!String
+    MagicBait_Name: "마법 미끼" #!String
+    MagicBait_Description: "계절, 시간, 날씨와 지역에 상관없이 물고기를 낚을 수 있습니다." #!String
+    MagicRockCandy_Name: "마법 얼음사탕" #!String
+    MagicRockCandy_Description: "무지갯빛 파편의 정기가 담긴 희귀하고 강력한 사탕." #!String
+    MagmaCap_Name: "마그마 버섯" #!String
+    MagmaCap_Description: "마그마 근처에 서식하는 매우 희귀한 버섯." #!String
+    MagmaGeode_Name: "마그마 정동석" #!String
+    MagmaGeode_Description: "대장장이가 깨서 열어줄 수 있습니다." #!String
+    MagmaGeodeStone_Name: "마그마 정동석 돌" #!String
+    MagmaGeodeStone_Description: "깨뜨려서 마그마 정동석을 얻을 수 있습니다." #!String
+    Magnet_Name: "자석" #!String
+    Magnet_Description: "낚시 중 보물을 발견할 확률을 높여줍니다. 하지만 생선들이 이 맛을 좋아하진 않습니다." #!String
+    MagnetRing_Name: "자석 반지" #!String
+    MagnetRing_Description: "아이템 수집 범위를 증가시켜줍니다." #!String
+    MahoganySeed_Name: "마호가니 씨앗" #!String
+    MahoganySeed_Description: "심으면 마호가니 나무가 자랍니다." #!String
+    MakiRoll_Name: "마키 롤" #!String
+    MakiRoll_Description: "생선과 쌀을 해초로 감싸서 만든 요리." #!String
+    Malachite_Name: "공작석" #!String
+    Malachite_Description: "인기 있는 장식용 돌로, 조각품이나 녹색 페인트를 만드는 데 사용됩니다." #!String
+    Mango_Name: "망고" #!String
+    Mango_Description: "독특한 맛이 나는 크고 달콤한 열대과일." #!String
+    MangoSapling_Name: "망고 묘목" #!String
+    MangoSapling_Description: "28일 후 성목이 됩니다. 여름에만 과일이 자라지만, 진저 섬에 심으면 사시사철 과일이 납니다." #!String
+    MangoStickyRice_Name: "카오 니야우 마무앙" #!String
+    MangoStickyRice_Description: "달콤한 망고와 코코넛으로 맛을 낸 정말 특별한 쌀 요리." #!String
+    MapleBar_Name: "메이플 바" #!String
+    MapleBar_Description: "두껍게 메이플을 발라서 광택이 나는 달콤한 도넛입니다." #!String
+    MapleSeed_Name: "단풍 씨앗" #!String
+    MapleSeed_Description: "심으면 단풍나무가 자랍니다." #!String
+    MapleSyrup_Name: "메이플 시럽" #!String
+    MapleSyrup_Description: "독특한 맛이 나는 달콤한 시럽." #!String
+    Marble_Name: "대리석" #!String
+    Marble_Description: "조각과 건축에 자주 쓰이는 인기 있는 광물입니다." #!String
+    Mayonnaise_Name: "마요네즈" #!String
+    Mayonnaise_Description: "어딘가 발라 먹을 수 있을 것 같습니다." #!String
+    Mead_Name: "벌꿀 술" #!String
+    Mead_Description: "벌꿀을 발효시켜 만든 술. 음주는 절제해서." #!String
+    MegaBomb_Name: "거대 폭탄" #!String
+    MegaBomb_Description: "강력한 폭발을 일으킵니다. 사용 시 매우 주의해주세요." #!String
+    Melon_Name: "멜론" #!String
+    Melon_Description: "시원 달달한 여름철 별미." #!String
+    MelonSeeds_Name: "멜론 씨앗" #!String
+    MelonSeeds_Description: "여름 작물. 성장하려면 12일 소요됩니다." #!String
+    MermaidsPendant_Name: "인어의 펜던트" #!String
+    MermaidsPendant_Description: "결혼하고 싶은 사람에게 주세요." #!String
+    MidnightCarp_Name: "자정 잉어" #!String
+    MidnightCarp_Description: "이 수줍은 물고기는 밤에만 편안한 느낌입니다." #!String
+    MidnightSquid_Name: "자정오징어" #!String
+    MidnightSquid_Description: "황혼 바다의 깊은 곳에 서식하는 이상하고 신비한 생명체." #!String
+    Milk_Name: "우유" #!String
+    Milk_Description: "우유 한 통." #!String
+    MinersTreat_Name: "광부의 간식" #!String
+    MinersTreat_Description: "이것으로 에너지를 유지할 수 있습니다." #!String
+    MixedFlowerSeeds_Name: "꽃 씨앗 모음" #!String
+    MixedFlowerSeeds_Description: "꽃 씨앗이 섞여있습니다. 심어보고 무엇이 자라는지 봅시다!" #!String
+    MixedSeeds_Name: "씨앗 모음" #!String
+    MixedSeeds_Description: "이것저것 다 섞여있습니다. 심어보고 무엇이 자라는지 봅시다!" #!String
+    MonsterMusk_Name: "몬스터 사향" #!String
+    MonsterMusk_Description: "향수처럼 뿌리면 숨어있던 몬스터를 유인해낼 수 있습니다." #!String
+    Morel_Name: "곰보버섯" #!String
+    Morel_Description: "견과류 향 때문에 인기가 좋은 버섯." #!String
+    Moss_Name: "이끼" #!String
+    Moss_Description: "그늘에서만 자라는 특별한 종류의 식물." #!String
+    MossSoup_Name: "이끼 스프" #!String
+    MossSoup_Description: "걸쭉하고 끈적거리지만, 먹을 수 있습니다." #!String
+    MossySeed_Name: "이끼 덮인 씨앗" #!String
+    MossySeed_Description: "심으면 희귀한 야생 나무가 자랍니다." #!String
+    MovieTicket_Name: "영화표" #!String
+    MovieTicket_Description: "영화관에 입장하기 위해 필요합니다. 친구에게 준다면 함께 영화를 보러 초대할 수 있습니다." #!String
+    MsAngler_Name: "아귀 아씨" #!String
+    MsAngler_Description: "생체발광기관으로 먹이를 유인합니다." #!String
+    Mudstone_Name: "이암" #!String
+    Mudstone_Description: "점토나 진흙이 오랜 시간에 걸쳐 형성된 입자가 미세한 돌." #!String
+    MummifiedBat_Name: "미이라화된 박쥐" #!String
+    MummifiedBat_Description: "섬세한 날개가 완벽히 보존되었습니다." #!String
+    MummifiedFrog_Name: "미이라화된 개구리" #!String
+    MummifiedFrog_Description: "이 고대 개구리는 한때 정글 우림에서 살았을지도 모릅니다." #!String
+    MuscleRemedy_Name: "근육 치료제" #!String
+    MuscleRemedy_Description: "몸을 너무 혹사 시켰다면, 이것을 마셔서 '탈진' 상태를 벗어날 수 있습니다." #!String
+    MushroomTreeSeed_Name: "버섯나무 씨앗" #!String
+    MushroomTreeSeed_Description: "농장에 심으면 버섯나무가 자랍니다." #!String
+    Mussel_Name: "홍합" #!String
+    Mussel_Description: "무리 지어 지내는 쌍각류 조개." #!String
+    MusselStone_Name: "홍합 돌" #!String
+    MusselStone_Description: "이 돌 안에 홍합이 들어있습니다." #!String
+    MutantCarp_Name: "돌연변이 잉어" #!String
+    MutantCarp_Description: "하수구의 이상한 물 때문에 잉어가 괴상하게 변했습니다." #!String
+    MysteryBox_Name: "미스테리 박스" #!String
+    MysteryBox_Description: "대장장이가 열어줄 수 있습니다. 안에 뭐가 들었을까요?" #!String
+    MysticStone_Name: "신비한 돌" #!String
+    MysticStone_Description: "깨뜨려서 돌, 광석, 혹은 정동석을 얻을 수 있습니다." #!String
+    MysticSyrup_Name: "신비한 시럽" #!String
+    MysticSyrup_Description: "마법적인 효능이 있다고 알려진 매우 희귀한 시럽." #!String
+    MysticTreeSeed_Name: "신비한 나무 씨앗" #!String
+    MysticTreeSeed_Description: "심으면 특별한 나무가 자랍니다." #!String
+    NapalmRing_Name: "네이팜 반지" #!String
+    NapalmRing_Description: "적을 쓰러트리면 적이 폭발합니다." #!String
+    NautilusFossil_Name: "앵무조개 화석" #!String
+    NautilusFossil_Description: "고대 산호초에서 떠밀려온 것 같습니다." #!String
+    NautilusShell_Name: "앵무조개 껍데기" #!String
+    NautilusShell_Description: "고대 껍데기." #!String
+    Nekoite_Name: "네코아이트" #!String
+    Nekoite_Description: "아주 작은 분홍색 목초지에서 온 섬세한 조각들." #!String
+    Neptunite_Name: "넵튜나이트" #!String
+    Neptunite_Description: "흔치 않게 빛을 잘 반사하는 칠흑 같은 수정." #!String
+    OakResin_Name: "참나무 수지" #!String
+    OakResin_Description: "참나무 수액에서 얻은 끈적이고 향긋한 물질." #!String
+    Obsidian_Name: "흑요석" #!String
+    Obsidian_Description: "용암이 급격하게 식으면서 형성된 유리 같은 광물." #!String
+    OceanStone_Name: "바다수정" #!String
+    OceanStone_Description: "옛 전설에 의하면 고대 인어들의 모자이크라고 합니다." #!String
+    Octopus_Name: "문어" #!String
+    Octopus_Description: "신비하고 지능적인 생물체." #!String
+    Oil_Name: "기름" #!String
+    Oil_Description: "다목적으로 쓸 수 있는 식용유." #!String
+    OilofGarlic_Name: "마늘즙" #!String
+    OilofGarlic_Description: "마시면 약한 몬스터가 당신을 피하게 됩니다." #!String
+    Omelet_Name: "오믈렛" #!String
+    Omelet_Description: "매우 푹신푹신합니다." #!String
+    OmniGeode_Name: "전 정동석" #!String
+    OmniGeode_Description: "대장장이가 깨서 열어줄 수 있습니다. 이 정동석은 다양한 광물을 포함하고 있습니다." #!String
+    OmniGeodeStone_Name: "전 정동석 돌" #!String
+    OmniGeodeStone_Description: "깨뜨려서 전 정동석을 얻을 수 있습니다." #!String
+    Opal_Name: "오팔" #!String
+    Opal_Description: "내부 구조 덕에 반사되는 빛이 무지갯빛을 냅니다." #!String
+    Orange_Name: "오렌지" #!String
+    Orange_Description: "즙이 많고, 시큼한 맛이 나는 여름의 향이 물씬 나는 과일." #!String
+    OrangeSapling_Name: "오렌지나무 묘목" #!String
+    OrangeSapling_Description: "28일 후 성목이 됩니다. 여름에 열매가 맺힙니다. 주변 8칸이 비어있어야 자랍니다." #!String
+    OrnamentalFan_Name: "화려한 부채" #!String
+    OrnamentalFan_Description: "이 아름다운 부채는 귀족 여성의 것으로 추정됩니다. 역사학자들에 의하면 계곡은 6번째 시대 즈음에 상류층들이 자주 가는 휴양지였다고 합니다." #!String
+    OrnateNecklace_Name: "화려한 목걸이" #!String
+    OrnateNecklace_Description: "온천 근처에서 발견한 화려한 목걸이. 아직 축축합니다..." #!String
+    Orpiment_Name: "석웅황" #!String
+    Orpiment_Description: "독성이 강하지만, 이 광물은 여러 가지 제조업과 민간요법에 사용됩니다." #!String
+    OstrichEgg_Name: "타조알" #!String
+    OstrichEgg_Description: "세상에서 가장 큰 알일 수도 있습니다." #!String
+    Oyster_Name: "굴" #!String
+    Oyster_Description: "먹거리를 찾기 위해 꾸준히 물을 여과시킵니다. 이 과정에서 주변의 위험한 독소를 제거합니다." #!String
+    PaleAle_Name: "페일 에일" #!String
+    PaleAle_Description: "음주는 적당히." #!String
+    PaleBroth_Name: "창백한 죽" #!String
+    PaleBroth_Description: "유황 냄새가 살짝 나는 미묘한 죽입니다." #!String
+    PalmFossil_Name: "야자 화석" #!String
+    PalmFossil_Description: "야자 화석은 흔하지만, 이것은 특히나 잘 보존된 표본입니다." #!String
+    Pancakes_Name: "팬케이크" #!String
+    Pancakes_Description: "폭신하고 부드러운 팬케이크 두개." #!String
+    Parsnip_Name: "파스닙" #!String
+    Parsnip_Description: "당근과 비슷한, 봄철 덩이줄기 식물. 대지의 맛이 나고 영양분이 듬뿍 들어있습니다." #!String
+    ParsnipSeeds_Name: "파스닙 씨앗" #!String
+    ParsnipSeeds_Description: "봄 작물. 성장하려면 4일 소요됩니다." #!String
+    ParsnipSoup_Name: "설탕당근 스프" #!String
+    ParsnipSoup_Description: "신선하고 든든합니다." #!String
+    Peach_Name: "복숭아" #!String
+    Peach_Description: "만져보면 보송보송합니다." #!String
+    PeachSapling_Name: "복숭아나무 묘목" #!String
+    PeachSapling_Description: "28일 후 성목이 됩니다. 여름에 열매가 맺힙니다. 주변 8칸이 비어있어야 자랍니다." #!String
+    Pearl_Name: "진주" #!String
+    Pearl_Description: "바다에서 온 진귀한 보물." #!String
+    PepperPoppers_Name: "페퍼 파퍼" #!String
+    PepperPoppers_Description: "치즈로 채운 매콤한 피망을 브레딩 한 요리." #!String
+    PepperSeeds_Name: "고추 씨앗" #!String
+    PepperSeeds_Description: "여름 작물. 성장하려면 5일 소요되며, 수확한 후에도 계속 작물이 생산됩니다." #!String
+    Perch_Name: "농어" #!String
+    Perch_Description: "겨울의 민물고기." #!String
+    Periwinkle_Name: "충알고둥" #!String
+    Periwinkle_Description: "푸른 껍데기 속에 사는 작은 민물 달팽이." #!String
+    PetLicense_Name: "반려동물 면허" #!String
+    PetLicense_Description: "집에 새로운 반려동물을 들입니다. 반려동물용 그릇이 부족하다면, 동물이 속상해할 겁니다." #!String
+    PetrifiedSlime_Name: "석화된 슬라임" #!String
+    PetrifiedSlime_Description: "한 100,000년쯤 되어 보입니다." #!String
+    PhoenixRing_Name: "불사조 반지" #!String
+    PhoenixRing_Description: "전투에서 쓰러지는 대신 체력을 회복합니다. 하루에 한 번 효과를 받을 수 있습니다." #!String
+    Pickles_Name: "피클" #!String
+    Pickles_Description: "손수 만든 피클 한 병." #!String
+    Pickles_Flavored_Name: "{0} 절임" #!String
+    PierresMissingStocklist_Name: "피에르의 잃어버린 재고 목록" #!String
+    PierresMissingStocklist_Description: "피에르가 관심 있어 할 물건 같습니다." #!String
+    Pike_Name: "강꼬치고기" #!String
+    Pike_Description: "잡기 어려운 민물고기." #!String
+    PinaColada_Name: "피나콜라다" #!String
+    PinaColada_Description: "음주는 절제해서." #!String
+    Pineapple_Name: "파인애플" #!String
+    Pineapple_Description: "새콤달콤한 열대 별미." #!String
+    PineappleSeeds_Name: "파인애플 씨앗" #!String
+    PineappleSeeds_Description: "따뜻한 기후에 심으세요. 성장하려면 14일 소요됩니다. 지속적으로 과일을 생산합니다." #!String
+    PineCone_Name: "솔방울" #!String
+    PineCone_Description: "심으면 소나무가 자랍니다." #!String
+    PineTar_Name: "소나무 타르" #!String
+    PineTar_Description: "소나무 수액에서 얻은 향이 강한 물질." #!String
+    PinkCake_Name: "핑크 케이크" #!String
+    PinkCake_Description: "작은 하트 모양 사탕이 올려져 있습니다." #!String
+    PiratesLocket_Name: "해적의 로켓 목걸이" #!String
+    PiratesLocket_Description: "늙은 해적의 유품입니다." #!String
+    Pizza_Name: "피자" #!String
+    Pizza_Description: "여러 가지 타당한 이유로 인기있는 음식." #!String
+    PlumPudding_Name: "자두 푸딩" #!String
+    PlumPudding_Description: "축제 기간의 전통적인 간식." #!String
+    Poi_Name: "포이" #!String
+    Poi_Description: "갓 만들어 먹으면 우아한 단맛이 나는 전통음식." #!String
+    Pomegranate_Name: "석류" #!String
+    Pomegranate_Description: "과일 안에 즙 많은 씨앗이 뭉쳐있습니다." #!String
+    PomegranateSapling_Name: "석류나무 묘목" #!String
+    PomegranateSapling_Description: "28일 후 성목이 됩니다. 가을에 열매가 맺힙니다. 주변 8칸이 비어있어야 자랍니다." #!String
+    Poppy_Name: "양귀비" #!String
+    Poppy_Description: "색이 화려한 꽃 외에도, 요리 혹은 약재로도 사용됩니다." #!String
+    PoppyseedMuffin_Name: "양귀비씨 머핀" #!String
+    PoppyseedMuffin_Description: "마음을 진정시키는 효과가 있습니다." #!String
+    PoppySeeds_Name: "양귀비 씨앗" #!String
+    PoppySeeds_Description: "여름에 심으세요. 7일 후 밝은 붉은색 꽃이 핍니다." #!String
+    Potato_Name: "감자" #!String
+    Potato_Description: "널리 재배되는 덩이줄기 식물." #!String
+    PotatoSeeds_Name: "감자 씨앗" #!String
+    PotatoSeeds_Description: "봄 작물. 성장하려면 6일 소요되며, 한번 수확할 때 여러 개 수확할 확률이 있습니다." #!String
+    Powdermelon_Name: "파우더멜론" #!String
+    Powdermelon_Description: "표면에 형성되는 가루 같은 코팅이 있는 멜론. 아삭한 식감에 달콤하고 섬세한 풍미가 있습니다." #!String
+    PowdermelonSeeds_Name: "파우더멜론 씨앗" #!String
+    PowdermelonSeeds_Description: "이 특별한 멜론은 겨울에 자랍니다. 성장하려면 7일 소요됩니다." #!String
+    PrehistoricHandaxe_Name: "선사 시대 손도끼" #!String
+    PrehistoricHandaxe_Description: "인간들이 사용한 거의 최초의 도구. 이 \"투박한\" 도구는 돌 두개를 서로 부딪혀 날카로운 면을 만들어서 제작했습니다." #!String
+    PrehistoricRib_Name: "선사 시대 늑골" #!String
+    PrehistoricRib_Description: "여기저기 찔린 자국이 있는것으로 보아 이 갈비뼈는 누군가의 저녁식사였던 듯합니다." #!String
+    PrehistoricScapula_Name: "선사 시대 견갑골" #!String
+    PrehistoricScapula_Description: "흔히 \"어깨뼈\"로 알려져 있습니다... 어느 종의 뼈인지는 확실하지 않습니다." #!String
+    PrehistoricSkull_Name: "선사 시대 두개골" #!String
+    PrehistoricSkull_Description: "분명 포유류의 두개골입니다." #!String
+    PrehistoricTibia_Name: "선사 시대 경골" #!String
+    PrehistoricTibia_Description: "두껍고 튼튼한 다리뼈." #!String
+    PrehistoricTool_Name: "선사 시대 도구" #!String
+    PrehistoricTool_Description: "엄청나고 오래된, 땅 파는 도구의 한 종류." #!String
+    PrehistoricVertebra_Name: "선사 시대 척추골" #!String
+    PrehistoricVertebra_Description: "어떤 선사 시대 동물의 척추의 일부분입니다." #!String
+    PressureNozzle_Name: "고압 노즐" #!String
+    PressureNozzle_Description: "스프링클러에 설치하면 물을 뿌리는 범위가 증가합니다." #!String
+    PrismaticJelly_Name: "무지갯빛 젤리" #!String
+    PrismaticJelly_Description: "희귀한 무지갯빛 슬라임에게서 수확할 수 있습니다." #!String
+    PrismaticShard_Name: "무지갯빛 파편" #!String
+    PrismaticShard_Description: "유래를 알 수 없는 매우 희귀하고 강력한 물질." #!String
+    PrizeTicket_Name: "경품 티켓" #!String
+    PrizeTicket_Description: "루이스의 집에 있는 경품 기계에 제출해서 특별한 보상을 받으세요." #!String
+    ProtectionRing_Name: "보호의 반지" #!String
+    ProtectionRing_Description: "피해를 입은 후, 무적 상태가 조금 길어집니다." #!String
+    Pufferfish_Name: "복어" #!String
+    Pufferfish_Description: "위협을 받으면 부풀어 오릅니다." #!String
+    Pumpkin_Name: "호박" #!String
+    Pumpkin_Description: "가을철을 대표하는 작물로, 바삭한 씨앗과 미묘한 맛의 과육이 인기 있습니다. 추가로, 비워낸 껍질로 축제 분위기의 장식을 만들 수 있습니다." #!String
+    PumpkinPie_Name: "호박 파이" #!String
+    PumpkinPie_Description: "쉽게 부서지는 껍질 속에 든 부드러운 호박 크림." #!String
+    PumpkinSeeds_Name: "호박 씨앗" #!String
+    PumpkinSeeds_Description: "가을 작물. 성장하려면 13일 소요됩니다." #!String
+    PumpkinSoup_Name: "호박죽" #!String
+    PumpkinSoup_Description: "인기 있는 계절메뉴." #!String
+    PurpleBook_Name: "별의 책" #!String
+    PurpleBook_Description: "이 책을 읽으면 모든 스킬 경험치를 획득합니다." #!String
+    PurpleMushroom_Name: "보라색 버섯" #!String
+    PurpleMushroom_Description: "동굴 깊은 곳에서 발견되는 희귀한 버섯." #!String
+    PurpleSlimeEgg_Name: "보라색 슬라임 알" #!String
+    PurpleSlimeEgg_Description: "슬라임 부화기에서 부화시킬 수 있습니다." #!String
+    Pyrite_Name: "황철석" #!String
+    Pyrite_Description: "\"바보의 황금\"이라고 흔히 알려져 있습니다." #!String
+    QiBean_Name: "치 콩" #!String
+    QiBean_Description: "모든 계절에 심을 수 있습니다. 매일 물을 주면 치 열매가 맺힙니다. 성장하려면 4일 소요됩니다." #!String
+    QiFruit_Name: "치 열매" #!String
+    QiFruit_Description: "미스터 치가 500개를 배송하라는 도전을 부여한 이상한 멜론." #!String
+    QiGem_Name: "치 보석" #!String
+    QiGem_Description: "미스터 치만의 특별한 화폐." #!String
+    QiSeasoning_Name: "치의 양념" #!String
+    QiSeasoning_Description: "조금만 뿌려도 모든 요리의 수준이 현저히 높아집니다. 요리할 때 자동으로 사용됩니다." #!String
+    QualityBobber_Name: "고급 찌" #!String
+    QualityBobber_Description: "낚아올린 물고기의 등급을 향상시킵니다." #!String
+    QualityFertilizer_Name: "고급 비료" #!String
+    QualityFertilizer_Description: "토양의 질을 향상시켜 더 높은 등급의 작물이 자랄 확률을 높입니다. 호미질한 땅에 섞어 쓰십시오" #!String
+    QualityRetainingSoil_Name: "고급 보습 토양" #!String
+    QualityRetainingSoil_Description: "수분을 잃지 않을 확률이 높은 토양. 호미질한 땅에 섞어 쓰십시오." #!String
+    QualitySprinkler_Name: "고급 스프링클러" #!String
+    QualitySprinkler_Description: "매일 아침 주변 8칸에 물을 뿌립니다." #!String
+    Quartz_Name: "석영" #!String
+    Quartz_Description: "동굴이나 광산에서 주로 발견되는 투명한 수정." #!String
+    RabbitsFoot_Name: "토끼발" #!String
+    RabbitsFoot_Description: "행운을 가져다준다고 하는 사람들도 있습니다." #!String
+    RadioactiveBar_Name: "방사능 주괴" #!String
+    RadioactiveBar_Description: "주주 시티 안전 위원회에서 영구적인 신체적 위해를 입을 수 있다고 경고합니다." #!String
+    RadioactiveCarp_Name: "방사능 잉어" #!String
+    RadioactiveCarp_Description: "독성 물질에서 너무 오래 헤엄쳤던 걸까요." #!String
+    RadioactiveOre_Name: "방사능 광석" #!String
+    RadioactiveOre_Description: "위험한 에너지로 빛이 납니다... 제련해서 주괴를 만들 수 있습니다." #!String
+    RadioactiveStone_Name: "방사능 돌" #!String
+    RadioactiveStone_Description: "방사능 광석이 들어있습니다." #!String
+    Radish_Name: "무" #!String
+    Radish_Description: "바삭하고 시원한 뿌리채소. 날로 먹으면 고추 맛이 살짝 납니다." #!String
+    RadishSalad_Name: "무 샐러드" #!String
+    RadishSalad_Description: "무가 무척 아삭합니다!" #!String
+    RadishSeeds_Name: "무 씨앗" #!String
+    RadishSeeds_Description: "여름 작물. 성장하려면 6일 소요됩니다." #!String
+    RainbowShell_Name: "무지개 껍데기" #!String
+    RainbowShell_Description: "아주 아름다운 껍데기." #!String
+    RainbowTrout_Name: "무지개송어" #!String
+    RainbowTrout_Description: "무늬가 화려한 민물송어." #!String
+    RainTotem_Name: "비의 토템" #!String
+    RainTotem_Description: "사용하면 내일 비가 올 확률을 크게 높일 수 있습니다. 사용 시 소모됩니다." #!String
+    Raisins_Name: "건포도" #!String
+    Raisins_Description: "주니모가 가장 좋아하는 음식이라고 합니다." #!String
+    RareDisc_Name: "희귀한 원반" #!String
+    RareDisc_Description: "특이한 붉은 돌이 박혀있는 무거운 검은색 원반. 들고 있으면, 두려운 기분에 휩싸입니다." #!String
+    RareSeed_Name: "희귀한 씨앗" #!String
+    RareSeed_Description: "가을에 심으십시오. 자라기까지 한 계절이 소요됩니다." #!String
+    RedCabbage_Name: "붉은 양배추" #!String
+    RedCabbage_Description: "샐러드나 코울슬로를 만들 때 자주 쓰이는 채소. 토양 환경에 따라 색이 보라색, 푸른색, 연두색으로 다양합니다." #!String
+    RedCabbageSeeds_Name: "붉은 양배추 씨앗" #!String
+    RedCabbageSeeds_Description: "여름 작물. 성장하려면 9일 소요됩니다." #!String
+    RedMullet_Name: "숭어" #!String
+    RedMullet_Description: "예전에는 애완용으로 키우기도 했습니다." #!String
+    RedMushroom_Name: "붉은 버섯" #!String
+    RedMushroom_Description: "동굴에서 발견되는 얼룩무늬 버섯." #!String
+    RedPlate_Name: "붉은 정식" #!String
+    RedPlate_Description: "항산화물질이 가득합니다." #!String
+    RedSlimeEgg_Name: "붉은 슬라임 알" #!String
+    RedSlimeEgg_Description: "슬라임 부화기에서 부화시킬 수 있습니다." #!String
+    RedSnapper_Name: "붉은 퉁돔" #!String
+    RedSnapper_Description: "멋진 붉은색의 인기 많은 생선." #!String
+    RefinedQuartz_Name: "정제된 석영" #!String
+    RefinedQuartz_Description: "좀 더 순수한 석영의 형태." #!String
+    Rhubarb_Name: "대황" #!String
+    Rhubarb_Description: "줄기가 굉장히 시큼하지만, 달콤하게 요리하면 좋은 디저트가 됩니다." #!String
+    RhubarbPie_Name: "대황 파이" #!String
+    RhubarbPie_Description: "으음, 톡 쏘는 단맛!" #!String
+    RhubarbSeeds_Name: "대황 씨앗" #!String
+    RhubarbSeeds_Description: "봄 작물. 성장하려면 13일 소요됩니다." #!String
+    Rice_Name: "쌀" #!String
+    Rice_Description: "야채와 자주 함께 먹는 기본적인 곡물." #!String
+    RicePudding_Name: "라이스 푸딩" #!String
+    RicePudding_Description: "크림 같고 달달하고 먹는 재미가 있습니다." #!String
+    RiceShoot_Name: "쌀 새싹" #!String
+    RiceShoot_Description: "봄 작물. 성장하려면 8일 소요됩니다. 수역 근처에 심으면 더 빨리 자랍니다. 낫으로 수확할 수 있습니다." #!String
+    RingofYoba_Name: "요바의 반지" #!String
+    RingofYoba_Description: "가끔 착용자를 피해로부터 보호해줍니다." #!String
+    RiverJelly_Name: "강 젤리" #!String
+    RiverJelly_Description: "민물에서 발견되는 희귀한 젤리." #!String
+    RoastedHazelnuts_Name: "구운 헤이즐넛" #!String
+    RoastedHazelnuts_Description: "굽는 과정 덕분에 진한 숲의 맛이 납니다." #!String
+    Roe_Name: "어란" #!String
+    Roe_Description: "싱선한 생선 알. 절임통에 담아서 더 깊은 맛이 나도록 숙성시킬 수 있습니다." #!String
+    Roe_Flavored_Name: "{0} 어란" #!String
+    RootsPlatter_Name: "뿌리채소 모음" #!String
+    RootsPlatter_Description: "더 먹기위해 땅을 파게 만드는 맛." #!String
+    RottenPlant_Name: "썩은 식물" #!String
+    RottenPlant_Description: "부패 중인 유기 물질. 끈적이고 불쾌합니다." #!String
+    Ruby_Name: "루비" #!String
+    Ruby_Description: "진한 색과 아름다운 광택 덕에 많은 이들이 원하는 보석." #!String
+    RubyRing_Name: "루비 반지" #!String
+    RubyRing_Description: "공격력을 10% 증가시켜줍니다." #!String
+    RubyStone_Name: "루비석" #!String
+    RubyStone_Description: "깨뜨려서 루비를 얻을 수 있습니다." #!String
+    RusticPlankFloor_Name: "소박한 판자 바닥" #!String
+    RusticPlankFloor_Description: "바닥을 장식하거나 길을 만들 수 있습니다." #!String
+    RustyCog_Name: "녹슨 톱니바퀴" #!String
+    RustyCog_Description: "어떤 고대 기계의 일부로 보이는, 모양이 잘 보존된 톱니바퀴. 드워프 기술일 수도 있습니다." #!String
+    RustySpoon_Name: "녹슨 숟가락" #!String
+    RustySpoon_Description: "10년은 되어 보이는 평범한 숟가락. 그렇게 흥미롭진 않습니다." #!String
+    RustySpur_Name: "녹슨 징" #!String
+    RustySpur_Description: "한때 카우보이의 장화에 붙어 있었을 오래된 징. 이 지역 사람들은 여러 세대 동안 동물을 키워왔던 것 같습니다." #!String
+    Salad_Name: "샐러드" #!String
+    Salad_Description: "건강한 야채샐러드" #!String
+    Salmon_Name: "연어" #!String
+    Salmon_Description: "알을 낳기 위해 상류로 헤엄칩니다." #!String
+    Salmonberry_Name: "새먼베리" #!String
+    Salmonberry_Description: "숲의 풍미가 나는 봄철 베리." #!String
+    SalmonDinner_Name: "연어 정찬" #!String
+    SalmonDinner_Description: "레몬을 뿌려서 특별하게 즐기세요." #!String
+    Sandfish_Name: "도루묵" #!String
+    Sandfish_Description: "위장색을 이용해 숨으려 합니다." #!String
+    Sandstone_Name: "사암" #!String
+    Sandstone_Description: "붉은색과 갈색 줄무늬가 있는 흔한 돌의 한 종류." #!String
+    Sap_Name: "수액" #!String
+    Sap_Description: "나무에서 채취한 액체." #!String
+    Sardine_Name: "정어리" #!String
+    Sardine_Description: "흔한 바다 생선." #!String
+    Sashimi_Name: "회" #!String
+    Sashimi_Description: "얇게 뜬 날 생선." #!String
+    SavageRing_Name: "흉포한 반지" #!String
+    SavageRing_Description: "몬스터를 처치할 때마다 잠시 속도가 빨라집니다." #!String
+    ScorpionCarp_Name: "전갈 잉어" #!String
+    ScorpionCarp_Description: "일반적인 잉어랑 비슷하지만, 날카로운 침이 있습니다." #!String
+    SeaCucumber_Name: "해삼" #!String
+    SeaCucumber_Description: "해저에서 발견되는 미끈거리고 끈적이는 생명체." #!String
+    SeafoamPudding_Name: "바다 거품 푸딩" #!String
+    SeafoamPudding_Description: "이 거친 푸딩은 당신을 해상 사고 방식으로 이끌 것입니다!" #!String
+    SeaJelly_Name: "바다 젤리" #!String
+    SeaJelly_Description: "바다에서 발견되는 희귀한 젤리." #!String
+    SeaUrchin_Name: "성게" #!String
+    SeaUrchin_Description: "천천히 움직이는 가시 돋친 생물체로, 몇몇 사람들은 진미로 취급합니다." #!String
+    Seaweed_Name: "해초" #!String
+    Seaweed_Description: "요리에 사용할 수 있습니다." #!String
+    SecretNote_Name: "비밀 쪽지" #!String
+    SecretNote_Description: "오래되고 구겨졌지만, 자세히 보면 읽을 수 있을 것 같습니다..." #!String
+    Shad_Name: "전어" #!String
+    Shad_Description: "바다에서 무리 지어 생활하지만, 알을 낳기 위해 강으로 돌아옵니다." #!String
+    Shrimp_Name: "새우" #!String
+    Shrimp_Description: "해저에서 죽은 동물을 먹는 생명체. 육질 때문에 가치가 높습니다." #!String
+    ShrimpCocktail_Name: "새우 칵테일" #!String
+    ShrimpCocktail_Description: "갓 잡은 새우로 만든 호화로운 전채요리." #!String
+    SkeletalHand_Name: "손 뼈" #!String
+    SkeletalHand_Description: "고대 시대부터 이런 작은 조각들이 지금까지 유지된 것이 신기합니다." #!String
+    SkeletalTail_Name: "꼬리 뼈" #!String
+    SkeletalTail_Description: "꼬리치고는 좀 짧습니다." #!String
+    SkillBook0_Name: "스타듀 밸리 연감" #!String
+    SkillBook0_Description: "이 책을 읽으면 농사 경험치를 획득합니다." #!String
+    SkillBook1_Name: "미끼와 찌" #!String
+    SkillBook1_Description: "이 책을 읽으면 낚시 경험치를 획득합니다." #!String
+    SkillBook2_Name: "주간 나무꾼" #!String
+    SkillBook2_Description: "이 책을 읽으면 채집 경험치를 획득합니다." #!String
+    SkillBook3_Name: "월간 광부" #!String
+    SkillBook3_Description: "이 책을 읽으면 채광 경험치를 획득합니다." #!String
+    SkillBook4_Name: "계간 전투" #!String
+    SkillBook4_Description: "이 책을 읽으면 전투 경험치를 획득합니다." #!String
+    Slate_Name: "점판암" #!String
+    Slate_Description: "물에 대한 저항력이 많이 좋아서 지붕 소재로 많이 사용됩니다." #!String
+    Slime_Name: "슬라임" #!String
+    Slime_Description: "냄새가 나지 않고 희미하게 빛나는 젤리 같은 점액 한 방울." #!String
+    SlimeCharmerRing_Name: "슬라임부리미 반지" #!String
+    SlimeCharmerRing_Description: "슬라임에게 받는 피해를 막아줍니다." #!String
+    SlimeCrate_Name: "슬라임 상자" #!String
+    SlimeCrate_Description: "이 상자를 사용해 길들여진 슬라임을 다른 장소로 데려갈 수 있습니다." #!String
+    Slimejack_Name: "슬라임잭" #!String
+    Slimejack_Description: "슬라임으로 뒤덮여있습니다. 자꾸 손에서 놓치게 됩니다!" #!String
+    SmallGlowRing_Name: "작은빛 반지" #!String
+    SmallGlowRing_Description: "적은 양의 빛이 지속적으로 납니다." #!String
+    SmallMagnetRing_Name: "작은자석 반지" #!String
+    SmallMagnetRing_Description: "아이템 수집 범위를 약간 증가시켜줍니다." #!String
+    SmallmouthBass_Name: "작은입우럭" #!String
+    SmallmouthBass_Description: "오염에 굉장히 민감한 민물고기." #!String
+    SmokedFish_Name: "훈제" #!String
+    SmokedFish_Description: "완벽하게 통으로 훈제시킨 {0}." #!String
+    SmokedFish_CollectionsTabDescription: "완벽하게 훈제한 통 생선." #!String
+    SmokedFish_CollectionsTabName: "훈제 생선" #!String
+    SmokedFish_Flavored_Name: "훈제 {0}" #!String
+    Snail_Name: "달팽이" #!String
+    Snail_Description: "서식지가 다양한, 나선형 껍데기 속에 사는 연체동물." #!String
+    SnakeSkull_Name: "뱀 두개골" #!String
+    SnakeSkull_Description: "잘 보존된 뱀 두개골." #!String
+    SnakeVertebrae_Name: "뱀 척추" #!String
+    SnakeVertebrae_Description: "보아하니 이 뱀은 극히 유연했을 것 같습니다." #!String
+    SnowYam_Name: "눈마" #!String
+    SnowYam_Description: "눈 밑에 숨어있던 작은 마." #!String
+    SnowyStone_Name: "눈 덮인 돌" #!String
+    SnowyStone_Description: "깨뜨려서 돌, 광석, 혹은 정동석을 얻을 수 있습니다." #!String
+    Soapstone_Name: "동석" #!String
+    Soapstone_Description: "부드러운 재질이라 조각품을 만드는 데에 자주 사용됩니다." #!String
+    SoggyNewspaper_Name: "젖은 신문지" #!String
+    SoggyNewspaper_Description: "쓰레기." #!String
+    SolarEssence_Name: "태양 정수" #!String
+    SolarEssence_Description: "빛나는 면에 손을 대보면 따뜻합니다." #!String
+    SonarBobber_Name: "음파탐지 찌" #!String
+    SonarBobber_Description: "잡기 전에 줄에 잡힌 물고기를 표기해 줍니다." #!String
+    SonofCrimsonfish_Name: "크림슨피쉬의 아들" #!String
+    SonofCrimsonfish_Description: "따스한 여름날 물에서 부화해, 아버지 가신 길 따라서 흐르다." #!String
+    SoulSapperRing_Name: "영혼을 거두는 반지" #!String
+    SoulSapperRing_Description: "적을 처치할 때마다 기력을 조금 회복합니다." #!String
+    Spaghetti_Name: "스파게티" #!String
+    Spaghetti_Description: "예로부터 많이들 좋아한 요리." #!String
+    SpangleSeeds_Name: "여름별꽃 씨앗" #!String
+    SpangleSeeds_Description: "여름에 심으세요. 8일 후 강렬한 색의 열대지방 꽃이 핍니다. 여러가지 색이 있습니다." #!String
+    SpecificBait_Name: "미끼" #!String
+    SpecificBait_Description: "{0}을(를) 잡을 확률을 높여줍니다." #!String
+    SpecificBait_Flavored_Name: "{0} 미끼" #!String
+    SpeedGro_Name: "성장 촉진제" #!String
+    SpeedGro_Description: "잎이 피는 것을 촉진합니다. 성장 속도를 최소 10% 빠르게 해줍니다. 호미질한 땅에 섞어 쓰십시오." #!String
+    SpiceBerry_Name: "백량금" #!String
+    SpiceBerry_Description: "톡 쏘는 향이 납니다." #!String
+    SpicyEel_Name: "매콤한 장어" #!String
+    SpicyEel_Description: "정말 맵습니다! 조심하세요." #!String
+    Spinner_Name: "회전식 미끼" #!String
+    Spinner_Description: "특유의 모양 때문에 물속에서 회전합니다. 낚시 중에 물고기가 무는 속도를 약간 증가시켜줍니다." #!String
+    SpiritTorch_Name: "영혼 횃불" #!String
+    SpiritTorch_Description: "왜 파란색인지는 불분명합니다..." #!String
+    SpookFish_Name: "통안어" #!String
+    SpookFish_Description: "큰 눈으로 먹이의 희미한 실루엣도 감지해냅니다." #!String
+    SpringOnion_Name: "파" #!String
+    SpringOnion_Description: "봄에 야생에서 자랍니다." #!String
+    SpringSeeds_Name: "봄 씨앗 모음" #!String
+    SpringSeeds_Description: "봄철의 야생 씨앗 모음." #!String
+    Sprinkler_Name: "스프링클러" #!String
+    Sprinkler_Description: "매일 아침 주변 4칸에 물을 뿌립니다." #!String
+    Squid_Name: "오징어" #!String
+    Squid_Description: "거대한 크기로 자랄 수 있는 심해 생명체." #!String
+    SquidInk_Name: "오징어 먹물" #!String
+    SquidInk_Description: "포식자에게 혼란을 주기 위해 오징어가 사용합니다." #!String
+    SquidInkRavioli_Name: "오징어 먹물 라비올리" #!String
+    SquidInkRavioli_Description: "디버프 효과를 방지합니다." #!String
+    StardewValleyRose_Name: "스타듀 밸리 장미" #!String
+    StardewValleyRose_Description: "스타듀 밸리를 생각나게 하는 장미. 훌륭한 향이 납니다." #!String
+    Stardrop_Name: "별방울" #!String
+    Stardrop_Description: "먹는 이들에게 힘을 주는 신비로운 열매. 맛은 마치 꿈같습니다... 인상이 강렬해서 잊기 힘들지만, 다른 사람에게 형언하기 힘든 맛입니다." #!String
+    StardropTea_Name: "별방울차" #!String
+    StardropTea_Description: "그 누구라도 좋아할 특별한 선물." #!String
+    Starfruit_Name: "스타프루트" #!String
+    Starfruit_Description: "덥고 습한 환경에서 자라는 즙이 많은 과일. 새콤달콤한 맛이 납니다." #!String
+    StarfruitSeeds_Name: "스타프루트 씨앗" #!String
+    StarfruitSeeds_Description: "여름 작물. 성장하려면 13일 소요됩니다." #!String
+    StarShards_Name: "별조각" #!String
+    StarShards_Description: "아무도 이것이 어떻게 형성되었는지 모릅니다. 몇몇 과학자에 의하면 미세한 구조가 부자연스러운 규칙성을 나타낸다고 주장합니다." #!String
+    SteppingStonePath_Name: "디딤돌 길" #!String
+    SteppingStonePath_Description: "바닥을 장식하거나 길을 만들 수 있습니다." #!String
+    Stingray_Name: "가오리" #!String
+    Stingray_Description: "독침이 있지만, 겁이 많아 사람을 피합니다." #!String
+    StirFry_Name: "야채 볶음" #!String
+    StirFry_Description: "흰쌀밥 위에 얹은 잘게 썰은 야채 모음." #!String
+    Stone_Name: "돌" #!String
+    Stone_Description: "제작과 건설에 많이 사용되는 흔한 재료." #!String
+    Stone_Node_Name: "돌" #!String
+    Stone_Node_Description: "깨뜨려서 돌, 광석, 혹은 정동석을 얻을 수 있습니다." #!String
+    Stone_NodeStoneOnly_Name: "돌" #!String
+    Stone_NodeStoneOnly_Description: "깨뜨려서 돌을 얻을 수 있습니다." #!String
+    Stone_NodeWithCoal_Name: "돌" #!String
+    Stone_NodeWithCoal_Description: "깨뜨려서 돌 혹은 작은 확률로 석탄을 얻을 수 있습니다." #!String
+    StoneBase_Name: "돌 기반" #!String
+    StoneBase_Description: "사각형 모양의 돌." #!String
+    StoneFence_Name: "돌 울타리" #!String
+    StoneFence_Description: "나무 울타리보다 오래 지속됩니다." #!String
+    Stonefish_Name: "쑥치" #!String
+    Stonefish_Description: "벽돌 모양의 기이한 생선." #!String
+    StoneFloor_Name: "돌 바닥" #!String
+    StoneFloor_Description: "바닥을 장식하거나 길을 만들 수 있습니다." #!String
+    StoneWalkwayFloor_Name: "돌길 바닥" #!String
+    StoneWalkwayFloor_Description: "바닥을 장식하거나 길을 만들 수 있습니다." #!String
+    StrangeBun_Name: "수상한 롤" #!String
+    StrangeBun_Description: "안에 무엇이 들었을까?" #!String
+    StrangeDoll_Name: "이상한 인형" #!String
+    StrangeDoll_Description: "???" #!String
+    Strawberry_Name: "딸기" #!String
+    Strawberry_Description: "많은 사람들이 좋아하는 달콤하고 과즙이 많은 매력적인 붉은색 과일." #!String
+    StrawberrySeeds_Name: "딸기 씨앗" #!String
+    StrawberrySeeds_Description: "봄 작물. 성장하려면 8일 소요되고, 그 후로 꾸준히 딸기를 생산합니다." #!String
+    StrawFloor_Name: "짚 바닥" #!String
+    StrawFloor_Description: "바닥을 장식하거나 길을 만들 수 있습니다." #!String
+    Stuffing_Name: "요리용 속" #!String
+    Stuffing_Description: "아아... 따뜻한 빵과 세이지 향기." #!String
+    SturdyRing_Name: "튼튼한 반지" #!String
+    SturdyRing_Description: "상태 이상의 지속시간을 반으로 줄여줍니다." #!String
+    Sturgeon_Name: "철갑상어" #!String
+    Sturgeon_Description: "개체 수가 점점 줄어들고 있는, 호수 바닥에서 먹이를 찾는 고대 물고기. 암컷의 수명은 150년 정도 됩니다." #!String
+    Sugar_Name: "설탕" #!String
+    Sugar_Description: "페이스트리 혹은 캔디에 단맛을 가미할 수 있습니다. 너무 많이 넣으면 건강에 해롭습니다." #!String
+    SummerSeeds_Name: "여름 씨앗 모음" #!String
+    SummerSeeds_Description: "여름철의 야생 씨앗 모음." #!String
+    SummerSpangle_Name: "여름별꽃" #!String
+    SummerSpangle_Description: "여름의 습한 기후에서 잘 자라는 열대지방의 꽃. 달콤하고 톡 쏘는 향이 납니다." #!String
+    SummerSquash_Name: "여름호박" #!String
+    SummerSquash_Description: "아직 어리고 부드러울 때 수확한 휘어있는 노란색 호박." #!String
+    SummerSquashSeeds_Name: "여름호박 씨앗" #!String
+    SummerSquashSeeds_Description: "여름 작물. 성장하려면 6일 소요되며, 수확한 후에도 계속 작물이 생산됩니다." #!String
+    Sunfish_Name: "선피쉬" #!String
+    Sunfish_Description: "강의 흔한 어류." #!String
+    Sunflower_Name: "해바라기" #!String
+    Sunflower_Description: "이 꽃이 항상 태양을 보기위해 돌아간다는 오해가 있습니다." #!String
+    SunflowerSeeds_Name: "해바라기 씨앗" #!String
+    SunflowerSeeds_Description: "여름이나 가을에 심으세요. 8일 후 큰 해바라기 꽃이 핍니다. 수확하면 더 많은 씨앗을 얻을 수 있습니다." #!String
+    SuperCucumber_Name: "슈퍼해삼" #!String
+    SuperCucumber_Description: "희귀한 보랏빛 해삼." #!String
+    SuperMeal_Name: "슈퍼 건강식" #!String
+    SuperMeal_Description: "원기보충하기 딱 좋은 식사." #!String
+    SupplyCrate_Name: "보급품 상자" #!String
+    SupplyCrate_Description: "..." #!String
+    SurvivalBurger_Name: "생존형 버거" #!String
+    SurvivalBurger_Description: "탐험가를 위한 간편한 간식." #!String
+    SweetGemBerry_Name: "달콤보석베리" #!String
+    SweetGemBerry_Description: "지금껏 맡아본 향 중 제일 달콤합니다." #!String
+    SweetPea_Name: "스위트피" #!String
+    SweetPea_Description: "향긋한 여름철 꽃." #!String
+    TaroRoot_Name: "토란" #!String
+    TaroRoot_Description: "전분 많은 이 뿌리는 가장 오래된 작물 중 하나입니다." #!String
+    TaroTuber_Name: "토란 줄기" #!String
+    TaroTuber_Description: "따뜻한 기후에 심으세요. 성장하려면 10일 소요됩니다. 물 근처에 심으면 더 빨리 자랍니다." #!String
+    TeaLeaves_Name: "찻잎" #!String
+    TeaLeaves_Description: "차 나무의 어린 잎사귀. 기운을 북돋아주는 인기 있는 음료를 우려낼 수 있습니다." #!String
+    TeaSapling_Name: "차나무 묘목" #!String
+    TeaSapling_Description: "20일 후 성목이 됩니다. 겨울을 제외한 모든 계절의 마지막 주에 찻잎을 생산합니다. 물을 줄 필요가 없습니다!" #!String
+    TeaSet_Name: "다기세트" #!String
+    TeaSet_Description: "품질 좋은 자기." #!String
+    TentKit_Name: "텐트 키트" #!String
+    TentKit_Description: "잠을 잘 수 있는 일회용 텐트를 배치합니다. 야외에서만 사용할 수 있습니다." #!String
+    ThornsRing_Name: "가시 반지" #!String
+    ThornsRing_Description: "적이 착용자에게 피해를 입히면, 적도 함께 피해를 입습니다." #!String
+    ThunderEgg_Name: "둥근 옥수" #!String
+    ThunderEgg_Description: "전설에 의하면, 화난 천둥의 정령들이 이 돌을 서로에게 던졌다고 합니다." #!String
+    Tigerseye_Name: "호안석" #!String
+    Tigerseye_Description: "반짝이는 금 한줄기 덕에 수정의 전반적인 광채가 따뜻합니다." #!String
+    TigerSlimeEgg_Name: "호랑 슬라임 알" #!String
+    TigerSlimeEgg_Description: "슬라임 부화기에서 부화시킬 수 있습니다. 극도로 주의해서 사용하세요!" #!String
+    TigerTrout_Name: "타이거 송어" #!String
+    TigerTrout_Description: "희귀한 잡종 송어로, 새끼를 가질 수 없습니다." #!String
+    Tilapia_Name: "틸라피아" #!String
+    Tilapia_Description: "따뜻한 물을 선호하며 주로 초식을 하는 생선." #!String
+    Tomato_Name: "토마토" #!String
+    Tomato_Description: "약간 시큼하고 진한 맛이 있는 토마토는 다양한 요리에 사용됩니다." #!String
+    TomatoSeeds_Name: "토마토 씨앗" #!String
+    TomatoSeeds_Description: "여름 작물. 성장하려면 11일 소요되며, 수확한 후에도 계속 작물이 생산됩니다." #!String
+    TomKhaSoup_Name: "똠카 스프" #!String
+    TomKhaSoup_Description: "믿을 수 없는 맛입니다!" #!String
+    Topaz_Name: "토파즈" #!String
+    Topaz_Description: "흔한 편이지만 아름다워서 값어치가 있습니다." #!String
+    TopazRing_Name: "토파즈 반지" #!String
+    TopazRing_Description: "무기 명중률을 10% 증가시켜줍니다." #!String
+    TopazStone_Name: "토파즈석" #!String
+    TopazStone_Description: "깨뜨려서 토파즈를 얻을 수 있습니다." #!String
+    Torch_Name: "횃불" #!String
+    Torch_Description: "적은 양의 빛을 제공합니다." #!String
+    Tortilla_Name: "또띠아" #!String
+    Tortilla_Description: "다른 음식을 담거나 따로 먹을 수도 있습니다." #!String
+    TrapBobber_Name: "함정 찌" #!String
+    TrapBobber_Description: "물고기를 잡아끌어오고 있지 않을 때 탈출 속도를 늦춥니다." #!String
+    Trash_Name: "쓰레기" #!String
+    Trash_Description: "고물입니다." #!String
+    TreasureChest_Name: "보물상자" #!String
+    TreasureChest_Description: "와우, 보물로 가득합니다! 분명 높은 가격에 팔 수 있을 겁니다." #!String
+    TreasureHunter_Name: "보물사냥꾼" #!String
+    TreasureHunter_Description: "보물을 수집하고 있을 때 물고기가 탈출하지 못합니다. 추가로 보물을 찾을 확률이 약간 늘어납니다." #!String
+    TreasureTotem_Name: "보물 토템" #!String
+    TreasureTotem_Description: "팔 수 있는 지형에서 사용하면 주변에 보물을 소환합니다." #!String
+    TreeFertilizer_Name: "나무용 비료" #!String
+    TreeFertilizer_Description: "나무에 사용하여 겨울에도 급성장시킬 수 있습니다. 과일나무에는 사용할 수 없습니다." #!String
+    Trilobite_Name: "삼엽충" #!String
+    Trilobite_Description: "게의 먼 친척으로, 이젠 멸종한지 오래입니다." #!String
+    TrimmedLuckyPurpleShorts_Name: "테두리가 장식된 행운의 보라 반바지" #!String
+    TrimmedLuckyPurpleShorts_Description: "테두리가 금빛으로 호화롭게 장식된 보라색 비단 반바지..." #!String
+    TripleShotEspresso_Name: "트리플 샷 에스프레소" #!String
+    TripleShotEspresso_Description: "일반 커피보다 강력합니다!" #!String
+    TropicalCurry_Name: "열대 카레" #!String
+    TropicalCurry_Description: "파인애플로 만든 접시에 담아 먹는 이국적이고 향긋한 카레." #!String
+    TroutDerbyTag_Name: "황금 꼬리표" #!String
+    TroutDerbyTag_Description: "송어 시합 부스에 제출해서 보상을 받을 수 있습니다." #!String
+    TroutSoup_Name: "송어 스프" #!String
+    TroutSoup_Description: "꽤 짭니다." #!String
+    Truffle_Name: "송로버섯" #!String
+    Truffle_Description: "미식가를 위한 독특한 맛이 나는 버섯." #!String
+    TruffleOil_Name: "송로버섯 오일" #!String
+    TruffleOil_Description: "고급스러운 요리 재료." #!String
+    Tulip_Name: "튤립" #!String
+    Tulip_Description: "가장 인기 있는 봄철 꽃. 은은하게 달콤한 향이 납니다." #!String
+    TulipBulb_Name: "튤립 구근" #!String
+    TulipBulb_Description: "봄에 심으세요. 6일 후 다채로운 꽃이 핍니다. 여러가지 색이 있습니다." #!String
+    Tuna_Name: "참치" #!String
+    Tuna_Description: "바다에 사는 큰 생선." #!String
+    Twig_Name: "잔가지" #!String
+    Twig_Description: "부러진 가지. 도끼로 패서 나무를 얻을 수 있습니다." #!String
+    UnmilledRice_Name: "벼" #!String
+    UnmilledRice_Description: "가공되기 전의 쌀. 풍차에서 가공해 가치를 높일 수 있습니다." #!String
+    VampireRing_Name: "흡혈 반지" #!String
+    VampireRing_Description: "몬스터를 처치할 때마다 약간의 체력을 회복합니다." #!String
+    VegetableMedley_Name: "야채의 메들리" #!String
+    VegetableMedley_Description: "영양분이 아주 많습니다." #!String
+    Vinegar_Name: "식초" #!String
+    Vinegar_Description: "다양한 요리에 사용되는 오래 숙성된 액체." #!String
+    VoidEgg_Name: "공허의 달걀" #!String
+    VoidEgg_Description: "붉은 점이 있는 칠흑 같은 색의 달걀. 만져보면 따뜻합니다." #!String
+    VoidEssence_Name: "공허 정수" #!String
+    VoidEssence_Description: "어두운 에너지로 떨리고 있습니다." #!String
+    VoidGhostPendant_Name: "공허 유령 펜던트" #!String
+    VoidGhostPendant_Description: "그림자 사람들이 중요하게 생각하는 상징. 선물로 준다면, 친구와 함께 살자는 바람을 의미합니다." #!String
+    VoidMayonnaise_Name: "공허 마요네즈" #!String
+    VoidMayonnaise_Description: "머리카락 타는 냄새가 나는 두껍고 검은 반죽." #!String
+    VoidSalmon_Name: "공허의 연어" #!String
+    VoidSalmon_Description: "공허 에너지로 뒤틀린 연어. 신선한 고기는 칠흑 같은 검은색이지만, 공기 중에 노출되면 급속도로 분홍색으로 변합니다." #!String
+    VolcanoGoldNode_Name: "황금석" #!String
+    VolcanoGoldNode_Description: "깨서 금광석을 획득할 수 있습니다." #!String
+    Walleye_Name: "월아이" #!String
+    Walleye_Description: "밤에 잡을 수 있는 민물고기." #!String
+    WarMemento_Name: "전쟁 유품" #!String
+    WarMemento_Description: "어느 병사의 빛바랜 사진입니다..." #!String
+    WarpTotemBeach_Name: "워프 토템: 해변" #!String
+    WarpTotemBeach_Description: "해변으로 순간이동합니다. 사용 시 소모됩니다." #!String
+    WarpTotemDesert_Name: "워프 토템: 사막" #!String
+    WarpTotemDesert_Description: "칼리코 사막으로 순간이동합니다. 사용 시 소모됩니다." #!String
+    WarpTotemFarm_Name: "워프 토템: 농장" #!String
+    WarpTotemFarm_Description: "집으로 순간이동합니다. 사용 시 소모됩니다." #!String
+    WarpTotemIsland_Name: "워프 토템: 섬" #!String
+    WarpTotemIsland_Description: "진저 섬으로 순간이동시켜 줍니다. 사용 시 소모됩니다." #!String
+    WarpTotemMountains_Name: "워프 토템: 산" #!String
+    WarpTotemMountains_Description: "산으로 순간이동합니다. 사용 시 소모됩니다." #!String
+    WarpTotemQisArena_Name: "워프 토템: 치의 경기장" #!String
+    WarpTotemQisArena_Description: "치의 경기장으로 순간이동시켜 줍니다. 도전을 마주할 각오를 하세요!" #!String
+    WarriorRing_Name: "전사 반지" #!String
+    WarriorRing_Description: "몬스터를 처치한 후 가끔 \"전사의 기운\"을 받습니다." #!String
+    WeatheredFloor_Name: "오래된 바닥" #!String
+    WeatheredFloor_Description: "바닥을 장식하거나 길을 만들 수 있습니다." #!String
+    WeddingRing_Name: "결혼 반지" #!String
+    WeddingRing_Description: "주주 시티의 옛 전통... 다른 농부에게 청혼을 할 때 사용됩니다." #!String
+    Weeds_Name: "잡초" #!String
+    Weeds_Description: "성가신 잡초 한 무더기." #!String
+    Weeds_DryBush_Name: "잡초" #!String
+    Weeds_DryBush_Description: "마른 덤불 한 뭉치. 섬유 혹은 씨앗 모음이 들어있을 수 있습니다." #!String
+    Weeds_Fiber_Ugly_Name: "잡초" #!String
+    Weeds_Fiber_Ugly_Description: "보기 싫은 잡초. 베어서 씨앗 모음을 획득할 수 있습니다." #!String
+    Weeds_FiberOrMixedSeeds_Name: "잡초" #!String
+    Weeds_FiberOrMixedSeeds_Description: " 섬유 혹은 씨앗 모음이 들어있을 수 있습니다." #!String
+    Weeds_FiberOrMixedSeeds_Ugly_Name: "잡초" #!String
+    Weeds_FiberOrMixedSeeds_Ugly_Description: "보기 싫은 잡초. 섬유 혹은 씨앗 모음이 들어있을 수 있습니다." #!String
+    Wheat_Name: "밀" #!String
+    Wheat_Description: " 가장 널리 재배되는 곡물 중 하나. 빵이나 케이크 요리에 적합한 가루를 만들 수 있습니다." #!String
+    WheatFlour_Name: "밀가루" #!String
+    WheatFlour_Description: "밀 씨앗을 으깨서 만든 흔한 요리 재료." #!String
+    WheatSeeds_Name: "밀 씨앗" #!String
+    WheatSeeds_Description: "여름 혹은 가을 작물. 성장하려면 4일 소요됩니다. 낫으로 수확할 수 있습니다." #!String
+    WhiteAlgae_Name: "흰 조류" #!String
+    WhiteAlgae_Description: "무척 미끈미끈합니다." #!String
+    WhiteEgg_Name: "달걀" #!String
+    WhiteEgg_Description: "평범한 흰색 달걀." #!String
+    WildBait_Name: "야생 미끼" #!String
+    WildBait_Description: "라이너스가 알려준 특수한 레시피. 동시에 물고기를 두 마리 낚을 확률이 있습니다." #!String
+    WildHorseradish_Name: "야생 고추냉이" #!String
+    WildHorseradish_Description: "봄에 볼 수 있는 매콤한 식물 뿌리" #!String
+    WildPlum_Name: "야생 자두" #!String
+    WildPlum_Description: "톡 쏘는 향과 맛이 나고, 과즙이 많습니다." #!String
+    WiltedBouquet_Name: "시들은 부케" #!String
+    WiltedBouquet_Description: "누군가와 연애를 끝내고 싶을 때 주는 선물." #!String
+    Wine_Name: "와인" #!String
+    Wine_Description: "음주는 절제해서." #!String
+    Wine_Flavored_Name: "{0} 와인" #!String
+    WinterRoot_Name: "겨울뿌리" #!String
+    WinterRoot_Description: "탄수화물이 가득한 덩이줄기 식물." #!String
+    WinterSeeds_Name: "겨울 씨앗 모음" #!String
+    WinterSeeds_Description: "겨울철의 야생 씨앗 모음." #!String
+    Wood_Name: "나무" #!String
+    Wood_Description: "사용 용도가 다양한 유연하면서 견고한 식물 재료." #!String
+    WoodFence_Name: "나무 울타리" #!String
+    WoodFence_Description: "잔디와 동물을 안에 가둘 수 있습니다" #!String
+    WoodFloor_Name: "나무 바닥" #!String
+    WoodFloor_Description: "바닥을 장식하거나 길을 만들 수 있습니다." #!String
+    WoodPath_Name: "나무 길" #!String
+    WoodPath_Description: "바닥을 장식하거나 길을 만들 수 있습니다." #!String
+    Woodskip_Name: "숲고기" #!String
+    Woodskip_Description: "깊은 숲속의 웅덩이에서만 서식하는 예민한 물고기." #!String
+    Wool_Name: "털" #!String
+    Wool_Description: "부드럽고 푹신푹신한 털." #!String
+    WrigglingWorm_Name: "꿈틀거리는 지렁이" #!String
+    WrigglingWorm_Description: "꿈틀거리고 있는 축축한 지렁이." #!String
+    Yam_Name: "참마" #!String
+    Yam_Description: "다양한 요리에 사용될 수 있는 탄수화물이 많은 덩이줄기." #!String
+    YamSeeds_Name: "참마 씨앗" #!String
+    YamSeeds_Description: "가을 작물. 성장하려면 10일 소요됩니다." #!String
+

@@ -1,0 +1,29 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Fri.000: "Mexê com peixe salgado o dia todo dá uma sede!" #!String
+    spring_9.001: "Hã? Tô com um anzol no dedo. O médico vai tirá." #!String
+    winter_17.000: "Ah, nada como uma bebida quente para relaxar depois de um dia frio e sombrio..." #!String
+    spring_9.002: "Au! Isso doeu, dotô!$s" #!String
+    spring_9.000: "Tenho qui vê o médico hoje, então é mió se apressá se quisé comprá algo." #!String
+    spring_9.003: "Tenho qui mi aquecé pra mi prepará pra otra noite fria no mar.$h" #!String
+    Sat.000: "Ah... nada mió qui tomá uma gelada dispois de um dia de pesca.$h" #!String
+    winter_15.000: "Não consigo desfrutar de uma boa noite de sono com o barulho daquele mercado noturno... mas tudo bem. Sou flexível." #!String
+    winter.000: "Tenho qui mi aquecé pra mi prepará pra otra noite fria no mar.$h" #!String
+    winter_16.000: "Você já andou no submarino? O capitão é um velho amigo." #!String
+

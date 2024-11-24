@@ -1,0 +1,106 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    BraveLittleSapling_Title: "Il Piccolo Arboscello Coraggioso" #!String
+    BraveLittleSapling_Description: "Una commedia d'animazione per la famiglia su un piccolo germoglio e la sua magica avventura per diventare un albero!" #!String
+    BraveLittleSapling_Scene1: "Il Piccolo Arboscello Coraggioso" #!String
+    BraveLittleSapling_Scene2: "Il piccolo arboscello coraggioso se ne sta andando di casa. Esita un momento e si volta indietro, sapendo che non tornerà per molto tempo..." #!String
+    BraveLittleSapling_Scene3: "Gli altri arboscelli del suo boschetto si sono raccolti al limite del paese, e lo salutano emozionati agitando i rametti...!" #!String
+    BraveLittleSapling_Scene4: "Oh no! Tutt'a un tratto comincia a piovere...! Il piccolo arboscello si mette a correre, mentre nubi temporalesche incombono su di lui..." #!String
+    BraveLittleSapling_Scene5: "Temendo per la propria vita, e demoralizzato dall'acquazzone incessante, il piccolo arboscello coraggioso inizia a perdere le speranze..." #!String
+    BraveLittleSapling_Scene6: "...Ma cosa succede...? L'arboscello sente un pizzicorino in cima alla testa... " #!String
+    BraveLittleSapling_Scene7: "Forse gli serviva un po' di pioggia per cominciare il suo viaggio per diventare un albero!" #!String
+    BraveLittleSapling_Scene8: "Addio, piccolo amico!" #!String
+    Mysterium_Title: "Mysterium" #!String
+    Mysterium_Description: "Sbircia oltre il velo della mezzanotte... Bisogna vedere per credere!" #!String
+    Mysterium_Scene1: "'Mysterium'" #!String
+    Mysterium_Scene2: "Una sagoma tenue nel buio..." #!String
+    Mysterium_Scene5: "Il vuoto desolato e ignoto dello spazio... dove si celano orrori innominabili." #!String
+    Mysterium_Scene8: "Si snoda una lunga sequenza di scene sconnesse e ultraterrene..." #!String
+    Mysterium_Scene10: "'Devi ASSOLUTAMENTE dire ai tuoi amici di vedere MYSTERIUM stanotte...'" #!String
+    Mysterium_Scene11: "'...O ti farò visita nel sonno!'" #!String
+    JourneyOfThePrairieKing_Title: "Viaggio del Re della Prateria: il Film" #!String
+    JourneyOfThePrairieKing_Description: "Il celebre videogioco arriva sul grande schermo!" #!String
+    JourneyOfThePrairieKing_Scene1: "'Viaggio del Re della Prateria: il Film'" #!String
+    JourneyOfThePrairieKing_Scene2: "Ancora una volta sul vecchio sentiero polveroso, troviamo il Re della Prateria che sorveglia una carovana piena di preziosi tesori." #!String
+    JourneyOfThePrairieKing_Scene3: "Ma, a insaputa del nostro eroe, il fuorilegge malvagio lo sta osservando da una rupe lì accanto..." #!String
+    JourneyOfThePrairieKing_Scene4: "'Finalmente, mi sbarazzerò di quell'arrogante sceriffo e fuggirò con il tesoro... Me lo merito!'" #!String
+    JourneyOfThePrairieKing_Scene5: "'Ooops! Pare che questa valanga si diriga dritta verso la carovana.'" #!String
+    JourneyOfThePrairieKing_Scene6: "Il Re della Prateria sente un lieve rombo in lontananza... Guardate!" #!String
+    JourneyOfThePrairieKing_Scene7: "Ragionando lesto, spara un colpo." #!String
+    JourneyOfThePrairieKing_Scene8: "Ma che succede? C'è acqua che schizza dappertutto!" #!String
+    JourneyOfThePrairieKing_Scene9: "Ci è riuscito di nuovo! Il fango denso arresta la discesa della valanga." #!String
+    JourneyOfThePrairieKing_Scene10: "La carovana è salva." #!String
+    JourneyOfThePrairieKing_Scene11: "Fine." #!String
+    Wumbus_Title: "Wumbus" #!String
+    Wumbus_Description: "Un'assurda commedia fantascientifica incentrata sulla vita e sul mondo di un tipo bitorzoluto che viene da un'altra stella." #!String
+    Wumbus_Scene1: "'Wumbus'" #!String
+    Wumbus_Scene2: "Wumbus, sempre a proprio agio, si stiracchia e si gode il calore del sole del suo pianeta." #!String
+    Wumbus_Scene3: "Il suo fedele servitore, CiboBot, gli fornisce un flusso costante di dischetti di glutine fritto con 'salsa rossa'." #!String
+    Wumbus_Scene4: "Wumbus cerca di far interessare suo nipote, Rossel, alla cultura e agli eventi del sistema solare, ma Rossel non ne è colpito." #!String
+    Wumbus_Scene5: "'Pshhaw!'" #!String
+    Wumbus_Scene6: "Il film è uno spaccato di vita umoristico sullo strano mondo di Wumbus, un mondo dove la tecnologia e la società sono 'avanzate' fino a un grado estremo." #!String
+    Wumbus_Scene7: "In molte scene si tenta di suscitare l'umorismo con l'assurdità dello stile di vita moderno." #!String
+    Wumbus_Scene8: "Ma sebbene dispongano di opzioni d'intrattenimento pressoché infinite, a Wumbus e al suo gruppo di amici piace comunque riunirsi per un delizioso pasto a base di 'pizza' (formata al 100% di materiali al glutine)." #!String
+    ZuzuCityExpress_Title: "L'Espresso per Zuzu City" #!String
+    ZuzuCityExpress_Description: "Un classico molto amato, accuratamente restaurato per i cinema moderni." #!String
+    ZuzuCityExpress_Scene1: "'L'Espresso per Zuzu City'" #!String
+    ZuzuCityExpress_Scene2: "L'Espresso per Zuzu City compie un ultimo viaggio a sud, dalla costa ghiacciata... Un viaggio di tre giorni!" #!String
+    ZuzuCityExpress_Scene3: "Una giovane donna scruta fuori dal finestrino con espressione assorta." #!String
+    ZuzuCityExpress_Scene6: "Il film esplora un tema senza tempo... il conflitto tra ragione ed emozione." #!String
+    ZuzuCityExpress_Scene7: "La giovane seguirà le direttive della sua mente razionale, o gli aneliti del suo cuore?" #!String
+    ZuzuCityExpress_Scene8: "Il film finisce prima che possiamo scoprirlo..." #!String
+    MiracleAtColdstarRanch_Title: "Miracolo a Coldstar Ranch" #!String
+    MiracleAtColdstarRanch_Description: "Contro ogni aspettativa, una famiglia tiene vivo lo spirito della Stella d'inverno..." #!String
+    MiracleAtColdstarRanch_Scene1: "'Miracolo a Coldstar Ranch'" #!String
+    MiracleAtColdstarRanch_Scene2: "È la vigilia della Stella d'inverno, e sono tre settimane che nevica ininterrottamente." #!String
+    MiracleAtColdstarRanch_Scene3: "La famiglia Coldstar è isolata... arrivare fino al paese è impossibile. Per fortuna le mucche hanno abbastanza fieno per tirare avanti." #!String
+    MiracleAtColdstarRanch_Scene5: "...Ma la famiglia ha finito il cibo." #!String
+    MiracleAtColdstarRanch_Scene7: "Ma Papà Coldstar affronta comunque le intemperie per abbattere l'albero della stella d'inverno..." #!String
+    MiracleAtColdstarRanch_Scene9: "Nonostante i morsi della fame, la famiglia decora l'albero, tenendo viva la promessa della Stella d'inverno." #!String
+    MiracleAtColdstarRanch_Scene11: "Quella notte, un fenomeno insolito..." #!String
+    MiracleAtColdstarRanch_Scene12: "Il giorno dopo, Mamma Coldstar è sbalordita: l'albero è stato addobbato con un frutto cosmico." #!String
+    MiracleAtColdstarRanch_Scene12_2: "'Abbiamo creduto nella Stella d'inverno, e lei si è ricordata di noi!'" #!String
+    MiracleAtColdstarRanch_Scene13: "Si spartirono tutti l'Astropomo. Nonostante le sue piccole dimensioni, era la cosa più saziante e deliziosa che avessero mai mangiato." #!String
+    MiracleAtColdstarRanch_Scene14: "La famiglia è salva, e lo spirito della speranza è più vivo che mai. La promessa della Stella d'inverno è stata mantenuta ancora una volta..." #!String
+    NaturalWonders_Title: "Meraviglie Naturali: Esplorare il Nostro Mondo Rigoglioso" #!String
+    NaturalWonders_Description: "Fai un giro nelle terre della Repubblica di Ferngill... dalle Isole Felce fino a Zuzu City, questo mondo è pieno di vita!" #!String
+    NaturalWonders_Scene1: "'Meraviglie Naturali: Esplorare il Nostro Mondo Rigoglioso'" #!String
+    NaturalWonders_Scene2: "Le Isole Felce, un paradiso tropicale a 80 miglia dalla costa meridionale. Le isole si sono formate a causa dell'attività vulcanica della regione, e si stanno ancora espandendo..." #!String
+    NaturalWonders_Scene3: "Il clima caldo dell'oceano meridionale consente un'estrema biodiversità... in breve, l'isola pullula di vita!" #!String
+    NaturalWonders_Scene4: "Muoviamoci ora a nord, verso il brusio di Zuzu City. È un mondo di acciaio e cemento, rischiarato dalla luce dei lampioni." #!String
+    NaturalWonders_Scene5: "Le condizioni possono essere dure, ma troviamo pur sempre un'abbondanza di vita..." #!String
+    NaturalWonders_Scene6: "Nel lontano ovest, sola nella vastità del Mar di Gemme, giace l'Isola Prateria. Nonostante il suo nome, questa terra accoglie una gamma variegata di biomi naturali." #!String
+    NaturalWonders_Scene7: "L'isola è famosa per la sua numerosa popolazione di procioni!" #!String
+    NaturalWonders_Scene8: "Ritorniamo infine sul continente, per visitare una delle zone più belle della nazione... Stardew Valley." #!String
+    NaturalWonders_Scene9: "Il clima temperato della valle funge da habitat ideale per una grande varietà di insetti e di creature boschive. Che luogo meraviglioso!" #!String
+    ItHowlsInTheRain_Title: "Urla nella Pioggia" #!String
+    ItHowlsInTheRain_Description: "Un gruppo di ragazzi si mette in viaggio per scoprire l'origine di un suono misterioso. (È necessaria la presenza di un adulto)" #!String
+    ItHowlsInTheRain_Scene1: "Urla nella Pioggia" #!String
+    ItHowlsInTheRain_Scene2: "'Le riprese che seguono sono state recuperate da una videocamera abbandonata a 30 miglia a sud di Grampleton'" #!String
+    ItHowlsInTheRain_Scene3: "'Avete sentito? Credo che provenisse da quei boschi... Andiamo...'" #!String
+    ItHowlsInTheRain_Scene4: "'(Respiri pesanti)... Guardate!'" #!String
+    ItHowlsInTheRain_Scene5: "(La videocamera avanza barcollando nella foresta)" #!String
+    ItHowlsInTheRain_Scene6: "'Oh, sei solo tu, Gary... *respiri affannosi*... Smettila di tenermi il braccio!'" #!String
+    ItHowlsInTheRain_Scene6_2: "Agh! " #!String
+    ItHowlsInTheRain_Scene7: "'Guardate! È nel cespuglio...'" #!String
+    ItHowlsInTheRain_Scene8: "Aiii! " #!String
+    ItHowlsInTheRain_Scene8_2: "Oh... " #!String
+    ItHowlsInTheRain_Scene9: "(Si sentono urla soffocate e uno strano suono strascicato)" #!String
+    ItHowlsInTheRain_Scene10: "È ancora là fuori... " #!String
+

@@ -1,0 +1,67 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    AppleSlices_Name: "Almaszeletek" #!String
+    AppleSlices_Description: "Ropogós és édes kis szeletek." #!String
+    BlackLicorice_Name: "Fekete medvecukor" #!String
+    BlackLicorice_Description: "Egy rágós cukorka élénk, pikáns ízzel." #!String
+    CappuccinoMousseCake_Name: "Kapuccsinó habos torta" #!String
+    CappuccinoMousseCake_Description: "Egy apró csokis torta, amit kapuccsinó habbal vontak be." #!String
+    ChocolatePopcorn_Name: "Csokis pattogatott kukorica" #!String
+    ChocolatePopcorn_Description: "Ez hagyományos pattogatott kukorica... csokiba mártva." #!String
+    CottonCandy_Name: "Vattacukor" #!String
+    CottonCandy_Description: "Egy hatalmas, rózsaszín felhőnyi fonott cukor." #!String
+    Fries_Name: "Sült krumpli" #!String
+    Fries_Description: "Vékony burgonyaszeletek, amiket jól átsütnek, majd könnyedén megsóznak." #!String
+    HummusSnackPack_Name: "Hummusz édességcsomag" #!String
+    HummusSnackPack_Description: "Ropogós és egészséges." #!String
+    IceCreamSandwich_Name: "Jégkrémszendvics" #!String
+    IceCreamSandwich_Description: "Vaníliás jégkrém két csokis süti közé rakva." #!String
+    JasmineTea_Name: "Jázmin tea" #!String
+    JasmineTea_Description: "Zöld tea, ami illatos jázmin virággal van ízesítve." #!String
+    Jawbreaker_Name: "Álltörő" #!String
+    Jawbreaker_Description: "Ez egy nagy, kemény cukor, ami az egész film alatt kitart!" #!String
+    JojaCola_Name: "Joja Cola" #!String
+    JojaCola_Description: "Egy extra nagy csészényi üdítő a Joja vezető márkájából." #!String
+    JojaCorn_Name: "JojaRica" #!String
+    JojaCorn_Description: "Joja által szabadalmazott kukorica étel, vastag \"vajjas szósszal\" bevonva." #!String
+    KaleSmoothie_Name: "Kelkáposzta turmix" #!String
+    KaleSmoothie_Description: "Vitaminokkal és rostokkal megtöltve." #!String
+    Nachos_Name: "Nachos" #!String
+    Nachos_Description: "Ragacsos, borsos sajt frissen sült tortilla chipszen." #!String
+    PanzanellaSalad_Name: "Panzanella saláta" #!String
+    PanzanellaSalad_Description: "Egy nyári saláta kenyérből és paradicsomból." #!String
+    PersonalPizza_Name: "Személyes pizza" #!String
+    PersonalPizza_Description: "Egy olyan kicsi pizza, amit nasiként fogyaszthatsz." #!String
+    Popcorn_Name: "Pattogatott kukorica" #!String
+    Popcorn_Description: "Pattogatott kukorica, könnyed sóba hintve és vajjal megkenve." #!String
+    RockCandy_Name: "Kőcukor" #!String
+    RockCandy_Description: "Ízesített cukros kristályok, amik kényelmesen rúdra vannak erősítve." #!String
+    SalmonBurger_Name: "Lazacburger" #!String
+    SalmonBurger_Description: "Egy vastag szelet lazac egy enyhén pirított szezámos buciban." #!String
+    SaltedPeanuts_Name: "Sós mogyoró" #!String
+    SaltedPeanuts_Description: "Egy klasszikus sós étel." #!String
+    SourSlimes_Name: "Keserű ragacs" #!String
+    SourSlimes_Description: "Apró nyúlós ragacsok többféle színben. Extrém keserű porral vannak megszórva." #!String
+    StarCookie_Name: "Csillagsüti" #!String
+    StarCookie_Description: "Egy csillag alakú teasütemény szivárvány hintéssel." #!String
+    StardropSorbet_Name: "Csillaghulló sörbet" #!String
+    StardropSorbet_Description: "Ezt a sörbetet egyetlen csillaghulló esszencia rendkívüli élvezetté változtatja." #!String
+    TrufflePopcorn_Name: "Szarvasgombás pattogatott kukorica" #!String
+    TrufflePopcorn_Description: "Családi ereklyeként szolgáló pattogatott kukorica szarvasgombás sóval ízesítve." #!String
+

@@ -1,0 +1,85 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    UnderConstruction: "Em construção." #!String
+    DismountBeforeEntering: "Desmonte antes de entrar" #!String
+    PiecesOfHay: "Pedaços de feno: {0}/{1}" #!String
+    AddedHay: "{0} pedaços de feno adicionados ao silo." #!String
+    MillFull: "Não há mais espaço" #!String
+    CantMill: "Não pode ser moído" #!String
+    NeedSilo: "Silo necessário" #!String
+    CantEnter: "Não é possível entrar agora" #!String
+    WrongFishType: "Seu peixe {0} não quer viver em um lago de {1}." #!String
+    WrongFishTypeCoral: "{0} só pode ser colocado em um lago {0}." #!String
+    CantPutInPonds: "{0} não ficaria feliz aqui." #!String
+    NoFish: "Peixes podem ser colocados neste lago." #!String
+    PondFull: "O lago está cheio." #!String
+    Paint_Region_Building: "Construção" #!String
+    Paint_Region_Roof: "Telhado" #!String
+    Paint_Region_Trim: "Borda" #!String
+    BuildingSkinMenu_ChooseAppearance: "Selecione uma aparência para sua {0}." #!String
+    Construction_ChooseLocation: "Onde você quer gerenciar construções?" #!String
+    Barn_Name: "Celeiro" #!String
+    Barn_Description: "Permite até 4 animais num celeiro." #!String
+    BigBarn_Name: "Celeiro Grande" #!String
+    BigBarn_Description: "Permite até 8 animais num celeiro. Permite que animais deem a luz. Desbloqueia cabras." #!String
+    BigCoop_Name: "Galinheiro Grande" #!String
+    BigCoop_Description: "Permite até 8 animais num galinheiro. Vem com uma chocadeira. Desbloqueia patos." #!String
+    BigShed_Name: "Galpão Grande" #!String
+    BigShed_Description: "Dobra o tamanho do galpão. O interior pode ser decorado." #!String
+    Cabin_Name: "Casa" #!String
+    Cabin_Description: "Um lar para um amigo! Financiada pelo fundo agrícola da vila." #!String
+    Coop_Name: "Galinheiro" #!String
+    Coop_Description: "Permite até 4 animais num galinheiro." #!String
+    DeluxeBarn_Name: "Celeiro de Luxo" #!String
+    DeluxeBarn_Description: "Permite até 12 animais num celeiro. Vem com um sistema de autoalimentação. Desbloqueia ovelhas e porcos." #!String
+    DeluxeCoop_Name: "Galinheiro de Luxo" #!String
+    DeluxeCoop_Description: "Permite até 12 animais num galinheiro. Vem com um sistema de autoalimentação. Desbloqueia coelhos." #!String
+    DesertObelisk_Name: "Obelisco do Deserto" #!String
+    DesertObelisk_Description: "Teletransporta você ao deserto." #!String
+    EarthObelisk_Name: "Obelisco da Terra" #!String
+    EarthObelisk_Description: "Teleporta você às montanhas." #!String
+    FishPond_Name: "Lago de Peixes" #!String
+    FishPond_Description: "Crie peixes e colete sua produção. Peixes se multiplicam com o tempo." #!String
+    GoldClock_Name: "Relógio Dourado" #!String
+    GoldClock_Description: "Evita que detritos apareçam na sua fazenda. Evita que as cercas apodreçam." #!String
+    Greenhouse_Name: "Estufa" #!String
+    Greenhouse_Description: "Um lugar para cultivar plantas de qualquer estação o ano todo!" #!String
+    IslandObelisk_Name: "Obelisco da Ilha" #!String
+    IslandObelisk_Description: "Teletransporta você à Ilha Gengibre." #!String
+    JunimoHut_Name: "Cabana dos Junimos" #!String
+    JunimoHut_Description: "Os junimos colherão as plantações em volta da cabana para você." #!String
+    Mill_Name: "Moinho" #!String
+    Mill_Description: "Permite moer trigo, beterrabas e arroz." #!String
+    Shed_Name: "Galpão" #!String
+    Shed_Description: "Uma construção vazia. Ocupe-a com o que quiser! O interior pode ser decorado." #!String
+    ShippingBin_Name: "Caixa de Remessas" #!String
+    ShippingBin_Description: "Jogue itens nela para vendê-los à noite." #!String
+    Silo_Name: "Silo" #!String
+    Silo_Description: "Permite corte e armazenamento de grama como ração." #!String
+    SlimeHutch_Name: "Casa de Gosmas" #!String
+    SlimeHutch_Description: "Cria até 20 gosmas. Encha os comedouros com água. Gosmas criam bolas de gosma." #!String
+    Stable_Name: "Estábulo" #!String
+    Stable_Description: "Permite que você tenha e monte num cavalo. Cavalo incluso." #!String
+    WaterObelisk_Name: "Obelisco da Água" #!String
+    WaterObelisk_Description: "Teleporta você à praia." #!String
+    Well_Name: "Poço" #!String
+    Well_Description: "Fornece um lugar para repor a água do regador." #!String
+    PetBowl_Name: "Tigela para Animal" #!String
+    PetBowl_Description: "Fornece um lar dedicado para um animal de estimação." #!String
+

@@ -1,0 +1,106 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    BraveLittleSapling_Title: "Küçük Cesur Fidan" #!String
+    BraveLittleSapling_Description: "Ağaç olmak üzere büyülü bir maceraya çıkan fidanı anlatan bir aile komedisi." #!String
+    BraveLittleSapling_Scene1: "Küçük Cesur Fidan" #!String
+    BraveLittleSapling_Scene2: "Küçük Cesur fidan evinden ayrılır. Bir an tereddüt eder ve uzun bir süre dönmeyeceğini bilerek arkasını döner..." #!String
+    BraveLittleSapling_Scene3: "Bahçedeki diğer fidanlar kasabanın ucunda toplanır ve heyecan içinde dallarını sallayarak ona veda ederler...!" #!String
+    BraveLittleSapling_Scene4: "Olamaz! Birden bire yağmur döker...! Fırtına bulutları başının üstünde belirince fidan koşturmaya başlar..." #!String
+    BraveLittleSapling_Scene5: "Hayatı için endişelenen ve acımasız sağanak yüzünden cesareti kırılan fidan umudunu yitirmeye başlar..." #!String
+    BraveLittleSapling_Scene6: "...Ama o da ne...? Fidan, başının üstünde bir karıncalanma hisseder... " #!String
+    BraveLittleSapling_Scene7: "Belki de ağaç olmak için yağmur altında ıslanması gerekiyordur!" #!String
+    BraveLittleSapling_Scene8: "Hoşça kal ufaklık!" #!String
+    Mysterium_Title: "Gizem" #!String
+    Mysterium_Description: "Geceyarısı perdesi inince gözlerini aç... İnanmak için görmek zorundasın!" #!String
+    Mysterium_Scene1: "'Gizem'" #!String
+    Mysterium_Scene2: "Karanlıkta soluk bir gölge belirir..." #!String
+    Mysterium_Scene5: "Bugüne dek sözü dahi edilmemiş korkunç varlıklar... ıssız ve bilinmeyen hiçlikte beklemektedir..." #!String
+    Mysterium_Scene8: "Bir dizi tutarsız, uhrevi sahneler canlanır..." #!String
+    Mysterium_Scene10: "'Arkadaşlarına bu gece GİZEM'i görmelerini SÖYLEYECEKSİN...'" #!String
+    Mysterium_Scene11: "'...Yoksa uykunda seni ziyaret ederim!'" #!String
+    JourneyOfThePrairieKing_Title: "Çayır Kralı'nın Yolculuğu" #!String
+    JourneyOfThePrairieKing_Description: "Çok sevilen oyun beyaz perdeye aktarılıyor!" #!String
+    JourneyOfThePrairieKing_Scene1: "'Çayır Kralı'nın Yolculuğu: Sinema Filmi'" #!String
+    JourneyOfThePrairieKing_Scene2: "Çayır Kralı yine eski patikadan hazinelerle dolu yük trenini izlemektedir." #!String
+    JourneyOfThePrairieKing_Scene3: "Ancak, farkında olmadığı kötü haydut da yakınlardaki bir kayanın üstünde beklemektedir..." #!String
+    JourneyOfThePrairieKing_Scene4: "'Sonunda şu kendini beğenmiş şerifin işini bitirip hazineyi... hakkım olanı alacağım!'" #!String
+    JourneyOfThePrairieKing_Scene5: "'Ah! Görünüşe göre bu çığ doğrudan yük treninin üzerine düşecek.'" #!String
+    JourneyOfThePrairieKing_Scene6: "Çayır Kralı uzaktan gelen hafif gürüldemeyi duyar... Bak!" #!String
+    JourneyOfThePrairieKing_Scene7: "Çabucak düşünerek silahını ateşlemeye karar verir." #!String
+    JourneyOfThePrairieKing_Scene8: "Bu da nesi? Her yer su oldu!" #!String
+    JourneyOfThePrairieKing_Scene9: "Yine başarır! Yoğun çamur raylara gelmeden çığı durdurur." #!String
+    JourneyOfThePrairieKing_Scene10: "Yük treni kurtarılmıştır." #!String
+    JourneyOfThePrairieKing_Scene11: "SON." #!String
+    Wumbus_Title: "Vumbus" #!String
+    Wumbus_Description: "Başka bir yıldızdan gelen hantal canlının hayatını ve yaşadıklarını konu alan absürt bir bilim kurgu komedisi." #!String
+    Wumbus_Scene1: "'Vumbus'" #!String
+    Wumbus_Scene2: "Vumbus, rahat bir şekilde esner ve güneşin verdiği sıcaklığın tadını çıkarır." #!String
+    Wumbus_Scene3: "Sadık hizmetçisi YemekBot, düzenli olarak pişi ve 'kırmızı sos' getirir." #!String
+    Wumbus_Scene4: "Vumbus yeğeni Rossel'in, yıldız sistemi kültürü ve meseleleriyle ilgilenmesi için uğraşır ama Rossel ilgi göstermez." #!String
+    Wumbus_Scene5: "'Hapşu!'" #!String
+    Wumbus_Scene6: "Film, teknolojinin ve toplumun aşırı derecede ilerlediği ve geliştiği Vumbus'un ilginç dünyasındaki hayatından bir kesiti mizahla birleştiriyor." #!String
+    Wumbus_Scene7: "Birçok sahne, modern yaşam tarzının saçma yanlarını göstererek seyirciyi güldürmeye çalışır." #!String
+    Wumbus_Scene8: "Neredeyse sonsuz farklı eğlence seçeneğine sahip olsalar da, Vumbus ve arkadaşları, 'pizza' (%100 glütenden üretilmiş) adlı lezzetli bir yiyeceği yemek için toplanmaktan keyif alır." #!String
+    ZuzuCityExpress_Title: "Zuzu Şehri Ekspresi" #!String
+    ZuzuCityExpress_Description: "Günümüz sineması için özenle düzenlenmiş bir klasik." #!String
+    ZuzuCityExpress_Scene1: "'Zuzu Şehri Ekspresi'" #!String
+    ZuzuCityExpress_Scene2: "Zuzu Şehri Ekspresi, buzlu kumsaldan güneye son kez seyre çıkar... Yolculuk üç gün sürecektir!" #!String
+    ZuzuCityExpress_Scene3: "Genç bir kadın, özlem dolu bir şekilde pencereden dışarıya bakar." #!String
+    ZuzuCityExpress_Scene6: "Film, nihayetsiz bir konu olan akıl ve duygu arasındaki çatışmayı konu alır." #!String
+    ZuzuCityExpress_Scene7: "Bu kadın aklının talimatlarına mı uyacak yoksa kalbinin gösterdiği yolda mı ilerleyecek?" #!String
+    ZuzuCityExpress_Scene8: "Seyirci sorunun yanıtına ulaşamadan film sona erer..." #!String
+    MiracleAtColdstarRanch_Title: "Soğukyıldız Çiftliği Mucizesi" #!String
+    MiracleAtColdstarRanch_Description: "Tüm zorluklara rağmen bir aile, Kış Yıldızı'nın ruhunu hayatta tutar..." #!String
+    MiracleAtColdstarRanch_Scene1: "'Soğukyıldız Çiftliği Mucizesi'" #!String
+    MiracleAtColdstarRanch_Scene2: "Kış Yıldızı arefesi gelmiştir ve aralıksız üç haftadır kar yağmaktadır." #!String
+    MiracleAtColdstarRanch_Scene3: "Soğukyıldız ailesi evlerinde mahsur kalır... Kasabaya ulaşamazlar. Neyseki ineklerin yeterince samanı vardır." #!String
+    MiracleAtColdstarRanch_Scene5: "...Ancak, ailenin yemeği kalmaz." #!String
+    MiracleAtColdstarRanch_Scene7: "Baba Soğukyıldız tehlikeli koşullara rağmen kış yıldızı ağacını kesmeye cüret eder..." #!String
+    MiracleAtColdstarRanch_Scene9: "Aç olsalar dahi aile ağacı süsler ve Kış Yıldızı'na verdikleri sözü tutarlar." #!String
+    MiracleAtColdstarRanch_Scene11: "O gece, alışılagelmedik bir şey gerçekleşir..." #!String
+    MiracleAtColdstarRanch_Scene12: "Ertesi gün, anne Soğukyıldız ağacın üzerinde kozmik bir meyve bulduğuna şaşırır." #!String
+    MiracleAtColdstarRanch_Scene12_2: "'Kış Yıldızı'na inandığımız için unutulmadık!'" #!String
+    MiracleAtColdstarRanch_Scene13: "Yıldızkaydı meyvesini paylaşırlar. Meyve küçük olsa bile o güne kadar yedikleri en doyurucu ve lezzetli yiyecek olarak hatıralarına kazınır." #!String
+    MiracleAtColdstarRanch_Scene14: "Aile kurtulur ve umut varlığını sürdürür Kış Yıldızı'nın sözü bir kez daha tutulmuş olur..." #!String
+    NaturalWonders_Title: "Doğa Harikaları: Canlı Dünyamızı Keşfediyoruz" #!String
+    NaturalWonders_Description: "Ferngill Cumhuriyeti'ni gezerken bize katılın... Eğrelti Otu Adaları'ndan Zuzu Şehri'ne hayat dolu dünyamızda bizimle yolculuğa çıkın!" #!String
+    NaturalWonders_Scene1: "'Doğa Harikaları: Canlı Dünyamızı Keşfediyoruz'" #!String
+    NaturalWonders_Scene2: "Eğrelti Otu Adaları, güney kıyısından 130 kilometre uzaklıkta bulunan tropik bir cennettir. Adalar, bölgedeki volkanik faaliyetler sonucunda oluşmuş ve hâlâ da genişlemeye devam etmektedirler..." #!String
+    NaturalWonders_Scene3: "Ilıman okyanusal iklim sayesinde sayesinde doğal çeşitlilik görülür... Kısacası, adalar yaşamla doludur!" #!String
+    NaturalWonders_Scene4: "Şimdi de kuzeye, koşuşturmanın hâkim olduğu Zuzu Şehri'ne gidiyoruz. Beton ve çelikle örülen bu dünyanın ışıkları çevresindeki her yerden görülür." #!String
+    NaturalWonders_Scene5: "Şehirde yaşam koşulları zor olsa da insanlar güzel bir yaşam sürerler diyebiliriz." #!String
+    NaturalWonders_Scene6: "Batıdaki devasa Mücevher Denizi'nde bulunan Çayır Adası yapayalnızdır. Adına karşın, adada farklı biyomlara rastlanır." #!String
+    NaturalWonders_Scene7: "Ada, ev sahipliği yaptığı aşırı miktardaki rakun nüfusu ile ünlüdür!" #!String
+    NaturalWonders_Scene8: "Son olarak da, kıtanın en güzel bölgelerinden birini... Yıldızçiyi Vadisi'ni ziyaret etmek için ana karaya döneceğiz." #!String
+    NaturalWonders_Scene9: "Vadinin ılıman iklimi, çeşit çeşit böcek ve orman bitkisinin görülmesini sağlar. Ne kadar da güzel bir yer!" #!String
+    ItHowlsInTheRain_Title: "Yağmurda Uluyan" #!String
+    ItHowlsInTheRain_Description: "Bir grup genç, gizemli bir sesin kaynağını keşfetmek üzere maceraya atılır. (Ebeveyn Denetimi Gereklidir)" #!String
+    ItHowlsInTheRain_Scene1: "Yağmurda Uluyan" #!String
+    ItHowlsInTheRain_Scene2: "'Az sonra izleyeceğiniz görüntüler, Grampleton'ın 48 kilometre güneyinde bulunan bir kameradan kurtarılmıştır.'" #!String
+    ItHowlsInTheRain_Scene3: "'Duydun mu? Sanırım şuradaki ağaçların oradan geldi... Gidip bakalım...'" #!String
+    ItHowlsInTheRain_Scene4: "'(Ağır Nefes Alıp Verme)... Bak!'" #!String
+    ItHowlsInTheRain_Scene5: "(Kamera sallanır halde ormana doğru ilerlemeye devam eder)" #!String
+    ItHowlsInTheRain_Scene6: "'Ah, senmişsin, Gary... *nefes alır* *nefes alır*... Kolumu bırak!'" #!String
+    ItHowlsInTheRain_Scene6_2: "Ah! " #!String
+    ItHowlsInTheRain_Scene7: "'Bak! Çalıların arasında...'" #!String
+    ItHowlsInTheRain_Scene8: "Ayyy! " #!String
+    ItHowlsInTheRain_Scene8_2: "Ah... " #!String
+    ItHowlsInTheRain_Scene9: "(Boğuk bir ağlama sesi ve garip bir kıpırdama sesi duyulur)" #!String
+    ItHowlsInTheRain_Scene10: "Hala orada... " #!String
+

@@ -1,0 +1,37 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Starburst: "星形" #!String
+    Artful: "技巧派" #!String
+    Haymaker: "ほし草作り" #!String
+    Bug Killer: "虫キラー" #!String
+    Vampiric: "吸血鬼" #!String
+    Crusader: "クルセイダー" #!String
+    Powerful: "パワフル" #!String
+    Efficient: "効率的" #!String
+    Swift: "俊敏" #!String
+    Expansive: "開放的" #!String
+    Bottomless: "底なし" #!String
+    Shaving: "シェービング" #!String
+    Archaeologist: "考古学者" #!String
+    Generous: "いい土地" #!String
+    Master: "達人" #!String
+    Auto-Hook: "自動引き上げ" #!String
+    Preserving: "温存" #!String
+    Fisher: "漁師" #!String
+

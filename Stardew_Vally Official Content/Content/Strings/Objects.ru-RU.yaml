@@ -1,0 +1,1741 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    AncientFruitPot: "Его корни растут глубоко... Здесь ему будет тесновато." #!String
+    CactusSeedsOutside: "Высаживаются в помещении либо на Имбирном острове." #!String
+    CaskNoCellar: "Работает только в подвале." #!String
+    DarkTalisman: "Темный талисман" #!String
+    MagicInk: "Волшебные чернила" #!String
+    MagnifyingGlass: "Лупа" #!String
+    BearPaw: "Медвежья мудрость" #!String
+    SpringOnionBugs: "Золотой лук-батун" #!String
+    SpecialCharm: "Особый оберег" #!String
+    CatalogueDescription: "Предоставляет неограниченный доступ ко всем видам обоев и напольных покрытий... прямо у вас дома!" #!String
+    FurnitureCatalogueDescription: "Предоставляет неограниченный доступ почти ко всем видам мебели... прямо у вас дома!" #!String
+    DarkTalismanDescription: "Вы нашли {0}! Он весь в жучиной слизи..." #!String
+    MagicInkDescription: "Вы нашли {0}! Верните их волшебнику." #!String
+    MagnifyingGlassDescription: "Вы получаете {0}! Теперь вы можете находить «Секретные заметки». В них содержится редкая и полезная информация. Посмотреть их можно на вкладке «Коллекции»." #!String
+    SpecialCharmDescription: "Вы получаете {0}! Вы чувствуете, как вас окружает аура удачи (удача увеличивается навсегда!)" #!String
+    ParsnipSeedPackage_SomeoneElse: "Это не ваш стартовый набор." #!String
+    Machine_NeedsInputCount: "Требуется {0} шт." #!String
+    CraftingRecipe_IronBar: "Преобразование (Fe)" #!String
+    CraftingRecipe_GoldBar: "Преобразование (Au)" #!String
+    CraftingRecipe_SpringSeeds: "Дикие семена (Весна)" #!String
+    CraftingRecipe_SummerSeeds: "Дикие семена (Лето)" #!String
+    CraftingRecipe_FallSeeds: "Дикие семена (Осень)" #!String
+    CraftingRecipe_WinterSeeds: "Дикие семена (Зима)" #!String
+    Acorn_Name: "Желудь" #!String
+    Acorn_Description: "Его можно посадить, чтобы вырастить дуб." #!String
+    AdvancedTVRemote_Name: "Прокачанный пульт ДУ" #!String
+    AdvancedTVRemote_Description: "На этом пульте куча кнопок. Прекрасно подходит для ярого любителя кабельного телевидения!" #!String
+    Aerinite_Name: "Эринит" #!String
+    Aerinite_Description: "Эти кристаллы удивительно легкие." #!String
+    AgedRoe_Name: "Вяленая икра" #!String
+    AgedRoe_Description: "Икра вялится для того, чтобы подчеркнуть ее вкус." #!String
+    AgedRoe_Flavored_Name: "Вяленая икра ({0})" #!String
+    Alamite_Name: "Алямит" #!String
+    Alamite_Description: "Коллекционеры любят этот камень за его особенное свечение." #!String
+    Albacore_Name: "Альбакор" #!String
+    Albacore_Description: "Предпочитает температурные «границы», где теплая вода смешивается с холодной." #!String
+    AlgaeSoup_Name: "Суп из водорослей" #!String
+    AlgaeSoup_Description: "В нем есть немного слизи." #!String
+    Amaranth_Name: "Амарант" #!String
+    Amaranth_Description: "Одна из цивилизаций древности когда-то выращивала это фиолетовое растение на крупу." #!String
+    AmaranthSeeds_Name: "Семена амаранта" #!String
+    AmaranthSeeds_Description: "Сажайте осенью. Вырастает через 7 дней. Собирайте урожай косой." #!String
+    Amethyst_Name: "Аметист" #!String
+    Amethyst_Description: "Фиолетовая разновидность кварца." #!String
+    AmethystRing_Name: "Кольцо с аметистом" #!String
+    AmethystRing_Description: "Отталкивающая сила вашего оружия увеличивается на 10%." #!String
+    AmethystStone_Name: "Аметистовый камень" #!String
+    AmethystStone_Description: "Разбейте, чтобы получить аметисты." #!String
+    AmphibianFossil_Name: "Окаменелая амфибия" #!String
+    AmphibianFossil_Description: "Относительно короткие задние конечности наводят на мысль, что это была какая-то первобытная жаба." #!String
+    Anchor_Name: "Якорь" #!String
+    Anchor_Description: "Возможно, принадлежал древнему пиратскому судну." #!String
+    Anchovy_Name: "Анчоус" #!String
+    Anchovy_Description: "Маленькая серебристая океанская рыбка." #!String
+    AncientDoll_Name: "Древняя кукла" #!String
+    AncientDoll_Description: "Древняя кукла, покрытая грязью. Эта кукла могла быть игрушкой, украшением, или реквизитом к какому-нибудь ритуалу." #!String
+    AncientDrum_Name: "Древний барабан" #!String
+    AncientDrum_Description: "Барабан из кожи животного. Издает низкий, гулкий звук." #!String
+    AncientFruit_Name: "Древний плод" #!String
+    AncientFruit_Description: "Он дремал целые эпохи." #!String
+    AncientSeed_Name: "Древнее семя" #!String
+    AncientSeed_Description: "Высохшее от времени семечко какого-то древнего растения. Судя по всему, оно давно погибло..." #!String
+    AncientSeeds_Name: "Древние семена" #!String
+    AncientSeeds_Description: "Могут ли они еще прорасти?" #!String
+    AncientSword_Name: "Древний меч" #!String
+    AncientSword_Description: "Остатки древнего меча. Лезвие почти полностью проржавело, но эфес выполнен блестяще." #!String
+    Angler_Name: "Морской черт" #!String
+    Angler_Description: "Приманивает жертву биолюминесцентным отростком." #!String
+    Apple_Name: "Яблоко" #!String
+    Apple_Description: "Из этого хрустящего фрукта делают сок и сидр." #!String
+    AppleSapling_Name: "Саженец яблони" #!String
+    AppleSapling_Description: "Становится взрослым яблоневым деревом через 28 дней. Плодоносит осенью. Растет только если 8 «клеток» вокруг него не заняты." #!String
+    Apricot_Name: "Абрикос" #!String
+    Apricot_Description: "Нежный плод с твердой как камень косточкой." #!String
+    ApricotSapling_Name: "Саженец абрикоса" #!String
+    ApricotSapling_Description: "Становится взрослым абрикосовым деревом через 28 дней. Плодоносит весной. Растет только если 8 «клеток» вокруг него не заняты." #!String
+    Aquamarine_Name: "Аквамарин" #!String
+    Aquamarine_Description: "Блестящий сине-зеленый камень." #!String
+    AquamarineRing_Name: "Кольцо с аквамарином" #!String
+    AquamarineRing_Description: "Шанс критической атаки увеличивается на 10%." #!String
+    AquamarineStone_Name: "Аквамариновый камень" #!String
+    AquamarineStone_Description: "Разбейте, чтобы получить аквамарин." #!String
+    ArcticShard_Name: "Арктический осколок" #!String
+    ArcticShard_Description: "Этот осколок испускает внеземное голубое свечение." #!String
+    Arrowhead_Name: "Наконечник стрелы" #!String
+    Arrowhead_Description: "Наконечник грубой работы, использовался для охоты." #!String
+    Artichoke_Name: "Артишок" #!String
+    Artichoke_Description: "Нераскрывшаяся корзинка цветка артишока. За колючими внешними листьями скрыта сытная, мясистая часть." #!String
+    ArtichokeDip_Name: "Артишоковый дип" #!String
+    ArtichokeDip_Description: "Прохладный и освежающий." #!String
+    ArtichokeSeeds_Name: "Семена артишока" #!String
+    ArtichokeSeeds_Description: "Сажайте осенью. Вырастает через 8 дней." #!String
+    ArtifactSpot_Name: "Место для артефакта" #!String
+    ArtifactSpot_Description: "Откуда это у тебя в инвентаре?" #!String
+    ArtifactTrove_Name: "Древний клад" #!String
+    ArtifactTrove_Description: "Его может вскрыть кузнец. В этих кладах часто можно найти древние реликвии и диковины." #!String
+    AutumnsBounty_Name: "«Дары осени»" #!String
+    AutumnsBounty_Description: "Попробуй осень на вкус." #!String
+    Bait_Name: "Наживка" #!String
+    Bait_Description: "С ней рыба клюет быстрее. Используется с подходящей удочкой." #!String
+    BakedFish_Name: "Запеченная рыба" #!String
+    BakedFish_Description: "Запеченная рыба на подушке из трав." #!String
+    Banana_Name: "Банан" #!String
+    Banana_Description: "Сладкий крахмалистый тропический фрукт." #!String
+    BananaPudding_Name: "Банановый пудинг" #!String
+    BananaPudding_Description: "Кремовый десерт с прекрасным тропическим вкусом." #!String
+    BananaSapling_Name: "Саженец банана" #!String
+    BananaSapling_Description: "Становится взрослым банановым деревом через 28 дней. Плодоносит летом, а на Имбирном острове — круглый год." #!String
+    BarbedHook_Name: "Крючок с бородкой" #!String
+    BarbedHook_Description: "Увеличивает вероятность поймать рыбу, «полоска» при рыбалке «липнет» к рыбе. Лучше всего работает на слабой, медлительной рыбе." #!String
+    Baryte_Name: "Барит" #!String
+    Baryte_Description: "Лучшие его экземпляры похожи на пустынную розу." #!String
+    Basalt_Name: "Базальт" #!String
+    Basalt_Description: "Образуется возле раскаленной магмы." #!String
+    BasicFertilizer_Name: "Обычное удобрение" #!String
+    BasicFertilizer_Description: "Немного улучшает качество почвы, увеличивая шансы вырастить урожай высокого качества. Смешать с возделанной почвой." #!String
+    BasicRetainingSoil_Name: "Обычная влагосохраняющая почва" #!String
+    BasicRetainingSoil_Description: "Эта почва может сохранить воду с предыдущего полива на следующий день. Смешать с возделанной почвой." #!String
+    BatteryPack_Name: "Аккумулятор" #!String
+    BatteryPack_Description: "Полностью заряжен драгоценной энергией." #!String
+    BatWing_Name: "Крыло летучей мыши" #!String
+    BatWing_Description: "Удивительно деликатный материал." #!String
+    BeanHotpot_Name: "Жаркое из фасоли" #!String
+    BeanHotpot_Description: "Очень здоровая пища." #!String
+    BeanStarter_Name: "Рассада зеленой фасоли" #!String
+    BeanStarter_Description: "Сажайте весной. Вырастает через 10 дней, но затем продолжает давать урожай. Растет на шпалере." #!String
+    Beer_Name: "Пиво" #!String
+    Beer_Description: "Пейте в меру." #!String
+    Beet_Name: "Свекла" #!String
+    Beet_Description: "Сладкий корнеплод с насыщенным вкусом. Из ботвы получается отличный салат." #!String
+    BeetSeeds_Name: "Семена свеклы" #!String
+    BeetSeeds_Description: "Сажайте осенью. Вырастает через 6 дней." #!String
+    BerryBasket_Name: "Корзина для ягод" #!String
+    BerryBasket_Description: "Она запачкана ягодным соком." #!String
+    Bixite_Name: "Биксит" #!String
+    Bixite_Description: "Темный металлический минерал, известный своей кубической структурой." #!String
+    Blackberry_Name: "Ежевика" #!String
+    Blackberry_Description: "Угощение ранней осени." #!String
+    BlackberryCobbler_Name: "Ежевичный коблер" #!String
+    BlackberryCobbler_Description: "Этот вкус ни с чем не перепутаешь." #!String
+    Blobfish_Name: "Рыба-пузырь" #!String
+    Blobfish_Description: "Это странное существо плавает над океанским дном, поедая любую пищу на своем пути." #!String
+    Blueberry_Name: "Черника" #!String
+    Blueberry_Description: "Любимая многими ягода, о пользе которой написано немало статей. В ее кожуре много питательных веществ." #!String
+    BlueberrySeeds_Name: "Семена черники" #!String
+    BlueberrySeeds_Description: "Сажайте летом. Вырастает через 13 дней и продолжает давать урожай после первого сбора." #!String
+    BlueberryTart_Name: "Черничный тарт" #!String
+    BlueberryTart_Description: "Тонкий освежающий вкус." #!String
+    BlueDiscus_Name: "Голубой дискус" #!String
+    BlueDiscus_Description: "Яркая цветастая рыба. Популярна у аквариумистов." #!String
+    BlueGrassStarter_Name: "Рассада голубой травы" #!String
+    BlueGrassStarter_Description: "Посадите на вашей ферме, чтобы вырастить кустик голубой травы." #!String
+    BlueJazz_Name: "Синий яркоцвет" #!String
+    BlueJazz_Description: "Этот цветок растет в виде шарика, чтобы привлечь как можно больше бабочек." #!String
+    BlueSlimeEgg_Name: "Синее яйцо слайма" #!String
+    BlueSlimeEgg_Description: "Можно вырастить в инкубаторе для слаймов." #!String
+    BokChoy_Name: "Бок-чой" #!String
+    BokChoy_Description: "Волокнистые стебли и зеленые листья вкусны и полезны." #!String
+    BokChoySeeds_Name: "Семена бок-чоя" #!String
+    BokChoySeeds_Description: "Сажайте осенью. Вырастает через 4 дня." #!String
+    Bomb_Name: "Бомба" #!String
+    Bomb_Description: "Взрывается в среднем радиусе. Будьте осторожны! " #!String
+    BoneFlute_Name: "Костяная флейта" #!String
+    BoneFlute_Description: "Доисторический духовой инструмент, сделанный из кости животного. Она издает жуткий звук." #!String
+    BoneFragment_Name: "Кусочек кости" #!String
+    BoneFragment_Description: "Маленький кусочек кости." #!String
+    Book_AnimalCatalogue_Name: "Каталог животных" #!String
+    Book_AnimalCatalogue_Description: "Открывает доступ к магазину Марни, даже когда ее нет рядом." #!String
+    Book_Artifact_Name: "Руководство по оценке сокровищ" #!String
+    Book_Artifact_Description: "Лучше цены при продаже артефактов." #!String
+    Book_Bombs_Name: "Дварфийская инструкция по безопасности" #!String
+    Book_Bombs_Description: "Бомбы наносят вам на 25% меньше урона." #!String
+    Book_Crabbing_Name: "Краболовное искусство" #!String
+    Book_Crabbing_Description: "25%-й шанс достать в два раза больше добычи из крабовых ловушек." #!String
+    Book_Defense_Name: "Ловкий, быстрый, живой" #!String
+    Book_Defense_Description: "Вы получаете +1 к защите." #!String
+    Book_Diamonds_Name: "Охотник за алмазами" #!String
+    Book_Diamonds_Description: "Появляется шанс выпадения алмазов из всех камней при ручной добыче." #!String
+    Book_Friendship_Name: "Основы дружбы" #!String
+    Book_Friendship_Description: "Вы немного быстрее заводите дружбу с людьми." #!String
+    Book_Marlon_Name: "Картография системы пещер" #!String
+    Book_Marlon_Description: "Вы получаете 50%-ю скидку на выкуп вещей у Марлона." #!String
+    Book_Mystery_Name: "Книга тайн" #!String
+    Book_Mystery_Description: "Немного больший шанс найти Загадочные коробки." #!String
+    Book_PriceCatalogue_Name: "Каталог цен" #!String
+    Book_PriceCatalogue_Description: "Теперь вы можете видеть стоимость ваших предметов." #!String
+    Book_QueenOfSauce_Name: "Книга рецептов Королевы соуса" #!String
+    Book_QueenOfSauce_Description: "Выучите любой неизвестный вам рецепт Королевы соуса." #!String
+    Book_Riding_Name: "Лошадь и скачки" #!String
+    Book_Riding_Description: "Вы немного быстрее скачете на лошади." #!String
+    Book_Roe_Name: "Сокровища морей" #!String
+    Book_Roe_Description: "В сундуках с сокровищами может попасться икра." #!String
+    Book_Speed_Name: "Путь Ветра, том 1" #!String
+    Book_Speed_Description: "Вы бегаете немного быстрее." #!String
+    Book_Speed2_Name: "Путь Ветра, том 2" #!String
+    Book_Speed2_Description: "Вы бегаете еще немного быстрее." #!String
+    Book_Trash_Name: "Переулочный буфет" #!String
+    Book_Trash_Description: "Больший шанс найти предметы в мусорных баках." #!String
+    Book_Void_Name: "Компендиум монстров" #!String
+    Book_Void_Description: "Небольшой шанс выпадения двойной добычи с монстров." #!String
+    Book_WildSeeds_Name: "Журнал Енота" #!String
+    Book_WildSeeds_Description: "Больший шанс выпадения смешанных семян из сорняков." #!String
+    Book_Woodcutting_Name: "Секрет дровосека" #!String
+    Book_Woodcutting_Description: "5%-й шанс получить в два раза больше древесины при рубке деревьев." #!String
+    Bouquet_Name: "Букет" #!String
+    Bouquet_Description: "Этот подарок покажет ваш романтический интерес." #!String
+    Bread_Name: "Хлеб" #!String
+    Bread_Description: "Хрустящий багет." #!String
+    Bream_Name: "Лещ" #!String
+    Bream_Description: "Достаточно распространенная речная рыба, активна по ночам." #!String
+    BrickFloor_Name: "Кирпичное покрытие" #!String
+    BrickFloor_Description: "Создавайте дорожки на улице или застелите полы в доме." #!String
+    Broccoli_Name: "Брокколи" #!String
+    Broccoli_Description: "Кучерявая головка брокколи. Эти маленькие соцветия придают овощу неповторимую текстуру." #!String
+    BroccoliSeeds_Name: "Семена брокколи" #!String
+    BroccoliSeeds_Description: "Сажайте осенью. Вырастает через 8 дней и продолжает давать урожай после первого сбора." #!String
+    BrokenCD_Name: "Сломанный диск" #!String
+    BrokenCD_Description: "Это демо-CD для JojaNet 2.0. Их, похоже, выпустили целый миллиард." #!String
+    BrokenGlasses_Name: "Разбитые очки" #!String
+    BrokenGlasses_Description: "Похоже, кто-то потерял очки. Они разбиты вдребезги." #!String
+    BrownEgg_Name: "Яйцо" #!String
+    BrownEgg_Description: "Обычное коричневое куриное яйцо." #!String
+    Bruschetta_Name: "Брускетта" #!String
+    Bruschetta_Description: "Жареные помидоры на хрустящем белом хлебе." #!String
+    BugMeat_Name: "Жучиная плоть" #!String
+    BugMeat_Description: "Сочный кусочек жучиной плоти." #!String
+    BugSteak_Name: "Жучиный стейк" #!String
+    BugSteak_Description: "Последняя надежда голодного пещерного дайвера." #!String
+    Bullhead_Name: "Сомик" #!String
+    Bullhead_Description: "Родственник сома, питающийся разнообразной пищей со дна озера." #!String
+    BurglarsRing_Name: "Воровское кольцо" #!String
+    BurglarsRing_Description: "Повышает шанс выпадения добычи с монстров." #!String
+    ButterflyPowder_Name: "Пыльца бабочки" #!String
+    ButterflyPowder_Description: "Посыпьте ею питомца, чтобы он пропал с вашей фермы. Это действие необратимо." #!String
+    CactusFruit_Name: "Плод кактуса" #!String
+    CactusFruit_Description: "Сладкий плод колючего кактуса." #!String
+    CactusSeeds_Name: "Семена кактуса" #!String
+    CactusSeeds_Description: "Можно выращивать только в помещении. Вырастает через 12 дней, а затем дает фрукт каждые 3 дня." #!String
+    Calcite_Name: "Кальцит" #!String
+    Calcite_Description: "Этот желтый кристалл усыпан блестящими вкраплениями." #!String
+    CalicoEgg_Name: "Яйцо Калико" #!String
+    CalicoEgg_Description: "Уникальное яйцо, которое можно получить на Пустынном фестивале." #!String
+    CalicoEggStone_Name: "Камень Яйца Калико" #!String
+    CalicoEggStone_Description: "Разбейте, чтобы получить яйцо Калико." #!String
+    CampingStove_Name: "Походная печка" #!String
+    CampingStove_Description: "С ней можно готовить абсолютно везде, не исчезает при использовании." #!String
+    Carp_Name: "Карп" #!String
+    Carp_Description: "Распространенная рыба, живет в прудах." #!String
+    CarpSurprise_Name: "Карповый сюрприз" #!String
+    CarpSurprise_Description: "Жирный и безвкусный." #!String
+    Carrot_Name: "Морковь" #!String
+    Carrot_Description: "Скороспелый яркий овощ, которым всегда можно перекусить." #!String
+    CarrotSeeds_Name: "Семена моркови" #!String
+    CarrotSeeds_Description: "Сажайте весной. Вырастает через 3 дня." #!String
+    Catfish_Name: "Сом" #!String
+    Catfish_Description: "Редкая речная рыба." #!String
+    Cauliflower_Name: "Цветная капуста" #!String
+    Cauliflower_Description: "Ценная, но растет медленно. Несмотря на бледный цвет, ее соцветия полны питательными веществами." #!String
+    CauliflowerSeeds_Name: "Семена цветной капусты" #!String
+    CauliflowerSeeds_Description: "Сажайте весной. Через 12 дней после высадки дает большой кочан." #!String
+    CaveCarrot_Name: "Пещерная морковка" #!String
+    CaveCarrot_Description: "Крахмалистая вкуснятина, растущая в пещерах. Она дает шахтерам необходимую для работы энергию." #!String
+    CaveJelly_Name: "Пещерное желе" #!String
+    CaveJelly_Description: "Редкое желе из подземных озер." #!String
+    Caviar_Name: "Черная икра" #!String
+    Caviar_Description: "Вяленая осетровая икра. Считается дорогим деликатесом!" #!String
+    Celestine_Name: "Целестин" #!String
+    Celestine_Description: "Из него были сделаны кости ранних форм жизни." #!String
+    ChallengeBait_Name: "Сложная наживка" #!String
+    ChallengeBait_Description: "При безупречной ловле вы получаете в три раза больше рыбы. Улов уменьшается при каждом выскальзывании рыбы за пределы «рыболовной шкалы»." #!String
+    Chanterelle_Name: "Лисичка" #!String
+    Chanterelle_Description: "Вкусный гриб с фруктовым ароматом и слегка острым вкусом." #!String
+    Cheese_Name: "Сыр" #!String
+    Cheese_Description: "Обычный сыр." #!String
+    CheeseCauliflower_Name: "Цветная капуста с сыром" #!String
+    CheeseCauliflower_Description: "Пахнет восхитительно!" #!String
+    Cherry_Name: "Вишня" #!String
+    Cherry_Description: "Эта любимая многими ягода созревает очень рано." #!String
+    CherryBomb_Name: "Бомбочка" #!String
+    CherryBomb_Description: "Взрывается в малом радиусе. Разойдись!" #!String
+    CherrySapling_Name: "Саженец вишни" #!String
+    CherrySapling_Description: "Становится взрослым вишневым деревом через 28 дней. Плодоносит весной. Растет только если 8 «клеток» вокруг него не заняты." #!String
+    ChewingStick_Name: "Зубная палочка" #!String
+    ChewingStick_Description: "Древние люди чистили зубы, жуя такие палочки." #!String
+    ChickenStatue_Name: "Статуя курицы" #!String
+    ChickenStatue_Description: "Статуя курицы на бронзовом постаменте. Древние люди в этой области, должно быть, очень любили куриц." #!String
+    ChippedAmphora_Name: "Битая амфора" #!String
+    ChippedAmphora_Description: "Древний сосуд из керамического материала. В ней носили как твердые предметы, так и жидкости." #!String
+    ChocolateCake_Name: "Шоколадный торт" #!String
+    ChocolateCake_Description: "Влажный, насыщенный, с толстым слоем фаджа сверху." #!String
+    Chowder_Name: "Рыбная похлебка" #!String
+    Chowder_Description: "Отлично согревает после ночи в холодном море." #!String
+    Chub_Name: "Голавль" #!String
+    Chub_Description: "Распространенная пресноводная рыба, славящаяся своим неумеренным аппетитом." #!String
+    CinderShard_Name: "Тлеющий осколок" #!String
+    CinderShard_Description: "Вы чувствуете, как изнутри осколка исходит теплый свет." #!String
+    CinderShardStone_Name: "Камень с тлеющими осколками" #!String
+    CinderShardStone_Description: "Разбейте, чтобы получить тлеющие осколки." #!String
+    Clam_Name: "Гребешок" #!String
+    Clam_Description: "Там внутри — маленький житель..." #!String
+    Clay_Name: "Глина" #!String
+    Clay_Description: "Используется в строительстве и изготовлении предметов." #!String
+    ClayStone_Name: "Глиняный камень" #!String
+    ClayStone_Description: "Разбейте, чтобы получить глину." #!String
+    Cloth_Name: "Ткань" #!String
+    Cloth_Description: "Рулон добротной шерстяной ткани." #!String
+    Coal_Name: "Уголь" #!String
+    Coal_Description: "Воспламеняемая порода, которую используют в изготовлении предметов и плавке металлов." #!String
+    CobblestonePath_Name: "Каменная дорожка" #!String
+    CobblestonePath_Description: "Создавайте дорожки на улице или застелите полы в доме." #!String
+    Cockle_Name: "Сердцевидка" #!String
+    Cockle_Description: "Распространенный морской моллюск." #!String
+    Coconut_Name: "Кокос" #!String
+    Coconut_Description: "Семя кокосовой пальмы. Имеет множество кулинарных применений." #!String
+    Coffee_Name: "Кофе" #!String
+    Coffee_Description: "Ароматный кофе, без сомнения, обеспечит прилив энергии." #!String
+    CoffeeBean_Name: "Кофейное зерно" #!String
+    CoffeeBean_Description: "Сажайте весной или летом, чтобы вырастить кофейное дерево. Положите 5 зерен в бочонок, чтобы приготовить кофе." #!String
+    Coleslaw_Name: "Капустный салат" #!String
+    Coleslaw_Description: "Легкий, свежий, и очень полезный." #!String
+    CombinedRing_Name: "Сборное кольцо" #!String
+    CombinedRing_Description: "..." #!String
+    CommonMushroom_Name: "Шампиньон" #!String
+    CommonMushroom_Description: "Хорошая текстура, вкус с ореховыми нотками." #!String
+    CompleteBreakfast_Name: "Полный завтрак" #!String
+    CompleteBreakfast_Description: "После такого все по плечу!" #!String
+    ConcernedApeMask_Name: "???" #!String
+    ConcernedApeMask_Description: "???" #!String
+    Cookie_Name: "Печенье" #!String
+    Cookie_Description: "Очень хрустящее." #!String
+    CookoutKit_Name: "Походная кухня" #!String
+    CookoutKit_Description: "Разожгите костер и готовьте на природе!" #!String
+    CopperBar_Name: "Медный слиток" #!String
+    CopperBar_Description: "Слиток чистой меди." #!String
+    CopperOre_Name: "Медная руда" #!String
+    CopperOre_Description: "Распространенная руда, которую можно переплавить в слитки." #!String
+    CopperStone_Name: "Медный камень" #!String
+    CopperStone_Description: "Разбейте, чтобы получить медную руду." #!String
+    Coral_Name: "Коралл" #!String
+    Coral_Description: "Колония крошечных существ, которые, собираясь вместе, образуют красивые структуры." #!String
+    CorkBobber_Name: "Пробковый поплавок" #!String
+    CorkBobber_Description: "Слегка увеличивает размер вашей «рыболовной шкалы»." #!String
+    Corn_Name: "Кукуруза" #!String
+    Corn_Description: "Один из самых популярных злаков. Летом всегда приятно отведать свежих, сладких початков." #!String
+    CornSeeds_Name: "Семена кукурузы" #!String
+    CornSeeds_Description: "Сажайте летом или осенью. Вырастает через 14 дней и продолжает давать урожай после первого сбора." #!String
+    Crab_Name: "Краб" #!String
+    Crab_Description: "Морское ракообразное с двумя мощными клешнями." #!String
+    CrabCakes_Name: "Крабовые котлетки" #!String
+    CrabCakes_Description: "Зажаренные до золотистой корочки котлетки из крабового мяса, хлебных крошек и яйца." #!String
+    CrabPot_Name: "Крабовая ловушка" #!String
+    CrabPot_Description: "Положите ее в воду и начините наживкой. Приходите за уловом на следующий день. Работает в реках, озерах и в океане." #!String
+    CrabshellRing_Name: "Крабовое кольцо" #!String
+    CrabshellRing_Description: "Кольцо венчает зачарованный крабовый панцирь." #!String
+    Cranberries_Name: "Клюква" #!String
+    Cranberries_Description: "Эти красные кислые ягодки обычно едят зимой." #!String
+    CranberryCandy_Name: "Клюквенная сласть" #!String
+    CranberryCandy_Description: "Достаточно сладкая, чтобы перебить кислинку." #!String
+    CranberrySauce_Name: "Клюквенный соус" #!String
+    CranberrySauce_Description: "Праздничное угощение." #!String
+    CranberrySeeds_Name: "Семена клюквы" #!String
+    CranberrySeeds_Description: "Сажайте осенью. Вырастает через 7 дней и продолжает давать урожай после первого сбора." #!String
+    Crayfish_Name: "Рак" #!String
+    Crayfish_Description: "Небольшой пресноводный родственник омара." #!String
+    Crimsonfish_Name: "Багрянник" #!String
+    Crimsonfish_Description: "Обитает в глубинах океана, но любит откладывать икру в теплых летних водах." #!String
+    CrispyBass_Name: "Окунь с хруст. корочкой" #!String
+    CrispyBass_Description: "Ого, панировка просто безупречна." #!String
+    Crocus_Name: "Крокус" #!String
+    Crocus_Description: "Это растение может цвести даже зимой." #!String
+    CrystalFloor_Name: "Кристальное покрытие" #!String
+    CrystalFloor_Description: "Создавайте дорожки на улице или застелите полы в доме." #!String
+    CrystalFruit_Name: "Кристальный фрукт" #!String
+    CrystalFruit_Description: "Нежный плод, растущий на снегу." #!String
+    CrystalPath_Name: "Дорожка из кристаллов" #!String
+    CrystalPath_Description: "Создавайте дорожки на улице или застелите полы в доме." #!String
+    CuriosityLure_Name: "Диковинная приманка" #!String
+    CuriosityLure_Description: "Увеличивает ваш шанс поймать редкую рыбу." #!String
+    Daffodil_Name: "Нарцисс" #!String
+    Daffodil_Description: "Обычный весенний цветок. Хороший подарок." #!String
+    Dandelion_Name: "Одуванчик" #!String
+    Dandelion_Description: "Цветы у него не самые красивые, но зато он хорош в салате." #!String
+    DecorativePot_Name: "Декоративный горшок" #!String
+    DecorativePot_Description: "Копия древнего горшка." #!String
+    DeluxeBait_Name: "Элитная наживка" #!String
+    DeluxeBait_Description: "Заставляет рыбу клевать быстрее и увеличивает размер «рыболовной шкалы»." #!String
+    DeluxeFertilizer_Name: "Удобрение Делюкс" #!String
+    DeluxeFertilizer_Description: "Разительно улучшает качество почвы, увеличивая шанс вырастить урожай высокого качества. Смешать с возделанной почвой." #!String
+    DeluxeRetainingSoil_Name: "Влагосохраняющая почва Делюкс" #!String
+    DeluxeRetainingSoil_Description: "У этой почвы есть 100% шанс оставаться увлажненной наутро. Смешать с возделанной почвой." #!String
+    DeluxeSpeedGro_Name: "СкороРост Делюкс" #!String
+    DeluxeSpeedGro_Description: "Ускоряет рост листьев. Гарантирует увеличение скорости роста растений как минимум на 25%. Смешать с возделанной почвой." #!String
+    Diamond_Name: "Алмаз" #!String
+    Diamond_Description: "Редкий и дорогой камень." #!String
+    DiamondStone_Name: "Алмазный камень" #!String
+    DiamondStone_Description: "Разбейте, чтобы получить алмазы." #!String
+    DinosaurEgg_Name: "Яйцо динозавра" #!String
+    DinosaurEgg_Description: "Гигантское яйцо динозавра... Скорлупа до сих пор полностью целая!" #!String
+    DinosaurMayonnaise_Name: "Динозавровый майонез" #!String
+    DinosaurMayonnaise_Description: "Густой и кремообразный, с отчетливым зеленым оттенком. Пахнет травой и кожей." #!String
+    DishOTheSea_Name: "«Морское блюдо»" #!String
+    DishOTheSea_Description: "Это блюдо согреет, когда подует холодный морской ветер." #!String
+    Dolomite_Name: "Доломит" #!String
+    Dolomite_Description: "Его можно найти в коралловых рифах, особенно возле подводных вулканов." #!String
+    Dorado_Name: "Дорада" #!String
+    Dorado_Description: "Свирепое плотоядное с яркой оранжевой чешуей." #!String
+    DragonTooth_Name: "Драконий зуб" #!String
+    DragonTooth_Description: "Говорят, что это зубы древнего змея. Их эмаль из чистого иридия!" #!String
+    DressedSpinner_Name: "Украшенный спиннер" #!String
+    DressedSpinner_Description: "Металлическая полоска и цветные ленточки завораживают рыбу. Увеличивает частоту клева." #!String
+    DriedFruit_Name: "Сухофрукты" #!String
+    DriedFruit_Description: "Плотные кусочки сушеных фруктов." #!String
+    DriedFruit_CollectionsTabDescription: "Плотные кусочки сушеных фруктов." #!String
+    DriedFruit_CollectionsTabName: "Сухофрукты" #!String
+    DriedFruit_Flavored_Name: "Сушен. {1}" #!String
+    DriedFruit_Flavored_(O)454_Name: "Сушеные древние плоды" #!String
+    DriedFruit_Flavored_(O)613_Name: "Сушеные яблоки" #!String
+    DriedFruit_Flavored_(O)634_Name: "Сушеные абрикосы" #!String
+    DriedFruit_Flavored_(O)91_Name: "Сушеные бананы" #!String
+    DriedFruit_Flavored_(O)410_Name: "Сушеная ежевика" #!String
+    DriedFruit_Flavored_(O)258_Name: "Сушеная черника" #!String
+    DriedFruit_Flavored_(O)90_Name: "Сушеные плоды кактуса" #!String
+    DriedFruit_Flavored_(O)638_Name: "Сушеная вишня" #!String
+    DriedFruit_Flavored_(O)88_Name: "Сушеные кокосы" #!String
+    DriedFruit_Flavored_(O)282_Name: "Сушеная клюква" #!String
+    DriedFruit_Flavored_(O)414_Name: "Сушеные кристальные фрукты" #!String
+    DriedFruit_Flavored_(O)260_Name: "Сушеные жгучие перцы" #!String
+    DriedFruit_Flavored_(O)834_Name: "Сушеные манго" #!String
+    DriedFruit_Flavored_(O)254_Name: "Сушеные кусочки дыни" #!String
+    DriedFruit_Flavored_(O)635_Name: "Сушеные апельсины" #!String
+    DriedFruit_Flavored_(O)636_Name: "Сушеные персики" #!String
+    DriedFruit_Flavored_(O)832_Name: "Сушеные ананасы" #!String
+    DriedFruit_Flavored_(O)637_Name: "Сушеные гранаты" #!String
+    DriedFruit_Flavored_(O)Powdermelon_Name: "Сушеные кусочки снегодыни" #!String
+    DriedFruit_Flavored_(O)889_Name: "Сушеные фрукты Ки" #!String
+    DriedFruit_Flavored_(O)252_Name: "Сушеный ревень" #!String
+    DriedFruit_Flavored_(O)296_Name: "Сушеная морошка" #!String
+    DriedFruit_Flavored_(O)396_Name: "Сушеные острые ягоды" #!String
+    DriedFruit_Flavored_(O)268_Name: "Сушеные кусочки карамболы" #!String
+    DriedFruit_Flavored_(O)400_Name: "Сушеная клубника" #!String
+    DriedFruit_Flavored_(O)406_Name: "Сушеные дикие сливы" #!String
+    DriedFruit_Flavored_(O)404_Name: "Сушеные шампиньоны" #!String
+    DriedFruit_Flavored_(O)257_Name: "Сушеные сморчки" #!String
+    DriedFruit_Flavored_(O)281_Name: "Сушеные лисички" #!String
+    DriedFruit_Flavored_(O)422_Name: "Сушеные фиолетовые грибы" #!String
+    DriedFruit_Flavored_(O)851_Name: "Сушеные магмовые грибы" #!String
+    DriedMushrooms_Name: "Сушеные грибы" #!String
+    DriedMushrooms_Description: "Упаковка вкуснейших грибов." #!String
+    DriedMushrooms_CollectionsTabDescription: "Упаковка вкуснейших грибов." #!String
+    DriedMushrooms_CollectionsTabName: "Сушеные грибы" #!String
+    DriedStarfish_Name: "Высохшая морская звезда" #!String
+    DriedStarfish_Description: "Морская звезда из первозданного океана. На удивление хорошо сохранившийся экземпляр!" #!String
+    Driftwood_Name: "Коряга" #!String
+    Driftwood_Description: "Кусок дерева, выловленный из моря." #!String
+    DrumBlock_Name: "Барабан-блок" #!String
+    DrumBlock_Description: "Издает звук барабана, когда вы проходите мимо." #!String
+    DuckEgg_Name: "Утиное яйцо" #!String
+    DuckEgg_Description: "Оно еще теплое." #!String
+    DuckFeather_Name: "Утиное перо" #!String
+    DuckFeather_Description: "Оно такое яркое." #!String
+    DuckMayonnaise_Name: "Утиный майонез" #!String
+    DuckMayonnaise_Description: "Густой желтый майонез." #!String
+    DwarfGadget_Name: "Устройство дварфов" #!String
+    DwarfGadget_Description: "Один из экземпляров продвинутой технологии, известной когда-то дварфам. Оно до сих пор гудит и светится, но вы не понимаете, как оно работает." #!String
+    DwarfScrollI_Name: "Свиток дварфов I" #!String
+    DwarfScrollI_Description: "Пожелтевший пергаментный свиток с надписями на языке дварфов. Он перевязан красным бантом." #!String
+    DwarfScrollII_Name: "Свиток дварфов II" #!String
+    DwarfScrollII_Description: "Пожелтевший пергаментный свиток с надписями на языке дварфов. Он перевязан зеленой лентой." #!String
+    DwarfScrollIII_Name: "Свиток дварфов III" #!String
+    DwarfScrollIII_Description: "Пожелтевший пергаментный свиток с надписями на языке дварфов. Он перевязан голубой веревочкой." #!String
+    DwarfScrollIV_Name: "Свиток дварфов IV" #!String
+    DwarfScrollIV_Description: "Пожелтевший пергаментный свиток с надписями на языке дварфов. Он перевязан золотой цепочкой." #!String
+    DwarvishHelm_Name: "Шлем дварфов" #!String
+    DwarvishHelm_Description: "Шлем, который носят дварфы. Толстый металл защищает их от падающих обломков породы и сталактитов." #!String
+    DwarvishTranslationGuide_Name: "Самоучитель языка дварфов" #!String
+    DwarvishTranslationGuide_Description: "Учит вас языку дварфов." #!String
+    EarthCrystal_Name: "Земляной кристалл" #!String
+    EarthCrystal_Description: "Смолистое вещество, которое можно найти ближе к поверхности." #!String
+    Ectoplasm_Name: "Эктоплазма" #!String
+    Ectoplasm_Description: "Вязкая склизкая жижа, которая зачем-то понадобилась Волшебнику." #!String
+    Eel_Name: "Угорь" #!String
+    Eel_Description: "Длинная скользкая рыба." #!String
+    Eggplant_Name: "Баклажан" #!String
+    Eggplant_Description: "Богатый, насыщенный родственник помидора. Очень вкусен в тушеном и жареном видах." #!String
+    EggplantParmesan_Name: "Баклажаны с пармезаном" #!String
+    EggplantParmesan_Description: "Терпкие, сырные, чудесные." #!String
+    EggplantSeeds_Name: "Семена баклажана" #!String
+    EggplantSeeds_Description: "Сажайте осенью. Вырастает через 5 дней и продолжает давать урожай после первого сбора." #!String
+    ElvishJewelry_Name: "Бижутерия эльфов" #!String
+    ElvishJewelry_Description: "Грязная, но все равно красивая. По одной из сторон идет вязь, которую некоторые считают языком эльфов. Кости эльфов до сих пор не были найдены." #!String
+    Emerald_Name: "Изумруд" #!String
+    Emerald_Description: "Ярко-зеленый драгоценный камень." #!String
+    EmeraldRing_Name: "Кольцо с изумрудом" #!String
+    EmeraldRing_Description: "Скорость атаки увеличивается на 10%." #!String
+    EmeraldStone_Name: "Изумрудный камень" #!String
+    EmeraldStone_Description: "Разбейте, чтобы получить изумруды." #!String
+    EnergyTonic_Name: "Энергетический тоник" #!String
+    EnergyTonic_Description: "Восстанавливает много энергии." #!String
+    Enricher_Name: "Обогатитель" #!String
+    Enricher_Description: "Установите его на спринклер и положите в него удобрение, чтобы он автоматически распылял его на близлежащие семена." #!String
+    Escargot_Name: "Эскарго" #!String
+    Escargot_Description: "Идеально приготовленные улитки в масле." #!String
+    Esperite_Name: "Эсперит" #!String
+    Esperite_Description: "Под внешним воздействием кристаллы начинают светиться зеленым." #!String
+    ExplosiveAmmo_Name: "Взрывные снаряды" #!String
+    ExplosiveAmmo_Description: "Снаряды для рогатки." #!String
+    FairyDust_Name: "Волшебный порошок" #!String
+    FairyDust_Description: "Посыпьте им бочонки, плавильные печи и другое перерабатывающее оборудование, чтобы незамедлительно получить их продукцию." #!String
+    FairyRose_Name: "Сказочная роза" #!String
+    FairyRose_Description: "По старому народному сказанию, сладкий запах этого цветка приманивает фей." #!String
+    FairySeeds_Name: "Сказочные семена" #!String
+    FairySeeds_Description: "Сажайте осенью. Через 12 дней вырастает таинственный цветок. Цветы могут быть разного цвета." #!String
+    FairyStone_Name: "Камень феи" #!String
+    FairyStone_Description: "Согласно старой шахтерской песне, эти камни образовались из костей древних фей." #!String
+    FallSeeds_Name: "Осенние семена" #!String
+    FallSeeds_Description: "Разнообразные семена диких осенних растений." #!String
+    FarAwayStone_Name: "Камень из далеких земель" #!String
+    FarAwayStone_Description: "Камень неизвестного происхождения. Похоже, его можно куда-то вставить." #!String
+    FarmersLunch_Name: "«Обед фермера»" #!String
+    FarmersLunch_Description: "Поддержит заряд ваших сил." #!String
+    Fiber_Name: "Волокна" #!String
+    Fiber_Description: "Сырой растительный материал." #!String
+    FiberSeeds_Name: "Семена волокон" #!String
+    FiberSeeds_Description: "Сажайте их в любое время года. Не требуют полива. Собираются косой. Вырастают за 7 дней." #!String
+    FiddleheadFern_Name: "Съедобный папоротник" #!String
+    FiddleheadFern_Description: "Молодые ростки этого папоротника съедобны." #!String
+    FiddleheadRisotto_Name: "Ризотто с папоротником" #!String
+    FiddleheadRisotto_Description: "Сливочное рисовое блюдо, которое подают с обжаренными ростками папоротника. Вкус не очень яркий." #!String
+    FieldSnack_Name: "Полевая закуска" #!String
+    FieldSnack_Description: "Закуска на скорую руку для голодного собирателя." #!String
+    FireOpal_Name: "Огненный опал" #!String
+    FireOpal_Description: "Редкая разновидность опала, получившая название благодаря своим красным пятнышкам." #!String
+    FireQuartz_Name: "Огненный кварц" #!String
+    FireQuartz_Description: "Светящийся красный кристалл, который часто образуется возле лавы." #!String
+    FireworksGreen_Name: "Фейерверк (Зеленый)" #!String
+    FireworksGreen_Description: "Древняя праздничная традиция. Обращайтесь осторожно!" #!String
+    FireworksPurple_Name: "Фейерверк (Пурпурный)" #!String
+    FireworksPurple_Description: "Древняя праздничная традиция. Обращайтесь осторожно!" #!String
+    FireworksRed_Name: "Фейерверк (Красный)" #!String
+    FireworksRed_Description: "Древняя праздничная традиция. Обращайтесь осторожно!" #!String
+    FishStew_Name: "Уха" #!String
+    FishStew_Description: "Пахнет морем. На вкус, правда, гораздо лучше." #!String
+    FishTaco_Name: "Рыбное тако" #!String
+    FishTaco_Description: "Пахнет очень вкусно!" #!String
+    Flounder_Name: "Мелкая камбала" #!String
+    Flounder_Description: "Она обитает на дне, поэтому оба ее глаза расположены на макушке." #!String
+    Fluorapatite_Name: "Фторопатит" #!String
+    Fluorapatite_Description: "В малом количестве содержится в человеческих зубах." #!String
+    FluteBlock_Name: "Флейта-блок" #!String
+    FluteBlock_Description: "Издает звук флейты, когда вы проходите мимо." #!String
+    FossilizedLeg_Name: "Окаменевшая нога" #!String
+    FossilizedLeg_Description: "Толстая и твердая ножная кость." #!String
+    FossilizedRibs_Name: "Окаменевшие ребра" #!String
+    FossilizedRibs_Description: "Давным-давно эти ребра защищали внутренности большого животного." #!String
+    FossilizedSkull_Name: "Окаменевший череп" #!String
+    FossilizedSkull_Description: "Просто прекрасный образец!" #!String
+    FossilizedSpine_Name: "Окаменевший позвоночник" #!String
+    FossilizedSpine_Description: "Костяной столб с позвонками." #!String
+    FossilizedTail_Name: "Окаменевший хвост" #!String
+    FossilizedTail_Description: "На конце этого хвоста располагается шишковатый нарост." #!String
+    FossilStone_Name: "Камень с раскопок" #!String
+    FossilStone_Description: "Разбейте, чтобы получить окаменелости и кости." #!String
+    FriedCalamari_Name: "Жареный кальмар" #!String
+    FriedCalamari_Description: "Его нужно тщательно пережевывать." #!String
+    FriedEel_Name: "Жареный угорь" #!String
+    FriedEel_Description: "Жирный, но вкусный." #!String
+    FriedEgg_Name: "Яичница" #!String
+    FriedEgg_Description: "Глазунья." #!String
+    FriedMushroom_Name: "Жареные грибы" #!String
+    FriedMushroom_Description: "Простое и ароматное блюдо." #!String
+    FrozenGeode_Name: "Морозная жеода" #!String
+    FrozenGeode_Description: "Попросите кузнеца ее разбить." #!String
+    FrozenGeodeStone_Name: "Морозножеодный камень" #!String
+    FrozenGeodeStone_Description: "Разбейте, чтобы получить морозные жеоды." #!String
+    FrozenTear_Name: "Замерзшая слеза" #!String
+    FrozenTear_Description: "Кристалл, по легенде являющийся замерзшей слезой йети." #!String
+    FruitSalad_Name: "Фруктовый салат" #!String
+    FruitSalad_Description: "Вкусное сочетание летних фруктов." #!String
+    GalaxySoul_Name: "Душа Галактики" #!String
+    GalaxySoul_Description: "Заключите 3 таких души в Оружие Галактики, чтобы раскрыть его финальную форму." #!String
+    Garlic_Name: "Чеснок" #!String
+    Garlic_Description: "Придает блюдам остроту. Качественный чеснок может быть очень острым." #!String
+    GarlicSeeds_Name: "Семена чеснока" #!String
+    GarlicSeeds_Description: "Сажайте весной. Вырастает через 4 дня." #!String
+    Gate_Name: "Калитка" #!String
+    Gate_Description: "Позволяет проходить через забор." #!String
+    Geminite_Name: "Геминит" #!String
+    Geminite_Description: "Встречается в ярких скоплениях." #!String
+    GemStone_Name: "Самоцветный камень" #!String
+    GemStone_Description: "Разбейте, чтобы получить камни, руду или жеоды." #!String
+    Geode_Name: "Жеода" #!String
+    Geode_Description: "Попросите кузнеца ее разбить." #!String
+    GeodeStone_Name: "Жеодовый камень" #!String
+    GeodeStone_Description: "Разбейте, чтобы получить жеоды." #!String
+    GhostCrystal_Name: "Призрачный кристалл" #!String
+    GhostCrystal_Description: "Вокруг этого кристалла холодная аура." #!String
+    Ghostfish_Name: "Пятнистый криворот" #!String
+    Ghostfish_Description: "Бледная слепая рыба из подземного озера." #!String
+    Ginger_Name: "Имбирь" #!String
+    Ginger_Description: "Говорят, этот острый пряный корень увеличивает жизненную силу." #!String
+    GingerAle_Name: "Имбирный эль" #!String
+    GingerAle_Description: "Пикантная газировка, известная своим успокаивающим действием на желудок." #!String
+    Glacierfish_Name: "Ледорыб" #!String
+    Glacierfish_Description: "Любит гнездиться под днищами льдин." #!String
+    GlacierfishJr_Name: "Ледорыб-младший" #!String
+    GlacierfishJr_Description: "Так у Ледорыба, оказывается, был сын..." #!String
+    GlassShards_Name: "Битое стекло" #!String
+    GlassShards_Description: "Стеклянные осколки, сглаженные океаном за века. Возможно, они были частью древней мозаики или ожерелья." #!String
+    GlazedYams_Name: "Глазированный батат" #!String
+    GlazedYams_Description: "Сладкий и сытный... Сахар придает ему карамельный привкус." #!String
+    GlowRing_Name: "Кольцо света" #!String
+    GlowRing_Description: "Излучает свет." #!String
+    GlowstoneRing_Name: "Светокаменное кольцо" #!String
+    GlowstoneRing_Description: "Излучает постоянный свет, а также увеличивает радиус подбираемых вами предметов." #!String
+    GoatCheese_Name: "Козий сыр" #!String
+    GoatCheese_Description: "Мягкий сыр из козьего молока." #!String
+    GoatMilk_Name: "Бутыль козьего молока" #!String
+    GoatMilk_Description: "Козье молоко." #!String
+    Goby_Name: "Бычок" #!String
+    Goby_Description: "Некоторые виды бычков могут подниматься вверх по водопадам." #!String
+    GoldBar_Name: "Золотой слиток" #!String
+    GoldBar_Description: "Слиток чистого золота." #!String
+    GoldCoin_Name: "Золотая монета" #!String
+    GoldCoin_Description: "1 золотая монета." #!String
+    GoldenAnimalCracker_Name: "Золотой крекер для животных" #!String
+    GoldenAnimalCracker_Description: "Покормите им фермерское животное, чтобы навсегда удвоить количество продуктов, которые оно производит. Не работает на свиньях." #!String
+    GoldenBobber_Name: "Золотой поплавок" #!String
+    GoldenBobber_Description: "Его ищет Вилли." #!String
+    GoldenCoconut_Name: "Золотой кокос" #!String
+    GoldenCoconut_Description: "Этот орешек довольно крепок, но профессионал, скорее всего, сможет его расколоть." #!String
+    GoldenEgg_Name: "Золотое яйцо" #!String
+    GoldenEgg_Description: "Крайне редкое и особенное яйцо с твердой золотой скорлупой." #!String
+    GoldenMask_Name: "Золотая маска" #!String
+    GoldenMask_Description: "Жуткая золотая маска, которую, возможно, использовали в древнем магическом ритуале. В отверстие на лбу вставлен большой фиолетовый камень." #!String
+    GoldenMysteryBox_Name: "Золотая загадочная коробка" #!String
+    GoldenPumpkin_Name: "Золотая тыква" #!String
+    GoldenPumpkin_Description: "Ценная, но бесполезная." #!String
+    GoldenRelic_Name: "Золотая реликвия" #!String
+    GoldenRelic_Description: "Золотая плита с выбитыми на ней иероглифами и картинками." #!String
+    GoldenWalnut_Name: "Золотой грецкий орех" #!String
+    GoldenWalnut_Description: "Любимейшее лакомство попугаев Имбирного острова." #!String
+    GoldOre_Name: "Золотая руда" #!String
+    GoldOre_Description: "Драгоценная руда, которую можно переплавить в слитки." #!String
+    GoldStone_Name: "Золотой камень" #!String
+    GoldStone_Description: "Разбейте, чтобы получить золотую руду." #!String
+    GourmetTomatoSalt_Name: "Изысканная помидорная соль" #!String
+    GourmetTomatoSalt_Description: "Очень вкусная и редкая ароматная приправа." #!String
+    Granite_Name: "Гранит" #!String
+    Granite_Description: "Пятнистый минерал, часто используемый в строительстве." #!String
+    Grape_Name: "Виноград" #!String
+    Grape_Description: "Кисть сладких ягод." #!String
+    GrapeStarter_Name: "Виноградные черенки" #!String
+    GrapeStarter_Description: "Сажайте осенью. Вырастают через 10 дней, но затем продолжают плодоносить. Растут на шпалере." #!String
+    GrassBook_Name: "Старина Тонконог" #!String
+    GrassBook_Description: "Теперь вы будете куда быстрее передвигаться по траве и посадкам." #!String
+    GrassStarter_Name: "Рассада травы" #!String
+    GrassStarter_Description: "Посадите на ферме, если вам нужна трава." #!String
+    GravelPath_Name: "Дорожка из гравия" #!String
+    GravelPath_Description: "Создавайте дорожки на улице или застелите полы в доме." #!String
+    GreenAlgae_Name: "Зеленая водоросль" #!String
+    GreenAlgae_Description: "Она очень склизкая." #!String
+    GreenBean_Name: "Зеленая фасоль" #!String
+    GreenBean_Description: "Сочный, хрустящий боб." #!String
+    GreenRainWeeds_Name: "Сорняки зеленого дождя" #!String
+    GreenRainWeeds_Description: "Могут содержать волокна или смешанные семена." #!String
+    GreenSlimeEgg_Name: "Зеленое яйцо слайма" #!String
+    GreenSlimeEgg_Description: "Можно вырастить в инкубаторе для слаймов." #!String
+    GreenTea_Name: "Зеленый чай" #!String
+    GreenTea_Description: "Приятный освежающий напиток из слабо обработанных чайных листьев." #!String
+    HaleysLostBracelet_Name: "Потерянный браслет Хэйли" #!String
+    HaleysLostBracelet_Description: "Семейная реликвия." #!String
+    Halibut_Name: "Камбала" #!String
+    Halibut_Description: "Эта плоская рыба живет на дне океана." #!String
+    Hardwood_Name: "Твердая древесина" #!String
+    Hardwood_Description: "Особый тип древесины, отличающийся прочностью и красотой." #!String
+    HardwoodFence_Name: "Забор из твердой древесины" #!String
+    HardwoodFence_Description: "Самый прочный забор." #!String
+    Hashbrowns_Name: "Хашбраун" #!String
+    Hashbrowns_Description: "Золотистые и хрустящие!" #!String
+    Hay_Name: "Сено" #!String
+    Hay_Description: "Высушенная трава, используемая в качестве корма для животных." #!String
+    Hazelnut_Name: "Фундук" #!String
+    Hazelnut_Description: "Какой огромный фундук!" #!String
+    Hedge_Name: "Живая изгородь" #!String
+    Hedge_Description: "Фигурно подстриженный куст, служащий изгородью." #!String
+    Helvite_Name: "Гельвин" #!String
+    Helvite_Description: "Он растет в виде треугольной призмы." #!String
+    Hematite_Name: "Гематит" #!String
+    Hematite_Description: "«Железный» минерал с интересными магнитными свойствами." #!String
+    Herring_Name: "Сельдь" #!String
+    Herring_Description: "Распространенная морская рыба." #!String
+    Holly_Name: "Остролист" #!String
+    Holly_Description: "Его листья и ярко-красные ягодки популярны зимой в качестве украшения." #!String
+    Honey_Name: "Мед" #!String
+    Honey_Description: "Сладкий продукт, производимый пчелами." #!String
+    Honey_Flavored_Name: "Мед ({0})" #!String
+    Honey_Flavored_(O)591_Name: "Тюльпановый мед" #!String
+    Honey_Flavored_(O)597_Name: "Яркоцветовый мед" #!String
+    Honey_Flavored_(O)593_Name: "Мед из летнего блестника" #!String
+    Honey_Flavored_(O)376_Name: "Маковый мед" #!String
+    Honey_Flavored_(O)421_Name: "Подсолнуховый мед" #!String
+    Honey_Flavored_(O)595_Name: "Мед из сказочной розы" #!String
+    Honey_Wild_Name: "Дикий мед" #!String
+    Hops_Name: "Хмель" #!String
+    Hops_Description: "Горький, кисловатый цветок, используемый в пивоварении." #!String
+    HopsStarter_Name: "Рассада хмеля" #!String
+    HopsStarter_Description: "Высаживайте летом. Вырастает через 11 дней, но затем продолжает плодоносить. Растет на шпалере." #!String
+    HorseFlute_Name: "Лошадиная дудочка" #!String
+    HorseFlute_Description: "Сыграйте на ней, чтобы призвать свою лошадь. Работает только на улице." #!String
+    HotJavaRing_Name: "Кольцо горячего кофе" #!String
+    HotJavaRing_Description: "Разительно увеличивает шанс выпадения кофейных напитков при уничтожении монстров." #!String
+    HotPepper_Name: "Жгучий перец" #!String
+    HotPepper_Description: "Слегка сладковатый и пламенно жгучий." #!String
+    HyperSpeedGro_Name: "Гипер СкороРост" #!String
+    HyperSpeedGro_Description: "Разительно ускоряет рост листьев. Гарантирует увеличение скорости роста растений как минимум на 33%. Смешать с возделанной почвой." #!String
+    IceCream_Name: "Мороженое" #!String
+    IceCream_Description: "Сложно найти того, кому оно не нравится." #!String
+    IceCrystal_Name: "Ледяной кристалл" #!String
+    IceCrystal_Description: "Может содержать очищенный кварц." #!String
+    IcePip_Name: "Ледопип" #!String
+    IcePip_Description: "Редкая рыба, которая чувствует себя лучше всего при экстремально низких температурах." #!String
+    ImmunityBand_Name: "Кольцо стойкости" #!String
+    ImmunityBand_Description: "Верхняя часть кольца сделана из заговоренной пурпурной пряжи." #!String
+    IridiumBand_Name: "Иридиевый обод" #!String
+    IridiumBand_Description: "Сияет, притягивает предметы и увеличивает силу вашей атаки на 10%." #!String
+    IridiumBar_Name: "Иридиевый слиток" #!String
+    IridiumBar_Description: "Слиток чистого иридия." #!String
+    IridiumMilk_Name: "Иридиевое молоко" #!String
+    IridiumMilk_Description: "Придающее сил «молоко» неизвестного происхождения..." #!String
+    IridiumOre_Name: "Иридиевая руда" #!String
+    IridiumOre_Description: "Экзотическая руда со множеством интересных свойств. Можно переплавить в слитки." #!String
+    IridiumSprinkler_Name: "Иридиевый спринклер" #!String
+    IridiumSprinkler_Description: "Поливает 24 смежные клетки земли каждое утро." #!String
+    IridiumStone_Name: "Иридиевый камень" #!String
+    IridiumStone_Description: "Разбейте, чтобы получить иридиевую руду." #!String
+    IronBar_Name: "Железный слиток" #!String
+    IronBar_Description: "Слиток чистого железа." #!String
+    IronFence_Name: "Железный забор" #!String
+    IronFence_Description: "Прочнее, чем каменный забор." #!String
+    IronOre_Name: "Железная руда" #!String
+    IronOre_Description: "Довольно распространенная руда, которую можно переплавить в слитки." #!String
+    IronStone_Name: "Железный камень" #!String
+    IronStone_Description: "Разбейте, чтобы получить железную руду." #!String
+    JackOLantern_Name: "Фонарь из тыквы" #!String
+    JackOLantern_Description: "Чудное осеннее украшение." #!String
+    Jade_Name: "Нефрит" #!String
+    Jade_Description: "Бледно-зеленый поделочный камень." #!String
+    JadeRing_Name: "Кольцо с нефритом" #!String
+    JadeRing_Description: "Сила критической атаки увеличивается на 10%." #!String
+    JadeStone_Name: "Нефритовый камень" #!String
+    JadeStone_Description: "Разбейте, чтобы получить нефритовую руду." #!String
+    Jagoite_Name: "Ягоит" #!String
+    Jagoite_Description: "Он очень красиво блестит из-за большого количества маленьких кристаллов." #!String
+    Jamborite_Name: "Джамборит" #!String
+    Jamborite_Description: "Кристаллы расположены так тесно, что камень кажется почти пушистым." #!String
+    Jasper_Name: "Яшма" #!String
+    Jasper_Description: "После полировки этот камень будто светится приятным светом. Древние люди тысячи лет ценили его." #!String
+    JazzSeeds_Name: "Семена яркоцвета" #!String
+    JazzSeeds_Description: "Сажайте весной. Через 7 дней вырастает синий цветок-шарик." #!String
+    Jelly_Name: "Джем" #!String
+    Jelly_Description: "Липкий." #!String
+    Jelly_Flavored_Name: "Джем ({0})" #!String
+    Jelly_Flavored_(O)454_Name: "Джем из древнего плода" #!String
+    Jelly_Flavored_(O)613_Name: "Яблочный джем" #!String
+    Jelly_Flavored_(O)634_Name: "Абрикосовый джем" #!String
+    Jelly_Flavored_(O)91_Name: "Банановый джем" #!String
+    Jelly_Flavored_(O)410_Name: "Ежевичный джем" #!String
+    Jelly_Flavored_(O)258_Name: "Черничный джем" #!String
+    Jelly_Flavored_(O)90_Name: "Кактусовый джем" #!String
+    Jelly_Flavored_(O)638_Name: "Вишневый джем" #!String
+    Jelly_Flavored_(O)88_Name: "Кокосовый джем" #!String
+    Jelly_Flavored_(O)282_Name: "Клюквенный джем" #!String
+    Jelly_Flavored_(O)414_Name: "Джем из кристального фрукта" #!String
+    Jelly_Flavored_(O)398_Name: "Виноградный джем" #!String
+    Jelly_Flavored_(O)260_Name: "Джем из жгучего перца" #!String
+    Jelly_Flavored_(O)834_Name: "Манговый джем" #!String
+    Jelly_Flavored_(O)254_Name: "Дынный джем" #!String
+    Jelly_Flavored_(O)635_Name: "Апельсиновый джем" #!String
+    Jelly_Flavored_(O)636_Name: "Персиковый джем" #!String
+    Jelly_Flavored_(O)832_Name: "Ананасовый джем" #!String
+    Jelly_Flavored_(O)637_Name: "Гранатовый джем" #!String
+    Jelly_Flavored_(O)Powdermelon_Name: "Джем из снегодыни" #!String
+    Jelly_Flavored_(O)889_Name: "Джем из фрукта Ки" #!String
+    Jelly_Flavored_(O)252_Name: "Джем из ревеня" #!String
+    Jelly_Flavored_(O)400_Name: "Клубничный джем" #!String
+    Jelly_Flavored_(O)296_Name: "Джем из морошки" #!String
+    Jelly_Flavored_(O)396_Name: "Джем из острой ягоды" #!String
+    Jelly_Flavored_(O)268_Name: "Джем из карамболы" #!String
+    Jelly_Flavored_(O)406_Name: "Джем из дикой сливы" #!String
+    JojaCola_Name: "Джоджа-кола" #!String
+    JojaCola_Description: "Флагманский продукт корпорации Джоджа." #!String
+    JournalScrap_Name: "Обрывок дневника" #!String
+    JournalScrap_Description: "Мокрая потрепанная станица из старого дневника..." #!String
+    Juice_Name: "Сок" #!String
+    Juice_Description: "Вкусный и полезный напиток." #!String
+    Juice_Flavored_Name: "Сок ({0})" #!String
+    Juice_Flavored_(O)300_Name: "Амарантовый сок" #!String
+    Juice_Flavored_(O)274_Name: "Артишоковый сок" #!String
+    Juice_Flavored_(O)284_Name: "Свекольный сок" #!String
+    Juice_Flavored_(O)278_Name: "Сок бок-чоя" #!String
+    Juice_Flavored_(O)Broccoli_Name: "Сок брокколи" #!String
+    Juice_Flavored_(O)Carrot_Name: "Морковный сок" #!String
+    Juice_Flavored_(O)190_Name: "Сок цветной капусты" #!String
+    Juice_Flavored_(O)270_Name: "Кукурузный сок" #!String
+    Juice_Flavored_(O)272_Name: "Баклажановый сок" #!String
+    Juice_Flavored_(O)259_Name: "Папоротниковый сок" #!String
+    Juice_Flavored_(O)248_Name: "Чесночный сок" #!String
+    Juice_Flavored_(O)188_Name: "Сок зеленой фасоли" #!String
+    Juice_Flavored_(O)250_Name: "Сок кудрявой капусты" #!String
+    Juice_Flavored_(O)24_Name: "Сок пастернака" #!String
+    Juice_Flavored_(O)192_Name: "Картофельный сок" #!String
+    Juice_Flavored_(O)276_Name: "Тыквенный сок" #!String
+    Juice_Flavored_(O)264_Name: "Сок редиса" #!String
+    Juice_Flavored_(O)266_Name: "Сок красной капусты" #!String
+    Juice_Flavored_(O)SummerSquash_Name: "Сок сквоша" #!String
+    Juice_Flavored_(O)830_Name: "Сок корня таро" #!String
+    Juice_Flavored_(O)256_Name: "Томатный сок" #!String
+    Juice_Flavored_(O)271_Name: "Рисовый сок" #!String
+    Juice_Flavored_(O)280_Name: "Сок батата" #!String
+    Juice_Flavored_(O)78_Name: "Сок пещерной морковки" #!String
+    Juice_Flavored_(O)22_Name: "Сок одуванчика" #!String
+    Juice_Flavored_(O)829_Name: "Имбирный сок" #!String
+    Juice_Flavored_(O)408_Name: "Ореховый сок" #!String
+    Juice_Flavored_(O)20_Name: "Сок лука-порея" #!String
+    Juice_Flavored_(O)399_Name: "Сок лука-батуна" #!String
+    Juice_Flavored_(O)416_Name: "Сок снежного батата" #!String
+    Juice_Flavored_(O)16_Name: "Сок дикого хрена" #!String
+    Juice_Flavored_(O)412_Name: "Сок зимнего корня" #!String
+    JukeboxRing_Name: "Музыкальное кольцо" #!String
+    JukeboxRing_Description: "Играет произвольный список музыки, которую вы раньше слышали." #!String
+    Kale_Name: "Кудрявая капуста" #!String
+    Kale_Description: "Ее вощеные листья хороши в супах и стир-фраях." #!String
+    KaleSeeds_Name: "Семена кудрявой капусты" #!String
+    KaleSeeds_Description: "Сажайте весной. Вырастает через 6 дней. Собирайте урожай косой." #!String
+    Kyanite_Name: "Кианит" #!String
+    Kyanite_Description: "Его грани гладкие, будто стекло." #!String
+    LargeBrownEgg_Name: "Большое яйцо" #!String
+    LargeBrownEgg_Description: "Необыкновенно большое коричневое яйцо!" #!String
+    LargeMilk_Name: "Бидон молока" #!String
+    LargeMilk_Description: "Большой бидон коровьего молока." #!String
+    LargemouthBass_Name: "Большеротый окунь" #!String
+    LargemouthBass_Description: "Распространенная озерная рыба." #!String
+    LargeWhiteEgg_Name: "Большое яйцо" #!String
+    LargeWhiteEgg_Description: "Необыкновенно большое белое яйцо!" #!String
+    LavaEel_Name: "Лавовый угорь" #!String
+    LavaEel_Description: "Каким-то образом он выживает в раскаленной лаве." #!String
+    LeadBobber_Name: "Свинцовый поплавок" #!String
+    LeadBobber_Description: "Добавляет веса вашей «рыболовной шкале», не давая ей отскакивать от дна." #!String
+    Leek_Name: "Лук-порей" #!String
+    Leek_Description: "Вкусный родственник репчатого лука." #!String
+    Legend_Name: "Легенда" #!String
+    Legend_Description: "Царь рыб! А говорили, что его невозможно поймать." #!String
+    LegendII_Name: "Легенда II" #!String
+    LegendII_Description: "Преемник настоящей Легенды." #!String
+    LemonStone_Name: "Лемонстон" #!String
+    LemonStone_Description: "Говорят, в измельченном виде он славится как дварфийский деликатес." #!String
+    LGoatMilk_Name: "Бол. бутыль козьего молока" #!String
+    LGoatMilk_Description: "Почти 4 литра козьего молока." #!String
+    LifeElixir_Name: "Эликсир жизни" #!String
+    LifeElixir_Description: "Полностью восстанавливает здоровье." #!String
+    Limestone_Name: "Известняк" #!String
+    Limestone_Description: "Крайне распространенный вид камня. Не очень ценен." #!String
+    Lingcod_Name: "Змеезуб" #!String
+    Lingcod_Description: "Страшный хищник, который съест почти все, что влезет ему в рот." #!String
+    Lionfish_Name: "Морской ёрш" #!String
+    Lionfish_Description: "Агрессивная хищная рыба с ядовитыми шипами." #!String
+    Lobster_Name: "Омар" #!String
+    Lobster_Description: "Огромное океанское ракообразное с мощным хвостом." #!String
+    LobsterBisque_Name: "Биск из омара" #!String
+    LobsterBisque_Description: "Этот изысканный суп — фамильный рецепт Вилли." #!String
+    LostAxe_Name: "Потерянный топор" #!String
+    LostAxe_Description: "Робин везде его обыскалась." #!String
+    LostBook_Name: "Потерянная книга" #!String
+    LostBook_Description: "Записи от самых разных времен." #!String
+    LuckyLunch_Name: "Обед на удачу" #!String
+    LuckyLunch_Description: "Особое блюдо." #!String
+    LuckyPurpleShorts_Name: "Фиолетовые шорты" #!String
+    LuckyPurpleShorts_Description: "Лучше их не разглядывать." #!String
+    LuckyRing_Name: "Кольцо удачи" #!String
+    LuckyRing_Description: "Утверждают, что эмблема луны приносит удачу носящему." #!String
+    Lumber_Name: "Древесина" #!String
+    Lumber_Description: "Ресурс, который можно использовать как стройматериал или как топливо." #!String
+    Lunarite_Name: "Лунарит" #!String
+    Lunarite_Description: "Белые сферы с кратерами формируют плотное скопление." #!String
+    MagicBait_Name: "Волшебная приманка" #!String
+    MagicBait_Description: "Позволяет ловить рыбу любого времени года, времени суток, погоды в любой воде, куда бы вы ее ни забросили." #!String
+    MagicRockCandy_Name: "Волшебный леденец" #!String
+    MagicRockCandy_Description: "Редкая и наполненная энергией конфета, настоянная на эссенции призматического осколка." #!String
+    MagmaCap_Name: "Магмовый гриб" #!String
+    MagmaCap_Description: "Крайне редкий гриб, растущий рядом со скоплениями лавы." #!String
+    MagmaGeode_Name: "Магма-жеода" #!String
+    MagmaGeode_Description: "Попросите кузнеца ее разбить." #!String
+    MagmaGeodeStone_Name: "Магма-жеодовый камень" #!String
+    MagmaGeodeStone_Description: "Разбейте, чтобы получить магма-жеоды." #!String
+    Magnet_Name: "Магнит" #!String
+    Magnet_Description: "Увеличивает шанс найти сокровища на рыбалке. Правда, вкус этой приманки рыбам не очень-то нравится." #!String
+    MagnetRing_Name: "Кольцо-магнит" #!String
+    MagnetRing_Description: "Увеличивает ваш радиус «притяжения» предметов." #!String
+    MahoganySeed_Name: "Семя красного дерева" #!String
+    MahoganySeed_Description: "Его можно посадить, чтобы вырастить красное дерево." #!String
+    MakiRoll_Name: "Суши-роллы" #!String
+    MakiRoll_Description: "Рис и рыба, завернутые в водоросли." #!String
+    Malachite_Name: "Малахит" #!String
+    Malachite_Description: "Распространенный поделочный камень, используемый в скульптуре и изготовлении зеленой краски." #!String
+    Mango_Name: "Манго" #!String
+    Mango_Description: "Большой и сладкий тропический фрукт с неповторимым вкусом." #!String
+    MangoSapling_Name: "Саженец манго" #!String
+    MangoSapling_Description: "Становится взрослым манговым деревом через 28 дней. Плодоносит летом, а на Имбирном острове — круглый год." #!String
+    MangoStickyRice_Name: "Манговый клейкий рис" #!String
+    MangoStickyRice_Description: "Сладкое манго и кокос превращают этот рис во что-то невероятное." #!String
+    MapleBar_Name: "Кленовый пончик" #!String
+    MapleBar_Description: "Сладкий пончик с толстым слоем кленовой глазури." #!String
+    MapleSeed_Name: "Кленовое семя" #!String
+    MapleSeed_Description: "Можно посадить, чтобы вырастить клен." #!String
+    MapleSyrup_Name: "Кленовый сироп" #!String
+    MapleSyrup_Description: "Сладкий сироп с уникальным вкусом." #!String
+    Marble_Name: "Мрамор" #!String
+    Marble_Description: "Широко используемый материал в скульптуре и архитектуре." #!String
+    Mayonnaise_Name: "Майонез" #!String
+    Mayonnaise_Description: "Он очень густой." #!String
+    Mead_Name: "Медовуха" #!String
+    Mead_Description: "Напиток из сбродившего меда. Пейте в меру." #!String
+    MegaBomb_Name: "Мегабомба" #!String
+    MegaBomb_Description: "Взрывается в огромном радиусе. Разбегайтесь!" #!String
+    Melon_Name: "Дыня" #!String
+    Melon_Description: "Холодное, сладкое летнее угощение." #!String
+    MelonSeeds_Name: "Семена дыни" #!String
+    MelonSeeds_Description: "Сажайте летом. Вырастает через 12 дней." #!String
+    MermaidsPendant_Name: "Кулон Русалки" #!String
+    MermaidsPendant_Description: "Отдайте его тому, с кем хотите заключить брак." #!String
+    MidnightCarp_Name: "Полуночный карп" #!String
+    MidnightCarp_Description: "Эта застенчивая рыба чувствует себя комфортно только ночью." #!String
+    MidnightSquid_Name: "Ночной кальмар" #!String
+    MidnightSquid_Description: "Странный и загадочный обитатель темных океанских глубин." #!String
+    Milk_Name: "Ведерко молока" #!String
+    Milk_Description: "Ведерко коровьего молока." #!String
+    MinersTreat_Name: "«Шахтерский леденец»" #!String
+    MinersTreat_Description: "Обеспечит вам прилив сил." #!String
+    MixedFlowerSeeds_Name: "Смешанные цветочные семена" #!String
+    MixedFlowerSeeds_Description: "Несколько видов семян цветов. Посадите их и посмотрите, что вырастет!" #!String
+    MixedSeeds_Name: "Смешанные семена" #!String
+    MixedSeeds_Description: "Здесь есть всевозможные семена. Посадите их и увидите, что взойдет!" #!String
+    MonsterMusk_Name: "Монстрячий мускус" #!String
+    MonsterMusk_Description: "Распылите его, чтобы выманить побольше монстров из укрытий." #!String
+    Morel_Name: "Сморчок" #!String
+    Morel_Description: "Его любят за ореховый привкус." #!String
+    Moss_Name: "Мох" #!String
+    Moss_Description: "Особое растение, которое растет в тени." #!String
+    MossSoup_Name: "Суп из мха" #!String
+    MossSoup_Description: "Густой и склизкий, но съедобный." #!String
+    MossySeed_Name: "Мшистое семечко" #!String
+    MossySeed_Description: "Его можно посадить, чтобы вырастить редкое дикое дерево." #!String
+    MovieTicket_Name: "Билет в кино" #!String
+    MovieTicket_Description: "Единичный пропуск в кинотеатр. Если дадите его другу, он сможет пойти с вами в кино." #!String
+    MsAngler_Name: "Мисс Морской черт" #!String
+    MsAngler_Description: "Приманивает жертву биолюминесцентным отростком." #!String
+    Mudstone_Name: "Аргиллит" #!String
+    Mudstone_Description: "Мелкозернистый камень из древней грязи или глины." #!String
+    MummifiedBat_Name: "Мумифицированная летучая мышь" #!String
+    MummifiedBat_Description: "Ее изящные крылья превосходно сохранились." #!String
+    MummifiedFrog_Name: "Мумифицированная лягушка" #!String
+    MummifiedFrog_Description: "Должно быть, эта древняя лягушка жила в густых кронах джунглей." #!String
+    MuscleRemedy_Name: "Лекарство для мышц" #!String
+    MuscleRemedy_Description: "Если вы перетрудились, выпейте это лекарство, чтобы снять переутомление." #!String
+    MushroomTreeSeed_Name: "Семя грибного дерева" #!String
+    MushroomTreeSeed_Description: "Посадите его на своей ферме, чтобы вырастить грибное дерево." #!String
+    Mussel_Name: "Мидия" #!String
+    Mussel_Description: "Распространенный двустворчатый моллюск, который живет группами." #!String
+    MusselStone_Name: "Ракушковый камень" #!String
+    MusselStone_Description: "Разбейте, чтобы получить ракушки." #!String
+    MutantCarp_Name: "Карп-мутант" #!String
+    MutantCarp_Description: "Странная вода из канализации превратила этого карпа в чудовище." #!String
+    MysteryBox_Name: "Загадочная коробка" #!String
+    MysteryBox_Description: "Ее может вскрыть кузнец. Кто знает, что там внутри?" #!String
+    MysticStone_Name: "Загадочный камень" #!String
+    MysticStone_Description: "Разбейте, чтобы получить камни, руду или жеоды." #!String
+    MysticSyrup_Name: "Таинственный сироп" #!String
+    MysticSyrup_Description: "Крайне редкий сироп с магическими свойствами." #!String
+    MysticTreeSeed_Name: "Семя таинственного дерева" #!String
+    MysticTreeSeed_Description: "Его можно посадить и вырастить особое дерево." #!String
+    NapalmRing_Name: "Напалмовое кольцо" #!String
+    NapalmRing_Description: "Заставляет побежденных врагов взрываться." #!String
+    NautilusFossil_Name: "Окаменелый наутилус" #!String
+    NautilusFossil_Description: "Должно быть, очень давно его вымыло с древнего кораллового рифа." #!String
+    NautilusShell_Name: "Раковина наутилуса" #!String
+    NautilusShell_Description: "Древняя раковина." #!String
+    Nekoite_Name: "Некоит" #!String
+    Nekoite_Description: "Тонкие осколки сложились в крошечный розовый лужок." #!String
+    Neptunite_Name: "Нептунит" #!String
+    Neptunite_Description: "Черный как смоль кристалл с удивительными отражающими свойствами." #!String
+    OakResin_Name: "Дубовая смола" #!String
+    OakResin_Description: "Липкая, ароматная субстанция из сока дуба." #!String
+    Obsidian_Name: "Обсидиан" #!String
+    Obsidian_Description: "Вулканическое стекло, образующееся при быстром охлаждении лавы." #!String
+    OceanStone_Name: "Океаниум" #!String
+    OceanStone_Description: "По старой легенде, эти камни — мозаики древних русалок." #!String
+    Octopus_Name: "Осьминог" #!String
+    Octopus_Description: "Таинственное, умное существо." #!String
+    Oil_Name: "Масло" #!String
+    Oil_Description: "Масло для готовки." #!String
+    OilofGarlic_Name: "Чесночное масло" #!String
+    OilofGarlic_Description: "Выпейте, и слабые монстры будут вас избегать." #!String
+    Omelet_Name: "Омлет" #!String
+    Omelet_Description: "Он очень пышный." #!String
+    OmniGeode_Name: "Омнижеода" #!String
+    OmniGeode_Description: "Попросите кузнеца ее разбить. В таких жеодах содержатся разнообразные минералы." #!String
+    OmniGeodeStone_Name: "Омнижеодовый камень" #!String
+    OmniGeodeStone_Description: "Разбейте, чтобы получить омнижеоды." #!String
+    Opal_Name: "Опал" #!String
+    Opal_Description: "Благодаря его внутренней структуре, он отражает свет радугой." #!String
+    Orange_Name: "Апельсин" #!String
+    Orange_Description: "Сочный, кисловатый, источает сладкий летний аромат." #!String
+    OrangeSapling_Name: "Саженец апельсина" #!String
+    OrangeSapling_Description: "Становится взрослым апельсиновым деревом через 28 дней. Плодоносит летом. Растет только если 8 «клеток» вокруг него не заняты." #!String
+    OrnamentalFan_Name: "Декоративный веер" #!String
+    OrnamentalFan_Description: "Этот вычурный веер, скорее всего, принадлежал знатной особе. Историки считают, что долина была излюбленным местом отдыха для богачей шестой эры." #!String
+    OrnateNecklace_Name: "Резное ожерелье" #!String
+    OrnateNecklace_Description: "Модное ожерелье, найденное в прудике у бани. Оно все еще мокрое..." #!String
+    Orpiment_Name: "Орпимент" #!String
+    Orpiment_Description: "Несмотря на его высокую токсичность, этот минерал широко используется в промышленности и народной медицине." #!String
+    OstrichEgg_Name: "Страусиное яйцо" #!String
+    OstrichEgg_Description: "Пожалуй, самое большое яйцо в мире." #!String
+    Oyster_Name: "Устрица" #!String
+    Oyster_Description: "Постоянно пропускает через себя воду в поисках пищи. В этом процессе она также устраняет опасные токсины из окружающей среды." #!String
+    PaleAle_Name: "Светлый эль" #!String
+    PaleAle_Description: "Пейте в меру." #!String
+    PaleBroth_Name: "Светлый бульон" #!String
+    PaleBroth_Description: "Нежный бульон с серными нотками." #!String
+    PalmFossil_Name: "Окаменелая пальма" #!String
+    PalmFossil_Description: "Они не очень редкие, но этот экземпляр сохранился особенно хорошо." #!String
+    Pancakes_Name: "Блины" #!String
+    Pancakes_Description: "Двойная стопка пышных, нежных блинов." #!String
+    Parsnip_Name: "Пастернак" #!String
+    Parsnip_Description: "Весеннее растение, близкий родственник морковки. Очень питательный клубень с насыщенным вкусом." #!String
+    ParsnipSeeds_Name: "Семена пастернака" #!String
+    ParsnipSeeds_Description: "Сажайте весной. Вырастает через 4 дня." #!String
+    ParsnipSoup_Name: "Суп из пастернака" #!String
+    ParsnipSoup_Description: "Свежий и сытный." #!String
+    Peach_Name: "Персик" #!String
+    Peach_Description: "Он почти пушистый на ощупь." #!String
+    PeachSapling_Name: "Саженец персика" #!String
+    PeachSapling_Description: "Становится взрослым персиковым деревом через 28 дней. Плодоносит летом. Растет только если 8 «клеток» вокруг него не заняты." #!String
+    Pearl_Name: "Жемчужина" #!String
+    Pearl_Description: "Редкое сокровище из морских глубин." #!String
+    PepperPoppers_Name: "Перечные бомбочки" #!String
+    PepperPoppers_Description: "Панированный жгучий перец, фаршированный сыром." #!String
+    PepperSeeds_Name: "Семена перца" #!String
+    PepperSeeds_Description: "Сажайте летом. Вырастает через 5 дней и продолжает давать урожай после первого сбора." #!String
+    Perch_Name: "Окунь" #!String
+    Perch_Description: "Зимняя пресноводная рыба." #!String
+    Periwinkle_Name: "Литорина" #!String
+    Periwinkle_Description: "Крошечная береговая улитка, живущая в синей раковине." #!String
+    PetLicense_Name: "Лицензия на питомца" #!String
+    PetLicense_Description: "Впустите в свою жизнь нового питомца. Если возле вашего дома будет недостаточно мисок для питомцев, они расстроятся." #!String
+    PetrifiedSlime_Name: "Окаменелый слайм" #!String
+    PetrifiedSlime_Description: "Этому малышу около ста тысяч лет." #!String
+    PhoenixRing_Name: "Кольцо феникса" #!String
+    PhoenixRing_Description: "Раз в день позволяет восстановить немного здоровья после нокаута." #!String
+    Pickles_Name: "Маринованные консервы" #!String
+    Pickles_Description: "Банка домашних заготовок." #!String
+    Pickles_Flavored_Name: "Маринов. {1}" #!String
+    Pickles_Flavored_(O)300_Name: "Маринованный {1}" #!String
+    Pickles_Flavored_(O)274_Name: "Маринованные артишоки" #!String
+    Pickles_Flavored_(O)284_Name: "Маринованная {1}" #!String
+    Pickles_Flavored_(O)278_Name: "Маринованный {1}" #!String
+    Pickles_Flavored_(O)Broccoli_Name: "Маринованная {1}" #!String
+    Pickles_Flavored_(O)Carrot_Name: "Маринованная {1}" #!String
+    Pickles_Flavored_(O)190_Name: "Квашеная {1}" #!String
+    Pickles_Flavored_(O)270_Name: "Маринованная {1}" #!String
+    Pickles_Flavored_(O)272_Name: "Маринованные баклажаны" #!String
+    Pickles_Flavored_(O)259_Name: "Маринованный папоротник" #!String
+    Pickles_Flavored_(O)248_Name: "Маринованный {1}" #!String
+    Pickles_Flavored_(O)188_Name: "Маринованная {1}" #!String
+    Pickles_Flavored_(O)304_Name: "Маринованный {1}" #!String
+    Pickles_Flavored_(O)250_Name: "Квашеная {1}" #!String
+    Pickles_Flavored_(O)24_Name: "Маринованный {1}" #!String
+    Pickles_Flavored_(O)192_Name: "Маринованный {1}" #!String
+    Pickles_Flavored_(O)276_Name: "Маринованная {1}" #!String
+    Pickles_Flavored_(O)264_Name: "Маринованный {1}" #!String
+    Pickles_Flavored_(O)266_Name: "Квашеная {1}" #!String
+    Pickles_Flavored_(O)SummerSquash_Name: "Маринованный {1}" #!String
+    Pickles_Flavored_(O)830_Name: "Маринованный {1}" #!String
+    Pickles_Flavored_(O)815_Name: "Маринованные {1}" #!String
+    Pickles_Flavored_(O)256_Name: "Маринованные помидоры" #!String
+    Pickles_Flavored_(O)271_Name: "Квашеный рис" #!String
+    Pickles_Flavored_(O)262_Name: "Квашеная {1}" #!String
+    Pickles_Flavored_(O)280_Name: "Маринованный {1}" #!String
+    Pickles_Flavored_(O)404_Name: "Маринованные шампиньоны" #!String
+    Pickles_Flavored_(O)22_Name: "Маринованный {1}" #!String
+    Pickles_Flavored_(O)20_Name: "Маринованный {1}" #!String
+    Pickles_Flavored_(O)257_Name: "Маринованные сморчки" #!String
+    Pickles_Flavored_(O)399_Name: "Маринованный {1}" #!String
+    Pickles_Flavored_(O)16_Name: "Маринованный {1}" #!String
+    Pickles_Flavored_(O)281_Name: "Маринованные лисички" #!String
+    Pickles_Flavored_(O)408_Name: "Маринованный {1}" #!String
+    Pickles_Flavored_(O)422_Name: "Маринованные фиолетовые грибы" #!String
+    Pickles_Flavored_(O)416_Name: "Маринованный {1}" #!String
+    Pickles_Flavored_(O)412_Name: "Маринованный {1}" #!String
+    Pickles_Flavored_(O)78_Name: "Маринованная {1}" #!String
+    Pickles_Flavored_(O)829_Name: "Маринованный {1}" #!String
+    Pickles_Flavored_(O)851_Name: "Маринованные магмовые грибы" #!String
+    PierresMissingStocklist_Name: "Потерянная инвентарная опись Пьера" #!String
+    PierresMissingStocklist_Description: "Она может заинтересовать Пьера." #!String
+    Pike_Name: "Щука" #!String
+    Pike_Description: "Пресноводная рыба, которую сложно поймать." #!String
+    PinaColada_Name: "Пина колада" #!String
+    PinaColada_Description: "Пейте в меру." #!String
+    Pineapple_Name: "Ананас" #!String
+    Pineapple_Description: "Сладкое и пикантное тропическое лакомство." #!String
+    PineappleSeeds_Name: "Семена ананаса" #!String
+    PineappleSeeds_Description: "Сажайте в теплую погоду. Вырастает через 14 дней и продолжает давать урожай после первого сбора." #!String
+    PineCone_Name: "Сосновая шишка" #!String
+    PineCone_Description: "Ее можно посадить, чтобы вырастить сосну." #!String
+    PineTar_Name: "Сосновая смола" #!String
+    PineTar_Description: "Ароматная субстанция из сока сосны." #!String
+    PinkCake_Name: "Розовый торт" #!String
+    PinkCake_Description: "Сверху на нем конфеты в виде сердечек." #!String
+    PiratesLocket_Name: "Пиратский медальон" #!String
+    PiratesLocket_Description: "Старый пиратский памятный сувенир." #!String
+    Pizza_Name: "Пицца" #!String
+    Pizza_Description: "Она популярна по многим причинам." #!String
+    PlumPudding_Name: "Сливовый пудинг" #!String
+    PlumPudding_Description: "Традиционное праздничное лакомство." #!String
+    Poi_Name: "Пои" #!String
+    Poi_Description: "Традиционное блюдо с тонким сладковатым вкусом. Лучше есть его свежим." #!String
+    Pomegranate_Name: "Гранат" #!String
+    Pomegranate_Description: "Внутри — много маленьких сочных семян." #!String
+    PomegranateSapling_Name: "Саженец граната" #!String
+    PomegranateSapling_Description: "Становится взрослым гранатовым деревом через 28 дней. Плодоносит осенью. Растет только если 8 «клеток» вокруг него не заняты." #!String
+    Poppy_Name: "Мак" #!String
+    Poppy_Description: "Он не только красиво цветет, но и используется в медицине и кулинарии." #!String
+    PoppyseedMuffin_Name: "Маффин с маком" #!String
+    PoppyseedMuffin_Description: "Оказывает успокаивающий эффект." #!String
+    PoppySeeds_Name: "Семена мака" #!String
+    PoppySeeds_Description: "Сажайте летом. Через 7 дней вырастает ярко-красный цветок." #!String
+    Potato_Name: "Картофель" #!String
+    Potato_Description: "Широко распространенный клубень." #!String
+    PotatoSeeds_Name: "Семена картофеля" #!String
+    PotatoSeeds_Description: "Сажайте весной. Вырастает через 6 дней, может дать несколько картофелин за один сбор." #!String
+    Powdermelon_Name: "Снегодыня" #!String
+    Powdermelon_Description: "Названа так в честь своей припудренной, будто первым снегом, кожуры. Эта сладкая и хрустящая дыня обладает нежным вкусом." #!String
+    PowdermelonSeeds_Name: "Семена снегодыни" #!String
+    PowdermelonSeeds_Description: "Особый вид дыни, который растет зимой. Вырастает через 7 дней." #!String
+    PrehistoricHandaxe_Name: "Доисторический топор" #!String
+    PrehistoricHandaxe_Description: "Один из самых ранних инструментов человечества. Люди били камнем о камень, чтобы получить заостренный конец." #!String
+    PrehistoricRib_Name: "Доисторическое ребро" #!String
+    PrehistoricRib_Description: "Маленькие засечки на нем предполагают, что это ребро было чьим-то обедом." #!String
+    PrehistoricScapula_Name: "Доисторическая скапула" #!String
+    PrehistoricScapula_Description: "Известна в народе как просто «лопатка»... Точно не известно, какому виду она принадлежала." #!String
+    PrehistoricSkull_Name: "Доисторический череп" #!String
+    PrehistoricSkull_Description: "Определенно, он принадлежал млекопитающему." #!String
+    PrehistoricTibia_Name: "Доисторическая берцовая кость" #!String
+    PrehistoricTibia_Description: "Толстая и прочная кость ноги." #!String
+    PrehistoricTool_Name: "Доисторический инструмент" #!String
+    PrehistoricTool_Description: "Грубый копательный инструмент." #!String
+    PrehistoricVertebra_Name: "Доисторический позвонок" #!String
+    PrehistoricVertebra_Description: "Часть позвоночника какого-то доисторического существа." #!String
+    PressureNozzle_Name: "Нагнетательное сопло" #!String
+    PressureNozzle_Description: "Установите на спринклер, чтобы увеличить радиус его полива." #!String
+    PrismaticJelly_Name: "Радужное желе" #!String
+    PrismaticJelly_Description: "Добывается из редкого и неуловимого Радужного слайма." #!String
+    PrismaticShard_Name: "Радужный осколок" #!String
+    PrismaticShard_Description: "Редчайшее вещество неизвестного происхождения." #!String
+    PrizeTicket_Name: "Призовой билет" #!String
+    PrizeTicket_Description: "Используйте его в призовом аппарате в доме Льюиса, чтобы получить особые награды." #!String
+    ProtectionRing_Name: "Защитное кольцо" #!String
+    ProtectionRing_Description: "Оставайтесь неуязвимым какое-то время после получения урона." #!String
+    Pufferfish_Name: "Рыба-еж" #!String
+    Pufferfish_Description: "Раздувается, если чувствует опасность." #!String
+    Pumpkin_Name: "Тыква" #!String
+    Pumpkin_Description: "Выращивается осенью ради ее хрустящих семян и деликатной мякоти. Кожуру можно превратить в праздничное украшение." #!String
+    PumpkinPie_Name: "Тыквенный пирог" #!String
+    PumpkinPie_Description: "Шелковый тыквенный крем под корочкой с хлопьями." #!String
+    PumpkinSeeds_Name: "Семена тыквы" #!String
+    PumpkinSeeds_Description: "Сажайте осенью. Вырастает через 13 дней." #!String
+    PumpkinSoup_Name: "Тыквенный суп" #!String
+    PumpkinSoup_Description: "Любимое блюдо сезона." #!String
+    PurpleBook_Name: "Книга звезд" #!String
+    PurpleBook_Description: "Прочтите, чтобы узнать новое обо всех навыках." #!String
+    PurpleMushroom_Name: "Фиолетовый гриб" #!String
+    PurpleMushroom_Description: "Редкий гриб, растущий глубоко в пещерах." #!String
+    PurpleSlimeEgg_Name: "Фиолетовое яйцо слайма" #!String
+    PurpleSlimeEgg_Description: "Можно вырастить в инкубаторе для слаймов." #!String
+    Pyrite_Name: "Пирит" #!String
+    Pyrite_Description: "Известен также как «кошачье золото»." #!String
+    QiBean_Name: "Семя Ки" #!String
+    QiBean_Description: "Сажайте в любое время года. Поливайте каждый день, чтобы получить Фрукт Ки. Вырастает через 4 дня." #!String
+    QiFruit_Name: "Фрукт Ки" #!String
+    QiFruit_Description: "Мистер Ки поспорил с вами, что вы не сможете собрать 500 этих странных фруктов." #!String
+    QiGem_Name: "Самоцвет Ки" #!String
+    QiGem_Description: "Особая валюта, которую ценит Мистер Ки." #!String
+    QiSeasoning_Name: "Приправа Ки" #!String
+    QiSeasoning_Description: "Одна щепотка этой приправы выведет любое блюдо на совершенно новый уровень. Автоматически добавляется при готовке." #!String
+    QualityBobber_Name: "Высококачественный поплавок" #!String
+    QualityBobber_Description: "Повышает качество улова." #!String
+    QualityFertilizer_Name: "Высококачественное удобрение" #!String
+    QualityFertilizer_Description: "Улучшает качество почвы, увеличивая шанс вырастить урожай высокого качества. Смешать с возделанной почвой." #!String
+    QualityRetainingSoil_Name: "Высококачественная влагосохраняющая почва" #!String
+    QualityRetainingSoil_Description: "Эта почва с наибольшей вероятностью сохранит воду с предыдущего полива на следующий день. Смешать с возделанной почвой." #!String
+    QualitySprinkler_Name: "Высококачественный спринклер" #!String
+    QualitySprinkler_Description: "Поливает 8 смежных клеток земли каждое утро." #!String
+    Quartz_Name: "Кварц" #!String
+    Quartz_Description: "Прозрачный кристалл, который можно легко найти в пещерах и шахтах." #!String
+    RabbitsFoot_Name: "Кроличья лапка" #!String
+    RabbitsFoot_Description: "Говорят, она приносит удачу." #!String
+    RadioactiveBar_Name: "Радиоактивный слиток" #!String
+    RadioactiveBar_Description: "Комитет безопасности города Зузу утверждает, что он наносит непоправимый вред здоровью." #!String
+    RadioactiveCarp_Name: "Радиоактивный карп" #!String
+    RadioactiveCarp_Description: "Карп, который провел слишком много времени в радиоактивной жиже." #!String
+    RadioactiveOre_Name: "Радиоактивная руда" #!String
+    RadioactiveOre_Description: "От нее исходит зловещее сияние... Можно переплавить в слитки." #!String
+    RadioactiveStone_Name: "Радиоактивный камень" #!String
+    RadioactiveStone_Description: "Разбейте, чтобы получить радиоактивную руду." #!String
+    Radish_Name: "Редис" #!String
+    Radish_Description: "Хрустящий и сочный корнеплод, в сыром виде слегка острый." #!String
+    RadishSalad_Name: "Салат из редиса" #!String
+    RadishSalad_Description: "Редиска такая хрустящая!" #!String
+    RadishSeeds_Name: "Семена редиса" #!String
+    RadishSeeds_Description: "Сажайте летом. Вырастает через 6 дней." #!String
+    RainbowShell_Name: "Радужная ракушка" #!String
+    RainbowShell_Description: "Очень красивая ракушка." #!String
+    RainbowTrout_Name: "Радужная форель" #!String
+    RainbowTrout_Description: "Пресноводная форель с ярким окрасом." #!String
+    RainTotem_Name: "Тотем дождя" #!String
+    RainTotem_Description: "При использовании значительно повышает вероятность дождя на следующий день. Одноразовый предмет." #!String
+    Raisins_Name: "Изюм" #!String
+    Raisins_Description: "Говорят, это любимая еда Джунимо." #!String
+    RareDisc_Name: "Редкий диск" #!String
+    RareDisc_Description: "Тяжелый черный диск, усеянный особыми красными камушками. Когда держишь его в руках, тебя одолевает чувство ужаса." #!String
+    RareSeed_Name: "Редкое семечко" #!String
+    RareSeed_Description: "Сажайте осенью. Ему требуется целый сезон, чтобы вырасти." #!String
+    RedCabbage_Name: "Красная капуста" #!String
+    RedCabbage_Description: "Ее часто используют в салатах. В зависимости от условий цвет варьируется от фиолетового до синего и желто-зеленого." #!String
+    RedCabbageSeeds_Name: "Семена красной капусты" #!String
+    RedCabbageSeeds_Description: "Сажайте летом. Вырастает через 9 дней." #!String
+    RedMullet_Name: "Барабулька" #!String
+    RedMullet_Description: "Когда-то давно их держали как домашних животных." #!String
+    RedMushroom_Name: "Красный гриб" #!String
+    RedMushroom_Description: "Пятнистый гриб, растущий в пещерах." #!String
+    RedPlate_Name: "Красное блюдо" #!String
+    RedPlate_Description: "В нем полно антиоксидантов." #!String
+    RedSlimeEgg_Name: "Красное яйцо слайма" #!String
+    RedSlimeEgg_Description: "Можно вырастить в инкубаторе для слаймов." #!String
+    RedSnapper_Name: "Берикс" #!String
+    RedSnapper_Description: "Известная рыбка красивого красного цвета." #!String
+    RefinedQuartz_Name: "Очищенный кварц" #!String
+    RefinedQuartz_Description: "Более чистая форма кварца." #!String
+    Rhubarb_Name: "Ревень" #!String
+    Rhubarb_Description: "Стебли очень кислые, но очень хороши в десертах, если их подсластить." #!String
+    RhubarbPie_Name: "Пирог с ревенем" #!String
+    RhubarbPie_Description: "М-м, какой терпкий и сладкий!" #!String
+    RhubarbSeeds_Name: "Семена ревеня" #!String
+    RhubarbSeeds_Description: "Сажайте весной. Вырастает через 13 дней." #!String
+    Rice_Name: "Рис" #!String
+    Rice_Description: "Обычный злак, который часто подают с овощами." #!String
+    RicePudding_Name: "Рисовый пудинг" #!String
+    RicePudding_Description: "У него сладкий, сливочный вкус." #!String
+    RiceShoot_Name: "Росток риса" #!String
+    RiceShoot_Description: "Сажайте весной. Вырастает через 8 дней. Растет быстрее вблизи водоема. Собирайте урожай косой." #!String
+    RingofYoba_Name: "Кольцо Иобы" #!String
+    RingofYoba_Description: "Может наделить обладателя временной неуязвимостью." #!String
+    RiverJelly_Name: "Речное желе" #!String
+    RiverJelly_Description: "Редкое желе из пресных источников." #!String
+    RoastedHazelnuts_Name: "Жареный фундук" #!String
+    RoastedHazelnuts_Description: "При обжарке образуется насыщенный лесной аромат." #!String
+    Roe_Name: "Икра" #!String
+    Roe_Description: "Свежие рыбьи яйца. Их можно засолить в кадке, чтобы они стали еще вкуснее." #!String
+    Roe_Flavored_Name: "Икра ({0})" #!String
+    RootsPlatter_Name: "Коренья на блюде" #!String
+    RootsPlatter_Description: "Вам захочется добавки!" #!String
+    RottenPlant_Name: "Гнилое растение" #!String
+    RottenPlant_Description: "Разлагающийся органический материал. Оно склизкое и противное." #!String
+    Ruby_Name: "Рубин" #!String
+    Ruby_Description: "Драгоценный камень, любимый за свой насыщенный цвет и красивый блеск." #!String
+    RubyRing_Name: "Кольцо с рубином" #!String
+    RubyRing_Description: "Сила атаки увеличивается на 10%." #!String
+    RubyStone_Name: "Рубиновый камень" #!String
+    RubyStone_Description: "Разбейте, чтобы получить рубины." #!String
+    RusticPlankFloor_Name: "Грубоватое дощатое покрытие" #!String
+    RusticPlankFloor_Description: "Создавайте дорожки на улице или застелите полы в доме." #!String
+    RustyCog_Name: "Ржавая шестерня" #!String
+    RustyCog_Description: "Хорошо сохранившаяся шестерня, которая, должно быть, была частью древнего механизма. Возможно, она из технологии дварфов." #!String
+    RustySpoon_Name: "Ржавая ложка" #!String
+    RustySpoon_Description: "Простая старая ложка. Возможно, ей десять лет. Не очень интересный экземпляр." #!String
+    RustySpur_Name: "Ржавая шпора" #!String
+    RustySpur_Description: "Старая шпора, которая когда-то была прикреплена к ковбойскому сапогу. Должно быть, люди много поколений занимались здесь животноводством." #!String
+    Salad_Name: "Салат" #!String
+    Salad_Description: "Полезный садовый салат." #!String
+    Salmon_Name: "Лосось" #!String
+    Salmon_Description: "Плывет на нерест против течения." #!String
+    Salmonberry_Name: "Морошка" #!String
+    Salmonberry_Description: "Весенняя ягода с лесным вкусом." #!String
+    SalmonDinner_Name: "Ужин из лосося" #!String
+    SalmonDinner_Description: "Пару капелек лимонного сока придают ему особый вкус." #!String
+    Sandfish_Name: "Песковник" #!String
+    Sandfish_Description: "Эта рыба маскируется, используя природный камуфляж." #!String
+    Sandstone_Name: "Песчаник" #!String
+    Sandstone_Description: "Распространенный камень с красными и коричневыми полосками." #!String
+    Sap_Name: "Древесный сок" #!String
+    Sap_Description: "Жидкость, добываемая из деревьев." #!String
+    Sardine_Name: "Сардина" #!String
+    Sardine_Description: "Распространенная океанская рыба." #!String
+    Sashimi_Name: "Сашими" #!String
+    Sashimi_Description: "Сырая рыба, порезанная на тонкие кусочки." #!String
+    SavageRing_Name: "Кольцо дикаря" #!String
+    SavageRing_Description: "При уничтожении монстра скорость движения ненадолго увеличивается." #!String
+    ScorpionCarp_Name: "Скорпионовый карп" #!String
+    ScorpionCarp_Description: "Как обычный карп, только с острым жалом." #!String
+    SeaCucumber_Name: "Морской огурец" #!String
+    SeaCucumber_Description: "Скользкое и склизкое существо, живущее на дне океана." #!String
+    SeafoamPudding_Name: "Морской пенный пудинг" #!String
+    SeafoamPudding_Description: "Этот соленый пудинг действительно настроит вас на морское мышление!" #!String
+    SeaJelly_Name: "Морское желе" #!String
+    SeaJelly_Description: "Редкое желе из океана." #!String
+    SeaUrchin_Name: "Морской еж" #!String
+    SeaUrchin_Description: "Медлительное, колючее существо, которое некоторые считают деликатесом." #!String
+    Seaweed_Name: "Морская водоросль" #!String
+    Seaweed_Description: "Используется в готовке." #!String
+    SecretNote_Name: "Секретная заметка" #!String
+    SecretNote_Description: "Старая и помятая, но если посмотреть поближе, можно различить детали..." #!String
+    Shad_Name: "Шэд" #!String
+    Shad_Description: "Живет косяками в море, но возвращается в реки на нерест." #!String
+    Shrimp_Name: "Креветка" #!String
+    Shrimp_Description: "Питается со дна океана. Славится своим мясом." #!String
+    ShrimpCocktail_Name: "Креветочный коктейль" #!String
+    ShrimpCocktail_Description: "Дорогостоящий аперитив из свежевыловленных креветок." #!String
+    SkeletalHand_Name: "Рука скелета" #!String
+    SkeletalHand_Description: "Удивительно, как долго все маленькие кости сохранились вместе." #!String
+    SkeletalTail_Name: "Хвост скелета" #!String
+    SkeletalTail_Description: "Коротковат для хвоста." #!String
+    SkillBook0_Name: "Альманах Долины Стардью" #!String
+    SkillBook0_Description: "Прочтите, чтобы узнать новое о фермерстве." #!String
+    SkillBook1_Name: "Поплавок и наживка" #!String
+    SkillBook1_Description: "Прочтите, чтобы узнать новое о рыбной ловле." #!String
+    SkillBook2_Name: "Еженедельник лесника" #!String
+    SkillBook2_Description: "Прочтите, чтобы узнать новое о собирательстве." #!String
+    SkillBook3_Name: "Ежемесячник копателя" #!String
+    SkillBook3_Description: "Прочтите, чтобы узнать новое о горном деле." #!String
+    SkillBook4_Name: "Дайджест драчуна" #!String
+    SkillBook4_Description: "Прочтите, чтобы узнать новое о боевых искусствах." #!String
+    Slate_Name: "Сланец" #!String
+    Slate_Description: "Крайне водостойкий, используется при изготовлении шифера для крыш." #!String
+    Slime_Name: "Слизь" #!String
+    Slime_Description: "Блестящий и зыбкий шарик без запаха." #!String
+    SlimeCharmerRing_Name: "Кольцо укротителя слаймов" #!String
+    SlimeCharmerRing_Description: "Блокирует урон от слаймов." #!String
+    SlimeCrate_Name: "Ящик слайма" #!String
+    SlimeCrate_Description: "Перевозите в нем одомашненного слайма на новое место." #!String
+    Slimejack_Name: "Слаймджек" #!String
+    Slimejack_Description: "Он покрыт толстым слоем слизи и все время выскальзывает у вас из рук!" #!String
+    SmallGlowRing_Name: "Малое кольцо света" #!String
+    SmallGlowRing_Description: "Излучает немного света." #!String
+    SmallMagnetRing_Name: "Малое кольцо-магнит" #!String
+    SmallMagnetRing_Description: "Немного увеличивает ваш радиус «притяжения» предметов." #!String
+    SmallmouthBass_Name: "Малоротый окунь" #!String
+    SmallmouthBass_Description: "Пресноводная рыба, очень чувствительная к загрязнению воды." #!String
+    SmokedFish_Name: "Копченая рыба" #!String
+    SmokedFish_Description: "{0} изысканного цельного копчения." #!String
+    SmokedFish_CollectionsTabDescription: "Рыба изысканного цельного копчения." #!String
+    SmokedFish_CollectionsTabName: "Копченая рыба" #!String
+    SmokedFish_Flavored_Name: "Копченый {1}" #!String
+    SmokedFish_Flavored_(O)128_Name: "Копченая {1}" #!String
+    SmokedFish_Flavored_(O)131_Name: "Копченая {1}" #!String
+    SmokedFish_Flavored_(O)138_Name: "Копченая {1}" #!String
+    SmokedFish_Flavored_(O)144_Name: "Копченая {1}" #!String
+    SmokedFish_Flavored_(O)146_Name: "Копченая {1}" #!String
+    SmokedFish_Flavored_(O)147_Name: "Копченая {1}" #!String
+    SmokedFish_Flavored_(O)158_Name: "Копченая {1}" #!String
+    SmokedFish_Flavored_(O)267_Name: "Копченая {1}" #!String
+    SmokedFish_Flavored_(O)699_Name: "Копченая {1}" #!String
+    SmokedFish_Flavored_(O)701_Name: "Копченая {1}" #!String
+    SmokedFish_Flavored_(O)704_Name: "Копченая {1}" #!String
+    SmokedFish_Flavored_(O)708_Name: "Копченая {1}" #!String
+    SmokedFish_Flavored_(O)799_Name: "Копченая {1}" #!String
+    SmokedFish_Flavored_(O)800_Name: "Копченая {1}" #!String
+    SmokedFish_Flavored_(O)718_Name: "Копченая {1}" #!String
+    SmokedFish_Flavored_(O)719_Name: "Копченая {1}" #!String
+    SmokedFish_Flavored_(O)720_Name: "Копченая {1}" #!String
+    SmokedFish_Flavored_(O)721_Name: "Копченая {1}" #!String
+    SmokedFish_Flavored_(O)722_Name: "Копченая {1}" #!String
+    SmokedFish_Flavored_(O)723_Name: "Копченая {1}" #!String
+    SmokedFish_Flavored_(O)159_Name: "Копченый {0}" #!String
+    SmokedFish_Flavored_(O)160_Name: "Копченый {0}" #!String
+    SmokedFish_Flavored_(O)163_Name: "Копченая {0}" #!String
+    SmokedFish_Flavored_(O)775_Name: "Копченый {0}" #!String
+    SmokedFish_Flavored_(O)682_Name: "Копченый {0}" #!String
+    SmokedFish_Flavored_(O)898_Name: "Копченый {0}" #!String
+    SmokedFish_Flavored_(O)899_Name: "Копченая {0}" #!String
+    SmokedFish_Flavored_(O)900_Name: "Копченая {0}" #!String
+    SmokedFish_Flavored_(O)902_Name: "Копченый {0}" #!String
+    SmokedFish_Flavored_(O)901_Name: "Копченый {0}" #!String
+    Snail_Name: "Улитка" #!String
+    Snail_Description: "Широкий спектр моллюсков, живущих в спиральной раковине." #!String
+    SnakeSkull_Name: "Змеиный череп" #!String
+    SnakeSkull_Description: "Сохранившийся череп, когда-то принадлежавший змее." #!String
+    SnakeVertebrae_Name: "Змеиный позвоночник" #!String
+    SnakeVertebrae_Description: "Похоже, эта змея была на удивление гибкой." #!String
+    SnowYam_Name: "Снежный батат" #!String
+    SnowYam_Description: "Этот небольшой батат был укрыт снегом." #!String
+    SnowyStone_Name: "Заснеженный камень" #!String
+    SnowyStone_Description: "Разбейте, чтобы получить камни, руду или жеоды." #!String
+    Soapstone_Name: "Талькохлорит" #!String
+    Soapstone_Description: "Широко используется в резьбе по камню из-за своей относительно мягкой структуры." #!String
+    SoggyNewspaper_Name: "Мокрая газета" #!String
+    SoggyNewspaper_Description: "Мусор." #!String
+    SolarEssence_Name: "Солнечная эссенция" #!String
+    SolarEssence_Description: "Ее светящаяся сторона теплая на ощупь." #!String
+    SonarBobber_Name: "Сонарный поплавок" #!String
+    SonarBobber_Description: "Во время выуживания показывает, какая именно рыба клюнула на крючок." #!String
+    SonofCrimsonfish_Name: "Малек Багрянника" #!String
+    SonofCrimsonfish_Description: "Он вылупился в теплой летней воде и последовал по стопам своего родителя." #!String
+    SoulSapperRing_Name: "Подрывное кольцо души" #!String
+    SoulSapperRing_Description: "Получайте немного энергии при уничтожении монстров." #!String
+    Spaghetti_Name: "Спагетти" #!String
+    Spaghetti_Description: "Старая добрая классика." #!String
+    SpangleSeeds_Name: "Семена блестника" #!String
+    SpangleSeeds_Description: "Сажайте летом. Через 8 дней вырастает яркий тропический цветок. Цветы бывают разного цвета." #!String
+    SpecificBait_Name: "Приманка" #!String
+    SpecificBait_Description: "Увеличивает шанс поймать определенную рыбу ({0})." #!String
+    SpecificBait_Flavored_Name: "Наживка: {0}" #!String
+    SpeedGro_Name: "СкороРост" #!String
+    SpeedGro_Description: "Ускоряет рост листьев. Гарантирует увеличение скорости роста растений как минимум на 10%. Смешать с возделанной почвой." #!String
+    SpiceBerry_Name: "Острая ягода" #!String
+    SpiceBerry_Description: "В воздухе стоит ее резкий запах." #!String
+    SpicyEel_Name: "Острый угорь" #!String
+    SpicyEel_Description: "Очень острый! Будьте осторожны." #!String
+    Spinner_Name: "Спиннер" #!String
+    Spinner_Description: "Он вращается в воде благодаря своей форме. Немного увеличивает частоту клева." #!String
+    SpiritTorch_Name: "Факел духов" #!String
+    SpiritTorch_Description: "Природа этого голубого свечения остается загадкой..." #!String
+    SpookFish_Name: "Жуть-рыба" #!String
+    SpookFish_Description: "Огромные глаза улавливают размытые силуэты добычи." #!String
+    SpringOnion_Name: "Лук-батун" #!String
+    SpringOnion_Description: "Весной растет в дикой природе." #!String
+    SpringSeeds_Name: "Весенние семена" #!String
+    SpringSeeds_Description: "Разнообразные семена диких весенних растений." #!String
+    Sprinkler_Name: "Спринклер" #!String
+    Sprinkler_Description: "Поливает 4 смежные клетки земли каждое утро." #!String
+    Squid_Name: "Кальмар" #!String
+    Squid_Description: "Глубоководное морское существо, способное вырасти до огромных размеров." #!String
+    SquidInk_Name: "Чернила кальмара" #!String
+    SquidInk_Description: "Кальмар использует их для отвлечения потенциальных хищников." #!String
+    SquidInkRavioli_Name: "Равиоли с чернилами кальмара" #!String
+    SquidInkRavioli_Description: "Дают временный иммунитет к отрицательным эффектам." #!String
+    StardewValleyRose_Name: "Роза Долины Стардью" #!String
+    StardewValleyRose_Description: "Роза, напоминающая о долине. Аромат просто неземной." #!String
+    Stardrop_Name: "Звездная капля" #!String
+    Stardrop_Description: "Таинственный фрукт, который наделяет того, кто его съест, особыми силами. Его вкус похож на сон... Очень сильное личное переживание, которое сложно описать другим." #!String
+    StardropTea_Name: "Чай из звездной капли" #!String
+    StardropTea_Description: "Особый подарок, который понравится каждому." #!String
+    Starfruit_Name: "Карамбола" #!String
+    Starfruit_Description: "Чрезвычайно сочный плод, растущий в жарком и влажном климате. Немного сладкий, с кислыми нотками." #!String
+    StarfruitSeeds_Name: "Семена карамболы" #!String
+    StarfruitSeeds_Description: "Сажайте летом. Вырастает через 13 дней." #!String
+    StarShards_Name: "Звездные осколки" #!String
+    StarShards_Description: "Никому не известно, как они образуются. Некоторые ученые утверждают, что их микроскопическая структура неестественно регулярная." #!String
+    SteppingStonePath_Name: "Дорожка из крупных камней" #!String
+    SteppingStonePath_Description: "Создавайте дорожки на улице или застелите полы в доме." #!String
+    Stingray_Name: "Скат" #!String
+    Stingray_Description: "Эти водные обитатели довольно застенчивы и предпочитают не показываться людям на глаза, даже несмотря на то, что у них есть ядовитое жало." #!String
+    StirFry_Name: "Стир-фрай" #!String
+    StirFry_Description: "Обжаренные овощи с рисом." #!String
+    Stone_Name: "Камень" #!String
+    Stone_Description: "Распространенный материал со множеством применений." #!String
+    Stone_Node_Name: "Камень" #!String
+    Stone_Node_Description: "Разбейте, чтобы получить камни, руду или жеоды." #!String
+    Stone_NodeStoneOnly_Name: "Камень" #!String
+    Stone_NodeStoneOnly_Description: "Разбейте, чтобы получить камни." #!String
+    Stone_NodeWithCoal_Name: "Камень" #!String
+    Stone_NodeWithCoal_Description: "Разбейте, чтобы получить камни и немного угля." #!String
+    StoneBase_Name: "Каменный постамент" #!String
+    StoneBase_Description: "Простой каменный блок." #!String
+    StoneFence_Name: "Каменный забор" #!String
+    StoneFence_Description: "Прочнее, чем деревянный забор." #!String
+    Stonefish_Name: "Рыба-камень" #!String
+    Stonefish_Description: "Причудливая рыба, похожая на кирпич." #!String
+    StoneFloor_Name: "Каменное покрытие" #!String
+    StoneFloor_Description: "Создавайте дорожки на улице или застелите полы в доме." #!String
+    StoneWalkwayFloor_Name: "Каменное тротуарное покрытие" #!String
+    StoneWalkwayFloor_Description: "Создавайте дорожки на улице или застелите полы в доме." #!String
+    StrangeBun_Name: "Странная булочка" #!String
+    StrangeBun_Description: "Что там внутри?" #!String
+    StrangeDoll_Name: "Странная кукла" #!String
+    StrangeDoll_Description: "???" #!String
+    Strawberry_Name: "Клубника" #!String
+    Strawberry_Description: "Сладкая и сочная ягода ярко-красного цвета." #!String
+    StrawberrySeeds_Name: "Семена клубники" #!String
+    StrawberrySeeds_Description: "Сажайте весной. Вырастает через 8 дней и продолжает давать клубнику после первого сбора." #!String
+    StrawFloor_Name: "Соломенное покрытие" #!String
+    StrawFloor_Description: "Создавайте дорожки на улице или застелите полы в доме." #!String
+    Stuffing_Name: "«Объеденье»" #!String
+    Stuffing_Description: "Ах, запах свежего хлеба и шалфея." #!String
+    SturdyRing_Name: "Кольцо стойкости" #!String
+    SturdyRing_Description: "Вдвое снижает длительность отрицательных эффектов." #!String
+    Sturgeon_Name: "Осетр" #!String
+    Sturgeon_Description: "Древняя вымирающая рыба, живущая на дне. Самки живут до 150 лет." #!String
+    Sugar_Name: "Сахар" #!String
+    Sugar_Description: "Делает выпечку и десерты сладкими. Слишком много сахара вредно для здоровья." #!String
+    SummerSeeds_Name: "Летние семена" #!String
+    SummerSeeds_Description: "Разнообразные семена диких летних растений." #!String
+    SummerSpangle_Name: "Летний блестник" #!String
+    SummerSpangle_Description: "Тропический цветок, который любит влажный летний воздух. У него сладкий и терпкий запах." #!String
+    SummerSquash_Name: "Сквош" #!String
+    SummerSquash_Description: "Фигурный желтый сквош собирают, когда он слегка не дозрел и мягкий на ощупь." #!String
+    SummerSquashSeeds_Name: "Семена сквоша" #!String
+    SummerSquashSeeds_Description: "Сажайте летом. Вырастает через 6 дней и продолжает давать урожай после первого сбора." #!String
+    Sunfish_Name: "Солнечник" #!String
+    Sunfish_Description: "Обычная речная рыба." #!String
+    Sunflower_Name: "Подсолнух" #!String
+    Sunflower_Description: "По распространенному заблуждению, этот цветок всегда поворачивается к солнцу." #!String
+    SunflowerSeeds_Name: "Семена подсолнуха" #!String
+    SunflowerSeeds_Description: "Сажайте летом или осенью. Через 8 дней вырастает большой цветок подсолнуха. При сборе дает семена." #!String
+    SuperCucumber_Name: "Чудо-огурец" #!String
+    SuperCucumber_Description: "Редкая фиолетовая разновидность морского огурца." #!String
+    SuperMeal_Name: "Чудо-блюдо" #!String
+    SuperMeal_Description: "Это блюдо дает много энергии." #!String
+    SupplyCrate_Name: "Ящик с припасами" #!String
+    SupplyCrate_Description: "..." #!String
+    SurvivalBurger_Name: "«Бургер для выживания»" #!String
+    SurvivalBurger_Description: "Удобный перекус приключенца." #!String
+    SweetGemBerry_Name: "Сладкая самоцветинка" #!String
+    SweetGemBerry_Description: "Обладает самым сладким ароматом, который вы когда-либо чуяли." #!String
+    SweetPea_Name: "Душистый горошек" #!String
+    SweetPea_Description: "Ароматный летний цветок." #!String
+    TaroRoot_Name: "Корень таро" #!String
+    TaroRoot_Description: "Этот крахмалистый корень — одна из старейших агрокультур в мире." #!String
+    TaroTuber_Name: "Клубень таро" #!String
+    TaroTuber_Description: "Сажайте в теплую погоду. Вырастает через 10 дней. Растет быстрее вблизи водоема." #!String
+    TeaLeaves_Name: "Чайные листья" #!String
+    TeaLeaves_Description: "Молодые листья чайного растения. Из них можно сварить популярный освежающий напиток." #!String
+    TeaSapling_Name: "Саженец чая" #!String
+    TeaSapling_Description: "Вырастает за 20 дней. В последнюю неделю каждого сезона ежедневно производит чайные листья. Не нуждается в поливе!" #!String
+    TeaSet_Name: "Чайный набор" #!String
+    TeaSet_Description: "Отличный фарфор." #!String
+    TentKit_Name: "Набор с палаткой" #!String
+    TentKit_Description: "Используйте, чтобы установить одноразовую палатку для ночлега. Может быть использована только на улице." #!String
+    ThornsRing_Name: "Кольцо шипов" #!String
+    ThornsRing_Description: "Враги будут получать урон, атакуя вас." #!String
+    ThunderEgg_Name: "Громовое яйцо" #!String
+    ThunderEgg_Description: "Согласно легенде, рассерженные духи грома кидались этими камнями друг в друга." #!String
+    Tigerseye_Name: "Тигровый глаз" #!String
+    Tigerseye_Description: "Полоска сияющего золота придает этому камню теплый блеск." #!String
+    TigerSlimeEgg_Name: "Яйцо Тигрового слайма" #!String
+    TigerSlimeEgg_Description: "Можно вырастить в инкубаторе слаймов. Но очень осторожно!" #!String
+    TigerTrout_Name: "Тигровая форель" #!String
+    TigerTrout_Description: "Редкий гибрид, который не может размножаться самостоятельно." #!String
+    Tilapia_Name: "Тиляпия" #!String
+    Tilapia_Description: "Преимущественно травоядная рыба, предпочитающая теплую воду." #!String
+    Tomato_Name: "Помидор" #!String
+    Tomato_Description: "Насыщенный с кислинкой помидор широко используется в кулинарии." #!String
+    TomatoSeeds_Name: "Семена помидора" #!String
+    TomatoSeeds_Description: "Сажайте летом. Вырастает через 11 дней и продолжает давать урожай после первого сбора." #!String
+    TomKhaSoup_Name: "Суп том кха" #!String
+    TomKhaSoup_Description: "Невероятное сочетание вкусов!" #!String
+    Topaz_Name: "Топаз" #!String
+    Topaz_Description: "Весьма распространенный, но очень красивый камень." #!String
+    TopazRing_Name: "Кольцо с топазом" #!String
+    TopazRing_Description: "С ним вы чувствуете себя намного защищеннее." #!String
+    TopazStone_Name: "Топазный камень" #!String
+    TopazStone_Description: "Разбейте, чтобы получить топазы." #!String
+    Torch_Name: "Факел" #!String
+    Torch_Description: "Умеренно освещает все вокруг." #!String
+    Tortilla_Name: "Тортилья" #!String
+    Tortilla_Description: "Можно завернуть в нее что-то еще, а можно съесть просто так." #!String
+    TrapBobber_Name: "Мини-ловушка" #!String
+    TrapBobber_Description: "Рыба ускользает медленнее." #!String
+    Trash_Name: "Мусор" #!String
+    Trash_Description: "Это просто мусор." #!String
+    TreasureChest_Name: "Сундук с сокровищами" #!String
+    TreasureChest_Description: "Ого, в нем полно сокровищ! За него должны немало заплатить." #!String
+    TreasureHunter_Name: "«Искатель сокровищ»" #!String
+    TreasureHunter_Description: "Рыба не ускользает во время ловли сокровищ. Также слегка увеличивает шанс найти сокровища." #!String
+    TreasureTotem_Name: "Тотем сокровищ" #!String
+    TreasureTotem_Description: "Используйте на вскапываемой почве, чтобы создать круг из мест для поиска сокровищ. Одноразовый предмет." #!String
+    TreeFertilizer_Name: "Древесное удобрение" #!String
+    TreeFertilizer_Description: "Посыпьте им обычное дерево, и оно будет активно расти даже зимой. Не работает с плодовыми деревьями." #!String
+    Trilobite_Name: "Трилобит" #!String
+    Trilobite_Description: "Давно вымерший родственник краба." #!String
+    TrimmedLuckyPurpleShorts_Name: "Счастливые фиолетовые шорты с оторочкой" #!String
+    TrimmedLuckyPurpleShorts_Description: "Фиолетовые шелковые шорты с богатой золотой оторочкой..." #!String
+    TripleShotEspresso_Name: "Тройной эспрессо" #!String
+    TripleShotEspresso_Description: "Намного крепче обычного кофе!" #!String
+    TropicalCurry_Name: "Тропическое карри" #!String
+    TropicalCurry_Description: "Экзотическое ароматное карри в чаше из ананаса." #!String
+    TroutDerbyTag_Name: "Золотой ярлык" #!String
+    TroutDerbyTag_Description: "Обменяйте его на награду в будке Форелевого турнира." #!String
+    TroutSoup_Name: "Уха из форели" #!String
+    TroutSoup_Description: "Довольно соленая." #!String
+    Truffle_Name: "Трюфель" #!String
+    Truffle_Description: "Деликатесный гриб с уникальным вкусом." #!String
+    TruffleOil_Name: "Трюфельное масло" #!String
+    TruffleOil_Description: "Деликатесный ингредиент." #!String
+    Tulip_Name: "Тюльпан" #!String
+    Tulip_Description: "Самый распространенный весенний цветок. У него очень слабый сладкий аромат." #!String
+    TulipBulb_Name: "Луковица тюльпана" #!String
+    TulipBulb_Description: "Сажайте весной. Через 6 дней вырастает яркий цветок. Цветы бывают разного цвета." #!String
+    Tuna_Name: "Тунец" #!String
+    Tuna_Description: "Большая океанская рыба." #!String
+    Twig_Name: "Палка" #!String
+    Twig_Description: "Сломанная ветка. Порубите топором, чтобы получить древесину." #!String
+    UnmilledRice_Name: "Неочищенный рис" #!String
+    UnmilledRice_Description: "Необработанный рис-сырец. Отшлифуйте его на мельнице, чтобы повысить ценность продукта." #!String
+    VampireRing_Name: "Кольцо вампира" #!String
+    VampireRing_Description: "Вы получаете немного здоровья при уничтожении монстров." #!String
+    VegetableMedley_Name: "Овощное ассорти" #!String
+    VegetableMedley_Description: "Очень питательно." #!String
+    Vinegar_Name: "Уксус" #!String
+    Vinegar_Description: "Ферментированная жидкость для готовки." #!String
+    VoidEgg_Name: "Яйцо пустоты" #!String
+    VoidEgg_Description: "Черное как смоль яйцо с красными пятнышками. Оно теплое." #!String
+    VoidEssence_Name: "Эссенция пустоты" #!String
+    VoidEssence_Description: "Подрагивает от темной энергии внутри." #!String
+    VoidGhostPendant_Name: "Кулон призрачной пустоты" #!String
+    VoidGhostPendant_Description: "Важное украшение теневого народа. Дарится при желании завязать отношения." #!String
+    VoidMayonnaise_Name: "Майонез пустоты" #!String
+    VoidMayonnaise_Description: "Густая черная паста с запахом жженых волос." #!String
+    VoidSalmon_Name: "Лосось пустоты" #!String
+    VoidSalmon_Description: "Лосось, которого исказила энергия пустоты. Его свежее мясо черное, но на воздухе быстро становится розовым." #!String
+    VolcanoGoldNode_Name: "Золотой камень" #!String
+    VolcanoGoldNode_Description: "Разбейте, чтобы получить золотую руду." #!String
+    Walleye_Name: "Желтый судак" #!String
+    Walleye_Description: "Пресноводная рыба, ловится ночью." #!String
+    WarMemento_Name: "Боевой трофей" #!String
+    WarMemento_Description: "Это выцветшая фотография солдата..." #!String
+    WarpTotemBeach_Name: "Тотем-телепорт: Пляж" #!String
+    WarpTotemBeach_Description: "Переносит вас прямиком на пляж. Одноразовый предмет." #!String
+    WarpTotemDesert_Name: "Тотем-телепорт: Пустыня" #!String
+    WarpTotemDesert_Description: "Переносит вас прямиком в пустыню Калико. Одноразовый предмет." #!String
+    WarpTotemFarm_Name: "Тотем-телепорт: Ферма" #!String
+    WarpTotemFarm_Description: "Переносит вас прямо к вашему дому. Одноразовый предмет." #!String
+    WarpTotemIsland_Name: "Тотем-телепорт: Остров" #!String
+    WarpTotemIsland_Description: "Переносит вас прямиком на Имбирный остров. Одноразовый предмет." #!String
+    WarpTotemMountains_Name: "Тотем-телепорт: Горы" #!String
+    WarpTotemMountains_Description: "Переносит вас прямиком к горам. Одноразовый предмет." #!String
+    WarpTotemQisArena_Name: "Тотем-телепорт: Арена Ки" #!String
+    WarpTotemQisArena_Description: "Переносит вас на Арену Ки. Приготовьтесь к испытаниям!" #!String
+    WarriorRing_Name: "Кольцо воина" #!String
+    WarriorRing_Description: "Может временно наделить обладателя «энергией воина» после уничтожения монстра." #!String
+    WeatheredFloor_Name: "Потертое покрытие" #!String
+    WeatheredFloor_Description: "Создавайте дорожки на улице или застелите полы в доме." #!String
+    WeddingRing_Name: "Обручальное кольцо" #!String
+    WeddingRing_Description: "Старая традиция города Зузу. Такое кольцо нужно, чтобы предложить руку и сердце соседу или соседке." #!String
+    Weeds_Name: "Сорняки" #!String
+    Weeds_Description: "Кучка противных сорняков." #!String
+    Weeds_DryBush_Name: "Сорняки" #!String
+    Weeds_DryBush_Description: "Старые сухие кусты. Могут содержать волокна или смешанные семена." #!String
+    Weeds_Fiber_Ugly_Name: "Сорняки" #!String
+    Weeds_Fiber_Ugly_Description: "Кучка противных сорняков. Косите, чтобы получить семена." #!String
+    Weeds_FiberOrMixedSeeds_Name: "Сорняки" #!String
+    Weeds_FiberOrMixedSeeds_Description: "Могут содержать волокна или смешанные семена." #!String
+    Weeds_FiberOrMixedSeeds_Ugly_Name: "Сорняки" #!String
+    Weeds_FiberOrMixedSeeds_Ugly_Description: "Уродливые сорняки. Могут содержать волокна или смешанные семена." #!String
+    Wheat_Name: "Пшеница" #!String
+    Wheat_Description: "Один из самых популярных злаков. Пшеничная мука отлично подходит для выпечки." #!String
+    WheatFlour_Name: "Пшеничная мука" #!String
+    WheatFlour_Description: "Распространенный ингредиент для готовки из молотой пшеницы." #!String
+    WheatSeeds_Name: "Семена пшеницы" #!String
+    WheatSeeds_Description: "Сажайте летом или осенью. Вырастает через 4 дня. Собирайте урожай косой." #!String
+    WhiteAlgae_Name: "Белая водоросль" #!String
+    WhiteAlgae_Description: "Она чрезвычайно склизкая." #!String
+    WhiteEgg_Name: "Яйцо" #!String
+    WhiteEgg_Description: "Обычное белое куриное яйцо." #!String
+    WildBait_Name: "Дикая наживка" #!String
+    WildBait_Description: "Уникальный рецепт Линуса, дающий шанс поймать сразу две рыбы." #!String
+    WildHorseradish_Name: "Дикий хрен" #!String
+    WildHorseradish_Description: "Острый корень, растет весной." #!String
+    WildPlum_Name: "Дикая слива" #!String
+    WildPlum_Description: "Терпкая, сочная, ароматная." #!String
+    WiltedBouquet_Name: "Увядший букет" #!String
+    WiltedBouquet_Description: "Подарите его тому, с кем хотите порвать отношения." #!String
+    Wine_Name: "Вино" #!String
+    Wine_Description: "Пейте в меру." #!String
+    Wine_Flavored_Name: "Вино ({0})" #!String
+    Wine_Flavored_(O)454_Name: "Вино из древнего плода" #!String
+    Wine_Flavored_(O)613_Name: "Яблочное вино" #!String
+    Wine_Flavored_(O)634_Name: "Абрикосовое вино" #!String
+    Wine_Flavored_(O)91_Name: "Банановое вино" #!String
+    Wine_Flavored_(O)410_Name: "Ежевичное вино" #!String
+    Wine_Flavored_(O)258_Name: "Черничное вино" #!String
+    Wine_Flavored_(O)90_Name: "Кактусовое вино" #!String
+    Wine_Flavored_(O)638_Name: "Вишневое вино" #!String
+    Wine_Flavored_(O)88_Name: "Кокосовое вино" #!String
+    Wine_Flavored_(O)282_Name: "Клюквенное вино" #!String
+    Wine_Flavored_(O)414_Name: "Вино из кристального фрукта" #!String
+    Wine_Flavored_(O)398_Name: "Виноградное вино" #!String
+    Wine_Flavored_(O)260_Name: "Вино из жгучего перца" #!String
+    Wine_Flavored_(O)834_Name: "Манговое вино" #!String
+    Wine_Flavored_(O)254_Name: "Вино из дыни" #!String
+    Wine_Flavored_(O)635_Name: "Апельсиновое вино" #!String
+    Wine_Flavored_(O)636_Name: "Персиковое вино" #!String
+    Wine_Flavored_(O)832_Name: "Ананасовое вино" #!String
+    Wine_Flavored_(O)637_Name: "Гранатовое вино" #!String
+    Wine_Flavored_(O)Powdermelon_Name: "Вино из снегодыни" #!String
+    Wine_Flavored_(O)889_Name: "Вино из фрукта Ки" #!String
+    Wine_Flavored_(O)252_Name: "Вино из ревеня" #!String
+    Wine_Flavored_(O)400_Name: "Клубничное вино" #!String
+    Wine_Flavored_(O)296_Name: "Вино из морошки" #!String
+    Wine_Flavored_(O)396_Name: "Вино из острой ягоды" #!String
+    Wine_Flavored_(O)268_Name: "Вино из карамболы" #!String
+    Wine_Flavored_(O)406_Name: "Вино из дикой сливы" #!String
+    WinterRoot_Name: "Зимний корень" #!String
+    WinterRoot_Description: "Крахмалистый клубень." #!String
+    WinterSeeds_Name: "Зимние семена" #!String
+    WinterSeeds_Description: "Разнообразные семена диких зимних растений." #!String
+    Wood_Name: "Древесина" #!String
+    Wood_Description: "Прочный, но гибкий материал со множеством применений." #!String
+    WoodFence_Name: "Деревянный забор" #!String
+    WoodFence_Description: "Не дает траве разрастись, а животным — сбежать." #!String
+    WoodFloor_Name: "Деревянное покрытие" #!String
+    WoodFloor_Description: "Создавайте дорожки на улице или застелите полы в доме." #!String
+    WoodPath_Name: "Деревянная дорожка" #!String
+    WoodPath_Description: "Создавайте дорожки на улице или застелите полы в доме." #!String
+    Woodskip_Name: "Лесоплюх" #!String
+    Woodskip_Description: "Очень чувствительная рыба, которая может жить только в прудах глубоко в лесу." #!String
+    Wool_Name: "Шерсть" #!String
+    Wool_Description: "Мягкая, пушистая шерсть." #!String
+    WrigglingWorm_Name: "Извивающийся червь" #!String
+    WrigglingWorm_Description: "Это извивающийся мокрый червь." #!String
+    Yam_Name: "Батат" #!String
+    Yam_Description: "Крахмалистый клубень со множеством кулинарных применений." #!String
+    YamSeeds_Name: "Семена батата" #!String
+    YamSeeds_Description: "Сажайте осенью. Вырастает через 10 дней." #!String
+

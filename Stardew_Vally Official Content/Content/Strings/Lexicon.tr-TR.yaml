@@ -1,0 +1,39 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    RandomNegativeItemNoun: "çöp#yararsız#önemsiz#dökük#ıvır zıvır" #!String
+    RandomPositiveAdjective_Child: "havalı#eğlenceli#düzgün#güzel#şık#süper" #!String
+    RandomPositiveAdjective_AdultMale: "ilginç#heyecanlı#düzgün#eğlenceli#harika#müthiş" #!String
+    RandomPositiveAdjective_AdultFemale: "harika#şaşırtıcı#hoş#büyülü#inanılmaz#güzel#canlandırıcı#keyifli" #!String
+    RandomPositiveAdjective_PlaceOrEvent: "harika#şaşırtıcı#hoş#büyülü#inanılmaz#güzel#canlandırıcı#keyifli" #!String
+    RandomDeliciousAdjective: "lezzetli#leziz#harika#doyurucu#keyifli#nefis#şahane#tatlı" #!String
+    RandomDeliciousAdjective_Child: "lezzetli" #!String
+    RandomNegativeFoodAdjective_Child: "iğrenç" #!String
+    RandomNegativeFoodAdjective_Polite: "...ilginç#...olağan dışı#...farklı#...alışılmamış" #!String
+    RandomNegativeFoodAdjective: "pis#berbat#iğrenç#aşağılık#tiksindirici#bıktırıcı#korkunç#itici#bayıltıcı#rezalet#kokuşmuş#korkunç" #!String
+    RandomSlightlyPositiveFoodAdjective: "yeterli#iyi#yenilebilir" #!String
+    ChildTerm_Male: "oğlan" #!String
+    ChildTerm_Female: "kız" #!String
+    Pronoun_Male: "Ona" #!String
+    Pronoun_Female: "Ona" #!String
+    QuestionDialogue_Yes: "Evet" #!String
+    QuestionDialogue_No: "Hayır" #!String
+    GenericPlayerTerm: "çiftçi" #!String
+    Possessive_Pronoun_Male: "onun" #!String
+    Possessive_Pronoun_Female: "onun" #!String
+

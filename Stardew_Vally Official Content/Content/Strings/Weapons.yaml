@@ -1,0 +1,153 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    AbbysPlanchette_Name: "Abby's Planchette" #!String
+    AbbysPlanchette_Description: "It's made from fine marblewood." #!String
+    AlexsBat_Name: "Alex's Bat" #!String
+    AlexsBat_Description: "The sweet spot is dented from Alex's famous Grand Slam." #!String
+    BoneSword_Name: "Bone Sword" #!String
+    BoneSword_Description: "A very light piece of sharpened bone." #!String
+    BrokenTrident_Name: "Broken Trident" #!String
+    BrokenTrident_Description: "It came from the sea, but it's still sharp." #!String
+    BurglarsShank_Name: "Burglar's Shank" #!String
+    BurglarsShank_Description: "A weapon of choice for the swift and silent." #!String
+    CarvingKnife_Name: "Carving Knife" #!String
+    CarvingKnife_Description: "A small, light blade." #!String
+    Claymore_Name: "Claymore" #!String
+    Claymore_Description: "It's really heavy." #!String
+    CrystalDagger_Name: "Crystal Dagger" #!String
+    CrystalDagger_Description: "The blade is made of purified quartz." #!String
+    Cutlass_Name: "Cutlass" #!String
+    Cutlass_Description: "A finely crafted blade." #!String
+    DarkSword_Name: "Dark Sword" #!String
+    DarkSword_Description: "It's glowing with vampire energy." #!String
+    DragontoothClub_Name: "Dragontooth Club" #!String
+    DragontoothClub_Description: "This club was crafted from a magical tooth." #!String
+    DragontoothCutlass_Name: "Dragontooth Cutlass" #!String
+    DragontoothCutlass_Description: "The blade was forged from a magical tooth." #!String
+    DragontoothShiv_Name: "Dragontooth Shiv" #!String
+    DragontoothShiv_Description: "The blade was forged from a magical tooth." #!String
+    DwarfDagger_Name: "Dwarf Dagger" #!String
+    DwarfDagger_Description: "It's ancient, but the blade never dulls." #!String
+    DwarfHammer_Name: "Dwarf Hammer" #!String
+    DwarfHammer_Description: "It emits a very faint whirring sound." #!String
+    DwarfSword_Name: "Dwarf Sword" #!String
+    DwarfSword_Description: "It's ancient, but the blade never dulls." #!String
+    ElfBlade_Name: "Elf Blade" #!String
+    ElfBlade_Description: "Only the nimble hands of an elf could craft this." #!String
+    ElliottsPencil_Name: "Elliott's Pencil" #!String
+    ElliottsPencil_Description: "Elliott used this to write his book. It's sharp!" #!String
+    Femur_Name: "Femur" #!String
+    Femur_Description: "An old, heavy bone caked in centuries of grime." #!String
+    ForestSword_Name: "Forest Sword" #!String
+    ForestSword_Description: "Made powerful by forest magic." #!String
+    GalaxyDagger_Name: "Galaxy Dagger" #!String
+    GalaxyDagger_Description: "It's unlike anything you've seen." #!String
+    GalaxyHammer_Name: "Galaxy Hammer" #!String
+    GalaxyHammer_Description: "It's made from an ultra-light material you've never seen before." #!String
+    GalaxySlingshot_Name: "Galaxy Slingshot" #!String
+    GalaxySlingshot_Description: "It looks really powerful." #!String
+    GalaxySword_Name: "Galaxy Sword" #!String
+    GalaxySword_Description: "It's unlike anything you've ever seen." #!String
+    GoldenScythe_Name: "Golden Scythe" #!String
+    GoldenScythe_Description: "It's more powerful than a normal scythe." #!String
+    HaleysIron_Name: "Haley's Iron" #!String
+    HaleysIron_Description: "It's searing hot and smells like Haley's hair." #!String
+    HarveysMallet_Name: "Harvey's Mallet" #!String
+    HarveysMallet_Description: "It brings back memories of Harvey's clinic." #!String
+    HolyBlade_Name: "Holy Blade" #!String
+    HolyBlade_Description: "It feels hopeful to wield." #!String
+    InfinityBlade_Name: "Infinity Blade" #!String
+    InfinityBlade_Description: "The true form of the Galaxy Sword." #!String
+    InfinityDagger_Name: "Infinity Dagger" #!String
+    InfinityDagger_Description: "The true form of the Galaxy Dagger." #!String
+    InfinityGavel_Name: "Infinity Gavel" #!String
+    InfinityGavel_Description: "The true form of the Galaxy Hammer." #!String
+    InsectHead_Name: "Insect Head" #!String
+    InsectHead_Description: "Not very pleasant to wield." #!String
+    IridiumNeedle_Name: "Iridium Needle" #!String
+    IridiumNeedle_Description: "The point is unbelievably sharp, even down to the atomic level." #!String
+    IridiumScythe_Name: "Iridium Scythe" #!String
+    IridiumScythe_Description: "Can be used to harvest any crops. It's also excellent at gathering hay." #!String
+    IronDirk_Name: "Iron Dirk" #!String
+    IronDirk_Description: "A common dagger." #!String
+    IronEdge_Name: "Iron Edge" #!String
+    IronEdge_Description: "A heavy broadsword." #!String
+    Kudgel_Name: "Kudgel" #!String
+    Kudgel_Description: "A brute's companion." #!String
+    LavaKatana_Name: "Lava Katana" #!String
+    LavaKatana_Description: "A powerful blade forged in a pool of churning lava." #!String
+    LeadRod_Name: "Lead Rod" #!String
+    LeadRod_Description: "It's incredibly heavy." #!String
+    LeahsWhittler_Name: "Leah's Whittler" #!String
+    LeahsWhittler_Description: "Leah's favorite tool for shaping driftwood." #!String
+    MarusWrench_Name: "Maru's Wrench" #!String
+    MarusWrench_Description: "A big, metal wrench. It smells like Maru." #!String
+    MasterSlingshot_Name: "Master Slingshot" #!String
+    MasterSlingshot_Description: "Requires stones for ammo." #!String
+    Meowmere_Name: "Meowmere" #!String
+    Meowmere_Description: "An unusual weapon from a far away land..." #!String
+    NeptunesGlaive_Name: "Neptune's Glaive" #!String
+    NeptunesGlaive_Description: "An heirloom from beyond the Gem Sea." #!String
+    ObsidianEdge_Name: "Obsidian Edge" #!String
+    ObsidianEdge_Description: "It's incredibly sharp." #!String
+    OssifiedBlade_Name: "Ossified Blade" #!String
+    OssifiedBlade_Description: "A large, sharp blade formed from bone." #!String
+    PennysFryer_Name: "Penny's Fryer" #!String
+    PennysFryer_Description: "Penny's favorite frying pan. There's some rubbery gunk stuck to the inside." #!String
+    PiratesSword_Name: "Pirate's Sword" #!String
+    PiratesSword_Description: "It looks like a pirate owned this once." #!String
+    Rapier_Name: "Rapier" #!String
+    Rapier_Description: "An elegant blade." #!String
+    RustySword_Name: "Rusty Sword" #!String
+    RustySword_Description: "A rusty, dull old sword." #!String
+    SamsOldGuitar_Name: "Sam's Old Guitar" #!String
+    SamsOldGuitar_Description: "It's seen better days." #!String
+    Scythe_Name: "Scythe" #!String
+    Scythe_Description: "It can cut grass into hay, if you've built a silo." #!String
+    SebsLostMace_Name: "Seb's Lost Mace" #!String
+    SebsLostMace_Description: "One of Sebastian's medieval replicas." #!String
+    ShadowDagger_Name: "Shadow Dagger" #!String
+    ShadowDagger_Description: "When you hold the blade to your ear you can hear 1,000 souls shrieking." #!String
+    SilverSaber_Name: "Silver Saber" #!String
+    SilverSaber_Description: "Plated with silver to deter rust." #!String
+    Slingshot_Name: "Slingshot" #!String
+    Slingshot_Description: "Requires stones for ammo." #!String
+    SteelFalchion_Name: "Steel Falchion" #!String
+    SteelFalchion_Description: "Light and powerful." #!String
+    SteelSmallsword_Name: "Steel Smallsword" #!String
+    SteelSmallsword_Description: "A standard metal blade." #!String
+    TemperedBroadsword_Name: "Tempered Broadsword" #!String
+    TemperedBroadsword_Description: "It looks like it could withstand anything." #!String
+    TemplarsBlade_Name: "Templar's Blade" #!String
+    TemplarsBlade_Description: "It once belonged to an honorable knight." #!String
+    TheSlammer_Name: "The Slammer" #!String
+    TheSlammer_Description: "An extremely heavy gavel that'll send foes flying." #!String
+    WickedKris_Name: "Wicked Kris" #!String
+    WickedKris_Description: "The blade is made of an iridium alloy." #!String
+    WindSpire_Name: "Wind Spire" #!String
+    WindSpire_Description: "A swift little blade." #!String
+    WoodClub_Name: "Wood Club" #!String
+    WoodClub_Description: "A solid piece of wood, crudely chiseled into a club shape." #!String
+    WoodenBlade_Name: "Wooden Blade" #!String
+    WoodenBlade_Description: "Not bad for a piece of carved wood." #!String
+    WoodMallet_Name: "Wood Mallet" #!String
+    WoodMallet_Description: "The solid head packs a punch. Relatively light for a club." #!String
+    YetiTooth_Name: "Yeti Tooth" #!String
+    YetiTooth_Description: "It's icy cold to the touch." #!String
+

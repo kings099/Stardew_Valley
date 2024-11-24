@@ -1,0 +1,45 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Maru0: "Estou tão feliz!$h#$b#Vou ser sua esposa. He, he.$l" #!String
+    Maru1: "Preciso me preparar mentalmente para ser a esposa de um fazendeiro." #!String
+    Leah0: "...$l#$e#Estou um pouco nervosa. Mas feliz.$h" #!String
+    Leah1: "Sempre sonhei em viver em uma fazenda.$h#$e#Vou ser tão feliz!" #!String
+    Haley0: "Estou tão feliz!$h#$e#É como sempre sonhei.$l" #!String
+    Haley1: "Está tudo bem. Sei que não podemos ter uma lua de mel já que a sua fazenda precisa de cuidados.#$e#Agora também trabalho na fazenda!" #!String
+    Penny0: "@.. Estou com um pouco de medo. Esta e uma mudança tão grande!#$e#Não se preocupe, também estou feliz.$h" #!String
+    Penny1: "Vamos ter uma pequena família na fazenda em breve.$l#$e#Estou tão feliz de você se sentir assim sobre mim.$h" #!String
+    Abigail0: "He, he. Eu? Casado(a)? Nunca achei que isso iria acontecer.$h#$e#Vamos nos divertir muito juntos.$h" #!String
+    Abigail1: "Noivei com um fazendeiro. Nossa!$h#$e#Nossas vidas vão ser muito diferentes de agora em diante.$l" #!String
+    Sam0: "Vou ser muito feliz sendo seu marido, @.$l#$e#Estou muito feliz." #!String
+    Sam1: "Nunca achei que isso iria acontecer. Como tenho sorte!$l#$e#Mal posso esperar até o casamento.$h" #!String
+    Sebastian0: "Em alguns dias, vou viver em uma fazenda. Não consigo acreditar.$h#$e#Mas estou feliz.$l" #!String
+    Sebastian1: "Quando você apareceu na cidade, nunca achei que nós casaríamos.$l#$e#Como a vida é estranha, né?$h" #!String
+    Harvey0: "Ah, meu Deus! Tenho tantas coisas a acertar antes do casamento! Que nervosismo...$l#$e#Mas é um alívio viver na sua fazenda.$h" #!String
+    Harvey1: "Estou muito feliz.$h#$e#Este sempre foi meu sonho secreto.$l" #!String
+    Elliott0: "A fazenda será um ótimo lugar para escrever. Mal posso esperar por isso.$h#$e#Vamos fazer um ótimo par.$l" #!String
+    Elliott1: "Esta vai ser uma aventura incrível! Estou muito feliz. E você, não está?$h#$e#Podemos usar minha cabana como casa de praia.$l" #!String
+    Alex0: "@, esta é a maior coisa que poderia ter acontecido.$l#$e#Mal posso esperar.$h" #!String
+    Alex1: "Vou amar trabalhar na fazenda.$h" #!String
+    Shane0: "Parte de mim se pergunta se tudo nisso não é um trote elaborado.#$e#Não consigo acreditar que você namoraria alguém como eu." #!String
+    Shane1: "@Minha cabeça está girando, e eu ainda nem tomei uma cervejinha hoje." #!String
+    Emily0: "Você consegue acreditar que vamos morar juntos? Nunca vivi com ninguém além da minha família. #$e#É tão... emocionante." #!String
+    Emily1: "Sempre soube que algo importante aconteceria entre nós... mas nunca aqui que seria isto! $h#$e#O papagaio também está muito feliz." #!String
+    Krobus0: "@... Eu acho que teremos que manter isso um segredo... Nem o meu povo nem o seu nos aceitaria morando juntos." #!String
+    Krobus1: "Você sabe que eu vou ser uma pessoa estranha para se conviver, certo? Eu não vou poder sair de casa..." #!String
+

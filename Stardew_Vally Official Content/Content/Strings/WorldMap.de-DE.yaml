@@ -1,0 +1,33 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    GingerIsland_East_JungleHut: "Dschungel-Hütte" #!String
+    GingerIsland_North_DigSite: "Ausgrabungsstätte" #!String
+    GingerIsland_North_FieldOffice: "Außenstelle" #!String
+    GingerIsland_North_Trader: "Insel-Händler" #!String
+    GingerIsland_North_Volcano: "Vulkan" #!String
+    GingerIsland_South_Dock: "Willys Boot" #!String
+    GingerIsland_South_Resort: "Erholungsort" #!String
+    GingerIsland_SouthEast_PirateCove: "Piratenbucht" #!String
+    GingerIsland_West_BirdieShack: "Birdies Hütte" #!String
+    GingerIsland_West_GourmandCave: "Schlemmerfrosch" #!String
+    GingerIsland_West_House: "Insel Bauernhaus" #!String
+    GingerIsland_West_QiWalnutRoom: "Qis Walnussraum" #!String
+    GingerIsland_West_Shipwreck: "Schiffswrack" #!String
+    GingerIsland_West_TigerSlimeGrove: "Tiger Schleim Hain" #!String
+

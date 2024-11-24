@@ -1,0 +1,29 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Sun.000: "Nous nous cachons ici pour ne pas avoir à parler à qui que ce soit." #!String
+    marriage_Mon.002: "Euh... Je ne peux toujours pas le faire moi-même.$s" #!String
+    spring_4.000: "Euh... J’ai rendez-vous chez le médecin plus tard.$s" #!String
+    marriage_Fri.001: "C’est  génial de revoir toute la bande. Rien n’a changé.$h" #!String
+    spring_4.002: "Encore combien de temps, docteur ? J’ai faim.$s" #!String
+    marriage_Mon.001: "Salut, @. J’aime bien venir me détendre ici... c’est tellement paisible." #!String
+    marriage_Fri.000: "Quoi de neuf, @ ? Je viens dire bonjour à la maman." #!String
+    marriage_Mon.000: "Papa semble se débrouiller plutôt bien sans moi." #!String
+    winter_15.000: "C’est tellement mystérieux... J’adore !" #!String
+    spring_4.001: "Je suis juste ici pour mon bilan de santé annuel ! Ne t’inquiète pas, je ne suis pas enceinte... je veux dire, je ne suis pas malade ! Hé hé.$9" #!String
+

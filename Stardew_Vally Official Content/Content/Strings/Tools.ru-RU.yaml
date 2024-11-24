@@ -1,0 +1,73 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Axe_Name: "Топор" #!String
+    Axe_Description: "Используется для рубки дерева." #!String
+    Axe_Copper_Name: "Медный топор" #!String
+    Axe_Steel_Name: "Стальной топор" #!String
+    Axe_Gold_Name: "Золотой топор" #!String
+    Axe_Iridium_Name: "Иридиевый топор" #!String
+    FishingRod_Description: "Используется для ловли рыбы." #!String
+    FishingRod_Training_Name: "Тренировочная удочка" #!String
+    FishingRod_Training_Description: "Управляться с ней намного легче, чем с любой другой удочкой, но на нее ловится только обычная рыба." #!String
+    FishingRod_Bamboo_Name: "Бамбуковая удочка" #!String
+    FishingRod_Fiberglass_Name: "Фибергласовая удочка" #!String
+    FishingRod_Iridium_Name: "Иридиевая удочка" #!String
+    FishingRod_AdvancedIridium_Name: "Улучшенная иридиевая удочка" #!String
+    FishingRod_AdvancedIridium_Description: "Используется для ловли рыбы. На нее можно повесить до двух поплавков." #!String
+    Hoe_Name: "Мотыга" #!String
+    Hoe_Description: "Используется для копания и вскапывания почвы." #!String
+    Hoe_Copper_Name: "Медная мотыга" #!String
+    Hoe_Steel_Name: "Стальная мотыга" #!String
+    Hoe_Gold_Name: "Золотая мотыга" #!String
+    Hoe_Iridium_Name: "Иридиевая мотыга" #!String
+    Lantern_Name: "Фонарь" #!String
+    Lantern_Description: "Освещает темные места." #!String
+    MilkPail_Name: "Подойник" #!String
+    MilkPail_Description: "С его помощью можно доить ваших животных." #!String
+    Pan_Description: "Используется для промывания руды из воды." #!String
+    Pan_Copper_Name: "Медный промывочный ковш" #!String
+    Pan_Steel_Name: "Стальной промывочный ковш" #!String
+    Pan_Steel_Description: "Используется для промывания руды из воды. Приносит больше руды лучшего качества, чем медный промывочный ковш. Имеет небольшой шанс тут же обнаружить еще одно место для промывания." #!String
+    Pan_Gold_Name: "Золотой промывочный ковш" #!String
+    Pan_Gold_Description: "Используется для промывания руды из воды. Приносит больше руды лучшего качества, чем стальной промывочный ковш. Имеет небольшой шанс тут же обнаружить еще одно место для промывания." #!String
+    Pan_Iridium_Name: "Иридиевый промывочный ковш" #!String
+    Pan_Iridium_Description: "Используется для промывания руды из воды. Приносит лучшую добычу среди всех промывочных ковшей. Имеет шанс тут же обнаружить еще одно место для промывания." #!String
+    Pickaxe_Name: "Кирка" #!String
+    Pickaxe_Description: "Используется для разбивания камней." #!String
+    Pickaxe_Copper_Name: "Медная кирка" #!String
+    Pickaxe_Steel_Name: "Стальная кирка" #!String
+    Pickaxe_Gold_Name: "Золотая кирка" #!String
+    Pickaxe_Iridium_Name: "Иридиевая кирка" #!String
+    ReturnScepter_Name: "Жезл возврата" #!String
+    ReturnScepter_Description: "Этот золотой жезл подрагивает от заключенной в нем энергии. Поднимите его к небу, чтобы мгновенно перенестись домой." #!String
+    Shears_Name: "Ножницы" #!String
+    Shears_Description: "Используются для стрижки шерсти с овец" #!String
+    TrashCan_Name: "Мусорка" #!String
+    TrashCan_Description: "Выкидывая предмет, вы получаете {0}% от его стоимости." #!String
+    TrashCan_Copper_Name: "Медная мусорка" #!String
+    TrashCan_Steel_Name: "Стальная мусорка" #!String
+    TrashCan_Gold_Name: "Золотая мусорка" #!String
+    TrashCan_Iridium_Name: "Иридиевая мусорка" #!String
+    WateringCan_Name: "Лейка" #!String
+    WateringCan_Description: "Используется для полива посевов. Можно наполнить у любого источника воды." #!String
+    WateringCan_Copper_Name: "Медная лейка" #!String
+    WateringCan_Steel_Name: "Стальная лейка" #!String
+    WateringCan_Gold_Name: "Золотая лейка" #!String
+    WateringCan_Iridium_Name: "Иридиевая лейка" #!String
+

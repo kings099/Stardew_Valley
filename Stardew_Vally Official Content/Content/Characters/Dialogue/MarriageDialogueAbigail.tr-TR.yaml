@@ -1,0 +1,91 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Rainy_Day_0: "Karanlık... Yağmur... Bu hava beni heyecanlandırıyor.$l" #!String
+    Rainy_Day_1: "Hey, göl kenarında yaptığımız düeti hatırlıyor musun? Bu hava bana o günü hatırlatıyor.#$e#O küçük arp ile beni çok şaşırtmıştın... Hiç beklemiyordum. Sanırım bu yüzden seni çok seviyorum.$l" #!String
+    Rainy_Day_2: "Hey! Erken kalkıp biraz keşfe çıktım. Bunu buldum, bana seni anımsattı. [768 767 769 66 82]#$e#Bundan daha iyisini bulabileceğini mi düşünüyorsun? Pek emin değilim!$h" #!String
+    Rainy_Day_3: "Mağaraları ziyaret etmek için güzel bir gün sanki. Dikkatli ol. #$e#Mağaralara gidersen bir iki tane yaşam iksiri götürmeyi unutma." #!String
+    Rainy_Day_4: "Belki bugün Çayır Kralı'nın Yolculuğu'nu açarım... yemin ederim ki bir gün kendi başıma bitireceğim o oyunu.$h" #!String
+    patio_Abigail: "%Abgail kendini müziğe kaptırmış." #!String
+    Rainy_Day_Abigail: "Böyle bir günde kırsal daha ilgi çekici görünüyor. Sence de öyle değil mi?" #!String
+    Rainy_Night_0: "Yağmur yağmış ağaçlara bakıyordum... Yemin ederim ki ağaçların arasında siyahtan daha koyu bir şey gördüm.$6" #!String
+    Rainy_Night_1: "Hayalet görmek için güzel bir gece." #!String
+    Rainy_Night_2: "Hissedebiliyor musun? Yağmurda dinginlik var..." #!String
+    Rainy_Night_3: "Böyle gecelerde ışıkları kapatıp dinlemeyi seviyorum...$8" #!String
+    Rainy_Night_4: "Akşam yemeği için içimden çorba yapmak geldi. Umarım tadı iğrenç olmamıştır. [199 218 219 727 730]$h" #!String
+    Rainy_Night_5: "Hey! Çok çalışıyor gibisin. Rahatlamana yardımcı olabilir miyim?^Çok mu çalışıyorsun? Yorulduğunda çok tatlı duruyorsun.$h" #!String
+    Rainy_Night_Abigail: "Yağmurun sesi bu gece rahatça uyumamızı sağlayacak." #!String
+    Indoor_Day_0: "Burayı sen gelmeden önce de severdim. Şimdi çiftliği istediğim zaman keşfedebilirim!$h" #!String
+    Indoor_Day_1: "Merhaba, @. Vahşi doğaya mı karışacaksın? Sana bir şey vereceğim...[286 287 205 732]#$e#Zorlanırsan onu kullan. Seni güvende tutacaktır." #!String
+    Indoor_Day_2: "Madenlere mi gidiyorsun? Şey... Eğer lezzetli bir şey bulursan bana da bir parça getirmeyi unutma!$h" #!String
+    Indoor_Day_3: "Selam! Bugün ne yapsam diye düşünüyordum. Bu kadar özgürlüğe alışkın değilim!" #!String
+    Indoor_Day_4: "Ara sıra burayı dekore etsem rahatsız olmazsın değil mi? İlgilenebileceğim bir mekânımın olması beni heyecanlandırıyor." #!String
+    Indoor_Day_Abigail: "Çifliğimizde hep yeni bir şeyler oluyor... Bunu çok seviyorum." #!String
+    Indoor_Night_0: "Bugün iyi bir gün geçirdim. Eğer yakından bakarsan buralarda hep ilginç şeyler oluyor." #!String
+    Indoor_Night_1: "Merhaba, bana gününü anlatsana. İlginç bir şey oldu mu?$h" #!String
+    Indoor_Night_2: "Eskiden gece kuşuydum, fakat şimdilerde çiftlik hayatının düzenine ayak uyduruyorum. Olması gereken buymuş gibi hissettiriyor." #!String
+    Indoor_Night_3: "*esner*... Yakında yatmaya hazır olacağım.$h" #!String
+    Indoor_Night_4: "Gecenin sesleri burada daha iyi geliyor. Seslerin tadını çıkarmayı hiçbir zaman bırakmayacağım." #!String
+    Indoor_Night_Abigail: "Yatmaya hazır mısın? Bizim için elektirikli battaniyeyi çalıştırdım...$l" #!String
+    Outdoor_0: "Bugünkü esinti dağların kokusunu taşıyor. Taze çam ağacı ve ada çayı kokuyor." #!String
+    Outdoor_1: "Hım... Sanırım dışarıda balçıkça çiftliği kurmak için yeterince yerimiz var!" #!String
+    Outdoor_2: "Büyükbabanın kabrini temiz tuttuğundan emin ol. Orada özel bir şey olduğunu hissediyorum." #!String
+    Outdoor_3: "Çiftliğimizde mağara olması çok hoş. Hep böyle bir şeyin hayalini kurardım.$h" #!String
+    Outdoor_4: "Cebime atıştırmalık koymayı sürekli unutuyorum. *söylenir*$h" #!String
+    Outdoor_Abigail: "Buralarda takılacağım, tamam mı?#$e#Burada çok sayıda ilginç böcek ve daha bir sürü şey var. *kıkırdar*$h" #!String
+    funLeave_Abigail: "Bugün kasabaya gideceğim, haber vermek istedim. Az bacaklarımı esneteyim." #!String
+    funReturn_Abigail: "Selam! Günün güzel geçti mi? Benimki iyiydi. Yürüyüşe çıkmak çok ferahlatıcıydı.$h" #!String
+    OneKid_3: "\"Anne\" olduğuma inanamıyorum... Hayat çok garip.$h" #!String
+    TwoKids_0: "%kid1 ve %kid2 mısır gevreklerini yediler bile. Artık ağlayacaklardı!" #!String
+    TwoKids_2: "Rüyamda %kid2 ünlü bir canavar avcısı olmuştu. Onun için ufak bir zırh bulmayı düşünüyorum." #!String
+    TwoKids_3: "Eski, hoş bir ev, birkaç çocuk ve harika bir çiftlik. Bunların olacağını sanmazdım... Daha dur sen! Hayat yeni başlıyor.$h" #!String
+    Good_1: "Sen de duydun mu? Bazen bu evin hayaletli olduğunu düşünüyorum.$u" #!String
+    Good_2: "Welwick, bugün baktığı falda benim için iyi şeyler gördü. Keyfim yerine geldi!" #!String
+    Good_3: "Saçımı en son boyadığım zamanı hatırlayamıyorum... Yemin ederim ki bu renk hiç solmuyor..." #!String
+    Good_4: "Taşınmadan önce bir çift çizme aldığım için çok mutluyum. Spor ayakkabılarımla çamur birinkitilerinin arasında sekerek gitmek çok zor olacaktı.$h" #!String
+    Good_5: "Bana verdiğin kolyeye hayran kaldım... Mezarıma kadar bunu gururla takacağım.$l" #!String
+    Good_6: "Zeki olduğunu biliyorum ama yine de senin için endişeleniyorum. Dünya canavarlarla dolu.$6#$e#Dikkatli olacağına söz ver. Seni kaybetmek istemiyorum." #!String
+    Good_7: "@, bizim için çok çalıştığını görüyorum ve bunu takdir ediyorum. Seninle gurur duyuyorum.$l" #!String
+    Neutral_0: "Umarım yaşlanıp buruştuğumda beni hâlâ seversin. Bir gün ben de yaşlanacağım!" #!String
+    Neutral_1: "Sence büyükbaban bizimle gurur duyar mıydı?" #!String
+    Neutral_6: "Bakkal ne durumda merak ediyorum. Yakında anne ve babamı ziyaret etmem gerekli." #!String
+    Neutral_7: "Eğer diğer tarafa taşınırsan, senin için büyükbabanın yanına ufak bir kabir yapacağım." #!String
+    Neutral_8: "Ne kadar temizlesem de ev yine de kirleniyor.#$e#Sanırım çiftlik evleri hep böyle." #!String
+    Neutral_9: "Tüm hayatımız boyunca burada mı yaşayacağız, merak ediyordum. Sıkılabilirim." #!String
+    Bad_7: "Eskiden senin için özeldim, en iyi arkadaşındım... Şimdilerde ise bir tek güzel yemek yaptığımda beni farkediyorsun.$s" #!String
+    Bad_8: "Bana karşı çok soğuk davranıyorsun, neyin var? Ruh gibisin...$s" #!String
+    Bad_9: "Daha iyisini yapabilir miydim acaba? Senden önce Sebastian ile çok iyi arkadaştık, aslında onunla olmalıydım...$s" #!String
+    spring_1: "Pekâlâ, yeni yıl için planların var mı?" #!String
+    spring_12: "Hey, yarın yumurta şöleni var. Evliyiz diye sana iltimas göstermeyeceğim.$h#$e#Yumurta avını kazanmayı planlıyorum, hadi beni yen!" #!String
+    spring_2: "Yeni yıl için hedeflerin var mı? Ben birkaç kilo vermek istiyorum.$h" #!String
+    summer_1: "Cildim güneşte kolayca yanıyor. Bu yüzden dikkat etmeliyim.#$e#Umarım beni açık tenli de seversin!$h" #!String
+    summer_4: "Dikkat et aşkım, kalp krizi geçirmeni istemem.#$e#Çok su iç ve aşırı çalışmamaya özen göster." #!String
+    summer_8: "Kokunun kusuruna bakma... Tüm gece sıcaktan terledim." #!String
+    summer_15: "Yaz geldi... Ev sinek dolacak.#$e#Merak etme, onlarla ben ilgilenirim. Bu aslında çok eğlenceli olabiliyor!$h" #!String
+    fall_6: "Ah, güz mevsimi, yılın en sevdiğim dönemi... Renkler saçımı çok güzel gösteriyor... Değil mi?" #!String
+    fall_1: "Bu kokuyu tanımakta yanılmam... Mantar, çürüyen yapraklar, bal kabağı. Güz ne kadar hoş, değil mi?" #!String
+    fall_2: "Bebeğim, bu mevsimde devasa bal kabakları yetiştirebilir miyiz lütfen?$h" #!String
+    fall_20: "Balım... Benim için bir kasa dolusu kuvarstan daha değerlisin.#$e#Tabii... Bir de bir kasa dolusu ametist var. Hım... Düşünmem gerek...$h" #!String
+    winter_3: "Aslında soğuk havayı severim. Bana ısınmam için neden sunuyor sonuçta!$h" #!String
+    winter_15: "Kışın vadiyi keşfetmek çok eğlenceli! Kar örtüsünün altında her şey çok farklı duruyor. Çok sessiz..." #!String
+    spring_Abigail: "Daha soğuk havaları seviyor olabilir. Yine de sonunda baharın gelmesine çok seviniyorum." #!String
+    summer_Abigail: "Şu anda çikolatalı pasta olsa hayır diyemem." #!String
+    fall_Abigail: "Bal kabağı mı kokuyorsun? Belki de yanılıyorumdur...$h" #!String
+    winter_Abigail: "Eskiden odamda \"Çayır Kralı\" oynardık. Hatırlıyor musun? Harika zamanlardı.$h" #!String
+    spouseRoom_Abigail: "#$c .5#Senden biraz önce kalkıp Küçük David'i besledim. Bu sabah yerinde durmuyor.#$e#Umarım kobay kokusundan rahatsız olmazsın." #!String
+

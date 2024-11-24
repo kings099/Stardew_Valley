@@ -1,0 +1,169 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    4: "Ah, merhaba." #!String
+    Introduction: "Ah, doğru... Eski çiftliğe yeni birinin yerleşeceğini duymuştum.#$e#Bu, benim için biraz kötü oldu. Ormanı aratmayan tarlaları bir başıma keşfetmekten zevk alıyordum.$9" #!String
+    FlowerDance_Accept: "Tabii. Hadi yapalım. Böylece beraber utanabiliriz.$h" #!String
+    AcceptBirthdayGift_Positive: "Doğum günümü hatırladın... Teşekkür ederim @! Bu gerçekten harika!$h" #!String
+    AcceptBirthdayGift_Negative: "Doğum günümü hatırladın... Teşekkür ederim @!$h#$b#Aa, bu... *koklar*... Bu da ne?$s" #!String
+    AcceptGift_(O)StardropTea: "Vay... Rengi aynı ametist gibi, çok güzel. Teşekkürler!" #!String
+    AcceptGift_(TR)BasiliskPaw: "İğrenç... Bayıldım!$h" #!String
+    AcceptGift_(O)SkillBook_4: "Aa, en sevdiğim dergiden! Babam abonelik almama izin vermiyor, bu yüzden böyle farklı yollardan edinmek zorundayım...$h" #!String
+    AcceptGift_(O)Book_Void: "Vay, bu kitap ürkünç duruyor... Bayıldım!#$b#*hızla sayfaları çevirir*... Aa... Canavarlarla dolu...$h#$b#Mağaralara girmeden önce incelemem gerekecek... Teşekkürler!" #!String
+    AcceptGift_(O)109: "Vay... Bunu nerede buldun? İşçiliği çok ilginç...#$b#Kullanmak için biraz paslı ama koleksiyonuma ekleyeceğim." #!String
+    AcceptGift_(O)119: "Bu beni düşündürüyor... Binlerce yıl önce, muhtemelen mor saçlı bir mağara kadını, tıpkı benim gibi bu flütü çalıyordu.#$b#...Dudaklarıma değdirmeden önce yıkamam gerekecek.$h" #!String
+    AcceptGift_(O)66: "$c 0.5#Vay... Tam da benim rengim! Teşekkürler @!$h#Teşekkür ederim! Bu benim favori taşım. Çok güzel." #!String
+    GreenRain: "Keşfe çıkmak istiyorum ama annemin biraz endişeli olduğunu görebiliyorum. Onun daha da endişelendirmek istemem." #!String
+    GreenRainFinished: "Her şey tekrar normale döndü. Sihir gibi!$h" #!String
+    GreenRain_2: "Kasaba etrafındaki çılgın ağaçları gördün mü? Her şey çok farklı görünüyor... Âdeta perili bir dünyadaymışız gibi." #!String
+    cc_Begin: "Kimseye söyleme ama dün akşam eski halkevine sızdım... Sanırım orası perili!" #!String
+    AcceptGift_(O)279: "Vay be... @! Bunu bana vermek istediğine emin misin? Bu çok nadir bir şey!#$b#İtiraf etmem gerek ki şimdiden ağzımın suyu aktı...$h" #!String
+    mineArea_10_oneday: "Eski madenleri keşfettiğini duydum. Kulağa eğlenceli geliyor!$h#$e#...Madene gitmek için cesaretimi toplamaya çalışıyorum...$s" #!String
+    eventSeen_733330_memory_oneday: "Sam ve Sebastian, gruplarında davul çalmamı istedi... Daha önce hiç davul çalmamıştım fakat oldukça eğlenceliymiş.#$e#Tam olarak aynı anda uzuvlarını nasıl farklı ritimlerde hareket ettirebileceğini öğrenmen gerek. Beynim büyüyor gibi hissediyorum.$h" #!String
+    eventSeen_1_memory_oneweek: "Sonunda Çayır Kralı'nın Yolculuğu oyununun ilk bölümünü geçebildim! Seni oynarken izlemenin çok faydası oldu." #!String
+    eventSeen_2_memory_oneday: "Sebastian geçen gece garip bir müzik sesi duyduğundan bahsetti...#$e#Ona sesin bizden geldiğini söylemedim! Sır olarak saklamak daha iyi gibi geldi.$h" #!String
+    eventSeen_3: "Ruhların kendi zekaları var...$l" #!String
+    wonEggHunt: "Dünden dolayı keyfin yerinde, değil mi? Seneye bu kadar şanslı olmayacaksın...$u" #!String
+    wonEggHunt_memory_oneyear: "Geçen yılki yumurta avında beni yendiğin için sana hâlâ kızgınım. Isınmaya başlasan iyi edersin..." #!String
+    dating_Abigail: "%Abigail'in yanakları kızardı fakat mutlu gözüküyor." #!String
+    dating_Abigail_memory_oneday: "...Tatlısın.$l" #!String
+    dating_Abigail_memory_oneyear: "Şey... @? Neredeyse bir yıldır çıkıyoruz. İlişkimiz bir yerlere gidecek mi?$s" #!String
+    dating_Sebastian_memory_oneday: "Sebastian'la çıkmaya başladığını öğrendim... Aranızda bir şey olduğunu fark etmemiştim...$6" #!String
+    dating_Sam: "Sam'le birlikte olduğunu duydum... O gerçekten iyi biri!$h#$e#Onunla uzun zamandır arkadaşız. Onu incitmesen iyi olur, yoksa külahları değişiriz!" #!String
+    married_Sebastian: "Evliliğinizi tebrik ederim. Sanırım bu, Sebastian'ın sürekli bahsettiği gibi şehre taşınmayacağı anlamına geliyor.$6#$b#Güzel olacak. Eğer onu bir daha hiç göremeyecek olsaydım bu beni üzerdi. Çocukluktan beri iyi birer arkadaşız.$6" #!String
+    married_Sam: "Haha... Sam'in artık evli bir adam olduğuna inanamıyorum. Kim düşünebilirdi?$h#$e#Şaka bir yana, bir gün harika bir baba olacağını düşünüyorum." #!String
+    movieTheater: "Kasabaya yeni açılan sinemayı duydun mu? Gitmek için sabırsızlanıyorum!$h" #!String
+    Resort_Entering: "Umarım sahile denizkızı çıkar." #!String
+    Resort_Leaving: "Willy'den dönerken geldiğimiz o manzaralı rotadan gitmesini isteyeceğim." #!String
+    Resort_Leaving_2: "Belki yolda bir deniz canavarı görürüz." #!String
+    Resort_Shore: "Sahil güzel ama çok çabuk sıkıyor. Ben daha çok ormana ya da yanardağa gitmek istiyorum!" #!String
+    Resort_Shore_2: "Hım, sence kobayımı adaya gizlice sokabilir miyim?#$e#Yok ya, David zaten yüzmeyi sevmez.$h" #!String
+    Resort_Umbrella: "Cildim çok kolay yanıyor. Bir süre bu şemsiyenin altında kalacağım.#$e#Gölgede kalmayı seviyorum. Güneşin altında çok kalınca başım dönüyor." #!String
+    Resort_Umbrella_2: "Selam @. Benimle kumdan kale yapmak ister misin?#$e#Aslında kumdan zindan yapsak daha güzel olabilir!$h" #!String
+    Resort_Umbrella_3: "Merhaba @. Sence sal yapabilir miyiz?#$e#Buraya gelirken yolda birkaç güzel ada gördüm. Onları ziyaret ederdik." #!String
+    Resort_Wander: "Böyle büyük bir adada mutlaka gömülü bir hazine vardır.#$e#Çabuk bana bir kürek bul!#$e#Sakin ol be. Şaka yapıyorum.$h" #!String
+    Resort_Bar: "Gus saçıma uysun diye koyu mor bir ferahlatıcı içecek yaptı. Tadı da çok güzel!$h" #!String
+    Resort: "Öf be... Willy sahilde kalmamız gerektiğini söyledi...$s#$b#Üstelik ben palamı falan da getirmiştim...$s" #!String
+    FlowerDance_Accept_Spouse: "A... Ama... Ben şeyle şey...$s#$b#Şaka yapıyorum! Elbette seninle dans ederim. Seni seviyorum.$h" #!String
+    FlowerDance_Decline: "Onur duydum... Ancak, hayır demeliyim. Üzgünüm." #!String
+    divorced: "Burada ne arıyorsun? Beni rahat bırak!$a" #!String
+    dumped_Girls: "Benimle konuşma!$a" #!String
+    secondChance_Girls: "*iç çeker*...Sana kızgın kalamam, @. Hayatlarımıza devam edelim.$s" #!String
+    breakUp: "Ah... A... anladım. Beni arkadaş olarak görüyorsun...$s#$b#İyi bir çift olamadık demek ki...$s" #!String
+    Mon: "Selam. Çalışmaya ara mı verdin?" #!String
+    Mon2: "Ah, merhaba!#$e#Hiç mezarlığa gider misin? Yalnız başına zaman geçirmek için oldukça huzurlu bir yer." #!String
+    Tue: "Ah... Şu an pek havamda değilim.$s#$e#Havamda değilim dedim ya... Ne istiyorsun?$a" #!String
+    Tue2: "...*iç çeker*...$s#$e#Anne ve babamın iyi niyetli olduğunu biliyorum. Ancak, bazen bakış açımı anlamıyorlar. Hiç mi genç olmadılar?" #!String
+    Wed: "Hey. Kabalık etme olasılığıma karşın şimdiden özür dilerim. Dün gece pek uyuyamadım.#$e#Ne istiyorsun?" #!String
+    Thu: "#$1 Abigail1#Olamaz. Sanırım akşama yemeği babam yapacak...$s#$e#Bugün pek bir şey yapasım yok...$u" #!String
+    Fri: "Oha, bugünün cuma olduğunu şimdi fark ettim. $u#$e#Kimileyin zaman kavramını yitiriyorum." #!String
+    Fri2: "Bu akşam hepimiz salonda takılacağız. Bu bir tür cuma geleneği sanırım." #!String
+    Sat: "Açık dağ havası böyle bir günde güzeldir.$h#$e#Acaba yakında kurbağalar da ortaya çıkar mı?" #!String
+    Sun: "Dostum... Hafta sonumu ödevimi yapmayı ertelemekle geçirdim. Görünüşe göre bütün gece ödevle uğraşmam gerekecek...$s" #!String
+    Sun2: "Geceyi mezarlıkta geçirsem ne olur acaba?#$q 17/18 Sun_old#@, sence öldükten sonra bize ne olacak?#$r 17 0 Sun_17#Benim hiçbir fikrim yok.#$r 18 40 Sun_18#Ürkütücü hayaletler olarak dünyaya dönebiliriz.#$r 17 0 Sun_17#Cennete gidebiliriz.#$r 18 0 Sun_17#Enerjiden oluşan vücutlarımız astral yolculuğa çıkabilir.#$r 17 30 Sun_nothing#Hiçbir şey olmayabilir. Varlığımız sona erer." #!String
+    Sun_old: "$p 17#Hiçbir şeyin olmayacağını düşünüyorsun, değil mi?$u|Belki kötü bir hayalet falan ortaya çıkar!" #!String
+    Sun_17: "Hım, ilginç..." #!String
+    Sun_18: "İlginç bir teori aslında!$h" #!String
+    Sun_nothing: "Hani hiç de kötü olmazdı.$8" #!String
+    Wed2: "Merhaba @. Çalışmaya ara mı verdin?#$e#Ben de. Ah! Aslında somut bir durum yok... Yalnızca çevrim içi ders alıyorum." #!String
+    Tue4: "Merhaba. Seni gördüğüme sevindim.$h#$e#Bir süreliğine kafamı boşaltmak istiyorum... Günün nasıl geçiyor?" #!String
+    Sat6: "Bunca yolu beni görmek için mi geldin? Çok hoşsun.$h#$e#Hiç dağdaki mağaraları araştırmaya gitmiş miydin?#$e#İlginç duruyorlar. Bende bir gün gitmek istiyorum.$l" #!String
+    Mon8: "$query PLAYER_NPC_RELATIONSHIP current any married roommate#Kasabaya ilk geldiğinde, ağaçların kesilip yerlerini tarlalar alacağı için üzülmüştüm. Şimdiyse iyi ki taşınmışsın diyorum!$h|Ah @! Selam.$h#$e#Takılmak ister misin? Ver bakalım. Avucunu okuyayım. *kıkırdar*$h" #!String
+    Thu10: "Merhaba.$l#$e#Son zamanlarda sana da her şey sanki gerçek değilmiş gibi geliyor mu?$l#$b#Kötü bir şekilde değil gerçi.$h" #!String
+    Fri6: "Bugün kuşlar sevinçle cıvıldıyor. Geleceği anlayamayacak kadar saflar.#$e#Onlar gibi olmak en iyisi aslında, değil mi?" #!String
+    Event_VideoGame_Yes: "Harika! Bu bölümü kolayca geçeceğine eminim.$h" #!String
+    Event_VideoGame_No: "Ah? *iç çeker* Sanırım bu bölümü asla geçemeyeceğim...$s" #!String
+    Event_Grave1: "Gördün mü? Neden burada olduğumu biliyorsun o zaman.#$b#Hayatımın tamamını vadide geçirdim ama hatırlamaya değer hiçbir şey yapmadım. Maceraya atılmak istiyorum!$8" #!String
+    Event_Grave2: "Hiçbir şey öldürmek istemiyorum elbette. Sadece boynumu tehlikeye atmadan azıcık olsun keşif yapmak istiyorum!#$b#Hayatımın tamamını vadide geçirdim ama hatırlamaya değer hiçbir şey yapmadım. Maceraya atılmak istiyorum!$8" #!String
+    Event_Grave3: "Ah, kız olduğum için... değil mi? Of...$u^Neden? Ben de en az senin kadar güçlüyüm!$a#$b#Kırılgan bir prenses değilim... Kendi başımın çaresine bakabilirim!$a#$b#Hayatımın tamamını vadide geçirdim ama hatırlamaya değer hiçbir şey yapmadım. Maceraya atılmak istiyorum!$8" #!String
+    Event_Grave4: "Gerçekten mi? Bu çok şaşılası.$8#$b#Hayatımın tamamını vadide geçirdim ama hatırlamaya değer hiçbir şey yapmadım. Maceraya atılmak istiyorum!$8" #!String
+    Event_Rain_1: "Anlıyorum...$8" #!String
+    Event_Rain_2: "Evet... Sanırım bu kasvetli havayı takdir edersin." #!String
+    Event_Rain_3: "...Bak orası doğru.$8" #!String
+    Event_Tragic_1: "Evet... Sanırım hayat iyi gidiyor...$s" #!String
+    Event_Tragic_2: "...!$h" #!String
+    Event_Tragic_3: "Buna inansaydım daha iyi hissedebilirdim...#$b#Gel gör ki inanmıyorum.$s" #!String
+    Event_Cave2_1: "@...$8" #!String
+    Event_Cave2_2: "@... Bir şeyim yok.$8" #!String
+    Event_Cave_1: "...Tamam.$8" #!String
+    Event_Cave_2: "Kaybedecek bir şeyin olunca korkman çok normal galiba...$l" #!String
+    Event_Cave_3: "...Ah, tamam. Affedersin.$9" #!String
+    summer_1: "Yaz geldi. En sevdiğim mevsim olduğunu söyleyemem.#$e#Hava o kadar boğucu ki çorbada yüzüyormuş gibi hissediyorum." #!String
+    summer_Mon: "Evcil kobayım David bu sıcak havadan nefret eder. Telaşlanıyor." #!String
+    summer_Tue: "Yaz boyunca hava bal ve bal özü ile dolu olacak. Gözüm kararıyor.$u" #!String
+    summer_Wed: "Evine çekidüzen verdin mi? Kendime ait bir evim olsaydı ben verirdim." #!String
+    summer_6: "Dün akşam hava karardıktan sonra kumsala indim... Kimileyin, denizde kırpışan garip ışıklar görülüyor.#$e#Belki de düş görmüşümdür... Artık gerçekmiş gibi gelmiyor." #!String
+    summer_Thu: "Kılıç kullanmasını bilseydim şimdi dağ gölünün oradaki mağaraları keşfediyor olurdum. Herhalde orası serin ve rahattır." #!String
+    summer_Thu4: "Iy, umarım bu yaz bronzlaşmam.$s" #!String
+    summer_Fri: "Keşke bir kedim olsaydı. Ne yazık ki, babamın neredeyse her şeye alerjisi var." #!String
+    summer_Sat: "Güzü sabırsızlıkla bekliyorum... Soğuk dağ esintisi, uçuşan kırmızı yapraklar, mantarların kokusu... *iç çeker*" #!String
+    summer_Sun: "Sana hiçbir anda keşfe çıkma isteği geliyor mu, @?#$q 25/26 summer_Sun_old#Tamam... Ücretsiz bir tatil kazanmış olsan nereye giderdin?#$r 25 0 Sun_25#Kumsal#$r 26 30 Sun_26#Karanlık bir mağara#$r 26 30 Sun_26#Yaşlı boğumlu bir orman#$r 25 0 Sun_25#Joja Mega-AVM" #!String
+    summer_Sun_old: "$p 25#Bana geliyor... Sen muhtemelen düşündüğüm bu yerleri sevmezsin...|Belki bir gün komşu oluruz. Bence ikimizin de benzer, garip tatları var.$h" #!String
+    Sun_25: "Hıh. Bence oralardan çabuk sıkılırsın." #!String
+    Sun_26: "Aynen! Kulağa harika geliyor.$h" #!String
+    summer_Wed2: "Senin gibi eski bir çiftlik evinde yaşamayı çok istiyorum.#$b#Döşemelerin gıcırtısı, kirişlerin arasında fısıldayan tozların fısıltısı... Eski yapılarda özel bir sürü şey var, yanılıyor muyum?" #!String
+    summer_Tue4: "İlginç bir ${adamsın^kadınsın}$, @. Buraya taşınmana sevindim.$h" #!String
+    summer_Sat6: "Bu yaz aslında hoş vakit geçiriyorum.$h#$e#İnsanın bakış açısının çabucak değişebilmesi ne kadar da gülünç." #!String
+    summer_Mon8: "Pelikan Kasabası'nın sıkıcı olduğunu düşünürdüm. Son zamanlarda burayla ilgili bazı şeyleri sevmeye başladım.$h" #!String
+    summer_Thu10: "Bugün çok hoşsun.#$e#Demek istediğim, bu yaz havası cilde çok iyi gelmiyor mu?.. Heh...$l" #!String
+    summer_Fri10: "Çiftliğinde yalnız kaldığın oluyor mu?" #!String
+    fall_1: "Ah... Güz geldi!$h#$e#Ben de tam yazdan sıkılmaya başlamıştım." #!String
+    fall_Mon: "Bugün bacaklarımı esnetip temiz hava almalıyım." #!String
+    fall_Tue: "$d joja#Çoğu günler dükkanda bizimkilere yardım ediyorum. Joja Mart açıldığından beri işler pek iyi gitmiyor gerçi.|Joja Mart kapandıktan sonra işlerimiz açıldı!$h" #!String
+    fall_Wed: "Bu yılki bal kabaklarını görmek için sabırsızlanıyorum.$h#$e#Ruhluk Arefesi şöleni güzün sonunda gerçekleşiyor. Zuzu Şehri'nde göreceklerine göre sönük kalır ama burası gibi küçük bir kasabaya göre bayağı eğlenceli." #!String
+    fall_Thu: "#$1 AbigailHAND#Dün gece düşümde sol elimin devasa bir %noun olduğunu gördüm. Bunun bir anlamı var mı?#$e#%Abigail şu anda konuşmakla ilgilenmiyor." #!String
+    fall_Sat: "$d cc#Halkevi'ni tek başına onardığına inanamıyorum. Gerçekten etkilendim.|Çitfliğinde korkuluk var mı?" #!String
+    fall_Sun: "Hım... Bu akşam ne yapsam?#$q 27/28 fall_Sun_old#Saçımı boyamayı düşünüyorum... Ne diyorsun?#$r 27 10 Sun_27#Siyaha boya.#$r 27 10 Sun_27#Neden sarıya boyamıyorsun?#$r 27 20 Sun_WildColor#Sakız pembesine ne dersin?#$r 28 0 Sun_28#Bence bu haliyle güzel." #!String
+    fall_Sun_old: "$p 27#Saçımı boyayacaktım ama vazgeçtim.|Evet mi? Bu nedir?" #!String
+    Sun_27: "Sanırım sağlam bir seçim, ha?#$e#Bunu düşüneceğim." #!String
+    Sun_28: "Tabii öyle dersin.$u" #!String
+    Sun_WildColor: "Güldürme konusunda formunu hiç bozmuyorsun.$h" #!String
+    fall_Wed2: "Bu yıl çiftliğinde bal kabağı yetiştiriyor musun?#$e#Bir tanesini bana ayır!$h" #!String
+    fall_Tue4: "Ailemle çok kavga etsem de sadece beni sakındıklarını biliyorum. En iyisi olduğunu düşündükleri şeyi yapıyorlar.$s#$b#Bunu sana neden anlattığımı bilmiyorum. Kimseye söyleme sakın.$8" #!String
+    fall_Sat6: "Merhaba.$h#$e#Saçın bugün çok hoş duruyor... Farklı bir şey mi yaptın?" #!String
+    fall_Mon8: "Bilirsin ya hani, aslında günün birinde çiftçi olacağımı hissedebiliyorum...#$e#Ama nasıl olacağım? *kıkırdar*$l" #!String
+    fall_Thu10: "Dün gece ilginç bir rüya gördüm. Sen de vardın.#$e#Kötü bir rüya değildi.$h" #!String
+    fall_Fri6: "Keşke güz daha uzun sürse.$8#$e#Rüzgar kuvvetlendiğinde neredeyse çocukluk günlerime dönüyorum." #!String
+    fall_Fri10: "Genellikle yılın bu zamanı yalnızmışım gibi gelirdi. Artık gelmiyor.$l#$e#@, geleceğe yönelik neler planlıyorsun?" #!String
+    winter_1: "Güz sona erdi...$s#$e#Ama ben kışı da seviyorum!$h" #!String
+    winter_Mon: "Sık sık dışarı çıkmak için hava çok soğuk.#$e#Ancak kardan adam yapmayı seviyorum.$h" #!String
+    winter_Tue: "Bir bardak sıcak çikolata yapmak kulağa harika gelmiyor mu?" #!String
+    winter_Wed: "Merhaba. Kışın çiftçi olmak sıkıcı mı?" #!String
+    spring_12: "Yarın kesinlikle yumurta avına çıkacağım. Sen de çıkacak mısın?" #!String
+    spring_23: "Yarın çiçek dansı var. Dans etmek sıkıntı değil de, bu aptal beyaz elbiseyi giymem gerekiyor...$s" #!String
+    winter_7: "Yarın kardan adam yapmak için sabırsızlanıyorum." #!String
+    fall_26: "Yarınki Ruhluk Arefesi'ne katılacak mısın? Perili labirentte beni bul.$h" #!String
+    summer_10: "Herkes yarınki Luau için oldukça heyecanlı. Vali'nin de geleceğini düşünürsek, azıcık gergin de olabilirler." #!String
+    summer_27: "Yarınki şöleni kaçıramazsın. Vadi'nin en harika yanlarından birisi bu şölen." #!String
+    winter_24: "Yarın bayağı kızılcık sosu yiyeceğim.$h" #!String
+    winter_Thu: "Bir yıl daha bitip gitmek üzere.#$e#Çok hızlı geçiyor, değil mi?$s" #!String
+    winter_Fri: "Burada yaşarken öğrendiğim bir şey var... Farklı görünüyorsan, herkes sana dimdik bakıyor." #!String
+    winter_Sat: "Hafta sonu geldi!#$e#Bu da normalin iki katı bilgisayar oyunu oynayabileceğim anlamına geliyor.$h#$e#Görüşürüz." #!String
+    winter_Sun: "Ah, merhaba.#$q 29/30 winter_Sun_old#İki tane çizim yaptım. Sen ne düşünüyorsun?#$r 29 20 Sun_29#Ormanlı adayı ve kaplanı sevdim.#$r 30 5 Sun_30#Baltalı orku beğendim.#$r 29 -50 Sun_Bad#İkisini de beğenmedim." #!String
+    winter_Sun_old: "$p 29#Bir süre önce sana gösterdiğim çizimleri hatırlıyor musun? Yanlışlıkla onları attım.$s|Sana gösterdiğim orklu çizim vardı ya... Onunla çevrim içi bir yarışmaya girdim ve 50g kazandım!$h" #!String
+    Sun_29: "Öyle mi? Sanırım mantıklı." #!String
+    Sun_30: "Sevindim. Sanatını başkalarıyla paylaşmak utanç verici. Ancak, sanırım seninle hemfikiriz." #!String
+    Sun_Bad: "Çok kabasın! Beni neden bu şekilde incitiyorsun? Çok duyarsızsın!$s" #!String
+    winter_Wed2: "Selam. Sıkılırsan odamda takılabilirsin.#$e#Üstümü değiştirmediğim sürece, elbette!" #!String
+    winter_Tue4: "Hava çok soğuk. Keşke paylaşabileceğimiz bir sıcak çikolatamız olsaydı.$h" #!String
+    winter_Sat6: "Son zamanlarda çok hayal kuruyorum...#$e#Ah! Ne hakkında kurduğumu bilmek ister misin? Şey...$u#$b#...Bu bir sır.$h" #!String
+    winter_Thu10: "Bir yıl daha bitip gitmek üzere...#$b#Ancak bu yıl çok güzeldi, sence de öyle değil mi?$h" #!String
+    winter_Wed6: "Yılın bu zamanı düşünecek ekininin olmaması hoş olmalı.#$e#Ki bu da daha sık takılabileceğimiz anlamına geliyor!$h" #!String
+    winter_Fri10: "@, sana söylemek istediğim bir şey var...#$e#Şey... ım... şey... ayakkabıların! Onlar, ah... çok temizler... *yutkunur*#$e#Hepsi buydu... *iç çeker*$s" #!String
+    Wed4: "Hayvanları sevmeyen birine güvenemem...#$e#Ya, endişelenme! Hayvansever olduğunu biliyorum!$h" #!String
+

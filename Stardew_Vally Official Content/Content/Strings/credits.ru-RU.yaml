@@ -1,0 +1,97 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.ListReader`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!List<String>
+    - "[image] LooseSprites\\\\yellowLettersLogo 0 0 228 26 3" #!String
+    - "[image] LooseSprites\\\\yellowLettersLogo 0 26 228 26 3" #!String
+    - "[image] LooseSprites\\\\yellowLettersLogo 0 52 228 26 3" #!String
+    - "[image] LooseSprites\\\\yellowLettersLogo 0 78 228 26 3" #!String
+    - "" #!String
+    - "[3]Игра Stardew Valley создана:" #!String
+    - "Eric Barone \"ConcernedApe\"" #!String
+    - "" #!String
+    - "[3]Обновление 1.6:" #!String
+    - "Eric Barone" #!String
+    - "Jesse Plamondon-Willard \"Pathoschild\"" #!String
+    - "Devin Hedegaard" #!String
+    - "Arthur Lee" #!String
+    - "Jared Flores" #!String
+    - "Casey Warrington" #!String
+    - "" #!String
+    - "[3]Обновление 1.5:" #!String
+    - "Eric Barone" #!String
+    - "Arthur Lee" #!String
+    - "" #!String
+    - "[3]Кодинг совместной игры:" #!String
+    - "Tom Coxon" #!String
+    - "" #!String
+    - "[3]Дополнительный кодинг:" #!String
+    - "Casey Warrington" #!String
+    - "Alex Erlandson" #!String
+    - "" #!String
+    - "[3]Переводы:" #!String
+    - "Playism" #!String
+    - "LocalizeDirect" #!String
+    - "Alessio Messersì (Итальянский)" #!String
+    - "Junho Won (Корейский)" #!String
+    - "Jo \"Josh\" Sanghee (Корейский)" #!String
+    - "Not Shalulu (Французский)" #!String
+    - "Gőz Richárd \"TRC\" (Венгерский)" #!String
+    - "Hüseyin Serhat Çavunt (Турецкий)" #!String
+    - "Salih Emircan Ayyıldız (Турецкий)" #!String
+    - "Hilmi Furkan Yaşık (Турецкий)" #!String
+    - "Ali Batuhan Özkan (Турецкий)" #!String
+    - "Daniel Ruiz \"TheBrightKing\" (Испанский)" #!String
+    - "Sandra Martín Sigüenza (Испанский)" #!String
+    - "Alexander Preymak (Русский)" #!String
+    - "Arina Bedrina (Русский)" #!String
+    - "Niclaus Leo \"Royami\" (Русские надписи и шрифты)" #!String
+    - "Alessandro Raffaele-Addamo (Немецкий)" #!String
+    - "Vinícius de Medeiros Miguel (Португальский)" #!String
+    - "Watermelon Translations (Китайский Упрощ.)" #!String
+    - "Takashi Fujimoto (Японский)" #!String
+    - "" #!String
+    - "[3]Менеджер переводов:" #!String
+    - "Matt Griffin" #!String
+    - "" #!String
+    - "[3]Порты на Mac, Linux, Xbox One, \"PlayStation 4\", \"PS Vita\" и Nintendo Switch:" #!String
+    - "Sickhead Games" #!String
+    - "" #!String
+    - "[3]Порты на мобильные устройства:" #!String
+    - "The Secret Police" #!String
+    - "Sickhead Games" #!String
+    - "" #!String
+    - "[3]Тест для консолей:" #!String
+    - "GlobalStep" #!String
+    - "" #!String
+    - "[3]Розничная продажа:" #!String
+    - "505 Games" #!String
+    - "Fangamer" #!String
+    - "" #!String
+    - "[3]Тест для розничной продажи:" #!String
+    - "Pipeworks Studio" #!String
+    - "" #!String
+    - "[image] LooseSprites\\\\Cursors 540 333 13 13 4 4" #!String
+    - "[3]Полезные ссылки:" #!String
+    - "[link] https://www.stardewvalley.net Официальный сайт" #!String
+    - "[link] https://forums.stardewvalley.net Официальный форум" #!String
+    - "[link] https://www.stardewvalley.net/links Новости и сообщество" #!String
+    - "" #!String
+    - "[image] LooseSprites\\\\Cursors 592 333 13 13 4 4" #!String
+    - "" #!String
+    - "[1]Спасибо, что поиграли <" #!String
+

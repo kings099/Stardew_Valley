@@ -1,0 +1,28 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    summer_4.000: "A fenébe... Már majdnem elfelejtettem. Ma találkoznom kell Dr. Harveyval." #!String
+    Fri.000: "Vajon egyszer hagynom kellene, hogy Sam győzzön? ...dehogy.$h" #!String
+    marriage_Fri.001: "Nem romlottak a képességeim... Samet még mindig ugyanolyan könnyű legyőzni.$h" #!String
+    summer_4.001: "Mit keresel idebent? Akár meztelen is lehetnék!$a" #!String
+    marriage_Mon.001: "Anya arca felvillant, mikor besétáltam. Megérdemli, hogy boldog legyen.$7" #!String
+    marriage_Fri.000: "Ma a régi haverokkal fogok lógni. Későn érek haza." #!String
+    marriage_Mon.000: "Most, hogy itt álldogálok, megkívántam egy cigit... de elhatároztam, hogy leszokom." #!String
+    rain.000: "Az óceánt a legjobb egyedül élvezni... nem gondolod?" #!String
+    winter_16.000: "Este sokkal nyugodtabban érzem magam... A végén még egy bizsut is veszek." #!String
+

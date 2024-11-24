@@ -1,0 +1,28 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    fall_11.000: "I gotta go visit Uncle Doctor today... Great.$7" #!String
+    winter_17.000: "Maybe if all else fails, I'll become a submarine captain. That might be cool." #!String
+    marriage_Fri.001: "Sorry, honey. I'm trying to concentrate here... $7" #!String
+    marriage_Mon.001: "Vincent seems a little lonely without me around. I used to play with him a lot." #!String
+    marriage_Fri.000: "Don't tell my mom... but I really just came over for a free lunch.$h" #!String
+    fall_11.002: "I just got out of the doctor's office. Completely healthy and vigorous, just as I expected.$h" #!String
+    marriage_Mon.000: "Mom seems okay. A little overworked, maybe." #!String
+    fall_11.001: "I'm a healthy boy, doc. Can I go now? This is boring." #!String
+    rain2.000: "Nothing like an ice cold Joja Cola on a sopping wet day, huh?#$e#Just kidding. Hehehe.$h" #!String
+

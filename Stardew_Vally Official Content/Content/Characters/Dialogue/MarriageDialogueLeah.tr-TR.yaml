@@ -1,0 +1,92 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Rainy_Day_0: "Bazen ilhamı en beklenmedik yerlerde buluyorum." #!String
+    Rainy_Day_1: "Şehirde yaşıyorken yağmuru iç karartıcı bulurdum. Ama burada, Yıldızçiyi Vadisi'nde yağmur muhteşem." #!String
+    Rainy_Day_2: "Günaydın! Bugün erken kalkıp biraz mantar toplamaya çıktım. İşte, al bir tanesini.[281 404 420 257]#$e#Mantar aramak hazine avına çıkmak gibi, çok eğlenceli.$h" #!String
+    Rainy_Day_3: "Böyle günlerde iş botlarım olduğu için seviniyorum.$h" #!String
+    Rainy_Day_4: "Ağaçlar yağmur için yalvarıyordu... Onlar için mutluyum." #!String
+    Rainy_Night_0: "Günün nasıldı? Hiç hayvana rastladın mı?" #!String
+    patio_Leah: "Çok yakından bakma, daha bitmedi." #!String
+    Rainy_Night_1: "Genellikle salata tercih ederim... ama böyle yağmurlu bir gecede canım sıcak çorba çekiyor.$h" #!String
+    Rainy_Night_2: "Böyle bir gecede uykuya dalmak çok rahatlatıcı olacak...$l" #!String
+    Rainy_Night_3: "Bugün ahşaptan heykel yaptım ama öyle çirkin oldu ki onu ateşe attım...$u#$e#Bence iyi bir sanatçı olmak için kendi işini eleştirebilmen gerekir." #!String
+    Rainy_Night_4: "Eve geldiğine sevindim... Tam battaniyenin altına girip sıcacık sıcacık oturmalık bir gece." #!String
+    Rainy_Night_Leah: "Günün nasıldı canım? Çamura battın mı hiç?" #!String
+    Indoor_Day_0: "Bu ev eski barakamdan daha güzel! Barakamı özlemiyorum!" #!String
+    Indoor_Day_1: "Günaydın, @. Bunları arkadaki küçük saksılarda yetiştirdim... [16 18 20 22 90 259 396 402]#$e#Onları sevgiyle ve özenle yetiştirdim. Tadını çıkar." #!String
+    Indoor_Day_2: "Yabani yiyecekler için gözünü açık tut, etrafta bir sürü var!" #!String
+    Indoor_Day_3: "Düşünüyordum da... Hayat, kötü yemekler yemek için fazla kısa. Şanslıyız ki taze meyve ve sebze alabileceğimiz bir bölgede yaşıyoruz!#$e#İşte, sana tazesinden salata yaptım. [196]#$e#Salatamdan hâlâ bıkmadığına şaşırıyorum!" #!String
+    Indoor_Day_4: "Günaydın, @! Kahve yaptım.[395]$h#$e#Sabahları kahve içmeden kendime gelemiyorum." #!String
+    Indoor_Night_0: "Gecenin bu saatinde hep susuyorum." #!String
+    Indoor_Night_1: "Zamanın akışı çok hassas... en küçük kararımız bile hayatımızı sonsuza kadar değiştirebiliyor." #!String
+    Indoor_Night_2: "Geceler burada, şehrin gösterişli görüntüsünden daha güzel geçiyor.#$e#Benim için her şey yoluna girdi. Çok şanslıyım." #!String
+    Indoor_Night_3: "Buraya taşınır taşınmaz denizkızı kolyesi alacağım aklıma gelmezdi! Mutluyum.$l" #!String
+    Indoor_Night_4: "Bugün yabani bir tavşan gördüm. Keşke bir gün bir tanesini sevebilsem. Çok yumuşak görünüyorlar..." #!String
+    Outdoor_0: "Serin esinti iyi hissettiriyor. Bana nehrin kenarında yaşadığım zamanları hatırlatıyor." #!String
+    Outdoor_1: "Hım... Burada biraz tadilat yapacağım. Ara sıra içimde bir şeyleri çekiçleme isteği doğuyor." #!String
+    Outdoor_2: "Bugün özel bir gün olacak, hissediyorum." #!String
+    Outdoor_3: "Ah... ıslak toprağın kokusu. Bunun gibisi yok.$h#$e#Burada havanın güzel olduğunu farkediyorsun... ciğerlerin rahatlıyor." #!String
+    Outdoor_4: "Aşırı çalışma sakın bir tanem.#$e#Ara sıra mola vermeyi ve bir şeyler yemeyi unutma.$h" #!String
+    funLeave_Leah: "Bugün doğayı keşfe çıkacağım. Evden ayrılmam gerekiyor." #!String
+    funReturn_Leah: "Bugün güzel ve rahatlatıcı bir gün geçirdim. Senin günün nasıldı?" #!String
+    OneKid_3: "Anne olmak eğlenceli. %kid1 dışarıyı severek büyüsün istiyorum." #!String
+    TwoKids_3: "Harika bir çiftliğimiz ve tatlı bir ailemiz var. Hayatımız harika değil mi?" #!String
+    Good_0: "Burada yaşıyorken, kendimi bir dağın zirvesinde gibi hissediyorum." #!String
+    Good_1: "Sana hiç söylemiş miydim?.. Buraya ilk taşındığında, bir gün beraber olacağımıza dair bir rüya görmüştüm." #!String
+    Good_2: "Bazen kadere inanmamakta zorlanıyorum... Buraya taşınma kararı almam ve bizim tanışmamız...#$b#İşler bir noktada tamamen farklı bir hal alabilirdi." #!String
+    Good_3: "Vay, bugün enerji dolusun!$l^Bugün çok güzelsin.$l" #!String
+    Good_4: "Hım... Bugün güzel kokuyorsun." #!String
+    Good_5: "Evlilik yüzüğüme bakıyordum... Bu hatırayı kalbimde sonsuza kadar yaşatacağım.$l" #!String
+    Good_6: "Çalışırken dikkatli ol! Maden çukuruna düşmenden endişeleniyorum." #!String
+    Good_7: "@, evimiz için bu kadar sıkı çalışmanı takdir ediyorum.$h" #!String
+    Good_8: "Beni düşünme... Evin dışında birçok sorumluluğun olduğuna eminim. Burada tek başıma sıkılmıyorum!$l" #!String
+    Good_9: "Sıkılmadım... Burada sahip olduklarımızın tadını çıkarıyorum.#$e#Sade bir hayat ama seviyorum..$h" #!String
+    Neutral_0: "Umarım yaşlı ve ak saçlıyken de beni seversin." #!String
+    Neutral_1: "Bizden önce burada kimin yaşadığını merak ediyorum." #!String
+    Neutral_2: "Bugün yapacak bir şeyin yok mu?" #!String
+    Neutral_3: "Eğer kasabaya gidersen herkese benden selam söyle." #!String
+    Neutral_4: "Yarın sabah sen kalkmadan çamaşır yıkayacağım... böylelikle zamanın israf olmamış olur." #!String
+    Neutral_5: "Bütçemiz nasıl, @?" #!String
+    Neutral_6: "Acaba bugün kasabadakiler ne yapıyorlar?" #!String
+    Neutral_7: "Bugün içimden bir şey yapmak gelmiyor." #!String
+    Neutral_8: "Evi ne kadar temiz tutmaya çalışsam da kirleniyor.#$e#Sanırım çiftlik evleri biraz pis olabiliyor." #!String
+    Neutral_9: "Acaba hayatımız boyunca burada mı yaşayacağız?" #!String
+    Bad_0: "...Beni hâlâ seviyor musun?$s" #!String
+    Bad_1: "*iç çeker*... Sanırım erken evlendim.$s" #!String
+    Bad_2: "Benimle hâlâ mutlu musun?$s" #!String
+    Bad_3: "Yanlış bir şey mi yaptım? Son zamanlarda farklı davranıyorsun.$s" #!String
+    Bad_4: "Acaba yaşanacak başka bir şey var mı diye merak ediyor musun?$s" #!String
+    Bad_5: "Eskiden romantiktin... ne oldu?$s#$e#Eskisi kadar genç olmadığımın farkındayım... benimle bu yüzden mi evlenmiştin?$a" #!String
+    Bad_6: "Yaşanacak kısa bir hayatımız var... böyle yaşamak doğru mu?$s" #!String
+    Bad_7: "Eskiden senin bebeğindim... şimdi ise sadece güzel bir yemek yaptığımda beni seviyorsun.$s" #!String
+    Bad_8: "Son zamanlarda bana karşı soğuksun...$s" #!String
+    Bad_9: "Acaba daha iyi bir hayatım olabilir miydi diye düşünüyorum.$s" #!String
+    spring_2: "Bu mevsim ne ekiyoruz?" #!String
+    spring_1: "Dün gece yeni yılı harika kutladık...$l" #!String
+    spring_15: "*iç çeker*... Sanırım 'bahar temizliği' yapmanın zamanı geldi.$s" #!String
+    summer_1: "Ah, yaz... Böğürtlenlerin kokusunu şimdiden alabiliyorum.$h" #!String
+    summer_9: "Yapış yapış oldum... Tüm gece sıcaktan terledim." #!String
+    summer_2: "Yaz geldi... Bu da evi sineklerin basması anlamına geliyor.#$e#Merak etme, onların icabına bakacağım." #!String
+    fall_1: "Güzü yabani mantar toplama fırsatı için seviyorum. Fazla vaktimiz olmuyor." #!String
+    fall_20: "Kışa hazır mısın? Bir balya saman iyi olabilir mesela." #!String
+    fall_2: "Hasat vakti senin için yoğun oluyor. Elimden geldiğince yardım etmeye çalışacağım." #!String
+    winter_1: "Kristal meyvenin mevsimi olan kış geldi. Çok özel bir kokusu var, değil mi?" #!String
+    winter_7: "Yarın buzdan heykeller yapmak için sabırsızlanıyorum. Yılda sadece bir kere yapabilsem de aşırı eğleniyorum." #!String
+    winter_28: "Hey, bu kadehim %farm çiftliğinde geçireceğimiz harika yılımıza! Bugün biraz eğlenelim! [348]$h#$e#Önümüzdeki yıl harika geçecek, hissedebiliyorum." #!String
+

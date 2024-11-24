@@ -1,0 +1,85 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    UnderConstruction: "Construcción en curso." #!String
+    DismountBeforeEntering: "Desmonta antes de entrar." #!String
+    PiecesOfHay: "Cantidad de heno: {0}/{1}" #!String
+    AddedHay: "Has añadido {0} montones de heno al silo." #!String
+    MillFull: "No queda espacio." #!String
+    CantMill: "No se puede moler." #!String
+    NeedSilo: "Necesitas un silo." #!String
+    CantEnter: "No se puede entrar ahora mismo." #!String
+    WrongFishType: "Tu {0} no quiere vivir en un estanque de {1}." #!String
+    WrongFishTypeCoral: "{0} solo puede ser colocado en un estanque de {0}." #!String
+    CantPutInPonds: "El {0} no sería feliz aquí." #!String
+    NoFish: "Puedes colocar peces en este estanque." #!String
+    PondFull: "Este estanque está lleno." #!String
+    Paint_Region_Building: "Paredes" #!String
+    Paint_Region_Roof: "Tejado" #!String
+    Paint_Region_Trim: "Acabado" #!String
+    BuildingSkinMenu_ChooseAppearance: "Selecciona una apariencia para tu {0}." #!String
+    Construction_ChooseLocation: "¿Dónde quieres editar la construcción?" #!String
+    Barn_Name: "Establo" #!String
+    Barn_Description: "Alberga 4 animales de establo." #!String
+    BigBarn_Name: "Establo grande" #!String
+    BigBarn_Description: "Alberga 8 animales de establo. Permite a los animales dar a luz. Desbloquea las cabras." #!String
+    BigCoop_Name: "Corral grande" #!String
+    BigCoop_Description: "Alberga 8 animales de corral. Incluye una incubadora. Desbloquea los patos." #!String
+    BigShed_Name: "Cobertizo grande" #!String
+    BigShed_Description: "Dobla el tamaño del cobertizo. El interior puede decorarse." #!String
+    Cabin_Name: "Cabaña" #!String
+    Cabin_Description: "¡Un hogar para un amigo! Subvencionado por el fondo agrícola municipal." #!String
+    Coop_Name: "Corral" #!String
+    Coop_Description: "Alberga 4 animales de corral." #!String
+    DeluxeBarn_Name: "Establo de lujo" #!String
+    DeluxeBarn_Description: "Alberga 12 animales de establo. Incluye un sistema de autoalimentación. Desbloquea las ovejas y los cerdos." #!String
+    DeluxeCoop_Name: "Corral de lujo" #!String
+    DeluxeCoop_Description: "Alberga 12 animales de corral. Incluye un sistema de autoalimentación. Desbloquea los conejos." #!String
+    DesertObelisk_Name: "Obelisco del desierto" #!String
+    DesertObelisk_Description: "Te teletransporta al desierto." #!String
+    EarthObelisk_Name: "Obelisco terrestre" #!String
+    EarthObelisk_Description: "Te teletransporta a la montaña." #!String
+    FishPond_Name: "Estanque de peces" #!String
+    FishPond_Description: "Cría peces para recolectar su producción. Los peces se multiplican con el tiempo." #!String
+    GoldClock_Name: "Reloj de oro" #!String
+    GoldClock_Description: "Mantiene el suelo de tu granja libre de molestias. También impide que las vallas se deterioren." #!String
+    Greenhouse_Name: "Invernadero" #!String
+    Greenhouse_Description: "¡Un lugar para plantar cultivos de cualquier estación durante todo el año!" #!String
+    IslandObelisk_Name: "Obelisco de la Isla" #!String
+    IslandObelisk_Description: "Te teletransporta a Isla Jengibre." #!String
+    JunimoHut_Name: "Cabaña junimo" #!String
+    JunimoHut_Description: "Los junimos cosecharán por ti los cultivos que haya junto a la cabaña." #!String
+    Mill_Name: "Molino" #!String
+    Mill_Description: "Permite moler el trigo, las remolachas y el arroz." #!String
+    Shed_Name: "Cabaña" #!String
+    Shed_Description: "Un edificio vacío. ¡Llénalo con lo que quieras! El interior se puede decorar." #!String
+    ShippingBin_Name: "Cubo de entrega" #!String
+    ShippingBin_Description: "Mete objetos en su interior para venderlos durante la noche." #!String
+    Silo_Name: "Silo" #!String
+    Silo_Description: "Te permite segar y acumular hierba para alimentar a tus animales." #!String
+    SlimeHutch_Name: "Criadero de babas" #!String
+    SlimeHutch_Description: "Cría hasta 20 babas. Llena los abrevaderos y las babas crearán bolas de baba." #!String
+    Stable_Name: "Cuadra" #!String
+    Stable_Description: "Te permite tener un caballo y montar en él. Caballo incluido." #!String
+    WaterObelisk_Name: "Obelisco marino" #!String
+    WaterObelisk_Description: "Te teletransporta a la playa." #!String
+    Well_Name: "Pozo" #!String
+    Well_Description: "Te proporciona un lugar para rellenar tu regadera." #!String
+    PetBowl_Name: "Cuenco para mascota" #!String
+    PetBowl_Description: "Provee una casa destinada a una sola mascota." #!String
+

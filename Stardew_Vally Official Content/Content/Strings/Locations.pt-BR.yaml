@@ -1,0 +1,411 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    AdventureGuild_KillList_Header: "------------------------------\n--Metas de Erradicação de Monstros--\n\"Ajude-nos a manter o vale seguro.\"\n------------------------------" #!String
+    AdventureGuild_KillList_LineFormat: "{0}/{1} {2}" #!String
+    AdventureGuild_KillList_LineFormat_None: "{0}/{1} ????" #!String
+    AdventureGuild_KillList_LineFormat_OverTarget: "{0} {2} *" #!String
+    AdventureGuild_KillList_Slimes: "Gosmas" #!String
+    AdventureGuild_KillList_VoidSpirits: "Espíritos do Vazio" #!String
+    AdventureGuild_KillList_Bats: "Morcegos" #!String
+    AdventureGuild_KillList_Skeletons: "Esqueletos" #!String
+    AdventureGuild_KillList_CaveInsects: "Insetos das Cavernas" #!String
+    AdventureGuild_KillList_Duggies: "Cavadores" #!String
+    AdventureGuild_KillList_DustSprites: "Espíritos de Poeira" #!String
+    AdventureGuild_KillList_RockCrabs: "Caranguejos Rocha" #!String
+    AdventureGuild_KillList_Mummies: "Múmias" #!String
+    AdventureGuild_KillList_PepperRex: "Rex Pimenta" #!String
+    AdventureGuild_KillList_Serpent: "Serpentes" #!String
+    AdventureGuild_KillList_Footer: " -Procure por Gil para obter sua recompensa." #!String
+    AnimalHouse_Incubator_Hatch_VoidEgg: "Um novo pintinho nasceu... ele é meio estranho." #!String
+    AnimalHouse_Incubator_Hatch_RegularEgg: "Nasceu um novo pintinho!" #!String
+    AnimalHouse_Incubator_Hatch_DuckEgg: "Nasceu um novo patinho!" #!String
+    AnimalHouse_Incubator_Hatch_DinosaurEgg: "Um... lagartinho (?) nasceu." #!String
+    BeachNightMarket_Closed: "Abre às 5pm." #!String
+    BeachNightMarket_SubmarineInUse: "O submarino está sendo usado. Volte mais tarde." #!String
+    BeachNightMarket_GiftGiverClosed: "Comerciante: O mercado noturno começa às 5pm... visite-me nessa hora para tomar uma xícara de café grátis!" #!String
+    BeachNightMarket_GiftGiverQuestion: "Comerciante: Olá! Gostaria de tomar uma xícara de café?" #!String
+    BeachNightMarket_GiftGiverEnjoy: "Comerciante: Mmm... o cheiro está maravilhoso, não está?" #!String
+    BeachNightMarket_PainterClosed: "Famoso Pintor Lupini: Volte quando o mercado estiver aberto e você poderá comprar minhas obras." #!String
+    BeachNightMarket_PainterQuestion: "Famoso Pintor Lupini: Estou vendendo este quadro por 1200g. O que você me diz?" #!String
+    BeachNightMarket_PainterSold: "Famoso Pintor Lupini: Sinto muito... Não tenho mais quadros para vender hoje." #!String
+    BeachNightMarket_WarperQuestion: "Pessoa Encoberta: Posso enviar você para casa por 250g." #!String
+    Beach_FixBridge_Question: "Utilizar 300 peças de madeira para consertar a ponte?" #!String
+    Beach_FixBridge_Hint: "Huuum... Isso poderia ser consertado com 300 peças de madeira." #!String
+    Beach_GoneFishingMessage: "Fui pescar. Tô de volta amanhã." #!String
+    Beach_Mariner_Player_Male: "rapaz" #!String
+    Beach_Mariner_Player_Female: "moça" #!String
+    Beach_Mariner_PlayerMarried: "Velho marinheiro: Fico feliz do amuleto ter funcionado procê, {0}." #!String
+    Beach_Mariner_PlayerHasItem: "Velho marinheiro: Carma, sô. Mostra o amuleto pra quem cê quer que case co'cê." #!String
+    Beach_Mariner_PlayerNotUpgradedHouse: "Velho marinheiro: Seus olhos 'tão brilhanu, {0}. Ocê tá gostanu de alguém, né? Mas sabe... quem casa qué casa grande." #!String
+    Beach_Mariner_PlayerBuyItem_Question: "Velho marinheiro: Ah, dá pra ver nos seus zóios... Você tá gostanu de alguém. Pois eu tô vendenu um Pingente da Sereia. Dá ele pra quem ocê gosta e a pessoa vai ficar 'caidinha'." #!String
+    Beach_Mariner_PlayerBuyItem_AnswerYes: "Comprar (5000 ouros)" #!String
+    Beach_Mariner_PlayerBuyItem_AnswerNo: "Agora não..." #!String
+    Beach_Mariner_PlayerNoRelationship: "Velho marinheiro: Tenho esse amuleto velho pra vender... mais algo me diz que ocê num tá preparado, {0}." #!String
+    MineCart_Destination_Mines: "Minas" #!String
+    MineCart_Destination_Town: "Cidade" #!String
+    MineCart_Destination_BusStop: "Ponto de ônibus" #!String
+    MineCart_Destination_Quarry: "Pedreira" #!String
+    MineCart_Destination_Cancel: "Cancelar" #!String
+    MineCart_ChooseDestination: "Escolha o destino:" #!String
+    MineCart_OutOfOrder: "Quebrado" #!String
+    MineCart_DestinationWithPrice: "{0} ({1}g)" #!String
+    BusStop_BuyTicketToDesert: "Comprar uma passagem para o Deserto Calico por {0} ouros?" #!String
+    BusStop_DesertOutOfService: "O ônibus para o deserto Calico está quebrado." #!String
+    BusStop_NotEnoughMoneyForTicket: "Você não tem dinheiro." #!String
+    BusStop_NoDriver: "Volte quando houver um motorista presente." #!String
+    BusStop_ReturnToHorse1: "{0} está se perguntando por onde você andou." #!String
+    BusStop_ReturnToHorse2: "Seu leal cavalo aguarda pacientemente pelo seu retorno." #!String
+    Club_Bouncer_TextAboveHead1: "Agora estou zangado!" #!String
+    Club_Bouncer_TextAboveHead2: "Seu meliante..." #!String
+    CommunityCenter_AreaCompletion1: "Nós somos os Junimos... Guardiões da floresta." #!String
+    CommunityCenter_AreaCompletion2: "Esta casa esteve vazia por anos... As árvores se mudaram para cá e nós viemos junto." #!String
+    CommunityCenter_AreaCompletion3: "Ficaremos felizes em ajudar. Afinal, esta não é nossa casa." #!String
+    CommunityCenter_AreaCompletion4: "Tantos conjuntos lindos... obrigado! Obrigado!" #!String
+    CommunityCenter_AreaCompletion5: "Quando terminarmos aqui, vamos voltar para o outro mundo." #!String
+    CommunityCenter_AreaCompletion6: "O último conjunto... Adeus... {0}." #!String
+    CommunityCenter_JunimosReturned: "Os Junimos voltaram ao mundo dos espíritos." #!String
+    CommunityCenter_AreaName_BoilerRoom: "Sala da Caldeira" #!String
+    CommunityCenter_AreaName_BulletinBoard: "Mural de Recados" #!String
+    CommunityCenter_AreaName_CraftsRoom: "Sala de Artesanato" #!String
+    CommunityCenter_AreaName_FishTank: "Aquário" #!String
+    CommunityCenter_AreaName_Pantry: "Copa" #!String
+    CommunityCenter_AreaName_Vault: "Cofre" #!String
+    CommunityCenter_AreaName_AbandonedJojaMart: "Mercado Joja Abandonado" #!String
+    Desert_Return_Question: "Voltar ao Vale do Orvalho?" #!String
+    Desert_Return_Yes: "Sim" #!String
+    Desert_Return_No: "Ainda não" #!String
+    Farm_1SlimeEscaped: "Uma gosma escapou durante a noite." #!String
+    Farm_NSlimesEscaped: "{0} gosmas escaparam durante a noite." #!String
+    Farm_GrandpaNote: "{0}- Espere pelo meu retorno na madrugada do terceiro ano. -Vovô" #!String
+    Farm_GrandpaShrine_PlaceDiamond: "Você pôs o diamante no Santuário do Vovô." #!String
+    Farm_GrandpaShrine_DiamondSlot: "Tem um encaixe em forma de diamante no santuário... ele sempre esteve ali?" #!String
+    FarmHouse_SpouseAttacked1: "Quê?!..." #!String
+    FarmHouse_SpouseAttacked2: "Aaah!!" #!String
+    FarmHouse_SpouseAttacked3: "&@#$!!" #!String
+    FarmHouse_SpouseAttacked4: "Aiii!" #!String
+    FarmHouse_SpouseAttacked5: "Morra!" #!String
+    FarmHouse_SpouseAttacked6: "Suma!" #!String
+    FarmHouse_SpouseAttacked7: "Eca!" #!String
+    FarmHouse_SpouseAttacked8: "Tome isso!" #!String
+    FarmHouse_SpouseAttacked9: "Socorro!" #!String
+    FarmHouse_SpouseAttacked10: "Pegue sua espada!" #!String
+    FarmHouse_SpouseAttacked11: "Argh!" #!String
+    FarmHouse_SpouseAttacked12: "Gahh!" #!String
+    Forest_WizardTower_Locked: "Está trancado. Mas dá para ouvir alguém lá dentro." #!String
+    Forest_OpenedSewer: "Você destrancou a tampa do esgoto com a Chave Enferrujada!" #!String
+    Forest_HatMouseStore_Abandoned: "Parece abandonado..." #!String
+    DoorUnlock_NotFriend_Male: "Você ainda não é ${íntimo^íntima}$ o suficiente de {0} para entrar no quarto dele." #!String
+    DoorUnlock_NotFriend_Female: "Você não é ${íntimo^íntima}$ o suficiente de {0} para entrar no quarto dela." #!String
+    DoorUnlock_NotFriend_Couple: "Você não é ${íntimo^íntima}$ o bastante com {0} ou {1} para entrar no quarto deles." #!String
+    FarmHouse_Bed_GoToSleep: "Dormir por hoje?" #!String
+    MensLocker_WrongGender: "Este é o vestiário dos homens... você não pode entrar aí!" #!String
+    WomensLocker_WrongGender: "Este é o vestiário das mulheres... você não pode entrar aí!" #!String
+    Saloon_ColaMachine_Question: "Comprar uma Joja-Cola por 75 ouros?" #!String
+    IceCreamStand_ComeBackLater: "Volte quando alguém estiver trabalhando." #!String
+    IceCreamStand_NotSummer: "Fechado até o verão." #!String
+    WizardTower_WizardShrine: "Santuário das Ilusões. Fazer uma oferta de 500 ouros para mudar sua aparência?" #!String
+    SeedShop_BuyBackpack_Response2000: "Comprar (2.000 ouros)" #!String
+    SeedShop_BuyBackpack_Response10000: "Comprar (10.000 ouros)" #!String
+    SeedShop_BuyBackpack_ResponseNo: "Agora não" #!String
+    SeedShop_BuyBackpack_Question24: "Melhorar a mochila -- 24 espaços" #!String
+    SeedShop_BuyBackpack_Question36: "Melhorar a mochila -- 36 espaços" #!String
+    Club_Buy100Coins: "Comprar 100 moedas Qi por 1000 ouros?" #!String
+    Desert_SandDragon_Initial: "Sua mandíbula se escancarou no sol do deserto. Mesmo na morte, ele anseia por comida." #!String
+    Desert_SandDragon_ConsumeEssence: "Você coloca a essência na mandíbula do dragão. Só então percebe que há um bilhete escondido na órbita do olho:" #!String
+    Desert_SandDragon_MrQiNote: "\"Você provou seu valor, criança. Dê uma olhada na pilha de madeira próxima a sua casa. -Sr. Qi\"" #!String
+    Railroad_Box_Initial: "A caixa está vazia." #!String
+    Railroad_Box_ConsumeShell: "Você jogou a concha na caixa. Imediatamente, um bilhete cai das vigas acima:" #!String
+    Railroad_Box_MrQiNote: "\"Excelente. Sua próxima tarefa: Colocar 10 beterrabas dentro da geladeira do prefeito. - Sr. Qi\"" #!String
+    ManorHouse_LedgerBook_Singleplayer: "Livro de Contabilidade da Vila Pelicanos... Parece que o prefeito usa isso para acompanhar as finanças." #!String
+    ManorHouse_LedgerBook_NoFarmhands: "Se algum fazendeiro se juntar à sua fazenda, vocês vão poder transferir dinheiro entre si." #!String
+    ManorHouse_LedgerBook_SharedWallets_Client: "Livro de Contabilidade da Vila Pelicanos... O dono da fazenda pode requirir que o prefeito separe os fundos dos fazendeiros." #!String
+    ManorHouse_LedgerBook_SharedWallets_SeparateQuestion: "Separar os fundos de cada fazendeiro? Hoje à noite, o dinheiro vai ser separado por igual. Se mudar de ideia, volte aqui antes do dia acabar." #!String
+    ManorHouse_LedgerBook_SharedWallets_CancelQuestion: "Cancelar a separação dos fundos?" #!String
+    ManorHouse_LedgerBook_SeparateWallets_HostQuestion: "É o livro de contabilidade do prefeito. O que gostaria de fazer?" #!String
+    ManorHouse_LedgerBook_SendMoney: "Mandar Dinheiro" #!String
+    ManorHouse_LedgerBook_MergeWallets: "Juntar Fundos" #!String
+    ManorHouse_LedgerBook_CancelMerge: "Cancelar Juntar Fundos" #!String
+    ManorHouse_LedgerBook_Leave: "Sair" #!String
+    ManorHouse_LedgerBook_TransferCancel: "Cancelar" #!String
+    ManorHouse_LedgerBook_SeparateWallets_MergeQuestion: "Juntar os fundos de cada fazendeiro? Hoje à noite, o dinheiro de todos será combinado. Se mudar de ideia, volte aqui antes do dia acabar." #!String
+    ManorHouse_LedgerBook_SeparateWallets_CancelQuestion: "Cancelar a junção de fundos?" #!String
+    ManorHouse_LedgerBook_SeparateWallets_TransferQuestion: "Para quem você gostaria de mandar dinheiro?" #!String
+    ManorHouse_LedgerBook_SeparateWallets_HowMuchQuestion: "Quanto dinheiro gostaria de mandar?" #!String
+    ManorHouse_DivorceBook_NoSpouse: "Registro de casamentos da Vila Pelicanos... após o casamento, você poderá pedir o divórcio aqui. Mas esperamos que isto não seja necessário!" #!String
+    ManorHouse_DivorceBook_Question: "Pedir o divórcio? A taxa é de 50.000 ouros." #!String
+    ManorHouse_DivorceBook_CancelQuestion: "Cancelar seu divórcio?" #!String
+    ManorHouse_DivorceBook_Cancelled: "Seu pedido de divórcio foi cancelado." #!String
+    ManorHouse_DivorceBook_Filed: "Os papéis do seu divórcio foram preenchidos, mas seu cônjuge não vai saber até amanhã de manhã. Se mudar de ideia, volte aqui antes do fim da noite." #!String
+    ManorHouse_MayorFridge_Initial: "Essa é a geladeira do prefeito. Está cheia de leite e chá gelado." #!String
+    ManorHouse_MayorFridge_ConsumeBeets: "Rapidamente, você coloca as beterrabas na geladeira. Espere um segundo... há um bilhete colado no leite. Está endereçado a você:" #!String
+    ManorHouse_MayorFridge_MrQiNote: "\"Bom trabalho, criança. Sua última tarefa: Dar ao dragão da areia uma última refeição. -Sr. Qi\"" #!String
+    Tunnel_TunnelSafe_Initial: "É um cofre alimentado por bateria. Infelizmente, ele está sem bateria." #!String
+    Tunnel_TunnelSafe_ConsumeBattery: "Funcionou! O cofre se abre. Dentro, há um bilhete:" #!String
+    Tunnel_TunnelSafe_MrQiNote: "\"Tarefa Nº 1: levar uma concha arco-íris para a plataforma de trem. Deixe-a na caixa. -Sr. Qi\"" #!String
+    SkullCave_SkullDoor_Locked: "A porta está trancada." #!String
+    SkullCave_SkullDoor_Unlock: "Você insere a chave de caveira no buraco da fechadura. Ela se encaixou perfeitamente!" #!String
+    FarmHouse_Crib_NewbornSleeping: "{0} está dormindo." #!String
+    Farm_GreenhouseRuins: "O que quer que tenha sido, agora está em ruínas." #!String
+    Saloon_Arcade_Minecart_Menu: "= Carrinho dos Junimos =" #!String
+    Saloon_Arcade_Minecart_ProgressMode: "Modo de Progresso" #!String
+    Saloon_Arcade_Minecart_EndlessMode: "Modo Sem Fim" #!String
+    Saloon_Arcade_Minecart_Exit: "Sair" #!String
+    Saloon_Arcade_PK_NewGame+: "Pressione o botão para uma jornada mais difícil..." #!String
+    Saloon_Arcade_Minecart_Inactive: "Há uma fechadura em forma de caveira..." #!String
+    JoshHouse_Alex_Trash: "Há um monte de embalagens de barrinha de proteína." #!String
+    SamHouse_Sam_Trash: "Aparentemente, o Sam limpa a lixeira regularmente." #!String
+    SeedShop_Abigail_Drawers: "Está cheio de roupas... espera aí. Há uma espada escondida embaixo das roupas." #!String
+    Submarine_SubmergeQuestion: "Capitão: Olá! Gostaria de fazer um passeio nas profundezas do oceano? Vai custar 1.000g." #!String
+    Submarine_AscendQuestion: "Capitão: Vamos voltar para a superfície?" #!String
+    Submarine_Done: "Capitão: Voltamos! Não vá deixar peixes por aí." #!String
+    Mines_MineElevator_NotWorking: "Não parece estar funcionando..." #!String
+    Mines_LeaveMine: "Sair da mina" #!String
+    Mines_GoUp: "Subir um nível" #!String
+    Mines_DoNothing: "Não fazer nada" #!String
+    Mines_ResetMine: "Reiniciar seu progresso na mina?\n(Você vai voltar ao Level 1 da mina)." #!String
+    Club_CalicoJack_HS: "Esta mesa é para VIPs. É uma aposta de 1000 fichas." #!String
+    Club_CalicoJack: "Quer jogar um pouco de Calico Vinte-e-um? Esta é uma mesa de 100 fichas." #!String
+    Club_CalicoJack_Play: "Jogar" #!String
+    Club_CalicoJack_Leave: "Sair" #!String
+    Club_CalicoJack_Rules: "Regras" #!String
+    Club_QiCoins: "Você possui {0} Fichas." #!String
+    Club_QiCoins_BuyStarter: "Você possui 0 Fichas. Comprar um pacote de iniciante por 1000 ouros?" #!String
+    Club_ClubSeller: "Psst... Tenho uma \"Estátua da Riqueza Eterna\"... custa apenas 1.000.000 ouros. E aí?" #!String
+    Club_ClubSeller_Yes: "Vou levar!" #!String
+    Club_ClubSeller_No: "Nem pensar!" #!String
+    Club_ClubSeller_NotEnoughMoney: "Ei, eu disse 1.000.000 ouros! Isto não vai resolver." #!String
+    Secret_Note_Name: "Recado Secreto" #!String
+    Town_DwarfGrave_Translated: "     Você traduz a linguagem dos anões:\n\nFique entre os três pilares\nCom um presente precioso como o céu:\nUm arco-íris forjado da terra, não do mar.\nE, então, as galáxias ouvirão seu pedido.\n" #!String
+    Town_mgThiefMessage: "Cara Sombria: Opaaaaa! Você me pegou! Desculpa! Toma! Toma! Parecia ser tão valioso, eu não resisti..." #!String
+    Town_SpecialCharmQuestion: "Motorista: Ei, você... Preciso de um golpe de sorte... que tal você me trazer um 'pé de coelho'? Eu garanto que valerá a pena para você." #!String
+    Town_specialCharmNoFoot: "Motorista: Volte depois que encontrar um 'pé de coelho'." #!String
+    SeedShop_Yoba: "Altar de Ioba" #!String
+    ElliottHouse_ElliottBook_Blank: "Livro em branco" #!String
+    FestivalDay_DoorLocked: "Está trancado..." #!String
+    SeedShop_LockedWed: "Fechado às quartas-feiras." #!String
+    LockedDoor: "Está trancado..." #!String
+    LockedDoor_OpenRange: "Está trancado... (Aberto: {0} até {1})" #!String
+    LockedDoor_FriendsOnly: "Está trancado... Só os amigos de {0} podem entrar sem serem convidados." #!String
+    ScienceHouse_CarpenterMenu: "Como posso te ajudar?" #!String
+    ScienceHouse_CarpenterMenu_Shop: "Loja" #!String
+    ScienceHouse_CarpenterMenu_UpgradeHouse: "Aprimorar Casa" #!String
+    ScienceHouse_CarpenterMenu_CommunityUpgrade: "Aprimoramento da Comunidade" #!String
+    ScienceHouse_CarpenterMenu_Construct: "Construir Instalações na Fazenda" #!String
+    ScienceHouse_CarpenterMenu_Leave: "Sair" #!String
+    ScienceHouse_RobinAbsent: "Desculpe! A loja está fechada hoje... Estou lá na Caroline para o clube de aeróbica.\n\n-Robin" #!String
+    Blacksmith_Clint_Shop: "Loja" #!String
+    Blacksmith_Clint_Upgrade: "Melhorar Ferramentas" #!String
+    Blacksmith_Clint_Leave: "Sair" #!String
+    Blacksmith_Clint_Geodes: "Processar Geodos" #!String
+    AnimalShop_Marnie_Supplies: "Loja de Suprimentos" #!String
+    AnimalShop_Marnie_Animals: "Comprar Animais" #!String
+    AnimalShop_Marnie_Leave: "Sair" #!String
+    AnimalShop_Marnie_Absent: "Fechado por hoje.\n\n-Marnie" #!String
+    ArchaeologyHouse_Gunther_Donate: "Doar ao Museu" #!String
+    ArchaeologyHouse_Gunther_Collect: "Coletar Recompensas" #!String
+    ArchaeologyHouse_Gunther_Leave: "Sair" #!String
+    ArchaeologyHouse_Rearrange: "Gostaria de reorganizar a coleção do museu?" #!String
+    HaleyHouse_EmilyRoomObject: "Tem uma fita dentro: \"Música para Dança Livre\"" #!String
+    Club_Bouncer_PlayerClubMember: "Você pode entrar." #!String
+    Club_CalicoJack_Rules1: "O objetivo é chegar o mais próximo possível do número 21. As cartas vão de 1 a 9, com exceção da primeira carta, que pode ir até 11. Cada jogador começa com duas cartas, mas as cartas de quem distribuir ficam escondidas. Em cada rodada, você poderá escolher comprar um número aleatório entre 1 e 9 ou passar." #!String
+    Club_CalicoJack_Rules2: "Quando você passar, a carta escondida é revelada. Essa pessoa terá que tirar cartas até que o total alcance ou exceda 18. Se o total de um jogador exceder 21 em sua rodada, ele perderá. Se quem distribuir as cartas passar, todas as cartas serão reveladas e a maior pontuação vencerá." #!String
+    Club_CalicoJackHS_NotEnoughCoins: "Você precisa de pelo menos 1000 fichas para jogar aqui." #!String
+    Club_CalicoJack_NotEnoughCoins: "Ei, a aposta está fixada em 100 fichas. Você não possui o suficiente. Compre algumas fichas da máquina se quiser jogar." #!String
+    ScienceHouse_Carpenter_UpgradeHouse1: "Posso aumentar o tamanho da sua casa e adicionar uma cozinha. Vai custar cerca de 10.000 ouros e você terá que me fornecer 450 peças de madeira. Tem interesse?" #!String
+    ScienceHouse_Carpenter_UpgradeHouse2: "Posso aumentar o tamanho da sua casa e adicionar um berçário. Vai custar {0} ouros, e você precisará me dar {1} peças de madeira de lei. Tem interesse?" #!String
+    ScienceHouse_Carpenter_UpgradeHouse3: "Posso construir uma adega em sua casa. Ela poderá ser utilizada para envelhecer certos produtos, como vinho e queijo. Vai custar 100.000 ouros. Tem interesse?" #!String
+    ScienceHouse_Carpenter_CommunityUpgrade1: "...O que é isso? Você quer construir uma casa para a Pam? Essa é uma ótima ideia!^Só vou precisar de 950 Madeiras e 500.000g..." #!String
+    ScienceHouse_Carpenter_NotEnoughWood: "Desculpe... você tem o dinheiro, mas também preciso de {0} peças de madeira." #!String
+    ScienceHouse_Carpenter_NotEnoughHardwood: "Desculpe... você tem o dinheiro, mas também preciso de {0} peças de madeira de lei." #!String
+    Farm_WeedsDestruction: "As ervas daninhas que se espalharam causaram danos à sua fazenda." #!String
+    JojaMart_SignUp: "Se você se tornar um Membro Joja, o centro comunitário se tornará um Armazém Joja, e você não será capaz de reformá-lo. Entretanto, a Joja fornecerá outros meios para melhorar a cidade. Tem certeza de que deseja participar?" #!String
+    Mines_Infested: "Esta área está infestada..." #!String
+    Mines_Overrun: "Esta área está cheia de monstros." #!String
+    Mines_Fallen: "Você caiu {0} níveis." #!String
+    Mines_FallenFar: "Você caiu {0} níveis. Ai!" #!String
+    Mines_ShaftJumpIn: "Pular em" #!String
+    Mines_Shaft: "Tem um poço logo abaixo." #!String
+    Mountain_AdventurersGuildNote: "      * Clube de Aventureiros *\n\n    Somente Aventureiros comprovados." #!String
+    Railroad_TrainComing: "Um trem está passando pelo Vale do Orvalho." #!String
+    Town_SeedShopSign: "- Armazém do Pierre -\n\t  Agora aberto 7 dias por semana - das 9 às 17!" #!String
+    Town_JojaSign_Destroyed: "Falido." #!String
+    Town_PickupTruck: "É só a parte traseira da picape do Lewis..." #!String
+    Sewer_DogStatue: "-Estátua da Incerteza-^A estátua pode ajudar você a mudar de profissão.^Fazer uma oferta de 10.000g?" #!String
+    Sewer_DogStatueCancel: "Não, mudei de ideia..." #!String
+    Sewer_DogStatueQuestion: "Que profissões você gostaria de mudar?" #!String
+    Sewer_DogStatueAlready: "Esta habilidade já será alterada hoje à noite. Volte amanhã..." #!String
+    Sewer_DogStatueFinished: "*au* *au* (Pronto... hora de dormir...)" #!String
+    WitchHut_EvilShrineLeft: "-Altar Negro do Egoísmo- ^Seus filhos se transformarão em pombos e voarão...^Ofertar um fragmento prismático?" #!String
+    WitchHut_EvilShrineLeftInactive: "-Santuário Negro do Egoísmo- ^A estátua vê dentro de você..." #!String
+    WitchHut_EvilShrineCenter: "-Templo Negro da Memória- ^Seus relacionamentos com suas ex-esposas serão apagados da memória. Será como vocês nunca tivessem se conhecido.^Fazer uma oferenda de 30,000 ouros?" #!String
+    WitchHut_Goodbye: "Tchau, {0}." #!String
+    WitchHut_EvilShrineCenterInactive: "-Templo Negro da Memória- ^A estátua vê dentro de você..." #!String
+    WitchHut_EvilShrineRightActivate: "-Templo Negro dos Terrores Noturnos- ^O antigo selo-mágico de proteção será retirado, deixando que os monstros apareçam na sua fazenda a noite.^Dar como oferenda um Pão Estranho?" #!String
+    WitchHut_EvilShrineRightDeActivate: "\n\t\t\t-Templo Negro dos Terrores Noturnos- ^O antigo selo-mágico de proteção será restaurado, evitando com que monstros apareçam na sua fazenda a noite.^Dar como oferenda um Pão Estranho?" #!String
+    WitchHut_NoOffering: "Você não tem as oferendas necessárias." #!String
+    Sewer_MagicSeal: "Tem uma espécie de campo de força bloqueando seu caminho." #!String
+    Woods_Statue: "--Cannoli do Velho Mestre--\n...Sempre em busca do sabor mais doce..." #!String
+    ScienceHouse_CarpenterMenu_UpgradeCabin: "Aprimorar Casa" #!String
+    AdventureGuild_ItemRecovery: "Serviço de Recuperação de Itens" #!String
+    AdventureGuild_Greeting: "Precisa de algo?" #!String
+    ManorHouse_DivorceBook_Question_Krobus: "Expulsar o {0} de sua casa?" #!String
+    ManorHouse_DivorceBook_CancelQuestion_Krobus: "Cancelar sua expulsão?" #!String
+    ManorHouse_DivorceBook_Cancelled_Krobus: "Você mudou de ideia sobre expulsar {0}." #!String
+    ManorHouse_DivorceBook_Filed_Krobus: "Você decidiu expulsar {0} de sua casa. Se mudar de ideia, volte aqui antes do dia acabar." #!String
+    Theater_Poster_0: "Passando agora: \"{0}.\"" #!String
+    Theater_Poster_1: "\"{0}\"" #!String
+    Theater_Poster_Coming_Soon: "Em breve: \"{0}.\"" #!String
+    Theater_MovieEnd: "O filme terminou por hoje. Esperamos que tenha aproveitado o espetáculo!" #!String
+    Theater_MovieEndReEntry: "O filme terminou." #!String
+    HaleyHouse_SewingMachine: "É uma máquina de costura... Mas eu não sei como usar." #!String
+    HaleyHouse_DyePot: "Um conjunto de várias tintas coloridas." #!String
+    Caroline_Sunroom_Door: "Caroline só deixa seus amigos entrarem aqui..." #!String
+    Caroline_Tea_Event1: "Quando estou sozinha com um chá relaxante..." #!String
+    Caroline_Tea_Event2: "Minha mente fica vazia e livre para viajar..." #!String
+    Caroline_Tea_Event3: "Quem sabe o que pode acontecer?" #!String
+    Desert_Trader_Closed: "Fechado até o dia 18 para o Mercado Noturno da Vila Pelicanos." #!String
+    Farm_OtherPlayerMailbox: "Esta não é sua caixa de correio." #!String
+    BuyTicket: "Comprar uma passagem por {0}g?" #!String
+    IslandNorth_CaveHelp_0: "Socorro!" #!String
+    IslandNorth_CaveHelp_1: "Alguém ai?" #!String
+    IslandNorth_CaveHelp_2: "Estou preso!" #!String
+    IslandNorth_CaveHelp_3: "Por aqui!" #!String
+    IslandNorth_CaveTool_0: "Isso não vai funcionar." #!String
+    IslandNorth_CaveTool_1: "É muito fraco." #!String
+    IslandNorth_CaveTool_2: "Hmm..." #!String
+    IslandNorth_CaveTool_3: "Tente outra coisa." #!String
+    IslandNorth_Event_SafariManAppear: "tropical_island_day_ambient/-1000 -100/farmer 20 48 1/skippable/pause 1000/viewport 21 47 true/pause 1000/playSound thudStep/addTemporaryActor SafariGuy 16 32 22 45 2 true ???/move SafariGuy 0 3 3/pause 1000/speak SafariGuy \"Obrigado! Eu pensei que estava acabado... $h#$b#Eu estive preso nesta caverna por meses!\"/pause 500/faceDirection SafariGuy 2/pause 300/showFrame SafariGuy 16/pause 600/emote SafariGuy 28/speak SafariGuy \"...Mais uma salada de cogumelo das cavernas e eu estaria louco... *arrepio* ...tão borrachento...$s\"/pause 500/showFrame SafariGuy 0/pause 500/faceDirection SafariGuy 3/pause 500/translateName SafariGuy Strings\\NPCNames:ProfessorSnail/speak SafariGuy \"De qualquer forma... Eu sou o Professor Caracol.#$b#Eu estive conduzindo uma pesquisa sobre a fauna e a flora desta ilha por um ano. Que lugar extraordinário!\"/pause 400/faceDirection SafariGuy 2/pause 250/faceDirection SafariGuy 3/speak SafariGuy \"Bem, acho que vou voltar para a minha tenda para me refrescar um pouco. Devo estar cheirando à cogumelos...$s#$b#Ei... você deveria passar na minha tenda alguma hora! Uma pessoa empreendedora como você seria de grande ajuda em meus projetos... heee hee! Adeus.$h\"/pause 200/showFrame SafariGuy 17/pause 800/showFrame SafariGuy 12/pause 200/advancedMove SafariGuy true 1 0 0 4/pause 250/end position 20 48" #!String
+    IslandFieldOffice_Welcome_0: "Saudações!" #!String
+    IslandFieldOffice_Welcome_1: "Olá!" #!String
+    IslandFieldOffice_Welcome_2: "Oi!" #!String
+    IslandFieldOffice_Welcome_3: "Boas vindas!" #!String
+    IslandFieldOffice_Survey_Yes: "Pronto para relatar" #!String
+    IslandFieldOffice_Survey_Notyet: "Ainda não" #!String
+    IslandFieldOffice_Survey_Prompt_LeftPlant: "Relatório da Ilha -- Por favor, relate o número de flores roxas nesta ilha." #!String
+    IslandFieldOffice_Survey_PurpleFlower_Question: "Quantas flores roxas podem ser vistas na ilha?" #!String
+    IslandFieldOffice_Survey_PurpleFlower_Wrong: "Hmm... Este número não encaixa com os meus modelos de jeito nenhum... Talvez você devesse tentar de novo amanhã.$s" #!String
+    IslandFieldOffice_Survey_PurpleFlower_Correct: "Sim, sim... isso parece estar certo. Obrigado!$h" #!String
+    IslandFieldOffice_Survey_Prompt_RightPlant: "Relatório da Ilha -- Por favor, relate o número de estrelas-do-mar roxas presentes nesta ilha." #!String
+    IslandFieldOffice_Survey_PurpleStarfish_Question: "Quantas estrelas-do-mar roxas podem ser vistas na ilha?" #!String
+    IslandFieldOffice_Survey_Failed: "Hmm... Eu acho que você deveria dar uma pausa e tentar o relatório de novo amanhã..." #!String
+    IslandFieldOffice_Intro_Event: "fieldofficeTentMusic/-1000 -1000/farmer 4 10 0/skippable/addTemporaryActor SafariGuy 16 32 5 4 0 true character/translateName SafariGuy Strings\\NPCNames:ProfessorSnail/viewport 4 6 true/move farmer 0 -2 0/pause 1000/faceDirection SafariGuy 1 true/pause 50/faceDirection SafariGuy 2 true/pause 500/speak SafariGuy \"Ah... Pode entrar!\"/move farmer 2 0 0/move farmer 0 -4 3/faceDirection SafariGuy 1/pause 500/speak SafariGuy \"Boas-vindas ao meu escritório local.\"/faceDirection SafariGuy 2/faceDirection farmer 2/showFrame SafariGuy 16/emote SafariGuy 28/pause 500/speak SafariGuy \"Como pode ver... está bem vazio.$s#$b#Ficar preso naquela caverna foi um grande atraso para a minha pesquisa.$s\"/pause 50/showFrame SafariGuy 0/pause 200/faceDirection SafariGuy 1/pause 100/speak SafariGuy \"Mas é ai que você entra! Hee hee...$h\"/faceDirection farmer 3/emote farmer 8/speak SafariGuy \"Eu estou no ramo dos ossos, sabe...#$b#Ossos antigos, em particular... E esta ilha está cheia deles.#$b#Então se você encontrar qualquer osso, fossil, ou espécimes mumificadas nesta ilha, traga-os para a minha mesa, ok? Eu vou fazer valer a pena!$h\"/pause 200/faceDirection SafariGuy 1/end" #!String
+    ScienceHouse_CarpenterMenu_RenovateHouse: "Fazer Renovações na Casa" #!String
+    ScienceHouse_CarpenterMenu_RenovateCabin: "Fazer Renovações na Cabana" #!String
+    ScienceHouse_Renovation_RemoveCrib: "Remover Berço/Remove um berço da sua casa./Selecione um berço para remover." #!String
+    ScienceHouse_Renovation_BuildCrib: "Construir Berço/Constrói um berço na sua casa./Selecione um lugar para o berço." #!String
+    ScienceHouse_Renovation_OpenBedroom: "Abrir Quarto/Remove a parede separando seu quarto da sala de entrada./Selecione uma área para a renovação." #!String
+    ScienceHouse_Renovation_CloseBedroom: "Fechar Quarto/Constrói uma parede separando seu quarto da sala de entrada./Selecione uma área para renovação." #!String
+    ScienceHouse_Renovation_AddSouthernRoom: "Adicionar Cômodo ao Sul/Adiciona um cômodo ao sul do seu quarto./Selecione uma área para a renovação." #!String
+    ScienceHouse_Renovation_RemoveSouthernRoom: "Remover Cômodo ao Sul/Remove o cômodo ao sul do seu quarto./Selecione uma área para a renovação." #!String
+    ScienceHouse_Renovation_AddCornerRoom: "Adicionar Cômodo de Canto/Adiciona um cômodo no canto nordeste da casa./Selecione uma área para a renovação." #!String
+    ScienceHouse_Renovation_RemoveCornerRoom: "Remover Cômodo de Canto/Remove o cômodo no canto nordeste da casa./Selecione uma área para a renovação." #!String
+    Journal_Name: "Pedaço de Diário" #!String
+    Gourmand_Intro: "*Kribbibbit*... Quem ousa entrar no meu covil?|Ah... um humilde fazendeiro, que veio para cultivar as minhas terras... Que sorte!^Ah... uma humilde fazendeira, que veio para cultivar as minhas terras... Que sorte!|Oh, como as chuvas me abençoam!" #!String
+    Gourmand_RequestIntro: "*Gurrp*... Sabe... há muito tempo os meus campos fervilhavam de frutas e vegetais frescos...|Mas agora eu estou velho, e sem o vigor da minha juventude, meus campos viraram um mar de poeira...|*suspira*... O que eu daria para deleitar meus olhos naquele banquete de maravilhas mais uma vez...|E essa é a parte que você entra." #!String
+    Gourmand_RequestQuestion: "Ah... Você tem algo pra me mostrar?" #!String
+    Gourmand_RequestFailed: "*Kriibbitt*... Que ousadia é esta?! Você não cultivou aquilo que eu busco... Vá!" #!String
+    Gourmand_Request_0: "Você deve cultivar para mim... aquela maravilha doce, que é rosa e suculenta...|Não retire-a da terra! Eu desejo vê-la em seu estado natural..." #!String
+    Gourmand_Request_0_Success: "*Gurrrp*... Sim... Perfeito!|...Isso me lembra os dias de fartura de antigamente... dias ensolarados, quando as coisas eram mais doces...|*baba*... Oh, eu poderia dar uma grande mordida...|...Mas eu não vou fazer isso." #!String
+    Gourmand_Request_1: "Eu desejo ver a coisa amarela e longa, que pinica a pele, e que balança no vento." #!String
+    Gourmand_Request_1_Success: "*Gurrrp*... Sim... Perfeito!|Heh... Isto me lembra uma velha namorada... *gurp*...|Olha aqui... eu poderia te fazer cócegas com isto!|...Mas eu não vou." #!String
+    Gourmand_Request_2: "Eu quero ver a fruta ardente da terra, que faz o hálito feder..." #!String
+    Gourmand_Request_2_Success: "*Gurrrp*... Sim... Eu comi isto uma vez, há muito tempo atrás. Ela me deixou fedendo por dias...|...Me lembra o Papai, quando eu era apenas um girino...|Heh... eu poderia dar uma mordida, e produzir aquele aroma fétido novamente...|...Mas eu não vou." #!String
+    Gourmand_Reward: "*Kriibbitt*... Sim... Eu estou muito feliz.|Aqui... Isto é para você." #!String
+    Gourmand_LastReward: "*Kriibbitt*... Sim... Você me prestou um grande serviço. Você ajudou um velho sapo a relembrar suas memórias uma última vez...|Aqui está uma última recompensa para você, amigo.^Aqui está uma última recompensa para você, amiga." #!String
+    Gourmand_Finished: "*Kriibbitt*... Bom te ver de novo, amigo.^*Kriibbitt*... Bom te ver de novo, amiga.|Você tem a minha bênção para cultivar estas terras. Que as chuvas te acompanhem!" #!String
+    Gourmand_InProgress: "Ah... Eu vejo que você está cultivando o que eu procuro. Porém, ainda é uma criança. Volte quando estiver maduro..." #!String
+    Saloon_Arcade_Cowboy_Menu: "= Jornada do Rei da Pradaria =" #!String
+    Saloon_Arcade_Cowboy_Continue: "Continuar Jornada" #!String
+    Saloon_Arcade_Cowboy_NewGame: "Começar Nova Jornada" #!String
+    IslandHut_Event_ParrotBoyIntro: "continue/-1000 -1000/farmer 7 7 3/skippable/specificTemporarySprite removeSprite 777/addTemporaryActor ParrotBoy 16 32 5 2 2 true ???/pause 2000/viewport 5 7 true/pause 2000/emote ParrotBoy 8/pause 1500/message \"O garoto te observa com um olhar curioso...\"/pause 1500/animate ParrotBoy false true 500 17 0/playSound parrot_squawk/pause 1000/playSound parrot_squawk/pause 800/stopAnimation ParrotBoy/specificTemporarySprite parrotHutSquawk/pause 800/move farmer -2 0 0/pause 500/emote farmer 8/pause 1000/message \"Ele parece ser próximo dos papagaios.\"/pause 500/message \"Mas ele ainda é muito tímido para se aproximar de você.\"/pause 1400/faceDirection farmer 1/pause 500/message \"Talvez fazer amizade com os papagaios irá ganhar sua confiança?\"/pause 1000/end position 5 7" #!String
+    IslandSecret_Event_BirdieIntro: "tropical_island_day_ambient/-1000 -1000/farmer 20 58 3/skippable/addTemporaryActor Birdie 32 32 17 58 3 true ???/animate Birdie false true 1000 8 9/pause 1000/viewport 18 58 clamp true/pause 1000/emote Birdie 8/pause 1000/speak Birdie \"Oh... um visitante?#$b#Chegue mais perto, criança.\"/pause 400/move farmer -1 0 3/pause 300/emote Birdie 40/speak Birdie \"Eu não tenho um visitante há muitas luas...$s#$b#Eu quase me esqueci de como outras pessoas são!\"/pause 1000/speak Birdie \"Bem, acho que já que está aqui, eu posso pelo menos pedir um favor.\"/pause 500/textAboveHead Birdie \"Venha...\"/pause 500/playFramesAhead 3/stopAnimation Birdie/extendSourceRect Birdie reset/warp Birdie 18 58/viewport move 1 0 2000/move Birdie 0 -1 2/move Birdie 2 0 1/move farmer 1 0 1/pause 500/speak Birdie \"Você já viu aquele navio naufragado na costa sul?#$b# Meu marido era o capitão. Um pirata, ele era.#$b#Ele zarpou um dia, e nunca mais voltou. Eu levei três anos navegando em alto mar para encontrar os destroços.$s\"/emote Birdie 28/speak Birdie \"*suspira*...$s#$b#Eu estive aqui desde então, jovem.$s#$b#...Protegendo seus ossos...\"/faceDirection farmer 2 true/playSound batScreech/animate farmer false true 100 94/jump farmer/pause 1500/stopAnimation farmer/faceDirection farmer 0/faceDirection Birdie 2/speak Birdie \"Minha criança... Se eu pudesse sequer achar uma recordação dele, me traria tanta paz.$s\"/pause 400/textAboveHead Birdie \"Espere aqui...\"/move Birdie -1 0 0/move Birdie 0 -1 3/warp Birdie -100 -100/playSound doorClose/faceDirection farmer 0/faceDirection Birdie 2/pause 1000/playSound Ship/pause 1000/playSound Ship/playSound crafting/pause 1000/playSound doorClose/warp Birdie 20 56/move Birdie 0 1 2/speak Birdie \"Aqui, tome isso. É uma foto antiga que foi parar na praia.#$b#É tudo que eu tenho a oferecer... mas ainda assim, eu acho que te ajudará a achar o que eu procuro.\"/pause 500/unskippable/playSound coin/awardFestivalPrize memento true/pause 10/addQuest 130/pause 1700/end" #!String
+    IslandSecret_Event_BirdieFinished: "tropical_island_day_ambient/-1000 -1000/farmer 20 58 3/removeQuest 130/skippable/addTemporaryActor Birdie 32 32 17 58 3 true ???/animate Birdie false true 1000 8 9/pause 1000/viewport 18 58 clamp true/pause 2300/playMusic none/animate farmer true true 100 35/addObject 19 58 870/playSound sandyStep/pause 800/stopAnimation farmer/playFramesAhead 3/stopAnimation Birdie/extendSourceRect Birdie reset/warp Birdie 18 58/move Birdie 0 -1 2/move Birdie 1 0 2/pause 500/jump Birdie/pause 500/playMusic desolate/speak Birdie \"É dele...$s\"/emote Birdie 20/pause 1200/playSound coin/removeObject 19 58/showFrame Birdie 20/pause 2500/speak Birdie \"Heh... Ainda tem o cheiro dele, depois de todos esses anos...#$b#...aquele cheiro familiar e único...$h\"/pause 300/faceDirection farmer 2 true/playSound croak/animate farmer false false 350 104 105 104 105 104 105/pause 1000/faceDirection farmer 3/speak Birdie \"Sabe... Tem sido uma vida solitária aqui, criança... mas eu não me arrependo de nada.#$b#Eu estou muito bem aqui, perto do meu marido... e nós estaremos juntos em breve no futuro... hehe\"/pause 500/stopAnimation Birdie/move Birdie 0 1 3/playMusic tropical_island_day_ambient/faceDirection Birdie 1/quickQuestion #É uma coisa honrável de se fazer.#Ele se foi. Você devia viver sua vida.(break)speak Birdie \"Você tem uma grande sabedoria, criança.#$b#E você me trouxe grande paz... este medalhão irá me confortar pelo resto dos meus dias.$h\"(break)emote Birdie 28\\speak Birdie \"Uma mulher velha como eu? Eu acho que está tarde demais, jovem...$s#$b#Além disso... eu gosto daqui! É lindo e relaxante. E eu tenho um estoque infinito de peixes, ostras, e carne de macaco. Hehehe.$h#$b#...Eu estava brincando sobre a carne de macaco.\"/pause 1000/speak Birdie \"Agora... como eu posso te recompensar por isso?\"/jump Birdie/pause 500/speak Birdie \"Oh... Que tal eu te ensinar uma receita especial... Algo que eu descobri durante meus muitos anos aqui.\"/pause 1000/playSound reward/addCraftingRecipe Fairy Dust/message \"Aprendeu a fazer 'Pó de Fada'.\"/pause 1000/fork gotBirdieReward Strings\\\\Locations:alreadyGotNuts true/speak Birdie \"Você pode levar isso também...\"/awardFestivalPrize birdieReward true/pause 1000/speak Birdie \"Mesmo sem eu te conhecer, você deu o seu máximo para me ajudar.#$b#Abençoado seja!$h\"/emote Birdie 20/emote farmer 32/pause 1000/end" #!String
+    alreadyGotNuts: "pause 50/pause 50/pause 1000/speak Birdie \"Mesmo sem eu te conhecer, você deu o seu máximo para me ajudar.#$b#Abençoado seja!$h\"/emote Birdie 20/emote farmer 32/pause 1000/end" #!String
+    qiNutDoor: "Você escuta uma estranha voz atrás da porta...#'Só os maiores caçadores de nozes podem entrar aqui.'^    Seu progresso atual: {0}/100" #!String
+    BoatTunnel_DonateBatteries: "Doar 5 Conjuntos de Pilhas para reparar a máquina de bilhetes?" #!String
+    BoatTunnel_DonateHardwood: "Doar 200 madeiras de lei para reparar o casco?" #!String
+    BoatTunnel_DonateIridium: "Doar 5 barras de irídio para reparar a âncora?" #!String
+    BoatTunnel_DonateBatteriesHint: "Esta máquina pode ser reparada com 5 conjuntos de pilhas." #!String
+    BoatTunnel_DonateHardwoodHint: "O casco pode ser reparado com 200 peças de madeira de lei." #!String
+    BoatTunnel_DonateIridiumHint: "A âncora pode ser reparada com 5 barras de irídio." #!String
+    BoatTunnel_boatcomplete: "Todos os materiais foram encontrados!#O barco será reparado durante a noite." #!String
+    BoatTunnel_willyText_firstRide: "Ela está parecendo nova!" #!String
+    BoatTunnel_willyText_random0: "Desculpa se eu tô com cheiro de peixe, heh!" #!String
+    BoatTunnel_willyText_random1: "Ahoy!" #!String
+    AnimalHouse_Incubator_Hatch_Ostrich: "Um novo filhote de avestruz nasceu... é dos grandes!" #!String
+    FieldOfficeFinale: "distantBanjo/-1000 -1000/farmer 4 8 0/addCraftingRecipe Ostrich Incubator/addMailReceived fieldOfficeFinale/skippable/addTemporaryActor SafariGuy 16 32 3 8 0 true character/translateName SafariGuy Strings\\NPCNames:ProfessorSnail/pause 1000/viewport 4 6 true/pause 4000/speak SafariGuy \"Wow...#$b#Olha o quão longe chegamos!$h\"/faceDirection SafariGuy 1/speak SafariGuy \"A coleção está fantástica, e é tudo graças à você, @.\"/emote farmer 32/speak SafariGuy \"Aqui, como uma maneira de dizer 'obrigado', eu quero te ensinar uma coisa.\"/faceDirection farmer 3/pause 700/playSound reward/message \"Aprendeu a fazer 'Incubadora de Avestruz'\"/pause 400/speak SafariGuy \"Este aparelho permitirá que você cuide de avestruzes na sua fazenda. Coloque a incubadora em um celeiro, coloque um ovo de avestruz dentro, e espere...\"/faceDirection SafariGuy 0/speak SafariGuy \"Porém conseguir um ovo de avestruz já é outra história... Vou deixar que você se vire!\"/pause 400/faceDirection farmer 0/pause 500/speak SafariGuy \"Heh... Bem... agora o trabalho de verdade começa.#$b#Vou estudar estes ossos por vários anos!\"/faceDirection SafariGuy 1/faceDirection farmer 3/speak SafariGuy \"Adeus, @!\"/pause 600/end" #!String
+    NutHint_Squawk: "*Crrác*" #!String
+    NutHint_VolcanoLava: "Montanha de fogo... Escondida pelo rio de lava..." #!String
+    NutHint_BuriedArch: "Enterrada perto de ossos..." #!String
+    NutHint_Arch: "Ajude o homem na tenda..." #!String
+    NutHint_NorthBuried: "{0} escondidas no norte..." #!String
+    NutHint_WestBuried: "{0} escondidas no oeste..." #!String
+    NutHint_NorthHidden: "{0} escondidas no norte..." #!String
+    NutHint_HutTree: "Árvore muito perto..." #!String
+    NutHint_TigerSlime: "Gosmas listradas no oeste..." #!String
+    NutHint_MusselStone: "{0} presas nas pedras com casca na costa..." #!String
+    NutHint_IslandFarming: "{0} na fazenda ao oeste..." #!String
+    NutHint_WestHidden: "{0} escondidas no oeste..." #!String
+    NutHint_IslandFishing: "{0} dentro da água..." #!String
+    NutHint_VolcanoTreasure: "{0} escondidas nos tesouros da montanha de fogo..." #!String
+    NutHint_VolcanoBarrel: "{0} presas nas engenhocas da montanha de fogo..." #!String
+    NutHint_VolcanoMining: "{0} em pedras especiais na montanha de fogo..." #!String
+    NutHint_VolcanoMonsters: "{0} pegas de monstros na montanha de fogo..." #!String
+    NutHint_Journal: "Escondidas nas páginas do diário..." #!String
+    NutHint_SouthEastBuried: "{0} enterradas... Esconderijo dos Piratas..." #!String
+    NutHint_StardropPool: "Banhadas no coração da estrela..." #!String
+    NutHint_Caldera: "No topo da montanha de fogo..." #!String
+    NutHint_Gourmand: "Kribbit... Gurrrp..." #!String
+    NutHint_IslandShrine: "Santuário escondido na selva..." #!String
+    NutHint_GoldenCoconut: "Coisa dourada e dura no interior..." #!String
+    IslandSouth_ResortOpenSign: "O resort está aberto. Fechar temporariamente amanhã?" #!String
+    IslandSouth_ResortOpenWillCloseSign: "O resort vai fechar amanhã temporariamente. Deixar aberto?" #!String
+    IslandSouth_ResortClosedSign: "O resort está temporariamente fechado. Abrir amanhã?" #!String
+    IslandSouth_ResortClosedWillOpenSign: "O resort vai abrir amanhã. Deixar fechado?" #!String
+    IslandSouth_ResortWillOpenSign: "O resort ficará aberto amanhã." #!String
+    IslandSouth_ResortWillCloseSign: "O resort ficará fechado amanhã." #!String
+    ManorHouse_LAF_Check: "A caixa de 'Achados e Perdidos' da vila." #!String
+    ManorHouse_LAF_Check_OrdersUnlocked: "A caixa de 'Achados e Perdidos' da vila. Você pode coletar envios incompletos de pedidos especiais anteriores aqui." #!String
+    ManorHouse_LAF_DonationItems: "Colete itens perdidos e envios incompletos" #!String
+    ManorHouse_LAF_FarmhandItems: "Recuperar itens de fazendeiros offline" #!String
+    ManorHouse_LAF_FarmhandItemsQuestion: "De quem você gostaria de recuperar os itens?" #!String
+    FieldOfficeDonated_0: "Ah... Isto é um pedaço da história natural realmente interessante! Obrigado." #!String
+    FieldOfficeDonated_1: "Lindo! Estes ossos são exatamente o que estou procurando. Agora, deixa eu limpar minha lente de aumento..." #!String
+    FieldOfficeDonated_2: "Você se superou, @. Esta é uma das espécimes mais incríveis que eu já vi. Obrigado!$h" #!String
+    FieldOfficeDonated_3: "E pensar... gerações nasceram e se foram enquanto este pequeno osso estava escondido sob o solo. Agora ele é meu!" #!String
+    FieldOfficeDonated_Reward: "E olhe só pra isso! Com esta doação, nós temos mais um conjunto completo.$h#$b#Eu tenho algo te esperando atrás do balcão, quando estiver pronto!" #!String
+    Volcano_ShortcutOut: "Pegar o atalho para fora do vulcão?" #!String
+    SeedShop_MoneyBox: "Eu estou tirando uma folga para visitar a ilha. Por favor coloquem o dinheiro na caixa. Sem roubar!^     -Pierre" #!String
+    AnimalShop_MoneyBox: "Eu estou visitando a ilha hoje. Se precisar comprar alguma coisa, só coloque o dinheiro nessa caixa!^     -Marnie" #!String
+    Saloon_MoneyBox: "Eu estou cuidando do bar na Ilha Gengibre hoje, mas isso não vai impedir você de comprar alguma coisa!^     -Gus" #!String
+    ScienceHouse_MoneyBox: "Eu estou na ilha hoje, mas você ainda pode comprar o que quiser. É um sistema de honra!^     -Robin" #!String
+    ChallengeShrine_NotYetHard: "         --Altar do Desafio--^Retirar o selo mágico antigo de proteção, permitindo que monstros ascedam das profundezas?" #!String
+    ChallengeShrine_AlreadyHard: "         --Altar do Desafio--^Invocar um selo mágico antigo de proteção, retornando as minas à seu estado original?" #!String
+    ChallengeShrine_Activated: "Seu pedido será feito durante a noite." #!String
+    ChallengeShrine_AlreadyActive: "Você já fez um pedido." #!String
+    ChallengeShrine_OnQiChallenge: "Há um recado do Sr. Qi: ^ Eu temporariamente desabilitei este santuário. Volte amanhã!" #!String
+    Gil_Telephone: "Ei. 150 Espíritos de Magma? Estou impressionado.#$b#Então... eu vou te dar o número do telefone do Marlon. Ele não vai gostar, mas acho que você mereceu.#$b#Se algum dia você precisar usar o Serviço de Recuperação de Itens, mas não quer vir até aqui... é só dar um toque. Tranquilo?" #!String
+    AdventureGuild_KillList_MagmaSprite: "Espíritos de Magma" #!String
+    AnimalHouse_Incubator_HouseFull: "Um ovo está para chocar, mas a construção está cheia." #!String
+    ScienceHouse_Carpenter_CommunityUpgrade2: "...O que foi? Você quer que eu coloque alguns atalhos pelo vale? Tudo bem, eu consigo fazer isso!^Eu só vou precisar de 300,000g..." #!String
+    AnimalHouse_Incubator_Hatch_GoldenEgg: "Um pintinho dourado acabou de nascer!" #!String
+    SummitBoulder: "Parece ser impossível mexer..." #!String
+    Hint: "Dica" #!String
+    Backwoods_MonsterGrave: "Abigail tomou uma vida para me salvar...#Eu nunca vou me esquecer disso." #!String
+

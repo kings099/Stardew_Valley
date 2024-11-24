@@ -1,0 +1,386 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    AnimalShop.1: "これは…特大のおふとんベアだ！おもわず倒れこんでしまいたくなるほどふっかふかだ。" #!String
+    AnimalShop.2: "これは…特大のおふとんベアだ！おもわず倒れこんでしまいたくなるほどふっかふかだ。" #!String
+    AnimalShop.3: "ジュニモぬりえデラックス" #!String
+    AnimalShop.4: "家族の人形がそろってディナーテーブルについている。おや…おじいちゃんの人形だけ、なぜかベッドの下に押し込まれているようだ。" #!String
+    AnimalShop.5: "家族の人形がそろってディナーテーブルについている。おや…おじいちゃんの人形だけ、なぜかベッドの下に押し込まれているようだ。" #!String
+    AnimalShop.6: "マーニーのたんすをあさってみた。中身はほとんどロングドレスだが、2組だけ、茶色のサスペンダーが入っている。" #!String
+    AnimalShop.7: "マーニーのたんすをあさってみた。特に変わったものは入っていない。" #!String
+    AnimalShop.8: "ラジオを目覚ましがわりにつかっているようだ。" #!String
+    AnimalShop.9: "びっくり箱の人形が飛びだしたままになっている。人形の腕はグロテスクな方向に曲がり、うつろな目は宙に冷たいまなざしをそそいでいる。" #!String
+    AnimalShop.10: "メガステーションだ。ゲームソフトが入っているが、コードサルタンXLをつかったあとがある。どうやらチートしているようだ。" #!String
+    AnimalShop.11: "ニワトリの育てかた" #!String
+    AnimalShop.12: "絵や工作で散らかっている。" #!String
+    AnimalShop.13: "つかわれたあとがない。単なるコレクションのようだ。" #!String
+    AnimalShop.14: "小さなお絵かきセットだ。" #!String
+    AnimalShop.15: "アンティーク時計と、金色の小さなアクセサリーボックスだ。" #!String
+    AnimalShop.16: "ジャスはあまりこれをつかっていないようだ、" #!String
+    AnimalShop.17: "カギがかかっている。" #!String
+    AnimalShop.18: "おや…冷凍ピザだ。" #!String
+    AnimalShop.19: "だれかが野菜を切っていたらしい。だが、途中で放りだしたようだ。" #!String
+    AnimalShop.20: "なんでゴミ箱なんかのぞきこんでるの？$s" #!String
+    AnimalShop.21: "ピザの空き箱でいっぱいだ。" #!String
+    ArchaeologyHouse.1: "ゴトロ帝国の歴史" #!String
+    ArchaeologyHouse.2: "ゴトロ帝国との戦争は必要なのか？ P.W.クランサウザーが独自の視点で語る。" #!String
+    ArchaeologyHouse.3: "ジェム海をめぐる旅" #!String
+    ArchaeologyHouse.4: "スターデューバレーの地質学、その歴史" #!String
+    ArchaeologyHouse.5: "カリコ砂漠の動植物相" #!String
+    ArchaeologyHouse.6: "星図表" #!String
+    ArchaeologyHouse.7: "ぼろぼろだが、かわいらしさは残っている。" #!String
+    ArchaeologyHouse.8: "ちっちゃなスライムのおともだち" #!String
+    ArchaeologyHouse.9: "さあ、牧場にいってみよう。ニワトリがコッコッ、ブタがブーブー。ヤギがメエメエ鳴いてるよ。#アヒルはガアガア、ウサギはプウプウ。ウシはモーモー鳴いてるよ。" #!String
+    BathHouse_MensLocker.1: "ロッカーからひどいにおいがする。" #!String
+    BathHouse_MensLocker.2: "服を着たままシャワーを浴びるわけにはいかない！" #!String
+    BathHouse_MensLocker.3: "持ちあげるには腕力が足りない。" #!String
+    BathHouse_MensLocker.4: "アレックスのロッカーだ…ボディビルダーの写真がたくさんドアに貼ってある。" #!String
+    BathHouse_WomensLocker.1: "サニタリーグッズだ。" #!String
+    BathHouse_WomensLocker.2: "ペニーのロッカーだ。入浴用のフリル付き水着が入っている。" #!String
+    BathHouse_WomensLocker.3: "アビゲイルのロッカーだ。なんだかイヤなにおいがする。" #!String
+    Blacksmith.1: "カセットテープが入っている。“特選ブルースコレクション vol.2”" #!String
+    Blacksmith.2: "クリントの持ちものを物色してみた。鍛冶用エプロンの予備や雑誌数冊、古い剣1本、それに彼のお母さんが笑顔で写った写真がある。" #!String
+    Blacksmith.3: "クリントの持ちものを物色してみた。鍛冶用エプロンの予備や雑誌数冊、古い剣1本、それに彼のお母さんが笑顔で写った写真がある。" #!String
+    Blacksmith.4: "エミリーへ^きみはおれのことを友だちとしか考えてないと思う。^気づいてなくて当然だ。おれは恥ずかしがりやだから、きみに想いを伝える勇気がないんだ。^だからこうして手紙に書いてる。どうせ書いても、丸めて部屋の角に捨ててしまうだろうけど。" #!String
+    Blacksmith.5: "プロ仕様の溶鉱炉だ。中をのぞくと、溶けた金属がぶくぶく沸き立っているのが見える。" #!String
+    Blacksmith.6: "プロ仕様の溶鉱炉だ。中をのぞくと、溶けた金属がぶくぶく沸き立っているのが見える。" #!String
+    Blacksmith.7: "イリジウム合金製の金床。クリントがつくった一級品だ。" #!String
+    Blacksmith.8: "イリジウム合金製の金床。クリントがつくった一級品だ。" #!String
+    Blacksmith.9: "金属加工の設計図が束になっている。" #!String
+    Blacksmith.10: "すすでいっぱいだ。" #!String
+    BusStop.1: "` バス停^> ペリカンタウン" #!String
+    Club.1: "ウェルウィック： きょうはツイてねえなあ。うっぷ…ちょっと飲みすぎたかね。" #!String
+    Club.2: "男： なんだあ？こっちはいそがしいんだよ。きょうは調子がいいんだ。" #!String
+    ElliottHouse.1: "リアが描いた絵画だ。" #!String
+    ElliottHouse.2: "エリオットの書きもの机だ。メモ書きやくしゃくしゃに丸めた紙で散らかっている。" #!String
+    ElliottHouse.3: "棚はからっぽだ。" #!String
+    ElliottHouse.4: "エリオットは盆栽を仕立てている途中らしい。なかなかかっこいい！" #!String
+    ElliottHouse.5: "ミニヤシだ。カリコさばくから取りよせたようだ。" #!String
+    ElliottHouse.6: "エリオットは盆栽を仕立てている途中らしい。なかなかかっこいい！" #!String
+    Farm.1: "おじいちゃんのお墓" #!String
+    Farm_Combat.1: "おじいちゃんのお墓" #!String
+    Farm_Fishing.1: "おじいちゃんのお墓" #!String
+    Farm_Foraging.1: "おじいちゃんのお墓" #!String
+    Farm_Mining.1: "おじいちゃんのお墓" #!String
+    FishShop.1: "こじんまりした寝床につながっている。ここは立ち入り禁止だ。" #!String
+    FishShop.2: "釣り具箱だ。ルアーや浮き、釣り針や釣り糸がぎっしりつまっている。" #!String
+    FishShop.3: "フリゲート艦のミニチュアだ。" #!String
+    FishShop.4: "小さなピンクのエビが動きまわっている。" #!String
+    FishShop.5: "ビンの中はのたうつミミズでいっぱいだ。なんだかすごいにおいがする。" #!String
+    FishShop.6: "撒きエサ用のバケツだ。" #!String
+    FishShop.7: "どうやらカエルの卵みたいだ。" #!String
+    Forest.1: "` 牧場^> ペリカンタウン" #!String
+    Forest.2: "@ シンダーサップの森^> ペリカンタウン" #!String
+    HaleyHouse.1: "カギがかかっている。" #!String
+    HaleyHouse.2: "ヘイリーのタンスをチラッとのぞいた。服がぎっしり詰まっている。 " #!String
+    HaleyHouse.3: "ヘイリーのタンスをチラッとのぞいた。服がぎっしり詰まっている。 " #!String
+    HaleyHouse.4: "ミニおふとんベアだ！" #!String
+    HaleyHouse.5: "日記だ。めくってみたが、中は白紙のようだ。" #!String
+    HaleyHouse.6: "鉢植えにメモがついている。“わたしのこと覚えててね。- サンディ”" #!String
+    HaleyHouse.7: "1巻きの青い生地から、何枚が布が切りとってある。布には、ふちにそってもようが刺しゅうされているようだ。" #!String
+    HaleyHouse.8: "エミリーのパソコンだ。パスワードがかかっているため。のぞき見はできない。" #!String
+    HaleyHouse.9: "“トレンドを探せ！： ズズシティのストリートファッション”" #!String
+    HaleyHouse.10: "豪華な化粧台だ。あらゆるクリームや化粧品、各種パウダーがところせましと並んでいる。" #!String
+    HaleyHouse.11: "ヘイリーのカメラだ。" #!String
+    HaleyHouse.12: "“現代ダンス入門： フレイルダンス”" #!String
+    HaleyHouse.13: "“ゼロからつくる手づくり暗室”" #!String
+    HaleyHouse.14: "地球儀だ。あっ、スターデューバレーがある！" #!String
+    HaleyHouse.15: "オーブンから、焼き立てのカップケーキのような甘い香りがただよっている。" #!String
+    HaleyHouse.16: "カップケーキとミルク、かたくフタが閉まったピクルスのビンづめ、それにキヌアのサラダだ。" #!String
+    HaleyHouse.17: "愛しい娘たちへ^2人とも元気ですか。会えなくてさびしいです。2か月の滞在のあと、わたしたちはフェーン諸島を離れました。^すばらしいひとときでした…あなたたちも行ってみてはどうでしょうか。^健康的な食事と、電気料金の支払いを忘れないようにね！^^愛をこめて、母さんと父さんより" #!String
+    HaleyHouse.18: "「スーパーファッションガール」 マガジン" #!String
+    HarveyRoom.1: "フェーンギル共和国の戦闘機とゴトロ帝国の戦闘機がくらべてある。" #!String
+    HarveyRoom.2: "スターデューバレーのうつくしい空が見える。" #!String
+    HarveyRoom.3: "ハーヴィーがコレクションしている飛行機模型だ。" #!String
+    HarveyRoom.4: "ハーヴィーがコレクションしている飛行機模型だ。" #!String
+    HarveyRoom.5: "無線通信用の複雑な機械がおいてある。" #!String
+    HarveyRoom.6: "無線通信用の複雑な機械がおいてある。" #!String
+    HarveyRoom.7: "中にカセットテープが入っている。“クラシックジャズ・アンソロジー”" #!String
+    HarveyRoom.8: "“やってみよう！ひざの外科手術”" #!String
+    HarveyRoom.9: "“肺高血圧症 - 孤独な闘い”" #!String
+    HarveyRoom.10: "なにも見つけられなかった。手からイヤなにおいがする…" #!String
+    HarveyRoom.11: "よくつかいこまれている。" #!String
+    HarveyRoom.12: "インスタントや缶づめ食品でいっぱいだ。" #!String
+    HarveyRoom.13: "“対空通信の手順”" #!String
+    HarveyRoom.14: "なんのへんてつもないふつうのテレビだ。歴史チャンネルに合わせてある。" #!String
+    Hospital.1: "ヨバを信じる人たちを元気づけるために、ヨバのシンボルがかざってある。" #!String
+    Hospital.2: "サンプルが入ったビンだ。指はつっこまないほうがよさそう。" #!String
+    Hospital.3: "ここに手はつっこむのはやめておこう。使用済みの注射器やよごれた綿棒、ハーヴィーが患者の耳につっこんだノズルなどがたくさん放りこんである。" #!String
+    Hospital.4: "最近、生きることに悩んでいませんか？集中するのがむずかしくなっていませんか？そんな時にはプラボロキシノンをどうぞ。^（人によってはプラボロキシノンが合わないことがあります。不眠症、怒りっぽくなる、のどが腫れる、くちびるの色が抜ける、髪が抜ける、脳卒中などの副作用があるほか、ごくまれな確率（500人に1人の割合）で、骨が1本もしくは数本砕ける場合もあります。） " #!String
+    Hospital.5: "“感染拡大をふせぐために…くしゃみするときは口をふさごう！”" #!String
+    Hospital.6: "当診療所の診療行為は、フェーンギル共和国医療当局によって認可されています。" #!String
+    Hospital.7: "この鉢植え、植物が作りものだ！" #!String
+    JojaMart.1: "海鮮醤" #!String
+    JojaMart.2: "“メイプルソース”…ほとんどシロップそっくりだ！" #!String
+    JojaMart.3: "ノンシュガーマシュマロ" #!String
+    JojaMart.4: "辛さひかえめ ベビー向けタコスソース" #!String
+    JojaMart.5: "海鮮醤" #!String
+    JojaMart.6: "塩" #!String
+    JojaMart.7: "プロテインバー" #!String
+    JojaMart.8: "ノンシュガーキャンディ" #!String
+    JojaMart.9: "24穀パン" #!String
+    JojaMart.10: "“メイプル” シロップ" #!String
+    JojaMart.11: "ヘアジェル - エレクトリックブルー" #!String
+    JojaMart.12: "おばあちゃん印のBBQソース" #!String
+    JojaMart.13: "缶づめスープ" #!String
+    JojaMart.14: "ダブルバター牧場チップス" #!String
+    JojaMart.15: "Joja社万能ソース" #!String
+    JojaMart.16: "プレッツェルスナック" #!String
+    JojaMart.17: "Jojaダイエット - ヘルシーなお豆！砂糖たっぷりのソースでおいしい！" #!String
+    JojaMart.18: "プロテインシェイク" #!String
+    JojaMart.19: "11穀パン" #!String
+    JojaMart.20: "Dグレード クッキングオイル" #!String
+    JojaMart.21: "ヘアジェル - Xトリーム" #!String
+    JojaMart.22: "BBQソース ベリーマイルド" #!String
+    JojaMart.23: "自家製チュロスキット" #!String
+    JojaMart.24: "ホワイトブレッド 必須栄養素プラス" #!String
+    JojaMart.25: "BBQスモークハウスチップス メスキート風味" #!String
+    JojaMart.26: "Jojaダイエット - ヘルシーなお豆！砂糖たっぷりのソースでおいしい！" #!String
+    JojaMart.27: "マリナーラソース" #!String
+    JojaMart.28: "ハニーソース 100%ピュア“風味”" #!String
+    JojaMart.29: "白キノコソーダ" #!String
+    JojaMart.30: "飲めるアイシング" #!String
+    JojaMart.31: "発芽小麦パン" #!String
+    JojaMart.32: "部分水素化コーンオイル" #!String
+    JojaMart.33: "デンタルフロス" #!String
+    JojaMart.34: "BBQソース マイルド" #!String
+    JojaMart.35: "ハニーソース 100%ピュア“風味”" #!String
+    JojaMart.36: "エビの缶づめだ。" #!String
+    JojaMart.37: "シナモンシュガーチップス" #!String
+    JojaMart.38: "白キノコソーダ" #!String
+    JojaMart.39: "ジェノヴェーゼペースト" #!String
+    JojaMart.40: "イースト菌" #!String
+    JojaMart.41: "プロテインパウダー" #!String
+    JojaMart.42: "ツェッペリンココア" #!String
+    JojaMart.43: "オート麦パン" #!String
+    JojaMart.44: "合成バター - おどろきの安さ！" #!String
+    JojaMart.45: "マウスウォッシュ" #!String
+    JojaMart.46: "危険な辛さ！エマージェンシーソース" #!String
+    JojaMart.47: "イースト菌" #!String
+    JojaMart.48: "干しエビスナック" #!String
+    JojaMart.49: "シュガーコーンチップス" #!String
+    JojaMart.50: "アイスクリームコーン" #!String
+    JojaMart.51: "朝食パウダー - 水を加えるだけでOK！ （エッグ＆ポテト）" #!String
+    JojaMart.52: "ジッタージュース" #!String
+    JojaMart.53: "マヨレモンソース" #!String
+    JojaMart.54: "黒パン" #!String
+    JojaMart.55: "粉末クリーム" #!String
+    JojaMart.56: "歯みがき粉" #!String
+    JojaMart.57: "超絶激辛ブレイズソース" #!String
+    JojaMart.58: "アイスクリームコーン" #!String
+    JojaMart.59: "お手頃ワイン" #!String
+    JojaMart.60: "朝食パウダー - 水を加えるだけでOK！ （エッグ＆ポテト）" #!String
+    JojaMart.61: "ベジタリアン用ソーセージ" #!String
+    JojaMart.62: "星型シュガー" #!String
+    JojaMart.63: "粉末ワイン" #!String
+    JojaMart.64: "刺激的！ボムジュース" #!String
+    JojaMart.65: "ライ麦パン" #!String
+    JojaMart.66: "粉末バター" #!String
+    JojaMart.67: "ハンドソープ" #!String
+    JojaMart.68: "ヒリヒリ！痛辛ソース" #!String
+    JojaMart.69: "星型シュガー" #!String
+    JojaMart.70: "Xトリームチップス" #!String
+    JojaMart.71: "Xトリームチップス インフェルノ ソース味" #!String
+    JojaMart.72: "粉末ワイン" #!String
+    JojaMart.73: "ココナッツミート" #!String
+    JojaMart.74: "グミ" #!String
+    JojaMart.75: "缶づめスクランブルエッグ" #!String
+    JojaMart.76: "エイリアンエナジーブルー … いざ、宇宙へ！" #!String
+    JojaMart.77: "かむかむソフトキャンディ　グレープ味" #!String
+    JojaMart.78: "天然酵母パン" #!String
+    JojaMart.79: "Jojaオイル - 独自ブレンドのおいしいオイル。いろんな料理につかえます。" #!String
+    JojaMart.80: "Joja万能洗剤 -- 洗濯、お皿洗い、手洗い、シャンプー、歯磨き粉がわりにもつかえます！Jojaミールと混ぜればおいしいアイシングにも。" #!String
+    JojaMart.81: "激辛インフェルノソース" #!String
+    JojaMart.82: "グミ" #!String
+    JojaMart.83: "ピュアグルテンスライス" #!String
+    JojaMart.84: "缶づめスクランブルエッグ" #!String
+    JojaMart.85: "フルーツスナック" #!String
+    JojaMart.86: "魚の缶づめ … 歯のホワイトニング成分をソースに配合。" #!String
+    JojaMart.87: "ハイパージュース" #!String
+    JojaMart.88: "ロリポップ ストロベリーフレーバー" #!String
+    JojaMart.89: "パン" #!String
+    JojaMart.90: "なたね油" #!String
+    JojaMart.91: "衣料用洗剤 - 香り成分を10倍増量！" #!String
+    JojaMart.92: "辛口ファイアソース" #!String
+    JojaMart.93: "フルーツスナック" #!String
+    JojaMart.94: "Jojaミール…コーンミールに似た万能食品です。パンの材料やとろみつけ、甘みづけなど様々な用途につかえます。水を加えるだけで、絶品グレービーソースも簡単に。" #!String
+    JojaMart.95: "カルボコーン コーンのかたちのおいしいスナックで、あなたのおなかもきっと満足！" #!String
+    JojaMart.96: "魚の缶づめ … 歯のホワイトニング成分をソースに配合。" #!String
+    JojaMart.97: "カウボーイソース" #!String
+    JojaMart.98: "キノコのマリネ 真空パック入り" #!String
+    JojaMart.99: "缶づめ料理" #!String
+    JojaMart.100: "Jojaコーラ ハイボルテージ" #!String
+    JojaMart.101: "ブルーグリーン シュガーボール" #!String
+    JojaMart.102: "パンケーキ 個別包装パック入り" #!String
+    JojaMart.103: "エクストラピュアオイル オリーブ風味" #!String
+    JojaMart.104: "合成洗剤" #!String
+    JojaMart.105: "チリソース" #!String
+    JojaMart.106: "キノコのマリネ 真空パック入り" #!String
+    JojaMart.107: "缶入りパスタ" #!String
+    JojaMart.108: "コーンスターチ" #!String
+    JojaMart.109: "缶づめ料理" #!String
+    JoshHouse.1: "母さんへ^母さんがこれを読んでいるということは、わたしはもうこの世にいないんだね。つらい目にあわせちゃってごめんね。母さんと父さんのこと、ほんとうに愛してるよ。^どうかあんまり悲しまないでください。大丈夫、いまはヨバさまと共にいるから。^最後に。どうかアレックスをお願いします。あの子には家族が―ちゃんとした家族が必要だから。あの子はいい子よ。^ 愛をこめて ^クララ" #!String
+    JoshHouse.2: "ラジオは古いポピュラー音楽のチャンネルに合わせてある。" #!String
+    JoshHouse.3: "“プログリッドボール シーズン44： データ統計と順位 ”" #!String
+    JoshHouse.4: "“喪失との向きあい方”" #!String
+    JoshHouse.5: "“メガマッスル” マガジン" #!String
+    JoshHouse.6: "13キロのダンベルだ。" #!String
+    JoshHouse.7: "アレックスのタンスをのぞいてみた。中には服とヘアジェル、グリッドボールトレーディングカードの箱が入っている。" #!String
+    JoshHouse.8: "アレックスのタンスをのぞいてみた。中には服とヘアジェル、グリッドボールトレーディングカードの箱が入っている。" #!String
+    JoshHouse.9: "アレックスのグリッドボールヘルメットだ。アレックスはよく磨いているようだ。" #!String
+    JoshHouse.10: "グリッドボールだ。" #!String
+    JoshHouse.11: "冷蔵庫には食べものがたくさん入っている。" #!String
+    JoshHouse.12: "“四季のクッキーレシピ集”" #!String
+    JoshHouse.13: "“群青色の人生：ある炭鉱夫の回想録”" #!String
+    JoshHouse.14: "からっぽだ。" #!String
+    LeahHouse.1: "まだ制作中だ。" #!String
+    LeahHouse.2: "リアが描いた絵がたくさんある。ほとんどは風景画と、自然画の習作だ。" #!String
+    LeahHouse.3: "“自然とくらそう：実践ガイド”" #!String
+    LeahHouse.4: "“威圧的な人から身を守るには”" #!String
+    LeahHouse.5: "リアが制作中の木の彫刻だ。スギ材のかぐわしい香りがする。" #!String
+    LeahHouse.6: "メッセージはきていない。" #!String
+    ManorHouse.1: "町長はオーブンを掃除したほうがよさそうだ。" #!String
+    ManorHouse.2: "伝統的なティーセットだ。町長はお茶にうるさいらしい。" #!String
+    ManorHouse.3: "明日の夜、うちに来ない？^裏の窓からなら、誰にも気づかれずに入れる。^もっとあなたに会いたい。^あなたがいそがしいのはわかっているけど、もっと時間をつくってくれない？^明日来てくれるのを楽しみにしてます。^-M" #!String
+    Mountain.1: "` 線路 " #!String
+    Saloon.1: "ジョッキに半分ビールが入っている。" #!String
+    Saloon.2: "料理番組のチャンネルだ。料理のコツや料理対決、グルメレポートなどが24時間流れている。" #!String
+    SamHouse.1: "からっぽだ。" #!String
+    SamHouse.2: "タマゴ、パン、ニンジン、それにミルクだ。" #!String
+    SamHouse.3: "ジョディへ ^もうすぐ家に帰れるが、その前に伝えておきたいことがある。^帰ったおれは、きみが知っている男とはちがってしまっているかもしれない。ここで目にしたいろんなものはおれをぐちゃぐちゃにしてしまった。それ以来、ひとときも心が休まらないんだ。^きみを不安にさせたいわけじゃない。ただ、帰ってきたおれを見たときにショックを受けてほしくないんだ。^覚えていてほしい。たとえなにがあろうと、おれにとってはきみと子どもたちがいちばん大切なんだ。^^-ケントより" #!String
+    SamHouse.4: "チャンネルはニュースチャンネルに合わせてある。" #!String
+    SamHouse.5: "ギターのピックとスケボーの車輪だ。" #!String
+    SamHouse.6: "ハードタイプのヘアジェルがストックしてある。" #!String
+    SamHouse.7: "スケボー雑誌がたくさんある。" #!String
+    SamHouse.8: "“UFOミステリー”" #!String
+    SamHouse.9: "サムのエレキギターだ。2つのアクティブピックアップと、ワーミーバーがついている。" #!String
+    SamHouse.10: "--通信簿--^なまえ： ヴィンセント^^読解： C^作文： D^算数： C^社会： B-^図工： B-^体育： A^^先生からのコメント：ヴィンスはとてもいい子ですが、勉強はもうちょっとがんばってほしいですね！^ -ペニー" #!String
+    SamHouse.11: "サムのパソコンだ。パソコンゲーム用にライブラリが拡張してある。" #!String
+    SamHouse.12: "ヴィンセントのおもちゃが部屋中に散らかっている。" #!String
+    ScienceHouse.1: "宇宙のポスターだ。" #!String
+    ScienceHouse.2: "機械いじりが趣味のわりに、マルのパソコンはかなり古い。ファイルのバックアップにはまだフロッピーディスクを使っている。" #!String
+    ScienceHouse.3: "“2度目の結婚を成功させるには” “養父の子育てはじめの一歩”" #!String
+    ScienceHouse.4: "大工系の雑誌がいっぱいおいてある。" #!String
+    ScienceHouse.5: "“高等ニューラルネットワーク”" #!String
+    ScienceHouse.6: "カギがかかっている。" #!String
+    ScienceHouse.7: "いまマルが取り組んでいる装置だ。パッと見、すごくごちゃごちゃしている。" #!String
+    ScienceHouse.8: "季節ごとの星図表だ。" #!String
+    ScienceHouse.9: "ソーダがたくさんおいてある。" #!String
+    ScienceHouse.10: "元素の周期表だ。" #!String
+    ScienceHouse.11: "ロビンのオノだ。" #!String
+    ScienceHouse.12: "ビーカーが一式そろっている。" #!String
+    ScienceHouse.13: "双眼顕微鏡だ。" #!String
+    ScienceHouse.14: "双眼顕微鏡だ。" #!String
+    SebastianRoom.1: "ラジオの電源はオフだ。" #!String
+    SebastianRoom.2: "グラフィックノベルがおいてある。" #!String
+    SebastianRoom.3: "“ソラリオンクロニクル：ザ・ゲーム”" #!String
+    SeedShop.1: "“木製フルートのためのソナタ集 11曲”" #!String
+    SeedShop.2: "モルモットのデビッドだ。" #!String
+    SeedShop.3: "モルモットのデビッドだ。" #!String
+    SeedShop.4: "“スモールビジネス 続ける秘けつ”" #!String
+    SeedShop.5: "“子育ての手引き：思春期を乗りきる”" #!String
+    SeedShop.6: "新鮮な野菜やくだものでいっぱいだ。" #!String
+    SeedShop.7: "“アドベンチャーオブプレーリーキング コンソール版”" #!String
+    SeedShop.8: "“Joja社を止めろ 大企業の脅威 ”" #!String
+    SeedShop.9: "ピエール様へ^暗いニュースをお知らせするのは大変心苦しいのですが、あなた様の生活を大きく脅かす事態について、ぜひとも知らせるべきだと思い筆を取りました次第です。^このたびJoja社は、ペリカンタウンでの業務拡大を決定しました。^抗議活動は間に合いません。建築業者はすでに、Jojaマート新店舗の建設に着工しております。^^あなた様にとっては致命的なニュースでしょう。長年築いてきた事業…地域の顧客…それらがいま、強力無比で効率的な経済力を持った、成長著しい大企業の影におびやかされようとしているのです。なんという損失でしょうか！^^Jojaマートの新マネージャーとして、わたくしはあなた様の苦境に対して個人的な責任を感じております。ですのであなた様に向けて、Jojaマート食料品担当アシスタントとしてのポストをご用意させていただけないでしょうか。賃金は時給5Gからのスタートです。あなた様からの履歴書が届くことを楽しみにしております！^^-Jojaマート ペリカンタウン店^マネージャー モリス" #!String
+    SeedShop.10: "スピリットボードだ。" #!String
+    SeedShop.12: "食器棚はエクササイズ用品でいっぱいだ。" #!String
+    Town-Christmas.1: "診療所 - 午前9:00 - 午後3:00 まで" #!String
+    Town-Christmas.2: "古びてかすれてしまっている…" #!String
+    Town-Christmas.3: "“愛しいモナ”" #!String
+    Town-Christmas.4: " 博物館・図書館 - 開館時間 午前8:00 - 午後6:00 まで" #!String
+    Town-EggFestival.1: "診療所 - 午前9:00 - 午後3:00 まで" #!String
+    Town-EggFestival.2: "古びてかすれてしまっている…" #!String
+    Town-EggFestival.3: "“愛しいモナ”" #!String
+    Town-EggFestival.4: " 博物館・図書館 - 開館時間 午前8:00 - 午後6:00 まで" #!String
+    Town-Fair.1: "観光客： うっぷ…バーベキューサンドイッチ、もう食べられないよ…おなかいっぱいだ。" #!String
+    Town-Fair.2: "腕っぷしに自信はあるかい？こいつをぶったたいてみな！" #!String
+    Town-Fair.3: "診療所 - 午前9:00 - 午後3:00 まで" #!String
+    Town-Fair.4: "観光客： わあ、こんな大きな丸チーズはじめて見たよ。すごいなあ。" #!String
+    Town-Fair.5: "観光客： この谷、ほんときれいだね。バスでここまで長かったけど、ガマンしただけの価値はあったよ。サイモンはこういうの好きだよね…でしょ？" #!String
+    Town-Fair.6: "観光客： 雰囲気のいい町だね。なごやかで居心地よさそうだ。町の人たちもみんな仲がいいみたいだし。" #!String
+    Town-Fair.7: "古びてかすれてしまっている…" #!String
+    Town-Fair.8: " 博物館・図書館 - 開館時間 午前8:00 - 午後6:00 まで" #!String
+    Town-Halloween.1: "診療所 - 午前9:00 - 午後3:00 まで" #!String
+    Town-Halloween.2: "古びてかすれてしまっている…" #!String
+    Town-Halloween.3: "“愛しいモナ”" #!String
+    Town-Halloween.4: " 博物館・図書館 - 開館時間 午前8:00 - 午後6:00 まで" #!String
+    Town.1: "診療所 - 午前9:00 - 午後3:00 まで" #!String
+    Town.3: "古びてかすれてしまっている…" #!String
+    Town.4: "“愛しいモナ”" #!String
+    Town.5: " 博物館・図書館 - 開館時間 午前8:00 - 午後6:00 まで" #!String
+    Trailer.1: "“教師用指導書： 2年生用”" #!String
+    Trailer.2: "“マーシーと地下のお城”" #!String
+    Trailer.3: "“ソラリオンクロニクル”" #!String
+    Trailer.4: "カラになったビールのビンでいっぱいだ。" #!String
+    Trailer.5: "“妖精とジュニモの伝説”" #!String
+    WitchHut.1: "ここに住んだら、だれだってそうじが好きになるにちがいない！" #!String
+    WitchHut.2: "腕を突っこむのは、やめておいたほうがよさそうだ。" #!String
+    WitchHut.3: "ばい菌がびっしりついていそうな骨だ。さわらないでおこう。" #!String
+    WitchHut.4: "ビンのコルクを抜き、ただようにおいを吸い込んでみた。以外なことに、アプリコットとスパイスベリーを思わせるいい香りがする。" #!String
+    WitchHut.5: "田舎で呪おう！…いなか魔女のためのスペルブック" #!String
+    WitchHut.6: "目をあわせないようにしよう…" #!String
+    MovieTheater_CraneMan: "クレーンマン：今、しゃべれない…集中してるんだ。" #!String
+    MovieTheater_CraneOccupied: "クレーンゲームは他の人が使用中です。" #!String
+    MovieTheater_CraneMan2: "クレーンマン：もう少し…で取れた…" #!String
+    MovieTheater_Welwick: "ウェルウィック：ウーム、あまり人が集まっていないな…この映画に多額の投資をしたのに！" #!String
+    MovieTheater_Welwick2: "ウェルウィック：あなたの素晴らしい未来が見えます…この映画のチケットを沢山買えばです！" #!String
+    MovieTheater_ShortsMan: "コーナー男：ブルルッ、何か寒いなここ…ズボンはいてきて正解だったぜ！" #!String
+    MovieTheater_ShortsMan2: "コーナー男：オイ…その映画みたんだけど…落ち着け！ネタばらしはしないから。" #!String
+    MovieTheater_Mother: "女性：サイモン、健康になりたくないの？ *ため息*…オッケー…" #!String
+    MovieTheater_Mother2: "女性：リンゴのスライスなんてどう？いらない？*ため息*…オッケー…" #!String
+    MovieTheater_Child: "サイモン：ママ！キャンディが欲しい！（ゴックン）" #!String
+    MovieTheater_Child2: "シモン：お母さん！チョコレートポップコーンが欲しい！（ゴックン）" #!String
+    MovieTheater_Lupini: "ルピーニ：しろうとだね！そのセットのデザインはチョー普通だよ！" #!String
+    MovieTheater_Lupini2: "ルピーニ：しろうとだね！甥っ子の2回目のバースデーパーティーのホームビデオは、もっと良い撮り方だったよ！" #!String
+    MovieTheater_ConcessionMan: "映画ファン：うーん...おやつの選択肢が多すぎるなぁ！" #!String
+    MovieTheater_ConcessionMan2: "映画ファン：ああ、あのポップコーンを見て！おー、あの音...あの匂い！" #!String
+    MovieTheater_PurpleHairLady: "女性：どこかに行って...ダンナと付き合うので忙しいの！" #!String
+    MovieTheater_RedCapGuy: "男：うー、おぉ...ここに来るために厚着しすぎた..." #!String
+    MovieTheater_RedCapGuy2: "男：一番前に座ったけど、大きな間違いだった。" #!String
+    MovieTheater_Governor: "夫：谷の経済が発展していくのを見るのは素晴らしいことだ！" #!String
+    MovieTheater_Governor2: "夫：スープと映画のために、本当に妻を連れないといけないんだ！" #!String
+    MovieTheater_Gunther: "はい、チャットをしたいんだが、美術館に戻る必要があるんだ！" #!String
+    MovieTheater_Gunther2: "はい、@。ちょうど映画を見たところで、意見としては…悪くないよ！" #!String
+    MovieTheater_Marlon: "ギルは映画中ずっと寝てました...普通ですね。" #!String
+    MovieTheater_Marlon2: "それはおもしろかった...どう思う、ギル？#$b#...ギル？#$b#...気絶してる。" #!String
+    MovieTheater_Marcello: "マルセロ：なんて広がりなんだ！バーボンマヨネーズのために行くつもりだよ。へへ！" #!String
+    MovieTheater_Marcello2: "マルセロ：なんて広がりなんだ！12粒のスパイシーマスタードのために行くつもりだよ。へへ！" #!String
+    MovieTheater_Morris: "見てのとおり、映画館は大成功です！$h#$b#えっ…？ あなたの投資に対する見返りは？ まぁ、それは難しいね、ほら...ちょっと時間がかかるかも、あなたも分かってるだろうけど...（ブツブツ）$2" #!String
+    MovieTheater_Morris2: "あぁ、それはとっても大事な投資パートナーだ！ショーを楽しんだり、途中でJojaコーンのバッグを買うのをお忘れなく！$h" #!String
+    MovieTheater_CranePlay: "クレーンゲームをプレイする？（コスト {0}g）" #!String
+    IslandShrine_Shrine: "暗い雲が泣いた時、あなたの探求は始まる^伝説の4羽の宝石鳥を探し出して^毎日、北、南、東、西^扉の前に彼らの贈り物を並べるのです" #!String
+    Pirates1: "緑：いつもママのお気に入りだったのに！ワァァァアァアァ" #!String
+    Pirates2: "赤：マンマミーア！落ち着くんだ、ブラザー。ヤーウチ！" #!String
+    Pirates3: "着飾った海賊：（オホン）…ヤー。#…#…貫禄がないだって？#（はぁ）…#正直に言うと、本当は海賊にはなりたくないんだ。ヤシを育てたいのに。#残念だけど、ヤシの商売では稼げなくて…" #!String
+    Pirates4: "ブラックガル：ヤー、友よ。我々の秘密の入り江を見つけるとは、なかなか鋭い目を持っているな。ヨー、ホー！" #!String
+    Pirates5: "グリムパイレーツ：遥か海の彼方から、凍えるような物語、悪夢がお前を眠りに誘う…#オレが手を失ったのは真夜中のことだった…深海のどう猛な怪物に…#ヤー、本当のことだ…#…#…#……………#………………………………………#いや、ちょっとした冗談だ。本当はミキサーから卵のカラを拾おうとしたんだ。#ああ…私の素晴らしいケーキ作りの日々は終わってしまった…" #!String
+    Pirates6: "彼は呆然としている…" #!String
+    Pirates8: "バーテンダー：おい、あんた！…酒と料理は海賊のもんだ。" #!String
+    Pirates7_0: "ダーツマン：ダーツでもやるか？ダーツ20本できっちり301点だ。" #!String
+    Pirates7_1: "ダーツマン：もっと面白くしよう。ダーツ15本できっちり301点だ、できたら褒めてやるぜ、友よ！" #!String
+    Pirates7_2: "ダーツマン：ああ、また会えてうれしいよ、友よ！301点取れるかどうか見せてくれよ…ダーツは、10本だ！" #!String
+    Pirates7_3: "ダーツマン：よお！俺ほどじゃないが…スゴ腕の友よ！またダーツでもやるか？" #!String
+    Pirates7_Win_Perfect: "ダーツマン：おい、なんてこった！パーフェクトゲームだぜ！" #!String
+    Pirates7_Win: "ダーツマン：おい、やるじゃねえか！いい投げっぷりだ！" #!String
+    Pirates7_WinPrize: "ちょっとした土産だ。" #!String
+    Pirates7_WinNoPrize: "またいつでも来いよ！" #!String
+    Pirates7_Lose: "ダーツマン：ヤー…また次があるさ…" #!String
+    PirateBartender_PirateClothes: "バーテンダー：オイ！お前のような奴には会ったことがないぞ。だがお前は海賊のようだな、これは俺のおごりだ！ハーハー！" #!String
+    PirateBartender_PirateClothes_NoMore: "バーテンダー：戻って来たのか？ハーハー！もう十分だろう、兄弟…" #!String
+

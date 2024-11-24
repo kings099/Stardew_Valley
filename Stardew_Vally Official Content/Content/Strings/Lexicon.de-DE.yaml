@@ -1,0 +1,39 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    RandomNegativeItemNoun: "Müll#Schrott#Gerümpel#Krempel#Mist" #!String
+    RandomPositiveAdjective_Child: "cool#lustig#toll#nett#goldig#super#großartig" #!String
+    RandomPositiveAdjective_AdultMale: "interessant#aufregend#toll#lustig#großartig#fantastisch" #!String
+    RandomPositiveAdjective_AdultFemale: "wundervoll#prima#herzerwärmend#magisch#unglaublich#bezaubernd#unterhaltsam#hinreißend" #!String
+    RandomPositiveAdjective_PlaceOrEvent: "wundervoll#prima#herzerwärmend#magisch#unglaublich#bezaubernd#unterhaltsam#hinreißend" #!String
+    RandomDeliciousAdjective: "köstlich#lecker#wundervoll#zufriedenstellend#füllend#fabelhaft#appetitlich#herrlich" #!String
+    RandomDeliciousAdjective_Child: "lecker" #!String
+    RandomNegativeFoodAdjective_Child: "eklig" #!String
+    RandomNegativeFoodAdjective_Polite: "... interessant#... ungewöhnlich#... anders#... eigenwillig" #!String
+    RandomNegativeFoodAdjective: "scheußlich#ekelhaft#widerlich#abscheulich#unappetitlich#zum Kotzen#furchtbar#abstoßend#ekelerregend#schauderhaft#entsetzlich#verdorben" #!String
+    RandomSlightlyPositiveFoodAdjective: "ordentlich#gut#essbar" #!String
+    ChildTerm_Male: "Junge" #!String
+    ChildTerm_Female: "Mädchen" #!String
+    Pronoun_Male: "ihm" #!String
+    Pronoun_Female: "ihr" #!String
+    QuestionDialogue_Yes: "Ja" #!String
+    QuestionDialogue_No: "Nein" #!String
+    GenericPlayerTerm: "du" #!String
+    Possessive_Pronoun_Male: "sein" #!String
+    Possessive_Pronoun_Female: "ihr" #!String
+

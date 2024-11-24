@@ -1,0 +1,417 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Shirt_Name: "T-shirt" #!String
+    Shirt_Description: "Un simple T-shirt." #!String
+    ClassicOveralls_Name: "Salopette classique" #!String
+    ClassicOveralls_Description: "Un classique de l’agriculture." #!String
+    MintBlouse_Name: "Chemisier menthe" #!String
+    MintBlouse_Description: "Un joli chemisier vert clair." #!String
+    DarkShirt_Name: "T-shirt sombre" #!String
+    DarkShirt_Description: "Un T-shirt de couleur sombre." #!String
+    SkullShirt_Name: "T-shirt crâne" #!String
+    SkullShirt_Description: "Un T-shirt avec un crâne menaçant imprimé dessus." #!String
+    LightBlueShirt_Name: "T-shirt Bleu Clair" #!String
+    LightBlueShirt_Description: "Un T-shirt bleu clair." #!String
+    TanStripedShirt_Name: "T-shirt rayée" #!String
+    TanStripedShirt_Description: "Un T-shirt à rayures blanches." #!String
+    GreenOveralls_Name: "Salopette verte" #!String
+    GreenOveralls_Description: "Un classique de l’agriculture un peu moins populaire." #!String
+    GoodGriefShirt_Name: "T-shirt zig-zag" #!String
+    GoodGriefShirt_Description: "Un T-shirt avec un motif à zig-zag..." #!String
+    AquamarineShirt_Name: "T-shirt aigue-marine" #!String
+    AquamarineShirt_Description: "Un T-shirt aigue-marine." #!String
+    SuitTop_Name: "Haut de costume" #!String
+    SuitTop_Description: "Un haut élégant pour toutes sortes de célébrations." #!String
+    GreenBeltedShirt_1011_Name: "T-shirt vert avec ceinture" #!String
+    GreenBeltedShirt_1011_Description: "Un T-shirt vert avec une ceinture." #!String
+    LimeGreenStripedShirt_Name: "T-shirt rayé vert citron" #!String
+    LimeGreenStripedShirt_Description: "Un T-shirt vert citron à rayures blanches." #!String
+    RedStripedShirt_Name: "T-shirt rouge à rayures" #!String
+    RedStripedShirt_Description: "Un T-shirt rouge à rayures blanches." #!String
+    SkeletonShirt_Name: "T-shirt de squelette" #!String
+    SkeletonShirt_Description: "Un T-shirt avec une cage thoracique imprimé dessus." #!String
+    OrangeShirt_Name: "T-shirt orange" #!String
+    OrangeShirt_Description: "Un T-shirt orange." #!String
+    NightSkyShirt_Name: "T-shirt bleu nuit" #!String
+    NightSkyShirt_Description: "Un T-shirt qui vous rappellera le ciel nocturne." #!String
+    MayoralSuspenders_Name: "Bretelles du Maire" #!String
+    MayoralSuspenders_Description: "Une paire de bretelles terriblement familière..." #!String
+    BrownJacket_Name: "Veste marron" #!String
+    BrownJacket_Description: "Une belle veste en tissu marron." #!String
+    SailorShirt_Name: "Chemise de marin" #!String
+    SailorShirt_Description: "Vous rappellera l’air de la mer." #!String
+    GreenVest_Name: "Gilet vert" #!String
+    GreenVest_Description: "Un joli gilet vert par-dessus une chemise." #!String
+    YellowandGreenShirt_Name: "T-shirt jaune et verte" #!String
+    YellowandGreenShirt_Description: "Un T-shirt jaune avec une rayure verte." #!String
+    LightBlueStripedShirt_Name: "T-shirt à rayures bleu clair" #!String
+    LightBlueStripedShirt_Description: "Un T-shirt bleu clair avec une rayure blanche." #!String
+    PinkStripedShirt_Name: "T-shirt rose à rayures" #!String
+    PinkStripedShirt_Description: "Un T-shirt rose à rayures." #!String
+    WorkShirt_Name: "Chemise de travail" #!String
+    WorkShirt_Description: "Pour les longues journées dans les champs." #!String
+    StoreOwnersJacket_Name: "Veste de commerçant" #!String
+    StoreOwnersJacket_Description: "Une veste qui ressemble à celle portée par un commerçant de village." #!String
+    GreenTunic_Name: "Tunique verte" #!String
+    GreenTunic_Description: "Une chemise digne d’un aventurier." #!String
+    FancyRedBlouse_Name: "Chemisier rouge élégant" #!String
+    FancyRedBlouse_Description: "Un chemisier rouge vif orné de boutons brillants jaunes." #!String
+    PlainShirt_Name_Female: "T-shirt uni (F)" #!String
+    PlainShirt_Name_Male: "T-shirt uni (H)" #!String
+    PlainShirt_Description: "Un T-shirt simple." #!String
+    RetroRainbowShirt_Name: "T-shirt vintage arc-en-ciel" #!String
+    RetroRainbowShirt_Description: "Un simple T-shirt avec un motif arc-en-ciel délavé." #!String
+    LimeGreenTunic_Name: "Tunique Vert Citron" #!String
+    LimeGreenTunic_Description: "Une tunique d’un vert vif avec une ceinture." #!String
+    NeatBowShirt_Name: "Chemise à noeud papillon" #!String
+    NeatBowShirt_Description: "Une jolie chemise boutonnée avec un noeud papillon bien noué." #!String
+    ShirtAndTie_Name: "Chemise cravate" #!String
+    ShirtAndTie_Description: "Une chemise blanche avec une cravate." #!String
+    EmilysMagicShirt_Name: "Chemise magique d’Emily" #!String
+    EmilysMagicShirt_Description: "Cousue avec amour par Emily. Colorée avec un colorant naturel !" #!String
+    StripedShirt_Name: "T-shirt à rayures" #!String
+    StripedShirt_Description: "C’est un T-shirt à fines rayures." #!String
+    TankTop_Name_Female: "Débardeur (F)" #!String
+    TankTop_Name_Male: "Débardeur (H)" #!String
+    TankTop_Description: "Un t-shirt sans manches." #!String
+    CowboyPoncho_Name: "Poncho de cow-boy" #!String
+    CowboyPoncho_Description: "Une tenue légendaire de l’ouest." #!String
+    CropTankTop_Name_Female: "Débardeur court (F)" #!String
+    CropTankTop_Name_Male: "Débardeur court (H)" #!String
+    CropTankTop_Description: "Un t-shirt sans manches avec une coupe très courte." #!String
+    BikiniTop_Name: "Haut de bikini" #!String
+    BikiniTop_Description: "Un incontournable de l’été." #!String
+    WumbusShirt_Name: "T-shirt de Wumbus " #!String
+    WumbusShirt_Description: "Un T-shirt avec un étrange gars vert imprimé dessus." #!String
+    80sShirt_Name_Female: "T-shirt des années 80 (F)" #!String
+    80sShirt_Name_Male: "T-shirt des années 80 (H)" #!String
+    80sShirt_Description: "Un t-shirt avec un noeud qui tombe sur l’épaule." #!String
+    LettermanJacket_Name: "Veste de sportif" #!String
+    LettermanJacket_Description: "Une veste qui déborde d’esprit d’équipe." #!String
+    BlackLeatherJacket_Name: "Veste en cuir noir" #!String
+    BlackLeatherJacket_Description: "Une veste cool en cuir noir foncé." #!String
+    StrappedTop_Name: "Débardeur à fines bretelles" #!String
+    StrappedTop_Description: "Un haut avec de fines bretelles." #!String
+    ButtonDownShirt_Name: "Chemise" #!String
+    ButtonDownShirt_Description: "Une chemise simple et propre." #!String
+    CropTopShirt_Name: "T-shirt court" #!String
+    CropTopShirt_Description: "Un T-shirt avec une coupe très courte." #!String
+    TubeTop_Name: "Bustier" #!String
+    TubeTop_Description: "Un haut sans bretelles qui enveloppe le haut du corps." #!String
+    TieDyeShirt_Name: "Chemise tie-dye" #!String
+    TieDyeShirt_Description: "Une chemise qui a été attachée puis trempée dans des teintures de plusieurs couleurs." #!String
+    SteelBreastplate_Name: "Cuirasse en acier" #!String
+    SteelBreastplate_Description: "Cuirasse décorative en acier." #!String
+    CopperBreastplate_Name: "Cuirasse en cuivre" #!String
+    CopperBreastplate_Description: "Cuirasse décorative en cuivre." #!String
+    GoldBreastplate_Name: "Cuirasse en or" #!String
+    GoldBreastplate_Description: "Cuirasse décorative en or." #!String
+    IridiumBreastplate_Name: "Cuirasse en iridium" #!String
+    IridiumBreastplate_Description: "Cuirasse décorative en iridium." #!String
+    FakeMusclesShirt_Name: "T-shirt de faux muscles" #!String
+    FakeMusclesShirt_Description: "Vous pouvez aller à la gym ou simplement porter ceci à la place." #!String
+    FlannelShirt_Name: "Chemise en flanelle" #!String
+    FlannelShirt_Description: "Une belle chemise épaisse à boutons avec un motif quadrillé. Parfait pour les hivers froids." #!String
+    BomberJacket_Name: "Blouson d’aviateur" #!String
+    BomberJacket_Description: "Veste épaisse et robuste portée par les pilotes de chasse depuis longtemps." #!String
+    CavemanShirt_Name: "T-shirt d’homme des cavernes" #!String
+    CavemanShirt_Description: "Un classique de l’âge de pierre !" #!String
+    FishingVest_Name: "Gilet de pêche" #!String
+    FishingVest_Description: "Beaucoup de poches pour ranger votre matériel." #!String
+    FishShirt_Name: "Chemise à poisson" #!String
+    FishShirt_Description: "Une chemise avec un logo de poisson dessus" #!String
+    ShirtAndBelt_Name: "Chemise et ceinture" #!String
+    ShirtAndBelt_Description: "Une chemise unie avec une ceinture marron." #!String
+    GrayHoodie_Name: "Veste à capuche grise" #!String
+    GrayHoodie_Description: "Une veste à capuche grise sportive." #!String
+    BlueHoodie_Name: "Veste à capuche bleue" #!String
+    BlueHoodie_Description: "Une veste à capuche bleue sportive." #!String
+    RedHoodie_Name: "Veste à capuche rouge" #!String
+    RedHoodie_Description: "Une veste à capuche rouge sportive" #!String
+    DenimJacket_Name: "Veste en jean" #!String
+    DenimJacket_Description: "Une veste robuste en jean." #!String
+    TrackJacket_Name: "Veste de survêtement" #!String
+    TrackJacket_Description: "Une veste légère et élastique." #!String
+    WhiteGi_Name: "Kimono blanc" #!String
+    WhiteGi_Description: "Un vêtement ample généralement porté par ceux qui pratiquent les arts martiaux." #!String
+    OrangeGi_Name: "Kimono orange" #!String
+    OrangeGi_Description: "Un vêtement ample généralement porté par ceux qui pratiquent les arts martiaux." #!String
+    GrayVest_Name: "Gilet gris" #!String
+    GrayVest_Description: "Un gilet gris sur une chemise blanche." #!String
+    KelpShirt_Name: "Chemise d’algues" #!String
+    KelpShirt_Description: "On dirait que vous revenez d’une bonne nage en mer. Ça en a l’odeur aussi." #!String
+    StuddedVest_Name: "Veste cloutée" #!String
+    StuddedVest_Description: "Une veste noire couverte de pointes en métal." #!String
+    GaudyShirt_Name: "Chemise tape-à-l’oeil" #!String
+    GaudyShirt_Description: "C’est un bleu thérapeutique..." #!String
+    OasisGown_Name: "Tenue oasis" #!String
+    OasisGown_Description: "Le joyau du désert." #!String
+    BlacksmithApron_Name: "Tablier de forgeron" #!String
+    BlacksmithApron_Description: "Transmis de génération en génération." #!String
+    HighWaistedShirt_DyeableBottom_Name: "Ensemble à taille haute" #!String
+    HighWaistedShirt_DyeableBottom_Description: "Le style de pantalon à taille haute, avec un bas pouvant être teint." #!String
+    HighWaistedShirt_DyeableTop_Name: "Ensemble à taille haute" #!String
+    HighWaistedShirt_DyeableTop_Description: "Le style de jean à taille haute, avec un haut pouvant être teint. " #!String
+    BasicPullover_Name_Female: "Pull simple (F)" #!String
+    BasicPullover_Name_Male: "Pull simple (H)" #!String
+    BasicPullover_Description: "C’est un pull simple uni." #!String
+    TurtleneckSweater_Name: "Pull à col roulé" #!String
+    TurtleneckSweater_Description: "Gardez le cou au chaud." #!String
+    IridiumEnergyShirt_Name: "T-shirt en iridium" #!String
+    IridiumEnergyShirt_Description: "Montrez votre énergie avec ce T-shirt en iridium." #!String
+    TunnelersJersey_Name: "Maillot des Tunneliers" #!String
+    TunnelersJersey_Description: "C’est un maillot pour les Tunneliers de Zuzu Ville." #!String
+    GraySuit_Name: "Costume gris" #!String
+    GraySuit_Description: "C’est un costume gris sur mesure." #!String
+    RedTuxedo_Name: "Costard rouge" #!String
+    RedTuxedo_Description: "Un haut élégant pour les événements officiels." #!String
+    NavyTuxedo_Name: "Costard bleu marine" #!String
+    NavyTuxedo_Description: "Un haut élégant pour les événements officiels." #!String
+    HolidayShirt_Name: "Chemise de fête" #!String
+    HolidayShirt_Description: "Pour célébrer la fête de l’étoile d’hivernale." #!String
+    LeafyTop_Name: "Haut en feuilles" #!String
+    LeafyTop_Description: "De vraies feuilles ornent ce vêtement." #!String
+    GoodnightShirt_Name: "Chemise de nuit" #!String
+    GoodnightShirt_Description: "Une grande chemise de nuit ample avec une lune imprimée dessus." #!String
+    GreenBeltedShirt_1189_Name: "T-shirt vert avec ceinture" #!String
+    GreenBeltedShirt_1189_Description: "Un T-shirt vert avec une ceinture." #!String
+    HappyShirt_Name: "T-shirt de bonne humeur" #!String
+    HappyShirt_Description: "C’est le T-shirt le plus heureux au monde." #!String
+    ShirtwithBow_Name: "Chemise avec un noeud" #!String
+    ShirtwithBow_Description: "Cette chemise est livrée avec un petit noeud autour du cou." #!String
+    JesterShirt_Name: "Chemise de bouffon" #!String
+    JesterShirt_Description: "Laissez sortir votre clown intérieur." #!String
+    OceanShirt_Name: "T-shirt océan" #!String
+    OceanShirt_Description: "T-shirt qui rappelle les ondulations de l’eau." #!String
+    DarkStripedShirt_Name: "T-shirt à rayures colorées" #!String
+    DarkStripedShirt_Description: "Un T-shirt foncé à rayures colorées." #!String
+    BandanaShirt_1195_Name: "T-shirt à bandana" #!String
+    BandanaShirt_1195_Description: "Un T-shirt avec un bandana qui gardera votre cou très propre." #!String
+    BackpackShirt_Name: "T-shirt de sac à dos" #!String
+    BackpackShirt_Description: "Un T-shirt unie avec un sac à dos en toile." #!String
+    PurpleBlouse_Name: "Chemisier violet" #!String
+    PurpleBlouse_Description: "Un magnifique chemisier violet." #!String
+    VintagePolo_Name: "Polo rétro" #!String
+    VintagePolo_Description: "Les couleurs sont délavées et il sent le renfermé." #!String
+    TogaShirt_Name: "T-shirt" #!String
+    TogaShirt_Description: "C’est un peu démodé, mais le flux d’air qui passe à travers est vraiment agréable !" #!String
+    StarShirt_Name: "T-shirt étoilé" #!String
+    StarShirt_Description: "L’étoile est supposée briller dans le noir, mais ce n’est pas le cas." #!String
+    ClassyTop_Name_Female: "Haut élégant (F)" #!String
+    ClassyTop_Name_Male: "Haut élégant (H)" #!String
+    ClassyTop_Description: "On croirait porter le velours le plus doux." #!String
+    BandanaShirt_1203_Name: "T-shirt à bandana" #!String
+    BandanaShirt_1203_Description: "Un T-shirt avec un bandana pour protéger votre cou des blessures." #!String
+    VacationShirt_Name: "T-shirt touristique" #!String
+    VacationShirt_Description: "C’est un T-shirt des îles Fougères." #!String
+    GreenThumbShirt_Name: "T-shirt main verte" #!String
+    GreenThumbShirt_Description: "Il est pré-frotté avec du terreau." #!String
+    BandanaShirt_Name: "T-shirt à bandana" #!String
+    BandanaShirt_Description: "Un T-shirt avec un bandana pour garder votre cou bien au chaud." #!String
+    SlimeShirt_Name: "T-shirt de slime" #!String
+    SlimeShirt_Description: "Un T-shirt qui ressemble à un gros slime." #!String
+    ExcavatorShirt_Name: "Chemise d’archéologiste" #!String
+    ExcavatorShirt_Description: "Gardez l’oeil bien ouvert en cherchant des fossiles." #!String
+    SportsShirt_Name: " T-shirt de sport" #!String
+    SportsShirt_Description: "Faites sensation en sortant du parc avec ce look classique." #!String
+    HeartShirt_Name: "T-shirt à coeur" #!String
+    HeartShirt_Description: "Affichez votre coeur à la vue de tout le monde avec ce vêtement extra-doux." #!String
+    DarkJacket_Name: "Veste noire" #!String
+    DarkJacket_Description: "Une veste en denim foncé avec une doublure bien moelleuse." #!String
+    SunsetShirt_Name: "T-shirt de coucher du soleil" #!String
+    SunsetShirt_Description: "Un T-shirt inspiré de l’heure la plus pittoresque de la journée." #!String
+    ChefCoat_Name: "Veste de chef" #!String
+    ChefCoat_Description: "L’uniforme traditionnel d’un chef de cuisine." #!String
+    ShirtOTheSea_Name: "T-shirt de la mer" #!String
+    ShirtOTheSea_Description: "Ça sent l’eau salée de la mer." #!String
+    ArcaneShirt_Name: "T-shirt arcanique" #!String
+    ArcaneShirt_Description: "Vous pouvez sentir un certain pouvoir dans ce vêtement." #!String
+    PlainOveralls_Name: "Salopette unie" #!String
+    PlainOveralls_Description: "Salopette classique avec une chemise pouvant être teinte." #!String
+    SleevelessOveralls_Name: "Combinaison sans manches" #!String
+    SleevelessOveralls_Description: "Une combinaison classique avec une chemise sans manches pouvant être teinte." #!String
+    WhiteOverallsShirt_Name: "Salopette à chemise blanche" #!String
+    WhiteOverallsShirt_Description: "Salopette classique avec chemise blanche et une ceinture." #!String
+    Cardigan_Name: "Cardigan" #!String
+    Cardigan_Description: "Un cardigan tout doux." #!String
+    YobaShirt_Name: "T-shirt de Yoba " #!String
+    YobaShirt_Description: "Un T-shirt avec le \"symbole de l’élu\" imprimé dessus." #!String
+    NecklaceShirt_Name: "T-shirt à collier" #!String
+    NecklaceShirt_Description: "Un T-shirt avec un collier en or. " #!String
+    BeltedCoat_Name: "Manteau ceinturé" #!String
+    BeltedCoat_Description: "Un manteau noir en velours avec une grosse ceinture." #!String
+    GoldTrimmedShirt_Name: "Chemise à pans dorés" #!String
+    GoldTrimmedShirt_Description: "Une chemise à pans dorés." #!String
+    PrismaticShirt_Name: "T-shirt prismatique" #!String
+    PrismaticShirt_Description: "Il scintille d’énergie prismatique." #!String
+    PendantShirt_Name: "T-shirt à pendentif" #!String
+    PendantShirt_Description: "Un T-shirt avec un gros pendentif." #!String
+    HighHeatShirt_Name: "T-shirt de grande chaleur" #!String
+    HighHeatShirt_Description: "Le T-shirt a presque l’air d’être en feu !" #!String
+    FlamesShirt_Name: "T-shirt enflammé" #!String
+    FlamesShirt_Description: "A l’air trop cool avec des flammes ardentes." #!String
+    AntiquityShirt_Name: "Chemise de l’antiquité" #!String
+    AntiquityShirt_Description: "Une chemise avec un motif ancien." #!String
+    SoftArrowShirt_Name: "T-shirt à flèche" #!String
+    SoftArrowShirt_Description: "Un T-shirt de couleur claire avec un motif de flèche pointant vers le haut." #!String
+    DollShirt_Name: "T-shirt de poupée" #!String
+    DollShirt_Description: "Un T-shirt avec un étrange visage de poupée dessus." #!String
+    JewelryShirt_Name: "T-shirt à bijoux" #!String
+    JewelryShirt_Description: "Un T-shirt avec une simple chaîne dorée." #!String
+    CanvasJacket_Name: "Veste en toile" #!String
+    CanvasJacket_Description: "Une veste marron avec une doublure polaire." #!String
+    TrashCanShirt_Name: "Chemise poubelle " #!String
+    TrashCanShirt_Description: "Vous portez une poubelle." #!String
+    RustyShirt_Name: "Chemise rouillée" #!String
+    RustyShirt_Description: "On dirait que la chemise est recouverte de rouille." #!String
+    CircuitboardShirt_Name: "T-shirt carte électronique" #!String
+    CircuitboardShirt_Description: "Le T-shirt ressemble à une carte électronique." #!String
+    FluffyShirt_Name: "T-shirt moelleux" #!String
+    FluffyShirt_Description: "C’est duveteux." #!String
+    SauceStainedShirt_Name: "T-shirt taché de sauce" #!String
+    SauceStainedShirt_Description: "Il est couvert de taches de sauce spaghetti pour que vous n’ayez pas à vous sentir coupable en vous tachant !" #!String
+    BrownSuit_Name: "Costume marron" #!String
+    BrownSuit_Description: "C’est un costume marron simple." #!String
+    GoldenShirt_Name: "T-shirt doré" #!String
+    GoldenShirt_Description: "C’est un T-shirt doré brillant." #!String
+    CaptainsUniform_Name: "Uniforme de capitaine" #!String
+    CaptainsUniform_Description: "L’uniforme classique du capitaine de navire." #!String
+    OfficerUniform_Name: "Uniforme d’officier" #!String
+    OfficerUniform_Description: "L’uniforme classique d’un représentant de la loi." #!String
+    RangerUniform_Name: "Uniforme de garde forestier" #!String
+    RangerUniform_Description: "L’uniforme classique pour un garde forestier." #!String
+    BlueLongVest_Name: "Gilet long bleu" #!String
+    BlueLongVest_Description: "Un long gilet bleu par-dessus une chemise grise." #!String
+    RegalMantle_Name: "Manteau royal" #!String
+    RegalMantle_Description: "Un vêtement royal majestueux." #!String
+    RelicShirt_Name: "Chemise de relique" #!String
+    RelicShirt_Description: "J’ai trouvé une relique dorée et j’ai la chemise pour le prouver !" #!String
+    BoboShirt_Name: "T-shirt Bobo" #!String
+    BoboShirt_Description: "Un T-shirt rose avec la tête d’un type étrange dessus." #!String
+    FriedEggShirt_Name: "T-shirt d’oeuf au plat" #!String
+    FriedEggShirt_Description: "Réveillez-vous, c’est l’heure de manger des oeufs." #!String
+    BurgerShirt_Name: "T-shirt d’hamburger" #!String
+    BurgerShirt_Description: "Portez ce que vous mangez !" #!String
+    CollaredShirt_Name: "Une chemise guindée" #!String
+    CollaredShirt_Description: "Une chemise avec un col guindé." #!String
+    ToastedShirt_Name: "T-shirt toasté" #!String
+    ToastedShirt_Description: "Elle à l’air légèrement grillé." #!String
+    CarpShirt_Name: "T-shirt de carpe" #!String
+    CarpShirt_Description: "Une grosse tête de carpe est imprimée dessus." #!String
+    RedFlannelShirt_Name: "Chemise en flanelle rouge" #!String
+    RedFlannelShirt_Description: "Une chemise en flanelle à motif rouge et bleu." #!String
+    TortillaShirt_Name: "T-shirt tortilla" #!String
+    TortillaShirt_Description: "Un T-shirt qui ressemble à la surface d’une tortilla." #!String
+    WarmFlannelShirt_Name: "Chemise en flanelle chaude" #!String
+    WarmFlannelShirt_Description: "Une chemise chaude en flanelle marron et rose." #!String
+    SugarShirt_Name: "T-shirt sucré" #!String
+    SugarShirt_Description: "Il déborde de sucreries." #!String
+    GreenFlannelShirt_Name: "Chemise en flanelle verte" #!String
+    GreenFlannelShirt_Description: "Une chemise en flanelle à motif vert et marron." #!String
+    OilStainedShirt_Name: "T-shirt taché d’huile" #!String
+    OilStainedShirt_Description: "Il est déjà taché d’huile pour un look graisseux." #!String
+    MorelShirt_Name: "T-shirt morille" #!String
+    MorelShirt_Description: "Ce T-shirt est orné de l’emblématique champignon de printemps." #!String
+    SpringShirt_Name: "Chemise de printemps" #!String
+    SpringShirt_Description: "C’est léger, c’est frais et elle a les couleurs du printemps." #!String
+    RainCoat_Name: "Anorak" #!String
+    RainCoat_Description: "Le manteau de pluie jaune classique." #!String
+    SailorShirt_1261_Name: "Chemise de marin" #!String
+    SailorShirt_1261_Description: "Contrairement à la plupart des chemises de marin, celle-ci peut être teint et a un col blanc." #!String
+    DarkBandanaShirt_Name: "T-shirt bandana sombre" #!String
+    DarkBandanaShirt_Description: "Un T-shirt sombre avec un bandana coloré." #!String
+    DarkHighlightShirt_Name: "T-shirt sombre à reflets" #!String
+    DarkHighlightShirt_Description: "Un T-shirt sombre avec des reflets clairs." #!String
+    OmniShirt_Name: "Chemise-Omni" #!String
+    OmniShirt_Description: "Elle est tachetée des couleurs d’un arc-en-ciel ! " #!String
+    BridalShirt_Name: "Chemise nuptiale" #!String
+    BridalShirt_Description: "Un beau haut blanc, parfait pour une mariée." #!String
+    BrownOveralls_Name: "Salopette marron" #!String
+    BrownOveralls_Description: "Il est difficile de voir les taches de saleté sur celle-là." #!String
+    OrangeBowShirt_Name: "Chemise orange à noeud" #!String
+    OrangeBowShirt_Description: "Une chemise orange rayée avec un gros noeud blanc." #!String
+    WhiteOveralls_Name: "Salopette blanche" #!String
+    WhiteOveralls_Description: "Une jolie variante du style classique de fermier." #!String
+    PourOverShirt_Name: "Chemise arrosée" #!String
+    PourOverShirt_Description: "Un motif en zig-zag familier orne cette chemise. Ahhh... cette odeur." #!String
+    GreenJacketShirt_Name: "Veste verte" #!String
+    GreenJacketShirt_Description: "Inspirée du manteau du colvert. La chemise peut être teinte. " #!String
+    ShortJacket_Name: "Veste courte" #!String
+    ShortJacket_Description: "Veste courte par-dessus une chemise pouvant être teinte." #!String
+    PolkaDotShirt_Name: "T-shirt à pois" #!String
+    PolkaDotShirt_Description: "Un T-shirt foncé dont les pois peuvent être teints." #!String
+    WhiteDotShirt_Name: "T-shirt à pois blancs" #!String
+    WhiteDotShirt_Description: "Un T-shirt pouvant être teint à pois blancs." #!String
+    CamoShirt_Name: "T-shirt de camouflage" #!String
+    CamoShirt_Description: "Vous aide à vous fondre dans l’environnement." #!String
+    DirtShirt_Name: "T-shirt terreux" #!String
+    DirtShirt_Description: "Vous irez parfaitement pour le travail à la ferme !" #!String
+    CrabCakeShirt_Name: "Chemise de gâteau de crabe" #!String
+    CrabCakeShirt_Description: "Couvert de sauce aïoli pour votre plaisir. Bon appétit !" #!String
+    SilkyShirt_Name: "Chemise soyeuse" #!String
+    SilkyShirt_Description: "Elle est faite d’une substance lisse et soyeuse." #!String
+    BlueButtonedVest_Name: "Gilet boutonné bleu" #!String
+    BlueButtonedVest_Description: "C’est un gilet bleu avec des manches pouvant être teintes." #!String
+    FadedDenimShirt_Name: "Chemise en jean délavé" #!String
+    FadedDenimShirt_Description: "C’est une chemise en jean à l’aspect poussiéreux et délavé." #!String
+    RedButtonedVest_Name: "Gilet boutonné rouge" #!String
+    RedButtonedVest_Description: "C’est un gilet rouge avec des manches pouvant être teintes." #!String
+    GreenButtonedVest_Name: "Gilet boutonné vert" #!String
+    GreenButtonedVest_Description: "C’est un gilet vert avec des manches pouvant être teintes." #!String
+    TomatoShirt_Name: "T-shirt de tomate" #!String
+    TomatoShirt_Description: "Un T-shirt qui répond à la grande question : \"Les tomates sont des\"... (mais le reste est recouvert de taches)." #!String
+    FringedVest_Name: "Gilet à franges" #!String
+    FringedVest_Description: "Un gilet brun à franges par-dessus une chemise sans manches." #!String
+    GlobbyShirt_Name: "Chemise globe" #!String
+    GlobbyShirt_Description: "Il a un motif rond impossible à distinguer dessus." #!String
+    MidnightDogJacket_Name: "Veste bleu nuit" #!String
+    MidnightDogJacket_Description: "Elle est d’une couleur bleu nuit grâce à de l’encre de calamar." #!String
+    ShrimpEnthusiastShirt_Name: "T-shirt d’amateur de crevettes" #!String
+    ShrimpEnthusiastShirt_Description: "Pour ceux dont l’appétit exige un régime régulier en crevettes." #!String
+    TeaShirt_Name: "T-Shirt" #!String
+    TeaShirt_Description: "Un T-shirt inspiré de la boisson populaire." #!String
+    TrinketShirt_Name: "T-shirt à bijoux" #!String
+    TrinketShirt_Description: "Un t-shirt avec de grands globes de verre coloré, attachés dessus." #!String
+    DarknessSuit_Name: "Costume des ténèbres" #!String
+    DarknessSuit_Description: "Un costume noir avec une poche rouge délavé." #!String
+    MineralDogJacket_Name: "Veste de chien minérale" #!String
+    MineralDogJacket_Description: "Il est infusé avec des oligo-éléments de l’océan." #!String
+    MagentaShirt_Name: "Chemise magenta" #!String
+    MagentaShirt_Description: "Cette nuance particulière est unique au chapeau champignon de magma." #!String
+    GingerOveralls_Name: "Salopette rousse" #!String
+    GingerOveralls_Description: "Cette couleur est inspirée par la bière au gingembre." #!String
+    BananaShirt_Name: "Chemise banane" #!String
+    BananaShirt_Description: "Portez cette chemise, si vous aimez les bananes." #!String
+    YellowSuit_Name: "Costume jaune" #!String
+    YellowSuit_Description: "C’est une déclaration audacieuse de porter ce costume." #!String
+    HotPinkShirt_Name: "Chemise rose vif" #!String
+    HotPinkShirt_Description: "Une chemise rose tropicale soyeuse." #!String
+    TropicalSunriseShirt_Name: "Chemise exotique" #!String
+    TropicalSunriseShirt_Description: "Cette chemise sent la noix de coco." #!String
+    IslandBikini_Name: "Bikini des îles" #!String
+    IslandBikini_Description: "Un classique des îles Fern." #!String
+    MagicSprinkleShirt_Name: "T-shirt magique scintillant" #!String
+    MagicSprinkleShirt_Description: "Un t-shirt avec des paillettes prismatiques..." #!String
+    PrismaticShirt_DarkSleeves_Name: "T-shirt prismatique" #!String
+    PrismaticShirt_DarkSleeves_Description: "Il scintille d’énergie prismatique. Avec des manches noires." #!String
+    PrismaticShirt_LightSleeves_Name: "T-shirt prismatique" #!String
+    PrismaticShirt_LightSleeves_Description: "Il scintille d’énergie prismatique. Avec des manches blanches." #!String
+    MysteryShirt_Name: "Chemise mystère" #!String
+    MysteryShirt_Description: "Fabriquée à partir des restes de la boîte mystère." #!String
+

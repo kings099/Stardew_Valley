@@ -1,0 +1,27 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    spring_11.003: "Vincent war beim Arzt heute sehr tapfer. Ich bin stolz auf ihn." #!String
+    winter_17.000: "Es muss wirklich spannend sein, auf diese Art die Welt zu bereisen ... *seufz* ..." #!String
+    spring_11.001: "Sei mutig, Vincent. Denk an deinen Vater!" #!String
+    Tue.000: "Ohhh... Meine Arme fühlen sich an wie Gummi.$s" #!String
+    spring.000: "Pssst... Er schläft." #!String
+    spring_18.000: "Hey! Du kannst nicht einfach in einen privaten Termin hereinplatzen!$u" #!String
+    spring_11.002: "Doktor Harvey? Ich mache mir Sorgen wegen Vincents Größe. Ist er nicht ein wenig klein für sein Alter?" #!String
+    spring_11.000: "Vincent hasst Arzttermine mehr als alles andere, aber da muss er nun durch." #!String
+

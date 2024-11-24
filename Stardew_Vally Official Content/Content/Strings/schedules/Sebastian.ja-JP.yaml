@@ -1,0 +1,28 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    summer_4.000: "ああ、くそっ…忘れてた。きょうはハーヴィー先生のところに行くんだった。" #!String
+    Fri.000: "1度くらいサムに勝たせてやるべきかな？…いや、ないな。$h" #!String
+    marriage_Fri.001: "おれの腕、まだまだおとろえてないな…サムはあいかわらずヘタだしな。$h" #!String
+    summer_4.001: "えっ、ここでなにしてるんだ？おい、こっちはハダカになってたかもしれないんだぞ！$a" #!String
+    marriage_Mon.001: "おれがよってくと、母さんの顔が明るくなるんだ。しあわせそうでよかった。$7" #!String
+    marriage_Fri.000: "今夜は昔の友だちとつるんでくるから。帰りは遅くなる。" #!String
+    marriage_Mon.000: "ここに立ってると、またタバコを吸いたくなるよ…でももうやめるって決めたんだ。" #!String
+    rain.000: "海ってひとりを楽しむのにうってつけだろ…そう思わないか？" #!String
+    winter_16.000: "なんか夜のほうが 気分が 落ち着くね…アクセサリーでも 買おうかな" #!String
+

@@ -1,0 +1,190 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Relative_Dad: "Papa" #!String
+    Relative_Mom: "Mama" #!String
+    Relative_Mother: "Mutter" #!String
+    Relative_Husband: "Ehemann" #!String
+    Relative_Wife: "Ehefrau" #!String
+    Relative_HalfBrother: "Halbbruder" #!String
+    Relative_HalfSister: "Halbschwester" #!String
+    Relative_LittleBrother: "kleiner Bruder" #!String
+    Relative_Sister: "Schwester" #!String
+    Relative_Daughter: "Tochter" #!String
+    Relative_EldestSon: "ältester Sohn" #!String
+    Relative_LittleBabyGirl: "Baby" #!String
+    Relative_Son: "Sohn" #!String
+    Relative_YoungestBoy: "Jüngster" #!String
+    Relative_YoungestSon: "jüngster Sohn" #!String
+    Relative_Aunt: "Tante" #!String
+    Relative_Grandma: "Oma" #!String
+    Relative_Grandpa: "Opa" #!String
+    Relative_Grandson: "Enkel" #!String
+    Relative_Nephew: "Neffe" #!String
+    Relative_Niece: "Nichte" #!String
+    FallbackDialogueForError: "..." #!String
+    NameYourHorse: "Benenne dein Pferd" #!String
+    WipedMemory: "Du bist der neue Bauer, oder nicht?#$e#Du scheinst... nein. Ich bin mir sicher, wir haben uns noch nie getroffen." #!String
+    DefaultHorseName: "Fury" #!String
+    JunimoTextAboveHead1: "Junimo!" #!String
+    JunimoTextAboveHead2: "Stern!" #!String
+    JunimoThankYou1: "Danke dir!" #!String
+    JunimoThankYou2: "Ein Geschenk!" #!String
+    AbigailInMineFlute: "%Abigail ist in ihrer Musik versunken ..." #!String
+    AbigailInMineFirst: "Hey, @. Bist du überrascht? Ich habe endlich den Mut aufgebracht, hierher zu kommen.#$b#Zuerst hatte ich Angst, aber ich habe sie überwunden.#$b#Jetzt fühle ich mich schon viel besser. Das macht sogar richtig Spaß!$h" #!String
+    AbigailInMine0: "Hey! Ich habe es ziemlich weit geschafft, was?$h" #!String
+    AbigailInMine1: "Huuuch!$7#$b#Hahah! Du hast mich erschreckt! Ich hätte hier unten nicht mit anderen Leuten gerechnet!$h#$e#Entschuldige, ich bin ganz verschwitzt vor lauter Aufregung ..." #!String
+    AbigailInMine2: "Hi @! Ich habe es bis hier her geschafft, ohne gegen Monster zu kämpfen!" #!String
+    AbigailInMine3: "Hey! Wie schön, dich hier unten zu sehen ...$h#$e#Öhm ... sag meinem Vater aber nicht, dass ich hier bin, okay?$9" #!String
+    AbigailInMine4: "Hey! Erkundest du die Minen, weil es regnet? Ich auch!$h" #!String
+    Henchman1: "Gweee-ah!! Mensch!#$b#...Du willst vorbei? Tut mir leid, das ist Privateigentum.$s" #!String
+    Henchman2: "Tut mir leid, ich kann dich nicht vorbeilassen. Ich würde meinen Job verlieren." #!String
+    Henchman3: "Du bietest mir das an? Hmm... nein danke.$s" #!String
+    Henchman4: "Mmmm... das sieht frisch aus, aber nein danke... warum nimmst du's nicht?" #!String
+    Henchman5: "*schnüff* ... *schnüff* ...#$b#Dieser Geruch...#$b#Ich kann nicht widerstehen... Gib mir das!$h" #!String
+    Henchman6: "Danke." #!String
+    KrobusDarkTalisman: "Was sagst du... du suchst nach einem dunklen Talisman?#$b#...Hmmm. Jetzt wo du es erwähnst, ich hatte vor nicht allzu langer Zeit einen in meinem Besitz.#$b#Unglücklicherweise habe ich ihn beim Erkunden dieses Tunnels in der weitesten Ecke fallen lassen.#$b#Die Dinge wurden da drin ziemlich unschön, also habe ich mich beeilt hinauszukommen und den Eingang versiegelt.#$b#Du scheinst aber ziemlich zäh... Also werde ich ihn für dich wieder öffnen. Pass nur auf, okay?" #!String
+    Divorced_bouquet: "Das... Versuchst du, mich noch mehr zu verletzen?$s" #!String
+    Divorced_gift: "Ich will kein Geschenk von dir.$a" #!String
+    PetLovesYou: "{0} liebt dich. <" #!String
+    Saloon_goodEvent_0: "Tor!!" #!String
+    Saloon_goodEvent_1: "Juhu!" #!String
+    Saloon_goodEvent_2: "Was ein Spielzug!" #!String
+    Saloon_goodEvent_3: "JA!" #!String
+    Saloon_goodEvent_4: "Gut gemacht!" #!String
+    Saloon_badEvent_0: "Arrgh!" #!String
+    Saloon_badEvent_1: "Neeiin!" #!String
+    Saloon_badEvent_2: "Booo!" #!String
+    Saloon_badEvent_3: "Och" #!String
+    Saloon_badEvent_4: "Nicht gut." #!String
+    Saloon_neutralEvent_0: "Komm schon..." #!String
+    Saloon_neutralEvent_1: "So knapp!" #!String
+    Saloon_neutralEvent_2: "Los gehts!" #!String
+    Saloon_neutralEvent_3: "Pass den Ball!" #!String
+    Saloon_neutralEvent_4: "Geh ran!" #!String
+    KrobusDarkTalisman_elsewhere: "Was ist das... du suchst nach einem dunklen Talisman?#$b#...Hmmm. Jetzt, wo du es erwähnst, hatte ich vor nicht allzu langer Zeit einen in meinem Besitz.#$b#Leider ließ ich ihn, während ich einen Tunnel in der Kanalisation erkundete, fallen.#$b#Es wurde allerdings immer gefährlicher dort drin, also habe ich sie schnell verlassen und den Eingang versiegelt.#$b# Du scheinst allerdings ziemlich robust zu sein... Also öffne ich es wieder für dich. Sei einfach vorsichtig, okay?" #!String
+    MovieInvite_Festival: "Das Filmtheater ist an Festival-Tagen nicht geöffnet!" #!String
+    MovieInvite_Closed: "Das Filmtheater ist für heute nacht geschlossen..." #!String
+    MovieInvite_AlreadyInvitedSomeone: "Du hast bereits Pläne gemacht, heute einen Film mit {0} zu sehen!" #!String
+    MovieInvite_NoTheater: "{0} sieht verwirrt aus..." #!String
+    MovieInvite_CantInvite: "Du kannst {0} nicht ins Filmtheater einladen." #!String
+    MovieInvite_InvitedBySomeoneElse: "Tut mir Leid, ich habe bereits Pläne, heute einen Film zu sehen, aber vielleicht kannst du dich uns dort anschließen?" #!String
+    MovieInvite_FarmerAlreadySeen: "Ich habe noch keine Lust, wieder ins Filmtheater zu gehen..." #!String
+    MovieInvite_AlreadySeen: "Tut mir Leid, ich habe diese Woche schon einen Film gesehen..." #!String
+    MovieInvite_Invited_Sandy: "Ooh... Ich würde mich gerne zu dir gesellen. Du gehst vor und ich treffe dich dort, Schatz... Ich muss mich frisch machen!" #!String
+    MovieInvite_Invited_Dwarf: "Einen Fi-was sehen? Nun, ich bin sicher, es wird mir gefallen! Ich würde mich freuen, mit dir zu gehen." #!String
+    MovieInvite_Invited_Krobus: "Oh? Normalerweise verstecke ich mich vor Menschen...#$b#Aber ich habe eine Idee... Ich treffe dich später im Filmtheater." #!String
+    MovieInvite_Invited_Wizard: "Hmmph... Nun gut. Ich werde dich zu diesem... Schauspiel begleiten." #!String
+    MovieInvite_Invited: "Ein Film? Sicher. Wir sehen uns im Filmtheater." #!String
+    MovieInvite_Invited_Rude: "Ein Film? Ja, wie auch immer, klingt gut. Wir sehen uns im Filmtheater..." #!String
+    MovieInvite_Invited_Child: "Ein Film? Juhu! Treffen wir uns im Filmtheater!" #!String
+    MovieInvite_Reject_Child: "Ich glaube nicht, dass ich das sehen darf..." #!String
+    MovieInvite_Reject: "Tut mir Leid, ich bin gerade nicht in der Stimmung, einen Film zu sehen..." #!String
+    MovieTheater_NoTicket: "Ohne Ticket ist der Eintritt ins Filmtheater nicht möglich!" #!String
+    MovieTheater_CurrentlyShowing: "Ein Film wird gerade gezeigt, komm später wieder." #!String
+    MovieTheater_AlreadySeen: "Du hast diese Woche bereits einen Film gesehen." #!String
+    MovieTheater_WatchAlonePrompt: "Möchtest du dein Filmticket nutzen, um einen Film alleine anzuschauen?" #!String
+    MovieTheater_WatchWithFriendPrompt: "Möchtest du dein Filmticket nutzen, um einen Film mit {0} zu sehen?" #!String
+    MovieTheater_LeavePrompt: "Bist du sicher, dass du das Filmtheater verlassen willst, ohne den Film zu sehen?" #!String
+    MovieTheater_ClosedFestival: "Das Filmtheater ist wegen des Festivals geschlossen." #!String
+    MovieTheater_Closed: "Das Filmtheater ist geschlossen." #!String
+    MovieTheater_BoxOfficeClosed: "Die Abendkasse ist leer." #!String
+    MovieTheater_Concession: "Willkommen am Konzessionsstand! Möchtest du einen Snack für deinen Gast bestellen?" #!String
+    MovieTheater_ConcessionAlone: "Oh, es sieht so aus, als wärst du allein hier. Wenn du mit einem Gast hierher kommst, kannst du ihm einen Snack bestellen. Probier es mal aus!" #!String
+    MovieTheater_ConcessionPurchased: "Du wolltest {0}, richtig? Wir liefern es an {1}'s Platz, sobald der Film beginnt!" #!String
+    MovieTheater_ConcessionAfterMovie: "Also, wie war der Film?" #!String
+    MovieTheater_AfterMovieAlone: "{0} denkt leise über den Film nach." #!String
+    MovieTheater_AfterMovie: "{0} führt eine lebhafte Diskussion über den Film." #!String
+    MovieTheater_LoveMovie: "{0} ist absolut begeistert...!" #!String
+    MovieTheater_LikeMovie: "{0} scheint sich zu amüsieren!" #!String
+    MovieTheater_DislikeMovie: "{0} schläft ein..." #!String
+    MovieTheater_LoveConcession: "{0} genießt {1} sehr!" #!String
+    MovieTheater_LikeConcession: "{0} genießt {1}!" #!String
+    MovieTheater_DislikeConcession: "{0} hat {1} überhaupt nicht angefasst..." #!String
+    MovieTheater_LoveConcession_Female: "{0} genießt ihre {1} sehr!" #!String
+    MovieTheater_LikeConcession_Female: "{0} genießt ihre {1}." #!String
+    MovieTheater_DislikeConcession_Female: "{0} hat ihr {1} garnicht angefasst..." #!String
+    MovieTheater_LoveConcession_Male: "{0} genießt sein {1} sehr!" #!String
+    MovieTheater_LikeConcession_Male: "{0} genießt sein {1}!" #!String
+    MovieTheater_DislikeConcession_Male: "{0} hat sein {1} garnicht angefasst..." #!String
+    MovieInvite_Spouse_Abigail: "Ein Film? Klar, klingt lustig! Ich treffe dich im Kino. $h#$e#Ich hoffe, es ist ein spannender Film." #!String
+    MovieInvite_Spouse_Penny: "Eine Kinokarte? Ja, ich würde gerne mit dir hingehen! Ich treffe dich im Kino, Schatz.$h" #!String
+    MovieInvite_Spouse_Haley: "Oooh... ein Date, hm? Ich mache mich nur kurz frisch und treffe dich dann im Theater.$h" #!String
+    MovieInvite_Spouse_Emily: "Eine Kinokarte! Weißt du, ich habe den ganzen Tag ans Kino gedacht. Du musst meine Gedanken gelesen haben! $h#$e#Ich treffe dich im Kino." #!String
+    MovieInvite_Spouse_Leah: "Oh, ein Film? Sicher, klingt lustig .... Es wird so sein, als würden wir wieder daten, hehe. $h#$e#Ich treffe dich im Kino." #!String
+    MovieInvite_Spouse_Maru: "Oh! Du hast ein Date für uns geplant? $h#$b#Ich würde gerne gehen! Ich sehe dich im Theater.$h" #!String
+    MovieInvite_Spouse_Alex: "Hey, klingt lustig! Ich wollte diesen Film schon lange sehen... und ich würde ihn lieber mit dir zusammen sehen!#$b#Wir treffen uns im Kino." #!String
+    MovieInvite_Spouse_Sam: "Toll! Du hast uns Tickets besorgt? Du bist der Beste! Ich warte im Theater auf dich.$h" #!String
+    MovieInvite_Spouse_Sebastian: "Oh, du willst ins Kino gehen? Klingt ziemlich gut. Ich treffe dich dort.$h" #!String
+    MovieInvite_Spouse_Shane: "Oh, du willst eine Show sehen, hm? Kauf mir einen Snack und wir sind im Geschäft, hehe...$h#$e#Ich treffe dich dort." #!String
+    MovieInvite_Spouse_Elliott: "Ja, Schatz, ich würde gerne mit dir ins Kino gehen! Ich treffe dich im Kino." #!String
+    MovieInvite_Spouse_Harvey: "Kinokarten? Nun... ja, ich würde gerne mit dir hingehen!$h#$e#Es ist gut, solche Dinge zu tun, ich will nicht, dass das Eheleben für dich langweilig wird!" #!String
+    Phone_Robin_Workout: "Hey, hier ist Robin. Ich bin heute nicht zu Hause, wegen meinem wöchentlichen Aerobic-Club... Entschuldige! *Piep*" #!String
+    Phone_Robin_Working_OneDay: "Hey, hier ist Robin. Ich bin bis morgen außer Haus, um ein Projekt zu beenden. *Piep*" #!String
+    Phone_Robin_Working: "Hey, hier ist Robin. Ich werde die nächsten Tage mit der Arbeit an einem Projekt beschäftigt sein. *Piep*" #!String
+    Phone_Robin_Festival: "Hey, hier ist Robin. Ich nehme mir heute den Tag frei. Entschuldigung für die Unannehmlichkeiten! *Piep*" #!String
+    Phone_Robin_Open: "Hallo? Hey! Ja, ich habe zur Zeit geöffnet... bitte schau vor 17 Uhr vorbei, wenn du etwas brauchst! *klick* $h" #!String
+    Phone_Robin_Open_Rare: "Hallo? Oh, hi @! *Knall*... Ähm, eine Sekunde ... (Gedämpfte Stimme: Liebling, könntest du die Tür schließen? Ich versuche hier, ein Geschäft zu führen.)... Entschuldigung! Ja, ich habe heute bis 17 Uhr geöffnet. Bis nachher! *Klick* " #!String
+    Phone_Robin_Closed: "Hey, hier ist Robin. Meine Geschäftszeiten sind von 9 Uhr morgens bis 17 Uhr abends. Bitte schauen Sie vorbei, wenn Sie etwas brauchen! *Piep*" #!String
+    Phone_Clint_Open: "Hallo? Oh, hey, @. Ja, ich habe bis 16 Uhr geöffnet. Äh... Okay. Auf Wiederhören. *Klick*" #!String
+    Phone_Clint_Open_Rare: "Hallo?Ja, ja, ich habe bis 16 Uhr geöffnet. Ich muss auflegen. *Klick*^Hallo? Oh... @... deine Stimme klingt wirklich schön am Telefon ... Äh ... Okay. Verstanden. Ich habe bis 16 Uhr geöffnet. *Knall*$4" #!String
+    Phone_Clint_Closed: "Hier ist der Anrufbeantworter von Clint. Ich bin im Moment nicht erreichbar... Meine Geschäftszeiten sind von 9.00 bis 16.00 Uhr. *Piep*" #!String
+    Phone_Clint_Festival: "Hey, hier ist Clint. Ich habe mir heute den Tag frei genommen. *Piep*" #!String
+    Phone_Clint_Working_OneDay: "Hey... dein Werkzeug wird morgen zur Abholung bereit stehen. Ich muss jetzt wieder an die Arbeit. *Kling* *Kling* *Klick*" #!String
+    Phone_Clint_Working: "Hallo? Ja? Dein Werkzeug benötigt noch einige Tage Arbeit. Melde dich später wieder bei mir. *Klick*" #!String
+    Phone_HangUp: "(Aufleg)" #!String
+    Phone_CheckHouseCost: "Haus-Upgrade-Kosten prüfen" #!String
+    Phone_CheckBuildingCost: "Bau-Upgrade-Kosten prüfen" #!String
+    Phone_CheckToolCost: "Werkzeug-Upgrade-Kosten prüfen" #!String
+    Phone_SelectNumber: "Bitte wähle eine Nummer:" #!String
+    Phone_SelectOption: "Bitte triff eine Wahl:" #!String
+    Phone_Gus_Open: "Hallo? Hallo @! Ja... die heutige Spezialität ist: '{0}'! Wir haben gerade geöffnet, also schau doch einfach mal rein auf einen Geschmackstest. *Klick*" #!String
+    Phone_Gus_Open_Rare: "(Man hört schlürfende und kauende Geräusche am anderen Ende...)#$b#*schluck* ... Äh... Oh! Nun, hallo! Hahahah... Verzeihung, ich habe gerade die heutige Spezialität '{0}' gekostet. Es ist köstlich. Ja... Ja, wir haben jetzt geöffnet. Schau vorbei, wenn Du probieren willst!  *Klick*" #!String
+    Phone_Gus_Closed: "Hallo, hier spricht Gus aus der Kneipe zum Sternenfall. Wir haben derzeit geschlossen, aber schauen Sie bitte später vorbei, wenn Sie unser Tagesangebot '{0}' probieren möchten! *Piep*" #!String
+    Phone_Gus_Festival: "Hallo, hier spricht Gus aus der Kneipe zum Sternenfall. Wir haben für heute geschlossen.  *Piep*" #!String
+    Phone_Pierre_Open: "Pierres Gemischtwarenladen! Oh, hallo, @! Ja, ich habe heute bis 17 Uhr geöffnet. Bitte schau vorbei für tolle Angebote auf Saatgut und Erzeugnisse! Auf Wiederhören. *Klick*" #!String
+    Phone_Pierre_Open_Rare: "Abigail! Dein Meerschweinchen ist wieder auf freiem Fuß! Du kommst *jetzt gleich* her und kümmerst Dich darum! $3#$b#Oh! Äh... Hallo? Danke für deinen Anruf. J... Ja, wir haben bis 17 Uhr geöffnet. Auf Wiederhören. *klick*$4" #!String
+    Phone_Pierre_Closed: "Vielen Dank für Ihren Anruf bei Pierres Gemischtwarenladen. Im Moment haben wir geschlossen, aber unsere Öffnungszeiten sind von 9.00 bis 17.00 Uhr. Auf Wiedersehen! *Piep*" #!String
+    Phone_Pierre_Festival: "Vielen Dank für Ihren Anruf bei Pierres Gemischtwarenladen. Wir haben heute wegen des Festivals geschlossen. *Piep*" #!String
+    Phone_CheckSeedStock: "Lagerbestand prüfen" #!String
+    Phone_Gus_Open_NoDishOfTheDay: "Hallo? Hi @! Ja, wir haben gerade geöffnet. Hoffentlich bis bald! *klick*$h" #!String
+    Phone_Gus_Closed_NoDishOfTheDay: "Hallo, hier spricht Gus aus der Kneipe zum Sternenfall. Wir haben zurzeit geschlossen. Bitte besuchen Sie uns von 12 Uhr mittags bis 12 Uhr nachts, wenn Sie etwas von unserem köstlichen Essen und Trinken möchten. *Piep*" #!String
+    Phone_Marnie_Open: "Hallo? Oh, hi @! Ja, mein Laden ist heute bis 16:00 Uhr geöffnet. Ich hoffe, dich bald zu sehen! *Klick*" #!String
+    Phone_Marnie_Open_Rare: "Lew...? Hah... Heyyy! Ja, ich habe gerade geöffnet. *bahhh*. Dieses Geräusch? Oh, das ist eine meiner Ziegen. Bitte schau vorbei, wenn du etwas brauchst! *Klick* $4" #!String
+    Phone_Marnie_Closed: "Hallo, Sie haben Marnies Ranch erreicht. Meine Öffnungszeiten sind von 9.00 bis 16.00 Uhr. Bitte besuchen Sie mich dann. *Piep*" #!String
+    Phone_Marnie_ClosedDay: "Hallo, Sie haben Marnies Ranch erreicht. Mein Geschäft ist heute geschlossen." #!String
+    Phone_CheckAnimalPrices: "Viehpreise überprüfen" #!String
+    Phone_Ring_Vincent: "Hallo?#$b#Ehm... Ähhhh... Hier ist Vincent.$3#$b#... $3#$b#Ehm... Hast du irgendwelche Schweinchen auf deiner Farm?$h#$b#...$3#$b#Okay, muss los! *Klick* $3" #!String
+    Phone_Ring_RoboCaller: "Am anderen Ende hören Sie eine Roboterstimme. # Herzlichen Glückwunsch. . . Ein. 10.000g. JOJA. Rabatt. Wartet. Auf. Sie. . . Bitte. Senden. Sie. Ihre. Kredit. Karten. Nummer. An. N. Gunger Str. 133. Zuzu. Stadt. Für. Ihren. Rabatt. . . *KLICK*" #!String
+    Phone_Ring_Pierre: "Hey, @. Ich bin's, Pierre. #$b#Wie geht es dir? Geht's dir gut? Das ist gut.#$b#Naja, ich wollte nur sagen, dass ich die Geschäfte mit dir schätze. Und ich möchte dich daran erinnern, dass Pierres Gemischtwarenladen *die feinsten* Samen und Erzeugnisse führt.#$b#Ich hoffe, Dich sehr bald im Laden zu sehen. Bis bald! *Klick* " #!String
+    Phone_Ring_HatMouse: "Am anderen Ende hört man eine quietschende Stimme: # Heyo poke! Ich verkaufe gude Hüte. Bitte komm, n' bring Münzen, poke. Ich mag Münzen. *klick*" #!String
+    Phone_Ring_Foreign: "Es handelt sich um eine vorab aufgezeichnete Botschaft in einer Fremdsprache. Du kannst sie überhaupt nicht verstehen." #!String
+    Phone_Ring_Bear: "*Schnief* *Schnief*$2#$b#HoOoOoOoOoOoO!$3#$b#... Bist Du das? #$b# *grunz*... Ich habe noch etwas von der guten Sauce. #$b#Es macht mich sehr, sehr glücklich.$1#$b#Ich möchte dir nur danken... auf Wiedersehen. *Klick*" #!String
+    Phone_Ring_Lewis: "Hey, @. #$b#Ich wollte nur mal reinhören und sehen, ob es dem %farm Hof gut geht.#$b#$y 'Wie läuft's denn so?_Gut! Ich fühle mich hier wirklich zu Hause._Gut zu hören. *Ich denke, ich kann für alle sprechen, wenn ich sage, dass wir deine Anwesenheit in der Gemeinde wirklich schätzen.* Dein Großvater wäre wirklich stolz auf das, was du erreicht hast. *Nun, ich lasse dich wieder an deine Arbeit gehen.* Auf Wiedersehen!_Gut! Der Hof ist sehr produktiv._Gut zu hören! *Dein Hof hat die lokale Wirtschaft wirklich angekurbelt, was für alle gut ist. Wir alle wissen deine harte Arbeit zu schätzen! *Ich denke, man kann mit Sicherheit sagen, dass dein Großvater sehr stolz auf das wäre, was du erreicht hast.* Nun, ich lasse dich wieder an deine Arbeit gehen. Auf Wiedersehen!_Nicht so gut ..._Oh ... tut mir leid, das zu hören. $s* Äh... arbeite weiter hart und ich bin sicher, die Dinge werden sich verbessern... *Nun... Ich lasse dich wieder an die Arbeit gehen, okay? Wir sprechen uns später. Tschö. $s_Ich kenne dein Geheimnis, Lewis._Was? Ich glaube, die Leitung ist tot... Ich kann nichts hören. Na gut, dann lege ich wohl auf. Tschüss. $3'" #!String
+    Phone_Ring_Cursed: "Du legst den Hörer an dein Ohr und wirst mit einer beunruhigenden, abrasiven Statik konfrontiert. # Moment... leise hörst du in der Statik etwas anderes... eine jenseitige Stimme... # 'D-U H-A-S-T U-N-S- I-M- S-T-i-C-H G-E-L-A-S-S-E-N'" #!String
+    Leo_Memory: "Hey... Ich habe gerade an die Zeit auf der Insel gedacht... Weißt du noch?" #!String
+    Leo_Memory_Answer_Yes: "Erinnere mich" #!String
+    Leo_Memory_Answer_No: "Ich bin beschäftigt" #!String
+    Leo_Memory_6497423: "Als wir über Ihr Zuhause sprachen?" #!String
+    Leo_Memory_6497421: "Als wir über Vögel sprachen?" #!String
+    Leo_Memory_6497428: "Als ich mich zum Umzug entschlossen habe?" #!String
+    PierreStockListDialogue: "Oh, wow! Das ist meine alte Bestandsliste! Ich habe überall nach diesem Ding gesucht. $h#$b#Lass mich mal sehen... jup! Es ist immer noch alles hier.#$b#Mit diesen Bestellcodes kann ich meinen Vorrat erweitern, um Samen aus allen Jahreszeiten aufzunehmen, das ganze Jahr über!#$b#Danke, dass Du mir das zurückgebracht hast, @.$h" #!String
+    Phone_Marlon_Open: "Marlon am Apparat... Hast du wieder etwas in den Minen verloren? Ja, ja... Ich bin bereit, es zu holen... für einen Preis." #!String
+    Phone_Marlon_AlreadyRecovering: "Hallo?... Ja, ich hole heute Nacht deinen Artikel ab. Du kannst dich entspannen. Kein Grund, ständig anzurufen! *klick*" #!String
+    Phone_Marlon_NoDeathItems: "Was? Du hast in den Minen nichts verloren? Okay. Klingt, als bräuchtest Du meine Hilfe nicht. Mach's gut.  *klick*" #!String
+

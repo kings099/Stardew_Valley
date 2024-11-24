@@ -1,0 +1,89 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    ScienceHouse_Robin_Raining1: "Hava nasıl ama?" #!String
+    ScienceHouse_Robin_Raining2: "Ah, olamaz. Islanmışsın!" #!String
+    ScienceHouse_Robin_NotRaining1: "Merhaba, yürüyüşe mi çıktın?" #!String
+    ScienceHouse_Robin_NotRaining2: "Merhaba!" #!String
+    ScienceHouse_Robin_Snowing: "Burada hava çok güzel ve sıcak." #!String
+    ScienceHouse_Robin_NotSnowing: "Selam!" #!String
+    ScienceHouse_Robin_CloseFriends: "Merhaba {0}!" #!String
+    ScienceHouse_Robin_NotCloseFriends: "Bir şey yapmamı mı istiyorsun?" #!String
+    ScienceHouse_Robin_Greeting: "Hoş geldin!" #!String
+    ScienceHouse_Robin_RareGreeting: "Lew...? Ah..." #!String
+    AnimalShop_Marnie_Greeting1: "Merhaba!" #!String
+    AnimalShop_Marnie_Greeting2: "Nasılsın?" #!String
+    AnimalShop_Marnie_CloseFriends: "Merhaba {0}!" #!String
+    AnimalShop_Marnie_NotCloseFriends: "Erzak mı alacaksın?" #!String
+    AnimalShop_Marnie_Raining: "Ayakkabılarını sil!" #!String
+    AnimalShop_Marnie_NotRaining: "Selam! Hava nasıl?" #!String
+    AnimalShop_Marnie_Greeting3: "Selam! {1} çiftliği ne alemde?" #!String
+    AnimalShop_Marnie_RareGreeting: "Lew...? Ah..." #!String
+    AdventureGuild_Marlon_Greeting_Male: "Geri dönmüşsün!" #!String
+    AdventureGuild_Marlon_Greeting_Female: "Geri dönmüşsün!" #!String
+    AdventureGuild_Marlon_Greeting1: "Yeni bir kılıca mı ihtiyacın var?" #!String
+    AdventureGuild_Marlon_Greeting2: "Selamlar." #!String
+    AdventureGuild_Marlon_Greeting3: "Gil, kalk! Müşteri geldi." #!String
+    AdventureGuild_Marlon_Greeting4: "İyi akşamlar." #!String
+    Hospital_Maru_Greeting1: "Randevun var mıydı?" #!String
+    Hospital_Maru_Greeting2: "Sana nasıl yardım edebilirim?" #!String
+    Hospital_Maru_Greeting3: "Satılık ilaçlarımız var!" #!String
+    Hospital_Maru_Greeting4: "Acil bir durum mu var?" #!String
+    Hospital_Maru_Greeting5: "Doktoru görmeye mi geldin?" #!String
+    Hospital_Maru_Spouse: "Merhaba tatlım <" #!String
+    LeahHouse_Leah_Greeting1: "Ah, merhaba." #!String
+    LeahHouse_Leah_Greeting2: "Merhaba." #!String
+    LeahHouse_Leah_Greeting3: "Merhaba {0}." #!String
+    ElliottHouse_Elliott_Greeting1: "Ziyarete gelmen ne kadar hoş." #!String
+    ElliottHouse_Elliott_Greeting2: "Merhaba." #!String
+    ElliottHouse_Elliott_Greeting3: "Merhaba {0}." #!String
+    JojaMart_Morris_Greeting: "JojaMart'a hoş geldiniz!" #!String
+    SandyHouse_Sandy_Greeting1: "Zavallım nasıl da yanmışsın." #!String
+    SandyHouse_Sandy_Greeting2: "Ah, ziyaretçim var!" #!String
+    SandyHouse_Sandy_Greeting3: "Kavrulmuş gibisin!" #!String
+    SandyHouse_Sandy_Greeting4: "Ender bulunan tohumlardan satıyorum!" #!String
+    SandyHouse_Sandy_Greeting5: "Bir şey alacak mısın, canım?" #!String
+    ManorHouse_Lewis_Morning: "Günaydın." #!String
+    ManorHouse_Lewis_Afternoon: "İyi öğlenler." #!String
+    ManorHouse_Lewis_Evening: "İyi akşamlar." #!String
+    Saloon_Gus_Greeting: "Buyur, gel!" #!String
+    Saloon_Gus_Summer: "Soğuk bir şey ister misin?" #!String
+    Saloon_Gus_NotSummer: "Ne getireyim?" #!String
+    Saloon_Gus_Snowing1: "Dışarısı çok soğuk, kahvemiz ise sıcacık." #!String
+    Saloon_Gus_NotSnowing1: "Sıcak bir şey ister misin?" #!String
+    Saloon_Gus_Raining: "İçecek sıcak bir şey alır mısın?" #!String
+    Saloon_Gus_NotRaining: "İçecek bir şey alır mısın?" #!String
+    Saloon_Gus_Snowing2: "Soğukta kalma, içeri gel!" #!String
+    Saloon_Gus_NotSnowing2: "Hoş geldin!" #!String
+    Saloon_Gus_RareGreeting: "Sanki bir içkiye ihtiyacın var gibi." #!String
+    ArchaeologyHouse_Gunther_Greeting1: "Yeni bir şey bulabildin mi?" #!String
+    ArchaeologyHouse_Gunther_Greeting2: "Yeni bir şeyler kazabildin mi?" #!String
+    ArchaeologyHouse_Gunther_Greeting3: "Yardımım mı lazımdı?" #!String
+    ArchaeologyHouse_Gunther_Greeting4: "Selamlar." #!String
+    ArchaeologyHouse_Gunther_Greeting5: "Bana bir şey mi getirdin?" #!String
+    ArchaeologyHouse_Gunther_RareGreeting: "Toprak kokuyorsun... Çok güzel!" #!String
+    SeedShop_Pierre_Winter: "Pierre'in ısıtılmış dükkanına hoş geldin!" #!String
+    SeedShop_Pierre_NotWinter: "Pierre'in Bakkalı'na hoş geldin!" #!String
+    SeedShop_Pierre_Summer: "Yaz tohumları geldi!" #!String
+    SeedShop_Pierre_NotSummer: "Satılık tohum bulunur!" #!String
+    SeedShop_Pierre_Greeting1: "Merhaba!" #!String
+    SeedShop_Pierre_Greeting2: "Çiftçi {0} gelmiş!" #!String
+    SeedShop_Pierre_Raining: "Tam alışveriş yapmalık bir gün!" #!String
+    SeedShop_Pierre_NotRaining: "Hoş geldin!" #!String
+    SeedShop_Pierre_RareGreeting: "Cüzdanını getirdin, değil mi?" #!String
+

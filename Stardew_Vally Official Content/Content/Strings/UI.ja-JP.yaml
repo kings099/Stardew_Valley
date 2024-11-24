@@ -1,0 +1,907 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    LearnedRecipe_cooking: "料理" #!String
+    LearnedRecipe_crafting: "クラフト" #!String
+    LearnedRecipe: "新しい{0}レシピを覚えた： {1}" #!String
+    FarmerFile_1: "ファイル: {0}\n移動歩数: {1}\n贈ったプレゼント数: {2}\nバレーで過ごした日数: {3}\n耕した土の数: {4}\n作ったアイテム数: {5}\n料理したアイテム数: {6}\nリサイクルしたゴミの数: {7} " #!String
+    FarmerFile_2: "倒したモンスターの数: {0}\n捕まえた魚の数: {1}\n釣りを行った回数: {2}\n植えたタネの数: {3}\n出荷したアイテムの数: {4} " #!String
+    NotEnoughMoney1: "お金が 足りません。" #!String
+    NotEnoughMoney2: "お金が 足りません。" #!String
+    NotEnoughMoney3: "お金が足りない…" #!String
+    Toggle_ColorPicker: "色選択を切り替え" #!String
+    AnimalQuery_Move: "家を 変更" #!String
+    AnimalQuery_Moving_HomeChanged: "家を 変更しました" #!String
+    AnimalQuery_Moving_BuildingFull: "その 建物は 満員です" #!String
+    AnimalQuery_Moving_AlreadyHome: "その 建物に 住んでいます" #!String
+    AnimalQuery_Moving_CantLiveThere: "{0}は そこに 住めません。" #!String
+    AnimalQuery_Sell: "{0}Gで売る" #!String
+    AnimalQuery_AllowReproduction: "妊娠を 許可" #!String
+    AnimalQuery_Age1: "年齢： 1か月" #!String
+    AnimalQuery_AgeN: "年齢： {0}か月" #!String
+    AnimalQuery_AgeBaby: " (赤ん坊)" #!String
+    AnimalQuery_Parent: "親: {0}" #!String
+    AnimalQuery_ConfirmSell: "よろしいですか？" #!String
+    AnimalQuery_ChooseBuilding: "を入れる{0}を選んでください {1}" #!String
+    Billboard_Birthday: "{0}の誕生日" #!String
+    Billboard_SBirthday: "{0}の誕生日" #!String
+    Billboard_Year: "{0}　年目" #!String
+    Billboard_NothingPosted: "今日は 何も 貼られていません。" #!String
+    Billboard_NightMarket: "夜の市" #!String
+    AcceptQuest: "クエストを 受領" #!String
+    BobberBar_Perfect: "パーフェクト！" #!String
+    Confirm: "OK" #!String
+    Carpenter_ChangeAppearance: "外見を変更する" #!String
+    Carpenter_Demolish: "建物を 撤去" #!String
+    Carpenter_MoveBuildings: "建物を移動" #!String
+    Carpenter_Upgrade: "アップグレード: {0}" #!String
+    Carpenter_Build: "建設" #!String
+    Carpenter_CantDemolish_DuringConstruction: "建設中は 撤去 できません" #!String
+    Carpenter_CantDemolish_AnimalsHere: "中の 動物を 移転するまで 撤去 できません" #!String
+    Carpenter_CantDemolish_PlayerHere: "プレイヤーがここにいる間は、撤去できません" #!String
+    Carpenter_CantDemolish_LockFailed: "今は撤去できません" #!String
+    Carpenter_CantUpgrade_BuildingType: "建物の タイプが 正しくありません" #!String
+    Carpenter_CantBuild: "そこには 建てられません" #!String
+    Carpenter_SelectBuilding_Upgrade: "改築する{0}を選んでください" #!String
+    Carpenter_SelectBuilding_Demolish: "撤去したい 建物を 選んでください" #!String
+    Carpenter_SelectBuilding_Move: "移動したい 建物を 選んでください" #!String
+    Carpenter_SelectBuilding_Paint: "ペイントする建物を選んでください" #!String
+    Carpenter_ChooseLocation: "場所を 選んでください" #!String
+    Character_Name: "名前" #!String
+    Character_Wallets: "マネースタイル" #!String
+    Character_SharedWallet: "共有" #!String
+    Character_SeparateWallet: "分割" #!String
+    Character_Difficulty: "利益幅" #!String
+    Character_Close: "ご近所" #!String
+    Character_CoopHelpString: "開始時の小屋: 1~{0}つの小屋が最初からある状態で始められるので、お友達がすぐに入ることができます。「なし」を選べば、自分でいちから建てることになります（ロビンにお願いする）。^^小屋のレイアウト: 小屋がある状態で牧場を始める場合は、2種類のレイアウトから選ぶことになります。「ご近所」を選ぶと、全ての小屋がメインの家の近くに配置されるので、みんなでワイワイ楽しむ農場生活を送ることができます。「遠距離」を選ぶと、小屋が遠くに配置されるので、より独立した生活をすることができます。^^利益幅: 商品を売ることで得られる利益（稼ぐお金の量）を調整します。「ノーマル」が通常のスターデューバレー感覚。経験豊富なプレイヤーもしくは大人数のグループでプレイする場合は、利益幅を下げたほうが楽しめるかもしれません" #!String
+    Character_CoopHelpString2: "マネースタイル：お金を稼いで使用方法を選べます。「共有」モードでは、すべてのプレイヤーが同じお金のプールを共有します。「分割」モードでは、それぞれのプレイヤーは独自のお金のプールを持っています。「共有」は典型的なスターデューバレーの経験です。 " #!String
+    Character_Normal: "ノーマル" #!String
+    Character_Tough: "75%" #!String
+    Character_Hard: "50%" #!String
+    Character_Super: "25%" #!String
+    Character_Separate: "遠距離" #!String
+    Character_none: "なし" #!String
+    Character_CoopHelp: "ヘルプ" #!String
+    Character_StartingCabins: "開始時の小屋" #!String
+    Character_CabinLayout: "小屋のレイアウト" #!String
+    Character_Farm: "牧場名" #!String
+    Character_FavoriteThing: "お気に入りの\nもの" #!String
+    Character_Animal: "好きな\nペット" #!String
+    Character_Skin: "肌の色" #!String
+    Character_EyeColor: "目の色：" #!String
+    Character_Hair: "髪型" #!String
+    Character_HairColor: "髪の色：" #!String
+    Character_Shirt: "シャツ" #!String
+    Character_PantsColor: "ズボンの色：" #!String
+    Character_ShirtColor: "シャツの色：" #!String
+    Character_DyeColor: "染料の色：" #!String
+    Character_SkipIntro: "イントロをスキップ" #!String
+    Character_Pants: "パンツ" #!String
+    Character_Accessory: "装飾品" #!String
+    Character_FarmNameSuffix: "牧場" #!String
+    Character_FarmStandard: "スタンダード_シンプルな平地。広大なスペースをつかって、牧場を自由にデザインできる。" #!String
+    Character_FarmForaging: "フォレスト_森があるのが特徴。牧場用のスペースはそのぶんせまくなるが、遠出しなくても森の恵みが手に入る。" #!String
+    Character_FarmFishing: "リバーランド_川の中の小島と、景色のいい川岸からなる土地。ふつうよりもたくさん魚が釣れる。はじめから魚のくんせい器がある。" #!String
+    Character_FarmMining: "ヒルトップ_ごつごつした地形と曲がりくねる川のせいで牧場のデザインは難しいが、採掘向きの鉱床がある。" #!String
+    Character_FarmCombat: "ワイルド_平地が広がるいいところだが、気をつけること…夜になると、モンスターがすがたを見せる。" #!String
+    Character_FarmFourCorners: "4コーナーズファーム_土地は4つの区画に分けられて、それぞれに独自の特典があります。グループに最適！" #!String
+    Character_foraging: "採取" #!String
+    Character_fishing: "釣り" #!String
+    Character_mining: "採鉱" #!String
+    Character_combat: "戦闘" #!String
+    JukeboxMenu_Title: "ジュークボックス" #!String
+    Collections_Shipped: "納品したアイテム（牧場/採集）" #!String
+    Collections_Fish: "魚" #!String
+    Collections_Artifacts: "発掘" #!String
+    Collections_Minerals: "鉱物" #!String
+    Collections_Cooking: "料理" #!String
+    Collections_Achievements: "実績" #!String
+    Collections_SecretNotes: "ひみつのメモ" #!String
+    Collections_Description_ArtifactsFound: "合計 発見数: {0}" #!String
+    Collections_Description_RecipesCooked: "料理した 回数： {0}" #!String
+    Collections_Description_FishCaught: "釣った 回数： {0}" #!String
+    Collections_Description_BiggestCatch: "最大サイズ： {0}" #!String
+    Collections_Description_MineralsFound: "見つけた 数： {0}" #!String
+    Collections_Description_NumberShipped: "出荷した 数： {0}" #!String
+    QuestButton_Hover: "日記 （{0}）" #!String
+    QuestButton_Hover_Console: "日記" #!String
+    ZoomInButton_Hover: "ズームイン" #!String
+    ZoomOutButton_Hover: "ズームアウト" #!String
+    ExitToTitle: "タイトルへ 戻る" #!String
+    ExitToDesktop: "デスクトップへ 戻る" #!String
+    GameMenu_Inventory: "持ち物" #!String
+    GameMenu_Skills: "スキル" #!String
+    GameMenu_Social: "ソーシャル" #!String
+    GameMenu_Map: "地図" #!String
+    GameMenu_Crafting: "クラフト" #!String
+    GameMenu_Collections: "コレクション" #!String
+    GameMenu_Options: "オプション" #!String
+    GameMenu_Exit: "ゲームを 終了" #!String
+    GameMenu_JunimoNote_Hover: "公民館" #!String
+    GeodeMenu_InventoryFull: "持ち物の 空きが ありません。" #!String
+    GeodeMenu_Description_NotEnoughMoney: "ジオード1個の加工料は25gですが…\n\nお金が足りないようです。" #!String
+    GeodeMenu_Description: "ジオードを割ってやるから、金敷きに置いてくれ。\n\nジオード1つにつき価格は25gだ。" #!String
+    ItemHover_DefenseBonus: "+{0} 防御" #!String
+    ItemHover_ImmunityBonus: "+{0} 無効" #!String
+    ItemHover_CritChanceBonus: "+{0} クリティカル率" #!String
+    ItemHover_CritPowerBonus: "+{0} クリティカル威力" #!String
+    ItemHover_Damage: "{0}- {1} ダメージ" #!String
+    ItemHover_Speed: "{0} 速度" #!String
+    ItemHover_Weight: "{0} 重さ" #!String
+    ItemHover_Energy: "{0} エナジー" #!String
+    ItemHover_Health: "{0} 体力" #!String
+    ItemHover_Buff0: "{0} 農業" #!String
+    ItemHover_Buff1: "{0} 釣り" #!String
+    ItemHover_Buff2: "{0} 採鉱" #!String
+    ItemHover_Buff3: "{0} 戦闘" #!String
+    ItemHover_Buff4: "{0} 幸運" #!String
+    ItemHover_Buff5: "{0} 採取" #!String
+    ItemHover_Buff6: "{0} 最大 エナジー" #!String
+    ItemHover_Buff7: "{0} 最大 エナジー" #!String
+    ItemHover_Buff8: "{0} 吸引力" #!String
+    ItemHover_Buff9: "{0} 速度" #!String
+    ItemHover_Buff10: "{0} 防御" #!String
+    ItemHover_Buff11: "{0} 攻撃" #!String
+    ItemHover_Requirements: "{0}つの\n{1}が必要" #!String
+    Inventory_PortraitHover_Level: "レベル {0}" #!String
+    Inventory_FarmName: "{0} 牧場" #!String
+    Inventory_CurrentFunds: "手持ちのお金： {0}G" #!String
+    Inventory_TotalEarnings: "稼いだ利益：{0}G" #!String
+    Inventory_CurrentFunds_Separate: "あなたの資金：{0} g" #!String
+    Inventory_TotalEarnings_Separate: "農場収益：{0} g" #!String
+    ItemGrab_Organize: "整理" #!String
+    ShippingBin_LastItem: "最後に 出荷した アイテム" #!String
+    JojaCDMenu_Hover0: "カリコ砂漠 行きの バス路線を 復旧します。" #!String
+    JojaCDMenu_Hover1: "バス停、 山、 ペリカンタウンの 間を 走る マインカートを 修理します。" #!String
+    JojaCDMenu_Hover2: "山の 壊れた橋を 修理します。" #!String
+    JojaCDMenu_Hover3: "牧場にある 古い 廃墟を、 温室に 作り変えます。" #!String
+    JojaCDMenu_Hover4: "鉱山の 入り口にある 輝く 大岩を 取り除きます。" #!String
+    JunimoNote_BundleName: "{0} バンドル" #!String
+    JunimoNote_RewardBoiler: "ごほうび： トロッコの修理" #!String
+    JunimoNote_RewardBulletin: "ごほうび： 友情UP ♡" #!String
+    JunimoNote_RewardCrafts: "ごほうび： はしの修理" #!String
+    JunimoNote_RewardPantry: "ごほうび： 温室の修理" #!String
+    JunimoNote_RewardVault: "ごほうび： バスの修理" #!String
+    JunimoNote_RewardFishTank: "ごほうび： 川上の岩をどける" #!String
+    JunimoNote_MustBeAtCC: "公民館に 預ける 必要が あります" #!String
+    JunimoNote_MustBeAtAJM: "放棄されたJojaマートに入金が必要です" #!String
+    LetterViewer_MoneyIncluded: "$ {0}G同封されていた" #!String
+    LetterViewer_LearnedRecipe: "新しい{0}レシピ：" #!String
+    LetterViewer_LearnedRecipeName: "“{0}”" #!String
+    LevelUp_Title: "レベル {0} {1}" #!String
+    LevelUp_ExtraInfo_Farming1: "+1 ジョウロ 熟練" #!String
+    LevelUp_ExtraInfo_Farming2: "+1 クワ 熟練" #!String
+    LevelUp_ExtraInfo_Mining: "+1 ツルハシ 熟練" #!String
+    LevelUp_ExtraInfo_Fishing: "+釣りざおスキル +1" #!String
+    LevelUp_ExtraInfo_Foraging1: "+1 オノ 熟練" #!String
+    LevelUp_ExtraInfo_Foraging2: "木から 時々 タネが 手に入ります。" #!String
+    LevelUp_ExtraInfo_Foraging3: "+1 野生の くだもの 採取" #!String
+    LevelUp_ExtraInfo_Combat: "+5 HP" #!String
+    LevelUp_ExtraInfo_Luck: "運勢 アップ" #!String
+    LevelUp_ProfessionName_Rancher: "動物飼育者" #!String
+    LevelUp_ProfessionDescription_Rancher: "動物アイテムの売値が20%上がる。" #!String
+    LevelUp_ProfessionName_Tiller: "耕作者" #!String
+    LevelUp_ProfessionDescription_Tiller: "作物の売値が10%上がる。" #!String
+    LevelUp_ProfessionName_Coopmaster: "トリ小屋の 達人" #!String
+    LevelUp_ProfessionDescription_Coopmaster: "トリ小屋の動物と早く仲良くなれます。\nふ卵にかかる時間が半分になります。" #!String
+    LevelUp_ProfessionName_Shepherd: "羊飼い" #!String
+    LevelUp_ProfessionDescription_Shepherd: "動物小屋の動物と早く仲良くなれます。\nヒツジが早くウールを産出します。" #!String
+    LevelUp_ProfessionName_Artisan: "職人" #!String
+    LevelUp_ProfessionDescription_Artisan: "加工品（ワイン、チーズ、オイルなど）の売値が40%上がる。" #!String
+    LevelUp_ProfessionName_Agriculturist: "農業者" #!String
+    LevelUp_ProfessionDescription_Agriculturist: "全作物の成長速度が10%上がる。" #!String
+    LevelUp_ProfessionName_Fisher: "釣り人" #!String
+    LevelUp_ProfessionDescription_Fisher: "魚の売値が25%上がる。" #!String
+    LevelUp_ProfessionName_Trapper: "漁師" #!String
+    LevelUp_ProfessionDescription_Trapper: "クラブポットの 制作に 必要な 資源が 半分に なります。" #!String
+    LevelUp_ProfessionName_Angler: "釣り師" #!String
+    LevelUp_ProfessionDescription_Angler: "魚の売値が50%上がる。" #!String
+    LevelUp_ProfessionName_Pirate: "海賊" #!String
+    LevelUp_ProfessionDescription_Pirate: "宝物を 見つける 確率が 2倍。" #!String
+    LevelUp_ProfessionName_Mariner: "水夫" #!String
+    LevelUp_ProfessionDescription_Mariner: "クラブポットから ガラクタが 産出 されなくなります。" #!String
+    LevelUp_ProfessionName_Luremaster: "ルアーの 達人" #!String
+    LevelUp_ProfessionDescription_Luremaster: "クラブポットが エサを 必要と しなくなります。" #!String
+    LevelUp_ProfessionName_Forester: "森の 住人" #!String
+    LevelUp_ProfessionDescription_Forester: "木々から得られる木材が25%増える。" #!String
+    LevelUp_ProfessionName_Gatherer: "収集者" #!String
+    LevelUp_ProfessionDescription_Gatherer: "採取時、 確率で アイテム入手量が 2倍。" #!String
+    LevelUp_ProfessionName_Lumberjack: "木こり" #!String
+    LevelUp_ProfessionDescription_Lumberjack: "全種類の木から 確率で 硬木が 手に入るように なります。" #!String
+    LevelUp_ProfessionName_Tapper: "樹液採集器" #!String
+    LevelUp_ProfessionDescription_Tapper: "樹液系アイテムの売値が25%上がる。" #!String
+    LevelUp_ProfessionName_Botanist: "植物学者" #!String
+    LevelUp_ProfessionDescription_Botanist: "採取した アイテムの 品種が 常に 最高に なります。" #!String
+    LevelUp_ProfessionName_Tracker: "追跡者" #!String
+    LevelUp_ProfessionDescription_Tracker: "採取可能な アイテムの 場所が わかります。" #!String
+    LevelUp_ProfessionName_Miner: "鉱山労働者" #!String
+    LevelUp_ProfessionDescription_Miner: "+鉱脈 1つにつき 鉱石が 1個手に入ります。" #!String
+    LevelUp_ProfessionName_Geologist: "地質学者" #!String
+    LevelUp_ProfessionDescription_Geologist: "採掘時、 確率で 宝石が 2個見つかります。" #!String
+    LevelUp_ProfessionName_Blacksmith: "鍛冶屋" #!String
+    LevelUp_ProfessionDescription_Blacksmith: "のべ棒の売値が50%上がる。" #!String
+    LevelUp_ProfessionName_Prospector: "探鉱者" #!String
+    LevelUp_ProfessionDescription_Prospector: "石炭を 見つける 確率が 2倍。" #!String
+    LevelUp_ProfessionName_Excavator: "掘削者" #!String
+    LevelUp_ProfessionDescription_Excavator: "ジオードを 見つける 確率が 2倍。" #!String
+    LevelUp_ProfessionName_Gemologist: "宝石学者" #!String
+    LevelUp_ProfessionDescription_Gemologist: "宝石の売値が30%上がる。" #!String
+    LevelUp_ProfessionName_Fighter: "戦士" #!String
+    LevelUp_ProfessionDescription_Fighter: "攻撃のダメージが10%増加する。" #!String
+    LevelUp_ProfessionName_Scout: "偵察者" #!String
+    LevelUp_ProfessionDescription_Scout: "クリティカルヒットの発生率が50%上がる。" #!String
+    LevelUp_ProfessionName_Brute: "荒くれ者" #!String
+    LevelUp_ProfessionDescription_Brute: "与えるダメージが15%増加する。" #!String
+    LevelUp_ProfessionName_Defender: "防衛者" #!String
+    LevelUp_ProfessionDescription_Defender: "+25 HP。" #!String
+    LevelUp_ProfessionName_Acrobat: "軽業師" #!String
+    LevelUp_ProfessionDescription_Acrobat: "全ての 特殊攻撃の クールダウンを 半分に 短縮。" #!String
+    LevelUp_ProfessionName_Desperado: "デスペラード" #!String
+    LevelUp_ProfessionDescription_Desperado: "クリティカル攻撃は殺傷力が高い。" #!String
+    LevelUp_ChooseProfession: "特化職を 選んでください：" #!String
+    LevelUp_NewRecipe: "新しい{0}レシピ： {1}" #!String
+    LoadGameMenu_LookingForSavedGames: "セーブデータを探しています…" #!String
+    LoadGameMenu_Deleting: "削除中…" #!String
+    TitleMenu_PressAToStart: "@ボタンを押してスタート" #!String
+    TooManyFarmsMenu_TooManyFarms: "牧場の所有可能数が上限に達しました。" #!String
+    UserSignoutMenu_SignInChange: "サインインの状態が変更されました。もう一度サインインするかタイトル画面に戻ってください。" #!String
+    UserSignoutMenu_Returning: "タイトル画面に戻ります。" #!String
+    UserSignoutMenu_SignIn: "サインイン" #!String
+    UserSignoutMenu_Exit: "終了" #!String
+    StartupMessage_FirstRun: "" #!String
+    ControllerConnectMenu_PleaseReconnect: "ゲームを続けるにはコントローラーを再接続してください" #!String
+    ControllerConnectMenu_PleaseReconnect.ps4: "ゲームを続けるにはコントローラーを再接続してください" #!String
+    Options_StowingMode: "アイテムを収納" #!String
+    Options_StowingMode_Off: "オフ" #!String
+    Options_StowingMode_GamepadOnly: "ゲームパッドのみ" #!String
+    Options_StowingMode_On: "オン" #!String
+    Options_ShowAdvancedCraftingInformation: "高度な生産情報を表示" #!String
+    Crafting_NumberCrafted: "生産番号：{0}" #!String
+    Options_GamepadStyleMenus: "コントローラースタイルメニューを使用" #!String
+    Options_GamepadStyleMenus.ps4: "コントローラースタイルメニューを使用" #!String
+    GameMenu_ServerInvite: "友達を招待…" #!String
+    GameMenu_ServerMode: "サーバーモード" #!String
+    GameMenu_ServerMode_Offline: "オフライン" #!String
+    GameMenu_ServerMode_Online: "オンライン" #!String
+    GameMenu_ServerMode_FriendsOnly: "友達だけ" #!String
+    GameMenu_ServerMode_InviteOnly: "招待だけ" #!String
+    CoopMenu_EnterIP: "IPを入力…" #!String
+    CoopMenu_Join: "参加" #!String
+    CoopMenu_Host: "ホスト" #!String
+    CoopMenu_JoinLANGame: "LANゲームに参加…" #!String
+    CoopMenu_EnterInviteCode: "招待コードを入力…" #!String
+    CoopMenu_HostNewFarm: "新たな農場をホスト…" #!String
+    CoopMenu_NoInvites: "招待なし" #!String
+    CoopMenu_Failed: "接続不成立" #!String
+    CoopMenu_FailedProtocolVersion: "接続不成立（バージョン不一致）" #!String
+    CoopMenu_Connecting: "接続中…" #!String
+    CoopMenu_ConnectingOnlineServices: "オンラインサービスに接続中" #!String
+    CoopMenu_NoSlots: "サーバーに空きスロットなし" #!String
+    CoopMenu_NewFarmhand: "新牧場主" #!String
+    CoopMenu_HostFile: "{1}の農場をホスト" #!String
+    CoopMenu_RevisitFriendFarm: "{0}の農場に再参加" #!String
+    CoopMenu_JoinFriendFarm: "{0}の農場に参加" #!String
+    CoopMenu_Refresh: "更新" #!String
+    OptionsPage_MultiplayerSection: "マルチプレイ" #!String
+    OptionsPage_IPConnections: "IP接続を許可" #!String
+    OptionsPage_FarmhandCreation: "新キャラクター作成を有効にする" #!String
+    OptionsPage_ShowInviteCode: "招待コードを表示" #!String
+    OptionsPage_ShowReadyStatus: "オーバーナイトプレーヤーステータスリストを表示" #!String
+    OptionsPage_ScreenshotHeader: "撮影:" #!String
+    Client_RemotelyDisconnected: "サーバーが接続をクローズしました" #!String
+    Carpenter_CantDemolish_FarmhandOnline: "小屋の持ち主（労働者）がオンライン中は、撤去できません" #!String
+    Carpenter_DemolishCabinConfirm: "このアクションを実行すると、{0}がこの農場からいなくなってしまいます。本当にこの小屋を撤去しますか？" #!String
+    Client_WaitForHostAvailability: "ホストのイベントが終了するのを待っています…" #!String
+    Client_WaitForHostLoad: "ホストのセットアップが完了するのを待っています..." #!String
+    Chat_UnknownUserName: "???" #!String
+    Chat_PlayerName: "{0} ({1})" #!String
+    Chat_ChatMessageFormat: "{0}: {1}" #!String
+    Chat_ErrorMessageFormat: " {0}がエラーになりました" #!String
+    Chat_PrivateMessageFormat: "{0} [非公開]：{1}" #!String
+    Chat_UserNotificationMessageFormat: "> {0}" #!String
+    Chat_PlayerJoined: "{0}が参加しました" #!String
+    Chat_PlayerJoinedNewName: "無名の労働者" #!String
+    Chat_PlayerDeath: "{0}は意識をうしなった" #!String
+    Chat_CaughtLegendaryFish: "{0}が伝説級の魚'{1}'をつりあげた" #!String
+    Chat_TrashCan: "{1}がごみをあさっている{0}を見つけた…" #!String
+    Chat_LinusTrashCan: "ライナスは感心した！" #!String
+    Chat_Bundle: "贈りものができた！" #!String
+    Chat_Stardrop: "{0}がスタードロップを見つけた" #!String
+    Chat_HorseNamed: "{0}がウマを{1}と名付けた" #!String
+    Chat_PrairieKing: "{0}が「ジャーニー・オブ・プレーリーキング」をクリアした" #!String
+    Chat_JunimoKart: "{0}が「ジュニモカート」をクリアした" #!String
+    Chat_Dating: "{0}が{1}とデート中" #!String
+    Chat_BreakUp: "{0}は{1}と別れました。" #!String
+    Chat_Engaged: "{0}が{1}と婚約した" #!String
+    Chat_MuseumComplete: "{0}農場が博物館のコレクションをコンプリートした" #!String
+    Chat_Museum40: "{0}農場が博物館にアイテム40点を寄付した" #!String
+    Chat_donation: "{0}農場が博物館に'{1}'を寄付した" #!String
+    Chat_Walked10k: "{0}が10,000歩歩いた" #!String
+    Chat_Walked100k: "{0}が100,000歩歩いた" #!String
+    Chat_Walked1m: "{0}が1,000,000歩歩いた" #!String
+    Chat_Walked10m: "{0}が10,000,000歩歩いた" #!String
+    Chat_Divorce: "{0}が離婚届を出した" #!String
+    Chat_BackpackLarge: "{0}が大きな バックパックを買った" #!String
+    Chat_BackpackDeluxe: "{0}が特大 バックパックを買った" #!String
+    Chat_Makeover: "{0}が魔法で変身した" #!String
+    Chat_Makeover_Pet: "{0}が魔法で変身した" #!String
+    Chat_DivorceCancel: "０が離婚をとりやめた" #!String
+    Chat_GoneToBedEarly0: "{0}は夜の早い時間に電話をかけています。" #!String
+    Chat_GoneToBedEarly1: "{0}は今日早く寝るつもりです。" #!String
+    Chat_GoneToBedEarly2: "{0}は今日早くに戻ります。" #!String
+    Chat_GoneToBed0: "{0}はベッドにもぐり込みました。" #!String
+    Chat_GoneToBed1: "{0}はベッドに隠れました。" #!String
+    Chat_GoneToBed2: "{0}は袋を叩いています。" #!String
+    Chat_GoneToBedLate0: "{0}は寝ました！" #!String
+    Chat_GoneToBedLate1: "{0}は、安全で健康的に寝ました！" #!String
+    Chat_GoneToBedLate2: "うわー！{0}は寝ました！" #!String
+    Chat_PassedOut0: "{0}は亡くなりました！" #!String
+    Chat_PassedOut1: "{0}は寝ませんでした..." #!String
+    Chat_PassedOut2: "{0}は遅すぎて出かけました..." #!String
+    Chat_Baby: "{0}と{1}は、赤ちゃんの{2}を家族に迎え入れました！彼らは{3} {4}と名付けました。" #!String
+    Chat_EvilShrine: "{0}が悪い雰囲気の神社に行きました..." #!String
+    Chat_MonstersActivated: "{0}は農場にある古くから保護された封印を解除しました。気を付けて！" #!String
+    Chat_MonstersDeActivated: "{0}は農場にある古くから保護された封印をもう一度封印しました。" #!String
+    Chat_SleepAnnounceModeSet: "スリープアナウンスモードは現在{0}です。" #!String
+    Chat_LostBook: "{0}は無くした本を見つけました！" #!String
+    Chat_MovieInviteAccept: "{0}が{1}を映画に招待しました！" #!String
+    Chat_MovieInviteReject: "{1}は{0}からの映画の誘いを断りました..." #!String
+    Chat_MovieStart: "次の '{0}'の表示が始まろうとしています！" #!String
+    Chat_MovieEnd: "'{0}'の表示は終わりました。" #!String
+    Chat_Earned15k: "{0}農場が15,000gをかせいだ" #!String
+    Chat_Earned50k: "{0}農場が50,000gをかせいだ" #!String
+    Chat_Earned250k: "{0}農場が250,000gをかせいだ" #!String
+    Chat_Earned1m: "{0}農場が1,000,000gをかせいだ" #!String
+    Chat_Earned10m: "{0}農場が10,000,000gをかせいだ" #!String
+    Chat_Earned100m: "{0}農場が100,000,000gをかせいだ" #!String
+    Chat_GalaxySword: "{0}がギャラクシーソードを見つけた" #!String
+    Chat_Achievement: "{0}が実績'{1}'を獲得した" #!String
+    Chat_Jackpot: "{0}がカリコスピンでジャックポットを引き当てた" #!String
+    Chat_Slingshot_Hit: "{0}が{2}で{1}の皮をむきました！" #!String
+    Chat_Caught_Snooping: "{0}は{1}の私物を詮索してます！" #!String
+    Chat_PlayerLeft: "{0}が退出した" #!String
+    Chat_Paused: "ホストがゲームをポーズしました" #!String
+    Chat_Resumed: "ホストがゲームを再開しました" #!String
+    Chat_SelfPlayerID: "あなた" #!String
+    ChatCommands_Error_CheatsOnly: "このコマンドはチートが有効な場合にのみ使用できます。" #!String
+    ChatCommands_Error_HostOnly: "このコマンドが使用できるのはホストだけです" #!String
+    ChatCommands_Error_MultiplayerOnly: "このコマンドはマルチプレイヤーモードでのみ使用できます。" #!String
+    ChatCommands_Error_NiceTry: "ConcernedApe: やるね…" #!String
+    ChatCommands_Error_NoSuchOnlinePlayer: "そのような名前のオンラインプレイヤーがいません" #!String
+    ChatCommands_Error_NoSuchPlayer: "その名前のプレイヤーはいません" #!String
+    ChatCommands_ListOnlinePlayers: "ゲーム内にいるプレイヤー:" #!String
+    ChatCommands_ListOnlinePlayersEntry: "- {0}" #!String
+    ChatCommands_Ban_Help: "{0} [ファーマー名/ユーザーID]：このファームからプレイヤーを禁止します。" #!String
+    ChatCommands_Ban_Done: "{0}は禁止されました" #!String
+    ChatCommands_Ban_Failed: "プレーヤーを禁止できませんでした" #!String
+    ChatCommands_Clear_Help: "{0}: チャットログを消去" #!String
+    ChatCommands_Color_Help: "{0} [カラー]: デフォルトの文字色を設定" #!String
+    ChatCommands_ColorList_Help: "{0}: 使用可能な文字色をリスト化" #!String
+    ChatCommands_ConcernedApe_1: "ConcernedApe: こんにちは。スターデューバレーへ引っ越してきてくれてありがとう！ここでの新生活を楽しんでね。それじゃあ！ [126]" #!String
+    ChatCommands_ConcernedApe_2: "ConcernedApeは一生懸命…" #!String
+    ChatCommands_Emote_Help: "{0} [emote id]: エモートを実行する。（エモートのリストについては引数を省略します）。" #!String
+    ChatCommands_Help_CommandDescription: " - {0}" #!String
+    ChatCommands_Help_CommandList: "使用可能なコマンド: {0}。" #!String
+    ChatCommands_Help_Intro: "特定のコマンドのヘルプを見るには「help commandName」と入力してください。" #!String
+    ChatCommands_Help_MultiplayerCommandList: "マルチプレイヤーコマンド:{0}。" #!String
+    ChatCommands_Help_NoSuchCommand: "一致するコマンドが見つかりません。'{0}'" #!String
+    ChatCommands_Kick_Help: "{0} [ファーマー名/ユーザーID]：プレーヤーを切断します。" #!String
+    ChatCommands_List_Help: "{0}: オンラインのプレイヤーをリスト化" #!String
+    ChatCommands_MapScreenshot_Help: "{0}: 現在地のマップ全体のスクリーンショットを保存します。" #!String
+    ChatCommands_Message_Help: "{0} [プレイヤー名]：プライベートメッセージをプレイヤーに送信します。" #!String
+    ChatCommands_Pause_Help: "{0}: プレイヤー全員のゲームをポーズ" #!String
+    ChatCommands_Qi_1: "ミスターQi: やあやあ。私だよ。誰が出てくると思ったのかな？" #!String
+    ChatCommands_Qi_2: "ミスターQi: やあ…その調子でがんばるといい、決して足を止めてはならないぞ！      ではまた近々お目にかかろう…" #!String
+    ChatCommands_Qi_3: "ミスターQiが立ち去った" #!String
+    ChatCommands_Reply_Help: "{0}：プライベートメッセージに返信します。" #!String
+    ChatCommands_Reply_Failed: "返信できませんでした" #!String
+    ChatCommands_Reply_NoMessageFound: "返信するプレイヤーがいません" #!String
+    ChatCommands_Resume_Help: "{0}: ポーズ中のゲームを再開" #!String
+    ChatCommands_SleepAnnounceMode_All: "すべて" #!String
+    ChatCommands_SleepAnnounceMode_First: "初めて" #!String
+    ChatCommands_SleepAnnounceMode_Off: "オフ" #!String
+    ChatCommands_Unban_Help: "{0} [ファーマー名/ユーザーID]：このプレーヤーの禁止を取り消す" #!String
+    ChatCommands_Unban_Done: "{0}は禁止リストから削除されました" #!String
+    ChatCommands_Unban_NoPlayersBanned: "プレイヤーは禁止されていません" #!String
+    ChatCommands_Unban_PlayerList: "禁止されたプレイヤー：" #!String
+    ChatCommands_Unban_PlayerNotFound: "その名前またはIDの禁止されたプレーヤーが見つかりませんでした。" #!String
+    ChatCommands_UnbanAll_Help: "{0}: この牧場からすべてのプレイヤーのBANを解除します。" #!String
+    ChatCommands_UnbanAll_Done: "すべての禁止されたプレイヤーは禁止されていませんでした" #!String
+    ChatCommands_UnlinkPlayer_Help: "{0} [ファーマー名/ユーザーID]: 誰かが接続した際に、このキャラクターを自由に使用できるようにします。" #!String
+    SocialPage_Relationship_MarriedToOtherPlayer_FemaleNpc: "（既婚）" #!String
+    SocialPage_Relationship_MarriedToOtherPlayer_MaleNpc: "（既婚）" #!String
+    ReadyCheck: "他のプレイヤーを待っています… ({0}/{1})" #!String
+    PendingProposal: "他のプレイヤーを待っています…" #!String
+    GiftPlayerItem_Male: "{0}を{1}にあげますか？" #!String
+    GiftPlayerItem_Female: "{0}を{1}にあげますか？" #!String
+    GiftPlayerItem_NoInventorySpace_Male: "{0}は、これ以上持てません" #!String
+    GiftPlayerItem_NoInventorySpace_Female: "{0}は、これ以上持てません" #!String
+    Proposal_PlayerBusy_Male: "{0}は現在あなたのお願いに対応できません。少し待ってからまたやってみましょう" #!String
+    Proposal_PlayerBusy_Female: "{0}は現在あなたのお願いに対応できません。少し待ってからまたやってみましょう" #!String
+    AskedToDance_Male: "{0}があなたとダンスしたがっています。{0}とダンスしますか？" #!String
+    AskedToDance_Female: "{0}があなたとダンスしたがっています。{0}とダンスしますか？" #!String
+    AskedToMarry_Male: "{0}があなたに結婚をもうしこんできました！プロポーズを受けますか？" #!String
+    AskedToMarry_Female: "{0}があなたに結婚をもうしこんできました！プロポーズを受けますか？" #!String
+    AskedToHaveBaby_Male: "{0}があなたとの子供をさずかりたいそうです！家族をふやしたいですすか？" #!String
+    AskedToHaveBaby_Female: "{0}があなたとの子供をさずかりたいそうです！家族をふやしたいですか？" #!String
+    AskedToAdoptBaby_Male: "{0}が一緒に養子を迎えたいそうです！力を合わせて子育てしますか？" #!String
+    AskedToAdoptBaby_Female: "{0}が一緒に養子を迎えたいそうです！力を合わせて子育てしますか？" #!String
+    AskedToDance_Accepted_Male: "{0}がダンスの申し出を受けてくれました！" #!String
+    AskedToDance_Accepted_Female: "{0}がダンスの申し出を受けてくれました！" #!String
+    AskedToMarry_Accepted_Male: "{0}がプロポーズを受け入れてくれました！^結婚式は3日後におこなわれる予定です" #!String
+    AskedToMarry_Accepted_Female: "{0}がプロポーズを受け入れてくれました！^結婚式は3日後におこなわれる予定です" #!String
+    AskedToHaveBaby_Accepted_Male: "{0}があなたと一緒に子育てする決心をしてくれました！出産は14日後の予定です" #!String
+    AskedToHaveBaby_Accepted_Female: "{0}があなたと一緒に子育てする決心をしてくれました！出産は14日後の予定です" #!String
+    AskedToHaveBaby_Rejected_Male: "{0}が、今の段階では子供はまだ早いと思ったようです" #!String
+    AskedToHaveBaby_Rejected_Female: "{0}が、今の段階では子供はまだ早いと思ったようです" #!String
+    AskedToAdoptBaby_Accepted_Male: "{0}が一緒に養子を迎える決心をしてくれました！必要な書類は全て提出しました。子供は14日後にやってくる予定です" #!String
+    AskedToAdoptBaby_Accepted_Female: "{0}が一緒に養子を迎える決心をしてくれました！必要な書類は全て提出しました。子供は14日後にやってくる予定です" #!String
+    AskedToAdoptBaby_Rejected_Male: "{0}は、養子を迎えるのはまだ早いと考えたようです" #!String
+    AskedToAdoptBaby_Rejected_Female: "{0}は、養子を迎えるのはまだ早いと考えたようです" #!String
+    AskedToMarry_NotSingle_Male: "{0}は独身ではないですよ！" #!String
+    AskedToMarry_NotSingle_Female: "{0}は独身ではないですよ！" #!String
+    AskedToDance_Rejected_Male: "{0}にダンスの申し出を断られました" #!String
+    AskedToDance_Rejected_Female: "{0}にダンスの申し出を断られました" #!String
+    AskedToMarry_Rejected_Male: "{0}がプロポーズを受けてくれませんでした" #!String
+    AskedToMarry_Rejected_Female: "{0}がプロポーズを受けてくれませんでした" #!String
+    GivenGift_Male: "{0}が{1}をくれるそうです。受け取りますか？" #!String
+    GivenGift_Female: "{0}が{1}をくれるそうです。受け取りますか？" #!String
+    AskToDance_Male: "{0}にダンスしようと申し出てみますか？" #!String
+    AskToDance_Female: "{0}にダンスしようと申し出てみますか？" #!String
+    AskToMarry_Male: "{0}にプロポーズしますか？" #!String
+    AskToMarry_Female: "{0}にプロポーズしますか？" #!String
+    PlayerWeddingArranged: "結婚式は3日後におこなわれます" #!String
+    Server_InviteCode: "招待コード: {0}" #!String
+    Server_InviteCode_Copied: "クリップボードにコピーしました" #!String
+    Server_InviteCode_CopyFailed: "クリップボードにコピーできませんでした" #!String
+    ProposalWithdrawn: "{0}がリクエストをキャンセルしました" #!String
+    PendingProposal_Canceling: "リクエストをキャンセル中…" #!String
+    CoopMenu_InternetCommunication: "オンラインコミュニケーション" #!String
+    CoopMenu_LocalCommunication: "ローカルコミュニケーション" #!String
+    TrashCanSale: "回収" #!String
+    ItemList_ItemsLost: "無くしたアイテム：" #!String
+    ItemList_ItemsLostValue: "合計値：{0} g" #!String
+    Collections_Letters: "手紙" #!String
+    FruitTree_Warning: "あなたの{0}ツリーは昨日の夜に成長しませんでした。" #!String
+    Workbench_Chest_Warning: "仕事用ベンチ近くの箱の一つは使用中です。" #!String
+    Profile_GiftLog: "ギフトログ" #!String
+    Profile_GiftLog_NoGiftsGiven: "このような種類の贈り物を送っていません。" #!String
+    Profile_Status: "状態" #!String
+    Profile_Birthday: "誕生日" #!String
+    Profile_Gift_Loved: "愛を込めたギフト" #!String
+    Profile_Gift_Liked: "好きなギフト" #!String
+    Profile_Gift_Neutral: "通常のギフト" #!String
+    Profile_Gift_Disliked: "好きではないギフト" #!String
+    Profile_Gift_Hated: "嫌いなギフト" #!String
+    Profile_Gift_Category_LikedGifts: "{0}のお気に入り" #!String
+    Profile_Gift_Category_FruitsAndVegetables: "果物と野菜" #!String
+    Profile_Gift_Category_AnimalProduce: "アニマルプロデュース" #!String
+    Profile_Gift_Category_ArtisanItems: "職人のアイテム" #!String
+    Profile_Gift_Category_CookedItems: "調理されたアイテム" #!String
+    Profile_Gift_Category_ForagedItems: "花とえさ" #!String
+    Profile_Gift_Category_Fish: "魚" #!String
+    Profile_Gift_Category_Ingredients: "材料" #!String
+    Profile_Gift_Category_MineralsAndGems: "金属、鉱物と宝石" #!String
+    Profile_Gift_Category_Misc: "その他" #!String
+    Mini_JukeBox_Off: "オフ" #!String
+    Mini_JukeBox_NotFarmPlay: "ミニジュークボックスはあなたの農場のみでしかプレイできません！" #!String
+    Mini_JukeBox_OutdoorRainy: "ミニジュークボックスは雨が降っている中ではプレーできません！" #!String
+    Tailor_MissingIngredients: "仕立てを開始するために、スプール内の飼料や材料の中に、布や染色できる服を置きます。" #!String
+    Tailor_Busy: "いま仕立てています..." #!String
+    Tailor_Valid: "仕立てを開始するには、電源ボタンを押してください！" #!String
+    Tailor_InvalidRecipe: "現在の材料はアイテムを仕立てるために使用できません！" #!String
+    Tailor_NotDyeable: "飼料中の服は染色できません！" #!String
+    Tailor_MakeResult: "あなたがやりますね：" #!String
+    Tailor_MakeResultUnknown: "???" #!String
+    Tailor_Feed: "飼料" #!String
+    Tailor_Spool: "スプール" #!String
+    Clothes_Dyeable: "可染性。" #!String
+    DyePot_Help: "あなたが身に着けている着色できる服を染色するために、染料の鍋にそれぞれの色のアイテムを置きます。" #!String
+    DyePot_CanDye: "あなたの服を着色するために染料ボタンを押してください！" #!String
+    DyePot_WillDye: "染まるでしょう：" #!String
+    DyePot_NoDyeable: "あなたは着色できる服を着ていません。" #!String
+    Input_EmoteButton: "絵文字メニュー" #!String
+    Emote_Happy: "ハッピー" #!String
+    Emote_Sad: "悲しい" #!String
+    Emote_Heart: "ハート" #!String
+    Emote_Exclamation: "感嘆符" #!String
+    Emote_Note: "注意" #!String
+    Emote_Sleep: "睡眠" #!String
+    Emote_Game: "ゲーム" #!String
+    Emote_Question: "質問" #!String
+    Emote_X: "X" #!String
+    Emote_Pause: "一時停止" #!String
+    Emote_Blush: "赤面" #!String
+    Emote_Angry: "怒り" #!String
+    Emote_Yes: "はい" #!String
+    Emote_No: "いいえ" #!String
+    Emote_Sick: "病気" #!String
+    Emote_Laugh: "笑い" #!String
+    Emote_Surprised: "びっくり" #!String
+    Emote_Hi: "ハイ！" #!String
+    Emote_Taunt: "苛立ち" #!String
+    Emote_Uh: "ええと" #!String
+    Emote_Music: "音楽" #!String
+    Emote_Jar: "ジャー" #!String
+    Chat_SeparatedWallets: "{0}は農場の資金を分割しました。誰でも{1} gが手に入ります。" #!String
+    Chat_MergedWallets: "{0}は全員の資金を合わせました。" #!String
+    Chat_SentMoney: "{0}は{1} {2} gを贈りました" #!String
+    Chat_MergeWallets: "{0}は全員の資金を合わせるように申請しました。" #!String
+    Chat_MergeWalletsCancel: "{0}は全員の資金を合わせることをキャンセルしました。" #!String
+    Chat_SeparateWallets: "{0}は全員の資金を分割するように申請しました。" #!String
+    Chat_SeparateWalletsCancel: "{0}は全員の資金の分割をキャンセルしました。" #!String
+    Chat_Gifted1mil: "{0}は合計1,000,000g以上のギフトを贈りました。とても気前が良い！" #!String
+    Chat_Gifted100k: "{0}は合計100,000g以上のギフトを贈りました。悪くない！" #!String
+    Chat_Gifted10k: "{0}は合計10,000g以上のギフトを贈りました。" #!String
+    Chat_Gifted1k: "{0}は合計1,000g以上のギフトを贈りました。" #!String
+    Chat_Sent1g: "{0}は{1}を1gを贈りました...1箇所に全部を使わないでください。" #!String
+    Chat_SoloEarned1mil_Male: "{0}は自分で1,000,000gを獲得しました。" #!String
+    Chat_SoloEarned100k_Male: "{0}は自分で100,000gを獲得しました。" #!String
+    Chat_SoloEarned10k_Male: "{0}は自分で10,000gを獲得しました。" #!String
+    Chat_SoloEarned1k_Male: "{0}は自分で1,000gを獲得しました。" #!String
+    Chat_SoloEarned1mil_Female: "{0}は自分で1,000,000gを獲得しました。" #!String
+    Chat_SoloEarned100k_Female: "{0}は自分で100,000gを獲得しました。" #!String
+    Chat_SoloEarned10k_Female: "{0}は自分で10,000gを獲得しました。" #!String
+    Chat_SoloEarned1k_Female: "{0}は自分で1,000gを獲得しました。" #!String
+    Chat_BundleDonate: "{0}はバンドルに '{1}'を寄付しました。" #!String
+    Chat_MonsterSlayer0: "{0}は{1}を倒して、モンスター根絶の目標を達成しました。" #!String
+    Chat_MonsterSlayer1: "{0}は{1}を倒して、マーロンはとても満足しています。" #!String
+    Chat_MonsterSlayer2: "{0}は{1}を倒してバレーを守りました。" #!String
+    Chat_MonsterSlayer3: "{0}が地元の{1}の数を減らしたので、みんな少し安全を感じています！" #!String
+    Chat_IridiumToolUpgrade: "{0}は{1}を取得しました。" #!String
+    Chat_LuauSoup: "{0}はあり合わせのスープに '{1}'を入れます。" #!String
+    Chat_JunimoKartHighScore: "{0}がジュニモカートで新しい「ベストスコア」を獲得しました！" #!String
+    Junimo_Kart_Level_0: "入り組んだ洞窟" #!String
+    Junimo_Kart_Level_1: "滑りやすい斜面" #!String
+    Junimo_Kart_Level_4: "激しいローラーコースター" #!String
+    Junimo_Kart_Level_2: "宝石の海の巨人" #!String
+    Junimo_Kart_Level_3: "恐ろしいガレオン船" #!String
+    Junimo_Kart_Level_5: "スロンプストンプ" #!String
+    Junimo_Kart_Level_6: "日没のスピードウェイ" #!String
+    Junimo_Kart_Level_8: "???" #!String
+    Junimo_Kart_Level_9: "グロウシュルームの洞窟" #!String
+    NPC_Busy: "{0}は今忙しいです..." #!String
+    PondQuery_Name: "{0}池" #!String
+    PondQuery_EmptyPond: "空の池" #!String
+    PondQuery_ConfirmEmpty: "魚をぜんぶ取り除いて、池を元の状態に戻しますか？" #!String
+    PondQuery_ChangeNetting: "見栄えを変更する" #!String
+    PondQuery_Population: "人口：{0}/{1}" #!String
+    PondQuery_StatusNoFish: "この池は空です..." #!String
+    PondQuery_StatusOk0: "「みんな元気！」" #!String
+    PondQuery_StatusOk1: "「文句は何もない！」" #!String
+    PondQuery_StatusOk2: "「すべてが大丈夫！」" #!String
+    PondQuery_StatusOk3: "「みんなかなり気分がいい！」" #!String
+    PondQuery_StatusOk4: "「みんな健康を感じてる！」" #!String
+    PondQuery_StatusOk5: "その魚は幸せそうに見えます。" #!String
+    PondQuery_StatusOk6: "魚は繁栄しているみたいです。" #!String
+    PondQuery_StatusOk_Coral: "{0}は問題なく機能しています。" #!String
+    PondQuery_StatusRequest_Bring: "を持っていく" #!String
+    PondQuery_StatusRequestPending0: "「ほら、{1} {0}はこの辺りで色々盛り上げるでしょう！」" #!String
+    PondQuery_StatusRequestPending1: "「質問がそんなに多くないなら... {1} {0}を連れて行ってもらえる？」" #!String
+    PondQuery_StatusRequestPending2: "「{1} {0}がここにいれば、もっと快適だろうね。」" #!String
+    PondQuery_StatusRequestPending3: "「どうぞ...{1} {0}を連れて行ってもらえる？」" #!String
+    PondQuery_StatusRequestPending4: "「こっちは大丈夫だけど、{1} {0}でもっと幸せになれるよ...」" #!String
+    PondQuery_StatusRequestPending5: "「すいません、{1} {0}でお願い。」" #!String
+    PondQuery_StatusRequestPending6: "「家で{1} {0}と一緒にもっとくつろげると思うよ...」" #!String
+    PondQuery_StatusRequestPending_Rude0_Male: "「ねえ、新米の船員さん、私たちを連れていくことができると思う{1} {0}？」" #!String
+    PondQuery_StatusRequestPending_Rude1_Male: "「おおい...レッグボーイ！{1} {0}を連れてきてはどうですか、うん？」" #!String
+    PondQuery_StatusRequestPending_Rude2_Male: "「ちょっと...ねぇ、バディ...こちらのやり方で、{1} {0}に送ってもらえる？」" #!String
+    PondQuery_StatusRequestPending_Rude0_Female: "「ねぇ、島の住人さん、私たちを連れていくことができると思う{1} {0}？」" #!String
+    PondQuery_StatusRequestPending_Rude1_Female: "「やあ、婦人……こちらのやり方で、{1} {0}に送ってもらえる？」" #!String
+    PondQuery_StatusRequestPending_Rude2_Female: "「ちょっと...その場で{1} {0}を捕まえることができると思う？」" #!String
+    PondQuery_StatusRequestPending_Demanding0: "「{2}！{2}！{1} {0} ...が欲しい...！」" #!String
+    PondQuery_StatusRequestPending_Demanding1: "「{1} {0}が必要！{1} {0}が必要！」" #!String
+    PondQuery_StatusRequestPending_Demanding2: "「{2}はどこ？{1} {0}が必要！」" #!String
+    PondQuery_StatusRequestPending_Stiff0: "「{1} {0}が必要なんだ...」" #!String
+    PondQuery_StatusRequestPending_Stiff1: "「{1} {0}がもっと拡大できるようにしたいんだ。」" #!String
+    PondQuery_StatusRequestPending_Stiff2: "「{1} {0}が必要だと判断したよ。」" #!String
+    PondQuery_StatusRequestPending_Carnivore0: "「お腹がすいた... {1} {0}に連れて行ってもらえる？」" #!String
+    PondQuery_StatusRequestPending_Carnivore1: "「夕食のときに、{1} {0}を連れて行ってもらえる？」" #!String
+    PondQuery_StatusRequestPending_Carnivore2: "「タンパク質が必要だよ... {1} {0}はうまくいくはず！」" #!String
+    PondQuery_StatusRequestComplete_Rude0: "「チャチャチャ！私たちはビジネスをしてます。」" #!String
+    PondQuery_StatusRequestComplete_Rude1: "「ああ…それはいいことです。ありがとう、少年。」" #!String
+    PondQuery_StatusRequestComplete_Rude2: "「ありがとう、ボス！」" #!String
+    PondQuery_StatusRequestComplete_Stiff0: "「ああ…要求した{0}です。」" #!String
+    PondQuery_StatusRequestComplete_Stiff1: "「この{0}は私たちのニーズに応えてくれます。」" #!String
+    PondQuery_StatusRequestComplete_Stiff2: "魚は{0}に満足してるようだね。" #!String
+    PondQuery_StatusRequestComplete_Demanding0: "「ありがとう！ありがとう！」" #!String
+    PondQuery_StatusRequestComplete_Demanding1: "「{0}！ {0}！ {0}！幸せだったよ！」" #!String
+    PondQuery_StatusRequestComplete_Demanding2: "輪になって魚が泳いでます。" #!String
+    PondQuery_StatusRequestComplete_Carnivore0: "「{0}は今夜のメニューに登場！」" #!String
+    PondQuery_StatusRequestComplete_Carnivore1: "「魚の{0}！おいしい...」" #!String
+    PondQuery_StatusRequestComplete_Carnivore2: "「この{0}は美味しそうだね。ありがとうご！」" #!String
+    PondQuery_StatusRequestComplete0: "「わぉ、{0}に感謝だね！」" #!String
+    PondQuery_StatusRequestComplete1: "「ねぇ、見て、{0}だ。必要なものだけ！」" #!String
+    PondQuery_StatusRequestComplete2: "「ヘイ！この{0}はかなり良いね！」" #!String
+    PondQuery_StatusRequestComplete3: "「ありがとう！この{0}は健康に良いんだよ。」" #!String
+    PondQuery_StatusRequestComplete4: "「ああ、{0}...本当に家にいるような気分にさせてくれるね。」" #!String
+    PondQuery_StatusRequestComplete5: "「みなさん、見てください...新鮮な{0}！」" #!String
+    PondQuery_StatusRequestComplete6: "その魚は幸せそうだね。" #!String
+    PondQuery_StatusRequestOneCount: "一部" #!String
+    AlreadyDatingBouquet: "もう{0}とデートしてます。" #!String
+    MovieStartRequest: "映画が始まろうとしてます！" #!String
+    MiniFridge_NoKitchen: "台所のある家にしかミニ冷蔵庫は置けません。" #!String
+    Kitchen_InUse: "いま台所用品が使われています。後でもう一度やり直してください。" #!String
+    ItemGrab_FillStacks: "既存のスタックに追加します" #!String
+    OptionsPage_OpenFolder: ">保存先のフォルダーを開" #!String
+    Calendar_Wedding: "{0}と{1}の結婚式" #!String
+    Options_Vsync: "VSync" #!String
+    VersionMismatch: "バージョン不一致（{0}）" #!String
+    Options_GamepadMode: "ゲームパッドモード" #!String
+    Options_GamepadMode_Auto: "自動検出" #!String
+    Options_GamepadMode_ForceOn: "オン" #!String
+    Options_GamepadMode_ForceOff: "オフ" #!String
+    AGO_Label: "高度なゲームオプション：" #!String
+    AGO_CCB: "公民館バンドル：" #!String
+    AGO_CCB_Tooltip: "公民館に表示されるバンドルを変更します。" #!String
+    AGO_CCB_Normal: "ノーマル" #!String
+    AGO_CCB_Remixed: "リミックス" #!String
+    AGO_Year1Completable: "1年目の完全保証" #!String
+    AGO_Year1Completable_Tooltip: "行商人が、1年目に何度か赤キャベツのタネを販売することを保証します。" #!String
+    AGO_MineTreasureShuffle: "鉱山の報酬：" #!String
+    AGO_MineTreasureShuffle_Tooltip: "鉱山に表示される報酬を変更します。" #!String
+    AGO_FarmMonsters: "農場でのモンスター出現" #!String
+    AGO_FarmMonsters_Tooltip: "夜間にモンスターが出現するようにします。" #!String
+    AGO_ProfitMargin_Tooltip: "販売された商品の価格にかかる乗数です。" #!String
+    AGO_MPOptions_Label: "マルチプレイヤーのオプション：" #!String
+    AGO_StartingCabins_Tooltip: "スタート時のキャビンの数。" #!String
+    AGO_OtherOptions_Label: "その他のオプション：" #!String
+    AGO_CabinLayout_Tooltip: "キャビンがお互いの近くに配置されるか、遠くに配置されるか。" #!String
+    AGO_RandomSeed: "ランダムなシード：" #!String
+    AGO_RandomSeed_Tooltip: "ゲームの世界をランダムにするために使用されるシード。" #!String
+    AGO_LegacyRandomization: "従来のランダム化を使用する" #!String
+    AGO_LegacyRandomization_Tooltip: "パターンを繰り返すようなランダムな選択をする。ほとんどのプレイヤーはこれを無効にするべき。" #!String
+    Options_SlingshotMode: "パチンコの発射モード" #!String
+    Options_SlingshotMode_Hold: "長押しして離す" #!String
+    Options_SlingshotMode_Pull: "反対方向に引っぱる" #!String
+    Bed_InUse: "現在使用中のベッドは移動することができません。" #!String
+    Bed_CantMoveOthersBeds: "他のプレイヤーの家のベッドを移動することはできません。" #!String
+    Bed_NeedsUpgrade: "このタイプのベッドは、家をグレードアップしないと置くことができません。" #!String
+    Chat_LobbyLost: "ゲームセッションから切断されました。{0}" #!String
+    Chat_LobbyLost_UserLeft: "（ユーザーがセッションから退出しました）" #!String
+    Chat_LobbyLost_LobbyClosed: "（セッションが終了しました）" #!String
+    Chat_LobbyLost_ConnectionLost: "（ロビーサーバーへの接続が失われました）" #!String
+    Chat_LobbyJoined: "ゲームセッションに接続しました。{0}" #!String
+    Chat_LobbyRecreated: "新しいゲームセッションを開設しました。{0}" #!String
+    Chat_LobbyJoined_InviteCode: "（招待コード：{0}）" #!String
+    Chat_LobbyCreateFail: "新しいゲームセッションの開設に失敗しました。" #!String
+    Chat_StartingServer: "あなたがマルチプレイヤーゲームのホストです。" #!String
+    Chat_DisablingServer: "あなたはマルチプレイヤーゲームのホストではありません。" #!String
+    Farmhand_Locked: "他のプレイヤーのキャラクターです。" #!String
+    Forge_Unforge: "鍛造を解除" #!String
+    Item_Tooltip_Forged: "鍛造済み" #!String
+    LocalJoinPrompt: "*トを押してゲームに参加する。" #!String
+    StartLocalMulti: "ローカル協力プレイをスタート" #!String
+    DropOutLocalMulti: "ゲームを終了" #!String
+    ChooseOne: "ひとつ選ぶ：" #!String
+    Carpenter_PaintBuildings: "建物をペイントする" #!String
+    Carpenter_CannotPaint: "この建物はペイントできません" #!String
+    Carpenter_CannotPaint_Permission: "この建物のペイントは許可されていません" #!String
+    GameMenu_MoveBuildingPermissions: "建物の移動モード" #!String
+    GameMenu_MoveBuildingPermissions_Off: "ホストのみ" #!String
+    GameMenu_MoveBuildingPermissions_Owned: "建物の所有者のみ" #!String
+    GameMenu_MoveBuildingPermissions_On: "誰でも" #!String
+    Character_FarmBeach: "ビーチの牧場_採取や釣りに適していて敷地がとても広い。補給用の木枠が岸に流れ着くことがある。しかし、砂地ではスプリンクラーが機能しない。" #!String
+    Forge_enchanting: "エンチャントしています…" #!String
+    Forge_forging: "鍛造しています…" #!String
+    Forge_description1: "左のスロットに武器や道具を配置します。右のスロットに宝石を配置します。" #!String
+    Forge_description2: "2つの指輪を組み合わせることもできます。" #!String
+    Forge_shards: "鍛造すると噴石のかけらを消費します。" #!String
+    Forge_notenoughshards: "噴石のかけらが足りません…" #!String
+    Forge_wrongorder: "順番が違います" #!String
+    Forge_noroom: "持ち物に空きがありません…" #!String
+    Forge_unforge_right_slot: "鍛造を解除するには、右のスロットを空けてください…" #!String
+    Forge_unforge_invalid: "鍛造されたアイテムと、組み合わせた指輪しか鍛造を解除できません…" #!String
+    Forge_valid: "鍛造を開始するには、電源ボタンを押してください！" #!String
+    Chat_BuildingBuild: "{0}が{1}{2}の建設をリクエストしました！" #!String
+    Chat_BuildingMagicBuild: "{0}が{1}{2}を召喚しました！" #!String
+    Chat_HouseUpgrade: "{0}が{1}の家の建設をリクエストしました！" #!String
+    Chat_CommunityUpgrade: "{0}がコミュニティのアップグレードをリクエストしました！" #!String
+    Chat_AcceptedSpecialOrder: "{0}が特別注文「{1}」を引き受けました！" #!String
+    Chat_CompletedSpecialOrder: "特別注文「{0}」は達成されました！" #!String
+    Chat_DartsWin: "{0}が{1}投でダーツに勝利しました！" #!String
+    Chat_DartsWinPerfect: "{0}がパーフェクトゲームでダーツに勝利しました！" #!String
+    Darts_OffTheIsland: "的を外れました…" #!String
+    Darts_Bull: "ブル！" #!String
+    Darts_Bullseye: "ブルズアイ！" #!String
+    Darts_PointsToGo: "勝利まで{0}ポイント" #!String
+    Darts_PointToGo: "勝利まで{0}ポイント" #!String
+    Darts_WinText: "あなたは{0}投で勝利しました！" #!String
+    Darts_WinTextPerfect: "パーフェクトゲーム！" #!String
+    Chat_FieldOfficeDonation: "{0}が島のフィールドオフィスに{1}を寄付しました。" #!String
+    Chat_RepairBoatAnchor: "{0}がウィリーのボートのイカリを修理しました！" #!String
+    Chat_RepairBoatHull: "{0}がウィリーのボートの船体を修理しました！" #!String
+    Chat_RepairBoatMachine: "{0}がウィリーのボートの近くにある発券機を修理しました！" #!String
+    Chat_RepairBoat: "ウィリーの船を修理する準備が整いました！" #!String
+    Chat_UpgradePerch_House: "{0}がオウムに、島の農家の修復を依頼しました！" #!String
+    Chat_UpgradePerch_House_Mailbox: "{0}がオウムに、島への手紙の配達を始めるよう依頼しました！" #!String
+    Chat_UpgradePerch_VolcanoShortcutOut: "{0}がオウムに、火山からの近道を作るよう依頼しました！" #!String
+    Chat_UpgradePerch_VolcanoBridge: "{0}がオウムに、火山に橋をかけるよう依頼しました！" #!String
+    Chat_UpgradePerch_Turtle: "{0}がオウムに、島の西への道を切り開くよう依頼しました！" #!String
+    Chat_UpgradePerch_ParrotPlatforms: "{0}がオウムに、オウム特急便の再開を依頼しました！" #!String
+    Chat_UpgradePerch_Bridge: "{0}がオウムに、テントの近くの橋の修理を依頼しました！" #!String
+    Chat_UpgradePerch_Resort: "{0}がオウムに、島のリゾートの復興を依頼しました！" #!String
+    Chat_UpgradePerch_Hut: "{0}がオウムにクルミをあげました！" #!String
+    UpgradePerch_Hut: "（オウ）クルミ！（オウ）くれる？" #!String
+    UpgradePerch_Resort: "（オウ）…{0}個のクルミ！（オウ）…リゾートを作る！" #!String
+    UpgradePerch_House: "（オウ）…{0}個のクルミ！（オウ）…睡眠小屋を修理！" #!String
+    UpgradePerch_House_Mailbox: "（オウ）…{0}個のクルミ！（オウ）…手紙を配達！" #!String
+    UpgradePerch_VolcanoShortcutOut: "（オウ）…{0}個のクルミ！（オウ）…出口への近道！" #!String
+    UpgradePerch_VolcanoBridge: "（オウ）…{0}個のクルミ！（オウ）…橋をかける！" #!String
+    UpgradePerch_Turtle: "（オウ）…{0}個のクルミ！（オウ）…カメを起こす！" #!String
+    UpgradePerch_ParrotPlatforms: "（オウ）…{0}個のクルミ！（オウ）…オウム特急便！" #!String
+    UpgradePerch_Bridge: "（オウ）…{0}個のクルミ！（オウ）…橋を修理！" #!String
+    ItemHover_DiamondForge_Singular: "+{0}ランダムな鍛造" #!String
+    ItemHover_DiamondForge_Plural: "+{0}ランダムな鍛造" #!String
+    UpgradePerch_Trader: "（オウ）…{0}個のクルミ！（オウ）…貿易小屋を作る！" #!String
+    UpgradePerch_Obelisk: "（オウ）…{0}個のクルミ！（オウ）…ワープタワーを作る！" #!String
+    Chat_UpgradePerch_Trader: "{0}がオウムに、貿易小屋を作るよう依頼しました！" #!String
+    Chat_UpgradePerch_Obelisk: "{0}がオウムに、「農場オベリスク」を作るよう依頼しました！" #!String
+    Chat_FieldOfficeCompleteSet: "{0}が島のフィールドオフィスの作品を完成させました！" #!String
+    Chat_PassedOut_VolcanoDungeon: "{0}は今夜は火山で眠っています…" #!String
+    Chat_PassedOut_Hospital: "{0}は今夜は病院にいます。" #!String
+    Chat_PassedOut_Saloon: "{0}はサルーンで眠りました。" #!String
+    Chat_PassedOut_Tent: "{0}はライナスのテントで眠りました。" #!String
+    Chat_PassedOut_Sewer: "{0}はミシン中に眠りました。" #!String
+    Chat_StockList: "ピエールは現在すべての季節のタネを販売しています。" #!String
+    Chat_FinishedSurvey: "{0}は島の生き物を正確に調査しました。" #!String
+    Chat_HardModeMinesActivated: "{0}は鉱山の古代の魔法の封印を解きました。今夜、強力なモンスターたちが深部から上がって来るでしょう…" #!String
+    Chat_HardModeMinesDeactivated: "{0}は鉱山の古代の魔法の封印を元に戻しました。明日、鉱山は普段の姿を取り戻すでしょう…" #!String
+    ParrotPlatform_Volcano: "火山" #!String
+    ParrotPlatform_Archaeology: "発掘現場" #!String
+    ParrotPlatform_Forest: "ジャングル" #!String
+    ParrotPlatform_Farm: "牧場" #!String
+    ParrotPlatform_Docks: "ドック" #!String
+    Item_CantBeUsedHere: "このアイテムはここでは使用できません。" #!String
+    Item_Tooltip_GalaxyForged: "魂" #!String
+    Chat_InfinityWeapon: "{0}は{1}を鍛錬しました。" #!String
+    Chat_Lupini: "{0}はルピーニのオリジナルを購入しました。" #!String
+    FruitTree_PlacementWarning: "{0}はここでは育ちません。" #!String
+    Chat_Eternal1: "あなたは心の中で感じています：きっとどこかで…おじいさんは、誇らしげに見守っていることでしょう。" #!String
+    Chat_Eternal2: "{0}牧場が受け継いだものは永遠なのです。" #!String
+    Chat_Eternal3: "遠くの方でゴロゴロと音がしました…" #!String
+    NameChange_EasterEgg1: "ConcernedApe：それはどういう名前なんだい？怪しいな…" #!String
+    NameChange_EasterEgg2: "ミスターQi：落ち着くんだ{0}。君にはがっかりしたよ。君はこのゲームを真面目にプレイする気はないのかい？" #!String
+    NameChange_EasterEgg3: "*おじいさんは首を横に振っています…「わしはこの牧場を昔ながらの方法で作り上げた、何をやってもわけじゃないんだよ、{0}…」" #!String
+    NameChange_EasterEgg4: "ConcernedApeは、あなたが不正をしていると怒っています…" #!String
+    NameChange_EasterEgg5: "ConcernedApe：本当は怒ってないよ…楽しんでね。" #!String
+    NameChange_EasterEgg6: "全車応答せよ！全車応答せよ！{1}泥棒が逃走中だ！" #!String
+    PT_Title: "パーフェクショントラッカー" #!String
+    PT_Shipped: "作物＆採取物の出荷" #!String
+    PT_Obelisks: "牧場のオベリスク" #!String
+    PT_GoldClock: "牧場の金時計" #!String
+    PT_MonsterSlayer: "モンスタースレイヤーヒーロー" #!String
+    PT_GreatFriends: "グレートフレンズ" #!String
+    PT_FarmerLevel: "牧場主レベル" #!String
+    PT_Stardrops: "すべてのスタードロップの発見" #!String
+    PT_Cooking: "作った料理のレシピ" #!String
+    PT_Crafting: "作ったクラフトのレシピ" #!String
+    PT_Fish: "釣った魚" #!String
+    PT_GoldenWalnut: "見つけた金のクルミ" #!String
+    PT_Total: "コンプリートの合計" #!String
+    PT_Total_Value: "{0}%" #!String
+    PT_Total_ValueWithWaiver: "{0}%（うち 1％ 放棄）" #!String
+    PT_Total_ValueWithWaivers: "{0}%（うち {1}％ 放棄）" #!String
+    EndCredit_Neighbors: "隣人" #!String
+    EndCredit_Animals: "動物" #!String
+    EndCredit_Fish: "魚" #!String
+    EndCredit_Monsters: "モンスター" #!String
+    EndCredit_ShadowPeople: "シャドウ" #!String
+    EndCredit_Slimes: "スライム" #!String
+    EndCredit_Bats: "コウモリ" #!String
+    ParrotPlatform_Question: "オウム特急便を使う?" #!String
+    NextPage: "次のページ" #!String
+    PreviousPage: "前のページ" #!String
+    TextSignEntry: "看板の文字を入力" #!String
+    Chat_RaceStarting: "次のレースがもうすぐ始まります…" #!String
+    Chat_GuessRacer_1: "{0}は{1}がレースに勝つと思っている…" #!String
+    Chat_GuessRacer_2: "{0}はゴールで{1}の姿を目にするはずだ！" #!String
+    Chat_GuessRacer_3: "{0}は{1}が1位でゴールすることを願っている！" #!String
+    Chat_GuessRacer_4: "{0}は{1}に声援を送っている！" #!String
+    Chat_GuessRacer_5: "{0}はチーム{1}だ！" #!String
+    Chat_GuessRacer_6: "{0}は{1}で間違いないと思っている！" #!String
+    Chat_GuessRacer_7: "{0}は{1}を応援している！" #!String
+    Chat_GuessRacer_8: "{0}は{1}を信じている！" #!String
+    Chat_GuessRacer_9: "{0}は{1}だと自信を持っている！" #!String
+    Chat_GuessRacer_10: "{0}は{1}の勝利を確信している！" #!String
+    Chat_RaceSabotage_1: "次のレースにはあやしいウワサが…" #!String
+    Chat_RaceSabotage_2: "サンディのオアシスの陰からあやしい笑い声が聞こえた…" #!String
+    Chat_RaceSabotage_3: "「修正」が加えられた…" #!String
+    Chat_RaceSabotage_4: "コースが滑りやすくなっているようだ…" #!String
+    Chat_RaceSabotage_5: "小さなレーサーたちは次のレースに向けて緊張しているようだ…" #!String
+    Chat_RaceWinners_Zero: "{0}が優勝だ！" #!String
+    Chat_RaceWinners_One: "{0}が優勝だ！おめでとう{1}！" #!String
+    Chat_RaceWinners_Two: "{0}が優勝だ！おめでとう{1}、{2}！" #!String
+    Chat_RaceWinners_Many: "{0}が優勝だ！おめでとう！" #!String
+    Chat_RaceWinners_List: "{0}," #!String
+    Chat_RaceWinners_Final: "{0}！" #!String
+    Chat_CalicoStatue_Activated: "カリコの像：{0}" #!String
+    Tomorrow: "明日…" #!String
+    Chat_HardModeSkullCaveActivated: "明日…" #!String
+    Chat_HardModeSkullCaveDeactivated: "明日…" #!String
+    BirthdayOrder: "{1}の{0}日" #!String
+    Character_EyeColor.mobile: "目の色" #!String
+    Character_HairColor.mobile: "髪の色" #!String
+    Character_PantsColor.mobile: "ズボンの色" #!String
+    DisplayAdjustmentText: "上下を押し、お使いのディスプレイに画面サイズが合うように調整してください" #!String
+    DisplayAdjustmentButton: "画面サイズ調整" #!String
+    Split_Screen: "分割画面" #!String
+    mobile_options_vertical_toolbar: "ツールバー（縦）" #!String
+    mobile_options_menu_side_margin: "メニュー調整（ノッチスマホ用）" #!String
+    mobile_options_toolbar_padding: "ツールバー調整" #!String
+    mobile_button_craft: "クラフト" #!String
+    shippingInstructionText: "ここにアイテムをドラッグで、販売用に出荷" #!String
+    tutorialWant: "チュートリアルヒントを有効にしますか？" #!String
+    tutorial1: "まずは、自分の見た目と農場タイプを決めようね。デザインし終わったら、チェックボタンをタップしてプレイ開始だよ" #!String
+    tutorial2: "おはよう！ちゃんと後で家に帰って眠って、ゲームデータをセーブするのを忘れないようにね！" #!String
+    tutorial3: "プレゼントを受け取ったよ！小包をタップして開いてみよう！" #!String
+    tutorial4: "新規クエストが「日記」に登場した。クエストをタップして内容を確認してみよう。いろいろ嬉しい情報が書いてあるから！" #!String
+    tutorial5: "日記を見終えたら「閉じる」ボタンをタップしよう" #!String
+    tutorial6: "ちょっと散らかってるね！少し片づけようか" #!String
+    tutorial7: "雑草をタップすると、抜けるよ" #!String
+    tutorial8: "いい感じ！それじゃあ他の雑草や岩もキレイにしよう！" #!String
+    tutorial9: "クワを使って、いろいろ植えるための土を耕そう" #!String
+    tutorial10: "初めての種をまくんだから、いい土を用意しないとね" #!String
+    tutorial11: "上出来だね…さあ種をまいてみようか？" #!String
+    tutorial12: "水が欲しそうだね。ツールバーにジョウロがあるよ" #!String
+    tutorial13: "いい感じ！水やりは毎日忘れずにしよう" #!String
+    tutorial14: "水やりができたら、ペリカンタウンを自由に散策して、新しい隣人にご挨拶しよう！" #!String
+    tutorial15: "ジョウロの水は池や川で補充できるよ" #!String
+    tutorial16: "指先でタップ＆ホールドで、その方向にキャラが歩くよ" #!String
+    tutorial17: "ホールド＆ドラッグで、指先の方向にキャラが歩くよ" #!String
+    tutorial18: "ここで他のゲーム要素も見ておこう" #!String
+    tutorial19: "「持ちもの」で、今持っているアイテムが確認できる。ドラッグで並びを変える、ゴミ箱にドラッグで捨てたりできるよ" #!String
+    tutorial20: "このページではスキルが確認できる。どうぐを使ったり、採集や釣りや戦闘をするとスキルがレベルアップするんだ" #!String
+    tutorial21: "「ソーシャル」ページでは、出会った人たちとの交流の状況が確認できる" #!String
+    tutorial22: "ここでは、集めたり育てたアイテムを使って新しいアイテムをクラフトすることができる。新しいクラフト用レシピはゲームを進めていくといろいろ見つかるよ" #!String
+    tutorial23: "地図上に指をスライドさせて、ペリカンタウンやその周りを見てみよう" #!String
+    tutorial24: "「コレクション」ページは、出荷したり釣ったり採掘したり調理したり発見したもの全てが記録されていくよ" #!String
+    tutorial25: "「商店」では、店員さんのいるカウンターをタップすると商品を売ったり買ったりできるよ" #!String
+    tutorial26: "種を植えたいのですが… 何か家に忘れているものはありませんか？" #!String
+    confirmExit: "ゲーム内の1日分の進捗全てが失われますが、本当に終了しますか？" #!String
+    mobile_options_green_squares: "ガイド（緑の四角）" #!String
+    tutorial_auto_attack: "ゲームオプションにて、オート攻撃かマニュアル攻撃かを選べます。" #!String
+    question_restore_backup: "前回途中でやめたところから再開しますか？" #!String
+    mobile_options_bigger_numbers: "数字のフォントを大きくする" #!String
+    mobile_options_auto_save: "オートセーブ" #!String
+    save_backup: "セーブ バックアップ" #!String
+    swap_saves: "セーブデータ切替" #!String
+    control_method_tap_to_move: "タップ移動 & オート攻撃" #!String
+    control_method_attack_joystick: "タップ移動 & ジョイスティック攻撃" #!String
+    control_method_invis_2: "透明ジョイスティック & ボタン2つ" #!String
+    control_method_invis_1: "透明ジョイスティック & ボタン1つ" #!String
+    control_method_joystick_buttons: "タップ移動 & ジョイスティック & ボタン" #!String
+    control_method_joystick_buttons_no_tap_to_move: "ジョイスティック & ボタン" #!String
+    control_method_joystick_buttons_b: "タップ移動 & (ジョイスティック & ボタン)(武器)" #!String
+    control_method_joystick_buttons_c: "タップ移動 & ジョイスティック & (ボタン)(武器)" #!String
+    control_method_joystick: "タップ移動 & ジョイスティック" #!String
+    show_controls_toggle_button: "操作切替ボタンを表示" #!String
+    button_diameter: "ボタンの直径" #!String
+    adjust_joypad_controls: "ジョイパッド操作調整" #!String
+    invisible_button_width: "透明ボタンの幅" #!String
+    Default: "初期設定" #!String
+    pinch_zoom: "「ピンチズーム」" #!String
+    store_demo: "このスターデューバレーのバージョンは、体験版として特別に作られたものです。" #!String
+    mobile_options_toolbar_slot_size: "ツールバーサイズ" #!String
+    mobile_options_date_time_size: "日付ボックスのサイズ" #!String
+    select_building: "建物を選択" #!String
+    android_storage_migration: "Stardew Valley は、ゲームの 1.5 アップデートのために、ファームを新しい場所に 1 回だけコピーする必要があります。\n\n次の画面で、「StardewValley」フォルダを選択し、「このフォルダを使用」をタップしてください。" #!String
+    mobile_options_larger_font: "ツールチップのフォントを拡大" #!String
+    Syncing_cloud_saves: "クラウド保存を同期しています" #!String
+    Cancel: "キャンセル" #!String
+

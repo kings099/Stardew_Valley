@@ -1,0 +1,73 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Rainy_Day_0: "Me sinto inspirado hoje... Acho que vou escrever um pouco." #!String
+    Rainy_Day_1: "O som da chuva, de certa forma, me lembra da minha cabana na praia.#$e#A fazenda é linda, mas sinto falta do som do oceano." #!String
+    Rainy_Day_2: "Levantei mais cedo e fiz café.[395]#$e#Percebi que uma xícara deste café maravilhoso torna minha manhã bem mais agradável." #!String
+    Rainy_Day_3: "Acho que vou ficar dentro de casa hoje, querido. A chuva faz o meu cabelo perder volume.^Acho que vou ficar dentro de casa hoje, querida. A chuva faz o meu cabelo perder volume." #!String
+    Rainy_Day_4: "Minha inspiração para escrever é como o tempo... vai e vem aleatoriamente. Hoje me sinto completamente sem graça.$s#$e#Acho que vou ler um dos clássicos para fazer com que minha inspiração flua." #!String
+    patio_Elliott: "Ah, que dia lindo para ler um livro! Você não acha, querido?^Ah, que dia lindo para ler um livro! Você não acha, querida?" #!String
+    Rainy_Night_0: "Boa noite. Você teve um dia produtivo, @?^Boa noite. Você teve um dia produtivo, querida?" #!String
+    Rainy_Night_1: "Você está morrendo de frio! Deixe-me aquecê-${lo^la}$.$l" #!String
+    Rainy_Night_2: "Minha habilidade com palavras é sem igual, mas ainda assim não consigo descrever seu encanto.$l^Minha habilidade com palavras é sem igual, mas ainda assim não consigo achar um jeito de descrever sua beleza.$l" #!String
+    Rainy_Night_3: "O que fiz hoje? Só vou dizer... que manter este físico durinho requer muito trabalho!" #!String
+    Rainy_Night_4: "Passei a tarde sonhando com o oceano. Então, decidi cozinhar um pouco de frutos do mar.[198 202 727 728]$h" #!String
+    Indoor_Day_0: "Estou cuidando muito melhor de mim agora que estamos juntos. A minha vida de solteiro não foi muito saudável." #!String
+    Indoor_Day_1: "Bom dia, @! Fiz um bule de café para nós.[395]#$e#Eu fico com vontade de saborear isso todas as manhãs." #!String
+    Indoor_Day_2: "Se você achar uma aranha dentro de casa, não a esmague! Deixe-me saber onde ela está e eu vou tirá-la de casa." #!String
+    Indoor_Day_3: "Hoje vai ser um dia fantástico... Eu consigo sentir!$h#$e#Tem uma sensação diferente no meu nariz..." #!String
+    Indoor_Day_4: "Tenho um pesadelo recorrente com você raspando o meu cabelo... Você não faria isso comigo, faria?$s#$e#Confio em você." #!String
+    Indoor_Night_0: "Da estrela invernal mais brilhante... ao brilho de uma veia de irídio... nada se compara a meu homem maravilhoso.$l^Da mais brilhante estrela invernal, às rosas-de-fada mais cheirosas... nada se compara com sua beleza cativante.$l" #!String
+    Indoor_Night_1: "O som crepitante do fogo dá um clima especial à casa... cada pedaço de madeira queima de um jeito único." #!String
+    Indoor_Night_2: "Nunca tive muito sucesso cultivando plantas na minha antiga casa de praia. Espero aprender uma coisa ou outra assistindo você.#$e#Neste sentido, você é o mestre e eu sou um humilde aprendiz.^Neste sentido, você é a mestra e eu sou um humilde aprendiz." #!String
+    Indoor_Night_3: "Quando eu olho para seu admirável rosto, a mais graciosa e formosa joia, o meu coração... mesmo rasgado pelo pavor da noite, é purificado por uma luz dourada.#$e#A poesia é o único jeito pelo qual posso começar a descrever os meus sentimentos por você.$l" #!String
+    Indoor_Night_4: "Meu amor... Eu não trocaria você por 100 barras de irídio.#$e#Nem 1.000...#$e#Nem 10.000 barras de irídio. Não...$7#$e#...$7#$e#Não, nem mesmo 100.000 barras!$a#$e#...$s#$e#Quê? Um milhão de barras de irídio puro...? Não me force a fazer isso...$8" #!String
+    Outdoor_0: "Meus sonhos mais absurdos se tornaram realidade... olhe para esta paisagem incrível!" #!String
+    Outdoor_1: "O solo fértil ante meus pés, ar fresco para encher os meus pulmões, e o calor do sol para agraciar minha pele... A vida está indo muito bem." #!String
+    Outdoor_2: "Acho que vou ficar aqui e escrever um pouco de poesia. Estou sentindo um sopro repentino de criatividade! Vá em frente e cuide do negócio." #!String
+    Outdoor_3: "Vou ficar completamente imóvel para que talvez uma borboleta resplandecente abençoe meu nariz com seu pouso." #!String
+    Outdoor_4: "Bebi café demais... minha boca está tão seca quanto o Deserto de Calico.$s#$e#Ah... desculpe pelo bafo de café.$7" #!String
+    OneKid_0: "Você tirou um tempo para divertir %kid1 hoje? Talvez uma segunda criança facilite as coisas para nós dois." #!String
+    OneKid_1: "%kid1 vai ter uma infância perfeita aqui. Há tantas coisas para explorar!" #!String
+    OneKid_3: "Cuidar de bebês não é o meu forte... mas farei o melhor para ser um bom pai." #!String
+    TwoKids_0: "Já dei comida para %kid1 e %kid2. Que fome para duas criaturas tão pequenas!" #!String
+    TwoKids_1: "Eu estava carregando %kid1 antes, e jurei ter ouvido \"da-da\".$h" #!String
+    TwoKids_2: "Vou ensinar %kid1 a ler o mais rápido possível. Esta é uma ótima forma para que as crianças aprendam sobre o mundo." #!String
+    TwoKids_3: "Fizemos um ótimo trabalho, @. A fazenda está indo muito bem e nossas crianças são saudáveis. Eu não poderia estar mais feliz." #!String
+    Good_0: "@... Estou tão feliz com seu trabalho duro... Tenho muita sorte de ter você.$l" #!String
+    Good_1: "Escrevi um livro secreto inteiro de poemas expressando meu amor por você.$l" #!String
+    Good_2: "Vim até o vale para achar a torre de marfim a partir da qual os meus talentos poderiam reinar absolutos. Mas só o que achei foi um calabouço de solidão. Você me salvou disso.$l" #!String
+    Good_3: "Nossa, você está lindo hoje! Você fez a barba? Seu maxilar está perfeito.$l^Sua beleza feminina está irresistível hoje. Não consigo tirar meus olhos de você.$l" #!String
+    Good_4: "Sinto-me esgotado por sua ausência. Mas quando ouço o som de botas enlameadas na madeira, meu coração ascende das cinzas." #!String
+    Good_5: "Estou meditando e andando. É bom para a criatividade." #!String
+    Good_6: "Cuidado lá fora! Eu me preocupo sim com você às vezes. Há pessoas no mundo que tirariam vantagem de você." #!String
+    funLeave_Elliott: "Acho que vou caminhar até à praia hoje. É sempre bom ver o oceano de novo." #!String
+    funReturn_Elliott: "Eu me diverti muito na praia hoje. Eu vejo as ondas irem e voltarem, assim como nos velhos tempos." #!String
+    spring_1: "A minha resolução de ano novo é escrever, escrever e escrever! Não posso parar de melhorar minhas habilidades." #!String
+    spring_12: "É estranho, mas tenho desejo por romã na primavera." #!String
+    spring_23: "Espero dançar com você amanhã, amor." #!String
+    summer_1: "É difícil se aborrecer quando o sol está brilhando e as borboletas estão dançando no ar cheio de café-de-jardim.$h" #!String
+    summer_10: "Eu ia pegar uma garrafa a mais de tinta da minha cabana hoje, mas aí lembrei que o luau é amanhã. Vou pegar amanhã então." #!String
+    summer_27: "Todas as coisas chegam a um fim, incluindo os maravilhosos dias do verão. A chave para a felicidade é aceitar mudanças sem julgá-las." #!String
+    fall_1: "O esplendor do outono... um banquete luxuoso para todos os sentidos apreciarem... inspirou alguns dos maiores poetas de todos os tempos." #!String
+    fall_15: "Acho que vou deixar o meu orgulho de lado e afundar meus dentes afoitos em um sanduíche podrão de molho de churrasco amanhã." #!String
+    fall_26: "Você ainda me amaria se eu bebesse 10 litros de cerveja de abóbora no festival da Noite dos Espíritos?Às vezes, um homem tem desejos primitivos..." #!String
+    winter_1: "O inverno é uma ótima época para ler livros e tocar piano. Lembre-se de fazer uma pausa e desfrutar de um momento ou outro de silêncio." #!String
+    winter_7: "Estou meio sem prática, mas planejo entrar em uma competição de pesca amanhã! Você vai encontrar um desafiante terrível, amor." #!String
+    winter_28: "Feliz véspera de ano novo, ${querido^querida}$! Aceite isto para celebrar![348]" #!String
+

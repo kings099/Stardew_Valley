@@ -1,0 +1,29 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "xTile.Pipeline.TideReader, xTile"
+            version: 0
+
+
+    numSharedResources: 0
+
+content: {} #!TBin
+extractedMaps: 
+    - 
+        path: ""
+        tilesheets: 
+            - "characterSheet.png"
+            - "fall_outdoorsTileSheet.png"
+            - "paths.png"
+            - "fall_town.png"
+            - "Festivals.png"
+            - "fall_outdoorsTileSheet2.png"
+            - "fall_Shadows.png"
+            - "fall_Waterfalls.png"
+
+
+

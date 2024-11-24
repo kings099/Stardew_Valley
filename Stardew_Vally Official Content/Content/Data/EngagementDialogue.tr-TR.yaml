@@ -1,0 +1,45 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Maru0: "Çok heyecanlıyım.$h#$b#Eşin olacağım.$l" #!String
+    Maru1: "Çiftçi eşi olmaya zihinsel olarak hazırlanmalıyım." #!String
+    Leah0: "...$l#$e#Gerginim, ama mutluyum.$h" #!String
+    Leah1: "Hep çiftlikte yaşamayı düşlerdim.$h#$e#Çok mutlu olacağım." #!String
+    Haley0: "Çok mutluyum!$h#$e#Aynı hayal ettiğim gibi.$l" #!String
+    Haley1: "Sorun değil. Çiftliğe bakman gerektiği için balayına gidemeyeceğimizi biliyorum.#$e#Ben de çiftçiyim!" #!String
+    Penny0: "@... biraz korkuyorum. Bu çok büyük bir değişiklik!#$e#Aynı zamanda mutluyum! Endişelenme.$h" #!String
+    Penny1: "Yakında küçük bir çiftçi ailemiz olacak.$l#$e#Benimle aile kurmayı istediğin için çok mutluyum.$h" #!String
+    Abigail0: "Hehe. Ben mi? Evlilik mi? Bunun olacağını hiç düşünmemiştim.$h#$e#Birlikte çok eğleneceğiz.$h" #!String
+    Abigail1: "Vay be! Bir çiftçiyle evleniyorum.$h#$e#Bundan sonra hayatlarımız çok farklı olacak.$l" #!String
+    Sam0: "Senin kocan olacağım için çok mutluyum, @.$l#$e#Heyecanlıyım." #!String
+    Sam1: "Bunun olacağını hiç hayal etmemiştim. Çok şanslıyım.$l#$e#Düğün için sabırsızlanıyorum.$h" #!String
+    Sebastian0: "Birkaç gün içinde bir çiftlikte yaşıyor olacağım. İnanamıyorum!$h#$e#Gerçi mutluyum.$l" #!String
+    Sebastian1: "Kasabaya geldiğinde seninle evleneceğimi düşünmemiştim.$l#$e#Hayat çok garip.$h" #!String
+    Harvey0: "Amanın! Düğün hazırlığı yapmam gerekiyor! Gerginim.$l#$e#Çiftliğine yerleştiğimizde rahatlayacağım.$h" #!String
+    Harvey1: "Çok mutluyum.$h#$e#Gizliden gizliye bunu diliyordum.$l" #!String
+    Elliott0: "Çiftlik, yazmak için harika bir yer olacak. İple çekiyorum.$h#$e#Harika bir çift olacağız.$l" #!String
+    Elliott1: "Bu harika bir macera olacak! Çok heyecanlıyım. Yoksa sen değil misin?$h#$e#Barakamı yazlık olarak kullanabiliriz.$l" #!String
+    Alex0: "@, bu olabilecek en iyi şeydi.$l#$e#Sabırsızlanıyorum.$h" #!String
+    Alex1: "Çiftçi olmaya bayılayacağım.$h" #!String
+    Shane0: "Bir yandan bunun özenle hazırlanmış bir şaka olduğunu düşünüyorum.#$e#Benim gibi biriyle evlenmek istediğine inanamıyorum." #!String
+    Shane1: "@... Başım dönüyor. Üstelik, bugün bir bira bile içmedim." #!String
+    Emily0: "Beraber yaşayacağımıza inanabiliyor musun? Ailem dışında kimseyle yaşamamıştım.#$e#Bu... heyecan verici." #!String
+    Emily1: "Aramızda önemli bir şey olacağını hissediyordum... Ama bunun olmasını beklemiyordum!$h#$e#Papağan da heyecanlı." #!String
+    Krobus0: "@... Korkarım bunu sır olarak saklamamız gerekecek... Ne benim halkım ne de senin halkın birlikte yaşamamızı onaylamaz." #!String
+    Krobus1: "Yaşaması ilginç biri olacağımın farkındasın, değil mi? Evden çıkamayacağım..." #!String
+

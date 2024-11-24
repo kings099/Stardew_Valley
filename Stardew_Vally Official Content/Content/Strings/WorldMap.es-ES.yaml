@@ -1,0 +1,33 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    GingerIsland_East_JungleHut: "Cabaña de Jungla" #!String
+    GingerIsland_North_DigSite: "Lugar de Excavación" #!String
+    GingerIsland_North_FieldOffice: "Sucursal" #!String
+    GingerIsland_North_Trader: "Comerciante Isleño" #!String
+    GingerIsland_North_Volcano: "Volcán" #!String
+    GingerIsland_South_Dock: "Barco de Willy" #!String
+    GingerIsland_South_Resort: "Centro turístico" #!String
+    GingerIsland_SouthEast_PirateCove: "Cala Pirata" #!String
+    GingerIsland_West_BirdieShack: "Choza de Birdie" #!String
+    GingerIsland_West_GourmandCave: "Rana Glotona" #!String
+    GingerIsland_West_House: "Granja Isleña" #!String
+    GingerIsland_West_QiWalnutRoom: "Habitación de las Nueces de Qi" #!String
+    GingerIsland_West_Shipwreck: "Naufragio" #!String
+    GingerIsland_West_TigerSlimeGrove: "Arboleda de Babas Tigre" #!String
+

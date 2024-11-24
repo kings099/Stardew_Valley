@@ -1,0 +1,25 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    winter_17.000: "Você viu o show da sereia? É o meu favorito..." #!String
+    marriage_Mon.000: "Vou passar o dia inteiro aqui. Meus avós não vão ficar aqui para sempre..." #!String
+    summer_16.000: "Oi. Ah, eu só torci meu tornozelo. Só estou vendo se consigo enfaixá-lo." #!String
+    summer_16.001: " Sim, sim... Estou bem, doutor. Enfaixa ele para mim, por favor?" #!String
+    Sun.000: "%Alex está completamente focado no jogo. Ele não nota sua presença." #!String
+    Sun.000_married: "Ei, @! Você pode assistir o jogo com a gente se quiser, mas sem pressão se estiver sem tempo." #!String
+

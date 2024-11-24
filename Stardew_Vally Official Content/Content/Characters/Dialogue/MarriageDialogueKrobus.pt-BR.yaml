@@ -1,0 +1,108 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Rainy_Day_0: "Você gosta de dias chuvosos tanto quanto eu, @?" #!String
+    Rainy_Day_1: "Nós somos diferentes de tantas maneiras... mas isso não é ruim." #!String
+    Rainy_Day_2: "Bom dia, @. Eu sai mais cedo e encontrei isso para você. [305 308 203 795 397]#$e#Espero que não seja muito estranho." #!String
+    Rainy_Day_3: "Me pergunto se o mago sabe sobre... isso? Espero que ele saiba manter segredo.$s" #!String
+    Rainy_Day_4: "Mesmo que eu tente ser civilizado, eu tenho vontade de ser maldoso às vezes...$6#$e#As pessoas falam que essa é a condição do meu povo." #!String
+    Rainy_Day_Krobus: "Ah, hoje está mais úmido por causa da chuva... Me sinto muito mais confortável." #!String
+    Rainy_Night_0: "Em noites como esta, aqueles que olham pela janela às vezes veem figuras sombrias. E pensar... que pode ter sido eu.$7" #!String
+    Rainy_Night_1: "Se outras pessoas das sombras soubessem da nossa situação, eles iriam... me 'punir'.$s#$e#A maioria deles odeiam humanos." #!String
+    Rainy_Night_2: "Você está pingando, e com frio! Isso não é perigoso para sua espécie?$s" #!String
+    Rainy_Night_3: "Eu já jantei, mas não era algo que você pode comer... me desculpe." #!String
+    Rainy_Night_4: "Desde que eu deixei meu povo, estive procurando por uma nova casa... agora eu pertenço em algum lugar. Isso significa tudo para mim." #!String
+    Rainy_Night_5: "É dito que meu povo chegou aqui há muito tempo, quando uma grande catástrofe permitiu que espíritos do vazio atravessassem para o plano físico." #!String
+    Rainy_Night_Krobus: "O barulho da chuva me lembra os esgotos... é confortante.#$e#Os esgotos eram o meu refúgio... eu me sentia seguro lá. Mas não se preocupe... Eu também me sinto seguro aqui." #!String
+    Indoor_Day_0: "Se eu pudesse te ajudar, eu iria... mas eu vou fazer o meu melhor para deixar a casa arrumada." #!String
+    Indoor_Day_1: "Eu dei o meu melhor para fazer comida humana... [203 204 651 225]#$e#Você pode comer depois, não se preocupe..." #!String
+    Indoor_Day_2: "Estou feliz aqui, na casa. Eu gosto de ficar o dia inteiro em um bom lugar... Eu não preciso 'sair' como os humanos.#$e#Mas eu entendo suas necessidades! Não sinta como se precisasse ficar aqui comigo.$3" #!String
+    Indoor_Day_3: "Estou considerando ficar o dia inteiro encolhido e parado em um canto...#$e#O quê? Você não faz isso?$3" #!String
+    Indoor_Day_4: "Nas sextas-feiras, eu gosto de ficar quieto em respeito à Ioba. Espero que não se importe." #!String
+    Indoor_Day_Krobus: "Eu queria muito te ajudar na fazenda, mas eu não posso sair no sol..." #!String
+    Indoor_Night_0: "Eu acabei com todos os insetos da casa hoje... Desculpe, eu não guardei nenhum para você!$7" #!String
+    Indoor_Night_1: "Você parece consistente... eu também queria ter ossos...$s" #!String
+    Indoor_Night_2: "Às vez eu me pergunto se humanos e pessoas das sombras poderiam coexistir... É uma ideia legal, mas será que é realista?$s#$e#Eu espero que sim..." #!String
+    Indoor_Night_3: "Às vezes eu paro e penso que aprendi sobre humanos com você...#$b#Queria que todas as pessoas das sombras pudessem saber como é este sentimento." #!String
+    Indoor_Night_4: "Eu quero ser um bom companheiro para você, mas eu nunca sei se estou fazendo o certo... *suspiro* $s#$e#Eu não consigo entender expressões humanas. M... mas... você está feliz morando comigo?#$e#Ok!$7" #!String
+    Indoor_Night_Krobus: "Oi, @. Boa noite. Parece que você tem trabalhado duro!$h" #!String
+    Outdoor_0: "Eu vou ficar aqui fora um pouco, mas temos que tomar cuidado... se alguém aparecer eu tenho que me esconder!" #!String
+    Outdoor_1: "É raro eu poder sair de casa!" #!String
+    Outdoor_2: "Que dia lindo!$h" #!String
+    Outdoor_3: "Lugares muito abertos me deixam nervoso...$s" #!String
+    Outdoor_4: "Pode continuar com suas tarefas, eu vou ficar aqui e proteger a casa." #!String
+    Outdoor_Krobus: "Vou esperar aqui um pouco, e ver se algum inseto aparece.#$e#Eu ainda não tive um café da manhã!" #!String
+    OneKid_3: "Eu não sei como, mas Ioba abençoou esta casa com uma 'criança'..." #!String
+    TwoKids_0: "Não se preocupe... Eu já fiz um omelete de ovo nulo para %kid1 e %kid2." #!String
+    TwoKids_2: "Eu me preocupo com o futuro das crianças... Mas eu confio que Ioba tenha um plano." #!String
+    TwoKids_3: "Esta casa foi abençoada com duas crianças, agora... Isso significa que Ioba aprova a nossa condição não convencional?" #!String
+    Good_1: "Eu sinto uma sensação no meu corpo... seria isso... 'amor platônico'?$l#$b#... Oh, espera... minha pele só está descamando.$s" #!String
+    Good_2: "Eu aprendi a superar meu preconceito contra humanos... mas eu ainda tenho nojo de anões.$a" #!String
+    Good_3: "Você começou a me morder durante a noite, e estava sussurando sobre 'alca luz preto'... o que queria dizer?$3" #!String
+    Good_0: "Estamos fazendo progresso, e estou bem esperançoso.$h" #!String
+    Good_5: "Eu só estava admirando esta linda casa... que lugar incrível.$l" #!String
+    Neutral_0: "Eu nunca vou envelhecer, mas você vai. Às vezes isso me deixa triste... mas está tudo bem.$s" #!String
+    Neutral_1: "Você acha que seu avô aprovaria um monstro viver na casa dele?" #!String
+    Neutral_2: "Você acha que teremos problemas por morarmos juntos?$s" #!String
+    Neutral_3: "Está muito claro aqui... acho que vou fechar meus olhos por algumas horas.$s" #!String
+    Neutral_4: "Não posso ir lá fora, só posso comer certas comidas, eu preciso de uma certa temperatura... Eu espero que não seja um problema morar comigo, @.$s" #!String
+    Neutral_5: "Welwick falou que eu estou amaldiçoado hoje.$s" #!String
+    Neutral_6: "Vou te contar um segredo... eu não durmo, eu só fico deitado com meus olhos fechados..." #!String
+    Neutral_7: "Você é bem incomum, para querer viver com uma criatura como eu." #!String
+    Neutral_8: "Eu vou limpar a casa o dia todo! Isso é divertido.$7" #!String
+    Neutral_9: "Vamos viver aqui nossa vida inteira? Se mudar provavelmente seria muito perigoso para mim." #!String
+    Bad_1: "*suspiro*... Talvez eu devesse ter ficado com o meu povo.$s" #!String
+    Bad_0: "...Você ainda gosta de mim?$s" #!String
+    Bad_2: "Você ainda está feliz, morando comigo?$s" #!String
+    Bad_4: "Acho que você seria mais feliz morando com outro humano...$s" #!String
+    Bad_5: "Eu notei uma mudança no seu comportamento... o que significa? *suspiro*$s" #!String
+    Bad_6: "Você só tem uma pequena vida para viver... tem certeza de que quer gastá-la com uma criatura como eu?$s" #!String
+    Bad_7: "Talvez uma relação como essa seja destinada a falhar...$s" #!String
+    Bad_8: "Você parece infeliz ultimamente...$s" #!String
+    Bad_9: "Sinto falta dos esgotos.$s" #!String
+    spring_5: "..." #!String
+    spring_12: "..." #!String
+    spring_19: "..." #!String
+    spring_26: "..." #!String
+    winter_5: "..." #!String
+    winter_12: "..." #!String
+    winter_19: "..." #!String
+    winter_26: "..." #!String
+    summer_5: "..." #!String
+    summer_12: "..." #!String
+    summer_19: "..." #!String
+    summer_26: "..." #!String
+    fall_5: "..." #!String
+    fall_12: "..." #!String
+    fall_19: "..." #!String
+    fall_26: "..." #!String
+    spring_1: "Qual é o seu plano para o novo ano, @?" #!String
+    spring_23: "Você deveria ir para a dança das flores amanhã! Não se preocupe comigo." #!String
+    summer_1: "Eu sou queimado pelo sol muito facilmente, então eu preciso ter cuidado nessa época do ano." #!String
+    summer_8: "Mmm... que cheiro maravilhoso é este? Você deve ter suado a noite toda...$h" #!String
+    summer_15: "É verão... isso significa que a casa está cheia de insetos.#$e#Não se preocupe, vou cuidar deles. É proteína!$h" #!String
+    fall_8: "Estou com vontade de não fazer nada hoje." #!String
+    fall_15: "Você já sabe o que vai usar na competição amanhã?" #!String
+    fall_24: "Se eu aparecesse no festival da Véspera dos Espíritos eles me colocariam em uma jaula...$s" #!String
+    winter_28: "Obrigado por me deixar ficar aqui, @. Estou ansioso pelo próximo ano!$h" #!String
+    spouseRoom_Krobus: "#$c .5#Nós somos tão diferentes fisicamente que é um desafio morarmos juntos, não é?#$e#Eu espero que a umidade aqui não te incomode. Nós dois temos que nos comprometer para vivermos juntos!" #!String
+    spring_Krobus: "É 'primavera' agora, não é? Consigo sentir o cheiro picante de raiz-forte." #!String
+    summer_Krobus: "Você chama essa época do ano de 'verão', certo? O calor e a umidade são legais, mas eu queria que não fosse tão ensolarado." #!String
+    fall_Krobus: "Eu tenho me sentido um pouco mais frio, com um cheiro de mofo. Você chama essa época do ano de 'outono', correto?" #!String
+    winter_Krobus: "A escuridão dessa época do ano é bem relaxante. Se pelo menos fosse mais quente!" #!String
+

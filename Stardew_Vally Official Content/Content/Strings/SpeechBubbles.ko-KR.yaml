@@ -1,0 +1,89 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    ScienceHouse_Robin_Raining1: "날씨 좀 그래, 그치?" #!String
+    ScienceHouse_Robin_Raining2: "어머, 다 젖었구나!" #!String
+    ScienceHouse_Robin_NotRaining1: "안녕, 산책은 잘했어?" #!String
+    ScienceHouse_Robin_NotRaining2: "안녕!" #!String
+    ScienceHouse_Robin_Snowing: "여긴 따뜻하고 좋네!" #!String
+    ScienceHouse_Robin_NotSnowing: "거기 안녕!" #!String
+    ScienceHouse_Robin_CloseFriends: "안녕 {0}!" #!String
+    ScienceHouse_Robin_NotCloseFriends: "짓고 싶은 거 있어?" #!String
+    ScienceHouse_Robin_Greeting: "어서오세요!" #!String
+    ScienceHouse_Robin_RareGreeting: "루...? 오..." #!String
+    AnimalShop_Marnie_Greeting1: "안녕!" #!String
+    AnimalShop_Marnie_Greeting2: "안녕!" #!String
+    AnimalShop_Marnie_CloseFriends: "안녕, {0}" #!String
+    AnimalShop_Marnie_NotCloseFriends: "필요한 거 있어?" #!String
+    AnimalShop_Marnie_Raining: "발 닦고 들어와!" #!String
+    AnimalShop_Marnie_NotRaining: "안녕! 날씨는 어때?" #!String
+    AnimalShop_Marnie_Greeting3: "안녕! {1} 농장은 요즘 어때?" #!String
+    AnimalShop_Marnie_RareGreeting: "루...? 오..." #!String
+    AdventureGuild_Marlon_Greeting_Male: "돌아오셨구먼!" #!String
+    AdventureGuild_Marlon_Greeting_Female: "돌아오셨구먼!" #!String
+    AdventureGuild_Marlon_Greeting1: "새 칼 하나 안 필요해?" #!String
+    AdventureGuild_Marlon_Greeting2: "환영하네." #!String
+    AdventureGuild_Marlon_Greeting3: "길, 일어나! 손님 왔다." #!String
+    AdventureGuild_Marlon_Greeting4: "좋은 저녁." #!String
+    Hospital_Maru_Greeting1: "예약 있으신가요?" #!String
+    Hospital_Maru_Greeting2: "어떻게 도와드릴까요?" #!String
+    Hospital_Maru_Greeting3: "의약품도 판매하고 있어요!" #!String
+    Hospital_Maru_Greeting4: "응급상황인가요?" #!String
+    Hospital_Maru_Greeting5: "의사선생님 보러 오셨나요?" #!String
+    Hospital_Maru_Spouse: "안녕, 여보 <" #!String
+    LeahHouse_Leah_Greeting1: "오, 안녕!" #!String
+    LeahHouse_Leah_Greeting2: "안녕." #!String
+    LeahHouse_Leah_Greeting3: "안녕, {0}" #!String
+    ElliottHouse_Elliott_Greeting1: "방문해주다니, 친절한걸." #!String
+    ElliottHouse_Elliott_Greeting2: "안녕." #!String
+    ElliottHouse_Elliott_Greeting3: "안녕, {0}" #!String
+    JojaMart_Morris_Greeting: "조자 마트에 오신 걸 환영합니다!" #!String
+    SandyHouse_Sandy_Greeting1: "가엾어라, 다 탔구나!" #!String
+    SandyHouse_Sandy_Greeting2: "오, 누가 왔다!" #!String
+    SandyHouse_Sandy_Greeting3: "목말라 보여!" #!String
+    SandyHouse_Sandy_Greeting4: "희귀한 씨앗 팔아요!" #!String
+    SandyHouse_Sandy_Greeting5: "자기, 뭐라도 안 살래?" #!String
+    ManorHouse_Lewis_Morning: "좋은 아침!" #!String
+    ManorHouse_Lewis_Afternoon: "좋은 오후." #!String
+    ManorHouse_Lewis_Evening: "좋은 저녁." #!String
+    Saloon_Gus_Greeting: "들어오시게, 들어와!" #!String
+    Saloon_Gus_Summer: "차가운 걸로 한잔?" #!String
+    Saloon_Gus_NotSummer: "뭐 갖다 줄까?" #!String
+    Saloon_Gus_Snowing1: "밖은 춥지만 우리 커피는 뜨겁지!" #!String
+    Saloon_Gus_NotSnowing1: "따끈한 한 끼 필요해?" #!String
+    Saloon_Gus_Raining: "뜨끈한 걸로 한잔?" #!String
+    Saloon_Gus_NotRaining: "뭐라도 한잔 줄까?" #!String
+    Saloon_Gus_Snowing2: "추운데 있지말고 들어와!" #!String
+    Saloon_Gus_NotSnowing2: "환영하네!" #!String
+    Saloon_Gus_RareGreeting: "뭔가 한잔 필요한 얼굴인데." #!String
+    ArchaeologyHouse_Gunther_Greeting1: "새로운 걸 찾으셨나요?" #!String
+    ArchaeologyHouse_Gunther_Greeting2: "뭔가 파낸 게 있나요?" #!String
+    ArchaeologyHouse_Gunther_Greeting3: "제 전문지식이 필요한가요?" #!String
+    ArchaeologyHouse_Gunther_Greeting4: "안녕하세요." #!String
+    ArchaeologyHouse_Gunther_Greeting5: "가져오신 게 있나요?" #!String
+    ArchaeologyHouse_Gunther_RareGreeting: "흙냄새가 나는군요... 좋아요!" #!String
+    SeedShop_Pierre_Winter: "피에르네 난방 잘 된 가게에 어서 오세요!" #!String
+    SeedShop_Pierre_NotWinter: "피에르네 오신 걸 환영합니다!" #!String
+    SeedShop_Pierre_Summer: "여름 씨앗 판매 중입니다!" #!String
+    SeedShop_Pierre_NotSummer: "씨앗 팔아요!" #!String
+    SeedShop_Pierre_Greeting1: "안녕하세요!" #!String
+    SeedShop_Pierre_Greeting2: "농부 {0}씨잖아!" #!String
+    SeedShop_Pierre_Raining: "쇼핑하기 좋은 날이죠!" #!String
+    SeedShop_Pierre_NotRaining: "어서오세요!" #!String
+    SeedShop_Pierre_RareGreeting: "지갑은 가져오셨나요?" #!String
+

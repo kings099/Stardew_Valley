@@ -1,0 +1,43 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Introduction: "Ah, sí. Había predicho tu llegada hace mucho, joven @.#$e#Sin embargo, tu destino yace en tus manos." #!String
+    AcceptGift_(O)StardropTea: "Oh, ¿qué tenemos aquí? Un raro y potente elixir, parece. Sí, esto será un gran añadido para mi cofre reactivo." #!String
+    accept_868: "Ah... un fragmento ártico.#$b#Una sustancia muy poderosa, desde luego, y potentemente infundida con el elemento del hielo.#$b#Me lo llevaré, si no te importa.#$b#...#$b#...Erm...Sigues aquí. Oh. ¿Quieres algo?#$b#... Toma esto." #!String
+    MovieInvitation: "Hmm... Supongo que te podría acompañar... Sí. Cuando hayas llegado allí, yo he de aparecer. Buen viaje." #!String
+    GreenRain: "Aunque las lluvias inusuales puedan ser alarmantes, no hay nada que temer hoy.#$e#De hecho, es un día muy jubiloso para muchas criaturas vivientes." #!String
+    GreenRain_2: "La naturaleza es una fuerza poderosa, que no se debe tratar a la ligera.#$e#Disculpa, pero hay asuntos especiales de los que solo puedo ocuparme el día de hoy." #!String
+    married: "Matrimonio... ¿hmm? Rezo por que tengas mejor suerte de la que yo tuve..." #!String
+    roommates_Krobus: "Va a ser un reto, el vivir con uno como Krobus. Pero grandiosamente enriquecedor para ambas partes, estoy seguro.#$e#Admito, que tengo gran interés en ver el resultado de una amistad tan inusual." #!String
+    Mon: "He visto muchas cosas sobre tu futuro, joven @.#$e#Decírtelas acarrearía graves consecuencias." #!String
+    Mon4: "Fuera del dominio de la civilización humana es donde la naturaleza revela sus secretos verdaderamente." #!String
+    Mon8: "Hay zonas del mundo, que aún no han sido manchadas por las ataduras del pensar moderno, donde la magia sigue aún muy viva..." #!String
+    Sat6: "Aunque la práctica científica pueda describir con exactitud lo material de nuestro mundo, nunca dará explicación a sus misterior más profundos..." #!String
+    Tue: "Si no tienes nada importante que decirme, déjame tranquilo. Tengo mucho trabajo que hacer." #!String
+    Tue4: "Confío en ti lo suficiente para dejarte pasar a mi sótano. Trata lo que encuentres ahí con respeto." #!String
+    Tue8: "Saludos, @. ¿Confío en que no hayas estado aventurándote en el mundo de las artes oscuras?" #!String
+    Tue10: "Si la realidad está construida por la mente, entonces si uno consigue perfeccionar su poder, podría controlar la realidad..." #!String
+    Wed: "Cuesta años de estudio comprender el lenguaje de los elementales.#$e#Llegar a hablar su idioma requiere toda una vida de dedicado esfuerzo.#$e#Ahora, si me disculpas..." #!String
+    Thu: "Hay muchos misterios a nuestro alrededor. Debes ser paciente si quieres descubrirlos." #!String
+    Thu10: "No debes decírselo a nadie... pero tengo motivos para creer que una de las vecinas del pueblo es hija mía...#$e#Tal vez me equivoque... No suele ocurrir, pero podría ser." #!String
+    Fri: "Creo que la gente del pueblo me teme.#$e#Es una lástima, pero supongo que es humano temer a lo desconocido." #!String
+    Fri6: "Hace mucho estuve casado. Cuando mi mujer y yo nos separamos, empezó a volar por el campo y a lanzar hechizos a todo lo que veía.#$e#No es una forma muy madura de expresar la rabia." #!String
+    Sat: "Ten cuidado, te encuentras sobre un campo magnético muy potente.#$e#Por eso construí aquí mi hogar." #!String
+    Sat2: "¿Has hecho algún progreso con los espíritus del bosque?" #!String
+    Sun: "A veces observo a los vecinos en secreto.#$e#Confío en encontrar un aprendiz. Algún día dejaré este plano mortal, pero mi búsqueda arcana debe continuar." #!String
+

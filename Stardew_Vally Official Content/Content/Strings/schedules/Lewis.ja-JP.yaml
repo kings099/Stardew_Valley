@@ -1,0 +1,27 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    fall_9.000: "ええと…ハーヴィー先生、ヒミツはちゃんと守っていただけるんでしょうな？" #!String
+    15.000: "わたしは地元の商売を把握して、みんながどんな仕事をしてるか確認してるんだよ。" #!String
+    6.000: "きょうはクリントの税金を回収にきたんだよ。" #!String
+    1.000: "まあ、この季節の魚はたしかに新鮮なニオイがするな。" #!String
+    Tue.000: "うちの日用品はぜんぶここで買ってるんだ。$h" #!String
+    3.000: "きょうは、マーニーの商売がうまくいってるかどうか見にきたんだ。" #!String
+    6.001: "この図書館は、ペリカンタウンの見どころのひとつなんだ。地元の人たちの商売からあつめた税金で建てられているんだよ。" #!String
+    winter_16.000: "実はね、この夜の市で 良さげな品を いくつか 買えたんだよ…" #!String
+

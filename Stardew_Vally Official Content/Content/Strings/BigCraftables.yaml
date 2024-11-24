@@ -1,0 +1,332 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    AncientStool_Name: "Ancient Stool" #!String
+    AncientStool_Description: "It smells like Grandma's apartment." #!String
+    AncientTable_Name: "Ancient Table" #!String
+    AncientTable_Description: "It's covered in the thickest cobwebs." #!String
+    Anvil_Name: "Anvil" #!String
+    Anvil_Description: "Allows you to re-forge trinkets, randomizing their stats. Costs 3 iridium bars per use." #!String
+    AutoGrabber_Name: "Auto-Grabber" #!String
+    AutoGrabber_Description: "Automatically harvests from your animals each morning. Must be placed inside a coop or barn." #!String
+    AutoPetter_Name: "Auto-Petter" #!String
+    AutoPetter_Description: "Joja Co. patented technology for coops and barns. Keeps your animals content, but can't replace the full benefit of human touch. Hand-petting can be provided to supplement." #!String
+    BaitMaker_Name: "Bait Maker" #!String
+    BaitMaker_Description: "Place a fish inside to create targeted bait." #!String
+    Barrel_Name: "Barrel" #!String
+    Barrel_Description: "..." #!String
+    BarrelBrazier_Name: "Barrel Brazier" #!String
+    BarrelBrazier_Description: "Provides a moderate amount of light." #!String
+    BasicLog_Name: "Basic Log" #!String
+    BasicLog_Description: "A decorative piece for your farm." #!String
+    BeeHouse_Name: "Bee House" #!String
+    BeeHouse_Description: "Place outside and wait for delicious honey! (Except in Winter)." #!String
+    BigChest_Name: "Big Chest" #!String
+    BigChest_Description: "It can store almost twice as much as a regular chest." #!String
+    BigGreenCane_Name: "Big Green Cane" #!String
+    BigGreenCane_Description: "A decorative piece for your farm." #!String
+    BigRedCane_Name: "Big Red Cane" #!String
+    BigRedCane_Description: "A decorative piece for your farm." #!String
+    BigStoneChest_Name: "Big Stone Chest" #!String
+    BoneMill_Name: "Bone Mill" #!String
+    BoneMill_Description: "Turns bone items into fertilizers." #!String
+    Bonfire_Name: "Bonfire" #!String
+    Bonfire_Description: "The red embers glow softly." #!String
+    Bongo_Name: "Bongo" #!String
+    Bongo_Description: "A decorative percussion instrument with a rich sound." #!String
+    Bookcase_Name: "Bookcase" #!String
+    Bookcase_Description: "A home for books." #!String
+    Boulder_Name: "Boulder" #!String
+    Boulder_Description: "An extremely dense piece of stone." #!String
+    Camera_Name: "Camera" #!String
+    Camera_Description: "An old camera mounted on a tripod." #!String
+    Campfire_Name: "Campfire" #!String
+    Campfire_Description: "Provides a moderate amount of light." #!String
+    Campfire_2_Name: "Campfire" #!String
+    Campfire_2_Description: "Cook on the go!" #!String
+    CarvedBrazier_Name: "Carved Brazier" #!String
+    CarvedBrazier_Description: "Provides a moderate amount of light." #!String
+    Cask_Name: "Cask" #!String
+    Cask_Description: "Use in the cellar to age products like wine and cheese." #!String
+    CharcoalKiln_Name: "Charcoal Kiln" #!String
+    CharcoalKiln_Description: "Turns 10 pieces of wood into one piece of coal." #!String
+    CheesePress_Name: "Cheese Press" #!String
+    CheesePress_Description: "Turns milk into cheese." #!String
+    Chest_Name: "Chest" #!String
+    Chest_Description: "A place to store your items." #!String
+    ChickenStatue_Name: "Chicken Statue" #!String
+    ChickenStatue_Description: "A wooden statue of a chicken." #!String
+    CoffeeMaker_Name: "Coffee Maker" #!String
+    CoffeeMaker_Description: "Automatically brews a fresh cup every morning." #!String
+    Crate_Name: "Crate" #!String
+    Crate_Description: "..." #!String
+    Crystalarium_Name: "Crystalarium" #!String
+    Crystalarium_Description: "Insert a gem of your choice and it will grow copies." #!String
+    CursedPKArcadeSystem_Name: "Cursed P.K. Arcade System" #!String
+    CursedPKArcadeSystem_Description: "Something's not right with this Prairie King Arcade System..." #!String
+    DarkSign_Name: "Dark Sign" #!String
+    DarkSign_Description: "Use an item on this to change what's displayed. The item won't be consumed." #!String
+    DeadTree_Name: "Dead Tree" #!String
+    DeadTree_Description: "It's been petrified for a long time, poor thing." #!String
+    Deconstructor_Name: "Deconstructor" #!String
+    Deconstructor_Description: "Destroys crafted items, but salvages their most valuable material." #!String
+    DecorativePitcher_Name: "Decorative Pitcher" #!String
+    DecorativePitcher_Description: "Hand-made out of brass." #!String
+    DecorativeSpears_Name: "Decorative Spears" #!String
+    DecorativeSpears_Description: "Not a very safe decoration." #!String
+    Dehydrator_Name: "Dehydrator" #!String
+    Dehydrator_Description: "Place 5 pieces of fruit or edible mushrooms inside to dry them." #!String
+    DeluxeScarecrow_Name: "Deluxe Scarecrow" #!String
+    DeluxeScarecrow_Description: "Prevents crows from attacking your crops. Has a large radius (about 16 \"tiles\")." #!String
+    DeluxeWormBin_Name: "Deluxe Worm Bin" #!String
+    DeluxeWormBin_Description: "Produces Deluxe Bait on a regular basis. The worms are self-sufficient." #!String
+    Door_Name: "Door" #!String
+    Door_Description: "A hidden mechanism causes it to retract into the ground." #!String
+    DriedSunflowers_Name: "Dried Sunflowers" #!String
+    DriedSunflowers_Description: "A vibrant home decoration." #!String
+    EmptyCapsule_Name: "Empty Capsule" #!String
+    EmptyCapsule_Description: "Part of the glass is shattered." #!String
+    FancyTable_Name: "Fancy Table" #!String
+    FancyTable_Description: "A finely crafted round table." #!String
+    FarmComputer_Name: "Farm Computer" #!String
+    FarmComputer_Description: "Scans the farm and displays useful information." #!String
+    FeedHopper_Name: "Feed Hopper" #!String
+    FeedHopper_Description: "Provides convenient access to silo fodder." #!String
+    FishSmoker_Name: "Fish Smoker" #!String
+    FishSmoker_Description: "Place fish inside with a piece of coal to create smoked fish, which is worth double. The quality of the fish is preserved." #!String
+    Foroguemon_Name: "??Foroguemon??" #!String
+    Foroguemon_Description: "??Foroguemon??" #!String
+    Furnace_Name: "Furnace" #!String
+    Furnace_Description: "Turns ore and coal into metal bars." #!String
+    GardenPot_Name: "Garden Pot" #!String
+    GardenPot_Description: "Grows crops from any season when indoors. Outdoors, it can only house seasonal crops." #!String
+    GeodeCrusher_Name: "Geode Crusher" #!String
+    GeodeCrusher_Description: "Breaks geodes open automatically." #!String
+    GoldBrazier_Name: "Gold Brazier" #!String
+    GoldBrazier_Description: "Provides a moderate amount of light." #!String
+    GrandfatherClock_Name: "Grandfather Clock" #!String
+    GrandfatherClock_Description: "It's so old... looks like the pendulum is rusted in place." #!String
+    GraveStone_Name: "Grave Stone" #!String
+    GraveStone_Description: "A decorative piece for your farm." #!String
+    GreenCanes_Name: "Green Canes" #!String
+    GreenCanes_Description: "A decorative piece for your farm." #!String
+    Heater_Name: "Heater" #!String
+    Heater_Description: "Keeps your animals warmer and happier during the winter." #!String
+    HeavyFurnace_Name: "Heavy Furnace" #!String
+    HeavyFurnace_Description: "It's more efficient than a regular furnace. Requires 25 pieces of ore and 3 coal per use." #!String
+    HeavyTapper_Name: "Heavy Tapper" #!String
+    HeavyTapper_Description: "Place on a maple, oak, or pine tree and wait for the reservoir to fill with product! Works twice as fast as a normal tapper." #!String
+    HMTGF_Name: "??HMTGF??" #!String
+    HMTGF_Description: "??HMTGF??" #!String
+    Hopper_Name: "Hopper" #!String
+    Hopper_Description: "Items placed inside will automatically be loaded into the machine in front of it." #!String
+    HousePlant_Name: "House Plant" #!String
+    HousePlant_Description: "Adds some character to your home or farm." #!String
+    Incubator_Name: "Incubator" #!String
+    Incubator_Description: "Hatches eggs into baby chickens and ducks." #!String
+    IronLamppost_Name: "Iron Lamp-post" #!String
+    IronLamppost_Description: "Provides a good amount of light." #!String
+    ItemPedestal_Name: "Item Pedestal" #!String
+    ItemPedestal_Description: "A place to display an item." #!String
+    JunimoChest_Name: "Junimo Chest" #!String
+    JunimoChest_Description: "Through the power of forest magic, every Junimo Chest links to the same stash." #!String
+    JunimoKartArcadeSystem_Name: "Junimo Kart Arcade System" #!String
+    JunimoKartArcadeSystem_Description: "Play 'Junimo Kart' at home!" #!String
+    Keg_Name: "Keg" #!String
+    Keg_Description: "Place a fruit or vegetable in here. Eventually it will turn into a beverage." #!String
+    LawnFlamingo_Name: "Lawn Flamingo" #!String
+    LawnFlamingo_Description: "A decorative piece for your farm." #!String
+    LightningRod_Name: "Lightning Rod" #!String
+    LightningRod_Description: "Collects energy from lightning storms and turns it into battery packs." #!String
+    LockedDoor_Name: "Locked Door" #!String
+    LockedDoor_Description: "A hidden mechanism causes it to retract into the ground." #!String
+    LogSection_Name: "Log Section" #!String
+    LogSection_Description: "A decorative piece for your farm." #!String
+    Loom_Name: "Loom" #!String
+    Loom_Description: "Turns raw wool into fine cloth." #!String
+    MarbleBrazier_Name: "Marble Brazier" #!String
+    MarbleBrazier_Description: "Provides a moderate amount of light." #!String
+    MayonnaiseMachine_Name: "Mayonnaise Machine" #!String
+    MayonnaiseMachine_Description: "Turns eggs into mayonnaise." #!String
+    MiniForge_Name: "Mini-Forge" #!String
+    MiniForge_Description: "Now, you can use a dwarvish forge from the convenience of your home." #!String
+    MiniFridge_Name: "Mini-Fridge" #!String
+    MiniFridge_Description: "Allows you to store additional ingredients for cooking." #!String
+    MiniJukebox_Name: "Mini-Jukebox" #!String
+    MiniJukebox_Description: "Allows you to play your favorite tunes." #!String
+    MiniObelisk_Name: "Mini-Obelisk" #!String
+    MiniObelisk_Description: "Place two on the farm to warp between them." #!String
+    MiniShippingBin_Name: "Mini-Shipping Bin" #!String
+    MiniShippingBin_Description: "Items placed in it will be included in the nightly shipment." #!String
+    MixedCane_Name: "Mixed Cane" #!String
+    MixedCane_Description: "A decorative piece for your farm." #!String
+    MushroomBox_Name: "Mushroom Box" #!String
+    MushroomBox_Description: "Mushrooms grow every few days" #!String
+    MushroomLog_Name: "Mushroom Log" #!String
+    MushroomLog_Description: "Grows mushrooms every so often. The more wild trees are nearby, the better it works." #!String
+    Obelisk_Name: "Obelisk" #!String
+    Obelisk_Description: "A sinister-looking portal that radiates with evil energy." #!String
+    ObsidianVase_Name: "Obsidian Vase" #!String
+    ObsidianVase_Description: "A beautifully crafted ornamental vase made from obsidian and gold." #!String
+    OilMaker_Name: "Oil Maker" #!String
+    OilMaker_Description: "Makes gourmet truffle oil." #!String
+    OrnamentalHayBale_Name: "Ornamental Hay Bale" #!String
+    OrnamentalHayBale_Description: "A decorative piece for your farm." #!String
+    OstrichIncubator_Name: "Ostrich Incubator" #!String
+    OstrichIncubator_Description: "Hatches ostrich eggs into baby ostriches. Place in a barn." #!String
+    PinkyLemon_Name: "??Pinky Lemon??" #!String
+    PinkyLemon_Description: "??Pinky Lemon??" #!String
+    PlushBunny_Name: "Plush Bunny" #!String
+    PlushBunny_Description: "It's big, it's soft, and it's cute." #!String
+    PrairieKingArcadeSystem_Name: "Prairie King Arcade System" #!String
+    PrairieKingArcadeSystem_Description: "Play 'Journey Of The Prairie King' at home!" #!String
+    PreservesJar_Name: "Preserves Jar" #!String
+    PreservesJar_Description: "Turns vegetables into pickles and fruit into jam." #!String
+    RareCrow_1_Name: "Rarecrow" #!String
+    RareCrow_1_Description: "Collect them all! (1 of 8)" #!String
+    RareCrow_2_Name: "Rarecrow" #!String
+    RareCrow_2_Description: "Collect them all! (2 of 8)" #!String
+    RareCrow_3_Name: "Rarecrow" #!String
+    RareCrow_3_Description: "Collect them all! (3 of 8)" #!String
+    RareCrow_4_Name: "Rarecrow" #!String
+    RareCrow_4_Description: "Collect them all! (4 of 8)" #!String
+    RareCrow_5_Name: "Rarecrow" #!String
+    RareCrow_5_Description: "Collect them all! (5 of 8)" #!String
+    RareCrow_6_Name: "Rarecrow" #!String
+    RareCrow_6_Description: "Collect them all! (6 of 8)" #!String
+    RareCrow_7_Name: "Rarecrow" #!String
+    RareCrow_7_Description: "Collect them all! (7 of 8)" #!String
+    RareCrow_8_Name: "Rarecrow" #!String
+    RareCrow_8_Description: "Collect them all! (8 of 8)" #!String
+    RecyclingMachine_Name: "Recycling Machine" #!String
+    RecyclingMachine_Description: "Turns fishing trash into resources." #!String
+    RedCanes_Name: "Red Canes" #!String
+    RedCanes_Description: "A decorative piece for your farm." #!String
+    RitualMask_Name: "Ritual Mask" #!String
+    RitualMask_Description: "It's way too large to wear." #!String
+    Scarecrow_Name: "Scarecrow" #!String
+    Scarecrow_Description: "Prevents crows from attacking your crops. Has a limited radius (about 8 \"tiles\")." #!String
+    SeasonalDecor_Name: "Seasonal Decor" #!String
+    SeasonalDecor_Description: "This decoration changes with the seasons." #!String
+    SeasonalPlant_Name: "Seasonal Plant" #!String
+    SeasonalPlant_Description: "An ornamental plant that changes with each season. It doesn't need to be watered." #!String
+    SeedMaker_Name: "Seed Maker" #!String
+    SeedMaker_Description: "Place crops inside to produce a varying amount of seeds. Doesn't work with fruit tree crops." #!String
+    SewingMachine_Name: "Sewing Machine" #!String
+    SewingMachine_Description: "Use to tailor clothes from the convenience of your home!" #!String
+    SignOfTheVessel_Name: "Sign Of The Vessel" #!String
+    SignOfTheVessel_Description: "A decorative piece for your farm." #!String
+    SingingStone_Name: "Singing Stone" #!String
+    SingingStone_Description: "It rings out with a pure tone when struck." #!String
+    SkeletonModel_Name: "Skeleton Model" #!String
+    SkeletonModel_Description: "A model of a skeleton." #!String
+    SkullBrazier_Name: "Skull Brazier" #!String
+    SkullBrazier_Description: "Provides a moderate amount of light." #!String
+    SlimeBall_Name: "Slime Ball" #!String
+    SlimeBall_Description: "Filled with slime." #!String
+    SlimeEggPress_Name: "Slime Egg-Press" #!String
+    SlimeEggPress_Description: "Compresses 100 pieces of slime into a slime egg. It's a miracle of science!" #!String
+    SlimeIncubator_Name: "Slime Incubator" #!String
+    SlimeIncubator_Description: "Hatches slimes eggs into slimes. Allows you to raise slimes outdoors." #!String
+    SlothSkeletonL_Name: "Sloth Skeleton L" #!String
+    SlothSkeletonL_Description: "This extinct sloth roamed the lush, prehistoric forests of Stardew Valley. Its powerful jaw tore through the toughest plant fibers." #!String
+    SlothSkeletonM_Name: "Sloth Skeleton M" #!String
+    SlothSkeletonM_Description: "The ribs of a prehistoric sloth. " #!String
+    SlothSkeletonR_Name: "Sloth Skeleton R" #!String
+    SlothSkeletonR_Description: "The hind legs and tail of a prehistoric sloth." #!String
+    SodaMachine_Name: "Soda Machine" #!String
+    SodaMachine_Description: "Keeps pumping out the good stuff." #!String
+    SolarPanel_Name: "Solar Panel" #!String
+    SolarPanel_Description: "Slowly generates batteries when left in the sun." #!String
+    SolidGoldLewis_Name: "Solid Gold Lewis" #!String
+    SolidGoldLewis_Description: "Mayor's secret project." #!String
+    Staircase_Name: "Staircase" #!String
+    Staircase_Description: "Use this to move down a level in the mines." #!String
+    StandingGeode_Name: "Standing Geode" #!String
+    StandingGeode_Description: "It's a huge geode mounted on a stand. Hundreds of purple crystals shimmer within." #!String
+    StardewHeroTrophy_Name: "Stardew Hero Trophy" #!String
+    StardewHeroTrophy_Description: "The most prestigious award a Stardew Valley resident could receive!" #!String
+    StatueOfBlessings_Name: "Statue Of Blessings" #!String
+    StatueOfBlessings_Description: "Touching the statue gives a unique blessing every day." #!String
+    StatueOfEndlessFortune_Name: "Statue Of Endless Fortune" #!String
+    StatueOfEndlessFortune_Description: "It's made of solid gold. What's it for?" #!String
+    StatueOfPerfection_Name: "Statue Of Perfection" #!String
+    StatueOfPerfection_Description: "It's made of pure iridium." #!String
+    StatueOfTheDwarfKing_Name: "Statue Of The Dwarf King" #!String
+    StatueOfTheDwarfKing_Description: "Choose from two mining-related powers each day." #!String
+    StatueOfTruePerfection_Name: "Statue Of True Perfection" #!String
+    StatueOfTruePerfection_Description: "It's made of pure iridium." #!String
+    StoneBrazier_Name: "Stone Brazier" #!String
+    StoneBrazier_Description: "Provides a moderate amount of light." #!String
+    StoneCairn_Name: "Stone Cairn" #!String
+    StoneCairn_Description: "A decorative piece for your farm." #!String
+    StoneChest_Name: "Stone Chest" #!String
+    StoneChest_Description: "A place to store your items." #!String
+    StoneFrog_Name: "Stone Frog" #!String
+    StoneFrog_Description: "Garden art for your farm." #!String
+    StoneJunimo_Name: "Stone Junimo" #!String
+    StoneJunimo_Description: "Garden art for your farm." #!String
+    StoneOwl_Decorative_Name: "Stone Owl" #!String
+    StoneOwl_Decorative_Description: "Garden art for your farm." #!String
+    StoneOwl_Secret_Name: "Stone Owl" #!String
+    StoneOwl_Secret_Description: "It's not clear where this came from, but it looks very fine." #!String
+    StoneParrot_Name: "Stone Parrot" #!String
+    StoneParrot_Description: "Garden art for your farm." #!String
+    StoneSign_Name: "Stone Sign" #!String
+    StoneSign_Description: "Use an item on this to change what's displayed. The item won't be consumed." #!String
+    StrangeCapsule_Name: "Strange Capsule" #!String
+    StrangeCapsule_Description: "There's something fleshy bobbing around in the fluid..." #!String
+    StumpBrazier_Name: "Stump Brazier" #!String
+    StumpBrazier_Description: "Provides a moderate amount of light." #!String
+    SuitOfArmor_Name: "Suit Of Armor" #!String
+    SuitOfArmor_Description: "A decorative piece for your farm." #!String
+    TablePieceL_Name: "Table Piece L" #!String
+    TablePieceL_Description: "The left side of a big table." #!String
+    TablePieceR_Name: "Table Piece R" #!String
+    TablePieceR_Description: "The right side of a big table" #!String
+    TallTorch_Name: "Tall Torch" #!String
+    TallTorch_Description: "The stem is made from bamboo." #!String
+    Tapper_Name: "Tapper" #!String
+    Tapper_Description: "Place on a maple, oak, or pine tree and wait for the reservoir to fill with product!" #!String
+    TeddyTimer_Name: "Teddy Timer" #!String
+    TeddyTimer_Description: "It's a grandfather clock shaped like a teddy." #!String
+    Telephone_Name: "Telephone" #!String
+    Telephone_Description: "Can be used to check store hours and inventory." #!String
+    TextSign_Name: "Text Sign" #!String
+    TextSign_Description: "You can write a custom message on this sign." #!String
+    TuboFlowers_Name: "Tub o' Flowers" #!String
+    TuboFlowers_Description: "Flowers planted in an oak barrel. Blooms in spring and summer." #!String
+    WickedStatue_Name: "Wicked Statue" #!String
+    WickedStatue_Description: "There's something unsettling about the looks of this statue." #!String
+    WickedStatue_LitEyes_Name: "Wicked Statue" #!String
+    WickedStatue_LitEyes_Description: "Something's not right with this statue." #!String
+    WoodChair_Name: "Wood Chair" #!String
+    WoodChair_Description: "A chair that can be oriented in 4 different ways." #!String
+    WoodChipper_Name: "Wood Chipper" #!String
+    WoodChipper_Description: "Insert a piece of hardwood to break it down into regular wood." #!String
+    WoodenBrazier_Name: "Wooden Brazier" #!String
+    WoodenBrazier_Description: "Provides a moderate amount of light." #!String
+    WoodLamppost_Name: "Wood Lamp-post" #!String
+    WoodLamppost_Description: "Provides a good amount of light." #!String
+    WoodSign_Name: "Wood Sign" #!String
+    WoodSign_Description: "Use an item on this to change what's displayed. The item won't be consumed." #!String
+    Workbench_Name: "Workbench" #!String
+    Workbench_Description: "When crafting here, you'll have access to materials in any adjacent chests." #!String
+    WormBin_Name: "Worm Bin" #!String
+    WormBin_Description: "Produces bait on a regular basis. The worms are self-sufficient." #!String
+

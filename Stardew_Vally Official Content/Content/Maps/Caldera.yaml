@@ -1,0 +1,25 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "xTile.Pipeline.TideReader, xTile"
+            version: 0
+
+
+    numSharedResources: 0
+
+content: {} #!TBin
+extractedMaps: 
+    - 
+        path: ""
+        tilesheets: 
+            - "Mines\\volcano_dungeon.png"
+            - "paths.png"
+            - "Mines\\volcano_caldera.png"
+            - "island_tilesheet_1.png"
+
+
+

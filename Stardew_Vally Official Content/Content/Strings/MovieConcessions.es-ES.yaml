@@ -1,0 +1,67 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    AppleSlices_Name: "Rodajas de manzana" #!String
+    AppleSlices_Description: "Crujientes y dulces pequeñas rodajas." #!String
+    BlackLicorice_Name: "Regaliz negro" #!String
+    BlackLicorice_Description: "Una gominola masticable con un sabor intenso y picante." #!String
+    CappuccinoMousseCake_Name: "Mousse de capuchino" #!String
+    CappuccinoMousseCake_Description: "Un pequeño pastel de chocolate glaseado con mousse de capuchino." #!String
+    ChocolatePopcorn_Name: "Palomitas de chocolate" #!String
+    ChocolatePopcorn_Description: "Palomitas normales... pero con una capa de chocolate." #!String
+    CottonCandy_Name: "Algodón de azúcar" #!String
+    CottonCandy_Description: "Una gran nube de azúcar arremolinado." #!String
+    Fries_Name: "Patatas fritas" #!String
+    Fries_Description: "Finas rodajas de patata, fritas y ligeramente rociadas con sal." #!String
+    HummusSnackPack_Name: "Bolsa de aperitivos de hummus" #!String
+    HummusSnackPack_Description: "Crujiente y saludable." #!String
+    IceCreamSandwich_Name: "Sandwich de helado" #!String
+    IceCreamSandwich_Description: "Un helado de vainilla emparedado entre dos galletas de chocolate." #!String
+    JasmineTea_Name: "Té de jazmín" #!String
+    JasmineTea_Description: "Té verde con sabor a flores aromáticas de jazmín." #!String
+    Jawbreaker_Name: "Rompemandíbulas" #!String
+    Jawbreaker_Description: "¡Es una enorme y dura golosina que dura toda la película!" #!String
+    JojaCola_Name: "Joja Cola" #!String
+    JojaCola_Description: "Una taza extra-grande del refresco emblemático de Joja. " #!String
+    JojaCorn_Name: "Maíz de Joja" #!String
+    JojaCorn_Description: "La comida de maíz patentada por Joja, bañada por completo en «salsa de mantecompleta»." #!String
+    KaleSmoothie_Name: "Batido de col rizada" #!String
+    KaleSmoothie_Description: "Cargado de fibra y vitaminas." #!String
+    Nachos_Name: "Nachos" #!String
+    Nachos_Description: "Sabroso queso fundido sobre los recién fritos nachos." #!String
+    PanzanellaSalad_Name: "Ensalada Panzanella" #!String
+    PanzanellaSalad_Description: "Una ensalada de verano con pan y tomates." #!String
+    PersonalPizza_Name: "Pizza personal " #!String
+    PersonalPizza_Description: "Una pizza lo suficientemente pequeña para tomar como aperitivo." #!String
+    Popcorn_Name: "Palomitas" #!String
+    Popcorn_Description: "Granos de maíz aflorados, espolvoreados ligeramente con sal y rociados con mantequilla. " #!String
+    RockCandy_Name: "Piruleta" #!String
+    RockCandy_Description: "Cristales de azucar sazonados y pegados a un conveniente palo." #!String
+    SalmonBurger_Name: "Hamburguesa de salmón" #!String
+    SalmonBurger_Description: "Un grueso bloque de salmón entre dos ligeramente tostados panes con semillas de sésamo." #!String
+    SaltedPeanuts_Name: "Cacahuetes salados" #!String
+    SaltedPeanuts_Description: "Un clásico aperitivo salado." #!String
+    SourSlimes_Name: "Limos agrios" #!String
+    SourSlimes_Description: "Pequeños limos de gominola de distintos colores. Están rociados con un polvo extremadamente agrio." #!String
+    StarCookie_Name: "Galleta estrella" #!String
+    StarCookie_Description: "Una galleta con forma de estrella rociada con pepitas de muchos colores." #!String
+    StardropSorbet_Name: "Sorbete de fruta estelar" #!String
+    StardropSorbet_Description: "Una sola gota de la esencia de una Fruta Estelar transforma este sorbete en una extraordinaria medicina." #!String
+    TrufflePopcorn_Name: "Palomitas sabor a trufa" #!String
+    TrufflePopcorn_Description: "Receta familiar de palomitas espolvoreadas con sal de trufa." #!String
+

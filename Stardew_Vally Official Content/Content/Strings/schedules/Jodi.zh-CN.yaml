@@ -1,0 +1,27 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    spring_11.003: "文森特今天在医生那里表现得非常勇敢。我为他感到骄傲。" #!String
+    winter_17.000: "像他们一样周游世界一定很刺激……*叹息*……" #!String
+    spring_11.001: "勇敢一点，文森特。想想你的父亲。" #!String
+    Tue.000: "噢……我的手臂像凝胶一样软……$s" #!String
+    spring.000: "嘘……他睡着了。" #!String
+    spring_18.000: "嘿！你怎么能打断别人的私人预约！$u" #!String
+    spring_11.002: "哈维医生？我有点担心文森特的个头。在这个年纪的小孩中，他会不会矮了点？" #!String
+    spring_11.000: "文森特最讨厌去看医生了，但不管如何他还是得去检查。" #!String
+

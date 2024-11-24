@@ -1,0 +1,57 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Pants_Name: "Pantolon" #!String
+    Pants_Description: "Gündelik pantolon." #!String
+    FarmerPants_Name: "Çiftçi Pantolonu" #!String
+    FarmerPants_Description: "Tarladaki uzun ve yorucu çalışma saatlerine uygundur." #!String
+    Shorts_Name: "Şort" #!String
+    Shorts_Description: "Sıcak yaz günleri için mükemmeldir... Bacakların rahatlamasını sağlar." #!String
+    Dress_Name: "Uzun Elbise" #!String
+    Dress_Description: "Uzun, hoş bir elbise." #!String
+    Skirt_Name: "Etek" #!String
+    Skirt_Description: "Hoş bir etek." #!String
+    PleatedSkirt_Name: "Kıvrımlı Etek" #!String
+    PleatedSkirt_Description: "Güzel duran kıvrımlı bir etek." #!String
+    DinosaurPants_Name: "Dinozor Pantolonu" #!String
+    DinosaurPants_Description: "Bu pantolonların neslinin uzun zaman önce tükendiği sanılıyordu!" #!String
+    GrassSkirt_Name: "Ot Eteği" #!String
+    GrassSkirt_Description: "Kurutulmuş ottan yapılma etek." #!String
+    LuauSkirt_Name: "Luau Eteği" #!String
+    LuauSkirt_Description: "Luau'ya özel olarak yapılmış etek." #!String
+    GeniePants_Name: "Cin Pantolonu" #!String
+    GeniePants_Description: "Alttan şişen pantolon. Dileğin kabul oldu!" #!String
+    TightPants_Name: "Sıkı Pantolon" #!String
+    TightPants_Description: "Fazla sıkı bir pantolon." #!String
+    BaggyPants_Name: "Bol Pantolon" #!String
+    BaggyPants_Description: "Bol gelen bir pantolon." #!String
+    SimpleDress_Name: "Sade Elbise" #!String
+    SimpleDress_Description: "İnce, düz ve orta uzunlukta bir elbise." #!String
+    RelaxedFitPants_Name: "Rahat Beden Pantolon" #!String
+    RelaxedFitPants_Description: "Bu pantolonlar bacaklar için daha rahattır." #!String
+    RelaxedFitShorts_Name: "Rahat Beden Şort" #!String
+    RelaxedFitShorts_Description: "Bu şortlar bacaklar için daha rahattır." #!String
+    PolkaDotShorts_Name: "Benekli Şort" #!String
+    PolkaDotShorts_Description: "Haydaaa!" #!String
+    TrimmedLuckyPurpleShorts_Name: "İşlemeli Şanslı Mor Şort" #!String
+    TrimmedLuckyPurpleShorts_Description: "Üzerinde altın işlemeler bulunan mor bir şort..." #!String
+    PrismaticPants_Name: "Prizmatik Pantolon" #!String
+    PrismaticPants_Description: "Prizmatik enerji ile parıldayan pantolon." #!String
+    PrismaticGeniePants_Name: "Prizmatik Cin Pantolonu" #!String
+    PrismaticGeniePants_Description: "İçindeki prizmatik enerji sayesinde parıldayan pantolon." #!String
+

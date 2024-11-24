@@ -1,0 +1,22 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    winter_16.000: "Я очень рекомендую тур на подводной лодке. В океанских глубинах живут потрясающие существа." #!String
+    summer_25.000: "Скоро наступят холода, так что я решил привиться от гриппа." #!String
+    summer_25.001: "Доктор Харви, вы читали последний номер \"Биологии и медицины\"? Есть там одна статья, думаю, вам будет интересно." #!String
+

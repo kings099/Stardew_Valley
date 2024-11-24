@@ -1,0 +1,46 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Introduction: "Ó, egy idegen! A nevem Vincent.#$b#Anyukám azt mondta, hogy ne álljak szóba idegenekkel... De te jónak tűnsz." #!String
+    AcceptBirthdayGift_Positive: "Az egy szülinapi ajándék? Kinyithatom?#$b#Ó, váó! Pont erre vágytam! Yayayaya!$h" #!String
+    AcceptBirthdayGift_Negative: "Egy szülinapi ajándék? Ó... ez nem olyan vicces.$s" #!String
+    AcceptGift_(O)StardropTea: "Váó! Annyira édes! Mmmmm...." #!String
+    AcceptGift_(TR)FrogEgg: "*Placcs* *placcs* ... Fúúúj! Megkaphatom? Megkaphatom? Hurrááá!$h" #!String
+    GreenRain: "Anya! Ki akarok menni játszani!%noturn" #!String
+    GreenRain_2: "%Vincentet teljesen beborította a moha." #!String
+    AcceptGift_Negative_alcohol_item: "*szimat*... ez meg micsoda? Borzasztó a szaga... Anyaaaaaa!!!$s" #!String
+    Resort_Entering: "Ez jó móka volt! Egy napon én is hajóskapitány akarok lenni!" #!String
+    Resort_Leaving: "Hamarosan vissza akarok térni!" #!String
+    Resort_Shore: "Akarok látni egy cápát!$h" #!String
+    married_Sam: "Ne vidd el az én Sammymet!$s" #!String
+    Resort: "Ha jól megfigyeled, láthatod, ahogy kis bogarak ugranak ki a homokból.$h" #!String
+    reject_869: "Óóó! Remek lelet!#$b#Bár anya nem hagyná, hogy megtartsam...$s" #!String
+    Mon: "Ha felnövök, olyan akarok lenni, mint a bátyám!$h#$e#Oké! Szia!" #!String
+    Mon4: "$d kent#Örülök, hogy apu visszatért... de más, mint amilyenre emlékszem...$s|Apu nincs olyan sokat itt... Hiányzik a vele való játszás.$s" #!String
+    Tue: "*sóhaj*... Anyu nem hagyja, hogy ma több gumicukrot egyek.$s" #!String
+    Tue6: "Bácsi, tudsz titkot tartani?^Néni, tudsz titkot tartani?$u#$b#Feleségül akarom venni Penny nénit, ha felnövök.#$e#De ezt senkinek se mondd el, oké?$u" #!String
+    Wed: "Bogarakat akarok keresni, de anyu mérges lesz rám, ha piszkos leszek.$u#$b#Nehéz választás." #!String
+    Thu: "Éhes vagyok... hol van anyu?$s" #!String
+    Thu2: "Te nem vagy olyan uncsi, mint a többi felnőtt!" #!String
+    Fri: "#$c .3#Fúj, már megint főtt cékla van...$s#$e#Jaj ne... anyu estére lencselevest készít.$s" #!String
+    Sat_1: "Apu hamarosan hazatér!#$b#Remélem hoz nekem valamilyen játékot.$u" #!String
+    Sat: "Penny néni minden héten új könyvet olvastat velem.$s#$b#Legalább néha hagyja, hogy én válasszak!" #!String
+    Sat8: "$d kent#Apu elég fura, mióta hazatért. Vajon mi történhetett vele?$s#$b#Többé már nem játszik velem.$s|Vajon apu haza fog jönni valaha...$s" #!String
+    Sun: "Szia bácsi!^Szia néni!" #!String
+    Sun10: "Üdv @ bácsi!^Üdv @ néni!#$e#Ne mondd el anyunak... de te vagy a kedvenc felnőttem.$h" #!String
+

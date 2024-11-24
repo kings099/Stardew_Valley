@@ -1,0 +1,23 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    summer_18.001: "Niente di brutto da segnalare, Doc. Mi sento più in forma che mai." #!String
+    summer_18.000: "Che ci fa qui una persona giovane e sana come te?" #!String
+    Tue.000: "C'incontriamo ogni settimana per incoraggiarci a vicenda a rimanere in forma." #!String
+    winter_16.000: "La cosa che preferisco è vedere le barche. Lo scricchiolio del legno mi conforta, stranamente." #!String
+

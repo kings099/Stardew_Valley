@@ -1,0 +1,59 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Introduction: "Ah, Lewis polgármester szólt, hogy nemrég érkeztél. Marnie vagyok!#$e#A tanyámon haszonállatokat és állati termékeket adok el. Beugorhatnál valamikor.$h" #!String
+    AcceptGift_(O)StardropTea: "Váó, ezer hála, @. Ezt nem fogom elfelejteni!" #!String
+    AcceptGift_(O)SkillBook_0: "Köszönöm, @. Mindig van egy Almanach másolat nálam. Nagyon pontos!$h" #!String
+    gotPet: "Szerintem boldog leszel, hogy van egy kis barátod a farmon." #!String
+    gotPet_memory_oneday: "Biztos, hogy %pet kezdetben szégyenlős lesz. Az állatoknak kis időbe telik, mire kényelmesen érzik magukat egy új helyen." #!String
+    gotPet_memory_oneweek: "A kis %pet már berendezkedett? Egy állat számára az a terület olyan remek a felfedezésekhez." #!String
+    gotPet_memory_oneyear: "Most ugrott be... nagyjából egy éve, hogy %pet örökbe lett fogadva általad. Fogadok, hogy most már sokkal közelebb kerültetek egymáshoz!" #!String
+    structureBuilt_Stable: "Ó, van egy lovad? Az csodálatos! A lovak lenyűgöző állatok.$h" #!String
+    dating_Shane_memory_oneweek: "Mostanában Shane sokkal pozitívabbnak és reménytelibbnek tűnik.#$b#Olyan boldog vagyok, hogy ideköltöztél és ennyire kijöttök egymással!$h" #!String
+    married_Shane: "Örülök, hogy Shane beköltözött a farmodra... tovább folytathatja a családi hagyományt!" #!String
+    Resort: "Hehe... végre bemutathatom, hogy mi lett az aerobik klubban végzett kemény munkám eredménye.$h" #!String
+    Resort_Leaving: "Melegséget érzek." #!String
+    Resort_Shore: "Hee hee... Érdekes mindenkit a fürdőruhájában látni." #!String
+    Resort_Chair: "Fúj... vizes a szék." #!String
+    Resort_Bar: "Huhhh... Forróság van!$s" #!String
+    reject_789: "Gyááá!$4#$b#...Öhm... Tessék? Heh.. Nem tudom, hogy mi az...$3" #!String
+    Mon: "Szeretem az állatokat, @. Ha jól bánsz a tieiddel, akkor jó barátok leszünk!^Szeretem az állatokat, @. Bánj jól a tieiddel és biztos, hogy jó barátok leszünk!" #!String
+    Mon4: "Az állatok olyan ártatlanok, oly édesek. És ha én nem vigyázok rájuk, akkor ki fog?$s#$e#Remélem azért a csirkék nem mérgesek, mikor elveszem a tojásaikat.$s" #!String
+    Thu_2: "Egy ideje már itt vagy... hogy megy a farmod?#$e#Könnyű az állatokról gondoskodni, amíg nem feledkezel meg róluk!$h" #!String
+    Saloon: "Mivel itt vagyok, így végre van időm egy kicsit pihenni és szocializálódni." #!String
+    Saloon_Tue: "Ma nincsenek itt túl sokan...$s" #!String
+    Saloon_Wed: "#$1 marnieAnimalSal#Ma egy egész vödör tejet öntöttem ki a padlóra, szörnyű volt. Annyira elpazaroltam szegény Belindám kemény munkáját.$k$s#$e#Örülök, hogy felbukkantál! Most már kissé nyüzsgősebb a nap." #!String
+    Saloon_Thu: "Huhhh! Jó érzés egy kemény melós nap után kirúgni a hámból." #!String
+    Saloon_Fri: "%Marnie nem veszi észre, hogy itt vagy..." #!String
+    Saloon_Sun: "*sóhaj*... Ma nem voltam túlságosan eredményes." #!String
+    Saloon_Sat: "Mindig látom Clintet idebent, de senkihez se szól. Csak néha szétnéz és ennyi.$s" #!String
+    Tue: "$query PLAYER_NPC_RELATIONSHIP any Shane married roommate#Most, hogy Shane elment, meg kell tanítanom Jasnak, hogy hogyan gondozhatja a csirkéket.|Az unokaöcsém, Shane nálunk lakik már pár hónapja.#$e#Besegít nekem a csirkéknél, szóval nem panaszkodhatok." #!String
+    GreenRain: "Te nem aggódsz emiatt az eső miatt? Az számomra kissé megnyugtató...#$e#Csak remélem, hogy a tehenek bebújtak a helyükre...$s" #!String
+    GreenRainFinished: "Nos, úgy tűnik a semmi miatt ijedtünk meg... Az eső teljesen ártalmatlan volt!" #!String
+    GreenRain_2: "Úgy tűnik az állatok élvezik ezt az esőt... Azt hiszem extra tápanyaggal tölti meg a füveket." #!String
+    Wed: "A kaszával levághatod a füvet, hogy azzal etesd az állataidat.#$e#Vagy akár tőlem is vásárolhatsz párat, ha gondolod.$h#$e#Jól jönne egy kis pénz...$u#$e#Adios." #!String
+    Thu: "Üdv. Szükséged van valamire?#$e#A jövőben lehet, hogy másfajta állatokat is be fogok szerezni.#$e#Habár még nem tudom, hogy van-e rájuk kereslet, szóval előbb be kell bizonyítanod, hogy tudsz bánni az állatokkal.#$e#Csak tisztelettel gondozd az állataidat, és jó dolgok fognak történni." #!String
+    Fri: "A legtöbb éjszakán a szalonban találhatsz engem.#$e#Az állatok jó társaságnak bizonyulnak, de néhanapján emberekkel is kell időt töltenem." #!String
+    Fri6: "Azon tűnődöm, hogy vajon Mr. Lewis nem magányos abban a nagy házban... $s#$e#Olyan üresnek tűnik ott, nem?" #!String
+    Sat: "Voltál már a házamtól nyugatra lévő furcsa toronyban?#$e#Egy alkalommal szörnyű, másvilági hangot hallottam onnét kiszűrődni.$s#$e#Én a helyedben elkerülném azt a helyet..." #!String
+    Sun: "Hé, jó téged itt látni!#$e#Nyugodtan nézz be hozzánk, amikor kedved tartja." #!String
+    Sun8: "Üdv @!$h#$e#Örülök, hogy összebarátkoztunk. Tudom, hogy jó gondját viseled a kedves állataimnak." #!String
+    Fair_Judging: "Nos, mindent vagy semmit..." #!String
+    Fair_Judged: "Nos, nem nyertem... de ugyanúgy nagy öröm volt megosztani mindenkivel kemény munkám eredményét!" #!String
+    Fair_Judged_PlayerLost_PurpleShorts: "De furcsa kinézete van annak a lila salátának a kirakatodban!$h#$b#Esküszöm, hogy pont úgy néz ki, mint Lewis polgármester különleges alsón... $3#$b#Ó!... heh... hagyjuk!$4" #!String
+

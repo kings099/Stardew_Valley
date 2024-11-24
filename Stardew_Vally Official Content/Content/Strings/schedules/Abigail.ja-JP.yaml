@@ -1,0 +1,29 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Sun.000: "ここでいっしょにかくれてれば、2人っきりで話せるね。" #!String
+    marriage_Mon.002: "ぐっ…やっぱり、まだひとりじゃクリアできないや。$s" #!String
+    spring_4.000: "そうだ…きょうは病院の予約があるんだった。$s" #!String
+    marriage_Fri.001: "昔の友だちに会うのっていい感じ。みんな、ぜんぜん変わってない。$h" #!String
+    spring_4.002: "ねえ先生、これどれくらいかかるの？あたし、おなかすいちゃった。$s" #!String
+    marriage_Mon.001: "ねえ、@。あたし、ここで一息つくのが好きなの…" #!String
+    marriage_Fri.000: "なにか用、@？あたしはママにあいさつしにきただけだよ。" #!String
+    marriage_Mon.000: "パパはあたしがいなくてもうまくやってるみたい。" #!String
+    winter_15.000: "すごくミステリアスだね…最高！" #!String
+    spring_4.001: "年に一度の健康診断だよ！心配しないで、妊娠はしてな…いやっ、あのっ、なにごともないって意味だから！もうっ。$9" #!String
+

@@ -1,0 +1,27 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    marriage_Mon.002: "Remélem, hogy egy napon Penny is megházasodik." #!String
+    winter_16.000: "Váó, ennek a technológiája lenyűgöző!" #!String
+    marriageJob.000: "Dolgozom, drágám! Ne hagyd, hogy az orvos meglássa." #!String
+    marriageJob.002: "Mindjárt vége a műszakomnak..." #!String
+    marriage_Mon.001: "Apa jól halad a kísérletével." #!String
+    summer.000: "Tényleg nehéz felfogni az univerzum nagyságát.$8" #!String
+    marriage_Mon.000: "Hé! Úgy tűnik anya nélkülem is jól boldogul. Kemény asszony." #!String
+    marriageJob.001: "Kedves tőled, hogy meglátogattál.$h" #!String
+

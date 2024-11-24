@@ -1,0 +1,35 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Fri.000: "わあ、すてきなはたおり機。ここがわたしの天国ね。" #!String
+    marriage_Mon.002: "わたしがいないと、酒場の切り盛りが大変そう。ガス、だいじょうぶかな。" #!String
+    winter_11.000: "みんな、年に一度の健康診断くらいでしか病院にこないんだよ。" #!String
+    marriage_Fri.001: "フルーツの香りにさそわれてきたんだ。" #!String
+    winter_11.001: "先生、もしよかったら「自然療法」をつかいたいんですけど。" #!String
+    marriage_Mon.001: "きょうはたくさん歩いたんだ。おかげで、足がスパゲッティみたいにぐにゃぐにゃだよ。" #!String
+    marriage_Fri.000: "あのね、人魚をさがしてるところなの。" #!String
+    marriage_Mon.000: "ときには実家に来るのもいいよね。思い出がいっぱい詰まってる場所だもの。" #!String
+    marriage_Fri.002: "金曜の夜はいそがしいから、昔のよしみで手伝いにきてるの。それに、楽しいしね！$h" #!String
+    winter_15.000: "この船 すごく 好きかも。とても ユニークよね！" #!String
+    Sandy_Birthday_Greeting: "こんにちは、サンディ！今日はあなたにプレゼントを持ってきたの。気に入ってもらえたらいいな！$h" #!String
+    Sandy_Birthday_Hangout: "今日がお休みで良かった！$h#$e#本当にうれしいわ。" #!String
+    Sandy_Birthday_Lake: "ふう…熱いわ！#$e#今日は泳ぐにはうってつけの日ね。#$e#きっと涼しくて気持ちがいいはずよ。$h" #!String
+    Sandy_Birthday_Bones: "こんな場所があるなんて信じられる？#$e#すごくミステリアスだよね…" #!String
+    Sandy_Birthday_Camel: "動物と一緒にいるのは好きよ。#$e#この世界は精霊や魔法のチカラで満ちあふれているの。" #!String
+    Sandy_Birthday_Bye: "とっても楽しかったわ。#$b#またすぐに来られたらいいな！$h" #!String
+

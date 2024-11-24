@@ -1,0 +1,40 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    accept_866: "¿Una rosa de Stardew Valley? ¡Es todo un detalle! ¡Gracias!$h#$b#Cuando eche de menos el valle, oleré esta rosa. Hehe.$h#$b#Toma, coge esto. Ha estado en el escaparate 10 años y nadie lo ha comprado. ¡Puedes quedártelo!" #!String
+    AcceptGift_(O)18: "Oh, ¡guau! ¡Nada dice «primavera» como un narciso de Stardew Valley!$h" #!String
+    AcceptGift_(O)StardropTea: "Guau, eso es tan poco común... ¡No puedo creer que me lo estés dando a mí! ¡Gracias, cariño!" #!String
+    AcceptGift_(O)418: "Ahh... incluso en invierno, Stardew Valley tiene bellas flores." #!String
+    GreenRain: "He escuchado que hay un evento climático excepcional en el valle.#$e#Desearía que lloviera aquí alguna vez...$s" #!String
+    married_Emily: "¿Cómo fue el gran día? Emily vino hace poco y me contó todo sobre vuestros planes.#$b#¡Tendré que ir a visitaros a la granja alguna vez!" #!String
+    AcceptGift_(O)402: "*snif*... Mmm... los guisantes dulces tienen el mejor aroma." #!String
+    Mon: "¡Hola, holita, cielito!#$b#Cuánto me alegro de que el autobús vuelva a circular. Empezaba a sentirme sola aquí.#$e#...Y casi me arruino.$s#$e#Pero has venido a comprarme un montón de semillas... ¿Verdad, cielito?$h" #!String
+    Tue: "Fuera puedes encontrar higos chumbos y cocos. Puedes quedarte todos los que encuentres.#$e#Están ricos, ricos. ¡Ji, ji!$h" #!String
+    Wed: "¡Hola, holita! Si ves a mi amiga Emily por el pueblo, ¿podrías saludarla de mi parte?#$e#¡Gracias!$h" #!String
+    Thu: "¿El tipo de pinta sospechosa del fondo? Lo siento, pero no se me permite hablar de ello.#$e#En fin... ¿Qué tiempo hace en el valle?" #!String
+    Fri: "Aquí no tendrías mucha suerte cultivando cosas, cielo.#$e#A menos que quisieras ser ${granjero^granjera}$ de cactus.$h" #!String
+    Sat: "¡Hola! ¡Bienvenido al Oasis de Sandy, el destino número uno del desierto de Calico!^¡Hola! ¡Bienvenida al Oasis de Sandy, el destino número uno del desierto de Calico!#$e#*Susurra* ¿Ha sonado profesional?$h#$e#No olvides revisar nuestra selección de semillas de temporada.#$e#Parece que tienes mucha sed. Toma, prueba esta leche fresquita. [184]#$e#Está buena, ¿eh?$h" #!String
+    Sun: "¡Aquí siempre hace sol, incluso en invierno!#$e#En realidad hace demasiado calor para mi gusto... Mi delicada piel se quema rápidamente con este sol.$s" #!String
+    Thu2: "¿El tipo de pinta sospechosa del fondo? Lo siento, pero no se me permite hablar de ello.#$e#En fin... ¿Qué tiempo hace en el valle?" #!String
+    Thu4: "Ey... Creo que puedo confiar en ti. Sabes guardar un secreto, ¿no?#$b#*Susurra* El tipo del fondo... Allí hay una especie de club exclusivo. Yo nunca he entrado, pero me pagan una renta mensual bastante generosa para que no haga preguntas.#$e#¡Bueeeno! ¿Qué tiempo hace ahora mismo en Stardew Valley?" #!String
+    Fri4: "¿Sabes? En realidad no me llamo Sandy. Es por el negocio.#$e#Pero todos me llaman Sandy, así que ya me he acostumbrado a ese nombre." #!String
+    Wed8: "¿No te resulta caro venir al desierto tan a menudo?#$e#Te debe de gustar venir a verme, ¿no? Hmmm... $h||*suspiro*... Echo de menos las preciosas flores de Stardew Valley...$s" #!String
+    Sun8: "Hola, cariño. Sí, aquí estoy, sola en esta gran tienda antigua. Hmmm...#$e#Bueno, exceptuando al tipo siniestro del fondo. Pero nunca mueve ni un músculo, así que a menudo me olvido de que está ahí." #!String
+    Wed10: "¡Ey, es @! ¡Me alegro de verte! ¡Empezaba a pensar que no ibas a volver!#$e#Si no tuviera que llevar esta tienda, me volvería al valle contigo un día o dos... Tú, yo, y la vieja granja.$s#$e#Vas a tener que visitarme más a menudo para que no me deprima.$h" #!String
+    Tue10: "¡Hola~! Quédate cuanto quieras.#$e#El aire acondicionado sienta bien, ¿no?" #!String
+

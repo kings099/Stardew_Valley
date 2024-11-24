@@ -1,0 +1,46 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.Int32Reader"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<Int32,String>
+    100: "hairstyles2/0/0/true/-1/false" #!String
+    101: "hairstyles2/1/0/true/-101/false" #!String
+    102: "hairstyles2/2/0/true/-1/false" #!String
+    103: "hairstyles2/3/0/true/-1/false" #!String
+    104: "hairstyles2/4/0/true/103/false" #!String
+    105: "hairstyles2/5/0/true/-1/false" #!String
+    106: "hairstyles2/6/0/true/105/false" #!String
+    107: "hairstyles2/7/0/true/-111/false" #!String
+    108: "hairstyles2/0/8/true/116/false" #!String
+    109: "hairstyles2/1/8/true/-111/false" #!String
+    110: "hairstyles2/2/8/true/-110/false" #!String
+    111: "hairstyles2/3/8/true/112/false" #!String
+    112: "hairstyles2/4/8/true/-1/false" #!String
+    113: "hairstyles2/5/8/true/-1/false" #!String
+    114: "hairstyles2/6/8/true/-114/false" #!String
+    115: "hairstyles2/7/8/true/-115/false" #!String
+    116: "hairstyles2/0/16/true/-1/false" #!String
+    117: "hairstyles2/1/16/true/112/false" #!String
+    -101: "hairstyles2/2/16/true/-1/false" #!String
+    -114: "hairstyles2/3/16/true/-1/false" #!String
+    -115: "hairstyles2/4/16/true/-1/false" #!String
+    -110: "hairstyles2/5/16/true/-1/false" #!String
+    -111: "hairstyles2/6/16/true/-1/false" #!String
+

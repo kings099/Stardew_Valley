@@ -1,0 +1,72 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Rainy_Day_0: "Vielleicht ist es ein guter Tag, um sich zurückzulehnen und ein wenig Gitarre zu spielen...#$e#Hey, du kannst dich auch entspannen, wenn du willst." #!String
+    Rainy_Day_1: "Denkst du, Sebastian und Abigail kommen je zusammen?#$e#Heh... Nachdem ich verheiratet bin, möchte ich die anderen auch verkuppeln." #!String
+    Rainy_Day_2: "Hey, ich habe dies hinten in einer Schublade herumrollen sehen.[90 88 86 535]#$e#Dachte, du könntest es vielleicht gebrauchen." #!String
+    Rainy_Day_3: "Ach, Mist. Diese wolkigen Tage sind irgendwie öde...$7" #!String
+    Rainy_Day_4: "Wie hast du geschlafen? Das Geräusch des Regens lässt mich immer gleich wegpennen." #!String
+    patio_Sam: "*Seufz*... Ich werde diesen Trick nie hingekommen...$s" #!String
+    Rainy_Night_0: "Hey, wie war dein Tag? Ich bin nur rumgelegen und habe die meiste Zeit Comics gelesen... Es war super.$h" #!String
+    Rainy_Night_1: "Es war ein ziemlich langsamer Tag für mich... Cola, Tiefkühlpizza, ein wenig auf der Gitarre spielen. Ich fühle mich entspannt." #!String
+    Rainy_Night_2: "Vorhin habe ich mir diese Live-Aufnahme von einer unserer Shows angehört. Erinnerst du dich noch daran? Das war ein Durcheinander.#$b#Ich war etwas nervös, weil du dort warst und ich wollte nicht versagen und mich vor dir zum Trottel machen!$10" #!String
+    Rainy_Night_3: "Ich hoffe, Vincent ist nicht zu einsam, seitdem ich weg bin... Ich fühl mich ein wenig verantwortlich für den kleinen Kerl.$s#$e#Aber im Leben geht es um Veränderungen, richtig? Auch Kinder müssen das eines Tages lernen... Ansonsten kommen sie nie als Erwachsene zurecht.$7" #!String
+    Rainy_Night_4: "Hey, ich habe ein paar Tiefkühlpizzen in den Ofen geworfen. Hier ist deine.[206]$h" #!String
+    Indoor_Day_0: "Puh... Ich werde dir eine Sache sagen, die ich an meinem alten Leben nicht vermisse... beim Joja-Markt zu arbeiten." #!String
+    Indoor_Day_1: "Hey, ich habe dir ein paar Fertig-Pfannkuchen gemacht. Guten Appetit.[211]$h#$e#Was? Ich habe nie gelernt zu kochen... Mutter hat das immer getan." #!String
+    Indoor_Day_2: "Hey. Ich albere oft herum, aber du solltest wissen, dass ich dich aufrichtig liebe...$l" #!String
+    Indoor_Day_3: "Hast du irgendwelche großen Pläne für den Tag?#$e#Oh, nicht ich... Ich entscheide mich normalerweise spontan..." #!String
+    Indoor_Day_4: "Äh... Vielleicht helfe ich dir ein anderes Mal auf dem Hof. Ich bin heute zu faul.$s#$e#Du bist mir hoffentlich nicht böse?" #!String
+    Indoor_Night_0: "Hey, du siehst müde aus. Ich helfe dir beim Entspannen, okay? Vielleicht gebe ich dir später noch eine Massage." #!String
+    Indoor_Night_1: "Mein Tag? Oh... Ich kann mich kaum erinnern. Ich habe nicht wirklich irgendetwas Bedeutendes gemacht. Ich habe mich nur entspannt und eine gute Zeit gehabt." #!String
+    Indoor_Night_2: "Hey, entschuldige, dass ich das Bett nicht gemacht hab. Du weißt, ich bin unordentlich... Aber das liebst du an mir, richtig?$h" #!String
+    Indoor_Night_3: "Das einzige, was ich von daheim vermisse, ist Mutters Fischeintopf." #!String
+    Indoor_Night_4: "Sollen wir schlafen gehen? Ich habe tatsächlich mal das Bett gemacht..." #!String
+    Outdoor_0: "Vielleicht sollte ich ein paar Geländerollen für mein Skateboard besorgen. Bürgermeister Lewis kann mir da draußen gar nichts.$h" #!String
+    Outdoor_1: "Ich behalte den weiten blauen Himmel immer im Auge... Du weißt nie, wann vielleicht ein UFO vorbeischießt." #!String
+    Outdoor_2: "Hi, @! Wenn ich mehr über Hofarbeit Bescheid wüsste, würde ich dir mehr helfen. Entschuldige!#$e#Ich werde dir mit aufmunternden Gedanken helfen.$h" #!String
+    Outdoor_3: "Irgendetwas in der Luft lässt mich heute positiv denken... Vielleicht ist es der feine Pizzaduft aus Gus' Ofen." #!String
+    Outdoor_4: "Wow... du siehst heute toll aus und die paar Schlammflecken machen das ganze nur noch zauberhafter.$l" #!String
+    OneKid_0: "Ich werde die Windeln von %kid1 wechseln... mach dir keine Gedanken. Du hast genug zu tun." #!String
+    OneKid_1: "Es ist seltsam, aber ich bin unheimlich gern Vater!$h" #!String
+    OneKid_3: "Ich denke, wir sollten noch ein Kind haben. Warum jetzt aufhören?" #!String
+    TwoKids_0: "Ich bin heute früher aufgestanden, habe den Kindern Essen gemacht und ihre Windeln gewechselt. Wir sind bereit. Du kannst dich darauf konzentrieren, Geld zu scheffeln.$h#$e#Ich mache nur Spaß... Ich habe dich nicht des Geldes wegen geheiratet." #!String
+    TwoKids_1: "Wir müssen darauf achten, dass wir %kid1 eine Menge Aufmerksamkeit geben, nachdem wir %kid2 haben. Wir wollen nicht, dass Neid zwischen ihnen aufkommt." #!String
+    TwoKids_2: "Es ist schön, die beiden Babys miteinander spielen zu sehen. Die beiden werden gut miteinander auskommen." #!String
+    TwoKids_3: "Ich hätte nie gedacht, dass ich ein Familienvater werden würde, aber ich bin wirklich zufrieden mit dem, was wir hier aufgebaut haben. Das Leben läuft großartig.$h" #!String
+    Good_1: "Denkst du je an die Nacht, in der wir uns in mein Zimmer geschlichen haben? Ich schon, ziemlich oft...$l" #!String
+    Good_2: "Weißt du, ich hatte von Anfang an so ein Gefühl, dass wir zusammen kommen würden. Es gibt einfach etwas Besonderes zwischen uns.$l" #!String
+    Good_3: "Wow, du siehst heute wirklich gut aus! Hast du etwas mit deinen Haaren gemacht?$l^Wow, du siehst heute atemberaubend aus. Hast du etwas neues mit deinen Haaren gemacht?$l" #!String
+    Good_6: "Pass auf dich auf! Ich weiß, dass du manchmal in die Höhlen gehst... Irgendetwas könnte dich dort fressen!" #!String
+    Good_4: "Baby, ich wollte dir gerade einen Song auf der Gitarre schreiben. Aber jetzt bist du hier und ich bin beruhigt.#$e#Ich will hauptsächlich Gitarre spielen, wenn ich einsam bin." #!String
+    Good_5: "Baby, rede mit mir! Ich bin immer daran interessiert, von deinem Tag zu hören." #!String
+    funLeave_Sam: "Ich werde heute die Familie besuchen, okay? Ich bin abends wieder zurück." #!String
+    funReturn_Sam: "Die Familie zu sehen ist schön, aber es ist auch auf eine merkwürdige Art und Weise deprimierend. Ich meine... unsere Leben sind jetzt komplett getrennt und es fühlt sich im Vergleich zu früher alles so steif an.$7" #!String
+    spring_1: "Ub... Frühling... meine Nade... Allergien.$s" #!String
+    spring_12: "Bist du schon auf das Fest morgen gespannt? Ich freue mich darauf, Sebastian wieder zu sehen." #!String
+    spring_23: "Oh... Morgen ist der Blumentanz, nicht? Ich dachte, ich bliebe nach unserer Hochzeit davon verschont.#$e#Was auch immer. Er ist auf eine merkwürdige Art ganz lustig." #!String
+    summer_1: "Im Sommer sind die Pollen ein wenig schwächer, also ist meine Nase wirklich glücklich.$h" #!String
+    summer_10: "Hast du darüber nachgedacht, was du in die Luau-Suppe geben willst?#$e#Es wäre vielleicht lustig, etwas Seltsames hineinzutun. Weißt schon, um dem Gouverneur einen Streich zu spielen!$h#$e#Entschuldige..." #!String
+    summer_27: "Der Sommer ist toll, aber ich bin jetzt bereit für den Herbst.#$e#Sollten wir morgen Nacht den Quallen zusehen? Es ist immer ein Spektakel." #!String
+    fall_1: "Es scheint, als hätte sich das ganze Tal über Nacht verändert... Der Herbst ist wohl endlich hier." #!String
+    fall_15: "Hey, morgen ist das Volksfest. Ich muss meine Schleuder wieder etwas aufpolieren..." #!String
+    fall_26: "Ich frage mich, ob Mutter Vincent dieses Jahr in das verfluchte Labyrinth lässt. Vermutlich nicht...$h#$e#Armes Kind. Er muss eines Tages erwachsen werden..." #!String
+    winter_1: "Die kalte Luft friert mein Haargel ein. Das ist ziemlich unangenehm.$s" #!String
+    winter_7: "Schauen wir morgen beim Eisfest vorbei? Es wäre lustig, alle mal wieder zu sehen..." #!String
+    winter_28: "Wir hatten ein großartiges Jahr, @... Es ist irgendwie schade, dass es vorbei ist.#$e#Wir müssen das nächste Jahr einfach noch besser machen!$h" #!String
+

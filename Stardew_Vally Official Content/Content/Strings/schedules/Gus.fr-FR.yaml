@@ -1,0 +1,23 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    fall_4.000: "Aller voir le médecin me rend nerveux... Et s’il ne me reste que quelques années à vivre ? Je ne suis pas encore prêt à quitter ce monde ! " #!String
+    fall_4.001: "C’est mon foie, n’est-ce pas, docteur ? Je peux le voir sur votre visage. *Soupir*... J’ai vraiment besoin de réduire ma consommation de ce délicieux vin sucré de Stardew Valley.$s" #!String
+    Mon.000: "Je vais chercher des provisions pour le saloon. Pierre a ce qu’il y a de meilleur.$h" #!String
+    Sun.000: "Salut @. Désolé... mais le bar est fermé jusqu’à la fin du match." #!String
+

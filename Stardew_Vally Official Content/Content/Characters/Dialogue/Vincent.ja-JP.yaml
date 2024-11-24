@@ -1,0 +1,46 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Introduction: "はじめまして！ボクはヴィンセント。#$b#おかあさんが 知らない人と 話しちゃ ダメだって 言ってるけど…あなたなら 大丈夫そう。" #!String
+    AcceptBirthdayGift_Positive: "誕生日プレゼント？ぼくに？#$b#うわぁ！すっごく欲しかったんだ！やったー！$h" #!String
+    AcceptBirthdayGift_Negative: "誕生日プレゼント？なーんだ… あまりうれしくないや$s" #!String
+    AcceptGift_(O)StardropTea: "わぁ！とっても甘いね！うん… おいしいよ！" #!String
+    AcceptGift_(TR)FrogEgg: "（つるん つるん）…えーっ！これをくれるの？もらっていいの？やったー！$h" #!String
+    GreenRain: "お母さん！外に出て遊びたいよ！%noturn" #!String
+    GreenRain_2: "%ヴィンセントはコケにおおわれている。" #!String
+    AcceptGift_Negative_alcohol_item: "（クンクン）… これはなに？変なにおい…ねえ、お母さーん！$s" #!String
+    Resort_Entering: "とても楽しかったよ！いつかボートの船長になりたいな！" #!String
+    Resort_Leaving: "すぐに戻って来たいよ！" #!String
+    Resort_Shore: "サメを見てみたいな！$h" #!String
+    married_Sam: "ボクのお兄ちゃんをつれていかないで！$s" #!String
+    Resort: "近くで見ると、小さな虫が砂の中から飛び出しているのが見えるんだ。$h" #!String
+    reject_869: "おおー！よく見つけたね！#$b#お母さんは飼っちゃダメって言ってるけど…$s" #!String
+    Mon: "大きくなったら、 お兄ちゃん みたいに なりたいな！$h#$e#うん！じゃあね！" #!String
+    Mon4: "$d kent#おとうさんが戻ってうれしいけどさ、前とは様子が違うんだ。$s|おとうさんとはあんまり会えないんだ…一緒に遊びたいよ。$s" #!String
+    Tue: "はぁ… 今日は これ以上 おかあさんから グミが もらえないんだ。$s" #!String
+    Tue6: "お兄さん、 秘密だよ？^お姉さん、 秘密だよ？$u#$b#大きくなったら、 ペニーさんと 結婚したいんだ。#$e#ペニーさんには 言わないでね。$u" #!String
+    Wed: "虫を 探したいけど、 泥まみれになると おかあさんに しかられるんだ。$u#$b#難しいよね。" #!String
+    Thu: "おなかすいた… おかあさんは どこ？$s" #!String
+    Thu2: "あなたって、 他の 大人と 違って 面白いんだね！" #!String
+    Fri: "#$c .3#うわっ、 また テンサイの煮込み…$s#$e#サイアクだよ…今夜は おかあさんが レンズマメの スープを 作るんだって。$s" #!String
+    Sat_1: "もうすぐ おとうさんが 帰ってくるんだって！#$b#お土産の オモチャは ないかな。$u" #!String
+    Sat: "ペニーさんは 毎週 新しい 本を 読ませてくれるんだ。$s#$b#時々、 本を 選ばせてくれることも あるんだよ！" #!String
+    Sat8: "$d kent#おとうさんが帰ってきたけど、何か変。いったいどうしたんだろう？$s#$b#ボクと一緒に遊んでくれないんだ。$s|ちゃんと帰ってくるかなぁって思ってしまう。$s" #!String
+    Sun: "こんにちは、 お兄さん！^こんにちは、 お姉さん！" #!String
+    Sun10: "こんにちは、@おじさん！^こんにちは、@おばさん！#$e#大人では あなたが 好きだって… おかあさんには 言わないでね。$h" #!String
+

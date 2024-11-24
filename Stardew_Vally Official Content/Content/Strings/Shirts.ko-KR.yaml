@@ -1,0 +1,417 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Shirt_Name: "셔츠" #!String
+    Shirt_Description: "입을만한 셔츠." #!String
+    ClassicOveralls_Name: "전형적인 멜빵바지" #!String
+    ClassicOveralls_Description: "전형적인 농부의 복장." #!String
+    MintBlouse_Name: "민트색 블라우스" #!String
+    MintBlouse_Description: "연한 녹색 톤의 귀여운 블라우스." #!String
+    DarkShirt_Name: "어두운 셔츠" #!String
+    DarkShirt_Description: "어두운 색의 셔츠." #!String
+    SkullShirt_Name: "두개골 셔츠" #!String
+    SkullShirt_Description: "위협적인 해골이 그려져있는 셔츠." #!String
+    LightBlueShirt_Name: "연파랑 셔츠" #!String
+    LightBlueShirt_Description: "연한 파란색 셔츠." #!String
+    TanStripedShirt_Name: "베이지색 줄무늬 셔츠" #!String
+    TanStripedShirt_Description: "흰색 줄이 있는 베이지색 셔츠." #!String
+    GreenOveralls_Name: "녹색 멜빵바지" #!String
+    GreenOveralls_Description: "약간은 인기가 덜한 전형적인 농부의 복장." #!String
+    GoodGriefShirt_Name: "\"세상에\" 셔츠" #!String
+    GoodGriefShirt_Description: "참 좋은 셔츠..." #!String
+    AquamarineShirt_Name: "연하늘색 셔츠" #!String
+    AquamarineShirt_Description: "연한 하늘색 셔츠." #!String
+    SuitTop_Name: "정장 상의" #!String
+    SuitTop_Description: "격식을 차린 자리를 위한 상의." #!String
+    GreenBeltedShirt_1011_Name: "녹색 벨트 셔츠" #!String
+    GreenBeltedShirt_1011_Description: "벨트가 있는 녹색 셔츠." #!String
+    LimeGreenStripedShirt_Name: "라임색 줄무늬 셔츠" #!String
+    LimeGreenStripedShirt_Description: "흰색 줄무늬가 있는 라임색 셔츠." #!String
+    RedStripedShirt_Name: "붉은 줄무늬 셔츠" #!String
+    RedStripedShirt_Description: "흰색 줄무늬가 있는 붉은 셔츠." #!String
+    SkeletonShirt_Name: "해골 셔츠" #!String
+    SkeletonShirt_Description: "갈비뼈가 그려져있는 셔츠." #!String
+    OrangeShirt_Name: "주황색 셔츠" #!String
+    OrangeShirt_Description: "주황색 셔츠." #!String
+    NightSkyShirt_Name: "밤하늘 셔츠" #!String
+    NightSkyShirt_Description: "밤하늘을 연상케하는 셔츠." #!String
+    MayoralSuspenders_Name: "시장의 멜빵" #!String
+    MayoralSuspenders_Description: "어디선가 많이 본 멜빵..." #!String
+    BrownJacket_Name: "갈색 재킷" #!String
+    BrownJacket_Description: "갈색 재질로 만든 튼튼하고 좋은 재킷." #!String
+    SailorShirt_Name: "선원 셔츠" #!String
+    SailorShirt_Description: "넓은 바다가 생각납니다." #!String
+    GreenVest_Name: "녹색 조끼" #!String
+    GreenVest_Description: "셔츠 위에 입은 단정한 녹색 조끼." #!String
+    YellowandGreenShirt_Name: "노란색과 초록색 셔츠" #!String
+    YellowandGreenShirt_Description: "초록색 줄이 있는 노란 셔츠." #!String
+    LightBlueStripedShirt_Name: "연파랑 줄무늬 셔츠" #!String
+    LightBlueStripedShirt_Description: "흰색 줄이 있는 연한 파란색 셔츠." #!String
+    PinkStripedShirt_Name: "핑크 줄무늬 셔츠" #!String
+    PinkStripedShirt_Description: "줄무늬가 있는 핑크색 셔츠." #!String
+    WorkShirt_Name: "작업용 셔츠" #!String
+    WorkShirt_Description: "밭일을 오래 할 때 입는 셔츠." #!String
+    StoreOwnersJacket_Name: "상점 주인의 재킷" #!String
+    StoreOwnersJacket_Description: "작은 마을의 상점 주인이 입을 것 같은 재킷." #!String
+    GreenTunic_Name: "녹색 튜닉" #!String
+    GreenTunic_Description: "모험가를 위한 옷." #!String
+    FancyRedBlouse_Name: "화려한 붉은 블라우스" #!String
+    FancyRedBlouse_Description: "반짝이는 노란 단추가 달린 밝은 붉은색 블라우스." #!String
+    PlainShirt_Name_Female: "평범한 셔츠 (여)" #!String
+    PlainShirt_Name_Male: "평범한 셔츠 (남)" #!String
+    PlainShirt_Description: "간단한 셔츠." #!String
+    RetroRainbowShirt_Name: "레트로 무지개 셔츠" #!String
+    RetroRainbowShirt_Description: "색이 바랜 무지개무늬가 있는 셔츠." #!String
+    LimeGreenTunic_Name: "라임색 튜닉" #!String
+    LimeGreenTunic_Description: "벨트가 있는 밝은 녹색 튜닉." #!String
+    NeatBowShirt_Name: "단정한 나비넥타이 셔츠" #!String
+    NeatBowShirt_Description: "눈에 잘 띄는 나비넥타이가 있는 단정한 단추 셔츠." #!String
+    ShirtAndTie_Name: "셔츠와 넥타이" #!String
+    ShirtAndTie_Description: "넥타이가 있는 와이셔츠." #!String
+    EmilysMagicShirt_Name: "에밀리의 마법 셔츠" #!String
+    EmilysMagicShirt_Description: "에밀리가 사랑을 담아 만들었습니다. 천연색소로 색을 냈습니다!" #!String
+    StripedShirt_Name: "줄무늬 셔츠" #!String
+    StripedShirt_Description: "연한 줄무늬가 있는 셔츠." #!String
+    TankTop_Name_Female: "탱크탑 (여)" #!String
+    TankTop_Name_Male: "탱크탑 (남)" #!String
+    TankTop_Description: "민소매 셔츠." #!String
+    CowboyPoncho_Name: "카우보이 판초" #!String
+    CowboyPoncho_Description: "옛 서부시대의 전설적인 복장." #!String
+    CropTankTop_Name_Female: "크롭 탱크탑 (여)" #!String
+    CropTankTop_Name_Male: "크롭 탱크탑 (남)" #!String
+    CropTankTop_Description: "아랫부분이 짧게 잘린 민소매 셔츠." #!String
+    BikiniTop_Name: "비키니 탑" #!String
+    BikiniTop_Description: "여름에 볼 수 있는 옷." #!String
+    WumbusShirt_Name: "웜버스 셔츠" #!String
+    WumbusShirt_Description: "이상한 녹색 캐릭터가 그려진 셔츠." #!String
+    80sShirt_Name_Female: "80년대 셔츠 (여)" #!String
+    80sShirt_Name_Male: "80년대 셔츠 (남)" #!String
+    80sShirt_Description: "끝내주는 오프숄더 티셔츠." #!String
+    LettermanJacket_Name: "레터맨 재킷" #!String
+    LettermanJacket_Description: "팀워크의 정신이 넘쳐흐르는 재킷." #!String
+    BlackLeatherJacket_Name: "검은 레터맨 재킷" #!String
+    BlackLeatherJacket_Description: "짙은 검은색 가죽으로 만든 멋진 재킷." #!String
+    StrappedTop_Name: "끈 달린 탑" #!String
+    StrappedTop_Description: "얇은 끝이 달린 탑." #!String
+    ButtonDownShirt_Name: "와이셔츠" #!String
+    ButtonDownShirt_Description: "간단하고 단정한 셔츠." #!String
+    CropTopShirt_Name: "크롭 탑 셔츠" #!String
+    CropTopShirt_Description: "아랫부분이 짧게 잘린 셔츠." #!String
+    TubeTop_Name: "튜브 탑" #!String
+    TubeTop_Description: "몸을 감싸는 끈이 없는 탑." #!String
+    TieDyeShirt_Name: "타이 다이 셔츠" #!String
+    TieDyeShirt_Description: "묶은 채로 여러 색 염료에 담근 셔츠." #!String
+    SteelBreastplate_Name: "강철 흉갑" #!String
+    SteelBreastplate_Description: "강철로 만든 장식용 갑옷." #!String
+    CopperBreastplate_Name: "구리 흉갑" #!String
+    CopperBreastplate_Description: "구리로 만든 장식용 갑옷." #!String
+    GoldBreastplate_Name: "황금 흉갑" #!String
+    GoldBreastplate_Description: "순금으로 만든 장식용 갑옷." #!String
+    IridiumBreastplate_Name: "이리듐 흉갑" #!String
+    IridiumBreastplate_Description: "순 이리듐으로 만든 장식용 갑옷." #!String
+    FakeMusclesShirt_Name: "가짜 근육 셔츠" #!String
+    FakeMusclesShirt_Description: "운동을 하거나, 그냥 이 셔츠를 입을 수 있습니다." #!String
+    FlannelShirt_Name: "플란넬 셔츠" #!String
+    FlannelShirt_Description: "교차되는 무늬가 있는 두터운 와이셔츠. 추운 겨울에 안성맞춤입니다." #!String
+    BomberJacket_Name: "항공 재킷" #!String
+    BomberJacket_Description: "오래전에 전투기 조종사들이 입던 두껍고 튼튼한 재킷." #!String
+    CavemanShirt_Name: "원시인 셔츠" #!String
+    CavemanShirt_Description: "선사시대부터 유행해온 셔츠!" #!String
+    FishingVest_Name: "낚시용 조끼" #!String
+    FishingVest_Description: "낚시도구를 넣을 수 있는 주머니가 많습니다." #!String
+    FishShirt_Name: "물고기 셔츠" #!String
+    FishShirt_Description: "물고기 로고가 있는 셔츠." #!String
+    ShirtAndBelt_Name: "셔츠와 벨트" #!String
+    ShirtAndBelt_Description: "갈색 벨트가 있는 평범한 셔츠." #!String
+    GrayHoodie_Name: "회색 후드" #!String
+    GrayHoodie_Description: "후드가 있는 스포티한 회색 스웨터." #!String
+    BlueHoodie_Name: "파란 후드" #!String
+    BlueHoodie_Description: "후드가 있는 스포티한 파란색 스웨터." #!String
+    RedHoodie_Name: "붉은 후드" #!String
+    RedHoodie_Description: "후드가 있는 스포티한 붉은색 스웨터." #!String
+    DenimJacket_Name: "청재킷" #!String
+    DenimJacket_Description: "데님으로 만든 튼튼한 재킷." #!String
+    TrackJacket_Name: "육상 재킷" #!String
+    TrackJacket_Description: "탄력 있는 재질로 만든 가벼운 재킷." #!String
+    WhiteGi_Name: "흰색 도복" #!String
+    WhiteGi_Description: "무술가들이 주로 입는 느슨한 옷." #!String
+    OrangeGi_Name: "주황색 도복" #!String
+    OrangeGi_Description: "무술가들이 주로 입는 느슨한 옷." #!String
+    GrayVest_Name: "회색 조끼" #!String
+    GrayVest_Description: "셔츠 위에 입은 회색 조끼." #!String
+    KelpShirt_Name: "해초 셔츠" #!String
+    KelpShirt_Description: "바닷가로 밀려 올라온 것 같아 보입니다. 냄새도 납니다." #!String
+    StuddedVest_Name: "징 박힌 조끼" #!String
+    StuddedVest_Description: "금속 가시가 박힌 검은 조끼." #!String
+    GaudyShirt_Name: "얇은 셔츠" #!String
+    GaudyShirt_Description: "마음이 편해지는 푸른색입니다..." #!String
+    OasisGown_Name: "오아시스 가운" #!String
+    OasisGown_Description: "사막의 보석." #!String
+    BlacksmithApron_Name: "대장장이용 앞치마" #!String
+    BlacksmithApron_Description: "대대로 물려져 내려온 물건." #!String
+    HighWaistedShirt_DyeableBottom_Name: "하이 웨이스트 셔츠" #!String
+    HighWaistedShirt_DyeableBottom_Description: "하의가 염색 가능한 하이 웨이스트 바지." #!String
+    HighWaistedShirt_DyeableTop_Name: "하이 웨이스트 셔츠" #!String
+    HighWaistedShirt_DyeableTop_Description: "상의가 염색 가능한 하이 웨이스트 청바지." #!String
+    BasicPullover_Name_Female: "평범한 스웨터 (여)" #!String
+    BasicPullover_Name_Male: "평범한 스웨터 (남)" #!String
+    BasicPullover_Description: "평범한 스웨터." #!String
+    TurtleneckSweater_Name: "터틀넥 스웨터" #!String
+    TurtleneckSweater_Description: "목을 따뜻하게 해줍니다." #!String
+    IridiumEnergyShirt_Name: "이리듐 에너지 셔츠" #!String
+    IridiumEnergyShirt_Description: "이리듐 에너지를 뽐내보세요." #!String
+    TunnelersJersey_Name: "터널러즈 저지" #!String
+    TunnelersJersey_Description: "주주 시티 터널러즈 저지입니다." #!String
+    GraySuit_Name: "회색 정장" #!String
+    GraySuit_Description: "회색 맞춤 정장입니다." #!String
+    RedTuxedo_Name: "붉은 턱시도" #!String
+    RedTuxedo_Description: "격식 차린 행사 위한 품격 있는 상의." #!String
+    NavyTuxedo_Name: "네이비색 턱시도" #!String
+    NavyTuxedo_Description: "격식 차린 행사 위한 품격 있는 상의." #!String
+    HolidayShirt_Name: "홀리데이 셔츠" #!String
+    HolidayShirt_Description: "겨울 별의 만찬을 기념합시다." #!String
+    LeafyTop_Name: "나뭇잎 탑" #!String
+    LeafyTop_Description: "진짜 나뭇잎으로 장식된 옷." #!String
+    GoodnightShirt_Name: "굿나잇 셔츠" #!String
+    GoodnightShirt_Description: "달 그림이 그려져있는 크고 헐렁한 잠옷." #!String
+    GreenBeltedShirt_1189_Name: "녹색 벨트 셔츠" #!String
+    GreenBeltedShirt_1189_Description: "벨트가 있는 녹색 셔츠." #!String
+    HappyShirt_Name: "해피 셔츠" #!String
+    HappyShirt_Description: "가장 행복한 셔츠입니다." #!String
+    ShirtwithBow_Name: "나비넥타이 셔츠" #!String
+    ShirtwithBow_Description: "작은 나비넥타이가 있는 셔츠." #!String
+    JesterShirt_Name: "광대 셔츠" #!String
+    JesterShirt_Description: "내면의 광대를 보여주세요." #!String
+    OceanShirt_Name: "바다 셔츠" #!String
+    OceanShirt_Description: "바닷속의 물결 같은 셔츠." #!String
+    DarkStripedShirt_Name: "어두운 줄무늬 셔츠" #!String
+    DarkStripedShirt_Description: "다채로운 줄무늬가 있는 어두운색 셔츠." #!String
+    BandanaShirt_1195_Name: "반다나 셔츠" #!String
+    BandanaShirt_1195_Description: "목을 깨끗하게 지켜줄 반다나가 있는 셔츠." #!String
+    BackpackShirt_Name: "배낭 셔츠" #!String
+    BackpackShirt_Description: "캔버스 백팩이 있는 평범한 셔츠." #!String
+    PurpleBlouse_Name: "보라색 블라우스" #!String
+    PurpleBlouse_Description: "아름다운 보라색 블라우스." #!String
+    VintagePolo_Name: "빈티지 폴로" #!String
+    VintagePolo_Description: "오래된 옷장 냄새가 나고 색이 바랬습니다." #!String
+    TogaShirt_Name: "토가 셔츠" #!String
+    TogaShirt_Description: "오래된 디자인이지만, 통풍은 잘됩니다!" #!String
+    StarShirt_Name: "별 셔츠" #!String
+    StarShirt_Description: "별 부분이 야광이라는데, 빛이 안 납니다." #!String
+    ClassyTop_Name_Female: "교양 있는 탑 (여)" #!String
+    ClassyTop_Name_Male: "교양 있는 탑 (남)" #!String
+    ClassyTop_Description: "정말 부드러운 벨벳 재질입니다." #!String
+    BandanaShirt_1203_Name: "반다나 셔츠" #!String
+    BandanaShirt_1203_Description: "목을 위협으로부터 지켜줄 반다나가 있는 셔츠." #!String
+    VacationShirt_Name: "휴가 셔츠" #!String
+    VacationShirt_Description: "페른 섬의 관광객 셔츠." #!String
+    GreenThumbShirt_Name: "원예가의 셔츠" #!String
+    GreenThumbShirt_Description: "화분용 영양토가 묻어있습니다." #!String
+    BandanaShirt_Name: "반다나 셔츠" #!String
+    BandanaShirt_Description: "목을 부드럽게 유지해줄 반다나가 있는 셔츠." #!String
+    SlimeShirt_Name: "슬라임 셔츠" #!String
+    SlimeShirt_Description: "큰 슬라임 같아 보이는 셔츠." #!String
+    ExcavatorShirt_Name: "발굴자의 셔츠" #!String
+    ExcavatorShirt_Description: "화석을 캐면서도 패션을 신경 씁시다." #!String
+    SportsShirt_Name: "스포츠 셔츠" #!String
+    SportsShirt_Description: "홈런을 칠 것만 같은 셔츠." #!String
+    HeartShirt_Name: "하트 셔츠" #!String
+    HeartShirt_Description: "이 부드러운 옷으로 자신의 마음을 모두에게 보여주세요." #!String
+    DarkJacket_Name: "어두운 재킷" #!String
+    DarkJacket_Description: "양털 안감이 있는 어두운 청재킷." #!String
+    SunsetShirt_Name: "노을 셔츠" #!String
+    SunsetShirt_Description: "하루의 마무리를 담은 셔츠." #!String
+    ChefCoat_Name: "셰프 코트" #!String
+    ChefCoat_Description: "주방장의 전통적인 유니폼." #!String
+    ShirtOTheSea_Name: "바다의 셔츠" #!String
+    ShirtOTheSea_Description: "바닷소금 냄새가 납니다." #!String
+    ArcaneShirt_Name: "신비한 셔츠" #!String
+    ArcaneShirt_Description: "이 옷에서는 어떤 힘이 느껴집니다." #!String
+    PlainOveralls_Name: "평범한 멜빵바지" #!String
+    PlainOveralls_Description: "셔츠를 염색할 수 있는 전형적인 멜빵바지." #!String
+    SleevelessOveralls_Name: "민소매 멜빵바지" #!String
+    SleevelessOveralls_Description: "민소매 셔츠를 염색할 수 있는 전형적인 멜빵바지." #!String
+    WhiteOverallsShirt_Name: "흰색 멜빵바지 셔츠" #!String
+    WhiteOverallsShirt_Description: "흰색 셔츠와 벨트가 있는 전형적인 멜빵바지." #!String
+    Cardigan_Name: "가디건" #!String
+    Cardigan_Description: "단추 달린 부드러운 가디건 스웨터." #!String
+    YobaShirt_Name: "요바 셔츠" #!String
+    YobaShirt_Description: "'그릇의 표식'이 그려진 셔츠." #!String
+    NecklaceShirt_Name: "목걸이 셔츠" #!String
+    NecklaceShirt_Description: "황금 목걸이가 있는 셔츠." #!String
+    BeltedCoat_Name: "벨트 코트" #!String
+    BeltedCoat_Description: "벨트가 눈에 띄는 검은색 벨벳 코트." #!String
+    GoldTrimmedShirt_Name: "황금 테두리 셔츠" #!String
+    GoldTrimmedShirt_Description: "테두리가 금색인 셔츠." #!String
+    PrismaticShirt_Name: "무지갯빛 셔츠" #!String
+    PrismaticShirt_Description: "무지갯빛 에너지로 일렁입니다." #!String
+    PendantShirt_Name: "펜던트 셔츠" #!String
+    PendantShirt_Description: "큰 펜던트가 있는 셔츠." #!String
+    HighHeatShirt_Name: "고온 셔츠" #!String
+    HighHeatShirt_Description: "불에 붙은 것 같은 셔츠입니다!" #!String
+    FlamesShirt_Name: "불꽃 셔츠" #!String
+    FlamesShirt_Description: "불꽃은 뜨겁게, 룩은 쿨하게." #!String
+    AntiquityShirt_Name: "고대 셔츠" #!String
+    AntiquityShirt_Description: "오래된 무늬가 있는 셔츠." #!String
+    SoftArrowShirt_Name: "부드러운 화살표 셔츠" #!String
+    SoftArrowShirt_Description: "위를 향하는 화살표 무늬가 있는 부드러운 색 셔츠." #!String
+    DollShirt_Name: "인형 셔츠" #!String
+    DollShirt_Description: "이상한 고대의 인형 얼굴이 그려진 셔츠." #!String
+    JewelryShirt_Name: "장신구 셔츠" #!String
+    JewelryShirt_Description: "간단한 황금 목걸이가 있는 셔츠." #!String
+    CanvasJacket_Name: "캔버스 재킷" #!String
+    CanvasJacket_Description: "양털 안감이 있는 갈색 재킷." #!String
+    TrashCanShirt_Name: "쓰레기통 셔츠" #!String
+    TrashCanShirt_Description: "쓰레기통을 입고 계십니다." #!String
+    RustyShirt_Name: "녹슨 셔츠" #!String
+    RustyShirt_Description: "녹슨 것 같아 보이도록 제작된 티셔츠." #!String
+    CircuitboardShirt_Name: "회로판 셔츠" #!String
+    CircuitboardShirt_Description: "전자 회로도 같아 보이는 셔츠." #!String
+    FluffyShirt_Name: "푹신한 셔츠" #!String
+    FluffyShirt_Description: "푹신합니다." #!String
+    SauceStainedShirt_Name: "소스 묻은 셔츠" #!String
+    SauceStainedShirt_Description: "이미 스파게티 소스가 묻어있어서 다른 것도 마음대로 흘려도 됩니다!" #!String
+    BrownSuit_Name: "갈색 정장" #!String
+    BrownSuit_Description: "평범한 갈색 정장." #!String
+    GoldenShirt_Name: "황금 셔츠" #!String
+    GoldenShirt_Description: "반짝이는 금색 셔츠입니다." #!String
+    CaptainsUniform_Name: "선장 유니폼" #!String
+    CaptainsUniform_Description: "전형적인 선장의 유니폼." #!String
+    OfficerUniform_Name: "경찰 유니폼" #!String
+    OfficerUniform_Description: "전형적인 경찰의 유니폼." #!String
+    RangerUniform_Name: "삼림 관리원 유니폼" #!String
+    RangerUniform_Description: "전형적인 삼림 관리원의 유니폼." #!String
+    BlueLongVest_Name: "긴 파란 조끼" #!String
+    BlueLongVest_Description: "회색 셔츠 위의 긴 파란 조끼." #!String
+    RegalMantle_Name: "제왕의 망토" #!String
+    RegalMantle_Description: "제왕에 어울리는 보라색 옷" #!String
+    RelicShirt_Name: "유물 셔츠" #!String
+    RelicShirt_Description: "황금 유물을 찾았다는 것을 증명할 셔츠!" #!String
+    BoboShirt_Name: "보보 셔츠" #!String
+    BoboShirt_Description: "이상하게 생긴 남자가 그려진 핑크색 셔츠." #!String
+    FriedEggShirt_Name: "계란 프라이 셔츠" #!String
+    FriedEggShirt_Description: "일어나, 계란 먹어." #!String
+    BurgerShirt_Name: "버거 셔츠" #!String
+    BurgerShirt_Description: "버거를 입으세요!" #!String
+    CollaredShirt_Name: "깃 셔츠" #!String
+    CollaredShirt_Description: "빳빳한 깃이 있는 셔츠." #!String
+    ToastedShirt_Name: "토스트 셔츠" #!String
+    ToastedShirt_Description: "살짝 구운 느낌의 셔츠." #!String
+    CarpShirt_Name: "잉어 셔츠" #!String
+    CarpShirt_Description: "큰 잉어가 그려져있습니다." #!String
+    RedFlannelShirt_Name: "붉은 플란넬 셔츠" #!String
+    RedFlannelShirt_Description: "붉은색과 파란색 무늬가 있는 플란넬 셔츠." #!String
+    TortillaShirt_Name: "또띠야 셔츠" #!String
+    TortillaShirt_Description: "또띠야 무늬 셔츠." #!String
+    WarmFlannelShirt_Name: "따뜻한 플란넬 셔츠" #!String
+    WarmFlannelShirt_Description: "갈색과 장미색의 따뜻한 색이 조합된 플란넬 셔츠." #!String
+    SugarShirt_Name: "설탕 셔츠" #!String
+    SugarShirt_Description: "'달콤한 에너지'로 가득한 셔츠." #!String
+    GreenFlannelShirt_Name: "녹색 플란넬 셔츠" #!String
+    GreenFlannelShirt_Description: "녹색과 갈색 무늬가 있는 플란넬 셔츠." #!String
+    OilStainedShirt_Name: "기름 얼룩 셔츠" #!String
+    OilStainedShirt_Description: "기름이 많이 묻은 셔츠." #!String
+    MorelShirt_Name: "곰보 셔츠" #!String
+    MorelShirt_Description: "유명한 봄철 버섯이 그려진 셔츠." #!String
+    SpringShirt_Name: "봄 셔츠" #!String
+    SpringShirt_Description: "가볍고 상쾌하고 봄의 색을 담은 셔츠." #!String
+    RainCoat_Name: "우비" #!String
+    RainCoat_Description: "전형적인 노란색 우비." #!String
+    SailorShirt_1261_Name: "선원 셔츠" #!String
+    SailorShirt_1261_Description: "다른 선원 셔츠와는 달리, 흰색 깃이 있고 몸 부분은 염색할 수 있습니다." #!String
+    DarkBandanaShirt_Name: "어두운 반다나 셔츠" #!String
+    DarkBandanaShirt_Description: "다채로운 반다나가 있는 어두운 셔츠." #!String
+    DarkHighlightShirt_Name: "어두운 하이라이트 셔츠" #!String
+    DarkHighlightShirt_Description: "밝은 하이라이트가 있는 어두운 셔츠." #!String
+    OmniShirt_Name: "옴니 셔츠" #!String
+    OmniShirt_Description: "무지개 반점들로 장식되어있습니다!" #!String
+    BridalShirt_Name: "신부 셔츠" #!String
+    BridalShirt_Description: "신부를 위한 아름다운 흰색 상의." #!String
+    BrownOveralls_Name: "갈색 멜빵바지" #!String
+    BrownOveralls_Description: "흙먼지가 묻어도 잘 안 보입니다." #!String
+    OrangeBowShirt_Name: "주황색 나비넥타이 셔츠" #!String
+    OrangeBowShirt_Description: "큰 흰색 나비넥타이가 있는 주황색 줄무늬 셔츠." #!String
+    WhiteOveralls_Name: "흰색 멜빵바지" #!String
+    WhiteOveralls_Description: "전형적인 농부의 복장의 깔끔한 변형." #!String
+    PourOverShirt_Name: "포어-오버 셔츠" #!String
+    PourOverShirt_Description: "익숙한 지그재그 무늬의 셔츠입니다. 아... 그 냄새." #!String
+    GreenJacketShirt_Name: "녹색 재킷 셔츠" #!String
+    GreenJacketShirt_Description: "청둥오리의 무늬를 본뜬 옷. 염색할 수 있습니다." #!String
+    ShortJacket_Name: "짧은 재킷" #!String
+    ShortJacket_Description: "염색 가능한 짧은 재킷." #!String
+    PolkaDotShirt_Name: "물방울무늬 셔츠" #!String
+    PolkaDotShirt_Description: "염색 가능한 물방울무늬가 있는 어두운 셔츠." #!String
+    WhiteDotShirt_Name: "흰 물방울무늬 셔츠" #!String
+    WhiteDotShirt_Description: "흰 물방울무늬가 있는 염색 가능한 셔츠." #!String
+    CamoShirt_Name: "위장색 셔츠" #!String
+    CamoShirt_Description: "주변 환경과 비슷해 보이게 도와줍니다." #!String
+    DirtShirt_Name: "흙 셔츠" #!String
+    DirtShirt_Description: "농장과 어울립니다!" #!String
+    CrabCakeShirt_Name: "게살 케이크 셔츠" #!String
+    CrabCakeShirt_Description: "바로 즐길 수 있도록 아이올리 소스가 발라져있습니다. 즐거운 식사되세요!" #!String
+    SilkyShirt_Name: "실크 셔츠" #!String
+    SilkyShirt_Description: "비단 같은 재질로 만든 셔츠." #!String
+    BlueButtonedVest_Name: "파란 단추 조끼" #!String
+    BlueButtonedVest_Description: "소매를 염색할 수 있는 파란색 셔츠." #!String
+    FadedDenimShirt_Name: "색 바랜 데님 셔츠" #!String
+    FadedDenimShirt_Description: "칙칙하게 바랜 데님 셔츠입니다." #!String
+    RedButtonedVest_Name: "붉은 단추 조끼" #!String
+    RedButtonedVest_Description: "소매를 염색할 수 있는 붉은색 셔츠." #!String
+    GreenButtonedVest_Name: "초록 단추 조끼" #!String
+    GreenButtonedVest_Description: "소매를 염색할 수 있는 초록색 셔츠." #!String
+    TomatoShirt_Name: "토마토 셔츠" #!String
+    TomatoShirt_Description: "중요한 질문의 답이 적힌 셔츠: '토마토는'... (하지만 글이 지워져서 채소인지 과일인지 알 수 없다)." #!String
+    FringedVest_Name: "술 달린 조끼" #!String
+    FringedVest_Description: "민소매 셔츠 위의 술 달린 갈색 조끼." #!String
+    GlobbyShirt_Name: "방울 셔츠" #!String
+    GlobbyShirt_Description: "형체가 불분명한 방울 무늬가 있는 셔츠." #!String
+    MidnightDogJacket_Name: "자정의 개 재킷" #!String
+    MidnightDogJacket_Description: "오징어 먹물을 사용해 짙은 암청색으로 염색된 재킷." #!String
+    ShrimpEnthusiastShirt_Name: "새우 애호가 셔츠" #!String
+    ShrimpEnthusiastShirt_Description: "지속적으로 새우를 공급받아야 하는 입맛을 가진 분들을 위한 셔츠." #!String
+    TeaShirt_Name: "'티' 셔츠" #!String
+    TeaShirt_Description: "널리 알려진 음료를 기반으로 만든 셔츠." #!String
+    TrinketShirt_Name: "장신구 셔츠" #!String
+    TrinketShirt_Description: "여러 가지 색의 큰 유리구슬이 달려있는 셔츠." #!String
+    DarknessSuit_Name: "어둠의 정장" #!String
+    DarknessSuit_Description: "색 바랜 붉은 손수건이 있는 검은 정장 상의." #!String
+    MineralDogJacket_Name: "미네랄 도그 재킷" #!String
+    MineralDogJacket_Description: "바다의 미량 미네랄이 주입되어 있습니다." #!String
+    MagentaShirt_Name: "자홍색 셔츠" #!String
+    MagentaShirt_Description: "마그마 버섯으로 특유의 색을 냈습니다." #!String
+    GingerOveralls_Name: "진저 멜빵바지" #!String
+    GingerOveralls_Description: "진저에일 색감으로 제작된 옷." #!String
+    BananaShirt_Name: "바나나 셔츠" #!String
+    BananaShirt_Description: "바나나를 사랑한다면 이 셔츠를 고려해볼 만합니다." #!String
+    YellowSuit_Name: "노란 양복" #!String
+    YellowSuit_Description: "대담한 패션 선언을 담고 있는 복장." #!String
+    HotPinkShirt_Name: "핫 핑크 셔츠" #!String
+    HotPinkShirt_Description: "열대 지방에 어울리는 트로피컬 핑크색 실크 셔츠." #!String
+    TropicalSunriseShirt_Name: "열대 일출 셔츠" #!String
+    TropicalSunriseShirt_Description: "코코넛 향이 납니다." #!String
+    IslandBikini_Name: "섬 비키니" #!String
+    IslandBikini_Description: "페른 군도의 룩." #!String
+    MagicSprinkleShirt_Name: "마법 스프링클 셔츠" #!String
+    MagicSprinkleShirt_Description: "무지갯빛 스프링클이 있는 셔츠." #!String
+    PrismaticShirt_DarkSleeves_Name: "무지갯빛 셔츠" #!String
+    PrismaticShirt_DarkSleeves_Description: "무지갯빛 에너지로 일렁이고 있습니다. 소매가 어두운색입니다." #!String
+    PrismaticShirt_LightSleeves_Name: "무지갯빛 셔츠" #!String
+    PrismaticShirt_LightSleeves_Description: "무지갯빛 에너지로 일렁이고 있습니다. 소매가 흰색입니다." #!String
+    MysteryShirt_Name: "미스테리 셔츠" #!String
+    MysteryShirt_Description: "미스테리 박스의 남은 부분으로 만들었습니다." #!String
+

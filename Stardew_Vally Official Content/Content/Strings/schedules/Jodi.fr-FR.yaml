@@ -1,0 +1,27 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    spring_11.003: "Vincent a été très courageux chez le médecin aujourd’hui. Je suis fière de lui." #!String
+    winter_17.000: "Ça doit être tellement excitant de parcourir le monde comme eux... *Soupir*..." #!String
+    spring_11.001: "Sois courageux, Vincent. Pense à ton père." #!String
+    Tue.000: "Ohhh... Mes bras sont comme de la gélatine...$s" #!String
+    spring.000: "Chut... il dort." #!String
+    spring_18.000: "Salut ! Tu ne peux pas entrer comme ça pendant un rendez-vous privé !$u" #!String
+    spring_11.002: "Docteur Harvey ? Je m’inquiète pour la taille de Vincent. N’est-il pas un peu petit pour son âge ?" #!String
+    spring_11.000: "Vincent déteste plus que tout aller chez le médecin, mais il devra bien l’accepter." #!String
+

@@ -1,0 +1,25 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    winter_17.000: "你见过美人鱼秀吗？那是我的最爱……" #!String
+    marriage_Mon.000: "我一整天都将在这里待着。我的祖父母都不再年轻了……" #!String
+    summer_16.000: "你好。呃，我刚刚把脚扭了。能不能帮我上一下绷带。" #!String
+    summer_16.001: "嗯，嗯……我很好，医生。就帮我上一下绷带，行吗？" #!String
+    Sun.000: "%亚历克斯完全沉浸在游戏里，他没有注意到你的到来。" #!String
+    Sun.000_married: "嘿，@！如果你愿意的话，可以和我们一起观看比赛，你忙的话就拒绝吧，没啥大不了的。" #!String
+

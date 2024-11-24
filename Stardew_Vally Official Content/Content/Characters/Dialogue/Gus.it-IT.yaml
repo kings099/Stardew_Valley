@@ -1,0 +1,57 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Introduction: "Ehilà! Sono Gus, chef e proprietario del Saloon Astropomo.#$e#Fermati pure quando hai bisogno di un rinfresco. Ho sempre pronti caffè bollente e birra ghiacciata.$h" #!String
+    AcceptGift_(O)StardropTea: "Oh wow, grazie! Sono tentato di bermelo tutto, ma ne conserverò un po' per il saloon. Scommetto che potrei farci un cocktail interessante!" #!String
+    AcceptGift_Positive_category_cooking: "*annusa*... Ah. Squisita gastronomia. Conosci i miei gusti, @.$h" #!String
+    accept_865: "*sniff* sniff* ... quell'odore acre!#$b#*slurp* *slurp* ... quel sapore asprigno! Quella consistenza granulosa!#$b#Non può essere che sale al pomodoro pregiato! Facciamo un piccolo baratto." #!String
+    GreenRain: "Ho visto le previsioni del tempo, ieri sera. Mi sono preso un bello spavento!$s#$e#Ci sono dei mostri là fuori? Cosa sta succedendo?" #!String
+    GreenRainFinished: "Per fortuna è finita. Ho già abbastanza preoccupazioni con il saloon, non mi serve pure il tempo esotico!" #!String
+    GreenRain_2: "*annusa*... Questa pioggia ha un odore particolare. Ci hai fatto caso? Sembra quello delle erbe appena tritate..." #!String
+    cropMatured_256: "Lewis mi ha detto che i tuoi pomodori sono maturi. Ottime notizie!#$b#...Immagina cosa sarebbe il mondo culinario senza pomodori..." #!String
+    eventSeen_502969: "Per me è importante che le persone mangino piatti buoni e salutari. Purtroppo, al giorno d'oggi, non tutti possono permetterselo." #!String
+    married: "Ehi @, volevo solo dirti che sono felice per te e %spouse." #!String
+    dating_Emily_memory_oneweek: "Ultimamente Emily è particolarmente allegra... Chissà perché? *ammicca*" #!String
+    divorced_once: "Ehi, mi dispiace per la separazione...$s#$e#Se cerchi un po' di compagnia, il Saloon ti accoglie sempre a braccia aperte." #!String
+    divorced_twice: "Un altro matrimonio fallito? Beh, succede. Immagino che ti vedrò più spesso al Saloon...$s" #!String
+    eventSeen_3206194: "Ehi, quelle uova erano davvero buone. La frittata è stata un successone, grazie a te!" #!String
+    Resort_Entering: "Ehi, @! Sono lieto che tu sia qui. Servirò della roba davvero buona da dietro il bancone." #!String
+    Resort_Leaving: "Ci vediamo a casa, @." #!String
+    Resort: "Vieni a trovarmi al bar se vuoi qualcosa da bere." #!String
+    IslandSouth_14_21: "Ehi, ti faccio un drink? Ho delle bevande speciali che sfruttano al meglio gli ingredienti tipici di quest'isola.$h" #!String
+    willyCrabs: "Questi potrebbero essere i tortini di granchio migliori che ho mai fatto..." #!String
+    Mon: "Sì, so parecchie cose della gente di qui.#$e#È uno dei vantaggi di fare il barista.$h#$e#A volte sento anche troppo..." #!String
+    pamHouseUpgrade: "Ehi. Ho sentito cosa hai fatto per Pam. Molto gentile da parte tua!$h#$e#Purtroppo, non penso che la convincerà a smetterla con le 'bibite'..." #!String
+    pamHouseUpgradeAnonymous: "Ho visto Pam, oggi... aveva un sorriso che le andava da un orecchio all'altro! Ha detto che qualcuno le ha comprato una casa nuova!#$e#Chiunque sia stato, si merita la migliore delle fortune!$h" #!String
+    Saloon: "Buonasera. Ti porto qualcosa?" #!String
+    Saloon4: "Buonasera. Accomodati pure." #!String
+    SeedShop_Entry: "Ciao, Pierre!/Ora, cosa devo.../Ah, quello mi piace!/Stanotte faccio il sugo speciale!/Pierre! Che c'è di fresco?/Pierre! Che cos'hai per me?" #!String
+    Saloon8: "Ehilà @. Felice di vederti! Mi fa sempre piacere esserti d'aiuto." #!String
+    Saloon_Tue: "Ciao! Rilassati pure e goditela un po'." #!String
+    Saloon_Thu: "Ehi, secondo me ti serve una bella bibita." #!String
+    Saloon_Fri: "Gli affari sono andati alla grande stanotte. Sono contento." #!String
+    Tue: "Vendo piatti diversi ogni settimana, per cui assicurati di controllare di quando in quando!#$e#Potresti assaggiare qualcosa di spettacolare.$h#$e#Solo, fammi sapere se hai delle allergie.$s#$e#Ok, ci si vede in giro." #!String
+    Wed: "Emily lavora qui da un po', ormai. Senza di lei sarei spacciato!#$e#Odierei dover pulire tutte quelle pentole da solo.$s" #!String
+    Thu: "Pam e Clint vengono al saloon quasi ogni notte.#$e#Probabilmente andrei in fallimento, se smettessero di venire.$h#$e#Perciò vedi di non farli andar via!" #!String
+    Thu6: "Clint viene al saloon quasi ogni notte e si siede allo stesso tavolo da solo.#$e#A volte lancia delle occhiate nervose ad Emily. Hmmm.#$e#Forse è per questo che viene così spesso. Oh beh, più affari per me." #!String
+    Thu8: "Pam viene al saloon quasi ogni notte e beve davvero troppa birra.#$e#Oh beh, non dovrei giudicare i clienti." #!String
+    Fri: "Ehilà, @. Ogni volta che ti viene sete, il Saloon è il posto che fa per te." #!String
+    Fri4: "Io, per me, non bevo molto in realtà. Faccio questo lavoro soprattutto per campare.#$e#Sebbene non mi dispiaccia un sorso dello Stardew Valley d'annata, ogni tanto." #!String
+    Sat: "Ti piace cucinare, @?#$e#Se hai una cucina e qualche ricetta, puoi preparare delle pietanze utili.#$e#I piatti fatti in casa possono anche fungere da ottimi regali." #!String
+    Sun: "Gli affari sono piuttosto stabili grazie ai miei clienti abituali." #!String
+

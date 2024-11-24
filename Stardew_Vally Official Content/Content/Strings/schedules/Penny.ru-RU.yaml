@@ -1,0 +1,27 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    winter_4.001: "Эй! Это личное!$a" #!String
+    marriage_Mon.002: "Интересно, Мару когда-нибудь выйдет замуж?" #!String
+    marriageJob.000: "Привет, радость. Я рада, что ты навещаешь меня на работе.$h" #!String
+    marriage_Mon.001: "Не волнуйся, это все на мои деньги." #!String
+    marriage_Mon.000: "Привет! Я просто вышла за покупками." #!String
+    winter_15.000: "*принюхивается* Чувствуете? Воздух здесь такой пряный..." #!String
+    winter_4.000: "Мне нужно на прием сегодня днем." #!String
+    rain2.000: "Пожалуй, зайду назад. Я просто хотела насладиться моментом тишины." #!String
+

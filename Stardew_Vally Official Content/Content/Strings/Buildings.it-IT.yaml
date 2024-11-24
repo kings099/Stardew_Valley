@@ -1,0 +1,85 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    UnderConstruction: "In costruzione." #!String
+    DismountBeforeEntering: "Smonta prima di entrare" #!String
+    PiecesOfHay: "Pezzi di fieno: {0}/{1}" #!String
+    AddedHay: "Hai aggiunto {0} pezzi di fieno al silo." #!String
+    MillFull: "Non c'è più spazio" #!String
+    CantMill: "Non si può macinare" #!String
+    NeedSilo: "Silo richiesto" #!String
+    CantEnter: "Al momento non si entra" #!String
+    WrongFishType: "Quest'esemplare di {0} non vuole vivere in un Laghetto per {1}." #!String
+    WrongFishTypeCoral: "Puoi mettere {0} solo in un Laghetto per {0}." #!String
+    CantPutInPonds: "Un esemplare di {0} non sarebbe felice lì dentro." #!String
+    NoFish: "Questo laghetto può ospitare dei pesci." #!String
+    PondFull: "Questo laghetto è pieno." #!String
+    Paint_Region_Building: "Edificio" #!String
+    Paint_Region_Roof: "Tetto" #!String
+    Paint_Region_Trim: "Infissi" #!String
+    BuildingSkinMenu_ChooseAppearance: "Scegli l'aspetto dell'edificio: {0}." #!String
+    Construction_ChooseLocation: "Dove vuoi gestire gli edifici?" #!String
+    Barn_Name: "Granaio" #!String
+    Barn_Description: "Ospita 4 animali da granaio." #!String
+    BigBarn_Name: "Granaio grande" #!String
+    BigBarn_Description: "Ospita 8 animali da granaio. Permette agli animali di partorire. Sblocca le capre." #!String
+    BigCoop_Name: "Stia grande" #!String
+    BigCoop_Description: "Ospita 8 animali da pollaio. Include un'incubatrice. Sblocca le anatre." #!String
+    BigShed_Name: "Rimessa grande" #!String
+    BigShed_Description: "Raddoppia le dimensioni della rimessa. L'interno si può arredare." #!String
+    Cabin_Name: "Casupola" #!String
+    Cabin_Description: "Una casa per un amico! Sovvenzionata dal fondo per l'agricoltura del paese." #!String
+    Coop_Name: "Stia" #!String
+    Coop_Description: "Ospita 4 animali da pollaio." #!String
+    DeluxeBarn_Name: "Granaio deluxe" #!String
+    DeluxeBarn_Description: "Ospita 12 animali da granaio. Include un sistema di auto-alimentazione. Sblocca le pecore e i maiali." #!String
+    DeluxeCoop_Name: "Stia deluxe" #!String
+    DeluxeCoop_Description: "Ospita 12 animali da pollaio. Include un sistema di auto-alimentazione. Sblocca i conigli." #!String
+    DesertObelisk_Name: "Obelisco del deserto" #!String
+    DesertObelisk_Description: "Ti teletrasporta al deserto." #!String
+    EarthObelisk_Name: "Obelisco della terra" #!String
+    EarthObelisk_Description: "Ti teletrasporta sulle montagne." #!String
+    FishPond_Name: "Laghetto per pesci" #!String
+    FishPond_Description: "Alleva dei pesci e raccogli i loro prodotti. I pesci si moltiplicano con il tempo." #!String
+    GoldClock_Name: "Orologio d'oro" #!String
+    GoldClock_Description: "Previene la comparsa di detriti nella fattoria e il disfacimento dei recinti." #!String
+    Greenhouse_Name: "Serra" #!String
+    Greenhouse_Description: "Un luogo dove coltivare colture di qualsiasi stagione, in ogni momento dell'anno!" #!String
+    IslandObelisk_Name: "Obelisco dell'Isola" #!String
+    IslandObelisk_Description: "Ti trasporta all'Isola Zenzero." #!String
+    JunimoHut_Name: "Capanna Junimo" #!String
+    JunimoHut_Description: "I Junimo raccoglieranno per te le colture intorno alla capanna." #!String
+    Mill_Name: "Mulino" #!String
+    Mill_Description: "Permette di macinare grano, riso e barbabietole." #!String
+    Shed_Name: "Rimessa" #!String
+    Shed_Description: "Un edificio vuoto. Riempilo con quello che ti pare! L'interno si può arredare." #!String
+    ShippingBin_Name: "Cassetta delle spedizioni" #!String
+    ShippingBin_Description: "Infilaci degli oggetti per venderli durante la notte." #!String
+    Silo_Name: "Silo" #!String
+    Silo_Description: "Permette di tagliare e immagazzinare l'erba per il foraggio." #!String
+    SlimeHutch_Name: "Gabbia per melme" #!String
+    SlimeHutch_Description: "Alleva fino a 20 melme. Riempi d'acqua gli abbeveratoi e le melme creeranno palle di melma." #!String
+    Stable_Name: "Stalla" #!String
+    Stable_Description: "Permette di tenere e cavalcare un cavallo. Cavallo già incluso." #!String
+    WaterObelisk_Name: "Obelisco dell'acqua" #!String
+    WaterObelisk_Description: "Ti teletrasporta alla spiaggia." #!String
+    Well_Name: "Pozzo" #!String
+    Well_Description: "Fornisce un luogo dove riempire l'annaffiatoio." #!String
+    PetBowl_Name: "Ciotola per animali domestici" #!String
+    PetBowl_Description: "Con questa, un animale da compagnia si sente a casa." #!String
+

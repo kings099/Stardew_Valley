@@ -1,0 +1,332 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    AncientStool_Name: "Древний табурет" #!String
+    AncientStool_Description: "От него пахнет как в квартире у бабушки." #!String
+    AncientTable_Name: "Древний стол" #!String
+    AncientTable_Description: "Он весь густо увешан паутиной." #!String
+    Anvil_Name: "Наковальня" #!String
+    Anvil_Description: "Позволяет перековывать брелоки, сбрасывая их характеристики случайным образом. Стоимость: 3 иридиевых слитка." #!String
+    AutoGrabber_Name: "Автосборщик" #!String
+    AutoGrabber_Description: "Каждое утро автоматически собирает продукты, производимые вашими животными. Нужно поставить в птичник или хлев." #!String
+    AutoPetter_Name: "Автопоглаживатель" #!String
+    AutoPetter_Description: "Запатентованная технология Джоджа для птичника и хлева. Гладит ваших животных, но не может полностью заменить человеческое прикосновение. Дополнительное ручное поглаживание приветствуется." #!String
+    BaitMaker_Name: "Автонаживщик" #!String
+    BaitMaker_Description: "Поместите в него рыбу, чтобы создать подходящую наживку." #!String
+    Barrel_Name: "Бочка" #!String
+    Barrel_Description: "..." #!String
+    BarrelBrazier_Name: "Бочка-светильник" #!String
+    BarrelBrazier_Description: "Умеренно освещает все вокруг." #!String
+    BasicLog_Name: "Обычное бревно" #!String
+    BasicLog_Description: "Украшение для вашей фермы." #!String
+    BeeHouse_Name: "Улей" #!String
+    BeeHouse_Description: "Поставьте его под открытым небом, и скоро у вас будет вкусный мед! (Зимой не работает)" #!String
+    BigChest_Name: "Большой сундук" #!String
+    BigChest_Description: "В нем помещается почти в два раза больше предметов, чем в обычном сундуке." #!String
+    BigGreenCane_Name: "Большая зеленая трость" #!String
+    BigGreenCane_Description: "Украшение для вашей фермы." #!String
+    BigRedCane_Name: "Большая красная трость" #!String
+    BigRedCane_Description: "Украшение для вашей фермы." #!String
+    BigStoneChest_Name: "Большой каменный сундук" #!String
+    BoneMill_Name: "Костедробилка" #!String
+    BoneMill_Description: "Перемалывает костяные предметы в удобрение." #!String
+    Bonfire_Name: "Костер" #!String
+    Bonfire_Description: "Красные угли в нем горят мягким светом." #!String
+    Bongo_Name: "Бонго" #!String
+    Bongo_Description: "Декоративный ударный инструмент с богатым звучанием." #!String
+    Bookcase_Name: "Книжный шкаф" #!String
+    Bookcase_Description: "Место для книг." #!String
+    Boulder_Name: "Булыжник" #!String
+    Boulder_Description: "Чрезвычайно твердый камень." #!String
+    Camera_Name: "Фотоаппарат" #!String
+    Camera_Description: "Старый фотоаппарат на штативе." #!String
+    Campfire_Name: "Костер" #!String
+    Campfire_Description: "Умеренно освещает все вокруг." #!String
+    Campfire_2_Name: "Походный костер" #!String
+    Campfire_2_Description: "Готовьте везде!" #!String
+    CarvedBrazier_Name: "Резной светильник" #!String
+    CarvedBrazier_Description: "Умеренно освещает все вокруг." #!String
+    Cask_Name: "Бочка" #!String
+    Cask_Description: "Используется в подвале для выдержки таких продуктов, как сыр и вино." #!String
+    CharcoalKiln_Name: "Углевыжигательная печь" #!String
+    CharcoalKiln_Description: "Превращает 10 единиц дерева в один кусочек угля." #!String
+    CheesePress_Name: "Пресс для сыра" #!String
+    CheesePress_Description: "Превращает молоко в сыр." #!String
+    Chest_Name: "Сундук" #!String
+    Chest_Description: "В нем можно хранить предметы." #!String
+    ChickenStatue_Name: "Статуя курицы" #!String
+    ChickenStatue_Description: "Деревянная статуя курицы." #!String
+    CoffeeMaker_Name: "Кофеварка" #!String
+    CoffeeMaker_Description: "Автоматически варит чашечку кофе каждое утро." #!String
+    Crate_Name: "Ящик" #!String
+    Crate_Description: "..." #!String
+    Crystalarium_Name: "Кристалляриум" #!String
+    Crystalarium_Description: "Вставьте в него камень, который хотите размножить." #!String
+    CursedPKArcadeSystem_Name: "Проклятая игровая система «Король Прерий»" #!String
+    CursedPKArcadeSystem_Description: "С этой игровой системой «Король Прерий» что-то не так..." #!String
+    DarkSign_Name: "Темный знак" #!String
+    DarkSign_Description: "Используйте на нем предмет, чтобы изменить изображение. Предмет не расходуется." #!String
+    DeadTree_Name: "Мертвое дерево" #!String
+    DeadTree_Description: "Бедное дерево, оно давно окаменело." #!String
+    Deconstructor_Name: "Деконструктор" #!String
+    Deconstructor_Description: "Уничтожает изготовленные предметы, но добывает из них их самые ценные материалы." #!String
+    DecorativePitcher_Name: "Декоративный кувшин" #!String
+    DecorativePitcher_Description: "Медный, ручной работы." #!String
+    DecorativeSpears_Name: "Декоративные копья" #!String
+    DecorativeSpears_Description: "Не самое безопасное украшение." #!String
+    Dehydrator_Name: "Сушилка" #!String
+    Dehydrator_Description: "Положите внутрь 5 фруктов или съедобных грибов, чтобы их засушить." #!String
+    DeluxeScarecrow_Name: "Элитное пугало" #!String
+    DeluxeScarecrow_Description: "Отпугивает ворон от ваших посевов. Действует в большом радиусе (около 16 клеток)." #!String
+    DeluxeWormBin_Name: "Элитный бак с червями" #!String
+    DeluxeWormBin_Description: "Регулярно производит элитную наживку. Черви внутри не нуждаются в подкормке." #!String
+    Door_Name: "Дверь" #!String
+    Door_Description: "Потайной механизм опускает ее под землю." #!String
+    DriedSunflowers_Name: "Высушенные подсолнухи" #!String
+    DriedSunflowers_Description: "Яркое украшение для дома." #!String
+    EmptyCapsule_Name: "Пустая капсула" #!String
+    EmptyCapsule_Description: "Стекло частично разбито." #!String
+    FancyTable_Name: "Вычурный стол" #!String
+    FancyTable_Description: "Круглый стол тонкой работы." #!String
+    FarmComputer_Name: "Фермерский компьютер" #!String
+    FarmComputer_Description: "Сканирует ферму и показывает полезную информацию." #!String
+    FeedHopper_Name: "Кормораздаточный бункер" #!String
+    FeedHopper_Description: "Предоставляет быстрый доступ к заготовленному сену." #!String
+    FishSmoker_Name: "Коптильня для рыбы" #!String
+    FishSmoker_Description: "Положите внутрь рыбу и кусок угля, чтобы закоптить рыбу. Копченая рыба стоит в два раза дороже. Качество рыбы останется прежним." #!String
+    Foroguemon_Name: "??Форогемон??" #!String
+    Foroguemon_Description: "??Форогемон??" #!String
+    Furnace_Name: "Плавильная печь" #!String
+    Furnace_Description: "Выплавляет металлические слитки из руды. Требует угля." #!String
+    GardenPot_Name: "Садовый горшок" #!String
+    GardenPot_Description: "В помещении в него можно сажать культуры любого времени года. На открытом воздухе можно высаживать только сезонные культуры." #!String
+    GeodeCrusher_Name: "Раскалыватель жеод" #!String
+    GeodeCrusher_Description: "Автоматически раскалывает жеоды." #!String
+    GoldBrazier_Name: "Золотой светильник" #!String
+    GoldBrazier_Description: "Умеренно освещает все вокруг." #!String
+    GrandfatherClock_Name: "Старинные часы" #!String
+    GrandfatherClock_Description: "Такие старые... Кажется, маятник приржавел к месту." #!String
+    GraveStone_Name: "Могильный камень" #!String
+    GraveStone_Description: "Украшение для вашей фермы." #!String
+    GreenCanes_Name: "Зеленые тросточки" #!String
+    GreenCanes_Description: "Украшение для вашей фермы." #!String
+    Heater_Name: "Обогреватель" #!String
+    Heater_Description: "С ним вашим животным будет теплее и веселее зимой." #!String
+    HeavyFurnace_Name: "Большая плавильная печь" #!String
+    HeavyFurnace_Description: "Эффективнее обычной плавильной печи. Разовая загрузка — 25 ед. руды и 3 ед. угля." #!String
+    HeavyTapper_Name: "Тяжелый подсочник" #!String
+    HeavyTapper_Description: "Повесьте его на клен, дуб или сосну. Через некоторое время вы получите соответствующий продукт! Работает в два раза быстрее обычного." #!String
+    HMTGF_Name: "??HMTGF??" #!String
+    HMTGF_Description: "??HMTGF??" #!String
+    Hopper_Name: "Раздатчик" #!String
+    Hopper_Description: "Предметы, положенные внутрь, автоматически будут загружаться в устройство перед ним." #!String
+    HousePlant_Name: "Комнатное растение" #!String
+    HousePlant_Description: "Украшает дом или ферму." #!String
+    Incubator_Name: "Инкубатор" #!String
+    Incubator_Description: "Выращивает из яиц цыплят и утят." #!String
+    IronLamppost_Name: "Железный фонарь" #!String
+    IronLamppost_Description: "Ярко освещает все вокруг." #!String
+    ItemPedestal_Name: "Пьедестал для предмета" #!String
+    ItemPedestal_Description: "На нем можно выставить предмет." #!String
+    JunimoChest_Name: "Сундук Джунимо" #!String
+    JunimoChest_Description: "Благодаря магии леса, каждый сундук Джунимо соединен с общим хранилищем." #!String
+    JunimoKartArcadeSystem_Name: "Игровая система «Джунимо Карт»" #!String
+    JunimoKartArcadeSystem_Description: "Играйте в «Джунимо Карт» прямо у себя дома!" #!String
+    Keg_Name: "Бочонок" #!String
+    Keg_Description: "Положите в него фрукты или овощи. В конечном итоге из них получится напиток." #!String
+    LawnFlamingo_Name: "Пластиковый фламинго" #!String
+    LawnFlamingo_Description: "Украшение для вашей фермы." #!String
+    LightningRod_Name: "Громоотвод" #!String
+    LightningRod_Description: "Производит аккумуляторы, накапливая энергию грозовых молний." #!String
+    LockedDoor_Name: "Дверь" #!String
+    LockedDoor_Description: "Потайной механизм опускает ее под землю." #!String
+    LogSection_Name: "Кусок бревна" #!String
+    LogSection_Description: "Украшение для вашей фермы." #!String
+    Loom_Name: "Прялка" #!String
+    Loom_Description: "Превращает шерсть в ткань." #!String
+    MarbleBrazier_Name: "Мраморный светильник" #!String
+    MarbleBrazier_Description: "Умеренно освещает все вокруг." #!String
+    MayonnaiseMachine_Name: "Майонезный автомат" #!String
+    MayonnaiseMachine_Description: "Превращает яйца в майонез." #!String
+    MiniForge_Name: "Мини-кузница" #!String
+    MiniForge_Description: "Теперь все преимущества дварфийской кузницы будут прямо у вас под рукой!" #!String
+    MiniFridge_Name: "Маленький холодильник" #!String
+    MiniFridge_Description: "Позволяет хранить дополнительные ингредиенты для готовки." #!String
+    MiniJukebox_Name: "Музыкальный мини-автомат" #!String
+    MiniJukebox_Description: "Позволяет слушать любимые песни." #!String
+    MiniObelisk_Name: "Мини-обелиск" #!String
+    MiniObelisk_Description: "Поставьте два таких на ферме, чтобы перемещаться между ними." #!String
+    MiniShippingBin_Name: "Мини-ящик для отгрузки" #!String
+    MiniShippingBin_Description: "Все, что будет положено в ящик, будет включено в ночную отгрузку." #!String
+    MixedCane_Name: "Смешанные тросточки" #!String
+    MixedCane_Description: "Украшение для вашей фермы." #!String
+    MushroomBox_Name: "Ящик с грибами" #!String
+    MushroomBox_Description: "Каждые несколько дней в нем вырастают новые грибы." #!String
+    MushroomLog_Name: "Грибной пень" #!String
+    MushroomLog_Description: "Время от времени зарастает грибами. Чем больше поблизости диких деревьев, тем лучше растут грибы." #!String
+    Obelisk_Name: "Обелиск" #!String
+    Obelisk_Description: "Зловещий портал, излучающий нечистую энергию." #!String
+    ObsidianVase_Name: "Обсидиановая ваза" #!String
+    ObsidianVase_Description: "Искусно выполненная декоративная ваза из обсидиана и золота." #!String
+    OilMaker_Name: "Пресс для масла" #!String
+    OilMaker_Description: "Используется для изготовления трюфельного масла." #!String
+    OrnamentalHayBale_Name: "Декоративный тюк сена" #!String
+    OrnamentalHayBale_Description: "Украшение для вашей фермы." #!String
+    OstrichIncubator_Name: "Инкубатор страусов" #!String
+    OstrichIncubator_Description: "Выращивает из страусиных яиц страусят. Размещается в хлеву." #!String
+    PinkyLemon_Name: "??Пинки Лемон??" #!String
+    PinkyLemon_Description: "??Пинки Лемон??" #!String
+    PlushBunny_Name: "Плюшевый кролик" #!String
+    PlushBunny_Description: "Он большой, он мягкий и милый." #!String
+    PrairieKingArcadeSystem_Name: "Игровая система «Король Прерий»" #!String
+    PrairieKingArcadeSystem_Description: "Играйте в «Путешествие Короля Прерий» прямо у себя дома!" #!String
+    PreservesJar_Name: "Кадка" #!String
+    PreservesJar_Description: "Используется для маринования овощей и изготовления джема из фруктов." #!String
+    RareCrow_1_Name: "Редкое пугало" #!String
+    RareCrow_1_Description: "Собери их все! (1 из 8)" #!String
+    RareCrow_2_Name: "Редкое пугало" #!String
+    RareCrow_2_Description: "Собери их все! (2 из 8)" #!String
+    RareCrow_3_Name: "Редкое пугало" #!String
+    RareCrow_3_Description: "Собери их все! (3 из 8)" #!String
+    RareCrow_4_Name: "Редкое пугало" #!String
+    RareCrow_4_Description: "Собери их все! (4 из 8)" #!String
+    RareCrow_5_Name: "Редкое пугало" #!String
+    RareCrow_5_Description: "Собери их все! (5 из 8)" #!String
+    RareCrow_6_Name: "Редкое пугало" #!String
+    RareCrow_6_Description: "Собери их все! (6 из 8)" #!String
+    RareCrow_7_Name: "Редкое пугало" #!String
+    RareCrow_7_Description: "Собери их все! (7 из 8)" #!String
+    RareCrow_8_Name: "Редкое пугало" #!String
+    RareCrow_8_Description: "Собери их все! (8 из 8)" #!String
+    RecyclingMachine_Name: "Утилизационная машина" #!String
+    RecyclingMachine_Description: "Превращает выловленный мусор в полезные ресурсы." #!String
+    RedCanes_Name: "Красные тросточки" #!String
+    RedCanes_Description: "Украшение для вашей фермы." #!String
+    RitualMask_Name: "Ритуальная маска" #!String
+    RitualMask_Description: "Слишком большая, чтобы надевать." #!String
+    Scarecrow_Name: "Пугало" #!String
+    Scarecrow_Description: "Отпугивает ворон от ваших посевов. Действует в ограниченном радиусе (около 8 «клеток»)." #!String
+    SeasonalDecor_Name: "Сезонное украшение" #!String
+    SeasonalDecor_Description: "Украшение меняется с каждым временем года." #!String
+    SeasonalPlant_Name: "Сезонное растение" #!String
+    SeasonalPlant_Description: "Декоративное растение. Меняется с каждым временем года. И поливать не нужно." #!String
+    SeedMaker_Name: "Экстрактор семян" #!String
+    SeedMaker_Description: "Извлекает семена из собранного урожая. Не работает с плодами фруктовых деревьев." #!String
+    SewingMachine_Name: "Швейная машинка" #!String
+    SewingMachine_Description: "Позволяет шить одежду, не выходя из дома!" #!String
+    SignOfTheVessel_Name: "Символ сосуда" #!String
+    SignOfTheVessel_Description: "Украшение для вашей фермы." #!String
+    SingingStone_Name: "Поющий камень" #!String
+    SingingStone_Description: "Если по нему стукнуть, он издает чистую ноту." #!String
+    SkeletonModel_Name: "Модель скелета" #!String
+    SkeletonModel_Description: "Это модель скелета." #!String
+    SkullBrazier_Name: "Светильник-череп" #!String
+    SkullBrazier_Description: "Умеренно освещает все вокруг." #!String
+    SlimeBall_Name: "Слаймовый шар" #!String
+    SlimeBall_Description: "Наполнен слизью." #!String
+    SlimeEggPress_Name: "Пресс для яиц слаймов" #!String
+    SlimeEggPress_Description: "Сжимает 100 кусочков слизи в яйцо слайма. До чего техника дошла!" #!String
+    SlimeIncubator_Name: "Инкубатор слаймов" #!String
+    SlimeIncubator_Description: "Выращивает слаймов из яиц слаймов. Позволяет разводить собственных слаймов." #!String
+    SlothSkeletonL_Name: "Скелет ленивца (Л)" #!String
+    SlothSkeletonL_Description: "Этот вымерший вид ленивцев населял густые доисторические леса долины Стардью. Его мощные челюсти перемалывали даже самые прочные растительные волокна." #!String
+    SlothSkeletonM_Name: "Скелет ленивца (С)" #!String
+    SlothSkeletonM_Description: "Ребра доисторического ленивца." #!String
+    SlothSkeletonR_Name: "Скелет Ленивца (П)" #!String
+    SlothSkeletonR_Description: "Задние лапы и хвост доисторического ленивца." #!String
+    SodaMachine_Name: "Автомат с газировкой" #!String
+    SodaMachine_Description: "Производит газировку на радость владельцу." #!String
+    SolarPanel_Name: "Солнечная панель" #!String
+    SolarPanel_Description: "Находясь на солнце, медленно генерирует аккумуляторы." #!String
+    SolidGoldLewis_Name: "Золотой Льюис" #!String
+    SolidGoldLewis_Description: "Секретный проект мэра." #!String
+    Staircase_Name: "Лестница" #!String
+    Staircase_Description: "Используйте ее в шахте, чтобы спуститься на уровень ниже." #!String
+    StandingGeode_Name: "Стоячая жеода" #!String
+    StandingGeode_Description: "Огромная жеода, закрепленная на подставке. Внутри блестят сотни фиолетовых кристаллов." #!String
+    StardewHeroTrophy_Name: "Награда герою Стардью" #!String
+    StardewHeroTrophy_Description: "Самая престижная награда, которую только может получить житель долины Стардью!" #!String
+    StatueOfBlessings_Name: "Статуя благословений" #!String
+    StatueOfBlessings_Description: "Прикосновение к статуе дает уникальное благословение каждый день." #!String
+    StatueOfEndlessFortune_Name: "Статуя бесконечной удачи" #!String
+    StatueOfEndlessFortune_Description: "Она сделана из чистого золота. Для чего она нужна?" #!String
+    StatueOfPerfection_Name: "Статуя совершенства" #!String
+    StatueOfPerfection_Description: "Она сделана из чистого иридия." #!String
+    StatueOfTheDwarfKing_Name: "Статуя Короля дварфов" #!String
+    StatueOfTheDwarfKing_Description: "Позволяет выбирать одну из двух способностей горного дела каждый день." #!String
+    StatueOfTruePerfection_Name: "Статуя истинного совершенства" #!String
+    StatueOfTruePerfection_Description: "Она сделана из чистого иридия." #!String
+    StoneBrazier_Name: "Каменный светильник" #!String
+    StoneBrazier_Description: "Умеренно освещает все вокруг." #!String
+    StoneCairn_Name: "Пирамида из камней" #!String
+    StoneCairn_Description: "Украшение для вашей фермы." #!String
+    StoneChest_Name: "Каменный сундук" #!String
+    StoneChest_Description: "В нем можно хранить предметы." #!String
+    StoneFrog_Name: "Каменная лягушка" #!String
+    StoneFrog_Description: "Украшение для вашего сада." #!String
+    StoneJunimo_Name: "Каменный джунимо" #!String
+    StoneJunimo_Description: "Украшение для вашего сада." #!String
+    StoneOwl_Decorative_Name: "Каменная сова" #!String
+    StoneOwl_Decorative_Description: "Украшение для вашего сада." #!String
+    StoneOwl_Secret_Name: "Каменная сова" #!String
+    StoneOwl_Secret_Description: "Неизвестно, откуда она взялась, но выглядит очень даже ничего." #!String
+    StoneParrot_Name: "Каменный попугай" #!String
+    StoneParrot_Description: "Украшение для вашего сада." #!String
+    StoneSign_Name: "Каменный знак" #!String
+    StoneSign_Description: "Используйте на нем предмет, чтобы изменить изображение. Предмет не расходуется." #!String
+    StrangeCapsule_Name: "Необычная капсула" #!String
+    StrangeCapsule_Description: "Внутри что-то покачивается — похоже, оно из плоти..." #!String
+    StumpBrazier_Name: "Пень-светильник" #!String
+    StumpBrazier_Description: "Умеренно освещает все вокруг." #!String
+    SuitOfArmor_Name: "Доспехи" #!String
+    SuitOfArmor_Description: "Украшение для вашей фермы." #!String
+    TablePieceL_Name: "Часть стола (Л)" #!String
+    TablePieceL_Description: "Левая часть большого стола." #!String
+    TablePieceR_Name: "Часть стола (П)" #!String
+    TablePieceR_Description: "Правая часть большого стола." #!String
+    TallTorch_Name: "Длинный факел" #!String
+    TallTorch_Description: "Сделан из бамбука." #!String
+    Tapper_Name: "Подсочник" #!String
+    Tapper_Description: "Повесьте его на клен, дуб или сосну. Через некоторое время вы получите соответствующий продукт!" #!String
+    TeddyTimer_Name: "Часы-мишка" #!String
+    TeddyTimer_Description: "Напольные часы в форме плюшевого мишки." #!String
+    Telephone_Name: "Телефон" #!String
+    Telephone_Description: "Позволяет проверять время работы и ассортимент магазинов." #!String
+    TextSign_Name: "Табличка с надписью" #!String
+    TextSign_Description: "На этой табличке можно написать свое сообщение." #!String
+    TuboFlowers_Name: "Цветочный бочонок" #!String
+    TuboFlowers_Description: "Цветы, растущие в дубовой бочке. Цветут весной и летом." #!String
+    WickedStatue_Name: "Нечистая статуя" #!String
+    WickedStatue_Description: "Почему-то от этой статуи становится не по себе." #!String
+    WickedStatue_LitEyes_Name: "Нечистая статуя" #!String
+    WickedStatue_LitEyes_Description: "С этой статуей что-то нечисто." #!String
+    WoodChair_Name: "Деревянный стул" #!String
+    WoodChair_Description: "Стул, который можно развернуть в любую из 4 сторон." #!String
+    WoodChipper_Name: "Дробилка" #!String
+    WoodChipper_Description: "Делает из одного куска твердой древесины обычную." #!String
+    WoodenBrazier_Name: "Деревянный светильник" #!String
+    WoodenBrazier_Description: "Умеренно освещает все вокруг." #!String
+    WoodLamppost_Name: "Деревянный фонарь" #!String
+    WoodLamppost_Description: "Ярко освещает все вокруг." #!String
+    WoodSign_Name: "Деревянный знак" #!String
+    WoodSign_Description: "Используйте на нем предмет, чтобы изменить изображение. Предмет не расходуется." #!String
+    Workbench_Name: "Верстак" #!String
+    Workbench_Description: "Позволяет пользоваться материалами из расположенных рядом сундуков." #!String
+    WormBin_Name: "Бак с червями" #!String
+    WormBin_Description: "Регулярно производит наживку. Черви внутри не нуждаются в подкормке." #!String
+

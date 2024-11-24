@@ -1,0 +1,25 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Sandy_Birthday_Greeting: "О, Эмили! Я надеялась, что ты заглянешь!$h#$b#Если честно, сегодня с утра мне было немного одиноко.#$e#Я рада, что ты пришла!$h" #!String
+    Sandy_Birthday_Hangout: "Как тебе такая погодка в нашей Долине, а?#$e#Цветы так приятно пахнут.$h" #!String
+    Sandy_Birthday_Lake: "Рядом с озером всегда немного прохладнее.#$e#Приятно иногда хоть из дома выйти!$h" #!String
+    Sandy_Birthday_Bones: "Странно, не правда ли?" #!String
+    Sandy_Birthday_Camel: "Мне кажется, она продает довольно редкие товары." #!String
+    Sandy_Birthday_Bye: "Как мы хорошо погуляли.$h#$b#Спасибо, что дружишь со мной.$h#$e#Заходи, когда пожелаешь!$h" #!String
+

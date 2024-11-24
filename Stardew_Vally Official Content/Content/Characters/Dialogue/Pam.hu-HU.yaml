@@ -1,0 +1,90 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Introduction: "Hé kölyök. A nevem Pam.#$e#Ne szemétkedj és remekül megleszünk." #!String
+    AcceptGift_(O)StardropTea: "A teringettét... Soha nem számítottam ilyen ajándékra. Feldobtad a napomat, kölyök!" #!String
+    Resort_Shore: "Úgy tűnik, hogy pár egyedi hal úszkál errefelé. Legközelebb el kell hoznom a horgászbotomat!" #!String
+    Resort: "Heh... Willy mindenkinek adott egy kis halszeletet. Nagyon ízletes!" #!String
+    married_Penny: "Nagyon hiányzik az a lány...$s#$b#Remélem jól bánsz az én Pennymmel, értve vagyok?$u" #!String
+    married_Alex: "Szóval hozzámentél a Mullner fiúhoz, mi?#$b#Akkor azt a büdös kutyát is magaddal fogod vinni, ugye?" #!String
+    GreenRain: "Ez egy jel a Mindenhatótól... Végünk van...%noturn$s" #!String
+    GreenRainFinished: "Nos, azt hiszem mégse jött el a végítélet, kölyök...#$e#Áh, sebaj, vissza a mókuskerékbe..." #!String
+    GreenRain_2: "Azt hiszem ezek az esők a hatalom jelei... egy figyelmeztetés.#$b#Mondhatod, hogy ez a természettől származik, vagy Yobatól, vagy akármitől... de én másképp gondolom.#$e#Arra gondolok, hogy nem lehetünk beképzeltek. Különben a zöld eső helyett talán vérvörös eső fog érkezni... Érted, hogy mire célzok?" #!String
+    divorced_Penny: "Penny sírva jött haza... mit tettél vele?$3" #!String
+    structureBuilt_Fish Pond: "Hallottam, hogy van halastavad... Heh, én egy olyannal együtt nőttem fel.#$b#Abban szinte bármit tenyészthetsz... De azok a díszes halak elég nyűgösek tudnak lenni!" #!String
+    wonIceFishing: "Jól van, jól van... alaposan legyőztél engem a horgászós eseményen, kölyök.#$e#Hmm... talán nem a sörrel borított gombát kellett volna csalinak használnom...$u" #!String
+    Resort_Chair: "Ez ám a kényelem! Talán a végén még a cipőmet is leveszem!$h#$e#Jobb, ha nem nézegeted a lábaimat, kölyök." #!String
+    Resort_Bar: "Ez egy különleges alkalom, kölyök... Valami egyedit rendelek. Legyen kettő!$h" #!String
+    reject_867: "Váó, ezt nézd... Olyan, mint valami, ami a jövőből jött.#$b#Hehe, bocsi, kölyök... Azt nem használhatom. Több gomb van rajta, mint ahány agysejtem van!$h" #!String
+    pamHouseUpgrade: "El se hiszem, hogy vettél nekem egy új házat! Van valami trükk a dologban?#$e#Sajnálom, nem vagyok ahhoz szokva, hogy ilyen kedvesek az emberek...$s" #!String
+    pamHouseUpgrade_memory_oneweek: "Szeretem az új házat. Köszönöm, kölyök!$h" #!String
+    pamHouseUpgradeAnonymous: "El se hiszem, hogy valaki vett nekem egy új házat! Vajon ez talán valamilyen átverés?#$e#Sajnálom, nem vagyok ahhoz szokva, hogy ilyen kedvesek az emberek...$s" #!String
+    MovieInvitation: "Randiest az öreg Pammel, mi? Hah!$h^Csajos est az öreg Pammel, mi? Hah!$h#$b#Hogyne kölyök... Majd ott találkozunk." #!String
+    cc_Bus: "Hé, hallottad mi történt a régi busszal?#$b#Bizony... Ismét nyeregben vagyok, kölyök... hehe. Jó érzés.$h" #!String
+    Mon: "#$1 PamDrank#Uhhhhh... a fejem...$k#$e#Tudod, ennék én egészséges kajákat, ha volna rá pénzem.#$e#Hé, neked biztos van pár ízletes kaja a farmodon, nem?" #!String
+    Saloon: "Nincs is jobb a régi kis itókánál, ami felmelegíti ezeket a vén csontokat...$h" #!String
+    Saloon_Entry: "Ah... Végre./Innom kell./Gus! Adj a szokásosból!/Hé, visszatértem!/Óóh öregem, de megszomjaztam!/Kiszáradtam!" #!String
+    Trailer_Entry: "Penny! Csináltál vacsorát?/Penny! Kész vagy a feladataiddal?/Penny! Itthon vagy?/Hé! Megjöttem!" #!String
+    Saloon6: "Hé kölyök. Vennék neked egy italt, ha lenne rá pénzem!" #!String
+    Saloon_Tue: "Hé Gus! Adj még egy kört! *hukk*$h" #!String
+    Saloon_Wed: "*Sóhaj*... Hé kölyök. Túl fiatal vagy még ahhoz, hogy ilyen helyen mászkálj." #!String
+    Saloon_Thu: "*szürcs* ... Egész délután csak erre az italra vártam. Heh heh." #!String
+    Saloon_Fri: "Hékás, Gus! Adj még egy korsót a legerősebb italodból!" #!String
+    Saloon_Sat: "%Pam nem reagál." #!String
+    Saloon_Sun: "%Úgy tűnik Pam nincs magánál. Jobb, ha magára hagyod őt." #!String
+    Tue: "Hé te! Ne mászkálj a lakókocsimban, ha nem vagyok otthon. Értve vagyok?$u#$e#Elnézést, de óvatosan kell bánnom az idegenekkel." #!String
+    Tue2: "Ma reggel újságot olvastam, de eléggé letaglózott. Ez egy rothadt világ, kölyök.#$e#Tartsd a fejed a nyakadon, és mindent átvészelhetsz...#$b#Az én papám mindig ezt mondta. Heh heh heh.$h" #!String
+    Wed: "$d bus#Nem is tudod elképzelni, hogy mennyire örülök, hogy ismét működik a busz! Ismét elevennek érzem magam.|Mostanság nehéz idők jártak. Elbocsátottak a buszsofőr állásomból. Ha visszakaphatnám azt az állásomat, akkor elvihetnélek a Calico-sivatagba." #!String
+    Thu: "#$1 PamDrunk#Blahh... Egy kicsivel több karamellás portert ittam tegnap este a szalonban... Menj innét.$k#$e#Az otthonom nem szép, de legalább a folyó mellett van.#$e#Hékás. Penny az én egyetlen kicsi lányom. Légy kedves hozzá, vagy hagyd őt békén, értve vagyok?" #!String
+    Thu4: "Penny szerint túl sok időt töltök a szalonban...$s" #!String
+    Thu4_inlaw_Penny: "Roppant magányos itthon így egymagamban..." #!String
+    Fri2: "Tudod, gondolkoztam... Bárcsak lenne egy hobbim. Valami más, nem olyan, mint most, hogy egész este a szalonban lógok.#$e#Van ötleted?#$e#...Ehh. Lehet dámázni fogok saját magam ellen." #!String
+    Fri: "Minden nap pont olyan, mint az előtte lévő...$s#$b#Bárcsak gazdagnak születtem volna...$s" #!String
+    Sat: "Legyen tiszta a cipőd, mielőtt a házamban mászkálnál.$u#$e#Nagyon idegesítő a mocsok feltakarítása. És ezt neked is tudnod kellene." #!String
+    Sat4: "Bárcsak egy csapat manó eljönne az este, és kitakarítanák a házamat. Hahahaha.$h#$e#Jól jönne most egy kis paszternák.#$e#Ha a lábaim nem lennének ennyire merevek, akkor néha-néha felnéznék a hegyekbe." #!String
+    Sun: "Te Gus barátja vagy? Ő egy jó fickó.#$e#A születésnapomon még ingyen sört is ad nekem." #!String
+    event_credit1: "Hé, vigyázz, hogy beszélsz! Senki se mondhatja meg nekem, hogy mit tegyek!$u" #!String
+    event_credit2: "...nem? Ez szörnyű!$s#$b#...Oh.$s" #!String
+    summer_Tue: "Üdv, idegen." #!String
+    summer_Tue2: "Ó, ez @ úr.^Ó, ez @ asszony.#$e#Segítségre van szükséged, vagy mi az?" #!String
+    summer_Tue6: "Nekem is voltak olyan álmaim és reményeim, mint neked... De nézz csak rám!$s#$e#Az élet nem mindig alakul úgy, ahogyan szeretnéd.#$e#No mindegy. Nincs értelme azon agyalnod, hogy mid nincs." #!String
+    summer_Wed: "Jót tesz a városunknak, hogy van egy helyi farmunk." #!String
+    summer_Wed4: "Talán ha elég jól dolgozol a farmodon, az javíthatja a helyi gazdaságot is.#$e#Aztán mindenkinek lesz munkája, és mindannyian boldogok leszünk, ugye?" #!String
+    summer_Thu: "Ó, üdv, gazda.#$e#Nem beszélgetek csak úgy az idegenekkel." #!String
+    summer_Thu4: "Valamiért idővel a szalonban lyukadok ki.#$e#Túl közel van a házamhoz. Ez nem egészséges." #!String
+    summer_Fri: "...Igen?#$e#Elég szép fiatal ember vagy. Miért vesztegeted az idődet azzal, hogy egy magamfajta öreglánnyal beszélsz?^Elég szép fiatal lány vagy. Miért vesztegeted az idődet azzal, hogy egy magamfajtával beszélgetsz?" #!String
+    summer_Sat2: "Ne is figyelj arra a vén ebre, ami a ház mellett van.#$b#Lehet, hogy csúnyán néz rád, de sose tenné ki a lábát abból a kutyaházból.#$b#Hogy mi az öregnek a neve? Dusty." #!String
+    summer_Sat: "Valaki panaszkodott a kertemről... hogy csupa mocsok. Te voltál az?$u#$e#Hmmm..." #!String
+    fall_Tue: "Ha jobban ismernélek, akkor lehet többet beszélgethetnénk." #!String
+    fall_Tue4: "Valaha én is fiatal voltam. Nehéz elhinni, mi?#$e#Az idő tényleg gyorsan elmúlik, ha felnősz.$s" #!String
+    fall_Wed: "*sóhaj*... Azt hiszem ma este egy fagyos kaját fogok berakni a mikróba.$s" #!String
+    fall_Thu: "Penny az egyetlen hozzátartozóm, szóval jobban teszed, ha kedves vagy hozzá!" #!String
+    fall_Fri: "Minden nap ugyanaz a régi rutin megy...$s#$e#Mondd csak gazda, neked nincs ilyen problémád?" #!String
+    fall_Sat: "Lennél kedves és kitakarítanád a házamat?#$e#Csak vicceltem!$h" #!String
+    fall_Sun: "Nincs mit dolgoznod?#$e#Hálásnak kellene lenned, hogy van munkád, ahelyett, hogy egész nap a városban mászkálsz." #!String
+    fall_Sun4: "Hiányzik a régi vezetős melóm. Régen mindig körbejártam a völgyet, találkoztam másokkal, és hallgattam a rádiót.#$e#Mennyire változnak az idők." #!String
+    winter_Mon: "Vannak házisertéseid a farmodon?" #!String
+    winter_Tue: "Akarsz tőlem valamit, kölyök? Jobb lesz, ha máshol keresgélsz." #!String
+    winter_Tue4: "Csak remélni tudom, hogy Pennynek jó élete lesz. Ha lesznek gyerekeid, majd megérted, hogy hogyan is érzek.#$e#...Olyan száraz a tél. A bőröm olyan, mint egy régi pergamen." #!String
+    winter_Tue4_inlaw_Penny: "Hé. Remélem, hogy jól bánsz Pennyvel azon a régi farmon. Ő az egyetlen hozzátartozóm!" #!String
+    winter_Wed: "Hé kölyök. Mihez készülődsz?#$e#Én csak elütöm az időmet, mint mindig." #!String
+    winter_Thu: "Kegyetlenül hideg van. Talán a szalonban nem fáznék annyira, nem gondolod? Heh heh.#$e#Miért nem nézel be a szalonba egy kicsit, és kóstolsz meg egy kis Légy-Nagyon-Boldogot?" #!String
+    winter_Fri: "Penny nagyon szereti a régi könyveket. Fogadok, hogy ezerszer okosabb, mint amilyen én valaha is voltam.#$e#Ennek örülök." #!String
+    winter_Sat: "Lehet horgásznom kellene, most így belegondolva, hogy milyen közel van a folyó." #!String
+    winter_Sun: "Blah... a kertem csupa mocsok.$s" #!String
+

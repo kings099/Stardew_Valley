@@ -1,0 +1,72 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Rainy_Day_0: "An verregneten Tagen treiben meine Gedanken oft in Richtung Zimt und Kekse." #!String
+    Rainy_Day_1: "Ich frage mich, ob Maru und Dr. Harvey je zusammenkommen werden? Ich bin mir sicher, dass Harvey sie mag...#$e#Ich denke aber, dass Maru den ersten Schritt machen muss.$h" #!String
+    Rainy_Day_2: "Hi, Liebling! Ich habe heute morgen ein wenig eingekauft und dir das besorgt.[186 180 770 535]#$e#Ich dachte, du könntest so was wirklich gebrauchen.$11" #!String
+    Rainy_Day_3: "Hmm... Vielleicht sollte ich mit einem neuen Rezept experimentieren. Du mochtest das letzte Rezept, das ich zubereitet habe, oder?#$e#Wie hieß es nochmal... \"Chili de @\"?" #!String
+    Rainy_Day_4: "Tage wie diese verbringe ich am liebsten mit einem guten Buch." #!String
+    Rainy_Night_0: "Wie war dein Tag so, Schatz? Ich habe meinen Nachmittag damit verbracht, einen Roman zu lesen." #!String
+    patio_Penny: "Das ist viel friedlicher als mein alter Platz in der Stadt. Ich bin wirklich glücklich hier." #!String
+    Rainy_Night_1: "Ich bin mir sicher, dass Mama gerade in der Kneipe ist... Aber ich fühle mich deswegen nicht mehr so schlecht. Ich kann nichts dagegen tun." #!String
+    Rainy_Night_2: "Ich habe gerade über die eine Nacht nachgedacht, als wir uns im Spa getroffen haben.$l#$e#Ich werde diese Nacht nie vergessen...$l" #!String
+    Rainy_Night_3: "Das Klopfen des Regens hat mich immer gestört, als ich in dem alten Wohnwagen gewohnt habe. Aber hier ist es ziemlich beruhigend." #!String
+    Rainy_Night_4: "Mir war danach, ein nettes Abendessen zuzubereiten. Ich hoffe, es schmeckt dir.[212 214 225 209 200]$h" #!String
+    Indoor_Day_0: "Hier ist es so friedlich. Ich hatte immer üble Alpträume, aber hier schlafe ich wie ein Baby." #!String
+    Indoor_Day_1: "Guten Morgen, @! Ich habe dir etwas Warmes zum Frühstück gemacht.[195 210 211]#$e#Es ist wichtig, dass du mit einem vollen Magen die Arbeit beginnst.$h" #!String
+    Indoor_Day_2: "Ich werde heute ein Buch lesen. Ich habe etwas neues in der Bibliothek ausgeliehen.#$e#Gunther hat mich darum gebeten, dir Grüße auszurichten." #!String
+    Indoor_Day_3: "Ich möchte gern mehr über all die Artefakte erfahren, die du gefunden hast. Archäologie ist faszinierend!#$e#Darüber nachzudenken, dass an genau diesem Ort vor 10.000 Jahren vielleicht Bauern gelebt haben..." #!String
+    Indoor_Day_4: "War ich schüchtern, als wir uns das erste Mal getroffen haben? Es ist interessant, nach all der Zeit darüber nachzudenken.$h" #!String
+    Indoor_Night_0: "Guten Abend, Schatz. Hast du alles erledigt, was du heute vorhattest?#$e#Wenn nicht, mach dir nichts draus. Wir haben alle Zeit der Welt!" #!String
+    Indoor_Night_1: "Hmm... Rock oder Hosen morgen? Oh, wem mache ich was vor... Ich nehme immer den Rock." #!String
+    Indoor_Night_2: "Wir haben es hier gut. Wir sollten versuchen, auch an die zu denken, die nicht so viel Glück haben.#$e#Ich bin einfach dankbar für das, was wir haben." #!String
+    Indoor_Night_3: "Meine Mutter ist ohne mich vermutlich ziemlich einsam. Ich hoffe nur nicht, dass sie zum Ausgleich mehr in die Kneipe geht.#$e#Du solltest dich nicht schlecht fühlen! Mama muss ihre eigenen Probleme lösen." #!String
+    Indoor_Night_4: "Bereit fürs Bett? Ich habe es schon gemacht und alles...$11" #!String
+    Outdoor_0: "Ich habe immer von so einem wunderschönen Ort geträumt und jetzt ist es wahr geworden.#$e#Ich war davor so unglücklich.$s" #!String
+    Outdoor_1: "Ist das nicht der perfekte Ort, um Kinder großzuziehen?#$e#Ich wäre so froh gewesen, auf einem Hof aufzuwachsen." #!String
+    Outdoor_2: "Hi, Liebling! Wenn ich mehr über Hofarbeit Bescheid wüsste, würde ich dir mehr helfen. Entschuldige!#$e#Ich werde an dich denken.$h" #!String
+    Outdoor_3: "Ich habe gerade einen Singvogel in Richtung Westen fliegen gesehen. Im Sternentautal ist das ein gutes Omen.$h" #!String
+    Outdoor_4: "Ahh... Es fühlt sich großartig an, draußen zu sein. Ich könnte den ganzen Tag hier verbringen und jede Kleinigkeit beobachten." #!String
+    OneKid_0: "Hattest du heute Zeit, um mit %kid1 zu spielen? Vielleicht würde ein zweites Kind helfen." #!String
+    OneKid_1: "Klein-%kid1 wird hier eine gute Kindheit verbringen." #!String
+    OneKid_3: "Ich fühle mich viel älter, seitdem wir ein Kind haben. Vielleicht ist das nur die Verantwortung, die auf mir lastet.#$e#Es ist nicht schlimm! Ich wollte das schon seit langem.$11" #!String
+    TwoKids_0: "Ich habe %kid1 und %kid2 heute schon ihr Essen gegeben. Sie sind so hungrige Kinder!" #!String
+    TwoKids_1: "Wir müssen darauf achten, dass wir %kid1 eine Menge Aufmerksamkeit geben, nachdem wir %kid2 haben. Wir wollen nicht, dass Neid zwischen ihnen aufkommt." #!String
+    TwoKids_2: "Ich hatte diesen Traum, in dem %kid2 mit wachsenden Flügeln in den Nachthimmel entflieht. Was bedeutet das?" #!String
+    TwoKids_3: "Ein nettes Haus, zwei fantastische Kinder und ein wunderschönes Stück Land. Wir haben wirklich Glück." #!String
+    Good_0: "@... Ich kann immer noch nicht glauben, dass wir verheiratet sind...$l" #!String
+    Good_1: "Ich hatte so lange davon geträumt, dich zu heiraten.$l" #!String
+    Good_2: "Ich wusste vom ersten Augenblick an, dass wir füreinander bestimmt sind...$l" #!String
+    Good_3: "Wow, du siehst heute wirklich gut aus! Hast du dich rasiert?$l^Wow, du siehst heute wunderschön aus. Hast du etwas neues mit deinen Haaren gemacht?$l" #!String
+    Good_4: "Dieser Ort fühlt sich langsam wirklich wie ein Zuhause an.$l" #!String
+    Good_6: "Pass auf dich auf! Manchmal mache ich mir Sorgen, dass du nicht gesund genug isst." #!String
+    funLeave_Penny: "Ich werde heute in die Stadt gehen, einfach zum Spaß. Ich bin bald zurück!" #!String
+    funReturn_Penny: "Das war schön... Es ist gut, mit allen in Kontakt zu bleiben. Erzähl mir von deinem Tag." #!String
+    spring_8: "Der Frühling ist irgendwie meine Lieblingsjahreszeit. Es liegt eine gewisse Frische in der Luft, die mich mit Hoffnung füllt." #!String
+    spring_1: "Ein langes, warmes Jahr liegt vor aus, auf das wir uns freuen können. Lass es uns gut nutzen." #!String
+    spring_15: "Ah, der Frühjahrsputz... Irgendwie freue ich mich darauf." #!String
+    summer_16: "*Puh*... Ich muss mehr Melone essen, um gegen diese Hitze anzukämpfen!" #!String
+    summer_1: "Der Sommer ist zwar unglaublich heiß, aber die Feuchtigkeit fühlt sich großartig auf der Haut an." #!String
+    summer_2: "Im Sommer werden die Ameisen sehr aktiv. Ich könnte ihnen stundenlang zusehen... Sie haben eine ziemlich komplexe Zivilisation!" #!String
+    fall_5: "Der Geruch des Herbsts erinnert mich an den von Büchern... Merkwürdig, nicht?" #!String
+    fall_1: "Herbst... Ich muss an farbiges Papier und Kleber denken. Vielleicht verbringe ich zu viel Zeit mit den Kindern.$h" #!String
+    fall_2: "Wirst du dieses Jahr gigantische Kürbisse anpflanzen?$11" #!String
+    winter_1: "Winter ist eine gute Zeit, um etwas abzuschalten. Du hast das nach dem langen Jahr verdient!" #!String
+    winter_6: "Der fallende Schnee erinnert mich an Oma im Schaukelstuhl neben dem Kamin. Ich erinnere mich hauptsächlich an ihren Schatten, der im orangenen Holz flackert. Das ist sehr lange her." #!String
+    winter_3: "Wie werden wir uns diesen Winter über Wasser halten? Oh, du musst es mir nicht sagen... Ich vertraue darauf, dass du die richtigen Entscheidungen triffst." #!String
+

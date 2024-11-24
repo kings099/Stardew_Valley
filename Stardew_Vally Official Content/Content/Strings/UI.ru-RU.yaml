@@ -1,0 +1,907 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    LearnedRecipe_cooking: "готовка" #!String
+    LearnedRecipe_crafting: "изготовление" #!String
+    LearnedRecipe: "Вы узнали новый рецепт ({0}): {1}" #!String
+    FarmerFile_1: "Досье: {0}\nШагов: {1}\nПодарков: {2}\nДней в Долине Стардью: {3}\nВскопано земли: {4}\nИзготовлено предметов: {5}\nПриготовлено блюд: {6}\nПереработано мусора: {7}" #!String
+    FarmerFile_2: "Истреблено чудовищ: {0}\nПоймано рыбы: {1}\nЗабросов удочки: {2}\nПосеяно семян: {3}\nОтгружено предметов: {4} " #!String
+    NotEnoughMoney1: "У вас не хватает денег." #!String
+    NotEnoughMoney2: "Недостаточно денег." #!String
+    NotEnoughMoney3: "У вас недостаточно денег..." #!String
+    Toggle_ColorPicker: "Отобразить палитру" #!String
+    AnimalQuery_Move: "Сменить дом" #!String
+    AnimalQuery_Moving_HomeChanged: "Назначен новый дом" #!String
+    AnimalQuery_Moving_BuildingFull: "Это здание переполнено" #!String
+    AnimalQuery_Moving_AlreadyHome: "Это мой дом" #!String
+    AnimalQuery_Moving_CantLiveThere: "{0} — неподходящее животное для этого здания." #!String
+    AnimalQuery_Sell: "Продать за {0} з." #!String
+    AnimalQuery_AllowReproduction: "Разрешить беременность" #!String
+    AnimalQuery_Age1: "Возраст: 1 мес." #!String
+    AnimalQuery_AgeN: "Возраст: {0} мес." #!String
+    AnimalQuery_AgeBaby: " (Детеныш)" #!String
+    AnimalQuery_Parent: "Мать: {0}" #!String
+    AnimalQuery_ConfirmSell: "Вы уверены?" #!String
+    AnimalQuery_ChooseBuilding: "Выберите {0} для: {1}" #!String
+    Billboard_Birthday: "{0} — день рождения" #!String
+    Billboard_SBirthday: "{0} — день рождения" #!String
+    Billboard_Year: "год {0}" #!String
+    Billboard_NothingPosted: "Сегодня объявлений нет." #!String
+    Billboard_NightMarket: "Ночной рынок" #!String
+    AcceptQuest: "Принять задание" #!String
+    BobberBar_Perfect: "Безупречно!" #!String
+    Confirm: "ОК" #!String
+    Carpenter_ChangeAppearance: "Сменить внешний вид" #!String
+    Carpenter_Demolish: "Снос зданий" #!String
+    Carpenter_MoveBuildings: "Перемещение зданий" #!String
+    Carpenter_Upgrade: "Расширить {0}" #!String
+    Carpenter_Build: "Построить" #!String
+    Carpenter_CantDemolish_DuringConstruction: "Нельзя сносить во время постройки" #!String
+    Carpenter_CantDemolish_AnimalsHere: "Нельзя снести, пока не переселены животные" #!String
+    Carpenter_CantDemolish_PlayerHere: "Нельзя снести, пока внутри игрок" #!String
+    Carpenter_CantDemolish_LockFailed: "Сейчас снести нельзя" #!String
+    Carpenter_CantUpgrade_BuildingType: "Неподходящий тип строения" #!String
+    Carpenter_CantBuild: "Здесь нельзя строить" #!String
+    Carpenter_SelectBuilding_Upgrade: "Выберите {0} для улучшения" #!String
+    Carpenter_SelectBuilding_Demolish: "Выберите строение, которое нужно снести" #!String
+    Carpenter_SelectBuilding_Move: "Выберите строение, которое нужно переместить" #!String
+    Carpenter_SelectBuilding_Paint: "Выберите строение, которое нужно покрасить" #!String
+    Carpenter_ChooseLocation: "Выберите место" #!String
+    Character_Name: "Имя" #!String
+    Character_Wallets: "Тип бумажника" #!String
+    Character_SharedWallet: "Общий" #!String
+    Character_SeparateWallet: "Личный" #!String
+    Character_Difficulty: "Маржа" #!String
+    Character_Close: "Рядом" #!String
+    Character_CoopHelpString: "Домики на старте: вы можете начать с уже построенными домиками (от 1 до {0}), чтобы ваши друзья могли присоединиться сразу. Или же вы можете выбрать «Нет» и построить домики сами (с помощью Робин).^^Расположение домиков: если вы решили начать ферму с уже построенными домиками, вы можете выбрать две схемы расположения. При схеме «Рядом» все домики расположены рядом с главным домом, так что все живут и работают бок о бок. При схеме «Отдельно» домики далеко друг от друга, что дает больше пространства для жизни. ^^Маржа: изменяет маржу (ваш заработок) с продажи товаров. «Обычно» — нормальный для Stardew Valley показатель. Более опытные и/или большие группы игроков могут захотеть уменьшить маржу." #!String
+    Character_CoopHelpString2: "Тип бумажника: можно выбрать то, как будут зарабатываться и тратиться деньги в игре. Тип «общий» позволяет всем игрокам пользоваться одним денежным пулом. При выборе типа «раздельный» у каждого игрока появится собственный счет. «Общий бумажник» — классический режим Stardew Valley. " #!String
+    Character_Normal: "Обычно" #!String
+    Character_Tough: "0.75" #!String
+    Character_Hard: "0.5" #!String
+    Character_Super: "0.25" #!String
+    Character_Separate: "Отдельно" #!String
+    Character_none: "Нет" #!String
+    Character_CoopHelp: "Помощь" #!String
+    Character_StartingCabins: "Домики на старте" #!String
+    Character_CabinLayout: "План домиков" #!String
+    Character_Farm: "Название\nфермы" #!String
+    Character_FavoriteThing: "Любимая\nвещь" #!String
+    Character_Animal: "Предпочитаемое\nживотное" #!String
+    Character_Skin: "Кожа" #!String
+    Character_EyeColor: "Цвет глаз:" #!String
+    Character_Hair: "Волосы" #!String
+    Character_HairColor: "Цвет волос:" #!String
+    Character_Shirt: "Рубашка" #!String
+    Character_PantsColor: "Цвет\nштанов:" #!String
+    Character_ShirtColor: "Цвет рубашки:" #!String
+    Character_DyeColor: "Цвет краски:" #!String
+    Character_SkipIntro: "Пропустить\nвступление" #!String
+    Character_Pants: "Штаны" #!String
+    Character_Accessory: "Акс." #!String
+    Character_FarmNameSuffix: "Ферма" #!String
+    Character_FarmStandard: "Стандартная ферма_Простой и просторный участок." #!String
+    Character_FarmForaging: "Лесная ферма_Лес ограничивает пространство, пригодное для фермерства. С другой стороны, все богатства леса будут прямо у вашего порога..." #!String
+    Character_FarmFishing: "Ферма на реке_Ваш участок разделен на несколько островков и пару берегов. Рыба здесь клюет куда чаще, чем обычно. В начале игры у вас имеется коптильня для рыбы." #!String
+    Character_FarmMining: "Горная ферма_Каменистая почва и изгибы реки ограничивают ваши возможности. С другой стороны, залежи минералов позволяют заняться горным делом." #!String
+    Character_FarmCombat: "Ферма в глуши_Здесь полно хорошей земли, но берегитесь — по ночам здесь появляются чудовища." #!String
+    Character_FarmFourCorners: "Ферма «Четыре угла»_Земля разделена на 4 части, каждая со своими особенностями. Прекрасно подходит для компании!" #!String
+    Character_foraging: "собирательство" #!String
+    Character_fishing: "рыбная ловля" #!String
+    Character_mining: "горное дело" #!String
+    Character_combat: "боевые навыки" #!String
+    JukeboxMenu_Title: "Музыкальный автомат" #!String
+    Collections_Shipped: "Отгруженные товары (Ферм-во и собир-во)" #!String
+    Collections_Fish: "Рыба" #!String
+    Collections_Artifacts: "Артефакты" #!String
+    Collections_Minerals: "Минералы" #!String
+    Collections_Cooking: "Готовка" #!String
+    Collections_Achievements: "Достижения" #!String
+    Collections_SecretNotes: "Секретные заметки" #!String
+    Collections_Description_ArtifactsFound: "Всего найдено: {0}" #!String
+    Collections_Description_RecipesCooked: "Сколько раз приготовлено: {0}" #!String
+    Collections_Description_FishCaught: "Поймано: {0}" #!String
+    Collections_Description_BiggestCatch: "Лучший улов: {0}" #!String
+    Collections_Description_MineralsFound: "Найдено: {0}" #!String
+    Collections_Description_NumberShipped: "Отгружено: {0}" #!String
+    QuestButton_Hover: "Дневник ({0})" #!String
+    QuestButton_Hover_Console: "Дневник" #!String
+    ZoomInButton_Hover: "Увеличить" #!String
+    ZoomOutButton_Hover: "Уменьшить" #!String
+    ExitToTitle: "Выйти в главное меню" #!String
+    ExitToDesktop: "Выйти из игры" #!String
+    GameMenu_Inventory: "Инвентарь" #!String
+    GameMenu_Skills: "Навыки" #!String
+    GameMenu_Social: "Светское" #!String
+    GameMenu_Map: "Карта" #!String
+    GameMenu_Crafting: "Изготовление предметов" #!String
+    GameMenu_Collections: "Коллекции" #!String
+    GameMenu_Options: "Настройки" #!String
+    GameMenu_Exit: "Выйти из игры" #!String
+    GameMenu_JunimoNote_Hover: "Клуб" #!String
+    GeodeMenu_InventoryFull: "У вас недостаточно места в инвентаре" #!String
+    GeodeMenu_Description_NotEnoughMoney: "Цена — 25 з. за жеоду...\n\nПохоже, сейчас ты не можешь себе этого позволить." #!String
+    GeodeMenu_Description: "Клади свои жеоды на наковальню, я их тебе расколю.\n\nЦена — 25 з. за жеоду." #!String
+    ItemHover_DefenseBonus: "+{0} Защита" #!String
+    ItemHover_ImmunityBonus: "+{0} Иммунитет" #!String
+    ItemHover_CritChanceBonus: "+{0} Шанс крит. удара" #!String
+    ItemHover_CritPowerBonus: "+{0} Сила крит. удара" #!String
+    ItemHover_Damage: "{0}-{1} Урон" #!String
+    ItemHover_Speed: "{0} Скорость" #!String
+    ItemHover_Weight: "{0} Вес" #!String
+    ItemHover_Energy: "{0} Энергия" #!String
+    ItemHover_Health: "{0} Здоровье" #!String
+    ItemHover_Buff0: "{0} Фермерство" #!String
+    ItemHover_Buff1: "{0} Рыбная ловля" #!String
+    ItemHover_Buff2: "{0} Горное дело" #!String
+    ItemHover_Buff3: "{0} Боевые навыки" #!String
+    ItemHover_Buff4: "{0} Удача" #!String
+    ItemHover_Buff5: "{0} Собирательство" #!String
+    ItemHover_Buff6: "{0} Макс. энергия" #!String
+    ItemHover_Buff7: "{0} Макс. энергия" #!String
+    ItemHover_Buff8: "{0} Магнетизм" #!String
+    ItemHover_Buff9: "{0} Скорость" #!String
+    ItemHover_Buff10: "{0} Защита" #!String
+    ItemHover_Buff11: "{0} Атака" #!String
+    ItemHover_Requirements: "Требуется: {1} ({0})" #!String
+    Inventory_PortraitHover_Level: "Уровень {0}" #!String
+    Inventory_FarmName: "Ферма «{0}»" #!String
+    Inventory_CurrentFunds: "Денег на счету: {0} з." #!String
+    Inventory_TotalEarnings: "Общий доход: {0} з." #!String
+    Inventory_CurrentFunds_Separate: "Ваш счет: {0} з." #!String
+    Inventory_TotalEarnings_Separate: "Доход фермы: {0} з." #!String
+    ItemGrab_Organize: "Сортировать" #!String
+    ShippingBin_LastItem: "Последний отгруженный предмет" #!String
+    JojaCDMenu_Hover0: "Автобус до пустыни Калико будет отремонтирован." #!String
+    JojaCDMenu_Hover1: "Система вагонеток между автобусной остановкой, горами и городом Пеликан будет отремонтирована." #!String
+    JojaCDMenu_Hover2: "Мост в горах будет отремонтирован." #!String
+    JojaCDMenu_Hover3: "Из старых руин на ферме будет восстановлена теплица." #!String
+    JojaCDMenu_Hover4: "Блестящий булыжник у входа в шахту будет устранен." #!String
+    JunimoNote_BundleName: "{0}" #!String
+    JunimoNote_RewardBoiler: "Награда: Ремонт вагонеток" #!String
+    JunimoNote_RewardBulletin: "Награда: Дружба <" #!String
+    JunimoNote_RewardCrafts: "Награда: Ремонт моста" #!String
+    JunimoNote_RewardPantry: "Награда: Теплица" #!String
+    JunimoNote_RewardVault: "Награда: Ремонт автобуса" #!String
+    JunimoNote_RewardFishTank: "Награда: Устранение блестящего булыжника" #!String
+    JunimoNote_MustBeAtCC: "Нужно оставить в здании клуба" #!String
+    JunimoNote_MustBeAtAJM: "Нужно оставить в покинутом ДжоджаМарте" #!String
+    LetterViewer_MoneyIncluded: "$ К письму приложено {0} з." #!String
+    LetterViewer_LearnedRecipe: "Новый рецепт ({0}):" #!String
+    LetterViewer_LearnedRecipeName: "«{0}»" #!String
+    LevelUp_Title: "Уровень {0}: {1}" #!String
+    LevelUp_ExtraInfo_Farming1: "+1 к навыку обращения с лейкой" #!String
+    LevelUp_ExtraInfo_Farming2: "+1 к навыку обращения с мотыгой" #!String
+    LevelUp_ExtraInfo_Mining: "+1 к навыку обращения с киркой" #!String
+    LevelUp_ExtraInfo_Fishing: "+1 к навыку обращения с удочкой" #!String
+    LevelUp_ExtraInfo_Foraging1: "+1 к навыку обращения с топором" #!String
+    LevelUp_ExtraInfo_Foraging2: "Иногда с деревьев будут падать семена" #!String
+    LevelUp_ExtraInfo_Foraging3: "+1 к навыку сбора диких ягод." #!String
+    LevelUp_ExtraInfo_Combat: "+5 ОЗ" #!String
+    LevelUp_ExtraInfo_Luck: "Увеличена удача" #!String
+    LevelUp_ProfessionName_Rancher: "Животновод" #!String
+    LevelUp_ProfessionDescription_Rancher: "Вы продаете продукты животноводства на 20% дороже." #!String
+    LevelUp_ProfessionName_Tiller: "Культиватор" #!String
+    LevelUp_ProfessionDescription_Tiller: "Вы продаете урожай на 10% дороже." #!String
+    LevelUp_ProfessionName_Coopmaster: "Птицевод" #!String
+    LevelUp_ProfessionDescription_Coopmaster: "Вы быстрее приручаете животных, живущих в птичнике.\nИнкубация яиц проходит вдвое быстрее." #!String
+    LevelUp_ProfessionName_Shepherd: "Пастух" #!String
+    LevelUp_ProfessionDescription_Shepherd: "Вы быстрее приручаете животных, живущих в хлеву.\nОвцы быстрее обрастают шерстью." #!String
+    LevelUp_ProfessionName_Artisan: "Золотые руки" #!String
+    LevelUp_ProfessionDescription_Artisan: "Вы продаете товары собственного производства (вино, сыр, масло и т.д.) на 40% дороже." #!String
+    LevelUp_ProfessionName_Agriculturist: "Земледелец" #!String
+    LevelUp_ProfessionDescription_Agriculturist: "Урожай поспевает на 10% быстрее." #!String
+    LevelUp_ProfessionName_Fisher: "Рыбак" #!String
+    LevelUp_ProfessionDescription_Fisher: "Вы продаете рыбу на 25% дороже." #!String
+    LevelUp_ProfessionName_Trapper: "Краболов" #!String
+    LevelUp_ProfessionDescription_Trapper: "Изготовление крабовых ловушек требует меньше материалов." #!String
+    LevelUp_ProfessionName_Angler: "Рыболов" #!String
+    LevelUp_ProfessionDescription_Angler: "Вы продаете рыбу на 50% дороже." #!String
+    LevelUp_ProfessionName_Pirate: "Пират" #!String
+    LevelUp_ProfessionDescription_Pirate: "Шанс выловить сокровища удвоен." #!String
+    LevelUp_ProfessionName_Mariner: "Мореход" #!String
+    LevelUp_ProfessionDescription_Mariner: "В крабовые ловушки больше не попадается мусор." #!String
+    LevelUp_ProfessionName_Luremaster: "Мастер по наживке" #!String
+    LevelUp_ProfessionDescription_Luremaster: "Крабовые ловушки больше не требуют наживки." #!String
+    LevelUp_ProfessionName_Forester: "Лесник" #!String
+    LevelUp_ProfessionDescription_Forester: "Вы получаете на 25% больше древесины с деревьев." #!String
+    LevelUp_ProfessionName_Gatherer: "Собиратель" #!String
+    LevelUp_ProfessionDescription_Gatherer: "Появляется шанс получить двойной сбор с диких растений и предметов." #!String
+    LevelUp_ProfessionName_Lumberjack: "Дровосек" #!String
+    LevelUp_ProfessionDescription_Lumberjack: "Из любого дерева может выпасть твердая древесина." #!String
+    LevelUp_ProfessionName_Tapper: "Вздымщик" #!String
+    LevelUp_ProfessionDescription_Tapper: "Вы продаете сиропы на 25% дороже." #!String
+    LevelUp_ProfessionName_Botanist: "Ботаник" #!String
+    LevelUp_ProfessionDescription_Botanist: "Дикие растения и предметы всегда высшего качества." #!String
+    LevelUp_ProfessionName_Tracker: "Сыщик" #!String
+    LevelUp_ProfessionDescription_Tracker: "Все дикие растения и предметы отмечаются указателем." #!String
+    LevelUp_ProfessionName_Miner: "Шахтер" #!String
+    LevelUp_ProfessionDescription_Miner: "+1 ед. руды на жилу" #!String
+    LevelUp_ProfessionName_Geologist: "Геолог" #!String
+    LevelUp_ProfessionDescription_Geologist: "Драгоценные камни могут появляться парами." #!String
+    LevelUp_ProfessionName_Blacksmith: "Кузнец" #!String
+    LevelUp_ProfessionDescription_Blacksmith: "Вы продаете слитки на 50% дороже." #!String
+    LevelUp_ProfessionName_Prospector: "Старатель" #!String
+    LevelUp_ProfessionDescription_Prospector: "Уголь попадается в два раза чаще." #!String
+    LevelUp_ProfessionName_Excavator: "Землекоп" #!String
+    LevelUp_ProfessionDescription_Excavator: "Жеоды попадаются в два раза чаще." #!String
+    LevelUp_ProfessionName_Gemologist: "Геммолог" #!String
+    LevelUp_ProfessionDescription_Gemologist: "Вы продаете драгоценные камни на 30% дороже." #!String
+    LevelUp_ProfessionName_Fighter: "Боец" #!String
+    LevelUp_ProfessionDescription_Fighter: "Все ваши атаки наносят на 10% больше урона." #!String
+    LevelUp_ProfessionName_Scout: "Разведчик" #!String
+    LevelUp_ProfessionDescription_Scout: "Шанс критической атаки увеличен на 50%." #!String
+    LevelUp_ProfessionName_Brute: "Воротила" #!String
+    LevelUp_ProfessionDescription_Brute: "Все ваши атаки наносят на 15% больше урона." #!String
+    LevelUp_ProfessionName_Defender: "Защитник" #!String
+    LevelUp_ProfessionDescription_Defender: "+25 ОЗ." #!String
+    LevelUp_ProfessionName_Acrobat: "Акробат" #!String
+    LevelUp_ProfessionDescription_Acrobat: "Можно использовать особые атаки в два раза чаще." #!String
+    LevelUp_ProfessionName_Desperado: "Сорвиголова" #!String
+    LevelUp_ProfessionDescription_Desperado: "Критические атаки более разрушительны." #!String
+    LevelUp_ChooseProfession: "Выберите профессию:" #!String
+    LevelUp_NewRecipe: "Новый рецепт ({0}): {1}" #!String
+    LoadGameMenu_LookingForSavedGames: "Поиск сохранений..." #!String
+    LoadGameMenu_Deleting: "Удаление..." #!String
+    TitleMenu_PressAToStart: "НАЖМИТЕ @, ЧТОБЫ ПРОДОЛЖИТЬ" #!String
+    TooManyFarmsMenu_TooManyFarms: "Вы уже создали максимальное количество ферм." #!String
+    UserSignoutMenu_SignInChange: "Произошел выход из профиля. Пожалуйста, войдите в профиль или вернитесь на титульный экран." #!String
+    UserSignoutMenu_Returning: "Переход к титульному экрану." #!String
+    UserSignoutMenu_SignIn: "Войти в профиль" #!String
+    UserSignoutMenu_Exit: "Выйти" #!String
+    StartupMessage_FirstRun: "" #!String
+    ControllerConnectMenu_PleaseReconnect: "Чтобы продолжить игру, переподключите геймпад." #!String
+    ControllerConnectMenu_PleaseReconnect.ps4: "Чтобы продолжить игру, переподключите геймпад." #!String
+    Options_StowingMode: "Откладывание предметов" #!String
+    Options_StowingMode_Off: "Выкл." #!String
+    Options_StowingMode_GamepadOnly: "Только на геймпаде" #!String
+    Options_StowingMode_On: "Вкл." #!String
+    Options_ShowAdvancedCraftingInformation: "Показывать доп. информацию по изготовлению" #!String
+    Crafting_NumberCrafted: "Изготовлено: {0}" #!String
+    Options_GamepadStyleMenus: "Стиль меню «для геймпада»" #!String
+    Options_GamepadStyleMenus.ps4: "Стиль меню «для геймпада»" #!String
+    GameMenu_ServerInvite: "Пригласить друга..." #!String
+    GameMenu_ServerMode: "Режим сервера" #!String
+    GameMenu_ServerMode_Offline: "Офлайн" #!String
+    GameMenu_ServerMode_Online: "Онлайн" #!String
+    GameMenu_ServerMode_FriendsOnly: "Только друзья" #!String
+    GameMenu_ServerMode_InviteOnly: "Только по приглашениям" #!String
+    CoopMenu_EnterIP: "Введите IP..." #!String
+    CoopMenu_Join: "Зайти" #!String
+    CoopMenu_Host: "Создать игру" #!String
+    CoopMenu_JoinLANGame: "Зайти в игру по LAN..." #!String
+    CoopMenu_EnterInviteCode: "Введите код приглашения..." #!String
+    CoopMenu_HostNewFarm: "Создать новую ферму..." #!String
+    CoopMenu_NoInvites: "Нет приглашений" #!String
+    CoopMenu_Failed: "Ошибка подключения" #!String
+    CoopMenu_FailedProtocolVersion: "Ошибка подключения (разные версии)" #!String
+    CoopMenu_Connecting: "Подключение..." #!String
+    CoopMenu_ConnectingOnlineServices: "Подключение к онлайн-функциям" #!String
+    CoopMenu_NoSlots: "На сервере нет свободных домиков" #!String
+    CoopMenu_NewFarmhand: "Новый фермер" #!String
+    CoopMenu_HostFile: "Хостить ферму «{1}»" #!String
+    CoopMenu_RevisitFriendFarm: "Вновь зайти на ферму «{0}»" #!String
+    CoopMenu_JoinFriendFarm: "Зайти на ферму «{0}»" #!String
+    CoopMenu_Refresh: "Обновить" #!String
+    OptionsPage_MultiplayerSection: "Многопольз. режим" #!String
+    OptionsPage_IPConnections: "Разрешить подключение по IP" #!String
+    OptionsPage_FarmhandCreation: "Разрешить создание новых персонажей" #!String
+    OptionsPage_ShowInviteCode: "Показать код приглашения" #!String
+    OptionsPage_ShowReadyStatus: "Показать Ночной статус игрока" #!String
+    OptionsPage_ScreenshotHeader: "Скриншот:" #!String
+    Client_RemotelyDisconnected: "Сервер закрыл подключение." #!String
+    Carpenter_CantDemolish_FarmhandOnline: "Нельзя сносить домик фермера, пока он в сети" #!String
+    Carpenter_DemolishCabinConfirm: "Это навсегда удалит игрока {0} из игры. Вы точно хотите снести этот домик?" #!String
+    Client_WaitForHostAvailability: "Ждем, пока у хоста закончится событие..." #!String
+    Client_WaitForHostLoad: "Ждем, пока хост настраивает игру..." #!String
+    Chat_UnknownUserName: "???" #!String
+    Chat_PlayerName: "{0} ({1})" #!String
+    Chat_ChatMessageFormat: "{0}: {1}" #!String
+    Chat_ErrorMessageFormat: "[Ошибка] {0}" #!String
+    Chat_PrivateMessageFormat: "{0} [Личный чат]: {1}" #!String
+    Chat_UserNotificationMessageFormat: "> {0}" #!String
+    Chat_PlayerJoined: "Игрок {0} вошел." #!String
+    Chat_PlayerJoinedNewName: "Безымянный работник" #!String
+    Chat_PlayerDeath: "{0} теряет сознание." #!String
+    Chat_CaughtLegendaryFish: "{0} поймал(а) легендарную рыбу «{1}»." #!String
+    Chat_TrashCan: "{1} застает, как {0} копается в мусоре..." #!String
+    Chat_LinusTrashCan: "Линус впечатлен!" #!String
+    Chat_Bundle: "Узелок готов!" #!String
+    Chat_Stardrop: "{0} нашел(а) Звездную каплю." #!String
+    Chat_HorseNamed: "{0} дает лошади имя «{1}»." #!String
+    Chat_PrairieKing: "{0} прошел(а) «Путешествие Короля прерий»." #!String
+    Chat_JunimoKart: "{0} прошел(а) «Джунимо Карт»." #!String
+    Chat_Dating: "{0} и {1} встречаются." #!String
+    Chat_BreakUp: "{0} разрывает отношения с: {1}." #!String
+    Chat_Engaged: "{0} и {1} обручились." #!String
+    Chat_MuseumComplete: "Ферма «{0}» собрала музейную коллекцию." #!String
+    Chat_Museum40: "Ферма «{0}» пожертвовала 40 предметов музею." #!String
+    Chat_donation: "{0} жертвует «{1}» музею." #!String
+    Chat_Walked10k: "{0} прошел(а) 10 000 шагов." #!String
+    Chat_Walked100k: "{0} прошел(а) 100 000 шагов." #!String
+    Chat_Walked1m: "{0} прошел(а) 1 000 000 шагов." #!String
+    Chat_Walked10m: "{0} прошел(а) 10 000 000 шагов." #!String
+    Chat_Divorce: "{0} подает на развод." #!String
+    Chat_BackpackLarge: "{0} покупает Большой рюкзак." #!String
+    Chat_BackpackDeluxe: "{0} покупает Рюкзак-люкс." #!String
+    Chat_Makeover: "{0} волшебным образом меняет внешность." #!String
+    Chat_Makeover_Pet: "{0} и {1} волшебным образом меняют внешность." #!String
+    Chat_DivorceCancel: "{0} отменяет развод." #!String
+    Chat_GoneToBedEarly0: "{0} уходит спать пораньше." #!String
+    Chat_GoneToBedEarly1: "{0} уходит на боковую пораньше." #!String
+    Chat_GoneToBedEarly2: "{0} уходит раньше обычного." #!String
+    Chat_GoneToBed0: "{0} идет спать." #!String
+    Chat_GoneToBed1: "{0} направляется в кроватку." #!String
+    Chat_GoneToBed2: "{0} идет баюшки-баю." #!String
+    Chat_GoneToBedLate0: "{0} успевает запрыгнуть в кровать!" #!String
+    Chat_GoneToBedLate1: "{0} успевает запрыгнуть в кроватку, в целости и сохранности!" #!String
+    Chat_GoneToBedLate2: "Фух! {0} добирается до кровати!" #!String
+    Chat_PassedOut0: "{0} вырубается!" #!String
+    Chat_PassedOut1: "{0} ночует не в кровати..." #!String
+    Chat_PassedOut2: "{0} задерживается допоздна..." #!String
+    Chat_Baby: "{0} и {1} усыновляют ребенка! Это {2} — они назвали {3} {4}." #!String
+    Chat_EvilShrine: "{0} посещает злой алтарь..." #!String
+    Chat_MonstersActivated: "{0} снимает действие защитной печати на территории фермы. Берегитесь!" #!String
+    Chat_MonstersDeActivated: "{0} восстанавливает действие защитной печати на территории фермы." #!String
+    Chat_SleepAnnounceModeSet: "Анонс отхода ко сну: {0}." #!String
+    Chat_LostBook: "{0} находит Потерянную книгу!" #!String
+    Chat_MovieInviteAccept: "{0} и {1} собираются сходить в кино!" #!String
+    Chat_MovieInviteReject: "{0} зовет в кино, но {1} отказывается..." #!String
+    Chat_MovieStart: "Следующий сеанс фильма «{0}» вот-вот начнется!" #!String
+    Chat_MovieEnd: "Сеанс фильма «{0}» окончен." #!String
+    Chat_Earned15k: "Ферма «{0}» заработала 15 000 з." #!String
+    Chat_Earned50k: "Ферма «{0}» заработала 50 000 з." #!String
+    Chat_Earned250k: "Ферма «{0}» заработала 250 000 з." #!String
+    Chat_Earned1m: "Ферма «{0}» заработала 1 000 000 з." #!String
+    Chat_Earned10m: "Ферма «{0}» заработала 10 000 000 з." #!String
+    Chat_Earned100m: "Ферма «{0}» заработала 100 000 000 з." #!String
+    Chat_GalaxySword: "{0} находит Меч Галактики." #!String
+    Chat_Achievement: "{0} зарабатывает достижение «{1}»." #!String
+    Chat_Jackpot: "{0} срывает джекпот в «Слотах Калико»." #!String
+    Chat_Slingshot_Hit: "{0} подстреливает: {1} из: {2}!" #!String
+    Chat_Caught_Snooping: "{0} палится, когда роется в личных вещах соседа: {1}!" #!String
+    Chat_PlayerLeft: "{0} вышел(а)." #!String
+    Chat_Paused: "Хост приостановил игру." #!String
+    Chat_Resumed: "Хост возобновил игру." #!String
+    Chat_SelfPlayerID: "вы" #!String
+    ChatCommands_Error_CheatsOnly: "Эта команда может быть использована только при включенных чит-кодах." #!String
+    ChatCommands_Error_HostOnly: "Эту команду может использовать только хост." #!String
+    ChatCommands_Error_MultiplayerOnly: "Эта команда может быть использована только в многопользовательском режиме." #!String
+    ChatCommands_Error_NiceTry: "ConcernedApe: Хорошая попытка..." #!String
+    ChatCommands_Error_NoSuchOnlinePlayer: "Игрока с таким именем нет в сети" #!String
+    ChatCommands_Error_NoSuchPlayer: "Игрока с таким именем нет" #!String
+    ChatCommands_ListOnlinePlayers: "Сейчас здесь следующие игроки:" #!String
+    ChatCommands_ListOnlinePlayersEntry: "- {0}" #!String
+    ChatCommands_Ban_Help: "{0} [имя фермера / идентификатор пользователя]: забанить игрока на этой ферме." #!String
+    ChatCommands_Ban_Done: "{0} был забанен" #!String
+    ChatCommands_Ban_Failed: "Не удалось забанить игрока" #!String
+    ChatCommands_Clear_Help: "{0}: очистить историю чата" #!String
+    ChatCommands_Color_Help: "{0} [цвет]: задает цвет текста по умолчанию." #!String
+    ChatCommands_ColorList_Help: "{0}: показывает доступные цвета текста." #!String
+    ChatCommands_ConcernedApe_1: "ConcernedApe: Здравствуйте. Спасибо, что переехали в Долину Стардью! Надеюсь, вам нравится новая жизнь здесь. Всего хорошего! [126]" #!String
+    ChatCommands_ConcernedApe_2: "ConcernedApe работает без продыху..." #!String
+    ChatCommands_Emote_Help: "{0} [идентификатор эмоции]: выразить эмоцию (при отсутствии идентификатора выводится список всех эмоций)." #!String
+    ChatCommands_Help_CommandDescription: " — {0}" #!String
+    ChatCommands_Help_CommandList: "Поддерживаемые команды: {0}." #!String
+    ChatCommands_Help_Intro: "Введите '/help имяКоманды' для вывода справки по указанной команде." #!String
+    ChatCommands_Help_MultiplayerCommandList: "Команды мультиплеера: {0}." #!String
+    ChatCommands_Help_NoSuchCommand: "Не найдено команд по запросу '{0}'." #!String
+    ChatCommands_Kick_Help: "{0} [имя фермера / идентификатор пользователя]: отключить игрока." #!String
+    ChatCommands_List_Help: "{0}: показать игроков в сети" #!String
+    ChatCommands_MapScreenshot_Help: "{0}: сохранить скриншот с полной картой текущей локации." #!String
+    ChatCommands_Message_Help: "{0} [имя игрока]: отправляет личное сообщение игроку." #!String
+    ChatCommands_Pause_Help: "{0}: приостановить игру для всех игроков." #!String
+    ChatCommands_Qi_1: "Мистер Ки: Привет! Да, я здесь. А вы как думали?" #!String
+    ChatCommands_Qi_2: "Мистер Ки: Продолжайте в том же духе и всегда стремитесь к успеху! Скоро увидимся, дружок..." #!String
+    ChatCommands_Qi_3: "Мистера Ки нет на месте" #!String
+    ChatCommands_Reply_Help: "{0}: отвечает на личное сообщение." #!String
+    ChatCommands_Reply_Failed: "Не удалось отправить ответ" #!String
+    ChatCommands_Reply_NoMessageFound: "Некому ответить" #!String
+    ChatCommands_Resume_Help: "{0}: возобновить приостановленную игру." #!String
+    ChatCommands_SleepAnnounceMode_All: "все" #!String
+    ChatCommands_SleepAnnounceMode_First: "только первый" #!String
+    ChatCommands_SleepAnnounceMode_Off: "выкл." #!String
+    ChatCommands_Unban_Help: "{0} [имя фермера / идентификатор пользователя]: разбанить данного игрока на этой ферме." #!String
+    ChatCommands_Unban_Done: "Игрок {0} был разбанен" #!String
+    ChatCommands_Unban_NoPlayersBanned: "Ни один игрок не забанен" #!String
+    ChatCommands_Unban_PlayerList: "Забаненные игроки:" #!String
+    ChatCommands_Unban_PlayerNotFound: "Не удалось найти забаненного игрока с таким именем или идентификатором." #!String
+    ChatCommands_UnbanAll_Help: "{0}: разбанить всех игроков на этой ферме." #!String
+    ChatCommands_UnbanAll_Done: "Все забаненные игроки были разбанены" #!String
+    ChatCommands_UnlinkPlayer_Help: "{0} [имя фермера / идентификатор пользователя]: позволить любому подключившемуся игроку играть этим персонажем." #!String
+    SocialPage_Relationship_MarriedToOtherPlayer_FemaleNpc: "(замужем)" #!String
+    SocialPage_Relationship_MarriedToOtherPlayer_MaleNpc: "(женат)" #!String
+    ReadyCheck: "Ждем других игроков... ({0}/{1})" #!String
+    PendingProposal: "Ждем другого игрока..." #!String
+    GiftPlayerItem_Male: "Предложить {0} игроку {1}?" #!String
+    GiftPlayerItem_Female: "Предложить {0} игроку {1}?" #!String
+    GiftPlayerItem_NoInventorySpace_Male: "{0}: не хватает места для этого предмета." #!String
+    GiftPlayerItem_NoInventorySpace_Female: "{0}: не хватает места для этого предмета." #!String
+    Proposal_PlayerBusy_Male: "{0} сейчас занят. Попробуйте снова чуть позже." #!String
+    Proposal_PlayerBusy_Female: "{0} сейчас занята. Попробуйте снова чуть позже." #!String
+    AskedToDance_Male: "{0} пригласил вас на танец. Хотите потанцевать с {0}?" #!String
+    AskedToDance_Female: "{0} пригласила вас на танец. Хотите потанцевать с {0}?" #!String
+    AskedToMarry_Male: "{0} предложил вам выйти за него! Вы ответите согласием?" #!String
+    AskedToMarry_Female: "{0} предложила вам выйти за нее! Вы ответите согласием?" #!String
+    AskedToHaveBaby_Male: "{0} предлагает вам завести с ним ребенка! Вы хотите ребенка?" #!String
+    AskedToHaveBaby_Female: "{0} предлагает вам завести с ней ребенка! Вы хотите ребенка?" #!String
+    AskedToAdoptBaby_Male: "{0} предлагает вам взять с ним приемного ребенка! Вы хотите ребенка?" #!String
+    AskedToAdoptBaby_Female: "{0} предлагает вам взять с ней приемного ребенка! Вы хотите ребенка?" #!String
+    AskedToDance_Accepted_Male: "{0} согласился с вами потанцевать!" #!String
+    AskedToDance_Accepted_Female: "{0} согласилась с вами потанцевать!" #!String
+    AskedToMarry_Accepted_Male: "{0} принял ваше предложение руки и сердца!^Свадьба состоится через 3 дня." #!String
+    AskedToMarry_Accepted_Female: "{0} приняла ваше предложение руки и сердца!^Свадьба состоится через 3 дня." #!String
+    AskedToHaveBaby_Accepted_Male: "{0} согласился завести с вами ребенка! Он появится через 14 дней." #!String
+    AskedToHaveBaby_Accepted_Female: "{0} согласилась завести с вами ребенка! Он появится через 14 дней." #!String
+    AskedToHaveBaby_Rejected_Male: "{0} решил, что пока не готов заводить ребенка." #!String
+    AskedToHaveBaby_Rejected_Female: "{0} решила, что пока не готова заводить ребенка." #!String
+    AskedToAdoptBaby_Accepted_Male: "{0} согласился взять с вами приемного ребенка! Все нужные документы уже поданы. Ребенок появится через 14 дней." #!String
+    AskedToAdoptBaby_Accepted_Female: "{0} согласилась взять с вами приемного ребенка! Все нужные документы уже поданы. Ребенок появится через 14 дней." #!String
+    AskedToAdoptBaby_Rejected_Male: "{0} решил, что пока не готов брать приемного ребенка." #!String
+    AskedToAdoptBaby_Rejected_Female: "{0} решила, что пока не готова брать приемного ребенка." #!String
+    AskedToMarry_NotSingle_Male: "{0} женат!" #!String
+    AskedToMarry_NotSingle_Female: "{0} замужем!" #!String
+    AskedToDance_Rejected_Male: "{0} отказался с вами танцевать." #!String
+    AskedToDance_Rejected_Female: "{0} отказалась с вами танцевать." #!String
+    AskedToMarry_Rejected_Male: "{0} отклонил ваше предложение руки и сердца." #!String
+    AskedToMarry_Rejected_Female: "{0} отклонила ваше предложение руки и сердца." #!String
+    GivenGift_Male: "У {0} для вас {1}. Примете подарок от него?" #!String
+    GivenGift_Female: "У {0} для вас {1}. Примете подарок от нее?" #!String
+    AskToDance_Male: "Пригласить {0} на танец?" #!String
+    AskToDance_Female: "Пригласить {0} на танец?" #!String
+    AskToMarry_Male: "Предложить {0} руку и сердце?" #!String
+    AskToMarry_Female: "Предложить {0} руку и сердце?" #!String
+    PlayerWeddingArranged: "Свадьба состоится через 3 дня." #!String
+    Server_InviteCode: "Код приглашения: {0}" #!String
+    Server_InviteCode_Copied: "Скопировано в буфер обмена" #!String
+    Server_InviteCode_CopyFailed: "Не удается скопировать в буфер обмена" #!String
+    ProposalWithdrawn: "{0} отменил(а) запрос." #!String
+    PendingProposal_Canceling: "Отмена запроса..." #!String
+    CoopMenu_InternetCommunication: "Онлайн общение" #!String
+    CoopMenu_LocalCommunication: "Локальное общение" #!String
+    TrashCanSale: "Вернуть" #!String
+    ItemList_ItemsLost: "Предметов потеряно:" #!String
+    ItemList_ItemsLostValue: "Общая стоимость: {0} з." #!String
+    Collections_Letters: "Письма" #!String
+    FruitTree_Warning: "Плодовое дерево ({0}) не смогло подрасти за ночь." #!String
+    Workbench_Chest_Warning: "Один из сундуков рядом с верстаком используется." #!String
+    Profile_GiftLog: "Журнал подарков" #!String
+    Profile_GiftLog_NoGiftsGiven: "Вы не дарили подарков такого типа." #!String
+    Profile_Status: "Статус" #!String
+    Profile_Birthday: "День рождения" #!String
+    Profile_Gift_Loved: "Любимые подарки" #!String
+    Profile_Gift_Liked: "Понравившиеся подарки" #!String
+    Profile_Gift_Neutral: "Обычные подарки" #!String
+    Profile_Gift_Disliked: "Непонравившиеся подарки" #!String
+    Profile_Gift_Hated: "Ненавистные подарки" #!String
+    Profile_Gift_Category_LikedGifts: "{0} — любимые подарки" #!String
+    Profile_Gift_Category_FruitsAndVegetables: "Фрукты и овощи" #!String
+    Profile_Gift_Category_AnimalProduce: "Продукты животноводства" #!String
+    Profile_Gift_Category_ArtisanItems: "Товары собст. производства" #!String
+    Profile_Gift_Category_CookedItems: "Приготовленные блюда" #!String
+    Profile_Gift_Category_ForagedItems: "Цветы и собир. предметы" #!String
+    Profile_Gift_Category_Fish: "Рыба" #!String
+    Profile_Gift_Category_Ingredients: "Ингредиенты" #!String
+    Profile_Gift_Category_MineralsAndGems: "Металлы, минералы и камни" #!String
+    Profile_Gift_Category_Misc: "Разное" #!String
+    Mini_JukeBox_Off: "Выкл." #!String
+    Mini_JukeBox_NotFarmPlay: "Музыкальный мини-автомат можно включать только на вашей ферме!" #!String
+    Mini_JukeBox_OutdoorRainy: "Музыкальный мини-автомат нельзя включать под дождем!" #!String
+    Tailor_MissingIngredients: "Положите ткань или одежду для покраски на платформу, а материалы на катушку, чтобы начать шить." #!String
+    Tailor_Busy: "Пошив..." #!String
+    Tailor_Valid: "Нажмите на кнопку включения, чтобы начать шить!" #!String
+    Tailor_InvalidRecipe: "Данный материал не подходит для шитья!" #!String
+    Tailor_NotDyeable: "Одежду на платформе невозможно покрасить!" #!String
+    Tailor_MakeResult: "У вас получится:" #!String
+    Tailor_MakeResultUnknown: "???" #!String
+    Tailor_Feed: "Платформа" #!String
+    Tailor_Spool: "Катушка" #!String
+    Clothes_Dyeable: "Можно красить." #!String
+    DyePot_Help: "Положите предметы нужного цвета в горшки для покраски, чтобы покрасить надетую на вас одежду." #!String
+    DyePot_CanDye: "Нажмите «Покрасить», чтобы начать процесс!" #!String
+    DyePot_WillDye: "Покрасится:" #!String
+    DyePot_NoDyeable: "На вас нет одежды, которую можно покрасить." #!String
+    Input_EmoteButton: "Меню эмоций" #!String
+    Emote_Happy: "Радость" #!String
+    Emote_Sad: "Грусть" #!String
+    Emote_Heart: "Сердце" #!String
+    Emote_Exclamation: "Восклицание" #!String
+    Emote_Note: "Нота" #!String
+    Emote_Sleep: "Сон" #!String
+    Emote_Game: "Игра" #!String
+    Emote_Question: "Вопрос" #!String
+    Emote_X: "Крест" #!String
+    Emote_Pause: "Пауза" #!String
+    Emote_Blush: "Румянец" #!String
+    Emote_Angry: "Злость" #!String
+    Emote_Yes: "Согласие" #!String
+    Emote_No: "Отказ" #!String
+    Emote_Sick: "Болезнь" #!String
+    Emote_Laugh: "Смех" #!String
+    Emote_Surprised: "Удивление" #!String
+    Emote_Hi: "Приветствие" #!String
+    Emote_Taunt: "Насмешка" #!String
+    Emote_Uh: "Замешательство" #!String
+    Emote_Music: "Музыка" #!String
+    Emote_Jar: "Банка" #!String
+    Chat_SeparatedWallets: "{0} разделяет сбережения фермы. Все получают по {1} з." #!String
+    Chat_MergedWallets: "{0} объединяет сбережения всех игроков." #!String
+    Chat_SentMoney: "{0} посылает игроку {1} {2} з." #!String
+    Chat_MergeWallets: "{0} запрашивает слияние всех сбережений." #!String
+    Chat_MergeWalletsCancel: "{0} отменяет слияние всех сбережений." #!String
+    Chat_SeparateWallets: "{0} запрашивает разделение всех сбережений." #!String
+    Chat_SeparateWalletsCancel: "{0} отменяет разделение всех сбережений." #!String
+    Chat_Gifted1mil: "{0} переводит в общей сумме уже свыше 1,000,000 з. Сама щедрость!" #!String
+    Chat_Gifted100k: "{0} переводит в общей сумме свыше 100,000 з. Неплохо!" #!String
+    Chat_Gifted10k: "{0} переводит в общей сумме свыше 10,000 з. " #!String
+    Chat_Gifted1k: "{0} переводит в общей сумме свыше 1,000 з." #!String
+    Chat_Sent1g: "{0} посылает игроку {1} 1 з... Постарайтесь сразу все не потратить!" #!String
+    Chat_SoloEarned1mil_Male: "{0} заработал самостоятельно 1,000,000 з." #!String
+    Chat_SoloEarned100k_Male: "{0} заработал самостоятельно 100,000 з." #!String
+    Chat_SoloEarned10k_Male: "{0} заработал самостоятельно 10,000 з." #!String
+    Chat_SoloEarned1k_Male: "{0} заработал самостоятельно 1,000 з." #!String
+    Chat_SoloEarned1mil_Female: "{0} заработала самостоятельно 1,000,000 з." #!String
+    Chat_SoloEarned100k_Female: "{0} заработала самостоятельно 100,000 з." #!String
+    Chat_SoloEarned10k_Female: "{0} заработала самостоятельно 10,000 з." #!String
+    Chat_SoloEarned1k_Female: "{0} заработала самостоятельно 1,000 з." #!String
+    Chat_BundleDonate: "{0} жертвует «{1}» в общий фонд." #!String
+    Chat_MonsterSlayer0: "{0} побеждает чудовище: {1}, выполняя цель из плана по истреблению чудовищ." #!String
+    Chat_MonsterSlayer1: "{0} побеждает чудовище: {1}, и Марлон этому очень рад." #!String
+    Chat_MonsterSlayer2: "{0} охраняет долину, побеждая чудовище: {1}." #!String
+    Chat_MonsterSlayer3: "{0} уменьшает местное поголовье чудовищ: {1}, и всем теперь немного спокойнее!" #!String
+    Chat_IridiumToolUpgrade: "{0} получает: {1}." #!String
+    Chat_LuauSoup: "{0} кладет «{1}» в общий суп." #!String
+    Chat_JunimoKartHighScore: "{0} выходит на первое место в турнирой таблице «Джунимо Карт»!" #!String
+    Junimo_Kart_Level_0: "Гиблая пещера" #!String
+    Junimo_Kart_Level_1: "Склизкие склоны" #!String
+    Junimo_Kart_Level_4: "Горячие красные покатушки" #!String
+    Junimo_Kart_Level_2: "Самоцветный морской гигант" #!String
+    Junimo_Kart_Level_3: "Мрачный галеон" #!String
+    Junimo_Kart_Level_5: "Топот Топтыги" #!String
+    Junimo_Kart_Level_6: "Закатный трек" #!String
+    Junimo_Kart_Level_8: "???" #!String
+    Junimo_Kart_Level_9: "Грот светящихся грибов" #!String
+    NPC_Busy: "{0} занимается делами..." #!String
+    PondQuery_Name: "Пруд ({0})" #!String
+    PondQuery_EmptyPond: "Очистить пруд" #!String
+    PondQuery_ConfirmEmpty: "Вы действительно хотите очистить пруд и вернуть его в изначальное состояние?" #!String
+    PondQuery_ChangeNetting: "Сменить внешний вид" #!String
+    PondQuery_Population: "Поголовье: {0}/{1}" #!String
+    PondQuery_StatusNoFish: "Этот пруд пуст..." #!String
+    PondQuery_StatusOk0: "«У нас все нормально!»" #!String
+    PondQuery_StatusOk1: "«Мы ни на что не жалуемся!»" #!String
+    PondQuery_StatusOk2: "«Все в порядке!»" #!String
+    PondQuery_StatusOk3: "«У нас тут все довольно неплохо!»" #!String
+    PondQuery_StatusOk4: "«Мы здоровы!»" #!String
+    PondQuery_StatusOk5: "Рыба выглядит счастливой." #!String
+    PondQuery_StatusOk6: "Похоже, рыбы процветают." #!String
+    PondQuery_StatusOk_Coral: "{0} чувствует себя хорошо." #!String
+    PondQuery_StatusRequest_Bring: "Принесите" #!String
+    PondQuery_StatusRequestPending0: "«Знаешь, будь у нас {0} ({1} шт.), здесь все заиграло бы новыми красками!»" #!String
+    PondQuery_StatusRequestPending1: "«{0} ({1} шт.) станет отличным дополнением нашего жилища, если тебя это не затруднит.»" #!String
+    PondQuery_StatusRequestPending2: "«Нам было бы лучше, будь у нас {0} ({1} шт.)»" #!String
+    PondQuery_StatusRequestPending3: "«Можно попросить об одолжении? Нам требуется {0} ({1} шт.)»" #!String
+    PondQuery_StatusRequestPending4: "«Мы в порядке, но было бы веселее, будь у нас {0} ({1} шт.)»" #!String
+    PondQuery_StatusRequestPending5: "«Нас очень порадует {0} ({1} шт.)»" #!String
+    PondQuery_StatusRequestPending6: "«Нам было бы гораздо уютнее, будь здесь {0} ({1} шт.)»" #!String
+    PondQuery_StatusRequestPending_Rude0_Male: "«Эй, сухопутная крыса, у тебя есть {0} ({1} шт.)?»" #!String
+    PondQuery_StatusRequestPending_Rude1_Male: "«Эй... ты, с ногами! Нам требуется {0} ({1} шт.) — метнись и принеси это нам!»" #!String
+    PondQuery_StatusRequestPending_Rude2_Male: "«Псс... Эй, парниш... у тебя есть {0} ({1} шт.)? Не подкинешь?»" #!String
+    PondQuery_StatusRequestPending_Rude0_Female: "«Эй, дама на суше, у тебя есть {0} ({1} шт.)? Не поможешь?»" #!String
+    PondQuery_StatusRequestPending_Rude1_Female: "«Эй, леди... Мы знаем, что у вас есть {0} ({1} шт.). Не поделитесь?»" #!String
+    PondQuery_StatusRequestPending_Rude2_Female: "«Псс... у тебя есть {0} ({1} шт.)? Не подкинешь нам втихаря?»" #!String
+    PondQuery_StatusRequestPending_Demanding0: "«{2}! {2}! Нам требуется {0} ({1} шт.)!..»" #!String
+    PondQuery_StatusRequestPending_Demanding1: "«{0} ({1} шт.) — вот что нам нужно!»" #!String
+    PondQuery_StatusRequestPending_Demanding2: "«{2}! Где же {0} ({1} шт.)?»" #!String
+    PondQuery_StatusRequestPending_Stiff0: "«Нам требуется {0} ({1} шт.)»" #!String
+    PondQuery_StatusRequestPending_Stiff1: "«Мы бы размножались охотнее, будь у нас {0} ({1} шт.)»" #!String
+    PondQuery_StatusRequestPending_Stiff2: "«Мы тут решили, что нам не помешает {0} ({1} шт.)»" #!String
+    PondQuery_StatusRequestPending_Carnivore0: "«Хотим есть... Нам подойдет {0} ({1} шт.)?»" #!String
+    PondQuery_StatusRequestPending_Carnivore1: "«{0} ({1} шт.) — вот чем мы хотим полакомиться!»" #!String
+    PondQuery_StatusRequestPending_Carnivore2: "«Нам нужен белок... Сгодится {0} ({1} шт.)!»" #!String
+    PondQuery_StatusRequestComplete_Rude0: "«Ча-ча-ча! Мы снова в деле.»" #!String
+    PondQuery_StatusRequestComplete_Rude1: "«Ах... Вкуснотень принесли... Спасибо, молодежь.»" #!String
+    PondQuery_StatusRequestComplete_Rude2: "«Спасибо, шеф!»" #!String
+    PondQuery_StatusRequestComplete_Stiff0: "«О... А вот и {0}, как мы и просили.»" #!String
+    PondQuery_StatusRequestComplete_Stiff1: "«{0}! Этого нам как раз хватит.»" #!String
+    PondQuery_StatusRequestComplete_Stiff2: "{0} рыбам весьма по душе." #!String
+    PondQuery_StatusRequestComplete_Demanding0: "«Спасибо! Спасибо!»" #!String
+    PondQuery_StatusRequestComplete_Demanding1: "«{0}! {0}! {0}! Мы счастливы!»" #!String
+    PondQuery_StatusRequestComplete_Demanding2: "Рыбы плавают кругами." #!String
+    PondQuery_StatusRequestComplete_Carnivore0: "«Похоже, сегодня в меню {0}!»" #!String
+    PondQuery_StatusRequestComplete_Carnivore1: "«Ням, {0}! Свежак!»" #!String
+    PondQuery_StatusRequestComplete_Carnivore2: "«{0} выглядит аппетитно. Спасибо!»" #!String
+    PondQuery_StatusRequestComplete0: "«Ух ты, это же {0}! Спасибо!»" #!String
+    PondQuery_StatusRequestComplete1: "«Это же {0}! Прямо как мы и просили!»" #!String
+    PondQuery_StatusRequestComplete2: "«Эй! {0} отлично смотрится!»" #!String
+    PondQuery_StatusRequestComplete3: "«Спасибо! {0} поможет нам оставаться здоровыми!»" #!String
+    PondQuery_StatusRequestComplete4: "«Ах, {0}... Теперь-то мы как дома.»" #!String
+    PondQuery_StatusRequestComplete5: "«Смотрите, ребят... {0}, да еще и свежак!»" #!String
+    PondQuery_StatusRequestComplete6: "Рыбы выглядят счастливыми." #!String
+    PondQuery_StatusRequestOneCount: "1" #!String
+    AlreadyDatingBouquet: "Вы уже встречаетесь с: {0}." #!String
+    MovieStartRequest: "Сеанс скоро начнется!" #!String
+    MiniFridge_NoKitchen: "Маленький холодильник можно поставить только в доме с кухней." #!String
+    Kitchen_InUse: "Кухонная утварь используется. Попробуйте позже." #!String
+    ItemGrab_FillStacks: "Добавить в существующие запасы" #!String
+    OptionsPage_OpenFolder: ">Открыть папку назначения" #!String
+    Calendar_Wedding: "Свадьба {0} и {1}" #!String
+    Options_Vsync: "VSync" #!String
+    VersionMismatch: "Разные версии ({0})" #!String
+    Options_GamepadMode: "Режим геймпада" #!String
+    Options_GamepadMode_Auto: "Автоматическое распознавание" #!String
+    Options_GamepadMode_ForceOn: "Вкл" #!String
+    Options_GamepadMode_ForceOff: "Выкл" #!String
+    AGO_Label: "Расширенные настройки:" #!String
+    AGO_CCB: "Узелки Клуба:" #!String
+    AGO_CCB_Tooltip: "Изменяет узелки, появляющиеся в Клубе." #!String
+    AGO_CCB_Normal: "Обычные" #!String
+    AGO_CCB_Remixed: "Перемешанные" #!String
+    AGO_Year1Completable: "Гарантия завершения первого года" #!String
+    AGO_Year1Completable_Tooltip: "Делает так, чтобы Странствующий торговец гарантированно продавал семя красной капусты во время первого года." #!String
+    AGO_MineTreasureShuffle: "Награды в шахтах:" #!String
+    AGO_MineTreasureShuffle_Tooltip: "Изменяет награды, появляющиеся в шахтах." #!String
+    AGO_FarmMonsters: "Спавнить монстров на ферме" #!String
+    AGO_FarmMonsters_Tooltip: "Позволяет монстрам появляться ночью." #!String
+    AGO_ProfitMargin_Tooltip: "Множитель, применяемый к цене проданных предметов." #!String
+    AGO_MPOptions_Label: "Настройки совместной игры:" #!String
+    AGO_StartingCabins_Tooltip: "Количество начальных домиков." #!String
+    AGO_OtherOptions_Label: "Прочие настройки:" #!String
+    AGO_CabinLayout_Tooltip: "Определяет расстояние между домиками." #!String
+    AGO_RandomSeed: "Случайное семя:" #!String
+    AGO_RandomSeed_Tooltip: "Семя, используемое для рандомизации игрового мира." #!String
+    AGO_LegacyRandomization: "Использовать классическую рандомизацию" #!String
+    AGO_LegacyRandomization_Tooltip: "Случайный выбор в игре чаще укладывается в определенный паттерн. Большинству игроков включать не рекомендуется." #!String
+    Options_SlingshotMode: "Режим стрельбы из рогатки" #!String
+    Options_SlingshotMode_Hold: "Держать и отпустить" #!String
+    Options_SlingshotMode_Pull: "Оттянуть в обратном направлении" #!String
+    Bed_InUse: "Нельзя двигать уже занятую кровать." #!String
+    Bed_CantMoveOthersBeds: "Вы не можете двигать кровати в домах других игроков." #!String
+    Bed_NeedsUpgrade: "Эту кровать нельзя поставить без дальнейших улучшений дома." #!String
+    Chat_LobbyLost: "Соединение с игрой потеряно. {0}" #!String
+    Chat_LobbyLost_UserLeft: "(Пользователь покинул сессию)" #!String
+    Chat_LobbyLost_LobbyClosed: "(Сессия закончилась)" #!String
+    Chat_LobbyLost_ConnectionLost: "(Потеря соединения с сервером лобби)" #!String
+    Chat_LobbyJoined: "Вход в игровую сессию выполнен. {0}" #!String
+    Chat_LobbyRecreated: "Новая сессия создана. {0}" #!String
+    Chat_LobbyJoined_InviteCode: "(Код приглашения: {0})" #!String
+    Chat_LobbyCreateFail: "Проблема при создании новой игровой сессии..." #!String
+    Chat_StartingServer: "Теперь вы хостите совместную игру." #!String
+    Chat_DisablingServer: "Вы больше не хостите совместную игру." #!String
+    Farmhand_Locked: "Это персонаж другого игрока." #!String
+    Forge_Unforge: "Расковать" #!String
+    Item_Tooltip_Forged: "Сковано" #!String
+    LocalJoinPrompt: "Нажмите *, чтобы присоединиться" #!String
+    StartLocalMulti: "Начать локальную совместную игру" #!String
+    DropOutLocalMulti: "Покинуть игру" #!String
+    ChooseOne: "Выберите одно:" #!String
+    Carpenter_PaintBuildings: "Покраска зданий" #!String
+    Carpenter_CannotPaint: "Это здание нельзя перекрасить" #!String
+    Carpenter_CannotPaint_Permission: "У вас нет разрешения на перекраску этого здания" #!String
+    GameMenu_MoveBuildingPermissions: "Перестановка зданий" #!String
+    GameMenu_MoveBuildingPermissions_Off: "Только хост" #!String
+    GameMenu_MoveBuildingPermissions_Owned: "Только владелец здания" #!String
+    GameMenu_MoveBuildingPermissions_On: "Все игроки" #!String
+    Character_FarmBeach: "Пляжная ферма_Хорошо подходит для собирательства и рыбалки, а еще тут много места. Иногда на берег выносит ящики. Один минус — спринклеры не работают на песке." #!String
+    Forge_enchanting: "Заговариваем..." #!String
+    Forge_forging: "Куем..." #!String
+    Forge_description1: "Положите оружие или инструмент в левый слот. Положите драгоценный камень в правый слот." #!String
+    Forge_description2: "Также можно сковать два кольца." #!String
+    Forge_shards: "Тлеющие осколки автоматически расходуются при ковке." #!String
+    Forge_notenoughshards: "Недостаточно тлеющих осколков..." #!String
+    Forge_wrongorder: "Неверный порядок" #!String
+    Forge_noroom: "Ваш инвентарь полон..." #!String
+    Forge_unforge_right_slot: "Освободите правый слот, чтобы расковать предмет..." #!String
+    Forge_unforge_invalid: "Расковать можно только выкованные предметы и кольца..." #!String
+    Forge_valid: "Нажмите кнопку включения, чтобы начать ковку!" #!String
+    Chat_BuildingBuild: "{0} запрашивает строительство: {2}!" #!String
+    Chat_BuildingMagicBuild: "{0} призывает: {2}!" #!String
+    Chat_HouseUpgrade: "{0} запрашивает улучшение своего дома!" #!String
+    Chat_CommunityUpgrade: "{0} запрашивает общественное улучшение!" #!String
+    Chat_AcceptedSpecialOrder: "{0} берет особый заказ: «{1}»!" #!String
+    Chat_CompletedSpecialOrder: "Особый заказ «{0}» выполнен!" #!String
+    Chat_DartsWin: "{0} выигрывает игру в дартс с количеством бросков: {1}!" #!String
+    Chat_DartsWinPerfect: "{0} заканчивает идеальную партию в дартс!" #!String
+    Darts_OffTheIsland: "В молоко..." #!String
+    Darts_Bull: "Бул!" #!String
+    Darts_Bullseye: "В яблочко!" #!String
+    Darts_PointsToGo: "Осталось набрать очков: {0}" #!String
+    Darts_PointToGo: "Осталось набрать очков: {0}" #!String
+    Darts_WinText: "Вы победили с количеством бросков: {0}!" #!String
+    Darts_WinTextPerfect: "Идеальная игра!" #!String
+    Chat_FieldOfficeDonation: "{0} жертвует «{1}» в островной полевой офис." #!String
+    Chat_RepairBoatAnchor: "{0} заканчивает починку якоря лодки Вилли!" #!String
+    Chat_RepairBoatHull: "{0} заканчивает починку корпуса лодки Вилли!" #!String
+    Chat_RepairBoatMachine: "{0} заканчивает починку билетного автомата лодки Вилли!" #!String
+    Chat_RepairBoat: "Все готово для починки лодки Вилли!" #!String
+    Chat_UpgradePerch_House: "{0} просит попугаев восстановить островную ферму!" #!String
+    Chat_UpgradePerch_House_Mailbox: "{0} просит попугаев начать доставлять на остров почту!" #!String
+    Chat_UpgradePerch_VolcanoShortcutOut: "{0} просит попугаев проложить короткий путь из вулкана!" #!String
+    Chat_UpgradePerch_VolcanoBridge: "{0} просит попугаев построить мост в вулкане!" #!String
+    Chat_UpgradePerch_Turtle: "{0} просит попугаев расчистить путь к западной части острова!" #!String
+    Chat_UpgradePerch_ParrotPlatforms: "{0} просит попугаев снова запустить Попугайский экспресс!" #!String
+    Chat_UpgradePerch_Bridge: "{0} просит попугаев починить мост рядом с палаткой!" #!String
+    Chat_UpgradePerch_Resort: "{0} просит попугаев восстановить пляжный курорт!" #!String
+    Chat_UpgradePerch_Hut: "{0} кормит попугаев грецким орехом!" #!String
+    UpgradePerch_Hut: "*Ар-р*... Грецкий орех! *Ар-р*... Дай?" #!String
+    UpgradePerch_Resort: "*Ар-р*... Грецкий орех: {0}! *Ар-р*...  Восстановим курорт!" #!String
+    UpgradePerch_House: "*Ар-р*... Грецкий орех: {0}! *Ар-р*... Починим хижину для сна!" #!String
+    UpgradePerch_House_Mailbox: "*Ар-р*... Грецкий орех: {0}! *Ар-р*... Будем разносить почту!" #!String
+    UpgradePerch_VolcanoShortcutOut: "*Ар-р*... Грецкий орех: {0}! *Ар-р*... Проложим короткий путь наружу!" #!String
+    UpgradePerch_VolcanoBridge: "*Ар-р*... Грецкий орех: {0}! *Ар-р*... Построим мост!" #!String
+    UpgradePerch_Turtle: "*Ар-р*... Грецкий орех: {0}! *Ар-р*... Разбудим черепаху!" #!String
+    UpgradePerch_ParrotPlatforms: "*Ар-р*... Грецкий орех: {0}! *Ар-р*... Попугайский экспресс!" #!String
+    UpgradePerch_Bridge: "*Ар-р*... Грецкий орех: {0}! *Ар-р*... Починим мост!" #!String
+    ItemHover_DiamondForge_Singular: "+{0} случайный эффект от ковки" #!String
+    ItemHover_DiamondForge_Plural: "+{0} случайных эффекта от ковки" #!String
+    UpgradePerch_Trader: "*Ар-р*... Грецкий орех: {0}! *Ар-р*... Построим торговую хижину!" #!String
+    UpgradePerch_Obelisk: "*Ар-р*... Грецкий орех: {0}! *Ар-р*... Построим телепорт!" #!String
+    Chat_UpgradePerch_Trader: "{0} просит попугаев построить островную торговую хижину!" #!String
+    Chat_UpgradePerch_Obelisk: "{0} просит попугаев построить «Фермерский обелиск»!" #!String
+    Chat_FieldOfficeCompleteSet: "{0} заканчивает макет в островном полевом офисе!" #!String
+    Chat_PassedOut_VolcanoDungeon: "{0} будет сегодня спать в вулкане..." #!String
+    Chat_PassedOut_Hospital: "{0} проведет ночь в больнице." #!String
+    Chat_PassedOut_Saloon: "{0} засыпает в салуне." #!String
+    Chat_PassedOut_Tent: "{0} засыпает в палатке Линуса." #!String
+    Chat_PassedOut_Sewer: "{0} кемарит в канализации." #!String
+    Chat_StockList: "В магазине Пьера теперь можно купить семена любого сезона." #!String
+    Chat_FinishedSurvey: "{0} подготавливает точный доклад по островной живности." #!String
+    Chat_HardModeMinesActivated: "{0} снимает волшебную защитную печать с шахт. Этой ночью из их глубин полезут могучие монстры..." #!String
+    Chat_HardModeMinesDeactivated: "{0} восстанавливает волшебную защитную печать. Завтра в шахтах будет спокойно..." #!String
+    ParrotPlatform_Volcano: "Вулкан" #!String
+    ParrotPlatform_Archaeology: "Раскопки" #!String
+    ParrotPlatform_Forest: "Джунгли" #!String
+    ParrotPlatform_Farm: "Ферма" #!String
+    ParrotPlatform_Docks: "Доки" #!String
+    Item_CantBeUsedHere: "Этот предмет нельзя здесь использовать." #!String
+    Item_Tooltip_GalaxyForged: "Душа" #!String
+    Chat_InfinityWeapon: "{0} выковывает {1}." #!String
+    Chat_Lupini: "{0} покупает оригинал картины Люпини." #!String
+    FruitTree_PlacementWarning: "Ваш {0} не сможет здесь расти." #!String
+    Chat_Eternal1: "Вы чувствуете это всем сердцем: где-то, как-то... Ваш дедушка весь сияет от гордости." #!String
+    Chat_Eternal2: "Наследие фермы «{0}» останется в веках." #!String
+    Chat_Eternal3: "Вдалеке был слышен грохот..." #!String
+    NameChange_EasterEgg1: "ConcernedApe: Это что еще за имя? Какое-то оно подозрительное..." #!String
+    NameChange_EasterEgg2: "Мистер Ки: Тише, {0}, лады? Я разочарован. Я думал, что ты будешь играть по-честному..." #!String
+    NameChange_EasterEgg3: "*Дедушка качает головой... «Я построил эту ферму по-старинке, без бесконечного запаса ресурса: {0}...»" #!String
+    NameChange_EasterEgg4: "ConcernedApe зол на тебя за жульничество..." #!String
+    NameChange_EasterEgg5: "ConcernedApe: Ну, вообще-то, я не так уж и зол... веселись." #!String
+    NameChange_EasterEgg6: "Все машины, прием! Все машины, прием! У нас тут вор: {0} {1}, не пойман!" #!String
+    PT_Title: "Счетчик совершенства" #!String
+    PT_Shipped: "Отгружено урожая и диких растений" #!String
+    PT_Obelisks: "Обелисков на ферме" #!String
+    PT_GoldClock: "Золотые часы на ферме" #!String
+    PT_MonsterSlayer: "Герой-укротитель чудовищ" #!String
+    PT_GreatFriends: "Лучшие друзья" #!String
+    PT_FarmerLevel: "Уровень фермерства" #!String
+    PT_Stardrops: "Все Звездные капли найдены" #!String
+    PT_Cooking: "Приготовлено возможных блюд" #!String
+    PT_Crafting: "Изготовлено возможных предметов" #!String
+    PT_Fish: "Выловлено рыб" #!String
+    PT_GoldenWalnut: "Золотых грецких орехов найдено" #!String
+    PT_Total: "Общий прогресс" #!String
+    PT_Total_Value: "{0}%" #!String
+    PT_Total_ValueWithWaiver: "{0}% (¾1% за формуляр)" #!String
+    PT_Total_ValueWithWaivers: "{0}% (¾{1}% за формуляры)" #!String
+    EndCredit_Neighbors: "Соседи" #!String
+    EndCredit_Animals: "Животные" #!String
+    EndCredit_Fish: "Рыба" #!String
+    EndCredit_Monsters: "Монстры" #!String
+    EndCredit_ShadowPeople: "Теневые люди" #!String
+    EndCredit_Slimes: "Слаймы" #!String
+    EndCredit_Bats: "Летучие мыши" #!String
+    ParrotPlatform_Question: "Сесть на Попугайский экспресс?" #!String
+    NextPage: "След. страница" #!String
+    PreviousPage: "Пред. страница" #!String
+    TextSignEntry: "Введите текст" #!String
+    Chat_RaceStarting: "Следующая гонка скоро начнется..." #!String
+    Chat_GuessRacer_1: "{0} думает, что {1} выиграет гонку..." #!String
+    Chat_GuessRacer_2: "{0} думает, что {1} пересечет финишную черту!" #!String
+    Chat_GuessRacer_3: "{0} надеется, что {1} займет первое место!" #!String
+    Chat_GuessRacer_4: "{0} болеет за: {1}!" #!String
+    Chat_GuessRacer_5: "{0} ставит на: {1}!" #!String
+    Chat_GuessRacer_6: "{0} думает, что {1} обязательно выиграет!" #!String
+    Chat_GuessRacer_7: "{0} поддерживает: {1}!" #!String
+    Chat_GuessRacer_8: "{0} собирается поставить все на: {1}!" #!String
+    Chat_GuessRacer_9: "{0} делает крупную ставку на: {1}!" #!String
+    Chat_GuessRacer_10: "{0} знает, что {1} победит!" #!String
+    Chat_RaceSabotage_1: "Говорят, следующая гонка будет договорная..." #!String
+    Chat_RaceSabotage_2: "За Оазисом Сэнди слышен маниакальный смех..." #!String
+    Chat_RaceSabotage_3: "Все подстроено..." #!String
+    Chat_RaceSabotage_4: "Гоночный трек выглядит немного скользким..." #!String
+    Chat_RaceSabotage_5: "Похоже, маленькие гонщики нервничают из-за следующей гонки..." #!String
+    Chat_RaceWinners_Zero: "{0} побеждает в гонке!" #!String
+    Chat_RaceWinners_One: "{0} побеждает в гонке! Поздравляем, {1}!" #!String
+    Chat_RaceWinners_Two: "{0} побеждает в гонке! Поздравляем, {1} и {2}!" #!String
+    Chat_RaceWinners_Many: "{0} побеждает в гонке! Поздравляем:" #!String
+    Chat_RaceWinners_List: "{0}" #!String
+    Chat_RaceWinners_Final: "и {0}!" #!String
+    Chat_CalicoStatue_Activated: "Статуя Калико: {0}" #!String
+    Tomorrow: "Завтра..." #!String
+    Chat_HardModeSkullCaveActivated: "{0} снимает волшебную защитную печать с Пещеры Черепа. Этой ночью из их глубин полезут могучие монстры..." #!String
+    Chat_HardModeSkullCaveDeactivated: "{0} восстанавливает волшебную защитную печать в Пещере Черепа. Завтра все вернется к норме..." #!String
+    BirthdayOrder: "{1} {0}" #!String
+    Character_EyeColor.mobile: "Цвет\nглаз" #!String
+    Character_HairColor.mobile: "Цвет\nволос" #!String
+    Character_PantsColor.mobile: "Цвет\nштанов" #!String
+    DisplayAdjustmentText: "Нажимайте кнопки вверх/вниз для настройки размера изображения в соответствии с размером вашего дисплея." #!String
+    DisplayAdjustmentButton: "Изменить размеры экрана" #!String
+    Split_Screen: "Игра с разделением экрана" #!String
+    mobile_options_vertical_toolbar: "Верт. панель инструментов" #!String
+    mobile_options_menu_side_margin: "Отступ до меню (телефон с вырезом)" #!String
+    mobile_options_toolbar_padding: "Отступ до панели инструментов" #!String
+    mobile_button_craft: "Изготовить" #!String
+    shippingInstructionText: "Перетащите предметы на продажу сюда." #!String
+    tutorialWant: "Включить обучающие подсказки?" #!String
+    tutorial1: "Начнем с выбора внешности персонажа и типа фермы. Как будете готовы — нажмите на галочку, чтобы начать игру." #!String
+    tutorial2: "Доброе утро! Не забудьте позже вернуться в дом, чтобы лечь спать и сохранить игру." #!String
+    tutorial3: "Для вас подарок! Коснитесь коробки, чтобы ее открыть!" #!String
+    tutorial4: "Новые задания отображаются в Дневнике. Коснитесь задания, чтобы изучить его подробнее — там есть полезная информация!" #!String
+    tutorial5: "Нажмите кнопку «Закрыть», когда закончите с Дневником." #!String
+    tutorial6: "Ну и беспорядок! Давайте приберемся." #!String
+    tutorial7: "Нажмите на сорняк, чтобы убрать его." #!String
+    tutorial8: "Отлично! Освободите от сорняков и камней еще немного места!" #!String
+    tutorial9: "Землю для посева можно возделать мотыгой." #!String
+    tutorial10: "Возделайте землю для посадки своих первых семян." #!String
+    tutorial11: "Отлично... а теперь перейдем к посеву." #!String
+    tutorial12: "Похоже, им хочется пить. На панели инструментов есть лейка." #!String
+    tutorial13: "Отлично! Не забывайте поливать растения каждый день." #!String
+    tutorial14: "Когда закончите с поливом — пройдитесь по Пеликану и познакомьтесь со своими новыми соседями!" #!String
+    tutorial15: "Лейку можно наполнить в пруду или реке." #!String
+    tutorial16: "Долгое нажатие поведет персонажа к вашему пальцу." #!String
+    tutorial17: "Нажмите и ведите пальцем, чтобы персонаж следовал за ним." #!String
+    tutorial18: "Давайте рассмотрим еще пару игровых функций." #!String
+    tutorial19: "В инвентаре отображаются все предметы, которые у вас с собой. Их можно упорядочивать перетаскиванием или выбросить, перетащив в мусорку." #!String
+    tutorial20: "На этой странице отображаются ваши навыки — они постепенно улучшаются, когда вы пользуетесь инструментами, занимаетесь собирательством, рыбачите или сражаетесь." #!String
+    tutorial21: "На странице «Светское» отображаются ваши отношения с теми, с кем вы познакомились." #!String
+    tutorial22: "Здесь можно изготавливать новые предметы из вещей, которые вы подобрали или вырастили. Рецепты новых предметов вы будете находить по ходу игры." #!String
+    tutorial23: "Перемещайте палец по карте, чтобы исследовать город Пеликан и его окрестности." #!String
+    tutorial24: "На странице «Коллекции» отображается все, что вы отгрузили, выловили, добыли, приготовили или обнаружили." #!String
+    tutorial25: "В магазине нажмите на прилавок перед продавцом, чтобы что-нибудь купить или продать." #!String
+    tutorial26: "Нам нужно посадить немного семян... Возможно, что-нибудь найдется в доме?" #!String
+    confirmExit: "Вы действительно хотите выйти и потерять весь прогресс за этот игровой день?" #!String
+    mobile_options_green_squares: "Руководство по зеленым квадратам" #!String
+    tutorial_auto_attack: "Вы можете выбирать между атакой в ручном и авторежиме на экране настроек игры." #!String
+    question_restore_backup: "Хотите продолжить оттуда, где закончили в прошлый раз?" #!String
+    mobile_options_bigger_numbers: "Крупный шрифт для чисел" #!String
+    mobile_options_auto_save: "Автосохранение" #!String
+    save_backup: "Резервное сохранение" #!String
+    swap_saves: "Откатиться к прошлому сохранению" #!String
+    control_method_tap_to_move: "Движение касанием и автоатака" #!String
+    control_method_attack_joystick: "Движение касанием и атака джойстиком" #!String
+    control_method_invis_2: "Невидимый джойстик и 2 кнопки" #!String
+    control_method_invis_1: "Невидимый джойстик и 1 кнопка" #!String
+    control_method_joystick_buttons: "Движение касанием, джойстик, кнопки" #!String
+    control_method_joystick_buttons_no_tap_to_move: "Джойстик и кнопки" #!String
+    control_method_joystick_buttons_b: "Движение касанием + (джойстик и кнопки) (оружие)" #!String
+    control_method_joystick_buttons_c: "Движение касанием и джойстик + (кнопки) (оружие)" #!String
+    control_method_joystick: "Движение касанием и джойстик" #!String
+    show_controls_toggle_button: "Кнопка «Показывать управление»" #!String
+    button_diameter: "Диаметр кнопки" #!String
+    adjust_joypad_controls: "Настроить экранное управление" #!String
+    invisible_button_width: "Ширина невидимых кнопок" #!String
+    Default: "По умолчанию" #!String
+    pinch_zoom: "Масштаб щипком" #!String
+    store_demo: "Эта версия Stardew Valley была создана специально для демонстрационных целей." #!String
+    mobile_options_toolbar_slot_size: "Размер панели инструментов" #!String
+    mobile_options_date_time_size: "Размер поля даты" #!String
+    select_building: "Выберите здание" #!String
+    android_storage_migration: "Stardew Valley необходимо выполнить однократное копирование ваших ферм в новое место для обновления игры 1.5.\n\nНа следующем экране выберите папку «StardewValley» и нажмите «Использовать эту папку»." #!String
+    mobile_options_larger_font: "Крупный шрифт всплывающих подсказок" #!String
+    Syncing_cloud_saves: "Синхронизация облачных сохранений" #!String
+    Cancel: "Отмена" #!String
+

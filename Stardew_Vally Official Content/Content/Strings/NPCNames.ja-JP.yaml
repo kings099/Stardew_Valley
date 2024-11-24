@@ -1,0 +1,68 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Abigail: "アビゲイル" #!String
+    Alex: "アレックス" #!String
+    Bear: "クマ" #!String
+    Birdie: "バーディー" #!String
+    Bouncer: "用心棒" #!String
+    Caroline: "キャロライン" #!String
+    Clint: "クリント" #!String
+    Demetrius: "ディメトリウス" #!String
+    Dwarf: "ドワーフ" #!String
+    Elliott: "エリオット" #!String
+    Emily: "エミリー" #!String
+    Evelyn: "エブリン" #!String
+    George: "ジョージ" #!String
+    Gil: "ギル" #!String
+    Governor: "市長" #!String
+    Grandpa: "おじいさん" #!String
+    Gunther: "ギュンター" #!String
+    Gus: "ガス" #!String
+    Haley: "ヘイリー" #!String
+    Harvey: "ハーヴィー" #!String
+    Henchman: "部下" #!String
+    Jas: "ジャス" #!String
+    Jodi: "ジョディ" #!String
+    Kent: "ケント" #!String
+    Krobus: "クロバス" #!String
+    Leah: "リア" #!String
+    Leo: "レオ" #!String
+    Lewis: "ルイス" #!String
+    Linus: "ライナス" #!String
+    Marlon: "マーロン" #!String
+    Marnie: "マーニー" #!String
+    Maru: "マル" #!String
+    MisterQi: "ミスターQi" #!String
+    Morris: "モーリス" #!String
+    OldMariner: "年老いた水夫" #!String
+    Pam: "パム" #!String
+    Penny: "ペニー" #!String
+    Pierre: "ピエール" #!String
+    ProfessorSnail: "スネイル教授" #!String
+    Robin: "ロビン" #!String
+    Sam: "サム" #!String
+    Sandy: "サンディ" #!String
+    Sebastian: "セバスチャン" #!String
+    Shane: "シェーン" #!String
+    Vincent: "ヴィンセント" #!String
+    Welwick: "ウェルウィック" #!String
+    Willy: "ウィリー" #!String
+    Wizard: "魔術師" #!String
+    Fizz: "フィズ" #!String
+
