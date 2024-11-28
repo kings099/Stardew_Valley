@@ -1,0 +1,1548 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    AncientFruitPot: "Le sue radici crescono a fondo... non sarebbe contenta lì dentro." #!String
+    CactusSeedsOutside: "Devi piantarlo al chiuso o sull'Isola Zenzero." #!String
+    CaskNoCellar: "Funziona solo in cantina." #!String
+    DarkTalisman: "Talismano oscuro" #!String
+    MagicInk: "Inchiostro magico" #!String
+    MagnifyingGlass: "Lente d'ingrandimento" #!String
+    BearPaw: "Sapienza dell'orso" #!String
+    SpringOnionBugs: "Maestria con le cipolle primaverili" #!String
+    SpecialCharm: "Amuleto speciale" #!String
+    CatalogueDescription: "Fornisce accesso illimitato a tutti i pavimenti e le carte da parati... stando comodamente a casa!" #!String
+    FurnitureCatalogueDescription: "Fornisce accesso illimitato a quasi tutti i mobili... stando comodamente a casa!" #!String
+    DarkTalismanDescription: "Hai trovato il {0}! È coperto di melma d'insetto..." #!String
+    MagicInkDescription: "Hai trovato l'{0} perduto dal Mago! Meglio riportarglielo." #!String
+    MagnifyingGlassDescription: "Hai ricevuto la {0}! Ora potrai trovare i 'Messaggi segreti'. Questi messaggi rivelano informazioni rare ed utili, e possono essere riletti nella sezione collezioni." #!String
+    SpecialCharmDescription: "Hai ricevuto l'{0}! Percepisci un'aura di buona sorte che ti circonda (fortuna permanentemente aumentata)!" #!String
+    ParsnipSeedPackage_SomeoneElse: "Questo pacco appartiene a qualcun altro." #!String
+    Machine_NeedsInputCount: "Servono {0} pezzi." #!String
+    CraftingRecipe_IronBar: "Trasmuta (Fe)" #!String
+    CraftingRecipe_GoldBar: "Trasmuta (Au)" #!String
+    CraftingRecipe_SpringSeeds: "Semi selvatici (prim)" #!String
+    CraftingRecipe_SummerSeeds: "Semi selvatici (est)" #!String
+    CraftingRecipe_FallSeeds: "Semi selvatici (aut)" #!String
+    CraftingRecipe_WinterSeeds: "Semi selvatici (inv)" #!String
+    Acorn_Name: "Ghianda" #!String
+    Acorn_Description: "Si può piantare per far crescere una quercia." #!String
+    AdvancedTVRemote_Name: "Telecomando per TV avanzato" #!String
+    AdvancedTVRemote_Description: "Ha più pulsanti di un telecomando normale. Perfetto per il telespettatore appassionato!" #!String
+    Aerinite_Name: "Aerinite" #!String
+    Aerinite_Description: "Questi cristalli sono insolitamente luminosi." #!String
+    AgedRoe_Name: "Uova di pesce invecchiate" #!String
+    AgedRoe_Description: "Uova di pesce invecchiate nel sale per esaltarne il sapore." #!String
+    AgedRoe_Flavored_Name: "Uova di {0} invecchiate" #!String
+    Alamite_Name: "Alamite" #!String
+    Alamite_Description: "La sua distintiva fluorescenza la rende assai desiderata fra i collezionisti di rocce." #!String
+    Albacore_Name: "Alalonga" #!String
+    Albacore_Description: "Preferisce i \"confini\" di temperatura dove confluiscono acque fredde e calde." #!String
+    AlgaeSoup_Name: "Zuppa di alghette" #!String
+    AlgaeSoup_Description: "È un tantino viscida." #!String
+    Amaranth_Name: "Amaranto" #!String
+    Amaranth_Description: "Uno pseudo-cereale viola coltivato da un'antica civiltà." #!String
+    AmaranthSeeds_Name: "Semi di amaranto" #!String
+    AmaranthSeeds_Description: "Piantali in autunno. Crescono in 7 giorni. Da raccogliere con la falce." #!String
+    Amethyst_Name: "Ametista" #!String
+    Amethyst_Description: "Una variante viola di quarzo." #!String
+    AmethystRing_Name: "Anello d'ametista" #!String
+    AmethystRing_Description: "Aumenta il respingimento dei mostri attaccati del 10%." #!String
+    AmethystStone_Name: "Pietra con ametiste" #!String
+    AmethystStone_Description: "Rompila per ottenere ametiste." #!String
+    AmphibianFossil_Name: "Fossile di anfibio" #!String
+    AmphibianFossil_Description: "Le zampe posteriori relativamente corte fanno pensare a una specie di rospo primordiale." #!String
+    Anchor_Name: "Ancora" #!String
+    Anchor_Description: "Forse apparteneva ad antichi pirati." #!String
+    Anchovy_Name: "Acciuga" #!String
+    Anchovy_Description: "Un pesciolino argenteo che nuota nell'oceano." #!String
+    AncientDoll_Name: "Bambola antica" #!String
+    AncientDoll_Description: "Una bambola antica coperta di sporcizia. Potrebbe esser stata usata come giocattolo, decorazione, o come elemento di qualche rituale." #!String
+    AncientDrum_Name: "Antico tamburo" #!String
+    AncientDrum_Description: "Un tamburo fatto di legno e pelle animale, dal timbro basso e riecheggiante." #!String
+    AncientFruit_Name: "Frutto antico" #!String
+    AncientFruit_Description: "Dorme da eoni." #!String
+    AncientSeed_Name: "Seme antico" #!String
+    AncientSeed_Description: "Un vecchio seme secco di qualche pianta antica. Dall'aspetto sembra morto da tempo..." #!String
+    AncientSeeds_Name: "Semi antichi" #!String
+    AncientSeeds_Description: "Cresceranno ancora?" #!String
+    AncientSword_Name: "Spada antica" #!String
+    AncientSword_Description: "I resti di un'antica arma. Gran parte della lama è ormai solo ruggine, ma l'elsa è finemente lavorata." #!String
+    Angler_Name: "Rana pescatrice" #!String
+    Angler_Description: "Usa un'appendice bioluminescente per attrarre le prede." #!String
+    Apple_Name: "Mela" #!String
+    Apple_Description: "Un frutto croccante usato per il sidro e altri succhi." #!String
+    AppleSapling_Name: "Giovane melo" #!String
+    AppleSapling_Description: "In 28 giorni produce un melo adulto. Dà frutti in autunno. Cresce soltanto se gli 8 \"tasselli\" intorno ad esso sono vuoti." #!String
+    Apricot_Name: "Albicocca" #!String
+    Apricot_Description: "Un piccolo frutto tenero con un nocciolo durissimo." #!String
+    ApricotSapling_Name: "Giovane albicocco" #!String
+    ApricotSapling_Description: "In 28 giorni produce un albicocco adulto. Dà frutti in primavera. Cresce soltanto se gli 8 \"tasselli\" intorno ad esso sono vuoti." #!String
+    Aquamarine_Name: "Acquamarina" #!String
+    Aquamarine_Description: "Una luccicante gemma verde-blu." #!String
+    AquamarineRing_Name: "Anello di acquamarina" #!String
+    AquamarineRing_Description: "Aumenta le probabilità di colpi critici del 10%." #!String
+    AquamarineStone_Name: "Pietra con acquamarine" #!String
+    AquamarineStone_Description: "Rompila per ottenere acquamarine." #!String
+    ArcticShard_Name: "Scheggia artica" #!String
+    ArcticShard_Description: "Questa scheggia emana una luce blu ultraterrena." #!String
+    Arrowhead_Name: "Punta di freccia" #!String
+    Arrowhead_Description: "Una punta rozzamente foggiata, usata per la caccia." #!String
+    Artichoke_Name: "Carciofo" #!String
+    Artichoke_Description: "Il bocciolo di una pianta di cardo. Le spinose foglie esterne celano un nucleo polposo e saziante." #!String
+    ArtichokeDip_Name: "Salsa di carciofi" #!String
+    ArtichokeDip_Description: "Fresca e ristoratrice." #!String
+    ArtichokeSeeds_Name: "Semi di carciofo" #!String
+    ArtichokeSeeds_Description: "Piantali in autunno. Maturano in 8 giorni." #!String
+    ArtifactSpot_Name: "Punto Artefatto" #!String
+    ArtifactSpot_Description: "Ehm... come c'è finito nel tuo inventario, questo? Ape ha fatto un bubù." #!String
+    ArtifactTrove_Name: "Artefatto rinvenuto" #!String
+    ArtifactTrove_Description: "Puoi chiedere a un fabbro di aprirtelo. Spesso questi oggetti contengono delle reliquie e delle curiosità antiche." #!String
+    AutumnsBounty_Name: "Bottino d'autunno" #!String
+    AutumnsBounty_Description: "Un assaggio della stagione." #!String
+    Bait_Name: "Esca" #!String
+    Bait_Description: "Fa abboccare i pesci più in fretta. Va prima attaccata a una canna da pesca." #!String
+    BakedFish_Name: "Pesce al forno" #!String
+    BakedFish_Description: "Pesce al forno su un letto di erbe." #!String
+    Banana_Name: "Banana" #!String
+    Banana_Description: "Un dolce frutto tropicale ricco di amido." #!String
+    BananaPudding_Name: "Budino di banana" #!String
+    BananaPudding_Description: "Un dessert cremoso dal magnifico gusto tropicale." #!String
+    BananaSapling_Name: "Giovane banano" #!String
+    BananaSapling_Description: "In 28 giorni produce un banano adulto. Dà frutti in estate, o per tutto l'anno se piantato sull'Isola Zenzero." #!String
+    BarbedHook_Name: "Amo spinato" #!String
+    BarbedHook_Description: "Rende la tua pesca meno incerta, poiché la \"barra della pesca\" resta attaccata al pesce che ha abboccato. Funziona al meglio sui pesci lenti e deboli." #!String
+    Baryte_Name: "Barite" #!String
+    Baryte_Description: "Gli esemplari migliori assomigliano a una rosa del deserto." #!String
+    Basalt_Name: "Basalto" #!String
+    Basalt_Description: "Si forma vicino al magma incandescente." #!String
+    BasicFertilizer_Name: "Fertilizzante base" #!String
+    BasicFertilizer_Description: "Migliora un po' la qualità del suolo, aumentando le probabilità che crescano colture di qualità. Mescolalo al terreno dissodato." #!String
+    BasicRetainingSoil_Name: "Terriccio rattenente base" #!String
+    BasicRetainingSoil_Description: "Questo terriccio ha una chance di trattenere l'acqua nel corso della notte. Mescolalo al terreno dissodato." #!String
+    BatteryPack_Name: "Batteria" #!String
+    BatteryPack_Description: "Completamente carica di preziosa energia." #!String
+    BatWing_Name: "Ala di pipistrello" #!String
+    BatWing_Description: "Il materiale è sorprendentemente delicato." #!String
+    BeanHotpot_Name: "Spezzatino di fagioli" #!String
+    BeanHotpot_Description: "Senza dubbio salutare." #!String
+    BeanStarter_Name: "Avvia-fagioli" #!String
+    BeanStarter_Description: "Piantalo in primavera. Matura in 10 giorni, ma produce anche dopo. Cresce su un graticcio." #!String
+    Beer_Name: "Birra" #!String
+    Beer_Description: "Bevi con moderazione." #!String
+    Beet_Name: "Barbabietola" #!String
+    Beet_Description: "Una radice dolce e terrigna. In aggiunta, le foglie sono ottime per l'insalata." #!String
+    BeetSeeds_Name: "Semi di barbabietola" #!String
+    BeetSeeds_Description: "Piantali in autunno. Maturano in 6 giorni." #!String
+    BerryBasket_Name: "Cestino per bacche" #!String
+    BerryBasket_Description: "Le fibre sono macchiate di succo di bacche." #!String
+    Bixite_Name: "Bixite" #!String
+    Bixite_Description: "Un oscuro minerale metallico ricercato per la sua struttura cubica." #!String
+    Blackberry_Name: "Mora" #!String
+    Blackberry_Description: "Un regalo del primo autunno." #!String
+    BlackberryCobbler_Name: "Torta di more" #!String
+    BlackberryCobbler_Description: "Non c'è niente che le assomigli." #!String
+    Blobfish_Name: "Pesce blob" #!String
+    Blobfish_Description: "Questa bislacca creatura fluttua sul fondale oceanico, consumando ogni materiale commestibile in cui s'imbatte." #!String
+    Blueberry_Name: "Mirtillo" #!String
+    Blueberry_Description: "Una famosa bacca dalle tante proprietà benefiche. La concentrazione più alta di nutrienti è nella buccia blu." #!String
+    BlueberrySeeds_Name: "Semi di mirtillo" #!String
+    BlueberrySeeds_Description: "Piantali in estate. Maturano in 13 giorni, e continuano a produrre dopo il primo raccolto." #!String
+    BlueberryTart_Name: "Crostatina ai mirtilli" #!String
+    BlueberryTart_Description: "Leggera e rinfrescante." #!String
+    BlueDiscus_Name: "Pesce disco" #!String
+    BlueDiscus_Description: "Un pesce tropicale dai colori sgargianti, molto popolare negli acquari." #!String
+    BlueGrassStarter_Name: "Avvia-erba blu" #!String
+    BlueGrassStarter_Description: "Piazzalo nella fattoria per piantare un ciuffo di erba blu." #!String
+    BlueJazz_Name: "Jazz blu" #!String
+    BlueJazz_Description: "Il fiore cresce a forma di sfera per invitare quante più farfalle possibile." #!String
+    BlueSlimeEgg_Name: "Uovo di melma blu" #!String
+    BlueSlimeEgg_Description: "Si può covare in un'incubatrice per melme." #!String
+    BokChoy_Name: "Bok Choy" #!String
+    BokChoy_Description: "Le foglie verdi e i gambi fibrosi sono squisiti e salutari." #!String
+    BokChoySeeds_Name: "Semi di Bok Choy" #!String
+    BokChoySeeds_Description: "Piantali in autunno. Maturano in 4 giorni." #!String
+    Bomb_Name: "Bomba" #!String
+    Bomb_Description: "Genera un'esplosione. Attenzione!" #!String
+    BoneFlute_Name: "Flauto d'osso" #!String
+    BoneFlute_Description: "Uno strumento a fiato preistorico intagliato dall'osso di un animale. Emette un suono che dà i brividi." #!String
+    BoneFragment_Name: "Frammento d'osso" #!String
+    BoneFragment_Description: "Un piccolo pezzetto di osso." #!String
+    Book_AnimalCatalogue_Name: "Catalogo degli animali" #!String
+    Book_AnimalCatalogue_Description: "Puoi accedere al negozio di Marnie quando lei non c'è." #!String
+    Book_Artifact_Name: "Tesori antichi: guida all'estimazione" #!String
+    Book_Artifact_Description: "Vendere gli artefatti ti farà guadagnare di più." #!String
+    Book_Bombs_Name: "Manuale di sicurezza nanico" #!String
+    Book_Bombs_Description: "Le bombe ti danneggiano del 25% in meno." #!String
+    Book_Crabbing_Name: "L'arte di prendere un granchio" #!String
+    Book_Crabbing_Description: "Le nasse per granchi hanno il 25% di chance di catturare due prede." #!String
+    Book_Defense_Name: "Pelledura e Gambasvelta" #!String
+    Book_Defense_Description: "Ottieni +1 Difesa." #!String
+    Book_Diamonds_Name: "Il cacciatore di diamanti" #!String
+    Book_Diamonds_Description: "Tutte le pietre hanno una chance di contenere un diamante se spaccate a mano." #!String
+    Book_Friendship_Name: "ABC dell'amicizia" #!String
+    Book_Friendship_Description: "Fai amicizia con le persone un po' più in fretta." #!String
+    Book_Marlon_Name: "Come mappare le caverne" #!String
+    Book_Marlon_Description: "Ottieni uno sconto del 50% sul servizio di recupero oggetti di Marlon." #!String
+    Book_Mystery_Name: "Libro dei misteri" #!String
+    Book_Mystery_Description: "Hai leggermente più probabilità di trovare Scatole misteriose." #!String
+    Book_PriceCatalogue_Name: "Listino prezzi" #!String
+    Book_PriceCatalogue_Description: "Ora puoi vedere il valore dei tuoi oggetti." #!String
+    Book_QueenOfSauce_Name: "Ricettario della Regina del sugo" #!String
+    Book_QueenOfSauce_Description: "Apprendi qualunque ricetta della Regina del sugo che non conosci già." #!String
+    Book_Riding_Name: "Cavallo: il libro" #!String
+    Book_Riding_Description: "Guadagni un po' di velocità in più quando sei a cavallo." #!String
+    Book_Roe_Name: "Gioielli del mare" #!String
+    Book_Roe_Description: "Gli scrigni del tesoro pescati hanno una chance di contenere uova di pesce." #!String
+    Book_Speed_Name: "Via del vento pt. 1" #!String
+    Book_Speed_Description: "Corri un po' più velocemente." #!String
+    Book_Speed2_Name: "Via del vento pt. 2" #!String
+    Book_Speed2_Description: "Corri un po' più velocemente." #!String
+    Book_Trash_Name: "Buffet nel vicolo" #!String
+    Book_Trash_Description: "Hai più probabilità di trovare oggetti nei rifiuti." #!String
+    Book_Void_Name: "Compendio dei mostri" #!String
+    Book_Void_Description: "I mostri hanno una piccola chance di lasciare un bottino doppio." #!String
+    Book_WildSeeds_Name: "Diari del procione" #!String
+    Book_WildSeeds_Description: "Le erbacce hanno una chance maggiore di rilasciare semi misti." #!String
+    Book_Woodcutting_Name: "Come darci un taglio" #!String
+    Book_Woodcutting_Description: "Gli alberi abbattuti hanno un 5% di chance di dare il doppio del legno." #!String
+    Bouquet_Name: "Mazzo di fiori" #!String
+    Bouquet_Description: "Dimostra che provi qualcosa per la persona a cui lo doni." #!String
+    Bread_Name: "Pane" #!String
+    Bread_Description: "Una crostosa baguette." #!String
+    Bream_Name: "Abramide" #!String
+    Bream_Description: "Un pesce fluviale piuttosto comune, attivo di notte." #!String
+    BrickFloor_Name: "Pavimento di mattoni" #!String
+    BrickFloor_Description: "Piazzalo per terra per creare sentieri o per decorare i pavimenti." #!String
+    Broccoli_Name: "Broccoli" #!String
+    Broccoli_Description: "La testa in fiore di una pianta di broccoli. Le piccole gemme le danno una ruvidità particolare." #!String
+    BroccoliSeeds_Name: "Semi di broccoli" #!String
+    BroccoliSeeds_Description: "Piantali in autunno. Maturano in 8 giorni, e continuano a produrre dopo il primo raccolto." #!String
+    BrokenCD_Name: "CD rotto" #!String
+    BrokenCD_Description: "È un CD di prova JojaNet 2.0. Devono averne prodotti un miliardo." #!String
+    BrokenGlasses_Name: "Occhiali rotti" #!String
+    BrokenGlasses_Description: "Qualcuno deve aver perso gli occhiali. Sono andati." #!String
+    BrownEgg_Name: "Uovo" #!String
+    BrownEgg_Description: "Un normale uovo marrone di pollo." #!String
+    Bruschetta_Name: "Bruschetta" #!String
+    Bruschetta_Description: "Pomodori arrosto su pane bianco croccante." #!String
+    BugMeat_Name: "Carne d'insetto" #!String
+    BugMeat_Description: "Un batuffolo succulento di polpa d'insetto." #!String
+    BugSteak_Name: "Bistecca d'insetto" #!String
+    BugSteak_Description: "L'ultima spiaggia per l'esploratore di caverne affamato." #!String
+    Bullhead_Name: "Scazzone" #!String
+    Bullhead_Description: "Un parente del pesce gatto che mangia vari cibi dei fondali lacustri." #!String
+    BurglarsRing_Name: "Anello del ladro" #!String
+    BurglarsRing_Description: "I mostri hanno più probabilità di lasciare bottini." #!String
+    ButterflyPowder_Name: "Polvere di farfalla" #!String
+    ButterflyPowder_Description: "Spargila su un animale da compagnia per rimuoverlo dalla fattoria. Il processo è irreversibile." #!String
+    CactusFruit_Name: "Fico d'India" #!String
+    CactusFruit_Description: "Il dolce frutto del cactus omonimo." #!String
+    CactusSeeds_Name: "Semi di cactus" #!String
+    CactusSeeds_Description: "Crescono solo al chiuso. Maturano in 12 giorni, poi producono frutti ogni 3 giorni." #!String
+    Calcite_Name: "Calcite" #!String
+    Calcite_Description: "Questo cristallo giallo è picchiettato di noduli scintillanti." #!String
+    CalicoEgg_Name: "Uovo di Calico" #!String
+    CalicoEgg_Description: "Un uovo speciale che si può trovare durante il Festival del deserto." #!String
+    CalicoEggStone_Name: "Pietra delle Uova di Calico" #!String
+    CalicoEggStone_Description: "Spaccala per ottenere Uova di Calico." #!String
+    CampingStove_Name: "Stufa da campeggio" #!String
+    CampingStove_Description: "Ti permette di cucinare ovunque, e non si consuma con l'uso." #!String
+    Carp_Name: "Carpa" #!String
+    Carp_Description: "Un comune pesce degli stagni." #!String
+    CarpSurprise_Name: "Carpa a sorpresa" #!String
+    CarpSurprise_Description: "Unta e blanda." #!String
+    Carrot_Name: "Carota" #!String
+    Carrot_Description: "Un tubero colorato che cresce in fretta e può essere un ottimo spuntino." #!String
+    CarrotSeeds_Name: "Semi di carota" #!String
+    CarrotSeeds_Description: "Piantali in primavera. Maturano in 3 giorni." #!String
+    Catfish_Name: "Pesce gatto" #!String
+    Catfish_Description: "Un pesce non comune che si trova nei torrenti." #!String
+    Cauliflower_Name: "Cavolfiore" #!String
+    Cauliflower_Description: "Prezioso, ma lento a crescere. A dispetto del colore pallido, i fioretti sono ricchi di nutrienti." #!String
+    CauliflowerSeeds_Name: "Semi di cavolfiore" #!String
+    CauliflowerSeeds_Description: "Piantali in primavera. Dopo 12 giorni producono un grosso cavolfiore." #!String
+    CaveCarrot_Name: "Carota di grotta" #!String
+    CaveCarrot_Description: "Uno spuntino amidoso che si trova nelle caverne. Aiuta i minatori a lavorare più a lungo." #!String
+    CaveJelly_Name: "Gelatina di grotta" #!String
+    CaveJelly_Description: "Una gelatina rara che si trova nei laghi sotterranei." #!String
+    Caviar_Name: "Caviale" #!String
+    Caviar_Description: "Uova di storione lavorate. È considerato una leccornia di lusso!" #!String
+    Celestine_Name: "Celestite" #!String
+    Celestine_Description: "Componeva le ossa di alcune delle prime forme di vita." #!String
+    ChallengeBait_Name: "Esca della sfida" #!String
+    ChallengeBait_Description: "Una pesca \"perfetta\" ti dà il triplo del pesce. Tuttavia, ogni volta che un pesce scappa dalla \"barra della pesca\", il risultato si riduce." #!String
+    Chanterelle_Name: "Gallinaccio" #!String
+    Chanterelle_Description: "Un fungo saporito dall'odore fruttato e dal sapore leggermente pepato." #!String
+    Cheese_Name: "Formaggio" #!String
+    Cheese_Description: "Comunissimo formaggio." #!String
+    CheeseCauliflower_Name: "Cavolfiori al formaggio" #!String
+    CheeseCauliflower_Description: "Che profumino!" #!String
+    Cherry_Name: "Ciliegia" #!String
+    Cherry_Description: "Popolare, e matura prima di molti altri frutti." #!String
+    CherryBomb_Name: "Bombicina" #!String
+    CherryBomb_Description: "Genera una piccola esplosione. Indietro!" #!String
+    CherrySapling_Name: "Giovane ciliegio" #!String
+    CherrySapling_Description: "In 28 giorni produce un ciliegio adulto. Dà frutti in primavera. Cresce soltanto se gli 8 \"tasselli\" intorno ad esso sono vuoti." #!String
+    ChewingStick_Name: "Bastoncino da mordere" #!String
+    ChewingStick_Description: "Gli antichi li masticavano per pulirsi i denti." #!String
+    ChickenStatue_Name: "Statua di un pollo" #!String
+    ChickenStatue_Description: "La statua di un pollo su base bronzea. Gli antichi di questa zona dovevano andare matti per i polli." #!String
+    ChippedAmphora_Name: "Anfora sbeccata" #!String
+    ChippedAmphora_Description: "Un antico contenitore di ceramica. Usato per trasportare beni solidi e liquidi." #!String
+    ChocolateCake_Name: "Torta al cioccolato" #!String
+    ChocolateCake_Description: "Ricca e succulenta, con una spessa glassa al caramello." #!String
+    Chowder_Name: "Zuppa di pesce" #!String
+    Chowder_Description: "Il modo perfetto per scaldarti dopo una fredda notte in mare." #!String
+    Chub_Name: "Cavedano" #!String
+    Chub_Description: "Un comune pesce d'acqua dolce noto per il suo appetito vorace." #!String
+    CinderShard_Name: "Scheggia di brace" #!String
+    CinderShard_Description: "Percepisci un tiepido bagliore dentro questa pietra." #!String
+    CinderShardStone_Name: "Pietra con schegge di brace" #!String
+    CinderShardStone_Description: "Rompila per ottenere schegge di brace." #!String
+    Clam_Name: "Vongola" #!String
+    Clam_Description: "Un tempo ci viveva qualcuno." #!String
+    Clay_Name: "Argilla" #!String
+    Clay_Description: "Usata per costruire oggetti ed edifici." #!String
+    ClayStone_Name: "Pietra con argilla" #!String
+    ClayStone_Description: "Rompila per ottenere argilla." #!String
+    Cloth_Name: "Stoffa" #!String
+    Cloth_Description: "Un rotolo di fine stoffa di lana." #!String
+    Coal_Name: "Carbone" #!String
+    Coal_Description: "Una roccia combustibile utile nei processi di creazione e forgiatura." #!String
+    CobblestonePath_Name: "Sentiero di ciottoli" #!String
+    CobblestonePath_Description: "Piazzalo per terra per creare sentieri o per abbellire i pavimenti." #!String
+    Cockle_Name: "Tellina" #!String
+    Cockle_Description: "Una comune vongola d'acqua salata." #!String
+    Coconut_Name: "Noce di cocco" #!String
+    Coconut_Description: "Un seme di una palma di cocco. Ha molti usi culinari." #!String
+    Coffee_Name: "Caffè" #!String
+    Coffee_Description: "Ha un aroma delizioso. Ti darà una bella carica." #!String
+    CoffeeBean_Name: "Chicco di caffè" #!String
+    CoffeeBean_Description: "Piantalo in primavera o in estate per far crescere una pianta di caffè. Metti cinque chicchi in un barilotto per fare il caffè." #!String
+    Coleslaw_Name: "Insalata russa" #!String
+    Coleslaw_Description: "Fresca, leggera e molto salutare." #!String
+    CombinedRing_Name: "Anello combinato" #!String
+    CombinedRing_Description: "..." #!String
+    CommonMushroom_Name: "Fungo comune" #!String
+    CommonMushroom_Description: "Ha un leggero gusto di noce, e un buona consistenza." #!String
+    CompleteBreakfast_Name: "Colazione completa" #!String
+    CompleteBreakfast_Description: "Ti prapara ad affrontare il mondo!" #!String
+    ConcernedApeMask_Name: "???" #!String
+    ConcernedApeMask_Description: "???" #!String
+    Cookie_Name: "Biscotto" #!String
+    Cookie_Description: "Dà molto da masticare." #!String
+    CookoutKit_Name: "Kit culinario" #!String
+    CookoutKit_Description: "Usalo per creare un fuoco da campo, così da poter cucinare dove vuoi!" #!String
+    CopperBar_Name: "Lingotto di rame" #!String
+    CopperBar_Description: "Una barra di rame puro." #!String
+    CopperOre_Name: "Rame grezzo" #!String
+    CopperOre_Description: "Un minerale comune che può essere affinato in lingotti." #!String
+    CopperStone_Name: "Pietra con rame" #!String
+    CopperStone_Description: "C'è del rame grezzo in questa pietra." #!String
+    Coral_Name: "Corallo" #!String
+    Coral_Description: "Una colonia di minuscole creature che si ammassano insieme formando splendide strutture." #!String
+    CorkBobber_Name: "Galleggiante di sughero" #!String
+    CorkBobber_Description: "Aumenta leggermente la dimensione della \"barra della pesca\"." #!String
+    Corn_Name: "Mais" #!String
+    Corn_Description: "Uno dei cereali più diffusi. Le pannocchie fresche e dolci sono un classico dell'estate." #!String
+    CornSeeds_Name: "Semi di mais" #!String
+    CornSeeds_Description: "Piantali in estate o in autunno. Maturano in 14 giorni, e continuano a produrre dopo il primo raccolto." #!String
+    Crab_Name: "Granchio" #!String
+    Crab_Description: "Un crostaceo marino con due potenti chele." #!String
+    CrabCakes_Name: "Tortini di granchio" #!String
+    CrabCakes_Description: "Granchio, briciole di pane e uova, modellati a pasticcini e fritti marron-dorati." #!String
+    CrabPot_Name: "Nassa per granchi" #!String
+    CrabPot_Description: "Piazzala in acqua, mettici un'esca, e controlla se hai preso qualcosa il giorno dopo. Funziona nei torrenti, nei laghi e nell'oceano." #!String
+    CrabshellRing_Name: "Anello di carapace di granchio" #!String
+    CrabshellRing_Description: "La parte in alto è fatta di carapace di granchio incantato." #!String
+    Cranberries_Name: "Mirtilli rossi" #!String
+    Cranberries_Description: "Queste bacche rosse e aspre sono un cibo tradizionale dell'inverno." #!String
+    CranberryCandy_Name: "Canditura di mirt. rossi" #!String
+    CranberryCandy_Description: "La canditura è abbastanza dolce da mascherare il frutto amaro." #!String
+    CranberrySauce_Name: "Marm. di mirtilli rossi" #!String
+    CranberrySauce_Description: "Un dolce delle feste." #!String
+    CranberrySeeds_Name: "Semi di mirtillo rosso" #!String
+    CranberrySeeds_Description: "Piantali in autunno. Maturano in 7 giorni, e continuano a produrre dopo il primo raccolto." #!String
+    Crayfish_Name: "Gambero" #!String
+    Crayfish_Description: "Un piccolo parente d'acqua dolce dell'aragosta." #!String
+    Crimsonfish_Name: "Pesce cremisi" #!String
+    Crimsonfish_Description: "Vive in fondo all'oceano ma ama deporre le uova nella calda acqua estiva." #!String
+    CrispyBass_Name: "Boccalone croccante" #!String
+    CrispyBass_Description: "Wow, l'impanatura è perfetta." #!String
+    Crocus_Name: "Croco" #!String
+    Crocus_Description: "Un fiore che può sbocciare d'inverno." #!String
+    CrystalFloor_Name: "Pavimento di cristallo" #!String
+    CrystalFloor_Description: "Piazzalo per terra per creare sentieri o per abbellire i pavimenti." #!String
+    CrystalFruit_Name: "Frutto cristallino" #!String
+    CrystalFruit_Description: "Un frutto delicato che sbuca dalla neve." #!String
+    CrystalPath_Name: "Sentiero di cristallo" #!String
+    CrystalPath_Description: "Piazzalo per terra per creare sentieri o per abbellire i pavimenti." #!String
+    CuriosityLure_Name: "Esca della curiosità" #!String
+    CuriosityLure_Description: "Aumenta le probabilità di prendere pesci rari." #!String
+    Daffodil_Name: "Giunchiglia" #!String
+    Daffodil_Description: "Un tipico fiore primaverile che può fungere da bel regalo." #!String
+    Dandelion_Name: "Tarassaco" #!String
+    Dandelion_Description: "Non avrà il più bello dei fiori, ma le foglie sono ottime per l'insalata." #!String
+    DecorativePot_Name: "Vaso ornamentale" #!String
+    DecorativePot_Description: "Una replica di un vaso antico." #!String
+    DeluxeBait_Name: "Esca deluxe" #!String
+    DeluxeBait_Description: "Fa abboccare i pesci ancora più in fretta e aumenta la dimensione della \"barra della pesca\"." #!String
+    DeluxeFertilizer_Name: "Fertilizzante deluxe" #!String
+    DeluxeFertilizer_Description: "Migliora di molto la qualità del suolo, aumentando le probabilità che crescano colture di qualità. Mescolalo al terreno dissodato." #!String
+    DeluxeRetainingSoil_Name: "Terriccio rattenente deluxe" #!String
+    DeluxeRetainingSoil_Description: "Questo terriccio ha una chance del 100% di trattenere l'acqua nel corso della notte. Mescolalo al terreno dissodato." #!String
+    DeluxeSpeedGro_Name: "Crescipresto deluxe" #!String
+    DeluxeSpeedGro_Description: "Stimola la produzione di foglie. Garantisce una frequenza di crescita incrementata almeno del 25%. Mescolalo al terreno dissodato." #!String
+    Diamond_Name: "Diamante" #!String
+    Diamond_Description: "Una gemma rara e preziosa." #!String
+    DiamondStone_Name: "Pietra con diamanti" #!String
+    DiamondStone_Description: "Rompila per ottenere diamanti." #!String
+    DinosaurEgg_Name: "Uovo di dinosauro" #!String
+    DinosaurEgg_Description: "Un enorme uovo di dinosauro... Il guscio è ancora completamente intatto!" #!String
+    DinosaurMayonnaise_Name: "Maionese di dinosauro" #!String
+    DinosaurMayonnaise_Description: "Densa, cremosa, e dalla tinta verde brillante. Odora di erba e cuoio." #!String
+    DishOTheSea_Name: "Pasto-dal-mare" #!String
+    DishOTheSea_Description: "Ti riscalderà nella fredda aria marina." #!String
+    Dolomite_Name: "Dolomite" #!String
+    Dolomite_Description: "Può formarsi sulle barriere coralline, spesso vicino a un vulcano sottomarino." #!String
+    Dorado_Name: "Dorado" #!String
+    Dorado_Description: "Un feroce carnivoro con brillanti scaglie arancioni." #!String
+    DragonTooth_Name: "Dente di drago" #!String
+    DragonTooth_Description: "Si racconta che siano i denti di antichi serpenti. Lo smalto è fatto di iridio puro!" #!String
+    DressedSpinner_Name: "Rotante travestito" #!String
+    DressedSpinner_Description: "La linguetta metallica e le strisce colorate creano uno spettacolo ammaliante per i pesci. Aumenta la frequenza di pesci che abboccano." #!String
+    DriedFruit_Name: "Essiccato" #!String
+    DriedFruit_Description: "Pezzetti stoppacciosi di {0} essiccati." #!String
+    DriedFruit_CollectionsTabDescription: "Pezzetti stoppacciosi di frutta essiccata." #!String
+    DriedFruit_CollectionsTabName: "Frutta essiccata" #!String
+    DriedFruit_Flavored_Name: "{0} (essiccato)" #!String
+    DriedMushrooms_Name: "Essiccato" #!String
+    DriedMushrooms_Description: "Un pacchetto di funghi per intenditori." #!String
+    DriedMushrooms_CollectionsTabDescription: "Un pacchetto di funghi per intenditori." #!String
+    DriedMushrooms_CollectionsTabName: "Funghi essiccati" #!String
+    DriedStarfish_Name: "Stella marina essiccata" #!String
+    DriedStarfish_Description: "Una stella marina dell'oceano primordiale. Un esemplare insolitamente intonso!" #!String
+    Driftwood_Name: "Legno galleggiante" #!String
+    Driftwood_Description: "Un pezzo di legno che viene dal mare." #!String
+    DrumBlock_Name: "Blocco-tamburo" #!String
+    DrumBlock_Description: "Emette il suono di un tamburo quando ci cammini vicino." #!String
+    DuckEgg_Name: "Uovo d'anatra" #!String
+    DuckEgg_Description: "È ancora caldo." #!String
+    DuckFeather_Name: "Penna d'anatra" #!String
+    DuckFeather_Description: "È così colorata." #!String
+    DuckMayonnaise_Name: "Maionese d'anatra" #!String
+    DuckMayonnaise_Description: "È una maionese gialla e gustosa." #!String
+    DwarfGadget_Name: "Congegno nanico" #!String
+    DwarfGadget_Description: "Un pezzo di un'avanzata tecnologia un tempo nota ai nani. Emette ancora luce e un mormorio, ma non sei in grado di capirne il funzionamento." #!String
+    DwarfScrollI_Name: "Pergamena nanica I" #!String
+    DwarfScrollI_Description: "Un rotolo di pergamena ingiallita pieno di simboli nanici. Questo è legato con un fiocco rosso." #!String
+    DwarfScrollII_Name: "Pergamena nanica II" #!String
+    DwarfScrollII_Description: "Un rotolo di pergamena ingiallita pieno di simboli nanici. Questo è legato con un nastro verde." #!String
+    DwarfScrollIII_Name: "Pergamena nanica III" #!String
+    DwarfScrollIII_Description: "Un rotolo di pergamena ingiallita pieno di simboli nanici. Questo è legato con una corda blu." #!String
+    DwarfScrollIV_Name: "Pergamena nanica IV" #!String
+    DwarfScrollIV_Description: "Un rotolo di pergamena ingiallita pieno di simboli nanici. Questo è legato con una catena d'oro." #!String
+    DwarvishHelm_Name: "Elmo nanico" #!String
+    DwarvishHelm_Description: "Uno degli elmetti comunemente indossati dai nani. Le spesse placche di metallo li proteggono dai detriti dall'alto e dalle stalattiti." #!String
+    DwarvishTranslationGuide_Name: "Guida alla traduzione nanica" #!String
+    DwarvishTranslationGuide_Description: "Ti insegna il nanico." #!String
+    EarthCrystal_Name: "Cristallo della terra" #!String
+    EarthCrystal_Description: "Una sostanza resinosa che si trova vicino alla superficie." #!String
+    Ectoplasm_Name: "Ectoplasma" #!String
+    Ectoplasm_Description: "Una poltiglia densa e viscida che il Mago vuole per motivi ignoti." #!String
+    Eel_Name: "Anguilla" #!String
+    Eel_Description: "Un pesciolino lungo e scivoloso." #!String
+    Eggplant_Name: "Melanzana" #!String
+    Eggplant_Description: "Una parente gustosa e salutare del pomodoro. Deliziosa da fritta o stufata." #!String
+    EggplantParmesan_Name: "Parmigiana" #!String
+    EggplantParmesan_Description: "Piccantina, formaggiosa, magnifica." #!String
+    EggplantSeeds_Name: "Semi di melanzana" #!String
+    EggplantSeeds_Description: "Piantali in autunno. Maturano in 5 giorni, e continuano a produrre dopo il primo raccolto." #!String
+    ElvishJewelry_Name: "Gioiello elfico" #!String
+    ElvishJewelry_Description: "Sporco ma ancora splendido. Ha un'iscrizione sinuosa sul lato, che alcuni credono essere l'antica lingua degli elfi. Non sono mai state trovate ossa elfiche." #!String
+    Emerald_Name: "Smeraldo" #!String
+    Emerald_Description: "Una pietra preziosa dal colore verde splendente." #!String
+    EmeraldRing_Name: "Anello di smeraldo" #!String
+    EmeraldRing_Description: "Aumenta la velocità dell'arma del 10%." #!String
+    EmeraldStone_Name: "Pietra con smeraldi" #!String
+    EmeraldStone_Description: "Rompila per ottenere smeraldi." #!String
+    EnergyTonic_Name: "Tonico energetico" #!String
+    EnergyTonic_Description: "Ripristina un sacco di energia." #!String
+    Enricher_Name: "Nutritore" #!String
+    Enricher_Description: "Mettilo su un irrigatore e caricalo di fertilizzante per applicarlo automaticamente quando pianti semi lì vicino." #!String
+    Escargot_Name: "Escargot" #!String
+    Escargot_Description: "Lumache imburrate cucinate alla perfezione." #!String
+    Esperite_Name: "Esperite" #!String
+    Esperite_Description: "I cristalli mandano un bagliore verde acceso quando stimolati." #!String
+    ExplosiveAmmo_Name: "Munizioni esplosive" #!String
+    ExplosiveAmmo_Description: "Lanciale con la fionda." #!String
+    FairyDust_Name: "Polvere di fata" #!String
+    FairyDust_Description: "Spargila su barilotti, fornaci, e altri equipaggiamenti per la raffinazione, e riceverai all'istante il loro prodotto." #!String
+    FairyRose_Name: "Rosa fatata" #!String
+    FairyRose_Description: "Secondo una leggenda popolare, il dolce odore di questo fiore attrae le fate." #!String
+    FairySeeds_Name: "Semi fatati" #!String
+    FairySeeds_Description: "Piantali in autunno. In 12 giorni producono un fiore misterioso. Colori assortiti." #!String
+    FairyStone_Name: "Pietra fatata" #!String
+    FairyStone_Description: "Una vecchia canzone da minatori suggerisce che sia fatta delle ossa di antiche fate." #!String
+    FallSeeds_Name: "Semi autunnali" #!String
+    FallSeeds_Description: "Un assortimento di semi autunnali selvatici." #!String
+    FarAwayStone_Name: "Pietra lontana" #!String
+    FarAwayStone_Description: "Una pietra dalle origini ignote. Sembra che possa essere collocata dentro qualcosa." #!String
+    FarmersLunch_Name: "Pranzo del fattore" #!String
+    FarmersLunch_Description: "Ti darà una bella spinta." #!String
+    Fiber_Name: "Fibra" #!String
+    Fiber_Description: "Materia grezza ricavata dalle piante." #!String
+    FiberSeeds_Name: "Semi di fibra" #!String
+    FiberSeeds_Description: "Piantali in qualsiasi stagione. Non serve annaffiarli. Da raccogliere con la falce. Crescono in 7 giorni." #!String
+    FiddleheadFern_Name: "Germoglio di felce" #!String
+    FiddleheadFern_Description: "Questi giovani virgulti sono una specialità commestibile." #!String
+    FiddleheadRisotto_Name: "Risotto di felci" #!String
+    FiddleheadRisotto_Description: "Un piatto di riso cremoso servito con germogli di felce saltati. È un tantino scialbo." #!String
+    FieldSnack_Name: "Spuntino da campo" #!String
+    FieldSnack_Description: "Uno spuntino veloce per placare la fame di chi raccoglie piante selvatiche." #!String
+    FireOpal_Name: "Opale di fuoco" #!String
+    FireOpal_Description: "Una varietà rara di opale, così chiamata per i punti rossi." #!String
+    FireQuartz_Name: "Quarzo di fuoco" #!String
+    FireQuartz_Description: "Un cristallo dal bagliore rosso comunemente trovato vicino alla lava incandescente." #!String
+    FireworksGreen_Name: "Fuochi d'artificio (Verdi)" #!String
+    FireworksGreen_Description: "Una vecchia tradizione per le feste e le celebrazioni. Maneggiare con cautela!" #!String
+    FireworksPurple_Name: "Fuochi d'artificio (Viola)" #!String
+    FireworksPurple_Description: "Una vecchia tradizione per le feste e le celebrazioni. Maneggiare con cautela!" #!String
+    FireworksRed_Name: "Fuochi d'artificio (Rossi)" #!String
+    FireworksRed_Description: "Una vecchia tradizione per le feste e le celebrazioni. Maneggiare con cautela!" #!String
+    FishStew_Name: "Stufato di pesce" #!String
+    FishStew_Description: "Odora parecchio di mare. Il sapore è migliore, però." #!String
+    FishTaco_Name: "Taco di pesce" #!String
+    FishTaco_Description: "Ha un odore delizioso." #!String
+    Flounder_Name: "Platessa" #!String
+    Flounder_Description: "Vive sul fondo quindi entrambi gli occhi sono in cima alla sua testa." #!String
+    Fluorapatite_Name: "Fluorapatite" #!String
+    Fluorapatite_Description: "Se ne trovano piccole quantità nei denti umani." #!String
+    FluteBlock_Name: "Blocco-flauto" #!String
+    FluteBlock_Description: "Emette il suono di un flauto quando ci cammini vicino." #!String
+    FossilizedLeg_Name: "Gamba fossilizzata" #!String
+    FossilizedLeg_Description: "L'osso di una gamba, spesso e resistente." #!String
+    FossilizedRibs_Name: "Costole fossilizzate" #!String
+    FossilizedRibs_Description: "Tempo fa, queste costole proteggevano il corpo di un grosso animale." #!String
+    FossilizedSkull_Name: "Teschio fossilizzato" #!String
+    FossilizedSkull_Description: "Un esemplare perfetto!" #!String
+    FossilizedSpine_Name: "Spina dorsale fossilizzata" #!String
+    FossilizedSpine_Description: "Una colonna di vertebre intrecciate." #!String
+    FossilizedTail_Name: "Coda fossilizzata" #!String
+    FossilizedTail_Description: "La punta di questa coda assomiglia ad una specie di mazza." #!String
+    FossilStone_Name: "Pietra con fossili" #!String
+    FossilStone_Description: "Rompila per ottenere fossili e ossa." #!String
+    FriedCalamari_Name: "Calamari fritti" #!String
+    FriedCalamari_Description: "Da masticare a lungo." #!String
+    FriedEel_Name: "Anguilla fritta" #!String
+    FriedEel_Description: "Grassa ma gustosa." #!String
+    FriedEgg_Name: "Uovo fritto" #!String
+    FriedEgg_Description: "All'occhio di bue." #!String
+    FriedMushroom_Name: "Funghi fritti" #!String
+    FriedMushroom_Description: "Terrigni ed aromatici." #!String
+    FrozenGeode_Name: "Geode ghiacciato" #!String
+    FrozenGeode_Description: "Puoi chiedere a un fabbro di aprirtelo." #!String
+    FrozenGeodeStone_Name: "Pietra con geode ghiacciato" #!String
+    FrozenGeodeStone_Description: "Rompila per ottenere geodi ghiacciati." #!String
+    FrozenTear_Name: "Lacrima ghiacciata" #!String
+    FrozenTear_Description: "Un cristallo che si racconta essere la lacrima ghiacciata di uno yeti." #!String
+    FruitSalad_Name: "Macedonia" #!String
+    FruitSalad_Description: "Una squisita combinazione di frutta estiva." #!String
+    GalaxySoul_Name: "Anima galattica" #!String
+    GalaxySoul_Description: "Forgiane 3 in un'Arma galattica per sprigionare la sua forma finale." #!String
+    Garlic_Name: "Aglio" #!String
+    Garlic_Description: "Dona una magnifica fragranza ai piatti. L'aglio di alta qualità può essere bello piccante." #!String
+    GarlicSeeds_Name: "Semi d'aglio" #!String
+    GarlicSeeds_Description: "Piantali in primavera. Maturano in 4 giorni." #!String
+    Gate_Name: "Cancello" #!String
+    Gate_Description: "Ti permette di attraversare un recinto." #!String
+    Geminite_Name: "Geminite" #!String
+    Geminite_Description: "Si forma in grappoli brillanti." #!String
+    GemStone_Name: "Pietra con gemme" #!String
+    GemStone_Description: "Rompila per ottenere pietre, metalli grezzi o geodi." #!String
+    Geode_Name: "Geode" #!String
+    Geode_Description: "Puoi chiedere a un fabbro di aprirtelo." #!String
+    GeodeStone_Name: "Pietra con geode" #!String
+    GeodeStone_Description: "Rompila per ottenere geodi." #!String
+    GhostCrystal_Name: "Cristallo fantasma" #!String
+    GhostCrystal_Description: "C'è un'aura di freddo intorno a questo cristallo." #!String
+    Ghostfish_Name: "Pesce fantasma" #!String
+    Ghostfish_Description: "Un pesce pallido e cieco, tipico dei laghi sotterranei." #!String
+    Ginger_Name: "Zenzero" #!String
+    Ginger_Description: "Si dice che questa radice forte e piccantina aumenti la vitalità." #!String
+    GingerAle_Name: "Liquore allo zenzero" #!String
+    GingerAle_Description: "Una bevanda piccantina, e un toccasana per gli stomaci irritati." #!String
+    Glacierfish_Name: "Pesce ghiacciaio" #!String
+    Glacierfish_Description: "Fa il nido sotto la base dei ghiacciai." #!String
+    GlacierfishJr_Name: "Pesce ghiacciaio Jr." #!String
+    GlacierfishJr_Description: "Il vecchio Pesce ghiacciaio aveva un figlio..." #!String
+    GlassShards_Name: "Schegge di vetro" #!String
+    GlassShards_Description: "Un misto di schegge di vetro smussate da secoli di risacca oceanica. Forse appartenevano a un antico mosaico o a una collana." #!String
+    GlazedYams_Name: "Patate dolci glassate" #!String
+    GlazedYams_Description: "Dolci ed appaganti... Lo zucchero dona un che di caramello." #!String
+    GlowRing_Name: "Anello luminoso" #!String
+    GlowRing_Description: "Emette una luce constante." #!String
+    GlowstoneRing_Name: "Anello di pietralucente" #!String
+    GlowstoneRing_Description: "Emette una luce costante, e aumenta il raggio di raccolta oggetti." #!String
+    GoatCheese_Name: "Formaggio di capra" #!String
+    GoatCheese_Description: "Morbido formaggio ricavato dal latte di capra." #!String
+    GoatMilk_Name: "Latte di capra" #!String
+    GoatMilk_Description: "Il latte di una capra." #!String
+    Goby_Name: "Ghiozzo" #!String
+    Goby_Description: "Alcuni tipi di ghiozzo possono risalire le cascate." #!String
+    GoldBar_Name: "Lingotto d'oro" #!String
+    GoldBar_Description: "Una barra di oro puro." #!String
+    GoldCoin_Name: "Moneta d'oro" #!String
+    GoldCoin_Description: "Moneta da 1 oro." #!String
+    GoldenAnimalCracker_Name: "Biscotto per animali dorato" #!String
+    GoldenAnimalCracker_Description: "Dallo a un animale della fattoria per raddoppiare permanentemente la sua quantità di prodotto. Non funziona con i maiali." #!String
+    GoldenBobber_Name: "Galleggiante dorato" #!String
+    GoldenBobber_Description: "Willy lo sta cercando." #!String
+    GoldenCoconut_Name: "Noce di cocco dorata" #!String
+    GoldenCoconut_Description: "Questa noce sarà dura da spaccare, ma un professionista potrebbe riuscire ad aprirla." #!String
+    GoldenEgg_Name: "Uovo dorato" #!String
+    GoldenEgg_Description: "Un uovo molto raro e speciale con un guscio d'oro massiccio." #!String
+    GoldenMask_Name: "Maschera d'oro" #!String
+    GoldenMask_Description: "Un'inquietante maschera d'oro probabilmente usata in antichi rituali magici. Nella fronte è incastonata una grossa gemma viola." #!String
+    GoldenMysteryBox_Name: "Scatola misteriosa dorata" #!String
+    GoldenPumpkin_Name: "Zucca dorata" #!String
+    GoldenPumpkin_Description: "Senz'altro scopo che essere di valore." #!String
+    GoldenRelic_Name: "Reliquia d'oro" #!String
+    GoldenRelic_Description: "Una stele dorata coperta di geroglifici e immagini." #!String
+    GoldenWalnut_Name: "Noce dorata" #!String
+    GoldenWalnut_Description: "Per i pappagalli dell'Isola Zenzero, questa noce è una leccornia pregiatissima." #!String
+    GoldOre_Name: "Oro grezzo" #!String
+    GoldOre_Description: "Un minerale prezioso che può essere affinato in lingotti." #!String
+    GoldStone_Name: "Pietra con oro" #!String
+    GoldStone_Description: "Rompila per ottenere oro grezzo." #!String
+    GourmetTomatoSalt_Name: "Sale al pomodoro pregiato" #!String
+    GourmetTomatoSalt_Description: "Un tipo di sale raro, squisito e ricco di sapore." #!String
+    Granite_Name: "Granito" #!String
+    Granite_Description: "Un minerale chiazzato comunemente usato nelle costruzioni." #!String
+    Grape_Name: "Uva" #!String
+    Grape_Description: "Un dolce frutto a grappolo." #!String
+    GrapeStarter_Name: "Avvia-uva" #!String
+    GrapeStarter_Description: "Piantalo in autunno. Cresce in 10 giorni, ma produce anche dopo. Cresce su un graticcio." #!String
+    GrassBook_Name: "Il vecchio Svicolone" #!String
+    GrassBook_Description: "Ora correrai molto più velocemente tra l'erba e le colture." #!String
+    GrassStarter_Name: "Avvia-erba" #!String
+    GrassStarter_Description: "Piazzalo nella fattoria per dare il via ad una nuova zolla di erba." #!String
+    GravelPath_Name: "Sentiero di ghiaia" #!String
+    GravelPath_Description: "Piazzalo per terra per creare sentieri o per abbellire i pavimenti." #!String
+    GreenAlgae_Name: "Alghetta verde" #!String
+    GreenAlgae_Description: "È davvero viscida." #!String
+    GreenBean_Name: "Fagiolo verde" #!String
+    GreenBean_Description: "Un piccolo fagiolo succoso con un baccello fresco e croccante." #!String
+    GreenRainWeeds_Name: "Erbacce della pioggia verde" #!String
+    GreenRainWeeds_Description: "Potrebbero contenere fibre o semi misti." #!String
+    GreenSlimeEgg_Name: "Uovo di melma verde" #!String
+    GreenSlimeEgg_Description: "Si può covare in un'incubatrice per melme." #!String
+    GreenTea_Name: "Tè verde" #!String
+    GreenTea_Description: "Una bevanda gradevole ed energizzante, ottenuta con una leggera lavorazione delle foglie di tè." #!String
+    HaleysLostBracelet_Name: "Braccialetto perduto di Haley" #!String
+    HaleysLostBracelet_Description: "Un cimelio di famiglia." #!String
+    Halibut_Name: "Ippoglosso" #!String
+    Halibut_Description: "Un pesce piatto che vive sul fondale oceanico." #!String
+    Hardwood_Name: "Legno duro" #!String
+    Hardwood_Description: "Un tipo speciale di legno con forza e bellezza superiori." #!String
+    HardwoodFence_Name: "Recinto di legno duro" #!String
+    HardwoodFence_Description: "Il tipo di recinto più durevole." #!String
+    Hashbrowns_Name: "Hashbrowns" #!String
+    Hashbrowns_Description: "Croccanti e dalla doratura scura!" #!String
+    Hay_Name: "Fieno" #!String
+    Hay_Description: "Erba secca usata come mangime." #!String
+    Hazelnut_Name: "Nocciola" #!String
+    Hazelnut_Description: "Alla faccia della nocciola!" #!String
+    Hedge_Name: "Siepe" #!String
+    Hedge_Description: "Un cespuglio potato che funge da recinto." #!String
+    Helvite_Name: "Helvite" #!String
+    Helvite_Description: "Cresce in colonne triangolari." #!String
+    Hematite_Name: "Ematite" #!String
+    Hematite_Description: "Un minerale ferroso dalle interessanti proprietà magnetiche." #!String
+    Herring_Name: "Aringa" #!String
+    Herring_Description: "Un comune pesce oceanico." #!String
+    Holly_Name: "Agrifoglio" #!String
+    Holly_Description: "Le foglie e il rosso acceso delle bacche sono una diffusa decorazione invernale." #!String
+    Honey_Name: "Miele" #!String
+    Honey_Description: "Un dolce sciroppo prodotto dalle api." #!String
+    Honey_Flavored_Name: "Miele di {0}" #!String
+    Honey_Wild_Name: "Miele millefiori" #!String
+    Hops_Name: "Luppolo" #!String
+    Hops_Description: "Un fiore amaro e pungente, usato per aromatizzare la birra." #!String
+    HopsStarter_Name: "Avvia-luppolo" #!String
+    HopsStarter_Description: "Piantalo in estate. Cresce in 11 giorni, ma produce anche dopo. Cresce su un graticcio." #!String
+    HorseFlute_Name: "Flauto equino" #!String
+    HorseFlute_Description: "Suonare questo flauto richiamerà il tuo cavallo. Funziona solo all'aperto." #!String
+    HotJavaRing_Name: "Anello Moka-rovente" #!String
+    HotJavaRing_Description: "Aumenta di molto le probabilità di trovare dei caffè uccidendo mostri." #!String
+    HotPepper_Name: "Peperoncino" #!String
+    HotPepper_Description: "Ardentemente piccante con un tocco di dolce." #!String
+    HyperSpeedGro_Name: "Iper-Crescipresto" #!String
+    HyperSpeedGro_Description: "Stimola di molto la produzione di foglie. Garantisce una frequenza di crescita incrementata almeno del 33%. Mescolalo al terreno dissodato." #!String
+    IceCream_Name: "Gelato" #!String
+    IceCream_Description: "Difficile trovare qualcuno a cui non piaccia." #!String
+    IceCrystal_Name: "Cristallo di ghiaccio" #!String
+    IceCrystal_Description: "Potrebbe contenere quarzo raffinato." #!String
+    IcePip_Name: "Ghiacciolo" #!String
+    IcePip_Description: "Un pesce raro abituato ad acque estremamente fredde." #!String
+    ImmunityBand_Name: "Fascia dell'immunità" #!String
+    ImmunityBand_Description: "La parte superiore dell'anello è fatta di lana viola incantata." #!String
+    IridiumBand_Name: "Fascia d'iridio" #!String
+    IridiumBand_Description: "Brilla, attrae oggetti, e aumenta il danno degli attacchi del 10%." #!String
+    IridiumBar_Name: "Lingotto d'iridio" #!String
+    IridiumBar_Description: "Una barra d'iridio puro." #!String
+    IridiumMilk_Name: "Latte d'iridio" #!String
+    IridiumMilk_Description: "Un 'latte' potente di origine ignota..." #!String
+    IridiumOre_Name: "Iridio grezzo" #!String
+    IridiumOre_Description: "Un minerale esotico pieno di proprietà curiose. Può essere affinato in lingotti." #!String
+    IridiumSprinkler_Name: "Irrigatore d'iridio" #!String
+    IridiumSprinkler_Description: "Annaffia i 24 tasselli adiacenti ogni mattina." #!String
+    IridiumStone_Name: "Pietra con iridio" #!String
+    IridiumStone_Description: "Rompila per ottenere iridio grezzo." #!String
+    IronBar_Name: "Lingotto di ferro" #!String
+    IronBar_Description: "Una barra di ferro puro." #!String
+    IronFence_Name: "Recinto di ferro" #!String
+    IronFence_Description: "Più durevole di un recinto di pietra." #!String
+    IronOre_Name: "Ferro grezzo" #!String
+    IronOre_Description: "Un minerale piuttosto comune che può essere affinato in lingotti." #!String
+    IronStone_Name: "Pietra con ferro" #!String
+    IronStone_Description: "Rompila per ottenere ferro grezzo." #!String
+    JackOLantern_Name: "Zucca-lanterna" #!String
+    JackOLantern_Description: "Una stravagante decorazione autunnale." #!String
+    Jade_Name: "Giada" #!String
+    Jade_Description: "Una pietra ornamentale verde pallido." #!String
+    JadeRing_Name: "Anello di giada" #!String
+    JadeRing_Description: "Aumenta il potere dei colpi critici del 10%." #!String
+    JadeStone_Name: "Pietra con giada" #!String
+    JadeStone_Description: "Rompila per ottenere giada." #!String
+    Jagoite_Name: "Jagoite" #!String
+    Jagoite_Description: "Un alto volume di minuscoli cristalli la rende molto luccicante." #!String
+    Jamborite_Name: "Jamborite" #!String
+    Jamborite_Description: "I cristalli sono ammassati così fittamente da sembrare quasi un peluria." #!String
+    Jasper_Name: "Diaspro" #!String
+    Jasper_Description: "Quando è lucidata, questa pietra diventa attivamente luminosa. Apprezzata dai popoli antichi per migliaia di anni." #!String
+    JazzSeeds_Name: "Semi di jazz" #!String
+    JazzSeeds_Description: "Piantali in primavera. In 7 giorni producono un fiore sferico blu." #!String
+    Jelly_Name: "Gelatina" #!String
+    Jelly_Description: "Appiccicosa." #!String
+    Jelly_Flavored_Name: "Gelatina di {0}" #!String
+    JojaCola_Name: "Joja Cola" #!String
+    JojaCola_Description: "Il prodotto di spicco della corporazione Joja." #!String
+    JournalScrap_Name: "Frammento di diario" #!String
+    JournalScrap_Description: "Una pagina umida e consunta, strappata da un vecchio diario..." #!String
+    Juice_Name: "Succo" #!String
+    Juice_Description: "Una bevanda dolce e nutriente." #!String
+    Juice_Flavored_Name: "Succo di {0}" #!String
+    JukeboxRing_Name: "Anello jukebox" #!String
+    JukeboxRing_Description: "Suona un assortimento casuale di musiche che hai sentito." #!String
+    Kale_Name: "Cavolo verde" #!String
+    Kale_Description: "Le foglie lucenti sono ottime per le zuppe e saltate in padella." #!String
+    KaleSeeds_Name: "Semi di cavolo verde" #!String
+    KaleSeeds_Description: "Piantali in primavera. Maturano in 6 giorni. Da raccogliere con la falce." #!String
+    Kyanite_Name: "Cianite" #!String
+    Kyanite_Description: "Le facce geometriche sono lisce come vetro." #!String
+    LargeBrownEgg_Name: "Uovo grande" #!String
+    LargeBrownEgg_Description: "Un uovo marrone insolitamente grande!" #!String
+    LargeMilk_Name: "Latte grande" #!String
+    LargeMilk_Description: "Un grosso bricco di latte di mucca." #!String
+    LargemouthBass_Name: "Boccalone" #!String
+    LargemouthBass_Description: "Un pesce popolare che vive nei laghi." #!String
+    LargeWhiteEgg_Name: "Uovo grande" #!String
+    LargeWhiteEgg_Description: "Un uovo bianco insolitamente grande!" #!String
+    LavaEel_Name: "Anguilla lavica" #!String
+    LavaEel_Description: "Non si sa come, ma può sopravvivere in pozze di lava incandescente." #!String
+    LeadBobber_Name: "Galleggiante di piombo" #!String
+    LeadBobber_Description: "Appesantisce la \"barra della pesca\", impedendole di rimbalzare sul fondo." #!String
+    Leek_Name: "Porro" #!String
+    Leek_Description: "Saporito parente della cipolla." #!String
+    Legend_Name: "Leggenda" #!String
+    Legend_Description: "Il re di tutti i pesci! Dicevano che non si sarebbe mai fatto prendere." #!String
+    LegendII_Name: "Leggenda II" #!String
+    LegendII_Description: "Il successore dell'originale Leggenda." #!String
+    LemonStone_Name: "Pietra limone" #!String
+    LemonStone_Description: "C'è chi dice che il cristallo in polvere sia una delicatezza nanica." #!String
+    LGoatMilk_Name: "Latte di capra gr." #!String
+    LGoatMilk_Description: "Un gallone di cremoso latte di capra." #!String
+    LifeElixir_Name: "Elisir vitale" #!String
+    LifeElixir_Description: "Ripristina tutta la salute." #!String
+    Limestone_Name: "Calcare" #!String
+    Limestone_Description: "Un tipo di pietra molto comune. Non vale molto." #!String
+    Lingcod_Name: "Ofiodonte" #!String
+    Lingcod_Description: "Un predatore temuto, mangia quasi tutto quello che può entrargli in bocca." #!String
+    Lionfish_Name: "Pesce scorpione" #!String
+    Lionfish_Description: "Un pesce predatore, molto aggressivo e dotato di spine velenose." #!String
+    Lobster_Name: "Aragosta" #!String
+    Lobster_Description: "Un grosso crostaceo oceanico dalla coda possente." #!String
+    LobsterBisque_Name: "Zuppa d'aragosta" #!String
+    LobsterBisque_Description: "Questa zuppa delicata è una ricetta segreta della famiglia di Willy." #!String
+    LostAxe_Name: "Ascia smarrita" #!String
+    LostAxe_Description: "Robin la sta cercando dappertutto." #!String
+    LostBook_Name: "Libro perduto" #!String
+    LostBook_Description: "Scritti provenienti da epoche disparate." #!String
+    LuckyLunch_Name: "Pranzo fortunato" #!String
+    LuckyLunch_Description: "Un piccolo pasto speciale." #!String
+    LuckyPurpleShorts_Name: "Braghe viola portafortuna" #!String
+    LuckyPurpleShorts_Description: "Meglio non ispezionarle troppo da vicino." #!String
+    LuckyRing_Name: "Anello portafortuna" #!String
+    LuckyRing_Description: "Si dice che l'emblema lunare porti buona fortuna a chiunque lo indossi." #!String
+    Lumber_Name: "Legname" #!String
+    Lumber_Description: "Una risorsa versatile usata nelle costruzioni e come carburante." #!String
+    Lunarite_Name: "Lunarite" #!String
+    Lunarite_Description: "I globi bianchi craterizzati formano un denso grappolo." #!String
+    MagicBait_Name: "Esca magica" #!String
+    MagicBait_Description: "Permette di prendere pesci di ogni stagione, ora e condizione metereologica, e da qualsiai tipo di acqua." #!String
+    MagicRockCandy_Name: "Zucchero pietrificato magico" #!String
+    MagicRockCandy_Description: "Un dolciume raro e potente, infuso dell'essenza della scheggia prismatica." #!String
+    MagmaCap_Name: "Porcino magmatico" #!String
+    MagmaCap_Description: "Un fungo molto raro che cresce accanto alle pozze di lava." #!String
+    MagmaGeode_Name: "Geode di magma" #!String
+    MagmaGeode_Description: "Puoi chiedere a un fabbro di aprirtelo." #!String
+    MagmaGeodeStone_Name: "Pietra con geode di magma" #!String
+    MagmaGeodeStone_Description: "Rompila per ottenere geodi di magma." #!String
+    Magnet_Name: "Calamita" #!String
+    Magnet_Description: "Aumenta le possibilità di trovare tesori mentre peschi. Ma il sapore non fa impazzire i pesci." #!String
+    MagnetRing_Name: "Anello magnetico" #!String
+    MagnetRing_Description: "Aumenta il tuo raggio di raccolta oggetti." #!String
+    MahoganySeed_Name: "Seme di mogano" #!String
+    MahoganySeed_Description: "Si può piantare per far crescere un albero di mogano." #!String
+    MakiRoll_Name: "Rotolo di maki" #!String
+    MakiRoll_Description: "Riso e pesce avvolti in un'alga." #!String
+    Malachite_Name: "Malachite" #!String
+    Malachite_Description: "Una famosa pietra ornamentale, usata per le sculture e per fare vernice verde." #!String
+    Mango_Name: "Mango" #!String
+    Mango_Description: "Un grosso frutto tropicale dolce, dal sapore unico." #!String
+    MangoSapling_Name: "Giovane mango" #!String
+    MangoSapling_Description: "In 28 giorni produce un albero di mango adulto. Dà frutti in estate, o per tutto l'anno se piantato sull'Isola Zenzero." #!String
+    MangoStickyRice_Name: "Riso colloso al mango" #!String
+    MangoStickyRice_Description: "Il dolce mango e la noce di cocco trasformano questo riso in un piatto davvero speciale." #!String
+    MapleBar_Name: "Barretta d'acero" #!String
+    MapleBar_Description: "Una ciambellina dolce coperta di gustosa glassa d'acero." #!String
+    MapleSeed_Name: "Seme di acero" #!String
+    MapleSeed_Description: "Si può piantare per far crescere un acero." #!String
+    MapleSyrup_Name: "Sciroppo d'acero" #!String
+    MapleSyrup_Description: "Un dolce sciroppo dal sapore unico." #!String
+    Marble_Name: "Marmo" #!String
+    Marble_Description: "Un materiale molto popolare per sculture e costruzioni." #!String
+    Mayonnaise_Name: "Maionese" #!String
+    Mayonnaise_Description: "Sembra spalmabile." #!String
+    Mead_Name: "Idromele" #!String
+    Mead_Description: "Una bevanda fermentata dal miele. Bevi con moderazione." #!String
+    MegaBomb_Name: "Megabomba" #!String
+    MegaBomb_Description: "Genera una potente esplosione. Da usare con estrema cautela." #!String
+    Melon_Name: "Melone" #!String
+    Melon_Description: "Un frutto estivo fresco e dolce." #!String
+    MelonSeeds_Name: "Semi di melone" #!String
+    MelonSeeds_Description: "Piantali in estate. Maturano in 12 giorni." #!String
+    MermaidsPendant_Name: "Ciondolo sirenesco" #!String
+    MermaidsPendant_Description: "Donalo alla persona che vuoi sposare." #!String
+    MidnightCarp_Name: "Carpa di mezzanotte" #!String
+    MidnightCarp_Description: "Questo pesce timido si sente a suo agio solo di notte." #!String
+    MidnightSquid_Name: "Calamaro di mezzanotte" #!String
+    MidnightSquid_Description: "Un abitante strano e misterioso delle crepuscolari profondità oceaniche." #!String
+    Milk_Name: "Latte" #!String
+    Milk_Description: "Un bricco di latte di mucca." #!String
+    MinersTreat_Name: "Gioia del minatore" #!String
+    MinersTreat_Description: "Dovrebbe tenerti su di energie." #!String
+    MixedFlowerSeeds_Name: "Semi di fiori misti" #!String
+    MixedFlowerSeeds_Description: "Un assortimento di semi di fiori. Piantali e vedi cosa cresce!" #!String
+    MixedSeeds_Name: "Semi misti" #!String
+    MixedSeeds_Description: "C'è un po' di tutto qui dentro. Piantali e vedi cosa cresce!" #!String
+    MonsterMusk_Name: "Fragranza di mostro" #!String
+    MonsterMusk_Description: "Spruzzatela addosso per far uscire più mostri dai loro nascondigli." #!String
+    Morel_Name: "Spugnola" #!String
+    Morel_Description: "Ricercata per il suo peculiare sapore di noce." #!String
+    Moss_Name: "Muschio" #!String
+    Moss_Description: "Un tipo speciale di pianta che cresce nelle zone in ombra." #!String
+    MossSoup_Name: "Zuppa di muschio" #!String
+    MossSoup_Description: "È densa e viscida, ma commestibile." #!String
+    MossySeed_Name: "Seme muschioso" #!String
+    MossySeed_Description: "Piantalo per far crescere alberi selvatici rari." #!String
+    MovieTicket_Name: "Biglietto del cinema" #!String
+    MovieTicket_Description: "Permette di entrare a vedere un film. Dandolo ad un amico, lo inviterai a venire al cinema con te." #!String
+    MsAngler_Name: "Sig.ra Rana pescatrice" #!String
+    MsAngler_Description: "Usa un'appendice bioluminescente per attrarre le prede." #!String
+    Mudstone_Name: "Fango indurito" #!String
+    Mudstone_Description: "Una roccia di grana sottile formatasi da creta o fango antichi." #!String
+    MummifiedBat_Name: "Pipistrello mummificato" #!String
+    MummifiedBat_Description: "Le ali delicate si sono conservate alla perfezione." #!String
+    MummifiedFrog_Name: "Rana mummificata" #!String
+    MummifiedFrog_Description: "Quest'antica rana potrebbe essere vissuta tra le chiome della giungla." #!String
+    MuscleRemedy_Name: "Rimedio per i muscoli" #!String
+    MuscleRemedy_Description: "Quando hai spinto il tuo corpo oltre il limite, bevi questo per rimuovere la 'Spossatezza'." #!String
+    MushroomTreeSeed_Name: "Seme di albero fungino" #!String
+    MushroomTreeSeed_Description: "Piantalo nella fattoria per ottenere un albero fungino." #!String
+    Mussel_Name: "Cozza" #!String
+    Mussel_Description: "Un comune mollusco bivalve che vive spesso in gruppi." #!String
+    MusselStone_Name: "Pietra con cozze" #!String
+    MusselStone_Description: "Ci sono delle cozze su questa pietra." #!String
+    MutantCarp_Name: "Carpa mutante" #!String
+    MutantCarp_Description: "Le strane acque delle fogne hanno mutato questa carpa in una mostruosità." #!String
+    MysteryBox_Name: "Scatola misteriosa" #!String
+    MysteryBox_Description: "Puoi chiedere a un fabbro di aprirtela. Chissà cosa contiene?" #!String
+    MysticStone_Name: "Pietra mistica" #!String
+    MysticStone_Description: "Rompila per ottenere pietre, metalli grezzi o geodi." #!String
+    MysticSyrup_Name: "Sciroppo mistico" #!String
+    MysticSyrup_Description: "Uno sciroppo rarissimo che secondo alcuni ha proprietà magiche." #!String
+    MysticTreeSeed_Name: "Seme dell'albero mistico" #!String
+    MysticTreeSeed_Description: "Piantalo per far crescere un albero speciale." #!String
+    NapalmRing_Name: "Anello al napalm" #!String
+    NapalmRing_Description: "Quando sconfiggi un nemico, quello esplode." #!String
+    NautilusFossil_Name: "Fossile di nautilo" #!String
+    NautilusFossil_Description: "Dev'essere giunto a riva in ere passate da un'antica barriera corallina. " #!String
+    NautilusShell_Name: "Conchiglia di nautilo" #!String
+    NautilusShell_Description: "Una conchiglia antica." #!String
+    Nekoite_Name: "Nekoite" #!String
+    Nekoite_Description: "Le schegge delicate formano un minuscolo praticello rosa." #!String
+    Neptunite_Name: "Neptunite" #!String
+    Neptunite_Description: "Un cristallo nero lucente insolitamente riflettente." #!String
+    OakResin_Name: "Resina di quercia" #!String
+    OakResin_Description: "Una sostanza profumata e appiccicosa derivata dalla linfa della quercia." #!String
+    Obsidian_Name: "Ossidiana" #!String
+    Obsidian_Description: "Un vetro vulcanico che si forma quando la lava si raffredda in fretta." #!String
+    OceanStone_Name: "Pietra oceanica" #!String
+    OceanStone_Description: "Secondo una vecchia leggenda queste pietre sono i mosaici di antiche sirene." #!String
+    Octopus_Name: "Piovra" #!String
+    Octopus_Description: "Una creatura misteriosa e intelligente." #!String
+    Oil_Name: "Olio" #!String
+    Oil_Description: "Olio da cucina multiuso." #!String
+    OilofGarlic_Name: "Olio d'aglio" #!String
+    OilofGarlic_Description: "Bevilo e i mostri più deboli ti eviteranno." #!String
+    Omelet_Name: "Omelette" #!String
+    Omelet_Description: "Super soffice." #!String
+    OmniGeode_Name: "Omni-Geode" #!String
+    OmniGeode_Description: "Puoi chiedere a un fabbro di aprirtelo. Questi geodi contengono un'ampia gamma di minerali." #!String
+    OmniGeodeStone_Name: "Pietra con omni-geode" #!String
+    OmniGeodeStone_Description: "Rompila per ottenere omni-geodi." #!String
+    Opal_Name: "Opale" #!String
+    Opal_Description: "La sua struttura interna fa sì che rifletta un arcobaleno di luce." #!String
+    Orange_Name: "Arancia" #!String
+    Orange_Description: "Succosa, asprigna, e carica di un dolce aroma estivo." #!String
+    OrangeSapling_Name: "Giovane arancio" #!String
+    OrangeSapling_Description: "In 28 giorni produce un arancio adulto. Dà frutti in estate. Cresce soltanto se gli 8 \"tasselli\" intorno ad esso sono vuoti." #!String
+    OrnamentalFan_Name: "Ventaglio ornamentale" #!String
+    OrnamentalFan_Description: "Questo raffinato ventaglio apparteneva senz'altro a una nobildonna. Gli storici credono che la valle fosse un luogo di vacanza in voga fra i ricconi della sesta era." #!String
+    OrnateNecklace_Name: "Collana ornata" #!String
+    OrnateNecklace_Description: "Una collana elegante trovata nell'acqua all'esterno delle terme. È ancora bagnata..." #!String
+    Orpiment_Name: "Orpimento" #!String
+    Orpiment_Description: "Nonostante l'alta tossicità, questo minerale è largamente usato nella medicina popolare e industriale." #!String
+    OstrichEgg_Name: "Uovo di struzzo" #!String
+    OstrichEgg_Description: "Potrebbe essere l'uovo più grande del mondo." #!String
+    Oyster_Name: "Ostrica" #!String
+    Oyster_Description: "Filtra costantemente l'acqua in cerca di cibo. Così facendo, rimuove tossine pericolose dall'ambiente." #!String
+    PaleAle_Name: "Malto chiaro" #!String
+    PaleAle_Description: "Bevi con moderazione." #!String
+    PaleBroth_Name: "Brodo pallido" #!String
+    PaleBroth_Description: "Un brodo delicato con una punta di zolfo." #!String
+    PalmFossil_Name: "Fossile di palma" #!String
+    PalmFossil_Description: "Sono fossili relativamente comuni, ma si dà il caso che quest'esemplare si sia conservato particolarmente bene." #!String
+    Pancakes_Name: "Frittelle" #!String
+    Pancakes_Description: "Una coppia di frittelle soffici e vaporose." #!String
+    Parsnip_Name: "Pastinaca" #!String
+    Parsnip_Description: "Un tubero primaverile imparentato con la carota. Ha un sapore terrigno ed è pieno di nutrienti." #!String
+    ParsnipSeeds_Name: "Semi di pastinaca" #!String
+    ParsnipSeeds_Description: "Piantali in primavera. Maturano in 4 giorni." #!String
+    ParsnipSoup_Name: "Zuppa di pastinache" #!String
+    ParsnipSoup_Description: "Fresca ed energetica." #!String
+    Peach_Name: "Pesca" #!String
+    Peach_Description: "È quasi pelosa al tocco." #!String
+    PeachSapling_Name: "Giovane pesco" #!String
+    PeachSapling_Description: "In 28 giorni produce un pesco adulto. Dà frutti in estate. Cresce soltanto se gli 8 \"tasselli\" intorno ad esso sono vuoti." #!String
+    Pearl_Name: "Perla" #!String
+    Pearl_Description: "Un raro tesoro del mare." #!String
+    PepperPoppers_Name: "Stapparoncini" #!String
+    PepperPoppers_Description: "Peperoncini impanati ripieni di formaggio." #!String
+    PepperSeeds_Name: "Semi di peperoncino" #!String
+    PepperSeeds_Description: "Piantali in estate. Maturano in 5 giorni, e continuano a produrre dopo il primo raccolto." #!String
+    Perch_Name: "Pesce persico" #!String
+    Perch_Description: "Un pesce d'acqua dolce invernale." #!String
+    Periwinkle_Name: "Lumachina" #!String
+    Periwinkle_Description: "Una minuscola lumaca d'acqua dolce che vive in un guscio blu." #!String
+    PetLicense_Name: "Patentino per animali domestici" #!String
+    PetLicense_Description: "Invita un nuovo animale domestico in casa tua. Se non hai abbastanza ciotole all'esterno, i tuoi animali domestici non saranno contenti." #!String
+    PetrifiedSlime_Name: "Melma pietrificata" #!String
+    PetrifiedSlime_Description: "Questo tipetto potrebbe avere 100.000 anni." #!String
+    PhoenixRing_Name: "Anello della fenice" #!String
+    PhoenixRing_Description: "Riacquisti un po' di salute dopo aver perso i sensi in combattimento, ma solo una volta al giorno." #!String
+    Pickles_Name: "Sottaceti" #!String
+    Pickles_Description: "Un barattolo dei tuoi sottaceti fatti in casa." #!String
+    Pickles_Flavored_Name: "{0} Sottaceto" #!String
+    PierresMissingStocklist_Name: "Elenco degli articoli smarrito da Pierre" #!String
+    PierresMissingStocklist_Description: "Questo potrebbe interessare a Pierre." #!String
+    Pike_Name: "Luccio" #!String
+    Pike_Description: "Un pesce d'acqua dolce difficile da pescare." #!String
+    PinaColada_Name: "Piña Colada" #!String
+    PinaColada_Description: "Bevi con moderazione." #!String
+    Pineapple_Name: "Ananas" #!String
+    Pineapple_Description: "Una delizia tropicale dolce e un po' asprigna." #!String
+    PineappleSeeds_Name: "Semi di ananas" #!String
+    PineappleSeeds_Description: "Piantali in climi caldi. Maturano in 14 giorni, e continuano a produrre dopo il primo raccolto." #!String
+    PineCone_Name: "Pigna" #!String
+    PineCone_Description: "Si può piantare per far crescere un pino." #!String
+    PineTar_Name: "Catrame di pino" #!String
+    PineTar_Description: "Una sostanza pungente derivata dalla linfa del pino." #!String
+    PinkCake_Name: "Torta rosa" #!String
+    PinkCake_Description: "Ha delle caramelline a forma di cuore in cima." #!String
+    PiratesLocket_Name: "Medaglione del pirata" #!String
+    PiratesLocket_Description: "Il vecchio cimelio di un pirata." #!String
+    Pizza_Name: "Pizza" #!String
+    Pizza_Description: "Popolare per tutte le ragioni giuste." #!String
+    PlumPudding_Name: "Budino di prugne" #!String
+    PlumPudding_Description: "Un dolce tradizionale delle vacanze." #!String
+    Poi_Name: "Poi" #!String
+    Poi_Description: "Un cibo tradizionale con un gusto dolce e delicato se mangiato fresco." #!String
+    Pomegranate_Name: "Melagrana" #!String
+    Pomegranate_Description: "Il frutto contiene grappoli di semi succosi." #!String
+    PomegranateSapling_Name: "Giovane melograno" #!String
+    PomegranateSapling_Description: "In 28 giorni produce un melograno adulto. Dà frutti in autunno. Cresce soltanto se gli 8 \"tasselli\" intorno ad esso sono vuoti." #!String
+    Poppy_Name: "Papavero" #!String
+    Poppy_Description: "In aggiunta al suo fiore colorato, il papavero ha vari usi culinari e medicinali." #!String
+    PoppyseedMuffin_Name: "Muffin ai semi di papavero" #!String
+    PoppyseedMuffin_Description: "Ha un effetto calmante." #!String
+    PoppySeeds_Name: "Semi di papavero" #!String
+    PoppySeeds_Description: "Piantali in estate. In 7 giorni producono un fiore rosso acceso." #!String
+    Potato_Name: "Patata" #!String
+    Potato_Description: "Un tubero molto diffuso." #!String
+    PotatoSeeds_Name: "Semi di patata" #!String
+    PotatoSeeds_Description: "Piantali in primavera. Maturano in 6 giorni, ed è possibile che forniscano patate multiple al momento del raccolto." #!String
+    Powdermelon_Name: "Melone incipriato" #!String
+    Powdermelon_Description: "Il nome deriva dal rivestimento polveroso che si forma sulla superficie. Questo melone è dolce e croccante, e ha un sapore delicato." #!String
+    PowdermelonSeeds_Name: "Semi di melone incipriato" #!String
+    PowdermelonSeeds_Description: "Questo melone speciale cresce d'inverno. Matura in 7 giorni." #!String
+    PrehistoricHandaxe_Name: "Accetta preistorica" #!String
+    PrehistoricHandaxe_Description: "Uno dei primi attrezzi utilizzati dall'uomo. Questo \"rozzo\" strumento fu creato sbattendo insieme due pietre per formare un taglio affilato." #!String
+    PrehistoricRib_Name: "Costola preistorica" #!String
+    PrehistoricRib_Description: "Piccole scalanature sul lato suggeriscono che questa costola sia stata la cena di qualcuno." #!String
+    PrehistoricScapula_Name: "Omoplata preistorica" #!String
+    PrehistoricScapula_Description: "Comunemente nota come \"scapola\"... Non è chiaro a che specie sia appartenuta." #!String
+    PrehistoricSkull_Name: "Teschio preistorico" #!String
+    PrehistoricSkull_Description: "Questo è decisamente il teschio di un mammifero." #!String
+    PrehistoricTibia_Name: "Tibia preistorica" #!String
+    PrehistoricTibia_Description: "L'osso spesso e robusto di una gamba." #!String
+    PrehistoricTool_Name: "Attrezzo preistorico" #!String
+    PrehistoricTool_Description: "Una specie di contorto strumento per scavare." #!String
+    PrehistoricVertebra_Name: "Vertebra preistorica" #!String
+    PrehistoricVertebra_Description: "Un segmento della spina dorsale di qualche creatura preistorica." #!String
+    PressureNozzle_Name: "Bocchetta ad alta pressione" #!String
+    PressureNozzle_Description: "Mettila su un irrigatore per aumentare il raggio del suo getto." #!String
+    PrismaticJelly_Name: "Gelatina prismatica" #!String
+    PrismaticJelly_Description: "Raccolta dalla rara ed elusiva melma prismatica." #!String
+    PrismaticShard_Name: "Scheggia prismatica" #!String
+    PrismaticShard_Description: "Una sostanza molto rara e potente dall'origine ignota." #!String
+    PrizeTicket_Name: "Biglietto per un premio" #!String
+    PrizeTicket_Description: "Portalo alla macchina dei premi in casa di Lewis per una ricompensa speciale." #!String
+    ProtectionRing_Name: "Anello protettivo" #!String
+    ProtectionRing_Description: "Resti invulnerabile un poco più a lungo dopo aver subito danni." #!String
+    Pufferfish_Name: "Pesce palla" #!String
+    Pufferfish_Description: "Si gonfia se minacciato." #!String
+    Pumpkin_Name: "Zucca" #!String
+    Pumpkin_Description: "Un classico autunnale, coltivato per i semi croccanti e per la polpa delicata. In aggiunta, il guscio vuoto si può intagliare per farne una decorazione per le feste." #!String
+    PumpkinPie_Name: "Crostata di zucca" #!String
+    PumpkinPie_Description: "Crema di zucca vellutata in una crosta a strati." #!String
+    PumpkinSeeds_Name: "Semi di zucca" #!String
+    PumpkinSeeds_Description: "Piantali in autunno. Maturano in 13 giorni." #!String
+    PumpkinSoup_Name: "Zuppa di zucca" #!String
+    PumpkinSoup_Description: "Un classico di stagione." #!String
+    PurpleBook_Name: "Libro degli astri" #!String
+    PurpleBook_Description: "Leggilo per ottenere esperienza in tutte le abilità." #!String
+    PurpleMushroom_Name: "Fungo viola" #!String
+    PurpleMushroom_Description: "Un fungo raro che si trova nelle profondità delle caverne." #!String
+    PurpleSlimeEgg_Name: "Uovo di melma viola" #!String
+    PurpleSlimeEgg_Description: "Si può covare in un'incubatrice per melme." #!String
+    Pyrite_Name: "Pirite" #!String
+    Pyrite_Description: "Comunemente nota come \"oro degli stolti\"." #!String
+    QiBean_Name: "Fagiolo Qi" #!String
+    QiBean_Description: "Piantalo in qualsiasi stagione. Annaffialo ogni giorno per ottenere un Frutto Qi. Maturano in 4 giorni." #!String
+    QiFruit_Name: "Frutto Qi" #!String
+    QiFruit_Description: "Mr. Qi ti ha sfidato a spedire 500 di questi strani meloni." #!String
+    QiGem_Name: "Gemma Qi" #!String
+    QiGem_Description: "Una valuta speciale stimata da Mr. Qi." #!String
+    QiSeasoning_Name: "Condimento Qi" #!String
+    QiSeasoning_Description: "Appena una spolverata eleverà qualsiasi pietanza alle vette più straordinarie. Applicato automaticamente quando cucini." #!String
+    QualityBobber_Name: "Galleggiante di qualità" #!String
+    QualityBobber_Description: "Migliora la qualità dei pesci presi." #!String
+    QualityFertilizer_Name: "Fertilizzante di qualità" #!String
+    QualityFertilizer_Description: "Migliora la qualità del suolo, aumentando le probabilità che crescano colture di qualità. Mescolalo al terreno dissodato." #!String
+    QualityRetainingSoil_Name: "Terriccio ratt. di qualità" #!String
+    QualityRetainingSoil_Description: "Questo terriccio ha buone chance di trattenere l'acqua nel corso della notte. Mescolalo al terreno dissodato." #!String
+    QualitySprinkler_Name: "Irrigatore di qualità" #!String
+    QualitySprinkler_Description: "Annaffia gli 8 tasselli adiacenti ogni mattina." #!String
+    Quartz_Name: "Quarzo" #!String
+    Quartz_Description: "Un cristallo chiaro comunemente trovato in caverne e miniere." #!String
+    RabbitsFoot_Name: "Zampa di coniglio" #!String
+    RabbitsFoot_Description: "Dicono che porti fortuna." #!String
+    RadioactiveBar_Name: "Lingotto radioattivo" #!String
+    RadioactiveBar_Description: "Tristemente noto alla Commissione per la Sicurezza di Zuzu City per i danni irreversibili che causa al corpo." #!String
+    RadioactiveCarp_Name: "Carpa radioattiva" #!String
+    RadioactiveCarp_Description: "Una carpa che ha passato un anno di troppo nella melma tossica." #!String
+    RadioactiveOre_Name: "Minerale radioattivo grezzo" #!String
+    RadioactiveOre_Description: "Riluce di un'energia pericolosa... Può essere affinato in lingotti." #!String
+    RadioactiveStone_Name: "Pietra radioattiva" #!String
+    RadioactiveStone_Description: "Contiene minerali radioattivi." #!String
+    Radish_Name: "Ravanello" #!String
+    Radish_Description: "Una radice fresca e croccante, leggermente piccante se mangiata cruda." #!String
+    RadishSalad_Name: "Insalata di ravanelli" #!String
+    RadishSalad_Description: "I ravanelli sono così croccanti!" #!String
+    RadishSeeds_Name: "Semi di ravanello" #!String
+    RadishSeeds_Description: "Piantali in estate. Maturano in 6 giorni." #!String
+    RainbowShell_Name: "Conchiglia arcobaleno" #!String
+    RainbowShell_Description: "Una conchiglia incredibilmente bella." #!String
+    RainbowTrout_Name: "Trota arcobaleno" #!String
+    RainbowTrout_Description: "Una trota d'acqua dolce con scaglie colorate." #!String
+    RainTotem_Name: "Totem della pioggia" #!String
+    RainTotem_Description: "Attivalo per aumentare di molto le chance che il giorno dopo piova. Un utilizzo per totem." #!String
+    Raisins_Name: "Uvetta" #!String
+    Raisins_Description: "Pare che sia il cibo preferito dei Junimo." #!String
+    RareDisc_Name: "Disco raro" #!String
+    RareDisc_Description: "Un pesante disco nero costellato di peculiari pietre rosse. Tenendolo in mano, ti assale una sensazione di terrore." #!String
+    RareSeed_Name: "Seme raro" #!String
+    RareSeed_Description: "Seminalo in autunno. Cresce nel corso di tutta la stagione." #!String
+    RedCabbage_Name: "Cavolo rosso" #!String
+    RedCabbage_Description: "Usato spesso nelle insalate, anche in quella russa. Il colore va dal viola al blu al verde-giallo a seconda delle condizioni del suolo." #!String
+    RedCabbageSeeds_Name: "Semi di cavolo rosso" #!String
+    RedCabbageSeeds_Description: "Piantali in estate. Maturano in 9 giorni." #!String
+    RedMullet_Name: "Triglia" #!String
+    RedMullet_Description: "Un tempo erano animali da compagnia." #!String
+    RedMushroom_Name: "Fungo rosso" #!String
+    RedMushroom_Description: "Un fungo maculato che a volte si trova nelle caverne." #!String
+    RedPlate_Name: "Piatto rosso" #!String
+    RedPlate_Description: "Ricco di antiossidanti." #!String
+    RedSlimeEgg_Name: "Uovo di melma rosso" #!String
+    RedSlimeEgg_Description: "Si può covare in un'incubatrice per melme." #!String
+    RedSnapper_Name: "Dentice rosso" #!String
+    RedSnapper_Description: "Un pesce popolare dal bel colore rosso." #!String
+    RefinedQuartz_Name: "Quarzo raffinato" #!String
+    RefinedQuartz_Description: "Una forma più pura di quarzo." #!String
+    Rhubarb_Name: "Rabarbaro" #!String
+    Rhubarb_Description: "I gambi sono estremamente aspri ma, se addolciti, sono un grande dessert." #!String
+    RhubarbPie_Name: "Crostata di rabarbaro" #!String
+    RhubarbPie_Description: "Mmm, dolce e piccantina!" #!String
+    RhubarbSeeds_Name: "Semi di rabarbaro" #!String
+    RhubarbSeeds_Description: "Piantali in primavera. Maturano in 13 giorni." #!String
+    Rice_Name: "Riso" #!String
+    Rice_Description: "Un cereale basilare servito spesso con verdure." #!String
+    RicePudding_Name: "Budino di riso" #!String
+    RicePudding_Description: "Dolce, cremoso, e divertente da mangiare." #!String
+    RiceShoot_Name: "Germoglio di riso" #!String
+    RiceShoot_Description: "Piantali in primavera. Maturano in 8 giorni. Cresce più velocemente se piantato vicino a uno specchio d'acqua. Da raccogliere con la falce." #!String
+    RingofYoba_Name: "Anello di Yoba" #!String
+    RingofYoba_Description: "Protegge chi lo indossa dai danni, occasionalmente." #!String
+    RiverJelly_Name: "Gelatina fluviale" #!String
+    RiverJelly_Description: "Una gelatina rara che si trova nell'acqua dolce." #!String
+    RoastedHazelnuts_Name: "Nocciole arrostite" #!String
+    RoastedHazelnuts_Description: "Il processo di arrostimento produce un intenso aroma silvestre." #!String
+    Roe_Name: "Uova di pesce" #!String
+    Roe_Description: "Uova di pesce fresche. Possono essere invecchiate in un barattolo per conserve per renderle più saporite." #!String
+    Roe_Flavored_Name: "Uova di {0}" #!String
+    RootsPlatter_Name: "Piatto 'radicale'" #!String
+    RootsPlatter_Description: "Ti darà la voglia di dissotterrarne ancora." #!String
+    RottenPlant_Name: "Pianta marcita" #!String
+    RottenPlant_Description: "Materiale organico in decomposizione. Viscido e sgradevole." #!String
+    Ruby_Name: "Rubino" #!String
+    Ruby_Description: "Una pietra preziosa ricercata per il suo colore pieno e la lucentezza magnifica." #!String
+    RubyRing_Name: "Anello di rubino" #!String
+    RubyRing_Description: "Aumenta l'attacco del 10%." #!String
+    RubyStone_Name: "Pietra con rubini" #!String
+    RubyStone_Description: "Rompila per ottenere rubini." #!String
+    RusticPlankFloor_Name: "Pavimento di assi rustiche" #!String
+    RusticPlankFloor_Description: "Piazzalo per terra per creare sentieri o per abbellire i pavimenti." #!String
+    RustyCog_Name: "Ingranaggio arrugginito" #!String
+    RustyCog_Description: "Un ingranaggio ben conservato che deve aver fatto parte di un'antica macchina. Potrebbe essere tecnologia nanica." #!String
+    RustySpoon_Name: "Cucchiaio arrugginito" #!String
+    RustySpoon_Description: "Un banale cucchiaio, probabilmente di dieci anni fa. Non molto interessante." #!String
+    RustySpur_Name: "Sperone arrugginito" #!String
+    RustySpur_Description: "Un vecchio sperone un tempo attaccato allo stivale di un cowboy. La gente di questa zona avrà allevato animali per molte generazioni." #!String
+    Salad_Name: "Insalata" #!String
+    Salad_Description: "Un sana insalata da giardino." #!String
+    Salmon_Name: "Salmone" #!String
+    Salmon_Description: "Risale i fiumi per deporre le uova." #!String
+    Salmonberry_Name: "Lampone" #!String
+    Salmonberry_Description: "Una bacca primaverile col sapore della foresta." #!String
+    SalmonDinner_Name: "Cena di salmone" #!String
+    SalmonDinner_Description: "Lo spritz al limone la rende speciale." #!String
+    Sandfish_Name: "Pesce delle sabbie" #!String
+    Sandfish_Description: "Prova a nascondersi camuffandosi." #!String
+    Sandstone_Name: "Arenaria" #!String
+    Sandstone_Description: "Un tipo comune di pietra con striature rosse e marroni." #!String
+    Sap_Name: "Linfa" #!String
+    Sap_Description: "Un fluido ottenuto dagli alberi." #!String
+    Sardine_Name: "Sardina" #!String
+    Sardine_Description: "Un comune pesce oceanico." #!String
+    Sashimi_Name: "Sashimi" #!String
+    Sashimi_Description: "Pesce crudo tagliato a fettine." #!String
+    SavageRing_Name: "Anello del selvaggio" #!String
+    SavageRing_Description: "Guadagni un lieve aumento di velocità ogni volta che uccidi un mostro." #!String
+    ScorpionCarp_Name: "Carpa scorpione" #!String
+    ScorpionCarp_Description: "È come una carpa normale, ma con un pungiglione affilato." #!String
+    SeaCucumber_Name: "Cetriolo di mare" #!String
+    SeaCucumber_Description: "Una creatura viscida e scivolosa che vive sul fondale oceanico." #!String
+    SeafoamPudding_Name: "Budino di schiuma di mare" #!String
+    SeafoamPudding_Description: "Questo budino salato ti farà davvero entrare nella mentalità marittima!" #!String
+    SeaJelly_Name: "Gelatina marina" #!String
+    SeaJelly_Description: "Una gelatina rara che si trova nell'oceano." #!String
+    SeaUrchin_Name: "Riccio di mare" #!String
+    SeaUrchin_Description: "Una creatura lenta e spinosa, che alcuni considerano una delicatezza." #!String
+    Seaweed_Name: "Alga marina" #!String
+    Seaweed_Description: "Può essere usata in cucina." #!String
+    SecretNote_Name: "Messaggio segreto" #!String
+    SecretNote_Description: "È vecchio e stropicciato, ma se guardi attentamente puoi distinguerne i dettagli..." #!String
+    Shad_Name: "Alosa" #!String
+    Shad_Description: "Vive in un banco marino, ma torna ai fiumi per deporre le uova." #!String
+    Shrimp_Name: "Gamberetto" #!String
+    Shrimp_Description: "Uno spazzino che si nutre sul fondale oceanico. La sua carne è largamente apprezzata." #!String
+    ShrimpCocktail_Name: "Cocktail di gamberetti" #!String
+    ShrimpCocktail_Description: "Un sontuoso antipasto preparato con gamberetti appena pescati." #!String
+    SkeletalHand_Name: "Mano scheletrica" #!String
+    SkeletalHand_Description: "Incredibile che tutti questi antichi pezzetti siano durati così a lungo." #!String
+    SkeletalTail_Name: "Coda scheletrica" #!String
+    SkeletalTail_Description: "Piuttosto corta, come coda." #!String
+    SkillBook0_Name: "Almanacco di Stardew Valley" #!String
+    SkillBook0_Description: "Leggilo per ottenere esperienza nella fattoria." #!String
+    SkillBook1_Name: "Esca e galleggiante" #!String
+    SkillBook1_Description: "Leggilo per ottenere esperienza nella pesca." #!String
+    SkillBook2_Name: "Settimanale del taglialegna" #!String
+    SkillBook2_Description: "Leggilo per ottenere esperienza nella raccolta selvatica." #!String
+    SkillBook3_Name: "Mensile del minatore" #!String
+    SkillBook3_Description: "Leggilo per ottenere esperienza nell'estrazione." #!String
+    SkillBook4_Name: "Trimestrale del combattente" #!String
+    SkillBook4_Description: "Leggilo per ottenere esperienza nel combattimento." #!String
+    Slate_Name: "Ardesia" #!String
+    Slate_Description: "Estremamente resistente all'acqua, e dunque un buon materiale per tetti." #!String
+    Slime_Name: "Melma" #!String
+    Slime_Description: "Una goccia luccicante e gelatinosa, priva d'odore." #!String
+    SlimeCharmerRing_Name: "Anello dell'incanta-melme" #!String
+    SlimeCharmerRing_Description: "Impedisce alle melme di danneggiarti." #!String
+    SlimeCrate_Name: "Cassa per melme" #!String
+    SlimeCrate_Description: "Usala per trasportare in un altro luogo una melma addomesticata." #!String
+    Slimejack_Name: "Luccio melmoso" #!String
+    Slimejack_Description: "È coperto da uno spesso strato di melma. Continua a sfuggirti di mano!" #!String
+    SmallGlowRing_Name: "Anello luminoso piccolo" #!String
+    SmallGlowRing_Description: "Emette una luce lieve e costante." #!String
+    SmallMagnetRing_Name: "Anello magnetico piccolo" #!String
+    SmallMagnetRing_Description: "Aumenta leggermente il tuo raggio di raccolta oggetti." #!String
+    SmallmouthBass_Name: "Boccalino" #!String
+    SmallmouthBass_Description: "Un pesce d'acqua dolce molto sensibile all'inquinamento." #!String
+    SmokedFish_Name: "Affumicato" #!String
+    SmokedFish_Description: "Un esemplare di {0} affumicato alla perfezione." #!String
+    SmokedFish_CollectionsTabDescription: "Un pesce affumicato alla perfezione." #!String
+    SmokedFish_CollectionsTabName: "Pesce affumicato" #!String
+    SmokedFish_Flavored_Name: "{0} (affumicato)" #!String
+    Snail_Name: "Lumaca" #!String
+    Snail_Description: "Un mollusco molto diffuso che vive in un guscio a spirale." #!String
+    SnakeSkull_Name: "Teschio di serpente" #!String
+    SnakeSkull_Description: "Un teschio ben conservato, un tempo appartenuto a un serpente." #!String
+    SnakeVertebrae_Name: "Vertebre di serpente" #!String
+    SnakeVertebrae_Description: "Pare che questo serpente sia stato estremamente flessibile." #!String
+    SnowYam_Name: "Patata dolce delle nevi" #!String
+    SnowYam_Description: "Questa piccolina si nascondeva sotto la neve." #!String
+    SnowyStone_Name: "Pietra nevosa" #!String
+    SnowyStone_Description: "Rompila per ottenere pietre, metalli grezzi o geodi." #!String
+    Soapstone_Name: "Steatite" #!String
+    Soapstone_Description: "A causa della sua consistenza relativamente morbida, è una pietra popolare fra gli scultori." #!String
+    SoggyNewspaper_Name: "Giornale fradicio" #!String
+    SoggyNewspaper_Description: "Immondizia." #!String
+    SolarEssence_Name: "Essenza solare" #!String
+    SolarEssence_Description: "La faccia luminosa è calda al tocco." #!String
+    SonarBobber_Name: "Galleggiante con sonar" #!String
+    SonarBobber_Description: "Mostra quale pesce ha abboccato prima che venga pescato." #!String
+    SonofCrimsonfish_Name: "Figlio del Pesce cremisi" #!String
+    SonofCrimsonfish_Description: "Ha visto la luce nelle calde acque estive, e ha seguito le orme di suo padre." #!String
+    SoulSapperRing_Name: "Anello succhia-anima" #!String
+    SoulSapperRing_Description: "Ottieni un po' d'energia ad ogni mostro ucciso." #!String
+    Spaghetti_Name: "Spaghetti" #!String
+    Spaghetti_Description: "Un classico." #!String
+    SpangleSeeds_Name: "Semi di lustrino" #!String
+    SpangleSeeds_Description: "Piantali in estate. In 8 giorni producono un vivace fiore tropicale. Colori assortiti." #!String
+    SpecificBait_Name: "Esca" #!String
+    SpecificBait_Description: "Aumenta le probabilità di prendere {0}." #!String
+    SpecificBait_Flavored_Name: "Esca per {0}" #!String
+    SpeedGro_Name: "Crescipresto" #!String
+    SpeedGro_Description: "Stimola la produzione di foglie. Garantisce una frequenza di crescita incrementata almeno del 10%. Mescolalo al terreno dissodato." #!String
+    SpiceBerry_Name: "Bacca speziata" #!String
+    SpiceBerry_Description: "Riempie l'aria di un aroma pungente." #!String
+    SpicyEel_Name: "Anguilla speziata" #!String
+    SpicyEel_Description: "Parecchio piccante! Attenzione." #!String
+    Spinner_Name: "Rotante" #!String
+    Spinner_Description: "La forma lo fa ruotare nell'acqua. Aumenta leggermente la frequenza di pesci che abboccano." #!String
+    SpiritTorch_Name: "Torcia spettrale" #!String
+    SpiritTorch_Description: "Non è chiaro cosa causi il colore blu..." #!String
+    SpookFish_Name: "Pesce spettro" #!String
+    SpookFish_Description: "Gli occhi enormi possono percepire le tenui sagome delle prede." #!String
+    SpringOnion_Name: "Cipolla primaverile" #!String
+    SpringOnion_Description: "Crescono selvatiche in primavera." #!String
+    SpringSeeds_Name: "Semi primaverili" #!String
+    SpringSeeds_Description: "Un assortimento di semi primaverili selvatici." #!String
+    Sprinkler_Name: "Irrigatore" #!String
+    Sprinkler_Description: "Annaffia i 4 tasselli adiacenti ogni mattina." #!String
+    Squid_Name: "Calamaro" #!String
+    Squid_Description: "Una creatura del mare profondo che può raggiungere dimensioni enormi." #!String
+    SquidInk_Name: "Nero di seppia" #!String
+    SquidInk_Description: "Le seppie e i calamari usano quest'inchiostro per confondere gli eventuali predatori." #!String
+    SquidInkRavioli_Name: "Ravioli al nero di seppia" #!String
+    SquidInkRavioli_Description: "Proteggono temporaneamente dagli status negativi." #!String
+    StardewValleyRose_Name: "Rosa di Stardew Valley" #!String
+    StardewValleyRose_Description: "Una rosa che ti ricorda la valle. Ha un profumo celestiale." #!String
+    Stardrop_Name: "Astropomo" #!String
+    Stardrop_Description: "Un frutto misterioso che potenzia chi lo mangia. Il sapore è come un sogno... una potente esperienza personale, eppure difficile da descrivere agli altri." #!String
+    StardropTea_Name: "Tè di Astropomo" #!String
+    StardropTea_Description: "Un dono molto speciale che farebbe felice chiunque." #!String
+    Starfruit_Name: "Carambola" #!String
+    Starfruit_Description: "Un frutto estremamente succoso, tipico dei climi umidi e caldi. Leggermente dolce con un retrogusto asprigno." #!String
+    StarfruitSeeds_Name: "Semi di carambola" #!String
+    StarfruitSeeds_Description: "Piantali in estate. Maturano in 13 giorni." #!String
+    StarShards_Name: "Schegge di stella" #!String
+    StarShards_Description: "Nessuno sa come si formino. Alcuni scienziati sostengono che la struttura microscopica mostri una regolarità innaturale." #!String
+    SteppingStonePath_Name: "Sentiero di pietre" #!String
+    SteppingStonePath_Description: "Piazzalo per terra per creare sentieri o per abbellire i pavimenti." #!String
+    Stingray_Name: "Razza" #!String
+    Stingray_Description: "Sebbene abbiano un aculeo tossico, questi pesci sono timidi e preferiscono evitare gli umani." #!String
+    StirFry_Name: "Saltinpadella" #!String
+    StirFry_Description: "Verdure alla julienne su un letto di riso." #!String
+    Stone_Name: "Pietra" #!String
+    Stone_Description: "Un materiale comune con molti utilizzi nella costruzione di oggetti ed edifici." #!String
+    Stone_Node_Name: "Pietra" #!String
+    Stone_Node_Description: "Rompila per ottenere pietre, metalli grezzi o geodi." #!String
+    Stone_NodeStoneOnly_Name: "Pietra" #!String
+    Stone_NodeStoneOnly_Description: "Rompila per ottenere pietre." #!String
+    Stone_NodeWithCoal_Name: "Pietra" #!String
+    Stone_NodeWithCoal_Description: "Rompila per ottenere pietre con una chance di carbone." #!String
+    StoneBase_Name: "Base di pietra" #!String
+    StoneBase_Description: "Un semplice blocco di pietra." #!String
+    StoneFence_Name: "Recinto di pietra" #!String
+    StoneFence_Description: "Più durevole di un recinto di legno." #!String
+    Stonefish_Name: "Pesce pietra" #!String
+    Stonefish_Description: "Un pesce bizzarro a forma di mattone." #!String
+    StoneFloor_Name: "Pavimento di pietra" #!String
+    StoneFloor_Description: "Piazzalo per terra per creare sentieri o per abbellire i pavimenti." #!String
+    StoneWalkwayFloor_Name: "Pavimento di passerelle di pietra" #!String
+    StoneWalkwayFloor_Description: "Piazzalo per terra per creare sentieri o per abbellire i pavimenti." #!String
+    StrangeBun_Name: "Strana focaccia" #!String
+    StrangeBun_Description: "Che c'è dentro?" #!String
+    StrangeDoll_Name: "Strana bambola" #!String
+    StrangeDoll_Description: "???" #!String
+    Strawberry_Name: "Fragola" #!String
+    Strawberry_Description: "Dolce e succosa, di un rosso invitante." #!String
+    StrawberrySeeds_Name: "Semi di fragola" #!String
+    StrawberrySeeds_Description: "Piantali in primavera. Maturano in 8 giorni, e continuano a produrre anche dopo." #!String
+    StrawFloor_Name: "Pavimento di paglia" #!String
+    StrawFloor_Description: "Piazzalo per terra per creare sentieri o per abbellire i pavimenti." #!String
+    Stuffing_Name: "Ripieno" #!String
+    Stuffing_Description: "Ahh... l'odore di pane caldo e salvia." #!String
+    SturdyRing_Name: "Anello gagliardo" #!String
+    SturdyRing_Description: "Dimezza la durata degli effetti di stato negativi." #!String
+    Sturgeon_Name: "Storione" #!String
+    Sturgeon_Description: "Un antico pesce che mangia sui fondali, la cui popolazione è in calo. Le femmine possono vivere fino a 150 anni." #!String
+    Sugar_Name: "Zucchero" #!String
+    Sugar_Description: "Dolcifica paste e caramelle. Usarne troppo può fare male." #!String
+    SummerSeeds_Name: "Semi estivi" #!String
+    SummerSeeds_Description: "Un assortimento di semi estivi selvatici." #!String
+    SummerSpangle_Name: "Lustrino d'estate" #!String
+    SummerSpangle_Description: "Un bocciolo tropicale che ama l'umida aria estiva. Ha un aroma dolce e pungente." #!String
+    SummerSquash_Name: "Zucca estiva" #!String
+    SummerSquash_Description: "Una zucca gialla e ricurva, che va raccolta quando è ancora acerba e tenera." #!String
+    SummerSquashSeeds_Name: "Semi di zucca estiva" #!String
+    SummerSquashSeeds_Description: "Piantali in estate. Maturano in 6 giorni, e continuano a produrre dopo il primo raccolto." #!String
+    Sunfish_Name: "Persico sole" #!String
+    Sunfish_Description: "Un comune pesce fluviale." #!String
+    Sunflower_Name: "Girasole" #!String
+    Sunflower_Description: "Una credenza comune, ma erronea, è che questo fiore si volti sempre dalla parte del sole." #!String
+    SunflowerSeeds_Name: "Semi di girasole" #!String
+    SunflowerSeeds_Description: "Piantali in estate o in autunno. In 8 giorni producono un grande girasole, che darà altri semi quando raccolto." #!String
+    SuperCucumber_Name: "Supercetriolo" #!String
+    SuperCucumber_Description: "Una rara variante viola del cetriolo di mare." #!String
+    SuperMeal_Name: "Superpasto" #!String
+    SuperMeal_Description: "Un piatto veramente energizzante." #!String
+    SupplyCrate_Name: "Rifornimenti" #!String
+    SupplyCrate_Description: "..." #!String
+    SurvivalBurger_Name: "Panino 'Sopravvivi'" #!String
+    SurvivalBurger_Description: "Un comodo spuntino per gli esploratori." #!String
+    SweetGemBerry_Name: "Baccagemma dolce" #!String
+    SweetGemBerry_Description: "È di gran lunga la cosa più dolce che hai mai annusato." #!String
+    SweetPea_Name: "Pisello odoroso" #!String
+    SweetPea_Description: "Un profumato fiore estivo." #!String
+    TaroRoot_Name: "Radice di taro" #!String
+    TaroRoot_Description: "Questa radice amidacea è una delle colture più antiche." #!String
+    TaroTuber_Name: "Tubero di taro" #!String
+    TaroTuber_Description: "Piantalo in climi caldi. Matura in 10 giorni. Cresce più in fretta se piantato vicino a uno specchio d'acqua." #!String
+    TeaLeaves_Name: "Foglie di tè" #!String
+    TeaLeaves_Description: "Le giovani foglioline di una pianta di tè. Mettendole in infusione si ottiene la famosa bevanda energizzante." #!String
+    TeaSapling_Name: "Pianticella di tè" #!String
+    TeaSapling_Description: "Impiega 20 giorni per crescere. Produce foglie di tè durante l'ultima settimana di ogni stagione, escluso l'inverno. Non serve annaffiarla!" #!String
+    TeaSet_Name: "Servizio da tè" #!String
+    TeaSet_Description: "Fine porcellana." #!String
+    TentKit_Name: "Kit per tenda" #!String
+    TentKit_Description: "Usalo per piazzare una tenda monouso in cui dormire. Puoi usarlo soltanto all'aperto." #!String
+    ThornsRing_Name: "Anello di spine" #!String
+    ThornsRing_Description: "Quando i nemici ti danneggiano, subiscono danni a loro volta." #!String
+    ThunderEgg_Name: "Uovo del tuono" #!String
+    ThunderEgg_Description: "Secondo la leggenda, gli spiriti del tuono arrabbiati si lanciavano addosso queste pietre." #!String
+    Tigerseye_Name: "Occhio di tigre" #!String
+    Tigerseye_Description: "Una striscia di oro splendente dona a questa gemma una calda lucentezza." #!String
+    TigerSlimeEgg_Name: "Uovo di melma tigre" #!String
+    TigerSlimeEgg_Description: "Si può far schiudere in un'incubatrice per melme. Usalo con estrema cautela!" #!String
+    TigerTrout_Name: "Trota tigre" #!String
+    TigerTrout_Description: "Una rara trota ibrida che non può generare figli propri." #!String
+    Tilapia_Name: "Tilapia" #!String
+    Tilapia_Description: "Un pesce primariamente vegetariano che preferisce le acque calde." #!String
+    Tomato_Name: "Pomodoro" #!String
+    Tomato_Description: "Intenso e leggermente pungente, il pomodoro ha svariati utilizzi culinari." #!String
+    TomatoSeeds_Name: "Semi di pomodoro" #!String
+    TomatoSeeds_Description: "Piantali in estate. Maturano in 11 giorni, e continuano a produrre dopo il primo raccolto." #!String
+    TomKhaSoup_Name: "Tom Kha Gai" #!String
+    TomKhaSoup_Description: "Che sapori incredibili!" #!String
+    Topaz_Name: "Topazio" #!String
+    Topaz_Description: "Piuttosto comune ma pur sempre apprezzato per la sua bellezza." #!String
+    TopazRing_Name: "Anello di topazio" #!String
+    TopazRing_Description: "Aumenta la precisione dell'arma del 10%." #!String
+    TopazStone_Name: "Pietra con topazi" #!String
+    TopazStone_Description: "Rompila per ottenere topazi." #!String
+    Torch_Name: "Torcia" #!String
+    Torch_Description: "Fornisce una modesta quantità di luce." #!String
+    Tortilla_Name: "Tortilla" #!String
+    Tortilla_Description: "Da mangiare da sola, o come contenitore per altro cibo." #!String
+    TrapBobber_Name: "Galleggiante trappola" #!String
+    TrapBobber_Description: "Rallenta la fuga dei pesci mentre li tiri su." #!String
+    Trash_Name: "Spazzatura" #!String
+    Trash_Description: "Robaccia." #!String
+    TreasureChest_Name: "Scrigno del tesoro" #!String
+    TreasureChest_Description: "Wow, è carico di tesori! Varrà di certo un sacco." #!String
+    TreasureHunter_Name: "Caccia-tesori" #!String
+    TreasureHunter_Description: "I pesci non scappano mentre raccogli tesori. Aumenta leggermente la possibilità di trovarne." #!String
+    TreasureTotem_Name: "Totem del tesoro" #!String
+    TreasureTotem_Description: "Usalo sul terreno in cui puoi scavare per evocare un cerchio di punti del tesoro." #!String
+    TreeFertilizer_Name: "Fertilizzante per alberi" #!String
+    TreeFertilizer_Description: "Spargilo su un albero selvatico per velocizzarne la crescita, anche in inverno. Non funziona sugli alberi da frutto." #!String
+    Trilobite_Name: "Trilobite" #!String
+    Trilobite_Description: "Una parente del granchio estinta da tempo." #!String
+    TrimmedLuckyPurpleShorts_Name: "Braghe viola portafortuna decorate" #!String
+    TrimmedLuckyPurpleShorts_Description: "Pantaloncini di seta viola decorati di oro lussuoso..." #!String
+    TripleShotEspresso_Name: "Espresso triplo" #!String
+    TripleShotEspresso_Description: "È più potente del caffè normale!" #!String
+    TropicalCurry_Name: "Curry tropicale" #!String
+    TropicalCurry_Description: "Un curry esotico e fragrante servito in una ciotola di ananas." #!String
+    TroutDerbyTag_Name: "Etichetta dorata" #!String
+    TroutDerbyTag_Description: "Consegnala alla cabina del Torneo della Trota per ricevere un premio." #!String
+    TroutSoup_Name: "Zuppa di trota" #!String
+    TroutSoup_Description: "Piuttosto salata." #!String
+    Truffle_Name: "Tartufo" #!String
+    Truffle_Description: "Un fungo ricercatissimo dal sapore peculiare." #!String
+    TruffleOil_Name: "Olio di tartufo" #!String
+    TruffleOil_Description: "Un prelibato ingrediente culinario." #!String
+    Tulip_Name: "Tulipano" #!String
+    Tulip_Description: "Il fiore primaverile più popolare. Ha un odore dolce molto lieve." #!String
+    TulipBulb_Name: "Bulbo di tulipano" #!String
+    TulipBulb_Description: "Piantalo in primavera. In 6 giorni produce un fiore colorato. Colori assortiti." #!String
+    Tuna_Name: "Tonno" #!String
+    Tuna_Description: "Un grosso pesce che vive nell'oceano." #!String
+    Twig_Name: "Ramoscello" #!String
+    Twig_Description: "Un ramo spezzato. Taglialo con un'ascia per ottenere del legno." #!String
+    UnmilledRice_Name: "Riso non macinato" #!String
+    UnmilledRice_Description: "Il riso nella sua forma più grezza. Esegui questo attraverso un mulino per aumentare il valore." #!String
+    VampireRing_Name: "Anello del vampiro" #!String
+    VampireRing_Description: "Guadagni un po' di salute ad ogni mostro ucciso." #!String
+    VegetableMedley_Name: "Misto di verdure" #!String
+    VegetableMedley_Description: "Molto nutriente." #!String
+    Vinegar_Name: "Aceto" #!String
+    Vinegar_Description: "Un liquido invecchiato e fermentato, utilizzato in molte ricette." #!String
+    VoidEgg_Name: "Uovo del Vuoto" #!String
+    VoidEgg_Description: "Un uovo nero lucente con macchioline rosse. È caldo al tocco." #!String
+    VoidEssence_Name: "Essenza del Vuoto" #!String
+    VoidEssence_Description: "Freme di energia oscura." #!String
+    VoidGhostPendant_Name: "Ciondolo di uno Spettro del Vuoto" #!String
+    VoidGhostPendant_Description: "Per gli uomini ombra è un oggetto simbolico. Viene donato per esprimere il desiderio di cominciare a convivere come amici." #!String
+    VoidMayonnaise_Name: "Maionese del Vuoto" #!String
+    VoidMayonnaise_Description: "Una colla densa e nera che odora di capelli bruciati." #!String
+    VoidSalmon_Name: "Salmone del Vuoto" #!String
+    VoidSalmon_Description: "Un salmone corrotto dall'energia del Vuoto. La carne fresca è di un nero lucente, ma diventa rosa in fretta quando esposta all'aria." #!String
+    VolcanoGoldNode_Name: "Pietra dorata" #!String
+    VolcanoGoldNode_Description: "Spaccala per ottenere dell'oro grezzo." #!String
+    Walleye_Name: "Walleye" #!String
+    Walleye_Description: "Un pesce notturno d'acqua dolce." #!String
+    WarMemento_Name: "Cimelio di guerra" #!String
+    WarMemento_Description: "La fotografia sbiadita di un soldato..." #!String
+    WarpTotemBeach_Name: "Teletra-Totem: Spiaggia" #!String
+    WarpTotemBeach_Description: "Ti trasporta direttamente alla spiaggia. Un utilizzo per totem." #!String
+    WarpTotemDesert_Name: "Teletra-Totem: Deserto" #!String
+    WarpTotemDesert_Description: "Ti trasporta direttamente al deserto di Calico. Un utilizzo per totem." #!String
+    WarpTotemFarm_Name: "Teletra-Totem: Fattoria" #!String
+    WarpTotemFarm_Description: "Ti trasporta direttamente a casa tua. Un utilizzo per totem." #!String
+    WarpTotemIsland_Name: "Teletra-Totem: Isola" #!String
+    WarpTotemIsland_Description: "Ti trasporta direttamente all'Isola Zenzero. Un utilizzo per totem." #!String
+    WarpTotemMountains_Name: "Teletra-Totem: Montagne" #!String
+    WarpTotemMountains_Description: "Ti trasporta direttamente sui monti. Un utilizzo per totem." #!String
+    WarpTotemQisArena_Name: "Teletra-Totem: Arena di Qi" #!String
+    WarpTotemQisArena_Description: "Ti trasporta all'Arena di Qi. Preparati ad una sfida!" #!String
+    WarriorRing_Name: "Anello del guerriero" #!String
+    WarriorRing_Description: "Occasionalmente, chi lo indossa viene pervaso di \"energia guerriera\" dopo aver ucciso un mostro." #!String
+    WeatheredFloor_Name: "Pavimento consunto" #!String
+    WeatheredFloor_Description: "Piazzalo per terra per creare sentieri o per abbellire i pavimenti." #!String
+    WeddingRing_Name: "Fede nuziale" #!String
+    WeddingRing_Description: "Una vecchia tradizione di Zuzu City... Si usa per chiedere in matrimonio la mano di un altro agricoltore." #!String
+    Weeds_Name: "Erbacce" #!String
+    Weeds_Description: "Un mucchio di erbacce infestanti." #!String
+    Weeds_DryBush_Name: "Erbacce" #!String
+    Weeds_DryBush_Description: "Un mucchio di vecchi cespugli secchi. Might contain fibers or mixed seeds." #!String
+    Weeds_Fiber_Ugly_Name: "Erbacce" #!String
+    Weeds_Fiber_Ugly_Description: "Brutte erbacce. Cut to obtain wild seeds." #!String
+    Weeds_FiberOrMixedSeeds_Name: "Erbacce" #!String
+    Weeds_FiberOrMixedSeeds_Description: "Might contain fibers or mixed seeds." #!String
+    Weeds_FiberOrMixedSeeds_Ugly_Name: "Erbacce" #!String
+    Weeds_FiberOrMixedSeeds_Ugly_Description: "Brutte erbacce. Might contain fibers or mixed seeds." #!String
+    Wheat_Name: "Grano" #!String
+    Wheat_Description: "Uno dei cereali maggiormente coltivati. Diventa un'ottima farina per pane e dolci." #!String
+    WheatFlour_Name: "Farina di grano" #!String
+    WheatFlour_Description: "Un comune ingrediente da cucina, fatto di semi di grano macinati." #!String
+    WheatSeeds_Name: "Semi di grano" #!String
+    WheatSeeds_Description: "Piantali in estate o in autunno. Maturano in 4 giorni. Da raccogliere con la falce." #!String
+    WhiteAlgae_Name: "Alghetta bianca" #!String
+    WhiteAlgae_Description: "È estremamente viscida." #!String
+    WhiteEgg_Name: "Uovo" #!String
+    WhiteEgg_Description: "Un normale uovo bianco di pollo." #!String
+    WildBait_Name: "Esca selvatica" #!String
+    WildBait_Description: "Una ricetta unica di Linus che dona una chance di prendere due pesci allo stesso tempo." #!String
+    WildHorseradish_Name: "Rafano selvatico" #!String
+    WildHorseradish_Description: "Una radice piccante che cresce in primavera." #!String
+    WildPlum_Name: "Prugna selvatica" #!String
+    WildPlum_Description: "Succosa e piccantina, con un aroma pungente." #!String
+    WiltedBouquet_Name: "Mazzo di fiori appassiti" #!String
+    WiltedBouquet_Description: "Un dono con cui far capire che vuoi smettere di uscire con qualcuno." #!String
+    Wine_Name: "Vino" #!String
+    Wine_Description: "Bevi con moderazione." #!String
+    Wine_Flavored_Name: "Vino di {0}" #!String
+    WinterRoot_Name: "Radice invernale" #!String
+    WinterRoot_Description: "Un tubero amidoso." #!String
+    WinterSeeds_Name: "Semi invernali" #!String
+    WinterSeeds_Description: "Un assortimento di semi invernali selvatici." #!String
+    Wood_Name: "Legno" #!String
+    Wood_Description: "Un materiale vegetale robusto ma flessibile, utilizzabile in moltissimi modi." #!String
+    WoodFence_Name: "Recinto di legno" #!String
+    WoodFence_Description: "Tiene dentro erba e animali!" #!String
+    WoodFloor_Name: "Pavimento di legno" #!String
+    WoodFloor_Description: "Piazzalo per terra per creare sentieri o per decorare i pavimenti." #!String
+    WoodPath_Name: "Sentiero di legno" #!String
+    WoodPath_Description: "Piazzalo per terra per creare sentieri o per abbellire i pavimenti." #!String
+    Woodskip_Name: "Saltaboschi" #!String
+    Woodskip_Description: "Un pesce sensibilissimo che può vivere solo negli stagni, nei recessi della foresta." #!String
+    Wool_Name: "Lana" #!String
+    Wool_Description: "Lana morbida e batuffolosa." #!String
+    WrigglingWorm_Name: "Verme che si dimena" #!String
+    WrigglingWorm_Description: "Un verme umido e molto agitato." #!String
+    Yam_Name: "Patata dolce" #!String
+    Yam_Description: "Un tubero amidoso molto versatile in cucina." #!String
+    YamSeeds_Name: "Semi di patata dolce" #!String
+    YamSeeds_Description: "Piantali in autunno. Maturano in 10 giorni." #!String
+

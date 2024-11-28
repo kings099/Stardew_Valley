@@ -1,0 +1,23 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    winter_17.000: "상상을 초월하는 부를 찾아 세상을 여행하는 이국적인 상인 무리... 얼마나 멋진 모험인가!" #!String
+    marriage_Mon.000: "안녕, @. 여기서 파도를 바라보는 중이야." #!String
+    summer_9.001: "요즘 등이랑 허리가 아파요, 선생님... 알잖아요, 책 쓰느라 계속 구부정하게 앉아있었더니." #!String
+    summer_9.000: "거기 안녕. 무슨 일로 이 끔찍한 곳에 왔어?" #!String
+

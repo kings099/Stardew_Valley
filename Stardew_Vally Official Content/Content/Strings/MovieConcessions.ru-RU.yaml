@@ -1,0 +1,67 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    AppleSlices_Name: "Яблочные дольки" #!String
+    AppleSlices_Description: "Хрустящие и сладкие маленькие дольки." #!String
+    BlackLicorice_Name: "Черная лакрица" #!String
+    BlackLicorice_Description: "Жевательная конфета с насыщенным пикантным вкусом." #!String
+    CappuccinoMousseCake_Name: "Пирожное с капучиновым муссом" #!String
+    CappuccinoMousseCake_Description: "Шоколадное пирожное с глазурью из капучинового мусса." #!String
+    ChocolatePopcorn_Name: "Шоколадный попкорн" #!String
+    ChocolatePopcorn_Description: "Обычный попкорн... с шоколадной посыпкой." #!String
+    CottonCandy_Name: "Сладкая вата" #!String
+    CottonCandy_Description: "Огромное розовое облако сахарной ваты." #!String
+    Fries_Name: "Картофель фри" #!String
+    Fries_Description: "Слегка подсоленные и обжаренные во фритюре тонкие ломтики картофеля." #!String
+    HummusSnackPack_Name: "Перекус с хумусом" #!String
+    HummusSnackPack_Description: "Хрустящий и здоровый перекус." #!String
+    IceCreamSandwich_Name: "Мороженое-сэндвич" #!String
+    IceCreamSandwich_Description: "Ванильное мороженое между двух шоколадных печений." #!String
+    JasmineTea_Name: "Жасминовый чай" #!String
+    JasmineTea_Description: "Зеленый чай с ароматом жасминовых цветов." #!String
+    Jawbreaker_Name: "Очень твердый леденец" #!String
+    Jawbreaker_Description: "Это большой твердый леденец, который не закончится весь сеанс!" #!String
+    JojaCola_Name: "Джоджа-кола" #!String
+    JojaCola_Description: "Очень большая банка флагманской газировки компании." #!String
+    JojaCorn_Name: "Джоджа-руза" #!String
+    JojaCorn_Description: "Запатентованная кукурузная еда от Джоджа, сдобренная большим количеством «масляного соуса»." #!String
+    KaleSmoothie_Name: "Смузи из кудрявой капусты" #!String
+    KaleSmoothie_Description: "В нем куча витаминов и волокон." #!String
+    Nachos_Name: "Начос" #!String
+    Nachos_Description: "Свежеиспеченные кукурузные чипсы с тянущимся острым сыром." #!String
+    PanzanellaSalad_Name: "Панцарелла" #!String
+    PanzanellaSalad_Description: "Летний салат из хлеба и помидоров." #!String
+    PersonalPizza_Name: "Пицца для одного" #!String
+    PersonalPizza_Description: "Достаточно маленькая пицца, чтобы перекусить одному." #!String
+    Popcorn_Name: "Попкорн" #!String
+    Popcorn_Description: "Слегка подсоленные и сбрызнутые растопленным сливочным маслом зерна воздушной кукурузы." #!String
+    RockCandy_Name: "Леденец" #!String
+    RockCandy_Description: "Вкусный жженый сахар на удобной палочке." #!String
+    SalmonBurger_Name: "Бургер с лососем" #!String
+    SalmonBurger_Description: "Толстый кусок лосося на слегка обжаренной булочке с кунжутом." #!String
+    SaltedPeanuts_Name: "Соленый арахис" #!String
+    SaltedPeanuts_Description: "Классическое соленое лакомство." #!String
+    SourSlimes_Name: "Кислые слаймы" #!String
+    SourSlimes_Description: "Мелкие разноцветные мармеладные слаймы. Они посыпаны очень кислой пудрой." #!String
+    StarCookie_Name: "Звездное печенье" #!String
+    StarCookie_Description: "Песочное печенье в форме звезды с радужной посыпкой." #!String
+    StardropSorbet_Name: "Щербет из Звездной капли" #!String
+    StardropSorbet_Description: "Совсем немного эссенции Звездной капли превращает этот щербет в необычайное лакомство." #!String
+    TrufflePopcorn_Name: "Трюфельный попкорн" #!String
+    TrufflePopcorn_Description: "Семейный рецепт попкорна с щепоткой трюфельной соли." #!String
+

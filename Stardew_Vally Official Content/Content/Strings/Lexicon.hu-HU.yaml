@@ -1,0 +1,39 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    RandomNegativeItemNoun: "szemét#ócska#béna#gagyi" #!String
+    RandomPositiveAdjective_Child: "menő#mókás#laza#jó#szép#szuper#nagyszerű" #!String
+    RandomPositiveAdjective_AdultMale: "érdekes#lenyűgöző#laza#mókás#nagyszerű#fantasztikus" #!String
+    RandomPositiveAdjective_AdultFemale: "csodálatos#lenyűgöző#szívmelengető#varázslatos#hihetetlen#szerethető#lélegzetelállító#örömteli" #!String
+    RandomPositiveAdjective_PlaceOrEvent: "csodálatos#lenyűgöző#szívmelengető#varázslatos#hihetetlen#szerethető#lélegzetelállító#örömteli" #!String
+    RandomDeliciousAdjective: "ízletes#finom#csodálatos#kielégítő#laktató#pompás#étvágygerjesztő#elbűvölő" #!String
+    RandomDeliciousAdjective_Child: "fini" #!String
+    RandomNegativeFoodAdjective_Child: "undi" #!String
+    RandomNegativeFoodAdjective_Polite: "...érdekes#...szokatlan#...más#...eredeti" #!String
+    RandomNegativeFoodAdjective: "csúnya#undorító#visszataszító#hitvány#gyűlöletes#émelyítő#borzasztó#visszataszító#gyomorforgató#bűzös#förtelmes#orrfacsaró" #!String
+    RandomSlightlyPositiveFoodAdjective: "jó#ehető#finom" #!String
+    ChildTerm_Male: "fiú" #!String
+    ChildTerm_Female: "lány" #!String
+    Pronoun_Male: "fiú" #!String
+    Pronoun_Female: "lány" #!String
+    QuestionDialogue_Yes: "Igen" #!String
+    QuestionDialogue_No: "Nem" #!String
+    GenericPlayerTerm: "gazda" #!String
+    Possessive_Pronoun_Male: "ő" #!String
+    Possessive_Pronoun_Female: "ő" #!String
+

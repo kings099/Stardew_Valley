@@ -1,0 +1,27 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    spring13: "Eierfest" #!String
+    spring24: "Blumentanz" #!String
+    summer11: "Luau" #!String
+    summer28: "Tanz der Mondlichtquallen" #!String
+    fall16: "Sternentautaler Volksfest" #!String
+    fall27: "Geisternacht" #!String
+    winter8: "Fest des Eises" #!String
+    winter25: "Fest des Wintersterns" #!String
+

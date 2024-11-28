@@ -1,0 +1,332 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    AncientStool_Name: "Sgabello antico" #!String
+    AncientStool_Description: "Ha l'odore dell'appartamento della nonna." #!String
+    AncientTable_Name: "Tavolo antico" #!String
+    AncientTable_Description: "È coperto di ragnatele spessissime." #!String
+    Anvil_Name: "Incudine" #!String
+    Anvil_Description: "Ti consente di cambiare i tuoi accessori con altri casuali. Usarla costa 3 lingotti d'iridio." #!String
+    AutoGrabber_Name: "Auto-arraffona" #!String
+    AutoGrabber_Description: "Raccoglie automaticamente i prodotti degli animali ogni mattina. Piazzala in una stia o in un granaio." #!String
+    AutoPetter_Name: "Accarezzatrice" #!String
+    AutoPetter_Description: "Tecnologia brevettata della Joja Co. Soddisfa i tuoi animali, ma non può sostituire gli effetti benefici del contatto umano. Si può integrare con le carezze manuali." #!String
+    BaitMaker_Name: "Macchina per esche" #!String
+    BaitMaker_Description: "Mettici dentro un pesce per creare un'esca apposita." #!String
+    Barrel_Name: "Barile" #!String
+    Barrel_Description: "..." #!String
+    BarrelBrazier_Name: "Braciere-barile" #!String
+    BarrelBrazier_Description: "Fornisce una modesta quantità di luce." #!String
+    BasicLog_Name: "Ceppo base" #!String
+    BasicLog_Description: "Una decorazione per la fattoria." #!String
+    BeeHouse_Name: "Arnia" #!String
+    BeeHouse_Description: "Piazzala all'aperto e attendi il dolce miele! (Tranne che in inverno)." #!String
+    BigChest_Name: "Baule grande" #!String
+    BigChest_Description: "Ha quasi il doppio dello spazio di un baule normale." #!String
+    BigGreenCane_Name: "Grande bastone verde" #!String
+    BigGreenCane_Description: "Una decorazione per la fattoria." #!String
+    BigRedCane_Name: "Grande bastone rosso" #!String
+    BigRedCane_Description: "Una decorazione per la fattoria." #!String
+    BigStoneChest_Name: "Baule di pietra grande" #!String
+    BoneMill_Name: "Macina-ossa" #!String
+    BoneMill_Description: "Converte le ossa in fertilizzanti." #!String
+    Bonfire_Name: "Falò" #!String
+    Bonfire_Description: "I tizzoni rossi mandano un tenue bagliore." #!String
+    Bongo_Name: "Bongo" #!String
+    Bongo_Description: "Uno strumento a percussione ornamentale dalle ricche sonorità." #!String
+    Bookcase_Name: "Libreria" #!String
+    Bookcase_Description: "Una casa per libri." #!String
+    Boulder_Name: "Masso" #!String
+    Boulder_Description: "Un pezzo di pietra estremamente compatto." #!String
+    Camera_Name: "Macchina fotografica" #!String
+    Camera_Description: "Una vecchia macchina fotografica montata su un treppiedi." #!String
+    Campfire_Name: "Fuoco da campo" #!String
+    Campfire_Description: "Fornisce una modesta quantità di luce." #!String
+    Campfire_2_Name: "Fuoco da campo" #!String
+    Campfire_2_Description: "Cucina dove vuoi!" #!String
+    CarvedBrazier_Name: "Braciere intagliato" #!String
+    CarvedBrazier_Description: "Fornisce una modesta quantità di luce." #!String
+    Cask_Name: "Botte" #!String
+    Cask_Description: "Usala in cantina per invecchiare prodotti come vino e formaggio." #!String
+    CharcoalKiln_Name: "Fornace per il carbone" #!String
+    CharcoalKiln_Description: "Trasforma 10 pezzi di legno in uno di carbone." #!String
+    CheesePress_Name: "Pressa per formaggi" #!String
+    CheesePress_Description: "Trasforma il latte in formaggio." #!String
+    Chest_Name: "Baule" #!String
+    Chest_Description: "Un posto dove riporre i tuoi oggetti." #!String
+    ChickenStatue_Name: "Statua di un pollo" #!String
+    ChickenStatue_Description: "La statuetta di legno di un pollo." #!String
+    CoffeeMaker_Name: "Macchina per il caffè" #!String
+    CoffeeMaker_Description: "Prepara automaticamente una tazza di caffè ogni mattina." #!String
+    Crate_Name: "Cassa" #!String
+    Crate_Description: "..." #!String
+    Crystalarium_Name: "Cristallario" #!String
+    Crystalarium_Description: "Inseriscivi una gemma a tua scelta e ne produrrà delle copie." #!String
+    CursedPKArcadeSystem_Name: "Arcade R.P. maledetto" #!String
+    CursedPKArcadeSystem_Description: "C'è qualcosa che non va in questo cabinato del Re della Prateria..." #!String
+    DarkSign_Name: "Cartello oscuro" #!String
+    DarkSign_Description: "Usaci un oggetto per cambiare ciò che mostra. L'oggetto non verrà consumato." #!String
+    DeadTree_Name: "Albero morto" #!String
+    DeadTree_Description: "È pietrificato da tempo, poveretto." #!String
+    Deconstructor_Name: "Decostruttore" #!String
+    Deconstructor_Description: "Distrugge gli oggetti fabbricati, ma ne salva il materiale più prezioso." #!String
+    DecorativePitcher_Name: "Anfora ornamentale" #!String
+    DecorativePitcher_Description: "Di ottone, fatta a mano." #!String
+    DecorativeSpears_Name: "Lance ornamentali" #!String
+    DecorativeSpears_Description: "Non molto sicure, come decorazioni." #!String
+    Dehydrator_Name: "Essiccatore" #!String
+    Dehydrator_Description: "Mettici dentro 5 pezzi di frutta o di funghi commestibili per essiccarli." #!String
+    DeluxeScarecrow_Name: "Spaventapasseri deluxe" #!String
+    DeluxeScarecrow_Description: "Impedisce agli uccelli di attaccare le colture. Ha un raggio più ampio (circa 16 \"tasselli\")." #!String
+    DeluxeWormBin_Name: "Bidone dei vermi deluxe" #!String
+    DeluxeWormBin_Description: "Produce esche deluxe periodicamente. I vermi sono autosufficienti." #!String
+    Door_Name: "Porta" #!String
+    Door_Description: "Un meccanismo nascosto la fa ritrarre nel terreno." #!String
+    DriedSunflowers_Name: "Girasoli essiccati" #!String
+    DriedSunflowers_Description: "Una vivace decorazione per la casa." #!String
+    EmptyCapsule_Name: "Capsula vuota" #!String
+    EmptyCapsule_Description: "Parte del vetro è in frantumi." #!String
+    FancyTable_Name: "Tavolo elegante" #!String
+    FancyTable_Description: "Un tavolo rotondo finemente lavorato." #!String
+    FarmComputer_Name: "Computer della Fattoria" #!String
+    FarmComputer_Description: "Scansiona la fattoria e mostra informazioni utili." #!String
+    FeedHopper_Name: "Tramoggia per il mangime" #!String
+    FeedHopper_Description: "Consente di recuperare comodamente il foraggio nei silos." #!String
+    FishSmoker_Name: "Affumicatore" #!String
+    FishSmoker_Description: "Mettici dentro un pesce con un pezzo di carbone per creare pesce affumicato. Il pesce affumicato vale due volte tanto." #!String
+    Foroguemon_Name: "??Foroguemon??" #!String
+    Foroguemon_Description: "??Foroguemon??" #!String
+    Furnace_Name: "Fornace" #!String
+    Furnace_Description: "Trasforma minerali e carbone in lingotti di metallo." #!String
+    GardenPot_Name: "Vaso da giardino" #!String
+    GardenPot_Description: "Al chiuso, può crescervi qualunque coltura. All'aperto, ospita solo colture stagionali." #!String
+    GeodeCrusher_Name: "Spacca-geodi" #!String
+    GeodeCrusher_Description: "Apre i geodi in automatico." #!String
+    GoldBrazier_Name: "Braciere d'oro" #!String
+    GoldBrazier_Description: "Fornisce una modesta quantità di luce." #!String
+    GrandfatherClock_Name: "Orologio a pendolo" #!String
+    GrandfatherClock_Description: "Quant'è vecchio... sembra che la ruggine abbia bloccato il pendolo." #!String
+    GraveStone_Name: "Lapide" #!String
+    GraveStone_Description: "Una decorazione per la fattoria." #!String
+    GreenCanes_Name: "Bastoncini verdi" #!String
+    GreenCanes_Description: "Una decorazione per la fattoria." #!String
+    Heater_Name: "Calorifero" #!String
+    Heater_Description: "Fa sì che gli animali restino al caldo e felici d'inverno." #!String
+    HeavyFurnace_Name: "Fornace pesante" #!String
+    HeavyFurnace_Description: "Processa 5 lingotti alla volta. Ha bisogno di 25 pezzi di minerali e 3 di carbone per funzionare." #!String
+    HeavyTapper_Name: "Estrattore pesante" #!String
+    HeavyTapper_Description: "Piazzalo su di un acero, una quercia o un pino, e aspetta che il serbatoio si riempia di prodotto! È due volte più veloce di un estrattore normale." #!String
+    HMTGF_Name: "??HMTGF??" #!String
+    HMTGF_Description: "??HMTGF??" #!String
+    Hopper_Name: "Tramoggia" #!String
+    Hopper_Description: "Gli oggetti inseritivi saranno caricati automaticamente nella macchina di fronte ad essa." #!String
+    HousePlant_Name: "Pianta in vaso" #!String
+    HousePlant_Description: "Dà un po' di personalità alla casa o alla fattoria." #!String
+    Incubator_Name: "Incubatrice" #!String
+    Incubator_Description: "Fa nascere dalle uova i pulcini e gli anatroccoli." #!String
+    IronLamppost_Name: "Lampione di ferro" #!String
+    IronLamppost_Description: "Fornisce una buona quantità di luce." #!String
+    ItemPedestal_Name: "Piedistallo per oggetto" #!String
+    ItemPedestal_Description: "Un posto su cui esporre un oggetto." #!String
+    JunimoChest_Name: "Baule Junimo" #!String
+    JunimoChest_Description: "Tramite il potere della magia silvana, ogni Baule Junimo è connesso allo stesso contenuto." #!String
+    JunimoKartArcadeSystem_Name: "Arcade 'Junimo Kart'" #!String
+    JunimoKartArcadeSystem_Description: "Gioca a 'Junimo Kart' a casa tua!" #!String
+    Keg_Name: "Barilotto" #!String
+    Keg_Description: "Mettici dentro un frutto o un ortaggio. Prima o poi diventerà una bibita." #!String
+    LawnFlamingo_Name: "Fenicottero da giardino" #!String
+    LawnFlamingo_Description: "Una decorazione per la fattoria." #!String
+    LightningRod_Name: "Parafulmine" #!String
+    LightningRod_Description: "Accumula energia dai temporali e la converte in batterie." #!String
+    LockedDoor_Name: "Porta chiusa" #!String
+    LockedDoor_Description: "Un meccanismo nascosto la fa ritrarre nel terreno." #!String
+    LogSection_Name: "Sezione di ceppo" #!String
+    LogSection_Description: "Una decorazione per la fattoria." #!String
+    Loom_Name: "Telaio" #!String
+    Loom_Description: "Trasforma la lana grezza in stoffa." #!String
+    MarbleBrazier_Name: "Braciere di marmo" #!String
+    MarbleBrazier_Description: "Fornisce una modesta quantità di luce." #!String
+    MayonnaiseMachine_Name: "Macchina per la maionese" #!String
+    MayonnaiseMachine_Description: "Trasforma le uova in maionese." #!String
+    MiniForge_Name: "Mini-Forgia" #!String
+    MiniForge_Description: "Adesso puoi usare una forgia nanica comodamente da casa tua." #!String
+    MiniFridge_Name: "Mini-Frigo" #!String
+    MiniFridge_Description: "Consente di depositare ulteriori ingredienti per cucinare." #!String
+    MiniJukebox_Name: "Mini-Jukebox" #!String
+    MiniJukebox_Description: "Ti permette di ascoltare le tue musiche preferite." #!String
+    MiniObelisk_Name: "Mini-obelisco" #!String
+    MiniObelisk_Description: "Piazzane due alla fattoria per teletrasportarti tra di loro." #!String
+    MiniShippingBin_Name: "Mini-cassetta per spedizioni" #!String
+    MiniShippingBin_Description: "Gli oggetti messi qui dentro saranno inclusi nelle spedizioni notturne." #!String
+    MixedCane_Name: "Bastoncini misti" #!String
+    MixedCane_Description: "Una decorazione per la fattoria." #!String
+    MushroomBox_Name: "Scatola per funghi" #!String
+    MushroomBox_Description: "Vi crescono funghi ogni due o tre giorni" #!String
+    MushroomLog_Name: "Tronco per funghi" #!String
+    MushroomLog_Description: "Ogni tanto vi crescono sopra dei funghi. Funziona meglio se ha vicino diversi alberi selvatici." #!String
+    Obelisk_Name: "Obelisco" #!String
+    Obelisk_Description: "Un portale sinistro che irradia energia malvagia." #!String
+    ObsidianVase_Name: "Vaso d'ossidiana" #!String
+    ObsidianVase_Description: "Un vaso ornamentale finemente lavorato, fatto di oro e ossidiana." #!String
+    OilMaker_Name: "Frantoio" #!String
+    OilMaker_Description: "Produce olio tartufato di qualità." #!String
+    OrnamentalHayBale_Name: "Balla di fieno ornamentale" #!String
+    OrnamentalHayBale_Description: "Una decorazione per la fattoria." #!String
+    OstrichIncubator_Name: "Incubatrice per struzzi" #!String
+    OstrichIncubator_Description: "Fa nascere dei pulcini di struzzo dalle uova di struzzo. Da mettere in un granaio." #!String
+    PinkyLemon_Name: "??Pinky Lemon??" #!String
+    PinkyLemon_Description: "??Pinky Lemon??" #!String
+    PlushBunny_Name: "Coniglietto di peluche" #!String
+    PlushBunny_Description: "Grande, soffice, coccoloso." #!String
+    PrairieKingArcadeSystem_Name: "Arcade 'Re della Prateria'" #!String
+    PrairieKingArcadeSystem_Description: "Gioca a 'Viaggio del Re della Prateria' a casa tua!" #!String
+    PreservesJar_Name: "Barattolo per conserve" #!String
+    PreservesJar_Description: "Trasforma le verdure in sottaceti e la frutta in confettura." #!String
+    RareCrow_1_Name: "Spaventararissimi" #!String
+    RareCrow_1_Description: "Collezionali tutti! (1 di 8)" #!String
+    RareCrow_2_Name: "Spaventararissimi" #!String
+    RareCrow_2_Description: "Collezionali tutti! (2 di 8)" #!String
+    RareCrow_3_Name: "Spaventararissimi" #!String
+    RareCrow_3_Description: "Collezionali tutti! (3 di 8)" #!String
+    RareCrow_4_Name: "Spaventararissimi" #!String
+    RareCrow_4_Description: "Collezionali tutti! (4 di 8)" #!String
+    RareCrow_5_Name: "Spaventararissimi" #!String
+    RareCrow_5_Description: "Collezionali tutti! (5 di 8)" #!String
+    RareCrow_6_Name: "Spaventararissimi" #!String
+    RareCrow_6_Description: "Collezionali tutti! (6 di 8)" #!String
+    RareCrow_7_Name: "Spaventararissimi" #!String
+    RareCrow_7_Description: "Collezionali tutti! (7 di 8)" #!String
+    RareCrow_8_Name: "Spaventararissimi" #!String
+    RareCrow_8_Description: "Collezionali tutti! (8 di 8)" #!String
+    RecyclingMachine_Name: "Riciclatore" #!String
+    RecyclingMachine_Description: "Trasforma la spazzatura pescata in risorse." #!String
+    RedCanes_Name: "Bastoncini rossi" #!String
+    RedCanes_Description: "Una decorazione per la fattoria." #!String
+    RitualMask_Name: "Maschera rituale" #!String
+    RitualMask_Description: "Troppo grande da indossare." #!String
+    Scarecrow_Name: "Spaventapasseri" #!String
+    Scarecrow_Description: "Impedisce agli uccelli di attaccare le colture. Ha un raggio limitato (circa 8 \"tasselli\")." #!String
+    SeasonalDecor_Name: "Ornamento stagionale" #!String
+    SeasonalDecor_Description: "Questa decorazione cambia con le stagioni." #!String
+    SeasonalPlant_Name: "Pianta stagionale" #!String
+    SeasonalPlant_Description: "Una pianta ornamentale che cambia ad ogni stagione. Non serve innaffiarla." #!String
+    SeedMaker_Name: "Estrai-semi" #!String
+    SeedMaker_Description: "Mettici dentro delle colture per produrre una quantità variabile di semi. Non funziona col raccolto degli alberi da frutto." #!String
+    SewingMachine_Name: "Macchina da cucire" #!String
+    SewingMachine_Description: "Usala per confezionare vestiti rimanendo comodamente a casa!" #!String
+    SignOfTheVessel_Name: "Segno del ricettacolo" #!String
+    SignOfTheVessel_Description: "Una decorazione per la fattoria." #!String
+    SingingStone_Name: "Pietra canterina" #!String
+    SingingStone_Description: "Se colpita, emette un limpido tintinnio." #!String
+    SkeletonModel_Name: "Modellino di scheletro" #!String
+    SkeletonModel_Description: "Uno scheletro finto." #!String
+    SkullBrazier_Name: "Braciere-teschio" #!String
+    SkullBrazier_Description: "Fornisce una modesta quantità di luce." #!String
+    SlimeBall_Name: "Palla di melma" #!String
+    SlimeBall_Description: "È piena di melma." #!String
+    SlimeEggPress_Name: "Pressa per uova di melma" #!String
+    SlimeEggPress_Description: "Comprime 100 pezzi di melma in un uovo di melma. Un miracolo della scienza!" #!String
+    SlimeIncubator_Name: "Incubatrice per melme" #!String
+    SlimeIncubator_Description: "Fa nascere le melme dalle loro uova. Permette di allevare melme all'aperto." #!String
+    SlothSkeletonL_Name: "Scheletro di bradipo Sn" #!String
+    SlothSkeletonL_Description: "Questo bradipo estinto vagava per le lussureggianti foreste preistoriche di Stardew Valley. La sua potente mascella spezzava le fibre vegetali più resistenti." #!String
+    SlothSkeletonM_Name: "Scheletro di bradipo Cen" #!String
+    SlothSkeletonM_Description: "Le costole di un bradipo preistorico. " #!String
+    SlothSkeletonR_Name: "Scheletro di bradipo Dx" #!String
+    SlothSkeletonR_Description: "Le zampe posteriori e la coda di un bradipo preistorico." #!String
+    SodaMachine_Name: "Distributore di soda" #!String
+    SodaMachine_Description: "Pompa fuori la roba buona." #!String
+    SolarPanel_Name: "Pannello solare" #!String
+    SolarPanel_Description: "Genera lentamente delle batterie quando è lasciato al sole." #!String
+    SolidGoldLewis_Name: "Lewis d'oro massiccio" #!String
+    SolidGoldLewis_Description: "Il progetto segreto del sindaco." #!String
+    Staircase_Name: "Scalinata" #!String
+    Staircase_Description: "Usala per scendere di un livello nelle miniere." #!String
+    StandingGeode_Name: "Geode su piedistallo" #!String
+    StandingGeode_Description: "È un enorme geode montato su un piedistallo. Al suo interno scintillano centinaia di cristalli viola." #!String
+    StardewHeroTrophy_Name: "Trofeo 'Eroe di Stardew'" #!String
+    StardewHeroTrophy_Description: "Il premio più prestigioso che un abitante di Stardew Valley possa mai ricevere!" #!String
+    StatueOfBlessings_Name: "Statua delle benedizioni" #!String
+    StatueOfBlessings_Description: "Toccando la statua ricevi una benedizione unica ogni giorno." #!String
+    StatueOfEndlessFortune_Name: "Statua della fortuna sconfinata" #!String
+    StatueOfEndlessFortune_Description: "È fatta d'oro massiccio. A cosa serve?" #!String
+    StatueOfPerfection_Name: "Statua della perfezione" #!String
+    StatueOfPerfection_Description: "È fatta d'iridio puro." #!String
+    StatueOfTheDwarfKing_Name: "Statua del Re dei nani" #!String
+    StatueOfTheDwarfKing_Description: "Scegli uno di due poteri relativi all'estrazione ogni giorno." #!String
+    StatueOfTruePerfection_Name: "Statua della vera perfezione" #!String
+    StatueOfTruePerfection_Description: "È fatta d'iridio puro." #!String
+    StoneBrazier_Name: "Braciere di pietra" #!String
+    StoneBrazier_Description: "Fornisce una modesta quantità di luce." #!String
+    StoneCairn_Name: "Pila di pietre" #!String
+    StoneCairn_Description: "Una decorazione per la fattoria." #!String
+    StoneChest_Name: "Baule di pietra" #!String
+    StoneChest_Description: "Un posto dove riporre i tuoi oggetti." #!String
+    StoneFrog_Name: "Rana di pietra" #!String
+    StoneFrog_Description: "Ornamento da giardino per la fattoria." #!String
+    StoneJunimo_Name: "Junimo di pietra" #!String
+    StoneJunimo_Description: "Ornamento da giardino per la fattoria." #!String
+    StoneOwl_Decorative_Name: "Gufo di pietra" #!String
+    StoneOwl_Decorative_Description: "Ornamento da giardino per la fattoria." #!String
+    StoneOwl_Secret_Name: "Gufo di pietra" #!String
+    StoneOwl_Secret_Description: "Non è chiaro da dove provenga, ma è molto elegante." #!String
+    StoneParrot_Name: "Pappagallo di pietra" #!String
+    StoneParrot_Description: "Ornamento da giardino per la fattoria." #!String
+    StoneSign_Name: "Cartello di pietra" #!String
+    StoneSign_Description: "Usaci un oggetto per cambiare ciò che mostra. L'oggetto non verrà consumato." #!String
+    StrangeCapsule_Name: "Strana capsula" #!String
+    StrangeCapsule_Description: "C'è qualcosa di carnoso che galleggia nel fluido..." #!String
+    StumpBrazier_Name: "Braciere-ceppo" #!String
+    StumpBrazier_Description: "Fornisce una modesta quantità di luce." #!String
+    SuitOfArmor_Name: "Armatura" #!String
+    SuitOfArmor_Description: "Una decorazione per la fattoria." #!String
+    TablePieceL_Name: "Mezza tavola Sn" #!String
+    TablePieceL_Description: "La parte sinistra di una grande tavola." #!String
+    TablePieceR_Name: "Mezza tavola Dx" #!String
+    TablePieceR_Description: "La parte destra di una grande tavola" #!String
+    TallTorch_Name: "Torcia lunga" #!String
+    TallTorch_Description: "Il manico è fatto di bamboo." #!String
+    Tapper_Name: "Estrattore" #!String
+    Tapper_Description: "Piazzalo su di un acero, una quercia o un pino, e aspetta che il serbatoio si riempia di prodotto!" #!String
+    TeddyTimer_Name: "Orsacchiotto a pendolo" #!String
+    TeddyTimer_Description: "È un orologio a pendolo a forma di orsacchiotto." #!String
+    Telephone_Name: "Telefono" #!String
+    Telephone_Description: "Puoi usarlo per controllare gli orari e l'inventario dei negozi." #!String
+    TextSign_Name: "Cartello con testo" #!String
+    TextSign_Description: "Puoi scrivere un messaggio personalizzato su questo cartello." #!String
+    TuboFlowers_Name: "Fiorinbotte" #!String
+    TuboFlowers_Description: "Fiori piantati in un barile di quercia. Sbocciano in primavera e in estate." #!String
+    WickedStatue_Name: "Statua maligna" #!String
+    WickedStatue_Description: "C'è qualcosa d'inquietante nell'aspetto di questa statua." #!String
+    WickedStatue_LitEyes_Name: "Statua maligna" #!String
+    WickedStatue_LitEyes_Description: "C'è qualcosa che non va in questa statua." #!String
+    WoodChair_Name: "Sedia di legno" #!String
+    WoodChair_Description: "Una sedia che si può orientare in 4 direzioni diverse." #!String
+    WoodChipper_Name: "Cippatrice" #!String
+    WoodChipper_Description: "Inseriscivi un pezzo di legno duro per scomporlo in legno normale." #!String
+    WoodenBrazier_Name: "Braciere di legno" #!String
+    WoodenBrazier_Description: "Fornisce una modesta quantità di luce." #!String
+    WoodLamppost_Name: "Lampione di legno" #!String
+    WoodLamppost_Description: "Fornisce una buona quantità di luce." #!String
+    WoodSign_Name: "Cartello di legno" #!String
+    WoodSign_Description: "Usaci un oggetto per cambiare ciò che mostra. L'oggetto non verrà consumato." #!String
+    Workbench_Name: "Banco da lavoro" #!String
+    Workbench_Description: "Se lo usi per le fabbricazioni, avrai accesso ai materiali stipati in tutti i bauli adiacenti." #!String
+    WormBin_Name: "Bidone dei vermi" #!String
+    WormBin_Description: "Produce esche periodicamente. I vermi sono autosufficienti." #!String
+

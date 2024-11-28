@@ -1,0 +1,38 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Rare Crops: "Colture Rare" #!String
+    Fish Farmer's: "Itticoltore" #!String
+    Garden: "Giardino" #!String
+    Brewer's: "Birraio" #!String
+    Quality Fish: "Pesci di Qualità" #!String
+    Master Fisher's: "Maestro Pescatore" #!String
+    Treasure Hunter's: "Caccia al Tesoro" #!String
+    Children's: "Bambini" #!String
+    Forager's: "Raccoglitore" #!String
+    Home Cook's: "Cuoco Casalingo" #!String
+    Wild Medicine: "Medicina Selvatica" #!String
+    Sticky: "Appiccicoso" #!String
+    Engineer's: "Ingegnere" #!String
+    Forest: "Foresta" #!String
+    Helper's: "Aiutante" #!String
+    Spirit's Eve: "Vigilia degli Spiriti" #!String
+    Winter Star: "Stella d'Inverno" #!String
+    Aquatic Jelly: "Medusa Acquatica" #!String
+    Bookworm's: "Topo di Biblioteca" #!String
+

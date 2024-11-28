@@ -1,0 +1,39 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    RandomNegativeItemNoun: "垃圾#废物#废品#污水#粪便" #!String
+    RandomPositiveAdjective_Child: "酷炫#有趣#真利索#非常好#漂亮#超级棒#太棒了" #!String
+    RandomPositiveAdjective_AdultMale: "有趣#激动人心#真利索#有趣#太棒了#精彩" #!String
+    RandomPositiveAdjective_AdultFemale: "极好#令人惊异#温馨感人#神奇#不可思议#可爱#招人喜欢#令人愉快" #!String
+    RandomPositiveAdjective_PlaceOrEvent: "极好#令人惊异#温馨感人#神奇#不可思议#可爱#招人喜欢#令人愉快" #!String
+    RandomDeliciousAdjective: "美味#可口#极好#满意的#酒饱饭足#令人垂涎#开胃#令人愉快" #!String
+    RandomDeliciousAdjective_Child: "好吃" #!String
+    RandomNegativeFoodAdjective_Child: "令人不快" #!String
+    RandomNegativeFoodAdjective_Polite: "……有趣#……不平常#……不同的#……非传统" #!String
+    RandomNegativeFoodAdjective: "肮脏#令人不快#恶心#卑鄙#令人作呕#令人厌恶#可怕#令人#使人呕吐#肮脏恶臭#极其可怕#腐臭" #!String
+    RandomSlightlyPositiveFoodAdjective: "相当好#挺好#可以吃" #!String
+    ChildTerm_Male: "男孩" #!String
+    ChildTerm_Female: "女孩" #!String
+    Pronoun_Male: "他" #!String
+    Pronoun_Female: "她" #!String
+    QuestionDialogue_Yes: "是" #!String
+    QuestionDialogue_No: "否" #!String
+    GenericPlayerTerm: "农夫" #!String
+    Possessive_Pronoun_Male: "他的" #!String
+    Possessive_Pronoun_Female: "她的" #!String
+

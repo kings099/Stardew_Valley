@@ -1,0 +1,153 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    AbbysPlanchette_Name: "Planchette d’Abby" #!String
+    AbbysPlanchette_Description: "Elle est faite à partir de marbre." #!String
+    AlexsBat_Name: "Batte d’Alex" #!String
+    AlexsBat_Description: "Légèrement cabossée depuis le grand chelem d’Alex." #!String
+    BoneSword_Name: "Épée en os" #!String
+    BoneSword_Description: "Un très léger morceau d’os aiguisé." #!String
+    BrokenTrident_Name: "Trident brisé" #!String
+    BrokenTrident_Description: "Ça vient de la mer, mais c’est encore tranchant." #!String
+    BurglarsShank_Name: "Tige de cambrioleur" #!String
+    BurglarsShank_Description: "Une arme de choix pour les plus rapides et les plus silencieux." #!String
+    CarvingKnife_Name: "Couteau à sculpter" #!String
+    CarvingKnife_Description: "Une petite lame légère." #!String
+    Claymore_Name: "Épée claymore" #!String
+    Claymore_Description: "C’est vraiment très lourd." #!String
+    CrystalDagger_Name: "Dague en cristal" #!String
+    CrystalDagger_Description: "La lame est en quartz purifié." #!String
+    Cutlass_Name: "Coutelas" #!String
+    Cutlass_Description: "Une lame finement travaillée." #!String
+    DarkSword_Name: "Épée noire" #!String
+    DarkSword_Description: "Elle brille d’une énergie mystérieuse." #!String
+    DragontoothClub_Name: "Bâton à dent de dragon" #!String
+    DragontoothClub_Description: "Ce bâton a été forgé à partir d’une dent magique." #!String
+    DragontoothCutlass_Name: "Coutelas à dents de dragon" #!String
+    DragontoothCutlass_Description: "La lame a été forgée à partir d’une dent magique." #!String
+    DragontoothShiv_Name: "Lame à dent de dragon" #!String
+    DragontoothShiv_Description: "Cette lame a été forgée à partir d’une dent magique." #!String
+    DwarfDagger_Name: "Dague de nain" #!String
+    DwarfDagger_Description: "Elle est ancienne, mais la lame ne s’émousse jamais." #!String
+    DwarfHammer_Name: "Marteau de nain" #!String
+    DwarfHammer_Description: "Il émet un vrombissement très faible." #!String
+    DwarfSword_Name: "Épée de nain" #!String
+    DwarfSword_Description: "Elle est ancienne, mais la lame ne s’émousse jamais." #!String
+    ElfBlade_Name: "Lame d’Elfe" #!String
+    ElfBlade_Description: "Seules les mains agiles d’un Elfe ont pu la fabriquer." #!String
+    ElliottsPencil_Name: "Crayon d’Elliott" #!String
+    ElliottsPencil_Description: "Elliott l’a utilisé pour écrire son livre. C’est très pointu !" #!String
+    Femur_Name: "Fémur" #!String
+    Femur_Description: "Un vieil os lourd recouvert de siècles de crasse." #!String
+    ForestSword_Name: "Épée de la forêt" #!String
+    ForestSword_Description: "Tire sa puissance de la magie de la forêt." #!String
+    GalaxyDagger_Name: "Dague galactique" #!String
+    GalaxyDagger_Description: "Elle ne ressemble à rien de connu." #!String
+    GalaxyHammer_Name: "Marteau galactique" #!String
+    GalaxyHammer_Description: "Il est fabriqué à partir d’un matériau ultra-léger jamais vu auparavant." #!String
+    GalaxySlingshot_Name: "Lance-pierre galactique" #!String
+    GalaxySlingshot_Description: "Ça a l’air vraiment puissant." #!String
+    GalaxySword_Name: "Épée galactique" #!String
+    GalaxySword_Description: "Elle ne ressemble à rien de connu." #!String
+    GoldenScythe_Name: "Faux d’or" #!String
+    GoldenScythe_Description: "C’est plus puissant qu’une faux ordinaire." #!String
+    HaleysIron_Name: "Fer à friser de Haley" #!String
+    HaleysIron_Description: "C’est brûlant et ça a la même odeur que les cheveux de Haley." #!String
+    HarveysMallet_Name: "Maillet d’Harvey" #!String
+    HarveysMallet_Description: "Ça me rappelle des souvenirs de la clinique d’Harvey." #!String
+    HolyBlade_Name: "Lame sacrée" #!String
+    HolyBlade_Description: "Elle est imbibée d’espoir." #!String
+    InfinityBlade_Name: "Lame de l’infini" #!String
+    InfinityBlade_Description: "La véritable forme de l’épée galactique." #!String
+    InfinityDagger_Name: "Dague de l’infini" #!String
+    InfinityDagger_Description: "La véritable forme de la dague galactique." #!String
+    InfinityGavel_Name: "Marteau de l’infini" #!String
+    InfinityGavel_Description: "La véritable forme du marteau galactique." #!String
+    InsectHead_Name: "Tête d’insecte" #!String
+    InsectHead_Description: "Pas très agréable à manier." #!String
+    IridiumNeedle_Name: "Aiguille en iridium" #!String
+    IridiumNeedle_Description: "La pointe est incroyablement aiguisée jusqu’à un niveau atomique." #!String
+    IridiumScythe_Name: "Faux d’iridium" #!String
+    IridiumScythe_Description: "Elle peut être utilisée pour ramasser n’importe quelle récolte. Elle est également excellente pour récolter du foin." #!String
+    IronDirk_Name: "Dague en fer" #!String
+    IronDirk_Description: "Dague commune." #!String
+    IronEdge_Name: "Lame de fer" #!String
+    IronEdge_Description: "Une épée lourde." #!String
+    Kudgel_Name: "Masse Kudgel" #!String
+    Kudgel_Description: "Un compagnon brutal." #!String
+    LavaKatana_Name: "Katana de lave" #!String
+    LavaKatana_Description: "Une lame puissante forgée dans une mare de lave bouillonnante." #!String
+    LeadRod_Name: "Barre de plomb" #!String
+    LeadRod_Description: "C’est incroyablement lourd." #!String
+    LeahsWhittler_Name: "Graveur de Leah" #!String
+    LeahsWhittler_Description: "L’outil préféré de Leah pour façonner le bois flottant." #!String
+    MarusWrench_Name: "Clé à molette de Maru." #!String
+    MarusWrench_Description: "Une grande clé à molette métallique.  Elle porte l’odeur de Maru." #!String
+    MasterSlingshot_Name: "Lance-pierre de maître" #!String
+    MasterSlingshot_Description: "Requiert des pierres comme munitions." #!String
+    Meowmere_Name: "Épée arc-en-ciel" #!String
+    Meowmere_Description: "Une arme hors du commun venue d’un pays lointain..." #!String
+    NeptunesGlaive_Name: "Glaive de Neptune" #!String
+    NeptunesGlaive_Description: "Un héritage d’au-delà de la mer des Gemmes." #!String
+    ObsidianEdge_Name: "Lame d’obsidienne" #!String
+    ObsidianEdge_Description: "C’est incroyablement tranchant." #!String
+    OssifiedBlade_Name: "Lame fossilisée" #!String
+    OssifiedBlade_Description: "Une grande lame tranchante faite à partir d’ossements." #!String
+    PennysFryer_Name: "Poêle de Penny" #!String
+    PennysFryer_Description: "La poêle à frire préférée de Penny. Il y a un peu de crasse collée à l’intérieur." #!String
+    PiratesSword_Name: "Épée de pirate" #!String
+    PiratesSword_Description: "On dirait qu’elle appartenait autrefois à un pirate." #!String
+    Rapier_Name: "Rapière" #!String
+    Rapier_Description: "Une lame élégante." #!String
+    RustySword_Name: "Épée rouillée" #!String
+    RustySword_Description: "Une vieille épée rouillée et émoussée." #!String
+    SamsOldGuitar_Name: "Veille guitare de Sam" #!String
+    SamsOldGuitar_Description: "Elle a connu des jours meilleurs." #!String
+    Scythe_Name: "Faux" #!String
+    Scythe_Description: "Permet de couper l’herbe pour faire du foin, si vous avez construit un silo." #!String
+    SebsLostMace_Name: "Massue perdue de Seb" #!String
+    SebsLostMace_Description: "Une des répliques médiévales de Sebastian." #!String
+    ShadowDagger_Name: "Dague des ombres" #!String
+    ShadowDagger_Description: "Lorsque vous tenez la lame à votre oreille, vous pouvez entendre 1000 âmes hurler." #!String
+    SilverSaber_Name: "Sabre en argent" #!String
+    SilverSaber_Description: "Plaqué argent pour empêcher la rouille." #!String
+    Slingshot_Name: "Lance-pierre" #!String
+    Slingshot_Description: "Requiert des pierres comme munitions." #!String
+    SteelFalchion_Name: "Sabre en acier" #!String
+    SteelFalchion_Description: "Léger et puissant." #!String
+    SteelSmallsword_Name: "Petite épée en acier" #!String
+    SteelSmallsword_Description: "Une lame en métal classique." #!String
+    TemperedBroadsword_Name: "Grande épée trempée" #!String
+    TemperedBroadsword_Description: "On dirait que cette arme pourrait affronter n’importe quoi." #!String
+    TemplarsBlade_Name: "Lame de Templier" #!String
+    TemplarsBlade_Description: "Elle a appartenu autrefois à un honorable chevalier." #!String
+    TheSlammer_Name: "Brise-pattes" #!String
+    TheSlammer_Description: "Un marteau extrêmement lourd qui fera virevolter des ennemis." #!String
+    WickedKris_Name: "Dague Démoniaque" #!String
+    WickedKris_Description: "La lame est faite en alliage d’iridium." #!String
+    WindSpire_Name: "Lance des vents" #!String
+    WindSpire_Description: "Une petite lance rapide." #!String
+    WoodClub_Name: "Gourdin en bois" #!String
+    WoodClub_Description: "Un morceau de bois solide, grossièrement travaillé en forme de gourdin." #!String
+    WoodenBlade_Name: "Lame en bois" #!String
+    WoodenBlade_Description: "Pas mal pour un morceau de bois sculpté." #!String
+    WoodMallet_Name: "Maillet en bois" #!String
+    WoodMallet_Description: "L’extrémité est encore solide. Relativement léger pour un maillet." #!String
+    YetiTooth_Name: "Dent de yéti" #!String
+    YetiTooth_Description: "C’est froid au toucher." #!String
+

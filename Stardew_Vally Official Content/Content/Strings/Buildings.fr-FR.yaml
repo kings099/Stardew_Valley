@@ -1,0 +1,85 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    UnderConstruction: "En cours de construction." #!String
+    DismountBeforeEntering: "Mettre pied à terre avant d’entrer" #!String
+    PiecesOfHay: "Meules de foin : {0}/{1}" #!String
+    AddedHay: "{0} meules de foin ajoutées dans le silo." #!String
+    MillFull: "Plus d’espace libre" #!String
+    CantMill: "Ne peut pas être moulu" #!String
+    NeedSilo: "Silo requis" #!String
+    CantEnter: "Impossible d’entrer pour l’instant" #!String
+    WrongFishType: "{0} ne veut pas vivre dans l’étang {1}." #!String
+    WrongFishTypeCoral: "{0} ne peut pas vivre dans l’étang {0}." #!String
+    CantPutInPonds: "{0} ne serait pas heureux ici." #!String
+    NoFish: "Des poissons peuvent vivre dans cet étang." #!String
+    PondFull: "Cet étang est plein." #!String
+    Paint_Region_Building: "Bâtiment" #!String
+    Paint_Region_Roof: "Toit" #!String
+    Paint_Region_Trim: "Bordure" #!String
+    BuildingSkinMenu_ChooseAppearance: "Sélectionnez une apparence pour votre {0}." #!String
+    Construction_ChooseLocation: "Où voulez-vous placer les bâtiments ?" #!String
+    Barn_Name: "Grange" #!String
+    Barn_Description: "Peut abriter jusqu’à 4 animaux." #!String
+    BigBarn_Name: "Grande grange" #!String
+    BigBarn_Description: "Peut abriter jusqu’à 8 animaux. Les animaux pourront mettre bas. Débloque les chèvres." #!String
+    BigCoop_Name: "Grand poulailler" #!String
+    BigCoop_Description: "Peut abriter jusqu’à 8 animaux. Livré avec un incubateur. Débloque les canards." #!String
+    BigShed_Name: "Grand cabanon" #!String
+    BigShed_Description: "Double la taille de la remise. L’intérieur peut être décoré." #!String
+    Cabin_Name: "Cabane" #!String
+    Cabin_Description: "Une maison pour les amis ! Subventionnée par le fonds agricole du village." #!String
+    Coop_Name: "Poulailler" #!String
+    Coop_Description: "Peut abriter jusqu’à 4 animaux." #!String
+    DeluxeBarn_Name: "Grange de luxe" #!String
+    DeluxeBarn_Description: "Peut abriter jusqu’à 12 animaux. Livré avec un système d’alimentation automatique. Débloque les moutons et les cochons." #!String
+    DeluxeCoop_Name: "Poulailler de luxe" #!String
+    DeluxeCoop_Description: "Peut abriter jusqu’à 12 animaux. Livré avec un système d’alimentation automatique. Débloque les lapins." #!String
+    DesertObelisk_Name: "Obélisque du désert" #!String
+    DesertObelisk_Description: "Vous téléporte dans le désert." #!String
+    EarthObelisk_Name: "Obélisque terrestre" #!String
+    EarthObelisk_Description: "Vous téléporte à la montagne." #!String
+    FishPond_Name: "Étang à poissons" #!String
+    FishPond_Description: "Élevez des poissons et récoltez ce qu’ils produisent. Au fil du temps, les poissons se multiplient." #!String
+    GoldClock_Name: "Horloge dorée" #!String
+    GoldClock_Description: "Empêche les débris d’apparaître sur votre ferme. Empêche les clôtures de se délabrer." #!String
+    Greenhouse_Name: "Serre" #!String
+    Greenhouse_Description: "Un endroit pour faire pousser des récoltes de n’importe quelle saison, toute l’année !" #!String
+    IslandObelisk_Name: "Obélisque de l’île" #!String
+    IslandObelisk_Description: "Vous téléporte sur l’Île Gingembre." #!String
+    JunimoHut_Name: "Hutte de Junimo" #!String
+    JunimoHut_Description: "Les Junimos ramassent les récoltes autour de la hutte pour vous." #!String
+    Mill_Name: "Moulin" #!String
+    Mill_Description: "Permets de moudre du blé, des betteraves et du riz." #!String
+    Shed_Name: "Cabanon" #!String
+    Shed_Description: "Une construction vide. Faites-en ce que vous voulez ! L’intérieur peut être décoré." #!String
+    ShippingBin_Name: "Bac d’expédition" #!String
+    ShippingBin_Description: "Mettre des objets à l’intérieur pour les vendre pendant la nuit." #!String
+    Silo_Name: "Silo" #!String
+    Silo_Description: "Permet de couper et de stocker de l’herbe pour nourrir des animaux." #!String
+    SlimeHutch_Name: "Clapier pour Slime" #!String
+    SlimeHutch_Description: "Peut contenir jusqu’à 20 Slimes. Remplissez les abreuvoirs d’eau et les Slimes créeront des boules de Slimes." #!String
+    Stable_Name: "Étable" #!String
+    Stable_Description: "Vous permet de garder et de monter un cheval. Cheval inclus." #!String
+    WaterObelisk_Name: "Obélisque aquatique" #!String
+    WaterObelisk_Description: "Vous téléporte à la mer." #!String
+    Well_Name: "Puits" #!String
+    Well_Description: "Un endroit pour remplir votre arrosoir." #!String
+    PetBowl_Name: "Gamelle" #!String
+    PetBowl_Description: "Procure un foyer pour un animal de compagnie." #!String
+

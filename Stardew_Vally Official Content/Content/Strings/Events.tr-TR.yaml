@@ -1,0 +1,46 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    BirthMessage_Adoption: "Geceleyin evlatlık kurumu yeni bebeğinizi ({0}) bıraktı." #!String
+    BirthMessage_PlayerMother: "Geceleyin bir bebek ({0}) dünyaya getirdin." #!String
+    BirthMessage_SpouseMother: "Geceleyin {1} bir bebek ({0}) dünyaya getirdi." #!String
+    BirthMessage_SpouseNaming_Male: "{0} oğlunuza isim veriyor." #!String
+    BirthMessage_SpouseNaming_Female: "{0} kızınıza isim veriyor." #!String
+    BabyNamingTitle_Male: "Oğlumuzun adını ne koyalım?" #!String
+    BabyNamingTitle_Female: "Kızımızın adını ne koyalım?" #!String
+    HaveBabyQuestion: "Sence çocuk yapmalı mıyız, {0}?" #!String
+    HaveBabyQuestion_Adoption: "Sence evlat edinmeli miyiz, {0}?" #!String
+    HaveBabyAnswer_Yes: "Evet." #!String
+    HaveBabyAnswer_No: "Henüz olmaz..." #!String
+    HavePlayerBabyQuestion: "{0} ile çocuk yapmak istiyor musun?" #!String
+    HavePlayerBabyQuestion_Adoption: "{0} ile evlat edinmek istiyor musun?" #!String
+    AnimalBirth: "Geceleyin {0} bir yavru ({1}) dünyaya getirdi." #!String
+    AnimalNamingTitle: "Yavruyu ({0}) adlandır:" #!String
+    SoundInTheNight_UFO: "Gece garip bir ses duyuldu..." #!String
+    SoundInTheNight_Meteorite: "Gece bir patlama sesi duyuldu..." #!String
+    SoundInTheNight_Earthquake: "Gece deprem oldu." #!String
+    BeachNightMarket_NowOpen: "Akşam Pazarı kuruldu." #!String
+    Maru_comet5: "Bu capcanlı dünyadaki zamanımı seninle geçirdiğim için çok mutluyum!" #!String
+    Maru_comet4: "Bomboş, yapayalnız..." #!String
+    Maru_comet3: "Sonsuz yolculuğunun sadece minik bir kısmını görebiliyoruz." #!String
+    Maru_comet2: "Evrenin nadir görülen harikalarından biri..." #!String
+    Maru_comet1: "Sence de güzel değil mi?" #!String
+    ElliottBook_mystery: "Mavi Kule" #!String
+    ElliottBook_romance: "Kamelya İstasyonu" #!String
+    ElliottBook_default: "Yazzo Gezegeninin Yükselişi ve Düşüşü" #!String
+

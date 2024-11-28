@@ -1,0 +1,26 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    winter_9.000: "Ciddi bir durum yok... Yıllık kontrolüm için buradayım." #!String
+    winter_9.001: "Şey... biraz burnum akıyor, doktor. Ama bunun dışında iyiyim!" #!String
+    winter.000: "Yataktan çıkmak için fazla soğuk." #!String
+    marriage_Mon.000: "Selam tatlım! Genellikle Emily'yi ziyaret etmek için buraya geliyorum." #!String
+    rain.000: "Hava yataktan çıkılmayacak kadar kötü." #!String
+    winter_16.001: "Höh... Fazla ince giyiniğim...$h" #!String
+    winter_16.000: "Yataktan çıkmak için fazla soğuk." #!String
+

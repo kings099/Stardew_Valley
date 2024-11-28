@@ -1,0 +1,28 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    summer_4.000: "Черт... Почти забыл. Мне сегодня нужно к доктору Харви." #!String
+    Fri.000: "Может, поддаться Сэму разок? ... Не, перебьется.$h" #!String
+    marriage_Fri.001: "Навык я не растерял... Сэма обыграть все так же легко.$h" #!String
+    summer_4.001: "Что ты тут делаешь? А если бы я был без одежды?$a" #!String
+    marriage_Mon.001: "Мама просияла, когда я вошел. Она заслуживает счастья.$7" #!String
+    marriage_Fri.000: "Я сегодня собираюсь побыть со старыми друзьями. Приду домой позже." #!String
+    marriage_Mon.000: "Когда я здесь, мне очень хочется затянуться... Но теперь я твердо решил бросить." #!String
+    rain.000: "Океаном лучше любоваться в одиночестве... Не находишь?" #!String
+    winter_16.000: "Ночью я чувствую себя спокойнее... Может, даже сувенир куплю." #!String
+

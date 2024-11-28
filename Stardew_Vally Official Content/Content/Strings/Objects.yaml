@@ -1,0 +1,1551 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    AncientFruitPot: "Her roots grow very deep... she wouldn't be happy in there." #!String
+    CactusSeedsOutside: "Must be planted indoors or on Ginger Island." #!String
+    CaskNoCellar: "Only works in Cellar." #!String
+    DarkTalisman: "Dark Talisman" #!String
+    MagicInk: "Magic Ink" #!String
+    MagnifyingGlass: "Magnifying Glass" #!String
+    BearPaw: "Bear's Knowledge" #!String
+    SpringOnionBugs: "Spring Onion Mastery" #!String
+    SpecialCharm: "Special Charm" #!String
+    CatalogueDescription: "Provides unlimited access to all wallpapers and floors... from the convenience of your home!" #!String
+    FurnitureCatalogueDescription: "Provides unlimited access to almost every furniture item... from the convenience of your home!" #!String
+    DarkTalismanDescription: "You've found the {0}! It's covered in bug slime..." #!String
+    MagicInkDescription: "You've found the Wizard's lost {0}! Better return it to him." #!String
+    MagnifyingGlassDescription: "You received the {0}! You now have the ability to find 'Secret Notes'. These notes reveal rare and useful information, and can be reviewed in your collections tab." #!String
+    SpecialCharmDescription: "You received the {0}! You feel an aura of good fortune surrounding you (luck is permanently increased)!" #!String
+    ParsnipSeedPackage_SomeoneElse: "This package belongs to someone else." #!String
+    Machine_NeedsInputCount: "Requires {0} pieces." #!String
+    CraftingRecipe_IronBar: "Transmute (Fe)" #!String
+    CraftingRecipe_GoldBar: "Transmute (Au)" #!String
+    CraftingRecipe_SpringSeeds: "Wild Seeds (Sp)" #!String
+    CraftingRecipe_SummerSeeds: "Wild Seeds (Su)" #!String
+    CraftingRecipe_FallSeeds: "Wild Seeds (Fa)" #!String
+    CraftingRecipe_WinterSeeds: "Wild Seeds (Wi)" #!String
+    Acorn_Name: "Acorn" #!String
+    Acorn_Description: "This can be planted to grow an oak tree." #!String
+    AdvancedTVRemote_Name: "Advanced TV Remote" #!String
+    AdvancedTVRemote_Description: "It has more buttons than a regular remote. Perfect for the avid TV watcher!" #!String
+    Aerinite_Name: "Aerinite" #!String
+    Aerinite_Description: "These crystals are curiously light." #!String
+    AgedRoe_Name: "Aged Roe" #!String
+    AgedRoe_Description: "Fish eggs aged in salt to bring out the flavor." #!String
+    AgedRoe_Flavored_Name: "Aged {0} Roe" #!String
+    Alamite_Name: "Alamite" #!String
+    Alamite_Description: "Its distinctive fluorescence makes it a favorite among rock collectors." #!String
+    Albacore_Name: "Albacore" #!String
+    Albacore_Description: "Prefers temperature \"edges\" where cool and warm water meet." #!String
+    AlgaeSoup_Name: "Algae Soup" #!String
+    AlgaeSoup_Description: "It's a little slimy." #!String
+    Amaranth_Name: "Amaranth" #!String
+    Amaranth_Description: "A purple grain cultivated by an ancient civilization." #!String
+    AmaranthSeeds_Name: "Amaranth Seeds" #!String
+    AmaranthSeeds_Description: "Plant these in the fall. Takes 7 days to grow. Harvest with the scythe." #!String
+    Amethyst_Name: "Amethyst" #!String
+    Amethyst_Description: "A purple variant of quartz." #!String
+    AmethystRing_Name: "Amethyst Ring" #!String
+    AmethystRing_Description: "Increases knockback by 10%." #!String
+    AmethystStone_Name: "Amethyst Stone" #!String
+    AmethystStone_Description: "Break apart to obtain amethysts." #!String
+    AmphibianFossil_Name: "Amphibian Fossil" #!String
+    AmphibianFossil_Description: "The relatively short hind legs suggest some kind of primordial toad." #!String
+    Anchor_Name: "Anchor" #!String
+    Anchor_Description: "It may have belonged to ancient pirates." #!String
+    Anchovy_Name: "Anchovy" #!String
+    Anchovy_Description: "A small silver fish found in the ocean." #!String
+    AncientDoll_Name: "Ancient Doll" #!String
+    AncientDoll_Description: "An ancient doll covered in grime. This doll may have been used as a toy, a decoration, or a prop in some kind of ritual." #!String
+    AncientDrum_Name: "Ancient Drum" #!String
+    AncientDrum_Description: "It's a drum made from wood and animal skin. It has a low, reverberating tone." #!String
+    AncientFruit_Name: "Ancient Fruit" #!String
+    AncientFruit_Description: "It's been dormant for eons." #!String
+    AncientSeed_Name: "Ancient Seed" #!String
+    AncientSeed_Description: "It's a dry old seed from some ancient plant. By all appearances it's long since dead..." #!String
+    AncientSeeds_Name: "Ancient Seeds" #!String
+    AncientSeeds_Description: "Could these still grow?" #!String
+    AncientSword_Name: "Ancient Sword" #!String
+    AncientSword_Description: "It's the remains of an ancient sword. Most of the blade has turned to rust, but the hilt is very finely crafted." #!String
+    Angler_Name: "Angler" #!String
+    Angler_Description: "Uses a bioluminescent dangler to attract prey." #!String
+    Apple_Name: "Apple" #!String
+    Apple_Description: "A crisp fruit used for juice and cider." #!String
+    AppleSapling_Name: "Apple Sapling" #!String
+    AppleSapling_Description: "Takes 28 days to produce a mature Apple tree. Bears fruit in the fall. Only grows if the 8 surrounding \"tiles\" are empty." #!String
+    Apricot_Name: "Apricot" #!String
+    Apricot_Description: "A tender little fruit with a rock-hard pit." #!String
+    ApricotSapling_Name: "Apricot Sapling" #!String
+    ApricotSapling_Description: "Takes 28 days to produce a mature Apricot tree. Bears fruit in the spring. Only grows if the 8 surrounding \"tiles\" are empty." #!String
+    Aquamarine_Name: "Aquamarine" #!String
+    Aquamarine_Description: "A shimmery blue-green gem." #!String
+    AquamarineRing_Name: "Aquamarine Ring" #!String
+    AquamarineRing_Description: "Increases critical strike chance by 10%." #!String
+    AquamarineStone_Name: "Aquamarine Stone" #!String
+    AquamarineStone_Description: "Break apart to obtain aquamarines." #!String
+    ArcticShard_Name: "Arctic Shard" #!String
+    ArcticShard_Description: "This shard glows with an otherworldly blue light." #!String
+    Arrowhead_Name: "Arrowhead" #!String
+    Arrowhead_Description: "A crudely fashioned point used for hunting." #!String
+    Artichoke_Name: "Artichoke" #!String
+    Artichoke_Description: "The bud of a thistle plant. The spiny outer leaves conceal a fleshy, filling interior." #!String
+    ArtichokeDip_Name: "Artichoke Dip" #!String
+    ArtichokeDip_Description: "It's cool and refreshing." #!String
+    ArtichokeSeeds_Name: "Artichoke Seeds" #!String
+    ArtichokeSeeds_Description: "Plant these in the fall. Takes 8 days to mature." #!String
+    ArtifactSpot_Name: "Artifact Spot" #!String
+    ArtifactSpot_Description: "How did you get this in your inventory?" #!String
+    ArtifactTrove_Name: "Artifact Trove" #!String
+    ArtifactTrove_Description: "A blacksmith can open this for you. These troves often contain ancient relics and curiosities." #!String
+    AutumnsBounty_Name: "Autumn's Bounty" #!String
+    AutumnsBounty_Description: "A taste of the season." #!String
+    Bait_Name: "Bait" #!String
+    Bait_Description: "Causes fish to bite faster. Must first be attached to a fishing rod." #!String
+    BakedFish_Name: "Baked Fish" #!String
+    BakedFish_Description: "Baked fish on a bed of herbs." #!String
+    Banana_Name: "Banana" #!String
+    Banana_Description: "A sweet, starchy tropical fruit." #!String
+    BananaPudding_Name: "Banana Pudding" #!String
+    BananaPudding_Description: "A creamy dessert with a wonderful tropical flavor." #!String
+    BananaSapling_Name: "Banana Sapling" #!String
+    BananaSapling_Description: "Takes 28 days to produce a mature Banana tree. Bears fruit in the summer, or all year round when planted on Ginger Island." #!String
+    BarbedHook_Name: "Barbed Hook" #!String
+    BarbedHook_Description: "Makes your catch more secure, causing the \"fishing bar\" to cling to your catch. Works best on slow, weak fish." #!String
+    Baryte_Name: "Baryte" #!String
+    Baryte_Description: "The best specimens resemble a desert rose." #!String
+    Basalt_Name: "Basalt" #!String
+    Basalt_Description: "Forms near searing hot magma." #!String
+    BasicFertilizer_Name: "Basic Fertilizer" #!String
+    BasicFertilizer_Description: "Improves soil quality a little, increasing your chance to grow quality crops. Mix into tilled soil." #!String
+    BasicRetainingSoil_Name: "Basic Retaining Soil" #!String
+    BasicRetainingSoil_Description: "This soil has a chance of staying watered overnight. Mix into tilled soil." #!String
+    BatteryPack_Name: "Battery Pack" #!String
+    BatteryPack_Description: "It's fully charged with precious energy." #!String
+    BatWing_Name: "Bat Wing" #!String
+    BatWing_Description: "The material is surprisingly delicate." #!String
+    BeanHotpot_Name: "Bean Hotpot" #!String
+    BeanHotpot_Description: "It sure is healthy." #!String
+    BeanStarter_Name: "Bean Starter" #!String
+    BeanStarter_Description: "Plant these in the spring. Takes 10 days to mature, but keeps producing after that. Grows on a trellis." #!String
+    Beer_Name: "Beer" #!String
+    Beer_Description: "Drink in moderation." #!String
+    Beet_Name: "Beet" #!String
+    Beet_Description: "A sweet and earthy root vegetable. As a bonus, the leaves make a great salad." #!String
+    BeetSeeds_Name: "Beet Seeds" #!String
+    BeetSeeds_Description: "Plant these in the fall. Takes 6 days to mature." #!String
+    BerryBasket_Name: "Berry Basket" #!String
+    BerryBasket_Description: "The fibers are stained with berry juice." #!String
+    Bixite_Name: "Bixite" #!String
+    Bixite_Description: "A dark metallic Mineral sought after for its cubic structure." #!String
+    Blackberry_Name: "Blackberry" #!String
+    Blackberry_Description: "An early-fall treat." #!String
+    BlackberryCobbler_Name: "Blackberry Cobbler" #!String
+    BlackberryCobbler_Description: "There's nothing quite like it." #!String
+    Blobfish_Name: "Blobfish" #!String
+    Blobfish_Description: "This odd creature floats above the ocean floor, consuming any edible material in its path." #!String
+    Blueberry_Name: "Blueberry" #!String
+    Blueberry_Description: "A popular berry reported to have many health benefits. The blue skin has the highest nutrient concentration." #!String
+    BlueberrySeeds_Name: "Blueberry Seeds" #!String
+    BlueberrySeeds_Description: "Plant these in the summer. Takes 13 days to mature, and continues to produce after first harvest." #!String
+    BlueberryTart_Name: "Blueberry Tart" #!String
+    BlueberryTart_Description: "It's subtle and refreshing." #!String
+    BlueDiscus_Name: "Blue Discus" #!String
+    BlueDiscus_Description: "A brightly colored tropical fish that is popular in aquariums." #!String
+    BlueGrassStarter_Name: "Blue Grass Starter" #!String
+    BlueGrassStarter_Description: "Place this on your farm to plant a clump of blue grass." #!String
+    BlueJazz_Name: "Blue Jazz" #!String
+    BlueJazz_Description: "The flower grows in a sphere to invite as many butterflies as possible." #!String
+    BlueSlimeEgg_Name: "Blue Slime Egg" #!String
+    BlueSlimeEgg_Description: "Can be hatched in a slime incubator." #!String
+    BokChoy_Name: "Bok Choy" #!String
+    BokChoy_Description: "The leafy greens and fibrous stalks are healthy and delicious." #!String
+    BokChoySeeds_Name: "Bok Choy Seeds" #!String
+    BokChoySeeds_Description: "Plant these in the fall. Takes 4 days to mature." #!String
+    Bomb_Name: "Bomb" #!String
+    Bomb_Description: "Generates an explosion. Watch out!" #!String
+    BoneFlute_Name: "Bone Flute" #!String
+    BoneFlute_Description: "It's a prehistoric wind instrument carved from an animal's bone. It produces an eerie tone." #!String
+    BoneFragment_Name: "Bone Fragment" #!String
+    BoneFragment_Description: "A small piece of bone." #!String
+    Book_AnimalCatalogue_Name: "Animal Catalogue" #!String
+    Book_AnimalCatalogue_Description: "You can access Marnie's shop when she's not around." #!String
+    Book_Artifact_Name: "Treasure Appraisal Guide" #!String
+    Book_Artifact_Description: "You will fetch a better price when selling artifacts." #!String
+    Book_Bombs_Name: "Dwarvish Safety Manual" #!String
+    Book_Bombs_Description: "Bombs deal 25% less damage to you." #!String
+    Book_Crabbing_Name: "The Art O' Crabbing" #!String
+    Book_Crabbing_Description: "Crab pots have a 25% chance to yield double." #!String
+    Book_Defense_Name: "Jack Be Nimble, Jack Be Thick" #!String
+    Book_Defense_Description: "Gain +1 Defense." #!String
+    Book_Diamonds_Name: "The Diamond Hunter" #!String
+    Book_Diamonds_Description: "All stones have a chance to drop a diamond when mined by hand." #!String
+    Book_Friendship_Name: "Friendship 101" #!String
+    Book_Friendship_Description: "You become friends with people a little faster." #!String
+    Book_Marlon_Name: "Mapping Cave Systems" #!String
+    Book_Marlon_Description: "You get a 50% discount on Marlon's item retrieval service." #!String
+    Book_Mystery_Name: "Book of Mysteries" #!String
+    Book_Mystery_Description: "You have a slightly greater chance to find Mystery Boxes." #!String
+    Book_PriceCatalogue_Name: "Price Catalogue" #!String
+    Book_PriceCatalogue_Description: "You can now see the value of your items." #!String
+    Book_QueenOfSauce_Name: "Queen Of Sauce Cookbook" #!String
+    Book_QueenOfSauce_Description: "Learn any Queen Of Sauce recipes that you don't already know." #!String
+    Book_Riding_Name: "Horse: The Book" #!String
+    Book_Riding_Description: "You gain a little extra speed when riding a horse." #!String
+    Book_Roe_Name: "Jewels Of The Sea" #!String
+    Book_Roe_Description: "Fishing treasure chests have a chance to yield roe." #!String
+    Book_Speed_Name: "Way Of The Wind pt. 1" #!String
+    Book_Speed_Description: "You run a little bit faster." #!String
+    Book_Speed2_Name: "Way Of The Wind pt. 2" #!String
+    Book_Speed2_Description: "You run a little bit faster." #!String
+    Book_Trash_Name: "The Alleyway Buffet" #!String
+    Book_Trash_Description: "You have a greater chance to find items in the trash." #!String
+    Book_Void_Name: "Monster Compendium" #!String
+    Book_Void_Description: "Monsters have a small chance to drop double loot." #!String
+    Book_WildSeeds_Name: "Raccoon Journal" #!String
+    Book_WildSeeds_Description: "Weeds have a greater chance to yield mixed seeds." #!String
+    Book_Woodcutting_Name: "Woody's Secret" #!String
+    Book_Woodcutting_Description: "Felled trees have a 5% chance to yield double the wood." #!String
+    Bouquet_Name: "Bouquet" #!String
+    Bouquet_Description: "A gift that shows your romantic interest." #!String
+    Bread_Name: "Bread" #!String
+    Bread_Description: "A crusty baguette." #!String
+    Bream_Name: "Bream" #!String
+    Bream_Description: "A fairly common river fish that becomes active at night." #!String
+    BrickFloor_Name: "Brick Floor" #!String
+    BrickFloor_Description: "Place on the ground to create paths or to decorate your floors." #!String
+    Broccoli_Name: "Broccoli" #!String
+    Broccoli_Description: "The flowering head of a broccoli plant. The tiny buds give it a unique texture." #!String
+    BroccoliSeeds_Name: "Broccoli Seeds" #!String
+    BroccoliSeeds_Description: "Plant in the fall. Takes 8 days to mature, and continues to produce after first harvest." #!String
+    BrokenCD_Name: "Broken CD" #!String
+    BrokenCD_Description: "It's a JojaNet 2.0 trial CD. They must've made a billion of these things." #!String
+    BrokenGlasses_Name: "Broken Glasses" #!String
+    BrokenGlasses_Description: "It looks like someone lost their glasses. They're busted." #!String
+    BrownEgg_Name: "Egg" #!String
+    BrownEgg_Description: "A regular brown chicken egg." #!String
+    Bruschetta_Name: "Bruschetta" #!String
+    Bruschetta_Description: "Roasted tomatoes on a crisp white bread." #!String
+    BugMeat_Name: "Bug Meat" #!String
+    BugMeat_Description: "It's a juicy wad of bug flesh." #!String
+    BugSteak_Name: "Bug Steak" #!String
+    BugSteak_Description: "The last resort of the hungry cave diver." #!String
+    Bullhead_Name: "Bullhead" #!String
+    Bullhead_Description: "A relative of the catfish that eats a variety of foods off the lake bottom." #!String
+    BurglarsRing_Name: "Burglar's Ring" #!String
+    BurglarsRing_Description: "Monsters have a greater chance of dropping loot." #!String
+    ButterflyPowder_Name: "Butterfly Powder" #!String
+    ButterflyPowder_Description: "Sprinkle on a pet to remove them from your farm. The process is irreversible." #!String
+    CactusFruit_Name: "Cactus Fruit" #!String
+    CactusFruit_Description: "The sweet fruit of the prickly pear cactus." #!String
+    CactusSeeds_Name: "Cactus Seeds" #!String
+    CactusSeeds_Description: "Can only be grown indoors. Takes 12 days to mature, and then produces fruit every 3 days." #!String
+    Calcite_Name: "Calcite" #!String
+    Calcite_Description: "This yellow crystal is speckled with shimmering nodules." #!String
+    CalicoEgg_Name: "Calico Egg" #!String
+    CalicoEgg_Description: "A unique egg that can be found during the Desert Festival." #!String
+    CalicoEggStone_Name: "Calico Egg Stone" #!String
+    CalicoEggStone_Description: "Break apart to obtain Calico Eggs." #!String
+    CampingStove_Name: "Camping Stove" #!String
+    CampingStove_Description: "This allows you to cook anywhere, and is not consumed on use." #!String
+    Carp_Name: "Carp" #!String
+    Carp_Description: "A common pond fish." #!String
+    CarpSurprise_Name: "Carp Surprise" #!String
+    CarpSurprise_Description: "It's bland and oily." #!String
+    Carrot_Name: "Carrot" #!String
+    Carrot_Description: "A fast-growing, colorful tuber that makes for a great snack." #!String
+    CarrotSeeds_Name: "Carrot Seeds" #!String
+    CarrotSeeds_Description: "Plant in the spring. Takes 3 days to grow." #!String
+    Catfish_Name: "Catfish" #!String
+    Catfish_Description: "An uncommon fish found in streams." #!String
+    Cauliflower_Name: "Cauliflower" #!String
+    Cauliflower_Description: "Valuable, but slow-growing. Despite its pale color, the florets are packed with nutrients." #!String
+    CauliflowerSeeds_Name: "Cauliflower Seeds" #!String
+    CauliflowerSeeds_Description: "Plant these in the spring. Takes 12 days to produce a large cauliflower." #!String
+    CaveCarrot_Name: "Cave Carrot" #!String
+    CaveCarrot_Description: "A starchy snack found in caves. It helps miners work longer." #!String
+    CaveJelly_Name: "Cave Jelly" #!String
+    CaveJelly_Description: "A rare jelly found in underground lakes." #!String
+    Caviar_Name: "Caviar" #!String
+    Caviar_Description: "The cured roe of a sturgeon fish. Considered to be a luxurious delicacy!" #!String
+    Celestine_Name: "Celestine" #!String
+    Celestine_Description: "Some early life forms had bones made from this." #!String
+    ChallengeBait_Name: "Challenge Bait" #!String
+    ChallengeBait_Description: "A \"perfect\" catch yields triple the fish. However, each time a fish escapes the \"fishing bar\", the catch is reduced." #!String
+    Chanterelle_Name: "Chanterelle" #!String
+    Chanterelle_Description: "A tasty mushroom with a fruity smell and slightly peppery flavor." #!String
+    Cheese_Name: "Cheese" #!String
+    Cheese_Description: "It's your basic cheese." #!String
+    CheeseCauliflower_Name: "Cheese Cauliflower" #!String
+    CheeseCauliflower_Description: "It smells great!" #!String
+    Cherry_Name: "Cherry" #!String
+    Cherry_Description: "It's popular, and ripens sooner than most other fruits." #!String
+    CherryBomb_Name: "Cherry Bomb" #!String
+    CherryBomb_Description: "Generates a small explosion. Stand back!" #!String
+    CherrySapling_Name: "Cherry Sapling" #!String
+    CherrySapling_Description: "Takes 28 days to produce a mature Cherry tree. Bears fruit in the spring. Only grows if the 8 surrounding \"tiles\" are empty." #!String
+    ChewingStick_Name: "Chewing Stick" #!String
+    ChewingStick_Description: "Ancient people chewed on these to keep their teeth clean." #!String
+    ChickenStatue_Name: "Chicken Statue" #!String
+    ChickenStatue_Description: "It's a statue of a chicken on a bronze base. The ancient people of this area must have been very fond of chickens." #!String
+    ChippedAmphora_Name: "Chipped Amphora" #!String
+    ChippedAmphora_Description: "An ancient vessel made of ceramic material. Used to transport both dry and wet goods." #!String
+    ChocolateCake_Name: "Chocolate Cake" #!String
+    ChocolateCake_Description: "Rich and moist with a thick fudge icing." #!String
+    Chowder_Name: "Chowder" #!String
+    Chowder_Description: "A perfect way to warm yourself after a cold night at sea." #!String
+    Chub_Name: "Chub" #!String
+    Chub_Description: "A common freshwater fish known for its voracious appetite." #!String
+    CinderShard_Name: "Cinder Shard" #!String
+    CinderShard_Description: "You can feel a warm glow from within this stone." #!String
+    CinderShardStone_Name: "Cinder Shard Stone" #!String
+    CinderShardStone_Description: "Break apart to obtain cinder shards." #!String
+    Clam_Name: "Clam" #!String
+    Clam_Description: "There's a chewy little guy in there..." #!String
+    Clay_Name: "Clay" #!String
+    Clay_Description: "Used in crafting and construction." #!String
+    ClayStone_Name: "Clay Stone" #!String
+    ClayStone_Description: "Break apart to obtain clay." #!String
+    Cloth_Name: "Cloth" #!String
+    Cloth_Description: "A bolt of fine wool cloth." #!String
+    Coal_Name: "Coal" #!String
+    Coal_Description: "A combustible rock that is useful for crafting and smelting." #!String
+    CobblestonePath_Name: "Cobblestone Path" #!String
+    CobblestonePath_Description: "Place on the ground to create paths or to spruce up your floors." #!String
+    Cockle_Name: "Cockle" #!String
+    Cockle_Description: "A common saltwater clam." #!String
+    Coconut_Name: "Coconut" #!String
+    Coconut_Description: "A seed of the coconut palm. It has many culinary uses." #!String
+    Coffee_Name: "Coffee" #!String
+    Coffee_Description: "It smells delicious. This is sure to give you a boost." #!String
+    CoffeeBean_Name: "Coffee Bean" #!String
+    CoffeeBean_Description: "Plant in spring or summer to grow a coffee plant. Place five beans in a keg to make coffee." #!String
+    Coleslaw_Name: "Coleslaw" #!String
+    Coleslaw_Description: "It's light, fresh and very healthy." #!String
+    CombinedRing_Name: "Combined Ring" #!String
+    CombinedRing_Description: "..." #!String
+    CommonMushroom_Name: "Common Mushroom" #!String
+    CommonMushroom_Description: "Slightly nutty, with good texture." #!String
+    CompleteBreakfast_Name: "Complete Breakfast" #!String
+    CompleteBreakfast_Description: "You'll feel ready to take on the world!" #!String
+    ConcernedApeMask_Name: "???" #!String
+    ConcernedApeMask_Description: "???" #!String
+    Cookie_Name: "Cookies" #!String
+    Cookie_Description: "Very chewy." #!String
+    CookoutKit_Name: "Cookout Kit" #!String
+    CookoutKit_Description: "Use this to create a cooking campfire, allowing you to cook on-the-go!" #!String
+    CopperBar_Name: "Copper Bar" #!String
+    CopperBar_Description: "A bar of pure copper." #!String
+    CopperOre_Name: "Copper Ore" #!String
+    CopperOre_Description: "A common ore that can be smelted into bars." #!String
+    CopperStone_Name: "Copper Stone" #!String
+    CopperStone_Description: "There's copper ore in this stone." #!String
+    Coral_Name: "Coral" #!String
+    Coral_Description: "A colony of tiny creatures that clump together to form beautiful structures." #!String
+    CorkBobber_Name: "Cork Bobber" #!String
+    CorkBobber_Description: "Slightly increases the size of your \"fishing bar\"." #!String
+    Corn_Name: "Corn" #!String
+    Corn_Description: "One of the most popular grains. The sweet, fresh cobs are a summer favorite." #!String
+    CornSeeds_Name: "Corn Seeds" #!String
+    CornSeeds_Description: "Plant these in the summer or fall. Takes 14 days to mature, and continues to produce after first harvest." #!String
+    Crab_Name: "Crab" #!String
+    Crab_Description: "A marine crustacean with two powerful pincers." #!String
+    CrabCakes_Name: "Crab Cakes" #!String
+    CrabCakes_Description: "Crab, bread crumbs, and egg formed into patties then fried to a golden brown." #!String
+    CrabPot_Name: "Crab Pot" #!String
+    CrabPot_Description: "Place it in the water, load it with bait, and check the next day to see if you've caught anything. Works in streams, lakes, and the ocean." #!String
+    CrabshellRing_Name: "Crabshell Ring" #!String
+    CrabshellRing_Description: "The top of the ring is made from enchanted crab shell." #!String
+    Cranberries_Name: "Cranberries" #!String
+    Cranberries_Description: "These tart red berries are a traditional winter food." #!String
+    CranberryCandy_Name: "Cranberry Candy" #!String
+    CranberryCandy_Description: "It's sweet enough to mask the bitter fruit." #!String
+    CranberrySauce_Name: "Cranberry Sauce" #!String
+    CranberrySauce_Description: "A festive treat." #!String
+    CranberrySeeds_Name: "Cranberry Seeds" #!String
+    CranberrySeeds_Description: "Plant these in the fall. Takes 7 days to mature, and continues to produce after first harvest." #!String
+    Crayfish_Name: "Crayfish" #!String
+    Crayfish_Description: "A small freshwater relative of the lobster." #!String
+    Crimsonfish_Name: "Crimsonfish" #!String
+    Crimsonfish_Description: "Lives deep in the ocean but likes to lay its eggs in the warm summer water." #!String
+    CrispyBass_Name: "Crispy Bass" #!String
+    CrispyBass_Description: "Wow, the breading is perfect." #!String
+    Crocus_Name: "Crocus" #!String
+    Crocus_Description: "A flower that can bloom in the winter." #!String
+    CrystalFloor_Name: "Crystal Floor" #!String
+    CrystalFloor_Description: "Place on the ground to create paths or to spruce up your floors." #!String
+    CrystalFruit_Name: "Crystal Fruit" #!String
+    CrystalFruit_Description: "A delicate fruit that pops up from the snow." #!String
+    CrystalPath_Name: "Crystal Path" #!String
+    CrystalPath_Description: "Place on the ground to create paths or to spruce up your floors." #!String
+    CuriosityLure_Name: "Curiosity Lure" #!String
+    CuriosityLure_Description: "Increases your chance to catch rare fish." #!String
+    Daffodil_Name: "Daffodil" #!String
+    Daffodil_Description: "A traditional spring flower that makes a nice gift." #!String
+    Dandelion_Name: "Dandelion" #!String
+    Dandelion_Description: "Not the prettiest flower, but the leaves make a good salad." #!String
+    DecorativePot_Name: "Decorative Pot" #!String
+    DecorativePot_Description: "A replica of an ancient pot." #!String
+    DeluxeBait_Name: "Deluxe Bait" #!String
+    DeluxeBait_Description: "Causes fish to bite even faster and increases size of the \"fishing bar\"." #!String
+    DeluxeFertilizer_Name: "Deluxe Fertilizer" #!String
+    DeluxeFertilizer_Description: "Greatly improves soil quality, increasing your chance to grow quality crops. Mix into tilled soil." #!String
+    DeluxeRetainingSoil_Name: "Deluxe Retaining Soil" #!String
+    DeluxeRetainingSoil_Description: "This soil has a 100% chance of staying watered overnight. Mix into tilled soil." #!String
+    DeluxeSpeedGro_Name: "Deluxe Speed-Gro" #!String
+    DeluxeSpeedGro_Description: "Stimulates leaf production. Guaranteed to increase growth rate by at least 25%. Mix into tilled soil." #!String
+    Diamond_Name: "Diamond" #!String
+    Diamond_Description: "A rare and valuable gem." #!String
+    DiamondStone_Name: "Diamond Stone" #!String
+    DiamondStone_Description: "Break apart to obtain diamonds." #!String
+    DinosaurEgg_Name: "Dinosaur Egg" #!String
+    DinosaurEgg_Description: "A giant dino egg... The entire shell is still intact!" #!String
+    DinosaurMayonnaise_Name: "Dinosaur Mayonnaise" #!String
+    DinosaurMayonnaise_Description: "It's thick and creamy, with a vivid green hue. It smells like grass and leather." #!String
+    DishOTheSea_Name: "Dish O' The Sea" #!String
+    DishOTheSea_Description: "This'll keep you warm in the cold sea air." #!String
+    Dolomite_Name: "Dolomite" #!String
+    Dolomite_Description: "It can occur in coral reefs, often near an underwater volcano." #!String
+    Dorado_Name: "Dorado" #!String
+    Dorado_Description: "A fierce carnivore with brilliant orange scales." #!String
+    DragonTooth_Name: "Dragon Tooth" #!String
+    DragonTooth_Description: "These are rumored to be the teeth of ancient serpents. The enamel is made of pure iridium!" #!String
+    DressedSpinner_Name: "Dressed Spinner" #!String
+    DressedSpinner_Description: "The metal tab and colorful streamers create an enticing spectacle for fish. Increases the bite-rate when fishing." #!String
+    DriedFruit_Name: "Dried" #!String
+    DriedFruit_Description: "Chewy pieces of dried {0}." #!String
+    DriedFruit_CollectionsTabDescription: "Chewy pieces of dried fruit." #!String
+    DriedFruit_CollectionsTabName: "Dried Fruit" #!String
+    DriedFruit_Flavored_Name: "Dried {0}" #!String
+    DriedMushrooms_Name: "Dried" #!String
+    DriedMushrooms_Description: "A package of gourmet mushrooms." #!String
+    DriedMushrooms_CollectionsTabDescription: "A package of gourmet mushrooms." #!String
+    DriedMushrooms_CollectionsTabName: "Dried Mushrooms" #!String
+    DriedStarfish_Name: "Dried Starfish" #!String
+    DriedStarfish_Description: "A starfish from the primordial ocean. It's an unusually pristine specimen!" #!String
+    Driftwood_Name: "Driftwood" #!String
+    Driftwood_Description: "A piece of wood from the sea." #!String
+    DrumBlock_Name: "Drum Block" #!String
+    DrumBlock_Description: "Plays a drum sound when you walk past." #!String
+    DuckEgg_Name: "Duck Egg" #!String
+    DuckEgg_Description: "It's still warm." #!String
+    DuckFeather_Name: "Duck Feather" #!String
+    DuckFeather_Description: "It's so colorful." #!String
+    DuckMayonnaise_Name: "Duck Mayonnaise" #!String
+    DuckMayonnaise_Description: "It's a rich, yellow mayonnaise." #!String
+    DwarfGadget_Name: "Dwarf Gadget" #!String
+    DwarfGadget_Description: "It's a piece of the advanced technology once known to the dwarves. It's still glowing and humming, but you're unable to understand how it works." #!String
+    DwarfScrollI_Name: "Dwarf Scroll I" #!String
+    DwarfScrollI_Description: "A yellowed scroll of parchment filled with dwarven script. This one's tied with a red bow." #!String
+    DwarfScrollII_Name: "Dwarf Scroll II" #!String
+    DwarfScrollII_Description: "A yellowed scroll of parchment filled with dwarven script. This one's tied with a green ribbon." #!String
+    DwarfScrollIII_Name: "Dwarf Scroll III" #!String
+    DwarfScrollIII_Description: "A yellowed scroll of parchment filled with dwarven script. This one's tied with a blue rope." #!String
+    DwarfScrollIV_Name: "Dwarf Scroll IV" #!String
+    DwarfScrollIV_Description: "A yellowed scroll of parchment filled with dwarven script. This one's tied with a golden chain." #!String
+    DwarvishHelm_Name: "Dwarvish Helm" #!String
+    DwarvishHelm_Description: "It's one of the helmets commonly worn by dwarves. The thick metal plating protects them from falling debris and stalactites." #!String
+    DwarvishTranslationGuide_Name: "Dwarvish Translation Guide" #!String
+    DwarvishTranslationGuide_Description: "Teaches you dwarvish." #!String
+    EarthCrystal_Name: "Earth Crystal" #!String
+    EarthCrystal_Description: "A resinous substance found near the surface." #!String
+    Ectoplasm_Name: "Ectoplasm" #!String
+    Ectoplasm_Description: "A thick, slimy goop that the Wizard wants for some reason." #!String
+    Eel_Name: "Eel" #!String
+    Eel_Description: "A long, slippery little fish." #!String
+    Eggplant_Name: "Eggplant" #!String
+    Eggplant_Description: "A rich and wholesome relative of the tomato. Delicious fried or stewed." #!String
+    EggplantParmesan_Name: "Eggplant Parmesan" #!String
+    EggplantParmesan_Description: "Tangy, cheesy, and wonderful." #!String
+    EggplantSeeds_Name: "Eggplant Seeds" #!String
+    EggplantSeeds_Description: "Plant these in the fall. Takes 5 days to mature, and continues to produce after first harvest." #!String
+    ElvishJewelry_Name: "Elvish Jewelry" #!String
+    ElvishJewelry_Description: "Dirty but still beautiful. On the side is a flowing script thought by some to be the ancient language of the elves. No Elvish bones have ever been found." #!String
+    Emerald_Name: "Emerald" #!String
+    Emerald_Description: "A precious stone with a brilliant green color." #!String
+    EmeraldRing_Name: "Emerald Ring" #!String
+    EmeraldRing_Description: "Increases weapon speed by 10%." #!String
+    EmeraldStone_Name: "Emerald Stone" #!String
+    EmeraldStone_Description: "Break apart to obtain emeralds." #!String
+    EnergyTonic_Name: "Energy Tonic" #!String
+    EnergyTonic_Description: "Restores a lot of energy." #!String
+    Enricher_Name: "Enricher" #!String
+    Enricher_Description: "Place on a sprinkler and load with fertilizer to automatically apply it when planting seeds nearby." #!String
+    Escargot_Name: "Escargot" #!String
+    Escargot_Description: "Butter-soaked snails cooked to perfection." #!String
+    Esperite_Name: "Esperite" #!String
+    Esperite_Description: "The crystals glow bright green when stimulated." #!String
+    ExplosiveAmmo_Name: "Explosive Ammo" #!String
+    ExplosiveAmmo_Description: "Fire this with the slingshot." #!String
+    FairyDust_Name: "Fairy Dust" #!String
+    FairyDust_Description: "Sprinkle on kegs, furnaces, and other refining equipment to instantly receive their product." #!String
+    FairyRose_Name: "Fairy Rose" #!String
+    FairyRose_Description: "An old folk legend suggests that the sweet smell of this flower attracts fairies." #!String
+    FairySeeds_Name: "Fairy Seeds" #!String
+    FairySeeds_Description: "Plant in fall. Takes 12 days to produce a mysterious flower. Assorted Colors." #!String
+    FairyStone_Name: "Fairy Stone" #!String
+    FairyStone_Description: "An old miner's song suggests these are made from the bones of ancient fairies." #!String
+    FallSeeds_Name: "Fall Seeds" #!String
+    FallSeeds_Description: "An assortment of wild fall seeds." #!String
+    FarAwayStone_Name: "Far Away Stone" #!String
+    FarAwayStone_Description: "A stone of unknown origins. Looks like it could be placed into something." #!String
+    FarmersLunch_Name: "Farmer's Lunch" #!String
+    FarmersLunch_Description: "This'll keep you going." #!String
+    Fiber_Name: "Fiber" #!String
+    Fiber_Description: "Raw material sourced from plants." #!String
+    FiberSeeds_Name: "Fiber Seeds" #!String
+    FiberSeeds_Description: "Plant these in any season. Does not require watering. Harvest with the scythe. Takes 7 days to grow." #!String
+    FiddleheadFern_Name: "Fiddlehead Fern" #!String
+    FiddleheadFern_Description: "The young shoots are an edible specialty." #!String
+    FiddleheadRisotto_Name: "Fiddlehead Risotto" #!String
+    FiddleheadRisotto_Description: "A creamy rice dish served with sauteed fern heads. It's a little bland." #!String
+    FieldSnack_Name: "Field Snack" #!String
+    FieldSnack_Description: "A quick snack to fuel the hungry forager." #!String
+    FireOpal_Name: "Fire Opal" #!String
+    FireOpal_Description: "A rare variety of opal, named for its red spots." #!String
+    FireQuartz_Name: "Fire Quartz" #!String
+    FireQuartz_Description: "A glowing red crystal commonly found near hot lava." #!String
+    FireworksGreen_Name: "Fireworks (Green)" #!String
+    FireworksGreen_Description: "An old tradition for celebrations and festivities. Handle with care!" #!String
+    FireworksPurple_Name: "Fireworks (Purple)" #!String
+    FireworksPurple_Description: "An old tradition for celebrations and festivities. Handle with care!" #!String
+    FireworksRed_Name: "Fireworks (Red)" #!String
+    FireworksRed_Description: "An old tradition for celebrations and festivities. Handle with care!" #!String
+    FishStew_Name: "Fish Stew" #!String
+    FishStew_Description: "It smells a lot like the sea. Tastes better, though." #!String
+    FishTaco_Name: "Fish Taco" #!String
+    FishTaco_Description: "It smells delicious." #!String
+    Flounder_Name: "Flounder" #!String
+    Flounder_Description: "It lives on the bottom, so both eyes are on top of its head." #!String
+    Fluorapatite_Name: "Fluorapatite" #!String
+    Fluorapatite_Description: "Small amounts are found in human teeth." #!String
+    FluteBlock_Name: "Flute Block" #!String
+    FluteBlock_Description: "Plays a flute sound when you walk past." #!String
+    FossilizedLeg_Name: "Fossilized Leg" #!String
+    FossilizedLeg_Description: "A thick and sturdy leg bone." #!String
+    FossilizedRibs_Name: "Fossilized Ribs" #!String
+    FossilizedRibs_Description: "Long ago, these ribs protected the body of a large animal." #!String
+    FossilizedSkull_Name: "Fossilized Skull" #!String
+    FossilizedSkull_Description: "It's a perfect specimen!" #!String
+    FossilizedSpine_Name: "Fossilized Spine" #!String
+    FossilizedSpine_Description: "A column of interlocking vertebrae." #!String
+    FossilizedTail_Name: "Fossilized Tail" #!String
+    FossilizedTail_Description: "This tail has a club-like feature at the tip." #!String
+    FossilStone_Name: "Fossil Stone" #!String
+    FossilStone_Description: "Break apart to obtain fossils and bones." #!String
+    FriedCalamari_Name: "Fried Calamari" #!String
+    FriedCalamari_Description: "It's so chewy." #!String
+    FriedEel_Name: "Fried Eel" #!String
+    FriedEel_Description: "Greasy but flavorful." #!String
+    FriedEgg_Name: "Fried Egg" #!String
+    FriedEgg_Description: "Sunny-side up." #!String
+    FriedMushroom_Name: "Fried Mushroom" #!String
+    FriedMushroom_Description: "Earthy and aromatic." #!String
+    FrozenGeode_Name: "Frozen Geode" #!String
+    FrozenGeode_Description: "A blacksmith can break this open for you." #!String
+    FrozenGeodeStone_Name: "Frozen Geode Stone" #!String
+    FrozenGeodeStone_Description: "Break apart to obtain frozen geodes." #!String
+    FrozenTear_Name: "Frozen Tear" #!String
+    FrozenTear_Description: "A crystal fabled to be the frozen tears of a yeti." #!String
+    FruitSalad_Name: "Fruit Salad" #!String
+    FruitSalad_Description: "A delicious combination of summer fruits." #!String
+    GalaxySoul_Name: "Galaxy Soul" #!String
+    GalaxySoul_Description: "Forge 3 of these into a Galaxy weapon to unleash its final form." #!String
+    Garlic_Name: "Garlic" #!String
+    Garlic_Description: "Adds a wonderful zestiness to dishes. High quality garlic can be pretty spicy." #!String
+    GarlicSeeds_Name: "Garlic Seeds" #!String
+    GarlicSeeds_Description: "Plant these in the spring. Takes 4 days to mature." #!String
+    Gate_Name: "Gate" #!String
+    Gate_Description: "Allows you to pass through a fence." #!String
+    Geminite_Name: "Geminite" #!String
+    Geminite_Description: "Occurs in brilliant clusters." #!String
+    GemStone_Name: "Gem Stone" #!String
+    GemStone_Description: "Break apart to obtain stone, ores, or geodes." #!String
+    Geode_Name: "Geode" #!String
+    Geode_Description: "A blacksmith can break this open for you." #!String
+    GeodeStone_Name: "Geode Stone" #!String
+    GeodeStone_Description: "Break apart to obtain geodes." #!String
+    GhostCrystal_Name: "Ghost Crystal" #!String
+    GhostCrystal_Description: "There is an aura of coldness around this crystal." #!String
+    Ghostfish_Name: "Ghostfish" #!String
+    Ghostfish_Description: "A pale, blind fish found in underground lakes." #!String
+    Ginger_Name: "Ginger" #!String
+    Ginger_Description: "This sharp, spicy root is said to increase vitality." #!String
+    GingerAle_Name: "Ginger Ale" #!String
+    GingerAle_Description: "A zesty soda known for its soothing effect on the stomach." #!String
+    Glacierfish_Name: "Glacierfish" #!String
+    Glacierfish_Description: "Builds a nest on the underside of glaciers." #!String
+    GlacierfishJr_Name: "Glacierfish Jr." #!String
+    GlacierfishJr_Description: "The original Glacierfish had a son..." #!String
+    GlassShards_Name: "Glass Shards" #!String
+    GlassShards_Description: "A mixture of glass shards smoothed by centuries of ocean surf. These could have belonged to an ancient mosaic or necklace." #!String
+    GlazedYams_Name: "Glazed Yams" #!String
+    GlazedYams_Description: "Sweet and satisfying... The sugar gives it a hint of caramel." #!String
+    GlowRing_Name: "Glow Ring" #!String
+    GlowRing_Description: "Emits a constant light." #!String
+    GlowstoneRing_Name: "Glowstone Ring" #!String
+    GlowstoneRing_Description: "Emits a constant light, and also increases your radius for collecting items." #!String
+    GoatCheese_Name: "Goat Cheese" #!String
+    GoatCheese_Description: "Soft cheese made from goat's milk." #!String
+    GoatMilk_Name: "Goat Milk" #!String
+    GoatMilk_Description: "The milk of a goat." #!String
+    Goby_Name: "Goby" #!String
+    Goby_Description: "Some types of Gobies can climb up waterfalls." #!String
+    GoldBar_Name: "Gold Bar" #!String
+    GoldBar_Description: "A bar of pure gold." #!String
+    GoldCoin_Name: "Gold Coin" #!String
+    GoldCoin_Description: "1 Gold coin." #!String
+    GoldenAnimalCracker_Name: "Golden Animal Cracker" #!String
+    GoldenAnimalCracker_Description: "Give this to a farm animal to permanently double its produce yield. Doesn't work on pigs." #!String
+    GoldenBobber_Name: "Golden Bobber" #!String
+    GoldenBobber_Description: "Willy is looking for this." #!String
+    GoldenCoconut_Name: "Golden Coconut" #!String
+    GoldenCoconut_Description: "This is one tough nut to crack, but a professional might be able to break it open." #!String
+    GoldenEgg_Name: "Golden Egg" #!String
+    GoldenEgg_Description: "A very rare and special egg with a solid gold shell." #!String
+    GoldenMask_Name: "Golden Mask" #!String
+    GoldenMask_Description: "A creepy golden mask probably used in an ancient magic ritual. A socket in the forehead contains a large purple gemstone." #!String
+    GoldenMysteryBox_Name: "Golden Mystery Box" #!String
+    GoldenPumpkin_Name: "Golden Pumpkin" #!String
+    GoldenPumpkin_Description: "It's valuable but has no other purpose." #!String
+    GoldenRelic_Name: "Golden Relic" #!String
+    GoldenRelic_Description: "It's a golden slab with hieroglyphs and pictures emblazoned onto the front." #!String
+    GoldenWalnut_Name: "Golden Walnut" #!String
+    GoldenWalnut_Description: "To the parrots of Ginger Island, this nut is the finest delicacy." #!String
+    GoldOre_Name: "Gold Ore" #!String
+    GoldOre_Description: "A precious ore that can be smelted into bars." #!String
+    GoldStone_Name: "Gold Stone" #!String
+    GoldStone_Description: "Break apart to obtain gold ore." #!String
+    GourmetTomatoSalt_Name: "Gourmet Tomato Salt" #!String
+    GourmetTomatoSalt_Description: "A rare, delicious and savory salt." #!String
+    Granite_Name: "Granite" #!String
+    Granite_Description: "A speckled Mineral that is commonly used in construction." #!String
+    Grape_Name: "Grape" #!String
+    Grape_Description: "A sweet cluster of fruit." #!String
+    GrapeStarter_Name: "Grape Starter" #!String
+    GrapeStarter_Description: "Plant these in the fall. Takes 10 days to grow, but keeps producing after that. Grows on a trellis." #!String
+    GrassBook_Name: "Ol' Slitherlegs" #!String
+    GrassBook_Description: "You will now run a lot faster through grass and crops." #!String
+    GrassStarter_Name: "Grass Starter" #!String
+    GrassStarter_Description: "Place this on your farm to start a new patch of grass." #!String
+    GravelPath_Name: "Gravel Path" #!String
+    GravelPath_Description: "Place on the ground to create paths or to spruce up your floors." #!String
+    GreenAlgae_Name: "Green Algae" #!String
+    GreenAlgae_Description: "It's really slimy." #!String
+    GreenBean_Name: "Green Bean" #!String
+    GreenBean_Description: "A juicy little bean with a cool, crisp snap." #!String
+    GreenRainWeeds_Name: "Green Rain Weeds" #!String
+    GreenRainWeeds_Description: "Might contain fibers or mixed seeds." #!String
+    GreenSlimeEgg_Name: "Green Slime Egg" #!String
+    GreenSlimeEgg_Description: "Can be hatched in a slime incubator." #!String
+    GreenTea_Name: "Green Tea" #!String
+    GreenTea_Description: "A pleasant, energizing beverage made from lightly processed tea leaves." #!String
+    HaleysLostBracelet_Name: "Haley's Lost Bracelet" #!String
+    HaleysLostBracelet_Description: "A family heirloom." #!String
+    Halibut_Name: "Halibut" #!String
+    Halibut_Description: "A flat fish that lives on the ocean floor." #!String
+    Hardwood_Name: "Hardwood" #!String
+    Hardwood_Description: "A special kind of wood with superior strength and beauty." #!String
+    HardwoodFence_Name: "Hardwood Fence" #!String
+    HardwoodFence_Description: "The most durable type of fence." #!String
+    Hashbrowns_Name: "Hashbrowns" #!String
+    Hashbrowns_Description: "Crispy and golden-brown!" #!String
+    Hay_Name: "Hay" #!String
+    Hay_Description: "Dried grass used as animal food." #!String
+    Hazelnut_Name: "Hazelnut" #!String
+    Hazelnut_Description: "That's one big hazelnut!" #!String
+    Hedge_Name: "Hedge" #!String
+    Hedge_Description: "A shaped bush that acts like a fence." #!String
+    Helvite_Name: "Helvite" #!String
+    Helvite_Description: "It grows in a triangular column." #!String
+    Hematite_Name: "Hematite" #!String
+    Hematite_Description: "An iron-based Mineral with interesting magnetic properties." #!String
+    Herring_Name: "Herring" #!String
+    Herring_Description: "A common ocean fish." #!String
+    Holly_Name: "Holly" #!String
+    Holly_Description: "The leaves and bright red berries make a popular winter decoration." #!String
+    Honey_Name: "Honey" #!String
+    Honey_Description: "It's a sweet syrup produced by bees." #!String
+    Honey_Flavored_Name: "{0} Honey" #!String
+    Honey_Wild_Name: "Wild Honey" #!String
+    Hops_Name: "Hops" #!String
+    Hops_Description: "A bitter, tangy flower used to flavor beer." #!String
+    HopsStarter_Name: "Hops Starter" #!String
+    HopsStarter_Description: "Plant these in the summer. Takes 11 days to grow, but keeps producing after that. Grows on a trellis." #!String
+    HorseFlute_Name: "Horse Flute" #!String
+    HorseFlute_Description: "Playing this flute will summon your horse. Only works outdoors." #!String
+    HotJavaRing_Name: "Hot Java Ring" #!String
+    HotJavaRing_Description: "Greatly increases your chance to find coffee drinks when slaying monsters." #!String
+    HotPepper_Name: "Hot Pepper" #!String
+    HotPepper_Description: "Fiery hot with a hint of sweetness." #!String
+    HyperSpeedGro_Name: "Hyper Speed-Gro" #!String
+    HyperSpeedGro_Description: "Greatly stimulates leaf production. Guaranteed to increase growth rate by at least 33%. Mix into tilled soil." #!String
+    IceCream_Name: "Ice Cream" #!String
+    IceCream_Description: "It's hard to find someone who doesn't like this." #!String
+    IceCrystal_Name: "Ice Crystal" #!String
+    IceCrystal_Description: "Might contain refined quartz." #!String
+    IcePip_Name: "Ice Pip" #!String
+    IcePip_Description: "A rare fish that thrives in extremely cold conditions." #!String
+    ImmunityBand_Name: "Immunity Band" #!String
+    ImmunityBand_Description: "The top of the ring is made from enchanted purple wool." #!String
+    IridiumBand_Name: "Iridium Band" #!String
+    IridiumBand_Description: "Glows, attracts items, and increases attack damage by 10%." #!String
+    IridiumBar_Name: "Iridium Bar" #!String
+    IridiumBar_Description: "A bar of pure iridium." #!String
+    IridiumMilk_Name: "Iridium Milk" #!String
+    IridiumMilk_Description: "A powerful 'milk' of unknown origin..." #!String
+    IridiumOre_Name: "Iridium Ore" #!String
+    IridiumOre_Description: "An exotic ore with many curious properties. Can be smelted into bars." #!String
+    IridiumSprinkler_Name: "Iridium Sprinkler" #!String
+    IridiumSprinkler_Description: "Waters the 24 adjacent tiles every morning." #!String
+    IridiumStone_Name: "Iridium Stone" #!String
+    IridiumStone_Description: "Break apart to obtain iridium ore." #!String
+    IronBar_Name: "Iron Bar" #!String
+    IronBar_Description: "A bar of pure iron." #!String
+    IronFence_Name: "Iron Fence" #!String
+    IronFence_Description: "Lasts longer than a stone fence." #!String
+    IronOre_Name: "Iron Ore" #!String
+    IronOre_Description: "A fairly common ore that can be smelted into bars." #!String
+    IronStone_Name: "Iron Stone" #!String
+    IronStone_Description: "Break apart to obtain iron ore." #!String
+    JackOLantern_Name: "Jack-O-Lantern" #!String
+    JackOLantern_Description: "A whimsical fall decoration." #!String
+    Jade_Name: "Jade" #!String
+    Jade_Description: "A pale green ornamental stone." #!String
+    JadeRing_Name: "Jade Ring" #!String
+    JadeRing_Description: "Increases critical strike power by 10%." #!String
+    JadeStone_Name: "Jade Stone" #!String
+    JadeStone_Description: "Break apart to obtain jade." #!String
+    Jagoite_Name: "Jagoite" #!String
+    Jagoite_Description: "A high volume of tiny crystals makes it very glittery." #!String
+    Jamborite_Name: "Jamborite" #!String
+    Jamborite_Description: "The crystals are so tightly packed it almost looks fuzzy." #!String
+    Jasper_Name: "Jasper" #!String
+    Jasper_Description: "When polished, this stone becomes attractively luminous. Prized by ancient peoples for thousands of years." #!String
+    JazzSeeds_Name: "Jazz Seeds" #!String
+    JazzSeeds_Description: "Plant in spring. Takes 7 days to produce a blue puffball flower." #!String
+    Jelly_Name: "Jelly" #!String
+    Jelly_Description: "Gooey." #!String
+    Jelly_Flavored_Name: "{0} Jelly" #!String
+    Jelly_Flavored_(O)282_Name: "Cranberry Jelly" #!String
+    JojaCola_Name: "Joja Cola" #!String
+    JojaCola_Description: "The flagship product of Joja corporation." #!String
+    JournalScrap_Name: "Journal Scrap" #!String
+    JournalScrap_Description: "A damp tattered page torn from an old journal..." #!String
+    Juice_Name: "Juice" #!String
+    Juice_Description: "A sweet, nutritious beverage." #!String
+    Juice_Flavored_Name: "{0} Juice" #!String
+    Juice_Flavored_(O)282_Name: "Cranberry Juice" #!String
+    JukeboxRing_Name: "Jukebox Ring" #!String
+    JukeboxRing_Description: "Plays a random assortment of music you've heard." #!String
+    Kale_Name: "Kale" #!String
+    Kale_Description: "The waxy leaves are great in soups and stir fries." #!String
+    KaleSeeds_Name: "Kale Seeds" #!String
+    KaleSeeds_Description: "Plant these in the spring. Takes 6 days to mature. Harvest with the scythe." #!String
+    Kyanite_Name: "Kyanite" #!String
+    Kyanite_Description: "The geometric faces are as smooth as glass." #!String
+    LargeBrownEgg_Name: "Large Egg" #!String
+    LargeBrownEgg_Description: "It's an uncommonly large brown egg!" #!String
+    LargeMilk_Name: "Large Milk" #!String
+    LargeMilk_Description: "A large jug of cow's milk." #!String
+    LargemouthBass_Name: "Largemouth Bass" #!String
+    LargemouthBass_Description: "A popular fish that lives in lakes." #!String
+    LargeWhiteEgg_Name: "Large Egg" #!String
+    LargeWhiteEgg_Description: "It's an uncommonly large white egg!" #!String
+    LavaEel_Name: "Lava Eel" #!String
+    LavaEel_Description: "It can somehow survive in pools of red-hot lava." #!String
+    LeadBobber_Name: "Lead Bobber" #!String
+    LeadBobber_Description: "Adds weight to your \"fishing bar\", preventing it from bouncing along the bottom." #!String
+    Leek_Name: "Leek" #!String
+    Leek_Description: "A tasty relative of the onion." #!String
+    Legend_Name: "Legend" #!String
+    Legend_Description: "The king of all fish! They said he'd never be caught." #!String
+    LegendII_Name: "Legend II" #!String
+    LegendII_Description: "The successor to the original Legend." #!String
+    LemonStone_Name: "Lemon Stone" #!String
+    LemonStone_Description: "Some claim the powdered crystal is a dwarvish delicacy." #!String
+    LGoatMilk_Name: "L. Goat Milk" #!String
+    LGoatMilk_Description: "A gallon of creamy goat's milk." #!String
+    LifeElixir_Name: "Life Elixir" #!String
+    LifeElixir_Description: "Restores health to full." #!String
+    Limestone_Name: "Limestone" #!String
+    Limestone_Description: "A very common type of stone. It's not worth very much." #!String
+    Lingcod_Name: "Lingcod" #!String
+    Lingcod_Description: "A fearsome predator that will eat almost anything it can cram into its mouth." #!String
+    Lionfish_Name: "Lionfish" #!String
+    Lionfish_Description: "An aggressive, predatory fish with venomous spines." #!String
+    Lobster_Name: "Lobster" #!String
+    Lobster_Description: "A large ocean-dwelling crustacean with a strong tail." #!String
+    LobsterBisque_Name: "Lobster Bisque" #!String
+    LobsterBisque_Description: "This delicate soup is a secret family recipe of Willy's." #!String
+    LostAxe_Name: "Lost Axe" #!String
+    LostAxe_Description: "Robin's been looking everywhere for it." #!String
+    LostBook_Name: "Lost Book" #!String
+    LostBook_Description: "Writings from a wide variety of time periods." #!String
+    LuckyLunch_Name: "Lucky Lunch" #!String
+    LuckyLunch_Description: "A special little meal." #!String
+    LuckyPurpleShorts_Name: "Lucky Purple Shorts" #!String
+    LuckyPurpleShorts_Description: "Better not inspect these too closely." #!String
+    LuckyRing_Name: "Lucky Ring" #!String
+    LuckyRing_Description: "The lunar emblem is said to bring good luck to whoever wears it." #!String
+    Lumber_Name: "Lumber" #!String
+    Lumber_Description: "A versatile resource used for building and fuel." #!String
+    Lunarite_Name: "Lunarite" #!String
+    Lunarite_Description: "The cratered white orbs form a tight cluster." #!String
+    MagicBait_Name: "Magic Bait" #!String
+    MagicBait_Description: "Allows you to catch fish from any season, time, or weather, from whichever type of water you cast into." #!String
+    MagicRockCandy_Name: "Magic Rock Candy" #!String
+    MagicRockCandy_Description: "A rare and powerful candy infused with the essence of the prismatic shard." #!String
+    MagmaCap_Name: "Magma Cap" #!String
+    MagmaCap_Description: "A very rare mushroom that lives next to pools of lava." #!String
+    MagmaGeode_Name: "Magma Geode" #!String
+    MagmaGeode_Description: "A blacksmith can break this open for you." #!String
+    MagmaGeodeStone_Name: "Magma Geode Stone" #!String
+    MagmaGeodeStone_Description: "Break apart to obtain magma geodes." #!String
+    Magnet_Name: "Magnet" #!String
+    Magnet_Description: "Increases the chance of finding treasures when fishing. However, fish aren't crazy about the taste." #!String
+    MagnetRing_Name: "Magnet Ring" #!String
+    MagnetRing_Description: "Increases your radius for collecting items." #!String
+    MahoganySeed_Name: "Mahogany Seed" #!String
+    MahoganySeed_Description: "This can be planted to grow a mahogany tree." #!String
+    MakiRoll_Name: "Maki Roll" #!String
+    MakiRoll_Description: "Fish and rice wrapped in seaweed." #!String
+    Malachite_Name: "Malachite" #!String
+    Malachite_Description: "A popular ornamental stone, used in sculpture and to make green paint." #!String
+    Mango_Name: "Mango" #!String
+    Mango_Description: "A big, sweet tropical fruit with a unique flavor." #!String
+    MangoSapling_Name: "Mango Sapling" #!String
+    MangoSapling_Description: "Takes 28 days to produce a mature Mango tree. Bears fruit in the summer, or all year round when planted on Ginger Island." #!String
+    MangoStickyRice_Name: "Mango Sticky Rice" #!String
+    MangoStickyRice_Description: "Sweet mango and coconut transforms this rice into something very special." #!String
+    MapleBar_Name: "Maple Bar" #!String
+    MapleBar_Description: "It's a sweet doughnut topped with a rich maple glaze." #!String
+    MapleSeed_Name: "Maple Seed" #!String
+    MapleSeed_Description: "This can be planted to grow a maple tree." #!String
+    MapleSyrup_Name: "Maple Syrup" #!String
+    MapleSyrup_Description: "A sweet syrup with a unique flavor." #!String
+    Marble_Name: "Marble" #!String
+    Marble_Description: "A very popular material for sculptures and construction." #!String
+    Mayonnaise_Name: "Mayonnaise" #!String
+    Mayonnaise_Description: "It looks spreadable." #!String
+    Mead_Name: "Mead" #!String
+    Mead_Description: "A fermented beverage made from honey. Drink in moderation." #!String
+    MegaBomb_Name: "Mega Bomb" #!String
+    MegaBomb_Description: "Generates a powerful explosion. Use with extreme caution." #!String
+    Melon_Name: "Melon" #!String
+    Melon_Description: "A cool, sweet summer treat." #!String
+    MelonSeeds_Name: "Melon Seeds" #!String
+    MelonSeeds_Description: "Plant these in the summer. Takes 12 days to mature." #!String
+    MermaidsPendant_Name: "Mermaid's Pendant" #!String
+    MermaidsPendant_Description: "Give this to the person you want to marry." #!String
+    MidnightCarp_Name: "Midnight Carp" #!String
+    MidnightCarp_Description: "This shy fish only feels comfortable at night." #!String
+    MidnightSquid_Name: "Midnight Squid" #!String
+    MidnightSquid_Description: "A strange and mysterious denizen of the ocean's twilight depths." #!String
+    Milk_Name: "Milk" #!String
+    Milk_Description: "A jug of cow's milk." #!String
+    MinersTreat_Name: "Miner's Treat" #!String
+    MinersTreat_Description: "This should keep your energy up." #!String
+    MixedFlowerSeeds_Name: "Mixed Flower Seeds" #!String
+    MixedFlowerSeeds_Description: "An assortment of flower seeds. Plant them and see what grows!" #!String
+    MixedSeeds_Name: "Mixed Seeds" #!String
+    MixedSeeds_Description: "There's a little bit of everything here. Plant them and see what grows!" #!String
+    MonsterMusk_Name: "Monster Musk" #!String
+    MonsterMusk_Description: "Spray this on to draw more monsters out of hiding." #!String
+    Morel_Name: "Morel" #!String
+    Morel_Description: "Sought after for its unique nutty flavor." #!String
+    Moss_Name: "Moss" #!String
+    Moss_Description: "A special type of plant that grows in shady areas." #!String
+    MossSoup_Name: "Moss Soup" #!String
+    MossSoup_Description: "It's thick and slimy, but edible." #!String
+    MossySeed_Name: "Mossy Seed" #!String
+    MossySeed_Description: "This can be planted to grow rare wild trees." #!String
+    MovieTicket_Name: "Movie Ticket" #!String
+    MovieTicket_Description: "Admits one to the movie theater. Giving this to a friend invites them to the movies with you." #!String
+    MsAngler_Name: "Ms. Angler" #!String
+    MsAngler_Description: "Uses a bioluminescent dangler to attract prey." #!String
+    Mudstone_Name: "Mudstone" #!String
+    Mudstone_Description: "A fine-grained rock made from ancient clay or mud." #!String
+    MummifiedBat_Name: "Mummified Bat" #!String
+    MummifiedBat_Description: "The delicate wings have been perfectly preserved." #!String
+    MummifiedFrog_Name: "Mummified Frog" #!String
+    MummifiedFrog_Description: "This ancient frog may have lived in the jungle canopy." #!String
+    MuscleRemedy_Name: "Muscle Remedy" #!String
+    MuscleRemedy_Description: "When you've pushed your body too hard, drink this to remove 'Exhaustion'." #!String
+    MushroomTreeSeed_Name: "Mushroom Tree Seed" #!String
+    MushroomTreeSeed_Description: "Place this on your farm to plant a mushroom tree." #!String
+    Mussel_Name: "Mussel" #!String
+    Mussel_Description: "A common bivalve that often lives in clusters." #!String
+    MusselStone_Name: "Mussel Stone" #!String
+    MusselStone_Description: "There's mussels in this stone." #!String
+    MutantCarp_Name: "Mutant Carp" #!String
+    MutantCarp_Description: "The strange waters of the sewer turned this carp into a monstrosity." #!String
+    MysteryBox_Name: "Mystery Box" #!String
+    MysteryBox_Description: "A blacksmith can open this for you. Who knows what might be inside?" #!String
+    MysticStone_Name: "Mystic Stone" #!String
+    MysticStone_Description: "Break apart to obtain stone, ores, or geodes." #!String
+    MysticSyrup_Name: "Mystic Syrup" #!String
+    MysticSyrup_Description: "A very rare syrup that is said to have magic properties." #!String
+    MysticTreeSeed_Name: "Mystic Tree Seed" #!String
+    MysticTreeSeed_Description: "This can be planted to grow a special tree." #!String
+    NapalmRing_Name: "Napalm Ring" #!String
+    NapalmRing_Description: "When you defeat an enemy, they explode." #!String
+    NautilusFossil_Name: "Nautilus Fossil" #!String
+    NautilusFossil_Description: "This must've washed up ages ago from an ancient coral reef. " #!String
+    NautilusShell_Name: "Nautilus Shell" #!String
+    NautilusShell_Description: "An ancient shell." #!String
+    Nekoite_Name: "Nekoite" #!String
+    Nekoite_Description: "The delicate shards form a tiny pink meadow." #!String
+    Neptunite_Name: "Neptunite" #!String
+    Neptunite_Description: "A jet-black crystal that is unusually reflective." #!String
+    OakResin_Name: "Oak Resin" #!String
+    OakResin_Description: "A sticky, fragrant substance derived from oak sap." #!String
+    Obsidian_Name: "Obsidian" #!String
+    Obsidian_Description: "A volcanic glass that forms when lava cools rapidly." #!String
+    OceanStone_Name: "Ocean Stone" #!String
+    OceanStone_Description: "An old legend claims these stones are the mosaics of ancient mermaids." #!String
+    Octopus_Name: "Octopus" #!String
+    Octopus_Description: "A mysterious and intelligent creature." #!String
+    Oil_Name: "Oil" #!String
+    Oil_Description: "All purpose cooking oil." #!String
+    OilofGarlic_Name: "Oil of Garlic" #!String
+    OilofGarlic_Description: "Drink this and weaker monsters will avoid you." #!String
+    Omelet_Name: "Omelet" #!String
+    Omelet_Description: "It's super fluffy." #!String
+    OmniGeode_Name: "Omni Geode" #!String
+    OmniGeode_Description: "A blacksmith can break this open for you. These geodes contain a wide variety of minerals." #!String
+    OmniGeodeStone_Name: "Omni Geode Stone" #!String
+    OmniGeodeStone_Description: "Break apart to obtain omni geodes." #!String
+    Opal_Name: "Opal" #!String
+    Opal_Description: "Its internal structure causes it to reflect a rainbow of light." #!String
+    Orange_Name: "Orange" #!String
+    Orange_Description: "Juicy, tangy, and bursting with sweet summer aroma." #!String
+    OrangeSapling_Name: "Orange Sapling" #!String
+    OrangeSapling_Description: "Takes 28 days to produce a mature Orange tree. Bears fruit in the summer. Only grows if the 8 surrounding \"tiles\" are empty." #!String
+    OrnamentalFan_Name: "Ornamental Fan" #!String
+    OrnamentalFan_Description: "This exquisite fan most likely belonged to a noblewoman. Historians believe that the valley was a popular sixth-era vacation spot for the wealthy." #!String
+    OrnateNecklace_Name: "Ornate Necklace" #!String
+    OrnateNecklace_Description: "A fancy necklace found in the water outside of the bath house. It's still wet..." #!String
+    Orpiment_Name: "Orpiment" #!String
+    Orpiment_Description: "Despite its high toxicity, this Mineral is widely used in manufacturing and folk medicine." #!String
+    OstrichEgg_Name: "Ostrich Egg" #!String
+    OstrichEgg_Description: "It may be the world's largest egg." #!String
+    Oyster_Name: "Oyster" #!String
+    Oyster_Description: "Constantly filters water to find food. In the process, it removes dangerous toxins from the environment." #!String
+    PaleAle_Name: "Pale Ale" #!String
+    PaleAle_Description: "Drink in moderation." #!String
+    PaleBroth_Name: "Pale Broth" #!String
+    PaleBroth_Description: "A delicate broth with a hint of sulfur." #!String
+    PalmFossil_Name: "Palm Fossil" #!String
+    PalmFossil_Description: "Palm Fossils are relatively common, but this happens to be a particularly well-preserved specimen." #!String
+    Pancakes_Name: "Pancakes" #!String
+    Pancakes_Description: "A double stack of fluffy, soft pancakes." #!String
+    Parsnip_Name: "Parsnip" #!String
+    Parsnip_Description: "A spring tuber closely related to the carrot. It has an earthy taste and is full of nutrients." #!String
+    ParsnipSeeds_Name: "Parsnip Seeds" #!String
+    ParsnipSeeds_Description: "Plant these in the spring. Takes 4 days to mature." #!String
+    ParsnipSoup_Name: "Parsnip Soup" #!String
+    ParsnipSoup_Description: "It's fresh and hearty." #!String
+    Peach_Name: "Peach" #!String
+    Peach_Description: "It's almost fuzzy to the touch." #!String
+    PeachSapling_Name: "Peach Sapling" #!String
+    PeachSapling_Description: "Takes 28 days to produce a mature Peach tree. Bears fruit in the summer. Only grows if the 8 surrounding \"tiles\" are empty." #!String
+    Pearl_Name: "Pearl" #!String
+    Pearl_Description: "A rare treasure from the sea." #!String
+    PepperPoppers_Name: "Pepper Poppers" #!String
+    PepperPoppers_Description: "Spicy breaded peppers filled with cheese." #!String
+    PepperSeeds_Name: "Pepper Seeds" #!String
+    PepperSeeds_Description: "Plant these in the summer. Takes 5 days to mature, and continues to produce after first harvest." #!String
+    Perch_Name: "Perch" #!String
+    Perch_Description: "A freshwater fish of the winter." #!String
+    Periwinkle_Name: "Periwinkle" #!String
+    Periwinkle_Description: "A tiny freshwater snail that lives in a blue shell." #!String
+    PetLicense_Name: "Pet License" #!String
+    PetLicense_Description: "Invite a new pet into your home. If you don't have enough outdoor pet bowls for your pets, they will become upset." #!String
+    PetrifiedSlime_Name: "Petrified Slime" #!String
+    PetrifiedSlime_Description: "This little guy may be 100,000 years old." #!String
+    PhoenixRing_Name: "Phoenix Ring" #!String
+    PhoenixRing_Description: "Once a day, regain some health after being knocked out in combat." #!String
+    Pickles_Name: "Pickles" #!String
+    Pickles_Description: "A jar of your home-made pickles." #!String
+    Pickles_Flavored_Name: "Pickled {0}" #!String
+    PierresMissingStocklist_Name: "Pierre's Missing Stocklist" #!String
+    PierresMissingStocklist_Description: "Pierre might be interested in this." #!String
+    Pike_Name: "Pike" #!String
+    Pike_Description: "A freshwater fish that's difficult to catch." #!String
+    PinaColada_Name: "Piña Colada" #!String
+    PinaColada_Description: "Drink in moderation." #!String
+    Pineapple_Name: "Pineapple" #!String
+    Pineapple_Description: "A sweet and tangy tropical treat." #!String
+    PineappleSeeds_Name: "Pineapple Seeds" #!String
+    PineappleSeeds_Description: "Plant these in warm weather. Takes 14 days to mature, and keeps producing fruit after that." #!String
+    PineCone_Name: "Pine Cone" #!String
+    PineCone_Description: "This can be planted to grow a pine tree." #!String
+    PineTar_Name: "Pine Tar" #!String
+    PineTar_Description: "A pungent substance derived from pine sap." #!String
+    PinkCake_Name: "Pink Cake" #!String
+    PinkCake_Description: "There's little heart candies on top." #!String
+    PiratesLocket_Name: "Pirate's Locket" #!String
+    PiratesLocket_Description: "It's an old pirate's keepsake." #!String
+    Pizza_Name: "Pizza" #!String
+    Pizza_Description: "It's popular for all the right reasons." #!String
+    PlumPudding_Name: "Plum Pudding" #!String
+    PlumPudding_Description: "A traditional holiday treat." #!String
+    Poi_Name: "Poi" #!String
+    Poi_Description: "A traditional food with a delicate, sweet flavor when eaten fresh." #!String
+    Pomegranate_Name: "Pomegranate" #!String
+    Pomegranate_Description: "Within the fruit are clusters of juicy seeds." #!String
+    PomegranateSapling_Name: "Pomegranate Sapling" #!String
+    PomegranateSapling_Description: "Takes 28 days to produce a mature Pomegranate tree. Bears fruit in the fall. Only grows if the 8 surrounding \"tiles\" are empty." #!String
+    Poppy_Name: "Poppy" #!String
+    Poppy_Description: "In addition to its colorful flower, the Poppy has culinary and medicinal uses." #!String
+    PoppyseedMuffin_Name: "Poppyseed Muffin" #!String
+    PoppyseedMuffin_Description: "It has a soothing effect." #!String
+    PoppySeeds_Name: "Poppy Seeds" #!String
+    PoppySeeds_Description: "Plant in summer. Produces a bright red flower in 7 days." #!String
+    Potato_Name: "Potato" #!String
+    Potato_Description: "A widely cultivated tuber." #!String
+    PotatoSeeds_Name: "Potato Seeds" #!String
+    PotatoSeeds_Description: "Plant these in the spring. Takes 6 days to mature, and has a chance of yielding multiple potatoes at harvest." #!String
+    Powdermelon_Name: "Powdermelon" #!String
+    Powdermelon_Description: "Named for the powdery coating that forms on the surface, this melon is crisp and sweet, with a delicate flavor." #!String
+    PowdermelonSeeds_Name: "Powdermelon Seeds" #!String
+    PowdermelonSeeds_Description: "This special melon grows in the winter. Takes 7 days to grow." #!String
+    PrehistoricHandaxe_Name: "Prehistoric Handaxe" #!String
+    PrehistoricHandaxe_Description: "One of the earliest tools employed by humans. This \"crude\" tool was created by striking one rock with another to form a sharp edge." #!String
+    PrehistoricRib_Name: "Prehistoric Rib" #!String
+    PrehistoricRib_Description: "Little gouge marks on the side suggest that this rib was someone's dinner." #!String
+    PrehistoricScapula_Name: "Prehistoric Scapula" #!String
+    PrehistoricScapula_Description: "Commonly known as a \"shoulder blade\"... It's unclear what species it belonged to." #!String
+    PrehistoricSkull_Name: "Prehistoric Skull" #!String
+    PrehistoricSkull_Description: "This is definitely a mammalian skull." #!String
+    PrehistoricTibia_Name: "Prehistoric Tibia" #!String
+    PrehistoricTibia_Description: "A thick and sturdy leg bone." #!String
+    PrehistoricTool_Name: "Prehistoric Tool" #!String
+    PrehistoricTool_Description: "Some kind of gnarly old digging tool." #!String
+    PrehistoricVertebra_Name: "Prehistoric Vertebra" #!String
+    PrehistoricVertebra_Description: "A segment of some prehistoric creature's spine." #!String
+    PressureNozzle_Name: "Pressure Nozzle" #!String
+    PressureNozzle_Description: "Place on a sprinkler to increase its watering range." #!String
+    PrismaticJelly_Name: "Prismatic Jelly" #!String
+    PrismaticJelly_Description: "Harvested from the rare and elusive prismatic slime." #!String
+    PrismaticShard_Name: "Prismatic Shard" #!String
+    PrismaticShard_Description: "A very rare and powerful substance with unknown origins." #!String
+    PrizeTicket_Name: "Prize Ticket" #!String
+    PrizeTicket_Description: "Bring this to the prize machine in Lewis' house for a special reward." #!String
+    ProtectionRing_Name: "Protection Ring" #!String
+    ProtectionRing_Description: "Stay invincible for a little while longer after taking damage." #!String
+    Pufferfish_Name: "Pufferfish" #!String
+    Pufferfish_Description: "Inflates when threatened." #!String
+    Pumpkin_Name: "Pumpkin" #!String
+    Pumpkin_Description: "A fall favorite, grown for its crunchy seeds and delicately flavored flesh. As a bonus, the hollow shell can be carved into a festive decoration." #!String
+    PumpkinPie_Name: "Pumpkin Pie" #!String
+    PumpkinPie_Description: "Silky pumpkin cream in a flaky crust." #!String
+    PumpkinSeeds_Name: "Pumpkin Seeds" #!String
+    PumpkinSeeds_Description: "Plant these in the fall. Takes 13 days to mature." #!String
+    PumpkinSoup_Name: "Pumpkin Soup" #!String
+    PumpkinSoup_Description: "A seasonal favorite." #!String
+    PurpleBook_Name: "Book Of Stars" #!String
+    PurpleBook_Description: "Read this to gain some experience in all skills." #!String
+    PurpleMushroom_Name: "Purple Mushroom" #!String
+    PurpleMushroom_Description: "A rare mushroom found deep in caves." #!String
+    PurpleSlimeEgg_Name: "Purple Slime Egg" #!String
+    PurpleSlimeEgg_Description: "Can be hatched in a slime incubator." #!String
+    Pyrite_Name: "Pyrite" #!String
+    Pyrite_Description: "Commonly known as \"Fool's Gold\"." #!String
+    QiBean_Name: "Qi Bean" #!String
+    QiBean_Description: "Plant these in any season. Water every day to produce a Qi Fruit. Takes 4 days to mature." #!String
+    QiFruit_Name: "Qi Fruit" #!String
+    QiFruit_Description: "Mr. Qi has challenged you to ship 500 of these strange melons." #!String
+    QiGem_Name: "Qi Gem" #!String
+    QiGem_Description: "A special currency honored by Mr. Qi." #!String
+    QiSeasoning_Name: "Qi Seasoning" #!String
+    QiSeasoning_Description: "Just a dash will elevate any dish to extraordinary heights. Automatically applied when cooking." #!String
+    QualityBobber_Name: "Quality Bobber" #!String
+    QualityBobber_Description: "Boosts the quality of fish that you catch." #!String
+    QualityFertilizer_Name: "Quality Fertilizer" #!String
+    QualityFertilizer_Description: "Improves soil quality, increasing your chance to grow quality crops. Mix into tilled soil." #!String
+    QualityRetainingSoil_Name: "Quality Retaining Soil" #!String
+    QualityRetainingSoil_Description: "This soil has a good chance of staying watered overnight. Mix into tilled soil." #!String
+    QualitySprinkler_Name: "Quality Sprinkler" #!String
+    QualitySprinkler_Description: "Waters the 8 adjacent tiles every morning." #!String
+    Quartz_Name: "Quartz" #!String
+    Quartz_Description: "A clear crystal commonly found in caves and mines." #!String
+    RabbitsFoot_Name: "Rabbit's Foot" #!String
+    RabbitsFoot_Description: "Some say it's lucky." #!String
+    RadioactiveBar_Name: "Radioactive Bar" #!String
+    RadioactiveBar_Description: "Known by the Zuzu City Safety Commission to cause irreversible bodily harm." #!String
+    RadioactiveCarp_Name: "Radioactive Carp" #!String
+    RadioactiveCarp_Description: "A carp that spent one too many years in toxic sludge." #!String
+    RadioactiveOre_Name: "Radioactive Ore" #!String
+    RadioactiveOre_Description: "It's glowing with dangerous energy... Can be smelted into bars." #!String
+    RadioactiveStone_Name: "Radioactive Stone" #!String
+    RadioactiveStone_Description: "Contains radioactive ore." #!String
+    Radish_Name: "Radish" #!String
+    Radish_Description: "A crisp and refreshing root vegetable with hints of pepper when eaten raw." #!String
+    RadishSalad_Name: "Radish Salad" #!String
+    RadishSalad_Description: "The radishes are so crisp!" #!String
+    RadishSeeds_Name: "Radish Seeds" #!String
+    RadishSeeds_Description: "Plant these in the summer. Takes 6 days to mature." #!String
+    RainbowShell_Name: "Rainbow Shell" #!String
+    RainbowShell_Description: "It's a very beautiful shell." #!String
+    RainbowTrout_Name: "Rainbow Trout" #!String
+    RainbowTrout_Description: "A freshwater trout with colorful markings." #!String
+    RainTotem_Name: "Rain Totem" #!String
+    RainTotem_Description: "Activate to greatly increase the chance for rain tomorrow. Consumed on use." #!String
+    Raisins_Name: "Raisins" #!String
+    Raisins_Description: "It's said to be the Junimos' favorite food." #!String
+    RareDisc_Name: "Rare Disc" #!String
+    RareDisc_Description: "A heavy black disc studded with peculiar red stones. When you hold it, you're overwhelmed with a feeling of dread." #!String
+    RareSeed_Name: "Rare Seed" #!String
+    RareSeed_Description: "Sow in fall. Takes all season to grow." #!String
+    RedCabbage_Name: "Red Cabbage" #!String
+    RedCabbage_Description: "Often used in salads and coleslaws. The color can range from purple to blue to green-yellow depending on soil conditions." #!String
+    RedCabbageSeeds_Name: "Red Cabbage Seeds" #!String
+    RedCabbageSeeds_Description: "Plant these in the summer. Takes 9 days to mature." #!String
+    RedMullet_Name: "Red Mullet" #!String
+    RedMullet_Description: "Long ago these were kept as pets." #!String
+    RedMushroom_Name: "Red Mushroom" #!String
+    RedMushroom_Description: "A spotted mushroom sometimes found in caves." #!String
+    RedPlate_Name: "Red Plate" #!String
+    RedPlate_Description: "Full of antioxidants." #!String
+    RedSlimeEgg_Name: "Red Slime Egg" #!String
+    RedSlimeEgg_Description: "Can be hatched in a slime incubator." #!String
+    RedSnapper_Name: "Red Snapper" #!String
+    RedSnapper_Description: "A popular fish with a nice red color." #!String
+    RefinedQuartz_Name: "Refined Quartz" #!String
+    RefinedQuartz_Description: "A more pure form of quartz." #!String
+    Rhubarb_Name: "Rhubarb" #!String
+    Rhubarb_Description: "The stalks are extremely tart, but make a great dessert when sweetened." #!String
+    RhubarbPie_Name: "Rhubarb Pie" #!String
+    RhubarbPie_Description: "Mmm, tangy and sweet!" #!String
+    RhubarbSeeds_Name: "Rhubarb Seeds" #!String
+    RhubarbSeeds_Description: "Plant these in the spring. Takes 13 days to mature." #!String
+    Rice_Name: "Rice" #!String
+    Rice_Description: "A basic grain often served under vegetables." #!String
+    RicePudding_Name: "Rice Pudding" #!String
+    RicePudding_Description: "It's creamy, sweet, and fun to eat." #!String
+    RiceShoot_Name: "Rice Shoot" #!String
+    RiceShoot_Description: "Plant these in the spring. Takes 8 days to mature. Grows faster if planted near a body of water. Harvest with the scythe." #!String
+    RingofYoba_Name: "Ring of Yoba" #!String
+    RingofYoba_Description: "Occasionally shields the wearer from damage." #!String
+    RiverJelly_Name: "River Jelly" #!String
+    RiverJelly_Description: "A rare jelly found in freshwater." #!String
+    RoastedHazelnuts_Name: "Roasted Hazelnuts" #!String
+    RoastedHazelnuts_Description: "The roasting process creates a rich forest flavor." #!String
+    Roe_Name: "Roe" #!String
+    Roe_Description: "Fresh fish eggs. These can be aged in a preserves jar to bring out more flavor." #!String
+    Roe_Flavored_Name: "{0} Roe" #!String
+    RootsPlatter_Name: "Roots Platter" #!String
+    RootsPlatter_Description: "This'll get you digging for more." #!String
+    RottenPlant_Name: "Rotten Plant" #!String
+    RottenPlant_Description: "Decomposing organic material. It's slimy and unpleasant." #!String
+    Ruby_Name: "Ruby" #!String
+    Ruby_Description: "A precious stone that is sought after for its rich color and beautiful luster." #!String
+    RubyRing_Name: "Ruby Ring" #!String
+    RubyRing_Description: "Increases attack by 10%." #!String
+    RubyStone_Name: "Ruby Stone" #!String
+    RubyStone_Description: "Break apart to obtain rubies." #!String
+    RusticPlankFloor_Name: "Rustic Plank Floor" #!String
+    RusticPlankFloor_Description: "Place on the ground to create paths or to decorate your floors." #!String
+    RustyCog_Name: "Rusty Cog" #!String
+    RustyCog_Description: "A well preserved cog that must have been part of some ancient machine. This could be dwarven technology." #!String
+    RustySpoon_Name: "Rusty Spoon" #!String
+    RustySpoon_Description: "A plain old spoon, probably ten years old. Not very interesting." #!String
+    RustySpur_Name: "Rusty Spur" #!String
+    RustySpur_Description: "An old spur that was once attached to a cowboy's boot. People must have been raising animals in this area for many generations." #!String
+    Salad_Name: "Salad" #!String
+    Salad_Description: "A healthy garden salad." #!String
+    Salmon_Name: "Salmon" #!String
+    Salmon_Description: "Swims upstream to lay its eggs." #!String
+    Salmonberry_Name: "Salmonberry" #!String
+    Salmonberry_Description: "A spring-time berry with the flavor of the forest." #!String
+    SalmonDinner_Name: "Salmon Dinner" #!String
+    SalmonDinner_Description: "The lemon spritz makes it special." #!String
+    Sandfish_Name: "Sandfish" #!String
+    Sandfish_Description: "It tries to hide using camouflage." #!String
+    Sandstone_Name: "Sandstone" #!String
+    Sandstone_Description: "A common type of stone with red and brown striations." #!String
+    Sap_Name: "Sap" #!String
+    Sap_Description: "A fluid obtained from trees." #!String
+    Sardine_Name: "Sardine" #!String
+    Sardine_Description: "A common ocean fish." #!String
+    Sashimi_Name: "Sashimi" #!String
+    Sashimi_Description: "Raw fish sliced into thin pieces." #!String
+    SavageRing_Name: "Savage Ring" #!String
+    SavageRing_Description: "Gain a short speed boost whenever you slay a monster." #!String
+    ScorpionCarp_Name: "Scorpion Carp" #!String
+    ScorpionCarp_Description: "It's like a regular carp but with a sharp stinger." #!String
+    SeaCucumber_Name: "Sea Cucumber" #!String
+    SeaCucumber_Description: "A slippery, slimy creature found on the ocean floor." #!String
+    SeafoamPudding_Name: "Seafoam Pudding" #!String
+    SeafoamPudding_Description: "This briny pudding will really get you into the maritime mindset!" #!String
+    SeaJelly_Name: "Sea Jelly" #!String
+    SeaJelly_Description: "A rare jelly found in the ocean." #!String
+    SeaUrchin_Name: "Sea Urchin" #!String
+    SeaUrchin_Description: "A slow-moving, spiny creature that some consider a delicacy." #!String
+    Seaweed_Name: "Seaweed" #!String
+    Seaweed_Description: "It can be used in cooking." #!String
+    SecretNote_Name: "Secret Note" #!String
+    SecretNote_Description: "It's old and crumpled, but if you look closely you can make out the details..." #!String
+    Shad_Name: "Shad" #!String
+    Shad_Description: "Lives in a school at sea, but returns to the rivers to spawn." #!String
+    Shrimp_Name: "Shrimp" #!String
+    Shrimp_Description: "A scavenger that feeds off the ocean floor. Widely prized for its meat." #!String
+    ShrimpCocktail_Name: "Shrimp Cocktail" #!String
+    ShrimpCocktail_Description: "A sumptuous appetizer made with freshly-caught shrimp." #!String
+    SkeletalHand_Name: "Skeletal Hand" #!String
+    SkeletalHand_Description: "It's a wonder all these ancient little pieces lasted so long." #!String
+    SkeletalTail_Name: "Skeletal Tail" #!String
+    SkeletalTail_Description: "It's pretty short for a tail." #!String
+    SkillBook0_Name: "Stardew Valley Almanac" #!String
+    SkillBook0_Description: "Read this to gain some farming experience." #!String
+    SkillBook1_Name: "Bait And Bobber" #!String
+    SkillBook1_Description: "Read this to gain some fishing experience." #!String
+    SkillBook2_Name: "Woodcutter's Weekly" #!String
+    SkillBook2_Description: "Read this to gain some foraging experience." #!String
+    SkillBook3_Name: "Mining Monthly" #!String
+    SkillBook3_Description: "Read this to gain some mining experience." #!String
+    SkillBook4_Name: "Combat Quarterly" #!String
+    SkillBook4_Description: "Read this to gain some combat experience." #!String
+    Slate_Name: "Slate" #!String
+    Slate_Description: "It's extremely resistant to water, making it a good roofing material." #!String
+    Slime_Name: "Slime" #!String
+    Slime_Description: "A shimmering, gelatinous glob with no smell." #!String
+    SlimeCharmerRing_Name: "Slime Charmer Ring" #!String
+    SlimeCharmerRing_Description: "Prevents damage from slimes." #!String
+    SlimeCrate_Name: "Slime Crate" #!String
+    SlimeCrate_Description: "Use this to transport a domesticated slime to another location." #!String
+    Slimejack_Name: "Slimejack" #!String
+    Slimejack_Description: "He's coated in a very thick layer of slime. He keeps slipping out of your hands!" #!String
+    SmallGlowRing_Name: "Small Glow Ring" #!String
+    SmallGlowRing_Description: "Emits a small, constant light." #!String
+    SmallMagnetRing_Name: "Small Magnet Ring" #!String
+    SmallMagnetRing_Description: "Slightly increases your radius for collecting items." #!String
+    SmallmouthBass_Name: "Smallmouth Bass" #!String
+    SmallmouthBass_Description: "A freshwater fish that is very sensitive to pollution." #!String
+    SmokedFish_Name: "Smoked" #!String
+    SmokedFish_Description: "A whole {0}, smoked to perfection." #!String
+    SmokedFish_CollectionsTabDescription: "A whole fish, smoked to perfection." #!String
+    SmokedFish_CollectionsTabName: "Smoked Fish" #!String
+    SmokedFish_Flavored_Name: "Smoked {0}" #!String
+    Snail_Name: "Snail" #!String
+    Snail_Description: "A wide-ranging mollusc that lives in a spiral shell." #!String
+    SnakeSkull_Name: "Snake Skull" #!String
+    SnakeSkull_Description: "A preserved skull that once belonged to a snake." #!String
+    SnakeVertebrae_Name: "Snake Vertebrae" #!String
+    SnakeVertebrae_Description: "It appears this serpent may have been extremely flexible." #!String
+    SnowYam_Name: "Snow Yam" #!String
+    SnowYam_Description: "This little yam was hiding beneath the snow." #!String
+    SnowyStone_Name: "Snowy Stone" #!String
+    SnowyStone_Description: "Break apart to obtain stone, ores, or geodes." #!String
+    Soapstone_Name: "Soapstone" #!String
+    Soapstone_Description: "Because of its relatively soft consistency, this stone is very popular for carving." #!String
+    SoggyNewspaper_Name: "Soggy Newspaper" #!String
+    SoggyNewspaper_Description: "This is trash." #!String
+    SolarEssence_Name: "Solar Essence" #!String
+    SolarEssence_Description: "The glowing face is warm to the touch." #!String
+    SonarBobber_Name: "Sonar Bobber" #!String
+    SonarBobber_Description: "Shows what fish is on the line before it's caught." #!String
+    SonofCrimsonfish_Name: "Son of Crimsonfish" #!String
+    SonofCrimsonfish_Description: "He hatched in the warm summer water, and followed in the footsteps of his father." #!String
+    SoulSapperRing_Name: "Soul Sapper Ring" #!String
+    SoulSapperRing_Description: "Gain a little bit of energy every time you slay a monster." #!String
+    Spaghetti_Name: "Spaghetti" #!String
+    Spaghetti_Description: "An old favorite." #!String
+    SpangleSeeds_Name: "Spangle Seeds" #!String
+    SpangleSeeds_Description: "Plant in summer. Takes 8 days to produce a vibrant tropical flower. Assorted colors." #!String
+    SpecificBait_Name: "Bait" #!String
+    SpecificBait_Description: "Increases your chance to catch {0}." #!String
+    SpecificBait_Flavored_Name: "{0} Bait" #!String
+    SpeedGro_Name: "Speed-Gro" #!String
+    SpeedGro_Description: "Stimulates leaf production. Guaranteed to increase growth rate by at least 10%. Mix into tilled soil." #!String
+    SpiceBerry_Name: "Spice Berry" #!String
+    SpiceBerry_Description: "It fills the air with a pungent aroma." #!String
+    SpicyEel_Name: "Spicy Eel" #!String
+    SpicyEel_Description: "It's really spicy! Be careful." #!String
+    Spinner_Name: "Spinner" #!String
+    Spinner_Description: "The shape makes it spin around in the water. Slightly increases the bite-rate when fishing." #!String
+    SpiritTorch_Name: "Spirit Torch" #!String
+    SpiritTorch_Description: "It's unclear where the blue color comes from..." #!String
+    SpookFish_Name: "Spook Fish" #!String
+    SpookFish_Description: "The huge eyes can detect the faint silhouettes of prey." #!String
+    SpringOnion_Name: "Spring Onion" #!String
+    SpringOnion_Description: "These grow wild during the spring." #!String
+    SpringSeeds_Name: "Spring Seeds" #!String
+    SpringSeeds_Description: "An assortment of wild spring seeds." #!String
+    Sprinkler_Name: "Sprinkler" #!String
+    Sprinkler_Description: "Waters the 4 adjacent tiles every morning." #!String
+    Squid_Name: "Squid" #!String
+    Squid_Description: "A deep sea creature that can grow to enormous size." #!String
+    SquidInk_Name: "Squid Ink" #!String
+    SquidInk_Description: "Squid use this ink to confuse would-be predators." #!String
+    SquidInkRavioli_Name: "Squid Ink Ravioli" #!String
+    SquidInkRavioli_Description: "Temporarily protects from debuffs." #!String
+    StardewValleyRose_Name: "Stardew Valley Rose" #!String
+    StardewValleyRose_Description: "A rose that reminds you of the valley. It smells heavenly." #!String
+    Stardrop_Name: "Stardrop" #!String
+    Stardrop_Description: "A mysterious fruit that empowers those who eat it. The flavor is like a dream... a powerful personal experience, yet difficult to describe to others." #!String
+    StardropTea_Name: "Stardrop Tea" #!String
+    StardropTea_Description: "A very special gift that would delight anyone." #!String
+    Starfruit_Name: "Starfruit" #!String
+    Starfruit_Description: "An extremely juicy fruit that grows in hot, humid weather. Slightly sweet with a sour undertone." #!String
+    StarfruitSeeds_Name: "Starfruit Seeds" #!String
+    StarfruitSeeds_Description: "Plant these in the summer. Takes 13 days to mature." #!String
+    StarShards_Name: "Star Shards" #!String
+    StarShards_Description: "No one knows how these form. Some scientists claim that the microscopic structure displays unnatural regularity." #!String
+    SteppingStonePath_Name: "Stepping Stone Path" #!String
+    SteppingStonePath_Description: "Place on the ground to create paths or to spruce up your floors." #!String
+    Stingray_Name: "Stingray" #!String
+    Stingray_Description: "Despite having a toxic stinger, these fish are shy and prefer to avoid humans." #!String
+    StirFry_Name: "Stir Fry" #!String
+    StirFry_Description: "Julienned vegetables on a bed of rice." #!String
+    Stone_Name: "Stone" #!String
+    Stone_Description: "A common material with many uses in crafting and building." #!String
+    Stone_Node_Name: "Stone" #!String
+    Stone_Node_Description: "Break apart to obtain stone, ores, or geodes." #!String
+    Stone_NodeStoneOnly_Name: "Stone" #!String
+    Stone_NodeStoneOnly_Description: "Break apart to obtain stone." #!String
+    Stone_NodeWithCoal_Name: "Stone" #!String
+    Stone_NodeWithCoal_Description: "Break apart to obtain stone with a chance of coal." #!String
+    StoneBase_Name: "Stone Base" #!String
+    StoneBase_Description: "A simple block of stone." #!String
+    StoneFence_Name: "Stone Fence" #!String
+    StoneFence_Description: "Lasts longer than a wood fence." #!String
+    Stonefish_Name: "Stonefish" #!String
+    Stonefish_Description: "A bizarre fish that's shaped like a brick." #!String
+    StoneFloor_Name: "Stone Floor" #!String
+    StoneFloor_Description: "Place on the ground to create paths or to spruce up your floors." #!String
+    StoneWalkwayFloor_Name: "Stone Walkway Floor" #!String
+    StoneWalkwayFloor_Description: "Place on the ground to create paths or to decorate your floors." #!String
+    StrangeBun_Name: "Strange Bun" #!String
+    StrangeBun_Description: "What's inside?" #!String
+    StrangeDoll_Name: "Strange Doll" #!String
+    StrangeDoll_Description: "???" #!String
+    Strawberry_Name: "Strawberry" #!String
+    Strawberry_Description: "A sweet, juicy favorite with an appealing red color." #!String
+    StrawberrySeeds_Name: "Strawberry Seeds" #!String
+    StrawberrySeeds_Description: "Plant these in spring. Takes 8 days to mature, and keeps producing strawberries after that." #!String
+    StrawFloor_Name: "Straw Floor" #!String
+    StrawFloor_Description: "Place on the ground to create paths or to spruce up your floors." #!String
+    Stuffing_Name: "Stuffing" #!String
+    Stuffing_Description: "Ahh... the smell of warm bread and sage." #!String
+    SturdyRing_Name: "Sturdy Ring" #!String
+    SturdyRing_Description: "Cuts the duration of negative status effects in half." #!String
+    Sturgeon_Name: "Sturgeon" #!String
+    Sturgeon_Description: "An ancient bottom-feeder with a dwindling population. Females can live up to 150 years." #!String
+    Sugar_Name: "Sugar" #!String
+    Sugar_Description: "Adds sweetness to pastries and candies. Too much can be unhealthy." #!String
+    SummerSeeds_Name: "Summer Seeds" #!String
+    SummerSeeds_Description: "An assortment of wild summer seeds." #!String
+    SummerSpangle_Name: "Summer Spangle" #!String
+    SummerSpangle_Description: "A tropical bloom that thrives in the humid summer air. Has a sweet, tangy aroma." #!String
+    SummerSquash_Name: "Summer Squash" #!String
+    SummerSquash_Description: "A curved yellow squash that is harvested while immature, and still tender." #!String
+    SummerSquashSeeds_Name: "Summer Squash Seeds" #!String
+    SummerSquashSeeds_Description: "Plant in the summer. Takes 6 days to grow, and continues to produce after first harvest." #!String
+    Sunfish_Name: "Sunfish" #!String
+    Sunfish_Description: "A common river fish." #!String
+    Sunflower_Name: "Sunflower" #!String
+    Sunflower_Description: "A common misconception is that the flower turns so it's always facing the sun." #!String
+    SunflowerSeeds_Name: "Sunflower Seeds" #!String
+    SunflowerSeeds_Description: "Plant in summer or fall. Takes 8 days to produce a large sunflower. Yields more seeds at harvest." #!String
+    SuperCucumber_Name: "Super Cucumber" #!String
+    SuperCucumber_Description: "A rare, purple variety of sea cucumber." #!String
+    SuperMeal_Name: "Super Meal" #!String
+    SuperMeal_Description: "It's a really energizing meal." #!String
+    SupplyCrate_Name: "SupplyCrate" #!String
+    SupplyCrate_Description: "..." #!String
+    SurvivalBurger_Name: "Survival Burger" #!String
+    SurvivalBurger_Description: "A convenient snack for the explorer." #!String
+    SweetGemBerry_Name: "Sweet Gem Berry" #!String
+    SweetGemBerry_Description: "It's by far the sweetest thing you've ever smelled." #!String
+    SweetPea_Name: "Sweet Pea" #!String
+    SweetPea_Description: "A fragrant summer flower." #!String
+    TaroRoot_Name: "Taro Root" #!String
+    TaroRoot_Description: "This starchy root is one of the most ancient crops." #!String
+    TaroTuber_Name: "Taro Tuber" #!String
+    TaroTuber_Description: "Plant these in warm weather. Takes 10 days to mature. Grows faster if planted near a body of water." #!String
+    TeaLeaves_Name: "Tea Leaves" #!String
+    TeaLeaves_Description: "The young leaves of the tea plant. Can be brewed into the popular, energizing beverage." #!String
+    TeaSapling_Name: "Tea Sapling" #!String
+    TeaSapling_Description: "Takes 20 days to mature. Produces tea leaves during the final week of each season, except winter. No watering necessary!" #!String
+    TeaSet_Name: "Tea Set" #!String
+    TeaSet_Description: "Fine porcelain." #!String
+    TentKit_Name: "Tent Kit" #!String
+    TentKit_Description: "Use this to deploy a one-time-use tent for sleeping. Can only be used outdoors." #!String
+    ThornsRing_Name: "Thorns Ring" #!String
+    ThornsRing_Description: "When enemies damage you, they will take damage themselves." #!String
+    ThunderEgg_Name: "Thunder Egg" #!String
+    ThunderEgg_Description: "According to legend, angry thunder spirits would throw these stones at one another." #!String
+    Tigerseye_Name: "Tigerseye" #!String
+    Tigerseye_Description: "A stripe of shimmering gold gives this gem a warm luster." #!String
+    TigerSlimeEgg_Name: "Tiger Slime Egg" #!String
+    TigerSlimeEgg_Description: "Can be hatched in a slime incubator. Use with extreme caution!" #!String
+    TigerTrout_Name: "Tiger Trout" #!String
+    TigerTrout_Description: "A rare hybrid trout that cannot bear offspring of its own." #!String
+    Tilapia_Name: "Tilapia" #!String
+    Tilapia_Description: "A primarily vegetarian fish that prefers warm water." #!String
+    Tomato_Name: "Tomato" #!String
+    Tomato_Description: "Rich and slightly tangy, the Tomato has a wide variety of culinary uses." #!String
+    TomatoSeeds_Name: "Tomato Seeds" #!String
+    TomatoSeeds_Description: "Plant these in the summer. Takes 11 days to mature, and continues to produce after first harvest." #!String
+    TomKhaSoup_Name: "Tom Kha Soup" #!String
+    TomKhaSoup_Description: "These flavors are incredible!" #!String
+    Topaz_Name: "Topaz" #!String
+    Topaz_Description: "Fairly common but still prized for its beauty." #!String
+    TopazRing_Name: "Topaz Ring" #!String
+    TopazRing_Description: "You feel a little bit safer wearing this." #!String
+    TopazStone_Name: "Topaz Stone" #!String
+    TopazStone_Description: "Break apart to obtain topaz." #!String
+    Torch_Name: "Torch" #!String
+    Torch_Description: "Provides a modest amount of light." #!String
+    Tortilla_Name: "Tortilla" #!String
+    Tortilla_Description: "Can be used as a vessel for food or eaten by itself." #!String
+    TrapBobber_Name: "Trap Bobber" #!String
+    TrapBobber_Description: "Causes fish to escape slower when you aren't reeling them in." #!String
+    Trash_Name: "Trash" #!String
+    Trash_Description: "It's junk." #!String
+    TreasureChest_Name: "Treasure Chest" #!String
+    TreasureChest_Description: "Wow, it's loaded with treasure! This is sure to fetch a good price." #!String
+    TreasureHunter_Name: "Treasure Hunter" #!String
+    TreasureHunter_Description: "Fish don't escape while collecting treasures. Also slightly increases the chance to find treasures." #!String
+    TreasureTotem_Name: "Treasure Totem" #!String
+    TreasureTotem_Description: "Use on diggable terrain to summon a ring of treasure spots." #!String
+    TreeFertilizer_Name: "Tree Fertilizer" #!String
+    TreeFertilizer_Description: "Sprinkle on a wild tree to ensure rapid growth, even in winter. Doesn't work on fruit trees." #!String
+    Trilobite_Name: "Trilobite" #!String
+    Trilobite_Description: "A long extinct relative of the crab." #!String
+    TrimmedLuckyPurpleShorts_Name: "Trimmed Lucky Purple Shorts" #!String
+    TrimmedLuckyPurpleShorts_Description: "Purple silk shorts trimmed in luxurious gold..." #!String
+    TripleShotEspresso_Name: "Triple Shot Espresso" #!String
+    TripleShotEspresso_Description: "It's more potent than regular coffee!" #!String
+    TropicalCurry_Name: "Tropical Curry" #!String
+    TropicalCurry_Description: "An exotic, fragrant curry served in a pineapple bowl." #!String
+    TroutDerbyTag_Name: "Golden Tag" #!String
+    TroutDerbyTag_Description: "Turn this in to the Trout Derby booth for a reward." #!String
+    TroutSoup_Name: "Trout Soup" #!String
+    TroutSoup_Description: "Pretty salty." #!String
+    Truffle_Name: "Truffle" #!String
+    Truffle_Description: "A gourmet type of mushroom with a unique taste." #!String
+    TruffleOil_Name: "Truffle Oil" #!String
+    TruffleOil_Description: "A gourmet cooking ingredient." #!String
+    Tulip_Name: "Tulip" #!String
+    Tulip_Description: "The most popular spring flower. Has a very faint sweet smell." #!String
+    TulipBulb_Name: "Tulip Bulb" #!String
+    TulipBulb_Description: "Plant in spring. Takes 6 days to produce a colorful flower. Assorted colors." #!String
+    Tuna_Name: "Tuna" #!String
+    Tuna_Description: "A large fish that lives in the ocean." #!String
+    Twig_Name: "Twig" #!String
+    Twig_Description: "A broken branch. Chop with an axe to obtain wood." #!String
+    UnmilledRice_Name: "Unmilled Rice" #!String
+    UnmilledRice_Description: "Rice in its rawest form. Run this through a mill to increase the value." #!String
+    VampireRing_Name: "Vampire Ring" #!String
+    VampireRing_Description: "Gain a little health every time you slay a monster." #!String
+    VegetableMedley_Name: "Vegetable Medley" #!String
+    VegetableMedley_Description: "This is very nutritious." #!String
+    Vinegar_Name: "Vinegar" #!String
+    Vinegar_Description: "An aged fermented liquid used in many cooking recipes." #!String
+    VoidEgg_Name: "Void Egg" #!String
+    VoidEgg_Description: "A jet-black egg with red flecks. It's warm to the touch." #!String
+    VoidEssence_Name: "Void Essence" #!String
+    VoidEssence_Description: "It's quivering with dark energy." #!String
+    VoidGhostPendant_Name: "Void Ghost Pendant" #!String
+    VoidGhostPendant_Description: "It's symbolic to the shadow people. As a gift, it signifies the desire to move in together as friends." #!String
+    VoidMayonnaise_Name: "Void Mayonnaise" #!String
+    VoidMayonnaise_Description: "A thick, black paste that smells like burnt hair." #!String
+    VoidSalmon_Name: "Void Salmon" #!String
+    VoidSalmon_Description: "A salmon, twisted by void energy. The fresh meat is jet black, but rapidly turns pink when exposed to air." #!String
+    VolcanoGoldNode_Name: "Gold Stone" #!String
+    VolcanoGoldNode_Description: "Break apart to obtain gold ore." #!String
+    Walleye_Name: "Walleye" #!String
+    Walleye_Description: "A freshwater fish caught at night." #!String
+    WarMemento_Name: "War Memento" #!String
+    WarMemento_Description: "It's a faded photograph of a soldier..." #!String
+    WarpTotemBeach_Name: "Warp Totem: Beach" #!String
+    WarpTotemBeach_Description: "Warp directly to the beach. Consumed on use." #!String
+    WarpTotemDesert_Name: "Warp Totem: Desert" #!String
+    WarpTotemDesert_Description: "Warp directly to Calico Desert. Consumed on use." #!String
+    WarpTotemFarm_Name: "Warp Totem: Farm" #!String
+    WarpTotemFarm_Description: "Warp directly to your house. Consumed on use." #!String
+    WarpTotemIsland_Name: "Warp Totem: Island" #!String
+    WarpTotemIsland_Description: "Warp directly to Ginger Island. Consumed on use." #!String
+    WarpTotemMountains_Name: "Warp Totem: Mountains" #!String
+    WarpTotemMountains_Description: "Warp directly to the mountains. Consumed on use." #!String
+    WarpTotemQisArena_Name: "Warp Totem: Qi's Arena" #!String
+    WarpTotemQisArena_Description: "Warp to Qi's Arena. Be prepared for a challenge!." #!String
+    WarriorRing_Name: "Warrior Ring" #!String
+    WarriorRing_Description: "Occasionally infuses the wearer with \"warrior energy\" after slaying a monster." #!String
+    WeatheredFloor_Name: "Weathered Floor" #!String
+    WeatheredFloor_Description: "Place on the ground to create paths or to spruce up your floors." #!String
+    WeddingRing_Name: "Wedding Ring" #!String
+    WeddingRing_Description: "An old Zuzu City tradition... It's used to ask for another farmer's hand in marriage." #!String
+    Weeds_Name: "Weeds" #!String
+    Weeds_Description: "A bunch of obnoxious weeds." #!String
+    Weeds_DryBush_Name: "Weeds" #!String
+    Weeds_DryBush_Description: "A cluster of dry old bushes. Might contain fibers or mixed seeds." #!String
+    Weeds_Fiber_Ugly_Name: "Weeds" #!String
+    Weeds_Fiber_Ugly_Description: "Ugly weeds. Cut to obtain wild seeds." #!String
+    Weeds_FiberOrMixedSeeds_Name: "Weeds" #!String
+    Weeds_FiberOrMixedSeeds_Description: "Might contain fibers or mixed seeds." #!String
+    Weeds_FiberOrMixedSeeds_Ugly_Name: "Weeds" #!String
+    Weeds_FiberOrMixedSeeds_Ugly_Description: "Ugly weeds. Might contain fibers or mixed seeds." #!String
+    Wheat_Name: "Wheat" #!String
+    Wheat_Description: "One of the most widely cultivated grains. Makes a great flour for breads and cakes." #!String
+    WheatFlour_Name: "Wheat Flour" #!String
+    WheatFlour_Description: "A common cooking ingredient made from crushed wheat seeds." #!String
+    WheatSeeds_Name: "Wheat Seeds" #!String
+    WheatSeeds_Description: "Plant these in the summer or fall. Takes 4 days to mature. Harvest with the scythe." #!String
+    WhiteAlgae_Name: "White Algae" #!String
+    WhiteAlgae_Description: "It's super slimy." #!String
+    WhiteEgg_Name: "Egg" #!String
+    WhiteEgg_Description: "A regular white chicken egg." #!String
+    WildBait_Name: "Wild Bait" #!String
+    WildBait_Description: "A unique recipe from Linus that gives you a chance to catch two fish at once." #!String
+    WildHorseradish_Name: "Wild Horseradish" #!String
+    WildHorseradish_Description: "A spicy root found in the spring." #!String
+    WildPlum_Name: "Wild Plum" #!String
+    WildPlum_Description: "Tart and juicy with a pungent aroma." #!String
+    WiltedBouquet_Name: "Wilted Bouquet" #!String
+    WiltedBouquet_Description: "A gift that shows you want to stop dating someone." #!String
+    Wine_Name: "Wine" #!String
+    Wine_Description: "Drink in moderation." #!String
+    Wine_Flavored_Name: "{0} Wine" #!String
+    Wine_Flavored_(O)282_Name: "Cranberry Wine" #!String
+    WinterRoot_Name: "Winter Root" #!String
+    WinterRoot_Description: "A starchy tuber." #!String
+    WinterSeeds_Name: "Winter Seeds" #!String
+    WinterSeeds_Description: "An assortment of wild winter seeds." #!String
+    Wood_Name: "Wood" #!String
+    Wood_Description: "A sturdy, yet flexible plant material with a wide variety of uses." #!String
+    WoodFence_Name: "Wood Fence" #!String
+    WoodFence_Description: "Keeps grass and animals contained!" #!String
+    WoodFloor_Name: "Wood Floor" #!String
+    WoodFloor_Description: "Place on the ground to create paths or to decorate your floors." #!String
+    WoodPath_Name: "Wood Path" #!String
+    WoodPath_Description: "Place on the ground to create paths or to spruce up your floors." #!String
+    Woodskip_Name: "Woodskip" #!String
+    Woodskip_Description: "A very sensitive fish that can only live in pools deep in the forest." #!String
+    Wool_Name: "Wool" #!String
+    Wool_Description: "Soft, fluffy wool." #!String
+    WrigglingWorm_Name: "Wriggling Worm" #!String
+    WrigglingWorm_Description: "It's a wriggling, wet worm." #!String
+    Yam_Name: "Yam" #!String
+    Yam_Description: "A starchy tuber with a lot of culinary versatility." #!String
+    YamSeeds_Name: "Yam Seeds" #!String
+    YamSeeds_Description: "Plant these in the fall. Takes 10 days to mature." #!String
+

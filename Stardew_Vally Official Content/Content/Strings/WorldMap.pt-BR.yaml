@@ -1,0 +1,33 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    GingerIsland_East_JungleHut: "Cabana da Selva" #!String
+    GingerIsland_North_DigSite: "Local de Escavação" #!String
+    GingerIsland_North_FieldOffice: "Escritório Local" #!String
+    GingerIsland_North_Trader: "Comerciante da Ilha" #!String
+    GingerIsland_North_Volcano: "Vulcão" #!String
+    GingerIsland_South_Dock: "Barco do Willy" #!String
+    GingerIsland_South_Resort: "Resort" #!String
+    GingerIsland_SouthEast_PirateCove: "Esconderijo dos Piratas" #!String
+    GingerIsland_West_BirdieShack: "Cabana da Passarinha" #!String
+    GingerIsland_West_GourmandCave: "Sapo Glutão" #!String
+    GingerIsland_West_House: "Casa de Fazenda da Ilha" #!String
+    GingerIsland_West_QiWalnutRoom: "Sala de Nozes de Qi" #!String
+    GingerIsland_West_Shipwreck: "Náufrago" #!String
+    GingerIsland_West_TigerSlimeGrove: "Bosque das Gosmas-Tigre" #!String
+

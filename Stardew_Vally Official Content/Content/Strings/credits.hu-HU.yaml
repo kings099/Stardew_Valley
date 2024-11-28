@@ -1,0 +1,97 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.ListReader`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!List<String>
+    - "[image] LooseSprites\\\\yellowLettersLogo 0 0 228 26 3" #!String
+    - "[image] LooseSprites\\\\yellowLettersLogo 0 26 228 26 3" #!String
+    - "[image] LooseSprites\\\\yellowLettersLogo 0 52 228 26 3" #!String
+    - "[image] LooseSprites\\\\yellowLettersLogo 0 78 228 26 3" #!String
+    - "" #!String
+    - "[3]A Stardew Valley készítője:" #!String
+    - "Eric Barone \"ConcernedApe\"" #!String
+    - "" #!String
+    - "[3]1.6-os frissítés:" #!String
+    - "Eric Barone" #!String
+    - "Jesse Plamondon-Willard \"Pathoschild\"" #!String
+    - "Devin Hedegaard" #!String
+    - "Arthur Lee" #!String
+    - "Jared Flores" #!String
+    - "Casey Warrington" #!String
+    - "" #!String
+    - "[3]1.5-ös frissítés:" #!String
+    - "Eric Barone" #!String
+    - "Arthur Lee" #!String
+    - "" #!String
+    - "[3]Többjátékos kód:" #!String
+    - "Tom Coxon" #!String
+    - "" #!String
+    - "[3]További kód:" #!String
+    - "Casey Warrington" #!String
+    - "Alex Erlandson" #!String
+    - "" #!String
+    - "[3]Fordítások:" #!String
+    - "Playism" #!String
+    - "LocalizeDirect" #!String
+    - "Alessio Messersì (Olasz)" #!String
+    - "Junho Won (Koreai)" #!String
+    - "Jo \"Josh\" Sanghee (Koreai)" #!String
+    - "Not Shalulu (Francia)" #!String
+    - "Gőz Richárd \"TRC\" (Magyar)" #!String
+    - "Hüseyin Serhat Çavunt (Török)" #!String
+    - "Salih Emircan Ayyıldız (Török)" #!String
+    - "Ali Batuhan Özkan (Török)" #!String
+    - "Hilmi Furkan Yaşık (Török)" #!String
+    - "Daniel Ruiz \"TheBrightKing\" (Spanyol)" #!String
+    - "Sandra Martín Sigüenza (Spanyol)" #!String
+    - "Alexander Preymak (Orosz)" #!String
+    - "Arina Bedrina (Orosz)" #!String
+    - "Niclaus Leo \"Royami\" (Orosz betűtípus/Grafika)" #!String
+    - "Alessandro Raffaele-Addamo (Német)" #!String
+    - "Vinícius de Medeiros Miguel (Portugál)" #!String
+    - "Watermelon Translations (Egyszerűsített kínai)" #!String
+    - "Takashi Fujimoto (Japán)" #!String
+    - "" #!String
+    - "[3]Fordítási manager:" #!String
+    - "Matt Griffin" #!String
+    - "" #!String
+    - "[3]Mac, Linux, Xbox One, \"PlayStation 4\", \"PS Vita\" és Nintendo Switch portok:" #!String
+    - "Sickhead Games" #!String
+    - "" #!String
+    - "[3]Mobil portok:" #!String
+    - "The Secret Police" #!String
+    - "Sickhead Games" #!String
+    - "" #!String
+    - "[3]Konzol minőségbiztosítás:" #!String
+    - "GlobalStep" #!String
+    - "" #!String
+    - "[3]Kiskereskedelmi forgalmazás:" #!String
+    - "505 Games" #!String
+    - "Fangamer" #!String
+    - "" #!String
+    - "[3]Kiskereskedelmi minőségbiztosítás:" #!String
+    - "Pipeworks Studio" #!String
+    - "" #!String
+    - "[image] LooseSprites\\\\Cursors 540 333 13 13 4 4" #!String
+    - "[3]Linkek:" #!String
+    - "[link] https://www.stardewvalley.net Hivatalos weboldal" #!String
+    - "[link] https://forums.stardewvalley.net Hivatalos fórum" #!String
+    - "[link] https://www.stardewvalley.net/links Hírek és közösség" #!String
+    - "" #!String
+    - "[image] LooseSprites\\\\Cursors 592 333 13 13 4 4" #!String
+    - "" #!String
+    - "[1]Köszönöm, hogy játszottál! <" #!String
+

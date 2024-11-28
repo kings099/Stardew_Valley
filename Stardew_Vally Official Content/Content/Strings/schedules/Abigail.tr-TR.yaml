@@ -1,0 +1,29 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Sun.000: "Burada saklanıyoruz ki kimse ile konuşmak zorunda kalmayalım." #!String
+    marriage_Mon.002: "Of... Hâlâ kendi başıma bitiremiyorum.$s" #!String
+    spring_4.000: "Of... Bugün doktor randevum var.$s" #!String
+    marriage_Fri.001: "Eski tayfayı görmek çok güzel. Hiçbir şey değişmemiş.$h" #!String
+    spring_4.002: "Daha ne kadar var doktor? Çok acıktım.$s" #!String
+    marriage_Mon.001: "Merhaba @. Burada dinlenmeyi seviyorum... Çok huzurlu." #!String
+    marriage_Fri.000: "Ne haber @? Tam da anneme selam veriyordum." #!String
+    marriage_Mon.000: "Babam ben yokken idare ediyor gibi." #!String
+    winter_15.000: "Bu çok gizemli... Bayıldım!" #!String
+    spring_4.001: "Buraya yıllık kontrolüm için geldim, korkma, hamile değilim... Yani şey, hasta değilim! Heh.$9" #!String
+

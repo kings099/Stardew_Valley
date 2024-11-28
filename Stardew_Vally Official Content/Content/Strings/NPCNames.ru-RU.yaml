@@ -1,0 +1,68 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Abigail: "Абигейл" #!String
+    Alex: "Алекс" #!String
+    Bear: "Медведь" #!String
+    Birdie: "Пташка" #!String
+    Bouncer: "Вышибала" #!String
+    Caroline: "Кэролайн" #!String
+    Clint: "Клинт" #!String
+    Demetrius: "Деметриус" #!String
+    Dwarf: "Дварф" #!String
+    Elliott: "Эллиот" #!String
+    Emily: "Эмили" #!String
+    Evelyn: "Эвелин" #!String
+    George: "Джордж" #!String
+    Gil: "Гил" #!String
+    Governor: "Губернатор" #!String
+    Grandpa: "Дедушка" #!String
+    Gunther: "Гюнтер" #!String
+    Gus: "Гас" #!String
+    Haley: "Хэйли" #!String
+    Harvey: "Харви" #!String
+    Henchman: "Приспешник" #!String
+    Jas: "Джас" #!String
+    Jodi: "Джоди" #!String
+    Kent: "Кент" #!String
+    Krobus: "Кробус" #!String
+    Leah: "Лея" #!String
+    Leo: "Лео" #!String
+    Lewis: "Льюис" #!String
+    Linus: "Линус" #!String
+    Marlon: "Марлон" #!String
+    Marnie: "Марни" #!String
+    Maru: "Мару" #!String
+    MisterQi: "Мистер Ки" #!String
+    Morris: "Моррис" #!String
+    OldMariner: "Старый мореход" #!String
+    Pam: "Пэм" #!String
+    Penny: "Пенни" #!String
+    Pierre: "Пьер" #!String
+    ProfessorSnail: "Проф. Улиткин" #!String
+    Robin: "Робин" #!String
+    Sam: "Сэм" #!String
+    Sandy: "Сэнди" #!String
+    Sebastian: "Себастиан" #!String
+    Shane: "Шейн" #!String
+    Vincent: "Винсент" #!String
+    Welwick: "Велвик" #!String
+    Willy: "Вилли" #!String
+    Wizard: "Волшебник" #!String
+    Fizz: "Физз" #!String
+

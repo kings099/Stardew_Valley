@@ -1,0 +1,610 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    DarkPiano: "Темное фортепиано" #!String
+    OakChair: "Дубовый стул" #!String
+    WalnutChair: "Ореховый стул" #!String
+    BirchChair: "Березовый стул" #!String
+    MahoganyChair: "Стул из красного дерева" #!String
+    RedDinerChair: "Красный стул для кафе" #!String
+    BlueDinerChair: "Синий стул для кафе" #!String
+    CountryChair: "Деревенский стул" #!String
+    BreakfastChair: "Стул для завтрака" #!String
+    PinkOfficeChair: "Розовый офисный стул" #!String
+    PurpleOfficeChair: "Фиолетовый офисный стул" #!String
+    GreenOfficeStool: "Зеленый офисный табурет" #!String
+    OrangeOfficeStool: "Оранжевый офисный табурет" #!String
+    DarkThrone: "Темный трон" #!String
+    DiningChair: "Стул к обеденному столу" #!String
+    GreenPlushSeat: "Зеленое плюшевое сиденье" #!String
+    PinkPlushSeat: "Розовое плюшевое сиденье" #!String
+    WinterChair: "Зимний стул" #!String
+    GroovyChair: "Бежевый стул" #!String
+    CuteChair: "Миленький стульчик" #!String
+    StumpSeat: "Стул-пень" #!String
+    MetalChair: "Металлический стул" #!String
+    GreenStool: "Зеленый табурет" #!String
+    BlueStool: "Голубой табурет" #!String
+    KingChair: "Королевский стул" #!String
+    CrystalChair: "Кристальный стул" #!String
+    OakBench: "Дубовая скамья" #!String
+    WalnutBench: "Ореховая скамья" #!String
+    BirchBench: "Березовая скамья" #!String
+    MahoganyBench: "Скамья из красного дерева" #!String
+    ModernBench: "Скамья «Модерн»" #!String
+    BlueArmchair: "Голубое кресло" #!String
+    RedArmchair: "Красное кресло" #!String
+    GreenArmchair: "Зеленое кресло" #!String
+    YellowArmchair: "Желтое кресло" #!String
+    BrownArmchair: "Коричневое кресло" #!String
+    BlueCouch: "Голубой диван" #!String
+    RedCouch: "Красный диван" #!String
+    GreenCouch: "Зеленый диван" #!String
+    YellowCouch: "Желтый диван" #!String
+    BrownCouch: "Коричневый диван" #!String
+    DarkCouch: "Темный диван" #!String
+    WizardCouch: "Диван волшебника" #!String
+    WoodsyCouch: "«Лесной» диван" #!String
+    OakDresser: "Дубовый комод" #!String
+    WalnutDresser: "Ореховый комод" #!String
+    BirchDresser: "Березовый комод" #!String
+    MahoganyDresser: "Комод из красного дерева" #!String
+    CoffeeTable: "Кофейный столик" #!String
+    StoneSlab: "Каменная плита" #!String
+    WinterDiningTable: "Обеденный стол «Зимний»" #!String
+    FestiveDiningTable: "Обеденный стол «Праздничный»" #!String
+    MahoganyDiningTable: "Обеденный стол из красного дерева" #!String
+    ModernDiningTable: "Обеденный стол «Модерн»" #!String
+    OakTable: "Дубовый стол" #!String
+    WalnutTable: "Ореховый стол" #!String
+    BirchTable: "Березовый стол" #!String
+    MahoganyTable: "Стол из красного дерева" #!String
+    SunTable: "Стол «Солнечный»" #!String
+    MoonTable: "Стол «Лунный»" #!String
+    ModernTable: "Стол «Модерн»" #!String
+    PubTable: "Стол для пабов" #!String
+    LuxuryTable: "Роскошный стол" #!String
+    DivinerTable: "Стол для гаданий" #!String
+    NeolithicTable: "Стол «Неолит»" #!String
+    PuzzleTable: "Стол «Пазл»" #!String
+    WinterTable: "Стол «Зимний»" #!String
+    CandyTable: "Стол «Леденец»" #!String
+    LuauTable: "Стол «Луау»" #!String
+    DarkTable: "Темный стол" #!String
+    OakTeaTable: "Дубовый чайный столик" #!String
+    WalnutTeaTable: "Ореховый чайный столик" #!String
+    BirchTeaTable: "Березовый чайный столик" #!String
+    MahoganyTeaTable: "Чайный столик из красного дерева" #!String
+    ModernTeaTable: "Чайный столик «Модерн»" #!String
+    FurnitureCatalogue: "Каталог мебели" #!String
+    ChinaCabinet: "Сервант" #!String
+    ArtistBookcase: "Арт-шкаф для книг" #!String
+    LuxuryBookcase: "Роскошный книжный шкаф" #!String
+    ModernBookcase: "Книжный шкаф «Модерн»" #!String
+    DarkBookcase: "Темный книжный шкаф" #!String
+    CeramicPillar: "Керамическая колонна" #!String
+    GoldPillar: "Золотая колонна" #!String
+    IndustrialPipe: "Труба" #!String
+    IndoorPalm: "Комнатная пальма" #!String
+    TotemPole: "Тотем" #!String
+    ManicuredPine: "Подрезанная сосна" #!String
+    TopiaryTree: "Топиарное дерево" #!String
+    StandingGeode: "Жеода на подставке" #!String
+    ObsidianVase: "Обсидиановая ваза" #!String
+    SingingStone: "Поющий камень" #!String
+    SlothSkeletonL: "Скелет ленивца (Л)" #!String
+    SlothSkeletonM: "Скелет ленивца (С)" #!String
+    SlothSkeletonR: "Скелет ленивца (П)" #!String
+    Skeleton: "Скелет" #!String
+    ChickenStatue: "Статуя курицы" #!String
+    LeahsSculpture: "Скульптура Леи" #!String
+    DriedSunflowers: "Высушенные подсолнухи" #!String
+    Catalogue: "Каталог" #!String
+    SamsBoombox: "Бумбокс Сэма" #!String
+    SmallPlant: "Маленькое растение" #!String
+    TablePlant: "Настольное растение" #!String
+    DecorativeBowl: "Декоративная миска" #!String
+    FutanBear: "Мишка" #!String
+    Globe: "Глобус" #!String
+    ModelShip: "Модель корабля" #!String
+    SmallCrystal: "Малый кристалл" #!String
+    DecorativeLantern: "Декоративная лампа" #!String
+    HousePlant: "Комнатное растение" #!String
+    OakEndTable: "Дубовый приставной столик" #!String
+    WalnutEndTable: "Ореховый приставной столик" #!String
+    BirchEndTable: "Березовый приставной столик" #!String
+    MahoganyEndTable: "Приставной столик из красного дерева" #!String
+    ModernEndTable: "Приставной столик «Модерн»" #!String
+    GrandmotherEndTable: "Бабушкин приставной столик" #!String
+    WinterEndTable: "Приставной столик «Зимний»" #!String
+    Calendar: "Календарь" #!String
+    TreeoftheWinterStar: "Елка Зимней звезды" #!String
+    CountryLamp: "Деревенская лампа" #!String
+    BoxLamp: "Квадратная лампа" #!String
+    ModernLamp: "Лампа «Модерн»" #!String
+    ClassicLamp: "Классическая лампа" #!String
+    RedRug: "Красный коврик" #!String
+    PatchworkRug: "Лоскутный ковер" #!String
+    DarkRug: "Темный ковер" #!String
+    BudgetTV: "Дешевый телевизор" #!String
+    PlasmaTV: "Плазменный телевизор" #!String
+    TheMuzzamaroo: "«Мазамару»" #!String
+    ANightOnEcoHill: "«Ночь на эко-холме»" #!String
+    Pathways: "«Дороги»" #!String
+    BurntOffering: "«Сожженное подношение»" #!String
+    QueenoftheGemSea: "«Королева Самоцветного моря»" #!String
+    VanillaVilla: "«Ванилла вилла»" #!String
+    PrimalMotion: "«Первородное движение»" #!String
+    JadeHills: "«Нефритовые холмы»" #!String
+    Sun44: "«Солнце № 44»" #!String
+    WallflowerPal: "Настенный дружок" #!String
+    Spires: "«Башни»" #!String
+    Highway89: "«Шоссе 89»" #!String
+    CalicoFalls: "«Водопады Калико»" #!String
+    NeedlepointFlower: "Кружевной цветок" #!String
+    SkullPoster: "Постер с черепом" #!String
+    Sun45: "«Солнце № 45»" #!String
+    LittleTree: "«Деревце»" #!String
+    Blueberries: "«Черника»" #!String
+    BlueCity: "«Голубой город»" #!String
+    LittlePhotos: "Маленькие фотографии" #!String
+    DancingGrass: "«Танцующая трава»" #!String
+    VGAParadise: "«Рай VGA»" #!String
+    JColaLight: "Светильник «Джоджа-кола»" #!String
+    Kitemaster95: "«Кайтмастер 95»" #!String
+    BasicWindow: "Простое окно" #!String
+    SmallWindow: "Маленькое окно" #!String
+    RedCottageRug: "Красный деревенский коврик" #!String
+    GreenCottageRug: "Зеленый деревенский коврик" #!String
+    MonsterRug: "Коврик с чудищами" #!String
+    BoardedWindow: "Заколоченное окно" #!String
+    MysticRug: "Мистический коврик" #!String
+    LgFutanBear: "Огромный мишка" #!String
+    JunimoPlush: "Плюшевый Джунимо" #!String
+    BearStatue: "Статуя медведя" #!String
+    Porthole: "Иллюминатор" #!String
+    Anchor: "Якорь" #!String
+    WorldMap: "Карта мира" #!String
+    OrnateWindow: "Окно со шторами" #!String
+    FloorTV: "Напольный телевизор" #!String
+    CarvedWindow: "Резное окно" #!String
+    NauticalRug: "Морской коврик" #!String
+    BurlapRug: "Брезентовый коврик" #!String
+    TreeColumn: "Деревянная колонна" #!String
+    LLightString: "Зеленая гирлянда" #!String
+    SPine: "Маленькая сосна" #!String
+    BonsaiTree: "Дерево бонсай" #!String
+    MetalWindow: "Металлическое окно" #!String
+    CandleLamp: "Лампа со свечой" #!String
+    MinersCrest: "Шахтерский герб" #!String
+    BambooMat: "Бамбуковый коврик" #!String
+    OrnateLamp: "Лампа с орнаментом" #!String
+    WoodcutRug: "Деревянный коврик" #!String
+    HangingShield: "Настенный щит" #!String
+    MonsterDanglers: "Гирлянда «Монстрики»" #!String
+    CeilingFlags: "Флажки" #!String
+    RedEagle: "«Красный орел»" #!String
+    PortraitOfAMermaid: "«Портрет русалки»" #!String
+    SolarKingdom: "«Солнечное королевство»" #!String
+    Clouds: "«Облака»" #!String
+    1000YearsFromNow: "«Через 1000 лет»" #!String
+    ThreeTrees: "«Три дерева»" #!String
+    TheSerpent: "«Змей»" #!String
+    TropicalFish173: "«Тропические рыбы #173»" #!String
+    LandOfClay: "«Страна глины»" #!String
+    BrickFireplace: "Кирпичный камин" #!String
+    StoneFireplace: "Каменный камин" #!String
+    IridiumFireplace: "Иридиевый камин" #!String
+    StoveFireplace: "Буржуйка" #!String
+    MonsterFireplace: "Чудовищный камин" #!String
+    MyFirstPainting: "Моя первая картина" #!String
+    ElegantFireplace: "Изысканный камин" #!String
+    PirateFlag: "Пиратский флаг" #!String
+    PirateRug: "Пиратский коврик" #!String
+    BoneRug: "Костяной коврик" #!String
+    ButterflyHutch: "Бабочкин комод" #!String
+    StrawberryDecal: "Наклейка «Клубника»" #!String
+    FruitSaladRug: "Коврик «Фруктовый салат»" #!String
+    NightSkyDecal1: "Наклейка «Ночное небо» #1" #!String
+    SnowyRug: "Снежный коврик" #!String
+    NightSkyDecal2: "Наклейка «Ночное небо» #2" #!String
+    NightSkyDecal3: "Наклейка «Ночное небо» #3" #!String
+    TheBraveLittleSapling: "«Маленький храбрый росток»" #!String
+    Mysterium: "«Мистериум»" #!String
+    JourneyOfThePrairieKingTheMotionPicture: "«Путешествие Короля прерий: Худ. фильм»" #!String
+    Wumbus: "«Вумбус»" #!String
+    TheZuzuCityExpress: "«Экспресс до города Зузу»" #!String
+    TheMiracleAtColdstarRanch: "«Чудо на ранчо Колдстар»" #!String
+    NaturalWondersExploringOurVibrantWorld: "«Чудеса природы: изучая наш живой мир»" #!String
+    ItHowlsInTheRain: "«Воющее в дожде»" #!String
+    IndoorHangingBasket: "Комнатная подвесная корзина" #!String
+    WinterTreeDecal: "Наклейка «Зимняя ель»" #!String
+    SmallJunimoPlush: "Маленький плюшевый Джунимо" #!String
+    FutanRabbit: "Кролик Футан" #!String
+    WumbusStatue: "Статуя Вумбуса" #!String
+    BoboStatue: "Статуя Бобо" #!String
+    PurpleSerpentStatue: "Статуя Пурпурного змея" #!String
+    GreenSerpentStatue: "Статуя Зеленого змея" #!String
+    LongPalm: "Высокая пальма" #!String
+    LongCactus: "Высокий кактус" #!String
+    ExoticTree: "Экзотическое дерево" #!String
+    DeluxeTree: "Изысканное дерево" #!String
+    WallPumpkin: "Настенная тыква" #!String
+    SmallWallPumpkin: "Маленькая настенная тыква" #!String
+    Bed: "Кровать" #!String
+    DoubleBed: "Двуспальная кровать" #!String
+    StarryDoubleBed: "Звездчатая двуспальная кровать" #!String
+    StrawberryDoubleBed: "Клубничная двуспальная кровать" #!String
+    PirateDoubleBed: "Пиратская двуспальная кровать" #!String
+    ChildBed: "Детская кроватка" #!String
+    TropicalBed: "Тропическая кровать" #!String
+    TropicalDoubleBed: "Тропическая двуспальная кровать" #!String
+    DeluxeRedDoubleBed: "Элитная двуспальная кровать" #!String
+    ModernDoubleBed: "Модная двуспальная кровать" #!String
+    LargeFishTank: "Большой аквариум" #!String
+    DeluxeFishTank: "Элитный аквариум" #!String
+    SmallFishTank: "Маленький аквариум" #!String
+    OceanicRug: "Океанский ковер" #!String
+    TropicalTV: "Тропический телевизор" #!String
+    VolcanoPhoto: "Фотография вулкана" #!String
+    JungleTorch: "Факел из джунглей" #!String
+    PalmWallOrnament: "Настенное украшение «Пальма»" #!String
+    TropicalChair: "Тропический стул" #!String
+    AquaticSanctuary: "Водное святилище" #!String
+    ModernFishTank: "Аквариум «Модерн»" #!String
+    WildDoubleBed: "Дикая двуспальная кровать" #!String
+    FisherDoubleBed: "Рыбацкая двуспальная кровать" #!String
+    BirchDoubleBed: "Березовая двуспальная кровать" #!String
+    ExoticDoubleBed: "Экзотическая двуспальная кровать" #!String
+    Lifesaver: "Спасательный круг" #!String
+    FoliagePrint: "Растительный орнамент" #!String
+    Boat: "«Лодка»" #!String
+    Vista: "«Пейзаж»" #!String
+    WallBasket: "Настенная корзина" #!String
+    DecorativeTrashCan: "Декоративный мусорный бак" #!String
+    IridiumKrobus: "Иридиевый Кробус" #!String
+    GourmandStatue: "Статуя Обжоры" #!String
+    PyramidDecal: "Наклейка «Пирамида»" #!String
+    PlainTorch: "Простой факел" #!String
+    StumpTorch: "Пень-факел" #!String
+    WallFlower: "Настенный цветок" #!String
+    SWallFlower: "Малый настенный цветок" #!String
+    CloudsBanner: "Баннер «Облака»" #!String
+    ColorfulSet: "Цветастый диптих" #!String
+    PastelBanner: "Баннер «Пастель»" #!String
+    WinterBanner: "Баннер «Зима»" #!String
+    MoonlightJelliesBanner: "Баннер «Полуночные медузы»" #!String
+    JungleDecal: "Наклейка «Джунгли»" #!String
+    StarportDecal: "Наклейка «Космос»" #!String
+    DecorativePitchfork: "Декоративные вилы" #!String
+    WoodPanel: "Дощатая панель" #!String
+    DecorativeAxe: "Декоративный топор" #!String
+    LogPanel: "Бревенчатая панель" #!String
+    CeilingLeaves: "Потолочные листья" #!String
+    CloudDecal: "Наклейка «Облако»" #!String
+    FloorDividerR: "Разделитель пола (П)" #!String
+    FloorDividerL: "Разделитель пола (Л)" #!String
+    LightGreenRug: "Ковер «Зеленые листья»" #!String
+    JadeHillsExtended: "«Нефритовые холмы» (широкая версия)" #!String
+    LargeBrownCouch: "Большой коричневый диван" #!String
+    LargeGreenRug: "Большой зеленый ковер" #!String
+    IcyRug: "Ледяной ковер" #!String
+    OldWorldRug: "Старый протертый ковер" #!String
+    LargeRedRug: "Большой красный ковер" #!String
+    FrozenDreams: "«Замороженные сны»" #!String
+    IcyBanner: "Ледяной баннер" #!String
+    WallPalm: "Настенная пальма" #!String
+    WallCactus: "Настенный кактус" #!String
+    LargeCottageRug: "Большой деревенский ковер" #!String
+    Physics101: "«Основы физики»" #!String
+    WallSconce: "Настенный светильник" #!String
+    BlossomRug: "Цветочный ковер" #!String
+    FunkyRug: "Модный ковер" #!String
+    ModernRug: "Ковер «Модерн»" #!String
+    SquirrelFigurine: "Фигурка белки" #!String
+    Cactus: "Кактус" #!String
+    HangingFish: "Висячая рыба" #!String
+    RetroTV: "Телевизор «Ретро»" #!String
+    ArtPhoto: "Художественное фото" #!String
+    ArtPhoto2: "Художественное фото 2" #!String
+    ShortBookcase: "Низкий книжный шкаф" #!String
+    PierresSign: "Знак Пьера" #!String
+    SamsSkateboard: "Скейтборд Сэма" #!String
+    ChickenDecal: "Наклейка «Курицы»" #!String
+    ExoticPalace: "Экзотический дворец" #!String
+    PeriodicTable: "Таблица элементов" #!String
+    DustySkull: "Пыльный череп" #!String
+    RadioDesk: "Радиостол" #!String
+    ModelPlanes: "Модельки самолетов" #!String
+    CalicoStatue: "Статуя Калико" #!String
+    SunDunes: "Солнечные дюны" #!String
+    DesertTable: "Пустынный столик" #!String
+    DesertChair: "Пустынный стул" #!String
+    DesertFireplace: "Пустынный камин" #!String
+    SandyRug: "Песочный ковер" #!String
+    DesertRug: "Пустынный ковер" #!String
+    DesertEndTable: "Пустынный приставной столик" #!String
+    DesertFlags: "Пустынные флаги" #!String
+    DecorativeBarrel: "Декоративная бочка" #!String
+    MountedTrout: "Форель на подставке" #!String
+    SquidKid: "«Малыш-кальмар»" #!String
+    CowDecal: "Наклейка «Корова»" #!String
+    BluePinstripeBed: "Кровать в голубую полоску" #!String
+    JungleTank: "Аквариум «Джунгли»" #!String
+    CCFishTank: "Аквариум «Корабль»" #!String
+    BluePinstripeDoubleBed: "Двуспальная кровать в голубую полоску" #!String
+    JojaBed: "Кровать Джоджа" #!String
+    JojaVault: "Сейф Джоджа" #!String
+    JojaChair: "Стул Джоджа" #!String
+    J: "Буква «J»" #!String
+    JojaColaTeaTable: "Чайный столик «Джоджа-кола»" #!String
+    JojaTable: "Стол Джоджа" #!String
+    JPainting: "Джартина" #!String
+    JLight: "Джветильник" #!String
+    JojaCatalogue: "Каталог мебели Джоджа" #!String
+    JojaColaPainting: "Картина «Джоджа-кола»" #!String
+    JojaColaOrnament: "Украшение «Джоджа-кола»" #!String
+    JojaFireplace: "Камин Джоджа" #!String
+    JojaColaCans: "Банки Джоджа-колы" #!String
+    CashRegister: "Кассовый аппарат" #!String
+    PlasticPlant: "Пластиковое растение" #!String
+    PlasticSapling: "Пластиковый росток" #!String
+    GrayJojaCushion: "Серая диванная подушка Джоджа" #!String
+    JojaCushion: "Диванная подушка Джоджа" #!String
+    StackedJojaBoxes: "Стопка коробок Джоджа" #!String
+    JojaCouch: "Диван Джоджа" #!String
+    MorrisPortrait: "Менеджер года" #!String
+    JojaHQPainting: "Картина «Головной офис Джоджа»" #!String
+    JojaCrate: "Ящик Джоджа" #!String
+    JojaShoppingCart: "Тележка Джоджа" #!String
+    LargeJojaCrate: "Большой ящик Джоджа" #!String
+    JojaColaFridge: "Холодильник Джоджа-колы" #!String
+    JojaDresser: "Комод Джоджа" #!String
+    GrayJojaDresser: "Серый комод Джоджа" #!String
+    LargeJojaRug: "Большой ковер Джоджа" #!String
+    SmallJojaRug: "Маленький коврик Джоджа" #!String
+    SquareJojaRug: "Квадратный коврик Джоджа" #!String
+    JojaRug: "Коврик Джоджа" #!String
+    JojaCoffeeTable: "Кофейный столик Джоджа" #!String
+    GrayJojaCoffeeTable: "Серый кофейный столик Джоджа" #!String
+    JojaLamp: "Лампа Джоджа" #!String
+    GrayJojaBookcase: "Серый книжный шкаф Джоджа" #!String
+    JojaBookcase: "Книжный шкаф Джоджа" #!String
+    JojaStool: "Табурет Джоджа" #!String
+    JojaEndTable: "Приставной столик Джоджа" #!String
+    GrayJojaEndTable: "Серый приставной столик Джоджа" #!String
+    DecorativeJojaDoor: "Декоративная дверь Джоджа" #!String
+    WizardBed: "Кровать волшебника" #!String
+    LargeWizardBookcase: "Большой книжный шкаф волшебника" #!String
+    WizardBookcase: "Книжный шкаф волшебника" #!String
+    ShortWizardBookcase: "Низкий книжный шкаф волшебника" #!String
+    SmallWizardBookcase: "Маленький книжный шкаф волшебника" #!String
+    WizardStool: "Табурет волшебника" #!String
+    WizardFireplace: "Камин волшебника" #!String
+    WizardDresser: "Комод волшебника" #!String
+    WizardStudy: "Рабочий уголок волшебника" #!String
+    WizardEndTable: "Приставной столик волшебника" #!String
+    WitchBroom: "Ведьмина метла" #!String
+    Cauldron: "Котел" #!String
+    CurlyTree: "Кудрявое дерево" #!String
+    LeafyPlant: "Болотное растение" #!String
+    WizardChair: "Стул волшебника" #!String
+    WizardTable: "Стол волшебника" #!String
+    WizardCushion: "Диванная подушка волшебника" #!String
+    DarkWizardCushion: "Диванная подушка темного волшебника" #!String
+    WizardTeaTable: "Чайный столик волшебника" #!String
+    SmallElixirShelf: "Узкая полка с эликсирами" #!String
+    ElixirShelf: "Полка с эликсирами" #!String
+    SmallStackedElixirShelf: "Двойная узкая полка с эликсирами" #!String
+    StackedElixirShelf: "Двойная полка с эликсирами" #!String
+    ElixirBundle: "Набор эликсиров" #!String
+    CoupleElixirs: "Два эликсира" #!String
+    ElixirTable: "Стол с эликсирами" #!String
+    LongElixirTable: "Длинный стол с эликсирами" #!String
+    WizardLamp: "Лампа волшебника" #!String
+    Runes: "«Руны»" #!String
+    WizardTower: "«Башня волшебника»" #!String
+    PottedRedMushroom: "Красный гриб в горшке" #!String
+    WizardCatalogue: "Каталог волшебника" #!String
+    VoidSwirls: "«Завихрения пустоты»" #!String
+    WizardBookshelf: "Книжная полка волшебника" #!String
+    Glyph: "Глиф" #!String
+    StoneFlooring: "Каменная плитка" #!String
+    RuneRug: "Рунный коврик" #!String
+    SwirlRug: "Ковер с завихрениями" #!String
+    StarryMoonRug: "Ковер «Звездная ночь»" #!String
+    CrystalBall: "Хрустальный шар" #!String
+    AmethystCrystalBall: "Аметистовый хрустальный шар" #!String
+    TopazCrystalBall: "Топазовый хрустальный шар" #!String
+    AquamarineCrystalBall: "Аквамариновый хрустальный шар" #!String
+    EmeraldCrystalBall: "Изумрудный хрустальный шар" #!String
+    RubyCrystalBall: "Рубиновый хрустальный шар" #!String
+    SmallBookStack: "Малая стопка книг" #!String
+    BookStack: "Стопка книг" #!String
+    LargeBookStack: "Большая стопка книг" #!String
+    PurpleBook: "Пурпурная книга" #!String
+    BlueBook: "Голубая книга" #!String
+    YellowBook: "Желтая книга" #!String
+    RedBook: "Красная книга" #!String
+    GreenBook: "Зеленая книга" #!String
+    BrownBook: "Коричневая книга" #!String
+    FallenPurpleBook: "Упавшая пурпурная книга" #!String
+    FallenBlueBook: "Упавшая голубая книга" #!String
+    FallenYellowBook: "Упавшая желтая книга" #!String
+    FallenRedBook: "Упавшая красная книга" #!String
+    FallenGreenBook: "Упавшая зеленая книга" #!String
+    FallenBrownBook: "Упавшая коричневая книга" #!String
+    SmallBookPile: "Несколько книг" #!String
+    BookPile: "Куча книг" #!String
+    LargeBookPile: "Большая куча книг" #!String
+    DecorativeWizardDoor: "Декоративная дверь волшебника" #!String
+    JunimoBed: "Кровать Джунимо" #!String
+    JunimoHut: "Хижина Джунимо" #!String
+    LargeJunimoHut: "Большая хижина Джунимо" #!String
+    SmallJunimoHut: "Маленькая хижина Джунимо" #!String
+    JunimoFireplace: "Камин Джунимо" #!String
+    JunimoBookcase: "Книжный шкаф Джунимо" #!String
+    JunimoPot: "Горшок Джунимо" #!String
+    JunimoBag: "Мешочек Джунимо" #!String
+    JunimoBundle: "Узелок Джунимо" #!String
+    JunimoStool: "Табурет Джунимо" #!String
+    JunimoTable: "Стол Джунимо" #!String
+    JunimoChair: "Стул Джунимо" #!String
+    SmallJunimoPot: "Горшочек Джунимо" #!String
+    JunimoFlower: "Цветок Джунимо" #!String
+    JunimoEndTable: "Приставной столик Джунимо" #!String
+    JunimoCatalogue: "Каталог Джунимо" #!String
+    JunimoTeaTable: "Чайный столик Джунимо" #!String
+    JunimoDresser: "Комод Джунимо" #!String
+    JunimoLamp: "Лампа Джунимо" #!String
+    JunimoPlant: "Растение Джунимо" #!String
+    JunimoWallPlaque: "Настенная пластина Джунимо" #!String
+    JunimoPlaque: "Пластина Джунимо" #!String
+    JunimoCushion: "Диванная подушка Джунимо" #!String
+    DarkJunimoCushion: "Темная диванная подушка Джунимо" #!String
+    JunimoTree: "Дерево Джунимо" #!String
+    JunimoCouch: "Диван Джунимо" #!String
+    GreenSleepingJunimo: "Зеленый спящий Джунимо" #!String
+    BlueSleepingJunimo: "Голубой спящий Джунимо" #!String
+    RedSleepingJunimo: "Красный спящий Джунимо" #!String
+    PurpleSleepingJunimo: "Пурпурный спящий Джунимо" #!String
+    YellowSleepingJunimo: "Желтый спящий Джунимо" #!String
+    OrangeSleepingJunimo: "Оранжевый спящий Джунимо" #!String
+    GraySleepingJunimo: "Серый спящий Джунимо" #!String
+    SquareJunimoRug: "Квадратный коврик Джунимо" #!String
+    JunimoRug: "Ковер Джунимо" #!String
+    JunimoMat: "Коврик Джунимо" #!String
+    CircularJunimoRug: "Круглый ковер Джунимо" #!String
+    SmallJunimoMat: "Маленький коврик Джунимо" #!String
+    CommunityCenter: "«Клуб»" #!String
+    LittleBuddies: "«Дружочки»" #!String
+    Stardrop: "«Звездная капля»" #!String
+    Hut: "«Хижина»" #!String
+    AbigailPortrait: "Портрет Абигейл" #!String
+    EmilyPortrait: "Портрет Эмили" #!String
+    HaleyPortrait: "Портрет Хэйли" #!String
+    LeahPortrait: "Портрет Леи" #!String
+    MaruPortrait: "Портрет Мару" #!String
+    PennyPortrait: "Портрет Пенни" #!String
+    AlexPortrait: "Портрет Алекса" #!String
+    ElliottPortrait: "Портрет Эллиота" #!String
+    HarveyPortrait: "Портрет Харви" #!String
+    SamPortrait: "Портрет Сэма" #!String
+    SebastianPortrait: "Портрет Себастиана" #!String
+    ShanePortrait: "Портрет Шейна" #!String
+    KrobusPortrait: "Портрет Кробуса" #!String
+    JunimoStar: "Звезда Джунимо" #!String
+    BulletinBoard: "Доска объявлений" #!String
+    BrochureCabinet: "Стойка с брошюрами" #!String
+    LeafyWallPanel: "Панель «Листва»" #!String
+    LightLeafyWallPanel: "Короткая панель «Листва»" #!String
+    DarkLeafyWallPanel: "Средняя панель «Листва»" #!String
+    DecorativeJunimoDoor: "Декоративная дверь Джунимо" #!String
+    RetroBed: "Кровать «Ретро»" #!String
+    RetroDresser: "Комод «Ретро»" #!String
+    RetroBookcase: "Книжный шкаф «Ретро»" #!String
+    RetroFireplace: "Камин «Ретро»" #!String
+    RetroCouch: "Диван «Ретро»" #!String
+    RetroCushion: "Диванная подушка «Ретро»" #!String
+    DarkRetroCushion: "Темная диванная подушка «Ретро»" #!String
+    RetroStool: "Табурет «Ретро»" #!String
+    RetroFlower: "Цветок «Ретро»" #!String
+    RetroChair: "Стул «Ретро»" #!String
+    RetroTable: "Стол «Ретро»" #!String
+    RetroPlant: "Растение «Ретро»" #!String
+    RetroEndTable: "Приставной столик «Ретро»" #!String
+    RetroTeaTable: "Чайный столик «Ретро»" #!String
+    RetroCatalogue: "Каталог «Ретро»" #!String
+    RetroCabinet: "Сервант «Ретро»" #!String
+    RetroRadio: "Радио «Ретро»" #!String
+    RetroBanner: "Баннер «Ретро»" #!String
+    Groovy: "«Волнистые линии»" #!String
+    RetroLamp: "Лампа «Ретро»" #!String
+    RetroRug: "Ковер «Ретро»" #!String
+    RetroSquareRug: "Квадратный коврик «Ретро»" #!String
+    RetroMat: "Маленький коврик «Ретро»" #!String
+    LargeRetroRug: "Большой ковер «Ретро»" #!String
+    Abstract: "«Абстракция»" #!String
+    Starship: "«Звездолет»" #!String
+    Binary: "«Бинарность»" #!String
+    Checkers: "«Шашечки»" #!String
+    UFO: "«НЛО»" #!String
+    DecorativeRetroDoor: "Декоративная дверь «Ретро»" #!String
+    DecorativeDoor1: "Декоративная дверь" #!String
+    DecorativeDoor2: "Декоративная дверь" #!String
+    DecorativeDoor3: "Декоративная дверь" #!String
+    DecorativeDoor4: "Декоративная дверь" #!String
+    DecorativeDoor5: "Декоративная дверь" #!String
+    DecorativeDoor6: "Декоративная дверь" #!String
+    WallClock: "Настенные часы" #!String
+    DecorativeHatch: "Декоративный люк" #!String
+    DecorativeOakLadder: "Декоративная дубовая лестница" #!String
+    DecorativeWalnutLadder: "Декоративная ореховая лестница" #!String
+    UprightPiano: "Пианино" #!String
+    CoatStand: "Вешалка" #!String
+    BirdHouse: "Скворечник" #!String
+    DecorativeShovel: "Декоративная лопата" #!String
+    WallSword: "Настенный меч" #!String
+    DecorativeSword: "Декоративный меч" #!String
+    WineTable: "Винный столик" #!String
+    SpiritsTable: "Барный столик" #!String
+    TallHousePlant: "Высокое комнатное растение" #!String
+    CornPlant: "Кукуруза" #!String
+    BlueCushion: "Голубая диванная подушка" #!String
+    YellowCushion: "Желтая диванная подушка" #!String
+    GreenCushion: "Зеленая диванная подушка" #!String
+    RedCushion: "Красная диванная подушка" #!String
+    BrownCushion: "Коричневая диванная подушка" #!String
+    BlackCushion: "Черная диванная подушка" #!String
+    FoodPetBowl: "Миска питомца" #!String
+    WaterPetBowl: "Поилка питомца" #!String
+    OakLampEndTable: "Дубовый приставной столик с лампой" #!String
+    WalnutLampEndTable: "Ореховый приставной столик с лампой" #!String
+    BirchLampEndTable: "Березовый приставной столик с лампой" #!String
+    MahoganyLampEndTable: "Приставной столик из красного дерева с лампой" #!String
+    TriangleWindow: "Треугольное окно" #!String
+    Clothesline: "Бельевая веревка" #!String
+    TrashCatalogue: "Каталог мусора" #!String
+    ElegantVase: "Элегантная ваза" #!String
+    CatTree: "Когтеточка" #!String
+    DarkCatTree: "Темная когтеточка" #!String
+    LightSwitch: "Выключатель" #!String
+    Outlet: "Розетка" #!String
+    Doghouse: "Конура" #!String
+    DarkDoghouse: "Темная конура" #!String
+    BountifulDiningTable: "Обеденный стол «Изобилие»" #!String
+    PlasticLawnEndTable: "Пластиковый дачный приставной столик" #!String
+    PlasticLawnChair: "Пластиковый дачный стул" #!String
+    BrokenTelevision: "Сломанный телевизор" #!String
+    SixPackRings: "Упаковка из-под пива" #!String
+    GreenBottle: "Зеленая бутылка" #!String
+    PlasticBag: "Пластиковый мешок" #!String
+    AluminumCan: "Алюминиевая банка" #!String
+    BlueBottle: "Голубая бутылка" #!String
+    BuriedTire: "Закопанная шина" #!String
+    Tire: "Шина" #!String
+    Wrapper: "Обертка" #!String
+    SpilledBeverage: "Разлитый напиток" #!String
+    MessyShirt: "Грязная рубашка" #!String
+    MessyShorts: "Грязные шорты" #!String
+    MoldyCouch: "Заплесневелый диван" #!String
+    FancyHousePlant: "Модное комнатное растение" #!String
+    PigPainting: "Картина со свиньей" #!String
+    MidnightBed: "Кровать «Полночь на пляже»" #!String
+    MidnightDoubleBed: "Двуспальная кровать «Полночь на пляже»" #!String
+

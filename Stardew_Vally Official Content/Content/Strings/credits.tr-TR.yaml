@@ -1,0 +1,97 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.ListReader`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!List<String>
+    - "[image] LooseSprites\\\\yellowLettersLogo 0 0 228 26 3" #!String
+    - "[image] LooseSprites\\\\yellowLettersLogo 0 26 228 26 3" #!String
+    - "[image] LooseSprites\\\\yellowLettersLogo 0 52 228 26 3" #!String
+    - "[image] LooseSprites\\\\yellowLettersLogo 0 78 228 26 3" #!String
+    - "" #!String
+    - "[3]Stardew Valley - Geliştiren:" #!String
+    - "Eric Barone \"ConcernedApe\"" #!String
+    - "" #!String
+    - "[3]1.6 Güncellemesi:" #!String
+    - "Eric Barone" #!String
+    - "Jesse Plamondon-Willard \"Pathoschild\"" #!String
+    - "Devin Hedegaard" #!String
+    - "Arthur Lee" #!String
+    - "Jared Flores" #!String
+    - "Casey Warrington" #!String
+    - "" #!String
+    - "[3]1.5 Güncellemesi:" #!String
+    - "Eric Barone" #!String
+    - "Arthur Lee" #!String
+    - "" #!String
+    - "[3]Çok Oyunculu Modu Kodlaması:" #!String
+    - "Tom Coxon" #!String
+    - "" #!String
+    - "[3]Ekstra Kodlama:" #!String
+    - "Casey Warrington" #!String
+    - "Alex Erlandson" #!String
+    - "" #!String
+    - "[3]Çeviri:" #!String
+    - "Playism" #!String
+    - "LocalizeDirect" #!String
+    - "Alessio Messersì (İtalyanca)" #!String
+    - "Junho Won (Korece)" #!String
+    - "Jo \"Josh\" Sanghee (Korece)" #!String
+    - "Not Shalulu (Fransızca)" #!String
+    - "Gőz Richárd \"TRC\" (Macarca)" #!String
+    - "Hüseyin Serhat Çavunt (Türkçe)" #!String
+    - "Salih Emircan Ayyıldız (Türkçe)" #!String
+    - "Hilmi Furkan Yaşık (Türkçe)" #!String
+    - "Ali Batuhan Özkan (Türkçe)" #!String
+    - "Daniel Ruiz \"TheBrightKing\" (İspanyolca)" #!String
+    - "Sandra Martín Sigüenza (İspanyolca)" #!String
+    - "Alexander Preymak (Rusça)" #!String
+    - "Arina Bedrina (Rusça)" #!String
+    - "Niclaus Leo \"Royami\" (Rus sanatı)" #!String
+    - "Alessandro Raffaele-Addamo (Almanca)" #!String
+    - "Vinícius de Medeiros Miguel (Portekizce)" #!String
+    - "Watermelon Translations (Basitleştirilmiş Çince)" #!String
+    - "Takashi Fujimoto (Japonca)" #!String
+    - "" #!String
+    - "[3]Çeviri Ekip Sorumlusu:" #!String
+    - "Matthew Griffin" #!String
+    - "" #!String
+    - "[3]Mac, Linux, Xbox One, \"PlayStation 4\", \"PS Vita\" ve Nintendo Switch Portları:" #!String
+    - "Sickhead Games" #!String
+    - "" #!String
+    - "[3]Telefon Portları:" #!String
+    - "The Secret Police" #!String
+    - "Sickhead Games" #!String
+    - "" #!String
+    - "[3]Konsol Kalite Güvencesi:" #!String
+    - "GlobalStep" #!String
+    - "" #!String
+    - "[3]Perakende Satış:" #!String
+    - "505 Games" #!String
+    - "Fangamer" #!String
+    - "" #!String
+    - "[3]Perakende Kalite Güvencesi:" #!String
+    - "Pipeworks Studio" #!String
+    - "" #!String
+    - "[image] LooseSprites\\\\Cursors 540 333 13 13 4 4" #!String
+    - "[3]Bağlantılar:" #!String
+    - "[link] https://www.stardewvalley.net Resmi İnternet Sitesi" #!String
+    - "[link] https://forums.stardewvalley.net Resmi Forum" #!String
+    - "[link] https://www.stardewvalley.net/links Haberler ve Topluluk" #!String
+    - "" #!String
+    - "[image] LooseSprites\\\\Cursors 592 333 13 13 4 4" #!String
+    - "" #!String
+    - "[1]Oynadığınız için teşekkürler <" #!String
+

@@ -1,0 +1,62 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.Int32Reader"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<Int32,String>
+    0: "新人牧場主^15000Gをかせぐ^true^-1^18" #!String
+    1: "牛飼い^50000Gをかせぐ^true^0^21" #!String
+    2: "1人前の牧場主^250000Gをかせぐ^true^1^20" #!String
+    3: "ミリオネア^1000000Gをかせぐ^true^2^1" #!String
+    4: "伝説の牧場主^10000000Gをかせぐ^false^-1^3" #!String
+    5: "コンプリートコレクション^博物館のコレクションをすべてあつめる。^true^28^0" #!String
+    6: "新しい友達^だれかとの友好度を5まで上げる。^true^-1^14" #!String
+    7: "親友^だれかとの友好度を10まで上げる。^true^6^31" #!String
+    9: "愛され系牧場主^8人の友好度を10まで上げる。^true^7^32" #!String
+    11: "友達グループ^4人の友好度を5まで上げる。^true^6^26" #!String
+    12: "ご近所づきあい^10人の友好度を5まで上げる。^true^11^25" #!String
+    13: "人気者^20人の友好度を5まで上げる。^true^12^11" #!String
+    15: "コック^10種類の料理をつくる。^true^18^12" #!String
+    16: "シェフ^25種類の料理をつくる。^true^15^7" #!String
+    17: "グルメマスター^すべての料理をつくる。^true^16^35" #!String
+    18: "上昇志向^家をアップグレードする。^true^-1^13" #!String
+    19: "ブルジョア生活^家を最大サイズまでアップグレードする。^true^18^15" #!String
+    20: "D.I.Y.^クラフトで15種類のアイテムをつくる。^true^-1^29" #!String
+    21: "職人^クラフトで30種類のアイテムをつくる。^true^20^16" #!String
+    22: "クラフトマスター^クラフトできるアイテムをすべてつくる。^true^21^23" #!String
+    24: "釣り人^魚を10種類釣りあげる。^true^-1^28" #!String
+    25: "海の古兵^魚を24種類釣りあげる。^true^24^5" #!String
+    26: "釣りマスター^魚を全種類釣りあげる。^true^25^24" #!String
+    27: "大漁旗^魚を100匹釣りあげる。^true^64^30" #!String
+    28: "お宝発掘^博物館に40種類アイテムを寄付する。^true^-1^6" #!String
+    29: "雑用係^「お手伝い」を10件完了させる。^true^-1^22" #!String
+    30: "大きな親切^「お手伝い」を40件完了させる。^true^29^10" #!String
+    31: "混作農業^すべての作物を15個ずつ出荷する。^true^-1^34" #!String
+    32: "単作農業^作物のどれか1種類を300個出荷する。^true^-1^33" #!String
+    34: "満タンの出荷箱^すべてのアイテムを出荷する。^true^-1^9" #!String
+    35: "読書家^すべての本を読む。^true^-1^9" #!String
+    36: "超いいね^映画を見る。^false^-1^9" #!String
+    37: "ブルーリボン^スターデューバレーまつりの品評会で1位になる。^true^-1^9" #!String
+    38: "忘れられないスープ^知事を満足させる。^true^-1^9" #!String
+    39: "親しいご近所さん^森に住むご近所さんが家族を増やすのを手助けする。^true^-1^9" #!String
+    40: "遠い海岸^ジンジャーアイランドにたどり着く。^false^-1^9" #!String
+    41: "底にひそむ危険^「危険」な鉱山の底に到達する。^false^-1^9" #!String
+    42: "無限のパワー^最強の武器を手に入れる。^true^-1^9" #!String
+    44: "完璧^頂点に到達する。^false^-1^9" #!String
+

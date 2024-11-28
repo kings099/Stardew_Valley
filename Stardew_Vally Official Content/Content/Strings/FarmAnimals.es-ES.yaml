@@ -1,0 +1,49 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    DisplayType_Chicken_Blue: "gallina azul" #!String
+    DisplayType_Chicken_Brown: "gallina marrón" #!String
+    DisplayType_Chicken_Golden: "Pollito dorado" #!String
+    DisplayType_Chicken_White: "gallina blanca" #!String
+    DisplayType_Chicken_Void: "gallina sombría" #!String
+    DisplayType_Cow_Brown: "vaca marrón" #!String
+    DisplayType_Cow_White: "vaca blanca" #!String
+    DisplayType_Dinosaur: "dinosaurio" #!String
+    DisplayType_Duck: "pato" #!String
+    DisplayType_Goat: "cabra" #!String
+    DisplayType_Ostrich: "Avestruz" #!String
+    DisplayType_Pig: "cerdo" #!String
+    DisplayType_Rabbit: "conejo" #!String
+    DisplayType_Sheep: "oveja" #!String
+    TryingToSleep: "{0} intenta dormir" #!String
+    MoodMessage_NewHome_Baby_Male: "{0} es un poco torpe aún. Siente curiosidad por el mundo en el que ha nacido." #!String
+    MoodMessage_NewHome_Baby_Female: "{0} es un poco torpe aún. Siente curiosidad por el mundo en el que ha nacido." #!String
+    MoodMessage_NewHome_Adult_Male_1: "{0} siente curiosidad, pero va con cuidado. Se está acostumbrando a su nuevo hogar." #!String
+    MoodMessage_NewHome_Adult_Male_2: "{0} siente curiosidad, pero va con cuidado. Es un mundo nuevo y extraño." #!String
+    MoodMessage_NewHome_Adult_Female_1: "{0} siente curiosidad, pero va con cuidado. Se está acostumbrando a su nuevo hogar." #!String
+    MoodMessage_NewHome_Adult_Female_2: "{0} siente curiosidad, pero va con cuidado. Es un mundo nuevo y extraño." #!String
+    MoodMessage_LeftOutsideAtNight_Male: "{0} se quedó fuera con la puerta cerrada ayer por la noche... Está de mal humor." #!String
+    MoodMessage_LeftOutsideAtNight_Female: "{0} se quedó fuera con la puerta cerrada ayer por la noche... Está de mal humor." #!String
+    MoodMessage_DisturbedByDog_Male: "{0} parece nervioso y paranoico hoy. Como si algo malo hubiera ocurrido anoche." #!String
+    MoodMessage_DisturbedByDog_Female: "{0} parece nerviosa y paranoica hoy. Como si algo malo hubiera ocurrido anoche." #!String
+    MoodMessage_Hungry1: "{0} parece de mal humor." #!String
+    MoodMessage_Hungry2: "{0} ha perdido un poco de peso." #!String
+    MoodMessage_Sad: "{0} parece triste." #!String
+    MoodMessage_Fine: "Parece que {0} está bien." #!String
+    MoodMessage_Happy: "¡{0} parece muy feliz hoy!" #!String
+

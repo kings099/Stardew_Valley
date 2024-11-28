@@ -1,0 +1,611 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    ForestPylon: "Приемник неизвестного происхождения..." #!String
+    ForestPylonActivated: "Странная реликвия из другого мира." #!String
+    ForestPylonEvent: "communityCenter/-2000 -2000/farmer 16 5 0 Wizard -1000 -1000 2/pause 1000/viewport 16 5 true/move farmer -2 0 1/pause 4000/playSound terraria_warp/specificTemporarySprite terraria_warp_begin/faceDirection farmer 2 true/animate farmer false true 100 94/jump farmer/pause 2000/stopAnimation farmer/faceDirection farmer 1/pause 3600/playSound coin/pause 100/awardFestivalPrize meowmere/pause 1000/specificTemporarySprite terraria_cat_leave/pause 5000/emote farmer 8/pause 500/warp Wizard 4 4/playSound doorClose/pause 400/faceDirection Wizard 1/emote Wizard 12/speak Wizard \"Руки прочь!\"/faceDirection farmer 3/emote farmer 16 true/end" #!String
+    SquidFest_Pam: "Я-то уж кальмара не поймаю, но ничего страшного. Я тебя отсюда подбодрю, молодежь." #!String
+    SquidFest_Willy: "Со временем ты научишься чувствовать кальмара. Будешь понимать, что он попался, еще даже не увидев его." #!String
+    DesertFestival_Abigail: "Хорошо, что автобус теперь на ходу. Это и правда весело.$h#$e#Я всегда хотела выехать из Пеликана." #!String
+    DesertFestival_Abigail_marriage: "Я думала присоединиться к тебе в Пещере Черепа, но заметила лоток с едой...#$e#Иди без меня... просто смотри в оба!" #!String
+    DesertFestival_Alex_marriage: "Эй... ты так мило выглядишь в лучах пустынного солнца...$h" #!String
+    DesertFestival_Sam_marriage: "Эй, не забудь прихватить бесплатный кактус, пока фестиваль не закончился!#$b#Как бы он ни выглядел, у нас дома он будет смотреться просто потрясно!$h" #!String
+    DesertFestival_Sebastian_marriage: "Эй, я постою тут, в теньке.#$e#Ты же знаешь... я всегда был больше по пещерам.$h" #!String
+    DesertFestival_Shane_marriage: "Напомни, чтобы я сегодня перед сном почистил зубы... у них тут газировка с двенадцатью вкусами, и я собираюсь их все перепробовать.#$e#М-м-м... газировка со вкусом пещерной морковки... *хлюп*" #!String
+    DesertFestival_Elliott_marriage: "Так-так-так, что у нас тут? О ${прекрасный цветок пустынь^прекрасная пустынная роза}$!$h#$e#Не забывай вовремя попить, ${дорогой^дорогая}$." #!String
+    DesertFestival_Harvey_marriage: "Эй, @. Я буду работать на фестивале допоздна, так что не жди меня!#$e#Обещай, что будешь смотреть в оба в Пещере Черепа." #!String
+    DesertFestival_Emily_marriage: "Эй, @! Мне в тебе и так все нравится... но если хочешь, то тоже можешь зайти!" #!String
+    DesertFestival_Emily2_marriage: "Я отлично провожу время, но я была так занята, что ничего не сделала по дому. Надеюсь, ты там нормально справляешься!" #!String
+    DesertFestival_Emily3_marriage: "Не могу вспомнить... кормила ли я попугая сегодня утром?" #!String
+    DesertFestival_Haley_marriage: "Эй... Кто-то тут хорошенько загорел... *щип*$h" #!String
+    DesertFestival_Haley2_marriage: "%Ваша жена дремлет." #!String
+    DesertFestival_Penny_marriage: "Привет, ${милый^милая}$! Я тут гляжу на товары — думаю, может чего для дома найдется.$h" #!String
+    DesertFestival_Maru_marriage: "Как там со сбором яиц Калико? Тут так много классных призов!$h#$e#Я уверена, что ты не подкачаешь!" #!String
+    DesertFestival_Leah_marriage: "Я хотела пойти искупаться, но оказалось, что в воде полно скорпионовых карпов!$h" #!String
+    DesertFestival_Alex: "Как тебе размеры этих яиц Калико?#$b#Просто представь, сколько в них белка..." #!String
+    DesertFestival_Caroline: "Просто прекрасная погода. Не могу сказать, где заканчивается моя кожа и начинается воздух.$h" #!String
+    DesertFestival_Clint: "Эй, @. Если честно, мне не очень-то нравятся фестивали.#$b#Но дома я бы весь извелся, зная, что все остальные веселятся без меня.$s" #!String
+    DesertFestival_Demetrius: "Почему людям так нравится острая еда? Это же противоречит здравому смыслу с биологической точки зрения.#$e#Хотя, возможно, я что-то упускаю...$5" #!String
+    DesertFestival_Elliott: "*бормочет* ...хм-м, через пальцы ног проходит мягко, но сам по себе плотный. И все же гораздо мягче, чем дома...#$b#Ой, извини! Я тут потихоньку становлюсь чем-то вроде песочного сомелье.$h" #!String
+    DesertFestival_Emily: "Хм-м... у меня такое чувство, будто твой наряд не отражает твою натуру. Просто зайди в примерочную — и мы все исправим!" #!String
+    DesertFestival_Evelyn: "Ах... пески времени, пески времени..." #!String
+    DesertFestival_George: "О чем она вообще бормочет? Я сюда ради острой еды добирался!" #!String
+    DesertFestival_Gus: "Обычно я готовлю для всех городских фестивалей. Но не сегодня! Наконец-то я могу расслабиться.$h" #!String
+    DesertFestival_Haley: "Если учуешь приятный аромат, знай: это кокосовое масло, которое я нанесла на кожу.#$b#Погружаюсь в пустынную жизнь с головой!$h" #!String
+    DesertFestival_Haley2: "%Хэйли сияет в лучах солнца." #!String
+    DesertFestival_Harvey: "В пещерах может быть очень опасно. Надеюсь, ничего не случится, но все же... я буду здесь целый день — на всякий случай.#$e#Как врач я рекомендую проводить меньше времени в кишащих змеями пещерах! Но, в конце концов, выбор за тобой." #!String
+    DesertFestival_Jas: "Тут весело, но я хочу мороженое..." #!String
+    DesertFestival_Jodi: "Ой, не обращай на меня внимания, я тут за покупками.#$e#Если не изучу все прилавки, то могу пропустить отличное украшение для нашей гостиной!" #!String
+    DesertFestival_Kent: "Эй, @. Наслаждаешься жарой?" #!String
+    DesertFestival_Leah: "Мне вот интересно... Если бы я жила тут, а не в Долине Стардью, выглядели бы мои картины иначе?" #!String
+    DesertFestival_Leo: "Мне нравится это место. Погода прямо как дома." #!String
+    DesertFestival_Lewis: "Этот фестиваль — то что нужно, чтобы всех взбодрить после долгой и темной зимы." #!String
+    DesertFestival_Lewis2: "Все это стало возможным лишь потому, что автобус снова на ходу, @! Не знаю, как тебя благодарить!" #!String
+    DesertFestival_Lewis3: "Помни, сегодня последний день фестиваля. Но через год мы устроим новый." #!String
+    DesertFestival_Linus: "Я прокатился под автобусом.#$e#Такого воздуха, как в Пустыне Калико, нигде не найти. Хе-хе-хе...$h" #!String
+    DesertFestival_Marnie: "Эй, @. Я как раз размышляла про молоко.#$e#Всегда хотела попробовать верблюжье, а ты? Я слыхала, оно солененькое." #!String
+    DesertFestival_Maru: "Я впечатлена, как натренированы эти маленькие гонщики!$h" #!String
+    DesertFestival_Pam: "Эй, молодежь... У тебя что, выходной? Хорошо же иногда кайфовать, да?#$e#Ага... Даже старушке Пэм иногда нужно понежиться на солнышке! Просто разбуди меня до того, как я поджарюсь... Хе-хе." #!String
+    DesertFestival_Penny: "Тысячи лет назад на этом месте процветала одна древняя цивилизация. Интересно, какими они были?" #!String
+    DesertFestival_Pierre: "Мне как владельцу магазина всегда интересно узнать, как ведут свои дела конкуренты.#$e#*шепчет* Не говори Сэнди, но мой ассортимент все еще уложит ее на лопатки!" #!String
+    DesertFestival_Robin: "Эй, @. Мы тут просто болтаем. Я не так уж и часто вижу этих ребят, хоть мы и соседи!" #!String
+    DesertFestival_Sam: "Эй, @. Зацени мой кактус. Я пытаюсь придумать ему имя.#$e#Хм-м... Может, «%name»?" #!String
+    DesertFestival_Sandy: "Вероятно, для меня это самое загруженное время года! И хорошая возможность всех повидать." #!String
+    DesertFestival_Sebastian: "Эй, я тут с этой птицей зависаю. Кажется, я ей нравлюсь." #!String
+    DesertFestival_Shane: "Однажды я приезжал сюда в детстве... Помню только, как мне стало плохо в автобусе." #!String
+    DesertFestival_Vincent: "Мам, мне скучно!" #!String
+    DesertFestival_Willy: "Ах, нет ничего лучше, чем запах жареной креветочки в жаркий день." #!String
+    CactusMan_Closed: "Кактусовод: Они пока стесняются, приходи позже." #!String
+    CactusMan_Collected: "Кактусовод: Ну, как поживает наш малыш?" #!String
+    CactusMan_Intro_1: "Кактусовод: О да... Ты выглядишь как человек, способный оценить то, что у меня есть." #!String
+    CactusMan_Intro_2: "Кактусовод: О да... У меня есть то, что тебе идеально подойдет." #!String
+    CactusMan_Intro_3: "Кактусовод: Этот огонек в твоих глазах... Говорит: «Мне срочно нужен кактус, или я взорвусь!»." #!String
+    CactusMan_Question: "Кактусовод: Желаешь впустить в свою жизнь новый кактус?" #!String
+    CactusMan_No: "Кактусовод: Понимаю. Хоть они и малютки, но впустить кактус в свою жизнь — большая ответственность. Приходи, когда созреешь." #!String
+    CactusMan_Yes_Intro: "Кактусовод: Отлично. Посмотрим..." #!String
+    CactusMan_Yes_Full: "Кактусовод: У тебя недостаточно места... Возвращайся, когда тебе будет куда его поместить." #!String
+    CactusMan_Yes_1: "Кактусовод: Да, он поразительно похож на тебя, не находишь?" #!String
+    CactusMan_Yes_2: "Кактусовод: Этот немного застенчив, но я уверен, что вы сразу поладите." #!String
+    CactusMan_Yes_3: "Кактусовод: О да... Идеальный союз." #!String
+    CactusMan_Yes_4: "Кактусовод: Так просто и не объяснишь... Но тебе прекрасно подойдет этот." #!String
+    CactusMan_Yes_5: "Кактусовод: Этот странненький — как раз для тебя." #!String
+    EggShop_Closed: "Лавка закрыта. Приходите позже." #!String
+    Accept: "Принять" #!String
+    Decline: "Отказаться" #!String
+    Willy_DesertFishing1: "\n        Испытание Вилли: Поймайть 3 песковников.\n      " #!String
+    Willy_Challenge: "Испытание Вилли" #!String
+    Willy_Challenge_Description_1: "Вилли хочет, чтобы вы поймали 3 песковников." #!String
+    Willy_Challenge_Return_1: "Ну что, удалось? Отличный улов, не правда ли?#$b#Вот тебе 25 яиц Калико в качестве вознаграждения." #!String
+    Willy_Challenge_Description_2: "Вилли хочет, чтобы вы поймали Скорпионового карпа." #!String
+    Willy_Challenge_Return_2: "Во, у тебя получилось! Улов с характером, не так ли?#$b#Вот тебе 50 яиц Калико в качестве вознаграждения." #!String
+    Willy_Challenge_Description_3: "Вилли хочет, чтобы вы нашли «Золотой поплавок»." #!String
+    Willy_Challenge_Return_3: "Ой, это же мой любимый золотой поплавок!#$b#И он почти не пахнет рыбой... Хе-хе.$h#$b#Вот тебе 30 яиц Калико в качестве вознаграждения." #!String
+    Willy_DesertFishing2: "Испытание Вилли: Поймайть Скорпионового карпа." #!String
+    Willy_DesertFishing3: "Вилли: Рыба проглотила мой редкий золотой поплавок! Даю 30 яиц тому, кто его вернет." #!String
+    Willy_GoldenBobber: "Найти и вернуть Вилли Золотой поплавок." #!String
+    Scholar_Closed: "Ученый: Прости, но мне нельзя говорить с тобой до начала фестиваля." #!String
+    Scholar_Intro: "Ученый: Приветствую, друг! Желаешь блеснуть своими знаниями? Если правильно ответишь на мои вопросы — получишь приз. Что скажешь?" #!String
+    Scholar_Intro2: "Ученый: Отлично! А теперь первый вопрос..." #!String
+    Scholar_Correct: "Ученый: Верно!" #!String
+    Scholar_Win: "Ученый: Очень хорошо. Я впечатлен твоими знаниями. Вот твой приз." #!String
+    Scholar_Wrong: "Ученый: Неправильно! ...извини, но тебе придется попробовать в другой раз." #!String
+    Scholar_Failed: "Ученый: ...извини, но придется попробовать в следующий раз." #!String
+    Scholar_DoneThisYear: "Ученый: Наслаждайся наградой! Возвращайся в следующем году за новыми вопросами." #!String
+    Scholar_Question_0_0: "Вопрос 1: Кто заведует {0} в городе Пеликан?" #!String
+    Scholar_Question_0_0_Options: "кузницей,музеем,салуном,рыбацким магазином,магазином животных,универсамом" #!String
+    Scholar_Question_0_0_Answers: "Клинт,Гюнтер,Гас,Вилли,Марни,Пьер,Робин,Марлон" #!String
+    Scholar_Question_0_1: "Вопрос 1: Когда заканчивается это время года?" #!String
+    Scholar_Question_0_1_Answers: "28-го,30-го,31-го,26-го" #!String
+    Scholar_Question_0_2: "Вопрос 1: Где мы находимся?" #!String
+    Scholar_Question_0_2_Answers: "Пустыня Калико,Пустыня Карлито,Пустыня Конико,Пустыня Каприко,Пустыня Канонико,Пустыня Коровлико,Пустыня Катакомб,Пустыня Капиколо,Пустыня Пещеры Черепа, Пустыня Козико" #!String
+    Scholar_Question_1_0: "Вопрос 2: В какое время года вырастает {0}?" #!String
+    Scholar_Question_1_0_Options: "чеснок,красная капуста,артишок" #!String
+    Scholar_Question_1_0_Answers: "Весной,Летом,Осенью" #!String
+    Scholar_Question_1_1: "Вопрос 2: Когда плодоносит {0} дерево?" #!String
+    Scholar_Question_1_1_Options: "абрикосовое,персиковое,гранатовое" #!String
+    Scholar_Question_1_1_Answers: "Весной,Летом,Осенью" #!String
+    Scholar_Question_1_2: "Вопрос 2: Когда обычно закрыт магазин Пьера?" #!String
+    Scholar_Question_1_2_Answers: "По средам,По четвергам,По вторникам,По понедельникам,По субботам,По воскресеньям,По пятницам" #!String
+    Scholar_Question_2_0: "Вопрос 3: В какое время года можно поймать {0}?" #!String
+    Scholar_Question_2_0_Options: "карпа,рыбу-ежа,лосося,кальмара" #!String
+    Scholar_Question_2_0_Answers: "В любое время года,Летом,Осенью,Зимой" #!String
+    Scholar_Question_2_1: "Вопрос 3: Сколько тобой пройдено шагов?" #!String
+    Scholar_Question_2_2: "Вопрос 3: Сколько стоит {0}?" #!String
+    Scholar_Question_2_2_Options: "курица,корова,свинья,кролик,утка" #!String
+    Scholar_Question_2_2_Answers: "800 з.,1500 з.,16000 з.,8000 з.,1200 з.,11000 з.,7500 з." #!String
+    Scholar_Question_3_0: "Вопрос 4: Где можно поймать {0}?" #!String
+    Scholar_Question_3_0_Options: "камень-рыбу,ледопипа,лавового угря" #!String
+    Scholar_Question_3_0_Answers: "На 20-м уровне шахты,На 60-м уровне шахты,На 100-м уровне шахты,На пляже,В канализации,На 120-м уровне шахты" #!String
+    Scholar_Question_3_1: "Вопрос 4: Какая фамилия у Джорджа?" #!String
+    Scholar_Question_3_1_Answers: "Маллнер,Милленер,Молнар,Нельсон,Миллер" #!String
+    Scholar_Question_3_2: "Вопрос 4: Сколько всего в городе Пеликан мусорных баков?" #!String
+    Scholar_Question_3_2_Answers: "8,12,6,11,4,10" #!String
+    Cook_Intro: "Шеф-повар: Приветик... желаете подкрепиться?" #!String
+    Cook_Intro_Yes: "Шеф-повар: О-о-о да... Очень рад это слышать! *хлюп*" #!String
+    Cook_Intro_Yes2: "Шеф-повар: Я хотел бы приготовить вам одно особенное блюдо. Нечто, что способно удовлетворить ваш уникальный вкус. Вы позволите?" #!String
+    Cook_Intro_Yes3: "Шеф-повар: О-о-о... *посмеивается*... очень хорошо. Итак, что будете?" #!String
+    Cook_Ingredient0: "Сытные бобы" #!String
+    Cook_Ingredient1: "Пещерный хлеб" #!String
+    Cook_Ingredient2: "Редкий фрукт" #!String
+    Cook_Ingredient3: "Неприлично острый Чеддер" #!String
+    Cook_Ingredient4: "Креветка" #!String
+    Cook_ChoseIngredient: "Шеф-повар: О да... {0}. Отличный выбор. А теперь... каким соусом все это полить?" #!String
+    Cook_Sauce0: "Соус маринара" #!String
+    Cook_Sauce1: "Грибной крем" #!String
+    Cook_Sauce2: "Вишневый сироп" #!String
+    Cook_Sauce3: "Жгучий чесночный соус" #!String
+    Cook_Sauce4: "Возмутительно острый соус" #!String
+    Cook_ChoseSauce: "Шеф-повар: Очень хорошо. Добавляем, не жалея, {0}, чтобы завершить блюдо." #!String
+    Cook_Done: "Шеф-повар: Вуаля. Назову его «{0}». Приятного аппетита!" #!String
+    Cook_DishNames_0_1: "Землистый мусс" #!String
+    Cook_DishNames_0_2: "Сладкий бобовый кекс" #!String
+    Cook_DishNames_0_3: "Запеканка Пещеры Черепа" #!String
+    Cook_DishNames_0_4: "Острые тако" #!String
+    Cook_DishNames_1_0: "Горный чили" #!String
+    Cook_DishNames_1_2: "Кристальный пирог" #!String
+    Cook_DishNames_1_3: "Пещерный кебаб" #!String
+    Cook_DishNames_1_4: "Копченое полено" #!String
+    Cook_DishNames_2_0: "Кислый салат" #!String
+    Cook_DishNames_2_1: "Суперсъестной пирог" #!String
+    Cook_DishNames_2_3: "Смузи воителя" #!String
+    Cook_DishNames_2_4: "Смятая фруктовая кожура" #!String
+    Cook_DishNames_3_0: "Калико-пицца" #!String
+    Cook_DishNames_3_1: "Фаршированные грибы" #!String
+    Cook_DishNames_3_2: "Эльфийская кесадилья" #!String
+    Cook_DishNames_3_4: "Начос пустыни" #!String
+    Cook_DishNames_4_0: "Чоппино" #!String
+    Cook_DishNames_4_1: "Джунглевая креветка" #!String
+    Cook_DishNames_4_2: "Креветочный пончик" #!String
+    Cook_DishNames_4_3: "Запах моря" #!String
+    Cook_DishNames_4_4: "Пустынный гамбо" #!String
+    Cook_Intro_No: "Шеф-повар: Как жаль. Возвращайтесь, когда появится желание отведать что-нибудь изысканное." #!String
+    Race_Closed: "Гоночный комментатор: Гонщикам нужно какое-то время на подготовку... Приходите позже!" #!String
+    Race_Question: "Гоночный комментатор: Угадайте победителя и получите великолепные призы!" #!String
+    Race_Guess: "Гоночный комментатор: Кто же, по-вашему, выиграет?" #!String
+    Race_Guess_Made: "Гоночный комментатор: {0}? Хорошо. А теперь возвращайтесь на свое место и наслаждайтесь гонкой!" #!String
+    Race_Guess_Already_Made: "Гоночный комментатор: Посмотрим, что может нам показать {0}!" #!String
+    Race_Collect_Prize_Special: "Гоночный комментатор: Турбо-улитка... да ладно?! Эм... Что ж, вот ваш солидный выигрыш..." #!String
+    Race_Collect_Prize: "Гоночный комментатор: Поздравляю! Вот ваш приз!" #!String
+    Race_Late_Guess: "Гоночный комментатор: Упс. Похоже, гонка уже началась. Попробуйте в следующий раз!" #!String
+    Race_Ongoing: "Гоночный комментатор: Гонка в самом разгаре! Поговорим позже..." #!String
+    Race_Ended: "Гоночный комментатор: На сегодня гонки закончились. Надеюсь, вам понравилось!" #!String
+    Race_Begin: "Следующая гонка вот-вот начнется..." #!String
+    Race_Ready: "На старт..." #!String
+    Race_Set: "Внимание..." #!String
+    Race_Go: "МАРШ!" #!String
+    Race_Finish: "Финиш!" #!String
+    Race_Comment_1: "Близко прошел!" #!String
+    Race_Comment_2: "Идут ноздря в ноздрю!" #!String
+    Race_Comment_3: "Такой скорости мы еще не видели!" #!String
+    Race_Comment_4: "А теперь момент, которого вы все так ждали..." #!String
+    Race_Close: "На сегодня это была последняя гонка. Увидимся завтра!" #!String
+    Race_Close_LastDay: "В этом году гонок больше не будет! Увидимся через год!" #!String
+    Race_Winner: "И победу одерживает..." #!String
+    Race_Win: "Приходите за своим призом!" #!String
+    Race_Lose: "Удачи в следующий раз!" #!String
+    Racer_0: "Несушка" #!String
+    Racer_1: "Король Жало" #!String
+    Racer_2: "Собатинок" #!String
+    Racer_3: "Турбо-улитка" #!String
+    Racer_4: "Кактусовый ползун" #!String
+    Shady_Guy_Closed: "Подозрительный тип: Хех... не сейчас. Приходи позже, потом поговорим." #!String
+    Shady_Guy_Ended: "Подозрительный тип: Слишком поздно. Приходи во время гонок." #!String
+    Shady_Guy_Ongoing: "Подозрительный тип: За гонкой следи! Потом поговорим..." #!String
+    Shady_Guy_Late: "Подозрительный тип: Слишком поздно, гонка уже началась. Потом поговорим..." #!String
+    Shady_Guy_Intro: "Подозрительный тип: Пс-с-ст... Эй, ты. За гонками следишь? Круто они гоняют, да?" #!String
+    Shady_Guy_Intro_2: "Подозрительный тип: ... Это, у меня есть для тебя «предложеньице»." #!String
+    Shady_Guy_Intro_3: "Подозрительный тип: Просто выбери гонщика, и их следующая гонка пойдет не по плану... Понимаешь, куда рулю?" #!String
+    Shady_Guy: "Подозрительный тип: Это будет стоить тебе 1 яйцо Калико. Весьма малая цена за «шанс», не находишь?" #!String
+    Shady_Guy_2nd: "Подозрительный тип: Нужны мои «услуги»? Будет стоить тебе 1 яйцо Калико." #!String
+    Shady_Guy_Question: "Подозрительный тип: Так-так, ну и кто станет этим неудачливым гонщиком?" #!String
+    Shady_Guy_NoEgg: "Подозрительный тип: Похоже, у тебя нет яиц Калико. Не трать мое время зря." #!String
+    Shady_Guy_Selected_1: "Подозрительный тип: Хех, {0}? Будет сделано." #!String
+    Shady_Guy_Selected_2: "Подозрительный тип: Значит, {0}. А теперь извини, мне нужно сделать один звонок..." #!String
+    Shady_Guy_Selected_3: "Подозрительный тип: {0}? Ладно-ладно... Ни пуха тебе. " #!String
+    Marlon_Closed: "Я еще расставляюсь. Не заглянешь попозже?" #!String
+    Marlon_Intro: "Привет-привет, @. Добро пожаловать в палатку Гильдии искателей приключений.#$b#Тут тебя каждый день будет ждать пара испытаний. Выполни одно, и Гильдия наградит тебя яйцами Калико.#$b#Ты не сможешь изменить свой выбор, так что выбирай с умом!" #!String
+    Marlon_1: "Хочешь испытать свою удаль, да?#$b#У меня для этого есть пара испытаний." #!String
+    Marlon_2: "В тебе проснулся авантюристский дух?#$b#Хорошо, вот сегодняшние испытания." #!String
+    Marlon_3: "Надеюсь, твое оружие в добром состоянии.#$b#Для сегодняшних испытаний оно понадобится тебе в лучшем виде." #!String
+    Marlon_4: "Я вижу задор в твоих глазах.#$b#Как насчет испытания?" #!String
+    Marlon_Challenge_Chosen: "Все еще трудишься над испытанием, да?#$b#Так, вот тебе напоминание, если нужно." #!String
+    Marlon_Challenge_Finished: "Очень хорошо.#$b#Завтра будут новые испытания, а пока что расслабься и отдыхай." #!String
+    Marlon_Challenge_Finished_LastDay: "Эй, у тебя получилось! Я впечатлен.#$b#На этот год пока все, но мы вместе с Гилом обязательно что-нибудь придумаем в следующем году." #!String
+    Gil_NoRating: "Вот и новый день... Возвращайся, когда покажешь себя в пещерах." #!String
+    Gil_NextYear: "На этот год все... *храпит*..." #!String
+    Gil_ComeBack: "На сегодня все. Завтра можешь постараться снова, если не дрогнешь... *храпит*..." #!String
+    Gil_SubmitRating: "Предъявить Гилу яичный рейтинг за сегодняшний день?^(Яичный рейтинг: {0})" #!String
+    Gil_Rating_1to4: "...{0}? Ха-ха-ха-ха... Ну ладно, ${малыш^малышка}$. Вот тебе призочек... А теперь беги поиграй с другими детишками." #!String
+    Gil_Rating_5to9: "...{0}? Не шибко высокий рейтинг, зато у тебя хватило дерзости на попытку. Вот тебе кое-что." #!String
+    Gil_Rating_10to14: "{0}, хм? Неплохо-неплохо... Хотя я в твоем возрасте в два раза больше выбивал. С Ржавым мечом да без еды!" #!String
+    Gil_Rating_15to19: "{0}... Весьма недурно. Мы в нашей Гильдии меньшего и не ждем. Вот твой приз." #!String
+    Gil_Rating_20to24: "{0}? Хорошо, я впечатлен...#$b#Эй, Марлон! Ты глянь... {0} сегодня вон с каким результатом!" #!String
+    Gil_Rating_25: "{0}!?!#$b#Вот те раз! Да у нас тут настоящий охотник на яйца Калико! " #!String
+    Gil_Rating_50: "{0}!?!?!?!?!?!?!?$h" #!String
+    Gil_Rating_1000: "Ты слышишь голос в своей голове: «Позор тому, кто предъявит яичный рейтинг, накрученный при помощи читерства!»" #!String
+    MakeOver_NoStylist: "Пожалуйста, возвращайтесь, когда работник будет на месте." #!String
+    MakeOver_Emily_AlreadyStyled: "Прекрасно выглядишь!$h#$b#Приходи снова, и мы подберем для тебя что-нибудь новенькое!" #!String
+    MakeOver_Sandy_AlreadyStyled: "Очень даже ничего, дорогуша!$h#$b#Заходи еще, скоро я подготовлю для тебя новый лук!" #!String
+    MakeOver_Emily_InventoryFull: "Хм, похоже, у тебя слегка забит рюкзак. Возвращайся, когда в нем будет место для полного набора одежды!" #!String
+    MakeOver_Sandy_InventoryFull: "Хм, похоже, у тебя слегка забит рюкзак. Возвращайся, когда в нем будет место для полного набора одежды." #!String
+    MakeOver_Emily_1: "Так, перед тем, как продолжить, дай-ка я визуализирую твою ауру, чтобы узнать, какой стиль сделает тебя счастливее..." #!String
+    MakeOver_Emily_2: "Так... Ясно..." #!String
+    MakeOver_Emily_Reaction1: "Ой, извини, если было щекотно." #!String
+    MakeOver_Emily_Reaction2: "Ай, извини, если было больно!" #!String
+    MakeOver_Emily_Reaction3: "Ух, слишком много геля для волос..." #!String
+    MakeOver_Emily_Reaction4: "Нет... Так не пойдет..." #!String
+    MakeOver_Emily_Reaction5: "Вот, в точку!" #!String
+    MakeOver_Emily_Reaction6: "О, смотри, оладушек из цветной капусты..." #!String
+    MakeOver_Emily_Reaction7: "Давай-ка немного тут подровняем..." #!String
+    MakeOver_Emily_Reaction8: "Так, размажем тут пальцем чуток..." #!String
+    MakeOver_Emily_Reaction9: "Так, приготовься, может налезть не сразу..." #!String
+    MakeOver_Emily_3: "Отлично, все под контролем!$h#$b#Я захожу, так что не пугайся!" #!String
+    MakeOver_Emily_4: "Та-да!" #!String
+    MakeOver_Emily_5: "Да! Я чувствую, что твои внешнее и внутреннее «я» теперь в полной гармонии!$h#$b#Не могу дождаться, когда ты увидишь «новую» версию себя!$h" #!String
+    MakeOver_Emily_Done: "Ну? Что думаешь?#$b#Я положила старые вещи тебе в рюкзак, на случай если ты передумаешь!$h" #!String
+    MakeOver_Sandy_1: "..." #!String
+    MakeOver_Sandy_2: "Ой! Мой выход!" #!String
+    MakeOver_Sandy_3: "Тук-тук, дорогуша! Я захожу!" #!String
+    MakeOver_Sandy_4: "Посмотрим-ка..." #!String
+    MakeOver_Sandy_5: "Хорошо!" #!String
+    MakeOver_Sandy_6: "Это было весело!$h#$b#Надеюсь, тебе понравится твоя новая внешность так же сильно, как и мне!$h" #!String
+    MakeOver_Sandy_Done: "Ты аж светишься!#$b#Я положила старые вещи тебе в рюкзак, если новые тебе разонравятся.$h" #!String
+    Shop_Abigail: "Эй, я взяла пару случайных вещей из своего гардероба. Хочешь что-нибудь?" #!String
+    Shop_Maru: "Нравится что-нибудь?" #!String
+    Shop_Emily: "Ах, тут, в тенечке, так хорошо." #!String
+    Shop_Leah: "У меня оставалось немного дерева. Я взяла и сделала из него полки для книг..." #!String
+    Shop_Harvey: "Это, эм... Я тут собрал несколько моделей самолетов... Нравятся?" #!String
+    Shop_Pierre: "Пс-с... Я продаю яйца за деньги! Хе-хе... Не говори Льюису." #!String
+    Shop_Sam: "Хочешь мой старый сломанный скейт? Ну, может на стену его захочешь повесить или еще куда." #!String
+    Shop_Sebastian: "Я нашел кое-какие вещи у озера." #!String
+    Shop_Alex: "Эй, яйца есть?" #!String
+    Shop_Caroline: "Здравствуй. Я надеюсь, ты найдешь то, что тебе по душе." #!String
+    Shop_Gus: "Хочешь чего-нибудь вкусненького?" #!String
+    Shop_Elliott: "На берег вынесло много чего интересного. Хочешь поторговаться?" #!String
+    Shop_Haley: "Тебе следовало бы поискать больше яиц, чтобы иметь возможность купить все мои товары!" #!String
+    Shop_Demetrius: "Есть яйца на обмен? Я изучаю состав их скорлупы." #!String
+    Shop_Clint: "Руда нужна?" #!String
+    Shop_Robin: "Эй, смотри какие обои ручной работы я изготовила. Хочешь такие?" #!String
+    Shop_Pam: "Хе-хе-хе... Нашла старые напитки у задней стенки холодильника." #!String
+    Shop_Penny: "Привет! Надеюсь, ты найдешь что-нибудь для себя." #!String
+    Shop_Leo: "Можно мне яиц? Хочу их к себе в гнездо положить." #!String
+    Shop_Evelyn: "Привет, ${дорогой^дорогая}$! Прошу, выбирай — не спеши, я буду тут целый день!" #!String
+    Shop_George: "У меня есть все, что только стоит продавать." #!String
+    Shop_Marnie: "Нашла дома старый рулон обоев. Он твой всего за 20 яиц!" #!String
+    Shop_Shane: "Нашел немного еды в холодильнике. Отдаю дешево. Только на срок годности не смотри." #!String
+    Shop_Jas: "Привет... Эм... *хихикает*" #!String
+    Shop_Jodi: "Извини, в этом году у меня с ассортиментом не очень..." #!String
+    Shop_Vincent: "Привет! Эм... Я тут что-то нашел. Хочешь купить?!" #!String
+    Shop_Kent: "Эй, у меня тут пара вещей на продажу. Дай знать, если захочешь что-нибудь купить." #!String
+    Shop_Eggs: "О... Обмен... Я... Яйца..." #!String
+    DF_Mine_Explanation: "---Добро пожаловать на испытание Пещеры Черепа!---^^Яйца Калико и таинственные статуи Калико распространились по всей системе пещер.^" #!String
+    DF_Mine_Explanation_2: "От вашего «Яичного рейтинга» зависит шанс нахождения яиц Калико.^^«Яичный рейтинг» повышается каждые пять уровней пещер, а также при каждой активации статуи Калико.^" #!String
+    DF_Mine_Explanation_3: "...Но будьте осторожны! Статуи Калико также пробуждают множество странных и опасных эффектов!^^Получить призы за высокий «яичный рейтинг» можно у Гила.^" #!String
+    DF_Mine_CalicoStatue: "Статуя Калико" #!String
+    DF_Mine_CalicoStatue_MP_Message: "Статуя Калико: «{0}» активировано." #!String
+    DF_Mine_CalicoStatue_Name_0: "Нашествие привидений" #!String
+    DF_Mine_CalicoStatue_Name_1: "Нашествие змей" #!String
+    DF_Mine_CalicoStatue_Name_2: "Нашествие скелетов" #!String
+    DF_Mine_CalicoStatue_Name_3: "Нашествие летучих мышей" #!String
+    DF_Mine_CalicoStatue_Name_4: "Жуки-убийцы" #!String
+    DF_Mine_CalicoStatue_Name_5: "Тонкие раковины" #!String
+    DF_Mine_CalicoStatue_Name_6: "Скудная еда" #!String
+    DF_Mine_CalicoStatue_Name_7: "Больше монстров" #!String
+    DF_Mine_CalicoStatue_Name_8: "Острые зубы" #!String
+    DF_Mine_CalicoStatue_Name_9: "Проклятие гробницы" #!String
+    DF_Mine_CalicoStatue_Name_10: "Волшебные ботинки" #!String
+    DF_Mine_CalicoStatue_Name_11: "Полное восстановление" #!String
+    DF_Mine_CalicoStatue_Name_12: "Сокровище 50 яиц" #!String
+    DF_Mine_CalicoStatue_Name_13: "Нет эффекта" #!String
+    DF_Mine_CalicoStatue_Name_14: "Зубозакаточная машинка" #!String
+    DF_Mine_CalicoStatue_Name_15: "Сокровище 25 яиц" #!String
+    DF_Mine_CalicoStatue_Name_16: "Сокровище 10 яиц" #!String
+    DF_Mine_CalicoStatue_Name_17: "Сокровище 100 яиц" #!String
+    DF_Mine_CalicoStatue_Description_0: "Больше призраков" #!String
+    DF_Mine_CalicoStatue_Description_1: "Больше змей" #!String
+    DF_Mine_CalicoStatue_Description_2: "Вас преследуют скелеты..." #!String
+    DF_Mine_CalicoStatue_Description_3: "Больше летучих мышей" #!String
+    DF_Mine_CalicoStatue_Description_4: "Жуки стали жуками-убийцами" #!String
+    DF_Mine_CalicoStatue_Description_5: "Вы теряете больше яиц при нокауте" #!String
+    DF_Mine_CalicoStatue_Description_6: "Эффективность еды снижается в два раза" #!String
+    DF_Mine_CalicoStatue_Description_7: "Больше монстров" #!String
+    DF_Mine_CalicoStatue_Description_8: "Монстры наносят больше урона" #!String
+    DF_Mine_CalicoStatue_Description_9: "Мумии стали злее" #!String
+    DF_Mine_CalicoStatue_Description_10: "Прибавка к скорости" #!String
+    DF_Mine_CalicoStatue_Description_11: "Полное восстановление!" #!String
+    DF_Mine_CalicoStatue_Description_12: "50 яиц Калико" #!String
+    DF_Mine_CalicoStatue_Description_13: "Нет эффекта" #!String
+    DF_Mine_CalicoStatue_Description_14: "Монстры наносят меньше урона" #!String
+    DF_Mine_CalicoStatue_Description_15: "25 яиц Калико" #!String
+    DF_Mine_CalicoStatue_Description_16: "10 яиц Калико" #!String
+    DF_Mine_CalicoStatue_Description_17: "100 яиц Калико!" #!String
+    FishingDerbySign: "[textcolor black][letterbg LooseSprites\\\\troutDerbyLetterBG 0]        -----Форелевый турнир-----^^В эти выходные, с 20 по 21 число лета:^^Приходите показать вашу удаль в пресноводной рыбалке и выиграть призы!^^(Внимание: все личные вещи, найденные рядом с этим знаком, отправятся прямиком в ящик для находок)" #!String
+    SquidFestSign: "[textcolor black][letterbg LooseSprites\\\\squidFestLetterBG 0]             -----Кальмарофест-----^^Пятница 12-е и суббота 13-е.^^Двухдневное рыбацкое празднество. Если поймаете дневную норму, получите приз.^^(Внимание: все личные вещи, найденные рядом с этим знаком, отправятся прямиком в ящик для находок)" #!String
+    Jas_IceCream: "Это... Это мне?$u#$b#Ух ты, именно то, что я хотела... Спасибо! Это так мило!$h" #!String
+    FishingDerby_Exclamation0: "Есть!" #!String
+    FishingDerby_Exclamation1: "Клюнула!" #!String
+    FishingDerby_Exclamation2: "Сорвалась..." #!String
+    FishingDerby_Exclamation3: "Леска дернулась!" #!String
+    FishingDerby_Exclamation4: "Ну же..." #!String
+    FishingDerby_Exclamation5: "Клюет!" #!String
+    FishingDerby_Exclamation6: "Попалась!" #!String
+    GetRewards: "Получить награды" #!String
+    Explanation: "Подробнее о событии" #!String
+    Leave: "Уйти" #!String
+    FishingDerbyBooth_Intro: "Добро пожаловать на Форелевый турнир. Чем могу помочь?" #!String
+    FishingDerbyBooth_Explanation: "Во время этого события радужная форель может принести с собой «Золотой ярлык». Найдешь такой — сможешь обменять тут на приз!" #!String
+    FishingDerbyBooth_BagFull: "Похоже, твой рюкзак набит под завязку. Лучше для начала сбросить балласт." #!String
+    FishingDerbyBooth_NoTags: "Кажется, у тебя нет с собой Золотых ярлыков... Самое время порыбачить!" #!String
+    TroutDerby_NowOpen: "Начался ежегодный Форелевый турнир." #!String
+    TroutDerby: "Форелевый турнир" #!String
+    SquidFest: "Кальмарофест" #!String
+    SquidFest_NowOpen: "Начался Кальмарофест." #!String
+    DesertFestival_NowOpen: "Пустынный фестиваль открыт!" #!String
+    DesertFestival: "Пустынный фестиваль" #!String
+    SquidFestBooth_Intro: "Добро пожаловать на Кальмарофест! Чем могу помочь?" #!String
+    SquidFestBooth_Explanation: "Это испытание по ловле кальмаров! Поймаешь дневную норму — получишь приз. Обрати внимание на знак слева. Мы также кинули в воду особую приманку, чтобы кальмары клевали целый день!" #!String
+    SquidFestBooth_NoRewards: "У тебя пока нет наград. Пора бы начать кальмаров ловить!" #!String
+    SquidFest_AlreadyGotAvailableRewards: "У тебя пока нет наград. Продолжай ловить кальмаров!" #!String
+    SquidFest_GotAllRewardsToday: "Поздравляем! У тебя теперь иридиевый уровень улова и все возможные награды на сегодня." #!String
+    Tent_Blocked: "Для установки требуется больше места." #!String
+    greenrainmessage: "Над долиной пролился зеленый дождь." #!String
+    MasteryCave: "Лишь мастеру пяти путей можно войти. ({0}/5)" #!String
+    NewIdeas: "Вам нужно обдумать новые идеи во сне..." #!String
+    FinalPath: "Финальный путь:" #!String
+    0_Mastery: "Фермерское мастерство" #!String
+    1_Mastery: "Рыболовное мастерство" #!String
+    2_Mastery: "Собирательское мастерство" #!String
+    3_Mastery: "Шахтерское мастерство" #!String
+    4_Mastery: "Боевое мастерство" #!String
+    Claim: "Взять" #!String
+    HeavyFurnace_coal: "Требуется 3 ед. угля." #!String
+    HeavyFurnace_ores: "Требуется 25 ед. руды." #!String
+    BlessingOfWaters: "Благословение вод" #!String
+    BlessingOfSpeed: "Благословение скорости" #!String
+    BlessingOfLuck: "Благословение удачи" #!String
+    BlessingOfFangs: "Благословение клыков" #!String
+    BlessingOfTheButterfly: "Благословение бабочки" #!String
+    BlessingOfFriendship: "Благословение дружбы" #!String
+    BlessingOfEnergy: "Благословение энергии" #!String
+    BlessingOfEnergy_description: "У вас бесконечная энергия." #!String
+    BlessingOfFangs_description: "+10% к шансу крит. удара." #!String
+    BlessingOfFriendship_description: "Вы получаете больше очков дружбы при разговоре с людьми." #!String
+    BlessingOfTheButterfly_description: "Где-то в долине вас ожидает радужная бабочка..." #!String
+    BlessingOfWaters_description: "Сегодня три первые рыбы будут охотнее идти на крючок. (Осталось: {0})" #!String
+    Mastery: "Мастерство:" #!String
+    Farming_Mastery: "Теперь вы будете находить Золотые крекеры для животных, которые навсегда удваивают количество продукции какого-либо фермерского животного. Не работает на свиньях" #!String
+    Fishing_Mastery: "Теперь вы будете находить Золотые рыбацкие сундуки." #!String
+    Foraging_Mastery: "Теперь вы будете находить Золотые загадочные коробки, в которых можно найти лучшие предметы." #!String
+    Mining_Mastery: "Самоцветная порода будет приносить в два раза больше самоцветов." #!String
+    ChooseOne: "Выберите одно:" #!String
+    DwarfStatue_source: "Статуя Короля дварфов" #!String
+    DwarfStatue_0: "+1 ед. руды на жилу." #!String
+    DwarfStatue_1: "Больший шанс обнаружить лестницы и ямы." #!String
+    DwarfStatue_2: "Больший шанс найти уголь." #!String
+    DwarfStatue_3: "Бомбы не наносят вам урона." #!String
+    DwarfStatue_4: "Больший шанс найти жеоды." #!String
+    Trinkets: "Брелоки:" #!String
+    Trinkets_Description: "Открывает новый слот для брелоков. Брелоки можно найти во время странствий, они дают особые способности." #!String
+    MagicQuiver_Name: "Волшебный колчан" #!String
+    MagicQuiver_Description: "Раз в {0} сек. выпускает в ближайших противников волшебную стрелу, наносящую {1}-{2} ед. урона." #!String
+    FrogEgg_Name: "Икринка лягушки" #!String
+    FrogEgg_Description: "Призывает прожорливую лягушку-компаньона." #!String
+    MagicHairDye_Name: "Волшебный гель для укладки" #!String
+    MagicHairDye_Description: "Ваши волосы сияют всеми цветами радужного осколка." #!String
+    FairyBox_Name: "Шкатулка феи" #!String
+    FairyBox_Description: "Призывает фею-компаньона, которая лечит вас в бою." #!String
+    FairyBox_Description2: "Призывает фею-компаньона {0}-го уровня, которая лечит вас в бою." #!String
+    ParrotEgg_Name: "Яйцо попугая" #!String
+    ParrotEgg_Description: "Призывает попугая-компаньона {0}-го уровня, дающего {1} шанс получить золото при убийстве монстров." #!String
+    IceRod_Name: "Ледяной посох" #!String
+    IceRod_Description: "Раз в {0} сек. выпускает ледяную сферу, замораживающую всех противников на своем пути на {1} сек." #!String
+    IridiumSpur_Name: "Золотая шпора" #!String
+    IridiumSpur_Description: "Критические удары дают вам прибавку к скорости на {0} сек." #!String
+    BasiliskPaw_Name: "Лапа Василиска" #!String
+    BasiliskPaw_Description: "На вас не действуют отрицательные эффекты." #!String
+    PerfectIceRod: "Совершенный ледяной посох" #!String
+    RapidMagicQuiver: "Быстрый волшебный колчан" #!String
+    HeavyMagicQuiver: "Тяжелый волшебный колчан" #!String
+    PerfectMagicQuiver: "Совершенный волшебный колчан" #!String
+    frog_variant_0: "Икринка зеленой лягушки" #!String
+    frog_variant_1: "Икринка коричневой лягушки" #!String
+    frog_variant_2: "Икринка сине-зеленой лягушки" #!String
+    frog_variant_3: "Икринка синей лягушки" #!String
+    frog_variant_4: "Икринка красной лягушки" #!String
+    frog_variant_5: "Икринка желтой лягушки" #!String
+    frog_variant_6: "Икринка лягушки пустоты" #!String
+    frog_variant_7: "Икринка радужной лягушки" #!String
+    IridiumSpur: "Иридиевая шпора" #!String
+    ParrotEgg_Chance_0: "небольшой" #!String
+    ParrotEgg_Chance_1: "средний" #!String
+    ParrotEgg_Chance_2: "высокий" #!String
+    ParrotEgg_Chance_3: "очень высокий" #!String
+    Anvil_fail: "Здесь можно только перековывать брелоки." #!String
+    Anvil_bars: "Требуется 3 иридиевых слитка." #!String
+    GoldenParrot: "*Ар-р*... Деньги! *Ар-р*... Найди золотые орехи!" #!String
+    GoldenParrot_Yes: "Да (Стоит {0} з.)" #!String
+    GoldenParrot_Tonight: "*Ар-р*... Спать! *Ар-р*... Будем ночью спать!" #!String
+    GoldenParrot_Sure: "(Сделать ли мне это? Если попугаи найдут оставшиеся золотые орехи, я не смогу насладиться Имбирным островом по полной...)" #!String
+    Fizz_Intro_1: "Значит, ты ${получил^получила}$ мое письмо? Рад встрече.#$b#Я Физз, отдел расширенного обслуживания Джоджа.$h#$b#Говоришь, не ${слышал^слышала}$ о нас? Это нормально, мало кто слышал!#$b#Наши услуги рекламируются не так сильно, как остальные продукты Джоджа. Видишь ли, мы скорее служба для элитных клиентов.#$b#Чем мы занимаемся? Хех... скажем так... мы специализируемся на «юридически сложных» вопросах. Улавливаешь?#$b#Но хватит болтать, перейдем к делу.#$b#Я слышал, что тебя интересует такая вещь, как «совершенство». Благородная цель, как ни крути... и весьма трудоемкая!#$b#Вся эта готовка, мастерение, зачистка монстров, сложные человеческие отношения... *стонет*. Да, вижу стресса тебе не занимать.$s#$b#Однако, дело в том, что можно вообще не париться! У меня все схвачено!$h#$b#Видишь эти бумажки? Это — самые настоящие «формуляры совершенства».#$b#Каждый такой формуляр прибавляет по 1% к твоим очкам совершенства. На них даже подпись мистера Ки стоит — все абсолютно легально!#$b#Разве я похож на того, кто станет тебя обманывать??$u#$b#...$u#$b#Это был риторический вопрос.#$b#...В любом случае, я продаю их по весьма и весьма привлекательной цене... всего по 500,000 з. за штуку. Почти даром отдаю!#$b#Но я не настаиваю — возвращайся, как надумаешь! Я буду ждать...$h" #!String
+    Fizz_Intro_2: "Итак... Что скажешь? 500,000 з. за самый настоящий «Формуляр совершенства»?" #!String
+    Fizz_Yes: "Да (Стоит 500,000 з.)" #!String
+    Fizz_Sweet: "Хи-хи!" #!String
+    Waiver_Note: "Вы получили «Формуляр совершенства»! (Всего: {0}.)" #!String
+    Waiver_Note_Multiplayer: "{0} покупает «Формуляр совершенства»..." #!String
+    TownTreeWarning: "Мне не стоит рубить деревья в городе." #!String
+    Bookseller: "Продавец книг" #!String
+    Book_Category: "Книга" #!String
+    skillBook_Category: "Книга навыка" #!String
+    alreadyreadbook: "Перечитав эту книгу, вы получите немного опыта в навыке «{0}»." #!String
+    alreadyreadbook_random: "Перечитав эту книгу, вы получите немного опыта во всех навыках." #!String
+    BooksellerInTown: "Продавец книг сегодня в городе." #!String
+    SkillBookMessage: "Вы узнали что-то новое о {0}." #!String
+    SkillName_0: "фермерстве" #!String
+    SkillName_1: "рыбной ловле" #!String
+    SkillName_2: "собирательстве" #!String
+    SkillName_3: "горном деле" #!String
+    SkillName_4: "боевом искусстве" #!String
+    QoS_Cookbook: "Новых рецептов выучено: {0}." #!String
+    guild_door: "Убейте 1000 монстров, чтобы войти сюда. ([FarmerStat monstersKilled]/1000)" #!String
+    FoundABook: "Вы нашли копию книги «{0}»." #!String
+    ForestMagic: "Лесная магия" #!String
+    ForestMagic_Description: "Вы слились воедино с магией леса..." #!String
+    BearPaw_Description: "Ежевика и морошка стоят в три раза дороже." #!String
+    SpringOnionMastery_Description: "Лук-батун стоит в 5 раз дороже." #!String
+    Marnie_Counter: "«Я отошла, но ты все еще можешь купить что-нибудь, выбрав это в каталоге!» -Марни" #!String
+    GameMenu_Powers: "Особые предметы и способности" #!String
+    FixRaccoonStump_Hint: "Старого дерева больше нет... однако 100 ед. твердой древесины могут это изменить." #!String
+    FixRaccoonStump_Question: "Использовать 100 ед. твердой древесины для починки пня?" #!String
+    FixRaccoonStump_Done: "Может быть, здесь кто-нибудь поселится..." #!String
+    GreenRainForecast: "Хм... Кажется, наши датчики уловили... какой-то аномальный сигнал... Мы... не знаем, что он означает..." #!String
+    Raccoon_expanded: "Магазинчик Енота расширился." #!String
+    Raccoon_busy: "Сейчас с Енотом разговаривает другой игрок." #!String
+    Raccoon_intro_0: "Енот: Голодный... Нужна рыба..." #!String
+    Raccoon_interim_1: "Енот: Так, пора бы найти жену..." #!String
+    Raccoon_intro_1: "Енот: Голодный... Нужны фрукты..." #!String
+    Raccoon_interim_2: "Енот: Пора бы завести семью..." #!String
+    Raccoon_intro_2: "Енот: Голодный... Нужны грибы..." #!String
+    Raccoon_interim_3: "Енот: Теперь можно обзавестись семьей побольше..." #!String
+    Raccoon_intro_3: "Енот: Пить... Нужен сок..." #!String
+    Raccoon_interim_4: "Енот: Ты хороший друг, бобо. Скоро у нас будет еще прибавление..." #!String
+    Raccoon_intro_4: "Енот: Тс-с... бобо. Мне нужен подарок для моей женушки." #!String
+    Raccoon_interim_5: "Енот: У нас пока все есть и мы счастливы, бобо..." #!String
+    Raccoon_intro: "Енот: Помоги нам, и я дам тебе кое-что славное." #!String
+    Raccoon_interim: "Енот: У нас все отлично, бобо..." #!String
+    Raccoon_receive: "Енот: Спасибо, бобо. Вот, возьми..." #!String
+    bigtree: "Это большое дерево, но оно уже начало гнить..." #!String
+    windstorm: "Ночью пронесся большой ураган..." #!String
+    MasteryRequirement: "У вас недостаточно знаний, чтобы это использовать..." #!String
+    MysteryBoxAnnounce: "Теперь вы можете находить Загадочные коробки..." #!String
+    MasteryHint: "Вы ощущаете, что познали новый путь..." #!String
+    Farm_Ranching_Description: "Луговая ферма_Много урожая на ней не вырастишь, но животным точно понравится свежая голубая трава. В начале игры имеются две курочки." #!String
+    StarterChicken_Names: "Белушка,Куря | Цыпуня,Грушевка | Удачка,Клеверок | Солька,Перчинка | Клеваха,Кудаха | Полярка,Пеструха | Валька,Берта | Огурчик,Кабачок | Вишенка,Персик | Анка,Плюшка | Скорлупка,Царапка | Лепесточек,Тростинка | Птенчик,Пищалка | Рисинка,Тыковка | Зефирка,Какава | Тостик,Фасолька | Маслёна,Чипсик | Зернинка,Миндалька | Мигунок,Узелок | Капризуля,Толстушка | Несушка,Хохлатка | Пятнышко,Крапинка | Малютка,Креветка | Рыбка,Икорка | Царевна,Леди | Туманка,Белуга | Снежинка,Имбирка | Медося,Печенька | Пикуля,Скрипуха | Пюрешка,Подливка | Клуша,Дуся | Натка,Ряба | Колокошка,Помадка | Брунхильда,Маринет | Рюшечка,Гулька | Береста,Росинка" #!String
+    FishFrenzy_town: "В городе рыбное безумие. Виной тому — {0}!" #!String
+    FishFrenzy_forest: "В Пепельносмольном лесу рыбное безумие. Виной тому — {0}!" #!String
+    FishFrenzy_mountain: "В горах рыбное безумие. Виной тому — {0}!" #!String
+    FishFrenzy_beach: "На пляже рыбное безумие. Виной тому — {0}!" #!String
+    SpiritsEveCart: "Срезать по тайной тропе?" #!String
+    Pam_busSign: "Я сегодня на фестивале, молодежь! Так что добирайся своим ходом.       -Пэм" #!String
+    TravelingMerchant_DF_Closed: "Закрыто до полудня." #!String
+    TravelingMerchant_DF: "Ах... Нет ничего лучше теплого воздуха Пустыни Калико. Хрюшке это тоже по душе." #!String
+    Spouse_Goodnight1: "Идешь спать?" #!String
+    Spouse_Goodnight0: "Спокойной ночи, {0}." #!String
+    Instant: "Моментально" #!String
+    GrandpaMasteryNote: "${Мой дорогой^Моя дорогая}$ {0}!^^Если ты читаешь эту записку, значит моя тайная комната, которую я приготовил для тебя, уже не тайная.^^В этих стенах ты найдешь подсказки, рецепты и даже некоторые из моих любимейших инструментов... — все то, с чем я не расставался на протяжении долгих и счастливых лет в долине.^^И раз уж ты здесь, значит тебе не занимать мудрости и мастерства, и ты сможешь грамотно распорядиться этими важными секретами.^^Надеюсь, мои открытия помогут тебе сделать ферму «{1}» известной на весь мир!^^Покажи им всем!^—Дедушка" #!String
+    MasteryCompleteToast: "Вы чувствуете, как дедушка похлопывает вас по плечу..." #!String
+    GiantQiFruitMessage: "Мистер Ки: О, думаешь, мой ценный фрукт можно получить когда вздумается? Пф-ф-ф... Только во время испытания." #!String
+    Pam_busSign_resort: "У меня сегодня выходной. Так что добирайся своим ходом.       -Пэм" #!String
+    JojaCatalogueDescription: "Дает одну (1) пожизненную подписку на Официальную коллекцию «ИЗОБИЛИЕ» от Джоджа, включающую в себя 40 эксклюзивных элементов интерьера!" #!String
+    JojaCatalogueDescriptionTerms: "Условия оказания услуг:^^Активируя этот предмет, пользователь соглашается, что корпорация Джоджа не несет ответственности за причинение любого вреда жизни или имуществу при использовании мебели из коллекции «ИЗОБИЛИЕ».^^Пользователь осведомлен, что в одном или нескольких элементах интерьера из коллекции «ИЗОБИЛИЕ» может содержаться не прошедший проверку пластик, и полностью отказывается от обвинений в адрес корпорации Джоджа за вред, нанесенный здоровью этим пластиком.^^Пользователь также соглашается не винить корпорацию Джоджа в так называемой «халатной сборке» и отдает себе полный отчет в том, что весь вред физическому здоровью от слома, разлома, размола, сгиба, сложения, проколов, уколов и прочих непредусмотренных дефектов коллекции «ИЗОБИЛИЕ» от Джоджа является всецело и полностью результатом действий пользователя.^^   --Будьте с нами. Растите с нами.--" #!String
+    Farm_Perfection_Description: "Ферма у водопада_Дедушка оставил вам волшебную лампу, дающую значительный бонус. Однако на вас теперь висит наследный долг ДжоджаБанку в 1.000.000 з, который нужно гасить сезонными выплатами..." #!String
+    JojaGrandpaIntro_0: "???: Очень трогательно... А теперь подпишите бумаги..." #!String
+    Joja_Debt_Notice: "ВНИМАНИЕ:^^В конце каждого сезона с вашего счета будет списываться сумма в размере {0} з.^^При отсутствии денег на счету баланс уйдет в минус.^^Спасибо за выплаты.^-ДжоджаБанк" #!String
+    buy_books: "Купить книги" #!String
+    trade_books: "Обменять книги" #!String
+    books_welcome: "Добро пожаловать в «Книги Марчелло»!" #!String
+    books_buy_welcome: "Книги Марчелло... К вашим услугам!" #!String
+    books_trade_welcome: "Я обменяю лишние книги на полезные вещи." #!String
+    ItemDeliveryQuestTitle: "Доставка: {0}" #!String
+    FishingQuestTitle: "Рыбалка: {0}" #!String
+    MonsterQuestTitle: "Охота: {0}" #!String
+    ResourceQuestTitle: "Сбор: {0}" #!String
+    WizardCatalogueDescription: "Частная мебельная коллекция М. Расмодиуса." #!String
+    WizardCatalogueLetter: "Моя бывшая жена забрала всю мебель.^^К счастью, я успел сделать нематериальные копии всех вещей и занес их в эту книгу. Наслаждайся.^^-М. Расмодиус" #!String
+    AttackEnchantment: "+{0} Атака" #!String
+    DefenseEnchantment: "+{0} Защита" #!String
+    CritEnchantment: "+{0} Шанс крит. удара" #!String
+    SpeedEnchantment: "+{0} Скорость" #!String
+    SlimeSlayerEnchantment: "Убийца слаймов" #!String
+    SlimeGathererEnchantment: "Собиратель слизи" #!String
+    MaxHealth: "+{0} Макс. здоровья" #!String
+    CritPowerEnchantment: "+{0} Сила крит. удара" #!String
+    LightweightEnchantment: "-{0} Вес" #!String
+    JojaFreeRun: "Услуги Джоджа не использованы!" #!String
+    QiSummitCheat: "Так-так-так... Посмотрите-ка, кто «добрался» до вершины.#$b#Думаешь, умнее тебя нет, а?#$b#«Как же мне прогнуть систему под себя?», — такие мыслишки у тебя были.#$b#Или, говоря простым языком: «Я я я я я я я я я я я я я я я я я я я».#$b#Отвратительно." #!String
+    Freezer_name: "Морозилка" #!String
+    Freezer_description: "Предметы, положенные внутрь, за ночь потеряют свои свойства." #!String
+    DriedFlowers_name: "{0} (засушено)" #!String
+    DriedFlowers_description: "Пакет прекрасных засушенных цветов." #!String
+    DeluxeCrabPot_name: "Элитная крабовая ловушка" #!String
+    DeluxeCrabPot_description: "Приносит больший улов, чем обычная крабовая ловушка." #!String
+    RaccoonFinal: "Похоже, ваши новые соседи живут припеваючи!" #!String
+    Mayo_reaction0: "Гадость!" #!String
+    Mayo_reaction1: "Ты что, сейчас..." #!String
+    Mayo_reaction2: "Зачем?!" #!String
+    Mayo_reaction3: "Эм..." #!String
+    Mayo_reaction4: "Вкусно!" #!String
+    GoldClock_On: "Включить Золотые часы?" #!String
+    GoldClock_Off: "Выключить Золотые часы?" #!String
+    DeluxeMayoMachine_Name: "Элитный майонезный автомат" #!String
+    DeluxeMayoMachine_Description: "Может перерабатывать по 3 яйца за раз." #!String
+    DeluxeCheesePress_Name: "Элитный пресс для сыра" #!String
+    DeluxeCheesePress_Description: "Может перерабатывать по 3 бидона молока за раз." #!String
+    DeluxeLoom_Name: "Элитная прялка" #!String
+    DeluxeLoom_Description: "Может перерабатывать по 3 мотка шерсти за раз." #!String
+    RiverlandsFarmPerk: "Вы начинаете с коптильней для рыбы." #!String
+    Mannequin_Description: "Можно нарядить его как душе угодно." #!String
+    CursedMannequin_Description: "Можно нарядить его как душе угодно. И молитесь, чтобы он не ожил, пока вы будете спать..." #!String
+    SpeedrunTimer: "Таймер спидрана" #!String
+    HideIP: "Скрыть IP-адрес и код приглашения" #!String
+    BroccoliFusilli_Name: "Спиральки с брокколи" #!String
+    BroccoliFusilli_Description: "Вкусная паста с брокколи и вялеными томатами." #!String
+    PowdermelonSoda_Name: "Снегодынная газировка" #!String
+    PowdermelonSoda_Description: "Естественное газирование под действием кожуры снегодыни." #!String
+    PastaPrimavera_Name: "Паста примавера" #!String
+    PastaPrimavera_Description: "Паста с кремовым соусом и свежими овощами." #!String
+    MannequinMale_Name: "Манекен (М)" #!String
+    MannequinFemale_Name: "Манекен (Ж)" #!String
+    CursedMannequinMale_Name: "Проклятый манекен (М)" #!String
+    CursedMannequinDemale_Name: "Проклятый манекен (Ж)" #!String
+    JunimoCatalogueDescription: "Коллекция мебели, пронизанной энергией Джунимо." #!String
+    RetroCatalogueDescription: "Коллекция уникальной мебели давно ушедшей эпохи." #!String
+    Renovation_AddDiningRoom: "Добавить столовую/Добавляет большую комнату слева от кухни./Выберите область для перестройки." #!String
+    Renovation_RemoveDiningRoom: "Удалить столовую/Удаляет большую комнату слева от кухни./Выберите область для перестройки." #!String
+    Renovation_AddCubby: "Добавить чулан/Добавляет небольшой чулан рядом со входной дверью./Выберите область для перестройки." #!String
+    Renovation_RemoveCubby: "Удалить чулан/Удаляет небольшой чулан рядом со входной дверью./Выберите область для перестройки." #!String
+    Renovation_AddAttic: "Добавить чердак/Добавляет еще одну лестницу и комнату на верхнем этаже./Выберите область для перестройки." #!String
+    Renovation_RemoveAttic: "Удалить чердак/Удаляет чердак./Выберите область для перестройки." #!String
+    Renovation_AddExtendedCornerRoom: "Увеличить угловую комнату/Расширяет угловую комнату, добавляя еще больше места./Выберите область для перестройки." #!String
+    Renovation_RemoveExtendedCornerRoom: "Уменьшить угловую комнату/Уменьшает угловую комнату, возвращая ее в исходное состояние./Выберите область для перестройки." #!String
+    Renovation_OpenDiningRoom: "Объединить столовую/Удаляет стену между столовой и кухней./Выберите область для перестройки." #!String
+    Renovation_CloseDiningRoom: "Отделить столовую/Возвращает стену между столовой и кухней./Выберите область для перестройки." #!String
+    Marnie_Pet_Adoption: "Эти милашки будут рады новому дому..." #!String
+    AdoptPets: "Приютить питомца" #!String
+    AdoptedPet: "Ваш новый питомец «{0}» уже на пути к вашему дому." #!String
+    AdoptedPet_Marnie: "Отлично! Я отправлю кроху по имени «{0}» тебе домой.$h" #!String
+    ButterflyPowder_Question: "Вы уверены? {0} навсегда покинет вашу ферму." #!String
+    ButterflyPowder_Goodbye: "Прощай, {0}..." #!String
+    FestivalTentWarning: "Завтра состоится фестиваль." #!String
+    PetBowlName: "Миска питомца ({0})" #!String
+    TrashCatalogueDescription: "Бесплатная коллекция украшений из мусора. Не забудьте помыть руки после нее." #!String
+    GameMenu_Animals: "Животные" #!String
+    Pam_busSign_generic: "Я сегодня не работаю, молодежь. Так что добирайся своим ходом.       -Пэм" #!String
+    Anvil_wrongtrinket: "Этот брелок нельзя перековать." #!String
+    Mastery_newlevel: "Вы достигли нового уровня познаний..." #!String
+    options_menubg_0: "Стандартный" #!String
+    options_menubg_1: "Живописный" #!String
+    options_menubg_2: "Без фона" #!String
+    tapper_profession_possible: "+1 ед. продукции подсочника за сбор." #!String
+    forester_profession_possible: "Грибные пни и коробки получают {0}%-й шанс произвести в два раза больше." #!String
+    lumberjack_profession_possible: "Вы получаете семена при каждом выкорчевывании пня дикорослого дерева." #!String
+    SkullCaveKickWarning: "Все игроки, находящиеся сейчас в Пещере Черепа, будут удалены. Хотите продолжить?" #!String
+    ChooseBobber: "Стиль поплавка:" #!String
+    FirstCatch: "Первый улов!" #!String
+    Trinket: "Брелок" #!String
+    LearnedANewPower: "Вы выучили новую способность!" #!String
+

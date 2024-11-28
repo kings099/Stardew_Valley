@@ -1,0 +1,68 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Introduction: "Küçük topluluğumuza hoş geldin canım! #$b#İstersen bana nine diyebilirsin.$h" #!String
+    AcceptGift_(O)StardropTea: "Aa, bunu bana mı veriyorsun? Çok teşekkür ederim tatlım. Gerçekten özel bir hediye!" #!String
+    AcceptGift_(O)170: "Sağ ol tatlım. Her yerde okuma gözlüklerimi arıyordum...#$b#Ay! Pislenmişler..." #!String
+    GreenRain: "George, hayatım... Bu sonumuz mu? Güzel bir hayat oldu, ayrılmadan Alex'in yolunu çizdiğini görmek isterdim...$s%noturn" #!String
+    GreenRainFinished: "Canım... Her şeyin iyi sonuçlanmış olmasına çok sevindim. Üstelik çiçeklerim her zamankinden daha sağlıklı görünüyor!" #!String
+    GreenRain_2: "Çiçekler bu yağmuru seviyor gibi..." #!String
+    AcceptGift_Positive_forage_item_beach: "Teşekkürler tatlım. Bu bana birçok güzel anıyı hatırlatıyor..." #!String
+    reject_867: "Ah, eminim bu George'un ilgisini çekecektir!" #!String
+    cropMatured_591: "Evde yetiştirilen laleler, bahar için harika bir hediye olur." #!String
+    cc_Complete: "Eski halkevinin açılması güzel. Orada ne anılarım var... Benim için özel bir yer." #!String
+    married: "Senin için çok sevindim tatlım.$h#$e#Senin gibi gençlerin evlenmesi, benim gibi ninelerin yüreğini ısıtıyor." #!String
+    divorce: "Bir daha evleneceğinde doğru kişi ile olduğundan emin ol...$s" #!String
+    reject_866: "Canım, bu gül ne de güzelmiş. Emily'e gösterdin mi? Bana onu anımsattı." #!String
+    pamHouseUpgrade: "Ah, tatlım... Pam'e yeni ev vermen çok kibarcaydı!$h#$e#İnsanlar birbirleriyle bu şekilde ilgilenince kalbim eriyor..." #!String
+    pamHouseUpgradeAnonymous: "İstersen bana yaşlı bunak de... ama sanırım Pam'in evini kimin yaptırdığını biliyorum... *göz kırpar*" #!String
+    MovieInvitation: "Ay! Çok naziksin canım. Evet... Sinemaya gitmeyi çok isterim!$h#$b#Sen önden git. Sinemada buluşuruz." #!String
+    Mon: "Amanın! Ne güzel bir gün.$u" #!String
+    Tue: "Kocam George'a takılma, yabancılara karşı pek iyi değildir.#$e#Eğer onu tanımaya devam edersen iyi geçinebilirsiniz.#$e#Bir gün iyi arkadaşlık kuracağınıza eminim!$h#$e#Madem kocamla bu kadar ilgilisin, sana birkaç tüyo vereyim. Pırasayı çok sever. Yılın bu zamanlarında pırasayı dağlarda bulabilirsin." #!String
+    Wed: "#$1 evelynGarden1#Dün kasaba bahçesinde şimdiye kadar gördüğüm en güzel kelebek ailesi güneşleniyordu.$k#$e#Başkan beni kasabanın bahçelerinden sorumlu tuttu.#$e#Aylardır çiçek yatakları için uğraşıyorum, sakın onlara basma!" #!String
+    Thu: "Bugün kurabiye pişireceğim. Baharda onları çiçek şeklinde yapmayı seviyorum.$h#$e#Belki bir gün sana tarifimi veririm." #!String
+    Fri: "George tüm gününü televizyonun önünde geçiriyor.#$e#Keşke daha çok dışarı çıksa. Temiz hava ona iyi gelirdi." #!String
+    Sat: "Eskiden bulutlara bakmayı severdim, şimdilerde ise onlara bakmakta zorlanıyorum.#$e# Gözlerim eskisi kadar iyi değil.$s" #!String
+    Sun: "Denize bu kadar yakın olmamız çok iyi. Denizin sesi uykuya dalmamı kolaylaştırıyor.#$e#Çocukken gelgit bittiğinde deniz kabukları toplardık, ah eski günler..." #!String
+    Tue6: "George ve beni ziyaret etmek için zaman ayırman çok ince bir hareket.#$e#Etrafımızdaki gençler olmasaydı, daha çabuk yaşlanırdık.$h" #!String
+    Event_cookies1: "Teşekkürler!$h" #!String
+    Event_cookies2: "Ne dedin balım? Hokey topu dediğini duyduğuma yemin edebilirim. Kulaklarım eskisi gibi duymuyor artık.$s" #!String
+    summer_Mon: "Bu harika mevsimde kendimi daha enerjik hissediyorum.$u" #!String
+    summer_Mon_inlaw_Alex: "Torunum nasıl? Çitflikte yaşamaktan memnundur umarım.#$e#Mutlu olmayı hakediyor...O iyi bir çocuk." #!String
+    summer_Tue: "George yazları daha az huysuz oluyor. Sıcak hava kemiklerini yumuşatıyor.#$e#Sen fark etmemiş olabilirsin ama ben farkediyorum, onu altmış yıldır tanıyorum!" #!String
+    summer_Wed: "Başkan beni kasabanın bahçelerinden sorumlu tuttu.#$e#Aylardır çiçek yataklarıyla ilgileniyorum, yani sakın onlara basma!" #!String
+    summer_Thu: "Bugün kurabiye pişireceğim. Onları palmiye şeklinde yapmayı seviyorum! Hehe.$h#$e#Belki bir gün sana tarifimi veririm." #!String
+    summer_Sat: "Dışarıda dikkatli ol canım! Güneş derini yakabilir." #!String
+    summer_Sun: "Şu sıralar bezelyeler açıyor.#$e#Harika bir kokuları var, değil mi?" #!String
+    summer_Thu4: "Görünüşe göre ne zaman kurabiye pişirsem misafirim çoğalıyor.#$e#Tarifi annem öğretti bana." #!String
+    fall_Mon: "Yıllar geçtikçe mevsimleri daha çok beğenir oldum. Gençler için onların geçtiğini fark etmemek çok kolay." #!String
+    fall_Tue: "George'nin yulaf lapasının içine kuru üzüm koymaya başladım... ama bir şey demedi. Merak ediyorum acaba hiç böyle şeyleri fark ediyor mu?" #!String
+    fall_Wed: "Başkan beni kasabanın bahçelerinden sorumlu tuttu.#$e#Güz çiçekleri narinlerdir, sakın onların üstünden geçme! Bazı çocukların bunu yapmayı sevdiğini biliyorum." #!String
+    fall_Thu: "Bugün kurabiye pişiriyorum. Şekilleri ufak bal kabakları gibi.$h#$e#Belki bir gün tarifimi sana veririm." #!String
+    fall_Sat: "Alex ile arkadaş mısın?#$e#Bazen beni çok endişelendiriyor." #!String
+    fall_Sat_inlaw_Alex: "Merhaba canım! Seni torunum olarak görüyorum artık!$h" #!String
+    fall_Sun: "Görüşüm kötü olabilir ama burnum hâlâ sapasağlam!#$e#Mantar ve çürük yaprakların kokusunu alabiliyorum. Bana küçük bir kızken oynadığım ormanları hatırlatıyor." #!String
+    winter_Mon: "Buzda kayıp düşme sakın canım." #!String
+    winter_Tue: "Üşümüyor musun? Daha kalın bir mont giymelisin canım!#$e#Bu hava eklemlerime iyi gelmiyor...$s" #!String
+    winter_Wed: "Genellikle bahçeler ile ben ilgilenirim. Şu an hepsi kar kaplı.#$e#Yine de ara sıra kontrol etmeyi seviyorum." #!String
+    winter_Thu: "Bugün yıldız şeklinde küçük kış kurabiyeleri yapıyorum.$h#$e#Belki bir gün sana tarifimi veririm." #!String
+    winter_Sat: "Burada 30 yıldır yaşıyoruz.#$e#Birçok insanın gelip gittiğini gördük, büyükbaban da bunlardan birisiydi... *iç çeker*" #!String
+    winter_Sat6: "Ah... canım. Gözlerini büyükbabandan almışsın...$s#$e#Evet... Evet... Onu iyi tanırdım." #!String
+    winter_Sun: "Üşümemek için çorba yapmalısın.#$e#Bir de mont giydiğinden emin olmalısın!" #!String
+    winter_Sat8: "@, sana George ile beraber burada 30 yıldır yaşadığımızı anlatmış mıydım?#$e#Umarım burada bir süre kalırsın.$h" #!String
+

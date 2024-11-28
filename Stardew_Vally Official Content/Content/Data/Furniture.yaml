@@ -1,0 +1,664 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    0: "Oak Chair/chair/-1/-1/4/350/-1/[LocalizedText Strings\\Furniture:OakChair]" #!String
+    3: "Walnut Chair/chair/-1/-1/4/350/-1/[LocalizedText Strings\\Furniture:WalnutChair]" #!String
+    6: "Birch Chair/chair/-1/-1/4/350/-1/[LocalizedText Strings\\Furniture:BirchChair]" #!String
+    9: "Mahogany Chair/chair/-1/-1/4/1000/-1/[LocalizedText Strings\\Furniture:MahoganyChair]" #!String
+    12: "Red Diner Chair/chair/-1/-1/4/750/-1/[LocalizedText Strings\\Furniture:RedDinerChair]" #!String
+    15: "Blue Diner Chair/chair/-1/-1/4/750/-1/[LocalizedText Strings\\Furniture:BlueDinerChair]" #!String
+    18: "Country Chair/chair/-1/-1/4/750/-1/[LocalizedText Strings\\Furniture:CountryChair]" #!String
+    21: "Breakfast Chair/chair/-1/-1/4/750/-1/[LocalizedText Strings\\Furniture:BreakfastChair]" #!String
+    24: "Pink Office Chair/chair/-1/-1/4/500/-1/[LocalizedText Strings\\Furniture:PinkOfficeChair]" #!String
+    27: "Purple Office Chair/chair/-1/-1/4/500/-1/[LocalizedText Strings\\Furniture:PurpleOfficeChair]" #!String
+    30: "Green Office Stool/chair/-1/-1/1/350/-1/[LocalizedText Strings\\Furniture:GreenOfficeStool]" #!String
+    31: "Orange Office Stool/chair/-1/-1/1/350/-1/[LocalizedText Strings\\Furniture:OrangeOfficeStool]" #!String
+    64: "Dark Throne/chair/-1/-1/4/2000/-1/[LocalizedText Strings\\Furniture:DarkThrone]" #!String
+    67: "Dining Chair/chair/-1/-1/4/1200/-1/[LocalizedText Strings\\Furniture:DiningChair]" #!String
+    70: "Dining Chair/chair/-1/-1/4/1200/-1/[LocalizedText Strings\\Furniture:DiningChair]" #!String
+    73: "Green Plush Seat/chair/-1/-1/4/750/-1/[LocalizedText Strings\\Furniture:GreenPlushSeat]" #!String
+    76: "Pink Plush Seat/chair/-1/-1/4/750/-1/[LocalizedText Strings\\Furniture:PinkPlushSeat]" #!String
+    79: "Winter Chair/chair/-1/-1/4/750/-1/[LocalizedText Strings\\Furniture:WinterChair]" #!String
+    82: "Groovy Chair/chair/-1/-1/4/750/-1/[LocalizedText Strings\\Furniture:GroovyChair]" #!String
+    85: "Cute Chair/chair/-1/-1/4/1200/-1/[LocalizedText Strings\\Furniture:CuteChair]" #!String
+    88: "Stump Seat/chair/-1/-1/4/2000/-1/[LocalizedText Strings\\Furniture:StumpSeat]" #!String
+    91: "Metal Chair/chair/-1/-1/4/800/-1/[LocalizedText Strings\\Furniture:MetalChair]" #!String
+    94: "Green Stool/chair/-1/-1/1/350/-1/[LocalizedText Strings\\Furniture:GreenStool]" #!String
+    95: "Blue Stool/chair/-1/-1/1/350/-1/[LocalizedText Strings\\Furniture:BlueStool]" #!String
+    128: "King Chair/chair/-1/-1/4/3000/-1/[LocalizedText Strings\\Furniture:KingChair]" #!String
+    131: "Crystal Chair/chair/-1/-1/4/3000/-1/[LocalizedText Strings\\Furniture:CrystalChair]///true" #!String
+    134: "Tropical Chair/chair/-1/-1/4/3000/-1/[LocalizedText Strings\\Furniture:TropicalChair]///true" #!String
+    192: "Oak Bench/bench/-1/-1/4/750/-1/[LocalizedText Strings\\Furniture:OakBench]" #!String
+    197: "Walnut Bench/bench/-1/-1/4/750/-1/[LocalizedText Strings\\Furniture:WalnutBench]" #!String
+    202: "Birch Bench/bench/-1/-1/4/750/-1/[LocalizedText Strings\\Furniture:BirchBench]" #!String
+    207: "Mahogany Bench/bench/-1/-1/4/2000/-1/[LocalizedText Strings\\Furniture:MahoganyBench]" #!String
+    212: "Modern Bench/bench/-1/-1/4/2000/-1/[LocalizedText Strings\\Furniture:ModernBench]" #!String
+    288: "Blue Armchair/armchair/-1/-1/4/1000/-1/[LocalizedText Strings\\Furniture:BlueArmchair]" #!String
+    294: "Red Armchair/armchair/-1/-1/4/1000/-1/[LocalizedText Strings\\Furniture:RedArmchair]" #!String
+    300: "Green Armchair/armchair/-1/-1/4/1000/-1/[LocalizedText Strings\\Furniture:GreenArmchair]" #!String
+    306: "Yellow Armchair/armchair/-1/-1/4/1000/-1/[LocalizedText Strings\\Furniture:YellowArmchair]" #!String
+    312: "Brown Armchair/armchair/-1/-1/4/1000/-1/[LocalizedText Strings\\Furniture:BrownArmchair]" #!String
+    416: "Blue Couch/couch/-1/-1/4/1750/-1/[LocalizedText Strings\\Furniture:BlueCouch]" #!String
+    424: "Red Couch/couch/-1/-1/4/1750/-1/[LocalizedText Strings\\Furniture:RedCouch]" #!String
+    432: "Green Couch/couch/-1/-1/4/1750/-1/[LocalizedText Strings\\Furniture:GreenCouch]" #!String
+    440: "Yellow Couch/couch/-1/-1/4/1750/-1/[LocalizedText Strings\\Furniture:YellowCouch]" #!String
+    512: "Brown Couch/couch/-1/-1/4/1750/-1/[LocalizedText Strings\\Furniture:BrownCouch]" #!String
+    520: "Dark Couch/couch/-1/-1/4/2500/-1/[LocalizedText Strings\\Furniture:DarkCouch]" #!String
+    528: "Wizard Couch/couch/-1/-1/4/4000/-1/[LocalizedText Strings\\Furniture:WizardCouch]" #!String
+    536: "Woodsy Couch/couch/-1/-1/4/3000/-1/[LocalizedText Strings\\Furniture:WoodsyCouch]" #!String
+    704: "Oak Dresser/dresser/-1/-1/4/5000/-1/[LocalizedText Strings\\Furniture:OakDresser]" #!String
+    709: "Walnut Dresser/dresser/-1/-1/4/5000/-1/[LocalizedText Strings\\Furniture:WalnutDresser]" #!String
+    714: "Birch Dresser/dresser/-1/-1/4/5000/-1/[LocalizedText Strings\\Furniture:BirchDresser]" #!String
+    719: "Mahogany Dresser/dresser/-1/-1/4/7500/-1/[LocalizedText Strings\\Furniture:MahoganyDresser]" #!String
+    724: "Coffee Table/table/2 2/2 1/2/1250/-1/[LocalizedText Strings\\Furniture:CoffeeTable]" #!String
+    727: "Stone Slab/table/2 2/2 1/2/1000/-1/[LocalizedText Strings\\Furniture:StoneSlab]" #!String
+    800: "Winter Dining Table/long table/-1/-1/2/3500/-1/[LocalizedText Strings\\Furniture:WinterDiningTable]" #!String
+    807: "Festive Dining Table/long table/-1/-1/2/3500/-1/[LocalizedText Strings\\Furniture:FestiveDiningTable]" #!String
+    814: "Mahogany Dining Table/long table/-1/-1/2/3000/-1/[LocalizedText Strings\\Furniture:MahoganyDiningTable]" #!String
+    821: "Modern Dining Table/long table/-1/-1/2/2700/-1/[LocalizedText Strings\\Furniture:ModernDiningTable]" #!String
+    984: "Long Cactus/decor/1 3/1 1/1/500/-1/[LocalizedText Strings\\Furniture:LongCactus]///true" #!String
+    985: "Long Palm/decor/1 4/1 1/1/500/-1/[LocalizedText Strings\\Furniture:LongPalm]///true" #!String
+    986: "Exotic Tree/decor/3 5/3 1/1/500/-1/[LocalizedText Strings\\Furniture:ExoticTree]///true" #!String
+    989: "Deluxe Tree/decor/3 5/3 1/1/500/-1/[LocalizedText Strings\\Furniture:DeluxeTree]///true" #!String
+    1120: "Oak Table/table/-1/-1/1/750/-1/[LocalizedText Strings\\Furniture:OakTable]" #!String
+    1122: "Walnut Table/table/-1/-1/1/750/-1/[LocalizedText Strings\\Furniture:WalnutTable]" #!String
+    1124: "Birch Table/table/-1/-1/1/750/-1/[LocalizedText Strings\\Furniture:BirchTable]" #!String
+    1126: "Mahogany Table/table/-1/-1/1/1500/-1/[LocalizedText Strings\\Furniture:MahoganyTable]" #!String
+    1128: "Sun Table/table/-1/-1/1/2500/-1/[LocalizedText Strings\\Furniture:SunTable]" #!String
+    1130: "Moon Table/table/-1/-1/1/2500/-1/[LocalizedText Strings\\Furniture:MoonTable]" #!String
+    1132: "Modern Table/table/-1/-1/1/1250/-1/[LocalizedText Strings\\Furniture:ModernTable]" #!String
+    1134: "Pub Table/table/-1/-1/1/800/-1/[LocalizedText Strings\\Furniture:PubTable]" #!String
+    1136: "Luxury Table/table/-1/-1/1/2000/-1/[LocalizedText Strings\\Furniture:LuxuryTable]" #!String
+    1138: "Diviner Table/table/-1/-1/1/2250/-1/[LocalizedText Strings\\Furniture:DivinerTable]" #!String
+    1140: "Neolithic Table/table/-1/-1/1/1800/-1/[LocalizedText Strings\\Furniture:NeolithicTable]" #!String
+    1142: "Puzzle Table/table/-1/-1/1/1500/-1/[LocalizedText Strings\\Furniture:PuzzleTable]" #!String
+    1144: "Winter Table/table/-1/-1/1/1250/-1/[LocalizedText Strings\\Furniture:WinterTable]" #!String
+    1146: "Candy Table/table/-1/-1/1/1000/-1/[LocalizedText Strings\\Furniture:CandyTable]" #!String
+    1148: "Luau Table/table/-1/-1/1/1000/-1/[LocalizedText Strings\\Furniture:LuauTable]" #!String
+    1150: "Dark Table/table/-1/-1/1/2000/-1/[LocalizedText Strings\\Furniture:DarkTable]" #!String
+    1216: "Oak Tea-Table/table/2 2/-1/1/750/-1/[LocalizedText Strings\\Furniture:OakTeaTable]" #!String
+    1218: "Walnut Tea-Table/table/2 2/-1/1/750/-1/[LocalizedText Strings\\Furniture:WalnutTeaTable]" #!String
+    1220: "Birch Tea-Table/table/2 2/-1/1/750/-1/[LocalizedText Strings\\Furniture:BirchTeaTable]" #!String
+    1222: "Mahogany Tea-Table/table/2 2/-1/1/1500/-1/[LocalizedText Strings\\Furniture:MahoganyTeaTable]" #!String
+    1224: "Modern Tea-Table/table/2 2/-1/1/1000/-1/[LocalizedText Strings\\Furniture:ModernTeaTable]" #!String
+    1226: "Furniture Catalogue/table/2 2/-1/1/200000/-1/[LocalizedText Strings\\Furniture:FurnitureCatalogue]///true" #!String
+    1228: "Oceanic Rug/rug/-1/-1/1/1250/-1/[LocalizedText Strings\\Furniture:OceanicRug]" #!String
+    1280: "China Cabinet/other/3 3/3 1/1/6000/-1/[LocalizedText Strings\\Furniture:ChinaCabinet]" #!String
+    1283: "Artist Bookcase/bookcase/-1/-1/1/1200/-1/[LocalizedText Strings\\Furniture:ArtistBookcase]" #!String
+    1285: "Luxury Bookcase/bookcase/-1/-1/1/2000/-1/[LocalizedText Strings\\Furniture:LuxuryBookcase]" #!String
+    1287: "Modern Bookcase/bookcase/-1/-1/1/1600/-1/[LocalizedText Strings\\Furniture:ModernBookcase]" #!String
+    1289: "Dark Bookcase/bookcase/-1/-1/1/2000/-1/[LocalizedText Strings\\Furniture:DarkBookcase]" #!String
+    1291: "Ceramic Pillar/decor/1 3/1 1/1/250/-1/[LocalizedText Strings\\Furniture:CeramicPillar]" #!String
+    1292: "Gold Pillar/decor/1 3/1 1/1/450/-1/[LocalizedText Strings\\Furniture:GoldPillar]" #!String
+    1293: "Industrial Pipe/decor/1 3/1 1/1/300/-1/[LocalizedText Strings\\Furniture:IndustrialPipe]" #!String
+    1294: "Indoor Palm/decor/1 3/1 1/1/600/-1/[LocalizedText Strings\\Furniture:IndoorPalm]" #!String
+    1295: "Totem Pole/decor/1 3/1 1/1/750/-1/[LocalizedText Strings\\Furniture:TotemPole]" #!String
+    1296: "Manicured Pine/decor/1 3/1 1/1/500/-1/[LocalizedText Strings\\Furniture:ManicuredPine]" #!String
+    1297: "Topiary Tree/decor/1 3/1 1/1/500/-1/[LocalizedText Strings\\Furniture:TopiaryTree]" #!String
+    1298: "Standing Geode/decor/1 2/1 1/1/500/-1/[LocalizedText Strings\\Furniture:StandingGeode]///true" #!String
+    1299: "Obsidian Vase/decor/1 2/1 1/1/500/-1/[LocalizedText Strings\\Furniture:ObsidianVase]///true" #!String
+    1300: "Singing Stone/decor/1 2/1 1/1/500/-1/[LocalizedText Strings\\Furniture:SingingStone]///true" #!String
+    1301: "Sloth Skeleton L/decor/1 2/1 1/1/500/-1/[LocalizedText Strings\\Furniture:SlothSkeletonL]///true" #!String
+    1302: "Sloth Skeleton M/decor/1 2/1 1/1/500/-1/[LocalizedText Strings\\Furniture:SlothSkeletonM]///true" #!String
+    1303: "Sloth Skeleton R/decor/1 2/1 1/1/500/-1/[LocalizedText Strings\\Furniture:SlothSkeletonR]///true" #!String
+    1304: "Skeleton/decor/1 2/1 1/1/500/-1/[LocalizedText Strings\\Furniture:Skeleton]///true" #!String
+    1305: "Chicken Statue/decor/1 2/1 1/1/500/-1/[LocalizedText Strings\\Furniture:ChickenStatue]///true" #!String
+    1306: "Leah's Sculpture/decor/1 2/1 1/1/500/-1/[LocalizedText Strings\\Furniture:LeahsSculpture]///true" #!String
+    1307: "Dried Sunflowers/decor/1 2/1 1/1/500/-1/[LocalizedText Strings\\Furniture:DriedSunflowers]///true" #!String
+    1308: "Catalogue/decor/1 2/1 1/1/30000/-1/[LocalizedText Strings\\Furniture:Catalogue]///true" #!String
+    1309: "Sam's Boombox/decor/1 2/1 1/1/500/-1/[LocalizedText Strings\\Furniture:SamsBoombox]///true" #!String
+    1362: "Small Plant/decor/1 1/1 1/1/250/-1/[LocalizedText Strings\\Furniture:SmallPlant]" #!String
+    1363: "Table Plant/decor/1 1/1 1/1/250/-1/[LocalizedText Strings\\Furniture:TablePlant]" #!String
+    1364: "Decorative Bowl/decor/1 1/1 1/1/250/-1/[LocalizedText Strings\\Furniture:DecorativeBowl]" #!String
+    1365: "Futan Bear/decor/1 1/1 1/1/1500/-1/[LocalizedText Strings\\Furniture:FutanBear]" #!String
+    1366: "Globe/decor/1 1/1 1/1/750/-1/[LocalizedText Strings\\Furniture:Globe]" #!String
+    1367: "Model Ship/decor/1 1/1 1/1/750/-1/[LocalizedText Strings\\Furniture:ModelShip]" #!String
+    1368: "Small Crystal/decor/1 1/1 1/1/750/-1/[LocalizedText Strings\\Furniture:SmallCrystal]" #!String
+    1369: "Decorative Lantern/decor/1 1/1 1/1/500/-1/[LocalizedText Strings\\Furniture:DecorativeLantern]" #!String
+    1371: "Wumbus Statue/decor/2 3/2 1/1/500/-1/[LocalizedText Strings\\Furniture:WumbusStatue]///true" #!String
+    1373: "Bobo Statue/decor/2 3/2 1/1/500/-1/[LocalizedText Strings\\Furniture:BoboStatue]///true" #!String
+    1375: "Purple Serpent Statue/decor/1 3/1 1/1/500/-1/[LocalizedText Strings\\Furniture:PurpleSerpentStatue]///true" #!String
+    1376: "House Plant/decor/1 2/1 1/1/250/-1/[LocalizedText Strings\\Furniture:HousePlant]" #!String
+    1377: "House Plant/decor/1 2/1 1/1/250/-1/[LocalizedText Strings\\Furniture:HousePlant]" #!String
+    1378: "House Plant/decor/1 2/1 1/1/250/-1/[LocalizedText Strings\\Furniture:HousePlant]" #!String
+    1379: "House Plant/decor/1 2/1 1/1/250/-1/[LocalizedText Strings\\Furniture:HousePlant]" #!String
+    1380: "House Plant/decor/1 2/1 1/1/250/-1/[LocalizedText Strings\\Furniture:HousePlant]" #!String
+    1381: "House Plant/decor/1 2/1 1/1/250/-1/[LocalizedText Strings\\Furniture:HousePlant]" #!String
+    1382: "House Plant/decor/1 2/1 1/1/250/-1/[LocalizedText Strings\\Furniture:HousePlant]" #!String
+    1383: "House Plant/decor/1 2/1 1/1/250/-1/[LocalizedText Strings\\Furniture:HousePlant]" #!String
+    1384: "House Plant/decor/1 2/1 1/1/250/-1/[LocalizedText Strings\\Furniture:HousePlant]" #!String
+    1385: "House Plant/decor/1 2/1 1/1/250/-1/[LocalizedText Strings\\Furniture:HousePlant]" #!String
+    1386: "House Plant/decor/1 2/1 1/1/250/-1/[LocalizedText Strings\\Furniture:HousePlant]" #!String
+    1387: "House Plant/decor/1 2/1 1/1/250/-1/[LocalizedText Strings\\Furniture:HousePlant]" #!String
+    1388: "House Plant/decor/1 2/1 1/1/250/-1/[LocalizedText Strings\\Furniture:HousePlant]" #!String
+    1389: "House Plant/decor/1 2/1 1/1/250/-1/[LocalizedText Strings\\Furniture:HousePlant]" #!String
+    1390: "House Plant/decor/1 2/1 1/1/250/-1/[LocalizedText Strings\\Furniture:HousePlant]" #!String
+    1391: "Oak End Table/table/1 2/1 1/2/500/-1/[LocalizedText Strings\\Furniture:OakEndTable]" #!String
+    1393: "Walnut End Table/table/1 2/1 1/2/500/-1/[LocalizedText Strings\\Furniture:WalnutEndTable]" #!String
+    1395: "Birch End Table/table/1 2/1 1/2/500/-1/[LocalizedText Strings\\Furniture:BirchEndTable]" #!String
+    1397: "Mahogany End Table/table/1 2/1 1/2/1000/-1/[LocalizedText Strings\\Furniture:MahoganyEndTable]" #!String
+    1399: "Modern End Table/table/1 2/1 1/1/800/-1/[LocalizedText Strings\\Furniture:ModernEndTable]" #!String
+    1400: "Grandmother End Table/table/1 2/1 1/1/1000/-1/[LocalizedText Strings\\Furniture:GrandmotherEndTable]" #!String
+    1401: "Winter End Table/table/1 2/1 1/1/800/-1/[LocalizedText Strings\\Furniture:WinterEndTable]" #!String
+    1402: "Calendar/painting/1 2/1 2/1/2000/-1/[LocalizedText Strings\\Furniture:Calendar]///true" #!String
+    1440: "Tree of the Winter Star/decor/3 5/3 2/1/5000/-1/[LocalizedText Strings\\Furniture:TreeoftheWinterStar]" #!String
+    1443: "Country Lamp/lamp/-1/-1/1/500/-1/[LocalizedText Strings\\Furniture:CountryLamp]" #!String
+    1445: "Box Lamp/lamp/-1/-1/1/750/-1/[LocalizedText Strings\\Furniture:BoxLamp]" #!String
+    1447: "Modern Lamp/lamp/-1/-1/1/750/-1/[LocalizedText Strings\\Furniture:ModernLamp]" #!String
+    1449: "Classic Lamp/lamp/-1/-1/1/1000/-1/[LocalizedText Strings\\Furniture:ClassicLamp]" #!String
+    1451: "Red Rug/rug/-1/-1/2/1000/-1/[LocalizedText Strings\\Furniture:RedRug]" #!String
+    1456: "Patchwork Rug/rug/-1/-1/2/800/-1/[LocalizedText Strings\\Furniture:PatchworkRug]" #!String
+    1461: "Dark Rug/rug/-1/-1/2/2000/-1/[LocalizedText Strings\\Furniture:DarkRug]" #!String
+    1466: "Budget TV/decor/2 3/2 2/1/750/-1/[LocalizedText Strings\\Furniture:BudgetTV]///true" #!String
+    1468: "Plasma TV/decor/3 3/3 1/1/4500/-1/[LocalizedText Strings\\Furniture:PlasmaTV]///true" #!String
+    1471: "Green Serpent Statue/decor/1 3/1 1/1/500/-1/[LocalizedText Strings\\Furniture:GreenSerpentStatue]///true" #!String
+    1539: "'The Muzzamaroo'/painting/-1/-1/1/1000/-1/[LocalizedText Strings\\Furniture:TheMuzzamaroo]" #!String
+    1541: "'A Night On Eco-Hill'/painting/-1/-1/1/1000/-1/[LocalizedText Strings\\Furniture:ANightOnEcoHill]///true" #!String
+    1543: "'Pathways'/painting/-1/-1/1/750/-1/[LocalizedText Strings\\Furniture:Pathways]" #!String
+    1545: "'Burnt Offering'/painting/-1/-1/1/1000/-1/[LocalizedText Strings\\Furniture:BurntOffering]///true" #!String
+    1547: "'Queen of the Gem Sea'/painting/3 2/3 2/1/1200/-1/[LocalizedText Strings\\Furniture:QueenoftheGemSea]" #!String
+    1550: "'Vanilla Villa'/painting/-1/-1/1/500/-1/[LocalizedText Strings\\Furniture:VanillaVilla]" #!String
+    1552: "'Primal Motion'/painting/-1/-1/1/1500/-1/[LocalizedText Strings\\Furniture:PrimalMotion]" #!String
+    1554: "'Jade Hills'/painting/3 2/3 2/1/1750/-1/[LocalizedText Strings\\Furniture:JadeHills]///true" #!String
+    1557: "'Sun #44'/painting/-1/-1/1/800/-1/[LocalizedText Strings\\Furniture:Sun44]" #!String
+    1559: "Wallflower Pal/painting/-1/-1/1/500/-1/[LocalizedText Strings\\Furniture:WallflowerPal]" #!String
+    1561: "'Spires'/painting/-1/-1/1/800/-1/[LocalizedText Strings\\Furniture:Spires]" #!String
+    1563: "'Highway 89'/painting/-1/-1/1/800/-1/[LocalizedText Strings\\Furniture:Highway89]" #!String
+    1565: "Calico Falls/painting/-1/-1/1/750/-1/[LocalizedText Strings\\Furniture:CalicoFalls]" #!String
+    1567: "Needlepoint Flower/painting/1 2/1 2/1/500/-1/[LocalizedText Strings\\Furniture:NeedlepointFlower]" #!String
+    1600: "Skull Poster/painting/1 2/1 2/1/500/-1/[LocalizedText Strings\\Furniture:SkullPoster]" #!String
+    1601: "'Sun #45'/painting/1 2/1 2/1/350/-1/[LocalizedText Strings\\Furniture:Sun45]" #!String
+    1602: "'Little Tree'/painting/1 2/1 2/1/350/-1/[LocalizedText Strings\\Furniture:LittleTree]" #!String
+    1603: "'Blueberries'/painting/1 2/1 2/1/250/-1/[LocalizedText Strings\\Furniture:Blueberries]" #!String
+    1604: "'Blue City'/painting/1 2/1 2/1/250/-1/[LocalizedText Strings\\Furniture:BlueCity]" #!String
+    1605: "Little Photos/painting/1 2/1 2/1/250/-1/[LocalizedText Strings\\Furniture:LittlePhotos]" #!String
+    1606: "'Dancing Grass'/painting/1 2/1 2/1/400/-1/[LocalizedText Strings\\Furniture:DancingGrass]" #!String
+    1607: "'VGA Paradise'/painting/2 2/2 2/1/1200/-1/[LocalizedText Strings\\Furniture:VGAParadise]" #!String
+    1609: "J. Cola Light/painting/3 2/3 2/1/1000/-1/[LocalizedText Strings\\Furniture:JColaLight]///true/collection_joja" #!String
+    1612: "'Kitemaster '95'/painting/-1/-1/1/600/-1/[LocalizedText Strings\\Furniture:Kitemaster95]" #!String
+    1614: "Basic Window/window/-1/-1/1/300/-1/[LocalizedText Strings\\Furniture:BasicWindow]" #!String
+    1616: "Small Window/window/-1/-1/1/300/-1/[LocalizedText Strings\\Furniture:SmallWindow]" #!String
+    1618: "Red Cottage Rug/rug/-1/-1/2/750/-1/[LocalizedText Strings\\Furniture:RedCottageRug]" #!String
+    1623: "Green Cottage Rug/rug/-1/-1/2/750/-1/[LocalizedText Strings\\Furniture:GreenCottageRug]" #!String
+    1628: "Monster Rug/rug/2 2/2 2/1/1250/-1/[LocalizedText Strings\\Furniture:MonsterRug]" #!String
+    1630: "Boarded Window/painting/1 2/1 2/1/400/-1/[LocalizedText Strings\\Furniture:BoardedWindow]" #!String
+    1664: "Mystic Rug/rug/-1/-1/2/1250/-1/[LocalizedText Strings\\Furniture:MysticRug]" #!String
+    1669: "Lg. Futan Bear/decor/2 2/2 1/1/4000/-1/[LocalizedText Strings\\Furniture:LgFutanBear]///true" #!String
+    1671: "Bear Statue/decor/2 4/2 1/1/4000/-1/[LocalizedText Strings\\Furniture:BearStatue]///true" #!String
+    1673: "Porthole/window/-1/-1/1/700/-1/[LocalizedText Strings\\Furniture:Porthole]" #!String
+    1675: "Anchor/painting/1 2/1 2/1/750/-1/[LocalizedText Strings\\Furniture:Anchor]" #!String
+    1676: "World Map/painting/-1/-1/1/500/-1/[LocalizedText Strings\\Furniture:WorldMap]" #!String
+    1678: "Ornate Window/window/-1/-1/1/900/-1/[LocalizedText Strings\\Furniture:OrnateWindow]" #!String
+    1680: "Floor TV/decor/2 2/2 1/1/700/-1/[LocalizedText Strings\\Furniture:FloorTV]///true" #!String
+    1682: "Carved Window/window/-1/-1/1/900/-1/[LocalizedText Strings\\Furniture:CarvedWindow]" #!String
+    1684: "Colorful Set/painting/1 2/1 2/1/500/-1/[LocalizedText Strings\\Furniture:ColorfulSet]" #!String
+    1687: "Cloud Decal/painting/2 2/2 2/1/500/-1/[LocalizedText Strings\\Furniture:CloudDecal]///true" #!String
+    1692: "Cloud Decal/painting/2 2/2 2/1/500/-1/[LocalizedText Strings\\Furniture:CloudDecal]///true" #!String
+    1733: "Junimo Plush/decor/2 2/2 1/1/4000/-1/[LocalizedText Strings\\Furniture:JunimoPlush]///true" #!String
+    1737: "Nautical Rug/rug/-1/-1/2/1250/-1/[LocalizedText Strings\\Furniture:NauticalRug]" #!String
+    1742: "Burlap Rug/rug/2 2/2 2/1/350/-1/[LocalizedText Strings\\Furniture:BurlapRug]" #!String
+    1744: "Tree Column/decor/1 3/1 1/1/1000/-1/[LocalizedText Strings\\Furniture:TreeColumn]" #!String
+    1745: "L. Light String/painting/2 1/2 1/1/400/-1/[LocalizedText Strings\\Furniture:LLightString]" #!String
+    1747: "S. Pine/decor/1 2/1 1/1/500/-1/[LocalizedText Strings\\Furniture:SPine]" #!String
+    1748: "Bonsai Tree/decor/1 2/1 1/1/800/-1/[LocalizedText Strings\\Furniture:BonsaiTree]" #!String
+    1749: "Metal Window/window/-1/-1/1/800/-1/[LocalizedText Strings\\Furniture:MetalWindow]" #!String
+    1751: "Candle Lamp/lamp/-1/-1/1/1000/-1/[LocalizedText Strings\\Furniture:CandleLamp]" #!String
+    1753: "Miner's Crest/painting/2 2/2 2/1/1000/-1/[LocalizedText Strings\\Furniture:MinersCrest]" #!String
+    1755: "Bamboo Mat/rug/2 1/2 1/2/250/-1/[LocalizedText Strings\\Furniture:BambooMat]" #!String
+    1758: "Ornate Lamp/lamp/-1/-1/1/1050/-1/[LocalizedText Strings\\Furniture:OrnateLamp]" #!String
+    1760: "Small Junimo Plush/decor/1 1/1 1/1/1500/-1/[LocalizedText Strings\\Furniture:SmallJunimoPlush]///true" #!String
+    1761: "Small Junimo Plush/decor/1 1/1 1/1/1500/-1/[LocalizedText Strings\\Furniture:SmallJunimoPlush]///true" #!String
+    1762: "Small Junimo Plush/decor/1 1/1 1/1/1500/-1/[LocalizedText Strings\\Furniture:SmallJunimoPlush]///true" #!String
+    1763: "Small Junimo Plush/decor/1 1/1 1/1/1500/-1/[LocalizedText Strings\\Furniture:SmallJunimoPlush]///true" #!String
+    1764: "Futan Rabbit/decor/1 1/1 1/1/1500/-1/[LocalizedText Strings\\Furniture:FutanRabbit]///true" #!String
+    1777: "Woodcut Rug/rug/2 2/2 2/1/800/-1/[LocalizedText Strings\\Furniture:WoodcutRug]" #!String
+    1792: "Brick Fireplace/fireplace/-1/-1/1/1000/-1/[LocalizedText Strings\\Furniture:BrickFireplace]" #!String
+    1794: "Stone Fireplace/fireplace/-1/-1/1/1500/-1/[LocalizedText Strings\\Furniture:StoneFireplace]" #!String
+    1796: "Iridium Fireplace/fireplace/-1/-1/1/15000/-1/[LocalizedText Strings\\Furniture:IridiumFireplace]///true" #!String
+    1798: "Stove Fireplace/fireplace/-1/-1/1/3000/-1/[LocalizedText Strings\\Furniture:StoveFireplace]///true" #!String
+    1800: "Monster Fireplace/fireplace/-1/-1/1/25000/-1/[LocalizedText Strings\\Furniture:MonsterFireplace]///true" #!String
+    1802: "My First Painting/painting/-1/-1/1/500/-1/[LocalizedText Strings\\Furniture:MyFirstPainting]///true" #!String
+    1811: "Hanging Shield/painting/1 1/1 1/1/500/-1/[LocalizedText Strings\\Furniture:HangingShield]" #!String
+    1812: "Monster Danglers/painting/2 1/2 1/1/1000/-1/[LocalizedText Strings\\Furniture:MonsterDanglers]" #!String
+    1814: "Ceiling Flags/painting/1 1/1 1/1/50/-1/[LocalizedText Strings\\Furniture:CeilingFlags]" #!String
+    1817: "Ceiling Leaves/painting/1 1/1 1/1/50/-1/[LocalizedText Strings\\Furniture:CeilingLeaves]" #!String
+    1818: "Ceiling Leaves/painting/1 1/1 1/1/50/-1/[LocalizedText Strings\\Furniture:CeilingLeaves]" #!String
+    1819: "Ceiling Leaves/painting/1 1/1 1/1/50/-1/[LocalizedText Strings\\Furniture:CeilingLeaves]" #!String
+    1820: "Ceiling Leaves/painting/1 1/1 1/1/50/-1/[LocalizedText Strings\\Furniture:CeilingLeaves]" #!String
+    1821: "Ceiling Leaves/painting/1 1/1 1/1/50/-1/[LocalizedText Strings\\Furniture:CeilingLeaves]" #!String
+    1838: "'Red Eagle'/painting/-1/-1/1/1000/-1/[LocalizedText Strings\\Furniture:RedEagle]///true" #!String
+    1840: "'Portrait Of A Mermaid'/painting/-1/-1/1/1000/-1/[LocalizedText Strings\\Furniture:PortraitOfAMermaid]///true" #!String
+    1842: "'Solar Kingdom'/painting/-1/-1/1/1000/-1/[LocalizedText Strings\\Furniture:SolarKingdom]///true" #!String
+    1844: "'Clouds'/painting/-1/-1/1/1000/-1/[LocalizedText Strings\\Furniture:Clouds]///true" #!String
+    1846: "'1000 Years From Now'/painting/-1/-1/1/1000/-1/[LocalizedText Strings\\Furniture:1000YearsFromNow]///true" #!String
+    1848: "'Three Trees'/painting/-1/-1/1/1000/-1/[LocalizedText Strings\\Furniture:ThreeTrees]///true" #!String
+    1850: "'The Serpent'/painting/-1/-1/1/1000/-1/[LocalizedText Strings\\Furniture:TheSerpent]///true" #!String
+    1852: "'Tropical Fish #173'/painting/-1/-1/1/1000/-1/[LocalizedText Strings\\Furniture:TropicalFish173]///true" #!String
+    1854: "'Land Of Clay'/painting/-1/-1/1/1000/-1/[LocalizedText Strings\\Furniture:LandOfClay]///true" #!String
+    1866: "Elegant Fireplace/fireplace/-1/-1/1/4000/-1/[LocalizedText Strings\\Furniture:ElegantFireplace]" #!String
+    1900: "Pirate Flag/painting/-1/-1/1/4000/-1/[LocalizedText Strings\\Furniture:PirateFlag]///true" #!String
+    1902: "Pirate Rug/rug/-1/-1/2/4000/-1/[LocalizedText Strings\\Furniture:PirateRug]///true" #!String
+    1907: "Strawberry Decal/painting/-1/-1/1/2500/-1/[LocalizedText Strings\\Furniture:StrawberryDecal]///true" #!String
+    1909: "Fruit Salad Rug/rug/-1/-1/2/4000/-1/[LocalizedText Strings\\Furniture:FruitSaladRug]///true" #!String
+    1914: "Night Sky Decal #1/painting/1 2/1 2/1/750/-1/[LocalizedText Strings\\Furniture:NightSkyDecal1]///true" #!String
+    1915: "Night Sky Decal #2/painting/1 2/1 2/1/750/-1/[LocalizedText Strings\\Furniture:NightSkyDecal2]///true" #!String
+    1916: "Night Sky Decal #3/painting/1 2/1 2/1/750/-1/[LocalizedText Strings\\Furniture:NightSkyDecal3]///true" #!String
+    1917: "Wall Pumpkin/painting/1 2/1 2/1/750/-1/[LocalizedText Strings\\Furniture:WallPumpkin]///true" #!String
+    1918: "Small Wall Pumpkin/painting/1 2/1 2/1/750/-1/[LocalizedText Strings\\Furniture:SmallWallPumpkin]///true" #!String
+    1952: "'The Brave Little Sapling'/painting/1 2/1 2/1/400/-1/[LocalizedText Strings\\Furniture:TheBraveLittleSapling]///true" #!String
+    1953: "'Mysterium'/painting/1 2/1 2/1/400/-1/[LocalizedText Strings\\Furniture:Mysterium]///true" #!String
+    1954: "'Journey Of The Prairie King: The Motion Picture'/painting/1 2/1 2/1/400/-1/[LocalizedText Strings\\Furniture:JourneyOfThePrairieKingTheMotionPicture]///true" #!String
+    1955: "'Wumbus'/painting/1 2/1 2/1/400/-1/[LocalizedText Strings\\Furniture:Wumbus]///true" #!String
+    1956: "'The Zuzu City Express'/painting/1 2/1 2/1/400/-1/[LocalizedText Strings\\Furniture:TheZuzuCityExpress]///true" #!String
+    1957: "'The Miracle At Coldstar Ranch'/painting/1 2/1 2/1/400/-1/[LocalizedText Strings\\Furniture:TheMiracleAtColdstarRanch]///true" #!String
+    1958: "'Natural Wonders: Exploring Our Vibrant World'/painting/1 2/1 2/1/400/-1/[LocalizedText Strings\\Furniture:NaturalWondersExploringOurVibrantWorld]///true" #!String
+    1959: "'It Howls In The Rain'/painting/1 2/1 2/1/400/-1/[LocalizedText Strings\\Furniture:ItHowlsInTheRain]///true" #!String
+    1960: "Indoor Hanging Basket/painting/1 2/1 2/1/400/-1/[LocalizedText Strings\\Furniture:IndoorHangingBasket]///true" #!String
+    1961: "Winter Tree Decal/painting/1 2/1 2/1/400/-1/[LocalizedText Strings\\Furniture:WinterTreeDecal]///true" #!String
+    1964: "Bone Rug/rug/-1/-1/2/1000/-1/[LocalizedText Strings\\Furniture:BoneRug]" #!String
+    1971: "Butterfly Hutch/decor/2 3/2 1/1/50000/2/[LocalizedText Strings\\Furniture:ButterflyHutch]///true" #!String
+    1973: "Wall Flower/painting/1 3/1 3/1/500/-1/[LocalizedText Strings\\Furniture:WallFlower]" #!String
+    1974: "S. Wall Flower/painting/1 3/1 3/1/500/-1/[LocalizedText Strings\\Furniture:SWallFlower]" #!String
+    1975: "Clouds Banner/painting/1 3/1 3/1/500/-1/[LocalizedText Strings\\Furniture:CloudsBanner]" #!String
+    1978: "Snowy Rug/rug/-1/-1/2/1000/-1/[LocalizedText Strings\\Furniture:SnowyRug]" #!String
+    2048: "Bed/bed/2 4/2 3/1/5000/-1/[LocalizedText Strings\\Furniture:Bed]" #!String
+    2052: "Double Bed/bed double/3 4/3 3/1/5000/-1/[LocalizedText Strings\\Furniture:DoubleBed]" #!String
+    2058: "Starry Double Bed/bed double/3 4/3 3/1/5000/-1/[LocalizedText Strings\\Furniture:StarryDoubleBed]///true" #!String
+    2064: "Strawberry Double Bed/bed double/3 4/3 3/1/5000/-1/[LocalizedText Strings\\Furniture:StrawberryDoubleBed]///true" #!String
+    2070: "Pirate Double Bed/bed double/3 4/3 3/1/5000/-1/[LocalizedText Strings\\Furniture:PirateDoubleBed]///true" #!String
+    2076: "Child Bed/bed child/2 4/2 3/1/5000/-1/[LocalizedText Strings\\Furniture:ChildBed]" #!String
+    2176: "Tropical Bed/bed/2 4/2 3/1/5000/-1/[LocalizedText Strings\\Furniture:TropicalBed]" #!String
+    2180: "Tropical Double Bed/bed double/3 4/3 3/1/5000/-1/[LocalizedText Strings\\Furniture:TropicalDoubleBed]" #!String
+    2186: "Deluxe Red Double Bed/bed double/3 4/3 3/1/6000/-1/[LocalizedText Strings\\Furniture:DeluxeRedDoubleBed]///true" #!String
+    2192: "Modern Double Bed/bed double/3 4/3 3/1/6000/-1/[LocalizedText Strings\\Furniture:ModernDoubleBed]///true" #!String
+    2304: "Large Fish Tank/fishtank/4 3/4 1/1/5000/-1/[LocalizedText Strings\\Furniture:LargeFishTank]" #!String
+    2312: "Deluxe Fish Tank/fishtank/5 3/5 1/1/10000/-1/[LocalizedText Strings\\Furniture:DeluxeFishTank]" #!String
+    2322: "Small Fish Tank/fishtank/2 3/2 1/1/1000/-1/[LocalizedText Strings\\Furniture:SmallFishTank]" #!String
+    2326: "Tropical TV/decor/3 3/3 1/1/4500/-1/[LocalizedText Strings\\Furniture:TropicalTV]///true" #!String
+    2329: "'Volcano' Photo/painting/-1/-1/1/500/-1/[LocalizedText Strings\\Furniture:VolcanoPhoto]///true" #!String
+    2331: "Jungle Torch/torch/-1/-1/1/500/-1/[LocalizedText Strings\\Furniture:JungleTorch]///true" #!String
+    2332: "Gourmand Statue/decor/2 2/2 1/1/500/-1/[LocalizedText Strings\\Furniture:GourmandStatue]///true" #!String
+    2334: "Pyramid Decal/painting/2 2/2 2/1/10000/-1/[LocalizedText Strings\\Furniture:PyramidDecal]///true" #!String
+    2393: "Palm Wall Ornament/painting/1 1/1 1/2/500/-1/[LocalizedText Strings\\Furniture:PalmWallOrnament]///true" #!String
+    2396: "Iridium Krobus/decor/1 3/1 1/1/5000/-1/[LocalizedText Strings\\Furniture:IridiumKrobus]///true" #!String
+    2397: "Plain Torch/torch/-1/-1/1/500/-1/[LocalizedText Strings\\Furniture:PlainTorch]" #!String
+    2398: "Stump Torch/torch/-1/-1/1/500/-1/[LocalizedText Strings\\Furniture:StumpTorch]" #!String
+    2400: "Aquatic Sanctuary/fishtank/7 3/7 1/1/10000/-1/[LocalizedText Strings\\Furniture:AquaticSanctuary]///true" #!String
+    2414: "Modern Fish Tank/fishtank/2 3/2 1/1/10000/-1/[LocalizedText Strings\\Furniture:ModernFishTank]" #!String
+    2418: "Lifesaver/painting/1 2/1 2/1/1000/-1/[LocalizedText Strings\\Furniture:Lifesaver]///true" #!String
+    2419: "Foliage Print/painting/2 2/2 2/1/10000/-1/[LocalizedText Strings\\Furniture:FoliagePrint]///true" #!String
+    2421: "'Boat'/painting/2 2/2 2/1/10000/-1/[LocalizedText Strings\\Furniture:Boat]///true" #!String
+    2423: "'Vista'/painting/2 2/2 2/1/10000/-1/[LocalizedText Strings\\Furniture:Vista]///true" #!String
+    2425: "Wall Basket/painting/2 2/2 2/1/10000/-1/[LocalizedText Strings\\Furniture:WallBasket]///true" #!String
+    2427: "Decorative Trash Can/decor/1 2/1 1/1/500/-1/[LocalizedText Strings\\Furniture:DecorativeTrashCan]" #!String
+    2488: "Light Green Rug/rug/3 2/3 2/2/10000/-1/[LocalizedText Strings\\Furniture:LightGreenRug]" #!String
+    2496: "Wild Double Bed/bed double/3 4/3 3/1/6000/-1/[LocalizedText Strings\\Furniture:WildDoubleBed]///true" #!String
+    2502: "Fisher Double Bed/bed double/3 4/3 3/1/6000/-1/[LocalizedText Strings\\Furniture:FisherDoubleBed]///true" #!String
+    2508: "Birch Double Bed/bed double/3 4/3 3/1/6000/-1/[LocalizedText Strings\\Furniture:BirchDoubleBed]///true" #!String
+    2514: "Exotic Double Bed/bed double/3 4/3 3/1/6000/-1/[LocalizedText Strings\\Furniture:ExoticDoubleBed]///true" #!String
+    2584: "'Jade Hills Extended'/painting/4 2/4 2/1/6750/-1/[LocalizedText Strings\\Furniture:JadeHillsExtended]" #!String
+    2624: "Pastel Banner/painting/1 3/1 3/1/500/-1/[LocalizedText Strings\\Furniture:PastelBanner]///true" #!String
+    2625: "Winter Banner/painting/1 3/1 3/1/500/-1/[LocalizedText Strings\\Furniture:WinterBanner]///true" #!String
+    2626: "Moonlight Jellies Banner/painting/1 3/1 3/1/500/-1/[LocalizedText Strings\\Furniture:MoonlightJelliesBanner]///true" #!String
+    2627: "Jungle Decal/painting/1 3/1 3/1/500/-1/[LocalizedText Strings\\Furniture:JungleDecal]" #!String
+    2628: "Jungle Decal/painting/1 3/1 3/1/500/-1/[LocalizedText Strings\\Furniture:JungleDecal]" #!String
+    2629: "Jungle Decal/painting/1 3/1 3/1/500/-1/[LocalizedText Strings\\Furniture:JungleDecal]" #!String
+    2630: "Jungle Decal/painting/1 3/1 3/1/500/-1/[LocalizedText Strings\\Furniture:JungleDecal]" #!String
+    2631: "Starport Decal/painting/1 3/1 3/1/500/-1/[LocalizedText Strings\\Furniture:StarportDecal]" #!String
+    2632: "Decorative Pitchfork/painting/1 3/1 3/1/500/-1/[LocalizedText Strings\\Furniture:DecorativePitchfork]" #!String
+    2633: "Wood Panel/painting/1 3/1 3/1/500/-1/[LocalizedText Strings\\Furniture:WoodPanel]" #!String
+    2634: "Decorative Axe/painting/1 3/1 3/1/500/-1/[LocalizedText Strings\\Furniture:DecorativeAxe]" #!String
+    2635: "Log Panel/painting/1 3/1 3/1/500/-1/[LocalizedText Strings\\Furniture:LogPanel]" #!String
+    2636: "Log Panel/painting/1 3/1 3/1/500/-1/[LocalizedText Strings\\Furniture:LogPanel]" #!String
+    2637: "Floor Divider R/rug/1 2/1 1/1/50/-1/[LocalizedText Strings\\Furniture:FloorDividerR]" #!String
+    2638: "Floor Divider L/rug/1 2/1 1/1/50/-1/[LocalizedText Strings\\Furniture:FloorDividerL]" #!String
+    2639: "Floor Divider R/rug/1 2/1 1/1/50/-1/[LocalizedText Strings\\Furniture:FloorDividerR]" #!String
+    2640: "Floor Divider L/rug/1 2/1 1/1/50/-1/[LocalizedText Strings\\Furniture:FloorDividerL]" #!String
+    2641: "Floor Divider R/rug/1 2/1 1/1/50/-1/[LocalizedText Strings\\Furniture:FloorDividerR]" #!String
+    2642: "Floor Divider L/rug/1 2/1 1/1/50/-1/[LocalizedText Strings\\Furniture:FloorDividerL]" #!String
+    2643: "Floor Divider R/rug/1 2/1 1/1/50/-1/[LocalizedText Strings\\Furniture:FloorDividerR]" #!String
+    2644: "Floor Divider L/rug/1 2/1 1/1/50/-1/[LocalizedText Strings\\Furniture:FloorDividerL]" #!String
+    2645: "Floor Divider R/rug/1 2/1 1/1/50/-1/[LocalizedText Strings\\Furniture:FloorDividerR]" #!String
+    2646: "Floor Divider L/rug/1 2/1 1/1/50/-1/[LocalizedText Strings\\Furniture:FloorDividerL]" #!String
+    2647: "Floor Divider R/rug/1 2/1 1/1/50/-1/[LocalizedText Strings\\Furniture:FloorDividerR]" #!String
+    2648: "Floor Divider L/rug/1 2/1 1/1/50/-1/[LocalizedText Strings\\Furniture:FloorDividerL]" #!String
+    2649: "Floor Divider R/rug/1 2/1 1/1/50/-1/[LocalizedText Strings\\Furniture:FloorDividerR]" #!String
+    2650: "Floor Divider L/rug/1 2/1 1/1/50/-1/[LocalizedText Strings\\Furniture:FloorDividerL]" #!String
+    2651: "Floor Divider R/rug/1 2/1 1/1/50/-1/[LocalizedText Strings\\Furniture:FloorDividerR]" #!String
+    2652: "Floor Divider L/rug/1 2/1 1/1/50/-1/[LocalizedText Strings\\Furniture:FloorDividerL]" #!String
+    2653: "Icy Banner/painting/1 3/1 3/1/500/-1/[LocalizedText Strings\\Furniture:IcyBanner]///true" #!String
+    2654: "Wall Palm/painting/1 3/1 3/1/500/-1/[LocalizedText Strings\\Furniture:WallPalm]" #!String
+    2655: "Wall Cactus/painting/1 3/1 3/1/500/-1/[LocalizedText Strings\\Furniture:WallCactus]" #!String
+    2720: "Large Brown Couch/couch/4 2/4 1/4/5750/-1/[LocalizedText Strings\\Furniture:LargeBrownCouch]" #!String
+    2730: "'Frozen Dreams'/painting/2 2/2 2/1/6750/-1/[LocalizedText Strings\\Furniture:FrozenDreams]" #!String
+    2732: "'Physics 101'/painting/2 2/2 2/1/6750/-1/[LocalizedText Strings\\Furniture:Physics101]///true" #!String
+    2734: "Wall Sconce/sconce/-1/-1/1/500/-1/[LocalizedText Strings\\Furniture:WallSconce]" #!String
+    2736: "Wall Sconce/sconce/-1/-1/1/500/-1/[LocalizedText Strings\\Furniture:WallSconce]" #!String
+    2738: "Wall Sconce/sconce/-1/-1/1/1000/-1/[LocalizedText Strings\\Furniture:WallSconce]" #!String
+    2740: "Wall Sconce/sconce/-1/-1/1/500/-1/[LocalizedText Strings\\Furniture:WallSconce]" #!String
+    2742: "Blossom Rug/rug/6 4/6 4/1/10000/-1/[LocalizedText Strings\\Furniture:BlossomRug]" #!String
+    2748: "Wall Sconce/sconce/-1/-1/1/500/-1/[LocalizedText Strings\\Furniture:WallSconce]" #!String
+    2750: "Wall Sconce/sconce/-1/-1/1/500/-1/[LocalizedText Strings\\Furniture:WallSconce]" #!String
+    2784: "Large Green Rug/rug/4 3/4 3/1/10000/-1/[LocalizedText Strings\\Furniture:LargeGreenRug]" #!String
+    2790: "Icy Rug/rug/4 3/4 3/1/10000/-1/[LocalizedText Strings\\Furniture:IcyRug]" #!String
+    2794: "Old World Rug/rug/4 3/4 3/1/10000/-1/[LocalizedText Strings\\Furniture:OldWorldRug]" #!String
+    2798: "Large Red Rug/rug/4 3/4 3/1/10000/-1/[LocalizedText Strings\\Furniture:LargeRedRug]" #!String
+    2802: "Large Cottage Rug/rug/4 3/4 3/1/10000/-1/[LocalizedText Strings\\Furniture:LargeCottageRug]" #!String
+    2812: "Wall Sconce/sconce/-1/-1/1/500/-1/[LocalizedText Strings\\Furniture:WallSconce]" #!String
+    2814: "Squirrel Figurine/decor/1 1/1 1/1/500/-1/[LocalizedText Strings\\Furniture:SquirrelFigurine]///true" #!String
+    2870: "Funky Rug/rug/5 4/5 4/1/10000/-1/[LocalizedText Strings\\Furniture:FunkyRug]" #!String
+    2875: "Modern Rug/rug/5 4/5 4/1/10000/-1/[LocalizedText Strings\\Furniture:ModernRug]" #!String
+    FreeCactus: "Cactus/randomized_plant/1 1/1 1/1/350/2/[LocalizedText Strings\\Furniture:Cactus]/0/TileSheets\\FreeCactuses/true" #!String
+    HangingFish: "Hanging Fish/painting/1 2/1 2/1/500/-1/[LocalizedText Strings\\Furniture:HangingFish]/0/TileSheets\\furniture_2/true" #!String
+    RetroTV: "Retro TV/decor/2 3/2 1/1/5000/-1/[LocalizedText Strings\\Furniture:RetroTV]/1/TileSheets\\furniture_2/true" #!String
+    ArtPhoto: "Art Photo/painting/1 2/1 2/1/500/-1/[LocalizedText Strings\\Furniture:ArtPhoto]/3/TileSheets\\furniture_2/true" #!String
+    ArtPhoto2: "Art Photo 2/painting/1 2/1 2/1/500/-1/[LocalizedText Strings\\Furniture:ArtPhoto2]/4/TileSheets\\furniture_2/true" #!String
+    ShortBookcase: "Short Bookcase/bookcase/2 2/2 1/1/1000/-1/[LocalizedText Strings\\Furniture:ShortBookcase]/5/TileSheets\\furniture_2/true" #!String
+    PierresSign: "Pierre's Sign/painting/2 2/2 2/1/500/-1/[LocalizedText Strings\\Furniture:PierresSign]/7/TileSheets\\furniture_2/true" #!String
+    SamsSkateboard: "Sam's Skateboard/painting/1 3/1 3/1/500/-1/[LocalizedText Strings\\Furniture:SamsSkateboard]/9/TileSheets\\furniture_2/true" #!String
+    ChickenDecal: "Chicken Decal/painting/3 2/3 2/1/500/-1/[LocalizedText Strings\\Furniture:ChickenDecal]/10/TileSheets\\furniture_2/true" #!String
+    ExoticPalace: "Exotic Palace/painting/3 3/3 3/1/5000/-1/[LocalizedText Strings\\Furniture:ExoticPalace]/13/TileSheets\\furniture_2/true" #!String
+    PeriodicTable: "Periodic Table/painting/2 2/2 2/1/500/-1/[LocalizedText Strings\\Furniture:PeriodicTable]/35/TileSheets\\furniture_2/true" #!String
+    DustySkull: "Dusty Skull/painting/2 2/2 2/1/500/-1/[LocalizedText Strings\\Furniture:DustySkull]/37/TileSheets\\furniture_2/true" #!String
+    RadioDesk: "Radio Desk/decor/2 3/2 1/1/500/-1/[LocalizedText Strings\\Furniture:RadioDesk]/39/TileSheets\\furniture_2/true" #!String
+    ModelPlanes: "Model Planes/painting/2 3/2 3/1/500/-1/[LocalizedText Strings\\Furniture:ModelPlanes]/42/TileSheets\\furniture_2/true" #!String
+    CatStatue: "Calico Statue/decor/1 3/1 1/1/500/-1/[LocalizedText Strings\\Furniture:CalicoStatue]/32/TileSheets\\furniture_2/true" #!String
+    SunDunes: "Sun Dunes/painting/2 2/2 2/1/500/-1/[LocalizedText Strings\\Furniture:SunDunes]/49/TileSheets\\furniture_2/true" #!String
+    DesertTable: "Desert Table/table/2 3/2 2/1/500/-1/[LocalizedText Strings\\Furniture:DesertTable]/80/TileSheets\\furniture_2/true" #!String
+    DesertChair: "Desert Chair/chair/-1/-1/4/500/-1/[LocalizedText Strings\\Furniture:DesertChair]/82/TileSheets\\furniture_2/true" #!String
+    DesertFireplace: "Desert Fireplace/fireplace/-1/-1/1/500/-1/[LocalizedText Strings\\Furniture:DesertFireplace]/85/TileSheets\\furniture_2/true" #!String
+    SandyRug: "Sandy Rug/rug/3 3/3 3/1/500/-1/[LocalizedText Strings\\Furniture:SandyRug]/87/TileSheets\\furniture_2/true" #!String
+    DesertRug: "Desert Rug/rug/4 3/4 3/2/500/-1/[LocalizedText Strings\\Furniture:DesertRug]/192/TileSheets\\furniture_2/true" #!String
+    DesertEndTable: "Desert End Table/table/1 2/1 1/2/500/-1/[LocalizedText Strings\\Furniture:DesertEndTable]/114/TileSheets\\furniture_2/true" #!String
+    DesertFlags: "Desert Flags/painting/4 1/4 1/1/500/-1/[LocalizedText Strings\\Furniture:DesertFlags]/135/TileSheets\\furniture_2/true" #!String
+    DecorativeBarrel: "Decorative Barrel/decor/1 2/1 1/1/500/-1/[LocalizedText Strings\\Furniture:DecorativeBarrel]/165/TileSheets\\furniture_2" #!String
+    MountedTrout_Painting: "Mounted Trout/painting/3 2/3 2/1/500/-1/[LocalizedText Strings\\Furniture:MountedTrout]/144/TileSheets\\furniture_2/true" #!String
+    SquidKid_Painting: "'Squid Kid'/painting/2 3/2 3/1/500/-1/[LocalizedText Strings\\Furniture:SquidKid]/147/TileSheets\\furniture_2/true" #!String
+    CowDecal: "Cow Decal/painting/3 2/3 2/1/500/-1/[LocalizedText Strings\\Furniture:CowDecal]/90/TileSheets\\furniture_2/true" #!String
+    BluePinstripeBed: "Blue Pinstripe Bed/bed/2 4/2 3/1/500/-1/[LocalizedText Strings\\Furniture:BluePinstripeBed]/151/TileSheets\\furniture_2/true" #!String
+    JungleTank: "JungleTank/fishtank/4 3/4 1/1/5000/-1/[LocalizedText Strings\\Furniture:JungleTank]/215/TileSheets\\furniture_2/true" #!String
+    CCFishTank: "CCFishTank/fishtank/6 3/6 1/1/5000/-1/[LocalizedText Strings\\Furniture:CCFishTank]/256/TileSheets\\furniture_2/true" #!String
+    BluePinstripeDoubleBed: "Blue Pinstripe Double Bed/bed double/3 4/3 3/1/500/-1/[LocalizedText Strings\\Furniture:BluePinstripeDoubleBed]/304/TileSheets\\furniture_2/true" #!String
+    JojaBed: "JojaBed/bed double/3 4/3 3/1/999/-1/[LocalizedText Strings\\Furniture:JojaBed]/0/TileSheets\\joja_furniture/true/collection_joja" #!String
+    JojaVault: "JojaVault/decor/2 2/2 1/1/999/-1/[LocalizedText Strings\\Furniture:JojaVault]/6/TileSheets\\joja_furniture/true/collection_joja" #!String
+    JojaChair: "JojaChair/chair/-1/-1/4/999/-1/[LocalizedText Strings\\Furniture:JojaChair]/8/TileSheets\\joja_furniture/true/collection_joja" #!String
+    J: "J/painting/2 2/2 2/1/999/-1/[LocalizedText Strings\\Furniture:J]/11/TileSheets\\joja_furniture/true/collection_joja" #!String
+    JojaColaTeaTable: "JojaColaTeaTable/decor/2 2/2 2/1/999/-1/[LocalizedText Strings\\Furniture:JojaColaTeaTable]/32/TileSheets\\joja_furniture/true/collection_joja" #!String
+    JojaTable: "JojaTable/table/2 3/2 2/1/999/-1/[LocalizedText Strings\\Furniture:JojaTable]/34/TileSheets\\joja_furniture/true/collection_joja" #!String
+    JPainting: "JPainting/painting/1 2/1 2/1/999/-1/[LocalizedText Strings\\Furniture:JPainting]/94/TileSheets\\joja_furniture/true/collection_joja" #!String
+    JLight: "JLight/sconce/-1/-1/1/999/-1/[LocalizedText Strings\\Furniture:JLight]/95/TileSheets\\joja_furniture/true/collection_joja" #!String
+    JojaCatalogue: "JojaCatalogue/decor/1 2/1 1/1/25000/-1/[LocalizedText Strings\\Furniture:JojaCatalogue]/97/TileSheets\\joja_furniture/true" #!String
+    JojaColaPainting: "JojaColaPainting/painting/2 2/2 2/1/999/-1/[LocalizedText Strings\\Furniture:JojaColaPainting]/49/TileSheets\\joja_furniture/true/collection_joja" #!String
+    JojaColaOrnament: "JojaColaOrnament/painting/1 2/1 2/1/999/-1/[LocalizedText Strings\\Furniture:JojaColaOrnament]/51/TileSheets\\joja_furniture/true/collection_joja" #!String
+    JojaFireplace: "JojaFireplace/fireplace/-1/-1/1/999/-1/[LocalizedText Strings\\Furniture:JojaFireplace]/52/TileSheets\\joja_furniture/true/collection_joja" #!String
+    JojaColaCans: "JojaColaCans/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:JojaColaCans]/54/TileSheets\\joja_furniture/true/collection_joja" #!String
+    CashRegister: "CashRegister/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:CashRegister]/55/TileSheets\\joja_furniture/true/collection_joja" #!String
+    PlasticPlant: "PlasticPlant/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:PlasticPlant]/56/TileSheets\\joja_furniture/true/collection_joja" #!String
+    PlasticSapling: "PlasticSapling/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:PlasticSapling]/57/TileSheets\\joja_furniture/true/collection_joja" #!String
+    GrayJojaCushion: "GrayJojaCushion/rug/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:GrayJojaCushion]/58/TileSheets\\joja_furniture/true/collection_joja" #!String
+    JojaCushion: "JojaCushion/rug/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:JojaCushion]/59/TileSheets\\joja_furniture/true/collection_joja" #!String
+    StackedJojaCrates: "StackedJojaBoxes/decor/1 2/1 1/1/999/-1/[LocalizedText Strings\\Furniture:StackedJojaBoxes]/67/TileSheets\\joja_furniture/true/collection_joja" #!String
+    JojaCouch: "JojaCouch/couch/4 2/4 1/4/999/-1/[LocalizedText Strings\\Furniture:JojaCouch]/68/TileSheets\\joja_furniture/true/collection_joja" #!String
+    MorrisPortrait: "MorrisPortrait/painting/2 2/2 2/1/999/-1/[LocalizedText Strings\\Furniture:MorrisPortrait]/100/TileSheets\\joja_furniture/true/collection_joja" #!String
+    JojaHQPainting: "JojaHQPainting/painting/2 2/2 2/1/999/-1/[LocalizedText Strings\\Furniture:JojaHQPainting]/102/TileSheets\\joja_furniture/true/collection_joja" #!String
+    JojaCrate: "JojaCrate/decor/1 2/1 1/1/999/-1/[LocalizedText Strings\\Furniture:JojaCrate]/93/TileSheets\\joja_furniture/true/collection_joja" #!String
+    JojaShoppingCart: "JojaShoppingCart/decor/2 2/2 1/1/999/-1/[LocalizedText Strings\\Furniture:JojaShoppingCart]/117/TileSheets\\joja_furniture/true/collection_joja" #!String
+    LargeJojaCrate: "LargeJojaCrate/decor/2 2/2 1/1/999/-1/[LocalizedText Strings\\Furniture:LargeJojaCrate]/120/TileSheets\\joja_furniture/true/collection_joja" #!String
+    JojaColaFridge: "JojaColaFridge/decor/2 2/2 1/1/999/-1/[LocalizedText Strings\\Furniture:JojaColaFridge]/122/TileSheets\\joja_furniture/true/collection_joja" #!String
+    JojaDresser: "JojaDresser/dresser/-1/-1/4/999/-1/[LocalizedText Strings\\Furniture:JojaDresser]/124/TileSheets\\joja_furniture/true/collection_joja" #!String
+    GrayJojaDresser: "GrayJojaDresser/dresser/-1/-1/4/999/-1/[LocalizedText Strings\\Furniture:GrayJojaDresser]/163/TileSheets\\joja_furniture/true/collection_joja" #!String
+    LargeJojaRug: "LargeJojaRug/rug/5 3/5 3/1/999/-1/[LocalizedText Strings\\Furniture:LargeJojaRug]/143/TileSheets\\joja_furniture/true/collection_joja" #!String
+    SmallJojaRug: "SmallJojaRug/rug/2 1/2 1/1/999/-1/[LocalizedText Strings\\Furniture:SmallJojaRug]/148/TileSheets\\joja_furniture/true/collection_joja" #!String
+    SquareJojaRug: "SquareJojaRug/rug/2 2/2 2/1/999/-1/[LocalizedText Strings\\Furniture:SquareJojaRug]/161/TileSheets\\joja_furniture/true/collection_joja" #!String
+    JojaRug: "JojaRug/rug/3 2/3 2/2/999/-1/[LocalizedText Strings\\Furniture:JojaRug]/182/TileSheets\\joja_furniture/true/collection_joja" #!String
+    JojaCoffeeTable: "JojaCoffeeTable/table/2 2/2 1/2/999/-1/[LocalizedText Strings\\Furniture:JojaCoffeeTable]/200/TileSheets\\joja_furniture/true/collection_joja" #!String
+    GrayJojaCoffeeTable: "GrayJojaCoffeeTable/table/2 2/2 1/2/999/-1/[LocalizedText Strings\\Furniture:GrayJojaCoffeeTable]/203/TileSheets\\joja_furniture/true/collection_joja" #!String
+    JojaLamp: "JojaLamp/lamp/-1/-1/1/999/-1/[LocalizedText Strings\\Furniture:JojaLamp]/206/TileSheets\\joja_furniture/true/collection_joja" #!String
+    GrayJojaBookcase: "GrayJojaBookcase/bookcase/-1/-1/1/999/-1/[LocalizedText Strings\\Furniture:GrayJojaBookcase]/221/TileSheets\\joja_furniture/true/collection_joja" #!String
+    JojaBookcase: "JojaBookcase/bookcase/-1/-1/1/999/-1/[LocalizedText Strings\\Furniture:JojaBookcase]/223/TileSheets\\joja_furniture/true/collection_joja" #!String
+    JojaStool: "JojaStool/chair/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:JojaStool]/255/TileSheets\\joja_furniture/true/collection_joja" #!String
+    JojaEndTable: "JojaEndTable/table/1 2/1 1/2/999/-1/[LocalizedText Strings\\Furniture:JojaEndTable]/243/TileSheets\\joja_furniture/true/collection_joja" #!String
+    GrayJojaEndTable: "GrayJojaEndTable/table/1 2/1 1/2/999/-1/[LocalizedText Strings\\Furniture:GrayJojaEndTable]/245/TileSheets\\joja_furniture/true/collection_joja" #!String
+    DecorativeJojaDoor: "DecorativeJojaDoor/painting/2 3/2 3/2/999/-1/[LocalizedText Strings\\Furniture:DecorativeJojaDoor]/238/TileSheets\\joja_furniture/true/collection_joja" #!String
+    WizardBed: "WizardBed/bed double/3 4/3 3/1/999/-1/[LocalizedText Strings\\Furniture:WizardBed]/0/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    LargeWizardBookcase: "LargeWizardBookcase/bookcase/3 3/3 1/1/999/-1/[LocalizedText Strings\\Furniture:LargeWizardBookcase]/6/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    WizardBookcase: "WizardBookcase/bookcase/2 3/2 1/1/999/-1/[LocalizedText Strings\\Furniture:WizardBookcase]/9/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    ShortWizardBookcase: "ShortWizardBookcase/bookcase/2 2/2 1/1/999/-1/[LocalizedText Strings\\Furniture:ShortWizardBookcase]/11/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    SmallWizardBookcase: "SmallWizardBookcase/bookcase/1 2/1 1/1/999/-1/[LocalizedText Strings\\Furniture:SmallWizardBookcase]/38/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    WizardStool: "WizardStool/chair/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:WizardStool]/37/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    WizardFireplace: "WizardFireplace/fireplace/-1/-1/1/999/-1/[LocalizedText Strings\\Furniture:WizardFireplace]/52/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    WizardDresser: "WizardDresser/dresser/2 2/2 1/4/999/-1/[LocalizedText Strings\\Furniture:WizardDresser]/54/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    WizardStudy: "WizardStudy/decor/3 3/3 1/1/999/-1/[LocalizedText Strings\\Furniture:WizardStudy]/46/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    WizardEndTable: "WizardEndTable/table/1 2/1 1/2/999/-1/[LocalizedText Strings\\Furniture:WizardEndTable]/49/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    WitchBroom: "WitchBroom/painting/1 3/1 3/1/999/-1/[LocalizedText Strings\\Furniture:WitchBroom]/64/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    Cauldron: "Cauldron/decor/2 2/2 1/1/999/-1/[LocalizedText Strings\\Furniture:Cauldron]/75/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    CurlyTree: "CurlyTree/decor/2 4/2 1/1/999/-1/[LocalizedText Strings\\Furniture:CurlyTree]/80/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    LeafyPlant: "LeafyPlant/decor/1 2/1 1/1/999/-1/[LocalizedText Strings\\Furniture:LeafyPlant]/95/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    WizardChair: "WizardChair/chair/-1/-1/4/999/-1/[LocalizedText Strings\\Furniture:WizardChair]/83/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    WizardTable: "WizardTable/table/2 3/2 2/1/999/-1/[LocalizedText Strings\\Furniture:WizardTable]/86/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    WizardCushion: "WizardCushion/rug/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:WizardCushion]/101/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    DarkWizardCushion: "DarkWizardCushion/rug/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:DarkWizardCushion]/114/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    WizardTeaTable: "WizardTeaTable/decor/2 2/2 2/1/999/-1/[LocalizedText Strings\\Furniture:WizardTeaTable]/102/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    SmallElixirShelf: "SmallElixirShelf/painting/2 1/2 1/1/999/-1/[LocalizedText Strings\\Furniture:SmallElixirShelf]/110/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    ElixirShelf: "ElixirShelf/painting/2 1/2 1/1/999/-1/[LocalizedText Strings\\Furniture:ElixirShelf]/123/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    SmallStackedElixirShelf: "SmallStackedElixirShelf/painting/2 2/2 2/1/999/-1/[LocalizedText Strings\\Furniture:SmallStackedElixirShelf]/136/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    StackedElixirShelf: "StackedElixirShelf/painting/2 2/2 2/1/999/-1/[LocalizedText Strings\\Furniture:StackedElixirShelf]/162/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    ElixirBundle: "ElixirBundle/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:ElixirBundle]/125/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    CoupleElixirs: "CoupleElixirs/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:CoupleElixirs]/138/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    ElixirTable: "ElixirTable/decor/2 2/2 1/1/999/-1/[LocalizedText Strings\\Furniture:ElixirTable]/126/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    LongElixirTable: "LongElixirTable/decor/2 3/2 2/1/999/-1/[LocalizedText Strings\\Furniture:LongElixirTable]/128/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    WizardLamp: "WizardLamp/lamp/1 3/1 1/1/999/-1/[LocalizedText Strings\\Furniture:WizardLamp]/121/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    Runes: "Runes/painting/1 2/1 2/1/999/-1/[LocalizedText Strings\\Furniture:Runes]/151/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    WizardTower: "WizardTower/painting/2 2/2 2/1/999/-1/[LocalizedText Strings\\Furniture:WizardTower]/152/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    PottedRedMushroom: "PottedRedMushroom/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:PottedRedMushroom]/167/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    WizardCatalogue: "WizardCatalogue/decor/1 2/1 1/1/999/-1/[LocalizedText Strings\\Furniture:WizardCatalogue]/168/TileSheets\\wizard_furniture/true" #!String
+    VoidSwirls: "VoidSwirls/painting/2 2/2 2/1/999/-1/[LocalizedText Strings\\Furniture:VoidSwirls]/179/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    WizardBookshelf: "WizardBookshelf/painting/2 2/2 2/1/999/-1/[LocalizedText Strings\\Furniture:WizardBookshelf]/177/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    Glyph: "Glyph/painting/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:Glyph]/194/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    StoneFlooring: "StoneFlooring/rug/4 4/4 4/1/999/-1/[LocalizedText Strings\\Furniture:StoneFlooring]/130/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    RuneRug: "RuneRug/rug/2 2/2 2/1/999/-1/[LocalizedText Strings\\Furniture:RuneRug]/160/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    SwirlRug: "SwirlRug/rug/3 2/3 2/2/999/-1/[LocalizedText Strings\\Furniture:SwirlRug]/182/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    StarryMoonRug: "StarryMoonRug/rug/5 3/5 3/1/999/-1/[LocalizedText Strings\\Furniture:StarryMoonRug]/221/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    CrystalBall: "CrystalBall/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:CrystalBall]/187/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    AmethystCrystalBall: "AmethystCrystalBall/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:AmethystCrystalBall]/200/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    TopazCrystalBall: "TopazCrystalBall/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:TopazCrystalBall]/213/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    AquamarineCrystalBall: "AquamarineCrystalBall/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:AquamarineCrystalBall]/226/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    EmeraldCrystalBall: "EmeraldCrystalBall/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:EmeraldCrystalBall]/239/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    RubyCrystalBall: "RubyCrystalBall/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:RubyCrystalBall]/252/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    SmallBookStack: "SmallBookStack/decor/1 2/1 1/1/999/-1/[LocalizedText Strings\\Furniture:SmallBookStack]/240/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    BookStack: "BookStack/decor/1 2/1 1/1/999/-1/[LocalizedText Strings\\Furniture:BookStack]/214/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    LargeBookStack: "LargeBookStack/decor/1 2/1 1/1/999/-1/[LocalizedText Strings\\Furniture:LargeBookStack]/188/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    PurpleBook: "PurpleBook/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:PurpleBook]/202/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    BlueBook: "BlueBook/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:BlueBook]/203/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    YellowBook: "YellowBook/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:YellowBook]/204/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    RedBook: "RedBook/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:RedBook]/205/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    GreenBook: "GreenBook/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:GreenBook]/206/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    BrownBook: "BrownBook/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:BrownBook]/207/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    FallenPurpleBook: "FallenPurpleBook/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:FallenPurpleBook]/215/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    FallenBlueBook: "FallenBlueBook/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:FallenBlueBook]/216/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    FallenYellowBook: "FallenYellowBook/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:FallenYellowBook]/217/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    FallenRedBook: "FallenRedBook/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:FallenRedBook]/218/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    FallenGreenBook: "FallenGreenBook/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:FallenGreenBook]/219/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    FallenBrownBook: "FallenBrownBook/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:FallenBrownBook]/220/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    SmallBookPile: "SmallBookPile/decor/2 2/2 1/1/999/-1/[LocalizedText Strings\\Furniture:SmallBookPile]/228/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    BookPile: "BookPile/decor/2 2/2 1/1/999/-1/[LocalizedText Strings\\Furniture:BookPile]/230/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    LargeBookPile: "LargeBookPile/decor/2 2/2 1/1/999/-1/[LocalizedText Strings\\Furniture:LargeBookPile]/232/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    DecorativeWizardDoor: "DecorativeWizardDoor/painting/2 3/2 3/1/999/-1/[LocalizedText Strings\\Furniture:DecorativeWizardDoor]/254/TileSheets\\wizard_furniture/true/collection_wizard" #!String
+    JunimoBed: "JunimoBed/bed double/3 4/3 3/1/999/-1/[LocalizedText Strings\\Furniture:JunimoBed]/0/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    JunimoHut: "JunimoHut/decor/3 4/3 2/1/999/-1/[LocalizedText Strings\\Furniture:JunimoHut]/6/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    LargeJunimoHut: "LargeJunimoHut/decor/4 4/4 2/1/999/-1/[LocalizedText Strings\\Furniture:LargeJunimoHut]/9/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    SmallJunimoHut: "SmallJunimoHut/decor/3 3/3 1/1/999/-1/[LocalizedText Strings\\Furniture:SmallJunimoHut]/62/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    JunimoFireplace: "JunimoFireplace/fireplace/-1/-1/1/999/-1/[LocalizedText Strings\\Furniture:JunimoFireplace]/52/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    JunimoBookcase: "JunimoBookcase/bookcase/2 3/2 1/1/999/-1/[LocalizedText Strings\\Furniture:JunimoBookcase]/54/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    JunimoPot: "JunimoPot/decor/1 2/1 1/1/999/-1/[LocalizedText Strings\\Furniture:JunimoPot]/56/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    JunimoBag: "JunimoBag/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:JunimoBag]/57/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    JunimoBundle: "JunimoBundle/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:JunimoBundle]/311/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    JunimoStool: "JunimoStool/chair/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:JunimoStool]/59/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    JunimoTable: "JunimoTable/table/2 3/2 2/1/999/-1/[LocalizedText Strings\\Furniture:JunimoTable]/60/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    JunimoChair: "JunimoChair/chair/-1/-1/4/999/-1/[LocalizedText Strings\\Furniture:JunimoChair]/70/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    SmallJunimoPot: "SmallJunimoPot/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:SmallJunimoPot]/82/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    JunimoFlower: "JunimoFlower/decor/1 2/1 1/1/999/-1/[LocalizedText Strings\\Furniture:JunimoFlower]/93/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    JunimoEndTable: "JunimoEndTable/table/1 2/1 1/2/999/-1/[LocalizedText Strings\\Furniture:JunimoEndTable]/94/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    JunimoCatalogue: "JunimoCatalogue/decor/1 2/1 1/1/999/-1/[LocalizedText Strings\\Furniture:JunimoCatalogue]/96/TileSheets\\junimo_furniture/true" #!String
+    JunimoTeaTable: "JunimoTeaTable/decor/2 2/2 2/1/999/-1/[LocalizedText Strings\\Furniture:JunimoTeaTable]/97/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    JunimoDresser: "JunimoDresser/dresser/-1/-1/4/999/-1/[LocalizedText Strings\\Furniture:JunimoDresser]/99/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    JunimoLamp: "JunimoLamp/lamp/1 3/1 1/1/999/-1/[LocalizedText Strings\\Furniture:JunimoLamp]/117/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    JunimoPlant: "JunimoPlant/decor/2 2/2 1/1/999/-1/[LocalizedText Strings\\Furniture:JunimoPlant]/119/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    JunimoWallPlaque: "JunimoWallPlaque/painting/1 2/1 2/1/999/-1/[LocalizedText Strings\\Furniture:JunimoWallPlaque]/121/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    JunimoPlaque: "JunimoPlaque/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:JunimoPlaque]/122/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    JunimoCushion: "JunimoCushion/rug/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:JunimoCushion]/123/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    DarkJunimoCushion: "DarkJunimoCushion/rug/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:DarkJunimoCushion]/124/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    JunimoTree: "JunimoTree/decor/3 3/3 1/1/999/-1/[LocalizedText Strings\\Furniture:JunimoTree]/145/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    JunimoCouch: "JunimoCouch/couch/-1/-1/4/999/-1/[LocalizedText Strings\\Furniture:JunimoCouch]/135/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    GreenSleepingJunimo: "GreenSleepingJunimo/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:GreenSleepingJunimo]/174/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    BlueSleepingJunimo: "BlueSleepingJunimo/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:BlueSleepingJunimo]/175/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    RedSleepingJunimo: "RedSleepingJunimo/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:RedSleepingJunimo]/176/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    PurpleSleepingJunimo: "PurpleSleepingJunimo/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:PurpleSleepingJunimo]/177/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    YellowSleepingJunimo: "YellowSleepingJunimo/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:YellowSleepingJunimo]/178/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    OrangeSleepingJunimo: "OrangeSleepingJunimo/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:OrangeSleepingJunimo]/179/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    GraySleepingJunimo: "GraySleepingJunimo/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:GraySleepingJunimo]/180/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    SquareJunimoRug: "SquareJunimoRug/rug/2 2/2 2/1/999/-1/[LocalizedText Strings\\Furniture:SquareJunimoRug]/156/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    JunimoRug: "JunimoRug/rug/4 3/4 3/1/999/-1/[LocalizedText Strings\\Furniture:JunimoRug]/182/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    JunimoMat: "JunimoMat/rug/-1/-1/2/999/-1/[LocalizedText Strings\\Furniture:JunimoMat]/186/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    CircularJunimoRug: "CircularJunimoRug/rug/3 3/3 3/1/999/-1/[LocalizedText Strings\\Furniture:CircularJunimoRug]/273/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    SmallJunimoMat: "SmallJunimoMat/rug/2 1/2 1/1/999/-1/[LocalizedText Strings\\Furniture:SmallJunimoMat]/309/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    CommunityCenter: "CommunityCenter/painting/4 2/4 2/1/999/-1/[LocalizedText Strings\\Furniture:CommunityCenter]/191/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    LittleBuddies: "LittleBuddies/painting/3 2/3 2/1/999/-1/[LocalizedText Strings\\Furniture:LittleBuddies]/218/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    Stardrop: "Stardrop/painting/2 2/2 2/1/999/-1/[LocalizedText Strings\\Furniture:Stardrop]/244/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    Hut: "Hut/painting/1 2/1 2/1/999/-1/[LocalizedText Strings\\Furniture:Hut]/246/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    AbigailPortrait: "AbigailPortrait/painting/2 2/2 2/1/999/-1/[LocalizedText Strings\\Furniture:AbigailPortrait]/221/TileSheets\\junimo_furniture/true" #!String
+    EmilyPortrait: "EmilyPortrait/painting/2 2/2 2/1/999/-1/[LocalizedText Strings\\Furniture:EmilyPortrait]/225/TileSheets\\junimo_furniture/true" #!String
+    HaleyPortrait: "HaleyPortrait/painting/2 2/2 2/1/999/-1/[LocalizedText Strings\\Furniture:HaleyPortrait]/223/TileSheets\\junimo_furniture/true" #!String
+    LeahPortrait: "LeahPortrait/painting/2 2/2 2/1/999/-1/[LocalizedText Strings\\Furniture:LeahPortrait]/302/TileSheets\\junimo_furniture/true" #!String
+    MaruPortrait: "MaruPortrait/painting/2 2/2 2/1/999/-1/[LocalizedText Strings\\Furniture:MaruPortrait]/227/TileSheets\\junimo_furniture/true" #!String
+    PennyPortrait: "PennyPortrait/painting/2 2/2 2/1/999/-1/[LocalizedText Strings\\Furniture:PennyPortrait]/229/TileSheets\\junimo_furniture/true" #!String
+    AlexPortrait: "AlexPortrait/painting/2 2/2 2/1/999/-1/[LocalizedText Strings\\Furniture:AlexPortrait]/249/TileSheets\\junimo_furniture/true" #!String
+    ElliottPortrait: "ElliottPortrait/painting/2 2/2 2/1/999/-1/[LocalizedText Strings\\Furniture:ElliottPortrait]/255/TileSheets\\junimo_furniture/true" #!String
+    HarveyPortrait: "HarveyPortrait/painting/2 2/2 2/1/999/-1/[LocalizedText Strings\\Furniture:HarveyPortrait]/247/TileSheets\\junimo_furniture/true" #!String
+    SamPortrait: "SamPortrait/painting/2 2/2 2/1/999/-1/[LocalizedText Strings\\Furniture:SamPortrait]/304/TileSheets\\junimo_furniture/true" #!String
+    SebastianPortrait: "SebastianPortrait/painting/2 2/2 2/1/999/-1/[LocalizedText Strings\\Furniture:SebastianPortrait]/253/TileSheets\\junimo_furniture/true" #!String
+    ShanePortrait: "ShanePortrait/painting/2 2/2 2/1/999/-1/[LocalizedText Strings\\Furniture:ShanePortrait]/251/TileSheets\\junimo_furniture/true" #!String
+    KrobusPortrait: "KrobusPortrait/painting/2 2/2 2/1/999/-1/[LocalizedText Strings\\Furniture:KrobusPortrait]/330/TileSheets\\junimo_furniture/true" #!String
+    JunimoStar: "JunimoStar/painting/1 2/1 2/1/999/-1/[LocalizedText Strings\\Furniture:JunimoStar]/276/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    BulletinBoard: "BulletinBoard/painting/3 2/3 2/1/999/-1/[LocalizedText Strings\\Furniture:BulletinBoard]/277/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    BrochureCabinet: "BrochureCabinet/decor/3 3/3 1/1/999/-1/[LocalizedText Strings\\Furniture:BrochureCabinet]/280/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    LeafyWallPanel: "LeafyWallPanel/painting/1 3/1 3/1/999/-1/[LocalizedText Strings\\Furniture:LeafyWallPanel]/270/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    LightLeafyWallPanel: "LightLeafyWallPanel/painting/1 3/1 3/1/999/-1/[LocalizedText Strings\\Furniture:LightLeafyWallPanel]/271/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    DarkLeafyWallPanel: "DarkLeafyWallPanel/painting/1 3/1 3/1/999/-1/[LocalizedText Strings\\Furniture:DarkLeafyWallPanel]/272/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    DecorativeJunimoDoor: "DecorativeJunimoDoor/painting/2 3/2 3/1/999/-1/[LocalizedText Strings\\Furniture:DecorativeJunimoDoor]/319/TileSheets\\junimo_furniture/true/collection_junimo" #!String
+    RetroBed: "RetroBed/bed double/3 4/3 3/1/999/-1/[LocalizedText Strings\\Furniture:RetroBed]/0/TileSheets\\retro_furniture/true/collection_retro" #!String
+    RetroDresser: "RetroDresser/dresser/-1/-1/4/999/-1/[LocalizedText Strings\\Furniture:RetroDresser]/6/TileSheets\\retro_furniture/true/collection_retro" #!String
+    RetroBookcase: "RetroBookcase/bookcase/2 3/2 1/1/999/-1/[LocalizedText Strings\\Furniture:RetroBookcase]/11/TileSheets\\retro_furniture/true/collection_retro" #!String
+    RetroFireplace: "RetroFireplace/fireplace/-1/-1/1/999/-1/[LocalizedText Strings\\Furniture:RetroFireplace]/52/TileSheets\\retro_furniture/true/collection_retro" #!String
+    RetroCouch: "RetroCouch/couch/-1/-1/4/999/-1/[LocalizedText Strings\\Furniture:RetroCouch]/54/TileSheets\\retro_furniture/true/collection_retro" #!String
+    RetroCushion: "RetroCushion/rug/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:RetroCushion]/46/TileSheets\\retro_furniture/true/collection_retro" #!String
+    DarkRetroCushion: "DarkRetroCushion/rug/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:DarkRetroCushion]/45/TileSheets\\retro_furniture/true/collection_retro" #!String
+    RetroStool: "RetroStool/chair/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:RetroStool]/47/TileSheets\\retro_furniture/true/collection_retro" #!String
+    RetroFlower: "RetroFlower/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:RetroFlower]/48/TileSheets\\retro_furniture/true/collection_retro" #!String
+    RetroChair: "RetroChair/chair/-1/-1/4/999/-1/[LocalizedText Strings\\Furniture:RetroChair]/49/TileSheets\\retro_furniture/true/collection_retro" #!String
+    RetroTable: "RetroTable/table/2 3/2 2/1/999/-1/[LocalizedText Strings\\Furniture:RetroTable]/75/TileSheets\\retro_furniture/true/collection_retro" #!String
+    RetroPlant: "RetroPlant/decor/1 2/1 1/1/999/-1/[LocalizedText Strings\\Furniture:RetroPlant]/77/TileSheets\\retro_furniture/true/collection_retro" #!String
+    RetroEndTable: "RetroEndTable/table/1 2/1 1/2/999/-1/[LocalizedText Strings\\Furniture:RetroEndTable]/93/TileSheets\\retro_furniture/true/collection_retro" #!String
+    RetroTeaTable: "RetroTeaTable/decor/2 2/2 2/1/999/-1/[LocalizedText Strings\\Furniture:RetroTeaTable]/95/TileSheets\\retro_furniture/true/collection_retro" #!String
+    RetroCatalogue: "RetroCatalogue/decor/1 2/1 1/1/999/-1/[LocalizedText Strings\\Furniture:RetroCatalogue]/97/TileSheets\\retro_furniture/true" #!String
+    RetroCabinet: "RetroCabinet/decor/2 2/2 1/1/999/-1/[LocalizedText Strings\\Furniture:RetroCabinet]/98/TileSheets\\retro_furniture/true/collection_retro" #!String
+    RetroRadio: "RetroRadio/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:RetroRadio]/100/TileSheets\\retro_furniture/true/collection_retro" #!String
+    RetroBanner: "RetroBanner/painting/1 3/1 3/1/999/-1/[LocalizedText Strings\\Furniture:RetroBanner]/103/TileSheets\\retro_furniture/true/collection_retro" #!String
+    Groovy: "Groovy/painting/3 2/3 2/1/999/-1/[LocalizedText Strings\\Furniture:Groovy]/113/TileSheets\\retro_furniture/true/collection_retro" #!String
+    RetroLamp: "RetroLamp/lamp/1 3/1 1/1/999/-1/[LocalizedText Strings\\Furniture:RetroLamp]/117/TileSheets\\retro_furniture/true/collection_retro" #!String
+    RetroRug: "RetroRug/rug/-1/-1/2/999/-1/[LocalizedText Strings\\Furniture:RetroRug]/119/TileSheets\\retro_furniture/true/collection_retro" #!String
+    RetroSquareRug: "RetroSquareRug/rug/2 2/2 2/1/999/-1/[LocalizedText Strings\\Furniture:RetroSquareRug]/124/TileSheets\\retro_furniture/true/collection_retro" #!String
+    RetroMat: "RetroMat/rug/2 1/2 1/1/999/-1/[LocalizedText Strings\\Furniture:RetroMat]/150/TileSheets\\retro_furniture/true/collection_retro" #!String
+    LargeRetroRug: "LargeRetroRug/rug/4 3/4 3/1/999/-1/[LocalizedText Strings\\Furniture:LargeRetroRug]/139/TileSheets\\retro_furniture/true/collection_retro" #!String
+    Abstract: "Abstract/painting/2 2/2 2/1/999/-1/[LocalizedText Strings\\Furniture:Abstract]/156/TileSheets\\retro_furniture/true/collection_retro" #!String
+    Starship: "Starship/painting/3 2/3 2/1/999/-1/[LocalizedText Strings\\Furniture:Starship]/158/TileSheets\\retro_furniture/true/collection_retro" #!String
+    Binary: "Binary/painting/1 2/1 2/1/999/-1/[LocalizedText Strings\\Furniture:Binary]/161/TileSheets\\retro_furniture/true/collection_retro" #!String
+    Checkers: "Checkers/painting/1 2/1 2/1/999/-1/[LocalizedText Strings\\Furniture:Checkers]/162/TileSheets\\retro_furniture/true/collection_retro" #!String
+    UFO: "UFO/painting/2 2/2 2/1/999/-1/[LocalizedText Strings\\Furniture:UFO]/163/TileSheets\\retro_furniture/true/collection_retro" #!String
+    DecorativeRetroDoor: "DecorativeRetroDoor/painting/2 3/2 3/1/999/-1/[LocalizedText Strings\\Furniture:DecorativeRetroDoor]/178/TileSheets\\retro_furniture/true/collection_retro" #!String
+    DecorativeDoor1: "DecorativeDoor1/painting/2 3/2 3/1/5000/-1/[LocalizedText Strings\\Furniture:DecorativeDoor1]/0/TileSheets\\furniture_3" #!String
+    DecorativeDoor2: "DecorativeDoor2/painting/2 3/2 3/1/5000/-1/[LocalizedText Strings\\Furniture:DecorativeDoor2]/2/TileSheets\\furniture_3" #!String
+    DecorativeDoor3: "DecorativeDoor3/painting/2 3/2 3/1/5000/-1/[LocalizedText Strings\\Furniture:DecorativeDoor3]/4/TileSheets\\furniture_3" #!String
+    DecorativeDoor4: "DecorativeDoor4/painting/2 3/2 3/1/5000/-1/[LocalizedText Strings\\Furniture:DecorativeDoor4]/6/TileSheets\\furniture_3" #!String
+    DecorativeDoor5: "DecorativeDoor5/painting/2 3/2 3/1/5000/-1/[LocalizedText Strings\\Furniture:DecorativeDoor5]/8/TileSheets\\furniture_3" #!String
+    DecorativeDoor6: "DecorativeDoor6/painting/2 3/2 3/1/5000/-1/[LocalizedText Strings\\Furniture:DecorativeDoor6]/10/TileSheets\\furniture_3" #!String
+    WallClock: "WallClock/painting/1 2/1 2/1/2500/-1/[LocalizedText Strings\\Furniture:WallClock]/12/TileSheets\\furniture_3" #!String
+    DecorativeHatch: "DecorativeHatch/decor/1 1/1 1/1/1000/-1/[LocalizedText Strings\\Furniture:DecorativeHatch]/38/TileSheets\\furniture_3" #!String
+    DecorativeOakLadder: "DecorativeOakLadder/painting/1 3/1 3/1/2500/-1/[LocalizedText Strings\\Furniture:DecorativeOakLadder]/39/TileSheets\\furniture_3" #!String
+    DecorativeWalnutLadder: "DecorativeWalnutLadder/painting/1 3/1 3/1/2500/-1/[LocalizedText Strings\\Furniture:DecorativeWalnutLadder]/40/TileSheets\\furniture_3" #!String
+    UprightPiano: "UprightPiano/decor/4 3/4 1/1/999/-1/[LocalizedText Strings\\Furniture:UprightPiano]/41/TileSheets\\furniture_3/true" #!String
+    CoatStand: "CoatStand/decor/1 3/1 1/1/999/-1/[LocalizedText Strings\\Furniture:CoatStand]/45/TileSheets\\furniture_3/true" #!String
+    BirdHouse: "BirdHouse/decor/1 3/1 1/1/999/1/[LocalizedText Strings\\Furniture:BirdHouse]/46/TileSheets\\furniture_3/true" #!String
+    DecorativeShovel: "DecorativeShovel/painting/1 3/1 3/1/2000/-1/[LocalizedText Strings\\Furniture:DecorativeShovel]/47/TileSheets\\furniture_3" #!String
+    WallSword: "WallSword/painting/1 3/1 3/1/999/-1/[LocalizedText Strings\\Furniture:WallSword]/48/TileSheets\\furniture_3/true" #!String
+    DecorativeSword: "DecorativeSword/decor/3 2/3 1/1/999/-1/[LocalizedText Strings\\Furniture:DecorativeSword]/49/TileSheets\\furniture_3/true" #!String
+    WineTable: "WineTable/decor/3 2/3 1/1/4000/-1/[LocalizedText Strings\\Furniture:WineTable]/75/TileSheets\\furniture_3" #!String
+    SpiritsTable: "SpiritsTable/decor/3 2/3 1/1/4000/-1/[LocalizedText Strings\\Furniture:SpiritsTable]/101/TileSheets\\\\furniture_3" #!String
+    TallHousePlant: "TallHousePlant/decor/1 3/1 1/1/1000/-1/[LocalizedText Strings\\Furniture:TallHousePlant]/78/TileSheets\\furniture_3" #!String
+    CornPlant: "CornPlant/decor/1 3/1 1/1/1000/-1/[LocalizedText Strings\\Furniture:CornPlant]/79/TileSheets\\furniture_3" #!String
+    BlueCushion: "BlueCushion/rug/1 1/1 1/1/500/-1/[LocalizedText Strings\\Furniture:BlueCushion]/80/TileSheets\\furniture_3" #!String
+    YellowCushion: "YellowCushion/rug/1 1/1 1/1/500/-1/[LocalizedText Strings\\Furniture:YellowCushion]/81/TileSheets\\furniture_3" #!String
+    GreenCushion: "GreenCushion/rug/1 1/1 1/1/500/-1/[LocalizedText Strings\\Furniture:GreenCushion]/82/TileSheets\\furniture_3" #!String
+    RedCushion: "RedCushion/rug/1 1/1 1/1/500/-1/[LocalizedText Strings\\Furniture:RedCushion]/83/TileSheets\\furniture_3" #!String
+    BrownCushion: "BrownCushion/rug/1 1/1 1/1/500/-1/[LocalizedText Strings\\Furniture:BrownCushion]/84/TileSheets\\furniture_3" #!String
+    BlackCushion: "BlackCushion/rug/1 1/1 1/1/500/-1/[LocalizedText Strings\\Furniture:BlackCushion]/85/TileSheets\\furniture_3" #!String
+    FoodPetBowl: "FoodPetBowl/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:FoodPetBowl]/86/TileSheets\\furniture_3/true" #!String
+    WaterPetBowl: "WaterPetBowl/decor/1 1/1 1/1/999/-1/[LocalizedText Strings\\Furniture:WaterPetBowl]/87/TileSheets\\furniture_3/true" #!String
+    OakLampEndTable: "OakLampEndTable/lamp/1 2/1 1/1/2000/-1/[LocalizedText Strings\\Furniture:OakLampEndTable]/93/TileSheets\\furniture_3" #!String
+    WalnutLampEndTable: "WalnutLampEndTable/lamp/1 2/1 1/1/2000/-1/[LocalizedText Strings\\Furniture:WalnutLampEndTable]/95/TileSheets\\furniture_3" #!String
+    BirchLampEndTable: "BirchLampEndTable/lamp/1 2/1 1/1/2000/-1/[LocalizedText Strings\\Furniture:BirchLampEndTable]/97/TileSheets\\furniture_3" #!String
+    MahoganyLampEndTable: "MahoganyLampEndTable/lamp/1 2/1 1/1/3000/-1/[LocalizedText Strings\\Furniture:MahoganyLampEndTable]/99/TileSheets\\furniture_3" #!String
+    TriangleWindow: "TriangleWindow/window/-1/-1/1/800/-1/[LocalizedText Strings\\Furniture:TriangleWindow]/117/TileSheets\\furniture_3" #!String
+    Clothesline: "Clothesline/decor/3 2/3 1/1/999/1/[LocalizedText Strings\\Furniture:Clothesline]/119/TileSheets\\furniture_3/true" #!String
+    TrashCatalogue: "TrashCatalogue/decor/1 2/1 1/1/999/-1/[LocalizedText Strings\\Furniture:TrashCatalogue]/122/TileSheets\\furniture_3/true" #!String
+    ElegantVase: "ElegantVase/decor/1 2/1 1/1/5000/-1/[LocalizedText Strings\\Furniture:ElegantVase]/123/TileSheets\\furniture_3" #!String
+    CatTree: "CatTree/decor/2 3/2 1/1/999/-1/[LocalizedText Strings\\Furniture:CatTree]/124/TileSheets\\furniture_3/true" #!String
+    DarkCatTree: "DarkCatTree/decor/2 3/2 1/1/999/-1/[LocalizedText Strings\\Furniture:DarkCatTree]/126/TileSheets\\furniture_3/true" #!String
+    LightSwitch: "LightSwitch/painting/1 2/1 2/1/600/-1/[LocalizedText Strings\\Furniture:LightSwitch]/128/TileSheets\\furniture_3" #!String
+    Outlet: "Outlet/painting/1 3/1 3/1/600/-1/[LocalizedText Strings\\Furniture:Outlet]/129/TileSheets\\furniture_3" #!String
+    Doghouse: "Doghouse/decor/3 3/3 1/1/999/1/[LocalizedText Strings\\Furniture:Doghouse]/163/TileSheets\\furniture_3/true" #!String
+    DarkDoghouse: "DarkDoghouse/decor/3 3/3 1/1/999/1/[LocalizedText Strings\\Furniture:DarkDoghouse]/166/TileSheets\\furniture_3/true" #!String
+    BountifulDiningTable: "BountifulDiningTable/long table/-1/-1/2/10000/-1/[LocalizedText Strings\\Furniture:BountifulDiningTable]/143/TileSheets\\furniture_3" #!String
+    PlasticLawnEndTable: "PlasticLawnEndTable/decor/1 2/1 1/1/999/2/[LocalizedText Strings\\Furniture:PlasticLawnEndTable]/202/TileSheets\\furniture_3/true/collection_trash" #!String
+    PlasticLawnChair: "PlasticLawnChair/chair/-1/-1/4/999/2/[LocalizedText Strings\\Furniture:PlasticLawnChair]/203/TileSheets\\furniture_3/true/collection_trash" #!String
+    BrokenTelevision: "BrokenTelevision/decor/2 2/2 1/1/999/2/[LocalizedText Strings\\Furniture:BrokenTelevision]/206/TileSheets\\furniture_3/true/collection_trash" #!String
+    SixPackRings: "SixPackRings/rug/1 1/1 1/1/999/2/[LocalizedText Strings\\Furniture:SixPackRings]/184/TileSheets\\furniture_3/true/collection_trash" #!String
+    GreenBottle: "GreenBottle/rug/1 1/1 1/1/999/2/[LocalizedText Strings\\Furniture:GreenBottle]/185/TileSheets\\furniture_3/true/collection_trash" #!String
+    PlasticBag: "PlasticBag/decor/1 1/1 1/1/999/2/[LocalizedText Strings\\Furniture:PlasticBag]/186/TileSheets\\furniture_3/true/collection_trash" #!String
+    AluminumCan: "AluminumCan/rug/1 1/1 1/1/999/2/[LocalizedText Strings\\Furniture:AluminumCan]/197/TileSheets\\furniture_3/true/collection_trash" #!String
+    BlueBottle: "BlueBottle/rug/1 1/1 1/1/999/2/[LocalizedText Strings\\Furniture:BlueBottle]/198/TileSheets\\furniture_3/true/collection_trash" #!String
+    BuriedTire: "BuriedTire/decor/1 1/1 1/2/999/1/[LocalizedText Strings\\Furniture:BuriedTire]/212/TileSheets\\furniture_3/true/collection_trash" #!String
+    Tire: "Tire/decor/1 1/1 1/1/999/2/[LocalizedText Strings\\Furniture:Tire]/199/TileSheets\\furniture_3/true/collection_trash" #!String
+    Wrapper: "Wrapper/rug/1 1/1 1/1/999/2/[LocalizedText Strings\\Furniture:Wrapper]/210/TileSheets\\furniture_3/true/collection_trash" #!String
+    SpilledBeverage: "SpilledBeverage/rug/1 1/1 1/1/999/2/[LocalizedText Strings\\Furniture:SpilledBeverage]/211/TileSheets\\furniture_3/true/collection_trash" #!String
+    MessyShirt: "MessyShirt/rug/1 1/1 1/1/999/2/[LocalizedText Strings\\Furniture:MessyShirt]/224/TileSheets\\furniture_3/true/collection_trash" #!String
+    MessyShorts: "MessyShorts/rug/1 1/1 1/1/999/2/[LocalizedText Strings\\Furniture:MessyShorts]/225/TileSheets\\furniture_3/true/collection_trash" #!String
+    MoldyCouch: "MoldyCouch/couch/-1/-1/4/999/2/[LocalizedText Strings\\Furniture:MoldyCouch]/226/TileSheets\\furniture_3/true/collection_trash" #!String
+    FancyTree1: "Fancy House Plant/decor/2 3/2 1/1/500/-1/[LocalizedText Strings\\Furniture:FancyHousePlant]/182/TileSheets\\furniture_3/true" #!String
+    FancyTree2: "Fancy House Plant/decor/2 3/2 1/1/500/-1/[LocalizedText Strings\\Furniture:FancyHousePlant]/221/TileSheets\\furniture_3/true" #!String
+    FancyTree3: "Fancy House Plant/decor/2 3/2 1/1/500/-1/[LocalizedText Strings\\Furniture:FancyHousePlant]/260/TileSheets\\furniture_3/true" #!String
+    FancyHousePlant3: "House Plant/decor/1 2/1 1/1/250/-1/[LocalizedText Strings\\Furniture:HousePlant]/262/TileSheets\\furniture_3/true" #!String
+    FancyHousePlant1: "House Plant/decor/1 2/1 1/1/250/-1/[LocalizedText Strings\\Furniture:HousePlant]/263/TileSheets\\furniture_3/true" #!String
+    FancyHousePlant2: "House Plant/decor/1 2/1 1/1/250/-1/[LocalizedText Strings\\Furniture:HousePlant]/264/TileSheets\\furniture_3/true" #!String
+    FancyHousePlant4: "House Plant/decor/1 2/1 1/1/250/-1/[LocalizedText Strings\\Furniture:HousePlant]/269/TileSheets\\furniture_3/true" #!String
+    FancyHousePlant5: "House Plant/decor/1 2/1 1/1/250/-1/[LocalizedText Strings\\Furniture:HousePlant]/270/TileSheets\\furniture_3/true" #!String
+    PigPainting: "Pig Painting/painting/3 2/3 2/1/500/-1/[LocalizedText Strings\\Furniture:PigPainting]/93/TileSheets\\furniture_2/true" #!String
+    MidnightBeachBed: "Midnight Beach Bed/bed/2 4/2 3/1/5000/-1/[LocalizedText Strings\\Furniture:MidnightBed]/299/TileSheets\\furniture_3/true" #!String
+    MidnightBeachDoubleBed: "Midnight Beach Double Bed/bed double/3 4/3 3/1/5000/-1/[LocalizedText Strings\\Furniture:MidnightDoubleBed]/303/TileSheets\\furniture_3/true" #!String
+    DarkPiano: "Dark Piano/decor/4 3/4 1/1/999/-1/[LocalizedText Strings\\Furniture:DarkPiano]/265/TileSheets\\furniture_3/true" #!String
+

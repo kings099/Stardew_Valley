@@ -1,0 +1,610 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    DarkPiano: "Dunkles Klavier" #!String
+    OakChair: "Eichenstuhl" #!String
+    WalnutChair: "Walnussstuhl" #!String
+    BirchChair: "Birkenstuhl" #!String
+    MahoganyChair: "Mahagonistuhl" #!String
+    RedDinerChair: "Roter Imbissstuhl" #!String
+    BlueDinerChair: "Blauer Imbissstuhl" #!String
+    CountryChair: "Ländlicher Stuhl" #!String
+    BreakfastChair: "Frühstücksstuhl" #!String
+    PinkOfficeChair: "Pinker Bürosessel" #!String
+    PurpleOfficeChair: "Violetter Bürosessel" #!String
+    GreenOfficeStool: "Grüner Bürohocker" #!String
+    OrangeOfficeStool: "Orangefarbener Bürohocker" #!String
+    DarkThrone: "Dunkler Thron" #!String
+    DiningChair: "Essstuhl" #!String
+    GreenPlushSeat: "Grüner Plüschstuhl" #!String
+    PinkPlushSeat: "Pinker Plüschstuhl" #!String
+    WinterChair: "Winterstuhl" #!String
+    GroovyChair: "Kultiger Stuhl" #!String
+    CuteChair: "Niedlicher Stuhl" #!String
+    StumpSeat: "Stamm-Sessel" #!String
+    MetalChair: "Metallstuhl" #!String
+    GreenStool: "Grüner Hocker" #!String
+    BlueStool: "Blauer Hocker" #!String
+    KingChair: "Königsstuhl" #!String
+    CrystalChair: "Kristallstuhl" #!String
+    OakBench: "Eichenbank" #!String
+    WalnutBench: "Walnussbank" #!String
+    BirchBench: "Birkenbank" #!String
+    MahoganyBench: "Mahagonibank" #!String
+    ModernBench: "Moderne Bank" #!String
+    BlueArmchair: "Blauer Sessel" #!String
+    RedArmchair: "Roter Sessel" #!String
+    GreenArmchair: "Grüner Sessel" #!String
+    YellowArmchair: "Gelber Sessel" #!String
+    BrownArmchair: "Brauner Sessel" #!String
+    BlueCouch: "Blaue Couch" #!String
+    RedCouch: "Rote Couch" #!String
+    GreenCouch: "Grüne Couch" #!String
+    YellowCouch: "Gelbe Couch" #!String
+    BrownCouch: "Braune Couch" #!String
+    DarkCouch: "Dunkle Couch" #!String
+    WizardCouch: "Zauberer-Couch" #!String
+    WoodsyCouch: "Holzige Couch" #!String
+    OakDresser: "Eichenkommode" #!String
+    WalnutDresser: "Walnusskommode" #!String
+    BirchDresser: "Birkenkommode" #!String
+    MahoganyDresser: "Mahagonikommode" #!String
+    CoffeeTable: "Kaffeetisch" #!String
+    StoneSlab: "Steinplatte" #!String
+    WinterDiningTable: "Winter-Esstisch" #!String
+    FestiveDiningTable: "Festlicher Esstisch" #!String
+    MahoganyDiningTable: "Mahagoni-Esstisch" #!String
+    ModernDiningTable: "Moderner Esstisch" #!String
+    OakTable: "Eichentisch" #!String
+    WalnutTable: "Walnusstisch" #!String
+    BirchTable: "Birkentisch" #!String
+    MahoganyTable: "Mahagonitisch" #!String
+    SunTable: "Sonnentisch" #!String
+    MoonTable: "Mondtisch" #!String
+    ModernTable: "Moderner Tisch" #!String
+    PubTable: "Kneipentisch" #!String
+    LuxuryTable: "Luxuriöser Tisch" #!String
+    DivinerTable: "Wahrsagertisch" #!String
+    NeolithicTable: "Neolithischer Tisch" #!String
+    PuzzleTable: "Puzzletisch" #!String
+    WinterTable: "Wintertisch" #!String
+    CandyTable: "Süßigkeitentisch" #!String
+    LuauTable: "Luau-Tisch" #!String
+    DarkTable: "Dunkler Tisch" #!String
+    OakTeaTable: "Eichenteetisch" #!String
+    WalnutTeaTable: "Walnussteetisch" #!String
+    BirchTeaTable: "Birkenteetisch" #!String
+    MahoganyTeaTable: "Mahagoniteetisch" #!String
+    ModernTeaTable: "Moderner Teetisch" #!String
+    FurnitureCatalogue: "Möbelkatalog" #!String
+    ChinaCabinet: "Porzellanschrank" #!String
+    ArtistBookcase: "Künstler-Bücherregal" #!String
+    LuxuryBookcase: "Luxuriöses Bücherregal" #!String
+    ModernBookcase: "Modernes Bücherregal" #!String
+    DarkBookcase: "Dunkles Bücherregal" #!String
+    CeramicPillar: "Keramiksäule" #!String
+    GoldPillar: "Goldsäule" #!String
+    IndustrialPipe: "Industrierohr" #!String
+    IndoorPalm: "Zimmerpalme" #!String
+    TotemPole: "Totempfahl" #!String
+    ManicuredPine: "Gepflegte Kiefer" #!String
+    TopiaryTree: "Formschnitt-Baum" #!String
+    StandingGeode: "Stehende Geode" #!String
+    ObsidianVase: "Obsidian-Vase" #!String
+    SingingStone: "Singender Stein" #!String
+    SlothSkeletonL: "Faultier-Skelett L" #!String
+    SlothSkeletonM: "Faultier-Skelett M" #!String
+    SlothSkeletonR: "Faultier-Skelett R" #!String
+    Skeleton: "Skelett" #!String
+    ChickenStatue: "Hühnerstatue" #!String
+    LeahsSculpture: "Leahs Skulptur" #!String
+    DriedSunflowers: "Getrocknete Sonnenblumen" #!String
+    Catalogue: "Katalog" #!String
+    SamsBoombox: "Sam's Kassettenspieler" #!String
+    SmallPlant: "Kleine Pflanze" #!String
+    TablePlant: "Tischpflanze" #!String
+    DecorativeBowl: "Dekorative Schale" #!String
+    FutanBear: "Futan-Bär" #!String
+    Globe: "Globus" #!String
+    ModelShip: "Modellschiff" #!String
+    SmallCrystal: "Kleiner Kristall" #!String
+    DecorativeLantern: "Dekorative Laterne" #!String
+    HousePlant: "Hauspflanze" #!String
+    OakEndTable: "Eichenbeistelltisch" #!String
+    WalnutEndTable: "Walnussbeistelltisch" #!String
+    BirchEndTable: "Birkenbeistelltisch" #!String
+    MahoganyEndTable: "Mahagonibeistelltisch" #!String
+    ModernEndTable: "Moderner Beistelltisch" #!String
+    GrandmotherEndTable: "Großmütterlicher Beistelltisch" #!String
+    WinterEndTable: "Winter-Beistelltisch" #!String
+    Calendar: "Kalender" #!String
+    TreeoftheWinterStar: "Baum des Wintersterns" #!String
+    CountryLamp: "Ländliche Lampe" #!String
+    BoxLamp: "Rechteckige Lampe" #!String
+    ModernLamp: "Moderne Lampe" #!String
+    ClassicLamp: "Klassische Lampe" #!String
+    RedRug: "Roter Vorleger" #!String
+    PatchworkRug: "Patchwork-Vorleger" #!String
+    DarkRug: "Dunkler Vorleger" #!String
+    BudgetTV: "Billig-Fernseher" #!String
+    PlasmaTV: "Plasma-TV" #!String
+    TheMuzzamaroo: "\"Der Muzzamaroo\"" #!String
+    ANightOnEcoHill: "\"Eine Nacht auf den Eco-Hügeln\"" #!String
+    Pathways: "\"Pfade\"" #!String
+    BurntOffering: "\"Verbrannte Opfergabe\"" #!String
+    QueenoftheGemSea: "\"Königin der Edelsteinsee\"" #!String
+    VanillaVilla: "\"Vanilla Villa\"" #!String
+    PrimalMotion: "\"Urbewegung\"" #!String
+    JadeHills: "\"Jade-Hügel\"" #!String
+    Sun44: "\"Sonne #44\"" #!String
+    WallflowerPal: "Mauerblümchen-Freund" #!String
+    Spires: "\"Spitzen\"" #!String
+    Highway89: "\"Highway 89\"" #!String
+    CalicoFalls: "Calico-Wasserfall" #!String
+    NeedlepointFlower: "Nadelspitzenblume" #!String
+    SkullPoster: "Totenkopf-Poster" #!String
+    Sun45: "\"Sonne #45\"" #!String
+    LittleTree: "\"Kleiner Baum\"" #!String
+    Blueberries: "\"Blaubeeren\"" #!String
+    BlueCity: "\"Blaue Stadt\"" #!String
+    LittlePhotos: "Kleine Fotos" #!String
+    DancingGrass: "\"Tanzendes Gras\"" #!String
+    VGAParadise: "\"VGA-Paradies\"" #!String
+    JColaLight: "J.-Cola Light" #!String
+    Kitemaster95: "\"Winddrachenmeister '95\"" #!String
+    BasicWindow: "Einfaches Fenster" #!String
+    SmallWindow: "Kleines Fenster" #!String
+    RedCottageRug: "Roter Hüttenvorleger" #!String
+    GreenCottageRug: "Grüner Hüttenvorleger" #!String
+    MonsterRug: "Monster-Teppich" #!String
+    BoardedWindow: "Vernageltes Fenster" #!String
+    MysticRug: "Mystischer Vorleger" #!String
+    LgFutanBear: "Gr. Futan-Bär" #!String
+    JunimoPlush: "Plüsch-Junimo" #!String
+    BearStatue: "Bärenstatue" #!String
+    Porthole: "Bullauge" #!String
+    Anchor: "Anker" #!String
+    WorldMap: "Weltkarte" #!String
+    OrnateWindow: "Verziertes Fenster" #!String
+    FloorTV: "Fernseher" #!String
+    CarvedWindow: "Geschnitztes Fenster" #!String
+    NauticalRug: "Nautischer Teppich" #!String
+    BurlapRug: "Leinen-Teppich" #!String
+    TreeColumn: "Baumsäule" #!String
+    LLightString: "Lichterkette" #!String
+    SPine: "Kleiner Kiefernbaum" #!String
+    BonsaiTree: "Bonsai-Baum" #!String
+    MetalWindow: "Metallfenster" #!String
+    CandleLamp: "Kerzenlampe" #!String
+    MinersCrest: "Bergarbeiter-Wappen" #!String
+    BambooMat: "Bambusmatte" #!String
+    OrnateLamp: "Verzierte Lampe" #!String
+    WoodcutRug: "Holzschnitt-Teppich" #!String
+    HangingShield: "Schild zum Aufhängen" #!String
+    MonsterDanglers: "Monster-Aufhänger" #!String
+    CeilingFlags: "Deckenfahnen" #!String
+    RedEagle: "'Roter Adler'" #!String
+    PortraitOfAMermaid: "'Portrait einer Meerjungfrau'" #!String
+    SolarKingdom: "'Sonnenkönigreich'" #!String
+    Clouds: "'Wolken'" #!String
+    1000YearsFromNow: "'1000 Jahre von heute'" #!String
+    ThreeTrees: "'Drei Bäume'" #!String
+    TheSerpent: "'Die Schlange'" #!String
+    TropicalFish173: "'Tropischer Fisch Nr. 173'" #!String
+    LandOfClay: "'Land des Lehms'" #!String
+    BrickFireplace: "Ziegelkamin" #!String
+    StoneFireplace: "Steinkamin" #!String
+    IridiumFireplace: "Iridiumkamin" #!String
+    StoveFireplace: "Ofenkamin" #!String
+    MonsterFireplace: "Monster-Kamin" #!String
+    MyFirstPainting: "Mein erstes Gemälde" #!String
+    ElegantFireplace: "Eleganter Kamin" #!String
+    PirateFlag: "Piratenflagge " #!String
+    PirateRug: "Piratenteppich" #!String
+    BoneRug: "Knochenteppich" #!String
+    ButterflyHutch: "Schmetterlingsstall" #!String
+    StrawberryDecal: "Erdbeer Aufkleber" #!String
+    FruitSaladRug: "Obstsalat Teppich" #!String
+    NightSkyDecal1: "Nachthimmel Aufkleber" #!String
+    SnowyRug: "Schnee Teppich" #!String
+    NightSkyDecal2: "Nachthimmel Aufkleber #2" #!String
+    NightSkyDecal3: "Nachthimmel Aufkleber #3" #!String
+    TheBraveLittleSapling: "\"Das mutige kleine Bäumchen\"" #!String
+    Mysterium: "\"Mysterium\"" #!String
+    JourneyOfThePrairieKingTheMotionPicture: "\"Die Reise des Prärie Königs: Der Film\"" #!String
+    Wumbus: "\"Wumbus\"" #!String
+    TheZuzuCityExpress: "\"Der Zuzu City Express\"" #!String
+    TheMiracleAtColdstarRanch: "\"Das Wunder auf der Coldstar Ranch\"" #!String
+    NaturalWondersExploringOurVibrantWorld: "\"Natürliche Wunder:Erkundung unserer lebhaften Welt\"" #!String
+    ItHowlsInTheRain: "\"Das Geheul im Regen\"" #!String
+    IndoorHangingBasket: "Indoor Hängekorb" #!String
+    WinterTreeDecal: "Winter Baum Aufkleber" #!String
+    SmallJunimoPlush: "Kleines Junimo Plüschtier" #!String
+    FutanRabbit: "Futan Kaninchen" #!String
+    WumbusStatue: "Wumbus Statue" #!String
+    BoboStatue: "Bobo Statue" #!String
+    PurpleSerpentStatue: "Lila Schlangenstatue" #!String
+    GreenSerpentStatue: "Grüne Schlangenstatue" #!String
+    LongPalm: "Lange Palme" #!String
+    LongCactus: "Langer Kaktus" #!String
+    ExoticTree: "Exotischer Baum" #!String
+    DeluxeTree: "Deluxe Baum" #!String
+    WallPumpkin: "Wand Kürbis" #!String
+    SmallWallPumpkin: "Kleiner Wand Kürbis" #!String
+    Bed: "Bett" #!String
+    DoubleBed: "Doppelbett" #!String
+    StarryDoubleBed: "Sternenförmiges Doppelbett" #!String
+    StrawberryDoubleBed: "Erdbeer-Doppelbett" #!String
+    PirateDoubleBed: "Piraten-Doppelbett" #!String
+    ChildBed: "Kinderbett" #!String
+    TropicalBed: "Tropisches Bett" #!String
+    TropicalDoubleBed: "Tropisches Doppelbett" #!String
+    DeluxeRedDoubleBed: "Rotes Deluxe-Doppelbett" #!String
+    ModernDoubleBed: "Modernes Doppelbett" #!String
+    LargeFishTank: "Großes Aquarium" #!String
+    DeluxeFishTank: "Deluxe-Aquarium" #!String
+    SmallFishTank: "Kleines Aquarium" #!String
+    OceanicRug: "Ozeanischer Teppich" #!String
+    TropicalTV: "Tropisches TV" #!String
+    VolcanoPhoto: "'Vulkan' Foto" #!String
+    JungleTorch: "Dschungel-Fackel" #!String
+    PalmWallOrnament: "Palmwand Ornament" #!String
+    TropicalChair: "Tropischer Stuhl" #!String
+    AquaticSanctuary: "Wasserparadies" #!String
+    ModernFishTank: "Modernes Aquarium" #!String
+    WildDoubleBed: "Wildes Doppelbett" #!String
+    FisherDoubleBed: "Angler Doppelbett" #!String
+    BirchDoubleBed: "Birken Doppelbett" #!String
+    ExoticDoubleBed: "Exotisches Doppelbett" #!String
+    Lifesaver: "Rettungsring" #!String
+    FoliagePrint: "Pflanzen Druck" #!String
+    Boat: "\"Boot\"" #!String
+    Vista: "\"Landschaft\"" #!String
+    WallBasket: "Wand-Pflanzenkorb" #!String
+    DecorativeTrashCan: "Dekorativer Mülleimer" #!String
+    IridiumKrobus: "Iridium-Krobus" #!String
+    GourmandStatue: "Statue des Vielfraßes" #!String
+    PyramidDecal: "Pyramidenaufkleber" #!String
+    PlainTorch: "Einfache Fackel" #!String
+    StumpTorch: "Baumstumpf Fackel" #!String
+    WallFlower: "Wandblume" #!String
+    SWallFlower: "Kleine Wandblume" #!String
+    CloudsBanner: "Wolkenbanner" #!String
+    ColorfulSet: "Bunte Gemälde" #!String
+    PastelBanner: "Pastell Banner" #!String
+    WinterBanner: "Winterbanner" #!String
+    MoonlightJelliesBanner: "Mondlichtquallen Banner" #!String
+    JungleDecal: "Dschungelaufkleber" #!String
+    StarportDecal: "Raumschiffaufkleber" #!String
+    DecorativePitchfork: "Dekorative Heugabel" #!String
+    WoodPanel: "Holztafel" #!String
+    DecorativeAxe: "Dekorative Axt" #!String
+    LogPanel: "Baumstamm Tafel" #!String
+    CeilingLeaves: "Decken-Blätter" #!String
+    CloudDecal: "Wolkenaukleber" #!String
+    FloorDividerR: "Bodentrenner R" #!String
+    FloorDividerL: "Bodentrenner L" #!String
+    LightGreenRug: "Hellgrüner Teppich" #!String
+    JadeHillsExtended: "\"Jade-Hügel Erweitert\"" #!String
+    LargeBrownCouch: "Große braune Couch" #!String
+    LargeGreenRug: "Großer grüner Teppich" #!String
+    IcyRug: "Eisteppich" #!String
+    OldWorldRug: "Rustikaler Teppich" #!String
+    LargeRedRug: "Großer roter Teppich" #!String
+    FrozenDreams: "\"Gefrorene Träume\"" #!String
+    IcyBanner: "Eisbanner" #!String
+    WallPalm: "Palmenaufkleber" #!String
+    WallCactus: "Kaktusaufkleber" #!String
+    LargeCottageRug: "Großer Hüttenvorleger" #!String
+    Physics101: "\"Physik 101\"" #!String
+    WallSconce: "Wandleuchte" #!String
+    BlossomRug: "Blütenteppich" #!String
+    FunkyRug: "Funky Teppich" #!String
+    ModernRug: "Moderner Teppich" #!String
+    SquirrelFigurine: "Eichhörnchenfigur" #!String
+    Cactus: "Kaktus" #!String
+    HangingFish: "Hängender Fisch" #!String
+    RetroTV: "Retro TV" #!String
+    ArtPhoto: "Kunst Foto" #!String
+    ArtPhoto2: "Kunst Foto 2" #!String
+    ShortBookcase: "Kleiner Bücherregal" #!String
+    PierresSign: "Pierres Zeichen" #!String
+    SamsSkateboard: "Sams Skateboard" #!String
+    ChickenDecal: "Huhn Abziehbild" #!String
+    ExoticPalace: "Exotischer Palast" #!String
+    PeriodicTable: "Periodensystem" #!String
+    DustySkull: "Staubiger Schädel" #!String
+    RadioDesk: "Funksprechstelle" #!String
+    ModelPlanes: "Modellflugzeuge" #!String
+    CalicoStatue: "Calico-Statue" #!String
+    SunDunes: "Sonnendünen" #!String
+    DesertTable: "Wüstentisch" #!String
+    DesertChair: "Wüstenstuhl" #!String
+    DesertFireplace: "Wüstenkamin" #!String
+    SandyRug: "Sandteppich" #!String
+    DesertRug: "Wüstenteppich" #!String
+    DesertEndTable: "Wüstenbeistelltisch" #!String
+    DesertFlags: "Wüstenflaggen" #!String
+    DecorativeBarrel: "Dekoratives Fass" #!String
+    MountedTrout: "Befestigte Forelle" #!String
+    SquidKid: "'Tintenfisch-Kind'" #!String
+    CowDecal: "Kuh-Abziehbild" #!String
+    BluePinstripeBed: "Blaues Nadelstreifenbett" #!String
+    JungleTank: "Dschungel Tank" #!String
+    CCFishTank: "CCFishTank" #!String
+    BluePinstripeDoubleBed: "Blaues Nadelstreifendoppelbett" #!String
+    JojaBed: "Joja Bett" #!String
+    JojaVault: "Joja Tresor" #!String
+    JojaChair: "Joja Stuhl" #!String
+    J: "J" #!String
+    JojaColaTeaTable: "Joja Cola Teetisch" #!String
+    JojaTable: "Joja Tisch" #!String
+    JPainting: "J. Gemälde" #!String
+    JLight: "J. Lampe" #!String
+    JojaCatalogue: "Joja Möbel Katalog" #!String
+    JojaColaPainting: "Joja Cola Gemälde" #!String
+    JojaColaOrnament: "Joja Cola Ornament" #!String
+    JojaFireplace: "Joja Kamin" #!String
+    JojaColaCans: "Joja Cola Dosen" #!String
+    CashRegister: "Registrierkasse" #!String
+    PlasticPlant: "Plastikpflanze" #!String
+    PlasticSapling: "Plastik-Sprössling" #!String
+    GrayJojaCushion: "Graues Joja-Kissen" #!String
+    JojaCushion: "Joja-Kissen" #!String
+    StackedJojaBoxes: "Gestapelte Joja-Boxen" #!String
+    JojaCouch: "Joja Couch" #!String
+    MorrisPortrait: "Manager des Jahres" #!String
+    JojaHQPainting: "Joja Hauptverwaltung Gemälde" #!String
+    JojaCrate: "Joja Kiste" #!String
+    JojaShoppingCart: "Joja Einkaufswagen" #!String
+    LargeJojaCrate: "Große Joja Kiste" #!String
+    JojaColaFridge: "Joja Cola Kühlschrank" #!String
+    JojaDresser: "Joja Kommode" #!String
+    GrayJojaDresser: "Graue Joja Kommode" #!String
+    LargeJojaRug: "Großer Joja Teppich" #!String
+    SmallJojaRug: "Kleiner Joja Teppich" #!String
+    SquareJojaRug: "Quadratischer Joja Teppich" #!String
+    JojaRug: "Joja Teppich" #!String
+    JojaCoffeeTable: "Joja Couchtisch" #!String
+    GrayJojaCoffeeTable: "Grauer Joja Couchtisch" #!String
+    JojaLamp: "Joja Lampe" #!String
+    GrayJojaBookcase: "Grauer Joja Bücherregal" #!String
+    JojaBookcase: "Joja Bücherregal" #!String
+    JojaStool: "Joja Hocker" #!String
+    JojaEndTable: "Joja Beistelltisch" #!String
+    GrayJojaEndTable: "Grauer Joja Beistelltisch" #!String
+    DecorativeJojaDoor: "Dekorative Joja Tür" #!String
+    WizardBed: "Zauberer-Bett" #!String
+    LargeWizardBookcase: "Großes Zauberer-Bücherregal" #!String
+    WizardBookcase: "Zauberer-Bücherregal" #!String
+    ShortWizardBookcase: "Kurzes Zauberer-Bücherregal" #!String
+    SmallWizardBookcase: "Kleines Zauberer-Bücherregal" #!String
+    WizardStool: "Zauberer Hocker" #!String
+    WizardFireplace: "Zauberer Kamin" #!String
+    WizardDresser: "Zauberer Kommode" #!String
+    WizardStudy: "Zauberer Arbeitstisch" #!String
+    WizardEndTable: "Zauberer Beistelltisch" #!String
+    WitchBroom: "Hexenbesen" #!String
+    Cauldron: "Kessel" #!String
+    CurlyTree: "Lockenbaum" #!String
+    LeafyPlant: "Sumpfpflanze" #!String
+    WizardChair: "Zauberer Stuhl" #!String
+    WizardTable: "Zauberer Tisch" #!String
+    WizardCushion: "Zauberer Kissen" #!String
+    DarkWizardCushion: "Dunkles Zauberer Kissen" #!String
+    WizardTeaTable: "Zauberer Teetisch" #!String
+    SmallElixirShelf: "Kleines Elixier-Regal" #!String
+    ElixirShelf: "Elixier-Regal" #!String
+    SmallStackedElixirShelf: "Kleines gestapeltes Elixierregal" #!String
+    StackedElixirShelf: "Gestapeltes Elixierregal" #!String
+    ElixirBundle: "Elixier Bündel" #!String
+    CoupleElixirs: "Zwei Elixiere" #!String
+    ElixirTable: "Elixier Tisch" #!String
+    LongElixirTable: "Langer Elixier Tisch" #!String
+    WizardLamp: "Zauberer Lampe" #!String
+    Runes: "'Runen'" #!String
+    WizardTower: "'Der Turm des Zauberers'" #!String
+    PottedRedMushroom: "Roter Topfpilz" #!String
+    WizardCatalogue: "Zauberer-Katalog" #!String
+    VoidSwirls: "'Wirbel der Leere'" #!String
+    WizardBookshelf: "Zauberer Bücherregal" #!String
+    Glyph: "Glyphe" #!String
+    StoneFlooring: "Steinfußboden" #!String
+    RuneRug: "Runenteppich" #!String
+    SwirlRug: "Wirbelteppich" #!String
+    StarryMoonRug: "Sternenmondteppich" #!String
+    CrystalBall: "Kristallball" #!String
+    AmethystCrystalBall: "Amethyst-Kristallkugel" #!String
+    TopazCrystalBall: "Topas-Kristallkugel" #!String
+    AquamarineCrystalBall: "Aquamarin-Kristallkugel" #!String
+    EmeraldCrystalBall: "Smaragd-Kristallkugel" #!String
+    RubyCrystalBall: "Rubin-Kristallkugel" #!String
+    SmallBookStack: "Kleiner Bücherstapel" #!String
+    BookStack: "Bücherstapel" #!String
+    LargeBookStack: "Großer Bücherstapel" #!String
+    PurpleBook: "Lila Buch" #!String
+    BlueBook: "Blaues Buch" #!String
+    YellowBook: "Gelbes Buch" #!String
+    RedBook: "Rotes Buch" #!String
+    GreenBook: "Grünes Buch" #!String
+    BrownBook: "Braunes Buch" #!String
+    FallenPurpleBook: "Gefallenes lila Buch" #!String
+    FallenBlueBook: "Gefallenes blaues Buch" #!String
+    FallenYellowBook: "Gefallenes gelbes Buch" #!String
+    FallenRedBook: "Gefallenes rotes Buch" #!String
+    FallenGreenBook: "Gefallenes grünes Buch" #!String
+    FallenBrownBook: "Gefallenes braunes Buch" #!String
+    SmallBookPile: "Kleiner Bücherstapel" #!String
+    BookPile: "Bücherstapel" #!String
+    LargeBookPile: "Großer Bücherstapel" #!String
+    DecorativeWizardDoor: "Dekorative Zauberertür" #!String
+    JunimoBed: "Junimo Bett" #!String
+    JunimoHut: "Junimo Hütte" #!String
+    LargeJunimoHut: "Große Junimo Hütte" #!String
+    SmallJunimoHut: "Kleine Junimo Hütte" #!String
+    JunimoFireplace: "Junimo Kamin" #!String
+    JunimoBookcase: "Junimo Bücherregal" #!String
+    JunimoPot: "Junimo Topf" #!String
+    JunimoBag: "Junimo Tasche" #!String
+    JunimoBundle: "Junimo Bündel" #!String
+    JunimoStool: "Junimo Hocker" #!String
+    JunimoTable: "Junimo Tisch" #!String
+    JunimoChair: "Junimo Stuhl" #!String
+    SmallJunimoPot: "Kleiner Junimo Topf" #!String
+    JunimoFlower: "Junimo Pflanze" #!String
+    JunimoEndTable: "Junimo Beistelltisch" #!String
+    JunimoCatalogue: "Junimo Katalog" #!String
+    JunimoTeaTable: "Junimo Teetisch" #!String
+    JunimoDresser: "Junimo Komode" #!String
+    JunimoLamp: "Junimo Lampe" #!String
+    JunimoPlant: "Junimo Pflanze" #!String
+    JunimoWallPlaque: "Junimo Wandplakette" #!String
+    JunimoPlaque: "Junimo Plakette" #!String
+    JunimoCushion: "Junimo Kissen" #!String
+    DarkJunimoCushion: "Dunkles Junimo Kissen" #!String
+    JunimoTree: "Junimo Baum" #!String
+    JunimoCouch: "Junimo Couch" #!String
+    GreenSleepingJunimo: "Grüner schlafender Junimo" #!String
+    BlueSleepingJunimo: "Blauer schlafender Junimo" #!String
+    RedSleepingJunimo: "Roter schlafender Junimo" #!String
+    PurpleSleepingJunimo: "Lila schlafender Junimo" #!String
+    YellowSleepingJunimo: "Gelber schlafender Junimo" #!String
+    OrangeSleepingJunimo: "Orangener schlafender Junimo" #!String
+    GraySleepingJunimo: "Grauer schlafender Junimo" #!String
+    SquareJunimoRug: "Quadratischer Junimo Teppich" #!String
+    JunimoRug: "Junimo Teppich" #!String
+    JunimoMat: "Junimo Matte" #!String
+    CircularJunimoRug: "Runder Junimo Teppich" #!String
+    SmallJunimoMat: "Kleine Junimo Matte" #!String
+    CommunityCenter: "'Gemeindezentrum'" #!String
+    LittleBuddies: "'Kleine Freunde'" #!String
+    Stardrop: "'Sternenfall'" #!String
+    Hut: "'Hütte'" #!String
+    AbigailPortrait: "Abigail Porträt" #!String
+    EmilyPortrait: "Emily Porträt" #!String
+    HaleyPortrait: "Haley Porträt" #!String
+    LeahPortrait: "Leah Porträt" #!String
+    MaruPortrait: "Maru Porträt" #!String
+    PennyPortrait: "Penny Porträt" #!String
+    AlexPortrait: "Alex Porträt" #!String
+    ElliottPortrait: "Elliott Porträt" #!String
+    HarveyPortrait: "Harvey Porträt" #!String
+    SamPortrait: "Sam Porträt" #!String
+    SebastianPortrait: "Sebastian Porträt" #!String
+    ShanePortrait: "Shane Porträt" #!String
+    KrobusPortrait: "Krobus Porträt" #!String
+    JunimoStar: "Junimo Stern" #!String
+    BulletinBoard: "Schwarzes Brett" #!String
+    BrochureCabinet: "Broschüre Kabinett" #!String
+    LeafyWallPanel: "Blättriges Wandpaneel" #!String
+    LightLeafyWallPanel: "Helles blättriges Wandpaneel" #!String
+    DarkLeafyWallPanel: "Dunkles blättriges Wandpaneel" #!String
+    DecorativeJunimoDoor: "Dekorative Junimo Tür" #!String
+    RetroBed: "Retro Bett" #!String
+    RetroDresser: "Retro Kommode" #!String
+    RetroBookcase: "Retro Bücherregal" #!String
+    RetroFireplace: "Retro Kamin" #!String
+    RetroCouch: "Retro Couch" #!String
+    RetroCushion: "Retro Kissen" #!String
+    DarkRetroCushion: "Dunkles Retro Kissen" #!String
+    RetroStool: "Retro Hocker" #!String
+    RetroFlower: "Retro Blume" #!String
+    RetroChair: "Retro Stuhl" #!String
+    RetroTable: "Retro Tisch" #!String
+    RetroPlant: "Retro Pflanze" #!String
+    RetroEndTable: "Retro Beistelltisch" #!String
+    RetroTeaTable: "Retro Teetisch" #!String
+    RetroCatalogue: "Retro Katalog" #!String
+    RetroCabinet: "Retro-Kabinett" #!String
+    RetroRadio: "Retro Radio" #!String
+    RetroBanner: "Retro Banner" #!String
+    Groovy: "'Groovy'" #!String
+    RetroLamp: "Retro Lampe" #!String
+    RetroRug: "Retro Teppich" #!String
+    RetroSquareRug: "Quadratischer Retro Teppich" #!String
+    RetroMat: "Retro Matte" #!String
+    LargeRetroRug: "Großer Retro Teppich" #!String
+    Abstract: "'Abstrakt'" #!String
+    Starship: "'Raumschiff'" #!String
+    Binary: "'Binär'" #!String
+    Checkers: "'Dame'" #!String
+    UFO: "'UFO'" #!String
+    DecorativeRetroDoor: "Dekorative Retro Tür" #!String
+    DecorativeDoor1: "Dekorative Tür" #!String
+    DecorativeDoor2: "Dekorative Tür" #!String
+    DecorativeDoor3: "Dekorative Tür" #!String
+    DecorativeDoor4: "Dekorative Tür" #!String
+    DecorativeDoor5: "Dekorative Tür" #!String
+    DecorativeDoor6: "Dekorative Tür" #!String
+    WallClock: "Wanduhr" #!String
+    DecorativeHatch: "Dekorative Klappe" #!String
+    DecorativeOakLadder: "Dekorative Eichenleiter" #!String
+    DecorativeWalnutLadder: "Dekorative Nussbaumleiter" #!String
+    UprightPiano: "Aufrechtes Klavier" #!String
+    CoatStand: "Kleiderständer" #!String
+    BirdHouse: "Vogelhaus" #!String
+    DecorativeShovel: "Dekorative Schaufel" #!String
+    WallSword: "Wandschwert" #!String
+    DecorativeSword: "Dekoratives Schwert" #!String
+    WineTable: "Weintisch" #!String
+    SpiritsTable: "Spirituosen Tisch" #!String
+    TallHousePlant: "Hohe Zimmerpflanze" #!String
+    CornPlant: "Maispflanze" #!String
+    BlueCushion: "Blaues Kissen" #!String
+    YellowCushion: "Gelbes Kissen" #!String
+    GreenCushion: "Grünes Kissen" #!String
+    RedCushion: "Rotes Kissen" #!String
+    BrownCushion: "Braunes Kissen" #!String
+    BlackCushion: "Schwarzes Kissen" #!String
+    FoodPetBowl: "Futter-Tiernapf" #!String
+    WaterPetBowl: "Wassernapf für Haustiere" #!String
+    OakLampEndTable: "Eiche Lampe Beistelltisch" #!String
+    WalnutLampEndTable: "Walnuss Lampe Beistelltisch" #!String
+    BirchLampEndTable: "Birke Lampe Beistelltisch" #!String
+    MahoganyLampEndTable: "Mahagoni Lampe Beistelltisch" #!String
+    TriangleWindow: "Dreiecksfenster" #!String
+    Clothesline: "Wäscheleine" #!String
+    TrashCatalogue: "Müllkatalog" #!String
+    ElegantVase: "Elegante Vase" #!String
+    CatTree: "Katzenbaum" #!String
+    DarkCatTree: "Dunkler Katzenbaum" #!String
+    LightSwitch: "Lichtschalter" #!String
+    Outlet: "Steckdose" #!String
+    Doghouse: "Hundehütte" #!String
+    DarkDoghouse: "Dunkle Hundehütte" #!String
+    BountifulDiningTable: "Prächtiger Esstisch" #!String
+    PlasticLawnEndTable: "Plastik Gartenbeistelltisch" #!String
+    PlasticLawnChair: "Plastik Gartenstuhl" #!String
+    BrokenTelevision: "Kaputter Fernseher" #!String
+    SixPackRings: "Six-Pack Ringe" #!String
+    GreenBottle: "Grüne Flasche" #!String
+    PlasticBag: "Plastik Tasche" #!String
+    AluminumCan: "Aluminium Dose" #!String
+    BlueBottle: "Blaue Flasche" #!String
+    BuriedTire: "Vergrabener Reifen" #!String
+    Tire: "Reifen" #!String
+    Wrapper: "Verpackung" #!String
+    SpilledBeverage: "Verschüttetes Getränk" #!String
+    MessyShirt: "Unordentliches Hemd" #!String
+    MessyShorts: "Unordentliche Shorts" #!String
+    MoldyCouch: "Schimmelige Couch" #!String
+    FancyHousePlant: "Schicke Zimmerpflanze" #!String
+    PigPainting: "Schwein Gemälde" #!String
+    MidnightBed: "Mitternacht Strand Bett" #!String
+    MidnightDoubleBed: "Mitternacht Strand Doppelbett" #!String
+

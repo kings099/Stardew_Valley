@@ -1,0 +1,386 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    AnimalShop.1: "Ah... egy extranagy kitömött medve! Annyira plüss, hogy elég könnyedén felborul." #!String
+    AnimalShop.2: "Ah... egy extranagy kitömött medve! Annyira plüss, hogy elég könnyedén felborul." #!String
+    AnimalShop.3: "Junimo kifestő könyv -- Luxus kiadás" #!String
+    AnimalShop.4: "A kicsiny család tagjai mind az ebédlőasztal köré gyűltek. Várjunk... Nagyapát kivéve. Valamiért az ágy alá van szorulva." #!String
+    AnimalShop.5: "A kicsiny család tagjai mind az ebédlőasztal köré gyűltek. Várjunk... Nagyapát kivéve. Valamiért az ágy alá van szorulva." #!String
+    AnimalShop.6: "Átkutatod Marnie komódját. Többnyire hosszú ruhák vannak benne, de van egy pár barna nadrágtartó is köztük." #!String
+    AnimalShop.7: "Átkutatod Marnie privát fiókját. Nincs benne semmi különös." #!String
+    AnimalShop.8: "Úgy tűnik a rádiót ébresztőként használja." #!String
+    AnimalShop.9: "A 'Krampusz a dobozban' ki van fordulva, kezei egész groteszk módon állnak ide-oda. Hideg, üveges tekintetével kémlel a távolba." #!String
+    AnimalShop.10: "Ez egy Mega Station. Van benne egy játék, ami egy Code Sultan XL-hez van csatlakoztatva. Úgy tűnik valaki csalásokkal játszik." #!String
+    AnimalShop.11: "Hogyan neveljünk csirkéket" #!String
+    AnimalShop.12: "Művészeti alkotások összevisszasága." #!String
+    AnimalShop.13: "Használatlannak tűnik. Talán ez egy gyűjtői labda." #!String
+    AnimalShop.14: "Egy kicsi festékes szett." #!String
+    AnimalShop.15: "Van egy antik óra, és egy apró, arany bizsus doboz." #!String
+    AnimalShop.16: "Úgy tűnik Jas nem igazán használja ezt." #!String
+    AnimalShop.17: "Zárva van." #!String
+    AnimalShop.18: "Mmm.... mikrós pizza." #!String
+    AnimalShop.19: "Úgy látom valaki zöldségeket aprítgatott, de nem fejezte be." #!String
+    AnimalShop.20: "Mit kotorászol a szemetesemben?$s" #!String
+    AnimalShop.21: "Többnyire üres pizzás dobozok." #!String
+    ArchaeologyHouse.1: "A Gotoro birodalom története" #!String
+    ArchaeologyHouse.2: "Muszáj háborúznunk a Gotoro birodalommal? P.W.Kranzhauer egyedi nézőpontja" #!String
+    ArchaeologyHouse.3: "Utazások a Drágakő-tengeren" #!String
+    ArchaeologyHouse.4: "Stardew Valley földtani története" #!String
+    ArchaeologyHouse.5: "Calico-sivatag növényzete" #!String
+    ArchaeologyHouse.6: "Csillag atlasz" #!String
+    ArchaeologyHouse.7: "Rongyos, de mégis aranyos." #!String
+    ArchaeologyHouse.8: "A barátságos kisragacs" #!String
+    ArchaeologyHouse.9: "Látogassuk meg a farmot. Csirke mondja kott-kott. Disznó mondja röff-röff. Kecske mondja mekk-mekk.#Kacsa mondja háp-háp. Nyuszi mondja nyusz-nyusz. Boci mondja múú-múú." #!String
+    BathHouse_MensLocker.1: "Ez a szekrény szörnyen büdös." #!String
+    BathHouse_MensLocker.2: "Ruhában próbálsz fürödni?" #!String
+    BathHouse_MensLocker.3: "Túl gyenge vagy ahhoz, hogy megemeld." #!String
+    BathHouse_MensLocker.4: "Alex szekrénye... Egy halom testépítő képe van az ajtó belsejére felragasztva." #!String
+    BathHouse_WomensLocker.1: "Női tárgyak." #!String
+    BathHouse_WomensLocker.2: "Ez Penny szekrénye. Egy fodros fürdőruha van benne." #!String
+    BathHouse_WomensLocker.3: "Ez Abigail szekrénye. Elég rossz szaga van." #!String
+    Blacksmith.1: "Egy kazetta van benne, 'Nélkülözhetetlen blues gyűjtemény, 2. rész'" #!String
+    Blacksmith.2: "Beletúrsz Clint személyes tárgyai közé. Van egy halom kovács kötény, pár újság, egy régi kard, és egy szép kép az anyjáról." #!String
+    Blacksmith.3: "Beletúrsz Clint személyes tárgyai közé. Van egy halom kovács kötény, pár újság, egy régi kard, és egy szép kép az anyjáról." #!String
+    Blacksmith.4: "Drága Emily!^Tudom, hogy csak barátként gondolsz rám.^Ez az én hibám. Túl szégyenlős vagyok. Sose gyűjtöm össze a bátorságot arra, hogy elmondjam valódi érzéseimet.^Ezért is írom meg ezt a levelet saját magamnak, amit utána biztosan összegyűrök és a sarokba hajítok." #!String
+    Blacksmith.5: "Ez egy első osztályú kemence. Ahogy belenézel, olvadt fémet látsz bugyogni benne." #!String
+    Blacksmith.6: "Ez egy profi minőségű kemence. Ahogy belenézel, bugyogó olvadt fémet látsz benne." #!String
+    Blacksmith.7: "Clint minőségi üllője. Irídiumötvözetből készült." #!String
+    Blacksmith.8: "Clint minőségi üllője. Irídiumötvözetből készült." #!String
+    Blacksmith.9: "Ez egy halom fémmunkálós tervrajz." #!String
+    Blacksmith.10: "Korommal van tele." #!String
+    BusStop.1: "` Buszmegálló^> Pelikán város" #!String
+    Club.1: "Welwick: Ma nincs szerencsém. Uhh... Túl sokat ittam." #!String
+    Club.2: "Férfi: Hé, nem látod, hogy elfoglalt vagyok? Elég jól küldöm." #!String
+    ElliottHouse.1: "Ez Leah egyik festménye." #!String
+    ElliottHouse.2: "Elliott munkaasztala. Tele van jegyzetekkel és gyűrött papírokkal." #!String
+    ElliottHouse.3: "Ez üres." #!String
+    ElliottHouse.4: "Úgy tűnik Elliott egy bonsai fát akar termeszteni. Eddig nagyon menőn néz ki!" #!String
+    ElliottHouse.5: "Ez egy mini pálma, egyenest Calico-sivatagból." #!String
+    ElliottHouse.6: "Úgy tűnik Elliott egy bonsai fát akar termeszteni. Eddig nagyon menőn néz ki!" #!String
+    Farm.1: "Nagyapa szentélye" #!String
+    Farm_Combat.1: "Nagyapa szentélye" #!String
+    Farm_Fishing.1: "Nagyapa szentélye" #!String
+    Farm_Foraging.1: "Nagyapa szentélye" #!String
+    Farm_Mining.1: "Nagyapa szentélye" #!String
+    FishShop.1: "Egy kicsi, alvós részlegbe vezet. De nem lehet bejutni." #!String
+    FishShop.2: "Ez egy csalis doboz. Tele van mindenféle csalival, horoggal és zsinórral." #!String
+    FishShop.3: "Egy fregatt mini modellje." #!String
+    FishShop.4: "Egy aprócska, rózsaszín homárka mozog benne." #!String
+    FishShop.5: "Nos, ez tele van vonagló, kígyózó gilisztákkal. És borzasztó szaga van." #!String
+    FishShop.6: "Egy veszélyes vödör." #!String
+    FishShop.7: "Ez békatojásnak néz ki." #!String
+    Forest.1: "` Farm^> Pelikán város" #!String
+    Forest.2: "@ Tufanedv-erdő^> Pelikán város" #!String
+    HaleyHouse.1: "Zárva van." #!String
+    HaleyHouse.2: "Gyorsan vetsz egy pillantást Haley privát ruháskomódjába. Ruhákkal van teletömve. " #!String
+    HaleyHouse.3: "Gyorsan vetsz egy pillantást Haley privát ruháskomódjába. Ruhákkal van teletömve. " #!String
+    HaleyHouse.4: "Ez egy mini kitömött medve!" #!String
+    HaleyHouse.5: "Ez egy üres napló." #!String
+    HaleyHouse.6: "Van egy kis jegyzet a cserépen. 'Valami, ami emlékeztet rám. -Sandy'" #!String
+    HaleyHouse.7: "Ez egy kék ruhadarab. Ki van vágva belőle egy rész, és a pereménél apró hímzett mintázatok láthatóak." #!String
+    HaleyHouse.8: "Ez Emily számítógépe. Jelszóval van levédve, így nem tudsz kotorászni benne." #!String
+    HaleyHouse.9: "'Talált divatok: Zuzu város utcáiról készült képek'" #!String
+    HaleyHouse.10: "Ez egy luxus piperetáska. Mindenféle krém, festék és púder borítja a felszínét." #!String
+    HaleyHouse.11: "Ez Haley fényképezőgépe." #!String
+    HaleyHouse.12: "'Okkal hadonászni: A tánc művészetének modern megközelítése'" #!String
+    HaleyHouse.13: "'Építs saját sötétkamrát'" #!String
+    HaleyHouse.14: "Ez egy földgömb. Hé, itt van Stardew Valley!" #!String
+    HaleyHouse.15: "A sütőből édes, frissen sült mini torta illat árad." #!String
+    HaleyHouse.16: "Mini torták, tej, és szorosan üvegbe zárt uborkák és quinoa saláta." #!String
+    HaleyHouse.17: "Szeretett lányainknak:^Hiányoztok nekünk, és reméljük, hogy jól boldogultok egyedül. Tegnap este hagytuk el a Páfrány-szigeteket, miután két hónapot itt töltöttünk.^Csodálatos élmény volt... feltétlenül ajánljuk nektek.^Egyetek egészségesen, és ne felejtsétek el kifizetni a villanyszámlát!^^Szeretettel, Anyu és Apu" #!String
+    HaleyHouse.18: "'Szuper divatos csaj' magazin" #!String
+    HarveyRoom.1: "Egy összehasonlítás a Ferngill Köztársaság és a Gotoro birodalom harci repülői között." #!String
+    HarveyRoom.2: "Gyönyörű kilátás van a Stardew Valley feletti égboltra." #!String
+    HarveyRoom.3: "Ez Harvey repülőgép modell gyűjteménye." #!String
+    HarveyRoom.4: "Ez Harvey repülőgép modell gyűjteménye." #!String
+    HarveyRoom.5: "Ez egy komplikált rádióvevő szerkezet." #!String
+    HarveyRoom.6: "Ez egy komplikált rádióvevő szerkezet." #!String
+    HarveyRoom.7: "Egy magnószalag van benne: 'A klasszikus jazz antológiája'" #!String
+    HarveyRoom.8: "'Csináld-magad! térdműtét'" #!String
+    HarveyRoom.9: "'A tüdő-hipertónia magányos lovasa'" #!String
+    HarveyRoom.10: "Semmit se találtál, és most bűzlik a kezed." #!String
+    HarveyRoom.11: "Eléggé használtnak tűnik." #!String
+    HarveyRoom.12: "Kényelmes ételekkel van tele." #!String
+    HarveyRoom.13: "\"Föld-levegő rádió protokoll\"" #!String
+    HarveyRoom.14: "Ez egy elég alap tévészett. Történelmi csatorna fut rajta." #!String
+    Hospital.1: "Az Edény Jele. Azért van itt, hogy megnyugtassa a Yoba hívőket." #!String
+    Hospital.2: "Ez egy mintás üveg. Jobb, ha nem dugod bele az ujjad." #!String
+    Hospital.3: "Valószínűleg jobb lesz, ha ebbe nem dugod bele a kezed. Tele van használt injekciós tűkkel, koszos törlőkkel, valamint kicsi csövekkel, amiket Harvey más emberek fülébe dugdosott." #!String
+    Hospital.4: "Az élet néha nehéz? Problémája adódott a koncentrálással? Beszéljen orvosával a Pravoloxinoneról.^(A Pravoloxinone nem adható mindenkinek. A mellékhatások között lehet álmatlanság, dühkitörés, kezelhetetlen torokdagadás, végleges ajakelszíneződés, hajhullás és agyvérzés. Extrém esetekben (1 az 500-ból), a tesztalanyok egy vagy több csontjának teljes szétbomlását tapasztalták.) " #!String
+    Hospital.5: "'Ne terjeszd a betegséget... Tedd a szád elé a kezecskédet!'" #!String
+    Hospital.6: "Ezt a klinikát gyógyászati célokra licenszelte a Ferngill Köztársaság Egészségügyi Hatósága." #!String
+    Hospital.7: "Hé, ez művirág!" #!String
+    JojaMart.1: "Hoisin szósz" #!String
+    JojaMart.2: "'Juharfa szósz'... Olyasmi, mint a szirup!" #!String
+    JojaMart.3: "Cukormentes mályvacukor" #!String
+    JojaMart.4: "Taco szósz kisbabáknak" #!String
+    JojaMart.5: "Hoisin szósz" #!String
+    JojaMart.6: "Só" #!String
+    JojaMart.7: "Proteinszelet" #!String
+    JojaMart.8: "Cukormentes nyalóka" #!String
+    JojaMart.9: "24-gabonaszemes kenyér" #!String
+    JojaMart.10: "'Juhhár' szirup" #!String
+    JojaMart.11: "Hajzselé -- Elektromos kék" #!String
+    JojaMart.12: "Nagymama szósza" #!String
+    JojaMart.13: "Konzerves leves" #!String
+    JojaMart.14: "Dupla vajas tanyasi chips" #!String
+    JojaMart.15: "JojaCo többcélű szósz" #!String
+    JojaMart.16: "Pereces rágcsa" #!String
+    JojaMart.17: "JojaDiet -- Kevés zsírtartalmú babok! Édes-cukros szószban" #!String
+    JojaMart.18: "Protein turmix" #!String
+    JojaMart.19: "11-gabonaszemes kenyér" #!String
+    JojaMart.20: "D. Minőségű főzőolaj" #!String
+    JojaMart.21: "Hajzselé -- X-trém tartás" #!String
+    JojaMart.22: "Extrémenyhe szósz" #!String
+    JojaMart.23: "Elvihető churro készlet" #!String
+    JojaMart.24: "Fehér kenyér, lényeges tápanyagokkal megerősítve" #!String
+    JojaMart.25: "Barbecue füstölős chips mezquite ízesítéssel" #!String
+    JojaMart.26: "JojaDiet -- Kevés zsírtartalmú babok! Édes-cukros szószban" #!String
+    JojaMart.27: "Marinara szósz" #!String
+    JojaMart.28: "100% tiszta méz-ízű 'szósz'" #!String
+    JojaMart.29: "Fehér gombás szóda" #!String
+    JojaMart.30: "Iható cukormáz" #!String
+    JojaMart.31: "Kicsírázott gabonás kenyér" #!String
+    JojaMart.32: "Részlegesen-hidrogénes kukoricaolaj" #!String
+    JojaMart.33: "Fogselyem" #!String
+    JojaMart.34: "Enyhe szósz" #!String
+    JojaMart.35: "100% tiszta méz-ízű 'szósz'" #!String
+    JojaMart.36: "Konzerves garnélarák" #!String
+    JojaMart.37: "Fahéjas-cukros chips" #!String
+    JojaMart.38: "Fehér gombás szóda" #!String
+    JojaMart.39: "Pesto" #!String
+    JojaMart.40: "Élesztő" #!String
+    JojaMart.41: "Protein por" #!String
+    JojaMart.42: "Kakaós zeppelin" #!String
+    JojaMart.43: "Zabkenyér" #!String
+    JojaMart.44: "Szintetikus vaj -- Olcsó!" #!String
+    JojaMart.45: "Szájvíz" #!String
+    JojaMart.46: "Vigyetek-El-Az-Intenzív-Osztályra szósz" #!String
+    JojaMart.47: "Élesztő" #!String
+    JojaMart.48: "Szárított garnélás rágcsa" #!String
+    JojaMart.49: "Cukorkás chips" #!String
+    JojaMart.50: "Cukros kúp" #!String
+    JojaMart.51: "Poros reggeli -- Csak adj hozzá vizet. (Tojás és Krumpli)" #!String
+    JojaMart.52: "Citerázó gyümölcslé" #!String
+    JojaMart.53: "Butácska szósz" #!String
+    JojaMart.54: "Barna kenyér" #!String
+    JojaMart.55: "Poros krém" #!String
+    JojaMart.56: "Fogkrém" #!String
+    JojaMart.57: "Kibírhatatlanul kínzó égetés szósz" #!String
+    JojaMart.58: "Cukros kúp" #!String
+    JojaMart.59: "Olcsó bor" #!String
+    JojaMart.60: "Poros reggeli -- Csak adj hozzá vizet. (Tojás és Krumpli)" #!String
+    JojaMart.61: "Vegetáriánus kolbász" #!String
+    JojaMart.62: "Cukros csillagok" #!String
+    JojaMart.63: "Poros bor" #!String
+    JojaMart.64: "Robbanékony gyümölcslé" #!String
+    JojaMart.65: "Rozskenyér" #!String
+    JojaMart.66: "Poros vaj" #!String
+    JojaMart.67: "Kézszappan" #!String
+    JojaMart.68: "Égető fájdalom szósz" #!String
+    JojaMart.69: "Cukros csillagok" #!String
+    JojaMart.70: "X-trém chips" #!String
+    JojaMart.71: "X-trém chips pokoli szósszal" #!String
+    JojaMart.72: "Poros bor" #!String
+    JojaMart.73: "Kókuszdió hús" #!String
+    JojaMart.74: "Rágógumi" #!String
+    JojaMart.75: "Konzerves rántotta" #!String
+    JojaMart.76: "Kék Űrlény ENERGIA... LŐJENEK ki" #!String
+    JojaMart.77: "Szőlős kavics-rágcsa" #!String
+    JojaMart.78: "Kovászos kenyér" #!String
+    JojaMart.79: "Joja olaj -- Ízletes olajok védjegyes keveréke. Bármilyen célra használható." #!String
+    JojaMart.80: "Joja multifunkciós tisztítószer -- Használhatod a ruhákhoz, a tányérokhoz, a kezedhez, samponként, vagy akár fogkrémkrént is! JojaMeallel keverve finom cukormáz lesz belőle." #!String
+    JojaMart.81: "Pokoli szósz" #!String
+    JojaMart.82: "Rágógumi" #!String
+    JojaMart.83: "Tiszta gluténból készült lemezek és korongok" #!String
+    JojaMart.84: "Konzerves rántotta" #!String
+    JojaMart.85: "Gyümölcsös rágcsa" #!String
+    JojaMart.86: "Konzerves hal... mostantól fogfehérítő szósszal" #!String
+    JojaMart.87: "Hiper-gyümölcslé" #!String
+    JojaMart.88: "Eperízű nyalóka" #!String
+    JojaMart.89: "Kenyér" #!String
+    JojaMart.90: "Canola-olaj" #!String
+    JojaMart.91: "Szennyestisztító -- 10x-es illattal!" #!String
+    JojaMart.92: "Tüzes szósz" #!String
+    JojaMart.93: "Gyümölcsös rágcsa" #!String
+    JojaMart.94: "JojaMeal... Olyan, mint a kukoricaliszt, de sokoldalúbb. Sütéshez, rántáshoz és édesítéshez is használható. Vízzel keverve a híres mártásunk készíthető belőle." #!String
+    JojaMart.95: "Szenes kúpok. Kicsi, ízletes, kúp-alakú rágcsák, amik hamar megtöltik a gyomrodat." #!String
+    JojaMart.96: "Konzerves hal... mostantól fogfehérítő szósszal" #!String
+    JojaMart.97: "Cowboy szósz" #!String
+    JojaMart.98: "Vákummal lezárt pácolt gombák" #!String
+    JojaMart.99: "Konzerves húsok" #!String
+    JojaMart.100: "JojaCola AMPEREZVE" #!String
+    JojaMart.101: "Kék-zöld cukros gömbök" #!String
+    JojaMart.102: "Egyenként becsomagolt palacsinták" #!String
+    JojaMart.103: "Extra tiszta olajbogyó-ízű olaj" #!String
+    JojaMart.104: "Szennyestisztító" #!String
+    JojaMart.105: "Forró szósz" #!String
+    JojaMart.106: "Vákummal lezárt pácolt gombák" #!String
+    JojaMart.107: "Konzerves tészta" #!String
+    JojaMart.108: "Kukoricaliszt" #!String
+    JojaMart.109: "Konzerves húsok" #!String
+    JoshHouse.1: "Anya-^Ha ezt olvasod, akkor lehet, hogy már nem élek. Sajnálom mindazt, amin keresztül kellett menned. Tudd, hogy mindkettőtöket szeretlek.^Ne légy ideges. Most már Yobaval vagyok. ^Az utolsó kívánságom: vigyázz Alexre. Családra van szüksége, egy stabilra. Nagyon jó gyerek.^ Szeretlek, ^Clara" #!String
+    JoshHouse.2: "A rádió régiségeket sugároz." #!String
+    JoshHouse.3: "'44. Profi rácslabda szezon: Statisztikák és Helyezések'" #!String
+    JoshHouse.4: "'A veszteségek kezelése'" #!String
+    JoshHouse.5: "'Mega muszklik' magazin" #!String
+    JoshHouse.6: "Ez egy 30 kilós súly." #!String
+    JoshHouse.7: "Bekukkantasz Alex fiókjába. Van benne pár ruha, hajzselé, és egy doboz rácslabdás gyűjtögetős kártya." #!String
+    JoshHouse.8: "Bekukkantasz Alex fiókjába. Van benne pár ruha, hajzselé, és egy doboz rácslabdás gyűjtögetős kártya." #!String
+    JoshHouse.9: "Ez Alex rácslabdás sisakja. Úgy tűnik gyakran fényezi." #!String
+    JoshHouse.10: "Ez egy rácslabda." #!String
+    JoshHouse.11: "Ez egy alaposan megtömött hűtőszekrény." #!String
+    JoshHouse.12: "'Sütik minden évszakhoz'" #!String
+    JoshHouse.13: "'A sötétkék élet: Egy szénbányász életrajza'" #!String
+    JoshHouse.14: "Ez üres." #!String
+    LeahHouse.1: "Ez még készülőben van." #!String
+    LeahHouse.2: "Ez egy kupac Leah festményeiből. Többnyire tájakról és természeti ábrákról szólnak." #!String
+    LeahHouse.3: "'Megélni a földeken: Egy praktikus útmutató'" #!String
+    LeahHouse.4: "'Hogyan kezeljük a hatalmaskodó embereket'" #!String
+    LeahHouse.5: "Ez egy fából készült szobor, amin Leah munkálkodik. Csodálatos cédrus illata van." #!String
+    LeahHouse.6: "Nincsenek üzenetek." #!String
+    ManorHouse.1: "A polgármester sütőjére ráférne egy alapos takarítás." #!String
+    ManorHouse.2: "Egy hagyományos teás készlet. A polgármester nagyon komolyan veheti a teázást." #!String
+    ManorHouse.3: "Nem néznél be holnap este?^Ha a hátsó ablakon jönnél be, akkor senki se venne észre.^Többször szeretnék veled találkozni.^Tudom, hogy elfoglalt vagy, de nem tudnál időt szakítani rám?^Remélem holnap találkozunk.^-M" #!String
+    Mountain.1: "` Vasút " #!String
+    Saloon.1: "Ez itt egy félig teli söröskorsó." #!String
+    Saloon.2: "Főzőcsatorna. 24/7 főzési tippek, játékok, és éttermi értékelések." #!String
+    SamHouse.1: "Ez üres." #!String
+    SamHouse.2: "Tojás, kenyér, répa és tej." #!String
+    SamHouse.3: "Jodi-^Mivel hamarosan haza fogok érni, szeretnék pár dolgot megosztani veled.^Lehet nem ugyanaz az ember leszek, akit megismertél. Láttam pár dolgot odakint, amik eléggé felkavartak. Elég nehezen tudok kikapcsolódni.^Nem akarlak sem megijeszteni, sem felidegesíteni. Csak nem akarom, hogy sokkoljon, ha hazatértem.^Ne feledd, bárhogy is cselekszem, te és a gyerekek jelentenek számomra mindent.^Hamarosan találkozunk.^-Kent" #!String
+    SamHouse.4: "A hírek mennek rajta." #!String
+    SamHouse.5: "Gitárpengetők és gördeszka kerekek." #!String
+    SamHouse.6: "Van egy halom extra erős hajzselé itt." #!String
+    SamHouse.7: "Van egy halom gördeszkás újság itt." #!String
+    SamHouse.8: "'UFO rejtélyek'" #!String
+    SamHouse.9: "Sam elektromos gitárja. Van pár aktív hangszedő és rúd mellette." #!String
+    SamHouse.10: "--Jelentés--^Név: Vincent^^Olvasás: C^Írás: D^Matematika: C^Közösségi tudományok: B-^Művészet: B-^Sport: A^^Megjegyzés: Vince jó gyerek, de többre vinné, ha kicsivel többet tanulna!^  -Penny" #!String
+    SamHouse.11: "Ez Sam számítógépe. Úgy látom rengeteg játékkal rendelkezik." #!String
+    SamHouse.12: "Vincent játékfigurái szét vannak szórva a szobájában." #!String
+    ScienceHouse.1: "Űrposzter" #!String
+    ScienceHouse.2: "Barkácsolóhoz képest Maru számítógépe nagyon régi. A fájljait még mindig floppykra menti le." #!String
+    ScienceHouse.3: "'A második házasságod maximalizálása' és 'Praktikus tanácsok mostohaapáknak'" #!String
+    ScienceHouse.4: "Egy halom ácsmagazin van itt." #!String
+    ScienceHouse.5: "'Fejlett idegrendszerek'" #!String
+    ScienceHouse.6: "Zárva van." #!String
+    ScienceHouse.7: "Ez valamilyen eszköz, amin Maru dolgozott. Elég rendszertelennek tűnik." #!String
+    ScienceHouse.8: "Csillagtérkép minden évszakhoz." #!String
+    ScienceHouse.9: "Rengeteg üdítő." #!String
+    ScienceHouse.10: "Periódusos rendszer" #!String
+    ScienceHouse.11: "Robin egyik baltája." #!String
+    ScienceHouse.12: "Főzőpoharas szett." #!String
+    ScienceHouse.13: "Sztereó mikroszkóp." #!String
+    ScienceHouse.14: "Sztereó mikroszkóp." #!String
+    SebastianRoom.1: "Nincs bedugva a rádió." #!String
+    SebastianRoom.2: "Egy képregény." #!String
+    SebastianRoom.3: "'Solarion krónikák: A játék'" #!String
+    SeedShop.1: "'11 Solo Sonata fafuvolán'" #!String
+    SeedShop.2: "David a Tengerimalac" #!String
+    SeedShop.3: "David a Tengerimalac" #!String
+    SeedShop.4: "'A kis üzletek kitartó értéke'" #!String
+    SeedShop.5: "'Szülői élet 101: Túlélni a tinédzser éveket'" #!String
+    SeedShop.6: "Friss zöldségekkel van megtöltve." #!String
+    SeedShop.7: "'Journey Of The Prairie King: Konzolos kiadás'" #!String
+    SeedShop.8: "'Miért kell megállítani a JojaCo-t'" #!String
+    SeedShop.9: "Mr. Pierrenek: ^Fáj, hogy nekem kell közölnöm a rossz hírt, de kötelességem szólni Önnek egy olyan fejleményről, ami veszélyezteti a megélhetését.^A Joja Co. úgy döntött, hogy Pelikán városban is terjeszkedik.^Már túl késő a tüntetéshez. A Joja építészei már feltörték a talajt az új JojaMart helyszínén.^^Ez biztosan megrázó hír lehet Önnek. Oly sok évig ment az üzlete... egy helyi üzlet... és most beárnyékolja egy erősebb, hatékonyabb, pénzügyileg kedvezőbb vállalat. Milyen kár!^^Mint az új JojaMart menedzsere, úgy érzem, legalábbis egy kicsit, hogy személyesen én tehetek erről a kellemetlenségről. Ezért szeretném felkínálni Önnek az Élelmiszerbolt Asszisztens pozíciót. Óránként 5g-t kaphat kezdő fizetésként. Alig várom az önéletrajzát!^^-Mr. Morris, Menedzser^Pelikán városi JojaMart" #!String
+    SeedShop.10: "Boszorkánytábla" #!String
+    SeedShop.12: "Ez a szekrény tele van edzőfelszereléssel." #!String
+    Town-Christmas.1: "Klinika - 09:00 - 15:00" #!String
+    Town-Christmas.2: "Régi és megkopott..." #!String
+    Town-Christmas.3: "\"Szeretett Monánk\"" #!String
+    Town-Christmas.4: " Régészeti iroda - Nyitva 08:00-tól 18:00-ig" #!String
+    Town-EggFestival.1: "Klinika - 09:00 - 15:00" #!String
+    Town-EggFestival.2: "Régi és megkopott..." #!String
+    Town-EggFestival.3: "\"Szeretett Monánk\"" #!String
+    Town-EggFestival.4: " Régészeti iroda - Nyitva 08:00-tól 18:00-ig" #!String
+    Town-Fair.1: "Turista: Öregem... Nem bírok többet harapni ebből a grilles szendvicsből... tele vagyok." #!String
+    Town-Fair.2: "Vagy olyan erős, mint én? Zúzd szét a követ!" #!String
+    Town-Fair.3: "Klinika - 09:00 - 15:00" #!String
+    Town-Fair.4: "Turista: Váó. Ez a legnagyobb sajtkorong, amit valaha láttam. Nagyon lenyűgöző." #!String
+    Town-Fair.5: "Turista: Jó sokáig tartott idejönni a busszal, de teljesen megérte! Ez a völgy annyira csodálatos. Simonnak is tetszik... ugye, Simon?" #!String
+    Town-Fair.6: "Turista: Nagyon szép kis város ez. Szép és kellemes, és árad belőle a közösség lelke." #!String
+    Town-Fair.7: "Régi és megkopott..." #!String
+    Town-Fair.8: " Régészeti iroda - Nyitva 08:00-tól 18:00-ig" #!String
+    Town-Halloween.1: "Klinika - 09:00 - 15:00" #!String
+    Town-Halloween.2: "Régi és megkopott..." #!String
+    Town-Halloween.3: "\"Szeretett Monánk\"" #!String
+    Town-Halloween.4: " Régészeti iroda - Nyitva 08:00-tól 18:00-ig" #!String
+    Town.1: "Klinika - 09:00 - 15:00" #!String
+    Town.3: "Régi és megkopott..." #!String
+    Town.4: "\"Szeretett Monánk\"" #!String
+    Town.5: " Régészeti iroda - Nyitva 08:00-tól 18:00-ig" #!String
+    Trailer.1: "'Tanárok útmutatója: 2. Osztály'" #!String
+    Trailer.2: "'Marcie és a földalatti kastély'" #!String
+    Trailer.3: "'A Solarion krónikák'" #!String
+    Trailer.4: "Tele van üres sörösüvegekkel." #!String
+    Trailer.5: "'Tündérek, Junimok és egyéb mesék'" #!String
+    WitchHut.1: "Bárki is él itt, nagyon kedvelheti a tiszta padlót!" #!String
+    WitchHut.2: "Rossz ötlet volna beledugni gyöngéd kezedet oda." #!String
+    WitchHut.3: "A csontot valószínűleg baktériumok borítják. Úgy döntesz, hogy nem érinted meg." #!String
+    WitchHut.4: "Kihúzod a dugót, és az illat elárasztja az orrnyílásaidat. A szag egészen kellemes, helyenként sárgabarackot és fűszeres bogyókat vélsz felfedezni benne." #!String
+    WitchHut.5: "Átok a vidékre!... Varázskönyv vidéki boroszkányoknak" #!String
+    WitchHut.6: "Próbálod kerülni a szemkontaktust..." #!String
+    MovieTheater_CraneMan: "Darus ember: Nem beszélhetek... Épp nyerésben vagyok." #!String
+    MovieTheater_CraneOccupied: "A darus játékot most épp más használja." #!String
+    MovieTheater_CraneMan2: "Darus ember: Majdnem... megvan..." #!String
+    MovieTheater_Welwick: "Welwick: Hmm, nincs túl sok ember... és sok pénzt áldoztam be erre a filmre!" #!String
+    MovieTheater_Welwick2: "Welwick: Nagy dolgokat látok a jövődben... Ha sok jegyet veszel erre a filmre!" #!String
+    MovieTheater_ShortsMan: "Sarok fickó: Brr... eléggé huzatos itt... Örülök, hogy hosszú nadrágot vettem fel!" #!String
+    MovieTheater_ShortsMan2: "Sarok fickó: Psszt... Épp az imént néztem meg a filmet és... Nyugi! Nem fogom lelőni a poént." #!String
+    MovieTheater_Mother: "Hölgy: Simon, nem akarsz valami egészségeset enni? *sóhaj*... rendben..." #!String
+    MovieTheater_Mother2: "Hölgy: Mit szólnál pár almaszelethez? Nem? *sóhaj*... rendben..." #!String
+    MovieTheater_Child: "Simon: Anyu! Cukorkát akarok! *szürcsöl*" #!String
+    MovieTheater_Child2: "Simon: Anyu! Csokis pattogatott kukoricát akarok! *szürcsöl*" #!String
+    MovieTheater_Lupini: "Lupini: Amatőrök! A díszlet dizájnja teljesen mondén volt!" #!String
+    MovieTheater_Lupini2: "Lupini: Amatőrök! Az unokaöcsém második szülinapján készült házi videónak is jobb volt a kameraállása!" #!String
+    MovieTheater_ConcessionMan: "Mozijáró: Uhhh... Túl nagy a választék!" #!String
+    MovieTheater_ConcessionMan2: "Mozijáró: Áh, nézd, hogy megy a pattogatott kukorica! Óh, azok a hangok... az illatok!" #!String
+    MovieTheater_PurpleHairLady: "Hölgy: Tűnj innét... Épp kikezdek a Kormányzóval!" #!String
+    MovieTheater_RedCapGuy: "Férfi: Ajjajjj... Azt hiszem túlöltöztem ehhez a helyhez..." #!String
+    MovieTheater_RedCapGuy2: "Férfi: Legelőlre ültem... nagy hiba volt." #!String
+    MovieTheater_Governor: "Kormányzó: Jó látni, hogy a völgy gazdaságilag fejlődik!" #!String
+    MovieTheater_Governor2: "Kormányzó: El kellene hoznom az asszonyt levesezni és filmet nézni!" #!String
+    MovieTheater_Gunther: "Hé, szívesen beszélgetnék, de vissza kell térnem a múzeumba!" #!String
+    MovieTheater_Gunther2: "Hé, @. Én már láttam a filmet... nem volt rossz!" #!String
+    MovieTheater_Marlon: "Gil átaludta az egész filmet... jellemző." #!String
+    MovieTheater_Marlon2: "Ez érdekes volt... te mit gondolsz, Gil?#$b#...Gil?#$b#...Kiütötte magát." #!String
+    MovieTheater_Marcello: "Marcello: Micsoda teríték! Azt hiszem a bourbon majonézt fogom választani. Hehe!" #!String
+    MovieTheater_Marcello2: "Marcello: Micsoda teríték! Aazt hiszem a 12-szemes csípős mustárt fogom választani. Hehe!" #!String
+    MovieTheater_Morris: "Mint láthatod, a mozi hatalmas sikernek örvend!$h#$b#Micsodaaa...? Visszafizetés a befektetésedből? Nos, tudod, ez nehéz... egy darabig eltarthat, tudod... *mormog*$2" #!String
+    MovieTheater_Morris2: "Áh, itt a legfontosabb befektető partnerünk! Élvezd a műsort, és ne felejts el egy zacskónyi JojaRicát vásárolni!$h" #!String
+    MovieTheater_CranePlay: "Játszol a Darugépes játékkal? (Az ára {0}g)" #!String
+    IslandShrine_Shrine: "Mikor sötét felhők sírnak, kezdd hát küldetésedet^Hogy megkeresd a legendás drágakő madár négyest^Minden nap, egy északra, délre, keletre vagy nyugatra^Helyezd fel ajándékukat az ajtómra" #!String
+    Pirates1: "ZÖLD: Te mindig is anyuci kedvence voltál! WaaaAaAa" #!String
+    Pirates2: "VÖRÖS: Mamma mia! Nyugodjál meg, testvér! Áucs!" #!String
+    Pirates3: "JÓL ÖLTÖZÖTT KALÓZ: *köhöm*... Yar.#...#...Nem túl meggyőző, mi?#*sóhaj*...#Az igazat megvallva, én tulajdonképpen nem igazán akarok kalóz lenni. Inkább termesztenék pálmafákat.#Sajnos manapság nincs pénz a pálmás üzletben..." #!String
+    Pirates4: "BLACKGULL: Yar, cimbora. Biztosan jó szemed van, hogy megláttad titkos barlangunkat. Yo ho!" #!String
+    Pirates5: "ZORD KALÓZ: A tengeren túl, egy hátborzongató történet, egy rémálom, mi álmodat zargatja...#Éjféltájt volt, mikor elvesztettem karomat... egy ádáz szörny volt, mi a mélységből előbukkanhat...#Yar, igaz is volt...#...#...#..............#..............................................#Jól van, csak szórakoztam. Valójában akkor vesztettem el őket, mikor egy tojáshéjat próbáltam kiszedni egy turmixgépből.#Így hát... a híres tortatészta keverős napjaimnak vége..." #!String
+    Pirates6: "Kábulatban van..." #!String
+    Pirates8: "BÁRPULTOS: Hé cimbi!... A grog és egyébségek csak kalózságoknak valók." #!String
+    Pirates7_0: "DARTSOS EMBER: Akarsz dartsozni? 20 darts nyilat kapsz, hogy pontosan 301 pontot szerezz." #!String
+    Pirates7_1: "DARTSOS EMBER: Mit szólnál ahhoz, ha izgalmasabbá tennénk a dolgot. Szerezz 301 pontot 15 darts nyíllal, és le leszek nyűgözve, cimbora!" #!String
+    Pirates7_2: "DARTSOS EMBER: Áh, jó tégedet látni, cimbora! Nézzük, hogy tudsz-e 301 pontot szerezni... 10 darts nyíllal!" #!String
+    Pirates7_3: "DARTSOS EMBER: Ahoy! Hát itt az én cimborám... a jó öreg biztos-kezű! Mit szólnál, ha dartsoznánk, a régi idők emlékére?" #!String
+    Pirates7_Win_Perfect: "DARTSOS EMBER: Teringettét! Ez aztán a tökéletes játszma!" #!String
+    Pirates7_Win: "DARTSOS EMBER: Nocsak, hogy süllyednék el! Ez aztán jó dobás volt!" #!String
+    Pirates7_WinPrize: "Tessék, egy kis ajándék neked." #!String
+    Pirates7_WinNoPrize: "Jöjj vissza máskor is!" #!String
+    Pirates7_Lose: "DARTSOS EMBER: Yar... Talán majd legközelebb..." #!String
+    PirateBartender_PirateClothes: "BÁRPULTOS: Hékás! Még sose láttalak tégedet errefelé. De ha mán úgy nézel ki, mint egy kalóz, akkó' egyet én állok! Har Har!" #!String
+    PirateBartender_PirateClothes_NoMore: "BÁRPULTOS: Kőne még, mi? Har Har! Eleget kaptál már, cimbora..." #!String
+

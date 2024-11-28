@@ -1,0 +1,26 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Fri.000: "Bu şeyler kesinlikle sağlıklı bir diyete dahil edilebilir." #!String
+    marriageJob.000: "Selam tatlım. Sağlık ocağında ne yapıyorsun?#$e#Beni görmeye mi geldin? Ne kadar hoş.$h" #!String
+    Fri.001: "Şu aldığım yiyecekleri bırakıyorum." #!String
+    marriage_Mon.001: "Akan suyun sesi beni çok rahatlatıyor." #!String
+    marriage_Mon.000: "Merhaba! Temel ihtiyaçlar için alışveriş yapıyorum. Böylece bizim için sağlıklı yemekler pişirmeye devam edebilirim." #!String
+    Sat.000: "Şu aldığım yiyecekleri bırakıyorum." #!String
+    winter_15.000: "Kış kasvetli bir mevsim olabilir ama bunun gibi olaylar kışı biraz daha parlak hale getirir!" #!String
+

@@ -1,0 +1,40 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    abigail_videogames: "Urgh... Ainda não consigo passar do primeiro nível de \"Jornada do Rei da Pradaria\"!$u" #!String
+    haley_photo: "%Haley está muito distraída com a câmera para perceber você." #!String
+    harvey_radio: "%Harvey parece ocupado agora." #!String
+    harvey_examine_left: "Agora não se mexa... Respire fundo para mim.$u" #!String
+    alex_lift_weights: "Urgh... Não posso falar.$6" #!String
+    robin_dance: "%Robin está ocupada." #!String
+    demetrius_dance: "%Demetrius está ocupado." #!String
+    demetrius_read: "Estamos isolados do resto do mundo aqui no Vale do Orvalho. Talvez isso seja bom." #!String
+    emily_exercise: "Exercitar-se pode ser divertido!" #!String
+    robin_exercise: "Meus braços são fortes... *puff*... mas minhas pernas precisam de exercício... *gasp*." #!String
+    caroline_exercise: "Não olhe para mim, estou vermelha e suada.$s" #!String
+    shane_work: "%Shane está trabalhando duro. Ele não parece querer conversar." #!String
+    marnie_exercise: "%Marnie sorri para você em uma nuvem de suor." #!String
+    jodi_exercise: "Urgh! Respira... Urgh... Solta.$4" #!String
+    vincent_read_right: "Dona Penny disse que preciso ler este livro antes de brincar.$s" #!String
+    penny_wave_left: "Esta cidade é segura, mas mesmo assim levo as crianças para passear." #!String
+    sam_guitar: "%Sam está ocupado treinando com sua guitarra." #!String
+    sam_gameboy: "Um segundo... Preciso derrotar este nível.$7" #!String
+    sam_skateboarding: "%Sam está tentando fazer um kickflip." #!String
+    sam_pool: "$c .5#Humm... Se eu fizer a bola branca girar um pouco, acho que posso...$7#$e#*Aaah...*Não sou muito bom.$s" #!String
+    sam_work: "%Sam está trabalhando... melhor não atrapalhá-lo." #!String
+

@@ -1,0 +1,89 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    ScienceHouse_Robin_Raining1: "Jó kis idő, mi?" #!String
+    ScienceHouse_Robin_Raining2: "Jaj ne, eláztál!" #!String
+    ScienceHouse_Robin_NotRaining1: "Hé, jót sétálgatsz?" #!String
+    ScienceHouse_Robin_NotRaining2: "Hé!" #!String
+    ScienceHouse_Robin_Snowing: "Szép meleg van idebent!" #!String
+    ScienceHouse_Robin_NotSnowing: "Üdv néked!" #!String
+    ScienceHouse_Robin_CloseFriends: "Üdv {0}!" #!String
+    ScienceHouse_Robin_NotCloseFriends: "Akarsz valamit építeni?" #!String
+    ScienceHouse_Robin_Greeting: "Üdvözletem!" #!String
+    ScienceHouse_Robin_RareGreeting: "Lew...? Ó..." #!String
+    AnimalShop_Marnie_Greeting1: "Üdv!" #!String
+    AnimalShop_Marnie_Greeting2: "Hellóka!" #!String
+    AnimalShop_Marnie_CloseFriends: "Üdv, {0}" #!String
+    AnimalShop_Marnie_NotCloseFriends: "Készletekért jöttél?" #!String
+    AnimalShop_Marnie_Raining: "Töröld meg a lábad!" #!String
+    AnimalShop_Marnie_NotRaining: "Hé! Milyen az idő?" #!String
+    AnimalShop_Marnie_Greeting3: "Hé! Hogy megy {1} farm?" #!String
+    AnimalShop_Marnie_RareGreeting: "Lew...? Ó..." #!String
+    AdventureGuild_Marlon_Greeting_Male: "Visszatért!" #!String
+    AdventureGuild_Marlon_Greeting_Female: "Visszatért!" #!String
+    AdventureGuild_Marlon_Greeting1: "Kell egy új kard?" #!String
+    AdventureGuild_Marlon_Greeting2: "Üdvözletem." #!String
+    AdventureGuild_Marlon_Greeting3: "Gil, ébredj! Látogatónk van." #!String
+    AdventureGuild_Marlon_Greeting4: "Jó estét." #!String
+    Hospital_Maru_Greeting1: "Van időpontod?" #!String
+    Hospital_Maru_Greeting2: "Segíthetek?" #!String
+    Hospital_Maru_Greeting3: "Le van árazva az orvosságunk!" #!String
+    Hospital_Maru_Greeting4: "Sürgős eset?" #!String
+    Hospital_Maru_Greeting5: "Az orvoshoz jöttél?" #!String
+    Hospital_Maru_Spouse: "Üdv édesem <" #!String
+    LeahHouse_Leah_Greeting1: "Ó, szia!" #!String
+    LeahHouse_Leah_Greeting2: "Helló." #!String
+    LeahHouse_Leah_Greeting3: "Szia, {0}" #!String
+    ElliottHouse_Elliott_Greeting1: "Örülök, hogy benéztél." #!String
+    ElliottHouse_Elliott_Greeting2: "Helló." #!String
+    ElliottHouse_Elliott_Greeting3: "Helló, {0}" #!String
+    JojaMart_Morris_Greeting: "Üdvözlünk a JojaMartban!" #!String
+    SandyHouse_Sandy_Greeting1: "Te szegény megégett egyén!" #!String
+    SandyHouse_Sandy_Greeting2: "Ó, egy látogató!" #!String
+    SandyHouse_Sandy_Greeting3: "Aszaltnak tűnsz!" #!String
+    SandyHouse_Sandy_Greeting4: "Ritka magvak eladóak!" #!String
+    SandyHouse_Sandy_Greeting5: "Édesem, nem akarsz venni valamit?" #!String
+    ManorHouse_Lewis_Morning: "Jó reggelt!" #!String
+    ManorHouse_Lewis_Afternoon: "Jó napot." #!String
+    ManorHouse_Lewis_Evening: "Jó estét." #!String
+    Saloon_Gus_Greeting: "Kerülj beljebb, kerülj beljebb!" #!String
+    Saloon_Gus_Summer: "Kell egy hideg ital?" #!String
+    Saloon_Gus_NotSummer: "Mit adhatok neked?" #!String
+    Saloon_Gus_Snowing1: "Odakint hideg van, de a kávé forró!" #!String
+    Saloon_Gus_NotSnowing1: "Kell meleg étel?" #!String
+    Saloon_Gus_Raining: "Kell egy forró ital?" #!String
+    Saloon_Gus_NotRaining: "Kell egy ital?" #!String
+    Saloon_Gus_Snowing2: "Gyere be a hidegről!" #!String
+    Saloon_Gus_NotSnowing2: "Üdvözletem!" #!String
+    Saloon_Gus_RareGreeting: "Úgy látom rád férne egy ital." #!String
+    ArchaeologyHouse_Gunther_Greeting1: "Találtál valami újat?" #!String
+    ArchaeologyHouse_Gunther_Greeting2: "Kiástál valamit?" #!String
+    ArchaeologyHouse_Gunther_Greeting3: "Kell a szakértelmem?" #!String
+    ArchaeologyHouse_Gunther_Greeting4: "Üdv néked." #!String
+    ArchaeologyHouse_Gunther_Greeting5: "Hoztál nekem valamit?" #!String
+    ArchaeologyHouse_Gunther_RareGreeting: "Piszkos szagod van... jó!" #!String
+    SeedShop_Pierre_Winter: "Üdvözlünk Pierre fűtött boltjában!" #!String
+    SeedShop_Pierre_NotWinter: "Üdvözlünk Pierre boltjában!" #!String
+    SeedShop_Pierre_Summer: "Nyári magvak eladóak!" #!String
+    SeedShop_Pierre_NotSummer: "Magvak eladóak!" #!String
+    SeedShop_Pierre_Greeting1: "Helló!" #!String
+    SeedShop_Pierre_Greeting2: "Ez {0} gazda!" #!String
+    SeedShop_Pierre_Raining: "Ma jó nap van a vásárláshoz!" #!String
+    SeedShop_Pierre_NotRaining: "Üdvözöllek!" #!String
+    SeedShop_Pierre_RareGreeting: "Ugye elhoztad a pénztárcádat?" #!String
+

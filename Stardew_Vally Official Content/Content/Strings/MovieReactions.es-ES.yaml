@@ -1,0 +1,288 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Penny_*_BeforeMovie: "¡Ver una película con mamá seguro que me «resucita»!" #!String
+    Penny_*_DuringMovie: "(¡Pam y Penny están mirando la pantalla atentamente!)" #!String
+    Penny_*_AfterMovie: "¡Es genial hacer cosas junto a la familia una vez más!" #!String
+    Penny_spring_movie_0_BeforeMovie: "¡Me gustaría mucho! Jas y Vincent han estado hablando de ello sin parar." #!String
+    Penny_spring_movie_0_DuringMovie: "Wow, debe ser muy duro dejar atrás a su familia de esa forma...$s" #!String
+    Penny_spring_movie_0_DuringMovie_2: "Parece que Penny se está aguantando las lágrimas..." #!String
+    Penny_spring_movie_0_AfterMovie: "Gracias por invitarme, ¡no puedo esperar a decirle a los niños lo buena que ha sido la película!" #!String
+    Penny_family_BeforeMovie: "¡Oh, «{0}»! ¡Parece inocente y divertida!" #!String
+    Penny_family_DuringMovie: "(Penny está sonriendo)" #!String
+    Penny_family_AfterMovie: "¡Debería traer a los niños a ver esto alguna vez!" #!String
+    Penny_comedy_BeforeMovie: "Estoy emocionada, ¡estoy de humor para unas buenas risas!" #!String
+    Penny_comedy_DuringMovie: "¡¿Acaban de...?! ¡Jajajajaja!" #!String
+    Penny_comedy_AfterMovie: "Wew, ¡Me ha dado un calambre de tanto reírme...!" #!String
+    Penny_horror_BeforeMovie: "Estoy un poco nerviosa... No suelo ver películas de terror.$s" #!String
+    Penny_horror_DuringMovie: "No puedo mirar...$s" #!String
+    Penny_horror_AfterMovie: "¡Espero no tener pesadillas esta noche!$s" #!String
+    Penny_love_BeforeMovie: "Oooh, ¡Estaba deseando ver esta película!" #!String
+    Penny_love_AfterMovie: "¡Increíble! ¡Espero que hagan una secuela!" #!String
+    Penny_like_BeforeMovie: "Hey, ¡He oído cosas buenas de esta película!" #!String
+    Penny_like_AfterMovie: "¡Ha sido genial! ¡Gracias por verla conmigo!" #!String
+    Penny_dislike_BeforeMovie: "Yo no habría escogido esta, pero intentaré darle una oportunidad..." #!String
+    Penny_dislike_DuringMovie: "..." #!String
+    Penny_dislike_AfterMovie: "Lo siento si te he arruinado la película, no me ha gustado demasiado..." #!String
+    Penny_seen_love_BeforeMovie: "Ooh, ¡«{0}»! ¡esta la he visto con {2}!" #!String
+    Penny_seen_like_BeforeMovie: "Esta la he visto con {2}, ¡es muy buena!" #!String
+    Penny_seen_dislike_BeforeMovie: "Hmm, creo que {2} me trajo a ver esta..." #!String
+    Pam_*_BeforeMovie: "Hey, muchacho. Gracias por invitarme." #!String
+    Pam_*_AfterMovie: "Heh, ¡No ha estado mal!" #!String
+    Krobus_fall_movie_0_BeforeMovie: "Psst... Hey, soy yo, Krobus. ¿Has podido reconocerme?$8#$b#Si alguien se acerca, hablas tú, ¿vale?$8" #!String
+    Krobus_fall_movie_0_DuringMovie: "¡No todos los sombríos son así!$8" #!String
+    Krobus_fall_movie_0_DuringMovie_2: "Krobus se está asando..." #!String
+    Krobus_fall_movie_0_AfterMovie: "No acostumbro a llevar ropa... ¡Es muy incómodo!$8" #!String
+    Krobus_*_BeforeMovie: "*ahem*... ¡Hola! Me emociona estar en el centro de entretenimiento audiovisual y consumir el maíz eclosionado... ¡Igual que a ti!$8#$b#*susurro*... ¿Qué tal lo hago?$8" #!String
+    Krobus_*_AfterMovie: "Así que, ¿tu especie disfruta viendo luces parpadeantes durante horas? Muy interesante...$8" #!String
+    Wizard_fall_movie_0_BeforeMovie: "Siento un poder arcano impregnando el edificio esta noche..." #!String
+    Wizard_fall_movie_0_DuringMovie: "Y pensar... ¡que el hombre de a pie no sabe que este vídeo es real y no está manipulado!" #!String
+    Wizard_fall_movie_0_DuringMovie_2: "Le brillan los ojos al mago..." #!String
+    Wizard_fall_movie_0_AfterMovie: "Para aquellos que conocen los misterios esotéricos, ha tenido connotaciones muy profundas..." #!String
+    Wizard_*_BeforeMovie: "..." #!String
+    Wizard_*_AfterMovie: "¿Me has sacado de mis estudios para «esto»?" #!String
+    George_love_BeforeMovie: "El periódico le ha dado «5 estrellas», así que le daré una oportunidad." #!String
+    George_love_AfterMovie: "¡Heh! ¡Ha estado muy bien! Gracias por invitarme." #!String
+    George_like_BeforeMovie: "Hmph... Los cines ya no son como antes... Pero la apariencia parece suficiente." #!String
+    George_like_AfterMovie: "Heh. Comparado con la mayoría de películas de ahora, no ha estado mal.$h" #!String
+    George_dislike_BeforeMovie: "Hmph... Me echaré una siesta mientras dure." #!String
+    George_dislike_AfterMovie: "¡Vergonzoso! La basura que intentan hacer pasar por «películas» hoy en dia... " #!String
+    Alex_summer_movie_1_BeforeMovie: "Esta es supuestamente muy divertida, estoy deseando verla." #!String
+    Alex_summer_movie_1_AfterMovie: "¡Hah! Realmente me ha gustado. pero no sé si podría sobrevivir a base de discos de gluten de esa manera." #!String
+    Alex_love_BeforeMovie: "He estado queriendo ver esta película un tiempo. ¡Gracias por la entrada, @!" #!String
+    Alex_love_AfterMovie: "¡Ha sido genial! Mis piernas están temblando de la emoción." #!String
+    Alex_like_BeforeMovie: "Hey, ¡Sigo emocionado por ver la película! Aunque voy a necesitar un aperitivo..." #!String
+    Alex_like_AfterMovie: "Hey, ha sido muy buena. Gracias por invitarme, @." #!String
+    Alex_dislike_BeforeMovie: "Esta película parece un poco friki, pero le daré una oportunidad." #!String
+    Alex_dislike_AfterMovie: "No puedo decirte si ha sido aburrida, o si no soy lo suficientemente listo para entenderla...$s" #!String
+    Evelyn_love_BeforeMovie: "Antes de que este cine llegase al pueblo... ¡no había visto una película en veinte años!$h" #!String
+    Evelyn_love_AfterMovie: "Me ha encantado... ahora ya sabes por qué «{2}» es considerada un clásico." #!String
+    Evelyn_like_BeforeMovie: "Es muy amable por tu parte el invitar a una señora mayor a ver una película.$h" #!String
+    Evelyn_like_AfterMovie: "Me alegra saber que aún hacen películas decentes... ¡Me he divertido mucho!" #!String
+    Evelyn_dislike_BeforeMovie: "Nunca he sido fan de las películas de terror, pero intentaré mantener una mente abierta." #!String
+    Evelyn_dislike_DuringMovie: "¿Se ha acabado ya?$s" #!String
+    Evelyn_dislike_DuringMovie_2: "Evelyn se tapa los ojos." #!String
+    Evelyn_dislike_AfterMovie: "Estuve con los ojos cerrados durante la mayoría del tiempo...$s" #!String
+    Pierre_love_BeforeMovie: "crecí viendo antiguas películas de ciencia ficción, así que me gustaría ver una versión moderna del género." #!String
+    Pierre_love_AfterMovie: "¡Hah! No ha sido lo que esperaba, ¡pero me ha acabado gustando mucho! Me he identificado con Wumbus.$h" #!String
+    Pierre_like_BeforeMovie: "Suelo estar trabajando todo el tiempo, así que es genial hacer algo como esto de vez en cuando." #!String
+    Pierre_like_AfterMovie: "¡No ha estado mal! Me pregunto si habrá algo de «merchandise» que pueda coleccionar..." #!String
+    Abigail_summer_movie_0_BeforeMovie: "No me puedo creer que hayan hecho una película sobre el Rey de la Pradera... ¡Espero que sea buena!" #!String
+    Abigail_summer_movie_0_DuringMovie: "Escucha... tiene esa antigua pero familiar música.$h" #!String
+    Abigail_summer_movie_0_AfterMovie: "Bueno, los actores han sido malísimos, pero aun así me lo he pasado bien.$h" #!String
+    Abigail_spring_movie_1_BeforeMovie: "Estoy emocionada por «explorar nuestro vivo mundo»... ¿y tú?$h" #!String
+    Abigail_spring_movie_1_DuringMovie: "¡Eso no lo sabía!" #!String
+    Abigail_spring_movie_1_AfterMovie: "Ha sido muy interesante. Lo que más me ha gustado han sido los mapaches... ¡son tan adorables!$h" #!String
+    Abigail_love_BeforeMovie: "Me encantan las películas de terror... ¡Espero que dé miedo!$h" #!String
+    Abigail_love_DuringMovie: "¡Jaja! No da miedo, pero me encanta.$h" #!String
+    Abigail_love_DuringMovie_2: "¡Abigail se está riendo!" #!String
+    Abigail_love_AfterMovie: "Ha sido un poco cutre, pero me ha gustado.$h" #!String
+    Abigail_like_BeforeMovie: "¡Hey! Gracias por invitarme, me encanta ir al cine.$h" #!String
+    Abigail_like_AfterMovie: "Ha sido interesante... ¿Me pregunto qué habría hecho yo en la misma situación?" #!String
+    Abigail_dislike_BeforeMovie: "Después de ver el trailer, esta parece que va a ser una «fiesta de la siesta»...$6" #!String
+    Abigail_dislike_DuringMovie: "Despiértame si algo interesante ocurre.$6" #!String
+    Abigail_dislike_AfterMovie: "*bostezo*... ha sido muy aburrida, ¿no crees?$6" #!String
+    Caroline_summer_movie_0_BeforeMovie: "Siempre me han gustado las películas del salvaje oeste, ¡estoy muy emocionada por ver esta!" #!String
+    Caroline_summer_movie_0_AfterMovie: "¡Ha sido genial! Se ha sentido realmente auténtica, con la vestimenta y todo lo demás." #!String
+    Caroline_love_BeforeMovie: "Esta película parece muy mona, ¡Estaba esperando a que alguien me invitase!" #!String
+    Caroline_love_DuringMovie: "Espero que el pobre pequeñajo esté bien...$s" #!String
+    Caroline_love_AfterMovie: "Ha sido adorable. ¡Gracias por invitarme!" #!String
+    Caroline_like_BeforeMovie: "«{0}»... ¡No se de qué va! Espero que no sea violenta." #!String
+    Caroline_like_AfterMovie: "¡No ha estado mal! Le preguntaré a Abigail cuando esté en casa, seguro que la ha visto.$h" #!String
+    Caroline_dislike_BeforeMovie: "Siento que esta va a ser una decepción... Pero aun así le voy a dar una oportunidad." #!String
+    Caroline_dislike_AfterMovie: "Ha sido un poco absurdo... Apuesto que a Pierre le gustará.$s" #!String
+    Harvey_spring_movie_1_BeforeMovie: "Estoy nervioso por ver esta pelicula... *traga saliva*" #!String
+    Harvey_spring_movie_1_DuringMovie: "¡Tengo miedo!$8" #!String
+    Harvey_spring_movie_1_DuringMovie_2: "¡Harvey está temblando!" #!String
+    Harvey_spring_movie_1_AfterMovie: "Tengo miedo a las alturas, por lo que esos agudos planos desde el cielo me han afectado... Aunque me ha gustado en general.$h" #!String
+    Harvey_love_BeforeMovie: "He leído muy buenas críticas en el Ciudad Zuzu Times..." #!String
+    Harvey_love_DuringMovie: "Te hace pensar, ¿No es así?" #!String
+    Harvey_love_AfterMovie: "¡Ha sido excepcional! Me alegra mucho que me trajeses a ver esta película, @.$h" #!String
+    Harvey_like_BeforeMovie: "No suelo ver muchas películas, pero esta ha sido bien recibida, ¿verdad?" #!String
+    Harvey_like_AfterMovie: "¡Esta ha sido interesante! Voy a estar pensando en {0} un tiempo." #!String
+    Harvey_dislike_BeforeMovie: "Esta película parece un poco intensa para mí...$s" #!String
+    Harvey_dislike_DuringMovie: "Me siento débil...$8" #!String
+    Harvey_dislike_DuringMovie_2: "¡La presión en sangre de Harvey se está disparando!" #!String
+    Harvey_dislike_AfterMovie: "Siento mi cuerpo enconado después de esa película...$s" #!String
+    Gus_summer_movie_1_BeforeMovie: "He visto un anuncio de esta película en televisión. ¡Parece muy divertida!" #!String
+    Gus_summer_movie_1_AfterMovie: "Como experto principiante, la extraña obsesión con la comida basada en gluten ha sido divertidísima.$h" #!String
+    Gus_winter_movie_0_BeforeMovie: "¡No parecen unas fiestas hasta que no has visto «{0}»!" #!String
+    Gus_winter_movie_0_AfterMovie: "Ha sido conmovedor... y de alguna manera han hecho que esa mítica fruta parezca tan deliciosa. Me gustaría probarla algún día." #!String
+    Gus_fall_movie_0_BeforeMovie: "Dicen que esta película es «poco convencional»... ¿Quiere eso decir que es mala?$s" #!String
+    Gus_fall_movie_0_AfterMovie: "¿Cual ha sido el punto de esta película? No lo entiendo. Quizá soy muy viejo.$s" #!String
+    Gus_like_BeforeMovie: "*olfateo* *olfateo* ... Huelo algo delicioso..." #!String
+    Gus_like_AfterMovie: "No ha estado del todo mal. ¡Me alegro de haber venido!" #!String
+    Lewis_summer_movie_0_BeforeMovie: "Cuando era niño veía películas de cowboys... ¡Me alegra saber que el arte sigue vivo!" #!String
+    Lewis_summer_movie_0_DuringMovie: "(¿Me pregunto qué tipo de cera para el bigote usa?)" #!String
+    Lewis_summer_movie_0_DuringMovie_2: "El alcalde Lewis parece sumido en sus pensamientos..." #!String
+    Lewis_summer_movie_0_AfterMovie: "Heh, ¡Ha sido genial! Me ha devuelto a la juventud...$h" #!String
+    Lewis_spring_movie_1_BeforeMovie: "¡El gobernador en persona me recomendó esta película!" #!String
+    Lewis_spring_movie_1_AfterMovie: "¡Fantástico! Han hecho que Stardew Valley se vea precioso, ¿no es cierto? Si solamente hubiese aparecido Pueblo Pelícano...$h" #!String
+    Lewis_like_BeforeMovie: "Como alcalde, tengo que saber que tipo de películas se proyectan en nuestra comunidad. ¡Tenemos que preocuparnos de las tiernas mentes de la próxima generación!" #!String
+    Lewis_like_AfterMovie: "¡Hah! No ha estado mal... Yo diría que está «aprobada por el alcalde».$h" #!String
+    Lewis_dislike_BeforeMovie: "Hmm... Supongo que será interesante ver que tipo de películas ven los jóvenes de hoy en día..." #!String
+    Lewis_dislike_AfterMovie: "Huh... Me pregunto si los mensajes de esta película son buenos para nuestra comunidad..." #!String
+    Jodi_love_BeforeMovie: "Ví esta película hace mucho tiempo. ¡Es muy romántica!" #!String
+    Jodi_love_AfterMovie: "Ha sido encantadora... El tema de la película ha tenido un verdadero impacto en mí. ¡Gracias por traerme!" #!String
+    Jodi_like_BeforeMovie: "Espero que los asientos estén blanditos, ¡he estado de pie todo el día!" #!String
+    Jodi_like_AfterMovie: "No soy una experta en películas... ¡Pero me he divertido! Gracias, @." #!String
+    Sam_summer_movie_1_BeforeMovie: "Oh tío, ¡Estoy tan emocionado por ver la película! He oído que tiene una banda sonora genial." #!String
+    Sam_summer_movie_1_DuringMovie: "¡Esta película es divertidísima! ¿Cómo se les ocurren estas cosas?$h" #!String
+    Sam_summer_movie_1_DuringMovie_2: "¡Sam no puede contener su risa!" #!String
+    Sam_summer_movie_1_AfterMovie: "*psst*... no se lo digas a nadie, pero llevo los mismos calcetines que Wumbus." #!String
+    Sam_horror_BeforeMovie: "Así que te gustan las películas de miedo, ¿huh? ¡Estoy un poco sorprendido!" #!String
+    Sam_horror_AfterMovie: "¡Ha estado bastante bien! No me suelen dar miedo las películas, pero esta me ha impactado un poco... No creo que traiga a Vincent a ver esto." #!String
+    Sam_like_BeforeMovie: "Hey, gracias por invitarme, @... Es genial que tengamos un cine en el pueblo." #!String
+    Sam_like_AfterMovie: "¡No ha estado mal! Puede que traiga a Vincent a verla." #!String
+    Sam_dislike_BeforeMovie: "Es una película antigua con mucho diálogo, ¿verdad? Hmm... $s" #!String
+    Sam_dislike_DuringMovie: "¿Huh? ¡Oh! Sí... La película ha sido... interesante...$10" #!String
+    Sam_dislike_DuringMovie_2: "Sam está jugando con su consola portátil." #!String
+    Sam_dislike_AfterMovie: "Si... Uh... Ese personaje ha estado interesante... y, um... heh...$10" #!String
+    Vincent_love_BeforeMovie: "¡Estoy tan emocionado! ¡Y mi mamá me ha dicho que puedo comer caramelos!$h" #!String
+    Vincent_love_DuringMovie: "¡Vincent se lo está pasando genial!" #!String
+    Vincent_love_AfterMovie: "¡Ha sido muy divertido! ¡Quiero verla otra vez!$h" #!String
+    Vincent_dislike_BeforeMovie: "P... Pero... Esta película es para adultos, ¿no es verdad?$s" #!String
+    Vincent_dislike_DuringMovie: "Vincent está inquieto en su asiento." #!String
+    Vincent_dislike_AfterMovie: "Ha sido aburrido... No he entendido nada.$s" #!String
+    Kent_like_BeforeMovie: "Gracias por invitarme al cine, @. No es fácil ajustarse al estilo de vida civil, pero me has ayudado a sentirme bienvenido." #!String
+    Kent_like_DuringMovie: "Es genial... me recuerda a una época más sencilla...$h" #!String
+    Kent_like_DuringMovie_2: "Kent tiene una extraña sonrisa en su cara." #!String
+    Kent_like_AfterMovie: "Ha sido divertido. Cuando estás inmerso en una película, todas tus preocupaciones desaparecen." #!String
+    Kent_dislike_BeforeMovie: "No estoy seguro de querer ver esta película..." #!String
+    Kent_dislike_DuringMovie: "A Kent le están entrando sudores fríos..." #!String
+    Kent_dislike_AfterMovie: "Ha sido un desafío para mí. Aun así, aprecio tu invitación." #!String
+    Clint_winter_movie_1_BeforeMovie: "Se supone que esta película es un romance, ¿verdad? *suspiro*$s" #!String
+    Clint_winter_movie_1_DuringMovie: "¿Cómo es posible que le guste ESE tío? Totalmente surrealista si me preguntas...$3" #!String
+    Clint_winter_movie_1_DuringMovie_2: "Clint está frunciendo el ceño." #!String
+    Clint_winter_movie_1_AfterMovie: "Ha sido una película deprimente...$s" #!String
+    Clint_like_BeforeMovie: "Supongo que es «noche de chicos», ¿huh? ¿Quiere eso decir que me tengo que comprar mis propios aperitivos?^Oh... E... ¿Esto es una cita, entonces?$4" #!String
+    Clint_like_DuringMovie: "Es solo... *hic*... Joja Cola.$h^*susurros*...Si tienes algo de, um... cansancio... puedes poner tu cabeza en... mi hombro. Heh... ¡O no!$4" #!String
+    Clint_like_DuringMovie_2: "Clint le está dando sorbos a una botella sin etiqueta." #!String
+    Clint_like_AfterMovie: "Hey... ha sido divertido... ¿verdad?$h" #!String
+    Emily_spring_movie_1_BeforeMovie: "Me he comido unas cuantas nueces para prepararme para esta película... ¡alimento para el cerebro!" #!String
+    Emily_spring_movie_1_AfterMovie: "Me siento más lista que antes... ¿y tú?" #!String
+    Emily_love_BeforeMovie: "Cuando he visto el póster de la película, he sentido una sensación muy positiva en mi cabeza.$h" #!String
+    Emily_love_AfterMovie: "Se ha sentido muy espiritual, de alguna manera... ¿no estás de acuerdo? ¡Me ha encantado!$h" #!String
+    Emily_like_BeforeMovie: "¡Me alegra ver una película contigo! Suelo perderme completamente en la pantalla." #!String
+    Emily_like_AfterMovie: "Me siento positiva después de esa película... ¡Eso quiere decir que era una buena película!$h" #!String
+    Emily_dislike_BeforeMovie: "Generalmente voy a películas más positivas, esta será interesante." #!String
+    Emily_dislike_DuringMovie: "Yoba, por favor, protégeme de la energía oscura de esta película.$7" #!String
+    Emily_dislike_DuringMovie_2: "Emily se susurra a sí misma..." #!String
+    Emily_dislike_AfterMovie: "Mis niveles de energía están bajos después de esta película...$3" #!String
+    Haley_winter_movie_1_BeforeMovie: "Mmm... Se está muy bien y hace calorcito aquí dentro. El invierno es mi estación favorita para ir a ver una película.$h" #!String
+    Haley_winter_movie_1_AfterMovie: "Ha sido muy romántico." #!String
+    Haley_winter_movie_0_BeforeMovie: "Mmm... Se esta muy bien y hace calorcito aquí dentro. El invierno es mi estación favorita para ir a ver una película.$h" #!String
+    Haley_winter_movie_0_AfterMovie: "¡Estoy contenta de que esta película haya tenido un final feliz!" #!String
+    Haley_dislike_BeforeMovie: "Oh, ¿es una de esas películas de «fantasía»?$7" #!String
+    Haley_dislike_AfterMovie: "*Bostezo*... ¿Qué? Oh... ¿De qué iba la película?$7" #!String
+    Haley_like_BeforeMovie: "Todo el mundo habla de esta película, por eso quería verla." #!String
+    Haley_like_AfterMovie: "La última escena... ¿Qué querían decir con eso?" #!String
+    Maru_spring_movie_1_BeforeMovie: "¡Hey, @! Me gustaría ver esta película... ¡Espero que aprendamos mucho!$h" #!String
+    Maru_spring_movie_1_DuringMovie: "Ah, ya veo... ¡Es muy interesante!" #!String
+    Maru_spring_movie_1_DuringMovie_2: "¡Maru está tomando apuntes!" #!String
+    Maru_spring_movie_1_AfterMovie: "¡Ha sido muy interesante! No tenía ni idea de la gran variedad de vida que podía encontrarse en la gran ciudad." #!String
+    Maru_summer_movie_1_BeforeMovie: "Es una película de ciencia ficción, ¿verdad? Una de las cosas que me gustan de la ciencia ficción es ver las extrañas tecnologías que se les ocurren." #!String
+    Maru_summer_movie_1_AfterMovie: "Bueno, nunca he visto nada como «eso» a través de mi telescopio... ¡pero ha sido genial!$h" #!String
+    Maru_like_BeforeMovie: "Me gusta mucho ir al cine, ¡aunque la película sea mala!$h" #!String
+    Maru_like_AfterMovie: "Ha sido una elección interesante, en cuanto a la escena final: ¿Qué crees que querían decir con eso?" #!String
+    Sebastian_love_BeforeMovie: "Hey. He oído que esta película es algo macabra... Estaba esperando verla.$h" #!String
+    Sebastian_love_DuringMovie: "Esta cinematografía tiene otro nivel." #!String
+    Sebastian_love_DuringMovie_2: "Sebastian tiene una sonrisa en su cara." #!String
+    Sebastian_love_AfterMovie: "la mejor película que he visto en mucho tiempo... Me pregunto como han hecho los efectos especiales...$h" #!String
+    Sebastian_like_BeforeMovie: "*Se cruza de brazos*... El póster de la película está muy guay, vamos a verla." #!String
+    Sebastian_like_AfterMovie: "No ha sido lo mejor que he visto, pero me he divertido mucho... gracias por invitarme." #!String
+    Sebastian_dislike_BeforeMovie: "Espero que sea corta..." #!String
+    Sebastian_dislike_AfterMovie: "Es probablemente una buena película para su público objetivo, pero a mí no me ha gustado." #!String
+    Robin_love_BeforeMovie: "Estoy un poco aburrida últimamente, una película de acción es exactamente lo que necesito." #!String
+    Robin_love_AfterMovie: "¡Estoy más animada ahora! Ha sido genial.$h" #!String
+    Robin_like_BeforeMovie: "No sé de qué va esta película, ¡pero no me importa! Es buena para salir de casa." #!String
+    Robin_like_AfterMovie: "Ha sido muy divertida, @. Me alegro de que hayamos venido." #!String
+    Demetrius_winter_movie_1_BeforeMovie: "Una pequeña excursión en la nieve verdaderamente hace correr la sangre." #!String
+    Demetrius_winter_movie_1_DuringMovie: "¿Anhelos del corazón...? ¡Oh! Quieres decir «niveles elevados de oxitocina en el sistema motor»." #!String
+    Demetrius_winter_movie_1_DuringMovie_2: "Demetrius está arrugando la frente." #!String
+    Demetrius_winter_movie_1_AfterMovie: "El arte del cine ha evolucionado mucho desde aquella época, ¿no es verdad?" #!String
+    Demetrius_summer_movie_1_BeforeMovie: "Esta película está supuestamente ambientada en una sociedad «futurista»... ¡Será interesante ver qué aspecto tiene!" #!String
+    Demetrius_summer_movie_1_AfterMovie: "Una gran película... ¿pero me pregunto si hay vida más allá de este planeta?" #!String
+    Demetrius_spring_movie_1_BeforeMovie: "Esta es de las que me gustan... sabes que me va a encantar.$h" #!String
+    Demetrius_spring_movie_1_DuringMovie: "Técnicanmente, eso no es correcto...$3" #!String
+    Demetrius_spring_movie_1_DuringMovie_2: "Demetrius se esta rascando la barbilla..." #!String
+    Demetrius_spring_movie_1_AfterMovie: "Bueno, ¡definitivamente se han tropezado en algunos aspectos, pero estaba correcto en general! Aun así, me lo he pasado bien." #!String
+    Demetrius_winter_movie_0_BeforeMovie: "He leído sobre esta película en el periódico... no parece indicada para mí. pero le daré una oportunidad." #!String
+    Demetrius_winter_movie_0_AfterMovie: "¡Sinsentido! ¡Ha sido totalmente acientífico!$4" #!String
+    Demetrius_like_BeforeMovie: "Aunque una película sea mala, es interesante de analizar." #!String
+    Demetrius_like_AfterMovie: "Hmm... Me pregunto que aspecto de la motivación humana es satisfecho por la narrativa de esta película...$3" #!String
+    Linus_spring_movie_1_BeforeMovie: "Me siento fuera de lugar aquí... Espero no molestar a nadie.$s" #!String
+    Linus_spring_movie_1_DuringMovie: "Linus está mirando al suelo..." #!String
+    Linus_spring_movie_1_AfterMovie: "¿Por qué mirar una pantalla cuando puedes experimentar todo eso tú mismo?$s" #!String
+    Linus_dislike_BeforeMovie: "Me siento fuera de lugar aquí... Espero no molestar a nadie.$s" #!String
+    Linus_dislike_DuringMovie: "Linus está mirando al suelo..." #!String
+    Linus_dislike_AfterMovie: "No estoy acostumbrado a tanta estimulación... lo siento si he sido un invitado decepcionante, @. ¡Aun así te agradezco la invitación!" #!String
+    Dwarf_love_BeforeMovie: "Oh, ¡wow! ¡Un lugar construido con el entretenimiento como único propósito!" #!String
+    Dwarf_love_DuringMovie: "El Enano parece estar en un profundo trance..." #!String
+    Dwarf_love_AfterMovie: "No he entendido nada, ¡pero las luces centelleantes han sido fascinantes!" #!String
+    Marnie_love_BeforeMovie: "¡Sé que me va a encantar esta película! Ha sido un detalle por tu parte el invitarme, @.$h" #!String
+    Marnie_love_AfterMovie: "Oh, me alegro de que la familia estuviese a salvo al final. ¡Y las vacas también!$h" #!String
+    Marnie_like_BeforeMovie: "Soy muy poco crítica con las películas... ¡Me gusta cualquier cosa!" #!String
+    Marnie_like_AfterMovie: "¡Me lo he pasado muy bien, @! Gracias por acordarte de mí." #!String
+    Shane_summer_movie_0_BeforeMovie: "Pero... Sí, supongo que esta está bien. *sniff* *sniff* ... un aperitivo seguro que ayuda." #!String
+    Shane_summer_movie_0_DuringMovie: "Yo estoy con el villano... *urp*" #!String
+    Shane_summer_movie_0_AfterMovie: "Vale, lo admito... Me ha gustado mucho." #!String
+    Shane_love_BeforeMovie: "Heh. Realmente me interesa ver esta película..." #!String
+    Shane_love_DuringMovie: "Vale, ha estado bien...$h" #!String
+    Shane_love_DuringMovie_2: "Shane intenta no sonreír." #!String
+    Shane_love_AfterMovie: "Cuando estás viendo una buena película, puedes olvidarte de todo lo demás... Es un regalo." #!String
+    Shane_like_BeforeMovie: "Per... Sí, supongo que esto está bien. *sniff* *sniff* ... un aperitivo seguro que ayuda." #!String
+    Shane_like_AfterMovie: "Vale, lo admito... Me ha gustado mucho." #!String
+    Shane_dislike_BeforeMovie: "Ugh... esto va a ser doloroso." #!String
+    Shane_dislike_DuringMovie: "Shane se desploma..." #!String
+    Shane_dislike_AfterMovie: "Estoy deprimido...$s" #!String
+    Jas_love_BeforeMovie: "¡Me encantaría ver una película!" #!String
+    Jas_love_DuringMovie: "¡Jas está enfervorizada!" #!String
+    Jas_love_AfterMovie: "¡Ha sido tan divertida...! ¡Gracias por traerme!$h" #!String
+    Jas_like_BeforeMovie: "Esta es una película de adultos, ¿verdad? ¡Estaré bien!" #!String
+    Jas_like_DuringMovie: "Jas está cabeceando y mirando hacia los lados." #!String
+    Jas_like_AfterMovie: "¡Ha estado bien! ¡Tenía... um... buen «di-funt-álogo »! ...¿verdad?" #!String
+    Jas_horror_BeforeMovie: "Yo... Yo no estoy segura de que me dejen ver esto...$s" #!String
+    Jas_horror_DuringMovie: "Tengo miedo...$s" #!String
+    Jas_horror_DuringMovie_2: "Jas está temblando." #!String
+    Jas_horror_AfterMovie: "*sniff*...$s" #!String
+    Leah_spring_movie_1_BeforeMovie: "He oído que hay unas escenas naturales muy bonitas en esta película... ¡Estaba deseando verla!$h" #!String
+    Leah_spring_movie_1_AfterMovie: "Ha sido genial. ¡Estoy segura de que he visto mi casa en una de esas tomas aéreas de Stardew Valley!$h" #!String
+    Leah_love_BeforeMovie: "Estoy muy intrigada por esta película... Me encanta todo lo misterioso." #!String
+    Leah_love_AfterMovie: "¡Ha sido genial! La narrativa era algo ambigua, pero creo que estaba hecha para hablarle a las emociones, no al intelecto." #!String
+    Leah_like_BeforeMovie: "No se qué esperar de esta película, ¡Pero mantendré una mentalidad abierta!" #!String
+    Leah_like_AfterMovie: "Ha sido simple, pero buena... Es como la confortante comida del cine." #!String
+    Leah_dislike_BeforeMovie: "Esta parece bastante cutre viendo el póster." #!String
+    Leah_dislike_AfterMovie: "Ha sido algo ruda, ¿no es así?" #!String
+    Sandy_love_BeforeMovie: "¡Me alegra tener una excusa para venir a Pueblo Pelícano!" #!String
+    Sandy_love_AfterMovie: "¡Ha sido muy divertido, gracias por invitarme! Debo irme a casa pronto..." #!String
+    Elliott_love_BeforeMovie: "¡Predigo que esta será una noche exquisita!" #!String
+    Elliott_love_AfterMovie: "Siento que mi espíritu está cargado... como si la energía de la película hubiese sido transferida a mí. ¡Increíble!" #!String
+    Elliott_like_BeforeMovie: "He evitado todo tipo de información sobre esta película... ¡Me gustaría ir completamente «a ciegas»!" #!String
+    Elliott_like_AfterMovie: "Muy interesante... Estaré reflexionando sobre ella un tiempo." #!String
+    Elliott_dislike_BeforeMovie: "Mentiría si dijese que tengo ganas de ver esta película...$s" #!String
+    Elliott_dislike_AfterMovie: "Ha sido muy vulgar, ¿no crees?" #!String
+    Willy_like_BeforeMovie: "Hehe... ¡Nunca rechazaría una película gratis!" #!String
+    Willy_like_AfterMovie: "Ah, me recuerda a una historia el viejo Pops solía contar..." #!String
+    Leo_love_BeforeMovie: "Estoy emocionado por ver esto... ¡Quiero aprenderlo todo sobre el mundo!" #!String
+    Leo_love_DuringMovie: "¡Leo está pegado a la pantalla!" #!String
+    Leo_love_AfterMovie: "¿Has visto eso? Enseñaron las islas helecho... ¡De ahí es de donde vengo!$h" #!String
+    Leo_like_BeforeMovie: "Me alegra estar aquí. ¡Es todo tan interesante!" #!String
+    Leo_like_DuringMovie: "Leo parece muy interesado en la película." #!String
+    Leo_like_AfterMovie: "Wow... ¡Ha sido como magia!" #!String
+

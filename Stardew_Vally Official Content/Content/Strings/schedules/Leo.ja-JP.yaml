@@ -1,0 +1,24 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    winter_15.000: "明かりを見るのが好きなんだ。#$b#思い出すんだ、とても、とても昔の何かを…$s" #!String
+    winter.000: "時間がかかりそうだけど、図書館の本をぜんぶ読もうと思ってるんだ。#$b#ボクはもっと色んなことを知らなきゃいけない…$s" #!String
+    school: "今はお喋りできないよ、@。集中したいんだ…" #!String
+    dinner: "お腹がすいたの？ボクはもう全部食べ終わったよ…$u" #!String
+    tent: "ボクらはあまり雨を気にしないんだけど、たまにはここで乾かすのもいいね。" #!String
+

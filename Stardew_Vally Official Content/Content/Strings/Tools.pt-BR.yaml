@@ -1,0 +1,73 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Axe_Name: "Machado" #!String
+    Axe_Description: "Usado para cortar madeira." #!String
+    Axe_Copper_Name: "Machado de Cobre" #!String
+    Axe_Steel_Name: "Machado de Aço" #!String
+    Axe_Gold_Name: "Machado de Ouro" #!String
+    Axe_Iridium_Name: "Machado de Irídio" #!String
+    FishingRod_Description: "Utilize na água para pegar peixes." #!String
+    FishingRod_Training_Name: "Vara de Treinamento" #!String
+    FishingRod_Training_Description: "Bem mais fácil de usar do que outras varas, mas só pode pegar peixes básicos." #!String
+    FishingRod_Bamboo_Name: "Vara de Bambu" #!String
+    FishingRod_Fiberglass_Name: "Vara de Fibra de Vidro" #!String
+    FishingRod_Iridium_Name: "Vara de Irídio" #!String
+    FishingRod_AdvancedIridium_Name: "Vara de Irídio Avançada" #!String
+    FishingRod_AdvancedIridium_Description: "Use na água para pescar peixes. Até dois equipamentos podem ser colocados simultaneamente." #!String
+    Hoe_Name: "Enxada" #!String
+    Hoe_Description: "Utilizada para cavar e arar o solo." #!String
+    Hoe_Copper_Name: "Enxada de Cobre" #!String
+    Hoe_Steel_Name: "Enxada de Aço" #!String
+    Hoe_Gold_Name: "Enxada de Ouro" #!String
+    Hoe_Iridium_Name: "Enxada de Irídio" #!String
+    Lantern_Name: "Lanterna" #!String
+    Lantern_Description: "Ilumina lugares escuros." #!String
+    MilkPail_Name: "Balde de Leite" #!String
+    MilkPail_Description: "Obtenha leite de seus animais." #!String
+    Pan_Description: "Utilize para obter minérios de riachos." #!String
+    Pan_Copper_Name: "Peneira de Cobre" #!String
+    Pan_Steel_Name: "Peneira de Aço" #!String
+    Pan_Steel_Description: "Utilize para obter minérios de riachos. Obtém resultados maiores e melhores que uma peneira de cobre. Também tem uma pequena chance de fazer um novo local de peneiração surgir imediatamente." #!String
+    Pan_Gold_Name: "Peneira de Ouro" #!String
+    Pan_Gold_Description: "Utilize para obter minérios de riachos. Obtém resultados maiores e melhores que uma peneira de aço. Também tem uma pequena chance de fazer um novo local de peneiração surgir imediatamente." #!String
+    Pan_Iridium_Name: "Peneira de Irídio" #!String
+    Pan_Iridium_Description: "Utilze para obter minérios de riachos. Obtém os melhores resultados de qualquer peneira. Também tem uma chance de fazer um novo local de peneiração surgir imediatamente." #!String
+    Pickaxe_Name: "Picareta" #!String
+    Pickaxe_Description: "Utilizada para quebrar pedras." #!String
+    Pickaxe_Copper_Name: "Picareta de Cobre" #!String
+    Pickaxe_Steel_Name: "Picareta de Aço" #!String
+    Pickaxe_Gold_Name: "Picareta de Ouro" #!String
+    Pickaxe_Iridium_Name: "Picareta de Irídio" #!String
+    ReturnScepter_Name: "Cetro do Retorno" #!String
+    ReturnScepter_Description: "Seu cabo dourado treme de tanto potencial. Aponte este cetro para os céus e retorne pra casa quando desejar." #!String
+    Shears_Name: "Tesoura" #!String
+    Shears_Description: "Utilize para tosquiar lã de ovelhas" #!String
+    TrashCan_Name: "Lixeira" #!String
+    TrashCan_Description: "Quando descartar um item, você recupera {0}% de seu valor." #!String
+    TrashCan_Copper_Name: "Lixeira de Cobre" #!String
+    TrashCan_Steel_Name: "Lixeira de Aço" #!String
+    TrashCan_Gold_Name: "Lixeira de Ouro" #!String
+    TrashCan_Iridium_Name: "Lixeira de Irídio" #!String
+    WateringCan_Name: "Regador" #!String
+    WateringCan_Description: "Utilizado para regar plantações. Pode ser recarregado em qualquer fonte de água." #!String
+    WateringCan_Copper_Name: "Regador de Cobre" #!String
+    WateringCan_Steel_Name: "Regador de Aço" #!String
+    WateringCan_Gold_Name: "Regador de Ouro" #!String
+    WateringCan_Iridium_Name: "Regador de Irídio" #!String
+

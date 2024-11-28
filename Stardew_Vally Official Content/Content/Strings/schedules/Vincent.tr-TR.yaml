@@ -1,0 +1,23 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    winter_16.000: "Kayığa binmek istiyorum!" #!String
+    spring_11.001: "*yutkunur*... Anneciğim, lütfen beni zorlama.$s" #!String
+    spring_11.002: "Cesur olduğum için lolipop kazandım mı?" #!String
+    spring_11.000: "*hıçkırır*... Bugün iğne olacağım.$s" #!String
+

@@ -1,0 +1,62 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.Int32Reader"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<Int32,String>
+    0: "Néophyte (15k)^Gagner 15,000po^true^-1^18" #!String
+    1: "Piquevache (50k)^Gagner 50,000po^true^0^21" #!String
+    2: "Marteau-hardi (250k)^Gagner 250,000po^true^1^20" #!String
+    3: "Millionnaire (1M)^Gagner 1,000,000po^true^2^1" #!String
+    4: "Légende (10M)^Gagner 10,000,000po^false^-1^3" #!String
+    5: "Une collection complète^Compléter la collection du musée.^true^28^0" #!String
+    6: "Un nouvel ami^Atteindre 5 coeurs d’amitié avec quelqu’un.^true^-1^14" #!String
+    7: "Meilleurs amis^Atteindre 10 coeurs d’amitié avec quelqu’un.^true^6^31" #!String
+    9: "Le fermier bien-aimé^Atteindre 10 coeurs d’amitié avec 8 personnes.^true^7^32" #!String
+    11: "Groupe d’amis^Atteindre 5 coeurs d’amitié avec 4 personnes.^true^6^26" #!String
+    12: "Collaboration^Atteindre 5 coeurs d’amitié avec 10 personnes.^true^11^25" #!String
+    13: "Populaire^Atteindre 5 coeurs d’amitié avec 20 personnes.^true^12^11" #!String
+    15: "Cuisinier^Cuisiner 10 recettes différentes.^true^18^12" #!String
+    16: "Sous-chef^Cuisiner 25 recettes différentes.^true^15^7" #!String
+    17: "Chef gastronomique^Cuisiner toutes les recettes.^true^16^35" #!String
+    18: "Changement^Améliorer sa maison.^true^-1^13" #!String
+    19: "Belle vie^Améliorer sa maison à la grandeur maximale.^true^18^15" #!String
+    20: "Bricolage^Fabriquer 15 objets différents.^true^-1^29" #!String
+    21: "Artisan^Fabriquer 30 objets différents.^true^20^16" #!String
+    22: "Maître artisan^Fabriquer tous les objets.^true^21^23" #!String
+    24: "Pêcheur^Attraper 10 poissons différents.^true^-1^28" #!String
+    25: "Marin^Attraper 24 poissons différents.^true^24^5" #!String
+    26: "Maître pêcheur^Attraper tous les poissons.^true^25^24" #!String
+    27: "Le bon filon^Attraper 100 poissons.^true^64^30" #!String
+    28: "Trésor^Donner 40 objets différents au musée.^true^-1^6" #!String
+    29: "Coursier^Terminer 10 offres \"d’embauche\".^true^-1^22" #!String
+    30: "D’une grande aide^Terminer 40 offres \"d’embauche\".^true^29^10" #!String
+    31: "Polyculture^Expédier 15 spécimens de chaque récolte.^true^-1^34" #!String
+    32: "Monoculture^Expédier 300 spécimens de chaque récolte.^true^-1^33" #!String
+    34: "Cargaison pleine^Expédier toutes les sortes de récolte.^true^-1^9" #!String
+    35: "Instruit.^Lire tous les livres.^true^-1^9" #!String
+    36: "Deux pouces en l’air.^Voir un film.^false^-1^9" #!String
+    37: "Ruban bleu.^Obtenir la 1re place au concours du grand festival de Stardew Valley.^true^-1^9" #!String
+    38: "Une soupe inoubliable.^Réjouir le gouverneur.^true^-1^9" #!String
+    39: "Bons voisins.^Aider ses voisins de la forêt à agrandir leur famille.^true^-1^9" #!String
+    40: "Un rivage lointain.^Atteindre l’île Gingembre.^false^-1^9" #!String
+    41: "Danger dans les profondeurs.^Atteindre le fond des mines \"dangereuses\".^false^-1^9" #!String
+    42: "Pouvoir infini.^Obtenir l’arme la plus puissante.^true^-1^9" #!String
+    44: "Perfection.^Atteindre le sommet.^false^-1^9" #!String
+

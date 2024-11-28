@@ -1,0 +1,49 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    SpouseStardrop: "Eu queria te dar isso como um agradecimento por ter me deixado morar com você.$h" #!String
+    4_*: "...Você encontrou outros como eu nas cavernas? Desculpe se eles foram hostis com você. Sabe, nós aprendemos a ter medo de humanos... já houveram muitos... encontros desagradáveis.#$e#Você não... matou nenhum dos meus amigos, certo?" #!String
+    AcceptBirthdayGift_Positive: "Oh, um presente para relembrar o dia em que eu eclodi! Obrigado!$h" #!String
+    GreenRain: "O fluxo de água está muito mais forte que o normal hoje... o que está acontecendo lá em cima?" #!String
+    AcceptBirthdayGift_Negative: "Oh... isto é o que você chama de 'presente de aniversário'? Eu não entendo humanos...$s" #!String
+    AcceptGift_(O)StardropTea: "Isto é Chá de Fruta-Estrela? Obrigado! Uma gota faz meu quarto cheirar bem o dia todo." #!String
+    AcceptGift_(O)Book_Void: "Ei, olha! Todos os meus amigos estão aqui!$h#$b#Espera ai, esse sou eu...?$7" #!String
+    AcceptGift_(O)879: "Um presente cheiroso? Oh, @... Eu estou corando, mas você provavelmente não percebeu...$4" #!String
+    AcceptGift_(O)308: "Que aroma delicioso! Vou comer metade, e usar o resto para hidratar o meu corpo...$h" #!String
+    8_*: "Uma guerra de 1000 anos entre o meu povo e os anões terminou recentemente. Ainda há muito ressentimento de ambas as partes." #!String
+    15_*: "Por favor, mantenha em segredo a minha localização. Se os anões souberem de mim, eles com certeza enviarão um assassino." #!String
+    18_*: "Eu tento não fazer muito barulho aqui. Imagina se as pessoas da vila ouvissem os meus barulhos estranhos vindo dos esgotos..." #!String
+    Fri: "..." #!String
+    eventSeen_691039: "...Fiquei um pouco machucado, mas estou bem." #!String
+    reject_868: "Oh, é um estilhaço ártico! Isso é um item mágico muito raro.#$b#Eu levaria para o Feiticeiro se eu fosse você!" #!String
+    Wed: "Encontro coisas aqui e as vendo. Quer comprar alguma coisa?" #!String
+    Wed6: "Se você colocar sua orelha no cano certo, você consegue ouvir qualquer casa daqui de baixo.#$b#Mas eu não bisbilhotaria!$3" #!String
+    Thu: "Por favor, não conte a ninguém sobre mim.#$b#Humanos tendem a destruir aquilo que não entendem." #!String
+    Thu6: "Por favor não conte a ninguém sobre mim.#$b#A maioria dos humanos têm medo do povo das sombras... talvez por uma boa razão.$s#$b#Mas mesmo assim, se as pessoas souberem de mim, eu não estarei seguro aqui." #!String
+    Tue: "Sou muito sensível à luz do sol para sair durante o dia.#$b#As condições aqui são perfeitas.#$e#Quer comprar algo?" #!String
+    Mon: "Por favor, não tenha medo. Sou diferente dos outros.#$e#Passei muito tempo observando os humanos. Sei que você gosta de comprar. Quer dar uma olhada nas minhas mercadorias?" #!String
+    Mon2: "Voltou? Acho que isso não se encaixa na minha teoria sobre o comportamento humano." #!String
+    Mon6: "\"Krobus\" significa \"cruzador de pontes\" na nossa língua." #!String
+    Sat: "Às sextas, fico em silêncio como sinal de devoção à Ioba." #!String
+    Sat4: "Eu adoraria ver mais do mundo exterior, mas não seria seguro para mim.$s" #!String
+    Sat8: "Eu nunca vou saber como é ser humano... mas falando com você, eu sinto que consigo entender um pouquinho." #!String
+    Sun: "... Desculpe, mas ainda tenho um pouco de medo de humanos. Mas minha loja ainda está aberta a você." #!String
+    Sun4: "Você não é como os outros humanos, é?" #!String
+    Sun8: "Você abriu os meus olhos para o mundo dos humanos. Eu agradeço." #!String
+    divorced: "..." #!String
+

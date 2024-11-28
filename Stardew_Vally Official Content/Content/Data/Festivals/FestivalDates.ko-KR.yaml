@@ -1,0 +1,27 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    spring13: "달걀 축제" #!String
+    spring24: "봄꽃 무도회" #!String
+    summer11: "루아우" #!String
+    summer28: "달빛 해파리들의 춤" #!String
+    fall16: "스타듀 밸리 품평회" #!String
+    fall27: "영령의 전야제" #!String
+    winter8: "얼음 축제" #!String
+    winter25: "겨울 별의 만찬" #!String
+

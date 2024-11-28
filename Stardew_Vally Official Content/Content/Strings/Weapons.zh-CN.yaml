@@ -1,0 +1,153 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    AbbysPlanchette_Name: "阿比盖尔的占卜写板" #!String
+    AbbysPlanchette_Description: "用大理石木打造而成。" #!String
+    AlexsBat_Name: "亚历克斯的棒球棍" #!String
+    AlexsBat_Description: "亚历克斯赢得大满贯的棒球棍。" #!String
+    BoneSword_Name: "骨剑" #!String
+    BoneSword_Description: "磨尖的骨头打造的轻剑。" #!String
+    BrokenTrident_Name: "残破的三叉戟" #!String
+    BrokenTrident_Description: "来自海洋，依然尖锐。" #!String
+    BurglarsShank_Name: "飞贼之胫" #!String
+    BurglarsShank_Description: "身手敏捷、行动隐秘的人首选之武器。" #!String
+    CarvingKnife_Name: "刻刀" #!String
+    CarvingKnife_Description: "很轻的小刀。" #!String
+    Claymore_Name: "双刃大剑" #!String
+    Claymore_Description: "非常沉重。" #!String
+    CrystalDagger_Name: "水晶匕首" #!String
+    CrystalDagger_Description: "此刀由纯石英打造。" #!String
+    Cutlass_Name: "弯刀" #!String
+    Cutlass_Description: "质量上乘的刀刃。" #!String
+    DarkSword_Name: "黑暗剑" #!String
+    DarkSword_Description: "散发着神秘的能量。" #!String
+    DragontoothClub_Name: "龙牙棒" #!String
+    DragontoothClub_Description: "这根棍子是用一颗充满魔力的牙齿锻造而成的。" #!String
+    DragontoothCutlass_Name: "龙牙弯刀" #!String
+    DragontoothCutlass_Description: "这把刀是用一颗充满魔力的牙齿锻造而成的。" #!String
+    DragontoothShiv_Name: "龙牙小刀" #!String
+    DragontoothShiv_Description: "这把刀是用一颗充满魔力的牙齿锻造而成的。" #!String
+    DwarfDagger_Name: "矮人匕首" #!String
+    DwarfDagger_Description: "它很古老，但刃锋未曾变钝。" #!String
+    DwarfHammer_Name: "矮人锤" #!String
+    DwarfHammer_Description: "它会发出微弱的嗡嗡声。" #!String
+    DwarfSword_Name: "矮人剑" #!String
+    DwarfSword_Description: "很古老，但剑锋未曾变钝。" #!String
+    ElfBlade_Name: "精灵之刃" #!String
+    ElfBlade_Description: "唯有精灵的巧手才能打造出这件物品。" #!String
+    ElliottsPencil_Name: "艾利欧特的铅笔" #!String
+    ElliottsPencil_Description: "艾利欧特用它来写书。非常尖锐！" #!String
+    Femur_Name: "股骨" #!String
+    Femur_Description: "一根古老沉重的骨头，覆盖着数个世纪的尘垢。" #!String
+    ForestSword_Name: "森林剑" #!String
+    ForestSword_Description: "由森林魔法打造的强力之剑。" #!String
+    GalaxyDagger_Name: "银河匕首" #!String
+    GalaxyDagger_Description: "你闻所未闻。" #!String
+    GalaxyHammer_Name: "银河之锤" #!String
+    GalaxyHammer_Description: "用一种你闻所未闻的超轻材料打造而成。" #!String
+    GalaxySlingshot_Name: "银河弹弓" #!String
+    GalaxySlingshot_Description: "看上去很强大。" #!String
+    GalaxySword_Name: "银河剑" #!String
+    GalaxySword_Description: "谁与争锋。" #!String
+    GoldenScythe_Name: "金色的镰刀" #!String
+    GoldenScythe_Description: "它比传统的镰刀更强大。" #!String
+    HaleysIron_Name: "海莉的烫发棒" #!String
+    HaleysIron_Description: "非常烫手，散发着跟海莉的头发一样的味道。" #!String
+    HarveysMallet_Name: "哈维的锤子" #!String
+    HarveysMallet_Description: "让人想起哈维的诊所。" #!String
+    HolyBlade_Name: "圣剑" #!String
+    HolyBlade_Description: "握在手里，充满正能量。" #!String
+    InfinityBlade_Name: "无限之刃" #!String
+    InfinityBlade_Description: "银河剑的真实形态。" #!String
+    InfinityDagger_Name: "无限匕首" #!String
+    InfinityDagger_Description: "银河匕首的真实形态。" #!String
+    InfinityGavel_Name: "无限之锤" #!String
+    InfinityGavel_Description: "银河之锤的真实形态。" #!String
+    InsectHead_Name: "昆虫头部" #!String
+    InsectHead_Description: "挥起来很不舒服。" #!String
+    IridiumNeedle_Name: "铱针" #!String
+    IridiumNeedle_Description: "其尖锐超出想象，甚至微观到原子层面也是无比尖锐。" #!String
+    IridiumScythe_Name: "铱镰刀" #!String
+    IridiumScythe_Description: "可以收割所有作物，收集干草效果极佳。" #!String
+    IronDirk_Name: "铁制短剑" #!String
+    IronDirk_Description: "一把普通的匕首。" #!String
+    IronEdge_Name: "铁刃" #!String
+    IronEdge_Description: "很重的阔剑。" #!String
+    Kudgel_Name: "长柄锤" #!String
+    Kudgel_Description: "野蛮人的最佳伙伴。" #!String
+    LavaKatana_Name: "熔岩武士刀" #!String
+    LavaKatana_Description: "用火山熔岩打造的强大刀刃。" #!String
+    LeadRod_Name: "铅棒" #!String
+    LeadRod_Description: "异常的沉。" #!String
+    LeahsWhittler_Name: "莉亚的削木刀" #!String
+    LeahsWhittler_Description: "莉亚用来削木的最爱工具。" #!String
+    MarusWrench_Name: "玛鲁的扳手" #!String
+    MarusWrench_Description: "巨大的金属扳手。闻起来很有玛鲁的味道。" #!String
+    MasterSlingshot_Name: "高级弹弓" #!String
+    MasterSlingshot_Description: "需要石子当弹药。" #!String
+    Meowmere_Name: "彩虹猫之刃" #!String
+    Meowmere_Description: "来自异界的罕见武器……" #!String
+    NeptunesGlaive_Name: "海王星大剑" #!String
+    NeptunesGlaive_Description: "来自宝石海的传家宝。" #!String
+    ObsidianEdge_Name: "黑曜石之刃" #!String
+    ObsidianEdge_Description: "这东西锋利无比。" #!String
+    OssifiedBlade_Name: "骨化剑" #!String
+    OssifiedBlade_Description: "由骨头形成的巨大而锋利的剑刃。" #!String
+    PennysFryer_Name: "潘妮的煎锅" #!String
+    PennysFryer_Description: "潘妮最爱的煎锅。里面凝固着一些胶状物。" #!String
+    PiratesSword_Name: "海盗剑" #!String
+    PiratesSword_Description: "看上去曾经是一位海盗的武器。" #!String
+    Rapier_Name: "细剑" #!String
+    Rapier_Description: "一把优雅的剑。" #!String
+    RustySword_Name: "生锈的剑" #!String
+    RustySword_Description: "一把又锈又旧的钝剑。" #!String
+    SamsOldGuitar_Name: "山姆的旧吉他" #!String
+    SamsOldGuitar_Description: "陈旧落魄。" #!String
+    Scythe_Name: "镰刀" #!String
+    Scythe_Description: "如果你建了一个筒仓，它可以割草以及收获干草。" #!String
+    SebsLostMace_Name: "塞巴斯蒂安的遗失之锤" #!String
+    SebsLostMace_Description: "塞巴斯蒂安的中世纪仿制品之一。" #!String
+    ShadowDagger_Name: "暗影匕首" #!String
+    ShadowDagger_Description: "把刀放到耳旁，能听见千百条灵魂的哀嚎。" #!String
+    SilverSaber_Name: "镀银军刀" #!String
+    SilverSaber_Description: "镀银以防锈。" #!String
+    Slingshot_Name: "弹弓" #!String
+    Slingshot_Description: "需要石子当弹药。" #!String
+    SteelFalchion_Name: "钢刀" #!String
+    SteelFalchion_Description: "轻便，威力强大。" #!String
+    SteelSmallsword_Name: "钢制轻剑" #!String
+    SteelSmallsword_Description: "一把标准的金属刀。" #!String
+    TemperedBroadsword_Name: "淬火阔剑" #!String
+    TemperedBroadsword_Description: "看上去能够抵挡任何东西。" #!String
+    TemplarsBlade_Name: "圣堂之刃" #!String
+    TemplarsBlade_Description: "曾属于一位高尚的圣殿骑士。" #!String
+    TheSlammer_Name: "巨锤" #!String
+    TheSlammer_Description: "超级重的锤子，能够击飞敌人。" #!String
+    WickedKris_Name: "蛇形邪剑" #!String
+    WickedKris_Description: "使用铱合金打造的刀刃。" #!String
+    WindSpire_Name: "疾风利剑" #!String
+    WindSpire_Description: "轻便的小刀。" #!String
+    WoodClub_Name: "木棒" #!String
+    WoodClub_Description: "沉重的木，粗糙地打造成棍子的型状。" #!String
+    WoodenBlade_Name: "木剑" #!String
+    WoodenBlade_Description: "对于一块木雕来说不错了。" #!String
+    WoodMallet_Name: "木锤" #!String
+    WoodMallet_Description: "坚固的头部威力强大。对于一把棍棒来说，重量有点轻。" #!String
+    YetiTooth_Name: "雪怪之牙" #!String
+    YetiTooth_Description: "寒冷冻人。" #!String
+

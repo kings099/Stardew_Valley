@@ -1,0 +1,7426 @@
+
+xnbData: 
+    target: "w"
+    compressed: false
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.SpriteFontReader, Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.Texture2DReader, Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.ListReader`1[[Microsoft.Xna.Framework.Rectangle, Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.RectangleReader"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.ListReader`1[[System.Char, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.CharReader"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.ListReader`1[[Microsoft.Xna.Framework.Vector3, Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.Vector3Reader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!SpriteFont
+    texture:  #!Texture2D
+        format: 5
+
+    glyphs:  #!List<Rectangle>
+        -  #!Rectangle
+            x: 441
+            y: 33
+            width: 1
+            height: 1
+
+        -  #!Rectangle
+            x: 48
+            y: 68
+            width: 2
+            height: 18
+
+        -  #!Rectangle
+            x: 195
+            y: 270
+            width: 6
+            height: 4
+
+        -  #!Rectangle
+            x: 437
+            y: 217
+            width: 16
+            height: 18
+
+        -  #!Rectangle
+            x: 417
+            y: 217
+            width: 18
+            height: 18
+
+        -  #!Rectangle
+            x: 217
+            y: 195
+            width: 18
+            height: 20
+
+        -  #!Rectangle
+            x: 119
+            y: 218
+            width: 14
+            height: 18
+
+        -  #!Rectangle
+            x: 48
+            y: 88
+            width: 2
+            height: 4
+
+        -  #!Rectangle
+            x: 148
+            y: 66
+            width: 6
+            height: 26
+
+        -  #!Rectangle
+            x: 156
+            y: 66
+            width: 6
+            height: 26
+
+        -  #!Rectangle
+            x: 382
+            y: 239
+            width: 14
+            height: 14
+
+        -  #!Rectangle
+            x: 398
+            y: 239
+            width: 14
+            height: 14
+
+        -  #!Rectangle
+            x: 376
+            y: 267
+            width: 4
+            height: 6
+
+        -  #!Rectangle
+            x: 339
+            y: 271
+            width: 8
+            height: 2
+
+        -  #!Rectangle
+            x: 507
+            y: 168
+            width: 2
+            height: 2
+
+        -  #!Rectangle
+            x: 371
+            y: 196
+            width: 10
+            height: 20
+
+        -  #!Rectangle
+            x: 47
+            y: 219
+            width: 10
+            height: 18
+
+        -  #!Rectangle
+            x: 59
+            y: 219
+            width: 10
+            height: 18
+
+        -  #!Rectangle
+            x: 71
+            y: 219
+            width: 10
+            height: 18
+
+        -  #!Rectangle
+            x: 267
+            y: 218
+            width: 12
+            height: 18
+
+        -  #!Rectangle
+            x: 139
+            y: 196
+            width: 8
+            height: 18
+
+        -  #!Rectangle
+            x: 235
+            y: 219
+            width: 10
+            height: 18
+
+        -  #!Rectangle
+            x: 281
+            y: 218
+            width: 12
+            height: 18
+
+        -  #!Rectangle
+            x: 417
+            y: 237
+            width: 10
+            height: 18
+
+        -  #!Rectangle
+            x: 429
+            y: 237
+            width: 10
+            height: 18
+
+        -  #!Rectangle
+            x: 441
+            y: 237
+            width: 10
+            height: 18
+
+        -  #!Rectangle
+            x: 247
+            y: 219
+            width: 2
+            height: 12
+
+        -  #!Rectangle
+            x: 179
+            y: 239
+            width: 4
+            height: 16
+
+        -  #!Rectangle
+            x: 205
+            y: 255
+            width: 14
+            height: 14
+
+        -  #!Rectangle
+            x: 173
+            y: 195
+            width: 20
+            height: 20
+
+        -  #!Rectangle
+            x: 221
+            y: 255
+            width: 12
+            height: 14
+
+        -  #!Rectangle
+            x: 259
+            y: 174
+            width: 12
+            height: 20
+
+        -  #!Rectangle
+            x: 382
+            y: 255
+            width: 12
+            height: 14
+
+        -  #!Rectangle
+            x: 223
+            y: 217
+            width: 10
+            height: 20
+
+        -  #!Rectangle
+            x: 496
+            y: 195
+            width: 14
+            height: 20
+
+        -  #!Rectangle
+            x: 91
+            y: 196
+            width: 14
+            height: 20
+
+        -  #!Rectangle
+            x: 107
+            y: 196
+            width: 14
+            height: 20
+
+        -  #!Rectangle
+            x: 123
+            y: 196
+            width: 14
+            height: 20
+
+        -  #!Rectangle
+            x: 237
+            y: 197
+            width: 12
+            height: 20
+
+        -  #!Rectangle
+            x: 424
+            y: 195
+            width: 16
+            height: 20
+
+        -  #!Rectangle
+            x: 251
+            y: 218
+            width: 14
+            height: 18
+
+        -  #!Rectangle
+            x: 509
+            y: 217
+            width: 2
+            height: 18
+
+        -  #!Rectangle
+            x: 407
+            y: 217
+            width: 8
+            height: 20
+
+        -  #!Rectangle
+            x: 139
+            y: 217
+            width: 12
+            height: 20
+
+        -  #!Rectangle
+            x: 153
+            y: 217
+            width: 12
+            height: 20
+
+        -  #!Rectangle
+            x: 384
+            y: 195
+            width: 18
+            height: 20
+
+        -  #!Rectangle
+            x: 259
+            y: 196
+            width: 14
+            height: 20
+
+        -  #!Rectangle
+            x: 442
+            y: 195
+            width: 16
+            height: 20
+
+        -  #!Rectangle
+            x: 275
+            y: 196
+            width: 14
+            height: 20
+
+        -  #!Rectangle
+            x: 460
+            y: 195
+            width: 16
+            height: 20
+
+        -  #!Rectangle
+            x: 291
+            y: 196
+            width: 14
+            height: 20
+
+        -  #!Rectangle
+            x: 307
+            y: 196
+            width: 14
+            height: 20
+
+        -  #!Rectangle
+            x: 323
+            y: 196
+            width: 14
+            height: 20
+
+        -  #!Rectangle
+            x: 339
+            y: 196
+            width: 14
+            height: 20
+
+        -  #!Rectangle
+            x: 355
+            y: 196
+            width: 14
+            height: 20
+
+        -  #!Rectangle
+            x: 149
+            y: 195
+            width: 22
+            height: 20
+
+        -  #!Rectangle
+            x: 19
+            y: 197
+            width: 14
+            height: 20
+
+        -  #!Rectangle
+            x: 35
+            y: 197
+            width: 14
+            height: 20
+
+        -  #!Rectangle
+            x: 51
+            y: 197
+            width: 14
+            height: 20
+
+        -  #!Rectangle
+            x: 507
+            y: 63
+            width: 4
+            height: 22
+
+        -  #!Rectangle
+            x: 383
+            y: 217
+            width: 10
+            height: 20
+
+        -  #!Rectangle
+            x: 106
+            y: 122
+            width: 4
+            height: 22
+
+        -  #!Rectangle
+            x: 247
+            y: 258
+            width: 10
+            height: 10
+
+        -  #!Rectangle
+            x: 222
+            y: 271
+            width: 14
+            height: 2
+
+        -  #!Rectangle
+            x: 13
+            y: 269
+            width: 4
+            height: 6
+
+        -  #!Rectangle
+            x: 147
+            y: 257
+            width: 12
+            height: 12
+
+        -  #!Rectangle
+            x: 395
+            y: 217
+            width: 10
+            height: 20
+
+        -  #!Rectangle
+            x: 444
+            y: 257
+            width: 10
+            height: 12
+
+        -  #!Rectangle
+            x: 167
+            y: 217
+            width: 12
+            height: 20
+
+        -  #!Rectangle
+            x: 456
+            y: 257
+            width: 10
+            height: 12
+
+        -  #!Rectangle
+            x: 319
+            y: 238
+            width: 8
+            height: 18
+
+        -  #!Rectangle
+            x: 453
+            y: 237
+            width: 10
+            height: 18
+
+        -  #!Rectangle
+            x: 465
+            y: 237
+            width: 10
+            height: 18
+
+        -  #!Rectangle
+            x: 135
+            y: 218
+            width: 2
+            height: 16
+
+        -  #!Rectangle
+            x: 504
+            y: 172
+            width: 6
+            height: 20
+
+        -  #!Rectangle
+            x: 396
+            y: 255
+            width: 8
+            height: 14
+
+        -  #!Rectangle
+            x: 91
+            y: 174
+            width: 4
+            height: 18
+
+        -  #!Rectangle
+            x: 356
+            y: 256
+            width: 18
+            height: 12
+
+        -  #!Rectangle
+            x: 468
+            y: 257
+            width: 10
+            height: 12
+
+        -  #!Rectangle
+            x: 480
+            y: 257
+            width: 10
+            height: 12
+
+        -  #!Rectangle
+            x: 477
+            y: 237
+            width: 10
+            height: 18
+
+        -  #!Rectangle
+            x: 295
+            y: 218
+            width: 12
+            height: 18
+
+        -  #!Rectangle
+            x: 492
+            y: 257
+            width: 10
+            height: 12
+
+        -  #!Rectangle
+            x: 1
+            y: 258
+            width: 10
+            height: 12
+
+        -  #!Rectangle
+            x: 329
+            y: 238
+            width: 8
+            height: 18
+
+        -  #!Rectangle
+            x: 161
+            y: 257
+            width: 12
+            height: 12
+
+        -  #!Rectangle
+            x: 73
+            y: 258
+            width: 10
+            height: 12
+
+        -  #!Rectangle
+            x: 57
+            y: 257
+            width: 14
+            height: 12
+
+        -  #!Rectangle
+            x: 85
+            y: 258
+            width: 10
+            height: 12
+
+        -  #!Rectangle
+            x: 489
+            y: 237
+            width: 10
+            height: 18
+
+        -  #!Rectangle
+            x: 97
+            y: 258
+            width: 10
+            height: 12
+
+        -  #!Rectangle
+            x: 459
+            y: 146
+            width: 10
+            height: 24
+
+        -  #!Rectangle
+            x: 264
+            y: 66
+            width: 2
+            height: 22
+
+        -  #!Rectangle
+            x: 471
+            y: 146
+            width: 10
+            height: 24
+
+        -  #!Rectangle
+            x: 52
+            y: 271
+            width: 12
+            height: 4
+
+        -  #!Rectangle
+            x: 284
+            y: 35
+            width: 1
+            height: 1
+
+        -  #!Rectangle
+            x: 404
+            y: 172
+            width: 8
+            height: 21
+
+        -  #!Rectangle
+            x: 414
+            y: 172
+            width: 8
+            height: 21
+
+        -  #!Rectangle
+            x: 424
+            y: 172
+            width: 8
+            height: 21
+
+        -  #!Rectangle
+            x: 434
+            y: 172
+            width: 8
+            height: 21
+
+        -  #!Rectangle
+            x: 444
+            y: 172
+            width: 8
+            height: 21
+
+        -  #!Rectangle
+            x: 441
+            y: 36
+            width: 1
+            height: 1
+
+        -  #!Rectangle
+            x: 454
+            y: 172
+            width: 8
+            height: 21
+
+        -  #!Rectangle
+            x: 464
+            y: 172
+            width: 8
+            height: 21
+
+        -  #!Rectangle
+            x: 474
+            y: 172
+            width: 8
+            height: 21
+
+        -  #!Rectangle
+            x: 484
+            y: 172
+            width: 8
+            height: 21
+
+        -  #!Rectangle
+            x: 494
+            y: 172
+            width: 8
+            height: 21
+
+        -  #!Rectangle
+            x: 1
+            y: 173
+            width: 8
+            height: 21
+
+        -  #!Rectangle
+            x: 11
+            y: 173
+            width: 8
+            height: 21
+
+        -  #!Rectangle
+            x: 21
+            y: 173
+            width: 8
+            height: 21
+
+        -  #!Rectangle
+            x: 274
+            y: 173
+            width: 8
+            height: 21
+
+        -  #!Rectangle
+            x: 284
+            y: 173
+            width: 8
+            height: 21
+
+        -  #!Rectangle
+            x: 294
+            y: 173
+            width: 8
+            height: 21
+
+        -  #!Rectangle
+            x: 304
+            y: 173
+            width: 8
+            height: 21
+
+        -  #!Rectangle
+            x: 314
+            y: 173
+            width: 8
+            height: 21
+
+        -  #!Rectangle
+            x: 324
+            y: 173
+            width: 8
+            height: 21
+
+        -  #!Rectangle
+            x: 334
+            y: 173
+            width: 8
+            height: 21
+
+        -  #!Rectangle
+            x: 344
+            y: 173
+            width: 8
+            height: 21
+
+        -  #!Rectangle
+            x: 354
+            y: 173
+            width: 8
+            height: 21
+
+        -  #!Rectangle
+            x: 364
+            y: 173
+            width: 8
+            height: 21
+
+        -  #!Rectangle
+            x: 374
+            y: 173
+            width: 8
+            height: 21
+
+        -  #!Rectangle
+            x: 31
+            y: 174
+            width: 8
+            height: 21
+
+        -  #!Rectangle
+            x: 41
+            y: 174
+            width: 8
+            height: 21
+
+        -  #!Rectangle
+            x: 51
+            y: 174
+            width: 8
+            height: 21
+
+        -  #!Rectangle
+            x: 61
+            y: 174
+            width: 8
+            height: 21
+
+        -  #!Rectangle
+            x: 71
+            y: 174
+            width: 8
+            height: 21
+
+        -  #!Rectangle
+            x: 81
+            y: 174
+            width: 8
+            height: 21
+
+        -  #!Rectangle
+            x: 249
+            y: 174
+            width: 8
+            height: 21
+
+        -  #!Rectangle
+            x: 284
+            y: 38
+            width: 1
+            height: 1
+
+        -  #!Rectangle
+            x: 379
+            y: 218
+            width: 2
+            height: 16
+
+        -  #!Rectangle
+            x: 501
+            y: 237
+            width: 10
+            height: 18
+
+        -  #!Rectangle
+            x: 455
+            y: 217
+            width: 16
+            height: 18
+
+        -  #!Rectangle
+            x: 473
+            y: 217
+            width: 16
+            height: 18
+
+        -  #!Rectangle
+            x: 491
+            y: 217
+            width: 16
+            height: 18
+
+        -  #!Rectangle
+            x: 1
+            y: 218
+            width: 16
+            height: 18
+
+        -  #!Rectangle
+            x: 83
+            y: 218
+            width: 16
+            height: 18
+
+        -  #!Rectangle
+            x: 131
+            y: 257
+            width: 14
+            height: 12
+
+        -  #!Rectangle
+            x: 356
+            y: 238
+            width: 16
+            height: 16
+
+        -  #!Rectangle
+            x: 109
+            y: 258
+            width: 10
+            height: 12
+
+        -  #!Rectangle
+            x: 339
+            y: 257
+            width: 12
+            height: 12
+
+        -  #!Rectangle
+            x: 283
+            y: 269
+            width: 14
+            height: 8
+
+        -  #!Rectangle
+            x: 441
+            y: 39
+            width: 1
+            height: 1
+
+        -  #!Rectangle
+            x: 19
+            y: 239
+            width: 16
+            height: 16
+
+        -  #!Rectangle
+            x: 203
+            y: 271
+            width: 17
+            height: 3
+
+        -  #!Rectangle
+            x: 121
+            y: 269
+            width: 8
+            height: 8
+
+        -  #!Rectangle
+            x: 235
+            y: 255
+            width: 10
+            height: 14
+
+        -  #!Rectangle
+            x: 406
+            y: 255
+            width: 8
+            height: 14
+
+        -  #!Rectangle
+            x: 185
+            y: 256
+            width: 8
+            height: 14
+
+        -  #!Rectangle
+            x: 507
+            y: 87
+            width: 4
+            height: 4
+
+        -  #!Rectangle
+            x: 187
+            y: 171
+            width: 14
+            height: 22
+
+        -  #!Rectangle
+            x: 268
+            y: 35
+            width: 14
+            height: 26
+
+        -  #!Rectangle
+            x: 247
+            y: 233
+            width: 2
+            height: 2
+
+        -  #!Rectangle
+            x: 504
+            y: 268
+            width: 6
+            height: 6
+
+        -  #!Rectangle
+            x: 195
+            y: 256
+            width: 6
+            height: 12
+
+        -  #!Rectangle
+            x: 175
+            y: 257
+            width: 8
+            height: 10
+
+        -  #!Rectangle
+            x: 416
+            y: 257
+            width: 12
+            height: 12
+
+        -  #!Rectangle
+            x: 225
+            y: 239
+            width: 16
+            height: 14
+
+        -  #!Rectangle
+            x: 205
+            y: 239
+            width: 18
+            height: 14
+
+        -  #!Rectangle
+            x: 37
+            y: 239
+            width: 16
+            height: 16
+
+        -  #!Rectangle
+            x: 1
+            y: 238
+            width: 10
+            height: 18
+
+        -  #!Rectangle
+            x: 483
+            y: 146
+            width: 10
+            height: 24
+
+        -  #!Rectangle
+            x: 495
+            y: 146
+            width: 10
+            height: 24
+
+        -  #!Rectangle
+            x: 1
+            y: 147
+            width: 10
+            height: 24
+
+        -  #!Rectangle
+            x: 13
+            y: 147
+            width: 10
+            height: 24
+
+        -  #!Rectangle
+            x: 414
+            y: 96
+            width: 10
+            height: 22
+
+        -  #!Rectangle
+            x: 25
+            y: 147
+            width: 10
+            height: 24
+
+        -  #!Rectangle
+            x: 478
+            y: 195
+            width: 16
+            height: 20
+
+        -  #!Rectangle
+            x: 116
+            y: 66
+            width: 14
+            height: 26
+
+        -  #!Rectangle
+            x: 235
+            y: 171
+            width: 12
+            height: 22
+
+        -  #!Rectangle
+            x: 97
+            y: 172
+            width: 12
+            height: 22
+
+        -  #!Rectangle
+            x: 111
+            y: 172
+            width: 12
+            height: 22
+
+        -  #!Rectangle
+            x: 181
+            y: 217
+            width: 12
+            height: 20
+
+        -  #!Rectangle
+            x: 507
+            y: 144
+            width: 4
+            height: 22
+
+        -  #!Rectangle
+            x: 97
+            y: 148
+            width: 4
+            height: 22
+
+        -  #!Rectangle
+            x: 153
+            y: 120
+            width: 6
+            height: 22
+
+        -  #!Rectangle
+            x: 384
+            y: 173
+            width: 6
+            height: 20
+
+        -  #!Rectangle
+            x: 67
+            y: 197
+            width: 14
+            height: 20
+
+        -  #!Rectangle
+            x: 238
+            y: 145
+            width: 14
+            height: 24
+
+        -  #!Rectangle
+            x: 433
+            y: 120
+            width: 16
+            height: 24
+
+        -  #!Rectangle
+            x: 451
+            y: 120
+            width: 16
+            height: 24
+
+        -  #!Rectangle
+            x: 469
+            y: 120
+            width: 16
+            height: 24
+
+        -  #!Rectangle
+            x: 487
+            y: 120
+            width: 16
+            height: 24
+
+        -  #!Rectangle
+            x: 151
+            y: 171
+            width: 16
+            height: 22
+
+        -  #!Rectangle
+            x: 259
+            y: 258
+            width: 10
+            height: 10
+
+        -  #!Rectangle
+            x: 404
+            y: 195
+            width: 18
+            height: 20
+
+        -  #!Rectangle
+            x: 106
+            y: 146
+            width: 14
+            height: 24
+
+        -  #!Rectangle
+            x: 122
+            y: 146
+            width: 14
+            height: 24
+
+        -  #!Rectangle
+            x: 414
+            y: 146
+            width: 14
+            height: 24
+
+        -  #!Rectangle
+            x: 203
+            y: 171
+            width: 14
+            height: 22
+
+        -  #!Rectangle
+            x: 430
+            y: 146
+            width: 14
+            height: 24
+
+        -  #!Rectangle
+            x: 131
+            y: 239
+            width: 10
+            height: 16
+
+        -  #!Rectangle
+            x: 195
+            y: 217
+            width: 12
+            height: 20
+
+        -  #!Rectangle
+            x: 309
+            y: 218
+            width: 12
+            height: 18
+
+        -  #!Rectangle
+            x: 323
+            y: 218
+            width: 12
+            height: 18
+
+        -  #!Rectangle
+            x: 337
+            y: 218
+            width: 12
+            height: 18
+
+        -  #!Rectangle
+            x: 351
+            y: 218
+            width: 12
+            height: 18
+
+        -  #!Rectangle
+            x: 55
+            y: 239
+            width: 12
+            height: 16
+
+        -  #!Rectangle
+            x: 209
+            y: 217
+            width: 12
+            height: 20
+
+        -  #!Rectangle
+            x: 19
+            y: 257
+            width: 18
+            height: 12
+
+        -  #!Rectangle
+            x: 83
+            y: 238
+            width: 10
+            height: 18
+
+        -  #!Rectangle
+            x: 95
+            y: 238
+            width: 10
+            height: 18
+
+        -  #!Rectangle
+            x: 107
+            y: 238
+            width: 10
+            height: 18
+
+        -  #!Rectangle
+            x: 119
+            y: 238
+            width: 10
+            height: 18
+
+        -  #!Rectangle
+            x: 143
+            y: 239
+            width: 10
+            height: 16
+
+        -  #!Rectangle
+            x: 251
+            y: 197
+            width: 4
+            height: 18
+
+        -  #!Rectangle
+            x: 13
+            y: 238
+            width: 4
+            height: 18
+
+        -  #!Rectangle
+            x: 83
+            y: 197
+            width: 6
+            height: 18
+
+        -  #!Rectangle
+            x: 374
+            y: 238
+            width: 6
+            height: 16
+
+        -  #!Rectangle
+            x: 125
+            y: 172
+            width: 10
+            height: 22
+
+        -  #!Rectangle
+            x: 247
+            y: 238
+            width: 10
+            height: 18
+
+        -  #!Rectangle
+            x: 259
+            y: 238
+            width: 10
+            height: 18
+
+        -  #!Rectangle
+            x: 271
+            y: 238
+            width: 10
+            height: 18
+
+        -  #!Rectangle
+            x: 283
+            y: 238
+            width: 10
+            height: 18
+
+        -  #!Rectangle
+            x: 295
+            y: 238
+            width: 10
+            height: 18
+
+        -  #!Rectangle
+            x: 155
+            y: 239
+            width: 10
+            height: 16
+
+        -  #!Rectangle
+            x: 271
+            y: 258
+            width: 10
+            height: 10
+
+        -  #!Rectangle
+            x: 430
+            y: 257
+            width: 12
+            height: 12
+
+        -  #!Rectangle
+            x: 365
+            y: 218
+            width: 12
+            height: 18
+
+        -  #!Rectangle
+            x: 19
+            y: 219
+            width: 12
+            height: 18
+
+        -  #!Rectangle
+            x: 33
+            y: 219
+            width: 12
+            height: 18
+
+        -  #!Rectangle
+            x: 69
+            y: 239
+            width: 12
+            height: 16
+
+        -  #!Rectangle
+            x: 37
+            y: 148
+            width: 10
+            height: 24
+
+        -  #!Rectangle
+            x: 167
+            y: 239
+            width: 10
+            height: 16
+
+        -  #!Rectangle
+            x: 137
+            y: 172
+            width: 10
+            height: 22
+
+        -  #!Rectangle
+            x: 476
+            y: 1
+            width: 22
+            height: 29
+
+        -  #!Rectangle
+            x: 315
+            y: 148
+            width: 16
+            height: 23
+
+        -  #!Rectangle
+            x: 444
+            y: 32
+            width: 22
+            height: 29
+
+        -  #!Rectangle
+            x: 1
+            y: 121
+            width: 16
+            height: 24
+
+        -  #!Rectangle
+            x: 54
+            y: 1
+            width: 22
+            height: 32
+
+        -  #!Rectangle
+            x: 229
+            y: 66
+            width: 16
+            height: 25
+
+        -  #!Rectangle
+            x: 383
+            y: 34
+            width: 20
+            height: 29
+
+        -  #!Rectangle
+            x: 1
+            y: 69
+            width: 15
+            height: 24
+
+        -  #!Rectangle
+            x: 405
+            y: 34
+            width: 20
+            height: 29
+
+        -  #!Rectangle
+            x: 55
+            y: 122
+            width: 15
+            height: 24
+
+        -  #!Rectangle
+            x: 54
+            y: 35
+            width: 20
+            height: 29
+
+        -  #!Rectangle
+            x: 72
+            y: 122
+            width: 15
+            height: 24
+
+        -  #!Rectangle
+            x: 76
+            y: 35
+            width: 20
+            height: 29
+
+        -  #!Rectangle
+            x: 89
+            y: 122
+            width: 15
+            height: 24
+
+        -  #!Rectangle
+            x: 492
+            y: 32
+            width: 19
+            height: 29
+
+        -  #!Rectangle
+            x: 268
+            y: 96
+            width: 20
+            height: 24
+
+        -  #!Rectangle
+            x: 479
+            y: 94
+            width: 22
+            height: 24
+
+        -  #!Rectangle
+            x: 95
+            y: 96
+            width: 18
+            height: 24
+
+        -  #!Rectangle
+            x: 427
+            y: 63
+            width: 18
+            height: 29
+
+        -  #!Rectangle
+            x: 393
+            y: 148
+            width: 17
+            height: 22
+
+        -  #!Rectangle
+            x: 447
+            y: 63
+            width: 18
+            height: 29
+
+        -  #!Rectangle
+            x: 204
+            y: 119
+            width: 17
+            height: 24
+
+        -  #!Rectangle
+            x: 467
+            y: 63
+            width: 18
+            height: 29
+
+        -  #!Rectangle
+            x: 223
+            y: 119
+            width: 17
+            height: 24
+
+        -  #!Rectangle
+            x: 99
+            y: 1
+            width: 18
+            height: 32
+
+        -  #!Rectangle
+            x: 191
+            y: 66
+            width: 17
+            height: 25
+
+        -  #!Rectangle
+            x: 487
+            y: 63
+            width: 18
+            height: 29
+
+        -  #!Rectangle
+            x: 242
+            y: 119
+            width: 17
+            height: 24
+
+        -  #!Rectangle
+            x: 468
+            y: 32
+            width: 22
+            height: 29
+
+        -  #!Rectangle
+            x: 159
+            y: 1
+            width: 16
+            height: 32
+
+        -  #!Rectangle
+            x: 169
+            y: 171
+            width: 16
+            height: 22
+
+        -  #!Rectangle
+            x: 49
+            y: 148
+            width: 10
+            height: 24
+
+        -  #!Rectangle
+            x: 287
+            y: 34
+            width: 22
+            height: 29
+
+        -  #!Rectangle
+            x: 177
+            y: 1
+            width: 16
+            height: 32
+
+        -  #!Rectangle
+            x: 287
+            y: 1
+            width: 22
+            height: 31
+
+        -  #!Rectangle
+            x: 1
+            y: 1
+            width: 16
+            height: 35
+
+        -  #!Rectangle
+            x: 268
+            y: 65
+            width: 18
+            height: 29
+
+        -  #!Rectangle
+            x: 1
+            y: 38
+            width: 15
+            height: 29
+
+        -  #!Rectangle
+            x: 427
+            y: 94
+            width: 24
+            height: 24
+
+        -  #!Rectangle
+            x: 115
+            y: 120
+            width: 17
+            height: 24
+
+        -  #!Rectangle
+            x: 427
+            y: 33
+            width: 12
+            height: 28
+
+        -  #!Rectangle
+            x: 367
+            y: 148
+            width: 11
+            height: 23
+
+        -  #!Rectangle
+            x: 500
+            y: 1
+            width: 10
+            height: 29
+
+        -  #!Rectangle
+            x: 380
+            y: 148
+            width: 11
+            height: 23
+
+        -  #!Rectangle
+            x: 40
+            y: 37
+            width: 10
+            height: 29
+
+        -  #!Rectangle
+            x: 61
+            y: 148
+            width: 10
+            height: 24
+
+        -  #!Rectangle
+            x: 271
+            y: 1
+            width: 6
+            height: 32
+
+        -  #!Rectangle
+            x: 279
+            y: 1
+            width: 6
+            height: 32
+
+        -  #!Rectangle
+            x: 505
+            y: 120
+            width: 6
+            height: 22
+
+        -  #!Rectangle
+            x: 243
+            y: 239
+            width: 2
+            height: 12
+
+        -  #!Rectangle
+            x: 290
+            y: 96
+            width: 20
+            height: 24
+
+        -  #!Rectangle
+            x: 248
+            y: 1
+            width: 11
+            height: 32
+
+        -  #!Rectangle
+            x: 388
+            y: 65
+            width: 17
+            height: 29
+
+        -  #!Rectangle
+            x: 408
+            y: 1
+            width: 11
+            height: 31
+
+        -  #!Rectangle
+            x: 333
+            y: 1
+            width: 19
+            height: 31
+
+        -  #!Rectangle
+            x: 374
+            y: 1
+            width: 15
+            height: 31
+
+        -  #!Rectangle
+            x: 339
+            y: 238
+            width: 15
+            height: 17
+
+        -  #!Rectangle
+            x: 427
+            y: 1
+            width: 15
+            height: 30
+
+        -  #!Rectangle
+            x: 418
+            y: 65
+            width: 7
+            height: 29
+
+        -  #!Rectangle
+            x: 391
+            y: 1
+            width: 15
+            height: 31
+
+        -  #!Rectangle
+            x: 421
+            y: 1
+            width: 4
+            height: 31
+
+        -  #!Rectangle
+            x: 261
+            y: 122
+            width: 15
+            height: 24
+
+        -  #!Rectangle
+            x: 503
+            y: 94
+            width: 8
+            height: 24
+
+        -  #!Rectangle
+            x: 278
+            y: 122
+            width: 15
+            height: 24
+
+        -  #!Rectangle
+            x: 138
+            y: 146
+            width: 11
+            height: 24
+
+        -  #!Rectangle
+            x: 334
+            y: 96
+            width: 18
+            height: 24
+
+        -  #!Rectangle
+            x: 254
+            y: 148
+            width: 8
+            height: 24
+
+        -  #!Rectangle
+            x: 288
+            y: 65
+            width: 18
+            height: 29
+
+        -  #!Rectangle
+            x: 295
+            y: 122
+            width: 15
+            height: 24
+
+        -  #!Rectangle
+            x: 354
+            y: 1
+            width: 18
+            height: 31
+
+        -  #!Rectangle
+            x: 312
+            y: 122
+            width: 15
+            height: 24
+
+        -  #!Rectangle
+            x: 308
+            y: 65
+            width: 18
+            height: 29
+
+        -  #!Rectangle
+            x: 329
+            y: 122
+            width: 15
+            height: 24
+
+        -  #!Rectangle
+            x: 312
+            y: 96
+            width: 20
+            height: 24
+
+        -  #!Rectangle
+            x: 119
+            y: 1
+            width: 18
+            height: 32
+
+        -  #!Rectangle
+            x: 247
+            y: 66
+            width: 15
+            height: 25
+
+        -  #!Rectangle
+            x: 52
+            y: 66
+            width: 22
+            height: 28
+
+        -  #!Rectangle
+            x: 296
+            y: 148
+            width: 17
+            height: 23
+
+        -  #!Rectangle
+            x: 311
+            y: 34
+            width: 22
+            height: 29
+
+        -  #!Rectangle
+            x: 134
+            y: 120
+            width: 17
+            height: 24
+
+        -  #!Rectangle
+            x: 335
+            y: 34
+            width: 22
+            height: 29
+
+        -  #!Rectangle
+            x: 414
+            y: 120
+            width: 17
+            height: 24
+
+        -  #!Rectangle
+            x: 1
+            y: 196
+            width: 16
+            height: 20
+
+        -  #!Rectangle
+            x: 39
+            y: 257
+            width: 16
+            height: 12
+
+        -  #!Rectangle
+            x: 98
+            y: 35
+            width: 20
+            height: 29
+
+        -  #!Rectangle
+            x: 73
+            y: 148
+            width: 10
+            height: 24
+
+        -  #!Rectangle
+            x: 311
+            y: 1
+            width: 20
+            height: 31
+
+        -  #!Rectangle
+            x: 85
+            y: 148
+            width: 10
+            height: 24
+
+        -  #!Rectangle
+            x: 120
+            y: 35
+            width: 20
+            height: 29
+
+        -  #!Rectangle
+            x: 446
+            y: 146
+            width: 11
+            height: 24
+
+        -  #!Rectangle
+            x: 142
+            y: 35
+            width: 19
+            height: 29
+
+        -  #!Rectangle
+            x: 346
+            y: 122
+            width: 15
+            height: 24
+
+        -  #!Rectangle
+            x: 163
+            y: 35
+            width: 19
+            height: 29
+
+        -  #!Rectangle
+            x: 363
+            y: 122
+            width: 15
+            height: 24
+
+        -  #!Rectangle
+            x: 132
+            y: 66
+            width: 14
+            height: 26
+
+        -  #!Rectangle
+            x: 307
+            y: 238
+            width: 10
+            height: 18
+
+        -  #!Rectangle
+            x: 184
+            y: 35
+            width: 19
+            height: 29
+
+        -  #!Rectangle
+            x: 380
+            y: 122
+            width: 15
+            height: 24
+
+        -  #!Rectangle
+            x: 78
+            y: 1
+            width: 19
+            height: 32
+
+        -  #!Rectangle
+            x: 407
+            y: 65
+            width: 9
+            height: 29
+
+        -  #!Rectangle
+            x: 205
+            y: 35
+            width: 19
+            height: 29
+
+        -  #!Rectangle
+            x: 35
+            y: 68
+            width: 11
+            height: 25
+
+        -  #!Rectangle
+            x: 143
+            y: 94
+            width: 19
+            height: 24
+
+        -  #!Rectangle
+            x: 393
+            y: 172
+            width: 9
+            height: 21
+
+        -  #!Rectangle
+            x: 76
+            y: 66
+            width: 18
+            height: 28
+
+        -  #!Rectangle
+            x: 333
+            y: 148
+            width: 15
+            height: 23
+
+        -  #!Rectangle
+            x: 96
+            y: 66
+            width: 18
+            height: 28
+
+        -  #!Rectangle
+            x: 350
+            y: 148
+            width: 15
+            height: 23
+
+        -  #!Rectangle
+            x: 328
+            y: 65
+            width: 18
+            height: 29
+
+        -  #!Rectangle
+            x: 397
+            y: 122
+            width: 15
+            height: 24
+
+        -  #!Rectangle
+            x: 348
+            y: 65
+            width: 18
+            height: 29
+
+        -  #!Rectangle
+            x: 153
+            y: 145
+            width: 15
+            height: 24
+
+        -  #!Rectangle
+            x: 368
+            y: 65
+            width: 18
+            height: 29
+
+        -  #!Rectangle
+            x: 170
+            y: 145
+            width: 15
+            height: 24
+
+        -  #!Rectangle
+            x: 139
+            y: 1
+            width: 18
+            height: 32
+
+        -  #!Rectangle
+            x: 18
+            y: 68
+            width: 15
+            height: 25
+
+        -  #!Rectangle
+            x: 444
+            y: 1
+            width: 30
+            height: 29
+
+        -  #!Rectangle
+            x: 453
+            y: 94
+            width: 24
+            height: 24
+
+        -  #!Rectangle
+            x: 359
+            y: 34
+            width: 22
+            height: 29
+
+        -  #!Rectangle
+            x: 231
+            y: 1
+            width: 15
+            height: 32
+
+        -  #!Rectangle
+            x: 219
+            y: 171
+            width: 14
+            height: 22
+
+        -  #!Rectangle
+            x: 226
+            y: 35
+            width: 19
+            height: 29
+
+        -  #!Rectangle
+            x: 187
+            y: 145
+            width: 15
+            height: 24
+
+        -  #!Rectangle
+            x: 247
+            y: 35
+            width: 19
+            height: 29
+
+        -  #!Rectangle
+            x: 204
+            y: 145
+            width: 15
+            height: 24
+
+        -  #!Rectangle
+            x: 19
+            y: 37
+            width: 19
+            height: 29
+
+        -  #!Rectangle
+            x: 221
+            y: 145
+            width: 15
+            height: 24
+
+        -  #!Rectangle
+            x: 264
+            y: 148
+            width: 8
+            height: 24
+
+        -  #!Rectangle
+            x: 354
+            y: 96
+            width: 18
+            height: 24
+
+        -  #!Rectangle
+            x: 243
+            y: 93
+            width: 23
+            height: 24
+
+        -  #!Rectangle
+            x: 374
+            y: 96
+            width: 18
+            height: 24
+
+        -  #!Rectangle
+            x: 19
+            y: 121
+            width: 16
+            height: 24
+
+        -  #!Rectangle
+            x: 49
+            y: 96
+            width: 21
+            height: 24
+
+        -  #!Rectangle
+            x: 394
+            y: 96
+            width: 18
+            height: 24
+
+        -  #!Rectangle
+            x: 72
+            y: 96
+            width: 21
+            height: 24
+
+        -  #!Rectangle
+            x: 164
+            y: 66
+            width: 25
+            height: 25
+
+        -  #!Rectangle
+            x: 195
+            y: 195
+            width: 20
+            height: 20
+
+        -  #!Rectangle
+            x: 1
+            y: 95
+            width: 22
+            height: 24
+
+        -  #!Rectangle
+            x: 116
+            y: 94
+            width: 25
+            height: 24
+
+        -  #!Rectangle
+            x: 164
+            y: 119
+            width: 18
+            height: 24
+
+        -  #!Rectangle
+            x: 37
+            y: 122
+            width: 16
+            height: 24
+
+        -  #!Rectangle
+            x: 210
+            y: 66
+            width: 17
+            height: 25
+
+        -  #!Rectangle
+            x: 184
+            y: 119
+            width: 18
+            height: 24
+
+        -  #!Rectangle
+            x: 25
+            y: 95
+            width: 22
+            height: 24
+
+        -  #!Rectangle
+            x: 131
+            y: 271
+            width: 20
+            height: 3
+
+        -  #!Rectangle
+            x: 153
+            y: 271
+            width: 19
+            height: 3
+
+        -  #!Rectangle
+            x: 261
+            y: 1
+            width: 8
+            height: 32
+
+        -  #!Rectangle
+            x: 312
+            y: 269
+            width: 17
+            height: 7
+
+        -  #!Rectangle
+            x: 376
+            y: 256
+            width: 4
+            height: 9
+
+        -  #!Rectangle
+            x: 504
+            y: 257
+            width: 4
+            height: 9
+
+        -  #!Rectangle
+            x: 13
+            y: 258
+            width: 4
+            height: 9
+
+        -  #!Rectangle
+            x: 326
+            y: 258
+            width: 4
+            height: 9
+
+        -  #!Rectangle
+            x: 283
+            y: 258
+            width: 9
+            height: 9
+
+        -  #!Rectangle
+            x: 294
+            y: 258
+            width: 9
+            height: 9
+
+        -  #!Rectangle
+            x: 305
+            y: 258
+            width: 9
+            height: 9
+
+        -  #!Rectangle
+            x: 121
+            y: 258
+            width: 8
+            height: 9
+
+        -  #!Rectangle
+            x: 195
+            y: 1
+            width: 16
+            height: 32
+
+        -  #!Rectangle
+            x: 213
+            y: 1
+            width: 16
+            height: 32
+
+        -  #!Rectangle
+            x: 316
+            y: 258
+            width: 8
+            height: 9
+
+        -  #!Rectangle
+            x: 175
+            y: 269
+            width: 8
+            height: 8
+
+        -  #!Rectangle
+            x: 277
+            y: 270
+            width: 4
+            height: 4
+
+        -  #!Rectangle
+            x: 37
+            y: 271
+            width: 13
+            height: 4
+
+        -  #!Rectangle
+            x: 19
+            y: 271
+            width: 16
+            height: 4
+
+        -  #!Rectangle
+            x: 66
+            y: 271
+            width: 4
+            height: 4
+
+        -  #!Rectangle
+            x: 19
+            y: 1
+            width: 33
+            height: 34
+
+        -  #!Rectangle
+            x: 284
+            y: 41
+            width: 1
+            height: 1
+
+        -  #!Rectangle
+            x: 441
+            y: 42
+            width: 1
+            height: 1
+
+        -  #!Rectangle
+            x: 284
+            y: 44
+            width: 1
+            height: 1
+
+        -  #!Rectangle
+            x: 441
+            y: 45
+            width: 1
+            height: 1
+
+        -  #!Rectangle
+            x: 284
+            y: 47
+            width: 1
+            height: 1
+
+        -  #!Rectangle
+            x: 441
+            y: 48
+            width: 1
+            height: 1
+
+        -  #!Rectangle
+            x: 284
+            y: 50
+            width: 1
+            height: 1
+
+        -  #!Rectangle
+            x: 208
+            y: 93
+            width: 33
+            height: 24
+
+        -  #!Rectangle
+            x: 164
+            y: 93
+            width: 42
+            height: 24
+
+        -  #!Rectangle
+            x: 332
+            y: 258
+            width: 5
+            height: 7
+
+        -  #!Rectangle
+            x: 353
+            y: 270
+            width: 10
+            height: 7
+
+        -  #!Rectangle
+            x: 247
+            y: 270
+            width: 13
+            height: 7
+
+        -  #!Rectangle
+            x: 332
+            y: 267
+            width: 5
+            height: 7
+
+        -  #!Rectangle
+            x: 365
+            y: 270
+            width: 9
+            height: 7
+
+        -  #!Rectangle
+            x: 262
+            y: 270
+            width: 13
+            height: 7
+
+        -  #!Rectangle
+            x: 299
+            y: 269
+            width: 11
+            height: 8
+
+        -  #!Rectangle
+            x: 185
+            y: 239
+            width: 8
+            height: 15
+
+        -  #!Rectangle
+            x: 195
+            y: 239
+            width: 8
+            height: 15
+
+        -  #!Rectangle
+            x: 101
+            y: 218
+            width: 16
+            height: 18
+
+        -  #!Rectangle
+            x: 274
+            y: 148
+            width: 20
+            height: 23
+
+
+    cropping:  #!List<Rectangle>
+        -  #!Rectangle
+            x: 10
+            y: 50
+            width: 11
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 2
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 6
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 16
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 18
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 18
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 2
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 6
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 6
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 10
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 22
+            width: 4
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 16
+            width: 8
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 22
+            width: 2
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 12
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 8
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 12
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 12
+            width: 2
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 12
+            width: 4
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 10
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 20
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 8
+            width: 12
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 12
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 8
+            width: 12
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 12
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 16
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 2
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 8
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 12
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 12
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 18
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 16
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 16
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 22
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 4
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 4
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 26
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 4
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 12
+            width: 12
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 12
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 12
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 12
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 8
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 12
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 8
+            width: 2
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 8
+            width: 6
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 10
+            width: 8
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 4
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 12
+            width: 18
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 12
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 12
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 12
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 12
+            width: 12
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 12
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 12
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 8
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 12
+            width: 12
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 12
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 12
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 12
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 12
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 12
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 2
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 12
+            width: 12
+            height: 34
+
+        -  #!Rectangle
+            x: 27
+            y: 55
+            width: 28
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 3
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 3
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 3
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 3
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 3
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 10
+            y: 55
+            width: 11
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 3
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 3
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 3
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 3
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 3
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 3
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 3
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 3
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 3
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 3
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 3
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 3
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 3
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 3
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 3
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 3
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 3
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 3
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 3
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 3
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 3
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 3
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 3
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 3
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 3
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 3
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 20
+            y: 50
+            width: 21
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 10
+            width: 2
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 8
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 16
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 16
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 16
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 16
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 16
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 12
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 8
+            width: 16
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 12
+            width: 12
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 12
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 10
+            y: 55
+            width: 11
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 8
+            width: 16
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: -4
+            width: 17
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 2
+            width: 8
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 10
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 2
+            width: 8
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 2
+            width: 8
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 2
+            width: 4
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 8
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 2
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 12
+            width: 2
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 24
+            width: 6
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 6
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 2
+            width: 8
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 12
+            width: 12
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 10
+            width: 16
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 10
+            width: 18
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 8
+            width: 16
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 10
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 2
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 16
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 2
+            width: 12
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 2
+            width: 12
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 2
+            width: 12
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 12
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 2
+            width: 4
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 2
+            width: 4
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 2
+            width: 6
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 6
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 16
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 16
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 16
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 16
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 2
+            width: 16
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 10
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 18
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 2
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 8
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 12
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 12
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 12
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 12
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 12
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 8
+            width: 12
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 12
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 12
+            width: 18
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 12
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 8
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 4
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 4
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 6
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 8
+            width: 6
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 2
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 8
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 10
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 12
+            width: 12
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 12
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 12
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 12
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 8
+            width: 12
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 12
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 8
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 22
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 1
+            width: 16
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 22
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 16
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 22
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 7
+            width: 16
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 20
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 15
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 20
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 15
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 20
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 15
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 20
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 15
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 19
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 20
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 22
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 18
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 18
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 2
+            width: 17
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 18
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 17
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 18
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 17
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 18
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 7
+            width: 17
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 18
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 17
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 22
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 16
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 2
+            width: 16
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 22
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 16
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 22
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -3
+            width: 16
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 18
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 15
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 24
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 17
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -4
+            width: 12
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 1
+            width: 11
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 10
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 1
+            width: 11
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 10
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 10
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 6
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 6
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 2
+            width: 6
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 12
+            width: 2
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 20
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 11
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 17
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 1
+            width: 11
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 19
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 15
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 7
+            width: 15
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -6
+            width: 15
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 7
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 15
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 4
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 15
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 15
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 11
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 18
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 18
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 15
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 18
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 7
+            width: 15
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 18
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 15
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 20
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 18
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 7
+            width: 15
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -4
+            width: 22
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 1
+            width: 17
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 22
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 17
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 22
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 17
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 16
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 12
+            width: 16
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 20
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 10
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 20
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 7
+            width: 10
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 20
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 11
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 19
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 15
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 19
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 15
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 12
+            width: 10
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 19
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 15
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 19
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 3
+            width: 9
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 19
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -1
+            width: 11
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 19
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 3
+            width: 9
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -4
+            width: 18
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 1
+            width: 15
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -4
+            width: 18
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 1
+            width: 15
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 18
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 15
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 18
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 15
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 18
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 15
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 18
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 7
+            width: 15
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 30
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 24
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 22
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 15
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 2
+            width: 14
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 19
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 15
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 19
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 15
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 19
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 15
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 18
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 23
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 18
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 16
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 21
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 18
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 21
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -1
+            width: 25
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 4
+            width: 20
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 22
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 25
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 18
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 16
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 7
+            width: 17
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 18
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 22
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 14
+            width: 20
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -4
+            width: 19
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 25
+            width: 17
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 4
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 4
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 20
+            width: 4
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 4
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 9
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 9
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 20
+            width: 9
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 16
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 16
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 8
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 9
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 20
+            width: 4
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 20
+            width: 13
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 20
+            width: 16
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 10
+            width: 4
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: -5
+            width: 33
+            height: 37
+
+        -  #!Rectangle
+            x: 10
+            y: 55
+            width: 11
+            height: 37
+
+        -  #!Rectangle
+            x: 10
+            y: 55
+            width: 11
+            height: 37
+
+        -  #!Rectangle
+            x: 10
+            y: 55
+            width: 11
+            height: 37
+
+        -  #!Rectangle
+            x: 10
+            y: 55
+            width: 11
+            height: 37
+
+        -  #!Rectangle
+            x: 10
+            y: 55
+            width: 11
+            height: 37
+
+        -  #!Rectangle
+            x: 10
+            y: 55
+            width: 11
+            height: 37
+
+        -  #!Rectangle
+            x: 15
+            y: 55
+            width: 16
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 33
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 42
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 5
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 10
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 13
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 5
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 9
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 0
+            width: 13
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 22
+            width: 11
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 8
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 8
+            width: 8
+            height: 37
+
+        -  #!Rectangle
+            x: 0
+            y: 6
+            width: 16
+            height: 34
+
+        -  #!Rectangle
+            x: 0
+            y: 1
+            width: 20
+            height: 37
+
+
+    characterMap:  #!List<Char>
+        - " " #!Char
+        - "!" #!Char
+        - "\"" #!Char
+        - "#" #!Char
+        - "$" #!Char
+        - "%" #!Char
+        - "&" #!Char
+        - "'" #!Char
+        - "(" #!Char
+        - ")" #!Char
+        - "*" #!Char
+        - "+" #!Char
+        - "," #!Char
+        - "-" #!Char
+        - "." #!Char
+        - "/" #!Char
+        - "0" #!Char
+        - "1" #!Char
+        - "2" #!Char
+        - "3" #!Char
+        - "4" #!Char
+        - "5" #!Char
+        - "6" #!Char
+        - "7" #!Char
+        - "8" #!Char
+        - "9" #!Char
+        - ":" #!Char
+        - ";" #!Char
+        - "<" #!Char
+        - "=" #!Char
+        - ">" #!Char
+        - "?" #!Char
+        - "@" #!Char
+        - "A" #!Char
+        - "B" #!Char
+        - "C" #!Char
+        - "D" #!Char
+        - "E" #!Char
+        - "F" #!Char
+        - "G" #!Char
+        - "H" #!Char
+        - "I" #!Char
+        - "J" #!Char
+        - "K" #!Char
+        - "L" #!Char
+        - "M" #!Char
+        - "N" #!Char
+        - "O" #!Char
+        - "P" #!Char
+        - "Q" #!Char
+        - "R" #!Char
+        - "S" #!Char
+        - "T" #!Char
+        - "U" #!Char
+        - "V" #!Char
+        - "W" #!Char
+        - "X" #!Char
+        - "Y" #!Char
+        - "Z" #!Char
+        - "[" #!Char
+        - "\\" #!Char
+        - "]" #!Char
+        - "^" #!Char
+        - "_" #!Char
+        - "`" #!Char
+        - "a" #!Char
+        - "b" #!Char
+        - "c" #!Char
+        - "d" #!Char
+        - "e" #!Char
+        - "f" #!Char
+        - "g" #!Char
+        - "h" #!Char
+        - "i" #!Char
+        - "j" #!Char
+        - "k" #!Char
+        - "l" #!Char
+        - "m" #!Char
+        - "n" #!Char
+        - "o" #!Char
+        - "p" #!Char
+        - "q" #!Char
+        - "r" #!Char
+        - "s" #!Char
+        - "t" #!Char
+        - "u" #!Char
+        - "v" #!Char
+        - "w" #!Char
+        - "x" #!Char
+        - "y" #!Char
+        - "z" #!Char
+        - "{" #!Char
+        - "|" #!Char
+        - "}" #!Char
+        - "~" #!Char
+        - "" #!Char
+        - "" #!Char
+        - "" #!Char
+        - "" #!Char
+        - "" #!Char
+        - "" #!Char
+        - "" #!Char
+        - "" #!Char
+        - "" #!Char
+        - "" #!Char
+        - "" #!Char
+        - "" #!Char
+        - "" #!Char
+        - "" #!Char
+        - "" #!Char
+        - "" #!Char
+        - "" #!Char
+        - "" #!Char
+        - "" #!Char
+        - "" #!Char
+        - "" #!Char
+        - "" #!Char
+        - "" #!Char
+        - "" #!Char
+        - "" #!Char
+        - "" #!Char
+        - "" #!Char
+        - "" #!Char
+        - "" #!Char
+        - "" #!Char
+        - "" #!Char
+        - "" #!Char
+        - "" #!Char
+        - " " #!Char
+        - "¡" #!Char
+        - "¢" #!Char
+        - "£" #!Char
+        - "¤" #!Char
+        - "¥" #!Char
+        - "¦" #!Char
+        - "§" #!Char
+        - "¨" #!Char
+        - "©" #!Char
+        - "ª" #!Char
+        - "«" #!Char
+        - "¬" #!Char
+        - "­" #!Char
+        - "®" #!Char
+        - "¯" #!Char
+        - "°" #!Char
+        - "±" #!Char
+        - "²" #!Char
+        - "³" #!Char
+        - "´" #!Char
+        - "µ" #!Char
+        - "¶" #!Char
+        - "·" #!Char
+        - "¸" #!Char
+        - "¹" #!Char
+        - "º" #!Char
+        - "»" #!Char
+        - "¼" #!Char
+        - "½" #!Char
+        - "¾" #!Char
+        - "¿" #!Char
+        - "À" #!Char
+        - "Á" #!Char
+        - "Â" #!Char
+        - "Ã" #!Char
+        - "Ä" #!Char
+        - "Å" #!Char
+        - "Æ" #!Char
+        - "Ç" #!Char
+        - "È" #!Char
+        - "É" #!Char
+        - "Ê" #!Char
+        - "Ë" #!Char
+        - "Ì" #!Char
+        - "Í" #!Char
+        - "Î" #!Char
+        - "Ï" #!Char
+        - "Ð" #!Char
+        - "Ñ" #!Char
+        - "Ò" #!Char
+        - "Ó" #!Char
+        - "Ô" #!Char
+        - "Õ" #!Char
+        - "Ö" #!Char
+        - "×" #!Char
+        - "Ø" #!Char
+        - "Ù" #!Char
+        - "Ú" #!Char
+        - "Û" #!Char
+        - "Ü" #!Char
+        - "Ý" #!Char
+        - "Þ" #!Char
+        - "ß" #!Char
+        - "à" #!Char
+        - "á" #!Char
+        - "â" #!Char
+        - "ã" #!Char
+        - "ä" #!Char
+        - "å" #!Char
+        - "æ" #!Char
+        - "ç" #!Char
+        - "è" #!Char
+        - "é" #!Char
+        - "ê" #!Char
+        - "ë" #!Char
+        - "ì" #!Char
+        - "í" #!Char
+        - "î" #!Char
+        - "ï" #!Char
+        - "ð" #!Char
+        - "ñ" #!Char
+        - "ò" #!Char
+        - "ó" #!Char
+        - "ô" #!Char
+        - "õ" #!Char
+        - "ö" #!Char
+        - "÷" #!Char
+        - "ø" #!Char
+        - "ù" #!Char
+        - "ú" #!Char
+        - "û" #!Char
+        - "ü" #!Char
+        - "ý" #!Char
+        - "þ" #!Char
+        - "ÿ" #!Char
+        - "Ā" #!Char
+        - "ā" #!Char
+        - "Ă" #!Char
+        - "ă" #!Char
+        - "Ą" #!Char
+        - "ą" #!Char
+        - "Ć" #!Char
+        - "ć" #!Char
+        - "Ĉ" #!Char
+        - "ĉ" #!Char
+        - "Ċ" #!Char
+        - "ċ" #!Char
+        - "Č" #!Char
+        - "č" #!Char
+        - "Ď" #!Char
+        - "ď" #!Char
+        - "Đ" #!Char
+        - "đ" #!Char
+        - "Ē" #!Char
+        - "ē" #!Char
+        - "Ĕ" #!Char
+        - "ĕ" #!Char
+        - "Ė" #!Char
+        - "ė" #!Char
+        - "Ę" #!Char
+        - "ę" #!Char
+        - "Ě" #!Char
+        - "ě" #!Char
+        - "Ĝ" #!Char
+        - "ĝ" #!Char
+        - "Ğ" #!Char
+        - "ğ" #!Char
+        - "Ġ" #!Char
+        - "ġ" #!Char
+        - "Ģ" #!Char
+        - "ģ" #!Char
+        - "Ĥ" #!Char
+        - "ĥ" #!Char
+        - "Ħ" #!Char
+        - "ħ" #!Char
+        - "Ĩ" #!Char
+        - "ĩ" #!Char
+        - "Ī" #!Char
+        - "ī" #!Char
+        - "Ĭ" #!Char
+        - "ĭ" #!Char
+        - "Į" #!Char
+        - "į" #!Char
+        - "İ" #!Char
+        - "ı" #!Char
+        - "Ĳ" #!Char
+        - "ĳ" #!Char
+        - "Ĵ" #!Char
+        - "ĵ" #!Char
+        - "Ķ" #!Char
+        - "ķ" #!Char
+        - "ĸ" #!Char
+        - "Ĺ" #!Char
+        - "ĺ" #!Char
+        - "Ļ" #!Char
+        - "ļ" #!Char
+        - "Ľ" #!Char
+        - "ľ" #!Char
+        - "Ŀ" #!Char
+        - "ŀ" #!Char
+        - "Ł" #!Char
+        - "ł" #!Char
+        - "Ń" #!Char
+        - "ń" #!Char
+        - "Ņ" #!Char
+        - "ņ" #!Char
+        - "Ň" #!Char
+        - "ň" #!Char
+        - "ŉ" #!Char
+        - "Ŋ" #!Char
+        - "ŋ" #!Char
+        - "Ō" #!Char
+        - "ō" #!Char
+        - "Ŏ" #!Char
+        - "ŏ" #!Char
+        - "Ő" #!Char
+        - "ő" #!Char
+        - "Œ" #!Char
+        - "œ" #!Char
+        - "Ŕ" #!Char
+        - "ŕ" #!Char
+        - "Ŗ" #!Char
+        - "ŗ" #!Char
+        - "Ř" #!Char
+        - "ř" #!Char
+        - "Ś" #!Char
+        - "ś" #!Char
+        - "Ŝ" #!Char
+        - "ŝ" #!Char
+        - "Ş" #!Char
+        - "ş" #!Char
+        - "Š" #!Char
+        - "š" #!Char
+        - "Ţ" #!Char
+        - "ţ" #!Char
+        - "Ť" #!Char
+        - "ť" #!Char
+        - "Ŧ" #!Char
+        - "ŧ" #!Char
+        - "Ũ" #!Char
+        - "ũ" #!Char
+        - "Ū" #!Char
+        - "ū" #!Char
+        - "Ŭ" #!Char
+        - "ŭ" #!Char
+        - "Ů" #!Char
+        - "ů" #!Char
+        - "Ű" #!Char
+        - "ű" #!Char
+        - "Ų" #!Char
+        - "ų" #!Char
+        - "Ŵ" #!Char
+        - "ŵ" #!Char
+        - "Ŷ" #!Char
+        - "ŷ" #!Char
+        - "Ÿ" #!Char
+        - "Ź" #!Char
+        - "ź" #!Char
+        - "Ż" #!Char
+        - "ż" #!Char
+        - "Ž" #!Char
+        - "ž" #!Char
+        - "ſ" #!Char
+        - "ƀ" #!Char
+        - "Ɓ" #!Char
+        - "Ƃ" #!Char
+        - "ƃ" #!Char
+        - "Ƅ" #!Char
+        - "ƅ" #!Char
+        - "Ɔ" #!Char
+        - "Ƈ" #!Char
+        - "ƈ" #!Char
+        - "Ɖ" #!Char
+        - "Ɗ" #!Char
+        - "Ƌ" #!Char
+        - "ƌ" #!Char
+        - "ƍ" #!Char
+        - "Ǝ" #!Char
+        - "Ə" #!Char
+        - "—" #!Char
+        - "―" #!Char
+        - "‖" #!Char
+        - "‗" #!Char
+        - "‘" #!Char
+        - "’" #!Char
+        - "‚" #!Char
+        - "‛" #!Char
+        - "“" #!Char
+        - "”" #!Char
+        - "„" #!Char
+        - "‟" #!Char
+        - "†" #!Char
+        - "‡" #!Char
+        - "•" #!Char
+        - "‣" #!Char
+        - "․" #!Char
+        - "‥" #!Char
+        - "…" #!Char
+        - "‧" #!Char
+        - " " #!Char
+        - " " #!Char
+        - "‪" #!Char
+        - "‫" #!Char
+        - "‬" #!Char
+        - "‭" #!Char
+        - "‮" #!Char
+        - " " #!Char
+        - "‰" #!Char
+        - "‱" #!Char
+        - "′" #!Char
+        - "″" #!Char
+        - "‴" #!Char
+        - "‵" #!Char
+        - "‶" #!Char
+        - "‷" #!Char
+        - "‸" #!Char
+        - "‹" #!Char
+        - "›" #!Char
+        - "€" #!Char
+        - "♡" #!Char
+
+    verticalSpacing: 33
+    horizontalSpacing: -1
+    kerning:  #!List<Vector3>
+        -  #!Vector3
+            x: 0
+            y: 1
+            z: 9
+
+        -  #!Vector3
+            x: 2
+            y: 2
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 6
+            z: 2
+
+        -  #!Vector3
+            x: 0
+            y: 16
+            z: 2
+
+        -  #!Vector3
+            x: 0
+            y: 18
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 18
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 2
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 6
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 6
+            z: 2
+
+        -  #!Vector3
+            x: 0
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 4
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 8
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 2
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 4
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 12
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 8
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 12
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 2
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 4
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 0
+            y: 20
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 12
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 12
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 12
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 12
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 16
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 2
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 8
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 12
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 12
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 18
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 16
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 16
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 22
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 4
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 4
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 4
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 12
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 12
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 8
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 2
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 6
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 8
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 4
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 18
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 12
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 8
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 12
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 2
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 12
+            z: 2
+
+        -  #!Vector3
+            x: 1
+            y: 28
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 11
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 0
+            y: 1
+            z: 9
+
+        -  #!Vector3
+            x: 4
+            y: 2
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 0
+            y: 16
+            z: 2
+
+        -  #!Vector3
+            x: 0
+            y: 16
+            z: 2
+
+        -  #!Vector3
+            x: 0
+            y: 16
+            z: 2
+
+        -  #!Vector3
+            x: 0
+            y: 16
+            z: 2
+
+        -  #!Vector3
+            x: 0
+            y: 16
+            z: 2
+
+        -  #!Vector3
+            x: 0
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 0
+            y: 16
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 12
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 1
+            y: 11
+            z: 3
+
+        -  #!Vector3
+            x: 2
+            y: 16
+            z: 2
+
+        -  #!Vector3
+            x: 1
+            y: 17
+            z: 3
+
+        -  #!Vector3
+            x: 2
+            y: 8
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 8
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 8
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 4
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 4
+            y: 2
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 6
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 6
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 8
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 12
+            z: 2
+
+        -  #!Vector3
+            x: 4
+            y: 16
+            z: 2
+
+        -  #!Vector3
+            x: 4
+            y: 18
+            z: 2
+
+        -  #!Vector3
+            x: 4
+            y: 16
+            z: 2
+
+        -  #!Vector3
+            x: 4
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 16
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 12
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 12
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 12
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 12
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 4
+            z: 2
+
+        -  #!Vector3
+            x: 4
+            y: 4
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 6
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 6
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 16
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 16
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 16
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 16
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 16
+            z: 2
+
+        -  #!Vector3
+            x: 4
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 18
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 12
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 12
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 12
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 12
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 12
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 12
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 12
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 18
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 0
+            y: 4
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 4
+            z: 2
+
+        -  #!Vector3
+            x: 0
+            y: 6
+            z: 2
+
+        -  #!Vector3
+            x: 0
+            y: 6
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 12
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 12
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 12
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 12
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 12
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 1
+            y: 22
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 16
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 22
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 16
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 22
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 16
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 20
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 15
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 20
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 15
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 20
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 15
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 20
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 15
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 19
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 20
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 22
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 18
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 18
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 17
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 18
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 17
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 18
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 17
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 18
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 17
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 18
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 17
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 22
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 16
+            z: 3
+
+        -  #!Vector3
+            x: 2
+            y: 16
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 1
+            y: 22
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 16
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 22
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 16
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 18
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 15
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 24
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 17
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 12
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 11
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 10
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 11
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 10
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 10
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 6
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 6
+            z: 3
+
+        -  #!Vector3
+            x: 2
+            y: 6
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 2
+            z: 2
+
+        -  #!Vector3
+            x: 1
+            y: 20
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 11
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 17
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 11
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 19
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 15
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 15
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 15
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 7
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 15
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 4
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 15
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 15
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 11
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 18
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 18
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 15
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 18
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 15
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 18
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 15
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 20
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 18
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 15
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 22
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 17
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 22
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 17
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 22
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 17
+            z: 3
+
+        -  #!Vector3
+            x: 2
+            y: 16
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 16
+            z: 2
+
+        -  #!Vector3
+            x: 1
+            y: 20
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 10
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 20
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 10
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 20
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 11
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 19
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 15
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 19
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 15
+            z: 3
+
+        -  #!Vector3
+            x: 2
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 2
+            y: 10
+            z: 2
+
+        -  #!Vector3
+            x: 1
+            y: 19
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 15
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 19
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 9
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 19
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 11
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 19
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 9
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 18
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 15
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 18
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 15
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 18
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 15
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 18
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 15
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 18
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 15
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 18
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 15
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 30
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 24
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 22
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 15
+            z: 3
+
+        -  #!Vector3
+            x: 2
+            y: 14
+            z: 2
+
+        -  #!Vector3
+            x: 1
+            y: 19
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 15
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 19
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 15
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 19
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 15
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 18
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 23
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 18
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 16
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 21
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 18
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 21
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 25
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 20
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 22
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 25
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 18
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 16
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 17
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 18
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 22
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 20
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 19
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 17
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 4
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 4
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 4
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 4
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 9
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 9
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 9
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 16
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 16
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 4
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 13
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 16
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 4
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 33
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 11
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 11
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 11
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 11
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 11
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 11
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 16
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 33
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 42
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 5
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 10
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 13
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 5
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 9
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 13
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 11
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 1
+            y: 8
+            z: 3
+
+        -  #!Vector3
+            x: 0
+            y: 16
+            z: 2
+
+        -  #!Vector3
+            x: 1
+            y: 20
+            z: 3
+
+
+    defaultCharacter:  #!Nullable<Char>
+        data: "*" #!Char
+
+
+extractedImages: 
+    - 
+        path: "texture"
+
+

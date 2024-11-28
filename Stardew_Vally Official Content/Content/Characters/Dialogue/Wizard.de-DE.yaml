@@ -1,0 +1,43 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Introduction: "Ah, ja. Ich habe deine Ankunft schon vor langer Zeit vorhergesehen, @.#$e#Allerdings liegt dein Schicksal ultimativ in deinen Händen." #!String
+    AcceptGift_(O)StardropTea: "Ah, was haben wir denn da? Ein seltenes und starkes Elixier, wie es scheint. Ja, das wird meine Reagenzienkammer gut ergänzen." #!String
+    accept_868: "Ah... ein arktischer Splitter.#$b#Eine in der Tat äußerst kraftvolle Substanz und stark mit dem Element Eis durchdrungen.#$b#Ich nehme es, wenn es dir nichts ausmacht.#$b#...#$b#...Ähm...Du bist immer noch hier. Oh. Willst du etwas?#$b#...Nimm dies." #!String
+    MovieInvitation: "Hmm... Ich nehme an, ich könnte dich begleiten... ja. Sobald du angekommen bist, werde ich erscheinen. Leb wohl." #!String
+    GreenRain: "Auch wenn die ungewöhnlichen Regenfälle beunruhigend sein mögen, gibt es an diesem Tag nichts zu befürchten.#$e#Es ist sogar ein Tag großer Freude für viele Lebewesen." #!String
+    GreenRain_2: "Die Natur ist eine mächtige Kraft, mit der man nicht spaßen sollte.#$e#Entschuldige mich, aber es gibt besondere Angelegenheiten, die ich nur an diesem Tag erledigen kann." #!String
+    married: "Ehe... hmm? Ich bete, dass du mehr Glück hast als ich..." #!String
+    roommates_Krobus: "Es wird eine Herausforderung sein, mit einem wie Krobus zusammenzuleben. Aber ich bin sicher, dass es sich für beide Seiten lohnen wird.#$e#Ich gebe zu, dass ich sehr gespannt bin, wie sich diese ungewöhnliche Freundschaft entwickeln wird." #!String
+    Mon: "Ich habe viele Dinge über deine Zukunft gesehen, @.#$e#Wenn ich sie dir sagen würde, könnte das ernste Konsequenzen nach sich ziehen." #!String
+    Mon4: "Außerhalb des Bereichs der menschlichen Zivilisation offenbart die Natur ihre wahren Geheimnisse." #!String
+    Mon8: "Es gibt Gegenden in der Welt, die noch nicht von den Zwängen des modernen Denkens befleckt sind und in denen die Magie noch sehr lebendig ist..." #!String
+    Sat6: "Die wissenschaftliche Praxis mag zwar die Materie unserer Welt genau beschreiben, aber sie wird niemals die tiefsten Geheimnisse lüften..." #!String
+    Tue: "Wenn du nichts Wichtiges zu sagen hast, lass mich in Frieden. Ich habe viel Arbeit vor mir." #!String
+    Tue4: "Ich vertraue dir genug, um mich in meinen Keller zu lassen. Behandle das, was du dort findest, mit Respekt." #!String
+    Tue8: "Grüße, @. Ich gehe davon aus, dass du dich nicht in den dunklen Künsten versucht hast?" #!String
+    Tue10: "Wenn die Realität durch den Verstand konstruiert wird, dann könnte man, wenn man die Macht des Verstandes beherrscht, die Realität kontrollieren...." #!String
+    Wed: "Es benötigt viele Jahre intensiven Studiums, um die Sprache der Elementare zu verstehen.#$e#Um sie tatsächlich zu sprechen, musst du dich ihr dein Leben lang widmen.#$e#Wenn du mich jetzt entschuldigen würdest..." #!String
+    Thu: "Es ranken sich viele Mysterien um uns. Du musst geduldig sein, wenn du wünschst, sie alle zu entdecken." #!String
+    Thu10: "Du darfst es niemandem sagen... Aber ich habe den Grund zur Annahme, dass einer der Bewohner hier meine Tochter ist...#$e#Ich könnte mich irren... Es ist selten, passiert aber doch." #!String
+    Fri: "Ich glaube, die Leute hier haben Angst vor mir.#$e#Es ist schade, aber ich schätze es ist menschlich, Angst vor dem Unbekannten zu haben." #!String
+    Fri6: "Ich war vor langer Zeit verheiratet. Nachdem meine Frau und ich uns getrennt hatten, begann sie damit, durch die Gegend zu fliegen und jeden zu verfluchen den sie gesehen hat.#$e#Keine sehr erwachsene Art, um ihrer Wut Ausdruck zu verleihen." #!String
+    Sat: "Pass auf, du stehst auf einem sehr mächtigen magischen Feld.#$e#Ich habe meine Hütte hier aus einem bestimmten Grund aufgebaut, weißt du." #!String
+    Sat2: "Hast du irgendwelche Fortschritte mit den Waldgeistern gemacht?" #!String
+    Sun: "Manchmal beobachte ich insgeheim die Stadtbewohner.#$e#Ich würde gerne einen Lehrling finden. Irgendwann werde ich diese sterbliche Ebene verlassen, aber meine arkanen Nachforschungen müssen fortgesetzt werden." #!String
+

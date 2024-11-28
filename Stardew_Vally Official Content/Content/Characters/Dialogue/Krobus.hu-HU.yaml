@@ -1,0 +1,49 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    SpouseStardrop: "Ezt egyfajta 'köszönésképpen' adnám neked, amiért megengedted, hogy itt élhessek veled.$h" #!String
+    4_*: "...A bányákban találkoztál olyanokkal mint én? Sajnálom, ha ellenségesek voltak veled. Megtanultunk félni az emberektől... túl sok... kellemetlen találkozásunk volt.#$e#Nem... ölted meg egy barátomat sem, ugye?" #!String
+    AcceptBirthdayGift_Positive: "Ó, egy ajándék azon nap emlékére, amikor kikeltem! Köszönöm!$h" #!String
+    GreenRain: "Ma a szokásosnál is erősebben folynak a vizek... mi történik odafent?" #!String
+    AcceptBirthdayGift_Negative: "Ó... ezt nevezed 'születésnapi ajándéknak'? Nem értem az embereket...$s" #!String
+    AcceptGift_(O)StardropTea: "Az ott Csillaghulló tea? Köszönöm! Egyetlen csepp is elég, hogy a szobámnak egész nap jó illata legyen." #!String
+    AcceptGift_(O)Book_Void: "Hé, nézd! Az összes barátom benne van!$h#$b#Várjunk csak, az ott én volnék...?$7" #!String
+    AcceptGift_(O)879: "Egy kedves parfümös ajándék? Óh, @... Elpirultam, de gondolom nem veszed észre...$4" #!String
+    AcceptGift_(O)308: "Az illata alapján ízletes! A felét megeszem, a másik felével pedig hidratálni fogom a testemet...$h" #!String
+    8_*: "Nemrég ért véget egy ezer éves háború a népem és a törpék között. A neheztelés még mindig erős mind a két oldalon." #!String
+    15_*: "Kérlek tartsd titokban a búvóhelyemet. Ha a törpék tudnának rólam, biztosan bérgyilkost küldenének." #!String
+    18_*: "Próbálok nem túl sok zajt okozni idelent. Képzeld el mit gondolnának a városlakók, ha fura zajokat hallanának a lefolyóból..." #!String
+    Fri: "..." #!String
+    eventSeen_691039: "...Kissé megsérültem, de amúgy jól vagyok." #!String
+    reject_868: "Ó, az egy sarki töredék! Az egy nagyon ritka mágikus tárgy.#$b#Én a helyedben elvinném a Varázslónak." #!String
+    Wed: "Olyan dolgokat árulok, amiket itt találtam. Kínálhatlak valamivel?" #!String
+    Wed6: "Ha a füledet ehhez a csőhöz helyezed, akkor bármelyik ház hangját hallhatod.#$b#Habár én nem hallgatóznék!$3" #!String
+    Thu: "Kérlek ne szólj rólam senkinek.#$b#Az emberek általában elpusztítják amit nem értenek meg." #!String
+    Thu6: "Kérlek senkinek se mesélj rólam.#$b#A legtöbb ember fél tőlünk árnyékemberektől... talán jó okkal.$s#$b#De ez nem számít, ha a városiak tudnának rólam, akkor nem lennék itt biztonságban." #!String
+    Tue: "A legtöbb napon túl érzékeny vagyok a napfényre ahhoz, hogy világosban kimenjek.#$b#Itt tökéletesek a körülmények.#$e#Kínálhatlak valamivel?" #!String
+    Mon: "Kérlek, ne ijedj meg. Más vagyok mint a többiek.#$e#Sok időt töltöttem az emberek megfigyelésével. Tudom, hogy szerettek vásárolni. Szeretnéd látni a portékámat?" #!String
+    Mon2: "Újra itt? Ez a viselkedés beleillik az emberekről alkotott elméletembe." #!String
+    Mon6: "A 'Krobus' népem nyelvén azt jelenti: 'hídjáró'." #!String
+    Sat: "Péntekenként Yoba iránt mutatott tiszteletem jeléül csendben maradok." #!String
+    Sat4: "Szeretnék többet látni a külvilágból, de nem lenne biztonságos számomra.$s" #!String
+    Sat8: "Soha nem fogom megtudni, hogy milyen embernek lenni... de a veled való beszélgetésekből úgy érzem, hogy kissé kezdem megérteni." #!String
+    Sun: "...Bocsánat, még mindig tartok kicsit az emberektől. Ennek ellenére a boltom továbbra is nyitva áll számodra." #!String
+    Sun4: "Te nem olyan vagy, mint a többi ember, igaz-e?" #!String
+    Sun8: "Felnyitottad a szemem az emberek világára. Hálás vagyok érte." #!String
+    divorced: "..." #!String
+

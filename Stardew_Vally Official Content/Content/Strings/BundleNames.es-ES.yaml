@@ -1,0 +1,38 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Rare Crops: "Cultivos raros" #!String
+    Fish Farmer's: "Granja de peces" #!String
+    Garden: "Jardín" #!String
+    Brewer's: "Cervecería" #!String
+    Quality Fish: "Peces de calidad" #!String
+    Master Fisher's: "Maestro de pesca" #!String
+    Treasure Hunter's: "Cazador de tesoros" #!String
+    Children's: "Niños" #!String
+    Forager's: "Recolector" #!String
+    Home Cook's: "Cocina casera" #!String
+    Wild Medicine: "Medicina salvaje" #!String
+    Sticky: "Pegajoso" #!String
+    Engineer's: "Ingenieril" #!String
+    Forest: "Bosque" #!String
+    Helper's: "del Ayudante" #!String
+    Spirit's Eve: "Víspera de los Espíritus" #!String
+    Winter Star: "Estrella de Invierno" #!String
+    Aquatic Jelly: "Gelatina Acuática" #!String
+    Bookworm's: "de la Rata de Biblioteca" #!String
+

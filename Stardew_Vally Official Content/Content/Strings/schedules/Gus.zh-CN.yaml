@@ -1,0 +1,23 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    fall_4.000: "看医生总是让我紧张得要死……要是我活不久了怎么办？这个世界我还没待够呢！" #!String
+    fall_4.001: "是肝出问题了吧，医生？我从你脸上瞧出来的。*唉*……我真该少喝点香甜可口的星露谷红酒了。$s" #!String
+    Mon.000: "我要给酒馆进点货。皮埃尔店里的商品就很不错。$h" #!String
+    Sun.000: "嘿，@。不好意思……游戏结束前酒吧不会开放。" #!String
+

@@ -1,0 +1,37 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    504: "Sneakers/有点单薄……但是时尚嘛！/50/1/0/0/运动鞋" #!String
+    505: "Rubber Boots/提供元素保护。/50/0/1/1/橡胶靴" #!String
+    506: "Leather Boots/这种皮革非常柔软。/50/1/1/2/皮靴" #!String
+    507: "Work Boots/加固了钢铁作为额外防护。/50/2/0/3/工作靴" #!String
+    508: "Combat Boots/加固了铁丝作防护。/150/3/0/4/战靴" #!String
+    509: "Tundra Boots/毛绒绒的材质保持你的脚跟温暖。/150/2/1/5/冻土靴" #!String
+    510: "Thermal Boots/设计于恶劣气候地带使用。/50/1/2/6/热能靴" #!String
+    511: "Dark Boots/使用黑色粗厚皮革所打造。/250/4/2/7/黑暗之靴" #!String
+    512: "Firewalker Boots/据说能够承受最高温的熔岩。/250/3/3/8/蹈火者靴" #!String
+    513: "Genie Shoes/奇怪的能量围绕着鞋面。/250/1/6/9/神怪之鞋" #!String
+    514: "Space Boots/铱编织，所以散发着紫色亮光。/450/4/4/10/太空之靴" #!String
+    515: "Cowboy Boots/乡下人的时尚高度。/250/2/2/11/牛仔之靴" #!String
+    804: "Emily's Magic Boots/艾米丽爱心打造。100% 可降解！/250/4/4/13/艾米丽的魔法靴" #!String
+    806: "Leprechaun Shoes/搭扣是纯金做的。/250/2/1/14/矮精灵鞋子" #!String
+    853: "Cinderclown Shoes/这双神奇鞋子的主人是一位著名的矮人小丑。/1000/6/5/15/灰烬小丑鞋" #!String
+    854: "Mermaid Boots/美人鱼鳞片给这双靴子赋予了保护光环。/1000/5/8/16/美人鱼靴" #!String
+    855: "Dragonscale Boots/这双闪烁光芒的靴子非常坚韧。/1000/7/0/17/龙鳞靴" #!String
+    878: "Crystal Shoes/这双闪闪发光的鞋子会保护好你的脚。/1000/3/5/18/水晶鞋" #!String
+

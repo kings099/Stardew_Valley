@@ -1,0 +1,27 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    spring13: "Fête des Oeufs" #!String
+    spring24: "La Danse des Fleurs" #!String
+    summer11: "Fête Hawaïenne" #!String
+    summer28: "Danse des Méduses Clair de Lune " #!String
+    fall16: "Grand Festival de Stardew Valley " #!String
+    fall27: "Fête des Esprits" #!String
+    winter8: "Festival des Glaces" #!String
+    winter25: "Fête de l'Étoile Hivernale" #!String
+

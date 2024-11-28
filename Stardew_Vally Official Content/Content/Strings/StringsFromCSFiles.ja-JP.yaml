@@ -1,0 +1,1694 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Buff.cs.453: "焼け焦げ" #!String
+    Buff.cs.456: "満腹" #!String
+    Buff.cs.457: "水やり済" #!String
+    Buff.cs.458: "千鳥足" #!String
+    Buff.cs.460: "べとつき" #!String
+    Buff.cs.462: "怯え" #!String
+    Buff.cs.464: "不運" #!String
+    Buff.cs.466: "凍結" #!String
+    Buff.cs.468: "戦士の力" #!String
+    Buff.cs.470: "ヨバ神の加護" #!String
+    Buff.cs.471: "被ダメージ無効" #!String
+    Buff.cs.472: "アドレナリン放出" #!String
+    Buff.cs.474: "ニンニクのオイル" #!String
+    Buff.cs.475: "肌がニンニクの匂いを放っている" #!String
+    Buff.cs.476: "効果時間: " #!String
+    Buff.cs.480: " 農業" #!String
+    Buff.cs.483: " 釣り" #!String
+    Buff.cs.486: " 採鉱" #!String
+    Buff.cs.489: " 幸運" #!String
+    Buff.cs.492: " 採取" #!String
+    Buff.cs.495: " 最大エネルギー" #!String
+    Buff.cs.498: " 引きつける範囲" #!String
+    Buff.cs.501: " 防御" #!String
+    Buff.cs.504: " 攻撃" #!String
+    Buff.cs.507: " 速度" #!String
+    Buff.cs.508: "発生源: " #!String
+    CraftingRecipe.cs.567: "材料:" #!String
+    CraftingRecipe.cs.568: "植物 (なんでも)" #!String
+    CraftingRecipe.cs.569: "宝石 (なんでも)" #!String
+    CraftingRecipe.cs.570: "野菜 (なんでも)" #!String
+    CraftingRecipe.cs.571: "魚 (なんでも)" #!String
+    CraftingRecipe.cs.572: "卵 (なんでも)" #!String
+    CraftingRecipe.cs.573: "ミルク (なんでも)" #!String
+    CraftingRecipe.cs.574: "野生の種(いずれか)" #!String
+    CraftingRecipe.cs.575: "エラーアイテム" #!String
+    UnnamedItem: "名前のないアイテム" #!String
+    Crop.cs.588: "持ちものが いっぱいです" #!String
+    Debris.cs.621: "銅" #!String
+    Debris.cs.622: "鉄" #!String
+    Debris.cs.623: "石炭" #!String
+    Debris.cs.624: "金" #!String
+    Debris.cs.625: "コイン" #!String
+    Debris.cs.626: "イリジウム" #!String
+    Debris.cs.627: "木" #!String
+    Debris.cs.628: "石" #!String
+    Debris.cs.629: "燃料" #!String
+    Debris.cs.630: "水晶" #!String
+    Dialogue.cs.679: "むらさきの" #!String
+    Dialogue.cs.680: "ネバネバした" #!String
+    Dialogue.cs.681: "こなっぽい" #!String
+    Dialogue.cs.682: "緑の" #!String
+    Dialogue.cs.683: "ぬいぐるみ" #!String
+    Dialogue.cs.684: "ぶあつい" #!String
+    Dialogue.cs.685: "巨大な" #!String
+    Dialogue.cs.686: "脂ぎった" #!String
+    Dialogue.cs.687: "暗い" #!String
+    Dialogue.cs.688: "実用的な" #!String
+    Dialogue.cs.689: "細長い" #!String
+    Dialogue.cs.690: "ぼんやりとした" #!String
+    Dialogue.cs.691: "パリパリの" #!String
+    Dialogue.cs.692: "すばらしい" #!String
+    Dialogue.cs.693: "弾力のある" #!String
+    Dialogue.cs.694: "バカげた" #!String
+    Dialogue.cs.695: "勇敢な" #!String
+    Dialogue.cs.696: "手ごろな" #!String
+    Dialogue.cs.697: "孤独な" #!String
+    Dialogue.cs.698: "苦い" #!String
+    Dialogue.cs.699: "ドラゴン" #!String
+    Dialogue.cs.700: "ビュッフェ" #!String
+    Dialogue.cs.701: "ビスケット" #!String
+    Dialogue.cs.702: "ロボット" #!String
+    Dialogue.cs.703: "惑星" #!String
+    Dialogue.cs.704: "ペッパー" #!String
+    Dialogue.cs.705: "墓" #!String
+    Dialogue.cs.706: "ハイエナ" #!String
+    Dialogue.cs.707: "くちびる" #!String
+    Dialogue.cs.708: "ウズラ" #!String
+    Dialogue.cs.709: "チーズ" #!String
+    Dialogue.cs.710: "災害" #!String
+    Dialogue.cs.711: "レインコート" #!String
+    Dialogue.cs.712: "クツ" #!String
+    Dialogue.cs.713: "城" #!String
+    Dialogue.cs.714: "エルフ" #!String
+    Dialogue.cs.715: "ポンプ" #!String
+    Dialogue.cs.716: "さわやかな" #!String
+    Dialogue.cs.717: "カツラ" #!String
+    Dialogue.cs.718: "人魚" #!String
+    Dialogue.cs.719: "ドラムスティック" #!String
+    Dialogue.cs.720: "人形" #!String
+    Dialogue.cs.721: "潜水艦" #!String
+    Dialogue.cs.722: "は走った" #!String
+    Dialogue.cs.723: "は踊った" #!String
+    Dialogue.cs.724: "は話した" #!String
+    Dialogue.cs.725: "は駆けた" #!String
+    Dialogue.cs.726: "は食べた" #!String
+    Dialogue.cs.727: "は浮いた" #!String
+    Dialogue.cs.728: "は立った" #!String
+    Dialogue.cs.729: "は流れた" #!String
+    Dialogue.cs.730: "は嗅いだ" #!String
+    Dialogue.cs.731: "は泳いだ" #!String
+    Dialogue.cs.732: "は焼いた" #!String
+    Dialogue.cs.733: "は割れた" #!String
+    Dialogue.cs.734: "は解けた" #!String
+    Dialogue.cs.735: "てっぺん" #!String
+    Dialogue.cs.736: "ちかく" #!String
+    Dialogue.cs.737: "一緒に" #!String
+    Dialogue.cs.738: "横に" #!String
+    Dialogue.cs.739: "から離れた" #!String
+    Dialogue.cs.740: "に近すぎる" #!String
+    Dialogue.cs.741: "に危ないほど近い" #!String
+    Dialogue.cs.742: "からすごく離れた" #!String
+    Dialogue.cs.743: "に不愉快なほど近い" #!String
+    Dialogue.cs.744: "のずっと上" #!String
+    Dialogue.cs.745: "のずっと下" #!String
+    Dialogue.cs.746: "とは違う惑星の" #!String
+    Dialogue.cs.747: "とは違う時代の" #!String
+    Dialogue.cs.748: "城下の村" #!String
+    Dialogue.cs.749: "バスケットタウン" #!String
+    Dialogue.cs.750: "パインメサシティ" #!String
+    Dialogue.cs.751: "ポイントドレイク" #!String
+    Dialogue.cs.752: "ミニスターバレー" #!String
+    Dialogue.cs.753: "グランプルトン" #!String
+    Dialogue.cs.754: "ズズ シティ" #!String
+    Dialogue.cs.755: "沖の小さな島" #!String
+    Dialogue.cs.756: "ジョサ砦" #!String
+    Dialogue.cs.757: "チェスターベイル" #!String
+    Dialogue.cs.758: "フェーン諸島" #!String
+    Dialogue.cs.759: "タンカーグローブ" #!String
+    Dialogue.cs.792: "こんにちは。" #!String
+    Dialogue.cs.793: "赤ちゃん" #!String
+    Dialogue.cs.794: "2人目の赤ちゃん" #!String
+    Dialogue.cs.795: "/真紅" #!String
+    Dialogue.cs.796: "/グリーン" #!String
+    Dialogue.cs.797: "/褐色" #!String
+    Dialogue.cs.798: "/むらさき" #!String
+    Dialogue.cs.799: "/ディープブルー" #!String
+    Dialogue.cs.800: "/ネオンピンク" #!String
+    Dialogue.cs.801: "/うす黄色" #!String
+    Dialogue.cs.802: "/チョコレート/ブラウン" #!String
+    Dialogue.cs.803: "/スカイ/ブルー" #!String
+    Dialogue.cs.804: "/バブルガム/ピンク" #!String
+    Dialogue.cs.805: "/ブラッド/レッド" #!String
+    Dialogue.cs.806: "/ブライト/オレンジ" #!String
+    Dialogue.cs.807: "/アクアマリン" #!String
+    Dialogue.cs.808: "/銀灰色" #!String
+    Dialogue.cs.809: "/キラキラ/ゴールド" #!String
+    Dialogue.cs.810: "/レインボー" #!String
+    Event.cs.1018: "さっきは 少々 差し出がましかったかな… すまない。$5" #!String
+    Event.cs.1020: "研究所での お手伝い、 ありがとね。$h" #!String
+    Event.cs.1025: "美しい 結婚式だったよ。 おめでとう！$h" #!String
+    Event.cs.1057: "おっと…" #!String
+    Event.cs.1058: "{0}gを紛失したようだ。" #!String
+    Event.cs.1060: "かばんから " #!String
+    Event.cs.1061: "アイテムを 1つ なくしたようだ。" #!String
+    Event.cs.1062: "{0} アイテムをなくしたようだ。" #!String
+    Event.cs.1063: "それに、 " #!String
+    Event.cs.1068: "ハーヴィー先生から診療代として{0}G請求された。" #!String
+    Event.cs.1070: "手持ちは 足りなかったが、 ハーヴィー先生は 無償で 治してくれた。 " #!String
+    Event.cs.1071: "どうやら、 かばんから " #!String
+    Event.cs.1159: "1000Gを受け取った " #!String
+    Event.cs.1164: "2000Gを受け取った " #!String
+    Event.cs.1220: "キノコ" #!String
+    Event.cs.1222: "コウモリ" #!String
+    Event.cs.1223: "どちらを 選びますか？ " #!String
+    Event.cs.1236: "名前を 選んでください" #!String
+    AdoptPet: "この {0}をかいますか？" #!String
+    Event.cs.1242: "ネコ" #!String
+    Event.cs.1243: "イヌ" #!String
+    Event.cs.1257: "ようやく本が書きあがったよ！内容はね、推理小説なんだ！推理小説が好きだって僕に 話してくれたの、覚えてるかい？$h#$b#この'%book'は、疑惑とナゾに包まれたスリリングな物語なんだ！$u#$b#きみにはほんとうに助けてもらったよ。本の収益を分けようかなと思ったくらいさ！$h" #!String
+    Event.cs.1258: "ようやく本が書きあがったよ！内容はね、恋愛小説なんだ！…前にきみが、恋愛小説が好きなんだって言ってただろ。 それに最近、実生活からいいインスピレーションを得られたからね。$l#$b#この'%book' では、女性車掌が旅行中の建築家に恋をする…でも、彼は車掌の娘とひそかに付き合っていたんだ！#$b#きみにはほんとうに助けてもらったよ。本の収益を分けようかなと思ったくらいさ！$h" #!String
+    Event.cs.1259: "ようやく本が書きあがったよ！内容はね、SF小説なんだ！SF小説が好きだって僕に 話してくれたの、覚えてるかい？$h#$b#この'%book'は、半精神的な生物と共生関係になった少年が、 いっしょに 銀河規模の秘密結社の陰謀を解きあかすことになる話なんだ。 $u#$b#きみにはほんとうに助けてもらったよ。本の収益を分けようかなと思ったくらいさ！$h" #!String
+    Event.cs.1260: "ようやく本が書きあがったよ！$h#$b#この'%book'は、政府の 土地観測者が孤立した、小さな鉱山労働者たちの町を 訪れ…その恐ろしい秘密を 暴くことになる話なんだ。$u#$b#きみにはほんとうに助けてもらったよ。本の収益を分けようかなと思ったくらいさ！$h" #!String
+    Event.cs.1306: "お前と最後に話したときから、牧場のようすはあまり変わっていないようだね…それでもかまわないよ。#$b#お前があたらしい暮らしを楽しんでいるのなら、おじいちゃんにはそれでじゅうぶんだ…#$b#さて、それではあの世にもどるとしよう…お前の準備ができたときは、いつでも呼んでおくれ。" #!String
+    Event.cs.1307: "さいごに話したときとくらべると、よくやっているようだね。#$b#お前がいっしょうけんめいやっている…それだけでおじいちゃんは満足だよ。お前はじまんの孫だ。#$b#さて、それではあの世にもどるとしよう…お前の準備ができたときは、いつでも呼んでおくれ。" #!String
+    Event.cs.1308: "おお、よくやっているようだね。#$b#%farm 牧場も、ずいぶんりっぱになった。お前はわが一族の誇りだよ。#$b#おじいちゃんはうれしいよ。#$b#さて、それではあの世にもどるとしよう…お前の準備ができたときは、いつでも呼んでおくれ。" #!String
+    Event.cs.1309: "おお、なんとすばらしい！#$b#さいごに話したときとくらべると見ちがえるようだね！#$b#お前はおじいちゃんよりもいい牧場主になったね。まさに、わが一族の誇りだよ。#$b#おお…これでやっと、おじいちゃんも安らかに眠れそうだ。それでは、元気でな。" #!String
+    Event.cs.1315: "ここ数年、牧場のようすはあまり変わっていないようだね…それでもかまわないよ。#$b#お前があたらしい暮らしを楽しんでいるのなら、おじいちゃんにはそれでじゅうぶんだからね…" #!String
+    Event.cs.1316: "お前はここでよくやっているようだね。#$b#お前がいっしょうけんめいやっている…それだけでおじいちゃんは満足だよ。お前はじまんの孫だ。" #!String
+    Event.cs.1317: "おお、よくやっているようだね。#$b#%farm 牧場も、ずいぶんりっぱになった。お前はわが一族の誇りだよ。#$b#おじいちゃんはうれしいよ。" #!String
+    Event.cs.1318: "おお、なんとすばらしい！#$b#お前はおじいちゃんよりもいい牧場主になったね。まさに、わが一族の誇りだよ。#$b#おお…これでやっと、おじいちゃんも安らかに眠れそうだ。それでは、元気でな。" #!String
+    Event.cs.1497: "ちょっと いい？#$b#贈りたいものが あるんだ。 昨夏、 浜辺で 遊んでいたら こんなものを 見つけたんだ。 どうぞ。$h/ちょっと いい？#$b#贈りたいものがあるの。 昨夏、 浜辺で 遊んでいたら こんなものを 見つけたの。 どうぞ。$h" #!String
+    Event.cs.1498: "牧場主の @ よ、 ここに 来てくれて うれしい！$h" #!String
+    Event.cs.1499: "やあ、 @。 今年の秘密のプレゼントをどうぞ。#$b#ほら、 開けて。$h" #!String
+    Event.cs.1500: "たいしたものじゃないけど、 気に入ってくれるといいな。$h/たいしたものじゃないけど、 気に入ってくれるといいね。$h" #!String
+    Event.cs.1501: "やあ。 今年の 秘密の プレゼントは 私から みたいだね。#$b#それじゃ、 開けて！" #!String
+    Event.cs.1504: "豪華なもの じゃないけど、 買える中では 一番の ものなんだぞ。/豪華なもの じゃないけど、 買える中では 一番の ものなのよ。" #!String
+    Event.cs.1514: "時間: {0}" #!String
+    Event.cs.1515: "卵: {0}" #!String
+    Event.cs.1521: "$q -1 null#みんな エッグハントの 準備が できたと 思うかね？#$r -1 0 yes#うん、 はじめよう。#$r -1 0 no#もう少し 待って。" #!String
+    Event.cs.1524: "$q -1 null#そろそろ、ダンスをはじめるかね？#$r -1 0 yes#うん、 はじめよう。#$r -1 0 no#もう少し 待って。" #!String
+    Event.cs.1527: "$q -1 null#そろそろルアウを始めるかね？知事どのが小腹をすかしているみたいだぞ。#$r -1 0 yes#うん、 はじめよう。#$r -1 0 no#もう少し 待って。" #!String
+    Event.cs.1531: "$q -1 null#君の意見を聞きたいが… 今 船を 出したほうが いいかね？#$r -1 0 yes#うん。#$r -1 0 no#もう少し 待って。" #!String
+    Event.cs.1535: "$q -1 null#おや… 町内品評会の 準備は もう できたかね？#$r -1 0 yes#うん。#$r -1 0 no#もう少し 待って。" #!String
+    Event.cs.1548: "$q -1 null#氷上魚釣り大会に 参加する 準備は できたかね？#$r -1 0 yes#うん。#$r -1 0 no#もう少し 待って。" #!String
+    Event.cs.1584: "品評会に出した 品物の 評価が 下されました。 ルイス町長に 結果を 聞きましょう！" #!String
+    Event.cs.1632: "もちろん、 一緒に 踊ろう！$h" #!String
+    Event.cs.1633: "フラワーダンスで 一緒に 踊りたい？#$b#ええ、 前向きに 考えるよ。$h" #!String
+    Event.cs.1634: "フラワーダンスで 一緒に 踊りたい？#$b#はい！喜んで。$h" #!String
+    Event.cs.1635: "悪いけど… すでに 踊る相手が いるの。" #!String
+    Event.cs.1645: "オレンジ" #!String
+    Event.cs.1647: "グリーン" #!String
+    Event.cs.1650: "遊びたくない" #!String
+    Event.cs.1652: "いらっしゃい！ どちらかの 色にかけて、 一攫千金の チャンスを つかんでみよう！" #!String
+    Event.cs.1654: "買う" #!String
+    Event.cs.1656: "去る" #!String
+    Event.cs.1659: "スタートークンを 1個 50gで 売ってます！" #!String
+    Event.cs.1662: "プレイ(50g)" #!String
+    Event.cs.1663: "去る" #!String
+    Event.cs.1666: "スリングショット ゲームを 遊んで トークンを 得よう！" #!String
+    Event.cs.1672: "トークンを 景品に 交換しますか？" #!String
+    Event.cs.1681: "釣りでも やってみるかい？ 大きいのが 釣れるかもね。" #!String
+    Event.cs.1684: "赤い矢のところに 立ってください。" #!String
+    Event.cs.1688: "運命を 占ってもらう (100g)" #!String
+    Event.cs.1690: "遠慮します" #!String
+    Event.cs.1691: "ええ… この水晶球に あなたの 未来が 映し出されています。" #!String
+    Event.cs.1694: "すでに あなたの 運命は 見ました… お行きなさい。" #!String
+    Event.cs.1695: "残念ですが… お金が 足りないようですね。" #!String
+    Event.cs.1714: "品切れ中。" #!String
+    Event.cs.1719: "追加する 材料を 選んでください。" #!String
+    Event.cs.1723: "おめでとう！{0}点できみが1位だ！#$b#賞品として、スタートークン1000個を贈ろう！かしこく使えよ。$h#$b#ああ、それと、展示したものを片づけるのを忘れずにな。" #!String
+    Event.cs.1726: "なかなかじゃないか！{0}点できみが2位だ。#$b#賞品として、スタートークン500個を贈ろう！かしこく使えよ。$h#$b#ああ、それと、展示したものを片づけるのを忘れずにな。" #!String
+    Event.cs.1729: "それでは、@。{0}点できみが3位のようだ。#$b#賞品として、スタートークン200個を贈ろう！かしこく使えよ。$h#$b#ああ、それと、展示したものを片づけるのを忘れずにな。" #!String
+    Event.cs.1730: "お前か！！こんなくだらないいたずらをしたのは？！あれは私のとても大事なものなんだぞ！$4#$b#ほら、750スタートークンだ。誰にも言うなよ。$3#$b#さあ、自分の箱をかたずけてくるんだ。私のその…アレは明日持ってきてくれ。$3" #!String
+    Event.cs.1732: "それでは、@。{0}点できみは4位だ。#$b#参加賞として、スタートークン50個をあげよう。なに、きみなら、来年はもっと上にいけるさ。$h#$b#ああ、それと、展示したものを片づけるのを忘れずにな。" #!String
+    Event.cs.1736: "$q -1 null#…どうしたの？#$r -1 0 danceAsk#(いっしょに踊らないか{0}にたのんでみる)#$r -1 0 null#なんでもないよ…" #!String
+    Event.cs.1738: "$q -1 null#…なにか用？#$r -1 0 danceAsk#(いっしょに踊らないか{0}にたのんでみる)#$r -1 0 null#なんでもないよ…" #!String
+    Event.cs.1740: "{0}にヒミツの贈り物をあげますか？" #!String
+    Event.cs.1741: "{0}にヒミツの贈り物をあげますか？" #!String
+    Event.cs.1758: "{0}をはなれますか？1度出ていくと、おまつりはそこでおしまいです。" #!String
+    Event.cs.1760: "お前にはそれでいいかもしれないが、おれはダメなんだ！どうせわからないだろうけどな…。もう…行ってくれ。$7#$b#…ああ、もう…$7#$b#待って…$7" #!String
+    Event.cs.1761: "…お前の言うとおりだよ。ジャス…ああ、神さま…俺はほんとに…ひっく、最低で…身勝手な人間だ。$7#$b#ああ、ほんと、最悪…$7" #!String
+    Event.cs.1763: "ヨバ…？@、俺は無神論者なんだ。$7" #!String
+    Event.cs.1764: "…$7#$b#ありがとう…感謝してるよ…ほんとに。$7" #!String
+    Event.cs.1774: "スタートークンを いくつ 買いますか？" #!String
+    Event.cs.1776: "スタートークンを いくつ かけますか？" #!String
+    Event.cs.1780: "お金が 足りません。" #!String
+    Event.cs.1785: "店の 品物は 全て 購入済みです！" #!String
+    Event.cs.1788: "{0}へのプレゼントをえらんでください。" #!String
+    Event.cs.1794: "ダドリー" #!String
+    Event.cs.1795: "ヨーギー" #!String
+    Event.cs.1796: "ミソ" #!String
+    Event.cs.1797: "スノーチ" #!String
+    Event.cs.1798: "ダメ？そう…じゃあ、この子にはほかの家を探さなきゃね。$s" #!String
+    Event.cs.1801: "ああ、じゃああなたが？$h#$b#ああ…あの{0}！ありがとう。" #!String
+    Event.cs.1803: "有効なプレゼントでは ありません。" #!String
+    Event.cs.1810: "なるほど… 酒場で 友達に 囲まれている あなたの姿が 見えました。　あなたは 選り好みを していないようで… 皆から 人気なようですね！" #!String
+    Event.cs.1811: "おお…ビーチにいるあなたの姿が見えました。なにかのイベントのようですね…あなたは{0}さんのとなりで、なにやら楽しく話しているようです…ふうむ…2人の仲はいいようですね。" #!String
+    Event.cs.1813: "見える…これは、{0}さんの誕生日ですね。 " #!String
+    Event.cs.1815: "みんなに誕生日を忘れられたと思っていたところに、あなたがプレゼントを手にして現れました。なんていい友人でしょう。" #!String
+    Event.cs.1816: "みんなに誕生日を忘れられたと思っていたところに、あなたがプレゼントを手にして現れました。なんていい友人でしょう。" #!String
+    Event.cs.1818: "ふむふむ… あなたがベッドに横たわる姿が見えます…病院のような場所ですね。{0}さんがあなたにつきそってくれています。すばらしいご友人ですね。" #!String
+    Event.cs.1820: "そうですね… あなたが部屋にいて、男性と話している姿が見えます。" #!String
+    Event.cs.1821: "そうですね… あなたが部屋にいて、女性と話している姿が見えます。" #!String
+    Event.cs.1823: "…おお！これは{0}さんですね。あなたととても親しそうです。" #!String
+    Event.cs.1825: "ふむ… ろばたで　ぜいたくなイスに 腰掛けている あなたの姿が 見えます… 高級な品物に 囲まれながらも、 孤独に 悩まされています。" #!String
+    Event.cs.1826: "…むむ？ あなたは 何人かの 心を 傷つけることになるでしょう… あなたを 信じる人々を もてあそんでいるのですか？ううん… " #!String
+    Event.cs.1827: "ふむ、あなたと{0}さんが草原に いる姿が見えます。あなたは幸せそうですよ。" #!String
+    Event.cs.1829: "おや、あなたと{0}さんは薄暗い部屋にいるようです。あなたの表情は真剣ですが… 不幸せではないようです。何か重大なことが起こるのでしょう。" #!String
+    Event.cs.1831: "おや… あなたが若い男性と暗い部屋にいるのが見えます。彼はすこし恥ずかしそうですが、あなたといてしあわせそうです。" #!String
+    Event.cs.1832: "おや… あなたが若い男性と暗い部屋にいるのが見えます。彼ははりきっていて、あなたといっしょに過ごしたくてたまらないようです。" #!String
+    Event.cs.1833: "おや… あなたが若い女性と暗い部屋にいるのが見えます。彼女はすこし恥ずかしそうですが、あなたといてしあわせそうです。" #!String
+    Event.cs.1834: "おや… あなたが若い女性と暗い部屋にいるのが見えます。彼女ははりきっていて、あなたといっしょに過ごしたくてたまらないようです。" #!String
+    Event.cs.1837: "ふうむ…この男性の名前を占ってみましょう。名前の頭文字はおそらく…\"{0}\"です。" #!String
+    Event.cs.1838: "ふうむ…この女性の名前を占ってみましょう。名前の頭文字はおそらく…\"{0}\"です。" #!String
+    Event.cs.1843: "これはきょうみ深い…あなたと{0}さんが、一緒に牧場ではたらいている姿が見えます。あなたにはどうやらとてもうれしいことがあったようです。" #!String
+    Event.cs.1845: "年をとって、 夕暮れ時に 町を歩く あなたの姿が 見えます。窓の そばで 足を止め、 その向こうで 家族が 夕食を 食べているのを 眺めています。 あなたは 頭を かしげてから、 暗闇へと  急ぐように 歩いていきます。" #!String
+    Event.cs.1846: "水晶球が 新しいものを 映し出しました… 立派で 命溢れる 牧場にて、 実りに実った メロンを 収穫する あなたの 姿が 見えます！" #!String
+    Event.cs.1847: "水晶球が 新しいものを 映し出しました…  暗いところに たたずむ あなたの 姿が 見えますが… すばらしい 宝石に 目を凝らしているようです！ その 宝石は、 ランタンの 明かりを 受けて 輝いています。" #!String
+    Event.cs.1848: "水晶球が 新しいものを 映し出しました… あら、 あなたは 何か 恐るべきものと 戦っているようですね！ ですが、 あなたは その 闇の存在と 戦う覚悟は できているみたいです。" #!String
+    Event.cs.1849: "水晶球が 新しいものを 映し出しました… 気楽に 川岸で 釣りを している あなたの 姿が 見えます。 あら、 何か大きなものが かかってますね！" #!String
+    Event.cs.1850: "水晶球が 新しいものを 映し出しました… あなたは… 森の中にいるようです。 草むらに 隠された、 貴重で 美味な キノコを 見つけました… 大発見ですね！" #!String
+    Event.cs.1851: "水晶球が 新しいものを 映し出しました…  あなたは 黄金の 部屋にいて… 微笑んでいるようですね。 なるほど… あなたは 負けることの できない 勝負を しているみたいです。" #!String
+    Event.cs.1852: "ああ… 水晶球の 輝きが 失われました。 若者よ、 私が 見てやれるのは これまでです。" #!String
+    Event.cs.1853: "未来は 完全に 決まったわけでは ないことを 心に留めておくのです！ あなたが そう望めば、 いま私が伝えた 未来を 変えることは できるのです。 ごきげんよう。" #!String
+    Event.cs.1857: "{0}をスープに入れた。" #!String
+    Event.cs.1862: "アビゲイル！" #!String
+    Event.cs.1864: "これは" #!String
+    Event.cs.1865: " と" #!String
+    Event.cs.1871: "5匹の大きく新鮮な魚を釣り上げた、ウィリーさんです！" #!String
+    Event.cs.1872: "{1}匹の大きくてぬるっとした魚を釣り上げた、 {0}だ!" #!String
+    Farmer.cs.1918: "パースニップの 種を 15個 貰いました！^^ 「ささやかながら、お前さんの第一歩を祝って これをあげよう。 ^ - ルイス町長」" #!String
+    Farmer.cs.1919: "{0}を受けとった！" #!String
+    Farmer.cs.1922: "{1}を{0}個受けとった！" #!String
+    Farmer.cs.1972: "牧場" #!String
+    Farmer.cs.1986: "働きすぎて やる気が でなくなった。" #!String
+    Farmer.cs.1987: "疲れを 感じてきた。" #!String
+    Farmer.cs.1991: "農業" #!String
+    Farmer.cs.1992: "採鉱" #!String
+    Farmer.cs.1993: "釣り" #!String
+    Farmer.cs.1994: "採取" #!String
+    Farmer.cs.1995: "幸運" #!String
+    Farmer.cs.1996: "戦闘" #!String
+    Farmer.cs.2003: "{0} レベルアップ" #!String
+    Farmer.cs.2010: "何を してるの…" #!String
+    Farmer.cs.2011: "新規 日記エントリ" #!String
+    Farmer.cs.2016: "牧場の王" #!String
+    Farmer.cs.2017: "作物の 達人" #!String
+    Farmer.cs.2018: "農業者" #!String
+    Farmer.cs.2019: "牧場主" #!String
+    Farmer.cs.2020: "動物飼育者" #!String
+    Farmer.cs.2021: "農耕者" #!String
+    Farmer.cs.2022: "牧場経営者" #!String
+    Farmer.cs.2023: "牧場の男" #!String
+    Farmer.cs.2024: "牧場の女" #!String
+    Farmer.cs.2025: "芝を刈る者" #!String
+    Farmer.cs.2026: "小作農者" #!String
+    Farmer.cs.2027: "耕作者" #!String
+    Farmer.cs.2028: "労働者" #!String
+    Farmer.cs.2029: "牛追い" #!String
+    Farmer.cs.2030: "田舎者" #!String
+    Farmer.cs.2031: "初心者" #!String
+    Farmer.cs.2032: "新入り" #!String
+    Game1.cs.2156: "アルファルファ" #!String
+    Game1.cs.2157: "ブルータワー" #!String
+    Game1.cs.2574: "コントローラ モード 有効。" #!String
+    Game1.cs.2575: "コントローラ 切断。" #!String
+    Game1.cs.2634: "マーニーの牧場近くではじまった。" #!String
+    Game1.cs.2635: "森の中ではじまった。" #!String
+    Game1.cs.2637: "広場の中ではじまった。" #!String
+    Game1.cs.2639: "浜辺ではじまった。" #!String
+    Game1.cs.2640: "{0}が " #!String
+    Game1.cs.2652: "夜が 更けてきました…" #!String
+    Game1.cs.2782: "すばらしい 結婚式 だった… そうでしょ？$h#$e#でも、 牧場のことは 忘れちゃいけないから… 仕事に 戻りましょう。" #!String
+    Game1.cs.2898: "のどは まだ 渇いてない…" #!String
+    Game1.cs.2899: "満腹…" #!String
+    Game1.cs.2973: "今日の 祭りは まだ 準備中です。 後でまた 来てください。" #!String
+    Game1.cs.3042: "日" #!String
+    Game1.cs.3043: "月" #!String
+    Game1.cs.3044: "火" #!String
+    Game1.cs.3045: "水" #!String
+    Game1.cs.3046: "木" #!String
+    Game1.cs.3047: "金" #!String
+    Game1.cs.3048: "土" #!String
+    Game1.cs.3094: "自分の 大好物のことで 頭がいっぱいになった ： " #!String
+    Game1.cs.3095: "変な感じでは あるが、 あの好物に 似た味がした： " #!String
+    Game1.cs.3097: "スターデュー バレーとの 強い つながりを 感じた。" #!String
+    Game1.cs.3099: "自分の 大好物のことで 頭がいっぱいになった ： ConcernedApe… ？ (でも、ありがとう！)" #!String
+    Game1.cs.3100: "=スタードロップを 見つけた！ " #!String
+    Game1.cs.3101: "。^^エナジーの 最大値が 上昇しました。" #!String
+    Game1.cs.3116: "+{0} エナジー" #!String
+    Game1.cs.3118: "+{0} 体力" #!String
+    Game1.cs.3159: "{0}を飲みますか?" #!String
+    Game1.cs.3160: "{0}を食べますか?" #!String
+    Game1.cs.3191: " … タイル場所の クリックを 待っています…" #!String
+    Game1.cs.3206: "こんにちは！ これはテストです" #!String
+    Game1.cs.3209: "コントローラ 使用中" #!String
+    Game1.cs.3210: "コントローラ 未使用" #!String
+    Game1.cs.3332: "{0} 日間プレイ。" #!String
+    Game1.cs.3666: "撮影 モード 起動。 F4キーで 終了します。" #!String
+    Game1.cs.3685: "Stardew Valleyが 強制終了しました…" #!String
+    Game1.cs.3686: "エラーレポートか このメッセージの スクリーンショットを @ConcernedApe (http://stardewvalley.net/contact)へ 送ってください" #!String
+    Game1.cs.3688: "ロード中" #!String
+    Game1.cs.3689: "ロード中..." #!String
+    Game1.cs.3747: "疲労" #!String
+    Game1.cs.3756: "ルイスさん" #!String
+    HUDMessage.cs.3824: "実績を解除： " #!String
+    NameSelect.cs.3864: "決定" #!String
+    NPC.cs.3926: "ちょっと 待って、 私には やることが いっぱい あるの。" #!String
+    NPC.cs.3927: "家の 作業は 明日 終わるはず。" #!String
+    NPC.cs.3954: "人が違います" #!String
+    NPC.cs.3955: "デートできません： {0}" #!String
+    NPC.cs.3956: "うーん… やめとく。" #!String
+    NPC.cs.3957: "冗談か？ 理解できないよ。/冗談なの？ 理解できないよ。" #!String
+    NPC.cs.3958: "… あなたの ことは よく知らない…$s" #!String
+    NPC.cs.3959: "あー、 君の ことは よく知らないから、 変な感じがするんだ…$s/あー、 あなたの ことは よく知らないから、 変な感じがするの…$s" #!String
+    NPC.cs.3960: "えっ？ …悪いけど、 まだ その覚悟は できてないよ。$s" #!String
+    NPC.cs.3961: "… どうしよう。 えーと、 悪いけど、ダメ。$s" #!String
+    Wilted_Bouquet_Meaningless: "これを{0}に指定しても意味がありません。" #!String
+    Wilted_Bouquet_Effect: "もう{0}とデートしていません。" #!String
+    NPC.cs.3962: "…！ うれしいよ、そうしよう。$l#$e#同じことを 考えてるなんて 思ってなかった。$l/…！ うれしい、 そうしましょう。$l#$e#同じことを 考えてるなんて 思ってなかった。$l" #!String
+    NPC.cs.3963: "…本気で 付き合っちゃおうか？$l#$e#ちょっと　ドキドキするな。$l/…本気で 付き合っちゃおうの？$l#$e#ちょっと ドキドキするね。$l" #!String
+    NPC.cs.3965: "婚約した　ばかりだってのに、　何考えてるのさ！$s/婚約した　ばかりなのに、　何考えてるの！$s" #!String
+    NPC.cs.3966: "なに？ 他の誰かに 結婚しないかって 聞いてなかった？ 何考えてるんだ！$s/なに？ 他の誰かに 結婚しないかって 聞いてなかった？ 何考えてるの！$s" #!String
+    NPC.cs.3967: "えっと、 すでに 結婚してなかった？" #!String
+    NPC.cs.3968: "結婚済みの 人が なに 変なことを 言ってるんだ！$s/結婚済みの 人が なに 変なことを 言ってるの！$s" #!String
+    NPC.cs.3969: "{0} は 今、 あなたと 結婚したくないようです。" #!String
+    NPC.cs.3970: "変な人。$s" #!String
+    NPC.cs.3971: "ヘッ、 面白い 冗談だ。" #!String
+    NPC.cs.3972: "えっ！ …$l#$b#@… ごめんなさい。 今は、 結婚したくない$s" #!String
+    NPC.cs.3973: "！ えっと… あなたのこと そんな風に 思ってない…$s" #!String
+    NPC.cs.3974: "ノーって さっき言っただろ！ ほっといてくれ。$a/ノーって さっき言ったでしょ！ ほっといてよ。$a" #!String
+    NPC.cs.3975: "すでに 聞いたじゃないか。 ダメだと 言ったのに わからないのか？！$a/すでに 聞いたじゃない。 ダメだと 言ったのに わからないの？！$a" #!String
+    NPC.cs.3980: "…！！$l#$b#わかった！$h#$b#…$l#$b#何もかも こっちで 準備するから、 結婚式は 3日後に　しよう。いい？$h" #!String
+    NPC.cs.3981: "きょうはもう{0}にプレゼントを渡した。" #!String
+    NPC.cs.3985: "その…きょう、{0}にプレゼントを贈ったって聞いたけど…$s#$e#まさか浮気じゃないよね？$s#$e#…$a" #!String
+    NPC.cs.3987: "今週、{0}にはもう{1}つもプレゼントを渡している！もう十分だ。" #!String
+    NPC.cs.3990: "人間の 客だと？ とても 興味深い…#$e#私は クロバス、 貴重な 品物を 取り扱う 商人だ。" #!String
+    NPC.cs.4001: "ねぇ… 愛情の しるしとして、 この フルーツを あげる。$l" #!String
+    NPC.cs.4018: "ああ。" #!String
+    NPC.cs.4020: "そのとおりだ。 だから あっちへ 行け。" #!String
+    NPC.cs.4021: "！！ それは… 「会員カード」 じゃないか？" #!String
+    NPC.cs.4058: "こんにちは…" #!String
+    NPC.cs.4059: "こんにちは！" #!String
+    NPC.cs.4060: "こんにちは。" #!String
+    NPC.cs.4061: "やあ。" #!String
+    NPC.cs.4062: "こんにちは！" #!String
+    NPC.cs.4063: "おはよう" #!String
+    NPC.cs.4064: "こんにちは" #!String
+    NPC.cs.4065: "こんばんは" #!String
+    NPC.cs.4066: "{0}！" #!String
+    NPC.cs.4068: "どうも、{0}！" #!String
+    NPC.cs.4071: "こんにちは、 {0}" #!String
+    NPC.cs.4072: "こんにちは。" #!String
+    NPC.cs.4079: "私の {0}" #!String
+    NPC.cs.4080: "私の {0}" #!String
+    NPC.cs.4083: "あなたは {0}" #!String
+    NPC.cs.4084: " \"{0}\"が好きって知ってた？" #!String
+    NPC.cs.4086: "{0} \"{1}\"が好きなんだって！ " #!String
+    NPC.cs.4088: "彼から聞いたんだ。$h" #!String
+    NPC.cs.4089: "彼女から聞いたんだ。$h" #!String
+    NPC.cs.4091: "ヒミツを教えてあげる。{0}は{1}が好きなんだ。/ヒミツを教えてあげる。{0}は{1}が好きみたい。" #!String
+    NPC.cs.4094: "{0}に好かれたいなら、\"{1}\"をあげるといいよ。" #!String
+    NPC.cs.4097: "{0}に好かれたいなら、\"{1}\"をあげるといいよ。" #!String
+    NPC.cs.4100: "もし{0}と仲よくなりたかったら、\"{1}\"をあげるといいよ。" #!String
+    NPC.cs.4103: "もし{0}と仲よくなりたかったら、\"{1}\"をあげるといいよ。" #!String
+    NPC.cs.4106: "{0}と仲よくなりたいなら、\"{1}\"をあげればまちがいないよ。" #!String
+    NPC.cs.4109: " 彼のお気に入りだから。" #!String
+    NPC.cs.4111: " 彼女のお気に入りだから。" #!String
+    NPC.cs.4113: " 彼はそれが大好きなんだ。/彼はそれが大好らしいよ。" #!String
+    NPC.cs.4114: " 彼、それが好きでたまらないんだって。" #!String
+    NPC.cs.4115: " 彼女はそれが大好きなんだ。/彼女はそれが大好らしいよ。" #!String
+    NPC.cs.4116: " 彼女、それが好きでたまらないんだって。" #!String
+    NPC.cs.4118: " 前、彼にそれを渡したら、しばらくそれに熱中してたよ。" #!String
+    NPC.cs.4120: " 前、彼女にそれを渡したら、しばらくそれに熱中してたよ。" #!String
+    NPC.cs.4125: " すばらしい 贈り物に なるだろう。" #!String
+    NPC.cs.4126: " これを渡せば、彼はよろこぶこと間違いなしだよ。" #!String
+    NPC.cs.4128: " これを渡せば、彼女はよろこぶこと間違いなしだよ。" #!String
+    NPC.cs.4135: " は「{0}」を見ると{1}からものすごく嫌いなんだって。" #!String
+    NPC.cs.4138: " は「{0}」を見ると{1}からものすごく嫌いなんだって。" #!String
+    NPC.cs.4141: "{0}は{1}が大キライなんだ！本人が言ってたよ。$h/{0}は{1}が大キライみたい！本人が言ってたよ。$h" #!String
+    NPC.cs.4144: "{0}は{1}が大キライなんだ！本人が言ってたよ。$h/{0}は{1}が大キライみたい！本人が言ってたよ。$h" #!String
+    NPC.cs.4146: "気をつけるんだ。/気を付けてね: " #!String
+    NPC.cs.4147: "{0}は{1}がほんとに大嫌いなんだ。/{0}は{1}がほんとに大嫌いみたい。" #!String
+    NPC.cs.4149: "{0}に嫌われたくなければ、{1}は渡さないことだね。ほんとうに大嫌いなんだ。/{0}に嫌われたくなければ、{1}は渡さないでね。ほんとうに大嫌いみたい。" #!String
+    NPC.cs.4152: "{0}に嫌われたくなければ、{1}は渡さないこと。ほんとうに大嫌いなんだよ。/{0}に嫌われたくなければ、{1}は渡さないでね。ほんとうに大嫌いみたい。" #!String
+    NPC.cs.4153: "{0}に嫌われたくなければ、{1}は渡さないことだね。ほんとうに大嫌いなんだ。/{0}に嫌われたくなければ、{1}は渡さないでね。ほんとうに大嫌みたい。" #!String
+    NPC.cs.4154: "{0}に嫌われたくなければ、{1}は渡さないこと。ほんとうに大嫌いなんだよ。/{0}に嫌われたくなければ、{1}は渡さないでね。ほんとうに大嫌いみたい。" #!String
+    NPC.cs.4161: "{0}にタチの悪い冗談をしかけたいなら、あいつに\"{1}\"をやるといいよ。許してもらえなくなるかもしれないけどね。" #!String
+    NPC.cs.4164: "{0}にタチの悪い冗談をしかけたいなら、あいつに\"{1}\"をやるといいよ。許してもらえなくなるかもしれないけどね。" #!String
+    NPC.cs.4170: " やってしまった身 だから よくわかってる。" #!String
+    NPC.cs.4171: " なぜだか 知らないけどね。" #!String
+    NPC.cs.4172: " 思い浮かべるだけでも気がめいるらしいよ。" #!String
+    NPC.cs.4174: " 思い浮かべるだけでも気がめいるらしいよ。" #!String
+    NPC.cs.4176: " アレルギーでもあるんじゃないかな。" #!String
+    NPC.cs.4178: " アレルギーでもあるんじゃないかな。" #!String
+    NPC.cs.4180: " みんな、 何らかの こだわりでも あるんだろう。" #!String
+    NPC.cs.4182: "{0} \"{1}\"を嫌ってる。 理由は知らないほうがいいだろう。" #!String
+    NPC.cs.4192: "…#$e#…#$e#…#$e#ここは メンバー限定だ。 ガキは 失せな。#$e#…" #!String
+    NPC.cs.4274: "誕生日を覚えていたのか？ すごくうれしいよ。ありがとう。$h/誕生日を覚えていたの？ すごくうれしいわ。ありがとう。$h" #!String
+    NPC.cs.4275: "誕生日プレゼント？ 親切にどうも、 ありがとう！$h" #!String
+    NPC.cs.4276: "えっ、 今日は オレの　誕生日？ そうかもな。 いいものを ありがとう。$h/誕生日を覚えていたの？ すごくうれしいわ。ありがとう。$h" #!String
+    NPC.cs.4277: "誕生日を覚えていたんだな！ ありがとう。これは いいものだ。$h/誕生日を覚えていたのね！ ありがとう。これは いいものね。$h" #!String
+    NPC.cs.4278: "誕生日だから これを くれるって？ 冗談だろ？$s/これって誕生日プレゼント？冗談でしょ？ $s" #!String
+    NPC.cs.4279: "おや… 誕生日プレゼントに？ ありがとう…$s/あら…　誕生日プレゼントに？ ありがとう…$s" #!String
+    NPC.cs.4280: "誕生日プレゼント？ ありがとう。" #!String
+    NPC.cs.4281: "誕生日プレゼントだって！ ありがとう。/誕生日プレゼント？ ありがとう。" #!String
+    NPC.cs.4293: "いたい！　何をしやがるんだ？$s/ちょっと！　なんでそんなことをするの！$s" #!String
+    NPC.cs.4294: "いたい！　なんでそんなことを…$s" #!String
+    NPC.cs.4406: "そろそろ 眠くなってきた。$a" #!String
+    NPC.cs.4420: "はぁ…$s" #!String
+    NPC.cs.4421: "退屈だ…$s" #!String
+    NPC.cs.4422: "時々、 自分が 正しいことを しているのか わからなくなるんだ…$s/時々、 自分が 正しいことを しているのか わからなくなるの…$s" #!String
+    NPC.cs.4423: "ん？ 問題ない… 大丈夫。$s" #!String
+    NPC.cs.4424: "ただ 今日は 疲れただけ。$s" #!String
+    NPC.cs.4425: "結婚してから 人生 大きく 変わったね…$s" #!String
+    NPC.cs.4426: "えっ… 掃除しろって？ ご飯を 作れって？ はぁ…$a" #!String
+    NPC.cs.4427: "ハァ…きょうは肌の調子が悪いみたい。$s#$b#でしょ？…その目を見たらわかるもん。$a" #!String
+    NPC.cs.4429: "ハァ…きょうは寝ぐせがひどいな。$s#$b#だろ？…その目を見たらわかるさ。$a" #!String
+    NPC.cs.4431: "…$s#$e#はめられたって 思ったこと ある？$s" #!String
+    NPC.cs.4432: "ぶつぶつ… 忙しい…$a" #!String
+    NPC.cs.4433: "仕事は やらなくて いいの？$a" #!String
+    NPC.cs.4439: "赤ちゃんを 育てることに なったら 生活が どう 変わるかな。$s" #!String
+    NPC.cs.4440: "{0}、 養子縁組の 申請が 通ってくれると いいな。 子どもが ほしい。$l" #!String
+    NPC.cs.4441: "{0}、 養子縁組の 書類は 出したから、 あとは 返事を 待つだけね。$l" #!String
+    NPC.cs.4442: "うう… 今朝はなんか 少し 気分が悪いわ。$s" #!String
+    NPC.cs.4443: "私は 妊娠してるのよ… 朝食は 自分で 作ったら？$s" #!String
+    NPC.cs.4444: "{0}、 もうすぐ 赤ちゃんが できるわね。$l" #!String
+    NPC.cs.4445: "{0}、 できちゃったの。 すごいことだと 思わない？$l" #!String
+    NPC.cs.4446: "眠くなってきたな。 でも大丈夫だ。$a/眠くなってきたね。 でも大丈夫よ。$a" #!String
+    NPC.cs.4447: "{0}、 もうすぐ 赤ちゃんが できるな。$l/{0}、 もうすぐ 赤ちゃんが できるね。$l" #!String
+    NPC.cs.4448: "{0}、わかるか？ お前、 妊娠したんだぞ。$l" #!String
+    NPC.cs.4449: "親になるって、 時々 面倒な 感じが するな… なんか 起きたくない 気分 なんだ。$a/親になるって、 時々 面倒な 感じが するね… なんか 起きたくない 気分なの。$a" #!String
+    NPC.cs.4452: "ちょっと 一人になりたいんだ… 気分転換に 子どもの 世話を してくれる？$a/ちょっと 一人になりたいの… 気分転換に 子どもの 世話を してくれる？$a" #!String
+    NPC.cs.4455: "お前の 朝食を 作ろうとしたけど、 気が変わった。$a/あなたの 朝食を 作ろうとしたけど、 気が変わったわ。$a" #!String
+    NPC.cs.4462: "朝早くに起きて、 作物に水を やったよ。 お前の 負担が 少しでも 軽くなればいいな。/朝早くに起きて、 作物に水を やったわ。 あなたの 負担が 少しでも 軽くなればいいね。" #!String
+    NPC.cs.4463: "#$e#{0}たちの飲み水も入れておいたよ。" #!String
+    MultiplePetBowls_watered: "#$e#ペットの水飲みボウルにも水を入れた。" #!String
+    NPC.cs.4465: "ああ、{0}！ " #!String
+    NPC.cs.4466: "おはよう、{0}！ " #!String
+    NPC.cs.4470: "朝早くに起きて 作物に 水を やろうとしたけど、 もう 済んでたみたい！ 本当に いろいろ 見てくれてるんだな。$h/朝早くに起きて 作物に 水を やろうとしたけど、 もう 済んでたみたい！ 本当に いろいろ 見てくれてるのね。$h" #!String
+    NPC.cs.4474: "朝早くに起きて、 動物達に エサを 上げたよ。 お前の 負担が 少しでも 軽くなればいいな。/朝早くに起きて、 動物達に エサを 上げたわ。 あなたの 負担が 少しでも 軽くなればいいね。" #!String
+    NPC.cs.4481: "今朝は フェンスの修理を していたんだ。 新品同様になったはず。/今朝は フェンスの修理を していたわ。 新品同様になったはず。" #!String
+    NPC.cs.4486: "どう思う、{0}？ " #!String
+    NPC.cs.4488: "先日 注文した ものが たった今 届いたよ。/先日 注文した ものが たった今 届いたわ。" #!String
+    NPC.cs.4489: "この部屋、 もう少し 飾りつけを してもいいかなと 思った。" #!String
+    NPC.cs.4490: "今日は 飾りつけを しようと 思ってたけど、 気が変わった。$a" #!String
+    NPC.cs.4496: "この 新しい 壁紙、 どう思う？" #!String
+    NPC.cs.4497: "この 新しい フローリング、 どう思う？" #!String
+    NPC.cs.4498: "はぁ… 時々、 昔の生活が 恋しくなるな。$s/はぁ… 時々、 昔の生活が 恋しくなるね。$s" #!String
+    NPC.cs.4499: "天気が 暗すぎて、 ベッドから 出たくもない。$s" #!String
+    NPC.cs.4500: "留守の間に 少しぐらい 掃除でも してくれれば よかったな…$a#$e#仕事の後に、 ゴミを かきわけていくのは まったく 良いことじゃないし。$a/留守の間に 少しぐらい 掃除でも してくれれば よかったのに…$a#$e#仕事の後に、 ゴミを かきわけていくのは まったく 良いことじゃないし。$a" #!String
+    NPC.cs.4507: "ハニー" #!String
+    NPC.cs.4508: "ハニー" #!String
+    NPC.cs.4509: "ハニー" #!String
+    NPC.cs.4510: "ハニー" #!String
+    NPC.cs.4511: "ダーリン" #!String
+    NPC.cs.4512: "ハニー" #!String
+    NPC.cs.4513: "ダーリン" #!String
+    NPC.cs.4514: "ダーリン" #!String
+    NPC.cs.4515: "ダーリン" #!String
+    NPC.cs.4516: "ハニー" #!String
+    NPC.cs.4517: "ハニー" #!String
+    NPC.cs.4518: "ダーリン" #!String
+    NPC.cs.4519: "ハニー" #!String
+    NPC.cs.4522: "ハニー" #!String
+    NPC.cs.4523: "ダーリン" #!String
+    Options.cs.4556: "自動的に走る" #!String
+    Options.cs.4557: "音楽のボリューム" #!String
+    Options.cs.4558: "効果音のボリューム" #!String
+    Options.cs.4559: "文字入力の音" #!String
+    Options.cs.4560: "フルスクリーン" #!String
+    Options.cs.4561: "ウィンドウ (ボーダーレス)" #!String
+    Options.cs.4562: "解像度" #!String
+    Options.cs.4563: "ズームレベル: " #!String
+    Options.cs.4564: "ウィンドウ" #!String
+    SaveGame.cs.4690: "ロード中…" #!String
+    SaveGame.cs.4697: "基本ワールドを 作成中…" #!String
+    SaveGame.cs.4698: "プレイヤーを 読込中…" #!String
+    SaveGame.cs.4699: "マップを 読込中…" #!String
+    SaveGame.cs.4700: "鉱山を 読込中…" #!String
+    SaveGame.cs.4701: "他の 様々なタスクを 実行中…" #!String
+    Stats.cs.5129: "モンスタースレイヤーの 目標達成！ ギルから 報酬を 貰いましょう。" #!String
+    Utility.cs.5367: "@がはじめてペリカンタウンにやってきたとき、彼がここまで地域に溶けこんでくれるなんて、誰が想像しただろうな…#$b#しかしそれから時はすぎた。@はもうわたしたちと同じ、この町の一員だ！$h#$b#きょう、この{1}の{0}日は、@と%spouseが夫婦となるすばらしい門出の日だ。" #!String
+    Utility.cs.5369: "@がはじめてペリカンタウンにやってきたとき、彼女がここまで地域に溶けこんでくれるなんて、誰が想像しただろうな…#$b#しかしそれから時はすぎた。@はもうわたしたちと同じ、この町の一員だ！$h#$b#きょう、この{1}の{0}日は、@と%spouseが夫婦となるすばらしい門出の日だ。" #!String
+    Utility.cs.5370: "よし、では結婚式をはじめよう！" #!String
+    Utility.cs.5371: "@…%spouse…#$b#ペリカンタウンの町長、また結婚の誓いをむすぶ地域の担い手として、ここに2人が夫と…夫となることを宣言します！$h" #!String
+    Utility.cs.5373: "@…%spouse…#$b# ペリカンタウンの町長、また結婚の誓いをむすぶ地域の担い手として、ここに2人が夫と妻となることを宣言します！$h" #!String
+    Utility.cs.5375: "@…%spouse…#$b#ペリカンタウンの町長、また結婚の誓いをむすぶ地域の担い手として、ここに2人が妻と…妻となることを宣言します！$h" #!String
+    Utility.cs.5377: "@…%spouse…#$b# ペリカンタウンの町長、また結婚の誓いをむすぶ地域の担い手として、ここに2人が妻と夫となることを宣言します！$h" #!String
+    Utility.cs.5379: "誓いのキスを お願いします。" #!String
+    Utility.cs.5381: "きょうから人生はおおきく変わりそうだ…" #!String
+    Utility.cs.5383: "…でもきっと、未来は明るいはず！" #!String
+    Utility.cs.5677: "最初の夜、" #!String
+    Utility.cs.5678: "{2}年目、{0}日、{1}" #!String
+    Utility.cs.5680: "春" #!String
+    Utility.cs.5681: "夏" #!String
+    Utility.cs.5682: "秋" #!String
+    Utility.cs.5683: "冬" #!String
+    Utility.cs.5718: "春（外の世界は大きい）" #!String
+    Utility.cs.5720: "春（谷が生き返る）" #!String
+    Utility.cs.5722: "春 (ノワサビジャム)" #!String
+    Utility.cs.5724: "楽しい思い出" #!String
+    Utility.cs.5726: "雨の中の静けさ（ソロ）" #!String
+    Utility.cs.5728: "雨の中の静けさ（デュエット）" #!String
+    Utility.cs.5730: "エアロビクス教室" #!String
+    Utility.cs.5732: "冬（氷のノクターン）" #!String
+    Utility.cs.5734: "冬（風さえ静まる）" #!String
+    Utility.cs.5736: "冬（古代）" #!String
+    Utility.cs.5738: "鉱山（道への訪問者）" #!String
+    Utility.cs.5740: "夏（自然のクレッシェンド）" #!String
+    Utility.cs.5742: "夏（太陽がオレンジ色の空を染める）" #!String
+    Utility.cs.5744: "夏（トロピカル）" #!String
+    Utility.cs.5746: "秋（キノコの香り）" #!String
+    Utility.cs.5748: "秋 （ゴーストシンセ）" #!String
+    Utility.cs.5750: "秋（カラスが舞い降りる）" #!String
+    Utility.cs.5752: "自然と豊穣の土地" #!String
+    Utility.cs.5754: "冬まつり" #!String
+    Utility.cs.5756: "鉱山（布）" #!String
+    Utility.cs.5758: "雲の国" #!String
+    Utility.cs.5760: "鉱山（溶岩の住人）" #!String
+    Utility.cs.5762: "Gおじいさんのテーマ" #!String
+    Utility.cs.5764: "フラワーダンス" #!String
+    Utility.cs.5766: "スターデューバレーまつりのテーマ" #!String
+    Utility.cs.5768: "鉱山（つらら）" #!String
+    Utility.cs.5770: "鉱山（凍った骨のマリンバ）" #!String
+    Utility.cs.5772: "もう一つの世界の片鱗" #!String
+    Utility.cs.5774: "深い森の中で" #!String
+    Utility.cs.5776: "結婚式のテーマ" #!String
+    Utility.cs.5778: "鉱山（危険！）" #!String
+    Utility.cs.5780: "オルゴールの歌" #!String
+    Utility.cs.5782: "まつりのゲーム" #!String
+    Utility.cs.5784: "スターシュート" #!String
+    Utility.cs.5786: "ペリカンタウン" #!String
+    Utility.cs.5788: "スピリットイブのまつり" #!String
+    Utility.cs.5790: "星を見る人" #!String
+    Utility.cs.5792: "サムのバンド（エレクトリック）" #!String
+    Utility.cs.5794: "サムのバンド（ヘビー）" #!String
+    Utility.cs.5796: "落ち着き" #!String
+    Utility.cs.5798: "鉱山 (星屑)" #!String
+    Utility.cs.5800: "バンドの練習" #!String
+    Utility.cs.5802: "スタードロップサルーン" #!String
+    Utility.cs.5804: "過去の暗い一角" #!String
+    Utility.cs.5806: "サムのバンド（ポップ）" #!String
+    Utility.cs.5808: "遊び心" #!String
+    Utility.cs.5810: "鉱山（魔法の靴）" #!String
+    Utility.cs.5812: "ゲッコウクラゲのダンス" #!String
+    Utility.cs.5814: "田舎のお店" #!String
+    Utility.cs.5816: "マーロンのテーマ" #!String
+    Utility.cs.5819: "スターデューバレー序曲" #!String
+    Utility.cs.5821: "ゲーム読み込みのテーマ" #!String
+    Utility.cs.5823: "図書館と博物館" #!String
+    Utility.cs.5825: "黄金の星の誕生" #!String
+    Utility.cs.5827: "グレープフルーツの空" #!String
+    Utility.cs.5829: "陽気" #!String
+    Utility.cs.5831: "サムのバンド（ブルースグラス）" #!String
+    Utility.cs.5833: "ヴァイオリンソロ" #!String
+    Utility.cs.5835: "楽しいおまつり" #!String
+    Utility.cs.5837: "ルアウまつり" #!String
+    Utility.cs.5839: "ピアノソロ" #!String
+    Utility.cs.5841: "エコー" #!String
+    Utility.cs.5843: "遠く聞こえるバンジョー" #!String
+    Utility.cs.5845: "悲しい物語" #!String
+    Utility.cs.5847: "鉱山（クリスタルベル）" #!String
+    Utility.cs.5849: "プレーリーキングの冒険（オーバーワールド）" #!String
+    Utility.cs.5851: "プレーリーキングの冒険（アウトロー）" #!String
+    Utility.cs.5853: "プレーリーキングの冒険（アンデッド）" #!String
+    Utility.cs.5855: "プレーリーキングの冒険 （ボス）" #!String
+    Utility.cs.5857: "プレーリーキングの冒険（エンディング）" #!String
+    Utility.cs.5859: "鉱山（深淵の光）" #!String
+    Utility.cs.5861: "カリコ砂漠" #!String
+    Utility.cs.5863: "Jojaオフィスの雰囲気" #!String
+    Utility.cs.5864_1: "ピクルス瓶ラグ" #!String
+    Utility.cs.5864_2: "バターカップメロディー" #!String
+    Utility.cs.5864_3: "シェーンのテーマ" #!String
+    Utility.cs.5864_4: "羽の歌" #!String
+    Utility.cs.5864_5: "エミリーのダンス" #!String
+    Utility.cs.5864_6: "夢の風景" #!String
+    Utility.cs.5864_8: "オルゴールの歌" #!String
+    Utility.cs.5864_9: "ミュータントバグの気配" #!String
+    Utility.cs.5922: "ニワトリ" #!String
+    Utility.cs.5926: "トリ小屋が 必要" #!String
+    Utility.cs.5927: "乳牛" #!String
+    Utility.cs.5931: "動物小屋が 必要" #!String
+    Utility.cs.5933: "ヤギ" #!String
+    Utility.cs.5936: "大きな 動物小屋が 必要" #!String
+    Utility.cs.5937: "アヒル" #!String
+    Utility.cs.5940: "大きな トリ小屋が 必要" #!String
+    Utility.cs.5942: "ヒツジ" #!String
+    Utility.cs.5944: "特大 動物小屋が 必要" #!String
+    Utility.cs.5945: "ウサギ" #!String
+    Utility.cs.5947: "デラックス小屋の建設が必要です。" #!String
+    Utility.cs.5948: "ブタ" #!String
+    Utility.cs.5950: "特大 動物小屋が 必要" #!String
+    Junimo.cs.6625: "バイ！" #!String
+    Junimo.cs.6626: "グッバイ！" #!String
+    spring: "春" #!String
+    winter: "冬" #!String
+    fall: "秋" #!String
+    summer: "夏" #!String
+    DiaryEvent.cs.6658: "きょうのことは、今夜日記に書いておこう…" #!String
+    DiaryEvent.cs.6660: "きょうのことは、今夜日記に書いておこう…" #!String
+    DiaryEvent.cs.6664: "最近は{0}とばかりすごしてる…" #!String
+    DiaryEvent.cs.6667: "…私達は 仲がよくなってきてる。 このままの 関係で いたい。" #!String
+    DiaryEvent.cs.6669: "…彼に対するこの気もちは、友情以上かもしれない。" #!String
+    DiaryEvent.cs.6670: "…彼女に対するこの気もちは、友情以上かもしれない。" #!String
+    QuestionEvent.cs.6692: "名前を選択：" #!String
+    GameLocation.cs.8175: "鍵が かかっている。" #!String
+    GameLocation.cs.8214: "Unop dunyuu doo pusutn snaus^Op hanp o toeday na doo smol^Vhu lonozol yenn huot olait tol" #!String
+    GameLocation.cs.8429: "手紙は 一通も 届いていません。" #!String
+    GameLocation.cs.8525: "ピエールが 店内に いる 必要が あります。" #!String
+    GameLocation.cs.8708: "大きな バックパック" #!String
+    GameLocation.cs.8709: "特大 バックパック" #!String
+    GameLocation.cs.8715: "エラー： お金が 足りません。" #!String
+    MineShaft.cs.9484: "下へ降りる道が 現れた。" #!String
+    SeedShop.cs.9701: "新鮮な" #!String
+    BlueprintsMenu.cs.10002: "資源が 足りません" #!String
+    ChatBox.cs.10261: " 不正な コマンド ::" #!String
+    DayTimeMoneyBox.cs.10370: "午前" #!String
+    DayTimeMoneyBox.cs.10371: "午後" #!String
+    DayTimeMoneyBox.cs.10378: "ポーズ" #!String
+    FishingGame.cs.10444: "スコア: {0}" #!String
+    FishingGame.cs.12010: "捕まえた魚: {0}" #!String
+    FishingGame.cs.12011: "{0} パーフェクト ボーナス！" #!String
+    FishingGame.cs.12012: "パーフェクト ボーナス なし" #!String
+    FishingGame.cs.12013: "報酬： スタートークン{0}個" #!String
+    FishingGame.cs.12021: "報酬なし… もっと がんばろう" #!String
+    JunimoNoteMenu.cs.10783: "報酬" #!String
+    JunimoNoteMenu.cs.10786: "We    the  Junimo are    happy to    aid  you.  In     return we     ask for gifts   of      the valley.    If you   are one     with    forest   magic    then you    will   see    the true    nature   of  this scroll." #!String
+    LoadGameMenu.cs.10992: "OK" #!String
+    LoadGameMenu.cs.10993: "キャンセル" #!String
+    LoadGameMenu.cs.10994: "ファイルを 削除" #!String
+    LoadGameMenu.cs.11019: "{0} 牧場" #!String
+    LoadGameMenu.cs.11020: "{0}g" #!String
+    LoadGameMenu.cs.11022: "セーブデータが ありません" #!String
+    LoadGameMenu.cs.11023: "ほんとうにこのファイルを削除しますか？： {0}" #!String
+    MapPage.cs.11062: "カリコさばく" #!String
+    MapPage.cs.11064: "{0} 牧場" #!String
+    MapPage.cs.11065: "裏の森" #!String
+    MapPage.cs.11066: "バス停" #!String
+    MapPage.cs.11067: "魔術師の塔" #!String
+    MapPage.cs.11068: "マーニーの牧場" #!String
+    MapPage.cs.11069: "営業時間： 午前9時 - 午後4時 (ほとんど毎日営業)" #!String
+    MapPage.cs.11070: "リアの コテージ" #!String
+    MapPage.cs.11071: "ウィロー通り1番地" #!String
+    MapPage.cs.11072: "ジョディとケント、サムの家" #!String
+    MapPage.cs.11073: "ウィロー通り2番地" #!String
+    MapPage.cs.11074: "エミリーとヘイリーの家" #!String
+    MapPage.cs.11075: "町の広場" #!String
+    MapPage.cs.11076: "ハーヴィーの 診療所" #!String
+    MapPage.cs.11077: "営業時間： 午前9時 - 午後3時" #!String
+    MapPage.cs.11078: "ピエールの 雑貨店" #!String
+    MapPage.cs.11079: "ピエールとキャロライン、アビゲイルの家 " #!String
+    MapPage.cs.11080: "営業時間： 午前9時 - 午後5時 (水曜 定休日)" #!String
+    MapPage.cs.11080_ExtendedHours: "営業時間： 午前9時 - 午後5時" #!String
+    MapPage.cs.11081: "鍛冶屋" #!String
+    MapPage.cs.11082: "営業時間： 午前9時 - 午後4時" #!String
+    MapPage.cs.11083: "酒場" #!String
+    MapPage.cs.11084: "営業時間： 午後0時 - 午前0時" #!String
+    MapPage.cs.11085: "町長の屋敷" #!String
+    MapPage.cs.11086: "スターデューバレー博物館・図書館" #!String
+    MapPage.cs.11087: "営業時間： 午前8時 - 午後6時" #!String
+    MapPage.cs.11088: "エリオットの小屋" #!String
+    MapPage.cs.11089: "下水道" #!String
+    MapPage.cs.11090: "墓場" #!String
+    MapPage.cs.11091: "トレーラー" #!String
+    MapPage.PamHouse: "リバーロード2番地" #!String
+    MapPage.PamHouseHomeOf: "パムとペニーのお家" #!String
+    MapPage.cs.11092: "リバー通り 1番地" #!String
+    MapPage.cs.11093: "ジョージとエブリン、アレックスの家" #!String
+    MapPage.cs.11094: "大工作業場" #!String
+    MapPage.cs.11095: "ロビンとディメトリウス、セバスチャン、マルの家" #!String
+    MapPage.cs.11096: "営業時間： 午前9時 - 午後5時 (ほとんど毎日営業)" #!String
+    MapPage.cs.11097: "テント" #!String
+    MapPage.cs.11098: "鉱山" #!String
+    MapPage.cs.11099: "冒険者ギルド" #!String
+    MapPage.cs.11100: "営業時間： 午後2時 - 午前2時まで" #!String
+    MapPage.cs.11103: "石切場" #!String
+    MapPage.cs.11105: "Jojaマート" #!String
+    AbandonedJojaMart: "ジョージャマート廃墟" #!String
+    MovieTheater_Map: "映画館" #!String
+    MovieTheater_Hours: "(営業時間 午前9:00～午後9:00)" #!String
+    MapPage.cs.11106: "営業時間： 午前9時 - 午後11時" #!String
+    MapPage.cs.11107: "釣具店" #!String
+    MapPage.cs.11108: "営業時間： 午前9時 - 午後5時" #!String
+    MapPage.cs.11110: "スパ" #!String
+    MapPage.cs.11111: "24時間営業" #!String
+    MapPage.cs.11114: "秘密の森" #!String
+    MapPage.cs.11116: "廃墟の家" #!String
+    MapPage.cs.11117: "公民館" #!String
+    MapPage.cs.11118: "下水管" #!String
+    MapPage.cs.11119: "線路" #!String
+    MapPage.cs.11122: "孤独な石" #!String
+    MapPage.cs.11172: "スタードロップサルーン" #!String
+    MapPage.cs.11174: "ペリカンビーチ" #!String
+    MapPage.cs.11176: "山" #!String
+    MapPage.cs.11177: "山の湖" #!String
+    MapPage.cs.11178: "石切場" #!String
+    MapPage.cs.11179: "トンネル" #!String
+    MapPage.cs.11186: "シンダーサップの森" #!String
+    MapPage.cs.11190: "ペリカンタウン" #!String
+    OptionsElement.cs.11225: "新しい キーを 推してください…" #!String
+    OptionsElement.cs.11228: "その キーは 割当済みです。 もう一度 お試しください…" #!String
+    OptionsPage.cs.11233: "一般:" #!String
+    OptionsPage.cs.11234: "自動的に走る" #!String
+    OptionsPage.cs.11235: "キャラクターのイメージ画像を表示" #!String
+    OptionsPage.cs.11236: "商人のイメージ画像を表示" #!String
+    OptionsPage.cs.11237: "ツールの 使用先タイルを 表示" #!String
+    OptionsPage.cs.11238: "移動中は ツールの 使用先タイルを 隠す" #!String
+    OptionsPage.cs.11240: "ゲームウィンドウが 非アクティブ時に ポーズ" #!String
+    OptionsPage.cs.11241: "サウンド：" #!String
+    OptionsPage.cs.11242: "音楽のボリューム" #!String
+    OptionsPage.cs.11243: "効果音のボリューム" #!String
+    OptionsPage.cs.11244: "環境音のボリューム" #!String
+    OptionsPage.cs.11245: "足音のボリューム" #!String
+    OptionsPage.cs.11246: "文字入力の音" #!String
+    OptionsPage.cs.11247: "グラフィック：" #!String
+    OptionsPage.cs.11248: "ウィンドウ モード" #!String
+    OptionsPage.cs.11251: "解像度" #!String
+    OptionsPage.cs.11252: "メニュー背景" #!String
+    OptionsPage.cs.11253: "ツールバーをロック" #!String
+    OptionsPage.cs.11254: "ズームレベル" #!String
+    OptionsPage.cs.11266: "ズームボタン" #!String
+    OptionsPage.cs.11271: "雪の透明化" #!String
+    OptionsPage.cs.11272: "フラッシュ表現の表示" #!String
+    OptionsPage.cs.11273: "ハードウェアカーソルを使用" #!String
+    OptionsPage.cs.11274: "操作：" #!String
+    OptionsPage.cs.11276: "ツールバーのスクロール方向を逆転" #!String
+    OptionsPage.cs.11277: "操作設定をリセット" #!String
+    OptionsPage.cs.11278: "しらべる/アクション" #!String
+    OptionsPage.cs.11279: "どうぐを使う" #!String
+    OptionsPage.cs.11280: "メニューを開く" #!String
+    OptionsPage.cs.11281: "日記を開く" #!String
+    OptionsPage.cs.11282: "マップを開く" #!String
+    OptionsPage.cs.11283: "上へ移動" #!String
+    OptionsPage.cs.11284: "左へ移動" #!String
+    OptionsPage.cs.11285: "下へ移動" #!String
+    OptionsPage.cs.11286: "右へ移動" #!String
+    OptionsPage.cs.11287: "チャット" #!String
+    OptionsPage.cs.11288: "走る" #!String
+    OptionsPage.cs.11289: "持ちもの #1" #!String
+    OptionsPage.cs.11290: "持ちもの #2" #!String
+    OptionsPage.cs.11291: "持ちもの #3" #!String
+    OptionsPage.cs.11292: "持ちもの #4" #!String
+    OptionsPage.cs.11293: "持ちもの #5" #!String
+    OptionsPage.cs.11294: "持ちもの #6" #!String
+    OptionsPage.cs.11295: "持ちもの #7" #!String
+    OptionsPage.cs.11296: "持ちもの #8" #!String
+    OptionsPage.cs.11297: "持ちもの #9" #!String
+    OptionsPage.cs.11298: "持ちもの #10" #!String
+    OptionsPage.cs.11299: "持ちもの #11" #!String
+    OptionsPage.cs.11300: "持ちもの #12" #!String
+    PurchaseAnimalsMenu.cs.11308: "名前が利用できません" #!String
+    PurchaseAnimalsMenu.ChooseLocation: "どこで動物を飼いたいですか？" #!String
+    PurchaseAnimalsMenu.cs.11311: "毎度どうも！{0}はすぐにあたらしいおうちに送っておくね。" #!String
+    PurchaseAnimalsMenu.cs.11314: "毎度どうも！{0}はすぐにあたらしいおうちに送っておくね。" #!String
+    PurchaseAnimalsMenu.cs.11321: "その 建物は 満員です" #!String
+    PurchaseAnimalsMenu.cs.11325: "お金が 足りません" #!String
+    PurchaseAnimalsMenu.cs.11326: "{0}は そこに 住めません。" #!String
+    PurchaseAnimalsMenu.cs.11334: "よく ケアされた 大人の ニワトリは 毎日 卵を 生みます。" #!String
+    PurchaseAnimalsMenu.cs.11335: "トリ小屋に 住めます。" #!String
+    PurchaseAnimalsMenu.cs.11337: "幸福な 大人の アヒルは 数日ごとに 卵を 生みます。" #!String
+    PurchaseAnimalsMenu.cs.11340: "モコモコの ウサギです！ 数日ごとに ウールを 採取 できます。" #!String
+    PurchaseAnimalsMenu.cs.11343: "成長すると 毎日 ミルクを 採取できます。 採取には ミルク入れが 必要です。" #!String
+    PurchaseAnimalsMenu.cs.11344: "動物小屋に 住めます。" #!String
+    PurchaseAnimalsMenu.cs.11346: "トリュフ探しの 訓練を 受けた ブタです！" #!String
+    PurchaseAnimalsMenu.cs.11349: "幸せな ヤギから 数日ごとに ミルクを 採取できます。 採取には ミルク入れが 必要です。" #!String
+    PurchaseAnimalsMenu.cs.11352: "成長すると ウールを 採取することが できます。 主人と 仲良くなると 毛を早く 生やすようになります。 ウールを 採取するには 大ハサミが必要です。" #!String
+    PurchaseAnimalsMenu.cs.11354: "家畜" #!String
+    PurchaseAnimalsMenu.cs.11355: "新しい{1}をいれる{0}をえらんでください：　" #!String
+    PurchaseAnimalsMenu.cs.11357: "動物の 名前を つけてください" #!String
+    QuestLog.cs.11364: "クエストをキャンセル" #!String
+    QuestLog.cs.11373: "日記" #!String
+    QuestLog.cs.11374: "{0} 日" #!String
+    QuestLog.cs.11375: "{0} 日" #!String
+    QuestLog.cs.11376: "報酬:" #!String
+    SaveGameMenu.cs.11378: "進行状況が セーブされました。" #!String
+    SaveGameMenu.cs.11381: "セーブ中" #!String
+    ShippingMenu.cs.11389: "農業" #!String
+    ShippingMenu.cs.11390: "採取" #!String
+    ShippingMenu.cs.11391: "釣り" #!String
+    ShippingMenu.cs.11392: "採鉱" #!String
+    ShippingMenu.cs.11393: "他" #!String
+    ShippingMenu.cs.11394: "合計" #!String
+    ShopMenu.cs.11457: "商品を みていってちょうだい。" #!String
+    ShopMenu.cs.blueboat: "うちは 屋外の 飾りつけが 専門でね。何か目を 引いたものは あるかな？" #!String
+    ShopMenu.cs.travelernightmarket: "こんな所に いて ビックリした？海でも 商売するのよ！ブタさんは 泳ぎも とくいなの" #!String
+    ShopMenu.cs.magicBoat: "…ま…毎日…し…新入荷あり…" #!String
+    ShopMenu.cs.11460: "建設資材が 必要なの？ それとも、 飾りつけを したいのかしら？" #!String
+    ShopMenu.cs.11461: "手作りの家具を 日替わりで 売ってるわよ。" #!String
+    ShopMenu.cs.11462: "すばらしい 家具が セール中よ。" #!String
+    ShopMenu.cs.11463: "あまった 建設資材を 売ってくれるかしら？" #!String
+    ShopMenu.cs.11464: "たったいま、{0}を入荷したけど、あなたの家にぴったりだと思うよ。" #!String
+    ShopMenu.cs.11469: "自分で 鉱石を 掘るのが 面倒？ 心配ない。" #!String
+    ShopMenu.cs.11470: "おれは 原石を 売ってるから、 見てみたらどうだ。" #!String
+    ShopMenu.cs.11471: "金属か 鉱物を 売りに きたのか？" #!String
+    ShopMenu.cs.11474: "お前の どうぐを 強化することが できる。 ただし、 そのどうぐを 数日間 おれに 預けることになるぞ。" #!String
+    ShopMenu.cs.11477: "釣具が必要か？ ちょうどいいところへ来た。" #!String
+    ShopMenu.cs.11478: "臭いについては すまんな。" #!String
+    ShopMenu.cs.11481: "何か ご入用ですか？" #!String
+    ShopMenu.cs.11482: "壁紙とフローリングは 日替わりで売っていますので ぜひ 見ていってくださいね！" #!String
+    ShopMenu.cs.11483: "何に いたしましょうか？" #!String
+    ShopMenu.cs.11484: "最高品質の ものだけを 取り扱ってますよ。" #!String
+    ShopMenu.cs.11485: "良質の 商品を お安くしますよ。" #!String
+    ShopMenu.cs.11486: "何か お買い上げでしょうか？" #!String
+    ShopMenu.cs.11487: "何か 売りたいものでも ありますか？" #!String
+    ShopMenu.cs.11488: "いらっしゃいませ！ " #!String
+    ShopMenu.cs.11489: "もうすぐ 季節が 変わりますね。 明日は 品揃えを 変えますよ。" #!String
+    ShopMenu.cs.11492: "何か 買うか？" #!String
+    ShopMenu.cs.11494: "よぉ。 コインもってるか？ おれ ぼうしを 売ってる。" #!String
+    ShopMenu.cs.11497: "レア商品" #!String
+    ShopMenu.cs.11499: "いろんなものを 取り扱ってるわ。 見ていってよ！" #!String
+    ShopMenu.cs.11500: "これらは ゴトロ帝国から 持ち出したものよ。 それなら 高くても 文句はないでしょ？" #!String
+    ShopMenu.cs.11501: "週ごとに 新しい 商品を 仕入れるから、 必ず戻ってきてね！" #!String
+    ShopMenu.cs.11502: "ちょっと待ってて… これこれ！あなたにうってつけでしょ。 {0}だよ！" #!String
+    ShopMenu.cs.11504: "ここは 美しい 国ね。 私の お気に入りの場所よ。 ブタも 気に入ってるわ。" #!String
+    ShopMenu.cs.11507: "動物用の 商品を 安く売ってるわよ！" #!String
+    ShopMenu.cs.11508: "はぁ… ドアが開いた時、 ルイスさんが来たかと 思ったわ。" #!String
+    ShopMenu.cs.11511: "何を 食べるんだい？" #!String
+    ShopMenu.cs.11512: "今作ってる {0}　の匂いがわかるか？" #!String
+    ShopMenu.cs.11513: "腹が減った？ 喉が渇いた？ 私に任せてくれ。" #!String
+    ShopMenu.cs.11514: "スタードロップ サロンへ ようこそ！ ご注文は？" #!String
+    ShopMenu.cs.11517: "洞窟は 危険な場所だ。 ちゃんと 準備を 整えるんだな。" #!String
+    ShopMenu.cs.11518: "新しい武器を 買いに きたのか？" #!String
+    ShopMenu.cs.11519: "冒険者ギルドへ よくきた。" #!String
+    ShopMenu.cs.11520: "モンスターを 倒した？ 手に入れたものを 買い取るよ。" #!String
+    ShopMenu.cs.11521: "洞窟は 危険な場所だ。 この目を なくす くらいにな。" #!String
+    ShopMenu.cs.11524: "うちの 商品は 他じゃ 見られないよ！" #!String
+    ShopMenu.cs.11525: "あなたに うってつけの 商品が あるわ。" #!String
+    ShopMenu.cs.11583: "品切れ" #!String
+    SkillsPage.cs.11587: "ドワーフ語 翻訳ガイド" #!String
+    SkillsPage.cs.11588: "錆びた鍵" #!String
+    SkillsPage.cs.11589: "会員カード" #!String
+    SkillsPage.cs.11590: "特別な飾り" #!String
+    SkillsPage.cs.11591: "骨の鍵" #!String
+    SkillsPage.cs.magnifyingglass: "虫眼鏡" #!String
+    SkillsPage.cs.11592: "+{0} クワの効率" #!String
+    SkillsPage.cs.11594: "+{0} ジョウロの効率" #!String
+    SkillsPage.cs.11596: "+{0} オノの効率" #!String
+    SkillsPage.cs.11598: "+{0} 釣り竿の効率" #!String
+    SkillsPage.cs.11600: "+{0} ツルハシの効率" #!String
+    SkillsPage.cs.11602: "+{0} 体力" #!String
+    SkillsPage.cs.11604: "農業" #!String
+    SkillsPage.cs.11605: "採鉱" #!String
+    SkillsPage.cs.11606: "採取" #!String
+    SkillsPage.cs.11607: "釣り" #!String
+    SkillsPage.cs.11608: "戦闘" #!String
+    SkillsPage.cs.11609: "幸運" #!String
+    SkillsPage.cs.11610: "財布" #!String
+    SocialPage_Relationship_Single_Female: "(独身)" #!String
+    SocialPage_Relationship_Single_Male: "(独身)" #!String
+    SocialPage_Relationship_Husband: "(夫)" #!String
+    SocialPage_Relationship_Wife: "(妻)" #!String
+    SocialPage_Relationship_Boyfriend: "(彼氏)" #!String
+    SocialPage_Relationship_Girlfriend: "(彼女)" #!String
+    SocialPage_Relationship_ExHusband: "(前夫)" #!String
+    SocialPage_Relationship_ExWife: "(前妻)" #!String
+    StrengthGame.cs.11660: "おお！ それが 見たかったんだ！ スタートークンを あげよう。" #!String
+    StrengthGame.cs.11661: "マンモス" #!String
+    StrengthGame.cs.11662: "ゴリラ" #!String
+    StrengthGame.cs.11663: "ブルドーザー" #!String
+    StrengthGame.cs.11664: "雄牛" #!String
+    StrengthGame.cs.11665: "家" #!String
+    StrengthGame.cs.11666: "木こり" #!String
+    StrengthGame.cs.11667: "山トロル" #!String
+    StrengthGame.cs.11668: "ボディビルダー" #!String
+    StrengthGame.cs.11669: "鉄" #!String
+    StrengthGame.cs.11670: "木の幹" #!String
+    StrengthGame.cs.11671: "オーク" #!String
+    StrengthGame.cs.11672: "ジムの教師" #!String
+    StrengthGame.cs.11673: "大岩" #!String
+    StrengthGame.cs.11674: "怒れるブタ" #!String
+    StrengthGame.cs.11675: "小さなロバ" #!String
+    StrengthGame.cs.11676: "牧羊犬" #!String
+    StrengthGame.cs.11677: "砂岩" #!String
+    StrengthGame.cs.11678: "くず鉄" #!String
+    StrengthGame.cs.11679: "マスタード" #!String
+    StrengthGame.cs.11680: "レザーブーツ" #!String
+    StrengthGame.cs.11681: "プレイリードッグ" #!String
+    StrengthGame.cs.11682: "硬粘土" #!String
+    StrengthGame.cs.11683: "バルサ材" #!String
+    StrengthGame.cs.11684: "ダンボール" #!String
+    StrengthGame.cs.11685: "パンケーキ" #!String
+    StrengthGame.cs.11686: "バターミルク" #!String
+    StrengthGame.cs.11687: "紙粘土" #!String
+    StrengthGame.cs.11688: "マス" #!String
+    StrengthGame.cs.11689: "小枝" #!String
+    StrengthGame.cs.11690: "ニンジンの細切り" #!String
+    StrengthGame.cs.11691: "ネズミ" #!String
+    StrengthGame.cs.11692: "ジョージの膝" #!String
+    StrengthGame.cs.11693: "赤ちゃんのアヒル" #!String
+    StrengthGame.cs.11694: "ふやけたスパゲティ" #!String
+    StrengthGame.cs.11695: "金魚" #!String
+    StrengthGame.cs.11696: "エビ" #!String
+    StrengthGame.cs.11697: "つまようじ" #!String
+    StrengthGame.cs.11698: "アルフレッド ソース" #!String
+    StrengthGame.cs.11699: "ウェットティッシュ" #!String
+    StrengthGame.cs.11700: "スキムミルク" #!String
+    StrengthGame.cs.11701: "プランクトン" #!String
+    StrengthGame.cs.11703: "力強さ: {0}" #!String
+    StrengthGame.cs.11705: "すごいな。 ゼロか。 そこまで 弱いとは かえって 驚きだよ。 ほら、 スタートークンを ひとつ やろう。" #!String
+    TitleMenu.cs.11717: "おかえりなさい！" #!String
+    TitleMenu.cs.11718: "Xbox One または Xbox 360 コントローラを 差し込むと コントローラを 使用できます。" #!String
+    TitleMenu.cs.11719: "ヒント:贈り物は、 スターデュー バレーの 人々と 仲良くなるのに 最適です。" #!String
+    TitleMenu.cs.11720: "ヒント: Shift + クリックで、 一度に アイテムを 5つ 買えます。" #!String
+    TitleMenu.cs.11721: "クワと ジョウロは 強化した後、 どうぐ ボタンを 押しっぱなしに することで 効果範囲を 拡大 させられます。" #!String
+    TitleMenu.cs.11722: "ヒント: 右クリックで 武器の 特殊技を 使います。" #!String
+    TitleMenu.cs.11723: "テレビを 見て、 アドバイスや、 料理の レシピなどを 学びましょう！" #!String
+    TitleMenu.cs.11724: "行商人は 週に１回 スターデュー バレーを 訪れます。 彼女は 様々な 商品を、 とても高い 価格で 売っています！" #!String
+    TitleMenu.cs.11725: "プレイしてくれて ありがとうございます！" #!String
+    TitleMenu.cs.11726: "エリオットの 最近の 言葉：" #!String
+    TitleMenu.cs.11731: "チャレンジ: 「アドベンチャー オブ プレイリーキング」を 残機を失わずに クリアする。" #!String
+    TitleMenu.cs.11732: "ゲームを 100回 起動しました。" #!String
+    TitleMenu.cs.11733: "ゲームを 1,000回 起動しました！" #!String
+    TitleMenu.cs.11734: "ゲームを 10,000回 起動しました！ 本当に ありがとうございます。 - ConcernedApe" #!String
+    TitleMenu.cs.11738: "終了" #!String
+    TitleMenu.cs.11739: "戻る" #!String
+    TitleMenu.cs.11740: "アバウト" #!String
+    TitleMenu.cs.11741: "スキップ" #!String
+    TutorialMenu.cs.11805: "作物の 基本" #!String
+    TutorialMenu.cs.11807: "釣り" #!String
+    TutorialMenu.cs.11809: "採鉱" #!String
+    TutorialMenu.cs.11811: "クラフト" #!String
+    TutorialMenu.cs.11813: "建設" #!String
+    TutorialMenu.cs.11815: "友達作り" #!String
+    TutorialMenu.cs.11817: "町の情報" #!String
+    TutorialMenu.cs.11819: "動物の世話" #!String
+    WheelSpinGame.cs.11829: "勝利！" #!String
+    WheelSpinGame.cs.11830: "敗北" #!String
+    AbigailGame.cs.11896: "やつらが きたぞ！" #!String
+    AbigailGame.cs.11897: "これで はんぶんだ！" #!String
+    AbigailGame.cs.11898: "よくやった！" #!String
+    AbigailGame.cs.11901: "うう…" #!String
+    AbigailGame.cs.11902: "うわあ！" #!String
+    AbigailGame.cs.11914: "ゲームオーバー" #!String
+    AbigailGame.cs.11917: "リスタート" #!String
+    AbigailGame.cs.11919: "しゅうりょう" #!String
+    CalicoJack.cs.11924: "ヒット" #!String
+    CalicoJack.cs.11927: "スタンド" #!String
+    CalicoJack.cs.11930: "ダブルアップ" #!String
+    CalicoJack.cs.11933: "新規ゲーム" #!String
+    CalicoJack.cs.11936: "しゅうりょう" #!String
+    CalicoJack.cs.11943: "勝利！" #!String
+    CalicoJack.cs.11944: "カリコジャックだ！" #!String
+    CalicoJack.cs.11946: "敗北" #!String
+    CalicoJack.cs.11947: "バスト！" #!String
+    CalicoJack.cs.11950: "ディーラーが バストした！" #!String
+    CalicoJack.cs.11951: "スタンドオフ" #!String
+    CalicoJack.cs.11952: "勝者なし" #!String
+    CalicoJack.cs.11955: "に近い {0}" #!String
+    CalicoJack.cs.11958: "ディーラーが 近い {0}" #!String
+    CalicoJack.cs.11965: "結果: {0}" #!String
+    CalicoJack.cs.11970: "ディーラー: {0}" #!String
+    CalicoJack.cs.11972: "ベット: {0}" #!String
+    FantasyBoardGame.cs.11980: "シナリオクリア評価： \"{0}\"" #!String
+    GrandpaStory.cs.12026: "…わしのかわいい孫よ。" #!String
+    GrandpaStory.cs.12028: "…わしのかわいい孫娘よ。" #!String
+    GrandpaStory.cs.12029: "この 手紙を 持っていて くれないか。" #!String
+    GrandpaStory.cs.12030: "いやいや、 まだ 読んでは　いけないよ。" #!String
+    GrandpaStory.cs.12031: "よく 聞いておくれ…" #!String
+    GrandpaStory.cs.12034: "いつか　お前が　大人になって　世の中に　出た時…" #!String
+    GrandpaStory.cs.12035: "どうしようもない　生きにくさを　感じることがあるかもしれない。" #!String
+    GrandpaStory.cs.12036: "お前の心が、その輝きまで　失ってしまいそうな時、　この手紙を　読むんだよ。" #!String
+    GrandpaStory.cs.12038: "お前の心が、その輝きまで　失ってしまいそうな時、　この手紙を　読むんだよ。" #!String
+    GrandpaStory.cs.12040: "それじゃあ、　おやすみ…" #!String
+    GrandpaStory.cs.12051: "かわいい{0}へ　^^これを読んでいるということは、日々の暮らしを変えたいと願っているのだろう。^^ずっと昔、おじいちゃんもおなじことを考えた。生きるうえで、いちばん大切な、人とのつながり、自然との関わりを見失ってしまっていたんだ。だから、すべてをすてて、本当の居場所にうつり住むことにした。^^^その場所の権利書を同封しておいたよ。あそこは…{1}牧場は、おじいちゃんの誇りと喜びそのものだ。場所は、南海岸のスターデューバレーだ。新しい人生をはじめるには最高の場所だよ。^^今、いちばん大切な宝物を、お前にゆずろう。幸せになりなさい。^^おじいちゃんより、愛をこめて。^^追伸：ルイスさんがまだ元気だったら、よろしく伝えておくれ。" #!String
+    GrandpaStory.cs.12055: "かわいい{0}へ　^^これを読んでいるということは、日々の暮らしを変えたいと願っているのだろう。^^ずっと昔、おじいちゃんもおなじことを考えた。生きるうえで、いちばん大切な、人とのつながり、自然との関わりを見失ってしまっていたんだ。だから、すべてをすてて、本当の居場所にうつり住むことにした。^^^その場所の権利書を同封しておいたよ。あそこは…{1}牧場は、おじいちゃんの誇りと喜びそのものだ。場所は、南海岸のスターデューバレーだ。新しい人生をはじめるには最高の場所だよ。^^今、いちばん大切な宝物を、お前にゆずろう。幸せになりなさい。^^おじいちゃんより、愛をこめて。^^追伸：ルイスさんがまだ元気だったら、よろしく伝えておくれ。" #!String
+    GrandpaStory.cs.12059: "XX 年後" #!String
+    MineCart.cs.12106: "ジュニモ カートを クリアした！ " #!String
+    MineCart.cs.12115: "ベスト: " #!String
+    Slots.cs.12117: "掛け金10" #!String
+    Slots.cs.12118: "掛け金100" #!String
+    TargetGame.cs.12154: "精度: {0}%" #!String
+    TargetGame.cs.12157: "精度： {0}%      {1} / {2} あたった数" #!String
+    TargetGame.cs.12161: "{0}倍 精度ボーナス！" #!String
+    TargetGame.cs.12163: "精度ボーナス なし" #!String
+    Boots.cs.12500: "レベル {0}" #!String
+    Boots.cs.12501: "はき物" #!String
+    Furniture.cs.12623: "家の中に 置くことが できます。" #!String
+    Furniture.cs.12629: "壁の上に 置く必要が あります" #!String
+    Furniture.cs.12632: "ここに 家具は 置けません" #!String
+    Furniture.cs.12633: "壁の上に 置けません" #!String
+    Object.cs.12657: " (レシピ)" #!String
+    Object.cs.12689: "オスのスライムがふ化した。" #!String
+    Object.cs.12691: "メスのスライムがふ化した。" #!String
+    Object.cs.12721: "コーヒー豆が 5個 必要です。" #!String
+    Object.cs.12772: "石炭 1個 必要" #!String
+    Object.cs.12777: "原石が 5個 必要です。" #!String
+    Object.cs.12783: "木が 10個 必要" #!String
+    Object.cs.12787: "スライム 100個 必要" #!String
+    Object.cs.12822: "はるか遠くで 雲が 集まっている…" #!String
+    Object.cs.12847: "家具" #!String
+    Object.cs.12849: "発掘" #!String
+    Object.cs.12850: "鉱物" #!String
+    Object.cs.12851: "野菜" #!String
+    Object.cs.12852: "魚" #!String
+    Object.cs.12853: "料理" #!String
+    Object.cs.12854: "くだもの" #!String
+    Object.cs.12855: "タネ" #!String
+    Object.cs.12856: "肥料" #!String
+    Object.cs.12857: "釣りエサ" #!String
+    Object.cs.12858: "釣り具" #!String
+    Object.cs.12859: "装飾アイテム" #!String
+    Object.cs.12860: "ゴミ" #!String
+    Object.cs.12862: "加工品" #!String
+    Object.cs.12863: "クラフト" #!String
+    Object.cs.12864: "動物アイテム" #!String
+    Object.cs.12866: "花" #!String
+    Object.cs.12867: "モンスターアイテム" #!String
+    Object.cs.12868: "素材" #!String
+    Object.cs.12869: "採取アイテム" #!String
+    category_clothes: "洋服" #!String
+    Object.cs.12873: "ステージモード" #!String
+    Object.cs.12875: "エンドレスモード" #!String
+    Object.cs.12926: "まだカラスを 見ていません。" #!String
+    Object.cs.12927: "カラスを1羽おいはらいましたよ。" #!String
+    Object.cs.12929: "カラスを{0}羽おいはらいましたよ。" #!String
+    Object.cs.12942: "ホッパーは空です。 サイロを 建設し、 牧草を カマで 刈って 補充してください。" #!String
+    Object.cs.12993: "アーティファクトを 手に入れました！ 博物館の 館長に 見せてみましょう。" #!String
+    Object.cs.12994: "失われた本を 見つけました。 図書館の コレクションが 拡張されました。" #!String
+    Object.cs.12995: "ジオードを 見つけました！ 鍛冶屋に 砕いてもらいましょう。 中に 何かが 入っているかも しれません。" #!String
+    Object.cs.12996: "祖父の ほこらの 後ろで、 変な 像を 見つけました。" #!String
+    Object.cs.13021: "不正な 位置。" #!String
+    Object.cs.13053: "不適切な 位置。" #!String
+    Object.cs.13060: "他の木に 近すぎます。" #!String
+    Object.cs.13068: "ここには 植えられません。" #!String
+    Object.cs.13073: "設計図の 中身： {0}" #!String
+    Object.cs.13074: "クラフト用の 設計図 {0}" #!String
+    Object.cs.13078: "博物館へ 寄贈すれば、 ギュンターが 調べてくれる でしょう。" #!String
+    SpecialItem.cs.13088: "骨の鍵" #!String
+    SpecialItem.cs.13089: "会員カード" #!String
+    SpecialItem.cs.13090: "木切れの下から{0}を見つけた！なんなのかは分からないが、重要そうな 感じがする。アイテムを財布に入れた。" #!String
+    SpecialItem.cs.13092: "{0}を見つけた！なんなのかは分からないが、重要そうな 感じがする。アイテムを財布に入れた。" #!String
+    SpecialItem.cs.13094: "{0}を手に入れた！持ちもののスペースが{1}に増えた。" #!String
+    TV.cs.13105: "天気予報" #!String
+    TV.cs.13107: "占い情報" #!String
+    TV.cs.13111: "自然とくらそう" #!String
+    TV.cs.13114: "ソースの 女王" #!String
+    TV.cs.13117: "ソースの 女王 (再放送)" #!String
+    TV.cs.13118: "(離れる)" #!String
+    TV.cs.13120: "チャンネルを 選択:" #!String
+    TV.cs.13124: "「自然とくらそう」の時間です。きょうもみなさんにお得な情報をお届けしますよ。" #!String
+    TV.cs.13127: "こんにちは！ 「ソースの女王」へ ようこそ… 手持ちの 秘伝 レシピ帳から とっておきの レシピを お送りします。 今週は…" #!String
+    TV.cs.13128: "おや…新しい視聴者が来てくれたようです。お若い男性が、これは…スターデューバレーからのようですね。どうぞ、いらっしゃい！" #!String
+    TV.cs.13130: "おや…新しい視聴者が来てくれたようです。お若い女性が、これは…スターデューバレーからのようですね。どうぞ、いらっしゃい！" #!String
+    TV.cs.13132: "ああ… 精霊が 私に 何かを 伝えようと しています… " #!String
+    TV.cs.13133: "「ウェルウィックの 予言」へ よく 戻ってきました… 未来の 隠された知識を 求めているなら、 私に お任せあれ。" #!String
+    TV.cs.13134: "むむ… 水晶球から 輝きが 見えます… 未来の 知識の 一部ですね！" #!String
+    TV.cs.13135: "「ウェルウィックの 予言」へ ようこそ… 精霊の声を 視聴者へ 直接 お届けする… 唯一無二の番組です。" #!String
+    TV.cs.13136: "KOZU 5へようこそ… 天気、ニュース、エンタメ情報を お届けする最高の番組です。^さて、 明日の天気予報ですが…" #!String
+    TV.cs.13148: "冗談さ… まだ 準備は できてない。 今日は 何もないよ。" #!String
+    TV.cs.13151: "{0}のレシピはすでに知っている。" #!String
+    TV.cs.13153: "{0}のレシピを覚えた！" #!String
+    TV.cs.13164: "おや… おかしいですね。 情報シートには \"null\" と出ています。 これは恥ずかしい… " #!String
+    TV.cs.13170: "ペリカンタウン内" #!String
+    TV.cs.13172: "浜辺で" #!String
+    TV.cs.13174: "森の中" #!String
+    TV.cs.13175: "明日は快晴になりそうです…まさに{0}にはうってつけですね！当日、イベントは{1}を会場に、{2}時から{3}時まで開催されます。どうか遅れずに！" #!String
+    TV.cs.13180: "皆さん、 明日は 雪が 降りますから 厚着しましょう！" #!String
+    TV.cs.13181: "明日は 数センチの 積雪が 予想されるでしょう。" #!String
+    TV.cs.13182: "明日は 美しく 晴れた 一日に なるでしょう。" #!String
+    TV.cs.13183: "明日は 一日中 晴れになる 見通しです。" #!String
+    TV.cs.13184: "明日は 一日中 雨に なりそうですね。" #!String
+    TV.cs.13185: "嵐が 近づいているようです。  雷雨が 予想されるでしょう。" #!String
+    TV.cs.13187: "部分的に曇りで、 少し 風が吹くでしょう。 花粉に 気をつけてください！" #!String
+    TV.cs.13189: "明日は 一日中 曇りで、 風が吹く ことになるでしょう。" #!String
+    TV.cs.13190: "明日は 一日中 雪が 降るでしょう。 厚着するのを 忘れないでください！" #!String
+    TV.cs.13191: "精霊達が 怒っているようです。 誰かが 価値のないものを ささげようと したみたいで… うーん。 精霊で 笑いを取るのは ダメですね！" #!String
+    TV.cs.13192: "今日は 精霊達が とても 不機嫌ですね。全力で あなたの 邪魔をしたがっているみたいです。" #!String
+    TV.cs.13193: "きょうの精霊たちは少々いらだっているようです。不運な1日になるやもしれません。" #!String
+    TV.cs.13195: "きょうの精霊たちは少々いらだっているようです。不運な1日になるやもしれません。" #!String
+    TV.cs.13197: "精霊達が うれしがってるようじゃ！ 今日 誰かが ステキな ささげものを したらしく、 そのことで 喜んでいるぞ。" #!String
+    TV.cs.13198: "今日は 精霊たちが とても 幸せなようです！全力で 皆に 幸運を 振りまこう、 と言っています。" #!String
+    TV.cs.13199: "今日は 精霊たちの 機嫌が 良いみたいですね。少しだけ 運勢が 良くなるでしょう。" #!String
+    TV.cs.13200: "今日の 精霊は ごく自然な 感じです。 一日の 運勢は あなた次第です。" #!String
+    TV.cs.13201: "これは 珍しいですね。 今日は 精霊達が すごく 自然に 振舞っています。" #!String
+    Wallpaper.cs.13203: "フローリング" #!String
+    Wallpaper.cs.13204: "壁紙" #!String
+    Wallpaper.cs.13205: "1つの 部屋の 床を 模様替えします。" #!String
+    Wallpaper.cs.13206: "1つの 部屋の 壁を 模様替えします。" #!String
+    FishingQuest.cs.13227: "釣り" #!String
+    FishingQuest.cs.13228: "{0}の個体が数をふやし、地域に住む他の生物種をおびやかしはじめているようです。彼らを{1}匹釣ってもらえると助かります。   -ディメトリウス" #!String
+    FishingQuest.cs.13231: "@ さん、 ありがとうございます！$h#$b#{0}が 繁殖しすぎたのは{1}" #!String
+    FishingQuest.cs.13233: "水の 汚染によって 繁殖サイクルが 加速してしまった からです。" #!String
+    FishingQuest.cs.13234: "向こう見ずな 釣り人達が 地元の大会で あまりにも 多く 放したようです。" #!String
+    FishingQuest.cs.13235: "他の種を 余計に 吊り上げることで、 簡単に エサに ありつけてしまうのです。" #!String
+    FishingQuest.cs.13236: "遺伝子操作で生まれたスーパー{0}が養殖場から逃げ出し、繁殖をはじめてしまったのです。" #!String
+    FishingQuest.cs.13243: "{0}/{1} 釣りあげたタコ" #!String
+    FishingQuest.cs.13244: "{0}/{1} {2} 捕獲" #!String
+    FishingQuest.cs.13248: "釣りの技が絶えちまわないように、ってことで…{2}を{1}匹釣ったやつに{0}G賞金を出すぞ。がんばれよ！  -ウィリー" #!String
+    FishingQuest.cs.13253: "イカ" #!String
+    FishingQuest.cs.13255: "{0}/{1} 釣りあげたイカ" #!String
+    FishingQuest.cs.13256: "@、よくやったじゃねえか！$h#$b#{0}釣りってのはわくわくするだろ、なあ？ " #!String
+    FishingQuest.cs.13258: "あいつらは すごく 釣りにくい 場所に いつも 隠れやがるんだ。" #!String
+    FishingQuest.cs.13259: "すごい 泳ぎっぷりを するんだよな。" #!String
+    FishingQuest.cs.13260: "前に一度、 おれは{0}" #!String
+    FishingQuest.cs.13261: " 小型バイク並みの ものを 釣ったんだ！" #!String
+    FishingQuest.cs.13262: " 折りたたみイス並みの ものを 釣ったんだ！" #!String
+    FishingQuest.cs.13263: " 芝刈り機並みの ものを 釣ったんだ！" #!String
+    FishingQuest.cs.13264: "百科事典セット並みの ものを 釣ったんだ！" #!String
+    FishingQuest.cs.13265: "アーケード筐体並みの ものを 釣ったんだ！" #!String
+    FishingQuest.cs.13266: " ウシの赤ちゃん並みの ものを 釣ったんだ！" #!String
+    FishingQuest.cs.13267: "時々、 あいつらは かしこいようにも 見えるんだ。 怖いぜ。$u" #!String
+    FishingQuest.cs.13268: "#$b#まあ、 これが 報酬だ。 おめでとう。$h" #!String
+    FishingQuest.cs.13274: "\n\n- 賞金{0}G" #!String
+    FishingQuest.cs.13275: "\n- 捕まえた 魚は お前の ものだ。" #!String
+    FishingQuest.cs.13277: "{0}と会話" #!String
+    ItemDeliveryQuest.cs.13285: "引渡し" #!String
+    ItemDeliveryQuest.cs.13299: "欲しいのは" #!String
+    ItemDeliveryQuest.cs.13300: "探しているのは" #!String
+    ItemDeliveryQuest.cs.13301: "どうしても欲しいのは" #!String
+    ItemDeliveryQuest.cs.13302: " 採れたての{0}です。" #!String
+    ItemDeliveryQuest.cs.13303: " おいしい{0}です。" #!String
+    ItemDeliveryQuest.cs.13304: " 完熟の{0}です。" #!String
+    ItemDeliveryQuest.cs.13306: "地元の 牧場主なら 届けてくれると 思います。" #!String
+    ItemDeliveryQuest.cs.13307: "報酬は ちゃんと 支払います。" #!String
+    ItemDeliveryQuest.cs.13308: "もし 誰かが 送ってくれたら とても 助かります。" #!String
+    ItemDeliveryQuest.cs.13311: "こんにちは！ ディメトリウスです。 誰か、{0}を持ってきてくれませんか？\n生物学の 研究のために それが 必要なのです。" #!String
+    ItemDeliveryQuest.cs.13314: "分析するための{0}を探しています。マウンテンロード24番地の ディメトリウスまで届けてください。" #!String
+    ItemDeliveryQuest.cs.13317: "こんにちは、ご近所のみなさん！うちのヤギたちが心底{0}をほしがってるの。でも、自分じゃ見つけられなくて！だれか手伝ってくれない？     -マーニー" #!String
+    ItemDeliveryQuest.cs.13320: "こんにちは、ご近所のみなさん！ミルクの出をよくするために、うちのウシたちに{0}をあげたいの。見つけた人は、だれかあたしのところまで持ってきてください。     -マーニー" #!String
+    ItemDeliveryQuest.cs.13324: "どうも憂うつなんだ… {0}があれば気が晴れるかもしれない。     -セバスチャン" #!String
+    ItemDeliveryQuest.cs.13327: "…山にむかって、力いっぱい{0}をぶん投げたい気分なんだ。マウンテンロード24番地のセバスチャンまで持ってきてくれ。" #!String
+    ItemDeliveryQuest.cs.13333: "{1}ための{0}を探しています。" #!String
+    ItemDeliveryQuest.cs.13334: "{1}ための{0}が必要です。" #!String
+    ItemDeliveryQuest.cs.13336: "午後の お茶会に 出す" #!String
+    ItemDeliveryQuest.cs.13337: "今夜の ワインのお供に する" #!String
+    ItemDeliveryQuest.cs.13338: "パンと 一緒に 食べる" #!String
+    ItemDeliveryQuest.cs.13339: "今夜の 読書の お供に する" #!String
+    ItemDeliveryQuest.cs.13340: "仕事の 後に いただく" #!String
+    ItemDeliveryQuest.cs.13341: "テレビを 見ながら 食べる" #!String
+    ItemDeliveryQuest.cs.13342: "{0}を　読みながら　いただく" #!String
+    ItemDeliveryQuest.cs.13346: "ラジオ番組を聞きながらいただく" #!String
+    ItemDeliveryQuest.cs.13347: "「{0}」の新作レコードを聞きながら食べる" #!String
+    ItemDeliveryQuest.cs.13349: "今夜の夕食にする" #!String
+    ItemDeliveryQuest.cs.13350: "軽食用に冷凍する" #!String
+    ItemDeliveryQuest.cs.13351: "明日の昼食にする" #!String
+    ItemDeliveryQuest.cs.13353: "冬の ごちそうを 彩る" #!String
+    ItemDeliveryQuest.cs.13355: "夏の 風味として 楽しむ" #!String
+    ItemDeliveryQuest.cs.13356: "気分高揚の" #!String
+    ItemDeliveryQuest.cs.13357: "明日の 朝食にする" #!String
+    ItemDeliveryQuest.cs.13360: "起きてからずっと、ディナーに{0}が食べたくてしかたありません。\n我輩のために 作ってくれるかね？" #!String
+    ItemDeliveryQuest.cs.13364: "いまものすごく{0}がほしくてたまらないんだ。1つ持ってきてもらえませんか。" #!String
+    ItemDeliveryQuest.cs.13367: "肥料をつくるのに{0}が必要なんです。お願いします。" #!String
+    ItemDeliveryQuest.cs.13370: "すごく腹が減った。{0}をたのむ。" #!String
+    ItemDeliveryQuest.cs.13373: "スターデューバレーお食事サービスは現在、{0}で{2}さんへ{1}を届けてくれる方を募集中です。報酬は配達後にお渡しします。 " #!String
+    ItemDeliveryQuest.cs.13378: "どうも憂うつなんだ… {0}があれば気が晴れるかもしれない。\n     -セバスチャン" #!String
+    ItemDeliveryQuest.cs.13381: "…どうも{0}がほしい気分だ。マウンテンロード24番地のセバスチャンまで持ってきて。" #!String
+    ItemDeliveryQuest.cs.13383: "{1}を作るのに{0}を使いたいです。" #!String
+    ItemDeliveryQuest.cs.13385: "スープ" #!String
+    ItemDeliveryQuest.cs.13386: "ピザ" #!String
+    ItemDeliveryQuest.cs.13387: "サラダ" #!String
+    ItemDeliveryQuest.cs.13388: "シチュー" #!String
+    ItemDeliveryQuest.cs.13389: "キャセロール" #!String
+    ItemDeliveryQuest.cs.13390: "炒め物" #!String
+    ItemDeliveryQuest.cs.13391: "カルゾーネ" #!String
+    ItemDeliveryQuest.cs.13392: "タコス" #!String
+    ItemDeliveryQuest.cs.13393: "ブリトー" #!String
+    ItemDeliveryQuest.cs.13394: "おかず" #!String
+    ItemDeliveryQuest.cs.13395: "デザート" #!String
+    ItemDeliveryQuest.cs.13396: "新しい料理" #!String
+    ItemDeliveryQuest.cs.13398: "誰か 持って来てくれない？" #!String
+    ItemDeliveryQuest.cs.13400: "いまものすごく{0}がほしい気分なんだ。 " #!String
+    ItemDeliveryQuest.cs.13402: "1つ 持ってきて。" #!String
+    ItemDeliveryQuest.cs.13420: "今夜の 夕食で ローストに する" #!String
+    ItemDeliveryQuest.cs.13421: "塩漬けにする" #!String
+    ItemDeliveryQuest.cs.13422: "冬に備えて 干物に する" #!String
+    ItemDeliveryQuest.cs.13424: "暖かい ウィンターパイに 入れる" #!String
+    ItemDeliveryQuest.cs.13426: "バーベキューで 焼く" #!String
+    ItemDeliveryQuest.cs.13427: "シシケバブに 刺す" #!String
+    ItemDeliveryQuest.cs.13446: "{0}のペーストは、{1}よく効くんです。使いたいので、見つけた人がいたら持ってきてください。       -Dr. ハーヴィー " #!String
+    ItemDeliveryQuest.cs.13448: "舌の腫れに" #!String
+    ItemDeliveryQuest.cs.13449: "一般的な カゼに" #!String
+    ItemDeliveryQuest.cs.13450: "床ずれに" #!String
+    ItemDeliveryQuest.cs.13451: "通風に" #!String
+    ItemDeliveryQuest.cs.13452: "口臭に" #!String
+    ItemDeliveryQuest.cs.13453: "抜け毛に" #!String
+    ItemDeliveryQuest.cs.13454: "にきびに" #!String
+    ItemDeliveryQuest.cs.13455: "鼻水に" #!String
+    ItemDeliveryQuest.cs.13456: "歯痛に" #!String
+    ItemDeliveryQuest.cs.13457: "消化不良に" #!String
+    ItemDeliveryQuest.cs.13458: "偏頭痛に" #!String
+    ItemDeliveryQuest.cs.13459: "肌あれに" #!String
+    ItemDeliveryQuest.cs.13462: "やあ！あたらしいオードブルに{0}をつかいいたいんだ。酒場に持ってきてくれた人にはお礼をするよ。     -ガス" #!String
+    ItemDeliveryQuest.cs.13464: "{0}{1}今日明日くらいに持ってきてください。" #!String
+    ItemDeliveryQuest.cs.13465: "を 棚に 置きたいです。" #!String
+    ItemDeliveryQuest.cs.13466: "をマントルの 上に 置きたいです。" #!String
+    ItemDeliveryQuest.cs.13467: "を枕の 下に 置きたいです。" #!String
+    ItemDeliveryQuest.cs.13468: "をチェーンの 上に 置きたいです。" #!String
+    ItemDeliveryQuest.cs.13469: "を曽祖父の 墓の 上に 置きたいです。" #!String
+    ItemDeliveryQuest.cs.13473: "ハロー、エミリーだよ。だれか{0}を打ってくれない？ジュエリーをつくるのに必要なんだ。よろしくね！" #!String
+    ItemDeliveryQuest.cs.13476: "いまつくってるドレスのボタンに、{0}をつかいたいんだ。だれか見つけた人がいたら、あたしに持ってきてくれない？     -エミリー" #!String
+    ItemDeliveryQuest.cs.13480: "{0} いま{1}がほしいんです。" #!String
+    ItemDeliveryQuest.cs.13481: "{0}を探しています。" #!String
+    ItemDeliveryQuest.cs.13482: " だれにでも一律おなじ報酬をお支払いします。" #!String
+    ItemDeliveryQuest.cs.13483: " 報酬は持ってきてくれた時に渡します。" #!String
+    ItemDeliveryQuest.cs.13485: "{0}持ってきてくれますか？" #!String
+    ItemDeliveryQuest.cs.13487: " 好きで たまらないんだ。" #!String
+    ItemDeliveryQuest.cs.13488: " まだまだ足りないんだ！" #!String
+    ItemDeliveryQuest.cs.13489: " ひとつでもあると 助かります。" #!String
+    ItemDeliveryQuest.cs.13491: "だれか{0}を分けてくれませんか？" #!String
+    ItemDeliveryQuest.cs.13492: "だれか{0}を分けてくれませんか？" #!String
+    ItemDeliveryQuest.cs.13494: "{0}が必要です。よろしければお願いします。 " #!String
+    ItemDeliveryQuest.cs.13497: "{0}を切らしてしまいそうです。お持ちの方がいたら、どなたか1つ分けてくれるととても助かります。" #!String
+    ItemDeliveryQuest.cs.13500: "{0}を、痛んでいる{1}に塗りつけるため必要です。" #!String
+    ItemDeliveryQuest.cs.13502: "ヒザ" #!String
+    ItemDeliveryQuest.cs.13503: "ヒジ" #!String
+    ItemDeliveryQuest.cs.13504: "背中" #!String
+    ItemDeliveryQuest.cs.13505: "頭" #!String
+    ItemDeliveryQuest.cs.13506: "鼻" #!String
+    ItemDeliveryQuest.cs.13507: "つま先" #!String
+    ItemDeliveryQuest.cs.13508: "歯茎" #!String
+    ItemDeliveryQuest.cs.13509: "耳" #!String
+    ItemDeliveryQuest.cs.13510: "足" #!String
+    ItemDeliveryQuest.cs.13511: "歯" #!String
+    ItemDeliveryQuest.cs.13512: "尻" #!String
+    ItemDeliveryQuest.cs.13513: "ふくらはぎ" #!String
+    ItemDeliveryQuest.cs.13514: "なるべく早く持ってきてください！" #!String
+    ItemDeliveryQuest.cs.13516: "なる早で持ってきてください！" #!String
+    ItemDeliveryQuest.cs.13518: "{0} {1}を取ってきてくれる人を探しています。手間賃は出します。" #!String
+    ItemDeliveryQuest.cs.13520: "{0}1つを市場価格の3倍で買い取ります！私のところに直接持ってきてください。" #!String
+    ItemDeliveryQuest.cs.13523: "{0}1つを市場価格の3倍で買い取ります！私のところに直接持ってきてください。" #!String
+    ItemDeliveryQuest.cs.13526: "おお！" #!String
+    ItemDeliveryQuest.cs.13527: "おや！！" #!String
+    ItemDeliveryQuest.cs.13528: "こんにちは@！" #!String
+    ItemDeliveryQuest.cs.13530: " これ、頼んでた{0}？" #!String
+    ItemDeliveryQuest.cs.13532: " 頼みの品を 持ってきてくれたんだね！" #!String
+    ItemDeliveryQuest.cs.13534: " それじゃ、貼りだしてた{0}を見てくれたのか。^それじゃ、貼りだしてた乗せたを見てくれたんだね。" #!String
+    ItemDeliveryQuest.cs.13535: " それじゃ、貼りだしてた{0}を見てくれたのか。^それじゃ、貼りだしてたお知らせをを見てくれたんだね。" #!String
+    ItemDeliveryQuest.cs.13536: " それじゃ、貼りだしてた{0}を見てくれたのか。^それじゃ、貼りだしてたあなたがを見てくれたんだね。" #!String
+    ItemDeliveryQuest.cs.13538: " 本当にありがとう！" #!String
+    ItemDeliveryQuest.cs.13539: " すごく 助かるよ。" #!String
+    ItemDeliveryQuest.cs.13540: " 見た感じ カンペキそう。" #!String
+    ItemDeliveryQuest.cs.13542: "$h#$b# これは、手間をかけてくれた お礼。" #!String
+    ItemDeliveryQuest.cs.13543: "$h#$b# これが約束の報酬です。" #!String
+    ItemDeliveryQuest.cs.13544: "$h#$b# …さて、これで 貸し借りは なしだね。" #!String
+    ItemDeliveryQuest.cs.13546: "魔法薬作りのために{0}を必要と しておる。 研究室まで直接持ってきてきていただきたい。 -魔術師 M. ラズモディアス" #!String
+    ItemDeliveryQuest.cs.13548: "我輩、魔術師M.ラズモディアスは、魔術的な特性を調べるため{0}を探し求めている。協力者には報酬を支払おう。" #!String
+    ItemDeliveryQuest.cs.13551: "実験に使う{0}を探している。あれば持ってきてくれ。 -魔術師 M.ラズモディアス" #!String
+    ItemDeliveryQuest.cs.13553: "地元の魔術師として、新鮮な{0}を探している。" #!String
+    ItemDeliveryQuest.cs.13555: "おお、 我輩が 頼んでいた 品物じゃな。#$b# 貴殿の 働きは 満足のいくものじゃ。 報酬を やろう。" #!String
+    ItemDeliveryQuest.cs.13557: "{0}を持ってきてくれたら、永遠の愛を約束しちゃう！　-ヘイリー" #!String
+    ItemDeliveryQuest.cs.13560: "${私に{0}を持ってきてくれるハンサムさんをさがしてます。       -ヘイリー^女子限定：ねえ…わたしいま、{0}を手に入れたいの…なににつかうか、女子ならわかるでしょ。ヒミツは守ってね！      -ヘイリー}$" #!String
+    ItemDeliveryQuest.cs.13566: "あ！そうそう、それがほしかったの！フフッ、 うれしい！$h" #!String
+    ItemDeliveryQuest.cs.13568: "いますすめてる計画に必要なんだけど、だれか{0}を持ってきてくれないか？    -サム" #!String
+    ItemDeliveryQuest.cs.13571: "${オレのところまで{0}を持ってきてくれるヤツはいないか？       -サム¦オレまで{0}を持ってきてくれる可愛い子、募集中だぜ。  (^_-)      -サム}$" #!String
+    ItemDeliveryQuest.cs.13577: "おっ、助かったぜ、@！あの仕事、お前が引き受けてくれるなんて思わなかったな。$h" #!String
+    ItemDeliveryQuest.cs.13580: "いま進めてるプロジェクトに{0}がいるの。だれか手伝って！    -マル" #!String
+    ItemDeliveryQuest.cs.13583: "最新の発明品の動力源にするために、{0}を探しています。これがないと動かないの！ -マル" #!String
+    ItemDeliveryQuest.cs.13585: "わあ！カンペキだね！これで プロジェクトの続きに取りかかれるよ。$h#$b#ありがとう、@。$h" #!String
+    ItemDeliveryQuest.cs.13587: "そうそう、 あたらしい発明を動かすためにこれが必要だったの。#$b#@、ありがとう！$h" #!String
+    ItemDeliveryQuest.cs.13590: "なんかタイクツ…ねえ、だれか{0}でも持ってきてくれない？    -アビー" #!String
+    ItemDeliveryQuest.cs.13593: "パパにイタズラをしかけたいんだけど、それには{0}がいるんだ。このことはヒミツにしといてね :)      -アビゲイル" #!String
+    ItemDeliveryQuest.cs.13597: " うーん…思ったよりおもしろくなかったなあ…$s#$b#まあ、あなたのせいじゃないけどね！あはは、掲示板見てくれてありがとね、@。$h" #!String
+    ItemDeliveryQuest.cs.13599: " えへへ…カンペキじゃん。@、はいこれ。お駄賃ね。このこと、パパにはナイショだからね。$h" #!String
+    ItemDeliveryQuest.cs.13602: "おっ、 ありがとう。 これが ほしかったんだ。$h" #!String
+    ItemDeliveryQuest.cs.13604: "やった、たのんでた{0}じゃん！しかもすっごくキレイだし。本当に ありがと、 @" #!String
+    ItemDeliveryQuest.cs.13607: "\n\n- {0}g を 受け取り時に 支払" #!String
+    ItemDeliveryQuest.cs.13608: "\n- {0}が 喜ぶ" #!String
+    ItemDeliveryQuest.cs.13610: "\n- {0}が 感謝する" #!String
+    ItemDeliveryQuest.cs.13612: "\n- {0}が 喜ぶ" #!String
+    ItemDeliveryQuest.cs.13614: "{1}を{0}まで持ってきてください。" #!String
+    ItemDeliveryQuest.cs.13615: "まだ足りないな…ぜんぶで{0}つ必要なんだ。" #!String
+    ItemDeliveryQuest.cs.13620: "\n                - {0}\n" #!String
+    Quest.cs.13636: "日記 更新" #!String
+    ResourceCollectionQuest.cs.13640: "採取" #!String
+    ResourceCollectionQuest.cs.13647: "だれか、おれのところまで{1}を{0}個持ってきてくれないか。 -クリント" #!String
+    ResourceCollectionQuest.cs.13649: "を 持ってきてくれ。 地元の 産出物を より良く 理解したい。" #!String
+    ResourceCollectionQuest.cs.13650: "を 持ってきてくれ。 精査する ためだ。" #!String
+    ResourceCollectionQuest.cs.13651: "を 持ってきてくれ。 地元の 地質調査に 使う。" #!String
+    ResourceCollectionQuest.cs.13652: "を 持ってきてくれ。 その中に 貴重な 宝石が 埋まってるか 確認したい。" #!String
+    ResourceCollectionQuest.cs.13655: "頼んだ 原石を 持って来てくれたようだな。 " #!String
+    ResourceCollectionQuest.cs.13656: "すばらしい。" #!String
+    ResourceCollectionQuest.cs.13657: "ありがとう。" #!String
+    ResourceCollectionQuest.cs.13658: "よし。" #!String
+    ResourceCollectionQuest.cs.13659: "#$b#ふむ…この鉱石の中には、貴重な宝石は埋まってないみたいだな。まあ、いいさ。#$b#鉱石は返すよ。で、こっちは約束してた報酬だ。" #!String
+    ResourceCollectionQuest.cs.13662: "頼んだ 原石を 持って来てくれたか！ " #!String
+    ResourceCollectionQuest.cs.13667: "#$b#地元の鉱石の状態は、ときどき調べることにしてるんだ。質と量がどれくらいかつかんでおきたいからな。#$b#それじゃ、そいつをちょっと見せてくれ…ふむふむ…なるほど。#$b#ありがとな。鉱石は持って帰っていいぜ。みんな質は{0}だ。" #!String
+    ResourceCollectionQuest.cs.13668: "すばらしい" #!String
+    ResourceCollectionQuest.cs.13669: "優れた" #!String
+    ResourceCollectionQuest.cs.13670: "良い" #!String
+    ResourceCollectionQuest.cs.13672: "#$b#どの鉱石も質がいいな…鉱石はとっといていいぞ。おれは近場の鉱床がどんなふうか知りたかっただけだからな。" #!String
+    ResourceCollectionQuest.cs.13673: "#$b#それと… これが 約束した 報酬だ。" #!String
+    ResourceCollectionQuest.cs.13674: "どうも！ロビンです。だれか、{1}を{0}個私に持ってきてくれない？ほしいのは採れたて…まさにきょう集めたよってやつじゃないといけないんだ。 よろしく！" #!String
+    ResourceCollectionQuest.cs.13677: "ああ、頼んでた{0}を持ってきてくれたのか。 " #!String
+    ResourceCollectionQuest.cs.13678: "木" #!String
+    ResourceCollectionQuest.cs.13679: "石" #!String
+    ResourceCollectionQuest.cs.13681: "最高だね！$h" #!String
+    ResourceCollectionQuest.cs.13682: "すっごく助かったよ…ありがとう！$h" #!String
+    ResourceCollectionQuest.cs.13683: "ありがとね！$h" #!String
+    ResourceCollectionQuest.cs.13688: "\n- 精査した後、 渡した 原石は 返します" #!String
+    ResourceCollectionQuest.cs.13691: "あつめた{2} {0}/{1}" #!String
+    SlayMonsterQuest.cs.13696: "モンスター 討伐" #!String
+    SlayMonsterQuest.cs.13711: "\"ダギー\"と呼ばれるモンスターたちが、地域の鉱山を荒らしている！やつらが掘る穴は、鉱山の構造をもろくしてしまうんだ。だれか、{0}匹ほどやつらを倒してくれる人はいないか？" #!String
+    SlayMonsterQuest.cs.13723: "{0}体の{1}" #!String
+    SlayMonsterQuest.cs.13725: "鉱山の 凍てついた 場所にいる フロストジェリーを 倒してくれる スライムハンター を募集中！" #!String
+    SlayMonsterQuest.cs.13727: "鉱山の 溶岩地帯にいる レッドスライムを 倒してくれる スライムハンター　を募集中！" #!String
+    SlayMonsterQuest.cs.13728: "鉱山の グリーンスライムを 倒してくれる スライムハンター　を募集中！" #!String
+    SlayMonsterQuest.cs.13730: "おや、 @さん！スライム問題の 解決に 協力してくれたのですね？ ありがとうございます！$h#$b# 大変な目に あっていなければ いいのですが…" #!String
+    SlayMonsterQuest.cs.13731: " 服に スライムが つくと、 なかなか 落ちないんですよね。#$b#あいつらを 捕まえようと した時に ズボンを 数着 無駄にしましたよ " #!String
+    SlayMonsterQuest.cs.13732: "。 " #!String
+    SlayMonsterQuest.cs.13733: "。 " #!String
+    SlayMonsterQuest.cs.13734: "わたしが{1}スライムであたらしい{2}のパンツを汚すと、{0}起こったのを思い出します… $h#$b# まあ、おいといて…報酬を受けとってください。" #!String
+    SlayMonsterQuest.cs.13735: "母が よく" #!String
+    SlayMonsterQuest.cs.13736: "父が よく" #!String
+    SlayMonsterQuest.cs.13740: "礼服の" #!String
+    SlayMonsterQuest.cs.13741: "シルクの" #!String
+    SlayMonsterQuest.cs.13742: "あや織の" #!String
+    SlayMonsterQuest.cs.13744: "スライムは 群れると 危険な 存在に なるだろう。#$b#君の おかげで、 探検も 少しは 楽になるだろう。 報酬を 受け取ってくれ！" #!String
+    SlayMonsterQuest.cs.13747: "地元の鉱山に外来種のカニがすみつき、本来の生態系をおびやかしているようなんだ！このカニは石に擬態することで知られている。{0}匹駆除してくれた人には賞金をはらおう。 -ディメトリウス" #!String
+    SlayMonsterQuest.cs.13750: "ああ、{0}の数を減らしてくれたんだね。人間が鉱山で活動した影響のせいか、 繁殖がふだんより活発に なっていたんだ。今回の駆除の効果で、他の種をおびやかさなくなるといいんだが。#$b#きみがしてくれたことに、きっと地域の動物たちも感謝しているさ、@。さあ、報酬を受け取ってくれ。$h" #!String
+    SlayMonsterQuest.cs.13752: "{0}というモンスターが元素のバランスを崩しておる。鉱山へ足を踏み入れ、やつら{2}を{1}匹討伐してきてもらいたい。  -魔術師 M. ラズモディアス" #!String
+    SlayMonsterQuest.cs.13755: "けだもの" #!String
+    SlayMonsterQuest.cs.13756: "悪鬼" #!String
+    SlayMonsterQuest.cs.13757: "魔物" #!String
+    SlayMonsterQuest.cs.13760: "貴殿のはたらきにより、元素の精霊達も喜んでおる。これが 約束した報酬だ。" #!String
+    SlayMonsterQuest.cs.13764: "募集：地元の鉱山で{1}を{0}体討伐してくれるモンスターハンター" #!String
+    SlayMonsterQuest.cs.13767: "おや、 @さん！ モンスター問題の 解決に 協力してくれたのですね？ ありがとうございます！$h#$b# 大変な目に あっていなければ いいのですが…" #!String
+    SlayMonsterQuest.cs.13770: "倒した{2}の数：{0}/{1}" #!String
+    SlayMonsterQuest.cs.13772: "フロストジェリー" #!String
+    SocializeQuest.cs.13785: "みんなに あいさつ" #!String
+    SocializeQuest.cs.13786: "ねえねえ！だれか、あたしのために町のみんなに\"こんにちは\"ってあいさつしてくれない？{0}みんなに届けたいんだ！  -エミリー" #!String
+    SocializeQuest.cs.13787: "喜びを" #!String
+    SocializeQuest.cs.13788: "平和と親切の心を" #!String
+    SocializeQuest.cs.13789: "コミュニティの 精神を" #!String
+    SocializeQuest.cs.13791: "\n\n- 町の人 全員が あなたを 少し 気に入る" #!String
+    SocializeQuest.cs.13802: "あいさつした人：{0}/{1}" #!String
+    HoeDirt.cs.13915: "カマが必要です" #!String
+    HoeDirt.cs.13916: "植える前に 加える必要あり" #!String
+    HoeDirt.cs.13916-2: "このスポットは肥よく済みです" #!String
+    HoeDirt.cs.13919: "牧場に 植えること。" #!String
+    HoeDirt.cs.13924: "季節外です。" #!String
+    HoeDirt.cs.13925: "ここには 植えられません。" #!String
+    ResourceClump.cs.13945: "この 切り株を 破壊するには オノを 強化する 必要が あります。" #!String
+    ResourceClump.cs.13948: "この 丸太を 破壊するには オノを 強化する 必要が あります。" #!String
+    ResourceClump.cs.13952: "これを 破壊するには ツルハシを 強化する 必要が あります。" #!String
+    ResourceClump.cs.13956: "この 大岩を 破壊するには ツルハシを 強化する 必要が あります。" #!String
+    ResourceClump.cs.13962: "この 大きな 丸太を 破壊するには オノを 強化する必要が あるようだ。" #!String
+    ResourceClump.cs.13963: "この 大きな 石を 破壊するには ツルハシを 強化する必要が あるようだ。" #!String
+    ResourceClump.cs.13964: "結構 硬そうだけど… とても強力な ツルハシなら 壊せそうかな？" #!String
+    TreeFertilizer1: "成熟済み" #!String
+    TreeFertilizer2: "肥よく済み" #!String
+    Axe.cs.14023: "町の条例により… あなたは 牧場にある 木のみ 伐採できます。" #!String
+    FishingRod.cs.14068: "伝説級の 魚を 1匹 つりあげました！" #!String
+    FishingRod.cs.14069: "新記録！" #!String
+    FishingRod.cs.14082: "長さ：" #!String
+    FishingRod.cs.14083: "{0}センチ" #!String
+    FishingRod.cs.14085: "釣りエサを 使い切りました。" #!String
+    FishingRod.cs.14086: "釣具が 壊れました。" #!String
+    FishingRod.cs.14100: "失われた本を 見つけました。 図書館が 拡張されました。" #!String
+    MeleeWeapon.cs.14122: "レインボージェムが あなたの 目前で 姿を変えた！ 凄まじい 力を 感じる。^^ =ギャラクシーソード= を手に入れた^" #!String
+    MeleeWeapon.cs.14132: "{0} - {1} ダメージ" #!String
+    MeleeWeapon.cs.14134: "{0}{1}速度" #!String
+    MeleeWeapon.cs.14136: "+{0} リーチ" #!String
+    MeleeWeapon.cs.14138: "+{0} 精度" #!String
+    MeleeWeapon.cs.14140: "+{0} 防御" #!String
+    MeleeWeapon.cs.14142: "+{0} クリティカル率" #!String
+    MeleeWeapon.cs.14144: "+{0} クリティカル威力" #!String
+    MilkPail.cs.14175: "{0} は ミルクは 生産しません。" #!String
+    MilkPail.cs.14176: "{0} は ミルクを 産出するには 若すぎます。" #!String
+    MilkPail.cs.14177: "{0} から 今は ミルクを 取れません。" #!String
+    Pickaxe.cs.14194: "これを 破壊するには ツルハシを 強化する 必要が あります。" #!String
+    Raft.cs.14204: "いかだ" #!String
+    Raft.cs.14205: "海へ 出るには 向かないでしょう。" #!String
+    Shears.cs.14245: "{0} は ウールを 産出しません。" #!String
+    Shears.cs.14246: "{0} は 刈り取るには 若すぎます。" #!String
+    Shears.cs.14247: "{0} から まだ ウールを 取れません。" #!String
+    Slingshot.cs.14254: "弾切れ" #!String
+    Slingshot.cs.14256: "右クリックで{1}を{0}で使う" #!String
+    Slingshot.cs.14258: "右クリックで{0}を外す" #!String
+    Tool.cs.14303: "レベル{0}の{1}" #!String
+    Tool.cs.14304: "短剣" #!String
+    Tool.cs.14305: "クラブ" #!String
+    Tool.cs.14306: "剣" #!String
+    Tool.cs.14307: "どうぐ" #!String
+    Tool.cs.14317: "ありがとう。 出来るだけ早くに 作業しよう。 数日で 準備が できるはずだ。" #!String
+    WateringCan_enchant: "この水差しさえあれば、水に困ることはないだろう" #!String
+    WateringCan.cs.14335: "水切れ" #!String
+    Language.1: "英語" #!String
+    Language.2: "ドイツ語" #!String
+    Language.3: "ロシア語" #!String
+    Language.4: "日本語" #!String
+    Language.5: "中国語" #!String
+    Language.6: "ポルトガル語" #!String
+    Language.7: "タイ語" #!String
+    Language.8: "スペイン語" #!String
+    RandomSentence.1: "紫のドラゴンがロボットと踊りました" #!String
+    RandomSentence.2: "城のてっぺんでネバネバのビュッフェが話しました" #!String
+    RandomSentence.3: "惑星の上でチョークみたいなビスケットが割れました" #!String
+    RandomSentence.4: "チーズと一緒にピーマンがグリルしました" #!String
+    RandomSentence.5: "分厚いレインコートが靴の近くで危険なほどににおいを嗅ぎました" #!String
+    RandomSentence.6: "巨大な潜水艦が人魚の近くで居心地が悪そうに浮かびました" #!String
+    RandomSentence.7: "脂ぎったハイエナがもう一匹のハイエナの至近距離に立ちました" #!String
+    RandomSentence.8: "陰気なエルフが墓の上で踊りました" #!String
+    RandomSentence.9: "ビスケットの上で堅い皮の唇がひび割れました" #!String
+    RandomSentence.10: "泥棒エルフが災害現場の近くで泳ぎました" #!String
+    RandomSentence.11: "勇気あるウズラがもう一羽のウズラから遠く離れた場所でグリルしました" #!String
+    RandomSentence.12: "理性的なハイエナが靴と話しました" #!String
+    RandomSentence.13: "実用的な潜水艦が人魚よりもずっと下で割れました" #!String
+    RandomSentence.14: "孤独なパペットが惑星から遠く離れたところまで走りました" #!String
+    Ring.cs.1: "指輪" #!String
+    Back: "Backspace" #!String
+    Tab: "タブ" #!String
+    Enter: "Enter" #!String
+    Pause: "一時停止" #!String
+    CapsLock: "CapsLock" #!String
+    Kana: "カナ" #!String
+    Kanji: "漢字" #!String
+    Escape: "Esc" #!String
+    ImeConvert: "ImeConvert" #!String
+    ImeNoConvert: "ImeNoConvert" #!String
+    Space: "Space" #!String
+    PageUp: "PageUp" #!String
+    PageDown: "PageDown" #!String
+    End: "End" #!String
+    Home: "ホーム" #!String
+    Left: "左" #!String
+    Up: "上" #!String
+    Right: "右" #!String
+    Down: "下" #!String
+    Select: "選択" #!String
+    Print: "印刷" #!String
+    Execute: "実行" #!String
+    Insert: "挿入" #!String
+    Delete: "削除" #!String
+    Help: "ヘルプ" #!String
+    PrintScreen: "PrintScreen" #!String
+    LeftWindows: "左 ウインドウズ" #!String
+    RightWindows: "右 ウインドウズ" #!String
+    Apps: "Apps" #!String
+    Sleep: "Sleep" #!String
+    Multiply: "掛ける" #!String
+    Add: "足す" #!String
+    Separator: "スラッシュ" #!String
+    Subtract: "引く" #!String
+    Decimal: "小数点" #!String
+    Divide: "割る" #!String
+    NumLock: "NumLock" #!String
+    Scroll: "スクロール" #!String
+    LeftShift: "左 Shift" #!String
+    RightShift: "右 Shift" #!String
+    LeftControl: "左 Control" #!String
+    RightControl: "右 Control" #!String
+    LeftAlt: "左 Alt" #!String
+    RightAlt: "右 Alt" #!String
+    BrowserBack: "ブラウザーの戻るボタン" #!String
+    BrowserForward: "ブラウザーの進むボタン" #!String
+    BrowserRefresh: "ブラウザーの更新" #!String
+    BrowserStop: "ブラウザーの中止" #!String
+    BrowserSearch: "ブラウザーの検索" #!String
+    BrowserFavorites: "ブラウザーのお気に入り" #!String
+    BrowserHome: "ブラウザーのホーム" #!String
+    VolumeMute: "音量をミュートする" #!String
+    VolumeDown: "音量を下げる" #!String
+    VolumeUp: "音量を上げる" #!String
+    MediaNextTrack: "MediaNextTrack" #!String
+    MediaPreviousTrack: "MediaPreviousTrack" #!String
+    MediaStop: "MediaStop" #!String
+    MediaPlayPause: "MediaPlayPause" #!String
+    LaunchMail: "LaunchMail" #!String
+    SelectMedia: "SelectMedia" #!String
+    LaunchApplication1: "LaunchApplication1" #!String
+    LaunchApplication2: "LaunchApplication2" #!String
+    Semicolon: "セミコロン" #!String
+    Plus: "プラス" #!String
+    Comma: "コンマ" #!String
+    Minus: "マイナス" #!String
+    Period: "ピリオド" #!String
+    Question: "クエスチョン" #!String
+    Tilde: "チルダ" #!String
+    ChatPadGreen: "ChatPadGreen" #!String
+    ChatPadOrange: "ChatPadOrange" #!String
+    OpenBrackets: "オープン・ブラケット" #!String
+    Pipe: "パイプライン" #!String
+    CloseBrackets: "クローズ・ブラケット" #!String
+    Quotes: "クウォート" #!String
+    Backslash: "バックスラッシュ" #!String
+    ProcessKey: "ProcessKey" #!String
+    Copy: "Copy" #!String
+    Auto: "Auto" #!String
+    EnlW: "EnlW" #!String
+    Attn: "Attn" #!String
+    Crsel: "Crsel" #!String
+    Exsel: "Exsel" #!String
+    EraseEof: "EraseEof" #!String
+    Play: "再生" #!String
+    Zoom: "ズーム" #!String
+    Pa1: "Pa1" #!String
+    Clear: "Clear" #!String
+    Left-Click: "左クリック" #!String
+    Right-Click: "右クリック" #!String
+    NewReward: "新しい報酬！" #!String
+    OptionsPage.cs.11239: "コントローラー使用時にタイルマーカー表示" #!String
+    OptionsPage.cs.11239.ps4: "コントローラー使用時にタイルマーカー表示" #!String
+    OptionsPage.cs.11239.console: "コントローラー使用時にタイルマーカー表示" #!String
+    OptionsPage.cs.11275: "コントローラー振動" #!String
+    OptionsPage.cs.11275.ps4: "コントローラー振動" #!String
+    OptionsPage.cs.11275.console: "コントローラー振動" #!String
+    OptionsPage.cs.toolbarSwap: "シフト・ツールバー" #!String
+    ToolReady: "{0}の用意ができました。" #!String
+    ItemRecovery_Description: "アイテムを幾つか失いましたね？1つだけなら、無料で戻してあげますよ。慎重に選んでください。" #!String
+    ItemRecovery_Engaged: "わかりました。今夜あなたがなくした{0}を探してみます。メールボックスに明日の朝入れておきます。" #!String
+    ItemRecovery_Engaged_Stack: "わかりました。今夜あなたがなくした{0}を探してみます。メールボックスに明日の朝入れておきます。" #!String
+    Krobus_Engaged: "ヴォイド・ゴーストのペンダント！どうやって…見つけたのですか？$3#$b#ワーオ。$7#$b#@…はい。あなたがよければ、一緒に住ませていただきます。でも他の人には内緒でお願いします。#$b#数日後にあなたの家に伺います。いいですね？$h" #!String
+    Krobus_AfterWedding: "おはようございます、@さん…夜中にこっそり入りました。$l#$b#この新しい生活に慣れるまで、多少時間がかかるでしょう…下水道のものとは、とても違いますね。" #!String
+    TriedToMarryButKrobus: "同居人がいる状態で、誰かにプロポーズできません。" #!String
+    KrobusShopGone: "留守です。支払いは箱のなかに入れてください。 クロバス" #!String
+    SocialPage_Relationship_Housemate_Female: "(同居人)" #!String
+    SocialPage_Relationship_Housemate_Male: "(同居人)" #!String
+    MovieTheaterBoxOffice: "映画のチケットは、ここで購入しましょう！友達の分も買って、招待しましょう！" #!String
+    MovieTheaterConcessions0: "いらっしゃいませ！何かお探しですか？" #!String
+    MovieTheaterConcessions1: "映画のおともに、お菓子はいかがですか？" #!String
+    MovieTheaterConcessions2: "お連れの方、おなかをすかせてそうですね。ご期待に応えられるものが揃っています！" #!String
+    MovieTheaterConcessions3: "以前の仕事からのアップグレードです…" #!String
+    MovieTheaterConcessions4: "お連れの方、スナックが欲しそうですね。何でしょうか？" #!String
+    Cursed_Doll: "自業自得…これで私は解放された…ヒャッ、ヒャッ、ヒャッー！" #!String
+    sam_acoustic1: "ハッピー・ジュニモ・ショーのテーマ" #!String
+    sam_acoustic2: "サムのアコースティック・ヌードル" #!String
+    harveys_theme_jazz: "グレープフルーツ・スカイ(パスタ・プリマベーラ ミックス)" #!String
+    movie_classic: "ズズシティ・エクスプレスのテーマ" #!String
+    movie_nature: "スリリングな世界を探検" #!String
+    movie_wumbus: "ウンバスのテーマ" #!String
+    movietheater: "映画館" #!String
+    movietheaterafter: "映画館(閉館時間)" #!String
+    crane_game: "クレーンゲーム" #!String
+    crane_game_fast: "クレーンゲーム(キャッチ！)" #!String
+    junimokart: "ジュニモカート（タイトルテーマ）" #!String
+    junimokart_whalemusic: "ジュニモカート（宝石の海の巨人）" #!String
+    junimokart_mushroommusic: "ジュニモカート（グロウシュルームの洞窟）" #!String
+    junimokart_ghostmusic: "ジュニモカート（恐ろしいがレオン船）" #!String
+    junimokart_slimemusic: "ジュニモカート（スロンプストンプ）" #!String
+    SunRoom: "一人でリラックスティー" #!String
+    DesertTrader4_male: "ラクダはあなたが好きみたいです、旦那さん。それは確かにとても良い兆候ですね。" #!String
+    DesertTrader4_female: "ラクダはあなたが好きみたいです、お嬢さん。それは確かにとても良い兆候ですね。" #!String
+    DesertTrader3: "私の故郷ではあなたの硬貨は価値がないです...他に取引するものはありますか？" #!String
+    DesertTrader2: "取引のためのエキゾチックな商品！" #!String
+    DesertTrader1: "ようこそ、旅の人...取引に興味がありますか？" #!String
+    CustomizedBootItemName: "オーダーメイド{0}" #!String
+    Ostrich_Description: "成長したダチョウは、週に一度とても大きな卵を産みます。" #!String
+    Furniture_Outdoors: "屋外用家具" #!String
+    Furniture_Outdoors_Description: "外に置くことができます。" #!String
+    Furniture_Outdoors_Message: "屋外にしか設置できません。" #!String
+    Furniture_Decoration: "装飾品" #!String
+    Furniture_Decoration_Description: "飾りとして置くことができます。" #!String
+    Object.cs.13060_Fruit: "果物の木に近すぎます。" #!String
+    VolcanoShop0: "私達の言葉を話す人間？驚いたよ…" #!String
+    VolcanoShop1: "どうぞ、ゆっくり休んでくれ。ここにはモンスターはいない。" #!String
+    VolcanoShop2: "ここでは、もう何年も人間を見ていない…" #!String
+    VolcanoShop3: "ここに来るなんて、とても勇気があるんだな。どうぞ、品物を見ていってくれ。" #!String
+    VolcanoShop4: "この山は私の祖先たちの家だった。今の私達は、彼らが残した優れた文明の遺産で暮らしてる。" #!String
+    JukeboxRandomTrack: "ランダムにする" #!String
+    FishTank_Full: "この種類のアイテムを追加することはできません。" #!String
+    OptionsPage_UIScale: "UIの大きさ" #!String
+    NoSprinklers: "スプリンクラーはこの場所では使用できません。" #!String
+    MonsterMusk_BuffName: "モンスターの香り" #!String
+    MonsterMusk_BuffDescription: "あなたの香りがモンスターを引き寄せる。" #!String
+    Nauseous_BuffName: "吐き気" #!String
+    Nauseous_BuffDescription: "うーん...病気で何も食べられません" #!String
+    Nauseous_CantEat: "吐き気がして食べられません…" #!String
+    Darkness_BuffName: "闇" #!String
+    Darkness_BuffDescription: "視界が暗闇につつまれて、見えにくくなります" #!String
+    OnlyPlaceOnFarm: "農場だけに置くことができます。" #!String
+    OnlyPlaceTwo: "2つしか置くことができません。" #!String
+    MiniObelisk_NeedsPair: "2つ目のオベリスクが必要です。" #!String
+    MiniObelisk_NeedsSpace: "ワープポイントがふさがれています。" #!String
+    FarmComputer_Intro_Farm: "{0}農場の分析：" #!String
+    FarmComputer_Intro_NamedLocation: "{0}分析：" #!String
+    FarmComputer_Intro_Generic: "場所の分析：" #!String
+    FarmComputer_PiecesHay: "ほし草：{0}/{1}" #!String
+    FarmComputer_FarmCave: "農場の洞窟：{0}" #!String
+    FarmComputer_TotalCrops: "総作物：{0}" #!String
+    FarmComputer_CropsReadyForHarvest: "作物：{0}" #!String
+    FarmComputer_CropsReadyForHarvest_Greenhouse: "温室の作物：{0}" #!String
+    FarmComputer_TotalOpenHoeDirt: "開いた耕作地：{0}" #!String
+    FarmComputer_TotalForage: "飼料アイテム：{0}" #!String
+    FarmComputer_MachinesReady: "機械：{0}" #!String
+    FarmComputer_CropsUnwatered: "水を与えられていない作物：{0}" #!String
+    MustBePlacedInBarn: "家畜小屋に置く必要があります。" #!String
+    MapPage.cs.11108_newHours: "開店時間は午前8時から午後5時" #!String
+    TV_Fishing_Channel: "釣り情報" #!String
+    Fishing_Channel_Intro: "釣り情報放送サービス「F.I.B.S.」を聞いてくれてありがとう。あんまりいい名前じゃないけど、今シーズンの選りすぐりの釣り情報を紹介していくから安心してくれ。" #!String
+    TV_Fishing_Channel_sunny: "晴れの日" #!String
+    TV_Fishing_Channel_rainy: "雨の日" #!String
+    TV_Fishing_Channel_River: "川" #!String
+    TV_Fishing_Channel_Lake: "湖" #!String
+    TV_Fishing_Channel_Ocean: "海" #!String
+    bonemill_5: "5つの破片が必要です。" #!String
+    NewLostAndFoundItems: "いくつかのアイテムが落とし物箱に入りました。" #!String
+    IslandTrader4_male: "ワタシと交換しよう、ブラザー…" #!String
+    IslandTrader4_female: "ワタシと交換しよう、シスター…" #!String
+    IslandTrader3: "チープ！チープ！" #!String
+    IslandTrader2: "コイン？いらないよ…トレード！" #!String
+    IslandTrader1: "アイテムを交換しよう…いい取引だ！" #!String
+    IslandMusic: "ジンジャーアイランド" #!String
+    fieldOfficeTentMusic: "スネイル教授のラジオ" #!String
+    VolcanoMines1: "火山の鉱山（溶けたゼリー）" #!String
+    VolcanoMines2: "火山の鉱山（忘れ去られた世界）" #!String
+    caldera: "カルデラの謎" #!String
+    FrogCave: "食いしん坊の洞窟" #!String
+    sad_kid: "レオの歌" #!String
+    PIRATE_THEME: "海賊のテーマ" #!String
+    PIRATE_THEME_MUFFLED: "海賊のテーマ（はっきり聞こえない）" #!String
+    HorseFlute: "馬のフルート" #!String
+    KeyToTheTown: "町への鍵" #!String
+    KeyToTheTown_desc: "一日中いつでも、町のすべての建物に入ることができる。" #!String
+    IslandName: "ジンジャーアイランド" #!String
+    Debuff_Weakness: "欠点" #!String
+    Deconstructor_fail: "このアイテムはスクラップにできません。" #!String
+    HorseFlute_NoHorse: "あなたは馬を持っていません。" #!String
+    HorseFlute_InvalidLocation: "ここでは馬を呼び寄せることはできません。" #!String
+    HorseFlute_NoClearance: "馬を呼び寄せるためにはスペースが足りません。" #!String
+    TV_IslandWeatherIntro: "…そしてフェーン諸島地域の特別予報です： " #!String
+    Seasoning_UsedLast: "Qi調味料を使い切りました。" #!String
+    Fresh_Prefix: "フレッシュな{0}" #!String
+    BiteChime: "魚がエサにつく音" #!String
+    BiteChime_Default: "デフォルト" #!String
+    IslandTraderSecret: "ねえ！君のための、季節の最終日のスペシャルトレードだよ！光る緑色ののべ棒を持ってきてよ。" #!String
+    HorseFlute_InUse: "乗っている馬を呼び寄せることはできません。" #!String
+    Buff_Ravioli_Title: "イカスミのラビオリ" #!String
+    Buff_Ravioli_Description: "あなたは能力低下に免疫があります。" #!String
+    Options_ToggleAnimalSounds: "動物の音をミュート" #!String
+    Furniture_NotOutdoors: "この家具は屋外には置けません。" #!String
+    EndCredits_SongName: "スターデューバレーは永遠に" #!String
+    RenovationBlocked: "改修エリアからすべてのアイテムを削除します。" #!String
+    Quest_FinalDay: "最終日" #!String
+    Attack_Miss: "ミス" #!String
+

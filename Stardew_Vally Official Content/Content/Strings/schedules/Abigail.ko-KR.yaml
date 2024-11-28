@@ -1,0 +1,29 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Sun.000: "여기 숨어있으면 사람들이랑 얘기 안 해도 돼서 여기 있는 거야." #!String
+    marriage_Mon.002: "으... 아직도 혼자서는 못 깨겠어.$s" #!String
+    spring_4.000: "으... 오늘 병원에 검진받으러 가야 해.$s" #!String
+    marriage_Fri.001: "다들 오랜만에 다시 보니 반갑네. 특별히 변한건 없나 봐.$h" #!String
+    spring_4.002: "얼마나 더 오래 걸리죠 선생님? 나 배고픈데.$s" #!String
+    marriage_Mon.001: "안녕, @. 여기서 쉬는 건 정말 좋아... 너무 평화로워." #!String
+    marriage_Fri.000: "@, 안녕? 엄마랑 잠깐 얘기하려고." #!String
+    marriage_Mon.000: "나 없어도 아빠는 잘 지내는 것 같네." #!String
+    winter_15.000: "이거 너무 신기하네... 완전 마음에 들어!" #!String
+    spring_4.001: "올해 정기검진받으러 온 것뿐이야! 걱정하지 마, 나 임... 아니, 나 안 아파! 헤헤.$9" #!String
+

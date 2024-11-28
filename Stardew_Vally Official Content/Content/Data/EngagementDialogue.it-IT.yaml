@@ -1,0 +1,45 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Maru0: "Sono davvero eccitata.$h#$b#Diventerò tua moglie. Hehe.$l" #!String
+    Maru1: "Devo prepararmi mentalmente alla vita da fattoressa." #!String
+    Leah0: "...$l#$e#Sono un po' nervosa. Ma felice.$h" #!String
+    Leah1: "Ho sempre sognato di vivere in una fattoria.$h#$e#Sarò così felice." #!String
+    Haley0: "Sono così felice!$h#$e#È proprio come ho sempre sognato.$l" #!String
+    Haley1: "Non importa. So che non possiamo andare in luna di miele, hai la fattoria a cui badare.#$e#Anch'io sono una fattoressa, adesso!" #!String
+    Penny0: "@.. Ho un po' paura. È un cambiamento così grande!#$e#Non preoccuparti, sono anche tanto felice.$h" #!String
+    Penny1: "Presto saremo una piccola famiglia campagnola.$l#$e#Sono così felice che tu provi questo per me.$h" #!String
+    Abigail0: "Hehe. Io? Sposarmi? Non credevo sarebbe mai successo.$h#$e#Ci divertiremo un mondo insieme.$h" #!String
+    Abigail1: "Mi sposerò e vivrò in una fattoria. Wow!$h#$e#Le nostre vite saranno diversissime d'ora in poi.$l" #!String
+    Sam0: "Sarò felicissimo di essere tuo marito, @.$l#$e#Non vedo l'ora." #!String
+    Sam1: "Non me lo sarei mai sognato. Che fortuna!$l#$e#Non resisto fino al matrimonio.$h" #!String
+    Sebastian0: "Tra un paio di giorni vivrò in una fattoria. Non ci credo.$h#$e#Sono felice, però.$l" #!String
+    Sebastian1: "Al tuo arrivo in paese, non avrei mai pensato che ci saremmo sposati, un giorno.$l#$e#Strana la vita, eh?$h" #!String
+    Harvey0: "Oh santo cielo! Quante cose devo preparare prima del matrimonio! Sono nervoso.$l#$e#Mi calmerò dopo che ci saremo stabiliti alla fattoria.$h" #!String
+    Harvey1: "Sono felicissimo.$h#$e#Questo è da sempre il mio desiderio nascosto.$l" #!String
+    Elliott0: "La fattoria sarà un luogo incantevole dove scrivere. Attendo con ansia il momento.$h#$e#Saremo una magnifica coppia, noi due.$l" #!String
+    Elliott1: "Questa sarà una tal'avventura! Non sto nella pelle. E tu?$h#$e#Possiamo utilizzar il mio capanno come residenza estiva.$l" #!String
+    Alex0: "@, questa è la cosa più forte che poteva succedere.$l#$e#Non vedo l'ora.$h" #!String
+    Alex1: "Mi piacerà una cifra fare il contadino.$h" #!String
+    Shane0: "Parte di me si chiede se non sia tutto uno scherzo elaborato.#$e#Non riesco a credere che tu voglia davvero sposare uno come me." #!String
+    Shane1: "@... Mi gira la testa, e oggi non mi sono fatto neanche una birra." #!String
+    Emily0: "Ci credi che stiamo per convivere? Ho vissuto sempre e solo con i miei.#$e#È... eccitante." #!String
+    Emily1: "Ho sempre saputo che sarebbe successo qualcosa d'importante fra di noi... Solo non pensavo a questo!$h#$e#Anche il pappagallo è eccitato." #!String
+    Krobus0: "@... Temo che dovrà rimanere un segreto... Né la mia né la tua gente accetterebbero che viviamo insieme." #!String
+    Krobus1: "Lo sai che sarò una persona molto strana con cui vivere, sì? Non potrò mai uscire di casa..." #!String
+

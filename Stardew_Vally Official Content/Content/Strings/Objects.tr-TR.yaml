@@ -1,0 +1,1548 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    AncientFruitPot: "Kökleri derinlere uzanır... burada mutlu olamaz." #!String
+    CactusSeedsOutside: "Sadece iç mekânlara veya Zencefil Adası'na ekilebilir." #!String
+    CaskNoCellar: "Sadece kilerde kullanılabilir." #!String
+    DarkTalisman: "Kara Tılsım" #!String
+    MagicInk: "Büyülü Mürekkep" #!String
+    MagnifyingGlass: "Büyüteç" #!String
+    BearPaw: "Ayı'nın Bilgeliği" #!String
+    SpringOnionBugs: "Yeşil Soğan Ustalığı" #!String
+    SpecialCharm: "Özel Efsun" #!String
+    CatalogueDescription: "Eve uygun tüm duvar kağıtları ve zeminlere sınırsız erişim sağlar!" #!String
+    FurnitureCatalogueDescription: "Eve uygun neredeyse her mobilyaya sınırsız erişim sağlar!" #!String
+    DarkTalismanDescription: "{0} bulundu! Balçıkla ile kaplanmış..." #!String
+    MagicInkDescription: "Büyücüye ait {0} bulundu! Ona geri verilse iyi olur." #!String
+    MagnifyingGlassDescription: "{0} alındı! Artık 'Gizli Not' bulma yeteneğine sahipsin. Bu notlar ender ve yararlı bilgileri ortaya çıkarır. Koleksiyon sekmesinden incelenebilirler." #!String
+    SpecialCharmDescription: "{0} alındı! Kişinin çevresinde şans ortamı (şans kalıcı olarak artar) oluşturur!" #!String
+    ParsnipSeedPackage_SomeoneElse: "Bu paket başkasına ait." #!String
+    Machine_NeedsInputCount: "{0} parça gerekir." #!String
+    CraftingRecipe_IronBar: "Demir Külçesi" #!String
+    CraftingRecipe_GoldBar: "Altın Külçesi" #!String
+    CraftingRecipe_SpringSeeds: "Yabani Tohumlar (Bahar)" #!String
+    CraftingRecipe_SummerSeeds: "Yabani Tohumlar (Yaz)" #!String
+    CraftingRecipe_FallSeeds: "Yabani Tohumlar (Güz)" #!String
+    CraftingRecipe_WinterSeeds: "Yabani Tohumlar (Kış)" #!String
+    Acorn_Name: "Meşe Palamudu" #!String
+    Acorn_Description: "Palamut ağacı yetiştirmek için ekilir." #!String
+    AdvancedTVRemote_Name: "Gelişmiş Kumanda" #!String
+    AdvancedTVRemote_Description: "Sıradan bir kumandadan daha fazla tuşu var. Hevesli seyircilerin olmazsa olmazıdır!" #!String
+    Aerinite_Name: "Ayerinit" #!String
+    Aerinite_Description: "Bu kristal garip bir parıltıya sahiptir." #!String
+    AgedRoe_Name: "Olgun Balık Yumurtası" #!String
+    AgedRoe_Description: "Tatlanması için tuzlu suda bekletilip olgunlaşan yumurta." #!String
+    AgedRoe_Flavored_Name: "Olgun {0} Yumurtası" #!String
+    Alamite_Name: "Alamit" #!String
+    Alamite_Description: "Farklı ışınımı nedeniyle taş koleksiyoncularının en sevdikleri arasında yer alır." #!String
+    Albacore_Name: "Orkinoz" #!String
+    Albacore_Description: "Sıcak ve soğuk suyun karşılaştığı ısı \"eşiklerini\" tercih eder." #!String
+    AlgaeSoup_Name: "Su Yosunu Çorbası" #!String
+    AlgaeSoup_Description: "Biraz iğrenç görünüyor." #!String
+    Amaranth_Name: "Horozibiği" #!String
+    Amaranth_Description: "Eski bir uygarlığın yetiştirdiği mor tahıl." #!String
+    AmaranthSeeds_Name: "Horozibiği Tohumu" #!String
+    AmaranthSeeds_Description: "Güzde ekilir. 7 günde yetişir. Tırpanla hasat edilir." #!String
+    Amethyst_Name: "Ametist" #!String
+    Amethyst_Description: "Mor renkli kuvars." #!String
+    AmethystRing_Name: "Ametist Yüzük" #!String
+    AmethystRing_Description: "Karşı saldırı hasarını %10 artırır." #!String
+    AmethystStone_Name: "Ametist Taşı" #!String
+    AmethystStone_Description: "Ametist elde etmek için kır." #!String
+    AmphibianFossil_Name: "Amfibi Fosili" #!String
+    AmphibianFossil_Description: "Nispeten kısa olan arka bacakları bir çeşit ilkel kurbağa olduğunu gösteriyor." #!String
+    Anchor_Name: "Çapa" #!String
+    Anchor_Description: "Eski zamanların korsanlarına ait olabilir." #!String
+    Anchovy_Name: "Hamsi" #!String
+    Anchovy_Description: "Denizde bulunan küçük, gümüş rengi bir balık türü." #!String
+    AncientDoll_Name: "Eski Bebek" #!String
+    AncientDoll_Description: "Kirle kaplı eski bir bebek. Bu bebek, oyuncak, süs ya da bir çeşit tören eşyası olarak kullanılmış olabilir." #!String
+    AncientDrum_Name: "Eski Davul" #!String
+    AncientDrum_Description: "Ahşap ve hayvan derisinden yapulmış bir davul. Düşük, yankılanan bir ses çıkartır." #!String
+    AncientFruit_Name: "Eski Meyve" #!String
+    AncientFruit_Description: "Sonsuzluk uykusuna yatmış." #!String
+    AncientSeed_Name: "Eski Tohum" #!String
+    AncientSeed_Description: "Eski bir bitkinin kurumuş tohumu. Görünüşe bakılırsa uzun zaman önce bozulmuş..." #!String
+    AncientSeeds_Name: "Eski Tohumlar" #!String
+    AncientSeeds_Description: "Bu şeyler hâlâ yetişebiliyor mu?" #!String
+    AncientSword_Name: "Eski Kılıç" #!String
+    AncientSword_Description: "Eski bir kılıcın kalıntısı. Kılıcın çoğu kısmı paslanmış, kabzası ise incelikle tasarlanmış." #!String
+    Angler_Name: "Fenerbalığı" #!String
+    Angler_Description: "Avını çekmek için ürettiği ışığı saçar." #!String
+    Apple_Name: "Elma" #!String
+    Apple_Description: "Suyu ve şarabı yapılabilen kıtır meyve." #!String
+    AppleSapling_Name: "Elma Fidanı" #!String
+    AppleSapling_Description: "Elmanın olgunlaşması 28 gün sürer. Güzde meyve verir. Yalnızca bitişiğindeki 8 \"kare\" boşken yetişir." #!String
+    Apricot_Name: "Kayısı" #!String
+    Apricot_Description: "Kaya gibi sert çukuru olan ama kolay incinen küçük bir meyve." #!String
+    ApricotSapling_Name: "Kayısı Fidanı" #!String
+    ApricotSapling_Description: "Kayısının olgunlaşması 28 gün sürer. Baharda meyve verir. Yalnızca bitişiğindeki 8 \"kare\" boşken yetişir." #!String
+    Aquamarine_Name: "Gök Zümrütü" #!String
+    Aquamarine_Description: "Parıltılı mavi yeşil bir taş." #!String
+    AquamarineRing_Name: "Gök Zümrütü Yüzük" #!String
+    AquamarineRing_Description: "Kritik hasar verme olasılığını %10 artırır." #!String
+    AquamarineStone_Name: "Gök Zümrütü Taş" #!String
+    AquamarineStone_Description: "Gök zümrütü elde etmek için kır." #!String
+    ArcticShard_Name: "Buzul Parçacığı" #!String
+    ArcticShard_Description: "Dünya dışı mavi bir ışık yayan parçacık." #!String
+    Arrowhead_Name: "Okbaşı" #!String
+    Arrowhead_Description: "Avlanmada kullanılan eski moda okbaşı." #!String
+    Artichoke_Name: "Enginar" #!String
+    Artichoke_Description: "Devedikeni bitkisinin tomurcuğu. Dikenli dış yaprakları dolu iç kısmını gizler." #!String
+    ArtichokeDip_Name: "Enginar Ezmesi" #!String
+    ArtichokeDip_Description: "Soğuk ve ferahlatıcı." #!String
+    ArtichokeSeeds_Name: "Enginar Tohumu" #!String
+    ArtichokeSeeds_Description: "Güzde ekilir. 8 günde yetişir." #!String
+    ArtifactSpot_Name: "Eser" #!String
+    ArtifactSpot_Description: "Şey... bu envanterine nasıl girmiş?" #!String
+    ArtifactTrove_Name: "Define" #!String
+    ArtifactTrove_Description: "Demircinin açabileceği define. Bu defineler genelde eski eserleri barındırır." #!String
+    AutumnsBounty_Name: "Güz Armağanı" #!String
+    AutumnsBounty_Description: "Tadı aynı adını aldığı mevsim gibi." #!String
+    Bait_Name: "Yem" #!String
+    Bait_Description: "Balıkların daha çabuk yakalanmasını sağlar. Öncelikle oltaya takılmalıdır." #!String
+    BakedFish_Name: "Fırında Balık" #!String
+    BakedFish_Description: "Fırına atılıp sebzelerin üzerine yerleştirilen balık." #!String
+    Banana_Name: "Muz" #!String
+    Banana_Description: "Tatlı ama sert bir tropik meyve." #!String
+    BananaPudding_Name: "Muzlu Muhallebi" #!String
+    BananaPudding_Description: "İnanılmaz bir tropik tada sahip muhallebi tatlısı." #!String
+    BananaSapling_Name: "Muz Fidanı" #!String
+    BananaSapling_Description: "Muzun olgunlaşması 28 gün sürer. Zencefil Adası'na dikildiğinde yıl boyunca, öteki türlü sadece yazın meyve verir." #!String
+    BarbedHook_Name: "Kanca" #!String
+    BarbedHook_Description: "\"Yakalama çubuğunun\" ava tutunmasını sağlayarak balığı avlama olasılığını artırır. En iyi yavaş ve zayıf balıklarda işe yarar." #!String
+    Baryte_Name: "Barit" #!String
+    Baryte_Description: "En iyi örnekleri çöl gülünü andırır." #!String
+    Basalt_Name: "Bazalt" #!String
+    Basalt_Description: "Magmanın yüzeyi yaktığı noktalarda oluşur." #!String
+    BasicFertilizer_Name: "Sıradan Gübre" #!String
+    BasicFertilizer_Description: "Toprağın kalitesini ve kaliteli ekin yetişme olasılığını birazcık artırır. Sürülmüş toprağa karıştırılır." #!String
+    BasicRetainingSoil_Name: "Sıradan Tutucu Toprak" #!String
+    BasicRetainingSoil_Description: "Az da olsa, bu toprağın geceleyin ıslak kalma olasılığı vardır. Sürülmüş toprağa karıştırılır." #!String
+    BatteryPack_Name: "Pil" #!String
+    BatteryPack_Description: "Değerli enerjisiyle doludur." #!String
+    BatWing_Name: "Yarasa Kanadı" #!String
+    BatWing_Description: "Şaşırtıcı derecede narin bir cisim." #!String
+    BeanHotpot_Name: "Fasulye Yahnisi" #!String
+    BeanHotpot_Description: "Kesinlikle sağlıklı bir yemek." #!String
+    BeanStarter_Name: "Fasulye Yetiştirici" #!String
+    BeanStarter_Description: "Baharda ekilir. 10 günde yetişir ve sonrasında yetişmeye devam eder. Sırıkta yetişir." #!String
+    Beer_Name: "Bira" #!String
+    Beer_Description: "Kararında içilmeli." #!String
+    Beet_Name: "Pancar" #!String
+    Beet_Description: "Tatlı bir kök sebze. Ek olarak, yaprakları salata yapımında kullanılır." #!String
+    BeetSeeds_Name: "Pancar Tohumu" #!String
+    BeetSeeds_Description: "Güzde ekilir. 6 günde yetişir." #!String
+    BerryBasket_Name: "Böğürtlen Sepeti" #!String
+    BerryBasket_Description: "Lifleri böğürtlenin suyuyla lekelenmiş." #!String
+    Bixite_Name: "Biksit" #!String
+    Bixite_Description: "Küpe benzeyen görünüşü ile bilinen koyu metalik maden." #!String
+    Blackberry_Name: "Böğürtlen" #!String
+    Blackberry_Description: "Güzün ilk meyvelerinden biri." #!String
+    BlackberryCobbler_Name: "Böğürtlen Kobler" #!String
+    BlackberryCobbler_Description: "Bunun gibisini pek bulamazsınız." #!String
+    Blobfish_Name: "Lekebalığı" #!String
+    Blobfish_Description: "Bu ilginç yaratık deniz tabanının üstünde yüzer ve yoluna çıkıp yenilebilen her şeyi tüketir." #!String
+    Blueberry_Name: "Yaban Mersini" #!String
+    Blueberry_Description: "Pek çok yararı olduğu belirtilen ünlü bir meyve. Mavi kabuğu en fazla besin değerine sahip kısmıdır." #!String
+    BlueberrySeeds_Name: "Yaban Mersini Tohumu" #!String
+    BlueberrySeeds_Description: "Yazın ekilir. 13 günde yetişir ve ilk hasattan sonra yetişmeye devam eder." #!String
+    BlueberryTart_Name: "Yaban Mersinli Turta" #!String
+    BlueberryTart_Description: "Hoş ve canlandırıcı." #!String
+    BlueDiscus_Name: "Mavi Diskus" #!String
+    BlueDiscus_Description: "Akvaryumda tercih edilen parlak renklere sahip tropik bir balık." #!String
+    BlueGrassStarter_Name: "Mavi Çimen Yetiştirici" #!String
+    BlueGrassStarter_Description: "Bunları çiftliğine yerleştir ve bir miktar mavi çimen ek." #!String
+    BlueJazz_Name: "Maviruh" #!String
+    BlueJazz_Description: "Bu çiçek çekebildiği kadar kelebek çekmek için bir kürenin içinde büyür." #!String
+    BlueSlimeEgg_Name: "Mavi Balçıkça Yumurtası" #!String
+    BlueSlimeEgg_Description: "Balçıkça kuluçka makinesinde çatlatılabilir." #!String
+    BokChoy_Name: "Çin Lahanası" #!String
+    BokChoy_Description: "Yapraklı yeşillik kısmı ve lifli sapı sağlıklı ve lezzetlidir." #!String
+    BokChoySeeds_Name: "Çin Lahanası Tohumu" #!String
+    BokChoySeeds_Description: "Güzde ekilir. 4 günde yetişir." #!String
+    Bomb_Name: "Bomba" #!String
+    Bomb_Description: "Patlamaya neden olur. Dikkatli ol!" #!String
+    BoneFlute_Name: "Kemik Kaval" #!String
+    BoneFlute_Description: "Bir hayvanın kemiklerinden oyulan tarih öncesinden kalma nefesli çalgı. Ürkütücü bir ses çıkartır." #!String
+    BoneFragment_Name: "Kemik Parçası" #!String
+    BoneFragment_Description: "Küçük bir kemik parçası." #!String
+    Book_AnimalCatalogue_Name: "Hayvan Kataloğu" #!String
+    Book_AnimalCatalogue_Description: "Marnie yerinde değilken dükkana erişimin olur." #!String
+    Book_Artifact_Name: "Hazine Değerlendirme Rehberi" #!String
+    Book_Artifact_Description: "Eserleri satarken daha iyi fiyat alırsınız." #!String
+    Book_Bombs_Name: "Cüce Dilinde Güvenlik El Kitabı" #!String
+    Book_Bombs_Description: "Bombalar sana %25 daha az hasar verir." #!String
+    Book_Crabbing_Name: "Yengeçleme Sanatı" #!String
+    Book_Crabbing_Description: "Yengeç Çömlekleri %25 ihtimalle iki kat getiri verir." #!String
+    Book_Defense_Name: "Önüne, Arkana, Her Yanına Bak" #!String
+    Book_Defense_Description: "+1 Savunma kazan." #!String
+    Book_Diamonds_Name: "Elmas Avcısı" #!String
+    Book_Diamonds_Description: "Elinle kazdığın taşlardan Elmas düşme ihtimali oluşur." #!String
+    Book_Friendship_Name: "Arkadaşlığa Giriş" #!String
+    Book_Friendship_Description: "İnsanlarla daha hızlı arkadaş olursun." #!String
+    Book_Marlon_Name: "Mağara Sistemlerini Haritalandırma" #!String
+    Book_Marlon_Description: "Marlon'ın Eşya Kurtarma Hizmeti %50 indirimli olur." #!String
+    Book_Mystery_Name: "Gizem Kitabı" #!String
+    Book_Mystery_Description: "Gizem Kutusu bulma şansın biraz artar." #!String
+    Book_PriceCatalogue_Name: "Fiyat Kataloğu" #!String
+    Book_PriceCatalogue_Description: "Artık eşyaların değerlerini görebilirsin." #!String
+    Book_QueenOfSauce_Name: "Soslar Kraliçesi Yemek Kitabı" #!String
+    Book_QueenOfSauce_Description: "Soslar Kraliçesi Yemek Kitabı'ndan daha önce bilmediğin bir tarif öğren." #!String
+    Book_Riding_Name: "At Kitabı" #!String
+    Book_Riding_Description: "At sürüşün bir tık daha hızlanır." #!String
+    Book_Roe_Name: "Denizin Mücevherleri" #!String
+    Book_Roe_Description: "Balıkçılık hazine sandıklarından havyar çıkabilir." #!String
+    Book_Speed_Name: "Rüzgarın Yolu, 1. Cilt" #!String
+    Book_Speed_Description: "Biraz daha hızlı koşarsın." #!String
+    Book_Speed2_Name: "Rüzgarın Yolu, 2. Cilt" #!String
+    Book_Speed2_Description: "Biraz daha hızlı koşarsın." #!String
+    Book_Trash_Name: "Ara Sokak Büfesi" #!String
+    Book_Trash_Description: "Çöpten eşya bulma olasılığı artar." #!String
+    Book_Void_Name: "Canavar Külliyatı" #!String
+    Book_Void_Description: "Canavarlardan eşya düşme olasılığı iki katına çıkar." #!String
+    Book_WildSeeds_Name: "Rakun Günlüğü" #!String
+    Book_WildSeeds_Description: "Yabani Otlardan Karışık Tohum elde etme şansı artar." #!String
+    Book_Woodcutting_Name: "Ağaçkakanların Sırrı" #!String
+    Book_Woodcutting_Description: "Devrilen ağaçlardan %5 ihtimalle iki kat odun düşer." #!String
+    Bouquet_Name: "Buket" #!String
+    Bouquet_Description: "Birinden hoşlandığını gösteren hediye." #!String
+    Bread_Name: "Ekmek" #!String
+    Bread_Description: "Gevrek baget ekmek." #!String
+    Bream_Name: "Mercanbalığı" #!String
+    Bream_Description: "Geceleri ortaya çıkan sıradan bir nehir balığı." #!String
+    BrickFloor_Name: "Tuğla Kaplama" #!String
+    BrickFloor_Description: "Yol oluşturmak ya da zemini şıklaştırmak için yere konulur." #!String
+    Broccoli_Name: "Brokoli" #!String
+    Broccoli_Description: "Brokoli bitkisinin çiçek açan başı. Küçük tomurcuklar, ona eşsiz bir doku verir." #!String
+    BroccoliSeeds_Name: "Brokoli Tohumu" #!String
+    BroccoliSeeds_Description: "Güzde ek. Olgunlaşması 8 gün sürer ve ilk hasattan sonra yetişmeye devam eder." #!String
+    BrokenCD_Name: "Bozuk CD" #!String
+    BrokenCD_Description: "JojaNet 2.0 deneme diski. Bunlardan milyarlar kazanmış olmalılar." #!String
+    BrokenGlasses_Name: "Kırık Gözlük" #!String
+    BrokenGlasses_Description: "Görünüşe göre birisi gözlüğünü kaybetmiş. Gözlük kırılmış." #!String
+    BrownEgg_Name: "Yumurta" #!String
+    BrownEgg_Description: "Sıradan, kahverengi bir tavuk yumurtası." #!String
+    Bruschetta_Name: "İtalyan Sandviçi" #!String
+    Bruschetta_Description: "Üzerine kavrulmuş domates sürülen gevrek beyaz ekmek." #!String
+    BugMeat_Name: "Böcek Eti" #!String
+    BugMeat_Description: "Topaklanmış sulu böcek eti." #!String
+    BugSteak_Name: "Böcek Bifteği" #!String
+    BugSteak_Description: "Aç mağara gezentisinin son çaresi" #!String
+    Bullhead_Name: "Yayınbalığı" #!String
+    Bullhead_Description: "Kedibalığının akrabası olan bu tür, göl diplerindeki çeşitli yiyeceklerle beslenir." #!String
+    BurglarsRing_Name: "Hırsız Yüzüğü" #!String
+    BurglarsRing_Description: "Yaratıkların nesne düşürme olasılığını artırır." #!String
+    ButterflyPowder_Name: "Kelebek Tozu" #!String
+    ButterflyPowder_Description: "Bir evcil hayvanın üzerine serperek onu çiftliğinden kaldır. Bu işlem geri alınamaz." #!String
+    CactusFruit_Name: "Kaktüs Meyvesi" #!String
+    CactusFruit_Description: "Dikenli kaynanadilinin tatlı meyvesi." #!String
+    CactusSeeds_Name: "Kaktüs Tohumu" #!String
+    CactusSeeds_Description: "Yalnızca evde yetişebilir. 12 günde yetişir ve ilk hasattan sonra 3 günde bir ürün verir." #!String
+    Calcite_Name: "Kalsit" #!String
+    Calcite_Description: "Bu sarı kristalin yüzeyi yanardöner yumrularla kaplıdır." #!String
+    CalicoEgg_Name: "Patisko Yumurtası" #!String
+    CalicoEgg_Description: "Çöl Şöleni'nde alınabilen eşsiz bir yumurta." #!String
+    CalicoEggStone_Name: "Patisko Yumurtası Taşı" #!String
+    CalicoEggStone_Description: "Patisko Yumurtası elde etmek için kır." #!String
+    CampingStove_Name: "Piknik Ocağı" #!String
+    CampingStove_Description: "İstenilen yerde yemek yapmayı sağlar. Birden çok kez kullanılabilir." #!String
+    Carp_Name: "Sazanbalığı" #!String
+    Carp_Description: "Alelade bir gölet balığı." #!String
+    CarpSurprise_Name: "Sazan Kızartma" #!String
+    CarpSurprise_Description: "Tatsız ve yağlı." #!String
+    Carrot_Name: "Havuç" #!String
+    Carrot_Description: "Hızlı büyüyen, renkli yumru bitki. Harika bir atıştırmalıktır." #!String
+    CarrotSeeds_Name: "Havuç Tohumu" #!String
+    CarrotSeeds_Description: "Baharda ek. Yetişmesi 3 gün sürer." #!String
+    Catfish_Name: "Kedibalığı" #!String
+    Catfish_Description: "Akıntılarda görülen az bulunur bir balık." #!String
+    Cauliflower_Name: "Karnabahar" #!String
+    Cauliflower_Description: "Yavaş büyüse de değerlidir. Soluk rengine rağmen çiçekleri besin maddeleriyle doludur." #!String
+    CauliflowerSeeds_Name: "Karnabahar Tohumu" #!String
+    CauliflowerSeeds_Description: "Baharda ekilir. 12 günde yetişir." #!String
+    CaveCarrot_Name: "Mağara Havucu" #!String
+    CaveCarrot_Description: "Mağaralarda bulunan katı bir atıştırmalık. Madencilerin daha uzun süre çalışmasını sağlar." #!String
+    CaveJelly_Name: "Mağara Jeli" #!String
+    CaveJelly_Description: "Yer altı göllerinde nadir bir jel bulundu." #!String
+    Caviar_Name: "Havyar" #!String
+    Caviar_Description: "Kürlenmiş mersinbalığı yumurtası. Zenginlik işareti olarak kabul edilir!" #!String
+    Celestine_Name: "Selestit" #!String
+    Celestine_Description: "Bazı erken yaşam biçimleri bu taştan yapılmış kemiklere sahipmiş." #!String
+    ChallengeBait_Name: "Meydan Okuma Yemi" #!String
+    ChallengeBait_Description: "'Mükemmel' bir yakalama, elde edilecek balığın üç katını verir. Ancak bir balık \"balıkçılık çubuğu\"ndan her kaçtığında, elde edilecek miktar azalır." #!String
+    Chanterelle_Name: "Horozmantarı" #!String
+    Chanterelle_Description: "Kokusu meyveleri, tadı ise biberi andıran lezzetli bir mantar." #!String
+    Cheese_Name: "Peynir" #!String
+    Cheese_Description: "Bildiğimiz peynir." #!String
+    CheeseCauliflower_Name: "Peynirli Karnabahar" #!String
+    CheeseCauliflower_Description: "Çok güzel kokuyor!" #!String
+    Cherry_Name: "Kiraz" #!String
+    Cherry_Description: "Çokça bilinen bu meyve, diğer meyvelerin çoğundan erken olgunlaşır." #!String
+    CherryBomb_Name: "Kiraz Bombası" #!String
+    CherryBomb_Description: "Minik bir patlamaya neden olur. Geride dur!" #!String
+    CherrySapling_Name: "Kiraz Fidanı" #!String
+    CherrySapling_Description: "Kirazın olgunlaşması 28 gün sürer. Baharda meyve verir. Yalnızca bitişiğindeki 8 \"kare\" boşken yetişir." #!String
+    ChewingStick_Name: "Çiğneme Çubuğu" #!String
+    ChewingStick_Description: "Eskiden insanlar dişlerini temizlemek için bu ve benzeri çubuklar çiğnermiş." #!String
+    ChickenStatue_Name: "Tavuk Heykelciği" #!String
+    ChickenStatue_Description: "Bronz altlıklı bir tavuk heykelciği. Eskiden bu bölgede yaşayanlar tavukları çok seviyormuş." #!String
+    ChippedAmphora_Name: "Kırılmış Küp" #!String
+    ChippedAmphora_Description: "Seramikten yapılma eski bir taşıma kabı. Kuru ve ıslak malları taşımada kullanılmış." #!String
+    ChocolateCake_Name: "Çikolatalı Pasta" #!String
+    ChocolateCake_Description: "Yoğun kremayla zenginleştirilmiş ve nemlendirilmiş." #!String
+    Chowder_Name: "Balık Türlüsü" #!String
+    Chowder_Description: "Soğuk geceleri suda geçirdikten sonra ısınmak harika olsa gerek." #!String
+    Chub_Name: "Kefal" #!String
+    Chub_Description: "Oburluğuyla bilinen yaygın tatlı su balığı." #!String
+    CinderShard_Name: "Köz Parçacığı" #!String
+    CinderShard_Description: "Yakınındakilere içindeki parıltının sıcaklığını hissettirir." #!String
+    CinderShardStone_Name: "Köz Parçacığı Taşı" #!String
+    CinderShardStone_Description: "Köz parçacığı elde etmek için kır." #!String
+    Clam_Name: "Deniz Tarağı" #!String
+    Clam_Description: "Bir zamanlar içinde yaşayan bir şey varmış." #!String
+    Clay_Name: "Kil" #!String
+    Clay_Description: "Nesne ve yapı oluşturmada kullanılır." #!String
+    ClayStone_Name: "Kil Taşı" #!String
+    ClayStone_Description: "Kil taşı elde etmek için kır." #!String
+    Cloth_Name: "Kumaş" #!String
+    Cloth_Description: "Bir top kaliteli yün kumaşı." #!String
+    Coal_Name: "Kömür" #!String
+    Coal_Description: "Nesne oluşturma ve eritmede kullanılan yanıcı bir kayaç." #!String
+    CobblestonePath_Name: "Kaldırım Taşı Yol" #!String
+    CobblestonePath_Description: "Yol oluşturmak ya da zemini şıklaştırmak için yere konulur." #!String
+    Cockle_Name: "Kum Midyesi" #!String
+    Cockle_Description: "Yaygın bulunan tuzlu su midyesi." #!String
+    Coconut_Name: "Hindistan Cevizi" #!String
+    Coconut_Description: "Hindistan cevizi ağacının tohumu. Birçok yemeğin yapımında kullanılır." #!String
+    Coffee_Name: "Kahve" #!String
+    Coffee_Description: "Harika kokuyor. İnsanı canlandıracağı kesin." #!String
+    CoffeeBean_Name: "Kahve Çekirdeği" #!String
+    CoffeeBean_Description: "Kahve ağacı yetiştirmek için baharda ya da yazın ekilir. Kahve yapmak için fıçıya beş çekirdek konulur." #!String
+    Coleslaw_Name: "Kırmızı Lahana Salatası" #!String
+    Coleslaw_Description: "Hafif, taze ve oldukça sağlıklı." #!String
+    CombinedRing_Name: "Karma Yüzük" #!String
+    CombinedRing_Description: "..." #!String
+    CommonMushroom_Name: "Mantar" #!String
+    CommonMushroom_Description: "Güzel görünen lezzetli bir mantar." #!String
+    CompleteBreakfast_Name: "Bütün Kahvaltı" #!String
+    CompleteBreakfast_Description: "İnsanı yüklenmeye hazır hale getirir!" #!String
+    ConcernedApeMask_Name: "???" #!String
+    ConcernedApeMask_Description: "???" #!String
+    Cookie_Name: "Kurabiyeler" #!String
+    Cookie_Description: "Ağız kaslarını çalıştırıyor." #!String
+    CookoutKit_Name: "Kamp Ocağı" #!String
+    CookoutKit_Description: "Evde değilken de yemek yapmayı sağlar!" #!String
+    CopperBar_Name: "Bakır Külçesi" #!String
+    CopperBar_Description: "Saf bakırdan yapılma külçe." #!String
+    CopperOre_Name: "Bakır Cevheri" #!String
+    CopperOre_Description: "Eritilerek külçe elde edilebilen yaygın bir cevher." #!String
+    CopperStone_Name: "Bakır Taşı" #!String
+    CopperStone_Description: "İçinde bakır cevheri bulunan bir taş." #!String
+    Coral_Name: "Mercan" #!String
+    Coral_Description: "Güzel yapılar oluşturmak için bir araya gelen küçük yaratıkların kurduğu küme." #!String
+    CorkBobber_Name: "Tapalı Mantar" #!String
+    CorkBobber_Description: "\"Yakalama çubuğunun\" boyutunu birazcık artırır." #!String
+    Corn_Name: "Mısır" #!String
+    Corn_Description: "En ünlü tahıllardan biridir. Tatlı ve taze koçanlar yaz mevsiminin en sevilenleri arasındadır." #!String
+    CornSeeds_Name: "Mısır Tohumu" #!String
+    CornSeeds_Description: "Yaz ve güz mevsimlerinde ekilir. 14 günde yetişir ve ilk hasattan sonra yetişmeye devam eder." #!String
+    Crab_Name: "Yengeç" #!String
+    Crab_Description: "İki güçlü kıskaca sahip olan deniz kabuklusu." #!String
+    CrabCakes_Name: "Yengeçli Kek" #!String
+    CrabCakes_Description: "Yengeç, ekmek kırıntıları ve yumurta karıştırılarak köfte haline getirilir, sonra da kızıl kahverengi bir hal alana kadar kızartılır." #!String
+    CrabPot_Name: "Yengeç Çömleği" #!String
+    CrabPot_Description: "Yemle doldurulup suya yerleştirilir ve ertesi gün kontrol edilir. Akıntılarda, göllerde ve denizde kullanılabilir." #!String
+    CrabshellRing_Name: "Yengeçkabuğu Yüzük" #!String
+    CrabshellRing_Description: "Yüzüğün dış kısmı büyülü yengeç kabuğundan yapılmıştır." #!String
+    Cranberries_Name: "Kızılcık" #!String
+    Cranberries_Description: "Bu sert meyveler kış mevsiminin geleneksel yiyecekleri arasındadır." #!String
+    CranberryCandy_Name: "Kızılcık Şekeri" #!String
+    CranberryCandy_Description: "Acı meyveyi unutturacak kadar tatlı." #!String
+    CranberrySauce_Name: "Kızılcık Sosu" #!String
+    CranberrySauce_Description: "Şölenlerde tatmalık." #!String
+    CranberrySeeds_Name: "Kızılcık Tohumu" #!String
+    CranberrySeeds_Description: "Güzde ekilir. 7 günde yetişir ve ilk hasattan sonra yetişmeye devam eder." #!String
+    Crayfish_Name: "Kerevit" #!String
+    Crayfish_Description: "Istakozun tatlı sularda yaşayan küçük akrabası." #!String
+    Crimsonfish_Name: "Kızılbalık" #!String
+    Crimsonfish_Description: "Denizlerin derinliklerinde yaşar. Yumurtalarını yazın ılık sularına bırakmayı sever." #!String
+    CrispyBass_Name: "Çıtır Levrek" #!String
+    CrispyBass_Description: "Vay be, kırıntılar harika." #!String
+    Crocus_Name: "Çiğdem" #!String
+    Crocus_Description: "Kışın açabilen bir çiçek." #!String
+    CrystalFloor_Name: "Kristal Kaplama" #!String
+    CrystalFloor_Description: "Yol oluşturmak ya da zemini şıklaştırmak için yere konulur." #!String
+    CrystalFruit_Name: "Kristal Meyve" #!String
+    CrystalFruit_Description: "Karda çıkan narin bir meyve." #!String
+    CrystalPath_Name: "Kristal Yol" #!String
+    CrystalPath_Description: "Yol oluşturmak ya da zemini şıklaştırmak için yere konulur." #!String
+    CuriosityLure_Name: "Cezbedici Yem" #!String
+    CuriosityLure_Description: "Ender görülen balıkları yakalama olasılığını artırır." #!String
+    Daffodil_Name: "Fulya" #!String
+    Daffodil_Description: "Hediye olarak sunulabilen bilindik bir bahar çiçeği." #!String
+    Dandelion_Name: "Kara Hindiba" #!String
+    Dandelion_Description: "En güzel çiçek değildir ama yapraklarından çok iyi salata yapılır." #!String
+    DecorativePot_Name: "Süslük" #!String
+    DecorativePot_Description: "Eski bir çömleğin kopyası." #!String
+    DeluxeBait_Name: "Lüks Yem" #!String
+    DeluxeBait_Description: "Balıklar daha çabuk yemi ısırır, ayrıca 'balıkçılık çubuğunun' boyutu artar." #!String
+    DeluxeFertilizer_Name: "Üstün Gübre" #!String
+    DeluxeFertilizer_Description: "Toprağın kalitesini ve kaliteli ekin yetişme olasılığını büyük oranda artırır. Sürülmüş toprağa karıştırılır." #!String
+    DeluxeRetainingSoil_Name: "Üstün Tutucu Toprak" #!String
+    DeluxeRetainingSoil_Description: "Bu toprağın geceleyin ıslak kalma olasılığı %100'dür. Sürülmüş toprağa karıştırılır." #!String
+    DeluxeSpeedGro_Name: "Üstün Hızlı-Ek" #!String
+    DeluxeSpeedGro_Description: "Ekin oluşumunu kamçılar. Yetişme hızını en az %25 artırır. Sürülmüş toprağa karıştırılır." #!String
+    Diamond_Name: "Elmas" #!String
+    Diamond_Description: "Nadir bulunan değerli bir taş." #!String
+    DiamondStone_Name: "Elmas Taşı" #!String
+    DiamondStone_Description: "Elmas elde etmek için kır." #!String
+    DinosaurEgg_Name: "Dinozor Yumurtası" #!String
+    DinosaurEgg_Description: "Dev bir dinozor yumurtası... Kabuğuna dokunulmamış bile!" #!String
+    DinosaurMayonnaise_Name: "Dinozor Mayonezi" #!String
+    DinosaurMayonnaise_Description: "Canlı yeşil rengiyle yoğun olmasına rağmen kremaya benzer. Kokusu ot ve deriyi andırır." #!String
+    DishOTheSea_Name: "Deniz Öğünü" #!String
+    DishOTheSea_Description: "Soğuk deniz havasında insanın içini ısıtır." #!String
+    Dolomite_Name: "Dolomit" #!String
+    Dolomite_Description: "Genellikle su altı volkanlarının yakınındaki mercan kayalıklarında bulunur." #!String
+    Dorado_Name: "Turuncubalık" #!String
+    Dorado_Description: "Parlak turuncu pulları olan öfkeli bir etobur." #!String
+    DragonTooth_Name: "Ejderdişi" #!String
+    DragonTooth_Description: "Bunların eski sürüngenlerin dişleri olduğu ve diş minelerinde saf iridyum bulunduğu söylenir." #!String
+    DressedSpinner_Name: "Süslü Yapay Yem" #!String
+    DressedSpinner_Description: "Metal ucu ve renkli şeritleri balıklar için cazip bir görüntü oluşturur. Balık yakalama oranını artırır." #!String
+    DriedFruit_Name: "Kurutulmuş" #!String
+    DriedFruit_Description: "Kurutulmuş {0} parçaları." #!String
+    DriedFruit_CollectionsTabDescription: "Kurutulmuş meyvelerin çiğnenebilir parçaları." #!String
+    DriedFruit_CollectionsTabName: "Kurutulmuş Meyve" #!String
+    DriedFruit_Flavored_Name: "Kurutulmuş {0}" #!String
+    DriedMushrooms_Name: "Kurutulmuş" #!String
+    DriedMushrooms_Description: "Bir gurme mantar paketi." #!String
+    DriedMushrooms_CollectionsTabDescription: "Gurme Mantar paketi." #!String
+    DriedMushrooms_CollectionsTabName: "Kurutulmuş Mantarlar" #!String
+    DriedStarfish_Name: "Kurumuş Denizyıldızı" #!String
+    DriedStarfish_Description: "İlk okyanustan kalma bir denizyıldızı. İlginç bir şekilde bu örnek saflığını korumuş!" #!String
+    Driftwood_Name: "Dal" #!String
+    Driftwood_Description: "Suların sürüklediği bir dal parçası." #!String
+    DrumBlock_Name: "Davul Düğmesi" #!String
+    DrumBlock_Description: "Yanından geçerken davul sesi çıkartır." #!String
+    DuckEgg_Name: "Ördek Yumurtası" #!String
+    DuckEgg_Description: "Hâlâ sıcacık." #!String
+    DuckFeather_Name: "Ördek Tüyü" #!String
+    DuckFeather_Description: "Rengarenk." #!String
+    DuckMayonnaise_Name: "Ördek Mayonezi" #!String
+    DuckMayonnaise_Description: "Sarı kıvamı öne çıkan mayonez." #!String
+    DwarfGadget_Name: "Cüce Aygıtı" #!String
+    DwarfGadget_Description: "Cücelerin sahip olduğu ileri teknolojinin bir örneği. Hâlâ parlıyor ve vırıldıyor, ancak nasıl çalıştığını anlamak mümkün değil." #!String
+    DwarfScrollI_Name: "I. Cüce Tomarı" #!String
+    DwarfScrollI_Description: "Cüce dilinde yazılmış yazılarla dolu sararmış bir tomar. Kırmızı ilmikle bağlanmış." #!String
+    DwarfScrollII_Name: "II. Cüce Tomarı" #!String
+    DwarfScrollII_Description: "Cüce dilinde yazılmış yazılarla dolu sararmış bir tomar. Yeşil kurdeleyle bağlanmış." #!String
+    DwarfScrollIII_Name: "III. Cüce Tomarı" #!String
+    DwarfScrollIII_Description: "Cüce dilinde yazılmış yazılarla dolu sararmış bir tomar. Mavi iplikle bağlanmış." #!String
+    DwarfScrollIV_Name: "IV. Cüce Tomarı" #!String
+    DwarfScrollIV_Description: "Cüce dilinde yazılmış yazılarla dolu sararmış bir tomar. Altın zincirle bağlanmış." #!String
+    DwarvishHelm_Name: "Cüce Miğferi" #!String
+    DwarvishHelm_Description: "Cücelerin yaygın olarak taktığı miğferlerden biri. Miğferin kalın metal zırhı takanı düşen molozlardan ve sarkıtlardan korur." #!String
+    DwarvishTranslationGuide_Name: "Cüce Dili Çeviri Rehberi" #!String
+    DwarvishTranslationGuide_Description: "Cüce dilini öğretir." #!String
+    EarthCrystal_Name: "Yüzey Kristali" #!String
+    EarthCrystal_Description: "Yüzeye yakın noktalarda bulunan reçineli bir madde." #!String
+    Ectoplasm_Name: "Dışkansıvı" #!String
+    Ectoplasm_Description: "Büyücü'nün bir nedenden ötürü istediği kalın sümüksü bir madde." #!String
+    Eel_Name: "Yılanbalığı" #!String
+    Eel_Description: "Uzun, kaygan ve küçük bir balık." #!String
+    Eggplant_Name: "Patlıcan" #!String
+    Eggplant_Description: "Bu zengin sebze domatesin besleyici bir akrabasıdır. Kızartıldığında ya da haşlandığında çok lezzetlidir." #!String
+    EggplantParmesan_Name: "Parmesanlı Patlıcan" #!String
+    EggplantParmesan_Description: "Ekşi, sıradan ve mükemmel." #!String
+    EggplantSeeds_Name: "Patlıcan Tohumu" #!String
+    EggplantSeeds_Description: "Güzde ekilir. 5 günde yetişir ve ilk hasattan sonra yetişmeye devam eder." #!String
+    ElvishJewelry_Name: "Elf Mücevheri" #!String
+    ElvishJewelry_Description: "Kirli olmasına rağmen fazlasıyla güzel. İç kısmında kadim elf dilinde yazıldığı düşünülen dökme bir yazı bulunuyor. Bugüne kadar hiç elf kemiği bulunamamış." #!String
+    Emerald_Name: "Zümrüt" #!String
+    Emerald_Description: "Parlak yeşil renginden tanınan değerli taş." #!String
+    EmeraldRing_Name: "Zümrüt Yüzük" #!String
+    EmeraldRing_Description: "Silah hızını %10 artırır." #!String
+    EmeraldStone_Name: "Zümrüt Taşı" #!String
+    EmeraldStone_Description: "Zümrüt elde etmek için kır." #!String
+    EnergyTonic_Name: "Uyarıcı" #!String
+    EnergyTonic_Description: "Epey bir enerji yeniler." #!String
+    Enricher_Name: "Gübreleyici" #!String
+    Enricher_Description: "Fıskiyeye yerleştirilip gübreyle doldurulduğunda çevredeki ekinleri otomatik olarak gübreler." #!String
+    Escargot_Name: "Kızarmış Salyangoz" #!String
+    Escargot_Description: "Tereyağıyla ıslatılmış salyangozlar pişirilince mükemmel bir hal alır." #!String
+    Esperite_Name: "Esperit" #!String
+    Esperite_Description: "Uyarıldığında kristallerin rengi açık yeşile döner." #!String
+    ExplosiveAmmo_Name: "Patlayıcı Mühimmat" #!String
+    ExplosiveAmmo_Description: "Sapanla fırlatılır." #!String
+    FairyDust_Name: "Peri Tozu" #!String
+    FairyDust_Description: "Fıçı, ocak ve diğer arıtım ekipmanlarına serpildiğinde üretimi anında tamamlar." #!String
+    FairyRose_Name: "Perigülü" #!String
+    FairyRose_Description: "Eski bir efsaneye göre bu çiçeğin hoş kokusu perileri cezbedermiş." #!String
+    FairySeeds_Name: "Perigülü Tohumu" #!String
+    FairySeeds_Description: "Güzde ekilir. Gizemli çiçeği 12 günde yetişir. Çeşit çeşit renktedir." #!String
+    FairyStone_Name: "Peritaşı" #!String
+    FairyStone_Description: "Eski bir madenci şarkısına göre eski zamanların perilerinin kemiklerinden oluşmuştur." #!String
+    FallSeeds_Name: "Güz Tohumları" #!String
+    FallSeeds_Description: "Çeşit çeşit yabani güz tohumu." #!String
+    FarAwayStone_Name: "Uzaklardan Gelme Taş" #!String
+    FarAwayStone_Description: "Bilinmeyen kökenli bir taş. Bir yere yerleştirilebilir gibi görünüyor." #!String
+    FarmersLunch_Name: "Çiftçi Öğünü" #!String
+    FarmersLunch_Description: "İnsanı ayakta tutmaya yeter." #!String
+    Fiber_Name: "Lif" #!String
+    Fiber_Description: "Bitkilerden elde edilen ham madde." #!String
+    FiberSeeds_Name: "Lif Tohumu" #!String
+    FiberSeeds_Description: "Her mevsim ekilir. Sulanması gerekmez. Tırpanla hasat edilir. 7 günde yetişir." #!String
+    FiddleheadFern_Name: "Eğrelti Otu" #!String
+    FiddleheadFern_Description: "Olmamış kısımları tam yemeliktir." #!String
+    FiddleheadRisotto_Name: "Eğrelti Otlu Pilav" #!String
+    FiddleheadRisotto_Description: "Sotelenmiş eğrelti otuyla birlikte sunulan lapa pilav. Birazcık yavan kalmış." #!String
+    FieldSnack_Name: "Saha Atıştırmalığı" #!String
+    FieldSnack_Description: "Toplayıcıların açlığını gidermek için yediği atıştırmalık." #!String
+    FireOpal_Name: "Kızıl Opal" #!String
+    FireOpal_Description: "Adını kırmızı beneklerinden alan nadir görülen opal türü." #!String
+    FireQuartz_Name: "Kızıl Kuvars" #!String
+    FireQuartz_Description: "Lavların etrafında yaygın olarak bulunan parlak kırmızı bir kristal." #!String
+    FireworksGreen_Name: "Yeşil Havaifişek" #!String
+    FireworksGreen_Description: "Eski bir kutlama ve şenlik geleneği. Dikkatli olunması önerilir!" #!String
+    FireworksPurple_Name: "Mor Havaifişek" #!String
+    FireworksPurple_Description: "Eski bir kutlama ve şenlik geleneği. Dikkatli olunması önerilir!" #!String
+    FireworksRed_Name: "Kırmızı Havaifişek" #!String
+    FireworksRed_Description: "Eski bir kutlama ve şenlik geleneği. Dikkatli olunması önerilir!" #!String
+    FishStew_Name: "Balık Buğulama" #!String
+    FishStew_Description: "Deniz gibi kokuyor. Gerçi tadı çok daha güzel." #!String
+    FishTaco_Name: "Balıklı Tako" #!String
+    FishTaco_Description: "Çok lezzetli görünüyor." #!String
+    Flounder_Name: "Yassıbalık" #!String
+    Flounder_Description: "En dipte yaşadığı için iki gözü de başının üzerindedir." #!String
+    Fluorapatite_Name: "Flüorapatit" #!String
+    Fluorapatite_Description: "İnsan dişinde çok az miktarda bulunur." #!String
+    FluteBlock_Name: "Kaval Düğmesi" #!String
+    FluteBlock_Description: "Yanından geçerken kaval sesi çıkartır." #!String
+    FossilizedLeg_Name: "Fosilleşmiş Bacak" #!String
+    FossilizedLeg_Description: "Kalın ve sağlam bir bacak kemiği." #!String
+    FossilizedRibs_Name: "Fosilleşmiş Kaburga" #!String
+    FossilizedRibs_Description: "Bir zamanlar büyük bir hayvana ait olan kaburga." #!String
+    FossilizedSkull_Name: "Fosilleşmiş Kafatası" #!String
+    FossilizedSkull_Description: "Mükemmel bir örnek!" #!String
+    FossilizedSpine_Name: "Fosilleşmiş Omurga" #!String
+    FossilizedSpine_Description: "İç içe geçmiş omurlardan oluşan bir yapı." #!String
+    FossilizedTail_Name: "Fosilleşmiş Kuyruk" #!String
+    FossilizedTail_Description: "Uç kısmında çomağa benzer bir şey bulunan bir kuyruk." #!String
+    FossilStone_Name: "Fosil Taşı" #!String
+    FossilStone_Description: "Fosil ve kemik elde etmek için kır." #!String
+    FriedCalamari_Name: "Kalamar Tava" #!String
+    FriedCalamari_Description: "Sakız gibi." #!String
+    FriedEel_Name: "Yılanbalığı Tava" #!String
+    FriedEel_Description: "Hem yağlı hem lezzetli." #!String
+    FriedEgg_Name: "Sahanda Yumurta" #!String
+    FriedEgg_Description: "Göze benzeyen yumurta." #!String
+    FriedMushroom_Name: "Mantar Kızartma" #!String
+    FriedMushroom_Description: "Dünyevi ve aromatik." #!String
+    FrozenGeode_Name: "Donuk Jeot" #!String
+    FrozenGeode_Description: "Demirci tarafından açılabilir." #!String
+    FrozenGeodeStone_Name: "Donuk Jeot Taşı" #!String
+    FrozenGeodeStone_Description: "Donuk jeot elde etmek için kır.." #!String
+    FrozenTear_Name: "Donmuş Gözyaşı" #!String
+    FrozenTear_Description: "Yeti'nin donmuş gözyaşı olduğu düşünülen kristal." #!String
+    FruitSalad_Name: "Meyve Salatası" #!String
+    FruitSalad_Description: "Yaz meyvelerinin bir araya gelmesiyle oluşan lezzet topluluğu!" #!String
+    GalaxySoul_Name: "Galaksi Ruhu" #!String
+    GalaxySoul_Description: "3 tanesi bir araya getirilip bir galaksi silahına döndürüldüğünde asıl haline ulaşır." #!String
+    Garlic_Name: "Sarımsak" #!String
+    Garlic_Description: "Yemekleri lezzetlendirir. Yüksek kaliteli sarımsaklar baharatlı olabilir." #!String
+    GarlicSeeds_Name: "Sarımsak Tohumu" #!String
+    GarlicSeeds_Description: "Baharda ekilir. 4 günde yetişir." #!String
+    Gate_Name: "Kapı" #!String
+    Gate_Description: "Çitten geçmeyi sağlar." #!String
+    Geminite_Name: "Geminit" #!String
+    Geminite_Description: "Parıldayan kümeler halinde bulunur." #!String
+    GemStone_Name: "Mücevher Taşı" #!String
+    GemStone_Description: "Taş, cevher veya jeot elde etmek için kır." #!String
+    Geode_Name: "Jeot" #!String
+    Geode_Description: "Demirci tarafından açılabilir." #!String
+    GeodeStone_Name: "Jeot Taşı" #!String
+    GeodeStone_Description: "Jeot elde etmek için kır." #!String
+    GhostCrystal_Name: "Hayalet Kristali" #!String
+    GhostCrystal_Description: "Bu kristal soğuk bir havaya sahiptir." #!String
+    Ghostfish_Name: "Hayaletbalığı" #!String
+    Ghostfish_Description: "Yer altı göllerinde bulunan soluk ve kör bir balık türü." #!String
+    Ginger_Name: "Zencefil" #!String
+    Ginger_Description: "İnsanı zinde tuttuğu söylenen keskin, baharatlı bir kök." #!String
+    GingerAle_Name: "Zencefilli Gazoz" #!String
+    GingerAle_Description: "Mide üzerindeki yatıştırıcı etkisiyle bilinen leziz bir gazoz." #!String
+    Glacierfish_Name: "Buzulbalık" #!String
+    Glacierfish_Description: "Yuvasını buzulların altına yapar." #!String
+    GlacierfishJr_Name: "Buzulbalığın Oğlu" #!String
+    GlacierfishJr_Description: "Buzulbalığın bir oğlu varmış..." #!String
+    GlassShards_Name: "Cam Parçaları" #!String
+    GlassShards_Description: "Yüzyıllar boyunca çarptığı dalgalar tarafından yumuşatılan cam parçaları. Eski bir mozaiğe ya da kolyeye ait olabilirler." #!String
+    GlazedYams_Name: "Soslanmış Tatlı Patates" #!String
+    GlazedYams_Description: "Tatlı ve doyurucu... İçindeki şeker karamel tadını andırıyor." #!String
+    GlowRing_Name: "Parıldayan Yüzük" #!String
+    GlowRing_Description: "Sürekli olarak ışık saçar." #!String
+    GlowstoneRing_Name: "Işıktaşı Yüzüğü" #!String
+    GlowstoneRing_Description: "Sürekli bir ışık yayar ve nesne toplama alanını artırır." #!String
+    GoatCheese_Name: "Keçi Peyniri" #!String
+    GoatCheese_Description: "Keçi sütünden yapılan yumuşak peynir." #!String
+    GoatMilk_Name: "Keçi Sütü" #!String
+    GoatMilk_Description: "Keçiden elde edilen süt." #!String
+    Goby_Name: "Taşbalığı" #!String
+    Goby_Description: "Bazı tür Taşbalıkları şelalelerden tırmanabilir." #!String
+    GoldBar_Name: "Altın Külçesi" #!String
+    GoldBar_Description: "Saf altından yapılma külçe." #!String
+    GoldCoin_Name: "Altın Para" #!String
+    GoldCoin_Description: "1 Altın para." #!String
+    GoldenAnimalCracker_Name: "Altın Hayvan Krakeri" #!String
+    GoldenAnimalCracker_Description: "İki kat getiri elde etmek için bunu bir çiftlik hayvanına ver. Domuzlarda işe yaramaz." #!String
+    GoldenBobber_Name: "Altın Mantar" #!String
+    GoldenBobber_Description: "Willy bunu arıyor." #!String
+    GoldenCoconut_Name: "Altın Hindistan Cevizi" #!String
+    GoldenCoconut_Description: "Bu sert cevizi ancak işini bilen bir varlık kırabilir." #!String
+    GoldenEgg_Name: "Altın Yumurta" #!String
+    GoldenEgg_Description: "Ender bulunan özel bir yumurta." #!String
+    GoldenMask_Name: "Altın Maske" #!String
+    GoldenMask_Description: "Muhtemelen kadim bir ayinde kullanılmış olan ürkütücü altın maske. Alın kısmındaki yuvada büyük mor bir taş bulunuyor." #!String
+    GoldenMysteryBox_Name: "Altın Gizem Kutusu" #!String
+    GoldenPumpkin_Name: "Altın Bal Kabağı" #!String
+    GoldenPumpkin_Description: "Değerli olsa da bir işe yaramaz." #!String
+    GoldenRelic_Name: "Altın Yazıt" #!String
+    GoldenRelic_Description: "Ön tarafı resim yazıları ve görsellerle süslenmiş altın levha." #!String
+    GoldenWalnut_Name: "Altın Ceviz" #!String
+    GoldenWalnut_Description: "Zencefil Adası'nın papağanları bu cevizin tadına bayılır." #!String
+    GoldOre_Name: "Altın Cevheri" #!String
+    GoldOre_Description: "Eritilerek külçe elde edilebilen değerli bir cevher." #!String
+    GoldStone_Name: "Altın Taşı" #!String
+    GoldStone_Description: "Altın cevheri elde etmek için kır." #!String
+    GourmetTomatoSalt_Name: "Domates Tuzu" #!String
+    GourmetTomatoSalt_Description: "Nadir bulunan lezzetli ve iştah açıcı bir tuz." #!String
+    Granite_Name: "Granit" #!String
+    Granite_Description: "İnşaatta yaygın olarak kullanılan benekli kayaç." #!String
+    Grape_Name: "Üzüm" #!String
+    Grape_Description: "Tatlı meyve salkımı." #!String
+    GrapeStarter_Name: "Üzüm Yetiştirici" #!String
+    GrapeStarter_Description: "Güzde ekilir. 10 günde yetişir ve sonrasında yetişmeye devam eder. Sırıkta yetişir." #!String
+    GrassBook_Name: "İhtiyar Sürünayak" #!String
+    GrassBook_Description: "Artık çimende ve mahsuller üzerinde çok daha hızlı koşacaksın." #!String
+    GrassStarter_Name: "Çimen Yetiştirici" #!String
+    GrassStarter_Description: "Arazide çimen yetişmesi için çifltiğe yerleştirilir." #!String
+    GravelPath_Name: "Çakıl Yol" #!String
+    GravelPath_Description: "Yol oluşturmak ya da zemini şıklaştırmak için yere konulur." #!String
+    GreenAlgae_Name: "Yeşil Su Yosunu" #!String
+    GreenAlgae_Description: "Gerçekten yapışkan." #!String
+    GreenBean_Name: "Yeşil Fasulye" #!String
+    GreenBean_Description: "Ucu kıvrılan, sulu küçük bir fasulye." #!String
+    GreenRainWeeds_Name: "Yeşil Yağmur Yaban Otları" #!String
+    GreenRainWeeds_Description: "Lifler ya da karışık tohumlar içerebilir." #!String
+    GreenSlimeEgg_Name: "Yeşil Balçıkça Yumurtası" #!String
+    GreenSlimeEgg_Description: "Balçıkça kuluçka makinesinde çatlatılabilir." #!String
+    GreenTea_Name: "Yeşil Çay" #!String
+    GreenTea_Description: "İncelikle işlenen çay yapraklarından elde edilen canlandırıcı bir içecek." #!String
+    HaleysLostBracelet_Name: "Haley'nin Kayıp Bileziği" #!String
+    HaleysLostBracelet_Description: "Aile yadigârı." #!String
+    Halibut_Name: "Pisibalığı" #!String
+    Halibut_Description: "Deniz tabanında yaşayan yassı balık türü." #!String
+    Hardwood_Name: "Kereste" #!String
+    Hardwood_Description: "Daha sağlam olan ve güzel görünen özel odun türü." #!String
+    HardwoodFence_Name: "Kereste Çit" #!String
+    HardwoodFence_Description: "En dayanıklı çit tipi." #!String
+    Hashbrowns_Name: "Mücver" #!String
+    Hashbrowns_Description: "Kızıl kahverengi ve de gevrek!" #!String
+    Hay_Name: "Saman" #!String
+    Hay_Description: "Hayvanları beslemede kullanılan kurumuş ot." #!String
+    Hazelnut_Name: "Fındık" #!String
+    Hazelnut_Description: "Bu bayağı büyük bir fındıkmış!" #!String
+    Hedge_Name: "Çalı Çit" #!String
+    Hedge_Description: "Çit görevi gören biçilmiş çalı topluluğu." #!String
+    Helvite_Name: "Helvit" #!String
+    Helvite_Description: "Üçgen sütunlarda oluşur." #!String
+    Hematite_Name: "Kantaşı" #!String
+    Hematite_Description: "İlginç manyetik özelliklere sahip demir kökenli taş." #!String
+    Herring_Name: "Ringa Balığı" #!String
+    Herring_Description: "Sıradan bir deniz balığı." #!String
+    Holly_Name: "Çobanpüskülü" #!String
+    Holly_Description: "Yaprakları ve parlak kırmızı meyvesiyle kışın ünlü süslerindendir." #!String
+    Honey_Name: "Bal" #!String
+    Honey_Description: "Arıların ürettiği tatlı şerbet." #!String
+    Honey_Flavored_Name: "{0} Balı" #!String
+    Honey_Wild_Name: "Yabani Bal" #!String
+    Hops_Name: "Şerbetçi Otu" #!String
+    Hops_Description: "Birayı tatlandırmada kullanılan acı ve keskin bir çiçek." #!String
+    HopsStarter_Name: "Şerbetçi Otu Yetiştirici" #!String
+    HopsStarter_Description: "Yazın ekilir. 11 günde yetişir ve sonrasında yetişmeye devam eder. Sırıkta yetişir." #!String
+    HorseFlute_Name: "At Flütü" #!String
+    HorseFlute_Description: "Bu flütü çaldığında atın yanına gelir. Sadece dışarıda işe yarar." #!String
+    HotJavaRing_Name: "Sıcak Cava Yüzüğü" #!String
+    HotJavaRing_Description: "Canavar keserken kahve bulma olasılığını yüksek oranda artırır." #!String
+    HotPepper_Name: "Acı Biber" #!String
+    HotPepper_Description: "Tatlı gibi dursa da insanı yakacak kadar acıdır." #!String
+    HyperSpeedGro_Name: "Aşırı Hızlı-Ek" #!String
+    HyperSpeedGro_Description: "Ekin oluşumunu aşırı derecede kamçılar. Yetişme hızını en az %33 artırır. Sürülmüş toprağa karıştırılır." #!String
+    IceCream_Name: "Dondurma" #!String
+    IceCream_Description: "Dondurma sevmeyen birini bulmak çok zor." #!String
+    IceCrystal_Name: "Buz Kristali" #!String
+    IceCrystal_Description: "İşlenmiş kuvars içerebilir." #!String
+    IcePip_Name: "Buzul Çekirdekbalığı" #!String
+    IcePip_Description: "Son derece soğuk koşullarda büyüyen ender bir balık." #!String
+    ImmunityBand_Name: "Dokunulmazlık Yüzüğü" #!String
+    ImmunityBand_Description: "Yüzüğün üst kısmı efsunlu mor yünden yapılmıştır." #!String
+    IridiumBand_Name: "İridyum Yüzük" #!String
+    IridiumBand_Description: "Parıldar, nesneleri çeker ve verilen hasarı %10 artırır." #!String
+    IridiumBar_Name: "İridyum Külçesi" #!String
+    IridiumBar_Description: "Saf iridyumdan yapılma külçe." #!String
+    IridiumMilk_Name: "İridyumlu Süt" #!String
+    IridiumMilk_Description: "Kökeni bilinmeyen güçlü bir 'süt'..." #!String
+    IridiumOre_Name: "İridyum Cevheri" #!String
+    IridiumOre_Description: "İlginç özellikleri olan egzotik bir cevher. Eritilerek külçe elde edilebilir." #!String
+    IridiumSprinkler_Name: "İridyum Fıskiye" #!String
+    IridiumSprinkler_Description: "Her sabah bitişiğindeki 24 kareyi sular." #!String
+    IridiumStone_Name: "İridyum Taşı" #!String
+    IridiumStone_Description: "İridyum cevheri elde etmek için kır." #!String
+    IronBar_Name: "Demir Külçesi" #!String
+    IronBar_Description: "Saf demirden yapılma külçe." #!String
+    IronFence_Name: "Demir Çit" #!String
+    IronFence_Description: "Taş çite göre biraz daha dayanıklıdır." #!String
+    IronOre_Name: "Demir Cevheri" #!String
+    IronOre_Description: "Eritilerek külçe elde edilebilen fazlasıyla yaygın bir cevher." #!String
+    IronStone_Name: "Demir Taşı" #!String
+    IronStone_Description: "Demir cevheri elde etmek için kır." #!String
+    JackOLantern_Name: "Kabak Feneri" #!String
+    JackOLantern_Description: "Tufah bir güz mevsimi süsü." #!String
+    Jade_Name: "Yeşim" #!String
+    Jade_Description: "Açık yeşil renkli bir süs taşı." #!String
+    JadeRing_Name: "Yeşim Yüzük" #!String
+    JadeRing_Description: "Kritik hasarı %10 artırır." #!String
+    JadeStone_Name: "Yeşim Taşı" #!String
+    JadeStone_Description: "Yeşim elde etmek için kır." #!String
+    Jagoite_Name: "Jagoyit" #!String
+    Jagoite_Description: "Yüksek miktarda bulunan küçük kristaller madeni saydamlaştırır." #!String
+    Jamborite_Name: "Jamborit" #!String
+    Jamborite_Description: "Kristalleri o kadar sıkıdır ki neredeyse bir bütün gibi görünür." #!String
+    Jasper_Name: "Balgamtaşı" #!String
+    Jasper_Description: "Cilalandığında tam çekici bir parıltıya ev sahipliği yapar. Eskinin halkları binlerce yıl boyunca bu taşı değerli kabul etmiştir." #!String
+    JazzSeeds_Name: "Maviruh Tohumu" #!String
+    JazzSeeds_Description: "Baharda ekilir. Mavi renkli topa benzeyen çiçeği 7 günde yetişir." #!String
+    Jelly_Name: "Reçel" #!String
+    Jelly_Description: "Vıcık vıcık." #!String
+    Jelly_Flavored_Name: "{0} Reçeli" #!String
+    JojaCola_Name: "Joja Kola" #!String
+    JojaCola_Description: "Joja kuruluşunun en önemli ve ana ürünü." #!String
+    JournalScrap_Name: "Günlük Sayfası" #!String
+    JournalScrap_Description: "Eski bir günlükten yırtılmış nemli bir sayfa..." #!String
+    Juice_Name: "Meyve Suyu" #!String
+    Juice_Description: "Tatlı ve besleyici bir içecek." #!String
+    Juice_Flavored_Name: "{0} Suyu" #!String
+    JukeboxRing_Name: "Müzik Yüzüğü" #!String
+    JukeboxRing_Description: "Daha önce duyulan parçaları rastgele çalar." #!String
+    Kale_Name: "Lahana" #!String
+    Kale_Description: "Kolay şekil alan yaprakları, çorba ve az yağda yapılan kızartmalarda harika gider." #!String
+    KaleSeeds_Name: "Lahana Tohumu" #!String
+    KaleSeeds_Description: "Baharda ekilir. 6 günde yetişir. Tırpanla hasat edilir." #!String
+    Kyanite_Name: "Kiyanit" #!String
+    Kyanite_Description: "Geometrik yüzleri cam kadar yumuşaktır." #!String
+    LargeBrownEgg_Name: "Büyük Yumurta" #!String
+    LargeBrownEgg_Description: "Eşine az rastlanan büyük kahverengi bir yumurta!" #!String
+    LargeMilk_Name: "Büyük Süt" #!String
+    LargeMilk_Description: "Büyük bir testi inek sütü." #!String
+    LargemouthBass_Name: "İri Ağızlı Levrek" #!String
+    LargemouthBass_Description: "Gölde yaşayan bilindik bir balık." #!String
+    LargeWhiteEgg_Name: "Büyük Yumurta" #!String
+    LargeWhiteEgg_Description: "Eşine az rastlanan büyük beyaz bir yumurta!" #!String
+    LavaEel_Name: "Lav Yılanbalığı" #!String
+    LavaEel_Description: "Bir şekilde sıcak lav havuzlarında hayatta kalabilir." #!String
+    LeadBobber_Name: "Kurşun Mantar" #!String
+    LeadBobber_Description: "\"Yakalama çubuğuna\" ağırlık verir ve sıçramasını önler." #!String
+    Leek_Name: "Pırasa" #!String
+    Leek_Description: "Soğanın lezzetli akrabası." #!String
+    Legend_Name: "Efsane" #!String
+    Legend_Description: "Tüm balıkların kralı! Asla yakalanamaz diyorlar." #!String
+    LegendII_Name: "II. Efsane" #!String
+    LegendII_Description: "Efsane'nin varisi." #!String
+    LemonStone_Name: "Limontaşı" #!String
+    LemonStone_Description: "Kimi zümreler toz halindeki kristalinin cücelerin inceliğini gösterdiğini iddia eder." #!String
+    LGoatMilk_Name: "Büyük Keçi Sütü" #!String
+    LGoatMilk_Description: "4,5 litrelik kaymaklı keçi sütü." #!String
+    LifeElixir_Name: "Yaşam İksiri" #!String
+    LifeElixir_Description: "Sağlığı doldurur." #!String
+    Limestone_Name: "Kireçtaşı" #!String
+    Limestone_Description: "Yaygın bir kayaç. Pek bir değeri bulunmuyor." #!String
+    Lingcod_Name: "Dipbalığı" #!String
+    Lingcod_Description: "Neredeyse ağzına tıktığı her şeyi yiyebilecek olan korkutucu bir avcı." #!String
+    Lionfish_Name: "Aslanbalığı" #!String
+    Lionfish_Description: "Zehirli dikenleri olan agresif, yırtıcı bir balık." #!String
+    Lobster_Name: "Istakoz" #!String
+    Lobster_Description: "Güçlü bir kuyruğa sahip olan ve denizde yaşayan büyük kabuklu deniz hayvanı." #!String
+    LobsterBisque_Name: "Istakoz Çorbası" #!String
+    LobsterBisque_Description: "Bu lezzetli çorba Willy'nin gizli aile tarifinden yapılıyor." #!String
+    LostAxe_Name: "Kayıp Balta" #!String
+    LostAxe_Description: "Robin her yerde bunu arıyordu." #!String
+    LostBook_Name: "Kayıp Kitap" #!String
+    LostBook_Description: "Çeşitli zaman dilimlerinden yazıların yer aldığı bir kitap." #!String
+    LuckyLunch_Name: "Şanslı Öğün" #!String
+    LuckyLunch_Description: "Özel küçük bir yemek." #!String
+    LuckyPurpleShorts_Name: "Şanslı Mor Şort" #!String
+    LuckyPurpleShorts_Description: "Çok yakından incelememek en iyisi." #!String
+    LuckyRing_Name: "Şans Yüzüğü" #!String
+    LuckyRing_Description: "Üzerindeki ay simgesinin yüzüğü takan kişiye şans getirdiği söylenir." #!String
+    Lumber_Name: "Kereste" #!String
+    Lumber_Description: "Yapı malzemesi ve yakıt olarak kullanılabilen çok yönlü bir kaynak." #!String
+    Lunarite_Name: "Lunarit" #!String
+    Lunarite_Description: "Oyuk beyaz küreleri sıkı bir küme oluşturur." #!String
+    MagicBait_Name: "Büyülü Yem" #!String
+    MagicBait_Description: "Hangi mevsimde, saatte ya da hava durumunda olta atıldığına bakılmaksızın her balığın tutulmasını sağlar." #!String
+    MagicRockCandy_Name: "Büyülü Akide Şekeri" #!String
+    MagicRockCandy_Description: "Prizmatik parçanın özüyle dolu, ender bulunan güçlü bir şeker." #!String
+    MagmaCap_Name: "Magma Mantarı" #!String
+    MagmaCap_Description: "Lav dolu havuzların dibinde yetişen ender bir mantar." #!String
+    MagmaGeode_Name: "Yanık Jeot" #!String
+    MagmaGeode_Description: "Demirci tarafından açılabilir." #!String
+    MagmaGeodeStone_Name: "Yanık Jeot Taşı" #!String
+    MagmaGeodeStone_Description: "Yanık jeot elde etmek için kır." #!String
+    Magnet_Name: "Mıknatıs" #!String
+    Magnet_Description: "Balık tutarken hazine bulma olasılığını artırır. Öte yandan, balıklar mıknatısın tadına bayılmaz." #!String
+    MagnetRing_Name: "Manyetik Yüzük" #!String
+    MagnetRing_Description: "Nesne toplama alanını artırır." #!String
+    MahoganySeed_Name: "Maun Tohumu" #!String
+    MahoganySeed_Description: "Maun ağacı yetiştirmek için ekilir." #!String
+    MakiRoll_Name: "Dilim Maki" #!String
+    MakiRoll_Description: "Yosunla kaplanmış balık ve pirinç." #!String
+    Malachite_Name: "Bakırtaşı" #!String
+    Malachite_Description: "Heykel ve yeşil boya yapımında kulanılan ünlü süs taşı." #!String
+    Mango_Name: "Mango" #!String
+    Mango_Description: "Benzersiz bir tadı olan büyük, tatlı bir tropik meyve." #!String
+    MangoSapling_Name: "Mango Fidanı" #!String
+    MangoSapling_Description: "Mangonun olgunlaşması 28 gün sürer. Zencefil Adası'na dikildiğinde yıl boyunca, öteki türlü sadece yazın meyve verir." #!String
+    MangoStickyRice_Name: "Mangolu Pilav" #!String
+    MangoStickyRice_Description: "Tatlı mango ve hindistan cevizi eklenerek özel bir yemeğe dönüştürülen pilav." #!String
+    MapleBar_Name: "Özlü Gözleme" #!String
+    MapleBar_Description: "Akçaağacın zenginlikleriyle kaplanmış tatlı gözleme." #!String
+    MapleSeed_Name: "Akçaağaç Tohumu" #!String
+    MapleSeed_Description: "Akçaağaç yetiştirmek için ekilir." #!String
+    MapleSyrup_Name: "Akçaağaç Pekmezi" #!String
+    MapleSyrup_Description: "Benzeri olmayan bir kokuya sahip lezzetli pekmez." #!String
+    Marble_Name: "Mermer" #!String
+    Marble_Description: "Heykel ve bina yapımında kullanılan ünlü bir kaynak." #!String
+    Mayonnaise_Name: "Mayonez" #!String
+    Mayonnaise_Description: "Sürülebilir gibi duruyor." #!String
+    Mead_Name: "Likör" #!String
+    Mead_Description: "Baldan yapılan mayalanmış bir içecek. İçerken aşırıya kaçmamalı." #!String
+    MegaBomb_Name: "Büyük Bomba" #!String
+    MegaBomb_Description: "Güçlü bir patlamaya neden olur. Kullanırken çok dikkatli ol." #!String
+    Melon_Name: "Kavun" #!String
+    Melon_Description: "Soğuk ve tatlı bir yaz meyvesi." #!String
+    MelonSeeds_Name: "Kavun Tohumu" #!String
+    MelonSeeds_Description: "Yazın ekilir. 12 günde yetişir." #!String
+    MermaidsPendant_Name: "Denizkızı'nın Kolyesi" #!String
+    MermaidsPendant_Description: "Evlenmek istenilen kişiye verilir." #!String
+    MidnightCarp_Name: "Alacakaranlık Sazanı" #!String
+    MidnightCarp_Description: "Bu utangaç balık sadece geceleri rahat hisseder." #!String
+    MidnightSquid_Name: "Gecekalamarı" #!String
+    MidnightSquid_Description: "Denizlerin ışık almayan derinliklerinde yaşayan garip ve gizemli bir canlı." #!String
+    Milk_Name: "Süt" #!String
+    Milk_Description: "Bir testi inek sütü." #!String
+    MinersTreat_Name: "Madenci Şekeri" #!String
+    MinersTreat_Description: "İnsana enerji verir." #!String
+    MixedFlowerSeeds_Name: "Karışık Çiçek Tohumları" #!String
+    MixedFlowerSeeds_Description: "Karışık çiçek tohumları. Ek ve ne yetişecek gör!" #!String
+    MixedSeeds_Name: "Karışık Tohumlar" #!String
+    MixedSeeds_Description: "İçinde her şeyden birazcık var. Ekince ne olduğunu göreceksin!" #!String
+    MonsterMusk_Name: "Canavar Kokusu" #!String
+    MonsterMusk_Description: "Canavarları saklandıkları yerlerden çıkartmak için sürülür." #!String
+    Morel_Name: "Kuzumantarı" #!String
+    Morel_Description: "Cevizi andıran eşsiz tadıyla bilinir." #!String
+    Moss_Name: "Yosun" #!String
+    Moss_Description: "Gölgede yetişen özel çeşit bir bitki." #!String
+    MossSoup_Name: "Yosun Çorbası" #!String
+    MossSoup_Description: "Kalın ve yapışkan ama yenilebilir." #!String
+    MossySeed_Name: "Yosun Tohumu" #!String
+    MossySeed_Description: "Nadir yabani ağaçlar yetiştirmek için dikilebilir." #!String
+    MovieTicket_Name: "Sinema Bileti" #!String
+    MovieTicket_Description: "Sinema salonuna girmeyi sağlar. Bir arkadaşa verildiği takdirde sinemaya davet niyeti belirtir." #!String
+    MsAngler_Name: "Bayan Fenerbalığı" #!String
+    MsAngler_Description: "Işığını kullanarak avını kendine çeker." #!String
+    Mudstone_Name: "Kiltaşı" #!String
+    Mudstone_Description: "Eskilerden kalma kil ya da çamurdan oluşan ince taneli bir kayaç." #!String
+    MummifiedBat_Name: "Mumyalanmış Yarasa" #!String
+    MummifiedBat_Description: "Narin kanatları iyi korunmuş bir yarasa." #!String
+    MummifiedFrog_Name: "Mumyalanmış Kurbağa" #!String
+    MummifiedFrog_Description: "Bu antik kurbağa gölgelik ormanlarda yaşamış olabilir." #!String
+    MuscleRemedy_Name: "Kas Gevşetici" #!String
+    MuscleRemedy_Description: "Vücut çok zorlanınca 'yorgunluğu' gidermek için içilir." #!String
+    MushroomTreeSeed_Name: "Mantar Ağacı Tohumu" #!String
+    MushroomTreeSeed_Description: "Mantar ağacı yetiştirmek için çiftliğe ekilir." #!String
+    Mussel_Name: "Midye" #!String
+    Mussel_Description: "Genellikle küme halinde yaşayan, yaygın olarak görülen iki kabuklu türü." #!String
+    MusselStone_Name: "Midye Taşı" #!String
+    MusselStone_Description: "Üzerinde midye bulunan bir taş." #!String
+    MutantCarp_Name: "Türeşik Sazanbalığı" #!String
+    MutantCarp_Description: "Lağımda akan garip sular bu sazanbalığını canavara dönüştürmüş." #!String
+    MysteryBox_Name: "Gizem Kutusu" #!String
+    MysteryBox_Description: "Bunu ancak bir demirci açabilir. Acaba içinde ne var?" #!String
+    MysticStone_Name: "Mistik Taş" #!String
+    MysticStone_Description: "Taş, cevher veya jeot elde etmek için kır." #!String
+    MysticSyrup_Name: "Mistik Şurup" #!String
+    MysticSyrup_Description: "Büyülü özellikleri olduğu söylenen mistik şurup." #!String
+    MysticTreeSeed_Name: "Mistik Ağaç Tohumu" #!String
+    MysticTreeSeed_Description: "Özel bir ağaç yetiştirmek için kullanılabilir." #!String
+    NapalmRing_Name: "Patlayıcı Yüzük" #!String
+    NapalmRing_Description: "Yenilen düşmanların patlamasını sağlar." #!String
+    NautilusFossil_Name: "Notilus Fosili" #!String
+    NautilusFossil_Description: "Yüzyıllar önce bir mercan kayalığından kopup kıyıya vurmuş olmalı. " #!String
+    NautilusShell_Name: "Notilus Kabuğu" #!String
+    NautilusShell_Description: "Eski bir kabuk." #!String
+    Nekoite_Name: "Nekoyit" #!String
+    Nekoite_Description: "Hassas kırıkları ince pembe bir düzlük oluşturur." #!String
+    Neptunite_Name: "Neptünit" #!String
+    Neptunite_Description: "İlginç bir şekilde yanıtma özelliği olan simsiyah kristal." #!String
+    OakResin_Name: "Meşe Reçinesi" #!String
+    OakResin_Description: "Meşe özünden elde edilen yapışkan, hoş kokulu madde." #!String
+    Obsidian_Name: "Obsidyen" #!String
+    Obsidian_Description: "Lavların çabuk soğumasıyla oluşan püskürük cam." #!String
+    OceanStone_Name: "Okyanustaşı" #!String
+    OceanStone_Description: "Eski bir efsaneye göre, bu taşlar eskilerin donmuş denizkızlarıdır." #!String
+    Octopus_Name: "Ahtapot" #!String
+    Octopus_Description: "Gizemli ve akıllı bir yaratık." #!String
+    Oil_Name: "Yağ" #!String
+    Oil_Description: "Birden çok işlemde kullanılabilen yemeklik yağ." #!String
+    OilofGarlic_Name: "Sarımsak Yağı" #!String
+    OilofGarlic_Description: "İçildiğinde güçsüz canavarların karakterden çekinmesini sağlar." #!String
+    Omelet_Name: "Omlet" #!String
+    Omelet_Description: "Aşırı yumuşak." #!String
+    OmniGeode_Name: "Bütünjeot" #!String
+    OmniGeode_Description: "Demirci tarafından açılabilir. Çok çeşitli mineraller barındırır." #!String
+    OmniGeodeStone_Name: "Bütünjeot Taşı" #!String
+    OmniGeodeStone_Description: "Bütünjeot elde etmek için kır." #!String
+    Opal_Name: "Opal" #!String
+    Opal_Description: "İç yapısından ötürü renkleri ışık halinde yansıtır." #!String
+    Orange_Name: "Portakal" #!String
+    Orange_Description: "Yazın güzel havasını içinde barındıran sulu ve ekşi bir meyve." #!String
+    OrangeSapling_Name: "Portakal Fidanı" #!String
+    OrangeSapling_Description: "Portakalın olgunlaşması 28 gün sürer. Yazın meyve verir. Yalnızca bitişiğindeki 8 \"kare\" boşken yetişir." #!String
+    OrnamentalFan_Name: "Süs Yelpazesi" #!String
+    OrnamentalFan_Description: "Bu hassas yelpaze yüksek olasılıkla soylu bir kadına aitti. Tarihçiler, vadinin altıncı çağda zenginlerin tatil noktası olduğuna inanıyor." #!String
+    OrnateNecklace_Name: "Şatafatlı Kolye" #!String
+    OrnateNecklace_Description: "Hamamın yanındaki suyun içinde bulunan hoş bir kolye. Hâlâ ıslak..." #!String
+    Orpiment_Name: "Sarı Zırnık" #!String
+    Orpiment_Description: "Aşırı zehirli olmasına rağmen, bu maden üretim ve geleneksel tıp alanlarında yaygın olarak kullanılmaktadır." #!String
+    OstrichEgg_Name: "Deve Kuşu Yumurtası" #!String
+    OstrichEgg_Description: "Dünyanın en büyük yumurtası olabilir." #!String
+    Oyster_Name: "İstiridye" #!String
+    Oyster_Description: "Yiyecek bulmak için aralıksız olarak süzer. Bu sırada çevredeki tehlikeli toksinleri ortadan kaldırır." #!String
+    PaleAle_Name: "Soluk Bira" #!String
+    PaleAle_Description: "İçerken aşırıya kaçmamalı." #!String
+    PaleBroth_Name: "Soluk Etsuyu" #!String
+    PaleBroth_Description: "Birazcık kükürt tadı veren leziz et suyu." #!String
+    PalmFossil_Name: "Palmiye Fosili" #!String
+    PalmFossil_Description: "Palmiye fosilleri kısmen yaygın olmakla birlikte bu örnek özellikle iyi korunmuş." #!String
+    Pancakes_Name: "Gözleme" #!String
+    Pancakes_Description: "İki katı kabarmış, yumuşacık gözleme." #!String
+    Parsnip_Name: "Yaban Havucu" #!String
+    Parsnip_Description: "Havucun yakın akrabası olan bahar yumrusu. Besin maddeleriyle dolu olmasının yanı sıra dünyevi bir tadı vardır." #!String
+    ParsnipSeeds_Name: "Yaban Havucu Tohumu" #!String
+    ParsnipSeeds_Description: "Baharda ekilir. 4 günde yetişir." #!String
+    ParsnipSoup_Name: "Yaban Havucu Çorbası" #!String
+    ParsnipSoup_Description: "Yeni pişmiş, sağlığa yararlı bir çorba." #!String
+    Peach_Name: "Şeftali" #!String
+    Peach_Description: "Dokunulduğunda üzerindeki tüyler hissedilir." #!String
+    PeachSapling_Name: "Şeftali Fidanı" #!String
+    PeachSapling_Description: "Şeftalinin olgunlaşması 28 gün sürer. Yazın meyve verir. Yalnızca bitişiğindeki 8 \"kare\" boşken yetişir." #!String
+    Pearl_Name: "İnci" #!String
+    Pearl_Description: "Ender olarak denizden çıkan bir hazine." #!String
+    PepperPoppers_Name: "Patlangaç Biber" #!String
+    PepperPoppers_Description: "Kesilmiş acı biberler peynirle doldurulmuş." #!String
+    PepperSeeds_Name: "Biber Tohumu" #!String
+    PepperSeeds_Description: "Yazın ekilir. 5 günde yetişir ve ilk hasattan sonra yetişmeye devam eder." #!String
+    Perch_Name: "Tatlısu Levreği" #!String
+    Perch_Description: "Kışları görünen bir tatlı su balığı." #!String
+    Periwinkle_Name: "Deniz Salyangozu" #!String
+    Periwinkle_Description: "Mavi kabuğunun içinde yaşayan tatlı su salyangozu." #!String
+    PetLicense_Name: "Hayvan Ruhsatı" #!String
+    PetLicense_Description: "Evine yeni bir evcil hayvan davet et. Eğer yeterince Su Kabın yoksa üzülebilirler." #!String
+    PetrifiedSlime_Name: "Taşlaşmış Balçıkça" #!String
+    PetrifiedSlime_Description: "Bu ufaklık 100.000 yaşında olabilir." #!String
+    PhoenixRing_Name: "Zümrüdüanka Yüzüğü" #!String
+    PhoenixRing_Description: "Günde bir kere olmak üzere bayıldıktan sonra sağlığın bir kısmını geri kazandırır." #!String
+    Pickles_Name: "Turşu" #!String
+    Pickles_Description: "Ev yapımı turşu kavanozu." #!String
+    Pickles_Flavored_Name: "{0} Turşusu" #!String
+    PierresMissingStocklist_Name: "Pierre'in Kayıp Stok Listesi" #!String
+    PierresMissingStocklist_Description: "Bu liste Pierre'in ilgisini cezbedebilir." #!String
+    Pike_Name: "Turna Balığı" #!String
+    Pike_Description: "Tutması zor bir tatlı su balığı." #!String
+    PinaColada_Name: "Piña Colada" #!String
+    PinaColada_Description: "İçerken aşırıya kaçmamalı." #!String
+    Pineapple_Name: "Ananas" #!String
+    Pineapple_Description: "Tadı da kokusu da keskin olan tropik bir meyve." #!String
+    PineappleSeeds_Name: "Ananas Tohumu" #!String
+    PineappleSeeds_Description: "Yazın ekilir. 14 günde yetişir ve sonrasında yetişmeye devam eder." #!String
+    PineCone_Name: "Çam Kozalağı" #!String
+    PineCone_Description: "Çam ağacı yetiştirmek için ekilir." #!String
+    PineTar_Name: "Çam Katranı" #!String
+    PineTar_Description: "Çam özünden el edilen acı madde." #!String
+    PinkCake_Name: "Pembe Pasta" #!String
+    PinkCake_Description: "Üstünde kalp şeklinde küçük şekerler var." #!String
+    PiratesLocket_Name: "Korsan Madalyonu" #!String
+    PiratesLocket_Description: "Eski bir korsandan kalan hatıra." #!String
+    Pizza_Name: "Pizza" #!String
+    Pizza_Description: "Ünlü olmasının bir sebebi var." #!String
+    PlumPudding_Name: "Erikli Muhallebi" #!String
+    PlumPudding_Description: "Geleneksel bir bayram tatlısı." #!String
+    Poi_Name: "Poi" #!String
+    Poi_Description: "Sıcağı sıcağına yendiğinde özel bir tadı olan geleneksel bir yemek." #!String
+    Pomegranate_Name: "Nar" #!String
+    Pomegranate_Description: "Sulu tohumları meyvenin içinde kümelenmiştir." #!String
+    PomegranateSapling_Name: "Nar Fidanı" #!String
+    PomegranateSapling_Description: "Narın olgunlaşması 28 gün sürer. Güzde meyve verir. Yalnızca bitişiğindeki 8 \"kare\" boşken yetişir." #!String
+    Poppy_Name: "Haşhaş" #!String
+    Poppy_Description: "Çiçeği rengarenk olan haşhaş, yemek yapımında ve sağlık alanında kullanılır." #!String
+    PoppyseedMuffin_Name: "Haşhaşlı Kek" #!String
+    PoppyseedMuffin_Description: "İnsanı yatıştıran bir yanı var." #!String
+    PoppySeeds_Name: "Haşhaş Tohumu" #!String
+    PoppySeeds_Description: "Yazın ekilir. Parlak kırmızı çiçeği 7 günde yetişir." #!String
+    Potato_Name: "Patates" #!String
+    Potato_Description: "Yaygın olarak yetiştirilen bir yumru türü." #!String
+    PotatoSeeds_Name: "Patates Tohumu" #!String
+    PotatoSeeds_Description: "Baharda ekilir. 6 günde yetişir. Hasat sırasında birden çok ürün verme olasılığına sahiptir." #!String
+    Powdermelon_Name: "Kış Kavunu" #!String
+    Powdermelon_Description: "Yüzeyinde oluşan pudramsı kaplamadan adını alan bu kavun, çıtır ve tatlıdır. Hafif bir tada sahiptir." #!String
+    PowdermelonSeeds_Name: "Kış Kavunu Tohumu" #!String
+    PowdermelonSeeds_Description: "Kışın yetişen özel bir kavun türü. 7 günde olgunlaşır." #!String
+    PrehistoricHandaxe_Name: "İlkel El Baltası" #!String
+    PrehistoricHandaxe_Description: "İnsanların kullandığı ilk araçlardan. Bu \"ham\" araç, bir taşın başka bir taşa çarpılmasıyla oluşturulmuş ve bilenmiş." #!String
+    PrehistoricRib_Name: "Tarih Öncesi Kaburga Kemiği" #!String
+    PrehistoricRib_Description: "Yan tarafındaki küçük oyuklar, bu kaburga kemiğinin bir canlının akşam yemeği olduğunu gösteriyor." #!String
+    PrehistoricScapula_Name: "Tarih Öncesi Kürek Kemiği" #!String
+    PrehistoricScapula_Description: "\"Omuz kemiği\" olarak da bilinir... Hangi türe ait olduğu belirsizdir." #!String
+    PrehistoricSkull_Name: "Tarih Öncesi Kafatası" #!String
+    PrehistoricSkull_Description: "Memeli bir canlıya ait olduğu kesin olan kafatası." #!String
+    PrehistoricTibia_Name: "Tarih Öncesi Kaval Kemiği" #!String
+    PrehistoricTibia_Description: "Kalın ve sağlam bir bacak kemiği." #!String
+    PrehistoricTool_Name: "İlkel Araç" #!String
+    PrehistoricTool_Description: "Bir çeşit budaklı kazı aracı." #!String
+    PrehistoricVertebra_Name: "Tarih Öncesi Omur" #!String
+    PrehistoricVertebra_Description: "Tarih öncesinden kalma bir yaratığın omurga parçası." #!String
+    PressureNozzle_Name: "Basınç Memesi" #!String
+    PressureNozzle_Description: "Fıskiyeye yerleştirildiğinde sulama menzilini artırır." #!String
+    PrismaticJelly_Name: "Prizmatik Pelte" #!String
+    PrismaticJelly_Description: "Nadir bulunan ve yakalaması zor olan prizmatik balçıkçadan elde edilir." #!String
+    PrismaticShard_Name: "Prizma Parçası" #!String
+    PrismaticShard_Description: "Kökeni bilinmeyen, oldukça nadir görülen güçlü bir cevher." #!String
+    PrizeTicket_Name: "Ödül Bileti" #!String
+    PrizeTicket_Description: "Özel bir hediye almak için bunu Lewis'in evindeki ödül cihazına getir." #!String
+    ProtectionRing_Name: "Korunma Yüzüğü" #!String
+    ProtectionRing_Description: "Hasar aldıktan bir süre sonra dahi korunma sağlar." #!String
+    Pufferfish_Name: "Balon Balığı" #!String
+    Pufferfish_Description: "Tehdit edildiğinde şişer." #!String
+    Pumpkin_Name: "Bal Kabağı" #!String
+    Pumpkin_Description: "Güzün favorilerindendir. Çıtır çıtır tohumları ve lezzetli iç kısmı için yetiştirilir. Ayrıca, kabuğu oyularak süs olarak kullanılabilir." #!String
+    PumpkinPie_Name: "Kabak Tatlısı" #!String
+    PumpkinPie_Description: "Çırpılmış yumuşak kabak, pullu ekmek kabuğuna konulur." #!String
+    PumpkinSeeds_Name: "Bal Kabağı Tohumu" #!String
+    PumpkinSeeds_Description: "Güzde ekilir. 13 günde yetişir." #!String
+    PumpkinSoup_Name: "Kabak Çorbası" #!String
+    PumpkinSoup_Description: "Mevsimin en iyisi." #!String
+    PurpleBook_Name: "Yıldızların Kitabı" #!String
+    PurpleBook_Description: "Bunu okuyarak tüm becerilerde deneyim kazan." #!String
+    PurpleMushroom_Name: "Mor Mantar" #!String
+    PurpleMushroom_Description: "Mağaraların derinliklerinde nadir olarak bulunan mantar türü." #!String
+    PurpleSlimeEgg_Name: "Mor Balçıkça Yumurtası" #!String
+    PurpleSlimeEgg_Description: "Balçıkça kuluçka makinesinde çatlatılabilir." #!String
+    Pyrite_Name: "Pirit" #!String
+    Pyrite_Description: "Halk arasında \"Ahmak Altını\" olarak bilinir." #!String
+    QiBean_Name: "Qi Tohumu" #!String
+    QiBean_Description: "Her mevsim ekilir. Qi Meyvesi vermesi için her gün sulanması gerekir. 4 günde yetişir." #!String
+    QiFruit_Name: "Qi Meyvesi" #!String
+    QiFruit_Description: "Bay Qi'nin 500 tane satamayacağını öne sürdüğü garip meyve." #!String
+    QiGem_Name: "Qi Taşı" #!String
+    QiGem_Description: "Bay Qi onuruna üretilen özel bir taş." #!String
+    QiSeasoning_Name: "Qi Çeşnisi" #!String
+    QiSeasoning_Description: "Sıradan yemekleri olağanüstü hale getirir. Yemek yaparken otomatik olarak eklenir." #!String
+    QualityBobber_Name: "Kaliteli Mantar" #!String
+    QualityBobber_Description: "Yakalanan balığın kalitesini artırır." #!String
+    QualityFertilizer_Name: "Kaliteli Gübre" #!String
+    QualityFertilizer_Description: "Toprağın kalitesini ve kaliteli ekin yetişme olasılığını artırır. Sürülmüş toprağa karıştırılır." #!String
+    QualityRetainingSoil_Name: "Kaliteli Tutucu Toprak" #!String
+    QualityRetainingSoil_Description: "Bu toprağın geceleyin ıslak kalma olasılığı çoktur. Sürülmüş toprağa karıştırılır." #!String
+    QualitySprinkler_Name: "Kaliteli Fıskiye" #!String
+    QualitySprinkler_Description: "Her sabah bitişiğindeki 8 kareyi sular." #!String
+    Quartz_Name: "Kuvars" #!String
+    Quartz_Description: "Mağara ve madenlerde yaygın olarak bulunan belirgin bir kristal." #!String
+    RabbitsFoot_Name: "Tavşan Ayağı" #!String
+    RabbitsFoot_Description: "Bazılarına göre şans getirir." #!String
+    RadioactiveBar_Name: "Radyoaktif Külçe" #!String
+    RadioactiveBar_Description: "Zuzu Şehri Güvenlik Kurulu tarafından geri dönüşü olmayan bedensel hasara neden olduğu saptanmıştır." #!String
+    RadioactiveCarp_Name: "Radyoaktif Sazanbalığı" #!String
+    RadioactiveCarp_Description: "Atıksularda uzun yıllar geçirmiş bir sazanbalığı." #!String
+    RadioactiveOre_Name: "Radyoaktif Cevher" #!String
+    RadioactiveOre_Description: "Parlaklığını içindeki tehlikeli enerjiden alır... Eritilerek külçe elde edilebilir." #!String
+    RadioactiveStone_Name: "Radyoaktif Taş" #!String
+    RadioactiveStone_Description: "Radyoaktif cevhere sahip bir taş." #!String
+    Radish_Name: "Turp" #!String
+    Radish_Description: "Ham yendiğinde tadı bibere benzeyen gevrek ve ferahlatıcı kök sebze." #!String
+    RadishSalad_Name: "Turp Salatası" #!String
+    RadishSalad_Description: "Çıtır çıtır turplar!" #!String
+    RadishSeeds_Name: "Turp Tohumu" #!String
+    RadishSeeds_Description: "Yazın ekilir. 6 günde yetişir." #!String
+    RainbowShell_Name: "Renkli Kabuk" #!String
+    RainbowShell_Description: "Çok güzel görünen bir kabuk." #!String
+    RainbowTrout_Name: "Renkli Alabalık" #!String
+    RainbowTrout_Description: "Tatlı sularda yaşayan bir alabalık türü." #!String
+    RainTotem_Name: "Yağmur Totemi" #!String
+    RainTotem_Description: "Ertesi gün yağmur yağma olasılığını büyük oranda artırmak için etkinleştirilir. Tek kullanımlıktır." #!String
+    Raisins_Name: "Kuru Üzüm" #!String
+    Raisins_Description: "Junimoların favori yiyeceği olduğu söylenir." #!String
+    RareDisc_Name: "Nadide Disk" #!String
+    RareDisc_Description: "Acayip kırmızı taşlarla süslenmiş ağır siyah bir disk. Tutulduğunda insana yoğun bir korku hissi veriyor." #!String
+    RareSeed_Name: "Ender Tohum" #!String
+    RareSeed_Description: "Güzde ekilir. Büyümesi bütün mevsim sürer." #!String
+    RedCabbage_Name: "Kırmızı Lahana" #!String
+    RedCabbage_Description: "Genellikle salatalarda kullanılır. Rengi yetiştiği toprağa göre mordan maviye, yeşilden sarıya değişebilir." #!String
+    RedCabbageSeeds_Name: "Kırmızı Lahana Tohumu" #!String
+    RedCabbageSeeds_Description: "Yazın ekilir. 9 günde yetişir." #!String
+    RedMullet_Name: "Barbunya Balığı" #!String
+    RedMullet_Description: "Uzun zaman önce evlerde beslenirmiş." #!String
+    RedMushroom_Name: "Kırmızı Mantar" #!String
+    RedMushroom_Description: "Mağaralarda görülen benekli mantar." #!String
+    RedPlate_Name: "Kızıl Tabak" #!String
+    RedPlate_Description: "Antioksidanlarla dolu." #!String
+    RedSlimeEgg_Name: "Kırmızı Balçıkça Yumurtası" #!String
+    RedSlimeEgg_Description: "Balçıkça kuluçka makinesinde çatlatılabilir." #!String
+    RedSnapper_Name: "Kırlangıç Balığı" #!String
+    RedSnapper_Description: "Hoş kırmızı rengi ile bilinen bir balık." #!String
+    RefinedQuartz_Name: "İşlenmiş Kuvars" #!String
+    RefinedQuartz_Description: "Kuvarsın saflaştırılmış hali." #!String
+    Rhubarb_Name: "Uşkun" #!String
+    Rhubarb_Description: "Sapı aşırı acıdır ama tatlandırıldığında harika bir tatlı ortaya çıkar." #!String
+    RhubarbPie_Name: "Uşkun Turtası" #!String
+    RhubarbPie_Description: "Hım... Keskin bir tadı var!" #!String
+    RhubarbSeeds_Name: "Uşkun Tohumu" #!String
+    RhubarbSeeds_Description: "Baharda ekilir. 13 günde yetişir." #!String
+    Rice_Name: "Pirinç" #!String
+    Rice_Description: "Genellikle sebzelerin altına konulan tahıl türü." #!String
+    RicePudding_Name: "Sütlaç" #!String
+    RicePudding_Description: "Yumuşak ve tatlı. Yemesi de pek keyifli." #!String
+    RiceShoot_Name: "Pirinç Filizi" #!String
+    RiceShoot_Description: "Baharda ekilir. 8 günde yetişir. Bir su kütlesinin yakınına ekilirse daha hızlı büyür. Tırpanla hasat edilir." #!String
+    RingofYoba_Name: "Yoba'nın Yüzüğü" #!String
+    RingofYoba_Description: "Ara sıra takan kişiyi hasardan korur." #!String
+    RiverJelly_Name: "Nehir Jeli" #!String
+    RiverJelly_Description: "Tatlı suda nadir bir jel bulundu." #!String
+    RoastedHazelnuts_Name: "Kavrulmuş Fındık" #!String
+    RoastedHazelnuts_Description: "Kavurma işlemi sırasında zengin orman kokusu havayı doldurur." #!String
+    Roe_Name: "Balık Yumurtası" #!String
+    Roe_Description: "Taze balık yumurtası. Lezzet kazanması için kavanozda bekletilip olgunlaşabilir." #!String
+    Roe_Flavored_Name: "{0} Yumurtası" #!String
+    RootsPlatter_Name: "Kök Tabağı" #!String
+    RootsPlatter_Description: "Daha fazlası için toprağı kazdırır." #!String
+    RottenPlant_Name: "Çürük Bitki" #!String
+    RottenPlant_Description: "Ayrışmakta olan organik kaynak. Yapışkan ve nahoş." #!String
+    Ruby_Name: "Yakut" #!String
+    Ruby_Description: "Zengin rengi ve parıltısıyla rağbet gören değerli taş." #!String
+    RubyRing_Name: "Yakut Yüzük" #!String
+    RubyRing_Description: "Saldırı hasarını %10 artırır." #!String
+    RubyStone_Name: "Yakut Taşı" #!String
+    RubyStone_Description: "Yakut elde etmek için kır." #!String
+    RusticPlankFloor_Name: "Sade Ahşap Kaplama" #!String
+    RusticPlankFloor_Description: "Yol oluşturmak ya da zemini şıklaştırmak için yere konulur." #!String
+    RustyCog_Name: "Paslı Dişli" #!String
+    RustyCog_Description: "Eski bir makinenin parçası olması muhtemel olan iyi korunmuş bir dişli. Cüce teknolojisinin eseri olmalı." #!String
+    RustySpoon_Name: "Paslı Kaşık" #!String
+    RustySpoon_Description: "Yaklaşık on yıllık sıradan, eski bir kaşık. Pek ilginç değil." #!String
+    RustySpur_Name: "Paslı Mahmuz" #!String
+    RustySpur_Description: "Bir zamanlar bir kovboyun çizmesine takılı olan mahmuz. İnsanlarımız nesiller boyunca bu bölgede hayvan yetiştirmiş olmalı." #!String
+    Salad_Name: "Salata" #!String
+    Salad_Description: "Sağlıklı bahçe salatası." #!String
+    Salmon_Name: "Somon Balığı" #!String
+    Salmon_Description: "Yumurtalarını bırakmak için akıntıya karşı yüzer." #!String
+    Salmonberry_Name: "Ahududu" #!String
+    Salmonberry_Description: "Ormanın lezzetini barındıran bir bahar meyvesi." #!String
+    SalmonDinner_Name: "Pişmiş Somon" #!String
+    SalmonDinner_Description: "Limon da sıkıldı mı çok özel bir hal alır." #!String
+    Sandfish_Name: "Kumbalığı" #!String
+    Sandfish_Description: "Kumu kullanarak gizlenmeye çalışır." #!String
+    Sandstone_Name: "Kumtaşı" #!String
+    Sandstone_Description: "Kırmızı ve kahverengi çizgileri olan yaygın bir taş." #!String
+    Sap_Name: "Öz" #!String
+    Sap_Description: "Ağaçlardan elde edilen sıvı." #!String
+    Sardine_Name: "Sardalya" #!String
+    Sardine_Description: "Denizlerde yaygın olarak görülen bir balık türü." #!String
+    Sashimi_Name: "Saşimi" #!String
+    Sashimi_Description: "İnce ince dilimlenmiş çiğ balık." #!String
+    SavageRing_Name: "Yabani Yüzüğü" #!String
+    SavageRing_Description: "Yaratık kestikten sonra az bir hız desteği sağlar." #!String
+    ScorpionCarp_Name: "Akrepbalığı" #!String
+    ScorpionCarp_Description: "Sazanbalığından tek farkı keskin bir iğneye sahip olmasıdır." #!String
+    SeaCucumber_Name: "Denizhıyarı" #!String
+    SeaCucumber_Description: "Deniz tabanında bulunan kaygan ve yapışkan bir yaratık." #!String
+    SeafoamPudding_Name: "Deniz Köpüğü Tatlısı" #!String
+    SeafoamPudding_Description: "Bu sırlı tatlı yiyeni gerçekten deniz zihniyetine sokar!" #!String
+    SeaJelly_Name: "Deniz Jeli" #!String
+    SeaJelly_Description: "Okyanusta nadir bir jel bulundu." #!String
+    SeaUrchin_Name: "Denizkestanesi" #!String
+    SeaUrchin_Description: "Yavaş hareket eden, kimi zümrelerce hassas olarak tanımlanan dikenli bir canlı." #!String
+    Seaweed_Name: "Su Yosunu" #!String
+    Seaweed_Description: "Yemek pişirmede kullanılabilir." #!String
+    SecretNote_Name: "Gizli Not" #!String
+    SecretNote_Description: "Eski, kırışmış bir not parçası. Dikkatli bakıldığında içinde yazanlar öğrenilebilir..." #!String
+    Shad_Name: "Tirsi" #!String
+    Shad_Description: "Sürü halinde denizde yaşar ama yumurtalarını nehirlere bırakır." #!String
+    Shrimp_Name: "Karides" #!String
+    Shrimp_Description: "Deniz tabanında beslenen bir çöpçü. Büyük ölçüde eti için ödüllendirilir." #!String
+    ShrimpCocktail_Name: "Karides Kokteyli" #!String
+    ShrimpCocktail_Description: "Yeni yakalanmış karidesten yapılan pahalı bir atıştırmalık." #!String
+    SkeletalHand_Name: "İskelet Eli" #!String
+    SkeletalHand_Description: "Tüm bu tarih öncesi parçacıkların nasıl bir arada kaldığı ve günümüze ulaştığı merak konusu." #!String
+    SkeletalTail_Name: "Kuyruk İskeleti" #!String
+    SkeletalTail_Description: "Bir kuyruğa göre çok kısa." #!String
+    SkillBook0_Name: "Yıldızçiyi Vadisi Yıllığı" #!String
+    SkillBook0_Description: "Bunu okuyarak çiftçilik deneyimi kazan." #!String
+    SkillBook1_Name: "Yem ve Mantar" #!String
+    SkillBook1_Description: "Bunu okuyarak balıkçılık deneyimi kazan." #!String
+    SkillBook2_Name: "Oduncunun Haftalığı" #!String
+    SkillBook2_Description: "Bunu okuyarak toplayıcılık deneyimi kazan." #!String
+    SkillBook3_Name: "Madencilik Aylığı" #!String
+    SkillBook3_Description: "Bunu okuyarak madencilik deneyimi kazan." #!String
+    SkillBook4_Name: "Savaşçının Dört Aylığı" #!String
+    SkillBook4_Description: "Bunu okuyarak savaşma deneyimi kazan." #!String
+    Slate_Name: "Kayağantaş" #!String
+    Slate_Description: "Suya karşı son derece dayanıklı olmakla birlikte çatı kaplamada kullanılır." #!String
+    Slime_Name: "Balçıkça" #!String
+    Slime_Description: "Kokusuz, parıldayan ve jelatinimsi bir topak parçası." #!String
+    SlimeCharmerRing_Name: "Balçıkça Etkileme Yüzüğü" #!String
+    SlimeCharmerRing_Description: "Balçıkçaların hasar vermesini engeller." #!String
+    SlimeCrate_Name: "Balçıkça Kasası" #!String
+    SlimeCrate_Description: "Evcilleştirilmiş balçıkçaları taşımada kullanılır." #!String
+    Slimejack_Name: "Balçık İstavridi" #!String
+    Slimejack_Description: "Kalın bir balçık tabakası ile kaplıdır. Elden kayıp durur!" #!String
+    SmallGlowRing_Name: "Küçük Parıldayan Yüzük" #!String
+    SmallGlowRing_Description: "Sürekli olarak minik bir ışık saçar." #!String
+    SmallMagnetRing_Name: "Küçük Manyetik Yüzük" #!String
+    SmallMagnetRing_Description: "Nesne toplama alanını birazcık artırır." #!String
+    SmallmouthBass_Name: "Ufak Ağızlı Levrek" #!String
+    SmallmouthBass_Description: "Kirliliğe fazlasıyla duyarlı bir tatlı su balığı." #!String
+    SmokedFish_Name: "Tütsülenmiş" #!String
+    SmokedFish_Description: "Mükemmel bir şekilde tütsülenmiş, bütün bir {0}." #!String
+    SmokedFish_CollectionsTabDescription: "Mükemmel bir şekilde tütsülenmiş bütün balık." #!String
+    SmokedFish_CollectionsTabName: "Tütsülenmiş Balık" #!String
+    SmokedFish_Flavored_Name: "Tütsülenmiş {0}" #!String
+    Snail_Name: "Salyangoz" #!String
+    Snail_Description: "Sarmal kabuğunun içinde yaşayan çok sayıda çeşidi bulunan bir yumuşakça." #!String
+    SnakeSkull_Name: "Yılan Kafatası" #!String
+    SnakeSkull_Description: "Bir zamanlar bir yılana ait olan korunmuş kafatası." #!String
+    SnakeVertebrae_Name: "Yılan Omuru" #!String
+    SnakeVertebrae_Description: "Bu sürüngen aşırı esnekmiş." #!String
+    SnowYam_Name: "Kar Patatesi" #!String
+    SnowYam_Description: "Karın altında gizlenen ufak bir patates." #!String
+    SnowyStone_Name: "Karlı Taş" #!String
+    SnowyStone_Description: "Taş, cevher veya jeot elde etmek için kır." #!String
+    Soapstone_Name: "Sabuntaşı" #!String
+    Soapstone_Description: "Nispeten yumuşak yapısı nedeniyle oymacılıkta önem kazanmıştır." #!String
+    SoggyNewspaper_Name: "Islak Gazete" #!String
+    SoggyNewspaper_Description: "Çöpten farkı yok." #!String
+    SolarEssence_Name: "Güneş Özü" #!String
+    SolarEssence_Description: "Parıldayan ön kısmına dokununca ısısı hissediliyor." #!String
+    SonarBobber_Name: "Radar Mantarı" #!String
+    SonarBobber_Description: "Yakalamadan önce hangi balığın takıldığını gösterir." #!String
+    SonofCrimsonfish_Name: "Kızılbalığın Oğlu" #!String
+    SonofCrimsonfish_Description: "Yazın ılık sularında yumurtadan çıkan bu balık babasının ayak izinden gidiyor." #!String
+    SoulSapperRing_Name: "Ruhemici Yüzük" #!String
+    SoulSapperRing_Description: "Her canavar kesildiğinde birazcık enerji kazandırır." #!String
+    Spaghetti_Name: "Çubuk Makarna" #!String
+    Spaghetti_Description: "Eskinin en sevilenlerinden." #!String
+    SpangleSeeds_Name: "Yazpulu Tohumu" #!String
+    SpangleSeeds_Description: "Yazın ekilir. Gür çiçeği 8 günde yetişir. Çeşit çeşit renktedir." #!String
+    SpecificBait_Name: "Yem" #!String
+    SpecificBait_Description: "{0} yakalama şansını artırır." #!String
+    SpecificBait_Flavored_Name: "{0} Yemi" #!String
+    SpeedGro_Name: "Hızlı-Ek" #!String
+    SpeedGro_Description: "Ekin oluşumunu kamçılar. Yetişme hızını en az %10 artırır. Sürülmüş toprağa karıştırılır." #!String
+    SpiceBerry_Name: "Baharat Meyvesi" #!String
+    SpiceBerry_Description: "Havayı acı bir kokuyla doldurur." #!String
+    SpicyEel_Name: "Baharatlı Yılanbalığı" #!String
+    SpicyEel_Description: "Bayağı baharatlıymış! Yerken dikkat etmeli." #!String
+    Spinner_Name: "Yapay Yem" #!String
+    Spinner_Description: "Biçimi sayesinde suyun içinde döner. Balık yakalama oranını birazcık artırır." #!String
+    SpiritTorch_Name: "Ruh Meşalesi" #!String
+    SpiritTorch_Description: "Mavi rengin kaynağı belirsizdir..." #!String
+    SpookFish_Name: "Hortlakbalığı" #!String
+    SpookFish_Description: "Devasa gözleriyle avının zayıf karartısını belirleyebilir." #!String
+    SpringOnion_Name: "Yeşil Soğan" #!String
+    SpringOnion_Description: "Baharda kendiliğinden yetişir." #!String
+    SpringSeeds_Name: "Bahar Tohumları" #!String
+    SpringSeeds_Description: "Çeşit çeşit yabani bahar tohumu." #!String
+    Sprinkler_Name: "Fıskiye" #!String
+    Sprinkler_Description: "Her sabah bitişiğindeki 4 kareyi sular." #!String
+    Squid_Name: "Mürekkepbalığı" #!String
+    Squid_Description: "Büyük boyutlara ulaşabilen bir açık deniz yaratığı." #!String
+    SquidInk_Name: "Mürekkepbalığı Mürekkebi" #!String
+    SquidInk_Description: "Mürekkepbalıkları tarafından avcıların dikkatini dağıtmak üzere kullanılan mürekkep." #!String
+    SquidInkRavioli_Name: "Mürekkepli Makarna" #!String
+    SquidInkRavioli_Description: "Olumsuz etkilere karşı geçici korunma sağlar." #!String
+    StardewValleyRose_Name: "Yıldızçiyi Vadisi Gülü" #!String
+    StardewValleyRose_Description: "Vadiyi hatırlatan, cennet kokan bir gül." #!String
+    Stardrop_Name: "Yıldızkaydı" #!String
+    Stardrop_Description: "Yiyeni güçlendiren gizemli meyve. Tadı aynı düş gibi... Muhteşem bir deneyim yaşatıyor. Başkalarına anlatması ise çok zor." #!String
+    StardropTea_Name: "Yıldızkaydı Çayı" #!String
+    StardropTea_Description: "Herkesi mutlu edecek çok özel bir hediye." #!String
+    Starfruit_Name: "Yıldızmeyvesi" #!String
+    Starfruit_Description: "Sıcak, nemli havada yetişen aşırı sulu bir meyve. Tatlı gibi dursa da gizliden gizliye ekşidir." #!String
+    StarfruitSeeds_Name: "Yıldızmeyvesi Tohumu" #!String
+    StarfruitSeeds_Description: "Yazın ekilir. 13 günde yetişir." #!String
+    StarShards_Name: "Yıldız Parçaçığı" #!String
+    StarShards_Description: "Kimse nasıl oluştuklarını bilmiyor. Kimi bilimadamları mikroskobik yapılarının doğal olamayacak kadar düzgün olduğunu iddia ediyor." #!String
+    SteppingStonePath_Name: "Taş Yol" #!String
+    SteppingStonePath_Description: "Yol oluşturmak ya da zemini şıklaştırmak için yere konulur." #!String
+    Stingray_Name: "İğnelivatoz" #!String
+    Stingray_Description: "Zehirli iğnesine rağmen utangaç davranan ve insanlardan uzak durmayı tercih eden bir balık." #!String
+    StirFry_Name: "Vogda Kızartma" #!String
+    StirFry_Description: "Pirincin üzerine sebzelerin ince ince doğranmasıyla hazırlanan sebze yemeği." #!String
+    Stone_Name: "Taş" #!String
+    Stone_Description: "Nesne ve yapı oluşturmada kullanılan çok amaçlı sıradan bir kaynak." #!String
+    Stone_Node_Name: "Taş" #!String
+    Stone_Node_Description: "Taş, cevher veya jeot elde etmek için kır." #!String
+    Stone_NodeStoneOnly_Name: "Taş" #!String
+    Stone_NodeStoneOnly_Description: "Taş elde etmek için kır." #!String
+    Stone_NodeWithCoal_Name: "Taş" #!String
+    Stone_NodeWithCoal_Description: "Taş elde etmek için kır. İçinden kömür de çıkabilir." #!String
+    StoneBase_Name: "Taş Bloğu" #!String
+    StoneBase_Description: "Sıradan bir taş bloğu." #!String
+    StoneFence_Name: "Taş Çit" #!String
+    StoneFence_Description: "Ahşap çite göre biraz daha dayanıklıdır." #!String
+    Stonefish_Name: "Kayabalığı" #!String
+    Stonefish_Description: "Tuğlaya benzeyen tuhaf bir balık." #!String
+    StoneFloor_Name: "Taş Kaplama" #!String
+    StoneFloor_Description: "Yol oluşturmak ya da zemini şıklaştırmak için yere konulur." #!String
+    StoneWalkwayFloor_Name: "Kaldırım Kaplama" #!String
+    StoneWalkwayFloor_Description: "Yol oluşturmak ya da zemini şıklaştırmak için yere konulur." #!String
+    StrangeBun_Name: "Gizemli Çörek" #!String
+    StrangeBun_Description: "İçinde ne var ki?" #!String
+    StrangeDoll_Name: "Garip Bebek" #!String
+    StrangeDoll_Description: "???" #!String
+    Strawberry_Name: "Çilek" #!String
+    Strawberry_Description: "Çekici kırmızı rengiyle herkesin beğenisini kazanan tatlı ve sulu bir meyve." #!String
+    StrawberrySeeds_Name: "Çilek Tohumu" #!String
+    StrawberrySeeds_Description: "Baharda ekilir. 8 günde yetişir ve ilk hasattan sonra yetişmeye devam eder." #!String
+    StrawFloor_Name: "Hasır Kaplama" #!String
+    StrawFloor_Description: "Yol oluşturmak ya da zemini şıklaştırmak için yere konulur." #!String
+    Stuffing_Name: "Doldurma" #!String
+    Stuffing_Description: "Ah... sıcak ekmeğin ve ada çayının kokusu yok mu..." #!String
+    SturdyRing_Name: "Sağlamlık Yüzüğü" #!String
+    SturdyRing_Description: "Olumsuz etkilerin geçerlilik süresini yarıya indirir." #!String
+    Sturgeon_Name: "Mersinbalığı" #!String
+    Sturgeon_Description: "Soyu eski zamanlara dayanan, nüfusu azalan fırsatçı balık türü. Dişileri 150 yıla kadar yaşayabilir." #!String
+    Sugar_Name: "Şeker" #!String
+    Sugar_Description: "Hamur işlerine ve tatlılara tadını verir. Fazlası sağlığa zararlı olabilir." #!String
+    SummerSeeds_Name: "Yaz Tohumları" #!String
+    SummerSeeds_Description: "Çeşit çeşit yabani yaz tohumu." #!String
+    SummerSpangle_Name: "Yazpulu" #!String
+    SummerSpangle_Description: "Nemli yaz havasında açan tropik bir çiçek. Keskin, hoş bir kokusu vardır." #!String
+    SummerSquash_Name: "Yaz Kabağı" #!String
+    SummerSquash_Description: "Olgunlaşmadan ve hâlâ yumuşakken hasat edilen kıvrık, sarı bir kabak." #!String
+    SummerSquashSeeds_Name: "Yaz Kabağı Tohumu" #!String
+    SummerSquashSeeds_Description: "Yazın ek. Yetişmesi 6 gün sürer ve ilk hasattan sonra yetişmeye devam eder." #!String
+    Sunfish_Name: "Güneşbalığı" #!String
+    Sunfish_Description: "Sıradan bir nehir balığı." #!String
+    Sunflower_Name: "Ayçiçeği" #!String
+    Sunflower_Description: "Bilindik bir yanlış kanıya göre, çiçek dönebildiği için sürekli güneşe bakar." #!String
+    SunflowerSeeds_Name: "Ayçiçeği Tohumu" #!String
+    SunflowerSeeds_Description: "Yaz ve güz mevsimlerinde ekilir. 8 günde yetişir. Hasatta fazladan tohum verir." #!String
+    SuperCucumber_Name: "Büyük Denizhıyarı" #!String
+    SuperCucumber_Description: "Nadir bulunan mor denizhıyarı türü." #!String
+    SuperMeal_Name: "Süper Öğün" #!String
+    SuperMeal_Description: "Enerji verici bir öğün." #!String
+    SupplyCrate_Name: "Erzak Kasası" #!String
+    SupplyCrate_Description: "..." #!String
+    SurvivalBurger_Name: "Açburger" #!String
+    SurvivalBurger_Description: "Tam kaşiflere göre bir atıştırmalık." #!String
+    SweetGemBerry_Name: "Tatlıtaş Meyvesi" #!String
+    SweetGemBerry_Description: "Açık ara farkla koklanılan en tatlı şey." #!String
+    SweetPea_Name: "Itırşahi" #!String
+    SweetPea_Description: "Güzel kokulu bir yaz çiçeği." #!String
+    TaroRoot_Name: "Gölevez Kökü" #!String
+    TaroRoot_Description: "Bu katı kök tarihin en eski mahsullerinden biridir." #!String
+    TaroTuber_Name: "Gölevez Yumrusu" #!String
+    TaroTuber_Description: "Yazın ekilir. 10 günde yetişir. Su kenarına ekilirse daha çabuk yetişir." #!String
+    TeaLeaves_Name: "Çay Yaprakları" #!String
+    TeaLeaves_Description: "Taze çay bitkisi yaprakları. Demlendiğinde çay elde edilir." #!String
+    TeaSapling_Name: "Çay Fidanı" #!String
+    TeaSapling_Description: "Çayın olgunlaşması 20 gün sürer. Kış haricindeki her mevsimin son haftayı çay yaprağı üretir. Sulanması gerekmez!" #!String
+    TeaSet_Name: "Çay Takımı" #!String
+    TeaSet_Description: "Kaliteli porselen." #!String
+    TentKit_Name: "Çadır Aparatı" #!String
+    TentKit_Description: "Tek kullanımlık bir çadır oluşturmak için bunu kullan. Sadece dış mekânlarda kullanılabilir." #!String
+    ThornsRing_Name: "Dikenli Yüzük" #!String
+    ThornsRing_Description: "Düşmanların verdiği hasarı kendilerine yansıtır." #!String
+    ThunderEgg_Name: "Yıldırım Yumurtası" #!String
+    ThunderEgg_Description: "Efsaneye göre, sinirlenen gök tanrıları bu taşları birbirlerine fırlatırmış." #!String
+    Tigerseye_Name: "Kaplangözü" #!String
+    Tigerseye_Description: "Parıldayan altın şeridi taşa sıcak bir ışık verir." #!String
+    TigerSlimeEgg_Name: "Çizgili Balçıkça Yumurtası" #!String
+    TigerSlimeEgg_Description: "Balçıkça kuluçka makinesinde çatlatılabilir. Dikkatli olunması önerilir!" #!String
+    TigerTrout_Name: "Kaplanbalığı" #!String
+    TigerTrout_Description: "Kendi yavrularını taşıyamayan, ender görülen melez alabalık türü." #!String
+    Tilapia_Name: "Tilapi" #!String
+    Tilapia_Description: "Sıcak suları tercih eden ve esasen vejetaryen olan bir balık türü." #!String
+    Tomato_Name: "Domates" #!String
+    Tomato_Description: "Zengin ve biraz da ekşidir ama yine de pek çok yemeğin yapımında kullanılır." #!String
+    TomatoSeeds_Name: "Domates Tohumu" #!String
+    TomatoSeeds_Description: "Yazın ekilir. 11 günde yetişir ve ilk hasattan sonra yetişmeye devam eder." #!String
+    TomKhaSoup_Name: "Tavuklu Ceviz Çorbası" #!String
+    TomKhaSoup_Description: "İnanılmaz bir lezzeti var!" #!String
+    Topaz_Name: "Topaz" #!String
+    Topaz_Description: "Oldukça yaygın olmasına rağmen güzelliği değer gören bir taş." #!String
+    TopazRing_Name: "Topaz Yüzük" #!String
+    TopazRing_Description: "Bunu giyince biraz daha güvende hissediyorsun." #!String
+    TopazStone_Name: "Topaz Taşı" #!String
+    TopazStone_Description: "Topaz elde etmek için kır." #!String
+    Torch_Name: "Meşale" #!String
+    Torch_Description: "Mütevazı miktarda ışık sağlar." #!String
+    Tortilla_Name: "Tortilla" #!String
+    Tortilla_Description: "Tek başına ya da arasına bir şeyler koyularak yenilebilir." #!String
+    TrapBobber_Name: "Tuzaklı Mantar" #!String
+    TrapBobber_Description: "Balıklar makara ile sarılmıyorken daha yavaş kaçmalarını sağlar." #!String
+    Trash_Name: "Çöp" #!String
+    Trash_Description: "Çöpe atılmış eşya." #!String
+    TreasureChest_Name: "Hazine Sandığı" #!String
+    TreasureChest_Description: "Vay be, içi hazineyle dolu! Kesinlikle iyi bir ederi olmalı." #!String
+    TreasureHunter_Name: "Hazine Avcısı" #!String
+    TreasureHunter_Description: "Hazine alınırken balıklar kaçamaz. Ayrıca, hazine bulma olasılığını birazcık artırır." #!String
+    TreasureTotem_Name: "Hazine Totemi" #!String
+    TreasureTotem_Description: "Kazılabilir arazide kullanıldığında hazine noktası halkası oluşturur." #!String
+    TreeFertilizer_Name: "Ağaç Gübresi" #!String
+    TreeFertilizer_Description: "Kış aylarında bile olgunlaşma sürecini hızlandırmak için yabani ağaçların köküne serpilir. Meyve ağaçlarında işe yaramaz." #!String
+    Trilobite_Name: "Trilobit" #!String
+    Trilobite_Description: "Yengecin uzun zaman önce soyu tükenen bir akrabası." #!String
+    TrimmedLuckyPurpleShorts_Name: "İşlemeli Şanslı Mor Şort" #!String
+    TrimmedLuckyPurpleShorts_Description: "Üzerinde altın işlemeler bulunan mor bir şort..." #!String
+    TripleShotEspresso_Name: "Üç Tekli Espresso" #!String
+    TripleShotEspresso_Description: "Sıradan kahveye oranla daha ağırdır!" #!String
+    TropicalCurry_Name: "Tropik Köri" #!String
+    TropicalCurry_Description: "Ananas içinde sunulan kokusuyla ünlü bir köri." #!String
+    TroutDerbyTag_Name: "Altın Etiket" #!String
+    TroutDerbyTag_Description: "Ödülünü almak için bunu Alabalık Yarışı gişesine götür." #!String
+    TroutSoup_Name: "Alabalık Çorbası" #!String
+    TroutSoup_Description: "Çok tuzlu." #!String
+    Truffle_Name: "Yermantarı" #!String
+    Truffle_Description: "Eşsiz lezzetiyle bilinen mantar türü." #!String
+    TruffleOil_Name: "Yermantarı Yağı" #!String
+    TruffleOil_Description: "Lezzet açan bir yemek malzemesi." #!String
+    Tulip_Name: "Lale" #!String
+    Tulip_Description: "En ünlü bahar çiçeği. Güçten düşüren tatlı bir kokusu var." #!String
+    TulipBulb_Name: "Lale Soğanı" #!String
+    TulipBulb_Description: "Baharda ekilir. Çiçeği 6 günde yetişir. Çeşit çeşit renktedir." #!String
+    Tuna_Name: "Ton Balığı" #!String
+    Tuna_Description: "Denizlerde yaşayan büyük bir balık." #!String
+    Twig_Name: "Dal" #!String
+    Twig_Description: "Kırık dal parçası. Odun elde etmek için baltayla kes." #!String
+    UnmilledRice_Name: "Öğütülmemiş Pirinç" #!String
+    UnmilledRice_Description: "Ham haldeki pirinç. Değerini artırmak için bunu değirmenden geçirilir." #!String
+    VampireRing_Name: "Vampir Yüzüğü" #!String
+    VampireRing_Description: "Yaratık kestikten sonra sağlığı birazcık artırır." #!String
+    VegetableMedley_Name: "Türlü" #!String
+    VegetableMedley_Description: "İçinde bol bol besin maddesi var." #!String
+    Vinegar_Name: "Sirke" #!String
+    Vinegar_Description: "Birçok yemeğe konulan yıllanmış mayalı sıvı." #!String
+    VoidEgg_Name: "Boşluk Yumurtası" #!String
+    VoidEgg_Description: "Kırmızı lekeleri olan siyah bir yumurta. Dokununca sıcak olduğu görülüyor." #!String
+    VoidEssence_Name: "Boşluk Özü" #!String
+    VoidEssence_Description: "İçindeki kara enerji yüzünden yerinde duramıyor." #!String
+    VoidGhostPendant_Name: "Boşluk Hayaleti'nin Kolyesi" #!String
+    VoidGhostPendant_Description: "Gölgelik soy için sembolik önemi vardır. Hediye olarak sunulduğunda ev arkadaşı olma niyeti belirtir." #!String
+    VoidMayonnaise_Name: "Boşluk Mayonezi" #!String
+    VoidMayonnaise_Description: "Yanmış saç gibi kokan kalın, siyah bir lapa." #!String
+    VoidSalmon_Name: "Boşluk Somonu" #!String
+    VoidSalmon_Description: "Boşluğun enerjisiyle dolu bir somon. Kapkara duran eti, havaya temas ettiğinde hızla pembeye dönüşür." #!String
+    VolcanoGoldNode_Name: "Altın Taşı" #!String
+    VolcanoGoldNode_Description: "Altın cevheri elde etmek için kır." #!String
+    Walleye_Name: "Kömür Balığı" #!String
+    Walleye_Description: "Geceleri ortaya çıkan bir tatlı su balığı." #!String
+    WarMemento_Name: "Savaş Hatırası" #!String
+    WarMemento_Description: "Bir askerin sararmış fotoğrafı..." #!String
+    WarpTotemBeach_Name: "Işınlanma Totemi: Kumsal" #!String
+    WarpTotemBeach_Description: "Kumsala ışınlanmayı sağlar. Tek kullanımlıktır." #!String
+    WarpTotemDesert_Name: "Işınlanma Totemi: Çöl" #!String
+    WarpTotemDesert_Description: "Çöle ışınlanmayı sağlar. Tek kullanımlıktır." #!String
+    WarpTotemFarm_Name: "Işınlanma Totemi: Çiftlik" #!String
+    WarpTotemFarm_Description: "Eve ışınlanmayı sağlar. Tek kullanımlıktır." #!String
+    WarpTotemIsland_Name: "Işınlanma Totemi: Ada" #!String
+    WarpTotemIsland_Description: "Zencefil Adasına ışınlanmayı sağlar. Tek kullanımlıktır." #!String
+    WarpTotemMountains_Name: "Işınlanma Totemi: Dağ" #!String
+    WarpTotemMountains_Description: "Dağa ışınlanmayı sağlar. Tek kullanımlıktır." #!String
+    WarpTotemQisArena_Name: "Işınlanma Totemi: Qi'nin Bölgesi" #!String
+    WarpTotemQisArena_Description: "Qi'nin bölgesine ışınlanmayı sağlar. Meydan okumalara hazır ol!" #!String
+    WarriorRing_Name: "Savaşçı Yüzüğü" #!String
+    WarriorRing_Description: "Ara sıra takan kişiye canavar kestikten sonra 'savaşçı enerjisi' verir." #!String
+    WeatheredFloor_Name: "Parçalanmış Kaplama" #!String
+    WeatheredFloor_Description: "Yol oluşturmak ya da zemini şıklaştırmak için yere konulur." #!String
+    WeddingRing_Name: "Düğün Yüzüğü" #!String
+    WeddingRing_Description: "Eski bir Zuzu Şehri geleneği... Başka bir çiftçiye evlenme teklif edildiğinde verilir." #!String
+    Weeds_Name: "Yabani Otlar" #!String
+    Weeds_Description: "Bir sürü zararlı ot." #!String
+    Weeds_DryBush_Name: "Yabani Otlar" #!String
+    Weeds_DryBush_Description: "Kurumuş ot kümesi. Might contain fibers or mixed seeds." #!String
+    Weeds_Fiber_Ugly_Name: "Yabani Otlar" #!String
+    Weeds_Fiber_Ugly_Description: "Çirkin duran yabani otlar. Cut to obtain wild seeds." #!String
+    Weeds_FiberOrMixedSeeds_Name: "Yabani Otlar" #!String
+    Weeds_FiberOrMixedSeeds_Description: "Might contain fibers or mixed seeds." #!String
+    Weeds_FiberOrMixedSeeds_Ugly_Name: "Yabani Otlar" #!String
+    Weeds_FiberOrMixedSeeds_Ugly_Description: "Çirkin duran yabani otlar. Might contain fibers or mixed seeds." #!String
+    Wheat_Name: "Buğday" #!String
+    Wheat_Description: "Yaygın olarak yetiştirilen tahıllardan biridir. Ekmek ve keklerde kullanılan unun kaynağıdır." #!String
+    WheatFlour_Name: "Buğday Unu" #!String
+    WheatFlour_Description: "Ezilmiş buğdaydan elde edilen sıradan yemek malzemesi." #!String
+    WheatSeeds_Name: "Buğday Tohumu" #!String
+    WheatSeeds_Description: "Yaz ve güz mevsimlerinde ekilir. 4 günde yetişir. Tırpanla hasat edilir." #!String
+    WhiteAlgae_Name: "Beyaz Su Yosunu" #!String
+    WhiteAlgae_Description: "Aşırı yapışkan." #!String
+    WhiteEgg_Name: "Yumurta" #!String
+    WhiteEgg_Description: "Sıradan beyaz bir tavuk yumurtası." #!String
+    WildBait_Name: "Yabani Yem" #!String
+    WildBait_Description: "Linus'un benzersiz tarifi. Tek seferde iki balık yakalama olasılığı doğurur." #!String
+    WildHorseradish_Name: "Yabani Bayır Turpu" #!String
+    WildHorseradish_Description: "Baharda bulunan acılı bir kök." #!String
+    WildPlum_Name: "Çakaleriği" #!String
+    WildPlum_Description: "Hoş kokulu, ekşi ve sulu bir meyve." #!String
+    WiltedBouquet_Name: "Solmuş Buket" #!String
+    WiltedBouquet_Description: "Birisine artık onunla birlikte olmak istemediğini bildirmede kullanılan hediye." #!String
+    Wine_Name: "Şarap" #!String
+    Wine_Description: "Kararında içilmeli." #!String
+    Wine_Flavored_Name: "{0} Şarabı" #!String
+    WinterRoot_Name: "Kış Kökü" #!String
+    WinterRoot_Description: "Nişastalı bir yumru." #!String
+    WinterSeeds_Name: "Kış Tohumları" #!String
+    WinterSeeds_Description: "Çeşit çeşit yabani kış tohumu." #!String
+    Wood_Name: "Odun" #!String
+    Wood_Description: "Çok çeşitli kullanımlara sahip sağlam ama esnek bir kaynak." #!String
+    WoodFence_Name: "Ahşap Çit" #!String
+    WoodFence_Description: "Hayvanları ve ekinleri güvende tutar!" #!String
+    WoodFloor_Name: "Ahşap Kaplama" #!String
+    WoodFloor_Description: "Yol oluşturmak ya da zemini şıklaştırmak için yere konulur." #!String
+    WoodPath_Name: "Ahşap Yol" #!String
+    WoodPath_Description: "Yol oluşturmak ya da zemini şıklaştırmak için yere konulur." #!String
+    Woodskip_Name: "Korkakbalık" #!String
+    Woodskip_Description: "Bir tek ormanın derinliklerindeki havuzlarda yaşayan hassas bir balık." #!String
+    Wool_Name: "Yün" #!String
+    Wool_Description: "Yumuşak ve kabarık yün." #!String
+    WrigglingWorm_Name: "Kımıldayan Solucan" #!String
+    WrigglingWorm_Description: "Kımıldamadan duramayan ıslak bir solucak." #!String
+    Yam_Name: "Tatlı Patates" #!String
+    Yam_Description: "Çok sayıda yemekte kullanılan nişastalı bir yumru." #!String
+    YamSeeds_Name: "Tatlı Patates Tohumu" #!String
+    YamSeeds_Description: "Güzde ekilir. 10 günde yetişir." #!String
+

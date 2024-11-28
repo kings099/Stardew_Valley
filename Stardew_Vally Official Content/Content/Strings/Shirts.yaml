@@ -1,0 +1,417 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Shirt_Name: "Shirt" #!String
+    Shirt_Description: "A wearable shirt." #!String
+    ClassicOveralls_Name: "Classic Overalls" #!String
+    ClassicOveralls_Description: "A farming classic." #!String
+    MintBlouse_Name: "Mint Blouse" #!String
+    MintBlouse_Description: "A cute, light green blouse." #!String
+    DarkShirt_Name: "Dark Shirt" #!String
+    DarkShirt_Description: "A dark colored shirt." #!String
+    SkullShirt_Name: "Skull Shirt" #!String
+    SkullShirt_Description: "A shirt with a menacing skull printed on it." #!String
+    LightBlueShirt_Name: "Light Blue Shirt" #!String
+    LightBlueShirt_Description: "A light blue shirt." #!String
+    TanStripedShirt_Name: "Tan Striped Shirt" #!String
+    TanStripedShirt_Description: "A tan shirt with a white stripe going through the middle of it." #!String
+    GreenOveralls_Name: "Green Overalls" #!String
+    GreenOveralls_Description: "A slightly less popular farming classic." #!String
+    GoodGriefShirt_Name: "\"Good Grief\" Shirt" #!String
+    GoodGriefShirt_Description: "A good ol' shirt..." #!String
+    AquamarineShirt_Name: "Aquamarine Shirt" #!String
+    AquamarineShirt_Description: "An aquamarine shirt." #!String
+    SuitTop_Name: "Suit Top" #!String
+    SuitTop_Description: "A formal top for fancy events and celebrations." #!String
+    GreenBeltedShirt_1011_Name: "Green Belted Shirt" #!String
+    GreenBeltedShirt_1011_Description: "A green, belted shirt." #!String
+    LimeGreenStripedShirt_Name: "Lime Green Striped Shirt" #!String
+    LimeGreenStripedShirt_Description: "A lime green shirt with white stripes." #!String
+    RedStripedShirt_Name: "Red Striped Shirt" #!String
+    RedStripedShirt_Description: "A red shirt with white stripes." #!String
+    SkeletonShirt_Name: "Skeleton Shirt" #!String
+    SkeletonShirt_Description: "A shirt with a skeletal rib cage printed on it." #!String
+    OrangeShirt_Name: "Orange Shirt" #!String
+    OrangeShirt_Description: "An orange shirt." #!String
+    NightSkyShirt_Name: "Night Sky Shirt" #!String
+    NightSkyShirt_Description: "A shirt that reminds you of the night sky." #!String
+    MayoralSuspenders_Name: "Mayoral Suspenders" #!String
+    MayoralSuspenders_Description: "A pair of suspenders that looks awfully familiar..." #!String
+    BrownJacket_Name: "Brown Jacket" #!String
+    BrownJacket_Description: "A nice, sturdy jacket made of brown material." #!String
+    SailorShirt_Name: "Sailor Shirt" #!String
+    SailorShirt_Description: "Reminds you of the open sea." #!String
+    GreenVest_Name: "Green Vest" #!String
+    GreenVest_Description: "A neat green vest over a shirt." #!String
+    YellowandGreenShirt_Name: "Yellow and Green Shirt" #!String
+    YellowandGreenShirt_Description: "A yellow shirt with a green stripe." #!String
+    LightBlueStripedShirt_Name: "Light Blue Striped Shirt" #!String
+    LightBlueStripedShirt_Description: "A light blue shirt with a white stripe." #!String
+    PinkStripedShirt_Name: "Pink Striped Shirt" #!String
+    PinkStripedShirt_Description: "A pink shirt with stripes." #!String
+    WorkShirt_Name: "Work Shirt" #!String
+    WorkShirt_Description: "For long days in the fields." #!String
+    StoreOwnersJacket_Name: "Store Owner's Jacket" #!String
+    StoreOwnersJacket_Description: "A jacket that looks like it'd be worn by a small town merchant." #!String
+    GreenTunic_Name: "Green Tunic" #!String
+    GreenTunic_Description: "A shirt fit for an adventurer." #!String
+    FancyRedBlouse_Name: "Fancy Red Blouse" #!String
+    FancyRedBlouse_Description: "A bright red blouse adorned with shiny yellow buttons." #!String
+    PlainShirt_Name_Female: "Plain Shirt (F)" #!String
+    PlainShirt_Name_Male: "Plain Shirt (M)" #!String
+    PlainShirt_Description: "A simple shirt." #!String
+    RetroRainbowShirt_Name: "Retro Rainbow Shirt" #!String
+    RetroRainbowShirt_Description: "A simple shirt with a faded rainbow pattern." #!String
+    LimeGreenTunic_Name: "Lime Green Tunic" #!String
+    LimeGreenTunic_Description: "A bright green tunic with a belt." #!String
+    NeatBowShirt_Name: "Neat Bow Shirt" #!String
+    NeatBowShirt_Description: "A neat button down shirt with a prominent bow tie." #!String
+    ShirtAndTie_Name: "Shirt And Tie" #!String
+    ShirtAndTie_Description: "A white dress shirt and a tie." #!String
+    EmilysMagicShirt_Name: "Emily's Magic Shirt" #!String
+    EmilysMagicShirt_Description: "Made with love by Emily. Colored with all-natural dye!" #!String
+    StripedShirt_Name: "Striped Shirt" #!String
+    StripedShirt_Description: "It's a shirt with faint stripes on it." #!String
+    TankTop_Name_Female: "Tank Top (F)" #!String
+    TankTop_Name_Male: "Tank Top (M)" #!String
+    TankTop_Description: "A sleeveless shirt." #!String
+    CowboyPoncho_Name: "Cowboy Poncho" #!String
+    CowboyPoncho_Description: "A legendary outfit from the old west." #!String
+    CropTankTop_Name_Female: "Crop Tank Top (F)" #!String
+    CropTankTop_Name_Male: "Crop Tank Top (M)" #!String
+    CropTankTop_Description: "A sleeveless shirt cut extra short on the bottom." #!String
+    BikiniTop_Name: "Bikini Top" #!String
+    BikiniTop_Description: "A summer staple." #!String
+    WumbusShirt_Name: "Wumbus Shirt" #!String
+    WumbusShirt_Description: "A shirt featuring a strange green guy." #!String
+    80sShirt_Name_Female: "80's Shirt (F)" #!String
+    80sShirt_Name_Male: "80's Shirt (M)" #!String
+    80sShirt_Description: "A gnarly t-shirt that sits off the shoulder." #!String
+    LettermanJacket_Name: "Letterman Jacket" #!String
+    LettermanJacket_Description: "A jacket that's oozing with team spirit." #!String
+    BlackLeatherJacket_Name: "Black Leather Jacket" #!String
+    BlackLeatherJacket_Description: "A cool jacket made of dark black leather." #!String
+    StrappedTop_Name: "Strapped Top" #!String
+    StrappedTop_Description: "A top with a thin strap." #!String
+    ButtonDownShirt_Name: "Button Down Shirt" #!String
+    ButtonDownShirt_Description: "A simple, clean shirt." #!String
+    CropTopShirt_Name: "Crop Top Shirt" #!String
+    CropTopShirt_Description: "A shirt cut extra short on the bottom." #!String
+    TubeTop_Name: "Tube Top" #!String
+    TubeTop_Description: "A strapless top that wraps around the body." #!String
+    TieDyeShirt_Name: "Tie Dye Shirt" #!String
+    TieDyeShirt_Description: "A shirt that was tied up and then dipped into multiple colored dyes." #!String
+    SteelBreastplate_Name: "Steel Breastplate" #!String
+    SteelBreastplate_Description: "Decorative armor made from steel." #!String
+    CopperBreastplate_Name: "Copper Breastplate" #!String
+    CopperBreastplate_Description: "Decorative armor made from copper." #!String
+    GoldBreastplate_Name: "Gold Breastplate" #!String
+    GoldBreastplate_Description: "Decorative armor made from solid gold." #!String
+    IridiumBreastplate_Name: "Iridium Breastplate" #!String
+    IridiumBreastplate_Description: "Decorative armor made from pure iridium." #!String
+    FakeMusclesShirt_Name: "Fake Muscles Shirt" #!String
+    FakeMusclesShirt_Description: "You could hit the gym, or you could just wear this instead." #!String
+    FlannelShirt_Name: "Flannel Shirt" #!String
+    FlannelShirt_Description: "A nice thick button down shirt with a cross-hatch pattern. Perfect for cold winters." #!String
+    BomberJacket_Name: "Bomber Jacket" #!String
+    BomberJacket_Description: "A thick, sturdy jacket worn by fighter pilots long ago." #!String
+    CavemanShirt_Name: "Caveman Shirt" #!String
+    CavemanShirt_Description: "A stone-age classic!" #!String
+    FishingVest_Name: "Fishing Vest" #!String
+    FishingVest_Description: "Lots of pockets to store your tackle." #!String
+    FishShirt_Name: "Fish Shirt" #!String
+    FishShirt_Description: "A shirt with a fish logo." #!String
+    ShirtAndBelt_Name: "Shirt And Belt" #!String
+    ShirtAndBelt_Description: "A plain shirt with a brown belt." #!String
+    GrayHoodie_Name: "Gray Hoodie" #!String
+    GrayHoodie_Description: "A sporty gray pullover with a hood." #!String
+    BlueHoodie_Name: "Blue Hoodie" #!String
+    BlueHoodie_Description: "A sporty blue pullover with a hood." #!String
+    RedHoodie_Name: "Red Hoodie" #!String
+    RedHoodie_Description: "A sporty red pullover with a hood." #!String
+    DenimJacket_Name: "Denim Jacket" #!String
+    DenimJacket_Description: "A rugged jacket made from denim." #!String
+    TrackJacket_Name: "Track Jacket" #!String
+    TrackJacket_Description: "A light jacket made from elastic material." #!String
+    WhiteGi_Name: "White Gi" #!String
+    WhiteGi_Description: "A loose garment typically worn by martial artists." #!String
+    OrangeGi_Name: "Orange Gi" #!String
+    OrangeGi_Description: "A loose garment typically worn by martial artists." #!String
+    GrayVest_Name: "Gray Vest" #!String
+    GrayVest_Description: "A gray vest over a white shirt." #!String
+    KelpShirt_Name: "Kelp Shirt" #!String
+    KelpShirt_Description: "It looks like you just washed up on the beach. Smells like it, too." #!String
+    StuddedVest_Name: "Studded Vest" #!String
+    StuddedVest_Description: "A black vest studded with metal spikes." #!String
+    GaudyShirt_Name: "Gaudy Shirt" #!String
+    GaudyShirt_Description: "It's a therapeutic blue..." #!String
+    OasisGown_Name: "Oasis Gown" #!String
+    OasisGown_Description: "The jewel of the desert." #!String
+    BlacksmithApron_Name: "Blacksmith Apron" #!String
+    BlacksmithApron_Description: "Handed down from one generation to the next." #!String
+    HighWaistedShirt_DyeableBottom_Name: "High-Waisted Shirt" #!String
+    HighWaistedShirt_DyeableBottom_Description: "The high-waisted pants look, with a dyeable bottom." #!String
+    HighWaistedShirt_DyeableTop_Name: "High-Waisted Shirt" #!String
+    HighWaistedShirt_DyeableTop_Description: "The high-waisted jeans look, with a dyeable top." #!String
+    BasicPullover_Name_Female: "Basic Pullover (F)" #!String
+    BasicPullover_Name_Male: "Basic Pullover (M)" #!String
+    BasicPullover_Description: "It's a plain pullover." #!String
+    TurtleneckSweater_Name: "Turtleneck Sweater" #!String
+    TurtleneckSweater_Description: "Keep that neck piping hot." #!String
+    IridiumEnergyShirt_Name: "Iridium Energy Shirt" #!String
+    IridiumEnergyShirt_Description: "Show off your iridium energy." #!String
+    TunnelersJersey_Name: "Tunnelers Jersey" #!String
+    TunnelersJersey_Description: "It's a jersey for the Zuzu City Tunnelers." #!String
+    GraySuit_Name: "Gray Suit" #!String
+    GraySuit_Description: "It's a custom-tailored gray suit." #!String
+    RedTuxedo_Name: "Red Tuxedo" #!String
+    RedTuxedo_Description: "An elegant top for formal events." #!String
+    NavyTuxedo_Name: "Navy Tuxedo" #!String
+    NavyTuxedo_Description: "An elegant top for formal events." #!String
+    HolidayShirt_Name: "Holiday Shirt" #!String
+    HolidayShirt_Description: "Celebrate the Feast of the Winter Star." #!String
+    LeafyTop_Name: "Leafy Top" #!String
+    LeafyTop_Description: "Real leaves adorn this garment." #!String
+    GoodnightShirt_Name: "Goodnight Shirt" #!String
+    GoodnightShirt_Description: "A big baggy nightshirt with a detailed moon graphic." #!String
+    GreenBeltedShirt_1189_Name: "Green Belted Shirt" #!String
+    GreenBeltedShirt_1189_Description: "A green shirt with a belt." #!String
+    HappyShirt_Name: "Happy Shirt" #!String
+    HappyShirt_Description: "It's the happiest shirt." #!String
+    ShirtwithBow_Name: "Shirt with Bow" #!String
+    ShirtwithBow_Description: "This shirt comes with a little bow around the neck." #!String
+    JesterShirt_Name: "Jester Shirt" #!String
+    JesterShirt_Description: "Put your inner clown on display." #!String
+    OceanShirt_Name: "Ocean Shirt" #!String
+    OceanShirt_Description: "The shirt looks like underwater ripples." #!String
+    DarkStripedShirt_Name: "Dark Striped Shirt" #!String
+    DarkStripedShirt_Description: "A dark shirt with colorful stripes." #!String
+    BandanaShirt_1195_Name: "Bandana Shirt" #!String
+    BandanaShirt_1195_Description: "A shirt with a bandana that keeps your neck very clean." #!String
+    BackpackShirt_Name: "Backpack Shirt" #!String
+    BackpackShirt_Description: "A plain shirt with a canvas backpack." #!String
+    PurpleBlouse_Name: "Purple Blouse" #!String
+    PurpleBlouse_Description: "A stunning purple blouse." #!String
+    VintagePolo_Name: "Vintage Polo" #!String
+    VintagePolo_Description: "It's faded from age and smells like old closet." #!String
+    TogaShirt_Name: "Toga Shirt" #!String
+    TogaShirt_Description: "It's an old design, but the airflow is really nice!" #!String
+    StarShirt_Name: "Star Shirt" #!String
+    StarShirt_Description: "The star is supposed to glow in the dark, but it doesn't." #!String
+    ClassyTop_Name_Female: "Classy Top (F)" #!String
+    ClassyTop_Name_Male: "Classy Top (M)" #!String
+    ClassyTop_Description: "It feels like the softest velvet." #!String
+    BandanaShirt_1203_Name: "Bandana Shirt" #!String
+    BandanaShirt_1203_Description: "A shirt with a bandana to shield your neck from harm." #!String
+    VacationShirt_Name: "Vacation Shirt" #!String
+    VacationShirt_Description: "It's a tourist shirt from the Fern Islands." #!String
+    GreenThumbShirt_Name: "Green Thumb Shirt" #!String
+    GreenThumbShirt_Description: "It comes pre-rubbed with potting soil." #!String
+    BandanaShirt_Name: "Bandana Shirt" #!String
+    BandanaShirt_Description: "A shirt with a bandana to keep your neck soft." #!String
+    SlimeShirt_Name: "Slime Shirt" #!String
+    SlimeShirt_Description: "A shirt that looks like a big slime." #!String
+    ExcavatorShirt_Name: "Excavator Shirt" #!String
+    ExcavatorShirt_Description: "Look sharp while digging for fossils." #!String
+    SportsShirt_Name: "Sports Shirt" #!String
+    SportsShirt_Description: "Knock it out of the park with this classic look." #!String
+    HeartShirt_Name: "Heart Shirt" #!String
+    HeartShirt_Description: "Wear your heart on your sleeves with this extra soft garment." #!String
+    DarkJacket_Name: "Dark Jacket" #!String
+    DarkJacket_Description: "A dark denim jacket lined with fleece." #!String
+    SunsetShirt_Name: "Sunset Shirt" #!String
+    SunsetShirt_Description: "A shirt inspired by the most evocative time of day." #!String
+    ChefCoat_Name: "Chef Coat" #!String
+    ChefCoat_Description: "The traditional uniform of a head chef." #!String
+    ShirtOTheSea_Name: "Shirt O' The Sea" #!String
+    ShirtOTheSea_Description: "It smells like the brine of the sea." #!String
+    ArcaneShirt_Name: "Arcane Shirt" #!String
+    ArcaneShirt_Description: "You can feel a certain power from this garment." #!String
+    PlainOveralls_Name: "Plain Overalls" #!String
+    PlainOveralls_Description: "Classic overalls with a shirt that can be dyed." #!String
+    SleevelessOveralls_Name: "Sleeveless Overalls" #!String
+    SleevelessOveralls_Description: "Classic overalls with a sleeveless shirt that can be dyed." #!String
+    WhiteOverallsShirt_Name: "White Overalls Shirt" #!String
+    WhiteOverallsShirt_Description: "Classic overalls with a white shirt and belt." #!String
+    Cardigan_Name: "Cardigan" #!String
+    Cardigan_Description: "A soft button-up cardigan sweater." #!String
+    YobaShirt_Name: "Yoba Shirt" #!String
+    YobaShirt_Description: "A shirt featuring a prominent 'sign of the vessel'." #!String
+    NecklaceShirt_Name: "Necklace Shirt" #!String
+    NecklaceShirt_Description: "A shirt with a gold necklace." #!String
+    BeltedCoat_Name: "Belted Coat" #!String
+    BeltedCoat_Description: "A velvety black coat with a prominent belt." #!String
+    GoldTrimmedShirt_Name: "Gold Trimmed Shirt" #!String
+    GoldTrimmedShirt_Description: "A shirt with a gold trim." #!String
+    PrismaticShirt_Name: "Prismatic Shirt" #!String
+    PrismaticShirt_Description: "It's shimmering with prismatic energy." #!String
+    PendantShirt_Name: "Pendant Shirt" #!String
+    PendantShirt_Description: "A shirt with a big pendant." #!String
+    HighHeatShirt_Name: "High Heat Shirt" #!String
+    HighHeatShirt_Description: "The shirt almost looks like it's on fire!" #!String
+    FlamesShirt_Name: "Flames Shirt" #!String
+    FlamesShirt_Description: "Look cool with hot flames." #!String
+    AntiquityShirt_Name: "Antiquity Shirt" #!String
+    AntiquityShirt_Description: "A shirt with an ancient pattern." #!String
+    SoftArrowShirt_Name: "Soft Arrow Shirt" #!String
+    SoftArrowShirt_Description: "A soft-colored shirt with an upward arrow pattern." #!String
+    DollShirt_Name: "Doll Shirt" #!String
+    DollShirt_Description: "A shirt featuring a strange ancient doll face." #!String
+    JewelryShirt_Name: "Jewelry Shirt" #!String
+    JewelryShirt_Description: "A shirt with a simple golden chain." #!String
+    CanvasJacket_Name: "Canvas Jacket" #!String
+    CanvasJacket_Description: "A brown jacket with a fleece lining." #!String
+    TrashCanShirt_Name: "Trash Can Shirt" #!String
+    TrashCanShirt_Description: "You're wearing a trash can." #!String
+    RustyShirt_Name: "Rusty Shirt" #!String
+    RustyShirt_Description: "It's made to look like the shirt is full of rust." #!String
+    CircuitboardShirt_Name: "Circuitboard Shirt" #!String
+    CircuitboardShirt_Description: "The shirt looks like an electronics circuitboard." #!String
+    FluffyShirt_Name: "Fluffy Shirt" #!String
+    FluffyShirt_Description: "It's fuzzy." #!String
+    SauceStainedShirt_Name: "Sauce-Stained Shirt" #!String
+    SauceStainedShirt_Description: "It's already covered in spaghetti sauce so you don't have to feel guilty about it!" #!String
+    BrownSuit_Name: "Brown Suit" #!String
+    BrownSuit_Description: "It's a standard brown business suit." #!String
+    GoldenShirt_Name: "Golden Shirt" #!String
+    GoldenShirt_Description: "It's a shiny golden shirt." #!String
+    CaptainsUniform_Name: "Captain's Uniform" #!String
+    CaptainsUniform_Description: "The classic uniform of a ship's captain." #!String
+    OfficerUniform_Name: "Officer Uniform" #!String
+    OfficerUniform_Description: "The classic uniform for an officer of the law." #!String
+    RangerUniform_Name: "Ranger Uniform" #!String
+    RangerUniform_Description: "The classic uniform for a park ranger." #!String
+    BlueLongVest_Name: "Blue Long Vest" #!String
+    BlueLongVest_Description: "A long blue vest above a grey shirt." #!String
+    RegalMantle_Name: "Regal Mantle" #!String
+    RegalMantle_Description: "A regal purple garment" #!String
+    RelicShirt_Name: "Relic Shirt" #!String
+    RelicShirt_Description: "I found a golden relic and I've got the shirt to prove it!" #!String
+    BoboShirt_Name: "Bobo Shirt" #!String
+    BoboShirt_Description: "A pink shirt featuring a strange-looking guy." #!String
+    FriedEggShirt_Name: "Fried Egg Shirt" #!String
+    FriedEggShirt_Description: "Wake up, it's time for eggs." #!String
+    BurgerShirt_Name: "Burger Shirt" #!String
+    BurgerShirt_Description: "Wear what you eat!" #!String
+    CollaredShirt_Name: "Collared Shirt" #!String
+    CollaredShirt_Description: "A shirt with a starchy white collar." #!String
+    ToastedShirt_Name: "Toasted Shirt" #!String
+    ToastedShirt_Description: "It looks lightly toasted." #!String
+    CarpShirt_Name: "Carp Shirt" #!String
+    CarpShirt_Description: "A big carp head adorns the front." #!String
+    RedFlannelShirt_Name: "Red Flannel Shirt" #!String
+    RedFlannelShirt_Description: "A flannel shirt with a red and blue pattern." #!String
+    TortillaShirt_Name: "Tortilla Shirt" #!String
+    TortillaShirt_Description: "A shirt that looks like the surface of a tortilla." #!String
+    WarmFlannelShirt_Name: "Warm Flannel Shirt" #!String
+    WarmFlannelShirt_Description: "A flannel shirt with a warm brown and rose color." #!String
+    SugarShirt_Name: "Sugar Shirt" #!String
+    SugarShirt_Description: "It's bursting with 'sweet energy'." #!String
+    GreenFlannelShirt_Name: "Green Flannel Shirt" #!String
+    GreenFlannelShirt_Description: "A flannel shirt with a green and brown pattern." #!String
+    OilStainedShirt_Name: "Oil Stained Shirt" #!String
+    OilStainedShirt_Description: "It's already stained with oil for that greasy look." #!String
+    MorelShirt_Name: "Morel Shirt" #!String
+    MorelShirt_Description: "This shirt features the iconic spring mushroom." #!String
+    SpringShirt_Name: "Spring Shirt" #!String
+    SpringShirt_Description: "It's light, it's fresh, and it features the colors of spring." #!String
+    RainCoat_Name: "Rain Coat" #!String
+    RainCoat_Description: "The classic yellow rain coat." #!String
+    SailorShirt_1261_Name: "Sailor Shirt" #!String
+    SailorShirt_1261_Description: "Unlike most sailor shirts, this one has a dyeable body and a white collar." #!String
+    DarkBandanaShirt_Name: "Dark Bandana Shirt" #!String
+    DarkBandanaShirt_Description: "A dark shirt with a colorful bandana." #!String
+    DarkHighlightShirt_Name: "Dark Highlight Shirt" #!String
+    DarkHighlightShirt_Description: "A dark shirt with bright highlights." #!String
+    OmniShirt_Name: "Omni Shirt" #!String
+    OmniShirt_Description: "It's speckled with rainbow flecks!" #!String
+    BridalShirt_Name: "Bridal Shirt" #!String
+    BridalShirt_Description: "A beautiful white top, perfect for a bride." #!String
+    BrownOveralls_Name: "Brown Overalls" #!String
+    BrownOveralls_Description: "It's hard to see the dirt stains on this one." #!String
+    OrangeBowShirt_Name: "Orange Bow Shirt" #!String
+    OrangeBowShirt_Description: "A striped orange shirt with a big white bow." #!String
+    WhiteOveralls_Name: "White Overalls" #!String
+    WhiteOveralls_Description: "A nice clean variant of the classic farmer look." #!String
+    PourOverShirt_Name: "Pour-Over Shirt" #!String
+    PourOverShirt_Description: "A familiar zig-zag pattern adorns this shirt. Ahhh... that smell." #!String
+    GreenJacketShirt_Name: "Green Jacket Shirt" #!String
+    GreenJacketShirt_Description: "Inspired by the mallard's coat. The shirt can be dyed." #!String
+    ShortJacket_Name: "Short Jacket" #!String
+    ShortJacket_Description: "A short dyeable jacket over a shirt." #!String
+    PolkaDotShirt_Name: "Polka Dot Shirt" #!String
+    PolkaDotShirt_Description: "A dark shirt with dyeable polka dots." #!String
+    WhiteDotShirt_Name: "White Dot Shirt" #!String
+    WhiteDotShirt_Description: "A dyeable shirt with white polka dots." #!String
+    CamoShirt_Name: "Camo Shirt" #!String
+    CamoShirt_Description: "Helps you blend in with the surroundings." #!String
+    DirtShirt_Name: "Dirt Shirt" #!String
+    DirtShirt_Description: "You'll fit right in on the farm!" #!String
+    CrabCakeShirt_Name: "Crab Cake Shirt" #!String
+    CrabCakeShirt_Description: "Pre-slathered with aioli for your enjoyment. Bon Appetit!" #!String
+    SilkyShirt_Name: "Silky Shirt" #!String
+    SilkyShirt_Description: "It's made from a smooth silky substance." #!String
+    BlueButtonedVest_Name: "Blue Buttoned Vest" #!String
+    BlueButtonedVest_Description: "It's a blue shirt with dyeable sleeves." #!String
+    FadedDenimShirt_Name: "Faded Denim Shirt" #!String
+    FadedDenimShirt_Description: "It's a denim shirt with a dusty, faded look." #!String
+    RedButtonedVest_Name: "Red Buttoned Vest" #!String
+    RedButtonedVest_Description: "It's a red shirt with dyeable sleeves." #!String
+    GreenButtonedVest_Name: "Green Buttoned Vest" #!String
+    GreenButtonedVest_Description: "It's a green shirt with dyeable sleeves." #!String
+    TomatoShirt_Name: "Tomato Shirt" #!String
+    TomatoShirt_Description: "A shirt that answers the big question: 'Tomatoes are'... (but the rest is smudged)." #!String
+    FringedVest_Name: "Fringed Vest" #!String
+    FringedVest_Description: "A fringed brown vest over a sleeveless shirt." #!String
+    GlobbyShirt_Name: "Globby Shirt" #!String
+    GlobbyShirt_Description: "It's got an indistinguishable glob pattern." #!String
+    MidnightDogJacket_Name: "Midnight Dog Jacket" #!String
+    MidnightDogJacket_Description: "It's dyed a deep midnight blue from squid ink." #!String
+    ShrimpEnthusiastShirt_Name: "Shrimp Enthusiast Shirt" #!String
+    ShrimpEnthusiastShirt_Description: "For those whose appetites demand a steady supply of shrimp." #!String
+    TeaShirt_Name: "Tea Shirt" #!String
+    TeaShirt_Description: "A shirt inspired by the popular beverage." #!String
+    TrinketShirt_Name: "Trinket Shirt" #!String
+    TrinketShirt_Description: "A shirt with large colored glass orbs attached to it." #!String
+    DarknessSuit_Name: "Darkness Suit" #!String
+    DarknessSuit_Description: "A black suit top with a faded red pocket square." #!String
+    MineralDogJacket_Name: "Mineral Dog Jacket" #!String
+    MineralDogJacket_Description: "It's infused with trace minerals from the ocean." #!String
+    MagentaShirt_Name: "Magenta Shirt" #!String
+    MagentaShirt_Description: "This particular shade is unique to the magma cap mushroom." #!String
+    GingerOveralls_Name: "Ginger Overalls" #!String
+    GingerOveralls_Description: "The color scheme is inspired by ginger ale." #!String
+    BananaShirt_Name: "Banana Shirt" #!String
+    BananaShirt_Description: "Consider this shirt, if you happen to love bananas." #!String
+    YellowSuit_Name: "Yellow Suit" #!String
+    YellowSuit_Description: "It's a bold statement to wear this suit." #!String
+    HotPinkShirt_Name: "Hot Pink Shirt" #!String
+    HotPinkShirt_Description: "A silky shirt in tropical pink." #!String
+    TropicalSunriseShirt_Name: "Tropical Sunrise Shirt" #!String
+    TropicalSunriseShirt_Description: "This shirt smells like coconut." #!String
+    IslandBikini_Name: "Island Bikini" #!String
+    IslandBikini_Description: "A Fern Islands classic." #!String
+    MagicSprinkleShirt_Name: "Magic Sprinkle Shirt" #!String
+    MagicSprinkleShirt_Description: "A shirt with prismatic sprinkles." #!String
+    PrismaticShirt_DarkSleeves_Name: "Prismatic Shirt" #!String
+    PrismaticShirt_DarkSleeves_Description: "It's shimmering with prismatic energy. Has dark sleeves." #!String
+    PrismaticShirt_LightSleeves_Name: "Prismatic Shirt" #!String
+    PrismaticShirt_LightSleeves_Description: "It's shimmering with prismatic energy. Has white sleeves." #!String
+    MysteryShirt_Name: "Mystery Shirt" #!String
+    MysteryShirt_Description: "Made from the leftovers of a Mystery Box." #!String
+

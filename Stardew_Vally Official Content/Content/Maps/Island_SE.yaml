@@ -1,0 +1,24 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "xTile.Pipeline.TideReader, xTile"
+            version: 0
+
+
+    numSharedResources: 0
+
+content: {} #!TBin
+extractedMaps: 
+    - 
+        path: ""
+        tilesheets: 
+            - "island_tilesheet_1.png"
+            - "summer_outdoorsTileSheet.png"
+            - "island_tilesheet_2.png"
+
+
+

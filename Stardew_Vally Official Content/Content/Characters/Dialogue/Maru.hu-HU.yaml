@@ -1,0 +1,131 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Introduction: "Ó! Nem te vagy az, aki most költözött ide?#$b#Én Maru vagyok. Már vártam, hogy megismerjelek!$h#$e#Tudod, egy ilyen kis városban egy új arc valóban megváltoztathatja a közösség dinamikáját. Ez izgalmas!" #!String
+    FlowerDance_Accept: "Heh... persze! Hirtelenjében sokkal mókásabbnak tűnik a tánc.$h" #!String
+    AcceptBirthdayGift_Positive: "Hé, ez micsoda, egy szülinapi ajándék? Ez nagyszerű! Köszönöm, hogy emlékeztél rám!$h" #!String
+    AcceptBirthdayGift_Negative: "Hé, ez micsoda, egy szülinapi ajándék? Ez... öhm, nos, egy ajándék! Azért köszönöm, hogy emlékeztél rám." #!String
+    AcceptGift_(O)StardropTea: "Mmm... ennek jó az íze? Ez egy nagyon remek ajándék." #!String
+    AcceptGift_(O)787: "Ez tökéletes lesz a legújabb projektjeim energiaellátásához! Köszönöm @!$h" #!String
+    AcceptGift_(O)336: "Áh, tiszta arany... Nem a legerősebb alapanyag, de van pár nagyon értékes tulajdonsága!$h" #!String
+    AcceptGift_(O)337: "Óh, váó! Egy ritka elem. Az elmélet szerint a világunk összes irídiumja meteoritokból származik...$h" #!String
+    AcceptGift_(O)122: "Óóóh, ez izgalmas! Szétszedem és megnézem, hogy vissza tudom-e fejteni a technológiát.$h" #!String
+    AcceptGift_(O)910: "Áhh! Azzal légy óvatos! És te csak úgy puszta kézzel fogod?$9#$b#... Elnézést... hehe... Ha megfelelő módon kezeljük, akkor tökéletes lesz ahhoz az egzotikus gépezethez amit készítek." #!String
+    dating_Maru: "Öhm... Ne közöld a hírt apámmal, rendben? Majd én intézem." #!String
+    dating_Maru_memory_oneday: "Mmm... Ma elég nehezen tudok a munkára koncentrálni.$l" #!String
+    GreenRain: "Szeretnék mintákat gyűjteni apámmal, de anyám hajthatatlan és azt akarja, hogy itt maradjunk..." #!String
+    GreenRain_2: "Ez az olyan ritka lehetőségek egyike, ahol egy egyedi jelenséget tanulmányozhatunk... minden pillanat számít!" #!String
+    eventSeen_9: "Több időt kellett volna azzal töltenem, mielőtt megmutatom neked...$s" #!String
+    eventSeen_9_memory_oneweek: "Hogy van a kezed?#$b#Hadd nézzem csak... Hé, már egész jól néz ki!$h" #!String
+    married_Sebastian: "Hé, azt hiszem most már testvérek vagyunk!$h^Hé, azt hiszem most már nővérek vagyunk!$h#$e#Annyira boldog vagyok, hogy Sebastian végre kijutott az alagsorból...#$e#Minden jót kívánok kettőtöknek!" #!String
+    married_Penny: "Hé, gratulálok!$h#$b#Emlékszem arra, amikor Penny először mondta, hogy érez valamit irántad...#$b#Kissé szégyenlős volt, de én már azonnal tudtam, hogy tényleg így érez... nem mondana ilyesmit, ha nem gondolná komolyan!" #!String
+    married_Harvey: "Mindig is túl egészségesnek tűntél ahhoz, hogy ilyen sokat legyél a klinikán... Most már kezd összeállni a kép..." #!String
+    Resort_Entering: "Willy említette, hogy segítettél megjavítani a hajót. Kösz, hogy megcsináltad!" #!String
+    Resort_Leaving: "Ez jó móka volt!" #!String
+    Resort: "Pár új csillaghal fajt fedeztem fel. A nagy lilák a kedvenceim, de mindegyikük nagyon érdekes!" #!String
+    Resort_Towel: "*meghökken*... Napfogyatkozás van!$3#$b#Ó... mindegy. Csak elálltad a Napot." #!String
+    Resort_Towel_2: "Oly távol vagyunk idekint a civilizációtól.#$b#Képzeld el, hogy mennyi csillagot láthatsz este.#$e#Ki tudja, talán egy-két repülő csészealjat is láthatunk!$h" #!String
+    Resort_Bar: "Mmmm... Miért ennyire jók a trópusi gyümölcsök?" #!String
+    Resort_Shore: "Vajon Willy hagyná, hogy egyszer elhozzam ide a teleszkópomat...#Olyan tiszta itt az ég, fogadok, hogy még Pelikán várost is látnám a horizonton.#Talán még téged is láthatlak %farm farmon rohangálni!" #!String
+    FlowerDance_Accept_Spouse: "Hát persze... *suttogva* Aztán otthon összebújhatunk?$l" #!String
+    FlowerDance_Decline: "Ez hízelgő! De... Nem." #!String
+    divorced: "Nincs mit mondanunk egymásnak.$a" #!String
+    breakUp: "Nem vagyok elég jó neked, mi?$a#$b#Rendben...$s" #!String
+    dumped_Girls: "Van ám képed velem társalogni!$a" #!String
+    secondChance_Girls: "Elvesztetted a tiszteletemet irántad, @... de hajlandó vagyok megbocsátani neked.$s" #!String
+    Mon: "Amikor technikai problémával küszködök, akkor mindig teszek egy sétát.#$e#Meglepő, hogy egy kis környezetváltozás milyen sokat segíthet." #!String
+    Tue: "Találkoztál már anyámmal? Ő a város ácsa." #!String
+    Wed: "Keddenként és csütörtökönként Harvey klinikáján dolgozom.#$b#Azt mondta, hogy örül ha a környéken vagyok, ha netán elromlana egy orvosi felszerelése!$h#$e#Gondolom gazdának lenni könnyű, ugye?" #!String
+    Thu: "Idén nyáron sok időt tervezek eltölteni a teleszkópommal." #!String
+    Thu4: "Néha mikor az űrt bámulom a teleszkópommal, egy nagyon fura érzés lesz rajtam úrrá... Mintha ezt nem szabadna látnunk.#$e#Tudom, butaság...$h" #!String
+    Sat: "Ismered apámat, Demetriust? Ő egy tudós. Jó móka segíteni neki a laboratóriumában." #!String
+    Sat2: "Nagy élvezettel tölt el, mikor valamit meg tudsz javítani magadtól ahelyett, hogy kidobnád." #!String
+    Sat4: "Egyesek szerint 'varázslat nem létezik'... de egyáltalán gondolkodtak már úgy igazán a mágnesességen?" #!String
+    Sat6: "Ha az emberi testre gondolsz, elég nehéz elhinni, hogy az egész csak úgy 'működik'." #!String
+    Sat8: "Tudod, gondolkodtam... hiába ez a sok technológia a világban, egy igazi emberi barátnál nincs jobb." #!String
+    Fri: "Hé, elnézést, ha szeszélyesnek tűnnék... Kicsit elfáradtam a tegnapi munkában.#$c .5# Tíz doboznyi orvosi jegyzetet kellett felcipelnem a padlásra!#$e#Egyhuzamban négy órán át kellett a páciensek iratait rendezgetnem! " #!String
+    Sun: "Szia!#$q 3/4 Sun_01_old#Jó móka a farmon dolgozni?#$r 3 0 Sun_01_01#Igen.#$r 4 0 Sun_01_02#Nem." #!String
+    Sun_01_old: "$p 3#Hé, ismét eltelt egy hét a farmos munkáddal! Úgy tűnik elég jól mennek számodra a dolgok.$h|Ismét egy fárasztó hét telt el a farmodon, ugye? Biztosan sok munka lehet...$s" #!String
+    Sun_01_01: "Nos, az jó dolog, nem?$h" #!String
+    Sun_01_02: "Jujjj! Elnézést. Gondolkoztál már azon, hogy valami másba kezdj bele...?$s" #!String
+    Tue2: "Nézz be hozzánk, ha fejleszteni akarod az épületeidet.#$e#Mindig jó látogatókat fogadni." #!String
+    Fri4: "Az anyám ács, az apám pedig tudós. Szerintem érthető, hogy miért szeretek kütyüket készítgetni." #!String
+    Fri6: "Az apám nagyon logikus, míg az anyám nagyon ösztönös. Ez a különbség néha konfliktushoz vezet...$s" #!String
+    Mon6: "Néha a fejem annyira megtelik zagyvaságokkal, hogy nehezen tudok gondolkodni. Szokott veled ilyesmi történni?#$e#A friss levegő általában segít." #!String
+    Wed8: "Örülök, hogy a klinikán dolgozhatom... Úgy érzem, hogy segítek a helybelieknek.#$e#Dr. Harvey? Kedves ember, de nem igazán az én típusom..." #!String
+    Thu10: "Ó, @! Szeretnél valamiről beszélgetni velem?$l" #!String
+    Event_Hospital_1: "De ő biztosan tudni fogja, hogy mi a különbség! Ez a minta teljesen tönkrement!%fork$s" #!String
+    Event_Hospital_2: "Oké. Akkor téged foglak hibáztatni.$u" #!String
+    Event_Hospital_3: "Igazad van. El kell mondanom neki az igazat.%fork$u" #!String
+    Event_Space1: "Ugye milyen csodálatos?" #!String
+    Event_Space2: "Ha belegondolok így is fel lehet fogni...$s#$b#De attól még hihetetlen, nemde?" #!String
+    Event_Cut1: "Ó, nem?$8#$b#Nos, ettől egy kicsit jobban érzem most magam. Köszönöm." #!String
+    Event_Cut2: "Jaj ne! Áááhhh... Nagyon-nagyon sajnálom!$s" #!String
+    event_robot1: "Köszönöm! Ez rengeteget jelent számomra, @!#$b#Tudom, hogy te nem a kütyük embere vagy... de értékelem, hogy érdeklődsz azok iránt, amiket csinálok.#$b#Bárcsak valahogy meghálálhatnám ezt neked.$l" #!String
+    event_robot2: "Micsoda? Mindazok után, hogy azt mondta nem akar szolga lenni? Milyen rideg...%fork$a" #!String
+    event_robot3: "Heh...$8#$b#Igen, de végülis valami ilyesmit mondott, nem?$l#$b#...Őőő...$l" #!String
+    event_robot4: "...$8#$b#@...$8" #!String
+    event_robot_explain1: "...$s#$b#Igazad van, valóban úgy programoztam be, hogy emberként viselkedjen... de az idegrendszeri központja annyira komplex, hogy nem lehetek abban biztos, hogy nem tört elő magától némi öntudat.$8#$b#Továbbá nem tűnik kissé arrogánsnak azt feltételezni, hogy az emberszerű öntudat a lét egyetlen közvetítőjének valamirevaló forrása? A számítógépek agya másképp működik, mint a miénk, de ez nem jelenti azt, hogy figyelmen kívül kell hagynunk őket.$8" #!String
+    event_robot_explain2: "Értem. Nos, nem volt jó vicc.$a" #!String
+    event_robot_explain3: "Ez szörnyű! Mi ütött beléd, @?$a#$b#Ezt a beszélgetést el fogom felejteni... most nem vagy önmagad.$a" #!String
+    summer_1: "Ez remek évszak lesz a csillagászáshoz." #!String
+    summer_Mon: "Hmm... Milyen kütyüt kellene összeeszkábálnom idén nyáron?" #!String
+    summer_Mon6: "Jöjj a szobámba, ha bütykölni akarnál a kütyüjeimmel." #!String
+    summer_Tue: "Sebastian a féltestvérem, ha ezt nem tudtad volna.#$e#Teljesen másképp nézünk ki." #!String
+    summer_Tue4: "Sebastian alig beszél hozzám. Vajon egyáltalán kedvel engem?#$e#Ez szomorú, szeretném, ha lenne egy testvérem, de ő nem akként viselkedik." #!String
+    summer_Wed: "Élvezed az évszakot?#$e#Olyan meleg van idén.$h" #!String
+    summer_Wed4: "Pennyvel egy szezonális könyvklubbot alakítottunk.#$b#Csak mi ketten vagyunk benne, de mégis mókás átbeszélni, hogy mit olvastunk!" #!String
+    summer_Thu: "Elnézést, a készítendő kütyüjeimen gondolkoztam.#$q 35/36 Thu_01_old#Úgy döntöttem, hogy egy nap építeni fogok egy robotot.#$r 35 30 Thu_0#Az neked könnyű lehet.#$r 36 -50 Thu_01_01#Legyél inkább realisztikusabb.#$r 35 40 Thu_01_02#Az nagy kihívásnak hangzik." #!String
+    Thu_01_old: "Még találkozunk." #!String
+    Thu_0: "Komolyan? Ugye nem csak hízelegni akarsz nekem?" #!String
+    Thu_01_01: "Azt hiszed nem lennék képes rá?$s" #!String
+    Thu_01_02: "Igazad van, de én szeretem a kihívásokat!$h" #!String
+    summer_Sat: "Hé, van valamilyen érdekes farmos történeted számomra?#$e#Úgy látom nincs." #!String
+    summer_Fri: "Tegnap a klinikán dolgoztam. Egy páciensünk se volt.#$e#Azt hiszem az emberek nyáron betegednek meg a legkevésbé." #!String
+    summer_Sun: "Fogadok, hogy egyre jobban érdekelnek téged mostanság a termések.#$b#Apa szerint az év ezen szakaszában rengeteg egzotikus növény terem a völgyben." #!String
+    summer_Fri2: "Hé, mesélj valamilyen farmos történetet.#$e#Ez nagyon érdekes!" #!String
+    summer_Wed2: "Most csak képzelem, vagy hirtelen tényleg nagy forróság lett?#$e#Lehet csak én képzelem." #!String
+    summer_Sun6: "Egy nap világhírű feltaláló leszek.$u#$e#Szerencséd, hogy a barátod vagyok!#$b#...csak viccelek." #!String
+    summer_Tue8: "@, ma nagyon jól nézel ki.$h" #!String
+    summer_Thu10: "Hogy marad a kezed olyan puha a sok farmos munka után?" #!String
+    fall_Mon: "Felfedezted már a bányákat? Azt hallottam, hogy ott hasznos alapanyagokat gyűjthetsz be." #!String
+    fall_Tue: "A fák ma gyönyörűen néznek ki!$h" #!String
+    fall_Thu: "A világ másik táján most épp tavasz van. Na ezt képzeld el!" #!String
+    fall_Wed: "Bleh... Nincs kedvem holnap dolgozni." #!String
+    fall_Fri: "Fogadok, hogy a mostani évszakban több embert fogunk látni a klinikán.$s#$e#De remélem, hogy mindenki egészséges marad." #!String
+    fall_Sat: "Ezek a lehulló levelek jó tápanyagot biztosítanak majd a gombáknak és egyéb apró organizmusoknak.$u#$e#Ugye milyen érdekes?" #!String
+    fall_Sun: "Hé, igyunk egyet egy újabb jó hétre! *kocc*" #!String
+    fall_Tue2: "@, annyira szeretem azt, ahogyan most kinéznek a fák!#$e#Tudom, hogy neked is tetszenek." #!String
+    fall_Wed4: "Ha netán volna pár extra fémed a környéken, azt nyugodtan odaadhatod nekem a projektjeimhez.#$e#De csak akkor, ha neked nincs szükséged rá." #!String
+    fall_Fri6: "Mostanság elég optimistának érzem magam...$h" #!String
+    fall_Mon8: "Holnap meglátogathatnál engem a klinikán. Reggel 10-től délután 4-ig dolgozom.$h" #!String
+    fall_Thu10: "Egy levél van a hajadban. Hadd szedjem ki neked.#$e#...$h" #!String
+    winter_1: "Ó öregem, nagyon hideg van...$s" #!String
+    winter_Mon: "Láttad azt a hóembert, amit építettem?$h" #!String
+    winter_Tue: "A hajam olyan göndör lesz ebben a száraz időben. *sóhaj*" #!String
+    winter_Wed: "Azt hiszem a tél jó idő arra, hogy a kütyüjeimen dolgozzak.#$e#Vajon készíthetek valami hasznosat a gazdák számára?" #!String
+    winter_Thu: "Hé! Mi a helyzet?#$e#Most jó az idő a barlangok feltárására.#$e#Én is mennék, de Apám kiakadna." #!String
+    winter_Fri: "Remélem idén nem fogok megfázni." #!String
+    winter_Sat: "Építettél már egy kemencét?#$e#Segítségükkel a nyers alapanyagokat, mint például az érceket hasznos termékekké alakíthatod át.$u" #!String
+    winter_Sun: "Mikor fázok olyan álmos leszek..." #!String
+    winter_Sat2: "Hé, ha netán bármelyik farmos eszközöd elromlana, csak szólj nekem.$h" #!String
+    winter_Tue4: "Hé, van valami ötleted, hogy milyen új kütyüt készítsek?#$e#Mhmm. Bízok a véleményedben." #!String
+    winter_Fri6: "Ma frissnek tűnsz. Gondolom ezt a téli levegő teszi." #!String
+    winter_Mon8: "Szia @!$h#$e#Hé, nem gondolod, hogy a hóemberem egy kicsit hasonlít rád?" #!String
+    winter_Thu10: "@, gyere közelebb. Fázom.$l#$e#A kezeim annyira szárazak a téli levegő miatt. Ezért elnézést kérek.$l" #!String
+

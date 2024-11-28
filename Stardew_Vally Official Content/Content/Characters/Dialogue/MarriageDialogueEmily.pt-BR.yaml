@@ -1,0 +1,77 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Rainy_Day_0: "Aonde será que os insetos voadores vão quando chove? Eles não se machucam com a chuva?" #!String
+    Rainy_Day_1: "Um dia como este é uma bênção da mãe natureza." #!String
+    Rainy_Day_2: "Bom dia! Peguei este presente para você. Não se preocupe, já o purifiquei com incenso de salva.[428 440 444 338 207]" #!String
+    Rainy_Day_3: "Eu gostaria de libertar o papagaio, mas sua asa nunca sarou. Ainda assim, ele parece contente. Eu tenho lhe dado muita muita atenção. #$e#Ele me disse que está feliz aqui." #!String
+    Rainy_Day_4: "Eu nunca te contei isso... mas quando você se mudou pra cá pela primeira vez, sonhei com você. Desde então, soube que nossos caminhos se cruzariam.$4" #!String
+    Rainy_Night_0: "Cada momento possui uma beleza preciosa e única... consegue notar? Às vezes, é fácil de se esquecer disso." #!String
+    patio_Emily: "Este é o meu local favorito para meditação.#$e#Visualizo a energia deste jardim de cristal fluindo pelo meu corpo." #!String
+    Rainy_Night_1: "Posso ouvir as plantas conversando umas com as outras... elas estão tão felizes após a chuva de hoje!" #!String
+    Rainy_Night_2: "Como foi o seu dia, @? Você está ensopado.^Como foi o seu dia, @? Você está ensopada." #!String
+    Rainy_Night_3: "Meu dia foi muito tranquilo. E o seu, como foi?" #!String
+    Rainy_Night_4: "Quer um pouco de sobremesa? Esta aqui é a minha receita crua, sem glúten, e adoçada só com xarope de cacto.[232 234 223 220]$h" #!String
+    Rainy_Night_5: "Você já entrou em transe com o som da chuva?" #!String
+    Indoor_Day_0: "Mais um dia muito bonito na Fazenda %farm... tenho fé que algo muito bom vai acontecer hoje!$h" #!String
+    Indoor_Day_1: "Aqui, tome. É para você.[428 440 444 338 207 395 749]" #!String
+    Indoor_Day_2: "Você deve ter dormido muito bem, acordou tão ${animado^animada}$!$h" #!String
+    Indoor_Day_3: "Meu horóscopo para o dia de hoje não é muito bom... mas vou dar o melhor de mim, como sempre. Vamos trabalhar!" #!String
+    Indoor_Day_4: "Urgh... blé... comi muitos bolinhos no café da manhã.$s" #!String
+    Indoor_Night_0: "Você está com um buraco novo na sua camiseta? Sem problema, posso costurá-lo." #!String
+    Indoor_Night_1: "Bem-vindo ao lar, @. Espero que o seu dia tenha sido maravilhoso.^Bem-vinda ao lar, @. Espero que o seu dia tenha sido maravilhoso." #!String
+    Indoor_Night_2: "Já é hora de dormir? Nossa, o dia correu tão rápido pra mim!​$u" #!String
+    Indoor_Night_3: "Ah, que cheiro delicioso! Só pode ser o seu. $h#$e#Que cheiro bom." #!String
+    Indoor_Night_4: "Eu varri a casa toda, lavei as janelas, passeio o aspirador, e limpei o congelador. Que dia produtivo!" #!String
+    Outdoor_0: "Adoro acordar bem cedo. Há um certo frescor no ar, e a vida selvagem é muito mais ativa." #!String
+    Outdoor_1: "O que está programado para hoje, amor?" #!String
+    Outdoor_2: "Aaaah! Aaah! Eu vi outro! $h#$e#Estou contando esquilos." #!String
+    Outdoor_3: "Um pouco de luz do sol faria bem para você. Só não vai se torrar, hein?" #!String
+    Outdoor_4: "Bom dia! Estava me perguntando quando você sairia da cama! $h#$e#Sem problemas, @... você merece uma boa noite de descanso." #!String
+    OneKid_0: "Espero que possamos criar %kid1 para ser gentil com os outros. Isso é mais importante que tirar 10 na escola." #!String
+    OneKid_1: "Será que uma criança basta, ou devemos ter outro filho?#$e#Vamos ver onde o futuro nos levará." #!String
+    OneKid_3: "Eu acendi uma vela verde-clara e benzi %kid1 com arruda. Isso deve afastar os espíritos perigosos." #!String
+    TwoKids_1: "Uma casa grande, duas crianças e um papagaio... quanta coisa para fazer!" #!String
+    TwoKids_2: "Bem, %kid2 tem o cabelo igual o seu...$u" #!String
+    TwoKids_3: "Ah, já alimentei as crianças com pasta de quina orgânica e leite de cabra. Concentre-se na fazenda!" #!String
+    Good_1: "É tão divertido viver junto! Sempre achei que viveria só a minha vida toda." #!String
+    Good_2: "Era o nosso destino viver juntos... acredito nisso de todo o meu coração!" #!String
+    Good_3: "Obrigada por me fazer parte de seu lar. Amo esta vida nova.$4" #!String
+    Good_4: "Nossas vibrações estão em perfeita sintonia. Não consegue sentir?" #!String
+    Good_5: "Eu estava admirando o meu amuleto de casamento... a concha é tão bonita! Sinto uma energia azul pura radiando dela.$l" #!String
+    Good_6: "Tive um outro sonho sobre nós noite passada. Tínhamos escalado uma árvore de cristal, e víamos uma pradaria exuberante. Eu tenho esse sonho o tempo todo.#$e#Não sei o que significa, mas acho que é algo bom." #!String
+    Neutral_0: "Espero que você ainda goste de mim quando meu cabelo ficar cinza e desbotar." #!String
+    Neutral_8: "Sinto-me pouco inspirada hoje.$s" #!String
+    funLeave_Emily: "Acho que vou visitar a cidade hoje, e depois vou ajudar no salão. Tenha um bom dia!" #!String
+    funReturn_Emily: "Meu dia foi muito legal... é muito bom sair de casa de vez em quando." #!String
+    spring_2: "As minhas amigas, as plantas, voltaram à vida. Estou muito contente." #!String
+    spring_1: "Feliz ano novo, docinho. Vamos fazer deste um dia especial.$4" #!String
+    spring_22: "Huum... estava pensando: que tal uma salada de capim para o jantar hoje?" #!String
+    summer_20: "A energia dos nossos corpos muda assim como as estações. Entender o seu ritmo único é o primeiro passo para a harmonia interior." #!String
+    summer_2: "Que Ioba abençoe você neste dia maravilhoso.$7" #!String
+    fall_1: "Metade do dia já se passou. Dá para acreditar?" #!String
+    fall_25: "Nossos corpos estão naturalmente sintonizados com as estações. A luz e a cor do outono nos lembra a nos prepararmos para o árido inverno.#$e#Pra nossos ancestrais distantes, este sentimento era vital. Pra nós, É só mais um ruído na vida moderna." #!String
+    winter_15: "Em um dia assim, me dá vontade de tomar canela, noz-moscada, cravo e cardamomo." #!String
+    winter_5: "Por que tem que haver guerras e tanto ódio no mundo?$s" #!String
+    winter_2: "Não consigo parar de pensar nos pobres esquilos congelados lá fora...$s" #!String
+    spring_Emily: "Estou me sentindo muito feliz por um novo ano de colheita, @!$h" #!String
+    fall_Emily: "Bebi uma supervitamina esta manhã e me sinto iiiiincrível!$h" #!String
+    summer_Emily: "Ufa! Está quente, mas aqui está ótimo, né?#$e#Acho que vou encontrar alguns papagaios selvagens hoje." #!String
+    winter_Emily: "Ops! Meu cabelo congelou de novo!$s" #!String
+    spouseRoom_Emily: "Vou passar um tempo com o papagaio hoje. Parte o meu coração saber que ele não vai voar de novo.$u" #!String
+

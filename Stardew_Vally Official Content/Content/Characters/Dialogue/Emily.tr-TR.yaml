@@ -1,0 +1,125 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Introduction: "Ah!.. Yüzünden okuyabiliyorum. Pelikan Kasabası'nda olmak hoşuna gidecek.#$b#Akşam yapacak bir şey bulamazsan salona uğra. Orada çalışıyorum! " #!String
+    AcceptBirthdayGift_Positive: "Aa, doğum günümü hatırlamışsın! Teşekkürler @! Çok naziksin.$h" #!String
+    AcceptBirthdayGift_Negative: "Aa, doğum günümü hatırlamışsın! Teşekkürler @! Gerçekten çok naziksin...$h#$b#...*koklar*...*koklar*... Bu koku da ne?$s#$b#... Bu ne...?$s" #!String
+    FlowerDance_Accept: "Evet, seninle dans etmeyi çok isterim @!$h#$e#Çok heyecanlandım şimdi... Çok eğlenceli olacak!" #!String
+    AcceptGift_(O)StardropTea: "Vay, teşekkür ederim! Bunu yatmadan önce içersen daha canlı rüyalar göreceğini duydum." #!String
+    AcceptGift_(TR)ParrotEgg: "Güzel, hâlâ sıcak... Zavallı şey, annen nerede? *fısıldar* ...Ben annen olurum, merak etme... Zavallı ufaklık.$s#$b#Onu bana getirdiğin için çok sağ ol @. Ona iyi bakacağım." #!String
+    AcceptGift_(O)68: "$c 0.5#Vay be... Teşekkür ederim! Bu renk, bugünkü ruh halime tam uydu.$h#Bu taşın sıcak, sakinleştirici enerjisi bana biraz odaklanma şansı veriyor... Böyle bir günde tam ihtiyacım olan şey. Teşekkürler!" #!String
+    AcceptGift_(O)70: "$c 0.5#Ne acayip! Bugün bana yeşim taşı vereceğine dair bir rüya görmüştüm!$h#Ah, gerçekten yeşim! Servet mıknatısıymış bu... Birilerinin cebinde fazladan birkaç kuruş olsun, değil mi?$h" #!String
+    AcceptGift_(O)66: "$c 0.5#Ah, bu çok güzel @! Umarım bunu ararken başın çok belaya girmemiştir.$h#Ametist! Salonda geç saatlere kadar çalıştığım zamanlarda bu beni korur." #!String
+    AcceptGift_(O)64: "$c 0.5#Vay be, şu renge bak! Kıyafetime çok uyuyor.$h#Bu mükemmel... Son zamanlarda biraz cansız hissediyordum. Yakutlar ruhun enerjisini tazelemekte birebirdir!" #!String
+    AcceptGift_(O)62: "$c 0.5#Ah, ne kadar pürüzsüz! Elimde tuttuğumda... Elimde tuttuğumda, denizkızlarının şarkılarını kalbimde duyuyorum. Teşekkür ederim!#Teşekkürler! Bunu yastığımın altına koyacağım, umarım rüyamda okyanusu görürüm." #!String
+    AcceptGift_(O)60: "$c 0.5#Ah!.. Heheh... Bugün bana neden bu taşı verdiğini gayet iyi biliyorum. Çok ilginç...#Vay, çok güzel! Rengi bana ormanın derinliklerinde yatan ruhani gücü hatırlatıyor... Sen de bu enerjiyi hissediyor musun?" #!String
+    GreenRain: "Bunun arkasında bir anlam yatıyor olmalı... Doğa bize bir şey anlatmaya çalışıyor.$3#$e#Ama ne? Bilmiyorum... Emin olmak çok güç. Çok güçlü bir şey olduğunu hissediyorum...$3" #!String
+    GreenRain_2: "Sen de hissediyor musun? Orman şarkı söylüyor! Ağaçlar neşe ile dans ediyor!" #!String
+    married_Haley: "Bu çok tatlı bir düğündü... Haley ve senin adına çok sevindim!$h" #!String
+    divorced_Haley: "Haley, boşanma sonrası kalbi kırılmayacak... En azından bunu göstermeyecek kadar gururlu.$3" #!String
+    eventSeen_471942: "Selam @. Bugün seni görmeyi bekliyordum." #!String
+    eventSeen_463391: "Yaralı bir hayvandan daha üzücü bir şey yok...$s" #!String
+    purchasedAnimal_Sheep: "Artık koyunun olduğuna göre kumaş yapabilirsin! Kumaşlarla bir sürü kıyafet üretme şansın olacak. Bekle ve gör." #!String
+    eventSeen_11_memory_oneweek: "Tarif kullanmadan yemek yapmayı hiç denedin mi? Özgür hissettiriyor.#$b#Kim bilir... Belki şahane bir şey keşfedersin!" #!String
+    eventSeen_101_memory_oneweek: "Clint'le olan gezimiz oldukça eğlenceliydi!#$b#Yalnız, oraya vardığımızın ilk on dakikasında üzerine kök birası döküldü ve sonra gece boyunca neredeyse hiç konuşmadı.$3" #!String
+    eventSeen_4081148: "Hey, seni Sam'in gösterisinde gördüm. Eğlenceliydi!$h#$e#Şehir epey kötü kokuyordu ama.$s" #!String
+    eventSeen_2123343_memory_oneday: "Kamp gezimizi uzunca bir süre unutmayacağım...$l" #!String
+    dating_Emily: "%Emily'nin yüzünde koca bir gülümseme var." #!String
+    dating_Emily_memory_oneday: "Beraber çok eğleneceğiz, biliyorum.$h" #!String
+    married_Shane: "Eh, artık evlendiğinize göre Shane'in Salon'a daha az geleceğini düşünüyorum!#$e#Bu muhtemelen iyi bir şey. Fakat devamlı bir müşteriyi kaybetmek daima üzücüdür...$s" #!String
+    Resort_Entering: "Buraya bayılıyorum! Burası papağandan geçilmiyor!" #!String
+    Resort_Leaving: "Ah... ciğerlerim açıldı." #!String
+    Resort_Shore: "Hissedebiliyor musun? Denizin yoğun bir iyileştirici gücü var." #!String
+    Resort_Chair: "Eğleniyor musun @? Arada bir durup nefes almayı unutma sakın." #!String
+    Resort_Bar: "Bir kez bile olsa tezgâhın bu tarafında olmak harika!$h" #!String
+    Resort: "Kalbini güneşe açarsan içine sevgi dolu bir enerji aşılandığını hissedeceksin.$h" #!String
+    Resort_Dance: "%Emily kendini müziğe kaptırmış durumda." #!String
+    FlowerDance_Accept_Spouse: "Elbette aşkım. Ben de senin teklif etmeni bekliyordum!$h" #!String
+    FlowerDance_Decline: "Çok üzgünüm... ama çoktan başkasına söz verdim.$u" #!String
+    divorced: "@... Kalbimi kırdın... Seninle daha fazla konuşamam.$s#$e#Lütfen, iyileşmeme izin ver...$s" #!String
+    dumped_Girls: "...$s" #!String
+    breakUp: "A...Ama aramızda özel bir şey var sanmıştım... *burnunu çeker*$s" #!String
+    reject_866: "Ne kadar da güzel... Buna bayılacak bir arkadaşım var ama çok uzaklarda yaşıyor..." #!String
+    secondChance_Girls: "@... Sana ikinci bir şans vermeye hazırım. Özünde hâlâ iyi bir insan olduğuna inanıyorum.$s" #!String
+    Mon: "Sana Haley'le kardeş olduğumu söylemiş miydim? Garip, değil mi?" #!String
+    Mon2: "Gizli bir hobim var, ama daha fazlasını söylemem.#$e#Belki bir gün sana gösteririm.$h" #!String
+    Mon4: "Bu dünya ruhlar ve büyülerle dolu... Bazıları bana inanmıyor, ama ben bunun doğru olduğunu biliyorum.#$e#Gözlerinde görebiliyorum... Diğer dünyaya inanıyorsun, tıpkı benim gibi." #!String
+    Mon6: "Umarım Haley bir iş bulur ya da en azından yemek yapmaya ve temizlik işine yardım eder.$s#$e#Bence zengin biri ile evlenmeyi umuyor.$u" #!String
+    Mon6_inlaw_Haley: "Şunu söylemem lazım ki, Haley gittiğinden beri her şeyi düzeninde tutmak çok daha kolay." #!String
+    Mon8: "Bu kasabada bir türlü mutlu olamayan iyi insanlar var. Bu beni üzüyor.$u#$e#Salonda çalıştığım için herkesin sorunlarını ilk elden duyuyorum.$u" #!String
+    Tue: "Gus'ın salonunda yarı zamanlı çalışıyorum. Faturalarımı çıkartmamı sağlıyor." #!String
+    Tue4: "Gus'ın mekânında zorunluluktan çalışıyorum... Gerçek tutkum terzilik.$u#$e#Bu giysileri sıfırdan yaptım, görüyor musun?" #!String
+    Tue6: "Ah, selam... Beni böyle ziyaret etmen ne kadar hoş.$h" #!String
+    Tue8: "Biliyor musun, @... bence gelecek ikimiz için de parlak gözüküyor." #!String
+    Wed: "Unutulmuş uygarlıklar tarafından yapılmış, ender bulunan güçlü ve büyülü yüzükler hakkında bazı şeyler duydum. Bunlar doğru mu, yoksa sadece bir peri masalı mı, emin değilim." #!String
+    Wed4: "Balık tutar mısın? Umarım o zavallıcıklara iyi davranıyorsundur.$s#$e#Her varlığa saygı duyulmalıdır, elinden kayıp kaçanlara bile." #!String
+    Wed6: "İnançlı ol... Her gün kaderinin yolunda bir adım daha atıyorsun." #!String
+    Wed8: "$query PLAYER_NPC_RELATIONSHIP current any married roommate#Merhaba, @.#$e#İyi arkadaş olacağımızı biliyordum. Yazgımız buymuş âdeta!|Merhaba @.$u#$e#Bir gün bu kadar yakın olacağımızı biliyordum..." #!String
+    Thu: "Umarım sürdürülebilir bir biçimde çiftçilik yapıyorsundur. Vadi'nin ekosistemi hassastır!#$e#Nereden mi biliyorum? Kuvvetli içgüdülerim vardır!" #!String
+    Thu4: "Bazen çiçekler benimle konuşuyor... Her birinin anlatacak farklı bir hikayesi var!" #!String
+    Fri: "Ah, bahar. Soluk renklerin sezonu. Şahsen mücevher tonlarını tercih ederim.#$b#Ah, affedersin! Yine moda hakkında mırıldanıyordum, değil mi?" #!String
+    Sat: "Kendi giysilerimi yapmaktan hoşlanırım ama deri bulmak kolay değil.#$e#Şehir ise oldukça uzakta." #!String
+    Sat6: "Kumaşın dokusunu düşünüyor musun hiç, @? Her doku kendine has özelliklere sahiptir... giysime dokun... görüyor musun?" #!String
+    Sun: "Merhaba, @!#$e#Ahırında koyun yetiştiriyor musun? Yünlerini güzel kumaş ruloları haline getirebilirsin!#$e#Bunu yapabilmek için bir dokuma tezgâhına sahip olman gerekiyor. Eğer yapım tarifini biliyorsan onları kendin de yapabilirsin." #!String
+    Sun4: "Ailemiz evi bize bıraktı. İki yıldır dünyayı dolaşıyorlar.#$e#Ne zaman dönecekler hiç bilmiyorum.#$e#Gerçi burada olmayı seviyorum. Çevre çok güzel, kasabamız da oldukça hoş." #!String
+    event_dance1: "Teşekkürler!" #!String
+    event_dance2: "Şey... Tamam. Beğenmediğine üzüldüm. Sanırım üç yıllık çalışmam bir hiç içindi...$s" #!String
+    event_dance3: "Gerçekten öyle mi düşündün? Tam olarak böyle bir etki bırakmayı amaçlamıştım!$h#$b#Beğendiğine çok memnun oldum." #!String
+    summer_Mon: "Haley yemek seçer. Ona yemek hazırlamak çok zor." #!String
+    summer_Mon4: "Sağlıklı yemek yemek bana göre çok önemli. Uzun ve dolu bir hayat yaşamak istiyorum." #!String
+    summer_Mon_inlaw_Haley: "Haley taşındığından beri onunla aramız çok daha iyi. Yapacağı ziyaretler için sabırsızlanıyorum!" #!String
+    summer_Tue: "Selam, @.#$e#Bugün çok uyuşuğum.$u" #!String
+    summer_Tue6: "Linus için kötü hissediyorum. İnsanlar onu yargılıyor. Alt tarafı farklı bir hayat yaşıyor.$u#$e#Keşke herkes başkalarını oldukları gibi kabul edebilse." #!String
+    summer_Sun6: "Selam, @! İyiden iyiye arkadaş olduk, değil mi?$h#$e#Bu çok iyi. Oldukça iyi birisin.^Ben hoşnutum.$h" #!String
+    summer_Sun8: "Selam, @! İyiden iyiye arkadaş olduk, değil mi?$h#$e#Bu kulağa garip gelebilir, ama bunun olacağına emindim." #!String
+    summer_Wed: "Yaz mevsiminde çok da yağmur yağmıyor, değil mi?#$e#Bu da senin için daha fazla sulama işi demek oluyor, ha?#$e#Yoksa güneşli havayı sever misin?" #!String
+    summer_Thu: "Arı ve kelebekleri özel arkadaşlarım olarak görüyorum!" #!String
+    summer_Fri: "Eğer çok meşgul olmasaydım gelip sana tarlada yardım ederdim!#$e#Öte yandan, başka bir işimin olması Gus'ı sinirlendirirdi...$s" #!String
+    summer_Fri6: "Bilirsin, eğer bir gün salondan ayrılmaya kadar verseydim, Gus bunu anlayışla karşılardı.#$b#Dışarıda o kadar çok şey var ki, sonsuza kadar bir barmen olarak kalamam.$u" #!String
+    summer_Sat: "Kendini çok yorma yoksa, birden bire gözünü Harvey'in sağlık ocağında açabilirsin!" #!String
+    summer_Sun: "Selam @!" #!String
+    summer_Sun4: "Yılın bu zamanlarında canım arkadaşlarım bölgeyi ziyaret eder... papağanları kastediyorum!" #!String
+    fall_1: "Pekâlâ, güz geldi. Yeni ürünleri ekme zamanı, değil mi?" #!String
+    fall_15: "$d bus#Bugün Sandy'yi ziyaret edeceğim. Yakın arkadaşız!#$e#Otobüs tamir edildiği için cidden mutluyum.|*iç çeker*... Otobüs tamir edilmiş olsaydı arkadaşım Sandy'yi ziyarete gidebilirdim...$s" #!String
+    fall_Mon: "Piknik yapmak için hava çok güzel, değil mi?" #!String
+    fall_Mon8: "Eğer çalışmak zorunda olmasaydım pikniğe gitmeyi önerirdim!" #!String
+    fall_Tue: "Merhaba. İyi bir yaz geçirdin mi?" #!String
+    fall_Tue4: "Selam, @! Bahse girerim tarlan geçtiğimiz yaz çok ürün vermiştir, ha?#$e#Sen harika bir çiftçisin.$h" #!String
+    fall_Wed: "Arkadaşımın çölde dükkanı var. Eğer yolun oradan geçerse dur ve selamımı ilet.#$e#Sanırım ender bulunan mallar satıyor." #!String
+    fall_Thu: "Clint ile arkadaş mısın? Onu tanırsan iyi birisi olduğunu anlarsın.#$e#Bütün gün kendi dükkanında yapayalnız çalışıyor. Ama o kadar utangaç ki yeni arkadaşlar edinmekte zorluk çekiyor." #!String
+    fall_Thu8: "Sanırım Clint bana çok kızgın. Artık bana hiç bakmıyor...$u#$e#Hep arkadaş olduğumuzu düşünmüştüm.$u" #!String
+    fall_Fri: "Bir başka güzel güz günü daha.#$e#Yakında bitecek olması üzücü." #!String
+    fall_Fri6: "Şu temiz havayı kokluyor musun? Çok hoş, değil mi?#$b#Dünyanın her yerindeki Joja Şirketi'nin bunu elimizden alacağından korkuyorum.$u" #!String
+    fall_Sat: "Aklını diri tutarsan ilginç şeyler kök salabilir.#$e#Her neyse, günün nasıl geçiyor?" #!String
+    fall_Sat6: "Hayat ile alakalı hiç büyük planım yok. Gelecek hakkında kaygılanmamayı tercih ediyorum." #!String
+    fall_Sun: "Ruhları ferahlatmak için güneşli bir pazar gibisi yoktur!" #!String
+    fall_Sun6: "Bizi geri tutan pek çok görünmez engel var. Neden insanlar umursamamayı ve özgürlüğü kutlamayı öğrenemez ki?#$e#Ben mi? Şey, ne derler bilirsin... 'Vahşi bir Junimo'yu hapsedemezsin'." #!String
+    fall_Sun10: "Çok iyi bir insansın, @! Arkadaşım olduğun için teşekkür ederim.$h" #!String
+    winter_Mon: "Dikkatli ol da kafana buz sarkıtı düşmesin!" #!String
+    winter_Mon10: "Dikkatli ol da kafana buz sarkıtı düşmesin! Yaralanmanı istemem!" #!String
+    winter_Tue: "Ah, merhaba @!$h#$e#Şimdiye dek çiftçilikte kendini bayağı bir geliştirmiş olmalısın, ha?" #!String
+    winter_Tue2: "Bahse girerim şimdiye mükemmel bir çiftçi olmuşsundur!" #!String
+    winter_Tue4: "Sanırım saçım dondu...$s" #!String
+    winter_Wed: "Böyle büyük bir ev Haley ve bana göre değil. Burayı temiz tutmak oldukça zor.#$e#Gerçekten şikayet etmemeliyim.#$e#Senin çiftlik evin hoş ve rahat görünüyor.$h" #!String
+    winter_Thu: "Zavallı balıklar için çok soğuk olmalı.$s#$e#Acaba kış uykusuna yatan balık var mıdır? Belki de gidip Demetrius'a sormalıyım." #!String
+    winter_Fri: "Eğer bu kadar meşgul olmasaydım gölün oradaki o mağarada kazı yapmana yardım ederdim.#$e#Bahse varım orada güçlü kristaller vardır." #!String
+    winter_Sat: "'Fasulye Yahnisi' yapmayı biliyor musun?#$e#Yahniye bayılırım.$h%revealtaste:Emily:207#$e#Kışın taze malzemeler bulmak zor oluyor, değil mi?" #!String
+    winter_Sun: "Merhaba!#$e#...Efendim?" #!String
+    winter_Sun6: "Kız kardeşim ve ben bazen kavga ederiz ama eğer giderse onu gerçekten özlerim.#$e#Bence o bir gün eli yüzü düzgün genç bir kıza dönüşecek... Bunu söylediğimi ona söyleme.$h#$e#Evet, konuşmak istediğin bir şey var mıydı?" #!String
+    winter_Sun6_inlaw_Haley: "Kız kardeşime selam söyle! Yarın beni ziyaret etmesini hatırlat." #!String
+

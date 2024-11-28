@@ -1,0 +1,62 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.Int32Reader"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<Int32,String>
+    0: "Acemi (15b)^15.000g kazan.^true^-1^18" #!String
+    1: "Kovboy (50b)^50.000g kazan.^true^0^21" #!String
+    2: "Çiftçi (250b)^250.000g kazan.^true^1^20" #!String
+    3: "Milyoner (1mil)^1.000.000g kazan.^true^2^1" #!String
+    4: "Efsane (10mil)^10.000.000g kazan.^false^-1^3" #!String
+    5: "Koleksiyoncu^Müze koleksiyonunu tamamla.^true^28^0" #!String
+    6: "Yeni Arkadaşlar^5 kalp düzeyinde bir ilişkiye sahip ol.^true^-1^14" #!String
+    7: "En İyi Arkadaşlar^10 kalp düzeyinde bir ilişkiye sahip ol.^true^6^31" #!String
+    9: "Sevilen Çiftçi^8 kişi ile 10 kalp düzeyinde ilişkiye sahip ol.^true^7^32" #!String
+    11: "Tayfa^4 kişi ile 5 kalp düzeyinde ilişkiye sahip ol.^true^6^26" #!String
+    12: "Ortamcı^10 kişi ile 5 kalp düzeyinde ilişkiye sahip ol.^true^11^25" #!String
+    13: "Ünlü^20 kişi ile 5 kalp düzeyinde ilişkiye sahip ol.^true^12^11" #!String
+    15: "Aşçı^10 farklı tarif pişir.^true^18^12" #!String
+    16: "Usta Aşçı^25 farklı tarif pişir.^true^15^7" #!String
+    17: "Gurme^Her tarifi pişir.^true^16^35" #!String
+    18: "Yükseliş^Evini geliştir.^true^-1^13" #!String
+    19: "Geniş Yaşam^Evini en büyük boyuta yükselt.^true^18^15" #!String
+    20: "Kendin Yap^15 farklı nesne üret.^true^-1^29" #!String
+    21: "Zanaatkâr^30 farklı nesne üret.^true^20^16" #!String
+    22: "Zanaat Ustası^Her nesneyi üret.^true^21^23" #!String
+    24: "Balıkçı^10 farklı balık tut.^true^-1^28" #!String
+    25: "Denizci^24 farkı balık tut.^true^24^5" #!String
+    26: "Usta Oltacı^Her çeşit balığı tut.^true^25^24" #!String
+    27: "Becerikli Oltacı^100 balık tut.^true^64^30" #!String
+    28: "Hazine Avcısı^Müzeye 40 farklı öge bağışla.^true^-1^6" #!String
+    29: "Ayakçı^10 tane 'Yardım Aranıyor' ilanı tamamla.^true^-1^22" #!String
+    30: "Yardımsever^40 tane 'Yardım Aranıyor' ilanı tamamla.^true^29^10" #!String
+    31: "Çoklu Tarım^Her ekinden 15 tane gönder.^true^-1^34" #!String
+    32: "Tekli Tarım^Bir ekinden 300 tane gönder.^true^-1^33" #!String
+    34: "Kargocu^Her nesneden gönder.^true^-1^9" #!String
+    35: "Kitap Kurdu^Her kitabı oku.^true^-1^9" #!String
+    36: "Çok Çok Güzeldi^Bir film izle.^false^-1^9" #!String
+    37: "Mavi Kurdele^Yıldızçiyi Vadisi Şöleni yarışmasında 1. ol.^true^-1^9" #!String
+    38: "Unutulmaz Bir Çorba^Vali'yi memnun et.^true^-1^9" #!String
+    39: "İyi Komşular^Ormandaki komşularının ailelerini büyütmesine yardım et.^true^-1^9" #!String
+    40: "Uzak Kıyı^Zencefil Adası'na ulaş.^false^-1^9" #!String
+    41: "Derinlerdeki Tehlike^'Tehlikeli' madenin dibine ulaş.^false^-1^9" #!String
+    42: "Sonsuz Güç^En güçlü silahı elde et.^true^-1^9" #!String
+    44: "Mükemmellik^Zirveye ulaş.^false^-1^9" #!String
+

@@ -1,0 +1,46 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    BirthMessage_Adoption: "Durante a noite, a agência de adoção deixou um bebê para você {0}." #!String
+    BirthMessage_PlayerMother: "Durante a noite, você deu a luz a um bebê {0}." #!String
+    BirthMessage_SpouseMother: "Durante a noite, {1} deu a luz a um bebê {0}." #!String
+    BirthMessage_SpouseNaming_Male: "{0} está escolhendo o nome do seu bebê." #!String
+    BirthMessage_SpouseNaming_Female: "{0} está escolhendo o nome da sua bebê." #!String
+    BabyNamingTitle_Male: "Qual será o nome dele?" #!String
+    BabyNamingTitle_Female: "Qual será o nome dela?" #!String
+    HaveBabyQuestion: "Devemos ter um filho, {0}?" #!String
+    HaveBabyQuestion_Adoption: "Devemos adotar um filho, {0}?" #!String
+    HaveBabyAnswer_Yes: "Sim" #!String
+    HaveBabyAnswer_No: "Agora não..." #!String
+    HavePlayerBabyQuestion: "Você gostaria de ter um filho com {0}?" #!String
+    HavePlayerBabyQuestion_Adoption: "Você gostaria de adotar um filho com {0}?" #!String
+    AnimalBirth: "Durante a noite, {0} deu a luz a um bebê {1}." #!String
+    AnimalNamingTitle: "Dê um nome para o filhote de {0}:" #!String
+    SoundInTheNight_UFO: "Ouviu-se um som estranho à noite..." #!String
+    SoundInTheNight_Meteorite: "Ouviu-se um som estranho à noite..." #!String
+    SoundInTheNight_Earthquake: "Houve um terremoto à noite." #!String
+    BeachNightMarket_NowOpen: "O Mercado Noturno está aberto agora." #!String
+    Maru_comet5: "Fico grata de viver neste mundo maravilhoso com você!" #!String
+    Maru_comet4: "Tão vazio, tão solitário..." #!String
+    Maru_comet3: "Aqui por um breve momento em sua jornada infinita." #!String
+    Maru_comet2: "Uma maravilha rara do universo..." #!String
+    Maru_comet1: "Lindo, não é?" #!String
+    ElliottBook_mystery: "A Torre Azul" #!String
+    ElliottBook_romance: "Estação Camélia" #!String
+    ElliottBook_default: "A ascensão e a queda do planeta Yazzo" #!String
+

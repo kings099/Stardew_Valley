@@ -1,0 +1,46 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    BirthMessage_Adoption: "夜のあいだに、養子縁組エージェンシーからかわいい{0}がやってきた！" #!String
+    BirthMessage_PlayerMother: "長い長い夜がすぎ、かわいい{0}がうまれてきた！" #!String
+    BirthMessage_SpouseMother: "夜のあいだに、{1}が赤ちゃん{0}を産んだ！" #!String
+    BirthMessage_SpouseNaming_Male: "{0}が赤ちゃん（男の子）の名前をつけています" #!String
+    BirthMessage_SpouseNaming_Female: "{0}が赤ちゃん（女の子）の名前をつけています" #!String
+    BabyNamingTitle_Male: "この子、なんて名前がいいかな？" #!String
+    BabyNamingTitle_Female: "この子、なんて名前がいいかな？" #!String
+    HaveBabyQuestion: "ねえ{0}、赤ちゃんがほしくない？" #!String
+    HaveBabyQuestion_Adoption: "ねえ{0}、赤ちゃんがほしくない？" #!String
+    HaveBabyAnswer_Yes: "うん" #!String
+    HaveBabyAnswer_No: "今はちょっと・・・" #!String
+    HavePlayerBabyQuestion: "{0}との子供をさずかりたいですか？" #!String
+    HavePlayerBabyQuestion_Adoption: "{0}と一緒に養子をむかえたいですか？" #!String
+    AnimalBirth: "夜のあいだに、{0}が赤ちゃん{1}を産んだ！" #!String
+    AnimalNamingTitle: "生まれた赤ちゃん{0}の名前：" #!String
+    SoundInTheNight_UFO: "夜中、おかしな音が聞こえた…" #!String
+    SoundInTheNight_Meteorite: "夜中、爆発音が聞こえた…" #!String
+    SoundInTheNight_Earthquake: "夜中、地震があった。" #!String
+    BeachNightMarket_NowOpen: "夜の市は開催中です。" #!String
+    Maru_comet5: "このスリリングな世界であなたと一緒にいることができてうれしいわ！" #!String
+    Maru_comet4: "空っぽで、とても孤独…" #!String
+    Maru_comet3: "その永遠の旅の一瞬がここにあるわ。" #!String
+    Maru_comet2: "レアな奇跡のコスモス…" #!String
+    Maru_comet1: "美しいでしょ？" #!String
+    ElliottBook_mystery: "青い塔" #!String
+    ElliottBook_romance: "カメリアステーション" #!String
+    ElliottBook_default: "惑星ヤッゾの興亡" #!String
+

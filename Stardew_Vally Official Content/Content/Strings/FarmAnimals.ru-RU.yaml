@@ -1,0 +1,49 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    DisplayType_Chicken_Blue: "Голубая курица" #!String
+    DisplayType_Chicken_Brown: "Рыжая курица" #!String
+    DisplayType_Chicken_Golden: "Золотой цыпленок" #!String
+    DisplayType_Chicken_White: "Белая курица" #!String
+    DisplayType_Chicken_Void: "Курица пустоты" #!String
+    DisplayType_Cow_Brown: "Бурая корова" #!String
+    DisplayType_Cow_White: "Белая корова" #!String
+    DisplayType_Dinosaur: "Динозавр" #!String
+    DisplayType_Duck: "Утка" #!String
+    DisplayType_Goat: "Коза" #!String
+    DisplayType_Ostrich: "Страус" #!String
+    DisplayType_Pig: "Свинья" #!String
+    DisplayType_Rabbit: "Кролик" #!String
+    DisplayType_Sheep: "Овца" #!String
+    TryingToSleep: "{0} пытается уснуть" #!String
+    MoodMessage_NewHome_Baby_Male: "{0} родился совсем недавно и еще нетвердо стоит на ногах, но уже исследует новый мир." #!String
+    MoodMessage_NewHome_Baby_Female: "{0} родилась совсем недавно и еще нетвердо стоит на ногах, но уже исследует новый мир." #!String
+    MoodMessage_NewHome_Adult_Male_1: "{0} осматривается вокруг — опасливо, но с любопытством. Он привыкает к своему новому дому." #!String
+    MoodMessage_NewHome_Adult_Male_2: "{0} осматривается — опасливо, но с любопытством. Новый мир такой чудной." #!String
+    MoodMessage_NewHome_Adult_Female_1: "{0} осматривается вокруг — опасливо, но с любопытством. Она привыкает к своему новому дому." #!String
+    MoodMessage_NewHome_Adult_Female_2: "{0} осматривается — опасливо, но с любопытством. Новый мир такой чудной." #!String
+    MoodMessage_LeftOutsideAtNight_Male: "{0} вчера ночевал на улице, потому что дверь была заперта... Он выглядит недовольным." #!String
+    MoodMessage_LeftOutsideAtNight_Female: "{0} вчера ночевала на улице, потому что дверь была заперта... Она выглядит недовольной." #!String
+    MoodMessage_DisturbedByDog_Male: "{0} выглядит сегодня очень удрученным. Похоже, вчера ночью случилось что-то плохое." #!String
+    MoodMessage_DisturbedByDog_Female: "{0} выглядит сегодня очень удрученным. Похоже, вчера ночью случилось что-то плохое." #!String
+    MoodMessage_Hungry1: "{0} выглядит сегодня недовольно." #!String
+    MoodMessage_Hungry2: "{0}, кажется, недоедает." #!String
+    MoodMessage_Sad: "{0} выглядит сегодня грустно." #!String
+    MoodMessage_Fine: "{0} сегодня в полном порядке." #!String
+    MoodMessage_Happy: "{0} выглядит сегодня особенно счастливо!" #!String
+

@@ -1,0 +1,71 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Introduction: "Merhaba! Sen yeni çiftçi @ olmalısın. Ben Caroline.#$e#Kocam buradaki bakkalı işletiyor. Kızım Abigail ile tanışmış mıydın? Abigail, mor saçlı, solgun olan." #!String
+    AcceptBirthdayGift_Positive: "Sağ ol tatlım. Doğum günümü hatırlamana sevindim.$h" #!String
+    AcceptBirthdayGift_Negative: "Ah... Bu bir... Hediye mi? Anladım... Eh, uğradığın için teşekkürler.$a" #!String
+    AcceptGift_(O)StardropTea: "Vaaay... Bu çok güzel. Kış bahçesinde oturacağımız zaman demlerim." #!String
+    AcceptGift_(O)16: "Bakıyorum ormana dalmışsın! Teşekkür ederim!#$b#Bununla acılı bir kokteyl yapacağım. Pierre'e cesaret aşılayacak.$h" #!String
+    cropMatured_815: "Çiftliğinde çay yetiştirdiğini gördüm. Bir ara bana bir fincan getirmeyi unutma!$h" #!String
+    dating_Abigail_memory_oneday: "Abby bana arada görüştüğünüzü söyledi. Çok tatlı!" #!String
+    GreenRain: "Daha önce yeşil bir yağmur hiç görmemiştim... Buraya kadar gelebildiysen çok da tehlikeli olmasa gerek!" #!String
+    GreenRain_2: "Ah, şu özel yağmur geri dönmüş! Bu sefer tadını çıkaracağım!#$e#Bir bardak yeşil çay zamanı!$h" #!String
+    movieTheater_memory_oneweek: "Kasabada bir sinema olması güzel. Gidip bir vahşi batı filmi izlemek istiyorum!" #!String
+    married_Abigail: "İkiniz için çok mutluyum! Ailemize hoş geldin!$h" #!String
+    wonGrange: "Pierre soğukkanlı davranmaya çalışıyor ama Yıldızçiyi Vadisi Şöleni'nde sana kaybettiği için köpürüyor." #!String
+    married_memory_oneweek: "Aa, yeni çiftimiz gelmiş. Ee, balayınız nasıldı?#$e#Anlıyorum. Eh, çok uzak kalsaydınız tüm ekinler kururdu..." #!String
+    eventSeen_719926: "Biraz rahatlamış hissediyor musun? Eminim hissediyorsundur..." #!String
+    houseUpgrade_1: "$y 'Duyduğuma göre yeni bir mutfağın varmış! Birçok yemek yapacaksın sanırım?_Yapmayı düşünüyorum!_Sahip olması güzel bir yetenek bu. Çiftliğinden gelen tüm o taze ekinlerle gerçekten rahat edeceksin!_Yok, süs niyetine._Anladım. O halde düzgün yemekler yemeyi unutma... Beslenme önemli.'" #!String
+    achievement_15: "Evinden gelen hoş kokulara dayanarak mutfakta bayağı bir meşgul olduğunu söyleyebilirim!$h" #!String
+    Resort_Entering: "Willy her birimize kurutulmuş balık verdi. Çiğne çiğne bitiremedim." #!String
+    Resort_Leaving: "Bu gece güzel bir uyku çekeceğim!$h" #!String
+    Resort_Shore: "Buradaki su vadiye kıyasla ılık ki bu çok güzel!" #!String
+    Resort_Chair: "%Caroline uyukluyor." #!String
+    Resort_Bar: "Gus'a beni şaşırtmasını söyledim. O da bana buzlu yeşil çay yaptı ve içine mango kabuğu rendeledi. Harikaydı!$h" #!String
+    Resort: "Merhaba @. Buraya dinlenmeye mi yoksa çalışmaya mı geldin?" #!String
+    Mon: "Keşke Abby odasında bu kadar vakit geçirmese." #!String
+    Mon_inlaw_Abigail: "Merhaba, @. Karı koca hayatından memnun musun? Umarım memnunsundur!" #!String
+    Mon8: "#$1 Caroline23#Pelikan Kasabası'na yeni taşındığımızda gizlice Büyücü'nün kulesine yürür dururdum. Pierre'e söyleme, sonra kıskanıyor.#$e#Pelikan Kasabası'na taşındıktan neredeyse bir yıl sonra Abigail doğdu. Acaba vadinin dışındaki yaşamı deneyimleyebilecek mi?" #!String
+    Tue: "Ormanda yabani bayır turpları gördüm.#$e#Toplayıcılık, eğlenceli bir para kazanma uğraşı olabilir. Bulduğun şeyleri yiyecek ya da hediye olarak da değerlendirebilirsin." #!String
+    Wed: "Selam. Çiftlikte her şey tamam mı?#$e#Eksiğin varsa yardımcı olabiliriz.#$e#Elimizde bir sürü kullanışlı mal var." #!String
+    Thu: "#$1 Caroline1#Hım... Akşama yemek yapması için Pierre'i ikna edebilir miyim ki?#$e#Hım... Akşama ne yapsam?#$e#Belki de Salon'dan söylerim." #!String
+    Fri: "Güzel bir gün.#$e#Bu gibi günlerde parkta Evelyn'e yardım etmeyi seviyorum.#$e#Yaşına göre çok güçlü. Bence, aldığı tüm yardımları takdir ediyor." #!String
+    Sat: "Bana mı öyle geliyor, yoksa Abigail kıyamet ve kasvete hastalıklı bir şekilde ilgi mi duyuyor?#$e#Belki de anlamak için fazla yaşlıyımdır." #!String
+    Sat_inlaw_Abigail: "Abigail gittiğinden beri akşam yemeklerimiz sessizleşti...#$e#Hayır, yemeği şapırdatarak yediğinden değil!$h" #!String
+    Sat2: "Abby'nin her zaman büyücülüğe karşı garip bir ilgisi vardı. Bu huyu nereden edindiğini bilemiyorum..." #!String
+    Sat4: "Abby'nin her zaman büyücülüğe karşı garip bir ilgisi vardı. Eminim gelip geçici bir şeydir..." #!String
+    Sat6: "#$1 Caroline12#Buraya yeni taşındığımızda dikiş tutturmam zaman aldı... Ev hayatına hazır değildim.#$e#Pierre biraz gelenekseldir ama iyi bir adamdır. Hırslı olsa da önce hep ailesi gelir." #!String
+    Sun: "Bugün rahatlayacak ve olumlu düşüneceğim.#$e#Sen hiç kendine izin vermez misin?" #!String
+    Wed6: "Yıldızçiyi Vadisi güzel ama keşke daha çok insan tanıyabilsem.#$e#Arkadaş olduğumuza memnunum." #!String
+    summer_Mon: "Çarşambaları dükkan kapalı oluyor.#$e#Bir şey lazım olursa bu aklında bulunsun." #!String
+    summer_Tue: "Son zamanlarda ormanda yabani meyveler görüyorum.#$e#Toplayıcılık, eğlenceli bir para kazanma uğraşı olabilir. Bulduğun şeyleri yiyecek ya da hediye olarak da değerlendirebilirsin." #!String
+    summer_Wed: "Selam. Çiftlikte her şey tamam mı?#$e#Eksiğin varsa yardımcı olabiliriz.#$e#Elimizde bir sürü kullanışlı mal var." #!String
+    summer_Sat: "Bana mı öyle geliyor, yoksa Abigail biraz solgun mu duruyor?#$e#Belki de çok endişeleniyorum." #!String
+    summer_Sat_inlaw_Abigail: "Abigail'in durumu nasıl? Hep böyle solgun bir kızdı. Umarım çiftlik hayatı yanaklarına biraz olsun renk getirir." #!String
+    summer_Sun: "Bugün rahatlayacak ve olumlu düşüneceğim.#$e#Sen hiç kendine izin vermez misin?" #!String
+    summer_Wed6: "Yaşlandıkça zaman çok daha hızlı geçiyor...$s" #!String
+    fall_Mon: "Güz, Abby'nin en sevdiği mevsimdir. Dolayısıyla odasından daha sık çıkacağını umuyorum." #!String
+    fall_Mon_inlaw_Abigail: "Abby burada çevrim içi ders alıyordu. Ancak, bunu kalbinden istediğini sanmıyorum.#$e#Özgür bir ruhu var. Aynı Pierre ile tanışmadan önceki ben gibi. Muhtemelen senin çiftliğinde hayatının en güzel anlarını yaşıyordur." #!String
+    fall_Tue: "Ormanda tam yemelik mantarlar gördüm.#$e#Toplayıcılık, eğlenceli bir para kazanma uğraşı olabilir. Bulduğun şeyleri yiyecek ya da hediye olarak da değerlendirebilirsin." #!String
+    fall_Sat: "Bana mı öyle geliyor, yoksa Abigail çok mu bilgisayar oyunu oynuyor?#$e#Belki de ben geri kafalıyımdır." #!String
+    fall_Wed6: "Bilirsin, ben de çiftçi olmak istemiştim. Daha çok bir çiftlik sahibi...#$e#Gençken vahşi batı filmlerine bayılırdım." #!String
+    winter_Tue: "Kış oldukça sert geçer ama şanslıysan toprağı kazıp kök çıkartabilirsin. #$e#Toplayıcılık, eğlenceli bir para kazanma uğraşı olabilir. Bulduğun şeyleri yiyecek ya da hediye olarak da değerlendirebilirsin." #!String
+    winter_Fri: "Hava soğuk olsa da arada bir çiçek yataklarını kontrol ediyorum.#$e#Bahar gelmeden önce fazla hasar görmediklerinden emin olmak istiyorum." #!String
+    winter_Sat: "Sence de Abby doğal saç rengiyle daha iyi görünmez mi?#$e#Eskiden saçları kestane rengindeydi." #!String
+    winter_Wed6: "Yeni yıl için heyecanlı mısın?#$e#Çiftliğinde bol bol başarı elde edeceğini öngörüyorum.$h" #!String
+

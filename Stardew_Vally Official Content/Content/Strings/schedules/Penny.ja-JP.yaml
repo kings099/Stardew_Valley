@@ -1,0 +1,27 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    winter_4.001: "ちょっと！プライバシーを尊重してよね。$a" #!String
+    marriage_Mon.002: "マルはいつか結婚するのかな？" #!String
+    marriageJob.000: "あら、ハニー。仕事場にまで会いに来てくれてうれしいわ。$h" #!String
+    marriage_Mon.001: "大丈夫よ、わたしのお金を使ってるから。" #!String
+    marriage_Mon.000: "ハーイ、ハニー！ちょっと買い物しにきてたの。" #!String
+    winter_15.000: "この匂い なんだろう？なんだか スパイシー…" #!String
+    winter_4.000: "きょうの午後は診療所に予約をいれてあるの。" #!String
+    rain2.000: "はやく中に入りたいな。静かな時間をすごしたいの。" #!String
+

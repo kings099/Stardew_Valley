@@ -1,0 +1,28 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Fri.000: "Sonunda... Kendime biraz olsun zaman ayırabileceğim." #!String
+    Sun.000: "Sunak odasını inşa edenler buranın önceki sahipleriydi. Biz dindar değiliz ama kasaba halkının sunak odasını istediği gibi kullanmasına izin veriyoruz." #!String
+    fall_25.002: "Affedersiniz, Doktor Harvey'e özel bir şey söylemem gerekiyor...$u" #!String
+    Tue.000: "Hım... Bugünkü aerobik buluşmasına özel bir şey mi giyip gitsem acaba?" #!String
+    Tue.001: "Formda görünüyorsun, Jodi! O dambıllar harika iş çıkartıyorlar, değil mi?" #!String
+    fall_25.000: "Bugün yıllık sağlık kontrolüm yapılacak. En azından çok uzağa yürümek zorunda değilim." #!String
+    fall_25.001: "Sen de mi doktoru görmeye geldin? Ne oldu?" #!String
+    Tue.002: "Imm... Sanırım bugün kurabiye yemeyi hak ettim. *kıtırdar*" #!String
+    winter_16.000: "Tüm tatil alışverişimi bu geceden yapıyorum! Pierre'in geldiğini görürsen bana söyle..." #!String
+

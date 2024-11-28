@@ -1,0 +1,153 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    AbbysPlanchette_Name: "Abbys Planchette" #!String
+    AbbysPlanchette_Description: "Aus feinem Marmorholz gemacht." #!String
+    AlexsBat_Name: "Alex' Schläger" #!String
+    AlexsBat_Description: "Der Schlagpunkt ist von Alex' berühmtem Grand Slam verbeult." #!String
+    BoneSword_Name: "Knochenschwert" #!String
+    BoneSword_Description: "Ein sehr leichter Teil eines geschärften Knochens." #!String
+    BrokenTrident_Name: "Zerbrochener Dreizack" #!String
+    BrokenTrident_Description: "Kommt aus der See, ist aber immer noch scharf." #!String
+    BurglarsShank_Name: "Einbrecher-Stecher" #!String
+    BurglarsShank_Description: "Die bevorzugte Waffe für die Geschickten und Leisen." #!String
+    CarvingKnife_Name: "Schnitzmesser" #!String
+    CarvingKnife_Description: "Eine kleine, leichte Klinge." #!String
+    Claymore_Name: "Flamberge" #!String
+    Claymore_Description: "Ist wirklich schwer." #!String
+    CrystalDagger_Name: "Kristalldolch" #!String
+    CrystalDagger_Description: "Die Klinge besteht aus gereinigtem Quarz." #!String
+    Cutlass_Name: "Entermesser" #!String
+    Cutlass_Description: "Eine geschickt hergestellte Klinge." #!String
+    DarkSword_Name: "Dunkles Schwert" #!String
+    DarkSword_Description: "Leuchtet mit einer mysteriösen Energie." #!String
+    DragontoothClub_Name: "Drachenzahn-Keule" #!String
+    DragontoothClub_Description: "Diese Keule wurde aus einem magischen Zahn gefertigt." #!String
+    DragontoothCutlass_Name: "Drachenzahn-Machete" #!String
+    DragontoothCutlass_Description: "Die Klinge wurde aus einem magischen Zahn geschmiedet." #!String
+    DragontoothShiv_Name: "Drachenzahn-Messer" #!String
+    DragontoothShiv_Description: "Die Klinge wurde aus einem magischen Zahn geschmiedet." #!String
+    DwarfDagger_Name: "Zwergendolch" #!String
+    DwarfDagger_Description: "Es ist uralt, aber die Klinge stumpft nie ab." #!String
+    DwarfHammer_Name: "Zwergenhammer" #!String
+    DwarfHammer_Description: "Er gibt ein sehr schwaches surrendes Geräusch von sich." #!String
+    DwarfSword_Name: "Zwergenschwert" #!String
+    DwarfSword_Description: "Es ist uralt, aber die Klinge stumpft nie ab." #!String
+    ElfBlade_Name: "Elfenklinge" #!String
+    ElfBlade_Description: "Nur die geschickten Hände einer Elfe könnten diese Waffe herstellen." #!String
+    ElliottsPencil_Name: "Elliotts Bleistift" #!String
+    ElliottsPencil_Description: "Elliott benutzt ihn, um sein Buch zu schreiben. Er ist sehr spitz!" #!String
+    Femur_Name: "Oberschenkelknochen" #!String
+    Femur_Description: "Ein alter, schwerer Knochen, der über die Jahrhunderte von Schmutzschichten überzogen wurde." #!String
+    ForestSword_Name: "Waldschwert" #!String
+    ForestSword_Description: "Wurde durch Waldmagie mächtig gemacht." #!String
+    GalaxyDagger_Name: "Galaxie-Dolch" #!String
+    GalaxyDagger_Description: "Du hast noch nie etwas Vergleichbares gesehen." #!String
+    GalaxyHammer_Name: "Galaxie-Hammer" #!String
+    GalaxyHammer_Description: "Aus einem ultraleichten Material, das du noch nie zuvor gesehen hast." #!String
+    GalaxySlingshot_Name: "Galaxie-Schleuder" #!String
+    GalaxySlingshot_Description: "Sieht wirklich mächtig aus." #!String
+    GalaxySword_Name: "Galaxie-Schwert" #!String
+    GalaxySword_Description: "Du hast noch nie etwas Vergleichbares gesehen." #!String
+    GoldenScythe_Name: "Goldene Sense" #!String
+    GoldenScythe_Description: "Es ist stärker als eine normale Sense." #!String
+    HaleysIron_Name: "Haleys Eisen" #!String
+    HaleysIron_Description: "Ist sengend heiß und riecht nach Haleys Haaren." #!String
+    HarveysMallet_Name: "Harveys Holzhammer" #!String
+    HarveysMallet_Description: "Bringt Erinnerungen aus Harveys Klinik zurück." #!String
+    HolyBlade_Name: "Heilige Klinge" #!String
+    HolyBlade_Description: "Sie zu führen erfüllt einen mit Hoffnung." #!String
+    InfinityBlade_Name: "Unendliche Klinge" #!String
+    InfinityBlade_Description: "Die wahre Form des Galaxie-Schwertes." #!String
+    InfinityDagger_Name: "Unendlicher Dolch" #!String
+    InfinityDagger_Description: "Die wahre Form des Galaxie-Dolches." #!String
+    InfinityGavel_Name: "Unendlicher Hammer" #!String
+    InfinityGavel_Description: "Die wahre Form des Galaxie-Hammers." #!String
+    InsectHead_Name: "Insektenkopf" #!String
+    InsectHead_Description: "Nicht gerade angenehm zu schwingen." #!String
+    IridiumNeedle_Name: "Iridium-Nadel" #!String
+    IridiumNeedle_Description: "Die Spitze ist unglaublich scharf, sogar bis auf die atomare Ebene." #!String
+    IridiumScythe_Name: "Iridiumsense" #!String
+    IridiumScythe_Description: "Kann zum Ernten von Feldfrüchten aller Art verwendet werden. Sie eignet sich auch hervorragend zum Einsammeln von Heu." #!String
+    IronDirk_Name: "Eiserner Langdolch" #!String
+    IronDirk_Description: "Ein gewöhnlicher Dolch." #!String
+    IronEdge_Name: "Eiserne Klinge" #!String
+    IronEdge_Description: "Ein schweres Breitschwert." #!String
+    Kudgel_Name: "Totschläger" #!String
+    Kudgel_Description: "Der beste Kumpel eines Schlägers." #!String
+    LavaKatana_Name: "Lava-Katana" #!String
+    LavaKatana_Description: "Eine mächtige Klinge, die in einem Becken aus kochender Lava geschmiedet wurde." #!String
+    LeadRod_Name: "Bleirute" #!String
+    LeadRod_Description: "Ist unglaublich schwer." #!String
+    LeahsWhittler_Name: "Leahs Schnitzer" #!String
+    LeahsWhittler_Description: "Leahs Lieblingswerkzeug, um Treibholz umzuformen." #!String
+    MarusWrench_Name: "Marus Schraubenschlüssel" #!String
+    MarusWrench_Description: "Ein großer, metallener Schraubenschlüssel. Er riecht wie Maru." #!String
+    MasterSlingshot_Name: "Meister-Schleuder" #!String
+    MasterSlingshot_Description: "Benötigt Steine als Munition." #!String
+    Meowmere_Name: "Meowmere" #!String
+    Meowmere_Description: "Eine ungewöhnliche Waffe aus einem weit entfernten Land..." #!String
+    NeptunesGlaive_Name: "Neptuns Gleve" #!String
+    NeptunesGlaive_Description: "Ein Erbstück von jenseits der Edelsteinsee." #!String
+    ObsidianEdge_Name: "Obsidian-Schneide" #!String
+    ObsidianEdge_Description: "Ist enorm scharf." #!String
+    OssifiedBlade_Name: "Ossifizierte Klinge" #!String
+    OssifiedBlade_Description: "Eine große, scharfe, aus Knochen geformte Klinge." #!String
+    PennysFryer_Name: "Pennys Bratpfanne" #!String
+    PennysFryer_Description: "Pennys Lieblingspfanne. Irgendein zähes Zeug klebt darin fest." #!String
+    PiratesSword_Name: "Piratenschwert" #!String
+    PiratesSword_Description: "Sieht so aus, als hätte ein Pirat es einst besessen." #!String
+    Rapier_Name: "Rapier" #!String
+    Rapier_Description: "Eine elegante Klinge." #!String
+    RustySword_Name: "Rostiges Schwert" #!String
+    RustySword_Description: "Ein rostiges, stumpfes Schwert." #!String
+    SamsOldGuitar_Name: "Sams alte Gitarre" #!String
+    SamsOldGuitar_Description: "Hat schon bessere Tage gesehen." #!String
+    Scythe_Name: "Sense" #!String
+    Scythe_Description: "Kann Gras zu Heu schneiden, wenn du ein Silo hast." #!String
+    SebsLostMace_Name: "Sebs verlorener Streitkolben" #!String
+    SebsLostMace_Description: "Eine von Sebastians mittelalterlichen Nachbildungen." #!String
+    ShadowDagger_Name: "Schattendolch" #!String
+    ShadowDagger_Description: "Wenn du die Klinge ans Ohr hältst, hörst du den Schrei von 1.000 Seelen." #!String
+    SilverSaber_Name: "Silbersäbel" #!String
+    SilverSaber_Description: "Mit Silber überzogen, um ein Rosten zu verhindern." #!String
+    Slingshot_Name: "Schleuder" #!String
+    Slingshot_Description: "Benötigt Steine als Munition." #!String
+    SteelFalchion_Name: "Stahl-Falchion" #!String
+    SteelFalchion_Description: "Leicht und mächtig." #!String
+    SteelSmallsword_Name: "Stahl-Kurzschwert" #!String
+    SteelSmallsword_Description: "Eine gewöhnliche Metallklinge." #!String
+    TemperedBroadsword_Name: "Temperiertes Korbschwert" #!String
+    TemperedBroadsword_Description: "Sieht so aus, als könnte es allem widerstehen." #!String
+    TemplarsBlade_Name: "Templer-Klinge" #!String
+    TemplarsBlade_Description: "Gehörte einst einem ehrenhaften Ritter." #!String
+    TheSlammer_Name: "Der Knaller" #!String
+    TheSlammer_Description: "Ein extrem schwerer Hammer, der Feinde fliegen lässt." #!String
+    WickedKris_Name: "Gemeiner Kris" #!String
+    WickedKris_Description: "Die Klinge ist aus einer Iridiumlegierung gemacht." #!String
+    WindSpire_Name: "Windspitze" #!String
+    WindSpire_Description: "Eine gewandte kleine Klinge." #!String
+    WoodClub_Name: "Holzknüppel" #!String
+    WoodClub_Description: "Ein solides Stück Holz, grob in eine Knüppelform geschnitzt." #!String
+    WoodenBlade_Name: "Holzklinge" #!String
+    WoodenBlade_Description: "Für ein geschnitztes Stück Holz nicht schlecht." #!String
+    WoodMallet_Name: "Holzhammer" #!String
+    WoodMallet_Description: "Der solide Kopf hält ganz schön was aus. Für einen Knüppel relativ leicht." #!String
+    YetiTooth_Name: "Yeti-Zahn" #!String
+    YetiTooth_Description: "Fühlt sich eisig kalt an." #!String
+

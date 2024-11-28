@@ -1,0 +1,26 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Fri.000: "この食材なら健康的な食生活に組み込んでも問題ないな。" #!String
+    marriageJob.000: "やあ、ハニー。診療所でなにしてるんだい？#$e#なあんだ、僕に会いにきただけか。なんだかいいね。$h" #!String
+    Fri.001: "買ってきたものを片づけてるんだ。" #!String
+    marriage_Mon.001: "水が流れる音を聞いてるとほっとするんだ。" #!String
+    marriage_Mon.000: "やあ！必需品をいくつか買いに来てたんだよ。健康的な料理がつくれるようにね。" #!String
+    Sat.000: "買ってきたものを片づけてるんだ。" #!String
+    winter_15.000: "冬って どんよりしがちな 季節だけど、こうした イベントが あると 少し 明るくなるよね！" #!String
+

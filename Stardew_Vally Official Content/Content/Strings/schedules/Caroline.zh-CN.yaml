@@ -1,0 +1,28 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Fri.000: "终于……有了一点儿自己的时间。" #!String
+    Sun.000: "前任房主建造了祭坛室。我们不信宗教，但我们会让其他镇民随意使用。" #!String
+    fall_25.002: "抱歉，我需要和哈维医生私下谈谈……$u" #!String
+    Tue.000: "唔……嗯……我是不是应该为今天的有氧运动聚会特意打扮下？" #!String
+    Tue.001: "你看起来好健康啊，乔迪！练哑铃真的很管用吧？" #!String
+    fall_25.000: "今天是我年度体检的日子。至少我不用走很远。" #!String
+    fall_25.001: "你也是来看医生的？发生了什么？" #!String
+    Tue.002: "唔……我想我今天能吃点儿饼干了。*咂巴*。" #!String
+    winter_16.000: "今晚，我要完成全部假日购物！如果你看到皮埃尔来了，告诉我……" #!String
+

@@ -1,0 +1,46 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Introduction: "Oh, jemand Fremdes! Mein Name ist Vincent.#$b#Mama sagt, ich soll nicht mit Fremden reden... Aber du siehst in Ordnung aus." #!String
+    AcceptBirthdayGift_Positive: "Ist das ein Geburtstagsgeschenk? Kann ich es jetzt aufmachen?#$b#Oh, wow! Das ist genau das, was ich wollte! Jajajaja!$h" #!String
+    AcceptBirthdayGift_Negative: "Ein Geburtstagsgeschenk? Oh... das ist nicht sehr amüsant.$s" #!String
+    AcceptGift_(O)StardropTea: "Wow! Das ist so süß! Mmmmm..." #!String
+    AcceptGift_(TR)FrogEgg: "*Quietsch* *quietsch* ... Igitt! Darf ich es haben? Darf ich es haben? Jaaaa!$h" #!String
+    GreenRain: "Mama! Ich will rausgehen und spielen!%noturn" #!String
+    GreenRain_2: "%Vincent ist mit Moos bedeckt." #!String
+    AcceptGift_Negative_alcohol_item: "*schnüffel*... was ist das? Es riecht furchtbar... Mamaaa!!!$s" #!String
+    Resort_Entering: "Das hat Spaß gemacht! Ich will eines Tages Bootskapitän werden!" #!String
+    Resort_Leaving: "Ich möchte bald wiederkommen!" #!String
+    Resort_Shore: "Ich will einen Hai sehen!$h" #!String
+    married_Sam: "Nimm mir mein Sammy nicht weg!$s" #!String
+    Resort: "Wenn man genau hinsieht, sieht man kleine Käfer aus dem Sand springen.$h" #!String
+    reject_869: "Oooh! Netter Fund!#$b#Mama würde es mir allerdings nicht erlauben ihn zu behalten...$s" #!String
+    Mon: "Ich will genau wie mein großer Bruder sein, wenn ich groß bin!$h#$e#Okay! Bye!" #!String
+    Mon4: "$d kent#Ich bin froh, dass Papa wieder da ist... aber er ist anders als früher...$s|Papa ist nicht oft da... Ich vermisse es, mit ihm zu spielen.$s" #!String
+    Tue: "*schnüff* Mama lässt mich heute nichts Süßes mehr essen.$s" #!String
+    Tue6: "Kannst du ein Geheimnis für dich behalten?$u#$b#Ich will Frau Penny heiraten, wenn ich groß bin.#$e#Sag's ihr aber nicht, okay?$u" #!String
+    Wed: "Ich will nach Käfern suchen, aber Mama wird böse, wenn ich mich schmutzig mache.$u#$b#Was soll ich nur tun..." #!String
+    Thu: "Ich bin hungrig... Wo ist Mama?$s" #!String
+    Thu2: "Du bist nicht so langweilig wie die meisten Erwachsenen!" #!String
+    Fri: "#$c .3#Pfui, es ist wieder gekochte Beete-Abend...$s#$e#Oh nein... Mama macht heute Nacht Linsensuppe.$s" #!String
+    Sat_1: "Papa kommt bald zurück!#$b#Ich hoffe, er bringt mir ein Spielzeug mit.$u" #!String
+    Sat: "Frau Penny möchte, dass ich jede Woche ein Buch lese.$s#$b#Wenigstens lässt sie mich manchmal eins aussuchen!" #!String
+    Sat8: "$d kent#Papa ist irgendwie merkwürdig, seit er zurück ist. Ich frage mich, was mit ihm passiert ist?$s#$b#Er spielt nicht mehr mit mir.$s| Ich frage mich, ob Papa je wieder nachhause kommt...$s" #!String
+    Sun: "Hi, du!" #!String
+    Sun10: "Hi Onkel @!^Hi Tante @!#$e#Erzähl's nicht Mama... aber du bist mein Lieblingserwachsener.$h" #!String
+

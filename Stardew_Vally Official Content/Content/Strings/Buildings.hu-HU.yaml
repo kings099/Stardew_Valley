@@ -1,0 +1,85 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    UnderConstruction: "Építés alatt." #!String
+    DismountBeforeEntering: "Szállj le, mielőtt bemennél" #!String
+    PiecesOfHay: "Széna: {0}/{1}" #!String
+    AddedHay: "{0} széna lett hozzáadva a silóhoz." #!String
+    MillFull: "Nincs több hely" #!String
+    CantMill: "Nem lehet őrölni" #!String
+    NeedSilo: "Siló szükséges hozzá" #!String
+    CantEnter: "Most nem mehetsz be" #!String
+    WrongFishType: "A nálad lévő {0} nem akar élni egy {1} tóban." #!String
+    WrongFishTypeCoral: "Egy '{0}'-t csak egy {0} tóba lehet helyezni." #!String
+    CantPutInPonds: "A nálad lévő {0} nem lenne boldog odabent." #!String
+    NoFish: "Ebbe a tóba halakat lehet rakni." #!String
+    PondFull: "Ez a tó tele van." #!String
+    Paint_Region_Building: "Épület" #!String
+    Paint_Region_Roof: "Tető" #!String
+    Paint_Region_Trim: "Szegély" #!String
+    BuildingSkinMenu_ChooseAppearance: "{0} kinézetének megváltoztatása." #!String
+    Construction_ChooseLocation: "Hol akarod rendezni az épületeket?" #!String
+    Barn_Name: "Istálló" #!String
+    Barn_Description: "4 istállós állatnak." #!String
+    BigBarn_Name: "Nagy istálló" #!String
+    BigBarn_Description: "8 istállós állatnak. Az állatok vemhesek lehetnek. Vehetsz kecskét." #!String
+    BigCoop_Name: "Nagy csűr" #!String
+    BigCoop_Description: "8 csűrös állatnak. Inkubátor jár hozzá. Vehetsz kacsát." #!String
+    BigShed_Name: "Nagy raktár" #!String
+    BigShed_Description: "Megduplázza a raktár méretét. A belseje dekorálható." #!String
+    Cabin_Name: "Kunyhó" #!String
+    Cabin_Description: "Otthon egy barátod számára! A város mezőgazdasági tőkéje által támogatva." #!String
+    Coop_Name: "Csűr" #!String
+    Coop_Description: "4 csűrös állatnak." #!String
+    DeluxeBarn_Name: "Luxus istálló" #!String
+    DeluxeBarn_Description: "12 istállós állatnak. Automata etetővel. Vehetsz birkát és disznót." #!String
+    DeluxeCoop_Name: "Luxus csűr" #!String
+    DeluxeCoop_Description: "12 csűrös állatnak. Automata etetővel. Vehetsz nyulat." #!String
+    DesertObelisk_Name: "Sivatagi obeliszk" #!String
+    DesertObelisk_Description: "Elteleportál a sivatagba." #!String
+    EarthObelisk_Name: "Föld obeliszk" #!String
+    EarthObelisk_Description: "Elteleportál a hegyekbe." #!String
+    FishPond_Name: "Halastó" #!String
+    FishPond_Description: "Nevelj halakat és gyűjtsd be a terméküket. A halak idővel szaporodnak." #!String
+    GoldClock_Name: "Arany óra" #!String
+    GoldClock_Description: "Nem jelenik meg szemét a farmodon. A kerítések nem rongálódnak maguktól." #!String
+    Greenhouse_Name: "Üvegház" #!String
+    Greenhouse_Description: "Egy hely ahol egész évben bármilyen szezonú növényt termeszthetsz!" #!String
+    IslandObelisk_Name: "Sziget obeliszk" #!String
+    IslandObelisk_Description: "Elteleportál a Gyömbér-szigetre." #!String
+    JunimoHut_Name: "Junimo kunyhó" #!String
+    JunimoHut_Description: "A kunyhó körül Junimok jelennek meg és learatják a termést neked." #!String
+    Mill_Name: "Malom" #!String
+    Mill_Description: "Segítségével búzát, céklát és rizst őrölhetsz." #!String
+    Shed_Name: "Raktár" #!String
+    Shed_Description: "Egy üres épület. Azt raksz bele, amit csak akarsz! A belseje dekorálható." #!String
+    ShippingBin_Name: "Szállítós láda" #!String
+    ShippingBin_Description: "Dobj bele tárgyakat, hogy az este alatt eladd őket." #!String
+    Silo_Name: "Siló" #!String
+    Silo_Description: "Segítségével levághatod és etetéshez raktározhatod el a füvet." #!String
+    SlimeHutch_Name: "Ragacsketrec" #!String
+    SlimeHutch_Description: "Maximum 20 ragacsnak. A vályút vízzel megtöltve ragacslabdákat készítenek." #!String
+    Stable_Name: "Istálló" #!String
+    Stable_Description: "Segítségével lovat tarthatsz és meglovagolhatod. Ló is jár hozzá." #!String
+    WaterObelisk_Name: "Víz obeliszk" #!String
+    WaterObelisk_Description: "Elteleportál a strandra." #!String
+    Well_Name: "Kút" #!String
+    Well_Description: "Egy olyan helyet épít ki, ahol újratöltheted az öntözőkannádat." #!String
+    PetBowl_Name: "Háziállat tálka" #!String
+    PetBowl_Description: "Otthont nyújt egy háziállat számára." #!String
+

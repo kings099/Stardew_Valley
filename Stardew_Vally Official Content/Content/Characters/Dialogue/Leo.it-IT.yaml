@@ -1,0 +1,31 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Mon: "Ciao... Tutto bene?" #!String
+    AcceptGift_(O)StardropTea: "Wow, sa proprio di noci dorate! Fantastico!" #!String
+    AcceptGift_(TR)ParrotEgg: "Questo è un uovo prezioso... Un bambino! Sono contento che me l'hai portato, lo terrò al sicuro." #!String
+    Mon4: "Ho imparato un sacco di cose dalla mia famiglia di pappagalli...#$b#Ma di sicuro là fuori ci sono un sacco di cose che non so ancora.$s" #!String
+    Tue: "Quando Sole è arrabbiato, si sta bene nella giungla.#$e#Sole non ci trova sotto le foglie. Noi lo frega! Haha...$h" #!String
+    Wed: "...Scusa... Oggi sono timido.$3" #!String
+    Wed2: "Fai attenzione nel vulcano... agli spiriti non piace estranei." #!String
+    Thu: "Ha incontrato gli altri come te?#$b#Io non parla molto con loro. Mi sente più al sicuro con miei simili...$3" #!String
+    Fri: "Una volta... ero in cima al vulcano di notte, e ho visto luci lontane lontane.#$b#Chissà se ci sono altre famiglie di uccelli là fuori?$3" #!String
+    Fri4: "Chissà se posso vedere casa tua dalla cima del vulcano?" #!String
+    Sat: "...Oggi sono triste.$s#$e#Tu va' pure... divertiti. Lasciami essere triste.$s" #!String
+    Sun: "Quando piove, arrivano strani uccelli.#$b#Io provo a parlarci... ma loro volano via.$s#$b#Non vogliono essere amici, sembra...$s" #!String
+

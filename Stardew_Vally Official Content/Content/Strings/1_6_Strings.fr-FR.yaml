@@ -1,0 +1,611 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    ForestPylon: "Un réceptacle d’origine inconnue..." #!String
+    ForestPylonActivated: "C’est une relique étrange d’un autre monde." #!String
+    ForestPylonEvent: "communityCenter/-2000 -2000/farmer 16 5 0 Wizard -1000 -1000 2/pause 1000/viewport 16 5 true/move farmer -2 0 1/pause 4000/playSound terraria_warp/specificTemporarySprite terraria_warp_begin/faceDirection farmer 2 true/animate farmer false true 100 94/jump farmer/pause 2000/stopAnimation farmer/faceDirection farmer 1/pause 3600/playSound coin/pause 100/awardFestivalPrize meowmere/pause 1000/specificTemporarySprite terraria_cat_leave/pause 5000/emote farmer 8/pause 500/warp Wizard 4 4/playSound doorClose/pause 400/faceDirection Wizard 1/emote Wizard 12/speak Wizard \"Ne touche pas ça !\"/faceDirection farmer 3/emote farmer 16 true/end" #!String
+    SquidFest_Pam: "Je n’ai pas les épaules pour attraper des calamars, mais ce n’est pas grave. Je t’encouragerais à partir de maintenant." #!String
+    SquidFest_Willy: "Au fil du temps, tu comprendras mieux le comportement des calamars. Tu sauras même quand il y en a un qui a mordu à l’hameçon avant même de le voir." #!String
+    DesertFestival_Abigail: "Je suis contente que tu aies réparé le bus ! C’est génial.$h#$e#J’ai toujours voulu voyager au-delà de Pélican Ville." #!String
+    DesertFestival_Abigail_marriage: "Je comptais te rejoindre à la caverne du crâne, mais le stand de nourriture m’a distraite...#$e#Tu peux continuer sans moi... mais fais attention à toi !" #!String
+    DesertFestival_Alex_marriage: "Hé... Le soleil du désert te donne fière allure.$h" #!String
+    DesertFestival_Sam_marriage: "Hé, n’oublie pas d’aller chercher notre cactus gratuit avant la fin du festival.#$b#Peu importe à quoi il ressemble, il sera parfait dans notre maison !$h" #!String
+    DesertFestival_Sebastian_marriage: "Hé, je vais rester ici et me détendre à l’ombre.#$e#Tu sais comment je suis... J’ai toujours été plutôt du genre à vivre dans une grotte.$h" #!String
+    DesertFestival_Shane_marriage: "Rappelle-moi de me brosser les dents ce soir... Il y a douze soda aux saveurs uniques, et je compte bien tous les essayer.#$e#Mmm... soda à la carotte des cavernes... *glou, glou*" #!String
+    DesertFestival_Elliott_marriage: "Eh bien, qu’avons-nous là ? Une magnifique rose du désert !$h#$e#Il va falloir la garder dans l’eau." #!String
+    DesertFestival_Harvey_marriage: "Hé, @. Je travaillerai tard pendant le festival, alors ne m’attends pas toute la nuit !#$e#Promets-moi de faire attention à toi dans la caverne du crâne." #!String
+    DesertFestival_Emily_marriage: "Hé, @ ! Je t’aime comme tu es... mais si tu veux, tu peux aussi entrer dans la boîte !" #!String
+    DesertFestival_Emily2_marriage: "Je m’amuse bien, mais je suis tellement occupée que je n’ai pas pu m’occuper de la maison. J’espère que tu vas bien !" #!String
+    DesertFestival_Emily3_marriage: "Je ne me souviens plus si j’ai nourri le perroquet ce matin !" #!String
+    DesertFestival_Haley_marriage: "Hé... Quelqu’un a un beau bronzage... *pince le bras*$h" #!String
+    DesertFestival_Haley2_marriage: "%Votre femme fait la sieste." #!String
+    DesertFestival_Penny_marriage: "Bonjour, mon amour. Je jetais juste un coup d’œil pour voir s’il y a quelque chose de bien pour la maison.$h" #!String
+    DesertFestival_Maru_marriage: "Comment se passe la collecte des œufs de Calico ? Il y a tellement de prix intéressants!$h#$e#Je sais que tu vas gagner." #!String
+    DesertFestival_Leah_marriage: "Je voulais aller nager, mais apparemment l’eau est pleine de carpes scorpions !$h" #!String
+    DesertFestival_Alex: "Tu as vu la taille de ces œufs de Calico ?#$b#Imagine la dose de protéines..." #!String
+    DesertFestival_Caroline: "Ce temps est parfait. Je ne sais pas où finit ma peau et où commence l’air.$h" #!String
+    DesertFestival_Clint: "Hé, @. Honnêtement, je n’aime pas vraiment aller à des festivals.#$b#Mais je me sentirais encore plus mal si je restais à la maison, sachant que tout le monde s’amuse ici.$s" #!String
+    DesertFestival_Demetrius: "Pourquoi les humains aiment-ils les plats épicés ? C’est contre-intuitif d’un point de vue biologique.#$e#Sauf s’il y a quelque chose que je ne comprends pas...$5" #!String
+    DesertFestival_Elliott: "*Marmonne* ... Hmm, une douce sensation entre les orteils presque crémeuse, mais avec beaucoup de corps. Mais c’est quand même un peu plus doux que chez nous...#$b#Ho, pardon  ! Je suis devenu un connaisseur en matière de sable.$h" #!String
+    DesertFestival_Emily: "Hmm... Je détecte que tes gouts en matière de mode ne correspondent pas tout à fait à ce que tu ressens intérieurement. Entre dans la boîte et je pourrais arranger tout ça !" #!String
+    DesertFestival_Evelyn: "Ha... les sables du temps, les sables du temps..." #!String
+    DesertFestival_George: "Qu’est-ce qu’elle marmonne ? Je suis ici pour la tente de nourriture épicée !" #!String
+    DesertFestival_Gus: "Normalement, je fournis toute la nourriture pour les festivals de la vallée. Mais pas aujourd’hui ! Parfois, ça fait du bien de se détendre un peu.$h" #!String
+    DesertFestival_Haley: "Si tu sens une bonne odeur, c’est celle de l’huile de noix de coco que j’ai appliquée sur ma peau.#$b#Je suis passionnée sur tout ce qui touche le désert !$h" #!String
+    DesertFestival_Haley2: "%Haley brille sous les rayons de soleil." #!String
+    DesertFestival_Harvey: "Aller dans la caverne peut être très dangereux. J’espère qu’il n’y aura pas d’accident, mais quand même... Je serai là toute la journée au cas où.#$e#En tant que médecin, je recommanderais de minimiser tes expéditions dans les cavernes infestées de serpents ! Mais c’est toi qui décides." #!String
+    DesertFestival_Jas: "C’est sympa, mais j’aimerais une glace..." #!String
+    DesertFestival_Jodi: "Ho, ne fais pas attention à moi, je fais juste un peu de shopping.#$e#Si je ne fais pas le tour des magasins, je risque de rater la décoration parfaite pour notre salon !" #!String
+    DesertFestival_Kent: "Hé, @. Tu profites de la chaleur ?" #!String
+    DesertFestival_Leah: "Je me demandais... Si je vivais ici, au lieu de Stardew Valley, ma vision artistique serait-elle différente ?" #!String
+    DesertFestival_Leo: "J’aime bien cet endroit. Le climat me rappelle d’où je viens." #!String
+    DesertFestival_Lewis: "Après un long et sombre hiver, ce festival est excellent pour redonner un souffle de vie à tout le monde." #!String
+    DesertFestival_Lewis2: "Tout ça est possible parce que tu as réparé le bus, @ ! Je ne te remercierai jamais assez." #!String
+    DesertFestival_Lewis3: "N’oublie pas qu’aujourd’hui est le dernier jour du festival. Mais nous reviendrons l’année prochaine." #!String
+    DesertFestival_Linus: "Je suis venu ici sous le bus.#$e#On ne peut pas trouver cette saveur du désert de Calico où que ce soit d’autres. Hé, hé...$h" #!String
+    DesertFestival_Marnie: "Hé, @. Je pensais justement à du lait.#$e#Tu as déjà essayé le lait de chameau ? J’ai entendu dire qu’il est un peu salé." #!String
+    DesertFestival_Maru: "Je suis impressionnée par la qualité de l’entraînement de ces petits coureurs !$h" #!String
+    DesertFestival_Pam: "Hé, toi... Tu prends un jour de congé ? Ça fait du bien de se détendre un peu de temps en temps, non ?#$e#Et oui... Même la vieille Pam a besoin d’un peu de soleil sur sa peau de temps en temps ! Réveille-moi avant que je ne me transforme en cuir... Hé, hé." #!String
+    DesertFestival_Penny: "Il y a des milliers d’années, cet endroit était la terre natale d’une ancienne civilisation. Je me demande à quoi ils ressemblaient." #!String
+    DesertFestival_Pierre: "En tant que commerçant, je trouve intéressant de voir comment les autres gèrent leurs magasins...#$e#*chuchote* Ne le dis pas à Sandy, mais ma sélection de produits d’épicerie surpasse la sienne !" #!String
+    DesertFestival_Robin: "Hé @. On est juste en train de bavarder. Je ne les vois pas souvent, même si nous sommes voisins !" #!String
+    DesertFestival_Sam: "Hé, @. Tu as vu mon cactus. J’essaie de lui trouver un nom.#$e#Hmm... peut-être '%name' ?" #!String
+    DesertFestival_Sandy: "C’est probablement la période la plus chargée de l’année pour moi ! C’est sympa de pouvoir voir tout le monde." #!String
+    DesertFestival_Sebastian: "Hé. Je passe un peu de temps avec cet oiseau. Elle a l’air de m’apprécier." #!String
+    DesertFestival_Shane: "Je suis venu ici une fois quand j’étais petit... La seule chose dont je me souvienne, c’est d’avoir été malade pendant le trajet en bus." #!String
+    DesertFestival_Vincent: "Maman, je m’ennuie !" #!String
+    DesertFestival_Willy: "Ha, rien de tel que l’odeur de crevettes grillées par une chaude journée." #!String
+    CactusMan_Closed: "L’homme-cactus : Ils sont un peu timides en ce moment. Reviens plus tard." #!String
+    CactusMan_Collected: "L’homme-cactus : Alors, comment va le petit ?" #!String
+    CactusMan_Intro_1: "L’homme-cactus : Ha, oui... Tu as l’air de quelqu’un qui apprécierait ce que j’ai à offrir." #!String
+    CactusMan_Intro_2: "L’homme-cactus : Ho, oui... J’ai exactement ce qu’il te faut." #!String
+    CactusMan_Intro_3: "L’homme-cactus: Ce regard... il dit : \"J’ai besoin d’un cactus, ou je vais exploser\"." #!String
+    CactusMan_Question: "L’homme-cactus : Es-tu prêt à accueillir un nouveau cactus dans ta vie ?" #!String
+    CactusMan_No: "L’homme-cactus : Je comprends. Ils sont peut-être petits, mais accepter un cactus dans sa vie est une grosse responsabilité. Reviens me voir quand tu te sentiras prêt." #!String
+    CactusMan_Yes_Intro: "L’homme-cactus : Très bien. Voyons voir..." #!String
+    CactusMan_Yes_Full: "L’homme-cactus : Tu n’as pas assez de place... Reviens me voir quand tu auras fait de la place." #!String
+    CactusMan_Yes_1: "L’homme-cactus : Oui, il te ressemble beaucoup, n’est-ce pas ?" #!String
+    CactusMan_Yes_2: "L’homme-cactus : Celui-ci est un peu timide, mais je sais que vous allez devenir amis rapidement." #!String
+    CactusMan_Yes_3: "L’homme-cactus : Ho, oui... Vous êtes fait l’un pour l’autre." #!String
+    CactusMan_Yes_4: "L’homme-cactus : Je ne dirai pas pourquoi... mais celui-ci est le compagnon idéal pour toi." #!String
+    CactusMan_Yes_5: "L’homme-cactus : Il a une drôle d’allure, mais il est parfait pour toi." #!String
+    EggShop_Closed: "Le magasin n’est pas ouvert. Revenez plus tard." #!String
+    Accept: "Accepter" #!String
+    Decline: "Refuser" #!String
+    Willy_DesertFishing1: "\n        Le défi de Willy : Attraper 3 poissons de sable.\n      " #!String
+    Willy_Challenge: " Le défi de Willy" #!String
+    Willy_Challenge_Description_1: "Willy te met au défi d’attraper 3 poissons de sable." #!String
+    Willy_Challenge_Return_1: "Ha, tu les as attrapés. Une pêche excitante n’est-ce pas ?#$b#Voici 25 œufs de Calico en récompense." #!String
+    Willy_Challenge_Description_2: "Willy te défie d’attraper une carpe scorpion." #!String
+    Willy_Challenge_Return_2: "Ha, tu as réussi. C’est un véritable défi, n’est-ce pas ?#$b#Voici 50 œufs de Calico en récompense." #!String
+    Willy_Challenge_Description_3: "Willy te met au défi de trouver un \"flotteur doré\"." #!String
+    Willy_Challenge_Return_3: "Et bien, si ce n’est pas mon flotteur doré préféré !#$b#Et il ne sent que légèrement le poisson... Hé,hé.$h#$b#Voici 30 œufs de Calico en récompense." #!String
+    Willy_DesertFishing2: "Le défi de Willy : Attraper une carpe scorpion." #!String
+    Willy_DesertFishing3: "Willy : Un poisson a avalé mon rare flotteur doré ! Il y a 30 œufs en récompense pour celui qui me le rapportera." #!String
+    Willy_GoldenBobber: "Trouver et rapporter le flotteur doré de Willy." #!String
+    Scholar_Closed: "L’érudit : Toutes mes excuses. Mais je ne peux pas discuter avec toi tant que le festival n’est pas ouvert." #!String
+    Scholar_Intro: "L’érudit : Bonjour ! Veux-tu tester tes connaissances ? Si tu réponds correctement à mes questions, tu recevras un prix. Qu’en dis-tu ?" #!String
+    Scholar_Intro2: "L’érudit : Excellent ! Maintenant, pour la première question..." #!String
+    Scholar_Correct: "L’érudit : C’est exact !" #!String
+    Scholar_Win: "L’érudit : Très bien ! Je suis impressionné par tes connaissances. Voici ton prix." #!String
+    Scholar_Wrong: "L’érudit : Faux ! Je suis désolé. Mais tu devras revenir une autre fois." #!String
+    Scholar_Failed: "L’érudit : ... Je suis désolé. Mais tu devras revenir une autre fois." #!String
+    Scholar_DoneThisYear: "L’érudit : Profite bien de ta collection d’œufs. Je reviendrai l’année prochaine pour un autre défi." #!String
+    Scholar_Question_0_0: "Question 1 : Qui dirige {0} à Pélican Ville ?" #!String
+    Scholar_Question_0_0_Options: "la forge,le musée,le saloon,la poissonnerie,l’animalerie,le magasin général" #!String
+    Scholar_Question_0_0_Answers: "Clint,Gunther,Gus,Willy,Marnie,Pierre,Robine,Marlon" #!String
+    Scholar_Question_0_1: "Question 1 : Quelle est la date de la fin de la saison ?" #!String
+    Scholar_Question_0_1_Answers: "28,30,31,26" #!String
+    Scholar_Question_0_2: "Question 1 : Où sommes-nous ?" #!String
+    Scholar_Question_0_2_Answers: "Désert de Calico,Désert de Carlito,Désert de Conical,Désert de Capricorne,Désert de Canonical,Désert de Cowlicko,Désert de Catacombes,Désert de Capicola,Désert de Caverne du Crâne" #!String
+    Scholar_Question_1_0: "Question 2 : {0} pousse en quelle saison ?" #!String
+    Scholar_Question_1_0_Options: "L’ail,Le chou rouge,L’artichaut" #!String
+    Scholar_Question_1_0_Answers: "Printemps,Été,Automne" #!String
+    Scholar_Question_1_1: "Question 2 : Durant quelle saison {0} porte-t-il des fruits? " #!String
+    Scholar_Question_1_1_Options: "l’abricotier,le pêcher,le grenadier" #!String
+    Scholar_Question_1_1_Answers: "Printemps,Été,Automne" #!String
+    Scholar_Question_1_2: "Question 2 : Quel jour le magasin de Pierre est-il normalement fermé ?" #!String
+    Scholar_Question_1_2_Answers: "Mercredi,Jeudi,Mardi,Lundi,Samedi,Dimanche,Vendredi" #!String
+    Scholar_Question_2_0: "Question 3 : En quelle saison peut-on attraper {0} ?" #!String
+    Scholar_Question_2_0_Options: "une carpe,un poisson-globe,un saumon,un calamar" #!String
+    Scholar_Question_2_0_Answers: "Toutes les saisons,Eté,Automne,Hiver" #!String
+    Scholar_Question_2_1: "Question 3 : Combien de pas as-tu faits ?" #!String
+    Scholar_Question_2_2: "Question 3 : Combien coûte {0} ?" #!String
+    Scholar_Question_2_2_Options: "une poule,une vache,un cochon,un lapin,un canard" #!String
+    Scholar_Question_2_2_Answers: "800po,1500po,16000po,8000po,1200po,11000po,7500po" #!String
+    Scholar_Question_3_0: "Question 4 : Où peut-on attraper {0} ?" #!String
+    Scholar_Question_3_0_Options: "un poisson pierre,un poisson-glace,une anguille de lave" #!String
+    Scholar_Question_3_0_Answers: "Mine niveau 20,Mine niveau 60,Mine niveau 100,La plage,Les égouts,Mine niveau 120" #!String
+    Scholar_Question_3_1: "Question 4 : Quel est le nom de famille de George ?" #!String
+    Scholar_Question_3_1_Answers: "Mullner,Millener,Molnar,Nelson,Miller" #!String
+    Scholar_Question_3_2: "Question 4 : Combien y a-t-il de poubelles à Pélican Ville ?" #!String
+    Scholar_Question_3_2_Answers: "8,12,6,11,4,10" #!String
+    Cook_Intro: "Chef : Bonjour, tu as faim ?" #!String
+    Cook_Intro_Yes: "Chef : Hoo, oui... Je suis très heureux de l’entendre. *Avale*" #!String
+    Cook_Intro_Yes2: "Chef : J’aimerais beaucoup te préparer un plat très spécial. Quelque chose de parfaitement adapté à ton palet unique. Puis-je ?" #!String
+    Cook_Intro_Yes3: "Chef : Hooooo... *glousse*... Très bien. Maintenant... que voudrais-tu ?" #!String
+    Cook_Ingredient0: "Des haricots copieux" #!String
+    Cook_Ingredient1: "Un pain des cavernes" #!String
+    Cook_Ingredient2: "Des fruits rares" #!String
+    Cook_Ingredient3: "Du cheddar extrêmement fort" #!String
+    Cook_Ingredient4: "Des crevettes" #!String
+    Cook_ChoseIngredient: "Chef : Ha, oui... {0}. Excellent choix. Maintenant... quel type de sauce voudrais-tu ?" #!String
+    Cook_Sauce0: "Marinara" #!String
+    Cook_Sauce1: "Crème de champignons" #!String
+    Cook_Sauce2: "Sirop de cerise" #!String
+    Cook_Sauce3: "Sauce piquante à l’ail" #!String
+    Cook_Sauce4: "Sauce piquante inconfortablement forte" #!String
+    Cook_ChoseSauce: "Chef : Très bien. Une bonne dose de {0} pour parfaire le plat." #!String
+    Cook_Done: "Chef : Voilà. J’ai nommé ce plat \"{0}\". Bon appétit !" #!String
+    Cook_DishNames_0_1: "mousse terreuse" #!String
+    Cook_DishNames_0_2: "gâteau aux haricots sucrés" #!String
+    Cook_DishNames_0_3: "gratin de la grotte du crâne" #!String
+    Cook_DishNames_0_4: "tacos épicés" #!String
+    Cook_DishNames_1_0: "chili montagnard" #!String
+    Cook_DishNames_1_2: "gâteau de cristal" #!String
+    Cook_DishNames_1_3: "kebab des cavernes" #!String
+    Cook_DishNames_1_4: "bûche brulante" #!String
+    Cook_DishNames_2_0: "salade acidulée" #!String
+    Cook_DishNames_2_1: "gâteau super-alimentaire" #!String
+    Cook_DishNames_2_3: "smoothie de guerrier" #!String
+    Cook_DishNames_2_4: "peau de fruit fripé" #!String
+    Cook_DishNames_3_0: "pizza calico" #!String
+    Cook_DishNames_3_1: "champignons farcis" #!String
+    Cook_DishNames_3_2: "quesadilla elfique" #!String
+    Cook_DishNames_3_4: "nachos du désert" #!String
+    Cook_DishNames_4_0: "cioppino" #!String
+    Cook_DishNames_4_1: "crevettes tropicales" #!String
+    Cook_DishNames_4_2: "beignet aux crevettes" #!String
+    Cook_DishNames_4_3: "senteurs de la mer" #!String
+    Cook_DishNames_4_4: "Gombo du désert" #!String
+    Cook_Intro_No: "Chef : C’est dommage. Reviens me voir quand tu seras prêt à manger quelque chose de délicieux." #!String
+    Race_Closed: "Annonceur de la course : Les coureurs ont besoin d’un peu de temps pour se préparer... Reviens plus tard !" #!String
+    Race_Question: "Annonceur de la course : Devine qui sera le gagnant pour recevoir un prix fabuleux !" #!String
+    Race_Guess: "Annonceur de la course : À ton avis, qui va gagner ?" #!String
+    Race_Guess_Made: "Annonceur de la course : {0} ? D’accord. Maintenant, assieds-toi et regarde la course !" #!String
+    Race_Guess_Already_Made: "Annonceur de la course : Voyons si {0} peut gagner !" #!String
+    Race_Collect_Prize_Special: "Annonceur de la course : Escarg... Quoi ??? Euh... Eh bien, voici ton prix..." #!String
+    Race_Collect_Prize: "Annonceur de la course : Félicitations ! Voici ton prix !" #!String
+    Race_Late_Guess: "Annonceur de la course : Oups. On dirait que la course a déjà commencé. Tente ta chance plus tard !" #!String
+    Race_Ongoing: "Annonceur de la course : La course a déjà commencé ! Nous en reparlerons plus tard..." #!String
+    Race_Ended: "Annonceur de course : Les courses sont terminées pour la journée. J’espère que tu t’es bien amusé !" #!String
+    Race_Begin: "La prochaine course est sur le point de commencer..." #!String
+    Race_Ready: "À vos marques..." #!String
+    Race_Set: "Prés..." #!String
+    Race_Go: "Partez !" #!String
+    Race_Finish: "Ligne d’arrivée !" #!String
+    Race_Comment_1: "Il s’en est fallu de peu !" #!String
+    Race_Comment_2: "C’était au coude à coude !" #!String
+    Race_Comment_3: "On a rarement vu une telle vitesse !" #!String
+    Race_Comment_4: "Et maintenant, le moment que vous attendez tous..." #!String
+    Race_Close: "C’est la dernière course pour aujourd’hui. Nous nous reverrons demain !" #!String
+    Race_Close_LastDay: "Les courses de cette année touchent à leur fin ! Nous nous reverrons la prochaine fois !" #!String
+    Race_Winner: "Le vainqueur de cette course est..." #!String
+    Race_Win: "Viens récupérer ton prix !" #!String
+    Race_Lose: "Peut-être la prochaine fois !" #!String
+    Racer_0: "Coq de vitesse" #!String
+    Racer_1: "Aiguillon du roi" #!String
+    Racer_2: "Coupe-biscuit" #!String
+    Racer_3: "Escargot" #!String
+    Racer_4: "Crabe-cactus" #!String
+    Shady_Guy_Closed: "Individu suspect : Hé... pas maintenant. Reviens plus tard, et nous pourrons parler." #!String
+    Shady_Guy_Ended: "Individu suspect : C’est trop tard. Reviens me voir quand les courses auront lieu." #!String
+    Shady_Guy_Ongoing: "Individu suspect : Garde tes yeux sur la course ! Nous pourrons parler plus tard..." #!String
+    Shady_Guy_Late: "Individu suspect : Trop tard, la course a commencé. On en reparlera plus tard..." #!String
+    Shady_Guy_Intro: "Individu suspect : Psst... Hé, toi. Tu as regardé les courses ? Elles sont plutôt excitantes, non ?" #!String
+    Shady_Guy_Intro_2: "Individu suspect : ... Dis, j’ai une \"proposition\" à te faire." #!String
+    Shady_Guy_Intro_3: "Individu suspect : Choisis un coureur, et sa prochaine course ne se passera pas très bien pour lui... si tu vois ce que je veux dire ?" #!String
+    Shady_Guy: "Individu suspect : Ça ne te coûtera qu’un œuf de Calico. Un petit prix à payer pour l’avantage que ça te donnera." #!String
+    Shady_Guy_2nd: "Individu suspect : As-tu besoin de mes services ? Ça te coûtera qu’un œuf de Calico." #!String
+    Shady_Guy_Question: "Individu suspect : D’accord, alors qui sera le coureur malchanceux ?" #!String
+    Shady_Guy_NoEgg: "Individu suspect : On dirait que tu n’as pas d’œufs de Calico. Arrête de me faire perdre mon temps." #!String
+    Shady_Guy_Selected_1: "Individu suspect : {0}, hein ? OK, ça marche." #!String
+    Shady_Guy_Selected_2: "Individu suspect : {0}. C’est fait. Maintenant, si tu veux bien m’excuser, j’ai un coup de fil à passer..." #!String
+    Shady_Guy_Selected_3: "Individu suspect : {0} ? Bien sûr, bien sûr... Bonne chance, à toi" #!String
+    Marlon_Closed: "Je suis encore en train de tout préparer. Si tu veux bien revenir me voir plus tard." #!String
+    Marlon_Intro: "Bonjour, @. Bienvenue au stand des défis de la guilde des aventuriers.#$b#Chaque jour, nous aurons un choix de défis que tu pourras tenter de relever. Finis l’un d’entre eux et la guilde te récompensera avec des œufs de Calico.#$b#Une fois que tu auras choisi un défi, tu ne pourras pas changer ta décision. Prends ton temps pour faire ton choix !" #!String
+    Marlon_1: "Tu as envie de tester ton courage ?#$b#J’ai quelques défis pour ça à te proposer." #!String
+    Marlon_2: "Tu te sens l’âme d’un aventurier ?#$b#Très bien, voici les défis d’aujourd’hui." #!String
+    Marlon_3: "J’espère que tu as bien entretenu tes armes.#$b#Tes armes auront besoin d’être en bon état pour les défis d’aujourd’hui." #!String
+    Marlon_4: "Tu as un regard audacieux.#$b#Que dirais-tu d’un défi ?" #!String
+    Marlon_Challenge_Chosen: "Tu essayes toujours de finir le défi, n’est-ce pas ?#$b#C’était ça le défi, au cas où tu aurais besoin de te rafraichir la mémoire." #!String
+    Marlon_Challenge_Finished: "Excellent.#$b#Il y aura d’autres défis demain, alors vas-y doucement et repose-toi bien." #!String
+    Marlon_Challenge_Finished_LastDay: "Hé, tu as réussi ! Je suis impressionné.#$b#C’est fini pour cette année, mais Gil et moi reviendrons la prochaine fois." #!String
+    Gil_NoRating: "C’est un jour nouveau... reviens me voir quand tu auras fait tes preuves dans les cavernes." #!String
+    Gil_NextYear: "C’est fini pour cette année... *ronflements*..." #!String
+    Gil_ComeBack: "C’est fini pour aujourd’hui. Tu pourras réessayer demain, si tu veux... *ronflements*..." #!String
+    Gil_SubmitRating: "Voulez- vous donner à Gil votre plus haut score d’œufs d’aujourd’hui ?^(Score d’œufs {0})" #!String
+    Gil_Rating_1to4: "... {0} ? Ha.... OK. Voici une petite récompense pour toi... Maintenant, va jouer avec les autres enfants." #!String
+    Gil_Rating_5to9: "... {0} ? Ce n’est pas très impressionnant, mais au moins tu as eu le courage d’essayer. Voici un petit quelque chose." #!String
+    Gil_Rating_10to14: "{0}, hein ? Pas mal, pas mal... Bien sûr, quand j’avais ton âge, je pouvais faire le double de ça. Avec une épée rouillée et sans nourriture !" #!String
+    Gil_Rating_15to19: "{0}... Ce n’est pas mal du tout. C’est le genre de résultat que nous recherchons dans la guilde des aventuriers. Voici ta récompense." #!String
+    Gil_Rating_20to24: "{0} ? OK, je suis impressionné...#$b#Hé, Marlon! Regarde ça ! Nous avons un score d’œufs de {0} pour aujourd’hui !" #!String
+    Gil_Rating_25: "{0} !?!#$b#Eh bien, je pense que nous avons un véritable chasseur d’œufs de Calico parmi nous ! " #!String
+    Gil_Rating_50: "{0} !?!?!?!?!?!?!?$h" #!String
+    Gil_Rating_1000: "Tu entends une voix dans ta tête : \"Ce serait déshonorant de soumettre un score d’œuf obtenu à l’aide d’un logiciel de triche\"." #!String
+    MakeOver_NoStylist: "Reviens lorsqu’un agent est présent." #!String
+    MakeOver_Emily_AlreadyStyled: "Tu es superbe !$h#$b#Reviens un autre jour et nous te donnerons un nouveau look !" #!String
+    MakeOver_Sandy_AlreadyStyled: "Pas mal du tout !$h#$b#Reviens bientôt, j’aurai un nouveau look pour toi !" #!String
+    MakeOver_Emily_InventoryFull: "Hmm, ton sac à dos a l’air un peu chargé. Reviens me voir quand tu auras fait assez de place pour un ensemble complet de vêtements !" #!String
+    MakeOver_Sandy_InventoryFull: "Hmm, ton sac à dos a l’air un peu chargé. Reviens me voir quand tu auras fait assez de place pour un ensemble complet de vêtements !" #!String
+    MakeOver_Emily_1: "OK, avant de continuer, laisse-moi visualiser ton aura pour voir quel look t’ira comme un gant..." #!String
+    MakeOver_Emily_2: "Oui... Je vois..." #!String
+    MakeOver_Emily_Reaction1: "Oups, désolée si ça chatouille." #!String
+    MakeOver_Emily_Reaction2: "Oups, désolée si ça fait mal !" #!String
+    MakeOver_Emily_Reaction3: "Wouah, c’est beaucoup trop de gel pour tes cheveux..." #!String
+    MakeOver_Emily_Reaction4: "Non... ça ne va pas..." #!String
+    MakeOver_Emily_Reaction5: "Tiens, attrape !" #!String
+    MakeOver_Emily_Reaction6: "Ho ! Regarde ça, un beignet de chou-fleur..." #!String
+    MakeOver_Emily_Reaction7: "On va couper un peu ici..." #!String
+    MakeOver_Emily_Reaction8: "Je vais un peu estomper tout ça avec mon doigt..." #!String
+    MakeOver_Emily_Reaction9: "OK, prépare-toi, ça risque d’être un peu serré..." #!String
+    MakeOver_Emily_3: "OK, c’est fait !$h#$b#Je ne veux pas te faire peur, mais je vais entrer !" #!String
+    MakeOver_Emily_4: "Voilà !" #!String
+    MakeOver_Emily_5: "Oui, je sens que ton être intérieur et ton être extérieur sont maintenant en parfaite harmonie !$h#$b#J’ai hâte que tu sois ton nouveau \"toi\" !$h" #!String
+    MakeOver_Emily_Done: "Alors, qu’en penses-tu ?#$b#J’ai mis tes anciens vêtements dans ton sac à dos au cas où tu changerais d’avis !$h" #!String
+    MakeOver_Sandy_1: "..." #!String
+    MakeOver_Sandy_2: "Oups ! C’est mon signal !" #!String
+    MakeOver_Sandy_3: "Toc, toc. Je vais entrer !" #!String
+    MakeOver_Sandy_4: "Voyons voir..." #!String
+    MakeOver_Sandy_5: "OK !" #!String
+    MakeOver_Sandy_6: "C’était amusant !$h#$b#J’espère que tu aimes autant que moi ton nouveau look !$h" #!String
+    MakeOver_Sandy_Done: "Tu es superbe !#$b#J’ai mis tes vieux vêtements dans ton sac à dos au cas où tu changerais d’avis.$h" #!String
+    Shop_Abigail: "Hé, j’ai pris quelques trucs au hasard dans mon placard. Il y a quelque chose qui t’intéresse ?" #!String
+    Shop_Maru: "Tu vois quelque chose qui te plaît ?" #!String
+    Shop_Emily: "Ha, je me sens beaucoup mieux ici à l’ombre." #!String
+    Shop_Leah: "J’avais trop de bois, alors j’ai construit ces mini-bibliothèques..." #!String
+    Shop_Harvey: "Ho, euh... ce sont des modèles réduits d’avions que j’ai construits... tu les aimes ?" #!String
+    Shop_Pierre: "Psst... Je vends des œufs pour de l’argent ! Hé, hé, hé... Ne le dis pas à Lewis." #!String
+    Shop_Sam: "Tu veux mon vieux skateboard cassé ? Tu pourrais l’utiliser comme décoration ou quelque chose dans le même genre." #!String
+    Shop_Sebastian: "J’ai trouvé un tas de choses au bord du lac." #!String
+    Shop_Alex: "Hé, tu as des œufs ?" #!String
+    Shop_Caroline: "Bonjour. J’espère que tu trouveras quelque chose qui te plaira." #!String
+    Shop_Gus: "Serais-tu d’humeur de gouter à quelque chose de délicieux ?" #!String
+    Shop_Elliott: "Tout un tas de choses intéressantes s’est échoué sur la plage. Ça t’intéresse de faire une échange ?" #!String
+    Shop_Haley: "Tu ferais mieux d’aller chercher d’autres œufs pour pouvoir acheter tout mon inventaire !" #!String
+    Shop_Demetrius: "As-tu des œufs à échanger ? J’étudie la composition de leurs coquilles." #!String
+    Shop_Clint: "Aurais-tu besoin de minerais ?" #!String
+    Shop_Robin: "Hé, regarde un peu ce papier peint personnalisé que j’ai fait. Tu le veux ?" #!String
+    Shop_Pam: "Hé, hé, hé... J’ai trouvé de vieilles boissons au fond du frigo." #!String
+    Shop_Penny: "J’espère que tu trouveras quelque chose qui te plaira." #!String
+    Shop_Leo: "Je peux avoir des œufs ? Je veux les mettre dans mon nid." #!String
+    Shop_Evelyn: "Bonjour, toi. Prends ton temps, je serai là toute la journée !" #!String
+    Shop_George: "Je possède tout ce qui vaut la peine d’être vendu." #!String
+    Shop_Marnie: "J’ai trouvé un rouleau de papier peint supplémentaire dans ma maison. Il est à toi pour 20 œufs !" #!String
+    Shop_Shane: "J’ai trouvé de la nourriture dans le congélateur. Je peux t’en vendre pour pas cher. Mais ne regarde pas la date de péremption." #!String
+    Shop_Jas: "Hé... Euh... *glousse*" #!String
+    Shop_Jodi: "Je suis désolée, ma sélection n’est pas très bonne cette année..." #!String
+    Shop_Vincent: "Bonjour ! Euh... J’ai trouvé des trucs. Tu veux en acheter ?" #!String
+    Shop_Kent: "Hé, j’ai quelques trucs à vendre. Dis-moi si quelque chose attire ton attention." #!String
+    Shop_Eggs: "É... Échanger... Œu... Œufs..." #!String
+    DF_Mine_Explanation: "---Bienvenue au défi de la Caverne du crâne !---^^Des œufs de Calico et de mystérieuses statues de Calico sont apparus un peu partout dans les cavernes.^" #!String
+    DF_Mine_Explanation_2: "Ton \"score d’œuf\" détermine la probabilité de trouver des œufs de Calico.^^Le \"score d’œuf\" augmente tout les 5 niveaux, ainsi que chaque fois que tu actives une Statue de Calico.^" #!String
+    DF_Mine_Explanation_3: "...Mais fais attention ! Les statues de Calico provoquent également divers effets étranges et dangereux !^^Rends visite à Gil pour recevoir une récompense si tu obtiens un \"score d’œuf\" élevé.^" #!String
+    DF_Mine_CalicoStatue: "Statue de Calico" #!String
+    DF_Mine_CalicoStatue_MP_Message: "Effet de Calico : \"{0}\" a été activé." #!String
+    DF_Mine_CalicoStatue_Name_0: "Invasion fantôme" #!String
+    DF_Mine_CalicoStatue_Name_1: "Invasion de serpents" #!String
+    DF_Mine_CalicoStatue_Name_2: "Invasion de squelettes" #!String
+    DF_Mine_CalicoStatue_Name_3: "Invasion de chauves-souris" #!String
+    DF_Mine_CalicoStatue_Name_4: "Réduves" #!String
+    DF_Mine_CalicoStatue_Name_5: "Coquilles fines" #!String
+    DF_Mine_CalicoStatue_Name_6: "Maigres repas" #!String
+    DF_Mine_CalicoStatue_Name_7: "Plus de monstres" #!String
+    DF_Mine_CalicoStatue_Name_8: "Dents acérées" #!String
+    DF_Mine_CalicoStatue_Name_9: "Malédiction du tombeau" #!String
+    DF_Mine_CalicoStatue_Name_10: "Chaussures magiques" #!String
+    DF_Mine_CalicoStatue_Name_11: "Restauration complète" #!String
+    DF_Mine_CalicoStatue_Name_12: "Trésor contenant 50 œufs" #!String
+    DF_Mine_CalicoStatue_Name_13: "Pas d’effet" #!String
+    DF_Mine_CalicoStatue_Name_14: "Fichier dentaire" #!String
+    DF_Mine_CalicoStatue_Name_15: "Trésor contenant 25 œufs" #!String
+    DF_Mine_CalicoStatue_Name_16: "Trésor contenant 10 œufs" #!String
+    DF_Mine_CalicoStatue_Name_17: "Trésor contenant 100 œufs" #!String
+    DF_Mine_CalicoStatue_Description_0: "Plus de fantômes" #!String
+    DF_Mine_CalicoStatue_Description_1: "Plus de serpents" #!String
+    DF_Mine_CalicoStatue_Description_2: "Les squelettes sont à vos trousses..." #!String
+    DF_Mine_CalicoStatue_Description_3: "Plus de chauves-souris" #!String
+    DF_Mine_CalicoStatue_Description_4: "Les insectes deviennent des insectes assassins" #!String
+    DF_Mine_CalicoStatue_Description_5: "Vous perdez plus d’œufs lorsque vous êtes assommé" #!String
+    DF_Mine_CalicoStatue_Description_6: "La nourriture est deux fois moins efficace" #!String
+    DF_Mine_CalicoStatue_Description_7: "Plus de monstres" #!String
+    DF_Mine_CalicoStatue_Description_8: "Les monstres font plus de dégâts" #!String
+    DF_Mine_CalicoStatue_Description_9: "Les momies sont devenues furieuses" #!String
+    DF_Mine_CalicoStatue_Description_10: "Augmentation de la vitesse" #!String
+    DF_Mine_CalicoStatue_Description_11: "Restauration complète !" #!String
+    DF_Mine_CalicoStatue_Description_12: "50 œufs de Calico" #!String
+    DF_Mine_CalicoStatue_Description_13: "Aucun effet" #!String
+    DF_Mine_CalicoStatue_Description_14: "Les monstres font moins de dégâts" #!String
+    DF_Mine_CalicoStatue_Description_15: "25 œufs de Calico" #!String
+    DF_Mine_CalicoStatue_Description_16: "10 œufs de Calico" #!String
+    DF_Mine_CalicoStatue_Description_17: "100 œufs de Calico" #!String
+    FishingDerbySign: "[textcolor black][letterbg LooseSprites\\\\troutDerbyLetterBG 0]        -----Derby de la truite-----^^Ce week-end, du 20 au 21e jour d’été : Venez montrer vos talents d’eau douce et remportez de grands prix !^^((Note : Tout objet personnel trouvé à proximité de ce panneau sera envoyé aux objets perdus)" #!String
+    SquidFestSign: "[textcolor black][letterbg LooseSprites\\\\squidFestLetterBG 0]             -----Fête du calamar-----^^Vendredi 12 et Samedi 13.^^Deux jours de folie de pêche aux calamars. Si vous atteignez nos objectifs quotidiens de pêche, vous gagnerez des prix.^^(Note : Tout objet personnel trouvé à proximité de ce panneau sera envoyé aux objets trouvés)" #!String
+    Jas_IceCream: "C’est... C’est pour moi ?$u#$b#Wouah ! C’est exactement ce que je voulais... Merci beaucoup ! C’est vraiment très gentil de ta part !$h" #!String
+    FishingDerby_Exclamation0: "J’en ai un !" #!String
+    FishingDerby_Exclamation1: "Ça mort !" #!String
+    FishingDerby_Exclamation2: "Il s’est échappé..." #!String
+    FishingDerby_Exclamation3: "Ça a presque mordu à l’hameçon !" #!String
+    FishingDerby_Exclamation4: "Allez..." #!String
+    FishingDerby_Exclamation5: "J’ai une prise !" #!String
+    FishingDerby_Exclamation6: "Je t’ai eu !" #!String
+    GetRewards: "Obtenir des récompenses" #!String
+    Explanation: "Explication" #!String
+    Leave: "Partir" #!String
+    FishingDerbyBooth_Intro: "Bienvenue au derby de la truite ! Que puis-je faire pour toi ?" #!String
+    FishingDerbyBooth_Explanation: "Au cours de cet événement, les truites arc-en-ciel ont une chance d’avoir une \"étiquette dorée\". Si tu en trouves une, rapporte-la ici pour remporter un prix !" #!String
+    FishingDerbyBooth_BagFull: "On dirait que ton sac est plein. Tu devrais d’abord faire un peu de place." #!String
+    FishingDerbyBooth_NoTags: "On dirait que tu n’as pas d’étiquette dorée... Tu devrais aller pêcher !" #!String
+    TroutDerby_NowOpen: "Le derby annuel de la truite a commencé." #!String
+    TroutDerby: "Derby de la truite" #!String
+    SquidFest: "Fête du calamar" #!String
+    SquidFest_NowOpen: "La fête du calamar a commencé." #!String
+    DesertFestival_NowOpen: "Le festival du désert est maintenant ouvert !" #!String
+    DesertFestival: "Festival du désert" #!String
+    SquidFestBooth_Intro: "Bienvenue à la fête du calamar ! Que puis-je faire pour toi ?" #!String
+    SquidFestBooth_Explanation: "C’est un défi de pêche aux calamars ! Si tu atteins nos objectifs quotidiens de pêche, tu pourras remporter des prix. Consulte le panneau à gauche. Nous mettons également des appâts spéciaux dans l’eau pour que les calamars soient actifs toute la journée !" #!String
+    SquidFestBooth_NoRewards: "Tu n’as pas encore gagné de récompenses. Tu devrais commencer par attraper des calamars !" #!String
+    SquidFest_AlreadyGotAvailableRewards: "Tu n’as aucune récompense disponible pour le moment. Continue d’attraper des calamars !" #!String
+    SquidFest_GotAllRewardsToday: "Félicitations ! Tu as atteint notre objectif d’iridium et gagné toutes les récompenses possibles pour aujourd’hui." #!String
+    Tent_Blocked: "Nécessite plus d’espace pour se déployer." #!String
+    greenrainmessage: "Une pluie verte s’est abattue sur la vallée." #!String
+    MasteryCave: "Seul un maître des cinq voies peut entrer. ({0}/5)" #!String
+    NewIdeas: "Vous avez de nouvelles idées auxquelles vous devez réfléchir..." #!String
+    FinalPath: "La voie finale :" #!String
+    0_Mastery: "Maîtrise de l’agriculture" #!String
+    1_Mastery: "Maîtrise de la pêche" #!String
+    2_Mastery: "Maîtrise de la cueillette" #!String
+    3_Mastery: "Maîtrise minière" #!String
+    4_Mastery: "Maîtrise de combat" #!String
+    Claim: "Obtenir" #!String
+    HeavyFurnace_coal: "Nécessite 3 morceaux de charbon." #!String
+    HeavyFurnace_ores: "Nécessite 25 minerais." #!String
+    BlessingOfWaters: "Bénédiction des eaux" #!String
+    BlessingOfSpeed: "Bénédiction de vitesse" #!String
+    BlessingOfLuck: "Bénédiction de chance" #!String
+    BlessingOfFangs: "Bénédiction des crocs" #!String
+    BlessingOfTheButterfly: "Bénédiction du papillon" #!String
+    BlessingOfFriendship: "Bénédiction de l’amitié" #!String
+    BlessingOfEnergy: "Bénédiction d’énergie" #!String
+    BlessingOfEnergy_description: "Vous avez une énergie infinie." #!String
+    BlessingOfFangs_description: "+10% de chances de coup critique" #!String
+    BlessingOfFriendship_description: "Vous gagnez de l’amitié supplémentaire en parlant aux gens." #!String
+    BlessingOfTheButterfly_description: "Un papillon prismatique vous attend quelque part dans la vallée..." #!String
+    BlessingOfWaters_description: "Les trois premiers poissons que vous attraperez aujourd’hui seront beaucoup plus faciles à attraper. ({0} restants)" #!String
+    Mastery: "Maîtrise :" #!String
+    Farming_Mastery: "Vous pouvez désormais trouver des biscuits dorés en forme d’animal, qui doublent de façon permanente la production d’un animal de ferme. Ne fonctionne pas sur les cochons." #!String
+    Fishing_Mastery: "Vous pouvez désormais trouver des coffres de pêche dorés." #!String
+    Foraging_Mastery: "Vous pouvez désormais trouver des boîtes mystères dorées, qui contiennent des objets supérieurs." #!String
+    Mining_Mastery: "Les rochers contenant des gemmes donnent désormais deux fois plus de gemmes." #!String
+    ChooseOne: "Choisissez :" #!String
+    DwarfStatue_source: "Statue du roi nain" #!String
+    DwarfStatue_0: "+1 minerai collecté à partir de minerais." #!String
+    DwarfStatue_1: "Chance augmentée de trouver des échelles et des puits." #!String
+    DwarfStatue_2: "Chance augmentée de trouver des morceaux de charbon." #!String
+    DwarfStatue_3: "Les bombes ne vous font pas de dégâts." #!String
+    DwarfStatue_4: "Chance augmentée de trouver des géodes." #!String
+    Trinkets: "Bibelots :" #!String
+    Trinkets_Description: "Déverrouille un nouvel emplacement d’équipement pour les bibelots. Les bibelots peuvent être trouvés en vous aventurant dans la nature et confèrent des pouvoirs spéciaux." #!String
+    MagicQuiver_Name: "Carquois magique" #!String
+    MagicQuiver_Description: "Tire une flèche magique sur les ennemis proches toutes les {0} secondes, infligeant {1}-{2} points de dégâts." #!String
+    FrogEgg_Name: "Œuf de grenouille" #!String
+    FrogEgg_Description: "Invoque un compagnon grenouille affamé." #!String
+    MagicHairDye_Name: "Gel magique pour les cheveux" #!String
+    MagicHairDye_Description: "Vos cheveux brillent de toutes les couleurs d’un éclat prismatique." #!String
+    FairyBox_Name: "Boîte de fées" #!String
+    FairyBox_Description: "Invoque un compagnon féerique qui vous soigne au combat." #!String
+    FairyBox_Description2: "Invoque un compagnon féerique de niveau {0} qui vous soigne lorsque vous êtes en combat." #!String
+    ParrotEgg_Name: "Œuf de perroquet" #!String
+    ParrotEgg_Description: "Invoque un compagnon perroquet de niveau {0}, qui vous donne une {1} chance de trouver des pièces d’or en tuant des monstres." #!String
+    IceRod_Name: "Baguette magique de glace" #!String
+    IceRod_Description: "Lance un orbe de glace toutes les {0} secondes, gelant les ennemis sur son passage pendant {1} secondes." #!String
+    IridiumSpur_Name: "Éperon doré" #!String
+    IridiumSpur_Description: "Les coups critiques augmentent votre vitesse pendant {0} secondes." #!String
+    BasiliskPaw_Name: "Patte de basilic" #!String
+    BasiliskPaw_Description: "Vous êtes immunisé contre les débuffs." #!String
+    PerfectIceRod: "Baguette magique de glace parfaite" #!String
+    RapidMagicQuiver: "Carquois de magie rapide" #!String
+    HeavyMagicQuiver: "Carquois de magie lourde" #!String
+    PerfectMagicQuiver: "Carquois de magie parfaite" #!String
+    frog_variant_0: "Œuf de grenouille verte" #!String
+    frog_variant_1: "Œuf de grenouille marron" #!String
+    frog_variant_2: "Œuf de grenouille bleu-vert" #!String
+    frog_variant_3: "Œuf de grenouille bleu" #!String
+    frog_variant_4: "Œuf de grenouille rouge" #!String
+    frog_variant_5: "Œuf de grenouille jaune" #!String
+    frog_variant_6: "Œuf de grenouille vide" #!String
+    frog_variant_7: "Œuf de grenouille prismatique" #!String
+    IridiumSpur: "Aiguillon d’iridium" #!String
+    ParrotEgg_Chance_0: "faible" #!String
+    ParrotEgg_Chance_1: "moyenne" #!String
+    ParrotEgg_Chance_2: "élevée" #!String
+    ParrotEgg_Chance_3: "très élevée" #!String
+    Anvil_fail: "Vous pouvez uniquement reforger des bibelots." #!String
+    Anvil_bars: "Nécessite 3 lingots en iridium." #!String
+    GoldenParrot: "*Cui-cui*... Argent ! *Cui-cui*... Trouvé noix dorées !" #!String
+    GoldenParrot_Yes: "Oui (Coûte {0}po)" #!String
+    GoldenParrot_Tonight: "*Cui-cui*... Dormir ! *Cui-cui*... Faire ce soir !" #!String
+    GoldenParrot_Sure: "(Je ne sais pas si c’est une bonne idée ! Si les perroquets trouvent toutes les noix dorées restantes, je ne pourrais pas avoir la véritable expérience de l’île Gingembre...)" #!String
+    Fizz_Intro_1: "Alors... tu as reçu ma lettre ? Enchanté.#$b#Je m’appelle Fizz. Division des services spéciaux de Joja.$h#$b#Tu n’as pas dû entendre parler de nous ? Ce n’est pas grave, la plupart des gens n’en ont pas entendu parler...#$b#Nous ne faisons pas partie de la même branche des autres produits Joja. Nous sommes plutôt un \"service spécialisé\" pour les clients d’élite.#$b#Que faisons-nous ? Eh bien... disons que nous nous spécialisons dans les affaires \"juridiquement complexes\"... si tu vois ce que je veux dire ?#$b#Mais trêve de bavardages. Passons aux choses sérieuses.#$b#J’ai entendu dire que tu voulais atteindre la \"perfection\". Un objectif noble ! ...Mais difficile. Très difficile.#$b#Toutes ces histoires de cuisine, d’artisanat, de chasse aux monstres, toutes ces amitiés compliquées... *gémit*. Je vois bien à quel point tout cela te stresse.$s#$b#Mais j’ai une solution... tu n’as pas besoin de stresser une minute de plus ! Nous avons tout prévu.$h#$b#Tu vois ces papiers ici ? C’est ce qu’on appelle des \"exemptions de perfection\".#$b#Chacune de ces belles pages vaut 1% vers la perfection ultime. Il y a même la signature de M. Qi dessus... c’est tout à fait légal !#$b#Ai-je l’air de quelqu’un qui te mentirait ?$u#$b#...$u#$b#... Ne réponds pas.#$b#... Quoi qu’il en soit, je les vends à très bas prix... seulement 500,000po l’unité. C’est une affaire !#$b#Très bien, pas de soucis. Réfléchis-y ! Je suis quelqu’un de patient...$h" #!String
+    Fizz_Intro_2: "Alors... qu’en dis-tu ? 500,000po pour une véritable \"exemption de perfection\" ?" #!String
+    Fizz_Yes: "Oui (Coûte 500,000po)" #!String
+    Fizz_Sweet: "Hé, hé !" #!String
+    Waiver_Note: "Vous avez une \"exemption de perfection\" ! (Total : {0}.)" #!String
+    Waiver_Note_Multiplayer: "{0} a acheté une \"exemption de perfection\"..." #!String
+    TownTreeWarning: "Je ne devrais pas couper d’arbres en ville." #!String
+    Bookseller: "Libraire" #!String
+    Book_Category: "Livre" #!String
+    skillBook_Category: "Livre de compétences" #!String
+    alreadyreadbook: "La relecture de ce livre permet d’acquérir un peu d’expérience." #!String
+    alreadyreadbook_random: "La relecture de ce livre vous donnera une petite quantité d’expérience dans tous les domaines." #!String
+    BooksellerInTown: "Le libraire est en ville aujourd’hui." #!String
+    SkillBookMessage: "Vous avez appris des choses sur {0}." #!String
+    SkillName_0: "l’agriculture" #!String
+    SkillName_1: "la pêche" #!String
+    SkillName_2: "la cueillette" #!String
+    SkillName_3: "l’exploitation minière" #!String
+    SkillName_4: "les techniques de combat" #!String
+    QoS_Cookbook: "Nombre de nouvelles recettes apprises : {0}" #!String
+    guild_door: "Tuez 1000 monstres pour entrer ici. ([FarmerStat monstersKilled]/1000)" #!String
+    FoundABook: "Vous avez trouvé une copie de '{0}'." #!String
+    ForestMagic: "Magie de la forêt" #!String
+    ForestMagic_Description: "Vous ne faites qu’un avec la magie de la forêt..." #!String
+    BearPaw_Description: "Les mûres et les baies de saumon valent 3x plus d’or." #!String
+    SpringOnionMastery_Description: "Les oignons de printemps valent 5x plus d’or." #!String
+    Marnie_Counter: "\"Je ne suis pas là, mais tu peux quand même acheter quelque chose en utilisant le catalogue des animaux !\" -Marnie" #!String
+    GameMenu_Powers: "Objets et pouvoirs spéciaux" #!String
+    FixRaccoonStump_Hint: "Le vieil arbre a disparu... mais avec 100 morceaux de bois dur, il peut être réparé." #!String
+    FixRaccoonStump_Question: "Utiliser 100 morceaux de bois dur pour réparer la souche ?" #!String
+    FixRaccoonStump_Done: "Peut-être que quelqu’un décidera de s’y installer..." #!String
+    GreenRainForecast: "Euh... Il semble y avoir une sorte... d’anomalie... Je... ne sais pas ce que cela signifie..." #!String
+    Raccoon_expanded: "La boutique du raton laveur a été agrandie." #!String
+    Raccoon_busy: "Un autre joueur est en train de parler au raton laveur." #!String
+    Raccoon_intro_0: "Raton laveur : J’ai faim... besoin de poisson..." #!String
+    Raccoon_interim_1: "Raton laveur : Maintenant, je vais peut-être trouver une femme..." #!String
+    Raccoon_intro_1: "Raton laveur : J’ai faim... besoin de fruits..." #!String
+    Raccoon_interim_2: "Raton laveur : Maintenant, nous allons pouvoir fonder une famille..." #!String
+    Raccoon_intro_2: "Raton laveur : J’ai faim... besoin de champignons..." #!String
+    Raccoon_interim_3: "Raton laveur : Maintenant, nous pouvons agrandir la famille..." #!String
+    Raccoon_intro_3: "Raton laveur : J’ai soif... besoin de jus..." #!String
+    Raccoon_interim_4: "Raton laveur : Tu es quelqu’un sur qui on peut compter, bobo. Maintenant, on peut en avoir un autre..." #!String
+    Raccoon_intro_4: "Raton laveur : Psst... bobo. J’ai besoin d’un cadeau pour ma femme." #!String
+    Raccoon_interim_5: "Raton Laveur : Nous sommes heureux pour l’instant, bobo..." #!String
+    Raccoon_intro: "Raton laveur : Aide-nous et je te donnerai quelque chose que tu aimeras." #!String
+    Raccoon_interim: "Raton laveur : On se débrouille bien, bobo..." #!String
+    Raccoon_receive: "Raton laveur : Merci, bobo. Prends ça..." #!String
+    bigtree: "C’est un grand arbre, mais le bois commence à pourrir..." #!String
+    windstorm: "Il y a eu une forte tempête de vent pendant la nuit..." #!String
+    MasteryRequirement: "Vous n’avez pas encore les connaissances nécessaires pour l’utiliser..." #!String
+    MysteryBoxAnnounce: "Des boîtes mystère peuvent maintenant être trouvées..." #!String
+    MasteryHint: "Vous sentez qu’une nouvelle voie s’ouvre à vous..." #!String
+    Farm_Ranching_Description: "Ferme des champs de prés_Ce n’est pas le meilleur endroit pour cultiver des récoltes, mais il y a de l’herbe bleue à mâcher que les animaux adorent. Vous commencez avec deux poules." #!String
+    StarterChicken_Names: "Portobello,Cèpes | Menthe,Poivrée | Bob,Billie | Cornichon,Onion  | Courgette,Pomme de Terre | Pèche,Papaye | Potpourri,Vanille | Pain Perdu,Miel | Graine,Citrouille | Crèpe,Sucre | Brindille,Noisette | Chocolat,Croissant | Fleur,Violette | Caviar,Crevette | Princesse,Dame Blanche | Ananas,Pizza | Moutarde,Ketchup" #!String
+    FishFrenzy_town: "Une frénésie de {0} s’est emparée de la ville." #!String
+    FishFrenzy_forest: "Une frénésie de {0} s’est emparée de la forêt de Sève-Cendreuse." #!String
+    FishFrenzy_mountain: "Une frénésie de {0} s’est emparée des montagnes." #!String
+    FishFrenzy_beach: "Une frénésie de {0} s’est emparée de la plage." #!String
+    SpiritsEveCart: "Voulez-vous prendre le raccourci secret pour partir ?" #!String
+    Pam_busSign: "Aujourd’hui, je vais au festival ! Tu devras te déplacer par tes propres moyens.       -Pam" #!String
+    TravelingMerchant_DF_Closed: "Fermé jusqu’à midi." #!String
+    TravelingMerchant_DF: "Haa... rien de tel que l’air chaud du désert de Calico. Le cochon aime aussi ce climat." #!String
+    Spouse_Goodnight1: "Tu viens te coucher ?" #!String
+    Spouse_Goodnight0: "Bonne nuit, {0}." #!String
+    Instant: "Instantané" #!String
+    GrandpaMasteryNote: "{0},^^Si tu lis cette note, c’est que tu as trouvé la pièce secrète que j’ai préparée pour toi.^^Entre ces murs se trouvent des conseils, des recettes, et même certains de mes outils les plus précieux... Tu trouveras ici tout ce qu’il y a de mieux provenant des nombreuses et heureuses années que j’ai passées dans la vallée.^^En arrivant jusqu’ici, tu auras prouvé que tu possèdes les compétences et la sagesse nécessaires pour faire bon usage de ces puissants secrets.^^ J’espère que mes découvertes t’aideront à faire de la ferme {1} une étoile brillante dans le monde entier !^^Rends-moi fier !^-Grand-père" #!String
+    MasteryCompleteToast: "Vous sentez la main de votre grand-père tapoter votre épaule..." #!String
+    GiantQiFruitMessage: "M. Qi : Ho, pensais-tu pouvoir obtenir mes précieux fruits quand bon te semble ? Pshh... Seulement pendant le défi." #!String
+    Pam_busSign_resort: "Aujourd’hui, je suis en vacance ! Tu devras te déplacer par tes propres moyens.      -Pam" #!String
+    JojaCatalogueDescription: "Offre un (1) abonnement à vie à la collection officielle Joja PROSPÈRE, qui comprend 40 meubles exclusifs !" #!String
+    JojaCatalogueDescriptionTerms: "Conditions d’utilisation:^^En activant cet objet, l’utilisateur accepte par la présente de ne pas tenir Joja Co responsable de tout dommage à la vie d’une personne ou à sa propriété résultant de l’utilisation des meubles Joja.^^ L’utilisateur est conscient qu’il peut y avoir des matériaux plastiques non testés présents dans un ou plusieurs meubles de PROSPÈRE, et renonce à tout droit de tenir Joja Co responsable des effets néfastes sur la santé attribuable au contact avec lesdits matériaux plastiques. L’utilisateur renonce par la présente à tout droit de tenir Joja Co pour responsable d’une soi-disant \"mauvaise fabrication\" et accepte que tout dommage corporel résultant d’une casse, d’une fissure, d’une pulvérisation, d’un pliage, d’un serrage, d’un pincement, d’un empalement ou de tout autre effet involontaire de l’utilisation des meubles PROSPÈRE de Joja soit uniquement le résultat d’une action volontaire de la part de l’utilisateur.^^ - Rejoignez-nous. Prospère.--" #!String
+    Farm_Perfection_Description: "Ferme de la cascade_Grand-père vous a légué une lampe magique qui vous permet d’obtenir un puissant bonus. Cependant, vous avez également hérité de sa dette de 1,000,000po envers la banque Joja, et vous devez la rembourser par versements saisonniers..." #!String
+    JojaGrandpaIntro_0: "??? : Très touchant... Maintenant, signe le papier ici..." #!String
+    Joja_Debt_Notice: "AVIS:^^À la fin de la saison, {0}po sera débité de votre compte.^^Le non-paiement entraînera un solde de compte négatif.^^Merci de votre fidélité.^-Banque Joja" #!String
+    buy_books: "Acheter des livres" #!String
+    trade_books: "Échanger des livres" #!String
+    books_welcome: "Bienvenue à la librairie de Marcello !" #!String
+    books_buy_welcome: "La librairie de Marcello... À ton service !" #!String
+    books_trade_welcome: "J’échange des objets utiles contre tes livres en trop." #!String
+    ItemDeliveryQuestTitle: "Livraison : {0}" #!String
+    FishingQuestTitle: "Pêche : {0}" #!String
+    MonsterQuestTitle: "Chasseur de primes : {0}" #!String
+    ResourceQuestTitle: "Cueillette : {0}" #!String
+    WizardCatalogueDescription: "Collection privée de meubles de M. Rasmodius." #!String
+    WizardCatalogueLetter: "Mon ex-femme a pris tous les meubles.^^Heureusement, j’ai eu le bon sens de faire des copies éthérées de chaque meuble et de les retranscrire dans ce livre. Bonne lecture !^^-M. Rasmodius" #!String
+    AttackEnchantment: "+{0} Attaque" #!String
+    DefenseEnchantment: "+{0} Défense" #!String
+    CritEnchantment: "+{0} Chance de coups critiques" #!String
+    SpeedEnchantment: "+{0} Vitesse" #!String
+    SlimeSlayerEnchantment: "Tueur de slimes" #!String
+    SlimeGathererEnchantment: "Collectionneur de slimes" #!String
+    MaxHealth: "+{0} Santé max" #!String
+    CritPowerEnchantment: "+{0} Puissance des coups critiques" #!String
+    LightweightEnchantment: "-{0} Poids" #!String
+    JojaFreeRun: "Aucun service de Joja n’a été utilisé !" #!String
+    QiSummitCheat: "Et bien, et bien, et bien... Regarde un peu qui a réussi à atteindre le sommet.#$b#Tu crois être au-dessus de tout le monde, n’est-ce pas ?#$b#Tu t’es dit : \"Comment puis-je manipuler le système pour mon propre bénéfice ?\"#$b#Ou, en termes plus simples : \"Moi, moi, moi, moi, moi, moi, moi, moi, moi, moi, moi, moi, moi, moi, moi, moi, moi, moi, moi,\".#$b#Méprisable." #!String
+    Freezer_name: "Congélateur" #!String
+    Freezer_description: "Les objets placés à l’intérieur perdront de leur qualité pendant la nuit." #!String
+    DriedFlowers_name: "Fleurs séchées {0}" #!String
+    DriedFlowers_description: "Un sac de belles fleurs séchées." #!String
+    DeluxeCrabPot_name: "Casier à crabes de luxe" #!String
+    DeluxeCrabPot_description: "Ça permet d’attraper plus de crabes qu’un casier à crabes ordinaire." #!String
+    RaccoonFinal: "Vos nouveaux voisins semblent prospérer !" #!String
+    Mayo_reaction0: "Dégoutant !" #!String
+    Mayo_reaction1: "Est-ce que tu viens de...?" #!String
+    Mayo_reaction2: "Pourquoi?!?" #!String
+    Mayo_reaction3: "Hmm..." #!String
+    Mayo_reaction4: "Miam !" #!String
+    GoldClock_On: "Rallumer l’horloge dorée ?" #!String
+    GoldClock_Off: "Éteindre l’horloge dorée ?" #!String
+    DeluxeMayoMachine_Name: "Machine à mayonnaise de luxe" #!String
+    DeluxeMayoMachine_Description: "Peut transformer 3 œufs à la fois." #!String
+    DeluxeCheesePress_Name: "Presse à fromage de luxe" #!String
+    DeluxeCheesePress_Description: "Peut transformer 3 carafes de lait à la fois." #!String
+    DeluxeLoom_Name: "Métier à tisser de luxe" #!String
+    DeluxeLoom_Description: "Peut transformer 3 morceaux de laine à la fois." #!String
+    RiverlandsFarmPerk: "Vous commencez avec un fumoir à poisson." #!String
+    Mannequin_Description: "Vous pouvez l’habiller comme bon vous semble." #!String
+    CursedMannequin_Description: "Vous pouvez l’habiller comme bon vous semble. Et priez pour qu’il ne prenne pas vie pendant que vous dormez..." #!String
+    SpeedrunTimer: "Speedrun minuteur" #!String
+    HideIP: "Masquer l’adresse IP et le code d’invitation" #!String
+    BroccoliFusilli_Name: "Fusillis aux brocolis" #!String
+    BroccoliFusilli_Description: "De délicieuses pâtes aux brocolis et aux tomates séchées." #!String
+    PowdermelonSoda_Name: "Soda de poudremelon" #!String
+    PowdermelonSoda_Description: "Ça pétille naturellement grâce à la puissance de la peau du melon." #!String
+    PastaPrimavera_Name: "Pâtes primavera" #!String
+    PastaPrimavera_Description: "Pâtes avec une sauce à la crème et aux légumes frais." #!String
+    MannequinMale_Name: "Mannequin (H)" #!String
+    MannequinFemale_Name: "Mannequin (F)" #!String
+    CursedMannequinMale_Name: "Mannequin maudit (H)" #!String
+    CursedMannequinDemale_Name: "Mannequin maudit (F)" #!String
+    JunimoCatalogueDescription: "Une collection de meubles imprégnés de l’énergie Junimo." #!String
+    RetroCatalogueDescription: "Une collection de meubles uniques d’une époque révolue." #!String
+    Renovation_AddDiningRoom: "Ajouter une salle à manger/Ajouter une grande pièce à gauche de la cuisine/Sélectionner une zone pour la rénovation." #!String
+    Renovation_RemoveDiningRoom: "Supprimer la salle à manger/Supprimer la grande pièce à gauche de la cuisine/Sélectionner une zone pour la rénovation." #!String
+    Renovation_AddCubby: "Ajouter une petite chambre/Ajouter une petite chambre à côté de la porte d’entrée/Sélectionner une zone pour la rénovation." #!String
+    Renovation_RemoveCubby: "Supprimer la petite chambre/Supprimer la petite chambre à côté de porte d’entrée./Sélectionner une zone pour la rénovation." #!String
+    Renovation_AddAttic: "Ajouter un grenier/Ajouter un autre escalier et une pièce sous le toit/Sélectionner une zone pour la rénovation." #!String
+    Renovation_RemoveAttic: "Supprimer le grenier/Suppression du grenier/Sélectionner une zone à rénover." #!String
+    Renovation_AddExtendedCornerRoom: "Agrandir la pièce d’angle/Extension de la pièce d’angle, ajoutant une nouvelle grande zone./Sélectionner une zone pour la rénovation." #!String
+    Renovation_RemoveExtendedCornerRoom: "Rétrécir la pièce d’angle/Remettre l’agrandissement de la pièce d’angle à sa taille d’origine/Sélectionner une zone pour la rénovation." #!String
+    Renovation_OpenDiningRoom: "Ouvrir la salle à manger/Supprimer le mur entre la salle à manger et la cuisine/Sélectionner une zone pour la rénovation." #!String
+    Renovation_CloseDiningRoom: "Fermer la salle à manger/Restaurer le mur entre la salle à manger et la cuisine/Sélectionner une zone pour la rénovation." #!String
+    Marnie_Pet_Adoption: "Ces animaux ont besoin d’un bon foyer..." #!String
+    AdoptPets: "Adopter des animaux" #!String
+    AdoptedPet: "Votre nouvel animal de compagnie '{0}' a été envoyé chez vous." #!String
+    AdoptedPet_Marnie: "Génial ! Je vais envoyer {0} chez toi tout de suite.$h" #!String
+    ButterflyPowder_Question: "Êtes-vous sûr ? {0} sera définitivement retiré de votre ferme." #!String
+    ButterflyPowder_Goodbye: "Au revoir {0}..." #!String
+    FestivalTentWarning: "Demain, il y aura un festival." #!String
+    PetBowlName: "La gamelle de {0}" #!String
+    TrashCatalogueDescription: "Accédez à un stock gratuit de décorations pour les poubelles. Lavez-vous les mains après utilisation." #!String
+    GameMenu_Animals: "Animaux" #!String
+    Pam_busSign_generic: "Je ne suis pas de service aujourd’hui ! Tu devras te déplacer par tes propres moyens.       -Pam" #!String
+    Anvil_wrongtrinket: "Cette babiole ne peut pas être forgée à nouveau." #!String
+    Mastery_newlevel: "Vous avez atteint un nouveau niveau de connaissance..." #!String
+    options_menubg_0: "Standard" #!String
+    options_menubg_1: "Graphique" #!String
+    options_menubg_2: "Aucun" #!String
+    tapper_profession_possible: "+1 en rendement du récolteur par moisson." #!String
+    forester_profession_possible: "Les troncs et les boîtes de champignons ont {0}% de chances de produire le double." #!String
+    lumberjack_profession_possible: "Retirer une souche d’arbre sauvage produit toujours une graine." #!String
+    SkullCaveKickWarning: "Tout joueur se trouvant actuellement dans la Caverne du Crâne sera expulsé. Voulez-vous continuer ?" #!String
+    ChooseBobber: "Modèle de flotteur :" #!String
+    FirstCatch: "Première prise !" #!String
+    Trinket: "Babiole" #!String
+    LearnedANewPower: "Vous avez appris un nouveau pouvoir !" #!String
+

@@ -1,0 +1,49 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Abigail: "Vadi yağmurlu havada daha ilginç görünüyor...öyle değil mi?" #!String
+    Robin: "Yağmur iş yapmama engel olamaz!$h#$e#Gerçi vıcık vıcık odunlarla çalışmak çok hoşuma gitmiyor.$s" #!String
+    Demetrius: "Selamlar, ısınmak istersen oturabilirsin." #!String
+    Maru: "Yağmur yağdığında aletlerimle üzerinde çalışmak için bahanem olmuş oluyor.$h#$e#Gerçi, senin canını sıkıyor olmalı." #!String
+    Sebastian: "Eğer şanslıysan bu yağmurlu havada kurbağa görebilirsin." #!String
+    Linus: "Ilık yağmur ile temizlenmek çok hoş.$h" #!String
+    Pierre: "Böyle günlerde çoğu insan evde oturuyor... Zarar ediyorum...$s" #!String
+    Caroline: "Bahçem bugün çok neşeli.$h#$e#...Hem su faturamız da yağmur sayesinde az gelecek." #!String
+    Alex: "Hım, yağmurlu havada spor yapılmıyor.$s#$e#Neyse, her zaman evde ağırlık kaldırabiliyorum.$h" #!String
+    George: "Aşırı soğuk değil mi? Ne iğrenç bir gün." #!String
+    Evelyn: "Uyandığımda bir yerden damlama sesi geliyordu... Sanırım çatıda kaçak var.$s#$e#Eskiden olsa George hemen kalkar ve tamir ederdi... *iç çeker*$s" #!String
+    Lewis: "Merhaba, @. Ara mı veriyorsun?#$e#Umarım nehir taşmaz...$s" #!String
+    Clint: "Madenleri keşfetmek için güzel bir gün... Kim bilir belki nadir cevherlerden birini bulursun." #!String
+    Penny: "Yağmur damlaları karavanımın metal tavanında çok fazla ses yapıyor.#$e#...Aynı zamanda insanı sakinleştiriyor...$h" #!String
+    Pam: "Nasıl gidiyor evlat? Islanmak hoşuna gitmiyor mu?" #!String
+    Emily: "Patisko Çölü'nde hiç yağmur yağmaz... Arkadaşım Sandy orada yaşıyor.#$e#Keşke bugün onu ziyarete gitseydim.$s" #!String
+    Haley: "Tüm sabah saçımı yapmakla uğraştım... şimdi ise yağmur saçımı mahvedecek.$s#$e#*iç çeker* Hayat bazen çok zor." #!String
+    Jodi: "Gelmeden önce ayakkabılarını sildin mi? Kusura bakma ama yerleri yeni sildim.#$e#Burada her zaman yerin var, gel buyur! Heh.$h" #!String
+    Sam: "Yağmur sayesinde annemi kızdırmadan gitarımı yüksek sesle çalabileceğim. Hehe.$h" #!String
+    Leah: "Belki de bugün ilginç bir şey pişirmeliyim, şöyle acılısından..." #!String
+    Shane: "Hım... hava beni susattı.$s" #!String
+    Marnie: "Selam, @. Sırılsıklam olmuşsun... Kıyamam sana!$h" #!String
+    Elliott: "Yağmurlu günlerde uzandığımda uzaklardan gelen bir cankurtaran düdüğü sesi duyuyorum.#$b#Fakat kalkıp baktığımda tek gördüğüm şey renksiz bir perde." #!String
+    Gus: "Böyle bir günde bir kadeh kırmızı şarap gibisi yok.#$e#İşimi seviyorum. Hehehe." #!String
+    Dwarf: "Yağmur... Bizde efsanevi bir şeydir. Bazı cüceler hiç yağmurla karşılaşmaz bile." #!String
+    Wizard: "Bazı elementaller ile yalnız yağmurlu günlerde iletişime geçebiliyorum.#$e#Anlamanı beklemiyordum." #!String
+    Harvey: "Selam @! Şey... Son zamanlarda kütüphanede ilginç bir şeyler okuyabildin mi?#$e#Heh. Peki, öyleyse görüşürüz." #!String
+    Sandy: "Memlekette yağmur yağdığını duydum, bu yüzden mi geldin?$h#$e#Aslına bakarsan yağmuru özlüyorum...$s" #!String
+    Krobus: "Ah, lağım taştı bugün. Burası tam istediğim gibi nemle dolup taşacak." #!String
+    Leo: "Vadi yağmur yağdığında huzurla doluyor.#$e#Benim gözümde... doğa farklı duyguları olan bir arkadaştan farksız." #!String
+

@@ -1,0 +1,26 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    winter_9.000: "Semmi komoly... Csak az éves vizsgálat miatt vagyok itt." #!String
+    winter_9.001: "Nos... mostanában kissé folyik az orrom, doktor úr. De egyébként remekül vagyok!" #!String
+    winter.000: "Túl hideg van ahhoz, hogy kikeljek az ágyból." #!String
+    marriage_Mon.000: "Szia édes! Csak azért vagyok itt, hogy meglátogassam Emilyt." #!String
+    rain.000: "Ma túl borzasztó az idő ahhoz, hogy kikeljek az ágyból." #!String
+    winter_16.001: "A hideg levegő nem is olyan rossz, ha fel vagy készülve rá!$h" #!String
+    winter_16.000: "Túl hideg van ahhoz, hogy kikeljek az ágyból." #!String
+

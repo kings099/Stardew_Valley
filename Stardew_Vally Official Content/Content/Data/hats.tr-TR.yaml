@@ -1,0 +1,141 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    0: "Cowboy Hat/Derisi eski ve çatlaklarla dolu olsa da, şapka şaşırtıcı derecede esnek. Küf kokuyor./false/true//Kovboy Şapkası" #!String
+    1: "Bowler Hat/Yumuşak keçeden yapılmış./false/true//Zengin Şapkası" #!String
+    2: "Top Hat/Beyefendi klasiği./false/true//Silindir Şapka" #!String
+    3: "Sombrero/Örülmüş hasırdan yapılma şölen şapkası./false/true//Meksikalı Şapkası" #!String
+    4: "Straw Hat/Hafif ve rahat, çiftçilerin keyfine göre./false/true//Hasır Şapka" #!String
+    5: "Official Cap/Postacı ya da polise ait gibi görünüyor. Öyle ya da böyle, çok yumuşak ve kötü kokmuyor./false/true//Memur Şapkası" #!String
+    6: "Blue Bonnet/Bu çayır başlığı ile eski zamanlara kulak verebilirsin./false/true//Mavi Başlık" #!String
+    7: "Plum Chapeau/İyi duruyor./false/true//Erik Şapka" #!String
+    8: "Skeleton Mask/Kırmızı gözleri gizemli bir şekilde parlıyor./true/true//İskelet Maskesi" #!String
+    9: "Goblin Mask/Bu korkunç maske ile kasabaya korku saçabilirsin. Kulakları verdiği etkiyi artırır./true/true//Cin Maskesi" #!String
+    10: "Chicken Mask/Bu maske ile insanları güldürmek mümkün./true/true//Tavuk Maskesi" #!String
+    11: "Earmuffs/Kulakları sıcak tutar. Kale Köyü'nden alınmış el örgüsü ile kaplıdır./true/false//Kulaklıklar" #!String
+    12: "Delicate Bow/İncelendiğinde parıldayan küçük elmaslar görülebilir./true/false//Zarif Fiyonk" #!String
+    13: "Tropiclip/Küçük bir palmiye ağacı şeklindedir./true/false//Tropikesim" #!String
+    14: "Butterfly Bow/Çok yumuşak./true/false//Kelebek Fiyonku" #!String
+    15: "Hunter's Cap/Yün astarı insanı balta girmemiş ormanlarda sıcak tutar./false/true//Avcı Şapkası" #!String
+    16: "Trucker Hat/Arkasındaki ağ serin tutmak için yapılmıştır./false/true//Kamyoncu Şapkası" #!String
+    17: "Sailor's Cap/Yeni ve sert./false/true//Denizci Şapkası" #!String
+    18: "Good Ol' Cap/Bu sarkık şapka biraz buruşmuştur. Üstünde çok yaşanmışlık var olmalı./false/true//Eski Şapka" #!String
+    19: "Fedora/Şık şehirlilerin vazgeçilmezi./false/true//Fötr Şapka" #!String
+    20: "Cool Cap/Şimdilerde gerçekten solmuş. Eskiden canlı mavi bir renge sahipmiş./false/true//Havalı Şapka" #!String
+    21: "Lucky Bow/Ortası som altından./true/false//Şans Fiyonku" #!String
+    22: "Polka Bow/Baş döndürüyor./true/false//Benekli Fiyonk" #!String
+    23: "Gnome's Cap/Bu cücenin kafası bayağı büyükmüş./false/true//Cüce Şapkası" #!String
+    24: "Eye Patch/Gerçek mi yoksa kostüm dükkanından mı alınmış ayırt edilmiyor./true/true//Göz Bandı" #!String
+    25: "Santa Hat/Özel günü kutlamada kullanılır./false/true//Noel Baba Şapkası" #!String
+    26: "Tiara/Ortasında altınla çevrili bir ametist taşı bulunur./true/true//Taç" #!String
+    27: "Hard Hat/Tası sağlam tutar./false/true//Sert Şapka" #!String
+    28: "Sou'wester/Biçimiyle fırtına sırasında denizcileri kuru tutar./false/true//Fırtınacı" #!String
+    29: "Daisy/Saça takılan taze bahar papatyası./true/false//Papatya" #!String
+    30: "Watermelon Band/Renk düzeni belirlenirken yazın sevilen meyvesi karpuz örnek alınmış./true/false//Karpuz Şeridi" #!String
+    31: "Mouse Ears/Sentetik liflerden yapılmış./true/true//Fare Kulakları" #!String
+    32: "Cat Ears/Bıyıklar yanında gelir./true/true//Kedi Kulakları" #!String
+    33: "Cowgal Hat/Şeridi sahte elmaslar ile çivilenmiş./false/true//Kovboy Şapkası" #!String
+    34: "Cowpoke Hat/Mandıra uzmanları içindir./false/true//Mandıracı Şapkası" #!String
+    35: "Archer's Cap/Okçu olsanız da olmasanız da güzel bir şapka./false/true//Okçu Şapkası" #!String
+    36: "Panda Hat/Tatlı bir panda şapkası./false/true//Panda Şapkası" #!String
+    37: "Blue Cowboy Hat/Mavi kottan yapılmış kovboy şapkası./false/true//Mavi Kovboy Şapkası" #!String
+    38: "Red Cowboy Hat/Kırmızı süvet ile yapılmış göz alıcı bir kovboy şapkası./false/true//Kırmızı Kovboy Şapkası" #!String
+    39: "Cone Hat/Uzaklardan gelen eski bir külah./false/true//Külah" #!String
+    40: "Living Hat/Saç derisindeki teri emer. Saçı yıkamaya gerek kalmaz!/false/true//Canlı Şapka" #!String
+    41: "Emily's Magic Hat/Emily tarafından aşkla yapılmıştır ve %100 organiktir!/false/true//Emily'nin Büyülü Şapkası" #!String
+    42: "Mushroom Cap/Toprak kokuyor./false/true//Mantar Şapka" #!String
+    43: "Dinosaur Hat/Küçük bir dinozora benzeyen şapka./false/true//Dinozor Şapka" #!String
+    44: "Totem Mask/Endişelenecek bir şey yok, sonuçta yüze yapışmıyor.../true/true//Totem Maskesi" #!String
+    45: "Logo Cap/Önünde logo bulunan pembe bir şapka./false/true//Logolu Şapka" #!String
+    46: "Wearable Dwarf Helm/İnsanların başına oturacak şekilde yapılan cüce miğferi./hide/true//Takılabilir Cüce Miğferi" #!String
+    47: "Fashion Hat/Ucunda tüy olan şık bir şapka./false/true//Tarz Şapka" #!String
+    48: "Pumpkin Mask/Bir zamanlar çok büyük bir kabakmış.../hide/true//Kabak Maskesi" #!String
+    49: "Hair Bone/Fiyonktan önce tercih edilen saç tipi./true/false//Topuz" #!String
+    50: "Knight's Helmet/Gerçeğinden farksız!/hide/true//Şövalye Miğferi" #!String
+    51: "Squire's Helmet/Hava akışını artırmak için yüz öne çıkarılmış./hide/true//Yaver Miğferi" #!String
+    52: "Spotted Headscarf/Boğazdan bağlanan kırmızı benekli eşarp./hide/true//Benekli Eşarp" #!String
+    53: "Beanie/Başı sıkıca kaplayan ısıtıcı bir bere./false/true//Bere" #!String
+    54: "Floppy Beanie/Sıkmadığı halde ısıtan bere./false/true//Gevşek Bere" #!String
+    55: "Fishing Hat/Geniş kenarı sayesinde nehir kıyısında balık tutarken başa güneş geçmez./false/true//Balıkçı Şapkası" #!String
+    56: "Blobfish Mask/Balıklar gibi kaygandır!/true/true//Balık Maskesi" #!String
+    57: "Party Hat/Kutlamaları daha eğlenceli hale getiren komik kırmızı bir şapka./false/true//Parti Şapkası" #!String
+    58: "Party Hat/Kutlamaları daha eğlenceli hale getiren komik mavi bir şapka./false/true//Parti Şapkası" #!String
+    59: "Party Hat/Kutlamaları daha eğlenceli hale getiren komik yeşil bir şapka./false/true//Parti Şapkası" #!String
+    60: "Arcane Hat/Büyücülerin taktığı kovboy şapkası da denebilir./false/true//Büyücü Şapkası" #!String
+    61: "Chef Hat/Aşçıların taktığı geleneksel başlık./false/true//Aşçı Başlığı" #!String
+    62: "Pirate Hat/Üstünde korkunç bir kafatası bulunan kaptan şapkası./false/true//Korsan Şapkası" #!String
+    63: "Flat Topped Hat/Eskiden çok beğenilen bir şapka./false/true//Seyyah Şapkası" #!String
+    64: "Elegant Turban/Altın süslemeleri olan siyah renkli ipek türban./false/true//Zarif Türban" #!String
+    65: "White Turban/Mavi süslemeleri olan beyaz renkli ipek türban./false/true//Beyaz Türban" #!String
+    66: "Garbage Hat/Çöp tenekesi kapağı 'geri dönüştürülerek' oluşturulan şapka./true/true//Çöpten Şapka" #!String
+    67: "Golden Mask/Yeniden yapılan Patisko Çölü eseri!/true/true//Altın Maske" #!String
+    68: "Propeller Hat/Üstünde pervane olan komik bir şapka./false/true//Pervaneli Şapka" #!String
+    69: "Bridal Veil/Gelinlerin taktığı geleneksel duvak./false/true//Gelin Duvağı" #!String
+    70: "Witch Hat/Cadıların taktığı sivri uçlu şapka./false/true//Cadı Şapkası" #!String
+    71: "Copper Pan/Bakır eleme tavasını başına oturtuyorsun.../false/true//Bakır Eleme Tavası" #!String
+    72: "Green Turban/Ön kısmında altın işlemeler bulunan yeşil bir türban./false/true//Yeşil Türban" #!String
+    73: "Magic Cowboy Hat/İçindeki prizmatik enerji sayesinde parıldayan kovboy şapkası./false/true/Prismatic/Büyülü Kovboy Şapkası" #!String
+    74: "Magic Turban/İçindeki prizmatik enerji sayesinde parıldayan türban./false/true/Prismatic/Büyülü Türban" #!String
+    75: "Golden Helmet/Yarısı altın hindistan cevizinden yapılma başlık./false/true//Altın Başlık" #!String
+    76: "Deluxe Pirate Hat/Sadece en ünlü korsanlardan biri tarafından takılabilir./false/true//Büyük Korsan Şapkası" #!String
+    77: "Pink Bow/Bu devasa fiyonk, onu takanın duruşunu belli ediyor!/true/false//Pembe Fiyonk" #!String
+    78: "Frog Hat/Başının üstünde yaşayan kaygan bir arkadaş./false/true//Kurbağa Şapkası" #!String
+    79: "Small Cap/Aerodinamiği öne çıkan bir şapka./false/true//Küçük Şapka" #!String
+    80: "Bluebird Mask/En sevdiğin ada tacirine benzemek için takabilirsin./hide/true//Mavikuş Maskesi" #!String
+    81: "Deluxe Cowboy Hat/Daha ekstrem boyutlarda bir kovboy şapkası./false/true//Büyük Kovboy Şapkası" #!String
+    82: "Mr. Qi's Hat/Bay Qi'nin ikonik şapkasının çakması./false/true//Bay Qi'nin Şapkası" #!String
+    83: "Dark Cowboy Hat/Rağbet gören siyah renginde bir kovboy şapkası./false/true//Siyah Kovboy Şapkası" #!String
+    84: "Radioactive Goggles/Radyasyona karşı hiç de koruma sağlamayan gözlükler./true/true//Radyoaktivite Gözlüğü" #!String
+    85: "Swashbuckler Hat/Bildiğimiz kabadayı görünümü sağlayan şapka./false/true//Kabadayı Şapkası" #!String
+    86: "Qi Mask/???/hide/true//Qi Maskesi" #!String
+    87: "Star Helmet/Üzerinde yıldızlar bulunan kırmızı bir şapka./false/true//Yıldızlı Şapka" #!String
+    88: "Sunglasses/Daha rahat bakmayı sağlar./true/true//Güneş Gözlüğü" #!String
+    89: "Goggles/Takana güvende olduğunu hissettiren gözlük./true/true//Koruyucu Gözlük" #!String
+    90: "Forager's Hat/Toplayıcıların olmazsa olmazıdır./false/true//Toplayıcı Şapkası" #!String
+    91: "Tiger Hat/Güzel bir kaplan görünümü verir./false/true//Kaplan Şapkası" #!String
+    92: "???/???/hide/true//???" #!String
+    93: "Warrior Helmet/Başlığa dönüştürülmüş bir deve kuşu yumurtası kabuğu./false/true//Savaşçı Başlığı" #!String
+    AbigailsBow: "Abigail's Bow/Abby'nin olduğu nasıl belli./true/false//Abigail'in Fiyonku/94" #!String
+    TricornHat: "Tricorn Hat/Deniz subaylarının geleneksel şapkası./false/true//Üç Köşeli Şapka/95" #!String
+    JojaCap: "Joja Cap/Resmî Joja çapkası. %100 polyesterden yapılmıştır./false/true//Joja Şapkası/96" #!String
+    LaurelWreathCrown: "Laurel Wreath Crown/Taç şeklinde bir araya getirilmiş bir çiçek topluluğu./true/true//Defne Tacı/97" #!String
+    GilsHat: "Gil's Hat/Gil'in giydiği şapkanın aynısı./false/true//Gil'in Şapkası/98" #!String
+    BlueBow: "Blue Bow/İddialı mı iddialı bir fiyonk!/true/false//Mavi Fiyonk/99" #!String
+    DarkVelvetBow: "Dark Velvet Bow/Koyu kadife, büyük, yumuşak bir fiyonk./true/false//Koyu Kadife Fiyonk/100" #!String
+    MummyMask: "Mummy Mask/Büyük bir mumya maskesi... İnsan korkuyor!/hide/true//Mumya Maskesi/101" #!String
+    BucketHat: "Bucket Hat/Kenarları kısa, basit bir şapka./false/true//Koyu Balıkçı Şapkası/102" #!String
+    SquidHat: "Squid Hat/Kafamıza mürekkepbalığı takacağımız aklımıza gelmezdi.../false/true//Mürekkepbalığı Şapkası/103" #!String
+    SportsCap: "Sports Cap/Şapkanın üzerinde eski bir takımın logosu bulunuyor./false/true//Sporcu Şapkası/104" #!String
+    RedFez: "Red Fez/Ünlü domuz tüccarın popülerleştirdiği, eşsiz bir başlık./false/true//Kırmızı Fes/105" #!String
+    RaccoonHat: "Raccoon Hat/Koloni günlerinden kalma eski bir başlık./false/true//Rakun Kürkü Başlık/106" #!String
+    SteelPanHat: "Steel Pan/Çelik eleme tavasını başına oturtuyorsun.../false/true//Çelik Eleme Tavası/107" #!String
+    GoldPanHat: "Gold Pan/Altın eleme tavasını başına oturtuyorsun.../false/true//Altın Eleme Tavası/108" #!String
+    IridiumPanHat: "Iridium Pan/İridyum eleme tavasını başına oturtuyorsun.../false/true//İridyum Eleme Tavası/109" #!String
+    MysteryHat: "Mystery Hat/Gizem kutusu kalıntılarından yapılmış bir şapka./false/true//Gizemli Şapka/110" #!String
+    DarkBallcap: "Dark Ballcap/Başa tam oturuyor./false/true//Siyah Beyzbol Şapkası/111" #!String
+    LeprechuanHat: "Leprechaun Hat/Eski sahibinin kafası, bir Cüce için epey büyük olmalı./false/true//Cüce Cin Şapkası/112" #!String
+    JunimoHat: "Junimo Hat/Ufak dostlarımızın şerefine.../false/true//Junimo Şapkası/113" #!String
+    PaperHat: "Paper Hat/Yağmurda parçalanmayan özel bir kağıttan yapılmıştır./false/true//Kağıt Şapka/114" #!String
+    PageboyCap: "Pageboy Cap/Nedense bunu takınca insanın gazete satası geliyor./false/true//Satıcı Şapkası/115" #!String
+    JesterHat: "Jester Hat/İçindeki palyaçoyu ortaya çıkarmak isteyenlere./false/true//Palyaço Şapkası/116" #!String
+    BlueRibbon: "Blue Ribbon/Başın arkasına takılan, hoş bir kurdele./true/false//Mavi Kurdele/117" #!String
+    GovernorsHat: "Governor's Hat/Vali Bey'in ikonik şapkasının replikası./false/true//Vali Bey'in Şapkası/118" #!String
+    WhiteBow: "White Bow/Kar beyazı bir fiyonk./true/false//Beyaz Fiyonk/119" #!String
+    SpaceHelmet: "Space Helmet/Uyarı: Bu başlık, uzay boşluğunda test edilmemiştir./hide/true//Uzay Başlığı/120" #!String
+    InfinityCrown: "Infinity Crown/Daha önce eşi benzerine rastlanmamış, egoztik bir metalden yapılmıştır./false/true//Sonsuzluk Tacı/121" #!String
+

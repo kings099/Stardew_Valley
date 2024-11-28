@@ -1,0 +1,23 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    spring_16.001: "我看起来健康吗，哈维医生？" #!String
+    marriage_Mon.000: "您好，@。我只是在享受一会儿新鲜空气。我在家里待得都要患幽闭症了。" #!String
+    winter_15.000: "嗯……卢皮尼的原作？不错……" #!String
+    spring_16.000: "你好。来看医生的吗？" #!String
+

@@ -1,0 +1,67 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    AppleSlices_Name: "Apple Slices" #!String
+    AppleSlices_Description: "Crunchy and sweet little slices." #!String
+    BlackLicorice_Name: "Black Licorice" #!String
+    BlackLicorice_Description: "A chewy candy with an intense, pungent flavor." #!String
+    CappuccinoMousseCake_Name: "Cappuccino Mousse Cake" #!String
+    CappuccinoMousseCake_Description: "A small chocolate cake glazed with a cappuccino mousse." #!String
+    ChocolatePopcorn_Name: "Chocolate Popcorn" #!String
+    ChocolatePopcorn_Description: "It's normal popcorn... but with a chocolate coating." #!String
+    CottonCandy_Name: "Cotton Candy" #!String
+    CottonCandy_Description: "A large pink cloud of spun sugar." #!String
+    Fries_Name: "Fries" #!String
+    Fries_Description: "Thin slices of potato, deep fried and then lightly salted." #!String
+    HummusSnackPack_Name: "Hummus Snack Pack" #!String
+    HummusSnackPack_Description: "It's crunchy and healthy." #!String
+    IceCreamSandwich_Name: "Ice Cream Sandwich" #!String
+    IceCreamSandwich_Description: "Vanilla ice cream sandwiched between two chocolate cookies." #!String
+    JasmineTea_Name: "Jasmine Tea" #!String
+    JasmineTea_Description: "Green tea flavored with aromatic jasmine flowers." #!String
+    Jawbreaker_Name: "Jawbreaker" #!String
+    Jawbreaker_Description: "It's a big, hard candy that lasts the whole movie!" #!String
+    JojaCola_Name: "Joja Cola" #!String
+    JojaCola_Description: "An extra-large cup of Joja's flagship soda." #!String
+    JojaCorn_Name: "JojaCorn" #!String
+    JojaCorn_Description: "Joja's patented corn food, slathered in plenty of \"b'utter sauce\"." #!String
+    KaleSmoothie_Name: "Kale Smoothie" #!String
+    KaleSmoothie_Description: "It's loaded with vitamins and fiber." #!String
+    Nachos_Name: "Nachos" #!String
+    Nachos_Description: "Gooey, spicy cheese on top of freshly fried tortilla chips." #!String
+    PanzanellaSalad_Name: "Panzanella Salad" #!String
+    PanzanellaSalad_Description: "A summer salad of bread and tomatoes." #!String
+    PersonalPizza_Name: "Personal Pizza" #!String
+    PersonalPizza_Description: "A pizza small enough to enjoy as a snack." #!String
+    Popcorn_Name: "Popcorn" #!String
+    Popcorn_Description: "Popped kernels of corn, dusted lightly with salt and drizzled with butter." #!String
+    RockCandy_Name: "Rock Candy" #!String
+    RockCandy_Description: "Flavored sugar crystals attached to a convenient stick." #!String
+    SalmonBurger_Name: "Salmon Burger" #!String
+    SalmonBurger_Description: "A thick slab of salmon on a lightly toasted sesame seed bun." #!String
+    SaltedPeanuts_Name: "Salted Peanuts" #!String
+    SaltedPeanuts_Description: "A classic salty treat." #!String
+    SourSlimes_Name: "Sour Slimes" #!String
+    SourSlimes_Description: "Tiny gummy slimes of assorted colors. They're sprinkled with an extremely sour powder." #!String
+    StarCookie_Name: "Star Cookie" #!String
+    StarCookie_Description: "A star-shaped shortbread cookie with rainbow sprinkles." #!String
+    StardropSorbet_Name: "Stardrop Sorbet" #!String
+    StardropSorbet_Description: "A single drop of stardrop essence transforms this sorbet into an extraordinary treat." #!String
+    TrufflePopcorn_Name: "Truffle Popcorn" #!String
+    TrufflePopcorn_Description: "Heirloom popcorn sprinkled with truffle salt." #!String
+

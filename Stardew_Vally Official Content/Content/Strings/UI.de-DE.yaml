@@ -1,0 +1,908 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    LearnedRecipe_cooking: "Koch-" #!String
+    LearnedRecipe_crafting: "Herstellungs-" #!String
+    LearnedRecipe: "Du hast ein neues {0} Rezept gelernt: {1}" #!String
+    FarmerFile_1: "Statistiken von: {0}\nSchritte: {1}\nVergebene Geschenke: {2}\nTage in Sternentautal: {3}\nHacke benutzt: {4}\nHergestellte Gegenstände: {5}\nGekochte Rezepte: {6}\nRecycelter Müll: {7} " #!String
+    FarmerFile_2: "Getötete Monster: {0}\nGefangene Fische: {1}\nAngelversuche: {2}\nGesäte Samen: {3}\nVerschickte Gegenstände: {4} " #!String
+    NotEnoughMoney1: "Du hast nicht genug Geld." #!String
+    NotEnoughMoney2: "Nicht genug Geld." #!String
+    NotEnoughMoney3: "Du hast nicht genug Geld..." #!String
+    Toggle_ColorPicker: "Farbauswahl zeigen/verbergen" #!String
+    AnimalQuery_Move: "Zuhause ändern" #!String
+    AnimalQuery_Moving_HomeChanged: "Zuhause geändert" #!String
+    AnimalQuery_Moving_BuildingFull: "Dieses Gebäude ist voll." #!String
+    AnimalQuery_Moving_AlreadyHome: "Das ist mein Zuhause." #!String
+    AnimalQuery_Moving_CantLiveThere: "{0} nicht erlaubt." #!String
+    AnimalQuery_Sell: "Für {0} G verkaufen" #!String
+    AnimalQuery_AllowReproduction: "Schwangerschaft erlauben" #!String
+    AnimalQuery_Age1: "Alter: 1 Monat" #!String
+    AnimalQuery_AgeN: "Alter: {0} Monate" #!String
+    AnimalQuery_AgeBaby: " (Baby)" #!String
+    AnimalQuery_Parent: "Mutter: {0}" #!String
+    AnimalQuery_ConfirmSell: "Bist du sicher?" #!String
+    AnimalQuery_ChooseBuilding: "{1} zieht um! Wähle einen neuen {0}." #!String
+    Billboard_Birthday: "{0}s Geburtstag" #!String
+    Billboard_SBirthday: "{0}' Geburtstag" #!String
+    Billboard_Year: "Jahr {0}" #!String
+    Billboard_NothingPosted: "Heute hängt hier nichts aus." #!String
+    Billboard_NightMarket: "Nachtmarkt" #!String
+    AcceptQuest: "Auftrag annehmen" #!String
+    BobberBar_Perfect: "Perfekt!" #!String
+    Confirm: "OK" #!String
+    Carpenter_ChangeAppearance: "Stil ändern" #!String
+    Carpenter_Demolish: "Ein Gebäude zerstören" #!String
+    Carpenter_MoveBuildings: "Ein Gebäude bewegen" #!String
+    Carpenter_Upgrade: "Verbessern von {0}" #!String
+    Carpenter_Build: "Bauen" #!String
+    Carpenter_CantDemolish_DuringConstruction: "Kann während des Errichtens nicht zerstört werden" #!String
+    Carpenter_CantDemolish_AnimalsHere: "Kann nicht zerstört werden, bis die Tiere umgesiedelt sind" #!String
+    Carpenter_CantDemolish_PlayerHere: "Abriss nicht möglich, wenn Spieler anwesend" #!String
+    Carpenter_CantDemolish_LockFailed: "Das kann jetzt nicht abgerissen werden" #!String
+    Carpenter_CantUpgrade_BuildingType: "Falscher Gebäudetyp" #!String
+    Carpenter_CantBuild: "Bau nicht möglich" #!String
+    Carpenter_SelectBuilding_Upgrade: "Wähle eines der Hofgebäude '{0}' zur Verbesserung" #!String
+    Carpenter_SelectBuilding_Demolish: "Wähle ein Hofgebäude, das zerstört werden soll" #!String
+    Carpenter_SelectBuilding_Move: "Wähle ein Gebäude aus, das verschoben werden soll" #!String
+    Carpenter_SelectBuilding_Paint: "Wähle ein Gebäude zum Streichen aus" #!String
+    Carpenter_ChooseLocation: "Wähle einen Ort" #!String
+    Character_Name: "Name" #!String
+    Character_Wallets: "Geldstil" #!String
+    Character_SharedWallet: "Geteilt" #!String
+    Character_SeparateWallet: "Separat" #!String
+    Character_Difficulty: "Gewinnspanne" #!String
+    Character_Close: "In der Nähe" #!String
+    Character_CoopHelpString: "Anfangshütten: Beginne mit 1-{0} Hütten, die bereits fertig sind, damit deine Freunde sofort mitmachen können. Alternativ kannst du auch \"Keine\" auswählen und die Hütten selber bauen (mit Robin). ^^Hütten-Ordnung: Wenn du deinen Hof mit bereits existierenden Hütten beginnst, kannst du dir eine von zwei Ordnungen aussuchen: Mit \"In der Nähe\" werden alle Hütten in der Nähe des Hauptbauernhauses platziert. Das ermöglicht einen eher gemeinschaftlichen Anbaustil. Mit \"Separat\" werden die Hütten weit auseinander aufgestellt, damit alle unabhängiger agieren können.^^Gewinnspanne: Passe die Gewinnspanne (das Geld, das du verdienst) für Waren an, die du verkaufst. 'Normal' ist Stardew Valley, so wie du es kennst. Erfahrenere oder größere Gruppen möchten die Gewinnspanne jedoch vielleicht verringern." #!String
+    Character_CoopHelpString2: "Geldstil: Sie können wählen, wie das Geld verdient und ausgegeben wird. Im \"Geteilt\"-Modus teilen sich alle Spieler die gleiche Geldquelle. Im \"Separat\"-Modus hat jeder Spieler seinen eigenen, individuellen Geldbeutel. \"Geteilt\" ist das klassische Stardew Valley Erlebnis." #!String
+    Character_Normal: "Normal" #!String
+    Character_Tough: "75%" #!String
+    Character_Hard: "50%" #!String
+    Character_Super: "25%" #!String
+    Character_Separate: "Separat" #!String
+    Character_none: "Keine" #!String
+    Character_CoopHelp: "Hilfe" #!String
+    Character_StartingCabins: "Anfangshütten" #!String
+    Character_CabinLayout: "Hütten-Ordnung" #!String
+    Character_Farm: "Hof-\nname" #!String
+    Character_FavoriteThing: "Mag\ngerne" #!String
+    Character_Animal: "Liebstes\nHaustier" #!String
+    Character_Skin: "Haut" #!String
+    Character_EyeColor: "Augenfarbe:" #!String
+    Character_Hair: "Haare" #!String
+    Character_HairColor: "Haarfarbe:" #!String
+    Character_Shirt: "Hemd" #!String
+    Character_PantsColor: "Hosenfarbe:" #!String
+    Character_ShirtColor: "T-Shirt Farbe:" #!String
+    Character_DyeColor: "Färbemittel Farbe:" #!String
+    Character_SkipIntro: "Intro überspringen" #!String
+    Character_Pants: "Hosen" #!String
+    Character_Accessory: "Acc." #!String
+    Character_FarmNameSuffix: "Hof" #!String
+    Character_FarmStandard: "Standard-Hof_Ein einfaches Stück Land mit einer großen, offenen Fläche, auf der du deinen Hof gestalten kannst." #!String
+    Character_FarmForaging: "Wald-Hof_Der Wald limitiert deine Hoffläche. Allerdings findest du die Schätze der Wälder direkt vor deiner Haustür." #!String
+    Character_FarmFishing: "Flussbett-Hof_Dein Hof ist über mehrere kleine Inseln und Flussbetten verteilt. Fische sind hier häufiger als üblich vertreten. Du beginnst mit einem Fischräucherer." #!String
+    Character_FarmMining: "Bergspitzen-Hof_Steiniges Terrain und ein sich windender Fluss machen es schwer, deinen Hof zu gestalten. Allerdings bietet ein Mineralvorkommen Möglichkeiten zum Bergbau." #!String
+    Character_FarmCombat: "Wildnis-Hof_Eine Menge gutes Land hier, aber pass auf, in der Nacht kommen die Monster..." #!String
+    Character_FarmFourCorners: "Ecken-Hof_Das Land ist in vier Teile aufgeteilt, jedes mit seinem eigenen Vorteil. Perfekt für eine Gruppe!" #!String
+    Character_foraging: "sammeln" #!String
+    Character_fishing: "fischen" #!String
+    Character_mining: "Minenarbeit" #!String
+    Character_combat: "Kampf" #!String
+    JukeboxMenu_Title: "Jukebox" #!String
+    Collections_Shipped: "Verschickte Gegenstände (Farm & Sammeln)" #!String
+    Collections_Fish: "Fisch" #!String
+    Collections_Artifacts: "Artefakte" #!String
+    Collections_Minerals: "Minerale" #!String
+    Collections_Cooking: "Kochen" #!String
+    Collections_Achievements: "Erfolge" #!String
+    Collections_SecretNotes: "Geheime Notizen" #!String
+    Collections_Description_ArtifactsFound: "Gesamt gefunden: {0}" #!String
+    Collections_Description_RecipesCooked: "Gekocht: {0}" #!String
+    Collections_Description_FishCaught: "Gefangen: {0}" #!String
+    Collections_Description_BiggestCatch: "Größter Fang: {0}" #!String
+    Collections_Description_MineralsFound: "Anzahl gefunden: {0}" #!String
+    Collections_Description_NumberShipped: "Anzahl verschickt: {0}" #!String
+    QuestButton_Hover: "Hofbuch ({0})" #!String
+    QuestButton_Hover_Console: "Hofbuch" #!String
+    ZoomInButton_Hover: "Hineinzoomen" #!String
+    ZoomOutButton_Hover: "Herauszoomen" #!String
+    ExitToTitle: "Zurück zum Titel" #!String
+    ExitToDesktop: "Zurück zum Desktop" #!String
+    GameMenu_Inventory: "Inventar" #!String
+    GameMenu_Skills: "Fähigkeiten" #!String
+    GameMenu_Social: "Soziales" #!String
+    GameMenu_Map: "Karte" #!String
+    GameMenu_Crafting: "Herstellung" #!String
+    GameMenu_Collections: "Sammlung" #!String
+    GameMenu_Options: "Optionen" #!String
+    GameMenu_Exit: "Spiel verlassen" #!String
+    GameMenu_JunimoNote_Hover: "Gemeinschaftszentrum" #!String
+    GeodeMenu_InventoryFull: "Du hast nicht genug Platz in deinem Inventar." #!String
+    GeodeMenu_Description_NotEnoughMoney: "Der Preis betragt 25 G pro Geode...\n\nDas kannst du dir noch nicht leisten." #!String
+    GeodeMenu_Description: "Lege einfach deine Geoden auf meinen Amboss, dann hau ich drauf.\n\nDer Preis ist 25 G pro Geode." #!String
+    ItemHover_DefenseBonus: "+{0} Verteidigung" #!String
+    ItemHover_ImmunityBonus: "+{0} Immunität" #!String
+    ItemHover_CritChanceBonus: "+{0} Kritische Chance" #!String
+    ItemHover_CritPowerBonus: "+{0} Kritische Kraft" #!String
+    ItemHover_Damage: "{0}-{1} Schaden" #!String
+    ItemHover_Speed: "{0} Geschwindigkeit" #!String
+    ItemHover_Weight: "{0} Gewicht" #!String
+    ItemHover_Energy: "{0} Energie" #!String
+    ItemHover_Health: "{0} Gesundheit" #!String
+    ItemHover_Buff0: "{0} Hofarbeit" #!String
+    ItemHover_Buff1: "{0} Fischen" #!String
+    ItemHover_Buff2: "{0} Minenarbeit" #!String
+    ItemHover_Buff3: "{0} Kampf" #!String
+    ItemHover_Buff4: "{0} Glück" #!String
+    ItemHover_Buff5: "{0} Sammeln" #!String
+    ItemHover_Buff6: "{0} Max. Energie" #!String
+    ItemHover_Buff7: "{0} Max. Energie" #!String
+    ItemHover_Buff8: "{0} Magnetismus" #!String
+    ItemHover_Buff9: "{0} Geschwindigkeit" #!String
+    ItemHover_Buff10: "{0} Verteidigung" #!String
+    ItemHover_Buff11: "{0} Angriff" #!String
+    ItemHover_Requirements: "Benötigt {1} x{0}" #!String
+    Inventory_PortraitHover_Level: "Stufe {0}" #!String
+    Inventory_FarmName: "{0} Hof" #!String
+    Inventory_CurrentFunds: "Aktuelle Geldmittel: {0} G" #!String
+    Inventory_TotalEarnings: "Gesamteinnahmen: {0} G" #!String
+    Inventory_CurrentFunds_Separate: "Dein Vermögen: {0}g" #!String
+    Inventory_TotalEarnings_Separate: "Farm Etrag: {0}g" #!String
+    ItemGrab_Organize: "Organisieren" #!String
+    ShippingBin_LastItem: "Letzter verschickter Gegenstand" #!String
+    JojaCDMenu_Hover0: "Repariert den Bus, der in die Calico-Wüste fährt." #!String
+    JojaCDMenu_Hover1: "Repariert das Lorensystem, das die Bushaltestelle, die Berge und die Stadt verbindet." #!String
+    JojaCDMenu_Hover2: "Repariert die kaputte Brücke in den Bergen." #!String
+    JojaCDMenu_Hover3: "Repariert die alten Ruinen auf dem Hof und baut sie in ein Gewächshaus um." #!String
+    JojaCDMenu_Hover4: "Entfernt den schimmernden Felsen in der Nähe des Mineneingangs." #!String
+    JunimoNote_BundleName: "Bündel \"{0}\"" #!String
+    JunimoNote_RewardBoiler: "Belohnung: Lorenreparatur" #!String
+    JunimoNote_RewardBulletin: "Belohnung: Freundschaft <" #!String
+    JunimoNote_RewardCrafts: "Belohnung: Brückenreparatur" #!String
+    JunimoNote_RewardPantry: "Belohnung: Gewächshaus" #!String
+    JunimoNote_RewardVault: "Belohnung: Busreparatur" #!String
+    JunimoNote_RewardFishTank: "Belohnung: Entfernung des glitzernden Felsens" #!String
+    JunimoNote_MustBeAtCC: "Muss am Gemeinschaftszentrum abgelegt werden" #!String
+    JunimoNote_MustBeAtAJM: "Muss beim verlassenen JojaMart hinterlegt werden." #!String
+    LetterViewer_MoneyIncluded: "$  {0} G beigelegt" #!String
+    LetterViewer_LearnedRecipe: "Neues {0}Rezept:" #!String
+    LetterViewer_LearnedRecipeName: "'{0}'" #!String
+    LevelUp_Title: "{1} Stufe {0}" #!String
+    LevelUp_ExtraInfo_Farming1: "+1 Gießkanneneffektivität" #!String
+    LevelUp_ExtraInfo_Farming2: "+1 Hackeneffektivität" #!String
+    LevelUp_ExtraInfo_Mining: "+1 Spitzhackeneffektivität" #!String
+    LevelUp_ExtraInfo_Fishing: "+1 Angeleffektivität" #!String
+    LevelUp_ExtraInfo_Foraging1: "+1 Axteffektivität" #!String
+    LevelUp_ExtraInfo_Foraging2: "Bäume lassen manchmal Samen fallen." #!String
+    LevelUp_ExtraInfo_Foraging3: "+1 Wildbeerenernte" #!String
+    LevelUp_ExtraInfo_Combat: "+5 LP" #!String
+    LevelUp_ExtraInfo_Luck: "Glück erhöht" #!String
+    LevelUp_ProfessionName_Rancher: "Viehzüchter" #!String
+    LevelUp_ProfessionDescription_Rancher: "Tierische Produkte sind 20% mehr wert." #!String
+    LevelUp_ProfessionName_Tiller: "Ackerbauer" #!String
+    LevelUp_ProfessionDescription_Tiller: "Nutzpflanzen sind 10% mehr wert." #!String
+    LevelUp_ProfessionName_Coopmaster: "Stallmeister" #!String
+    LevelUp_ProfessionDescription_Coopmaster: "Tiere im Hühnerstall mögen dich schneller.\nBrutzeit wird halbiert." #!String
+    LevelUp_ProfessionName_Shepherd: "Hirte" #!String
+    LevelUp_ProfessionDescription_Shepherd: "Tiere im Stall mögen dich schneller.\nSchafe produzieren schneller Wolle." #!String
+    LevelUp_ProfessionName_Artisan: "Handwerker" #!String
+    LevelUp_ProfessionDescription_Artisan: "Handwerkswaren (Wein, Käse, Öl etc.) sind 40% mehr wert." #!String
+    LevelUp_ProfessionName_Agriculturist: "Landwirt" #!String
+    LevelUp_ProfessionDescription_Agriculturist: "Alle Pflanzen wachsen 10% schneller." #!String
+    LevelUp_ProfessionName_Fisher: "Fischer" #!String
+    LevelUp_ProfessionDescription_Fisher: "Fische sind 25% mehr wert." #!String
+    LevelUp_ProfessionName_Trapper: "Fallensteller" #!String
+    LevelUp_ProfessionDescription_Trapper: "Für die Herstellung von Krabbenreusen werden weniger Güter benötigt." #!String
+    LevelUp_ProfessionName_Angler: "Angler" #!String
+    LevelUp_ProfessionDescription_Angler: "Fisch ist 50% mehr wert." #!String
+    LevelUp_ProfessionName_Pirate: "Pirat" #!String
+    LevelUp_ProfessionDescription_Pirate: "Die Wahrscheinlichkeit, Schätze zu finden, ist verdoppelt." #!String
+    LevelUp_ProfessionName_Mariner: "Seemann" #!String
+    LevelUp_ProfessionDescription_Mariner: "Krabbenreusen fangen keinen Müll mehr." #!String
+    LevelUp_ProfessionName_Luremaster: "Lockmeister" #!String
+    LevelUp_ProfessionDescription_Luremaster: "Krabbenreusen brauchen keine Köder mehr." #!String
+    LevelUp_ProfessionName_Forester: "Förster" #!String
+    LevelUp_ProfessionDescription_Forester: "Bäume lassen 25% mehr Holz fallen" #!String
+    LevelUp_ProfessionName_Gatherer: "Sammler" #!String
+    LevelUp_ProfessionDescription_Gatherer: "Mit bestimmter Wahrscheinlichkeit ist der Ertrag gesammelter Gegenstände verdoppelt." #!String
+    LevelUp_ProfessionName_Lumberjack: "Holzfäller" #!String
+    LevelUp_ProfessionDescription_Lumberjack: "Alle Bäume hinterlassen mit bestimmter Wahrscheinlichkeit Hartholz." #!String
+    LevelUp_ProfessionName_Tapper: "Zapfmeister" #!String
+    LevelUp_ProfessionDescription_Tapper: "Sirup ist 25% mehr wert." #!String
+    LevelUp_ProfessionName_Botanist: "Botanist" #!String
+    LevelUp_ProfessionDescription_Botanist: "Gesammelte Gegenstände haben immer die höchste Qualität." #!String
+    LevelUp_ProfessionName_Tracker: "Fährtenleser" #!String
+    LevelUp_ProfessionDescription_Tracker: "Die Positionen sammelbarer Gegenstände werden aufgedeckt." #!String
+    LevelUp_ProfessionName_Miner: "Minenarbeiter" #!String
+    LevelUp_ProfessionDescription_Miner: "+1 Erz pro Vene." #!String
+    LevelUp_ProfessionName_Geologist: "Geologe" #!String
+    LevelUp_ProfessionDescription_Geologist: "Mit bestimmter Wahrscheinlichkeit tauchen Edelsteine in Paaren auf." #!String
+    LevelUp_ProfessionName_Blacksmith: "Schmied" #!String
+    LevelUp_ProfessionDescription_Blacksmith: "Metallbarren sind 50% mehr wert." #!String
+    LevelUp_ProfessionName_Prospector: "Erzsucher" #!String
+    LevelUp_ProfessionDescription_Prospector: "Die Wahrscheinlichkeit, dass Kohle gefunden wird, ist verdoppelt." #!String
+    LevelUp_ProfessionName_Excavator: "Ausgräber" #!String
+    LevelUp_ProfessionDescription_Excavator: "Die Wahrscheinlichkeit, dass Geoden gefunden werden, ist verdoppelt." #!String
+    LevelUp_ProfessionName_Gemologist: "Gemmologe" #!String
+    LevelUp_ProfessionDescription_Gemologist: "Edelsteine sind 30% mehr wert." #!String
+    LevelUp_ProfessionName_Fighter: "Kämpfer" #!String
+    LevelUp_ProfessionDescription_Fighter: "Alle Angriffe verursachen 10% mehr Schaden." #!String
+    LevelUp_ProfessionName_Scout: "Kundschafter" #!String
+    LevelUp_ProfessionDescription_Scout: "Wahrscheinlichkeit eines kritischen Treffers um 50% erhöht." #!String
+    LevelUp_ProfessionName_Brute: "Schläger" #!String
+    LevelUp_ProfessionDescription_Brute: "Verursache 15% mehr Schaden." #!String
+    LevelUp_ProfessionName_Defender: "Verteidiger" #!String
+    LevelUp_ProfessionDescription_Defender: "+25 LP." #!String
+    LevelUp_ProfessionName_Acrobat: "Akrobat" #!String
+    LevelUp_ProfessionDescription_Acrobat: "Abklingzeit von Spezialaktionen wird halbiert." #!String
+    LevelUp_ProfessionName_Desperado: "Desperado" #!String
+    LevelUp_ProfessionDescription_Desperado: "Kritische Treffer sind tödlich." #!String
+    LevelUp_ChooseProfession: "Wähle einen Beruf:" #!String
+    LevelUp_NewRecipe: "Neues {0}Rezept: {1}" #!String
+    LoadGameMenu_LookingForSavedGames: "Suche nach Spielständen..." #!String
+    LoadGameMenu_Deleting: "Lösche..." #!String
+    TitleMenu_PressAToStart: "ZUM BEGINNEN @ DRÜCKEN" #!String
+    TooManyFarmsMenu_TooManyFarms: "Du besitzt bereits die maximal mögliche Anzahl Höfe." #!String
+    UserSignoutMenu_SignInChange: "Der Anmeldestatus hat sich geändert. Melde dich erneut an oder kehre zum Titel zurück." #!String
+    UserSignoutMenu_Returning: "Kehre zum Titel zurück..." #!String
+    UserSignoutMenu_SignIn: "Anmelden" #!String
+    UserSignoutMenu_Exit: "Verlassen" #!String
+    StartupMessage_FirstRun: "" #!String
+    ControllerConnectMenu_PleaseReconnect: "Bitte schließe zum Fortfahren deinen Controller erneut an." #!String
+    ControllerConnectMenu_PleaseReconnect.ps4: "Bitte schließe zum Fortfahren deinen Controller erneut an." #!String
+    Options_StowingMode: "Gegenstände verstauen" #!String
+    Options_StowingMode_Off: "Aus" #!String
+    Options_StowingMode_GamepadOnly: "Nur mit Controller" #!String
+    Options_StowingMode_On: "An" #!String
+    Options_ShowAdvancedCraftingInformation: "Erweiterte Handwerksinformationen anzeigen" #!String
+    Crafting_NumberCrafted: "Anzahl hergestellt: {0}" #!String
+    Options_GamepadStyleMenus: "Menüs im Controller-Stil verwenden" #!String
+    Options_GamepadStyleMenus.ps4: "Menüs im Controller-Stil verwenden" #!String
+    GameMenu_ServerInvite: "Freund einladen ..." #!String
+    GameMenu_ServerMode: "Server-Modus" #!String
+    GameMenu_ServerMode_Offline: "Offline" #!String
+    GameMenu_ServerMode_Online: "Online" #!String
+    GameMenu_ServerMode_FriendsOnly: "Nur Freunde" #!String
+    GameMenu_ServerMode_InviteOnly: "Nur auf Einladung" #!String
+    CoopMenu_EnterIP: "IP eingeben ..." #!String
+    CoopMenu_Join: "Beitreten" #!String
+    CoopMenu_Host: "Host" #!String
+    CoopMenu_JoinLANGame: "LAN-Spiel beitreten ..." #!String
+    CoopMenu_EnterInviteCode: "Einladungscode eingeben ..." #!String
+    CoopMenu_HostNewFarm: "Neuen Hof hosten ..." #!String
+    CoopMenu_NoInvites: "Keine Einladungen" #!String
+    CoopMenu_Failed: "Verbindung konnte nicht hergestellt werden." #!String
+    CoopMenu_FailedProtocolVersion: "Verbindung konnte nicht hergestellt werden (Version stimmt nicht)." #!String
+    CoopMenu_Connecting: "Verbindung wird hergestellt ..." #!String
+    CoopMenu_ConnectingOnlineServices: "Verbinde mit Online-Diensten" #!String
+    CoopMenu_NoSlots: "Keine freien Plätze auf dem Server" #!String
+    CoopMenu_NewFarmhand: "Neuer Bauer" #!String
+    CoopMenu_HostFile: "{1} Hof hosten" #!String
+    CoopMenu_RevisitFriendFarm: "{0} Hof erneut beitreten" #!String
+    CoopMenu_JoinFriendFarm: "{0} Hof beitreten" #!String
+    CoopMenu_Refresh: "Aktualisieren" #!String
+    OptionsPage_MultiplayerSection: "Mehrspieler" #!String
+    OptionsPage_IPConnections: "IP-Verbindungen annehmen" #!String
+    OptionsPage_FarmhandCreation: "Neue Charaktererstellung ermöglichen" #!String
+    OptionsPage_ShowInviteCode: "Einladungscode anzeigen" #!String
+    OptionsPage_ShowReadyStatus: "Spielerstatusliste bei Nacht anzeigen" #!String
+    OptionsPage_ScreenshotHeader: "Screenshot:" #!String
+    Client_RemotelyDisconnected: "Der Server hat die Verbindung beendet." #!String
+    Carpenter_CantDemolish_FarmhandOnline: "Kann nicht zerstört werden, solange der Farmer online ist." #!String
+    Carpenter_DemolishCabinConfirm: "Damit wird {0} dauerhaft aus dem Spiel genommen. Möchtest du diese Hütte wirklich zerstören?" #!String
+    Client_WaitForHostAvailability: "Warten darauf, dass die Veranstaltung des Hosts vorbei ist ..." #!String
+    Client_WaitForHostLoad: "Es wird auf die Einrichtung des Servers gewartet..." #!String
+    Chat_UnknownUserName: "???" #!String
+    Chat_PlayerName: "{0} ({1})" #!String
+    Chat_ChatMessageFormat: "{0}: {1}" #!String
+    Chat_ErrorMessageFormat: "[Fehler] {0}" #!String
+    Chat_PrivateMessageFormat: "{0} [Privat]: {1}" #!String
+    Chat_UserNotificationMessageFormat: "> {0}" #!String
+    Chat_PlayerJoined: "{0} ist beigetreten." #!String
+    Chat_PlayerJoinedNewName: "Unbenannter Farmer" #!String
+    Chat_PlayerDeath: "{0} wurde bewusstlos geschlagen." #!String
+    Chat_CaughtLegendaryFish: "{0} hat den legendären '{1}'-Fisch gefangen." #!String
+    Chat_TrashCan: "{1} hat beim Durchsuchen des Mülls {0} erwischt ..." #!String
+    Chat_LinusTrashCan: "Linus war beeindruckt!" #!String
+    Chat_Bundle: "Bündel komplett!" #!String
+    Chat_Stardrop: "{0} hat eine Sternenfall-Frucht gefunden." #!String
+    Chat_HorseNamed: "{0} hat ein Pferd {1} benannt." #!String
+    Chat_PrairieKing: "{0} hat die \"Reise des Prärie-Königs\" geschlagen" #!String
+    Chat_JunimoKart: "{0} hat Junimo Kart geschlagen." #!String
+    Chat_Dating: "{0} ist mit {1} zusammen." #!String
+    Chat_BreakUp: "{0} hat mit {1} Schluss gemacht." #!String
+    Chat_Engaged: "{0} hat sich mit {1} verlobt." #!String
+    Chat_MuseumComplete: "Der Hof \"{0}\" hat die Museumskollektion abgeschlossen." #!String
+    Chat_Museum40: "Der Hof \"{0}\" hat dem Museum 40 Gegenstände gespendet." #!String
+    Chat_donation: "{0} hat dem Museum '{1}' gespendet." #!String
+    Chat_Walked10k: "{0} ist 10.000 Schritte gegangen." #!String
+    Chat_Walked100k: "{0} ist 100.000 Schritte gegangen." #!String
+    Chat_Walked1m: "{0} ist 1.000.000 Schritte gegangen." #!String
+    Chat_Walked10m: "{0} ist 10.000.000 Schritte gegangen." #!String
+    Chat_Divorce: "{0} hat die Scheidung eingereicht." #!String
+    Chat_BackpackLarge: "{0} hat die große Tasche gekauft." #!String
+    Chat_BackpackDeluxe: "{0} hat die Luxus-Tasche gekauft." #!String
+    Chat_Makeover: "{0} erhält eine magische Verschönerung." #!String
+    Chat_Makeover_Pet: "{0} erhält eine magische Verschönerung." #!String
+    Chat_DivorceCancel: "{0} hat die Scheidung zurückgenommen." #!String
+    Chat_GoneToBedEarly0: "{0} hört heute früher auf." #!String
+    Chat_GoneToBedEarly1: "{0} geht heute früher ins Bett" #!String
+    Chat_GoneToBedEarly2: "{0} geht heute früher nach Hause" #!String
+    Chat_GoneToBed0: "{0} hat sich ins Bett gelegt." #!String
+    Chat_GoneToBed1: "{0} hat sich ins Bett gekuschelt" #!String
+    Chat_GoneToBed2: "{0} haut sich hin." #!String
+    Chat_GoneToBedLate0: "{0} hat es ins Bett geschafft!" #!String
+    Chat_GoneToBedLate1: "{0} hat es sicher ins Bett geschafft!" #!String
+    Chat_GoneToBedLate2: "Whew! {0} hat es ins Bett geschafft!" #!String
+    Chat_PassedOut0: "{0} ist ohnmächtig geworden!" #!String
+    Chat_PassedOut1: "{0} hat es nicht ins Bett geschafft..." #!String
+    Chat_PassedOut2: "{0} ist zu lange draußen geblieben..." #!String
+    Chat_Baby: "{0} und {1} begrüßten ein Baby {2} in der Familie! Sie nannten {3} {4}." #!String
+    Chat_EvilShrine: "{0} besuchte einen bösen Schrein" #!String
+    Chat_MonstersActivated: "{0} hat das uralte Magi-Schutzsiegel der Farm entfernt. Aufgepasst!" #!String
+    Chat_MonstersDeActivated: "{0} hat das uralte Magi-Schutzsiegel der Farm wiederhergesterllt." #!String
+    Chat_SleepAnnounceModeSet: "Der Schlafankündigungsmodus ist jetzt: {0}." #!String
+    Chat_LostBook: "{0} hat ein verlorenes Buch gefunden!" #!String
+    Chat_MovieInviteAccept: "{0} hat {1} zu einem Film eingeladen!" #!String
+    Chat_MovieInviteReject: "{1} hat {0}'s Einladung, einen Film anzusehen, verweigert..." #!String
+    Chat_MovieStart: "Die nächste Vorstellung von '{0}' beginnt gleich!" #!String
+    Chat_MovieEnd: "Die Vorstellung von '{0}' ist abgeschlossen." #!String
+    Chat_Earned15k: "Der Hof \"{0}\" hat 15.000 G verdient." #!String
+    Chat_Earned50k: "Der Hof \"{0}\" hat 50.000 G verdient." #!String
+    Chat_Earned250k: "Der Hof \"{0}\" hat 250.000 G verdient." #!String
+    Chat_Earned1m: "Der Hof \"{0}\" hat 1.000.000 G verdient." #!String
+    Chat_Earned10m: "Der Hof \"{0}\" hat 10.000.000 G verdient." #!String
+    Chat_Earned100m: "Der Hof \"{0}\" hat 100.000.000 G verdient." #!String
+    Chat_GalaxySword: "{0} hat das Galaxie-Schwert gefunden." #!String
+    Chat_Achievement: "{0} hat den Erfolg '{1}' erhalten." #!String
+    Chat_Jackpot: "{0} hat in Calico Spin den ultimativen Jackpot geholt." #!String
+    Chat_Slingshot_Hit: "{0} schoss {1} mit {2} ab!" #!String
+    Chat_Caught_Snooping: "{0} wurde beim Durchsuchen von {1}'s privaten Eigentum erwischt!" #!String
+    Chat_PlayerLeft: "{0} ist gegangen." #!String
+    Chat_Paused: "Der Host hat das Spiel pausiert." #!String
+    Chat_Resumed: "Der Host hat das Spiel fortgesetzt." #!String
+    Chat_SelfPlayerID: "du" #!String
+    ChatCommands_Error_CheatsOnly: "Dieser Befehl kann nur verwendet werden, wenn Cheats aktiviert sind." #!String
+    ChatCommands_Error_HostOnly: "Nur der Host kann diesen Befehl verwenden." #!String
+    ChatCommands_Error_MultiplayerOnly: "Dieser Befehl kann nur im Mehrspielermodus verwendet werden." #!String
+    ChatCommands_Error_NiceTry: "ConcernedApe: Netter Versuch ..." #!String
+    ChatCommands_Error_NoSuchOnlinePlayer: "Kein Spieler mit diesem Namen Online" #!String
+    ChatCommands_Error_NoSuchPlayer: "Kein Spieler mit diesem Namen" #!String
+    ChatCommands_ListOnlinePlayers: "Die folgenden Spieler sind anwesend:" #!String
+    ChatCommands_ListOnlinePlayersEntry: "- {0}" #!String
+    ChatCommands_Ban_Help: "{0} [Name des Landwirts / Benutzer-ID]: Verbietet den Spieler von dieser Farm." #!String
+    ChatCommands_Ban_Done: "{0} wurde gesperrt" #!String
+    ChatCommands_Ban_Failed: "Spieler konnte nicht gesperrt werden" #!String
+    ChatCommands_Clear_Help: "{0}: Chatprotokoll löschen" #!String
+    ChatCommands_Color_Help: "{0} [Farbe]: stellt die Standardtextfarbe ein." #!String
+    ChatCommands_ColorList_Help: "{0}: listet die verfügbaren Textfarben auf." #!String
+    ChatCommands_ConcernedApe_1: "ConcernedApe: Hallo. Danke, dass du ins Sternentautal gezogen bist! Ich hoffe, dass dir dein neues Leben hier gefällt. Mach's gut! [126]" #!String
+    ChatCommands_ConcernedApe_2: "ConcernedApe ist hart am Arbeiten ..." #!String
+    ChatCommands_Emote_Help: "{0} [emote id]: ein Emote ausführen (für eine Liste von Emotes den Namen weglassen)." #!String
+    ChatCommands_Help_CommandDescription: " - {0}" #!String
+    ChatCommands_Help_CommandList: "Unterstützte Befehle: {0}." #!String
+    ChatCommands_Help_Intro: "Gib '/help NameDesBefehls' ein, um Hilfe zu einem bestimmten Befehl zu erhalten." #!String
+    ChatCommands_Help_MultiplayerCommandList: "Mehrspieler-Befehle: {0}." #!String
+    ChatCommands_Help_NoSuchCommand: "NKein passender Befehl gefunden für '{0}'." #!String
+    ChatCommands_Kick_Help: "{0} [Name des Landwirts / Benutzer-ID]: Trennt den Player." #!String
+    ChatCommands_List_Help: "{0}: Spieler, die online sind, auflisten" #!String
+    ChatCommands_MapScreenshot_Help: "{0}: einen Bildschirmausdruck der vollständigen Karte des aktuellen Standorts speichern." #!String
+    ChatCommands_Message_Help: "{0} [Spieler Name]: sendet einem anderen Spieler eine private Nachicht." #!String
+    ChatCommands_Pause_Help: "{0}: pausiert das Spiel für alle Spieler." #!String
+    ChatCommands_Qi_1: "Mr. Qi: Hey, Kid. Ja, ich bin hier. Was hast du erwartet?" #!String
+    ChatCommands_Qi_2: "Mr. Qi: Hey ... mach weiter so und hör nie auf nach Erfolg zu streben! Wir sehen uns schon bald, Kid ..." #!String
+    ChatCommands_Qi_3: "Mr. Qi ist nicht da" #!String
+    ChatCommands_Reply_Help: "{0}: antwortet einer privaten Nachicht." #!String
+    ChatCommands_Reply_Failed: "Antwort konnte nicht gesendet werden" #!String
+    ChatCommands_Reply_NoMessageFound: "Kein Spieler, dem man antworten kann" #!String
+    ChatCommands_Resume_Help: "{0}: setzt ein pausiertes Spiel fort." #!String
+    ChatCommands_SleepAnnounceMode_All: "Alle" #!String
+    ChatCommands_SleepAnnounceMode_First: "Der Erste" #!String
+    ChatCommands_SleepAnnounceMode_Off: "Aus" #!String
+    ChatCommands_Unban_Help: "{0} [Name des Landwirts / Benutzer-ID]: das Verbot dieses Spielers aufheben." #!String
+    ChatCommands_Unban_Done: "{0} wurde nicht gesperrt" #!String
+    ChatCommands_Unban_NoPlayersBanned: "Es sind keine Spieler gesperrt" #!String
+    ChatCommands_Unban_PlayerList: "Gesperrte Spieler:" #!String
+    ChatCommands_Unban_PlayerNotFound: "Es konnte kein gesperrter Spieler mit diesem Namen oder dieser ID gefunden werden." #!String
+    ChatCommands_UnbanAll_Help: "{0}: Hebt die Verbannung aller Spieler von dieser Farm auf." #!String
+    ChatCommands_UnbanAll_Done: "Alle gesperrten Spieler waren nicht gesperrt" #!String
+    ChatCommands_UnlinkPlayer_Help: "{0} [Bauer Name/Benutzerkennung]: Jeder kann diesen Charakter beanspruchen, wenn er sich verbindet." #!String
+    SocialPage_Relationship_MarriedToOtherPlayer_FemaleNpc: "(verheiratet)" #!String
+    SocialPage_Relationship_MarriedToOtherPlayer_MaleNpc: "(verheiratet)" #!String
+    ReadyCheck: "Warten auf die anderen Spieler ... ({0}/{1})" #!String
+    PendingProposal: "Warten auf den anderen Spieler ..." #!String
+    GiftPlayerItem_Male: "Dein(e/en) {0} {1} anbieten?" #!String
+    GiftPlayerItem_Female: "Dein(e/en) {0} {1} anbieten?" #!String
+    GiftPlayerItem_NoInventorySpace_Male: "{0} hat keinen Platz für diesen Gegenstand." #!String
+    GiftPlayerItem_NoInventorySpace_Female: "{0} hat keinen Platz für diesen Gegenstand." #!String
+    Proposal_PlayerBusy_Male: "{0} kann sich gerade nicht um deine Anfrage kümmern. Versuche es etwas später noch einmal." #!String
+    Proposal_PlayerBusy_Female: "{0} kann sich gerade nicht um deine Anfrage kümmern. Versuche es etwas später noch einmal." #!String
+    AskedToDance_Male: "{0} hat dich gebeten, mit ihm zu tanzen. Möchtest du mit {0} tanzen?" #!String
+    AskedToDance_Female: "{0} hat dich gebeten, mit ihr zu tanzen. Möchtest du mit {0} tanzen?" #!String
+    AskedToMarry_Male: "{0} hat dich gefragt, ob du ihn heiraten willst! Nimmst du seinen Antrag an?" #!String
+    AskedToMarry_Female: "{0} hat dich gefragt, ob du sie heiraten willst! Nimmst du ihren Antrag an?" #!String
+    AskedToHaveBaby_Male: "{0} möchte mit dir ein Baby haben. Möchtest du ein Baby haben?" #!String
+    AskedToHaveBaby_Female: "{0} möchte mit dir ein Baby haben. Möchtest du ein Baby haben?" #!String
+    AskedToAdoptBaby_Male: "{0} möchte mit dir ein Baby adoptieren. Möchtest du ein Baby haben?" #!String
+    AskedToAdoptBaby_Female: "{0} möchte mit dir ein Baby adoptieren. Möchtest du ein Baby haben?" #!String
+    AskedToDance_Accepted_Male: "{0} hat deine Bitte zu tanzen angenommen!" #!String
+    AskedToDance_Accepted_Female: "{0} hat deine Bitte zu tanzen angenommen!" #!String
+    AskedToMarry_Accepted_Male: "{0} hat deinen Heiratsantrag angenommen!^Die Hochzeit findet in 3 Tagen statt." #!String
+    AskedToMarry_Accepted_Female: "{0} hat deinen Heiratsantrag angenommen!^Die Hochzeit findet in 3 Tagen statt." #!String
+    AskedToHaveBaby_Accepted_Male: "{0} hat zugestimmt, mit dir ein Baby zu haben! Es kommt in 14 Tagen auf die Welt." #!String
+    AskedToHaveBaby_Accepted_Female: "{0} hat zugestimmt, mit dir ein Baby zu haben! Es kommt in 14 Tagen auf die Welt." #!String
+    AskedToHaveBaby_Rejected_Male: "{0} hat sich entschieden, dass er gerade lieber kein Baby haben möchte." #!String
+    AskedToHaveBaby_Rejected_Female: "{0} hat sich entschieden, dass sie gerade lieber kein Baby haben möchte." #!String
+    AskedToAdoptBaby_Accepted_Male: "{0} hat zugestimmt, mit dir ein Baby zu adoptieren! Die Papiere wurden alle eingereicht. Ihr erhaltet das Baby in 14 Tagen." #!String
+    AskedToAdoptBaby_Accepted_Female: "{0} hat zugestimmt, mit dir ein Baby zu adoptieren! Die Papiere wurden alle eingereicht. Ihr erhaltet das Baby in 14 Tagen." #!String
+    AskedToAdoptBaby_Rejected_Male: "{0} hat sich entschieden, dass er gerade lieber kein Baby adoptieren möchte." #!String
+    AskedToAdoptBaby_Rejected_Female: "{0} hat sich entschieden, dass sie gerade lieber kein Baby adoptieren möchte." #!String
+    AskedToMarry_NotSingle_Male: "{0} ist nicht Single!" #!String
+    AskedToMarry_NotSingle_Female: "{0} ist nicht Single!" #!String
+    AskedToDance_Rejected_Male: "{0} hat deine Bitte zu tanzen abgelehnt!" #!String
+    AskedToDance_Rejected_Female: "{0} hat deine Bitte zu tanzen abgelehnt!" #!String
+    AskedToMarry_Rejected_Male: "{0} hat deinen Heiratsantrag abgewiesen." #!String
+    AskedToMarry_Rejected_Female: "{0} hat deinen Heiratsantrag abgewiesen." #!String
+    GivenGift_Male: "{0} bietet dir seinen Gegenstand an: {1}. Nimmst du ihn an?" #!String
+    GivenGift_Female: "{0} bietet dir ihren Gegenstand an: {1}. Nimmst du ihn an?" #!String
+    AskToDance_Male: "{0} bitten, mit dir zu tanzen?" #!String
+    AskToDance_Female: "{0} bitten, mit dir zu tanzen?" #!String
+    AskToMarry_Male: "{0} bitten, dich zu heiraten?" #!String
+    AskToMarry_Female: "{0} bitten, dich zu heiraten?" #!String
+    PlayerWeddingArranged: "Die Hochzeit findet in 3 Tagen statt." #!String
+    Server_InviteCode: "Einladungscode: {0}" #!String
+    Server_InviteCode_Copied: "In die Zwischenablage kopiert" #!String
+    Server_InviteCode_CopyFailed: "Kopieren in Zwischenablage nicht möglich" #!String
+    ProposalWithdrawn: "{0} hat die Anfrage abgebrochen." #!String
+    PendingProposal_Canceling: "Anfrage wird abgebrochen ..." #!String
+    CoopMenu_InternetCommunication: "Online Kommunikation" #!String
+    CoopMenu_LocalCommunication: "Lokale Kommunikation" #!String
+    TrashCanSale: "Zurückfordern" #!String
+    ItemList_ItemsLost: "Gegenstände verloren:" #!String
+    ItemList_ItemsLostValue: "Gesamtwert: {0}g" #!String
+    Collections_Letters: "Briefe" #!String
+    FruitTree_Warning: "Dein {0} Baum konnte letzt Nacht nicht wachsen." #!String
+    Workbench_Chest_Warning: "Eine der Truhen in der Nähe deiner Werkbank ist gerade in Benutzung." #!String
+    Profile_GiftLog: "Geschenkprotokoll" #!String
+    Profile_GiftLog_NoGiftsGiven: "Du hast noch keines solcher Geschenke vergeben." #!String
+    Profile_Status: "Status" #!String
+    Profile_Birthday: "Geburtstag" #!String
+    Profile_Gift_Loved: "Geliebte Geschenke" #!String
+    Profile_Gift_Liked: "Beliebte Geschenke" #!String
+    Profile_Gift_Neutral: "Normale Geschenke" #!String
+    Profile_Gift_Disliked: "Unbeliebte Geschenke" #!String
+    Profile_Gift_Hated: "Gehasste Geschenke" #!String
+    Profile_Gift_Category_LikedGifts: "{0}'s Favoriten" #!String
+    Profile_Gift_Category_FruitsAndVegetables: "Obst & Gemüse" #!String
+    Profile_Gift_Category_AnimalProduce: "Tierische Produkte" #!String
+    Profile_Gift_Category_ArtisanItems: "Handwerkliche Gegenstände" #!String
+    Profile_Gift_Category_CookedItems: "Gekochte Produkte" #!String
+    Profile_Gift_Category_ForagedItems: "Blumen & Sammelbare Gegenstände" #!String
+    Profile_Gift_Category_Fish: "Fisch" #!String
+    Profile_Gift_Category_Ingredients: "Zutaten" #!String
+    Profile_Gift_Category_MineralsAndGems: "Metalle, Mineralien & Edelsteine" #!String
+    Profile_Gift_Category_Misc: "Sonstiges" #!String
+    Mini_JukeBox_Off: "Aus" #!String
+    Mini_JukeBox_NotFarmPlay: "Die Mini-Jukebox kann nur auf deiner Farm spielen!" #!String
+    Mini_JukeBox_OutdoorRainy: "Die Mini-Jukebox kann nicht im Regen gespielt werden!" #!String
+    Tailor_MissingIngredients: "Platziere Stoff oder färbbare Kleidung in den Stoffschieber und Materialien auf die Spule, um das Schneidern zu beginnen." #!String
+    Tailor_Busy: "Am Schneidern..." #!String
+    Tailor_Valid: "Betätige den An-/Aus-Schalter, um das Schneidern zu beginnen!" #!String
+    Tailor_InvalidRecipe: "Die aktuellen Materialien können nicht zur Anpassung eines Artikels verwendet werden!" #!String
+    Tailor_NotDyeable: "Das Kleidungsstück im Futter ist nicht färbbar!" #!String
+    Tailor_MakeResult: "Du stellst her:" #!String
+    Tailor_MakeResultUnknown: "???" #!String
+    Tailor_Feed: "Stoffschieber" #!String
+    Tailor_Spool: "Spule" #!String
+    Clothes_Dyeable: "Färbbar." #!String
+    DyePot_Help: "Platziere einen Gegenstand jeder Farbe in den Färbetöpfen, um färbbare Kleidung zu färben, die du trägst." #!String
+    DyePot_CanDye: "Drücke die Färben-Taste, um deine Kleidung zu färben!" #!String
+    DyePot_WillDye: "Werden gefärbt:" #!String
+    DyePot_NoDyeable: "Du trägst keine färbbare Kleidung!" #!String
+    Input_EmoteButton: "Emote Menü" #!String
+    Emote_Happy: "Fröhlich" #!String
+    Emote_Sad: "Traurig" #!String
+    Emote_Heart: "Herz" #!String
+    Emote_Exclamation: "Ausruf" #!String
+    Emote_Note: "Note" #!String
+    Emote_Sleep: "Schlaf" #!String
+    Emote_Game: "Controller" #!String
+    Emote_Question: "Frage" #!String
+    Emote_X: "X" #!String
+    Emote_Pause: "Pause" #!String
+    Emote_Blush: "Schamröte" #!String
+    Emote_Angry: "Wütend" #!String
+    Emote_Yes: "Ja" #!String
+    Emote_No: "Nein" #!String
+    Emote_Sick: "Krank" #!String
+    Emote_Laugh: "Lachen" #!String
+    Emote_Surprised: "Überrascht" #!String
+    Emote_Hi: "Hi!" #!String
+    Emote_Taunt: "Hohn" #!String
+    Emote_Uh: "Uh" #!String
+    Emote_Music: "Musik" #!String
+    Emote_Jar: "Einmachglas" #!String
+    Chat_SeparatedWallets: "{0} hat die Geldquelle der Farm aufgeteilt. Jeder bekommt {1}g für sich." #!String
+    Chat_MergedWallets: "{0} hat die Geldquelle aller verbunden." #!String
+    Chat_SentMoney: "{0} hat {1} {2}g gesendet" #!String
+    Chat_MergeWallets: "{0} hat vorgeschlagen die Geldquelle aller zu verbinden." #!String
+    Chat_MergeWalletsCancel: "{0} hat das Verbinden aller Geldquellen abgebrochen." #!String
+    Chat_SeparateWallets: "{0} hat vorgeschlagen die Geldquellen aller aufzuteilen." #!String
+    Chat_SeparateWalletsCancel: "{0} hat die Aufteilung der Geldquellen aller abgebrochen." #!String
+    Chat_Gifted1mil: "{0} hat insgesamt über 1.000.000g verschenkt. Das ist sehr großzügig!" #!String
+    Chat_Gifted100k: "{0} hat insgesamt über 100.000g verschenkt. Nicht schlecht!" #!String
+    Chat_Gifted10k: "{0} hat insgesamgt 10.000g verschenkt." #!String
+    Chat_Gifted1k: "{0} hat insgesamt 1.000g verschenkt." #!String
+    Chat_Sent1g: "{0} hat {1} 1g gesendet... Gib nicht alles auf einmal aus! " #!String
+    Chat_SoloEarned1mil_Male: "{0} hat ohne Hilfe 1.000.000g verdient." #!String
+    Chat_SoloEarned100k_Male: "{0} hat ohne Hilfe 100.000g verdient." #!String
+    Chat_SoloEarned10k_Male: "{0} hat ohne Hilfe 10.000g verdient." #!String
+    Chat_SoloEarned1k_Male: "{0} hat ohne Hilfe 1.000g verdient." #!String
+    Chat_SoloEarned1mil_Female: "{0} hat ohne Hilfe 1.000.000g verdient." #!String
+    Chat_SoloEarned100k_Female: "{0} hat ohne Hilfe 100.000g verdient." #!String
+    Chat_SoloEarned10k_Female: "{0} hat ohne Hilfe 10.000g verdient." #!String
+    Chat_SoloEarned1k_Female: "{0} hat ohne Hilfe 1.000g verdient." #!String
+    Chat_BundleDonate: "{0} hat '{1}' zu einem Bündel gespendet." #!String
+    Chat_MonsterSlayer0: "{0} besiegte: {1}, und erreichte ein Ziel zur Ausrottung von Monstern." #!String
+    Chat_MonsterSlayer1: "{0} besiegte: {1}, und Marlon ist sehr erfreut." #!String
+    Chat_MonsterSlayer2: "{0} beschützte das Tal, indem er folgendes besiegte: {1}." #!String
+    Chat_MonsterSlayer3: "{0} erlegte die lokale {1} Population, und alle fühlen sich etwas sicherer!" #!String
+    Chat_IridiumToolUpgrade: "{0} hat jetzt ein {1}." #!String
+    Chat_LuauSoup: "{0} hat '{1}' in die Mischmasch-Suppe getan." #!String
+    Chat_JunimoKartHighScore: "{0} hat gerade einen neuen 'High Score' in Junimo Kart erreicht!" #!String
+    Junimo_Kart_Level_0: "Krümelnde Kaverne" #!String
+    Junimo_Kart_Level_1: "Glatte Gefälle" #!String
+    Junimo_Kart_Level_4: "Glühende Achterbahn" #!String
+    Junimo_Kart_Level_2: "Der Edelstein Meeresgigant" #!String
+    Junimo_Kart_Level_3: "Gespenstische Galeone" #!String
+    Junimo_Kart_Level_5: "Stumpfes Gestampfe" #!String
+    Junimo_Kart_Level_6: "Sonnenuntergangs Strecke" #!String
+    Junimo_Kart_Level_8: "???" #!String
+    Junimo_Kart_Level_9: "Leuchtpilz Loch" #!String
+    NPC_Busy: "{0} ist gerade beschäftigt..." #!String
+    PondQuery_Name: "{0} Teich" #!String
+    PondQuery_EmptyPond: "Teich leeren" #!String
+    PondQuery_ConfirmEmpty: "Bist du sicher, dass du alle Fische entfernen und den Teich wieder in seinem ursprünglichen Zustand versetzen willst?" #!String
+    PondQuery_ChangeNetting: "Aussehen ändern" #!String
+    PondQuery_Population: "Bevölkerung: {0}/{1}" #!String
+    PondQuery_StatusNoFish: "Dieser Teich ist leer..." #!String
+    PondQuery_StatusOk0: "\"Wir machen das gut!\"" #!String
+    PondQuery_StatusOk1: "\"Nichts zu beklagen!\"" #!String
+    PondQuery_StatusOk2: "\"Alles ist okay!\"" #!String
+    PondQuery_StatusOk3: "\"Wir fühlen uns recht gut!\"" #!String
+    PondQuery_StatusOk4: "\"Wir fühlen uns gesund!\"" #!String
+    PondQuery_StatusOk5: "Die Fische sehen glücklich aus." #!String
+    PondQuery_StatusOk6: "Die Fische scheinen zu gedeihen." #!String
+    PondQuery_StatusOk_Coral: "Den {0} geht es gut." #!String
+    PondQuery_StatusRequest_Bring: "Bringe" #!String
+    PondQuery_StatusRequestPending0: "\"Weißt du, {1} {0} könnte die Dinge hier verbessern!\"" #!String
+    PondQuery_StatusRequestPending1: "\"Könntest du, wenn es dir nichts ausmacht {1} {0} bringen?\"" #!String
+    PondQuery_StatusRequestPending2: "\"Es wäre gemütlicher, wenn wir {1} {0} hier hätten.\"" #!String
+    PondQuery_StatusRequestPending3: "\"Bitte... könntest du uns {1} {0} bringen?\"" #!String
+    PondQuery_StatusRequestPending4: "\"Uns geht es gut, aber {1} {0} würde uns glücklicher stimmen...\"" #!String
+    PondQuery_StatusRequestPending5: "\"Entschuldigung... wir hätten gerne {1} {0}, bitte.\"" #!String
+    PondQuery_StatusRequestPending6: "\"Mit {1} {0} würden wir uns eher wie zuhause fühlen...\"" #!String
+    PondQuery_StatusRequestPending_Rude0_Male: "\"Hey Landratte, denkst du, du könntest uns {1} {0} bringen?\"" #!String
+    PondQuery_StatusRequestPending_Rude1_Male: "\"Jo... Zweibeiner! Wie wärs, wenn du uns mal {1} {0} bringst, hm?\"" #!String
+    PondQuery_StatusRequestPending_Rude2_Male: "\"Psst... Hey, Kumpel... meinst du du könntest uns {1} {0} zusenden?\"" #!String
+    PondQuery_StatusRequestPending_Rude0_Female: "\"Hey, Landbewohner, könntest du uns {1} {0} bringen?\"" #!String
+    PondQuery_StatusRequestPending_Rude1_Female: "\"Hey, Lady... hast du {1} {0} für uns?\"" #!String
+    PondQuery_StatusRequestPending_Rude2_Female: "\"Psst... Könntest du uns {1} {0} rüberschieben?\"" #!String
+    PondQuery_StatusRequestPending_Demanding0: "\"{2}! {2}! Wir wollen {1} {0}...!\"" #!String
+    PondQuery_StatusRequestPending_Demanding1: "\"Wir brauchen {1} {0}! Wir brauchen {1} {0}!\"" #!String
+    PondQuery_StatusRequestPending_Demanding2: "\"Wo ist {2}? Wir brauchen {1} {0}!\"" #!String
+    PondQuery_StatusRequestPending_Stiff0: "\"Wir brauchen {1} {0}...\"" #!String
+    PondQuery_StatusRequestPending_Stiff1: "\"{1} {0} würde es uns erlauben uns weiter zu vermehren\"" #!String
+    PondQuery_StatusRequestPending_Stiff2: "\"Wir haben entschieden, dass wir {1} {0} brauchen.\"" #!String
+    PondQuery_StatusRequestPending_Carnivore0: "\"Wir haben hunger... Könntest du uns {1} {0} bringen?\"" #!String
+    PondQuery_StatusRequestPending_Carnivore1: "\"Könntest du uns zum Abendessen {1} {0} bringen?\"" #!String
+    PondQuery_StatusRequestPending_Carnivore2: "\"Wir brauchen Proteine... {1} {0} sollte helfen!\"" #!String
+    PondQuery_StatusRequestComplete_Rude0: "\"Cha cha cha! Wir sind im Geschäft.\"" #!String
+    PondQuery_StatusRequestComplete_Rude1: "\"Ah... das ist das gute Zeug! Danke, Kleiner\"" #!String
+    PondQuery_StatusRequestComplete_Rude2: "\"Danke, Boss!\"" #!String
+    PondQuery_StatusRequestComplete_Stiff0: "\"Ah... das {0} nach dem wir fragten.\"" #!String
+    PondQuery_StatusRequestComplete_Stiff1: "\"Dieses {0} ist für unsere Bedürfnisse befriedigend.\"" #!String
+    PondQuery_StatusRequestComplete_Stiff2: "Die Fische sehen mit dem {0} zufrieden aus." #!String
+    PondQuery_StatusRequestComplete_Demanding0: "\"Danke dir! Danke dir!\"" #!String
+    PondQuery_StatusRequestComplete_Demanding1: "\"{0}! {0}! {0}! Wir sind glücklich!\"" #!String
+    PondQuery_StatusRequestComplete_Demanding2: "Die Fische schwimmen in Kreisen." #!String
+    PondQuery_StatusRequestComplete_Carnivore0: "\"Sieht so aus, als ob {0} heute nacht auf der Speisekarte steht!\"" #!String
+    PondQuery_StatusRequestComplete_Carnivore1: "\"Frischer {0}! Lecker...\"" #!String
+    PondQuery_StatusRequestComplete_Carnivore2: "\"Dieser {0} sieht schmackhaft aus. Danke!\"" #!String
+    PondQuery_StatusRequestComplete0: "\"Wow, danke für den {0}!\"" #!String
+    PondQuery_StatusRequestComplete1: "\"Hey, schaut, es ist {0}. Genau, was wir gebraucht haben!\"" #!String
+    PondQuery_StatusRequestComplete2: "\"Hey! Dieser {0} sieht ziemlich gut aus!\"" #!String
+    PondQuery_StatusRequestComplete3: "\"Danke! Dieser {0} wird uns gesund halten.\"" #!String
+    PondQuery_StatusRequestComplete4: "\"Ah, {0}... sorgt dafür, dass wir uns wie zuhause fühlen.\"" #!String
+    PondQuery_StatusRequestComplete5: "\"Alle, seht... frisch aus {0}!\"" #!String
+    PondQuery_StatusRequestComplete6: "Die Fische sehen glücklich aus!" #!String
+    PondQuery_StatusRequestOneCount: "einige" #!String
+    AlreadyDatingBouquet: "Du gehst schon mit {0} aus." #!String
+    MovieStartRequest: "Der Film beginnt gleich!" #!String
+    MiniFridge_NoKitchen: "Der Mini-Kühlschrank kann nur in ein Haus mit einer Küche gestellt werden." #!String
+    Kitchen_InUse: "Ein Küchengerät ist derzeit im Einsatz, bitte versuche es später noch einmal." #!String
+    ItemGrab_FillStacks: "Zu bestehenden Stapeln hinzufügen" #!String
+    OptionsPage_OpenFolder: "Zielordner öffnen" #!String
+    Calendar_Wedding: "{0} und {1}s Hochzeit" #!String
+    Options_Vsync: "VSync" #!String
+    VersionMismatch: "Version stimmt nicht ({0})" #!String
+    Options_GamepadMode: "Gamepad-Modus" #!String
+    Options_GamepadMode_Auto: "Automatische Erkennung" #!String
+    Options_GamepadMode_ForceOn: "An" #!String
+    Options_GamepadMode_ForceOff: "Aus" #!String
+    AGO_Label: "Erweiterte Spieloptionen:" #!String
+    AGO_CCB: "Gemeindezentrum-Pakete:" #!String
+    AGO_CCB_Tooltip: "Modifiziert die Pakete, die im Gemeindezentrum erscheinen." #!String
+    AGO_CCB_Normal: "Normal" #!String
+    AGO_CCB_Remixed: "Remixed" #!String
+    AGO_Year1Completable: "Garantiert innerhalb eines Jahres abschließbar" #!String
+    AGO_Year1Completable_Tooltip: "Stellt sicher, dass der Reisende Händler irgendwann im ersten Jahr ein Rotkohlsaatgut verkauft." #!String
+    AGO_MineTreasureShuffle: "Minenbelohnungen:" #!String
+    AGO_MineTreasureShuffle_Tooltip: "Ändert die Belohnungen, die in den Minen erscheinen." #!String
+    AGO_FarmMonsters: "Lässt Monster auf dem Hof entstehen" #!String
+    AGO_FarmMonsters_Tooltip: "Erlaubt Monstern, nachts zu entstehen." #!String
+    AGO_ProfitMargin_Tooltip: "Auf den Preis der verkauften Artikel wird ein Multiplikator angewandt." #!String
+    AGO_MPOptions_Label: "Mehrspieler-Optionen:" #!String
+    AGO_StartingCabins_Tooltip: "Die Anzahl der Start-Hütten." #!String
+    AGO_OtherOptions_Label: "Andere Optionen:" #!String
+    AGO_CabinLayout_Tooltip: "Ob die Hütten näher oder weiter voneinander entfernt aufgestellt sind." #!String
+    AGO_RandomSeed: "Zufälliger Seed:" #!String
+    AGO_RandomSeed_Tooltip: "Der Seed, der zur Randomisierung der Spielwelt verwendet wird." #!String
+    AGO_LegacyRandomization: "Legacy-Randomisierung verwenden" #!String
+    AGO_LegacyRandomization_Tooltip: "Trifft zufällige Entscheidungen auf eine Art und Weise, bei der sich häufig Muster wiederholen. Bei den meisten Spielern sollte dies deaktiviert bleiben." #!String
+    Options_SlingshotMode: "Steinschleuder-Feuermodus" #!String
+    Options_SlingshotMode_Hold: "Halten und loslassen" #!String
+    Options_SlingshotMode_Pull: "In entgegengesetzter Richtung ziehen" #!String
+    Bed_InUse: "Ein Bett, das gerade benutzt wird, kann nicht verschoben werden." #!String
+    Bed_CantMoveOthersBeds: "Betten im Haus eines anderen Spielers können nicht verschoben werden." #!String
+    Bed_NeedsUpgrade: "Der Bettentyp kann nicht ohne weitere Aufrüstung des Hauses platziert werden." #!String
+    Chat_LobbyLost: "Die Verbindung zur Spielsitzung wurde unterbrochen. {0}" #!String
+    Chat_LobbyLost_UserLeft: "(Benutzer hat Sitzung verlassen)" #!String
+    Chat_LobbyLost_LobbyClosed: "(Sitzung beendet)" #!String
+    Chat_LobbyLost_ConnectionLost: "(Verbindung zum Lobby-Server verloren)" #!String
+    Chat_LobbyJoined: "Verbindung mit der Spielsitzung hergestellt. {0}" #!String
+    Chat_LobbyRecreated: "Es wurde eine neue Spielsitzung eingerichtet.  {0}" #!String
+    Chat_LobbyJoined_InviteCode: "(Einladungscode: {0})" #!String
+    Chat_LobbyCreateFail: "Das Erstellen einer neuen Spielsitzung ist fehlgeschlagen..." #!String
+    Chat_StartingServer: "Du bist jetzt Host eines Mehrspieler-Spiels." #!String
+    Chat_DisablingServer: "Du bist nicht mehr Host eines Mehrspieler-Spiels." #!String
+    Farmhand_Locked: "Dieser Charakter gehört einem anderen Spieler." #!String
+    Forge_Unforge: "Unschmieden" #!String
+    Item_Tooltip_Forged: "geschmiedet" #!String
+    LocalJoinPrompt: "Drücke *, um dem Spiel beizutreten." #!String
+    StartLocalMulti: "Lokales Ko-op starten" #!String
+    DropOutLocalMulti: "Spiel verlassen" #!String
+    ChooseOne: "Wähle Eins:" #!String
+    Carpenter_PaintBuildings: "Gebäude streichen" #!String
+    Carpenter_CannotPaint: "Dieses Gebäude kann nicht gestrichen werden" #!String
+    Carpenter_CannotPaint_Permission: "Du hast keine Erlaubnis, dieses Gebäude zu streichen." #!String
+    GameMenu_MoveBuildingPermissions: "Gebäude-Verschiebe-Modus" #!String
+    GameMenu_MoveBuildingPermissions_Off: "Nur Host" #!String
+    GameMenu_MoveBuildingPermissions_Owned: "Nur Gebäudeeigentümer" #!String
+    GameMenu_MoveBuildingPermissions_On: "Alle" #!String
+    Character_FarmBeach: "Strand-Hof_Gute Futter- und Fischfangmöglichkeiten und tonnenweise Freiflächen. Allerdings funktionieren Sprinkleranlagen im Sandboden nicht." #!String
+    Forge_enchanting: "Jetzt verzaubern..." #!String
+    Forge_forging: "Jetzt schmieden..." #!String
+    Forge_description1: "Platziere die Waffe oder das Werkzeug in den linken Schacht. Platziere den Edelstein in den rechten Schacht." #!String
+    Forge_description2: "Du kannst auch zwei Ringe kombinieren." #!String
+    Forge_shards: "Schlackenscherben werden beim Schmieden automatisch verbraucht." #!String
+    Forge_notenoughshards: "Nicht genug Schlackenscherben..." #!String
+    Forge_wrongorder: "Falsche Reihenfolge" #!String
+    Forge_noroom: "Kein Platz im Inventar..." #!String
+    Forge_unforge_right_slot: "Leere den rechten Schacht aus, um unzuschmieden..." #!String
+    Forge_unforge_invalid: "Nur geschmiedete Gegenstände und kombinierte Ringe können ungeschmiedet werden..." #!String
+    Forge_valid: "Drücke den Einschaltknopf, um mit dem Schmieden zu beginnen!" #!String
+    Chat_BuildingBuild: "{0} hat den Bau von {1} {2} beantragt!" #!String
+    Chat_BuildingMagicBuild: "{0} hat {1} {2} gerufen!" #!String
+    Chat_HouseUpgrade: "{0} hat den Bau auf {1} Haus beantragt!" #!String
+    Chat_CommunityUpgrade: "{0} hat ein Gemeinde-Upgrade beantragt!" #!String
+    Chat_AcceptedSpecialOrder: "{0} hat den Sonderauftrag '{1}' akzeptiert!" #!String
+    Chat_CompletedSpecialOrder: "Der Sonderauftrag '{0}' ist erfüllt!" #!String
+    Chat_DartsWin: "{0} hat ein Dartspiel mit {1} Würfen gewonnen!" #!String
+    Chat_DartsWinPerfect: "{0} hat ein perfektes Dartspiel gewonnen!" #!String
+    Darts_OffTheIsland: "Daneben..." #!String
+    Darts_Bull: "Bull!" #!String
+    Darts_Bullseye: "Bullseye!" #!String
+    Darts_PointsToGo: "Noch {0} Punkte" #!String
+    Darts_PointToGo: "Noch {0} Punkt" #!String
+    Darts_WinText: "Du hast mit {0} Würfen gewonnen!" #!String
+    Darts_WinTextPerfect: "Perfektes Spiel!" #!String
+    Chat_FieldOfficeDonation: "{0} hat {1} an die Insel-Außenstelle gespendet." #!String
+    Chat_RepairBoatAnchor: "{0} hat den Anker von Willys Boot repariert!" #!String
+    Chat_RepairBoatHull: "{0} hat den Rumpf von Willys Boot repariert!" #!String
+    Chat_RepairBoatMachine: "{0} hat den Fahrkartenautomaten bei Willy's Boot repariert!" #!String
+    Chat_RepairBoat: "Die Vorbereitungen zur Reparatur von Willy's Boot sind abgeschlossen!" #!String
+    Chat_UpgradePerch_House: "{0} hat die Papageien gebeten, das Farmhaus der Insel zu restaurieren!" #!String
+    Chat_UpgradePerch_House_Mailbox: "{0} hat die Papageien gebeten, mit der Postzustellung auf der Insel zu beginnen!" #!String
+    Chat_UpgradePerch_VolcanoShortcutOut: "{0} hat die Papageien gebeten, eine Abkürzung aus dem Vulkan heraus zu bauen!" #!String
+    Chat_UpgradePerch_VolcanoBridge: "{0} hat die Papageien gebeten, eine Brücke in dem Vulkan zu bauen!" #!String
+    Chat_UpgradePerch_Turtle: "{0} hat die Papageien gebeten, den Weg zur Westseite der Insel freizumachen!" #!String
+    Chat_UpgradePerch_ParrotPlatforms: "{0} hat die Papageien gebeten, den Papageien-Express wieder aufzunehmen!" #!String
+    Chat_UpgradePerch_Bridge: "{0} hat die Papageien gebeten, die Brücke in der Nähe des Zeltes zu reparieren!" #!String
+    Chat_UpgradePerch_Resort: "{0} hat die Papageien gebeten, das Inselbad wiederherzustellen!" #!String
+    Chat_UpgradePerch_Hut: "{0} hat einen Papagei mit einer Walnuss gefüttert!" #!String
+    UpgradePerch_Hut: "*Awk*... Walnuss! *Awk*... Gib her?" #!String
+    UpgradePerch_Resort: "*Awk*...{0} Walnüsse! *Awk*...  Badeort bauen!" #!String
+    UpgradePerch_House: "*Awk*...{0} Walnüsse! *Awk*... Schlafhütte reparieren!" #!String
+    UpgradePerch_House_Mailbox: "*Awk*...{0} Walnüsse! *Awk*... Post ausliefern!" #!String
+    UpgradePerch_VolcanoShortcutOut: "*Awk*...{0} Walnüsse! *Awk*... Abkürzung zum Ausgang!" #!String
+    UpgradePerch_VolcanoBridge: "*Awk*...{0} Walnüsse! *Awk*... Brücke bauen!" #!String
+    UpgradePerch_Turtle: "*Awk*...{0} Walnüsse! *Awk*... Schildkröte aufwecken!" #!String
+    UpgradePerch_ParrotPlatforms: "*Awk*... {0} Walnüsse! *Awk*... Papageien-Express!" #!String
+    UpgradePerch_Bridge: "*Awk*... {0} Walnüsse! *Awk*...Brücke reparieren!" #!String
+    ItemHover_DiamondForge_Singular: "+{0} Zufalls-Schmieden" #!String
+    ItemHover_DiamondForge_Plural: "+{0} Zufalls-Schmieden" #!String
+    UpgradePerch_Trader: "*Awk*... {0} Walnüsse! *Awk*... Handelshütte bauen!" #!String
+    UpgradePerch_Obelisk: "*Awk*... {0} Walnüsse! *Awk*...Teleport-Turm bauen!" #!String
+    Chat_UpgradePerch_Trader: "{0} hat die Papageien gebeten, eine Insel-Handelshütte zu bauen!" #!String
+    Chat_UpgradePerch_Obelisk: "{0} hat die Papageien gebeten, einen 'Hof-Obelisken' zu bauen!" #!String
+    Chat_FieldOfficeCompleteSet: "{0} hat ein Stück in der Außenstelle der Insel fertig gestellt!" #!String
+    Chat_PassedOut_VolcanoDungeon: "{0} schläft heute Nacht im Vulkan..." #!String
+    Chat_PassedOut_Hospital: "{0} verbringt die Nacht im Krankenhaus." #!String
+    Chat_PassedOut_Saloon: "{0} schlief in der Kneipe ein." #!String
+    Chat_PassedOut_Tent: "{0} schlief in Linus' Zelt ein." #!String
+    Chat_PassedOut_Sewer: "{0} nickte in der Kanalisation ein." #!String
+    Chat_StockList: "Pierre verkauft jetzt Saatgut aus allen Jahreszeiten." #!String
+    Chat_FinishedSurvey: "{0} nahm eine genaue Bestandsaufnahme des Insellebens vor." #!String
+    Chat_HardModeMinesActivated: "{0} hat ein altes magisches Siegel des Schutzes in den Minen entfernt. Heute Nacht werden mächtige Monster aus der Tiefe aufsteigen..." #!String
+    Chat_HardModeMinesDeactivated: "{0} hat ein altes magisches Schutzsiegel in den Minen wiederhergestellt. Morgen werden die Minen wieder normal funktionieren..." #!String
+    ParrotPlatform_Volcano: "Vulkan" #!String
+    ParrotPlatform_Archaeology: "Ausgrabungsstätte" #!String
+    ParrotPlatform_Forest: "Dschungel" #!String
+    ParrotPlatform_Farm: "Hof" #!String
+    ParrotPlatform_Docks: "Hafen" #!String
+    Item_CantBeUsedHere: "Dieser Gegenstand kann hier nicht verwendet werden." #!String
+    Item_Tooltip_GalaxyForged: "Seele" #!String
+    Chat_InfinityWeapon: "{0} eine {1} geschmiedet." #!String
+    Chat_Lupini: "{0} einen Original-Lupini gekauft." #!String
+    FruitTree_PlacementWarning: "{0} wird hier nicht wachsen können." #!String
+    Chat_Eternal1: "Du spürst es in deinem Herzen: irgendwo, irgendwie... Opa strahlt vor Stolz." #!String
+    Chat_Eternal2: "Das Vermächtnis des {0} Hof ist ewig." #!String
+    Chat_Eternal3: "In der Ferne war ein rumpelndes Geräusch zu hören..." #!String
+    NameChange_EasterEgg1: "ConcernedApe: Was ist das für ein Name? Scheint verdächtig..." #!String
+    NameChange_EasterEgg2: "Herr Qi: Leicht {0}, was? Ich bin enttäuscht. Ich dachte, du wolltest dieses Spiel fair und ehrlich gewinnen?" #!String
+    NameChange_EasterEgg3: "*Großvater schüttelt den Kopf.* 'Ich habe diese Farm auf altmodische Weise gebaut, nicht mit unbegrenzten {0}...'" #!String
+    NameChange_EasterEgg4: "ConcernedApe ist wütend, dass du betrügst..." #!String
+    NameChange_EasterEgg5: "ConcernedApe: Ich bin eigentlich nicht böse... viel Spaß." #!String
+    NameChange_EasterEgg6: "Ich rufe alle Wagen! Ich rufe alle Wagen! Ein {0} {1} Dieb läuft frei herum!" #!String
+    PT_Title: "Perfektions-Tracker" #!String
+    PT_Shipped: "Erzeugnisse und Futtermittel versandt" #!String
+    PT_Obelisks: "Obelisken auf dem Hof" #!String
+    PT_GoldClock: "Goldene Uhr auf dem Hof" #!String
+    PT_MonsterSlayer: "Monstertöter-Held" #!String
+    PT_GreatFriends: "Großartige Freunde" #!String
+    PT_FarmerLevel: "Landwirt Level" #!String
+    PT_Stardrops: "Alle Sternenfall-Früchte gefunden" #!String
+    PT_Cooking: "Hergestellte Kochrezepte" #!String
+    PT_Crafting: "Hergestellte Rezepte" #!String
+    PT_Fish: "Fische gefangen" #!String
+    PT_GoldenWalnut: "Goldene Walnüsse gefunden" #!String
+    PT_Total: "Fortschritt" #!String
+    PT_Total_Value: "{0}%" #!String
+    PT_Total_ValueWithWaiver: "{0}% (¾1 Erlass)" #!String
+    PT_Total_ValueWithWaivers: "{0}% (¾{1} Erlass)" #!String
+    EndCredit_Neighbors: "Nachbarn" #!String
+    EndCredit_Animals: "Tiere" #!String
+    EndCredit_Fish: "Fische" #!String
+    EndCredit_Monsters: "Monster" #!String
+    EndCredit_ShadowPeople: "Schattenwesen" #!String
+    EndCredit_Slimes: "Schleime" #!String
+    EndCredit_Bats: "Fledermäuse" #!String
+    ParrotPlatform_Question: "Auf den Papageien Express aufsteigen?" #!String
+    NextPage: "Nächste Seite" #!String
+    PreviousPage: "Vorherige Seite" #!String
+    TextSignEntry: "Text Eingabe" #!String
+    Chat_RaceStarting: "Das nächste Rennen beginnt bald..." #!String
+    Chat_GuessRacer_1: "{0} denkt {1} wird das Rennen gewinnen..." #!String
+    Chat_GuessRacer_2: "{0} wird {1} an der Ziellinie sehen!" #!String
+    Chat_GuessRacer_3: "{0} hofft, dass {1} den ersten Platz holt!" #!String
+    Chat_GuessRacer_4: "{0} drückt {1} die Daumen!" #!String
+    Chat_GuessRacer_5: "{0} ist Team {1}!" #!String
+    Chat_GuessRacer_6: "{0} glaubt, dass {1} eine sichere Sache ist!" #!String
+    Chat_GuessRacer_7: "{0} feuert {1} an!" #!String
+    Chat_GuessRacer_8: "{0} setzt alles auf {1}!" #!String
+    Chat_GuessRacer_9: "{0} setzt voll auf {1}!" #!String
+    Chat_GuessRacer_10: "{0} ist sicher, dass {1} gewinnen wird!" #!String
+    Chat_RaceSabotage_1: "Es gibt ein Gerücht, dass das nächste Rennen manipuliert wird..." #!String
+    Chat_RaceSabotage_2: "Hinter Sandys Oase ertönte irres Gelächter..." #!String
+    Chat_RaceSabotage_3: "Meine Finger sind im Spiel..." #!String
+    Chat_RaceSabotage_4: "Die Rennstrecke sieht ein wenig rutschig aus..." #!String
+    Chat_RaceSabotage_5: "Die kleinen Rennfahrer scheinen vor dem nächsten Rennen nervös zu sein..." #!String
+    Chat_RaceWinners_Zero: "{0} hat das Rennen gewonnen!" #!String
+    Chat_RaceWinners_One: "{0} hat das Rennen gewonnen! Herzlichen Glückwunsch {1}!" #!String
+    Chat_RaceWinners_Two: "{0} hat das Rennen gewonnen! Herzlichen Glückwunsch {1} und {2}!" #!String
+    Chat_RaceWinners_Many: "{0} hat das Rennen gewonnen! Herzlichen Glückwunsch" #!String
+    Chat_RaceWinners_List: "{0}," #!String
+    Chat_RaceWinners_Final: "und {0}!" #!String
+    Chat_CalicoStatue_Activated: "Calico Statue: {0}" #!String
+    Tomorrow: "Morgen..." #!String
+    Chat_HardModeSkullCaveActivated: "{0} hat ein altes magisches Siegel des Schutzes in der Schädelhöhle entfernt. Heute Nacht werden mächtige Monster aus der Tiefe aufsteigen..." #!String
+    Chat_HardModeSkullCaveDeactivated: "{0} hat ein altes magisches Schutzsiegel in der Schädelhöhle wiederhergestellt. Morgen werden sie wieder normal funktionieren..." #!String
+    BirthdayOrder: "{1} {0}" #!String
+    Character_EyeColor.mobile: "Augen-\nfarbe" #!String
+    Character_HairColor.mobile: "Haar-\nfarbe" #!String
+    Character_PantsColor.mobile: "Hosen-\nfarbe" #!String
+    Character_ShirtColor.mobile: "T-Shirt\nFarbe" #!String
+    DisplayAdjustmentText: "Drücke nach oben/unten, um die Größe der Anzeige an deinen Bildschirm anzupassen." #!String
+    DisplayAdjustmentButton: "Bildschirmgröße anpassen" #!String
+    Split_Screen: "Geteilter Bildschirm" #!String
+    mobile_options_vertical_toolbar: "Vertikale Werkzeugleiste" #!String
+    mobile_options_menu_side_margin: "Menu anpassen (Handy mit Kerbe)" #!String
+    mobile_options_toolbar_padding: "Werkzeugleiste anpassen" #!String
+    mobile_button_craft: "Herstellen" #!String
+    shippingInstructionText: "Hier Gegenstände ablegen, die du verkaufen möchtest" #!String
+    tutorialWant: "Tutorial-Tipps aktivieren?" #!String
+    tutorial1: "Wählen wir als Erstes dein Aussehen und die Art deiner Farm. Wenn du mit Gestalten fertig bist, tippe auf den Button, um zu spielen." #!String
+    tutorial2: "Guten Morgen! Denk daran, ins Farmhaus zurückzukehren, um zu schlafen und dein Spiel zu speichern!" #!String
+    tutorial3: "Du hast ein Geschenk erhalten! Tippe auf das Paket, um es zu öffnen!" #!String
+    tutorial4: "Neue Aufgaben werden im Hofbuch angezeigt. Tippe auf eine Aufgabe, um sie dir näher anzusehen und nützliche Informationen zu erhalten!" #!String
+    tutorial5: "Tippe auf den Schließen-Button, wenn du mit dem Hofbuch fertig bist." #!String
+    tutorial6: "Sieht ein wenig chaotisch aus. Räumen wir ein wenig auf." #!String
+    tutorial7: "Tippe auf ein Unkraut, um es auszureißen." #!String
+    tutorial8: "Gut gemacht! Versuche, noch ein paar Unkräuter und Steine wegzuräumen!" #!String
+    tutorial9: "Mit dieser Hacke kannst du die Erde fürs Säen vorbereiten." #!String
+    tutorial10: "Versuche, ein schönes Beet für deine ersten Saaten anzulegen." #!String
+    tutorial11: "Gute Arbeit ... Zeit, ein paar Saaten dazuzugeben?" #!String
+    tutorial12: "Die sehen durstig aus - in der Werkzeugleiste ist eine Gießkanne." #!String
+    tutorial13: "Gut gemacht! Vergiss nicht, dein Saatgut jeden Tag zu gießen." #!String
+    tutorial14: "Sobald du mit Gießen fertig bist, kannst du Pelikan Stadt erkunden und deine neuen Nachbarn kennenlernen!" #!String
+    tutorial15: "Deine Gießkanne kannst du an einem Teich oder Fluss wieder auffüllen." #!String
+    tutorial16: "Berühren und halten, um zu deinem Finger zu laufen." #!String
+    tutorial17: "Halten und ziehen, um deinem Finger zu folgen." #!String
+    tutorial18: "Werfen wir einen Blick auf ein paar andere Spielfunktionen." #!String
+    tutorial19: "Im Inventar siehst du die Gegenstände, die du hältst. Ziehen, um sie neu anzuordnen oder ziehe sie in den Abfalleimer, um sie abzulegen." #!String
+    tutorial20: "Auf dieser Seite siehst du deine Fertigkeiten - du kannst sie verbessern, indem du Werkzeuge benutzt, auf Nahrungssuche oder Fischen gehst, oder durch Kämpfe." #!String
+    tutorial21: "Auf der Seite \"Soziales\" erfährst du etwas über deine Beziehungen zu den Leuten, denen du begegnest." #!String
+    tutorial22: "Hier stellst du neue Gegenstände aus den Dingen her, die du sammelst und anbaust. Im Laufe des Spiels wirst du immer neue Handwerksrezepte entdecken." #!String
+    tutorial23: "Ziehe deinen Finger über die Karte, um Pelican Town und seine Umgebung zu erkunden." #!String
+    tutorial24: "Auf der Seite \"Sammlung\" siehst du, was du verkauft, gefischt, abgebaut, gekocht oder entdeckt hast." #!String
+    tutorial25: "In Läden kannst du auf den Tresen vor dem Ladenbesitzer tippen, um Waren zu kaufen oder verkaufen." #!String
+    tutorial26: "Wir brauchen Saatgut zum Einpflanzen... hast du im Bauernhaus etwas übersehen?" #!String
+    confirmExit: "Wirklich verlassen und sämtliche Fortschritte seit Beginn des Spieltags aufgeben?" #!String
+    mobile_options_green_squares: "Leitfaden für grüne Felder" #!String
+    tutorial_auto_attack: "In den Spieleinstellungen kannst du zwischen automatischem und manuellem Angriffsmodus wählen." #!String
+    question_restore_backup: "Möchtst du weiterspielen, wo du zuletzt aufgehört hast?" #!String
+    mobile_options_bigger_numbers: "Größere Schrift für Zahlen" #!String
+    mobile_options_auto_save: "Auto-Speichern" #!String
+    save_backup: "Backup speichern" #!String
+    swap_saves: "Zum vorherigen Speicherstand" #!String
+    control_method_tap_to_move: "Tippen zum Bewegen & Auto-Angriff" #!String
+    control_method_attack_joystick: "Tippen zum Bewegen & Angriff-Joystick" #!String
+    control_method_invis_2: "Unsichtbarer Joystick & 2 Buttons" #!String
+    control_method_invis_1: "Unsichtbarer Joystick & 1 Button" #!String
+    control_method_joystick_buttons: "Tippen zum Bewegen & Joystick & Buttons" #!String
+    control_method_joystick_buttons_no_tap_to_move: "Joystick & Buttons" #!String
+    control_method_joystick_buttons_b: "Tippen zum Bewegen & (Joystick & Buttons) (Waffen)" #!String
+    control_method_joystick_buttons_c: "Tippen zum Bewegen & Joystick & (Buttons) (Waffen)" #!String
+    control_method_joystick: "Tippen zum Bewegen & Joystick" #!String
+    show_controls_toggle_button: "Button zum Ändern der Steuerung anzeigen" #!String
+    button_diameter: "Button Diameter" #!String
+    adjust_joypad_controls: "Joypad-Steuerung anpassen" #!String
+    invisible_button_width: "Breite unsichtbarer Button" #!String
+    Default: "Voreinstellungen" #!String
+    pinch_zoom: "Zweifinger-Zoom" #!String
+    store_demo: "Diese Version von Stardew Valley wurde speziell für Demonstrationszwecke erstellt." #!String
+    mobile_options_toolbar_slot_size: "Symbolleistengröße" #!String
+    mobile_options_date_time_size: "Datumsfeldgröße" #!String
+    select_building: "Wählen Sie ein Gebäude" #!String
+    android_storage_migration: "Stardew Valley muss für das Update 1.5 eine einmalige Kopie Ihrer Farmen an einem neuen Ort durchführen.\n\nWählen Sie im folgenden Bildschirm bitte den Ordner „StardewValley“ und tippen Sie auf „Diesen Ordner verwenden“." #!String
+    mobile_options_larger_font: "Größere Tooltip-Schriftart" #!String
+    Syncing_cloud_saves: "Synchronisierung von Cloud-Speicherdateien" #!String
+    Cancel: "Abbrechen" #!String
+

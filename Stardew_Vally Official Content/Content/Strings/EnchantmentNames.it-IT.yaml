@@ -1,0 +1,37 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Starburst: "Astrale" #!String
+    Artful: "Ingegnoso" #!String
+    Haymaker: "Raccogli-fieno" #!String
+    Bug Killer: "Ammazza-insetti" #!String
+    Vampiric: "Vampirico" #!String
+    Crusader: "Crociato" #!String
+    Powerful: "Potente" #!String
+    Efficient: "Efficiente" #!String
+    Swift: "Veloce" #!String
+    Expansive: "Estensibile" #!String
+    Bottomless: "Senza-fondo" #!String
+    Shaving: "Scorticante" #!String
+    Archaeologist: "Archeologo" #!String
+    Generous: "Generoso" #!String
+    Master: "Maestro" #!String
+    Auto-Hook: "Auto-aggancio" #!String
+    Preserving: "Anti-usura" #!String
+    Fisher: "Pescatore" #!String
+

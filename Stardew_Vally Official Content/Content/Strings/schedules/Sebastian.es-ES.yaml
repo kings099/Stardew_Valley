@@ -1,0 +1,28 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    summer_4.000: "Maldición... Casi se me olvida. Tengo que ir a ver al doctor Harvey hoy." #!String
+    Fri.000: "¿Debería dejar ganar a Sam al menos una vez? ... Nah.$h" #!String
+    marriage_Fri.001: "Soy tan hábil como antes... Sigue siendo igual de fácil ganar a Sam.$h" #!String
+    summer_4.001: "¿Qué haces aquí? ¡Podrías haberme visto sin ropa!$a" #!String
+    marriage_Mon.001: "Tendrías que haber visto la cara de mi madre cuando entré. Se merece ser feliz.$7" #!String
+    marriage_Fri.000: "Voy a salir con mis amigos esta noche. Volveré a casa más tarde." #!String
+    marriage_Mon.000: "Cuando estoy aquí me entran muchas ganas de fumar... Pero he decidido dejarlo." #!String
+    rain.000: "El océano se disfruta más en solitario... ¿No crees?" #!String
+    winter_16.000: "Me siento más relajado durante la noche... Puede que hasta compre alguna coseja." #!String
+

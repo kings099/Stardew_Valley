@@ -1,0 +1,28 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    marriage_Fri.001: "Hmm... He de admitir que MercaJoja tiene la mejor selección de congelados." #!String
+    marriage_Mon.001: "Me siento unido a este bosque... Muchos recuerdos..." #!String
+    marriage_Fri.000: "No te preocupes, solo es Joja-Cola." #!String
+    marriage_Fri.002: "Si no me pido un buen trago fresquito de vez en cuando, Gus tendrá que cerrar. Estoy cumpliendo con mi deber como ciudadano. Volveré a casa sobre las 22:00." #!String
+    marriage_Mon.000: "Ah, hola, @. ¿Ya me echas de menos?$6" #!String
+    winter_15.000: "Esta noche no voy a ir al Salón, por el bien de Jas..." #!String
+    marriage_Sun.000: "Huele mal aquí dentro." #!String
+    marriage_Sun.001: "Tengo un dilema... ¿debo escoger Joja Clásica o Joja Bluu? Creo que voy a estar aquí un rato..." #!String
+    marriage_Fri.003: "Solo una ronda más...$h" #!String
+

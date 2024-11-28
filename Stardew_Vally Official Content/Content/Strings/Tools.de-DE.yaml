@@ -1,0 +1,73 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Axe_Name: "Axt" #!String
+    Axe_Description: "Zum Holzhacken." #!String
+    Axe_Copper_Name: "Kupferaxt" #!String
+    Axe_Steel_Name: "Stahlaxt" #!String
+    Axe_Gold_Name: "Goldaxt" #!String
+    Axe_Iridium_Name: "Iridiumaxt" #!String
+    FishingRod_Description: "Am Wasser benutzen, um Fische zu fangen." #!String
+    FishingRod_Training_Name: "Übungsangel" #!String
+    FishingRod_Training_Description: "Es ist viel einfacher zu benutzen als andere Ruten, kann aber nur Grundfische fangen." #!String
+    FishingRod_Bamboo_Name: "Bambusstange" #!String
+    FishingRod_Fiberglass_Name: "Fiberglasangel" #!String
+    FishingRod_Iridium_Name: "Iridiumangel" #!String
+    FishingRod_AdvancedIridium_Name: "Fortgeschrittene Iridiumangel" #!String
+    FishingRod_AdvancedIridium_Description: "Wird im Wasser verwendet, um Fische zu fangen. Bis zu zwei Köder können auf einmal befestigt werden." #!String
+    Hoe_Name: "Hacke" #!String
+    Hoe_Description: "Grabe Erde um und bestelle den Boden." #!String
+    Hoe_Copper_Name: "Kupferhacke" #!String
+    Hoe_Steel_Name: "Stahlhacke" #!String
+    Hoe_Gold_Name: "Goldhacke" #!String
+    Hoe_Iridium_Name: "Iridiumhacke" #!String
+    Lantern_Name: "Laterne" #!String
+    Lantern_Description: "Erleuchtet dunkle Orte." #!String
+    MilkPail_Name: "Melkkübel" #!String
+    MilkPail_Description: "Sammle Milch von deinen Tieren." #!String
+    Pan_Description: "Benutze sie, um Erze aus Strömungen zu gewinnen." #!String
+    Pan_Copper_Name: "Kupferpfanne" #!String
+    Pan_Steel_Name: "Stahlpfanne" #!String
+    Pan_Steel_Description: "Dient zum Sammeln von Erzen aus Wasserläufen. Die Ausbeute ist größer und besser als bei einer Kupferpfanne. Außerdem besteht eine kleine Chance, dass sofort eine weitere Stelle zum Schwenken erscheint." #!String
+    Pan_Gold_Name: "Goldpfanne" #!String
+    Pan_Gold_Description: "Dient zum Sammeln von Erzen aus Wasserläufen. Die Ausbeute ist größer und besser als bei einer Stahlpfanne. Außerdem besteht eine kleine Chance, dass sofort eine weitere Stelle zum Schwenken erscheint." #!String
+    Pan_Iridium_Name: "Iridiumpfanne" #!String
+    Pan_Iridium_Description: "Dient zum Sammeln von Erzen aus Wasserläufen. Liefert die beste Ausbeute. Außerdem besteht eine Chance, dass sofort eine weitere Stelle zum Schwenken erscheint." #!String
+    Pickaxe_Name: "Spitzhacke" #!String
+    Pickaxe_Description: "Zum Zerbrechen von Steinen." #!String
+    Pickaxe_Copper_Name: "Kupferspitzhacke" #!String
+    Pickaxe_Steel_Name: "Stahlspitzhacke" #!String
+    Pickaxe_Gold_Name: "Goldspitzhacke" #!String
+    Pickaxe_Iridium_Name: "Iridiumspitzhacke" #!String
+    ReturnScepter_Name: "Zepter der Rückkehr" #!String
+    ReturnScepter_Description: "Der goldene Griff bebt mit unbändiger Macht. Halte dieses Zepter zum Himmel, um auf Wunsch nach Hause zurückzukehren." #!String
+    Shears_Name: "Schafschere" #!String
+    Shears_Description: "Benutze sie, um die Wolle von Schafen zu erhalten." #!String
+    TrashCan_Name: "Mülleimer" #!String
+    TrashCan_Description: "Wenn du einen Gegenstand entsorgst, erhältst du {0}% des Wertes zurück." #!String
+    TrashCan_Copper_Name: "Kupfermülleimer" #!String
+    TrashCan_Steel_Name: "Stahlmülleimer" #!String
+    TrashCan_Gold_Name: "Goldmülleimer" #!String
+    TrashCan_Iridium_Name: "Iridiummülleimer" #!String
+    WateringCan_Name: "Gießkanne" #!String
+    WateringCan_Description: "Zum Pflanzengießen. Kann bei jeder Wasserquelle wieder aufgefüllt werden." #!String
+    WateringCan_Copper_Name: "Kupfergießkanne" #!String
+    WateringCan_Steel_Name: "Stahlgießkanne" #!String
+    WateringCan_Gold_Name: "Goldgießkanne" #!String
+    WateringCan_Iridium_Name: "Iridiumgießkanne" #!String
+

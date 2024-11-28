@@ -1,0 +1,42 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Introduction: "Ei, você é muito bom em mineração, para um humano." #!String
+    AcceptBirthdayGift_Positive: "Oh! Eu ouvi falar sobre esta tradição... é um 'presente de aniversário', certo? Hmm, muito interessante..." #!String
+    AcceptBirthdayGift_Negative: "Oh! Eu ouvi falar sobre esta tradição... é um 'presente de aniversário', certo?#$b#Mas, faz parte da tradição me dar lixo?" #!String
+    GreenRain: "Eu não consigo ver a cor verde direito.#$b#Deve ser porque eu vivi debaixo da terra por tanto tempo." #!String
+    AcceptGift_(O)StardropTea: "*cheira*... isso é leite? *bebe*... hmm... muito bom." #!String
+    Mon: "Peguei todas essas coisas da superfície. Eu as pego do seu povo durante a noite.#$e#Hã? O que é isso de \"propriedade privada\"?" #!String
+    AcceptGift_Neutral_milk_item: "Ah, 'leite'... *bebe*... Que interessante. Você pode me explicar... de onde este suco vem?#$b#...!!! *cospe*" #!String
+    Tue: "Ah... bife de cenoura das cavernas, rosbife de cenoura das cavernas, sopa de cenoura das cavernas e arroz com cenoura das cavernas gratinadas...#$e#Um ramequin de cenoura das cavernas para ajudar a passar a noite.#$e#Quê?" #!String
+    firstVisit_IslandNorth: "Se você entrar no vulcão da Ilha Gengibre, talvez encontre outros como eu. Não se preocupe! Nós somos pacíficos com humanos." #!String
+    mineArea_121: "Pra falar a verdade, você é muito bom em mineração para um humano." #!String
+    fishCaught_158: "Oh, você pescou um Peixe-Pedra? Eu conheço bem eles. Às vezes mantemos alguns como mascotes." #!String
+    fishCaught_161: "Oh, você pescou um Chione? Eles são peixes muito energéticos, apesar do ambiente gelado em que vivem. Meu povo costuma evitar as áreas congeladas, ...frio demais!" #!String
+    fishCaught_162: "Oh, você pescou uma Enguia de Lava? Incrível! Pesca de Enguias de Lava é algo importante na minha comunidade. Elas são consideradas iguarias!" #!String
+    firstVisit_Caldera: "Você encontrou a lendária Forja Anã? Incrível... eu nunca cheguei a ver.#$e#O maquinário é tão antigo, que ninguém do meu povo sabe como funciona. Mas é definitivamente tecnologia dos anões." #!String
+    Wed: "Ei, quer comprar alguma coisa?" #!String
+    Wed_6: "Há muito tempo, meu povo conheceu os segredos da tecnologia avançada. As evidências arqueológicas provam isso.#$e#Mas de onde será que vim? E onde tudo isso foi parar? Acho que algumas perguntas nunca serão respondidas..." #!String
+    Thu_4: "Eu me sinto mais confortável no subsolo.#$e#Quanto mais fundo, melhor." #!String
+    Fri: "Você nunca viu um anão antes, não é?" #!String
+    Sat_8: "As minas podem ser um lugar traiçoeiro. Cuidado, colega." #!String
+    Sat: "As minas são perigosas. Por que você não compra algumas coisas na minha loja para garantir sua segurança?" #!String
+    Sun: "Um dia, você vai ter que me contar tudo sobre essa bebida que vocês chamam de \"leite\"." #!String
+    Thu: "Você não é um espião enviado pelo Povo das Sombras, é?#$e#Estou de olho em você." #!String
+    Fri_2: "A maioria dos humanos têm medo do desconhecido... é por isso que escondi a minha loja aqui.#$e#Suas habilidades de mineração provam que você é confiável." #!String
+

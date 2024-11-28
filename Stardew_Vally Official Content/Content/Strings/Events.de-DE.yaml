@@ -1,0 +1,46 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    BirthMessage_Adoption: "Letzte Nacht hat die Adoptionsagentur euch euer Kind gebracht. Es ist ein {0}!" #!String
+    BirthMessage_PlayerMother: "Letzte Nacht hast du euer Kind zur Welt gebracht. Es ist ein {0}!" #!String
+    BirthMessage_SpouseMother: "Letzte Nacht hat {1} euer Kind zur Welt gebracht. Es ist ein {0}!" #!String
+    BirthMessage_SpouseNaming_Male: "{0} benennt deinen Jungen." #!String
+    BirthMessage_SpouseNaming_Female: "{0} benennt dein Mädchen." #!String
+    BabyNamingTitle_Male: "Wie sollen wir ihn nennen?" #!String
+    BabyNamingTitle_Female: "Wie sollen wir sie nennen?" #!String
+    HaveBabyQuestion: "Sollen wir ein Kind haben, {0}?" #!String
+    HaveBabyQuestion_Adoption: "Sollen wir ein Kind adoptieren, {0}?" #!String
+    HaveBabyAnswer_Yes: "Ja" #!String
+    HaveBabyAnswer_No: "Nicht jetzt..." #!String
+    HavePlayerBabyQuestion: "Möchtest du ein Baby mit {0}?" #!String
+    HavePlayerBabyQuestion_Adoption: "Möchtest du mit {0} ein Baby adoptieren?" #!String
+    AnimalBirth: "Letzte Nacht hat {1} {0} ihren Nachwuchs zur Welt gebracht!" #!String
+    AnimalNamingTitle: "Gib dem Nachwuchs ({0}) einen Namen:" #!String
+    SoundInTheNight_UFO: "Ein merkwürdiges Geräusch hallte durch die Nacht..." #!String
+    SoundInTheNight_Meteorite: "Eine Explosion hallte durch die Nacht..." #!String
+    SoundInTheNight_Earthquake: "Letzte Nacht gab es ein Erdbeben." #!String
+    BeachNightMarket_NowOpen: "Der Nachtmarkt ist nun geöffnet." #!String
+    Maru_comet5: "Es freut mich mit dir in dieser lebhaften Welt zu leben!" #!String
+    Maru_comet4: "So leer, so allein..." #!String
+    Maru_comet3: "Hier für einen flüchtigen Moment auf seiner unendlichen Reise." #!String
+    Maru_comet2: "Ein seltenes Wunder des Kosmos" #!String
+    Maru_comet1: "Schön, oder?" #!String
+    ElliottBook_mystery: "Blauer Turm" #!String
+    ElliottBook_romance: "Station Camellia" #!String
+    ElliottBook_default: "Der Aufstieg und Fall des Planeten Yazzo" #!String
+

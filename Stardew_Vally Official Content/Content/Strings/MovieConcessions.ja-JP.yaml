@@ -1,0 +1,67 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    AppleSlices_Name: "リンゴのスライス" #!String
+    AppleSlices_Description: "シャリシャリとした歯ごたえの小さなスライス。" #!String
+    BlackLicorice_Name: "ブラック・リコリッシュ" #!String
+    BlackLicorice_Description: "グミの様な歯ごたえがあり、強く刺激のある味がする。" #!String
+    CappuccinoMousseCake_Name: "カプチーノムースケーキ" #!String
+    CappuccinoMousseCake_Description: "小さなチョコレートケーキの上にカプチーノムースがのったもの。" #!String
+    ChocolatePopcorn_Name: "チョコレートポップコーン" #!String
+    ChocolatePopcorn_Description: "普通のポップコーン…でもチョコレートがコーティングされている。" #!String
+    CottonCandy_Name: "わたあめ" #!String
+    CottonCandy_Description: "ピンクの砂糖を綿状にした大きくフワフワな菓子。" #!String
+    Fries_Name: "フライドポテト" #!String
+    Fries_Description: "細切りのポテトを油で揚げて、軽く塩をかけたもの。" #!String
+    HummusSnackPack_Name: "フムス・スナックパック" #!String
+    HummusSnackPack_Description: "歯ごたえがあるヘルシーなスナック。" #!String
+    IceCreamSandwich_Name: "アイスクリームサンド" #!String
+    IceCreamSandwich_Description: "2枚のチョコレートクッキーにバニラアイスクリームが挟まったアイスクリームサンド。" #!String
+    JasmineTea_Name: "ジャスミン茶" #!String
+    JasmineTea_Description: "緑茶にジャスミンの花の香りを吸着させたお茶。" #!String
+    Jawbreaker_Name: "ジョーブレイカー" #!String
+    Jawbreaker_Description: "大きく、かたいキャンディー。映画を1本見終えるくらい長く舐めていられる！" #!String
+    JojaCola_Name: "ジョージャ・コーラ" #!String
+    JojaCola_Description: "特大カップのジョージャの有名なソーダ。" #!String
+    JojaCorn_Name: "ジョージャコーン" #!String
+    JojaCorn_Description: "ジョージャ特許製品、大量の「バターソース」がかかったコーン食品。" #!String
+    KaleSmoothie_Name: "ケール・スムージー" #!String
+    KaleSmoothie_Description: "ビタミンと食物繊維が豊富。" #!String
+    Nachos_Name: "ナチョス" #!String
+    Nachos_Description: "焼きたてのトルティーヤ・チップスの上にとろけるスパイシーチーズがのっている料理。" #!String
+    PanzanellaSalad_Name: "パンツァネッラ・サラダ" #!String
+    PanzanellaSalad_Description: "パンとトマトを使った夏のサラダ。" #!String
+    PersonalPizza_Name: "一口ピザ" #!String
+    PersonalPizza_Description: "オヤツとして楽しめるサイズの小さなピザ。" #!String
+    Popcorn_Name: "ポップコーン" #!String
+    Popcorn_Description: "トウモロコシを炒って、軽く塩をかけ、バターをからませたもの。" #!String
+    RockCandy_Name: "ロックキャンディ" #!String
+    RockCandy_Description: "棒についた味付き氷砂糖。" #!String
+    SalmonBurger_Name: "鮭バーガー" #!String
+    SalmonBurger_Description: "軽くトーストされたごまパンと分厚い鮭でできたバーガー。" #!String
+    SaltedPeanuts_Name: "塩味ピーナッツ" #!String
+    SaltedPeanuts_Description: "定番の塩味。" #!String
+    SourSlimes_Name: "サワースライム" #!String
+    SourSlimes_Description: "様々な色の極小スライムグミ。とても強い酸味のあるパウダーがふりかかっている。" #!String
+    StarCookie_Name: "スタークッキー" #!String
+    StarCookie_Description: "レインボースプリンクルがかかった、星の形をしたショートブレッド・クッキー。" #!String
+    StardropSorbet_Name: "スタードロップ・シャーベット" #!String
+    StardropSorbet_Description: "スタードロップのエキスを一滴入れた極上のシャーベット。" #!String
+    TrufflePopcorn_Name: "トリュフポップコーン" #!String
+    TrufflePopcorn_Description: "トリュフ塩がふりかかった高級ポップコーン。" #!String
+

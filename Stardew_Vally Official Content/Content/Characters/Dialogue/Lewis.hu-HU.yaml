@@ -1,0 +1,90 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Introduction: "Nos, milyen volt az első éjszakád abban a régi kunyhóban?#$e#Nagyapád mindig panaszkodott az öreg, rozoga ágya miatt. De úgy hiszem, hogy a lelke legmélyén nagyon is szerette azt a házat." #!String
+    AcceptGift_(O)StardropTea: "Számtalan teát kóstoltam már az életem során, de egyik se volt olyan ritka és különleges, mint ez. Köszönöm!" #!String
+    AcceptBirthdayGift_Positive: "Áh, emlékeztél az öreg polgármester születésnapjára. Ez nagyon figyelmes tőled. És remek az ajándék is!$h" #!String
+    GreenRain: "Épp most beszéltem telefonon a Kormányzóval... Úgy tűnik ez az eső teljesen ártalmatlan. Csak a természet egy szokatlan jelensége.#$b#Ettől még pár városlakó pánikolni kezdett, ami sose jó dolog..." #!String
+    GreenRainFinished: "Nos, ez elég izgalmas esemény volt városkánk számára! Megkönnyebbültem, hogy mindenki jól van.$h#$e#Ha ez ismét megtörténne, akkor azt hiszem mindenki kissé nyugodtabb lesz. Végtére is ez nem a világvége!" #!String
+    GreenRain_2: "Azt hiszem minden évben számíthatunk erre a szokatlan esőre. Úgy gondolom mindenki kissé nyugodtabb, tudván, hogy ez a természet része." #!String
+    AcceptBirthdayGift_Negative: "Áh, emlékeztél az öreg polgármester születésnapjára... ez meg micsoda?$h#$b#Öhm... tudod, hogy mit szoktak mondani, 'a szándék a fontos.'" #!String
+    cropMatured_24: "Hé, tegnap este a szállítós ládádnál jártam, és észrevettem, hogy kinőtt az első paszternákod. Gratulálok!" #!String
+    cropMatured_254: "Azok a dinnyék jól mutatnak %farm farmon!$h#$b#Tudod, régebben az volt a nagyapád kedvenc termése." #!String
+    cropMatured_276: "Semmi sem fejezi ki jobban az 'őszt', mint egy tök, nem gondolod?" #!String
+    Resort: "Le vagyok nyűgözve, @. Tényleg feljavítottad a helyet!$h" #!String
+    married: "Gratulálok @! Ez hatalmas lépés neked és %spouse számára. Tényleg gyökeret eresztettél ebben a városban!" #!String
+    married_twice: "Ismét gratulálok neked, @!" #!String
+    divorced_once: "Már rendezve lettek a válási papírok. Sajnálom, hogy nem jól alakultak a dolgok..." #!String
+    divorced_twice: "Egy újabb válás? Gyerünk már, @... a jövőben lehetnél kicsit megfontoltabb, hogy mégis kihez mégy hozzá...$u" #!String
+    movieTheater: "Az a sok fiatal boldognak tűnik az új mozi láttán.#$e#Egy virágzó mozi jót tehet a helyi gazdaságnak. Csak remélni tudom, hogy semmi kifogásolnivaló nincs azokban a modern filmekben!" #!String
+    Resort_Leaving: "Mindenki a fedélzetre! Visszamegyünk a völgybe!" #!String
+    Resort_Shore: "Az ilyen üdülési lehetőségek valóban fellendíthetik a helyi gazdaságot!#$e#Jobb lesz, ha nem maradok túl sokat a napon, vagy különben kiszárad a bajuszom." #!String
+    Resort_Chair: "Hehe... nézd ezt a helyet! Nem tudom, hogy ezt hogyan csináltad, de az egész város erről a kis üdülőről beszél.$h" #!String
+    Resort_Bar: "Hehe... Gus igazán elemében van." #!String
+    pamHouseUpgrade: "@, hallottam, hogy mit tettél Pam és Penny érdekében... na *ez* az a közösségi támogatás, amit szeretek látni Pelikán városban!$h" #!String
+    pamHouseUpgradeAnonymous: "@, hallottad? Valaki fizetett Robinnak, hogy építsen Pamnek és Pennynek egy házat! Habár Robin nem hajlandó elmondani nekem, hogy ki volt az.#$e#De ez nem számít, mert szeretem látni az efféle közösségi támogatást Pelikán városban!$h" #!String
+    willyCrabs: "*szimat*... *szimat*... érzed ezt? Egész nap apró, friss rákokra utaló jeleket fogok...$u" #!String
+    cc_Begin: "*szimat*... *szimat*... Áh, úgy hiszem eltöltöttél némi időt a régi Közösségi központban. Jó tudni, hogy valaki gondját viseli annak a helynek." #!String
+    cc_Complete: "Soha nem éreztem ilyen elsöprő büszkeséget a közösségünk iránt. Nagy szolgálatot tettél Pelikán városnak, @!$h" #!String
+    cc_Bridge: "Valahogy megjavult a kőfejtőhöz vezető régi híd.#$b#Teljesen ledöbbentem... Egy egész csapat kellhetett ahhoz, hogy az meg legyen javítva!#$b#Mégis ki tehette ezt?" #!String
+    cc_Bus: "@, hallottad? Úgy tűnik, hogy a régi városi busz ismét működőképes lett az este alatt!$h#$b#Az a régi vas már évtizedek óta ott szunnyadt... Ez igazán nagy rejtély." #!String
+    joja_Begin: "Szóval, a régi Közösségi központnak lőttek... Azt hiszem változnak az idők, és a jó dolgok jönnek-mennek... És mégis úgy érzem, hogy elvesztettünk valamit.$s#$e#Csak remélni tudom, hogy ez nem ront a polgármesteri karrieremen.$s" #!String
+    wonGrange: "Gratulálok, hogy megnyerted a kirakatos versenyt!#$e#Hehe... Ha köztünk maradhat, szerintem Pierrenek járna egy tál szerény puding!$h" #!String
+    Mon: "Jó évszak ez ahhoz, hogy kertészkedéssel foglalkozzunk, még akkor is, ha nem vagyunk gazdák.#$e# A völgy a legszebb tavaszi virágairól ismert!$h" #!String
+    Tue: "Csak rakj bele bármit a házad melletti szállítmányos ládába, hogy eladd azt.#$e#Engem nagyon érdekel, hogy mégis miféle dolgokat fogsz majd belerakni." #!String
+    Saloon_Entry: "Szia Gus!" #!String
+    Tue2: "Minden évszak kezdetekor el kell távolítanod az előző évszak elhalt terméseit. Ezt kaszával a legkönnyebb megtenni." #!String
+    spring_3: "Ültettél már tavaszi terméseket? Tudod, egy évszak sem tart örökké." #!String
+    Town_57_40: "#$c .3#Korán bejöttél a városba, mi? Már végeztél is a farmos teendőiddel?#$e#Jó reggelt! Csak kertészkedem, jó szokásomhoz híven.$h#$c .5#Hmm... ezek levéltetvek?$s#$e#Hmm... remélem ezek nem pajzstetvek...$s" #!String
+    Wed: "Hmm... adóbegyűjtés... *morog* ...tavaszi ünnepek költségvetése... *morog*...$u#$e#Igen?" #!String
+    spring_10: "Áh... Nincs is jobb így reggel egy csésze jó erős teánál!" #!String
+    Thu: "Esténként elég nagy nyüzsgés szokott lenni a szalonban. Néha még pénzt is bedobunk a zenegépbe *kacag*$h#$e#Én szeretek benézni hetente egyszer-kétszer, hogy tudjam mi újság van." #!String
+    Saloon: "Jó estét! Jó látni, hogy szocializálódsz a városiakkal.#$b#Jó néha benézni, hogy tudd mi újság van.$h" #!String
+    Saloon4: "Jó estét, @! Örülök, hogy a szalonban láthatlak. Jó, ha néhanapján te is pihensz egy kicsit.$h#$b#Nagyapád mindig túlhajszolta magát... Ma este egy extra sört fogok inni az ő tiszteletére." #!String
+    Fri: "Remélem, hogy minden jól megy %farm farmon. Nem szeretném, ha minden kiszáradna." #!String
+    Sat: "Úgy tűnik hétvégente mindenki sokkalta vidámabb, nem gondolod?#$e#Habár én a hét minden napján dolgozom." #!String
+    Sun: "Már több, mint húsz éve vagyok Pelikán város polgármestere!#$e#Soha senki nem jelölteti magát, mikor választás van. Szeretném ezt úgy venni, hogy jól végzem a munkámat.#$e#Szeretek polgármester lenni." #!String
+    event_secret1: "Köszönöm @. Ezt nem felejtem el." #!String
+    event_secret2: "*zokog* ... El se hiszem, hogy ilyet tennél...$s#$b#Szörnyű vagy.$s" #!String
+    summer_Mon: "A kertészkedés a hobbim, szóval örülök, hogy ilyen jó az idő." #!String
+    summer_Town_57_40: "#$c .3#Áh, csodálatosan nőnek a virágaim!$h#$c .3#Jó reggelt! Érzed a harmat liliomok üde illatát?#$e#Korai az idő, de a levegő már elég meleg. A nyár jó az ilyen öreg fickóknak, mint amilyen én vagyok, hehe." #!String
+    summer_Tue: "Hogy lettem polgármester? Ennek hosszú története van.#$e#Mindketten túl elfoglaltak vagyunk ahhoz, hogy történeteket mesélgessünk." #!String
+    summer_Wed: "A holdfény medúzák hamarosan ideérnek. Ez az egyik kedvenc dolgom a völgyben." #!String
+    summer_Thu: "Esténként elég nagy nyüzsgés szokott lenni a szalonban.#$e#Én szeretek benézni hetente egyszer-kétszer, hogy tudjam mi újság van. És persze azért is, hogy megkóstoljam Gus szuper spagettijét." #!String
+    summer_Fri: "Hmm... Vajon kinek lehet ma a születésnapja? Jobb lesz, ha megnézem Pierre boltjánál a naptárt." #!String
+    summer_Sat: "Úgy tűnik hétvégente mindenki sokkalta vidámabb, nem gondolod?#$e#Habár én a hét minden napján dolgozom." #!String
+    summer_Sun: "Mondd csak, nem termesztesz véletlenül kék áfonyát a farmodon?#$e#Én nagyon szeretem a friss kék áfonyát.%revealtaste:Lewis:258" #!String
+    fall_Mon: "Egyes városiak óvakodnak az idegenektől. Előbb el kell nyerned a bizalmukat, mielőtt megnyílnának neked.#$e#Csak légy kitartó, és akkor megnyerheted őket.$h" #!String
+    fall_Tue: "Nagyjából az év ezen táján lett belőlem először polgármester, több, mint húsz évvel ezelőtt.#$e#Ettől nagyon öregnek érzem magam.$s" #!String
+    fall_Wed: "Ha van bármi javaslatod a várossal kapcsolatban, csak rakd be a javaslatos dobozomba.#$e#Ja, várjunk... Nekem nincs is javaslatos dobozom." #!String
+    fall_Wed2: "Minden csütörtökön hajdinás gofrit eszek és kávét iszok reggelire. Ez egyfajta hagyomány, amivel érdekessé kívánom tenni agglegényes életem.$h" #!String
+    fall_Town_57_40: "#$c .3#Hmmm... furcsa gombák kezdtek kinőni a széthasított fáim között. Vajon ezek mifélék lehetnek?#$c .3#Jó reggelt! Lassacskán bekerülünk a hidegebb hónapokba, szóval szépen nyugalmazom a kertemet.#$e#Áh, már ilyen korán a városban vagy? Tán végeztél a farmon lévő teendőiddel?" #!String
+    fall_Thu: "Esténként elég nagy nyüzsgés szokott lenni a szalonban.#$e#Én szeretek benézni hetente egyszer-kétszer, hogy tudjam mi újság van." #!String
+    fall_Fri: "Remélem, hogy minden jól megy neked a farmon." #!String
+    fall_12: "Vannak méhkaptáraid a farmodon?#$e#Ha virágok közelébe helyezed őket, akkor másfajta mézet kaphatsz." #!String
+    fall_19: "Néha meg tudod mondani, ha valami a föld alá van elrejtve. Csak tartsd nyitva a szemed." #!String
+    fall_Fri4: "Kipróbáltad már Gus 'titkos' spagetti szószát?$s#$b#...Az alapanyagok lehet, hogy titkosak, de a szaga az nem.#$b#Még találkozunk." #!String
+    fall_Sun: "Jól megy a sorod a farmon, @? Sok területen kell bizonyítanod, hogyha teljes értékű polgártárs akarsz lenni." #!String
+    winter_1: "Nos, megjött a tél! Ez azt jelenti, hogy a városiak a legtöbb idejüket bent töltik.#$e#Legalább tudod, hogy merre találod meg őket!$h" #!String
+    winter_Mon: "Hamarosan ismét véget ér egy év!#$e#Remélem, hogy termékeny éved volt!" #!String
+    winter_Tue: "Ki kell találnom egy tervet, hogy jövőre mivel fejleszthetnénk a városunkat!" #!String
+    winter_Wed: "A havazás ellenére is benézek hozzád minden este, hogy elvigyem a ládádból a dolgokat.#$e#Télen neked is szükséged van a pénzre!" #!String
+    winter_Fri: "Remélem, hogy minden jól megy neked a farmodon." #!String
+    winter_Fri6: "Sose nősültem meg. Nincs családom. Csak a polgármesterkedésért élek.$s#$e#Hogy megéri-e?$s#$e#...*sóhaj*...$s" #!String
+    winter_Sun: "Üdvözöllek, @! Hogy vagy ma?$h#$e#Ha találkoznál Marnieval, köszönj neki a nevemben." #!String
+

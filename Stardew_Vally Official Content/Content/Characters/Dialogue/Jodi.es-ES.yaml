@@ -1,0 +1,72 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Introduction: "¡Oh! No eres exactamente como imaginaba... ¡Pero no pasa nada! Soy Jodi.#$e#Este es un pueblo muy tranquilo, ¡por eso que alguien se mude aquí es tan emocionante! Tener por aquí a alguien con una granja puede cambiar mucho las cosas." #!String
+    AcceptGift_(O)StardropTea: "Ah... ¿Seguro que quieres regalar un ítem tan valioso? Bueno, ¡gracias!" #!String
+    Resort_Entering: "¡Qué maravilla!" #!String
+    Resort_Leaving: "Creo que prepararé marisco esta noche.$h" #!String
+    Resort: "¡La vista es impresionante! Azul profundo hasta donde alcanza la vista..." #!String
+    Resort_Bar: "A todos nos encanta cuando Gus aparece." #!String
+    dating_Sam_memory_oneday: "Escuché lo tuyo con Sam. ¡Con suerte, no te causará problemas!$h" #!String
+    married_Sam: "Estoy muy feliz por ti y Sam. ¡Creo que vosotros dos sois la pareja perfecta!#$e#Nunca pensé que diría esto... pero echaré de menos esos horribles ruidos de la guitarra de Sam...$s" #!String
+    GreenRain: "¿Estás bien? Nunca habíamos visto nada como esto antes...$s#$e#Ojalá mi marido estuviese aquí. Él sabría exactamente lo que hacer.$s" #!String
+    GreenRain_2: "Vincent se ha levantado temprano para jugar en la lluvia. ¡Solo espero que estén en lo cierto sobre que es completamente inofensiva!" #!String
+    eventSeen_94: "¡Gracias otra vez por haberme traído ese pescado! Fue uno de los mejores que he probado." #!String
+    eventSeen_3910975: "*susurro* ¿Escuchaste lo de Shane? Que horror... espero que este bien.$s" #!String
+    pamHouseUpgrade: "Guau... Escuché lo que hiciste por Pam... ¿Me pregunto que ha hecho para que te caiga tan bien?$s#$e#...Ojalá tuviera tanto dinero para gastarlo así...$s" #!String
+    pamHouseUpgradeAnonymous: "¿Viste la casa nueva de Pam? Guau...Ojalá tuviera tanto dinero... Me encantaría que me remodelaran la cocina, por lo menos...$s" #!String
+    eventSeen_101: "Pobre Clint... dicen que está coladito por Emily, pero escuché que ella solo le ve como un amigo..." #!String
+    eventSeen_58: "He estado haciendo clase de aerobic con las chicas...#$b#Recientemente, alguien nuevo se unió a la clase, ¡pero nos hizo jurar a todas que no revelaríamos su identidad!" #!String
+    eventSeen_3102768: "Penny es una dulzura de chica. Lleva siendo la profesora de Vincent un tiempo, él la quiere mucho." #!String
+    cc_Bus: "Dicen que el bus está reparado y funcionando. Estoy segura de que a Pam le alegra eso...#$b#Escuché que estuvo bebiendo más después de perder su trabajo... espero que esto la ayude a dejarlo." #!String
+    reject_864: "¿Qué es esto? Parece uno de los compañeros de guerra de Kent. ¿Quizás deberias enseñárselo?" #!String
+    Mon: "Mantener un hogar es duro... Pero alguien tiene que hacerlo.#$e#¿Sí?" #!String
+    Mon6: "Es agradable tener familia... Pero mentiría si dijera que nunca anhelo la libertad de la juventud...$s" #!String
+    2_1: "Kent, mi marido, es soldado y está fuera del país. Por eso no está aquí ahora.#$b#¡¡Sé que volverá sano y salvo cuando acabe el servicio!!#$e#¿Necesitas algo?" #!String
+    Tue: "El ejercicio es importante para mantenerse sano. Siempre intento dejar algo de tiempo para hacer deporte.#$e#Siendo madre, no me queda mucho tiempo para mí. Así que intento que cada minuto cuente." #!String
+    Wed4: "Ojalá pudiera pasar más tiempo fuera, ¡pero hay demasiado que hacer!#$e#He empezado a usar guantes de goma para mantener suaves las manos.#$e#Cuanto más mayor te haces, más tienes que trabajar para estar sano.$s#$e#¡Vale, adiós!" #!String
+    Wed: "¿Qué has dicho? ¿Son ya las %time? ¡Madre mía!#$e#¡Aún tengo miles de cosas que hacer!$s" #!String
+    Thu6: "¿Dónde se mete el tiempo? *suspiro*#$e#Recuerdo cuando Sam era un bebé en pañales. Era un niño monísimo.$s#$e#Pero no le digas que te lo he dicho.$h#$e#Supongo que te gusta hablar conmigo, ¿no?" #!String
+    Thu: "Así que trabajas en la granja, ¿no? Qué interesante.#$e#Nunca había conocido a un granjero.#$e#A lo mejor me puedes enseñar un día a cultivar verduras.$h" #!String
+    Fri: "$d Joja#Los alimentos de MercaJoja puede que no sean los más sanos para mi familia, pero con esos precios tan baratos sería una locura comprar en otro sitio.|Los alimentos de Pierre's son mucho más frescos y sanos que los que venden en MercaJoja. Aunque echo de menos las gangas de Joja." #!String
+    Sat: "Hola.#$e#¿Necesitas algo?" #!String
+    Sat4: "Me alegra mucho que intentes mejorar la vieja granja.#$e#Cuando lo tengas todo controlado, ¡será una gran aportación a la comunidad!$h#$e#Aunque va a ser mucho trabajo para ti.#$e#Adiós." #!String
+    Mon2: "$d kent#Yesterday visité el altar de Yoba para dar gracias por el regreso a salvo de mi esposo.|Ayer visité el altar de Yoba para pedir que mi marido regrese sano y salvo.#$e#Intento ser positiva, pero a veces me cuesta.$s" #!String
+    Sun: "#$c .5#Hoy voy a descansar de las tareas de la casa.$h#$e#Me voy a tomar un día libre.$h#$e#Si no paso nada de tiempo fuera, ¡me volveré loca!#$e#Además, quiero mantener las piernas tonificadas." #!String
+    Sun8: "Un día soñé que tenía libertad total, sin ninguna obligación más que conmigo misma...#$b#Entonces me desperté y vi que tenía un día lleno de tareas domésticas por delante...$s#$e#Pero no me arrepiento de tener una familia, @... ¡Sam y Vincent lo son todo para mi!" #!String
+    summer_Mon: "El verano es agradable, pero siempre supone más trabajo.#$e#¡Tengo que mantener el jardín en condiciones además de la casa!" #!String
+    summer_Tue: "Hola.#$e#¿Necesitas algo? Estoy un pelín ocupada." #!String
+    summer_Tue_inlaw_Sam: "¿Cómo está mi pequeño Sammy en la vieja granja?$h" #!String
+    summer_Thu: "Las tareas del hogar son frustrantes porque nunca se acaban.#$e#Un día después de barrer el suelo, vuelve a estar sucio." #!String
+    summer_Sun: "¿Qué podría hacer hoy para cenar?#$e#*Sigh...*" #!String
+    fall_Thu: "A lo mejor he malcriado algo a mis chicos. Nunca han tenido que hacer las tareas de casa.#$e#Supongo que quiero que disfruten de la infancia ahora que pueden. Aunque Sam ya es todo un hombre.#$b#Espero que no se acostumbre a ser vago. No puede ser.$s#$e#Ser madre no es fácil." #!String
+    fall_Thu_inlaw_Sam: "¿Está Sam solamente holgazaneando por la granja, o está contribuyendo en algo?" #!String
+    fall_Sun: "Caroline y yo somos buenas amigas. Se lo cuento todo." #!String
+    fall_Sun2: "Cuando tengas hijos, tendrás que dejar atrás tu antiguo estilo de vida.#$e#Puede que no sea del todo cierto... Pero es lo que pasará si no tienes cuidado." #!String
+    winter_Mon: "De niña me encantaba jugar con la nieve. Lo genial de ser madre es que puedo volver a disfrutarlo.$h" #!String
+    winter_Tue: "Hola. ¿No te cansas de que te pregunten por la granja todo el rato?#$e#A mí me cansaría." #!String
+    winter_Tue6: "*Sigh...* A veces sueño con una vida por mi cuenta... Sin una familia de la que cuidar. ¿Eso me convierte en alguien horrible?$s#$e#No se lo digas a nadie.$4" #!String
+    winter_Wed2: "¿Que qué hago para divertirme? Hmm... Buena pregunta.#$e#Me gusta dormir.$s" #!String
+    winter_Wed4_2: "Kent lleva ya un tiempo en casa, pero parece incómodo.$s" #!String
+    winter_Thu: "Sam hace mucho ruido con su música. Espero que no moleste a los vecinos." #!String
+    winter_Thu_inlaw_Sam: "¿Qué tal le va a Sam? Tengo que admitir que hay menos limpieza y comida que hacer desde que se fue..." #!String
+    winter_Thu8: "Nos casamos demasiado pronto. Como Kent era soldado... Apenas disfruté de la juventud y la libertad, y ahora es demasiado tarde para volver atrás.$s#$e#No cometas el mismo error.$4" #!String
+    winter_Fri: "Estaría bien tener vacaciones de vez en cuando...$s" #!String
+    winter_Sun: "Si fuera rica, lo primero que haría sería contratar a una sirvienta y a un chef.#$e#Madre mía, ¡sería fantástico!$h" #!String
+    fall_Mon6: "Debería ser agradecida con lo que tengo más a menudo. Tenemos una buena vida aquí. Alguna gente ni siquiera tiene para comer.$s" #!String
+

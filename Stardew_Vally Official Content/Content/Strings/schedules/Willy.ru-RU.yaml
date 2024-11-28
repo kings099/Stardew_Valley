@@ -1,0 +1,29 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Fri.000: "Очень пить охота, я же весь день с рыбой соленой возился." #!String
+    spring_9.001: "А, крючок в палец впился... Доктор сейчас его вырежет." #!String
+    winter_17.000: "Что может быть лучше, чем опрокинуть кружку горячего, когда напрочь замерз..." #!String
+    spring_9.002: "Ай-яй! Док, это было больно!$s" #!String
+    spring_9.000: "Мне сегодня нужно к врачу, так что если хочешь что-то купить, то поторопись." #!String
+    spring_9.003: "Мне нужно выпить чего-нибудь для разогреву перед холодной ночью в океане.$h" #!String
+    Sat.000: "Ах... Нет ничего лучше, чем расслабиться с холодной выпивкой после рыбалки.$h" #!String
+    winter_15.000: "Из-за этого ночного рынка и не уснешь... Но это ничего. Дело житейское." #!String
+    winter.000: "Мне нужно выпить чего-нибудь для разогреву перед холодной ночью в океане.$h" #!String
+    winter_16.000: "Ты как, на подводной лодке-то ${бывал^бывала}$? Капитан — мой старый друг." #!String
+

@@ -1,0 +1,25 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    23.000: "Hmmpph... Oggi mia moglie mi costringe ad andare alla clinica." #!String
+    23.001: "*brontola*... Dottori buoni a nulla... *brontola*" #!String
+    winter_17.000: "Sono qui solo per il caffè gratis." #!String
+    Sun.000: "Non sono mai stato religioso, ma ehi... Sono vecchio." #!String
+    23.002: "Insomma, Doc, quanto mi rimane?" #!String
+    Sun.001: "Hehehe... Non sono andato in chiesa per venire qui! Spero che Yoba non si arrabbi troppo con me.$h" #!String
+

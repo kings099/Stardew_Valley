@@ -1,0 +1,39 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    RandomNegativeItemNoun: "lixo#porcaria#droga#cocô" #!String
+    RandomPositiveAdjective_Child: "legal#agradável#gentil#interessante#chique#especial#excelente" #!String
+    RandomPositiveAdjective_AdultMale: "interessante#divertido#dez#legal#ótimo#maravilhoso" #!String
+    RandomPositiveAdjective_AdultFemale: "maravilhosa#sensacional#tocante#encantadora#incrível#amável#de tirar o fôlego#linda" #!String
+    RandomPositiveAdjective_PlaceOrEvent: "maravilhosa#sensacional#tocante#encantadora#incrível#amável#de tirar o fôlego#linda" #!String
+    RandomDeliciousAdjective: "delicioso#gostoso#maravilhoso#satisfatório#perfeito#apetitoso#saboroso#delicioso" #!String
+    RandomDeliciousAdjective_Child: "gostoso" #!String
+    RandomNegativeFoodAdjective_Child: "nojento" #!String
+    RandomNegativeFoodAdjective_Polite: "... interessante#... incomum#... diferente#... pouco convencional" #!String
+    RandomNegativeFoodAdjective: "horrível#asqueroso#nojento#repugnante#hediondo#atroz#terrível#repulsivo#nauseante#péssimo#horrendo#podre" #!String
+    RandomSlightlyPositiveFoodAdjective: "decente#bom#comestível" #!String
+    ChildTerm_Male: "menino" #!String
+    ChildTerm_Female: "menina" #!String
+    Pronoun_Male: "ele" #!String
+    Pronoun_Female: "ela" #!String
+    QuestionDialogue_Yes: "Sim" #!String
+    QuestionDialogue_No: "Não" #!String
+    GenericPlayerTerm: "fazendeiroobj" #!String
+    Possessive_Pronoun_Male: "dele" #!String
+    Possessive_Pronoun_Female: "dela" #!String
+

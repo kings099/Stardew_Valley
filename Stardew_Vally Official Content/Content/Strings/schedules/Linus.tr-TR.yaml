@@ -1,0 +1,21 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    winter_15.000: "Bu insanlar da gezgin, aynı benim gibi... Bağlantılı olduğumuzu hissediyorum. Ancak, burada kalıp dinleyip izlemek bana yetiyor." #!String
+    winter.000: "Benim gibi biri bile arada bir içeriyi ısıtmalı." #!String
+

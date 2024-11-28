@@ -1,0 +1,68 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    Introduction: "¡Oh, hola! ¡Te damos la bienvenida a nuestra comunidad, cielo!#$b#Me puedes llamar «abuelita» si quieres.$h" #!String
+    AcceptGift_(O)StardropTea: "Oh, ¿me das esto? Muchas gracias, cariño. ¡Es un regalo muy especial!" #!String
+    AcceptGift_(O)170: "Gracias, cariño. He estado buscando por todas partes mis gafas de leer...#$b#¡Vaya, vaya! Se han ensuciado..." #!String
+    GreenRain: "George, cariño... ¿es este el fin? Ha sido una buena vida, pero me gustaría ver a Alex encontrar su camino antes de partir...$s%noturn" #!String
+    GreenRainFinished: "Ay, cielo... Me alegro de que todo terminase bien. ¡Y mis flores parecen más sanas que nunca!" #!String
+    GreenRain_2: "Las flores parece que adoran esta lluvia..." #!String
+    AcceptGift_Positive_forage_item_beach: "Gracias, cariño. Esto me trae tan buenos recuerdos..." #!String
+    reject_867: "Oh, ¡seguro que a George le interesa!" #!String
+    cropMatured_591: "Los tulipanes de cosecha propia son un lindo regalo primaveral." #!String
+    cc_Complete: "Es maravilloso tener el viejo centro cívico de vuelta. Tenemos tantos recuerdos de los viejos tiempos... Es un lugar especial." #!String
+    married: "Estoy muy feliz por ti, cariño.$h#$e#Ver a los jóvenes enamorados es enternecedor para las abuelitas como yo." #!String
+    divorce: "La próxima vez que te cases, asegúrate que es la persona indicada...$s" #!String
+    reject_866: "Es una rosa muy bonita, joven. ¿Se la has enseñado a Emily? Me hace pensar en ella." #!String
+    pamHouseUpgrade: "Ay, cielo... ¡Has sido muy amable al darle a Pam una casa nueva y muy bonita!$h#$e#Me enternece ver a gente cuidando así de los demás..." #!String
+    pamHouseUpgradeAnonymous: "Llámame vieja majadera... pero creo que tengo una idea de quién pagó la casa nueva de Pam... *Guiño*" #!String
+    MovieInvitation: "¡Oh vaya! Eso muy amable de tu parte, cariño. Claro que sí... ¡Me encantaría ir a ver una película!$h#$b#Ve tú primero, nos vemos en el cine." #!String
+    Mon: "¡Oh, cielos! ¡Qué día tan hermoso!$u" #!String
+    Tue: "No hagas caso a mi marido, George. No es muy simpático con los desconocidos.#$e#Cuando os conozcáis mejor será más amable.#$e#¡Seguro que podéis llegar a ser grandes amigos algún día!$h#$e#Ya que te interesa tanto mi marido, te contaré un secreto. ¡Le encantan los puerros! En esta época los puedes encontrar en las montañas." #!String
+    Wed: "#$1 evelynGarden1#Ayer vi a una hermosa familia de mariposas tomar el sol en los jardines del pueblo.$k#$e#El bueno del alcalde me ha puesto a cargo de los jardines del pueblo.#$e#Llevo trabajando en los planteles durante semanas, ¡así que no me los pises!" #!String
+    Thu: "Hoy voy a hacer galletas. Me gusta hacerlas con forma de flor cuando es primavera.$h#$e#A lo mejor uno de estos días te doy mi receta." #!String
+    Fri: "George se pasa todo el día delante del dichoso televisor.#$e#Me gustaría que saliera más. Le iría bien un poco de aire fresco." #!String
+    Sat: "Antes me encantaba mirar las nubes, pero últimamente me cuesta verlas.#$e# Mis ojos ya no funcionan tan bien como antes.$s" #!String
+    Sun: "Es agradable estar tan cerca del océano. El sonido del mar me ayuda a dormirme antes.#$e#Cuando éramos niños, buscábamos conchas cuando bajaba la marea. Qué tiempos aquellos..." #!String
+    Tue6: "Qué amable por tu parte venir a visitarnos.#$e#Sin gente joven alrededor, envejeceríamos mucho más rápido.$h" #!String
+    Event_cookies1: "¡Gracias!$h" #!String
+    Event_cookies2: "¿Qué has dicho, cielo? Juraría que has dicho «disco de hockey». *suspiro* Mis oídos ya no son lo que eran.$s" #!String
+    summer_Mon: "Me siento con más energía con este clima tan maravilloso.$u" #!String
+    summer_Mon_inlaw_Alex: "¿Cómo está mi nieto? Imagino que está contento viviendo en la granja.#$e#Se merece ser feliz... Es un buen chico." #!String
+    summer_Tue: "George siempre refunfuña un poco menos en verano. El clima cálido le ablanda los huesos.#$e#A lo mejor tú no lo notas, pero yo sí. ¡Hace sesenta años que lo conozco!" #!String
+    summer_Wed: "El bueno del alcalde me ha puesto a cargo de los jardines del pueblo.#$e#Llevo trabajando en los planteles durante semanas, ¡así que no me los pises!" #!String
+    summer_Thu: "Hoy voy a hacer galletas. ¡Son delicias de coco con forma de palmeritas! Je, je.$h#$e#A lo mejor un día de estos te doy la receta." #!String
+    summer_Sat: "Ten cuidado, cielo. ¡Te podrías quemar con el sol!" #!String
+    summer_Sun: "Los guisantes dulces están en flor ahora mismo.#$e#Dejan una fragancia maravillosa, ¿no te parece?" #!String
+    summer_Thu4: "Parece que siempre tenemos más visitas cuando me pongo a hacer galletas.#$e#Mi madre me enseñó la receta." #!String
+    fall_Mon: "Cada año que pasa valoro más las estaciones. Para los jóvenes es fácil dejarlas pasar sin más." #!String
+    fall_Tue: "Últimamente añado pasas a las gachas de George... Pero no ha dicho ni una palabra. ¿Es que no se da cuenta de estos pequeños detalles?" #!String
+    fall_Wed: "El bueno del alcalde me ha puesto a cargo de los jardines del pueblo.#$e#Las flores otoñales son delicadas, ¡así que no me las pises! Sé que a los jóvenes os encanta." #!String
+    fall_Thu: "Hoy voy a hacer galletas. Tienen forma de calabazas diminutas.$h#$e#A lo mejor un día de estos te doy la receta." #!String
+    fall_Sat: "¿Te llevas bien con Alex?#$e#A veces me preocupa muchísimo." #!String
+    fall_Sat_inlaw_Alex: "Oh, hola, cielo. Para mí ya eres como ${un nieto más^una nieta}$.$h" #!String
+    fall_Sun: "Mi vista no es muy buena, ¡pero la nariz aún no me falla!#$e#Huele a hojas caídas y setas. Me recuerda a los bosques en los que jugaba de niña." #!String
+    winter_Mon: "Cuidado no te resbales en el hielo, cielo." #!String
+    winter_Tue: "¿No tienes frío? ¡Deberías llevar una chaqueta más gruesa, cielo!#$e#Este clima no es bueno para mis articulaciones...$s" #!String
+    winter_Wed: "Suelo cuidar de los jardines, pero están cubiertos de nieve.#$e#Aun así, me gusta echarles un vistazo de vez en cuando." #!String
+    winter_Thu: "Hoy estoy haciendo galletas. Tienen forma de estrellitas invernales.$h#$e#Quizás te diga mi receta un día de estos." #!String
+    winter_Sat: "Hemos vivido aquí durante más de 30 años.#$e#Hemos visto llegar e irse a muchos. A tu abuelo, por ejemplo. Que en paz descanse... *suspiro*" #!String
+    winter_Sat6: "Oh... cielo. Tienes los ojos de tu abuelo...$s#$e#Sí... Sí... Lo conocía muy bien." #!String
+    winter_Sun: "Deberías prepararte una sopita caliente para entrar en calor.#$e#¡Y no te olvides la chaqueta!" #!String
+    winter_Sat8: "@, ¿te había dicho que George y yo llevamos 30 años en esta casa?#$e#Espero que te quedes aquí bastante tiempo.$h" #!String
+

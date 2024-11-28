@@ -1,0 +1,25 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    winter_18.000: "Credo che a Jas in realtà piaccia andare dal dottore. Che ragazzina insolita." #!String
+    fall_18.000: "Ehm... Dottor Harvey? Questo è del tutto confidenziale, giusto?" #!String
+    Tue.000: "Stanotte dormirò bene.$h" #!String
+    winter_18.001: "Siamo qui per un appuntamento alle 1:30 del pomeriggio." #!String
+    winter_18.002: "Ehm... Dottor Harvey? Quando le fa le punture, possiamo avere due lecca-lecca?" #!String
+    winter_16.000: "Oohh... Fine seta viola. Non la trovi al JojaMart!" #!String
+

@@ -1,0 +1,23 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    winter_16.000: "¡Quiero subir a la barca!" #!String
+    spring_11.001: "*Glups*Mami, no me obligues.$s" #!String
+    spring_11.002: "¿Tendré una piruleta por ser tan valiente?" #!String
+    spring_11.000: "*Snif...* Me tienen que vacunar hoy... $s" #!String
+

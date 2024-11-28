@@ -1,0 +1,23 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    winter_16.002: "¿Qué tal suenan mis pulmones, doctor? A veces hacen algo de ruido cuando espiro." #!String
+    winter_15.000: "Mañana tengo cita en el médico... Puede que el espectáculo de la sirena me ayude a calmar los nervios. Espero que no se piensen que mi mirada es lujuriosa... Glups..." #!String
+    winter_16.001: "Voy a ver al médico por mis pulmones... Respirar tanto polvo de carbón no puede ser bueno." #!String
+    winter_16.000: "Hoy tengo cita con el médico, así que date prisa si tienes que comprar algo." #!String
+

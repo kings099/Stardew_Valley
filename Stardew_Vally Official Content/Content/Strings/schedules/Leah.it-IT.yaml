@@ -1,0 +1,23 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    spring_16.001: "Ho un aspetto sano, dottor Harvey?" #!String
+    marriage_Mon.000: "Ciao, @. Voglio solo godermi l'aria fresca per un po'. A casa iniziava a venirmi la claustrofobia." #!String
+    winter_15.000: "Hmmm... un Lupini autentico? Niente male..." #!String
+    spring_16.000: "Ciao. Sei qui per vedere il dottore?" #!String
+

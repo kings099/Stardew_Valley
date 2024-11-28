@@ -1,0 +1,28 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    fall_11.000: "У меня сегодня визит к дяде доктору... Отлично.$7" #!String
+    winter_17.000: "Если больше ничего не получится, стану капитаном подводной лодки. Было бы круто." #!String
+    marriage_Fri.001: "Прости, душечка. Я пытаюсь сосредоточиться.$7" #!String
+    marriage_Mon.001: "Винсенту, похоже, немного одиноко без меня. Я раньше с ним много играл." #!String
+    marriage_Fri.000: "Только не говори маме... На самом деле я здесь, чтобы поесть бесплатно.$h" #!String
+    fall_11.002: "Я только что от врача. Полностью здоров и полон сил, как я и думал.$h" #!String
+    marriage_Mon.000: "У мамы, кажется, все хорошо. Разве что немного перетрудилась." #!String
+    fall_11.001: "Я здоровый мальчик, док. Уже можно идти? Это так скучно." #!String
+    rain2.000: "Ах, нет ничего лучше ледяной Джоджа-колы в промозглый день, правда?#$e#Шучу. Хе-хе-хе.$h" #!String
+

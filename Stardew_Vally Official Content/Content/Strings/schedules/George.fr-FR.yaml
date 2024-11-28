@@ -1,0 +1,25 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    23.000: "Mmm... Ma femme m’oblige à aller à la clinique aujourd’hui." #!String
+    23.001: "*Marmonne*... Les médecins ne servent à rien... *Marmonne*" #!String
+    winter_17.000: "Je suis ici pour le café gratuit." #!String
+    Sun.000: "Je n’ai jamais été quelqu’un de religieux, mais bon... je vieillis." #!String
+    23.002: "Combien de temps me reste-t-il à vivre, docteur ?" #!String
+    Sun.001: "Hé, hé, hé... Je ne suis pas allé à l’église aujourd’hui pour pouvoir venir ici ! J’espère que Yoba n’est pas trop en colère contre moi.$h" #!String
+

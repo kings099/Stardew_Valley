@@ -1,0 +1,153 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    AbbysPlanchette_Name: "Abby írótáblája" #!String
+    AbbysPlanchette_Description: "Szép márványfából készült." #!String
+    AlexsBat_Name: "Alex ütője" #!String
+    AlexsBat_Description: "A közepe be van horpadva Alex híres nagy ütésétől." #!String
+    BoneSword_Name: "Csont kard" #!String
+    BoneSword_Description: "Egy nagyon könnyű élezett csont." #!String
+    BrokenTrident_Name: "Törött háromágú szigony" #!String
+    BrokenTrident_Description: "A tengerből származik, de még mindig éles." #!String
+    BurglarsShank_Name: "Tolvajok bökője" #!String
+    BurglarsShank_Description: "A gyorsak és csendesek fegyvere." #!String
+    CarvingKnife_Name: "Faragó kés" #!String
+    CarvingKnife_Description: "Egy kicsi, könnyű penge." #!String
+    Claymore_Name: "Klémór" #!String
+    Claymore_Description: "Nagyon nehéz." #!String
+    CrystalDagger_Name: "Kristály tőr" #!String
+    CrystalDagger_Description: "Pengéje tisztított kvarcból készült." #!String
+    Cutlass_Name: "Szablya" #!String
+    Cutlass_Description: "Egy szépen megmunkált penge." #!String
+    DarkSword_Name: "Sötét kard" #!String
+    DarkSword_Description: "Vámpíri energiától ragyog." #!String
+    DragontoothClub_Name: "Sárkányfog bot" #!String
+    DragontoothClub_Description: "Ezt a botot egy mágikus fogból készítették." #!String
+    DragontoothCutlass_Name: "Sárkányfog szablya" #!String
+    DragontoothCutlass_Description: "A pengéjét egy mágikus fogból készítették." #!String
+    DragontoothShiv_Name: "Sárkányfog bökő" #!String
+    DragontoothShiv_Description: "Ezt a pengét egy mágikus fogból készítették." #!String
+    DwarfDagger_Name: "Törpe tőr" #!String
+    DwarfDagger_Description: "Ősi, de a pengéje sose tompul." #!String
+    DwarfHammer_Name: "Törpe kalapács" #!String
+    DwarfHammer_Description: "Kis zúgó hangot ad ki." #!String
+    DwarfSword_Name: "Törpe kard" #!String
+    DwarfSword_Description: "Ősi, de a pengéje sose tompul." #!String
+    ElfBlade_Name: "Elf penge" #!String
+    ElfBlade_Description: "Csak egy ügyes kezű elf készíthette ezt." #!String
+    ElliottsPencil_Name: "Elliott ceruzája" #!String
+    ElliottsPencil_Description: "Elliott ezzel írta meg a könyvét. Éles!" #!String
+    Femur_Name: "Combcsont" #!String
+    Femur_Description: "Egy régi, nehéz csont, amit több századnyi kosz lep el." #!String
+    ForestSword_Name: "Erdei kard" #!String
+    ForestSword_Description: "Erdei varázslat teszi erőssé." #!String
+    GalaxyDagger_Name: "Galaxis tőr" #!String
+    GalaxyDagger_Description: "Ehhez foghatót még nem láthattál." #!String
+    GalaxyHammer_Name: "Galaxis kalapács" #!String
+    GalaxyHammer_Description: "Olyan ultrakönnyű anyagból készült, amihez foghatót még nem láthattál." #!String
+    GalaxySlingshot_Name: "Galaxis csúzli" #!String
+    GalaxySlingshot_Description: "Nagyon erősnek tűnik." #!String
+    GalaxySword_Name: "Galaxis kard" #!String
+    GalaxySword_Description: "Ehhez foghatót még nem láthattál." #!String
+    GoldenScythe_Name: "Arany kasza" #!String
+    GoldenScythe_Description: "Ez erősebb, mint egy normál kasza." #!String
+    HaleysIron_Name: "Haley vasalója" #!String
+    HaleysIron_Description: "Perzselően forró, és Haley hajának illatára emlékeztet." #!String
+    HarveysMallet_Name: "Harvey kalapácsa" #!String
+    HarveysMallet_Description: "Harvey klinikájáról idéz fel emlékeket." #!String
+    HolyBlade_Name: "Szent penge" #!String
+    HolyBlade_Description: "A használata reménnyel tölt fel." #!String
+    InfinityBlade_Name: "Végtelen penge" #!String
+    InfinityBlade_Description: "A Galaxis kard valódi alakja." #!String
+    InfinityDagger_Name: "Végtelen tőr" #!String
+    InfinityDagger_Description: "A Galaxis tőr valódi alakja." #!String
+    InfinityGavel_Name: "Végtelen kalapács" #!String
+    InfinityGavel_Description: "A Galaxis kalapács valódi alakja." #!String
+    InsectHead_Name: "Rovarfej" #!String
+    InsectHead_Description: "Nem túl kellemes használni." #!String
+    IridiumNeedle_Name: "Irídium tű" #!String
+    IridiumNeedle_Description: "A vége hihetetlenül éles, egészen atomi szinten." #!String
+    IridiumScythe_Name: "Irídium kasza" #!String
+    IridiumScythe_Description: "Segítségével bármilyen termést begyűjthetsz. Ezen kívül kiváló szénagyűjtő." #!String
+    IronDirk_Name: "Vas tőr" #!String
+    IronDirk_Description: "Egy átlagos tőr." #!String
+    IronEdge_Name: "Vas él" #!String
+    IronEdge_Description: "Egy nehéz pallos." #!String
+    Kudgel_Name: "Bunkósbot" #!String
+    Kudgel_Description: "A kegyetlenek jó társa." #!String
+    LavaKatana_Name: "Láva katana" #!String
+    LavaKatana_Description: "Egy erős penge, amit forró lávában készítettek." #!String
+    LeadRod_Name: "Ólomrúd" #!String
+    LeadRod_Description: "Hihetetlenül nehéz." #!String
+    LeahsWhittler_Name: "Leah faragója" #!String
+    LeahsWhittler_Description: "Leah kedvenc eszköze, amivel a fákat szokta alakítgatni." #!String
+    MarusWrench_Name: "Maru csavarkulcsa" #!String
+    MarusWrench_Description: "Egy nagy, fémes csavarkulcs. Maru-illata van." #!String
+    MasterSlingshot_Name: "Mester csúzli" #!String
+    MasterSlingshot_Description: "A lövéshez kövekre van szükség." #!String
+    Meowmere_Name: "Meowmere" #!String
+    Meowmere_Description: "Egy messzi földről származó szokatlan fegyver..." #!String
+    NeptunesGlaive_Name: "Neptun gléféje" #!String
+    NeptunesGlaive_Description: "Egy családi ereklye a Drágakő-tengeren túlról." #!String
+    ObsidianEdge_Name: "Obszidián él" #!String
+    ObsidianEdge_Description: "Hihetetlenül éles." #!String
+    OssifiedBlade_Name: "Megcsontosodott penge" #!String
+    OssifiedBlade_Description: "Egy hatalmas és éles csontból készült penge." #!String
+    PennysFryer_Name: "Penny sütője" #!String
+    PennysFryer_Description: "Penny kedvenc serpenyője. Valamilyen gumis cucc van a közepére ragadva." #!String
+    PiratesSword_Name: "Kalóz kard" #!String
+    PiratesSword_Description: "Úgy tűnik ez valaha egy kalózé volt." #!String
+    Rapier_Name: "Vívótőr" #!String
+    Rapier_Description: "Egy elegáns penge." #!String
+    RustySword_Name: "Rozsdás kard" #!String
+    RustySword_Description: "Egy rozsdás, régi, kopott kard." #!String
+    SamsOldGuitar_Name: "Sam régi gitárja" #!String
+    SamsOldGuitar_Description: "Látott már jobb napokat is." #!String
+    Scythe_Name: "Kasza" #!String
+    Scythe_Description: "A levágott fűből szénát készít, ha felépítettél egy silót." #!String
+    SebsLostMace_Name: "Seb elveszett ütője" #!String
+    SebsLostMace_Description: "Ez egyike Sebastian középkori replikájának." #!String
+    ShadowDagger_Name: "Árnyék tőr" #!String
+    ShadowDagger_Description: "Ha a füledhez emeled, akkor több ezer lelket hallasz üvölteni." #!String
+    SilverSaber_Name: "Ezüst kard" #!String
+    SilverSaber_Description: "Ezüsttel van befedve, hogy védjen a rozsda ellen." #!String
+    Slingshot_Name: "Csúzli" #!String
+    Slingshot_Description: "A lövéshez kövekre van szükség." #!String
+    SteelFalchion_Name: "Acél pallos" #!String
+    SteelFalchion_Description: "Könnyű és erős." #!String
+    SteelSmallsword_Name: "Kicsi acélkard" #!String
+    SteelSmallsword_Description: "Egy átlagos fém penge." #!String
+    TemperedBroadsword_Name: "Meggyúrt pallos" #!String
+    TemperedBroadsword_Description: "Úgy néz ki, mint ami bárminek ellenáll." #!String
+    TemplarsBlade_Name: "Templomos pengéje" #!String
+    TemplarsBlade_Description: "Valaha egy megbecsült lovaghoz tartozott." #!String
+    TheSlammer_Name: "A Csapó" #!String
+    TheSlammer_Description: "Egy extrém nehéz kalapács, ami elrepíti az ellenfeleket." #!String
+    WickedKris_Name: "Görcsös tőr" #!String
+    WickedKris_Description: "A pengéje irídium ötvözetből készült." #!String
+    WindSpire_Name: "Szél spirál" #!String
+    WindSpire_Description: "Egy kicsi és gyors penge." #!String
+    WoodClub_Name: "Fa bunkósbot" #!String
+    WoodClub_Description: "Egy elég kemény fadarab, ami durva módon lett ütővé formálva." #!String
+    WoodenBlade_Name: "Fa penge" #!String
+    WoodenBlade_Description: "Fából készült létére nem is olyan rossz." #!String
+    WoodMallet_Name: "Fakalapács" #!String
+    WoodMallet_Description: "Kemény fejével nagyokat lehet ütni. Ütőfegyverhez képest könnyű." #!String
+    YetiTooth_Name: "Jeti fog" #!String
+    YetiTooth_Description: "Jéghideg az érintése." #!String
+

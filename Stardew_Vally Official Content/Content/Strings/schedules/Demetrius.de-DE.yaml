@@ -1,0 +1,22 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    winter_16.000: "Ich kann dir die U-Boot-Tour wärmstens empfehlen. Tief unter dem Meer leben ein paar faszinierende Kreaturen." #!String
+    summer_25.000: "Die kältere Jahreszeit macht sich langsam bemerkbar, also lasse ich mich gegen Grippe impfen." #!String
+    summer_25.001: "Doktor Harvey, hast du die letzte \"Biologie und Medizin\" gelesen? Da steht ein Artikel drin, der dich sicher interessieren würde." #!String
+

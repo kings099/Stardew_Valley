@@ -1,0 +1,24 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<String,String>
+    winter_15.000: "Я просто люблю смотреть на фонари.#$b#Они напоминают мне о чем-то очень далеком...$s" #!String
+    winter.000: "Я пытаюсь прочитать все книги в библиотеке. На это может уйти много времени.#$b#Мне еще столько всего нужно узнать...$s" #!String
+    school: "Не могу сейчас разговаривать, @. Мне нужно сконцентрироваться..." #!String
+    dinner: "Ой, ты есть хочешь? А я уже все доел...$u" #!String
+    tent: "Дождь нам не помеха, но иногда хочется и просохнуть немного." #!String
+
