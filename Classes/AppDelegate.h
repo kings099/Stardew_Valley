@@ -1,4 +1,4 @@
-/****************************************************************************
+﻿/****************************************************************************
  Copyright (c) 2017-2018 Xiamen Yaji Software Co., Ltd.
  
  http://www.cocos2d-x.org
@@ -21,7 +21,7 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  THE SOFTWARE.
  ****************************************************************************/
-
+#pragma once
 #ifndef  _APP_DELEGATE_H_
 #define  _APP_DELEGATE_H_
 
@@ -35,9 +35,10 @@ Private inheritance here hides part of interface from Director.
 class  AppDelegate : private cocos2d::Application
 {
 public:
-    AppDelegate();
+    //析构函数
     virtual ~AppDelegate();
 
+    //初始化 OpenGL 上下文属性
     virtual void initGLContextAttrs();
 
     /**
@@ -45,18 +46,21 @@ public:
     @return true    Initialize success, app continue.
     @return false   Initialize failed, app terminate.
     */
+    // 当应用程序完成启动并准备进入主循环时调用此函数
     virtual bool applicationDidFinishLaunching();
 
     /**
     @brief  Called when the application moves to the background
     @param  the pointer of the application
     */
+    // 当应用程序进入后台时调用此函数
     virtual void applicationDidEnterBackground();
 
     /**
     @brief  Called when the application reenters the foreground
     @param  the pointer of the application
     */
+    // 当应用程序从后台返回到前台时调用此函数
     virtual void applicationWillEnterForeground();
 };
 

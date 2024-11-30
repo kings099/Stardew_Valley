@@ -1,4 +1,4 @@
-/****************************************************************************
+﻿/****************************************************************************
  Copyright (c) 2017-2018 Xiamen Yaji Software Co., Ltd.
  
  http://www.cocos2d-x.org
@@ -21,10 +21,13 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  THE SOFTWARE.
  ****************************************************************************/
+#define WIN32_LEAN_AND_MEAN          // 排除 Windows 头文件中不常用的部分
 
-#include "main.h"
+#include <windows.h>
+#include <tchar.h>
+#include "platform/CCStdC.h"
 #include "AppDelegate.h"
-#include "cocos2d.h"
+//#include "cocos2d.h"
 
 USING_NS_CC;
 
