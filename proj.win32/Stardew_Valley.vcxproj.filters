@@ -7,33 +7,57 @@
     <Filter Include="resource">
       <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src">
+    <Filter Include="Classes">
       <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\AppDelegate">
+      <UniqueIdentifier>{4016a26f-174c-4bb6-b72c-1b5e36225884}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Character">
+      <UniqueIdentifier>{c3d4714b-ccab-4d61-aa7f-302724796e2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Scene">
+      <UniqueIdentifier>{0262298d-970d-4281-ab4e-a9d7424447d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\HoverMouse">
+      <UniqueIdentifier>{1f078ca6-391f-4b5a-a555-3e6e8f894005}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>win32</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\AppDelegate.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\Classes\AppDelegate\AppDelegate.cpp">
+      <Filter>Classes\AppDelegate</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\Classes\Scene\HelloWorldScene.cpp">
+      <Filter>Classes\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HoverMouse\HoverMouse.cpp">
+      <Filter>Classes\HoverMouse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Character\Character.cpp">
+      <Filter>Classes\Character</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
       <Filter>win32</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\AppDelegate.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\HelloWorldScene.h">
-      <Filter>src</Filter>
-    </ClInclude>
     <ClInclude Include="Constant.h">
       <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate\AppDelegate.h">
+      <Filter>Classes\AppDelegate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\HelloWorldScene.h">
+      <Filter>Classes\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HoverMouse\HoverMouse.h">
+      <Filter>Classes\HoverMouse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Character\Character.h">
+      <Filter>Classes\Character</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

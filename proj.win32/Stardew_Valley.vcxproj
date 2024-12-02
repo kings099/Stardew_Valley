@@ -150,13 +150,17 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)\Resources\" /D /E /I /F /Y
     </PreLinkEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\Classes\AppDelegate.cpp" />
-    <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="..\Classes\AppDelegate\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\Character\Character.cpp" />
+    <ClCompile Include="..\Classes\HoverMouse\HoverMouse.cpp" />
+    <ClCompile Include="..\Classes\Scene\HelloWorldScene.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Classes\AppDelegate.h" />
-    <ClInclude Include="..\Classes\HelloWorldScene.h" />
+    <ClInclude Include="..\Classes\AppDelegate\AppDelegate.h" />
+    <ClInclude Include="..\Classes\Character\Character.h" />
+    <ClInclude Include="..\Classes\HoverMouse\HoverMouse.h" />
+    <ClInclude Include="..\Classes\Scene\HelloWorldScene.h" />
     <ClInclude Include="Constant.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>
