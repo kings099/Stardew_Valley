@@ -1,5 +1,5 @@
 #include "AppDelegate.h"
-#include "HelloWorldScene.h"
+#include "../Classes/Scene/HelloWorldScene.h"
 #include "proj.win32/Constant.h"
 
 // #define USE_AUDIO_ENGINE 1
@@ -70,7 +70,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     }
 
     //是否开启性能统计信息
-    director->setDisplayStats(true);
+    director->setDisplayStats(false);
 
     // 设置游戏的帧率，此处为60帧
     director->setAnimationInterval(1.0f / FRAME_RATE);
