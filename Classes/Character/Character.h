@@ -30,7 +30,7 @@ public:
     void playAnimation();
 
     // 更新角色位置
-    void Character::updatePosition(float deltaTime);
+    cocos2d::Vec2 Character::updatePosition(float deltaTime);
 
     // 更新键盘状态显示
     void updateKeyStatus();

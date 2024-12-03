@@ -22,6 +22,12 @@
     <Filter Include="Classes\HoverMouse">
       <UniqueIdentifier>{1f078ca6-391f-4b5a-a555-3e6e8f894005}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\Maps">
+      <UniqueIdentifier>{95356bf4-3cdb-4baf-86f4-c1ce5aaa57a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Control">
+      <UniqueIdentifier>{4a22b4ac-4e89-4d37-82b0-c916f8c7dcda}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -38,6 +44,12 @@
     </ClCompile>
     <ClCompile Include="..\Classes\Character\Character.cpp">
       <Filter>Classes\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Maps\FarmMap.cpp">
+      <Filter>Classes\Maps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Control\GameViewController.cpp">
+      <Filter>Classes\Control</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -58,6 +70,12 @@
     </ClInclude>
     <ClInclude Include="..\Classes\Character\Character.h">
       <Filter>Classes\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Maps\FarmMap.h">
+      <Filter>Classes\Maps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Control\GameViewController.h">
+      <Filter>Classes\Control</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

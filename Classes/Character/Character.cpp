@@ -59,7 +59,7 @@ bool Character::init(const std::string& filename) {
     _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
 
     // 每帧更新角色位置
-    this->schedule(CC_SCHEDULE_SELECTOR(Character::updatePosition), 1.0f / FRAME_RATE);
+    //this->schedule(CC_SCHEDULE_SELECTOR(Character::updatePosition), 1.0f / FRAME_RATE);
 
     return true;
 }
@@ -154,7 +154,7 @@ void Character::playAnimation() {
 }
 
 // 更新角色位置
-void Character::updatePosition(float deltaTime) {
+Vec2 Character::updatePosition(float deltaTime) {
     const float moveSpeed = MOVE_SPEED;
 
     Vec2 newPosition = character->getPosition();
@@ -207,4 +207,5 @@ void Character::updatePosition(float deltaTime) {
     character->setPosition(newPosition);
 
     updateKeyStatus();
+    return newPosition;
 }
