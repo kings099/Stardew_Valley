@@ -7,8 +7,8 @@
  * License:       MIT License
  ****************************************************************/
 
-#ifndef __CHARACTER_H__
-#define __CHARACTER_H__
+#ifndef __CHARACTERMOVE_H__
+#define __CHARACTERMOVE_H__
 
 #include "cocos2d.h"
 #include <unordered_map>
@@ -31,11 +31,11 @@ public:
     void playAnimation();
 
     // 更新角色位置
-    void updatePosition(float deltaTime);
+    cocos2d::Vec2 updatePosition(float deltaTime);
 
 private:
     cocos2d::Sprite* character;                         // 角色对象
-    cocos2d::Vector<cocos2d::SpriteFrame*> frames;               // 角色动画帧
+    cocos2d::Vector<cocos2d::SpriteFrame*> frames;      // 角色动画帧
     float width;                                        // 角色宽度
     float height;                                       // 角色高度
     float moveSpeed;                                    // 角色速度
