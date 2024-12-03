@@ -1,7 +1,12 @@
 #include "HelloWorldScene.h"
 #include "SimpleAudioEngine.h"
 #include "../Classes/Character/CharacterMove.h"
+<<<<<<< Updated upstream
 #include "../Classes/HoverCursor/HoverCursor.h"
+=======
+#include"Classes/Maps/FarmMap.h"
+#include "Classes/Control/GameViewController.h"
+>>>>>>> Stashed changes
 
 USING_NS_CC;
 

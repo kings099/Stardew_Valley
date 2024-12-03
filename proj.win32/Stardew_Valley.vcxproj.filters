@@ -33,11 +33,20 @@
     <ClCompile Include="..\Classes\Scene\HelloWorldScene.cpp">
       <Filter>Classes\Scene</Filter>
     </ClCompile>
+<<<<<<< Updated upstream
+=======
+    <ClCompile Include="..\Classes\HoverMouse\HoverMouse.cpp">
+      <Filter>Classes\HoverMouse</Filter>
+    </ClCompile>
+>>>>>>> Stashed changes
     <ClCompile Include="..\Classes\Character\CharacterMove.cpp">
       <Filter>Classes\Character</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\HoverCursor\HoverCursor.cpp">
       <Filter>Classes\HoverCursor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Character\Character.cpp">
+      <Filter>Classes\Character</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -53,11 +62,20 @@
     <ClInclude Include="..\Classes\Scene\HelloWorldScene.h">
       <Filter>Classes\Scene</Filter>
     </ClInclude>
+<<<<<<< Updated upstream
+=======
+    <ClInclude Include="..\Classes\HoverMouse\HoverMouse.h">
+      <Filter>Classes\HoverMouse</Filter>
+    </ClInclude>
+>>>>>>> Stashed changes
     <ClInclude Include="..\Classes\Character\CharacterMove.h">
       <Filter>Classes\Character</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\HoverCursor\HoverCursor.h">
       <Filter>Classes\HoverCursor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Character\Character.h">
+      <Filter>Classes\Character</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
