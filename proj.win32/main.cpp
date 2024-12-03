@@ -26,7 +26,7 @@
 #include <windows.h>
 #include <tchar.h>
 #include "platform/CCStdC.h"
-#include "AppDelegate.h"
+#include "../Classes/AppDelegate/AppDelegate.h"
 //#include "cocos2d.h"
 
 USING_NS_CC;

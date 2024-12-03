@@ -1,6 +1,7 @@
 #include "HelloWorldScene.h"
 #include "SimpleAudioEngine.h"
-#include "../Classes/Character/Character.h"
+#include "../Classes/Character/CharacterMove.h"
+#include "../Classes/HoverCursor/HoverCursor.h"
 
 USING_NS_CC;
 
@@ -53,7 +54,9 @@ bool HelloWorld::init()
         this->addChild(label, 1);
     }
 
-    auto character = Character::create("../Resources/Characters/Bear/BearDownAction1.png");
+ 
+
+    auto character = CharacterMove::create("../Resources/Characters/Bear/BearDownAction1.png");
     this->addChild(character);
     return true;
 }

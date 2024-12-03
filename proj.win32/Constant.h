@@ -23,6 +23,7 @@ constexpr float MOVE_RATE = FRAME_RATE;										// 移动帧率
 constexpr auto INVIAID_KEY = cocos2d::EventKeyboard::KeyCode::KEY_Q;		// 无效按键
 constexpr float ACTION_RATE = 5.0f;											// 动作间隔帧率
 
+constexpr int STAY = 0;														// 静止
 constexpr int UP = 1;														// 方向向上
 constexpr int DOWN = 2;														// 方向向下
 constexpr int LEFT = 3;														// 方向向左

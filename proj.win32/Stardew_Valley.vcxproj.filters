@@ -19,7 +19,7 @@
     <Filter Include="Classes\Scene">
       <UniqueIdentifier>{0262298d-970d-4281-ab4e-a9d7424447d7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\HoverMouse">
+    <Filter Include="Classes\HoverCursor">
       <UniqueIdentifier>{1f078ca6-391f-4b5a-a555-3e6e8f894005}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -33,11 +33,11 @@
     <ClCompile Include="..\Classes\Scene\HelloWorldScene.cpp">
       <Filter>Classes\Scene</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\HoverMouse\HoverMouse.cpp">
-      <Filter>Classes\HoverMouse</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Character\Character.cpp">
+    <ClCompile Include="..\Classes\Character\CharacterMove.cpp">
       <Filter>Classes\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HoverCursor\HoverCursor.cpp">
+      <Filter>Classes\HoverCursor</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -53,11 +53,11 @@
     <ClInclude Include="..\Classes\Scene\HelloWorldScene.h">
       <Filter>Classes\Scene</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\HoverMouse\HoverMouse.h">
-      <Filter>Classes\HoverMouse</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Character\Character.h">
+    <ClInclude Include="..\Classes\Character\CharacterMove.h">
       <Filter>Classes\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HoverCursor\HoverCursor.h">
+      <Filter>Classes\HoverCursor</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
