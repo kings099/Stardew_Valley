@@ -1,6 +1,7 @@
 #include "HelloWorldScene.h"
 #include "SimpleAudioEngine.h"
 #include "../Classes/Character/Character.h"
+#include"Classes/Maps/FarmMap.h"
 
 USING_NS_CC;
 
@@ -52,9 +53,18 @@ bool HelloWorld::init()
         label->setPosition(Vec2(origin.x + visibleSize.width / 2, origin.y + visibleSize.height - label->getContentSize().height));
         this->addChild(label, 1);
     }
-
+    //添加地图
+    auto farm_map = FarmMap::create("../Resources/Maps/Farm/farm1/Farm.tmx");
+    this->addChild(farm_map);
+    //添加角色
     auto character = Character::create("../Resources/Characters/Bear/BearDownAction1.png");
     this->addChild(character);
+
+    this->schedule([farm_map, character](float deltaTime) {
+        character->updatePosition(deltaTime);
+        }, "CharacterAndMapUpdate");
+
+
     return true;
 }
 
