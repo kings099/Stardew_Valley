@@ -48,8 +48,6 @@ bool FarmMap::init(const std::string& mapFile)
 
     // 添加地图到当前节点
     this->addChild(_tileMap, 0);
-
-
     //监听鼠标
     auto listener = EventListenerMouse::create();
     listener->onMouseDown = CC_CALLBACK_1(FarmMap::onMouseEvent, this);  // 监听鼠标点击事件

@@ -2,6 +2,7 @@
 #include "SimpleAudioEngine.h"
 #include "../Classes/Character/Character.h"
 #include"Classes/Maps/FarmMap.h"
+#include "Classes/Control/GameViewController.h"
 
 USING_NS_CC;
 
@@ -53,16 +54,24 @@ bool HelloWorld::init()
         label->setPosition(Vec2(origin.x + visibleSize.width / 2, origin.y + visibleSize.height - label->getContentSize().height));
         this->addChild(label, 1);
     }
-    //添加地图
-    auto farm_map = FarmMap::create("../Resources/Maps/Farm/farm1/Farm.tmx");
+    // 添加地图
+    auto farm_map = FarmMap::create("../Resources/Maps/Farm/farm2.tmx");
     this->addChild(farm_map);
-    //添加角色
+    farm_map->setPosition(cocos2d::Vec2(0, 0));  // 例如设置初始位置为(0, 0)
+    farm_map->setScale(2.5f);
+
+    // 添加角色
     auto character = Character::create("../Resources/Characters/Bear/BearDownAction1.png");
     this->addChild(character);
+    character->setScale(1.5f);
+    // 添加视角控制器
+    auto viewController = new GameViewController(character);
+    this->addChild(viewController);
 
-    this->schedule([farm_map, character](float deltaTime) {
-        character->updatePosition(deltaTime);
-        }, "CharacterAndMapUpdate");
+    this->schedule([viewController](float deltaTime) {
+        viewController->update(deltaTime);
+        }, "ViewControllerUpdate");
+
 
 
     return true;
