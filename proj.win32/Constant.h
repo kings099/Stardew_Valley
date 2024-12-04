@@ -18,15 +18,101 @@ constexpr float FRAME_RATE = 60.0f;                                         // Ó
 const std::string APPLICATION_TITLE = u8"ĞÇÂ¶¹È Stardew Valley";				// Ó¦ÓÃ³ÌĞò±êÌâ
 
 //²âÊÔÓÃ³£±äÁ¿
-constexpr float MOVE_SPEED = 5.0f;											// ÒÆ¶¯ËÙ¶È
+constexpr float MOVE_SPEED = 3.5f;											// ÒÆ¶¯ËÙ¶Èd
 constexpr float MOVE_RATE = FRAME_RATE;										// ÒÆ¶¯Ö¡ÂÊ
-constexpr auto INVIAID_KEY = cocos2d::EventKeyboard::KeyCode::KEY_Q;		// ÎŞĞ§°´¼ü
+constexpr auto INVIAID_KEY = cocos2d::EventKeyboard::KeyCode::KEY_NONE;		// ÎŞĞ§°´¼ü
 constexpr float ACTION_RATE = 5.0f;											// ¶¯×÷¼ä¸ôÖ¡ÂÊ
 
+<<<<<<< Updated upstream
 constexpr int STAY = 0;														// ¾²Ö¹
 constexpr int UP = 1;														// ·½ÏòÏòÉÏ
 constexpr int DOWN = 2;														// ·½ÏòÏòÏÂ
 constexpr int LEFT = 3;														// ·½ÏòÏò×ó
 constexpr int RIGHT = 4;													// ·½ÏòÏòÓÒ
+=======
+constexpr float MAP_SCALE = 1.6f;											// µØÍ¼Ëõ·Å´óĞ¡
+>>>>>>> Stashed changes
 
+constexpr int MAX_OBJECT_LIST_SIZE_LEVEL1 = 12;								// ±³°üÈİÁ¿µÈ¼¶1
+constexpr int MAX_OBJECT_LIST_SIZE_LEVEL2 = 24;								// ±³°üÈİÁ¿µÈ¼¶2
+constexpr int MAX_OBJECT_LIST_SIZE_LEVEL3 = 36;								// ±³°üÈİÁ¿µÈ¼¶3
+
+//ÓÎÏ·ÎïÆ·ÀàĞÍ¶¨Òå
+typedef enum {
+	Farm,				// ¸ûÖÖ
+	Collect,			// ²É¼¯
+	Mine,				// ²É¿ó
+	Fish				// µöÓã
+}GameObjectType;
+
+// ÓÎÏ·¹¤¾ßÀàĞÍ¶¨Òå
+typedef enum {
+	Hoe,				// ³úÍ·
+	Ax,					// ¸«Í·
+	Pickaxe,			// ¸ä×Ó
+	FishingRod,			// Óã¸Í
+	Kettle				// Ë®ºø
+}GameTools;
+
+// ÓÎÏ·¹¤¾ßÎïÆ·ÊôĞÔ¶¨Òå
+typedef struct {
+	std::string fileName;    // ÎÄ¼şÂ·¾¶
+	std::string name;        // ¹¤¾ßÃû³Æ
+	GameObjectType type;	 // ¹¤¾ßÀàĞÍ
+	int level;               // ¹¤¾ßµÈ¼¶
+	int durability;          // ¹¤¾ßÄÍ¾Ã¶È(Õë¶ÔË®ºø)
+}GameToolObject;
+
+// ÓÎÏ·»ù´¡ÎïÆ·ÊôĞÔ¶¨Òå
+typedef struct {
+	std::string fileName;    // ÎÄ¼şÂ·¾¶
+	std::string name;        // ÎïÆ·Ãû³Æ
+	GameObjectType type;	 // ÎïÆ·ÀàĞÍ
+	int level;               // ÎïÆ·µÈ¼¶
+	bool sale;               // ÊÇ·ñÄÜ³öÊÛ
+	int salePrice;           // ³öÊÛ¼Û¸ñ
+	bool eat;                // ÊÇ·ñ¿ÉÒÔÊ³ÓÃ
+	int eatEnegry;           // Ê³ÓÃ»Ö¸´µÄÄÜÁ¿Öµ
+}GameBaseObject;
+
+// ÓÎÏ·ºÏ³ÉÎïÆ·ÊôĞÔ¶¨Òå
+typedef struct {
+	GameBaseObject baseObject;					// »ù´¡ÎïÆ·ÊôĞÔ
+	std::map<std::string,int> ingredients;		// ºÏ³ÉÎïÆ·µÄÔ­ÁÏ
+}GameComposeObject;
+
+// ÓÎÏ·ÎïÆ·ÀàĞÍ¶¨Òå
+typedef enum {
+	None,				// ÎŞĞ§ÎïÆ·
+	Tool,				// ¹¤¾ß
+	Base,				// »ù´¡ÎïÆ·
+	Compose				// ºÏ³ÉÎïÆ·
+}GameObjectMapType;
+
+// ÓÎÏ·Í¨ÓÃÎïÆ·ÊôĞÔ¶¨Òå
+typedef struct {
+	GameObjectMapType type;							// ÎïÆ·ÀàĞÍ
+	void* object;									// ÎïÆ·¶ÔÏó
+}GameCommonObject;
+
+// ÓÎÏ·¹¤¾ßÎïÆ·ÊôĞÔ²ÎÊı¶¨Òå
+const std::map<int, GameToolObject> GAME_TOOL_OBJECTS_ATTRS = {
+	{1,{"","³úÍ·",Farm,1,INT_MAX}},					// ³úÍ·
+	{2,{"","¸«Í·",Collect,1,INT_MAX}},				// ¸«Í·
+	{3,{"","¸ä×Ó",Mine,1,INT_MAX}},					// ¸ä×Ó
+	{4,{"","Óã¸Í",Fish,1,INT_MAX}},					// Óã¸Í
+	{5,{"","Ë®ºø",Farm,1,40}},						// Ë®ºø(Ò»¼¶)
+	{6,{"","Ë®ºø",Farm,2,55}},						// Ë®ºø(¶ş¼¶)
+	{7,{"","Ë®ºø",Farm,3,70}},						// Ë®ºø(Èı¼¶)
+};
+
+// ÓÎÏ·»ù´¡ÎïÆ·ÊôĞÔ²ÎÊı¶¨Òå
+const std::map<int, GameBaseObject> GAME_BASE_OBJECTS_ATTRS = {
+
+};
+
+// ÓÎÏ·ºÏ³ÉÎïÆ·ÊôĞÔ²ÎÊı¶¨Òå
+const std::map<int, GameComposeObject> GAME_COMPOSE_OBJECTS_ATTRS = {
+
+};
 #endif // !_CONSTANT_H_

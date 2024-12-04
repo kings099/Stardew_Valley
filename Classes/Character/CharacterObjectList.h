@@ -1,0 +1,67 @@
+/****************************************************************
+ * Project Name:  Stardew Valley
+ * File Name:     CharacterObjectList.h
+ * File Function: CharacterObjectList类的定义
+ * Author:        尹诚成
+ * Update Date:   2023/12/05
+ * License:       MIT License
+ ****************************************************************/
+
+#ifndef __CHARACTER_OBJECT_LIST_H__
+#define __CHARACTER_OBJECT_LIST_H__
+
+#include <vector>
+#include "cocos2d.h"
+#include "../proj.win32/Constant.h"
+
+// 物品栏物品状态定义
+typedef enum {
+	Unselected,						// 未被选中
+	Selected,						// 被选中
+}ObjectStatus;
+
+// 物品栏单个物品信息定义
+typedef struct {
+	int id;							// 物品栏索引
+	GameCommonObject object;		// 物品对象
+	int count;						// 物品数量
+	ObjectStatus status;			// 物品状态
+}ObjectListNode;
+
+
+
+class CharacterObjectList : public cocos2d::Node {
+public:
+	// 构造函数
+	CharacterObjectList();
+
+	// 析构函数
+	~CharacterObjectList();
+
+	// 按下键盘时的处理
+	void onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event);
+
+	// 按下鼠标时的处理
+	void onMouseDown(cocos2d::Event* event);
+
+	// 捡起物品
+	bool pickUpObject(GameCommonObject object);	
+
+	// 移动物品
+	void moveObject(ObjectListNode object);
+
+private:
+	std::vector<ObjectListNode*> _objectList;   // 物品列表
+	ObjectListNode _currentObject;				// 当前物品
+	int _maxObjectCount;						// 最大物品数量
+	int _currentObjectCount;					// 当前物品数量
+	int _currentObjectIndex;					// 当前物品索引
+
+	// 设置当前物品
+	void setCurrentObject(int index);			
+
+	// 丢弃当前物品
+	ObjectListNode discardCurrentObject();
+};
+
+#endif // !__CHARACTER_OBJECT_LIST_H__

@@ -14,8 +14,8 @@
  * License:       MIT License
  ****************************************************************/
 
-#ifndef __CHARACTERMOVE_H__
-#define __CHARACTERMOVE_H__
+#ifndef __CHARACTER_MOVE_H__
+#define __CHARACTER_MOVE_H__
 
 #include "cocos2d.h"
 <<<<<<< Updated upstream
