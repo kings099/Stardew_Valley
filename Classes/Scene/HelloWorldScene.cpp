@@ -57,15 +57,13 @@ bool HelloWorld::init()
     // 添加地图
     auto farm_map = FarmMap::create("../Resources/Maps/Farm/farm2.tmx");
     this->addChild(farm_map);
-    farm_map->setPosition(cocos2d::Vec2(0, 0));  // 例如设置初始位置为(0, 0)
-    farm_map->setScale(2.5f);
 
     // 添加角色
     auto character = Character::create("../Resources/Characters/Bear/BearDownAction1.png");
     this->addChild(character);
-    character->setScale(1.5f);
+
     // 添加视角控制器
-    auto viewController = new GameViewController(character);
+    auto viewController = new GameViewController(character,farm_map);
     this->addChild(viewController);
 
     this->schedule([viewController](float deltaTime) {
