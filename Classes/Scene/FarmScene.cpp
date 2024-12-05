@@ -50,7 +50,6 @@ bool FarmScene::init()
     // 加载角色
     character = Character::create("../Resources/Characters/Bear/BearDownAction1.png");
     this->addChild(character, 1); // 角色位于地图之上
-    CCLOG("Character Anchor Point: (%.2f, %.2f)", character->getAnchorPoint().x, character->getAnchorPoint().y);
 
     // 创建视角控制器
     viewController = new GameViewController(character, farmMap);

@@ -81,8 +81,6 @@ bool FarmMap::onMouseEvent(cocos2d::Event* event)
         // 将屏幕坐标修正为相对于地图的绝对坐标
         Vec2 mapPosition(mousePos.x + cameraOffset_x - _mapPosition.x,
             mousePos.y + cameraOffset_y - _mapPosition.y);
-
-        CCLOG("mapPosition:%f,%f", mapPosition.x, mapPosition.y);
         // 转换为瓦片坐标
         Vec2 tiledPos = absoluteToTile(mapPosition);
         CCLOG("tilePos:%f,%f", tiledPos.x, tiledPos.y);
@@ -90,14 +88,14 @@ bool FarmMap::onMouseEvent(cocos2d::Event* event)
         int tileGID = layer->getTileGIDAt(tiledPos);
 
         CCLOG("GID: % d", tileGID);
-        // 打印点击位置
-        //if (tileGID == 1247) {
-        //    CCLOG("WATER!!!!!!!!!!");
-        //}
-        //else
-        //{
-        //    CCLOG("SOIL!!!!!!!!!");
-        //}
+         //打印点击位置
+        if (tileGID == 1247) {
+            CCLOG("WATER!!!!!!!!!!");
+        }
+        else
+        {
+            CCLOG("SOIL!!!!!!!!!");
+        }
 
         // 返回 true 表示事件已处理
         return true;
@@ -114,8 +112,6 @@ Vec2 FarmMap::absoluteToTile(const Vec2& pixelPoint)
 
     float tileX = (pixelPoint.x) / (tileSize.width * MAP_SCALE);
     float tileY = (pixelPoint.y) / (tileSize.height * MAP_SCALE);
-    CCLOG("mapheight:%f", _tileMap->getMapSize().height);
-    CCLOG("tileY:%f", tileY);
     // 瓦片地图y轴是从上到下的，需要翻转y轴
     tileY = _tileMap->getMapSize().height - tileY; 
 
