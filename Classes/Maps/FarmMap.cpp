@@ -1,8 +1,8 @@
 /****************************************************************
  * Project Name:  Stardew_Valley
  * File Name:     FarmMap.cpp
- * File Function: ³õÊ¼Å©³¡µØÍ¼FarmMapÀàµÄÊµÏÖ
- * Author:        ½ğºãÓî
+ * File Function: åˆå§‹å†œåœºåœ°å›¾FarmMapç±»çš„å®ç°
+ * Author:        é‡‘æ’å®‡
  * Update Date:   2024/12/4
  * License:       MIT License
  ****************************************************************/
@@ -34,28 +34,28 @@ FarmMap* FarmMap::create(const std::string& mapFile,const Vec2& mapPosition)
 
 bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition)
 {
-    // µ÷ÓÃ¸¸ÀàµÄ³õÊ¼»¯·½·¨
+    // è°ƒç”¨çˆ¶ç±»çš„åˆå§‹åŒ–æ–¹æ³•
     if (!Node::init()) {
         return false;
     }
 
-    // ¼ÓÔØÍßÆ¬µØÍ¼
+    // åŠ è½½ç“¦ç‰‡åœ°å›¾
     _tileMap = TMXTiledMap::create(mapFile);
     if (!_tileMap) {
         CCLOG("Failed to load map");
         return false;
     }
 
-    // Ìí¼ÓµØÍ¼µ½µ±Ç°½Úµã
+    // æ·»åŠ åœ°å›¾åˆ°å½“å‰èŠ‚ç‚¹
     this->addChild(_tileMap, 0);
     this->setPosition(_mapPosition);
     this->setScale(MAP_SCALE);
 
-    //¼àÌıÊó±ê
+    //ç›‘å¬é¼ æ ‡
     auto listener = EventListenerMouse::create();
-    listener->onMouseDown = CC_CALLBACK_1(FarmMap::onMouseEvent, this);  // ¼àÌıÊó±êµã»÷ÊÂ¼ş
+    listener->onMouseDown = CC_CALLBACK_1(FarmMap::onMouseEvent, this);  // ç›‘å¬é¼ æ ‡ç‚¹å‡»äº‹ä»¶
 
-    // ×¢²á¼àÌıÆ÷
+    // æ³¨å†Œç›‘å¬å™¨
     _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
 
     return true;
@@ -63,32 +63,32 @@ bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition)
 
 bool FarmMap::onMouseEvent(cocos2d::Event* event)
 {
-    // »ñÈ¡Êó±êÊÂ¼ş
+    // è·å–é¼ æ ‡äº‹ä»¶
     auto mouseEvent = dynamic_cast<cocos2d::EventMouse*>(event);
     if (mouseEvent) {
-        // »ñÈ¡Êó±êµÄÆÁÄ»Î»ÖÃ
+        // è·å–é¼ æ ‡çš„å±å¹•ä½ç½®
         auto mousePos = mouseEvent->getLocationInView();
-        // »ñÈ¡Ä¬ÈÏÉãÏñ»úµÄÊÀ½ç×ø±êÆ«ÒÆ
+        // è·å–é»˜è®¤æ‘„åƒæœºçš„ä¸–ç•Œåæ ‡åç§»
         auto defaultCamera = Camera::getDefaultCamera();
         auto cameraPosition = defaultCamera->getPosition();
 
-        // ¿ÉÊÓ·¶Î§
+        // å¯è§†èŒƒå›´
         const auto visibleSize = Director::getInstance()->getVisibleSize();
 
         float cameraOffset_x = cameraPosition.x - visibleSize.width / 2;
         float cameraOffset_y = cameraPosition.y - visibleSize.height / 2;
 
-        // ½«ÆÁÄ»×ø±êĞŞÕıÎªÏà¶ÔÓÚµØÍ¼µÄ¾ø¶Ô×ø±ê
+        // å°†å±å¹•åæ ‡ä¿®æ­£ä¸ºç›¸å¯¹äºåœ°å›¾çš„ç»å¯¹åæ ‡
         Vec2 mapPosition(mousePos.x + cameraOffset_x - _mapPosition.x,
             mousePos.y + cameraOffset_y - _mapPosition.y);
-        // ×ª»»ÎªÍßÆ¬×ø±ê
+        // è½¬æ¢ä¸ºç“¦ç‰‡åæ ‡
         Vec2 tiledPos = absoluteToTile(mapPosition);
         CCLOG("tilePos:%f,%f", tiledPos.x, tiledPos.y);
-        auto layer = _tileMap->getLayer("Back"); // È·±£Ìæ»»ÎªÄãÊµ¼ÊµÄÍ¼²ãÃû³Æ
+        auto layer = _tileMap->getLayer("Back"); // ç¡®ä¿æ›¿æ¢ä¸ºä½ å®é™…çš„å›¾å±‚åç§°
         int tileGID = layer->getTileGIDAt(tiledPos);
 
         CCLOG("GID: % d", tileGID);
-         //´òÓ¡µã»÷Î»ÖÃ
+         //æ‰“å°ç‚¹å‡»ä½ç½®
         if (tileGID == 1247) {
             CCLOG("WATER!!!!!!!!!!");
         }
@@ -97,7 +97,7 @@ bool FarmMap::onMouseEvent(cocos2d::Event* event)
             CCLOG("SOIL!!!!!!!!!");
         }
 
-        // ·µ»Ø true ±íÊ¾ÊÂ¼şÒÑ´¦Àí
+        // è¿”å› true è¡¨ç¤ºäº‹ä»¶å·²å¤„ç†
         return true;
     }
 
@@ -107,12 +107,12 @@ bool FarmMap::onMouseEvent(cocos2d::Event* event)
 
 Vec2 FarmMap::absoluteToTile(const Vec2& pixelPoint)
 {
-    // »ñÈ¡ÍßÆ¬µÄ´óĞ¡
+    // è·å–ç“¦ç‰‡çš„å¤§å°
     Size tileSize = _tileMap->getTileSize();
 
     float tileX = (pixelPoint.x) / (tileSize.width * MAP_SCALE);
     float tileY = (pixelPoint.y) / (tileSize.height * MAP_SCALE);
-    // ÍßÆ¬µØÍ¼yÖáÊÇ´ÓÉÏµ½ÏÂµÄ£¬ĞèÒª·­×ªyÖá
+    // ç“¦ç‰‡åœ°å›¾yè½´æ˜¯ä»ä¸Šåˆ°ä¸‹çš„ï¼Œéœ€è¦ç¿»è½¬yè½´
     tileY = _tileMap->getMapSize().height - tileY; 
 
     return Vec2(floor(tileX), floor(tileY));
@@ -120,10 +120,10 @@ Vec2 FarmMap::absoluteToTile(const Vec2& pixelPoint)
 
 const Size& FarmMap:: getMapSize()const {
     Size map_size_in_tiles = _tileMap->getMapSize();
-    // »ñÈ¡Ã¿¸öÍßÆ¬µÄ´óĞ¡
-    Size tile_size = _tileMap->getTileSize();  // »ñÈ¡Ã¿¸öÍßÆ¬µÄÏñËØ´óĞ¡
+    // è·å–æ¯ä¸ªç“¦ç‰‡çš„å¤§å°
+    Size tile_size = _tileMap->getTileSize();  // è·å–æ¯ä¸ªç“¦ç‰‡çš„åƒç´ å¤§å°
 
-    // ½«ÍßÆ¬Êı×ª»»ÎªÏñËØÊı
+    // å°†ç“¦ç‰‡æ•°è½¬æ¢ä¸ºåƒç´ æ•°
     float map_width_in_pixels = map_size_in_tiles.width * tile_size.width;
     float map_heightin_Pixels = map_size_in_tiles.height * tile_size.height;
     return Size(map_width_in_pixels, map_heightin_Pixels);

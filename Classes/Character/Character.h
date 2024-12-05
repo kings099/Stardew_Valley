@@ -1,9 +1,9 @@
 /****************************************************************
  * Project Name:  Stardew Valley
  * File Name:     Character.h
- * File Function: CharacterÀàµÄ¶¨Òå
- * Author:        Òü³Ï³É
- * Update Date:   2023/12/04
+ * File Function: Characterç±»çš„å®šä¹‰
+ * Author:        å°¹è¯šæˆ
+ * Update Date:   2023/12/06
  * License:       MIT License
  ****************************************************************/
 
@@ -11,23 +11,23 @@
 #define __CHARACTER_H__
 
 #include "CharacterMove.h"
+#include "CharacterObjectList.h"
 
-class Character : public CharacterMove {
+class Character : public CharacterMove, public CharacterObjectList {
 public:
-    // ´´½¨Character¶ÔÏó
-    static Character* create(const std::string& filename);
+    // æ„é€ å‡½æ•°
+    Character(const std::string& filename);
 
-    // ³õÊ¼»¯Character¶ÔÏó
-    bool init(const std::string& filename);
-
-    // °´ÏÂ¼üÅÌÊ±µÄ´¦Àí
+    // æŒ‰ä¸‹é”®ç›˜æ—¶çš„å¤„ç†
     void onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event);
 
-    // ÊÍ·Å¼üÅÌÊ±µÄ´¦Àí
+    // é‡Šæ”¾é”®ç›˜æ—¶çš„å¤„ç†
     void onKeyReleased(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event);
 
+    // æ›´æ–°ä½ç½®
+    cocos2d::Vec2 updatePosition(float deltaTime);
 private:
-
+    //cocos2d::Sprite* _character;                         // è§’è‰²ç²¾çµ
 };
 
 #endif // __CHARACTER_H__

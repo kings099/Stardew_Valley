@@ -1,9 +1,9 @@
 /****************************************************************
  * Project Name:  Stardew Valley
  * File Name:     CharacterMove.h
- * File Function: CharacterMoveÀàµÄ¶¨Òå
- * Author:        Òü³Ï³É
- * Update Date:   2023/12/04
+ * File Function: CharacterMoveç±»çš„å®šä¹‰
+ * Author:        å°¹è¯šæˆ
+ * Update Date:   2023/12/06
  * License:       MIT License
  ****************************************************************/
 
@@ -13,39 +13,38 @@
 #include "cocos2d.h"
 
 
-class CharacterMove : public cocos2d::Node {
+class CharacterMove :virtual public cocos2d::Node {
 public:
-    //´´½¨¶ÔÏó
-    static CharacterMove* create(const std::string& filename);
+    //æ„é€ å‡½æ•°
+    CharacterMove();
 
-    //³õÊ¼»¯
-    bool init(const std::string& filename);
-
-    // °´ÏÂ¼üÅÌÊ±µÄ´¦Àí
+    // æŒ‰ä¸‹é”®ç›˜æ—¶çš„å¤„ç†
     void onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event);
 
-    // ÊÍ·Å¼üÅÌÊ±µÄ´¦Àí
+    // é‡Šæ”¾é”®ç›˜æ—¶çš„å¤„ç†
     void onKeyReleased(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event);
 
-    // ²¥·Å¶¯»­
+    // æ’­æ”¾åŠ¨ç”»
     void playAnimation();
+protected:
+    cocos2d::Sprite* _character;                         // è§’è‰²å¯¹è±¡
 
-    // ¸üĞÂ½ÇÉ«Î»ÖÃ
+    // æ›´æ–°è§’è‰²ä½ç½®
     cocos2d::Vec2 updatePosition(float deltaTime);
 
 private:
-    cocos2d::Sprite* _character;                         // ½ÇÉ«¶ÔÏó
-    cocos2d::Vector<cocos2d::SpriteFrame*> _frames;      // ½ÇÉ«¶¯»­Ö¡
-    float _width;                                        // ½ÇÉ«¿í¶È
-    float _height;                                       // ½ÇÉ«¸ß¶È
-    float _moveSpeed;                                    // ½ÇÉ«ËÙ¶È
-    bool _moveUp;                                        // ÊÇ·ñÉÏÒÆ
-    bool _moveDown;                                      // ÊÇ·ñÏÂÒÆ
-    bool _moveLeft;                                      // ÊÇ·ñ×óÒÆ
-    bool _moveRight;                                     // ÊÇ·ñÓÒÒÆ
-    bool _animationPlaying;                              // ÊÇ·ñÕıÔÚ²¥·Å¶¯»­
-    std::string _currentDirection;                       // µ±Ç°¶¯»­·½Ïò
-    std::string _lastDirection;                          // ÉÏÒ»´Î¶¯»­·½Ïò
+    cocos2d::Vector<cocos2d::SpriteFrame*> _frames;      // è§’è‰²åŠ¨ç”»å¸§
+    float _width;                                        // è§’è‰²å®½åº¦
+    float _height;                                       // è§’è‰²é«˜åº¦
+    float _moveSpeed;                                    // è§’è‰²é€Ÿåº¦
+    bool _moveUp;                                        // æ˜¯å¦ä¸Šç§»
+    bool _moveDown;                                      // æ˜¯å¦ä¸‹ç§»
+    bool _moveLeft;                                      // æ˜¯å¦å·¦ç§»
+    bool _moveRight;                                     // æ˜¯å¦å³ç§»
+    bool _animationPlaying;                              // æ˜¯å¦æ­£åœ¨æ’­æ”¾åŠ¨ç”»
+    std::string _currentDirection;                       // å½“å‰åŠ¨ç”»æ–¹å‘
+    std::string _lastDirection;                          // ä¸Šä¸€æ¬¡åŠ¨ç”»æ–¹å‘
 };
 
 #endif // __CHARACTER_H__
+

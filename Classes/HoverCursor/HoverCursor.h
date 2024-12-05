@@ -5,18 +5,18 @@
 #include <string>
 #include "cocos2d.h"
 
-class HoverMouse : public cocos2d::Node {
+class HoverCursor : public cocos2d::Node {
 public:
-    // 创建一个新的 HoverMouse 实例
-    static HoverMouse* create(const std::string& defaultMouseImage, const std::string& hoverMouseImage, const std::string& activeMouseImage, cocos2d::Node* button);
+    // 创建一个新的 HoverCursor 实例
+    static HoverCursor* create(const std::string& defaultMouseImage, const std::string& hoverMouseImage, const std::string& activeMouseImage, cocos2d::Node* button);
 
-    // 初始化 HoverMouse 实例
+    // 初始化 HoverCursor 实例
     bool init(const std::string& defaultMouseImage, const std::string& hoverMouseImage, const std::string& activeMouseImage, cocos2d::Node* button);
 
 private:
-    std::string defaultMouseImage;  // 默认鼠标图片路径
-    std::string hoverMouseImage;    // 悬停鼠标图片路径
-    std::string activeMouseImage;   // 激活鼠标图片路径
+    std::string defaultCursorImage;  // 默认光标图片路径
+    std::string hoverCursorImage;    // 悬停光标图片路径
+    std::string activeCursorImage;   // 激活光标图片路径
     cocos2d::Sprite* mouseSprite;   // 用于显示鼠标图像
     cocos2d::Node* button;          // 指向需要检测的按钮
 

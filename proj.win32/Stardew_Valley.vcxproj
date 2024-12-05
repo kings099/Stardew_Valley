@@ -154,6 +154,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)\Resources\" /D /E /I /F /Y
     <ClCompile Include="..\Classes\Character\Character.cpp" />
     <ClCompile Include="..\Classes\Character\CharacterInfo.cpp" />
     <ClCompile Include="..\Classes\Character\CharacterMove.cpp" />
+    <ClCompile Include="..\Classes\Character\CharacterObjectList.cpp" />
     <ClCompile Include="..\Classes\Control\GameViewController.cpp" />
     <ClCompile Include="..\Classes\HoverMouse\HoverMouse.cpp" />
     <ClCompile Include="..\Classes\Maps\FarmMap.cpp" />
@@ -166,6 +167,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)\Resources\" /D /E /I /F /Y
     <ClInclude Include="..\Classes\Character\Character.h" />
     <ClInclude Include="..\Classes\Character\CharacterInfo.h" />
     <ClInclude Include="..\Classes\Character\CharacterMove.h" />
+    <ClInclude Include="..\Classes\Character\CharacterObjectList.h" />
     <ClInclude Include="..\Classes\Control\GameViewController.h" />
     <ClInclude Include="..\Classes\HoverMouse\HoverMouse.h" />
     <ClInclude Include="..\Classes\Maps\FarmMap.h" />

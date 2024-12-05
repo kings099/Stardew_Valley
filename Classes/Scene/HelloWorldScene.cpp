@@ -23,32 +23,32 @@ static void problemLoading(const char* filename)
 // on "init" you need to initialize your instance
 bool HelloWorld::init()
 {
-    // ´´½¨³¡¾°
+    // åˆ›å»ºåœºæ™¯
     if (!Scene::init()) {
         return false;
     }
 
-    // »ñÈ¡È«¾Ö³ß´ç´óĞ¡
+    // è·å–å…¨å±€å°ºå¯¸å¤§å°
     const auto visibleSize = Director::getInstance()->getVisibleSize();
     const Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
-    // ¼ÓÔØ±³¾°Í¼Æ¬
+    // åŠ è½½èƒŒæ™¯å›¾ç‰‡
     this->initBackground();
-    // ´´½¨²¢³õÊ¼»¯Ê±¼äÏÔÊ¾µÄ Label
+    // åˆ›å»ºå¹¶åˆå§‹åŒ–æ—¶é—´æ˜¾ç¤ºçš„ Label
     auto timeLabel = Label::createWithTTF("hhhhhh", "fonts/arial.ttf", 24);
-    timeLabel->setPosition(Vec2(20, 20));  // ÉèÖÃÎ»ÖÃ
-    this->addChild(timeLabel, 2);  // ½« Label Ìí¼Óµ½³¡¾°
+    timeLabel->setPosition(Vec2(20, 20));  // è®¾ç½®ä½ç½®
+    this->addChild(timeLabel, 2);  // å°† Label æ·»åŠ åˆ°åœºæ™¯
 
 
-    // ¼ÓÔØ²¢ÉèÖÃÓÎÏ·±êÌâÍ¼Æ¬
-    titleSprite = Sprite::create("../Resources/Helloworld/gameTitle.png");  // ÄãµÄ±êÌâÍ¼Æ¬ÎÄ¼ş
+    // åŠ è½½å¹¶è®¾ç½®æ¸¸æˆæ ‡é¢˜å›¾ç‰‡
+    titleSprite = Sprite::create("../Resources/Helloworld/gameTitle.png");  // ä½ çš„æ ‡é¢˜å›¾ç‰‡æ–‡ä»¶
     if (titleSprite == nullptr) {
         problemLoading("'gameTitle.png'");
     }
     else {
-        // ÉèÖÃ±êÌâÍ¼Æ¬µÄÎ»ÖÃ
+        // è®¾ç½®æ ‡é¢˜å›¾ç‰‡çš„ä½ç½®
         titleSprite->setPosition(Vec2(origin.x + visibleSize.width / 2, origin.y + visibleSize.height * 0.7));
-        this->addChild(titleSprite, 1);  // ½«±êÌâÌí¼Óµ½³¡¾°ÖĞ
+        this->addChild(titleSprite, 1);  // å°†æ ‡é¢˜æ·»åŠ åˆ°åœºæ™¯ä¸­
     }
     this->createMenuWithImage();
     return true;
@@ -56,67 +56,67 @@ bool HelloWorld::init()
 
 void HelloWorld::createMenuWithImage()
 {
-    // »ñÈ¡µ±Ç°¿É¼ûÇøÓò£¨´°¿Ú£©»òÆÁÄ»ÇøÓòµÄ´óĞ¡£¨¿í¶ÈºÍ¸ß¶È£©
+    // è·å–å½“å‰å¯è§åŒºåŸŸï¼ˆçª—å£ï¼‰æˆ–å±å¹•åŒºåŸŸçš„å¤§å°ï¼ˆå®½åº¦å’Œé«˜åº¦ï¼‰
     const auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
-    // ´´½¨ "¿ªÊ¼" °´Å¥µÄÍ¼Ïñ
+    // åˆ›å»º "å¼€å§‹" æŒ‰é’®çš„å›¾åƒ
     startItem = MenuItemImage::create(
-        "../Resources/Helloworld/start.png",   // ÆÕÍ¨×´Ì¬ÏÂµÄÍ¼Æ¬
-        "../Resources/Helloworld/start_.png",  // ĞüÍ£×´Ì¬ÏÂµÄÍ¼Æ¬
-        CC_CALLBACK_1(HelloWorld::startGameCallback, this)  // µã»÷Ê±µ÷ÓÃµÄ»Øµ÷º¯Êı
+        "../Resources/Helloworld/start.png",   // æ™®é€šçŠ¶æ€ä¸‹çš„å›¾ç‰‡
+        "../Resources/Helloworld/start_.png",  // æ‚¬åœçŠ¶æ€ä¸‹çš„å›¾ç‰‡
+        CC_CALLBACK_1(HelloWorld::startGameCallback, this)  // ç‚¹å‡»æ—¶è°ƒç”¨çš„å›è°ƒå‡½æ•°
     );
-    startItem->setPosition(Vec2(origin.x + visibleSize.width * 0.33, origin.y + visibleSize.height * 0.2f)); // ÉèÖÃ "¿ªÊ¼" °´Å¥µÄÎ»ÖÃ
+    startItem->setPosition(Vec2(origin.x + visibleSize.width * 0.33, origin.y + visibleSize.height * 0.2f)); // è®¾ç½® "å¼€å§‹" æŒ‰é’®çš„ä½ç½®
 
-    // ´´½¨ "½áÊø" °´Å¥µÄÍ¼Ïñ
+    // åˆ›å»º "ç»“æŸ" æŒ‰é’®çš„å›¾åƒ
     exitItem = MenuItemImage::create(
-        "../Resources/Helloworld/end.png",    // ÆÕÍ¨×´Ì¬ÏÂµÄÍ¼Æ¬
-        "../Resources/Helloworld/end_.png", // ĞüÍ£×´Ì¬ÏÂµÄÍ¼Æ¬
-        CC_CALLBACK_1(HelloWorld::exitGameCallback, this)  // µã»÷Ê±µ÷ÓÃµÄ»Øµ÷º¯Êı
+        "../Resources/Helloworld/end.png",    // æ™®é€šçŠ¶æ€ä¸‹çš„å›¾ç‰‡
+        "../Resources/Helloworld/end_.png", // æ‚¬åœçŠ¶æ€ä¸‹çš„å›¾ç‰‡
+        CC_CALLBACK_1(HelloWorld::exitGameCallback, this)  // ç‚¹å‡»æ—¶è°ƒç”¨çš„å›è°ƒå‡½æ•°
     );
-    exitItem->setPosition(Vec2(origin.x + visibleSize.width * 0.67, origin.y + visibleSize.height * 0.2f)); // ÉèÖÃ "½áÊø" °´Å¥µÄÎ»ÖÃ
+    exitItem->setPosition(Vec2(origin.x + visibleSize.width * 0.67, origin.y + visibleSize.height * 0.2f)); // è®¾ç½® "ç»“æŸ" æŒ‰é’®çš„ä½ç½®
 
-    // ´´½¨²Ëµ¥£¬½« "¿ªÊ¼" ºÍ "½áÊø" °´Å¥Ìí¼Óµ½²Ëµ¥ÖĞ
+    // åˆ›å»ºèœå•ï¼Œå°† "å¼€å§‹" å’Œ "ç»“æŸ" æŒ‰é’®æ·»åŠ åˆ°èœå•ä¸­
     auto menu = Menu::create(startItem, exitItem, nullptr);
-    menu->setPosition(Vec2::ZERO);  // ÉèÖÃ²Ëµ¥µÄÔ­µãÎ»ÖÃ
-    this->addChild(menu, 2);  // ½«²Ëµ¥Ìí¼Óµ½³¡¾°ÖĞ
+    menu->setPosition(Vec2::ZERO);  // è®¾ç½®èœå•çš„åŸç‚¹ä½ç½®
+    this->addChild(menu, 2);  // å°†èœå•æ·»åŠ åˆ°åœºæ™¯ä¸­
 }
 
 void HelloWorld::initBackground() {
-    // »ñÈ¡ÆÁÄ»µÄ³ß´ç
+    // è·å–å±å¹•çš„å°ºå¯¸
     const auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
-    // ´´½¨Á½¸ö±³¾°Í¼
+    // åˆ›å»ºä¸¤ä¸ªèƒŒæ™¯å›¾
     auto background1 = Sprite::create("../Resources/Helloworld/Cloud.png");
     auto background2 = Sprite::create("../Resources/Helloworld/Cloud.png");
 
-    // ÉèÖÃ±³¾°Í¼Æ¬µÄËõ·ÅÊ¹ÆäÌîÂúÆÁÄ»
+    // è®¾ç½®èƒŒæ™¯å›¾ç‰‡çš„ç¼©æ”¾ä½¿å…¶å¡«æ»¡å±å¹•
     float scaleX = visibleSize.width / background1->getContentSize().width;
     float scaleY = visibleSize.height / background1->getContentSize().height;
     background1->setScale(scaleX, scaleY);
     background2->setScale(scaleX, scaleY);
 
-    // ÉèÖÃ±³¾°Í¼Æ¬µÄ³õÊ¼Î»ÖÃ
+    // è®¾ç½®èƒŒæ™¯å›¾ç‰‡çš„åˆå§‹ä½ç½®
     background1->setPosition(Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y));
     background2->setPosition(Vec2(visibleSize.width * 1.5 + origin.x, visibleSize.height / 2 + origin.y));
 
-    // ½«±³¾°Í¼Æ¬Ìí¼Óµ½³¡¾°ÖĞ
+    // å°†èƒŒæ™¯å›¾ç‰‡æ·»åŠ åˆ°åœºæ™¯ä¸­
     this->addChild(background1, 0);
     this->addChild(background2, 0);
 
-    // Æô¶¯¶¨Ê±Æ÷½øĞĞ±³¾°µÄÒÆ¶¯
+    // å¯åŠ¨å®šæ—¶å™¨è¿›è¡ŒèƒŒæ™¯çš„ç§»åŠ¨
     schedule([=](float dt) {
-        // Ã¿Ö¡ÒÆ¶¯±³¾°Í¼Æ¬
-        background1->setPositionX(background1->getPositionX() - 2);  // ÒÆ¶¯ËÙ¶È¿ÉÒÔ¸ù¾İĞèÒªµ÷Õû
+        // æ¯å¸§ç§»åŠ¨èƒŒæ™¯å›¾ç‰‡
+        background1->setPositionX(background1->getPositionX() - 2);  // ç§»åŠ¨é€Ÿåº¦å¯ä»¥æ ¹æ®éœ€è¦è°ƒæ•´
         background2->setPositionX(background2->getPositionX() - 2);
 
-        // µ±µÚÒ»¸ö±³¾°ÒÆ³öÆÁÄ»Ê±£¬½«ÆäÒÆµ½µÚ¶ş¸ö±³¾°µÄºóÃæ
+        // å½“ç¬¬ä¸€ä¸ªèƒŒæ™¯ç§»å‡ºå±å¹•æ—¶ï¼Œå°†å…¶ç§»åˆ°ç¬¬äºŒä¸ªèƒŒæ™¯çš„åé¢
         if (background1->getPositionX() <= -visibleSize.width / 2) {
             background1->setPositionX(background2->getPositionX() + visibleSize.width);
         }
 
-        // µ±µÚ¶ş¸ö±³¾°ÒÆ³öÆÁÄ»Ê±£¬½«ÆäÒÆµ½µÚÒ»¸ö±³¾°µÄºóÃæ
+        // å½“ç¬¬äºŒä¸ªèƒŒæ™¯ç§»å‡ºå±å¹•æ—¶ï¼Œå°†å…¶ç§»åˆ°ç¬¬ä¸€ä¸ªèƒŒæ™¯çš„åé¢
         if (background2->getPositionX() <= -visibleSize.width / 2) {
             background2->setPositionX(background1->getPositionX() + visibleSize.width);
         }
@@ -133,127 +133,127 @@ void HelloWorld::startGameCallback(Ref* pSender)
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
 
-    // °´Å¥ÓÒÒÆ²¢Òş²Ø
-    startItem->runAction(MoveBy::create(0.5f, Vec2(visibleSize.width, 0)));  // Æ½»¬µØÓÒÒÆµ½ÆÁÄ»Íâ
-    exitItem->runAction(MoveBy::create(0.5f, Vec2(visibleSize.width, 0)));   // Æ½»¬µØÓÒÒÆµ½ÆÁÄ»Íâ
-    titleSprite->runAction(MoveBy::create(0.5f, Vec2(visibleSize.width, 0))); // Æ½»¬µØÓÒÒÆµ½ÆÁÄ»Íâ
+    // æŒ‰é’®å³ç§»å¹¶éšè—
+    startItem->runAction(MoveBy::create(0.5f, Vec2(visibleSize.width, 0)));  // å¹³æ»‘åœ°å³ç§»åˆ°å±å¹•å¤–
+    exitItem->runAction(MoveBy::create(0.5f, Vec2(visibleSize.width, 0)));   // å¹³æ»‘åœ°å³ç§»åˆ°å±å¹•å¤–
+    titleSprite->runAction(MoveBy::create(0.5f, Vec2(visibleSize.width, 0))); // å¹³æ»‘åœ°å³ç§»åˆ°å±å¹•å¤–
 
-    // ´´½¨µÇÂ¼½çÃæ
-    loginLayer = LayerColor::create(Color4B(0, 0, 0, 150)); // °ëÍ¸Ã÷ºÚÉ«±³¾°²ã
+    // åˆ›å»ºç™»å½•ç•Œé¢
+    loginLayer = LayerColor::create(Color4B(0, 0, 0, 150)); // åŠé€æ˜é»‘è‰²èƒŒæ™¯å±‚
     if (loginLayer != nullptr) {
-        this->addChild(loginLayer);  // Ìí¼Óµ½³¡¾°ÖĞ
+        this->addChild(loginLayer);  // æ·»åŠ åˆ°åœºæ™¯ä¸­
     }
     else {
         CCLOG("loginLayer creation failed");
     }
 
-    // ÊäÈë¿òµÄ¸ß¶È
+    // è¾“å…¥æ¡†çš„é«˜åº¦
     const float inputBoxHeight = visibleSize.height * 0.07f;
 
-    // ¸ù¾İÆÁÄ»¸ß¶È¶¯Ì¬¼ÆËã¼ä¾à
-    const float verticalSpacing = visibleSize.height * 0.02f;  // ÌáÊ¾ÓïºÍÊäÈë¿òÖ®¼äµÄ´¹Ö±¼ä¾à£¬°´±ÈÀıµ÷Õû
-    const float inputBoxSpacing = visibleSize.height * 0.14f;  // ÊäÈë¿òºÍÊäÈë¿òÖ®¼äµÄ¼ä¾à£¬°´±ÈÀıµ÷Õû
+    // æ ¹æ®å±å¹•é«˜åº¦åŠ¨æ€è®¡ç®—é—´è·
+    const float verticalSpacing = visibleSize.height * 0.02f;  // æç¤ºè¯­å’Œè¾“å…¥æ¡†ä¹‹é—´çš„å‚ç›´é—´è·ï¼ŒæŒ‰æ¯”ä¾‹è°ƒæ•´
+    const float inputBoxSpacing = visibleSize.height * 0.14f;  // è¾“å…¥æ¡†å’Œè¾“å…¥æ¡†ä¹‹é—´çš„é—´è·ï¼ŒæŒ‰æ¯”ä¾‹è°ƒæ•´
 
-    // ´´½¨ÓÃ»§ÃûÊäÈë¿ò±³¾°Í¼
+    // åˆ›å»ºç”¨æˆ·åè¾“å…¥æ¡†èƒŒæ™¯å›¾
     auto usernameInputBackground = cocos2d::ui::Scale9Sprite::create("../Resources/Helloworld/textBox.png");
-    usernameInputBackground->setContentSize(Size(300, inputBoxHeight));  // ÉèÖÃ±³¾°¿ò´óĞ¡
-    usernameInputBackground->setPosition(Vec2(visibleSize.width / 2, visibleSize.height * 0.6f));  // ÉèÖÃ±³¾°Í¼Î»ÖÃ
+    usernameInputBackground->setContentSize(Size(300, inputBoxHeight));  // è®¾ç½®èƒŒæ™¯æ¡†å¤§å°
+    usernameInputBackground->setPosition(Vec2(visibleSize.width / 2, visibleSize.height * 0.6f));  // è®¾ç½®èƒŒæ™¯å›¾ä½ç½®
     loginLayer->addChild(usernameInputBackground);
 
-    // ´´½¨ÓÃ»§ÃûÊäÈë¿ò
+    // åˆ›å»ºç”¨æˆ·åè¾“å…¥æ¡†
     auto usernameInput = cocos2d::ui::TextField::create("Enter your username", "fonts/arial.ttf", 24);
-    usernameInput->setMaxLength(20);  // ÉèÖÃ×î´óÊäÈë³¤¶È
-    usernameInput->setPosition(Vec2(visibleSize.width / 2, visibleSize.height * 0.6f));  // ÉèÖÃÎ»ÖÃ
-    usernameInput->setAnchorPoint(Vec2(0.5f, 0.5f));  // ÉèÖÃÃªµãÎªÖĞĞÄ
-    usernameInput->setTextHorizontalAlignment(TextHAlignment::CENTER); // Ë®Æ½¾ÓÖĞÏÔÊ¾
-    usernameInput->setTextVerticalAlignment(TextVAlignment::CENTER); // ´¹Ö±¾ÓÖĞÏÔÊ¾
+    usernameInput->setMaxLength(20);  // è®¾ç½®æœ€å¤§è¾“å…¥é•¿åº¦
+    usernameInput->setPosition(Vec2(visibleSize.width / 2, visibleSize.height * 0.6f));  // è®¾ç½®ä½ç½®
+    usernameInput->setAnchorPoint(Vec2(0.5f, 0.5f));  // è®¾ç½®é”šç‚¹ä¸ºä¸­å¿ƒ
+    usernameInput->setTextHorizontalAlignment(TextHAlignment::CENTER); // æ°´å¹³å±…ä¸­æ˜¾ç¤º
+    usernameInput->setTextVerticalAlignment(TextVAlignment::CENTER); // å‚ç›´å±…ä¸­æ˜¾ç¤º
 
-    loginLayer->addChild(usernameInput);  // ½«ÊäÈë¿òÌí¼Óµ½±³¾°²ãÉÏ
+    loginLayer->addChild(usernameInput);  // å°†è¾“å…¥æ¡†æ·»åŠ åˆ°èƒŒæ™¯å±‚ä¸Š
 
-    // ´´½¨ÓÃ»§Ãû±êÇ©£¨ÌáÊ¾ÎÄ±¾£©
+    // åˆ›å»ºç”¨æˆ·åæ ‡ç­¾ï¼ˆæç¤ºæ–‡æœ¬ï¼‰
     auto usernameLabel = Label::createWithTTF("Username", "fonts/arial.ttf", 24);
-    usernameLabel->setPosition(Vec2(visibleSize.width / 2, visibleSize.height * 0.6f + inputBoxHeight / 2 + verticalSpacing));  // ÉèÖÃ±êÇ©Î»ÖÃ
+    usernameLabel->setPosition(Vec2(visibleSize.width / 2, visibleSize.height * 0.6f + inputBoxHeight / 2 + verticalSpacing));  // è®¾ç½®æ ‡ç­¾ä½ç½®
     loginLayer->addChild(usernameLabel);
 
-    // ´´½¨Å©³¡ÃûÊäÈë¿ò±³¾°Í¼
+    // åˆ›å»ºå†œåœºåè¾“å…¥æ¡†èƒŒæ™¯å›¾
     auto farmNameInputBackground = cocos2d::ui::Scale9Sprite::create("../Resources/Helloworld/textBox.png");
-    farmNameInputBackground->setContentSize(Size(300, inputBoxHeight));  // ÉèÖÃ±³¾°¿ò´óĞ¡
-    farmNameInputBackground->setPosition(Vec2(visibleSize.width / 2, visibleSize.height * 0.6f - inputBoxSpacing));  // ÉèÖÃ±³¾°Í¼Î»ÖÃ
+    farmNameInputBackground->setContentSize(Size(300, inputBoxHeight));  // è®¾ç½®èƒŒæ™¯æ¡†å¤§å°
+    farmNameInputBackground->setPosition(Vec2(visibleSize.width / 2, visibleSize.height * 0.6f - inputBoxSpacing));  // è®¾ç½®èƒŒæ™¯å›¾ä½ç½®
     loginLayer->addChild(farmNameInputBackground);
 
-    // ´´½¨Å©³¡ÃûÊäÈë¿ò
+    // åˆ›å»ºå†œåœºåè¾“å…¥æ¡†
     auto farmNameInput = cocos2d::ui::TextField::create("Enter your farm name", "fonts/arial.ttf", 24);
-    farmNameInput->setMaxLength(20);  // ÉèÖÃ×î´óÊäÈë³¤¶È
-    farmNameInput->setPosition(Vec2(visibleSize.width / 2, visibleSize.height * 0.6f - inputBoxSpacing));  // ÉèÖÃÎ»ÖÃ
-    farmNameInput->setAnchorPoint(Vec2(0.5f, 0.5f));  // ÉèÖÃÃªµãÎªÖĞĞÄ
-    farmNameInput->setTextHorizontalAlignment(TextHAlignment::CENTER); // Ë®Æ½¾ÓÖĞÏÔÊ¾
-    farmNameInput->setTextVerticalAlignment(TextVAlignment::CENTER); // ´¹Ö±¾ÓÖĞÏÔÊ¾
+    farmNameInput->setMaxLength(20);  // è®¾ç½®æœ€å¤§è¾“å…¥é•¿åº¦
+    farmNameInput->setPosition(Vec2(visibleSize.width / 2, visibleSize.height * 0.6f - inputBoxSpacing));  // è®¾ç½®ä½ç½®
+    farmNameInput->setAnchorPoint(Vec2(0.5f, 0.5f));  // è®¾ç½®é”šç‚¹ä¸ºä¸­å¿ƒ
+    farmNameInput->setTextHorizontalAlignment(TextHAlignment::CENTER); // æ°´å¹³å±…ä¸­æ˜¾ç¤º
+    farmNameInput->setTextVerticalAlignment(TextVAlignment::CENTER); // å‚ç›´å±…ä¸­æ˜¾ç¤º
 
-    loginLayer->addChild(farmNameInput);  // ½«ÊäÈë¿òÌí¼Óµ½±³¾°²ãÉÏ
+    loginLayer->addChild(farmNameInput);  // å°†è¾“å…¥æ¡†æ·»åŠ åˆ°èƒŒæ™¯å±‚ä¸Š
 
-    // ´´½¨Å©³¡Ãû±êÇ©£¨ÌáÊ¾ÎÄ±¾£©
+    // åˆ›å»ºå†œåœºåæ ‡ç­¾ï¼ˆæç¤ºæ–‡æœ¬ï¼‰
     auto farmNameLabel = Label::createWithTTF("Farm Name", "fonts/arial.ttf", 24);
-    farmNameLabel->setPosition(Vec2(visibleSize.width / 2, visibleSize.height * 0.6f - inputBoxSpacing + inputBoxHeight / 2 + verticalSpacing));  // ÉèÖÃ±êÇ©Î»ÖÃ
+    farmNameLabel->setPosition(Vec2(visibleSize.width / 2, visibleSize.height * 0.6f - inputBoxSpacing + inputBoxHeight / 2 + verticalSpacing));  // è®¾ç½®æ ‡ç­¾ä½ç½®
     loginLayer->addChild(farmNameLabel);
 
-    // ´´½¨×îÏ²»¶µÄ¶«Î÷ÊäÈë¿ò±³¾°Í¼
+    // åˆ›å»ºæœ€å–œæ¬¢çš„ä¸œè¥¿è¾“å…¥æ¡†èƒŒæ™¯å›¾
     auto favoriteInputBackground = cocos2d::ui::Scale9Sprite::create("../Resources/Helloworld/textBox.png");
-    favoriteInputBackground->setContentSize(Size(300, inputBoxHeight));  // ÉèÖÃ±³¾°¿ò´óĞ¡
-    favoriteInputBackground->setPosition(Vec2(visibleSize.width / 2, visibleSize.height * 0.6f - inputBoxSpacing * 2));  // ÉèÖÃ±³¾°Í¼Î»ÖÃ
+    favoriteInputBackground->setContentSize(Size(300, inputBoxHeight));  // è®¾ç½®èƒŒæ™¯æ¡†å¤§å°
+    favoriteInputBackground->setPosition(Vec2(visibleSize.width / 2, visibleSize.height * 0.6f - inputBoxSpacing * 2));  // è®¾ç½®èƒŒæ™¯å›¾ä½ç½®
     loginLayer->addChild(favoriteInputBackground);
 
-    // ´´½¨×îÏ²»¶µÄ¶«Î÷ÊäÈë¿ò
+    // åˆ›å»ºæœ€å–œæ¬¢çš„ä¸œè¥¿è¾“å…¥æ¡†
     auto favoriteInput = cocos2d::ui::TextField::create("Enter your favorite thing", "fonts/arial.ttf", 24);
-    favoriteInput->setMaxLength(20);  // ÉèÖÃ×î´óÊäÈë³¤¶È
-    favoriteInput->setPosition(Vec2(visibleSize.width / 2, visibleSize.height * 0.6f - inputBoxSpacing * 2));  // ÉèÖÃÎ»ÖÃ
-    favoriteInput->setAnchorPoint(Vec2(0.5f, 0.5f));  // ÉèÖÃÃªµãÎªÖĞĞÄ
-    favoriteInput->setTextHorizontalAlignment(TextHAlignment::CENTER); // Ë®Æ½¾ÓÖĞÏÔÊ¾
-    favoriteInput->setTextVerticalAlignment(TextVAlignment::CENTER); // ´¹Ö±¾ÓÖĞÏÔÊ¾
+    favoriteInput->setMaxLength(20);  // è®¾ç½®æœ€å¤§è¾“å…¥é•¿åº¦
+    favoriteInput->setPosition(Vec2(visibleSize.width / 2, visibleSize.height * 0.6f - inputBoxSpacing * 2));  // è®¾ç½®ä½ç½®
+    favoriteInput->setAnchorPoint(Vec2(0.5f, 0.5f));  // è®¾ç½®é”šç‚¹ä¸ºä¸­å¿ƒ
+    favoriteInput->setTextHorizontalAlignment(TextHAlignment::CENTER); // æ°´å¹³å±…ä¸­æ˜¾ç¤º
+    favoriteInput->setTextVerticalAlignment(TextVAlignment::CENTER); // å‚ç›´å±…ä¸­æ˜¾ç¤º
 
-    loginLayer->addChild(favoriteInput);  // ½«ÊäÈë¿òÌí¼Óµ½±³¾°²ãÉÏ
+    loginLayer->addChild(favoriteInput);  // å°†è¾“å…¥æ¡†æ·»åŠ åˆ°èƒŒæ™¯å±‚ä¸Š
 
-    // ´´½¨×îÏ²»¶µÄ¶«Î÷±êÇ©£¨ÌáÊ¾ÎÄ±¾£©
+    // åˆ›å»ºæœ€å–œæ¬¢çš„ä¸œè¥¿æ ‡ç­¾ï¼ˆæç¤ºæ–‡æœ¬ï¼‰
     auto favoriteLabel = Label::createWithTTF("Favorite Thing", "fonts/arial.ttf", 24);
-    favoriteLabel->setPosition(Vec2(visibleSize.width / 2, visibleSize.height * 0.6f - inputBoxSpacing * 2 + inputBoxHeight / 2 + verticalSpacing));  // ÉèÖÃ±êÇ©Î»ÖÃ
+    favoriteLabel->setPosition(Vec2(visibleSize.width / 2, visibleSize.height * 0.6f - inputBoxSpacing * 2 + inputBoxHeight / 2 + verticalSpacing));  // è®¾ç½®æ ‡ç­¾ä½ç½®
     loginLayer->addChild(favoriteLabel);
 
-    // ´´½¨Ìá½»°´Å¥£¨¿ÉÑ¡£©
+    // åˆ›å»ºæäº¤æŒ‰é’®ï¼ˆå¯é€‰ï¼‰
     auto submitButton = cocos2d::ui::Button::create("../Resources/Helloworld/start.png", "../Resources/Helloworld/start_.png");
     submitButton->setPosition(Vec2(visibleSize.width / 2, visibleSize.height * 0.4f - inputBoxSpacing * 2));
     submitButton->addClickEventListener([=](Ref* sender) {
-        // »ñÈ¡ÊäÈëµÄÄÚÈİ
+        // è·å–è¾“å…¥çš„å†…å®¹
         std::string username = usernameInput->getString();
         std::string farmName = farmNameInput->getString();
         std::string favoriteThing = favoriteInput->getString();
 
-        // ÔÚ¿ØÖÆÌ¨´òÓ¡ÊäÈëµÄÄÚÈİ£¨Äã¿ÉÒÔ¸ù¾İĞèÒª´¦ÀíÕâĞ©ĞÅÏ¢£©
+        // åœ¨æ§åˆ¶å°æ‰“å°è¾“å…¥çš„å†…å®¹ï¼ˆä½ å¯ä»¥æ ¹æ®éœ€è¦å¤„ç†è¿™äº›ä¿¡æ¯ï¼‰
         CCLOG("Username: %s, Farm Name: %s, Favorite Thing: %s", username.c_str(), farmName.c_str(), favoriteThing.c_str());
-        // ÔÚ¿ØÖÆÌ¨´òÓ¡ÊäÈëµÄÄÚÈİ£¨Äã¿ÉÒÔ¸ù¾İĞèÒª´¦ÀíÕâĞ©ĞÅÏ¢£©
+        // åœ¨æ§åˆ¶å°æ‰“å°è¾“å…¥çš„å†…å®¹ï¼ˆä½ å¯ä»¥æ ¹æ®éœ€è¦å¤„ç†è¿™äº›ä¿¡æ¯ï¼‰
         CCLOG("Username: %s, Farm Name: %s, Favorite Thing: %s", username.c_str(), farmName.c_str(), favoriteThing.c_str());
 
-        // »ñÈ¡ CharacterInfo µÄÊµÀı
+        // è·å– CharacterInfo çš„å®ä¾‹
         CharacterInfo* characterInfo = CharacterInfo::getInstance();
 
-        // ½«ÊäÈëµÄÄÚÈİ±£´æµ½ CharacterInfo ÊµÀı
+        // å°†è¾“å…¥çš„å†…å®¹ä¿å­˜åˆ° CharacterInfo å®ä¾‹
         characterInfo->setCharacterInfo(username, farmName, favoriteThing);
 
-        // ÕâÀï¼ÓÈëÑéÖ¤£º»ñÈ¡±£´æµÄÊı¾İ²¢´òÓ¡µ½¿ØÖÆÌ¨
+        // è¿™é‡ŒåŠ å…¥éªŒè¯ï¼šè·å–ä¿å­˜çš„æ•°æ®å¹¶æ‰“å°åˆ°æ§åˆ¶å°
         CCLOG("CharacterInfo after saving:");
         CCLOG("Username: %s", characterInfo->getUsername().c_str());
         CCLOG("Farm Name: %s", characterInfo->getFarmName().c_str());
         CCLOG("Favorite Thing: %s", characterInfo->getFavoriteThing().c_str());
 
-        // Òş²ØµÇÂ¼½çÃæ
+        // éšè—ç™»å½•ç•Œé¢
         loginLayer->setVisible(false);
 
-        // ´´½¨ farmScene
-        auto farmScene = FarmScene::createScene();  // ¼ÙÉè farmScene ÒÑ¾­´´½¨
+        // åˆ›å»º farmScene
+        auto farmScene = FarmScene::createScene();  // å‡è®¾ farmScene å·²ç»åˆ›å»º
 
-        // Ê¹ÓÃ TransitionFade ½øĞĞ³¡¾°¹ı¶É
-        auto transition = TransitionFade::create(1.0f, farmScene);  // 1ÃëÖÓµÄ¹ı¶ÉÊ±¼ä
-        Director::getInstance()->replaceScene(transition);  // ÇĞ»»µ½ farmScene
+        // ä½¿ç”¨ TransitionFade è¿›è¡Œåœºæ™¯è¿‡æ¸¡
+        auto transition = TransitionFade::create(1.0f, farmScene);  // 1ç§’é’Ÿçš„è¿‡æ¸¡æ—¶é—´
+        Director::getInstance()->replaceScene(transition);  // åˆ‡æ¢åˆ° farmScene
 
-        // Òş²ØµÇÂ¼½çÃæ
+        // éšè—ç™»å½•ç•Œé¢
         loginLayer->setVisible(false);
         });
     loginLayer->addChild(submitButton);
@@ -262,10 +262,11 @@ void HelloWorld::startGameCallback(Ref* pSender)
 
 }
 
-// exitGameCallback: µ±µã»÷¡°½áÊø¡±°´Å¥Ê±£¬µ÷ÓÃ´Ëº¯Êı
+// exitGameCallback: å½“ç‚¹å‡»â€œç»“æŸâ€æŒ‰é’®æ—¶ï¼Œè°ƒç”¨æ­¤å‡½æ•°
 void HelloWorld::exitGameCallback(Ref* pSender)
 {
-    CCLOG("Exit Game!");  // ´òÓ¡ÈÕÖ¾ĞÅÏ¢£¨ÓÃÓÚµ÷ÊÔ£©
-    // ÍË³öÓÎÏ·£ºÍË³öÓ¦ÓÃ
-    Director::getInstance()->end();  // ½áÊøÓ¦ÓÃ
+    CCLOG("Exit Game!");  // æ‰“å°æ—¥å¿—ä¿¡æ¯ï¼ˆç”¨äºè°ƒè¯•ï¼‰
+    // é€€å‡ºæ¸¸æˆï¼šé€€å‡ºåº”ç”¨
+    Director::getInstance()->end();  // ç»“æŸåº”ç”¨
 }
+
