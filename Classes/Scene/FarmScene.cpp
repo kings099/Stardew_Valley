@@ -8,7 +8,7 @@
  ****************************************************************/
 #include "FarmScene.h"
 #include "SimpleAudioEngine.h"
-
+#include "Manager/TimeManager.h"  // 包含 TimeManager 类头文件
 USING_NS_CC;
 
 Scene* FarmScene::createScene()
@@ -22,10 +22,23 @@ bool FarmScene::init()
     if (!Scene::init()) {
         return false;
     }
-
+   
     // 获取可见区域大小
     auto visibleSize = Director::getInstance()->getVisibleSize();
     auto origin = Director::getInstance()->getVisibleOrigin();
+
+   /*创建时间显示标签
+    auto timeLabel = Label::createWithSystemFont("", "Arial", 24);
+    timeLabel->setPosition(Vec2(visibleSize.width * 0.8f, visibleSize.height * 0.9f));
+    this->addChild(timeLabel, 10);
+
+    // 设置时间显示标签给 TimeManager
+    TimeManager* timeManager = TimeManager::getInstance();
+    timeManager->setTimeLabel(timeLabel);  // 设置时间标签
+
+    // 启动时间更新
+    timeManager->startUpdating();*/
+
 
     // 设置关闭按钮
     auto closeItem = MenuItemImage::create(
@@ -55,6 +68,8 @@ bool FarmScene::init()
     viewController = new GameViewController(character, farmMap);
     this->addChild(viewController, 2); // 控制器无需渲染，层级不重要
 
+    
+
     // 设置更新回调
     this->schedule([this](float deltaTime) {
         if (viewController) {
@@ -70,3 +85,5 @@ void FarmScene::menuCloseCallback(Ref* pSender)
     // 退出游戏
     Director::getInstance()->end();
 }
+
+

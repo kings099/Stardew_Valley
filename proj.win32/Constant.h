@@ -30,4 +30,10 @@ constexpr int RIGHT = 4;													// 方向向右
 
 constexpr float MAP_SCALE = 1.6f;											// 地图缩放大小
 
+const int SECONDS_IN_A_DAY = 86400;                                         // 一天的秒数
+const float TIME_SCALE = 3600.0f;                                             // 游戏时间缩放比例，现实1秒=游戏1分钟
+const int HOURS_IN_A_DAY = 24;                                              // 一天24小时
+const int SECONDS_IN_A_HOUR = 3600;                                           // 每小时60分钟
+const int SEASONS_CHANGE_PERIOD = 30;                                       // 每30天一个季节变化
+const int SECONDS_IN_A_MIN =60;
 #endif // !_CONSTANT_H_

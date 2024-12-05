@@ -1,10 +1,9 @@
 #include "HelloWorldScene.h"
 #include "SimpleAudioEngine.h"
-#include"Classes/Maps/FarmMap.h"
-#include "Classes/Control/GameViewController.h"
 #include "ui/CocosGUI.h"
 #include "Classes/Character/CharacterInfo.h"
 #include "FarmScene.h"
+#include "Manager/TimeManager.h"  // 包含 TimeManager 类头文件
 
 USING_NS_CC;
 
@@ -34,11 +33,7 @@ bool HelloWorld::init()
 
     // 加载背景图片
     this->initBackground();
-    // 创建并初始化时间显示的 Label
-    auto timeLabel = Label::createWithTTF("hhhhhh", "fonts/arial.ttf", 24);
-    timeLabel->setPosition(Vec2(20, 20));  // 设置位置
-    this->addChild(timeLabel, 2);  // 将 Label 添加到场景
-
+ 
 
     // 加载并设置游戏标题图片
     titleSprite = Sprite::create("../Resources/Helloworld/gameTitle.png");  // 你的标题图片文件
@@ -228,9 +223,7 @@ void HelloWorld::startGameCallback(Ref* pSender)
 
         // 在控制台打印输入的内容（你可以根据需要处理这些信息）
         CCLOG("Username: %s, Farm Name: %s, Favorite Thing: %s", username.c_str(), farmName.c_str(), favoriteThing.c_str());
-        // 在控制台打印输入的内容（你可以根据需要处理这些信息）
-        CCLOG("Username: %s, Farm Name: %s, Favorite Thing: %s", username.c_str(), farmName.c_str(), favoriteThing.c_str());
-
+       
         // 获取 CharacterInfo 的实例
         CharacterInfo* characterInfo = CharacterInfo::getInstance();
 
@@ -258,7 +251,7 @@ void HelloWorld::startGameCallback(Ref* pSender)
         });
     loginLayer->addChild(submitButton);
 
-
+   
 
 }
 
