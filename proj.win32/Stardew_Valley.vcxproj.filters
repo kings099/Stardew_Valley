@@ -51,6 +51,9 @@
     <ClCompile Include="..\Classes\Character\CharacterObjectList.cpp">
       <Filter>Classes\Character</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\Character\CharacterObjectList.cpp">
+      <Filter>Classes\Character</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -78,6 +81,9 @@
       <Filter>Classes\HoverCursor</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Character\Character.h">
+      <Filter>Classes\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Character\CharacterObjectList.h">
       <Filter>Classes\Character</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Character\CharacterObjectList.h">

@@ -18,8 +18,10 @@
 #include "CharacterMove.h"
 #include "../proj.win32/Constant.h"
 
+
 USING_NS_CC;
 
+<<<<<<< Updated upstream
 //创建对象
 CharacterMove* CharacterMove::create(const std::string& filename) {
     CharacterMove* ret = new(std::nothrow) CharacterMove();
@@ -118,6 +120,21 @@ bool Character::init(const std::string& filename) {
 >>>>>>> Stashed changes
     return true;
 }
+=======
+// 构造函数
+CharacterMove::CharacterMove() :
+    _moveSpeed(CHARACTER_MOVE_SPEED),
+    _moveUp(false),
+    _moveDown(false),
+    _moveLeft(false),
+    _moveRight(false),
+    _animationPlaying(false),
+    _width(CHARACTER_WIDTH),
+    _height(CHARACTER_HEIGHT),
+    _character(nullptr)
+{}
+
+>>>>>>> Stashed changes
 
 // 按下键盘时的处理
 <<<<<<< Updated upstream
@@ -154,6 +171,7 @@ void CharacterMove::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* event) {
     default:
         break;
     }
+  
 }
 
 // 释放键盘时的处理

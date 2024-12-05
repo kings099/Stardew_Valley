@@ -59,10 +59,27 @@ bool HelloWorld::init()
         this->addChild(label, 1);
     }
 
+<<<<<<< Updated upstream
  
 
     auto character = CharacterMove::create("../Resources/Characters/Bear/BearDownAction1.png");
     this->addChild(character);
+=======
+    // 添加角色
+    //auto character = Character::create("../Resources/Characters/Bear/BearDownAction1.png");
+    //this->addChild(character);
+
+    //// 添加视角控制器
+    //auto viewController = new GameViewController(character,farm_map);
+    //this->addChild(viewController);
+
+    //this->schedule([viewController](float deltaTime) {
+    //    viewController->update(deltaTime);
+    //    }, "ViewControllerUpdate");
+
+
+
+>>>>>>> Stashed changes
     return true;
 }
 

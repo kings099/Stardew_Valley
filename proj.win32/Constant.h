@@ -18,6 +18,7 @@ constexpr float FRAME_RATE = 60.0f;                                         // Ó
 const std::string APPLICATION_TITLE = u8"ĞÇÂ¶¹È Stardew Valley";				// Ó¦ÓÃ³ÌĞò±êÌâ
 
 //²âÊÔÓÃ³£±äÁ¿
+<<<<<<< Updated upstream
 constexpr float MOVE_SPEED = 3.5f;											// ÒÆ¶¯ËÙ¶Èd
 constexpr float MOVE_RATE = FRAME_RATE;										// ÒÆ¶¯Ö¡ÂÊ
 constexpr auto INVIAID_KEY = cocos2d::EventKeyboard::KeyCode::KEY_NONE;		// ÎŞĞ§°´¼ü
@@ -30,13 +31,35 @@ constexpr int DOWN = 2;														// ·½ÏòÏòÏÂ
 constexpr int LEFT = 3;														// ·½ÏòÏò×ó
 constexpr int RIGHT = 4;													// ·½ÏòÏòÓÒ
 =======
+=======
+
+constexpr auto INVIAID_KEY = cocos2d::EventKeyboard::KeyCode::KEY_NONE;		// ÎŞĞ§°´¼ü
+constexpr float ACTION_RATE = 5.0f;											// ¶¯×÷¼ä¸ôÖ¡ÂÊ
+
+// ½ÇÉ«ÊôĞÔ
+constexpr int CHARACTER_WIDTH = 32;											// ½ÇÉ«¿í¶È
+constexpr int CHARACTER_HEIGHT = 32;										// ½ÇÉ«¸ß¶È
+constexpr float CHARACTER_MOVE_SPEED = 5.0f;								// ÒÆ¶¯ËÙ¶È
+
+// µØÍ¼ÉèÖÃ
+constexpr float LERP_SPEED = 0.1f;											// ÊÓ½Ç¹ı¶ÉµÄÆ½»¬¶È
+>>>>>>> Stashed changes
 constexpr float MAP_SCALE = 1.6f;											// µØÍ¼Ëõ·Å´óĞ¡
 >>>>>>> Stashed changes
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 constexpr int MAX_OBJECT_LIST_SIZE_LEVEL1 = 12;								// ±³°üÈİÁ¿µÈ¼¶1
 constexpr int MAX_OBJECT_LIST_SIZE_LEVEL2 = 24;								// ±³°üÈİÁ¿µÈ¼¶2
 constexpr int MAX_OBJECT_LIST_SIZE_LEVEL3 = 36;								// ±³°üÈİÁ¿µÈ¼¶3
 
+<<<<<<< Updated upstream
+=======
+constexpr int MAX_STORAGE_NUM = 999;										// µ¥¸öÎïÆ·µÄ×î´ó´æ´¢ÊıÁ¿
+
+>>>>>>> Stashed changes
 //ÓÎÏ·ÎïÆ·ÀàĞÍ¶¨Òå
 typedef enum {
 	Farm,				// ¸ûÖÖ
@@ -68,6 +91,10 @@ typedef struct {
 	std::string fileName;    // ÎÄ¼şÂ·¾¶
 	std::string name;        // ÎïÆ·Ãû³Æ
 	GameObjectType type;	 // ÎïÆ·ÀàĞÍ
+<<<<<<< Updated upstream
+=======
+	int maxStorage;          // ÎïÆ·×î´ó´æ´¢Á¿
+>>>>>>> Stashed changes
 	int level;               // ÎïÆ·µÈ¼¶
 	bool sale;               // ÊÇ·ñÄÜ³öÊÛ
 	int salePrice;           // ³öÊÛ¼Û¸ñ
@@ -83,7 +110,11 @@ typedef struct {
 
 // ÓÎÏ·ÎïÆ·ÀàĞÍ¶¨Òå
 typedef enum {
+<<<<<<< Updated upstream
 	None,				// ÎŞĞ§ÎïÆ·
+=======
+	None,				// ¿ÕÎïÆ·
+>>>>>>> Stashed changes
 	Tool,				// ¹¤¾ß
 	Base,				// »ù´¡ÎïÆ·
 	Compose				// ºÏ³ÉÎïÆ·
