@@ -1,8 +1,8 @@
 /****************************************************************
  * Project Name:  Stardew_Valley
  * File Name:     FarmScene.h
- * File Function: Å©³¡³¡¾°ÀàFamrSceneµÄÊµÏÖ
- * Author:        ½ğºãÓî
+ * File Function: å†œåœºåœºæ™¯ç±»FamrSceneçš„å®ç°
+ * Author:        é‡‘æ’å®‡
  * Update Date:   2024/12/5
  * License:       MIT License
  ****************************************************************/
@@ -18,24 +18,24 @@ Scene* FarmScene::createScene()
 
 bool FarmScene::init()
 {
-    // µ÷ÓÃ¸¸Àà³õÊ¼»¯
+    // è°ƒç”¨çˆ¶ç±»åˆå§‹åŒ–
     if (!Scene::init()) {
         return false;
     }
 
-    // »ñÈ¡¿É¼ûÇøÓò´óĞ¡
-    const auto visibleSize = Director::getInstance()->getVisibleSize();
-    const auto origin = Director::getInstance()->getVisibleOrigin();
+    // è·å–å¯è§åŒºåŸŸå¤§å°
+    auto visibleSize = Director::getInstance()->getVisibleSize();
+    auto origin = Director::getInstance()->getVisibleOrigin();
 
-    // ÉèÖÃ¹Ø±Õ°´Å¥
+    // è®¾ç½®å…³é—­æŒ‰é’®
     auto closeItem = MenuItemImage::create(
         "CloseNormal.png",
         "CloseSelected.png",
         CC_CALLBACK_1(FarmScene::menuCloseCallback, this));
 
     if (closeItem != nullptr) {
-        const float x = origin.x + visibleSize.width - closeItem->getContentSize().width / 2;
-        const float y = origin.y + closeItem->getContentSize().height / 2;
+        float x = origin.x + visibleSize.width - closeItem->getContentSize().width / 2;
+        float y = origin.y + closeItem->getContentSize().height / 2;
         closeItem->setPosition(Vec2(x, y));
     }
 
@@ -43,19 +43,19 @@ bool FarmScene::init()
     menu->setPosition(Vec2::ZERO);
     this->addChild(menu, 1);
 
-    // ¼ÓÔØÅ©³¡µØÍ¼
+    // åŠ è½½å†œåœºåœ°å›¾
     farmMap = FarmMap::create("../Resources/Maps/Farm/farm2.tmx");
-    this->addChild(farmMap, 0); // µØÍ¼ÖÃÓÚ×îµ×²ã
+    this->addChild(farmMap, 0); // åœ°å›¾ç½®äºæœ€åº•å±‚
 
-    // ¼ÓÔØ½ÇÉ«
-    Character* character = new Character("../Resources/Characters/Bear/BearDownAction1.png");
-    this->addChild(character, 1); // ½ÇÉ«Î»ÓÚµØÍ¼Ö®ÉÏ
+    // åŠ è½½è§’è‰²
+    character = new  Character("../Resources/Characters/Bear/BearDownAction1.png");
+    this->addChild(character, 1); // è§’è‰²ä½äºåœ°å›¾ä¹‹ä¸Š
 
-    // ´´½¨ÊÓ½Ç¿ØÖÆÆ÷
+    // åˆ›å»ºè§†è§’æ§åˆ¶å™¨
     viewController = new GameViewController(character, farmMap);
-    this->addChild(viewController, 2); // ¿ØÖÆÆ÷ÎŞĞèäÖÈ¾£¬²ã¼¶²»ÖØÒª
+    this->addChild(viewController, 2); // æ§åˆ¶å™¨æ— éœ€æ¸²æŸ“ï¼Œå±‚çº§ä¸é‡è¦
 
-    // ÉèÖÃ¸üĞÂ»Øµ÷
+    // è®¾ç½®æ›´æ–°å›è°ƒ
     this->schedule([this](float deltaTime) {
         if (viewController) {
             viewController->update(deltaTime);
@@ -67,6 +67,6 @@ bool FarmScene::init()
 
 void FarmScene::menuCloseCallback(Ref* pSender)
 {
-    // ÍË³öÓÎÏ·
+    // é€€å‡ºæ¸¸æˆ
     Director::getInstance()->end();
 }

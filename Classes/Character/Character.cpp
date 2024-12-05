@@ -1,9 +1,9 @@
 /****************************************************************
  * Project Name:  Stardew Valley
  * File Name:     Character.cpp
- * File Function: CharacterÀàµÄÊµÏÖ
- * Author:        Òü³Ï³É
- * Update Date:   2023/12/04
+ * File Function: Characterç±»çš„å®ç°
+ * Author:        å°¹è¯šæˆ
+ * Update Date:   2023/12/06
  * License:       MIT License
  ****************************************************************/
 
@@ -12,46 +12,42 @@
 
 USING_NS_CC;
 
-// ¹¹Ôìº¯Êı
+// æ„é€ å‡½æ•°
 Character::Character(const std::string& filename) {
     const auto visibleSize = Director::getInstance()->getVisibleSize();
     const Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
-    // ´´½¨¾«Áé²¢ÉèÖÃ³õÊ¼Î»ÖÃ
+    // åˆ›å»ºç²¾çµå¹¶è®¾ç½®åˆå§‹ä½ç½®
     _character = Sprite::create(filename);
     _character->setPosition(Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y));
     this->cocos2d::Node::addChild(_character);
 
-    // ¼üÅÌ¼àÊÓÊÂ¼ş
+    // é”®ç›˜ç›‘è§†äº‹ä»¶
     auto listener = EventListenerKeyboard::create();
     listener->onKeyPressed = CC_CALLBACK_2(Character::onKeyPressed, this);
     listener->onKeyReleased = CC_CALLBACK_2(Character::onKeyReleased, this);
     _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
 
-  /*  auto listener2 = EventListenerKeyboard::create();
-    listener2->onKeyPressed = CC_CALLBACK_2(CharacterObjectList::onKeyPressed, this);
-    _eventDispatcher->addEventListenerWithSceneGraphPriority(listener2, this);*/
-  
 }
 
-// °´ÏÂ¼üÅÌÊ±µÄ´¦Àí
+// æŒ‰ä¸‹é”®ç›˜æ—¶çš„å¤„ç†
 void Character::onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event) {
-    // ½ÇÉ«ÒÆ¶¯´¦Àíº¯Êı
+    // è§’è‰²ç§»åŠ¨å¤„ç†å‡½æ•°
     if (!openObjectList) {
         CharacterMove::onKeyPressed(keyCode, event);
     }
     CharacterObjectList::onKeyPressed(keyCode, event);
 }
 
-// ÊÍ·Å¼üÅÌÊ±µÄ´¦Àí
+// é‡Šæ”¾é”®ç›˜æ—¶çš„å¤„ç†
 void Character::onKeyReleased(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event) {
-    // ½ÇÉ«ÒÆ¶¯´¦Àíº¯Êı
+    // è§’è‰²ç§»åŠ¨å¤„ç†å‡½æ•°
     if (!openObjectList) {
         CharacterMove::onKeyReleased(keyCode, event);
     }
 }
 
-// ¸üĞÂ½ÇÉ«Î»ÖÃ
+// æ›´æ–°è§’è‰²ä½ç½®
 Vec2 Character::updatePosition(float deltaTime) {
     return CharacterMove::updatePosition(deltaTime);
 }

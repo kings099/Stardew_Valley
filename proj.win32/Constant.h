@@ -5,144 +5,116 @@
 #include "cocos2d.h"
 #include <string>
 
-// Ó¦ÓÃ³ÌĞòÉèÖÃ
-constexpr int DESIGN_RESOLUTION_WIDTH = 1024;                               // Éè¼Æ·Ö±æÂÊ¿í¶È
-constexpr int DESIGN_RESOLUTION_HEIGHT = 768;                               // Éè¼Æ·Ö±æÂÊ¸ß¶È
-constexpr int SMALL_RESOLUTION_WIDTH = 480;                                 // Ğ¡·Ö±æÂÊ¿í¶È
-constexpr int SMALL_RESOLUTION_HEIGHT = 320;                                // Ğ¡·Ö±æÂÊ¸ß¶È
-constexpr int MEDIUM_RESOLUTION_WIDTH = 1024;                               // ÖĞ·Ö±æÂÊ¿í¶È
-constexpr int MEDIUM_RESOLUTION_HEIGHT = 768;                               // ÖĞ·Ö±æÂÊ¸ß¶È
-constexpr int LARGE_RESOLUTION_WIDTH = 2048;                                // ´ó·Ö±æÂÊ¿í¶È
-constexpr int LARGE_RESOLUTION_HEIGHT = 1536;                               // ´ó·Ö±æÂÊ¸ß¶È
-constexpr float FRAME_RATE = 60.0f;                                         // Ó¦ÓÃ³ÌĞòÖ¡ÂÊ
-const std::string APPLICATION_TITLE = u8"ĞÇÂ¶¹È Stardew Valley";				// Ó¦ÓÃ³ÌĞò±êÌâ
+// åº”ç”¨ç¨‹åºè®¾ç½®
+constexpr int DESIGN_RESOLUTION_WIDTH = 1024;                               // è®¾è®¡åˆ†è¾¨ç‡å®½åº¦
+constexpr int DESIGN_RESOLUTION_HEIGHT = 768;                               // è®¾è®¡åˆ†è¾¨ç‡é«˜åº¦
+constexpr int SMALL_RESOLUTION_WIDTH = 480;                                 // å°åˆ†è¾¨ç‡å®½åº¦
+constexpr int SMALL_RESOLUTION_HEIGHT = 320;                                // å°åˆ†è¾¨ç‡é«˜åº¦
+constexpr int MEDIUM_RESOLUTION_WIDTH = 1024;                               // ä¸­åˆ†è¾¨ç‡å®½åº¦
+constexpr int MEDIUM_RESOLUTION_HEIGHT = 768;                               // ä¸­åˆ†è¾¨ç‡é«˜åº¦
+constexpr int LARGE_RESOLUTION_WIDTH = 2048;                                // å¤§åˆ†è¾¨ç‡å®½åº¦
+constexpr int LARGE_RESOLUTION_HEIGHT = 1536;                               // å¤§åˆ†è¾¨ç‡é«˜åº¦
+constexpr float FRAME_RATE = 60.0f;                                         // åº”ç”¨ç¨‹åºå¸§ç‡
+const std::string APPLICATION_TITLE = u8"æ˜Ÿéœ²è°· Stardew Valley";				// åº”ç”¨ç¨‹åºæ ‡é¢˜
 
-//²âÊÔÓÃ³£±äÁ¿
-<<<<<<< Updated upstream
-constexpr float MOVE_SPEED = 3.5f;											// ÒÆ¶¯ËÙ¶Èd
-constexpr float MOVE_RATE = FRAME_RATE;										// ÒÆ¶¯Ö¡ÂÊ
-constexpr auto INVIAID_KEY = cocos2d::EventKeyboard::KeyCode::KEY_NONE;		// ÎŞĞ§°´¼ü
-constexpr float ACTION_RATE = 5.0f;											// ¶¯×÷¼ä¸ôÖ¡ÂÊ
+//æµ‹è¯•ç”¨å¸¸å˜é‡
+constexpr float MOVE_SPEED = 3.5f;											// ç§»åŠ¨é€Ÿåº¦
+constexpr float MOVE_RATE = FRAME_RATE;										// ç§»åŠ¨å¸§ç‡
+constexpr auto INVIAID_KEY = cocos2d::EventKeyboard::KeyCode::KEY_NONE;		// æ— æ•ˆæŒ‰é”®
+constexpr float ACTION_RATE = 5.0f;											// åŠ¨ä½œé—´éš”å¸§ç‡
 
-<<<<<<< Updated upstream
-constexpr int STAY = 0;														// ¾²Ö¹
-constexpr int UP = 1;														// ·½ÏòÏòÉÏ
-constexpr int DOWN = 2;														// ·½ÏòÏòÏÂ
-constexpr int LEFT = 3;														// ·½ÏòÏò×ó
-constexpr int RIGHT = 4;													// ·½ÏòÏòÓÒ
-=======
-=======
 
-constexpr auto INVIAID_KEY = cocos2d::EventKeyboard::KeyCode::KEY_NONE;		// ÎŞĞ§°´¼ü
-constexpr float ACTION_RATE = 5.0f;											// ¶¯×÷¼ä¸ôÖ¡ÂÊ
 
-// ½ÇÉ«ÊôĞÔ
-constexpr int CHARACTER_WIDTH = 32;											// ½ÇÉ«¿í¶È
-constexpr int CHARACTER_HEIGHT = 32;										// ½ÇÉ«¸ß¶È
-constexpr float CHARACTER_MOVE_SPEED = 5.0f;								// ÒÆ¶¯ËÙ¶È
+// è§’è‰²å±æ€§
+constexpr int CHARACTER_WIDTH = 32;											// è§’è‰²å®½åº¦
+constexpr int CHARACTER_HEIGHT = 32;										// è§’è‰²é«˜åº¦
+constexpr float CHARACTER_MOVE_SPEED = 5.0f;								// ç§»åŠ¨é€Ÿåº¦
 
-// µØÍ¼ÉèÖÃ
-constexpr float LERP_SPEED = 0.1f;											// ÊÓ½Ç¹ı¶ÉµÄÆ½»¬¶È
->>>>>>> Stashed changes
-constexpr float MAP_SCALE = 1.6f;											// µØÍ¼Ëõ·Å´óĞ¡
->>>>>>> Stashed changes
+// åœ°å›¾è®¾ç½®
+constexpr float LERP_SPEED = 0.1f;											// è§†è§’è¿‡æ¸¡çš„å¹³æ»‘åº¦
+constexpr float MAP_SCALE = 1.6f;											// åœ°å›¾ç¼©æ”¾å¤§å°
 
-<<<<<<< Updated upstream
-=======
+constexpr int MAX_OBJECT_LIST_SIZE_LEVEL1 = 12;								// èƒŒåŒ…å®¹é‡ç­‰çº§1
+constexpr int MAX_OBJECT_LIST_SIZE_LEVEL2 = 24;								// èƒŒåŒ…å®¹é‡ç­‰çº§2
+constexpr int MAX_OBJECT_LIST_SIZE_LEVEL3 = 36;								// èƒŒåŒ…å®¹é‡ç­‰çº§3
+constexpr int MAX_STORAGE_NUM = 999;										// å•ä¸ªç‰©å“çš„æœ€å¤§å­˜å‚¨æ•°é‡
 
->>>>>>> Stashed changes
-constexpr int MAX_OBJECT_LIST_SIZE_LEVEL1 = 12;								// ±³°üÈİÁ¿µÈ¼¶1
-constexpr int MAX_OBJECT_LIST_SIZE_LEVEL2 = 24;								// ±³°üÈİÁ¿µÈ¼¶2
-constexpr int MAX_OBJECT_LIST_SIZE_LEVEL3 = 36;								// ±³°üÈİÁ¿µÈ¼¶3
-
-<<<<<<< Updated upstream
-=======
-constexpr int MAX_STORAGE_NUM = 999;										// µ¥¸öÎïÆ·µÄ×î´ó´æ´¢ÊıÁ¿
-
->>>>>>> Stashed changes
-//ÓÎÏ·ÎïÆ·ÀàĞÍ¶¨Òå
+//æ¸¸æˆç‰©å“ç±»å‹å®šä¹‰
 typedef enum {
-	Farm,				// ¸ûÖÖ
-	Collect,			// ²É¼¯
-	Mine,				// ²É¿ó
-	Fish				// µöÓã
+	Farm,				// è€•ç§
+	Collect,			// é‡‡é›†
+	Mine,				// é‡‡çŸ¿
+	Fish				// é’“é±¼
 }GameObjectType;
 
-// ÓÎÏ·¹¤¾ßÀàĞÍ¶¨Òå
+// æ¸¸æˆå·¥å…·ç±»å‹å®šä¹‰
 typedef enum {
-	Hoe,				// ³úÍ·
-	Ax,					// ¸«Í·
-	Pickaxe,			// ¸ä×Ó
-	FishingRod,			// Óã¸Í
-	Kettle				// Ë®ºø
+	Hoe,				// é”„å¤´
+	Ax,					// æ–§å¤´
+	Pickaxe,			// é•å­
+	FishingRod,			// é±¼ç«¿
+	Kettle				// æ°´å£¶
 }GameTools;
 
-// ÓÎÏ·¹¤¾ßÎïÆ·ÊôĞÔ¶¨Òå
+// æ¸¸æˆå·¥å…·ç‰©å“å±æ€§å®šä¹‰
 typedef struct {
-	std::string fileName;    // ÎÄ¼şÂ·¾¶
-	std::string name;        // ¹¤¾ßÃû³Æ
-	GameObjectType type;	 // ¹¤¾ßÀàĞÍ
-	int level;               // ¹¤¾ßµÈ¼¶
-	int durability;          // ¹¤¾ßÄÍ¾Ã¶È(Õë¶ÔË®ºø)
+	std::string fileName;    // æ–‡ä»¶è·¯å¾„
+	std::string name;        // å·¥å…·åç§°
+	GameObjectType type;	 // å·¥å…·ç±»å‹
+	int level;               // å·¥å…·ç­‰çº§
+	int durability;          // å·¥å…·è€ä¹…åº¦(é’ˆå¯¹æ°´å£¶)
 }GameToolObject;
 
-// ÓÎÏ·»ù´¡ÎïÆ·ÊôĞÔ¶¨Òå
+// æ¸¸æˆåŸºç¡€ç‰©å“å±æ€§å®šä¹‰
 typedef struct {
-	std::string fileName;    // ÎÄ¼şÂ·¾¶
-	std::string name;        // ÎïÆ·Ãû³Æ
-	GameObjectType type;	 // ÎïÆ·ÀàĞÍ
-<<<<<<< Updated upstream
-=======
-	int maxStorage;          // ÎïÆ·×î´ó´æ´¢Á¿
->>>>>>> Stashed changes
-	int level;               // ÎïÆ·µÈ¼¶
-	bool sale;               // ÊÇ·ñÄÜ³öÊÛ
-	int salePrice;           // ³öÊÛ¼Û¸ñ
-	bool eat;                // ÊÇ·ñ¿ÉÒÔÊ³ÓÃ
-	int eatEnegry;           // Ê³ÓÃ»Ö¸´µÄÄÜÁ¿Öµ
+	std::string fileName;    // æ–‡ä»¶è·¯å¾„
+	std::string name;        // ç‰©å“åç§°
+	GameObjectType type;	 // ç‰©å“ç±»å‹
+	int maxStorage;          // ç‰©å“æœ€å¤§å­˜å‚¨é‡
+	int level;               // ç‰©å“ç­‰çº§
+	bool sale;               // æ˜¯å¦èƒ½å‡ºå”®
+	int salePrice;           // å‡ºå”®ä»·æ ¼
+	bool eat;                // æ˜¯å¦å¯ä»¥é£Ÿç”¨
+	int eatEnegry;           // é£Ÿç”¨æ¢å¤çš„èƒ½é‡å€¼
 }GameBaseObject;
 
-// ÓÎÏ·ºÏ³ÉÎïÆ·ÊôĞÔ¶¨Òå
+// æ¸¸æˆåˆæˆç‰©å“å±æ€§å®šä¹‰
 typedef struct {
-	GameBaseObject baseObject;					// »ù´¡ÎïÆ·ÊôĞÔ
-	std::map<std::string,int> ingredients;		// ºÏ³ÉÎïÆ·µÄÔ­ÁÏ
+	GameBaseObject baseObject;					// åŸºç¡€ç‰©å“å±æ€§
+	std::map<std::string, int> ingredients;		// åˆæˆç‰©å“çš„åŸæ–™
 }GameComposeObject;
 
-// ÓÎÏ·ÎïÆ·ÀàĞÍ¶¨Òå
+// æ¸¸æˆç‰©å“ç±»å‹å®šä¹‰
 typedef enum {
-<<<<<<< Updated upstream
-	None,				// ÎŞĞ§ÎïÆ·
-=======
-	None,				// ¿ÕÎïÆ·
->>>>>>> Stashed changes
-	Tool,				// ¹¤¾ß
-	Base,				// »ù´¡ÎïÆ·
-	Compose				// ºÏ³ÉÎïÆ·
+	None,				// ç©ºç‰©å“=
+	Tool,				// å·¥å…·
+	Base,				// åŸºç¡€ç‰©å“
+	Compose				// åˆæˆç‰©å“
 }GameObjectMapType;
 
-// ÓÎÏ·Í¨ÓÃÎïÆ·ÊôĞÔ¶¨Òå
+// æ¸¸æˆé€šç”¨ç‰©å“å±æ€§å®šä¹‰
 typedef struct {
-	GameObjectMapType type;							// ÎïÆ·ÀàĞÍ
-	void* object;									// ÎïÆ·¶ÔÏó
+	GameObjectMapType type;							// ç‰©å“ç±»å‹
+	void* object;									// ç‰©å“å¯¹è±¡
 }GameCommonObject;
 
-// ÓÎÏ·¹¤¾ßÎïÆ·ÊôĞÔ²ÎÊı¶¨Òå
+// æ¸¸æˆå·¥å…·ç‰©å“å±æ€§å‚æ•°å®šä¹‰
 const std::map<int, GameToolObject> GAME_TOOL_OBJECTS_ATTRS = {
-	{1,{"","³úÍ·",Farm,1,INT_MAX}},					// ³úÍ·
-	{2,{"","¸«Í·",Collect,1,INT_MAX}},				// ¸«Í·
-	{3,{"","¸ä×Ó",Mine,1,INT_MAX}},					// ¸ä×Ó
-	{4,{"","Óã¸Í",Fish,1,INT_MAX}},					// Óã¸Í
-	{5,{"","Ë®ºø",Farm,1,40}},						// Ë®ºø(Ò»¼¶)
-	{6,{"","Ë®ºø",Farm,2,55}},						// Ë®ºø(¶ş¼¶)
-	{7,{"","Ë®ºø",Farm,3,70}},						// Ë®ºø(Èı¼¶)
+	{1,{"","é”„å¤´",Farm,1,INT_MAX}},					// é”„å¤´
+	{2,{"","æ–§å¤´",Collect,1,INT_MAX}},				// æ–§å¤´
+	{3,{"","é•å­",Mine,1,INT_MAX}},					// é•å­
+	{4,{"","é±¼ç«¿",Fish,1,INT_MAX}},					// é±¼ç«¿
+	{5,{"","æ°´å£¶",Farm,1,40}},						// æ°´å£¶(ä¸€çº§)
+	{6,{"","æ°´å£¶",Farm,2,55}},						// æ°´å£¶(äºŒçº§)
+	{7,{"","æ°´å£¶",Farm,3,70}},						// æ°´å£¶(ä¸‰çº§)
 };
 
-// ÓÎÏ·»ù´¡ÎïÆ·ÊôĞÔ²ÎÊı¶¨Òå
+// æ¸¸æˆåŸºç¡€ç‰©å“å±æ€§å‚æ•°å®šä¹‰
 const std::map<int, GameBaseObject> GAME_BASE_OBJECTS_ATTRS = {
 
 };
 
-// ÓÎÏ·ºÏ³ÉÎïÆ·ÊôĞÔ²ÎÊı¶¨Òå
+// æ¸¸æˆåˆæˆç‰©å“å±æ€§å‚æ•°å®šä¹‰
 const std::map<int, GameComposeObject> GAME_COMPOSE_OBJECTS_ATTRS = {
 
 };

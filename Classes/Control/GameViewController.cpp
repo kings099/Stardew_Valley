@@ -1,8 +1,8 @@
 /****************************************************************
  * Project Name:  Stardew_Valley
  * File Name:     GameViewController.cpp
- * File Function: ÓÎÏ·ÊÓ½Ç¿ØÖÆÀàGameViewControllerµÄÊµÏÖ
- * Author:        ½ðºãÓî
+ * File Function: æ¸¸æˆè§†è§’æŽ§åˆ¶ç±»GameViewControllerçš„å®žçŽ°
+ * Author:        é‡‘æ’å®‡
  * Update Date:   2024/12/4
  * License:       MIT License
  ****************************************************************/
@@ -16,27 +16,28 @@ GameViewController::GameViewController(Character* character,FarmMap* farmmap)
 
 void GameViewController::update(float deltaTime) {
     
-    // »ñÈ¡½ÇÉ«µÄÎ»ÖÃ
-    const Vec2 characterPosition = _character->updatePosition(deltaTime);
+    // èŽ·å–è§’è‰²çš„ä½ç½®
+    Vec2 characterPosition = _character->updatePosition(deltaTime);
 
-    const Vec2 mapPosition = _farmmap->getPosition();
-    const Size mapSize = _farmmap->getMapSize();
+    Vec2 mapPosition = _farmmap->getPosition();
+    Size mapSize = _farmmap->getMapSize();
 
-    // »ñÈ¡ÆÁÄ»¿ÉÊÓÇøÓò´óÐ¡
-    const auto visibleSize = Director::getInstance()->getVisibleSize();
+    // èŽ·å–å±å¹•å¯è§†åŒºåŸŸå¤§å°
+    auto visibleSize = Director::getInstance()->getVisibleSize(); 
 
-    // ¼ÆËãÉãÏñ»úÓ¦¸ÃµÄÎ»ÖÃ£ºÈ·±£½ÇÉ«Ê¼ÖÕ´¦ÓÚÆÁÄ»ÖÐÑëÇÒÏÞÖÆÉãÏñ»úÎ»ÖÃÈ·±£²»³¬³öµØÍ¼µÄ±ß½ç
+    // è®¡ç®—æ‘„åƒæœºåº”è¯¥çš„ä½ç½®ï¼šç¡®ä¿è§’è‰²å§‹ç»ˆå¤„äºŽå±å¹•ä¸­å¤®ä¸”é™åˆ¶æ‘„åƒæœºä½ç½®ç¡®ä¿ä¸è¶…å‡ºåœ°å›¾çš„è¾¹ç•Œ
     Vec2 targetCameraPosition;
     targetCameraPosition.x = std::max(characterPosition.x - mapPosition.x  , visibleSize.width / 2);
     targetCameraPosition.y = std::max(characterPosition.y - mapPosition.y, visibleSize.height / 2);
     targetCameraPosition.x = std::min(targetCameraPosition.x, mapSize.width - visibleSize.width / 2);
     targetCameraPosition.y = std::min(targetCameraPosition.y, mapSize.height - visibleSize.height / 2);
 
-    // »ñÈ¡Ä¬ÈÏµÄÉãÏñ»ú²¢Æ½»¬µØ¸üÐÂËüµÄÎ»ÖÃ
+    // èŽ·å–é»˜è®¤çš„æ‘„åƒæœºå¹¶å¹³æ»‘åœ°æ›´æ–°å®ƒçš„ä½ç½®
     auto camera = Director::getInstance()->getRunningScene()->getDefaultCamera();
-    const Vec2 currentCameraPosition = camera->getPosition();
+    Vec2 currentCameraPosition = camera->getPosition();
 
-    // ÒÔ½ÏÂýµÄËÙ¶ÈÆ½»¬¹ý¶ÉÉãÏñ»úÎ»ÖÃ
-    const Vec2 newCameraPosition = currentCameraPosition.lerp(targetCameraPosition, LERP_SPEED);
+    // ä»¥è¾ƒæ…¢çš„é€Ÿåº¦å¹³æ»‘è¿‡æ¸¡æ‘„åƒæœºä½ç½®
+    float lerpSpeed = 0.1f; // è°ƒæ•´æ­¤å€¼ä»¥æ”¹å˜è¿‡æ¸¡çš„å¹³æ»‘åº¦
+    Vec2 newCameraPosition = currentCameraPosition.lerp(targetCameraPosition, lerpSpeed);
     camera->setPosition(newCameraPosition);
 }
