@@ -18,7 +18,7 @@ constexpr float FRAME_RATE = 60.0f;                                         // Ó
 const std::string APPLICATION_TITLE = u8"ĞÇÂ¶¹È Stardew Valley";				// Ó¦ÓÃ³ÌĞò±êÌâ
 
 //²âÊÔÓÃ³£±äÁ¿
-constexpr float MOVE_SPEED = 5.0f;											// ÒÆ¶¯ËÙ¶È
+constexpr float MOVE_SPEED = 3.5f;											// ÒÆ¶¯ËÙ¶Èd
 constexpr float MOVE_RATE = FRAME_RATE;										// ÒÆ¶¯Ö¡ÂÊ
 constexpr auto INVIAID_KEY = cocos2d::EventKeyboard::KeyCode::KEY_Q;		// ÎŞĞ§°´¼ü
 constexpr float ACTION_RATE = 5.0f;											// ¶¯×÷¼ä¸ôÖ¡ÂÊ
@@ -27,5 +27,7 @@ constexpr int UP = 1;														// ·½ÏòÏòÉÏ
 constexpr int DOWN = 2;														// ·½ÏòÏòÏÂ
 constexpr int LEFT = 3;														// ·½ÏòÏò×ó
 constexpr int RIGHT = 4;													// ·½ÏòÏòÓÒ
+
+constexpr float MAP_SCALE = 1.6f;											// µØÍ¼Ëõ·Å´óĞ¡
 
 #endif // !_CONSTANT_H_

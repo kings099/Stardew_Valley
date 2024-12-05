@@ -1,6 +1,7 @@
 #include "AppDelegate.h"
 #include "../Classes/Scene/HelloWorldScene.h"
 #include "proj.win32/Constant.h"
+#include "Classes/Scene/FarmScene.h"
 
 // #define USE_AUDIO_ENGINE 1
 // #define USE_SIMPLE_AUDIO_ENGINE 1
@@ -94,11 +95,11 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     register_all_packages();
 
-    // create a scene. it's an autorelease object
-    auto scene = HelloWorld::createScene();
+    // 创建农场场景类
+    auto farm_scene = FarmScene::createScene();
 
     // 运行启动场景
-    director->runWithScene(scene);
+    director->runWithScene(farm_scene);
 
     return true;
 }
