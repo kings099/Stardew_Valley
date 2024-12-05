@@ -1,6 +1,6 @@
 /****************************************************************
  * Project Name:  Stardew_Valley
- * File Name:     FarmMap.cpp
+ * File Name:     GameViewController.cpp
  * File Function: 游戏视角控制类GameViewController的实现
  * Author:        金恒宇
  * Update Date:   2024/12/4
@@ -33,7 +33,7 @@ void GameViewController::update(float deltaTime) {
     targetCameraPosition.y = std::min(targetCameraPosition.y, mapSize.height - visibleSize.height / 2);
 
 
-    //CCLOG("%f,%f", characterPosition.x, characterPosition.y);
+
     // 获取默认的摄像机并平滑地更新它的位置
     auto camera = Director::getInstance()->getRunningScene()->getDefaultCamera();
     Vec2 currentCameraPosition = camera->getPosition();

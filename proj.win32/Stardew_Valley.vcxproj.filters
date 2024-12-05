@@ -54,6 +54,9 @@
     <ClCompile Include="..\Classes\Character\Character.cpp">
       <Filter>Classes\Character</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\Scene\FarmScene.cpp">
+      <Filter>Classes\Scene</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -82,6 +85,9 @@
     </ClInclude>
     <ClInclude Include="..\Classes\Character\Character.h">
       <Filter>Classes\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\FarmScene.h">
+      <Filter>Classes\Scene</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

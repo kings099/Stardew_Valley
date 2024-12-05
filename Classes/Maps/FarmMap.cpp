@@ -76,27 +76,28 @@ bool FarmMap::onMouseEvent(cocos2d::Event* event)
         const auto visibleSize = Director::getInstance()->getVisibleSize();
 
         float cameraOffset_x = cameraPosition.x - visibleSize.width / 2;
-        float cameraOffset_y = cameraPosition.y - visibleSize.width / 2;
+        float cameraOffset_y = cameraPosition.y - visibleSize.height / 2;
 
         // 将屏幕坐标修正为相对于地图的绝对坐标
         Vec2 mapPosition(mousePos.x + cameraOffset_x - _mapPosition.x,
             mousePos.y + cameraOffset_y - _mapPosition.y);
 
+        CCLOG("mapPosition:%f,%f", mapPosition.x, mapPosition.y);
         // 转换为瓦片坐标
         Vec2 tiledPos = absoluteToTile(mapPosition);
-
+        CCLOG("tilePos:%f,%f", tiledPos.x, tiledPos.y);
         auto layer = _tileMap->getLayer("Back"); // 确保替换为你实际的图层名称
         int tileGID = layer->getTileGIDAt(tiledPos);
 
-
+        CCLOG("GID: % d", tileGID);
         // 打印点击位置
-        if (tileGID == 1247) {
-            CCLOG("WATER!!!!!!!!!!");
-        }
-        else
-        {
-            CCLOG("SOIL!!!!!!!!!");
-        }
+        //if (tileGID == 1247) {
+        //    CCLOG("WATER!!!!!!!!!!");
+        //}
+        //else
+        //{
+        //    CCLOG("SOIL!!!!!!!!!");
+        //}
 
         // 返回 true 表示事件已处理
         return true;
@@ -110,15 +111,13 @@ Vec2 FarmMap::absoluteToTile(const Vec2& pixelPoint)
 {
     // 获取瓦片的大小
     Size tileSize = _tileMap->getTileSize();
-    // 获取地图的缩放比例
-    float scale = _tileMap->getScale();
 
     float tileX = (pixelPoint.x) / (tileSize.width * MAP_SCALE);
     float tileY = (pixelPoint.y) / (tileSize.height * MAP_SCALE);
-
+    CCLOG("mapheight:%f", _tileMap->getMapSize().height);
+    CCLOG("tileY:%f", tileY);
     // 瓦片地图y轴是从上到下的，需要翻转y轴
-    tileY = _tileMap->getMapSize().height - 1 - tileY - 4; 
-    // 这个位置减4 是因为摄像头位置和角色锚点相同，后续修改一下摄像头位置为角色正中应该就可以
+    tileY = _tileMap->getMapSize().height - tileY; 
 
     return Vec2(floor(tileX), floor(tileY));
 }

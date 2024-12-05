@@ -1,7 +1,7 @@
 /****************************************************************
  * Project Name:  Stardew_Valley
  * File Name:     FarmMap.cpp
- * File Function: 游戏视角控制类GameViewController的
+ * File Function: 游戏视角控制类GameViewController的定义
  * Author:        金恒宇
  * Update Date:   2024/12/4
  * License:       MIT License
