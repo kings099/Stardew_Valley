@@ -28,8 +28,11 @@
     <Filter Include="Classes\Object">
       <UniqueIdentifier>{c4fe4dfe-4100-4b82-8e6c-2b0914a73cad}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\HoverCursor">
+    <Filter Include="Classes\CursorAndButton">
       <UniqueIdentifier>{1f078ca6-391f-4b5a-a555-3e6e8f894005}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\MenuItemImage">
+      <UniqueIdentifier>{d3e94ebb-64c5-4605-b479-7e44a4c1c615}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -66,8 +69,11 @@
     <ClCompile Include="..\Classes\Object\Object.cpp">
       <Filter>Classes\Object</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\HoverCursor\HoverCursor.cpp">
-      <Filter>Classes\HoverCursor</Filter>
+    <ClCompile Include="..\Classes\CursorAndBUutton\HoverCursor.cpp">
+      <Filter>Classes\CursorAndButton</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MenuImage\HoverMenuItemImage.cpp">
+      <Filter>Classes\MenuItemImage</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -107,8 +113,11 @@
     <ClInclude Include="..\Classes\Object\Object.h">
       <Filter>Classes\Object</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\HoverCursor\HoverCursor.h">
-      <Filter>Classes\HoverCursor</Filter>
+    <ClInclude Include="..\Classes\CursorAndBUutton\HoverCursor.h">
+      <Filter>Classes\CursorAndButton</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MenuImage\HoverMenuItemImage.h">
+      <Filter>Classes\MenuItemImage</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

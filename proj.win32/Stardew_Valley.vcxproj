@@ -156,8 +156,9 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)\Resources\" /D /E /I /F /Y
     <ClCompile Include="..\Classes\Character\CharacterMove.cpp" />
     <ClCompile Include="..\Classes\Character\CharacterObjectList.cpp" />
     <ClCompile Include="..\Classes\Control\GameViewController.cpp" />
-    <ClCompile Include="..\Classes\HoverCursor\HoverCursor.cpp" />
+    <ClCompile Include="..\Classes\CursorAndBUutton\HoverCursor.cpp" />
     <ClCompile Include="..\Classes\Maps\FarmMap.cpp" />
+    <ClCompile Include="..\Classes\MenuImage\HoverMenuItemImage.cpp" />
     <ClCompile Include="..\Classes\Object\Object.cpp" />
     <ClCompile Include="..\Classes\Scene\FarmScene.cpp" />
     <ClCompile Include="..\Classes\Scene\HelloWorldScene.cpp" />
@@ -170,8 +171,9 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)\Resources\" /D /E /I /F /Y
     <ClInclude Include="..\Classes\Character\CharacterMove.h" />
     <ClInclude Include="..\Classes\Character\CharacterObjectList.h" />
     <ClInclude Include="..\Classes\Control\GameViewController.h" />
-    <ClInclude Include="..\Classes\HoverCursor\HoverCursor.h" />
+    <ClInclude Include="..\Classes\CursorAndBUutton\HoverCursor.h" />
     <ClInclude Include="..\Classes\Maps\FarmMap.h" />
+    <ClInclude Include="..\Classes\MenuImage\HoverMenuItemImage.h" />
     <ClInclude Include="..\Classes\Object\Object.h" />
     <ClInclude Include="..\Classes\Scene\FarmScene.h" />
     <ClInclude Include="..\Classes\Scene\HelloWorldScene.h" />

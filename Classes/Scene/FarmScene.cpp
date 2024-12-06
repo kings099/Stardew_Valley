@@ -8,6 +8,7 @@
  ****************************************************************/
 #include "FarmScene.h"
 #include "SimpleAudioEngine.h"
+#include "../Classes/MenuImage/HoverMenuItemImage.h"
 
 USING_NS_CC;
 
@@ -28,7 +29,7 @@ bool FarmScene::init()
     auto origin = Director::getInstance()->getVisibleOrigin();
 
     // 设置关闭按钮
-    auto closeItem = MenuItemImage::create(
+    auto closeItem = HoverMenuItemImage::create(
         "CloseNormal.png",
         "CloseSelected.png",
         CC_CALLBACK_1(FarmScene::menuCloseCallback, this));
