@@ -19,9 +19,6 @@
     <Filter Include="Classes\Scene">
       <UniqueIdentifier>{0262298d-970d-4281-ab4e-a9d7424447d7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\HoverMouse">
-      <UniqueIdentifier>{1f078ca6-391f-4b5a-a555-3e6e8f894005}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Classes\Maps">
       <UniqueIdentifier>{95356bf4-3cdb-4baf-86f4-c1ce5aaa57a7}</UniqueIdentifier>
     </Filter>
@@ -30,6 +27,9 @@
     </Filter>
     <Filter Include="Classes\Object">
       <UniqueIdentifier>{c4fe4dfe-4100-4b82-8e6c-2b0914a73cad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\HoverCursor">
+      <UniqueIdentifier>{1f078ca6-391f-4b5a-a555-3e6e8f894005}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -41,9 +41,6 @@
     </ClCompile>
     <ClCompile Include="..\Classes\Scene\HelloWorldScene.cpp">
       <Filter>Classes\Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\HoverMouse\HoverMouse.cpp">
-      <Filter>Classes\HoverMouse</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\Character\CharacterMove.cpp">
       <Filter>Classes\Character</Filter>
@@ -69,6 +66,9 @@
     <ClCompile Include="..\Classes\Object\Object.cpp">
       <Filter>Classes\Object</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\HoverCursor\HoverCursor.cpp">
+      <Filter>Classes\HoverCursor</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -82,9 +82,6 @@
     </ClInclude>
     <ClInclude Include="..\Classes\Scene\HelloWorldScene.h">
       <Filter>Classes\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\HoverMouse\HoverMouse.h">
-      <Filter>Classes\HoverMouse</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Character\CharacterMove.h">
       <Filter>Classes\Character</Filter>
@@ -109,6 +106,9 @@
     </ClInclude>
     <ClInclude Include="..\Classes\Object\Object.h">
       <Filter>Classes\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HoverCursor\HoverCursor.h">
+      <Filter>Classes\HoverCursor</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
