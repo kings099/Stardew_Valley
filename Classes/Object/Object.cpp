@@ -20,15 +20,13 @@ GameToolObject::GameToolObject(const std::string& fileName, const std::string& n
 }
 
 // GameSeedObject的构造函数
-GameSeedObject::GameSeedObject(const std::string& fileName, const std::string& name, GameObjectSkillType type, int level, Season season, int growthDays[MAX_GROWTH_STAGE], int totalGrowTime, int harvestIndex, int buyPrice, int salePrice) {
+GameSeedObject::GameSeedObject(const std::string& fileName, const std::string& name, GameObjectSkillType type, int level, Season season, std::vector<int> growthStages, int totalGrowTime, int harvestIndex, int buyPrice, int salePrice) {
     this->_fileName = fileName;
     this->_name = name;
     this->_type = type;
     this->_level = level;
     this->_season = season;
-    for (int i = 0; i < MAX_GROWTH_STAGE; ++i) {
-        this->_growthDays[i] = growthDays[i];
-    }
+    this-> _growthStages = growthStages;
     this->_totalGrowTime = totalGrowTime;
     this->_harvestIndex = harvestIndex;
     this->_buyPrice = buyPrice;

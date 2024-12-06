@@ -12,6 +12,7 @@
 #define _OBJECT_H_
 
 #include <string>
+#include <vector>
 #include "../proj.win32/Constant.h"
 
 
@@ -76,14 +77,14 @@ class GameSeedObject : public GameObject {
 public:
     int _level;                             // 解锁种子所需等级
     Season _season;                         // 种子生长季节
-    int _growthDays[MAX_GROWTH_STAGE];      // 种子每个阶段所需的生长天数
+    std::vector<int> _growthStages;         // 种子每个阶段所需的生长天数
     int _totalGrowTime;                     // 种子生长总天数
     int _harvestIndex;                      // 种子收获所得的物品索引
     int _buyPrice;                          // 种子购买价格
     int _salePrice;                         // 种子出售价格
 
     // 构造函数
-    GameSeedObject(const std::string& fileName, const std::string& name, GameObjectSkillType type, int level, Season season, int growthDays[MAX_GROWTH_STAGE], int totalGrowTime, int harvestIndex, int buyPrice, int salePrice);
+    GameSeedObject(const std::string& fileName, const std::string& name, GameObjectSkillType type, int level, Season season, std::vector<int> growthStages, int totalGrowTime, int harvestIndex, int buyPrice, int salePrice);
 };
 
 // 游戏基础物品属性定义
