@@ -12,7 +12,9 @@
 USING_NS_CC;
 
 GameViewController::GameViewController(Character* character,FarmMap* farmmap)
-    : _character(character),_farmmap(farmmap) {}
+    : _character(character),_farmmap(farmmap){
+}
+
 
 void GameViewController::update(float deltaTime) {
     
@@ -21,6 +23,11 @@ void GameViewController::update(float deltaTime) {
 
     Vec2 mapPosition = _farmmap->getPosition();
     Size mapSize = _farmmap->getMapSize();
+
+    // 获取摄像机
+    auto camera = Director::getInstance()->getRunningScene()->getDefaultCamera();
+    // 获取当前缩放比例
+    float scale = _character->getScale();
 
     // 获取屏幕可视区域大小
     auto visibleSize = Director::getInstance()->getVisibleSize(); 
@@ -33,9 +40,7 @@ void GameViewController::update(float deltaTime) {
     targetCameraPosition.y = std::min(targetCameraPosition.y, mapSize.height - visibleSize.height / 2);
 
 
-
-    // 获取默认的摄像机并平滑地更新它的位置
-    auto camera = Director::getInstance()->getRunningScene()->getDefaultCamera();
+    // 更新摄影机位置
     Vec2 currentCameraPosition = camera->getPosition();
 
     // 以较慢的速度平滑过渡摄像机位置

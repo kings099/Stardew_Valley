@@ -16,6 +16,8 @@ Scene* FarmScene::createScene()
     return FarmScene::create();
 }
 
+
+
 bool FarmScene::init()
 {
     // 调用父类初始化
@@ -54,7 +56,6 @@ bool FarmScene::init()
     // 创建视角控制器
     viewController = new GameViewController(character, farmMap);
     this->addChild(viewController, 2); // 控制器无需渲染，层级不重要
-
     // 设置更新回调
     this->schedule([this](float deltaTime) {
         if (viewController) {
@@ -62,6 +63,7 @@ bool FarmScene::init()
         }
         }, "ViewControllerUpdate");
 
+    //this->setScale(2.0f);
     return true;
 }
 

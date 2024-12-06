@@ -23,7 +23,7 @@ public:
 
 private:
     Character* _character;  // 角色对象
-    FarmMap* _farmmap;
+    FarmMap* _farmmap;      // 地图对象
 };
 
 #endif // __GAME_VIEW_CONTROLLER_H__

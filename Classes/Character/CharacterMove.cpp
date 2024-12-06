@@ -42,6 +42,7 @@ bool CharacterMove::init(const std::string& filename) {
     _character = Sprite::create(filename);
     _character->setPosition(Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y));
     this->addChild(_character);
+    _character->setScale(2.0);
 
     // 获取精灵的宽高
     _width = _character->getContentSize().width;
