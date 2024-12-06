@@ -1,14 +1,14 @@
 /****************************************************************
  * Project Name:  Stardew_Valley
  * File Name:     FarmScene.h
- * File Function: Å©³¡³¡¾°ÀàFamrSceneµÄÊµÏÖ
- * Author:        ½ğºãÓî
+ * File Function: å†œåœºåœºæ™¯ç±»FarmSceneçš„å®ç°
+ * Author:        é‡‘æ’å®‡
  * Update Date:   2024/12/5
  * License:       MIT License
  ****************************************************************/
 #include "FarmScene.h"
 #include "SimpleAudioEngine.h"
-#include "Manager/TimeManager.h"  // °üº¬ TimeManager ÀàÍ·ÎÄ¼ş
+#include "Manager/TimeManager.h"  // å¼•å…¥ TimeManager å¤´æ–‡ä»¶
 USING_NS_CC;
 
 Scene* FarmScene::createScene()
@@ -18,29 +18,26 @@ Scene* FarmScene::createScene()
 
 bool FarmScene::init()
 {
-    // µ÷ÓÃ¸¸Àà³õÊ¼»¯
+    // è°ƒç”¨çˆ¶ç±»åˆå§‹åŒ–
     if (!Scene::init()) {
         return false;
     }
-   
-    // »ñÈ¡¿É¼ûÇøÓò´óĞ¡
+
+    // è·å–å¯è§åŒºåŸŸå¤§å°
     auto visibleSize = Director::getInstance()->getVisibleSize();
     auto origin = Director::getInstance()->getVisibleOrigin();
 
-   //´´½¨Ê±¼äÏÔÊ¾±êÇ©
+    // è®¾ç½®æ—¶é—´æ˜¾ç¤ºæ ‡ç­¾
     auto timeLabel = Label::createWithSystemFont("", "Arial", 24);
     timeLabel->setPosition(Vec2(visibleSize.width * 0.8f, visibleSize.height * 0.9f));
-    this->addChild(timeLabel,2);
+    this->addChild(timeLabel, 2);
 
-    // ÉèÖÃÊ±¼äÏÔÊ¾±êÇ©¸ø TimeManager
+    // é€šè¿‡ TimeManager æ›´æ–°æ—¶é—´æ˜¾ç¤º
     TimeManager* timeManager = TimeManager::getInstance();
-    timeManager->setTimeLabel(timeLabel);  // ÉèÖÃÊ±¼ä±êÇ©
+    timeManager->setTimeLabel(timeLabel);  // è®¾ç½®æ—¶é—´æ ‡ç­¾
+    timeManager->startUpdating();  // å¼€å§‹æ›´æ–°æ—¶é—´
 
-    // Æô¶¯Ê±¼ä¸üĞÂ
-    timeManager->startUpdating();
-
-
-    // ÉèÖÃ¹Ø±Õ°´Å¥
+    // è®¾ç½®å…³é—­æŒ‰é’®
     auto closeItem = MenuItemImage::create(
         "CloseNormal.png",
         "CloseSelected.png",
@@ -56,34 +53,30 @@ bool FarmScene::init()
     menu->setPosition(Vec2::ZERO);
     this->addChild(menu, 1);
 
-    // ¼ÓÔØÅ©³¡µØÍ¼
+    // åŠ è½½å†œåœºåœ°å›¾
     farmMap = FarmMap::create("../Resources/Maps/Farm/farm2.tmx");
-    this->addChild(farmMap, 0); // µØÍ¼ÖÃÓÚ×îµ×²ã
+    this->addChild(farmMap, 0); // åœ°å›¾ç½®äºæœ€åº•å±‚
 
-    // ¼ÓÔØ½ÇÉ«
-    character = Character::create("../Resources/Characters/Bear/BearDownAction1.png");
-    this->addChild(character, 1); // ½ÇÉ«Î»ÓÚµØÍ¼Ö®ÉÏ
+    // åŠ è½½è§’è‰²
+    character = new Character("../Resources/Characters/Bear/BearDownAction1.png");
+    this->addChild(character, 1); // è§’è‰²ä½äºåœ°å›¾ä¹‹ä¸Š
 
-    // ´´½¨ÊÓ½Ç¿ØÖÆÆ÷
+    // åˆ›å»ºè§†è§’æ§åˆ¶å™¨
     viewController = new GameViewController(character, farmMap);
-    this->addChild(viewController, 2); // ¿ØÖÆÆ÷ÎŞĞèäÖÈ¾£¬²ã¼¶²»ÖØÒª
+    this->addChild(viewController, 2); // æ§åˆ¶å™¨æ— éœ€æ¸²æŸ“ï¼Œå±‚çº§ä¸é‡è¦
 
-    
-
-    // ÉèÖÃ¸üĞÂ»Øµ÷
+    // è®¾ç½®è§†è§’æ›´æ–°å›è°ƒ
     this->schedule([this](float deltaTime) {
         if (viewController) {
             viewController->update(deltaTime);
         }
-        }, "ViewControllerUpdate");
+    }, "ViewControllerUpdate");
 
     return true;
 }
 
 void FarmScene::menuCloseCallback(Ref* pSender)
 {
-    // ÍË³öÓÎÏ·
+    // é€€å‡ºæ¸¸æˆ
     Director::getInstance()->end();
 }
-
-

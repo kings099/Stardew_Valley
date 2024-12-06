@@ -1,40 +1,53 @@
 /****************************************************************
  * Project Name:  Stardew Valley
  * File Name:     Character.cpp
- * File Function: CharacterÀàµÄÊµÏÖ
- * Author:        Òü³Ï³É
- * Update Date:   2023/12/04
+ * File Function: Characterç±»çš„å®ç°
+ * Author:        å°¹è¯šæˆ
+ * Update Date:   2023/12/06
  * License:       MIT License
  ****************************************************************/
 
 #include "Character.h"
+#include "../proj.win32/Constant.h"
 
- // ´´½¨Character¶ÔÏó
-Character* Character::create(const std::string& filename) {
-    Character* character = new (std::nothrow) Character();
-    if (character && character->init(filename)) {
-        character->autorelease();
-        return character;
-    }
-    CC_SAFE_DELETE(character);
-    return nullptr;
+USING_NS_CC;
+
+// æ„é€ å‡½æ•°
+Character::Character(const std::string& filename) {
+    const auto visibleSize = Director::getInstance()->getVisibleSize();
+    const Vec2 origin = Director::getInstance()->getVisibleOrigin();
+
+    // åˆ›å»ºç²¾çµå¹¶è®¾ç½®åˆå§‹ä½ç½®
+    _character = Sprite::create(filename);
+    _character->setPosition(Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y));
+    this->cocos2d::Node::addChild(_character);
+
+    // é”®ç›˜ç›‘è§†äº‹ä»¶
+    auto listener = EventListenerKeyboard::create();
+    listener->onKeyPressed = CC_CALLBACK_2(Character::onKeyPressed, this);
+    listener->onKeyReleased = CC_CALLBACK_2(Character::onKeyReleased, this);
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
+
 }
 
-// ³õÊ¼»¯Character¶ÔÏó
-bool Character::init(const std::string& filename) {
-    if (!CharacterMove::init(filename)) {
-        return false;
-    }
-
-    return true;
-}
-
-// °´ÏÂ¼üÅÌÊ±µÄ´¦Àí
+// æŒ‰ä¸‹é”®ç›˜æ—¶çš„å¤„ç†
 void Character::onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event) {
-    CharacterMove::onKeyPressed(keyCode, event);
+    // è§’è‰²ç§»åŠ¨å¤„ç†å‡½æ•°
+    if (!openObjectList) {
+        CharacterMove::onKeyPressed(keyCode, event);
+    }
+    CharacterObjectList::onKeyPressed(keyCode, event);
 }
 
-// ÊÍ·Å¼üÅÌÊ±µÄ´¦Àí
+// é‡Šæ”¾é”®ç›˜æ—¶çš„å¤„ç†
 void Character::onKeyReleased(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event) {
-    CharacterMove::onKeyReleased(keyCode, event);
+    // è§’è‰²ç§»åŠ¨å¤„ç†å‡½æ•°
+    if (!openObjectList) {
+        CharacterMove::onKeyReleased(keyCode, event);
+    }
+}
+
+// æ›´æ–°è§’è‰²ä½ç½®
+Vec2 Character::updatePosition(float deltaTime) {
+    return CharacterMove::updatePosition(deltaTime);
 }
