@@ -32,8 +32,6 @@ void GameViewController::update(float deltaTime) {
     targetCameraPosition.x = std::min(targetCameraPosition.x, mapSize.width - visibleSize.width / 2);
     targetCameraPosition.y = std::min(targetCameraPosition.y, mapSize.height - visibleSize.height / 2);
 
-
-
     // 获取默认的摄像机并平滑地更新它的位置
     auto camera = Director::getInstance()->getRunningScene()->getDefaultCamera();
     Vec2 currentCameraPosition = camera->getPosition();

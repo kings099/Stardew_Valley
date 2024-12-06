@@ -27,17 +27,17 @@ bool FarmScene::init()
     auto visibleSize = Director::getInstance()->getVisibleSize();
     auto origin = Director::getInstance()->getVisibleOrigin();
 
-   /*创建时间显示标签
+   //创建时间显示标签
     auto timeLabel = Label::createWithSystemFont("", "Arial", 24);
     timeLabel->setPosition(Vec2(visibleSize.width * 0.8f, visibleSize.height * 0.9f));
-    this->addChild(timeLabel, 10);
+    this->addChild(timeLabel,2);
 
     // 设置时间显示标签给 TimeManager
     TimeManager* timeManager = TimeManager::getInstance();
     timeManager->setTimeLabel(timeLabel);  // 设置时间标签
 
     // 启动时间更新
-    timeManager->startUpdating();*/
+    timeManager->startUpdating();
 
 
     // 设置关闭按钮
