@@ -1,8 +1,8 @@
 /****************************************************************
  * Project Name:  Stardew Valley
  * File Name:     CharacterObjectList.cpp
- * File Function: CharacterObjectListÀàµÄÊµÏÖ
- * Author:        Òü³Ï³É
+ * File Function: CharacterObjectListç±»çš„å®ç°
+ * Author:        å°¹è¯šæˆ
  * Update Date:   2023/12/05
  * License:       MIT License
  ****************************************************************/
@@ -13,55 +13,30 @@
 
 USING_NS_CC;
 
-// ¹¹Ôìº¯Êı
-<<<<<<< Updated upstream
-CharacterObjectList::CharacterObjectList() :_maxObjectCount(MAX_OBJECT_LIST_SIZE_LEVEL1), _currentObjectCount(0), _currentObjectIndex(0) {
-	// ³õÊ¼»¯ÎïÆ·À¸
-	_objectList.resize(_maxObjectCount);
-	for (int i = 0; i < _maxObjectCount; i++) {
-		_objectList[i] = new ObjectListNode{ i, {None,nullptr}, 0 }; 
-	}
-
-	// ¼üÅÌ¼àÊÓÊÂ¼ş
-	auto listener = EventListenerKeyboard::create();
-	listener->onKeyPressed = CC_CALLBACK_2(CharacterObjectList::onKeyPressed, this);
-	_eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
-}
-
-// Îö¹¹º¯Êı
-CharacterObjectList::~CharacterObjectList() {
-	for (auto obj : _objectList) {
-		delete obj;
-	}
-=======
+// æ„é€ å‡½æ•°
 CharacterObjectList::CharacterObjectList() :
-	_maxObjectCount(MAX_OBJECT_LIST_SIZE_LEVEL1), 
+	_maxObjectKindCount(MAX_OBJECT_LIST_SIZE_LEVEL1), 
 	_currentObjectKindCount(0),
 	_currentObjectIndex(0),
 	openObjectList(false)
 {
-	// ³õÊ¼»¯ÎïÆ·À¸
+	// åˆå§‹åŒ–ç‰©å“æ 
 	initObjectList();
 }
 
-// ³õÊ¼»¯ÎïÆ·À¸º¯Êı
+// åˆå§‹åŒ–ç‰©å“æ 
 void CharacterObjectList::initObjectList() {
-	_objectList.resize(_maxObjectCount);
-	for (int i = 0; i < _maxObjectCount; i++) {
+	_objectList.resize(_maxObjectKindCount);
+	for (int i = 0; i < _maxObjectKindCount; i++) {
 		_objectList[i] = ObjectListNode{ {None,nullptr}, 0 ,Unselected };
 	}
 	_objectList[0].status = Selected;
 
->>>>>>> Stashed changes
 }
 
-// °´ÏÂ¼üÅÌÊ±µÄ´¦Àí
+// æŒ‰ä¸‹é”®ç›˜æ—¶çš„å¤„ç†
 void CharacterObjectList::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* event) {
-<<<<<<< Updated upstream
-	// °´ÏÂÊı×Ö¼üÇĞ»»ÎïÆ·À¸ÎïÆ·
-=======
-	// °´ÏÂÊı×Ö¼ü,'-'¼ü,'='¼üÇĞ»»ÎïÆ·À¸ÎïÆ·
->>>>>>> Stashed changes
+	// æŒ‰ä¸‹æ•°å­—é”®,-å’Œ=é”®æ—¶åˆ‡æ¢ç‰©å“æ 
 	if (keyCode >= EventKeyboard::KeyCode::KEY_1 && keyCode <= EventKeyboard::KeyCode::KEY_9) {
 		setCurrentObject(static_cast<int>(keyCode) - static_cast<int>(EventKeyboard::KeyCode::KEY_1));
 	}
@@ -74,39 +49,34 @@ void CharacterObjectList::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* ev
 	else if (keyCode == EventKeyboard::KeyCode::KEY_EQUAL) {
 		setCurrentObject(11);
 	}
-	// °´ÏÂQ¼ü¶ªÆúµ±Ç°ÎïÆ·
-<<<<<<< Updated upstream
-	else if (keyCode == EventKeyboard::KeyCode::KEY_Q&& _currentObject.object.type != None) {
-		discardCurrentObject();
-	}
-=======
+	// æŒ‰ä¸‹Qé”®ä¸¢å¼ƒç‰©å“
 	else if (keyCode == EventKeyboard::KeyCode::KEY_Q&& getCurrentObject().count != 0) {
 		discardCurrentObject();
 	}
-	// °´ÏÂE¼ü´ò¿ªÎïÆ·À¸
+	// æŒ‰ä¸‹Eé”®æ‰“å¼€ç‰©å“æ 
 	else if (keyCode == EventKeyboard::KeyCode::KEY_E) {
 		openObjectList =!openObjectList;
 	}
 }
 
-// ¼ñÆğÎïÆ·
-// TODO:ÉèÖÃµ¥¸öÎïÆ·×î´ó´æ´¢ÊıÁ¿¹¦ÄÜ
+// æ¡èµ·ç‰©å“
+// TODO:è®¾ç½®å•ä¸ªç‰©å“çš„æœ€å¤§å­˜å‚¨æ•°é‡
 bool CharacterObjectList::pickUpObject(GameCommonObject targetObject, int objectCount) {
-	// ²éÕÒÎïÆ·À¸ÖĞÊÇ·ñÓĞÏàÍ¬ÎïÆ·
+	// æŸ¥æ‰¾ç‰©å“æ ä¸­æ˜¯å¦æœ‰ç›¸åŒç‰©å“
 	const int index = findObject(targetObject);
 
-	// ÎïÆ·À¸Ã»ÓĞÏàÍ¬ÎïÆ·ÇÒÎïÆ·À¸ÒÑÂú
+	// å¦‚æœæ²¡æœ‰ç›¸åŒç‰©å“ï¼Œä¸”ç‰©å“æ å·²æ»¡ï¼Œåˆ™è¿”å›false
 	if (index == -1 && checkObjectListFull()) {
 		return false;
 	}
 
-	// ÎïÆ·À¸ÓĞÏàÍ¬ÎïÆ·ÇÒÄ¿±êÎïÆ·²»ÊÇ¹¤¾ß
+	// å¦‚æœæœ‰ç›¸åŒç‰©å“ä¸”ç‰©å“æ è¯¥ç‰©å“ä¸æ˜¯å·¥å…·ï¼Œåˆ™å¢åŠ ç‰©å“æ•°é‡
 	if (index != -1 && (targetObject.type == Base|| targetObject.type == Compose)) {
 		_objectList[index].count += objectCount;
 	}
 	else {
 		int insertIndex = -1;
-		for (insertIndex = 0; insertIndex < _maxObjectCount; insertIndex++) {
+		for (insertIndex = 0; insertIndex < _maxObjectKindCount; insertIndex++) {
 			if(_objectList[insertIndex].count == 0)
 				break;
 		}
@@ -117,52 +87,40 @@ bool CharacterObjectList::pickUpObject(GameCommonObject targetObject, int object
 	return true;
 }
 
-// ¼ì²éÎïÆ·À¸ÊÇ·ñÒÑÂú
-bool CharacterObjectList::checkObjectListFull() {
-	return (_currentObjectKindCount == _maxObjectCount);
->>>>>>> Stashed changes
-}
-
-// ÉèÖÃµ±Ç°ÎïÆ·
-void CharacterObjectList::setCurrentObject(int index) {
-	if (index < 0 || index >= _maxObjectCount) {
-		return;
-	}
-	_currentObjectIndex = index;
-<<<<<<< Updated upstream
-	_currentObject = * _objectList[_currentObjectIndex];
-=======
->>>>>>> Stashed changes
-}
-
-// ¶ªÆúµ±Ç°ÎïÆ·
-ObjectListNode CharacterObjectList::discardCurrentObject() {
-<<<<<<< Updated upstream
-	ObjectListNode tempObject = *_objectList[_currentObjectIndex];
-	*_objectList[_currentObjectIndex] = { _currentObjectIndex, {None,nullptr},0 };
-	_currentObject = *_objectList[_currentObjectIndex];
-	return tempObject;		
-=======
-	ObjectListNode tempObject = getCurrentObject();
-	_objectList[_currentObjectIndex] = { {None,nullptr},0,Selected };
-	
-	return tempObject;		
-}
-
-// »ñÈ¡Ñ¡ÖĞµÄÎïÆ·
+// è·å–å½“å‰é€‰ä¸­çš„ç‰©å“
 ObjectListNode CharacterObjectList::getCurrentObject() {
 	return _objectList[_currentObjectIndex];
 }
 
-// ²éÕÒÖ¸¶¨ÎïÆ·
+// æ£€æŸ¥ç‰©å“æ æ˜¯å¦å·²æ»¡
+bool CharacterObjectList::checkObjectListFull() {
+	return (_currentObjectKindCount == _maxObjectKindCount);
+}
+
+// è®¾ç½®å½“å‰é€‰ä¸­çš„ç‰©å“
+void CharacterObjectList::setCurrentObject(int index) {
+	if (index < 0 || index >= _maxObjectKindCount) {
+		return;
+	}
+	_currentObjectIndex = index;
+}
+
+// ä¸¢å¼ƒå½“å‰é€‰ä¸­çš„ç‰©å“
+ObjectListNode CharacterObjectList::discardCurrentObject() {
+	ObjectListNode tempObject = getCurrentObject();
+	_objectList[_currentObjectIndex] = { {None,nullptr},0,Selected };
+	return tempObject;		
+}
+
+
+// æŸ¥æ‰¾ç‰©å“æ ä¸­æ˜¯å¦æœ‰æŒ‡å®šç‰©å“
 int CharacterObjectList::findObject(GameCommonObject targetObject) {
-	for (int i = 0; i < _maxObjectCount; i++) {
-		// Ö»ÓĞÄ¿±êÎïÆ·ÊôÓÚ·Ç¹¤¾ß·Ç¿ÕÀàĞÍ²Å½øĞĞ²éÕÒ
+	for (int i = 0; i < _maxObjectKindCount; i++) {
+		// åªæœ‰ç‰©å“ä¸æ˜¯å·¥å…·æ‰ä¼šè¢«æŸ¥æ‰¾
 		if (_objectList[i].objectNode.object == targetObject.object && (targetObject.type == Base || targetObject.type == Compose)) {
 			return i;
 		}
 	}
-	// Ã»ÕÒµ½
+	// æ²¡æœ‰æ‰¾åˆ°
 	return -1;
->>>>>>> Stashed changes
 }

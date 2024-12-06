@@ -2,8 +2,11 @@
 #ifndef _CONSTANT_H_
 #define _CONSTANT_H_
 
-#include "cocos2d.h"
 #include <string>
+#include <memory>
+#include <map>
+#include "cocos2d.h"
+#include "../Classes/Object/Object.h"
 
 // 应用程序设置
 constexpr int DESIGN_RESOLUTION_WIDTH = 1024;                               // 设计分辨率宽度
@@ -22,7 +25,7 @@ constexpr float MOVE_SPEED = 3.5f;											// 移动速度
 constexpr float MOVE_RATE = FRAME_RATE;										// 移动帧率
 constexpr auto INVIAID_KEY = cocos2d::EventKeyboard::KeyCode::KEY_NONE;		// 无效按键
 constexpr float ACTION_RATE = 5.0f;											// 动作间隔帧率
-
+constexpr int INVAVID_NUM = -1;												// 无效数字
 
 
 // 角色属性
@@ -34,88 +37,106 @@ constexpr float CHARACTER_MOVE_SPEED = 5.0f;								// 移动速度
 constexpr float LERP_SPEED = 0.1f;											// 视角过渡的平滑度
 constexpr float MAP_SCALE = 1.6f;											// 地图缩放大小
 
-constexpr int MAX_OBJECT_LIST_SIZE_LEVEL1 = 12;								// 背包容量等级1
-constexpr int MAX_OBJECT_LIST_SIZE_LEVEL2 = 24;								// 背包容量等级2
-constexpr int MAX_OBJECT_LIST_SIZE_LEVEL3 = 36;								// 背包容量等级3
+// 物品设置
+constexpr int MAX_OBJECT_LIST_SIZE_LEVEL1 = 12;								// 背包容量(等级1)
+constexpr int MAX_OBJECT_LIST_SIZE_LEVEL2 = 24;								// 背包容量(等级2)
+constexpr int MAX_OBJECT_LIST_SIZE_LEVEL3 = 36;								// 背包容量(等级3)
 constexpr int MAX_STORAGE_NUM = 999;										// 单个物品的最大存储数量
 
-//游戏物品类型定义
-typedef enum {
-	Farm,				// 耕种
-	Collect,			// 采集
-	Mine,				// 采矿
-	Fish				// 钓鱼
-}GameObjectType;
+constexpr int MAX_GROWTH_STAGE = 7;											// 种子生长阶段最大数量
 
-// 游戏工具类型定义
-typedef enum {
-	Hoe,				// 锄头
-	Ax,					// 斧头
-	Pickaxe,			// 镐子
-	FishingRod,			// 鱼竿
-	Kettle				// 水壶
-}GameTools;
 
-// 游戏工具物品属性定义
-typedef struct {
-	std::string fileName;    // 文件路径
-	std::string name;        // 工具名称
-	GameObjectType type;	 // 工具类型
-	int level;               // 工具等级
-	int durability;          // 工具耐久度(针对水壶)
-}GameToolObject;
 
-// 游戏基础物品属性定义
-typedef struct {
-	std::string fileName;    // 文件路径
-	std::string name;        // 物品名称
-	GameObjectType type;	 // 物品类型
-	int maxStorage;          // 物品最大存储量
-	int level;               // 物品等级
-	bool sale;               // 是否能出售
-	int salePrice;           // 出售价格
-	bool eat;                // 是否可以食用
-	int eatEnegry;           // 食用恢复的能量值
-}GameBaseObject;
+//// 游戏工具物品属性定义
+//typedef struct {
+//	std::string fileName;    // 工具图片资源文件路径
+//	std::string name;        // 工具名称
+//	GameObjectSkillType type;	 // 工具类型
+//	int level;               // 工具等级
+//	int actionCost;			 // 执行一次操作需要的次数
+//	int durability;          // 工具耐久度(针对水壶)
+//}GameToolObject;
+//// 游戏种子物品属性定义
+//// TODO:添加额外收获功能
+//typedef struct {
+//	std::string fileName;						// 种子图片资源文件路径
+//	std::string name;							// 种子名称
+//	GameObjectSkillType type;						// 种子类型
+//	int level;									// 解锁种子所需等级
+//	Season season;								// 种子生长季节
+//	int growthDays[MAX_GROWTH_STAGE];			// 种子每个阶段所需的生长天数
+//	int totalGrowTime;							// 种子生长总天数
+//	int harvestIndex;							// 种子收获所得的物品索引
+//	int buyPrice;								// 种子购买价格
+//	int salePrice;								// 种子出售价格
+//}GameSeedObeject;
+//
+//// 游戏基础物品属性定义
+//typedef struct {
+//	std::string fileName;    // 物品图片资源文件路径
+//	std::string name;        // 物品名称
+//	GameObjectSkillType type;	 // 物品类型
+//	int maxStorage;          // 物品最大存储量
+//	int level;               // 解锁物品所需等级
+//	int quality;             // 物品品质等级
+//	bool sale;               // 是否能出售
+//	int salePrice;           // 出售价格
+//	bool eat;                // 是否可以食用
+//	int eatEnegry;           // 食用恢复的能量值
+//	bool place;				 // 能否放置
+//}GameBaseObject;
+//
+//// 游戏合成物品属性定义
+//typedef struct {
+//	GameBaseObject baseObject;					// 基础物品属性
+//	std::map<std::string, int> ingredients;		// 合成物品的原料
+//}GameComposeObject;
+//
+//// 游戏通用物品属性定义
+//typedef struct {
+//	GameObjectMapType type;							// 物品类型
+//	void* object;									// 物品对象
+//}GameCommonObject;
+//
+//
+//// 游戏工具物品属性参数定义
+//const std::map<int, GameToolObject> GAME_TOOL_OBJECTS_ATTRS = {
+//	{1,{"","初级锄头",Farm,1,1,INT_MAX}},				// 锄头(一级)
+//	{2,{"","中级锄头",Farm,2,1,INT_MAX}},				// 锄头(二级)
+//	{3,{"","高级锄头",Farm,3,1,INT_MAX}},				// 锄头(三级)
+//	{4,{"","初级斧头",Collect,1,8,INT_MAX}},				// 斧头(一级)
+//	{5,{"","中级斧头",Collect,2,7,INT_MAX}},				// 斧头(二级)
+//	{6,{"","高级斧头",Collect,3,6,INT_MAX}},				// 斧头(三级)
+//	{7,{"","初级镐子",Mine,1,10,INT_MAX}},				// 镐子(一级)
+//	{8,{"","中级镐子",Mine,2,9,INT_MAX}},				// 镐子(二级)
+//	{9,{"","高级镐子",Mine,3,8,INT_MAX}},				// 镐子(三级)
+//	{10,{"","初级鱼竿",Fish,1,1,INT_MAX}},				// 鱼竿(一级)
+//	{11,{"","中级鱼竿",Fish,2,1,INT_MAX}},				// 鱼竿(二级)
+//	{12,{"","高级鱼竿",Fish,3,1,INT_MAX}},				// 鱼竿(三级)
+//	{13,{"","初级水壶",Farm,1,1,40}},					// 水壶(一级)
+//	{14,{"","中级水壶",Farm,2,1,55}},					// 水壶(二级)
+//	{15,{"","高级水壶",Farm,3,1,70}},					// 水壶(三级)
+//};
+//
+//// 游戏种子物品属性参数定义
+//const std::map<int, GameSeedObeject> GAME_SEED_OBJECTS_ATTRS = {
+//
+//};
+//
+//// 游戏基础物品属性参数定义
+//const std::map<int, GameBaseObject> GAME_BASE_OBJECTS_ATTRS = {
+//
+//};
+//
+//// 游戏种子成熟后对应作物匹配
+//const std::map<GameSeedObeject, GameBaseObject> SEED_TO_CROP_TYPE = {
+//
+//};
+//
+//// 游戏合成物品属性参数定义
+//const std::map<int, GameComposeObject> GAME_COMPOSE_OBJECTS_ATTRS = {
+//
+//};
 
-// 游戏合成物品属性定义
-typedef struct {
-	GameBaseObject baseObject;					// 基础物品属性
-	std::map<std::string, int> ingredients;		// 合成物品的原料
-}GameComposeObject;
 
-// 游戏物品类型定义
-typedef enum {
-	None,				// 空物品=
-	Tool,				// 工具
-	Base,				// 基础物品
-	Compose				// 合成物品
-}GameObjectMapType;
-
-// 游戏通用物品属性定义
-typedef struct {
-	GameObjectMapType type;							// 物品类型
-	void* object;									// 物品对象
-}GameCommonObject;
-
-// 游戏工具物品属性参数定义
-const std::map<int, GameToolObject> GAME_TOOL_OBJECTS_ATTRS = {
-	{1,{"","锄头",Farm,1,INT_MAX}},					// 锄头
-	{2,{"","斧头",Collect,1,INT_MAX}},				// 斧头
-	{3,{"","镐子",Mine,1,INT_MAX}},					// 镐子
-	{4,{"","鱼竿",Fish,1,INT_MAX}},					// 鱼竿
-	{5,{"","水壶",Farm,1,40}},						// 水壶(一级)
-	{6,{"","水壶",Farm,2,55}},						// 水壶(二级)
-	{7,{"","水壶",Farm,3,70}},						// 水壶(三级)
-};
-
-// 游戏基础物品属性参数定义
-const std::map<int, GameBaseObject> GAME_BASE_OBJECTS_ATTRS = {
-
-};
-
-// 游戏合成物品属性参数定义
-const std::map<int, GameComposeObject> GAME_COMPOSE_OBJECTS_ATTRS = {
-
-};
 #endif // !_CONSTANT_H_
