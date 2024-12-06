@@ -1,15 +1,15 @@
 /****************************************************************
  * Project Name:  Stardew Valley
  * File Name:     Object.cpp
- * File Function: ObjectµÄÊµÏÖ
- * Author:        Òü³Ï³É
+ * File Function: Objectçš„å®žçŽ°
+ * Author:        å°¹è¯šæˆ
  * Update Date:   2023/12/06
  * License:       MIT License
  ****************************************************************/
 
 #include "Object.h"    
 
-// GameToolObjectµÄ¹¹Ôìº¯Êý
+// GameToolObjectçš„æž„é€ å‡½æ•°
 GameToolObject::GameToolObject(const std::string& fileName, const std::string& name, GameObjectSkillType type, int level, int actionCost, int durability) {
     this->_fileName = fileName;
     this->_name = name;
@@ -19,7 +19,7 @@ GameToolObject::GameToolObject(const std::string& fileName, const std::string& n
     this->_durability = durability;
 }
 
-// GameSeedObjectµÄ¹¹Ôìº¯Êý
+// GameSeedObjectçš„æž„é€ å‡½æ•°
 GameSeedObject::GameSeedObject(const std::string& fileName, const std::string& name, GameObjectSkillType type, int level, Season season, std::vector<int> growthStages, int totalGrowTime, int harvestIndex, int buyPrice, int salePrice) {
     this->_fileName = fileName;
     this->_name = name;
@@ -34,7 +34,7 @@ GameSeedObject::GameSeedObject(const std::string& fileName, const std::string& n
 
 }
 
-// GameBaseObjectµÄ¹¹Ôìº¯Êý
+// GameBaseObjectçš„æž„é€ å‡½æ•°
 GameBaseObject::GameBaseObject(const std::string& fileName, const std::string& name, GameObjectSkillType type, int maxStorage, int level, int quality, bool sale, int salePrice, bool eat, int eatEnergy, bool place) {
     this->_fileName = fileName;
     this->_name = name;
