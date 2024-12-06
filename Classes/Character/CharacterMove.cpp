@@ -1,9 +1,9 @@
 /****************************************************************
  * Project Name:  Stardew Valley
  * File Name:     Character.cpp
- * File Function: CharacterÀàµÄÊµÏÖ
- * Author:        Òü³Ï³É
- * Update Date:   2023/12/04
+ * File Function: Characterç±»çš„å®žçŽ°
+ * Author:        å°¹è¯šæˆ
+ * Update Date:   2023/12/0
  * License:       MIT License
  ****************************************************************/
 
@@ -12,52 +12,23 @@
 
 USING_NS_CC;
 
-//´´½¨¶ÔÏó
-CharacterMove* CharacterMove::create(const std::string& filename) {
-    CharacterMove* ret = new(std::nothrow) CharacterMove();
-    if (ret && ret->init(filename)) {
-        ret->autorelease();
-        return ret;
-    }
-    CC_SAFE_DELETE(ret);
-    return nullptr;
+// æž„é€ å‡½æ•°
+CharacterMove::CharacterMove() :
+    _moveSpeed(CHARACTER_MOVE_SPEED),
+    _moveUp(false),
+    _moveDown(false),
+    _moveLeft(false),
+    _moveRight(false),
+    _animationPlaying(false),
+    _width(CHARACTER_WIDTH),
+    _height(CHARACTER_HEIGHT),
+    _character(nullptr)
+{
 }
 
-//³õÊ¼»¯
-bool CharacterMove::init(const std::string& filename) {
-    if (!Node::init()) {
-        return false;
-    }
-    //Êý¾Ý³ÉÔ±³õÊ¼»¯
-    _moveSpeed = MOVE_SPEED;
-    _moveUp = false;
-    _moveDown = false;
-    _moveLeft = false;
-    _moveRight = false;
-    _animationPlaying = false;
-    const auto visibleSize = Director::getInstance()->getVisibleSize();
-    const Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
-    // ´´½¨¾«Áé²¢ÉèÖÃ³õÊ¼Î»ÖÃ
-    _character = Sprite::create(filename);
-    _character->setPosition(Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y));
-    this->addChild(_character);
-    _character->setScale(2.0);
 
-    // »ñÈ¡¾«ÁéµÄ¿í¸ß
-    _width = _character->getContentSize().width;
-    _height = _character->getContentSize().height;
-
-    // ¼üÅÌ¼àÊÓÊÂ¼þ
-    auto listener = EventListenerKeyboard::create();
-    listener->onKeyPressed = CC_CALLBACK_2(CharacterMove::onKeyPressed, this);
-    listener->onKeyReleased = CC_CALLBACK_2(CharacterMove::onKeyReleased, this);
-    _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
-
-    return true;
-}
-
-// °´ÏÂ¼üÅÌÊ±µÄ´¦Àí
+// æŒ‰ä¸‹é”®ç›˜æ—¶çš„å¤„ç†
 void CharacterMove::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* event) {
     switch (keyCode) {
     case EventKeyboard::KeyCode::KEY_W:
@@ -75,9 +46,10 @@ void CharacterMove::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* event) {
     default:
         break;
     }
+
 }
 
-// ÊÍ·Å¼üÅÌÊ±µÄ´¦Àí
+// é‡Šæ”¾é”®ç›˜æ—¶çš„å¤„ç†
 void CharacterMove::onKeyReleased(EventKeyboard::KeyCode keyCode, Event* event) {
     switch (keyCode) {
     case EventKeyboard::KeyCode::KEY_W:
@@ -97,14 +69,15 @@ void CharacterMove::onKeyReleased(EventKeyboard::KeyCode keyCode, Event* event) 
     }
 }
 
-// Õ¹Ê¾¶¯»­Ð§¹û
+// å±•ç¤ºåŠ¨ç”»æ•ˆæžœ
 void CharacterMove::playAnimation() {
-    // ¶¯×÷ÐòÁÐ
+    // åŠ¨ä½œåºåˆ—
+
     if (_moveLeft) {
         _currentDirection = "left";
         _frames = {
            SpriteFrame::create("../Resources/Characters/Bear/BearLeftAction1.png", Rect(0, 0, _width, _height)),
-           SpriteFrame::create("../Resources/Characters/Bear/BearLeftAction2.png", Rect(0, 0, _width, _height)),
+           SpriteFrame::create("../Resources/Characters/Bear/BearLeftAction2.png", Rect(0, 0,  _width, _height)),
            SpriteFrame::create("../Resources/Characters/Bear/BearLeftAction3.png", Rect(0, 0, _width, _height)),
            SpriteFrame::create("../Resources/Characters/Bear/BearLeftAction4.png", Rect(0, 0, _width, _height))
         };
@@ -137,7 +110,7 @@ void CharacterMove::playAnimation() {
         };
     }
 
-    // ¶¯»­²¥·Å
+    // åŠ¨ç”»æ’­æ”¾
     if (!_frames.empty() && (_currentDirection != _lastDirection)) {
         auto animation = Animation::createWithSpriteFrames(_frames, 1.0f / ACTION_RATE);
         auto animate = Animate::create(animation);
@@ -148,23 +121,23 @@ void CharacterMove::playAnimation() {
     }
 }
 
-// ¸üÐÂ½ÇÉ«Î»ÖÃ
-Vec2 CharacterMove::updatePosition(float deltaTime) {
+    // æ›´æ–°è§’è‰²ä½ç½®
+cocos2d::Vec2 CharacterMove::updatePosition(float deltaTime) {
     Vec2 newPosition = _character->getPosition();
     Vec2 moveDirection(0, 0);
 
-    // ÒÆ¶¯·½ÏòÈ·¶¨
+    // ç§»åŠ¨æ–¹å‘ç¡®å®š
     if (_moveUp) {
-        moveDirection.y += 1; // ÏòÉÏ
+        moveDirection.y += 1; // å‘ä¸Š
     }
     if (_moveDown) {
-        moveDirection.y -= 1; // ÏòÏÂ
+        moveDirection.y -= 1; // å‘ä¸‹
     }
     if (_moveLeft) {
-        moveDirection.x -= 1; // Ïò×ó
+        moveDirection.x -= 1; // å‘å·¦
     }
     if (_moveRight) {
-        moveDirection.x += 1; // ÏòÓÒ
+        moveDirection.x += 1; // å‘å³
     }
     if (moveDirection.x != 0 || moveDirection.y != 0) {
         moveDirection.normalize();
@@ -177,10 +150,11 @@ Vec2 CharacterMove::updatePosition(float deltaTime) {
         _animationPlaying = false;
     }
 
-    // ±ß½ç¼ì²â
+    // è¾¹ç•Œæ£€æµ‹
     const auto visibleSize = Director::getInstance()->getVisibleSize();
     const float halfWidth = _character->getContentSize().width / 2;
     const float halfHeight = _character->getContentSize().height / 2;
+
     if (newPosition.x - halfWidth < 0) {
         newPosition.x = halfWidth;
     }
@@ -194,7 +168,6 @@ Vec2 CharacterMove::updatePosition(float deltaTime) {
         newPosition.y = visibleSize.height - halfHeight;
     }
 
-    // ¸üÐÂ¾«ÁéÎ»ÖÃ
     _character->setPosition(newPosition);
 
     return newPosition;

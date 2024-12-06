@@ -96,10 +96,10 @@ bool AppDelegate::applicationDidFinishLaunching() {
     register_all_packages();
 
     // 创建农场场景类
-    auto farm_scene = FarmScene::createScene();
+    auto scene =HelloWorld::createScene();
 
     // 运行启动场景
-    director->runWithScene(farm_scene);
+    director->runWithScene(scene);
 
     return true;
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Stardew_Valley\\",
+  "WorkspaceRootPath": "D:\\GitHub\\Stardew_Valley2\\",
   "Documents": [],
   "DocumentGroupContainers": [
     {
@@ -8,7 +8,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedWidth": 286,
           "SelectedChildIndex": -1,
           "Children": [
             {
@@ -18,7 +18,7 @@
           ]
         },
         {
-          "DockedWidth": 390,
+          "DockedWidth": 500,
           "SelectedChildIndex": -1,
           "Children": [
             {
@@ -32,7 +32,7 @@
           ]
         },
         {
-          "DockedWidth": 38,
+          "DockedWidth": 500,
           "SelectedChildIndex": -1,
           "Children": [
             {
