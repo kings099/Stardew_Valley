@@ -1,8 +1,8 @@
 /****************************************************************
  * Project Name:  Stardew Valley
  * File Name:     CharacterObjectList.h
- * File Function: CharacterObjectListÀàµÄ¶¨Òå
- * Author:        Òü³Ï³É
+ * File Function: CharacterObjectListçš„å®šä¹‰
+ * Author:        å°¹è¯šæˆ
  * Update Date:   2023/12/05
  * License:       MIT License
  ****************************************************************/
@@ -14,94 +14,59 @@
 #include "cocos2d.h"
 #include "../proj.win32/Constant.h"
 
-// ÎïÆ·À¸ÎïÆ·×´Ì¬¶¨Òå
+// ç‰©å“çŠ¶æ€å®šä¹‰
 typedef enum {
-	Unselected,						// Î´±»Ñ¡ÖĞ
-	Selected,						// ±»Ñ¡ÖĞ
+	Unselected,						// æœªè¢«é€‰ä¸­
+	Selected,						// å·²è¢«é€‰ä¸­
 }ObjectStatus;
 
-// ÎïÆ·À¸µ¥¸öÎïÆ·ĞÅÏ¢¶¨Òå
+// ç‰©å“æ å•ä¸ªç‰©å“å±æ€§å®šä¹‰
 typedef struct {
-<<<<<<< Updated upstream
-	int id;							// ÎïÆ·À¸Ë÷Òı
-	GameCommonObject object;		// ÎïÆ·¶ÔÏó
-=======
-	GameCommonObject objectNode;	// ÎïÆ·¶ÔÏó
->>>>>>> Stashed changes
-	int count;						// ÎïÆ·ÊıÁ¿
-	ObjectStatus status;			// ÎïÆ·×´Ì¬
+	GameCommonObject objectNode;	// ç‰©å“ä¿¡æ¯
+	int count;						// ç‰©å“æ•°é‡
+	ObjectStatus status;			// ç‰©å“çŠ¶æ€
 }ObjectListNode;
 
 
-<<<<<<< Updated upstream
-
-class CharacterObjectList : public cocos2d::Node {
-=======
 class CharacterObjectList : virtual public cocos2d::Node {
->>>>>>> Stashed changes
 public:
-	// ¹¹Ôìº¯Êı
+	//æ„é€ å‡½æ•° 
 	CharacterObjectList();
 
-<<<<<<< Updated upstream
-	// Îö¹¹º¯Êı
-	~CharacterObjectList();
-
-	// °´ÏÂ¼üÅÌÊ±µÄ´¦Àí
+	// æŒ‰ä¸‹é”®ç›˜æ—¶çš„å¤„ç†
 	void onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event);
 
-	// °´ÏÂÊó±êÊ±µÄ´¦Àí
-	void onMouseDown(cocos2d::Event* event);
-
-	// ¼ñÆğÎïÆ·
-	bool pickUpObject(GameCommonObject object);	
-=======
-	// °´ÏÂ¼üÅÌÊ±µÄ´¦Àí
-	void onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event);
-
-	// ¼ñÆğÎïÆ·
+	// æ¡èµ·ç‰©å“
 	bool pickUpObject(GameCommonObject targetObject, int objectCount);
->>>>>>> Stashed changes
 
-	// ÒÆ¶¯ÎïÆ·
+	// ç§»åŠ¨ç‰©å“
 	void moveObject(ObjectListNode object);
 
-<<<<<<< Updated upstream
-private:
-	std::vector<ObjectListNode*> _objectList;   // ÎïÆ·ÁĞ±í
-	ObjectListNode _currentObject;				// µ±Ç°ÎïÆ·
-	int _maxObjectCount;						// ×î´óÎïÆ·ÊıÁ¿
-	int _currentObjectCount;					// µ±Ç°ÎïÆ·ÊıÁ¿
-	int _currentObjectIndex;					// µ±Ç°ÎïÆ·Ë÷Òı
-=======
-	// »ñÈ¡µ±Ç°ÎïÆ·À¸Ë÷ÒıµÄÎïÆ·
+	// è·å–å½“å‰é€‰ä¸­çš„ç‰©å“
 	ObjectListNode getCurrentObject();
 
-	// ¼ì²éÎïÆ·À¸ÊÇ·ñÒÑÂú
+	// æ£€æŸ¥ç‰©å“æ æ˜¯å¦å·²æ»¡
 	bool checkObjectListFull();
 protected:
-	bool openObjectList;						// ÊÇ·ñ´ò¿ªÎïÆ·À¸
+	bool openObjectList;						// æ˜¯å¦æ‰“å¼€ç‰©å“æ 
 
 private:
-	std::vector<ObjectListNode> _objectList;	// ÎïÆ·ÁĞ±í
-	int _maxObjectCount;						// ×î´óÎïÆ·ÊıÁ¿
-	int _currentObjectKindCount;				// µ±Ç°ÎïÆ·ÖÖÀàÊıÁ¿
-	int _currentObjectIndex;					// µ±Ç°ÎïÆ·À¸Ë÷Òı
-	// ³õÊ¼»¯ÎïÆ·À¸º¯Êı
-	void initObjectList();
->>>>>>> Stashed changes
+	std::vector<ObjectListNode> _objectList;	// ç‰©å“æ åˆ—è¡¨
+	int _maxObjectKindCount;					// ç‰©å“æ æœ€å¤§ç‰©å“ç§ç±»å®¹é‡
+	int _currentObjectKindCount;				// å½“å‰ç‰©å“ç§ç±»ç‰©å“æ•°é‡
+	int _currentObjectIndex;					// å½“å‰é€‰ä¸­çš„ç‰©å“ç´¢å¼•
 
-	// ÉèÖÃµ±Ç°ÎïÆ·
+	// åˆå§‹åŒ–ç‰©å“æ 
+	void initObjectList();
+
+	// è®¾ç½®å½“å‰é€‰ä¸­çš„ç‰©å“
 	void setCurrentObject(int index);			
 
-	// ¶ªÆúµ±Ç°ÎïÆ·
+	// ä¸¢å¼ƒå½“å‰é€‰ä¸­çš„ç‰©å“
 	ObjectListNode discardCurrentObject();
-<<<<<<< Updated upstream
-=======
 
-	// ²éÕÒÖ¸¶¨ÎïÆ·
+	// æŸ¥æ‰¾ç‰©å“æ ä¸­æ˜¯å¦æœ‰æŒ‡å®šç‰©å“
 	int findObject(GameCommonObject targetObject);
->>>>>>> Stashed changes
 };
 
 #endif // !__CHARACTER_OBJECT_LIST_H__
