@@ -20,6 +20,9 @@ constexpr int LARGE_RESOLUTION_HEIGHT = 1536;                               // ¥
 constexpr float FRAME_RATE = 60.0f;                                         // ”¶”√≥Ã–Ú÷°¬ 
 const std::string APPLICATION_TITLE = u8"–«¬∂π» Stardew Valley";				// ”¶”√≥Ã–Ú±ÍÃ‚
 
+constexpr float ENLARGEMENT_RATIO = 1.2f;									// ∞¥≈•∑≈¥Û±»¿˝
+constexpr float ENLARGEMENT_TIME = 0.1f;									// ∞¥≈•∑≈¥Û ±º‰
+
 //≤‚ ‘”√≥£±‰¡ø
 constexpr float MOVE_SPEED = 3.5f;											// “∆∂ØÀŸ∂»
 constexpr float MOVE_RATE = FRAME_RATE;										// “∆∂Ø÷°¬ 
