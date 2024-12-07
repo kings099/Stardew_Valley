@@ -49,7 +49,7 @@ bool FarmScene::init()
     this->addChild(farmMap, 0); // 地图置于最底层
 
     // 加载角色
-    character = new  Character("../Resources/Characters/Bear/BearDownAction1.png");
+    character = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png");
     this->addChild(character, 1); // 角色位于地图之上
 
     // 创建视角控制器
