@@ -1,9 +1,9 @@
 /****************************************************************
- * Project Name:  Stardew Valley
+ * Project Name:  Stardew_Valley
  * File Name:     CharacterMove.h
- * File Function: CharacterMove类的定义
+ * File Function: 角色移动CharacterMove类的定义
  * Author:        尹诚成
- * Update Date:   2023/12/06
+ * Update Date:   2023/12/07
  * License:       MIT License
  ****************************************************************/
 
@@ -26,6 +26,11 @@ public:
 
     // 播放动画
     void playAnimation();
+
+    // 获取角色当前位置
+    cocos2d::Vec2 getPosition();
+
+    // TODO:将像素转化为坐标格
 protected:
     cocos2d::Sprite* _character;                         // 角色对象
 

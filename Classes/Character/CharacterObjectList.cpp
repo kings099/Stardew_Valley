@@ -1,7 +1,7 @@
 /****************************************************************
- * Project Name:  Stardew Valley
+ * Project Name:  Stardew_Valley
  * File Name:     CharacterObjectList.cpp
- * File Function: CharacterObjectList类的实现
+ * File Function: 角色物品栏CharacterObjectList类的实现
  * Author:        尹诚成
  * Update Date:   2023/12/05
  * License:       MIT License
@@ -18,7 +18,7 @@ CharacterObjectList::CharacterObjectList() :
 	_maxObjectKindCount(MAX_OBJECT_LIST_SIZE_LEVEL1), 
 	_currentObjectKindCount(0),
 	_currentObjectIndex(0),
-	openObjectList(false)
+	_openObjectList(Close)
 {
 	// 初始化物品栏
 	initObjectList();
@@ -31,6 +31,7 @@ void CharacterObjectList::initObjectList() {
 		_objectList[i] = ObjectListNode{ {None,nullptr}, 0 ,Unselected };
 	}
 	_objectList[0].status = Selected;
+	
 
 }
 
@@ -55,7 +56,7 @@ void CharacterObjectList::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* ev
 	}
 	// 按下E键打开物品栏
 	else if (keyCode == EventKeyboard::KeyCode::KEY_E) {
-		openObjectList =!openObjectList;
+		_openObjectList =!_openObjectList;
 	}
 }
 
@@ -71,7 +72,7 @@ bool CharacterObjectList::pickUpObject(GameCommonObject targetObject, int object
 	}
 
 	// 如果有相同物品且物品栏该物品不是工具，则增加物品数量
-	if (index != -1 && (targetObject.type == Base|| targetObject.type == Compose)) {
+	if (index != -1 && (targetObject.type == Base)) {
 		_objectList[index].count += objectCount;
 	}
 	else {
@@ -117,7 +118,7 @@ ObjectListNode CharacterObjectList::discardCurrentObject() {
 int CharacterObjectList::findObject(GameCommonObject targetObject) {
 	for (int i = 0; i < _maxObjectKindCount; i++) {
 		// 只有物品不是工具才会被查找
-		if (_objectList[i].objectNode.object == targetObject.object && (targetObject.type == Base || targetObject.type == Compose)) {
+		if (_objectList[i].objectNode.object == targetObject.object && (targetObject.type == Base)) {
 			return i;
 		}
 	}
