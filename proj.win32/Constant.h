@@ -6,17 +6,17 @@
 #include <memory>
 #include <map>
 #include "cocos2d.h"
-#include "../Classes/Object/Object.h"
+#include "Classes/Object/Object.h"
 
 // 应用程序设置
-constexpr int DESIGN_RESOLUTION_WIDTH = 1024;                               // 设计分辨率宽度
-constexpr int DESIGN_RESOLUTION_HEIGHT = 768;                               // 设计分辨率高度
-constexpr int SMALL_RESOLUTION_WIDTH = 480;                                 // 小分辨率宽度
-constexpr int SMALL_RESOLUTION_HEIGHT = 320;                                // 小分辨率高度
-constexpr int MEDIUM_RESOLUTION_WIDTH = 1024;                               // 中分辨率宽度
-constexpr int MEDIUM_RESOLUTION_HEIGHT = 768;                               // 中分辨率高度
-constexpr int LARGE_RESOLUTION_WIDTH = 2048;                                // 大分辨率宽度
-constexpr int LARGE_RESOLUTION_HEIGHT = 1536;                               // 大分辨率高度
+constexpr int DESIGN_RESOLUTION_WIDTH = 1920;                               // 设计分辨率宽度
+constexpr int DESIGN_RESOLUTION_HEIGHT = 1080;                              // 设计分辨率高度
+constexpr int SMALL_RESOLUTION_WIDTH = 960;                                 // 小分辨率宽度
+constexpr int SMALL_RESOLUTION_HEIGHT = 540;                                // 小分辨率高度
+constexpr int MEDIUM_RESOLUTION_WIDTH = 1280;                               // 中分辨率宽度
+constexpr int MEDIUM_RESOLUTION_HEIGHT = 720;                               // 中分辨率高度
+constexpr int LARGE_RESOLUTION_WIDTH = 1920;                                // 大分辨率宽度
+constexpr int LARGE_RESOLUTION_HEIGHT = 1080;                               // 大分辨率高度
 constexpr float FRAME_RATE = 60.0f;                                         // 应用程序帧率
 const std::string APPLICATION_TITLE = u8"星露谷 Stardew Valley";				// 应用程序标题
 
@@ -46,7 +46,10 @@ constexpr int MAX_OBJECT_LIST_SIZE_LEVEL2 = 24;								// 背包容量(等级2)
 constexpr int MAX_OBJECT_LIST_SIZE_LEVEL3 = 36;								// 背包容量(等级3)
 constexpr int MAX_STORAGE_NUM = 999;										// 单个物品的最大存储数量
 
-constexpr int MAX_GROWTH_STAGE = 7;											// 种子生长阶段最大数量
+// 物品栏设置
+constexpr int OBJECT_LIST_ROWS = 3;											// 物品栏行数
+constexpr int OBJECT_LIST_COLS = 12;										// 物品栏列数
+
 
 
 
@@ -140,7 +143,5 @@ constexpr int MAX_GROWTH_STAGE = 7;											// 种子生长阶段最大数量
 //const std::map<int, GameComposeObject> GAME_COMPOSE_OBJECTS_ATTRS = {
 //
 //};
-constexpr float ENLARGEMENT_RATIO = 1.2f;									// 按钮放大比例
-constexpr float ENLARGEMENT_TIME = 0.1f;									// 按钮放大时间
 
 #endif // !_CONSTANT_H_
