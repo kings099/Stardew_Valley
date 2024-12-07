@@ -38,11 +38,19 @@ public:
     //返回地图像素大小
     const Size& getMapSize()const;
 
+    //返回瓦片地图大小（按瓦片计数）
+    const Size& getMapSizeinTile();
+    //获取指定位置指定图层的GID
+    int getTileGIDAt(const std::string& layerName, const Vec2& tileCoord);
 
 
-private:
-    cocos2d::TMXTiledMap* _tileMap;  // 瓦片地图对象
-    Vec2 _mapPosition;
+    // 根据GID获取瓦片属性（从 TMX 文件中的tilesets中读取）
+    cocos2d::ValueMap getTilePropertiesForGID(int GID);
+
+
+protected:
+    cocos2d::TMXTiledMap* _tile_map;  // 瓦片地图对象
+    Vec2 _map_position;
 };
 
 #endif // __FARM_MAP_H__

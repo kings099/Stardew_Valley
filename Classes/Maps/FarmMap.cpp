@@ -11,7 +11,7 @@
 USING_NS_CC;
 
 FarmMap::FarmMap(const Vec2& mapPosition)
-    : _tileMap(nullptr),_mapPosition(mapPosition)
+    : _tile_map(nullptr),_map_position(mapPosition)
 {
 }
 
@@ -40,15 +40,15 @@ bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition)
     }
 
     // 加载瓦片地图
-    _tileMap = TMXTiledMap::create(mapFile);
-    if (!_tileMap) {
+    _tile_map = TMXTiledMap::create(mapFile);
+    if (!_tile_map) {
         CCLOG("Failed to load map");
         return false;
     }
 
     // 添加地图到当前节点
-    this->addChild(_tileMap, 0);
-    this->setPosition(_mapPosition);
+    this->addChild(_tile_map, 0);
+    this->setPosition(_map_position);
     this->setScale(MAP_SCALE);
 
     //监听鼠标
@@ -79,23 +79,10 @@ bool FarmMap::onMouseEvent(cocos2d::Event* event)
         float cameraOffset_y = cameraPosition.y - visibleSize.height / 2;
 
         // 将屏幕坐标修正为相对于地图的绝对坐标
-        Vec2 mapPosition(mousePos.x + cameraOffset_x - _mapPosition.x,
-            mousePos.y + cameraOffset_y - _mapPosition.y);
+        Vec2 mapPosition(mousePos.x + cameraOffset_x ,
+            mousePos.y + cameraOffset_y );
         // 转换为瓦片坐标
         Vec2 tiledPos = absoluteToTile(mapPosition);
-        CCLOG("tilePos:%f,%f", tiledPos.x, tiledPos.y);
-        auto layer = _tileMap->getLayer("Back"); // 确保替换为你实际的图层名称
-        int tileGID = layer->getTileGIDAt(tiledPos);
-
-        CCLOG("GID: % d", tileGID);
-         //打印点击位置
-        if (tileGID == 1247) {
-            CCLOG("WATER!!!!!!!!!!");
-        }
-        else
-        {
-            CCLOG("SOIL!!!!!!!!!");
-        }
 
         // 返回 true 表示事件已处理
         return true;
@@ -108,23 +95,59 @@ bool FarmMap::onMouseEvent(cocos2d::Event* event)
 Vec2 FarmMap::absoluteToTile(const Vec2& pixelPoint)
 {
     // 获取瓦片的大小
-    Size tileSize = _tileMap->getTileSize();
+    Size tileSize = _tile_map->getTileSize();
 
-    float tileX = (pixelPoint.x) / (tileSize.width * MAP_SCALE);
-    float tileY = (pixelPoint.y) / (tileSize.height * MAP_SCALE);
+
+    float tileX = (pixelPoint.x - _map_position.x) / (tileSize.width * MAP_SCALE);
+    float tileY = (pixelPoint.y - _map_position.y) / (tileSize.height * MAP_SCALE);
     // 瓦片地图y轴是从上到下的，需要翻转y轴
-    tileY = _tileMap->getMapSize().height - tileY; 
-
+    tileY = _tile_map->getMapSize().height - tileY; 
     return Vec2(floor(tileX), floor(tileY));
 }
 
 const Size& FarmMap:: getMapSize()const {
-    Size map_size_in_tiles = _tileMap->getMapSize();
+    Size map_size_in_tiles = _tile_map->getMapSize();
     // 获取每个瓦片的大小
-    Size tile_size = _tileMap->getTileSize();  // 获取每个瓦片的像素大小
+    Size tile_size = _tile_map->getTileSize();  // 获取每个瓦片的像素大小
 
     // 将瓦片数转换为像素数
     float map_width_in_pixels = map_size_in_tiles.width * tile_size.width;
     float map_heightin_Pixels = map_size_in_tiles.height * tile_size.height;
     return Size(map_width_in_pixels, map_heightin_Pixels);
+}
+
+const Size& FarmMap::getMapSizeinTile() {
+    return _tile_map->getMapSize();
+}
+int FarmMap::getTileGIDAt(const std::string& layerName, const Vec2& tileCoord)
+{
+    auto layer = _tile_map->getLayer(layerName);
+    if (!layer) {
+        CCLOG("invalied Layername");
+        return 0;
+    }
+    // 获取地图尺寸
+    auto map_size = _tile_map->getMapSize(); // 地图的行列数（瓦片数量）
+    auto tile_size = _tile_map->getTileSize(); // 单个瓦片的像素尺寸
+
+    // 检查 tileCoord 是否在地图的范围内
+    if (tileCoord.x < 0 || tileCoord.y < 0 ||
+        tileCoord.x >= map_size.width || tileCoord.y >= map_size.height)
+    {
+        return 0; // 坐标超出范围，返回 GID 为 0
+    }
+
+    // 如果坐标合法，获取对应的瓦片 GID
+    return layer->getTileGIDAt(tileCoord);
+}
+
+ValueMap FarmMap::getTilePropertiesForGID(int GID)
+{
+    if (GID == 0) return ValueMap();
+    auto tileProperties = _tile_map->getPropertiesForGID(GID);
+    if (tileProperties.getType() == Value::Type::MAP)
+    {
+        return tileProperties.asValueMap();
+    }
+    return ValueMap();
 }
