@@ -34,13 +34,18 @@ void GameViewController::update(float deltaTime) {
 
     // 计算摄像机应该的位置：确保角色始终处于屏幕中央且限制摄像机位置确保不超出地图的边界
     Vec2 targetCameraPosition;
-    targetCameraPosition.x = std::max(characterPosition.x - mapPosition.x, visibleSize.width / 2);
-    targetCameraPosition.y = std::max(characterPosition.y - mapPosition.y, visibleSize.height / 2);
-    targetCameraPosition.x = std::min(targetCameraPosition.x, mapSize.width - visibleSize.width / 2);
-    targetCameraPosition.y = std::min(targetCameraPosition.y, mapSize.height - visibleSize.height / 2);
+
+    if (mapSize.width < visibleSize.width && mapSize.height<visibleSize.height) {
+        targetCameraPosition = characterPosition;
+    }
+    else {
+        targetCameraPosition.x = std::max(characterPosition.x - mapPosition.x, visibleSize.width / 2);
+        targetCameraPosition.y = std::max(characterPosition.y - mapPosition.y, visibleSize.height / 2);
+        targetCameraPosition.x = std::min(targetCameraPosition.x, mapSize.width - visibleSize.width / 2);
+        targetCameraPosition.y = std::min(targetCameraPosition.y, mapSize.height - visibleSize.height / 2);
+    }
 
     Vec2 currentCameraPosition = camera->getPosition();
-
     // 以较慢的速度平滑过渡摄像机位置
     float lerpSpeed = 0.1f; // 调整此值以改变过渡的平滑度
     Vec2 newCameraPosition = currentCameraPosition.lerp(targetCameraPosition, lerpSpeed);
@@ -51,5 +56,6 @@ void GameViewController::update(float deltaTime) {
     // 更新角色周围信息
     interactionManager->updateSurroundingTiles(characterPosition);
     interactionManager->getSorroundingCollidable(characterPosition);
+
 }
 

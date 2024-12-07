@@ -35,7 +35,7 @@ constexpr float CHARACTER_MOVE_SPEED = 5.0f;								// 移动速度
 
 // 地图设置
 constexpr float LERP_SPEED = 0.1f;											// 视角过渡的平滑度
-constexpr float MAP_SCALE = 1.6f;											// 地图缩放大小
+constexpr float MAP_SCALE = 4.0f;											// 地图缩放大小
 
 // 物品设置
 constexpr int MAX_OBJECT_LIST_SIZE_LEVEL1 = 12;								// 背包容量(等级1)
