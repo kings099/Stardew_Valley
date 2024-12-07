@@ -36,7 +36,7 @@ bool FarmScene::init()
     TimeManager* timeManager = TimeManager::getInstance();
     timeManager->setTimeLabel(timeLabel);  // 设置时间标签
 
-    // 启动时间更新
+	// 启动时间更新
     timeManager->startUpdating();
 
 
@@ -69,14 +69,17 @@ bool FarmScene::init()
     this->addChild(viewController, 2); // 控制器无需渲染，层级不重要
 
     
-
-    // 设置更新回调
-    this->schedule([this](float deltaTime) {
+    // 保持标签在屏幕上的固定位置
+    this->schedule([this,timeLabel](float deltaTime) {
+        // 如果视图控制器存在，更新它
         if (viewController) {
             viewController->update(deltaTime);
         }
-        }, "ViewControllerUpdate");
 
+        
+       
+
+        }, "ViewControllerUpdate");
     return true;
 }
 
