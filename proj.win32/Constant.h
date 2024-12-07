@@ -140,6 +140,7 @@ constexpr int MAX_GROWTH_STAGE = 7;											// 种子生长阶段最大数量
 //const std::map<int, GameComposeObject> GAME_COMPOSE_OBJECTS_ATTRS = {
 //
 //};
-
+constexpr float ENLARGEMENT_RATIO = 1.2f;									// 按钮放大比例
+constexpr float ENLARGEMENT_TIME = 0.1f;									// 按钮放大时间
 
 #endif // !_CONSTANT_H_
