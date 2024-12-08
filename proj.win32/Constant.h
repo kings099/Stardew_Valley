@@ -48,9 +48,6 @@ constexpr int MAX_OBJECT_LIST_SIZE_LEVEL2 = 24;								// 背包容量(等级2)
 constexpr int MAX_OBJECT_LIST_SIZE_LEVEL3 = 36;								// 背包容量(等级3)
 constexpr int MAX_STORAGE_NUM = 999;										// 单个物品的最大存储数量
 
-constexpr int UI_SCALE = 160.0f;                                             //UI�����ͼ�����ű���
-constexpr int FONT_SIZE = 24;                                                //
-
 
 // 物品栏设置
 constexpr int OBJECT_LIST_ROWS = 3;											// 物品栏行数
