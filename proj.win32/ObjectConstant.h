@@ -200,23 +200,41 @@ struct ObjectListLocation {
 
 
 // 游戏物品属性参数定义
-const std::vector<GameCommonObject>GAME_COMMON_OBJECTS_ATTRS = {
-GameCommonObject(Tool, std::make_unique<GameToolObject>("", "初级锄头", Farm, 1, 1, INT_MAX,Plowing)),
-GameCommonObject(Tool, std::make_unique<GameToolObject>("", "中级锄头", Farm, 2, 1, INT_MAX,Plowing)),
-GameCommonObject(Tool, std::make_unique<GameToolObject>("", "高级锄头", Farm, 3, 1, INT_MAX,Plowing)),
-GameCommonObject(Tool, std::make_unique<GameToolObject>("", "初级斧头", Collect, 1, 5, INT_MAX,Cutting)),
-GameCommonObject(Tool, std::make_unique<GameToolObject>("", "中级斧头", Collect, 2, 4, INT_MAX,Cutting)),
-GameCommonObject(Tool, std::make_unique<GameToolObject>("", "高级斧头", Collect, 3, 3, INT_MAX,Cutting)),
-GameCommonObject(Tool, std::make_unique<GameToolObject>("", "初级镐子", Mine, 1, 5, INT_MAX,Mining)),
-GameCommonObject(Tool, std::make_unique<GameToolObject>("", "中级镐子", Mine, 2, 4, INT_MAX,Mining)),
-GameCommonObject(Tool, std::make_unique<GameToolObject>("", "高级镐子", Mine, 3, 3, INT_MAX,Mining)),
-GameCommonObject(Tool, std::make_unique<GameToolObject>("", "初级鱼竿", Fish, 1, 1, INT_MAX,Fishing)),
-GameCommonObject(Tool, std::make_unique<GameToolObject>("", "中级鱼竿", Fish, 2, 1, INT_MAX,Fishing)),
-GameCommonObject(Tool, std::make_unique<GameToolObject>("", "高级鱼竿", Fish, 3, 1, INT_MAX,Fishing)),
-GameCommonObject(Tool, std::make_unique<GameToolObject>("", "初级水壶", Farm, 1, 1, 40,Watering)),
-GameCommonObject(Tool, std::make_unique<GameToolObject>("", "中级水壶", Farm, 2, 1, 55,Watering)),
-GameCommonObject(Tool, std::make_unique<GameToolObject>("", "高级水壶", Farm, 3, 1, 70,Watering)),
+const std::vector<GameToolObject> GAME_TOOL_OBJECTS_ATTRS = {
+    GameToolObject("../Resources/Objects/Tools/BeginnerHoe.png", "初级锄头", Farm, 1, 1, INT_MAX, Plowing),
+    GameToolObject("../Resources/Objects/Tools/IntermediateHoe.png", "中级锄头", Farm, 2, 1, INT_MAX, Plowing),
+    GameToolObject("../Resources/Objects/Tools/AdvancedHoe.png", "高级锄头", Farm, 3, 1, INT_MAX, Plowing),
+    GameToolObject("../Resources/Objects/Tools/BeginnerAxe.png", "初级斧头", Collect, 1, 5, INT_MAX, Cutting),
+    GameToolObject("../Resources/Objects/Tools/IntermediateAxe.png", "中级斧头", Collect, 2, 4, INT_MAX, Cutting),
+    GameToolObject("../Resources/Objects/Tools/AdvancedAxe.png", "高级斧头", Collect, 3, 3, INT_MAX, Cutting),
+    GameToolObject("../Resources/Objects/Tools/BeginnerPickaxe.png", "初级镐子", Mine, 1, 5, INT_MAX, Mining),
+    GameToolObject("../Resources/Objects/Tools/IntermediatePickaxe.png", "中级镐子", Mine, 2, 4, INT_MAX, Mining),
+    GameToolObject("../Resources/Objects/Tools/AdvancedPickaxe.png", "高级镐子", Mine, 3, 3, INT_MAX, Mining),
+    GameToolObject("../Resources/Objects/Tools/BeginnerFishingRods.png", "初级鱼竿", Fish, 1, 1, INT_MAX, Fishing),
+    GameToolObject("../Resources/Objects/Tools/IntermediateFishingRods.png", "中级鱼竿", Fish, 2, 1, INT_MAX, Fishing),
+    GameToolObject("../Resources/Objects/Tools/AdvancedFishingRods.png", "高级鱼竿", Fish, 3, 1, INT_MAX, Fishing),
+    GameToolObject("../Resources/Objects/Tools/", "初级水壶", Farm, 1, 1, 40, Watering),
+    GameToolObject("../Resources/Objects/Tools/", "中级水壶", Farm, 2, 1, 55, Watering),
+    GameToolObject("../Resources/Objects/Tools/", "高级水壶", Farm, 3, 1, 70, Watering)
 };
+
+//const std::vector<GameCommonObject>GAME_COMMON_OBJECTS_ATTRS = {
+//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "初级锄头", Farm, 1, 1, INT_MAX,Plowing)),
+//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "中级锄头", Farm, 2, 1, INT_MAX,Plowing)),
+//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "高级锄头", Farm, 3, 1, INT_MAX,Plowing)),
+//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "初级斧头", Collect, 1, 5, INT_MAX,Cutting)),
+//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "中级斧头", Collect, 2, 4, INT_MAX,Cutting)),
+//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "高级斧头", Collect, 3, 3, INT_MAX,Cutting)),
+//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "初级镐子", Mine, 1, 5, INT_MAX,Mining)),
+//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "中级镐子", Mine, 2, 4, INT_MAX,Mining)),
+//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "高级镐子", Mine, 3, 3, INT_MAX,Mining)),
+//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "初级鱼竿", Fish, 1, 1, INT_MAX,Fishing)),
+//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "中级鱼竿", Fish, 2, 1, INT_MAX,Fishing)),
+//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "高级鱼竿", Fish, 3, 1, INT_MAX,Fishing)),
+//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "初级水壶", Farm, 1, 1, 40,Watering)),
+//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "中级水壶", Farm, 2, 1, 55,Watering)),
+//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "高级水壶", Farm, 3, 1, 70,Watering)),
+//};
 
 
 #endif // _CONSTANT_OBJECT_H_

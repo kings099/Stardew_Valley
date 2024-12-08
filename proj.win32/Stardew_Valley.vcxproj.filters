@@ -81,11 +81,14 @@
     <ClCompile Include="..\Classes\Character\CharacterAction.cpp">
       <Filter>Classes\Character</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\LocationMap\LocationMap.cpp">
+      <Filter>Classes\LocationMap</Filter>
+    </ClCompile>
     <ClCompile Include="..\Classes\Layer\PlacementMarkerLayer.cpp">
       <Filter>Classes\Layer</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\LocationMap\LocationMap.cpp">
-      <Filter>Classes\LocationMap</Filter>
+    <ClCompile Include="..\Classes\Layer\UILayer.cpp">
+      <Filter>Classes\Layer</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\Control\InteractionManager.cpp">
       <Filter>Classes\Control</Filter>
@@ -149,6 +152,8 @@
     <ClInclude Include="..\Classes\LocationMap\LocationMap.h">
       <Filter>Classes\LocationMap</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\Layer\UILayer.h">
+      <Filter>Classes\Layer</Filter>
     <ClInclude Include="..\Classes\Control\InteractionManager.h">
       <Filter>Classes\Control</Filter>
     </ClInclude>
