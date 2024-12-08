@@ -1,0 +1,45 @@
+/****************************************************************
+ * Project Name:  Stardew_Valley
+ * File Name:     FarmMap.h
+ * File Function: 地图基类Map类的定义
+ * Author:        金恒宇
+ * Update Date:   2024/12/8
+ * License:       MIT License
+ ****************************************************************/
+#pragma once
+#ifndef GAME_MAP_H_
+#define GAME_MAP_H_
+
+#include "cocos2d.h"
+
+USING_NS_CC;
+
+class GameMap : public Node {
+public:
+    GameMap(const Vec2& mapPosition = Vec2(0, 0));
+    virtual ~GameMap();
+
+    // 创建地图
+    static GameMap* create(const std::string& mapFile, const Vec2& mapPosition = Vec2(0, 0));
+
+    // 初始化地图
+    virtual bool init(const std::string& mapFile, const Vec2& mapPosition);
+
+    // 转换世界坐标到地图瓦片坐标
+    virtual Vec2 absoluteToTile(const Vec2& pixelPoint);
+
+    // 地图像素大小
+    virtual const Size& getMapSize() const;
+
+    // 地图瓦片大小
+    virtual const Size& getMapSizeinTile();
+
+    // 获取某位置Layername图层的GID
+    virtual int getTileGIDAt(const std::string& layerName, const Vec2& tileCoord);
+
+protected:
+    TMXTiledMap* _tile_map;  // 瓦片地图类
+    Vec2 _map_position;      // 地图创建位置
+};
+
+#endif // GAME_MAP_H_

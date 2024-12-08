@@ -14,6 +14,7 @@
 #include "Classes/Maps/FarmMap.h"
 #include "Classes/Character/Character.h"
 #include "Classes/Control/GameViewController.h"
+#include "Classes/Control/InteractionManager.h"
 
 class FarmScene : public cocos2d::Scene
 {
