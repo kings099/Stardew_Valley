@@ -1,3 +1,11 @@
+/****************************************************************
+ * Project Name:  Stardew_Valley
+ * File Name:     CharacterInfo.h
+ * File Function: 用户信息类的实现
+ * Author:        达思睿
+ * Update Date:   2024/12/5
+ * License:       MIT License
+ ****************************************************************/
 #pragma once
 
 #include "cocos2d.h"

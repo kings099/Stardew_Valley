@@ -1,3 +1,11 @@
+/****************************************************************
+ * Project Name:  Stardew_Valley
+ * File Name:     HelloScene.cpp
+ * File Function: 游戏启动场景类的实现
+ * Author:        达思睿
+ * Update Date:   2024/12/3
+ * License:       MIT License
+ ****************************************************************/
 #include "HelloWorldScene.h"
 #include "SimpleAudioEngine.h"
 #include "ui/CocosGUI.h"

@@ -1,4 +1,11 @@
-﻿#pragma once
+﻿/****************************************************************
+ * Project Name:  Stardew_Valley
+ * File Name:     TimeManager.h
+ * File Function: 全局时间管理类的实现
+ * Author:        达思睿
+ * Update Date:   2024/12/5
+ * License:       MIT License
+ ****************************************************************/
 #pragma once
 #include <string>
 #include "cocos2d.h"  // 引入 cocos2d 的头文件，用于显示时间标签等功能
