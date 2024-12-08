@@ -9,6 +9,7 @@
 #include "FarmScene.h"
 #include "SimpleAudioEngine.h"
 #include "../Classes/MenuImage/HoverMenuItemImage.h"
+#include "../Classes/Layer/UILayer.h"
 
 USING_NS_CC;
 
@@ -52,6 +53,11 @@ bool FarmScene::init()
     character = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png");
     this->addChild(character, 1); // 角色位于地图之上
 
+    // 加载UI层
+    uiLayer = UILayer::create();
+    this->addChild(uiLayer, 2); // UI层置于最上层
+   // uiLayer->update();
+
     // 创建视角控制器
     viewController = new GameViewController(character, farmMap);
     this->addChild(viewController, 2); // 控制器无需渲染，层级不重要
@@ -60,6 +66,9 @@ bool FarmScene::init()
     this->schedule([this](float deltaTime) {
         if (viewController) {
             viewController->update(deltaTime);
+        }
+        if (uiLayer) {
+            uiLayer->update(deltaTime);
         }
         }, "ViewControllerUpdate");
 
