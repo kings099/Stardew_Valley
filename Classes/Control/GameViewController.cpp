@@ -27,7 +27,7 @@ void GameViewController::update(float deltaTime) {
     // 获取摄像机
     auto camera = Director::getInstance()->getRunningScene()->getDefaultCamera();
     // 获取当前缩放比例
-    float scale = _character->getScale();
+    float scale = _map->getScale();
 
     // 获取屏幕可视区域大小
     auto visibleSize = Director::getInstance()->getVisibleSize();
@@ -35,14 +35,14 @@ void GameViewController::update(float deltaTime) {
     // 计算摄像机应该的位置：确保角色始终处于屏幕中央且限制摄像机位置确保不超出地图的边界
     Vec2 targetCameraPosition;
 
-    if (mapSize.width < visibleSize.width && mapSize.height<visibleSize.height) {
+    if (mapSize.width * scale < visibleSize.width && mapSize.height * scale < visibleSize.height) {
         targetCameraPosition = characterPosition;
     }
     else {
         targetCameraPosition.x = std::max(characterPosition.x - mapPosition.x, visibleSize.width / 2);
         targetCameraPosition.y = std::max(characterPosition.y - mapPosition.y, visibleSize.height / 2);
-        targetCameraPosition.x = std::min(targetCameraPosition.x, mapSize.width - visibleSize.width / 2);
-        targetCameraPosition.y = std::min(targetCameraPosition.y, mapSize.height - visibleSize.height / 2);
+        targetCameraPosition.x = std::min(targetCameraPosition.x, mapSize.width * scale - visibleSize.width / 2);
+        targetCameraPosition.y = std::min(targetCameraPosition.y, mapSize.height * scale - visibleSize.height / 2);
     }
 
     Vec2 currentCameraPosition = camera->getPosition();
