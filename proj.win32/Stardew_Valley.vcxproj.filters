@@ -53,8 +53,16 @@
     <ClCompile Include="..\Classes\Layer\PlacementMarkerLayer.cpp">
       <Filter>Classes\Layer</Filter>
     </ClCompile>
+
+    <ClCompile Include="..\Classes\Layer\TimeManagerUI.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Manager\TimeManager.cpp">
+      <Filter>Classes\Manager</Filter>
+
     <ClCompile Include="..\Classes\Layer\UILayer.cpp">
       <Filter>Classes\Layer</Filter>
+
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -116,8 +124,16 @@
     <ClInclude Include="..\Classes\Layer\PlacementMarkerLayer.h">
       <Filter>Classes\Layer</Filter>
     </ClInclude>
+
+    <ClInclude Include="..\Classes\Layer\TimeManagerUI.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Manager\TimeManager.h">
+      <Filter>Classes\Manager</Filter>
+
     <ClInclude Include="..\Classes\Layer\UILayer.h">
       <Filter>Classes\Layer</Filter>
+
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

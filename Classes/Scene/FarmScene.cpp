@@ -11,6 +11,7 @@
 #include "../Classes/MenuImage/HoverMenuItemImage.h"
 #include "../Classes/Layer/UILayer.h"
 #include "../Classes/Manager/TimeManager.h"
+#include "../Classes/Layer/TimeManagerUI.h"
 
 USING_NS_CC;
 
@@ -18,7 +19,6 @@ Scene* FarmScene::createScene()
 {
     return FarmScene::create();
 }
-
 
 
 bool FarmScene::init()
@@ -31,20 +31,6 @@ bool FarmScene::init()
     // 获取可见区域大小
     auto visibleSize = Director::getInstance()->getVisibleSize();
     auto origin = Director::getInstance()->getVisibleOrigin();
-
-
-    // 创建时间显示标签
-    auto timeLabel = Label::createWithSystemFont("", "Arial", 24);
-    timeLabel->setPosition(Vec2(visibleSize.width * 0.8f, visibleSize.height * 0.9f));
-    this->addChild(timeLabel, 2);
-
-    // 设置时间显示标签给 TimeManager
-    TimeManager* timeManager = TimeManager::getInstance();
-    timeManager->setTimeLabel(timeLabel);  // 设置时间标签给 TimeManager
-
-
-
-    timeManager->startUpdating();
 
     // 设置关闭按钮
     auto closeItem = HoverMenuItemImage::create(
@@ -78,18 +64,45 @@ bool FarmScene::init()
     // 创建视角控制器
     viewController = new GameViewController(character, farmMap);
     this->addChild(viewController, 2); // 控制器无需渲染，层级不重要
+
+    // 启动时间管理器的计时
+    TimeManager::getInstance()->startUpdating();
+
+
+
+    // 创建 UI 容器
+    Node* uiContainer = Node::create();
+    uiContainer->setPosition(Vec2(0, 0));  // 设置为屏幕的原点
+    this->addChild(uiContainer, 100);  // 添加到最上层
+
+    // 创建并添加 TimeManagerUI 到 UI 容器
+    TimeManagerUI* timeManagerUI = TimeManagerUI::create();
+    uiContainer->addChild(timeManagerUI);
+
     // 设置更新回调
-    this->schedule([this](float deltaTime) {
+    this->schedule([this, uiContainer](float deltaTime) {
         if (viewController) {
             viewController->update(deltaTime);
         }
+
+
+        // 获取摄像机的位移
+        auto cameraPosition = Camera::getDefaultCamera()->getPosition();
+        const auto visibleSize = Director::getInstance()->getVisibleSize();
+
+        // 将摄像机的偏移量应用到UI容器
+        Vec2 cameraOffset = cameraPosition - Vec2(visibleSize.width / 2, visibleSize.height / 2);
+        uiContainer->setPosition(cameraOffset);  // 更新UI容器的位置，使UI随摄像机移动
+
         if (uiLayer) {
             uiLayer->update(deltaTime);
         }
+
         }, "ViewControllerUpdate");
 
     return true;
 }
+
 
 void FarmScene::menuCloseCallback(Ref* pSender)
 {

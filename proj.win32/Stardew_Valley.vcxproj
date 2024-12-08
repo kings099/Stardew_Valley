@@ -159,15 +159,19 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)\Resources\" /D /E /I /F /Y
     <ClCompile Include="..\Classes\Control\GameViewController.cpp" />
     <ClCompile Include="..\Classes\CursorAndBUutton\HoverCursor.cpp" />
     <ClCompile Include="..\Classes\Layer\PlacementMarkerLayer.cpp" />
+
+    <ClCompile Include="..\Classes\Layer\TimeManagerUI.cpp" />
+
     <ClCompile Include="..\Classes\Layer\UILayer.cpp" />
+
     <ClCompile Include="..\Classes\LocationMap\LocationMap.cpp" />
     <ClCompile Include="..\Classes\Control\InteractionManager.cpp" />
+    <ClCompile Include="..\Classes\Manager\TimeManager.cpp" />
     <ClCompile Include="..\Classes\Maps\FarmMap.cpp" />
     <ClCompile Include="..\Classes\MenuImage\HoverMenuItemImage.cpp" />
     <ClCompile Include="..\Classes\Maps\GameMap.cpp" />
     <ClCompile Include="..\Classes\Scene\FarmScene.cpp" />
     <ClCompile Include="..\Classes\Scene\HelloWorldScene.cpp" />
-    <ClCompile Include="..\Classes\TimeManager.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -180,15 +184,19 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)\Resources\" /D /E /I /F /Y
     <ClInclude Include="..\Classes\Control\GameViewController.h" />
     <ClInclude Include="..\Classes\CursorAndBUutton\HoverCursor.h" />
     <ClInclude Include="..\Classes\Layer\PlacementMarkerLayer.h" />
+
+    <ClInclude Include="..\Classes\Layer\TimeManagerUI.h" />
+
     <ClInclude Include="..\Classes\Layer\UILayer.h" />
+
     <ClInclude Include="..\Classes\LocationMap\LocationMap.h" />
     <ClInclude Include="..\Classes\Control\InteractionManager.h" />
+    <ClInclude Include="..\Classes\Manager\TimeManager.h" />
     <ClInclude Include="..\Classes\Maps\FarmMap.h" />
     <ClInclude Include="..\Classes\MenuImage\HoverMenuItemImage.h" />
     <ClInclude Include="..\Classes\Maps\GameMap.h" />
     <ClInclude Include="..\Classes\Scene\FarmScene.h" />
     <ClInclude Include="..\Classes\Scene\HelloWorldScene.h" />
-    <ClInclude Include="..\Classes\TimeManager.h" />
     <ClInclude Include="Constant.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="ObjectConstant.h" />
