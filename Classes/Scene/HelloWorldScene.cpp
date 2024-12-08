@@ -1,3 +1,11 @@
+/****************************************************************
+ * Project Name:  Stardew_Valley
+ * File Name:     HelloScene.cpp
+ * File Function: 游戏启动场景类的实现
+ * Author:        达思睿
+ * Update Date:   2024/12/3
+ * License:       MIT License
+ ****************************************************************/
 #include "HelloWorldScene.h"
 #include "SimpleAudioEngine.h"
 #include "ui/CocosGUI.h"
@@ -36,11 +44,7 @@ bool HelloWorld::init()
 
     // 加载背景图片
     this->initBackground();
-    // 创建并初始化时间显示的 Label
-    auto timeLabel = Label::createWithTTF("hhhhhh", "fonts/arial.ttf", 24);
-    timeLabel->setPosition(Vec2(20, 20));  // 设置位置
-    this->addChild(timeLabel, 2);  // 将 Label 添加到场景
-
+   
 
     // 加载并设置游戏标题图片
     titleSprite = Sprite::create("../Resources/Helloworld/gameTitle.png");  // 你的标题图片文件

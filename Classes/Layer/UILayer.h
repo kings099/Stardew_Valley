@@ -1,4 +1,3 @@
-
 #pragma once
 #ifndef _UILAYER_H_
 #define _UILAYER_H_
@@ -8,23 +7,25 @@
 
 class UILayer : public cocos2d::Layer {
 public:
-	//Îö¹¹º¯Êý
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	~UILayer();
 
-	// ³õÊ¼»¯UI²ã
+	// ï¿½ï¿½Ê¼ï¿½ï¿½UIï¿½ï¿½
 	virtual bool init();
 
-	// ³õÊ¼»¯ÎïÆ·À¸
+	// ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½Æ·ï¿½ï¿½
 	void initializeObjectList();
 
-	// ¸üÐÂUI½çÃæ
+	// ï¿½ï¿½ï¿½ï¿½UIï¿½ï¿½ï¿½ï¿½
 	void update(float deltaTime);
 
-	// ÊµÏÖ UILayer ÀàµÄ create ·½·¨
+	// Êµï¿½ï¿½ UILayer ï¿½ï¿½ï¿½ create ï¿½ï¿½ï¿½ï¿½
 	CREATE_FUNC(UILayer);
 
 private:
-	cocos2d::Sprite* objectListBackground = nullptr; // ±£´æµ±Ç°ÎïÆ·À¸±³¾°µÄÖ¸Õë
+	cocos2d::Sprite* objectListBackground = nullptr; // ï¿½ï¿½ï¿½æµ±Ç°ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½
 };
 
-#endif // £¡_UILAYER_H_
+#endif // ï¿½ï¿½_UILAYER_H_
+
+

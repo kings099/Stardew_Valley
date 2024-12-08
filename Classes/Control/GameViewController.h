@@ -12,18 +12,18 @@
 
 #include "cocos2d.h"
 #include "Classes/Character/Character.h"
-#include "Classes/Maps/FarmMap.h"
+#include "Classes/Maps/GameMap.h"
 
 
 class GameViewController : public cocos2d::Node {
 public:
-    GameViewController(Character* character,FarmMap* farmmap);  // 构造函数，接受角色对象
+    GameViewController(Character* character,GameMap* gamemap);  // 构造函数，接受角色对象
 
     void update(float deltaTime);  // 每帧更新角色位置和摄像机位置
 
 private:
     Character* _character;  // 角色对象
-    FarmMap* _farmmap;
+    GameMap* _map;      // 地图对象
 };
 
 #endif // __GAME_VIEW_CONTROLLER_H__

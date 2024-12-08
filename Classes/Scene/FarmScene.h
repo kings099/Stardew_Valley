@@ -15,6 +15,8 @@
 #include "Classes/Character/Character.h"
 #include "Classes/Control/GameViewController.h"
 #include "Classes/Layer/UILayer.h"
+#include "Classes/Control/InteractionManager.h"
+
 
 class FarmScene : public cocos2d::Scene
 {
@@ -34,7 +36,7 @@ public:
 private:
     // 农场地图
     FarmMap* farmMap;
-
+  
     // 角色
     Character* character;
 

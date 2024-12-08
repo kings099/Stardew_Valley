@@ -31,7 +31,8 @@ public:
     const bool checkObjectListStatus();
 private:
     //cocos2d::Sprite* _character;                        // 角色精灵
-
+    int _money;                                 // 角色金钱
+    int _energy;                                // 角色能量
 
     // 构造函数
     Character(const std::string& filename);

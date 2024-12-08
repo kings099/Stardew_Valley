@@ -1,4 +1,12 @@
-﻿#ifndef __HELLOWORLD_SCENE_H__
+﻿/****************************************************************
+ * Project Name:  Stardew_Valley
+ * File Name:     HelloScene.h
+ * File Function: 游戏启动场景HelloScene的实现
+ * Author:        达思睿
+ * Update Date:   2024/12/5
+ * License:       MIT License
+ ****************************************************************/
+#ifndef __HELLOWORLD_SCENE_H__
 #define __HELLOWORLD_SCENE_H__
 
 #include "cocos2d.h"

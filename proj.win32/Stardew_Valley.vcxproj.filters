@@ -37,6 +37,9 @@
     <Filter Include="Classes\LocationMap">
       <UniqueIdentifier>{6ca8fb01-ab16-420e-bc04-b9136ecd9083}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\Manager">
+      <UniqueIdentifier>{e6bc3d34-db19-4618-95a4-d528e4d7758b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -86,6 +89,15 @@
     </ClCompile>
     <ClCompile Include="..\Classes\Layer\UILayer.cpp">
       <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Control\InteractionManager.cpp">
+      <Filter>Classes\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Maps\GameMap.cpp">
+      <Filter>Classes\Maps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TimeManager.cpp">
+      <Filter>Classes\Manager</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -142,6 +154,14 @@
     </ClInclude>
     <ClInclude Include="..\Classes\Layer\UILayer.h">
       <Filter>Classes\Layer</Filter>
+    <ClInclude Include="..\Classes\Control\InteractionManager.h">
+      <Filter>Classes\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Maps\GameMap.h">
+      <Filter>Classes\Maps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TimeManager.h">
+      <Filter>Classes\Manager</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
