@@ -257,7 +257,7 @@ void HelloWorld::startGameCallback(Ref* pSender)
         auto farmScene = FarmScene::createScene();  // 假设 farmScene 已经创建
 
         // 使用 TransitionFade 进行场景过渡
-        auto transition = TransitionFade::create(1.0f, farmScene);  // 1秒钟的过渡时间
+        auto transition = TransitionFade::create(SCENE_TRANSITION_TIME, farmScene);  // 1秒钟的过渡时间
         Director::getInstance()->replaceScene(transition);  // 切换到 farmScene
 
         // 隐藏登录界面

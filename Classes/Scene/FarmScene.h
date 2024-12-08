@@ -14,7 +14,9 @@
 #include "Classes/Maps/FarmMap.h"
 #include "Classes/Character/Character.h"
 #include "Classes/Control/GameViewController.h"
+#include "Classes/Layer/UILayer.h"
 #include "Classes/Control/InteractionManager.h"
+
 
 class FarmScene : public cocos2d::Scene
 {
@@ -40,6 +42,9 @@ private:
 
     // 视角控制器
     GameViewController* viewController;
+
+    // UI层
+    UILayer* uiLayer;
 };
 
 #endif // __FARM_SCENE_H__

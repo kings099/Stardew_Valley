@@ -9,8 +9,10 @@
 #include "FarmScene.h"
 #include "SimpleAudioEngine.h"
 #include "../Classes/MenuImage/HoverMenuItemImage.h"
+#include "../Classes/Layer/UILayer.h"
 #include "../Classes/Manager/TimeManager.h"
 #include "../Classes/Layer/TimeManagerUI.h"
+
 USING_NS_CC;
 
 Scene* FarmScene::createScene()
@@ -54,6 +56,11 @@ bool FarmScene::init()
     character = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png");
     this->addChild(character, 1); // 角色位于地图之上
 
+    // 加载UI层
+    uiLayer = UILayer::create();
+    this->addChild(uiLayer, 2); // UI层置于最上层
+   // uiLayer->update();
+
     // 创建视角控制器
     viewController = new GameViewController(character, farmMap);
     this->addChild(viewController, 2); // 控制器无需渲染，层级不重要
@@ -78,6 +85,7 @@ bool FarmScene::init()
             viewController->update(deltaTime);
         }
 
+
         // 获取摄像机的位移
         auto cameraPosition = Camera::getDefaultCamera()->getPosition();
         const auto visibleSize = Director::getInstance()->getVisibleSize();
@@ -85,6 +93,11 @@ bool FarmScene::init()
         // 将摄像机的偏移量应用到UI容器
         Vec2 cameraOffset = cameraPosition - Vec2(visibleSize.width / 2, visibleSize.height / 2);
         uiContainer->setPosition(cameraOffset);  // 更新UI容器的位置，使UI随摄像机移动
+
+        if (uiLayer) {
+            uiLayer->update(deltaTime);
+        }
+
         }, "ViewControllerUpdate");
 
     return true;
