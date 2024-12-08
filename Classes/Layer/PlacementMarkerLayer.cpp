@@ -10,9 +10,7 @@
 #include "PlacementMarkerLayer.h"
 #include "LocationMap/LocationMap.h"
 
- // 命名空间
-using cocos2d::Sprite;
-using cocos2d::Vec2;
+USING_NS_CC;
 
 // 初始化放置标记层
 bool PlacementMarkerLayer::init()
