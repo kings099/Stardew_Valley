@@ -173,6 +173,7 @@ cocos2d::Vec2 CharacterMove::updatePosition(float deltaTime) {
         newPosition.y = visibleSize.height - halfHeight;
     }
 
+
     _character->setPosition(newPosition);
 
     return newPosition;

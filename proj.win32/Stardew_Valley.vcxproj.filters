@@ -84,6 +84,12 @@
     <ClCompile Include="..\Classes\LocationMap\LocationMap.cpp">
       <Filter>Classes\LocationMap</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\Control\InteractionManager.cpp">
+      <Filter>Classes\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Maps\GameMap.cpp">
+      <Filter>Classes\Maps</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -136,6 +142,12 @@
     </ClInclude>
     <ClInclude Include="..\Classes\LocationMap\LocationMap.h">
       <Filter>Classes\LocationMap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Control\InteractionManager.h">
+      <Filter>Classes\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Maps\GameMap.h">
+      <Filter>Classes\Maps</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
