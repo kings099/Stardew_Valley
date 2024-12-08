@@ -9,7 +9,7 @@
 
 
 #include "CharacterObjectList.h"
-#include "../proj.win32/Constant.h"
+#include "proj.win32/Constant.h"
 
 USING_NS_CC;
 
@@ -52,7 +52,7 @@ void CharacterObjectList::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* ev
 	}
 	// 按下Q键丢弃物品
 	else if (keyCode == EventKeyboard::KeyCode::KEY_Q&& getCurrentObject().count != 0) {
-		discardCurrentObject();
+		deleteCurrentObject();
 	}
 	// 按下E键打开物品栏
 	else if (keyCode == EventKeyboard::KeyCode::KEY_E) {
@@ -88,6 +88,13 @@ bool CharacterObjectList::pickUpObject(GameCommonObject targetObject, int object
 	return true;
 }
 
+// 丢弃当前选中的物品
+ObjectListNode CharacterObjectList::deleteCurrentObject() {
+	ObjectListNode tempObject = getCurrentObject();
+	_objectList[_currentObjectIndex] = { {None,nullptr},0,Selected };
+	return tempObject;
+}
+
 // 获取当前选中的物品
 ObjectListNode CharacterObjectList::getCurrentObject() {
 	return _objectList[_currentObjectIndex];
@@ -106,11 +113,15 @@ void CharacterObjectList::setCurrentObject(int index) {
 	_currentObjectIndex = index;
 }
 
-// 丢弃当前选中的物品
-ObjectListNode CharacterObjectList::discardCurrentObject() {
-	ObjectListNode tempObject = getCurrentObject();
-	_objectList[_currentObjectIndex] = { {None,nullptr},0,Selected };
-	return tempObject;		
+// 设置物品栏状态
+void CharacterObjectList::setObjectListStatus(bool status) {
+	_openObjectList = static_cast<bool>(status);
+}
+
+
+// 判断角色是否打开物品栏
+bool CharacterObjectList::getObjectListStatus() {
+	return _openObjectList;
 }
 
 

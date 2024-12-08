@@ -33,19 +33,6 @@ bool FarmScene::init()
     auto origin = Director::getInstance()->getVisibleOrigin();
 
 
-    // 创建时间显示标签
-    auto timeLabel = Label::createWithSystemFont("", "Arial", 24);
-    timeLabel->setPosition(Vec2(visibleSize.width * 0.8f, visibleSize.height * 0.9f));
-    this->addChild(timeLabel, 2);
-
-    // 设置时间显示标签给 TimeManager
-    TimeManager* timeManager = TimeManager::getInstance();
-    timeManager->setTimeLabel(timeLabel);  // 设置时间标签给 TimeManager
-
-
-
-    timeManager->startUpdating();
-
     // 设置关闭按钮
     auto closeItem = HoverMenuItemImage::create(
         "CloseNormal.png",
@@ -70,24 +57,38 @@ bool FarmScene::init()
     character = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png");
     this->addChild(character, 1); // 角色位于地图之上
 
-    // 加载UI层
-    uiLayer = UILayer::create();
-    this->addChild(uiLayer, 2); // UI层置于最上层
-   // uiLayer->update();
-
     // 创建视角控制器
     viewController = new GameViewController(character, farmMap);
     this->addChild(viewController, 2); // 控制器无需渲染，层级不重要
+
+    // 启动时间管理器的计时
+    TimeManager::getInstance()->startUpdating();
+
+    // 创建 UI 容器
+    Node* uiContainer = Node::create();
+    uiContainer->setPosition(Vec2(0, 0));  // 设置为屏幕的原点
+    this->addChild(uiContainer, 100);  // 添加到最上层
+
+    uiLayer = UILayer::create();
+    uiContainer->addChild(uiLayer);
+
     // 设置更新回调
-    this->schedule([this](float deltaTime) {
+    this->schedule([this, uiContainer](float deltaTime) {
         if (viewController) {
             viewController->update(deltaTime);
         }
+        // 获取摄像机的位移
+        auto cameraPosition = Camera::getDefaultCamera()->getPosition();
+        const auto visibleSize = Director::getInstance()->getVisibleSize();
+        // 将摄像机的偏移量应用到UI容器
+        Vec2 cameraOffset = cameraPosition - Vec2(visibleSize.width / 2, visibleSize.height / 2);
+        uiContainer->setPosition(cameraOffset);  // 更新UI容器的位置，使UI随摄像机移动
+
         if (uiLayer) {
             uiLayer->update(deltaTime);
         }
-        }, "ViewControllerUpdate");
 
+        }, "ViewControllerUpdate");
     return true;
 }
 

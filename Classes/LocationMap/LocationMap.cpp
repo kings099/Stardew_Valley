@@ -26,7 +26,7 @@ const std::map<ObjectListLocation, cocos2d::Vec2>& LocationMap::getLocationMap()
 // 构造函数
 LocationMap::LocationMap()
 {
-    const auto objectListStatus = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png")->checkObjectListStatus();
+    const auto objectListStatus = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png")->getObjectListStatus();
     
     // 物品栏处于打开状态
     if (objectListStatus) {

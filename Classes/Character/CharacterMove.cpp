@@ -126,6 +126,16 @@ cocos2d::Vec2 CharacterMove::getPosition() {
     return _character->getPosition();
 }
 
+// 强制停止角色移动
+void CharacterMove::stopMove() {
+    _moveUp = false;
+    _moveDown = false;
+    _moveLeft = false;
+    _moveRight = false;
+    _character->stopAllActions();
+    _animationPlaying = false;
+}
+
     // 更新角色位置
 cocos2d::Vec2 CharacterMove::updatePosition(float deltaTime) {
     Vec2 newPosition = _character->getPosition();
@@ -155,24 +165,23 @@ cocos2d::Vec2 CharacterMove::updatePosition(float deltaTime) {
         _animationPlaying = false;
     }
 
-    // 边界检测
-    const auto visibleSize = Director::getInstance()->getVisibleSize();
-    const float halfWidth = _character->getContentSize().width / 2;
-    const float halfHeight = _character->getContentSize().height / 2;
+    //// 边界检测
+    //const auto visibleSize = Director::getInstance()->getVisibleSize();
+    //const float halfWidth = _character->getContentSize().width / 2;
+    //const float halfHeight = _character->getContentSize().height / 2;
 
-    if (newPosition.x - halfWidth < 0) {
-        newPosition.x = halfWidth;
-    }
-    if (newPosition.x + halfWidth > visibleSize.width) {
-        newPosition.x = visibleSize.width - halfWidth;
-    }
-    if (newPosition.y - halfHeight < 0) {
-        newPosition.y = halfHeight;
-    }
-    if (newPosition.y + halfHeight > visibleSize.height) {
-        newPosition.y = visibleSize.height - halfHeight;
-    }
-
+    //if (newPosition.x - halfWidth < 0) {
+    //    newPosition.x = halfWidth;
+    //}
+    //if (newPosition.x + halfWidth > visibleSize.width) {
+    //    newPosition.x = visibleSize.width - halfWidth;
+    //}
+    //if (newPosition.y - halfHeight < 0) {
+    //    newPosition.y = halfHeight;
+    //}
+    //if (newPosition.y + halfHeight > visibleSize.height) {
+    //    newPosition.y = visibleSize.height - halfHeight;
+    //}
 
     _character->setPosition(newPosition);
 

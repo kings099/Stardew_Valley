@@ -26,6 +26,9 @@ public:
 	// 捡起物品
 	bool pickUpObject(GameCommonObject targetObject, int objectCount);
 
+	// 丢弃当前选中的物品
+	ObjectListNode deleteCurrentObject();
+
 	// 移动物品
 	void moveObject(ObjectListNode object);
 
@@ -34,23 +37,25 @@ public:
 
 	// 检查物品栏是否已满
 	bool checkObjectListFull();
-protected:
-	bool _openObjectList;						// 是否打开物品栏
 
+	// 获取物品栏状态
+	bool getObjectListStatus();
+
+	// 设置当前选中的物品
+	void setCurrentObject(int index);
+
+	// 设置物品栏状态
+	void setObjectListStatus(bool status);
 private:
 	std::vector<ObjectListNode> _objectList;	// 物品栏列表
 	int _maxObjectKindCount;					// 物品栏最大物品种类容量
 	int _currentObjectKindCount;				// 当前物品种类物品数量
 	int _currentObjectIndex;					// 当前选中的物品索引
+	bool _openObjectList;						// 是否打开物品栏
 
 	// 初始化物品栏
 	void initObjectList();
-
-	// 设置当前选中的物品
-	void setCurrentObject(int index);			
-
-	// 丢弃当前选中的物品
-	ObjectListNode discardCurrentObject();
+	
 
 	// 查找物品栏中是否有指定物品
 	int findObject(GameCommonObject targetObject);

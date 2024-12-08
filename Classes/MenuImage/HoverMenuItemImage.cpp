@@ -27,6 +27,7 @@ HoverMenuItemImage *HoverMenuItemImage::create(const std::string& normalImage, c
     // 注册鼠标事件
     auto listener = EventListenerMouse::create();
     listener->onMouseMove = CC_CALLBACK_1(HoverMenuItemImage::onMouseMove, this);
+    listener->onMouseDown = CC_CALLBACK_1(HoverMenuItemImage::onMouseDown, this);
     _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
     return true;
 }
@@ -40,6 +41,14 @@ HoverMenuItemImage *HoverMenuItemImage::create(const std::string& normalImage, c
      }
      else {
          scaleAnimation(1.0f);  // 鼠标离开时还原
+     }
+ }
+
+ // 鼠标点击事件
+ void HoverMenuItemImage::onMouseDown(EventMouse* event) {
+     Vec2 location = Vec2(event->getCursorX(), event->getCursorY());
+     if (this->getBoundingBox().containsPoint(location)) {
+         _callback(this); // 按钮被点击
      }
  }
 
