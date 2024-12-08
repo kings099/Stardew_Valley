@@ -93,7 +93,10 @@
     <ClCompile Include="..\Classes\Maps\GameMap.cpp">
       <Filter>Classes\Maps</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\TimeManager.cpp">
+    <ClCompile Include="..\Classes\Layer\TimeManagerUI.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Manager\TimeManager.cpp">
       <Filter>Classes\Manager</Filter>
     </ClCompile>
   </ItemGroup>
@@ -155,7 +158,10 @@
     <ClInclude Include="..\Classes\Maps\GameMap.h">
       <Filter>Classes\Maps</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\TimeManager.h">
+    <ClInclude Include="..\Classes\Layer\TimeManagerUI.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Manager\TimeManager.h">
       <Filter>Classes\Manager</Filter>
     </ClInclude>
   </ItemGroup>

@@ -50,9 +50,9 @@ constexpr int MAX_STORAGE_NUM = 999;										// 单个物品的最大存储数量
 constexpr int OBJECT_LIST_ROWS = 3;											// 物品栏行数
 constexpr int OBJECT_LIST_COLS = 12;										// 物品栏列数
 
-
-
-
+//UI组件设置
+constexpr int UI_SCALE = 160.0f;                                             //UI组件的图像缩放比例
+constexpr int FONT_SIZE = 24;                                                //
 //// 游戏工具物品属性定义
 //typedef struct {
 //	std::string fileName;    // 工具图片资源文件路径

@@ -81,7 +81,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     // 获取窗口的帧大小
     const auto frameSize = glview->getFrameSize();
-
+   
     //根据窗口的大小设置内容缩放因子
     if (frameSize.height > mediumResolutionSize.height){        
         director->setContentScaleFactor(MIN(largeResolutionSize.height/designResolutionSize.height, largeResolutionSize.width/designResolutionSize.width));
