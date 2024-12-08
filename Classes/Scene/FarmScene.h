@@ -34,7 +34,7 @@ public:
 private:
     // 农场地图
     FarmMap* farmMap;
-
+  
     // 角色
     Character* character;
 
