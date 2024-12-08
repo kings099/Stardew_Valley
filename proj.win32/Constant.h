@@ -39,7 +39,7 @@ constexpr float CHARACTER_MOVE_SPEED = 5.0f;								// 移动速度
 // 地图设置
 constexpr float LERP_SPEED = 0.1f;											// 视角过渡的平滑度
 constexpr float SCENE_TRANSITION_TIME = 1.0f;								// //场景过渡时间
-constexpr float FARM_MAP_SCALE = 2.0f;											// 地图缩放大小
+constexpr float FARM_MAP_SCALE = 2.0f;										// 地图缩放大小
 
 
 // 物品设置
@@ -56,97 +56,9 @@ constexpr int FONT_SIZE = 24;                                                //
 constexpr int OBJECT_LIST_ROWS = 3;											// 物品栏行数
 constexpr int OBJECT_LIST_COLS = 12;										// 物品栏列数
 
+constexpr int UI_SCALE = 160.0f;                                             // UI缩放比例
+constexpr int FONT_SIZE = 24;                                                // 字体大小
 
-
-//typedef struct {
-//	std::string fileName;    // 工具图片资源文件路径
-//	std::string name;        // 工具名称
-//	GameObjectSkillType type;	 // 工具类型
-//	int level;               // 工具等级
-//	int actionCost;			 // 执行一次操作需要的次数
-//	int durability;          // 工具耐久度(针对水壶)
-//}GameToolObject;
-//// 游戏种子物品属性定义
-//// TODO:添加额外收获功能
-//typedef struct {
-//	std::string fileName;						// 种子图片资源文件路径
-//	std::string name;							// 种子名称
-//	GameObjectSkillType type;						// 种子类型
-//	int level;									// 解锁种子所需等级
-//	Season season;								// 种子生长季节
-//	int growthDays[MAX_GROWTH_STAGE];			// 种子每个阶段所需的生长天数
-//	int totalGrowTime;							// 种子生长总天数
-//	int harvestIndex;							// 种子收获所得的物品索引
-//	int buyPrice;								// 种子购买价格
-//	int salePrice;								// 种子出售价格
-//}GameSeedObeject;
-//
-//// 游戏基础物品属性定义
-//typedef struct {
-//	std::string fileName;    // 物品图片资源文件路径
-//	std::string name;        // 物品名称
-//	GameObjectSkillType type;	 // 物品类型
-//	int maxStorage;          // 物品最大存储量
-//	int level;               // 解锁物品所需等级
-//	int quality;             // 物品品质等级
-//	bool sale;               // 是否能出售
-//	int salePrice;           // 出售价格
-//	bool eat;                // 是否可以食用
-//	int eatEnegry;           // 食用恢复的能量值
-//	bool place;				 // 能否放置
-//}GameBaseObject;
-//
-//// 游戏合成物品属性定义
-//typedef struct {
-//	GameBaseObject baseObject;					// 基础物品属性
-//	std::map<std::string, int> ingredients;		// 合成物品的原料
-//}GameComposeObject;
-//
-//// 游戏通用物品属性定义
-//typedef struct {
-//GameObjectMapType type;							// 物品类型
-//	void* object;									// 物品对象
-//}GameCommonObject;
-//
-//
-//// 游戏工具物品属性参数定义
-//const std::map<int, GameToolObject> GAME_TOOL_OBJECTS_ATTRS = {
-//	{1,{"","初级锄头",Farm,1,1,INT_MAX}},				// 锄头(一级)
-//	{2,{"","中级锄头",Farm,2,1,INT_MAX}},				// 锄头(二级)
-//	{3,{"","高级锄头",Farm,3,1,INT_MAX}},				// 锄头(三级)
-//	{4,{"","初级斧头",Collect,1,8,INT_MAX}},				// 斧头(一级)
-//	{5,{"","中级斧头",Collect,2,7,INT_MAX}},				// 斧头(二级)
-//	{6,{"","高级斧头",Collect,3,6,INT_MAX}},				// 斧头(三级)
-//	{7,{"","初级镐子",Mine,1,10,INT_MAX}},				// 镐子(一级)
-//	{8,{"","中级镐子",Mine,2,9,INT_MAX}},				// 镐子(二级)
-//	{9,{"","高级镐子",Mine,3,8,INT_MAX}},				// 镐子(三级)
-//	{10,{"","初级鱼竿",Fish,1,1,INT_MAX}},				// 鱼竿(一级)
-//	{11,{"","中级鱼竿",Fish,2,1,INT_MAX}},				// 鱼竿(二级)
-//	{12,{"","高级鱼竿",Fish,3,1,INT_MAX}},				// 鱼竿(三级)
-//	{13,{"","初级水壶",Farm,1,1,40}},					// 水壶(一级)
-//	{14,{"","中级水壶",Farm,2,1,55}},					// 水壶(二级)
-//	{15,{"","高级水壶",Farm,3,1,70}},					// 水壶(三级)
-//};
-//
-//// 游戏种子物品属性参数定义
-//const std::map<int, GameSeedObeject> GAME_SEED_OBJECTS_ATTRS = {
-//
-//};
-//
-//// 游戏基础物品属性参数定义
-//const std::map<int, GameBaseObject> GAME_BASE_OBJECTS_ATTRS = {
-//
-//};
-//
-//// 游戏种子成熟后对应作物匹配
-//const std::map<GameSeedObeject, GameBaseObject> SEED_TO_CROP_TYPE = {
-//
-//};
-//
-//// 游戏合成物品属性参数定义
-//const std::map<int, GameComposeObject> GAME_COMPOSE_OBJECTS_ATTRS = {
-//
-//};
 
 const int SECONDS_IN_A_DAY = 86400;                                         // 一天的秒数
 const float TIME_SCALE = 3600.0f;                                             // 游戏时间缩放比例，现实1秒=游戏1分钟

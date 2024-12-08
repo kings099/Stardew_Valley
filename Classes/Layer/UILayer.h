@@ -1,31 +1,60 @@
+/****************************************************************
+ * Project Name:  Stardew_Valley
+ * File Name:     UILayer.h
+ * File Function: UI½çÃæUILayerÀàµÄ¶¨Òå
+ * Author:        ´ïË¼î££¬Òü³Ï³É
+ * Update Date:   2024/12/9
+ * License:       MIT License
+ ****************************************************************/
 #pragma once
 #ifndef _UILAYER_H_
 #define _UILAYER_H_
 
 #include "cocos2d.h"
 #include "Classes/Character/Character.h"
+#include "Classes/Manager/TimeManager.h"
+#include "Classes/MenuImage/HoverMenuItemImage.h"
+#include "../proj.win32/ObjectConstant.h"
 
 class UILayer : public cocos2d::Layer {
 public:
-	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	// Îö¹¹º¯Êı
 	~UILayer();
 
-	// ï¿½ï¿½Ê¼ï¿½ï¿½UIï¿½ï¿½
+	// ³õÊ¼»¯UI²ã
 	virtual bool init();
 
-	// ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½Æ·ï¿½ï¿½
+	// ³õÊ¼»¯ÎïÆ·À¸
 	void initializeObjectList();
 
-	// ï¿½ï¿½ï¿½ï¿½UIï¿½ï¿½ï¿½ï¿½
+	// ¸üĞÂÎïÆ·À¸
+	void updateObjectList();
+
+	// ³õÊ¼»¯Ê±¼äÏÔÊ¾Æ÷
+	void initializeTimeDisplay();
+
+	// ¸üĞÂÊ±¼äÏÔÊ¾Æ÷
+	void updateTimeDisplay();
+
+	// ¸üĞÂUI½çÃæ
 	void update(float deltaTime);
 
-	// Êµï¿½ï¿½ UILayer ï¿½ï¿½ï¿½ create ï¿½ï¿½ï¿½ï¿½
+	// UILayerµÄcreateº¯Êı
 	CREATE_FUNC(UILayer);
 
 private:
-	cocos2d::Sprite* objectListBackground = nullptr; // ï¿½ï¿½ï¿½æµ±Ç°ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½
+	Character* character;							// ½ÇÉ«²ã
+	cocos2d::Size visibleSize;						// ¿É¼ûÇøÓòµÄ´óĞ¡
+
+	cocos2d::Label* timeLabel1;						// ÏÔÊ¾ĞÇÆÚºÍÈÕÆÚµÄ±êÇ©
+	cocos2d::Label* timeLabel2;						// ÏÔÊ¾°×Ìì/ÍíÉÏºÍĞ¡Ê±µÄ±êÇ©
+	cocos2d::Sprite* timeDisplayLayer;				// ÓÃ×÷ÎªUI±³¾°µÄÍ¼Æ¬
+
+	cocos2d::Sprite* objectListLayer = nullptr;			// ÎïÆ·À¸×´Ì¬
+	HoverMenuItemImage *deleteObjectButton = nullptr;	// É¾³ıÎïÆ·°´Å¥
+	HoverMenuItemImage *closeObjectListButton = nullptr;	// ¹Ø±ÕÎïÆ·À¸°´Å¥
 };
 
-#endif // ï¿½ï¿½_UILAYER_H_
+#endif // !_UILAYER_H_
 
 

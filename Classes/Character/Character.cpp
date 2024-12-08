@@ -41,8 +41,11 @@ Character::Character(const std::string& filename){
 // 按下键盘时的处理
 void Character::onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event) {
     // 角色移动处理函数
-    if (!_openObjectList) {
+    if (!CharacterObjectList::getObjectListStatus()) {
         CharacterMove::onKeyPressed(keyCode, event);
+    }
+    else {
+        stopMove();
     }
     CharacterObjectList::onKeyPressed(keyCode, event);
 }
@@ -50,17 +53,15 @@ void Character::onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::E
 // 释放键盘时的处理
 void Character::onKeyReleased(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event) {
     // 角色移动处理函数
-    if (!_openObjectList) {
+    if (!CharacterObjectList::getObjectListStatus()) {
         CharacterMove::onKeyReleased(keyCode, event);
+    }
+    else {
+        stopMove();
     }
 }
 
 // 更新角色位置
 Vec2 Character::updatePosition(float deltaTime) {
     return CharacterMove::updatePosition(deltaTime);
-}
-
-// 判断角色是否打开物品栏
-const bool Character::checkObjectListStatus() {
-    return _openObjectList;
 }

@@ -25,6 +25,9 @@ private:
     // 鼠标移动事件
     void onMouseMove(EventMouse* event);
 
+    // 鼠标点击事件
+    void onMouseDown(EventMouse* event);
+
     // 缩放动画函数
     void scaleAnimation(float targetScale);
 };

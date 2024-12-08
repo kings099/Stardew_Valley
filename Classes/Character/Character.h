@@ -27,15 +27,17 @@ public:
     // 更新位置
     cocos2d::Vec2 updatePosition(float deltaTime);
 
-    // 判断角色是否打开物品栏
-    const bool checkObjectListStatus();
 private:
-    //cocos2d::Sprite* _character;                        // 角色精灵
-    int _money;                                 // 角色金钱
-    int _energy;                                // 角色能量
+    // 禁止拷贝和赋值
+    Character(const Character&) = delete;
+    Character& operator=(const Character&) = delete;
 
-    // 构造函数
+    // 构造函数私有化
     Character(const std::string& filename);
+
+    int _money;                                 // 角色金钱
+    int _currentEnergy;                         // 角色能量
+    int _maxEnergy;                             // 角色最大能量
 };
 
 #endif // __CHARACTER_H__
