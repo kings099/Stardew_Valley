@@ -48,12 +48,17 @@ constexpr int MAX_OBJECT_LIST_SIZE_LEVEL2 = 24;								// 背包容量(等级2)
 constexpr int MAX_OBJECT_LIST_SIZE_LEVEL3 = 36;								// 背包容量(等级3)
 constexpr int MAX_STORAGE_NUM = 999;										// 单个物品的最大存储数量
 
+constexpr int UI_SCALE = 160.0f;                                             //UI�����ͼ�����ű���
+constexpr int FONT_SIZE = 24;                                                //
+
+
 // 物品栏设置
 constexpr int OBJECT_LIST_ROWS = 3;											// 物品栏行数
 constexpr int OBJECT_LIST_COLS = 12;										// 物品栏列数
 
 constexpr int UI_SCALE = 160.0f;                                             // UI缩放比例
 constexpr int FONT_SIZE = 24;                                                // 字体大小
+
 
 const int SECONDS_IN_A_DAY = 86400;                                         // 一天的秒数
 const float TIME_SCALE = 3600.0f;                                             // 游戏时间缩放比例，现实1秒=游戏1分钟

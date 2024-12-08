@@ -1,50 +1,182 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="..\Classes\AppDelegate\AppDelegate.cpp" />
-    <ClCompile Include="..\Classes\Character\Character.cpp" />
-    <ClCompile Include="..\Classes\Character\CharacterAction.cpp" />
-    <ClCompile Include="..\Classes\Character\CharacterInfo.cpp" />
-    <ClCompile Include="..\Classes\Character\CharacterMove.cpp" />
-    <ClCompile Include="..\Classes\Character\CharacterObjectList.cpp" />
-    <ClCompile Include="..\Classes\Control\GameViewController.cpp" />
     <ClCompile Include="..\Classes\CursorAndBUutton\HoverCursor.cpp" />
-    <ClCompile Include="..\Classes\Layer\PlacementMarkerLayer.cpp" />
-    <ClCompile Include="..\Classes\Layer\UILayer.cpp" />
-    <ClCompile Include="..\Classes\LocationMap\LocationMap.cpp" />
-    <ClCompile Include="..\Classes\Control\InteractionManager.cpp" />
-    <ClCompile Include="..\Classes\Maps\FarmMap.cpp" />
-    <ClCompile Include="..\Classes\MenuImage\HoverMenuItemImage.cpp" />
-    <ClCompile Include="..\Classes\Maps\GameMap.cpp" />
-    <ClCompile Include="..\Classes\Scene\FarmScene.cpp" />
-    <ClCompile Include="..\Classes\Scene\HelloWorldScene.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="..\Classes\Manager\TimeManager.cpp" />
+    <ClCompile Include="main.cpp">
+      <Filter>Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate\AppDelegate.cpp">
+      <Filter>Classes\AppDelegate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Character\Character.cpp">
+      <Filter>Classes\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Character\CharacterAction.cpp">
+      <Filter>Classes\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Character\CharacterInfo.cpp">
+      <Filter>Classes\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Character\CharacterMove.cpp">
+      <Filter>Classes\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Character\CharacterObjectList.cpp">
+      <Filter>Classes\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Maps\FarmMap.cpp">
+      <Filter>Classes\Maps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Maps\GameMap.cpp">
+      <Filter>Classes\Maps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Control\GameViewController.cpp">
+      <Filter>Classes\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\HelloWorldScene.cpp">
+      <Filter>Classes\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\FarmScene.cpp">
+      <Filter>Classes\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LocationMap\LocationMap.cpp">
+      <Filter>Classes\LocationMap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MenuImage\HoverMenuItemImage.cpp">
+      <Filter>Classes\MenuImage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TimeManager.cpp">
+      <Filter>Classes\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Control\InteractionManager.cpp">
+      <Filter>Classes\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\PlacementMarkerLayer.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+
+    <ClCompile Include="..\Classes\Layer\TimeManagerUI.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Manager\TimeManager.cpp">
+      <Filter>Classes\Manager</Filter>
+
+    <ClCompile Include="..\Classes\Layer\UILayer.cpp">
+      <Filter>Classes\Layer</Filter>
+
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Classes\AppDelegate\AppDelegate.h" />
-    <ClInclude Include="..\Classes\Character\Character.h" />
-    <ClInclude Include="..\Classes\Character\CharacterAction.h" />
-    <ClInclude Include="..\Classes\Character\CharacterInfo.h" />
-    <ClInclude Include="..\Classes\Character\CharacterMove.h" />
-    <ClInclude Include="..\Classes\Character\CharacterObjectList.h" />
-    <ClInclude Include="..\Classes\Control\GameViewController.h" />
     <ClInclude Include="..\Classes\CursorAndBUutton\HoverCursor.h" />
-    <ClInclude Include="..\Classes\Layer\PlacementMarkerLayer.h" />
-    <ClInclude Include="..\Classes\Layer\UILayer.h" />
-    <ClInclude Include="..\Classes\LocationMap\LocationMap.h" />
-    <ClInclude Include="..\Classes\Control\InteractionManager.h" />
-    <ClInclude Include="..\Classes\Maps\FarmMap.h" />
-    <ClInclude Include="..\Classes\MenuImage\HoverMenuItemImage.h" />
-    <ClInclude Include="..\Classes\Maps\GameMap.h" />
-    <ClInclude Include="..\Classes\Scene\FarmScene.h" />
-    <ClInclude Include="..\Classes\Scene\HelloWorldScene.h" />
-    <ClInclude Include="Constant.h" />
-    <ClInclude Include="main.h" />
-    <ClInclude Include="ObjectConstant.h" />
-    <ClInclude Include="..\Classes\Manager\TimeManager.h" />
+    <ClInclude Include="main.h">
+      <Filter>Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate\AppDelegate.h">
+      <Filter>Classes\AppDelegate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Character\Character.h">
+      <Filter>Classes\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Character\CharacterAction.h">
+      <Filter>Classes\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Character\CharacterInfo.h">
+      <Filter>Classes\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Character\CharacterMove.h">
+      <Filter>Classes\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Character\CharacterObjectList.h">
+      <Filter>Classes\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Maps\FarmMap.h">
+      <Filter>Classes\Maps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Maps\GameMap.h">
+      <Filter>Classes\Maps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Control\GameViewController.h">
+      <Filter>Classes\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\HelloWorldScene.h">
+      <Filter>Classes\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\FarmScene.h">
+      <Filter>Classes\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LocationMap\LocationMap.h">
+      <Filter>Classes\LocationMap</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectConstant.h">
+      <Filter>Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="Constant.h">
+      <Filter>Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MenuImage\HoverMenuItemImage.h">
+      <Filter>Classes\MenuImage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TimeManager.h">
+      <Filter>Classes\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Control\InteractionManager.h">
+      <Filter>Classes\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\PlacementMarkerLayer.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+
+    <ClInclude Include="..\Classes\Layer\TimeManagerUI.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Manager\TimeManager.h">
+      <Filter>Classes\Manager</Filter>
+
+    <ClInclude Include="..\Classes\Layer\UILayer.h">
+      <Filter>Classes\Layer</Filter>
+
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="game.rc" />
+    <Filter Include="Win32">
+      <UniqueIdentifier>{ce7b9de5-e704-4dda-b785-778920e4d68d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{c15939ee-24d7-49c4-ace6-d98bb957191b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\AppDelegate">
+      <UniqueIdentifier>{50b47d4c-d075-4dbf-9aab-c2e3fc98bba6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Character">
+      <UniqueIdentifier>{93c83081-d304-4984-8f2b-a242723774f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Maps">
+      <UniqueIdentifier>{661ebf28-b36c-4362-bb2e-24c5d04d4d6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Control">
+      <UniqueIdentifier>{c5be6d45-ec48-4ed5-9d2a-f247972a600b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Scene">
+      <UniqueIdentifier>{76a91594-afe2-422d-9d46-e6a8e2e909cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\LocationMap">
+      <UniqueIdentifier>{d1a7b7d6-e79a-4fd7-9a4c-136f725e84a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\MenuImage">
+      <UniqueIdentifier>{4108d8f8-4c62-4d01-a3c7-45ff42542fc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Manager">
+      <UniqueIdentifier>{9a0361ec-2416-43a3-9ada-24b934bfbfff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Layer">
+      <UniqueIdentifier>{b560586d-3026-40bf-b612-a2b26cccd69b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{4848dd74-7c17-4b7b-99d9-3960fe0b8ac7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

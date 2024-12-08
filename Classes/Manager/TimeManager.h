@@ -5,51 +5,52 @@
 
 class TimeManager {
 public:
-    // »ñÈ¡ TimeManager µÄµ¥Àı
+    // è·å– TimeManager çš„å•ä¾‹
     static TimeManager* getInstance();
 
-    // ¸üĞÂÓÎÏ·Ê±¼ä
+    // æ›´æ–°æ¸¸æˆæ—¶é—´
     void update(int deltaT);
 
-    // »ñÈ¡µ±Ç°Ê±¼äµÄ×Ö·û´®±íÊ¾£¨¼¾½Ú¡¢ÈÕ¡¢Ê±·Ö£©
+    // è·å–å½“å‰æ—¶é—´çš„å­—ç¬¦ä¸²è¡¨ç¤ºï¼ˆå­£èŠ‚ã€æ—¥ã€æ—¶åˆ†ï¼‰
     std::string getTimeString() const;
 
-    // »ñÈ¡µ±Ç°ĞÇÆÚ¼¸£¨Èç£ºĞÇÆÚÒ»¡¢ĞÇÆÚ¶ş£©
+    // è·å–å½“å‰æ˜ŸæœŸå‡ ï¼ˆå¦‚ï¼šæ˜ŸæœŸä¸€ã€æ˜ŸæœŸäºŒï¼‰
     std::string getWeekDay() const;
 
-    // »ñÈ¡µ±Ç°Ê±¼ä£¨Ğ¡Ê±:·ÖÖÓ£©¸ñÊ½µÄ×Ö·û´®
+    // è·å–å½“å‰æ—¶é—´ï¼ˆå°æ—¶:åˆ†é’Ÿï¼‰æ ¼å¼çš„å­—ç¬¦ä¸²
     std::string getCurrentTime() const;
 
-    // ÅĞ¶ÏÊÇ·ñÊÇ°×Ìì
+    // åˆ¤æ–­æ˜¯å¦æ˜¯ç™½å¤©
     bool isDaytime() const;
 
-    // Æô¶¯Ê±¼ä¸üĞÂ
+    // å¯åŠ¨æ—¶é—´æ›´æ–°
     void startUpdating();
 
-    // Í£Ö¹Ê±¼ä¸üĞÂ
+    // åœæ­¢æ—¶é—´æ›´æ–°
     void stopUpdating();
 
 private:
-    TimeManager();  // ¹¹Ôìº¯Êı
-    ~TimeManager(); // Îö¹¹º¯Êı
+    TimeManager();  // æ„é€ å‡½æ•°
+    ~TimeManager(); // ææ„å‡½æ•°
 
-    // ¸üĞÂÊ±¼ä£¨Ğ¡Ê±¡¢·ÖÖÓ¡¢ÌìÊı£©
+    // æ›´æ–°æ—¶é—´ï¼ˆå°æ—¶ã€åˆ†é’Ÿã€å¤©æ•°ï¼‰
     void updateTime();
 
-    // ¸üĞÂÖçÒ¹ÖÜÆÚ
+    // æ›´æ–°æ˜¼å¤œå‘¨æœŸ
     void updateDayNightCycle();
 
-    // ¸üĞÂ¼¾½Ú
+    // æ›´æ–°å­£èŠ‚
     void updateSeason();
 
-    static TimeManager* instance;  // µ¥ÀıÖ¸Õë
+    static TimeManager* instance;  // å•ä¾‹æŒ‡é’ˆ
 
-    int timeInSeconds; // ÓÎÏ·×ÜÊ±¼ä£¨Ãë£©
-    int day;            // µ±Ç°ÓÎÏ·ÈÕ
-    int hour;           // µ±Ç°Ğ¡Ê±
-    int minute;         // µ±Ç°·ÖÖÓ
-    int season;         // µ±Ç°¼¾½Ú
-    bool isDay;         // ÊÇ·ñÎª°×Ìì
+    int timeInSeconds; // æ¸¸æˆæ€»æ—¶é—´ï¼ˆç§’ï¼‰
+    int day;            // å½“å‰æ¸¸æˆæ—¥
+    int hour;           // å½“å‰å°æ—¶
+    int minute;         // å½“å‰åˆ†é’Ÿ
+    int season;         // å½“å‰å­£èŠ‚
+    bool isDay;         // æ˜¯å¦ä¸ºç™½å¤©
 };
 
 #endif // __TIMEMANAGER_H__
+

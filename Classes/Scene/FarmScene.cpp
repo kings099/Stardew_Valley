@@ -11,6 +11,7 @@
 #include "../Classes/MenuImage/HoverMenuItemImage.h"
 #include "../Classes/Layer/UILayer.h"
 #include "../Classes/Manager/TimeManager.h"
+#include "../Classes/Layer/TimeManagerUI.h"
 
 USING_NS_CC;
 
@@ -18,7 +19,6 @@ Scene* FarmScene::createScene()
 {
     return FarmScene::create();
 }
-
 
 
 bool FarmScene::init()
@@ -31,7 +31,6 @@ bool FarmScene::init()
     // 获取可见区域大小
     auto visibleSize = Director::getInstance()->getVisibleSize();
     auto origin = Director::getInstance()->getVisibleOrigin();
-
 
     // 设置关闭按钮
     auto closeItem = HoverMenuItemImage::create(
@@ -69,11 +68,13 @@ bool FarmScene::init()
     uiContainer->setPosition(Vec2(0, 0));  // 设置为屏幕的原点
     this->addChild(uiContainer, 100);  // 添加到最上层
 
+
     uiLayer = UILayer::create();
     uiContainer->addChild(uiLayer);
 
+
     // 设置更新回调
-    this->schedule([this, uiContainer](float deltaTime) {
+     this->schedule([this, uiContainer](float deltaTime) {
         if (viewController) {
             viewController->update(deltaTime);
         }
@@ -91,6 +92,7 @@ bool FarmScene::init()
         }, "ViewControllerUpdate");
     return true;
 }
+
 
 void FarmScene::menuCloseCallback(Ref* pSender)
 {
