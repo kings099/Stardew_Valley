@@ -1,10 +1,12 @@
 #include "HelloWorldScene.h"
 #include "SimpleAudioEngine.h"
-#include"Classes/Maps/FarmMap.h"
-#include "Classes/Control/GameViewController.h"
 #include "ui/CocosGUI.h"
-#include "Classes/Character/CharacterInfo.h"
+#include "../Classes/Maps/FarmMap.h"
+#include "../Classes/Control/GameViewController.h"
+#include "../Classes/Character/CharacterInfo.h"
+#include "../Classes/MenuImage/HoverMenuItemImage.h"
 #include "FarmScene.h"
+
 
 USING_NS_CC;
 
@@ -61,7 +63,8 @@ void HelloWorld::createMenuWithImage()
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
     // 创建 "开始" 按钮的图像
-    startItem = MenuItemImage::create(
+    
+    startItem = HoverMenuItemImage::create(
         "../Resources/Helloworld/start.png",   // 普通状态下的图片
         "../Resources/Helloworld/start_.png",  // 悬停状态下的图片
         CC_CALLBACK_1(HelloWorld::startGameCallback, this)  // 点击时调用的回调函数
@@ -69,9 +72,9 @@ void HelloWorld::createMenuWithImage()
     startItem->setPosition(Vec2(origin.x + visibleSize.width * 0.33, origin.y + visibleSize.height * 0.2f)); // 设置 "开始" 按钮的位置
 
     // 创建 "结束" 按钮的图像
-    exitItem = MenuItemImage::create(
+    exitItem = HoverMenuItemImage::create(
         "../Resources/Helloworld/end.png",    // 普通状态下的图片
-        "../Resources/Helloworld/end_.png", // 悬停状态下的图片
+        "../Resources/Helloworld/end_.png",   // 悬停状态下的图片
         CC_CALLBACK_1(HelloWorld::exitGameCallback, this)  // 点击时调用的回调函数
     );
     exitItem->setPosition(Vec2(origin.x + visibleSize.width * 0.67, origin.y + visibleSize.height * 0.2f)); // 设置 "结束" 按钮的位置

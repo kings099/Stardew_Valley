@@ -1,7 +1,7 @@
 /****************************************************************
- * Project Name:  Stardew Valley
+ * Project Name:  Stardew_Valley
  * File Name:     CharacterObjectList.h
- * File Function: CharacterObjectList的定义
+ * File Function: 角色物品栏CharacterObjectList的定义
  * Author:        尹诚成
  * Update Date:   2023/12/05
  * License:       MIT License
@@ -13,20 +13,7 @@
 #include <vector>
 #include "cocos2d.h"
 #include "../proj.win32/Constant.h"
-
-// 物品状态定义
-typedef enum {
-	Unselected,						// 未被选中
-	Selected,						// 已被选中
-}ObjectStatus;
-
-// 物品栏单个物品属性定义
-typedef struct {
-	GameCommonObject objectNode;	// 物品信息
-	int count;						// 物品数量
-	ObjectStatus status;			// 物品状态
-}ObjectListNode;
-
+#include "../proj.win32/ObjectConstant.h"
 
 class CharacterObjectList : virtual public cocos2d::Node {
 public:
@@ -48,7 +35,7 @@ public:
 	// 检查物品栏是否已满
 	bool checkObjectListFull();
 protected:
-	bool openObjectList;						// 是否打开物品栏
+	bool _openObjectList;						// 是否打开物品栏
 
 private:
 	std::vector<ObjectListNode> _objectList;	// 物品栏列表

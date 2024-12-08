@@ -8,6 +8,7 @@
  ****************************************************************/
 #include "FarmScene.h"
 #include "SimpleAudioEngine.h"
+#include "../Classes/MenuImage/HoverMenuItemImage.h"
 
 USING_NS_CC;
 
@@ -30,7 +31,7 @@ bool FarmScene::init()
     auto origin = Director::getInstance()->getVisibleOrigin();
 
     // 设置关闭按钮
-    auto closeItem = MenuItemImage::create(
+    auto closeItem = HoverMenuItemImage::create(
         "CloseNormal.png",
         "CloseSelected.png",
         CC_CALLBACK_1(FarmScene::menuCloseCallback, this));
@@ -50,7 +51,7 @@ bool FarmScene::init()
     this->addChild(farmMap, 0); // 地图置于最底层
 
     // 加载角色
-    character = new  Character("../Resources/Characters/Bear/BearDownAction1.png");
+    character = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png");
     this->addChild(character, 1); // 角色位于地图之上
 
     // 创建视角控制器

@@ -1,5 +1,5 @@
 /****************************************************************
- * Project Name:  Stardew Valley
+ * Project Name:  Stardew_Valley
  * File Name:     Character.cpp
  * File Function: Character类的实现
  * Author:        尹诚成
@@ -11,9 +11,17 @@
 #include "../proj.win32/Constant.h"
 
 USING_NS_CC;
+// 获取单例
+Character* Character::getInstance(const std::string& filename) {
+    static Character* instance = nullptr; 
+    if (!instance) {
+        instance = new Character(filename); // 仅在第一次调用时创建实例
+    }
+    return instance;
+}
 
 // 构造函数
-Character::Character(const std::string& filename) {
+Character::Character(const std::string& filename){
     const auto visibleSize = Director::getInstance()->getVisibleSize();
     const Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
@@ -33,7 +41,7 @@ Character::Character(const std::string& filename) {
 // 按下键盘时的处理
 void Character::onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event) {
     // 角色移动处理函数
-    if (!openObjectList) {
+    if (!_openObjectList) {
         CharacterMove::onKeyPressed(keyCode, event);
     }
     CharacterObjectList::onKeyPressed(keyCode, event);
@@ -42,7 +50,7 @@ void Character::onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::E
 // 释放键盘时的处理
 void Character::onKeyReleased(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event) {
     // 角色移动处理函数
-    if (!openObjectList) {
+    if (!_openObjectList) {
         CharacterMove::onKeyReleased(keyCode, event);
     }
 }
@@ -50,4 +58,9 @@ void Character::onKeyReleased(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::
 // 更新角色位置
 Vec2 Character::updatePosition(float deltaTime) {
     return CharacterMove::updatePosition(deltaTime);
+}
+
+// 判断角色是否打开物品栏
+const bool Character::checkObjectListStatus() {
+    return _openObjectList;
 }

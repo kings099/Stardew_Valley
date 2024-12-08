@@ -1,9 +1,9 @@
 /****************************************************************
- * Project Name:  Stardew Valley
+ * Project Name:  Stardew_Valley
  * File Name:     Character.cpp
- * File Function: Character类的实现
+ * File Function: 角色移动Character类的实现
  * Author:        尹诚成
- * Update Date:   2023/12/0
+ * Update Date:   2023/12/07
  * License:       MIT License
  ****************************************************************/
 
@@ -119,6 +119,11 @@ void CharacterMove::playAnimation() {
         _animationPlaying = true;
         _lastDirection = _currentDirection;
     }
+}
+
+// 获取角色当前位置
+cocos2d::Vec2 CharacterMove::getPosition() {
+    return _character->getPosition();
 }
 
     // 更新角色位置
