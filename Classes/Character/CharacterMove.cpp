@@ -168,7 +168,7 @@ cocos2d::Vec2 CharacterMove::updatePosition(float deltaTime) {
         newPosition.y = visibleSize.height - halfHeight;
     }
 
-    CCLOG("%f,%f", _character->getAnchorPoint().x, _character->getAnchorPoint().y);
+
     _character->setPosition(newPosition);
 
     return newPosition;

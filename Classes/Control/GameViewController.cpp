@@ -11,8 +11,8 @@
 #include "InteractionManager.h"
 USING_NS_CC;
 
-GameViewController::GameViewController(Character* character,FarmMap* farmmap)
-    : _character(character),_farmmap(farmmap){
+GameViewController::GameViewController(Character* character,GameMap* map)
+    : _character(character),_map(map){
 }
 
 
@@ -21,8 +21,8 @@ void GameViewController::update(float deltaTime) {
     // 获取角色的位置
     Vec2 characterPosition = _character->updatePosition(deltaTime);
 
-    Vec2 mapPosition = _farmmap->getPosition();
-    Size mapSize = _farmmap->getMapSize();
+    Vec2 mapPosition = _map->getPosition();
+    Size mapSize = _map->getMapSize();
 
     // 获取摄像机
     auto camera = Director::getInstance()->getRunningScene()->getDefaultCamera();
@@ -50,12 +50,6 @@ void GameViewController::update(float deltaTime) {
     float lerpSpeed = 0.1f; // 调整此值以改变过渡的平滑度
     Vec2 newCameraPosition = currentCameraPosition.lerp(targetCameraPosition, lerpSpeed);
     camera->setPosition(newCameraPosition);
-
-    // 创建交互管理器
-    auto interactionManager = InteractionManager::create(_character, _farmmap);
-    // 更新角色周围信息
-    interactionManager->updateSurroundingTiles(characterPosition);
-    interactionManager->getSorroundingCollidable(characterPosition);
 
 }
 
