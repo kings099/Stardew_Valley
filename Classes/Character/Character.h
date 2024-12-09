@@ -27,6 +27,12 @@ public:
     // 更新位置
     cocos2d::Vec2 updatePosition(float deltaTime);
 
+    // 获取角色精灵节点
+    cocos2d::Sprite* getCharacterSprite() const;
+
+    // 删除单例
+    void destroyInstance();
+
 private:
     // 禁止拷贝和赋值
     Character(const Character&) = delete;

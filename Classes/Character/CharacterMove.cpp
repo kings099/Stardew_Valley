@@ -26,8 +26,6 @@ CharacterMove::CharacterMove() :
 {
 }
 
-
-
 // 按下键盘时的处理
 void CharacterMove::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* event) {
     switch (keyCode) {
