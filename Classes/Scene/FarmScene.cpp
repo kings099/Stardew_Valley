@@ -68,10 +68,18 @@ bool FarmScene::init()
     uiContainer->setPosition(Vec2(0, 0));  // 设置为屏幕的原点
     this->addChild(uiContainer, 100);  // 添加到最上层
 
-
     uiLayer = UILayer::create();
     uiContainer->addChild(uiLayer);
 
+    // 创建键盘监视事件
+    auto listener = EventListenerKeyboard::create();
+    listener->onKeyPressed = [this](cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event) {
+        this->character->onKeyPressed(keyCode, event);
+        };
+    listener->onKeyReleased = [this](cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event) {
+        this->character->onKeyReleased(keyCode, event);
+        };
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
 
     // 设置更新回调
      this->schedule([this, uiContainer](float deltaTime) {
@@ -79,7 +87,7 @@ bool FarmScene::init()
             viewController->update(deltaTime);
         }
         // 获取摄像机的位移
-        auto cameraPosition = Camera::getDefaultCamera()->getPosition();
+        const auto cameraPosition = Camera::getDefaultCamera()->getPosition();
         const auto visibleSize = Director::getInstance()->getVisibleSize();
         // 将摄像机的偏移量应用到UI容器
         Vec2 cameraOffset = cameraPosition - Vec2(visibleSize.width / 2, visibleSize.height / 2);

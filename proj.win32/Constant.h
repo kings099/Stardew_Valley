@@ -6,64 +6,76 @@
 #include <memory>
 #include <map>
 #include "cocos2d.h"
-#include "Classes/Object/Object.h"
+#include "ObjectConstant.h"
 
-// åº”ç”¨ç¨‹åºè®¾ç½®
-constexpr int DESIGN_RESOLUTION_WIDTH = 1920;                               // è®¾è®¡åˆ†è¾¨çŽ‡å®½åº¦
-constexpr int DESIGN_RESOLUTION_HEIGHT = 1080;                              // è®¾è®¡åˆ†è¾¨çŽ‡é«˜åº¦
-constexpr int SMALL_RESOLUTION_WIDTH = 960;                                 // å°åˆ†è¾¨çŽ‡å®½åº¦
-constexpr int SMALL_RESOLUTION_HEIGHT = 540;                                // å°åˆ†è¾¨çŽ‡é«˜åº¦
-constexpr int MEDIUM_RESOLUTION_WIDTH = 1280;                               // ä¸­åˆ†è¾¨çŽ‡å®½åº¦
-constexpr int MEDIUM_RESOLUTION_HEIGHT = 720;                               // ä¸­åˆ†è¾¨çŽ‡é«˜åº¦
-constexpr int LARGE_RESOLUTION_WIDTH = 1920;                                // å¤§åˆ†è¾¨çŽ‡å®½åº¦
-constexpr int LARGE_RESOLUTION_HEIGHT = 1080;                               // å¤§åˆ†è¾¨çŽ‡é«˜åº¦
-constexpr float FRAME_RATE = 60.0f;                                         // åº”ç”¨ç¨‹åºå¸§çŽ‡
-const std::string APPLICATION_TITLE = u8"æ˜Ÿéœ²è°· Stardew Valley";				// åº”ç”¨ç¨‹åºæ ‡é¢˜
-
-constexpr float ENLARGEMENT_RATIO = 1.2f;									// æŒ‰é’®æ”¾å¤§æ¯”ä¾‹
-constexpr float ENLARGEMENT_TIME = 0.1f;									// æŒ‰é’®æ”¾å¤§æ—¶é—´
-
-//æµ‹è¯•ç”¨å¸¸å˜é‡
-constexpr float MOVE_SPEED = 3.5f;											// ç§»åŠ¨é€Ÿåº¦
-constexpr float MOVE_RATE = FRAME_RATE;										// ç§»åŠ¨å¸§çŽ‡
-constexpr auto INVIAID_KEY = cocos2d::EventKeyboard::KeyCode::KEY_NONE;		// æ— æ•ˆæŒ‰é”®
-constexpr float ACTION_RATE = 5.0f;											// åŠ¨ä½œé—´éš”å¸§çŽ‡
-constexpr int INVAVID_NUM = -1;												// æ— æ•ˆæ•°å­—
+// Ó¦ÓÃ³ÌÐòÉèÖÃ
+constexpr int DESIGN_RESOLUTION_WIDTH = 1920;                               // Éè¼Æ·Ö±æÂÊ¿í¶È
+constexpr int DESIGN_RESOLUTION_HEIGHT = 1080;                              // Éè¼Æ·Ö±æÂÊ¸ß¶È
+constexpr int SMALL_RESOLUTION_WIDTH = 960;                                 // Ð¡·Ö±æÂÊ¿í¶È
+constexpr int SMALL_RESOLUTION_HEIGHT = 540;                                // Ð¡·Ö±æÂÊ¸ß¶È
+constexpr int MEDIUM_RESOLUTION_WIDTH = 1280;                               // ÖÐ·Ö±æÂÊ¿í¶È
+constexpr int MEDIUM_RESOLUTION_HEIGHT = 720;                               // ÖÐ·Ö±æÂÊ¸ß¶È
+constexpr int LARGE_RESOLUTION_WIDTH = 1920;                                // ´ó·Ö±æÂÊ¿í¶È
+constexpr int LARGE_RESOLUTION_HEIGHT = 1080;                               // ´ó·Ö±æÂÊ¸ß¶È
+constexpr float FRAME_RATE = 60.0f;                                         // Ó¦ÓÃ³ÌÐòÖ¡ÂÊ
+const std::string APPLICATION_TITLE = u8"ÐÇÂ¶¹È Stardew Valley";				// Ó¦ÓÃ³ÌÐò±êÌâ
 
 
-// è§’è‰²å±žæ€§
-constexpr int CHARACTER_WIDTH = 32;											// è§’è‰²å®½åº¦
-constexpr int CHARACTER_HEIGHT = 32;										// è§’è‰²é«˜åº¦
-constexpr float CHARACTER_MOVE_SPEED = 5.0f;								// ç§»åŠ¨é€Ÿåº¦
 
-// åœ°å›¾è®¾ç½®
-constexpr float LERP_SPEED = 0.1f;											// è§†è§’è¿‡æ¸¡çš„å¹³æ»‘åº¦
-constexpr float SCENE_TRANSITION_TIME = 1.0f;								// //åœºæ™¯è¿‡æ¸¡æ—¶é—´
-constexpr float FARM_MAP_SCALE = 2.0f;										// åœ°å›¾ç¼©æ”¾å¤§å°
+//²âÊÔÓÃ³£±äÁ¿
+constexpr float MOVE_SPEED = 3.5f;											// ÒÆ¶¯ËÙ¶È
+constexpr float MOVE_RATE = FRAME_RATE;										// ÒÆ¶¯Ö¡ÂÊ
+constexpr auto INVIAID_KEY = cocos2d::EventKeyboard::KeyCode::KEY_NONE;		// ÎÞÐ§°´¼ü
+constexpr float ACTION_RATE = 5.0f;											// ¶¯×÷¼ä¸ôÖ¡ÂÊ
+constexpr int INVAVID_NUM = -1;												// ÎÞÐ§Êý×Ö
+
+// ½ÇÉ«ÊôÐÔ
+constexpr int CHARACTER_WIDTH = 32;											// ½ÇÉ«¿í¶È
+constexpr int CHARACTER_HEIGHT = 32;										// ½ÇÉ«¸ß¶È
+constexpr float CHARACTER_MOVE_SPEED = 5.0f;								// ÒÆ¶¯ËÙ¶È
+
+// µØÍ¼ÉèÖÃ
+constexpr float LERP_SPEED = 0.1f;											// ÊÓ½Ç¹ý¶ÉµÄÆ½»¬¶È
+constexpr float SCENE_TRANSITION_TIME = 1.0f;								// ³¡¾°¹ý¶ÉÊ±¼ä
+constexpr float FARM_MAP_SCALE = 2.0f;										// µØÍ¼Ëõ·Å´óÐ¡
+
+// ÎïÆ·ÉèÖÃ
+constexpr int MAX_OBJECT_LIST_SIZE_LEVEL1 = 12;								// ±³°üÈÝÁ¿(µÈ¼¶1)
+constexpr int MAX_OBJECT_LIST_SIZE_LEVEL2 = 24;								// ±³°üÈÝÁ¿(µÈ¼¶2)
+constexpr int MAX_OBJECT_LIST_SIZE_LEVEL3 = 36;								// ±³°üÈÝÁ¿(µÈ¼¶3)
+constexpr int MAX_STORAGE_NUM = 999;										// µ¥¸öÎïÆ·µÄ×î´ó´æ´¢ÊýÁ¿
+
+// ÎïÆ·À¸ÉèÖÃ
+constexpr int OBJECT_LIST_ROWS = 3;											// ÎïÆ·À¸ÐÐÊý
+constexpr int OBJECT_LIST_COLS = 12;										// ÎïÆ·À¸ÁÐÊý
+constexpr int CLOSE_OBJECT_LIST_START_X = 795;								// ¹Ø±Õ×´Ì¬µÄÎïÆ·À¸ÆðÊ¼X×ø±êÎ»ÖÃ
+constexpr int CLOSE_OBJECT_LIST_START_Y = 1056;								// ¹Ø±Õ×´Ì¬µÄÎïÆ·À¸ÆðÊ¼Y×ø±êÎ»ÖÃ
+constexpr int OPEN_OBJECT_LIST_START_X = 795;								// ´ò¿ª×´Ì¬µÄÎïÆ·À¸ÆðÊ¼X×ø±êÎ»ÖÃ
+constexpr int OPEN_OBJECT_LIST_START_Y = 582;								// ´ò¿ª×´Ì¬µÄÎïÆ·À¸ÆðÊ¼Y×ø±êÎ»ÖÃ
+constexpr int OBJECT_LIST_NODE_HORIZONTAL_INTERVAL = 42;								// ÎïÆ·À¸½ÚµãË®Æ½¼ä¸ô
+constexpr int OBJECT_LIST_NODE_VERTICAL_INTERVAL = 42;						// ÎïÆ·À¸½Úµã´¹Ö±¼ä¸ô
 
 
-// ç‰©å“è®¾ç½®
-constexpr int MAX_OBJECT_LIST_SIZE_LEVEL1 = 12;								// èƒŒåŒ…å®¹é‡(ç­‰çº§1)
-constexpr int MAX_OBJECT_LIST_SIZE_LEVEL2 = 24;								// èƒŒåŒ…å®¹é‡(ç­‰çº§2)
-constexpr int MAX_OBJECT_LIST_SIZE_LEVEL3 = 36;								// èƒŒåŒ…å®¹é‡(ç­‰çº§3)
-constexpr int MAX_STORAGE_NUM = 999;										// å•ä¸ªç‰©å“çš„æœ€å¤§å­˜å‚¨æ•°é‡
+// UI ½çÃæÉèÖÃ
+constexpr int UI_SCALE = 160.0f;                                            // UIËõ·Å±ÈÀý
+constexpr int FONT_SIZE = 24;                                               // ×ÖÌå´óÐ¡
+constexpr int MAP_LAYER_GRADE = 0;                                          // µØÍ¼²ã¼¶
+constexpr int CHARACTER_LAYER_GRADE = 1;                                    // ½ÇÉ«²ã¼¶
+constexpr int UI_LAYER_GRADE = 2;                                           // UI²ã¼¶
+constexpr int OBJECT_LAYER_GRADE = 3;                                       // ÎïÆ·²ã¼¶
+constexpr float BUTTON_SIZE_RATIO = 2.0f;                                   // °´Å¥´óÐ¡±ä»¯±ÈÀý
+constexpr float ENLARGEMENT_RATIO = 1.2f;									// Êó±êÐüÍ£Ê±°´Å¥·Å´ó±ÈÀý
+constexpr float ENLARGEMENT_TIME = 0.1f;									// Êó±êÐüÍ£Ê±°´Å¥·Å´óÊ±¼ä
 
-constexpr int UI_SCALE = 160.0f;                                             //UIï¿½ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½Å±ï¿½ï¿½ï¿½
+constexpr int UI_SCALE = 160.0f;                                             //UIï¿½ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½Å±ï¿½ï¿½ï¿?
 constexpr int FONT_SIZE = 24;                                                //
 
 
-// ç‰©å“æ è®¾ç½®
-constexpr int OBJECT_LIST_ROWS = 3;											// ç‰©å“æ è¡Œæ•°
-constexpr int OBJECT_LIST_COLS = 12;										// ç‰©å“æ åˆ—æ•°
-
-constexpr int UI_SCALE = 160.0f;                                             // UIç¼©æ”¾æ¯”ä¾‹
-constexpr int FONT_SIZE = 24;                                                // å­—ä½“å¤§å°
-
-
-const int SECONDS_IN_A_DAY = 86400;                                         // ä¸€å¤©çš„ç§’æ•°
-const float TIME_SCALE = 3600.0f;                                             // æ¸¸æˆæ—¶é—´ç¼©æ”¾æ¯”ä¾‹ï¼ŒçŽ°å®ž1ç§’=æ¸¸æˆ1åˆ†é’Ÿ
-const int HOURS_IN_A_DAY = 24;                                              // ä¸€å¤©24å°æ—¶
-const int SECONDS_IN_A_HOUR = 3600;                                           // æ¯å°æ—¶60åˆ†é’Ÿ
-const int SEASONS_CHANGE_PERIOD = 30;                                       // æ¯30å¤©ä¸€ä¸ªå­£èŠ‚å˜åŒ–
-const int SECONDS_IN_A_MIN =60;
+// ÓÎÏ·ÄÚÊ±¼äÉèÖÃ
+constexpr int SECONDS_IN_A_DAY = 86400;                                     // Ò»ÌìµÄÃëÊý
+constexpr float TIME_SCALE = 3600.0f;                                       // ÓÎÏ·Ê±¼äËõ·Å±ÈÀý£¬ÏÖÊµ1Ãë=ÓÎÏ·1·ÖÖÓ
+constexpr int HOURS_IN_A_DAY = 24;                                          // Ò»Ìì24Ð¡Ê±
+constexpr int SECONDS_IN_A_HOUR = 3600;                                     // Ã¿Ð¡Ê±60·ÖÖÓ
+constexpr int SEASONS_CHANGE_PERIOD = 30;                                   // Ã¿30ÌìÒ»¸ö¼¾½Ú±ä»¯
+constexpr int SECONDS_IN_A_MIN =60;
 #endif // !_CONSTANT_H_

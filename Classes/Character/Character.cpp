@@ -29,13 +29,6 @@ Character::Character(const std::string& filename){
     _character = Sprite::create(filename);
     _character->setPosition(Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y));
     this->cocos2d::Node::addChild(_character);
-
-    // 键盘监视事件
-    auto listener = EventListenerKeyboard::create();
-    listener->onKeyPressed = CC_CALLBACK_2(Character::onKeyPressed, this);
-    listener->onKeyReleased = CC_CALLBACK_2(Character::onKeyReleased, this);
-    _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
-
 }
 
 // 按下键盘时的处理
@@ -64,4 +57,18 @@ void Character::onKeyReleased(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::
 // 更新角色位置
 Vec2 Character::updatePosition(float deltaTime) {
     return CharacterMove::updatePosition(deltaTime);
+}
+
+
+// 获取角色精灵节点
+Sprite* Character::getCharacterSprite() const{
+    return _character;
+}
+
+// 删除单列
+void Character::destroyInstance() {
+    if (_character) {
+        _character->removeFromParentAndCleanup(true);
+        _character = nullptr;
+    }
 }

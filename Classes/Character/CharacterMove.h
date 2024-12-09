@@ -35,7 +35,6 @@ public:
 protected:
     cocos2d::Sprite* _character;                         // 角色对象
    
-
     // 更新角色位置
     cocos2d::Vec2 updatePosition(float deltaTime);
 private:
