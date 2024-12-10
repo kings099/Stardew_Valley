@@ -38,7 +38,7 @@ constexpr float CHARACTER_MOVE_SPEED = 5.0f;								// �ƶ��ٶ�
 constexpr float LERP_SPEED = 0.1f;											// �ӽǹ��ɵ�ƽ����
 constexpr float SCENE_TRANSITION_TIME = 1.0f;								// ��������ʱ��
 constexpr float FARM_MAP_SCALE = 2.0f;										// ��ͼ���Ŵ�С
-constexpr float INDOOR_MAP_SCALE = 4.0f;									//室内地图的缩放比例
+constexpr float INDOOR_MAP_SCALE = 5.0f;									//室内地图的缩放比例
 //// ��Ʒ����
 //constexpr int MAX_OBJECT_LIST_SIZE_LEVEL1 = 12;								// ��������(�ȼ�1)
 //constexpr int MAX_OBJECT_LIST_SIZE_LEVEL2 = 24;								// ��������(�ȼ�2)

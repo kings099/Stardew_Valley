@@ -74,15 +74,26 @@ bool IndoorScene::init(const std::string& mapFile)
 
     // 创建角色
     character = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png");  // 假设角色的图片
-    this->addChild(character, 1);  // 角色位于地图之上
+    this->addChild(character.get(), 1);  // 角色位于地图之上
+
+    // 创建键盘监视事件
+    auto listener = EventListenerKeyboard::create();
+    listener->onKeyPressed = [this](cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event) {
+        this->character->onKeyPressed(keyCode, event);
+        };
+    listener->onKeyReleased = [this](cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event) {
+        this->character->onKeyReleased(keyCode, event);
+        };
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
+
 
     // 创建视角控制器
-    viewController = new GameViewController(character, indoorMap);  // 初始化视角控制器
+    viewController = new GameViewController(character.get(), indoorMap);  // 初始化视角控制器
     this->addChild(viewController, 2);  // 控制器无需渲染，层级不重要
 
 
     // 创建 MapSwitcher，并检查是否成功
-    auto mapSwitcher = MapSwitcher::create("farm2", character);
+    auto mapSwitcher = MapSwitcher::create("farm2", character.get());
     if (!mapSwitcher) {
         CCLOG("Error: Failed to create MapSwitcher.");
         return false;  // MapSwitcher 创建失败，退出或执行其他错误处理

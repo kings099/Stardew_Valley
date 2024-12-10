@@ -43,7 +43,7 @@ public:
 	CREATE_FUNC(UILayer);
 
 private:
-	Character* character;							// 角色层
+	std::unique_ptr<Character> character;     		// 角色层
 	cocos2d::Size visibleSize;						// 可见区域的大小
 
 	cocos2d::Label* timeLabel1;						// 显示星期和日期的标签
@@ -51,10 +51,8 @@ private:
 	cocos2d::Sprite* timeDisplayLayer;				// 用作为UI背景的图片
 
 	cocos2d::Sprite* objectListLayer = nullptr;			// 物品栏状态
-	HoverMenuItemImage *deleteObjectButton = nullptr;	// 删除物品按钮
-	HoverMenuItemImage *closeObjectListButton = nullptr;	// 关闭物品栏按钮
+	HoverMenuItemImage* deleteObjectButton = nullptr;	// 删除物品按钮
+	HoverMenuItemImage* closeObjectListButton = nullptr;	// 关闭物品栏按钮
 };
 
 #endif // !_UILAYER_H_
-
-

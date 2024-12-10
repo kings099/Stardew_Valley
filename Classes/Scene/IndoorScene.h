@@ -1,4 +1,3 @@
-#pragma once
 /****************************************************************
  * Project Name:  Stardew_Valley
  * File Name:     IndoorScene.h
@@ -7,6 +6,7 @@
  * Update Date:   2024/12/6
  * License:       MIT License
  ****************************************************************/
+#pragma once
 #ifndef __INDOOR_SCENE_H__
 #define __INDOOR_SCENE_H__
 
@@ -42,7 +42,7 @@ public:
     //virtual ~IndoorScene();
 private:
     IndoorMap* indoorMap;         // 瓦片地图
-    Character* character;             // 角色
+    std::unique_ptr<Character> character;           // 角色
     GameViewController* viewController; // 视角控制器
 };
 

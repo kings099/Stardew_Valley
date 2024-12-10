@@ -79,8 +79,8 @@ Vec2 IndoorMap::absoluteToTile(const Vec2& pixelPoint)
     Size tileSize = _tile_map->getTileSize();
 
 
-    float tileX = (pixelPoint.x - _map_position.x) / (tileSize.width * FARM_MAP_SCALE);
-    float tileY = (pixelPoint.y - _map_position.y) / (tileSize.height * FARM_MAP_SCALE);
+    float tileX = (pixelPoint.x - _map_position.x) / (tileSize.width * INDOOR_MAP_SCALE);
+    float tileY = (pixelPoint.y - _map_position.y) / (tileSize.height * INDOOR_MAP_SCALE);
     // 瓦片地图y轴是从上到下的，需要翻转y轴
     tileY = _tile_map->getMapSize().height - tileY;
     return Vec2(floor(tileX), floor(tileY));

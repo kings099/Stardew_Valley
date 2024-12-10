@@ -11,24 +11,27 @@
 #include "../proj.win32/Constant.h"
 
 USING_NS_CC;
-// 获取单例
-Character* Character::getInstance(const std::string& filename) {
-    static Character* instance = nullptr; 
-    if (!instance) {
-        instance = new Character(filename); // 仅在第一次调用时创建实例
-    }
-    return instance;
+
+
+// 获取单例，返回智能指针
+std::unique_ptr<Character> Character::getInstance(const std::string& filename) {
+    return std::make_unique<Character>(filename);
 }
 
 // 构造函数
-Character::Character(const std::string& filename){
+Character::Character(const std::string& filename) {
     const auto visibleSize = Director::getInstance()->getVisibleSize();
     const Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
     // 创建精灵并设置初始位置
     _character = Sprite::create(filename);
+    if (!_character) {
+        CCLOG("Failed to load sprite from %s", filename.c_str());
+        return; // 处理图片加载失败的情况
+    }
+
     _character->setPosition(Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y));
-    this->cocos2d::Node::addChild(_character);
+    this->addChild(_character);
 }
 
 // 按下键盘时的处理
@@ -59,16 +62,7 @@ Vec2 Character::updatePosition(float deltaTime) {
     return CharacterMove::updatePosition(deltaTime);
 }
 
-
 // 获取角色精灵节点
-Sprite* Character::getCharacterSprite() const{
+Sprite* Character::getCharacterSprite() const {
     return _character;
-}
-
-// 删除单列
-void Character::destroyInstance() {
-    if (_character) {
-        _character->removeFromParentAndCleanup(true);
-        _character = nullptr;
-    }
 }

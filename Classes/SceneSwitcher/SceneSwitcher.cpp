@@ -11,7 +11,7 @@
 #include "Classes/Scene/HelloWorldScene.h"  // 假设你要切换到的目标场景
 #include "Classes/Scene/IndoorScene.h"  // 假设你要切换到的目标场景
 #include "Classes/Scene/FarmScene.h"  // 假设你要切换到的目标场景
-    USING_NS_CC;
+USING_NS_CC;
 
 MapSwitcher::MapSwitcher() : targetMapName(""), character(nullptr) {}
 
@@ -52,13 +52,7 @@ void MapSwitcher::checkCharacterPositionAndSwitchScene(float deltaTime)
         CCLOG("Error: character is null");
         return;
     }
-    //// 检查父节点是否存在
-    //if (!character->getParent()) {
-    //    CCLOG("Error: character parent is null");
-    //    return;
-    //}
-
-
+    
     // 使用更新后的位置
     Vec2 characterPosition = character->updatePosition(deltaTime);
     /* CCLOG("Updated pos: (%f, %f)", characterPosition.x, characterPosition.y);*/
@@ -70,20 +64,9 @@ void MapSwitcher::checkCharacterPositionAndSwitchScene(float deltaTime)
         // 添加错误处理
         if (checkIfInSwitchArea_farm(characterPosition)) {
             try {
-               
-               
-                // 先清理当前角色实例
-                
-                character->destroyInstance();
-               /* if (charactersprite != nullptr) {
-                    CCLOG("charactersprites  exit!!!!!");
-                }
-                else {
-                    CCLOG("charactersprites does not exit!!!!!");
-                }*/
-                auto scene = IndoorScene::createScene("../Resources/Maps/Farm/house.tmx"); // 修改路径，移除 ../Resources/
+                auto scene = IndoorScene::createScene("../Resources/Maps/Farm/house.tmx"); // 修改路径，
                 if (scene) {
-                  
+
                     auto transition = TransitionFade::create(1.0f, scene);
                     if (transition) {
                         Director::getInstance()->replaceScene(transition);
@@ -105,14 +88,11 @@ void MapSwitcher::checkCharacterPositionAndSwitchScene(float deltaTime)
         if (checkIfInSwitchArea_house(characterPosition)) {
             // 添加错误处理
             try {
-               
+
                 // 先清理当前角色实例
-                character->destroyInstance();
-                auto scene = FarmScene::createScene(); // 修改路径，移除 ../Resources/
+               // character->destroyInstance();
+                auto scene = FarmScene::createScene(); 
                 if (scene) {
-                    //if (character->getParent()) {
-                    //    character->removeFromParent(); // 确保移除父节点
-                    //}
                     auto transition = TransitionFade::create(1.0f, scene);
                     if (transition) {
                         Director::getInstance()->replaceScene(transition);
@@ -138,7 +118,7 @@ bool MapSwitcher::checkIfInSwitchArea_farm(const Vec2& position)
     //// 打印传入的坐标
     CCLOG("Received Position: (%f, %f)", position.x, position.y);
     // 假设目标切换区域是地图上的某个点
-    Rect switchArea(16, 16,100, 100);  // 假设目标区域是一个矩形（可以自定义位置和大小）
+    Rect switchArea(0, 0, 100, 100);  // 假设目标区域是一个矩形（可以自定义位置和大小）
 
     return switchArea.containsPoint(position);
 }
@@ -146,14 +126,9 @@ bool MapSwitcher::checkIfInSwitchArea_farm(const Vec2& position)
 bool MapSwitcher::checkIfInSwitchArea_house(const Vec2& position)
 {
     //// 打印传入的坐标
-    CCLOG("Received Position: (%f, %f)", position.x, position.y);
+   /* CCLOG("Received Position: (%f, %f)", position.x, position.y);*/
     // 假设目标切换区域是地图上的某个点
-    Rect switchArea(113, 36, 88, 31);  // 假设目标区域是一个矩形（可以自定义位置和大小）
-    /*  Rect switchArea(111, 41, 1, 1);*/
-
+    Rect switchArea(245, 55, 85, 55);  // 假设目标区域是一个矩形（可以自定义位置和大小）
+  
     return switchArea.containsPoint(position);
 }
-
-
-
-
