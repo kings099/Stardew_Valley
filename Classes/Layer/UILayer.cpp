@@ -14,7 +14,6 @@ USING_NS_CC;
 
 // 析构函数
 UILayer::~UILayer() {
-    delete character;
     delete objectListLayer;
     delete timeLabel1;
     delete timeLabel2;
@@ -54,7 +53,7 @@ void UILayer::initializeObjectList() {
         "../Resources/UI/defaultCloseMenuButton.png",
         [this](cocos2d::Ref* sender) { character->setObjectListStatus(false); }
     );
-    closeObjectListButton->setPosition(Vec2(visibleSize.width*2 / 3, visibleSize.height *3/ 5));
+    closeObjectListButton->setPosition(Vec2(visibleSize.width * 2 / 3, visibleSize.height * 3 / 5));
     this->addChild(closeObjectListButton, 0);  // 按钮在物品栏下面
 }
 
@@ -68,13 +67,13 @@ void UILayer::updateObjectList() {
     // 根据角色的物品栏状态初始化物品栏背景
     if (!objectListStatus) {
         objectListLayer = Sprite::create("../Resources/UI/ObjectListRow.png");
-        objectListLayer->setPosition(Vec2(visibleSize.width / 2 , visibleSize.height  - objectListLayer->getContentSize().height / 2));
+        objectListLayer->setPosition(Vec2(visibleSize.width / 2, visibleSize.height - objectListLayer->getContentSize().height / 2));
         deleteObjectButton->setVisible(false);
         closeObjectListButton->setVisible(false);
     }
     else {
         objectListLayer = Sprite::create("../Resources/UI/ObjectList.png");
-        objectListLayer->setPosition(Vec2(visibleSize.width / 2 , visibleSize.height/2 ));
+        objectListLayer->setPosition(Vec2(visibleSize.width / 2, visibleSize.height / 2));
         deleteObjectButton->setVisible(true);
         closeObjectListButton->setVisible(true);
     }
@@ -130,13 +129,13 @@ void UILayer::updateTimeDisplay() {
     const TimeManager* timeManager = TimeManager::getInstance();
 
     // 获取并更新日期信息（星期和日期）
-    std::string weekDay = timeManager->getWeekDay(); 
+    std::string weekDay = timeManager->getWeekDay();
     timeLabel1->setString(weekDay);  // 显示星期几 
 
     // 获取并更新时间信息（白天/晚上和当前时间）
     const bool isDaytime = timeManager->isDaytime();
-    std::string dayOrNight = isDaytime ? "白天" : "晚上";  
-    std::string timeOfDay = timeManager->getCurrentTime();  
+    std::string dayOrNight = isDaytime ? "白天" : "晚上";
+    std::string timeOfDay = timeManager->getCurrentTime();
 }
 
 // 更新UI界面

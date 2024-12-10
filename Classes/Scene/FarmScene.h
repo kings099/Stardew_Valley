@@ -32,13 +32,14 @@ public:
 
     // 实现 create() 方法
     CREATE_FUNC(FarmScene);
+    
 
 private:
     // 农场地图
     FarmMap* farmMap;
   
     // 角色
-    Character* character;
+    std::unique_ptr<Character> character;
 
     // 视角控制器
     GameViewController* viewController;
