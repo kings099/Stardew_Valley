@@ -32,6 +32,7 @@ public:
 
     // 实现 create() 方法
     CREATE_FUNC(FarmScene);
+    
 
 private:
     // 农场地图

@@ -37,9 +37,11 @@
     <Filter Include="Resources">
       <UniqueIdentifier>{4848dd74-7c17-4b7b-99d9-3960fe0b8ac7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\SceneSwitcher">
+      <UniqueIdentifier>{f41e9d18-57d3-4f4a-a3d6-7c044c2702f6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
-	
-	  <ItemGroup>
+  <ItemGroup>
     <ClInclude Include="..\Classes\CursorAndBUutton\HoverCursor.h" />
     <ClInclude Include="main.h">
       <Filter>Win32</Filter>
@@ -89,27 +91,30 @@
     <ClInclude Include="..\Classes\MenuImage\HoverMenuItemImage.h">
       <Filter>Classes\MenuImage</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\TimeManager.h">
-      <Filter>Classes\Manager</Filter>
-    </ClInclude>
     <ClInclude Include="..\Classes\Control\InteractionManager.h">
       <Filter>Classes\Control</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Layer\PlacementMarkerLayer.h">
       <Filter>Classes\Layer</Filter>
     </ClInclude>
-
     <ClInclude Include="..\Classes\Layer\TimeManagerUI.h">
       <Filter>Classes\Layer</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Manager\TimeManager.h">
       <Filter>Classes\Manager</Filter>
     </ClInclude>
-		
     <ClInclude Include="..\Classes\Layer\UILayer.h">
       <Filter>Classes\Layer</Filter>
     </ClInclude>
-
+    <ClInclude Include="..\Classes\Maps\IndoorMap.h">
+      <Filter>Classes\Maps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\IndoorScene.h">
+      <Filter>Classes\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SceneSwitcher\SceneSwitcher.h">
+      <Filter>Classes\SceneSwitcher</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\CursorAndBUutton\HoverCursor.cpp" />
@@ -155,29 +160,31 @@
     <ClCompile Include="..\Classes\MenuImage\HoverMenuItemImage.cpp">
       <Filter>Classes\MenuImage</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\TimeManager.cpp">
-      <Filter>Classes\Manager</Filter>
-    </ClCompile>
     <ClCompile Include="..\Classes\Control\InteractionManager.cpp">
       <Filter>Classes\Control</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\Layer\PlacementMarkerLayer.cpp">
       <Filter>Classes\Layer</Filter>
     </ClCompile>
-
     <ClCompile Include="..\Classes\Layer\TimeManagerUI.cpp">
       <Filter>Classes\Layer</Filter>
     </ClCompile>
-	  
     <ClCompile Include="..\Classes\Manager\TimeManager.cpp">
       <Filter>Classes\Manager</Filter>
-     </ClCompile>
-	  
+    </ClCompile>
     <ClCompile Include="..\Classes\Layer\UILayer.cpp">
       <Filter>Classes\Layer</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\Maps\IndoorMap.cpp">
+      <Filter>Classes\Maps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\IndoorScene.cpp">
+      <Filter>Classes\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SceneSwitcher\SceneSwitcher.cpp">
+      <Filter>Classes\SceneSwitcher</Filter>
+    </ClCompile>
   </ItemGroup>
-	
   <ItemGroup>
     <ResourceCompile Include="game.rc">
       <Filter>Resources</Filter>

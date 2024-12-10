@@ -17,7 +17,6 @@ class Character :  public CharacterAction {
 public:
     // 获取单例
     static Character* getInstance(const std::string& filename);
-
     // 按下键盘时的处理
     void onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event);
 
@@ -32,6 +31,7 @@ public:
 
     // 删除单例
     void destroyInstance();
+    
 
 private:
     // 禁止拷贝和赋值

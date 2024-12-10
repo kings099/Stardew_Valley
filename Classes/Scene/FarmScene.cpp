@@ -12,7 +12,7 @@
 #include "../Classes/Layer/UILayer.h"
 #include "../Classes/Manager/TimeManager.h"
 #include "../Classes/Layer/TimeManagerUI.h"
-
+#include "Classes/SceneSwitcher/SceneSwitcher.h"
 USING_NS_CC;
 
 Scene* FarmScene::createScene()
@@ -53,12 +53,22 @@ bool FarmScene::init()
     this->addChild(farmMap, 0); // 地图置于最底层
 
     // 加载角色
+    /*character->destroyInstance();*/
     character = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png");
     this->addChild(character, 1); // 角色位于地图之上
 
     // 创建视角控制器
     viewController = new GameViewController(character, farmMap);
     this->addChild(viewController, 2); // 控制器无需渲染，层级不重要
+    //创建场景转换器
+    // 创建 MapSwitcher，并检查是否成功
+    auto mapSwitcher = MapSwitcher::create("house", character);
+    if (!mapSwitcher) {
+        CCLOG("Error: Failed to create MapSwitcher.");
+        return false;  // MapSwitcher 创建失败，退出或执行其他错误处理
+    }
+    // 添加到当前场景
+    this->addChild(mapSwitcher, 3);
 
     // 启动时间管理器的计时
     TimeManager::getInstance()->startUpdating();

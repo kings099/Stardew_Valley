@@ -38,12 +38,12 @@ constexpr float CHARACTER_MOVE_SPEED = 5.0f;								// �ƶ��ٶ�
 constexpr float LERP_SPEED = 0.1f;											// �ӽǹ��ɵ�ƽ����
 constexpr float SCENE_TRANSITION_TIME = 1.0f;								// ��������ʱ��
 constexpr float FARM_MAP_SCALE = 2.0f;										// ��ͼ���Ŵ�С
-
-// ��Ʒ����
-constexpr int MAX_OBJECT_LIST_SIZE_LEVEL1 = 12;								// ��������(�ȼ�1)
-constexpr int MAX_OBJECT_LIST_SIZE_LEVEL2 = 24;								// ��������(�ȼ�2)
-constexpr int MAX_OBJECT_LIST_SIZE_LEVEL3 = 36;								// ��������(�ȼ�3)
-constexpr int MAX_STORAGE_NUM = 999;										// ������Ʒ�����洢����
+constexpr float INDOOR_MAP_SCALE = 4.0f;									//室内地图的缩放比例
+//// ��Ʒ����
+//constexpr int MAX_OBJECT_LIST_SIZE_LEVEL1 = 12;								// ��������(�ȼ�1)
+//constexpr int MAX_OBJECT_LIST_SIZE_LEVEL2 = 24;								// ��������(�ȼ�2)
+//constexpr int MAX_OBJECT_LIST_SIZE_LEVEL3 = 36;								// ��������(�ȼ�3)
+//constexpr int MAX_STORAGE_NUM = 999;										// ������Ʒ�����洢����
 
 
 // ��Ʒ������
@@ -60,7 +60,7 @@ constexpr int OBJECT_LIST_NODE_VERTICAL_INTERVAL = 42;						// ��Ʒ���
 constexpr int MAX_OBJECT_LIST_SIZE_LEVEL1 = 12;								// 背包容量(等级1)
 constexpr int MAX_OBJECT_LIST_SIZE_LEVEL2 = 24;								// 背包容量(等级2)
 constexpr int MAX_OBJECT_LIST_SIZE_LEVEL3 = 36;								// 背包容量(等级3)
-constexpr int MAX_STORAGE_NUM = 999;										// 单个物品的最大存储数量
+//constexpr int MAX_STORAGE_NUM = 999;										// 单个物品的最大存储数量
 
 
 
@@ -75,8 +75,8 @@ constexpr float BUTTON_SIZE_RATIO = 2.0f;                                   // �
 constexpr float ENLARGEMENT_RATIO = 1.2f;									// �����ͣʱ��ť�Ŵ����
 constexpr float ENLARGEMENT_TIME = 0.1f;									// �����ͣʱ��ť�Ŵ�ʱ��
 
-constexpr int UI_SCALE = 160.0f;                                             //UI�����ͼ�����ű���?
-constexpr int FONT_SIZE = 24;                                                //
+//constexpr int UI_SCALE = 160.0f;                                             //UI�����ͼ�����ű���?
+//constexpr int FONT_SIZE = 24;                                                //
 
 
 // ��Ϸ��ʱ������
