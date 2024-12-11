@@ -172,30 +172,10 @@ enum ObjectListNodeStatus {
 
 // 角色物品栏单个物品属性定义
 struct ObjectListNode {
+    int index;                      // 物品索引
     GameCommonObject objectNode;	// 物品信息
     int count;						// 物品数量
     ObjectListNodeStatus status;	// 物品状态(选中/未选中)
-};
-
-// 物品栏开启状态定义
-enum ObjectListStatus {
-    Close,		// 关闭
-    Open		// 打开
-};
-
-// 物品栏位置属性定义
-struct ObjectListLocation {
-    ObjectListStatus status;                      // 位置状态
-    int position;                                 // 物品栏物品格子位置坐标
-    bool operator<(const ObjectListLocation& other) const { // 重载运算符 < 用于 std::map
-        if (status < other.status) {
-            return true;
-        }
-        if (status > other.status) {
-            return false;
-        }
-        return position < other.position;
-    }
 };
 
 

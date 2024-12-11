@@ -18,10 +18,10 @@ public:
     //构造函数
     CharacterMove();
 
-    // 按下键盘时的处理
+    // 按下键盘事件触发函数
     void onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event);
 
-    // 释放键盘时的处理
+    // 释放键盘事件触发函数
     void onKeyReleased(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event);
 
     // 播放动画

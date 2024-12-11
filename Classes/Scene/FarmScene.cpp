@@ -55,6 +55,9 @@ bool FarmScene::init()
     // 加载角色
     character = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png");
     this->addChild(character, 1); // 角色位于地图之上
+    character->pickUpObject(GAME_TOOL_OBJECTS_ATTRS[0],1);
+    character->pickUpObject(GAME_TOOL_OBJECTS_ATTRS[1], 1);
+    character->pickUpObject(GAME_TOOL_OBJECTS_ATTRS[2], 1);
 
     // 创建视角控制器
     viewController = new GameViewController(character, farmMap);
@@ -75,6 +78,7 @@ bool FarmScene::init()
     auto listener = EventListenerKeyboard::create();
     listener->onKeyPressed = [this](cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event) {
         this->character->onKeyPressed(keyCode, event);
+        this->uiLayer->onKeyPressed(keyCode, event);
         };
     listener->onKeyReleased = [this](cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event) {
         this->character->onKeyReleased(keyCode, event);
