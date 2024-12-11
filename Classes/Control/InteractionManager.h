@@ -3,7 +3,7 @@
  * File Name:     FarmMap.cpp
  * File Function: 角色地图交互控制类InteractionManager的定义
  * Author:        金恒宇
- * Update Date:   2024/12/7
+ * Update Date:   2024/12/11
  * License:       MIT License
  ****************************************************************/
 #pragma once
@@ -49,6 +49,9 @@ public:
     // 检查角色是否站在传送点上
     // 如果是传送点，返回目标地图文件路径
     bool checkTeleport(const cocos2d::Vec2& worldPos, std::string& targetMapFile);
+
+    // 改变地图
+    void setMap(GameMap* newMap);
 
 private:
     Character* _character;         // 当前角色对象的引用

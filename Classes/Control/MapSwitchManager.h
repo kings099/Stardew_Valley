@@ -3,7 +3,7 @@
  * File Name:     MapSwitchManager.h
  * File Function: 地图切换控制类MapSwitchManager的定义
  * Author:        金恒宇
- * Update Date:   2024/12/7
+ * Update Date:   2024/12/11
  * License:       MIT License
  ****************************************************************/
 #pragma once
@@ -15,6 +15,8 @@
 #include "Maps/FarmMap.h"
 #include "Maps/IndoorMap.h"
 #include "Character/Character.h"
+#include "GameViewController.h"
+#include "InteractionManager.h"
 
 USING_NS_CC;
 
@@ -22,7 +24,7 @@ class MapSwitchManager : public Node
 {
 public:
     // 创建 MapSwitchManager 实例
-    static MapSwitchManager* create(Character* character, GameMap* currentMap);
+    static MapSwitchManager* create(Character* character, GameMap* currentMap, GameViewController* viewController,InteractionManager* interactionManager);
 
     // 切换地图
     bool switchMap(const std::string& newMapFile, int teleportID);
@@ -30,19 +32,19 @@ public:
 private:
     // 构造函数和析构函数
     MapSwitchManager();
-    ~MapSwitchManager();
 
-    bool init(Character* character, GameMap* currentMap);
+    bool init(Character* character, GameMap* currentMap, GameViewController* viewController, InteractionManager* interactionManager);
 
     // 根据传送点 ID 获取目标位置
-    //Vec2 getTargetPositionByID(int teleportID, GameMap* newMap);
+    Vec2 getTargetPositionByID(int teleportID, GameMap* newMap);
 
-    // 动态创建地图实例（根据类型）
-    GameMap* createMapByType(const std::string& mapFile);
 
 private:
     Character* _character;  // 当前的角色对象
     GameMap* _currentMap;   // 当前地图对象
+    GameViewController* _viewController; // 视角控制器
+    InteractionManager* _interactionManager; // 交互管理器
+
 };
 
 #endif // MAP_SWITCH_MANAGER_H_

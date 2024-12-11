@@ -3,7 +3,7 @@
  * File Name:     FarmMap.cpp
  * File Function: 角色地图交互控制类InteractionManager的实现
  * Author:        金恒宇
- * Update Date:   2024/12/7
+ * Update Date:   2024/12/11
  * License:       MIT License
  ****************************************************************/
  // InteractionManager.cpp
@@ -170,4 +170,11 @@ bool InteractionManager::checkTeleport(const Vec2& worldPos, std::string& target
     }
 
     return false;
+}
+
+void InteractionManager::setMap(GameMap* newMap) {
+    if (newMap) {
+        _gameMap = newMap;
+        CCLOG("InteractionManager updated to new map: %p", _gameMap);
+    }
 }

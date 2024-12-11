@@ -3,7 +3,7 @@
  * File Name:     FarmMap.cpp
  * File Function: 地图基类Map类的实现
  * Author:        金恒宇
- * Update Date:   2024/12/8
+ * Update Date:   2024/12/11
  * License:       MIT License
  ****************************************************************/
 
@@ -110,23 +110,6 @@ cocos2d::ValueMap GameMap::getTilePropertiesForGID(int GID)
     return cocos2d::ValueMap();
 }
 
-bool GameMap::loadMap(const std::string& mapFile) {
-    // 清理旧地图
-    if (_tile_map) {
-        this->removeChild(_tile_map);
-        _tile_map = nullptr;
-    }
-
-    // 加载新地图
-    _tile_map = TMXTiledMap::create(mapFile);
-    if (!_tile_map) {
-        CCLOG("Failed to load map: %s", mapFile.c_str());
-        return false;
-    }
-    _tile_map->setPosition(_map_position);
-    this->addChild(_tile_map, 0);
-    return true;
-}
 
 //std::vector<TileInfo> GameMap::getAllTeleportTiles()
 //{

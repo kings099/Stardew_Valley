@@ -3,7 +3,7 @@
  * File Name:     FarmMap.h
  * File Function: 地图基类Map类的定义
  * Author:        金恒宇
- * Update Date:   2024/12/8
+ * Update Date:   2024/12/11
  * License:       MIT License
  ****************************************************************/
 #pragma once
@@ -40,8 +40,6 @@ public:
     // 获取某GID对应图块的属性
     virtual cocos2d::ValueMap getTilePropertiesForGID(int GID);
 
-    // 加载新地图
-    bool loadMap(const std::string& mapFile);
 
 protected:
     TMXTiledMap* _tile_map;  // 瓦片地图类

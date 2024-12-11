@@ -66,7 +66,7 @@ bool FarmScene::init()
 
     //创建场景转换器
     // 创建 MapSwitcher，并检查是否成功
-    auto mapSwitchManager = MapSwitchManager::create(character.get(), farmMap);
+    auto mapSwitchManager = MapSwitchManager::create(character.get(), farmMap, viewController,interaction);
     this->addChild(mapSwitchManager);
     this->schedule([this, mapSwitchManager, interaction](float deltaTime) {
         Vec2 characterWorldPos = character->getPosition();
