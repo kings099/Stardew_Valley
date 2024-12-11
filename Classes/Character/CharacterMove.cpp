@@ -2,7 +2,7 @@
  * Project Name:  Stardew_Valley
  * File Name:     Character.cpp
  * File Function: 角色移动Character类的实现
- * Author:        尹诚成
+ * Author:        尹诚成，达思睿
  * Update Date:   2023/12/07
  * License:       MIT License
  ****************************************************************/

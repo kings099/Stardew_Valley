@@ -85,4 +85,6 @@ constexpr int HOURS_IN_A_DAY = 24;                                          // �
 constexpr int SECONDS_IN_A_HOUR = 3600;                                     // ÿСʱ60����
 constexpr int SEASONS_CHANGE_PERIOD = 30;                                   // ÿ30��һ�����ڱ仯
 constexpr int SECONDS_IN_A_MIN =60;
+constexpr int DAYS_IN_A_SEASON = 7;   
+constexpr int DAYS_IN_A_YEAR =28;
 #endif // !_CONSTANT_H_
