@@ -30,8 +30,8 @@ constexpr float ACTION_RATE = 5.0f;											// �������֡��
 constexpr int INVAVID_NUM = -1;												// ��Ч����
 
 // ��ɫ����
-constexpr int CHARACTER_WIDTH = 32;											// ��ɫ����
-constexpr int CHARACTER_HEIGHT = 32;										// ��ɫ�߶�
+constexpr int CHARACTER_WIDTH = 64;											// ��ɫ����
+constexpr int CHARACTER_HEIGHT = 64;										// ��ɫ�߶�
 constexpr float CHARACTER_MOVE_SPEED = 5.0f;								// �ƶ��ٶ�
 
 // ��ͼ����
