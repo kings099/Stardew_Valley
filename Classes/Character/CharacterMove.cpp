@@ -74,43 +74,43 @@ void CharacterMove::playAnimation() {
     if (_moveLeft) {
         _currentDirection = "left";
         _frames = {
-           SpriteFrame::create("../Resources/Characters/Bear/BearLeftAction1.png", Rect(0, 0, _width, _height)),
-           SpriteFrame::create("../Resources/Characters/Bear/BearLeftAction2.png", Rect(0, 0,  _width, _height)),
-           SpriteFrame::create("../Resources/Characters/Bear/BearLeftAction3.png", Rect(0, 0, _width, _height)),
-           SpriteFrame::create("../Resources/Characters/Bear/BearLeftAction4.png", Rect(0, 0, _width, _height))
+           SpriteFrame::create("../Resources/Characters/Elimy/ElimyLeft3.png", Rect(0, 0, _width, _height)),
+           SpriteFrame::create("../Resources/Characters/Elimy/ElimyLeft2.png", Rect(0, 0,  _width, _height)),
+           SpriteFrame::create("../Resources/Characters/Elimy/ElimyLeft3.png", Rect(0, 0, _width, _height)),
+           SpriteFrame::create("../Resources/Characters/Elimy/ElimyLeft4.png", Rect(0, 0, _width, _height))
         };
     }
     else if (_moveRight) {
         _currentDirection = "right";
         _frames = {
-         SpriteFrame::create("../Resources/Characters/Bear/BearRightAction1.png", Rect(0, 0, _width, _height)),
-         SpriteFrame::create("../Resources/Characters/Bear/BearRightAction2.png", Rect(0, 0, _width, _height)),
-         SpriteFrame::create("../Resources/Characters/Bear/BearRightAction3.png", Rect(0, 0, _width, _height)),
-         SpriteFrame::create("../Resources/Characters/Bear/BearRightAction4.png", Rect(0, 0, _width, _height))
+         SpriteFrame::create("../Resources/Characters/Elimy/ElimyRight1.png", Rect(0, 0, _width, _height)),
+         SpriteFrame::create("../Resources/Characters/Elimy/ElimyRight2.png", Rect(0, 0, _width, _height)),
+         SpriteFrame::create("../Resources/Characters/Elimy/ElimyRight3.png", Rect(0, 0, _width, _height)),
+         SpriteFrame::create("../Resources/Characters/Elimy/ElimyRight4.png", Rect(0, 0, _width, _height))
         };
     }
     else if (_moveUp && (!_moveRight && !_moveLeft)) {
         _currentDirection = "up";
         _frames = {
-            SpriteFrame::create("../Resources/Characters/Bear/BearUpAction1.png", Rect(0, 0, _width, _height)),
-            SpriteFrame::create("../Resources/Characters/Bear/BearUpAction2.png", Rect(0, 0, _width, _height)),
-            SpriteFrame::create("../Resources/Characters/Bear/BearUpAction3.png", Rect(0, 0, _width, _height)),
-            SpriteFrame::create("../Resources/Characters/Bear/BearUpAction4.png", Rect(0, 0, _width, _height))
+            SpriteFrame::create("../Resources/Characters/Elimy/ElimyUp1.png", Rect(0, 0, _width, _height)),
+            SpriteFrame::create("../Resources/Characters/Elimy/ElimyUp2.png", Rect(0, 0, _width, _height)),
+            SpriteFrame::create("../Resources/Characters/Elimy/ElimyUp3.png", Rect(0, 0, _width, _height)),
+            SpriteFrame::create("../Resources/Characters/Elimy/ElimyUp4.png", Rect(0, 0, _width, _height))
         };
     }
     else if (_moveDown && (!_moveRight && !_moveLeft)) {
         _currentDirection = "down";
         _frames = {
-            SpriteFrame::create("../Resources/Characters/Bear/BearDownAction1.png", Rect(0, 0, _width, _height)),
-            SpriteFrame::create("../Resources/Characters/Bear/BearDownAction2.png", Rect(0, 0, _width, _height)),
-            SpriteFrame::create("../Resources/Characters/Bear/BearDownAction3.png", Rect(0, 0, _width, _height)),
-            SpriteFrame::create("../Resources/Characters/Bear/BearDownAction4.png", Rect(0, 0, _width, _height))
+            SpriteFrame::create("../Resources/Characters/Elimy/ElimyDown1.png", Rect(0, 0, _width, _height)),
+            SpriteFrame::create("../Resources/Characters/Elimy/ElimyDown2.png", Rect(0, 0, _width, _height)),
+            SpriteFrame::create("../Resources/Characters/Elimy/ElimyDown3.png", Rect(0, 0, _width, _height)),
+            SpriteFrame::create("../Resources/Characters/Elimy/ElimyDown4.png", Rect(0, 0, _width, _height))
         };
     }
 
     // 动画播放
     if (!_frames.empty() && (_currentDirection != _lastDirection)) {
-        auto animation = Animation::createWithSpriteFrames(_frames, 1.0f / ACTION_RATE);
+        auto animation = Animation::createWithSpriteFrames(_frames, 0.8f / ACTION_RATE);
         auto animate = Animate::create(animation);
         _character->stopAllActions();
         _character->runAction(RepeatForever::create(animate));

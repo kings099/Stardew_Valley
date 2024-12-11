@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #ifndef _CONSTANT_H_
 #define _CONSTANT_H_
 
@@ -19,8 +19,7 @@ constexpr int LARGE_RESOLUTION_WIDTH = 1920;                                // �
 constexpr int LARGE_RESOLUTION_HEIGHT = 1080;                               // ��ֱ��ʸ߶�
 constexpr float FRAME_RATE = 60.0f;                                         // Ӧ�ó���֡��
 const std::string APPLICATION_TITLE = u8"��¶�� Stardew Valley";				// Ӧ�ó������
-
-
+                                     
 
 //�����ó�����
 constexpr float MOVE_SPEED = 3.5f;											// �ƶ��ٶ�
@@ -30,8 +29,8 @@ constexpr float ACTION_RATE = 5.0f;											// �������֡��
 constexpr int INVAVID_NUM = -1;												// ��Ч����
 
 // ��ɫ����
-constexpr int CHARACTER_WIDTH = 32;											// ��ɫ����
-constexpr int CHARACTER_HEIGHT = 32;										// ��ɫ�߶�
+constexpr int CHARACTER_WIDTH = 64;											// ��ɫ����
+constexpr int CHARACTER_HEIGHT = 64;										// ��ɫ�߶�
 constexpr float CHARACTER_MOVE_SPEED = 5.0f;								// �ƶ��ٶ�
 
 // ��ͼ����
@@ -65,8 +64,8 @@ constexpr int MAX_OBJECT_LIST_SIZE_LEVEL3 = 36;								// 背包容量(等级3)
 
 
 // UI ��������
-constexpr int UI_SCALE = 160.0f;                                            // UI���ű���
-constexpr int FONT_SIZE = 24;                                               // �����С
+constexpr int UI_SCALE = 190.0f;                                            // UI���ű���
+constexpr int FONT_SIZE = 20;                                               // �����С
 constexpr int MAP_LAYER_GRADE = 0;                                          // ��ͼ�㼶
 constexpr int CHARACTER_LAYER_GRADE = 1;                                    // ��ɫ�㼶
 constexpr int UI_LAYER_GRADE = 2;                                           // UI�㼶

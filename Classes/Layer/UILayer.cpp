@@ -110,8 +110,8 @@ void UILayer::initializeTimeDisplay() {
     this->addChild(timeDisplayLayer, 0);  // 背景在底层
 
     // 计算标签的位置，使其相对于背景位置
-    const Vec2 labelPos1 = Vec2(rightTopPos.x + originalTimeDisplaySize.width * 0.05, rightTopPos.y + originalTimeDisplaySize.height * scaleY * 0.35f);  // 在背景图片的顶部
-    const Vec2 labelPos2 = Vec2(rightTopPos.x + originalTimeDisplaySize.width * 0.05, rightTopPos.y - originalTimeDisplaySize.height * scaleY * 0.05f);  // 在 labelPos1 下面偏移 30
+    const Vec2 labelPos1 = Vec2(rightTopPos.x + originalTimeDisplaySize.width * 0.05, rightTopPos.y + originalTimeDisplaySize.height * scaleY * 0.32f);  // 在背景图片的顶部
+    const Vec2 labelPos2 = Vec2(rightTopPos.x + originalTimeDisplaySize.width * 0.08, rightTopPos.y - originalTimeDisplaySize.height * scaleY * 0.05f);  // 在 labelPos1 下面偏移 30
 
     // 创建并初始化 timeLabel1 和 timeLabel2
     timeLabel1 = Label::createWithSystemFont("", "Arial", FONT_SIZE);
@@ -134,8 +134,10 @@ void UILayer::updateTimeDisplay() {
 
     // 获取并更新时间信息（白天/晚上和当前时间）
     const bool isDaytime = timeManager->isDaytime();
-    std::string dayOrNight = isDaytime ? "白天" : "晚上";
+    std::string dayOrNight = isDaytime ? "Day" : "Night";
     std::string timeOfDay = timeManager->getCurrentTime();
+    timeLabel2->setString(dayOrNight + " " + timeOfDay);  // 显示白天/晚上和当前时间  的代码部分
+
 }
 
 // 更新UI界面

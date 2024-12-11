@@ -39,8 +39,7 @@ bool TimeManagerUI::init()
     Vec2 rightTopPos = Vec2(visibleSize.width * 0.9f, visibleSize.height * 0.9f);  // 右上角，调整到合适的偏移量
 
     // 创建背景图片
-    backgroundSprite = Sprite::create("../Resources/UI/timetable.png");  // 需要替换为实际的背景图片路径
-
+    backgroundSprite = Sprite::create("../Resources/UI/timetable.png");  // 背景图片路径
     // 获取原始图片尺寸
     Size originalSize = backgroundSprite->getContentSize();
 
@@ -58,15 +57,15 @@ bool TimeManagerUI::init()
     this->addChild(backgroundSprite, 0);  // 背景在底层
 
     // 计算标签的位置，使其相对于背景位置
-    Vec2 labelPos1 = Vec2(rightTopPos.x+ originalSize.width*0.05, rightTopPos.y + originalSize.height * scaleY * 0.35f);  // 在背景图片的顶部
-    Vec2 labelPos2 = Vec2(rightTopPos.x+originalSize.width * 0.05, rightTopPos.y -originalSize.height * scaleY * 0.05f);  // 在 labelPos1 下面偏移 30
+    Vec2 labelPos1 = Vec2(visibleSize.width*0.5, visibleSize.height * 0.5);  // 在背景图片的顶部
+    Vec2 labelPos2 = Vec2(visibleSize.width * 0.5, visibleSize.height * 0.5-30); ;  // 在 labelPos1 下面偏移 30
 
     // 创建并初始化 timeLabel1 和 timeLabel2
-    timeLabel1 = Label::createWithSystemFont("", "Arial", FONT_SIZE);
+    timeLabel1 = Label::createWithSystemFont("111111111111111111111", "Arial", FONT_SIZE);
     timeLabel1->setPosition(labelPos1);  // 设置 timeLabel1 相对于背景图片顶部的位置
     this->addChild(timeLabel1, 1);  // 标签在背景上面
 
-    timeLabel2 = Label::createWithSystemFont("", "Arial", FONT_SIZE);
+    timeLabel2 = Label::createWithSystemFont("1111111111111111111111", "Arial", FONT_SIZE);
     timeLabel2->setPosition(labelPos2);  // 设置 timeLabel2 相对于 timeLabel1 的位置
     this->addChild(timeLabel2, 1);  // 标签在背景上面
 
@@ -94,4 +93,5 @@ void TimeManagerUI::updateTimeDisplay()
     bool isDaytime = timeManager->isDaytime();
     std::string dayOrNight = isDaytime ? "白天" : "晚上";  // 判断是否是白天或晚上
     std::string timeOfDay = timeManager->getCurrentTime();  // 假设 TimeManager 类有 getCurrentTime() 方法
+    timeLabel2->setString(dayOrNight + " " + timeOfDay);  // 显示白天/晚上和当前时间  的代码部分
 }
