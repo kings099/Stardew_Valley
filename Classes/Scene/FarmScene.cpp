@@ -12,7 +12,7 @@
 #include "../Classes/Layer/UILayer.h"
 #include "../Classes/Manager/TimeManager.h"
 #include "../Classes/Layer/TimeManagerUI.h"
-#include "Classes/SceneSwitcher/SceneSwitcher.h"
+#include "Control/MapSwitchManager.h"
 USING_NS_CC;
 
 Scene* FarmScene::createScene()
@@ -61,16 +61,23 @@ bool FarmScene::init()
     viewController = new GameViewController(character.get(), farmMap);
     this->addChild(viewController, 2); // 控制器无需渲染，层级不重要
 
+    auto interaction = InteractionManager::create(character.get(), farmMap);
+    this->addChild(interaction);
+
     //创建场景转换器
     // 创建 MapSwitcher，并检查是否成功
-    auto mapSwitcher = MapSwitcher::create("house", character.get());
-    if (!mapSwitcher) {
-        CCLOG("Error: Failed to create MapSwitcher.");
-        return false;  // MapSwitcher 创建失败，退出或执行其他错误处理
-    }
-    // 添加到当前场景
-    this->addChild(mapSwitcher, 3);
+    auto mapSwitchManager = MapSwitchManager::create(character.get(), farmMap);
+    this->addChild(mapSwitchManager);
+    this->schedule([this, mapSwitchManager, interaction](float deltaTime) {
+        Vec2 characterWorldPos = character->getPosition();
+        std::string targetMapFile;
 
+        // 检测传送点
+        if (interaction->checkTeleport(characterWorldPos, targetMapFile)) {
+            CCLOG("Teleport triggered to map: %s", targetMapFile.c_str());
+            mapSwitchManager->switchMap(targetMapFile, 0);
+        }
+        }, "CheckTeleportUpdate");
     // 启动时间管理器的计时
     TimeManager::getInstance()->startUpdating();
 
@@ -78,6 +85,7 @@ bool FarmScene::init()
     Node* uiContainer = Node::create();
     uiContainer->setPosition(Vec2(0, 0));  // 设置为屏幕的原点
     this->addChild(uiContainer, 100);  // 添加到最上层
+
 
     uiLayer = UILayer::create();
     uiContainer->addChild(uiLayer);

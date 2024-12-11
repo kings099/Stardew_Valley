@@ -27,12 +27,10 @@ public:
 
     // 重写初始化函数
     virtual bool init(const std::string& mapFile, const Vec2& mapPosition);
-    virtual Vec2 absoluteToTile(const Vec2& pixelPoint);
+
     // 鼠标事件的处理
     bool onMouseEvent(cocos2d::Event* event);
 
-    // 获取某GID图块的属性
-    cocos2d::ValueMap getTilePropertiesForGID(int GID);
 };
 
 #endif // __FARM_MAP_H_

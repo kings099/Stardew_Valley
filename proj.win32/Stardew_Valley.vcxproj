@@ -157,6 +157,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)\Resources\" /D /E /I /F /Y
     <ClCompile Include="..\Classes\Character\CharacterMove.cpp" />
     <ClCompile Include="..\Classes\Character\CharacterObjectList.cpp" />
     <ClCompile Include="..\Classes\Control\GameViewController.cpp" />
+    <ClCompile Include="..\Classes\Control\MapSwitchManager.cpp" />
     <ClCompile Include="..\Classes\CursorAndBUutton\HoverCursor.cpp" />
     <ClCompile Include="..\Classes\Layer\PlacementMarkerLayer.cpp" />
     <ClCompile Include="..\Classes\Layer\TimeManagerUI.cpp" />
@@ -182,6 +183,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)\Resources\" /D /E /I /F /Y
     <ClInclude Include="..\Classes\Character\CharacterMove.h" />
     <ClInclude Include="..\Classes\Character\CharacterObjectList.h" />
     <ClInclude Include="..\Classes\Control\GameViewController.h" />
+    <ClInclude Include="..\Classes\Control\MapSwitchManager.h" />
     <ClInclude Include="..\Classes\CursorAndBUutton\HoverCursor.h" />
     <ClInclude Include="..\Classes\Layer\PlacementMarkerLayer.h" />
     <ClInclude Include="..\Classes\Layer\TimeManagerUI.h" />

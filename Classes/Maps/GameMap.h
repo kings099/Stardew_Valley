@@ -29,13 +29,19 @@ public:
     virtual Vec2 absoluteToTile(const Vec2& pixelPoint);
 
     // 地图像素大小
-    virtual const Size& getMapSize() const;
+    const Size& getMapSize() const;
 
     // 地图瓦片大小
-    virtual const Size& getMapSizeinTile();
+    const Size& getMapSizeinTile();
 
     // 获取某位置Layername图层的GID
     virtual int getTileGIDAt(const std::string& layerName, const Vec2& tileCoord);
+
+    // 获取某GID对应图块的属性
+    virtual cocos2d::ValueMap getTilePropertiesForGID(int GID);
+
+    // 加载新地图
+    bool loadMap(const std::string& mapFile);
 
 protected:
     TMXTiledMap* _tile_map;  // 瓦片地图类
