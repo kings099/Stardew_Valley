@@ -8,71 +8,65 @@
 #include "cocos2d.h"
 #include "ObjectConstant.h"
 
-// ??ó???????
-constexpr int DESIGN_RESOLUTION_WIDTH = 1920;                               // ??????????
-constexpr int DESIGN_RESOLUTION_HEIGHT = 1080;                              // ?????????
-constexpr int SMALL_RESOLUTION_WIDTH = 960;                                 // С????????
-constexpr int SMALL_RESOLUTION_HEIGHT = 540;                                // С???????
-constexpr int MEDIUM_RESOLUTION_WIDTH = 1280;                               // ?з???????
-constexpr int MEDIUM_RESOLUTION_HEIGHT = 720;                               // ?з??????
-constexpr int LARGE_RESOLUTION_WIDTH = 1920;                                // ?????????
-constexpr int LARGE_RESOLUTION_HEIGHT = 1080;                               // ????????
-constexpr float FRAME_RATE = 60.0f;                                         // ??ó??????
-const std::string APPLICATION_TITLE = u8"????? Stardew Valley";				// ??ó??????
+// 应用程序设置
+constexpr int DESIGN_RESOLUTION_WIDTH = 1920;                               // 设计分辨率宽度
+constexpr int DESIGN_RESOLUTION_HEIGHT = 1080;                              // 设计分辨率高度
+constexpr int SMALL_RESOLUTION_WIDTH = 960;                                 // 小分辨率宽度
+constexpr int SMALL_RESOLUTION_HEIGHT = 540;                                // 小分辨率高度
+constexpr int MEDIUM_RESOLUTION_WIDTH = 1280;                               // 中分辨率宽度
+constexpr int MEDIUM_RESOLUTION_HEIGHT = 720;                               // 中分辨率高度
+constexpr int LARGE_RESOLUTION_WIDTH = 1920;                                // 大分辨率宽度
+constexpr int LARGE_RESOLUTION_HEIGHT = 1080;                               // 大分辨率高度
+constexpr float FRAME_RATE = 60.0f;                                         // 应用程序帧率
+const std::string APPLICATION_TITLE = u8"星露谷 Stardew Valley";				// 应用程序标题
 
 
+//角色测试用常变量
+constexpr float MOVE_SPEED = 3.5f;											// 移动速度
+constexpr float MOVE_RATE = FRAME_RATE;										// 移动帧率
+constexpr auto INVIAID_KEY = cocos2d::EventKeyboard::KeyCode::KEY_NONE;		// 无效按键
+constexpr float ACTION_RATE = 5.0f;											// 动作间隔帧率
+constexpr int INVAVID_NUM = -1;												// 无效数字
 
-//?????ó?????
-constexpr float MOVE_SPEED = 3.5f;											// ??????
-constexpr float MOVE_RATE = FRAME_RATE;										// ??????
-constexpr auto INVIAID_KEY = cocos2d::EventKeyboard::KeyCode::KEY_NONE;		// ??Ч????
-constexpr float ACTION_RATE = 5.0f;											// ??????????
-constexpr int INVAVID_NUM = -1;												// ??Ч????
+// 角色属性
+constexpr int CHARACTER_WIDTH = 32;											// 角色宽度
+constexpr int CHARACTER_HEIGHT = 32;										// 角色高度
+constexpr float CHARACTER_MOVE_SPEED = 5.0f;								// 移动速度
 
-// ???????
-constexpr int CHARACTER_WIDTH = 32;											// ???????
-constexpr int CHARACTER_HEIGHT = 32;										// ??????
-constexpr float CHARACTER_MOVE_SPEED = 5.0f;								// ??????
-
-// ???????
-constexpr float LERP_SPEED = 0.1f;											// ????????????
-constexpr float SCENE_TRANSITION_TIME = 1.0f;								// ???????????
-constexpr float FARM_MAP_SCALE = 2.0f;										// ????????С
-
-
-// ???????
-constexpr int MAX_STORAGE_NUM = 999;										// ?????????????????
+// 地图设置
+constexpr float LERP_SPEED = 0.1f;											// 视角过渡的平滑度
+constexpr float SCENE_TRANSITION_TIME = 1.0f;								// 场景过渡时间
+constexpr float FARM_MAP_SCALE = 2.0f;										// 地图缩放大小
 
 
-// ?????????
-constexpr int OBJECT_LIST_ROWS = 3;											// ?????????
-constexpr int OBJECT_LIST_COLS = 12;										// ?????????
-constexpr int CLOSE_OBJECT_LIST_START_X = 729;								// ???????????????X????λ??
-constexpr int CLOSE_OBJECT_LIST_START_Y = 1056;								// ???????????????Y????λ??
-constexpr int OPEN_OBJECT_LIST_START_X = 729;								// ??????????????X????λ??
-constexpr int OPEN_OBJECT_LIST_START_Y = 582;								// ??????????????Y????λ??
-constexpr int OBJECT_LIST_NODE_HORIZONTAL_INTERVAL = 42;								// ?????????????
-constexpr int OBJECT_LIST_NODE_VERTICAL_INTERVAL = 42;						// ????????????
+// 物品栏设置
+constexpr int OBJECT_LIST_ROWS = 3;											// 物品栏行数
+constexpr int OBJECT_LIST_COLS = 12;										// 物品栏列数
+constexpr int CLOSE_OBJECT_LIST_START_X = 729;								// 物品栏(关闭状态)起始位置的X坐标
+constexpr int CLOSE_OBJECT_LIST_START_Y = 1056;								// 物品栏(关闭状态)起始位置的Y坐标
+constexpr int OPEN_OBJECT_LIST_START_X = 729;								// 物品栏(开启状态)起始位置的X坐标
+constexpr int OPEN_OBJECT_LIST_START_Y = 582;								// 物品栏(开启状态)起始位置的Y坐标
+constexpr int OBJECT_LIST_NODE_HORIZONTAL_INTERVAL = 42;					// 物品栏物品格子水平间距
+constexpr int OBJECT_LIST_NODE_VERTICAL_INTERVAL = 42;						// 物品栏物品格子垂直间距
 constexpr float OBJECT_NODE_SCALE = 2.0f;									// 物品缩放比例
 
 
-// UI ????????
+// UI 界面设置
 constexpr int UI_SCALE = 160.0f;                                            // UI???????
-constexpr int FONT_SIZE = 24;                                               // ?????С
-constexpr int MAP_LAYER_GRADE = 0;                                          // ?????
-constexpr int CHARACTER_LAYER_GRADE = 1;                                    // ?????
-constexpr int UI_LAYER_GRADE = 2;                                           // UI??
-constexpr int OBJECT_LAYER_GRADE = 3;                                       // ?????
-constexpr float BUTTON_SIZE_RATIO = 2.0f;                                   // ?????С??????
-constexpr float ENLARGEMENT_RATIO = 1.2f;									// ????????????????
-constexpr float ENLARGEMENT_TIME = 0.1f;									// ????????????????
+constexpr int FONT_SIZE = 24;                                               // 字体大小
+constexpr int MAP_LAYER_GRADE = 0;                                          // 地图层级
+constexpr int CHARACTER_LAYER_GRADE = 1;                                    // 角色层级
+constexpr int UI_LAYER_GRADE = 2;                                           // UI层级
+constexpr int OBJECT_LAYER_GRADE = 3;                                       // 物品层级
+constexpr float BUTTON_SIZE_RATIO = 2.0f;                                   // 按钮缩放比例
+constexpr float ENLARGEMENT_RATIO = 1.2f;									// 按钮动画缩放比例
+constexpr float ENLARGEMENT_TIME = 0.15f;									// 按钮动画缩放时间
 
 
-// ????????????
-constexpr int SECONDS_IN_A_DAY = 86400;                                     // ????????
-constexpr float TIME_SCALE = 3600.0f;                                       // ??????????????????1??=???1????
-constexpr int HOURS_IN_A_DAY = 24;                                          // ???24С?
-constexpr int SECONDS_IN_A_HOUR = 3600;                                     // ?С?60????
-constexpr int SEASONS_CHANGE_PERIOD = 30;                                   // ?30??????????
-constexpr int SECONDS_IN_A_MIN =60;
+const int SECONDS_IN_A_DAY = 86400;                                         // 一天的秒数
+const float TIME_SCALE = 3600.0f;                                           // 游戏时间缩放比例，现实1秒=游戏1分钟
+const int HOURS_IN_A_DAY = 24;                                              // 一天24小时
+const int SECONDS_IN_A_HOUR = 3600;                                         // 每小时60分钟
+const int SEASONS_CHANGE_PERIOD = 30;                                       // 每30天一个季节变化
+const int SECONDS_IN_A_MIN = 60;												
 #endif // !_CONSTANT_H_
