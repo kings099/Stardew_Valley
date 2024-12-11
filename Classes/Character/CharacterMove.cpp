@@ -110,7 +110,7 @@ void CharacterMove::playAnimation() {
 
     // 动画播放
     if (!_frames.empty() && (_currentDirection != _lastDirection)) {
-        auto animation = Animation::createWithSpriteFrames(_frames, 1.0f / ACTION_RATE);
+        auto animation = Animation::createWithSpriteFrames(_frames, 0.8f / ACTION_RATE);
         auto animate = Animate::create(animation);
         _character->stopAllActions();
         _character->runAction(RepeatForever::create(animate));
