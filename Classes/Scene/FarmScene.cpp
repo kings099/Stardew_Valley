@@ -54,7 +54,7 @@ bool FarmScene::init()
 
     // 加载角色
     /*character->destroyInstance();*/
-    character = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png");
+    character = Character::getInstance("../Resources/Characters/Elimy/ElimyDown1.png");
     this->addChild(character.get(), 1); // 角色位于地图之上
 
     // 创建视角控制器
