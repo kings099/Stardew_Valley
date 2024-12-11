@@ -3,7 +3,7 @@
  * File Name:     GameViewController.cpp
  * File Function: 游戏视角控制类GameViewController的实现
  * Author:        金恒宇
- * Update Date:   2024/12/4
+ * Update Date:   2024/12/11
  * License:       MIT License
  ****************************************************************/
 
@@ -51,5 +51,12 @@ void GameViewController::update(float deltaTime) {
     Vec2 newCameraPosition = currentCameraPosition.lerp(targetCameraPosition, lerpSpeed);
     camera->setPosition(newCameraPosition);
 
+}
+
+void GameViewController::setMap(GameMap* newMap) {
+    if (newMap != nullptr) {
+        _map = newMap;
+        CCLOG("GameViewController updated to new map: %p", _map);
+    }
 }
 

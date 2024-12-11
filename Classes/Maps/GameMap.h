@@ -3,7 +3,7 @@
  * File Name:     FarmMap.h
  * File Function: 地图基类Map类的定义
  * Author:        金恒宇
- * Update Date:   2024/12/8
+ * Update Date:   2024/12/11
  * License:       MIT License
  ****************************************************************/
 #pragma once
@@ -29,13 +29,17 @@ public:
     virtual Vec2 absoluteToTile(const Vec2& pixelPoint);
 
     // 地图像素大小
-    virtual const Size& getMapSize() const;
+    const Size& getMapSize() const;
 
     // 地图瓦片大小
-    virtual const Size& getMapSizeinTile();
+    const Size& getMapSizeinTile();
 
     // 获取某位置Layername图层的GID
     virtual int getTileGIDAt(const std::string& layerName, const Vec2& tileCoord);
+
+    // 获取某GID对应图块的属性
+    virtual cocos2d::ValueMap getTilePropertiesForGID(int GID);
+
 
 protected:
     TMXTiledMap* _tile_map;  // 瓦片地图类

@@ -3,7 +3,7 @@
  * File Name:     FarmMap.cpp
  * File Function: 游戏视角控制类GameViewController的定义
  * Author:        金恒宇
- * Update Date:   2024/12/4
+ * Update Date:   2024/12/11
  * License:       MIT License
  ****************************************************************/
 #pragma once
@@ -20,6 +20,8 @@ public:
     GameViewController(Character* character,GameMap* gamemap);  // 构造函数，接受角色对象
 
     void update(float deltaTime);  // 每帧更新角色位置和摄像机位置
+
+    void setMap(GameMap* newMap);    // 更新地图
 
 private:
     Character* _character;  // 角色对象
