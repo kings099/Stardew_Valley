@@ -38,7 +38,9 @@ public:
     int getGrowthStage() const { return growthStage; }
 
     //除草动画
-    void Crop::playWeedingAnimation();
+    void Crop::playWeedingAnimation(const Vec2& position);
+    //碎石动画
+    void Crop::playStoneBreakingAnimationAt(const Vec2& position);
 
 private:
     std::string type;          // 农作物类型

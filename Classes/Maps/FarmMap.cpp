@@ -49,7 +49,8 @@ bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition)
     else {
         CCLOG("success: Crop instance created");
     }
-    crop->setPosition(Vec2(200, 200));
+    crop->setPosition(Vec2(150, 200));
+    crop->setScale(0.3f);
     _tile_map->addChild(crop);
 
     _tile_map->schedule([crop](float dt) {
@@ -57,9 +58,20 @@ bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition)
         }, 1.0f, "growth_key");
     this->setScale(FARM_MAP_SCALE);
 
-    _tile_map->scheduleOnce([crop](float) {
-        crop->playWeedingAnimation();
-        }, 10.0f, "play_animation_key");
+   /* TMXTiledMap* tile_map = getTiledMap();
+    if (!tile_map) {
+        CCLOG("Error: Tile map is null.");
+        return;
+    }*/
+    auto crop = Crop::create("stone", 3);
+    crop->playStoneBreakingAnimationAt(Vec2(200, 200));
+
+    /*this->scheduleOnce([crop](float) {
+        if (crop) {
+            crop->playWeedingAnimation();
+        }
+        }, 2.0f, "play_animation_key");*/
+
 
     //监听鼠标
     auto listener = EventListenerMouse::create();
@@ -108,7 +120,8 @@ bool FarmMap::onMouseEvent(cocos2d::Event* event)
             CCLOG("Found Crop of type: %s at position: %f, %f", croptype.c_str(), cropPos.x, cropPos.y);
             if (crop && crop->getBoundingBox().containsPoint(mapPosition) && croptype == "grass") {
                 CCLOG("Crop clicked at position: %f, %f", mapPosition.x, mapPosition.y);
-                crop->playWeedingAnimation();
+                TMXTiledMap* tile_map = getTiledMap();
+               /* crop->playWeedingAnimation();*/
                 return true;
             }
         }
@@ -120,3 +133,6 @@ bool FarmMap::onMouseEvent(cocos2d::Event* event)
     return false;
 }
 
+TMXTiledMap* FarmMap::getTiledMap() const {
+    return _tile_map;
+}

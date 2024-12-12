@@ -30,7 +30,7 @@ public:
 
     // 鼠标事件的处理
     bool onMouseEvent(cocos2d::Event* event);
-
+    TMXTiledMap* FarmMap::getTiledMap() const;
 };
 
 #endif // __FARM_MAP_H_

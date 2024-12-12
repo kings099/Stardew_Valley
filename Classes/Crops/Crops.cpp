@@ -166,18 +166,26 @@ void Crop::setGrowthStage(int stage) {
     }
 }
 
-void Crop::playWeedingAnimation() {
-    CCLOG("Playing weeding animation...");
-    if (sprite == nullptr) {
-        CCLOG("Error: Sprite is null, cannot play animation.");
+void Crop::playWeedingAnimation(const Vec2& position) {
+    CCLOG("Playing weeding animation at position (%f, %f)...", position.x, position.y);
+
+    // 创建一个新的精灵来显示动画
+    auto tempSprite = Sprite::create();
+    if (tempSprite == nullptr) {
+        CCLOG("Error: Failed to create sprite for weeding animation.");
         return;
     }
-    // 缩小动画效果（调整缩放比例）
-    sprite->setScale(0.3f); // 将动画缩小到原来的 50%
+
+    // 设置精灵的初始位置
+    tempSprite->setPosition(position);
+
+    // 添加到当前节点或场景
+    this->addChild(tempSprite);
+
     // 定义除草动画的帧序列
     Vector<SpriteFrame*> frames;
-    for (int i = 1; i < 6; ++i) { // 假设动画有 8 帧
-        std::string frameName = StringUtils::format("../Resources/Animations/weeding/weeding_%d.png", i);
+    for (int i = 1; i < 6; ++i) { // 假设动画有 5 帧
+        std::string frameName = StringUtils::format("../Resources/Animations/weeding/grass_%d.png", i);
         auto frame = SpriteFrame::create(frameName, Rect(0, 0, 64, 64)); // 假设每帧为 64x64
         if (frame == nullptr) {
             CCLOG("Error: Failed to load frame: %s", frameName.c_str());
@@ -188,18 +196,124 @@ void Crop::playWeedingAnimation() {
 
     if (frames.empty()) {
         CCLOG("Error: No frames loaded for weeding animation");
+        tempSprite->removeFromParent(); // 确保在失败时移除节点
         return;
     }
 
     // 创建动画
-    auto animation = Animation::createWithSpriteFrames(frames, 0.3f); // 每帧持续时间为 0.1 秒
+    auto animation = Animation::createWithSpriteFrames(frames, 0.2f); // 每帧持续时间为 0.2 秒
     auto animate = Animate::create(animation);
 
-    // 播放动画并移除节点（假设除草动画完成后农作物被移除）
-    auto removeSelf = CallFunc::create([this]() {
-        this->removeFromParent();
+    // 播放动画并移除精灵
+    auto removeSelf = CallFunc::create([tempSprite]() {
+        tempSprite->removeFromParent();
         });
 
     auto sequence = Sequence::create(animate, removeSelf, nullptr);
-    sprite->runAction(sequence);
+    tempSprite->runAction(sequence);
 }
+
+
+void Crop::playStoneBreakingAnimationAt(const Vec2& position) {
+    CCLOG("Playing stone breaking animation at position (%f, %f)...", position.x, position.y);
+
+    // 创建一个新的临时精灵来显示动画
+    auto tempSprite = Sprite::create();
+    if (tempSprite == nullptr) {
+        CCLOG("Error: Failed to create sprite for stone breaking animation.");
+        return;
+    }
+
+    // 设置精灵的初始位置
+    tempSprite->setPosition(position);
+
+    // 添加到当前节点或场景
+    this->addChild(tempSprite);
+
+    // 定义碎石动画的帧序列
+    Vector<SpriteFrame*> frames;
+    for (int i = 1; i <= 5; ++i) { // 假设动画有 5 帧
+        std::string frameName = StringUtils::format("../Resources/Animations/stone_break/stone_break_%d.png", i);
+        auto frame = SpriteFrame::create(frameName, Rect(0, 0, 64, 64)); // 假设每帧为 64x64
+        if (frame == nullptr) {
+            CCLOG("Error: Failed to load frame: %s", frameName.c_str());
+            continue;
+        }
+        frames.pushBack(frame);
+    }
+
+    if (frames.empty()) {
+        CCLOG("Error: No frames loaded for stone breaking animation");
+        tempSprite->removeFromParent(); // 清理未成功加载动画的节点
+        return;
+    }
+
+    // 创建动画
+    auto animation = Animation::createWithSpriteFrames(frames, 0.2f); // 每帧持续时间为 0.2 秒
+    auto animate = Animate::create(animation);
+
+    // 动画完成后移除精灵
+    auto removeSelf = CallFunc::create([tempSprite]() {
+        tempSprite->removeFromParent();
+        });
+
+    auto sequence = Sequence::create(animate, removeSelf, nullptr);
+    tempSprite->runAction(sequence);
+}
+
+//void Crop::playWeedingAnimation(TMXTiledMap* _tile_map) {
+//    CCLOG("Playing weeding animation...");
+//
+//    // 如果已有 sprite，不再使用，直接创建新精灵
+//    auto animationSprite = Sprite::create();
+//    if (animationSprite == nullptr) {
+//        CCLOG("Error: Failed to create sprite for animation.");
+//        return;
+//    }
+//
+//    // 将新精灵添加到场景或父节点中
+//    _tile_map->addChild(animationSprite);
+//
+//    // 缩小动画效果（调整缩放比例）
+//    animationSprite->setScale(0.3f);
+//
+//    // 定义一组图片和对应的位置
+//    struct FrameData {
+//        std::string imagePath;
+//        Vec2 position;
+//    };
+//    std::vector<FrameData> frameData = {
+//        {"../Resources/Animations/weeding/grass_animation.png", Vec2(200, 200)},
+//        {"../Resources/Animations/weeding/grass_animation.png", Vec2(200, 195)},
+//        {"../Resources/Animations/weeding/grass_animation.png", Vec2(200, 190)},
+//        {"../Resources/Animations/weeding/weeding_4.png", Vec2(200, 200)}
+//       
+//    };
+//
+//    // 动画持续时间
+//    const float frameDuration = 0.3f;
+//
+//    // 创建动作序列
+//    Vector<FiniteTimeAction*> actions;
+//    for (const auto& frame : frameData) {
+//        auto changeImage = CallFunc::create([=]() {
+//            animationSprite->setTexture(frame.imagePath); // 更换图片
+//            animationSprite->setPosition(frame.position); // 更新位置
+//            });
+//        auto delay = DelayTime::create(frameDuration); // 延迟一段时间
+//        actions.pushBack(changeImage);
+//        actions.pushBack(delay);
+//    }
+//
+//    // 动画完成后移除节点
+//    auto removeSelf = CallFunc::create([animationSprite]() {
+//        animationSprite->removeFromParent();
+//        });
+//
+//    // 将所有动作依次执行
+//    actions.pushBack(removeSelf);
+//    auto sequence = Sequence::create(actions);
+//
+//    // 执行动作
+//    animationSprite->runAction(sequence);
+//}
