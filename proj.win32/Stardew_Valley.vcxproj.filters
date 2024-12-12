@@ -115,6 +115,9 @@
     <ClInclude Include="..\Classes\SceneSwitcher\SceneSwitcher.h">
       <Filter>Classes\SceneSwitcher</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\Control\MapSwitchManager.h">
+      <Filter>Classes\Control</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\CursorAndBUutton\HoverCursor.cpp" />
@@ -183,6 +186,9 @@
     </ClCompile>
     <ClCompile Include="..\Classes\SceneSwitcher\SceneSwitcher.cpp">
       <Filter>Classes\SceneSwitcher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Control\MapSwitchManager.cpp">
+      <Filter>Classes\Control</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

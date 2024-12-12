@@ -116,7 +116,7 @@ void MapSwitcher::checkCharacterPositionAndSwitchScene(float deltaTime)
 bool MapSwitcher::checkIfInSwitchArea_farm(const Vec2& position)
 {
     //// 打印传入的坐标
-    CCLOG("Received Position: (%f, %f)", position.x, position.y);
+    //CCLOG("Received Position: (%f, %f)", position.x, position.y);
     // 假设目标切换区域是地图上的某个点
     Rect switchArea(0, 0, 100, 100);  // 假设目标区域是一个矩形（可以自定义位置和大小）
 

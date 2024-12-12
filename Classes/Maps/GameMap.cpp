@@ -3,7 +3,7 @@
  * File Name:     FarmMap.cpp
  * File Function: 地图基类Map类的实现
  * Author:        金恒宇
- * Update Date:   2024/12/8
+ * Update Date:   2024/12/11
  * License:       MIT License
  ****************************************************************/
 
@@ -52,11 +52,12 @@ bool GameMap::init(const std::string& mapFile, const Vec2& mapPosition)
 
 Vec2 GameMap::absoluteToTile(const Vec2& pixelPoint)
 {
+    float scale = this->getScale();
     // 获取瓦片大小
     Size tileSize = _tile_map->getTileSize();
 
-    float tileX = (pixelPoint.x - _map_position.x) / tileSize.width;
-    float tileY = (pixelPoint.y - _map_position.y) / tileSize.height;
+    float tileX = (pixelPoint.x - _map_position.x) / (tileSize.width * scale);
+    float tileY = (pixelPoint.y - _map_position.y) / (tileSize.height * scale);
 
     // 瓦片地图左上坐标系的y轴是翻转的
     tileY = _tile_map->getMapSize().height - tileY;
@@ -97,3 +98,47 @@ int GameMap::getTileGIDAt(const std::string& layerName, const Vec2& tileCoord)
 
     return layer->getTileGIDAt(tileCoord);
 }
+
+cocos2d::ValueMap GameMap::getTilePropertiesForGID(int GID)
+{
+    if (GID == 0) return cocos2d::ValueMap();
+    auto tileProperties = _tile_map->getPropertiesForGID(GID);
+    if (tileProperties.getType() == Value::Type::MAP)
+    {
+        return tileProperties.asValueMap();
+    }
+    return cocos2d::ValueMap();
+}
+
+
+//std::vector<TileInfo> GameMap::getAllTeleportTiles()
+//{
+//    std::vector<TileInfo> teleportTiles;
+//
+//    for (auto& layer : ->getLayers())
+//    {
+//        auto tileLayer = dynamic_cast<TMXLayer*>(layer);
+//        if (!tileLayer) continue;
+//
+//        Size layerSize = tileLayer->getLayerSize();
+//        for (int x = 0; x < layerSize.width; ++x)
+//        {
+//            for (int y = 0; y < layerSize.height; ++y)
+//            {
+//                Vec2 tilePos(x, y);
+//                int GID = tileLayer->getTileGIDAt(tilePos);
+//                ValueMap properties = _tile_map->getPropertiesForGID(GID);
+//
+//                if (properties.find("teleportID") != properties.end())
+//                {
+//                    TileInfo info;
+//                    info.position = tilePos;
+//                    info.properties = properties;
+//                    teleportTiles.push_back(info);
+//                }
+//            }
+//        }
+//    }
+//
+//    return teleportTiles;
+//}
