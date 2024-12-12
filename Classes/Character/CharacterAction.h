@@ -16,6 +16,9 @@
 
 class CharacterAction : public CharacterObjectList,public CharacterMove {
 public:
+	// 按下鼠标事件触发函数
+	void onMouseDown(cocos2d::Event* event);
+
 
 protected:
 	int _farmExperience;		// 耕种技能经验值

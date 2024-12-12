@@ -3,7 +3,7 @@
  * File Name:     CharacterObjectList.h
  * File Function: 角色物品栏CharacterObjectList的定义
  * Author:        尹诚成
- * Update Date:   2023/12/05
+ * Update Date:   2023/12/11
  * License:       MIT License
  ****************************************************************/
 
@@ -20,26 +20,35 @@ public:
 	//构造函数 
 	CharacterObjectList();
 
-	// 按下键盘时的处理
+	// 按下键盘事件触发函数
 	void onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event);
 
 	// 捡起物品
-	bool pickUpObject(GameCommonObject targetObject, int objectCount);
+	bool pickUpObject(GameToolObject targetObject, int objectCount);
+
+	// 捡起物品
+	bool pickUpObject(GameSeedObject targetObject, int objectCount);
+
+	// 捡起物品
+	bool pickUpObject(GameBaseObject targetObject, int objectCount);
 
 	// 丢弃当前选中的物品
 	ObjectListNode deleteCurrentObject();
 
-	// 移动物品
-	void moveObject(ObjectListNode object);
+	// 交换物品
+	void swapObject(int startIndex, int targetIndex);
 
 	// 获取当前选中的物品
 	ObjectListNode getCurrentObject();
 
-	// 检查物品栏是否已满
-	bool checkObjectListFull();
-
 	// 获取物品栏状态
 	bool getObjectListStatus();
+
+	// 获取当前选中的物品索引
+	int getCurrentObjectIndex();
+
+	// 查找指定位置是否有物品
+	ObjectListNode findObjectAtPosition(int index);
 
 	// 设置当前选中的物品
 	void setCurrentObject(int index);
@@ -56,9 +65,14 @@ private:
 	// 初始化物品栏
 	void initObjectList();
 	
+	// 捡起物品
+	bool pickUpObject(GameCommonObject targetObject, int objectCount);
 
 	// 查找物品栏中是否有指定物品
 	int findObject(GameCommonObject targetObject);
+
+	// 检查物品栏是否已满
+	bool checkObjectListFull();
 };
 
 #endif // !__CHARACTER_OBJECT_LIST_H__
