@@ -8,6 +8,7 @@
  ****************************************************************/
 
 #include "FarmMap.h"
+#include "Classes/Crops/Crops.h"
 USING_NS_CC;
 
 FarmMap::FarmMap(const Vec2& mapPosition)
@@ -35,6 +36,30 @@ bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition)
         return false;
     }
     this->setScale(FARM_MAP_SCALE);
+    if (_tile_map != nullptr) {
+        CCLOG("success: _tile_map is added");
+        /*  return true;*/
+    }
+    //添加一个农作物树
+    auto crop = Crop::create("grass", 0);
+    if (crop == nullptr) {
+        CCLOG("Error: Failed to create Crop instance");
+        return false;
+    }
+    else {
+        CCLOG("success: Crop instance created");
+    }
+    crop->setPosition(Vec2(200, 200));
+    _tile_map->addChild(crop);
+
+    _tile_map->schedule([crop](float dt) {
+        crop->updateGrowth(dt);
+        }, 1.0f, "growth_key");
+    this->setScale(FARM_MAP_SCALE);
+
+    _tile_map->scheduleOnce([crop](float) {
+        crop->playWeedingAnimation();
+        }, 10.0f, "play_animation_key");
 
     //监听鼠标
     auto listener = EventListenerMouse::create();
@@ -64,8 +89,34 @@ bool FarmMap::onMouseEvent(cocos2d::Event* event)
         Vec2 tiledPos = absoluteToTile(mapPosition);
         CCLOG("TILED POS: %f,%f", tiledPos.x, tiledPos.y);
 
+
+        // 检查 `_tile_map` 是否有效
+        if (_tile_map == nullptr) {
+            CCLOG("Error: _tile_map is null.");
+            return false;
+        }
+        // 检查是否点击到农作物
+        for (auto child : _tile_map->getChildren()) {
+            CCLOG("Child type: %s", typeid(*child).name());
+            auto crop = dynamic_cast<Crop*>(child);
+            if (crop == nullptr) {
+                CCLOG("Child is not a Crop instance.");
+                continue;
+            }
+            auto croptype = crop->getType();
+            auto cropPos = crop->getPosition();
+            CCLOG("Found Crop of type: %s at position: %f, %f", croptype.c_str(), cropPos.x, cropPos.y);
+            if (crop && crop->getBoundingBox().containsPoint(mapPosition) && croptype == "grass") {
+                CCLOG("Crop clicked at position: %f, %f", mapPosition.x, mapPosition.y);
+                crop->playWeedingAnimation();
+                return true;
+            }
+        }
+        CCLOG("No crop clicked.");
         return true;
     }
+    CCLOG("Event is not a mouse event.");
+     
     return false;
 }
 
