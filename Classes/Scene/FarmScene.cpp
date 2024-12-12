@@ -49,7 +49,7 @@ bool FarmScene::init()
     this->addChild(menu, 1);
 
     // 加载农场地图
-    farmMap = FarmMap::create("../Resources/Maps/Farm/farm2.tmx");
+    farmMap = FarmMap::create("../Resources/Maps/Farm/Farm_Combat.tmx");
     this->addChild(farmMap, 0); // 地图置于最底层
 
     // 加载角色

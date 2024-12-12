@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="80" height="65" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="81">
+ <properties>
+  <property name="AllowGrassSurviveInWinter" value="T"/>
+  <property name="Outdoors" value="T"/>
+  <property name="Warp" value="80 15 BusStop 11 23 80 18 BusStop 11 24 80 16 BusStop 11 23 80 17 BusStop 11 23 40 65 Forest 68 0 41 65 Forest 68 0 42 65 Forest 68 0 40 -1 Backwoods 14 39 41 -1 Backwoods 14 39 34 5 FarmCave 8 11"/>
+ </properties>
+ <tileset firstgid="1" source="paths.tsx"/>
+ <tileset firstgid="65" name="spring_outdoors_base_house" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+  <image source="spring_outdoorsTileSheet.png" width="400" height="1264"/>
+  <tile id="153">
+   <properties>
+    <property name="canFarm" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="176">
+   <properties>
+    <property name="canFarm" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="182">
+   <properties>
+    <property name="canFarm" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="183">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="184">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="185">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="206">
+   <properties>
+    <property name="canFarm" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="207">
+   <properties>
+    <property name="canFarm" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="208">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="210">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="211">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="212">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="213">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="226">
+   <properties>
+    <property name="canFarm" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="227">
+   <properties>
+    <property name="canFarm" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="231">
+   <properties>
+    <property name="canFarm" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="233">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="235">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="237">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="238">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="258">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="259">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="260">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="283">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="284">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="291">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="308">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="309">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="316">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="340">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="341">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="365">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="366">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="369">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="370">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="371">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="374">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="391">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="394">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="396">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="399">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="416">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="419">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="435">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="441">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="444">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="466">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="469">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="491">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="494">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="514">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="515">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="516">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="517">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="518">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="519">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="520">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="539">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="540">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="541">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="542">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="543">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="544">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="545">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="546">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="547">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="548">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="559">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="584">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="603">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="604">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="609">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="708">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="709">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="710">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="733">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="735">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="756">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="757">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="758">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="760">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="847">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="872">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="897">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="922">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1182">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1183">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1184">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1207">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1209">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1232">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1234">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1235">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1236">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1246">
+   <properties>
+    <property name="CanFish" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1247">
+   <properties>
+    <property name="CanFish" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1248">
+   <properties>
+    <property name="CanFish" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1257">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1258">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1259">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1261">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1271">
+   <properties>
+    <property name="CanFish" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1272">
+   <properties>
+    <property name="CanFish" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1274">
+   <properties>
+    <property name="CanFish" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1284">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1286">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1309">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1310">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1311">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer id="1" name="back" width="80" height="65">
+  <data encoding="base64" compression="zlib">
+   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
+  </data>
+ </layer>
+ <layer id="3" name="buildings" width="80" height="65">
+  <data encoding="base64" compression="zlib">
+   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
+  </data>
+ </layer>
+ <layer id="5" name="path" width="80" height="65">
+  <data encoding="base64" compression="zlib">
+   eJztm9ty2zAMRPnsZOTErh33Jf3/v2w59U42mwUpU1IkxzwzGV0MShQIAuAlKXU6nU6n0+l0Ol85/vs7NJTbm3M9OvnD9Z245vfv6f5TQ52W5Hg9um8bFnyvtg2uX67H1xvLrwV0hPrsrsdW+7sVtifU5SJ1ggx0ekwfLNnGNbjvOFC3J7rOdf8zcz2cDmCH7wV5yLi+811Ad2jTwfzm5Hd0PcUGjnJ9pvMLnUNXKq/1WoODOT/KEQzJ+67W+qstAX4vxxGWzdfPJLeGHbKf09g2JG9b6MfMlPbP/uA9xbpkvQzX34f00bdVb2v254zrI1E8mZpPvKQ4HmQfsRdZ5DKQ47Jr6M31R9bJLn2N0ZEPuhX+3lq+wnqDDbrnrGV7WSdRHND7HDOQ907R7UDHPZ3jWWhPtb8oh1wT6Ab65O/YkVxLDgab0RiulHwCfJ/2a4CYzXWq1W+Q45yUckP3G+ff7hn5vsaHs8jiOzje8rftjQz6f6S3Q/qaL9ZytaXQnG9MDOE2Vn2qDL8HMfY1xb4h38/txjmi8yf8bu0Lc/n0KSAPVN8YwXYEedUhX7u8Zmzf1LJRfbbArW3J9Xa+MfIFmRc54nlOXzwPVGqXNYn8SEkHwNkS22TkA7hPsl+EXnZUDr8x2Uc8Be//bqb6YeiG5wJLRLbuypbGNSltI/9pAe3+XJQql9cxqMZrhn3DFmyuhrarsxkd47SAZ/BYRuceDiKrco+O83GRH9DYsxVbdGP7OeUjXFxwYwvOD7eiM6VWr9zHND4uXYdL+ty3lxy3zQX79tL629ywP3Ptk+uFcaNbI1gTHQNr/8zXGmuXsgHOWaL8bwtjN8eYmHauizTB85YZzFtom25lzAZcW17S1/nFpeut4zPNndmvXGaoT16DYN/a8jw3jo3mOLMsdH1Jy8LvLPmNqT7E6aw2rw5cjDjKb05Pt86D3coxeC+3a2v7cd2znnh+gvWgPuqZ5JjSPhfF6VnPW9F1f76X0bEe8sEW+9P5Wz1XMMen5ZwuS/sbeJ/Qd1Fa42mBn5VtSnXA95wO9Ntrc1Rj5rbm/D5+7pt5B6/zTKVkP+zH8r1X807uu6yn0vwyj6F43Wopcox8q0qNR/tpKX6g32r8UruNfCOewfAYgNsIOq6N69zekluYY66S64Fvhg6y7k4kX9oPyXZXymMiPz3Q31xsaVzL+Xo0n3cIfi+ty+MvlznLfX1+C5GNLTVn0YLaI8dnxs2Run01U/fE1YAP3JJ9uvgTjUEybHcnknMxRPPqKD7V2Mq+1RpuHSOqb5TnzOELXazlttjqnL1bc4j2A3AZtwfWyfI7GLXbmo/bsg0yLgfnMWcUH2DHuidwDu5Fd44x/caN79xciZtzGLMOuvScz9yU9g3x9/4yZWv7/DSuu3UNfsc9rHs4Sv+ro6hMtheO1SmNz3vG3rs3Smu0bi6DUZs7ye+H9DluoUxr7nOPRH1ZdRfpJJ+fjMzW134d+s2Rzxvj+6N9WnzufCTuq60+ArrnFnaotnQycj+JqM+U5h9rZR+BsXMo6vNa97T9VFrXPR7VbwFee/19QznNOTr/KdlhtJ+t67LT6XQ698pfJHQr/Q==
+  </data>
+ </layer>
+ <layer id="7" name="Front" width="80" height="65">
+  <data encoding="base64" compression="zlib">
+   eJztnMlrFEEUxqsV8n+5XlxxubgL7nE5GJeLGtd40EQvbrgezAZCVIKCSFDBuFw0F8VD8i948+pXzDzmzZtX3dXd4iTd7wcfPdT0TFV/9areo3sS55xbAi2FlkEnoVPQaWgIugHddO0cgnqhw9AR6Ch0zMUz2OxHQ+uPo41puHncAm2FtkHboR3QzsB4B5ufuQhdgi5DV6AB6KpreSCR58t++fhGoTFoPOM7qM88DAXatf442pimmsfjUB90wrXHQdp470MPoIfQI+gx9MSF51GeL/vl43sHvYc+ZHwH9fk/CI3Jcw267hqxxeMgbbyTzeMr6DX7Lj5Hy6EV0MrA+bzftPFJZJ/dYJK99nPv17J23Z608X6Dvgfe43tBiOGU9xYKfu79Wqa5l9ed5hHfwyR8LyBobogp1z3e9DSOb3vyf7Z3ceM4kiD+ktZxLNGvOwTfwyRazqK5mUM/f5L8414IhOoHDb6H0RzQPIwnnTmL5qbKhOqHEHn2MJqbKsPjaFTEFL3+JdrGlLU4knTGpGF0m6fdHoBhGIUZsTzyz3hmXpbiN/TRPCzMD2celuWnMw/zsmuRc7uhtXi9zjX8Mw/jofuL+6ED0EHXWsvT8HA2qfY9mrLQ/cV+6Dx0odnu/aP1TOJ+ztbQ01XQamgNa8u6vziTtOLRi177du5pHbzcA+2F9rG2tPuLd6F7oo32yfWuEZ/kYx28PAOdhc6xNu3+Yl/z+l9AL0Ub3yc5Mk6nK+jjLeg2dIe1hZ618Tjj9Lv2fVI7l9b514r555mAnos2H1tyrco409ZyVkxWjU/QZ+iLa+USgq9VT79rjzP5PveTn0uezlQw9jiUS/jzZU9f5HVLP+sG5ZLQc/U88RPreZWgXCLrv6qvuzLI+tnnktjny0Z7/Uy5JM/z5bqj1c+xv7Uy9PrZyIesn+uYO4uSVj8b+aBcYhSDcokRD6//KJcY8cj7pxNdHMtChNd/lEuMeKz+K492/9SIg9d/RnG055hGJyGftOeYRichn7T7MEYnIZ8sD8eR5pPl4Tg0nywPxyF9srxbDsu75bC8Ww7Lu+WxvJsPnjMs78bBPbOckR/umcwZVsNkwz2TOaMO8Vg2RqRnPGfM5xpmA7QR2gRtLvE9WTGi+av9tsp7JnPGfKlh5sTfkvij/B9fRX9/zmNE80rzV/ttVSjPzocaZiDplIf/X7Oi8BjRvNLWYOy6rEsNQzGi+aKtwZh1WZfcy2Mk5Iu2BrPWpRbLfwE6oGkB
+  </data>
+ </layer>
+ <layer id="9" name="AlwaysFront" width="80" height="65">
+  <data encoding="base64" compression="zlib">
+   eJztmLtO3EAYhS1ltJXfITR+By5VoOQSLrsUQAkEWAwFUCaBFEkKwitwFUI8AQUSingCKngGKiRegDMKox2MPR6vw84OPp90tMhaL7/OnH9uQeCeMegzNO66EE/5Ai1By64L8ZRtaAf64bgOX7mDHqBbhzV8ggahIYc1tMtRLQiOoZOa60r85dJT7+pQA5p2XYinxNAatO66EE/5Cf2CfrsuxFP2oQPo0HEdvnLhugDPuXFdgOfcuy6AEEIIIaQkvEN/G3y+X+wGZqBZaM51IV2MKWMb0Ca01dGK/MKUsV3oD7RneL/qPW7K2Bl0Cp0b3q96j5sy9he6gq4N71e9x20yZsKmx98zNhkzUdb/qlPWf0IIIYQQQggh5K2oiyDoF66r8JcY3k3Sw7ZZgW9Netg20jvp4QQ9bIvHDy0PmcPiSP9C+BWJf3PhR6iH/lkjfZMeqhz2Qn30zxrlnZQ+D04J7m1sUN6FouWhzOGq4N7GBj1/eg7VmsL50Eyaf1IyeyHnw1x0z9Raoq8pzJ+ZrPypPmb+zCTzpq8lTc5/uTB/5TD5J6XvB7mPeU3SL72XQ+1cHNPHVPLyp/qYPqZj41/a3lr3sV5hP219U2tyLF7mUZ3zypz1BhLj4NN4ZM19Nl6qM14siu11kn41tHHQP304exft3zJ7nYFnz5J+rUHr2v1FJFp3Qd2+9yzqU1ZGo8TdV1o/Np49U37pv6X+VtmOMsZjGBqBRnOedYqiPmV9N7nXSevHNN/CjP+TdfczDy1AiznPOsX/6F3dD7W26Dkqukapd9Ly9xX6Bn3PedYpngDTJzCU
+  </data>
+ </layer>
+</map>
