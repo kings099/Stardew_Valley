@@ -3,7 +3,7 @@
  * File Name:     LocationMap.h
  * File Function: 位置属性与屏幕坐标键值对类LocationMap类的定义
  * Author:        尹诚成
- * Update Date:   2024/12/07
+ * Update Date:   2024/12/11
  * License:       MIT License
  ****************************************************************/
 
@@ -26,7 +26,11 @@ public:
 private:
     std::map<int, cocos2d::Vec2> _closedlocationMap; // 位置属性与屏幕坐标键值对(物品栏打开状态)
     std::map<int, cocos2d::Vec2> _openedlocationMap; // 位置属性与屏幕坐标键值对(物品栏关闭状态)
+<<<<<<< Updated upstream
     
+=======
+
+>>>>>>> Stashed changes
     // 构造函数
     LocationMap();
 };

@@ -3,7 +3,7 @@
  * File Name:     UILayer.cpp
  * File Function: UI界面UILayer类的实现
  * Author:        达思睿，尹诚成
- * Update Date:   2024/12/9
+ * Update Date:   2024/12/11
  * License:       MIT License
  ****************************************************************/
 #include "UILayer.h"
@@ -13,7 +13,11 @@
 USING_NS_CC;
 
 // 构造函数
+<<<<<<< Updated upstream
 UILayer::UILayer():
+=======
+UILayer::UILayer() :
+>>>>>>> Stashed changes
     timeLabel1(nullptr),
     timeLabel2(nullptr),
     timeDisplayLayer(nullptr),
@@ -91,7 +95,11 @@ void UILayer::initializeObjectList() {
         [this](cocos2d::Ref* sender) { character->setObjectListStatus(false);  }
     );//character->deleteCurrentObject();
     deleteObjectButton->setPosition(Vec2(visibleSize.width * 2 / 3, visibleSize.height / 2));
+<<<<<<< Updated upstream
     this->addChild(deleteObjectButton, UI_LAYER_GRADE); 
+=======
+    this->addChild(deleteObjectButton, UI_LAYER_GRADE);
+>>>>>>> Stashed changes
     deleteObjectButton->setVisible(false);
 
     // 创建关闭物品栏按钮
@@ -101,7 +109,11 @@ void UILayer::initializeObjectList() {
         [this](cocos2d::Ref* sender) { character->setObjectListStatus(false); }
     );
     closeObjectListButton->setPosition(Vec2(visibleSize.width * 2 / 3, visibleSize.height * 3 / 5));
+<<<<<<< Updated upstream
     this->addChild(closeObjectListButton, UI_LAYER_GRADE); 
+=======
+    this->addChild(closeObjectListButton, UI_LAYER_GRADE);
+>>>>>>> Stashed changes
     closeObjectListButton->setVisible(false);
 }
 
@@ -116,8 +128,13 @@ void UILayer::updateObjectList() {
         openedobjectListLayer->setVisible(false);
         deleteObjectButton->setVisible(false);
         closeObjectListButton->setVisible(false);
+<<<<<<< Updated upstream
         const auto objectInfo = character->getCurrentObject();
         if (objectInfo.index >= OBJECT_LIST_COLS) {
+=======
+        const int index = character->getCurrentObjectIndex();
+        if (index >= OBJECT_LIST_COLS) {
+>>>>>>> Stashed changes
             character->setCurrentObject(0);
         }
     }
@@ -141,7 +158,11 @@ void UILayer::showObjectImage() {
                 closedObjectSpriteImage[i] = Sprite::create(objectSprite);
                 closedObjectSpriteImage[i]->setPosition(LocationMap::getInstance().getLocationMap().at(i));
                 closedObjectSpriteImage[i]->setScale(OBJECT_NODE_SCALE);
+<<<<<<< Updated upstream
                 this->addChild(closedObjectSpriteImage[i], OBJECT_LAYER_GRADE); 
+=======
+                this->addChild(closedObjectSpriteImage[i], OBJECT_LAYER_GRADE);
+>>>>>>> Stashed changes
             }
         }
         for (int i = 0; i < OBJECT_LIST_ROWS; i++) {
@@ -154,13 +175,21 @@ void UILayer::showObjectImage() {
     else {
         for (int i = 0; i < OBJECT_LIST_ROWS; i++) {
             for (int j = 0; j < OBJECT_LIST_COLS; j++) {
+<<<<<<< Updated upstream
                 const auto objectInfo = character->findObjectAtPosition(i* OBJECT_LIST_COLS + j);
+=======
+                const auto objectInfo = character->findObjectAtPosition(i * OBJECT_LIST_COLS + j);
+>>>>>>> Stashed changes
                 if (objectInfo.count != 0) {
                     const auto objectSprite = objectInfo.objectNode.object->_fileName;
                     openedObjectSpriteImage[i * OBJECT_LIST_COLS + j] = Sprite::create(objectSprite);
                     openedObjectSpriteImage[i * OBJECT_LIST_COLS + j]->setPosition(LocationMap::getInstance().getLocationMap().at(i * OBJECT_LIST_COLS + j));
                     openedObjectSpriteImage[i * OBJECT_LIST_COLS + j]->setScale(OBJECT_NODE_SCALE);
+<<<<<<< Updated upstream
                     this->addChild(openedObjectSpriteImage[i * OBJECT_LIST_COLS + j], OBJECT_LAYER_GRADE);   
+=======
+                    this->addChild(openedObjectSpriteImage[i * OBJECT_LIST_COLS + j], OBJECT_LAYER_GRADE);
+>>>>>>> Stashed changes
                 }
             }
         }
@@ -304,8 +333,12 @@ void UILayer::onMouseUp(cocos2d::Event* event) {
 
 // 按下键盘事件触发函数
 void UILayer::onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event) {
+<<<<<<< Updated upstream
     const auto seletedObjectInfo = character->getCurrentObject();
     const int index = seletedObjectInfo.index;
+=======
+    const int index = character->getCurrentObjectIndex();
+>>>>>>> Stashed changes
     objectListStatus = character->getObjectListStatus();
     setSelectObjectSpriteMarker(lastSelectedObjectIndex, false);
     if (!objectListStatus) {
@@ -350,7 +383,11 @@ void UILayer::initializeTimeDisplay() {
     timeDisplayLayer->setPosition(rightTopPos);
 
     // 添加到场景
+<<<<<<< Updated upstream
     this->addChild(timeDisplayLayer, UI_LAYER_GRADE);  
+=======
+    this->addChild(timeDisplayLayer, UI_LAYER_GRADE);
+>>>>>>> Stashed changes
 
     // 计算标签的位置，使其相对于背景位置
     const Vec2 labelPos1 = Vec2(rightTopPos.x + originalTimeDisplaySize.width * 0.05, rightTopPos.y + originalTimeDisplaySize.height * scaleY * 0.35f);  // 在背景图片的顶部
@@ -358,12 +395,21 @@ void UILayer::initializeTimeDisplay() {
 
     // 创建并初始化 timeLabel1 和 timeLabel2
     timeLabel1 = Label::createWithSystemFont("", "Arial", FONT_SIZE);
+<<<<<<< Updated upstream
     timeLabel1->setPosition(labelPos1);  
     this->addChild(timeLabel1, UI_LAYER_GRADE);  
 
     timeLabel2 = Label::createWithSystemFont("", "Arial", FONT_SIZE);
     timeLabel2->setPosition(labelPos2); 
     this->addChild(timeLabel2, UI_LAYER_GRADE);  
+=======
+    timeLabel1->setPosition(labelPos1);
+    this->addChild(timeLabel1, UI_LAYER_GRADE);
+
+    timeLabel2 = Label::createWithSystemFont("", "Arial", FONT_SIZE);
+    timeLabel2->setPosition(labelPos2);
+    this->addChild(timeLabel2, UI_LAYER_GRADE);
+>>>>>>> Stashed changes
 }
 
 // 更新时间显示器
@@ -377,8 +423,14 @@ void UILayer::updateTimeDisplay() {
 
     // 获取并更新时间信息（白天/晚上和当前时间）
     const bool isDaytime = timeManager->isDaytime();
+<<<<<<< Updated upstream
     std::string dayOrNight = isDaytime ? "白天" : "晚上";  
     std::string timeOfDay = timeManager->getCurrentTime();  
+=======
+    std::string dayOrNight = isDaytime ? "Day" : "Night";
+    std::string timeOfDay = timeManager->getCurrentTime();
+    timeLabel2->setString(dayOrNight + " " + timeOfDay);  // 显示白天/晚上和当前时间  的代码部分
+>>>>>>> Stashed changes
 }
 
 // 更新UI界面
@@ -401,13 +453,21 @@ Vec2 UILayer::findNearestPoint(cocos2d::Sprite* objectSprite) {
 
     const Vec2 currentPos = objectSprite->getPosition();
     const auto objectListStatus = character->getObjectListStatus();
+<<<<<<< Updated upstream
   
+=======
+
+>>>>>>> Stashed changes
     if (!objectListStatus) {// 物品栏关闭
 
     }
     else {  // 物品栏打开
         for (const auto& point : LocationMap::getInstance().getLocationMap()) {
+<<<<<<< Updated upstream
             const int currentLocation = point.first;    
+=======
+            const int currentLocation = point.first;
+>>>>>>> Stashed changes
             bool isEmpty = true;
             const auto objectInfo = character->findObjectAtPosition(currentLocation);
             if (objectInfo.count != 0) {
@@ -428,7 +488,11 @@ Vec2 UILayer::findNearestPoint(cocos2d::Sprite* objectSprite) {
 
 // 设置选中物品标记框的显示状态
 void UILayer::setSelectObjectSpriteMarker(int index, bool show) {
+<<<<<<< Updated upstream
     if(index >= OBJECT_LIST_COLS)
+=======
+    if (index >= OBJECT_LIST_COLS)
+>>>>>>> Stashed changes
         selectObjectSpriteMarker[0]->setVisible(show);
     else
         selectObjectSpriteMarker[index]->setVisible(show);

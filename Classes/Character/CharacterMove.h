@@ -3,7 +3,7 @@
  * File Name:     CharacterMove.h
  * File Function: 角色移动CharacterMove类的定义
  * Author:        尹诚成
- * Update Date:   2023/12/07
+ * Update Date:   2023/12/11
  * License:       MIT License
  ****************************************************************/
 
@@ -37,7 +37,7 @@ public:
     void stopMove();
 protected:
     cocos2d::Sprite* _character;                         // 角色对象
-   
+    std::string _currentDirection;                       // 当前动画方向
     // 更新角色位置
     cocos2d::Vec2 updatePosition(float deltaTime);
 private:
@@ -51,7 +51,6 @@ private:
     bool _moveLeft;                                      // 是否左移
     bool _moveRight;                                     // 是否右移
     bool _animationPlaying;                              // 是否正在播放动画
-    std::string _currentDirection;                       // 当前动画方向
     std::string _lastDirection;                          // 上一次动画方向
 };
 

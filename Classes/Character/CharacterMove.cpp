@@ -2,8 +2,13 @@
  * Project Name:  Stardew_Valley
  * File Name:     Character.cpp
  * File Function: 角色移动Character类的实现
+<<<<<<< Updated upstream
  * Author:        尹诚成
  * Update Date:   2023/12/07
+=======
+ * Author:        尹诚成，达思睿
+ * Update Date:   2023/12/11
+>>>>>>> Stashed changes
  * License:       MIT License
  ****************************************************************/
 
@@ -122,6 +127,7 @@ void CharacterMove::playAnimation() {
     }
 }
 
+
 // 获取角色当前位置
 cocos2d::Vec2 CharacterMove::getPosition() {
     return _character->getPosition();
@@ -132,6 +138,10 @@ void CharacterMove::setPosition(const Vec2& position) {
     _character->setPosition(position);
 }
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 // 强制停止角色移动
 void CharacterMove::stopMove() {
     _moveUp = false;

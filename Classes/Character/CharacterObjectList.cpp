@@ -3,7 +3,7 @@
  * File Name:     CharacterObjectList.cpp
  * File Function: 角色物品栏CharacterObjectList类的实现
  * Author:        尹诚成
- * Update Date:   2023/12/05
+ * Update Date:   2023/12/11
  * License:       MIT License
  ****************************************************************/
 
@@ -15,7 +15,11 @@ USING_NS_CC;
 
 // 构造函数
 CharacterObjectList::CharacterObjectList() :
+<<<<<<< Updated upstream
 	_maxObjectKindCount(OBJECT_LIST_ROWS*OBJECT_LIST_COLS),
+=======
+	_maxObjectKindCount(OBJECT_LIST_ROWS* OBJECT_LIST_COLS),
+>>>>>>> Stashed changes
 	_currentObjectKindCount(0),
 	_currentObjectIndex(0),
 	_openObjectList(false)
@@ -90,7 +94,7 @@ bool CharacterObjectList::pickUpObject(GameCommonObject targetObject, int object
 	else {
 		int insertIndex = -1;
 		for (insertIndex = 0; insertIndex < _maxObjectKindCount; insertIndex++) {
-			if(_objectList[insertIndex].count == 0)
+			if (_objectList[insertIndex].count == 0)
 				break;
 		}
 		_objectList[insertIndex].count = objectCount;
@@ -103,7 +107,11 @@ bool CharacterObjectList::pickUpObject(GameCommonObject targetObject, int object
 // 丢弃当前选中的物品
 ObjectListNode CharacterObjectList::deleteCurrentObject() {
 	ObjectListNode tempObject = getCurrentObject();
+<<<<<<< Updated upstream
 	_objectList[_currentObjectIndex] = {_currentObjectIndex ,{None,nullptr},0,Selected };
+=======
+	_objectList[_currentObjectIndex] = {{None,nullptr},0,Selected };
+>>>>>>> Stashed changes
 	return tempObject;
 }
 
@@ -127,6 +135,15 @@ bool CharacterObjectList::getObjectListStatus() {
 	return _openObjectList;
 }
 
+<<<<<<< Updated upstream
+=======
+// 获取当前选中的物品索引
+int CharacterObjectList::getCurrentObjectIndex() {
+	return _currentObjectIndex;
+}
+
+
+>>>>>>> Stashed changes
 // 查找指定位置的物品信息
 ObjectListNode CharacterObjectList::findObjectAtPosition(int index) {
 	return _objectList[index];
@@ -152,7 +169,11 @@ void CharacterObjectList::setCurrentObject(int index) {
 void CharacterObjectList::initObjectList() {
 	_objectList.resize(_maxObjectKindCount);
 	for (int i = 0; i < _maxObjectKindCount; i++) {
+<<<<<<< Updated upstream
 		_objectList[i] = ObjectListNode{ i,{None,nullptr}, 0 ,Unselected };
+=======
+		_objectList[i] = ObjectListNode{ {None,nullptr}, 0 ,Unselected };
+>>>>>>> Stashed changes
 	}
 	_objectList[0].status = Selected;
 }

@@ -13,7 +13,11 @@
 USING_NS_CC;
 // 获取单例
 Character* Character::getInstance(const std::string& filename) {
+<<<<<<< Updated upstream
     static Character* instance = nullptr; 
+=======
+    static Character* instance = nullptr;
+>>>>>>> Stashed changes
     if (!instance) {
         instance = new Character(filename); // 仅在第一次调用时创建实例
     }
@@ -65,6 +69,7 @@ Vec2 Character::updatePosition(float deltaTime) {
 Sprite* Character::getCharacterSprite() const{
     return _character;
 }
+<<<<<<< Updated upstream
 
 // 删除单列
 void Character::destroyInstance() {
@@ -73,3 +78,5 @@ void Character::destroyInstance() {
         _character = nullptr;
     }
 }
+=======
+>>>>>>> Stashed changes

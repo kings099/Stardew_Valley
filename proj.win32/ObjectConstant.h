@@ -179,6 +179,10 @@ struct ObjectListNode {
     ObjectListNodeStatus status;	// 物品状态(选中/未选中)
 };
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 
 // 游戏物品属性参数定义
 const std::vector<GameToolObject> GAME_TOOL_OBJECTS_ATTRS = {
@@ -199,6 +203,7 @@ const std::vector<GameToolObject> GAME_TOOL_OBJECTS_ATTRS = {
     GameToolObject("../Resources/Objects/Tools/", "高级水壶", Farm, 3, 1, 70, Watering)
 };
 
+<<<<<<< Updated upstream
 //enum GameMapNodeType {
 //    Grass,       // 草地
 //    Tree,        // 树木
@@ -217,5 +222,8 @@ const std::vector<GameToolObject> GAME_TOOL_OBJECTS_ATTRS = {
 //    std::vector<GameCommonObject> dropObjects; // 掉落物品
 //    std::vector<int> dropObjectsNum;           // 掉落物品数量
 //};
+=======
+
+>>>>>>> Stashed changes
 
 #endif // _CONSTANT_OBJECT_H_

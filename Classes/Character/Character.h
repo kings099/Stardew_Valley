@@ -30,9 +30,12 @@ public:
     // 获取角色精灵节点
     cocos2d::Sprite* getCharacterSprite() const;
 
+<<<<<<< Updated upstream
     // 删除单例
     void destroyInstance();
 
+=======
+>>>>>>> Stashed changes
 private:
     // 禁止拷贝和赋值
     Character(const Character&) = delete;

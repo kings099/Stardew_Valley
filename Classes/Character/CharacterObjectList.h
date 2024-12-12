@@ -3,7 +3,7 @@
  * File Name:     CharacterObjectList.h
  * File Function: 角色物品栏CharacterObjectList的定义
  * Author:        尹诚成
- * Update Date:   2023/12/05
+ * Update Date:   2023/12/11
  * License:       MIT License
  ****************************************************************/
 
@@ -44,6 +44,12 @@ public:
 	// 获取物品栏状态
 	bool getObjectListStatus();
 
+<<<<<<< Updated upstream
+=======
+	// 获取当前选中的物品索引
+	int getCurrentObjectIndex();
+
+>>>>>>> Stashed changes
 	// 查找指定位置是否有物品
 	ObjectListNode findObjectAtPosition(int index);
 
@@ -61,7 +67,11 @@ private:
 
 	// 初始化物品栏
 	void initObjectList();
+<<<<<<< Updated upstream
 	
+=======
+
+>>>>>>> Stashed changes
 	// 捡起物品
 	bool pickUpObject(GameCommonObject targetObject, int objectCount);
 
@@ -72,4 +82,4 @@ private:
 	bool checkObjectListFull();
 };
 
-#endif // !__CHARACTER_OBJECT_LIST_H__
+#endif // !__CHARACTER_OBJECT_LIST_H__ST_H__

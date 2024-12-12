@@ -3,7 +3,7 @@
  * File Name:     PlacementMarkerLayer.cpp
  * File Function: 放置标记层类PlacementMarkerLayer的实现
  * Author:        尹诚成
- * Update Date:   2024/12/07
+ * Update Date:   2024/12/11
  * License:       MIT License
  ****************************************************************/
 
@@ -30,7 +30,11 @@ void PlacementMarkerLayer::showPlacementMarker()
     if (objectListStatus) {
         for (int i = 0; i < OBJECT_LIST_ROWS; i++) {
             for (int j = 0; j < OBJECT_LIST_COLS; j++) {
+<<<<<<< Updated upstream
                 if (_character->findObjectAtPosition(i * OBJECT_LIST_COLS + j).count==0) {
+=======
+                if (_character->findObjectAtPosition(i * OBJECT_LIST_COLS + j).count == 0) {
+>>>>>>> Stashed changes
                     createPlacementMarker(i * OBJECT_LIST_COLS + j);
                 }
             }

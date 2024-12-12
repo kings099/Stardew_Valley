@@ -3,7 +3,7 @@
  * File Name:     PlacementMarkerLayer.h
  * File Function: 放置标记层类PlacementMarkerLayer的定义
  * Author:        尹诚成
- * Update Date:   2024/12/07
+ * Update Date:   2024/12/11
  * License:       MIT License
  ****************************************************************/
 
@@ -30,7 +30,11 @@ public:
 
 private:
     // 创建放置标记
+<<<<<<< Updated upstream
     void createPlacementMarker(const int &index);
+=======
+    void createPlacementMarker(const int& index);
+>>>>>>> Stashed changes
     Character* _character; // 角色对象
 };
 

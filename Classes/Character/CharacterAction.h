@@ -3,7 +3,7 @@
  * File Name:     CharacterAction.h
  * File Function: CharacterAction类的定义
  * Author:        尹诚成
- * Update Date:   2023/12/07
+ * Update Date:   2023/12/11
  * License:       MIT License
  ****************************************************************/
 #pragma once
@@ -14,8 +14,11 @@
 #ifndef _CHARACTER_ACTION_H_
 #define _CHARACTER_ACTION_H_
 
-class CharacterAction : public CharacterObjectList,public CharacterMove {
+class CharacterAction : public CharacterObjectList, public CharacterMove {
 public:
+	// 按下鼠标事件触发函数
+	void onMouseDown(cocos2d::Event* event);
+
 
 protected:
 	int _farmExperience;		// 耕种技能经验值

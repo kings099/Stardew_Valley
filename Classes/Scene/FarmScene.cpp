@@ -11,8 +11,12 @@
 #include "../Classes/MenuImage/HoverMenuItemImage.h"
 #include "../Classes/Layer/UILayer.h"
 #include "../Classes/Manager/TimeManager.h"
+<<<<<<< Updated upstream
 #include "../Classes/Layer/TimeManagerUI.h"
 
+=======
+#include "Control/MapSwitchManager.h"
+>>>>>>> Stashed changes
 USING_NS_CC;
 
 Scene* FarmScene::createScene()
@@ -53,7 +57,16 @@ bool FarmScene::init()
     this->addChild(farmMap, 0); // 地图置于最底层
 
     // 加载角色
+<<<<<<< Updated upstream
     character = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png");
+=======
+    /*character->destroyInstance();*/
+    character = Character::getInstance("../Resources/Characters/Elimy/ElimyDown1.png");
+    this->addChild(character, 1); // 角色位于地图之上
+    character->pickUpObject(GAME_TOOL_OBJECTS_ATTRS[0], 1);
+    character->pickUpObject(GAME_TOOL_OBJECTS_ATTRS[1], 1);
+    character->pickUpObject(GAME_TOOL_OBJECTS_ATTRS[2], 1);
+>>>>>>> Stashed changes
 
     this->addChild(character, 1); // 角色位于地图之上
     character->pickUpObject(GAME_TOOL_OBJECTS_ATTRS[0],1);
@@ -64,7 +77,28 @@ bool FarmScene::init()
     // 创建视角控制器
     viewController = new GameViewController(character, farmMap);
     this->addChild(viewController, 2); // 控制器无需渲染，层级不重要
+<<<<<<< Updated upstream
 
+=======
+    
+    // 创建交互控制器 
+    auto interaction = InteractionManager::create(character, farmMap);
+    this->addChild(interaction);
+
+    //创建场景转换器
+    auto mapSwitchManager = MapSwitchManager::create(character, farmMap, viewController, interaction);
+    this->addChild(mapSwitchManager);
+    this->schedule([this, mapSwitchManager, interaction](float deltaTime) {
+        Vec2 characterWorldPos = character->getPosition();
+        std::string targetMapFile;
+        interaction->updateSurroundingTiles(characterWorldPos);
+        // 检测传送点
+        if (interaction->checkTeleport(characterWorldPos, targetMapFile)) {
+            CCLOG("Teleport triggered to map: %s", targetMapFile.c_str());
+            mapSwitchManager->switchMap(targetMapFile, 0);
+        }
+        }, "CheckTeleportUpdate");
+>>>>>>> Stashed changes
     // 启动时间管理器的计时
     TimeManager::getInstance()->startUpdating();
 
@@ -72,7 +106,10 @@ bool FarmScene::init()
     Node* uiContainer = Node::create();
     uiContainer->setPosition(Vec2(0, 0));  // 设置为屏幕的原点
     this->addChild(uiContainer, 100);  // 添加到最上层
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     uiLayer = UILayer::create();
     uiContainer->addChild(uiLayer);
 

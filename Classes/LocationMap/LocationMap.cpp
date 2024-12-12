@@ -3,7 +3,7 @@
  * File Name:     LocationMap.cpp
  * File Function: LocationMap类的实现
  * Author:        尹诚成
- * Update Date:   2024/12/07
+ * Update Date:   2024/12/11
  * License:       MIT License
  ****************************************************************/
 
@@ -36,7 +36,11 @@ LocationMap::LocationMap()
 {
     for (int i = 0; i < OBJECT_LIST_ROWS; i++) {
         for (int j = 0; j < OBJECT_LIST_COLS; j++) {
+<<<<<<< Updated upstream
             _openedlocationMap[i*OBJECT_LIST_COLS + j] = cocos2d::Vec2(OPEN_OBJECT_LIST_START_X + j * OBJECT_LIST_NODE_HORIZONTAL_INTERVAL, OPEN_OBJECT_LIST_START_Y - i * OBJECT_LIST_NODE_VERTICAL_INTERVAL);
+=======
+            _openedlocationMap[i * OBJECT_LIST_COLS + j] = cocos2d::Vec2(OPEN_OBJECT_LIST_START_X + j * OBJECT_LIST_NODE_HORIZONTAL_INTERVAL, OPEN_OBJECT_LIST_START_Y - i * OBJECT_LIST_NODE_VERTICAL_INTERVAL);
+>>>>>>> Stashed changes
         }
     }
     for (int i = 0; i < OBJECT_LIST_COLS; i++) {

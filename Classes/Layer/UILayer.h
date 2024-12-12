@@ -3,7 +3,7 @@
  * File Name:     UILayer.h
  * File Function: UI界面UILayer类的定义
  * Author:        达思睿，尹诚成
- * Update Date:   2024/12/9
+ * Update Date:   2024/12/11
  * License:       MIT License
  ****************************************************************/
 #pragma once
@@ -74,8 +74,13 @@ private:
 	cocos2d::Sprite* selectObjectSpriteMarker[OBJECT_LIST_COLS];					// 选中物品的标记指针
 	cocos2d::Sprite* nearestPlacementMarker;										// 最近放置标记指针
 	cocos2d::Sprite* selectedObjectSprite;											// 当前选中的对象
+<<<<<<< Updated upstream
 	HoverMenuItemImage *deleteObjectButton;											// 删除物品按钮
 	HoverMenuItemImage *closeObjectListButton;										// 关闭物品栏按钮
+=======
+	HoverMenuItemImage* deleteObjectButton;											// 删除物品按钮
+	HoverMenuItemImage* closeObjectListButton;										// 关闭物品栏按钮
+>>>>>>> Stashed changes
 	PlacementMarkerLayer* placementMarkerLayer;										// 放置标记层类指针
 	bool objectListStatus;															// 物品栏状态
 	bool lastObjectListStatus;														// 上一次物品栏状态

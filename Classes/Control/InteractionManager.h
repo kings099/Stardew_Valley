@@ -17,6 +17,7 @@
 class InteractionManager : public cocos2d::Ref
 {
 public:
+<<<<<<< Updated upstream
 
     static InteractionManager* create(Character* character, FarmMap* farmMap);
     virtual bool init(Character* character, FarmMap* farmMap);
@@ -37,7 +38,12 @@ public:
     // void waterAtPos(const cocos2d::Vec2& worldPos);
 
 protected:
+=======
+    // 构造函数
+>>>>>>> Stashed changes
     InteractionManager();
+
+    // 析构函数
     ~InteractionManager();
     // 获取周围9格（包括当前所在格）瓦片信息
     std::vector<std::tuple<std::string, int, cocos2d::ValueMap>> getSurroundingTilesInfo(const cocos2d::Vec2& worldPos);

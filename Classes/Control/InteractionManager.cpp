@@ -9,6 +9,7 @@
 #include "InteractionManager.h"
 USING_NS_CC;
 
+<<<<<<< Updated upstream
 InteractionManager::InteractionManager() : _character(nullptr), _farmMap(nullptr)
 {}
 
@@ -17,6 +18,20 @@ InteractionManager::~InteractionManager()
 
 InteractionManager* InteractionManager::create(Character* character, FarmMap* gameMap)
 {
+=======
+// 构造函数
+InteractionManager::InteractionManager() : _character(nullptr), _gameMap(nullptr) {
+    //CCLOG("InteractionManager constructed: _character=%p, _gameMap=%p", _character, _gameMap);
+}
+
+// 析构函数
+InteractionManager::~InteractionManager() {
+    //CCLOG("InteractionManager destructed at %p", this);
+}
+
+// 创建交互管理器实例
+InteractionManager* InteractionManager::create(Character* character, GameMap* gameMap) {
+>>>>>>> Stashed changes
     InteractionManager* ret = new (std::nothrow) InteractionManager();
     if (ret && ret->init(character, gameMap))
     {
@@ -27,8 +42,17 @@ InteractionManager* InteractionManager::create(Character* character, FarmMap* ga
     return nullptr;
 }
 
+<<<<<<< Updated upstream
 bool InteractionManager::init(Character* character, FarmMap* gameMap)
 {
+=======
+// 初始化交互管理器
+bool InteractionManager::init(Character* character, GameMap* gameMap) {
+    if (!Node::init()) {
+        return false;
+    }
+
+>>>>>>> Stashed changes
     CCASSERT(character != nullptr, "Character must not be null");
     CCASSERT(gameMap != nullptr, "GameMap must not be null");
 
@@ -38,17 +62,32 @@ bool InteractionManager::init(Character* character, FarmMap* gameMap)
     return true;
 }
 
+<<<<<<< Updated upstream
 void InteractionManager::updateSurroundingTiles(Vec2& world_pos)
 {
     if (!_farmMap || !_character) return;
+=======
+// 更新角色周围的瓦片信息
+void InteractionManager::updateSurroundingTiles(Vec2& world_pos) {
+    if (!_gameMap || !_character) {
+        CCLOG("InteractionManager: Invalid state. gameMap or character is null.");
+        return;
+    }
+>>>>>>> Stashed changes
 
 
     _surroundingInfo = getSurroundingTilesInfo(world_pos);
 }
 
+<<<<<<< Updated upstream
 bool InteractionManager::isCollidableAtPos(const Vec2& tilePos)
 {
     if (!_farmMap) {
+=======
+// 判断指定瓦片位置是否为不可通行区域
+bool InteractionManager::isCollidableAtPos(const Vec2& tilePos) {
+    if (!_gameMap) {
+>>>>>>> Stashed changes
         CCLOG("wrong map");
         return true;
     }
@@ -76,10 +115,16 @@ bool InteractionManager::isCollidableAtPos(const Vec2& tilePos)
     return false;
 }
 
+<<<<<<< Updated upstream
 std::vector<bool> InteractionManager::getSorroundingCollidable(const Vec2& currentPos) {
     // 获取角色所在的Tile坐标
     Vec2 tile_pos = _farmMap->absoluteToTile(currentPos);
     // 获取周围8个格子加上当前位置，即9个点
+=======
+// 获取角色周围的可通行状态
+std::vector<bool> InteractionManager::getSurroundingCollidable(const Vec2& currentPos) {
+    Vec2 tile_pos = _gameMap->absoluteToTile(currentPos);
+>>>>>>> Stashed changes
     std::vector<Vec2> surroundingCoords = {
         Vec2(tile_pos.x - 1, tile_pos.y - 1), Vec2(tile_pos.x, tile_pos.y - 1), Vec2(tile_pos.x + 1, tile_pos.y - 1),
         Vec2(tile_pos.x - 1, tile_pos.y),   Vec2(tile_pos.x, tile_pos.y),   Vec2(tile_pos.x + 1, tile_pos.y),
@@ -107,9 +152,15 @@ std::vector<bool> InteractionManager::getSorroundingCollidable(const Vec2& curre
     return Moveable;
 }
 
+<<<<<<< Updated upstream
 bool InteractionManager::isFarmlandAtPos(const Vec2& worldPos)
 {
     if (!_farmMap) return false;
+=======
+// 判断指定世界坐标是否为可农耕区域
+bool InteractionManager::checkTeleport(const Vec2& worldPos, std::string& targetMapFile) {
+    if (!_gameMap) return false;
+>>>>>>> Stashed changes
 
     Vec2 tilePos = _farmMap->absoluteToTile(worldPos);
     int GIDBack = _farmMap->getTileGIDAt("back", tilePos);
@@ -124,6 +175,7 @@ bool InteractionManager::isFarmlandAtPos(const Vec2& worldPos)
     return false;
 }
 
+<<<<<<< Updated upstream
 std::vector<std::tuple<std::string, int, ValueMap>> InteractionManager::getSurroundingTilesInfo(const Vec2& worldPos)
 {
     // 获取角色所在的Tile坐标
@@ -153,4 +205,17 @@ std::vector<std::tuple<std::string, int, ValueMap>> InteractionManager::getSurro
     }
 
     return result;
+=======
+// 改变地图
+void InteractionManager::setMap(GameMap* newMap) {
+    if (newMap) {
+        _gameMap = newMap;
+        CCLOG("InteractionManager updated to new map: %p", _gameMap);
+    }
+}
+
+// 获取角色周围的瓦片信息
+const std::vector<TileInfo>& InteractionManager::getSurroundingTiles() const {
+    return _surroundingTiles;
+>>>>>>> Stashed changes
 }
