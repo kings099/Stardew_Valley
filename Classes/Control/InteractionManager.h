@@ -14,12 +14,24 @@
 #include "Character/Character.h"
 #include "Maps/GameMap.h"
 #include <vector>
-#include <tuple>
 
- // 交互管理器类，用于管理角色与地图之间的交互逻辑
+enum TileType {
+    Grass,      // 草
+    Tree,       // 树木
+    Stone,      // 石头
+    Water,      // 水
+    Soil,       // 可耕种土地
+    Other
+};
+
+struct TileInfo {
+    TileType type;
+    cocos2d::Vec2 tilePos;  // 瓦片坐标
+    bool isObstacle;        // 是否为障碍物
+};
+
 class InteractionManager : public cocos2d::Node {
 public:
-    // 构造函数与析构函数
     InteractionManager();
     ~InteractionManager();
 
@@ -36,26 +48,25 @@ public:
     bool isCollidableAtPos(const cocos2d::Vec2& tilePos);
 
     // 获取角色周围的可通行状态
-    // 返回一个包含9个布尔值的向量，对应角色当前位置及周围8个瓦片是否可通行
     std::vector<bool> getSurroundingCollidable(const cocos2d::Vec2& currentPos);
 
     // 判断指定世界坐标是否为可农耕区域
     bool isFarmlandAtPos(const cocos2d::Vec2& worldPos);
 
-    // 获取角色周围瓦片的详细信息
-    // 返回包含层名称、GID、属性的元组列表
-    std::vector<std::tuple<std::string, int, cocos2d::ValueMap>> getSurroundingTilesInfo(const cocos2d::Vec2& worldPos);
-
     // 检查角色是否站在传送点上
-    // 如果是传送点，返回目标地图文件路径
     bool checkTeleport(const cocos2d::Vec2& worldPos, std::string& targetMapFile);
 
     // 改变地图
     void setMap(GameMap* newMap);
 
+    // 获取角色周围的瓦片信息
+    const std::vector<TileInfo>& getSurroundingTiles() const;
+
 private:
     Character* _character;         // 当前角色对象的引用
     GameMap* _gameMap;             // 当前地图对象的引用
     std::vector<std::tuple<std::string, int, cocos2d::ValueMap>> _surroundingInfo; // 缓存的周围瓦片信息
+    std::vector<TileInfo> _surroundingTiles; // 储存角色周围 9 格瓦片的信息
 };
-#endif // __INTERACTION_MANAGER_H__
+
+#endif // INTERACTION_MANAGER_H

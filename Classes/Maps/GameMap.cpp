@@ -111,34 +111,4 @@ cocos2d::ValueMap GameMap::getTilePropertiesForGID(int GID)
 }
 
 
-//std::vector<TileInfo> GameMap::getAllTeleportTiles()
-//{
-//    std::vector<TileInfo> teleportTiles;
-//
-//    for (auto& layer : ->getLayers())
-//    {
-//        auto tileLayer = dynamic_cast<TMXLayer*>(layer);
-//        if (!tileLayer) continue;
-//
-//        Size layerSize = tileLayer->getLayerSize();
-//        for (int x = 0; x < layerSize.width; ++x)
-//        {
-//            for (int y = 0; y < layerSize.height; ++y)
-//            {
-//                Vec2 tilePos(x, y);
-//                int GID = tileLayer->getTileGIDAt(tilePos);
-//                ValueMap properties = _tile_map->getPropertiesForGID(GID);
-//
-//                if (properties.find("teleportID") != properties.end())
-//                {
-//                    TileInfo info;
-//                    info.position = tilePos;
-//                    info.properties = properties;
-//                    teleportTiles.push_back(info);
-//                }
-//            }
-//        }
-//    }
-//
-//    return teleportTiles;
-//}
+
