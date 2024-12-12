@@ -37,6 +37,9 @@
     <Filter Include="Resources">
       <UniqueIdentifier>{4848dd74-7c17-4b7b-99d9-3960fe0b8ac7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\Crops">
+      <UniqueIdentifier>{6a470c71-4fc6-4d67-bd0c-1febd9b0fb20}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Classes\CursorAndBUutton\HoverCursor.h" />
@@ -109,6 +112,12 @@
     <ClInclude Include="..\Classes\Control\MapSwitchManager.h">
       <Filter>Classes\Control</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\Crops\CropData.h">
+      <Filter>Classes\Crops</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Crops\Crops.h">
+      <Filter>Classes\Crops</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\CursorAndBUutton\HoverCursor.cpp" />
@@ -174,6 +183,9 @@
     </ClCompile>
     <ClCompile Include="..\Classes\Control\MapSwitchManager.cpp">
       <Filter>Classes\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Crops\Crops.cpp">
+      <Filter>Classes\Crops</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
