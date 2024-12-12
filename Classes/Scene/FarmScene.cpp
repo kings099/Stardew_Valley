@@ -71,7 +71,7 @@ bool FarmScene::init()
     this->schedule([this, mapSwitchManager, interaction](float deltaTime) {
         Vec2 characterWorldPos = character->getPosition();
         std::string targetMapFile;
-
+        interaction->updateSurroundingTiles(characterWorldPos);
         // 检测传送点
         if (interaction->checkTeleport(characterWorldPos, targetMapFile)) {
             CCLOG("Teleport triggered to map: %s", targetMapFile.c_str());
