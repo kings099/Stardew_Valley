@@ -16,14 +16,15 @@ USING_NS_CC;
 // 初始化放置标记层
 bool PlacementMarkerLayer::init()
 {
-    if (!Layer::init()&& (_character = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png"))!= nullptr) {
+    if (!Layer::init()) {
         return false;
     }
+    _character = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png");
     return true;
 }
 
 // 显示放置标记
-void PlacementMarkerLayer::showPlacementMarker(const std::vector<ObjectListNode> objectList)
+void PlacementMarkerLayer::showPlacementMarker()
 {
     const auto objectListStatus = _character->getObjectListStatus();
     if (objectListStatus) {
@@ -40,8 +41,8 @@ void PlacementMarkerLayer::showPlacementMarker(const std::vector<ObjectListNode>
 // 创建放置标记
 void PlacementMarkerLayer::createPlacementMarker(const int& index)
 {
-    Sprite* placementMarker = Sprite::create("../Resources/Mouse/AvailablePlacementMarker.png");
-    Vec2 coordinate = LocationMap::getInstance().getLocationMap().at(index);
+    Sprite* placementMarker = Sprite::create("../Resources/UI/PlacementMarker.png");
+    const Vec2 coordinate = LocationMap::getInstance().getLocationMap().at(index);
     placementMarker->setPosition(coordinate);
     this->addChild(placementMarker);
 }

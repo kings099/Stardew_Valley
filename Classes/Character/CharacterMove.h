@@ -30,6 +30,9 @@ public:
     // 获取角色当前位置
     cocos2d::Vec2 getPosition();
 
+    // 设置角色位置
+    void setPosition(const cocos2d::Vec2& position);
+
     // 强制停止角色移动
     void stopMove();
 protected:
@@ -39,6 +42,7 @@ protected:
     cocos2d::Vec2 updatePosition(float deltaTime);
 private:
     cocos2d::Vector<cocos2d::SpriteFrame*> _frames;      // 角色动画帧
+
     float _width;                                        // 角色宽度
     float _height;                                       // 角色高度
     float _moveSpeed;                                    // 角色速度

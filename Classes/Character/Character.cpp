@@ -27,6 +27,7 @@ Character::Character(const std::string& filename){
 
     // 创建精灵并设置初始位置
     _character = Sprite::create(filename);
+    _character->setScale(2.0);
     _character->setPosition(Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y));
     this->cocos2d::Node::addChild(_character);
 }

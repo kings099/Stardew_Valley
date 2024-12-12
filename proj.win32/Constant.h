@@ -42,13 +42,7 @@ constexpr float FARM_MAP_SCALE = 2.0f;										// µØÍ¼Ëõ·Å´óÐ¡
 // ÎïÆ·À¸ÉèÖÃ
 constexpr int OBJECT_LIST_ROWS = 3;											// ÎïÆ·À¸ÐÐÊý
 constexpr int OBJECT_LIST_COLS = 12;										// ÎïÆ·À¸ÁÐÊý
-constexpr int CLOSE_OBJECT_LIST_START_X = 729;								// ÎïÆ·À¸(¹Ø±Õ×´Ì¬)ÆðÊ¼Î»ÖÃµÄX×ø±ê
-constexpr int CLOSE_OBJECT_LIST_START_Y = 1056;								// ÎïÆ·À¸(¹Ø±Õ×´Ì¬)ÆðÊ¼Î»ÖÃµÄY×ø±ê
-constexpr int OPEN_OBJECT_LIST_START_X = 729;								// ÎïÆ·À¸(¿ªÆô×´Ì¬)ÆðÊ¼Î»ÖÃµÄX×ø±ê
-constexpr int OPEN_OBJECT_LIST_START_Y = 582;								// ÎïÆ·À¸(¿ªÆô×´Ì¬)ÆðÊ¼Î»ÖÃµÄY×ø±ê
-constexpr int OBJECT_LIST_NODE_HORIZONTAL_INTERVAL = 42;					// ÎïÆ·À¸ÎïÆ·¸ñ×ÓË®Æ½¼ä¾à
-constexpr int OBJECT_LIST_NODE_VERTICAL_INTERVAL = 42;						// ÎïÆ·À¸ÎïÆ·¸ñ×Ó´¹Ö±¼ä¾à
-constexpr float OBJECT_NODE_SCALE = 2.0f;									// ÎïÆ·Ëõ·Å±ÈÀý
+
 
 
 // UI ½çÃæÉèÖÃ
@@ -58,15 +52,26 @@ constexpr int MAP_LAYER_GRADE = 0;                                          // µ
 constexpr int CHARACTER_LAYER_GRADE = 1;                                    // ½ÇÉ«²ã¼¶
 constexpr int UI_LAYER_GRADE = 2;                                           // UI²ã¼¶
 constexpr int OBJECT_LAYER_GRADE = 3;                                       // ÎïÆ·²ã¼¶
-constexpr float BUTTON_SIZE_RATIO = 2.0f;                                   // °´Å¥Ëõ·Å±ÈÀý
 constexpr float ENLARGEMENT_RATIO = 1.2f;									// °´Å¥¶¯»­Ëõ·Å±ÈÀý
 constexpr float ENLARGEMENT_TIME = 0.15f;									// °´Å¥¶¯»­Ëõ·ÅÊ±¼ä
+constexpr int CLOSE_OBJECT_LIST_START_X = 729;								// ÎïÆ·À¸(¹Ø±Õ×´Ì¬)ÆðÊ¼Î»ÖÃµÄX×ø±ê
+constexpr int CLOSE_OBJECT_LIST_START_Y = 1056;								// ÎïÆ·À¸(¹Ø±Õ×´Ì¬)ÆðÊ¼Î»ÖÃµÄY×ø±ê
+constexpr int OPEN_OBJECT_LIST_START_X = 729;								// ÎïÆ·À¸(¿ªÆô×´Ì¬)ÆðÊ¼Î»ÖÃµÄX×ø±ê
+constexpr int OPEN_OBJECT_LIST_START_Y = 582;								// ÎïÆ·À¸(¿ªÆô×´Ì¬)ÆðÊ¼Î»ÖÃµÄY×ø±ê
+constexpr int OBJECT_LIST_NODE_HORIZONTAL_INTERVAL = 42;					// ÎïÆ·À¸ÎïÆ·¸ñ×ÓË®Æ½¼ä¾à
+constexpr int OBJECT_LIST_NODE_VERTICAL_INTERVAL = 42;						// ÎïÆ·À¸ÎïÆ·¸ñ×Ó´¹Ö±¼ä¾à
+constexpr float OBJECT_NODE_SCALE = 2.0f;									// ÎïÆ·Ëõ·Å±ÈÀý
+
+constexpr int OPEN_OBJIEC_LIST_DELETE_BUTTON_LEFT_BOUDARY = 1272;			// ÎïÆ·À¸É¾³ý°´Å¥×ó±ß½ç
+constexpr int OPEN_OBJIEC_LIST_DELETE_BUTTON_RIGHT_BOUDARY = 1298;			// ÎïÆ·À¸É¾³ý°´Å¥ÓÒ±ß½ç
+constexpr int OPEN_OBJIEC_LIST_DELETE_BUTTON_TOP_BOUDARY = 512;				// ÎïÆ·À¸É¾³ý°´Å¥ÉÏ±ß½ç
+constexpr int OPEN_OBJIEC_LIST_DELETE_BUTTON_BOTTOM_BOUDARY = 568;			// ÎïÆ·À¸É¾³ý°´Å¥ÏÂ±ß½ç
 
 
-const int SECONDS_IN_A_DAY = 86400;                                         // Ò»ÌìµÄÃëÊý
-const float TIME_SCALE = 3600.0f;                                           // ÓÎÏ·Ê±¼äËõ·Å±ÈÀý£¬ÏÖÊµ1Ãë=ÓÎÏ·1·ÖÖÓ
-const int HOURS_IN_A_DAY = 24;                                              // Ò»Ìì24Ð¡Ê±
-const int SECONDS_IN_A_HOUR = 3600;                                         // Ã¿Ð¡Ê±60·ÖÖÓ
-const int SEASONS_CHANGE_PERIOD = 30;                                       // Ã¿30ÌìÒ»¸ö¼¾½Ú±ä»¯
-const int SECONDS_IN_A_MIN = 60;												
+constexpr int SECONDS_IN_A_DAY = 86400;                                         // Ò»ÌìµÄÃëÊý
+constexpr float TIME_SCALE = 3600.0f;                                           // ÓÎÏ·Ê±¼äËõ·Å±ÈÀý£¬ÏÖÊµ1Ãë=ÓÎÏ·1·ÖÖÓ
+constexpr int HOURS_IN_A_DAY = 24;                                              // Ò»Ìì24Ð¡Ê±
+constexpr int SECONDS_IN_A_HOUR = 3600;                                         // Ã¿Ð¡Ê±60·ÖÖÓ
+constexpr int SEASONS_CHANGE_PERIOD = 30;                                       // Ã¿30ÌìÒ»¸ö¼¾½Ú±ä»¯
+constexpr int SECONDS_IN_A_MIN = 60;
 #endif // !_CONSTANT_H_

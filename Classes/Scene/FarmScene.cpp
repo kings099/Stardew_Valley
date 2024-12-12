@@ -54,11 +54,13 @@ bool FarmScene::init()
 
     // 加载角色
     character = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png");
+
     this->addChild(character, 1); // 角色位于地图之上
     character->pickUpObject(GAME_TOOL_OBJECTS_ATTRS[0],1);
     character->pickUpObject(GAME_TOOL_OBJECTS_ATTRS[1], 1);
     character->pickUpObject(GAME_TOOL_OBJECTS_ATTRS[2], 1);
 
+    character->setPosition(Vec2(100, 100)); // 设置角色初始位置
     // 创建视角控制器
     viewController = new GameViewController(character, farmMap);
     this->addChild(viewController, 2); // 控制器无需渲染，层级不重要
@@ -74,7 +76,7 @@ bool FarmScene::init()
     uiLayer = UILayer::create();
     uiContainer->addChild(uiLayer);
 
-    // 创建键盘监视事件
+    // 创建键盘事件监听器
     auto listener = EventListenerKeyboard::create();
     listener->onKeyPressed = [this](cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event) {
         this->character->onKeyPressed(keyCode, event);
@@ -84,6 +86,11 @@ bool FarmScene::init()
         this->character->onKeyReleased(keyCode, event);
         };
     _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
+
+    //// 创建鼠标事件监听器
+    //auto mouseListener = EventListenerMouse::create();
+    //mouseListener->onMouseDown = [this](cocos2d::Event* event) {
+    //    this->character->onMouseDown(event);
 
     // 设置更新回调
      this->schedule([this, uiContainer](float deltaTime) {

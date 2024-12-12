@@ -14,10 +14,14 @@
 #include "Classes/Character/Character.h"
 #include "Classes/Manager/TimeManager.h"
 #include "Classes/MenuImage/HoverMenuItemImage.h"
+#include "Classes/Layer/PlacementMarkerLayer.h"
 #include "../proj.win32/ObjectConstant.h"
 
 class UILayer : public cocos2d::Layer {
 public:
+	// 构造函数
+	UILayer();
+
 	// 析构函数
 	~UILayer();
 
@@ -25,13 +29,13 @@ public:
 	virtual bool init();
 
 	// 按下鼠标事件触发函数
-	void onMouseDown(cocos2d::Event* event, cocos2d::Sprite* championSprite);
+	void onMouseDown(cocos2d::Event* event);
 
 	// 移动鼠标事件触发函数
-	void onMouseMove(cocos2d::Event* event, cocos2d::Sprite* championSprite);
+	void onMouseMove(cocos2d::Event* event);
 
 	// 释放鼠标事件触发函数
-	void onMouseUp(cocos2d::Event* event, cocos2d::Sprite* championSprite);
+	void onMouseUp(cocos2d::Event* event);
 
 	// 按下键盘事件触发函数
 	void onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event);
@@ -44,9 +48,6 @@ public:
 
 	// 显示物品图片
 	void showObjectImage();
-
-	// 显示当前选中的物品
-	void showSelectedObject(cocos2d::Vec2 position);
 
 	// 初始化时间显示器
 	void initializeTimeDisplay();
@@ -61,21 +62,30 @@ public:
 	CREATE_FUNC(UILayer);
 
 private:
-	Character* character;															// 角色层
+	Character* character;															// 角色指
 	cocos2d::Size visibleSize;														// 可见区域的大小
-	cocos2d::Label* timeLabel1;														// 显示星期和日期的标签
-	cocos2d::Label* timeLabel2;														// 显示白天/晚上和小时的标签
-	cocos2d::Sprite* timeDisplayLayer;												// 用作为UI背景的图片
-	cocos2d::Sprite* objectListLayer = nullptr;										// 物品栏状态
-	cocos2d::Sprite* closedObjectSpriteImage[OBJECT_LIST_COLS];						// 物品栏关闭时显示的物品图片
-	cocos2d::Sprite* openedObjectSpriteImage[OBJECT_LIST_COLS* OBJECT_LIST_ROWS];	// 物品栏打开时显示的物品图片
-	cocos2d::Sprite* selectObjectSpriteMarker[OBJECT_LIST_COLS];							// 选中物品的标记
-	HoverMenuItemImage *deleteObjectButton = nullptr;								// 删除物品按钮
-	HoverMenuItemImage *closeObjectListButton = nullptr;							// 关闭物品栏按钮
+	cocos2d::Label* timeLabel1;														// 显示星期和日期的标签指针
+	cocos2d::Label* timeLabel2;														// 显示白天/晚上和小时的标签指针
+	cocos2d::Sprite* timeDisplayLayer;												// 用作为时间显示器背景的图片指针
+	cocos2d::Sprite* closedobjectListLayer;											// 物品栏关闭状态图片指针
+	cocos2d::Sprite* openedobjectListLayer;											// 物品栏打开状态图片指针
+	cocos2d::Sprite* closedObjectSpriteImage[OBJECT_LIST_COLS];						// 物品栏关闭时显示的物品图片指针
+	cocos2d::Sprite* openedObjectSpriteImage[OBJECT_LIST_COLS * OBJECT_LIST_ROWS];	// 物品栏打开时显示的物品图片指针
+	cocos2d::Sprite* selectObjectSpriteMarker[OBJECT_LIST_COLS];					// 选中物品的标记指针
+	cocos2d::Sprite* nearestPlacementMarker;										// 最近放置标记指针
+	cocos2d::Sprite* selectedObjectSprite;											// 当前选中的对象
+	HoverMenuItemImage *deleteObjectButton;											// 删除物品按钮
+	HoverMenuItemImage *closeObjectListButton;										// 关闭物品栏按钮
+	PlacementMarkerLayer* placementMarkerLayer;										// 放置标记层类指针
+	bool objectListStatus;															// 物品栏状态
 	bool lastObjectListStatus;														// 上一次物品栏状态
-	int lastSelectedObjectIndex;
+	int lastSelectedObjectIndex;													// 上一次物品栏索引
+	int startLocation;																// 起始位置
 	// 寻找最近可放置坐标
 	cocos2d::Vec2 findNearestPoint(cocos2d::Sprite* objectSprite);
+
+	// 设置选中物品标记框的显示状态
+	void setSelectObjectSpriteMarker(int index, bool show);
 };
 
 #endif // !_UILAYER_H_

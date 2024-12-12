@@ -23,7 +23,7 @@ public:
     virtual bool init();
 
     // 显示放置标记
-    void showPlacementMarker(const std::vector<ObjectListNode> objectList);
+    void showPlacementMarker();
 
     // 实现 PlacementMarkerLayer 类的 create 方法
     CREATE_FUNC(PlacementMarkerLayer);

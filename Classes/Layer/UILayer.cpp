@@ -12,14 +12,44 @@
 
 USING_NS_CC;
 
+// 构造函数
+UILayer::UILayer():
+    timeLabel1(nullptr),
+    timeLabel2(nullptr),
+    timeDisplayLayer(nullptr),
+    deleteObjectButton(nullptr),
+    closeObjectListButton(nullptr),
+    selectedObjectSprite(nullptr),
+    lastSelectedObjectIndex(0),
+    objectListStatus(false),
+    lastObjectListStatus(false),
+    startLocation(-1),
+    placementMarkerLayer(nullptr),
+    nearestPlacementMarker(nullptr)
+{
+    character = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png");
+    visibleSize = Director::getInstance()->getVisibleSize();
+    std::fill_n(selectObjectSpriteMarker, OBJECT_LIST_COLS, nullptr);
+    std::fill_n(closedObjectSpriteImage, OBJECT_LIST_COLS, nullptr);
+    std::fill_n(openedObjectSpriteImage, OBJECT_LIST_COLS * OBJECT_LIST_ROWS, nullptr);
+
+    // 鼠标事件监听器
+    auto mouseListener = cocos2d::EventListenerMouse::create();
+    mouseListener->onMouseDown = CC_CALLBACK_1(UILayer::onMouseDown, this);
+    mouseListener->onMouseMove = CC_CALLBACK_1(UILayer::onMouseMove, this);
+    mouseListener->onMouseUp = CC_CALLBACK_1(UILayer::onMouseUp, this);
+    this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(mouseListener, this);
+}
 
 // 析构函数
 UILayer::~UILayer() {
-    delete character;
-    delete objectListLayer;
-    delete timeLabel1;
-    delete timeLabel2;
-    delete timeDisplayLayer;
+    //delete character;
+    //delete objectListLayer;
+    //delete timeLabel1;
+    //delete timeLabel2;
+    //delete timeDisplayLayer;
+    //delete deleteObjectButton;
+    //delete closeObjectListButton;
 }
 
 // 初始化UI层
@@ -27,38 +57,23 @@ bool UILayer::init() {
     if (!Layer::init()) {
         return false;
     }
-    character = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png");
-
-    //selectObjectSpriteMarker = Sprite::create("../Resources/UI/SelectionMarker.png");
-    visibleSize = Director::getInstance()->getVisibleSize();
     initializeObjectList();
     showObjectImage();
-  
     initializeTimeDisplay();
     return true;
-}
-
-// 按下键盘事件触发函数
-void UILayer::onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event) {
-    const auto seletedObjectInfo = character->getCurrentObject();
-    const int index = seletedObjectInfo.index;
-    const auto objectListStatus = character->getObjectListStatus();
-    if (!objectListStatus) {
-        selectObjectSpriteMarker[index]->setVisible(true);
-    }
-    else {
-        selectObjectSpriteMarker[index]->setVisible(false);
-    }
-    selectObjectSpriteMarker[lastSelectedObjectIndex]->setVisible(false);
-    lastSelectedObjectIndex = index;
 }
 
 // 初始化物品栏
 void UILayer::initializeObjectList() {
     // 创建物品栏背景
-    objectListLayer = Sprite::create("../Resources/UI/ObjectListRow.png");
-    objectListLayer->setPosition(Vec2(visibleSize.width / 2, visibleSize.height - objectListLayer->getContentSize().height / 2));
-    this->addChild(objectListLayer, UI_LAYER_GRADE);
+    closedobjectListLayer = Sprite::create("../Resources/UI/ObjectListRow.png");
+    closedobjectListLayer->setPosition(Vec2(visibleSize.width / 2, visibleSize.height - closedobjectListLayer->getContentSize().height / 2));
+    this->addChild(closedobjectListLayer, UI_LAYER_GRADE);
+
+    openedobjectListLayer = Sprite::create("../Resources/UI/ObjectList.png");
+    openedobjectListLayer->setPosition(Vec2(visibleSize.width / 2, visibleSize.height / 2));
+    this->addChild(openedobjectListLayer, UI_LAYER_GRADE);
+    openedobjectListLayer->setVisible(false);
 
     // 创建物品栏选中框
     for (int i = 0; i < OBJECT_LIST_COLS; i++) {
@@ -68,7 +83,6 @@ void UILayer::initializeObjectList() {
         selectObjectSpriteMarker[i]->setVisible(false);
     }
     selectObjectSpriteMarker[0]->setVisible(true);
-    lastSelectedObjectIndex = 0;
 
     // 创建删除物品按钮
     deleteObjectButton = HoverMenuItemImage::create(
@@ -91,33 +105,34 @@ void UILayer::initializeObjectList() {
     closeObjectListButton->setVisible(false);
 }
 
+// 更新物品栏
 void UILayer::updateObjectList() {
     // 获取角色的物品栏状态和窗口大小
     const auto objectListStatus = character->getObjectListStatus();
-    if (objectListLayer != nullptr) {
-        this->removeChild(objectListLayer);
-    }
 
     // 根据角色的物品栏状态初始化物品栏背景
     if (!objectListStatus) {
-        objectListLayer = Sprite::create("../Resources/UI/ObjectListRow.png");
-        objectListLayer->setPosition(Vec2(visibleSize.width / 2, visibleSize.height - objectListLayer->getContentSize().height / 2));
+        closedobjectListLayer->setVisible(true);
+        openedobjectListLayer->setVisible(false);
         deleteObjectButton->setVisible(false);
         closeObjectListButton->setVisible(false);
+        const auto objectInfo = character->getCurrentObject();
+        if (objectInfo.index >= OBJECT_LIST_COLS) {
+            character->setCurrentObject(0);
+        }
     }
     else {
-        objectListLayer = Sprite::create("../Resources/UI/ObjectList.png");
-        objectListLayer->setPosition(Vec2(visibleSize.width / 2, visibleSize.height / 2));
+        closedobjectListLayer->setVisible(false);
+        openedobjectListLayer->setVisible(true);
         deleteObjectButton->setVisible(true);
         closeObjectListButton->setVisible(true);
     }
-    this->addChild(objectListLayer, UI_LAYER_GRADE);
     lastObjectListStatus = objectListStatus;
 }
 
 // 显示物品图片
 void UILayer::showObjectImage() {
-    const auto objectListStatus = character->getObjectListStatus();
+    objectListStatus = character->getObjectListStatus();
     if (!objectListStatus) {
         for (int i = 0; i < OBJECT_LIST_COLS; i++) {
             const auto objectInfo = character->findObjectAtPosition(i);
@@ -126,13 +141,13 @@ void UILayer::showObjectImage() {
                 closedObjectSpriteImage[i] = Sprite::create(objectSprite);
                 closedObjectSpriteImage[i]->setPosition(LocationMap::getInstance().getLocationMap().at(i));
                 closedObjectSpriteImage[i]->setScale(OBJECT_NODE_SCALE);
-                this->addChild(closedObjectSpriteImage[i], OBJECT_LAYER_GRADE);  // 物品图片在物品栏上面
+                this->addChild(closedObjectSpriteImage[i], OBJECT_LAYER_GRADE); 
             }
         }
         for (int i = 0; i < OBJECT_LIST_ROWS; i++) {
             for (int j = 0; j < OBJECT_LIST_COLS; j++) {
-                if(openedObjectSpriteImage[i * OBJECT_LIST_COLS + j]!= nullptr)
-                    this->removeChild(openedObjectSpriteImage[i * OBJECT_LIST_COLS + j]);
+                if (openedObjectSpriteImage[i * OBJECT_LIST_COLS + j] != nullptr)
+                    openedObjectSpriteImage[i * OBJECT_LIST_COLS + j]->setVisible(false);
             }
         }
     }
@@ -143,33 +158,172 @@ void UILayer::showObjectImage() {
                 if (objectInfo.count != 0) {
                     const auto objectSprite = objectInfo.objectNode.object->_fileName;
                     openedObjectSpriteImage[i * OBJECT_LIST_COLS + j] = Sprite::create(objectSprite);
-                    openedObjectSpriteImage[i * OBJECT_LIST_COLS + j]->setPosition(LocationMap::getInstance().getLocationMap().at(i* OBJECT_LIST_COLS + j));
+                    openedObjectSpriteImage[i * OBJECT_LIST_COLS + j]->setPosition(LocationMap::getInstance().getLocationMap().at(i * OBJECT_LIST_COLS + j));
                     openedObjectSpriteImage[i * OBJECT_LIST_COLS + j]->setScale(OBJECT_NODE_SCALE);
-                    this->addChild(openedObjectSpriteImage[i * OBJECT_LIST_COLS + j], OBJECT_LAYER_GRADE);  // 物品图片在物品栏上面
+                    this->addChild(openedObjectSpriteImage[i * OBJECT_LIST_COLS + j], OBJECT_LAYER_GRADE);   
                 }
             }
         }
         for (int i = 0; i < OBJECT_LIST_COLS; i++) {
-            if(closedObjectSpriteImage[i]!= nullptr)
-          this->removeChild(closedObjectSpriteImage[i]);
+            if (closedObjectSpriteImage[i] != nullptr)
+                closedObjectSpriteImage[i]->setVisible(false);
         }
     }
 }
 
-// 显示当前选中的物品
-//void UILayer::showSelectedObject(Vec2 position) {
-//    const auto objectListStatus = character->getObjectListStatus();
-//    if (selectObjectSpriteMarker != nullptr ) {
-//        this->removeChild(selectObjectSpriteMarker);
-//    }
-//
-//    if (!objectListStatus) {
-//        selectObjectSpriteMarker = Sprite::create("../Resources/UI/SelectionMarker.png");
-//        const auto seletedObjectInfo = character->getCurrentObject();
-//        selectObjectSpriteMarker->setPosition(position);
-//        this->addChild(selectObjectSpriteMarker, OBJECT_LAYER_GRADE);  
-//    }
-//}
+// 按下鼠标事件触发函数
+void UILayer::onMouseDown(cocos2d::Event* event) {
+    EventMouse* mouseEvent = dynamic_cast<EventMouse*>(event);
+    Vec2 location = mouseEvent->getLocationInView();
+    objectListStatus = character->getObjectListStatus();
+    selectedObjectSprite = nullptr;
+
+    // 当物品栏被打开时才会检测
+    if (objectListStatus) {
+        for (int i = 0; i < OBJECT_LIST_ROWS * OBJECT_LIST_COLS; i++) {
+            const auto sprite = openedObjectSpriteImage[i];
+            //TODO:空指针
+            if (sprite != nullptr) {
+                const Vec2 spritePos = sprite->getPosition();
+                const Size spriteSize = sprite->getContentSize();
+                if (mouseEvent->getMouseButton() == EventMouse::MouseButton::BUTTON_LEFT &&
+                    location.x >= (spritePos.x - spriteSize.width * OBJECT_NODE_SCALE / 2) &&
+                    location.x <= (spritePos.x + spriteSize.width * OBJECT_NODE_SCALE / 2) &&
+                    location.y >= (spritePos.y - spriteSize.height * OBJECT_NODE_SCALE / 2) &&
+                    location.y <= (spritePos.y + spriteSize.height * OBJECT_NODE_SCALE / 2)) {
+                    selectedObjectSprite = sprite;
+                    break;
+                }
+            }
+        }
+    }
+
+    if (selectedObjectSprite) {
+        // 标记选中状态
+        if (objectListStatus) {
+            selectedObjectSprite->setUserData(reinterpret_cast<void*>(1));
+            nearestPlacementMarker = Sprite::create("../Resources/UI/NearestPlacementMarker.png");
+            nearestPlacementMarker->setVisible(false);
+            this->addChild(nearestPlacementMarker, OBJECT_LAYER_GRADE + 1);
+
+            for (const auto& pair : LocationMap::getInstance().getLocationMap()) {
+                if (pair.second.equals(selectedObjectSprite->getPosition())) {
+                    startLocation = pair.first;
+                    break;
+                }
+            }
+            character->setCurrentObject(startLocation);
+
+            // 创建放置标记层
+            placementMarkerLayer = PlacementMarkerLayer::create();
+            placementMarkerLayer->showPlacementMarker();
+            this->addChild(placementMarkerLayer, OBJECT_LAYER_GRADE);
+        }
+    }
+}
+
+// 移动鼠标事件触发函数
+void UILayer::onMouseMove(cocos2d::Event* event) {
+    objectListStatus = character->getObjectListStatus();
+    if (objectListStatus) {
+        if (selectedObjectSprite != nullptr) {
+            if (nearestPlacementMarker != nullptr) {
+                nearestPlacementMarker->setPosition(findNearestPoint(selectedObjectSprite));
+                nearestPlacementMarker->setVisible(true);
+            }
+
+            // 移动物品
+            EventMouse* mouseEvent = dynamic_cast<EventMouse*>(event);
+            Vec2 location = mouseEvent->getLocationInView();
+            if (location.x >= OPEN_OBJIEC_LIST_DELETE_BUTTON_LEFT_BOUDARY &&
+                location.x <= OPEN_OBJIEC_LIST_DELETE_BUTTON_RIGHT_BOUDARY &&
+                location.y >= OPEN_OBJIEC_LIST_DELETE_BUTTON_TOP_BOUDARY &&
+                location.y <= OPEN_OBJIEC_LIST_DELETE_BUTTON_BOTTOM_BOUDARY) {
+                nearestPlacementMarker->setVisible(false);
+            }
+            selectedObjectSprite->setPosition(location);
+        }
+    }
+}
+
+// 释放鼠标事件触发函数
+void UILayer::onMouseUp(cocos2d::Event* event) {
+    objectListStatus = character->getObjectListStatus();
+    if (objectListStatus) {
+        if (selectedObjectSprite != nullptr) {
+            // 取消选中状态
+            selectedObjectSprite->setUserData(nullptr);
+            nearestPlacementMarker->removeFromParent();
+            nearestPlacementMarker = nullptr;
+
+            // 删除当前物品
+            bool isDelete = false;
+            const Vec2 currentPos = selectedObjectSprite->getPosition();
+            if (currentPos.x >= OPEN_OBJIEC_LIST_DELETE_BUTTON_LEFT_BOUDARY &&
+                currentPos.x <= OPEN_OBJIEC_LIST_DELETE_BUTTON_RIGHT_BOUDARY &&
+                currentPos.y >= OPEN_OBJIEC_LIST_DELETE_BUTTON_TOP_BOUDARY &&
+                currentPos.y <= OPEN_OBJIEC_LIST_DELETE_BUTTON_BOTTOM_BOUDARY) {
+                isDelete = true;
+            }
+
+            if (!isDelete) {
+                // 遍历所有可放置位置
+                Vec2 nearestPoint = findNearestPoint(selectedObjectSprite);
+
+                // 确定物品移动目标位置属性
+                int targetLocation = -1;
+                for (const auto& pair : LocationMap::getInstance().getLocationMap()) {
+                    if (pair.second.equals(nearestPoint)) {
+                        targetLocation = pair.first;
+                        break;
+                    }
+                }
+
+                // 更新物品栏
+                character->swapObject(startLocation, targetLocation);
+                cocos2d::Sprite* currentObjectSprite;
+
+                currentObjectSprite = openedObjectSpriteImage[startLocation];
+                openedObjectSpriteImage[startLocation] = nullptr;
+                this->removeChild(openedObjectSpriteImage[startLocation]);
+                openedObjectSpriteImage[targetLocation] = currentObjectSprite;
+                selectedObjectSprite->setPosition(nearestPoint);
+                //this->addChild(openedObjectSpriteImage[targetLocation], OBJECT_LAYER_GRADE); 
+            }
+            else {
+                selectedObjectSprite->setVisible(false);
+                character->deleteCurrentObject();
+            }
+            // 关闭放置标记层
+            this->removeChild(placementMarkerLayer);
+            placementMarkerLayer = nullptr;
+            selectedObjectSprite = nullptr;
+        }
+    }
+}
+
+// 按下键盘事件触发函数
+void UILayer::onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event) {
+    const auto seletedObjectInfo = character->getCurrentObject();
+    const int index = seletedObjectInfo.index;
+    objectListStatus = character->getObjectListStatus();
+    setSelectObjectSpriteMarker(lastSelectedObjectIndex, false);
+    if (!objectListStatus) {
+        setSelectObjectSpriteMarker(index, true);
+        // 有物品丢弃，需要更新物品栏
+        if (keyCode == EventKeyboard::KeyCode::KEY_Q) {
+            if (closedObjectSpriteImage[index] != nullptr) {
+                closedObjectSpriteImage[index]->setVisible(false);
+                this->removeChild(closedObjectSpriteImage[index]);
+                closedObjectSpriteImage[index] = nullptr;
+            }
+        }
+    }
+    else {
+        setSelectObjectSpriteMarker(index, false);
+    }
+    lastSelectedObjectIndex = index;
+}
 
 // 初始化时间显示器
 void UILayer::initializeTimeDisplay() {
@@ -230,8 +384,7 @@ void UILayer::updateTimeDisplay() {
 // 更新UI界面
 void UILayer::update(float deltaTime) {
     // 更新物品栏
-    const auto objectListStatus = character->getObjectListStatus();
-    //CCLOG("objectListStatus = %d, lastObjectListStatus = %d", objectListStatus, lastObjectListStatus);
+    objectListStatus = character->getObjectListStatus();
     if (objectListStatus != lastObjectListStatus) {
         updateObjectList();
         showObjectImage();
@@ -239,6 +392,7 @@ void UILayer::update(float deltaTime) {
     // 更新时间显示器
     updateTimeDisplay();
 }
+
 
 // 寻找最近可放置坐标
 Vec2 UILayer::findNearestPoint(cocos2d::Sprite* objectSprite) {
@@ -253,15 +407,11 @@ Vec2 UILayer::findNearestPoint(cocos2d::Sprite* objectSprite) {
     }
     else {  // 物品栏打开
         for (const auto& point : LocationMap::getInstance().getLocationMap()) {
-            const int currentLocation = point.first;
+            const int currentLocation = point.first;    
             bool isEmpty = true;
-            for (int i = 0; i < OBJECT_LIST_COLS; i++) {
-                for (int j = 0; j < OBJECT_LIST_ROWS; j++) {
-                    const auto objectInfo = character->findObjectAtPosition(i * OBJECT_LIST_ROWS + j);
-                    if (objectInfo.count != 0) {
-                        isEmpty = false;
-                    }
-                }
+            const auto objectInfo = character->findObjectAtPosition(currentLocation);
+            if (objectInfo.count != 0) {
+                isEmpty = false;
             }
             if (isEmpty) {
                 const Vec2& emptyPoint = point.second;
@@ -274,4 +424,12 @@ Vec2 UILayer::findNearestPoint(cocos2d::Sprite* objectSprite) {
         }
     }
     return nearestPoint;
+}
+
+// 设置选中物品标记框的显示状态
+void UILayer::setSelectObjectSpriteMarker(int index, bool show) {
+    if(index >= OBJECT_LIST_COLS)
+        selectObjectSpriteMarker[0]->setVisible(show);
+    else
+        selectObjectSpriteMarker[index]->setVisible(show);
 }

@@ -103,13 +103,14 @@ public:
 // 游戏种子物品属性定义
 class GameSeedObject : public GameObject {
 public:
-    int _level;                             // 解锁种子所需等级
-    Season _season;                         // 种子生长季节
-    std::vector<int> _growthStages;         // 种子每个阶段所需的生长天数
-    int _totalGrowTime;                     // 种子生长总天数
-    int _harvestIndex;                      // 种子收获所得的物品索引
-    int _buyPrice;                          // 种子购买价格
-    int _salePrice;                         // 种子出售价格
+    int _level;                                             // 解锁种子所需等级
+    Season _season;                                         // 种子生长季节
+    std::vector<int> _growthStages;                         // 种子每个阶段所需的生长天数
+    std::vector<std::string> _growthStagesFileNames;        // 种子每个生长阶段的图片资源文件路径
+    int _totalGrowTime;                                     // 种子生长总天数
+    int _harvestIndex;                                      // 种子收获所得的物品索引
+    int _buyPrice;                                          // 种子购买价格
+    int _salePrice;                                         // 种子出售价格
 
     // 构造函数
     GameSeedObject(const std::string& fileName, const std::string& name, GameObjectSkillType type, int level, Season season, std::vector<int> growthStages, int totalGrowTime, int harvestIndex, int buyPrice, int salePrice):
@@ -198,23 +199,23 @@ const std::vector<GameToolObject> GAME_TOOL_OBJECTS_ATTRS = {
     GameToolObject("../Resources/Objects/Tools/", "高级水壶", Farm, 3, 1, 70, Watering)
 };
 
-//const std::vector<GameCommonObject>GAME_COMMON_OBJECTS_ATTRS = {
-//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "初级锄头", Farm, 1, 1, INT_MAX,Plowing)),
-//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "中级锄头", Farm, 2, 1, INT_MAX,Plowing)),
-//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "高级锄头", Farm, 3, 1, INT_MAX,Plowing)),
-//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "初级斧头", Collect, 1, 5, INT_MAX,Cutting)),
-//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "中级斧头", Collect, 2, 4, INT_MAX,Cutting)),
-//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "高级斧头", Collect, 3, 3, INT_MAX,Cutting)),
-//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "初级镐子", Mine, 1, 5, INT_MAX,Mining)),
-//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "中级镐子", Mine, 2, 4, INT_MAX,Mining)),
-//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "高级镐子", Mine, 3, 3, INT_MAX,Mining)),
-//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "初级鱼竿", Fish, 1, 1, INT_MAX,Fishing)),
-//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "中级鱼竿", Fish, 2, 1, INT_MAX,Fishing)),
-//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "高级鱼竿", Fish, 3, 1, INT_MAX,Fishing)),
-//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "初级水壶", Farm, 1, 1, 40,Watering)),
-//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "中级水壶", Farm, 2, 1, 55,Watering)),
-//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "高级水壶", Farm, 3, 1, 70,Watering)),
+//enum GameMapNodeType {
+//    Grass,       // 草地
+//    Tree,        // 树木
+//    Stone,       // 石头
+//    Water,       // 水
+//    Soil,        // 泥土
+//    Sand         // 沙子
+//    //.....
 //};
-
+//
+//struct GameMapNode {
+//    GameMapNodeType type;       // 节点类型
+//    int x, y;                   // 坐标
+//    int layer;                  // 层数
+//    bool isObstacle;            // 是否障碍物
+//    std::vector<GameCommonObject> dropObjects; // 掉落物品
+//    std::vector<int> dropObjectsNum;           // 掉落物品数量
+//};
 
 #endif // _CONSTANT_OBJECT_H_

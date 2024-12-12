@@ -23,7 +23,10 @@ CharacterMove::CharacterMove() :
     _width(CHARACTER_WIDTH),
     _height(CHARACTER_HEIGHT),
     _character(nullptr)
+  
 {
+    _currentDirection = "down";
+    _lastDirection = "down";
 }
 
 // 按下键盘时的处理
@@ -124,6 +127,11 @@ cocos2d::Vec2 CharacterMove::getPosition() {
     return _character->getPosition();
 }
 
+// 设置角色位置
+void CharacterMove::setPosition(const Vec2& position) {
+    _character->setPosition(position);
+}
+
 // 强制停止角色移动
 void CharacterMove::stopMove() {
     _moveUp = false;
@@ -162,7 +170,7 @@ cocos2d::Vec2 CharacterMove::updatePosition(float deltaTime) {
         _character->stopAllActions();
         _animationPlaying = false;
     }
-
+    CCLOG("_currentDirection:%s", _currentDirection.c_str());
     //// 边界检测
     //const auto visibleSize = Director::getInstance()->getVisibleSize();
     //const float halfWidth = _character->getContentSize().width / 2;

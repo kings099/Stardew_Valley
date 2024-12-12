@@ -35,8 +35,8 @@ public:
 	// 丢弃当前选中的物品
 	ObjectListNode deleteCurrentObject();
 
-	// 移动物品
-	void moveObject(ObjectListNode object);
+	// 交换物品
+	void swapObject(int startIndex, int targetIndex);
 
 	// 获取当前选中的物品
 	ObjectListNode getCurrentObject();

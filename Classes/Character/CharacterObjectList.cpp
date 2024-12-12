@@ -40,10 +40,10 @@ void CharacterObjectList::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* ev
 		else if (keyCode == EventKeyboard::KeyCode::KEY_EQUAL) {
 			setCurrentObject(11);
 		}
-	}
-	// 按下Q键丢弃物品
-	if (keyCode == EventKeyboard::KeyCode::KEY_Q && getCurrentObject().count != 0) {
-		deleteCurrentObject();
+		// 按下Q键丢弃物品
+		if (keyCode == EventKeyboard::KeyCode::KEY_Q && getCurrentObject().count != 0) {
+			deleteCurrentObject();
+		}
 	}
 	// 按下E键打开/关闭物品栏
 	if (keyCode == EventKeyboard::KeyCode::KEY_E) {
@@ -105,6 +105,16 @@ ObjectListNode CharacterObjectList::deleteCurrentObject() {
 	ObjectListNode tempObject = getCurrentObject();
 	_objectList[_currentObjectIndex] = {_currentObjectIndex ,{None,nullptr},0,Selected };
 	return tempObject;
+}
+
+// 交换物品
+void  CharacterObjectList::swapObject(int startIndex, int targetIndex) {
+	if (startIndex < 0 || startIndex >= _maxObjectKindCount) {
+		return;
+	}
+	ObjectListNode tempObject = _objectList[_currentObjectIndex];
+	_objectList[_currentObjectIndex] = _objectList[targetIndex];
+	_objectList[targetIndex] = tempObject;
 }
 
 // 获取当前选中的物品
