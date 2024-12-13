@@ -42,9 +42,17 @@ constexpr float INDOOR_MAP_SCALE = 5.0f;									// 室内地图缩放比例
 constexpr int OBJECT_LIST_ROWS = 3;											// 物品列表行数
 constexpr int OBJECT_LIST_COLS = 12;										// 物品列表列数
 
-// UI 界面设置
-constexpr int UI_SCALE = 160.0f;                                            // UI???????
-constexpr int FONT_SIZE = 24;                                               // 字体大小
+
+// 背包容量设置
+constexpr int MAX_OBJECT_LIST_SIZE_LEVEL1 = 12;								// 背包容量(等级1)
+constexpr int MAX_OBJECT_LIST_SIZE_LEVEL2 = 24;								// 背包容量(等级2)
+constexpr int MAX_OBJECT_LIST_SIZE_LEVEL3 = 36;								// 背包容量(等级3)
+
+// UI 相关设置
+constexpr int UI_SCALE = 210.0f;                                            // UI界面缩放
+constexpr int FONT_SIZE = 20;                                               // 字体大小
+
+
 constexpr int MAP_LAYER_GRADE = 0;                                          // 地图层级
 constexpr int CHARACTER_LAYER_GRADE = 1;                                    // 角色层级
 constexpr int UI_LAYER_GRADE = 2;                                           // UI层级

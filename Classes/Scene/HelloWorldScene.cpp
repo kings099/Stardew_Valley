@@ -14,7 +14,8 @@
 #include "../Classes/Character/CharacterInfo.h"
 #include "../Classes/MenuImage/HoverMenuItemImage.h"
 #include "FarmScene.h"
-
+#include "Control/NpcManager.h"  // 引入 NpcManager
+#include "Control/NpcInteractionManager.h"  // 引入 NpcInteractionManager
 
 USING_NS_CC;
 
@@ -38,7 +39,30 @@ bool HelloWorld::init()
         return false;
     }
 
-    // 获取全局尺寸大小
+    // 初始化 NPC 和管理器
+    NpcManager::getInstance()->initializeNPCs();  // 初始化 NPC
+    CCLOG("NPC initialization completed.");
+    // 获取 Abigail NPC
+    NPC* abigail = NpcManager::getInstance()->getNPCByName("Abigail");
+
+    // 如果 Abigail 存在，则将其添加到场景中
+    if (abigail) {
+        this->addChild(abigail, 4);  // 将整个 NPC 对象添加到场景中
+        abigail->startWalkingAnimation();  // 启动动画
+        CCLOG("Abigail added to scene.");
+    }
+    else {
+        CCLOG("Abigail NPC not found!");  // 如果没有找到 Abigail NPC，则打印错误日志
+    }
+    // 注册键盘监听事件
+    auto listener = EventListenerKeyboard::create();
+    listener->onKeyPressed = CC_CALLBACK_2(HelloWorld::onKeyPressed, this);
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
+
+
+
+    CCLOG("NPC initialization completed.");
+   // 获取全局尺寸大小
     const auto visibleSize = Director::getInstance()->getVisibleSize();
     const Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
@@ -57,9 +81,19 @@ bool HelloWorld::init()
         this->addChild(titleSprite, 1);  // 将标题添加到场景中
     }
     this->createMenuWithImage();
+     
     return true;
 }
 
+void HelloWorld::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* event) {
+    // 检查按下的是否是 T 键
+    if (keyCode == EventKeyboard::KeyCode::KEY_T) {
+        // 获取 Abigail NPC
+        NPC* abigail = NpcManager::getInstance()->getNPCByName("Abigail");
+
+        abigail->showDialog();  // 弹出对话框
+    }
+}
 void HelloWorld::createMenuWithImage()
 {
     // 获取当前可见区域（窗口）或屏幕区域的大小（宽度和高度）
@@ -87,6 +121,7 @@ void HelloWorld::createMenuWithImage()
     auto menu = Menu::create(startItem, exitItem, nullptr);
     menu->setPosition(Vec2::ZERO);  // 设置菜单的原点位置
     this->addChild(menu, 2);  // 将菜单添加到场景中
+   
 }
 
 void HelloWorld::initBackground() {
@@ -267,7 +302,11 @@ void HelloWorld::startGameCallback(Ref* pSender)
 
 
 
+  
+
 }
+
+
 
 // exitGameCallback: 当点击“结束”按钮时，调用此函数
 void HelloWorld::exitGameCallback(Ref* pSender)

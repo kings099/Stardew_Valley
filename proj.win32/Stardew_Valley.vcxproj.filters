@@ -94,9 +94,6 @@
     <ClInclude Include="..\Classes\Layer\PlacementMarkerLayer.h">
       <Filter>Classes\Layer</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\Layer\TimeManagerUI.h">
-      <Filter>Classes\Layer</Filter>
-    </ClInclude>
     <ClInclude Include="..\Classes\Manager\TimeManager.h">
       <Filter>Classes\Manager</Filter>
     </ClInclude>
@@ -108,6 +105,24 @@
     </ClInclude>
     <ClInclude Include="..\Classes\Control\MapSwitchManager.h">
       <Filter>Classes\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Character\NPC.h">
+      <Filter>Classes\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Character\GiftItem.h">
+      <Filter>Classes\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Control\NpcManager.h">
+      <Filter>Classes\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Control\GiftItemManager.h">
+      <Filter>Classes\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Control\NpcInteractionManager.h">
+      <Filter>Classes\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\ChatLayer.h">
+      <Filter>Classes\Layer</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -160,9 +175,6 @@
     <ClCompile Include="..\Classes\Layer\PlacementMarkerLayer.cpp">
       <Filter>Classes\Layer</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\Layer\TimeManagerUI.cpp">
-      <Filter>Classes\Layer</Filter>
-    </ClCompile>
     <ClCompile Include="..\Classes\Manager\TimeManager.cpp">
       <Filter>Classes\Manager</Filter>
     </ClCompile>
@@ -174,6 +186,24 @@
     </ClCompile>
     <ClCompile Include="..\Classes\Control\MapSwitchManager.cpp">
       <Filter>Classes\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Character\NPC.cpp">
+      <Filter>Classes\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Character\GiftItem.cpp">
+      <Filter>Classes\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Control\NpcManager.cpp">
+      <Filter>Classes\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Control\GIftItemManager.cpp">
+      <Filter>Classes\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Control\NpcInteractionManager.cpp">
+      <Filter>Classes\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\ChatLayer.cpp">
+      <Filter>Classes\Layer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
