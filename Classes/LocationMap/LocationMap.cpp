@@ -10,7 +10,6 @@
 #include "LocationMap.h"
 #include "Classes/Character/Character.h"
 #include "proj.win32/Constant.h"
-#include "proj.win32/ObjectConstant.h"
 
  // »ñÈ¡µ¥Àý
 LocationMap& LocationMap::getInstance()

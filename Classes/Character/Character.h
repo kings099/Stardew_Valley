@@ -24,11 +24,14 @@ public:
     // 释放键盘时的处理
     void onKeyReleased(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event);
 
+    // 按下鼠标时的处理
+    void onMouseDown(cocos2d::Event* event);
+
     // 更新位置
     cocos2d::Vec2 updatePosition(float deltaTime);
 
     // 获取角色精灵节点
-    cocos2d::Sprite* getCharacterSprite() const;
+    cocos2d::Sprite* getCharacterSprite();
 
 private:
     // 禁止拷贝和赋值

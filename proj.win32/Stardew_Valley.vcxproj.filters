@@ -76,9 +76,6 @@
     <ClInclude Include="..\Classes\LocationMap\LocationMap.h">
       <Filter>Classes\LocationMap</Filter>
     </ClInclude>
-    <ClInclude Include="ObjectConstant.h">
-      <Filter>Win32</Filter>
-    </ClInclude>
     <ClInclude Include="Constant.h">
       <Filter>Win32</Filter>
     </ClInclude>

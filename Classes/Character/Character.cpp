@@ -21,15 +21,11 @@ Character* Character::getInstance(const std::string& filename) {
 }
 
 // 构造函数
-Character::Character(const std::string& filename){
-    const auto visibleSize = Director::getInstance()->getVisibleSize();
-    const Vec2 origin = Director::getInstance()->getVisibleOrigin();
+Character::Character(const std::string& filename):
+    CharacterAction(filename),
+    CharacterMove(filename)
+{
 
-    // 创建精灵并设置初始位置
-    _character = Sprite::create(filename);
-    _character->setScale(2.0);
-    _character->setPosition(Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y));
-    this->cocos2d::Node::addChild(_character);
 }
 
 // 按下键盘时的处理
@@ -55,6 +51,11 @@ void Character::onKeyReleased(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::
     }
 }
 
+// 按下鼠标时的处理
+void Character::onMouseDown(cocos2d::Event* event) {
+    CharacterAction::onMouseDown(event);
+}
+
 // 更新角色位置
 Vec2 Character::updatePosition(float deltaTime) {
     return CharacterMove::updatePosition(deltaTime);
@@ -62,6 +63,6 @@ Vec2 Character::updatePosition(float deltaTime) {
 
 
 // 获取角色精灵节点
-Sprite* Character::getCharacterSprite() const{
+Sprite* Character::getCharacterSprite(){
     return _character;
 }

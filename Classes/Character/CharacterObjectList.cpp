@@ -22,6 +22,12 @@ CharacterObjectList::CharacterObjectList() :
 {
 	// 初始化物品栏
 	initObjectList();
+	pickUpObject(GAME_TOOL_OBJECTS_ATTRS[0], 1);
+	pickUpObject(GAME_TOOL_OBJECTS_ATTRS[3], 1);
+	pickUpObject(GAME_TOOL_OBJECTS_ATTRS[6], 1);
+	pickUpObject(GAME_TOOL_OBJECTS_ATTRS[9], 1);
+	pickUpObject(GAME_TOOL_OBJECTS_ATTRS[12], 1);
+	pickUpObject(GAME_TOOL_OBJECTS_ATTRS[15], 1);
 }
 
 // 按下键盘时的处理
