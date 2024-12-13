@@ -112,6 +112,18 @@
     <ClInclude Include="..\Classes\Character\GiftItem.h">
       <Filter>Classes\Character</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\Control\NpcManager.h">
+      <Filter>Classes\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Control\GiftItemManager.h">
+      <Filter>Classes\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Control\NpcInteractionManager.h">
+      <Filter>Classes\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\ChatLayer.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\CursorAndBUutton\HoverCursor.cpp" />
@@ -180,6 +192,18 @@
     </ClCompile>
     <ClCompile Include="..\Classes\Character\GiftItem.cpp">
       <Filter>Classes\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Control\NpcManager.cpp">
+      <Filter>Classes\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Control\GIftItemManager.cpp">
+      <Filter>Classes\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Control\NpcInteractionManager.cpp">
+      <Filter>Classes\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\ChatLayer.cpp">
+      <Filter>Classes\Layer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

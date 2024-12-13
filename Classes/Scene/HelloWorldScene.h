@@ -30,6 +30,8 @@ public:
     // implement the "static create()" method manually
     void onGameStart();
     CREATE_FUNC(HelloWorld);
+    void HelloWorld::onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event);
+
 
 private:
     cocos2d::MenuItemImage* startItem;  // "开始" 按钮
