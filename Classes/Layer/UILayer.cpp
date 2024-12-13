@@ -174,6 +174,8 @@ void UILayer::showObjectImage() {
     }
 }
 
+
+
 // 按下鼠标事件触发函数
 void UILayer::onMouseDown(cocos2d::Event* event) {
     EventMouse* mouseEvent = dynamic_cast<EventMouse*>(event);
@@ -389,6 +391,8 @@ void UILayer::updateTimeDisplay() {
 
 }
 
+
+
 // 更新UI界面
 void UILayer::update(float deltaTime) {
     // 更新物品栏
@@ -400,6 +404,7 @@ void UILayer::update(float deltaTime) {
     // 更新时间显示器
     updateTimeDisplay();
 }
+
 
 
 // 寻找最近可放置坐标

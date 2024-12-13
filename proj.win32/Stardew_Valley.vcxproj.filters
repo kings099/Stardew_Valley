@@ -28,9 +28,6 @@
     <Filter Include="Classes\MenuImage">
       <UniqueIdentifier>{4108d8f8-4c62-4d01-a3c7-45ff42542fc0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\Manager">
-      <UniqueIdentifier>{9a0361ec-2416-43a3-9ada-24b934bfbfff}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Classes\Layer">
       <UniqueIdentifier>{b560586d-3026-40bf-b612-a2b26cccd69b}</UniqueIdentifier>
     </Filter>
@@ -91,9 +88,6 @@
     <ClInclude Include="..\Classes\Layer\PlacementMarkerLayer.h">
       <Filter>Classes\Layer</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\Manager\TimeManager.h">
-      <Filter>Classes\Manager</Filter>
-    </ClInclude>
     <ClInclude Include="..\Classes\Layer\UILayer.h">
       <Filter>Classes\Layer</Filter>
     </ClInclude>
@@ -101,6 +95,9 @@
       <Filter>Classes\Maps</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Control\MapSwitchManager.h">
+      <Filter>Classes\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Manager\TimeManager.h">
       <Filter>Classes\Control</Filter>
     </ClInclude>
   </ItemGroup>
@@ -154,9 +151,6 @@
     <ClCompile Include="..\Classes\Layer\PlacementMarkerLayer.cpp">
       <Filter>Classes\Layer</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\Manager\TimeManager.cpp">
-      <Filter>Classes\Manager</Filter>
-    </ClCompile>
     <ClCompile Include="..\Classes\Layer\UILayer.cpp">
       <Filter>Classes\Layer</Filter>
     </ClCompile>
@@ -164,6 +158,9 @@
       <Filter>Classes\Maps</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\Control\MapSwitchManager.cpp">
+      <Filter>Classes\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Manager\TimeManager.cpp">
       <Filter>Classes\Control</Filter>
     </ClCompile>
   </ItemGroup>
