@@ -97,7 +97,7 @@
     <ClInclude Include="..\Classes\Control\MapSwitchManager.h">
       <Filter>Classes\Control</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\Manager\TimeManager.h">
+    <ClInclude Include="..\Classes\Control\TimeManager.h">
       <Filter>Classes\Control</Filter>
     </ClInclude>
   </ItemGroup>
@@ -160,7 +160,7 @@
     <ClCompile Include="..\Classes\Control\MapSwitchManager.cpp">
       <Filter>Classes\Control</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\Manager\TimeManager.cpp">
+    <ClCompile Include="..\Classes\Control\TimeManager.cpp">
       <Filter>Classes\Control</Filter>
     </ClCompile>
   </ItemGroup>

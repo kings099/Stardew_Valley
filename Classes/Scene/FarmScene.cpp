@@ -10,7 +10,7 @@
 #include "SimpleAudioEngine.h"
 #include "../Classes/MenuImage/HoverMenuItemImage.h"
 #include "../Classes/Layer/UILayer.h"
-#include "../Classes/Manager/TimeManager.h"
+#include "../Classes/Control/TimeManager.h"
 #include "Control/MapSwitchManager.h"
 USING_NS_CC;
 
