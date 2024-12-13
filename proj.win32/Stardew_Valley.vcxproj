@@ -207,7 +207,6 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)\Resources\" /D /E /I /F /Y
     <ClInclude Include="..\Classes\Scene\HelloWorldScene.h" />
     <ClInclude Include="Constant.h" />
     <ClInclude Include="main.h" />
-    <ClInclude Include="ObjectConstant.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\cocos2d\cocos\2d\libcocos2d.vcxproj">

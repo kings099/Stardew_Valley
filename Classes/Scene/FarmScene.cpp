@@ -53,7 +53,7 @@ bool FarmScene::init()
     this->addChild(farmMap, 0); // 地图置于最底层
 
     // 加载角色
-    character = Character::getInstance("../Resources/Characters/Elimy/ElimyDown1.png");
+    character = Character::getInstance("../Resources/Characters/Bear/BearLeftAction1.png");
     this->addChild(character, 1); // 角色位于地图之上
     character->pickUpObject(GAME_TOOL_OBJECTS_ATTRS[0],1);
     character->pickUpObject(GAME_TOOL_OBJECTS_ATTRS[1],1);
@@ -80,6 +80,7 @@ bool FarmScene::init()
             CCLOG("Teleport triggered to map: %s", targetMapFile.c_str());
             mapSwitchManager->switchMap(targetMapFile, 0);
         }
+        character->updateTileInfo(interaction);
         }, "CheckTeleportUpdate");
     // 启动时间管理器的计时
     TimeManager::getInstance()->startUpdating();

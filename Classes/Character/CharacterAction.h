@@ -14,20 +14,26 @@
 #ifndef _CHARACTER_ACTION_H_
 #define _CHARACTER_ACTION_H_
 
-class CharacterAction : public CharacterObjectList,public CharacterMove {
+class CharacterAction : public CharacterObjectList, virtual public CharacterMove {
 public:
+	// 构造函数
+	CharacterAction(const std::string& filename);
+
 	// 按下鼠标事件触发函数
 	void onMouseDown(cocos2d::Event* event);
 
+	// 更新技能等级
+	void updateSkillLevel();
 
+
+	int _sikllLevel[SKILL_KIND_NUM];		//技能等级数组
 protected:
-	int _farmExperience;		// 耕种技能经验值
-	int _collectExperience;		// 采集技能经验值
-	int _mineExperience;		// 采矿技能经验值
-	int _fishExperience;		// 钓鱼技能经验值
+
 
 
 private:
+	int _sikllExprience[SKILL_KIND_NUM];	//技能经验值数组
+
 	// 获取角色打算执行的动作
 	GameCharacterAction getAction();
 
