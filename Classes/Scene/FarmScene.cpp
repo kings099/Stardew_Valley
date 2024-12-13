@@ -61,7 +61,8 @@ bool FarmScene::init()
     viewController = new GameViewController(character.get(), farmMap);
     this->addChild(viewController, 2); // 控制器无需渲染，层级不重要
 
-    auto interaction = InteractionManager::create(character.get(), farmMap);
+    // 创建交互管理器
+    auto interaction = InteractionManager::create(farmMap);
     this->addChild(interaction);
 
     //创建场景转换器

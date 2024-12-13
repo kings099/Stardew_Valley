@@ -12,17 +12,17 @@
 
 USING_NS_CC;
 
-InteractionManager::InteractionManager() : _character(nullptr), _gameMap(nullptr) {
-    CCLOG("InteractionManager constructed: _character=%p, _gameMap=%p", _character, _gameMap);
+InteractionManager::InteractionManager() :  _gameMap(nullptr) {
+    CCLOG("InteractionManager constructed: _gameMap=%p",  _gameMap);
 }
 
 InteractionManager::~InteractionManager() {
     CCLOG("InteractionManager destructed at %p", this);
 }
 
-InteractionManager* InteractionManager::create(Character* character, GameMap* gameMap) {
+InteractionManager* InteractionManager::create(GameMap* gameMap) {
     InteractionManager* ret = new (std::nothrow) InteractionManager();
-    if (ret && ret->init(character, gameMap)) {
+    if (ret && ret->init(gameMap)) {
         ret->autorelease();
         return ret;
     }
@@ -30,23 +30,21 @@ InteractionManager* InteractionManager::create(Character* character, GameMap* ga
     return nullptr;
 }
 
-bool InteractionManager::init(Character* character, GameMap* gameMap) {
+bool InteractionManager::init(GameMap* gameMap) {
     if (!Node::init()) {
         return false;
     }
 
-    CCASSERT(character != nullptr, "Character must not be null");
     CCASSERT(gameMap != nullptr, "GameMap must not be null");
 
-    _character = character;
     _gameMap = gameMap;
 
     return true;
 }
 
 void InteractionManager::updateSurroundingTiles(Vec2& world_pos) {
-    if (!_gameMap || !_character) {
-        CCLOG("InteractionManager: Invalid state. gameMap or character is null.");
+    if (!_gameMap ) {
+        CCLOG("InteractionManager: Invalid state. gameMap is null.");
         return;
     }
 
