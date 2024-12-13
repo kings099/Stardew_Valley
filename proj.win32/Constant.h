@@ -1,4 +1,13 @@
-﻿#pragma once
+﻿/****************************************************************
+ * Project Name:  Stardew_Valley
+ * File Name:     Constant.h
+ * File Function: 常变量头文件Constant的定义
+ * Author:        尹诚成，金恒宇，达思睿，胡宝怡
+ * Update Date:   2023/12/13
+ * License:       MIT License
+ ****************************************************************/
+
+#pragma once
 #ifndef _CONSTANT_H_
 #define _CONSTANT_H_
 
@@ -6,7 +15,6 @@
 #include <memory>
 #include <map>
 #include "cocos2d.h"
-#include "ObjectConstant.h"
 
 // 设备分辨率
 constexpr int DESIGN_RESOLUTION_WIDTH = 1920;                               // 设计分辨率宽度
@@ -18,7 +26,7 @@ constexpr int MEDIUM_RESOLUTION_HEIGHT = 720;                               // �
 constexpr int LARGE_RESOLUTION_WIDTH = 1920;                                // 大屏分辨率宽度
 constexpr int LARGE_RESOLUTION_HEIGHT = 1080;                               // 大屏分辨率高度
 constexpr float FRAME_RATE = 60.0f;                                         // 游戏帧率
-const std::string APPLICATION_TITLE = u8"模拟游戏 Stardew Valley";         // 游戏应用标题
+const std::string APPLICATION_TITLE = u8"模拟游戏 Stardew Valley";           // 游戏应用标题
 
 // 移动相关设置
 constexpr float MOVE_SPEED = 3.5f;											// 移动速度
@@ -28,9 +36,17 @@ constexpr float ACTION_RATE = 5.0f;											// 动作帧率
 constexpr int INVAVID_NUM = -1;												// 无效编号
 
 // 角色相关设置
-constexpr int CHARACTER_WIDTH = 64;											// 角色宽度
-constexpr int CHARACTER_HEIGHT = 64;										// 角色高度
+constexpr int CHARACTER_WIDTH = 32;											// 角色宽度
+constexpr int CHARACTER_HEIGHT = 32;										// 角色高度
 constexpr float CHARACTER_MOVE_SPEED = 5.0f;								// 角色移动速度
+constexpr float CHARACTER_HORIZONTAL_ANCHORPOINT = 0.5f;					// 角色水平锚点
+constexpr float CHARACTER_VERTICAL_ANCHORPOINT = 0.25f;						// 角色垂直锚点
+constexpr int LEVEL0_TO_LEVEL1_EXPRIENCE = 20;                              // 从零级升到一级需要的经验值
+constexpr int LEVEL1_TO_LEVEL2_EXPRIENCE = 50;                              // 从一级升到二级需要的经验值
+constexpr int LEVEL2_TO_LEVEL3_EXPRIENCE = 100;                             // 从二级升到三级需要的经验值
+constexpr int LEVEL3_TO_LEVEL4_EXPRIENCE = 200;                             // 从三级升到四级需要的经验值
+constexpr int LEVEL4_TO_LEVEL5_EXPRIENCE = 500;                             // 从四级升到五级需要的经验值
+constexpr int SKILL_KIND_NUM = 4;                                           // 技能种类数量
 
 // 场景过渡相关
 constexpr float LERP_SPEED = 0.1f;											// 插值平滑速度
@@ -42,9 +58,10 @@ constexpr float INDOOR_MAP_SCALE = 5.0f;									// 室内地图缩放比例
 constexpr int OBJECT_LIST_ROWS = 3;											// 物品列表行数
 constexpr int OBJECT_LIST_COLS = 12;										// 物品列表列数
 
+
 // UI 界面设置
 constexpr int UI_SCALE = 160.0f;                                            // UI???????
-constexpr int FONT_SIZE = 24;                                               // 字体大小
+constexpr int FONT_SIZE = 20;                                               // 字体大小
 constexpr int MAP_LAYER_GRADE = 0;                                          // 地图层级
 constexpr int CHARACTER_LAYER_GRADE = 1;                                    // 角色层级
 constexpr int UI_LAYER_GRADE = 2;                                           // UI层级
@@ -72,5 +89,254 @@ constexpr int SEASONS_CHANGE_PERIOD = 30;                                   // �
 constexpr int SECONDS_IN_A_MIN = 60;                                        // 每分钟60秒
 constexpr int DAYS_IN_A_SEASON = 7;                                         // 每季7天
 constexpr int DAYS_IN_A_YEAR = 28;                                          // 一年28天
+
+//游戏物品对应技能类型定义
+enum GameObjectSkillType {
+    Farm,				// 耕种
+    Collect,			// 采集
+    Mine,				// 采矿
+    Fish				// 钓鱼
+};
+
+// 游戏工具类型定义
+enum GameTools {
+    Hoe,				// 锄头
+    Ax,					// 斧头
+    Pickaxe,			// 镐子
+    FishingRod,			// 鱼竿
+    Kettle				// 水壶
+};
+
+// 游戏季节定义
+enum Season {
+    Spring,				// 春天
+    Summer,				// 夏天
+    Fall,				// 秋天
+    Winter,				// 冬天
+    All					// 通用
+};
+
+// 游戏物品类型定义
+enum GameObjectMapType {
+    None,				// 空物品
+    Tool,				// 工具
+    Seed,				// 种子
+    Base,				// 基础物品
+};
+
+// 角色朝向
+enum Direction {
+    Up,
+    Down,
+    Left,
+    Right,
+};
+
+// 鼠标按键
+enum MouseButton {
+    LeftButton,			// 左键
+    RightButton,		// 右键
+};
+
+// 瓦片信息
+enum TileType {
+    Grass,      // 草
+    Tree,       // 树木
+    Stone,      // 矿石
+    Water,      // 水
+    Soil,       // 可耕种土地
+    Soiled,     // 已耕种土地
+    Crop,       // 作物
+    NPC,        // NPC
+    Door,       // 门
+    Other
+};
+
+// 单个瓦片坐标信息
+struct TileInfo {
+    TileType type;
+    cocos2d::Vec2 tilePos;  // 瓦片坐标
+    bool isObstacle;        // 是否为障碍物
+};
+
+// 角色动作定义
+enum GameCharacterAction {
+    NoneAction,			// 空动作
+    Plowing,			// 耕地
+    Watering,			// 浇水
+    GetWater,			// 取水
+    Weeding,            // 除草
+    Cutting,			// 砍树
+    Mining,				// 采矿
+    Fishing,		    // 钓鱼
+    Buying,				// 购买
+    Harvesting,			// 收获
+    Placement,			// 放置
+    Transition			// 转换场景
+};
+
+// 角色动作和地图类型对应关系
+const std::map< GameCharacterAction, TileType> ACTION_TO_TILEMAP = {
+    { NoneAction, Other },
+    { Plowing, Soil },
+    { Watering, Soiled },
+    { GetWater, Water },
+    { Weeding, Grass },
+    { Cutting, Tree },
+    { Mining, Stone },
+    { Fishing, Water },
+    { Buying, NPC },
+    { Harvesting, Crop },
+    { Placement, Other },
+    {Transition, Door}
+};
+
+// 游戏物品共有属性定义
+class GameObject {
+public:
+    std::string _fileName;       // 物品图片资源文件路径
+    std::string _name;           // 物品名称
+    GameObjectSkillType _type;   // 物品类型
+
+    GameObject() = default;
+    GameObject(const std::string& fileName, const std::string& name, GameObjectSkillType type) :
+        _fileName(fileName),
+        _name(name),
+        _type(type) {
+    }
+    virtual ~GameObject() {}     // 虚拟析构函数
+};
+
+// 游戏工具物品属性定义
+class GameToolObject : public GameObject {
+public:
+    int _level;                 // 工具等级
+    int _actionCost;            // 执行一次操作需要的次数
+    int _durability;            // 工具耐久度
+    GameCharacterAction _action; // 工具当前执行的动作
+
+    // 构造函数
+    GameToolObject(const std::string& fileName, const std::string& name, GameObjectSkillType type, int level, int actionCost, int durability, GameCharacterAction action) :
+        GameObject(fileName, name, type),
+        _level(level),
+        _actionCost(actionCost),
+        _durability(durability),
+        _action(action)
+    {
+    }
+};
+
+// 游戏种子物品属性定义
+class GameSeedObject : public GameObject {
+public:
+    int _level;                             // 解锁种子所需等级
+    Season _season;                         // 种子生长季节
+    std::vector<int> _growthStages;         // 种子每个阶段所需的生长天数
+    int _totalGrowTime;                     // 种子生长总天数
+    int _harvestIndex;                      // 种子收获所得的物品索引
+    int _buyPrice;                          // 种子购买价格
+    int _salePrice;                         // 种子出售价格
+
+    // 构造函数
+    GameSeedObject(const std::string& fileName, const std::string& name, GameObjectSkillType type, int level, Season season, std::vector<int> growthStages, int totalGrowTime, int harvestIndex, int buyPrice, int salePrice) :
+        GameObject(fileName, name, type),
+        _level(level),
+        _season(season),
+        _growthStages(growthStages),
+        _totalGrowTime(totalGrowTime),
+        _harvestIndex(harvestIndex),
+        _buyPrice(buyPrice),
+        _salePrice(salePrice)
+    {
+    }
+};
+
+// 游戏基础物品属性定义
+class GameBaseObject : public GameObject {
+public:
+    int _maxStorage;                            // 物品最大存储量
+    int _level;                                 // 解锁物品所需等级
+    int _quality;                               // 物品品质等级
+    bool _sale;                                 // 是否能出售
+    int _salePrice;                             // 出售价格
+    bool _eat;                                  // 是否可以食用
+    int _eatEnergy;                             // 食用恢复的能量值
+    bool _place;                                // 能否放置
+    bool _synthesis;                            // 是否可以合成
+    std::map<std::string, int> _ingredients;	// 合成物品的原料
+    // 构造函数
+    GameBaseObject(const std::string& fileName, const std::string& name, GameObjectSkillType type, int maxStorage, int level, int quality, bool sale, int salePrice, bool eat, int eatEnergy, bool place, bool synthesis, std::map<std::string, int> ingredients) :
+        GameObject(fileName, name, type),
+        _maxStorage(maxStorage),
+        _level(level),
+        _quality(quality),
+        _sale(sale),
+        _salePrice(salePrice),
+        _eat(eat),
+        _eatEnergy(eatEnergy),
+        _place(place),
+        _synthesis(synthesis),
+        _ingredients(ingredients)
+    {
+    }
+};
+
+// 游戏物品属性定义
+struct GameCommonObject {
+    GameObjectMapType type;                             // 物品类型
+    std::shared_ptr<GameObject> object;
+
+    GameCommonObject() : type(None), object(nullptr) {} // 默认构造函数
+    GameCommonObject(GameObjectMapType type, std::shared_ptr<GameObject> object) :
+        type(type),
+        object(object)
+    {
+    }
+};
+// 物品栏中物品状态定义
+enum ObjectListNodeStatus {
+    Unselected,		// 未选中
+    Selected		// 选中
+};
+
+// 角色物品栏单个物品属性定义
+struct ObjectListNode {
+    GameCommonObject objectNode;	// 物品信息
+    int count;						// 物品数量
+    ObjectListNodeStatus status;	// 物品状态(选中/未选中)
+};
+
+// 游戏工具类物品属性参数定义
+const std::vector<GameToolObject> GAME_TOOL_OBJECTS_ATTRS = {
+    GameToolObject("../Resources/Objects/Tools/BeginnerHoe.png", "初级锄头", Farm, 1, 1, INT_MAX, Plowing),
+    GameToolObject("../Resources/Objects/Tools/IntermediateHoe.png", "中级锄头", Farm, 2, 1, INT_MAX, Plowing),
+    GameToolObject("../Resources/Objects/Tools/AdvancedHoe.png", "高级锄头", Farm, 3, 1, INT_MAX, Plowing),
+    GameToolObject("../Resources/Objects/Tools/BeginnerAxe.png", "初级斧头", Collect, 1, 5, INT_MAX, Cutting),
+    GameToolObject("../Resources/Objects/Tools/IntermediateAxe.png", "中级斧头", Collect, 2, 4, INT_MAX, Cutting),
+    GameToolObject("../Resources/Objects/Tools/AdvancedAxe.png", "高级斧头", Collect, 3, 3, INT_MAX, Cutting),
+    GameToolObject("../Resources/Objects/Tools/BeginnerPickaxe.png", "初级镐子", Mine, 1, 5, INT_MAX, Mining),
+    GameToolObject("../Resources/Objects/Tools/IntermediatePickaxe.png", "中级镐子", Mine, 2, 4, INT_MAX, Mining),
+    GameToolObject("../Resources/Objects/Tools/AdvancedPickaxe.png", "高级镐子", Mine, 3, 3, INT_MAX, Mining),
+    GameToolObject("../Resources/Objects/Tools/BeginnerFishingRods.png", "初级鱼竿", Fish, 1, 1, INT_MAX, Fishing),
+    GameToolObject("../Resources/Objects/Tools/IntermediateFishingRods.png", "中级鱼竿", Fish, 2, 1, INT_MAX, Fishing),
+    GameToolObject("../Resources/Objects/Tools/AdvancedFishingRods.png", "高级鱼竿", Fish, 3, 1, INT_MAX, Fishing),
+    GameToolObject("../Resources/Objects/Tools/BeginnerKattle.png", "初级水壶", Farm, 1, 1, 40, Watering),
+    GameToolObject("../Resources/Objects/Tools/IntermediateKattle.png", "中级水壶", Farm, 2, 1, 55, Watering),
+    GameToolObject("../Resources/Objects/Tools/AdvancedKattle.png", "高级水壶", Farm, 3, 1, 70, Watering),
+    GameToolObject("../Resources/Objects/Tools/scythe.png","镰刀",Collect,1,1,INT_MAX,Weeding)
+};
+
+// 游戏种子类物品属性参数定义
+const std::vector<GameSeedObject> GAME_SEED_OBJECTS_ATTRS = {
+
+};
+
+// 游戏基础类物品属性参数定义
+const std::vector<GameBaseObject> GAME_BASE_OBJECTS_ATTRS = {
+
+};
+
+
+
 
 #endif // !_CONSTANT_H_

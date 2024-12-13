@@ -3,21 +3,21 @@
  * File Name:     FarmMap.cpp
  * File Function: 角色地图交互控制类InteractionManager的实现
  * Author:        金恒宇
- * Update Date:   2024/12/11
+ * Update Date:   2024/12/13
  * License:       MIT License
  ****************************************************************/
- // InteractionManager.cpp
+
 #include "InteractionManager.h"
 #include "cocos2d.h"
 
 USING_NS_CC;
 
 InteractionManager::InteractionManager() :  _gameMap(nullptr) {
-    CCLOG("InteractionManager constructed: _gameMap=%p",  _gameMap);
+   // CCLOG("InteractionManager constructed: _gameMap=%p",  _gameMap);
 }
 
 InteractionManager::~InteractionManager() {
-    CCLOG("InteractionManager destructed at %p", this);
+   // CCLOG("InteractionManager destructed at %p", this);
 }
 
 InteractionManager* InteractionManager::create(GameMap* gameMap) {
@@ -26,7 +26,7 @@ InteractionManager* InteractionManager::create(GameMap* gameMap) {
         ret->autorelease();
         return ret;
     }
-    CC_SAFE_DELETE(ret);
+   // CC_SAFE_DELETE(ret);
     return nullptr;
 }
 
@@ -35,7 +35,7 @@ bool InteractionManager::init(GameMap* gameMap) {
         return false;
     }
 
-    CCASSERT(gameMap != nullptr, "GameMap must not be null");
+  //  CCASSERT(gameMap != nullptr, "GameMap must not be null");
 
     _gameMap = gameMap;
 
@@ -44,7 +44,7 @@ bool InteractionManager::init(GameMap* gameMap) {
 
 void InteractionManager::updateSurroundingTiles(Vec2& world_pos) {
     if (!_gameMap ) {
-        CCLOG("InteractionManager: Invalid state. gameMap is null.");
+       // CCLOG("InteractionManager: Invalid state. gameMap is null.");
         return;
     }
 
@@ -88,25 +88,25 @@ void InteractionManager::updateSurroundingTiles(Vec2& world_pos) {
 
         _surroundingTiles.push_back(tileInfo); // 保存到 _surroundingTiles
     }
-    CCLOG("Surrounding tiles obstacle map:");
+   //CCLOG("Surrounding tiles obstacle map:");
     for (int row = 0; row < 3; ++row) {
         std::string line;
         for (int col = 0; col < 3; ++col) {
             int index = row * 3 + col;
             line += _surroundingTiles[index].isObstacle ? "1 " : "0 ";
         }
-        CCLOG("%s", line.c_str());
+        //CCLOG("%s", line.c_str());
     }
 }
 
 bool InteractionManager::isCollidableAtPos(const Vec2& tilePos) {
     if (!_gameMap) {
-        CCLOG("wrong map");
+        //CCLOG("wrong map");
         return true;
     }
     Size mapSizeinTile = _gameMap->getMapSizeinTile();
     if (tilePos.x < 0 || tilePos.y < 0 || tilePos.x >= mapSizeinTile.width || tilePos.y >= mapSizeinTile.height) {
-        CCLOG("%f,%f", mapSizeinTile.width, mapSizeinTile.height);
+       // CCLOG("%f,%f", mapSizeinTile.width, mapSizeinTile.height);
         return true;
     }
     int GIDPath = _gameMap->getTileGIDAt("path", tilePos);
@@ -153,7 +153,7 @@ bool InteractionManager::checkTeleport(const Vec2& worldPos, std::string& target
 void InteractionManager::setMap(GameMap* newMap) {
     if (newMap) {
         _gameMap = newMap;
-        CCLOG("InteractionManager updated to new map: %p", _gameMap);
+        //CCLOG("InteractionManager updated to new map: %p", _gameMap);
     }
 }
 

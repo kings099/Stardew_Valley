@@ -11,24 +11,9 @@
 #define __INTERACTION_MANAGER_H__
 
 #include "cocos2d.h"
-#include "Character/Character.h"
 #include "Maps/GameMap.h"
+#include "../proj.win32/Constant.h"
 #include <vector>
-
-enum TileType {
-    Grass,      // 草
-    Tree,       // 树木
-    Stone,      // 石头
-    Water,      // 水
-    Soil,       // 可耕种土地
-    Other
-};
-
-struct TileInfo {
-    TileType type;
-    cocos2d::Vec2 tilePos;  // 瓦片坐标
-    bool isObstacle;        // 是否为障碍物
-};
 
 class InteractionManager : public cocos2d::Node {
 public:
@@ -63,7 +48,7 @@ public:
     const std::vector<TileInfo>& getSurroundingTiles() const;
 
 private:
-    GameMap* _gameMap;             // 当前地图对象的引用
+    GameMap* _gameMap;                       // 当前地图对象的引用
     std::vector<TileInfo> _surroundingTiles; // 储存角色周围 9 格瓦片的信息
 };
 

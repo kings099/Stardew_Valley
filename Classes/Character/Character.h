@@ -24,11 +24,14 @@ public:
     // 释放键盘时的处理
     void onKeyReleased(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event);
 
+    // 按下鼠标时的处理
+    void onMouseDown(cocos2d::Event* event);
+
     // 更新位置
     cocos2d::Vec2 updatePosition(float deltaTime);
 
     // 获取角色精灵节点
-    cocos2d::Sprite* getCharacterSprite() const;
+    cocos2d::Sprite* getCharacterSprite();
 
 private:
     // 禁止拷贝和赋值
@@ -37,7 +40,7 @@ private:
 
     // 构造函数私有化
     Character(const std::string& filename);
-
+    CharacterMove characterMove;                // 角色移动控制
     int _money;                                 // 角色金钱
     int _currentEnergy;                         // 角色能量
     int _maxEnergy;                             // 角色最大能量

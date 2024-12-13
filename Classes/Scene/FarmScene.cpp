@@ -11,7 +11,6 @@
 #include "../Classes/MenuImage/HoverMenuItemImage.h"
 #include "../Classes/Layer/UILayer.h"
 #include "../Classes/Manager/TimeManager.h"
-#include "../Classes/Layer/TimeManagerUI.h"
 #include "Control/MapSwitchManager.h"
 USING_NS_CC;
 
@@ -53,11 +52,10 @@ bool FarmScene::init()
     this->addChild(farmMap, 0); // 地图置于最底层
 
     // 加载角色
-    character = Character::getInstance("../Resources/Characters/Elimy/ElimyDown1.png");
+    character = Character::getInstance("../Resources/Characters/Bear/BearLeftAction1.png");
     this->addChild(character, 1); // 角色位于地图之上
-    character->pickUpObject(GAME_TOOL_OBJECTS_ATTRS[0],1);
-    character->pickUpObject(GAME_TOOL_OBJECTS_ATTRS[1],1);
-    character->pickUpObject(GAME_TOOL_OBJECTS_ATTRS[2],1);
+   
+  
 
     // 创建视角控制器
     viewController = new GameViewController(character, farmMap);
@@ -66,6 +64,7 @@ bool FarmScene::init()
     // 创建交互管理器
     auto interaction = InteractionManager::create(farmMap);
     this->addChild(interaction);
+    std::vector<bool> moveable = interaction->getSurroundingCollidable(character->getPosition());
 
     //创建场景转换器
     // 创建 MapSwitcher，并检查是否成功
@@ -80,6 +79,7 @@ bool FarmScene::init()
             CCLOG("Teleport triggered to map: %s", targetMapFile.c_str());
             mapSwitchManager->switchMap(targetMapFile, 0);
         }
+        character->updateTileInfo(interaction);
         }, "CheckTeleportUpdate");
     // 启动时间管理器的计时
     TimeManager::getInstance()->startUpdating();
@@ -89,23 +89,32 @@ bool FarmScene::init()
     uiContainer->setPosition(Vec2(0, 0));  // 设置为屏幕的原点
     this->addChild(uiContainer, 100);  // 添加到最上层
 
-
     uiLayer = UILayer::create();
     uiContainer->addChild(uiLayer);
 
-    // 创建键盘监视事件
-    auto listener = EventListenerKeyboard::create();
-    listener->onKeyPressed = [this](cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event) {
+    // 创建键盘事件监视器
+    auto keyboardListener = EventListenerKeyboard::create();
+    keyboardListener->onKeyPressed = [this](cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event) {
         this->character->onKeyPressed(keyCode, event);
         this->uiLayer->onKeyPressed(keyCode, event);
         };
-    listener->onKeyReleased = [this](cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event) {
+    keyboardListener->onKeyReleased = [this](cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event) {
         this->character->onKeyReleased(keyCode, event);
         };
-    _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(keyboardListener, this);
+
+    // 创建鼠标事件监视器
+    auto mouseListener = EventListenerMouse::create();
+    mouseListener->onMouseDown = [this](cocos2d::Event* event) {
+        this->character->onMouseDown(event);
+        };
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(mouseListener, this);
+ 
+
+
 
     // 设置更新回调
-    this->schedule([this, uiContainer](float deltaTime) {
+    this->schedule([this, uiContainer, mapSwitchManager, interaction](float deltaTime) {
         if (viewController) {
             viewController->update(deltaTime);
         }
@@ -115,11 +124,9 @@ bool FarmScene::init()
         // 将摄像机的偏移量应用到UI容器
         Vec2 cameraOffset = cameraPosition - Vec2(visibleSize.width / 2, visibleSize.height / 2);
         uiContainer->setPosition(cameraOffset);  // 更新UI容器的位置，使UI随摄像机移动
-
         if (uiLayer) {
             uiLayer->update(deltaTime);
         }
-
         }, "ViewControllerUpdate");
     return true;
 }

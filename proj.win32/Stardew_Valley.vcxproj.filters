@@ -79,9 +79,6 @@
     <ClInclude Include="..\Classes\LocationMap\LocationMap.h">
       <Filter>Classes\LocationMap</Filter>
     </ClInclude>
-    <ClInclude Include="ObjectConstant.h">
-      <Filter>Win32</Filter>
-    </ClInclude>
     <ClInclude Include="Constant.h">
       <Filter>Win32</Filter>
     </ClInclude>
@@ -92,9 +89,6 @@
       <Filter>Classes\Control</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Layer\PlacementMarkerLayer.h">
-      <Filter>Classes\Layer</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Layer\TimeManagerUI.h">
       <Filter>Classes\Layer</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Manager\TimeManager.h">
@@ -158,9 +152,6 @@
       <Filter>Classes\Control</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\Layer\PlacementMarkerLayer.cpp">
-      <Filter>Classes\Layer</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Layer\TimeManagerUI.cpp">
       <Filter>Classes\Layer</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\Manager\TimeManager.cpp">
