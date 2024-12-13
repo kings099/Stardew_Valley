@@ -49,7 +49,7 @@ bool FarmScene::init()
     this->addChild(menu, 1);
 
     // 加载农场地图
-    farmMap = FarmMap::create("../Resources/Maps/Farm/farm2.tmx");
+    farmMap = FarmMap::create("../Resources/Maps/Farm/Farm_Combat.tmx");
     this->addChild(farmMap, 0); // 地图置于最底层
 
     // 加载角色
@@ -64,7 +64,7 @@ bool FarmScene::init()
     this->addChild(viewController, 2); // 控制器无需渲染，层级不重要
 
     // 创建交互管理器
-    auto interaction = InteractionManager::create(character, farmMap);
+    auto interaction = InteractionManager::create(farmMap);
     this->addChild(interaction);
 
     //创建场景转换器

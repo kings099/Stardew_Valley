@@ -36,10 +36,10 @@ public:
     ~InteractionManager();
 
     // 创建交互管理器实例
-    static InteractionManager* create(Character* character, GameMap* gameMap);
+    static InteractionManager* create(GameMap* gameMap);
 
     // 初始化交互管理器
-    bool init(Character* character, GameMap* gameMap);
+    bool init(GameMap* gameMap);
 
     // 更新角色周围的瓦片信息
     void updateSurroundingTiles(cocos2d::Vec2& world_pos);
@@ -63,9 +63,7 @@ public:
     const std::vector<TileInfo>& getSurroundingTiles() const;
 
 private:
-    Character* _character;         // 当前角色对象的引用
     GameMap* _gameMap;             // 当前地图对象的引用
-    std::vector<std::tuple<std::string, int, cocos2d::ValueMap>> _surroundingInfo; // 缓存的周围瓦片信息
     std::vector<TileInfo> _surroundingTiles; // 储存角色周围 9 格瓦片的信息
 };
 
