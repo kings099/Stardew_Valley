@@ -11,7 +11,9 @@
 #define __CHARACTERMOVE_H__
 
 #include "cocos2d.h"
-
+//#include "Classes/Maps/GameMap.h"
+//#include "Classes/Control/InteractionManager.h"
+#include "../proj.win32/Constant.h"
 
 class CharacterMove :virtual public cocos2d::Node {
 public:
