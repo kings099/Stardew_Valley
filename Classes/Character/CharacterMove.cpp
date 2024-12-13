@@ -2,7 +2,7 @@
  * Project Name:  Stardew_Valley
  * File Name:     Character.cpp
  * File Function: 角色移动Character类的实现
- * Author:        尹诚成，达思睿
+ * Author:        尹诚成
  * Update Date:   2023/12/07
  * License:       MIT License
  ****************************************************************/
@@ -23,7 +23,10 @@ CharacterMove::CharacterMove() :
     _width(CHARACTER_WIDTH),
     _height(CHARACTER_HEIGHT),
     _character(nullptr)
+  
 {
+    _currentDirection = "down";
+    _lastDirection = "down";
 }
 
 // 按下键盘时的处理
@@ -70,7 +73,6 @@ void CharacterMove::onKeyReleased(EventKeyboard::KeyCode keyCode, Event* event) 
 // 展示动画效果
 void CharacterMove::playAnimation() {
     // 动作序列
-
     if (_moveLeft) {
         _currentDirection = "left";
         _frames = {
@@ -124,6 +126,11 @@ cocos2d::Vec2 CharacterMove::getPosition() {
     return _character->getPosition();
 }
 
+// 设置角色位置
+void CharacterMove::setPosition(const Vec2& position) {
+    _character->setPosition(position);
+}
+
 // 强制停止角色移动
 void CharacterMove::stopMove() {
     _moveUp = false;
@@ -162,24 +169,6 @@ cocos2d::Vec2 CharacterMove::updatePosition(float deltaTime) {
         _character->stopAllActions();
         _animationPlaying = false;
     }
-
-    //// 边界检测
-    //const auto visibleSize = Director::getInstance()->getVisibleSize();
-    //const float halfWidth = _character->getContentSize().width / 2;
-    //const float halfHeight = _character->getContentSize().height / 2;
-
-    //if (newPosition.x - halfWidth < 0) {
-    //    newPosition.x = halfWidth;
-    //}
-    //if (newPosition.x + halfWidth > visibleSize.width) {
-    //    newPosition.x = visibleSize.width - halfWidth;
-    //}
-    //if (newPosition.y - halfHeight < 0) {
-    //    newPosition.y = halfHeight;
-    //}
-    //if (newPosition.y + halfHeight > visibleSize.height) {
-    //    newPosition.y = visibleSize.height - halfHeight;
-    //}
 
     _character->setPosition(newPosition);
 
