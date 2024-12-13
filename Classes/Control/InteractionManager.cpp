@@ -124,20 +124,6 @@ bool InteractionManager::isCollidableAtPos(const Vec2& tilePos) {
     return false;
 }
 
-std::vector<bool> InteractionManager::getSurroundingCollidable(const Vec2& currentPos) {
-    Vec2 tile_pos = _gameMap->absoluteToTile(currentPos);
-    std::vector<Vec2> surroundingCoords = {
-        Vec2(tile_pos.x - 1, tile_pos.y - 1), Vec2(tile_pos.x, tile_pos.y - 1), Vec2(tile_pos.x + 1, tile_pos.y - 1),
-        Vec2(tile_pos.x - 1, tile_pos.y),   Vec2(tile_pos.x, tile_pos.y),   Vec2(tile_pos.x + 1, tile_pos.y),
-        Vec2(tile_pos.x - 1, tile_pos.y + 1), Vec2(tile_pos.x, tile_pos.y + 1), Vec2(tile_pos.x + 1, tile_pos.y + 1),
-    };
-    std::vector<bool> Moveable;
-    for (Vec2 coord : surroundingCoords) {
-        bool canNotMove = isCollidableAtPos(coord);
-        Moveable.push_back(!canNotMove);
-    }
-    return Moveable;
-}
 
 bool InteractionManager::checkTeleport(const Vec2& worldPos, std::string& targetMapFile) {
     if (!_gameMap) return false;
