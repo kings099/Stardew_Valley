@@ -3,7 +3,7 @@
  * File Name:     PlacementMarkerLayer.h
  * File Function: 放置标记层类PlacementMarkerLayer的定义
  * Author:        尹诚成
- * Update Date:   2024/12/07
+ * Update Date:   2024/12/11
  * License:       MIT License
  ****************************************************************/
 
@@ -12,6 +12,7 @@
 #define _PLACEMENT_MARKER_LAYER_H_
 
 #include "cocos2d.h"
+#include "Character/Character.h"
 #include "proj.win32/Constant.h"
 #include "proj.win32/ObjectConstant.h"
 
@@ -22,14 +23,16 @@ public:
     virtual bool init();
 
     // 显示放置标记
-    void showPlacementMarker(const std::vector<ObjectListNode> objectList);
+    void showPlacementMarker();
 
     // 实现 PlacementMarkerLayer 类的 create 方法
     CREATE_FUNC(PlacementMarkerLayer);
 
 private:
     // 创建放置标记
-    void createPlacementMarker(const ObjectListLocation& objectListLocation);
+    void createPlacementMarker(const int& index);
+
+    Character* _character; // 角色对象
 };
 
 #endif // !_PLACEMENT_MARKER_LAYER_H_

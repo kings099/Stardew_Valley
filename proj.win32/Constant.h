@@ -41,12 +41,7 @@ constexpr float INDOOR_MAP_SCALE = 5.0f;									// 室内地图缩放比例
 // 物品设置
 constexpr int OBJECT_LIST_ROWS = 3;											// 物品列表行数
 constexpr int OBJECT_LIST_COLS = 12;										// 物品列表列数
-constexpr int CLOSE_OBJECT_LIST_START_X = 795;								// 关闭状态物品列表起始X坐标
-constexpr int CLOSE_OBJECT_LIST_START_Y = 1056;								// 关闭状态物品列表起始Y坐标
-constexpr int OPEN_OBJECT_LIST_START_X = 795;								// 打开状态物品列表起始X坐标
-constexpr int OPEN_OBJECT_LIST_START_Y = 582;								// 打开状态物品列表起始Y坐标
-constexpr int OBJECT_LIST_NODE_HORIZONTAL_INTERVAL = 42;					// 物品节点水平间隔
-constexpr int OBJECT_LIST_NODE_VERTICAL_INTERVAL = 42;						// 物品节点垂直间隔
+
 
 // 背包容量设置
 constexpr int MAX_OBJECT_LIST_SIZE_LEVEL1 = 12;								// 背包容量(等级1)
@@ -56,13 +51,25 @@ constexpr int MAX_OBJECT_LIST_SIZE_LEVEL3 = 36;								// 背包容量(等级3)
 // UI 相关设置
 constexpr int UI_SCALE = 210.0f;                                            // UI界面缩放
 constexpr int FONT_SIZE = 20;                                               // 字体大小
+
+
 constexpr int MAP_LAYER_GRADE = 0;                                          // 地图层级
 constexpr int CHARACTER_LAYER_GRADE = 1;                                    // 角色层级
 constexpr int UI_LAYER_GRADE = 2;                                           // UI层级
 constexpr int OBJECT_LAYER_GRADE = 3;                                       // 物品层级
-constexpr float BUTTON_SIZE_RATIO = 2.0f;                                   // 按钮大小变化比例
-constexpr float ENLARGEMENT_RATIO = 1.2f;									// 按钮悬浮时放大比例
-constexpr float ENLARGEMENT_TIME = 0.1f;									// 按钮悬浮时放大持续时间
+constexpr float ENLARGEMENT_RATIO = 1.2f;									// 按钮动画缩放比例
+constexpr float ENLARGEMENT_TIME = 0.15f;									// 按钮动画缩放时间
+constexpr int CLOSE_OBJECT_LIST_START_X = 729;								// 物品栏(关闭状态)起始位置的X坐标
+constexpr int CLOSE_OBJECT_LIST_START_Y = 1056;								// 物品栏(关闭状态)起始位置的Y坐标
+constexpr int OPEN_OBJECT_LIST_START_X = 729;								// 物品栏(开启状态)起始位置的X坐标
+constexpr int OPEN_OBJECT_LIST_START_Y = 582;								// 物品栏(开启状态)起始位置的Y坐标
+constexpr int OBJECT_LIST_NODE_HORIZONTAL_INTERVAL = 42;					// 物品栏物品格子水平间距
+constexpr int OBJECT_LIST_NODE_VERTICAL_INTERVAL = 42;						// 物品栏物品格子垂直间距
+constexpr float OBJECT_NODE_SCALE = 2.0f;									// 物品缩放比例
+constexpr int OPEN_OBJIEC_LIST_DELETE_BUTTON_LEFT_BOUDARY = 1272;			// 物品栏删除按钮左边界
+constexpr int OPEN_OBJIEC_LIST_DELETE_BUTTON_RIGHT_BOUDARY = 1298;			// 物品栏删除按钮右边界
+constexpr int OPEN_OBJIEC_LIST_DELETE_BUTTON_TOP_BOUDARY = 512;				// 物品栏删除按钮上边界
+constexpr int OPEN_OBJIEC_LIST_DELETE_BUTTON_BOTTOM_BOUDARY = 568;			// 物品栏删除按钮下边界
 
 // 游戏时间设置
 constexpr int SECONDS_IN_A_DAY = 86400;                                     // 一天的秒数

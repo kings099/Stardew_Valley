@@ -12,12 +12,12 @@
 
 #include "CharacterMove.h"
 #include "CharacterAction.h"
-#include <memory>
 
-class Character : public CharacterAction {
+class Character :  public CharacterAction {
 public:
-    // 获取单例，返回智能指针
-    static std::unique_ptr<Character> getInstance(const std::string& filename);
+    // 获取单例
+    static Character* getInstance(const std::string& filename);
+
     // 按下键盘时的处理
     void onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event);
 
@@ -30,14 +30,13 @@ public:
     // 获取角色精灵节点
     cocos2d::Sprite* getCharacterSprite() const;
 
-    // 构造函数私有化
-    Character(const std::string& filename);
 private:
     // 禁止拷贝和赋值
     Character(const Character&) = delete;
     Character& operator=(const Character&) = delete;
 
-
+    // 构造函数私有化
+    Character(const std::string& filename);
 
     int _money;                                 // 角色金钱
     int _currentEnergy;                         // 角色能量

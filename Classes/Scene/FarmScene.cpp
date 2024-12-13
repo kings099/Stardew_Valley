@@ -49,24 +49,27 @@ bool FarmScene::init()
     this->addChild(menu, 1);
 
     // 加载农场地图
-    farmMap = FarmMap::create("../Resources/Maps/Farm/farm2.tmx");
+    farmMap = FarmMap::create("../Resources/Maps/Farm/Farm_Combat.tmx");
     this->addChild(farmMap, 0); // 地图置于最底层
 
     // 加载角色
-    /*character->destroyInstance();*/
     character = Character::getInstance("../Resources/Characters/Elimy/ElimyDown1.png");
-    this->addChild(character.get(), 1); // 角色位于地图之上
+    this->addChild(character, 1); // 角色位于地图之上
+    character->pickUpObject(GAME_TOOL_OBJECTS_ATTRS[0],1);
+    character->pickUpObject(GAME_TOOL_OBJECTS_ATTRS[1],1);
+    character->pickUpObject(GAME_TOOL_OBJECTS_ATTRS[2],1);
 
     // 创建视角控制器
-    viewController = new GameViewController(character.get(), farmMap);
+    viewController = new GameViewController(character, farmMap);
     this->addChild(viewController, 2); // 控制器无需渲染，层级不重要
 
-    auto interaction = InteractionManager::create(character.get(), farmMap);
+    // 创建交互管理器
+    auto interaction = InteractionManager::create(farmMap);
     this->addChild(interaction);
 
     //创建场景转换器
     // 创建 MapSwitcher，并检查是否成功
-    auto mapSwitchManager = MapSwitchManager::create(character.get(), farmMap, viewController, interaction);
+    auto mapSwitchManager = MapSwitchManager::create(character, farmMap, viewController, interaction);
     this->addChild(mapSwitchManager);
     this->schedule([this, mapSwitchManager, interaction](float deltaTime) {
         Vec2 characterWorldPos = character->getPosition();
@@ -94,6 +97,7 @@ bool FarmScene::init()
     auto listener = EventListenerKeyboard::create();
     listener->onKeyPressed = [this](cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event) {
         this->character->onKeyPressed(keyCode, event);
+        this->uiLayer->onKeyPressed(keyCode, event);
         };
     listener->onKeyReleased = [this](cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event) {
         this->character->onKeyReleased(keyCode, event);

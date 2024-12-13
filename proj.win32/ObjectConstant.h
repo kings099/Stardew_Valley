@@ -177,26 +177,6 @@ struct ObjectListNode {
     ObjectListNodeStatus status;	// 物品状态(选中/未选中)
 };
 
-// 物品栏开启状态定义
-enum ObjectListStatus {
-    Close,		// 关闭
-    Open		// 打开
-};
-
-// 物品栏位置属性定义
-struct ObjectListLocation {
-    ObjectListStatus status;                      // 位置状态
-    int position;                                 // 物品栏物品格子位置坐标
-    bool operator<(const ObjectListLocation& other) const { // 重载运算符 < 用于 std::map
-        if (status < other.status) {
-            return true;
-        }
-        if (status > other.status) {
-            return false;
-        }
-        return position < other.position;
-    }
-};
 
 
 // 游戏物品属性参数定义
@@ -217,24 +197,6 @@ const std::vector<GameToolObject> GAME_TOOL_OBJECTS_ATTRS = {
     GameToolObject("../Resources/Objects/Tools/", "中级水壶", Farm, 2, 1, 55, Watering),
     GameToolObject("../Resources/Objects/Tools/", "高级水壶", Farm, 3, 1, 70, Watering)
 };
-
-//const std::vector<GameCommonObject>GAME_COMMON_OBJECTS_ATTRS = {
-//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "初级锄头", Farm, 1, 1, INT_MAX,Plowing)),
-//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "中级锄头", Farm, 2, 1, INT_MAX,Plowing)),
-//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "高级锄头", Farm, 3, 1, INT_MAX,Plowing)),
-//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "初级斧头", Collect, 1, 5, INT_MAX,Cutting)),
-//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "中级斧头", Collect, 2, 4, INT_MAX,Cutting)),
-//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "高级斧头", Collect, 3, 3, INT_MAX,Cutting)),
-//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "初级镐子", Mine, 1, 5, INT_MAX,Mining)),
-//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "中级镐子", Mine, 2, 4, INT_MAX,Mining)),
-//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "高级镐子", Mine, 3, 3, INT_MAX,Mining)),
-//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "初级鱼竿", Fish, 1, 1, INT_MAX,Fishing)),
-//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "中级鱼竿", Fish, 2, 1, INT_MAX,Fishing)),
-//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "高级鱼竿", Fish, 3, 1, INT_MAX,Fishing)),
-//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "初级水壶", Farm, 1, 1, 40,Watering)),
-//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "中级水壶", Farm, 2, 1, 55,Watering)),
-//GameCommonObject(Tool, std::make_unique<GameToolObject>("", "高级水壶", Farm, 3, 1, 70,Watering)),
-//};
 
 
 #endif // _CONSTANT_OBJECT_H_
