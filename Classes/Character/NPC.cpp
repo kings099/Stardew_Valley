@@ -31,6 +31,11 @@ void NPC::initializeSprite(const std::string& idleImage, const std::vector<std::
     sprite->setPosition(getPosition());
     addChild(sprite);
 
+    // 设置精灵缩放比例
+    sprite->setScaleX(32.0f / sprite->getContentSize().width);  
+    sprite->setScaleY(64.0f / sprite->getContentSize().height); 
+
+    // 设置行走动画
     cocos2d::Vector<cocos2d::SpriteFrame*> walkSpriteFrames;
     for (const auto& frame : walkFrames) {
         walkSpriteFrames.pushBack(cocos2d::SpriteFrame::create(frame, cocos2d::Rect(0, 0, 64, 64)));
