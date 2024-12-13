@@ -364,8 +364,8 @@ void UILayer::updateObjectList() {
 
 
         // 计算标签的位置，使其相对于背景位置
-        const Vec2 labelPos1 = Vec2(rightTopPos.x + originalTimeDisplaySize.width * 0.05, rightTopPos.y + originalTimeDisplaySize.height * scaleY * 0.35f);  // 在背景图片的顶部
-        const Vec2 labelPos2 = Vec2(rightTopPos.x + originalTimeDisplaySize.width * 0.05, rightTopPos.y - originalTimeDisplaySize.height * scaleY * 0.05f);  // 在 labelPos1 下面偏移 30
+        const Vec2 labelPos1 = Vec2(rightTopPos.x + originalTimeDisplaySize.width * 0.1, rightTopPos.y + originalTimeDisplaySize.height * scaleY * 0.32f);  // 在背景图片的顶部
+        const Vec2 labelPos2 = Vec2(rightTopPos.x + originalTimeDisplaySize.width * 0.1, rightTopPos.y - originalTimeDisplaySize.height * scaleY * 0.05f);  // 在 labelPos1 下面偏移 30
 
         // 创建并初始化 timeLabel1 和 timeLabel2
         timeLabel1 = Label::createWithSystemFont("", "Arial", FONT_SIZE);
