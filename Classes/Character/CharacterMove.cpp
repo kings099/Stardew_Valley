@@ -8,25 +8,37 @@
  ****************************************************************/
 
 #include "CharacterMove.h"
+#include "Classes/Maps/FarmMap.h"
+
 #include "../proj.win32/Constant.h"
 
 USING_NS_CC;
 
 // 构造函数
-CharacterMove::CharacterMove() :
+CharacterMove::CharacterMove() {}
+
+CharacterMove::CharacterMove(const std::string& filename) :
     _moveSpeed(CHARACTER_MOVE_SPEED),
     _moveUp(false),
     _moveDown(false),
     _moveLeft(false),
     _moveRight(false),
-    _animationPlaying(false),
     _width(CHARACTER_WIDTH),
     _height(CHARACTER_HEIGHT),
-    _character(nullptr)
-  
+    _character(nullptr),
+    _currentDirection(Down),
+    _lastDirection(Down)
 {
-    _currentDirection = "down";
-    _lastDirection = "down";
+    // 获取屏幕窗口大小
+    const auto visibleSize = Director::getInstance()->getVisibleSize();
+    const Vec2 origin = Director::getInstance()->getVisibleOrigin();
+
+    // 创建精灵并设置初始位置
+    _character = Sprite::create(filename);
+    _character->setAnchorPoint(Vec2(0.5, 0.5));
+   // _character->setScale(2.0f);
+    _character->setPosition(Vec2(visibleSize.width / 2 + origin.x + _width / 2, visibleSize.height / 2 + origin.y + _height / 2));
+    this->cocos2d::Node::addChild(_character);
 }
 
 // 按下键盘时的处理
@@ -68,57 +80,59 @@ void CharacterMove::onKeyReleased(EventKeyboard::KeyCode keyCode, Event* event) 
     default:
         break;
     }
+    
 }
 
 // 展示动画效果
 void CharacterMove::playAnimation() {
     // 动作序列
     if (_moveLeft) {
-        _currentDirection = "left";
+        _currentDirection = Left;
         _frames = {
-           SpriteFrame::create("../Resources/Characters/Elimy/ElimyLeft3.png", Rect(0, 0, _width, _height)),
-           SpriteFrame::create("../Resources/Characters/Elimy/ElimyLeft2.png", Rect(0, 0,  _width, _height)),
-           SpriteFrame::create("../Resources/Characters/Elimy/ElimyLeft3.png", Rect(0, 0, _width, _height)),
-           SpriteFrame::create("../Resources/Characters/Elimy/ElimyLeft4.png", Rect(0, 0, _width, _height))
+            SpriteFrame::create("../Resources/Characters/Bear/BearLeftAction1.png", Rect(0, 0, _width, _height)),
+           SpriteFrame::create("../Resources/Characters/Bear/BearLeftAction2.png", Rect(0, 0,  _width, _height)),
+           SpriteFrame::create("../Resources/Characters/Bear/BearLeftAction3.png", Rect(0, 0, _width, _height)),
+           SpriteFrame::create("../Resources/Characters/Bear/BearLeftAction4.png", Rect(0, 0, _width, _height))
         };
     }
     else if (_moveRight) {
-        _currentDirection = "right";
+        _currentDirection = Right;
         _frames = {
-         SpriteFrame::create("../Resources/Characters/Elimy/ElimyRight1.png", Rect(0, 0, _width, _height)),
-         SpriteFrame::create("../Resources/Characters/Elimy/ElimyRight2.png", Rect(0, 0, _width, _height)),
-         SpriteFrame::create("../Resources/Characters/Elimy/ElimyRight3.png", Rect(0, 0, _width, _height)),
-         SpriteFrame::create("../Resources/Characters/Elimy/ElimyRight4.png", Rect(0, 0, _width, _height))
+          SpriteFrame::create("../Resources/Characters/Bear/BearRightAction1.png", Rect(0, 0, _width, _height)),
+         SpriteFrame::create("../Resources/Characters/Bear/BearRightAction2.png", Rect(0, 0, _width, _height)),
+         SpriteFrame::create("../Resources/Characters/Bear/BearRightAction3.png", Rect(0, 0, _width, _height)),
+         SpriteFrame::create("../Resources/Characters/Bear/BearRightAction4.png", Rect(0, 0, _width, _height))
         };
     }
-    else if (_moveUp && (!_moveRight && !_moveLeft)) {
-        _currentDirection = "up";
+    else if (_moveUp) {
+        _currentDirection =Up;
         _frames = {
-            SpriteFrame::create("../Resources/Characters/Elimy/ElimyUp1.png", Rect(0, 0, _width, _height)),
-            SpriteFrame::create("../Resources/Characters/Elimy/ElimyUp2.png", Rect(0, 0, _width, _height)),
-            SpriteFrame::create("../Resources/Characters/Elimy/ElimyUp3.png", Rect(0, 0, _width, _height)),
-            SpriteFrame::create("../Resources/Characters/Elimy/ElimyUp4.png", Rect(0, 0, _width, _height))
+                SpriteFrame::create("../Resources/Characters/Bear/BearUpAction1.png", Rect(0, 0, _width, _height)),
+            SpriteFrame::create("../Resources/Characters/Bear/BearUpAction2.png", Rect(0, 0, _width, _height)),
+            SpriteFrame::create("../Resources/Characters/Bear/BearUpAction3.png", Rect(0, 0, _width, _height)),
+            SpriteFrame::create("../Resources/Characters/Bear/BearUpAction4.png", Rect(0, 0, _width, _height))
         };
     }
-    else if (_moveDown && (!_moveRight && !_moveLeft)) {
-        _currentDirection = "down";
+    else if (_moveDown) {
+        _currentDirection = Down;
         _frames = {
-            SpriteFrame::create("../Resources/Characters/Elimy/ElimyDown1.png", Rect(0, 0, _width, _height)),
-            SpriteFrame::create("../Resources/Characters/Elimy/ElimyDown2.png", Rect(0, 0, _width, _height)),
-            SpriteFrame::create("../Resources/Characters/Elimy/ElimyDown3.png", Rect(0, 0, _width, _height)),
-            SpriteFrame::create("../Resources/Characters/Elimy/ElimyDown4.png", Rect(0, 0, _width, _height))
+             SpriteFrame::create("../Resources/Characters/Bear/BearDownAction1.png", Rect(0, 0, _width, _height)),
+            SpriteFrame::create("../Resources/Characters/Bear/BearDownAction2.png", Rect(0, 0, _width, _height)),
+            SpriteFrame::create("../Resources/Characters/Bear/BearDownAction3.png", Rect(0, 0, _width, _height)),
+            SpriteFrame::create("../Resources/Characters/Bear/BearDownAction4.png", Rect(0, 0, _width, _height))
         };
     }
 
     // 动画播放
+
     if (!_frames.empty() && (_currentDirection != _lastDirection)) {
         auto animation = Animation::createWithSpriteFrames(_frames, 0.8f / ACTION_RATE);
         auto animate = Animate::create(animation);
         _character->stopAllActions();
         _character->runAction(RepeatForever::create(animate));
-        _animationPlaying = true;
         _lastDirection = _currentDirection;
     }
+   
 }
 
 // 获取角色当前位置
@@ -138,12 +152,20 @@ void CharacterMove::stopMove() {
     _moveLeft = false;
     _moveRight = false;
     _character->stopAllActions();
-    _animationPlaying = false;
+
+}
+
+// 更新角色周围瓦片地图信息
+void CharacterMove::updateTileInfo(InteractionManager* interactionManager) {
+    Vec2 currentPosition = _character->getPosition();
+    //interactionManager->updateSurroundingTiles(currentPosition);
+    _surroundingTilesInfo = interactionManager->getSurroundingTiles();
 }
 
     // 更新角色位置
 cocos2d::Vec2 CharacterMove::updatePosition(float deltaTime) {
-    Vec2 newPosition = _character->getPosition();
+    Vec2 currentPosition = _character->getPosition();
+    Vec2 nextPosition = currentPosition;
     Vec2 moveDirection(0, 0);
 
     // 移动方向确定
@@ -159,18 +181,42 @@ cocos2d::Vec2 CharacterMove::updatePosition(float deltaTime) {
     if (_moveRight) {
         moveDirection.x += 1; // 向右
     }
-    if (moveDirection.x != 0 || moveDirection.y != 0) {
+
+    bool isObstacle = false;
+    switch (_currentDirection) {
+    case Up:
+        if (_surroundingTilesInfo[1].isObstacle)
+            isObstacle = true;
+        break;
+    case Down:
+        if (_surroundingTilesInfo[7].isObstacle)
+            isObstacle = true;
+        break;
+    case Left:
+        if (_surroundingTilesInfo[3].isObstacle)
+            isObstacle = true;
+        break;
+    case Right:
+        if (_surroundingTilesInfo[5].isObstacle)
+            isObstacle = true;
+        break;
+    default:
+        break;
+    }
+
+    if(moveDirection.x != 0 || moveDirection.y != 0) {
         moveDirection.normalize();
         const float currentSpeed = _moveSpeed / sqrtf(moveDirection.x * moveDirection.x + moveDirection.y * moveDirection.y);
-        newPosition += moveDirection * currentSpeed;
+        nextPosition = currentPosition + moveDirection * currentSpeed;
         playAnimation();
+        if (isObstacle)
+            nextPosition = currentPosition;
     }
     else {
+        nextPosition = currentPosition;
         _character->stopAllActions();
-        _animationPlaying = false;
     }
+    _character->setPosition(nextPosition);
 
-    _character->setPosition(newPosition);
-
-    return newPosition;
+    return nextPosition;
 }

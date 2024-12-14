@@ -12,10 +12,10 @@
 
 #include "cocos2d.h"
 #include "Classes/Character/Character.h"
-#include "Classes/Manager/TimeManager.h"
+#include "Control/TimeManager.h"
 #include "Classes/MenuImage/HoverMenuItemImage.h"
 #include "Classes/Layer/PlacementMarkerLayer.h"
-#include "../proj.win32/ObjectConstant.h"
+#include "../proj.win32/Constant.h"
 
 class UILayer : public cocos2d::Layer {
 public:

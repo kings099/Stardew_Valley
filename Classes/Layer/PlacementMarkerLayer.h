@@ -14,7 +14,7 @@
 #include "cocos2d.h"
 #include "Character/Character.h"
 #include "proj.win32/Constant.h"
-#include "proj.win32/ObjectConstant.h"
+
 
 
 class PlacementMarkerLayer : public cocos2d::Layer {

@@ -1,8 +1,8 @@
 /****************************************************************
  * Project Name:  Stardew_Valley
  * File Name:     UILayer.cpp
- * File Function: UI½çÃæUILayerÀàµÄÊµÏÖ
- * Author:        ´ïË¼î££¬Òü³Ï³É
+ * File Function: UIç•Œé¢UILayerç±»çš„å®ç°
+ * Author:        è¾¾æ€ç¿ï¼Œå°¹è¯šæˆ
  * Update Date:   2024/12/11
  * License:       MIT License
  ****************************************************************/
@@ -12,7 +12,7 @@
 
 USING_NS_CC;
 
-// ¹¹Ôìº¯Êı
+// æ„é€ å‡½æ•°
 UILayer::UILayer() :
     timeLabel1(nullptr),
     timeLabel2(nullptr),
@@ -33,7 +33,7 @@ UILayer::UILayer() :
     std::fill_n(closedObjectSpriteImage, OBJECT_LIST_COLS, nullptr);
     std::fill_n(openedObjectSpriteImage, OBJECT_LIST_COLS * OBJECT_LIST_ROWS, nullptr);
 
-    // Êó±êÊÂ¼ş¼àÌıÆ÷
+    // é¼ æ ‡äº‹ä»¶ç›‘å¬å™¨
     auto mouseListener = cocos2d::EventListenerMouse::create();
     mouseListener->onMouseDown = CC_CALLBACK_1(UILayer::onMouseDown, this);
     mouseListener->onMouseMove = CC_CALLBACK_1(UILayer::onMouseMove, this);
@@ -41,7 +41,7 @@ UILayer::UILayer() :
     this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(mouseListener, this);
 }
 
-// Îö¹¹º¯Êı
+// ææ„å‡½æ•°
 UILayer::~UILayer() {
     //delete character;
     //delete objectListLayer;
@@ -52,7 +52,7 @@ UILayer::~UILayer() {
     //delete closeObjectListButton;
 }
 
-// ³õÊ¼»¯UI²ã
+// åˆå§‹åŒ–UIå±‚
 bool UILayer::init() {
     if (!Layer::init()) {
         return false;
@@ -63,9 +63,9 @@ bool UILayer::init() {
     return true;
 }
 
-// ³õÊ¼»¯ÎïÆ·À¸
+// åˆå§‹åŒ–ç‰©å“æ 
 void UILayer::initializeObjectList() {
-    // ´´½¨ÎïÆ·À¸±³¾°
+    // åˆ›å»ºç‰©å“æ èƒŒæ™¯
     closedobjectListLayer = Sprite::create("../Resources/UI/ObjectListRow.png");
     closedobjectListLayer->setPosition(Vec2(visibleSize.width / 2, visibleSize.height - closedobjectListLayer->getContentSize().height / 2));
     this->addChild(closedobjectListLayer, UI_LAYER_GRADE);
@@ -75,7 +75,7 @@ void UILayer::initializeObjectList() {
     this->addChild(openedobjectListLayer, UI_LAYER_GRADE);
     openedobjectListLayer->setVisible(false);
 
-    // ´´½¨ÎïÆ·À¸Ñ¡ÖĞ¿ò
+    // åˆ›å»ºç‰©å“æ é€‰ä¸­æ¡†
     for (int i = 0; i < OBJECT_LIST_COLS; i++) {
         selectObjectSpriteMarker[i] = Sprite::create("../Resources/UI/SelectionMarker.png");
         selectObjectSpriteMarker[i]->setPosition(LocationMap::getInstance().getLocationMap().at(i));
@@ -84,7 +84,7 @@ void UILayer::initializeObjectList() {
     }
     selectObjectSpriteMarker[0]->setVisible(true);
 
-    // ´´½¨É¾³ıÎïÆ·°´Å¥
+    // åˆ›å»ºåˆ é™¤ç‰©å“æŒ‰é’®
     deleteObjectButton = HoverMenuItemImage::create(
         "../Resources/UI/DefaultGarbageBinButton.png",
         "../Resources/UI/HoverGarbageBinButton.png",
@@ -94,7 +94,7 @@ void UILayer::initializeObjectList() {
     this->addChild(deleteObjectButton, UI_LAYER_GRADE);
     deleteObjectButton->setVisible(false);
 
-    // ´´½¨¹Ø±ÕÎïÆ·À¸°´Å¥
+    // åˆ›å»ºå…³é—­ç‰©å“æ æŒ‰é’®
     closeObjectListButton = HoverMenuItemImage::create(
         "../Resources/UI/defaultCloseMenuButton.png",
         "../Resources/UI/defaultCloseMenuButton.png",
@@ -105,12 +105,12 @@ void UILayer::initializeObjectList() {
     closeObjectListButton->setVisible(false);
 }
 
-// ¸üĞÂÎïÆ·À¸
+// æ›´æ–°ç‰©å“æ 
 void UILayer::updateObjectList() {
-    // »ñÈ¡½ÇÉ«µÄÎïÆ·À¸×´Ì¬ºÍ´°¿Ú´óĞ¡
+    // è·å–è§’è‰²çš„ç‰©å“æ çŠ¶æ€å’Œçª—å£å¤§å°
     const auto objectListStatus = character->getObjectListStatus();
     const int index = character->getCurrentObjectIndex();
-    // ¸ù¾İ½ÇÉ«µÄÎïÆ·À¸×´Ì¬³õÊ¼»¯ÎïÆ·À¸±³¾°
+    // æ ¹æ®è§’è‰²çš„ç‰©å“æ çŠ¶æ€åˆå§‹åŒ–ç‰©å“æ èƒŒæ™¯
     if (!objectListStatus) {
         closedobjectListLayer->setVisible(true);
         openedobjectListLayer->setVisible(false);
@@ -130,7 +130,7 @@ void UILayer::updateObjectList() {
 }
 
 
-    // ÏÔÊ¾ÎïÆ·Í¼Æ¬
+    // æ˜¾ç¤ºç‰©å“å›¾ç‰‡
     void UILayer::showObjectImage() {
         objectListStatus = character->getObjectListStatus();
         if (!objectListStatus) {
@@ -174,18 +174,18 @@ void UILayer::updateObjectList() {
         }
     }
 
-    // °´ÏÂÊó±êÊÂ¼ş´¥·¢º¯Êı
+    // æŒ‰ä¸‹é¼ æ ‡äº‹ä»¶è§¦å‘å‡½æ•°
     void UILayer::onMouseDown(cocos2d::Event * event) {
         EventMouse* mouseEvent = dynamic_cast<EventMouse*>(event);
         Vec2 location = mouseEvent->getLocationInView();
         objectListStatus = character->getObjectListStatus();
         selectedObjectSprite = nullptr;
 
-        // µ±ÎïÆ·À¸±»´ò¿ªÊ±²Å»á¼ì²â
+        // å½“ç‰©å“æ è¢«æ‰“å¼€æ—¶æ‰ä¼šæ£€æµ‹
         if (objectListStatus) {
             for (int i = 0; i < OBJECT_LIST_ROWS * OBJECT_LIST_COLS; i++) {
                 const auto sprite = openedObjectSpriteImage[i];
-                //TODO:¿ÕÖ¸Õë
+                //TODO:ç©ºæŒ‡é’ˆ
                 if (sprite != nullptr) {
                     const Vec2 spritePos = sprite->getPosition();
                     const Size spriteSize = sprite->getContentSize();
@@ -202,7 +202,7 @@ void UILayer::updateObjectList() {
         }
 
         if (selectedObjectSprite) {
-            // ±ê¼ÇÑ¡ÖĞ×´Ì¬
+            // æ ‡è®°é€‰ä¸­çŠ¶æ€
             if (objectListStatus) {
                 selectedObjectSprite->setUserData(reinterpret_cast<void*>(1));
                 nearestPlacementMarker = Sprite::create("../Resources/UI/NearestPlacementMarker.png");
@@ -217,7 +217,7 @@ void UILayer::updateObjectList() {
                 }
                 character->setCurrentObject(startLocation);
 
-                // ´´½¨·ÅÖÃ±ê¼Ç²ã
+                // åˆ›å»ºæ”¾ç½®æ ‡è®°å±‚
                 placementMarkerLayer = PlacementMarkerLayer::create();
                 placementMarkerLayer->showPlacementMarker();
                 this->addChild(placementMarkerLayer, OBJECT_LAYER_GRADE);
@@ -225,7 +225,7 @@ void UILayer::updateObjectList() {
         }
     }
 
-    // ÒÆ¶¯Êó±êÊÂ¼ş´¥·¢º¯Êı
+    // ç§»åŠ¨é¼ æ ‡äº‹ä»¶è§¦å‘å‡½æ•°
     void UILayer::onMouseMove(cocos2d::Event * event) {
         objectListStatus = character->getObjectListStatus();
         if (objectListStatus) {
@@ -235,7 +235,10 @@ void UILayer::updateObjectList() {
                     nearestPlacementMarker->setVisible(true);
                 }
 
-                // ÒÆ¶¯ÎïÆ·
+
+    
+
+                // ç§»åŠ¨ç‰©å“
                 EventMouse* mouseEvent = dynamic_cast<EventMouse*>(event);
                 Vec2 location = mouseEvent->getLocationInView();
                 if (location.x >= OPEN_OBJIEC_LIST_DELETE_BUTTON_LEFT_BOUDARY &&
@@ -249,17 +252,18 @@ void UILayer::updateObjectList() {
         }
     }
 
-    // ÊÍ·ÅÊó±êÊÂ¼ş´¥·¢º¯Êı
+
+    // é‡Šæ”¾é¼ æ ‡äº‹ä»¶è§¦å‘å‡½æ•°
     void UILayer::onMouseUp(cocos2d::Event * event) {
         objectListStatus = character->getObjectListStatus();
         if (objectListStatus) {
             if (selectedObjectSprite != nullptr) {
-                // È¡ÏûÑ¡ÖĞ×´Ì¬
+                // å–æ¶ˆé€‰ä¸­çŠ¶æ€
                 selectedObjectSprite->setUserData(nullptr);
                 nearestPlacementMarker->removeFromParent();
                 nearestPlacementMarker = nullptr;
 
-                // É¾³ıµ±Ç°ÎïÆ·
+                // åˆ é™¤å½“å‰ç‰©å“
                 bool isDelete = false;
                 const Vec2 currentPos = selectedObjectSprite->getPosition();
                 if (currentPos.x >= OPEN_OBJIEC_LIST_DELETE_BUTTON_LEFT_BOUDARY &&
@@ -270,10 +274,10 @@ void UILayer::updateObjectList() {
                 }
 
                 if (!isDelete) {
-                    // ±éÀúËùÓĞ¿É·ÅÖÃÎ»ÖÃ
+                    // éå†æ‰€æœ‰å¯æ”¾ç½®ä½ç½®
                     Vec2 nearestPoint = findNearestPoint(selectedObjectSprite);
 
-                    // È·¶¨ÎïÆ·ÒÆ¶¯Ä¿±êÎ»ÖÃÊôĞÔ
+                    // ç¡®å®šç‰©å“ç§»åŠ¨ç›®æ ‡ä½ç½®å±æ€§
                     int targetLocation = -1;
                     for (const auto& pair : LocationMap::getInstance().getLocationMap()) {
                         if (pair.second.equals(nearestPoint)) {
@@ -282,7 +286,7 @@ void UILayer::updateObjectList() {
                         }
                     }
 
-                    // ¸üĞÂÎïÆ·À¸
+                    // æ›´æ–°ç‰©å“æ 
                     character->swapObject(startLocation, targetLocation);
                     cocos2d::Sprite* currentObjectSprite;
 
@@ -297,7 +301,7 @@ void UILayer::updateObjectList() {
                     selectedObjectSprite->setVisible(false);
                     character->deleteCurrentObject();
                 }
-                // ¹Ø±Õ·ÅÖÃ±ê¼Ç²ã
+                // å…³é—­æ”¾ç½®æ ‡è®°å±‚
                 this->removeChild(placementMarkerLayer);
                 placementMarkerLayer = nullptr;
                 selectedObjectSprite = nullptr;
@@ -305,7 +309,7 @@ void UILayer::updateObjectList() {
         }
     }
 
-    // °´ÏÂ¼üÅÌÊÂ¼ş´¥·¢º¯Êı
+    // æŒ‰ä¸‹é”®ç›˜äº‹ä»¶è§¦å‘å‡½æ•°
     void UILayer::onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event * event) {
 
 
@@ -315,7 +319,7 @@ void UILayer::updateObjectList() {
         setSelectObjectSpriteMarker(lastSelectedObjectIndex, false);
         if (!objectListStatus) {
             setSelectObjectSpriteMarker(index, true);
-            // ÓĞÎïÆ·¶ªÆú£¬ĞèÒª¸üĞÂÎïÆ·À¸
+            // æœ‰ç‰©å“ä¸¢å¼ƒï¼Œéœ€è¦æ›´æ–°ç‰©å“æ 
             if (keyCode == EventKeyboard::KeyCode::KEY_Q) {
                 if (closedObjectSpriteImage[index] != nullptr) {
                     closedObjectSpriteImage[index]->setVisible(false);
@@ -330,40 +334,40 @@ void UILayer::updateObjectList() {
         lastSelectedObjectIndex = index;
     }
 
-    // ³õÊ¼»¯Ê±¼äÏÔÊ¾Æ÷
+    // åˆå§‹åŒ–æ—¶é—´æ˜¾ç¤ºå™¨
     void UILayer::initializeTimeDisplay() {
-        // »ñÈ¡¿É¼ûÇøÓò´óĞ¡
+        // è·å–å¯è§åŒºåŸŸå¤§å°
         visibleSize = Director::getInstance()->getVisibleSize();
 
-        // ¼ÆËãÓÒÉÏ½ÇµÄÎ»ÖÃ
-        const Vec2 rightTopPos = Vec2(visibleSize.width * 0.9f, visibleSize.height * 0.9f);  // ÓÒÉÏ½Ç£¬µ÷Õûµ½ºÏÊÊµÄÆ«ÒÆÁ¿
+        // è®¡ç®—å³ä¸Šè§’çš„ä½ç½®
+        const Vec2 rightTopPos = Vec2(visibleSize.width * 0.9f, visibleSize.height * 0.9f);  // å³ä¸Šè§’ï¼Œè°ƒæ•´åˆ°åˆé€‚çš„åç§»é‡
 
-        // ´´½¨±³¾°Í¼Æ¬
+        // åˆ›å»ºèƒŒæ™¯å›¾ç‰‡
         timeDisplayLayer = Sprite::create("../Resources/UI/timetable.png");
 
-        // »ñÈ¡Ô­Ê¼Í¼Æ¬³ß´ç
+        // è·å–åŸå§‹å›¾ç‰‡å°ºå¯¸
         const Size originalTimeDisplaySize = timeDisplayLayer->getContentSize();
 
-        // ¼ÆËãËõ·Å±ÈÀı£¬Ê¹µÃÍ¼Æ¬ÊÊÓ¦ 16x16 ÏñËØ
-        const float scaleX = UI_SCALE / originalTimeDisplaySize.width;  // ¼ÆËã X ·½ÏòµÄËõ·Å±ÈÀı
-        const float scaleY = UI_SCALE / originalTimeDisplaySize.height; // ¼ÆËã Y ·½ÏòµÄËõ·Å±ÈÀı
+        // è®¡ç®—ç¼©æ”¾æ¯”ä¾‹ï¼Œä½¿å¾—å›¾ç‰‡é€‚åº” 16x16 åƒç´ 
+        const float scaleX = UI_SCALE / originalTimeDisplaySize.width;  // è®¡ç®— X æ–¹å‘çš„ç¼©æ”¾æ¯”ä¾‹
+        const float scaleY = UI_SCALE / originalTimeDisplaySize.height; // è®¡ç®— Y æ–¹å‘çš„ç¼©æ”¾æ¯”ä¾‹
 
-        // ÉèÖÃËõ·Å±ÈÀı
+        // è®¾ç½®ç¼©æ”¾æ¯”ä¾‹
         timeDisplayLayer->setScale(scaleX, scaleY);
 
-        // ÉèÖÃ±³¾°Í¼Æ¬Î»ÖÃ
+        // è®¾ç½®èƒŒæ™¯å›¾ç‰‡ä½ç½®
         timeDisplayLayer->setPosition(rightTopPos);
 
-        // Ìí¼Óµ½³¡¾°
+        // æ·»åŠ åˆ°åœºæ™¯
 
         this->addChild(timeDisplayLayer, UI_LAYER_GRADE);
 
 
-        // ¼ÆËã±êÇ©µÄÎ»ÖÃ£¬Ê¹ÆäÏà¶ÔÓÚ±³¾°Î»ÖÃ
-        const Vec2 labelPos1 = Vec2(rightTopPos.x + originalTimeDisplaySize.width * 0.05, rightTopPos.y + originalTimeDisplaySize.height * scaleY * 0.35f);  // ÔÚ±³¾°Í¼Æ¬µÄ¶¥²¿
-        const Vec2 labelPos2 = Vec2(rightTopPos.x + originalTimeDisplaySize.width * 0.05, rightTopPos.y - originalTimeDisplaySize.height * scaleY * 0.05f);  // ÔÚ labelPos1 ÏÂÃæÆ«ÒÆ 30
+        // è®¡ç®—æ ‡ç­¾çš„ä½ç½®ï¼Œä½¿å…¶ç›¸å¯¹äºèƒŒæ™¯ä½ç½®
+        const Vec2 labelPos1 = Vec2(rightTopPos.x + originalTimeDisplaySize.width * 0.1, rightTopPos.y + originalTimeDisplaySize.height * scaleY * 0.32f);  // åœ¨èƒŒæ™¯å›¾ç‰‡çš„é¡¶éƒ¨
+        const Vec2 labelPos2 = Vec2(rightTopPos.x + originalTimeDisplaySize.width * 0.1, rightTopPos.y - originalTimeDisplaySize.height * scaleY * 0.05f);  // åœ¨ labelPos1 ä¸‹é¢åç§» 30
 
-        // ´´½¨²¢³õÊ¼»¯ timeLabel1 ºÍ timeLabel2
+        // åˆ›å»ºå¹¶åˆå§‹åŒ– timeLabel1 å’Œ timeLabel2
         timeLabel1 = Label::createWithSystemFont("", "Arial", FONT_SIZE);
         timeLabel1->setPosition(labelPos1);
         this->addChild(timeLabel1, UI_LAYER_GRADE);
@@ -373,38 +377,38 @@ void UILayer::updateObjectList() {
         this->addChild(timeLabel2, UI_LAYER_GRADE);
     }
 
-    // ¸üĞÂÊ±¼äÏÔÊ¾Æ÷
+    // æ›´æ–°æ—¶é—´æ˜¾ç¤ºå™¨
     void UILayer::updateTimeDisplay() {
-        // »ñÈ¡ TimeManager µÄÊµÀı
+        // è·å– TimeManager çš„å®ä¾‹
         const TimeManager* timeManager = TimeManager::getInstance();
 
-        // »ñÈ¡²¢¸üĞÂÈÕÆÚĞÅÏ¢£¨ĞÇÆÚºÍÈÕÆÚ£©
+        // è·å–å¹¶æ›´æ–°æ—¥æœŸä¿¡æ¯ï¼ˆæ˜ŸæœŸå’Œæ—¥æœŸï¼‰
         std::string weekDay = timeManager->getWeekDay();
-        timeLabel1->setString(weekDay);  // ÏÔÊ¾ĞÇÆÚ¼¸ 
+        timeLabel1->setString(weekDay);  // æ˜¾ç¤ºæ˜ŸæœŸå‡  
 
-        // »ñÈ¡²¢¸üĞÂÊ±¼äĞÅÏ¢£¨°×Ìì/ÍíÉÏºÍµ±Ç°Ê±¼ä£©
+        // è·å–å¹¶æ›´æ–°æ—¶é—´ä¿¡æ¯ï¼ˆç™½å¤©/æ™šä¸Šå’Œå½“å‰æ—¶é—´ï¼‰
         const bool isDaytime = timeManager->isDaytime();
 
         std::string dayOrNight = isDaytime ? "Day" : "Night";
         std::string timeOfDay = timeManager->getCurrentTime();
-        timeLabel2->setString(dayOrNight + " " + timeOfDay);  // ÏÔÊ¾°×Ìì/ÍíÉÏºÍµ±Ç°Ê±¼ä  µÄ´úÂë²¿·Ö
+        timeLabel2->setString(dayOrNight + " " + timeOfDay);  // æ˜¾ç¤ºç™½å¤©/æ™šä¸Šå’Œå½“å‰æ—¶é—´  çš„ä»£ç éƒ¨åˆ†
 
     }
 
-    // ¸üĞÂUI½çÃæ
+    // æ›´æ–°UIç•Œé¢
     void UILayer::update(float deltaTime) {
-        // ¸üĞÂÎïÆ·À¸
+        // æ›´æ–°ç‰©å“æ 
         objectListStatus = character->getObjectListStatus();
         if (objectListStatus != lastObjectListStatus) {
             updateObjectList();
             showObjectImage();
         }
-        // ¸üĞÂÊ±¼äÏÔÊ¾Æ÷
+        // æ›´æ–°æ—¶é—´æ˜¾ç¤ºå™¨
         updateTimeDisplay();
     }
 
 
-    // Ñ°ÕÒ×î½ü¿É·ÅÖÃ×ø±ê
+    // å¯»æ‰¾æœ€è¿‘å¯æ”¾ç½®åæ ‡
     Vec2 UILayer::findNearestPoint(cocos2d::Sprite * objectSprite) {
         float minDistance = FLT_MAX;
         Vec2 nearestPoint;
@@ -412,10 +416,10 @@ void UILayer::updateObjectList() {
         const Vec2 currentPos = objectSprite->getPosition();
         const auto objectListStatus = character->getObjectListStatus();
 
-        if (!objectListStatus) {// ÎïÆ·À¸¹Ø±Õ
+        if (!objectListStatus) {// ç‰©å“æ å…³é—­
 
         }
-        else {  // ÎïÆ·À¸´ò¿ª
+        else {  // ç‰©å“æ æ‰“å¼€
             for (const auto& point : LocationMap::getInstance().getLocationMap()) {
 
                 const int currentLocation = point.first;
@@ -438,7 +442,7 @@ void UILayer::updateObjectList() {
         return nearestPoint;
     }
 
-    // ÉèÖÃÑ¡ÖĞÎïÆ·±ê¼Ç¿òµÄÏÔÊ¾×´Ì¬
+    // è®¾ç½®é€‰ä¸­ç‰©å“æ ‡è®°æ¡†çš„æ˜¾ç¤ºçŠ¶æ€
     void UILayer::setSelectObjectSpriteMarker(int index, bool show) {
         if (index >= OBJECT_LIST_COLS)
 
