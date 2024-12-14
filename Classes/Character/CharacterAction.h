@@ -20,10 +20,10 @@ public:
 	CharacterAction(const std::string& filename);
 
 	// 按下鼠标事件触发函数
-	void onMouseDown(cocos2d::Event* event);
+	void onMouseDown(cocos2d::Event* event,GameCharacterAction &gameCharacterAction,cocos2d::Vec2 & targetTilePos);
 
-	// 更新技能等级
-	void updateSkillLevel();
+	// 更新技能经验值和等级
+	void updateSkillExprienceAndLevel(GameCharacterAction gameCharacterAction);
 
 
 	int _sikllLevel[SKILL_KIND_NUM];		//技能等级数组
@@ -38,10 +38,7 @@ private:
 	GameCharacterAction getAction();
 
 	// 判断角色是否可以执行动作
-	bool checkActionIsValid();
-
-	// 执行动作
-	void doAction();
+	GameCharacterAction checkActionIsValid( cocos2d::Vec2& targetTilePos);
 };
 
 #endif // !_CHARACTER_ACTION_H_

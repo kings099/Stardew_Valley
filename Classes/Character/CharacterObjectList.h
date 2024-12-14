@@ -11,9 +11,10 @@
 #define __CHARACTER_OBJECT_LIST_H__
 
 #include <vector>
+
 #include "cocos2d.h"
 #include "../proj.win32/Constant.h"
-#include "../proj.win32/Constant.h"
+
 
 class CharacterObjectList : virtual public cocos2d::Node {
 public:
@@ -55,10 +56,15 @@ public:
 
 	// 设置物品栏状态
 	void setObjectListStatus(bool status);
+
+	// 保存物品栏数据
+	void saveObjectListData(const std::string& fileName);
+
+	// 读取物品栏数据
+	//void readObjectListData(const std::string& fileName);
 private:
 	std::vector<ObjectListNode> _objectList;	// 物品栏列表
 	int _maxObjectKindCount;					// 物品栏最大物品种类容量
-	int _currentObjectKindCount;				// 当前物品种类物品数量
 	int _currentObjectIndex;					// 当前选中的物品索引
 	bool _openObjectList;						// 是否打开物品栏
 
@@ -73,6 +79,9 @@ private:
 
 	// 检查物品栏是否已满
 	bool checkObjectListFull();
+
+	// 检查物品栏是否为空
+	bool checkObjectListEmpty();
 };
 
 #endif // !__CHARACTER_OBJECT_LIST_H__

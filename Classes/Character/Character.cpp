@@ -52,8 +52,8 @@ void Character::onKeyReleased(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::
 }
 
 // 按下鼠标时的处理
-void Character::onMouseDown(cocos2d::Event* event) {
-    CharacterAction::onMouseDown(event);
+void Character::onMouseDown(cocos2d::Event* event, GameCharacterAction& gameCharacterAction, cocos2d::Vec2& targetTilePos) {
+    CharacterAction::onMouseDown(event, gameCharacterAction, targetTilePos);
 }
 
 // 更新角色位置
