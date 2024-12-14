@@ -65,6 +65,23 @@ Vec2 GameMap::absoluteToTile(const Vec2& pixelPoint)
     return Vec2(floor(tileX), floor(tileY));
 }
 
+Vec2 GameMap::tileToAbsolute(const Vec2& tileCoord)
+{
+    float scale = this->getScale();
+    // 获取瓦片大小
+    Size tileSize = _tile_map->getTileSize();
+
+    // 计算瓦片左下角的绝对坐标
+    float pixelX = tileCoord.x * tileSize.width * scale + _map_position.x;
+    float pixelY = (_tile_map->getMapSize().height - tileCoord.y - 1) * tileSize.height * scale + _map_position.y;
+
+    // 加上瓦片一半的宽高，得到瓦片的中点坐标
+    pixelX += (tileSize.width * scale) / 2.0f;
+    pixelY += (tileSize.height * scale) / 2.0f;
+
+    return Vec2(pixelX, pixelY);
+}
+
 const Size& GameMap::getMapSize() const
 {
     Size map_size_in_tiles = _tile_map->getMapSize();

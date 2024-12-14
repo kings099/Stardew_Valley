@@ -155,6 +155,7 @@ enum TileType {
 struct TileInfo {
     TileType type;
     cocos2d::Vec2 tilePos;  // 瓦片坐标
+    cocos2d::Vec2 WorldPos; // 世界坐标
     bool isObstacle;        // 是否为障碍物
 };
 

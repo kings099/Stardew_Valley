@@ -65,7 +65,8 @@ bool FarmMap::onMouseEvent(cocos2d::Event* event)
         CCLOG("TILED POS: %f,%f", tiledPos.x, tiledPos.y);
         int GID = getTileGIDAt("farm", tiledPos);
         CCLOG("click GID:%d", GID);
-
+        Vec2 worldpos = tileToAbsolute(tiledPos);
+        CCLOG("WORLD POS: %f,%f", worldpos.x, worldpos.y);
         return true;
     }
     return false;

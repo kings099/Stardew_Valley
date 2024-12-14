@@ -103,6 +103,18 @@ bool FarmScene::init()
         };
     _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
 
+    auto mouselistener = EventListenerMouse::create();
+    mouselistener->onMouseDown = [this,interaction](Event* event) {
+        Vec2 actionTilePos;
+        GameCharacterAction action;
+        this->character->onMouseDown(event, action, actionTilePos);
+        interaction->ActionAnimation(action, actionTilePos);
+        CCLOG("target tile: (%f, %f), action: %d",
+            actionTilePos.x, actionTilePos.y, action);
+        };
+    // 注册监听器
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(mouselistener, this);
+
     // 设置更新回调
     this->schedule([this, uiContainer](float deltaTime) {
         if (viewController) {

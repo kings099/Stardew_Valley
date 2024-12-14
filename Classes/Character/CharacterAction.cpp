@@ -77,7 +77,7 @@ GameCharacterAction CharacterAction::checkActionIsValid(Vec2 & targetTilePos) {
 	default:
 		break;
 	}
-
+	targetTilePos = targetTileNode.tilePos;
 	// 检查动作是否与目标地块类型匹配
 	for (auto& test : ACTION_TO_TILEMAP) {
 		if (action == test.first && targetTileNode.type == test.second) {

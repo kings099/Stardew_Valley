@@ -28,6 +28,9 @@ public:
     // 转换世界坐标到地图瓦片坐标
     virtual Vec2 absoluteToTile(const Vec2& pixelPoint);
 
+    // 转换瓦片坐标到世界坐标（中点）
+    Vec2 tileToAbsolute(const Vec2& tileCoord);
+
     // 地图像素大小
     const Size& getMapSize() const;
 

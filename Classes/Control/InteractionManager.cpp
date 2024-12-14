@@ -61,6 +61,7 @@ void InteractionManager::updateSurroundingTiles(Vec2& world_pos) {
     for (const auto& coord : surroundingCoords) {
         TileInfo tileInfo;
         tileInfo.tilePos = coord;
+        tileInfo.WorldPos = _gameMap->tileToAbsolute(coord);
         tileInfo.type = Other; // 默认类型
         tileInfo.isObstacle = isCollidableAtPos(coord);
 
@@ -86,7 +87,7 @@ void InteractionManager::updateSurroundingTiles(Vec2& world_pos) {
                 tileInfo.type = Soil;
             }
         }
-
+        // 检查是否为 Soiled
         if (FarmGID == DRY_FARM_TILE_GID) {
             tileInfo.type = Soiled;
         }
