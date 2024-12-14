@@ -18,7 +18,7 @@ constexpr int MEDIUM_RESOLUTION_HEIGHT = 720;                               // �
 constexpr int LARGE_RESOLUTION_WIDTH = 1920;                                // 大屏分辨率宽度
 constexpr int LARGE_RESOLUTION_HEIGHT = 1080;                               // 大屏分辨率高度
 constexpr float FRAME_RATE = 60.0f;                                         // 游戏帧率
-const std::string APPLICATION_TITLE = u8"模拟游戏 Stardew Valley";         // 游戏应用标题
+const std::string APPLICATION_TITLE = u8"星露谷物语 Stardew Valley";         // 游戏应用标题
 
 // 移动相关设置
 constexpr float MOVE_SPEED = 3.5f;											// 移动速度
@@ -44,6 +44,12 @@ constexpr float LERP_SPEED = 0.1f;											// 插值平滑速度
 constexpr float SCENE_TRANSITION_TIME = 1.0f;								// 场景切换时间
 constexpr float FARM_MAP_SCALE = 2.0f;										// 农场地图缩放比例
 constexpr float INDOOR_MAP_SCALE = 5.0f;									// 室内地图缩放比例
+
+// 地图图块相关
+constexpr int DRY_FARM_TILE_GID = 2040;                                     // 干燥耕地效果动画图块GID
+constexpr int EMPTY_GID = 0;
+
+
 
 // 物品设置
 constexpr int OBJECT_LIST_ROWS = 3;											// 物品列表行数
@@ -149,6 +155,7 @@ enum TileType {
 struct TileInfo {
     TileType type;
     cocos2d::Vec2 tilePos;  // 瓦片坐标
+    cocos2d::Vec2 WorldPos; // 世界坐标
     bool isObstacle;        // 是否为障碍物
 };
 

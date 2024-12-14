@@ -99,3 +99,5 @@ Vec2 MapSwitchManager::getTargetPositionByID(int teleportID, GameMap* newMap) {
     return Vec2(0,0);
 }
 
+
+

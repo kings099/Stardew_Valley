@@ -65,6 +65,23 @@ Vec2 GameMap::absoluteToTile(const Vec2& pixelPoint)
     return Vec2(floor(tileX), floor(tileY));
 }
 
+Vec2 GameMap::tileToAbsolute(const Vec2& tileCoord)
+{
+    float scale = this->getScale();
+    // 获取瓦片大小
+    Size tileSize = _tile_map->getTileSize();
+
+    // 计算瓦片左下角的绝对坐标
+    float pixelX = tileCoord.x * tileSize.width * scale + _map_position.x;
+    float pixelY = (_tile_map->getMapSize().height - tileCoord.y - 1) * tileSize.height * scale + _map_position.y;
+
+    // 加上瓦片一半的宽高，得到瓦片的中点坐标
+    pixelX += (tileSize.width * scale) / 2.0f;
+    pixelY += (tileSize.height * scale) / 2.0f;
+
+    return Vec2(pixelX, pixelY);
+}
+
 const Size& GameMap::getMapSize() const
 {
     Size map_size_in_tiles = _tile_map->getMapSize();
@@ -109,6 +126,27 @@ cocos2d::ValueMap GameMap::getTilePropertiesForGID(int GID)
     }
     return cocos2d::ValueMap();
 }
+
+void GameMap::replaceTileAt(const std::string& layerName, const Vec2& tileCoord, int newGID) {
+    // 获取目标图层
+    auto layer = _tile_map->getLayer(layerName);
+    if (!layer) {
+        CCLOG("Layer '%s' not found!", layerName.c_str());
+        return;
+    }
+
+    // 检查瓦片坐标是否有效
+    auto mapSize = _tile_map->getMapSize(); // 地图尺寸（瓦片数）
+    if (tileCoord.x < 0 || tileCoord.y < 0 || tileCoord.x >= mapSize.width || tileCoord.y >= mapSize.height) {
+        CCLOG("Tile position (%f, %f) is out of bounds!", tileCoord.x, tileCoord.y);
+        return;
+    }
+
+    // 设置新瓦片
+    layer->setTileGID(newGID, tileCoord);
+    CCLOG("Replaced tile at (%f, %f) on layer '%s' with GID=%d", tileCoord.x, tileCoord.y, layerName.c_str(), newGID);
+}
+
 
 
 

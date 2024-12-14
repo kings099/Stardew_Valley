@@ -33,12 +33,6 @@ public:
     // 判断指定瓦片位置是否为不可通行区域
     bool isCollidableAtPos(const cocos2d::Vec2& tilePos);
 
-    // 获取角色周围的可通行状态
-    std::vector<bool> getSurroundingCollidable(const cocos2d::Vec2& currentPos);
-
-    // 判断指定世界坐标是否为可农耕区域
-    bool isFarmlandAtPos(const cocos2d::Vec2& worldPos);
-
     // 检查角色是否站在传送点上
     bool checkTeleport(const cocos2d::Vec2& worldPos, std::string& targetMapFile);
 
@@ -47,6 +41,8 @@ public:
 
     // 获取角色周围的瓦片信息
     const std::vector<TileInfo>& getSurroundingTiles() const;
+
+    void ActionAnimation(GameCharacterAction action, const Vec2& TilePos);
 
 private:
     GameMap* _gameMap;             // 当前地图对象的引用
