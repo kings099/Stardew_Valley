@@ -40,6 +40,8 @@ public:
     // 获取某GID对应图块的属性
     virtual cocos2d::ValueMap getTilePropertiesForGID(int GID);
 
+    // 替换指定图层的瓦片
+    void replaceTileAt(const std::string& layerName, const Vec2& tileCoord, int newGID);
 
 protected:
     TMXTiledMap* _tile_map;  // 瓦片地图类

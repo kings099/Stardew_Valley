@@ -79,6 +79,7 @@ void InteractionManager::updateSurroundingTiles(Vec2& world_pos) {
         // 检查是否为 Soil（可耕种土地）
         int backGID = _gameMap->getTileGIDAt("back", coord);
         int buildingGID = _gameMap->getTileGIDAt("buildings", coord);
+        int FarmGID = _gameMap->getTileGIDAt("farm", coord);
         if (backGID != 0 && buildingGID == 0 && pathGID == 0) {
             ValueMap backProps = _gameMap->getTilePropertiesForGID(backGID);
             if (backProps.find("canFarm") != backProps.end() && backProps["canFarm"].asBool()) {
@@ -86,16 +87,11 @@ void InteractionManager::updateSurroundingTiles(Vec2& world_pos) {
             }
         }
 
-        _surroundingTiles.push_back(tileInfo); // 保存到 _surroundingTiles
-    }
-    CCLOG("Surrounding tiles obstacle map:");
-    for (int row = 0; row < 3; ++row) {
-        std::string line;
-        for (int col = 0; col < 3; ++col) {
-            int index = row * 3 + col;
-            line += _surroundingTiles[index].isObstacle ? "1 " : "0 ";
+        if (FarmGID == DRY_FARM_TILE_GID) {
+            tileInfo.type = Soiled;
         }
-        CCLOG("%s", line.c_str());
+
+        _surroundingTiles.push_back(tileInfo); // 保存到 _surroundingTiles
     }
 }
 
@@ -145,4 +141,19 @@ void InteractionManager::setMap(GameMap* newMap) {
 
 const std::vector<TileInfo>& InteractionManager::getSurroundingTiles() const {
     return _surroundingTiles;
+}
+
+// 在指定位置播放对应action的图块变化
+void InteractionManager::ActionAnimation(GameCharacterAction action, const Vec2& TilePos) {
+    switch (action) {
+    case Plowing:
+        _gameMap->replaceTileAt("farm", TilePos, DRY_FARM_TILE_GID);
+    case Watering:
+        _gameMap->replaceTileAt("farm", TilePos, DRY_FARM_TILE_GID);
+    case Weeding:
+        _gameMap->replaceTileAt("path", TilePos, EMPTY_GID);
+    case Mining:
+        _gameMap->replaceTileAt("path", TilePos, EMPTY_GID);
+
+    }
 }

@@ -42,6 +42,8 @@ public:
     // 获取角色周围的瓦片信息
     const std::vector<TileInfo>& getSurroundingTiles() const;
 
+    void ActionAnimation(GameCharacterAction action, const Vec2& TilePos);
+
 private:
     GameMap* _gameMap;             // 当前地图对象的引用
     std::vector<TileInfo> _surroundingTiles; // 储存角色周围 9 格瓦片的信息

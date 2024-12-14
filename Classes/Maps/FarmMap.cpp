@@ -63,9 +63,8 @@ bool FarmMap::onMouseEvent(cocos2d::Event* event)
         Vec2 mapPosition(mousePos.x + cameraOffset_x, mousePos.y + cameraOffset_y);
         Vec2 tiledPos = absoluteToTile(mapPosition);
         CCLOG("TILED POS: %f,%f", tiledPos.x, tiledPos.y);
-        int GID = getTileGIDAt("back", tiledPos);
-        CCLOG("click GID%d:", GID);
-
+        int GID = getTileGIDAt("farm", tiledPos);
+        CCLOG("click GID:%d", GID);
 
         return true;
     }
