@@ -6,6 +6,7 @@
  * Update Date:   2024/12/5
  * License:       MIT License
  ****************************************************************/
+
 #include "FarmScene.h"
 #include "SimpleAudioEngine.h"
 #include "../Classes/MenuImage/HoverMenuItemImage.h"
@@ -13,6 +14,7 @@
 #include "../Classes/Manager/TimeManager.h"
 #include "../Classes/Layer/TimeManagerUI.h"
 #include "Control/MapSwitchManager.h"
+
 USING_NS_CC;
 
 Scene* FarmScene::createScene()
@@ -53,7 +55,7 @@ bool FarmScene::init()
     this->addChild(farmMap, 0); // 地图置于最底层
 
     // 加载角色
-    character = Character::getInstance("../Resources/Characters/Bear/BearLeftAction1.png");
+    character = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png");
     this->addChild(character, 1); // 角色位于地图之上
    
 
@@ -103,18 +105,6 @@ bool FarmScene::init()
         };
     _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
 
-    auto mouselistener = EventListenerMouse::create();
-    mouselistener->onMouseDown = [this,interaction](Event* event) {
-        Vec2 actionTilePos;
-        GameCharacterAction action;
-        this->character->onMouseDown(event, action, actionTilePos);
-        interaction->ActionAnimation(action, actionTilePos);
-        CCLOG("target tile: (%f, %f), action: %d",
-            actionTilePos.x, actionTilePos.y, action);
-        };
-    // 注册监听器
-    _eventDispatcher->addEventListenerWithSceneGraphPriority(mouselistener, this);
-
     // 设置更新回调
     this->schedule([this, uiContainer](float deltaTime) {
         if (viewController) {
@@ -132,7 +122,7 @@ bool FarmScene::init()
         }
 
         }, "ViewControllerUpdate");
-    character->saveObjectListData("../GameData/CharacterData.dat");
+  
     return true;
 }
 
@@ -140,6 +130,6 @@ bool FarmScene::init()
 void FarmScene::menuCloseCallback(Ref* pSender)
 {
     // 退出游戏
-   
+    character->saveData();
     Director::getInstance()->end();
 }

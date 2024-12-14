@@ -7,6 +7,7 @@
  * License:       MIT License
  ****************************************************************/
  
+# include <fstream>
 #include "CharacterAction.h"
 #include"../proj.win32/Constant.h"
 
@@ -17,9 +18,11 @@ CharacterAction::CharacterAction(const std::string &filename):
 	CharacterObjectList(),
 	CharacterMove(filename)
 {
-	for (int i = 0; i < SKILL_KIND_NUM; i++) {
-		_sikllLevel[i] = 0;
-		_sikllExprience[i] = 0;
+	if (!loadData("../GameData/CharacterActionData.dat")) {
+		for (int i = 0; i < SKILL_KIND_NUM; i++) {
+			_skillLevel[i] = 0;
+			_skillExprience[i] = 0;
+		}
 	}
 }
 
@@ -77,7 +80,7 @@ GameCharacterAction CharacterAction::checkActionIsValid(Vec2 & targetTilePos) {
 	default:
 		break;
 	}
-	targetTilePos = targetTileNode.tilePos;
+
 	// 检查动作是否与目标地块类型匹配
 	for (auto& test : ACTION_TO_TILEMAP) {
 		if (action == test.first && targetTileNode.type == test.second) {
@@ -93,17 +96,17 @@ void CharacterAction::updateSkillExprienceAndLevel(GameCharacterAction gameChara
 	switch (gameCharacterAction) {
 	case Plowing:
 	case Harvesting:
-		_sikllExprience[Farm]++;
+		_skillExprience[Farm]++;
 		break;
 	case Weeding:
 	case Cutting:
-		_sikllExprience[Collect]++;
+		_skillExprience[Collect]++;
 		break;
 	case Mining:
-		_sikllExprience[Mine]++;
+		_skillExprience[Mine]++;
 		break;
 	case Fishing:
-		_sikllExprience[Fish]++;
+		_skillExprience[Fish]++;
 		break;
 	default:
 		break;
@@ -111,20 +114,66 @@ void CharacterAction::updateSkillExprienceAndLevel(GameCharacterAction gameChara
 
 	// 更新技能等级
 	for (int i = 0; i < SKILL_KIND_NUM; i++) {
-		if (_sikllExprience[i] >= LEVEL0_TO_LEVEL1_EXPRIENCE) {
-			_sikllLevel[i] = 1;
+		if (_skillExprience[i] >= LEVEL0_TO_LEVEL1_EXPRIENCE) {
+			_skillLevel[i] = 1;
 		}
-		else if (_sikllExprience[i] >= LEVEL1_TO_LEVEL2_EXPRIENCE) {
-			_sikllLevel[i] = 2;
+		else if (_skillExprience[i] >= LEVEL1_TO_LEVEL2_EXPRIENCE) {
+			_skillLevel[i] = 2;
 		}
-		else if (_sikllExprience[i] >= LEVEL2_TO_LEVEL3_EXPRIENCE) {
-			_sikllLevel[i] = 3;
+		else if (_skillExprience[i] >= LEVEL2_TO_LEVEL3_EXPRIENCE) {
+			_skillLevel[i] = 3;
 		}
-		else if (_sikllExprience[i] >= LEVEL3_TO_LEVEL4_EXPRIENCE) {
-			_sikllLevel[i] = 4;
+		else if (_skillExprience[i] >= LEVEL3_TO_LEVEL4_EXPRIENCE) {
+			_skillLevel[i] = 4;
 		}
-		else if (_sikllExprience[i] >= LEVEL4_TO_LEVEL5_EXPRIENCE) {
-			_sikllLevel[i] = 5;
+		else if (_skillExprience[i] >= LEVEL4_TO_LEVEL5_EXPRIENCE) {
+			_skillLevel[i] = 5;
 		}
 	}
+}
+
+// 保存数据
+bool CharacterAction::saveData(const std::string& fileName) {
+	std::ofstream outFile(fileName, std::ios::binary );
+	if (!outFile) {
+		CCLOG("Error opening file for writing: %s", fileName.c_str());
+		return false;
+	}
+
+	for (const auto& exp : _skillExprience) {
+		outFile.write((char*)&exp, sizeof(int));
+	}
+	for (const auto& level : _skillLevel) {
+		outFile.write((char*)&level, sizeof(int));
+	}
+
+	outFile.close();
+	return true;
+}
+
+// 加载数据
+bool CharacterAction::loadData(const std::string& fileName) {
+	if (!fileExists(fileName)) {
+		CCLOG("File does not exist %s", fileName.c_str());
+		return false;
+	}
+
+	std::ifstream inFile(fileName, std::ios::binary);
+	if (!inFile) {
+		CCLOG("File cannot be opened: %s", fileName.c_str());
+		return false;
+	}
+
+	// 读取当前位置
+	std::streampos currentPos = inFile.tellg();
+
+	for (auto& exp : _skillExprience) {
+		inFile.read((char*)&exp, sizeof(int));
+	}
+	for (auto& level : _skillLevel) {
+		inFile.read((char*)&level, sizeof(int));
+	}
+
+	inFile.close();
+	return true;
 }

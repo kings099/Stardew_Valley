@@ -66,3 +66,18 @@ Vec2 Character::updatePosition(float deltaTime) {
 Sprite* Character::getCharacterSprite(){
     return _character;
 }
+
+// 保存数据
+bool Character::saveData() {
+
+    CharacterMove::saveData("../GameData/CharacterMoveData.dat");
+    CharacterAction::saveData("../GameData/CharacterActionData.dat");
+    return true;
+}
+
+// 加载数据
+bool Character::loadData(const std::string& fileName){
+    CharacterMove::loadData(fileName);
+    CharacterAction::loadData(fileName);
+    return true;
+}

@@ -33,6 +33,11 @@ public:
     // 获取角色精灵节点
     cocos2d::Sprite* getCharacterSprite();
 
+    // 保存数据
+    bool saveData();
+
+    // 加载数据
+    bool loadData(const std::string& fileName);
 private:
     // 禁止拷贝和赋值
     Character(const Character&) = delete;

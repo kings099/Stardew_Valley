@@ -45,19 +45,25 @@ protected:
     cocos2d::Sprite* _character;                         // 角色对象   
     std::vector<TileInfo> _surroundingTilesInfo;         // 角色周围瓦片地图信息
     Direction _currentDirection;                         // 当前动画方向
+    
     // 更新角色位置
     cocos2d::Vec2 updatePosition(float deltaTime);
+
+    // 保存数据
+    bool saveData(const std::string& fileName);
+
+    // 加载数据
+    bool loadData(const std::string& fileName);
+
+    // 检查文件是否存在
+    bool fileExists(const std::string& fileName);
 private:
     cocos2d::Vector<cocos2d::SpriteFrame*> _frames;      // 角色动画帧
-  
+    cocos2d::Vec2 _position;                             // 角色位置
     float _width;                                        // 角色宽度
     float _height;                                       // 角色高度
     float _moveSpeed;                                    // 角色速度
-    bool _moveUp;                                        // 是否上移
-    bool _moveDown;                                      // 是否下移
-    bool _moveLeft;                                      // 是否左移
-    bool _moveRight;                                     // 是否右移
-    std::vector<bool> _moveDirection;
+    bool _moveDirection[4];                              // 角色移动方向
     Direction _lastDirection;                            // 上一次动画方向
 };
 
