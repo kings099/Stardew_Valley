@@ -9,7 +9,7 @@
 
 #include "PlacementMarkerLayer.h"
 #include "LocationMap/LocationMap.h"
-#include "Character/Character.h"
+
 
 USING_NS_CC;
 

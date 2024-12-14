@@ -24,16 +24,14 @@ CharacterAction::CharacterAction(const std::string &filename):
 }
 
  // 按下鼠标事件触发函数
-void CharacterAction::onMouseDown(cocos2d::Event* event) {
+void CharacterAction::onMouseDown(cocos2d::Event* event, GameCharacterAction& gameCharacterAction, cocos2d::Vec2& targetTilePos) {
 	const EventMouse* mouseEvent = dynamic_cast<EventMouse*>(event);
-	const GameCharacterAction action = getAction();
-	const cocos2d::Vec2& currentPosition = getPosition();
+
 	stopMove();
-	const bool actionResult = (checkActionIsValid()==true) ? 1 : 0;
-	if (actionResult) {
-		updateSkillLevel();
+	gameCharacterAction = checkActionIsValid(targetTilePos);
+	if (gameCharacterAction != NoneAction) {
+		updateSkillExprienceAndLevel(gameCharacterAction);
 	}
-	CCLOG("ACTION: %d,%d", action, actionResult);
 }
 
 // 获取角色打算执行的动作
@@ -43,11 +41,10 @@ GameCharacterAction CharacterAction::getAction() {
 		//左键动作
 	case None:
 		return NoneAction;
-	case Tool:{
+	case Tool: {
 		auto toolObjectPtr = std::dynamic_pointer_cast<GameToolObject>(currentObject.objectNode.object);
 		return toolObjectPtr->_action;
 	}
-		//右键动作
 	case Seed:
 	case Base:
 		return Placement;
@@ -57,12 +54,12 @@ GameCharacterAction CharacterAction::getAction() {
 }
 
 // 判断角色是否可以执行动作
-bool CharacterAction::checkActionIsValid() {
+GameCharacterAction CharacterAction::checkActionIsValid(Vec2 & targetTilePos) {
 	const GameCharacterAction action = getAction();
-	const auto position = getPosition();
-
+	
 	if (action == NoneAction)
-		return false;
+		return NoneAction;
+
 	TileInfo targetTileNode;
 	switch (_currentDirection) {
 	case Direction::Up:
@@ -84,22 +81,35 @@ bool CharacterAction::checkActionIsValid() {
 	// 检查动作是否与目标地块类型匹配
 	for (auto& test : ACTION_TO_TILEMAP) {
 		if (action == test.first && targetTileNode.type == test.second) {
-			return true;
+			return action;
 		}
 	}
-	return false;
+	return NoneAction;
 }
 
-// 执行动作
-void CharacterAction::doAction() {
-	if(!checkActionIsValid())
-		return;
+// 更新技能经验值和等级
+void CharacterAction::updateSkillExprienceAndLevel(GameCharacterAction gameCharacterAction) {
+	// 更新技能经验值
+	switch (gameCharacterAction) {
+	case Plowing:
+	case Harvesting:
+		_sikllExprience[Farm]++;
+		break;
+	case Weeding:
+	case Cutting:
+		_sikllExprience[Collect]++;
+		break;
+	case Mining:
+		_sikllExprience[Mine]++;
+		break;
+	case Fishing:
+		_sikllExprience[Fish]++;
+		break;
+	default:
+		break;
+	}
 
-	const GameCharacterAction action = getAction();
-}
-
-// 更新技能等级
-void CharacterAction::updateSkillLevel() {
+	// 更新技能等级
 	for (int i = 0; i < SKILL_KIND_NUM; i++) {
 		if (_sikllExprience[i] >= LEVEL0_TO_LEVEL1_EXPRIENCE) {
 			_sikllLevel[i] = 1;
