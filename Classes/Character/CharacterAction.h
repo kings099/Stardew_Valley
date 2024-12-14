@@ -25,14 +25,19 @@ public:
 	// 更新技能经验值和等级
 	void updateSkillExprienceAndLevel(GameCharacterAction gameCharacterAction);
 
+	// 保存数据
+	bool saveData(const std::string& fileName);
 
-	int _sikllLevel[SKILL_KIND_NUM];		//技能等级数组
+	// 加载数据
+	bool loadData(const std::string& fileName);
+
+	int _skillLevel[SKILL_KIND_NUM];		//技能等级数组
 protected:
 
 
 
 private:
-	int _sikllExprience[SKILL_KIND_NUM];	//技能经验值数组
+	int _skillExprience[SKILL_KIND_NUM];	//技能经验值数组
 
 	// 获取角色打算执行的动作
 	GameCharacterAction getAction();

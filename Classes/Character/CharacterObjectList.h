@@ -61,7 +61,7 @@ public:
 	void saveObjectListData(const std::string& fileName);
 
 	// 读取物品栏数据
-	//void readObjectListData(const std::string& fileName);
+	void getObjectListData(const std::string& fileName);
 private:
 	std::vector<ObjectListNode> _objectList;	// 物品栏列表
 	int _maxObjectKindCount;					// 物品栏最大物品种类容量
