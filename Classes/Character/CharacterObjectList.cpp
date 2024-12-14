@@ -7,6 +7,7 @@
  * License:       MIT License
  ****************************************************************/
 
+#include <fstream>
 
 #include "CharacterObjectList.h"
 #include "proj.win32/Constant.h"
@@ -16,18 +17,20 @@ USING_NS_CC;
 // 构造函数
 CharacterObjectList::CharacterObjectList() :
 	_maxObjectKindCount(OBJECT_LIST_ROWS*OBJECT_LIST_COLS),
-	_currentObjectKindCount(0),
 	_currentObjectIndex(0),
 	_openObjectList(false)
 {
-	// 初始化物品栏
-	initObjectList();
-	pickUpObject(GAME_TOOL_OBJECTS_ATTRS[0], 1);
-	pickUpObject(GAME_TOOL_OBJECTS_ATTRS[3], 1);
-	pickUpObject(GAME_TOOL_OBJECTS_ATTRS[6], 1);
-	pickUpObject(GAME_TOOL_OBJECTS_ATTRS[9], 1);
-	pickUpObject(GAME_TOOL_OBJECTS_ATTRS[12], 1);
-	pickUpObject(GAME_TOOL_OBJECTS_ATTRS[15], 1);
+
+	if (checkObjectListEmpty()) {
+		// 初始化物品栏
+		initObjectList();
+		pickUpObject(GAME_TOOL_OBJECTS_ATTRS[0], 1);
+		pickUpObject(GAME_TOOL_OBJECTS_ATTRS[3], 1);
+		pickUpObject(GAME_TOOL_OBJECTS_ATTRS[6], 1);
+		pickUpObject(GAME_TOOL_OBJECTS_ATTRS[9], 1);
+		pickUpObject(GAME_TOOL_OBJECTS_ATTRS[12], 1);
+		pickUpObject(GAME_TOOL_OBJECTS_ATTRS[15], 1);
+	}
 }
 
 // 按下键盘时的处理
@@ -182,5 +185,46 @@ int CharacterObjectList::findObject(GameCommonObject targetObject) {
 
 // 检查物品栏是否已满
 bool CharacterObjectList::checkObjectListFull() {
-	return (_currentObjectKindCount == _maxObjectKindCount);
+	bool isFull = true;
+	for (const auto& item : _objectList) {
+		if (item.count == 0) {
+			isFull = false;
+			break;
+		}
+	}
+	return isFull;
 }
+
+// 检查物品栏是否为空
+bool CharacterObjectList::checkObjectListEmpty() {
+	bool isEmpty = true;
+	for (const auto& item : _objectList) {
+		if (item.count != 0) {
+			isEmpty = false;
+			break;
+		}
+	}
+	return isEmpty;
+}
+
+// 保存物品栏数据
+void CharacterObjectList::saveObjectListData(const std::string& fileName) {
+	std::ofstream outFile(fileName, std::ios::binary);
+	if (!outFile) {
+		CCLOG("Error opening file for writing: %s", fileName.c_str());
+		return;
+	}
+
+	// 写入成员变量
+	outFile.write(reinterpret_cast<char*>(&_maxObjectKindCount), sizeof(_maxObjectKindCount));
+	outFile.write(reinterpret_cast<char*>(&_currentObjectIndex), sizeof(_currentObjectIndex));
+	outFile.write(reinterpret_cast<char*>(&_openObjectList), sizeof(_openObjectList));
+
+	// 写入物品列表
+	for (const auto& item : _objectList) {
+		outFile.write(reinterpret_cast<const char*>(&item), sizeof(ObjectListNode));
+	}
+
+	outFile.close(); 
+}
+

@@ -88,14 +88,14 @@ void InteractionManager::updateSurroundingTiles(Vec2& world_pos) {
 
         _surroundingTiles.push_back(tileInfo); // ±£´æµ½ _surroundingTiles
     }
-    CCLOG("Surrounding tiles obstacle map:");
+   // CCLOG("Surrounding tiles obstacle map:");
     for (int row = 0; row < 3; ++row) {
         std::string line;
         for (int col = 0; col < 3; ++col) {
             int index = row * 3 + col;
             line += _surroundingTiles[index].isObstacle ? "1 " : "0 ";
         }
-        CCLOG("%s", line.c_str());
+      //  CCLOG("%s", line.c_str());
     }
 }
 
