@@ -8,7 +8,7 @@
  ****************************************************************/
 
 #include "GameMap.h"
-
+#include "Classes/Crops/Crops.h"
 USING_NS_CC;
 
 GameMap::GameMap(const Vec2& mapPosition)
