@@ -8,6 +8,7 @@
  ****************************************************************/
 
 #include "FarmMap.h"
+#include "Classes/Crops/Crops.h"
 USING_NS_CC;
 
 FarmMap::FarmMap(const Vec2& mapPosition)
@@ -31,12 +32,21 @@ FarmMap* FarmMap::create(const std::string& mapFile, const Vec2& mapPosition)
 // 重写初始化函数
 bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition)
 {
+   
     // Call the parent class' init function
     if (!GameMap::init(mapFile, mapPosition)) {
         return false;
     }
     this->setScale(FARM_MAP_SCALE);
-
+    if (_tile_map != nullptr) {
+        CCLOG("success: _tile_map is added");
+       
+    }
+    //// 在场景初始化时设置季节
+    Crops::setSeason(Season::Spring); // 设置当前季节为春季
+    // 在 path 层种植橡树，枫树，松树
+    plantTreesOnPathLayer(5);
+    
     //监听鼠标
     auto listener = EventListenerMouse::create();
     listener->onMouseDown = CC_CALLBACK_1(FarmMap::onMouseEvent, this);  // 监听鼠标点击事件
@@ -65,12 +75,15 @@ bool FarmMap::onMouseEvent(cocos2d::Event* event)
         Vec2 mapPosition(mousePos.x + cameraOffset_x, mousePos.y + cameraOffset_y);
         Vec2 tiledPos = absoluteToTile(mapPosition);
         CCLOG("TILED POS: %f,%f", tiledPos.x, tiledPos.y);
-        int GID = getTileGIDAt("farm", tiledPos);
+        int GID = getTileGIDAt("path", tiledPos);
         CCLOG("click GID:%d", GID);
         Vec2 worldpos = tileToAbsolute(tiledPos);
         CCLOG("WORLD POS: %f,%f", worldpos.x, worldpos.y);
         return true;
+
     }
+    CCLOG("Event is not a mouse event.");
+     
     return false;
 }
 

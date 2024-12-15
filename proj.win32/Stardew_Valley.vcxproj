@@ -161,6 +161,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)\Resources\" /D /E /I /F /Y
     <ClCompile Include="..\Classes\Control\GameViewController.cpp" />
     <ClCompile Include="..\Classes\Control\GIftItemManager.cpp" />
     <ClCompile Include="..\Classes\Control\MapSwitchManager.cpp" />
+    <ClCompile Include="..\Classes\Crops\Crops.cpp" />
     <ClCompile Include="..\Classes\Control\NpcInteractionManager.cpp" />
     <ClCompile Include="..\Classes\Control\NpcManager.cpp" />
     <ClCompile Include="..\Classes\Control\TimeManager.cpp" />
@@ -190,6 +191,8 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)\Resources\" /D /E /I /F /Y
     <ClInclude Include="..\Classes\Control\GameViewController.h" />
     <ClInclude Include="..\Classes\Control\GiftItemManager.h" />
     <ClInclude Include="..\Classes\Control\MapSwitchManager.h" />
+    <ClInclude Include="..\Classes\Crops\CropData.h" />
+    <ClInclude Include="..\Classes\Crops\Crops.h" />
     <ClInclude Include="..\Classes\Control\NpcInteractionManager.h" />
     <ClInclude Include="..\Classes\Control\NpcManager.h" />
     <ClInclude Include="..\Classes\Control\TimeManager.h" />
