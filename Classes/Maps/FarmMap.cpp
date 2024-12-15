@@ -75,7 +75,7 @@ bool FarmMap::onMouseEvent(cocos2d::Event* event)
         Vec2 mapPosition(mousePos.x + cameraOffset_x, mousePos.y + cameraOffset_y);
         Vec2 tiledPos = absoluteToTile(mapPosition);
         CCLOG("TILED POS: %f,%f", tiledPos.x, tiledPos.y);
-        int GID = getTileGIDAt("path", tiledPos);
+        int GID = getTileGIDAt("Tree", tiledPos);
         CCLOG("click GID:%d", GID);
         Vec2 worldpos = tileToAbsolute(tiledPos);
         CCLOG("WORLD POS: %f,%f", worldpos.x, worldpos.y);
@@ -114,6 +114,7 @@ void FarmMap::plantTreesOnPathLayer(int maxGrowthStage) {
                     crop->setPosition(tileToRelative(Vec2(col,row))); // 设置位置为瓦片的世界坐标
                     crop->setGrowthStage(maxGrowthStage); // 直接设置为成熟阶
                     replaceTileAt("path", Vec2(col, row), OAK_INVISIBLE_GID);
+                    replaceTileAt("Tree", Vec2(col, row), OAK_ROOT_GID);
                 }
                 else {
                     CCLOG("Error: Failed to create crop of type oak");
@@ -128,6 +129,7 @@ void FarmMap::plantTreesOnPathLayer(int maxGrowthStage) {
                     crop->setPosition(tileToRelative(Vec2(col, row))); // 设置位置为瓦片的世界坐标
                     crop->setGrowthStage(maxGrowthStage); // 直接设置为成熟阶
                     replaceTileAt("path", Vec2(col, row), MAMPLE_INVISIBLE_GID);
+                    replaceTileAt("Tree", Vec2(col, row), MAMPLE_ROOT_GID);
                 }
                 else {
                     CCLOG("Error: Failed to create crop of type maple");
@@ -142,6 +144,7 @@ void FarmMap::plantTreesOnPathLayer(int maxGrowthStage) {
                     crop->setPosition(tileToRelative(Vec2(col, row))); // 设置位置为瓦片的世界坐标
                     crop->setGrowthStage(maxGrowthStage); // 直接设置为成熟阶
                     replaceTileAt("path", Vec2(col, row), PINE_INVISIBLE_GID);
+                    replaceTileAt("Tree", Vec2(col, row), PINE_ROOT_GID);
                 }
                 else {
                     CCLOG("Error: Failed to create crop of type pine");

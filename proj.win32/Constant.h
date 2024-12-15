@@ -55,6 +55,9 @@ constexpr int PINE_GID = 12;                                                // P
 constexpr int OAK_INVISIBLE_GID = 1;                                        // OAK树根图块不可见GID
 constexpr int MAMPLE_INVISIBLE_GID = 2;                                     // MAMPLE树根图块不可见GID
 constexpr int PINE_INVISIBLE_GID = 3;                                       // PINE树根图块不可见GID
+constexpr int OAK_ROOT_GID = 191;                                           // OAK树根GID
+constexpr int MAMPLE_ROOT_GID = 194;                                        // MAMPLE树根GID
+constexpr int PINE_ROOT_GID = 201;                                          // PINE树根GID
 
 // 物品设置
 constexpr int OBJECT_LIST_ROWS = 3;											// 物品列表行数
