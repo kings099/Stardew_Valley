@@ -10,7 +10,6 @@
 #include <fstream>
 
 #include "CharacterObjectList.h"
-#include "proj.win32/Constant.h"
 
 USING_NS_CC;
 
@@ -20,8 +19,8 @@ CharacterObjectList::CharacterObjectList() :
 	_currentObjectIndex(0),
 	_openObjectList(false)
 {
-	//getObjectListData("../GameData/CharacterData.dat");
-	if (checkObjectListEmpty()) {
+
+	if (!loadData("../GameData/CharacterObjectListData.dat")) {
 		// 初始化物品栏
 		initObjectList();
 		pickUpObject(GAME_TOOL_OBJECTS_ATTRS[0], 1);
@@ -31,6 +30,7 @@ CharacterObjectList::CharacterObjectList() :
 		pickUpObject(GAME_TOOL_OBJECTS_ATTRS[12], 1);
 		pickUpObject(GAME_TOOL_OBJECTS_ATTRS[15], 1);
 	}
+	pickUpObject(GAME_TOOL_OBJECTS_ATTRS[0], 1);
 }
 
 // 按下键盘时的处理
@@ -207,47 +207,52 @@ bool CharacterObjectList::checkObjectListEmpty() {
 	return isEmpty;
 }
 
-//// 保存物品栏数据
-//void CharacterObjectList::saveObjectListData(const std::string& fileName) {
-//	std::ofstream outFile(fileName, std::ios::binary);
-//	if (!outFile) {
-//		CCLOG("Error opening file for writing: %s", fileName.c_str());
-//		return;
-//	}
-//
-//	// 写入成员变量
-//	outFile.write(reinterpret_cast<char*>(&_maxObjectKindCount), sizeof(_maxObjectKindCount));
-//	outFile.write(reinterpret_cast<char*>(&_currentObjectIndex), sizeof(_currentObjectIndex));
-//	outFile.write(reinterpret_cast<char*>(&_openObjectList), sizeof(_openObjectList));
-//
-//	// 写入物品列表
-//	for (const auto& item : _objectList) {
-//		outFile.write(reinterpret_cast<const char*>(&item), sizeof(ObjectListNode));
-//	}
-//
-//	outFile.close(); 
-//}
-//
-//// 读取物品栏数据
-//void CharacterObjectList::getObjectListData(const std::string& fileName) {
-//	std::ifstream inFile(fileName, std::ios::binary);
-//	if (!inFile) {
-//		CCLOG("File does not exist or cannot be opened: %s", fileName.c_str());
-//		return; // 如果文件不存在或无法打开，返回
-//	}
-//
-//	// 加载最大物品种类容量
-//	inFile.read(reinterpret_cast<char*>(&_maxObjectKindCount), sizeof(_maxObjectKindCount));
-//	// 加载当前物品索引
-//	inFile.read(reinterpret_cast<char*>(&_currentObjectIndex), sizeof(_currentObjectIndex));
-//	// 加载物品栏状态
-//	inFile.read(reinterpret_cast<char*>(&_openObjectList), sizeof(_openObjectList));
-//
-//	// 加载物品列表
-//	_objectList.resize(_maxObjectKindCount);
-//	for (auto& item : _objectList) {
-//		inFile.read(reinterpret_cast<char*>(&item), sizeof(ObjectListNode));
-//	}
-//
-//	inFile.close();
-//}
+// 保存数据
+bool CharacterObjectList::saveData(const std::string& fileName) {
+	std::ofstream outFile(fileName, std::ios::binary);
+	if (!outFile) {
+		CCLOG("Error opening file for writing: %s", fileName.c_str());
+		return false;
+	}
+	
+	int itemCount = OBJECT_LIST_ROWS * OBJECT_LIST_COLS;
+	outFile.write(reinterpret_cast<char*>(&itemCount), sizeof(itemCount));
+	
+	// 写入物品列表
+	for (const auto& item : _objectList) {
+		item.save(outFile);
+	}
+
+	outFile.close();
+	return true;
+}
+
+// 加载数据
+bool CharacterObjectList::loadData(const std::string& fileName) {
+	std::ifstream inFile(fileName, std::ios::binary);
+	if (!inFile) {
+		CCLOG("File does not exist or cannot be opened: %s", fileName.c_str());
+		return false;
+	}
+
+	int itemCount = OBJECT_LIST_ROWS * OBJECT_LIST_COLS; 
+	inFile.read(reinterpret_cast<char*>(&itemCount), sizeof(itemCount));
+
+	_objectList.resize(itemCount);
+
+	// 读取物品列表
+	for (auto& item : _objectList) {
+		item.load(inFile);
+	}
+
+	// 填充空物品
+	for (size_t i = 0; i < _objectList.size(); ++i) {
+		if (_objectList[i].count == 0) {
+			_objectList[i] = ObjectListNode{ {None,nullptr}, 0 ,Unselected };
+		}
+	}
+
+	inFile.close();
+	return true;
+}
+

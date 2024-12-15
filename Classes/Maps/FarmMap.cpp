@@ -28,6 +28,7 @@ FarmMap* FarmMap::create(const std::string& mapFile, const Vec2& mapPosition)
     }
 }
 
+// 重写初始化函数
 bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition)
 {
     // Call the parent class' init function
@@ -48,6 +49,7 @@ bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition)
     return true;
 }
 
+// 鼠标事件的处理
 bool FarmMap::onMouseEvent(cocos2d::Event* event)
 {
     auto mouseEvent = dynamic_cast<cocos2d::EventMouse*>(event);

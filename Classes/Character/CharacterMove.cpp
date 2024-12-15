@@ -9,7 +9,7 @@
 
 #include<fstream>
 #include "CharacterMove.h"
-#include "Classes/Maps/FarmMap.h"
+#include "Classes/Maps/GameMap.h"
 #include "../proj.win32/Constant.h"
 
 USING_NS_CC;
@@ -203,6 +203,7 @@ cocos2d::Vec2 CharacterMove::updatePosition(float deltaTime) {
         break;
     }
 
+   // GameMap;
     if(moveDirection.x != 0 || moveDirection.y != 0) {
         moveDirection.normalize();
         const float currentSpeed = _moveSpeed / sqrtf(moveDirection.x * moveDirection.x + moveDirection.y * moveDirection.y);

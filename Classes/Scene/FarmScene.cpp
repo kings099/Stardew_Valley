@@ -52,23 +52,22 @@ bool FarmScene::init()
 
     // 加载农场地图
     farmMap = FarmMap::create("../Resources/Maps/Farm/Farm_Combat.tmx");
-    this->addChild(farmMap, 0); // 地图置于最底层
+    this->addChild(farmMap, 0); 
 
     // 加载角色
     character = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png");
-    this->addChild(character, 1); // 角色位于地图之上
+    this->addChild(character, 1);
    
 
     // 创建视角控制器
     viewController = new GameViewController(character, farmMap);
-    this->addChild(viewController, 2); // 控制器无需渲染，层级不重要
+    this->addChild(viewController, 2);
 
     // 创建交互管理器
     auto interaction = InteractionManager::create(farmMap);
     this->addChild(interaction);
 
     //创建场景转换器
-    // 创建 MapSwitcher，并检查是否成功
     auto mapSwitchManager = MapSwitchManager::create(character, farmMap, viewController, interaction);
     this->addChild(mapSwitchManager);
     this->schedule([this, mapSwitchManager, interaction](float deltaTime) {
@@ -94,7 +93,7 @@ bool FarmScene::init()
     uiLayer = UILayer::create();
     uiContainer->addChild(uiLayer);
 
-    // 创建键盘监视事件
+    // 创建键盘事件监视器
     auto listener = EventListenerKeyboard::create();
     listener->onKeyPressed = [this](cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event) {
         this->character->onKeyPressed(keyCode, event);
@@ -105,22 +104,28 @@ bool FarmScene::init()
         };
     _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
 
+    // 创建鼠标事件监视器
+    auto mouselistener = EventListenerMouse::create();
+    mouselistener->onMouseDown = [this, interaction](Event* event) {
+        Vec2 actionTilePos;
+        GameCharacterAction action;
+        this->character->onMouseDown(event, action, actionTilePos);
+        interaction->ActionAnimation(action, actionTilePos);
+        CCLOG("target tile: (%f, %f), action: %d",
+            actionTilePos.x, actionTilePos.y, action);
+        };
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(mouselistener, this);
+
     // 设置更新回调
     this->schedule([this, uiContainer](float deltaTime) {
-        if (viewController) {
-            viewController->update(deltaTime);
-        }
+        if (viewController) { viewController->update(deltaTime);}
         // 获取摄像机的位移
         const auto cameraPosition = Camera::getDefaultCamera()->getPosition();
         const auto visibleSize = Director::getInstance()->getVisibleSize();
         // 将摄像机的偏移量应用到UI容器
         Vec2 cameraOffset = cameraPosition - Vec2(visibleSize.width / 2, visibleSize.height / 2);
         uiContainer->setPosition(cameraOffset);  // 更新UI容器的位置，使UI随摄像机移动
-
-        if (uiLayer) {
-            uiLayer->update(deltaTime);
-        }
-
+        if (uiLayer) {uiLayer->update(deltaTime);}
         }, "ViewControllerUpdate");
   
     return true;

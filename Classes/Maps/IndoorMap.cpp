@@ -8,6 +8,7 @@
  ****************************************************************/
 
 #include "IndoorMap.h"
+
 USING_NS_CC;
 
 IndoorMap::IndoorMap(const Vec2& mapPosition)

@@ -16,6 +16,7 @@ GameMap::GameMap(const Vec2& mapPosition)
 
 GameMap::~GameMap() {}
 
+// 创建地图
 GameMap* GameMap::create(const std::string& mapFile, const Vec2& mapPosition)
 {
     GameMap* ret = new GameMap(mapPosition);
@@ -29,6 +30,7 @@ GameMap* GameMap::create(const std::string& mapFile, const Vec2& mapPosition)
     }
 }
 
+// 初始化地图
 bool GameMap::init(const std::string& mapFile, const Vec2& mapPosition)
 {
     // 调用基类初始化方法
@@ -50,6 +52,7 @@ bool GameMap::init(const std::string& mapFile, const Vec2& mapPosition)
     return true;
 }
 
+// 转换世界坐标到地图瓦片坐标
 Vec2 GameMap::absoluteToTile(const Vec2& pixelPoint)
 {
     float scale = this->getScale();
@@ -65,6 +68,7 @@ Vec2 GameMap::absoluteToTile(const Vec2& pixelPoint)
     return Vec2(floor(tileX), floor(tileY));
 }
 
+// 转换瓦片坐标到世界坐标（中点）
 Vec2 GameMap::tileToAbsolute(const Vec2& tileCoord)
 {
     float scale = this->getScale();
@@ -82,6 +86,7 @@ Vec2 GameMap::tileToAbsolute(const Vec2& tileCoord)
     return Vec2(pixelX, pixelY);
 }
 
+// 地图像素大小
 const Size& GameMap::getMapSize() const
 {
     Size map_size_in_tiles = _tile_map->getMapSize();
@@ -93,11 +98,13 @@ const Size& GameMap::getMapSize() const
     return Size(map_width_in_pixels, map_height_in_pixels);
 }
 
+// 地图瓦片大小
 const Size& GameMap::getMapSizeinTile()
 {
     return _tile_map->getMapSize();
 }
 
+// 获取某位置Layername图层的GID
 int GameMap::getTileGIDAt(const std::string& layerName, const Vec2& tileCoord)
 {
     auto layer = _tile_map->getLayer(layerName);
@@ -116,6 +123,7 @@ int GameMap::getTileGIDAt(const std::string& layerName, const Vec2& tileCoord)
     return layer->getTileGIDAt(tileCoord);
 }
 
+// 获取某GID对应图块的属性
 cocos2d::ValueMap GameMap::getTilePropertiesForGID(int GID)
 {
     if (GID == 0) return cocos2d::ValueMap();
@@ -127,6 +135,7 @@ cocos2d::ValueMap GameMap::getTilePropertiesForGID(int GID)
     return cocos2d::ValueMap();
 }
 
+// 替换指定图层的瓦片
 void GameMap::replaceTileAt(const std::string& layerName, const Vec2& tileCoord, int newGID) {
     // 获取目标图层
     auto layer = _tile_map->getLayer(layerName);
