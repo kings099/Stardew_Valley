@@ -3,7 +3,7 @@
  * File Name:     CharacterObjectList.cpp
  * File Function: 角色物品栏CharacterObjectList类的实现
  * Author:        尹诚成
- * Update Date:   2023/12/11
+ * Update Date:   2023/12/15
  * License:       MIT License
  ****************************************************************/
 

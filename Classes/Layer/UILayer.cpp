@@ -27,7 +27,7 @@ UILayer::UILayer() :
     placementMarkerLayer(nullptr),
     nearestPlacementMarker(nullptr)
 {
-    character = Character::getInstance(".. / Resources / Characters / Elimy / ElimyDown1.png");
+    character = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png");
     visibleSize = Director::getInstance()->getVisibleSize();
     std::fill_n(selectObjectSpriteMarker, OBJECT_LIST_COLS, nullptr);
     std::fill_n(closedObjectSpriteImage, OBJECT_LIST_COLS, nullptr);
