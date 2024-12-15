@@ -74,3 +74,73 @@ bool FarmMap::onMouseEvent(cocos2d::Event* event)
     return false;
 }
 
+TMXTiledMap* FarmMap::getTiledMap() const {
+    return _tile_map;
+}
+
+void FarmMap::plantTreesOnPathLayer(int maxGrowthStage) {
+    CCLOG("!!!!!!!!!!!!plantTreesOnPathLayer");
+    // 获取 path 层
+    TMXLayer* pathLayer = _tile_map->getLayer("path");
+    if (!pathLayer) {
+        CCLOG("Error: Path layer not found!");
+        return;
+    }
+    // 遍历 path 层的所有瓦片
+    const Size layerSize = pathLayer->getLayerSize();
+    for (int row = 0; row < layerSize.height; ++row) {
+        for (int col = 0; col < layerSize.width; ++col) {
+            Vec2 tilePos(col, row); // 瓦片坐标
+            int GID = pathLayer->getTileGIDAt(tilePos);
+            // 检查 GID 是否为目标 GID
+            if (GID == 10) {
+                int X = col*16+8;
+                int Y = (64 - row) * 16;
+                // 创建并种植农作物
+                auto crop = Crops::create("oak", maxGrowthStage);
+                if (crop) {
+                    _tile_map->addChild(crop,10);       // 添加到当前节点
+                    crop->setPosition(tileToRelative(Vec2(col,row))); // 设置位置为瓦片的世界坐标
+                    crop->setGrowthStage(maxGrowthStage); // 直接设置为成熟阶
+                    
+                }
+                else {
+                    CCLOG("Error: Failed to create crop of type oak");
+                }
+            }
+            else if (GID == 11) {
+                int X = col * 16+8;
+                int Y = (64 - row) * 16;
+                // 创建并种植农作物
+                auto crop = Crops::create("maple", maxGrowthStage);
+                if (crop) {
+                    _tile_map->addChild(crop, 10);       // 添加到当前节点
+                    crop->setPosition(tileToRelative(Vec2(col, row))); // 设置位置为瓦片的世界坐标
+                    crop->setGrowthStage(maxGrowthStage); // 直接设置为成熟阶
+                    CCLOG("Planted mature crop of type maple at position (%f, %f)", X, Y);
+                }
+                else {
+                    CCLOG("Error: Failed to create crop of type maple");
+                }
+
+            }
+            else if (GID == 12) {
+                int X = col * 16+8;
+                int Y = (64 - row) * 16;
+                // 创建并种植农作物
+                auto crop = Crops::create("pine", maxGrowthStage);
+                if (crop) {
+                    _tile_map->addChild(crop, 10);       // 添加到当前节点
+                    crop->setPosition(tileToRelative(Vec2(col, row))); // 设置位置为瓦片的世界坐标
+                    crop->setGrowthStage(maxGrowthStage); // 直接设置为成熟阶
+                    CCLOG("Planted mature crop of type pine at position (%f, %f)", X, Y);
+                }
+                else {
+                    CCLOG("Error: Failed to create crop of type pine");
+                }
+
+            }
+        }
+    }
+}
+

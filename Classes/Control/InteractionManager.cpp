@@ -62,6 +62,7 @@ void InteractionManager::updateSurroundingTiles(Vec2& world_pos) {
         TileInfo tileInfo;
         tileInfo.tilePos = coord;
         tileInfo.WorldPos = _gameMap->tileToAbsolute(coord);
+        tileInfo.
         tileInfo.type = Other; // ƒ¨»œ¿‡–Õ
         tileInfo.isObstacle = isCollidableAtPos(coord);
 
