@@ -37,17 +37,21 @@ public:
     // 获取当前生长阶段
     int getGrowthStage() const { return growthStage; }
 
-    //除草动画
-    void Crop::playWeedingAnimation(const Vec2& position);
+    //除草动画cocos2d::
+    void playWeedingAnimation(const cocos2d::Vec2& position, cocos2d::TMXTiledMap* farmMap);
     //碎石动画
-    void Crop::playStoneBreakingAnimationAt(const Vec2& position);
+    void playStoneBreakingAnimationAt(const cocos2d::Vec2& position, cocos2d::TMXTiledMap* farmMap);
+    // 新增：施肥函数
+    void fertilize();
 
 private:
+    bool isFertilized;         //是否施肥
     std::string type;          // 农作物类型
     int growthStage;           // 当前生长阶段
     int maxGrowthStage;        // 最大生长阶段
     float growthTimer;         // 生长计时器
     bool isWatered;            // 是否被浇水
+    int daysWithoutWater;       //没有被浇水的天数
     // 静态资源映射表
     static std::unordered_map<std::string, std::vector<std::string>> resourceMap;
 

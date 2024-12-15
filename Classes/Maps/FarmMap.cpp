@@ -38,10 +38,10 @@ bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition)
     this->setScale(FARM_MAP_SCALE);
     if (_tile_map != nullptr) {
         CCLOG("success: _tile_map is added");
-        /*  return true;*/
+       
     }
-    //添加一个农作物树
-    auto crop = Crop::create("grass", 0);
+    //添加一个农作物草
+    auto crop = Crop::create("grass_2", 0);
     if (crop == nullptr) {
         CCLOG("Error: Failed to create Crop instance");
         return false;
@@ -50,21 +50,28 @@ bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition)
         CCLOG("success: Crop instance created");
     }
     crop->setPosition(Vec2(150, 200));
-    crop->setScale(0.3f);
+    crop->setScale(1.0f);
     _tile_map->addChild(crop);
+   
+    this->scheduleOnce([crop](float) {
+       if (crop) {
+           crop->waterCrop();
+       }
+       }, 2.0f, "play_animation_key");
+    //_tile_map->schedule([crop](float dt) {
+    //    crop->updateGrowth(dt);
+    //    }, 1.0f, "growth_key");
+    //this->setScale(FARM_MAP_SCALE);
 
-    _tile_map->schedule([crop](float dt) {
-        crop->updateGrowth(dt);
-        }, 1.0f, "growth_key");
-    this->setScale(FARM_MAP_SCALE);
-
-   /* TMXTiledMap* tile_map = getTiledMap();
-    if (!tile_map) {
-        CCLOG("Error: Tile map is null.");
-        return;
-    }*/
-    auto crop = Crop::create("stone", 3);
-    crop->playStoneBreakingAnimationAt(Vec2(200, 200));
+    //TMXTiledMap* tile_map = getTiledMap();
+    //if (!tile_map) {
+    //    CCLOG("Error: Tile map is null.");
+    //    return false;
+    //}
+    //auto crop_stone = Crop::create("grass", 3);
+    //crop_stone->setPosition(Vec2(200, 200));
+    //_tile_map->addChild(crop_stone);
+    //crop_stone->playWeedingAnimation(Vec2(200, 200), tile_map);
 
     /*this->scheduleOnce([crop](float) {
         if (crop) {
