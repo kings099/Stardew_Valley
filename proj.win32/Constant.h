@@ -48,7 +48,16 @@ constexpr float INDOOR_MAP_SCALE = 5.0f;									// 室内地图缩放比例
 
 // 地图图块相关
 constexpr int DRY_FARM_TILE_GID = 2040;                                     // 干燥耕地效果动画图块GID
-constexpr int EMPTY_GID = 0;
+constexpr int EMPTY_GID = 0;                                                // 空白GID
+constexpr int OAK_GID = 10;                                                 // 桦树GID
+constexpr int MAMPLE_GID = 11;                                              // MAMPLE GID
+constexpr int PINE_GID = 12;                                                // PINE GID
+constexpr int OAK_INVISIBLE_GID = 1;                                        // OAK树根图块不可见GID
+constexpr int MAMPLE_INVISIBLE_GID = 2;                                     // MAMPLE树根图块不可见GID
+constexpr int PINE_INVISIBLE_GID = 3;                                       // PINE树根图块不可见GID
+constexpr int OAK_ROOT_GID = 191;                                           // OAK树根GID
+constexpr int MAMPLE_ROOT_GID = 194;                                        // MAMPLE树根GID
+constexpr int PINE_ROOT_GID = 201;                                          // PINE树根GID
 
 // 物品设置
 constexpr int OBJECT_LIST_ROWS = 3;											// 物品列表行数

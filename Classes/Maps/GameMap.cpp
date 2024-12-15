@@ -86,6 +86,22 @@ Vec2 GameMap::tileToAbsolute(const Vec2& tileCoord)
     return Vec2(pixelX, pixelY);
 }
 
+Vec2 GameMap::tileToRelative(const Vec2& tileCoord)
+{
+    // 获取瓦片大小
+    Size tileSize = _tile_map->getTileSize();
+
+    // 计算瓦片左下角的绝对坐标
+    float pixelX = tileCoord.x * tileSize.width  + _map_position.x;
+    float pixelY = (_tile_map->getMapSize().height - tileCoord.y - 1) * tileSize.height  + _map_position.y;
+
+    // 加上瓦片一半的宽高，得到瓦片的中点坐标
+    pixelX += (tileSize.width ) / 2.0f;
+    pixelY += (tileSize.height) / 2.0f;
+
+    return Vec2(pixelX, pixelY);
+}
+
 // 地图像素大小
 const Size& GameMap::getMapSize() const
 {

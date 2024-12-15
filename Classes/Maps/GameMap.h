@@ -31,6 +31,9 @@ public:
     // 转换瓦片坐标到世界坐标（中点）
     Vec2 tileToAbsolute(const Vec2& tileCoord);
 
+    // 转换瓦片坐标到以地图为父节点的相对坐标（中点）
+    Vec2 tileToRelative(const Vec2& tileCoord);
+
     // 地图像素大小
     const Size& getMapSize() const;
 

@@ -57,7 +57,6 @@ void InteractionManager::updateSurroundingTiles(Vec2& world_pos) {
         Vec2(tile_pos.x - 1, tile_pos.y),     Vec2(tile_pos.x, tile_pos.y),     Vec2(tile_pos.x + 1, tile_pos.y),
         Vec2(tile_pos.x - 1, tile_pos.y + 1), Vec2(tile_pos.x, tile_pos.y + 1), Vec2(tile_pos.x + 1, tile_pos.y + 1),
     };
-
     for (const auto& coord : surroundingCoords) {
         TileInfo tileInfo;
         tileInfo.tilePos = coord;
