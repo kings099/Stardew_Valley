@@ -32,6 +32,7 @@ FarmMap* FarmMap::create(const std::string& mapFile, const Vec2& mapPosition)
 // 重写初始化函数
 bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition)
 {
+   
     // Call the parent class' init function
     if (!GameMap::init(mapFile, mapPosition)) {
         return false;
@@ -41,46 +42,11 @@ bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition)
         CCLOG("success: _tile_map is added");
        
     }
-    //添加一个农作物草
-    auto crop = Crop::create("grass_2", 0);
-    if (crop == nullptr) {
-        CCLOG("Error: Failed to create Crop instance");
-        return false;
-    }
-    else {
-        CCLOG("success: Crop instance created");
-    }
-    crop->setPosition(Vec2(150, 200));
-    crop->setScale(1.0f);
-    _tile_map->addChild(crop);
-   
-    this->scheduleOnce([crop](float) {
-       if (crop) {
-           crop->waterCrop();
-       }
-       }, 2.0f, "play_animation_key");
-    //_tile_map->schedule([crop](float dt) {
-    //    crop->updateGrowth(dt);
-    //    }, 1.0f, "growth_key");
-    //this->setScale(FARM_MAP_SCALE);
-
-    //TMXTiledMap* tile_map = getTiledMap();
-    //if (!tile_map) {
-    //    CCLOG("Error: Tile map is null.");
-    //    return false;
-    //}
-    //auto crop_stone = Crop::create("grass", 3);
-    //crop_stone->setPosition(Vec2(200, 200));
-    //_tile_map->addChild(crop_stone);
-    //crop_stone->playWeedingAnimation(Vec2(200, 200), tile_map);
-
-    /*this->scheduleOnce([crop](float) {
-        if (crop) {
-            crop->playWeedingAnimation();
-        }
-        }, 2.0f, "play_animation_key");*/
-
-
+    //// 在场景初始化时设置季节
+    Crops::setSeason(Season::Spring); // 设置当前季节为春季
+    // 在 path 层种植橡树，枫树，松树
+    plantTreesOnPathLayer(5);
+    
     //监听鼠标
     auto listener = EventListenerMouse::create();
     listener->onMouseDown = CC_CALLBACK_1(FarmMap::onMouseEvent, this);  // 监听鼠标点击事件
@@ -109,11 +75,12 @@ bool FarmMap::onMouseEvent(cocos2d::Event* event)
         Vec2 mapPosition(mousePos.x + cameraOffset_x, mousePos.y + cameraOffset_y);
         Vec2 tiledPos = absoluteToTile(mapPosition);
         CCLOG("TILED POS: %f,%f", tiledPos.x, tiledPos.y);
-        int GID = getTileGIDAt("farm", tiledPos);
+        int GID = getTileGIDAt("path", tiledPos);
         CCLOG("click GID:%d", GID);
         Vec2 worldpos = tileToAbsolute(tiledPos);
         CCLOG("WORLD POS: %f,%f", worldpos.x, worldpos.y);
         return true;
+
     }
     CCLOG("Event is not a mouse event.");
      
@@ -123,3 +90,70 @@ bool FarmMap::onMouseEvent(cocos2d::Event* event)
 TMXTiledMap* FarmMap::getTiledMap() const {
     return _tile_map;
 }
+
+void FarmMap::plantTreesOnPathLayer(int maxGrowthStage) {
+    CCLOG("!!!!!!!!!!!!plantTreesOnPathLayer");
+    // 获取 path 层
+    TMXLayer* pathLayer = _tile_map->getLayer("path");
+    if (!pathLayer) {
+        CCLOG("Error: Path layer not found!");
+        return;
+    }
+    // 遍历 path 层的所有瓦片
+    const Size layerSize = pathLayer->getLayerSize();
+    for (int row = 0; row < layerSize.height; ++row) {
+        for (int col = 0; col < layerSize.width; ++col) {
+            Vec2 tilePos(col, row); // 瓦片坐标
+            int GID = pathLayer->getTileGIDAt(tilePos);
+            // 检查 GID 是否为目标 GID
+            if (GID == 10) {
+                int X = col*16+8;
+                int Y = (64 - row) * 16;
+                // 创建并种植农作物
+                auto crop = Crops::create("oak", maxGrowthStage);
+                if (crop) {
+                    _tile_map->addChild(crop,10);       // 添加到当前节点
+                    crop->setPosition(Vec2(X,Y)); // 设置位置为瓦片的世界坐标
+                    crop->setGrowthStage(maxGrowthStage); // 直接设置为成熟阶
+                    
+                }
+                else {
+                    CCLOG("Error: Failed to create crop of type oak");
+                }
+            }
+            else if (GID == 11) {
+                int X = col * 16+8;
+                int Y = (64 - row) * 16;
+                // 创建并种植农作物
+                auto crop = Crops::create("maple", maxGrowthStage);
+                if (crop) {
+                    _tile_map->addChild(crop, 10);       // 添加到当前节点
+                    crop->setPosition(Vec2(X, Y)); // 设置位置为瓦片的世界坐标
+                    crop->setGrowthStage(maxGrowthStage); // 直接设置为成熟阶
+                    CCLOG("Planted mature crop of type maple at position (%f, %f)", X, Y);
+                }
+                else {
+                    CCLOG("Error: Failed to create crop of type maple");
+                }
+
+            }
+            else if (GID == 12) {
+                int X = col * 16+8;
+                int Y = (64 - row) * 16;
+                // 创建并种植农作物
+                auto crop = Crops::create("pine", maxGrowthStage);
+                if (crop) {
+                    _tile_map->addChild(crop, 10);       // 添加到当前节点
+                    crop->setPosition(Vec2(X, Y)); // 设置位置为瓦片的世界坐标
+                    crop->setGrowthStage(maxGrowthStage); // 直接设置为成熟阶
+                    CCLOG("Planted mature crop of type pine at position (%f, %f)", X, Y);
+                }
+                else {
+                    CCLOG("Error: Failed to create crop of type pine");
+                }
+
+            }
+        }
+    }
+}
+
