@@ -106,47 +106,42 @@ void FarmMap::plantTreesOnPathLayer(int maxGrowthStage) {
             Vec2 tilePos(col, row); // 瓦片坐标
             int GID = pathLayer->getTileGIDAt(tilePos);
             // 检查 GID 是否为目标 GID
-            if (GID == 10) {
-                int X = col*16+8;
-                int Y = (64 - row) * 16;
+            if (GID == OAK_GID) {
                 // 创建并种植农作物
                 auto crop = Crops::create("oak", maxGrowthStage);
                 if (crop) {
                     _tile_map->addChild(crop,10);       // 添加到当前节点
                     crop->setPosition(tileToRelative(Vec2(col,row))); // 设置位置为瓦片的世界坐标
                     crop->setGrowthStage(maxGrowthStage); // 直接设置为成熟阶
-                    
+                    replaceTileAt("path", Vec2(col, row), OAK_INVISIBLE_GID);
                 }
                 else {
                     CCLOG("Error: Failed to create crop of type oak");
                 }
             }
-            else if (GID == 11) {
-                int X = col * 16+8;
-                int Y = (64 - row) * 16;
+            else if (GID == MAMPLE_GID) {
+
                 // 创建并种植农作物
                 auto crop = Crops::create("maple", maxGrowthStage);
                 if (crop) {
                     _tile_map->addChild(crop, 10);       // 添加到当前节点
                     crop->setPosition(tileToRelative(Vec2(col, row))); // 设置位置为瓦片的世界坐标
                     crop->setGrowthStage(maxGrowthStage); // 直接设置为成熟阶
-                    CCLOG("Planted mature crop of type maple at position (%f, %f)", X, Y);
+                    replaceTileAt("path", Vec2(col, row), MAMPLE_INVISIBLE_GID);
                 }
                 else {
                     CCLOG("Error: Failed to create crop of type maple");
                 }
 
             }
-            else if (GID == 12) {
-                int X = col * 16+8;
-                int Y = (64 - row) * 16;
+            else if (GID == PINE_GID) {
                 // 创建并种植农作物
                 auto crop = Crops::create("pine", maxGrowthStage);
                 if (crop) {
                     _tile_map->addChild(crop, 10);       // 添加到当前节点
                     crop->setPosition(tileToRelative(Vec2(col, row))); // 设置位置为瓦片的世界坐标
                     crop->setGrowthStage(maxGrowthStage); // 直接设置为成熟阶
-                    CCLOG("Planted mature crop of type pine at position (%f, %f)", X, Y);
+                    replaceTileAt("path", Vec2(col, row), PINE_INVISIBLE_GID);
                 }
                 else {
                     CCLOG("Error: Failed to create crop of type pine");

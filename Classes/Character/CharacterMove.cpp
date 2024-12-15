@@ -218,7 +218,7 @@ cocos2d::Vec2 CharacterMove::updatePosition(float deltaTime) {
     }
     _character->setPosition(nextPosition);
     _position = nextPosition;
-    CCLOG("position:(%f,%f)", _position.x, _position.y);
+    // CCLOG("position:(%f,%f)", _position.x, _position.y);
     return nextPosition;
 }
 
