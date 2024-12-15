@@ -84,3 +84,7 @@ void TimeManager::stopUpdating() {
     auto scheduler = Director::getInstance()->getScheduler();
     scheduler->unschedule("timeUpdateKey", this);
 }
+
+int TimeManager::getSeason()const {
+    return season;
+}

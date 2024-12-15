@@ -13,7 +13,7 @@ public:
     void update(int deltaT);
 
     // 获取当前时间的字符串表示（季节、日、时分）
-    std::string getTimeString() const;
+    int getSeason() const;
 
     // 获取当前星期几（如：星期一、星期二）
     std::string getWeekDay() const;
