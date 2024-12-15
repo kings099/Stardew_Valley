@@ -29,6 +29,7 @@ FarmMap* FarmMap::create(const std::string& mapFile, const Vec2& mapPosition)
     }
 }
 
+// 重写初始化函数
 bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition)
 {
     // Call the parent class' init function
@@ -92,6 +93,7 @@ bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition)
     return true;
 }
 
+// 鼠标事件的处理
 bool FarmMap::onMouseEvent(cocos2d::Event* event)
 {
     auto mouseEvent = dynamic_cast<cocos2d::EventMouse*>(event);
@@ -107,32 +109,10 @@ bool FarmMap::onMouseEvent(cocos2d::Event* event)
         Vec2 mapPosition(mousePos.x + cameraOffset_x, mousePos.y + cameraOffset_y);
         Vec2 tiledPos = absoluteToTile(mapPosition);
         CCLOG("TILED POS: %f,%f", tiledPos.x, tiledPos.y);
-
-
-        // 检查 `_tile_map` 是否有效
-        if (_tile_map == nullptr) {
-            CCLOG("Error: _tile_map is null.");
-            return false;
-        }
-        // 检查是否点击到农作物
-        for (auto child : _tile_map->getChildren()) {
-            CCLOG("Child type: %s", typeid(*child).name());
-            auto crop = dynamic_cast<Crop*>(child);
-            if (crop == nullptr) {
-                CCLOG("Child is not a Crop instance.");
-                continue;
-            }
-            auto croptype = crop->getType();
-            auto cropPos = crop->getPosition();
-            CCLOG("Found Crop of type: %s at position: %f, %f", croptype.c_str(), cropPos.x, cropPos.y);
-            if (crop && crop->getBoundingBox().containsPoint(mapPosition) && croptype == "grass") {
-                CCLOG("Crop clicked at position: %f, %f", mapPosition.x, mapPosition.y);
-                TMXTiledMap* tile_map = getTiledMap();
-               /* crop->playWeedingAnimation();*/
-                return true;
-            }
-        }
-        CCLOG("No crop clicked.");
+        int GID = getTileGIDAt("farm", tiledPos);
+        CCLOG("click GID:%d", GID);
+        Vec2 worldpos = tileToAbsolute(tiledPos);
+        CCLOG("WORLD POS: %f,%f", worldpos.x, worldpos.y);
         return true;
     }
     CCLOG("Event is not a mouse event.");

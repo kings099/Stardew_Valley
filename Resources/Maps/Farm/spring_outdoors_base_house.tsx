@@ -181,4 +181,29 @@
    <property name="CanFish" type="bool" value="true"/>
   </properties>
  </tile>
+ <tile id="1247">
+  <properties>
+   <property name="CanFish" type="bool" value="true"/>
+  </properties>
+ </tile>
+ <tile id="1248">
+  <properties>
+   <property name="CanFish" type="bool" value="true"/>
+  </properties>
+ </tile>
+ <tile id="1271">
+  <properties>
+   <property name="CanFish" type="bool" value="true"/>
+  </properties>
+ </tile>
+ <tile id="1272">
+  <properties>
+   <property name="CanFish" type="bool" value="true"/>
+  </properties>
+ </tile>
+ <tile id="1274">
+  <properties>
+   <property name="CanFish" type="bool" value="true"/>
+  </properties>
+ </tile>
 </tileset>

@@ -51,6 +51,8 @@ void GameViewController::update(float deltaTime) {
     Vec2 newCameraPosition = currentCameraPosition.lerp(targetCameraPosition, lerpSpeed);
     camera->setPosition(newCameraPosition);
 
+
+
 }
 
 void GameViewController::setMap(GameMap* newMap) {

@@ -39,7 +39,7 @@ private:
     FarmMap* farmMap;
   
     // 角色
-    std::unique_ptr<Character> character;
+    Character* character;
 
     // 视角控制器
     GameViewController* viewController;

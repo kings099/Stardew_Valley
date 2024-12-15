@@ -28,6 +28,9 @@ public:
     // 转换世界坐标到地图瓦片坐标
     virtual Vec2 absoluteToTile(const Vec2& pixelPoint);
 
+    // 转换瓦片坐标到世界坐标（中点）
+    Vec2 tileToAbsolute(const Vec2& tileCoord);
+
     // 地图像素大小
     const Size& getMapSize() const;
 
@@ -40,6 +43,8 @@ public:
     // 获取某GID对应图块的属性
     virtual cocos2d::ValueMap getTilePropertiesForGID(int GID);
 
+    // 替换指定图层的瓦片
+    void replaceTileAt(const std::string& layerName, const Vec2& tileCoord, int newGID);
 
 protected:
     TMXTiledMap* _tile_map;  // 瓦片地图类

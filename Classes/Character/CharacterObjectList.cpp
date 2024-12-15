@@ -3,61 +3,82 @@
  * File Name:     CharacterObjectList.cpp
  * File Function: 角色物品栏CharacterObjectList类的实现
  * Author:        尹诚成
- * Update Date:   2023/12/05
+ * Update Date:   2023/12/15
  * License:       MIT License
  ****************************************************************/
 
+#include <fstream>
 
 #include "CharacterObjectList.h"
-#include "proj.win32/Constant.h"
 
 USING_NS_CC;
 
 // 构造函数
 CharacterObjectList::CharacterObjectList() :
-	_maxObjectKindCount(MAX_OBJECT_LIST_SIZE_LEVEL1), 
-	_currentObjectKindCount(0),
+	_maxObjectKindCount(OBJECT_LIST_ROWS*OBJECT_LIST_COLS),
 	_currentObjectIndex(0),
-	_openObjectList(Close)
+	_openObjectList(false)
 {
-	// 初始化物品栏
-	initObjectList();
-}
 
-// 初始化物品栏
-void CharacterObjectList::initObjectList() {
-	_objectList.resize(_maxObjectKindCount);
-	for (int i = 0; i < _maxObjectKindCount; i++) {
-		_objectList[i] = ObjectListNode{ {None,nullptr}, 0 ,Unselected };
+	if (!loadData("../GameData/CharacterObjectListData.dat")) {
+		// 初始化物品栏
+		initObjectList();
+		pickUpObject(GAME_TOOL_OBJECTS_ATTRS[0], 1);
+		pickUpObject(GAME_TOOL_OBJECTS_ATTRS[3], 1);
+		pickUpObject(GAME_TOOL_OBJECTS_ATTRS[6], 1);
+		pickUpObject(GAME_TOOL_OBJECTS_ATTRS[9], 1);
+		pickUpObject(GAME_TOOL_OBJECTS_ATTRS[12], 1);
+		pickUpObject(GAME_TOOL_OBJECTS_ATTRS[15], 1);
 	}
-	_objectList[0].status = Selected;
-	
-
+	pickUpObject(GAME_TOOL_OBJECTS_ATTRS[0], 1);
 }
 
 // 按下键盘时的处理
 void CharacterObjectList::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* event) {
 	// 按下数字键,-和=键时切换物品栏
-	if (keyCode >= EventKeyboard::KeyCode::KEY_1 && keyCode <= EventKeyboard::KeyCode::KEY_9) {
-		setCurrentObject(static_cast<int>(keyCode) - static_cast<int>(EventKeyboard::KeyCode::KEY_1));
+	if (!_openObjectList) {
+		if (keyCode >= EventKeyboard::KeyCode::KEY_1 && keyCode <= EventKeyboard::KeyCode::KEY_9) {
+			setCurrentObject(static_cast<int>(keyCode) - static_cast<int>(EventKeyboard::KeyCode::KEY_1));
+		}
+		else if (keyCode == EventKeyboard::KeyCode::KEY_0) {
+			setCurrentObject(9);
+		}
+		else if (keyCode == EventKeyboard::KeyCode::KEY_MINUS) {
+			setCurrentObject(10);
+		}
+		else if (keyCode == EventKeyboard::KeyCode::KEY_EQUAL) {
+			setCurrentObject(11);
+		}
+		// 按下Q键丢弃物品
+		if (keyCode == EventKeyboard::KeyCode::KEY_Q && getCurrentObject().count != 0) {
+			deleteCurrentObject();
+		}
 	}
-	else if (keyCode == EventKeyboard::KeyCode::KEY_0) {
-		setCurrentObject(9);
+	// 按下E键打开/关闭物品栏
+	if (keyCode == EventKeyboard::KeyCode::KEY_E) {
+		_openObjectList = !_openObjectList;
 	}
-	else if (keyCode == EventKeyboard::KeyCode::KEY_MINUS) {
-		setCurrentObject(10);
-	}
-	else if (keyCode == EventKeyboard::KeyCode::KEY_EQUAL) {
-		setCurrentObject(11);
-	}
-	// 按下Q键丢弃物品
-	else if (keyCode == EventKeyboard::KeyCode::KEY_Q&& getCurrentObject().count != 0) {
-		deleteCurrentObject();
-	}
-	// 按下E键打开物品栏
-	else if (keyCode == EventKeyboard::KeyCode::KEY_E) {
-		_openObjectList =!_openObjectList;
-	}
+}
+
+// 捡起物品
+bool CharacterObjectList::pickUpObject(GameToolObject targetObject, int objectCount) {
+	std::shared_ptr<GameObject> targetObjectPtr = std::make_shared<GameToolObject>(targetObject);
+	GameCommonObject commonObject(GameObjectMapType::Tool, targetObjectPtr);
+	return pickUpObject(commonObject, objectCount);
+}
+
+// 捡起物品
+bool CharacterObjectList::pickUpObject(GameSeedObject targetObject, int objectCount) {
+	std::shared_ptr<GameObject> targetObjectPtr = std::make_shared<GameSeedObject>(targetObject);
+	GameCommonObject commonObject(GameObjectMapType::Seed, targetObjectPtr);
+	return pickUpObject(commonObject, objectCount);
+}
+
+// 捡起物品
+bool CharacterObjectList::pickUpObject(GameBaseObject targetObject, int objectCount) {
+	std::shared_ptr<GameObject> targetObjectPtr = std::make_shared<GameBaseObject>(targetObject);
+	GameCommonObject commonObject(GameObjectMapType::Base, targetObjectPtr);
+	return pickUpObject(commonObject, objectCount);
 }
 
 // 捡起物品
@@ -95,22 +116,34 @@ ObjectListNode CharacterObjectList::deleteCurrentObject() {
 	return tempObject;
 }
 
+// 交换物品
+void  CharacterObjectList::swapObject(int startIndex, int targetIndex) {
+	if (startIndex < 0 || startIndex >= _maxObjectKindCount) {
+		return;
+	}
+	ObjectListNode tempObject = _objectList[_currentObjectIndex];
+	_objectList[_currentObjectIndex] = _objectList[targetIndex];
+	_objectList[targetIndex] = tempObject;
+}
+
 // 获取当前选中的物品
 ObjectListNode CharacterObjectList::getCurrentObject() {
 	return _objectList[_currentObjectIndex];
 }
 
-// 检查物品栏是否已满
-bool CharacterObjectList::checkObjectListFull() {
-	return (_currentObjectKindCount == _maxObjectKindCount);
+// 获取物品栏状态
+bool CharacterObjectList::getObjectListStatus() {
+	return _openObjectList;
 }
 
-// 设置当前选中的物品
-void CharacterObjectList::setCurrentObject(int index) {
-	if (index < 0 || index >= _maxObjectKindCount) {
-		return;
-	}
-	_currentObjectIndex = index;
+// 查找指定位置的物品信息
+ObjectListNode CharacterObjectList::findObjectAtPosition(int index) {
+	return _objectList[index];
+}
+
+// 获取当前选中的物品索引
+int CharacterObjectList::getCurrentObjectIndex() {
+	return _currentObjectIndex;
 }
 
 // 设置物品栏状态
@@ -119,11 +152,24 @@ void CharacterObjectList::setObjectListStatus(bool status) {
 }
 
 
-// 判断角色是否打开物品栏
-bool CharacterObjectList::getObjectListStatus() {
-	return _openObjectList;
+// 设置当前选中的物品
+void CharacterObjectList::setCurrentObject(int index) {
+	if (index < 0 || index >= _maxObjectKindCount) {
+		return;
+	}
+	_currentObjectIndex = index;
+	CCLOG("_currentObjectIndex:%d", _currentObjectIndex);
 }
 
+
+// 初始化物品栏
+void CharacterObjectList::initObjectList() {
+	_objectList.resize(_maxObjectKindCount);
+	for (int i = 0; i < _maxObjectKindCount; i++) {
+		_objectList[i] = ObjectListNode{ {None,nullptr}, 0 ,Unselected };
+	}
+	_objectList[0].status = Selected;
+}
 
 // 查找物品栏中是否有指定物品
 int CharacterObjectList::findObject(GameCommonObject targetObject) {
@@ -136,3 +182,77 @@ int CharacterObjectList::findObject(GameCommonObject targetObject) {
 	// 没有找到
 	return -1;
 }
+
+// 检查物品栏是否已满
+bool CharacterObjectList::checkObjectListFull() {
+	bool isFull = true;
+	for (const auto& item : _objectList) {
+		if (item.count == 0) {
+			isFull = false;
+			break;
+		}
+	}
+	return isFull;
+}
+
+// 检查物品栏是否为空
+bool CharacterObjectList::checkObjectListEmpty() {
+	bool isEmpty = true;
+	for (const auto& item : _objectList) {
+		if (item.count != 0) {
+			isEmpty = false;
+			break;
+		}
+	}
+	return isEmpty;
+}
+
+// 保存数据
+bool CharacterObjectList::saveData(const std::string& fileName) {
+	std::ofstream outFile(fileName, std::ios::binary);
+	if (!outFile) {
+		CCLOG("Error opening file for writing: %s", fileName.c_str());
+		return false;
+	}
+	
+	int itemCount = OBJECT_LIST_ROWS * OBJECT_LIST_COLS;
+	outFile.write(reinterpret_cast<char*>(&itemCount), sizeof(itemCount));
+	
+	// 写入物品列表
+	for (const auto& item : _objectList) {
+		item.save(outFile);
+	}
+
+	outFile.close();
+	return true;
+}
+
+// 加载数据
+bool CharacterObjectList::loadData(const std::string& fileName) {
+	std::ifstream inFile(fileName, std::ios::binary);
+	if (!inFile) {
+		CCLOG("File does not exist or cannot be opened: %s", fileName.c_str());
+		return false;
+	}
+
+	int itemCount = OBJECT_LIST_ROWS * OBJECT_LIST_COLS; 
+	inFile.read(reinterpret_cast<char*>(&itemCount), sizeof(itemCount));
+
+	_objectList.resize(itemCount);
+
+	// 读取物品列表
+	for (auto& item : _objectList) {
+		item.load(inFile);
+	}
+
+	// 填充空物品
+	for (size_t i = 0; i < _objectList.size(); ++i) {
+		if (_objectList[i].count == 0) {
+			_objectList[i] = ObjectListNode{ {None,nullptr}, 0 ,Unselected };
+		}
+	}
+
+	inFile.close();
+	return true;
+}
+

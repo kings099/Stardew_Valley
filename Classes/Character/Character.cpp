@@ -11,27 +11,21 @@
 #include "../proj.win32/Constant.h"
 
 USING_NS_CC;
-
-
-// 获取单例，返回智能指针
-std::unique_ptr<Character> Character::getInstance(const std::string& filename) {
-    return std::make_unique<Character>(filename);
+// 获取单例
+Character* Character::getInstance(const std::string& filename) {
+    static Character* instance = nullptr; 
+    if (!instance) {
+        instance = new Character(filename); // 仅在第一次调用时创建实例
+    }
+    return instance;
 }
 
 // 构造函数
-Character::Character(const std::string& filename) {
-    const auto visibleSize = Director::getInstance()->getVisibleSize();
-    const Vec2 origin = Director::getInstance()->getVisibleOrigin();
+Character::Character(const std::string& filename):
+    CharacterAction(filename),
+    CharacterMove(filename)
+{
 
-    // 创建精灵并设置初始位置
-    _character = Sprite::create(filename);
-    if (!_character) {
-        CCLOG("Failed to load sprite from %s", filename.c_str());
-        return; // 处理图片加载失败的情况
-    }
-
-    _character->setPosition(Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y));
-    this->addChild(_character);
 }
 
 // 按下键盘时的处理
@@ -57,12 +51,35 @@ void Character::onKeyReleased(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::
     }
 }
 
+// 按下鼠标时的处理
+void Character::onMouseDown(cocos2d::Event* event, GameCharacterAction& gameCharacterAction, cocos2d::Vec2& targetTilePos) {
+    CharacterAction::onMouseDown(event, gameCharacterAction, targetTilePos);
+}
+
 // 更新角色位置
 Vec2 Character::updatePosition(float deltaTime) {
     return CharacterMove::updatePosition(deltaTime);
 }
 
+
 // 获取角色精灵节点
-Sprite* Character::getCharacterSprite() const {
+Sprite* Character::getCharacterSprite(){
     return _character;
+}
+
+// 保存数据
+bool Character::saveData() {
+
+    CharacterMove::saveData("../GameData/CharacterMoveData.dat");
+    CharacterObjectList::saveData("../GameData/CharacterObjectListData.dat");
+    CharacterAction::saveData("../GameData/CharacterActionData.dat");
+    return true;
+}
+
+// 加载数据
+bool Character::loadData(const std::string& fileName){
+    CharacterMove::loadData(fileName);
+    CharacterObjectList::loadData(fileName);
+    CharacterAction::loadData(fileName);
+    return true;
 }

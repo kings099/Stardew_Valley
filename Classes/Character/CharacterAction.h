@@ -14,25 +14,36 @@
 #ifndef _CHARACTER_ACTION_H_
 #define _CHARACTER_ACTION_H_
 
-class CharacterAction : public CharacterObjectList,public CharacterMove {
+class CharacterAction : public CharacterObjectList, virtual public CharacterMove {
 public:
+	// 构造函数
+	CharacterAction(const std::string& filename);
 
+	// 按下鼠标事件触发函数
+	void onMouseDown(cocos2d::Event* event,GameCharacterAction &gameCharacterAction,cocos2d::Vec2 & targetTilePos);
+
+	// 更新技能经验值和等级
+	void updateSkillExprienceAndLevel(GameCharacterAction gameCharacterAction);
+
+	// 保存数据
+	bool saveData(const std::string& fileName);
+
+	// 加载数据
+	bool loadData(const std::string& fileName);
+
+	int _skillLevel[SKILL_KIND_NUM];		//技能等级数组
 protected:
-	int _farmExperience;		// 耕种技能经验值
-	int _collectExperience;		// 采集技能经验值
-	int _mineExperience;		// 采矿技能经验值
-	int _fishExperience;		// 钓鱼技能经验值
+
 
 
 private:
+	int _skillExprience[SKILL_KIND_NUM];	//技能经验值数组
+
 	// 获取角色打算执行的动作
 	GameCharacterAction getAction();
 
 	// 判断角色是否可以执行动作
-	bool checkActionIsValid();
-
-	// 执行动作
-	void doAction();
+	GameCharacterAction checkActionIsValid( cocos2d::Vec2& targetTilePos);
 };
 
 #endif // !_CHARACTER_ACTION_H_
