@@ -2,8 +2,10 @@
 #ifndef _CONSTANT_H_
 #define _CONSTANT_H_
 
+
 #include <string>
 #include <memory>
+#include<fstream>
 #include <map>
 #include "cocos2d.h"
 
@@ -21,8 +23,6 @@ constexpr float FRAME_RATE = 60.0f;                                         // �
 const std::string APPLICATION_TITLE = u8"星露谷物语 Stardew Valley";         // 游戏应用标题
 
 // 移动相关设置
-constexpr float MOVE_SPEED = 3.5f;											// 移动速度
-constexpr float MOVE_RATE = FRAME_RATE;										// 移动帧率
 constexpr auto INVIAID_KEY = cocos2d::EventKeyboard::KeyCode::KEY_NONE;		// 无效键值
 constexpr float ACTION_RATE = 5.0f;											// 动作帧率
 constexpr int INVAVID_NUM = -1;												// 无效编号
@@ -33,12 +33,13 @@ constexpr int CHARACTER_HEIGHT = 32;										// 角色高度
 constexpr float CHARACTER_MOVE_SPEED = 5.0f;								// 角色移动速度
 constexpr float CHARACTER_HORIZONTAL_ANCHORPOINT = 0.5f;					// 角色水平锚点
 constexpr float CHARACTER_VERTICAL_ANCHORPOINT = 0.25f;						// 角色垂直锚点
-constexpr int LEVEL0_TO_LEVEL1_EXPRIENCE = 20;                              // 从零级升到一级需要的经验值
-constexpr int LEVEL1_TO_LEVEL2_EXPRIENCE = 50;                              // 从一级升到二级需要的经验值
-constexpr int LEVEL2_TO_LEVEL3_EXPRIENCE = 100;                             // 从二级升到三级需要的经验值
-constexpr int LEVEL3_TO_LEVEL4_EXPRIENCE = 200;                             // 从三级升到四级需要的经验值
-constexpr int LEVEL4_TO_LEVEL5_EXPRIENCE = 500;                             // 从四级升到五级需要的经验值
+constexpr int LEVEL0_TO_LEVEL1_EXPRIENCE = 10;                              // 从零级升到一级需要的经验值
+constexpr int LEVEL1_TO_LEVEL2_EXPRIENCE = 20;                              // 从一级升到二级需要的经验值
+constexpr int LEVEL2_TO_LEVEL3_EXPRIENCE = 50;                             // 从二级升到三级需要的经验值
+constexpr int LEVEL3_TO_LEVEL4_EXPRIENCE = 100;                             // 从三级升到四级需要的经验值
+constexpr int LEVEL4_TO_LEVEL5_EXPRIENCE = 200;                             // 从四级升到五级需要的经验值
 constexpr int SKILL_KIND_NUM = 4;                                           // 技能种类数量
+
 // 场景过渡相关
 constexpr float LERP_SPEED = 0.1f;											// 插值平滑速度
 constexpr float SCENE_TRANSITION_TIME = 1.0f;								// 场景切换时间
@@ -49,19 +50,13 @@ constexpr float INDOOR_MAP_SCALE = 5.0f;									// 室内地图缩放比例
 constexpr int DRY_FARM_TILE_GID = 2040;                                     // 干燥耕地效果动画图块GID
 constexpr int EMPTY_GID = 0;
 
-
-
 // 物品设置
 constexpr int OBJECT_LIST_ROWS = 3;											// 物品列表行数
 constexpr int OBJECT_LIST_COLS = 12;										// 物品列表列数
 
-
-
 // UI 相关设置
 constexpr int UI_SCALE = 210.0f;                                            // UI界面缩放
 constexpr int FONT_SIZE = 20;                                               // 字体大小
-
-
 constexpr int MAP_LAYER_GRADE = 0;                                          // 地图层级
 constexpr int CHARACTER_LAYER_GRADE = 1;                                    // 角色层级
 constexpr int UI_LAYER_GRADE = 2;                                           // UI层级
@@ -193,15 +188,20 @@ const std::map< GameCharacterAction, TileType> ACTION_TO_TILEMAP = {
 // 游戏物品共有属性定义
 class GameObject {
 public:
+    int _index;                  // 物品索引
     std::string _fileName;       // 物品图片资源文件路径
     std::string _name;           // 物品名称
     GameObjectSkillType _type;   // 物品类型
 
     GameObject() = default;
-    GameObject(const std::string& fileName, const std::string& name, GameObjectSkillType type) :
+    GameObject(const int index, const std::string& fileName, const std::string& name, GameObjectSkillType type) :
+        _index(index),
         _fileName(fileName),
         _name(name),
         _type(type) {
+    }
+    int getID() {
+        return _index;
     }
     virtual ~GameObject() {}     // 虚拟析构函数
 };
@@ -215,8 +215,8 @@ public:
     GameCharacterAction _action; // 工具当前执行的动作
 
     // 构造函数
-    GameToolObject(const std::string& fileName, const std::string& name, GameObjectSkillType type, int level, int actionCost, int durability, GameCharacterAction action) :
-        GameObject(fileName, name, type),
+    GameToolObject(const int index, const std::string& fileName, const std::string& name, GameObjectSkillType type, int level, int actionCost, int durability, GameCharacterAction action) :
+        GameObject(index,fileName, name, type),
         _level(level),
         _actionCost(actionCost),
         _durability(durability),
@@ -237,8 +237,8 @@ public:
     int _salePrice;                         // 种子出售价格
 
     // 构造函数
-    GameSeedObject(const std::string& fileName, const std::string& name, GameObjectSkillType type, int level, Season season, std::vector<int> growthStages, int totalGrowTime, int harvestIndex, int buyPrice, int salePrice) :
-        GameObject(fileName, name, type),
+    GameSeedObject(const int index, const std::string& fileName, const std::string& name, GameObjectSkillType type, int level, Season season, std::vector<int> growthStages, int totalGrowTime, int harvestIndex, int buyPrice, int salePrice) :
+        GameObject(index,fileName, name, type),
         _level(level),
         _season(season),
         _growthStages(growthStages),
@@ -264,8 +264,8 @@ public:
     bool _synthesis;                            // 是否可以合成
     std::map<std::string, int> _ingredients;	// 合成物品的原料
     // 构造函数
-    GameBaseObject(const std::string& fileName, const std::string& name, GameObjectSkillType type, int maxStorage, int level, int quality, bool sale, int salePrice, bool eat, int eatEnergy, bool place, bool synthesis, std::map<std::string, int> ingredients) :
-        GameObject(fileName, name, type),
+    GameBaseObject(const int index,const std::string& fileName, const std::string& name, GameObjectSkillType type, int maxStorage, int level, int quality, bool sale, int salePrice, bool eat, int eatEnergy, bool place, bool synthesis, std::map<std::string, int> ingredients) :
+        GameObject(index,fileName, name, type),
         _maxStorage(maxStorage),
         _level(level),
         _quality(quality),
@@ -280,6 +280,36 @@ public:
     }
 };
 
+// 游戏工具类物品属性参数定义
+const std::vector<GameToolObject> GAME_TOOL_OBJECTS_ATTRS = {
+    GameToolObject(1,"../Resources/Objects/Tools/BeginnerHoe.png", "初级锄头", Farm, 1, 1, INT_MAX, Plowing),
+    GameToolObject(2,"../Resources/Objects/Tools/IntermediateHoe.png", "中级锄头", Farm, 2, 1, INT_MAX, Plowing),
+    GameToolObject(3,"../Resources/Objects/Tools/AdvancedHoe.png", "高级锄头", Farm, 3, 1, INT_MAX, Plowing),
+    GameToolObject(4,"../Resources/Objects/Tools/BeginnerAxe.png", "初级斧头", Collect, 1, 5, INT_MAX, Cutting),
+    GameToolObject(5,"../Resources/Objects/Tools/IntermediateAxe.png", "中级斧头", Collect, 2, 4, INT_MAX, Cutting),
+    GameToolObject(6,"../Resources/Objects/Tools/AdvancedAxe.png", "高级斧头", Collect, 3, 3, INT_MAX, Cutting),
+    GameToolObject(7,"../Resources/Objects/Tools/BeginnerPickaxe.png", "初级镐子", Mine, 1, 5, INT_MAX, Mining),
+    GameToolObject(8,"../Resources/Objects/Tools/IntermediatePickaxe.png", "中级镐子", Mine, 2, 4, INT_MAX, Mining),
+    GameToolObject(9,"../Resources/Objects/Tools/AdvancedPickaxe.png", "高级镐子", Mine, 3, 3, INT_MAX, Mining),
+    GameToolObject(10,"../Resources/Objects/Tools/BeginnerFishingRods.png", "初级鱼竿", Fish, 1, 1, INT_MAX, Fishing),
+    GameToolObject(11,"../Resources/Objects/Tools/IntermediateFishingRods.png", "中级鱼竿", Fish, 2, 1, INT_MAX, Fishing),
+    GameToolObject(12,"../Resources/Objects/Tools/AdvancedFishingRods.png", "高级鱼竿", Fish, 3, 1, INT_MAX, Fishing),
+    GameToolObject(13,"../Resources/Objects/Tools/BeginnerKattle.png", "初级水壶", Farm, 1, 1, 40, Watering),
+    GameToolObject(14,"../Resources/Objects/Tools/IntermediateKattle.png", "中级水壶", Farm, 2, 1, 55, Watering),
+    GameToolObject(15,"../Resources/Objects/Tools/AdvancedKattle.png", "高级水壶", Farm, 3, 1, 70, Watering),
+    GameToolObject(16,"../Resources/Objects/Tools/scythe.png","镰刀",Collect,1,1,INT_MAX,Weeding)
+};
+
+// 游戏种子类物品属性参数定义
+const std::vector<GameSeedObject> GAME_SEED_OBJECTS_ATTRS = {
+
+};
+
+// 游戏基础类物品属性参数定义
+const std::vector<GameBaseObject> GAME_BASE_OBJECTS_ATTRS = {
+
+};
+
 // 游戏物品属性定义
 struct GameCommonObject {
     GameObjectMapType type;                             // 物品类型
@@ -290,6 +320,49 @@ struct GameCommonObject {
         type(type),
         object(object)
     {
+    }
+
+    std::shared_ptr<GameObject> loadGameObjectByID(int id) {
+        // 尝试从工具对象列表中查找
+        for (const auto& tool : GAME_TOOL_OBJECTS_ATTRS) {
+            if (tool._index == id) {
+                return std::make_shared<GameToolObject>(tool); // 找到工具对象，返回复制的 shared_ptr
+            }
+        }
+
+        // 尝试从种子对象列表中查找
+        for (const auto& seed : GAME_SEED_OBJECTS_ATTRS) {
+            if (seed._index == id) {
+                return std::make_shared<GameSeedObject>(seed); // 找到种子对象，返回复制的 shared_ptr
+            }
+        }
+
+        // 尝试从基础对象列表中查找
+        for (const auto& base : GAME_BASE_OBJECTS_ATTRS) {
+            if (base._index == id) {
+                return std::make_shared<GameBaseObject>(base); // 找到基础对象，返回复制的 shared_ptr
+            }
+        }
+        return nullptr;
+    }
+
+    void save(std::ofstream& outFile) const {
+        outFile.write(reinterpret_cast<const char*>(&type), sizeof(type));
+        int objectID = object ? object->getID() : -1; // 假设有 getID 方法
+        outFile.write(reinterpret_cast<const char*>(&objectID), sizeof(objectID));
+    }
+
+    void load(std::ifstream& inFile) {
+        inFile.read(reinterpret_cast<char*>(&type), sizeof(type));
+        int objectID;
+        inFile.read(reinterpret_cast<char*>(&objectID), sizeof(objectID));
+
+        if (objectID != -1) {
+            object = loadGameObjectByID(objectID); // 通过 ID 加载对象的方法
+        }
+        else {
+            object = nullptr;
+        }
     }
 };
 // 物品栏中物品状态定义
@@ -303,37 +376,23 @@ struct ObjectListNode {
     GameCommonObject objectNode;	// 物品信息
     int count;						// 物品数量
     ObjectListNodeStatus status;	// 物品状态(选中/未选中)
+
+    // 自定义序列化函数
+    void save(std::ofstream& outFile) const {
+        objectNode.save(outFile);
+        outFile.write(reinterpret_cast<const char*>(&count), sizeof(count));
+        outFile.write(reinterpret_cast<const char*>(&status), sizeof(status));
+    }
+
+    // 自定义反序列化函数
+    void load(std::ifstream& inFile) {
+        objectNode.load(inFile);
+        inFile.read(reinterpret_cast<char*>(&count), sizeof(count));
+        inFile.read(reinterpret_cast<char*>(&status), sizeof(status));
+    }
 };
 
-// 游戏工具类物品属性参数定义
-const std::vector<GameToolObject> GAME_TOOL_OBJECTS_ATTRS = {
-    GameToolObject("../Resources/Objects/Tools/BeginnerHoe.png", "初级锄头", Farm, 1, 1, INT_MAX, Plowing),
-    GameToolObject("../Resources/Objects/Tools/IntermediateHoe.png", "中级锄头", Farm, 2, 1, INT_MAX, Plowing),
-    GameToolObject("../Resources/Objects/Tools/AdvancedHoe.png", "高级锄头", Farm, 3, 1, INT_MAX, Plowing),
-    GameToolObject("../Resources/Objects/Tools/BeginnerAxe.png", "初级斧头", Collect, 1, 5, INT_MAX, Cutting),
-    GameToolObject("../Resources/Objects/Tools/IntermediateAxe.png", "中级斧头", Collect, 2, 4, INT_MAX, Cutting),
-    GameToolObject("../Resources/Objects/Tools/AdvancedAxe.png", "高级斧头", Collect, 3, 3, INT_MAX, Cutting),
-    GameToolObject("../Resources/Objects/Tools/BeginnerPickaxe.png", "初级镐子", Mine, 1, 5, INT_MAX, Mining),
-    GameToolObject("../Resources/Objects/Tools/IntermediatePickaxe.png", "中级镐子", Mine, 2, 4, INT_MAX, Mining),
-    GameToolObject("../Resources/Objects/Tools/AdvancedPickaxe.png", "高级镐子", Mine, 3, 3, INT_MAX, Mining),
-    GameToolObject("../Resources/Objects/Tools/BeginnerFishingRods.png", "初级鱼竿", Fish, 1, 1, INT_MAX, Fishing),
-    GameToolObject("../Resources/Objects/Tools/IntermediateFishingRods.png", "中级鱼竿", Fish, 2, 1, INT_MAX, Fishing),
-    GameToolObject("../Resources/Objects/Tools/AdvancedFishingRods.png", "高级鱼竿", Fish, 3, 1, INT_MAX, Fishing),
-    GameToolObject("../Resources/Objects/Tools/BeginnerKattle.png", "初级水壶", Farm, 1, 1, 40, Watering),
-    GameToolObject("../Resources/Objects/Tools/IntermediateKattle.png", "中级水壶", Farm, 2, 1, 55, Watering),
-    GameToolObject("../Resources/Objects/Tools/AdvancedKattle.png", "高级水壶", Farm, 3, 1, 70, Watering),
-    GameToolObject("../Resources/Objects/Tools/scythe.png","镰刀",Collect,1,1,INT_MAX,Weeding)
-};
 
-// 游戏种子类物品属性参数定义
-const std::vector<GameSeedObject> GAME_SEED_OBJECTS_ATTRS = {
-
-};
-
-// 游戏基础类物品属性参数定义
-const std::vector<GameBaseObject> GAME_BASE_OBJECTS_ATTRS = {
-
-};
 
 
 #endif // !_CONSTANT_H_

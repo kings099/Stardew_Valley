@@ -57,11 +57,11 @@ public:
 	// 设置物品栏状态
 	void setObjectListStatus(bool status);
 
-	// 保存物品栏数据
-	void saveObjectListData(const std::string& fileName);
+	// 保存数据
+	bool saveData(const std::string& fileName);
 
-	// 读取物品栏数据
-	void getObjectListData(const std::string& fileName);
+	// 加载数据
+	bool loadData(const std::string& fileName);
 private:
 	std::vector<ObjectListNode> _objectList;	// 物品栏列表
 	int _maxObjectKindCount;					// 物品栏最大物品种类容量

@@ -71,6 +71,7 @@ Sprite* Character::getCharacterSprite(){
 bool Character::saveData() {
 
     CharacterMove::saveData("../GameData/CharacterMoveData.dat");
+    CharacterObjectList::saveData("../GameData/CharacterObjectListData.dat");
     CharacterAction::saveData("../GameData/CharacterActionData.dat");
     return true;
 }
@@ -78,6 +79,7 @@ bool Character::saveData() {
 // 加载数据
 bool Character::loadData(const std::string& fileName){
     CharacterMove::loadData(fileName);
+    CharacterObjectList::loadData(fileName);
     CharacterAction::loadData(fileName);
     return true;
 }
