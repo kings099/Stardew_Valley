@@ -1,9 +1,9 @@
 ﻿/****************************************************************
  * Project Name:  Stardew_Valley
- * File Name:     FarmScene.h
- * File Function: 农场场景类FamrScene的定义
+ * File Name:     GameMainScene.h
+ * File Function: 游戏主场景类GameMainSecen类的定义
  * Author:        金恒宇
- * Update Date:   2024/12/5
+ * Update Date:   2024/12/16
  * License:       MIT License
  ****************************************************************/
 #pragma once
@@ -11,14 +11,20 @@
 #define __FARM_SCENE_H__
 
 #include "cocos2d.h"
+#include "SimpleAudioEngine.h"
 #include "Classes/Maps/FarmMap.h"
 #include "Classes/Character/Character.h"
 #include "Classes/Control/GameViewController.h"
 #include "Classes/Layer/UILayer.h"
 #include "Classes/Control/InteractionManager.h"
+#include "../Classes/MenuImage/HoverMenuItemImage.h"
+#include "../Classes/Layer/UILayer.h"
+#include "../Classes/Manager/TimeManager.h"
+#include "../Classes/Layer/TimeManagerUI.h"
+#include "Control/MapSwitchManager.h"
 
 
-class FarmScene : public cocos2d::Scene
+class GameMainScene : public cocos2d::Scene
 {
 public:
     // 创建场景
@@ -31,21 +37,24 @@ public:
     void menuCloseCallback(cocos2d::Ref* pSender);
 
     // 实现 create() 方法
-    CREATE_FUNC(FarmScene);
+    CREATE_FUNC(GameMainScene);
     
 
 private:
     // 农场地图
-    FarmMap* farmMap;
+    FarmMap* _farmMap;
   
     // 角色
-    Character* character;
+    Character* _character;
 
     // 视角控制器
-    GameViewController* viewController;
+    GameViewController* _viewController;
+
+    // 交互类管理
+    InteractionManager* _interaction;
 
     // UI层
-    UILayer* uiLayer;
+    UILayer* _uiLayer;
 };
 
 #endif // __FARM_SCENE_H__

@@ -13,7 +13,7 @@
 #include "../Classes/Control/GameViewController.h"
 #include "../Classes/Character/CharacterInfo.h"
 #include "../Classes/MenuImage/HoverMenuItemImage.h"
-#include "FarmScene.h"
+#include "GameMainScene.h"
 #include "Control/NpcManager.h"  // 引入 NpcManager
 #include "Control/NpcInteractionManager.h"  // 引入 NpcInteractionManager
 
@@ -289,7 +289,7 @@ void HelloWorld::startGameCallback(Ref* pSender)
         loginLayer->setVisible(false);
 
         // 创建 farmScene
-        auto farmScene = FarmScene::createScene();  // 假设 farmScene 已经创建
+        auto farmScene = GameMainScene::createScene();  // 假设 farmScene 已经创建
 
         // 使用 TransitionFade 进行场景过渡
         auto transition = TransitionFade::create(SCENE_TRANSITION_TIME, farmScene);  // 1秒钟的过渡时间

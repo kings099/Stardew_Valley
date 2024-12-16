@@ -143,8 +143,8 @@ void FarmMap::plantTreesOnPathLayer(int maxGrowthStage) {
                     _tile_map->addChild(crop, 10);       // 添加到当前节点
                     crop->setPosition(tileToRelative(Vec2(col, row))); // 设置位置为瓦片的世界坐标
                     crop->setGrowthStage(maxGrowthStage); // 直接设置为成熟阶
-                    replaceTileAt("path", Vec2(col, row), PINE_INVISIBLE_GID);
-                    replaceTileAt("Tree", Vec2(col, row), PINE_ROOT_GID);
+                    replaceTileAt("path", Vec2(col, row), PINE_INVISIBLE_GID);// 设置树木标志为不可见
+                    replaceTileAt("Tree", Vec2(col, row), PINE_ROOT_GID);// 设置树根图块
                 }
                 else {
                     CCLOG("Error: Failed to create crop of type pine");
