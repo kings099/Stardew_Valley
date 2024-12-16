@@ -39,7 +39,7 @@ bool MapSwitchManager::init(Character* character, GameMap* currentMap, GameViewC
     return true;
 }
 
-bool MapSwitchManager::switchMap(const std::string& newMapFile, int teleportID) {
+bool MapSwitchManager::switchMap(const std::string& newMapFile, Vec2& teleportPOS) {
     CCLOG("Switching map to: %s", newMapFile.c_str());
 
     if (_currentMap) {
@@ -48,11 +48,13 @@ bool MapSwitchManager::switchMap(const std::string& newMapFile, int teleportID) 
 
     GameMap* newMap = nullptr;
 
-    if (newMapFile.find("farm") != std::string::npos) {
+    if (newMapFile.find("Combat") != std::string::npos) {
         newMap = FarmMap::create(newMapFile);
+        teleportPOS = newMap->tileToAbsolute(Vec2(60, 20));
     }
     else if (newMapFile.find("house") != std::string::npos) {
-        newMap = IndoorMap::create(newMapFile,Vec2(_character->getPosition().x-300,_character->getPosition().y));
+        newMap = IndoorMap::create(newMapFile,Vec2(_character->getPosition().x-300,_character->getPosition().y-100));
+        teleportPOS = newMap->tileToAbsolute(Vec2(3, 10));
     }
     else {
         CCLOG("Unknown map type for file: %s", newMapFile.c_str());
@@ -67,13 +69,7 @@ bool MapSwitchManager::switchMap(const std::string& newMapFile, int teleportID) 
     _currentMap = newMap;
     this->addChild(_currentMap);
 
-    Vec2 targetPosition = getTargetPositionByID(teleportID, _currentMap);
-    //if (targetPosition == Vec2::ZERO) {
-    //    CCLOG("Failed to find target position for teleport ID: %d", teleportID);
-    //    return false;
-    //}
-    Vec2 localPosition = _character->getParent()->convertToNodeSpace(targetPosition);
-    CCLOG("Character local position set to: (%f, %f)", localPosition.x, localPosition.y);
+
     // 更新 InteractionManager 的地图引用
     if (_interactionManager) {
         _interactionManager->setMap(_currentMap);

@@ -125,8 +125,13 @@ bool InteractionManager::checkTeleport(const Vec2& worldPos, std::string& target
     if (!_gameMap) return false;
 
     Vec2 tilePos = _gameMap->absoluteToTile(worldPos);
-    if (tilePos == Vec2(0, 0)) {
-        targetMapFile = "../Resources/Maps/Farm/house.tmx";
+    int teleprtGID = _gameMap->getTileGIDAt("Teleport",tilePos);
+    if (teleprtGID != 0 ) {
+        ValueMap properties = _gameMap->getTilePropertiesForGID(teleprtGID);
+        if (!properties.empty() && properties.find("TargetMap") != properties.end()) {
+            targetMapFile = properties["TargetMap"].asString();
+            return true;  // 检测到传送点
+        }
         return true;
     }
     return false;
@@ -159,8 +164,9 @@ void InteractionManager::ActionAnimation(GameCharacterAction action, const Vec2&
     case Mining:
         _gameMap->replaceTileAt("path", TilePos, EMPTY_GID);
         Crops::playStoneBreakingAnimationAt(_gameMap->tileToRelative(TilePos), _gameMap->getTiledMap());
-        break; 
+        break;
     case Placement:
         // TODO : 播种 待实现
+        break;
     }
 }

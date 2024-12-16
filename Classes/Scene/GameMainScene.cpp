@@ -56,7 +56,7 @@ bool GameMainScene::init()
     // 启动时间管理器的计时
     TimeManager::getInstance()->startUpdating();
 
-    //创建场景转换器
+    //创建地图转换器
     auto mapSwitchManager = MapSwitchManager::create(_character, _farmMap, _viewController, _interaction);
     this->addChild(mapSwitchManager);
 
@@ -89,11 +89,13 @@ bool GameMainScene::init()
     this->schedule([this, mapSwitchManager](float deltaTime) {
         Vec2 characterWorldPos = _character->getPosition();
         std::string targetMapFile;
+        Vec2 TargetPos;
         _interaction->updateSurroundingTiles(characterWorldPos);
         // 检测传送点
         if (_interaction->checkTeleport(characterWorldPos, targetMapFile)) {
             CCLOG("Teleport triggered to map: %s", targetMapFile.c_str());
-            mapSwitchManager->switchMap(targetMapFile, 0);
+            mapSwitchManager->switchMap(targetMapFile, TargetPos);
+            _character->setPosition(TargetPos);
         }
         _character->updateTileInfo(_interaction);
         }, "CheckTeleportUpdate");
