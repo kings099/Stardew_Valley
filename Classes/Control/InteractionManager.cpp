@@ -107,14 +107,22 @@ bool InteractionManager::isCollidableAtPos(const Vec2& tilePos) {
     }
     int GIDPath = _gameMap->getTileGIDAt("path", tilePos);
     int GIDBuildings = _gameMap->getTileGIDAt("buildings", tilePos);
+    int GIDHouse = _gameMap->getTileGIDAt("house", tilePos);
     ValueMap path_properties = _gameMap->getTilePropertiesForGID(GIDPath);
     ValueMap buildings_properties = _gameMap->getTilePropertiesForGID(GIDBuildings);
-    if (!path_properties.empty() || !buildings_properties.empty()) {
+    ValueMap house_properties = _gameMap->getTilePropertiesForGID(GIDHouse);
+    if (GIDBuildings != 0) {
+        return true;
+    }
+    if (!path_properties.empty() || !buildings_properties.empty()||!house_properties.empty()) {
         if (path_properties.find("canNotMove") != path_properties.end()) {
             return path_properties["canNotMove"].asBool();
         }
         if (buildings_properties.find("canNotMove") != buildings_properties.end()) {
             return buildings_properties["canNotMove"].asBool();
+        }
+        if (house_properties.find("canNotMove") != house_properties.end()) {
+            return house_properties["canNotMove"].asBool();
         }
     }
     return false;
@@ -125,8 +133,13 @@ bool InteractionManager::checkTeleport(const Vec2& worldPos, std::string& target
     if (!_gameMap) return false;
 
     Vec2 tilePos = _gameMap->absoluteToTile(worldPos);
-    if (tilePos == Vec2(0, 0)) {
-        targetMapFile = "../Resources/Maps/Farm/house.tmx";
+    int teleprtGID = _gameMap->getTileGIDAt("Teleport",tilePos);
+    if (teleprtGID != 0 ) {
+        ValueMap properties = _gameMap->getTilePropertiesForGID(teleprtGID);
+        if (!properties.empty() && properties.find("TargetMap") != properties.end()) {
+            targetMapFile = properties["TargetMap"].asString();
+            return true;  // 检测到传送点
+        }
         return true;
     }
     return false;
@@ -159,8 +172,9 @@ void InteractionManager::ActionAnimation(GameCharacterAction action, const Vec2&
     case Mining:
         _gameMap->replaceTileAt("path", TilePos, EMPTY_GID);
         Crops::playStoneBreakingAnimationAt(_gameMap->tileToRelative(TilePos), _gameMap->getTiledMap());
-        break; 
+        break;
     case Placement:
         // TODO : 播种 待实现
+        break;
     }
 }
