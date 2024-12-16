@@ -107,14 +107,22 @@ bool InteractionManager::isCollidableAtPos(const Vec2& tilePos) {
     }
     int GIDPath = _gameMap->getTileGIDAt("path", tilePos);
     int GIDBuildings = _gameMap->getTileGIDAt("buildings", tilePos);
+    int GIDHouse = _gameMap->getTileGIDAt("house", tilePos);
     ValueMap path_properties = _gameMap->getTilePropertiesForGID(GIDPath);
     ValueMap buildings_properties = _gameMap->getTilePropertiesForGID(GIDBuildings);
-    if (!path_properties.empty() || !buildings_properties.empty()) {
+    ValueMap house_properties = _gameMap->getTilePropertiesForGID(GIDHouse);
+    if (GIDBuildings != 0) {
+        return true;
+    }
+    if (!path_properties.empty() || !buildings_properties.empty()||!house_properties.empty()) {
         if (path_properties.find("canNotMove") != path_properties.end()) {
             return path_properties["canNotMove"].asBool();
         }
         if (buildings_properties.find("canNotMove") != buildings_properties.end()) {
             return buildings_properties["canNotMove"].asBool();
+        }
+        if (house_properties.find("canNotMove") != house_properties.end()) {
+            return house_properties["canNotMove"].asBool();
         }
     }
     return false;
