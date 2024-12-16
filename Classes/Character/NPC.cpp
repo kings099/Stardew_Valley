@@ -13,6 +13,7 @@
 #include "GiftItem.h"
 #include "ui/CocosGUI.h"
 #include "Layer/ChatLayer.h"
+#include"CharacterInfo.h"
 
  // NPC 初始化
 NPC::NPC(std::string name, cocos2d::Vec2 position, const std::string& idleImage, const std::vector<std::string>& walkFrames)
@@ -47,7 +48,8 @@ void NPC::initializeSprite(const std::string& idleImage, const std::vector<std::
 void NPC::showDialog() {
     int dialogueIndex = affection / 25;
     dialogueIndex = std::min(dialogueIndex, (int)dialogues.size() - 1);
-    std::string dialogue = dialogues[dialogueIndex];
+    std::string username = CharacterInfo::getInstance()->getUsername();  // 获取用户名
+    std::string dialogue = dialogues[dialogueIndex]+","+username;
 
     // 创建并显示 ChatLayer
     ChatLayer* chatLayer = ChatLayer::create(dialogue);  // 创建 ChatLayer 实例并传入对话内容
