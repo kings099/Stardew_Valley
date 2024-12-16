@@ -45,7 +45,7 @@ bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition)
     //// 在场景初始化时设置季节
     Crops::setSeason(Season::Spring); // 设置当前季节为春季
     // 在 path 层种植橡树，枫树，松树
-    plantTreesOnPathLayer(5);
+    //plantTreesOnPathLayer(5);
     
     //监听鼠标
     auto listener = EventListenerMouse::create();
@@ -110,7 +110,8 @@ void FarmMap::plantTreesOnPathLayer(int maxGrowthStage) {
                 // 创建并种植农作物
                 auto crop = Crops::create("oak", maxGrowthStage);
                 if (crop) {
-                    _tile_map->addChild(crop,10);       // 添加到当前节点
+                    _treeLayer->addChild(crop); // 添加到树木层
+                    _treeLayer->setScale(FARM_MAP_SCALE);
                     crop->setPosition(tileToRelative(Vec2(col,row))); // 设置位置为瓦片的世界坐标
                     crop->setGrowthStage(maxGrowthStage); // 直接设置为成熟阶
                     replaceTileAt("path", Vec2(col, row), OAK_INVISIBLE_GID);
@@ -125,7 +126,8 @@ void FarmMap::plantTreesOnPathLayer(int maxGrowthStage) {
                 // 创建并种植农作物
                 auto crop = Crops::create("maple", maxGrowthStage);
                 if (crop) {
-                    _tile_map->addChild(crop, 10);       // 添加到当前节点
+                    _treeLayer->addChild(crop); // 添加到树木层
+                    _treeLayer->setScale(FARM_MAP_SCALE);
                     crop->setPosition(tileToRelative(Vec2(col, row))); // 设置位置为瓦片的世界坐标
                     crop->setGrowthStage(maxGrowthStage); // 直接设置为成熟阶
                     replaceTileAt("path", Vec2(col, row), MAMPLE_INVISIBLE_GID);
@@ -140,7 +142,8 @@ void FarmMap::plantTreesOnPathLayer(int maxGrowthStage) {
                 // 创建并种植农作物
                 auto crop = Crops::create("pine", maxGrowthStage);
                 if (crop) {
-                    _tile_map->addChild(crop, 10);       // 添加到当前节点
+                    _treeLayer->addChild(crop); // 添加到树木层
+                    _treeLayer->setScale(FARM_MAP_SCALE);
                     crop->setPosition(tileToRelative(Vec2(col, row))); // 设置位置为瓦片的世界坐标
                     crop->setGrowthStage(maxGrowthStage); // 直接设置为成熟阶
                     replaceTileAt("path", Vec2(col, row), PINE_INVISIBLE_GID);// 设置树木标志为不可见
@@ -155,3 +158,6 @@ void FarmMap::plantTreesOnPathLayer(int maxGrowthStage) {
     }
 }
 
+void FarmMap::setTreeLayer(cocos2d::Node* treeLayer) {
+    _treeLayer = treeLayer;
+}

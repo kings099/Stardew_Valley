@@ -32,6 +32,16 @@ bool GameMainScene::init()
     _farmMap = FarmMap::create("../Resources/Maps/Farm/Farm_Combat.tmx");
     this->addChild(_farmMap, 0); 
 
+    // 创建树木层
+    auto treeLayer = Node::create();
+    this->addChild(treeLayer, 2); // 树木层级比角色高
+    treeLayer->setName("treeLayer");
+
+    // 传递 treeLayer 给 FarmMap，用于添加树
+    _farmMap->setTreeLayer(treeLayer);
+
+    _farmMap->plantTreesOnPathLayer(5); // 假设最大生长阶段为 5
+
     // 加载角色
     _character = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png");
     this->addChild(_character, 1);

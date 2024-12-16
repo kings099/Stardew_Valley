@@ -34,6 +34,12 @@ public:
 
     //在path层种植指定gid的树
     void FarmMap::plantTreesOnPathLayer(int maxGrowthStage);
+
+    // 获取树木图层
+    void setTreeLayer(cocos2d::Node* treeLayer);
+
+private:
+    cocos2d::Node* _treeLayer; // 树木层节点
 };
 
 #endif // __FARM_MAP_H_
