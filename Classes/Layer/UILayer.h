@@ -76,6 +76,7 @@ private:
 	cocos2d::Sprite* selectedObjectSprite;											// 当前选中的对象
 	HoverMenuItemImage *deleteObjectButton;											// 删除物品按钮
 	HoverMenuItemImage *closeObjectListButton;										// 关闭物品栏按钮
+	HoverMenuItemImage* exitButton;													// 退出按钮
 	PlacementMarkerLayer* placementMarkerLayer;										// 放置标记层类指针
 	bool objectListStatus;															// 物品栏状态
 	bool lastObjectListStatus;														// 上一次物品栏状态
@@ -86,6 +87,9 @@ private:
 
 	// 设置选中物品标记框的显示状态
 	void setSelectObjectSpriteMarker(int index, bool show);
+
+	// 关闭回调
+	void menuCloseCallback(cocos2d::Ref* pSender);
 };
 
 #endif // !_UILAYER_H_
