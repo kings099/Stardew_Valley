@@ -30,26 +30,6 @@ bool FarmScene::init()
         return false;
     }
 
-    // 获取可见区域大小
-    auto visibleSize = Director::getInstance()->getVisibleSize();
-    auto origin = Director::getInstance()->getVisibleOrigin();
-
-    // 设置关闭按钮
-    auto closeItem = HoverMenuItemImage::create(
-        "CloseNormal.png",
-        "CloseSelected.png",
-        CC_CALLBACK_1(FarmScene::menuCloseCallback, this));
-
-    if (closeItem != nullptr) {
-        float x = origin.x + visibleSize.width - closeItem->getContentSize().width / 2;
-        float y = origin.y + closeItem->getContentSize().height / 2;
-        closeItem->setPosition(Vec2(x, y));
-    }
-
-    auto menu = Menu::create(closeItem, nullptr);
-    menu->setPosition(Vec2::ZERO);
-    this->addChild(menu, 1);
-
     // 加载农场地图
     farmMap = FarmMap::create("../Resources/Maps/Farm/Farm_Combat.tmx");
     this->addChild(farmMap, 0); 
