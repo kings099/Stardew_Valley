@@ -20,7 +20,7 @@ CharacterAction::CharacterAction(const std::string &filename):
 {
 	if (!loadData("../GameData/CharacterActionData.dat")) {
 		for (int i = 0; i < SKILL_KIND_NUM; i++) {
-			_skillLevel[i] = 0;
+			_skillLevel[i] = i;
 			_skillExprience[i] = 0;
 		}
 	}
@@ -130,6 +130,13 @@ void CharacterAction::updateSkillExprienceAndLevel(GameCharacterAction gameChara
 			_skillLevel[i] = 5;
 		}
 	}
+}
+
+// 获取技能等级
+int CharacterAction::getSkillLevel(int index) {
+	if (index < 0 || index >= SKILL_KIND_NUM)
+		return -1;
+	return _skillLevel[index];
 }
 
 // 保存数据
