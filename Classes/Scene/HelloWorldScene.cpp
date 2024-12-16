@@ -16,7 +16,8 @@
 #include "GameMainScene.h"
 #include "Control/NpcManager.h"  // 引入 NpcManager
 #include "Control/NpcInteractionManager.h"  // 引入 NpcInteractionManager
-
+#include "audio/include/AudioEngine.h"  // 引入 AudioEngine
+using namespace cocos2d::experimental;
 USING_NS_CC;
 
 Scene* HelloWorld::createScene()
@@ -38,6 +39,8 @@ bool HelloWorld::init()
     if (!Scene::init()) {
         return false;
     }
+    // 播放背景音乐
+    AudioEngine::play2d("../Resources/Music/HelloMusic.mp3", true);
 
     // 初始化 NPC 和管理器
     NpcManager::getInstance()->initializeNPCs();  // 初始化 NPC
