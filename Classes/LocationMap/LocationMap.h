@@ -20,13 +20,15 @@ public:
     // 获取单例
     static LocationMap& getInstance();
 
-    // 获取位置属性与屏幕坐标键值对
+    // 获取位置属性与屏幕坐标键值对(物品栏)
     const std::map<int, cocos2d::Vec2>& getLocationMap() const;
 
+    // 获取位置属性与屏幕坐标键值对(技能等级)
+    const std::map<int, cocos2d::Vec2>& getSkillLevelLocationMap() const;
 private:
     std::map<int, cocos2d::Vec2> _closedlocationMap; // 位置属性与屏幕坐标键值对(物品栏打开状态)
     std::map<int, cocos2d::Vec2> _openedlocationMap; // 位置属性与屏幕坐标键值对(物品栏关闭状态)
-
+    std::map<int, cocos2d::Vec2> _skillLevelLocationMap;// 位置属性与屏幕坐标键值对(技能等级)
     // 构造函数
     LocationMap();
 };

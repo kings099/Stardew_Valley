@@ -18,10 +18,14 @@ UILayer::UILayer() :
     timeLabel1(nullptr),
     timeLabel2(nullptr),
     timeDisplayLayer(nullptr),
+    closedobjectListLayer(nullptr),
+    openedobjectListLayer(nullptr),
+    selectedObjectSprite(nullptr),
+    skillLevelBoard(nullptr),
+    nearestPlacementMarker(nullptr),
     deleteObjectButton(nullptr),
     closeObjectListButton(nullptr),
-    selectedObjectSprite(nullptr),
-    nearestPlacementMarker(nullptr),
+    exitButton(nullptr),
     placementMarkerLayer(nullptr),
     objectListStatus(false),
     lastObjectListStatus(false),
@@ -34,7 +38,7 @@ UILayer::UILayer() :
     std::fill_n(selectObjectSpriteMarker, OBJECT_LIST_COLS, nullptr);
     std::fill_n(closedObjectSpriteImage, OBJECT_LIST_COLS, nullptr);
     std::fill_n(openedObjectSpriteImage, OBJECT_LIST_COLS * OBJECT_LIST_ROWS, nullptr);
-
+    std::fill_n(skillLevelStar, SKILL_KIND_NUM * SKILL_LEVEL_NUM, nullptr);
     // 鼠标事件监听器
     auto mouseListener = cocos2d::EventListenerMouse::create();
     mouseListener->onMouseDown = CC_CALLBACK_1(UILayer::onMouseDown, this);
@@ -61,6 +65,7 @@ bool UILayer::init() {
     }
     initializeObjectList();
     showObjectImage();
+    initializeSkillBoard();
     initializeTimeDisplay();
     return true;
 }
@@ -117,6 +122,25 @@ void UILayer::initializeObjectList() {
     exitButton->setVisible(true);
 }
 
+// 初始化技能板
+void UILayer::initializeSkillBoard() {
+    // 创建技能背景板
+    skillLevelBoard = Sprite::create("../Resources/UI/SkillBoard.png");
+    skillLevelBoard->setPosition(Vec2(visibleSize.width/4, visibleSize.height/2));
+    this->addChild(skillLevelBoard, UI_LAYER_GRADE);
+    skillLevelBoard->setVisible(false);
+
+    // 创建技能等级显示图片
+    for (int i = 0; i < SKILL_KIND_NUM; i++) {
+        for (int j = 0; j < SKILL_LEVEL_NUM; j++) {
+            skillLevelStar[i * SKILL_LEVEL_NUM + j] = Sprite::create("../Resources/UI/SkillStar.png");
+            skillLevelStar[i * SKILL_LEVEL_NUM + j]->setPosition(LocationMap::getInstance().getSkillLevelLocationMap().at(i * SKILL_LEVEL_NUM + j));
+            this->addChild(skillLevelStar[i * SKILL_LEVEL_NUM + j], UI_LAYER_GRADE+1);
+            skillLevelStar[i * SKILL_LEVEL_NUM + j]->setVisible(false);
+        }
+    }
+}
+
 // 更新物品栏
 void UILayer::updateObjectList() {
     // 获取角色的物品栏状态和窗口大小
@@ -128,8 +152,9 @@ void UILayer::updateObjectList() {
         openedobjectListLayer->setVisible(false);
         deleteObjectButton->setVisible(false);
         closeObjectListButton->setVisible(false);
-
         setSelectObjectSpriteMarker(index, true);
+        skillLevelBoard->setVisible(false);
+        setSkillLevel(false);
     }
     else {
         closedobjectListLayer->setVisible(false);
@@ -137,6 +162,8 @@ void UILayer::updateObjectList() {
         deleteObjectButton->setVisible(true);
         closeObjectListButton->setVisible(true);
         setSelectObjectSpriteMarker(index, false);
+        skillLevelBoard->setVisible(true);
+        setSkillLevel(true);    
     }
     lastObjectListStatus = objectListStatus;
 }
@@ -246,9 +273,6 @@ void UILayer::onMouseMove(cocos2d::Event* event) {
                 nearestPlacementMarker->setPosition(findNearestPoint(selectedObjectSprite));
                 nearestPlacementMarker->setVisible(true);
             }
-
-
-
 
             // 移动物品
             EventMouse* mouseEvent = dynamic_cast<EventMouse*>(event);
@@ -403,7 +427,7 @@ void UILayer::updateTimeDisplay() {
 
     std::string dayOrNight = isDaytime ? "Day" : "Night";
     std::string timeOfDay = timeManager->getCurrentTime();
-    timeLabel2->setString(dayOrNight + " " + timeOfDay);  // 显示白天/晚上和当前时间  的代码部分
+    timeLabel2->setString(dayOrNight + " " + timeOfDay);  // 显示白天/晚上和当前时间的代码部分
 
 }
 
@@ -461,6 +485,18 @@ void UILayer::setSelectObjectSpriteMarker(int index, bool show) {
         selectObjectSpriteMarker[0]->setVisible(show);
     else
         selectObjectSpriteMarker[index]->setVisible(show);
+}
+
+// 设置技能等级的显示状态
+void UILayer::setSkillLevel(bool show) {
+    for (int i = 0; i < SKILL_KIND_NUM; i++) {
+        const int skillLevel = character->getSkillLevel(i);
+        if (skillLevel > 0) {
+            for (int j = 0; j < skillLevel; j++) {
+                skillLevelStar[i * SKILL_LEVEL_NUM + j]->setVisible(show);
+            }
+        }
+    }
 }
 
 // 关闭回调
