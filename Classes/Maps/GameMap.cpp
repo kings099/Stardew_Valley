@@ -173,6 +173,9 @@ void GameMap::replaceTileAt(const std::string& layerName, const Vec2& tileCoord,
     CCLOG("Replaced tile at (%f, %f) on layer '%s' with GID=%d", tileCoord.x, tileCoord.y, layerName.c_str(), newGID);
 }
 
+TMXTiledMap* GameMap::getTiledMap() const {
+    return _tile_map;
+}
 
 
 

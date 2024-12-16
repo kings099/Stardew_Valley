@@ -1,7 +1,7 @@
 #include "AppDelegate.h"
 #include "../Classes/Scene/HelloWorldScene.h"
 #include "proj.win32/Constant.h"
-#include "Classes/Scene/FarmScene.h"
+#include "Classes/Scene/GameMainScene.h"
 
 // #define USE_AUDIO_ENGINE 1
 // #define USE_SIMPLE_AUDIO_ENGINE 1

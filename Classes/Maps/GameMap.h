@@ -49,6 +49,9 @@ public:
     // 替换指定图层的瓦片
     void replaceTileAt(const std::string& layerName, const Vec2& tileCoord, int newGID);
 
+    // 获取瓦片地图指针
+    TMXTiledMap* GameMap::getTiledMap() const;
+
 protected:
     TMXTiledMap* _tile_map;  // 瓦片地图类
     Vec2 _map_position;      // 地图创建位置

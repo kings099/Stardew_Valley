@@ -9,7 +9,7 @@
 #include "UILayer.h"
 #include "Classes/Character/Character.h"
 #include "Classes/LocationMap/LocationMap.h"
-#include "Classes/Scene/FarmScene.h"
+#include "Classes/Scene/GameMainScene.h"
 
 USING_NS_CC;
 
@@ -467,7 +467,7 @@ void UILayer::setSelectObjectSpriteMarker(int index, bool show) {
 void UILayer::menuCloseCallback(cocos2d::Ref* sender) {
     auto scene = Director::getInstance()->getRunningScene();
     if (scene) {
-        auto farmScene = dynamic_cast<FarmScene*>(scene);
+        auto farmScene = dynamic_cast<GameMainScene*>(scene);
         if (farmScene) {
             farmScene->menuCloseCallback(sender);
         }
