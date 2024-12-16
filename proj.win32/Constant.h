@@ -39,6 +39,7 @@ constexpr int LEVEL2_TO_LEVEL3_EXPRIENCE = 50;                              // �
 constexpr int LEVEL3_TO_LEVEL4_EXPRIENCE = 100;                             // 从三级升到四级需要的经验值
 constexpr int LEVEL4_TO_LEVEL5_EXPRIENCE = 200;                             // 从四级升到五级需要的经验值
 constexpr int SKILL_KIND_NUM = 4;                                           // 技能种类数量
+constexpr int SKILL_LEVEL_NUM = 5;                                          // 技能最大等级
 
 // 场景过渡相关
 constexpr float LERP_SPEED = 0.1f;											// 插值平滑速度
@@ -76,6 +77,8 @@ constexpr int CLOSE_OBJECT_LIST_START_X = 729;								// 物品栏(关闭状态)
 constexpr int CLOSE_OBJECT_LIST_START_Y = 1056;								// 物品栏(关闭状态)起始位置的Y坐标
 constexpr int OPEN_OBJECT_LIST_START_X = 729;								// 物品栏(开启状态)起始位置的X坐标
 constexpr int OPEN_OBJECT_LIST_START_Y = 582;								// 物品栏(开启状态)起始位置的Y坐标
+constexpr int SKILL_LEVEL_START_X = 417;                                    // 技能栏起始位置的X坐标
+constexpr int SKILL_LEVEL_START_Y = 456;                                    // 技能栏起始位置的Y坐标
 constexpr int OBJECT_LIST_NODE_HORIZONTAL_INTERVAL = 42;					// 物品栏物品格子水平间距
 constexpr int OBJECT_LIST_NODE_VERTICAL_INTERVAL = 42;						// 物品栏物品格子垂直间距
 constexpr float OBJECT_NODE_SCALE = 2.0f;									// 物品缩放比例

@@ -1,8 +1,8 @@
 /****************************************************************
  * Project Name:  Stardew_Valley
  * File Name:     FarmMap.cpp
- * File Function: ½ÇÉ«µØÍ¼½»»¥¿ØÖÆÀàInteractionManagerµÄÊµÏÖ
- * Author:        ½ðºãÓî
+ * File Function: ï¿½ï¿½É«ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½InteractionManagerï¿½ï¿½Êµï¿½ï¿½
+ * Author:        ï¿½ï¿½ï¿½ï¿½ï¿½
  * Update Date:   2024/12/11
  * License:       MIT License
  ****************************************************************/
@@ -49,10 +49,10 @@ void InteractionManager::updateSurroundingTiles(Vec2& world_pos) {
         return;
     }
 
-    _surroundingTiles.clear(); // Çå¿ÕÉÏ´ÎµÄÍßÆ¬ÐÅÏ¢
+    _surroundingTiles.clear(); // ï¿½ï¿½ï¿½ï¿½Ï´Îµï¿½ï¿½ï¿½Æ¬ï¿½ï¿½Ï¢
     Vec2 tile_pos = _gameMap->absoluteToTile(world_pos);
 
-    // »ñÈ¡ÖÜÎ§ 9 ¸ñµÄÍßÆ¬
+    // ï¿½ï¿½È¡ï¿½ï¿½Î§ 9 ï¿½ï¿½ï¿½ï¿½ï¿½Æ¬
     std::vector<Vec2> surroundingCoords = {
         Vec2(tile_pos.x - 1, tile_pos.y - 1), Vec2(tile_pos.x, tile_pos.y - 1), Vec2(tile_pos.x + 1, tile_pos.y - 1),
         Vec2(tile_pos.x - 1, tile_pos.y),     Vec2(tile_pos.x, tile_pos.y),     Vec2(tile_pos.x + 1, tile_pos.y),
@@ -62,10 +62,10 @@ void InteractionManager::updateSurroundingTiles(Vec2& world_pos) {
         TileInfo tileInfo;
         tileInfo.tilePos = coord;
         tileInfo.WorldPos = _gameMap->tileToAbsolute(coord);
-        tileInfo.type = Other; // Ä¬ÈÏÀàÐÍ
+        tileInfo.type = Other; // Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         tileInfo.isObstacle = isCollidableAtPos(coord);
 
-        // »ñÈ¡ path ²ãÍßÆ¬ÐÅÏ¢
+        // ï¿½ï¿½È¡ path ï¿½ï¿½ï¿½ï¿½Æ¬ï¿½ï¿½Ï¢
         int pathGID = _gameMap->getTileGIDAt("path", coord);
         if (pathGID != 0) {
             ValueMap pathProps = _gameMap->getTilePropertiesForGID(pathGID);
@@ -77,7 +77,7 @@ void InteractionManager::updateSurroundingTiles(Vec2& world_pos) {
             }
         }
 
-        // ¼ì²éÊÇ·ñÎª Soil£¨¿É¸ûÖÖÍÁµØ£©
+        // ï¿½ï¿½ï¿½ï¿½Ç·ï¿½Îª Soilï¿½ï¿½ï¿½É¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø£ï¿½
         int backGID = _gameMap->getTileGIDAt("back", coord);
         int buildingGID = _gameMap->getTileGIDAt("buildings", coord);
         int FarmGID = _gameMap->getTileGIDAt("farm", coord);
@@ -87,12 +87,12 @@ void InteractionManager::updateSurroundingTiles(Vec2& world_pos) {
                 tileInfo.type = Soil;
             }
         }
-        // ¼ì²éÊÇ·ñÎª Soiled
+        // ï¿½ï¿½ï¿½ï¿½Ç·ï¿½Îª Soiled
         if (FarmGID == DRY_FARM_TILE_GID) {
             tileInfo.type = Soiled;
         }
 
-        _surroundingTiles.push_back(tileInfo); // ±£´æµ½ _surroundingTiles
+        _surroundingTiles.push_back(tileInfo); // ï¿½ï¿½ï¿½æµ½ _surroundingTiles
     }
 }
 
@@ -108,14 +108,22 @@ bool InteractionManager::isCollidableAtPos(const Vec2& tilePos) {
     }
     int GIDPath = _gameMap->getTileGIDAt("path", tilePos);
     int GIDBuildings = _gameMap->getTileGIDAt("buildings", tilePos);
+    int GIDHouse = _gameMap->getTileGIDAt("house", tilePos);
     ValueMap path_properties = _gameMap->getTilePropertiesForGID(GIDPath);
     ValueMap buildings_properties = _gameMap->getTilePropertiesForGID(GIDBuildings);
-    if (!path_properties.empty() || !buildings_properties.empty()) {
+    ValueMap house_properties = _gameMap->getTilePropertiesForGID(GIDHouse);
+    if (GIDBuildings != 0) {
+        return true;
+    }
+    if (!path_properties.empty() || !buildings_properties.empty()||!house_properties.empty()) {
         if (path_properties.find("canNotMove") != path_properties.end()) {
             return path_properties["canNotMove"].asBool();
         }
         if (buildings_properties.find("canNotMove") != buildings_properties.end()) {
             return buildings_properties["canNotMove"].asBool();
+        }
+        if (house_properties.find("canNotMove") != house_properties.end()) {
+            return house_properties["canNotMove"].asBool();
         }
     }
     return false;
@@ -126,8 +134,13 @@ bool InteractionManager::checkTeleport(const Vec2& worldPos, std::string& target
     if (!_gameMap) return false;
 
     Vec2 tilePos = _gameMap->absoluteToTile(worldPos);
-    if (tilePos == Vec2(0, 0)) {
-        targetMapFile = "../Resources/Maps/Farm/house.tmx";
+    int teleprtGID = _gameMap->getTileGIDAt("Teleport",tilePos);
+    if (teleprtGID != 0 ) {
+        ValueMap properties = _gameMap->getTilePropertiesForGID(teleprtGID);
+        if (!properties.empty() && properties.find("TargetMap") != properties.end()) {
+            targetMapFile = properties["TargetMap"].asString();
+            return true;  // ï¿½ï¿½âµ½ï¿½ï¿½ï¿½Íµï¿½
+        }
         return true;
     }
     return false;
@@ -144,7 +157,7 @@ const std::vector<TileInfo>& InteractionManager::getSurroundingTiles() const {
     return _surroundingTiles;
 }
 
-// ÔÚÖ¸¶¨Î»ÖÃ²¥·Å¶ÔÓ¦actionµÄÍ¼¿é±ä»¯
+// ï¿½ï¿½Ö¸ï¿½ï¿½Î»ï¿½Ã²ï¿½ï¿½Å¶ï¿½Ó¦actionï¿½ï¿½Í¼ï¿½ï¿½ä»¯
 void InteractionManager::ActionAnimation(GameCharacterAction action, const Vec2& TilePos) {
     switch (action) {
     case Plowing:
@@ -159,9 +172,10 @@ void InteractionManager::ActionAnimation(GameCharacterAction action, const Vec2&
         break;
     case Mining:
         _gameMap->replaceTileAt("path", TilePos, EMPTY_GID);
-        AnimationHelper::playStoneBreakingAnimation(_gameMap->tileToRelative(TilePos), _gameMap->getTiledMap());
+        AnimationHelper::playStoneBreakingAnimation(_gameMap->tileToRelative(TilePos), _gameMap->getTiledMap());      
         break;
-        //case Placement:
-        //    // TODO : ²¥ÖÖ ´ýÊµÏÖ
+    case Placement:
+        // TODO : ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Êµï¿½ï¿½
+        break;
     }
 }
