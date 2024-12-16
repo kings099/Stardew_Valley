@@ -44,7 +44,11 @@ bool HelloWorld::init()
     CCLOG("NPC initialization completed.");
     // 获取 Abigail NPC
     NPC* abigail = NpcManager::getInstance()->getNPCByName("Abigail");
-
+    // 初始化单例对象
+    NpcManager::getInstance();  // 初始化 NPC 管理器
+    TimeManager::getInstance();  // 初始化时间管理器
+    GiftItemManager::getInstance();  // 初始化礼物物品管理器
+   
     // 如果 Abigail 存在，则将其添加到场景中
     if (abigail) {
         this->addChild(abigail, 4);  // 将整个 NPC 对象添加到场景中
