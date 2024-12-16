@@ -43,6 +43,9 @@ public:
 	// 初始化物品栏
 	void initializeObjectList();
 
+	// 初始化技能板
+	void initializeSkillBoard();
+
 	// 更新物品栏
 	void updateObjectList();
 
@@ -74,7 +77,9 @@ private:
 	cocos2d::Sprite* selectObjectSpriteMarker[OBJECT_LIST_COLS];					// 选中物品的标记指针
 	cocos2d::Sprite* nearestPlacementMarker;										// 最近放置标记指针
 	cocos2d::Sprite* selectedObjectSprite;											// 当前选中的对象
-	HoverMenuItemImage *deleteObjectButton;											// 删除物品按钮
+	cocos2d::Sprite* skillLevelBoard;												// 技能板指针
+	cocos2d::Sprite* skillLevelStar[SKILL_KIND_NUM * SKILL_LEVEL_NUM];				// 技能等级指针
+	HoverMenuItemImage* deleteObjectButton;											// 删除物品按钮
 	HoverMenuItemImage *closeObjectListButton;										// 关闭物品栏按钮
 	HoverMenuItemImage* exitButton;													// 退出按钮
 	PlacementMarkerLayer* placementMarkerLayer;										// 放置标记层类指针
@@ -87,6 +92,9 @@ private:
 
 	// 设置选中物品标记框的显示状态
 	void setSelectObjectSpriteMarker(int index, bool show);
+
+	// 设置技能等级的显示状态
+	void setSkillLevel(bool show);
 
 	// 关闭回调
 	void menuCloseCallback(cocos2d::Ref* pSender);

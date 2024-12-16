@@ -72,7 +72,7 @@ private:
 	void initObjectList();
 	
 	// 捡起物品
-	bool pickUpObject(GameCommonObject targetObject, int objectCount);
+	bool pickUpObject(GameCommonObject targetObject, int objectCount,int targetIndex = INVAVID_NUM);
 
 	// 查找物品栏中是否有指定物品
 	int findObject(GameCommonObject targetObject);

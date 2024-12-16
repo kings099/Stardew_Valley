@@ -31,13 +31,11 @@ public:
 	// 加载数据
 	bool loadData(const std::string& fileName);
 
-	int _skillLevel[SKILL_KIND_NUM];		//技能等级数组
-protected:
-
-
-
+	// 获取技能等级
+	int getSkillLevel(int index);
 private:
 	int _skillExprience[SKILL_KIND_NUM];	//技能经验值数组
+	int _skillLevel[SKILL_KIND_NUM];		//技能等级数组
 
 	// 获取角色打算执行的动作
 	GameCharacterAction getAction();

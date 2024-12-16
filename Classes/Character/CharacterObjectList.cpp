@@ -83,7 +83,7 @@ bool CharacterObjectList::pickUpObject(GameBaseObject targetObject, int objectCo
 
 // 捡起物品
 // TODO:设置单个物品的最大存储数量
-bool CharacterObjectList::pickUpObject(GameCommonObject targetObject, int objectCount) {
+bool CharacterObjectList::pickUpObject(GameCommonObject targetObject, int objectCount, int targetIndex) {
 	// 查找物品栏中是否有相同物品
 	const int index = findObject(targetObject);
 
@@ -97,14 +97,24 @@ bool CharacterObjectList::pickUpObject(GameCommonObject targetObject, int object
 		_objectList[index].count += objectCount;
 	}
 	else {
-		int insertIndex = -1;
-		for (insertIndex = 0; insertIndex < _maxObjectKindCount; insertIndex++) {
-			if(_objectList[insertIndex].count == 0)
-				break;
+		if (targetIndex == INVAVID_NUM) {
+			int insertIndex = -1;
+			for (insertIndex = 0; insertIndex < _maxObjectKindCount; insertIndex++) {
+				if (_objectList[insertIndex].count == 0) {
+					break;
+				}
+			}
+			_objectList[insertIndex] = { { targetObject.type, targetObject.object } , objectCount, Unselected };
 		}
-		_objectList[insertIndex].count = objectCount;
-		_objectList[insertIndex].objectNode = { targetObject.type, targetObject.object };
-		_objectList[insertIndex].status = Unselected;
+		else {
+			if (targetIndex< 0||targetIndex >= _maxObjectKindCount || _objectList[targetIndex].count != 0) {
+				return false;
+			}
+			else {
+				_objectList[targetIndex] = { { targetObject.type, targetObject.object } , objectCount, Unselected };
+			}
+
+		}
 	}
 	return true;
 }
