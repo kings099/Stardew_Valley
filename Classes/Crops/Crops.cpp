@@ -12,6 +12,7 @@
 USING_NS_CC;
 // 初始化静态变量
 Season Crops::currentSeason = Season::Winter;
+int Crops::playerLevel = 1; // 初始人物等级为1
 
 // 定义静态资源映射表
 std::unordered_map<std::string, std::vector<std::string>> Crops::resourceMap;
@@ -144,6 +145,20 @@ std::unordered_map<std::string, std::unordered_map<Season, std::string>> Crops::
            {Season::Winter, "../Resources/Crops/Pumpkin/pumpkin_5.png"}}
      }
 };
+
+void Crops::setPlayerLevel(int level) {
+    playerLevel = level;
+    CCLOG("Player level set to: %d", playerLevel);
+}
+
+bool Crops::canBePlanted() const {
+    if (type == "pumpkin" && playerLevel < 3) {
+        CCLOG("Error: Player level too low to plant pumpkin! Required level: 3");
+        return false;
+    }
+    return true;
+}
+
 
 Crops* Crops::create(const std::string& type, int maxGrowthStage) {
     CCLOG("Creating Crop instance...");
@@ -378,6 +393,11 @@ void Crops::setGrowthStage(int stage) {
 
 
 void Crops::harvestCrop() {
+    if (!canBePlanted()) { // 如果不满足条件（主要是等级检查）
+        CCLOG("Crop '%s' cannot be planted due to level restriction.", type.c_str());
+        return;
+    }
+
     if (isReadyToHarvest()) {
         CCLOG("Crop '%s' harvested successfully!", type.c_str());
 

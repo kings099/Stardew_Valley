@@ -323,7 +323,7 @@ const std::vector<GameToolObject> GAME_TOOL_OBJECTS_ATTRS = {
 const std::vector<GameSeedObject> GAME_SEED_OBJECTS_ATTRS = {
      GameSeedObject(17,"../Resources/Crops/Cauliflower/cauliflower_0.png","cauliflower_seed",Farm,1,Spring,20,80,175),//花椰菜种子
      GameSeedObject(18,"../Resources/Crops/Kale/kale_0.png","kale_seed",Farm,1,Spring,21,60,90),//甘蓝菜种子
-     GameSeedObject(19, "../Resources/Crops/Pumpkin/pumpkin_0.png","pumpkin_seed",Farm,1,Fall,22,100,160)//南瓜种子
+     GameSeedObject(19, "../Resources/Crops/Pumpkin/pumpkin_0.png","pumpkin_seed",Farm,3,Fall,22,100,160)//南瓜种子
 };
 
 // 游戏基础类物品属性参数定义

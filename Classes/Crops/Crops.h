@@ -45,6 +45,12 @@ public:
     void checkPests();     // 检查病虫害
     void treatPests();     // 治疗病虫害
 
+    static int playerLevel; // 人物等级（静态变量）
+
+    // 其他成员函数和变量
+    static void setPlayerLevel(int level); // 设置人物等级
+    bool canBePlanted() const;             // 检查农作物是否满足种植条件
+
     void harvestCrop();
 
     static void setSeason(Season season); // 设置季节

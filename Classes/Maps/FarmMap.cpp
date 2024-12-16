@@ -47,7 +47,6 @@ bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition)
     // 在 path 层种植橡树，枫树，松树
     plantTreesOnPathLayer();
 
-
     //监听鼠标
     auto listener = EventListenerMouse::create();
     listener->onMouseDown = CC_CALLBACK_1(FarmMap::onMouseEvent, this);  // 监听鼠标点击事件
