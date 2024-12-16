@@ -39,9 +39,9 @@ public:
     int getGrowthStage() const { return growthStage; }
 
     //除草动画cocos2d::
-    void playWeedingAnimation(const cocos2d::Vec2& position, cocos2d::TMXTiledMap* farmMap);
+    static void playWeedingAnimation(const cocos2d::Vec2& position, cocos2d::TMXTiledMap* farmMap);
     //碎石动画
-    void playStoneBreakingAnimationAt(const cocos2d::Vec2& position, cocos2d::TMXTiledMap* farmMap);
+    static void playStoneBreakingAnimationAt(const cocos2d::Vec2& position, cocos2d::TMXTiledMap* farmMap);
     // 新增：施肥函数
     void fertilize();
 

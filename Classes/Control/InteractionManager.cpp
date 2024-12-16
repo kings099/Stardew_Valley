@@ -148,12 +148,19 @@ void InteractionManager::ActionAnimation(GameCharacterAction action, const Vec2&
     switch (action) {
     case Plowing:
         _gameMap->replaceTileAt("farm", TilePos, DRY_FARM_TILE_GID);
+        break;
     case Watering:
         _gameMap->replaceTileAt("farm", TilePos, DRY_FARM_TILE_GID);
+        break;
     case Weeding:
         _gameMap->replaceTileAt("path", TilePos, EMPTY_GID);
+        Crops::playWeedingAnimation(_gameMap->tileToRelative(TilePos), _gameMap->getTiledMap());
+        break;
     case Mining:
         _gameMap->replaceTileAt("path", TilePos, EMPTY_GID);
-
+        Crops::playStoneBreakingAnimationAt(_gameMap->tileToRelative(TilePos), _gameMap->getTiledMap());
+        break; 
+    case Placement:
+        // TODO : ²¥ÖÖ ´ıÊµÏÖ
     }
 }
