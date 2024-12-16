@@ -210,10 +210,10 @@ cocos2d::Vec2 CharacterMove::updatePosition(float deltaTime) {
         nextPosition = _position + moveDirection * currentSpeed;
         playAnimation();
         if (isObstacle)
-            nextPosition = _position;
+            nextPosition = _surroundingTilesInfo[4].WorldPos;
     }
     else {
-        nextPosition = _position;
+        nextPosition = _surroundingTilesInfo[4].WorldPos;
         _character->stopAllActions();
     }
     _character->setPosition(nextPosition);
