@@ -33,7 +33,7 @@ public:
     TMXTiledMap* FarmMap::getTiledMap() const;
 
     //在path层种植指定gid的树
-    void FarmMap::plantTreesOnPathLayer(int maxGrowthStage);
+    void plantTreesOnPathLayer();
 };
 
 #endif // __FARM_MAP_H_

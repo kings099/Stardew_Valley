@@ -38,16 +38,14 @@ public:
     // 获取当前生长阶段
     int getGrowthStage() const { return growthStage; }
 
-    //除草动画cocos2d::
-    static void playWeedingAnimation(const cocos2d::Vec2& position, cocos2d::TMXTiledMap* farmMap);
-    //碎石动画
-    static void playStoneBreakingAnimationAt(const cocos2d::Vec2& position, cocos2d::TMXTiledMap* farmMap);
     // 新增：施肥函数
     void fertilize();
 
     //新增管理病虫害
     void checkPests();     // 检查病虫害
     void treatPests();     // 治疗病虫害
+
+    void harvestCrop();
 
     static void setSeason(Season season); // 设置季节
     static Season getSeason();           // 获取当前季节

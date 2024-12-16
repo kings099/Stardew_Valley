@@ -1,7 +1,7 @@
 /****************************************************************
  * Project Name:  Stardew_Valley
  * File Name:     Crops.h
- * File Function: 农作物类，实现农作物的生长浇水等动画
+ * File Function: 农作物类，实现农作物的各种基本操作
  * Author:        胡宝怡
  * Update Date:   2024/12/11
  * License:       MIT License
@@ -103,7 +103,7 @@ void Crops::initializeResourceMap() {
 std::unordered_map<std::string, std::unordered_map<Season, float>> Crops::growthCycles = {
     {"cauliflower", {{Season::Spring, 50.0f}, {Season::Summer, 50.0f}, {Season::Fall, 60.0f}, {Season::Winter,72.0f}}},
     {"kale", {{Season::Spring, 30.0f}, {Season::Summer, 30.0f}, {Season::Fall, 40.0f}, {Season::Winter, 50.0f}}},
-    {"pumpkin", {{Season::Spring, 50.0f}, {Season::Summer, 50.0f}, {Season::Fall, 60.0f}, {Season::Winter, 72.0f}}},
+    {"pumpkin", {{Season::Spring, 2.0f}, {Season::Summer, 50.0f}, {Season::Fall, 60.0f}, {Season::Winter, 72.0f}}},
     {"oak", {{Season::Spring,2.0f}, {Season::Summer, 72.0f}, {Season::Fall, 96.0f}, {Season::Winter, 120.0f}}},
     {"maple", {{Season::Spring, 72.0f}, {Season::Summer, 72.0f}, {Season::Fall, 96.0f}, {Season::Winter, 120.0f}}},
     {"pine", {{Season::Spring, 72.0f}, {Season::Summer, 72.0f}, {Season::Fall, 96.0f}, {Season::Winter, 120.0f}}}
@@ -240,21 +240,21 @@ void Crops::updateGrowth(float deltaTime) {
             }
         }
     }
-    // 检查是否枯萎
-    if (!isWatered) {
-        daysWithoutWater++;
-        if (daysWithoutWater >= 3) {
-            if (resourceMap.find("wilt") != resourceMap.end()) {
-                const auto& textures = resourceMap["wilt"];
-                if (!textures.empty()) {
-                    sprite->setTexture(textures[0]);
-                }
-            }
-        }
-    }
-    else {
-        daysWithoutWater = 0;
-    }
+    //// 检查是否枯萎
+    //if (!isWatered) {
+    //    daysWithoutWater++;
+    //    if (daysWithoutWater >= 3) {
+    //        if (resourceMap.find("wilt") != resourceMap.end()) {
+    //            const auto& textures = resourceMap["wilt"];
+    //            if (!textures.empty()) {
+    //                sprite->setTexture(textures[0]);
+    //            }
+    //        }
+    //    }
+    //}
+    //else {
+    //    daysWithoutWater = 0;
+    //}
     checkPests(); // 每次更新时检查病虫害
     isWatered = false; // 每次更新后重置浇水状态
 }
@@ -270,14 +270,14 @@ Season Crops::getSeason() {
 }
 
 void Crops::checkPests() {
-    if (!hasPests && CCRANDOM_0_1() < pestProbability) { // 随机概率感染病虫害
-        hasPests = true;
-        CCLOG("Crop infected with pests!");
+    //if (!hasPests && CCRANDOM_0_1() < pestProbability) { // 随机概率感染病虫害
+    //    hasPests = true;
+    //    CCLOG("Crop infected with pests!");
 
-        // 更改贴图显示病虫害状态（假设有特定图片）
-        sprite->setTexture("../Resources/Crops/pests.png");
-       
-    }
+    //    // 更改贴图显示病虫害状态（假设有特定图片）
+    //    sprite->setTexture("../Resources/Crops/pests.png");
+    //   
+    //}
 }
 void Crops::treatPests() {
     if (hasPests) {
@@ -376,98 +376,17 @@ void Crops::setGrowthStage(int stage) {
     }
 }
 
-void Crops::playWeedingAnimation(const Vec2& position, TMXTiledMap* farmMap) {
-    CCLOG("Playing weeding animation at position (%f, %f)...", position.x, position.y);
 
-    // 创建一个新的精灵来显示动画
-    auto tempSprite = Sprite::create();
-    if (tempSprite == nullptr) {
-        CCLOG("Error: Failed to create sprite for weeding animation.");
-        return;
-    }
+void Crops::harvestCrop() {
+    if (isReadyToHarvest()) {
+        CCLOG("Crop '%s' harvested successfully!", type.c_str());
 
-    // 设置精灵的初始位置
-    tempSprite->setPosition(position);
-
-    // 添加到当前节点或场景
-    farmMap->addChild(tempSprite);
-    tempSprite->setScale(0.5f);
-    // 定义除草动画的帧序列
-    Vector<SpriteFrame*> frames;
-    for (int i = 1; i < 6; ++i) { // 假设动画有 5 帧
-        std::string frameName = StringUtils::format("../Resources/Animations/Weeding/grass_%d.png", i);
-        auto frame = SpriteFrame::create(frameName, Rect(0, 0, 36, 38)); // 假设每帧为 64x64
-        if (frame == nullptr) {
-            CCLOG("Error: Failed to load frame: %s", frameName.c_str());
-            continue;
+        // 安全移除父节点
+        if (this->getParent()) {
+            this->removeFromParent();
         }
-        frames.pushBack(frame);
     }
-
-    if (frames.empty()) {
-        CCLOG("Error: No frames loaded for weeding animation");
-        tempSprite->removeFromParent(); // 确保在失败时移除节点
-        return;
+    else {
+        CCLOG("Crop '%s' is not ready for harvest!", type.c_str());
     }
-
-    // 创建动画
-    auto animation = Animation::createWithSpriteFrames(frames, 0.4f); // 每帧持续时间为 0.2 秒
-    auto animate = Animate::create(animation);
-
-    // 播放动画并移除精灵
-    auto removeSelf = CallFunc::create([tempSprite]() {
-        tempSprite->removeFromParent();
-        });
-
-    auto sequence = Sequence::create(animate, removeSelf, nullptr);
-    tempSprite->runAction(sequence);
 }
-
-
-void Crops::playStoneBreakingAnimationAt(const Vec2& position, TMXTiledMap* farmMap) {
-    CCLOG("Playing stone breaking animation at position (%f, %f)...", position.x, position.y);
-
-    // 创建一个新的临时精灵来显示动画
-    auto tempSprite = Sprite::create();
-    if (tempSprite == nullptr) {
-        CCLOG("Error: Failed to create sprite for stone breaking animation.");
-        return;
-    }
-
-    // 设置精灵的初始位置
-    tempSprite->setPosition(position);
-    tempSprite->setScale(0.2f);
-    // 添加到当前节点或场景
-    farmMap->addChild(tempSprite);
-
-    // 定义碎石动画的帧序列
-    Vector<SpriteFrame*> frames;
-    for (int i = 1; i <= 5; ++i) { // 假设动画有 5 帧
-        std::string frameName = StringUtils::format("../Resources/Animations/stone_break/stone_break_%d.png", i);
-        auto frame = SpriteFrame::create(frameName, Rect(0, 0, 133, 136)); // 假设每帧为 64x64
-        if (frame == nullptr) {
-            CCLOG("Error: Failed to load frame: %s", frameName.c_str());
-            continue;
-        }
-        frames.pushBack(frame);
-    }
-
-    if (frames.empty()) {
-        CCLOG("Error: No frames loaded for stone breaking animation");
-        tempSprite->removeFromParent(); // 清理未成功加载动画的节点
-        return;
-    }
-
-    // 创建动画
-    auto animation = Animation::createWithSpriteFrames(frames, 0.5f); // 每帧持续时间为 0.2 秒
-    auto animate = Animate::create(animation);
-
-    // 动画完成后移除精灵
-    auto removeSelf = CallFunc::create([tempSprite]() {
-        tempSprite->removeFromParent();
-        });
-
-    auto sequence = Sequence::create(animate, removeSelf, nullptr);
-    tempSprite->runAction(sequence);
-}
-

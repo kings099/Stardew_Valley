@@ -9,6 +9,7 @@
  // InteractionManager.cpp
 #include "InteractionManager.h"
 #include "cocos2d.h"
+#include "Classes/Animation/Animation.h"
 
 USING_NS_CC;
 
@@ -154,13 +155,13 @@ void InteractionManager::ActionAnimation(GameCharacterAction action, const Vec2&
         break;
     case Weeding:
         _gameMap->replaceTileAt("path", TilePos, EMPTY_GID);
-        Crops::playWeedingAnimation(_gameMap->tileToRelative(TilePos), _gameMap->getTiledMap());
+        AnimationHelper::playWeedingAnimation(_gameMap->tileToRelative(TilePos), _gameMap->getTiledMap());
         break;
     case Mining:
         _gameMap->replaceTileAt("path", TilePos, EMPTY_GID);
-        Crops::playStoneBreakingAnimationAt(_gameMap->tileToRelative(TilePos), _gameMap->getTiledMap());
-        break; 
-    case Placement:
-        // TODO : 播种 待实现
+        AnimationHelper::playStoneBreakingAnimation(_gameMap->tileToRelative(TilePos), _gameMap->getTiledMap());
+        break;
+        //case Placement:
+        //    // TODO : 播种 待实现
     }
 }
