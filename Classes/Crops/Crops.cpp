@@ -410,3 +410,53 @@ void Crops::harvestCrop() {
         CCLOG("Crop '%s' is not ready for harvest!", type.c_str());
     }
 }
+
+void Crops::chopTree() {
+    CCLOG("Tree '%s' is swaying...", type.c_str());
+
+    // 检查是否为树类型
+    if (type != "oak" && type != "maple" && type != "pine") {
+        CCLOG("Error: Crop '%s' is not a tree and cannot swing.", type.c_str());
+        return;
+    }
+
+    // 定义树摇摆的幅度和速度
+    float moveDistance = 3.0f; // 水平移动的距离（像素）
+    float swingAngle = 3.0f;    // 摇摆的角度（度）
+    float duration = 0.5f;      // 单次摇摆所需时间（秒）
+    int repeatCount = 3;        // 摇摆次数
+
+    // 创建向左摇摆的动作
+    auto moveLeft = MoveBy::create(duration, Vec2(-moveDistance, 0)); // 左移
+    auto rotateLeft = RotateBy::create(duration, -swingAngle);        // 左旋转
+
+    // 创建向右摇摆的动作
+    auto moveRight = MoveBy::create(duration, Vec2(moveDistance, 0)); // 右移
+    auto rotateRight = RotateBy::create(duration, swingAngle);        // 右旋转
+
+    // 合成摇摆动作
+    auto swingLeft = Spawn::create(moveLeft, rotateLeft, nullptr);
+    auto swingRight = Spawn::create(moveRight, rotateRight, nullptr);
+    auto swingSequence = Sequence::create(swingLeft, swingRight, nullptr);
+
+    // 摇摆动作重复指定次数
+    auto repeatSwing = Repeat::create(swingSequence, repeatCount);
+
+    // 添加最后的旋转 90 度动作
+    auto rotateFinal = RotateBy::create(0.5f, -90.0f); // 0.5 秒向左旋转 90 度
+
+    // 添加淡出消失动作
+    auto fadeOut = FadeOut::create(1.0f); // 1 秒淡出
+
+    // 移除节点的回调
+    auto removeTree = CallFunc::create([this]() {
+        CCLOG("Tree '%s' has disappeared after swaying and rotating.", type.c_str());
+        this->removeFromParentAndCleanup(true);
+        });
+
+    // 组合所有动作：摇摆 -> 旋转 -> 淡出 -> 移除
+    auto fullSequence = Sequence::create(repeatSwing, rotateFinal, fadeOut, removeTree, nullptr);
+
+    // 执行动作
+    this->sprite->runAction(fullSequence);
+}

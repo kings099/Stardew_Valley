@@ -40,6 +40,9 @@
     <Filter Include="Classes\Animation">
       <UniqueIdentifier>{d97ca9a0-1246-4faa-a0b0-ff57d6dde37c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\Animal">
+      <UniqueIdentifier>{547bd8e6-2fda-4188-b10a-6bc8f38a17c4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Classes\CursorAndBUutton\HoverCursor.h" />
@@ -133,6 +136,9 @@
     <ClInclude Include="..\Classes\Animation\Animation.h">
       <Filter>Classes\Animation</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\Animal\Animal.h">
+      <Filter>Classes\Animal</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\CursorAndBUutton\HoverCursor.cpp" />
@@ -219,6 +225,9 @@
     </ClCompile>
     <ClCompile Include="..\Classes\Animation\Animation.cpp">
       <Filter>Classes\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Animal\Animal.cpp">
+      <Filter>Classes\Animal</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
