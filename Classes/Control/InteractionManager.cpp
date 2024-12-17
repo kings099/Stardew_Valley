@@ -172,6 +172,7 @@ void InteractionManager::ActionAnimation(GameCharacterAction action, const Vec2&
     case Mining:
         _gameMap->replaceTileAt("path", TilePos, EMPTY_GID);
         Crops::playStoneBreakingAnimationAt(_gameMap->tileToRelative(TilePos), _gameMap->getTiledMap());
+        
         break;
     case Placement:
         // TODO : ²¥ÖÖ ´ıÊµÏÖ

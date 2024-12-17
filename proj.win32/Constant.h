@@ -5,7 +5,7 @@
 
 #include <string>
 #include <memory>
-#include<fstream>
+#include <fstream>
 #include <map>
 #include "cocos2d.h"
 
@@ -79,6 +79,8 @@ constexpr int OPEN_OBJECT_LIST_START_X = 729;								// 物品栏(开启状态)�
 constexpr int OPEN_OBJECT_LIST_START_Y = 582;								// 物品栏(开启状态)起始位置的Y坐标
 constexpr int SKILL_LEVEL_START_X = 417;                                    // 技能栏起始位置的X坐标
 constexpr int SKILL_LEVEL_START_Y = 456;                                    // 技能栏起始位置的Y坐标
+constexpr int OBJECT_BOX_START_X = 729;                                     // 箱子起始位置的X坐标
+constexpr int OBJECT_BOX_START_Y = 648;                                     // 箱子起始位置的Y坐标
 constexpr int OBJECT_LIST_NODE_HORIZONTAL_INTERVAL = 42;					// 物品栏物品格子水平间距
 constexpr int OBJECT_LIST_NODE_VERTICAL_INTERVAL = 42;						// 物品栏物品格子垂直间距
 constexpr float OBJECT_NODE_SCALE = 2.0f;									// 物品缩放比例
@@ -172,6 +174,7 @@ enum GameCharacterAction {
     NoneAction,			// 空动作
     Plowing,			// 耕地
     Watering,			// 浇水
+    Fertilize,          // 施肥
     GetWater,			// 取水
     Weeding,            // 除草
     Cutting,			// 砍树
@@ -180,7 +183,9 @@ enum GameCharacterAction {
     Buying,				// 购买
     Harvesting,			// 收获
     Placement,			// 放置
-    Transition			// 转换场景
+    Transition,			// 转换场景
+    OpenBox,			// 打开箱子
+
 };
 
 // 角色动作和地图类型对应关系
@@ -188,6 +193,7 @@ const std::map< GameCharacterAction, TileType> ACTION_TO_TILEMAP = {
     { NoneAction, Other },
     { Plowing, Soil },
     { Watering, Soiled },
+    { Fertilize, Soiled },
     { GetWater, Water },
     { Weeding, Grass },
     { Cutting, Tree },
@@ -268,22 +274,24 @@ class GameBaseObject : public GameObject {
 public:
     int _maxStorage;                            // 物品最大存储量
     int _level;                                 // 解锁物品所需等级
-    int _quality;                               // 物品品质等级
     bool _sale;                                 // 是否能出售
     int _salePrice;                             // 出售价格
+    bool _buy;                                  // 是否能购买
+    int _buyPrice;                              // 购买价格
     bool _eat;                                  // 是否可以食用
     int _eatEnergy;                             // 食用恢复的能量值
     bool _place;                                // 能否放置
     bool _synthesis;                            // 是否可以合成
-    std::map<std::string, int> _ingredients;	// 合成物品的原料
+    std::map<int, int> _ingredients;	// 合成物品的原料
     // 构造函数
-    GameBaseObject(const int index,const std::string& fileName, const std::string& name, GameObjectSkillType type, int maxStorage, int level, int quality, bool sale, int salePrice, bool eat, int eatEnergy, bool place, bool synthesis, std::map<std::string, int> ingredients) :
+    GameBaseObject(const int index,const std::string& fileName, const std::string& name, GameObjectSkillType type, int maxStorage, int level,  bool sale, int salePrice, bool buy,int buyPrice,bool eat, int eatEnergy, bool place, bool synthesis, std::map<int, int> ingredients = {}) :
         GameObject(index,fileName, name, type),
         _maxStorage(maxStorage),
         _level(level),
-        _quality(quality),
         _sale(sale),
         _salePrice(salePrice),
+        _buy(buy),
+        _buyPrice(buyPrice),
         _eat(eat),
         _eatEnergy(eatEnergy),
         _place(place),
@@ -313,13 +321,19 @@ const std::vector<GameToolObject> GAME_TOOL_OBJECTS_ATTRS = {
     GameToolObject(16,"../Resources/Objects/Tools/scythe.png","镰刀",Collect,1,1,INT_MAX,Weeding)
 };
 
-// 游戏种子类物品属性参数定义
-const std::vector<GameSeedObject> GAME_SEED_OBJECTS_ATTRS = {
-
-};
 
 // 游戏基础类物品属性参数定义
 const std::vector<GameBaseObject> GAME_BASE_OBJECTS_ATTRS = {
+    GameBaseObject(17,"../Resources/Objects/Base/Timber.png","木材",Collect,99,0,true,3,false,INVAVID_NUM,false,INVAVID_NUM,false,false),
+    GameBaseObject(18,"../Resources/Objects/Base/Stone.png","石头",Mine,99,0,true,5,false,INVAVID_NUM,false,INVAVID_NUM,false,false),
+    GameBaseObject(19,"../Resources/Objects/Base/CopperParticle.png","铜粒",Mine,99,0,true,12,false,INVAVID_NUM,false,INVAVID_NUM,false,false),
+    GameBaseObject(20,"../Resources/Objects/Base/IronParticle.png","铁粒",Mine,99,2,true,25,false,INVAVID_NUM,false,INVAVID_NUM,false,false),
+    GameBaseObject(21,"../Resources/Objects/Base/Copper.png","铜锭",Mine,99,0,true,120,false,INVAVID_NUM,false,INVAVID_NUM,false,true,std::map<int, int>{{19,10}}),
+    GameBaseObject(22,"../Resources/Objects/Base/Iron.png","铁锭",Mine,99,0,true,250,false,INVAVID_NUM,false,INVAVID_NUM,false,true,std::map<int, int>{{20,10}})
+};
+
+// 游戏种子类物品属性参数定义
+const std::vector<GameSeedObject> GAME_SEED_OBJECTS_ATTRS = {
 
 };
 

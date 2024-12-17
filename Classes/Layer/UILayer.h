@@ -3,7 +3,7 @@
  * File Name:     UILayer.h
  * File Function: UI界面UILayer类的定义
  * Author:        达思睿，尹诚成
- * Update Date:   2024/12/11
+ * Update Date:   2024/12/17
  * License:       MIT License
  ****************************************************************/
 #pragma once
@@ -15,6 +15,7 @@
 #include "Control/TimeManager.h"
 #include "Classes/MenuImage/HoverMenuItemImage.h"
 #include "Classes/Layer/PlacementMarkerLayer.h"
+#include "Classes/Box/Box.h"
 #include "../proj.win32/Constant.h"
 
 class UILayer : public cocos2d::Layer {
@@ -52,6 +53,9 @@ public:
 	// 显示物品图片
 	void showObjectImage();
 
+	// 显示物品数量标签
+	void showObjectCountLabel(cocos2d::Sprite* objectSprite,int index ,int count);
+
 	// 初始化时间显示器
 	void initializeTimeDisplay();
 
@@ -65,28 +69,37 @@ public:
 	CREATE_FUNC(UILayer);
 
 private:
-	Character* character;															// 角色指
-	cocos2d::Size visibleSize;														// 可见区域的大小
-	cocos2d::Label* timeLabel1;														// 显示星期和日期的标签指针
-	cocos2d::Label* timeLabel2;														// 显示白天/晚上和小时的标签指针
-	cocos2d::Sprite* timeDisplayLayer;												// 用作为时间显示器背景的图片指针
-	cocos2d::Sprite* closedobjectListLayer;											// 物品栏关闭状态图片指针
-	cocos2d::Sprite* openedobjectListLayer;											// 物品栏打开状态图片指针
-	cocos2d::Sprite* closedObjectSpriteImage[OBJECT_LIST_COLS];						// 物品栏关闭时显示的物品图片指针
-	cocos2d::Sprite* openedObjectSpriteImage[OBJECT_LIST_COLS * OBJECT_LIST_ROWS];	// 物品栏打开时显示的物品图片指针
-	cocos2d::Sprite* selectObjectSpriteMarker[OBJECT_LIST_COLS];					// 选中物品的标记指针
-	cocos2d::Sprite* nearestPlacementMarker;										// 最近放置标记指针
-	cocos2d::Sprite* selectedObjectSprite;											// 当前选中的对象
-	cocos2d::Sprite* skillLevelBoard;												// 技能板指针
-	cocos2d::Sprite* skillLevelStar[SKILL_KIND_NUM * SKILL_LEVEL_NUM];				// 技能等级指针
-	HoverMenuItemImage* deleteObjectButton;											// 删除物品按钮
-	HoverMenuItemImage *closeObjectListButton;										// 关闭物品栏按钮
-	HoverMenuItemImage* exitButton;													// 退出按钮
-	PlacementMarkerLayer* placementMarkerLayer;										// 放置标记层类指针
-	bool objectListStatus;															// 物品栏状态
-	bool lastObjectListStatus;														// 上一次物品栏状态
-	int lastSelectedObjectIndex;													// 上一次物品栏索引
-	int startLocation;																// 起始位置
+	Character* _character;															// 角色指针
+	cocos2d::Size _visibleSize;														// 可见区域的大小
+	cocos2d::Label* _timeLabel1;													// 显示星期和日期的标签指针
+	cocos2d::Label* _timeLabel2;													// 显示白天/晚上和小时的标签指针
+	cocos2d::Sprite* _timeDisplayLayer;												// 用作为时间显示器背景的图片指针
+	cocos2d::Sprite* _closedObjectListLayer;										// 物品栏关闭状态图片指针
+	cocos2d::Sprite* _openedObjectListLayer;										// 物品栏打开状态图片指针
+	cocos2d::Sprite* _boxObjectListLayer;											// 箱子物品栏图片指针
+	cocos2d::Sprite* _closedObjectSpriteImage[OBJECT_LIST_COLS];					// 物品栏关闭时显示的物品图片指针
+	cocos2d::Sprite* _openedObjectSpriteImage[OBJECT_LIST_COLS * OBJECT_LIST_ROWS];	// 物品栏打开时显示的物品图片指针
+	cocos2d::Sprite* _boxObjectSpriteImage[OBJECT_LIST_COLS];						// 箱子物品图片指针
+	cocos2d::Sprite* _selectObjectSpriteMarker[OBJECT_LIST_COLS];					// 选中物品的标记指针(物品栏）
+	cocos2d::Sprite* _selectBoxObjectSpriteMarker[OBJECT_LIST_COLS];				// 选中物品的标记指针(箱子物品栏）
+	cocos2d::Sprite* _nearestPlacementMarker;										// 最近放置标记指针
+	cocos2d::Sprite* _selectedObjectSprite;											// 当前选中的对象
+	cocos2d::Sprite* _skillLevelBoard;												// 技能板指针
+	cocos2d::Sprite* _skillLevelStar[SKILL_KIND_NUM * SKILL_LEVEL_NUM];				// 技能等级指针
+	HoverMenuItemImage* _deleteObjectButton;										// 删除物品按钮
+	HoverMenuItemImage* _closeObjectListButton;										// 关闭物品栏按钮
+	HoverMenuItemImage* _exitButton;												// 退出按钮
+	PlacementMarkerLayer* _placementMarkerLayer;									// 放置标记层类指针
+	cocos2d::Label* _closedObjectQuantityLabels[OBJECT_LIST_COLS];					// 物品栏关闭时的物品数量标签
+	cocos2d::Label* _openedObjectQuantityLabels[OBJECT_LIST_COLS * OBJECT_LIST_ROWS];// 物品栏打开时的物品数量标签
+	cocos2d::Label* _boxObjectQuantityLabels[OBJECT_LIST_COLS];						// 箱子物品栏的物品数量标签
+	cocos2d::Label* _currentObjectQuantityLabel;									// 当前选中物品的数量标签
+	bool _objectListStatus;															// 物品栏状态
+	bool _lastObjectListStatus;														// 上一次物品栏状态
+	bool _boxObjectListStatus;														// 是否打开箱子
+	int _lastSelectedObjectIndex;													// 上一次物品栏索引
+	int _startLocation;																// 起始位置
+	std::vector<Box> _boxList;														// 箱子列表
 	// 寻找最近可放置坐标
 	cocos2d::Vec2 findNearestPoint(cocos2d::Sprite* objectSprite);
 

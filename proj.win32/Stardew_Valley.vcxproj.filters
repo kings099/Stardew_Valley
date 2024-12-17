@@ -37,6 +37,12 @@
     <Filter Include="Classes\Crops">
       <UniqueIdentifier>{6a470c71-4fc6-4d67-bd0c-1febd9b0fb20}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\NPC">
+      <UniqueIdentifier>{46a7acec-b26a-4d02-9e76-20df075f69e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Box">
+      <UniqueIdentifier>{78df3489-fcc9-40da-929e-d8647f9140f3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Classes\CursorAndBUutton\HoverCursor.h" />
@@ -106,12 +112,6 @@
     <ClInclude Include="..\Classes\Crops\Crops.h">
       <Filter>Classes\Crops</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\Character\NPC.h">
-      <Filter>Classes\Character</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Character\GiftItem.h">
-      <Filter>Classes\Character</Filter>
-    </ClInclude>
     <ClInclude Include="..\Classes\Control\NpcManager.h">
       <Filter>Classes\Control</Filter>
     </ClInclude>
@@ -126,6 +126,15 @@
     </ClInclude>
     <ClInclude Include="..\Classes\Control\TimeManager.h">
       <Filter>Classes\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NPC\GiftItem.h">
+      <Filter>Classes\NPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NPC\NPC.h">
+      <Filter>Classes\NPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Box\Box.h">
+      <Filter>Classes\Box</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -190,12 +199,6 @@
     <ClCompile Include="..\Classes\Crops\Crops.cpp">
       <Filter>Classes\Crops</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\Character\NPC.cpp">
-      <Filter>Classes\Character</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Character\GiftItem.cpp">
-      <Filter>Classes\Character</Filter>
-    </ClCompile>
     <ClCompile Include="..\Classes\Control\NpcManager.cpp">
       <Filter>Classes\Control</Filter>
     </ClCompile>
@@ -210,6 +213,15 @@
     </ClCompile>
     <ClCompile Include="..\Classes\Control\TimeManager.cpp">
       <Filter>Classes\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NPC\GiftItem.cpp">
+      <Filter>Classes\NPC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NPC\NPC.cpp">
+      <Filter>Classes\NPC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Box\Box.cpp">
+      <Filter>Classes\Box</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

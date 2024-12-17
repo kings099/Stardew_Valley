@@ -1,5 +1,5 @@
 #pragma once
-#include "Character/GiftItem.h"
+#include "NPC/GiftItem.h"
 #include <vector>
 #include <string>
 

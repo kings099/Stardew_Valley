@@ -13,7 +13,7 @@
 #include "GiftItem.h"
 #include "ui/CocosGUI.h"
 #include "Layer/ChatLayer.h"
-#include"CharacterInfo.h"
+#include "Character/CharacterInfo.h"
 
  // NPC ≥ı ºªØ
 NPC::NPC(std::string name, cocos2d::Vec2 position, const std::string& idleImage, const std::vector<std::string>& walkFrames)

@@ -151,13 +151,12 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)\Resources\" /D /E /I /F /Y
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\AppDelegate\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\Box\Box.cpp" />
     <ClCompile Include="..\Classes\Character\Character.cpp" />
     <ClCompile Include="..\Classes\Character\CharacterAction.cpp" />
     <ClCompile Include="..\Classes\Character\CharacterInfo.cpp" />
     <ClCompile Include="..\Classes\Character\CharacterMove.cpp" />
     <ClCompile Include="..\Classes\Character\CharacterObjectList.cpp" />
-    <ClCompile Include="..\Classes\Character\GiftItem.cpp" />
-    <ClCompile Include="..\Classes\Character\NPC.cpp" />
     <ClCompile Include="..\Classes\Control\GameViewController.cpp" />
     <ClCompile Include="..\Classes\Control\GIftItemManager.cpp" />
     <ClCompile Include="..\Classes\Control\MapSwitchManager.cpp" />
@@ -175,19 +174,20 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)\Resources\" /D /E /I /F /Y
     <ClCompile Include="..\Classes\Maps\IndoorMap.cpp" />
     <ClCompile Include="..\Classes\MenuImage\HoverMenuItemImage.cpp" />
     <ClCompile Include="..\Classes\Maps\GameMap.cpp" />
+    <ClCompile Include="..\Classes\NPC\GiftItem.cpp" />
+    <ClCompile Include="..\Classes\NPC\NPC.cpp" />
     <ClCompile Include="..\Classes\Scene\GameMainScene.cpp" />
     <ClCompile Include="..\Classes\Scene\HelloWorldScene.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Classes\AppDelegate\AppDelegate.h" />
+    <ClInclude Include="..\Classes\Box\Box.h" />
     <ClInclude Include="..\Classes\Character\Character.h" />
     <ClInclude Include="..\Classes\Character\CharacterAction.h" />
     <ClInclude Include="..\Classes\Character\CharacterInfo.h" />
     <ClInclude Include="..\Classes\Character\CharacterMove.h" />
     <ClInclude Include="..\Classes\Character\CharacterObjectList.h" />
-    <ClInclude Include="..\Classes\Character\GiftItem.h" />
-    <ClInclude Include="..\Classes\Character\NPC.h" />
     <ClInclude Include="..\Classes\Control\GameViewController.h" />
     <ClInclude Include="..\Classes\Control\GiftItemManager.h" />
     <ClInclude Include="..\Classes\Control\MapSwitchManager.h" />
@@ -206,6 +206,8 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)\Resources\" /D /E /I /F /Y
     <ClInclude Include="..\Classes\Maps\IndoorMap.h" />
     <ClInclude Include="..\Classes\MenuImage\HoverMenuItemImage.h" />
     <ClInclude Include="..\Classes\Maps\GameMap.h" />
+    <ClInclude Include="..\Classes\NPC\GiftItem.h" />
+    <ClInclude Include="..\Classes\NPC\NPC.h" />
     <ClInclude Include="..\Classes\Scene\GameMainScene.h" />
     <ClInclude Include="..\Classes\Scene\HelloWorldScene.h" />
     <ClInclude Include="Constant.h" />

@@ -27,6 +27,7 @@ bool PlacementMarkerLayer::init()
 void PlacementMarkerLayer::showPlacementMarker()
 {
     const auto objectListStatus = _character->getObjectListStatus();
+    const auto boxListStatus = _character->getBoxStatus();
     if (objectListStatus) {
         for (int i = 0; i < OBJECT_LIST_ROWS; i++) {
             for (int j = 0; j < OBJECT_LIST_COLS; j++) {
@@ -34,6 +35,12 @@ void PlacementMarkerLayer::showPlacementMarker()
                     createPlacementMarker(i * OBJECT_LIST_COLS + j);
                 }
             }
+        }
+    }
+
+    if (boxListStatus) {
+        for (int i = 0; i < OBJECT_LIST_ROWS; i++) {
+            
         }
     }
 }

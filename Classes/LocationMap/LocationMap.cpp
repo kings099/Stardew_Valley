@@ -35,9 +35,15 @@ const std::map<int, cocos2d::Vec2>& LocationMap::getSkillLevelLocationMap() cons
     return _skillLevelLocationMap;
 }
 
+// 获取位置属性与屏幕坐标键值对(箱子)
+const std::map<int, cocos2d::Vec2>& LocationMap::getBoxLocationMap() const {
+    return _boxlocationMap;
+}
+
 // 构造函数
 LocationMap::LocationMap()
 {
+    // 初始化位置属性与屏幕坐标键值对(物品栏)
     for (int i = 0; i < OBJECT_LIST_ROWS; i++) {
         for (int j = 0; j < OBJECT_LIST_COLS; j++) {
                 _openedlocationMap[i * OBJECT_LIST_COLS + j] = cocos2d::Vec2(OPEN_OBJECT_LIST_START_X + j * OBJECT_LIST_NODE_HORIZONTAL_INTERVAL, OPEN_OBJECT_LIST_START_Y - i * OBJECT_LIST_NODE_VERTICAL_INTERVAL);
@@ -46,9 +52,14 @@ LocationMap::LocationMap()
     for (int i = 0; i < OBJECT_LIST_COLS; i++) {
         _closedlocationMap[i] = cocos2d::Vec2(CLOSE_OBJECT_LIST_START_X + i * OBJECT_LIST_NODE_HORIZONTAL_INTERVAL, CLOSE_OBJECT_LIST_START_Y);
     }
+    // 初始化位置属性与屏幕坐标键值对(技能等级)
     for (int i = 0; i < SKILL_KIND_NUM; i++) {
         for (int j = 0; j < SKILL_LEVEL_NUM; j++) {
             _skillLevelLocationMap[i * SKILL_LEVEL_NUM + j] = cocos2d::Vec2(SKILL_LEVEL_START_X + j * OBJECT_LIST_NODE_HORIZONTAL_INTERVAL, SKILL_LEVEL_START_Y + i * OBJECT_LIST_NODE_HORIZONTAL_INTERVAL);
         }
+    }
+    // 初始化位置属性与屏幕坐标键值对(箱子)
+    for (int i = 0; i < OBJECT_LIST_COLS; i++) {
+        _boxlocationMap[i] = cocos2d::Vec2(OBJECT_BOX_START_X + i * OBJECT_LIST_NODE_HORIZONTAL_INTERVAL, OBJECT_BOX_START_Y);
     }
 }

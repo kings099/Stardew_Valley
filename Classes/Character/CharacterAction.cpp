@@ -20,20 +20,23 @@ CharacterAction::CharacterAction(const std::string &filename):
 {
 	if (!loadData("../GameData/CharacterActionData.dat")) {
 		for (int i = 0; i < SKILL_KIND_NUM; i++) {
-			_skillLevel[i] = i;
+			_skillLevel[i] = 0;
 			_skillExprience[i] = 0;
 		}
 	}
+	updateSkillLevel();
 }
 
  // 按下鼠标事件触发函数
 void CharacterAction::onMouseDown(cocos2d::Event* event, GameCharacterAction& gameCharacterAction, cocos2d::Vec2& targetTilePos) {
 	const EventMouse* mouseEvent = dynamic_cast<EventMouse*>(event);
-
 	stopMove();
-	gameCharacterAction = checkActionIsValid(targetTilePos);
-	if (gameCharacterAction != NoneAction) {
-		updateSkillExprienceAndLevel(gameCharacterAction);
+	if (!getObjectListStatus()) {
+		gameCharacterAction = checkActionIsValid(targetTilePos);
+		if (gameCharacterAction != NoneAction) {
+			updateSkillExprience(gameCharacterAction);
+			updateSkillLevel();
+		}
 	}
 }
 
@@ -90,8 +93,31 @@ GameCharacterAction CharacterAction::checkActionIsValid(Vec2 & targetTilePos) {
 	return NoneAction;
 }
 
-// 更新技能经验值和等级
-void CharacterAction::updateSkillExprienceAndLevel(GameCharacterAction gameCharacterAction) {
+// 更新技能等级
+void CharacterAction::updateSkillLevel() {
+	// 更新技能等级
+	for (int i = 0; i < SKILL_KIND_NUM; i++) {
+		if (LEVEL0_TO_LEVEL1_EXPRIENCE<=_skillExprience[i] && _skillExprience[i]<=LEVEL1_TO_LEVEL2_EXPRIENCE) {
+			_skillLevel[i] = 1;
+		}
+		else if (LEVEL1_TO_LEVEL2_EXPRIENCE<=_skillExprience[i] && _skillExprience[i]<=LEVEL2_TO_LEVEL3_EXPRIENCE) {
+			_skillLevel[i] = 2;
+		}
+		else if (LEVEL2_TO_LEVEL3_EXPRIENCE<= _skillExprience[i] && _skillExprience[i]<=LEVEL3_TO_LEVEL4_EXPRIENCE) {
+			_skillLevel[i] = 3;
+		}
+		else if (LEVEL3_TO_LEVEL4_EXPRIENCE<=_skillExprience[i] && _skillExprience[i]<=LEVEL4_TO_LEVEL5_EXPRIENCE) {
+			_skillLevel[i] = 4;
+		}
+		else if (_skillExprience[i] >= LEVEL4_TO_LEVEL5_EXPRIENCE) {
+			_skillLevel[i] = 5;
+		}
+	}
+}
+
+
+// 更新技能经验值
+void CharacterAction::updateSkillExprience(GameCharacterAction gameCharacterAction) {
 	// 更新技能经验值
 	switch (gameCharacterAction) {
 	case Plowing:
@@ -111,25 +137,6 @@ void CharacterAction::updateSkillExprienceAndLevel(GameCharacterAction gameChara
 	default:
 		break;
 	}
-
-	// 更新技能等级
-	for (int i = 0; i < SKILL_KIND_NUM; i++) {
-		if (_skillExprience[i] >= LEVEL0_TO_LEVEL1_EXPRIENCE) {
-			_skillLevel[i] = 1;
-		}
-		else if (_skillExprience[i] >= LEVEL1_TO_LEVEL2_EXPRIENCE) {
-			_skillLevel[i] = 2;
-		}
-		else if (_skillExprience[i] >= LEVEL2_TO_LEVEL3_EXPRIENCE) {
-			_skillLevel[i] = 3;
-		}
-		else if (_skillExprience[i] >= LEVEL3_TO_LEVEL4_EXPRIENCE) {
-			_skillLevel[i] = 4;
-		}
-		else if (_skillExprience[i] >= LEVEL4_TO_LEVEL5_EXPRIENCE) {
-			_skillLevel[i] = 5;
-		}
-	}
 }
 
 // 获取技能等级
@@ -137,6 +144,11 @@ int CharacterAction::getSkillLevel(int index) {
 	if (index < 0 || index >= SKILL_KIND_NUM)
 		return -1;
 	return _skillLevel[index];
+}
+
+// 获取物品
+void CharacterAction::getObject() {
+
 }
 
 // 保存数据
