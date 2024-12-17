@@ -106,6 +106,24 @@ void HelloWorld::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* event) {
 
         abigail->showDialog();  // 弹出对话框
     }
+    if (keyCode == EventKeyboard::KeyCode::KEY_G) {
+        // 获取 Abigail NPC
+        NPC* abigail = NpcManager::getInstance()->getNPCByName("Abigail");
+        if (abigail) {
+            // 创建一个 GiftItem 对象（可以根据实际情况选择礼物）
+            GiftItem* gift = GiftItemManager::getInstance()->getGiftByName("Rose");  // 例如送花
+            abigail->giftItem(gift);  // 送礼物并执行相关逻辑
+            
+        }
+        else {
+            CCLOG("Abigail NPC not found!");  // 如果没有找到 Abigail NPC，则打印错误日志
+        }
+    }
+    if (keyCode == EventKeyboard::KeyCode::KEY_M) {
+        // 获取 Abigail NPC
+        NPC* abigail = NpcManager::getInstance()->getNPCByName("Abigail");
+        abigail->showMarriageChoices();
+    }
 }
 void HelloWorld::createMenuWithImage()
 {

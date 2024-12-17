@@ -11,34 +11,20 @@
  */
 class ChatLayer : public cocos2d::Layer {
 public:
-    /**
-     * @brief 构造函数
-     *
-     * @param message 显示的消息文本
-     */
+    //构造函数
     ChatLayer(const std::string& message);
 
-    /**
-     * @brief 创建并显示对话框
-     *
-     * @param message 对话框中显示的文本内容
-     */
+   //创建并显示对话框
     void showMessage(const std::string& message);
 
-    /**
-     * @brief 关闭对话框
-     *
-     * @param sender 触发关闭事件的对象
-     */
+    //关闭对话框 
     void closeDialog(cocos2d::Ref* sender);
 
-    /**
-     * @brief 获取 ChatLayer 实例
-     *
-     * @param message 对话框中显示的文本内容
-     * @return ChatLayer* ChatLayer 实例
-     */
+    //获取实例
     static ChatLayer* create(const std::string& message);
+    
+    //增加下方喜爱度显示文本，在送礼逻辑的时候才会显示
+    void ChatLayer::addAffectionText(const std::string& affectionInfo);
 
 private:
     cocos2d::LayerColor* chatLayer;  ///< 半透明黑色背景层
