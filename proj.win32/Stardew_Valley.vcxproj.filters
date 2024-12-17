@@ -28,14 +28,14 @@
     <Filter Include="Classes\MenuImage">
       <UniqueIdentifier>{4108d8f8-4c62-4d01-a3c7-45ff42542fc0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\Layer">
-      <UniqueIdentifier>{b560586d-3026-40bf-b612-a2b26cccd69b}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Resources">
       <UniqueIdentifier>{4848dd74-7c17-4b7b-99d9-3960fe0b8ac7}</UniqueIdentifier>
     </Filter>
     <Filter Include="Classes\Crops">
       <UniqueIdentifier>{6a470c71-4fc6-4d67-bd0c-1febd9b0fb20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Layer">
+      <UniqueIdentifier>{b560586d-3026-40bf-b612-a2b26cccd69b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -91,9 +91,6 @@
     <ClInclude Include="..\Classes\Layer\PlacementMarkerLayer.h">
       <Filter>Classes\Layer</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\Layer\UILayer.h">
-      <Filter>Classes\Layer</Filter>
-    </ClInclude>
     <ClInclude Include="..\Classes\Maps\IndoorMap.h">
       <Filter>Classes\Maps</Filter>
     </ClInclude>
@@ -126,6 +123,12 @@
     </ClInclude>
     <ClInclude Include="..\Classes\Control\TimeManager.h">
       <Filter>Classes\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\AudioControlUI.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\UILayer.h">
+      <Filter>Classes\Layer</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -210,6 +213,9 @@
     </ClCompile>
     <ClCompile Include="..\Classes\Control\TimeManager.cpp">
       <Filter>Classes\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\AudioControlUI.cpp">
+      <Filter>Classes\Layer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

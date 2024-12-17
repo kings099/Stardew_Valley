@@ -99,7 +99,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     AudioEngine::preload("../Resources/Music/HelloMusic.mp3", [](bool success) {
         if (success) {
             CCLOG("Audio loaded successfully");
-          
+            AudioEngine::play2d("../Resources/Music/HelloMusic.mp3", true);
         }
         else {
             CCLOG("Audio failed to load");
