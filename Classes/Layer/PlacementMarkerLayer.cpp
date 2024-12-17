@@ -40,7 +40,9 @@ void PlacementMarkerLayer::showPlacementMarker()
 
     if (boxListStatus) {
         for (int i = 0; i < OBJECT_LIST_ROWS; i++) {
-            
+            if (Box::getInstace().getBoxList()._boxObjectList[i].count == 0) {
+                createPlacementMarker(i);
+            }
         }
     }
 }
@@ -48,8 +50,15 @@ void PlacementMarkerLayer::showPlacementMarker()
 // 创建放置标记
 void PlacementMarkerLayer::createPlacementMarker(const int& index)
 {
+    const auto boxListStatus = _character->getBoxStatus();
     Sprite* placementMarker = Sprite::create("../Resources/UI/PlacementMarker.png");
     const Vec2 coordinate = LocationMap::getInstance().getLocationMap().at(index);
     placementMarker->setPosition(coordinate);
     this->addChild(placementMarker);
+    if (boxListStatus) {
+        Sprite* boxPlacementMarker = Sprite::create("../Resources/UI/PlacementMarker.png");
+        const Vec2 boxCoordinate = LocationMap::getInstance().getBoxLocationMap().at(index);
+        boxPlacementMarker->setPosition(boxCoordinate);
+        this->addChild(placementMarker);
+    }
 }

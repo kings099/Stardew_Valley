@@ -419,6 +419,28 @@ struct ObjectListNode {
     }
 };
 
+// 单个箱子的结构定义
+struct BoxNode {
+    std::vector<ObjectListNode> _boxObjectList;	// 箱子里的物品列表
+    int _maxObjectKindCount;						// 箱子最大容量
+    cocos2d::Vec2 _worldPosition;					// 箱子坐标
+    cocos2d::Vec2 _tilePosition;					// 箱子瓦片坐标、
+
+    // 构造函数
+    BoxNode() :
+        _maxObjectKindCount(OBJECT_LIST_COLS)
+    {
+        _boxObjectList.resize(_maxObjectKindCount);
+    }
+
+    BoxNode(cocos2d::Vec2 worldPosition) :
+        _maxObjectKindCount(OBJECT_LIST_COLS),
+        _worldPosition(worldPosition)
+    {
+        _boxObjectList.resize(_maxObjectKindCount);
+    }
+};
+
 
 
 

@@ -18,7 +18,8 @@ USING_NS_CC;
 CharacterObjectList::CharacterObjectList() :
 	_maxObjectKindCount(OBJECT_LIST_ROWS*OBJECT_LIST_COLS),
 	_currentObjectIndex(0),
-	_openObjectList(false)
+	_openObjectList(false),
+	_openBox(false)
 {
 	if (!loadData("../GameData/CharacterObjectListData.dat")) {
 		// 初始化物品栏

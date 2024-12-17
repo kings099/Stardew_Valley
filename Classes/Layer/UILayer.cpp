@@ -41,11 +41,13 @@ UILayer::UILayer() :
     std::fill_n(_selectObjectSpriteMarker, OBJECT_LIST_COLS, nullptr);
     std::fill_n(_closedObjectSpriteImage, OBJECT_LIST_COLS, nullptr);
     std::fill_n(_openedObjectSpriteImage, OBJECT_LIST_COLS * OBJECT_LIST_ROWS, nullptr);
+    std::fill_n(_boxObjectSpriteImage, OBJECT_LIST_COLS, nullptr);
     std::fill_n(_skillLevelStar, SKILL_KIND_NUM * SKILL_LEVEL_NUM, nullptr);
     std::fill_n(_closedObjectQuantityLabels, OBJECT_LIST_COLS, nullptr);
     std::fill_n(_openedObjectQuantityLabels, OBJECT_LIST_COLS * OBJECT_LIST_ROWS, nullptr);
     std::fill_n(_boxObjectQuantityLabels, OBJECT_LIST_COLS, nullptr);
-
+    Box::getInstace().addBox(BoxNode(Vec2(_visibleSize.width / 2  , _visibleSize.height/2 )));
+    // _box = Box::getInstace().getBoxList();
     // 鼠标事件监听器
     auto mouseListener = cocos2d::EventListenerMouse::create();
     mouseListener->onMouseDown = CC_CALLBACK_1(UILayer::onMouseDown, this);
@@ -249,32 +251,27 @@ void UILayer::showObjectImage() {
         }
     }
 
-    // 显示箱子图片
-    // todo:利用坐标位置查找箱子
-   // for (int i = 0; i < _boxList.size(); i++) {
-
-    //}
- /*   int index = 0;
+    int index = 0;
     if (_boxObjectListStatus) {
         for (int i = 0; i < OBJECT_LIST_COLS; i++) {
-            const auto boxObjectInfo = _boxList[index].findObjectAtPosition(i);
+            const auto boxObjectInfo = Box::getInstace().findObjectAtPosition(i);
             if (boxObjectInfo.count != 0) {
                 const auto objectSprite = boxObjectInfo.objectNode.object->_fileName;
-                _closedObjectSpriteImage[i] = Sprite::create(objectSprite);
-                _closedObjectSpriteImage[i]->setPosition(LocationMap::getInstance().getBoxLocationMap().at(i));
-                _closedObjectSpriteImage[i]->setScale(OBJECT_NODE_SCALE);
-                this->addChild(_closedObjectSpriteImage[i], OBJECT_LAYER_GRADE);
+                _boxObjectSpriteImage[i] = Sprite::create(objectSprite);
+                _boxObjectSpriteImage[i]->setPosition(LocationMap::getInstance().getBoxLocationMap().at(i));
+                _boxObjectSpriteImage[i]->setScale(OBJECT_NODE_SCALE);
+                this->addChild(_boxObjectSpriteImage[i], OBJECT_LAYER_GRADE);
 
-                showObjectCountLabel(_closedObjectSpriteImage[i], i, boxObjectInfo.count);
+                showObjectCountLabel(_boxObjectSpriteImage[i], i, boxObjectInfo.count);
             }
         }
     }
     else {
         for (int i = 0; i < OBJECT_LIST_COLS; i++) {
-            if (_closedObjectSpriteImage[i] != nullptr)
-                _closedObjectSpriteImage[i]->setVisible(false);
+            if (_boxObjectSpriteImage[i] != nullptr)
+                _boxObjectSpriteImage[i]->setVisible(false);
         }
-    }*/
+    }
 }
 
 // 显示物品数量标签
@@ -303,6 +300,7 @@ void UILayer::onMouseDown(cocos2d::Event* event) {
     EventMouse* mouseEvent = dynamic_cast<EventMouse*>(event);
     Vec2 location = mouseEvent->getLocationInView();
     _objectListStatus = _character->getObjectListStatus();
+    _boxObjectListStatus = _character->getBoxStatus();
     _selectedObjectSprite = nullptr;
     _currentObjectQuantityLabel = nullptr;
 

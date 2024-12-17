@@ -18,6 +18,25 @@ Box& Box::getInstace() {
 	return instance;
 }
 
+// 获取箱子向量列表
+BoxNode& Box::getBoxList() {
+	int boxListIndex = matchBoxPosition(_character->getPosition());
+	return _boxObjectList[boxListIndex];
+}
+
+// 添加单个箱子
+void Box::addBox(const BoxNode& boxNode){
+	_boxObjectList.push_back(boxNode);
+}
+
+// 移除单个箱子
+void Box::removeBox() {
+	int boxListIndex = matchBoxPosition(_character->getPosition());
+	if (boxListIndex!= -1) {
+		_boxObjectList.erase(_boxObjectList.begin() + boxListIndex);
+	}
+}
+
 // 构造函数
 Box::Box():
 	_maxObjectKindCount(OBJECT_LIST_COLS)
@@ -27,65 +46,80 @@ Box::Box():
 }
 
 // 储存物品
-bool Box::storeObject(int boxListIndex, GameToolObject targetObject, int objectCount, int targetIndex) {
+bool Box::storeObject(GameToolObject targetObject, int objectCount, int targetIndex) {
 	if (targetIndex < 0 || targetIndex >= _maxObjectKindCount) {
 		return false;
 	}
 	std::shared_ptr<GameObject> targetObjectPtr = std::make_shared<GameToolObject>(targetObject);
 	GameCommonObject commonObject(GameObjectMapType::Tool, targetObjectPtr);
-	return storeObject(boxListIndex, commonObject, objectCount, targetIndex);
+	return storeObject( commonObject, objectCount, targetIndex);
 }
 
 // 储存物品
-bool Box::storeObject(int boxListIndex, GameSeedObject targetObject, int objectCount, int targetIndex) {
+bool Box::storeObject(GameSeedObject targetObject, int objectCount, int targetIndex) {
 	if (targetIndex < 0 || targetIndex >= _maxObjectKindCount) {
 		return false;
 	}
 	std::shared_ptr<GameObject> targetObjectPtr = std::make_shared<GameSeedObject>(targetObject);
 	GameCommonObject commonObject(GameObjectMapType::Tool, targetObjectPtr);
-	return storeObject(boxListIndex, commonObject, objectCount, targetIndex);
+	return storeObject(commonObject, objectCount, targetIndex);
 }
 
 // 储存物品
-bool Box::storeObject(int boxListIndex, GameBaseObject targetObject, int objectCount, int targetIndex) {
+bool Box::storeObject( GameBaseObject targetObject, int objectCount, int targetIndex) {
 	if (targetIndex < 0 || targetIndex >= _maxObjectKindCount) {
 		return false;
 	}
 	std::shared_ptr<GameObject> targetObjectPtr = std::make_shared<GameBaseObject>(targetObject);
 	GameCommonObject commonObject(GameObjectMapType::Tool, targetObjectPtr);
-	return storeObject(boxListIndex, commonObject, objectCount, targetIndex);
+	return storeObject(commonObject, objectCount, targetIndex);
 }
 
 // 交换物品
-void Box::swapObject(int boxListIndex, int startIndex, int targetIndex) {
+void Box::swapObject( int startIndex, int targetIndex) {
+	int boxListIndex = matchBoxPosition(_character->getPosition());
+	if (boxListIndex == -1) {
+		return;
+	}
 	std::swap(_boxObjectList[boxListIndex]._boxObjectList[startIndex], _boxObjectList[boxListIndex]._boxObjectList[targetIndex]);
 }
 
 // 取出当前选中的物品
-void Box::getSelectedObject(int boxListIndex, int boxIndex, int objectListIndex) {
+void Box::getSelectedObject( int boxIndex, int objectListIndex) {
+	int boxListIndex = matchBoxPosition(_character->getPosition());
+	if (boxListIndex == -1) {
+		return;
+	}
 	_character->pickUpObject(_boxObjectList[boxListIndex]._boxObjectList[boxIndex].objectNode, _boxObjectList[boxListIndex]._boxObjectList[boxIndex].count, objectListIndex);
 	_boxObjectList[boxListIndex]._boxObjectList[boxIndex]= { {None,nullptr},0,Unselected };
 }
 
 // 查找指定位置是否有物品
-ObjectListNode Box::findObjectAtPosition(int boxListIndex, int index) {
+ObjectListNode Box::findObjectAtPosition( int index) {
 	if (index < 0 || index >= _maxObjectKindCount) {
 		return { {None,nullptr},0,Unselected };
 	}
+	int boxListIndex = matchBoxPosition(_character->getPosition());
 	return _boxObjectList[boxListIndex]._boxObjectList[index];
 }
 
 // 利用坐标位置匹配箱子
-int Box::matchBoxPosition(cocos2d::Vec2 worldPosition, cocos2d::Vec2 tilePosition) {
+int Box::matchBoxPosition(cocos2d::Vec2 worldPosition) {
+	int index = -1;
+	float minDistance = FLT_MAX;
 	for (int i = 0; i < _boxObjectList.size(); i++) {
-	   if(_boxObjectList[i]._worldPosition == worldPosition && _boxObjectList[i]._tilePosition == tilePosition)
-		   return i;
+		float distance = _character->getPosition().distance(worldPosition);
+		if (distance < minDistance) {
+			minDistance = distance;
+			index = i;
+		}
 	}
-	return -1;
+	return index;
 }
 
 // 查找箱子中是否有指定物品
-int Box::findObject(int boxListIndex, GameCommonObject targetObject) {
+int Box::findObject(GameCommonObject targetObject) {
+	int boxListIndex = matchBoxPosition(_character->getPosition());
 	for (int i = 0; i < _maxObjectKindCount; i++) {
 		// 只有物品不是工具才会被查找
 		if (_boxObjectList[boxListIndex]._boxObjectList[i].count != 0 
@@ -99,15 +133,15 @@ int Box::findObject(int boxListIndex, GameCommonObject targetObject) {
 }
 
 // 储存物品
-bool Box::storeObject(int boxListIndex, GameCommonObject targetObject, int objectCount, int targetIndex) {
+bool Box::storeObject(GameCommonObject targetObject, int objectCount, int targetIndex) {
 	_character->deleteCurrentObject();
-	
+	int boxListIndex = matchBoxPosition(_character->getPosition());
 	// 查找物品栏中是否有相同物品
-	const int index = findObject(boxListIndex,targetObject);
+	const int index = findObject(targetObject);
 	bool success = true;
 
 	// 如果没有相同物品，且物品栏已满，则返回false
-	if (index == -1 && checkObjectListFull(boxListIndex)) {
+	if (index == -1 && checkObjectListFull()) {
 		success = false;
 	}
 
@@ -138,7 +172,8 @@ bool Box::storeObject(int boxListIndex, GameCommonObject targetObject, int objec
 }
 
 // 检查箱子是否已满
-bool Box::checkObjectListFull(int boxListIndex) {
+bool Box::checkObjectListFull() {
+	int boxListIndex = matchBoxPosition(_character->getPosition());
 	bool isFull = true;
 	for (const auto& item : _boxObjectList[boxListIndex]._boxObjectList) {
 		if (item.count == 0) {

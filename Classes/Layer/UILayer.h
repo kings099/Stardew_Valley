@@ -99,7 +99,7 @@ private:
 	bool _boxObjectListStatus;														// 是否打开箱子
 	int _lastSelectedObjectIndex;													// 上一次物品栏索引
 	int _startLocation;																// 起始位置
-	std::vector<Box> _boxList;														// 箱子列表
+	//vec &_box;																		// 箱子列表
 	// 寻找最近可放置坐标
 	cocos2d::Vec2 findNearestPoint(cocos2d::Sprite* objectSprite);
 
