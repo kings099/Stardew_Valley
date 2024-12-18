@@ -142,6 +142,9 @@
     <ClInclude Include="..\Classes\Layer\UILayer.h">
       <Filter>Classes\Layer</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\Character\Task.h">
+      <Filter>Classes\Character</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\CursorAndBUutton\HoverCursor.cpp" />
@@ -234,6 +237,9 @@
     </ClCompile>
     <ClCompile Include="..\Classes\Layer\AudioControlUI.cpp">
       <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Character\Task.cpp">
+      <Filter>Classes\Character</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

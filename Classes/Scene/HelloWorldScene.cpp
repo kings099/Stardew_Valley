@@ -103,8 +103,7 @@ void HelloWorld::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* event) {
     if (keyCode == EventKeyboard::KeyCode::KEY_T) {
         // 获取 Abigail NPC
         NPC* abigail = NpcManager::getInstance()->getNPCByName("Abigail");
-
-        abigail->showDialog();  // 弹出对话框
+        abigail->showTaskList(); 
     }
     if (keyCode == EventKeyboard::KeyCode::KEY_G) {
         // 获取 Abigail NPC
