@@ -8,10 +8,11 @@
  * Update Date:   2024/12/13
  * License:       MIT License
  ****************************************************************/
+#ifndef GIFTITEM_H
+#define GIFTITEM_H
+
 #include <map>
 #include <string>
-
-class NPC;  // 前置声明 NPC
 
 class GiftItem {
 public:
@@ -37,3 +38,5 @@ public:
         return baseAffectionValue;  // 默认使用基础好感度值
     }
 };
+
+#endif // GIFTITEM_H
