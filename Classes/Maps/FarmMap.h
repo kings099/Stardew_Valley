@@ -15,6 +15,7 @@
 #include "2d/CCTMXTiledMap.h"
 #include "proj.win32/Constant.h"
 #include "GameMap.h"
+#include"Classes/Crops/Crops.h"
 
 USING_NS_CC;
 
@@ -33,7 +34,9 @@ public:
     TMXTiledMap* FarmMap::getTiledMap() const;
 
     //在path层种植指定gid的树
-    void FarmMap::plantTreesOnPathLayer(int maxGrowthStage);
+    void plantTreesOnPathLayer();
+
+    //std::vector <Crops*> treeSprites;  // 保存树精灵的容器
 };
 
 #endif // __FARM_MAP_H_

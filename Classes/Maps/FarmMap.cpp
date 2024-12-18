@@ -9,6 +9,7 @@
 
 #include "FarmMap.h"
 #include "Classes/Crops/Crops.h"
+#include "Classes/Animal/Animal.h"
 USING_NS_CC;
 
 FarmMap::FarmMap(const Vec2& mapPosition)
@@ -45,8 +46,33 @@ bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition)
     //// 在场景初始化时设置季节
     Crops::setSeason(Season::Spring); // 设置当前季节为春季
     // 在 path 层种植橡树，枫树，松树
-    plantTreesOnPathLayer(5);
-    
+    plantTreesOnPathLayer();
+
+    Vec2 startPosition_1(416, 832);  // 例如设置小动物的原点为 (100, 100)
+    Animal* sheep = Animal::create("sheep", startPosition_1);
+    _tile_map->addChild(sheep);
+
+    Vec2 startPosition_2(480, 816);  // 例如设置小动物的原点为 (100, 100)
+    Animal* chicken = Animal::create("chicken", startPosition_2);
+    _tile_map->addChild(chicken);
+
+    Vec2 startPosition_3(464, 800);  // 例如设置小动物的原点为 (100, 100)
+    Animal* cow = Animal::create("cow", startPosition_3);
+    _tile_map->addChild(cow);
+
+    //if (!treeSprites.empty()) {
+    //    // 假设你想砍掉第一个树精灵
+    //    Crops* tree = treeSprites[50];  // 确保正确转换为 Crops 类型
+    //    if (tree) {
+    //        // 延迟 10 秒后调用砍树动画
+    //        this->scheduleOnce([tree](float dt) {
+    //            tree->chopTree();  // 播放砍树动画
+    //            CCLOG("Chopped tree!");
+    //            }, 5.0f, "chop_tree_delay");
+    //    }
+    //}
+   
+
     //监听鼠标
     auto listener = EventListenerMouse::create();
     listener->onMouseDown = CC_CALLBACK_1(FarmMap::onMouseEvent, this);  // 监听鼠标点击事件
@@ -91,7 +117,7 @@ TMXTiledMap* FarmMap::getTiledMap() const {
     return _tile_map;
 }
 
-void FarmMap::plantTreesOnPathLayer(int maxGrowthStage) {
+void FarmMap::plantTreesOnPathLayer() {
     CCLOG("!!!!!!!!!!!!plantTreesOnPathLayer");
     // 获取 path 层
     TMXLayer* pathLayer = _tile_map->getLayer("path");
@@ -106,13 +132,15 @@ void FarmMap::plantTreesOnPathLayer(int maxGrowthStage) {
             Vec2 tilePos(col, row); // 瓦片坐标
             int GID = pathLayer->getTileGIDAt(tilePos);
             // 检查 GID 是否为目标 GID
+           /* TMXTiledMap* testmap = _tile_map;*/
             if (GID == OAK_GID) {
                 // 创建并种植农作物
-                auto crop = Crops::create("oak", maxGrowthStage);
+                auto crop = Crops::create("oak", OAK_MAX_GROWTHSTAGE);
                 if (crop) {
-                    _tile_map->addChild(crop,10);       // 添加到当前节点
+                    _tile_map/*testmap*/->addChild(crop,10);       // 添加到当前节点
                     crop->setPosition(tileToRelative(Vec2(col,row))); // 设置位置为瓦片的世界坐标
-                    crop->setGrowthStage(maxGrowthStage); // 直接设置为成熟阶
+                    crop->setGrowthStage(OAK_MAX_GROWTHSTAGE); // 直接设置为成熟阶段
+                   /* treeSprites.push_back(crop);*/
                     replaceTileAt("path", Vec2(col, row), OAK_INVISIBLE_GID);
                     replaceTileAt("Tree", Vec2(col, row), OAK_ROOT_GID);
                 }
@@ -123,11 +151,12 @@ void FarmMap::plantTreesOnPathLayer(int maxGrowthStage) {
             else if (GID == MAMPLE_GID) {
 
                 // 创建并种植农作物
-                auto crop = Crops::create("maple", maxGrowthStage);
+                auto crop = Crops::create("maple",MAPLE_MAX_GROWTHSTAGE);
                 if (crop) {
-                    _tile_map->addChild(crop, 10);       // 添加到当前节点
+                    _tile_map/*testmap*/->addChild(crop, 10);       // 添加到当前节点
                     crop->setPosition(tileToRelative(Vec2(col, row))); // 设置位置为瓦片的世界坐标
-                    crop->setGrowthStage(maxGrowthStage); // 直接设置为成熟阶
+                    crop->setGrowthStage(MAPLE_MAX_GROWTHSTAGE); // 直接设置为成熟阶段
+                   /* treeSprites.push_back(crop);*/
                     replaceTileAt("path", Vec2(col, row), MAMPLE_INVISIBLE_GID);
                     replaceTileAt("Tree", Vec2(col, row), MAMPLE_ROOT_GID);
                 }
@@ -138,11 +167,12 @@ void FarmMap::plantTreesOnPathLayer(int maxGrowthStage) {
             }
             else if (GID == PINE_GID) {
                 // 创建并种植农作物
-                auto crop = Crops::create("pine", maxGrowthStage);
+                auto crop = Crops::create("pine",PINE_MAX_GROWTHSTAGE);
                 if (crop) {
-                    _tile_map->addChild(crop, 10);       // 添加到当前节点
+                    _tile_map/*testmap*/->addChild(crop, 10);       // 添加到当前节点
                     crop->setPosition(tileToRelative(Vec2(col, row))); // 设置位置为瓦片的世界坐标
-                    crop->setGrowthStage(maxGrowthStage); // 直接设置为成熟阶
+                    crop->setGrowthStage(PINE_MAX_GROWTHSTAGE); // 直接设置为成熟阶段
+                   /* treeSprites.push_back(crop);*/
                     replaceTileAt("path", Vec2(col, row), PINE_INVISIBLE_GID);// 设置树木标志为不可见
                     replaceTileAt("Tree", Vec2(col, row), PINE_ROOT_GID);// 设置树根图块
                 }

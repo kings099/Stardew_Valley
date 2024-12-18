@@ -28,6 +28,12 @@
     <Filter Include="Classes\Crops">
       <UniqueIdentifier>{6a470c71-4fc6-4d67-bd0c-1febd9b0fb20}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\Animation">
+      <UniqueIdentifier>{d97ca9a0-1246-4faa-a0b0-ff57d6dde37c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Animal">
+      <UniqueIdentifier>{547bd8e6-2fda-4188-b10a-6bc8f38a17c4}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Classes\Layer">
       <UniqueIdentifier>{b560586d-3026-40bf-b612-a2b26cccd69b}</UniqueIdentifier>
     </Filter>
@@ -124,6 +130,12 @@
     <ClInclude Include="..\Classes\Control\TimeManager.h">
       <Filter>Classes\Control</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\Animation\Animation.h">
+      <Filter>Classes\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Animal\Animal.h">
+      <Filter>Classes\Animal</Filter>
+     </ClInclude>
     <ClInclude Include="..\Classes\Layer\AudioControlUI.h">
       <Filter>Classes\Layer</Filter>
     </ClInclude>
@@ -213,6 +225,12 @@
     </ClCompile>
     <ClCompile Include="..\Classes\Control\TimeManager.cpp">
       <Filter>Classes\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Animation\Animation.cpp">
+      <Filter>Classes\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Animal\Animal.cpp">
+      <Filter>Classes\Animal</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\Layer\AudioControlUI.cpp">
       <Filter>Classes\Layer</Filter>
