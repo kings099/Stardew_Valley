@@ -37,8 +37,9 @@ CharacterMove::CharacterMove(const std::string& filename) :
     // 创建精灵并设置初始位置
     _character = Sprite::create(filename);
     _character->setAnchorPoint(Vec2(0.25, 0.25));
-    _character->setPosition(_position);
+   // _character->setPosition(_position);
     this->cocos2d::Node::addChild(_character);
+    _character->setPosition(Vec2(visibleSize.width / 2, visibleSize.height / 2));
 }
 
 // 按下键盘时的处理
