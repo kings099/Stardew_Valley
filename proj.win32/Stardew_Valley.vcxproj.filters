@@ -127,6 +127,24 @@
     <ClInclude Include="..\Classes\Control\TimeManager.h">
       <Filter>Classes\Control</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\Animation\Animation.h">
+      <Filter>Classes\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Animal\Animal.h">
+      <Filter>Classes\Animal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\AudioControlUI.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\UILayer.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Character\Task.h">
+      <Filter>Classes\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="TownMap.h">
+      <Filter>Classes\Maps</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\CursorAndBUutton\HoverCursor.cpp" />
@@ -210,6 +228,21 @@
     </ClCompile>
     <ClCompile Include="..\Classes\Control\TimeManager.cpp">
       <Filter>Classes\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Animation\Animation.cpp">
+      <Filter>Classes\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Animal\Animal.cpp">
+      <Filter>Classes\Animal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\AudioControlUI.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Character\Task.cpp">
+      <Filter>Classes\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="TownMap.cpp">
+      <Filter>Classes\Maps</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

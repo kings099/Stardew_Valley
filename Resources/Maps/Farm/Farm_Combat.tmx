@@ -753,7 +753,7 @@
  </layer>
  <layer id="14" name="Teleport" width="80" height="65">
   <data encoding="base64" compression="zlib">
-   eJzt0LEJAAAIBLEv3X9iR7CwECGZ4LgEAAAAgEldBzznHwAAAAAAAAAAAAAAAAAAAFsNRzwAEQ==
+   eJzt0DEKACAMBMGUFn48v7awFQRTSGAGrj82AgAAAICb8ftAc/rRTc493uhXox8AAAAAAAAAAAAAAAAAwNkCkmsDjw==
   </data>
  </layer>
  <layer id="3" name="buildings" width="80" height="65">
