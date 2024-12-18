@@ -16,7 +16,9 @@
 #include "GameMainScene.h"
 #include "Control/NpcManager.h"  // 引入 NpcManager
 #include "Control/NpcInteractionManager.h"  // 引入 NpcInteractionManager
+#include "Layer/AudioControlUI.h"
 
+using namespace cocos2d::experimental;
 USING_NS_CC;
 
 Scene* HelloWorld::createScene()
@@ -39,6 +41,11 @@ bool HelloWorld::init()
         return false;
     }
 
+    
+    // 音频播放控制UI组件的初始化
+    AudioControlUI* audioControlUI = AudioControlUI::create();
+    this->addChild(audioControlUI, 3);  // 将音频控制UI添加到场景中
+
     // 初始化 NPC 和管理器
     NpcManager::getInstance()->initializeNPCs();  // 初始化 NPC
     CCLOG("NPC initialization completed.");
@@ -58,11 +65,11 @@ bool HelloWorld::init()
     else {
         CCLOG("Abigail NPC not found!");  // 如果没有找到 Abigail NPC，则打印错误日志
     }
+    
     // 注册键盘监听事件
     auto listener = EventListenerKeyboard::create();
     listener->onKeyPressed = CC_CALLBACK_2(HelloWorld::onKeyPressed, this);
     _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
-
 
 
     CCLOG("NPC initialization completed.");
@@ -86,6 +93,8 @@ bool HelloWorld::init()
     }
     this->createMenuWithImage();
      
+  
+
     return true;
 }
 
@@ -96,6 +105,24 @@ void HelloWorld::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* event) {
         NPC* abigail = NpcManager::getInstance()->getNPCByName("Abigail");
 
         abigail->showDialog();  // 弹出对话框
+    }
+    if (keyCode == EventKeyboard::KeyCode::KEY_G) {
+        // 获取 Abigail NPC
+        NPC* abigail = NpcManager::getInstance()->getNPCByName("Abigail");
+        if (abigail) {
+            // 创建一个 GiftItem 对象（可以根据实际情况选择礼物）
+            GiftItem* gift = GiftItemManager::getInstance()->getGiftByName("Rose");  // 例如送花
+            abigail->giftItem(gift);  // 送礼物并执行相关逻辑
+            
+        }
+        else {
+            CCLOG("Abigail NPC not found!");  // 如果没有找到 Abigail NPC，则打印错误日志
+        }
+    }
+    if (keyCode == EventKeyboard::KeyCode::KEY_M) {
+        // 获取 Abigail NPC
+        NPC* abigail = NpcManager::getInstance()->getNPCByName("Abigail");
+        abigail->showMarriageChoices();
     }
 }
 void HelloWorld::createMenuWithImage()
@@ -293,7 +320,7 @@ void HelloWorld::startGameCallback(Ref* pSender)
         loginLayer->setVisible(false);
 
         // 创建 farmScene
-        auto farmScene = GameMainScene::createScene();  // 假设 farmScene 已经创建
+        auto farmScene = GameMainScene::createScene();  
 
         // 使用 TransitionFade 进行场景过渡
         auto transition = TransitionFade::create(SCENE_TRANSITION_TIME, farmScene);  // 1秒钟的过渡时间
@@ -304,9 +331,6 @@ void HelloWorld::startGameCallback(Ref* pSender)
         });
     loginLayer->addChild(submitButton);
 
-
-
-  
 
 }
 

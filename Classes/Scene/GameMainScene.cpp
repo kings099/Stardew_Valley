@@ -24,6 +24,8 @@ bool GameMainScene::init()
         return false;
     }
 
+
+
     // 获取可见区域大小
     auto visibleSize = Director::getInstance()->getVisibleSize();
     auto origin = Director::getInstance()->getVisibleOrigin();
@@ -52,6 +54,10 @@ bool GameMainScene::init()
     //初始化UI层
     _uiLayer = UILayer::create();
     uiContainer->addChild(_uiLayer);
+    // 音频播放控制UI组件的初始化
+    AudioControlUI* audioControlUI = AudioControlUI::create();
+    uiContainer->addChild(audioControlUI, 1);  // 将音频控制UI添加到场景中
+
 
     // 启动时间管理器的计时
     TimeManager::getInstance()->startUpdating();
@@ -112,6 +118,8 @@ bool GameMainScene::init()
         if (_uiLayer) { _uiLayer->update(deltaTime); }
         }, "ViewControllerUpdate");
   
+    
+
     return true;
 }
 

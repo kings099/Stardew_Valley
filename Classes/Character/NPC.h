@@ -29,16 +29,22 @@ public:
     // NPC 显示对话框
     void showDialog();
 
-   
 
     // 增加好感度
-    void increaseAffection(int value);
+    void NPC::increaseAffection(int value, bool isRomantic = true);
+
+    void NPC::marryPlayer();
+
+    void NPC::playMarriageAnimation();
+
+    //是否结婚的选择框
+    void NPC::showMarriageChoices();
 
     // 检查玩家是否在 NPC 附近
     bool isPlayerNear(cocos2d::Vec2 playerPosition);
 
     // 送礼物
-    void giftItem(GiftItem* gift);
+    void NPC::giftItem(GiftItem* gift);
 
     // 使 NPC 移动到目标位置
     void moveTo(cocos2d::Vec2 targetPosition);
@@ -46,9 +52,14 @@ public:
     //启动行走动画
     void startWalkingAnimation();
 
+    //返回当前NPC的姓名
     std::string getName();
-
+    
+    //关闭对话
     void closeDialog(cocos2d::Ref* sender);
+
+    // 获取当前好感度
+    int getAffection() const;
 };
 
 #endif // NPC_H

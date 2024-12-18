@@ -16,20 +16,11 @@
     <Filter Include="Classes\Maps">
       <UniqueIdentifier>{661ebf28-b36c-4362-bb2e-24c5d04d4d6b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\Control">
-      <UniqueIdentifier>{c5be6d45-ec48-4ed5-9d2a-f247972a600b}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Classes\Scene">
       <UniqueIdentifier>{76a91594-afe2-422d-9d46-e6a8e2e909cd}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\LocationMap">
-      <UniqueIdentifier>{d1a7b7d6-e79a-4fd7-9a4c-136f725e84a2}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Classes\MenuImage">
       <UniqueIdentifier>{4108d8f8-4c62-4d01-a3c7-45ff42542fc0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Classes\Layer">
-      <UniqueIdentifier>{b560586d-3026-40bf-b612-a2b26cccd69b}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resources">
       <UniqueIdentifier>{4848dd74-7c17-4b7b-99d9-3960fe0b8ac7}</UniqueIdentifier>
@@ -42,6 +33,15 @@
     </Filter>
     <Filter Include="Classes\Animal">
       <UniqueIdentifier>{547bd8e6-2fda-4188-b10a-6bc8f38a17c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Layer">
+      <UniqueIdentifier>{b560586d-3026-40bf-b612-a2b26cccd69b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\LocationMap">
+      <UniqueIdentifier>{d1a7b7d6-e79a-4fd7-9a4c-136f725e84a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Control">
+      <UniqueIdentifier>{c5be6d45-ec48-4ed5-9d2a-f247972a600b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -97,9 +97,6 @@
     <ClInclude Include="..\Classes\Layer\PlacementMarkerLayer.h">
       <Filter>Classes\Layer</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\Layer\UILayer.h">
-      <Filter>Classes\Layer</Filter>
-    </ClInclude>
     <ClInclude Include="..\Classes\Maps\IndoorMap.h">
       <Filter>Classes\Maps</Filter>
     </ClInclude>
@@ -138,6 +135,12 @@
     </ClInclude>
     <ClInclude Include="..\Classes\Animal\Animal.h">
       <Filter>Classes\Animal</Filter>
+     </ClInclude>
+    <ClInclude Include="..\Classes\Layer\AudioControlUI.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\UILayer.h">
+      <Filter>Classes\Layer</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -228,6 +231,9 @@
     </ClCompile>
     <ClCompile Include="..\Classes\Animal\Animal.cpp">
       <Filter>Classes\Animal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\AudioControlUI.cpp">
+      <Filter>Classes\Layer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
