@@ -30,7 +30,7 @@ void ChatLayer::showMessage(const std::string& message) {
     chatLayer->addChild(dialogBg, 0);
 
     // 创建并设置显示消息的标签
-    dialogLabel = Label::createWithSystemFont(message, "Arial", 50);
+    dialogLabel = Label::createWithSystemFont(message, "Arial", 30);
     dialogLabel->setDimensions(dialogWidth - 20, dialogHeight - 20);
     dialogLabel->setHorizontalAlignment(TextHAlignment::CENTER);
     dialogLabel->setVerticalAlignment(TextVAlignment::CENTER);
@@ -54,6 +54,7 @@ void ChatLayer::showMessage(const std::string& message) {
 
 void ChatLayer::closeDialog(Ref* sender) {
     this->removeFromParentAndCleanup(true);  // 移除自己
+  
 }
 
 ChatLayer* ChatLayer::create(const std::string& message) {
@@ -66,4 +67,27 @@ ChatLayer* ChatLayer::create(const std::string& message) {
         delete layer;
         return nullptr;
     }
+}
+
+void ChatLayer::addAffectionText(const std::string& affectionInfo) {
+    // 获取对话框的尺寸
+    Size dialogSize = dialogBg->getContentSize();
+
+    // 创建显示亲密度信息的标签
+    Label* affectionLabel = Label::createWithSystemFont(affectionInfo, "Arial", 30);
+
+    // 设置标签的宽度和高度相对于对话框的比例
+    float labelWidth = dialogSize.width*1.2;  // 例如宽度占对话框的80%
+    float labelHeight = dialogSize.height * 0.2f; // 高度占对话框的20%
+
+    affectionLabel->setDimensions(labelWidth, labelHeight);  // 限制标签的宽度和高度
+    affectionLabel->setHorizontalAlignment(TextHAlignment::CENTER);
+    affectionLabel->setVerticalAlignment(TextVAlignment::BOTTOM);  // 放置在底部
+
+    // 设置标签的位置，相对于对话框底部对齐
+    Vec2 position = dialogBg->getPosition() + Vec2(0, ( - dialogSize.height / 2 + labelHeight / 2)*1.4);  // 适当的偏移
+    affectionLabel->setPosition(position);
+
+    // 将标签添加到对话框的层中
+    chatLayer->addChild(affectionLabel, 1);
 }

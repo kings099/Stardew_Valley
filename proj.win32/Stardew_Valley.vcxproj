@@ -150,6 +150,8 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)\Resources\" /D /E /I /F /Y
     </PreLinkEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\Classes\Animal\Animal.cpp" />
+    <ClCompile Include="..\Classes\Animation\Animation.cpp" />
     <ClCompile Include="..\Classes\AppDelegate\AppDelegate.cpp" />
     <ClCompile Include="..\Classes\Character\Character.cpp" />
     <ClCompile Include="..\Classes\Character\CharacterAction.cpp" />
@@ -158,6 +160,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)\Resources\" /D /E /I /F /Y
     <ClCompile Include="..\Classes\Character\CharacterObjectList.cpp" />
     <ClCompile Include="..\Classes\Character\GiftItem.cpp" />
     <ClCompile Include="..\Classes\Character\NPC.cpp" />
+    <ClCompile Include="..\Classes\Character\Task.cpp" />
     <ClCompile Include="..\Classes\Control\GameViewController.cpp" />
     <ClCompile Include="..\Classes\Control\GIftItemManager.cpp" />
     <ClCompile Include="..\Classes\Control\MapSwitchManager.cpp" />
@@ -166,6 +169,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)\Resources\" /D /E /I /F /Y
     <ClCompile Include="..\Classes\Control\NpcManager.cpp" />
     <ClCompile Include="..\Classes\Control\TimeManager.cpp" />
     <ClCompile Include="..\Classes\CursorAndBUutton\HoverCursor.cpp" />
+    <ClCompile Include="..\Classes\Layer\AudioControlUI.cpp" />
     <ClCompile Include="..\Classes\Layer\ChatLayer.cpp" />
     <ClCompile Include="..\Classes\Layer\PlacementMarkerLayer.cpp" />
     <ClCompile Include="..\Classes\Layer\UILayer.cpp" />
@@ -181,6 +185,8 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)\Resources\" /D /E /I /F /Y
     <ClCompile Include="TownMap.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\Classes\Animal\Animal.h" />
+    <ClInclude Include="..\Classes\Animation\Animation.h" />
     <ClInclude Include="..\Classes\AppDelegate\AppDelegate.h" />
     <ClInclude Include="..\Classes\Character\Character.h" />
     <ClInclude Include="..\Classes\Character\CharacterAction.h" />
@@ -189,6 +195,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)\Resources\" /D /E /I /F /Y
     <ClInclude Include="..\Classes\Character\CharacterObjectList.h" />
     <ClInclude Include="..\Classes\Character\GiftItem.h" />
     <ClInclude Include="..\Classes\Character\NPC.h" />
+    <ClInclude Include="..\Classes\Character\Task.h" />
     <ClInclude Include="..\Classes\Control\GameViewController.h" />
     <ClInclude Include="..\Classes\Control\GiftItemManager.h" />
     <ClInclude Include="..\Classes\Control\MapSwitchManager.h" />
@@ -198,6 +205,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)\Resources\" /D /E /I /F /Y
     <ClInclude Include="..\Classes\Control\NpcManager.h" />
     <ClInclude Include="..\Classes\Control\TimeManager.h" />
     <ClInclude Include="..\Classes\CursorAndBUutton\HoverCursor.h" />
+    <ClInclude Include="..\Classes\Layer\AudioControlUI.h" />
     <ClInclude Include="..\Classes\Layer\ChatLayer.h" />
     <ClInclude Include="..\Classes\Layer\PlacementMarkerLayer.h" />
     <ClInclude Include="..\Classes\Layer\UILayer.h" />

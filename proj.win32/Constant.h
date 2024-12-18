@@ -98,6 +98,16 @@ constexpr int SECONDS_IN_A_MIN = 60;                                        // �
 constexpr int DAYS_IN_A_SEASON = 7;                                         // 每季7天
 constexpr int DAYS_IN_A_YEAR = 28;                                          // 一年28天
 
+//农作物相关
+constexpr int CAULIFLOWER_MAX_GROWTHSTAGE = 5;                              //花椰菜共有5个生长阶段
+constexpr int KALE_MAX_GROWTHSTAGE = 5;                                     //甘蓝菜共有5个生长阶段
+constexpr int PUMPKIN_MAX_GROWTHSTAGE = 6;                                  //南瓜共有6个生长阶段
+constexpr int OAK_MAX_GROWTHSTAGE = 5;                                      //橡树共有5个生长阶段
+constexpr int MAPLE_MAX_GROWTHSTAGE = 5;                                    //枫树共有5个生长阶段
+constexpr int PINE_MAX_GROWTHSTAGE = 5;                                     //松树共有5个生长阶段
+
+
+
 //游戏物品对应技能类型定义
 enum GameObjectSkillType {
     Farm,				// 耕种
@@ -243,19 +253,15 @@ class GameSeedObject : public GameObject {
 public:
     int _level;                             // 解锁种子所需等级
     Season _season;                         // 种子生长季节
-    std::vector<int> _growthStages;         // 种子每个阶段所需的生长天数
-    int _totalGrowTime;                     // 种子生长总天数
     int _harvestIndex;                      // 种子收获所得的物品索引
     int _buyPrice;                          // 种子购买价格
     int _salePrice;                         // 种子出售价格
 
     // 构造函数
-    GameSeedObject(const int index, const std::string& fileName, const std::string& name, GameObjectSkillType type, int level, Season season, std::vector<int> growthStages, int totalGrowTime, int harvestIndex, int buyPrice, int salePrice) :
+    GameSeedObject(const int index, const std::string& fileName, const std::string& name, GameObjectSkillType type, int level, Season season,  int harvestIndex, int buyPrice, int salePrice) :
         GameObject(index,fileName, name, type),
         _level(level),
         _season(season),
-        _growthStages(growthStages),
-        _totalGrowTime(totalGrowTime),
         _harvestIndex(harvestIndex),
         _buyPrice(buyPrice),
         _salePrice(salePrice)
@@ -315,11 +321,49 @@ const std::vector<GameToolObject> GAME_TOOL_OBJECTS_ATTRS = {
 
 // 游戏种子类物品属性参数定义
 const std::vector<GameSeedObject> GAME_SEED_OBJECTS_ATTRS = {
-
+     GameSeedObject(17,"../Resources/Crops/Cauliflower/cauliflower_0.png","cauliflower_seed",Farm,1,Spring,20,80,175),//花椰菜种子
+     GameSeedObject(18,"../Resources/Crops/Kale/kale_0.png","kale_seed",Farm,1,Spring,21,60,90),//甘蓝菜种子
+     GameSeedObject(19, "../Resources/Crops/Pumpkin/pumpkin_0.png","pumpkin_seed",Farm,3,Fall,22,100,160)//南瓜种子
 };
 
 // 游戏基础类物品属性参数定义
 const std::vector<GameBaseObject> GAME_BASE_OBJECTS_ATTRS = {
+     GameBaseObject(20, "../Resources/Crops/Cauliflower/cauliflower_4.png", "cauliflower", Farm,//花椰菜
+        500, // 最大存储量
+        1,   // 解锁所需等级
+        3,   // 物品品质等级
+        true, // 是否能出售
+        120,  // 出售价格
+        true, // 是否可以食用
+        20,   // 食用恢复的能量值
+        false, // 能否放置
+        false, // 是否可以合成
+        {}    // 合成物品的原料
+    ),
+    GameBaseObject(21, "../Resources/Crops/Kale/kale_4.png", "kale", Farm,//甘蓝菜
+        400, // 最大存储量
+        1,   // 解锁所需等级
+        2,   // 物品品质等级
+        true, // 是否能出售
+        100,  // 出售价格
+        true, // 是否可以食用
+        15,   // 食用恢复的能量值
+        false, // 能否放置
+        false, // 是否可以合成
+        {}    // 合成物品的原料
+    ),
+    GameBaseObject(22, "../Resources/Crops/Pumpkin/pumpkin_5.png", "pumpkin", Farm,//南瓜
+        600, // 最大存储量
+        3,   // 解锁所需等级
+        4,   // 物品品质等级
+        true, // 是否能出售
+        150,  // 出售价格
+        true, // 是否可以食用
+        25,   // 食用恢复的能量值
+        false, // 能否放置
+        true,  // 是否可以合成
+        {{"pumpkin_seed", 3}, {"fertilizer", 1}} // 合成物品的原料
+    ),
 
 };
 

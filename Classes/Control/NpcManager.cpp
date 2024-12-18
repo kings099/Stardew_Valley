@@ -46,7 +46,16 @@ void NpcManager::initializeNPCs() {
         "I feel like you care about me.",
         "Thank you for the gift!"
     };
+    // 添加任务给 Abigail（现在奖励是好感度）
+    Task* task1 = new Task("Give me a rare item from the mine.", 1, 1, 10); // 10 好感度
+    Task* task2 = new Task("Help me repair the building.", 2, 5, 20);      // 20 好感度
+
+    npc1->addTask(task1);
+    npc1->addTask(task2);
+
+    // 将 Abigail NPC 加入到 NPC 列表
     npcs.push_back(npc1);
+ 
     CCLOG("Abigail NPC initialized!");
 
     NPC* npc2 = new NPC("Mary", cocos2d::Vec2(300, 200), "../Resources/Characters/NPC/Abigail_1.png", { "../Resources/Characters/NPC/Abigail_1.png", "../Resources/Characters/NPC/Abigail_2.png" });
