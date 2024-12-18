@@ -30,7 +30,7 @@ void ChatLayer::showMessage(const std::string& message) {
     chatLayer->addChild(dialogBg, 0);
 
     // 创建并设置显示消息的标签
-    dialogLabel = Label::createWithSystemFont(message, "Arial", 50);
+    dialogLabel = Label::createWithSystemFont(message, "Arial", 30);
     dialogLabel->setDimensions(dialogWidth - 20, dialogHeight - 20);
     dialogLabel->setHorizontalAlignment(TextHAlignment::CENTER);
     dialogLabel->setVerticalAlignment(TextVAlignment::CENTER);

@@ -1,5 +1,6 @@
 #pragma once
 #include "Character/NPC.h"
+#include "Character/Task.h"
 #include <vector>
 #include <string>
 

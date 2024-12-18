@@ -10,10 +10,7 @@
  ****************************************************************/
 
 #include "NPC.h"
-#include "GiftItem.h"
-#include "ui/CocosGUI.h"
-#include "Layer/ChatLayer.h"
-#include"CharacterInfo.h"
+
 USING_NS_CC;
 
  // NPC 初始化
@@ -63,10 +60,9 @@ void NPC::showDialog() {
 // 增加好感度
 void NPC::increaseAffection(int value, bool isRomantic) {
     affection = std::min(100, affection + value);
-
-   
 }
 
+// 显示询问用户是否求婚的UI
 void NPC::showMarriageChoices() {
     if (affection >= 0 && !isMarried) {
         // 获取当前场景
@@ -113,6 +109,7 @@ void NPC::showMarriageChoices() {
     }
 }
 
+//处理求婚逻辑，包括播放动画，修改关系，消息提示用户已经结婚
 void NPC::marryPlayer() {
     // 播放求婚动画，并在动画完成后显示结婚消息
     playMarriageAnimation();
@@ -138,9 +135,10 @@ void NPC::marryPlayer() {
     this->runAction(delayAction);
 }
 
+//在求婚的时候执行的动画
 void NPC::playMarriageAnimation() {
     // 创建一个闪烁的心形精灵
-    auto heartSprite = Sprite::create("../Resources/Characters/NPC/happy.png");  // 假设你有一个心形图案的图片
+    auto heartSprite = Sprite::create("../Resources/Characters/NPC/happy.png"); 
     // 设置开心表情的位置，偏移位置稍微往上
     Vec2 npcPosition = getPosition();
     heartSprite->setPosition(npcPosition.x, npcPosition.y + (sprite->getContentSize().height / 2) * 1.2);  // 头顶位置
@@ -165,15 +163,68 @@ void NPC::playMarriageAnimation() {
     heartSprite->runAction(repeat);
 
     // 如果要展示完成后销毁心形精灵，可以在动画结束时移除它
-    heartSprite->runAction(Sequence::create(DelayTime::create(3.0f), CallFunc::create([heartSprite]() {
+    heartSprite->runAction(Sequence::create(DelayTime::create(4.0f), CallFunc::create([heartSprite]() {
         heartSprite->removeFromParent();
         }), nullptr));
+}
+
+void NPC::showTaskList() {
+    std::string taskInfo = "Available Tasks:\n";
+
+    // 生成两个任务按钮
+    if (tasks.size() >= 2) {
+        // 获取任务1
+        Task* task1 = tasks[0];
+        std::string task1Info = task1->getDescription() + (task1->checkCompletion() ? " (Completed)" : " (In Progress)");
+
+        // 获取任务2
+        Task* task2 = tasks[1];
+        std::string task2Info = task2->getDescription() + (task2->checkCompletion() ? " (Completed)" : " (In Progress)");
+
+        // 获取当前场景
+        auto runningScene = cocos2d::Director::getInstance()->getRunningScene();
+        if (!runningScene) {
+            return;
+        }
+
+        // 获取屏幕的宽度和高度，计算按钮的位置
+        const auto visibleSize = Director::getInstance()->getVisibleSize();
+
+        // 创建任务1按钮
+        auto taskButton1 = ui::Button::create();
+        taskButton1->setTitleText(task1Info);
+        taskButton1->setPosition(Vec2(visibleSize.width / 2, visibleSize.height / 2 + 40));
+        taskButton1->setTitleFontSize(30); // 设置字体大小
+        taskButton1->addClickEventListener([this, task1, runningScene](Ref* sender) {
+            if (!task1->checkCompletion()) {
+                // 如果任务没有完成，执行任务
+                // 执行任务1的逻辑
+            }
+            });
+        runningScene->addChild(taskButton1, 10);
+
+        // 创建任务2按钮
+        auto taskButton2 = ui::Button::create();
+        taskButton2->setTitleText(task2Info);
+        taskButton2->setPosition(Vec2(visibleSize.width / 2, visibleSize.height / 2 - 40));
+        taskButton2->setTitleFontSize(30); // 设置字体大小
+        taskButton2->addClickEventListener([this, task2, runningScene](Ref* sender) {
+            if (!task2->checkCompletion()) {
+                // 如果任务没有完成，执行任务
+                // 执行任务2的逻辑
+            }
+            });
+        runningScene->addChild(taskButton2, 10);
+    }
 }
 
 
 
 
 
+void NPC::addTask(Task* task) {
+    tasks.push_back(task);
+}
 
 
 // 判断玩家是否接近
