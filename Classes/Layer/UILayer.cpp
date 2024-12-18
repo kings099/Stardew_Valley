@@ -3,7 +3,7 @@
  * File Name:     UILayer.cpp
  * File Function: UI界面UILayer类的实现
  * Author:        达思睿，尹诚成
- * Update Date:   2024/12/17
+ * Update Date:   2024/12/18
  * License:       MIT License
  ****************************************************************/
 
@@ -22,32 +22,29 @@ UILayer::UILayer() :
     _timeDisplayLayer(nullptr),
     _closedObjectListLayer(nullptr),
     _openedObjectListLayer(nullptr),
-    _selectedObjectSprite(nullptr),
-    _skillLevelBoard(nullptr),
+    _boxObjectListLayer(nullptr),
+    _skillLevelBoardLayer(nullptr),
     _nearestPlacementMarker(nullptr),
     _deleteObjectButton(nullptr),
     _closeObjectListButton(nullptr),
     _exitButton(nullptr),
     _placementMarkerLayer(nullptr),
-    _currentObjectQuantityLabel(nullptr),
     _objectListStatus(false),
     _lastObjectListStatus(false),
     _boxObjectListStatus(false),
     _lastSelectedObjectIndex(0),
-    _startLocation(-1)
+    _startLocation({OpenedObjectList,-1})
 {
     _character = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png");
     _visibleSize = Director::getInstance()->getVisibleSize();
+    std::fill_n(_closedObjectSpriteImage, OBJECT_LIST_COLS, ObjectImageInfo());
+    std::fill_n(_openedObjectSpriteImage, OBJECT_LIST_COLS * OBJECT_LIST_ROWS, ObjectImageInfo());
+    std::fill_n(_boxObjectSpriteImage, OBJECT_LIST_COLS, ObjectImageInfo());
     std::fill_n(_selectObjectSpriteMarker, OBJECT_LIST_COLS, nullptr);
-    std::fill_n(_closedObjectSpriteImage, OBJECT_LIST_COLS, nullptr);
-    std::fill_n(_openedObjectSpriteImage, OBJECT_LIST_COLS * OBJECT_LIST_ROWS, nullptr);
-    std::fill_n(_boxObjectSpriteImage, OBJECT_LIST_COLS, nullptr);
-    std::fill_n(_skillLevelStar, SKILL_KIND_NUM * SKILL_LEVEL_NUM, nullptr);
-    std::fill_n(_closedObjectQuantityLabels, OBJECT_LIST_COLS, nullptr);
-    std::fill_n(_openedObjectQuantityLabels, OBJECT_LIST_COLS * OBJECT_LIST_ROWS, nullptr);
-    std::fill_n(_boxObjectQuantityLabels, OBJECT_LIST_COLS, nullptr);
+    std::fill_n(_skillLevelLayer, SKILL_KIND_NUM * SKILL_LEVEL_NUM, nullptr);
     Box::getInstace().addBox(BoxNode(Vec2(_visibleSize.width / 2  , _visibleSize.height/2 )));
-    // _box = Box::getInstace().getBoxList();
+    Box::getInstace().addBox(BoxNode(Vec2(_visibleSize.width / 2 + 100, _visibleSize.height / 2)));
+    Box::getInstace().addBox(BoxNode(Vec2(_visibleSize.width / 2 , _visibleSize.height / 2 + 100)));
     // 鼠标事件监听器
     auto mouseListener = cocos2d::EventListenerMouse::create();
     mouseListener->onMouseDown = CC_CALLBACK_1(UILayer::onMouseDown, this);
@@ -100,7 +97,7 @@ void UILayer::initializeObjectList() {
     // 创建物品栏选中框
     for (int i = 0; i < OBJECT_LIST_COLS; i++) {
         _selectObjectSpriteMarker[i] = Sprite::create("../Resources/UI/SelectionMarker.png");
-        _selectObjectSpriteMarker[i]->setPosition(LocationMap::getInstance().getLocationMap().at(i));
+        _selectObjectSpriteMarker[i]->setPosition(LocationMap::getInstance().getLocationMap().at({ ClosedObjectList,i }));
         this->addChild(_selectObjectSpriteMarker[i], OBJECT_LAYER_GRADE);
         _selectObjectSpriteMarker[i]->setVisible(false);
     }
@@ -140,18 +137,18 @@ void UILayer::initializeObjectList() {
 // 初始化技能板
 void UILayer::initializeSkillBoard() {
     // 创建技能背景板
-    _skillLevelBoard = Sprite::create("../Resources/UI/SkillBoard.png");
-    _skillLevelBoard->setPosition(Vec2(_visibleSize.width / 4, _visibleSize.height / 2));
-    this->addChild(_skillLevelBoard, UI_LAYER_GRADE);
-    _skillLevelBoard->setVisible(false);
+    _skillLevelBoardLayer = Sprite::create("../Resources/UI/SkillBoard.png");
+    _skillLevelBoardLayer->setPosition(Vec2(_visibleSize.width / 4, _visibleSize.height / 2));
+    this->addChild(_skillLevelBoardLayer, UI_LAYER_GRADE);
+    _skillLevelBoardLayer->setVisible(false);
 
     // 创建技能等级显示图片
     for (int i = 0; i < SKILL_KIND_NUM; i++) {
         for (int j = 0; j < SKILL_LEVEL_NUM; j++) {
-            _skillLevelStar[i * SKILL_LEVEL_NUM + j] = Sprite::create("../Resources/UI/SkillStar.png");
-            _skillLevelStar[i * SKILL_LEVEL_NUM + j]->setPosition(LocationMap::getInstance().getSkillLevelLocationMap().at(i * SKILL_LEVEL_NUM + j));
-            this->addChild(_skillLevelStar[i * SKILL_LEVEL_NUM + j], UI_LAYER_GRADE + 1);
-            _skillLevelStar[i * SKILL_LEVEL_NUM + j]->setVisible(false);
+            _skillLevelLayer[i * SKILL_LEVEL_NUM + j] = Sprite::create("../Resources/UI/SkillStar.png");
+            _skillLevelLayer[i * SKILL_LEVEL_NUM + j]->setPosition(LocationMap::getInstance().getSkillLevelLocationMap().at(i * SKILL_LEVEL_NUM + j));
+            this->addChild(_skillLevelLayer[i * SKILL_LEVEL_NUM + j], UI_LAYER_GRADE + 1);
+            _skillLevelLayer[i * SKILL_LEVEL_NUM + j]->setVisible(false);
         }
     }
 }
@@ -170,7 +167,7 @@ void UILayer::updateObjectList() {
         _deleteObjectButton->setVisible(false);
         _closeObjectListButton->setVisible(false);
         setSelectObjectSpriteMarker(index, true);
-        _skillLevelBoard->setVisible(false);
+        _skillLevelBoardLayer->setVisible(false);
         setSkillLevel(false);
     }
     else {
@@ -182,7 +179,7 @@ void UILayer::updateObjectList() {
         _deleteObjectButton->setVisible(true);
         _closeObjectListButton->setVisible(true);
         setSelectObjectSpriteMarker(index, false);
-        _skillLevelBoard->setVisible(true);
+        _skillLevelBoardLayer->setVisible(true);
         setSkillLevel(true);
  
     }
@@ -194,20 +191,29 @@ void UILayer::showObjectImage() {
     _objectListStatus = _character->getObjectListStatus();
     _boxObjectListStatus = _character->getBoxStatus();
     // 清空之前的数量标签
+        // 清空之前的数量标签
     for (int i = 0; i < OBJECT_LIST_COLS; i++) {
-        if (_closedObjectSpriteImage[i] != nullptr) {
-            if (_closedObjectQuantityLabels[i] != nullptr) {
-                _closedObjectQuantityLabels[i]->removeFromParent();
-                _closedObjectQuantityLabels[i] = nullptr;
+        if (_closedObjectSpriteImage[i].sprite != nullptr) {
+            this->removeChild(_closedObjectSpriteImage[i].sprite);
+            this->removeChild(_closedObjectSpriteImage[i].label);
+            _closedObjectSpriteImage[i] = { nullptr,nullptr }; // 重新初始化
+        }
+    }
+
+    for (int i = 0; i < OBJECT_LIST_ROWS; i++) {
+        for (int j = 0; j < OBJECT_LIST_COLS; j++) {
+            if (_openedObjectSpriteImage[i * OBJECT_LIST_COLS + j].sprite != nullptr) {
+                this->removeChild(_openedObjectSpriteImage[i * OBJECT_LIST_COLS + j].sprite);
+                this->removeChild(_openedObjectSpriteImage[i * OBJECT_LIST_COLS + j].label);
+                _openedObjectSpriteImage[i * OBJECT_LIST_COLS + j] = { nullptr,nullptr }; // 重新初始化
             }
         }
     }
-    for (int i = 0; i < OBJECT_LIST_ROWS; i++) {
-        for (int j = 0; j < OBJECT_LIST_COLS; j++) {
-            if (_openedObjectQuantityLabels[i * OBJECT_LIST_COLS + j] != nullptr) {
-                _openedObjectQuantityLabels[i * OBJECT_LIST_COLS + j]->removeFromParent();
-                _openedObjectQuantityLabels[i * OBJECT_LIST_COLS + j] = nullptr;
-            }
+    for (int i = 0; i < OBJECT_LIST_COLS; i++) {
+        if (_boxObjectSpriteImage[i].sprite != nullptr) {
+            this->removeChild(_boxObjectSpriteImage[i].sprite);
+            this->removeChild(_boxObjectSpriteImage[i].label);
+            _boxObjectSpriteImage[i] = { nullptr,nullptr }; // 重新初始化
         }
     }
     // 显示物品图片
@@ -215,18 +221,16 @@ void UILayer::showObjectImage() {
         for (int i = 0; i < OBJECT_LIST_COLS; i++) {
             const auto objectInfo = _character->findObjectAtPosition(i);
             if (objectInfo.count != 0) {
-                const auto objectSprite = objectInfo.objectNode.object->_fileName;
-                _closedObjectSpriteImage[i] = Sprite::create(objectSprite);
-                _closedObjectSpriteImage[i]->setPosition(LocationMap::getInstance().getLocationMap().at(i));
-                _closedObjectSpriteImage[i]->setScale(OBJECT_NODE_SCALE);
-                this->addChild(_closedObjectSpriteImage[i], OBJECT_LAYER_GRADE);
-                showObjectCountLabel(_closedObjectSpriteImage[i], i, objectInfo.count);
+                const auto objectSpriteFilename = objectInfo.objectNode.object->_fileName;
+                const int objectCount = objectInfo.count;
+                createObjectImage(_closedObjectSpriteImage[i], objectSpriteFilename, objectCount);
+                setObjectImagePosition(_closedObjectSpriteImage[i],LocationMap::getInstance().getLocationMap().at({ ClosedObjectList,i }));   
             }
         }
         for (int i = 0; i < OBJECT_LIST_ROWS; i++) {
             for (int j = 0; j < OBJECT_LIST_COLS; j++) {
-                if (_openedObjectSpriteImage[i * OBJECT_LIST_COLS + j] != nullptr)
-                    _openedObjectSpriteImage[i * OBJECT_LIST_COLS + j]->setVisible(false);
+                if (_openedObjectSpriteImage[i * OBJECT_LIST_COLS + j].sprite != nullptr)
+                    setObjectImageVisible(_openedObjectSpriteImage[i * OBJECT_LIST_COLS + j], false);
             }
         }
     }
@@ -235,65 +239,37 @@ void UILayer::showObjectImage() {
             for (int j = 0; j < OBJECT_LIST_COLS; j++) {
                 const auto objectInfo = _character->findObjectAtPosition(i * OBJECT_LIST_COLS + j);
                 if (objectInfo.count != 0) {
-                    const auto objectSprite = objectInfo.objectNode.object->_fileName;
-                    _openedObjectSpriteImage[i * OBJECT_LIST_COLS + j] = Sprite::create(objectSprite);
-                    _openedObjectSpriteImage[i * OBJECT_LIST_COLS + j]->setPosition(LocationMap::getInstance().getLocationMap().at(i * OBJECT_LIST_COLS + j));
-                    _openedObjectSpriteImage[i * OBJECT_LIST_COLS + j]->setScale(OBJECT_NODE_SCALE);
-                    this->addChild(_openedObjectSpriteImage[i * OBJECT_LIST_COLS + j], OBJECT_LAYER_GRADE);
-
-                    showObjectCountLabel(_openedObjectSpriteImage[i * OBJECT_LIST_COLS + j], i * OBJECT_LIST_COLS + j, objectInfo.count);
+                    const auto objectSpriteFilename = objectInfo.objectNode.object->_fileName;
+                    const int objectCount = objectInfo.count;
+                    createObjectImage(_openedObjectSpriteImage[i * OBJECT_LIST_COLS + j], objectSpriteFilename, objectCount);
+                    setObjectImagePosition(_openedObjectSpriteImage[i * OBJECT_LIST_COLS + j], LocationMap::getInstance().getLocationMap().at({OpenedObjectList,i * OBJECT_LIST_COLS + j }));
                 }
             }
         }
         for (int i = 0; i < OBJECT_LIST_COLS; i++) {
-            if (_closedObjectSpriteImage[i] != nullptr)
-                _closedObjectSpriteImage[i]->setVisible(false);
+            if (_closedObjectSpriteImage[i].sprite != nullptr)
+                setObjectImageVisible(_closedObjectSpriteImage[i], false);
         }
-    }
-
-    int index = 0;
-    if (_boxObjectListStatus) {
-        for (int i = 0; i < OBJECT_LIST_COLS; i++) {
-            const auto boxObjectInfo = Box::getInstace().findObjectAtPosition(i);
-            if (boxObjectInfo.count != 0) {
-                const auto objectSprite = boxObjectInfo.objectNode.object->_fileName;
-                _boxObjectSpriteImage[i] = Sprite::create(objectSprite);
-                _boxObjectSpriteImage[i]->setPosition(LocationMap::getInstance().getBoxLocationMap().at(i));
-                _boxObjectSpriteImage[i]->setScale(OBJECT_NODE_SCALE);
-                this->addChild(_boxObjectSpriteImage[i], OBJECT_LAYER_GRADE);
-
-                showObjectCountLabel(_boxObjectSpriteImage[i], i, boxObjectInfo.count);
+        if (_boxObjectListStatus) {
+            for (int i = 0; i < OBJECT_LIST_COLS; i++) {
+                const auto boxObjectInfo = Box::getInstace().findObjectAtPosition(i);
+                if (boxObjectInfo.count != 0) {
+                    const auto objectSpriteFilename = boxObjectInfo.objectNode.object->_fileName;
+                    const int objectCount = boxObjectInfo.count;
+                    createObjectImage(_boxObjectSpriteImage[i], objectSpriteFilename, objectCount);
+                    setObjectImagePosition(_boxObjectSpriteImage[i], LocationMap::getInstance().getLocationMap().at({ OpenedBoxList,i }));
+                }
+            }
+        }
+        else {
+            for (int i = 0; i < OBJECT_LIST_COLS; i++) {
+                if (_boxObjectSpriteImage[i].sprite != nullptr)
+                    setObjectImageVisible(_boxObjectSpriteImage[i], false);
             }
         }
     }
-    else {
-        for (int i = 0; i < OBJECT_LIST_COLS; i++) {
-            if (_boxObjectSpriteImage[i] != nullptr)
-                _boxObjectSpriteImage[i]->setVisible(false);
-        }
-    }
 }
 
-// 显示物品数量标签
-void UILayer::showObjectCountLabel(cocos2d::Sprite* objectSprite, int index, int count) {
-    _objectListStatus = _character->getObjectListStatus();
-    _boxObjectListStatus = _character->getBoxStatus();
-    auto quantityLabel = Label::createWithTTF(std::to_string(count), "../Resources/Fonts/arial.ttf", FONT_SIZE * 2 / 3);
-    quantityLabel->setTextColor(Color4B::BLACK);
-    quantityLabel->setPosition(
-        objectSprite->getPosition().x + objectSprite->getContentSize().width * OBJECT_NODE_SCALE / 2 - quantityLabel->getContentSize().width / 2,
-        objectSprite->getPosition().y - objectSprite->getContentSize().height * OBJECT_NODE_SCALE / 2 + quantityLabel->getContentSize().height / 2
-    );
-    this->addChild(quantityLabel, OBJECT_LAYER_GRADE + 1); // 将标签放在物品图片上方
-
-    // 保存数量标签
-    if (!_objectListStatus) {
-        _closedObjectQuantityLabels[index] = quantityLabel;
-    }
-    else if(_objectListStatus){
-        _openedObjectQuantityLabels[index] = quantityLabel;
-    }
-}
 
 // 按下鼠标事件触发函数
 void UILayer::onMouseDown(cocos2d::Event* event) {
@@ -301,13 +277,14 @@ void UILayer::onMouseDown(cocos2d::Event* event) {
     Vec2 location = mouseEvent->getLocationInView();
     _objectListStatus = _character->getObjectListStatus();
     _boxObjectListStatus = _character->getBoxStatus();
-    _selectedObjectSprite = nullptr;
-    _currentObjectQuantityLabel = nullptr;
+    _selectedObjectImage = { nullptr,nullptr };
+    //_selectedObjectSprite = nullptr;
+   // _currentObjectQuantityLabel = nullptr;
 
     // 当物品栏被打开时才会检测
     if (_objectListStatus) {
         for (int i = 0; i < OBJECT_LIST_ROWS * OBJECT_LIST_COLS; i++) {
-            const auto sprite = _openedObjectSpriteImage[i];
+            const auto sprite = _openedObjectSpriteImage[i].sprite;
             if (sprite != nullptr) {
                 const Vec2 spritePos = sprite->getPosition();
                 const Size spriteSize = sprite->getContentSize();
@@ -316,29 +293,49 @@ void UILayer::onMouseDown(cocos2d::Event* event) {
                     location.x <= (spritePos.x + spriteSize.width * OBJECT_NODE_SCALE / 2) &&
                     location.y >= (spritePos.y - spriteSize.height * OBJECT_NODE_SCALE / 2) &&
                     location.y <= (spritePos.y + spriteSize.height * OBJECT_NODE_SCALE / 2)) {
-                    _selectedObjectSprite = sprite;
+                    _selectedObjectImage.sprite = _openedObjectSpriteImage[i].sprite;
+                    _selectedObjectImage.label = _openedObjectSpriteImage[i].label;
                     break;
                 }
             }
         }
-    }
 
-    if (_selectedObjectSprite) {
+        if (_boxObjectListStatus) {
+            for (int i = 0; i < OBJECT_LIST_COLS; i++) {
+                const auto sprite = _boxObjectSpriteImage[i].sprite;
+                if (sprite != nullptr) {
+                    const Vec2 spritePos = sprite->getPosition();
+                    const Size spriteSize = sprite->getContentSize();
+                    if (mouseEvent->getMouseButton() == EventMouse::MouseButton::BUTTON_LEFT &&
+                        location.x >= (spritePos.x - spriteSize.width * OBJECT_NODE_SCALE / 2) &&
+                        location.x <= (spritePos.x + spriteSize.width * OBJECT_NODE_SCALE / 2) &&
+                        location.y >= (spritePos.y - spriteSize.height * OBJECT_NODE_SCALE / 2) &&
+                        location.y <= (spritePos.y + spriteSize.height * OBJECT_NODE_SCALE / 2)) {
+                        _selectedObjectImage.sprite = _boxObjectSpriteImage[i].sprite;
+                        _selectedObjectImage.label = _boxObjectSpriteImage[i].label;
+                        break;
+                    }
+                }
+            }
+        }
+    }
+    
+    if (_selectedObjectImage.sprite) {
         // 标记选中状态
         if (_objectListStatus) {
-            _selectedObjectSprite->setUserData(reinterpret_cast<void*>(1));
+            _selectedObjectImage.sprite->setUserData(reinterpret_cast<void*>(1));
+            _selectedObjectImage.label->setUserData(reinterpret_cast<void*>(1));
             _nearestPlacementMarker = Sprite::create("../Resources/UI/NearestPlacementMarker.png");
             _nearestPlacementMarker->setVisible(false);
             this->addChild(_nearestPlacementMarker, OBJECT_LAYER_GRADE + 1);
 
             for (const auto& pair : LocationMap::getInstance().getLocationMap()) {
-                if (pair.second.equals(_selectedObjectSprite->getPosition())) {
+                if (pair.second.equals(_selectedObjectImage.sprite->getPosition())) {
                     _startLocation = pair.first;
                     break;
                 }
             }
-            _currentObjectQuantityLabel = _openedObjectQuantityLabels[_startLocation];
-            _character->setCurrentObject(_startLocation);
+            _character->setCurrentObject(_startLocation.position);
 
             // 创建放置标记层
             _placementMarkerLayer = PlacementMarkerLayer::create();
@@ -352,24 +349,16 @@ void UILayer::onMouseDown(cocos2d::Event* event) {
 void UILayer::onMouseMove(cocos2d::Event* event) {
     _objectListStatus = _character->getObjectListStatus();
     if (_objectListStatus) {
-        if (_selectedObjectSprite != nullptr) {
+        if (_selectedObjectImage.sprite != nullptr) {
             if (_nearestPlacementMarker != nullptr) {
-                _nearestPlacementMarker->setPosition(findNearestPoint(_selectedObjectSprite));
+                _nearestPlacementMarker->setPosition(findNearestPoint(_selectedObjectImage.sprite));
                 _nearestPlacementMarker->setVisible(true);
             }
 
             // 移动物品
             EventMouse* mouseEvent = dynamic_cast<EventMouse*>(event);
             Vec2 location = mouseEvent->getLocationInView();
-            _selectedObjectSprite->setPosition(location);
-
-            // 更新数量标签位置
-            if (_currentObjectQuantityLabel != nullptr) {
-                _currentObjectQuantityLabel->setPosition(
-                    _selectedObjectSprite->getPosition().x + _selectedObjectSprite->getContentSize().width * OBJECT_NODE_SCALE / 2 - _currentObjectQuantityLabel->getContentSize().width / 2,
-                    _selectedObjectSprite->getPosition().y - _selectedObjectSprite->getContentSize().height * OBJECT_NODE_SCALE / 2 + _currentObjectQuantityLabel->getContentSize().height / 2
-                );
-            }
+            setObjectImagePosition(_selectedObjectImage, location);
         }
     }
 }
@@ -377,16 +366,18 @@ void UILayer::onMouseMove(cocos2d::Event* event) {
 // 释放鼠标事件触发函数
 void UILayer::onMouseUp(cocos2d::Event* event) {
     _objectListStatus = _character->getObjectListStatus();
+    _boxObjectListStatus = _character->getBoxStatus();
     if (_objectListStatus) {
-        if (_selectedObjectSprite != nullptr) {
+        if (_selectedObjectImage.sprite != nullptr) {
             // 取消选中状态
-            _selectedObjectSprite->setUserData(nullptr);
+            _selectedObjectImage.sprite->setUserData(nullptr);
+            _selectedObjectImage.label->setUserData(nullptr);
             _nearestPlacementMarker->removeFromParent();
             _nearestPlacementMarker = nullptr;
 
             // 删除当前物品
             bool isDelete = false;
-            const Vec2 currentPos = _selectedObjectSprite->getPosition();
+            const Vec2 currentPos = _selectedObjectImage.sprite->getPosition();
             if (currentPos.x >= OPEN_OBJIEC_LIST_DELETE_BUTTON_LEFT_BOUDARY &&
                 currentPos.x <= OPEN_OBJIEC_LIST_DELETE_BUTTON_RIGHT_BOUDARY &&
                 currentPos.y >= OPEN_OBJIEC_LIST_DELETE_BUTTON_TOP_BOUDARY &&
@@ -396,10 +387,10 @@ void UILayer::onMouseUp(cocos2d::Event* event) {
 
             if (!isDelete) {
                 // 遍历所有可放置位置
-                Vec2 nearestPoint = findNearestPoint(_selectedObjectSprite);
+                Vec2 nearestPoint = findNearestPoint(_selectedObjectImage.sprite);
 
                 // 确定物品移动目标位置属性
-                int targetLocation = -1;
+                Location targetLocation = { OpenedObjectList, -1 };
                 for (const auto& pair : LocationMap::getInstance().getLocationMap()) {
                     if (pair.second.equals(nearestPoint)) {
                         targetLocation = pair.first;
@@ -407,34 +398,50 @@ void UILayer::onMouseUp(cocos2d::Event* event) {
                     }
                 }
 
-                // 更新物品栏
-                cocos2d::Sprite* currentObjectSprite;
-                currentObjectSprite = _openedObjectSpriteImage[_startLocation];
-                _openedObjectSpriteImage[_startLocation] = nullptr;
-                this->removeChild(_openedObjectSpriteImage[_startLocation]);
-                _openedObjectSpriteImage[targetLocation] = currentObjectSprite;
+                // 更新物品栏图片
+                ObjectImageInfo currentObjectImage;
+                if (_startLocation.status == OpenedObjectList) {
+                    currentObjectImage = _openedObjectSpriteImage[_startLocation.position];
+                    _openedObjectSpriteImage[_startLocation.position] = { nullptr,nullptr };
 
-                // 更新数量标签的位置
-                if (_currentObjectQuantityLabel != nullptr) {
-                    _currentObjectQuantityLabel->setPosition(
-                        nearestPoint.x + _selectedObjectSprite->getContentSize().width * OBJECT_NODE_SCALE / 2 - _currentObjectQuantityLabel->getContentSize().width / 2,
-                        nearestPoint.y - _selectedObjectSprite->getContentSize().height * OBJECT_NODE_SCALE / 2 + _currentObjectQuantityLabel->getContentSize().height / 2
-                    );
+                }
+                else if (_startLocation.status == OpenedBoxList && _boxObjectListStatus == true) {
+                    currentObjectImage = _boxObjectSpriteImage[_startLocation.position];
+                    _boxObjectSpriteImage[_startLocation.position] = { nullptr,nullptr };
+                }
+                if (targetLocation.status == OpenedObjectList) {
+                    _openedObjectSpriteImage[targetLocation.position] = currentObjectImage;
+                }
+                else if(targetLocation.status == OpenedBoxList && _boxObjectListStatus == true){
+                    _boxObjectSpriteImage[targetLocation.position] = currentObjectImage;
                 }
 
-                _selectedObjectSprite->setPosition(nearestPoint);
-                _character->swapObject(_startLocation, targetLocation);
-                std::swap(_openedObjectQuantityLabels[_startLocation], _openedObjectQuantityLabels[targetLocation]);
+                // 更新物品栏
+                if (_startLocation.status == OpenedObjectList && targetLocation.status == OpenedObjectList) {// 背包->背包
+                    _character->swapObject(_startLocation.position, targetLocation.position);
+                }
+                else if (_startLocation.status == OpenedBoxList && targetLocation.status == OpenedBoxList && _boxObjectListStatus == true) { // 箱子->箱子
+                    Box::getInstace().swapObject(_startLocation.position, targetLocation.position);
+                }
+                else if (_startLocation.status == OpenedObjectList && targetLocation.status == OpenedBoxList && _boxObjectListStatus == true) { // 背包->箱子
+                
+                    Box::getInstace().storeObject(_startLocation.position, targetLocation.position);
+                }
+                else if (_startLocation.status == OpenedBoxList && targetLocation.status == OpenedObjectList && _boxObjectListStatus == true) { // 箱子->背包
+                    Box::getInstace().getSelectedObject(_startLocation.position, targetLocation.position);
+                }
+
+                // 移动物品图片
+                setObjectImagePosition(_selectedObjectImage, nearestPoint);
             }
             else {
-                _selectedObjectSprite->setVisible(false);
+                setObjectImageVisible(_selectedObjectImage, false);
                 _character->deleteCurrentObject();
             }
             // 关闭放置标记层
             this->removeChild(_placementMarkerLayer);
             _placementMarkerLayer = nullptr;
-            _selectedObjectSprite = nullptr;
-            _currentObjectQuantityLabel = nullptr;
+            _selectedObjectImage = { nullptr,nullptr };
         }
     }
 }
@@ -448,10 +455,10 @@ void UILayer::onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Eve
         setSelectObjectSpriteMarker(index, true);
         // 有物品丢弃，需要更新物品栏
         if (keyCode == EventKeyboard::KeyCode::KEY_Q) {
-            if (_closedObjectSpriteImage[index] != nullptr) {
-                _closedObjectSpriteImage[index]->setVisible(false);
-                this->removeChild(_closedObjectSpriteImage[index]);
-                _closedObjectSpriteImage[index] = nullptr;
+            if (_closedObjectSpriteImage[index].sprite != nullptr) {
+                _closedObjectSpriteImage[index].sprite->setVisible(false);
+                this->removeChild(_closedObjectSpriteImage[index].sprite);
+                _closedObjectSpriteImage[index] = {nullptr,nullptr };
             }
         }
     }
@@ -535,26 +542,70 @@ void UILayer::update(float deltaTime) {
     updateTimeDisplay();
 }
 
+// 创建物品图片 
+void UILayer::createObjectImage(ObjectImageInfo& objectImageInfo, const std::string spriteFileName, const int count) {
+    objectImageInfo.sprite = Sprite::create(spriteFileName);
+    objectImageInfo.label = Label::createWithTTF(std::to_string(count), "../Resources/Fonts/arial.ttf", FONT_SIZE * 2 / 3);
+    objectImageInfo.sprite->setScale(OBJECT_NODE_SCALE);
+    objectImageInfo.label->setTextColor(Color4B::BLACK);
+    this->addChild(objectImageInfo.sprite, OBJECT_LAYER_GRADE);
+    this->addChild(objectImageInfo.label, OBJECT_LAYER_GRADE + 1);
+}
+
+// 设置物品图片位置
+void UILayer::setObjectImagePosition(const ObjectImageInfo& objectImageInfo, const cocos2d::Vec2& position) {
+    objectImageInfo.sprite->setPosition(position);
+    objectImageInfo.label->setPosition(
+        objectImageInfo.sprite->getPosition().x + objectImageInfo.sprite->getContentSize().width * OBJECT_NODE_SCALE / 2 - objectImageInfo.label->getContentSize().width / 2,
+        objectImageInfo.sprite->getPosition().y - objectImageInfo.sprite->getContentSize().height * OBJECT_NODE_SCALE / 2 + objectImageInfo.label->getContentSize().height / 2
+    );
+}
+
+// 设置物品图片是否可见
+void UILayer::setObjectImageVisible(ObjectImageInfo& objectImageInfo, bool visible) {
+    objectImageInfo.sprite->setVisible(visible);
+    objectImageInfo.label->setVisible(visible);
+}
+
 // 寻找最近可放置坐标
 Vec2 UILayer::findNearestPoint(cocos2d::Sprite* objectSprite) {
     float minDistance = FLT_MAX;
     Vec2 nearestPoint;
 
     const Vec2 currentPos = objectSprite->getPosition();
-    const auto objectListStatus = _character->getObjectListStatus();
+    _objectListStatus = _character->getObjectListStatus();
+    _boxObjectListStatus = _character->getBoxStatus();
 
-    if (!objectListStatus) { // 物品栏关闭
+    if (!_objectListStatus) { // 物品栏关闭
         // 这里可以添加逻辑
     }
     else {  // 物品栏打开
         for (const auto& point : LocationMap::getInstance().getLocationMap()) {
-            const int currentLocation = point.first;
+            const Location currentLocation = point.first;
 
             bool isEmpty = true;
-            const auto objectInfo = _character->findObjectAtPosition(currentLocation);
-            if (objectInfo.count != 0) {
-                isEmpty = false;
+            ObjectListNode objectInfo;
+            if (currentLocation.status == ClosedObjectList) {
+                continue;
             }
+            else if (currentLocation.status == OpenedObjectList) {
+                 objectInfo = _character->findObjectAtPosition(currentLocation.position);
+            }
+            else if (currentLocation.status == OpenedBoxList && _boxObjectListStatus == true) {
+                 objectInfo = Box::getInstace().findObjectAtPosition(currentLocation.position);
+            }
+
+            if (currentLocation.status == OpenedObjectList) {
+                if (objectInfo.count != 0) {
+                    isEmpty = false;
+                }
+            }
+            else if (currentLocation.status == OpenedBoxList&& _boxObjectListStatus == true) {
+                if (objectInfo.count != 0) {
+                    isEmpty = false;
+                }
+            }
+ 
             if (isEmpty) {
                 const Vec2& emptyPoint = point.second;
                 const float distance = currentPos.distance(emptyPoint);
@@ -582,7 +633,7 @@ void UILayer::setSkillLevel(bool show) {
         const int skillLevel = _character->getSkillLevel(i);
         if (skillLevel > 0) {
             for (int j = 0; j < skillLevel; j++) {
-                _skillLevelStar[i * SKILL_LEVEL_NUM + j]->setVisible(show);
+                _skillLevelLayer[i * SKILL_LEVEL_NUM + j]->setVisible(show);
             }
         }
     }

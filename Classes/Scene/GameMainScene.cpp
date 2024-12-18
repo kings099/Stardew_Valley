@@ -35,6 +35,7 @@ bool GameMainScene::init()
     // 加载角色
     _character = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png");
     this->addChild(_character, 1);
+
    
     // 初始化视角控制器
     _viewController = new GameViewController(_character, _farmMap);

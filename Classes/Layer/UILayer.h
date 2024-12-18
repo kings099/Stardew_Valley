@@ -53,9 +53,6 @@ public:
 	// 显示物品图片
 	void showObjectImage();
 
-	// 显示物品数量标签
-	void showObjectCountLabel(cocos2d::Sprite* objectSprite,int index ,int count);
-
 	// 初始化时间显示器
 	void initializeTimeDisplay();
 
@@ -77,29 +74,32 @@ private:
 	cocos2d::Sprite* _closedObjectListLayer;										// 物品栏关闭状态图片指针
 	cocos2d::Sprite* _openedObjectListLayer;										// 物品栏打开状态图片指针
 	cocos2d::Sprite* _boxObjectListLayer;											// 箱子物品栏图片指针
-	cocos2d::Sprite* _closedObjectSpriteImage[OBJECT_LIST_COLS];					// 物品栏关闭时显示的物品图片指针
-	cocos2d::Sprite* _openedObjectSpriteImage[OBJECT_LIST_COLS * OBJECT_LIST_ROWS];	// 物品栏打开时显示的物品图片指针
-	cocos2d::Sprite* _boxObjectSpriteImage[OBJECT_LIST_COLS];						// 箱子物品图片指针
-	cocos2d::Sprite* _selectObjectSpriteMarker[OBJECT_LIST_COLS];					// 选中物品的标记指针(物品栏）
-	cocos2d::Sprite* _selectBoxObjectSpriteMarker[OBJECT_LIST_COLS];				// 选中物品的标记指针(箱子物品栏）
+	cocos2d::Sprite* _skillLevelBoardLayer;											// 技能板指针
+	ObjectImageInfo _closedObjectSpriteImage[OBJECT_LIST_COLS];						// 物品栏关闭时显示的物品图片指针
+	ObjectImageInfo _openedObjectSpriteImage[OBJECT_LIST_COLS * OBJECT_LIST_ROWS];	// 物品栏打开时显示的物品图片指针
+	ObjectImageInfo _boxObjectSpriteImage[OBJECT_LIST_COLS];						// 箱子物品图片指针
+	cocos2d::Sprite* _selectObjectSpriteMarker[OBJECT_LIST_COLS];					// 选中物品的标记指针(关闭状态的物品栏）
+	cocos2d::Sprite* _skillLevelLayer[SKILL_KIND_NUM * SKILL_LEVEL_NUM];			// 技能等级指针
 	cocos2d::Sprite* _nearestPlacementMarker;										// 最近放置标记指针
-	cocos2d::Sprite* _selectedObjectSprite;											// 当前选中的对象
-	cocos2d::Sprite* _skillLevelBoard;												// 技能板指针
-	cocos2d::Sprite* _skillLevelStar[SKILL_KIND_NUM * SKILL_LEVEL_NUM];				// 技能等级指针
+	ObjectImageInfo _selectedObjectImage;											// 当前选中的物品图片对象
 	HoverMenuItemImage* _deleteObjectButton;										// 删除物品按钮
 	HoverMenuItemImage* _closeObjectListButton;										// 关闭物品栏按钮
 	HoverMenuItemImage* _exitButton;												// 退出按钮
 	PlacementMarkerLayer* _placementMarkerLayer;									// 放置标记层类指针
-	cocos2d::Label* _closedObjectQuantityLabels[OBJECT_LIST_COLS];					// 物品栏关闭时的物品数量标签
-	cocos2d::Label* _openedObjectQuantityLabels[OBJECT_LIST_COLS * OBJECT_LIST_ROWS];// 物品栏打开时的物品数量标签
-	cocos2d::Label* _boxObjectQuantityLabels[OBJECT_LIST_COLS];						// 箱子物品栏的物品数量标签
-	cocos2d::Label* _currentObjectQuantityLabel;									// 当前选中物品的数量标签
 	bool _objectListStatus;															// 物品栏状态
 	bool _lastObjectListStatus;														// 上一次物品栏状态
 	bool _boxObjectListStatus;														// 是否打开箱子
 	int _lastSelectedObjectIndex;													// 上一次物品栏索引
-	int _startLocation;																// 起始位置
-	//vec &_box;																		// 箱子列表
+	Location _startLocation;														// 物品移动起始位置属性
+	// 创建物品图片 
+	void createObjectImage(ObjectImageInfo& objectImageInfo,const std::string spriteFileName,const int count);
+
+	// 设置物品图片位置
+	void setObjectImagePosition(const ObjectImageInfo& objectImageInfo, const cocos2d::Vec2& position);
+
+	// 设置物品图片是否可见
+	void setObjectImageVisible(ObjectImageInfo& objectImageInfo, bool visible);
+
 	// 寻找最近可放置坐标
 	cocos2d::Vec2 findNearestPoint(cocos2d::Sprite* objectSprite);
 
@@ -109,8 +109,13 @@ private:
 	// 设置技能等级的显示状态
 	void setSkillLevel(bool show);
 
+	// 检查鼠标是否在某个精灵区域内
+	bool isMouseOverSprite(EventMouse* mouseEvent, const Vec2& mousePosition, cocos2d::Sprite* sprite);
+
 	// 关闭回调
 	void menuCloseCallback(cocos2d::Ref* pSender);
+
+
 };
 
 #endif // !_UILAYER_H_

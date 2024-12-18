@@ -148,6 +148,12 @@ enum MouseButton {
     RightButton,		// 右键
 };
 
+// 物品栏中物品状态定义
+enum ObjectListNodeStatus {
+    Unselected,		// 未选中
+    Selected		// 选中
+};
+
 // 瓦片信息
 enum TileType {
     Grass,      // 草
@@ -161,12 +167,11 @@ enum TileType {
     Other
 };
 
-// 单个瓦片坐标信息
-struct TileInfo {
-    TileType type;
-    cocos2d::Vec2 tilePos;  // 瓦片坐标
-    cocos2d::Vec2 WorldPos; // 世界坐标
-    bool isObstacle;        // 是否为障碍物
+// 位置状态定义
+enum LocationStatus {
+    ClosedObjectList,		// 物品栏关闭
+    OpenedObjectList,			// 物品栏打开
+    OpenedBoxList			// 箱子列表打开
 };
 
 // 角色动作定义
@@ -185,7 +190,52 @@ enum GameCharacterAction {
     Placement,			// 放置
     Transition,			// 转换场景
     OpenBox,			// 打开箱子
+};
 
+// 单个瓦片坐标信息定义
+struct TileInfo {
+    TileType type;
+    cocos2d::Vec2 tilePos;  // 瓦片坐标
+    cocos2d::Vec2 WorldPos; // 世界坐标
+    bool isObstacle;        // 是否为障碍物
+};
+
+// 位置属性定义
+struct Location {
+    LocationStatus status;   // 位置状态
+    int position;            // 位置编号
+    bool operator<(const Location& other) const { // 重载运算符 < 用于 std::map
+        if (status < other.status) {
+            return true;
+        }
+        if (status > other.status) {
+            return false;
+        }
+        return position < other.position;
+    }
+};
+
+// 物品图片信息定义
+struct ObjectImageInfo {
+    cocos2d::Sprite* sprite; // 物品图片
+    cocos2d::Label *label;   // 物品数量标签
+
+    ObjectImageInfo() :
+        sprite(nullptr),
+        label(nullptr) {
+    }
+    ObjectImageInfo(cocos2d::Sprite* sprite,cocos2d::Label* label) :
+        sprite(sprite),
+        label(label){
+    }
+
+    ObjectImageInfo& operator = (const ObjectImageInfo& other) {
+        if (this != &other) { // 防止自我赋值
+            sprite = other.sprite;
+            label = other.label;
+        }
+        return *this;
+    }
 };
 
 // 角色动作和地图类型对应关系
@@ -391,11 +441,6 @@ struct GameCommonObject {
             object = nullptr;
         }
     }
-};
-// 物品栏中物品状态定义
-enum ObjectListNodeStatus {
-    Unselected,		// 未选中
-    Selected		// 选中
 };
 
 // 角色物品栏单个物品属性定义

@@ -3,7 +3,7 @@
  * File Name:     Box.h
  * File Function: 箱子Box类的定义
  * Author:        尹诚成
- * Update Date:   2024/12/17
+ * Update Date:   2024/12/18
  * License:       MIT License
  ****************************************************************/
 
@@ -34,18 +34,12 @@ public:
 	int matchBoxPosition(cocos2d::Vec2 worldPosition);
 	
 	// 储存物品
-	bool storeObject(GameToolObject targetObject, int objectCount, int targetIndex);
-
-	// 储存物品
-	bool storeObject(GameSeedObject targetObject, int objectCount, int targetIndex);
-
-	// 储存物品
-	bool storeObject(GameBaseObject targetObject, int objectCount, int targetIndex);
+	bool storeObject(int objectListIndex, int boxIndex);
 
 	// 交换物品
-	void swapObject( int startIndex, int targetIndex);
+	void swapObject(int startIndex, int targetIndex);
 
-	// 取出当前选中的物品
+	// 取出物品
 	void getSelectedObject(int boxIndex,int objectListIndex);
 
 	// 查找指定位置是否有物品
@@ -63,9 +57,6 @@ private:
 
 	// 查找箱子中是否有指定物品
 	int findObject( GameCommonObject targetObject);
-
-	// 储存物品
-	bool storeObject( GameCommonObject targetObject, int objectCount,int targetIndex);
 
 	// 检查箱子是否已满
 	bool checkObjectListFull();
