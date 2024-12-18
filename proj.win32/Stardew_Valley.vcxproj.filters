@@ -43,6 +43,9 @@
     <Filter Include="Classes\Control">
       <UniqueIdentifier>{c5be6d45-ec48-4ed5-9d2a-f247972a600b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\Box">
+      <UniqueIdentifier>{0846b5f0-18e8-4055-87fd-37fe7bc08e8d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Classes\CursorAndBUutton\HoverCursor.h" />
@@ -135,7 +138,7 @@
     </ClInclude>
     <ClInclude Include="..\Classes\Animal\Animal.h">
       <Filter>Classes\Animal</Filter>
-     </ClInclude>
+    </ClInclude>
     <ClInclude Include="..\Classes\Layer\AudioControlUI.h">
       <Filter>Classes\Layer</Filter>
     </ClInclude>
@@ -144,6 +147,9 @@
     </ClInclude>
     <ClInclude Include="..\Classes\Character\Task.h">
       <Filter>Classes\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Box\Box.h">
+      <Filter>Classes\Box</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -240,6 +246,9 @@
     </ClCompile>
     <ClCompile Include="..\Classes\Character\Task.cpp">
       <Filter>Classes\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Box\Box.cpp">
+      <Filter>Classes\Box</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

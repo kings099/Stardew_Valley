@@ -3,7 +3,7 @@
  * File Name:     CharacterAction.h
  * File Function: CharacterAction类的定义
  * Author:        尹诚成
- * Update Date:   2023/12/07
+ * Update Date:   2023/12/17
  * License:       MIT License
  ****************************************************************/
 #pragma once
@@ -22,9 +22,6 @@ public:
 	// 按下鼠标事件触发函数
 	void onMouseDown(cocos2d::Event* event,GameCharacterAction &gameCharacterAction,cocos2d::Vec2 & targetTilePos);
 
-	// 更新技能经验值和等级
-	void updateSkillExprienceAndLevel(GameCharacterAction gameCharacterAction);
-
 	// 保存数据
 	bool saveData(const std::string& fileName);
 
@@ -41,7 +38,16 @@ private:
 	GameCharacterAction getAction();
 
 	// 判断角色是否可以执行动作
-	GameCharacterAction checkActionIsValid( cocos2d::Vec2& targetTilePos);
+	GameCharacterAction checkActionIsValid(cocos2d::Vec2& targetTilePos);
+
+	// 更新技能等级
+	void updateSkillLevel();
+
+	// 更新技能经验值
+	void updateSkillExprience(GameCharacterAction gameCharacterAction);
+
+	// 获取物品
+	void getObject();
 };
 
 #endif // !_CHARACTER_ACTION_H_
