@@ -135,10 +135,9 @@ void NPC::marryPlayer() {
     this->runAction(delayAction);
 }
 
-//在求婚的时候执行的动画
 void NPC::playMarriageAnimation() {
     // 创建一个闪烁的心形精灵
-    auto heartSprite = Sprite::create("../Resources/Characters/NPC/happy.png"); 
+    auto heartSprite = Sprite::create("../Resources/Characters/NPC/happy.png");
     // 设置开心表情的位置，偏移位置稍微往上
     Vec2 npcPosition = getPosition();
     heartSprite->setPosition(npcPosition.x, npcPosition.y + (sprite->getContentSize().height / 2) * 1.2);  // 头顶位置
@@ -148,25 +147,32 @@ void NPC::playMarriageAnimation() {
     heartSprite->setOpacity(0);  // 初始透明度为0，不可见
 
     // 放大效果
-    auto scaleUp = ScaleTo::create(50.0f, 50.0f);  // 放大到正常大小
-    auto scaleDown = ScaleTo::create(0.5f, 0.1f);  // 缩小效果
-    auto fadeIn = FadeIn::create(1.5f);  // 渐显效果
-    auto fadeOut = FadeOut::create(0.5f);  // 渐隐效果
+    auto scaleUp = ScaleTo::create(0.3f, 1.5f);  // 放大效果
+    auto scaleDown = ScaleTo::create(0.3f, 1.0f);  // 恢复到正常大小
 
-    // 动作序列，放大并渐隐再放大
-    auto sequence = Sequence::create(fadeIn, scaleUp, DelayTime::create(0.5f), fadeOut, scaleDown, nullptr);
+    // 闪烁效果，快速地透明化和出现
+    auto fadeIn = FadeIn::create(0.2f);  // 渐显效果
+    auto fadeOut = FadeOut::create(0.2f);  // 渐隐效果
 
-    // 创建重复的闪烁效果
-    auto repeat = RepeatForever::create(sequence);
+    // 颜色变化效果
+    auto colorChange = TintTo::create(0.2f, 255, 0, 0);  // 直接设置为红色
+    auto revertColor = TintTo::create(0.2f, 255, 255, 255); // 恢复为原来的颜色（白色）
+
+    // 让心形精灵闪烁的动作序列
+    auto blinkSequence = Sequence::create(fadeIn, scaleUp, colorChange, fadeOut, scaleDown, revertColor, nullptr);
+
+    // 创建一个重复的闪烁效果
+    auto repeat = RepeatForever::create(blinkSequence);
 
     // 播放动画
     heartSprite->runAction(repeat);
 
     // 如果要展示完成后销毁心形精灵，可以在动画结束时移除它
-    heartSprite->runAction(Sequence::create(DelayTime::create(4.0f), CallFunc::create([heartSprite]() {
+    heartSprite->runAction(Sequence::create(DelayTime::create(5.0f), CallFunc::create([heartSprite]() {
         heartSprite->removeFromParent();
         }), nullptr));
 }
+
 
 void NPC::showTaskList() {
     std::string taskInfo = "Available Tasks:\n";
