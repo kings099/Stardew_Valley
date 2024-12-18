@@ -60,19 +60,6 @@ bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition)
     Animal* cow = Animal::create("cow", startPosition_3);
     _tile_map->addChild(cow);
 
-    //if (!treeSprites.empty()) {
-    //    // 假设你想砍掉第一个树精灵
-    //    Crops* tree = treeSprites[50];  // 确保正确转换为 Crops 类型
-    //    if (tree) {
-    //        // 延迟 10 秒后调用砍树动画
-    //        this->scheduleOnce([tree](float dt) {
-    //            tree->chopTree();  // 播放砍树动画
-    //            CCLOG("Chopped tree!");
-    //            }, 5.0f, "chop_tree_delay");
-    //    }
-    //}
-   
-
     //监听鼠标
     auto listener = EventListenerMouse::create();
     listener->onMouseDown = CC_CALLBACK_1(FarmMap::onMouseEvent, this);  // 监听鼠标点击事件
