@@ -135,7 +135,7 @@
     </ClInclude>
     <ClInclude Include="..\Classes\Animal\Animal.h">
       <Filter>Classes\Animal</Filter>
-     </ClInclude>
+    </ClInclude>
     <ClInclude Include="..\Classes\Layer\AudioControlUI.h">
       <Filter>Classes\Layer</Filter>
     </ClInclude>
@@ -144,6 +144,9 @@
     </ClInclude>
     <ClInclude Include="..\Classes\Character\Task.h">
       <Filter>Classes\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="TownMap.h">
+      <Filter>Classes\Maps</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -240,6 +243,9 @@
     </ClCompile>
     <ClCompile Include="..\Classes\Character\Task.cpp">
       <Filter>Classes\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="TownMap.cpp">
+      <Filter>Classes\Maps</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
