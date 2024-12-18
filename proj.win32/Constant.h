@@ -328,7 +328,7 @@ const std::vector<GameSeedObject> GAME_SEED_OBJECTS_ATTRS = {
 
 // 游戏基础类物品属性参数定义
 const std::vector<GameBaseObject> GAME_BASE_OBJECTS_ATTRS = {
-     GameBaseObject(20, "../Resources/Crops/Cauliflower/cauliflower_4.png", "cauliflower", Farm,
+     GameBaseObject(20, "../Resources/Crops/Cauliflower/cauliflower_4.png", "cauliflower", Farm,//花椰菜
         500, // 最大存储量
         1,   // 解锁所需等级
         3,   // 物品品质等级
@@ -340,7 +340,7 @@ const std::vector<GameBaseObject> GAME_BASE_OBJECTS_ATTRS = {
         false, // 是否可以合成
         {}    // 合成物品的原料
     ),
-    GameBaseObject(21, "../Resources/Crops/Kale/kale_4.png", "kale", Farm,
+    GameBaseObject(21, "../Resources/Crops/Kale/kale_4.png", "kale", Farm,//甘蓝菜
         400, // 最大存储量
         1,   // 解锁所需等级
         2,   // 物品品质等级
@@ -352,7 +352,7 @@ const std::vector<GameBaseObject> GAME_BASE_OBJECTS_ATTRS = {
         false, // 是否可以合成
         {}    // 合成物品的原料
     ),
-    GameBaseObject(22, "../Resources/Crops/Pumpkin/pumpkin_5.png", "pumpkin", Farm,
+    GameBaseObject(22, "../Resources/Crops/Pumpkin/pumpkin_5.png", "pumpkin", Farm,//南瓜
         600, // 最大存储量
         3,   // 解锁所需等级
         4,   // 物品品质等级

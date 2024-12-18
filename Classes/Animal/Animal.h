@@ -17,6 +17,8 @@
 USING_NS_CC;
 
 class Animal : public Node {
+
+    
 protected:
     std::string type;   // 动物类型 (如：chicken、cow、sheep)
     float affection;    // 动物的好感度
@@ -27,7 +29,7 @@ protected:
 
     Sprite* sprite;   // 动物的精灵
     Action* currentAnimation; // 当前播放的动画
-
+    
     Vec2 position;     // 动物的当前坐标
     Vec2 origin;       // 创建小动物时指定的原点 (正方形的左下角)
     float areaSize;    // 正方形区域的大小 (20x20)
@@ -37,9 +39,10 @@ protected:
     static std::unordered_map<std::string, std::unordered_map<std::string, std::vector<std::string>>> animationMap;
 
 public:
+    Vec2 direction;
     Animal();
     ~Animal();
-
+    void setDirection(const Vec2& dir);
     // 初始化资源
     static void initializeResourceMap();
     static void initializeAnimationMap();
@@ -67,7 +70,7 @@ public:
 
     // 设置动物的随机移动
     void setRandomMovement(float deltaTime);
-
+    void startRandomMovement();
     // 播放方向动画
     void playDirectionAnimation(const std::string& direction, int repeatCount);
 };

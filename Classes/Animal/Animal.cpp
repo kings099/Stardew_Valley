@@ -16,7 +16,7 @@ std::unordered_map<std::string, std::unordered_map<std::string, std::vector<std:
 
 Animal::Animal()
     : type("chicken"), affection(100.0f), isFed(false), lastFedTime(0.0f),
-    affectionDecayRate(1.0f), maxAffection(100.0f), sprite(nullptr), currentAnimation(nullptr), areaSize(20.0f) {
+    affectionDecayRate(1.0f), maxAffection(100.0f), sprite(nullptr), currentAnimation(nullptr), areaSize(40.0f) {
 }
 
 Animal::~Animal() {
@@ -34,15 +34,13 @@ void Animal::initializeResourceMap() {
     resourceMap["chicken"] = {
         "../Resources/Animals/Chicken/Chicken_0.png",
     };
-   /* resourceMap["cow"] = {
-        "../Resources/Animals/Cow/cow_0.png",
-        "../Resources/Animals/Cow/cow_1.png"
+    resourceMap["cow"] = {
+        "../Resources/Animals/Cow/CowFrontAnimation_0.png",
     };
 
     resourceMap["sheep"] = {
-        "../Resources/Animals/Sheep/sheep_0.png",
-        "../Resources/Animals/Sheep/sheep_1.png"
-    };*/
+        "../Resources/Animals/Sheep/SheepFrontAnimation_0.png",
+    };
 }
 
 void Animal::initializeAnimationMap() {
@@ -50,15 +48,15 @@ void Animal::initializeAnimationMap() {
 
     // 初始化动画资源
     animationMap["chicken"] = {
-        {"up", {"../Resources/Animals/Chicken/ChickenFrontAction_1.png", 
+        {"up", {"../Resources/Animals/Chicken/ChickenBackAction_1.png",
+            "../Resources/Animals/Chicken/ChickenBackAction_2.png",
+            "../Resources/Animals/Chicken/ChickenBackAction_3.png",
+            "../Resources/Animals/Chicken/ChickenBackAction_4.png"}},
+
+        {"down", {"../Resources/Animals/Chicken/ChickenFrontAction_1.png",
         "../Resources/Animals/Chicken/ChickenFrontAction_2.png",
         "../Resources/Animals/Chicken/ChickenFrontAction_3.png",
         "../Resources/Animals/Chicken/ChickenFrontAction_4.png"}},
-
-        {"down", {"../Resources/Animals/Chicken/ChickenBackAction_1.png", 
-        "../Resources/Animals/Chicken/ChickenBackAction_2.png",
-        "../Resources/Animals/Chicken/ChickenBackAction_3.png",
-        "../Resources/Animals/Chicken/ChickenBackAction_4.png"}},
 
         {"left", {"../Resources/Animals/Chicken/ChickenLeftAction_1.png",
         "../Resources/Animals/Chicken/ChickenLeftAction_2.png",
@@ -70,7 +68,51 @@ void Animal::initializeAnimationMap() {
         "../Resources/Animals/Chicken/ChickenRightAction_3.png",
        "../Resources/Animals/Chicken/ChickenRightAction_4.png"}}
     };
+    
+    animationMap["sheep"] = {
+        {"up", {"../Resources/Animals/Sheep/SheepBackAnimation_0.png",
+            "../Resources/Animals/Sheep/SheepBackAnimation_1.png",
+            "../Resources/Animals/Sheep/SheepBackAnimation_2.png",
+            "../Resources/Animals/Sheep/SheepBackAnimation_3.png" }},
 
+         {"down", {"../Resources/Animals/Sheep/SheepFrontAnimation_0.png",
+        "../Resources/Animals/Sheep/SheepFrontAnimation_1.png",
+        "../Resources/Animals/Sheep/SheepFrontAnimation_2.png",
+        "../Resources/Animals/Sheep/SheepFrontAnimation_3.png"}},
+
+        {"left", {"../Resources/Animals/Sheep/SheepLeftAnimation_0.png",
+        "../Resources/Animals/Sheep/SheepLeftAnimation_1.png",
+        "../Resources/Animals/Sheep/SheepLeftAnimation_2.png",
+        "../Resources/Animals/Sheep/SheepLeftAnimation_3.png"}},
+
+        {"right", {"../Resources/Animals/Sheep/SheepRightAnimation_0.png",
+        "../Resources/Animals/Sheep/SheepRightAnimation_1.png",
+        "../Resources/Animals/Sheep/SheepRightAnimation_2.png",
+        "../Resources/Animals/Sheep/SheepRightAnimation_3.png"}}
+    };
+    
+    animationMap["cow"] = {
+        {"up",  {"../Resources/Animals/Cow/CowBackAnimation_0.png",
+        "../Resources/Animals/Cow/CowBackAnimation_1.png",
+        "../Resources/Animals/Cow/CowBackAnimation_2.png",
+        "../Resources/Animals/Cow/CowBackAnimation_3.png"}},
+
+        {"down", {"../Resources/Animals/Cow/CowFrontAnimation_0.png",
+            "../Resources/Animals/Cow/CowFrontAnimation_1.png",
+            "../Resources/Animals/Cow/CowFrontAnimation_2.png",
+            "../Resources/Animals/Cow/CowFrontAnimation_3.png"}},
+
+        {"left", {"../Resources/Animals/Cow/CowLeftAnimation_0.png",
+        "../Resources/Animals/Cow/CowLeftAnimation_1.png",
+        "../Resources/Animals/Cow/CowLeftAnimation_2.png",
+        "../Resources/Animals/Cow/CowLeftAnimation_3.png"}},
+
+        {"right", {"../Resources/Animals/Cow/CowRightAnimation_0.png",
+        "../Resources/Animals/Cow/CowRightAnimation_1.png",
+        "../Resources/Animals/Cow/CowRightAnimation_2.png",
+        "../Resources/Animals/Cow/CowRightAnimation_3.png"}}
+    };
+   
     // 为其他动物添加类似的资源
 }
 
@@ -118,10 +160,18 @@ bool Animal::init(const std::string& type, const Vec2& startPosition) {
     addChild(sprite);
 
     // 开始定时更新小动物的位置
-    schedule([this](float deltaTime) {
-        setRandomMovement(deltaTime);  // 更新位置
-        }, 1.0f, "move_key");  // 每秒更新一次
+    if (this->type == "chicken") {
+        schedule([this](float deltaTime) {
+            setRandomMovement(deltaTime);  // 更新位置
+            }, 0.4f, "move_key");  // 每0.3秒更新一次
 
+    }
+    else {
+        schedule([this](float deltaTime) {
+            setRandomMovement(deltaTime);  // 更新位置
+            }, 0.7f, "move_key");  // 每0.3秒更新一次
+
+    }
     return true;
 }
 
@@ -159,147 +209,82 @@ const std::string& Animal::getType() const {
     return type;
 }
 
-//void Animal::playDirectionAnimation(const std::string& direction, int repeatCount) {
-//    if (animationMap[type].find(direction) != animationMap[type].end()) {
-//        // 加载对应方向的帧动画
-//        Vector<SpriteFrame*> frames;
-//        for (const auto& framePath : animationMap[type][direction]) {
-//            frames.pushBack(SpriteFrame::create(framePath, Rect(0, 0, 16, 16)));  // 动画帧大小
-//        }
-//
-//        // 创建动画
-//        Animation* animation = Animation::createWithSpriteFrames(frames, 0.15f);  // 每帧0.1秒
-//
-//        if (currentAnimation) {
-//            sprite->stopAction(currentAnimation);  // 停止旧的动画
-//        }
-//
-//        // 使用RepeatForever确保动画不断重复播放（让动物边走边播放动画）
-//        currentAnimation = RepeatForever::create(Animate::create(animation));
-//        sprite->runAction(currentAnimation);  // 运行动画
-//    }
-//}
-//
-//void Animal::setRandomMovement(float deltaTime) {
-//    // 随机选择一个方向
-//    int direction = rand() % 4;  // 0 = up, 1 = down, 2 = left, 3 = right
-//    float step = 4.0f;  // 增大每次移动的步长，使得移动更明显
-//    int repeatCount = 1;  // 每次播放的动画重复次数（这可以根据需要调整）
-//
-//    // 创建动画的回调函数
-//    auto moveCallback = [this, direction, step, repeatCount](float dt) {
-//        Vec2 newPosition = position;  // 新的位置
-//
-//        // 根据方向更新位置
-//        switch (direction) {
-//        case 0:  // 向上
-//            newPosition.y += step;  // 每步向上移动一定距离
-//            playDirectionAnimation("up", repeatCount);  // 播放向上走的动画
-//            break;
-//        case 1:  // 向下
-//            newPosition.y -= step;  // 每步向下移动一定距离
-//            playDirectionAnimation("down", repeatCount);  // 播放向下走的动画
-//            break;
-//        case 2:  // 向左
-//            newPosition.x -= step;  // 每步向左移动一定距离
-//            playDirectionAnimation("left", repeatCount);  // 播放向左走的动画
-//            break;
-//        case 3:  // 向右
-//            newPosition.x += step;  // 每步向右移动一定距离
-//            playDirectionAnimation("right", repeatCount);  // 播放向右走的动画
-//            break;
-//        }
-//
-//        // 保证小动物在20x20正方形区域内
-//        newPosition.x = std::min(std::max(newPosition.x, origin.x), origin.x + areaSize);
-//        newPosition.y = std::min(std::max(newPosition.y, origin.y), origin.y + areaSize);
-//
-//        // 如果位置有改变，才更新位置和精灵
-//        if (newPosition != position) {
-//            position = newPosition;  // 更新位置
-//            sprite->setPosition(position);  // 更新精灵的位置
-//        }
-//        };
-//
-//    // 每次调用 setRandomMovement 时直接调用 Lambda
-//    moveCallback(deltaTime);  // 每次调用 setRandomMovement 时直接调用 Lambda
-//}
 void Animal::playDirectionAnimation(const std::string& direction, int step) {
+    // 确保指定方向存在于动画映射表中
     if (animationMap[type].find(direction) != animationMap[type].end()) {
-        // 加载对应方向的帧动画
-        Vector<SpriteFrame*> frames;
-        for (const auto& framePath : animationMap[type][direction]) {
-            frames.pushBack(SpriteFrame::create(framePath, Rect(0, 0, 16, 16)));  // 动画帧大小
-        }
+        // 获取当前步数对应的图片路径
+        const std::string& framePath = animationMap[type][direction][step];
 
-        // 创建动画，设置每帧时间为0.15秒
-        Animation* animation = Animation::createWithSpriteFrames(frames, 0.15f);
+        // 根据动物类型设置帧大小
+        Rect frameRect = (this->type == "chicken") ? Rect(0, 0, 16, 16) : Rect(0, 0, 32, 32);
 
-        if (currentAnimation) {
-            sprite->stopAction(currentAnimation);  // 停止旧的动画
-        }
-
-        // 每次播放新的动画，确保动画不断重复播放
-        currentAnimation = RepeatForever::create(Animate::create(animation));
-        sprite->runAction(currentAnimation);  // 运行动画
+        // 更新精灵的纹理
+        sprite->setTexture(framePath);
+        sprite->setTextureRect(frameRect);
     }
 }
 
 void Animal::setRandomMovement(float deltaTime) {
     // 随机选择一个方向
-    int direction = rand() % 4;  // 0 = up, 1 = down, 2 = left, 3 = right
-    float step = 4.0f;  // 每次移动的步长
-    int repeatCount = 1;  // 每次播放的动画重复次数（这可以根据需要调整）
+    int a;
+    if (this->type == "chicken") {
+         a = 8;
+    }
+    else if (this->type == "cow") {
+        a = 7;
+    }
+    else {
+        a = 3;
+    }
+    static int direction = (rand()+a) % 4;  // 0 = up, 1 = down, 2 = left, 3 = right
+    static int steps = 0;  // 记录走的步数
+    float stepSize = 2.0f;  // 每步移动的距离
 
-    // 定义一个步数计数器，每次走四步
-    int steps = 0;
+    // 时间控制变量
+    static float elapsedTime = 0.0f;  // 记录累计时间
+    elapsedTime += deltaTime;
 
-    // 创建动画的回调函数
-    auto moveCallback = [this, &direction, step, repeatCount, &steps](float dt) {
-        Vec2 newPosition = position;  // 新的位置
+    if (elapsedTime >= 0.0f) {  // 每 0.08 秒更新一次帧和移动
+        Vec2 newPosition = position;  // 新位置
 
-        // 根据方向更新位置并切换动画
+        // 根据方向更新位置和精灵图片
         switch (direction) {
         case 0:  // 向上
-            newPosition.y += step;  // 每步向上移动一定距离
-            playDirectionAnimation("up", steps % 4);  // 播放向上走的动画，步数不同播放不同帧
+            newPosition.y += stepSize;
+            playDirectionAnimation("up", steps % 4);  // 更新当前帧图片
             break;
         case 1:  // 向下
-            newPosition.y -= step;  // 每步向下移动一定距离
-            playDirectionAnimation("down", steps % 4);  // 播放向下走的动画
+            newPosition.y -= stepSize;
+            playDirectionAnimation("down", steps % 4);
             break;
         case 2:  // 向左
-            newPosition.x -= step;  // 每步向左移动一定距离
-            playDirectionAnimation("left", steps % 4);  // 播放向左走的动画
+            newPosition.x -= stepSize;
+            playDirectionAnimation("left", steps % 4);
             break;
         case 3:  // 向右
-            newPosition.x += step;  // 每步向右移动一定距离
-            playDirectionAnimation("right", steps % 4);  // 播放向右走的动画
+            newPosition.x += stepSize;
+            playDirectionAnimation("right", steps % 4);
             break;
         }
 
-        // 更新步数
+        // 更新步数和方向
         steps++;
-
-        // 如果走了四步，停止动画并选一个新的方向
-        if (steps >= 4) {
-            steps = 0;  // 步数重置为0
-            direction = rand() % 4;  // 重新随机选择一个方向
+        if (steps >= 8) {  // 走满4步后重新选择方向
+            steps = 0;
+            direction = rand() % 4;  // 随机选择新方向
         }
 
-        // 保证小动物在20x20正方形区域内
+        // 保证小动物在 20x20 正方形区域内
         newPosition.x = std::min(std::max(newPosition.x, origin.x), origin.x + areaSize);
         newPosition.y = std::min(std::max(newPosition.y, origin.y), origin.y + areaSize);
 
-        // 如果位置有改变，才更新位置和精灵
+        // 如果位置有改变，更新精灵的位置
         if (newPosition != position) {
-            position = newPosition;  // 更新位置
-            sprite->setPosition(position);  // 更新精灵的位置
+            position = newPosition;
+            sprite->setPosition(position);
         }
-        };
 
-    // 每次调用 setRandomMovement 时直接调用 Lambda
-    moveCallback(deltaTime);  // 每次调用 setRandomMovement 时直接调用 Lambda
+        elapsedTime = 0.0f;  // 重置时间
+    }
 }
-
 

@@ -48,9 +48,17 @@ bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition)
     // 在 path 层种植橡树，枫树，松树
     plantTreesOnPathLayer();
 
-    Vec2 startPosition(832, 368);  // 例如设置小动物的原点为 (100, 100)
-    Animal* chicken = Animal::create("chicken", startPosition);
+    Vec2 startPosition_1(416, 832);  // 例如设置小动物的原点为 (100, 100)
+    Animal* sheep = Animal::create("sheep", startPosition_1);
+    _tile_map->addChild(sheep);
+
+    Vec2 startPosition_2(480, 816);  // 例如设置小动物的原点为 (100, 100)
+    Animal* chicken = Animal::create("chicken", startPosition_2);
     _tile_map->addChild(chicken);
+
+    Vec2 startPosition_3(464, 800);  // 例如设置小动物的原点为 (100, 100)
+    Animal* cow = Animal::create("cow", startPosition_3);
+    _tile_map->addChild(cow);
 
     //if (!treeSprites.empty()) {
     //    // 假设你想砍掉第一个树精灵
