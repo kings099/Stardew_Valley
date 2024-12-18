@@ -255,21 +255,21 @@ void Crops::updateGrowth(float deltaTime) {
             }
         }
     }
-    //// 检查是否枯萎
-    //if (!isWatered) {
-    //    daysWithoutWater++;
-    //    if (daysWithoutWater >= 3) {
-    //        if (resourceMap.find("wilt") != resourceMap.end()) {
-    //            const auto& textures = resourceMap["wilt"];
-    //            if (!textures.empty()) {
-    //                sprite->setTexture(textures[0]);
-    //            }
-    //        }
-    //    }
-    //}
-    //else {
-    //    daysWithoutWater = 0;
-    //}
+    // 检查是否枯萎
+    if (!isWatered) {
+        daysWithoutWater++;
+        if (daysWithoutWater >= 3) {
+            if (resourceMap.find("wilt") != resourceMap.end()) {
+                const auto& textures = resourceMap["wilt"];
+                if (!textures.empty()) {
+                    sprite->setTexture(textures[0]);
+                }
+            }
+        }
+    }
+    else {
+        daysWithoutWater = 0;
+    }
     checkPests(); // 每次更新时检查病虫害
     isWatered = false; // 每次更新后重置浇水状态
 }
@@ -285,14 +285,14 @@ Season Crops::getSeason() {
 }
 
 void Crops::checkPests() {
-    //if (!hasPests && CCRANDOM_0_1() < pestProbability) { // 随机概率感染病虫害
-    //    hasPests = true;
-    //    CCLOG("Crop infected with pests!");
+    if (!hasPests && CCRANDOM_0_1() < pestProbability) { // 随机概率感染病虫害
+        hasPests = true;
+        CCLOG("Crop infected with pests!");
 
-    //    // 更改贴图显示病虫害状态（假设有特定图片）
-    //    sprite->setTexture("../Resources/Crops/pests.png");
-    //   
-    //}
+        // 更改贴图显示病虫害状态（假设有特定图片）
+        sprite->setTexture("../Resources/Crops/pests.png");
+       
+    }
 }
 void Crops::treatPests() {
     if (hasPests) {
