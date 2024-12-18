@@ -16,7 +16,8 @@ std::unordered_map<std::string, std::unordered_map<std::string, std::vector<std:
 
 Animal::Animal()
     : type("chicken"), affection(100.0f), isFed(false), lastFedTime(0.0f),
-    affectionDecayRate(1.0f), maxAffection(100.0f), sprite(nullptr), currentAnimation(nullptr), areaSize(40.0f) {
+    affectionDecayRate(1.0f), maxAffection(100.0f), sprite(nullptr), currentAnimation(nullptr),
+    areaSize(40.0f), angryIcon(nullptr) {  // 初始化怒气图标为 nullptr
 }
 
 Animal::~Animal() {
@@ -172,7 +173,11 @@ bool Animal::init(const std::string& type, const Vec2& startPosition) {
             }, 0.7f, "move_key");  // 每0.3秒更新一次
 
     }
-    return true;
+
+    schedule([this](float deltaTime) {
+        updateAffection(deltaTime);  // 更新好感度
+        }, 1.0f, "affection_key");  // 每1秒更新一次好感度
+
 }
 
 void Animal::feed() {
@@ -187,6 +192,11 @@ void Animal::updateAffection(float deltaTime) {
         lastFedTime += deltaTime;
         affection -= affectionDecayRate * deltaTime;  // 根据时间衰减好感度
         if (affection < 0) affection = 0;
+
+        // 如果好感度降为零，触发发怒函数
+        if (isAngry()) {
+            handleAngry();
+        }
     }
 }
 
@@ -197,9 +207,27 @@ bool Animal::isAngry() const {
 void Animal::handleAngry() {
     if (isAngry()) {
         CCLOG("%s is angry!", type.c_str());
-        // 这里可以添加动物发狂的动画或其他表现
+
+        // 如果已经有怒气图标，则不再重复添加
+        if (!angryIcon) {
+            // 创建怒气图标
+            angryIcon = Sprite::create("../Resources/Animals/emotes.png");
+            if (angryIcon) {
+                // 设置图标位置：相对于动物精灵的头顶
+                angryIcon->setPosition(Vec2(sprite->getContentSize().width / 2,
+                    sprite->getContentSize().height + 5));
+                angryIcon->setScale(0.8f); // 缩小图标尺寸（根据需要调整）
+
+                // 将图标添加为动物精灵的子节点
+                sprite->addChild(angryIcon, 1); // z-index = 1，确保在动物精灵上方显示
+            }
+            else {
+                CCLOG("Failed to load angry icon!");
+            }
+        }
     }
 }
+
 
 float Animal::getAffection() const {
     return affection;

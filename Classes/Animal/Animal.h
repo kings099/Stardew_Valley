@@ -17,9 +17,9 @@
 USING_NS_CC;
 
 class Animal : public Node {
-
     
 protected:
+    Sprite* angryIcon; // 怒气图标
     std::string type;   // 动物类型 (如：chicken、cow、sheep)
     float affection;    // 动物的好感度
     bool isFed;         // 是否喂养
