@@ -151,13 +151,14 @@
     <ClInclude Include="..\Classes\Box\Box.h">
       <Filter>Classes\Box</Filter>
     </ClInclude>
-
     <ClInclude Include="..\Classes\Layer\LoginLayer.h">
       <Filter>Classes\Layer</Filter>
- </ClInclude>
+    </ClInclude>
     <ClInclude Include="..\Classes\Animal\Fish.h">
       <Filter>Classes\Animal</Filter>
-
+    </ClInclude>
+    <ClInclude Include="..\Classes\Maps\TownMap.h">
+      <Filter>Classes\Maps</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -258,13 +259,14 @@
     <ClCompile Include="..\Classes\Box\Box.cpp">
       <Filter>Classes\Box</Filter>
     </ClCompile>
-
     <ClCompile Include="..\Classes\Layer\LoginLayer.cpp">
       <Filter>Classes\Layer</Filter>
-</ClCompile>
+    </ClCompile>
     <ClCompile Include="..\Classes\Animal\Fish.cpp">
       <Filter>Classes\Animal</Filter>
-
+    </ClCompile>
+    <ClCompile Include="..\Classes\Maps\TownMap.cpp">
+      <Filter>Classes\Maps</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
