@@ -11,7 +11,6 @@
 #define __CHARACTER_OBJECT_LIST_H__
 
 #include <vector>
-
 #include "cocos2d.h"
 #include "../proj.win32/Constant.h"
 
@@ -25,13 +24,16 @@ public:
 	void onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event);
 
 	// 捡起物品
-	bool pickUpObject(GameToolObject targetObject, int objectCount);
+	bool pickUpObject(GameToolObject targetObject, int objectCount, int targetIndex = INVAVID_NUM);
 
 	// 捡起物品
-	bool pickUpObject(GameSeedObject targetObject, int objectCount);
+	bool pickUpObject(GameSeedObject targetObject, int objectCount, int targetIndex = INVAVID_NUM);
 
 	// 捡起物品
-	bool pickUpObject(GameBaseObject targetObject, int objectCount);
+	bool pickUpObject(GameBaseObject targetObject, int objectCount, int targetIndex = INVAVID_NUM);
+
+	// 捡起物品
+	bool pickUpObject(GameCommonObject targetObject, int objectCount, int targetIndex = INVAVID_NUM);
 
 	// 丢弃当前选中的物品
 	ObjectListNode deleteCurrentObject();
@@ -44,6 +46,9 @@ public:
 
 	// 获取物品栏状态
 	bool getObjectListStatus();
+
+	// 获取箱子是否打开
+	bool getBoxStatus();
 
 	// 获取当前选中的物品索引
 	int getCurrentObjectIndex();
@@ -62,18 +67,17 @@ public:
 
 	// 加载数据
 	bool loadData(const std::string& fileName);
+
+	// 回调
+	void setPickUpCallback(std::function<void(bool)> callback);
 private:
 	std::vector<ObjectListNode> _objectList;	// 物品栏列表
 	int _maxObjectKindCount;					// 物品栏最大物品种类容量
 	int _currentObjectIndex;					// 当前选中的物品索引
 	bool _openObjectList;						// 是否打开物品栏
-
-	// 初始化物品栏
-	void initObjectList();
+	bool _openBox;								// 是否打开箱子
+	std::function<void(bool)> _pickUpCallback;  // 用于保存回调
 	
-	// 捡起物品
-	bool pickUpObject(GameCommonObject targetObject, int objectCount,int targetIndex = INVAVID_NUM);
-
 	// 查找物品栏中是否有指定物品
 	int findObject(GameCommonObject targetObject);
 
