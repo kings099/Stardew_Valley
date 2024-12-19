@@ -151,9 +151,6 @@
     <ClInclude Include="..\Classes\Box\Box.h">
       <Filter>Classes\Box</Filter>
     </ClInclude>
-    <ClInclude Include="TownMap.h">
-      <Filter>Classes\Maps</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\CursorAndBUutton\HoverCursor.cpp" />
@@ -252,9 +249,6 @@
     </ClCompile>
     <ClCompile Include="..\Classes\Box\Box.cpp">
       <Filter>Classes\Box</Filter>
-    </ClCompile>
-    <ClCompile Include="TownMap.cpp">
-      <Filter>Classes\Maps</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
