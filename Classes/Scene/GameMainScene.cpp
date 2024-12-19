@@ -35,17 +35,19 @@ bool GameMainScene::init()
     this->addChild(treeLayer, 2); // 树木层级比角色高
     treeLayer->setName("treeLayer");
 
-
+    auto Maplayer = Node::create();
+    this->addChild(Maplayer, 0); // 树木层级比角色高
+    Maplayer->setName("Maplayer");
     // 加载农场地图
     _farmMap = FarmMap::create("../Resources/Maps/Farm/Farm_Combat.tmx", treeLayer);
-    this->addChild(_farmMap, 0); 
+    Maplayer->addChild(_farmMap, 0);
 
     // 加载角色
     _character = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png");
     this->addChild(_character, 1);
    
     // 初始化视角控制器
-    _viewController = new GameViewController(_character, _farmMap);
+    _viewController = GameViewController::create(_character, _farmMap);
     this->addChild(_viewController, 2);
 
     // 初始化交互管理器
@@ -98,15 +100,16 @@ bool GameMainScene::init()
     _eventDispatcher->addEventListenerWithSceneGraphPriority(mouselistener, this);
 
     // 设置更新回调，定时调用检查地图切换逻辑是否触发
-    this->schedule([this, mapSwitchManager,treeLayer](float deltaTime) {
+    this->schedule([this, mapSwitchManager,treeLayer,Maplayer](float deltaTime) {
         Vec2 characterWorldPos = _character->getPosition();
-        std::string targetMapFile;
         Vec2 TargetPos;
+        std::string targetMapFile;
         _interaction->updateSurroundingTiles(characterWorldPos);
         // 检测传送点
         if (_interaction->checkTeleport(characterWorldPos, targetMapFile)) {
             CCLOG("Teleport triggered to map: %s", targetMapFile.c_str());
-            mapSwitchManager->switchMap(targetMapFile, TargetPos,treeLayer);
+            mapSwitchManager->switchMap(targetMapFile, TargetPos, treeLayer, Maplayer);
+            CCLOG("TargetPosition :%f ,%f ", TargetPos.x, TargetPos.y);
             _character->setPosition(TargetPos);
         }
         _character->updateTileInfo(_interaction);
