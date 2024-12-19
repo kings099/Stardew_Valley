@@ -19,13 +19,16 @@
 class Box : public cocos2d::Node {
 public:
 	// 获取单例
-	static Box& getInstace();
+	static Box& getInstance();
 	
 	// 获取箱子
 	BoxNode& getBoxList();
 
+	// 获取箱子数量
+	int getBoxCount();
+
 	// 添加单个箱子
-	void addBox(const BoxNode& boxNode);
+	bool addBox(const BoxNode& boxNode);
 
 	// 移除单个箱子
 	void removeBox();
@@ -45,7 +48,11 @@ public:
 	// 查找指定位置是否有物品
 	ObjectListNode findObjectAtPosition(int objectIndex);
 
-	
+	// 保存数据
+	bool saveData(const std::string& fileName);
+
+	// 加载数据
+	bool loadData(const std::string& fileName);
 private:
 	Character* _character;					// 角色指针
 	std::vector<BoxNode> _boxObjectList;	// 箱子里的物品列表

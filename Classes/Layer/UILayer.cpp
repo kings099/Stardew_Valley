@@ -42,9 +42,9 @@ UILayer::UILayer() :
     std::fill_n(_boxObjectSpriteImage, OBJECT_LIST_COLS, ObjectImageInfo());
     std::fill_n(_selectObjectSpriteMarker, OBJECT_LIST_COLS, nullptr);
     std::fill_n(_skillLevelLayer, SKILL_KIND_NUM * SKILL_LEVEL_NUM, nullptr);
-    Box::getInstace().addBox(BoxNode(Vec2(_visibleSize.width / 2  , _visibleSize.height/2 )));
-    Box::getInstace().addBox(BoxNode(Vec2(_visibleSize.width / 2 + 100, _visibleSize.height / 2)));
-    Box::getInstace().addBox(BoxNode(Vec2(_visibleSize.width / 2 , _visibleSize.height / 2 + 100)));
+    Box::getInstance().addBox(BoxNode(Vec2(_visibleSize.width / 2  , _visibleSize.height/2 )));
+    Box::getInstance().addBox(BoxNode(Vec2(_visibleSize.width / 2 + 100, _visibleSize.height / 2)));
+    Box::getInstance().addBox(BoxNode(Vec2(_visibleSize.width / 2 , _visibleSize.height / 2 + 100)));
     // 鼠标事件监听器
     auto mouseListener = cocos2d::EventListenerMouse::create();
     mouseListener->onMouseDown = CC_CALLBACK_1(UILayer::onMouseDown, this);
@@ -173,7 +173,7 @@ void UILayer::updateObjectList() {
     else {
         _closedObjectListLayer->setVisible(false);
         _openedObjectListLayer->setVisible(true);
-        if (_boxObjectListStatus) {
+        if (_boxObjectListStatus && Box::getInstance().getBoxCount() != 0) {
             _boxObjectListLayer->setVisible(true);
         }
         _deleteObjectButton->setVisible(true);
@@ -250,9 +250,9 @@ void UILayer::showObjectImage() {
             if (_closedObjectSpriteImage[i].sprite != nullptr)
                 setObjectImageVisible(_closedObjectSpriteImage[i], false);
         }
-        if (_boxObjectListStatus) {
+        if (_boxObjectListStatus && Box::getInstance().getBoxCount() != 0) {
             for (int i = 0; i < OBJECT_LIST_COLS; i++) {
-                const auto boxObjectInfo = Box::getInstace().findObjectAtPosition(i);
+                const auto boxObjectInfo = Box::getInstance().findObjectAtPosition(i);
                 if (boxObjectInfo.count != 0) {
                     const auto objectSpriteFilename = boxObjectInfo.objectNode.object->_fileName;
                     const int objectCount = boxObjectInfo.count;
@@ -300,7 +300,7 @@ void UILayer::onMouseDown(cocos2d::Event* event) {
             }
         }
 
-        if (_boxObjectListStatus) {
+        if (_boxObjectListStatus && Box::getInstance().getBoxCount() != 0) {
             for (int i = 0; i < OBJECT_LIST_COLS; i++) {
                 const auto sprite = _boxObjectSpriteImage[i].sprite;
                 if (sprite != nullptr) {
@@ -405,14 +405,14 @@ void UILayer::onMouseUp(cocos2d::Event* event) {
                     _openedObjectSpriteImage[_startLocation.position] = { nullptr,nullptr };
 
                 }
-                else if (_startLocation.status == OpenedBoxList && _boxObjectListStatus == true) {
+                else if (_startLocation.status == OpenedBoxList && _boxObjectListStatus == true && Box::getInstance().getBoxCount() != 0) {
                     currentObjectImage = _boxObjectSpriteImage[_startLocation.position];
                     _boxObjectSpriteImage[_startLocation.position] = { nullptr,nullptr };
                 }
                 if (targetLocation.status == OpenedObjectList) {
                     _openedObjectSpriteImage[targetLocation.position] = currentObjectImage;
                 }
-                else if(targetLocation.status == OpenedBoxList && _boxObjectListStatus == true){
+                else if(targetLocation.status == OpenedBoxList && _boxObjectListStatus == true && Box::getInstance().getBoxCount() != 0){
                     _boxObjectSpriteImage[targetLocation.position] = currentObjectImage;
                 }
 
@@ -420,15 +420,14 @@ void UILayer::onMouseUp(cocos2d::Event* event) {
                 if (_startLocation.status == OpenedObjectList && targetLocation.status == OpenedObjectList) {// 背包->背包
                     _character->swapObject(_startLocation.position, targetLocation.position);
                 }
-                else if (_startLocation.status == OpenedBoxList && targetLocation.status == OpenedBoxList && _boxObjectListStatus == true) { // 箱子->箱子
-                    Box::getInstace().swapObject(_startLocation.position, targetLocation.position);
+                else if (_startLocation.status == OpenedBoxList && targetLocation.status == OpenedBoxList && _boxObjectListStatus == true && Box::getInstance().getBoxCount() != 0) { // 箱子->箱子
+                    Box::getInstance().swapObject(_startLocation.position, targetLocation.position);
                 }
-                else if (_startLocation.status == OpenedObjectList && targetLocation.status == OpenedBoxList && _boxObjectListStatus == true) { // 背包->箱子
-                
-                    Box::getInstace().storeObject(_startLocation.position, targetLocation.position);
+                else if (_startLocation.status == OpenedObjectList && targetLocation.status == OpenedBoxList && _boxObjectListStatus == true && Box::getInstance().getBoxCount() != 0) { // 背包->箱子
+                    Box::getInstance().storeObject(_startLocation.position, targetLocation.position);
                 }
-                else if (_startLocation.status == OpenedBoxList && targetLocation.status == OpenedObjectList && _boxObjectListStatus == true) { // 箱子->背包
-                    Box::getInstace().getSelectedObject(_startLocation.position, targetLocation.position);
+                else if (_startLocation.status == OpenedBoxList && targetLocation.status == OpenedObjectList && _boxObjectListStatus == true && Box::getInstance().getBoxCount() != 0) { // 箱子->背包
+                    Box::getInstance().getSelectedObject(_startLocation.position, targetLocation.position);
                 }
 
                 // 移动物品图片
@@ -584,15 +583,20 @@ Vec2 UILayer::findNearestPoint(cocos2d::Sprite* objectSprite) {
             const Location currentLocation = point.first;
 
             bool isEmpty = true;
-            ObjectListNode objectInfo;
+            ObjectListNode objectInfo = { GameCommonObject() ,0 ,Unselected};
             if (currentLocation.status == ClosedObjectList) {
                 continue;
             }
             else if (currentLocation.status == OpenedObjectList) {
                  objectInfo = _character->findObjectAtPosition(currentLocation.position);
             }
-            else if (currentLocation.status == OpenedBoxList && _boxObjectListStatus == true) {
-                 objectInfo = Box::getInstace().findObjectAtPosition(currentLocation.position);
+            else if (currentLocation.status == OpenedBoxList && _boxObjectListStatus == true ) {
+                if (Box::getInstance().getBoxCount() != 0) {
+                    objectInfo = Box::getInstance().findObjectAtPosition(currentLocation.position);
+                }
+                else {
+                    continue;
+                }
             }
 
             if (currentLocation.status == OpenedObjectList) {
@@ -600,7 +604,7 @@ Vec2 UILayer::findNearestPoint(cocos2d::Sprite* objectSprite) {
                     isEmpty = false;
                 }
             }
-            else if (currentLocation.status == OpenedBoxList&& _boxObjectListStatus == true) {
+            else if (currentLocation.status == OpenedBoxList&& _boxObjectListStatus == true && Box::getInstance().getBoxCount() != 0) {
                 if (objectInfo.count != 0) {
                     isEmpty = false;
                 }

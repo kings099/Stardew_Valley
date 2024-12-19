@@ -37,7 +37,7 @@ bool GameMainScene::init()
     // 加载角色
     _character = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png");
     this->addChild(_character, 1);
-   
+  
     // 初始化视角控制器
     _viewController = new GameViewController(_character, _farmMap);
     this->addChild(_viewController, 2);
@@ -128,5 +128,6 @@ void GameMainScene::menuCloseCallback(Ref* pSender)
 {
     // 退出游戏
     _character->saveData();
+    Box::getInstance().saveData("../GameData/BoxObjectListData.dat");
     Director::getInstance()->end();
 }

@@ -164,6 +164,13 @@ enum ObjectListNodeStatus {
     Selected		// 选中
 };
 
+// 位置状态定义
+enum LocationStatus {
+    ClosedObjectList,		// 物品栏关闭
+    OpenedObjectList,			// 物品栏打开
+    OpenedBoxList			// 箱子列表打开
+};
+
 // 瓦片信息
 enum TileType {
     Grass,      // 草
@@ -174,14 +181,9 @@ enum TileType {
     Soiled,     // 已耕种土地
     Crop,       // 作物
     Door,       // 门
+   // Box,        // 箱子
+    Npc,        // NPC
     Other
-};
-
-// 位置状态定义
-enum LocationStatus {
-    ClosedObjectList,		// 物品栏关闭
-    OpenedObjectList,			// 物品栏打开
-    OpenedBoxList			// 箱子列表打开
 };
 
 // 角色动作定义
@@ -200,6 +202,7 @@ enum GameCharacterAction {
     Placement,			// 放置
     Transition,			// 转换场景
     OpenBox,			// 打开箱子
+    DestoryObject,		// 破坏物品
 };
 
 // 单个瓦片坐标信息定义
@@ -251,32 +254,35 @@ struct ObjectImageInfo {
 // 角色动作和地图类型对应关系
 const std::map< GameCharacterAction, TileType> ACTION_TO_TILEMAP = {
     { NoneAction, Other },
-    { Plowing, Soil },
-    { Watering, Soiled },
-    { Fertilize, Soiled },
-    { GetWater, Water },
-    { Weeding, Grass },
-    { Cutting, Tree },
-    { Mining, Stone },
-    { Fishing, Water },
-    { Harvesting, Crop },
-    { Placement, Other },
-    {Transition, Door}
+    { Plowing, Soil },          // 左键
+    { Watering, Soiled },       // 左键
+    { Fertilize, Soiled },      // 左键
+    { GetWater, Water },        // 右键
+    { Weeding, Grass },         // 左键
+    { Cutting, Tree },          // 左键
+    { Mining, Stone },          // 左键
+    { Fishing, Water },         // 左键
+    { Harvesting, Crop },       // 右键
+    { Placement, Soil },        // 右键
+    { Transition, Door},        // 右键
+  //  { OpenBox, Box},
+    { DestoryObject, Other}     // 左键
 };
-
 
 // 游戏物品共有属性定义
 class GameObject {
 public:
     int _index;                  // 物品索引
     std::string _fileName;       // 物品图片资源文件路径
-    std::string _name;           // 物品名称
+    std::string _name;           // 物品名称(英文）
+    std::string _nameCN;         // 物品名称(中文)
     GameObjectSkillType _type;   // 物品类型
 
     GameObject() = default;
-    GameObject(const int index, const std::string& fileName, const std::string& name, GameObjectSkillType type) :
+    GameObject(const int index, const std::string& fileName, const std::string& name,const std::string& nameCN, GameObjectSkillType type) :
         _index(index),
         _fileName(fileName),
+        _nameCN(nameCN),
         _name(name),
         _type(type) {
     }
@@ -289,18 +295,22 @@ public:
 // 游戏工具物品属性定义
 class GameToolObject : public GameObject {
 public:
-    int _level;                 // 工具等级
-    int _actionCost;            // 执行一次操作需要的次数
-    int _durability;            // 工具耐久度
-    GameCharacterAction _action; // 工具当前执行的动作
+    int _level;                                     // 工具等级
+    int _actionCost;                                // 执行一次操作需要的次数
+    int _durability;                                // 工具耐久度
+    GameCharacterAction _action;                    // 工具当前执行的动作
+    bool _isUpgradable ;                            // 是否可以升级
+    std::map<std::string, int> _ingredients;	    // 升级工具的原料
 
     // 构造函数
-    GameToolObject(const int index, const std::string& fileName, const std::string& name, GameObjectSkillType type, int level, int actionCost, int durability, GameCharacterAction action) :
-        GameObject(index,fileName, name, type),
+    GameToolObject(const int index, const std::string& fileName, const std::string& name,const std::string& nameCN, GameObjectSkillType type, int level, int actionCost, int durability, GameCharacterAction action, bool isUpgradable, std::map<std::string, int> ingredients) :
+        GameObject(index,fileName, name, nameCN,type),
         _level(level),
         _actionCost(actionCost),
         _durability(durability),
-        _action(action)
+        _action(action),
+        _isUpgradable(isUpgradable),
+        _ingredients(ingredients)
     {
     }
 };
@@ -315,8 +325,8 @@ public:
     int _salePrice;                         // 种子出售价格
 
     // 构造函数
-    GameSeedObject(const int index, const std::string& fileName, const std::string& name, GameObjectSkillType type, int level, Season season,  int harvestIndex, int buyPrice, int salePrice) :
-        GameObject(index,fileName, name, type),
+    GameSeedObject(const int index, const std::string& fileName, const std::string& name, const std::string& nameCN, GameObjectSkillType type, int level, Season season,  int harvestIndex, int buyPrice, int salePrice) :
+        GameObject(index,fileName, name,nameCN, type),
         _level(level),
         _season(season),
         _harvestIndex(harvestIndex),
@@ -339,10 +349,10 @@ public:
     int _eatEnergy;                             // 食用恢复的能量值
     bool _place;                                // 能否放置
     bool _synthesis;                            // 是否可以合成
-    std::map<int, int> _ingredients;	// 合成物品的原料
+    std::map<std::string, int> _ingredients;	        // 合成物品的原料
     // 构造函数
-    GameBaseObject(const int index, const std::string& fileName, const std::string& name, GameObjectSkillType type, int maxStorage, int level, bool sale, int salePrice, bool buy, int buyPrice, bool eat, int eatEnergy, bool place, bool synthesis, std::map<int, int> ingredients = {}) :
-        GameObject(index, fileName, name, type),
+    GameBaseObject(const int index, const std::string& fileName, const std::string& name, const std::string& nameCN, GameObjectSkillType type, int maxStorage, int level, bool sale, int salePrice, bool buy, int buyPrice, bool eat, int eatEnergy, bool place, bool synthesis, std::map<std::string, int> ingredients = {}) :
+        GameObject(index, fileName, name,nameCN, type),
         _maxStorage(maxStorage),
         _level(level),
         _sale(sale),
@@ -360,34 +370,34 @@ public:
 
 // 游戏工具类物品属性参数定义
 const std::vector<GameToolObject> GAME_TOOL_OBJECTS_ATTRS = {
-    GameToolObject(1,"../Resources/Objects/Tools/BeginnerHoe.png", "初级锄头", Farm, 1, 1, INT_MAX, Plowing),
-    GameToolObject(2,"../Resources/Objects/Tools/IntermediateHoe.png", "中级锄头", Farm, 2, 1, INT_MAX, Plowing),
-    GameToolObject(3,"../Resources/Objects/Tools/AdvancedHoe.png", "高级锄头", Farm, 3, 1, INT_MAX, Plowing),
-    GameToolObject(4,"../Resources/Objects/Tools/BeginnerAxe.png", "初级斧头", Collect, 1, 5, INT_MAX, Cutting),
-    GameToolObject(5,"../Resources/Objects/Tools/IntermediateAxe.png", "中级斧头", Collect, 2, 4, INT_MAX, Cutting),
-    GameToolObject(6,"../Resources/Objects/Tools/AdvancedAxe.png", "高级斧头", Collect, 3, 3, INT_MAX, Cutting),
-    GameToolObject(7,"../Resources/Objects/Tools/BeginnerPickaxe.png", "初级镐子", Mine, 1, 5, INT_MAX, Mining),
-    GameToolObject(8,"../Resources/Objects/Tools/IntermediatePickaxe.png", "中级镐子", Mine, 2, 4, INT_MAX, Mining),
-    GameToolObject(9,"../Resources/Objects/Tools/AdvancedPickaxe.png", "高级镐子", Mine, 3, 3, INT_MAX, Mining),
-    GameToolObject(10,"../Resources/Objects/Tools/BeginnerFishingRods.png", "初级鱼竿", Fish, 1, 1, INT_MAX, Fishing),
-    GameToolObject(11,"../Resources/Objects/Tools/IntermediateFishingRods.png", "中级鱼竿", Fish, 2, 1, INT_MAX, Fishing),
-    GameToolObject(12,"../Resources/Objects/Tools/AdvancedFishingRods.png", "高级鱼竿", Fish, 3, 1, INT_MAX, Fishing),
-    GameToolObject(13,"../Resources/Objects/Tools/BeginnerKattle.png", "初级水壶", Farm, 1, 1, 40, Watering),
-    GameToolObject(14,"../Resources/Objects/Tools/IntermediateKattle.png", "中级水壶", Farm, 2, 1, 55, Watering),
-    GameToolObject(15,"../Resources/Objects/Tools/AdvancedKattle.png", "高级水壶", Farm, 3, 1, 70, Watering),
-    GameToolObject(16,"../Resources/Objects/Tools/scythe.png","镰刀",Collect,1,1,INT_MAX,Weeding)
+    GameToolObject(1,"../Resources/Objects/Tools/BeginnerHoe.png","BeginnerHoe", "初级锄头", Farm, 1, 1, INT_MAX, Plowing,false,{}),
+    GameToolObject(2,"../Resources/Objects/Tools/IntermediateHoe.png","IntermediateHoe", "中级锄头", Farm, 2, 1, INT_MAX, Plowing,true,{{"BeginnerHoe",1}, {"Copper",3}}),
+    GameToolObject(3,"../Resources/Objects/Tools/AdvancedHoe.png","AdvancedHoe" ,"高级锄头", Farm, 3, 1, INT_MAX, Plowing,true,{{"IntermediateHoe",1}, {"Iron",3}}),
+    GameToolObject(4,"../Resources/Objects/Tools/BeginnerAxe.png","BeginnerAxe","初级斧头", Collect, 1, 5, INT_MAX, Cutting,false,{}),
+    GameToolObject(5,"../Resources/Objects/Tools/IntermediateAxe.png","IntermediateAxe","中级斧头", Collect, 2, 4, INT_MAX, Cutting,true,{{"BeginnerAxe",1}, {"Copper",3}}),
+    GameToolObject(6,"../Resources/Objects/Tools/AdvancedAxe.png","AdvancedAxe", "高级斧头", Collect, 3, 3, INT_MAX, Cutting,true,{{"IntermediateAxe",1}, {"Iron",3}}),
+    GameToolObject(7,"../Resources/Objects/Tools/BeginnerPickaxe.png","BeginnerPickaxe","初级镐子", Mine, 1, 5, INT_MAX, Mining,false,{}),
+    GameToolObject(8,"../Resources/Objects/Tools/IntermediatePickaxe.png","IntermediatePickaxe", "中级镐子", Mine, 2, 4, INT_MAX, Mining,true,{{"BeginnerPickaxe",1}, {"Copper",3}}),
+    GameToolObject(9,"../Resources/Objects/Tools/AdvancedPickaxe.png","AdvancedPickaxe", "高级镐子", Mine, 3, 3, INT_MAX, Mining,true,{{"IntermediatePickaxe",1}, {"Iron",3}}),
+    GameToolObject(10,"../Resources/Objects/Tools/BeginnerFishingRods.png","BeginnerFishingRods", "初级鱼竿", Fish, 1, 1, INT_MAX, Fishing,false,{}),
+    GameToolObject(11,"../Resources/Objects/Tools/IntermediateFishingRods.png", "IntermediateFishingRods","中级鱼竿", Fish, 2, 1, INT_MAX, Fishing,true,{{"BeginnerFishingRods",1}, {"Copper",3}}),
+    GameToolObject(12,"../Resources/Objects/Tools/AdvancedFishingRods.png","AdvancedFishingRods", "高级鱼竿", Fish, 3, 1, INT_MAX, Fishing,true,{{"IntermediateFishingRods",1}, {"Iron",3}}),
+    GameToolObject(13,"../Resources/Objects/Tools/BeginnerKattle.png","BeginnerKattle", "初级水壶", Farm, 1, 1, 40, Watering,false,{}),
+    GameToolObject(14,"../Resources/Objects/Tools/IntermediateKattle.png","IntermediateKattle", "中级水壶", Farm, 2, 1, 55, Watering,true,{{"BeginnerKattle",1}, {"Copper",3}}),
+    GameToolObject(15,"../Resources/Objects/Tools/AdvancedKattle.png","AdvancedKattle", "高级水壶", Farm, 3, 1, 70, Watering,true,{{"IntermediateKattle",1}, {"Iron",3}}),
+    GameToolObject(16,"../Resources/Objects/Tools/scythe.png","scythe","镰刀",Collect,1,1,INT_MAX,Weeding,false,{})
 };
 
 // 游戏种子类物品属性参数定义
 const std::vector<GameSeedObject> GAME_SEED_OBJECTS_ATTRS = {
-     GameSeedObject(17,"../Resources/Crops/Cauliflower/cauliflower_0.png","cauliflower_seed",Farm,1,Spring,20,80,175),//花椰菜种子
-     GameSeedObject(18,"../Resources/Crops/Kale/kale_0.png","kale_seed",Farm,1,Spring,21,60,90),//甘蓝菜种子
-     GameSeedObject(19, "../Resources/Crops/Pumpkin/pumpkin_0.png","pumpkin_seed",Farm,3,Fall,22,100,160)//南瓜种子
+     GameSeedObject(17,"../Resources/Crops/Cauliflower/cauliflower_0.png","cauliflowerSeed","花椰菜种子",Farm,1,Spring,20,80,175),//花椰菜种子
+     GameSeedObject(18,"../Resources/Crops/Kale/kale_0.png","kaleSeed","甘蓝菜种子",Farm,1,Spring,21,60,90),//甘蓝菜种子
+     GameSeedObject(19, "../Resources/Crops/Pumpkin/pumpkin_0.png","pumpkinSeed","南瓜种子",Farm,3,Fall,22,100,160)//南瓜种子
 };
 
 // 游戏基础类物品属性参数定义
 const std::vector<GameBaseObject> GAME_BASE_OBJECTS_ATTRS = {
-     GameBaseObject(20, "../Resources/Crops/Cauliflower/cauliflower_4.png", "cauliflower", Farm,//花椰菜
+     GameBaseObject(20, "../Resources/Crops/Cauliflower/cauliflower_4.png", "cauliflower","花椰菜", Farm,//花椰菜
         500, // 最大存储量
         1,   // 解锁所需等级
         true, // 是否能出售
@@ -400,7 +410,7 @@ const std::vector<GameBaseObject> GAME_BASE_OBJECTS_ATTRS = {
         false, // 是否可以合成
         {}    // 合成物品的原料
     ),
-    GameBaseObject(21, "../Resources/Crops/Kale/kale_4.png", "kale", Farm,//甘蓝菜
+    GameBaseObject(21, "../Resources/Crops/Kale/kale_4.png", "kale", "甘蓝菜",Farm,//甘蓝菜
         400, // 最大存储量
         1,   // 解锁所需等级
         true, // 是否能出售
@@ -413,7 +423,7 @@ const std::vector<GameBaseObject> GAME_BASE_OBJECTS_ATTRS = {
         false, // 是否可以合成
         {}    // 合成物品的原料
     ),
-    GameBaseObject(22, "../Resources/Crops/Pumpkin/pumpkin_5.png", "pumpkin", Farm,//南瓜
+    GameBaseObject(22, "../Resources/Crops/Pumpkin/pumpkin_5.png", "pumpkin","南瓜" ,Farm,//南瓜
         600, // 最大存储量
         3,   // 解锁所需等级
         true, // 是否能出售
@@ -424,14 +434,14 @@ const std::vector<GameBaseObject> GAME_BASE_OBJECTS_ATTRS = {
         25,   // 食用恢复的能量值
         false, // 能否放置
         true,  // 是否可以合成
-        {{19, 3}, {29, 1}} // 合成物品的原料
+        {{"pumpkin_seed", 3}, {"", 1}} // 合成物品的原料
     ),
-    GameBaseObject(23,"../Resources/Objects/Base/Timber.png","木材",Collect,99,0,true,3,false,INVAVID_NUM,false,INVAVID_NUM,false,false),
-    GameBaseObject(24,"../Resources/Objects/Base/Stone.png","石头",Mine,99,0,true,5,false,INVAVID_NUM,false,INVAVID_NUM,false,false),
-    GameBaseObject(25,"../Resources/Objects/Base/CopperParticle.png","铜粒",Mine,99,0,true,12,false,INVAVID_NUM,false,INVAVID_NUM,false,false),
-    GameBaseObject(26,"../Resources/Objects/Base/IronParticle.png","铁粒",Mine,99,2,true,25,false,INVAVID_NUM,false,INVAVID_NUM,false,false),
-    GameBaseObject(27,"../Resources/Objects/Base/Copper.png","铜锭",Mine,99,0,true,120,false,INVAVID_NUM,false,INVAVID_NUM,false,true,std::map<int, int>{{25,10}}),
-    GameBaseObject(28,"../Resources/Objects/Base/Iron.png","铁锭",Mine,99,0,true,250,false,INVAVID_NUM,false,INVAVID_NUM,false,true,std::map<int, int>{{26,10}})
+    GameBaseObject(23,"../Resources/Objects/Base/Timber.png","Timber", "木材",Collect,99,0,true,3,false,INVAVID_NUM,false,INVAVID_NUM,false,false),
+    GameBaseObject(24,"../Resources/Objects/Base/Stone.png","Stone","石头",Mine,99,0,true,5,false,INVAVID_NUM,false,INVAVID_NUM,false,false),
+    GameBaseObject(25,"../Resources/Objects/Base/CopperParticle.png","CopperParticle","铜粒",Mine,99,0,true,12,false,INVAVID_NUM,false,INVAVID_NUM,false,false),
+    GameBaseObject(26,"../Resources/Objects/Base/IronParticle.png","IronParticle","铁粒",Mine,99,2,true,25,false,INVAVID_NUM,false,INVAVID_NUM,false,false),
+    GameBaseObject(27,"../Resources/Objects/Base/Copper.png","Copper","铜锭",Mine,99,0,true,120,false,INVAVID_NUM,false,INVAVID_NUM,false,true,{{"CopperParticle",10}}),
+    GameBaseObject(28,"../Resources/Objects/Base/Iron.png","Iron","铁锭",Mine,99,0,true,250,false,INVAVID_NUM,false,INVAVID_NUM,false,true,{{"IronParticle",10}})
 };
 
 // 游戏物品属性定义
@@ -516,7 +526,7 @@ struct BoxNode {
     std::vector<ObjectListNode> _boxObjectList;	// 箱子里的物品列表
     int _maxObjectKindCount;						// 箱子最大容量
     cocos2d::Vec2 _worldPosition;					// 箱子坐标
-    cocos2d::Vec2 _tilePosition;					// 箱子瓦片坐标、
+
 
     // 构造函数
     BoxNode() :

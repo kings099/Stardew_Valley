@@ -32,7 +32,12 @@ void CharacterAction::onMouseDown(cocos2d::Event* event, GameCharacterAction& ga
 	const EventMouse* mouseEvent = dynamic_cast<EventMouse*>(event);
 	stopMove();
 	if (!getObjectListStatus()) {
-		gameCharacterAction = checkActionIsValid(targetTilePos);
+		if (mouseEvent->getMouseButton() == EventMouse::MouseButton::BUTTON_LEFT) {
+			gameCharacterAction = checkLeftButtonActionIsValid(targetTilePos);
+		}
+		else if (mouseEvent->getMouseButton() == EventMouse::MouseButton::BUTTON_RIGHT) {
+
+		}
 		if (gameCharacterAction != NoneAction) {
 			updateSkillExprience(gameCharacterAction);
 			updateSkillLevel();
@@ -40,11 +45,10 @@ void CharacterAction::onMouseDown(cocos2d::Event* event, GameCharacterAction& ga
 	}
 }
 
-// 获取角色打算执行的动作
-GameCharacterAction CharacterAction::getAction() {
+// 获取角色打算执行的动作(鼠标左键)
+GameCharacterAction CharacterAction::getLeftButtonAction() {
 	ObjectListNode currentObject = getCurrentObject();
 	switch (currentObject.objectNode.type) {
-		//左键动作
 	case None:
 		return NoneAction;
 	case Tool: {
@@ -59,9 +63,9 @@ GameCharacterAction CharacterAction::getAction() {
 	}
 }
 
-// 判断角色是否可以执行动作
-GameCharacterAction CharacterAction::checkActionIsValid(Vec2 & targetTilePos) {
-	const GameCharacterAction action = getAction();
+// 判断角色是否可以执行动作(鼠标左键)
+GameCharacterAction CharacterAction::checkLeftButtonActionIsValid(Vec2 & targetTilePos) {
+	const GameCharacterAction action = getLeftButtonAction();
 	
 	if (action == NoneAction)
 		return NoneAction;
@@ -91,6 +95,23 @@ GameCharacterAction CharacterAction::checkActionIsValid(Vec2 & targetTilePos) {
 		}
 	}
 	return NoneAction;
+}
+
+// 获取角色打算执行的动作(鼠标右键)
+GameCharacterAction  CharacterAction::getRightButtonAction() {
+	return NoneAction;
+}
+
+// 判断角色是否可以执行动作(鼠标右键)
+GameCharacterAction  CharacterAction::checkRightButtonActionIsValid(cocos2d::Vec2& targetTilePos) {
+	return NoneAction;
+}
+
+// 获取角色动作对象的瓦片信息
+TileInfo CharacterAction::getTileInfo(GameCharacterAction action) {
+	TileInfo targetTileNode;
+
+	return targetTileNode;
 }
 
 // 更新技能等级

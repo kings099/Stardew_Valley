@@ -9,14 +9,14 @@
 #include "HelloWorldScene.h"
 #include "SimpleAudioEngine.h"
 #include "ui/CocosGUI.h"
-#include "../Classes/Maps/FarmMap.h"
-#include "../Classes/Control/GameViewController.h"
-#include "../Classes/Character/CharacterInfo.h"
-#include "../Classes/MenuImage/HoverMenuItemImage.h"
+#include "Classes/Maps/FarmMap.h"
+#include "Classes/Control/GameViewController.h"
+#include "Classes/Character/CharacterInfo.h"
+#include "Classes/MenuImage/HoverMenuItemImage.h"
+#include "Classes/Control/NpcManager.h"  // 引入 NpcManager
+#include "Classes/Control/NpcInteractionManager.h"  // 引入 NpcInteractionManager
+#include "Classes/Layer/AudioControlUI.h"
 #include "GameMainScene.h"
-#include "Control/NpcManager.h"  // 引入 NpcManager
-#include "Control/NpcInteractionManager.h"  // 引入 NpcInteractionManager
-#include "Layer/AudioControlUI.h"
 
 using namespace cocos2d::experimental;
 USING_NS_CC;

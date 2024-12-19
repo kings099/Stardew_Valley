@@ -24,19 +24,23 @@ CharacterObjectList::CharacterObjectList() :
 	if (!loadData("../GameData/CharacterObjectListData.dat")) {
 		// 初始化物品栏
 		_objectList.resize(_maxObjectKindCount, { ObjectListNode{ {None,nullptr}, 0 ,Unselected } });
-		pickUpObject(GAME_TOOL_OBJECTS_ATTRS[0], 1);
-		pickUpObject(GAME_TOOL_OBJECTS_ATTRS[3], 1);
-		pickUpObject(GAME_TOOL_OBJECTS_ATTRS[6], 1);
-		pickUpObject(GAME_TOOL_OBJECTS_ATTRS[9], 1);
-		pickUpObject(GAME_TOOL_OBJECTS_ATTRS[12], 1);
-		pickUpObject(GAME_TOOL_OBJECTS_ATTRS[15], 1);
+		pickUpObject("BeginnerHoe", 1);
+		pickUpObject("BeginnerAxe", 1);
+		pickUpObject("BeginnerPickaxe", 1);
+		pickUpObject("BeginnerFishingRods", 1);
+		pickUpObject("BeginnerKattle", 1);
+		pickUpObject("scythe", 1);
 	}
-	//pickUpObject(GAME_TOOL_OBJECTS_ATTRS[0], 1);
-	pickUpObject(GAME_BASE_OBJECTS_ATTRS[0], 1);
+	pickUpObject("CopperParticle", 11);
+	synthesisObject("Copper");
+	synthesisObject("Copper");
+	synthesisObject("Iron");
 }
 
 // 按下键盘时的处理
 void CharacterObjectList::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* event) {
+	static bool isEKeyEnabled = true;
+	static bool isRKeyEnabled = true;
 	// 按下数字键,-和=键时切换物品栏
 	if (!_openObjectList) {
 		if (keyCode >= EventKeyboard::KeyCode::KEY_1 && keyCode <= EventKeyboard::KeyCode::KEY_9) {
@@ -57,14 +61,16 @@ void CharacterObjectList::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* ev
 		}
 	}
 	// 按下E键打开/关闭物品栏
-	if (keyCode == EventKeyboard::KeyCode::KEY_E) {
+	if (keyCode == EventKeyboard::KeyCode::KEY_E && isEKeyEnabled) {
 		_openObjectList = !_openObjectList;
 		_openBox = false;
+		isRKeyEnabled = !isRKeyEnabled;
 	}
 	// 按下R键打开物品栏和箱子
-	if (keyCode == EventKeyboard::KeyCode::KEY_R) {
+	if (keyCode == EventKeyboard::KeyCode::KEY_R && isRKeyEnabled) {
 		_openObjectList = !_openObjectList;
 		_openBox = !_openBox;
+		isEKeyEnabled = !isEKeyEnabled;
 	}
 }
 
@@ -93,7 +99,7 @@ bool CharacterObjectList::pickUpObject(GameBaseObject targetObject, int objectCo
 // TODO:设置单个物品的最大存储数量
 bool CharacterObjectList::pickUpObject(GameCommonObject targetObject, int objectCount, int targetIndex) {
 	// 查找物品栏中是否有相同物品
-	const int index = findObject(targetObject);
+	const int index = findObjectByObjectList(targetObject);
 	bool success = true;
 
 	// 如果没有相同物品，且物品栏已满，则返回false
@@ -131,12 +137,67 @@ bool CharacterObjectList::pickUpObject(GameCommonObject targetObject, int object
 	return success;
 }
 
+// 捡起物品
+bool CharacterObjectList::pickUpObject(const std::string& targetObjectName, int objectCount, int targetIndex) {
+	return pickUpObject(findObjectByName(targetObjectName), objectCount, targetIndex);
+}
+
 // 丢弃当前选中的物品
 ObjectListNode CharacterObjectList::deleteCurrentObject() {
 	ObjectListNode tempObject = getCurrentObject();
 	_objectList[_currentObjectIndex] = { {None,nullptr},0,Selected };
 	return tempObject;
 }
+
+// 合成物品
+bool CharacterObjectList::synthesisObject(GameBaseObject targetObject) {
+	if (!targetObject._synthesis) {
+		return false;
+	}
+
+	// 寻找列表的物品原料
+	for (const auto& ingredient : targetObject._ingredients) {
+		int ingredientIndex = findObjectByObjectList(ingredient.first);
+		if (!(ingredientIndex != -1 && _objectList[ingredientIndex].count >= ingredient.second)) {
+			return false;
+		}
+	}
+
+	//合成物品
+	for (const auto& ingredient : targetObject._ingredients) {
+		int ingredientIndex = findObjectByObjectList(ingredient.first);
+		_objectList[ingredientIndex].count -= ingredient.second;
+	}
+	pickUpObject(targetObject, 1);
+	return true;
+}
+
+// 合成物品
+bool CharacterObjectList::synthesisObject(const std::string& targetObjectName) {
+	 GameCommonObject targetObject = findObjectByName(targetObjectName);
+	 if (targetObject.type != Base) {
+		 return false;
+	 }
+
+	 GameBaseObject* targetBaseObject = dynamic_cast<GameBaseObject*>(targetObject.object.get());
+
+	 // 寻找列表的物品原料
+	 for (const auto& ingredient : targetBaseObject->_ingredients) {
+		 int ingredientIndex = findObjectByObjectList(ingredient.first);
+		 if (!(ingredientIndex != -1 && _objectList[ingredientIndex].count >= ingredient.second)) {
+			 return false;
+		 }
+	 }
+
+	 //合成物品
+	 for (const auto& ingredient : targetBaseObject->_ingredients) {
+		 int ingredientIndex = findObjectByObjectList(ingredient.first);
+		 _objectList[ingredientIndex].count -= ingredient.second;
+	 }
+	 pickUpObject(targetObject, 1);
+	 return true;
+}
+
 
 // 交换物品
 void  CharacterObjectList::swapObject(int startIndex, int targetIndex) {
@@ -175,31 +236,80 @@ int CharacterObjectList::getCurrentObjectIndex() {
 	return _currentObjectIndex;
 }
 
-// 设置物品栏状态
-void CharacterObjectList::setObjectListStatus(bool status) {
-	_openObjectList = static_cast<bool>(status);
-}
-
-
 // 设置当前选中的物品
 void CharacterObjectList::setCurrentObject(int index) {
 	if (index < 0 || index >= _maxObjectKindCount) {
 		return;
 	}
 	_currentObjectIndex = index;
-	CCLOG("_currentObjectIndex:%d", _currentObjectIndex);
 }
 
+// 设置物品栏状态
+void CharacterObjectList::setObjectListStatus(bool status) {
+	_openObjectList = static_cast<bool>(status);
+}
+
+
 // 查找物品栏中是否有指定物品
-int CharacterObjectList::findObject(GameCommonObject targetObject) {
+int CharacterObjectList::findObjectByObjectList(GameCommonObject targetObject) {
+	int index = -1;
 	for (int i = 0; i < _maxObjectKindCount; i++) {
 		// 只有物品不是工具才会被查找
 		if (_objectList[i].count!=0&& _objectList[i].objectNode.object->_index == targetObject.object->_index && (targetObject.type == Base)) {
-			return i;
+			index = i;
+			break;
 		}
 	}
 	// 没有找到
-	return -1;
+	return index;
+}
+
+// 查找物品栏中是否有指定物品
+int CharacterObjectList::findObjectByObjectList(std::string targetObjectName) {
+	int index = -1;
+	for (int i = 0; i < _maxObjectKindCount; i++) {
+		if (_objectList[i].objectNode.object != nullptr && _objectList[i].objectNode.object->_name == targetObjectName) {
+			index = i;
+			break;
+		}
+	}
+	return index;
+}
+
+// 查找物品栏中是否有指定物品
+GameCommonObject CharacterObjectList::findObjectByName(const std::string& name) {
+{
+	GameCommonObject result;
+
+	// 尝试从工具对象列表中查找
+	for (const auto& tool : GAME_TOOL_OBJECTS_ATTRS) {
+		if (tool._name == name) {
+			result = GameCommonObject(GameObjectMapType::Tool, std::make_shared<GameToolObject>(tool)); // 创建并返回工具对象
+			return result;
+		}
+	}
+
+	// 尝试从种子对象列表中查找
+	for (const auto& seed : GAME_SEED_OBJECTS_ATTRS) {
+		if (seed._name == name) {
+			result = GameCommonObject(GameObjectMapType::Seed, std::make_shared<GameSeedObject>(seed)); // 创建并返回种子对象
+			return result;
+		}
+	}
+
+	// 尝试从基础对象列表中查找
+	for (const auto& base : GAME_BASE_OBJECTS_ATTRS) {
+		if (base._name == name) {
+			result = GameCommonObject(GameObjectMapType::Base, std::make_shared<GameBaseObject>(base)); // 创建并返回基础对象
+			return result;
+		}
+	}
+
+		// 如果未找到，则返回类型为 None 的 GameCommonObject
+		result.type = GameObjectMapType::None;
+		result.object = nullptr;
+		return result;
+	}
 }
 
 // 检查物品栏是否已满
@@ -226,7 +336,7 @@ bool CharacterObjectList::checkObjectListEmpty() {
 	return isEmpty;
 }
 
-// 回调
+// 回调函数
 void CharacterObjectList::setPickUpCallback(std::function<void(bool)> callback) {
 	_pickUpCallback = callback;
 }
@@ -256,7 +366,7 @@ bool CharacterObjectList::loadData(const std::string& fileName) {
 		return false;
 	}
 
-	int itemCount = OBJECT_LIST_ROWS * OBJECT_LIST_COLS; 
+	int itemCount;
 	inFile.read(reinterpret_cast<char*>(&itemCount), sizeof(itemCount));
 
 	_objectList.resize(itemCount);

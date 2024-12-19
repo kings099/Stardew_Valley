@@ -13,20 +13,31 @@
 USING_NS_CC;
 
 // 获取单例
-Box& Box::getInstace() {
+Box& Box::getInstance() {
 	static Box instance;
 	return instance;
 }
 
-// 获取箱子向量列表
+// 获取箱子
 BoxNode& Box::getBoxList() {
 	int boxListIndex = matchBoxPosition(_character->getPosition());
 	return _boxObjectList[boxListIndex];
 }
 
+// 获取箱子数量
+int Box::getBoxCount() {
+	return _boxObjectList.size();
+}
+
 // 添加单个箱子
-void Box::addBox(const BoxNode& boxNode){
+bool Box::addBox(const BoxNode& boxNode){
+	for (int i = 0; i < _boxObjectList.size(); i++) {
+		if (_boxObjectList[i]._worldPosition == boxNode._worldPosition) {
+			return false;
+		}
+	}
 	_boxObjectList.push_back(boxNode);
+	return true;
 }
 
 // 移除单个箱子
@@ -56,7 +67,9 @@ Box::Box():
 	_maxObjectKindCount(OBJECT_LIST_COLS)
 {
 	_character = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png");
-	_boxObjectList.resize(0);
+	if (!loadData("../GameData/BoxObjectListData.dat")) {
+		_boxObjectList.resize(0);
+	}
 }
 
 // 储存物品
@@ -146,4 +159,48 @@ bool Box::checkObjectListFull() {
 		}
 	}
 	return isFull;
+}
+
+// 保存数据
+bool Box::saveData(const std::string& fileName) {
+	std::ofstream outFile(fileName, std::ios::binary);
+	if (!outFile) {
+		CCLOG("Error opening file for writing: %s", fileName.c_str());
+		return false;
+	}
+	// 保存箱子数量
+	size_t boxSize = _boxObjectList.size();
+	outFile.write((char*)&boxSize, sizeof(boxSize));
+	for (const auto& boxNode : _boxObjectList) {
+		for (const auto& item : boxNode._boxObjectList) {
+			item.save(outFile);
+		}
+		outFile.write((char*)&boxNode._worldPosition, sizeof(boxNode._worldPosition));
+	}
+
+	outFile.close();
+	return true;
+}
+
+// 加载数据
+bool Box::loadData(const std::string& fileName) {
+	std::ifstream inFile(fileName, std::ios::binary);
+	if (!inFile) {
+		CCLOG("File does not exist or cannot be opened: %s", fileName.c_str());
+		return false;
+	}
+	size_t boxSize;
+	inFile.read(reinterpret_cast<char*>(&boxSize), sizeof(boxSize));
+	_boxObjectList.resize(boxSize);
+
+	for (auto& boxNode : _boxObjectList) {
+		boxNode._boxObjectList.resize(OBJECT_LIST_COLS);
+		for (auto& item : boxNode._boxObjectList) {
+		
+			item.load(inFile);
+		}
+		inFile.read((char*)&boxNode._worldPosition, sizeof(boxNode._worldPosition));
+	}
+	inFile.close();
+	return true;
 }

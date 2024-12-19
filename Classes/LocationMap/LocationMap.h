@@ -3,7 +3,7 @@
  * File Name:     LocationMap.h
  * File Function: 位置属性与屏幕坐标键值对类LocationMap类的定义
  * Author:        尹诚成
- * Update Date:   2024/12/11
+ * Update Date:   2024/12/18
  * License:       MIT License
  ****************************************************************/
 
