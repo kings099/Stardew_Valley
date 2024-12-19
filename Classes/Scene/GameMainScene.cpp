@@ -36,7 +36,7 @@ bool GameMainScene::init()
     treeLayer->setName("treeLayer");
 
     auto Maplayer = Node::create();
-    this->addChild(Maplayer, 0); // 树木层级比角色高
+    this->addChild(Maplayer, 0); // 地图层级
     Maplayer->setName("Maplayer");
     // 加载农场地图
     _farmMap = FarmMap::create("../Resources/Maps/Farm/Farm_Combat.tmx", treeLayer);

@@ -59,39 +59,7 @@ void InteractionManager::updateSurroundingTiles(Vec2& world_pos) {
         Vec2(tile_pos.x - 1, tile_pos.y + 1), Vec2(tile_pos.x, tile_pos.y + 1), Vec2(tile_pos.x + 1, tile_pos.y + 1),
     };
     for (const auto& coord : surroundingCoords) {
-        TileInfo tileInfo;
-        tileInfo.tilePos = coord;
-        tileInfo.WorldPos = _gameMap->tileToAbsolute(coord);
-        tileInfo.type = Other; // 默认类型
-        tileInfo.isObstacle = isCollidableAtPos(coord);
-
-        // 判断path层
-        int pathGID = _gameMap->getTileGIDAt("path", coord);
-        if (pathGID != 0) {
-            ValueMap pathProps = _gameMap->getTilePropertiesForGID(pathGID);
-            if (pathProps.find("isGrass") != pathProps.end() && pathProps["isGrass"].asBool()) {
-                tileInfo.type = Grass;
-            }
-            else if (pathProps.find("isStone") != pathProps.end() && pathProps["isStone"].asBool()) {
-                tileInfo.type = Stone;
-            }
-        }
-
-        // 判断其他层
-        int backGID = _gameMap->getTileGIDAt("back", coord);
-        int buildingGID = _gameMap->getTileGIDAt("buildings", coord);
-        int FarmGID = _gameMap->getTileGIDAt("farm", coord);
-        if (backGID != 0 && buildingGID == 0 && pathGID == 0) {
-            ValueMap backProps = _gameMap->getTilePropertiesForGID(backGID);
-            if (backProps.find("canFarm") != backProps.end() && backProps["canFarm"].asBool()) {
-                tileInfo.type = Soil;
-            }
-        }
-        // 判断是否为耕种过土地
-        if (FarmGID == DRY_FARM_TILE_GID) {
-            tileInfo.type = Soiled;
-        }
-
+        TileInfo tileInfo = GetTileInfoAt(coord);
         _surroundingTiles.push_back(tileInfo); //  更新 _surroundingTiles
     }
 }
@@ -153,10 +121,46 @@ const std::vector<TileInfo>& InteractionManager::getSurroundingTiles() const {
     return _surroundingTiles;
 }
 
+// 在指定瓦片位置获取图块信息
+const TileInfo& InteractionManager::GetTileInfoAt(const Vec2& Tile_pos) {
+    TileInfo tileInfo;
+    tileInfo.tilePos = Tile_pos;
+    tileInfo.WorldPos = _gameMap->tileToAbsolute(Tile_pos);
+    tileInfo.type = Other; // 默认类型
+    tileInfo.isObstacle = isCollidableAtPos(Tile_pos);
 
-const TileInfo& InteractionManager::GetTileInfoAt(const Vec2& WroldPos) {
-    _gameMap->absoluteToTile(WroldPos);
-    return _surroundingTiles[0];
+    // 判断path层
+    int pathGID = _gameMap->getTileGIDAt("path", Tile_pos);
+    if (pathGID != 0) {
+        ValueMap pathProps = _gameMap->getTilePropertiesForGID(pathGID);
+        if (pathProps.find("isGrass") != pathProps.end() && pathProps["isGrass"].asBool()) {
+            tileInfo.type = Grass;
+        }
+        else if (pathProps.find("isStone") != pathProps.end() && pathProps["isStone"].asBool()) {
+            tileInfo.type = Stone;
+        }
+    }
+
+    // 判断water层
+    int WaterGID = _gameMap->getTileGIDAt("Water", Tile_pos);
+    if (WaterGID != 0) {
+        tileInfo.type = Water;
+    }
+    // 判断是否为耕地
+    int backGID = _gameMap->getTileGIDAt("back", Tile_pos);
+    int buildingGID = _gameMap->getTileGIDAt("buildings", Tile_pos);
+    int FarmGID = _gameMap->getTileGIDAt("farm", Tile_pos);
+    if (backGID != 0 && buildingGID == 0 && pathGID == 0) {
+        ValueMap backProps = _gameMap->getTilePropertiesForGID(backGID);
+        if (backProps.find("canFarm") != backProps.end() && backProps["canFarm"].asBool()) {
+            tileInfo.type = Soil;
+        }
+    }
+    // 判断是否为耕种过土地
+    if (FarmGID == DRY_FARM_TILE_GID) {
+        tileInfo.type = Soiled;
+    }
+    return tileInfo;
 }
 
 // 根据动作做出对应地块变化
@@ -184,5 +188,26 @@ void InteractionManager::ActionAnimation(GameCharacterAction action, const Vec2&
 
 // 在WorldPos的dir方向第n格获取地块信息
 const TileInfo& InteractionManager::GetLineTileInfo(Direction dir, int distance, const Vec2& WroldPos) {
-    return _surroundingTiles[0];
+    int x_offset = 0, y_offset = 0; // 横纵坐标瓦片偏移量
+    Vec2 Tile_pos = _gameMap->absoluteToTile(WroldPos);
+    switch (dir)
+    {
+        case Up:
+            y_offset = -1;
+            break;
+        case Down:
+            y_offset = 1;
+            break;
+        case Left:
+            x_offset = -1;
+            break;
+        case Right:
+            x_offset = 1;
+            break;
+        default:
+            break;
+    }
+    Vec2 pos = Vec2(Tile_pos.x + x_offset * distance, Tile_pos.y + y_offset * distance);
+    TileInfo tileinfo = GetTileInfoAt(pos);
+    return tileinfo;
 }
