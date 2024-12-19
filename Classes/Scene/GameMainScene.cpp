@@ -24,8 +24,6 @@ bool GameMainScene::init()
         return false;
     }
 
-
-
     // 获取可见区域大小
     auto visibleSize = Director::getInstance()->getVisibleSize();
     auto origin = Director::getInstance()->getVisibleOrigin();
@@ -91,7 +89,7 @@ bool GameMainScene::init()
     mouselistener->onMouseDown = [this](Event* event) {
         Vec2 actionTilePos;
         GameCharacterAction action;
-        this->_character->onMouseDown(event, action, actionTilePos);
+        this->_character->onMouseDown(event, action, actionTilePos, _interaction);
         _interaction->ActionAnimation(action, actionTilePos);
         CCLOG("target tile: (%f, %f), action: %d",
             actionTilePos.x, actionTilePos.y, action);

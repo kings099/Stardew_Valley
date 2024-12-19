@@ -132,7 +132,6 @@ void CharacterMove::playAnimation() {
         _character->runAction(RepeatForever::create(animate));
         _lastDirection = _currentDirection;
     }
-   
 }
 
 // 获取角色当前位置

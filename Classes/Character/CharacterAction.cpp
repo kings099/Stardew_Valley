@@ -3,7 +3,7 @@
  * File Name:     CharacterAction.cpp
  * File Function: CharacterAction类的实现
  * Author:        尹诚成
- * Update Date:   2023/12/11
+ * Update Date:   2024/12/20
  * License:       MIT License
  ****************************************************************/
  
@@ -28,19 +28,22 @@ CharacterAction::CharacterAction(const std::string &filename):
 }
 
  // 按下鼠标事件触发函数
-void CharacterAction::onMouseDown(cocos2d::Event* event, GameCharacterAction& gameCharacterAction, cocos2d::Vec2& targetTilePos) {
+void CharacterAction::onMouseDown(cocos2d::Event* event, GameCharacterAction& gameCharacterAction, cocos2d::Vec2& targetTilePos, InteractionManager* interactionManager) {
 	const EventMouse* mouseEvent = dynamic_cast<EventMouse*>(event);
 	stopMove();
 	if (!getObjectListStatus()) {
 		if (mouseEvent->getMouseButton() == EventMouse::MouseButton::BUTTON_LEFT) {
-			gameCharacterAction = checkLeftButtonActionIsValid(targetTilePos);
+			gameCharacterAction = getLeftButtonAction();
 		}
 		else if (mouseEvent->getMouseButton() == EventMouse::MouseButton::BUTTON_RIGHT) {
-
+			gameCharacterAction = getRightButtonAction();
 		}
-		if (gameCharacterAction != NoneAction) {
+		if (checkActionIsValid(gameCharacterAction, targetTilePos, interactionManager)) {
 			updateSkillExprience(gameCharacterAction);
 			updateSkillLevel();
+		}
+		else {
+			gameCharacterAction = NoneAction;
 		}
 	}
 }
@@ -55,6 +58,34 @@ GameCharacterAction CharacterAction::getLeftButtonAction() {
 		auto toolObjectPtr = std::dynamic_pointer_cast<GameToolObject>(currentObject.objectNode.object);
 		return toolObjectPtr->_action;
 	}
+	case Base:
+		if (currentObject.objectNode.object->_name == "fertilizer") {
+			return Fertilize;
+		}
+		else {
+			return DestoryObject;
+		}
+	default:
+		return NoneAction;
+	}
+}
+
+// 获取角色打算执行的动作(鼠标右键)
+GameCharacterAction CharacterAction::getRightButtonAction() {
+	ObjectListNode currentObject = getCurrentObject();
+	switch (currentObject.objectNode.type) {
+	case None:
+		return NoneAction;
+	case Tool: {
+		if ((currentObject.objectNode.object->_name == "BeginnerKattle")
+			|| (currentObject.objectNode.object->_name == "IntermediateKattle")
+			|| (currentObject.objectNode.object->_name == "AdvancedKattle")) {
+			return GetWater;
+		}
+		else {
+			return NoneAction;
+		}
+	}
 	case Seed:
 	case Base:
 		return Placement;
@@ -63,30 +94,12 @@ GameCharacterAction CharacterAction::getLeftButtonAction() {
 	}
 }
 
-// 判断角色是否可以执行动作(鼠标左键)
-GameCharacterAction CharacterAction::checkLeftButtonActionIsValid(Vec2 & targetTilePos) {
-	const GameCharacterAction action = getLeftButtonAction();
-	
+// 判断角色是否可以执行动作
+bool CharacterAction::checkActionIsValid(GameCharacterAction action,Vec2 & targetTilePos, InteractionManager* interactionManager) {
 	if (action == NoneAction)
 		return NoneAction;
 
-	TileInfo targetTileNode;
-	switch (_currentDirection) {
-	case Direction::Up:
-		targetTileNode = _surroundingTilesInfo[1];
-		break;
-	case Direction::Down:
-		targetTileNode = _surroundingTilesInfo[7];
-		break;
-	case Direction::Left:
-		targetTileNode = _surroundingTilesInfo[3];
-		break;
-	case Direction::Right:
-		targetTileNode = _surroundingTilesInfo[5];
-		break;
-	default:
-		break;
-	}
+	TileInfo targetTileNode = getTileInfo(action, interactionManager);
 	targetTilePos = targetTileNode.tilePos;
 	// 检查动作是否与目标地块类型匹配
 	for (auto& test : ACTION_TO_TILEMAP) {
@@ -97,19 +110,20 @@ GameCharacterAction CharacterAction::checkLeftButtonActionIsValid(Vec2 & targetT
 	return NoneAction;
 }
 
-// 获取角色打算执行的动作(鼠标右键)
-GameCharacterAction  CharacterAction::getRightButtonAction() {
-	return NoneAction;
-}
-
-// 判断角色是否可以执行动作(鼠标右键)
-GameCharacterAction  CharacterAction::checkRightButtonActionIsValid(cocos2d::Vec2& targetTilePos) {
-	return NoneAction;
-}
-
 // 获取角色动作对象的瓦片信息
-TileInfo CharacterAction::getTileInfo(GameCharacterAction action) {
+TileInfo CharacterAction::getTileInfo(GameCharacterAction action, InteractionManager* interactionManager) {
 	TileInfo targetTileNode;
+	switch (action) {
+	case Fishing:
+		targetTileNode = interactionManager->GetLineTileInfo(_currentDirection, std::min(_skillLevel[Fish] + MIN_FISHING_DISTANCE, MAX_FISHING_DISTANCE), _character->getPosition());
+		break;
+	case NoneAction:
+		targetTileNode = { TileType::Other, cocos2d::Vec2(INVAVID_NUM, INVAVID_NUM),false };
+		break;
+	default:
+		targetTileNode = interactionManager->GetLineTileInfo(_currentDirection, 1, _character->getPosition());
+		break;
+	}
 
 	return targetTileNode;
 }
