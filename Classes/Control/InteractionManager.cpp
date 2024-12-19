@@ -122,37 +122,45 @@ const std::vector<TileInfo>& InteractionManager::getSurroundingTiles() const {
 }
 
 // 在指定瓦片位置获取图块信息
-const TileInfo& InteractionManager::GetTileInfoAt(const Vec2& Tile_pos) {
+const TileInfo InteractionManager::GetTileInfoAt(const Vec2& Tile_pos) {
     TileInfo tileInfo;
     tileInfo.tilePos = Tile_pos;
     tileInfo.WorldPos = _gameMap->tileToAbsolute(Tile_pos);
-    tileInfo.type = Other; // 默认类型
+    tileInfo.type = TileConstants::Other; // 默认类型
     tileInfo.isObstacle = isCollidableAtPos(Tile_pos);
+
+
+    // 初始化默认掉落物品信息
+    tileInfo.drops["None"] = { 0, 0.0f }; // 默认无物品掉落
 
     // 判断path层
     int pathGID = _gameMap->getTileGIDAt("path", Tile_pos);
     if (pathGID != 0) {
         ValueMap pathProps = _gameMap->getTilePropertiesForGID(pathGID);
         if (pathProps.find("isGrass") != pathProps.end() && pathProps["isGrass"].asBool()) {
-            tileInfo.type = Grass;
+            tileInfo.type = TileConstants::Grass; // 这个位置如果用草会报错 初步怀疑是编码的问题
+            tileInfo.drops["Grass"] = { TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::GRASS_DROP_PROBABILITY }; // 掉落1个草，概率为50%
         }
         else if (pathProps.find("isStone") != pathProps.end() && pathProps["isStone"].asBool()) {
-            tileInfo.type = Stone;
+            tileInfo.type = TileConstants::Stone;
+            tileInfo.drops["石头"] = { TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::STONE_DROP_PROBABILITY }; // 掉落1个石头，概率为30%
         }
         else if(pathProps.find("isBranch") != pathProps.end() && pathProps["isBranch"].asBool())
         {
-            tileInfo.type = Branch;
+            tileInfo.type = TileConstants::Branch;
+            tileInfo.drops["木材"] = {TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::BRANCH_DROP_PROBABILITY}; // 掉落1个木材，概率为10%
         }
         else if(pathProps.find("isTree") != pathProps.end() && pathProps["isTree"].asBool())
         {
-            tileInfo.type = Tree;
+            tileInfo.type = TileConstants::Tree;
+            tileInfo.drops["木材"] = { TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::TREE_DROP_PROBABILITY }; // 掉落1个木材，概率为90%
         }
     }
 
     // 判断water层
     int WaterGID = _gameMap->getTileGIDAt("Water", Tile_pos);
     if (WaterGID != 0) {
-        tileInfo.type = Water;
+        tileInfo.type = TileConstants::Water;
     }
     // 判断是否为耕地
     int backGID = _gameMap->getTileGIDAt("back", Tile_pos);
@@ -161,12 +169,12 @@ const TileInfo& InteractionManager::GetTileInfoAt(const Vec2& Tile_pos) {
     if (backGID != 0 && buildingGID == 0 && pathGID == 0) {
         ValueMap backProps = _gameMap->getTilePropertiesForGID(backGID);
         if (backProps.find("canFarm") != backProps.end() && backProps["canFarm"].asBool()) {
-            tileInfo.type = Soil;
+            tileInfo.type = TileConstants::Soil;
         }
     }
     // 判断是否为耕种过土地
-    if (FarmGID == DRY_FARM_TILE_GID) {
-        tileInfo.type = Soiled;
+    if (FarmGID == TileConstants::DRY_FARM_TILE_GID) {
+        tileInfo.type = TileConstants::Soiled;
     }
     return tileInfo;
 }
@@ -175,17 +183,17 @@ const TileInfo& InteractionManager::GetTileInfoAt(const Vec2& Tile_pos) {
 void InteractionManager::ActionAnimation(GameCharacterAction action, const Vec2& TilePos) {
     switch (action) {
     case Plowing:
-        _gameMap->replaceTileAt("farm", TilePos, DRY_FARM_TILE_GID);
+        _gameMap->replaceTileAt("farm", TilePos, TileConstants::DRY_FARM_TILE_GID);
         break;
     case Watering:
-        _gameMap->replaceTileAt("farm", TilePos, DRY_FARM_TILE_GID);
+        _gameMap->replaceTileAt("farm", TilePos, TileConstants::DRY_FARM_TILE_GID);
         break;
     case Weeding:
-        _gameMap->replaceTileAt("path", TilePos, EMPTY_GID);
+        _gameMap->replaceTileAt("path", TilePos, TileConstants::EMPTY_GID);
         AnimationHelper::playWeedingAnimation(_gameMap->tileToRelative(TilePos), _gameMap->getTiledMap());
         break;
     case Mining:
-        _gameMap->replaceTileAt("path", TilePos, EMPTY_GID);
+        _gameMap->replaceTileAt("path", TilePos, TileConstants::EMPTY_GID);
         AnimationHelper::playStoneBreakingAnimation(_gameMap->tileToRelative(TilePos), _gameMap->getTiledMap());      
         break;
     case Placement:
@@ -195,7 +203,7 @@ void InteractionManager::ActionAnimation(GameCharacterAction action, const Vec2&
 }
 
 // 在WorldPos的dir方向第n格获取地块信息
-const TileInfo& InteractionManager::GetLineTileInfo(Direction dir, int distance, const Vec2& WroldPos) {
+const TileInfo InteractionManager::GetLineTileInfo(Direction dir, int distance, const Vec2& WroldPos) {
     int x_offset = 0, y_offset = 0; // 横纵坐标瓦片偏移量
     Vec2 Tile_pos = _gameMap->absoluteToTile(WroldPos);
     switch (dir)

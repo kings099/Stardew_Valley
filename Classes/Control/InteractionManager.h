@@ -46,14 +46,14 @@ public:
     void ActionAnimation(GameCharacterAction action, const Vec2& TilePos);
 
     // 获取角色前方第n格地块信息
-    const TileInfo& GetLineTileInfo(Direction dir, int distance, const Vec2& WroldPos);
+    const TileInfo GetLineTileInfo(Direction dir, int distance, const Vec2& WroldPos);
 
 private:
     GameMap* _gameMap;             // 当前地图对象的引用
     std::vector<TileInfo> _surroundingTiles; // 储存角色周围 9 格瓦片的信息
 
     // 获取某个瓦片的地块信息
-    const TileInfo& GetTileInfoAt(const Vec2& WroldPos);
+    const TileInfo GetTileInfoAt(const Vec2& WroldPos);
 };
 
 #endif // INTERACTION_MANAGER_H

@@ -125,7 +125,7 @@ void FarmMap::plantTreesOnPathLayer() {
             int GID = pathLayer->getTileGIDAt(tilePos);
             // 检查 GID 是否为目标 GID
            /* TMXTiledMap* testmap = _tile_map;*/
-            if (GID == OAK_GID) {
+            if (GID == TileConstants::OAK_GID) {
                 // 创建并种植农作物
                 auto crop = Crops::create("oak", OAK_MAX_GROWTHSTAGE);
                 if (crop) {
@@ -133,14 +133,14 @@ void FarmMap::plantTreesOnPathLayer() {
                     _treeLayer->setScale(FARM_MAP_SCALE);
                     crop->setPosition(tileToRelative(Vec2(col,row))); // 设置位置为瓦片的世界坐标
                     crop->setGrowthStage(OAK_MAX_GROWTHSTAGE); // 直接设置为成熟阶
-                    replaceTileAt("path", Vec2(col, row), OAK_INVISIBLE_GID);
-                    replaceTileAt("Tree", Vec2(col, row), OAK_ROOT_GID);
+                    replaceTileAt("path", Vec2(col, row), TileConstants::OAK_INVISIBLE_GID);
+                    replaceTileAt("Tree", Vec2(col, row), TileConstants::OAK_ROOT_GID);
                 }
                 else {
                     CCLOG("Error: Failed to create crop of type oak");
                 }
             }
-            else if (GID == MAMPLE_GID) {
+            else if (GID == TileConstants::MAMPLE_GID) {
 
                 // 创建并种植农作物
                 auto crop = Crops::create("maple",MAPLE_MAX_GROWTHSTAGE);
@@ -149,15 +149,15 @@ void FarmMap::plantTreesOnPathLayer() {
                     _treeLayer->setScale(FARM_MAP_SCALE);
                     crop->setPosition(tileToRelative(Vec2(col, row))); // 设置位置为瓦片的世界坐标
                     crop->setGrowthStage(MAPLE_MAX_GROWTHSTAGE); // 直接设置为成熟阶
-                    replaceTileAt("path", Vec2(col, row), MAMPLE_INVISIBLE_GID);
-                    replaceTileAt("Tree", Vec2(col, row), MAMPLE_ROOT_GID);
+                    replaceTileAt("path", Vec2(col, row), TileConstants::MAMPLE_INVISIBLE_GID);
+                    replaceTileAt("Tree", Vec2(col, row), TileConstants::MAMPLE_ROOT_GID);
                 }
                 else {
                     CCLOG("Error: Failed to create crop of type maple");
                 }
 
             }
-            else if (GID == PINE_GID) {
+            else if (GID == TileConstants::PINE_GID) {
                 // 创建并种植农作物
                 auto crop = Crops::create("pine",PINE_MAX_GROWTHSTAGE);
                 if (crop) {
@@ -165,8 +165,8 @@ void FarmMap::plantTreesOnPathLayer() {
                     _treeLayer->setScale(FARM_MAP_SCALE);
                     crop->setPosition(tileToRelative(Vec2(col, row))); // 设置位置为瓦片的世界坐标
                     crop->setGrowthStage(PINE_MAX_GROWTHSTAGE); // 直接设置为成熟阶
-                    replaceTileAt("path", Vec2(col, row), PINE_INVISIBLE_GID);// 设置树木标志为不可见
-                    replaceTileAt("Tree", Vec2(col, row), PINE_ROOT_GID);// 设置树根图块
+                    replaceTileAt("path", Vec2(col, row), TileConstants::PINE_INVISIBLE_GID);// 设置树木标志为不可见
+                    replaceTileAt("Tree", Vec2(col, row), TileConstants::PINE_ROOT_GID);// 设置树根图块
                 }
                 else {
                     CCLOG("Error: Failed to create crop of type pine");

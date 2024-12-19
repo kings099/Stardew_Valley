@@ -63,18 +63,43 @@ constexpr float FARM_MAP_SCALE = 2.0f;										// 农场地图缩放比例
 constexpr float INDOOR_MAP_SCALE = 5.0f;									// 室内地图缩放比例
 
 // 地图图块相关
-constexpr int DRY_FARM_TILE_GID = 2040;                                     // 干燥耕地效果动画图块GID
-constexpr int EMPTY_GID = 0;                                                // 空白GID
-constexpr int OAK_GID = 10;                                                 // 桦树GID
-constexpr int MAMPLE_GID = 11;                                              // MAMPLE GID
-constexpr int PINE_GID = 12;                                                // PINE GID
-constexpr int OAK_INVISIBLE_GID = 1;                                        // OAK树根图块不可见GID
-constexpr int MAMPLE_INVISIBLE_GID = 2;                                     // MAMPLE树根图块不可见GID
-constexpr int PINE_INVISIBLE_GID = 3;                                       // PINE树根图块不可见GID
-constexpr int OAK_ROOT_GID = 191;                                           // OAK树根GID
-constexpr int MAMPLE_ROOT_GID = 194;                                        // MAMPLE树根GID
-constexpr int PINE_ROOT_GID = 201;                                          // PINE树根GID
+namespace TileConstants {
+    constexpr int DRY_FARM_TILE_GID = 2040;                                     // 干燥耕地效果动画图块GID
+    constexpr int EMPTY_GID = 0;                                                // 空白GID
+    constexpr int OAK_GID = 10;                                                 // 桦树GID
+    constexpr int MAMPLE_GID = 11;                                              // MAMPLE GID
+    constexpr int PINE_GID = 12;                                                // PINE GID
+    constexpr int OAK_INVISIBLE_GID = 1;                                        // OAK树根图块不可见GID
+    constexpr int MAMPLE_INVISIBLE_GID = 2;                                     // MAMPLE树根图块不可见GID
+    constexpr int PINE_INVISIBLE_GID = 3;                                       // PINE树根图块不可见GID
+    constexpr int OAK_ROOT_GID = 191;                                           // OAK树根GID
+    constexpr int MAMPLE_ROOT_GID = 194;                                        // MAMPLE树根GID
+    constexpr int PINE_ROOT_GID = 201;                                          // PINE树根GID
 
+    constexpr float GRASS_DROP_PROBABILITY = 0.5f;                              // 草掉落概率
+    constexpr float STONE_DROP_PROBABILITY = 0.3f;                              // 石头掉落概率
+    constexpr float BRANCH_DROP_PROBABILITY = 0.1f;                             // 树枝掉落概率
+    constexpr float TREE_DROP_PROBABILITY = 0.9f;                               // 树木掉落概率
+        
+    constexpr int DEFAULT_DROP_QUANTITY = 1;                                    // 默认掉落数量
+    constexpr int MUTI_DROP_QUANTITY = 3;                                       // 默认多个掉落数量
+
+    // 瓦片信息
+    enum TileType {
+        Grass,      // 草
+        Tree,       // 树木
+        Branch,     // 树枝
+        Mine,       // 矿石
+        Stone,      // 
+        Water,      // 水
+        Soil,       // 可耕种土地
+        Soiled,     // 已耕种土地
+        Crop,       // 作物
+        Door,       // 门
+        Other
+    };
+
+}
 // 物品设置
 constexpr int OBJECT_LIST_ROWS = 3;											// 物品列表行数
 constexpr int OBJECT_LIST_COLS = 12;										// 物品列表列数
@@ -181,19 +206,6 @@ enum ObjectListNodeStatus {
     Selected		// 选中
 };
 
-// 瓦片信息
-enum TileType {
-    Grass,      // 草
-    Tree,       // 树木
-    Branch,     // 树枝
-    Stone,      // 矿石
-    Water,      // 水
-    Soil,       // 可耕种土地
-    Soiled,     // 已耕种土地
-    Crop,       // 作物
-    Door,       // 门
-    Other
-};
 
 // 位置状态定义
 enum LocationStatus {
@@ -222,11 +234,11 @@ enum GameCharacterAction {
 
 // 单个瓦片坐标信息定义
 struct TileInfo {
-    TileType type;
+    TileConstants::TileType type;
     cocos2d::Vec2 tilePos;  // 瓦片坐标
     cocos2d::Vec2 WorldPos; // 世界坐标
     bool isObstacle;        // 是否为障碍物
-    std::string dropout;    // 掉落物名称
+    std::map<std::string, std::pair<int, float>> drops; // 掉落物品映射 (物品名称 -> {数量, 概率})
 };
 
 // 位置属性定义
@@ -268,19 +280,19 @@ struct ObjectImageInfo {
 };
 
 // 角色动作和地图类型对应关系
-const std::map< GameCharacterAction, TileType> ACTION_TO_TILEMAP = {
-    { NoneAction, Other },
-    { Plowing, Soil },
-    { Watering, Soiled },
-    { Fertilize, Soiled },
-    { GetWater, Water },
-    { Weeding, Grass },
-    { Cutting, Tree },
-    { Mining, Stone },
-    { Fishing, Water },
-    { Harvesting, Crop },
-    { Placement, Other },
-    {Transition, Door}
+const std::map< GameCharacterAction, TileConstants::TileType> ACTION_TO_TILEMAP = {
+    { NoneAction, TileConstants::Other },
+    { Plowing, TileConstants::Soil },
+    { Watering, TileConstants::Soiled },
+    { Fertilize, TileConstants::Soiled },
+    { GetWater,TileConstants::Water },
+    { Weeding, TileConstants::Grass },
+    { Cutting, TileConstants::Tree },
+    { Mining,TileConstants::Stone },
+    { Fishing, TileConstants::Water },
+    { Harvesting,TileConstants::Crop },
+    { Placement, TileConstants::Other },
+    {Transition, TileConstants::Door}
 };
 
 
