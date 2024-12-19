@@ -13,7 +13,8 @@
 
 #include "cocos2d.h"
 #include "Character/Character.h"
-#include "proj.win32/Constant.h"
+#include "Box/Box.h"
+#include "../proj.win32/Constant.h"
 
 
 
@@ -29,10 +30,11 @@ public:
     CREATE_FUNC(PlacementMarkerLayer);
 
 private:
-    // 创建放置标记
-    void createPlacementMarker(const int& index);
-
     Character* _character; // 角色对象
+
+    // 创建放置标记
+    void createPlacementMarker(const Location& location);
+
 };
 
 #endif // !_PLACEMENT_MARKER_LAYER_H_

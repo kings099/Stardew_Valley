@@ -153,6 +153,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)\Resources\" /D /E /I /F /Y
     <ClCompile Include="..\Classes\Animal\Animal.cpp" />
     <ClCompile Include="..\Classes\Animation\Animation.cpp" />
     <ClCompile Include="..\Classes\AppDelegate\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\Box\Box.cpp" />
     <ClCompile Include="..\Classes\Character\Character.cpp" />
     <ClCompile Include="..\Classes\Character\CharacterAction.cpp" />
     <ClCompile Include="..\Classes\Character\CharacterInfo.cpp" />
@@ -188,6 +189,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)\Resources\" /D /E /I /F /Y
     <ClInclude Include="..\Classes\Animal\Animal.h" />
     <ClInclude Include="..\Classes\Animation\Animation.h" />
     <ClInclude Include="..\Classes\AppDelegate\AppDelegate.h" />
+    <ClInclude Include="..\Classes\Box\Box.h" />
     <ClInclude Include="..\Classes\Character\Character.h" />
     <ClInclude Include="..\Classes\Character\CharacterAction.h" />
     <ClInclude Include="..\Classes\Character\CharacterInfo.h" />
