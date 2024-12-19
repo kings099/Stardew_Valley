@@ -90,4 +90,9 @@
    <property name="canNotMove" type="bool" value="true"/>
   </properties>
  </tile>
+ <tile id="36">
+  <properties>
+   <property name="isWater" type="bool" value="true"/>
+  </properties>
+ </tile>
 </tileset>

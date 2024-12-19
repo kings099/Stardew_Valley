@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="130" height="110" tilewidth="16" tileheight="16" infinite="0" nextlayerid="39" nextobjectid="45">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="130" height="110" tilewidth="16" tileheight="16" infinite="0" nextlayerid="40" nextobjectid="45">
  <properties>
   <property name="BrookSounds" value="94 5 5"/>
   <property name="DayTiles" value="AlwaysFront 52 98 907 AlwaysFront 56 98 907 AlwaysFront 24 50 907 AlwaysFront 33 53 907 AlwaysFront 24 58 907 AlwaysFront 27 72 907 AlwaysFront 30 72 907 AlwaysFront 38 65 907 AlwaysFront 27 86 907 AlwaysFront 17 86 907 AlwaysFront 21 64 907 Buildings 92 79 186 Buildings 41 69 560 Buildings 71 67 720"/>
@@ -18,6 +18,11 @@
  <tileset firstgid="4344" source="../Farm/spring_outdoorsTileSheet_tree.tsx"/>
  <tileset firstgid="5464" source="spring_Shadows.tsx"/>
  <tileset firstgid="5939" source="spring_Waterfalls.tsx"/>
+ <layer id="39" name="Water" width="130" height="110">
+  <data encoding="base64" compression="zlib">
+   eJzt2k1ugzAURtHMuv/9dTHVN7BEIkKNIS34nSNl0qAI48tveTwAAIAr+P56/lCTDggd8NqADmrSAaEBGh0QOgBgyXmB0AHuG9EAniMSGiB0QGiA0AGhA0IHhA4IHRA6IHSAZ0hogNABoYPa1v7PrIMa3s29Dupoc6yBuhwHauuZfw3My/zX0zvn5n9e5r8280+Yc8L8EzogdEDogNABoQMa942EDgAAeOf12tC1Yk3uGQgdEDogvI9C4900Gi2wRgs0WqDRAUs6IHRA6ADXB2iA0AChA5wT8PwIz5PRAKEBNIAG0AChATRA6IDQAaEDwr0CjQ5Y0gKN8wSNDggdEM4NwOy23rVyzKujpwNdzG+kg8otzLo9RjuYcVv0mHXsOthn1rGf2cEs22TLrGPeGpMOns085t/G0/5292PF0XW86rjO1NPB2rKf/HxqfHdY3/+0p4Pl8iPbas/3Pet8dF8+MudVWugZ38j+svf7M/fLs39z1mPDiCNzMbLM2dv96G9VOW/8tZ5GrkoLLGmB5i4t/ACK2OAZ
+  </data>
+ </layer>
  <layer id="38" name="Collidable" width="130" height="110">
   <data encoding="base64" compression="zlib">
    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
@@ -95,7 +100,7 @@
  </layer>
  <layer id="34" name="WaterFall" width="130" height="110">
   <data encoding="base64" compression="zlib">
-   eJztwQENAAAAwqD3T20ON6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeDTfcAAB
+   eJzt0kcNA1EQRMEB4HDcXRYOVBygOAJxIOhAws3iW9oq6d1H6qkCWnh1Ve/0Sd+u9TW0MumrpmmW5n3ra2hlke2XaZXW/mC0Ntl+m3Zp7w9G6ZDdj+mUzumSrn5hlG5D1T090nNofQ0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADw737FhQ2o
   </data>
  </layer>
 </map>

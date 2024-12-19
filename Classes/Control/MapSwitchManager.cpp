@@ -43,8 +43,9 @@ bool MapSwitchManager::switchMap(const std::string& newMapFile, Vec2& teleportPO
     CCLOG("Switching map to: %s", newMapFile.c_str());
 
     if (_currentMap) {
-        _currentMap->removeFromParentAndCleanup(true);
+        MapLayer->removeChild(_currentMap, true); // ÇåÀí¾ÉµØÍ¼
     }
+    
 
     GameMap* newMap = nullptr;
 
