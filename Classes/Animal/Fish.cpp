@@ -32,6 +32,7 @@ Fishs::~Fishs() {
     }
 }
 
+//初始化每个季节的鱼的类型
 void Fishs::initializeSeasonFishMap() {
     if (!seasonFishMap.empty()) return;
 
@@ -41,6 +42,7 @@ void Fishs::initializeSeasonFishMap() {
     seasonFishMap["winter"] = { "fishWinter_0", "fishWinter_1", "fishSpring_1", "fishSpring_2" };
 }
 
+//创建并返回一个新的 Fishs 对象。
 Fishs* Fishs::create(const std::string& name, const std::string& season, const Vec2& position) {
     Fishs* ret = new Fishs();
     if (ret && ret->init(name, season, position)) {
@@ -51,6 +53,7 @@ Fishs* Fishs::create(const std::string& name, const std::string& season, const V
     return nullptr;
 }
 
+//初始化鱼的各种信息
 bool Fishs::init(const std::string& name, const std::string& season, const Vec2& position) {
     if (!Node::init()) {
         return false;
@@ -80,15 +83,17 @@ bool Fishs::init(const std::string& name, const std::string& season, const Vec2&
     return true;
 }
 
-
+//设置每种鱼的活动范围
 void Fishs::setActivityRange(float range) {
     this->activityRange = range;
 }
 
+//获取当前这种鱼的图片的资源路径
 std::string Fishs::getFishImagePath() const {
     return "../Resources/Animals/Fish/" + name + ".png";
 }
 
+//随机决定现在鱼的移动方向
 void Fishs::moveRandomly(float deltaTime) {
     // 随机决定鱼的移动方向，向左（-1）或向右（1）
     if (rand() % 100 < 5) {  // 5% 概率改变方向
@@ -118,7 +123,7 @@ void Fishs::moveRandomly(float deltaTime) {
     updateAnimation();
 }
 
-
+//鱼往左或往右的动画
 void Fishs::updateAnimation() {
     if (!sprite) {
         CCLOG("Error: Sprite is nullptr, cannot update animation.");
@@ -156,6 +161,7 @@ void Fishs::updateAnimation() {
     sprite->runAction(RepeatForever::create(animate));
 }
 
+//该函数根据给定的帧路径和帧矩形区域，从每个路径加载纹理，并创建相应的精灵帧。它会将成功加载的精灵帧添加到一个 `Vector<SpriteFrame*>` 容器中并返回。
 Vector<SpriteFrame*> Fishs::loadFrames(const std::vector<std::string>& framePaths, const Rect& frameRect) {
     Vector<SpriteFrame*> frames;
 
@@ -178,6 +184,7 @@ Vector<SpriteFrame*> Fishs::loadFrames(const std::vector<std::string>& framePath
     return frames;
 }
 
+//钓鱼函数，返回当前钓的鱼的类型
 std::string Fishs::catchFish(const std::string& season) {
     initializeSeasonFishMap();
 

@@ -42,13 +42,15 @@ public:
     Vec2 direction;
     Animal();
     ~Animal();
-    void setDirection(const Vec2& dir);
+  
+
     // 初始化资源
     static void initializeResourceMap();
     static void initializeAnimationMap();
 
     // 创建动物实例
     static Animal* create(const std::string& type, const Vec2& startPosition);
+    //初始化动物信息
     bool init(const std::string& type, const Vec2& startPosition);
     // 喂养动物
     void feed();
@@ -70,7 +72,7 @@ public:
 
     // 设置动物的随机移动
     void setRandomMovement(float deltaTime);
-    void startRandomMovement();
+
     // 播放方向动画
     void playDirectionAnimation(const std::string& direction, int repeatCount);
 };
