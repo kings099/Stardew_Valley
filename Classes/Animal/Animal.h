@@ -1,8 +1,8 @@
 /****************************************************************
  * Project Name:  Stardew_Valley
  * File Name:     Animal.h
- * File Function: Ð¡¶¯ÎïÀà£¬ÊµÏÖÐ¡¶¯ÎïµÄ¸÷ÖÖ»ù±¾²Ù×÷
- * Author:        ºú±¦âù
+ * File Function: Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½à£¬Êµï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * Author:        ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * Update Date:   2024/12/17
  * License:       MIT License
  ****************************************************************/
@@ -19,22 +19,22 @@ USING_NS_CC;
 class Animal : public Node {
     
 protected:
-    Sprite* angryIcon; // Å­ÆøÍ¼±ê
-    std::string type;   // ¶¯ÎïÀàÐÍ (Èç£ºchicken¡¢cow¡¢sheep)
-    float affection;    // ¶¯ÎïµÄºÃ¸Ð¶È
-    bool isFed;         // ÊÇ·ñÎ¹Ñø
-    float lastFedTime;  // ×îºóÎ¹ÑøÊ±¼ä
-    float affectionDecayRate; // ºÃ¸Ð¶ÈË¥¼õËÙÂÊ
-    float maxAffection;    // ×î´óºÃ¸Ð¶È
+    Sprite* angryIcon; // Å­ï¿½ï¿½Í¼ï¿½ï¿½
+    std::string type;   // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ (ï¿½ç£ºchickenï¿½ï¿½cowï¿½ï¿½sheep)
+    float affection;    // ï¿½ï¿½ï¿½ï¿½ÄºÃ¸Ð¶ï¿½
+    bool isFed;         // ï¿½Ç·ï¿½Î¹ï¿½ï¿½
+    float lastFedTime;  // ï¿½ï¿½ï¿½Î¹ï¿½ï¿½Ê±ï¿½ï¿½
+    float affectionDecayRate; // ï¿½Ã¸Ð¶ï¿½Ë¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    float maxAffection;    // ï¿½ï¿½ï¿½Ã¸Ð¶ï¿½
 
-    Sprite* sprite;   // ¶¯ÎïµÄ¾«Áé
-    Action* currentAnimation; // µ±Ç°²¥·ÅµÄ¶¯»­
+    Sprite* sprite;   // ï¿½ï¿½ï¿½ï¿½Ä¾ï¿½ï¿½ï¿½
+    Action* currentAnimation; // ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ÅµÄ¶ï¿½ï¿½ï¿½
     
-    Vec2 position;     // ¶¯ÎïµÄµ±Ç°×ø±ê
-    Vec2 origin;       // ´´½¨Ð¡¶¯ÎïÊ±Ö¸¶¨µÄÔ­µã (Õý·½ÐÎµÄ×óÏÂ½Ç)
-    float areaSize;    // Õý·½ÐÎÇøÓòµÄ´óÐ¡ (20x20)
+    Vec2 position;     // ï¿½ï¿½ï¿½ï¿½Äµï¿½Ç°ï¿½ï¿½ï¿½ï¿½
+    Vec2 origin;       // ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½Ê±Ö¸ï¿½ï¿½ï¿½ï¿½Ô­ï¿½ï¿½ (ï¿½ï¿½ï¿½ï¿½ï¿½Îµï¿½ï¿½ï¿½ï¿½Â½ï¿½)
+    float areaSize;    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä´ï¿½Ð¡ (20x20)
 
-    // ¶¯ÎïµÄ×ÊÔ´Ó³Éä
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ó³ï¿½ï¿½
     static std::unordered_map<std::string, std::vector<std::string>> resourceMap;
     static std::unordered_map<std::string, std::unordered_map<std::string, std::vector<std::string>>> animationMap;
 
@@ -42,38 +42,40 @@ public:
     Vec2 direction;
     Animal();
     ~Animal();
+
   
 
-    // ³õÊ¼»¯×ÊÔ´
+    // ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½Ô´
     static void initializeResourceMap();
     static void initializeAnimationMap();
 
-    // ´´½¨¶¯ÎïÊµÀý
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½
     static Animal* create(const std::string& type, const Vec2& startPosition);
-    //³õÊ¼»¯¶¯ÎïÐÅÏ¢
+    //ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     bool init(const std::string& type, const Vec2& startPosition);
-    // Î¹Ñø¶¯Îï
+
+    // Î¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     void feed();
 
-    // ¸üÐÂºÃ¸Ð¶È
+    // ï¿½ï¿½ï¿½ÂºÃ¸Ð¶ï¿½
     void updateAffection(float deltaTime);
 
-    // ÅÐ¶Ï¶¯ÎïÊÇ·ñ·¢¿ñ
+    // ï¿½Ð¶Ï¶ï¿½ï¿½ï¿½ï¿½Ç·ñ·¢¿ï¿½
     bool isAngry() const;
 
-    // ¶¯Îï·¢¿ñÊ±µÄ´¦Àí
+    // ï¿½ï¿½ï¿½ï·¢ï¿½ï¿½Ê±ï¿½Ä´ï¿½ï¿½ï¿½
     void handleAngry();
 
-    // »ñÈ¡¶¯Îïµ±Ç°ºÃ¸Ð¶È
+    // ï¿½ï¿½È¡ï¿½ï¿½ï¿½ïµ±Ç°ï¿½Ã¸Ð¶ï¿½
     float getAffection() const;
 
-    // »ñÈ¡¶¯ÎïÀàÐÍ
+    // ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     const std::string& getType() const;
 
-    // ÉèÖÃ¶¯ÎïµÄËæ»úÒÆ¶¯
+    // ï¿½ï¿½ï¿½Ã¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½
     void setRandomMovement(float deltaTime);
 
-    // ²¥·Å·½Ïò¶¯»­
+    // ï¿½ï¿½ï¿½Å·ï¿½ï¿½ò¶¯»ï¿½
     void playDirectionAnimation(const std::string& direction, int repeatCount);
 };
 

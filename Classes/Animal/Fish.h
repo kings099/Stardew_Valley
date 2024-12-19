@@ -53,7 +53,7 @@ private:
     Sprite* sprite;                      // 鱼的精灵
     Animate* currentAnimation;           // 当前动画
     int moveDirection;                   // 鱼的移动方向 (1: 向右, -1: 向左)
-    Vec2 initialPosition;  // 保存鱼的初始位置
+    Vec2 initialPosition;                // 保存鱼的初始位置
     // 季节性鱼类映射
     static std::unordered_map<std::string, std::vector<std::string>> seasonFishMap;
 
