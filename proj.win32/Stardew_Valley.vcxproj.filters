@@ -155,6 +155,10 @@
     <ClInclude Include="..\Classes\Layer\LoginLayer.h">
       <Filter>Classes\Layer</Filter>
 
+ </ClInclude>
+
+
+
     <ClInclude Include="..\Classes\Animal\Fish.h">
       <Filter>Classes\Animal</Filter>
 
@@ -261,6 +265,10 @@
 
     <ClCompile Include="..\Classes\Layer\LoginLayer.cpp">
       <Filter>Classes\Layer</Filter>
+
+</ClCompile>
+
+
 
     <ClCompile Include="..\Classes\Animal\Fish.cpp">
       <Filter>Classes\Animal</Filter>
