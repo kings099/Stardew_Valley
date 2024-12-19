@@ -1,3 +1,13 @@
+
+/****************************************************************
+ * Project Name:  Stardew_Valley
+ * File Name:     NpcManager.h
+ * File Function: 负责管理游戏中的 NPC 实例NpcManager类的实现
+                  包括 NPC 的初始化、查询、对话等功能。
+ * Author:        达思睿
+ * Update Date:   2024/12/13
+ * License:       MIT License
+ ****************************************************************/
 #pragma once
 #include "Character/NPC.h"
 #include "Character/Task.h"
