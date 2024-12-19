@@ -22,12 +22,18 @@ class Fishs : public Node {
 public:
     Fishs();
     virtual ~Fishs();
-
+    //初始化每种季节对应的鱼的类型的关联容器
     static void initializeSeasonFishMap();
+
+    //创建并返回一个新的 Fishs 对象。
     static Fishs* create(const std::string& name, const std::string& season, const Vec2& position);
 
+    //初始化每条鱼的信息
     bool init(const std::string& name, const std::string& season, const Vec2& position);
+
+    //设置每条鱼的自由移动范围
     void setActivityRange(float range);
+    //获取当前鱼的种类类型
     std::string getFishImagePath() const;
 
     // 随机移动

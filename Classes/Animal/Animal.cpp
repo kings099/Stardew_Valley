@@ -127,6 +127,7 @@ Animal* Animal::create(const std::string& type, const Vec2& startPosition) {
     return nullptr;
 }
 
+//初始化小动物信息
 bool Animal::init(const std::string& type, const Vec2& startPosition) {
     if (!Node::init()) {
         return false;
@@ -180,6 +181,7 @@ bool Animal::init(const std::string& type, const Vec2& startPosition) {
 
 }
 
+//喂养后调用喂养函数
 void Animal::feed() {
     isFed = true;
     affection = maxAffection;  // 喂养后好感度恢复到最大值
@@ -187,6 +189,7 @@ void Animal::feed() {
     CCLOG("%s is fed!", type.c_str());
 }
 
+//更新动物好感度
 void Animal::updateAffection(float deltaTime) {
     if (!isFed) {
         lastFedTime += deltaTime;
@@ -200,10 +203,12 @@ void Animal::updateAffection(float deltaTime) {
     }
 }
 
+//返回动物是否发怒的判断
 bool Animal::isAngry() const {
     return affection == 0;  // 好感度为0则动物发狂
 }
 
+//显示动物发怒图标（!）
 void Animal::handleAngry() {
     if (isAngry()) {
         CCLOG("%s is angry!", type.c_str());
@@ -228,15 +233,17 @@ void Animal::handleAngry() {
     }
 }
 
-
+//获取当前动物的好感度
 float Animal::getAffection() const {
     return affection;
 }
 
+//获取当前动物的类型
 const std::string& Animal::getType() const {
     return type;
 }
 
+//播放动物行走动画
 void Animal::playDirectionAnimation(const std::string& direction, int step) {
     // 确保指定方向存在于动画映射表中
     if (animationMap[type].find(direction) != animationMap[type].end()) {
@@ -252,6 +259,7 @@ void Animal::playDirectionAnimation(const std::string& direction, int step) {
     }
 }
 
+//设置当前动物随机移动的方向
 void Animal::setRandomMovement(float deltaTime) {
     // 随机选择一个方向
     int a;
