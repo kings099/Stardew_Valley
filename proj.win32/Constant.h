@@ -216,20 +216,6 @@ enum LocationStatus {
     OpenedBoxList			// 箱子列表打开
 };
 
-// 瓦片信息
-enum TileType {
-    Grass,      // 草
-    Tree,       // 树木
-    Stone,      // 矿石
-    Water,      // 水
-    Soil,       // 可耕种土地
-    Soiled,     // 已耕种土地
-    Crop,       // 作物
-    Door,       // 门
-   // Box,        // 箱子
-    Npc,        // NPC
-    Other
-};
 
 // 角色动作定义
 enum GameCharacterAction {
@@ -248,12 +234,6 @@ enum GameCharacterAction {
     DestoryObject,		// 破坏物品
 };
 
-// 掉落物品信息定义
-struct DropObject {
-    std::string name;        // 掉落物品名称 
-    int count;               // 掉落物品数量
-    int probability;         // 掉落物品概率
-};
 
 // 单个瓦片坐标信息定义
 struct TileInfo {
@@ -261,7 +241,7 @@ struct TileInfo {
     cocos2d::Vec2 tilePos;  // 瓦片坐标
     cocos2d::Vec2 WorldPos; // 世界坐标
     bool isObstacle;        // 是否为障碍物
-    std::map<std::string, std::pair<int, float>> drops; // 掉落物品映射 (物品名称 -> {数量, 概率})
+    std::unordered_map<std::string, std::pair<int, float>> drops; // 掉落物品映射 (物品名称 -> {数量, 概率})
 };
 
 // 位置属性定义
@@ -303,20 +283,20 @@ struct ObjectImageInfo {
 };
 
 // 角色动作和地图类型对应关系
-const std::map< GameCharacterAction, TileType> ACTION_TO_TILEMAP = {
-    { NoneAction, Other },
-    { Plowing, Soil },          // 左键
-    { Watering, Soiled },       // 左键
-    { Fertilize, Soiled },      // 左键
-    { GetWater, Water },        // 右键
-    { Weeding, Grass },         // 左键
-    { Cutting, Tree },          // 左键
-    { Mining, Stone },          // 左键
-    { Fishing, Water },         // 左键
-    { Harvesting, Crop },       // 右键
-    { Placement, Soil },        // 右键
+const std::map< GameCharacterAction, TileConstants::TileType> ACTION_TO_TILEMAP = {
+    { NoneAction, TileConstants::Other },
+    { Plowing,TileConstants::Soil },          // 左键
+    { Watering, TileConstants::Soiled },       // 左键
+    { Fertilize, TileConstants::Soiled },      // 左键
+    { GetWater,TileConstants::Water },        // 右键
+    { Weeding, TileConstants::Grass },         // 左键
+    { Cutting, TileConstants::Tree },          // 左键
+    { Mining, TileConstants::Stone },          // 左键
+    { Fishing, TileConstants::Water },         // 左键
+    { Harvesting, TileConstants::Crop },       // 右键
+    { Placement, TileConstants::Soil },        // 右键
   //  { OpenBox, Box},
-    { DestoryObject, Other}     // 左键
+    { DestoryObject, TileConstants::Other}     // 左键
 };
 
 // 游戏物品共有属性定义
