@@ -145,7 +145,7 @@
     <ClInclude Include="..\Classes\Character\Task.h">
       <Filter>Classes\Character</Filter>
     </ClInclude>
-    <ClInclude Include="TownMap.h">
+    <ClInclude Include="..\Classes\Maps\TownMap.h">
       <Filter>Classes\Maps</Filter>
     </ClInclude>
   </ItemGroup>
@@ -244,7 +244,7 @@
     <ClCompile Include="..\Classes\Character\Task.cpp">
       <Filter>Classes\Character</Filter>
     </ClCompile>
-    <ClCompile Include="TownMap.cpp">
+    <ClCompile Include="..\Classes\Maps\TownMap.cpp">
       <Filter>Classes\Maps</Filter>
     </ClCompile>
   </ItemGroup>

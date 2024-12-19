@@ -31,19 +31,19 @@ public:
 
     // 鼠标事件的处理
     bool onMouseEvent(cocos2d::Event* event);
+
     TMXTiledMap* FarmMap::getTiledMap() const;
 
     //在path层种植指定gid的树
     void plantTreesOnPathLayer();
-
-    //std::vector <Crops*> treeSprites;  // 保存树精灵的容器
-    void FarmMap::plantTreesOnPathLayer(int maxGrowthStage);
 
     // 获取树木图层
     void setTreeLayer(cocos2d::Node* treeLayer);
 
 private:
     cocos2d::Node* _treeLayer; // 树木层节点
+
+    //std::vector <Crops*> treeSprites;  // 保存树精灵的容器
 };
 
 #endif // __FARM_MAP_H_

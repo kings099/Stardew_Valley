@@ -42,7 +42,7 @@ bool GameMainScene::init()
     // 传递 treeLayer 给 FarmMap，用于添加树
     _farmMap->setTreeLayer(treeLayer);
 
-    _farmMap->plantTreesOnPathLayer(5); // 假设最大生长阶段为 5
+    _farmMap->plantTreesOnPathLayer(); // 假设最大生长阶段为 5
 
     // 加载角色
     _character = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png");

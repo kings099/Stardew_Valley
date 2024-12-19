@@ -45,8 +45,6 @@ bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition)
     }
     //// 在场景初始化时设置季节
     Crops::setSeason(Season::Spring); // 设置当前季节为春季
-    // 在 path 层种植橡树，枫树，松树
-    plantTreesOnPathLayer();
 
     Vec2 startPosition_1(416, 832);  // 例如设置小动物的原点为 (100, 100)
     Animal* sheep = Animal::create("sheep", startPosition_1);
@@ -127,7 +125,7 @@ void FarmMap::plantTreesOnPathLayer() {
                     _treeLayer->addChild(crop); // 添加到树木层
                     _treeLayer->setScale(FARM_MAP_SCALE);
                     crop->setPosition(tileToRelative(Vec2(col,row))); // 设置位置为瓦片的世界坐标
-                    crop->setGrowthStage(maxGrowthStage); // 直接设置为成熟阶
+                    crop->setGrowthStage(OAK_MAX_GROWTHSTAGE); // 直接设置为成熟阶
                     replaceTileAt("path", Vec2(col, row), OAK_INVISIBLE_GID);
                     replaceTileAt("Tree", Vec2(col, row), OAK_ROOT_GID);
                 }
@@ -143,7 +141,7 @@ void FarmMap::plantTreesOnPathLayer() {
                     _treeLayer->addChild(crop); // 添加到树木层
                     _treeLayer->setScale(FARM_MAP_SCALE);
                     crop->setPosition(tileToRelative(Vec2(col, row))); // 设置位置为瓦片的世界坐标
-                    crop->setGrowthStage(maxGrowthStage); // 直接设置为成熟阶
+                    crop->setGrowthStage(MAPLE_MAX_GROWTHSTAGE); // 直接设置为成熟阶
                     replaceTileAt("path", Vec2(col, row), MAMPLE_INVISIBLE_GID);
                     replaceTileAt("Tree", Vec2(col, row), MAMPLE_ROOT_GID);
                 }
@@ -159,7 +157,7 @@ void FarmMap::plantTreesOnPathLayer() {
                     _treeLayer->addChild(crop); // 添加到树木层
                     _treeLayer->setScale(FARM_MAP_SCALE);
                     crop->setPosition(tileToRelative(Vec2(col, row))); // 设置位置为瓦片的世界坐标
-                    crop->setGrowthStage(maxGrowthStage); // 直接设置为成熟阶
+                    crop->setGrowthStage(PINE_MAX_GROWTHSTAGE); // 直接设置为成熟阶
                     replaceTileAt("path", Vec2(col, row), PINE_INVISIBLE_GID);// 设置树木标志为不可见
                     replaceTileAt("Tree", Vec2(col, row), PINE_ROOT_GID);// 设置树根图块
                 }

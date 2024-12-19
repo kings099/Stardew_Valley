@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="130" height="110" tilewidth="16" tileheight="16" infinite="0" nextlayerid="37" nextobjectid="45">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="130" height="110" tilewidth="16" tileheight="16" infinite="0" nextlayerid="38" nextobjectid="45">
  <properties>
   <property name="BrookSounds" value="94 5 5"/>
   <property name="DayTiles" value="AlwaysFront 52 98 907 AlwaysFront 56 98 907 AlwaysFront 24 50 907 AlwaysFront 33 53 907 AlwaysFront 24 58 907 AlwaysFront 27 72 907 AlwaysFront 30 72 907 AlwaysFront 38 65 907 AlwaysFront 27 86 907 AlwaysFront 17 86 907 AlwaysFront 21 64 907 Buildings 92 79 186 Buildings 41 69 560 Buildings 71 67 720"/>
@@ -31,6 +31,11 @@
  <layer id="20" name="BackStone" width="130" height="110">
   <data encoding="base64" compression="zlib">
    eJzt3cmO1DAQgOGcEQwaTXNjeYK5w7CcWe+I5QXgNieuw1vxJiCxXFnFC7A56rGIMknaTuy4qvx/UguJS7fsSlwuVzJNgyV+H2z/fX9Q9ndAhu/EAZxfxAEAAJjpxqb0L4BUT4gNOC+Ig6o8Zb7hvCQOMILcQLcPieqH5Aa6/aCOjOb/OSMwR7+ORH5gQ0zfwd2BOSc/sCG07+AW822S3y+E9h1wrmBTzH6Be4Fd9CWiK2Rd4FwhDe3XnKVzhZJzQS+wHCXmIjYnT/29uWiuHZXoyy5Vw8/9vdSO4pSq4af+XvLEaaE5B3liHG3jFbrWaM8T1z5b0j5eYzQ/M1bibEnzeEn31o3tu8jxpZ6cRu79mwaMgf7erxRnjNrHIAWNvV+vTud+KC9oxeaIGsfAqq9uLj67zxf3+bZjXg4303kBNST72nvAbfe5k2Gu5+SpWM8h13f1cl7/mGetWuquPBBlrH02vSsPzCEmT61Vrv312HyzDsiUY3/Nur/MBTdue52PRqz7+uwZiDsAANZ2sr/9IBw9pWiN9ZQenf7/G+Kkeg9cDNzsxYG23mAsd3+zjYUuq73BiENvMCDPJ65LOH+JA0CEKy6Hvsa+Gobw/BBaIX0tvrZ47lLe3wL5HrpYeNRbC2urOVNLbZpnbs6fd+Z9qOZsHbXUs7o151ruCyVrqe3e5Krg/Un3vmD5vkk+Pa17X5B+3zzeb5rXM/tTeA47nMQzKN+bdLIgBjzL9zuEkxbn0uJS8/tSNZO2DvOuizJK3p/oa5Wh9P7lMXEgAu8TQ4t9rG3S+8z4+2vr+CkwDmLejShtL6uVxH7D65ttDNwbiYPuflHaXhbpTMVAn7RaG9IhJwDq5fNC7gN183lhrWJqtZL2R/59bRcTzV1MXmhRTK3W8v6o9vUgplbL/ghStb2sl1e8liWtjaXUNgZDvUaW18ZQtY3BUK+R5rXxONE79aSOQa7+lKPKc0dtcvan+OcTeM5Vvtz9KUPPuVqXuj6zhtx9i/3nXCVJteZ7H4Wu/SEk96tp22P9yfh7l/adhVzvqcc7VY96bXusKecXjmlIHph6LzP27uVYUvdYGkm+7wOW9d8tDbS0xIW2vFwjDbFAXl7G0thIdf2u/bd+u7gHbc2NhXbuUs1brr1ESP2Ae9AyGvaBU/UD35dAbcCOsXPEqX5F3oESJ2bdKHGuO3aOuKt/nb6EPELOdXM8W7DkHJG+hPQkn+tOqbEvAWeNxa+GegvWQSzAIxbWU/pdepDB96hQ4w33D4tpwVo=
+  </data>
+ </layer>
+ <layer id="37" name="Teleport" width="130" height="110">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20ON6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeDTfcAAB
   </data>
  </layer>
  <layer id="21" name="Back2" width="130" height="110">
