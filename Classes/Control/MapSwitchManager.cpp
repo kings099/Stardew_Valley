@@ -51,7 +51,7 @@ bool MapSwitchManager::switchMap(const std::string& newMapFile, Vec2& teleportPO
 
     if (newMapFile.find("Combat") != std::string::npos) {
         newMap = FarmMap::create(newMapFile,TreeLayer);
-        teleportPOS = newMap->tileToAbsolute(Vec2(10,10));
+        teleportPOS = newMap->tileToAbsolute(Vec2(50, 50));
     }
     else if (newMapFile.find("house") != std::string::npos) {
         newMap = IndoorMap::create(newMapFile);

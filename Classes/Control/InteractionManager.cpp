@@ -139,6 +139,14 @@ const TileInfo& InteractionManager::GetTileInfoAt(const Vec2& Tile_pos) {
         else if (pathProps.find("isStone") != pathProps.end() && pathProps["isStone"].asBool()) {
             tileInfo.type = Stone;
         }
+        else if(pathProps.find("isBranch") != pathProps.end() && pathProps["isBranch"].asBool())
+        {
+            tileInfo.type = Branch;
+        }
+        else if(pathProps.find("isTree") != pathProps.end() && pathProps["isTree"].asBool())
+        {
+            tileInfo.type = Tree;
+        }
     }
 
     // 判断water层

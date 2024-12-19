@@ -185,6 +185,7 @@ enum ObjectListNodeStatus {
 enum TileType {
     Grass,      // 草
     Tree,       // 树木
+    Branch,     // 树枝
     Stone,      // 矿石
     Water,      // 水
     Soil,       // 可耕种土地
@@ -225,6 +226,7 @@ struct TileInfo {
     cocos2d::Vec2 tilePos;  // 瓦片坐标
     cocos2d::Vec2 WorldPos; // 世界坐标
     bool isObstacle;        // 是否为障碍物
+    std::string dropout;    // 掉落物名称
 };
 
 // 位置属性定义
