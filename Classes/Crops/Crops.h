@@ -51,7 +51,7 @@ public:
     static void setPlayerLevel(int level); // 设置人物等级
     bool canBePlanted() const;             // 检查农作物是否满足种植条件
     void chopTree();                       //砍树
-    void harvestCrop();//收获函数，删去目前的农作物精灵
+    void harvestCrop();
 
     static void setSeason(Season season); // 设置季节
     static Season getSeason();           // 获取当前季节

@@ -134,7 +134,7 @@ enum GameObjectSkillType {
     Collect,			// 采集
     Mine,				// 采矿
     Fish,				// 钓鱼
-    None,				// 无
+   // None,				// 无
 };
 
 // 游戏工具类型定义
@@ -468,7 +468,7 @@ const std::vector<GameBaseObject> GAME_BASE_OBJECTS_ATTRS = {
     GameBaseObject(28,"../Resources/Objects/Base/Iron.png","Iron","铁锭",Mine,99,0,true,250,false,INVAVID_NUM,false,INVAVID_NUM,false,true,{{"IronParticle",10}}),
     GameBaseObject(29,"../Resources/Objects/Base/Fertilizer.png","Fertilizer","肥料",Farm,99,0,true,150,false,INVAVID_NUM,false,INVAVID_NUM,false,true,{}),
 
-    GameBaseObject(30,"","None","无效物品",GameObjectSkillType::None,0,0,false,INVAVID_NUM,false,INVAVID_NUM,false,INVAVID_NUM,false,false,{})
+   // GameBaseObject(30,"","None","无效物品",GameObjectSkillType::None,0,0,false,INVAVID_NUM,false,INVAVID_NUM,false,INVAVID_NUM,false,false,{})
 };
 
 // 游戏物品属性定义
