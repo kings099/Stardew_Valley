@@ -139,7 +139,7 @@
     <ClInclude Include="..\Classes\Animal\Animal.h">
       <Filter>Classes\Animal</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\Layer\AudioControlUI.h">
+    <ClInclude Include="..\Classes\Layer\AudioControlLayer.h">
       <Filter>Classes\Layer</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Layer\UILayer.h">
@@ -150,6 +150,14 @@
     </ClInclude>
     <ClInclude Include="..\Classes\Box\Box.h">
       <Filter>Classes\Box</Filter>
+    </ClInclude>
+
+    <ClInclude Include="..\Classes\Layer\LoginLayer.h">
+      <Filter>Classes\Layer</Filter>
+ </ClInclude>
+    <ClInclude Include="..\Classes\Animal\Fish.h">
+      <Filter>Classes\Animal</Filter>
+
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -241,7 +249,7 @@
     <ClCompile Include="..\Classes\Animal\Animal.cpp">
       <Filter>Classes\Animal</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\Layer\AudioControlUI.cpp">
+    <ClCompile Include="..\Classes\Layer\AudioControlLayer.cpp">
       <Filter>Classes\Layer</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\Character\Task.cpp">
@@ -249,6 +257,14 @@
     </ClCompile>
     <ClCompile Include="..\Classes\Box\Box.cpp">
       <Filter>Classes\Box</Filter>
+    </ClCompile>
+
+    <ClCompile Include="..\Classes\Layer\LoginLayer.cpp">
+      <Filter>Classes\Layer</Filter>
+</ClCompile>
+    <ClCompile Include="..\Classes\Animal\Fish.cpp">
+      <Filter>Classes\Animal</Filter>
+
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

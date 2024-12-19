@@ -2,9 +2,8 @@
 /****************************************************************
  * Project Name:  Stardew_Valley
  * File Name:     NpcManager.cpp
- * File Function: NpcManager类负责管理游戏中的 NPC 实例，
+ * File Function: 负责管理游戏中的 NPC 实例NpcManager类的实现
                   包括 NPC 的初始化、查询、对话等功能。
-                  采用单例模式，确保游戏中只有一个 NPC 管理器实例。
  * Author:        达思睿
  * Update Date:   2024/12/13
  * License:       MIT License

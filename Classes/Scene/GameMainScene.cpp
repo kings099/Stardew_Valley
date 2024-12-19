@@ -54,10 +54,10 @@ bool GameMainScene::init()
     //初始化UI层
     _uiLayer = UILayer::create();
     uiContainer->addChild(_uiLayer);
-    // 音频播放控制UI组件的初始化
-    AudioControlUI* audioControlUI = AudioControlUI::create();
-    uiContainer->addChild(audioControlUI, 1);  // 将音频控制UI添加到场景中
-
+    
+    // 创建音频控制层并添加到场景,层级为2
+    auto audioControlLayer = AudioControlLayer::create();
+    uiContainer->addChild(audioControlLayer);
 
     // 启动时间管理器的计时
     TimeManager::getInstance()->startUpdating();
