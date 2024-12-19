@@ -37,7 +37,7 @@ void Fishs::initializeSeasonFishMap() {
 
     seasonFishMap["spring"] = { "fishSpring_0", "fishSpring_1", "fishSpring_2", "fishSpring_3" };
     seasonFishMap["summer"] = { "fishSummer_0", "fishSummer_1", "fishSpring_0", "fishSpring_1" };
-    seasonFishMap["fall"] = { "fishFall_0", "fishFall_1", "fishSpring_2", "fishSpring_3" };
+    seasonFishMap["fall"] =   { "fishFall_0", "fishFall_1", "fishSpring_2", "fishSpring_3" };
     seasonFishMap["winter"] = { "fishWinter_0", "fishWinter_1", "fishSpring_1", "fishSpring_2" };
 }
 

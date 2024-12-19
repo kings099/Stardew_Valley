@@ -43,6 +43,7 @@ public:
     Animal();
     ~Animal();
     void setDirection(const Vec2& dir);
+
     // 初始化资源
     static void initializeResourceMap();
     static void initializeAnimationMap();
@@ -50,6 +51,7 @@ public:
     // 创建动物实例
     static Animal* create(const std::string& type, const Vec2& startPosition);
     bool init(const std::string& type, const Vec2& startPosition);
+
     // 喂养动物
     void feed();
 
