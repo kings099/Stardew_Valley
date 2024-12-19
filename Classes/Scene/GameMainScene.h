@@ -22,7 +22,7 @@
 #include "../Classes/Manager/TimeManager.h"
 #include "../Classes/Layer/TimeManagerUI.h"
 #include "Control/MapSwitchManager.h"
-#include "Layer/AudioControlUI.h"
+#include "Layer/AudioControlLayer.h"
 
 class GameMainScene : public cocos2d::Scene
 {

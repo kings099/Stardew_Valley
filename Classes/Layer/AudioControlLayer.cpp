@@ -1,18 +1,27 @@
-#include "AudioControlUI.h"
+/****************************************************************
+ * Project Name:  Stardew_Valley
+ * File Name:     AudioControlLayer.h
+ * File Function: 音频播放UI层的实现
+ * Author:        达思睿
+ * Update Date:   2024/12/16
+ * License:       MIT License
+ ****************************************************************/
+
+#include "AudioControlLayer.h"
 #include "audio/include/AudioEngine.h" // 引入音频引擎
 
 USING_NS_CC;
 
-AudioControlUI::AudioControlUI() : isAudioPlaying(true), audioButton(nullptr) {
+AudioControlLayer::AudioControlLayer() : isAudioPlaying(true), audioButton(nullptr) {
     // 构造函数
 }
 
-AudioControlUI::~AudioControlUI() {
+AudioControlLayer::~AudioControlLayer() {
     // 析构函数
 }
 
-bool AudioControlUI::init() {
-    if (!Node::init()) {
+bool AudioControlLayer::init() {
+    if (!Layer::init()) {
         return false;
     }
 
@@ -26,15 +35,15 @@ bool AudioControlUI::init() {
         visibleSize.height - audioButton->getContentSize().height / 2 - 20));
 
     // 添加点击事件监听
-    audioButton->addClickEventListener(CC_CALLBACK_1(AudioControlUI::stopAudioCallback, this));
+    audioButton->addClickEventListener(CC_CALLBACK_1(AudioControlLayer::stopAudioCallback, this));
 
-    // 将按钮添加到当前场景
+    // 将按钮添加到当前层
     this->addChild(audioButton);
 
     return true;
 }
 
-void AudioControlUI::stopAudioCallback(Ref* pSender) {
+void AudioControlLayer::stopAudioCallback(Ref* pSender) {
     if (isAudioPlaying) {
         // 停止所有音频播放
         cocos2d::experimental::AudioEngine::stopAll();
@@ -43,11 +52,11 @@ void AudioControlUI::stopAudioCallback(Ref* pSender) {
         // 更新音频状态
         isAudioPlaying = false;
 
-        // 改变按钮图标为播放
+        // 改变按钮图标
         audioButton->loadTextures("../Resources/UI/openMusic.png", "../Resources/UI/openMusic.png");
 
         // 更新按钮回调函数为开始音频
-        audioButton->addClickEventListener(CC_CALLBACK_1(AudioControlUI::startAudioCallback, this));
+        audioButton->addClickEventListener(CC_CALLBACK_1(AudioControlLayer::startAudioCallback, this));
     }
     else {
         // 播放音频（此处可以替换为你实际的音频文件）
@@ -57,14 +66,14 @@ void AudioControlUI::stopAudioCallback(Ref* pSender) {
         isAudioPlaying = true;
 
         // 改变按钮图标为停止
-        audioButton->loadTextures("../Resources/UI/openMusic.png", "../Resources/UI/openMusic.png");
+        audioButton->loadTextures("../Resources/UI/closeMusic.png", "../Resources/UI/closeMusic.png");
 
         // 更新按钮回调函数为停止音频
-        audioButton->addClickEventListener(CC_CALLBACK_1(AudioControlUI::stopAudioCallback, this));
+        audioButton->addClickEventListener(CC_CALLBACK_1(AudioControlLayer::stopAudioCallback, this));
     }
 }
 
-void AudioControlUI::startAudioCallback(Ref* pSender) {
+void AudioControlLayer::startAudioCallback(Ref* pSender) {
     // 播放音频
     cocos2d::experimental::AudioEngine::play2d("../Resources/Music/HelloMusic.mp3", true);
     CCLOG("Audio has been started.");
@@ -72,15 +81,15 @@ void AudioControlUI::startAudioCallback(Ref* pSender) {
     // 更新音频状态
     isAudioPlaying = true;
 
-    // 改变按钮图标为停止
+    // 改变按钮图标
     audioButton->loadTextures("../Resources/UI/closeMusic.png", "../Resources/UI/closeMusic.png");
 
     // 更新按钮回调函数为停止音频
-    audioButton->addClickEventListener(CC_CALLBACK_1(AudioControlUI::stopAudioCallback, this));
+    audioButton->addClickEventListener(CC_CALLBACK_1(AudioControlLayer::stopAudioCallback, this));
 }
 
-AudioControlUI* AudioControlUI::create() {
-    AudioControlUI* ret = new AudioControlUI();
+AudioControlLayer* AudioControlLayer::create() {
+    AudioControlLayer* ret = new AudioControlLayer();
     if (ret && ret->init()) {
         ret->autorelease();
         return ret;

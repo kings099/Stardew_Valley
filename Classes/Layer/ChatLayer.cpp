@@ -1,3 +1,11 @@
+/****************************************************************
+ * Project Name:  Stardew_Valley
+ * File Name:     ChatLayer.cpp
+ * File Function: NPC对话弹窗UI层的实现
+ * Author:        达思睿
+ * Update Date:   2024/12/16
+ * License:       MIT License
+ ****************************************************************/
 #include "ChatLayer.h"
 #include "ui/CocosGUI.h"
 
