@@ -20,7 +20,22 @@ constexpr int MEDIUM_RESOLUTION_HEIGHT = 720;                               // �
 constexpr int LARGE_RESOLUTION_WIDTH = 1920;                                // 大屏分辨率宽度
 constexpr int LARGE_RESOLUTION_HEIGHT = 1080;                               // 大屏分辨率高度
 constexpr float FRAME_RATE = 60.0f;                                         // 游戏帧率
-const std::string APPLICATION_TITLE = u8"星露谷物语 Stardew Valley";         // 游戏应用标题
+const std::string APPLICATION_TITLE = u8"星露谷物语 Stardew Valley";        // 游戏应用标题
+
+
+//游戏登录界面相关设置
+constexpr float VISIBLE_SIZE_RATIO_X = 1.0f;                               // 横向屏幕宽度比例因子（常量，默认1.0）
+constexpr float VISIBLE_SIZE_RATIO_Y = 1.0f;                               // 纵向屏幕高度比例因子（常量，默认1.0）
+constexpr float INPUT_BOX_HEIGHT_RATIO = 0.07f;                            // 输入框高度的比例因子（默认 7%）,实际数值为屏幕高度*该因子
+constexpr float VERTICAL_SPACING_RATIO = 0.02f;                            // 提示文本和输入框之间的垂直间距,实际数值为屏幕高度*该因子
+constexpr float INPUT_BOX_SPACING_RATIO = 0.14f;                           // 输入框和输入框之间的间距比例,实际数值为屏幕高度*该因子
+constexpr float LABEL_Y_OFFSET = 0.6f;                                     // 标签的Y偏移量比例因子,实际数值为屏幕高度*该因子
+constexpr float HALF_FACTOR = 0.5f;                                        // 替代 / 2 的常量因子
+
+//NPC相关设置
+constexpr float NPC_WIDTH = 32;											    // NPC宽度
+constexpr float NPC_HEIGHT = 64;                                            // NPC高度
+
 
 // 移动相关设置
 constexpr auto INVIAID_KEY = cocos2d::EventKeyboard::KeyCode::KEY_NONE;		// 无效键值
@@ -66,7 +81,7 @@ constexpr int OBJECT_LIST_COLS = 12;										// 物品列表列数
 
 // UI 相关设置
 constexpr int UI_SCALE = 210.0f;                                            // UI界面缩放
-constexpr int FONT_SIZE = 20;                                               // 字体大小
+constexpr int FONT_SIZE = 24;                                               // 字体大小
 constexpr int MAP_LAYER_GRADE = 0;                                          // 地图层级
 constexpr int CHARACTER_LAYER_GRADE = 1;                                    // 角色层级
 constexpr int UI_LAYER_GRADE = 2;                                           // UI层级
@@ -89,14 +104,15 @@ constexpr int OPEN_OBJIEC_LIST_DELETE_BUTTON_LEFT_BOUDARY = 1272;			// 物品栏
 constexpr int OPEN_OBJIEC_LIST_DELETE_BUTTON_RIGHT_BOUDARY = 1298;			// 物品栏删除按钮右边界
 constexpr int OPEN_OBJIEC_LIST_DELETE_BUTTON_TOP_BOUDARY = 512;				// 物品栏删除按钮上边界
 constexpr int OPEN_OBJIEC_LIST_DELETE_BUTTON_BOTTOM_BOUDARY = 568;			// 物品栏删除按钮下边界
+//NPC求婚对话框相关设置
+const float DIALOG_WIDTH_RATIO = 0.5f;                                      // 对话框宽度占屏幕宽度的比例
+const float DIALOG_HEIGHT_RATIO = 0.25f;                                    // 对话框高度占屏幕高度的比例
+const float BUTTON_SIZE_RATIO = 0.1f;                                       // 按钮大小占对话框大小的比例
+const float BUTTON_OFFSET_RATIO = 0.2f;                                     // 按钮与对话框边缘的距离比例
 
 // 游戏时间设置
-constexpr int SECONDS_IN_A_DAY = 86400;                                     // 一天的秒数
-constexpr float TIME_SCALE = 3600.0f;                                       // 游戏时间与实际时间的比例，1秒 = 游戏1小时
-constexpr int HOURS_IN_A_DAY = 24;                                          // 一天24小时
-constexpr int SECONDS_IN_A_HOUR = 3600;                                     // 一小时60分钟
-constexpr int SEASONS_CHANGE_PERIOD = 30;                                   // 每30天切换一个季节
-constexpr int SECONDS_IN_A_MIN = 60;                                        // 每分钟60秒
+
+constexpr int HOURS_IN_A_DAY = 24;                                          // 一天24小时                                     
 constexpr int DAYS_IN_A_SEASON = 7;                                         // 每季7天
 constexpr int DAYS_IN_A_YEAR = 28;                                          // 一年28天
 
@@ -532,6 +548,7 @@ struct BoxNode {
         _boxObjectList.resize(_maxObjectKindCount);
     }
 };
+
 
 
 

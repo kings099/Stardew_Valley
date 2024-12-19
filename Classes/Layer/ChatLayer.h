@@ -1,14 +1,18 @@
-#pragma once
+/****************************************************************
+ * Project Name:  Stardew_Valley
+ * File Name:     ChatLayer.h
+ * File Function: NPC对话弹窗UI层的定义
+ * Author:        达思睿
+ * Update Date:   2024/12/16
+ * License:       MIT License
+ ****************************************************************/
 #pragma once
 #ifndef CHATLAYER_H
 #define CHATLAYER_H
 
 #include "cocos2d.h"
 
-/**
- * @class ChatLayer
- * @brief 用于管理游戏中的聊天界面，显示对话框和其他聊天 UI 组件。
- */
+
 class ChatLayer : public cocos2d::Layer {
 public:
     //构造函数
@@ -32,4 +36,4 @@ private:
     cocos2d::Label* dialogLabel;     ///< 显示消息的标签
 };
 
-#endif // CHATLAYER_H
+#endif 
