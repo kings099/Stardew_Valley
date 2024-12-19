@@ -3,7 +3,7 @@
  * File Name:     Character.h
  * File Function: Character类的定义
  * Author:        尹诚成
- * Update Date:   2023/12/07
+ * Update Date:   2023/12/19
  * License:       MIT License
  ****************************************************************/
 
@@ -25,7 +25,7 @@ public:
     void onKeyReleased(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event);
 
     // 按下鼠标时的处理
-    void onMouseDown(cocos2d::Event* event, GameCharacterAction& gameCharacterAction, cocos2d::Vec2& targetTilePos);
+    void onMouseDown(cocos2d::Event* event, GameCharacterAction& gameCharacterAction, cocos2d::Vec2& targetTilePos, InteractionManager* interactionManager);
 
     // 更新位置
     cocos2d::Vec2 updatePosition(float deltaTime);

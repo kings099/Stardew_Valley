@@ -19,7 +19,10 @@
 
 class InteractionManager : public cocos2d::Node {
 public:
+    // 构造函数
     InteractionManager();
+
+    // 析构函数
     ~InteractionManager();
 
     // 创建交互管理器实例
@@ -49,8 +52,8 @@ public:
     const TileInfo GetLineTileInfo(Direction dir, int distance, const Vec2& WroldPos);
 
 private:
-    GameMap* _gameMap;             // 当前地图对象的引用
-    std::vector<TileInfo> _surroundingTiles; // 储存角色周围 9 格瓦片的信息
+    GameMap* _gameMap;                          // 当前地图对象的引用
+    std::vector<TileInfo> _surroundingTiles;    // 储存角色周围 9 格瓦片的信息
 
     // 获取某个瓦片的地块信息
     const TileInfo GetTileInfoAt(const Vec2& WroldPos);

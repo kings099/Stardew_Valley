@@ -19,6 +19,7 @@ public:
 
     // 播放碎石动画
     static void playStoneBreakingAnimation(const Vec2& position, TMXTiledMap* farmMap);
+
     //砍木桩动画
     static void playWoodCuttingAnimation(const Vec2& position, TMXTiledMap* farmMap);
 

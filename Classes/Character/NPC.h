@@ -79,7 +79,7 @@ public:
     // 获取当前好感度
     int getAffection() const;
 
-    void  showTaskCompletionReward(Task* task);
+    void showTaskCompletionReward(Task* task);
 
     void addTask(Task* task);
 

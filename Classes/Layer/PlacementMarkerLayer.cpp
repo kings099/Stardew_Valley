@@ -3,7 +3,7 @@
  * File Name:     PlacementMarkerLayer.cpp
  * File Function: 放置标记层类PlacementMarkerLayer的实现
  * Author:        尹诚成
- * Update Date:   2024/12/11
+ * Update Date:   2024/12/18
  * License:       MIT License
  ****************************************************************/
 
@@ -40,8 +40,10 @@ void PlacementMarkerLayer::showPlacementMarker()
 
     if (boxListStatus) {
         for (int i = 0; i < OBJECT_LIST_COLS; i++) {
-            if (Box::getInstace().getBoxList()._boxObjectList[i].count == 0) {
-                createPlacementMarker({OpenedBoxList, i});
+            if (Box::getInstance().getBoxCount() != 0) {
+                if (Box::getInstance().getBoxList()._boxObjectList[i].count == 0) {
+                    createPlacementMarker({ OpenedBoxList, i });
+                }
             }
         }
     }
