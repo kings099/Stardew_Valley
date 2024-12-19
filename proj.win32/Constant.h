@@ -55,6 +55,8 @@ constexpr int LEVEL3_TO_LEVEL4_EXPRIENCE = 100;                             // �
 constexpr int LEVEL4_TO_LEVEL5_EXPRIENCE = 200;                             // 从四级升到五级需要的经验值
 constexpr int SKILL_KIND_NUM = 4;                                           // 技能种类数量
 constexpr int SKILL_LEVEL_NUM = 5;                                          // 技能最大等级
+constexpr int MIN_FISHING_DISTANCE = 3;                                     // 鱼竿最小捕鱼距离
+constexpr int MAX_FISHING_DISTANCE = 5;                                    // 鱼竿最大捕鱼距离
 
 // 场景过渡相关
 constexpr float LERP_SPEED = 0.1f;											// 插值平滑速度
@@ -104,6 +106,7 @@ constexpr int OPEN_OBJIEC_LIST_DELETE_BUTTON_LEFT_BOUDARY = 1272;			// 物品栏
 constexpr int OPEN_OBJIEC_LIST_DELETE_BUTTON_RIGHT_BOUDARY = 1298;			// 物品栏删除按钮右边界
 constexpr int OPEN_OBJIEC_LIST_DELETE_BUTTON_TOP_BOUDARY = 512;				// 物品栏删除按钮上边界
 constexpr int OPEN_OBJIEC_LIST_DELETE_BUTTON_BOTTOM_BOUDARY = 568;			// 物品栏删除按钮下边界
+
 //NPC求婚对话框相关设置
 const float DIALOG_WIDTH_RATIO = 0.5f;                                      // 对话框宽度占屏幕宽度的比例
 const float DIALOG_HEIGHT_RATIO = 0.25f;                                    // 对话框高度占屏幕高度的比例
@@ -111,7 +114,6 @@ const float BUTTON_SIZE_RATIO = 0.1f;                                       // �
 const float BUTTON_OFFSET_RATIO = 0.2f;                                     // 按钮与对话框边缘的距离比例
 
 // 游戏时间设置
-
 constexpr int HOURS_IN_A_DAY = 24;                                          // 一天24小时                                     
 constexpr int DAYS_IN_A_SEASON = 7;                                         // 每季7天
 constexpr int DAYS_IN_A_YEAR = 28;                                          // 一年28天
@@ -131,7 +133,8 @@ enum GameObjectSkillType {
     Farm,				// 耕种
     Collect,			// 采集
     Mine,				// 采矿
-    Fish				// 钓鱼
+    Fish,				// 钓鱼
+    None,				// 无
 };
 
 // 游戏工具类型定义
@@ -162,10 +165,10 @@ enum GameObjectMapType {
 
 // 角色朝向
 enum Direction {
-    Up,
-    Down,
-    Left,
-    Right,
+    Up,                 // 上
+    Down,               // 下
+    Left,               // 左
+    Right,              // 右
 };
 
 // 鼠标按键
@@ -183,7 +186,7 @@ enum ObjectListNodeStatus {
 // 位置状态定义
 enum LocationStatus {
     ClosedObjectList,		// 物品栏关闭
-    OpenedObjectList,			// 物品栏打开
+    OpenedObjectList,		// 物品栏打开
     OpenedBoxList			// 箱子列表打开
 };
 
@@ -213,20 +216,26 @@ enum GameCharacterAction {
     Cutting,			// 砍树
     Mining,				// 采矿
     Fishing,		    // 钓鱼
-    Buying,				// 购买
     Harvesting,			// 收获
     Placement,			// 放置
-    Transition,			// 转换场景
     OpenBox,			// 打开箱子
     DestoryObject,		// 破坏物品
+};
+
+// 掉落物品信息定义
+struct DropObject {
+    std::string name;        // 掉落物品名称 
+    int count;               // 掉落物品数量
+    int probability;         // 掉落物品概率
 };
 
 // 单个瓦片坐标信息定义
 struct TileInfo {
     TileType type;
-    cocos2d::Vec2 tilePos;  // 瓦片坐标
-    cocos2d::Vec2 WorldPos; // 世界坐标
-    bool isObstacle;        // 是否为障碍物
+    cocos2d::Vec2 tilePos;   // 瓦片坐标
+    cocos2d::Vec2 WorldPos;  // 世界坐标
+    bool isObstacle;         // 是否为障碍物
+    DropObject dropObject;   // 掉落物品
 };
 
 // 位置属性定义
@@ -280,7 +289,6 @@ const std::map< GameCharacterAction, TileType> ACTION_TO_TILEMAP = {
     { Fishing, Water },         // 左键
     { Harvesting, Crop },       // 右键
     { Placement, Soil },        // 右键
-    { Transition, Door},        // 右键
   //  { OpenBox, Box},
     { DestoryObject, Other}     // 左键
 };
@@ -419,7 +427,7 @@ const std::vector<GameBaseObject> GAME_BASE_OBJECTS_ATTRS = {
         true, // 是否能出售
         120,  // 出售价格
         false, // 是否可以购买
-        -1,    // 购买价格
+        INVAVID_NUM,    // 购买价格
         true, // 是否可以食用
         20,   // 食用恢复的能量值
         false, // 能否放置
@@ -432,7 +440,7 @@ const std::vector<GameBaseObject> GAME_BASE_OBJECTS_ATTRS = {
         true, // 是否能出售
         100,  // 出售价格
         false, // 是否可以购买
-        -1,    // 购买价格
+        INVAVID_NUM,    // 购买价格
         true, // 是否可以食用
         15,   // 食用恢复的能量值
         false, // 能否放置
@@ -445,19 +453,22 @@ const std::vector<GameBaseObject> GAME_BASE_OBJECTS_ATTRS = {
         true, // 是否能出售
         150,  // 出售价格
         false, // 是否可以购买
-        -1,    // 购买价格
+        INVAVID_NUM,    // 购买价格
         true, // 是否可以食用
         25,   // 食用恢复的能量值
         false, // 能否放置
         true,  // 是否可以合成
-        {{"pumpkin_seed", 3}, {"", 1}} // 合成物品的原料
+        {{"pumpkin_seed", 3}, {"Fertilizer", 1}} // 合成物品的原料
     ),
-    GameBaseObject(23,"../Resources/Objects/Base/Timber.png","Timber", "木材",Collect,99,0,true,3,false,INVAVID_NUM,false,INVAVID_NUM,false,false),
-    GameBaseObject(24,"../Resources/Objects/Base/Stone.png","Stone","石头",Mine,99,0,true,5,false,INVAVID_NUM,false,INVAVID_NUM,false,false),
-    GameBaseObject(25,"../Resources/Objects/Base/CopperParticle.png","CopperParticle","铜粒",Mine,99,0,true,12,false,INVAVID_NUM,false,INVAVID_NUM,false,false),
-    GameBaseObject(26,"../Resources/Objects/Base/IronParticle.png","IronParticle","铁粒",Mine,99,2,true,25,false,INVAVID_NUM,false,INVAVID_NUM,false,false),
+    GameBaseObject(23,"../Resources/Objects/Base/Timber.png","Timber", "木材",Collect,99,0,true,3,false,INVAVID_NUM,false,INVAVID_NUM,false,false,{}),
+    GameBaseObject(24,"../Resources/Objects/Base/Stone.png","Stone","石头",Mine,99,0,true,5,false,INVAVID_NUM,false,INVAVID_NUM,false,false,{}),
+    GameBaseObject(25,"../Resources/Objects/Base/CopperParticle.png","CopperParticle","铜粒",Mine,99,0,true,12,false,INVAVID_NUM,false,INVAVID_NUM,false,false,{}),
+    GameBaseObject(26,"../Resources/Objects/Base/IronParticle.png","IronParticle","铁粒",Mine,99,2,true,25,false,INVAVID_NUM,false,INVAVID_NUM,false,false,{}),
     GameBaseObject(27,"../Resources/Objects/Base/Copper.png","Copper","铜锭",Mine,99,0,true,120,false,INVAVID_NUM,false,INVAVID_NUM,false,true,{{"CopperParticle",10}}),
-    GameBaseObject(28,"../Resources/Objects/Base/Iron.png","Iron","铁锭",Mine,99,0,true,250,false,INVAVID_NUM,false,INVAVID_NUM,false,true,{{"IronParticle",10}})
+    GameBaseObject(28,"../Resources/Objects/Base/Iron.png","Iron","铁锭",Mine,99,0,true,250,false,INVAVID_NUM,false,INVAVID_NUM,false,true,{{"IronParticle",10}}),
+    GameBaseObject(29,"../Resources/Objects/Base/Fertilizer.png","Fertilizer","肥料",Farm,99,0,true,150,false,INVAVID_NUM,false,INVAVID_NUM,false,true,{}),
+
+    GameBaseObject(30,"","None","无效物品",GameObjectSkillType::None,0,0,false,INVAVID_NUM,false,INVAVID_NUM,false,INVAVID_NUM,false,false,{})
 };
 
 // 游戏物品属性定义

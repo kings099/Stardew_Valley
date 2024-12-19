@@ -20,7 +20,7 @@ public:
 	CharacterAction(const std::string& filename);
 
 	// 按下鼠标事件触发函数
-	void onMouseDown(cocos2d::Event* event,GameCharacterAction &gameCharacterAction,cocos2d::Vec2 & targetTilePos);
+	void onMouseDown(cocos2d::Event* event,GameCharacterAction &gameCharacterAction,cocos2d::Vec2 & targetTilePos, InteractionManager* interactionManager);
 
 	// 保存数据
 	bool saveData(const std::string& fileName);
@@ -37,17 +37,14 @@ private:
 	// 获取角色打算执行的动作(鼠标左键)
 	GameCharacterAction getLeftButtonAction();
 
-	// 判断角色是否可以执行动作(鼠标左键)
-	GameCharacterAction checkLeftButtonActionIsValid(cocos2d::Vec2& targetTilePos);
-
 	// 获取角色打算执行的动作(鼠标右键)
 	GameCharacterAction getRightButtonAction();
 
-	// 判断角色是否可以执行动作(鼠标右键)
-	GameCharacterAction checkRightButtonActionIsValid(cocos2d::Vec2& targetTilePos);
+	// 判断角色是否可以执行动作
+	bool checkActionIsValid(GameCharacterAction action,cocos2d::Vec2& targetTilePos, InteractionManager* interactionManager);
 
 	// 获取角色动作对象的瓦片信息
-	TileInfo getTileInfo(GameCharacterAction action);
+	TileInfo getTileInfo(GameCharacterAction action, InteractionManager* interactionManager);
 
 	// 更新技能等级
 	void updateSkillLevel();

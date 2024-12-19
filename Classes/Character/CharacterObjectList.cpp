@@ -175,7 +175,7 @@ bool CharacterObjectList::synthesisObject(GameBaseObject targetObject) {
 // 合成物品
 bool CharacterObjectList::synthesisObject(const std::string& targetObjectName) {
 	 GameCommonObject targetObject = findObjectByName(targetObjectName);
-	 if (targetObject.type != Base) {
+	 if (targetObject.type != Base ) {
 		 return false;
 	 }
 
@@ -279,7 +279,10 @@ int CharacterObjectList::findObjectByObjectList(std::string targetObjectName) {
 // 查找物品栏中是否有指定物品
 GameCommonObject CharacterObjectList::findObjectByName(const std::string& name) {
 {
-	GameCommonObject result;
+	GameCommonObject result = { GameObjectMapType::None,nullptr };
+	if (name == "None") {
+		return result;
+	}
 
 	// 尝试从工具对象列表中查找
 	for (const auto& tool : GAME_TOOL_OBJECTS_ATTRS) {
