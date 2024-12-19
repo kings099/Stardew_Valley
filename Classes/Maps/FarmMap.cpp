@@ -10,6 +10,8 @@
 #include "FarmMap.h"
 #include "Classes/Crops/Crops.h"
 #include "Classes/Animal/Animal.h"
+#include "Classes/Animal/Fish.h"
+
 USING_NS_CC;
 
 FarmMap::FarmMap(const Vec2& mapPosition)
@@ -50,13 +52,11 @@ bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition, Node* Tr
     //// 在场景初始化时设置季节
     Crops::setSeason(Season::Spring); // 设置当前季节为春季
 
-    Vec2 startPosition_1(416, 832);  // 例如设置小动物的原点为 (100, 100)
-    Animal* sheep = Animal::create("sheep", startPosition_1);
-    _tile_map->addChild(sheep);
+    // 初始化小动物
+    initializeAnimals();
 
-    Vec2 startPosition_2(480, 816);  // 例如设置小动物的原点为 (100, 100)
-    Animal* chicken = Animal::create("chicken", startPosition_2);
-    _tile_map->addChild(chicken);
+    // 初始化鱼
+    initializeFishes();
 
     Vec2 startPosition_3(464, 800);  // 例如设置小动物的原点为 (100, 100)
     Animal* cow = Animal::create("cow", startPosition_3);
@@ -174,5 +174,83 @@ void FarmMap::plantTreesOnPathLayer() {
 
             }
         }
+    }
+}
+
+void FarmMap::initializeAnimals() {
+    CCLOG("Initializing animals...");
+
+    Vec2 startPosition_1(416, 832); //羊
+    Animal* sheep = Animal::create("sheep", startPosition_1);
+    if (sheep) {
+        _tile_map->addChild(sheep);
+        CCLOG("Sheep added successfully!");
+    }
+    else {
+        CCLOG("Error: Failed to create sheep!");
+    }
+
+    Vec2 startPosition_2(480, 816); //鸡
+    Animal* chicken = Animal::create("chicken", startPosition_2);
+    if (chicken) {
+        _tile_map->addChild(chicken);
+        CCLOG("Chicken added successfully!");
+    }
+    else {
+        CCLOG("Error: Failed to create chicken!");
+    }
+
+    Vec2 startPosition_3(464, 800); //牛
+    Animal* cow = Animal::create("cow", startPosition_3);
+    if (cow) {
+        _tile_map->addChild(cow);
+        CCLOG("Cow added successfully!");
+    }
+    else {
+        CCLOG("Error: Failed to create cow!");
+    }
+}
+
+void FarmMap::initializeFishes() {
+    CCLOG("Initializing fishes...");
+
+    Vec2 Position_1(816, 512);
+    Fishs* fish_0 = Fishs::create("fishSpring_0", "spring", Position_1);
+    if (fish_0) {
+        _tile_map->addChild(fish_0, 10);  // 设置 z-order 确保在前景中
+        CCLOG("Fish 0 added successfully!");
+    }
+    else {
+        CCLOG("Error: Failed to create fish_0!");
+    }
+
+    Vec2 Position_2(720, 512);
+    Fishs* fish_1 = Fishs::create("fishSpring_1", "spring", Position_2);
+    if (fish_1) {
+        _tile_map->addChild(fish_1, 10);
+        CCLOG("Fish 1 added successfully!");
+    }
+    else {
+        CCLOG("Error: Failed to create fish_1!");
+    }
+
+    Vec2 Position_3(880, 512);
+    Fishs* fish_2 = Fishs::create("fishSpring_2", "spring", Position_3);
+    if (fish_2) {
+        _tile_map->addChild(fish_2, 10);
+        CCLOG("Fish 2 added successfully!");
+    }
+    else {
+        CCLOG("Error: Failed to create fish_2!");
+    }
+
+    Vec2 Position_4(752, 422);
+    Fishs* fish_3 = Fishs::create("fishSpring_3", "spring", Position_4);
+    if (fish_3) {
+        _tile_map->addChild(fish_3, 10);
+        CCLOG("Fish 3 added successfully!");
+    }
+    else {
+        CCLOG("Error: Failed to create fish_3!");
     }
 }

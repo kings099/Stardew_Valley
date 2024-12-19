@@ -42,7 +42,8 @@ private:
 
     //在path层种植指定gid的树
     void plantTreesOnPathLayer();
-
+    void initializeAnimals();
+    void initializeFishes();
     //std::vector <Crops*> treeSprites;  // 保存树精灵的容器
 };
 

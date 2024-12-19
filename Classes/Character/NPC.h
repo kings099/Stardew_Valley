@@ -14,12 +14,15 @@
 #include "cocos2d.h"
 #include "Task.h"
 #include "GiftItem.h"
+#include "Control/GiftItemManager.h"
 #include "ui/CocosGUI.h"
 #include "Layer/ChatLayer.h"
 #include"CharacterInfo.h"
 #include <vector>
 #include <string>
 #include"Character.h"
+
+
 
 class NPC : public cocos2d::Node {
 public: 
@@ -81,6 +84,8 @@ public:
     void addTask(Task* task);
 
     void showTaskList();
+
+    void onKeyPressed(EventKeyboard::KeyCode keyCode, Event* event);
 
     };
 

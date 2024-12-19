@@ -2,7 +2,7 @@
  * Project Name:  Stardew_Valley
  * File Name:     NPC.cpp
  * File Function: 封装了与 NPC 相关的基本功能，
-                  如显示对话框、增加好感度、接受礼物、播放行走动画等。
+                  显示对话框、增加好感度、接受礼物、播放行走动画等。
                   NPC 对象可以与玩家互动，包括对话以及送礼。
  * Author:        达思睿
  * Update Date:   2024/12/13
@@ -18,6 +18,11 @@ NPC::NPC(std::string name, cocos2d::Vec2 position, const std::string& idleImage,
     : name(name), affection(0), isMarried(false), isMoving(false) {
     setPosition(position);                    // 初始化 NPC 位置
     initializeSprite(idleImage, walkFrames);  // 初始化精灵和动画
+
+    // 注册键盘监听事件
+    auto listener = EventListenerKeyboard::create();
+    listener->onKeyPressed = CC_CALLBACK_2(NPC::onKeyPressed, this);  // 绑定按键事件
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
 }
 
 // 初始化精灵和动画
@@ -29,9 +34,9 @@ void NPC::initializeSprite(const std::string& idleImage, const std::vector<std::
     sprite->setPosition(getPosition());
     addChild(sprite);
 
-    // 设置精灵缩放比例
-    sprite->setScaleX(32.0f / sprite->getContentSize().width);  
-    sprite->setScaleY(64.0f / sprite->getContentSize().height); 
+    // 设置精灵缩放比例,让精灵的大小固定
+    sprite->setScaleX(NPC_WIDTH / sprite->getContentSize().width);  
+    sprite->setScaleY(NPC_HEIGHT / sprite->getContentSize().height); 
 
     // 设置行走动画
     cocos2d::Vector<cocos2d::SpriteFrame*> walkSpriteFrames;
@@ -70,38 +75,47 @@ void NPC::showMarriageChoices() {
         if (!runningScene) {
             return;
         }
+
         const auto visibleSize = Director::getInstance()->getVisibleSize();
+        const auto origin = Director::getInstance()->getVisibleOrigin();
+
+      
+
         // 创建一个自定义的对话框
         auto dialog = ui::Layout::create();
         dialog->setBackGroundColorType(ui::Layout::BackGroundColorType::SOLID);
         dialog->setBackGroundColor(Color3B(0, 0, 0));
         dialog->setOpacity(200);
-        dialog->setContentSize(Size(400, 200));
-        dialog->setPosition(Vec2(visibleSize.width / 2 - 200, visibleSize.height / 2 - 100));
+        dialog->setContentSize(Size(visibleSize.width * DIALOG_WIDTH_RATIO, visibleSize.height * DIALOG_HEIGHT_RATIO));
+        dialog->setPosition(Vec2(origin.x + visibleSize.width * 0.25f, origin.y + visibleSize.height * 0.375f));
         runningScene->addChild(dialog, 10);
 
-        // 创建文本信息
-        auto text = Label::createWithSystemFont("Would you like to propose?", "Arial", 24);
-        text->setPosition(Vec2(dialog->getContentSize().width / 2, dialog->getContentSize().height-50));
+        // 创建询问文本信息，字体大小设为30
+        auto text = Label::createWithSystemFont("Would you like to propose?", "Arial", 30);
+        text->setPosition(Vec2(dialog->getContentSize().width / 2, dialog->getContentSize().height - dialog->getContentSize().height * 0.3f));
         dialog->addChild(text);
-        auto text1 = Label::createWithSystemFont("Affection is sufficient now!", "Arial", 24);
-        text1->setPosition(Vec2(dialog->getContentSize().width / 2, dialog->getContentSize().height - 80));
+
+        // 创建额外的文本信息，字体大小设为30
+        auto text1 = Label::createWithSystemFont("Affection is sufficient now!", "Arial", 30);
+        text1->setPosition(Vec2(dialog->getContentSize().width / 2, dialog->getContentSize().height - dialog->getContentSize().height * 0.5f));
         dialog->addChild(text1);
 
-        // "Yes" 按钮，玩家同意结婚
+        // "Yes" 按钮，玩家同意结婚，字体大小设为30
         auto yesButton = ui::Button::create();
         yesButton->setTitleText("Yes");
-        yesButton->setPosition(Vec2(dialog->getContentSize().width / 2 - 80, 40));
+        yesButton->setTitleFontSize(30);  // 设置按钮字体大小为30
+        yesButton->setPosition(Vec2(dialog->getContentSize().width / 2 - dialog->getContentSize().width * BUTTON_OFFSET_RATIO, dialog->getContentSize().height * BUTTON_SIZE_RATIO));
         yesButton->addClickEventListener([this, dialog](Ref* sender) {
             marryPlayer();  // 玩家同意结婚
             dialog->removeFromParent();  // 移除对话框
             });
         dialog->addChild(yesButton);
 
-        // "No" 按钮，玩家拒绝结婚
+        // "No" 按钮，玩家拒绝结婚，字体大小设为30
         auto noButton = ui::Button::create();
         noButton->setTitleText("No");
-        noButton->setPosition(Vec2(dialog->getContentSize().width / 2 + 80, 40));
+        noButton->setTitleFontSize(30);  // 设置按钮字体大小为30
+        noButton->setPosition(Vec2(dialog->getContentSize().width / 2 + dialog->getContentSize().width * BUTTON_OFFSET_RATIO, dialog->getContentSize().height * BUTTON_SIZE_RATIO));
         noButton->addClickEventListener([this, dialog](Ref* sender) {
             dialog->removeFromParent();  // 移除对话框
             });
@@ -173,7 +187,6 @@ void NPC::playMarriageAnimation() {
         }), nullptr));
 }
 
-
 void NPC::showTaskList() {
     std::string taskInfo = "Available Tasks:\n";
 
@@ -206,6 +219,9 @@ void NPC::showTaskList() {
                 // 如果任务没有完成，执行任务
                 // 执行任务1的逻辑
             }
+            else {
+
+            }
             });
         runningScene->addChild(taskButton1, 10);
 
@@ -219,13 +235,13 @@ void NPC::showTaskList() {
                 // 如果任务没有完成，执行任务
                 // 执行任务2的逻辑
             }
+            else {
+
+            }
             });
         runningScene->addChild(taskButton2, 10);
     }
 }
-
-
-
 
 
 void NPC::addTask(Task* task) {
@@ -302,4 +318,23 @@ std::string NPC::getName() {
 // 获取当前好感度
 int NPC::getAffection() const {
     return affection;  // 返回当前好感度
+}
+
+// 键盘按下事件处理
+void NPC::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* event) {
+    // 检查按下的是否是 T 键
+    if (keyCode == EventKeyboard::KeyCode::KEY_T) {
+        // 触发 NPC 显示任务列表
+        showTaskList();
+    }
+    if (keyCode == EventKeyboard::KeyCode::KEY_G) {
+        // 触发 NPC 送礼物
+        if (auto gift = GiftItemManager::getInstance()->getGiftByName("Rose")) { // 例如送“Rose”花
+            giftItem(gift);
+        }
+    }
+    if (keyCode == EventKeyboard::KeyCode::KEY_M) {
+        // 显示婚姻选择
+        showMarriageChoices();
+    }
 }
