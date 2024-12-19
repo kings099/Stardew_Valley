@@ -1,9 +1,7 @@
 /****************************************************************
  * Project Name:  Stardew_Valley
  * File Name:     NpcInteractionManager.cpp
- * File Function: 该文件定义了 `GiftItem` 类，表示游戏中的礼物对象。
-                  每个礼物包含名称、基础好感度增益值，
-                  以及特定 NPC 对该礼物的特殊反应值。
+ * File Function: 游戏中的礼物`GiftItem类的实现
  * Author:        达思睿
  * Update Date:   2024/12/13
  * License:       MIT License
@@ -16,8 +14,8 @@
 
 class GiftItem {
 public:
-    std::string name;  // 礼物名称
-    int baseAffectionValue;  // 礼物的基本好感度增益
+    std::string name;         // 礼物名称
+    int baseAffectionValue;   // 礼物的基本好感度增益
 
     // 存储不同 NPC 对该礼物的不同好感度反应
     std::map<std::string, int> affectionByNPC;

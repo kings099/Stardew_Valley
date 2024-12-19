@@ -41,12 +41,13 @@ void NpcManager::initializeNPCs() {
     // 初始化 NPC 实例，并添加到 npcs 列表
     NPC* npc1 = new NPC("Abigail", cocos2d::Vec2(100, 200), "../Resources/Characters/NPC/Abigail_1.png", { "../Resources/Characters/NPC/Abigail_1.png", "../Resources/Characters/NPC/Abigail_2.png" ,"../Resources/Characters/NPC/Abigail_3.png","../Resources/Characters/NPC/Abigail_4.png" });
     npc1->dialogues = {
-        "Hello, traveler!",
+        "Hello, traveler",
         "I feel like you care about me.",
-        "Thank you for the gift!"
+        "Thank you!"
+        "I love U!"
     };
     // 添加任务给 Abigail（现在奖励是好感度）
-    Task* task1 = new Task("Give me a rare item from the mine.", 1, 1, 10); // 10 好感度
+    Task* task1 = new Task("Give me a rare item from the farm.", 1, 1, 10); // 10 好感度
     Task* task2 = new Task("Help me repair the building.", 2, 5, 20);      // 20 好感度
 
     npc1->addTask(task1);

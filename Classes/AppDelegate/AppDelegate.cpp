@@ -3,12 +3,6 @@
 #include "proj.win32/Constant.h"
 #include "Classes/Scene/GameMainScene.h"
 
-// #define USE_AUDIO_ENGINE 1
-// #define USE_SIMPLE_AUDIO_ENGINE 1
-
-#if USE_AUDIO_ENGINE && USE_SIMPLE_AUDIO_ENGINE
-#error "Don't use AudioEngine and SimpleAudioEngine at the same time. Please just select one in your game!"
-#endif
 
 
 #include "audio/include/AudioEngine.h"
@@ -112,8 +106,6 @@ bool AppDelegate::applicationDidFinishLaunching() {
 // 当应用程序进入后台时调用此函数
 void AppDelegate::applicationDidEnterBackground() {
     Director::getInstance()->stopAnimation();
-
-
     AudioEngine::pauseAll();
 
 }
@@ -121,7 +113,5 @@ void AppDelegate::applicationDidEnterBackground() {
 // this function will be called when the app is active again
 void AppDelegate::applicationWillEnterForeground() {
     Director::getInstance()->startAnimation();
-
     AudioEngine::resumeAll();
-
 }
