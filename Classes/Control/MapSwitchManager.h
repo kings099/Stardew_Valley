@@ -28,7 +28,7 @@ public:
     static MapSwitchManager* create(Character* character, GameMap* currentMap, GameViewController* viewController,InteractionManager* interactionManager);
 
     // 切换地图
-    bool switchMap(const std::string& newMapFile, Vec2& teleportPOS);
+    bool switchMap(const std::string& newMapFile, Vec2& teleportPOS,Node* TreeLayer);
 
 private:
     // 构造函数和析构函数

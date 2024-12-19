@@ -39,7 +39,7 @@ bool MapSwitchManager::init(Character* character, GameMap* currentMap, GameViewC
     return true;
 }
 
-bool MapSwitchManager::switchMap(const std::string& newMapFile, Vec2& teleportPOS) {
+bool MapSwitchManager::switchMap(const std::string& newMapFile, Vec2& teleportPOS, Node* TreeLayer) {
     CCLOG("Switching map to: %s", newMapFile.c_str());
 
     if (_currentMap) {
@@ -49,7 +49,7 @@ bool MapSwitchManager::switchMap(const std::string& newMapFile, Vec2& teleportPO
     GameMap* newMap = nullptr;
 
     if (newMapFile.find("Combat") != std::string::npos) {
-        newMap = FarmMap::create(newMapFile);
+        newMap = FarmMap::create(newMapFile,TreeLayer);
         teleportPOS = newMap->tileToAbsolute(Vec2(60, 20));
     }
     else if (newMapFile.find("house") != std::string::npos) {

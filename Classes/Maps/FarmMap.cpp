@@ -15,12 +15,16 @@ USING_NS_CC;
 FarmMap::FarmMap(const Vec2& mapPosition)
     : GameMap(mapPosition) {}
 
-FarmMap::~FarmMap() {}
+FarmMap::~FarmMap() {
+    if (_treeLayer) {
+        _treeLayer->removeAllChildren();
+    }
+}
 
-FarmMap* FarmMap::create(const std::string& mapFile, const Vec2& mapPosition)
+FarmMap* FarmMap::create(const std::string& mapFile, Node* TreeLayer, const Vec2& mapPosition)
 {
     FarmMap* ret = new FarmMap(mapPosition);
-    if (ret && ret->init(mapFile, mapPosition)) {
+    if (ret && ret->init(mapFile, mapPosition,TreeLayer)) {
         ret->autorelease();
         return ret;
     }
@@ -31,7 +35,7 @@ FarmMap* FarmMap::create(const std::string& mapFile, const Vec2& mapPosition)
 }
 
 // 重写初始化函数
-bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition)
+bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition, Node* TreeLayer)
 {
    
     // Call the parent class' init function
@@ -58,6 +62,9 @@ bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition)
     Animal* cow = Animal::create("cow", startPosition_3);
     _tile_map->addChild(cow);
 
+    // 添加树木层
+    _treeLayer = TreeLayer;
+    plantTreesOnPathLayer(); // 假设最大生长阶段为 5
     //监听鼠标
     auto listener = EventListenerMouse::create();
     listener->onMouseDown = CC_CALLBACK_1(FarmMap::onMouseEvent, this);  // 监听鼠标点击事件
@@ -168,8 +175,4 @@ void FarmMap::plantTreesOnPathLayer() {
             }
         }
     }
-}
-
-void FarmMap::setTreeLayer(cocos2d::Node* treeLayer) {
-    _treeLayer = treeLayer;
 }

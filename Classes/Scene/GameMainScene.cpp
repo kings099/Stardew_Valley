@@ -30,19 +30,15 @@ bool GameMainScene::init()
     auto visibleSize = Director::getInstance()->getVisibleSize();
     auto origin = Director::getInstance()->getVisibleOrigin();
 
-    // 加载农场地图
-    _farmMap = FarmMap::create("../Resources/Maps/Farm/Farm_Combat.tmx");
-    this->addChild(_farmMap, 0); 
-
     // 创建树木层
     auto treeLayer = Node::create();
     this->addChild(treeLayer, 2); // 树木层级比角色高
     treeLayer->setName("treeLayer");
 
-    // 传递 treeLayer 给 FarmMap，用于添加树
-    _farmMap->setTreeLayer(treeLayer);
 
-    _farmMap->plantTreesOnPathLayer(); // 假设最大生长阶段为 5
+    // 加载农场地图
+    _farmMap = FarmMap::create("../Resources/Maps/Farm/Farm_Combat.tmx", treeLayer);
+    this->addChild(_farmMap, 0); 
 
     // 加载角色
     _character = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png");
@@ -102,7 +98,7 @@ bool GameMainScene::init()
     _eventDispatcher->addEventListenerWithSceneGraphPriority(mouselistener, this);
 
     // 设置更新回调，定时调用检查地图切换逻辑是否触发
-    this->schedule([this, mapSwitchManager](float deltaTime) {
+    this->schedule([this, mapSwitchManager,treeLayer](float deltaTime) {
         Vec2 characterWorldPos = _character->getPosition();
         std::string targetMapFile;
         Vec2 TargetPos;
@@ -110,7 +106,7 @@ bool GameMainScene::init()
         // 检测传送点
         if (_interaction->checkTeleport(characterWorldPos, targetMapFile)) {
             CCLOG("Teleport triggered to map: %s", targetMapFile.c_str());
-            mapSwitchManager->switchMap(targetMapFile, TargetPos);
+            mapSwitchManager->switchMap(targetMapFile, TargetPos,treeLayer);
             _character->setPosition(TargetPos);
         }
         _character->updateTileInfo(_interaction);
