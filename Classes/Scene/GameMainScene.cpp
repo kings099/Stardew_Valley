@@ -32,23 +32,23 @@ bool GameMainScene::init()
 
     // 创建树木层
     auto treeLayer = Node::create();
-    this->addChild(treeLayer, 2); // 树木层级比角色高
+    this->addChild(treeLayer, TREE_LAYER_GRADE); // 树木层级比角色高
     treeLayer->setName("treeLayer");
 
     auto Maplayer = Node::create();
-    this->addChild(Maplayer, 0); // 地图层级
+    this->addChild(Maplayer, MAP_LAYER_GRADE); // 地图层级
     Maplayer->setName("Maplayer");
     // 加载农场地图
     _farmMap = FarmMap::create("../Resources/Maps/Farm/Farm_Combat.tmx", treeLayer);
-    Maplayer->addChild(_farmMap, 0);
+    Maplayer->addChild(_farmMap, MAP_LAYER_GRADE);
 
     // 加载角色
     _character = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png");
-    this->addChild(_character, 1);
+    this->addChild(_character, CHARACTER_LAYER_GRADE);
    
     // 初始化视角控制器
     _viewController = GameViewController::create(_character, _farmMap);
-    this->addChild(_viewController, 2);
+    this->addChild(_viewController);
 
     // 初始化交互管理器
     _interaction = InteractionManager::create(_farmMap);
@@ -56,8 +56,8 @@ bool GameMainScene::init()
 
     // 创建 UI 容器
     Node* uiContainer = Node::create();
-    uiContainer->setPosition(Vec2(0, 0));  // 设置为屏幕的原点
-    this->addChild(uiContainer, 100);  // 添加到最上层
+    uiContainer->setPosition(Vec2::ZERO);  // 设置为屏幕的原点
+    this->addChild(uiContainer, UI_LAYER_GRADE);  // 添加到最上层
 
     //初始化UI层
     _uiLayer = UILayer::create();
