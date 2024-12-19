@@ -35,8 +35,17 @@ public:
 	// 捡起物品
 	bool pickUpObject(GameCommonObject targetObject, int objectCount, int targetIndex = INVAVID_NUM);
 
+	// 捡起物品
+	bool pickUpObject(const std::string& targetObjectName, int objectCount, int targetIndex = INVAVID_NUM);
+
 	// 丢弃当前选中的物品
 	ObjectListNode deleteCurrentObject();
+
+	// 合成物品
+	bool synthesisObject(GameBaseObject targetObject);
+
+	// 合成物品
+	bool synthesisObject(const std::string &targetObjectName);
 
 	// 交换物品
 	void swapObject(int startIndex, int targetIndex);
@@ -50,11 +59,11 @@ public:
 	// 获取箱子是否打开
 	bool getBoxStatus();
 
+	// 查找指定位置的物品信息
+	ObjectListNode findObjectAtPosition(int index);
+
 	// 获取当前选中的物品索引
 	int getCurrentObjectIndex();
-
-	// 查找指定位置是否有物品
-	ObjectListNode findObjectAtPosition(int index);
 
 	// 设置当前选中的物品
 	void setCurrentObject(int index);
@@ -68,7 +77,7 @@ public:
 	// 加载数据
 	bool loadData(const std::string& fileName);
 
-	// 回调
+	// 回调函数
 	void setPickUpCallback(std::function<void(bool)> callback);
 private:
 	std::vector<ObjectListNode> _objectList;	// 物品栏列表
@@ -79,7 +88,13 @@ private:
 	std::function<void(bool)> _pickUpCallback;  // 用于保存回调
 	
 	// 查找物品栏中是否有指定物品
-	int findObject(GameCommonObject targetObject);
+	int findObjectByObjectList(GameCommonObject targetObject);
+
+	// 查找物品栏中是否有指定物品
+	int findObjectByObjectList(std::string targetObjectName);
+
+	// 查找物品栏中是否有指定物品
+	GameCommonObject findObjectByName(const std::string& name);
 
 	// 检查物品栏是否已满
 	bool checkObjectListFull();

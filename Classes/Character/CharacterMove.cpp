@@ -3,7 +3,7 @@
  * File Name:     Character.cpp
  * File Function: 角色移动Character类的实现
  * Author:        尹诚成
- * Update Date:   2023/12/07
+ * Update Date:   2023/12/19
  * License:       MIT License
  ****************************************************************/
 
@@ -36,9 +36,9 @@ CharacterMove::CharacterMove(const std::string& filename) :
     }
     // 创建精灵并设置初始位置
     _character = Sprite::create(filename);
-    _character->setAnchorPoint(Vec2(0.25, 0.25));
+    _character->setAnchorPoint(Vec2(0.5, 0.5));
    // _character->setPosition(_position);
-    this->cocos2d::Node::addChild(_character);
+    this->addChild(_character);
     _character->setPosition(Vec2(visibleSize.width / 2, visibleSize.height / 2));
 }
 
@@ -142,6 +142,7 @@ cocos2d::Vec2 CharacterMove::getPosition() {
 
 // 设置角色位置
 void CharacterMove::setPosition(const Vec2& position) {
+    _position = position;
     _character->setPosition(position);
 }
 

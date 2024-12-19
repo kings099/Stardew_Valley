@@ -34,11 +34,20 @@ private:
 	int _skillExprience[SKILL_KIND_NUM];	//技能经验值数组
 	int _skillLevel[SKILL_KIND_NUM];		//技能等级数组
 
-	// 获取角色打算执行的动作
-	GameCharacterAction getAction();
+	// 获取角色打算执行的动作(鼠标左键)
+	GameCharacterAction getLeftButtonAction();
 
-	// 判断角色是否可以执行动作
-	GameCharacterAction checkActionIsValid(cocos2d::Vec2& targetTilePos);
+	// 判断角色是否可以执行动作(鼠标左键)
+	GameCharacterAction checkLeftButtonActionIsValid(cocos2d::Vec2& targetTilePos);
+
+	// 获取角色打算执行的动作(鼠标右键)
+	GameCharacterAction getRightButtonAction();
+
+	// 判断角色是否可以执行动作(鼠标右键)
+	GameCharacterAction checkRightButtonActionIsValid(cocos2d::Vec2& targetTilePos);
+
+	// 获取角色动作对象的瓦片信息
+	TileInfo getTileInfo(GameCharacterAction action);
 
 	// 更新技能等级
 	void updateSkillLevel();
