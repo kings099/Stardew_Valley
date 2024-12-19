@@ -125,7 +125,6 @@ int GameMap::getTileGIDAt(const std::string& layerName, const Vec2& tileCoord)
 {
     auto layer = _tile_map->getLayer(layerName);
     if (!layer) {
-        CCLOG("Invalid Layer name");
         return 0;
     }
 

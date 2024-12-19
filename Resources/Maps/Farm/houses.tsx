@@ -6,6 +6,11 @@
    <property name="TargetMap" value="../Resources/Maps/Farm/Farm_Combat.tmx"/>
   </properties>
  </tile>
+ <tile id="1">
+  <properties>
+   <property name="TargetMap" value="../Resources/Maps/Town/Town.tmx"/>
+  </properties>
+ </tile>
  <tile id="35">
   <properties>
    <property name="canNotMove" type="bool" value="true"/>

@@ -11,9 +11,35 @@
 #include "InteractionManager.h"
 USING_NS_CC;
 
-GameViewController::GameViewController(Character* character,GameMap* map)
-    : _character(character),_map(map){
+GameViewController::GameViewController()
+    : _character(nullptr), _map(nullptr) {}
+
+GameViewController* GameViewController::create(Character* character, GameMap* gamemap) {
+    GameViewController* ret = new (std::nothrow) GameViewController();
+    if (ret && ret->init(character, gamemap)) {
+        ret->autorelease(); // 自动管理内存
+        return ret;
+    }
+    CC_SAFE_DELETE(ret); // 初始化失败时删除对象
+    return nullptr;
 }
+
+bool GameViewController::init(Character* character, GameMap* gamemap) {
+    // 确保父类 Node 初始化成功
+    if (!Node::init()) {
+        return false;
+    }
+
+    // 确保角色和地图对象不为空
+    CCASSERT(character != nullptr, "Character must not be null");
+    CCASSERT(gamemap != nullptr, "GameMap must not be null");
+
+    _character = character;
+    _map = gamemap;
+
+    return true;
+}
+
 
 
 void GameViewController::update(float deltaTime) {

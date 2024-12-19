@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="12" height="12" tilewidth="16" tileheight="16" infinite="0" nextlayerid="8" nextobjectid="1">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="12" height="12" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="1">
  <tileset firstgid="1" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="688" columns="16">
   <image source="walls_and_floors.png" width="256" height="688"/>
  </tileset>
  <tileset firstgid="689" source="townInterior.tsx"/>
  <tileset firstgid="2865" source="walls_and_floors.tsx"/>
  <tileset firstgid="3553" source="houses.tsx"/>
+ <tileset firstgid="4012" source="paths.tsx"/>
+ <layer id="8" name="Collidable" width="12" height="12">
+  <data encoding="base64" compression="zlib">
+   eJzbzM9ANNjMD8G0Vk8qhunFZi82Ni6xgfIvLdWj68OlH91sXGGGHl4A3WooKw==
+  </data>
+ </layer>
  <layer id="7" name="Teleport" width="12" height="12">
   <data encoding="base64" compression="zlib">
    eJxjYBgFowATPORFYHwAAGaBAss=

@@ -180,6 +180,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)\Resources\" /D /E /I /F /Y
     <ClCompile Include="..\Classes\Control\InteractionManager.cpp" />
     <ClCompile Include="..\Classes\Maps\FarmMap.cpp" />
     <ClCompile Include="..\Classes\Maps\IndoorMap.cpp" />
+    <ClCompile Include="..\Classes\Maps\TownMap.cpp" />
     <ClCompile Include="..\Classes\MenuImage\HoverMenuItemImage.cpp" />
     <ClCompile Include="..\Classes\Maps\GameMap.cpp" />
     <ClCompile Include="..\Classes\Scene\GameMainScene.cpp" />
@@ -218,6 +219,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)\Resources\" /D /E /I /F /Y
     <ClInclude Include="..\Classes\Control\InteractionManager.h" />
     <ClInclude Include="..\Classes\Maps\FarmMap.h" />
     <ClInclude Include="..\Classes\Maps\IndoorMap.h" />
+    <ClInclude Include="..\Classes\Maps\TownMap.h" />
     <ClInclude Include="..\Classes\MenuImage\HoverMenuItemImage.h" />
     <ClInclude Include="..\Classes\Maps\GameMap.h" />
     <ClInclude Include="..\Classes\Scene\GameMainScene.h" />
