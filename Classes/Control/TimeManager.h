@@ -12,14 +12,17 @@ public:
     // 更新游戏时间
     void update(int deltaT);
 
-    // 获取当前时间的字符串表示（季节、日、时分）
-    int getSeason() const;
-
     // 获取当前星期几（如：星期一、星期二）
     std::string getWeekDay() const;
 
     // 获取当前时间（小时:分钟）格式的字符串
     std::string getCurrentTime() const;
+
+    // 获取当前季节
+    int getCurrentSeason() const;
+
+    // 获取当前游戏日
+    int getCurrentDay() const;
 
     // 判断是否是白天
     bool isDaytime() const;
@@ -31,8 +34,11 @@ public:
     void stopUpdating();
 
 private:
-    TimeManager();  // 构造函数
-    ~TimeManager(); // 析构函数
+    // 构造函数
+    TimeManager();
+
+    // 析构函数
+    ~TimeManager(); 
 
     // 更新时间（小时、分钟、天数）
     void updateTime();
@@ -45,7 +51,7 @@ private:
 
     static TimeManager* instance;  // 单例指针
 
-    int timeInSeconds; // 游戏总时间（秒）
+    int timeInSeconds;  // 游戏总时间（秒）
     int day;            // 当前游戏日
     int hour;           // 当前小时
     int minute;         // 当前分钟

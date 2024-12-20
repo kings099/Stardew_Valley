@@ -22,6 +22,7 @@ CharacterAction::CharacterAction(const std::string &filename):
 		for (int i = 0; i < SKILL_KIND_NUM; i++) {
 			_skillLevel[i] = 0;
 			_skillExprience[i] = 0;
+			_money = START_UP_MONEY;
 		}
 	}
 	updateSkillLevel();
@@ -194,6 +195,7 @@ bool CharacterAction::saveData(const std::string& fileName) {
 		return false;
 	}
 
+	outFile.write((char*)&_money, sizeof(int));
 	for (const auto& exp : _skillExprience) {
 		outFile.write((char*)&exp, sizeof(int));
 	}
@@ -218,8 +220,7 @@ bool CharacterAction::loadData(const std::string& fileName) {
 		return false;
 	}
 
-	// 读取当前位置
-	std::streampos currentPos = inFile.tellg();
+	inFile.read((char*)&_money, sizeof(int));
 
 	for (auto& exp : _skillExprience) {
 		inFile.read((char*)&exp, sizeof(int));

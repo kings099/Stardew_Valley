@@ -35,11 +35,10 @@ Fishs::~Fishs() {
 //初始化每个季节的鱼的类型
 void Fishs::initializeSeasonFishMap() {
     if (!seasonFishMap.empty()) return;
-
-    seasonFishMap["spring"] = { "fishSpring_0", "fishSpring_1", "fishSpring_2", "fishSpring_3" };
-    seasonFishMap["summer"] = { "fishSummer_0", "fishSummer_1", "fishSpring_0", "fishSpring_1" };
-    seasonFishMap["fall"] =   { "fishFall_0", "fishFall_1", "fishSpring_2", "fishSpring_3" };
-    seasonFishMap["winter"] = { "fishWinter_0", "fishWinter_1", "fishSpring_1", "fishSpring_2" };
+    seasonFishMap["spring"] = { "Bigeye", "LargemouthBass", "Salmon"};// 春季：大眼鱼，大嘴鲈鱼，鲑鱼
+    seasonFishMap["summer"] = { "Squid", "Sardines", "Herring"};// 夏季：鱿鱼，沙丁鱼，鲱鱼
+    seasonFishMap["fall"] =   { "RedMullet", "Carps", "Octopuses"};// 秋季：红鲻鱼，鲤鱼，章鱼
+    seasonFishMap["winter"] = { "RedSnapper", "SmallmouthBass", "TunaFish"};// 冬季：红鲷鱼，小嘴鲈鱼，金枪鱼
 }
 
 //创建并返回一个新的 Fishs 对象。
@@ -65,14 +64,14 @@ bool Fishs::init(const std::string& name, const std::string& season, const Vec2&
     this->initialPosition = position;  // 保存初始位置
 
     // 加载鱼的初始精灵
-    string fishImagePath = "../Resources/Animals/Fish/" + name + ".png";
+    string fishImagePath = "../Resources/Objects/Base/" + name + ".png";
     sprite = Sprite::create(fishImagePath);
     if (!sprite) {
         CCLOG("Error: Failed to load fish sprite for %s", name.c_str());
         return false;
     }
     sprite->setPosition(position);
-    sprite->setScale(1.0f);
+    sprite->setScale(FISH_RATIO);
     this->addChild(sprite);
 
     // 启动随机移动和动画更新
@@ -90,7 +89,7 @@ void Fishs::setActivityRange(float range) {
 
 //获取当前这种鱼的图片的资源路径
 std::string Fishs::getFishImagePath() const {
-    return "../Resources/Animals/Fish/" + name + ".png";
+    return "../Resources/Objects/Base/" + name + ".png";
 }
 
 //随机决定现在鱼的移动方向
@@ -137,8 +136,8 @@ void Fishs::updateAnimation() {
     std::vector<std::string> framePaths;
     if (moveDirection == 1) {  // 向右游动
         framePaths = {
-            "../Resources/Animals/Fish/" + name + ".png",
-            "../Resources/Animals/Fish/" + name + "_Right_1.png"
+            "../Resources/Animals/Fish/" + name + "_Right.png",
+            "../Resources/Objects/Base/" + name + ".png"
         };
     }
     else {  // 向左游动
@@ -149,7 +148,7 @@ void Fishs::updateAnimation() {
     }
 
     // 加载帧
-    Vector<SpriteFrame*> frames = loadFrames(framePaths, Rect(0, 0, 64, 64));  // 假设帧尺寸为 64x64
+    Vector<SpriteFrame*> frames = loadFrames(framePaths, Rect(0, 0, 16, 16));  // 假设帧尺寸为 64x64
     if (frames.empty()) {
         CCLOG("Error: No frames loaded for fish animation.");
         return;
@@ -186,19 +185,28 @@ Vector<SpriteFrame*> Fishs::loadFrames(const std::vector<std::string>& framePath
 
 //钓鱼函数，返回当前钓的鱼的类型
 std::string Fishs::catchFish(const std::string& season) {
+    // 初始化季节性鱼类信息
     initializeSeasonFishMap();
 
     if (seasonFishMap.find(season) == seasonFishMap.end()) {
         CCLOG("Error: Invalid season %s", season.c_str());
-        return "";
+        return nullptr;
     }
 
+    // 获取当前季节的鱼类列表
     const std::vector<std::string>& fishList = seasonFishMap[season];
-    if (rand() % 100 < 10) {
+
+    // 小概率不返回鱼
+    if (rand() % 100 < 10) {  // 10%的概率不返回鱼
         CCLOG("No fish caught in this season.");
-        return "";
+        return nullptr;
     }
 
+    // 随机选择一种鱼
     int randomIndex = rand() % fishList.size();
-    return fishList[randomIndex];
+    std::string fishName = fishList[randomIndex];
+
+    //// 创建并返回一个新的鱼对象
+    //Fish* fish = Fish::create(fishName, season, Vec2(rand() % 100, rand() % 100));
+    return fishName;
 }

@@ -158,7 +158,7 @@ bool Animal::init(const std::string& type, const Vec2& startPosition) {
     }
 
     sprite->setPosition(position);
-    sprite->setScale(1.0f);
+    sprite->setScale(ANIMAL_RATIO);
     addChild(sprite);
 
     // 开始定时更新小动物的位置
@@ -221,7 +221,7 @@ void Animal::handleAngry() {
                 // 设置图标位置：相对于动物精灵的头顶
                 angryIcon->setPosition(Vec2(sprite->getContentSize().width / 2,
                     sprite->getContentSize().height + 5));
-                angryIcon->setScale(0.8f); // 缩小图标尺寸（根据需要调整）
+                angryIcon->setScale(ANGRY_ICON_RATIO); // 缩小图标尺寸（根据需要调整）
 
                 // 将图标添加为动物精灵的子节点
                 sprite->addChild(angryIcon, 1); // z-index = 1，确保在动物精灵上方显示
