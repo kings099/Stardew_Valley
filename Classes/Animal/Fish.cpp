@@ -185,19 +185,28 @@ Vector<SpriteFrame*> Fishs::loadFrames(const std::vector<std::string>& framePath
 
 //钓鱼函数，返回当前钓的鱼的类型
 std::string Fishs::catchFish(const std::string& season) {
+    // 初始化季节性鱼类信息
     initializeSeasonFishMap();
 
     if (seasonFishMap.find(season) == seasonFishMap.end()) {
         CCLOG("Error: Invalid season %s", season.c_str());
-        return "";
+        return nullptr;
     }
 
+    // 获取当前季节的鱼类列表
     const std::vector<std::string>& fishList = seasonFishMap[season];
-    if (rand() % 100 < 10) {
+
+    // 小概率不返回鱼
+    if (rand() % 100 < 10) {  // 10%的概率不返回鱼
         CCLOG("No fish caught in this season.");
-        return "";
+        return nullptr;
     }
 
+    // 随机选择一种鱼
     int randomIndex = rand() % fishList.size();
-    return fishList[randomIndex];
+    std::string fishName = fishList[randomIndex];
+
+    //// 创建并返回一个新的鱼对象
+    //Fish* fish = Fish::create(fishName, season, Vec2(rand() % 100, rand() % 100));
+    return fishName;
 }

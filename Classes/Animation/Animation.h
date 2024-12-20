@@ -10,6 +10,7 @@
 #define ANIMATION_HELPER_H
 
 #include "cocos2d.h"
+#include "proj.win32/Constant.h"
 USING_NS_CC;
 
 class AnimationHelper {

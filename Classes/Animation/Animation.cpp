@@ -35,8 +35,8 @@ void AnimationHelper::playWoodCuttingAnimation(const Vec2& position, TMXTiledMap
     }
     tempSprite->setPosition(position);
     tempSprite->setAnchorPoint(Vec2(0.5f, 0.5f));
-    farmMap->addChild(tempSprite,10);
-    tempSprite->setScale(0.3f);
+    farmMap->addChild(tempSprite, ANIMATION_LAYER_GRADE);
+    tempSprite->setScale(WOOD_CUT_RATIO);
 
     // ¼ÓÔØ¿³Ä¾×®µÄÖ¡
     auto frames = loadFrames("../Resources/Animations/tree_root/tree_root_", 5, Rect(0, 0, 128, 134));
@@ -68,8 +68,8 @@ void AnimationHelper::playWeedingAnimation(const Vec2& position, TMXTiledMap* fa
         return;
     }
     tempSprite->setPosition(position);
-    farmMap->addChild(tempSprite,10);
-    tempSprite->setScale(0.4f);
+    farmMap->addChild(tempSprite, ANIMATION_LAYER_GRADE);
+    tempSprite->setScale(WEEDING_RATIO);
 
     auto frames = loadFrames("../Resources/Animations/Weeding/weeding_", 7, Rect(0, 0, 64, 72));
     if (frames.empty()) {
@@ -99,8 +99,8 @@ void AnimationHelper::playStoneBreakingAnimation(const Vec2& position, TMXTiledM
     }
     tempSprite->setPosition(position);
     tempSprite->setAnchorPoint(Vec2(0.5f, 0.5f));
-    farmMap->addChild(tempSprite,10);
-    tempSprite->setScale(0.2f);
+    farmMap->addChild(tempSprite, ANIMATION_LAYER_GRADE);
+    tempSprite->setScale(STONE_BREAK_RATIO);
 
     auto frames = loadFrames("../Resources/Animations/stone_break/stone_break_", 5, Rect(0, 0, 133, 136));
     if (frames.empty()) {

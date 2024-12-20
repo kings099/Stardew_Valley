@@ -145,12 +145,13 @@ std::unordered_map<std::string, std::unordered_map<Season, std::string>> Crops::
            {Season::Winter, "../Resources/Crops/Pumpkin/pumpkin_5.png"}}
      }
 };
-
+//设置当前的人物等级
 void Crops::setPlayerLevel(int level) {
     playerLevel = level;
     CCLOG("Player level set to: %d", playerLevel);
 }
 
+//由人物等级判断是否能种植当下农作物
 bool Crops::canBePlanted() const {
     if (type == "pumpkin" && playerLevel < 3) {
         CCLOG("Error: Player level too low to plant pumpkin! Required level: 3");
@@ -178,6 +179,7 @@ void Crops::fertilize() {
     isFertilized = true;
 }
 
+//初始化农作物信息
 bool Crops::init(const std::string& type, int maxGrowthStage) {
     CCLOG("Initializing Crop...");
     if (!Node::init()) {
@@ -204,9 +206,9 @@ bool Crops::init(const std::string& type, int maxGrowthStage) {
         return false;
     }
     
-    sprite->setScale(1.5f);
+    sprite->setScale(CROP_START_RATIO);
     // 设置锚点（例如设置到底部中心点）
-    sprite->setAnchorPoint(Vec2(0.5f, 0.0f));
+    sprite->setAnchorPoint(Vec2(CROP_HORIZONTAL_ANCHORPOINT, CROP_VERTICAL_ANCHORPOINT));
     
 
     this->addChild(sprite);
@@ -214,6 +216,7 @@ bool Crops::init(const std::string& type, int maxGrowthStage) {
     return true;
 }
 
+//更新植物的生长状态
 void Crops::updateGrowth(float deltaTime) {
     // 获取当前季节的生长周期
     float growthSpeed = 5.0f;
@@ -240,7 +243,7 @@ void Crops::updateGrowth(float deltaTime) {
                 auto seasonTexture = matureTextures[type][currentSeason];
                 sprite->setTexture(seasonTexture);
                 if (this->type == "maple" || this->type == "oak" || this->type == "pine") {
-                    sprite->setScale(1.0f);
+                    sprite->setScale(CROP_MATURE_RATIO);
                 }
                 CCLOG("Crop %s matured with texture: %s", type.c_str(), seasonTexture.c_str());
             }
@@ -274,16 +277,20 @@ void Crops::updateGrowth(float deltaTime) {
     isWatered = false; // 每次更新后重置浇水状态
 }
 
+//更新当前的季节
 void Crops::setSeason(Season season) {
     if (currentSeason != season) { // 避免重复触发
         currentSeason = season;
         CCLOG("Season changed to %d", static_cast<int>(season));
     }
 }
+
+//获取当前的季节
 Season Crops::getSeason() {
     return currentSeason;
 }
 
+//检查植物是否患有病虫害
 void Crops::checkPests() {
     if (!hasPests && CCRANDOM_0_1() < pestProbability) { // 随机概率感染病虫害
         hasPests = true;
@@ -294,6 +301,8 @@ void Crops::checkPests() {
        
     }
 }
+
+//处理病虫害函数，使植物恢复正常
 void Crops::treatPests() {
     if (hasPests) {
         hasPests = false;
@@ -305,7 +314,7 @@ void Crops::treatPests() {
             if (matureTextures.find(type) != matureTextures.end()) {
                 auto seasonTexture = matureTextures[type][currentSeason];
                 if (this->type == "maple" || this->type == "oak" || this->type == "pine") {
-                    sprite->setScale(1.0f);
+                    sprite->setScale(CROP_MATURE_RATIO);
                 }
                 sprite->setTexture(seasonTexture);               
                 CCLOG("Restored crop to mature state with texture: %s", seasonTexture.c_str());
@@ -324,7 +333,7 @@ void Crops::treatPests() {
     }
 }
 
-
+//浇水动画以及植物浇水状态的更新
 void Crops::waterCrop() {
     isWatered = true;
     daysWithoutWater = 0; // 浇水后重置未浇水天数
@@ -346,7 +355,7 @@ void Crops::waterCrop() {
     double x=sprite->getPosition().x;
     double y = sprite->getPosition().y;
     waterEffect->setPosition(Vec2(x, y-8));
-    waterEffect->setScale(0.8f);
+    waterEffect->setScale(WATER_RATIO);
     this->addChild(waterEffect,-1);
 
     // 执行动画
@@ -362,11 +371,12 @@ void Crops::waterCrop() {
     waterEffect->runAction(sequence);
 }
 
-
+//判断农作物是否已经成熟
 bool Crops::isReadyToHarvest() const {
     return growthStage >= maxGrowthStage;
 }
 
+//设置农作物当前的成长阶段
 void Crops::setGrowthStage(int stage) {
     growthStage = std::min(stage, maxGrowthStage); // 确保阶段不超过最大值
     // 检查资源映射表中是否有当前农作物类型的资源
@@ -376,7 +386,7 @@ void Crops::setGrowthStage(int stage) {
             auto it = matureTextures[type].find(currentSeason);
             if (it != matureTextures[type].end()) {
                 if (this->type == "maple" || this->type == "oak" || this->type == "pine") {
-                    sprite->setScale(1.0f);
+                    sprite->setScale(CROP_MATURE_RATIO);
                 }
                 sprite->setTexture(it->second);
                 CCLOG("Set crop '%s' to mature state with texture: %s", type.c_str(), it->second.c_str());
@@ -391,7 +401,7 @@ void Crops::setGrowthStage(int stage) {
     }
 }
 
-
+//农作物收获时调用函数，删除当前农作物精灵
 void Crops::harvestCrop() {
     if (!canBePlanted()) { // 如果不满足条件（主要是等级检查）
         CCLOG("Crop '%s' cannot be planted due to level restriction.", type.c_str());
@@ -411,6 +421,7 @@ void Crops::harvestCrop() {
     }
 }
 
+//砍树动画函数
 void Crops::chopTree() {
     CCLOG("Tree '%s' is swaying...", type.c_str());
 

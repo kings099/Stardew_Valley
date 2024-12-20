@@ -87,6 +87,7 @@ constexpr int FONT_SIZE = 24;                                               // �
 constexpr int MAP_LAYER_GRADE = 0;                                          // 地图层级
 constexpr int CHARACTER_LAYER_GRADE = 1;                                    // 角色层级
 constexpr int UI_LAYER_GRADE = 2;                                           // UI层级
+constexpr int ANIMATION_LAYER_GRADE = 10;                                   // 动画层级（父节点为瓦片地图）
 constexpr int OBJECT_LAYER_GRADE = 3;                                       // 物品层级
 constexpr float ENLARGEMENT_RATIO = 1.2f;									// 按钮动画缩放比例
 constexpr float ENLARGEMENT_TIME = 0.15f;									// 按钮动画缩放时间
@@ -125,9 +126,24 @@ constexpr int PUMPKIN_MAX_GROWTHSTAGE = 6;                                  //�
 constexpr int OAK_MAX_GROWTHSTAGE = 5;                                      //橡树共有5个生长阶段
 constexpr int MAPLE_MAX_GROWTHSTAGE = 5;                                    //枫树共有5个生长阶段
 constexpr int PINE_MAX_GROWTHSTAGE = 5;                                     //松树共有5个生长阶段
+constexpr float CROP_START_RATIO = 1.5f;                                    //农作物未成熟时的缩放比例
+constexpr float CROP_MATURE_RATIO = 1.0f;                                    //农作物成熟时的缩放比例
+constexpr float CROP_HORIZONTAL_ANCHORPOINT = 0.5f;					        // 树水平锚点
+constexpr float CROP_VERTICAL_ANCHORPOINT = 0.0f;						    // 树垂直锚点
+
+//动物类
+constexpr float ANIMAL_RATIO = 1.0f;                                            //动物类的缩放比例
+constexpr float ANGRY_ICON_RATIO = 0.8f;                                        //动物发怒提示的缩放比例
 
 //鱼类
-const float FISH_RATIO = 1.0f;                                      // 对话框宽度占屏幕宽度的比例
+constexpr float FISH_RATIO = 1.0f;                                              //鱼的缩放比例
+
+//动画类
+constexpr float WOOD_CUT_RATIO = 0.3f;                                          //砍木桩动画的缩放比例
+constexpr float WEEDING_RATIO = 0.4f;                                           //除草动画的缩放比例
+constexpr float STONE_BREAK_RATIO = 0.2f;                                       //碎石动画的缩放比例
+constexpr float WATER_RATIO = 0.8f;                                       //碎石动画的缩放比例
+
 
 //游戏物品对应技能类型定义
 enum GameObjectSkillType {
