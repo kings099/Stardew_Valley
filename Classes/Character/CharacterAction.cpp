@@ -49,6 +49,24 @@ void CharacterAction::onMouseDown(cocos2d::Event* event, GameCharacterAction& ga
 	}
 }
 
+// 获取技能等级
+int CharacterAction::getSkillLevel(int index) {
+	if (index < 0 || index >= SKILL_KIND_NUM)
+		return -1;
+	return _skillLevel[index];
+}
+
+// 获取技能等级
+int CharacterAction::getMoney() {
+	return _money;
+}
+
+// 修改角色金钱
+void CharacterAction::setMoney(int money) {
+	_money += money;
+}
+
+
 // 获取角色打算执行的动作(鼠标左键)
 GameCharacterAction CharacterAction::getLeftButtonAction() {
 	ObjectListNode currentObject = getCurrentObject();
@@ -119,7 +137,7 @@ TileInfo CharacterAction::getTileInfo(GameCharacterAction action, InteractionMan
 		targetTileNode = interactionManager->GetLineTileInfo(_currentDirection, std::min(_skillLevel[Fish] + MIN_FISHING_DISTANCE, MAX_FISHING_DISTANCE), _character->getPosition());
 		break;
 	case NoneAction:
-		targetTileNode = { TileType::Other, cocos2d::Vec2(INVAVID_NUM, INVAVID_NUM),false };
+		targetTileNode = { TileConstants::TileType::Other, cocos2d::Vec2(INVAVID_NUM, INVAVID_NUM),false };
 		break;
 	default:
 		targetTileNode = interactionManager->GetLineTileInfo(_currentDirection, 1, _character->getPosition());
@@ -175,12 +193,7 @@ void CharacterAction::updateSkillExprience(GameCharacterAction gameCharacterActi
 	}
 }
 
-// 获取技能等级
-int CharacterAction::getSkillLevel(int index) {
-	if (index < 0 || index >= SKILL_KIND_NUM)
-		return -1;
-	return _skillLevel[index];
-}
+
 
 // 获取物品
 void CharacterAction::getObject() {

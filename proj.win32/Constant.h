@@ -20,7 +20,7 @@ constexpr int MEDIUM_RESOLUTION_HEIGHT = 720;                               // �
 constexpr int LARGE_RESOLUTION_WIDTH = 1920;                                // 大屏分辨率宽度
 constexpr int LARGE_RESOLUTION_HEIGHT = 1080;                               // 大屏分辨率高度
 constexpr float FRAME_RATE = 60.0f;                                         // 游戏帧率
-const std::string APPLICATION_TITLE = u8"星露谷物语 Stardew Valley";        // 游戏应用标题
+const std::string APPLICATION_TITLE = u8"星露谷物语 Stardew Valley";         // 游戏应用标题
 
 
 //游戏登录界面相关设置
@@ -62,26 +62,72 @@ constexpr int START_UP_MONEY = 500;                                         // �
 // 商店相关设置
 constexpr int PRODUCE_KIND_NUM_EACH_DAY = 4;                                // 每日出售的商品种类数量
 constexpr int MAX_PRODUCT_COUNT_EACH_DAY = 5;                               // 每日出售的一种商品的最大数量
+constexpr float INCREASE_RATE_BY_SEASON = 1.2f;                             // 商品价格上涨比例(季节)
+constexpr float DISCOUNT_RATE_BY_SEASON = 0.8f;                             // 商品价格下跌比例(季节)
 
 // 场景过渡相关
 constexpr float LERP_SPEED = 0.1f;											// 插值平滑速度
 constexpr float SCENE_TRANSITION_TIME = 1.0f;								// 场景切换时间
 constexpr float FARM_MAP_SCALE = 2.0f;										// 农场地图缩放比例
 constexpr float INDOOR_MAP_SCALE = 5.0f;									// 室内地图缩放比例
+constexpr float TOWN_MAP_SCALE = 2.0f;                                      // 小镇地图缩放
+constexpr int FARM_HOUSE_CREAT_X = 1816;                                    // 农场室内地图创建位置
+constexpr int FARM_HOUSE_CREAT_Y = 1538;                                    // 农场室内地图创建位置
+constexpr int TOWN_CREAT_X = 2454;                                          // 小镇地图创建位置
+constexpr int TOWN_CREAT_Y = 920;                                           // 小镇地图创建位置
+constexpr int FARM_HOUSE_TELE_X = 3;                                     // 农场室内地图传送位置
+constexpr int FARM_HOUSE_TELE_Y = 10;                                     // 农场室内地图传送位置
+constexpr int TOWN_TELE_X = 1;                                           // 小镇地图传送位置
+constexpr int TOWN_TELE_Y = 91;                                            // 小镇地图传送位置
 
 // 地图图块相关
-constexpr int DRY_FARM_TILE_GID = 2040;                                     // 干燥耕地效果动画图块GID
-constexpr int EMPTY_GID = 0;                                                // 空白GID
-constexpr int OAK_GID = 10;                                                 // 桦树GID
-constexpr int MAMPLE_GID = 11;                                              // MAMPLE GID
-constexpr int PINE_GID = 12;                                                // PINE GID
-constexpr int OAK_INVISIBLE_GID = 1;                                        // OAK树根图块不可见GID
-constexpr int MAMPLE_INVISIBLE_GID = 2;                                     // MAMPLE树根图块不可见GID
-constexpr int PINE_INVISIBLE_GID = 3;                                       // PINE树根图块不可见GID
-constexpr int OAK_ROOT_GID = 191;                                           // OAK树根GID
-constexpr int MAMPLE_ROOT_GID = 194;                                        // MAMPLE树根GID
-constexpr int PINE_ROOT_GID = 201;                                          // PINE树根GID
+namespace TileConstants {
+    constexpr int DRY_FARM_TILE_GID = 2040;                                     // 干燥耕地效果动画图块GID
+    constexpr int EMPTY_GID = 0;                                                // 空白GID
+    constexpr int WOOD_GID = 7;                                                 // 树桩标记GID（不可见）
+    constexpr int OAK_GID = 10;                                                 // 桦树GID
+    constexpr int MAMPLE_GID = 11;                                              // MAMPLE GID
+    constexpr int PINE_GID = 12;                                                // PINE GID
+    constexpr int OAK_INVISIBLE_GID = 1;                                        // OAK树根图块不可见GID
+    constexpr int MAMPLE_INVISIBLE_GID = 2;                                     // MAMPLE树根图块不可见GID
+    constexpr int PINE_INVISIBLE_GID = 3;                                       // PINE树根图块不可见GID
+    constexpr int OAK_ROOT_GID = 191;                                           // OAK树根GID
+    constexpr int MAMPLE_ROOT_GID = 194;                                        // MAMPLE树根GID
+    constexpr int PINE_ROOT_GID = 201;                                          // PINE树根GID
 
+    constexpr float GRASS_DROP_PROBABILITY = 0.5f;                              // 草掉落概率
+    constexpr float STONE_DROP_PROBABILITY = 0.3f;                              // 石头掉落概率
+    constexpr float BRANCH_DROP_PROBABILITY = 0.3f;                             // 树枝和树桩掉落概率
+    constexpr float TREE_DROP_PROBABILITY = 0.9f;                               // 树木掉落概率
+        
+    constexpr int DEFAULT_DROP_QUANTITY = 1;                                    // 默认掉落数量
+    constexpr int MUTI_DROP_QUANTITY = 3;                                       // 默认多个掉落数量
+
+    // 瓦片信息
+    enum TileType {
+        Grass,      // 草
+        Tree,       // 树木
+        Wood,       // 树枝和树桩一起处理
+        Mine,       // 矿石
+        Stone,      // 石头
+        Box,        // 箱子
+        Water,      // 水
+        Soil,       // 可耕种土地
+        Soiled,     // 已耕种土地
+        Crop,       // 作物
+        Door,       // 门
+        Other
+    };
+
+    struct TileChange {
+        std::string layerName;          // 图层名称
+        cocos2d::Vec2 tileCoord;        // 瓦片坐标
+        int newGID;                     // 瓦片的新 GID
+
+        TileChange(const std::string& layer, const cocos2d::Vec2& coord, int gid)
+            : layerName(layer), tileCoord(coord), newGID(gid) {}
+    };
+}
 // 物品设置
 constexpr int OBJECT_LIST_ROWS = 3;											// 物品列表行数
 constexpr int OBJECT_LIST_COLS = 12;										// 物品列表列数
@@ -91,9 +137,10 @@ constexpr int UI_SCALE = 210.0f;                                            // U
 constexpr int FONT_SIZE = 24;                                               // 字体大小
 constexpr int MAP_LAYER_GRADE = 0;                                          // 地图层级
 constexpr int CHARACTER_LAYER_GRADE = 1;                                    // 角色层级
-constexpr int UI_LAYER_GRADE = 2;                                           // UI层级
-constexpr int ANIMATION_LAYER_GRADE = 10;                                   // 动画层级（父节点为瓦片地图）
-constexpr int OBJECT_LAYER_GRADE = 3;                                       // 物品层级
+constexpr int TREE_LAYER_GRADE = 2;                                         // 树木层级
+constexpr int UI_LAYER_GRADE = 3;                                           // UI层级
+constexpr int OBJECT_LAYER_GRADE = 4;                                       // 物品层级
+constexpr int ANIMATION_LAYER_GRADE = 10;                                   // 动画层级
 constexpr float ENLARGEMENT_RATIO = 1.2f;									// 按钮动画缩放比例
 constexpr float ENLARGEMENT_TIME = 0.15f;									// 按钮动画缩放时间
 constexpr int CLOSE_OBJECT_LIST_START_X = 729;								// 物品栏(关闭状态)起始位置的X坐标
@@ -144,10 +191,10 @@ constexpr float ANGRY_ICON_RATIO = 0.8f;                                        
 constexpr float FISH_RATIO = 1.0f;                                              //鱼的缩放比例
 
 //动画类
-constexpr float WOOD_CUT_RATIO = 0.3f;                                          //砍木桩动画的缩放比例
-constexpr float WEEDING_RATIO = 0.4f;                                           //除草动画的缩放比例
-constexpr float STONE_BREAK_RATIO = 0.2f;                                       //碎石动画的缩放比例
-constexpr float WATER_RATIO = 0.8f;                                       //碎石动画的缩放比例
+constexpr float WOOD_CUT_RATIO = 0.3f;                                          // 砍木桩动画的缩放比例
+constexpr float WEEDING_RATIO = 0.4f;                                           // 除草动画的缩放比例
+constexpr float STONE_BREAK_RATIO = 0.2f;                                       // 碎石动画的缩放比例
+constexpr float WATER_RATIO = 0.8f;                                             // 碎石动画的缩放比例
 
 
 //游戏物品对应技能类型定义
@@ -212,20 +259,6 @@ enum LocationStatus {
     OpenedBoxList			// 箱子列表打开
 };
 
-// 瓦片信息
-enum TileType {
-    Grass,      // 草
-    Tree,       // 树木
-    Stone,      // 矿石
-    Water,      // 水
-    Soil,       // 可耕种土地
-    Soiled,     // 已耕种土地
-    Crop,       // 作物
-    Door,       // 门
-   // Box,        // 箱子
-    Npc,        // NPC
-    Other
-};
 
 // 角色动作定义
 enum GameCharacterAction {
@@ -244,20 +277,14 @@ enum GameCharacterAction {
     DestoryObject,		// 破坏物品
 };
 
-// 掉落物品信息定义
-struct DropObject {
-    std::string name;        // 掉落物品名称 
-    int count;               // 掉落物品数量
-    int probability;         // 掉落物品概率
-};
 
 // 单个瓦片坐标信息定义
 struct TileInfo {
-    TileType type;
-    cocos2d::Vec2 tilePos;   // 瓦片坐标
-    cocos2d::Vec2 WorldPos;  // 世界坐标
-    bool isObstacle;         // 是否为障碍物
-    DropObject dropObject;   // 掉落物品
+    TileConstants::TileType type;
+    cocos2d::Vec2 tilePos;  // 瓦片坐标
+    cocos2d::Vec2 WorldPos; // 世界坐标
+    bool isObstacle;        // 是否为障碍物
+    std::unordered_map<std::string, std::pair<int, float>> drops; // 掉落物品映射 (物品名称 -> {数量, 概率})
 };
 
 // 位置属性定义
@@ -299,20 +326,20 @@ struct ObjectImageInfo {
 };
 
 // 角色动作和地图类型对应关系
-const std::map< GameCharacterAction, TileType> ACTION_TO_TILEMAP = {
-    { NoneAction, Other },
-    { Plowing, Soil },          // 左键
-    { Watering, Soiled },       // 左键
-    { Fertilize, Soiled },      // 左键
-    { GetWater, Water },        // 右键
-    { Weeding, Grass },         // 左键
-    { Cutting, Tree },          // 左键
-    { Mining, Stone },          // 左键
-    { Fishing, Water },         // 左键
-    { Harvesting, Crop },       // 右键
-    { Placement, Soil },        // 右键
+const std::map< GameCharacterAction, TileConstants::TileType> ACTION_TO_TILEMAP = {
+    { NoneAction, TileConstants::Other },
+    { Plowing,TileConstants::Soil },          // 左键
+    { Watering, TileConstants::Soiled },       // 左键
+    { Fertilize, TileConstants::Soiled },      // 左键
+    { GetWater,TileConstants::Water },        // 右键
+    { Weeding, TileConstants::Grass },         // 左键
+    { Cutting, TileConstants::Tree },          // 左键
+    { Mining, TileConstants::Stone },          // 左键
+    { Fishing, TileConstants::Water },         // 左键
+    { Harvesting, TileConstants::Crop },       // 右键
+    { Placement, TileConstants::Soil },        // 右键
   //  { OpenBox, Box},
-    { DestoryObject, Other}     // 左键
+    { DestoryObject, TileConstants::Other}     // 左键
 };
 
 // 游戏物品共有属性定义
@@ -764,19 +791,15 @@ struct BoxNode {
     }
 };
 
-// 种子商品信息定义
-struct SeedProductNode {
-    GameSeedObject product;	    // 商品信息
+// 商品信息定义
+struct ProductNode {
+    GameCommonObject product;	// 商品信息
     int count;					// 商品数量
     int totalPrice;				// 商品价格
+    Season discountSeason;      // 商品打折的季节
+    Season increaseSeason;      // 商品涨价的季节
 };
 
-// 基础商品信息定义
-struct BaseProductNode {
-    GameBaseObject product;	    // 商品信息
-    int count;					// 商品数量
-    int totalPrice;				// 商品价格
-};
 
 
 #endif // !_CONSTANT_H_

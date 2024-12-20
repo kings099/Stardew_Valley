@@ -122,29 +122,51 @@ const std::vector<TileInfo>& InteractionManager::getSurroundingTiles() const {
 }
 
 // 在指定瓦片位置获取图块信息
-const TileInfo& InteractionManager::GetTileInfoAt(const Vec2& Tile_pos) {
+const TileInfo InteractionManager::GetTileInfoAt(const Vec2& Tile_pos) {
     TileInfo tileInfo;
     tileInfo.tilePos = Tile_pos;
     tileInfo.WorldPos = _gameMap->tileToAbsolute(Tile_pos);
-    tileInfo.type = Other; // 默认类型
+    tileInfo.type = TileConstants::Other; // 默认类型
     tileInfo.isObstacle = isCollidableAtPos(Tile_pos);
+
+
+    // 初始化默认掉落物品信息
+    tileInfo.drops["None"] = { 0, 0.0f }; // 默认无物品掉落
 
     // 判断path层
     int pathGID = _gameMap->getTileGIDAt("path", Tile_pos);
     if (pathGID != 0) {
         ValueMap pathProps = _gameMap->getTilePropertiesForGID(pathGID);
         if (pathProps.find("isGrass") != pathProps.end() && pathProps["isGrass"].asBool()) {
-            tileInfo.type = Grass;
+            tileInfo.type = TileConstants::Grass; // 这个位置如果用草会报错 初步怀疑是编码的问题
+            tileInfo.drops.clear(); // 清空默认的 "None" 项
+            // 这个位置如果用草会报错 初步怀疑是编码的问题
+            tileInfo.drops["Grass"] = { TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::GRASS_DROP_PROBABILITY }; // 掉落1个草，概率为50%
         }
         else if (pathProps.find("isStone") != pathProps.end() && pathProps["isStone"].asBool()) {
-            tileInfo.type = Stone;
+            tileInfo.type = TileConstants::Stone;
+            tileInfo.drops.clear(); // 清空默认的 "None" 项
+            tileInfo.drops["石头"] = { TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::STONE_DROP_PROBABILITY }; // 掉落1个石头，概率为30%
+        }
+        // 对应树枝和树桩
+        else if(pathProps.find("isWood") != pathProps.end() && pathProps["isWood"].asBool())
+        {
+            tileInfo.type = TileConstants::Wood;
+            tileInfo.drops.clear(); // 清空默认的 "None" 项
+            tileInfo.drops["木材"] = {TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::BRANCH_DROP_PROBABILITY}; // 掉落1个木材，概率为30%
+        }
+        else if(pathProps.find("isTree") != pathProps.end() && pathProps["isTree"].asBool())
+        {
+            tileInfo.type = TileConstants::Tree;
+            tileInfo.drops.clear(); // 清空默认的 "None" 项
+            tileInfo.drops["木材"] = { TileConstants::MUTI_DROP_QUANTITY, TileConstants::TREE_DROP_PROBABILITY }; // 掉落3个木材，概率为90%
         }
     }
 
     // 判断water层
     int WaterGID = _gameMap->getTileGIDAt("Water", Tile_pos);
     if (WaterGID != 0) {
-        tileInfo.type = Water;
+        tileInfo.type = TileConstants::Water;
     }
     // 判断是否为耕地
     int backGID = _gameMap->getTileGIDAt("back", Tile_pos);
@@ -153,41 +175,55 @@ const TileInfo& InteractionManager::GetTileInfoAt(const Vec2& Tile_pos) {
     if (backGID != 0 && buildingGID == 0 && pathGID == 0) {
         ValueMap backProps = _gameMap->getTilePropertiesForGID(backGID);
         if (backProps.find("canFarm") != backProps.end() && backProps["canFarm"].asBool()) {
-            tileInfo.type = Soil;
+            tileInfo.type = TileConstants::Soil;
         }
     }
     // 判断是否为耕种过土地
-    if (FarmGID == DRY_FARM_TILE_GID) {
-        tileInfo.type = Soiled;
+    if (FarmGID == TileConstants::DRY_FARM_TILE_GID) {
+        tileInfo.type = TileConstants::Soiled;
     }
     return tileInfo;
 }
 
 // 根据动作做出对应地块变化
 void InteractionManager::ActionAnimation(GameCharacterAction action, const Vec2& TilePos) {
+    TileInfo actionTileInfo = GetTileInfoAt(TilePos);
     switch (action) {
     case Plowing:
-        _gameMap->replaceTileAt("farm", TilePos, DRY_FARM_TILE_GID);
+        _gameMap->replaceTileAt("farm", TilePos, TileConstants::DRY_FARM_TILE_GID);
         break;
     case Watering:
-        _gameMap->replaceTileAt("farm", TilePos, DRY_FARM_TILE_GID);
+        _gameMap->replaceTileAt("farm", TilePos, TileConstants::DRY_FARM_TILE_GID);
         break;
     case Weeding:
-        _gameMap->replaceTileAt("path", TilePos, EMPTY_GID);
+        _gameMap->replaceTileAt("path", TilePos, TileConstants::EMPTY_GID);
         AnimationHelper::playWeedingAnimation(_gameMap->tileToRelative(TilePos), _gameMap->getTiledMap());
         break;
     case Mining:
-        _gameMap->replaceTileAt("path", TilePos, EMPTY_GID);
+        _gameMap->replaceTileAt("path", TilePos, TileConstants::EMPTY_GID);
         AnimationHelper::playStoneBreakingAnimation(_gameMap->tileToRelative(TilePos), _gameMap->getTiledMap());      
         break;
-    case Placement:
-        // TODO : 种子放置和砍树
+    case Cutting:
+        _gameMap->replaceTileAt("path", TilePos, TileConstants::WOOD_GID); // 将类型改为树桩
+        getTreeAndChopAt(TilePos);
         break;
+    case Placement:
+        // TODO : 放置
+        break;
+    }
+    // 输出掉落物的调试信息
+    for (const auto& dropPair : actionTileInfo.drops) {
+        const std::string& name = dropPair.first;       // 物品名称
+        const auto& dropInfo = dropPair.second;         // 对应的掉落信息
+        int quantity = dropInfo.first;                 // 数量
+        float probability = dropInfo.second;           // 概率
+
+        CCLOG("Item: %s, Quantity: %d, Probability: %.2f", name.c_str(), quantity, probability);
     }
 }
 
 // 在WorldPos的dir方向第n格获取地块信息
-const TileInfo& InteractionManager::GetLineTileInfo(Direction dir, int distance, const Vec2& WroldPos) {
+const TileInfo InteractionManager::GetLineTileInfo(Direction dir, int distance, const Vec2& WroldPos) {
     int x_offset = 0, y_offset = 0; // 横纵坐标瓦片偏移量
     Vec2 Tile_pos = _gameMap->absoluteToTile(WroldPos);
     switch (dir)
@@ -210,4 +246,28 @@ const TileInfo& InteractionManager::GetLineTileInfo(Direction dir, int distance,
     Vec2 pos = Vec2(Tile_pos.x + x_offset * distance, Tile_pos.y + y_offset * distance);
     TileInfo tileinfo = GetTileInfoAt(pos);
     return tileinfo;
+}
+
+// 某个位置播放砍树动画（要求地图是Farmmap类）
+void InteractionManager::getTreeAndChopAt(const Vec2& tilePos) {
+    if (!_gameMap) {
+        CCLOG("InteractionManager: _gameMap is null.");
+        return;
+    }
+
+    // 使用多态调用 GameMap 的 getTreeAtPosition
+    auto treeSprite = _gameMap->getTreeAtPosition(tilePos);
+    if (treeSprite) {
+        CCLOG("Tree found at (%f, %f). Chopping tree...", tilePos.x, tilePos.y);
+        treeSprite->chopTree();
+    }
+    else {
+        CCLOG("No tree found at tile position: (%f, %f)", tilePos.x, tilePos.y);
+    }
+}
+
+// 放置物品函数，待完善
+bool InteractionManager::placeObjectAtTile(const Vec2& tilePos) {
+    
+    return false;
 }

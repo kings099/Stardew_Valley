@@ -25,6 +25,12 @@
     <property name="isTree" type="bool" value="true"/>
    </properties>
   </tile>
+  <tile id="6">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+    <property name="isWood" type="bool" value="true"/>
+   </properties>
+  </tile>
   <tile id="7">
    <properties>
     <property name="TargetMap" value="../Resources/Maps/Farm/house.tmx"/>
@@ -86,12 +92,19 @@
   <tile id="18">
    <properties>
     <property name="canNotMove" type="bool" value="true"/>
-    <property name="isBranch" type="bool" value="true"/>
+    <property name="isWood" type="bool" value="true"/>
    </properties>
   </tile>
   <tile id="21">
    <properties>
     <property name="canNotMove" type="bool" value="true"/>
+    <property name="isWood" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="23">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+    <property name="isGrass" type="bool" value="true"/>
    </properties>
   </tile>
   <tile id="31">
@@ -744,7 +757,7 @@
  </layer>
  <layer id="5" name="path" width="80" height="65">
   <data encoding="base64" compression="zlib">
-   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
+   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
   </data>
  </layer>
  <layer id="11" name="farm" width="80" height="65">
