@@ -15,6 +15,7 @@
 #include <vector>
 #include <map>
 #include "Character/Character.h"
+#include "Control/TimeManager.h"
 
 class Store {
 public:
@@ -27,10 +28,23 @@ public:
 	// 根据季节更新价格
 	void updatePrices();
 
+	// 购买商品
+	bool buyProduct(int index);
+
+	// 出售商品
+	bool sellProduct(const GameSeedObject targetObject,int objectCount);
+
+	// 出售商品
+	bool sellProduct(const GameBaseObject targetObject, int objectCount);
+
 private:
-	int productKindCount;						// 商店每天售卖的货物种类
-	std::vector<SeedProductNode>_seedProduct;		// 种子商品种类,数量
-	std::vector<BaseProductNode> _baseProduct;		// 基础商品种类,数量
+	Character *_character;					// 玩家角色
+	TimeManager* _timeManager;				// 时间管理器
+	int productKindCount;					// 商店每天售卖的货物种类
+	std::vector<ProductNode>_product;		// 商品种类,数量
+
+	// 判断物品是否是种子的收获物
+	const GameSeedObject* canHarvestFromAnySeed(const GameBaseObject& baseObject) ;
 };
 
 #endif // !__STORE_H__

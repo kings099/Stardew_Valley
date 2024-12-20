@@ -22,14 +22,21 @@ public:
 	// 按下鼠标事件触发函数
 	void onMouseDown(cocos2d::Event* event,GameCharacterAction &gameCharacterAction,cocos2d::Vec2 & targetTilePos, InteractionManager* interactionManager);
 
+	// 获取技能等级
+	int getSkillLevel(int index);
+
+    // 获取角色金钱
+	int getMoney();
+
+	// 修改角色金钱
+	void setMoney(int money);
+
 	// 保存数据
 	bool saveData(const std::string& fileName);
 
 	// 加载数据
 	bool loadData(const std::string& fileName);
 
-	// 获取技能等级
-	int getSkillLevel(int index);
 private:
 	int _skillExprience[SKILL_KIND_NUM];	// 技能经验值数组
 	int _skillLevel[SKILL_KIND_NUM];		// 技能等级数组

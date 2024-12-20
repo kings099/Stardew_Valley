@@ -20,7 +20,7 @@ constexpr int MEDIUM_RESOLUTION_HEIGHT = 720;                               // �
 constexpr int LARGE_RESOLUTION_WIDTH = 1920;                                // 大屏分辨率宽度
 constexpr int LARGE_RESOLUTION_HEIGHT = 1080;                               // 大屏分辨率高度
 constexpr float FRAME_RATE = 60.0f;                                         // 游戏帧率
-const std::string APPLICATION_TITLE = u8"星露谷物语 Stardew Valley";        // 游戏应用标题
+const std::string APPLICATION_TITLE = u8"星露谷物语 Stardew Valley";         // 游戏应用标题
 
 
 //游戏登录界面相关设置
@@ -62,6 +62,8 @@ constexpr int START_UP_MONEY = 500;                                         // �
 // 商店相关设置
 constexpr int PRODUCE_KIND_NUM_EACH_DAY = 4;                                // 每日出售的商品种类数量
 constexpr int MAX_PRODUCT_COUNT_EACH_DAY = 5;                               // 每日出售的一种商品的最大数量
+constexpr float INCREASE_RATE_BY_SEASON = 1.2f;                             // 商品价格上涨比例(季节)
+constexpr float DISCOUNT_RATE_BY_SEASON = 0.8f;                             // 商品价格下跌比例(季节)
 
 // 场景过渡相关
 constexpr float LERP_SPEED = 0.1f;											// 插值平滑速度
@@ -144,10 +146,10 @@ constexpr float ANGRY_ICON_RATIO = 0.8f;                                        
 constexpr float FISH_RATIO = 1.0f;                                              //鱼的缩放比例
 
 //动画类
-constexpr float WOOD_CUT_RATIO = 0.3f;                                          //砍木桩动画的缩放比例
-constexpr float WEEDING_RATIO = 0.4f;                                           //除草动画的缩放比例
-constexpr float STONE_BREAK_RATIO = 0.2f;                                       //碎石动画的缩放比例
-constexpr float WATER_RATIO = 0.8f;                                       //碎石动画的缩放比例
+constexpr float WOOD_CUT_RATIO = 0.3f;                                          // 砍木桩动画的缩放比例
+constexpr float WEEDING_RATIO = 0.4f;                                           // 除草动画的缩放比例
+constexpr float STONE_BREAK_RATIO = 0.2f;                                       // 碎石动画的缩放比例
+constexpr float WATER_RATIO = 0.8f;                                             // 碎石动画的缩放比例
 
 
 //游戏物品对应技能类型定义
@@ -764,19 +766,15 @@ struct BoxNode {
     }
 };
 
-// 种子商品信息定义
-struct SeedProductNode {
-    GameSeedObject product;	    // 商品信息
+// 商品信息定义
+struct ProductNode {
+    GameCommonObject product;	// 商品信息
     int count;					// 商品数量
     int totalPrice;				// 商品价格
+    Season discountSeason;      // 商品打折的季节
+    Season increaseSeason;      // 商品涨价的季节
 };
 
-// 基础商品信息定义
-struct BaseProductNode {
-    GameBaseObject product;	    // 商品信息
-    int count;					// 商品数量
-    int totalPrice;				// 商品价格
-};
 
 
 #endif // !_CONSTANT_H_
