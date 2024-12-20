@@ -35,7 +35,7 @@
  </layer>
  <layer id="7" name="ore" width="50" height="20">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AU0ALIMqPylZgxxdHVDFYgg8OduMRHAfXBaFjjBtjCBj1vwfggtQ8Zae8magNc8Y+rDCG1bCGUvqiR/rCZQQ1zlQiYAQoLJSqXuzI4zCPkFmrYR2vzh2pZgxwP64aoH0bBKBgFowAEANuhBTo=
+   eJxjYBgFo2AU0ALIMhMWx6VmsAEZHO7EJT4KqA9Gwxo3wBY26HkLxgepfchIezdRG+CKf2LKGUrMJ1aeXDvoka5xpQVKgAydy3FahxOy+UO1rEGOh3VD1A+jYBSMglEAAgA5tQSm
   </data>
  </layer>
  <layer id="10" name="paths" width="50" height="20">
