@@ -3,7 +3,25 @@
 星露谷物语[Sprit-Sheet-Resource](https://www.spriters-resource.com/pc_computer/stardewvalley/)
 
 ---
-### 项目开发计划
+## 成员分工
+
+| 姓名 | 学号 | 分工 |
+| :---: | :---: | :---: |
+| 尹诚成 (组长) | 2351279 | |
+| 金恒宇 | 2352280 |  |
+| 达思睿 | 2352288 |  |
+| 胡宝怡 | 2353409 |  |
+
+## 成员贡献
+
+| 姓名 | 学号 | 总提交行数 |.h和.cpp提交行数 | 工作量 |
+| :---: | :---: | :---: | :---: | :---: |
+| 尹诚成 (组长) | 2250758 |  |  |  |
+| 金恒宇 | 2251730 |  |  |  |
+| 达思睿 | 2352288 |  |  |  |
+| 胡宝怡 | 2353409 |  |  |  |
+---
+### 项目开发日志
 ---
 #### 2024.11.22
 - Cocos2d-x 3.17.2及相关环境配置  
@@ -77,6 +95,8 @@
 #### 2024.12.12
 - 调整 `InteractionManager` 类
 - 实现 `MapSwitchManager` 类
+- 初步实现 `Crop` 类
+- 初步实现 `NPC` 类
 
 #### 2024.12.13
 - 弃用 `SceneSwitcher` 类
@@ -88,6 +108,51 @@
 - 初步实现 `CharacterAction` 类
 - 调整地图文件
 - 实现人物移动碰撞检测
-  
+
+#### 2024.12.14
+- 调整 `characterAction` 类
+- 调整 `InteractionManager` 类
+- 初步实现存储和读取角色信息功能
+
+#### 2024.12.15
+- 基本实现存储和读取角色信息功能
+- 进一步实现 `Crop` 类
+- 调整 `FarmMap` 类
+- 调整 `GameMap` 类
+
+#### 2024.12.16
+- 弃用 `FarmMapScene` 类
+- 初步实现 `Animation` 类
+- 实现  `GameMainScene` 类 
+- 完善 `UILayer` 类
+- 调整 `LocationMap` 类
+- 调整 `Character` 类及其基类
+- 调整 `InteractionManager` 类
+
+#### 2024.12.17
+- 初步实现 `AudioControlUI` 类
+- 初步实现 `AudioControlLayer` 类
+- 初步实现 `ChatLayer` 类
+- 初步实现 `Animal` 类
+- 进一步实现 `NPC` 类
+- 基本实现 `Crop` 类
+
+#### 2024.12.18
+- 初步实现 `Task` 类
+- 初步实现 `Box` 类
+- 基本实现 `NPC` 类
+- 调整 `UILayer` 类
+
+#### 2024.12.19
+- 基本实现 `Fish` 类
+- 基本实现 `Box` 类
+- 实现 `TownMap` 类
+- 调整 `GameViewController` 类
+- 调整 `Character` 类及其基类
+- 调整 `UILayer` 类
+
+#### 2024.12.20
+- 基本实现 `Store` 类
+
 ---
-#### 文档更新日期：2024年12月14日
+#### 文档更新日期：2024年12月20日
