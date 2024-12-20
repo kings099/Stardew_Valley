@@ -244,3 +244,29 @@ void FarmMap::initializeFishes() {
         CCLOG("Error: Failed to create fish_2!");
     }
 }
+
+Crops* FarmMap::getTreeAtPosition(const Vec2& tilePos) {
+    if (!_treeLayer) {
+        CCLOG("Tree layer not initialized!");
+        return nullptr;
+    }
+
+    // 将瓦片坐标转换为相对地图的绝对坐标
+    Vec2 treeWorldPos = tileToRelative(tilePos);
+
+    // 遍历树木层的所有子节点
+    for (auto child : _treeLayer->getChildren()) {
+        auto sprite = dynamic_cast<Crops*>(child);
+        if (sprite) {
+            // 获取精灵的世界坐标
+            Vec2 spriteWorldPos = sprite->getPosition();
+            // 如果坐标相等，返回指针
+            if (spriteWorldPos.equals(treeWorldPos)) {
+                return sprite;
+            }
+        }
+    }
+
+    CCLOG("No tree found at tile position: (%f, %f)", tilePos.x, tilePos.y);
+    return nullptr; // 未找到匹配的树精灵
+}

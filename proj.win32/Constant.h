@@ -73,6 +73,7 @@ constexpr float INDOOR_MAP_SCALE = 5.0f;									// 室内地图缩放比例
 namespace TileConstants {
     constexpr int DRY_FARM_TILE_GID = 2040;                                     // 干燥耕地效果动画图块GID
     constexpr int EMPTY_GID = 0;                                                // 空白GID
+    constexpr int WOOD_GID = 7;                                                 // 树桩标记GID（不可见）
     constexpr int OAK_GID = 10;                                                 // 桦树GID
     constexpr int MAMPLE_GID = 11;                                              // MAMPLE GID
     constexpr int PINE_GID = 12;                                                // PINE GID
@@ -85,7 +86,7 @@ namespace TileConstants {
 
     constexpr float GRASS_DROP_PROBABILITY = 0.5f;                              // 草掉落概率
     constexpr float STONE_DROP_PROBABILITY = 0.3f;                              // 石头掉落概率
-    constexpr float BRANCH_DROP_PROBABILITY = 0.1f;                             // 树枝掉落概率
+    constexpr float BRANCH_DROP_PROBABILITY = 0.3f;                             // 树枝和树桩掉落概率
     constexpr float TREE_DROP_PROBABILITY = 0.9f;                               // 树木掉落概率
         
     constexpr int DEFAULT_DROP_QUANTITY = 1;                                    // 默认掉落数量
@@ -95,9 +96,10 @@ namespace TileConstants {
     enum TileType {
         Grass,      // 草
         Tree,       // 树木
-        Branch,     // 树枝
+        Wood,       // 树枝和树桩一起处理
         Mine,       // 矿石
-        Stone,      // 
+        Stone,      // 石头
+        Box,        // 箱子
         Water,      // 水
         Soil,       // 可耕种土地
         Soiled,     // 已耕种土地
@@ -119,6 +121,7 @@ constexpr int CHARACTER_LAYER_GRADE = 1;                                    // �
 constexpr int TREE_LAYER_GRADE = 2;                                         // 树木层级
 constexpr int UI_LAYER_GRADE = 3;                                           // UI层级
 constexpr int OBJECT_LAYER_GRADE = 4;                                       // 物品层级
+constexpr int ANIMATION_LAYER_GRADE = 10;                                   // 动画层级
 constexpr float ENLARGEMENT_RATIO = 1.2f;									// 按钮动画缩放比例
 constexpr float ENLARGEMENT_TIME = 0.15f;									// 按钮动画缩放时间
 constexpr int CLOSE_OBJECT_LIST_START_X = 729;								// 物品栏(关闭状态)起始位置的X坐标

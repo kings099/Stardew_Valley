@@ -11,6 +11,7 @@
 #define GAME_MAP_H_
 
 #include "cocos2d.h"
+#include "Crops/Crops.h"
 
 USING_NS_CC;
 
@@ -48,6 +49,9 @@ public:
 
     // 替换指定图层的瓦片
     void replaceTileAt(const std::string& layerName, const Vec2& tileCoord, int newGID);
+
+    // 获取作物的指针，在农场子类中实现，其他类型返回nullptr
+    virtual Crops* getTreeAtPosition(const Vec2& tilePos);
 
     // 获取瓦片地图指针
     TMXTiledMap* GameMap::getTiledMap() const;

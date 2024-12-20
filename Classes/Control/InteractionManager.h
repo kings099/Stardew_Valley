@@ -12,6 +12,7 @@
 
 #include "cocos2d.h"
 #include "Maps/GameMap.h"
+#include "Maps/FarmMap.h"
 #include "../proj.win32/Constant.h"
 #include "Crops/Crops.h"
 #include <vector>
@@ -57,6 +58,9 @@ private:
 
     // 获取某个瓦片的地块信息
     const TileInfo GetTileInfoAt(const Vec2& WroldPos);
+
+    // 某个位置播放砍树动画（多态实现要求地图是Farmmap类）
+    void getTreeAndChopAt(const Vec2& tilePos);
 };
 
 #endif // INTERACTION_MANAGER_H
