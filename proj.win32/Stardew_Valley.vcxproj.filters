@@ -169,6 +169,9 @@
     <ClInclude Include="..\Classes\Control\MapStateManager.h">
       <Filter>Classes\Control</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\Maps\MineMap.h">
+      <Filter>Classes\Maps</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\CursorAndBUutton\HoverCursor.cpp" />
@@ -282,6 +285,9 @@
     </ClCompile>
     <ClCompile Include="..\Classes\Control\MapStateManager.cpp">
       <Filter>Classes\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Maps\MineMap.cpp">
+      <Filter>Classes\Maps</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
