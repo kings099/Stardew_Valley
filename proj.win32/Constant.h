@@ -87,6 +87,7 @@ constexpr int FONT_SIZE = 24;                                               // �
 constexpr int MAP_LAYER_GRADE = 0;                                          // 地图层级
 constexpr int CHARACTER_LAYER_GRADE = 1;                                    // 角色层级
 constexpr int UI_LAYER_GRADE = 2;                                           // UI层级
+constexpr int ANIMATION_LAYER_GRADE = 10;                                   // 动画层级（父节点为瓦片地图）
 constexpr int OBJECT_LAYER_GRADE = 3;                                       // 物品层级
 constexpr float ENLARGEMENT_RATIO = 1.2f;									// 按钮动画缩放比例
 constexpr float ENLARGEMENT_TIME = 0.15f;									// 按钮动画缩放时间
@@ -125,7 +126,23 @@ constexpr int PUMPKIN_MAX_GROWTHSTAGE = 6;                                  //�
 constexpr int OAK_MAX_GROWTHSTAGE = 5;                                      //橡树共有5个生长阶段
 constexpr int MAPLE_MAX_GROWTHSTAGE = 5;                                    //枫树共有5个生长阶段
 constexpr int PINE_MAX_GROWTHSTAGE = 5;                                     //松树共有5个生长阶段
+constexpr float CROP_START_RATIO = 1.5f;                                    //农作物未成熟时的缩放比例
+constexpr float CROP_MATURE_RATIO = 1.0f;                                    //农作物成熟时的缩放比例
+constexpr float CROP_HORIZONTAL_ANCHORPOINT = 0.5f;					        // 树水平锚点
+constexpr float CROP_VERTICAL_ANCHORPOINT = 0.0f;						    // 树垂直锚点
 
+//动物类
+constexpr float ANIMAL_RATIO = 1.0f;                                            //动物类的缩放比例
+constexpr float ANGRY_ICON_RATIO = 0.8f;                                        //动物发怒提示的缩放比例
+
+//鱼类
+constexpr float FISH_RATIO = 1.0f;                                              //鱼的缩放比例
+
+//动画类
+constexpr float WOOD_CUT_RATIO = 0.3f;                                          //砍木桩动画的缩放比例
+constexpr float WEEDING_RATIO = 0.4f;                                           //除草动画的缩放比例
+constexpr float STONE_BREAK_RATIO = 0.2f;                                       //碎石动画的缩放比例
+constexpr float WATER_RATIO = 0.8f;                                       //碎石动画的缩放比例
 
 
 //游戏物品对应技能类型定义
@@ -467,6 +484,174 @@ const std::vector<GameBaseObject> GAME_BASE_OBJECTS_ATTRS = {
     GameBaseObject(27,"../Resources/Objects/Base/Copper.png","Copper","铜锭",Mine,99,0,true,120,false,INVAVID_NUM,false,INVAVID_NUM,false,true,{{"CopperParticle",10}}),
     GameBaseObject(28,"../Resources/Objects/Base/Iron.png","Iron","铁锭",Mine,99,0,true,250,false,INVAVID_NUM,false,INVAVID_NUM,false,true,{{"IronParticle",10}}),
     GameBaseObject(29,"../Resources/Objects/Base/Fertilizer.png","Fertilizer","肥料",Farm,99,0,true,150,false,INVAVID_NUM,false,INVAVID_NUM,false,true,{}),
+
+GameBaseObject(30, "../Resources/Objects/Base/Bigeye.png", "Bigeye", "大眼鱼", Fish,  // 大眼鱼
+   100, // 最大存储量
+   1,   // 解锁所需等级
+   true, // 是否能出售
+   150,  // 出售价格
+   false, // 是否可以购买
+   INVAVID_NUM,    // 购买价格
+   true, // 是否可以食用
+   40,    // 食用恢复的能量值
+   false, // 能否放置
+   false, //能否合成
+   {}    //合成物品的原料
+),
+
+GameBaseObject(30, "../Resources/Objects/Base/LargemouthBass.png", "LargemouthBass", "大嘴鲈鱼", Fish,  // 大嘴鲈鱼
+   100, // 最大存储量
+   2,   // 解锁所需等级
+   true, // 是否能出售
+   170,  // 出售价格
+   false, // 是否可以购买
+   INVAVID_NUM,    // 购买价格
+   true, // 是否可以食用
+   45,    // 食用恢复的能量值
+   false, // 能否放置
+   false, //能否合成
+   {}    //合成物品的原料
+),
+
+GameBaseObject(30, "../Resources/Objects/Base/Salmon.png", "Salmon", "鲑鱼", Fish,  // 鲑鱼
+   100, // 最大存储量
+   3,   // 解锁所需等级
+   true, // 是否能出售
+   200,  // 出售价格
+   false, // 是否可以购买
+   INVAVID_NUM,    // 购买价格
+   true, // 是否可以食用
+   50,    // 食用恢复的能量值
+   false, // 能否放置
+   false, //能否合成
+   {}    //合成物品的原料
+),
+
+GameBaseObject(30, "../Resources/Objects/Base/Squid.png", "Squid", "鱿鱼", Fish,  // 鱿鱼
+   100, // 最大存储量
+   3,   // 解锁所需等级
+   true, // 是否能出售
+   225,  // 出售价格
+   false, // 是否可以购买
+   INVAVID_NUM,    // 购买价格
+   true, // 是否可以食用
+   70,    // 食用恢复的能量值
+   false, // 能否放置
+   false, //能否合成
+   {}    //合成物品的原料
+),
+
+GameBaseObject(30, "../Resources/Objects/Base/Sardines.png", "Sardines", "沙丁鱼", Fish,  // 沙丁鱼
+   100, // 最大存储量
+   2,   // 解锁所需等级
+   true, // 是否能出售
+   150,  // 出售价格
+   false, // 是否可以购买
+   INVAVID_NUM,    // 购买价格
+   true, // 是否可以食用
+   40,    // 食用恢复的能量值
+   false, // 能否放置
+   false, //能否合成
+   {}    //合成物品的原料
+),
+
+GameBaseObject(30, "../Resources/Objects/Base/Herring.png", "Herring", "鲱鱼", Fish,  // 鲱鱼
+   100, // 最大存储量
+   5,   // 解锁所需等级
+   true, // 是否能出售
+   350,  // 出售价格
+   false, // 是否可以购买
+   INVAVID_NUM,    // 购买价格
+   true, // 是否可以食用
+   60,    // 食用恢复的能量值
+   false, // 能否放置
+   false, //能否合成
+   {}    //合成物品的原料
+),
+
+GameBaseObject(30, "../Resources/Objects/Base/RedMullet.png", "RedMullet", "红鲻鱼", Fish,  // 红鲻鱼
+   100, // 最大存储量
+   1,   // 解锁所需等级
+   true, // 是否能出售
+   180,  // 出售价格
+   false, // 是否可以购买
+   INVAVID_NUM,    // 购买价格
+   true, // 是否可以食用
+   35,    // 食用恢复的能量值
+   false, // 能否放置
+   false, //能否合成
+   {}    //合成物品的原料
+),
+
+GameBaseObject(30, "../Resources/Objects/Base/Carps.png", "Carps", "鲤鱼", Fish,  // 鲤鱼
+   100, // 最大存储量
+   1,   // 解锁所需等级
+   true, // 是否能出售
+   180,  // 出售价格
+   false, // 是否可以购买
+   INVAVID_NUM,    // 购买价格
+   true, // 是否可以食用
+   45,    // 食用恢复的能量值
+   false, // 能否放置
+   false, //能否合成
+   {}    //合成物品的原料
+),
+
+GameBaseObject(30, "../Resources/Objects/Base/Octopus.png", "Octopus", "章鱼", Fish,  // 章鱼
+   100, // 最大存储量
+   3,   // 解锁所需等级
+   true, // 是否能出售
+   275,  // 出售价格
+   false, // 是否可以购买
+   INVAVID_NUM,    // 购买价格
+   true, // 是否可以食用
+   70,    // 食用恢复的能量值
+   false, // 能否放置
+   false, //能否合成
+   {}    //合成物品的原料
+),
+
+GameBaseObject(30, "../Resources/Objects/Base/RedSnapper.png", "RedSnapper", "红鲷鱼", Fish,  // 红鲷鱼
+   100, // 最大存储量
+   3,   // 解锁所需等级
+   true, // 是否能出售
+   200,  // 出售价格
+   false, // 是否可以购买
+   INVAVID_NUM,    // 购买价格
+   true, // 是否可以食用
+   50,    // 食用恢复的能量值
+   false, // 能否放置
+   false, //能否合成
+   {}    //合成物品的原料
+),
+
+GameBaseObject(30, "../Resources/Objects/Base/SmallmouthBass.png", "SmallmouthBass", "小嘴鲈鱼", Fish,  // 小嘴鲈鱼
+   100, // 最大存储量
+   2,   // 解锁所需等级
+   true, // 是否能出售
+   180,  // 出售价格
+   false, // 是否可以购买
+   INVAVID_NUM,    // 购买价格
+   true, // 是否可以食用
+   45,    // 食用恢复的能量值
+   false, // 能否放置
+   false, //能否合成
+   {}    //合成物品的原料
+),
+
+GameBaseObject(30, "../Resources/Objects/Base/TunaFish.png", "TunaFish", "金枪鱼", Fish,  // 金枪鱼
+   100, // 最大存储量
+   3,   // 解锁所需等级
+   true, // 是否能出售
+   300,  // 出售价格
+   false, // 是否可以购买
+   INVAVID_NUM,    // 购买价格
+   true, // 是否可以食用
+   70,    // 食用恢复的能量值
+   false, // 能否放置
+   false, //能否合成
+   {}    //合成物品的原料
+)
 
    // GameBaseObject(30,"","None","无效物品",GameObjectSkillType::None,0,0,false,INVAVID_NUM,false,INVAVID_NUM,false,INVAVID_NUM,false,false,{})
 };

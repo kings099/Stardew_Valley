@@ -13,6 +13,7 @@
 #include <unordered_map>
 #include <string>
 #include <vector>
+#include "proj.win32/Constant.h"
 
 USING_NS_CC;
 
