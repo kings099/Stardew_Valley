@@ -69,17 +69,20 @@ constexpr float DISCOUNT_RATE_BY_SEASON = 0.8f;                             // �
 constexpr float LERP_SPEED = 0.1f;											// 插值平滑速度
 constexpr float SCENE_TRANSITION_TIME = 1.0f;								// 场景切换时间
 constexpr float FARM_MAP_SCALE = 2.0f;										// 农场地图缩放比例
-constexpr float INDOOR_MAP_SCALE = 5.0f;									// 室内地图缩放比例
+constexpr float INDOOR_MAP_SCALE = 3.0f;									// 室内地图缩放比例
 constexpr float TOWN_MAP_SCALE = 2.0f;                                      // 小镇地图缩放
 constexpr int FARM_HOUSE_CREAT_X = 1816;                                    // 农场室内地图创建位置
 constexpr int FARM_HOUSE_CREAT_Y = 1538;                                    // 农场室内地图创建位置
 constexpr int TOWN_CREAT_X = 2454;                                          // 小镇地图创建位置
 constexpr int TOWN_CREAT_Y = 920;                                           // 小镇地图创建位置
-constexpr int FARM_HOUSE_TELE_X = 3;                                     // 农场室内地图传送位置
-constexpr int FARM_HOUSE_TELE_Y = 10;                                     // 农场室内地图传送位置
-constexpr int TOWN_TELE_X = 1;                                           // 小镇地图传送位置
-constexpr int TOWN_TELE_Y = 91;                                            // 小镇地图传送位置
-
+constexpr int FARM_HOUSE_TELE_X = 3;                                        // 农场室内地图传送位置
+constexpr int FARM_HOUSE_TELE_Y = 10;                                       // 农场室内地图传送位置
+constexpr int TOWN_TELE_X = 1;                                              // 小镇地图传送位置
+constexpr int TOWN_TELE_Y = 91;                                             // 小镇地图传送位置
+constexpr int MINE_CREAT_X = 1080;                                          // 矿洞地图的创建位置
+constexpr int MINE_CREAT_Y = 1120;                                          // 矿洞地图的创建位置
+constexpr int MINE_TELE_X = 1;                                              // 农场室内地图传送位置
+constexpr int MINE_TELE_Y = 5;                                             // 农场室内地图传送位置
 // 地图图块相关
 namespace TileConstants {
     constexpr int DRY_FARM_TILE_GID = 2040;                                     // 干燥耕地效果动画图块GID
@@ -99,7 +102,10 @@ namespace TileConstants {
     constexpr float STONE_DROP_PROBABILITY = 0.3f;                              // 石头掉落概率
     constexpr float BRANCH_DROP_PROBABILITY = 0.3f;                             // 树枝和树桩掉落概率
     constexpr float TREE_DROP_PROBABILITY = 0.9f;                               // 树木掉落概率
-        
+    constexpr float MINE_DROP_PROBABILITY = 0.5f;                               // 矿物掉落概率    
+    constexpr float STONE_DROP_MINE_PROBABILITY = 0.1f;                         // 挖矿时石头掉落概率    
+    constexpr float TREATURE_PROBABILITY = 1.0f;                                // 珍惜物品掉落概率
+    
     constexpr int DEFAULT_DROP_QUANTITY = 1;                                    // 默认掉落数量
     constexpr int MUTI_DROP_QUANTITY = 3;                                       // 默认多个掉落数量
 
@@ -109,6 +115,7 @@ namespace TileConstants {
         Tree,       // 树木
         Wood,       // 树枝和树桩一起处理
         Mine,       // 矿石
+        Treasure,   // 珍惜物品
         Stone,      // 石头
         Box,        // 箱子
         Water,      // 水
@@ -195,6 +202,14 @@ constexpr float WOOD_CUT_RATIO = 0.3f;                                          
 constexpr float WEEDING_RATIO = 0.4f;                                           // 除草动画的缩放比例
 constexpr float STONE_BREAK_RATIO = 0.2f;                                       // 碎石动画的缩放比例
 constexpr float WATER_RATIO = 0.8f;                                             // 碎石动画的缩放比例
+
+// 地图类型设置
+enum class MapType {
+    Generic,
+    Mine,
+    Farm,
+    Town
+};
 
 
 //游戏物品对应技能类型定义

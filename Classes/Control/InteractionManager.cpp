@@ -43,6 +43,7 @@ bool InteractionManager::init(GameMap* gameMap) {
     return true;
 }
 
+// 更新角色周围的瓦片信息
 void InteractionManager::updateSurroundingTiles(Vec2& world_pos) {
     if (!_gameMap ) {
         CCLOG("InteractionManager: Invalid state. gameMap is null.");
@@ -64,6 +65,7 @@ void InteractionManager::updateSurroundingTiles(Vec2& world_pos) {
     }
 }
 
+// 判断指定瓦片位置是否为不可通行区域
 bool InteractionManager::isCollidableAtPos(const Vec2& tilePos) {
     if (!_gameMap) {
         CCLOG("wrong map");
@@ -93,7 +95,7 @@ bool InteractionManager::isCollidableAtPos(const Vec2& tilePos) {
     return false;
 }
 
-
+// 检查角色是否站在传送点上，并获取传送目标地图
 bool InteractionManager::checkTeleport(const Vec2& worldPos, std::string& targetMapFile) {
     if (!_gameMap) return false;
 
@@ -110,6 +112,7 @@ bool InteractionManager::checkTeleport(const Vec2& worldPos, std::string& target
     return false;
 }
 
+// 改变地图
 void InteractionManager::setMap(GameMap* newMap) {
     if (newMap) {
         _gameMap = newMap;
@@ -165,24 +168,68 @@ const TileInfo InteractionManager::GetTileInfoAt(const Vec2& Tile_pos) {
 
     // 判断water层
     int WaterGID = _gameMap->getTileGIDAt("Water", Tile_pos);
+
     if (WaterGID != 0) {
         tileInfo.type = TileConstants::Water;
     }
-    // 判断是否为耕地
-    int backGID = _gameMap->getTileGIDAt("back", Tile_pos);
-    int buildingGID = _gameMap->getTileGIDAt("buildings", Tile_pos);
-    int FarmGID = _gameMap->getTileGIDAt("farm", Tile_pos);
-    if (backGID != 0 && buildingGID == 0 && pathGID == 0) {
-        ValueMap backProps = _gameMap->getTilePropertiesForGID(backGID);
-        if (backProps.find("canFarm") != backProps.end() && backProps["canFarm"].asBool()) {
-            tileInfo.type = TileConstants::Soil;
+    // 判断矿洞地图的矿石类型以及凋落物
+    if (_gameMap && _gameMap->getType() == MapType::Mine) {
+        int MineGID = _gameMap->getTileGIDAt("ore", Tile_pos);
+        GetMineInfo(MineGID, tileInfo);
+    }
+
+    // 判断农场地图特有属性
+    if(_gameMap && _gameMap->getType() == MapType::Farm)
+    {
+        // 判断是否为耕地
+        int backGID = _gameMap->getTileGIDAt("back", Tile_pos);
+        int buildingGID = _gameMap->getTileGIDAt("buildings", Tile_pos);
+        int FarmGID = _gameMap->getTileGIDAt("farm", Tile_pos);
+        if (backGID != 0 && buildingGID == 0 && pathGID == 0) {
+            ValueMap backProps = _gameMap->getTilePropertiesForGID(backGID);
+            if (backProps.find("canFarm") != backProps.end() && backProps["canFarm"].asBool()) {
+                tileInfo.type = TileConstants::Soil;
+            }
+        }
+        // 判断是否为耕种过土地
+        if (FarmGID == TileConstants::DRY_FARM_TILE_GID) {
+            tileInfo.type = TileConstants::Soiled;
         }
     }
-    // 判断是否为耕种过土地
-    if (FarmGID == TileConstants::DRY_FARM_TILE_GID) {
-        tileInfo.type = TileConstants::Soiled;
-    }
+
     return tileInfo;
+}
+
+// 获取矿石信息
+void InteractionManager::GetMineInfo(int MineGID,TileInfo& tileInfo) {
+    ValueMap oreProps = _gameMap->getTilePropertiesForGID(MineGID);
+    if (oreProps.find("isSteel") != oreProps.end() && oreProps["isSteel"].asBool())
+    {
+        tileInfo.type = TileConstants::Mine;//矿石
+        tileInfo.drops.clear(); // 清空默认的 "None" 项
+        tileInfo.drops["Steel"] = { TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::MINE_DROP_PROBABILITY }; // 掉落1个铁，概率为50%
+        tileInfo.drops["石头"] = { TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::STONE_DROP_MINE_PROBABILITY };// 掉落石头 概率10%
+        }
+    else if (oreProps.find("isCopper") != oreProps.end() && oreProps["isCopper"].asBool())
+    {
+        tileInfo.type = TileConstants::Mine;//矿石
+        tileInfo.drops.clear(); // 清空默认的 "None" 项
+        tileInfo.drops["铜粒"] = { TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::MINE_DROP_PROBABILITY }; // 掉落1个铜，概率为50%
+        tileInfo.drops["石头"] = { TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::STONE_DROP_MINE_PROBABILITY };// 掉落石头 概率10%
+        }
+    else if (oreProps.find("isTreasure") != oreProps.end() && oreProps["isTreasure"].asBool())
+    {
+        tileInfo.type = TileConstants::Treasure;
+        tileInfo.drops.clear(); // 清空默认的 "None" 项
+        tileInfo.drops["Ruby"] = { TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::TREATURE_PROBABILITY }; // 掉落1个红宝石，概率为100%
+        }
+    else if (oreProps.find("isRing") != oreProps.end() && oreProps["isRing"].asBool())
+    {
+        tileInfo.type = TileConstants::Treasure;
+        tileInfo.drops.clear(); // 清空默认的 "None" 项
+        tileInfo.drops["Ring"] = { TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::TREATURE_PROBABILITY }; // 掉落1个戒指，概率为100%
+        }
+
 }
 
 // 根据动作做出对应地块变化

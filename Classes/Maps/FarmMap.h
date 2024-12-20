@@ -40,6 +40,8 @@ public:
     // 获取指定位置的树木精灵指针
     Crops* getTreeAtPosition(const Vec2& tilePos) override;
 
+    MapType getType() const override { return MapType::Farm; }
+
 private:
     cocos2d::Node* _treeLayer; // 树木层节点
 

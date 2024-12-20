@@ -62,6 +62,10 @@ bool MapSwitchManager::switchMap(const std::string& newMapFile, Vec2& teleportPO
         newMap = TownMap::create(newMapFile,Vec2(TOWN_CREAT_X, TOWN_CREAT_Y));
         teleportPOS = newMap->tileToAbsolute(Vec2(TOWN_TELE_X, TOWN_TELE_Y));
     }
+    else if (newMapFile.find("Mine") != std::string::npos) {
+        newMap = MineMap::create(newMapFile, Vec2(MINE_CREAT_X, MINE_CREAT_Y));
+        teleportPOS = newMap->tileToAbsolute(Vec2(MINE_TELE_X, MINE_TELE_Y));
+    }
     else {
         CCLOG("Unknown map type for file: %s", newMapFile.c_str());
         return false;

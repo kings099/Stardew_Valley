@@ -66,6 +66,8 @@ public:
     // 保存地图信息，虚函数是为了防止子类有其他需要保存的信息
     virtual void saveChangesToStateManager() const;
 
+    virtual MapType getType() const { return MapType::Generic; }
+
 protected:
     std::string _mapName;     // 地图文件名
     TMXTiledMap* _tile_map;  // 瓦片地图类

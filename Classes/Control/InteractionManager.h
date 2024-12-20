@@ -35,9 +35,6 @@ public:
     // 更新角色周围的瓦片信息
     void updateSurroundingTiles(cocos2d::Vec2& world_pos);
 
-    // 判断指定瓦片位置是否为不可通行区域
-    bool isCollidableAtPos(const cocos2d::Vec2& tilePos);
-
     // 检查角色是否站在传送点上
     bool checkTeleport(const cocos2d::Vec2& worldPos, std::string& targetMapFile);
 
@@ -47,6 +44,7 @@ public:
     // 获取角色周围的瓦片信息
     const std::vector<TileInfo>& getSurroundingTiles() const;
 
+    // 执行对应地块动画
     void ActionAnimation(GameCharacterAction action, const Vec2& TilePos);
 
     // 获取角色前方第n格地块信息
@@ -57,6 +55,9 @@ private:
 
     std::vector<TileInfo> _surroundingTiles;    // 储存角色周围 9 格瓦片的信息
 
+    // 判断指定瓦片位置是否为不可通行区域
+    bool isCollidableAtPos(const cocos2d::Vec2& tilePos);
+
     // 获取某个瓦片的地块信息
     const TileInfo GetTileInfoAt(const Vec2& WroldPos);
 
@@ -65,6 +66,9 @@ private:
 
     // 放置物品的方法
     bool placeObjectAtTile(const cocos2d::Vec2& tilePos);
+
+    // 获取矿石信息
+    void InteractionManager::GetMineInfo(int MineGID, TileInfo& tile);
 };
 
 #endif // INTERACTION_MANAGER_H

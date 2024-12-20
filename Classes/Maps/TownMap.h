@@ -26,6 +26,8 @@ public:
     // 重写初始化函数 
     virtual bool init(const std::string& mapFile, const Vec2& mapPosition) override;
 
+
+    MapType getType() const override { return MapType::Farm; }
 };
 
 #endif // TOWNMAP_H
