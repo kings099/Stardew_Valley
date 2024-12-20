@@ -35,7 +35,7 @@ void AnimationHelper::playWoodCuttingAnimation(const Vec2& position, TMXTiledMap
     }
     tempSprite->setPosition(position);
     tempSprite->setAnchorPoint(Vec2(0.5f, 0.5f));
-    farmMap->addChild(tempSprite);
+    farmMap->addChild(tempSprite,10);
     tempSprite->setScale(0.3f);
 
     // ¼ÓÔØ¿³Ä¾×®µÄÖ¡
@@ -68,7 +68,7 @@ void AnimationHelper::playWeedingAnimation(const Vec2& position, TMXTiledMap* fa
         return;
     }
     tempSprite->setPosition(position);
-    farmMap->addChild(tempSprite);
+    farmMap->addChild(tempSprite,10);
     tempSprite->setScale(0.4f);
 
     auto frames = loadFrames("../Resources/Animations/Weeding/weeding_", 7, Rect(0, 0, 64, 72));
@@ -99,7 +99,7 @@ void AnimationHelper::playStoneBreakingAnimation(const Vec2& position, TMXTiledM
     }
     tempSprite->setPosition(position);
     tempSprite->setAnchorPoint(Vec2(0.5f, 0.5f));
-    farmMap->addChild(tempSprite);
+    farmMap->addChild(tempSprite,10);
     tempSprite->setScale(0.2f);
 
     auto frames = loadFrames("../Resources/Animations/stone_break/stone_break_", 5, Rect(0, 0, 133, 136));

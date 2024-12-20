@@ -183,7 +183,7 @@ void FarmMap::initializeAnimals() {
     Vec2 startPosition_1(416, 832); //羊
     Animal* sheep = Animal::create("sheep", startPosition_1);
     if (sheep) {
-        _tile_map->addChild(sheep);
+        _tile_map->addChild(sheep,10);
         CCLOG("Sheep added successfully!");
     }
     else {
@@ -193,7 +193,7 @@ void FarmMap::initializeAnimals() {
     Vec2 startPosition_2(480, 816); //鸡
     Animal* chicken = Animal::create("chicken", startPosition_2);
     if (chicken) {
-        _tile_map->addChild(chicken);
+        _tile_map->addChild(chicken,10);
         CCLOG("Chicken added successfully!");
     }
     else {
@@ -203,7 +203,7 @@ void FarmMap::initializeAnimals() {
     Vec2 startPosition_3(464, 800); //牛
     Animal* cow = Animal::create("cow", startPosition_3);
     if (cow) {
-        _tile_map->addChild(cow);
+        _tile_map->addChild(cow,10);
         CCLOG("Cow added successfully!");
     }
     else {
@@ -215,9 +215,9 @@ void FarmMap::initializeFishes() {
     CCLOG("Initializing fishes...");
 
     Vec2 Position_1(816, 512);
-    Fishs* fish_0 = Fishs::create("fishSpring_0", "spring", Position_1);
-    if (fish_0) {
-        _tile_map->addChild(fish_0, 10);  // 设置 z-order 确保在前景中
+    Fishs* Bigeye = Fishs::create("Bigeye", "spring", Position_1);
+    if (Bigeye) {
+        _tile_map->addChild(Bigeye, 10);  // 设置 z-order 确保在前景中
         CCLOG("Fish 0 added successfully!");
     }
     else {
@@ -225,9 +225,9 @@ void FarmMap::initializeFishes() {
     }
 
     Vec2 Position_2(720, 512);
-    Fishs* fish_1 = Fishs::create("fishSpring_1", "spring", Position_2);
-    if (fish_1) {
-        _tile_map->addChild(fish_1, 10);
+    Fishs* LargemouthBass = Fishs::create("LargemouthBass", "spring", Position_2);
+    if (LargemouthBass) {
+        _tile_map->addChild(LargemouthBass, 10);
         CCLOG("Fish 1 added successfully!");
     }
     else {
@@ -235,22 +235,12 @@ void FarmMap::initializeFishes() {
     }
 
     Vec2 Position_3(880, 512);
-    Fishs* fish_2 = Fishs::create("fishSpring_2", "spring", Position_3);
-    if (fish_2) {
-        _tile_map->addChild(fish_2, 10);
+    Fishs* Salmon = Fishs::create("Salmon", "spring", Position_3);
+    if (Salmon) {
+        _tile_map->addChild(Salmon, 10);
         CCLOG("Fish 2 added successfully!");
     }
     else {
         CCLOG("Error: Failed to create fish_2!");
-    }
-
-    Vec2 Position_4(752, 422);
-    Fishs* fish_3 = Fishs::create("fishSpring_3", "spring", Position_4);
-    if (fish_3) {
-        _tile_map->addChild(fish_3, 10);
-        CCLOG("Fish 3 added successfully!");
-    }
-    else {
-        CCLOG("Error: Failed to create fish_3!");
     }
 }

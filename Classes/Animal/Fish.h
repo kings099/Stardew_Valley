@@ -15,6 +15,7 @@
 #include <unordered_map>
 #include <vector>
 #include <string>
+#include "proj.win32/Constant.h"
 
 USING_NS_CC;
 
