@@ -55,12 +55,12 @@ bool MapSwitchManager::switchMap(const std::string& newMapFile, Vec2& teleportPO
         newMap = FarmMap::create(newMapFile,TreeLayer);
     }
     else if (newMapFile.find("house") != std::string::npos) {
-        newMap = IndoorMap::create(newMapFile, Vec2(_character->getPosition().x, _character->getPosition().y));
-        teleportPOS = newMap->tileToAbsolute(Vec2(3, 10));
+        newMap = IndoorMap::create(newMapFile, Vec2(FARM_HOUSE_CREAT_X, FARM_HOUSE_CREAT_Y));
+        teleportPOS = newMap->tileToAbsolute(Vec2(FARM_HOUSE_TELE_X, FARM_HOUSE_TELE_Y));
     }
     else if (newMapFile.find("Town") != std::string::npos) {
-        newMap = TownMap::create(newMapFile, Vec2(_character->getPosition().x, _character->getPosition().y));
-        teleportPOS = newMap->tileToAbsolute(Vec2(1, 91));
+        newMap = TownMap::create(newMapFile,Vec2(TOWN_CREAT_X, TOWN_CREAT_Y));
+        teleportPOS = newMap->tileToAbsolute(Vec2(TOWN_TELE_X, TOWN_TELE_Y));
     }
     else {
         CCLOG("Unknown map type for file: %s", newMapFile.c_str());

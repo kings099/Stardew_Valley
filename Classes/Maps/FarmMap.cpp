@@ -52,7 +52,8 @@ bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition, Node* Tr
     _mapName = mapFile;
     //// 在场景初始化时设置季节
     Crops::setSeason(Season::Spring); // 设置当前季节为春季
-
+    
+    applySavedChanges();
     // 初始化小动物
     initializeAnimals();
 
@@ -65,7 +66,7 @@ bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition, Node* Tr
 
     // 添加树木层
     _treeLayer = TreeLayer;
-    plantTreesOnPathLayer(); // 假设最大生长阶段为 5
+    plantTreesOnPathLayer(); 
     //监听鼠标
     auto listener = EventListenerMouse::create();
     listener->onMouseDown = CC_CALLBACK_1(FarmMap::onMouseEvent, this);  // 监听鼠标点击事件
@@ -126,7 +127,7 @@ void FarmMap::plantTreesOnPathLayer() {
             int GID = pathLayer->getTileGIDAt(tilePos);
             // 检查 GID 是否为目标 GID
            /* TMXTiledMap* testmap = _tile_map;*/
-            if (GID == TileConstants::OAK_GID) {
+            if (GID == TileConstants::OAK_GID || GID == TileConstants::OAK_INVISIBLE_GID) {
                 // 创建并种植农作物
                 auto crop = Crops::create("oak", OAK_MAX_GROWTHSTAGE);
                 if (crop) {
@@ -141,7 +142,7 @@ void FarmMap::plantTreesOnPathLayer() {
                     CCLOG("Error: Failed to create crop of type oak");
                 }
             }
-            else if (GID == TileConstants::MAMPLE_GID) {
+            else if (GID == TileConstants::MAMPLE_GID || GID == TileConstants::MAMPLE_INVISIBLE_GID) {
 
                 // 创建并种植农作物
                 auto crop = Crops::create("maple",MAPLE_MAX_GROWTHSTAGE);
@@ -158,7 +159,7 @@ void FarmMap::plantTreesOnPathLayer() {
                 }
 
             }
-            else if (GID == TileConstants::PINE_GID) {
+            else if (GID == TileConstants::PINE_GID|| GID==TileConstants::PINE_INVISIBLE_GID) {
                 // 创建并种植农作物
                 auto crop = Crops::create("pine",PINE_MAX_GROWTHSTAGE);
                 if (crop) {
@@ -246,6 +247,7 @@ void FarmMap::initializeFishes() {
     }
 }
 
+// 获取某个位置的农作物指针
 Crops* FarmMap::getTreeAtPosition(const Vec2& tilePos) {
     if (!_treeLayer) {
         CCLOG("Tree layer not initialized!");

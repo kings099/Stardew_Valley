@@ -40,6 +40,7 @@ bool IndoorMap::init(const std::string& mapFile, const Vec2& mapPosition)
         return false;
     }
     _mapName = mapFile;
+    _map_position = mapPosition;
     this->setScale(INDOOR_MAP_SCALE);
 
     return true;

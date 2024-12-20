@@ -119,6 +119,11 @@ const Size& GameMap::getMapSizeinTile()
     return _tile_map->getMapSize();
 }
 
+// 地图绝对位置
+const Vec2& GameMap::getPosition() {
+    return _map_position;
+}
+
 // 获取某位置Layername图层的GID
 int GameMap::getTileGIDAt(const std::string& layerName, const Vec2& tileCoord)
 {

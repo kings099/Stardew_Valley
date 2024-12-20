@@ -69,6 +69,14 @@ constexpr float SCENE_TRANSITION_TIME = 1.0f;								// 场景切换时间
 constexpr float FARM_MAP_SCALE = 2.0f;										// 农场地图缩放比例
 constexpr float INDOOR_MAP_SCALE = 5.0f;									// 室内地图缩放比例
 constexpr float TOWN_MAP_SCALE = 2.0f;                                      // 小镇地图缩放
+constexpr int FARM_HOUSE_CREAT_X = 1816;                                    // 农场室内地图创建位置
+constexpr int FARM_HOUSE_CREAT_Y = 1538;                                    // 农场室内地图创建位置
+constexpr int TOWN_CREAT_X = 2454;                                          // 小镇地图创建位置
+constexpr int TOWN_CREAT_Y = 920;                                           // 小镇地图创建位置
+constexpr int FARM_HOUSE_TELE_X = 3;                                     // 农场室内地图传送位置
+constexpr int FARM_HOUSE_TELE_Y = 10;                                     // 农场室内地图传送位置
+constexpr int TOWN_TELE_X = 1;                                           // 小镇地图传送位置
+constexpr int TOWN_TELE_Y = 91;                                            // 小镇地图传送位置
 
 // 地图图块相关
 namespace TileConstants {

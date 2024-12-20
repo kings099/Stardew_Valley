@@ -42,6 +42,9 @@ public:
     // 地图瓦片大小
     const Size& getMapSizeinTile();
 
+    // 地图绝对位置
+    const Vec2& GameMap::getPosition();
+
     // 获取某位置Layername图层的GID
     virtual int getTileGIDAt(const std::string& layerName, const Vec2& tileCoord);
 

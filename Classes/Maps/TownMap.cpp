@@ -33,6 +33,7 @@ bool TownMap::init(const std::string& mapFile, const Vec2& mapPosition)
     if (!GameMap::init(mapFile, mapPosition)) {
         return false;
     }
+    _map_position = mapPosition;
     _mapName = mapFile;
     this->setScale(TOWN_MAP_SCALE);
 
