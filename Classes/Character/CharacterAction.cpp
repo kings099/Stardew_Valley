@@ -49,6 +49,24 @@ void CharacterAction::onMouseDown(cocos2d::Event* event, GameCharacterAction& ga
 	}
 }
 
+// 获取技能等级
+int CharacterAction::getSkillLevel(int index) {
+	if (index < 0 || index >= SKILL_KIND_NUM)
+		return -1;
+	return _skillLevel[index];
+}
+
+// 获取技能等级
+int CharacterAction::getMoney() {
+	return _money;
+}
+
+// 修改角色金钱
+void CharacterAction::setMoney(int money) {
+	_money += money;
+}
+
+
 // 获取角色打算执行的动作(鼠标左键)
 GameCharacterAction CharacterAction::getLeftButtonAction() {
 	ObjectListNode currentObject = getCurrentObject();
@@ -175,12 +193,7 @@ void CharacterAction::updateSkillExprience(GameCharacterAction gameCharacterActi
 	}
 }
 
-// 获取技能等级
-int CharacterAction::getSkillLevel(int index) {
-	if (index < 0 || index >= SKILL_KIND_NUM)
-		return -1;
-	return _skillLevel[index];
-}
+
 
 // 获取物品
 void CharacterAction::getObject() {
