@@ -68,6 +68,7 @@ constexpr float LERP_SPEED = 0.1f;											// 插值平滑速度
 constexpr float SCENE_TRANSITION_TIME = 1.0f;								// 场景切换时间
 constexpr float FARM_MAP_SCALE = 2.0f;										// 农场地图缩放比例
 constexpr float INDOOR_MAP_SCALE = 5.0f;									// 室内地图缩放比例
+constexpr float TOWN_MAP_SCALE = 2.0f;                                      // 小镇地图缩放
 
 // 地图图块相关
 namespace TileConstants {
@@ -108,6 +109,14 @@ namespace TileConstants {
         Other
     };
 
+    struct TileChange {
+        std::string layerName;          // 图层名称
+        cocos2d::Vec2 tileCoord;        // 瓦片坐标
+        int newGID;                     // 瓦片的新 GID
+
+        TileChange(const std::string& layer, const cocos2d::Vec2& coord, int gid)
+            : layerName(layer), tileCoord(coord), newGID(gid) {}
+    };
 }
 // 物品设置
 constexpr int OBJECT_LIST_ROWS = 3;											// 物品列表行数

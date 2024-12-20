@@ -8,7 +8,6 @@
  ****************************************************************/
 
 #include "GameMap.h"
-#include "Classes/Crops/Crops.h"
 USING_NS_CC;
 
 GameMap::GameMap(const Vec2& mapPosition)
@@ -37,7 +36,7 @@ bool GameMap::init(const std::string& mapFile, const Vec2& mapPosition)
     if (!Node::init()) {
         return false;
     }
-
+    _mapName = mapFile;
     // 加载地图
     _tile_map = TMXTiledMap::create(mapFile);
     if (!_tile_map) {
@@ -151,7 +150,7 @@ cocos2d::ValueMap GameMap::getTilePropertiesForGID(int GID)
 }
 
 // 替换指定图层的瓦片
-void GameMap::replaceTileAt(const std::string& layerName, const Vec2& tileCoord, int newGID) {
+void GameMap::replaceTileAt(const std::string& layerName, const Vec2& tileCoord, int newGID, bool isUserAction) {
     
     // 获取目标图层
     auto layer = _tile_map->getLayer(layerName);
@@ -170,6 +169,12 @@ void GameMap::replaceTileAt(const std::string& layerName, const Vec2& tileCoord,
     // 设置新瓦片
     layer->setTileGID(newGID, tileCoord);
     CCLOG("Replaced tile at (%f, %f) on layer '%s' with GID=%d", tileCoord.x, tileCoord.y, layerName.c_str(), newGID);
+    // 如果是用户行为保存修改，如果是恢复更改时不保存避免重复保存导致死循环
+    if(isUserAction)
+    {
+        // 保存到 MapStateManager
+        MapStateManager::getInstance().saveTileChange(_mapName, TileConstants::TileChange(layerName, tileCoord, newGID));
+    }
 }
 // 获取地图指针
 TMXTiledMap* GameMap::getTiledMap() const {
@@ -179,6 +184,27 @@ TMXTiledMap* GameMap::getTiledMap() const {
 //获取农作物精灵指针，只在农场地图有效，在农场地图中重写
 Crops* GameMap::getTreeAtPosition(const Vec2& tilePos) {
     return nullptr; // 默认返回 nullptr
+}
+
+// 恢复存储的文档
+void GameMap::applySavedChanges() {
+    const auto& changes = MapStateManager::getInstance().getTileChanges(_mapName);
+    for (const auto& change : changes) {
+        replaceTileAt(change.layerName, change.tileCoord, change.newGID, false);
+    }
+    CCLOG("Applied %zu saved tile changes for map '%s'.", changes.size(), _mapName.c_str());
+}
+
+// 当前地图保存已经在嫦changeTileInfo时保存，保留此方法是为了后续保存其他内容时候使用
+void GameMap::saveChangesToStateManager() const {
+    // 保存地图瓦片的更改逻辑
+    const auto& changes = MapStateManager::getInstance().getTileChanges(_mapName);
+    for (const auto& change : changes) {
+        CCLOG("Saving tile change: Layer='%s', Tile=(%f, %f), GID=%d",
+            change.layerName.c_str(), change.tileCoord.x, change.tileCoord.y, change.newGID);
+    }
+
+    CCLOG("Saved %zu changes for map: %s", changes.size(), _mapName.c_str());
 }
 
 

@@ -49,6 +49,7 @@ bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition, Node* Tr
         CCLOG("success: _tile_map is added");
        
     }
+    _mapName = mapFile;
     //// 在场景初始化时设置季节
     Crops::setSeason(Season::Spring); // 设置当前季节为春季
 

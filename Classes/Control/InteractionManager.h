@@ -53,7 +53,8 @@ public:
     const TileInfo GetLineTileInfo(Direction dir, int distance, const Vec2& WroldPos);
 
 private:
-    GameMap* _gameMap;                          // 当前地图对象的引用
+    GameMap* _gameMap;                          // 当前地图对象
+
     std::vector<TileInfo> _surroundingTiles;    // 储存角色周围 9 格瓦片的信息
 
     // 获取某个瓦片的地块信息
@@ -61,6 +62,9 @@ private:
 
     // 某个位置播放砍树动画（多态实现要求地图是Farmmap类）
     void getTreeAndChopAt(const Vec2& tilePos);
+
+    // 放置物品的方法
+    bool placeObjectAtTile(const cocos2d::Vec2& tilePos);
 };
 
 #endif // INTERACTION_MANAGER_H

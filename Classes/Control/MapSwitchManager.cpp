@@ -43,6 +43,8 @@ bool MapSwitchManager::switchMap(const std::string& newMapFile, Vec2& teleportPO
     CCLOG("Switching map to: %s", newMapFile.c_str());
 
     if (_currentMap) {
+        // 保存当前地图状态
+        _currentMap->saveChangesToStateManager();
         MapLayer->removeChild(_currentMap, true); // 清理旧地图
     }
     
@@ -51,14 +53,13 @@ bool MapSwitchManager::switchMap(const std::string& newMapFile, Vec2& teleportPO
 
     if (newMapFile.find("Combat") != std::string::npos) {
         newMap = FarmMap::create(newMapFile,TreeLayer);
-        teleportPOS = newMap->tileToAbsolute(Vec2(50, 50));
     }
     else if (newMapFile.find("house") != std::string::npos) {
-        newMap = IndoorMap::create(newMapFile);
+        newMap = IndoorMap::create(newMapFile, Vec2(_character->getPosition().x, _character->getPosition().y));
         teleportPOS = newMap->tileToAbsolute(Vec2(3, 10));
     }
     else if (newMapFile.find("Town") != std::string::npos) {
-        newMap = TownMap::create(newMapFile);
+        newMap = TownMap::create(newMapFile, Vec2(_character->getPosition().x, _character->getPosition().y));
         teleportPOS = newMap->tileToAbsolute(Vec2(1, 91));
     }
     else {
@@ -72,6 +73,7 @@ bool MapSwitchManager::switchMap(const std::string& newMapFile, Vec2& teleportPO
     }
 
     _currentMap = newMap;
+    _currentMap->applySavedChanges();
     MapLayer->addChild(_currentMap);
 
     // 更新 InteractionManager 的地图引用

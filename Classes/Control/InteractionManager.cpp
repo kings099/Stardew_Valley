@@ -208,7 +208,7 @@ void InteractionManager::ActionAnimation(GameCharacterAction action, const Vec2&
         getTreeAndChopAt(TilePos);
         break;
     case Placement:
-        // TODO : 种子放置和砍树
+        // TODO : 放置
         break;
     }
     // 输出掉落物的调试信息
@@ -264,4 +264,10 @@ void InteractionManager::getTreeAndChopAt(const Vec2& tilePos) {
     else {
         CCLOG("No tree found at tile position: (%f, %f)", tilePos.x, tilePos.y);
     }
+}
+
+// 放置物品函数，待完善
+bool InteractionManager::placeObjectAtTile(const Vec2& tilePos) {
+    
+    return false;
 }
