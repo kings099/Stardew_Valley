@@ -151,12 +151,19 @@ const TileInfo InteractionManager::GetTileInfoAt(const Vec2& Tile_pos) {
             tileInfo.drops.clear(); // 清空默认的 "None" 项
             tileInfo.drops["石头"] = { TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::STONE_DROP_PROBABILITY }; // 掉落1个石头，概率为30%
         }
-        // 对应树枝和树桩
+        // 对应树桩
         else if(pathProps.find("isWood") != pathProps.end() && pathProps["isWood"].asBool())
         {
             tileInfo.type = TileConstants::Wood;
             tileInfo.drops.clear(); // 清空默认的 "None" 项
             tileInfo.drops["木材"] = {TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::BRANCH_DROP_PROBABILITY}; // 掉落1个木材，概率为30%
+        }
+        // 对应树枝
+        else if (pathProps.find("isBranch") != pathProps.end() && pathProps["isWood"].asBool())
+        {
+            tileInfo.type = TileConstants::Branch;
+            tileInfo.drops.clear(); // 清空默认的 "None" 项
+            tileInfo.drops["木材"] = { TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::BRANCH_DROP_PROBABILITY }; // 掉落1个木材，概率为30%
         }
         else if(pathProps.find("isTree") != pathProps.end() && pathProps["isTree"].asBool())
         {

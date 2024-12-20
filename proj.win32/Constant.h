@@ -113,7 +113,8 @@ namespace TileConstants {
     enum TileType {
         Grass,      // 草
         Tree,       // 树木
-        Wood,       // 树枝和树桩一起处理
+        Wood,       // 树桩
+        Branch,     // 树枝
         Mine,       // 矿石
         Treasure,   // 珍惜物品
         Stone,      // 石头
