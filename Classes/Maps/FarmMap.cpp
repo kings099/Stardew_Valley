@@ -49,9 +49,11 @@ bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition, Node* Tr
         CCLOG("success: _tile_map is added");
        
     }
+    _mapName = mapFile;
     //// 在场景初始化时设置季节
     Crops::setSeason(Season::Spring); // 设置当前季节为春季
-
+    
+    applySavedChanges();
     // 初始化小动物
     initializeAnimals();
 
@@ -64,7 +66,7 @@ bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition, Node* Tr
 
     // 添加树木层
     _treeLayer = TreeLayer;
-    plantTreesOnPathLayer(); // 假设最大生长阶段为 5
+    plantTreesOnPathLayer(); 
     //监听鼠标
     auto listener = EventListenerMouse::create();
     listener->onMouseDown = CC_CALLBACK_1(FarmMap::onMouseEvent, this);  // 监听鼠标点击事件
@@ -93,7 +95,7 @@ bool FarmMap::onMouseEvent(cocos2d::Event* event)
         Vec2 mapPosition(mousePos.x + cameraOffset_x, mousePos.y + cameraOffset_y);
         Vec2 tiledPos = absoluteToTile(mapPosition);
         CCLOG("TILED POS: %f,%f", tiledPos.x, tiledPos.y);
-        int GID = getTileGIDAt("Tree", tiledPos);
+        int GID = getTileGIDAt("path", tiledPos);
         CCLOG("click GID:%d", GID);
         Vec2 worldpos = tileToAbsolute(tiledPos);
         CCLOG("WORLD POS: %f,%f", worldpos.x, worldpos.y);
@@ -125,7 +127,7 @@ void FarmMap::plantTreesOnPathLayer() {
             int GID = pathLayer->getTileGIDAt(tilePos);
             // 检查 GID 是否为目标 GID
            /* TMXTiledMap* testmap = _tile_map;*/
-            if (GID == OAK_GID) {
+            if (GID == TileConstants::OAK_GID || GID == TileConstants::OAK_INVISIBLE_GID) {
                 // 创建并种植农作物
                 auto crop = Crops::create("oak", OAK_MAX_GROWTHSTAGE);
                 if (crop) {
@@ -133,14 +135,14 @@ void FarmMap::plantTreesOnPathLayer() {
                     _treeLayer->setScale(FARM_MAP_SCALE);
                     crop->setPosition(tileToRelative(Vec2(col,row))); // 设置位置为瓦片的世界坐标
                     crop->setGrowthStage(OAK_MAX_GROWTHSTAGE); // 直接设置为成熟阶
-                    replaceTileAt("path", Vec2(col, row), OAK_INVISIBLE_GID);
-                    replaceTileAt("Tree", Vec2(col, row), OAK_ROOT_GID);
+                    replaceTileAt("path", Vec2(col, row), TileConstants::OAK_INVISIBLE_GID);
+                    replaceTileAt("Tree", Vec2(col, row), TileConstants::OAK_ROOT_GID);
                 }
                 else {
                     CCLOG("Error: Failed to create crop of type oak");
                 }
             }
-            else if (GID == MAMPLE_GID) {
+            else if (GID == TileConstants::MAMPLE_GID || GID == TileConstants::MAMPLE_INVISIBLE_GID) {
 
                 // 创建并种植农作物
                 auto crop = Crops::create("maple",MAPLE_MAX_GROWTHSTAGE);
@@ -149,15 +151,15 @@ void FarmMap::plantTreesOnPathLayer() {
                     _treeLayer->setScale(FARM_MAP_SCALE);
                     crop->setPosition(tileToRelative(Vec2(col, row))); // 设置位置为瓦片的世界坐标
                     crop->setGrowthStage(MAPLE_MAX_GROWTHSTAGE); // 直接设置为成熟阶
-                    replaceTileAt("path", Vec2(col, row), MAMPLE_INVISIBLE_GID);
-                    replaceTileAt("Tree", Vec2(col, row), MAMPLE_ROOT_GID);
+                    replaceTileAt("path", Vec2(col, row), TileConstants::MAMPLE_INVISIBLE_GID);
+                    replaceTileAt("Tree", Vec2(col, row), TileConstants::MAMPLE_ROOT_GID);
                 }
                 else {
                     CCLOG("Error: Failed to create crop of type maple");
                 }
 
             }
-            else if (GID == PINE_GID) {
+            else if (GID == TileConstants::PINE_GID|| GID==TileConstants::PINE_INVISIBLE_GID) {
                 // 创建并种植农作物
                 auto crop = Crops::create("pine",PINE_MAX_GROWTHSTAGE);
                 if (crop) {
@@ -165,8 +167,8 @@ void FarmMap::plantTreesOnPathLayer() {
                     _treeLayer->setScale(FARM_MAP_SCALE);
                     crop->setPosition(tileToRelative(Vec2(col, row))); // 设置位置为瓦片的世界坐标
                     crop->setGrowthStage(PINE_MAX_GROWTHSTAGE); // 直接设置为成熟阶
-                    replaceTileAt("path", Vec2(col, row), PINE_INVISIBLE_GID);// 设置树木标志为不可见
-                    replaceTileAt("Tree", Vec2(col, row), PINE_ROOT_GID);// 设置树根图块
+                    replaceTileAt("path", Vec2(col, row), TileConstants::PINE_INVISIBLE_GID);// 设置树木标志为不可见
+                    replaceTileAt("Tree", Vec2(col, row), TileConstants::PINE_ROOT_GID);// 设置树根图块
                 }
                 else {
                     CCLOG("Error: Failed to create crop of type pine");
@@ -243,4 +245,31 @@ void FarmMap::initializeFishes() {
     else {
         CCLOG("Error: Failed to create fish_2!");
     }
+}
+
+// 获取某个位置的农作物指针
+Crops* FarmMap::getTreeAtPosition(const Vec2& tilePos) {
+    if (!_treeLayer) {
+        CCLOG("Tree layer not initialized!");
+        return nullptr;
+    }
+
+    // 将瓦片坐标转换为相对地图的绝对坐标
+    Vec2 treeWorldPos = tileToRelative(tilePos);
+
+    // 遍历树木层的所有子节点
+    for (auto child : _treeLayer->getChildren()) {
+        auto sprite = dynamic_cast<Crops*>(child);
+        if (sprite) {
+            // 获取精灵的世界坐标
+            Vec2 spriteWorldPos = sprite->getPosition();
+            // 如果坐标相等，返回指针
+            if (spriteWorldPos.equals(treeWorldPos)) {
+                return sprite;
+            }
+        }
+    }
+
+    CCLOG("No tree found at tile position: (%f, %f)", tilePos.x, tilePos.y);
+    return nullptr; // 未找到匹配的树精灵
 }

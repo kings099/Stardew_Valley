@@ -73,6 +73,13 @@
  <tile id="21">
   <properties>
    <property name="canNotMove" type="bool" value="true"/>
+   <property name="isWood" type="bool" value="true"/>
+  </properties>
+ </tile>
+ <tile id="23">
+  <properties>
+   <property name="canNotMove" type="bool" value="true"/>
+   <property name="isGrass" type="bool" value="true"/>
   </properties>
  </tile>
  <tile id="31">

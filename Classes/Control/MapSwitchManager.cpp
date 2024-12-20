@@ -43,6 +43,8 @@ bool MapSwitchManager::switchMap(const std::string& newMapFile, Vec2& teleportPO
     CCLOG("Switching map to: %s", newMapFile.c_str());
 
     if (_currentMap) {
+        // 保存当前地图状态
+        _currentMap->saveChangesToStateManager();
         MapLayer->removeChild(_currentMap, true); // 清理旧地图
     }
     
@@ -51,15 +53,14 @@ bool MapSwitchManager::switchMap(const std::string& newMapFile, Vec2& teleportPO
 
     if (newMapFile.find("Combat") != std::string::npos) {
         newMap = FarmMap::create(newMapFile,TreeLayer);
-        teleportPOS = newMap->tileToAbsolute(Vec2(10,10));
     }
     else if (newMapFile.find("house") != std::string::npos) {
-        newMap = IndoorMap::create(newMapFile);
-        teleportPOS = newMap->tileToAbsolute(Vec2(3, 10));
+        newMap = IndoorMap::create(newMapFile, Vec2(FARM_HOUSE_CREAT_X, FARM_HOUSE_CREAT_Y));
+        teleportPOS = newMap->tileToAbsolute(Vec2(FARM_HOUSE_TELE_X, FARM_HOUSE_TELE_Y));
     }
     else if (newMapFile.find("Town") != std::string::npos) {
-        newMap = TownMap::create(newMapFile);
-        teleportPOS = newMap->tileToAbsolute(Vec2(1, 91));
+        newMap = TownMap::create(newMapFile,Vec2(TOWN_CREAT_X, TOWN_CREAT_Y));
+        teleportPOS = newMap->tileToAbsolute(Vec2(TOWN_TELE_X, TOWN_TELE_Y));
     }
     else {
         CCLOG("Unknown map type for file: %s", newMapFile.c_str());
@@ -72,6 +73,7 @@ bool MapSwitchManager::switchMap(const std::string& newMapFile, Vec2& teleportPO
     }
 
     _currentMap = newMap;
+    _currentMap->applySavedChanges();
     MapLayer->addChild(_currentMap);
 
     // 更新 InteractionManager 的地图引用

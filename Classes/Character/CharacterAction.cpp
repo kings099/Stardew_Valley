@@ -137,7 +137,7 @@ TileInfo CharacterAction::getTileInfo(GameCharacterAction action, InteractionMan
 		targetTileNode = interactionManager->GetLineTileInfo(_currentDirection, std::min(_skillLevel[Fish] + MIN_FISHING_DISTANCE, MAX_FISHING_DISTANCE), _character->getPosition());
 		break;
 	case NoneAction:
-		targetTileNode = { TileType::Other, cocos2d::Vec2(INVAVID_NUM, INVAVID_NUM),false };
+		targetTileNode = { TileConstants::TileType::Other, cocos2d::Vec2(INVAVID_NUM, INVAVID_NUM),false };
 		break;
 	default:
 		targetTileNode = interactionManager->GetLineTileInfo(_currentDirection, 1, _character->getPosition());
