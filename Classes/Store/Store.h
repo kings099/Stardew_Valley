@@ -44,7 +44,7 @@ private:
 	std::vector<ProductNode>_product;		// 商品种类,数量
 
 	// 判断物品是否是种子的收获物
-	const GameSeedObject* canHarvestFromAnySeed(const GameBaseObject& baseObject) ;
+	bool canHarvestFromAnySeed(const GameBaseObject& baseObject, GameSeedObject* seedObject);
 };
 
 #endif // !__STORE_H__
