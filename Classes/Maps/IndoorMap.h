@@ -29,7 +29,7 @@ public:
     // ³õÊ¼»¯º¯Êý
     virtual bool init(const std::string& mapFile, const Vec2& mapPosition);
 
-
+    MapType getType() const override { return MapType::Farm; }
 };
 
 #endif // __INDOOR_MAP_H_

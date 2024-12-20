@@ -28,7 +28,6 @@ public:
     // ³õÊ¼»¯º¯Êý
     virtual bool init(const std::string& mapFile, const Vec2& mapPosition);
 
-
+    MapType getType() const { return MapType::Mine; }
 };
-
 #endif // __MINE_MAP_H_

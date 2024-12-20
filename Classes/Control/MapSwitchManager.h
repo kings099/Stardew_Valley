@@ -15,6 +15,7 @@
 #include "Maps/FarmMap.h"
 #include "Maps/IndoorMap.h"
 #include "Maps/TownMap.h"
+#include "Maps/MineMap.h"
 #include "Character/Character.h"
 #include "GameViewController.h"
 #include "InteractionManager.h"

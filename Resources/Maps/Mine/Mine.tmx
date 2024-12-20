@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="50" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="6">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="50" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="6">
  <properties>
   <property name="AmbientLight" value="80 80 40"/>
   <property name="ViewportFollowPlayer" type="bool" value="true"/>
@@ -13,9 +13,10 @@
  </tileset>
  <tileset firstgid="353" source="paths.tsx"/>
  <tileset firstgid="417" source="springobjects.tr-TR.tsx"/>
- <layer id="9" name="collidable" width="50" height="20">
+ <tileset firstgid="1353" source="../Farm/paths.tsx"/>
+ <layer id="9" name="Collidable" width="50" height="20" opacity="0.9">
   <data encoding="base64" compression="zlib">
-   eJztVlsKwCAMc7fd/U+wL2GMVtOnHTQgbK6PWGPdGI1GDdwXPqb9CU6IrSZPJnbriIi78pHUGc2XWdOvLi1riuAlOVdo3FU+dL4C0DPtxZ/SCvddGlfLQ5OLqgvXpz20ZbWlfCN1qdmP9zOiS8TWys/S06l3TjdaIL6eexz5/5F9n0X25Cp3YKPxVzzKNjBn
+   eJztVTESgDAI6+L7/P9v3DlpSQg4SO6cSkOiBNcaDL7HffFPt65ILdOnEycfFbxefeYbV/qI3rc6mdn1vGZnvCpL1q/nozOrLKxWe6bW//Z+vHOUN3Mf7XWaY1aP5fO4ldlgtCG1mX0Q5UGA7jeUd6dR5QHRp85vtC/Ku+NU57pyLyv/NYPBX/EABO47ZQ==
   </data>
  </layer>
  <layer id="1" name="Back" width="50" height="20">
@@ -25,22 +26,27 @@
  </layer>
  <layer id="3" name="Buildings" width="50" height="20">
   <data encoding="base64" compression="zlib">
-   eJztk7lOAzEQhr0SPVSUCEoKIC8BPAHwBECNEFAD4gjHFiDuSyBx30jcVyrogCeAPAHiEfit7Gitkde79ma7/NInx46TmX9mLISdxsEEmAGzYApMJ9hfWMaxFY9rijcGFsESWAcbYBX0sf0aGAGjyr6QSfaheFxTvAWwB3bACTgFw2Bb2R+BYzAH5pX9l0Nu1PtW0BbQDjbBFrvL45ri7YIbcAuewDN4AJds/6jZFx3yp953gM6ALnAGzpkfHtcU7xq8gXeLnEh5Ef12+DnlT73vBv2gB/SCK/Cq+NG9hbzQ903WZ9Ihf9KKCGeXvyU+2zL/fRH2fgAMBgyBD/AJXgI/hYh45FOtk6zPcgofhyKcXf6W+GxT/tT7nCdEi1f6n2as31h/FD+6tyDjUd+oTrJ+sr8HKXzci+i3w8/jZjcXeCI/xYh45JPqJOsn63OXwkeW+os4J59qnVze9i/b+wH8s+57K3l216twv8HyNySfYTqXa6NFnBqLu7WO+Us1eSVsam1zt94yN9VL3AzEzVASJe1JtUONdXNB8ajmurlxUZIZqEsxJ1w+W8spk5dyeiBl4UH9bx0VVVRRMv0D5DWokg==
+   eJztkzlOQzEQhv0keqgoEZQUQC4BnAA4AVAjBNSAWMLyChD7JpDYwyqxb6mgA04AOQJH4Lfi0bNGfov98rr80ifHjpOZf2YshJ0mwRSYA/NgBswm2F9axrEVjxsVbwIsgxWwCbbAOhhg+w0wBsa1fTGT7APxuFHxlsAB2AMFcAZGwa62PwGnYAEsavtvh9yo9+2gQ9EJtsEOu8vjRsXbB7fgDjyDF/AIrtj+ybAvOeRPve8C3YoecA4umB8eNyreDXgHHxY5kfIi/O3wc8qfet8LBkEf6AfX4E3zY3oLeWHum6zPtEP+pDURzC5/S3y2Zf6HIuj9EBhWjIBP8AVelZ9iSDzyqddJ1mc1hY9jEcwuf0t8til/6n3OE6LNK/9PK9YfrL+aH9NbkPGob1QnWT/Z36MUPh5E+Nvh53Gzm1OeyE8pJB75pDrJ+sn63KfwkaX+Qs7Jp14nl7fN5Sv4Z9P3VvLsrtfgfpPlb0g+I+pcrs0Wceos7tY75i/V4pWxqbXN3UbL3HQvcTMQN0NJlLQntQ41Ns0FxaOam+bGRUlmoCHFnHD5bK2korxU0gMpCw/6f5uoqqqqkukfPASnpA==
   </data>
  </layer>
- <layer id="5" name="Front" width="50" height="20">
+ <layer id="5" name="Front" width="50" height="20" opacity="0.97">
   <data encoding="base64" compression="zlib">
-   eJzrY2Bg6CMBUwIo1Y8PtOKwj9p+gJlLilpSwnUqCWZQCog1h1R1ILyUgDwt/EFJ2i3BYe5WEuwbzOAoHrnB5Ad5RvzyT+njDJoDMaA/JQn4dSgAUJrRpJM/1IH2aDBisrHJkwpA/iA2Tr4AsSCZ9vAB9ckxQuySQGKLQ/kSaPKkphFYPsYWJ3xI9rBREGeyUDeS0m4gNY3A9CGHjThS+CDLI/uFUBpAltcl0Q+kpBF0fxBrtjgjZrqA2SeLQ57UuCAlTkBphp9M83HZR0q4ExOu6GkAmx/IDSN88USKmcT4A1d6x5buBwoT64/BigmBgXYftfwxCoYHAAAXlrYC
+   eJzrY2Bg6CMBUwIo1Y8PtOKwj9p+gJlLilpSwnUqCWZQCog1h1R1ILyUgDwt/EFJ2i3BYe5WEuwbqmAw+UGecaBdQB8gBvSn5DDwKyjNaNLJH+pAezQYMdnY5EkFIH8QGydfgFiQTHv4gPrkGCF2SSCxxaF8CTR5UtMILB9jixM+JHvYKIgzWagbSWk3kJpGYPqQw0YcKXyQ5ZH9QigNIMvrkugHUtIIuj+INVucETNdwOyTxSFPalyQEiegNMNPpvm47CMl3IkJV/Q0gM0P5IYRvngixUxi/IErvWNL9wOFifXHYMWEwEC7j1r+GAXDAwAASTG0WA==
+  </data>
+ </layer>
+ <layer id="11" name="path" width="50" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AU0AJEsRIWx6VmsAFi/DIKaAtGwxo3wBY26GIwPogeimFJah4k1Y+E1FMjzIiJJ1oAXGmBWmYOhB9oaf5QzB8gMBz8MApGwSgYBSAAADgwCgY=
+  </data>
+ </layer>
+ <layer id="12" name="Teleport" width="50" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztzzEJAAAIAEEXw9m/kAUcBUHuEvxHAN9VXhfs+PIBAACTBvcgAJ0=
   </data>
  </layer>
  <layer id="7" name="ore" width="50" height="20">
   <data encoding="base64" compression="zlib">
    eJxjYBgFo2AU0ALIMhMWx6VmsAEZHO7EJT4KqA9Gwxo3wBY26HkLxgepfchIezdRG+CKf2LKGUrMJ1aeXDvoka5xpQVKgAydy3FahxOy+UO1rEGOh3VD1A+jYBSMglEAAgA5tQSm
-  </data>
- </layer>
- <layer id="10" name="paths" width="50" height="20">
-  <data encoding="base64" compression="zlib">
-   eJzt08sOABAMRFHb/v8PW9kJrWA87lmKGq1ICYUF11eKZHr2Kno4IVtlV8+1HPW8e/nq+0WM9mKOWs9ZN83qJa25z3hX4Ef8BQDwyUvsAL4=
   </data>
  </layer>
 </map>
