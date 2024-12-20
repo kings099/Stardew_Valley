@@ -46,7 +46,6 @@ private:
     // 构造函数私有化
     Character(const std::string& filename);
 
-    int _money;                                 // 角色金钱
     int _currentEnergy;                         // 角色能量
     int _maxEnergy;                             // 角色最大能量
 };

@@ -94,7 +94,7 @@ private:
 	int findObjectByObjectList(std::string targetObjectName);
 
 	// 查找物品栏中是否有指定物品
-	GameCommonObject findObjectByName(const std::string& name);
+	//GameCommonObject findObjectByName(const std::string& name);
 
 	// 检查物品栏是否已满
 	bool checkObjectListFull();

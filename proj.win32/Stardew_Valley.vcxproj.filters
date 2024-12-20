@@ -46,6 +46,9 @@
     <Filter Include="Classes\Box">
       <UniqueIdentifier>{0846b5f0-18e8-4055-87fd-37fe7bc08e8d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\Store">
+      <UniqueIdentifier>{d14d2112-2aad-48ec-a17a-43171db6a5fc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Classes\CursorAndBUutton\HoverCursor.h" />
@@ -160,6 +163,9 @@
     <ClInclude Include="..\Classes\Maps\TownMap.h">
       <Filter>Classes\Maps</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\Store\Store.h">
+      <Filter>Classes\Store</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\CursorAndBUutton\HoverCursor.cpp" />
@@ -267,6 +273,9 @@
     </ClCompile>
     <ClCompile Include="..\Classes\Maps\TownMap.cpp">
       <Filter>Classes\Maps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Store\Store.cpp">
+      <Filter>Classes\Store</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
