@@ -31,8 +31,9 @@ public:
 	// 获取技能等级
 	int getSkillLevel(int index);
 private:
-	int _skillExprience[SKILL_KIND_NUM];	//技能经验值数组
-	int _skillLevel[SKILL_KIND_NUM];		//技能等级数组
+	int _skillExprience[SKILL_KIND_NUM];	// 技能经验值数组
+	int _skillLevel[SKILL_KIND_NUM];		// 技能等级数组
+	int _money;                             // 角色金钱
 
 	// 获取角色打算执行的动作(鼠标左键)
 	GameCharacterAction getLeftButtonAction();

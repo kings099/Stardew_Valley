@@ -56,7 +56,12 @@ constexpr int LEVEL4_TO_LEVEL5_EXPRIENCE = 200;                             // �
 constexpr int SKILL_KIND_NUM = 4;                                           // 技能种类数量
 constexpr int SKILL_LEVEL_NUM = 5;                                          // 技能最大等级
 constexpr int MIN_FISHING_DISTANCE = 3;                                     // 鱼竿最小捕鱼距离
-constexpr int MAX_FISHING_DISTANCE = 5;                                    // 鱼竿最大捕鱼距离
+constexpr int MAX_FISHING_DISTANCE = 5;                                     // 鱼竿最大捕鱼距离
+constexpr int START_UP_MONEY = 500;                                         // 初始金钱
+
+// 商店相关设置
+constexpr int PRODUCE_KIND_NUM_EACH_DAY = 4;                                // 每日出售的商品种类数量
+constexpr int MAX_PRODUCT_COUNT_EACH_DAY = 5;                               // 每日出售的一种商品的最大数量
 
 // 场景过渡相关
 constexpr float LERP_SPEED = 0.1f;											// 插值平滑速度
@@ -710,6 +715,10 @@ struct GameCommonObject {
             object = nullptr;
         }
     }
+
+    GameCommonObject(const GameBaseObject& baseObject) {
+        
+    }
 };
 
 // 角色物品栏单个物品属性定义
@@ -755,7 +764,19 @@ struct BoxNode {
     }
 };
 
+// 种子商品信息定义
+struct SeedProductNode {
+    GameSeedObject product;	    // 商品信息
+    int count;					// 商品数量
+    int totalPrice;				// 商品价格
+};
 
+// 基础商品信息定义
+struct BaseProductNode {
+    GameBaseObject product;	    // 商品信息
+    int count;					// 商品数量
+    int totalPrice;				// 商品价格
+};
 
 
 #endif // !_CONSTANT_H_
