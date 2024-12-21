@@ -74,10 +74,16 @@ private:
     void getTreeAndChopAt(const Vec2& tilePos);
 
     // 放置物品的方法
-    bool placeObjectAtTile(const cocos2d::Vec2& tilePos);
+    bool placeObjectAtTile(const Vec2& tilePos);
+
+    // 浇水方法
+    bool WateringAt(const Vec2& tilePos);
+
+    // 施肥
+    bool FertilizeAt(const Vec2& tilePos);
 
     // 获取矿石信息
-    void InteractionManager::GetMineInfo(int MineGID, TileInfo& tile);
+    void GetMineInfo(int MineGID, TileInfo& tile);
 };
 
 #endif // INTERACTION_MANAGER_H

@@ -204,7 +204,6 @@ const TileInfo InteractionManager::GetTileInfoAt(const Vec2& Tile_pos) {
             tileInfo.type = TileConstants::Soiled;
         }
     }
-
     return tileInfo;
 }
 
@@ -248,7 +247,8 @@ void InteractionManager::ActionAnimation(GameCharacterAction action, const Vec2&
         _gameMap->replaceTileAt("farm", TilePos, TileConstants::DRY_FARM_TILE_GID);
         break;
     case Watering:
-        _gameMap->replaceTileAt("farm", TilePos, TileConstants::DRY_FARM_TILE_GID);
+        _gameMap->replaceTileAt("watering", TilePos, TileConstants::WET_FARM_TILE_GID);
+        WateringAt(TilePos);
         break;
     case Weeding:
         _gameMap->replaceTileAt("path", TilePos, TileConstants::EMPTY_GID);
@@ -263,8 +263,19 @@ void InteractionManager::ActionAnimation(GameCharacterAction action, const Vec2&
         getTreeAndChopAt(TilePos);
         break;
     case Placement:
-        // TODO : 放置
+    case Seeding:
+        placeObjectAtTile(TilePos);
         break;
+    case Fertilize:
+        FertilizeAt(TilePos);
+        break;
+    case DestoryObject:
+        // 可添加对应物品损坏的动画
+
+        _gameMap->replaceTileAt("Object", TilePos, TileConstants::EMPTY_GID);
+        break;
+
+
     }
     // 输出掉落物的调试信息
     for (const auto& dropPair : actionTileInfo.drops) {
@@ -360,7 +371,52 @@ bool InteractionManager::placeObjectAtTile(const Vec2& tilePos) {
     }
     else // 其他放置物品
     {
+        // 在对应映射表寻找放置物品的GID，替换对应图块
+        auto it = TileConstants::objectGIDMap.find(currentObjectName);
+        if (it != TileConstants::objectGIDMap.end()) {
+            int targetGID = it->second;
+            _gameMap->replaceTileAt("Object", tilePos, targetGID);
+            CCLOG("Placed other object '%s' at (%f, %f) with GID=%d.", currentObjectName.c_str(), tilePos.x, tilePos.y, targetGID);
+            return true;
+        }
+        else {
+            CCLOG("Unknown object '%s' cannot be placed.", currentObjectName.c_str());
+            return false;
+        }
+    }
+    return false;
+}
 
+// 浇水效果
+bool InteractionManager::WateringAt(const Vec2& tilePos) {
+    if (!_gameMap) {
+        CCLOG("InteractionManager: _gameMap is null.");
+        return false;
+    }
+
+    // 使用多态调用 GameMap 的 getTreeAtPosition获取农作物指针
+    auto cropSprite = _gameMap->getTreeAtPosition(tilePos);
+    if(!cropSprite)
+    {
+        cropSprite->waterCrop();
+        return true;
+    }
+    return false;
+}
+
+// 施肥效果
+bool InteractionManager::FertilizeAt(const Vec2& tilePos) {
+    if (!_gameMap) {
+        CCLOG("InteractionManager: _gameMap is null.");
+        return false;
+    }
+
+    // 使用多态调用 GameMap 的 getTreeAtPosition获取农作物指针
+    auto cropSprite = _gameMap->getTreeAtPosition(tilePos);
+    if (!cropSprite)
+    {
+        cropSprite->fertilize();
+        return true;
     }
     return false;
 }

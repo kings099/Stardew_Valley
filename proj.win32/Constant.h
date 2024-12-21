@@ -89,6 +89,7 @@ constexpr int MINE_TELE_Y = 5;                                              // �
 // 地图图块相关
 namespace TileConstants {
     constexpr int DRY_FARM_TILE_GID = 2040;                                     // 干燥耕地效果动画图块GID
+    constexpr int WET_FARM_TILE_GID = 2044;                                     // 湿润耕地效果动画图块GID
     constexpr int EMPTY_GID = 0;                                                // 空白GID
     constexpr int WOOD_GID = 7;                                                 // 树桩标记GID（不可见）
     constexpr int OAK_GID = 10;                                                 // 桦树GID
@@ -130,6 +131,7 @@ namespace TileConstants {
         Other
     };
 
+    // 用于记录地图变化
     struct TileChange {
         std::string layerName;          // 图层名称
         cocos2d::Vec2 tileCoord;        // 瓦片坐标
@@ -138,6 +140,15 @@ namespace TileConstants {
         TileChange(const std::string& layer, const cocos2d::Vec2& coord, int gid)
             : layerName(layer), tileCoord(coord), newGID(gid) {}
     };
+    
+
+    // 用于记录地图放置物品与对应GID的映射关系
+    const std::unordered_map<std::string, int> objectGIDMap = {
+            {"Box", 101},
+            // 在此添加更多物品名称和对应的 GID
+    };
+
+
 }
 // 物品设置
 constexpr int OBJECT_LIST_ROWS = 3;											// 物品列表行数

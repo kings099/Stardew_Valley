@@ -95,7 +95,7 @@ bool FarmMap::onMouseEvent(cocos2d::Event* event)
         Vec2 mapPosition(mousePos.x + cameraOffset_x, mousePos.y + cameraOffset_y);
         Vec2 tiledPos = absoluteToTile(mapPosition);
         CCLOG("TILED POS: %f,%f", tiledPos.x, tiledPos.y);
-        int GID = getTileGIDAt("path", tiledPos);
+        int GID = getTileGIDAt("watering", tiledPos);
         CCLOG("click GID:%d", GID);
         Vec2 worldpos = tileToAbsolute(tiledPos);
         CCLOG("WORLD POS: %f,%f", worldpos.x, worldpos.y);
@@ -280,7 +280,7 @@ void FarmMap::plantCrops(const Vec2& tilePos, const std::string cropName) {
         maxstage = PUMPKIN_MAX_GROWTHSTAGE;
     // 添加指定农作物
     auto crop = Crops::create(cropName, maxstage);
-    _tile_map->addChild(crop);
+    _tile_map->addChild(crop,ANIMATION_LAYER_GRADE);
 
     // 设置位置
     crop->setPosition(tileToRelative(tilePos));
