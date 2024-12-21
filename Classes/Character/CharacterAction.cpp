@@ -16,9 +16,9 @@
 USING_NS_CC;
 
 // 构造函数
-CharacterAction::CharacterAction(const std::string &filename):
+CharacterAction::CharacterAction():
 	CharacterObjectList(),
-	CharacterMove(filename)
+	CharacterMove()
 {
 	if (!loadData("../GameData/CharacterActionData.dat")) {
 		for (int i = 0; i < SKILL_KIND_NUM; i++) {
@@ -27,6 +27,7 @@ CharacterAction::CharacterAction(const std::string &filename):
 			_money = START_UP_MONEY;
 		}
 	}
+	_money = START_UP_MONEY*10;
 	updateSkillLevel();
 }
 
@@ -181,10 +182,7 @@ TileInfo CharacterAction::getTileInfo(GameCharacterAction action, InteractionMan
 void CharacterAction::updateSkillLevel() {
 	// 更新技能等级
 	for (int i = 0; i < SKILL_KIND_NUM; i++) {
-		if (LEVEL0_TO_LEVEL1_EXPRIENCE<=_skillExprience[i] && _skillExprience[i]<=LEVEL1_TO_LEVEL2_EXPRIENCE) {
-			_skillLevel[i] = 1;
-		}
-		else if (LEVEL1_TO_LEVEL2_EXPRIENCE<=_skillExprience[i] && _skillExprience[i]<=LEVEL2_TO_LEVEL3_EXPRIENCE) {
+		if (LEVEL1_TO_LEVEL2_EXPRIENCE<=_skillExprience[i] && _skillExprience[i]<=LEVEL2_TO_LEVEL3_EXPRIENCE) {
 			_skillLevel[i] = 2;
 		}
 		else if (LEVEL2_TO_LEVEL3_EXPRIENCE<= _skillExprience[i] && _skillExprience[i]<=LEVEL3_TO_LEVEL4_EXPRIENCE) {

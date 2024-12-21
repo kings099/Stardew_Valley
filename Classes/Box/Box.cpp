@@ -66,7 +66,7 @@ int Box::matchBoxPosition(cocos2d::Vec2 worldPosition) {
 Box::Box():
 	_maxObjectKindCount(OBJECT_LIST_COLS)
 {
-	_character = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png");
+	_character = Character::getInstance();
 	if (!loadData("../GameData/BoxObjectListData.dat")) {
 		_boxObjectList.resize(0);
 	}

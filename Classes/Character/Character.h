@@ -16,7 +16,7 @@
 class Character :  public CharacterAction {
 public:
     // 获取单例
-    static Character* getInstance(const std::string& filename);
+    static Character* getInstance();
 
     // 按下键盘时的处理
     void onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event);
@@ -44,7 +44,7 @@ private:
     Character& operator=(const Character&) = delete;
 
     // 构造函数私有化
-    Character(const std::string& filename);
+    Character();
 
     int _currentEnergy;                         // 角色能量
     int _maxEnergy;                             // 角色最大能量

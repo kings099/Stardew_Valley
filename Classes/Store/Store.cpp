@@ -19,12 +19,13 @@ Store* Store::getInstance() {
 Store::Store() :
 	productKindCount(PRODUCE_KIND_NUM_EACH_DAY)
 {
-	_character = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png");
+	_character = Character::getInstance();
 	_product.clear();
 }
 
 // 新的一天刷新商店货物
 void Store::refreshStock() {
+	_product.clear();
 	int seedProductKind = rand() % PRODUCE_KIND_NUM_EACH_DAY;
 	int baseProductKind = PRODUCE_KIND_NUM_EACH_DAY - seedProductKind;
 	
@@ -49,18 +50,16 @@ void Store::refreshStock() {
 			&& (_character->getSkillLevel(GAME_BASE_OBJECTS_ATTRS[baseIndex]._type) >= GAME_BASE_OBJECTS_ATTRS[baseIndex]._level)));
 		int productCount = rand() % MAX_PRODUCT_COUNT_EACH_DAY + 1;
 		std::shared_ptr<GameObject> targetObjectPtr = std::make_shared<GameBaseObject>(GAME_BASE_OBJECTS_ATTRS[baseIndex]);
-		GameCommonObject commonObject(GameObjectMapType::Seed, targetObjectPtr);
+		GameCommonObject commonObject(GameObjectMapType::Base, targetObjectPtr);
 
-		GameSeedObject *seedObject;
-	//	if (canHarvestFromAnySeed(GAME_BASE_OBJECTS_ATTRS[baseIndex], seedObject)) {
-		//	_product.push_back(ProductNode{ commonObject , productCount, productCount * GAME_BASE_OBJECTS_ATTRS[baseIndex]._buyPrice, seedObject->_season,static_cast<Season>((seedObject->_season+2)%4) });
-		//}
-		//else {
+		GameSeedObject seedObject;
+		if (canHarvestFromAnySeed(GAME_BASE_OBJECTS_ATTRS[baseIndex], seedObject)) {
+			_product.push_back(ProductNode{ commonObject , productCount, productCount * GAME_BASE_OBJECTS_ATTRS[baseIndex]._buyPrice, seedObject._season,static_cast<Season>((seedObject._season+2)%4) });
+		}
+		else {
 			_product.push_back(ProductNode{ commonObject , productCount, productCount * GAME_BASE_OBJECTS_ATTRS[baseIndex]._buyPrice ,All ,All });
-	//	}
-	
+	    }
 	}
-
 	// 根据季节更新价格
 	updatePrices();
 }
@@ -79,25 +78,24 @@ bool Store::buyProduct(int index) {
 }
 
 // 出售商品
-bool Store::sellProduct(GameSeedObject targetObject, int objectCount) {
-	std::shared_ptr<GameObject> targetObjectPtr = std::make_shared<GameSeedObject>(targetObject);
-	GameCommonObject commonObject(GameObjectMapType::Seed, targetObjectPtr);
-	return sellProduct(commonObject, objectCount * targetObject._sellPrice);
-}
-
-// 出售商品
-bool Store::sellProduct(GameBaseObject targetObject, int objectCount) {
-	if(targetObject._sell == false)
+bool Store::sellProduct(const GameCommonObject targetObject, int objectCount) {
+	int salePrice = 0;
+	if (targetObject.type == Tool) {
 		return false;
-	std::shared_ptr<GameObject> targetObjectPtr = std::make_shared<GameBaseObject>(targetObject);
-	GameCommonObject commonObject(GameObjectMapType::Base, targetObjectPtr);
-	return sellProduct(commonObject, objectCount * targetObject._sellPrice);
-}
-
-// 出售商品
-bool Store::sellProduct(const GameCommonObject targetObject, int totalPrice) {
+	}
+	else if (targetObject.type == Seed) {
+		GameSeedObject* seedObject = dynamic_cast<GameSeedObject*>(_character->getCurrentObject().objectNode.object.get());
+		salePrice = seedObject->_sellPrice;
+	}
+	else if (targetObject.type == Base) {
+		GameBaseObject* baseObject = dynamic_cast<GameBaseObject*>(_character->getCurrentObject().objectNode.object.get());
+		if (baseObject->_sell == false) {
+			return false;
+		}
+		salePrice = baseObject->_sellPrice;
+	}
 	_character->deleteCurrentObject();
-	_character->setMoney(totalPrice);
+	_character->setMoney(objectCount*salePrice);
 	_sellProductCallback(true);
 	return true;
 }
@@ -134,10 +132,10 @@ void Store::updatePrices() {
 }
 
 // 判断物品是否是种子的收获物
-bool Store::canHarvestFromAnySeed(const GameBaseObject& baseObject,  GameSeedObject* seedObject) {
+bool Store::canHarvestFromAnySeed(const GameBaseObject& baseObject,  GameSeedObject& seedObject) {
 	for (const auto seed : GAME_SEED_OBJECTS_ATTRS) { // 使用常量引用遍历
 		if (baseObject._index == seed._harvestIndex) {
-			*seedObject = seed;
+			seedObject = seed;
 			return true;
 		}
 	}
