@@ -317,7 +317,7 @@ int NPC::getAffection() const {
 // 键盘按下事件处理
 void NPC::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* event) {
     // 检查按下的是否是 T 键
-    if (keyCode == EventKeyboard::KeyCode::KEY_T) {
+    if (keyCode == EventKeyboard::KeyCode::KEY_K) {
         // 触发 NPC 显示任务列表
         showDialog();
     }
