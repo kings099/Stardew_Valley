@@ -41,6 +41,9 @@ public:
 	// 丢弃当前选中的物品
 	ObjectListNode deleteCurrentObject();
 
+	// 丢弃指定数量的物品
+	void deleteObject(int objectCount, int targetIndex= INVAVID_NUM);
+
 	// 合成物品
 	bool synthesisObject(GameBaseObject targetObject);
 
@@ -66,13 +69,16 @@ public:
 	ObjectListNode findObjectAtPosition(int index);
 
 	// 查找物品栏中是否有指定物品
-	ObjectListNode findObjectByObjectList(GameCommonObject targetObject);
+	int findObjectByObjectList(GameCommonObject targetObject);
 
 	// 查找物品栏中是否有指定物品
-	ObjectListNode findObjectByObjectList(std::string targetObjectName);
+	int findObjectByObjectList(std::string targetObjectName);
 
 	// 获取当前选中的物品索引
 	int getCurrentObjectIndex();
+
+	// 获取当前选中物品的名称
+	std::string getCurrentObjectName();
 
 	// 设置当前选中的物品
 	void setCurrentObject(int index);
@@ -96,8 +102,9 @@ private:
 	int _currentObjectIndex;					// 当前选中的物品索引
 	bool _openObjectList;						// 是否打开物品栏
 	bool _openBox;								// 是否打开箱子
-	bool _openShop;								// 是否打开商店
+	bool _openShop;							// 是否打开商店
 	
+
 
 	// 查找物品栏中是否有指定物品
 	GameCommonObject findObjectByName(const std::string& name);
