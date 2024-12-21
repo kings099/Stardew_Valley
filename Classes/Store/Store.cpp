@@ -9,6 +9,12 @@
 
 #include "Store.h"
 
+// 获取单例
+Store* Store::getInstance() {
+	static Store instance;
+	return &instance;
+}
+
  // 构造函数
 Store::Store() :
 	productKindCount(PRODUCE_KIND_NUM_EACH_DAY)
@@ -19,8 +25,6 @@ Store::Store() :
 
 // 新的一天刷新商店货物
 void Store::refreshStock() {
-	srand(static_cast<unsigned int>(time(0)));
-
 	int seedProductKind = rand() % PRODUCE_KIND_NUM_EACH_DAY;
 	int baseProductKind = PRODUCE_KIND_NUM_EACH_DAY - seedProductKind;
 	
@@ -28,7 +32,7 @@ void Store::refreshStock() {
 	for (int i = 0; i < seedProductKind; i++) {
 		int seedIndex = INVAVID_NUM;
 		do {
-			seedIndex = rand() % GAME_BASE_OBJECTS_ATTRS.size();
+			seedIndex = rand() % GAME_SEED_OBJECTS_ATTRS.size();
 		} while (!(_character->getSkillLevel(GAME_SEED_OBJECTS_ATTRS[seedIndex]._type) >= GAME_SEED_OBJECTS_ATTRS[seedIndex]._level));
 
 		int productCount = rand() % MAX_PRODUCT_COUNT_EACH_DAY + 1;
@@ -48,20 +52,21 @@ void Store::refreshStock() {
 		GameCommonObject commonObject(GameObjectMapType::Seed, targetObjectPtr);
 
 		GameSeedObject *seedObject;
-		if (canHarvestFromAnySeed(GAME_BASE_OBJECTS_ATTRS[baseIndex], seedObject)) {
-			_product.push_back(ProductNode{ commonObject , productCount, productCount * GAME_BASE_OBJECTS_ATTRS[baseIndex]._buyPrice, seedObject->_season,static_cast<Season>((seedObject->_season+2)%4) });
-		}
-		else {
+	//	if (canHarvestFromAnySeed(GAME_BASE_OBJECTS_ATTRS[baseIndex], seedObject)) {
+		//	_product.push_back(ProductNode{ commonObject , productCount, productCount * GAME_BASE_OBJECTS_ATTRS[baseIndex]._buyPrice, seedObject->_season,static_cast<Season>((seedObject->_season+2)%4) });
+		//}
+		//else {
 			_product.push_back(ProductNode{ commonObject , productCount, productCount * GAME_BASE_OBJECTS_ATTRS[baseIndex]._buyPrice ,All ,All });
-		}
+	//	}
 	
 	}
 
+	// 根据季节更新价格
 	updatePrices();
 }
 
 // 购买商品
-bool Store::buyProduct(int index) {
+bool Store::buyProduct(int index) {  
 	int characterMoney = _character->getMoney();
 	if (characterMoney < _product[index].totalPrice) {
 		return false;
@@ -69,24 +74,46 @@ bool Store::buyProduct(int index) {
 	
 	_character->setMoney(_product[index].totalPrice * -1);
 	_character->pickUpObject(_product[index].product, _product[index].count);
-
+	_product[index] = { {  None,nullptr}, 0, 0, Season::All, Season::All };
 	return true;
 }
 
 // 出售商品
 bool Store::sellProduct(GameSeedObject targetObject, int objectCount) {
-	_character->deleteCurrentObject();
-	_character->setMoney(targetObject._salePrice * objectCount);
-	return true;
+	std::shared_ptr<GameObject> targetObjectPtr = std::make_shared<GameSeedObject>(targetObject);
+	GameCommonObject commonObject(GameObjectMapType::Seed, targetObjectPtr);
+	return sellProduct(commonObject, objectCount * targetObject._sellPrice);
 }
 
 // 出售商品
 bool Store::sellProduct(GameBaseObject targetObject, int objectCount) {
-	if(targetObject._sale == false)
+	if(targetObject._sell == false)
 		return false;
+	std::shared_ptr<GameObject> targetObjectPtr = std::make_shared<GameBaseObject>(targetObject);
+	GameCommonObject commonObject(GameObjectMapType::Base, targetObjectPtr);
+	return sellProduct(commonObject, objectCount * targetObject._sellPrice);
+}
+
+// 出售商品
+bool Store::sellProduct(const GameCommonObject targetObject, int totalPrice) {
 	_character->deleteCurrentObject();
-	_character->setMoney(targetObject._salePrice * objectCount);
+	_character->setMoney(totalPrice);
+	_sellProductCallback(true);
 	return true;
+}
+
+// 查找指定位置的商品信息
+ProductNode Store::findObjectAtPosition(int index) {
+	if (index < 0 || index >= _product.size()) {
+		return ProductNode();
+	}
+
+	return _product[index];
+}
+
+// 回调函数
+void Store::setSellProductCallback(std::function<void(bool)> callback) {
+	_sellProductCallback = callback;
 }
 
 // 根据季节更新价格
@@ -106,12 +133,13 @@ void Store::updatePrices() {
 	}
 }
 
+// 判断物品是否是种子的收获物
 bool Store::canHarvestFromAnySeed(const GameBaseObject& baseObject,  GameSeedObject* seedObject) {
-	for (const auto& seed : GAME_SEED_OBJECTS_ATTRS) { // 使用常量引用遍历
+	for (const auto seed : GAME_SEED_OBJECTS_ATTRS) { // 使用常量引用遍历
 		if (baseObject._index == seed._harvestIndex) {
 			*seedObject = seed;
 			return true;
 		}
 	}
-	return false; // 如果没有找到，返回 nullptr
+	return false; // 如果没有找到
 }

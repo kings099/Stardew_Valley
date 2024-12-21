@@ -24,24 +24,32 @@ UILayer::UILayer() :
     _openedObjectListLayer(nullptr),
     _boxObjectListLayer(nullptr),
     _skillLevelBoardLayer(nullptr),
+    _shopLayer(nullptr),
     _nearestPlacementMarker(nullptr),
+    _selectedObjectImage({nullptr,nullptr}),
     _deleteObjectButton(nullptr),
     _closeObjectListButton(nullptr),
+    _sellObjectButton(nullptr),
     _exitButton(nullptr),
     _placementMarkerLayer(nullptr),
     _objectListStatus(false),
     _lastObjectListStatus(false),
     _boxObjectListStatus(false),
+    _storeStatus(false),
     _lastSelectedObjectIndex(0),
     _startLocation({OpenedObjectList,-1})
 {
     _character = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png");
+    _store = Store::getInstance();
+    _store->refreshStock();
     _visibleSize = Director::getInstance()->getVisibleSize();
+    std::fill_n(_selectObjectSpriteMarker, OBJECT_LIST_COLS, nullptr);
+    std::fill_n(_skillLevelLayer, SKILL_KIND_NUM * SKILL_LEVEL_NUM, nullptr);
     std::fill_n(_closedObjectSpriteImage, OBJECT_LIST_COLS, ObjectImageInfo());
     std::fill_n(_openedObjectSpriteImage, OBJECT_LIST_COLS * OBJECT_LIST_ROWS, ObjectImageInfo());
     std::fill_n(_boxObjectSpriteImage, OBJECT_LIST_COLS, ObjectImageInfo());
-    std::fill_n(_selectObjectSpriteMarker, OBJECT_LIST_COLS, nullptr);
-    std::fill_n(_skillLevelLayer, SKILL_KIND_NUM * SKILL_LEVEL_NUM, nullptr);
+    std::fill_n(_storeObjectInfo, PRODUCE_KIND_NUM_EACH_DAY, StoreObjectInfo());
+ 
     Box::getInstance().addBox(BoxNode(Vec2(_visibleSize.width / 2  , _visibleSize.height/2 )));
     Box::getInstance().addBox(BoxNode(Vec2(_visibleSize.width / 2 + 100, _visibleSize.height / 2)));
     Box::getInstance().addBox(BoxNode(Vec2(_visibleSize.width / 2 , _visibleSize.height / 2 + 100)));
@@ -52,6 +60,19 @@ UILayer::UILayer() :
     mouseListener->onMouseUp = CC_CALLBACK_1(UILayer::onMouseUp, this);
     this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(mouseListener, this);
 
+    // 设置回调
+    _character->_pickUpCallback = [this](bool success) {
+        if (success) {
+            updateObjectList();
+            showObjectImage();
+        }
+        };
+    _store->_sellProductCallback = [this](bool success) {
+        if (success) {
+            updateObjectList();
+            showObjectImage();
+        }
+    };
 }
 
 // 析构函数
@@ -73,6 +94,7 @@ bool UILayer::init() {
     initializeObjectList();
     showObjectImage();
     initializeSkillBoard();
+    initializeShop();
     initializeTimeDisplay();
     return true;
 }
@@ -153,17 +175,40 @@ void UILayer::initializeSkillBoard() {
     }
 }
 
+// 初始化商店
+void UILayer::initializeShop() {
+    // 创建商店背景板
+    _shopLayer = Sprite::create("../Resources/UI/StoreList.png");
+    _shopLayer->setPosition(Vec2(_visibleSize.width * 4 / 5, _visibleSize.height / 2));
+    this->addChild(_shopLayer, UI_LAYER_GRADE);
+    _shopLayer->setVisible(false);
+
+    // 创建出售物品按钮
+    _sellObjectButton = HoverMenuItemImage::create(
+        "../Resources/UI/defaultSellButton.png",
+        "../Resources/UI/defaultSellButton.png",
+        [this](cocos2d::Ref* sender) { _store->sellProduct(_character->getCurrentObject().objectNode, _character->getCurrentObject().count); }
+    );
+    _sellObjectButton->setPosition(Vec2(_visibleSize.width * 4 / 5, _visibleSize.height * 1 / 3));
+    this->addChild(_sellObjectButton, UI_LAYER_GRADE);
+    _sellObjectButton->setVisible(false);
+}
+
 // 更新物品栏
 void UILayer::updateObjectList() {
     // 获取角色的物品栏状态和窗口大小
     _objectListStatus = _character->getObjectListStatus();
     _boxObjectListStatus = _character->getBoxStatus();
+    _storeStatus = _character->getStoreStatus();
     const int index = _character->getCurrentObjectIndex();
     // 根据角色的物品栏状态初始化物品栏背景
     if (!_objectListStatus) {
         _closedObjectListLayer->setVisible(true);
         _openedObjectListLayer->setVisible(false);
         _boxObjectListLayer->setVisible(false);
+        _boxObjectListLayer->setVisible(false);
+        _shopLayer->setVisible(false);
+        _sellObjectButton->setVisible(false);
         _deleteObjectButton->setVisible(false);
         _closeObjectListButton->setVisible(false);
         setSelectObjectSpriteMarker(index, true);
@@ -175,6 +220,13 @@ void UILayer::updateObjectList() {
         _openedObjectListLayer->setVisible(true);
         if (_boxObjectListStatus && Box::getInstance().getBoxCount() != 0) {
             _boxObjectListLayer->setVisible(true);
+            _shopLayer->setVisible(false);
+            _sellObjectButton->setVisible(false);
+        }
+        else if (_storeStatus) {
+            _boxObjectListLayer->setVisible(false);
+            _shopLayer->setVisible(true);
+            _sellObjectButton->setVisible(true);
         }
         _deleteObjectButton->setVisible(true);
         _closeObjectListButton->setVisible(true);
@@ -190,6 +242,7 @@ void UILayer::updateObjectList() {
 void UILayer::showObjectImage() {
     _objectListStatus = _character->getObjectListStatus();
     _boxObjectListStatus = _character->getBoxStatus();
+    _storeStatus = _character->getStoreStatus();
     // 清空之前的数量标签
         // 清空之前的数量标签
     for (int i = 0; i < OBJECT_LIST_COLS; i++) {
@@ -199,7 +252,6 @@ void UILayer::showObjectImage() {
             _closedObjectSpriteImage[i] = { nullptr,nullptr }; // 重新初始化
         }
     }
-
     for (int i = 0; i < OBJECT_LIST_ROWS; i++) {
         for (int j = 0; j < OBJECT_LIST_COLS; j++) {
             if (_openedObjectSpriteImage[i * OBJECT_LIST_COLS + j].sprite != nullptr) {
@@ -215,6 +267,16 @@ void UILayer::showObjectImage() {
             this->removeChild(_boxObjectSpriteImage[i].label);
             _boxObjectSpriteImage[i] = { nullptr,nullptr }; // 重新初始化
         }
+    }
+    for (int i = 0; i < PRODUCE_KIND_NUM_EACH_DAY; i++) {
+        if (_storeObjectInfo[i].sprite != nullptr) {
+
+            this->removeChild(_storeObjectInfo[i].sprite);
+            this->removeChild(_storeObjectInfo[i].namelabel);
+            this->removeChild(_storeObjectInfo[i].pricelabel);
+            _storeObjectInfo[i] = { nullptr,nullptr,nullptr }; // 重新初始化
+
+        }    
     }
     // 显示物品图片
     if (!_objectListStatus) {
@@ -267,6 +329,26 @@ void UILayer::showObjectImage() {
                     setObjectImageVisible(_boxObjectSpriteImage[i], false);
             }
         }
+
+        if (_storeStatus) {
+            for (int i = 0; i < PRODUCE_KIND_NUM_EACH_DAY; i++) {
+                const auto storeObjectInfo = _store->findObjectAtPosition(i);
+                if (storeObjectInfo.count != 0) {
+                    const auto objectSpriteFilename = storeObjectInfo.product.object->_fileName;
+                    const auto objectName = storeObjectInfo.product.object->_name;
+                    const int objectPrice = storeObjectInfo.totalPrice;
+                    createStoreObjectInfo(_storeObjectInfo[i], objectSpriteFilename, objectName, objectPrice);
+                    setStoreObjectInfoPosition(_storeObjectInfo[i], LocationMap::getInstance().getStoreLocationMap().at(i));
+                }
+            }
+        }
+        else {
+            for (int i = 0; i < PRODUCE_KIND_NUM_EACH_DAY; i++) {
+                if (_storeObjectInfo[i].sprite != nullptr) {
+                    setStoreObjectInfoVisible(_storeObjectInfo[i],false);
+                }
+            }
+        }
     }
 }
 
@@ -277,9 +359,8 @@ void UILayer::onMouseDown(cocos2d::Event* event) {
     Vec2 location = mouseEvent->getLocationInView();
     _objectListStatus = _character->getObjectListStatus();
     _boxObjectListStatus = _character->getBoxStatus();
+    _storeStatus = _character->getStoreStatus();
     _selectedObjectImage = { nullptr,nullptr };
-    //_selectedObjectSprite = nullptr;
-   // _currentObjectQuantityLabel = nullptr;
 
     // 当物品栏被打开时才会检测
     if (_objectListStatus) {
@@ -319,6 +400,8 @@ void UILayer::onMouseDown(cocos2d::Event* event) {
             }
         }
     }
+
+    // TODO: 商店相关的事件处理,鼠标点击相关区域判断为购买物品
     
     if (_selectedObjectImage.sprite) {
         // 标记选中状态
@@ -367,6 +450,7 @@ void UILayer::onMouseMove(cocos2d::Event* event) {
 void UILayer::onMouseUp(cocos2d::Event* event) {
     _objectListStatus = _character->getObjectListStatus();
     _boxObjectListStatus = _character->getBoxStatus();
+    _storeStatus = _character->getStoreStatus();
     if (_objectListStatus) {
         if (_selectedObjectImage.sprite != nullptr) {
             // 取消选中状态
@@ -375,14 +459,21 @@ void UILayer::onMouseUp(cocos2d::Event* event) {
             _nearestPlacementMarker->removeFromParent();
             _nearestPlacementMarker = nullptr;
 
-            // 删除当前物品
+            // 删除/出售当前物品
             bool isDelete = false;
+            bool isSell = false;
             const Vec2 currentPos = _selectedObjectImage.sprite->getPosition();
             if (currentPos.x >= OPEN_OBJIEC_LIST_DELETE_BUTTON_LEFT_BOUDARY &&
                 currentPos.x <= OPEN_OBJIEC_LIST_DELETE_BUTTON_RIGHT_BOUDARY &&
                 currentPos.y >= OPEN_OBJIEC_LIST_DELETE_BUTTON_TOP_BOUDARY &&
                 currentPos.y <= OPEN_OBJIEC_LIST_DELETE_BUTTON_BOTTOM_BOUDARY) {
                 isDelete = true;
+            }
+            else if (currentPos.x >= OPEN_OBJIEC_LIST_SELL_BUTTON_LEFT_BOUDARY
+                && currentPos.x <= OPEN_OBJIEC_LIST_SELL_BUTTON_RIGHT_BOUDARY
+                && currentPos.y >= OPEN_OBJIEC_LIST_SELL_BUTTON_TOP_BOUDARY
+                && currentPos.y <= OPEN_OBJIEC_LIST_SELL_BUTTON_BOTTOM_BOUDARY) {
+                isSell = true;
             }
 
             if (!isDelete) {
@@ -433,9 +524,13 @@ void UILayer::onMouseUp(cocos2d::Event* event) {
                 // 移动物品图片
                 setObjectImagePosition(_selectedObjectImage, nearestPoint);
             }
-            else {
+            else if(isDelete){
                 setObjectImageVisible(_selectedObjectImage, false);
                 _character->deleteCurrentObject();
+            }
+            else if (isSell) {
+                setObjectImageVisible(_selectedObjectImage, false);
+                _store->sellProduct(_character->getCurrentObject().objectNode, _character->getCurrentObject().count);
             }
             // 关闭放置标记层
             this->removeChild(_placementMarkerLayer);
@@ -532,6 +627,7 @@ void UILayer::update(float deltaTime) {
     // 更新物品栏
     _objectListStatus = _character->getObjectListStatus();
 
+    // 根据物品栏状态更新物品栏图片
     if (_objectListStatus != _lastObjectListStatus) {
         updateObjectList();
         showObjectImage();
@@ -561,9 +657,40 @@ void UILayer::setObjectImagePosition(const ObjectImageInfo& objectImageInfo, con
 }
 
 // 设置物品图片是否可见
-void UILayer::setObjectImageVisible(ObjectImageInfo& objectImageInfo, bool visible) {
+void UILayer::setObjectImageVisible(const ObjectImageInfo& objectImageInfo, bool visible) {
     objectImageInfo.sprite->setVisible(visible);
     objectImageInfo.label->setVisible(visible);
+}
+
+// 创建商店物品信息
+void UILayer::createStoreObjectInfo(StoreObjectInfo& storeObjectInfo, const std::string spriteFileName, const std::string spriteName, const int price) {
+    storeObjectInfo.sprite = Sprite::create(spriteFileName);
+    storeObjectInfo.namelabel = Label::createWithTTF(spriteName, "../Resources/Fonts/arial.ttf", FONT_SIZE * 2 / 3);
+    storeObjectInfo.pricelabel = Label::createWithTTF(std::to_string(price), "../Resources/Fonts/arial.ttf", FONT_SIZE * 2 / 3);
+
+    storeObjectInfo.sprite->setScale(OBJECT_NODE_SCALE);
+    storeObjectInfo.namelabel->setTextColor(Color4B::BLACK);
+    storeObjectInfo.pricelabel->setTextColor(Color4B::BLACK);
+  
+    this->addChild(storeObjectInfo.sprite, OBJECT_LAYER_GRADE + 1);
+    this->addChild(storeObjectInfo.namelabel, OBJECT_LAYER_GRADE + 1);
+    this->addChild(storeObjectInfo.pricelabel, OBJECT_LAYER_GRADE + 1);
+}
+
+// 设置商店物品图片位置
+void UILayer::setStoreObjectInfoPosition(const StoreObjectInfo& storeObjectInfo, const cocos2d::Vec2& position) {
+    storeObjectInfo.sprite->setPosition(position);
+
+    storeObjectInfo.namelabel->setPosition(position.x + OBJECT_STORE_IMAGE_NAME_HORIZONTAL_INTERVAL, position.y);
+    storeObjectInfo.pricelabel->setPosition(position.x + OBJECT_STORE_IMAGE_NAME_HORIZONTAL_INTERVAL+OBJECT_STORE_NAME_PRICE_HORIZONTAL_INTERVAL, position.y );
+
+}
+
+// 设置商店物品图片是否可见
+void UILayer::setStoreObjectInfoVisible(const StoreObjectInfo& storeObjectInfo, bool visible) {
+    storeObjectInfo.sprite->setVisible(visible);
+    storeObjectInfo.namelabel->setVisible(visible);
+    storeObjectInfo.pricelabel->setVisible(visible);
 }
 
 // 寻找最近可放置坐标
@@ -597,6 +724,9 @@ Vec2 UILayer::findNearestPoint(cocos2d::Sprite* objectSprite) {
                 else {
                     continue;
                 }
+            }
+            else if (currentLocation.status == OpenedShopList) {
+                continue;
             }
 
             if (currentLocation.status == OpenedObjectList) {

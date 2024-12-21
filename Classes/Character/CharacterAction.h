@@ -22,6 +22,9 @@ public:
 	// 按下鼠标事件触发函数
 	void onMouseDown(cocos2d::Event* event,GameCharacterAction &gameCharacterAction,cocos2d::Vec2 & targetTilePos, InteractionManager* interactionManager);
 
+	// 获取物品
+	void getObject(GameCharacterAction action,InteractionManager* interactionManager);
+
 	// 获取技能等级
 	int getSkillLevel(int index);
 

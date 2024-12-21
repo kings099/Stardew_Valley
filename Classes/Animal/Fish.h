@@ -44,7 +44,7 @@ public:
     void updateAnimation();
 
     // 捕获鱼
-    static std::string catchFish(const std::string& season);
+    static std::string catchFish(const Season season);
 
 private:
     std::string name;                    // 鱼的名字
@@ -56,7 +56,7 @@ private:
     int moveDirection;                   // 鱼的移动方向 (1: 向右, -1: 向左)
     Vec2 initialPosition;                // 保存鱼的初始位置
     // 季节性鱼类映射
-    static std::unordered_map<std::string, std::vector<std::string>> seasonFishMap;
+    static std::unordered_map<Season, std::vector<std::string>> seasonFishMap;
 
     // 加载动画帧的辅助函数
     Vector<SpriteFrame*> loadFrames(const std::vector<std::string>& framePaths, const Rect& frameRect);

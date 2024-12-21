@@ -59,11 +59,17 @@ public:
 	// 获取箱子是否打开
 	bool getBoxStatus();
 
+	// 获取商店是否打开
+	bool getStoreStatus();
+
 	// 查找指定位置的物品信息
 	ObjectListNode findObjectAtPosition(int index);
 
 	// 获取当前选中的物品索引
 	int getCurrentObjectIndex();
+
+	// 获取当前选中物品的名称
+	std::string getCurrentObjectName();
 
 	// 设置当前选中的物品
 	void setCurrentObject(int index);
@@ -79,13 +85,15 @@ public:
 
 	// 回调函数
 	void setPickUpCallback(std::function<void(bool)> callback);
+
+	std::function<void(bool)> _pickUpCallback;  // 用于保存回调
 private:
 	std::vector<ObjectListNode> _objectList;	// 物品栏列表
 	int _maxObjectKindCount;					// 物品栏最大物品种类容量
 	int _currentObjectIndex;					// 当前选中的物品索引
 	bool _openObjectList;						// 是否打开物品栏
 	bool _openBox;								// 是否打开箱子
-	std::function<void(bool)> _pickUpCallback;  // 用于保存回调
+	bool _openShop;							// 是否打开商店
 	
 	// 查找物品栏中是否有指定物品
 	int findObjectByObjectList(GameCommonObject targetObject);

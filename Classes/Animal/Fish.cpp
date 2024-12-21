@@ -18,7 +18,7 @@ using namespace std;
 
 USING_NS_CC;
 
-std::unordered_map<std::string, std::vector<std::string>> Fishs::seasonFishMap;  // 静态成员变量定义
+std::unordered_map<Season, std::vector<std::string>> Fishs::seasonFishMap;  // 静态成员变量定义
 
 Fishs::Fishs()
     : name("defaultFish"), season("spring"), activityRange(50.0f), sprite(nullptr),
@@ -35,10 +35,10 @@ Fishs::~Fishs() {
 //初始化每个季节的鱼的类型
 void Fishs::initializeSeasonFishMap() {
     if (!seasonFishMap.empty()) return;
-    seasonFishMap["spring"] = { "Bigeye", "LargemouthBass", "Salmon"};// 春季：大眼鱼，大嘴鲈鱼，鲑鱼
-    seasonFishMap["summer"] = { "Squid", "Sardines", "Herring"};// 夏季：鱿鱼，沙丁鱼，鲱鱼
-    seasonFishMap["fall"] =   { "RedMullet", "Carps", "Octopuses"};// 秋季：红鲻鱼，鲤鱼，章鱼
-    seasonFishMap["winter"] = { "RedSnapper", "SmallmouthBass", "TunaFish"};// 冬季：红鲷鱼，小嘴鲈鱼，金枪鱼
+    seasonFishMap[Spring] = { "Bigeye", "LargemouthBass", "Salmon"};// 春季：大眼鱼，大嘴鲈鱼，鲑鱼
+    seasonFishMap[Summer] = { "Squid", "Sardines", "Herring" };// 夏季：鱿鱼，沙丁鱼，鲱鱼
+    seasonFishMap[Fall] =   { "RedMullet", "Carps", "Octopuses"};// 秋季：红鲻鱼，鲤鱼，章鱼
+    seasonFishMap[Winter] = { "RedSnapper", "SmallmouthBass", "TunaFish"};// 冬季：红鲷鱼，小嘴鲈鱼，金枪鱼
 }
 
 //创建并返回一个新的 Fishs 对象。
@@ -184,22 +184,23 @@ Vector<SpriteFrame*> Fishs::loadFrames(const std::vector<std::string>& framePath
 }
 
 //钓鱼函数，返回当前钓的鱼的类型
-std::string Fishs::catchFish(const std::string& season) {
+std::string Fishs::catchFish(const Season season) {
+    srand(static_cast<unsigned int>(time(0)));
     // 初始化季节性鱼类信息
     initializeSeasonFishMap();
 
     if (seasonFishMap.find(season) == seasonFishMap.end()) {
-        CCLOG("Error: Invalid season %s", season.c_str());
-        return nullptr;
+        CCLOG("Error: Invalid season %d", season);
+        return "";
     }
 
     // 获取当前季节的鱼类列表
     const std::vector<std::string>& fishList = seasonFishMap[season];
 
     // 小概率不返回鱼
-    if (rand() % 100 < 10) {  // 10%的概率不返回鱼
+    if (rand() % 100 < FAIL_TO_GET_FISH) {  // 10%的概率不返回鱼
         CCLOG("No fish caught in this season.");
-        return nullptr;
+        return "";
     }
 
     // 随机选择一种鱼
