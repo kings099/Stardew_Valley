@@ -143,7 +143,7 @@ const TileInfo InteractionManager::GetTileInfoAt(const Vec2& Tile_pos) {
         if (pathProps.find("isGrass") != pathProps.end() && pathProps["isGrass"].asBool()) {
             tileInfo.type = TileConstants::Grass; // 这个位置如果用草会报错 初步怀疑是编码的问题
             tileInfo.drops.clear(); // 清空默认的 "None" 项
-            // 这个位置如果用草会报错 初步怀疑是编码的问题
+
             tileInfo.drops["Grass"] = { TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::GRASS_DROP_PROBABILITY }; // 掉落1个草，概率为50%
         }
         else if (pathProps.find("isStone") != pathProps.end() && pathProps["isStone"].asBool()) {
@@ -323,6 +323,44 @@ void InteractionManager::getTreeAndChopAt(const Vec2& tilePos) {
 
 // 放置物品函数，待完善
 bool InteractionManager::placeObjectAtTile(const Vec2& tilePos) {
-    
+    const std::string currentObjectName = _currentObject.objectNode.object->_name;
+    GameObjectMapType currentObjectType = _currentObject.objectNode.type;
+
+    // 当前物品为种子
+    if (currentObjectType == Seed) {
+
+        // 检查当前地图是否为农场
+        if (_gameMap->getType() == MapType::Farm) {
+            FarmMap* farmMap = dynamic_cast<FarmMap*>(_gameMap);
+            // 地图错误
+            if (!farmMap) {
+                CCLOG("Error: Failed to cast GameMap to FarmMap.");
+                return false;
+            }
+
+            // 判断种子是否可以种植
+            if (GAME_SEED_TO_CROP_MAP.find(currentObjectName) != GAME_SEED_TO_CROP_MAP.end()) {
+                std::string cropName = GAME_SEED_TO_CROP_MAP.at(currentObjectName);
+
+                // 判断目标瓦片是否为耕地
+                TileInfo tileInfo = GetTileInfoAt(tilePos);
+                farmMap->plantCrops(tilePos, cropName);
+                CCLOG("Planted crop '%s' at tile (%f, %f)", cropName.c_str(), tilePos.x, tilePos.y);
+                return true;
+            }
+            else {
+                CCLOG("Error: Seed '%s' does not map to any crop.", currentObjectName.c_str());
+                return false;
+            }
+        }
+        else {
+            CCLOG("Error: Seeds can only be planted on FarmMap.");
+            return false;
+        }
+    }
+    else // 其他放置物品
+    {
+
+    }
     return false;
 }

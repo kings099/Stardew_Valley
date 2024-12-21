@@ -194,6 +194,7 @@ constexpr int DAYS_IN_A_SEASON = 7;                                         // �
 constexpr int DAYS_IN_A_YEAR = 28;                                          // 一年28天
 
 //农作物相关
+constexpr int MIN_GROWTHSTAGE = 0;                                          //最小生长阶段
 constexpr int CAULIFLOWER_MAX_GROWTHSTAGE = 5;                              //花椰菜共有5个生长阶段
 constexpr int KALE_MAX_GROWTHSTAGE = 5;                                     //甘蓝菜共有5个生长阶段
 constexpr int PUMPKIN_MAX_GROWTHSTAGE = 6;                                  //南瓜共有6个生长阶段
@@ -532,6 +533,14 @@ const std::vector<GameSeedObject> GAME_SEED_OBJECTS_ATTRS = {
      GameSeedObject(18,"../Resources/Crops/Kale/kale_0.png","kaleSeed","甘蓝菜种子",Farm,1,Spring,21,60,90),//甘蓝菜种子
      GameSeedObject(19, "../Resources/Crops/Pumpkin/pumpkin_0.png","pumpkinSeed","南瓜种子",Farm,3,Fall,22,100,160)//南瓜种子
 };
+
+// 游戏种子名称到农作物名称的映射，可拓展
+const std::unordered_map<std::string, std::string> GAME_SEED_TO_CROP_MAP = {
+    {"cauliflowerSeed", "cauliflower"},
+    {"kaleSeed", "kale"},
+    {"pumpkinSeed", "pumpkin"}
+};
+
 
 // 游戏基础类物品属性参数定义
 const std::vector<GameBaseObject> GAME_BASE_OBJECTS_ATTRS = {

@@ -51,8 +51,8 @@ public:
     const TileInfo GetLineTileInfo(Direction dir, int distance, const Vec2& WroldPos);
 
     // 更新角色选中物品名称
-    void updateCurrentObject(const std::string& objectname){
-        CurrentObjectName = objectname;
+    void updateCurrentObject(const ObjectListNode& object){
+        _currentObject = object;
     }
 private:
     // 当前地图对象
@@ -62,7 +62,7 @@ private:
     std::vector<TileInfo> _surroundingTiles;    
 
     //储存当前选中物品
-    std::string CurrentObjectName;              
+    ObjectListNode _currentObject;              
 
     // 判断指定瓦片位置是否为不可通行区域
     bool isCollidableAtPos(const cocos2d::Vec2& tilePos);

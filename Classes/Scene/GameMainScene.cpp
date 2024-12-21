@@ -90,8 +90,8 @@ bool GameMainScene::init()
         Vec2 actionTilePos;
         GameCharacterAction action;
         this->_character->onMouseDown(event, action, actionTilePos, _interaction);
-        const std::string object = _character->getCurrentObject().objectNode.object->_name;
-        _interaction->updateCurrentObject(object);
+        // 更新当前选中物品给地图类
+        _interaction->updateCurrentObject(_character->getCurrentObject());
         _interaction->ActionAnimation(action, actionTilePos);
         CCLOG("target tile: (%f, %f), action: %d",
             actionTilePos.x, actionTilePos.y, action);

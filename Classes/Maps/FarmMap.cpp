@@ -273,3 +273,16 @@ Crops* FarmMap::getTreeAtPosition(const Vec2& tilePos) {
     CCLOG("No tree found at tile position: (%f, %f)", tilePos.x, tilePos.y);
     return nullptr; // 未找到匹配的树精灵
 }
+
+void FarmMap::plantCrops(const Vec2& tilePos, const std::string cropName) {
+    int maxstage = KALE_MAX_GROWTHSTAGE;
+    if (cropName == "pumpkin")
+        maxstage = PUMPKIN_MAX_GROWTHSTAGE;
+    // 添加指定农作物
+    auto crop = Crops::create(cropName, maxstage);
+    _tile_map->addChild(crop);
+
+    // 设置位置
+    crop->setPosition(tileToRelative(tilePos));
+    crop->setGrowthStage(MIN_GROWTHSTAGE);
+}
