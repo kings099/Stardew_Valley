@@ -43,6 +43,7 @@ UILayer::UILayer() :
     _store = Store::getInstance();
     _store->refreshStock();
     _visibleSize = Director::getInstance()->getVisibleSize();
+    _lastWeekDay = "Monday";
     std::fill_n(_selectObjectSpriteMarker, OBJECT_LIST_COLS, nullptr);
     std::fill_n(_skillLevelLayer, SKILL_KIND_NUM * SKILL_LEVEL_NUM, nullptr);
     std::fill_n(_closedObjectSpriteImage, OBJECT_LIST_COLS, ObjectImageInfo());
@@ -341,7 +342,6 @@ void UILayer::onMouseDown(cocos2d::Event* event) {
                     location.y >= (spritePos.y - spriteSize.height * OBJECT_NODE_SCALE / 2) &&
                     location.y <= (spritePos.y + spriteSize.height * OBJECT_NODE_SCALE / 2) &&
                     _store->buyProduct(storeProdctPos.first)) {
-                   
                         setStoreObjectInfoVisible(_storeObjectInfo[storeProdctPos.first], false);
                         this->removeChild(_storeObjectInfo[storeProdctPos.first].sprite);
                         this->removeChild(_storeObjectInfo[storeProdctPos.first].namelabel);
@@ -352,8 +352,6 @@ void UILayer::onMouseDown(cocos2d::Event* event) {
             }
         }
     }
-
-    // TODO: 商店相关的事件处理,鼠标点击相关区域判断为购买物品
     
     if (_selectedObjectImage.sprite) {
         // 标记选中状态
@@ -424,11 +422,12 @@ void UILayer::onMouseUp(cocos2d::Event* event) {
             else if (currentPos.x >= OPEN_OBJIEC_LIST_SELL_BUTTON_LEFT_BOUDARY
                 && currentPos.x <= OPEN_OBJIEC_LIST_SELL_BUTTON_RIGHT_BOUDARY
                 && currentPos.y >= OPEN_OBJIEC_LIST_SELL_BUTTON_TOP_BOUDARY
-                && currentPos.y <= OPEN_OBJIEC_LIST_SELL_BUTTON_BOTTOM_BOUDARY) {
+                && currentPos.y <= OPEN_OBJIEC_LIST_SELL_BUTTON_BOTTOM_BOUDARY
+                && _character->getCurrentObject().objectNode.type != Tool) {
                 isSell = true;
             }
 
-            if (!isDelete) {
+            if (!isDelete && !isSell) {
                 // 遍历所有可放置位置
                 Vec2 nearestPoint = findNearestPoint(_selectedObjectImage.sprite);
 
@@ -481,8 +480,10 @@ void UILayer::onMouseUp(cocos2d::Event* event) {
                 _character->deleteCurrentObject();
             }
             else if (isSell) {
-                setObjectImageVisible(_selectedObjectImage, false);
-                _store->sellProduct(_character->getCurrentObject().objectNode, _character->getCurrentObject().count);
+                const auto targetObject = _character->getCurrentObject();
+                if (_store->sellProduct(targetObject.objectNode, targetObject.count)) {
+                   // setObjectImageVisible(_selectedObjectImage, false);
+                }
             }
             // 关闭放置标记层
             this->removeChild(_placementMarkerLayer);
@@ -521,6 +522,7 @@ void UILayer::updateTimeDisplay() {
     // 获取 TimeManager 的实例
     const TimeManager* timeManager = TimeManager::getInstance();
 
+
     // 获取并更新日期信息（星期和日期）
     std::string weekDay = timeManager->getWeekDay();
     _timeLabel1->setString(weekDay);  // 显示星期几 
@@ -531,6 +533,13 @@ void UILayer::updateTimeDisplay() {
     std::string dayOrNight = isDaytime ? "Day" : "Night";
     std::string timeOfDay = timeManager->getCurrentTime();
     _timeLabel2->setString(dayOrNight + " " + timeOfDay);  // 显示白天/晚上和当前时间的代码部分
+
+    if (_lastWeekDay != weekDay) {
+        _lastWeekDay = weekDay;
+
+        _store->refreshStock();
+        showObjectImage();
+    }
 }
 
 // 更新角色金钱显示
@@ -566,7 +575,6 @@ void UILayer::update(float deltaTime) {
     // 更新金钱标签
     updateCharacterMoneyLabel();
 }
-
 // 显示物品图片
 void UILayer::showObjectImage() {
     _objectListStatus = _character->getObjectListStatus();
@@ -599,7 +607,6 @@ void UILayer::showObjectImage() {
     }
     for (int i = 0; i < PRODUCE_KIND_NUM_EACH_DAY; i++) {
         if (_storeObjectInfo[i].sprite != nullptr) {
-
             this->removeChild(_storeObjectInfo[i].sprite);
             this->removeChild(_storeObjectInfo[i].namelabel);
             this->removeChild(_storeObjectInfo[i].pricelabel);
@@ -641,6 +648,8 @@ void UILayer::showObjectImage() {
             if (_closedObjectSpriteImage[i].sprite != nullptr)
                 setObjectImageVisible(_closedObjectSpriteImage[i], false);
         }
+
+        // 如果打开箱子则显示箱子物品图片
         if (_boxObjectListStatus && Box::getInstance().getBoxCount() != 0) {
             for (int i = 0; i < OBJECT_LIST_COLS; i++) {
                 const auto boxObjectInfo = Box::getInstance().findObjectAtPosition(i);
@@ -745,10 +754,7 @@ Vec2 UILayer::findNearestPoint(cocos2d::Sprite* objectSprite) {
     _objectListStatus = _character->getObjectListStatus();
     _boxObjectListStatus = _character->getBoxStatus();
 
-    if (!_objectListStatus) { // 物品栏关闭
-        // 这里可以添加逻辑
-    }
-    else {  // 物品栏打开
+    if (_objectListStatus)  {  // 物品栏打开
         for (const auto& point : LocationMap::getInstance().getLocationMap()) {
             const Location currentLocation = point.first;
 
@@ -782,7 +788,7 @@ Vec2 UILayer::findNearestPoint(cocos2d::Sprite* objectSprite) {
                     isEmpty = false;
                 }
             }
- 
+                
             if (isEmpty) {
                 const Vec2& emptyPoint = point.second;
                 const float distance = currentPos.distance(emptyPoint);
