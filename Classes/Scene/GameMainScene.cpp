@@ -41,7 +41,7 @@ bool GameMainScene::init()
     Maplayer->addChild(_farmMap, MAP_LAYER_GRADE);
 
     // 加载角色
-    _character = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png");
+    _character = Character::getInstance();
     this->addChild(_character, CHARACTER_LAYER_GRADE);
    
     // 初始化视角控制器

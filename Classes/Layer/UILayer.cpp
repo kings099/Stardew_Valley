@@ -39,7 +39,7 @@ UILayer::UILayer() :
     _lastSelectedObjectIndex(0),
     _startLocation({OpenedObjectList,-1})
 {
-    _character = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png");
+    _character = Character::getInstance();
     _store = Store::getInstance();
     _store->refreshStock();
     _visibleSize = Director::getInstance()->getVisibleSize();
