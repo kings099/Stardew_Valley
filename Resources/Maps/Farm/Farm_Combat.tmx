@@ -25,6 +25,12 @@
     <property name="isTree" type="bool" value="true"/>
    </properties>
   </tile>
+  <tile id="6">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+    <property name="isWood" type="bool" value="true"/>
+   </properties>
+  </tile>
   <tile id="7">
    <properties>
     <property name="TargetMap" value="../Resources/Maps/Farm/house.tmx"/>
@@ -92,6 +98,13 @@
   <tile id="21">
    <properties>
     <property name="canNotMove" type="bool" value="true"/>
+    <property name="isWood" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="23">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+    <property name="isGrass" type="bool" value="true"/>
    </properties>
   </tile>
   <tile id="31">
@@ -744,7 +757,7 @@
  </layer>
  <layer id="5" name="path" width="80" height="65">
   <data encoding="base64" compression="zlib">
-   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
+   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
   </data>
  </layer>
  <layer id="11" name="farm" width="80" height="65">
@@ -759,7 +772,7 @@
  </layer>
  <layer id="14" name="Teleport" width="80" height="65">
   <data encoding="base64" compression="zlib">
-   eJzt0DEKACAMBMGUFn48v7awFQRTSGAGrj82AgAAAICb8ftAc/rRTc493uhXox8AAAAAAAAAAAAAAAAAwNkCkmsDjw==
+   eJzt0CEOACAMBMFKRD8Or0ZgUSBIw0xy/rIRAFDXyNcPatPvjn4A8Jf2+kBx+lFNzzXO6HdHPwAAAAAAAAAAAAAAAACAvQlORgVR
   </data>
  </layer>
  <layer id="3" name="Collidable" width="80" height="65">

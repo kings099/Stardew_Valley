@@ -150,6 +150,7 @@ const TileInfo InteractionManager::GetTileInfoAt(const Vec2& Tile_pos) {
             tileInfo.type = TileConstants::Stone;
             tileInfo.drops.clear(); // 清空默认的 "None" 项
             tileInfo.drops["Stone"] = { TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::STONE_DROP_PROBABILITY }; // 掉落1个石头，概率为30%
+
         }
         // 对应树桩
         else if(pathProps.find("isWood") != pathProps.end() && pathProps["isWood"].asBool())

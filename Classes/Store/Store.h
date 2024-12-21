@@ -1,8 +1,8 @@
 /****************************************************************
  * Project Name:  Stardew_Valley
  * File Name:     Store.h
- * File Function: ÉÌµêStoreÀàµÄ¶¨Òå
- * Author:        Òü³Ï³É
+ * File Function: å•†åº—Storeç±»çš„å®šä¹‰
+ * Author:        å°¹è¯šæˆ
  * Update Date:   2024/12/20
  * License:       MIT License
  ****************************************************************/
@@ -19,48 +19,49 @@
 
 class Store {
 public:
-	// »ñÈ¡µ¥Àı
+	// è·å–å•ä¾‹
 	static Store* getInstance();
 
-	// ĞÂµÄÒ»ÌìË¢ĞÂÉÌµê»õÎï
+	// æ–°çš„ä¸€å¤©åˆ·æ–°å•†åº—è´§ç‰©
 	void refreshStock();
 
-	// ¹ºÂòÉÌÆ·
+	// è´­ä¹°å•†å“
 	bool buyProduct(int index);
 
-	// ³öÊÛÉÌÆ·
+	// å‡ºå”®å•†å“
 	bool sellProduct(const GameSeedObject targetObject,int objectCount);
 
-	// ³öÊÛÉÌÆ·
+	// å‡ºå”®å•†å“
 	bool sellProduct(const GameBaseObject targetObject, int objectCount);
 
-	// ³öÊÛÉÌÆ·
+	// å‡ºå”®å•†å“
 	bool sellProduct(const GameCommonObject targetObject, int totalPrice);
 
-	// ²éÕÒÖ¸¶¨Î»ÖÃµÄÉÌÆ·ĞÅÏ¢
+	// æŸ¥æ‰¾æŒ‡å®šä½ç½®çš„å•†å“ä¿¡æ¯
 	ProductNode findObjectAtPosition(int index);
 
-	// »Øµ÷º¯Êı
+	// å›è°ƒå‡½æ•°
 	void setSellProductCallback(std::function<void(bool)> callback);
 
-	std::function<void(bool)> _sellProductCallback;  // ÓÃÓÚ±£´æ»Øµ÷
+	std::function<void(bool)> _sellProductCallback;  // ç”¨äºä¿å­˜å›è°ƒ
 private:
-	Character *_character;					// Íæ¼Ò½ÇÉ«
-	TimeManager* _timeManager;				// Ê±¼ä¹ÜÀíÆ÷
-	int productKindCount;					// ÉÌµêÃ¿ÌìÊÛÂôµÄ»õÎïÖÖÀà
-	std::vector<ProductNode>_product;		// ÉÌÆ·ÖÖÀà,ÊıÁ¿
+	Character *_character;					// ç©å®¶è§’è‰²
+	TimeManager* _timeManager;				// æ—¶é—´ç®¡ç†å™¨
+	int productKindCount;					// å•†åº—æ¯å¤©å”®å–çš„è´§ç‰©ç§ç±»
+	std::vector<ProductNode>_product;		// å•†å“ç§ç±»,æ•°é‡
 
-	// ¹¹Ôìº¯Êı
+	// æ„é€ å‡½æ•°
 	Store();
 
-	// ÅĞ¶ÏÎïÆ·ÊÇ·ñÊÇÖÖ×ÓµÄÊÕ»ñÎï
+	// åˆ¤æ–­ç‰©å“æ˜¯å¦æ˜¯ç§å­çš„æ”¶è·ç‰©
 	bool canHarvestFromAnySeed(const GameBaseObject& baseObject, GameSeedObject* seedObject);
 
-	// ¸ù¾İ¼¾½Ú¸üĞÂ¼Û¸ñ
+	// æ ¹æ®å­£èŠ‚æ›´æ–°ä»·æ ¼
 	void updatePrices();
 
-	// TODO£º¸ù¾İºÃ¸Ğ¶È¸üĞÂ¼Û¸ñ
+	// TODOï¼šæ ¹æ®å¥½æ„Ÿåº¦æ›´æ–°ä»·æ ¼
 	// void updatePricesByLove();
+
 };
 
 #endif // !__STORE_H__

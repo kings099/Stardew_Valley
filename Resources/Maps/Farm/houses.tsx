@@ -11,6 +11,11 @@
    <property name="TargetMap" value="../Resources/Maps/Town/Town.tmx"/>
   </properties>
  </tile>
+ <tile id="2">
+  <properties>
+   <property name="TargetMap" value="../Resources/Maps/Mine/MIne.tmx"/>
+  </properties>
+ </tile>
  <tile id="35">
   <properties>
    <property name="canNotMove" type="bool" value="true"/>

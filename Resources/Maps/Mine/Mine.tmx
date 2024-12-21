@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="50" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="6">
+ <properties>
+  <property name="AmbientLight" value="80 80 40"/>
+  <property name="ViewportFollowPlayer" type="bool" value="true"/>
+  <property name="Warp" value="18 14 Mountain 54 5 67 18 Mountain 103 17"/>
+ </properties>
+ <tileset firstgid="1" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths.png" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="65" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+  <image source="Mines/mine.png" width="256" height="288"/>
+ </tileset>
+ <tileset firstgid="353" source="paths.tsx"/>
+ <tileset firstgid="417" source="springobjects.tr-TR.tsx"/>
+ <tileset firstgid="1353" source="../Farm/paths.tsx"/>
+ <layer id="9" name="Collidable" width="50" height="20" opacity="0.9">
+  <data encoding="base64" compression="zlib">
+   eJztVTESgDAI6+L7/P9v3DlpSQg4SO6cSkOiBNcaDL7HffFPt65ILdOnEycfFbxefeYbV/qI3rc6mdn1vGZnvCpL1q/nozOrLKxWe6bW//Z+vHOUN3Mf7XWaY1aP5fO4ldlgtCG1mX0Q5UGA7jeUd6dR5QHRp85vtC/Ku+NU57pyLyv/NYPBX/EABO47ZQ==
+  </data>
+ </layer>
+ <layer id="1" name="Back" width="50" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztU0tSwzAMla8ArFJWfDalp2g5QdsTpNw25QJtT5DCBWCDNJEmilBCxKSwsWbe2JFj6z09GyBHjv+NijFLv8MlI1JP1j9x/pQaLBDv+D1Pbc7iA2I6qiAA/JpDOoS7nHFS5x2gmz/yfB70Q3Ps89bquMbcXWrG+9TmvbjF9Zr37k29Ws1f4bvOIo3rreWvvbf+zhRf2VciHgd0VKxDc9NeaJwcnUXwLQl/8p7OWjKeob3DVo+AdBROXvpDOg4mfzT8+/o79H48LNj7FfOncYfY9uiROmvEVWrWtE4NeRcrPmfM/bC6o1gyN9KwYayZg73PgofUfS92Lt83iBfHh72T0/Oxob0umbuMAvFE7oPd+xOoL6LB67Vwrp1cVIdgY7BjHVv1T1RHH4behq0V0UG9ontUQtcb3c/o2WPqThFWv+Z9RrxB9w5PFZfWMZXPfx1ZR44c08YXnHj7cw==
+  </data>
+ </layer>
+ <layer id="3" name="Buildings" width="50" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztkzlOQzEQhv0keqgoEZQUQC4BnAA4AVAjBNSAWMLyChD7JpDYwyqxb6mgA04AOQJH4Lfi0bNGfov98rr80ifHjpOZf2YshJ0mwRSYA/NgBswm2F9axrEVjxsVbwIsgxWwCbbAOhhg+w0wBsa1fTGT7APxuFHxlsAB2AMFcAZGwa62PwGnYAEsavtvh9yo9+2gQ9EJtsEOu8vjRsXbB7fgDjyDF/AIrtj+ybAvOeRPve8C3YoecA4umB8eNyreDXgHHxY5kfIi/O3wc8qfet8LBkEf6AfX4E3zY3oLeWHum6zPtEP+pDURzC5/S3y2Zf6HIuj9EBhWjIBP8AVelZ9iSDzyqddJ1mc1hY9jEcwuf0t8til/6n3OE6LNK/9PK9YfrL+aH9NbkPGob1QnWT/Z36MUPh5E+Nvh53Gzm1OeyE8pJB75pDrJ+sn63KfwkaX+Qs7Jp14nl7fN5Sv4Z9P3VvLsrtfgfpPlb0g+I+pcrs0Wceos7tY75i/V4pWxqbXN3UbL3HQvcTMQN0NJlLQntQ41Ns0FxaOam+bGRUlmoCHFnHD5bK2korxU0gMpCw/6f5uoqqqqkukfPASnpA==
+  </data>
+ </layer>
+ <layer id="5" name="Front" width="50" height="20" opacity="0.97">
+  <data encoding="base64" compression="zlib">
+   eJzrY2Bg6CMBUwIo1Y8PtOKwj9p+gJlLilpSwnUqCWZQCog1h1R1ILyUgDwt/EFJ2i3BYe5WEuwbqmAw+UGecaBdQB8gBvSn5DDwKyjNaNLJH+pAezQYMdnY5EkFIH8QGydfgFiQTHv4gPrkGCF2SSCxxaF8CTR5UtMILB9jixM+JHvYKIgzWagbSWk3kJpGYPqQw0YcKXyQ5ZH9QigNIMvrkugHUtIIuj+INVucETNdwOyTxSFPalyQEiegNMNPpvm47CMl3IkJV/Q0gM0P5IYRvngixUxi/IErvWNL9wOFifXHYMWEwEC7j1r+GAXDAwAASTG0WA==
+  </data>
+ </layer>
+ <layer id="11" name="path" width="50" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AU0AJEsRIWx6VmsAFi/DIKaAtGwxo3wBY26GIwPogeimFJah4k1Y+E1FMjzIiJJ1oAXGmBWmYOhB9oaf5QzB8gMBz8MApGwSgYBSAAADgwCgY=
+  </data>
+ </layer>
+ <layer id="12" name="Teleport" width="50" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztzzEJAAAIAEEXw9m/kAUcBUHuEvxHAN9VXhfs+PIBAACTBvcgAJ0=
+  </data>
+ </layer>
+ <layer id="7" name="ore" width="50" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AU0ALIMhMWx6VmsAEZHO7EJT4KqA9Gwxo3wBY26HkLxgepfchIezdRG+CKf2LKGUrMJ1aeXDvoka5xpQVKgAydy3FahxOy+UO1rEGOh3VD1A+jYBSMglEAAgA5tQSm
+  </data>
+ </layer>
+</map>
