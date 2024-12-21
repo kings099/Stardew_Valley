@@ -19,7 +19,6 @@ class CharacterMove :virtual public cocos2d::Node {
 public:
     //构造函数
     CharacterMove();
-    CharacterMove(const std::string &filename);
 
     // 按下键盘事件触发函数
     void onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event);

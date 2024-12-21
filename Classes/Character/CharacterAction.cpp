@@ -16,9 +16,9 @@
 USING_NS_CC;
 
 // ¹¹Ôìº¯Êý
-CharacterAction::CharacterAction(const std::string &filename):
+CharacterAction::CharacterAction():
 	CharacterObjectList(),
-	CharacterMove(filename)
+	CharacterMove()
 {
 	if (!loadData("../GameData/CharacterActionData.dat")) {
 		for (int i = 0; i < SKILL_KIND_NUM; i++) {

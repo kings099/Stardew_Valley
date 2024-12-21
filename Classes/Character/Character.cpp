@@ -9,23 +9,24 @@
 
 #include "Character.h"
 #include "../proj.win32/Constant.h"
+#include <algorithm>
 
 USING_NS_CC;
 // 获取单例
-Character* Character::getInstance(const std::string& filename) {
+Character* Character::getInstance() {
     static Character* instance = nullptr; 
     if (!instance) {
-        instance = new Character(filename); // 仅在第一次调用时创建实例
+        instance = new Character(); // 仅在第一次调用时创建实例
     }
     return instance;
 }
 
 // 构造函数
-Character::Character(const std::string& filename):
-    CharacterAction(filename),
-    CharacterMove(filename)
+Character::Character():
+    CharacterAction(),
+    CharacterMove()
 {
-
+    
 }
 
 // 按下键盘时的处理
