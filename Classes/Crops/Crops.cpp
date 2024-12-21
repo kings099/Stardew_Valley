@@ -103,7 +103,7 @@ void Crops::initializeResourceMap() {
 // 农作物的生长周期表（不同季节不同周期）
 std::unordered_map<std::string, std::unordered_map<Season, float>> Crops::_growthCycles = {
     {"cauliflower", {{Season::Spring, 50.0f}, {Season::Summer, 50.0f}, {Season::Fall, 60.0f}, {Season::Winter,72.0f}}},
-    {"kale", {{Season::Spring, /*30*/1.0f}, {Season::Summer, 30.0f}, {Season::Fall, 40.0f}, {Season::Winter, 50.0f}}},
+    {"kale", {{Season::Spring, 30.0f}, {Season::Summer, 30.0f}, {Season::Fall, 40.0f}, {Season::Winter, 50.0f}}},
     {"pumpkin", {{Season::Spring, 2.0f}, {Season::Summer, 50.0f}, {Season::Fall, 60.0f}, {Season::Winter, 72.0f}}},
     {"oak", {{Season::Spring,2.0f}, {Season::Summer, 72.0f}, {Season::Fall, 96.0f}, {Season::Winter, 120.0f}}},
     {"maple", {{Season::Spring, 72.0f}, {Season::Summer, 72.0f}, {Season::Fall, 96.0f}, {Season::Winter, 120.0f}}},
@@ -214,7 +214,7 @@ bool Crops::init(const std::string& type, int maxGrowthStage) {
     CCLOG("Crop initialized successfully");
     this->schedule([this](float dt) {
         this->updateGrowth(dt);
-        }, 0.5f, "crop_update");
+        }, 24.0f, "crop_update");
     return true;
 }
 
@@ -265,23 +265,25 @@ void Crops::updateGrowth(float deltaTime) {
             }
         }
     }
-    // 检查是否枯萎
-    if (!_isWatered) {
-        _daysWithoutWater++;
-        if (_daysWithoutWater >= 3) {
-            if (_resourceMap.find("wilt") != _resourceMap.end()) {
-                const auto& textures = _resourceMap["wilt"];
-                if (!textures.empty()) {
-                    _sprite->setTexture(textures[0]);
+    if (_type != "oak" && _type != "maple" && _type != "pine") {
+        // 检查是否枯萎
+        if (!_isWatered) {
+            _daysWithoutWater++;
+            if (_daysWithoutWater >= 3) {
+                if (_resourceMap.find("wilt") != _resourceMap.end()) {
+                    const auto& textures = _resourceMap["wilt"];
+                    if (!textures.empty()) {
+                        _sprite->setTexture(textures[0]);
+                    }
                 }
             }
         }
+        else {
+            _daysWithoutWater = 0;
+        }
+        checkPests(); // 每次更新时检查病虫害
+        _isWatered = false; // 每次更新后重置浇水状态
     }
-    else {
-        _daysWithoutWater = 0;
-    }
-    checkPests(); // 每次更新时检查病虫害
-    _isWatered = false; // 每次更新后重置浇水状态
 }
 
 //更新当前的季节
