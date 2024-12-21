@@ -286,7 +286,7 @@ void CharacterObjectList::deleteObject(int objectCount, int targetIndex) {
 			return;
 		}
 		else {
-			_objectList[index].count -= objectCount;
+			_objectList[targetIndex].count -= objectCount;
 		}
 	}
 }
