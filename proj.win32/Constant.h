@@ -241,6 +241,7 @@ enum class MapType {
     Generic,
     Mine,
     Farm,
+    Indoor,
     Town
 };
 
