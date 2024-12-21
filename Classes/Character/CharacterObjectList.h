@@ -103,6 +103,7 @@ private:
 	bool _openObjectList;						// 是否打开物品栏
 	bool _openBox;								// 是否打开箱子
 	bool _openShop;							    // 是否打开商店
+	bool _openSynthesisTable;					// 是否打开合成台
 	
 	// 查找物品栏中是否有指定物品
 	GameCommonObject findObjectByName(const std::string& name);

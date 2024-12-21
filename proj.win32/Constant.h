@@ -257,6 +257,13 @@ enum Season {
     All					// 通用
 };
 
+// 游戏天气定义
+enum Weather {
+    Sunny,              // 晴天
+    Rainy,              // 雨天
+    Dry                 // 干旱
+};
+
 // 游戏物品类型定义
 enum GameObjectMapType {
     None,				// 空物品
@@ -298,6 +305,7 @@ enum LocationStatus {
 enum GameCharacterAction {
     NoneAction,			// 空动作
     Plowing,			// 耕地
+    Seeding,            // 播种
     Watering,			// 浇水
     Fertilize,          // 施肥
     GetWater,			// 取水
@@ -391,12 +399,15 @@ struct StoreObjectInfo {
 const std::map< GameCharacterAction, TileConstants::TileType> ACTION_TO_TILEMAP = {
     { NoneAction, TileConstants::Other },
     { Plowing,TileConstants::Soil },          // 左键
+    { Seeding,TileConstants::Soiled  },          // 右键
     { Watering, TileConstants::Soiled },       // 左键
     { Fertilize, TileConstants::Soiled },      // 左键
     { GetWater,TileConstants::Water },        // 右键
     { Weeding, TileConstants::Grass },         // 左键
     { Cutting, TileConstants::Tree },          // 左键
     { Mining, TileConstants::Stone },          // 左键
+    { Mining, TileConstants::Treasure },          // 左键
+    { Mining, TileConstants::Mine },          // 左键
     { Fishing, TileConstants::Water },         // 左键
     { Harvesting, TileConstants::Crop },       // 右键
     { Placement, TileConstants::Soil },        // 右键

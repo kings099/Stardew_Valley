@@ -83,8 +83,9 @@ private:
 	cocos2d::Sprite* _closedObjectListLayer;										// 物品栏关闭状态图片指针
 	cocos2d::Sprite* _openedObjectListLayer;										// 物品栏打开状态图片指针
 	cocos2d::Sprite* _boxObjectListLayer;											// 箱子物品栏图片指针
-	cocos2d::Sprite* _skillLevelBoardLayer;											// 技能板指针
-	cocos2d::Sprite* _shopLayer;													// 商店指针
+	cocos2d::Sprite* _skillLevelBoardLayer;											// 技能板图片指针
+	cocos2d::Sprite* _shopLayer;													// 商店图片指针
+	cocos2d::Sprite* _synthesisTableLayer;											// 合成表图片指针
 	cocos2d::Sprite* _selectObjectSpriteMarker[OBJECT_LIST_COLS];					// 选中物品的标记指针(关闭状态的物品栏）
 	cocos2d::Sprite* _skillLevelLayer[SKILL_KIND_NUM * SKILL_LEVEL_NUM];			// 技能等级指针
 	cocos2d::Sprite* _nearestPlacementMarker;										// 最近放置标记指针
@@ -131,9 +132,6 @@ private:
 
 	// 设置技能等级的显示状态
 	void setSkillLevel(bool show);
-
-	// 检查鼠标是否在某个精灵区域内
-	bool isMouseOverSprite(EventMouse* mouseEvent, const Vec2& mousePosition, cocos2d::Sprite* sprite);
 
 	// 关闭回调
 	void menuCloseCallback(cocos2d::Ref* pSender);
