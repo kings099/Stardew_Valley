@@ -269,6 +269,28 @@ void CharacterObjectList::setCurrentObject(int index) {
 	_currentObjectIndex = index;
 }
 
+// 丢弃指定数量的物品
+void CharacterObjectList::deleteObject(int objectCount, int targetIndex) {
+
+	if (targetIndex == INVAVID_NUM) {
+		int index = getCurrentObjectIndex();
+		if (_objectList[index].count < objectCount) {
+			return;
+		}
+		else {
+			_objectList[index].count -= objectCount;
+		}
+	}
+	else {
+		if (_objectList[targetIndex].count < objectCount) {
+			return;
+		}
+		else {
+			_objectList[targetIndex].count -= objectCount;
+		}
+	}
+}
+
 // 设置物品栏状态
 void CharacterObjectList::setObjectListStatus(bool status) {
 	_openObjectList = static_cast<bool>(status);

@@ -54,7 +54,7 @@ private:
 	Store();
 
 	// 判断物品是否是种子的收获物
-	bool canHarvestFromAnySeed(const GameBaseObject& baseObject, GameSeedObject* seedObject);
+	bool canHarvestFromAnySeed(const GameBaseObject& baseObject, GameSeedObject& seedObject);
 
 	// 根据季节更新价格
 	void updatePrices();
