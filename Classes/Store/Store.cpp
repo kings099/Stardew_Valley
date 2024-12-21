@@ -19,7 +19,7 @@ Store* Store::getInstance() {
 Store::Store() :
 	productKindCount(PRODUCE_KIND_NUM_EACH_DAY)
 {
-	_character = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png");
+	_character = Character::getInstance();
 	_product.clear();
 }
 

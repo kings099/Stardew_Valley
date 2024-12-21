@@ -15,9 +15,7 @@
 USING_NS_CC;
 
 // 构造函数
-CharacterMove::CharacterMove() {}
-
-CharacterMove::CharacterMove(const std::string& filename) :
+CharacterMove::CharacterMove() :
     _moveSpeed(CHARACTER_MOVE_SPEED),
     _width(CHARACTER_WIDTH),
     _height(CHARACTER_HEIGHT),
@@ -35,7 +33,7 @@ CharacterMove::CharacterMove(const std::string& filename) :
         _position = Vec2(visibleSize.width / 2 + origin.x + _width / 2, visibleSize.height / 2 + origin.y + _height / 2);
     }
     // 创建精灵并设置初始位置
-    _character = Sprite::create(filename);
+    _character = Sprite::create("../Resources/Characters/Bear/BearDownAction1.png");
     _character->setAnchorPoint(Vec2(0.5, 0.5));
    // _character->setPosition(_position);
     this->addChild(_character);
