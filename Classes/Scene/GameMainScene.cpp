@@ -46,7 +46,7 @@ bool GameMainScene::init()
    
     // 初始化视角控制器
     _viewController = GameViewController::create(_character, _farmMap);
-    this->addChild(_viewController);
+    this->addChild(_viewController,100);
 
     // 初始化交互管理器
     _interaction = InteractionManager::create(_farmMap);

@@ -28,14 +28,25 @@ public:
 private:
     Character* _character;  // 角色对象
     GameMap* _map;      // 地图对象
+    // 黑暗效果相关成员
+    cocos2d::LayerColor* _darknessMask;  // 黑色遮罩层
+    cocos2d::DrawNode* _circleHole;     // 圆形透明区域
+    bool _darknessEnabled;              // 黑暗效果是否启用
 
-    GameViewController();  // 构造函数，接受角色对象
+    // 构造函数
+    GameViewController(); 
 
     //视判断辅助函数
     float GameViewController::clamp(float value, float minVal, float maxVal);
 
     // 初始化方法
     bool init(Character* character, GameMap* gamemap);
+
+    // 启用黑暗环境效果,仅在矿洞地图生效
+    void enableDarknessEffect(); 
+
+    // 禁用黑暗环境效果，由矿洞地图切换至其他地图时启用
+    void disableDarknessEffect();
 };
 
 #endif // __GAME_VIEW_CONTROLLER_H__

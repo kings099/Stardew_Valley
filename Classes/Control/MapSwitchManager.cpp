@@ -78,7 +78,7 @@ bool MapSwitchManager::switchMap(const std::string& newMapFile, Vec2& teleportPO
 
     _currentMap = newMap;
     _currentMap->applySavedChanges();
-    MapLayer->addChild(_currentMap);
+    MapLayer->addChild(_currentMap,MAP_LAYER_GRADE);
 
     // 更新 InteractionManager 的地图引用
     if (_interactionManager) {
