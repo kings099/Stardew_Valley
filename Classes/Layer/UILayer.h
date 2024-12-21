@@ -48,23 +48,26 @@ public:
 	// 初始化技能板
 	void initializeSkillBoard();
 
+	// 初始化时间显示器
+	void initializeTimeDisplay();
+
 	// 初始化商店
 	void initializeShop();
 
 	// 更新物品栏
 	void updateObjectList();
 
-	// 显示物品图片
-	void showObjectImage();
-
-	// 初始化时间显示器
-	void initializeTimeDisplay();
-
 	// 更新时间显示器
 	void updateTimeDisplay();
 
+	// 更新角色金钱显示
+	void updateCharacterMoneyLabel();
+
 	// 更新UI界面
 	void update(float deltaTime);
+
+	// 显示物品图片
+	void showObjectImage();
 
 	// UILayer的create函数
 	CREATE_FUNC(UILayer);
@@ -75,6 +78,7 @@ private:
 	cocos2d::Size _visibleSize;														// 可见区域的大小
 	cocos2d::Label* _timeLabel1;													// 显示星期和日期的标签指针
 	cocos2d::Label* _timeLabel2;													// 显示白天/晚上和小时的标签指针
+	cocos2d::Label* _characterMoneyLabel;											// 角色金钱显示标签指针
 	cocos2d::Sprite* _timeDisplayLayer;												// 用作为时间显示器背景的图片指针
 	cocos2d::Sprite* _closedObjectListLayer;										// 物品栏关闭状态图片指针
 	cocos2d::Sprite* _openedObjectListLayer;										// 物品栏打开状态图片指针
