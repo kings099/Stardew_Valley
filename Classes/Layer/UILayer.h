@@ -104,6 +104,7 @@ private:
 	bool _storeStatus;																// 商店状态
 	int _lastSelectedObjectIndex;													// 上一次物品栏索引
 	Location _startLocation;														// 物品移动起始位置属性
+	std::string _lastWeekDay;														// 上一天的信息
 	// 创建物品图片 
 	void createObjectImage(ObjectImageInfo& objectImageInfo,const std::string spriteFileName,const int count);
 

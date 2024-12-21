@@ -465,7 +465,6 @@ public:
         _sellPrice(sellPrice)
     {
     }
-
     GameSeedObject() {};
 };
 
@@ -502,6 +501,7 @@ public:
 
     GameBaseObject() {};
 };
+
 
 // 游戏工具类物品属性参数定义
 const std::vector<GameToolObject> GAME_TOOL_OBJECTS_ATTRS = {
@@ -577,7 +577,7 @@ const std::vector<GameBaseObject> GAME_BASE_OBJECTS_ATTRS = {
     GameBaseObject(26,"../Resources/Objects/Base/IronParticle.png","IronParticle","铁粒",Mine,99,2,true,25,false,INVAVID_NUM,false,INVAVID_NUM,false,false,{}),
     GameBaseObject(27,"../Resources/Objects/Base/Copper.png","Copper","铜锭",Mine,99,1,true,120,false,INVAVID_NUM,false,INVAVID_NUM,false,true,{{"CopperParticle",10}}),
     GameBaseObject(28,"../Resources/Objects/Base/Iron.png","Iron","铁锭",Mine,99,1,true,250,false,INVAVID_NUM,false,INVAVID_NUM,false,true,{{"IronParticle",10}}),
-    GameBaseObject(29,"../Resources/Objects/Base/Fertilizer.png","Fertilizer","肥料",Farm,99,1,true,150,true,INVAVID_NUM,false,INVAVID_NUM,false,true,{{"Grass",5}}),
+    GameBaseObject(29,"../Resources/Objects/Base/Fertilizer.png","Fertilizer","肥料",Farm,99,1,true,150,true,200,false,INVAVID_NUM,false,true,{{"Grass",5}}),
     GameBaseObject(30,"../Resources/Objects/Base/Grass.png","Grass","草",Collect,99,1,true,5,false,INVAVID_NUM,false,INVAVID_NUM,false,true,{}),
 
 
@@ -708,15 +708,15 @@ GameBaseObject(30, "../Resources/Objects/Base/Octopus.png", "Octopus", "章鱼",
 ),
 
 GameBaseObject(30, "../Resources/Objects/Base/RedSnapper.png", "RedSnapper", "红鲷鱼", Fish,  // 红鲷鱼
-   100, // 最大存储量
-   3,   // 解锁所需等级
-   true, // 是否能出售
-   200,  // 出售价格
-   false, // 是否可以购买
+   100,     // 最大存储量
+   3,       // 解锁所需等级
+   true,    // 是否能出售
+   200,     // 出售价格
+   false,   // 是否可以购买
    INVAVID_NUM,    // 购买价格
-   true, // 是否可以食用
-   50,    // 食用恢复的能量值
-   false, // 能否放置
+   true,           // 是否可以食用
+   50,             // 食用恢复的能量值
+   false,          // 能否放置
    false, //能否合成
    {}    //合成物品的原料
 ),
@@ -808,9 +808,10 @@ struct GameCommonObject {
     }
 
     GameCommonObject(const GameBaseObject& baseObject) {
-        
+
     }
 };
+
 
 // 角色物品栏单个物品属性定义
 struct ObjectListNode {

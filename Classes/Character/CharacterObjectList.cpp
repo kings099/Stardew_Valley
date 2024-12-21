@@ -123,7 +123,7 @@ bool CharacterObjectList::pickUpObject(GameCommonObject targetObject, int object
 	}
 
 	// 如果有相同物品且物品栏该物品不是工具，则增加物品数量
-	if (index != -1 && (targetObject.type == Base)) {
+	if (index != -1 && (targetObject.type != Tool)) {
 		_objectList[index].count += objectCount;
 	}
 	else {
@@ -286,7 +286,7 @@ void CharacterObjectList::deleteObject(int objectCount, int targetIndex) {
 			return;
 		}
 		else {
-			_objectList[index].count -= objectCount;
+			_objectList[targetIndex].count -= objectCount;
 		}
 	}
 }
@@ -302,7 +302,7 @@ int CharacterObjectList::findObjectByObjectList(GameCommonObject targetObject) {
 	int index = -1;
 	for (int i = 0; i < _maxObjectKindCount; i++) {
 		// 只有物品不是工具才会被查找
-		if (_objectList[i].count!=0&& _objectList[i].objectNode.object->_index == targetObject.object->_index && (targetObject.type == Base)) {
+		if (_objectList[i].count!=0&& _objectList[i].objectNode.object->_name == targetObject.object->_name && (targetObject.type != Tool)) {
 			index = i;
 			break;
 		}

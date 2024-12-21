@@ -102,10 +102,8 @@ private:
 	int _currentObjectIndex;					// 当前选中的物品索引
 	bool _openObjectList;						// 是否打开物品栏
 	bool _openBox;								// 是否打开箱子
-	bool _openShop;							// 是否打开商店
+	bool _openShop;							    // 是否打开商店
 	
-
-
 	// 查找物品栏中是否有指定物品
 	GameCommonObject findObjectByName(const std::string& name);
 
