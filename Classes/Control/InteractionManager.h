@@ -54,6 +54,7 @@ public:
     void updateCurrentObject(const ObjectListNode& object){
         _currentObject = object;
     }
+
 private:
     // 当前地图对象
     GameMap* _gameMap;                          

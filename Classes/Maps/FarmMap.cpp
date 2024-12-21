@@ -21,6 +21,7 @@ FarmMap::~FarmMap() {
     if (_treeLayer) {
         _treeLayer->removeAllChildren();
     }
+    _eventDispatcher->removeEventListenersForTarget(this);
 }
 
 FarmMap* FarmMap::create(const std::string& mapFile, Node* TreeLayer, const Vec2& mapPosition)

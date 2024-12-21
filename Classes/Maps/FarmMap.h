@@ -22,12 +22,12 @@ USING_NS_CC;
 class FarmMap : public GameMap {
 public:
     FarmMap(const Vec2& mapPosition = Vec2(0, 0));
-    virtual ~FarmMap();
+    ~FarmMap();
 
     static FarmMap* create(const std::string& mapFile ,  Node* TreeLayer,const Vec2& mapPosition = Vec2(0, 0));
 
     // 重写初始化函数
-    virtual bool init(const std::string& mapFile, const Vec2& mapPosition, Node* TreeLayer);
+    bool init(const std::string& mapFile, const Vec2& mapPosition, Node* TreeLayer);
 
     // 鼠标事件的处理
     bool onMouseEvent(cocos2d::Event* event);
