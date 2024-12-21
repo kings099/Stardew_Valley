@@ -9,6 +9,8 @@
  
 # include <fstream>
 #include "CharacterAction.h"
+#include "Animal/Fish.h"
+#include "Control/TimeManager.h"
 #include"../proj.win32/Constant.h"
 
 USING_NS_CC;
@@ -20,8 +22,8 @@ CharacterAction::CharacterAction(const std::string &filename):
 {
 	if (!loadData("../GameData/CharacterActionData.dat")) {
 		for (int i = 0; i < SKILL_KIND_NUM; i++) {
-			_skillLevel[i] = 0;
-			_skillExprience[i] = 0;
+			_skillLevel[i] = 1;
+			_skillExprience[i] = 1;
 			_money = START_UP_MONEY;
 		}
 	}
@@ -40,12 +42,40 @@ void CharacterAction::onMouseDown(cocos2d::Event* event, GameCharacterAction& ga
 			gameCharacterAction = getRightButtonAction();
 		}
 		if (checkActionIsValid(gameCharacterAction, targetTilePos, interactionManager)) {
+			getObject(gameCharacterAction, interactionManager);
 			updateSkillExprience(gameCharacterAction);
 			updateSkillLevel();
 		}
 		else {
 			gameCharacterAction = NoneAction;
 		}
+	}
+}
+
+// 获取物品
+void CharacterAction::getObject(GameCharacterAction action, InteractionManager* interactionManager) {
+	TileInfo targetTileNode = getTileInfo(action, interactionManager);
+	std::string fishName = Fishs::catchFish(TimeManager::getInstance()->getCurrentSeason());
+	switch (action) {
+		case NoneAction:
+			break;
+		case Weeding:
+		case Cutting:
+		case Mining:
+			for (const auto& drop : targetTileNode.drops) {
+				int probability = rand() % 100 + 1;
+				if (probability >= drop.second.second * 100) {
+					pickUpObject(drop.first, drop.second.first);
+				}
+			}
+			break;
+		case Fishing:
+			if (fishName != "") {
+				pickUpObject(fishName, 1);
+			}
+			break;
+		default:
+			break;
 	}
 }
 
@@ -137,7 +167,7 @@ TileInfo CharacterAction::getTileInfo(GameCharacterAction action, InteractionMan
 		targetTileNode = interactionManager->GetLineTileInfo(_currentDirection, std::min(_skillLevel[Fish] + MIN_FISHING_DISTANCE, MAX_FISHING_DISTANCE), _character->getPosition());
 		break;
 	case NoneAction:
-		targetTileNode = { TileType::Other, cocos2d::Vec2(INVAVID_NUM, INVAVID_NUM),false };
+		targetTileNode = { TileConstants::TileType::Other, cocos2d::Vec2(INVAVID_NUM, INVAVID_NUM),false };
 		break;
 	default:
 		targetTileNode = interactionManager->GetLineTileInfo(_currentDirection, 1, _character->getPosition());

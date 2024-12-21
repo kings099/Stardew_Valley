@@ -3,6 +3,7 @@
 #define __TIMEMANAGER_H__
 
 #include "cocos2d.h"
+#include "../proj.win32/Constant.h"
 
 class TimeManager {
 public:
@@ -19,7 +20,7 @@ public:
     std::string getCurrentTime() const;
 
     // 获取当前季节
-    int getCurrentSeason() const;
+    Season getCurrentSeason() const;
 
     // 获取当前游戏日
     int getCurrentDay() const;
@@ -55,9 +56,8 @@ private:
     int day;            // 当前游戏日
     int hour;           // 当前小时
     int minute;         // 当前分钟
-    int season;         // 当前季节
+    Season season;         // 当前季节
     bool isDay;         // 是否为白天
 };
 
-#endif // __TIMEMANAGER_H__
-
+#endif // ! __TIMEMANAGER_H__

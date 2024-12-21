@@ -37,6 +37,11 @@ public:
     // 获取树木图层
     static void setTreeLayer(cocos2d::Node* treeLayer);
 
+    // 获取指定位置的树木精灵指针
+    Crops* getTreeAtPosition(const Vec2& tilePos) override;
+
+    MapType getType() const override { return MapType::Farm; }
+
 private:
     cocos2d::Node* _treeLayer; // 树木层节点
 
@@ -44,7 +49,6 @@ private:
     void plantTreesOnPathLayer();
     void initializeAnimals();
     void initializeFishes();
-    //std::vector <Crops*> treeSprites;  // 保存树精灵的容器
 };
 
 #endif // __FARM_MAP_H_

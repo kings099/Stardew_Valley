@@ -65,12 +65,12 @@ void GameViewController::update(float deltaTime) {
         targetCameraPosition = characterPosition;
     }
     else {
-        targetCameraPosition.x = std::max(characterPosition.x - mapPosition.x, visibleSize.width / 2);
-        targetCameraPosition.y = std::max(characterPosition.y - mapPosition.y, visibleSize.height / 2);
-        targetCameraPosition.x = std::min(targetCameraPosition.x, mapSize.width * scale - visibleSize.width / 2);
-        targetCameraPosition.y = std::min(targetCameraPosition.y, mapSize.height * scale - visibleSize.height / 2);
+        targetCameraPosition.x = std::max(characterPosition.x - mapPosition.x, mapPosition.x + visibleSize.width / 2);
+        targetCameraPosition.y = std::max(characterPosition.y - mapPosition.y, mapPosition.y + visibleSize.height / 2);
+        targetCameraPosition.x = std::min(targetCameraPosition.x, mapPosition.x + mapSize.width * scale - visibleSize.width / 2);
+        targetCameraPosition.y = std::min(targetCameraPosition.y, mapPosition.y + mapSize.height * scale - visibleSize.height / 2);
     }
-
+    //targetCameraPosition = characterPosition;
     Vec2 currentCameraPosition = camera->getPosition();
     // 以较慢的速度平滑过渡摄像机位置
     float lerpSpeed = 0.1f; // 调整此值以改变过渡的平滑度
@@ -84,6 +84,8 @@ void GameViewController::update(float deltaTime) {
 void GameViewController::setMap(GameMap* newMap) {
     if (newMap != nullptr) {
         _map = newMap;
+        auto camera = Director::getInstance()->getRunningScene()->getDefaultCamera();
+        camera->setPosition(_character->getPosition());
         CCLOG("GameViewController updated to new map: %p", _map);
     }
 }

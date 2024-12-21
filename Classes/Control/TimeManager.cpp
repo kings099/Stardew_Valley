@@ -15,7 +15,7 @@ TimeManager* TimeManager::getInstance() {
 
 // 构造函数
 TimeManager::TimeManager()
-    : timeInSeconds(6), day(1),hour(6), minute(0), season(0), isDay(true) {
+    : timeInSeconds(6), day(1),hour(6), minute(0), season(Spring), isDay(true) {
     // 初始化时间（从第1天的6:00开始）
     updateTime();
 }
@@ -52,7 +52,7 @@ std::string TimeManager::getCurrentTime() const {
 }
 
 // 获取当前季节
-int TimeManager::getCurrentSeason() const {
+Season TimeManager::getCurrentSeason() const {
     return season;
 }
 
@@ -103,7 +103,7 @@ void TimeManager::updateDayNightCycle() {
 // 更新季节
 void TimeManager::updateSeason() {
     // 每91天是一个季节变化 (1年 = 4季节，每季节7天)
-    season = (day - 1) / DAYS_IN_A_SEASON % 4;  // 4季节循环：0 Spring, 1 Summer, 2 Fall, 3 Winter
+    season = static_cast<Season>((day - 1) / DAYS_IN_A_SEASON % 4);  // 4季节循环：0 Spring, 1 Summer, 2 Fall, 3 Winter
 }
 
 

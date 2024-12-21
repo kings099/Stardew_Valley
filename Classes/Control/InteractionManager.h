@@ -12,6 +12,7 @@
 
 #include "cocos2d.h"
 #include "Maps/GameMap.h"
+#include "Maps/FarmMap.h"
 #include "../proj.win32/Constant.h"
 #include "Crops/Crops.h"
 #include <vector>
@@ -34,9 +35,6 @@ public:
     // 更新角色周围的瓦片信息
     void updateSurroundingTiles(cocos2d::Vec2& world_pos);
 
-    // 判断指定瓦片位置是否为不可通行区域
-    bool isCollidableAtPos(const cocos2d::Vec2& tilePos);
-
     // 检查角色是否站在传送点上
     bool checkTeleport(const cocos2d::Vec2& worldPos, std::string& targetMapFile);
 
@@ -46,17 +44,31 @@ public:
     // 获取角色周围的瓦片信息
     const std::vector<TileInfo>& getSurroundingTiles() const;
 
+    // 执行对应地块动画
     void ActionAnimation(GameCharacterAction action, const Vec2& TilePos);
 
     // 获取角色前方第n格地块信息
-    const TileInfo& GetLineTileInfo(Direction dir, int distance, const Vec2& WroldPos);
+    const TileInfo GetLineTileInfo(Direction dir, int distance, const Vec2& WroldPos);
 
 private:
-    GameMap* _gameMap;                          // 当前地图对象的引用
+    GameMap* _gameMap;                          // 当前地图对象
+
     std::vector<TileInfo> _surroundingTiles;    // 储存角色周围 9 格瓦片的信息
 
+    // 判断指定瓦片位置是否为不可通行区域
+    bool isCollidableAtPos(const cocos2d::Vec2& tilePos);
+
     // 获取某个瓦片的地块信息
-    const TileInfo& GetTileInfoAt(const Vec2& WroldPos);
+    const TileInfo GetTileInfoAt(const Vec2& WroldPos);
+
+    // 某个位置播放砍树动画（多态实现要求地图是Farmmap类）
+    void getTreeAndChopAt(const Vec2& tilePos);
+
+    // 放置物品的方法
+    bool placeObjectAtTile(const cocos2d::Vec2& tilePos);
+
+    // 获取矿石信息
+    void InteractionManager::GetMineInfo(int MineGID, TileInfo& tile);
 };
 
 #endif // INTERACTION_MANAGER_H

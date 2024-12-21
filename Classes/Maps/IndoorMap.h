@@ -29,15 +29,7 @@ public:
     // 初始化函数
     virtual bool init(const std::string& mapFile, const Vec2& mapPosition);
 
-    // 绝对坐标到瓦片坐标的转换
-    virtual Vec2 absoluteToTile(const Vec2& pixelPoint);
-
-    // 鼠标事件处理
-    bool onMouseEvent(cocos2d::Event* event);
-
-    // 获取某GID图块的属性
-    cocos2d::ValueMap getTilePropertiesForGID(int GID);
-
+    MapType getType() const override { return MapType::Farm; }
 };
 
 #endif // __INDOOR_MAP_H_

@@ -1,28 +1,27 @@
 /****************************************************************
  * Project Name:  Stardew_Valley
- * File Name:     IndoorMap.cpp
- * File Function: 初始化室内地图
+ * File Name:     MineMap.cpp
+ * File Function: 初始化矿洞地图
  * Author:        胡宝怡
- * Update Date:   2024/12/4
+ * Update Date:   2024/12/20
  * License:       MIT License
  ****************************************************************/
-
-#include "IndoorMap.h"
+#include "MineMap.h"
 
 USING_NS_CC;
 
-IndoorMap::IndoorMap(const Vec2& mapPosition)
+MineMap::MineMap(const Vec2& mapPosition)
     : GameMap(mapPosition) {}
 
 
-IndoorMap::~IndoorMap()
+MineMap::~MineMap()
 {
     _eventDispatcher->removeEventListenersForTarget(this);
 }
 
-IndoorMap* IndoorMap::create(const std::string& mapFile, const Vec2& mapPosition)
+MineMap* MineMap::create(const std::string& mapFile, const Vec2& mapPosition)
 {
-    IndoorMap* ret = new IndoorMap(mapPosition);
+    MineMap* ret = new MineMap(mapPosition);
     if (ret && ret->init(mapFile, mapPosition)) {
         ret->autorelease();
         return ret;
@@ -33,7 +32,7 @@ IndoorMap* IndoorMap::create(const std::string& mapFile, const Vec2& mapPosition
     }
 }
 
-bool IndoorMap::init(const std::string& mapFile, const Vec2& mapPosition)
+bool MineMap::init(const std::string& mapFile, const Vec2& mapPosition)
 {
     // 调用父类的初始化方法
     if (!GameMap::init(mapFile, mapPosition)) {
@@ -45,5 +44,4 @@ bool IndoorMap::init(const std::string& mapFile, const Vec2& mapPosition)
 
     return true;
 }
-
 

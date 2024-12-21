@@ -16,6 +16,7 @@
 #include "Classes/MenuImage/HoverMenuItemImage.h"
 #include "Classes/Layer/PlacementMarkerLayer.h"
 #include "Classes/Box/Box.h"
+#include "Store/Store.h"
 #include "../proj.win32/Constant.h"
 
 class UILayer : public cocos2d::Layer {
@@ -47,6 +48,9 @@ public:
 	// 初始化技能板
 	void initializeSkillBoard();
 
+	// 初始化商店
+	void initializeShop();
+
 	// 更新物品栏
 	void updateObjectList();
 
@@ -67,6 +71,7 @@ public:
 
 private:
 	Character* _character;															// 角色指针
+	Store *_store;																	// 商店类
 	cocos2d::Size _visibleSize;														// 可见区域的大小
 	cocos2d::Label* _timeLabel1;													// 显示星期和日期的标签指针
 	cocos2d::Label* _timeLabel2;													// 显示白天/晚上和小时的标签指针
@@ -75,20 +80,24 @@ private:
 	cocos2d::Sprite* _openedObjectListLayer;										// 物品栏打开状态图片指针
 	cocos2d::Sprite* _boxObjectListLayer;											// 箱子物品栏图片指针
 	cocos2d::Sprite* _skillLevelBoardLayer;											// 技能板指针
-	ObjectImageInfo _closedObjectSpriteImage[OBJECT_LIST_COLS];						// 物品栏关闭时显示的物品图片指针
-	ObjectImageInfo _openedObjectSpriteImage[OBJECT_LIST_COLS * OBJECT_LIST_ROWS];	// 物品栏打开时显示的物品图片指针
-	ObjectImageInfo _boxObjectSpriteImage[OBJECT_LIST_COLS];						// 箱子物品图片指针
+	cocos2d::Sprite* _shopLayer;													// 商店指针
 	cocos2d::Sprite* _selectObjectSpriteMarker[OBJECT_LIST_COLS];					// 选中物品的标记指针(关闭状态的物品栏）
 	cocos2d::Sprite* _skillLevelLayer[SKILL_KIND_NUM * SKILL_LEVEL_NUM];			// 技能等级指针
 	cocos2d::Sprite* _nearestPlacementMarker;										// 最近放置标记指针
+	ObjectImageInfo _closedObjectSpriteImage[OBJECT_LIST_COLS];						// 物品栏关闭时显示的物品图片指针
+	ObjectImageInfo _openedObjectSpriteImage[OBJECT_LIST_COLS * OBJECT_LIST_ROWS];	// 物品栏打开时显示的物品图片指针
+	ObjectImageInfo _boxObjectSpriteImage[OBJECT_LIST_COLS];						// 箱子物品图片指针
 	ObjectImageInfo _selectedObjectImage;											// 当前选中的物品图片对象
+	StoreObjectInfo _storeObjectInfo[PRODUCE_KIND_NUM_EACH_DAY];				    // 商店物品信息指针
 	HoverMenuItemImage* _deleteObjectButton;										// 删除物品按钮
 	HoverMenuItemImage* _closeObjectListButton;										// 关闭物品栏按钮
+	HoverMenuItemImage* _sellObjectButton;											// 出售物品按钮
 	HoverMenuItemImage* _exitButton;												// 退出按钮
 	PlacementMarkerLayer* _placementMarkerLayer;									// 放置标记层类指针
 	bool _objectListStatus;															// 物品栏状态
 	bool _lastObjectListStatus;														// 上一次物品栏状态
 	bool _boxObjectListStatus;														// 是否打开箱子
+	bool _storeStatus;																// 商店状态
 	int _lastSelectedObjectIndex;													// 上一次物品栏索引
 	Location _startLocation;														// 物品移动起始位置属性
 	// 创建物品图片 
@@ -98,7 +107,16 @@ private:
 	void setObjectImagePosition(const ObjectImageInfo& objectImageInfo, const cocos2d::Vec2& position);
 
 	// 设置物品图片是否可见
-	void setObjectImageVisible(ObjectImageInfo& objectImageInfo, bool visible);
+	void setObjectImageVisible(const ObjectImageInfo& objectImageInfo, bool visible);
+
+	// 创建商店物品信息
+	void createStoreObjectInfo(StoreObjectInfo& storeObjectInfo, const std::string spriteFileName,const std::string spriteName, const int price);
+
+	// 设置商店物品图片位置
+	void setStoreObjectInfoPosition(const StoreObjectInfo& storeObjectInfo, const cocos2d::Vec2& position);
+
+	// 设置商店物品图片是否可见
+	void setStoreObjectInfoVisible(const StoreObjectInfo& storeObjectInfo, bool visible);
 
 	// 寻找最近可放置坐标
 	cocos2d::Vec2 findNearestPoint(cocos2d::Sprite* objectSprite);
@@ -114,8 +132,6 @@ private:
 
 	// 关闭回调
 	void menuCloseCallback(cocos2d::Ref* pSender);
-
-
 };
 
 #endif // !_UILAYER_H_
