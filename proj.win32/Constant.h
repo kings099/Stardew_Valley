@@ -22,6 +22,8 @@ constexpr int LARGE_RESOLUTION_HEIGHT = 1080;                               // �
 constexpr float FRAME_RATE = 60.0f;                                         // 游戏帧率
 const std::string APPLICATION_TITLE = u8"星露谷物语 Stardew Valley";         // 游戏应用标题
 
+// 颜色相关设置
+const cocos2d::Color4B HLAFBLACK = cocos2d::Color4B(0, 0, 0, 200);         // 半透明黑色
 
 //游戏登录界面相关设置
 constexpr float VISIBLE_SIZE_RATIO_X = 1.0f;                               // 横向屏幕宽度比例因子（常量，默认1.0）

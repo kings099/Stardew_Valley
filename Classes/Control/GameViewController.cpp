@@ -37,7 +37,6 @@ bool GameViewController::init(Character* character, GameMap* gamemap) {
     _character = character;
     _map = gamemap;
     _darknessMask = nullptr;
-    _circleHole = nullptr;
 
     return true;
 }
@@ -55,13 +54,6 @@ void GameViewController::update(float deltaTime) {
     // 地图大小
     Size mapSize = _map->getMapSize();
 
-    // 更新遮罩位置
-    if (_darknessEnabled && _circleHole && _character) {
-        // 更新透明圆的位置
-        auto characterPosition = _character->getPosition();
-        _circleHole->clear();
-        _circleHole->drawSolidCircle(characterPosition, 150.0f, 0, 50, cocos2d::Color4F(0, 0, 0, 0));
-    }
 
     // 获取摄像机
     auto camera = Director::getInstance()->getRunningScene()->getDefaultCamera();
@@ -137,7 +129,7 @@ void GameViewController::enableDarknessEffect() {
     }
 
     // 创建一个半透明的黑色 LayerColor
-    _darknessMask = cocos2d::LayerColor::create(cocos2d::Color4B(0, 0, 0, 200));
+    _darknessMask = cocos2d::LayerColor::create(HLAFBLACK);
     if (_map) {
         _map->addChild(_darknessMask, _map->getLocalZOrder() + 1); // 添加到地图节点上，层级高于地图内容
     }

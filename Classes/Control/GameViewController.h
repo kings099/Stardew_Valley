@@ -27,10 +27,11 @@ public:
 
 private:
     Character* _character;  // 角色对象
+
     GameMap* _map;      // 地图对象
+
     // 黑暗效果相关成员
     cocos2d::LayerColor* _darknessMask;  // 黑色遮罩层
-    cocos2d::DrawNode* _circleHole;     // 圆形透明区域
     bool _darknessEnabled;              // 黑暗效果是否启用
 
     // 构造函数

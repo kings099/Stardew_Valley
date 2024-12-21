@@ -95,15 +95,6 @@ bool MapSwitchManager::switchMap(const std::string& newMapFile, Vec2& teleportPO
     return true;
 }
 
-Vec2 MapSwitchManager::getTargetPositionByID(int teleportID, GameMap* newMap) {
-    //auto allTeleportTiles = newMap->getAllTeleportTiles();
-    //for (const auto& tile : allTeleportTiles) {
-    //    if (tile.properties["teleportID"].asInt() == teleportID) {
-    //        return tile.position;
-    //    }
-    //}
-    return Vec2(0,0);
-}
 
 
 
