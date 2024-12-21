@@ -33,10 +33,10 @@ public:
     void setGrowthStage(int stage);
 
     // 获取农作物类型
-    std::string getType() const { return type; }
+    std::string getType() const { return _type; }
 
     // 获取当前生长阶段
-    int getGrowthStage() const { return growthStage; }
+    int getGrowthStage() const { return _growthStage; }
 
     // 新增：施肥函数
     void fertilize();
@@ -45,7 +45,7 @@ public:
     void checkPests();     // 检查病虫害
     void treatPests();     // 治疗病虫害
 
-    static int playerLevel; // 人物等级（静态变量）
+    
 
     // 其他成员函数和变量
     static void setPlayerLevel(int level); // 设置人物等级
@@ -55,31 +55,33 @@ public:
 
     static void setSeason(Season season); // 设置季节
     static Season getSeason();           // 获取当前季节
-    bool isRemoved = false;
+    bool _isRemoved = false;
+    static int _playerLevel; // 人物等级（静态变量）
 
 private:
-    bool isFertilized;         //是否施肥
-    std::string type;          // 农作物类型
-    int growthStage;           // 当前生长阶段
-    int maxGrowthStage;        // 最大生长阶段
-    float growthTimer;         // 生长计时器
-    bool isWatered;            // 是否被浇水
-    int daysWithoutWater;       //没有被浇水的天数
-    bool hasPests;         // 标记是否有病虫害
-    float pestProbability; // 感染病虫害的概率
+    bool _isFertilized;         //是否施肥
+    std::string _type;          // 农作物类型
+    int _growthStage;           // 当前生长阶段
+    int _maxGrowthStage;        // 最大生长阶段
+    float _growthTimer;         // 生长计时器
+    bool _isWatered;            // 是否被浇水
+    int _daysWithoutWater;       //没有被浇水的天数
+    bool _hasPests;         // 标记是否有病虫害
+    float _pestProbability; // 感染病虫害的概率
+    cocos2d::Sprite* _sprite;   // 农作物的显示精灵
     // 静态成员：季节和生长周期表
-    static Season currentSeason;
-    static std::unordered_map<std::string, std::unordered_map<Season, float>> growthCycles;
+    static Season _currentSeason;
+    static std::unordered_map<std::string, std::unordered_map<Season, float>> _growthCycles;
 
     // 用于存储不同季节下农作物成熟阶段的图片
-    static std::unordered_map<std::string, std::unordered_map<Season, std::string>> matureTextures;
+    static std::unordered_map<std::string, std::unordered_map<Season, std::string>> _matureTextures;
 
     // 静态资源映射表
-    static std::unordered_map<std::string, std::vector<std::string>> resourceMap;
+    static std::unordered_map<std::string, std::vector<std::string>> _resourceMap;
 
     // 加载资源表
     static void initializeResourceMap();
-    cocos2d::Sprite* sprite;   // 农作物的显示精灵
+   
 };
 
 #endif // __CROP_H__
