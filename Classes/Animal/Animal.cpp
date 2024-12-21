@@ -261,18 +261,12 @@ void Animal::playDirectionAnimation(const std::string& direction, int step) {
 
 //设置当前动物随机移动的方向
 void Animal::setRandomMovement(float deltaTime) {
-    // 随机选择一个方向
-    int a;
-    if (this->_type == "chicken") {
-         a = 8;
+    static bool seeded = false;
+    if (!seeded) {
+        srand(static_cast<unsigned int>(time(0)));
+        seeded = true;
     }
-    else if (this->_type == "cow") {
-        a = 7;
-    }
-    else {
-        a = 3;
-    }
-    static int direction = (rand()+a) % 4;  // 0 = up, 1 = down, 2 = left, 3 = right
+    static int direction = (rand()) % 4;  // 0 = up, 1 = down, 2 = left, 3 = right
     static int steps = 0;  // 记录走的步数
     float stepSize = 2.0f;  // 每步移动的距离
 

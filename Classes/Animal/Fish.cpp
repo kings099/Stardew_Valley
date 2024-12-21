@@ -200,11 +200,11 @@ std::string Fishs::catchFish(const Season season) {
 
     // 获取当前季节的鱼类列表
     const std::vector<std::string>& fishList = _seasonFishMap[season];
-    // 调试打印鱼类列表
-    CCLOG("Fish list for season %d:", season);
-    for (const auto& fish : fishList) {
-        CCLOG(" - %s", fish.c_str());
-    }
+    //// 调试打印鱼类列表
+    //CCLOG("Fish list for season %d:", season);
+    //for (const auto& fish : fishList) {
+    //    CCLOG(" - %s", fish.c_str());
+    //}
     // 小概率不返回鱼
     if (rand() % 100 < FAIL_TO_GET_FISH) {  // 10%的概率不返回鱼
         CCLOG("No fish caught in this season.");
@@ -212,9 +212,7 @@ std::string Fishs::catchFish(const Season season) {
     }
 
     // 随机选择一种鱼
-    int a = rand();
-    CCLOG("rand rand rand %d",a);
-    int randomIndex = a%fishList.size();
+    int randomIndex = rand()%fishList.size();
 
     std::string fishName = fishList[randomIndex];
 
