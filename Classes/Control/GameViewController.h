@@ -31,6 +31,9 @@ private:
 
     GameViewController();  // 构造函数，接受角色对象
 
+    //视判断辅助函数
+    float GameViewController::clamp(float value, float minVal, float maxVal);
+
     // 初始化方法
     bool init(Character* character, GameMap* gamemap);
 };

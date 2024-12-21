@@ -55,8 +55,11 @@ void GameViewController::update(float deltaTime) {
     // 获取当前缩放比例
     float scale = _map->getScale();
 
+
     // 获取屏幕可视区域大小
     auto visibleSize = Director::getInstance()->getVisibleSize();
+
+    CCLOG("map position:%f,%f", mapPosition.x, mapPosition.y);
 
     // 计算摄像机应该的位置：确保角色始终处于屏幕中央且限制摄像机位置确保不超出地图的边界
     Vec2 targetCameraPosition;
@@ -65,10 +68,19 @@ void GameViewController::update(float deltaTime) {
         targetCameraPosition = characterPosition;
     }
     else {
-        targetCameraPosition.x = std::max(characterPosition.x - mapPosition.x, mapPosition.x + visibleSize.width / 2);
-        targetCameraPosition.y = std::max(characterPosition.y - mapPosition.y, mapPosition.y + visibleSize.height / 2);
-        targetCameraPosition.x = std::min(targetCameraPosition.x, mapPosition.x + mapSize.width * scale - visibleSize.width / 2);
-        targetCameraPosition.y = std::min(targetCameraPosition.y, mapPosition.y + mapSize.height * scale - visibleSize.height / 2);
+        float idealX = characterPosition.x;
+        targetCameraPosition.x = clamp(
+            idealX,
+            mapPosition.x + visibleSize.width / 2.0f,
+            mapPosition.x + mapSize.width * scale - visibleSize.width / 2.0f
+        );
+
+        float idealY = characterPosition.y;
+        targetCameraPosition.y = clamp(
+            idealY,
+            mapPosition.y + visibleSize.height / 2.0f,
+            mapPosition.y + mapSize.height * scale - visibleSize.height / 2.0f
+        );
     }
     //targetCameraPosition = characterPosition;
     Vec2 currentCameraPosition = camera->getPosition();
@@ -84,9 +96,13 @@ void GameViewController::update(float deltaTime) {
 void GameViewController::setMap(GameMap* newMap) {
     if (newMap != nullptr) {
         _map = newMap;
-        auto camera = Director::getInstance()->getRunningScene()->getDefaultCamera();
-        camera->setPosition(_character->getPosition());
         CCLOG("GameViewController updated to new map: %p", _map);
     }
+}
+
+//辅助函数
+float GameViewController::clamp(float value, float minVal, float maxVal)
+{
+    return std::max(std::min(value, maxVal), minVal);
 }
 
