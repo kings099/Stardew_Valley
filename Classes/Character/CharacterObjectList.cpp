@@ -19,7 +19,9 @@ CharacterObjectList::CharacterObjectList() :
 	_maxObjectKindCount(OBJECT_LIST_ROWS*OBJECT_LIST_COLS),
 	_currentObjectIndex(0),
 	_openObjectList(false),
-	_openBox(false)
+	_openBox(false),
+	_openShop(false),
+	_pickUpCallback(nullptr)
 {
 	if (!loadData("../GameData/CharacterObjectListData.dat")) {
 		// 初始化物品栏
@@ -41,6 +43,7 @@ CharacterObjectList::CharacterObjectList() :
 void CharacterObjectList::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* event) {
 	static bool isEKeyEnabled = true;
 	static bool isRKeyEnabled = true;
+	static bool isTKeyEnabled = true;
 	// 按下数字键,-和=键时切换物品栏
 	if (!_openObjectList) {
 		if (keyCode >= EventKeyboard::KeyCode::KEY_1 && keyCode <= EventKeyboard::KeyCode::KEY_9) {
@@ -64,13 +67,25 @@ void CharacterObjectList::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* ev
 	if (keyCode == EventKeyboard::KeyCode::KEY_E && isEKeyEnabled) {
 		_openObjectList = !_openObjectList;
 		_openBox = false;
+		_openShop = false;
 		isRKeyEnabled = !isRKeyEnabled;
+		isTKeyEnabled = !isTKeyEnabled;
 	}
 	// 按下R键打开物品栏和箱子
 	if (keyCode == EventKeyboard::KeyCode::KEY_R && isRKeyEnabled) {
 		_openObjectList = !_openObjectList;
 		_openBox = !_openBox;
+		_openShop = false;
 		isEKeyEnabled = !isEKeyEnabled;
+		isTKeyEnabled = !isTKeyEnabled;
+	}
+	// 按下T建打开物品栏和商店
+	if (keyCode == EventKeyboard::KeyCode::KEY_T && isTKeyEnabled) {
+		_openObjectList = !_openObjectList;
+		_openBox = false;
+		_openShop = !_openShop;
+		isEKeyEnabled = !isEKeyEnabled;
+		isRKeyEnabled = !isRKeyEnabled;
 	}
 }
 
@@ -213,6 +228,11 @@ ObjectListNode CharacterObjectList::getCurrentObject() {
 	return _objectList[_currentObjectIndex];
 }
 
+// 获取当前选中物品的名称
+std::string CharacterObjectList::getCurrentObjectName() {
+	return _objectList[_currentObjectIndex].objectNode.object->_name;
+}
+
 // 获取物品栏状态
 bool CharacterObjectList::getObjectListStatus() {
 	return _openObjectList;
@@ -221,6 +241,11 @@ bool CharacterObjectList::getObjectListStatus() {
 // 获取箱子是否打开
 bool CharacterObjectList::getBoxStatus() {
 	return _openBox;
+}
+
+// 获取商店是否打开
+bool CharacterObjectList::getStoreStatus() {
+	return _openShop;
 }
 
 // 查找指定位置的物品信息

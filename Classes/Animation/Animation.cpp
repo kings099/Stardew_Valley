@@ -8,7 +8,7 @@
  ****************************************************************/
 #include "Animation.h"
 
-// 通用加载帧方法
+ // 通用加载帧方法
 Vector<SpriteFrame*> AnimationHelper::loadFrames(const std::string& basePath, int frameCount, const Rect& frameRect) {
     Vector<SpriteFrame*> frames;
     for (int i = 1; i <= frameCount; ++i) {
@@ -105,6 +105,37 @@ void AnimationHelper::playStoneBreakingAnimation(const Vec2& position, TMXTiledM
     auto frames = loadFrames("../Resources/Animations/stone_break/stone_break_", 5, Rect(0, 0, 133, 136));
     if (frames.empty()) {
         CCLOG("Error: No frames loaded for stone breaking animation");
+        tempSprite->removeFromParent();
+        return;
+    }
+
+    auto animation = Animation::createWithSpriteFrames(frames, 0.2f);
+    auto animate = Animate::create(animation);
+    auto removeSelf = CallFunc::create([tempSprite]() {
+        tempSprite->removeFromParent();
+        });
+
+    auto sequence = Sequence::create(animate, removeSelf, nullptr);
+    tempSprite->runAction(sequence);
+}
+
+// 播放除树枝动画
+void AnimationHelper::playChopingBranchAnimation(const Vec2& position, TMXTiledMap* farmMap) {
+    CCLOG("Playing stone breaking animation at position (%f, %f)...", position.x, position.y);
+
+    auto tempSprite = Sprite::create();
+    if (tempSprite == nullptr) {
+        CCLOG("Error: Failed to create sprite for stone breaking animation.");
+        return;
+    }
+    tempSprite->setPosition(position);
+    tempSprite->setAnchorPoint(Vec2(0.5f, 0.5f));
+    farmMap->addChild(tempSprite, ANIMATION_LAYER_GRADE);
+    tempSprite->setScale(BRANCH_RATIO);
+
+    auto frames = loadFrames("../Resources/Animations/Branch/branch_", 6, Rect(0, 0, 40, 40));
+    if (frames.empty()) {
+        CCLOG("Error: No frames loaded for  animation");
         tempSprite->removeFromParent();
         return;
     }

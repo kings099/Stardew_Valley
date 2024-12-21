@@ -62,6 +62,7 @@ constexpr int START_UP_MONEY = 500;                                         // �
 // 商店相关设置
 constexpr int PRODUCE_KIND_NUM_EACH_DAY = 4;                                // 每日出售的商品种类数量
 constexpr int MAX_PRODUCT_COUNT_EACH_DAY = 5;                               // 每日出售的一种商品的最大数量
+constexpr int PRODUCT_ATTR_NUM = 3;                                         // 商品属性数量
 constexpr float INCREASE_RATE_BY_SEASON = 1.2f;                             // 商品价格上涨比例(季节)
 constexpr float DISCOUNT_RATE_BY_SEASON = 0.8f;                             // 商品价格下跌比例(季节)
 
@@ -81,8 +82,9 @@ constexpr int TOWN_TELE_X = 1;                                              // �
 constexpr int TOWN_TELE_Y = 91;                                             // 小镇地图传送位置
 constexpr int MINE_CREAT_X = 1080;                                          // 矿洞地图的创建位置
 constexpr int MINE_CREAT_Y = 1120;                                          // 矿洞地图的创建位置
-constexpr int MINE_TELE_X = 1;                                              // 农场室内地图传送位置
-constexpr int MINE_TELE_Y = 5;                                             // 农场室内地图传送位置
+constexpr int MINE_TELE_X = 1;                                              // 农场室内地图传送X坐标
+constexpr int MINE_TELE_Y = 5;                                              // 农场室内地图传送Y坐标
+
 // 地图图块相关
 namespace TileConstants {
     constexpr int DRY_FARM_TILE_GID = 2040;                                     // 干燥耕地效果动画图块GID
@@ -159,14 +161,22 @@ constexpr int SKILL_LEVEL_START_X = 417;                                    // �
 constexpr int SKILL_LEVEL_START_Y = 456;                                    // 技能栏起始位置的Y坐标
 constexpr int OBJECT_BOX_START_X = 729;                                     // 箱子起始位置的X坐标
 constexpr int OBJECT_BOX_START_Y = 648;                                     // 箱子起始位置的Y坐标
-constexpr int OBJECT_LIST_NODE_HORIZONTAL_INTERVAL = 42;					// 物品栏物品格子水平间距
-constexpr int OBJECT_LIST_NODE_VERTICAL_INTERVAL = 42;						// 物品栏物品格子垂直间距
+constexpr int OBJECT_STORE_IMAGE_START_X = 1410;                            // 商店售卖物品图片起始位置的X坐标
+constexpr int OBJECT_STORE_IMAGE_START_Y = 603;                             // 商店售卖物品图片起始位置的Y坐标
+constexpr int OBJECT_STORE_IMAGE_NAME_HORIZONTAL_INTERVAL = 102;	        // 商店售卖物品图片名称水平间距
+constexpr int OBJECT_STORE_NAME_PRICE_HORIZONTAL_INTERVAL = 130;			// 商店售卖物品名称和价格水平间距
+constexpr int OBJECT_LIST_NODE_HORIZONTAL_INTERVAL = 42;					// 物品格子水平间距
+constexpr int OBJECT_LIST_NODE_VERTICAL_INTERVAL = 42;						// 物品格子垂直间距
 constexpr float OBJECT_NODE_SCALE = 2.0f;									// 物品缩放比例
 constexpr float BUTTON_SCALE = 2.0f;										// 按钮缩放比例
 constexpr int OPEN_OBJIEC_LIST_DELETE_BUTTON_LEFT_BOUDARY = 1272;			// 物品栏删除按钮左边界
 constexpr int OPEN_OBJIEC_LIST_DELETE_BUTTON_RIGHT_BOUDARY = 1298;			// 物品栏删除按钮右边界
 constexpr int OPEN_OBJIEC_LIST_DELETE_BUTTON_TOP_BOUDARY = 512;				// 物品栏删除按钮上边界
 constexpr int OPEN_OBJIEC_LIST_DELETE_BUTTON_BOTTOM_BOUDARY = 568;			// 物品栏删除按钮下边界
+constexpr int OPEN_OBJIEC_LIST_SELL_BUTTON_LEFT_BOUDARY = 1472;			    // 物品栏出售按钮左边界
+constexpr int OPEN_OBJIEC_LIST_SELL_BUTTON_RIGHT_BOUDARY = 1600;			// 物品栏出售按钮右边界
+constexpr int OPEN_OBJIEC_LIST_SELL_BUTTON_TOP_BOUDARY = 328;				// 物品栏出售按钮上边界
+constexpr int OPEN_OBJIEC_LIST_SELL_BUTTON_BOTTOM_BOUDARY = 392;			// 物品栏出售按钮下边界
 
 //NPC求婚对话框相关设置
 const float DIALOG_WIDTH_RATIO = 0.5f;                                      // 对话框宽度占屏幕宽度的比例
@@ -197,12 +207,14 @@ constexpr float ANGRY_ICON_RATIO = 0.8f;                                        
 
 //鱼类
 constexpr float FISH_RATIO = 1.0f;                                              //鱼的缩放比例
+constexpr float FAIL_TO_GET_FISH = 0.1f;                                        //钓不到鱼的概率
 
 //动画类
 constexpr float WOOD_CUT_RATIO = 0.3f;                                          // 砍木桩动画的缩放比例
 constexpr float WEEDING_RATIO = 0.4f;                                           // 除草动画的缩放比例
 constexpr float STONE_BREAK_RATIO = 0.2f;                                       // 碎石动画的缩放比例
-constexpr float WATER_RATIO = 0.8f;                                             // 碎石动画的缩放比例
+constexpr float WATER_RATIO = 0.8f;                                             // 浇水动画的缩放比例
+constexpr float BRANCH_RATIO = 0.5f;                                            // 砍树枝动画的缩放比例
 
 // 地图类型设置
 enum class MapType {
@@ -272,7 +284,8 @@ enum ObjectListNodeStatus {
 enum LocationStatus {
     ClosedObjectList,		// 物品栏关闭
     OpenedObjectList,		// 物品栏打开
-    OpenedBoxList			// 箱子列表打开
+    OpenedBoxList,			// 箱子列表打开
+    OpenedShopList 		// 商店列表打开
 };
 
 
@@ -322,6 +335,7 @@ struct Location {
 struct ObjectImageInfo {
     cocos2d::Sprite* sprite; // 物品图片
     cocos2d::Label* label;   // 物品数量标签
+    
 
     ObjectImageInfo() :
         sprite(nullptr),
@@ -336,6 +350,33 @@ struct ObjectImageInfo {
         if (this != &other) { // 防止自我赋值
             sprite = other.sprite;
             label = other.label;
+        }
+        return *this;
+    }
+};
+
+// 商店物品信息定义
+struct StoreObjectInfo {
+    cocos2d::Sprite* sprite;     // 物品图片
+    cocos2d::Label* namelabel;   // 物品名称标签
+    cocos2d::Label* pricelabel;  // 物品价格标签
+
+    StoreObjectInfo() :
+        sprite(nullptr),
+        namelabel(nullptr),
+        pricelabel(nullptr) {
+        }
+    StoreObjectInfo(cocos2d::Sprite* sprite, cocos2d::Label* namelabel, cocos2d::Label* pricelabel) :
+        sprite(sprite),
+        namelabel(namelabel),
+        pricelabel(pricelabel) {
+    }
+
+    StoreObjectInfo& operator = (const StoreObjectInfo& other) {
+        if (this != &other) { // 防止自我赋值
+            sprite = other.sprite;
+            namelabel = other.namelabel;
+            pricelabel = other.pricelabel;
         }
         return *this;
     }
@@ -411,16 +452,16 @@ public:
     Season _season;                         // 种子生长季节
     int _harvestIndex;                      // 种子收获所得的物品索引
     int _buyPrice;                          // 种子购买价格
-    int _salePrice;                         // 种子出售价格
+    int _sellPrice;                         // 种子出售价格
 
     // 构造函数
-    GameSeedObject(const int index, const std::string& fileName, const std::string& name, const std::string& nameCN, GameObjectSkillType type, int level, Season season,  int harvestIndex, int buyPrice, int salePrice) :
+    GameSeedObject(const int index, const std::string& fileName, const std::string& name, const std::string& nameCN, GameObjectSkillType type, int level, Season season,  int harvestIndex, int buyPrice, int sellPrice) :
         GameObject(index,fileName, name,nameCN, type),
         _level(level),
         _season(season),
         _harvestIndex(harvestIndex),
         _buyPrice(buyPrice),
-        _salePrice(salePrice)
+        _sellPrice(sellPrice)
     {
     }
 };
@@ -430,8 +471,8 @@ class GameBaseObject : public GameObject {
 public:
     int _maxStorage;                            // 物品最大存储量
     int _level;                                 // 解锁物品所需等级
-    bool _sale;                                 // 是否能出售
-    int _salePrice;                             // 出售价格
+    bool _sell;                                 // 是否能出售
+    int _sellPrice;                             // 出售价格
     bool _buy;                                  // 是否能购买
     int _buyPrice;                              // 购买价格
     bool _eat;                                  // 是否可以食用
@@ -440,12 +481,12 @@ public:
     bool _synthesis;                            // 是否可以合成
     std::map<std::string, int> _ingredients;	        // 合成物品的原料
     // 构造函数
-    GameBaseObject(const int index, const std::string& fileName, const std::string& name, const std::string& nameCN, GameObjectSkillType type, int maxStorage, int level, bool sale, int salePrice, bool buy, int buyPrice, bool eat, int eatEnergy, bool place, bool synthesis, std::map<std::string, int> ingredients = {}) :
+    GameBaseObject(const int index, const std::string& fileName, const std::string& name, const std::string& nameCN, GameObjectSkillType type, int maxStorage, int level, bool sell, int sellPrice, bool buy, int buyPrice, bool eat, int eatEnergy, bool place, bool synthesis, std::map<std::string, int> ingredients = {}) :
         GameObject(index, fileName, name,nameCN, type),
         _maxStorage(maxStorage),
         _level(level),
-        _sale(sale),
-        _salePrice(salePrice),
+        _sell(sell),
+        _sellPrice(sellPrice),
         _buy(buy),
         _buyPrice(buyPrice),
         _eat(eat),
@@ -491,8 +532,8 @@ const std::vector<GameBaseObject> GAME_BASE_OBJECTS_ATTRS = {
         1,   // 解锁所需等级
         true, // 是否能出售
         120,  // 出售价格
-        false, // 是否可以购买
-        INVAVID_NUM,    // 购买价格
+        true, // 是否可以购买
+        150,    // 购买价格
         true, // 是否可以食用
         20,   // 食用恢复的能量值
         false, // 能否放置
@@ -504,8 +545,8 @@ const std::vector<GameBaseObject> GAME_BASE_OBJECTS_ATTRS = {
         1,   // 解锁所需等级
         true, // 是否能出售
         100,  // 出售价格
-        false, // 是否可以购买
-        INVAVID_NUM,    // 购买价格
+        true, // 是否可以购买
+        120,    // 购买价格
         true, // 是否可以食用
         15,   // 食用恢复的能量值
         false, // 能否放置
@@ -517,21 +558,23 @@ const std::vector<GameBaseObject> GAME_BASE_OBJECTS_ATTRS = {
         3,   // 解锁所需等级
         true, // 是否能出售
         150,  // 出售价格
-        false, // 是否可以购买
-        INVAVID_NUM,    // 购买价格
+        true, // 是否可以购买
+        180,    // 购买价格
         true, // 是否可以食用
         25,   // 食用恢复的能量值
         false, // 能否放置
         true,  // 是否可以合成
         {{"pumpkin_seed", 3}, {"Fertilizer", 1}} // 合成物品的原料
     ),
-    GameBaseObject(23,"../Resources/Objects/Base/Timber.png","Timber", "木材",Collect,99,0,true,3,false,INVAVID_NUM,false,INVAVID_NUM,false,false,{}),
-    GameBaseObject(24,"../Resources/Objects/Base/Stone.png","Stone","石头",Mine,99,0,true,5,false,INVAVID_NUM,false,INVAVID_NUM,false,false,{}),
-    GameBaseObject(25,"../Resources/Objects/Base/CopperParticle.png","CopperParticle","铜粒",Mine,99,0,true,12,false,INVAVID_NUM,false,INVAVID_NUM,false,false,{}),
+    GameBaseObject(23,"../Resources/Objects/Base/Timber.png","Timber", "木材",Collect,99,1,true,3,false,INVAVID_NUM,false,INVAVID_NUM,false,false,{}),
+    GameBaseObject(24,"../Resources/Objects/Base/Stone.png","Stone","石头",Mine,99,1,true,5,false,INVAVID_NUM,false,INVAVID_NUM,false,false,{}),
+    GameBaseObject(25,"../Resources/Objects/Base/CopperParticle.png","CopperParticle","铜粒",Mine,99,1,true,12,false,INVAVID_NUM,false,INVAVID_NUM,false,false,{}),
     GameBaseObject(26,"../Resources/Objects/Base/IronParticle.png","IronParticle","铁粒",Mine,99,2,true,25,false,INVAVID_NUM,false,INVAVID_NUM,false,false,{}),
-    GameBaseObject(27,"../Resources/Objects/Base/Copper.png","Copper","铜锭",Mine,99,0,true,120,false,INVAVID_NUM,false,INVAVID_NUM,false,true,{{"CopperParticle",10}}),
-    GameBaseObject(28,"../Resources/Objects/Base/Iron.png","Iron","铁锭",Mine,99,0,true,250,false,INVAVID_NUM,false,INVAVID_NUM,false,true,{{"IronParticle",10}}),
-    GameBaseObject(29,"../Resources/Objects/Base/Fertilizer.png","Fertilizer","肥料",Farm,99,0,true,150,false,INVAVID_NUM,false,INVAVID_NUM,false,true,{}),
+    GameBaseObject(27,"../Resources/Objects/Base/Copper.png","Copper","铜锭",Mine,99,1,true,120,false,INVAVID_NUM,false,INVAVID_NUM,false,true,{{"CopperParticle",10}}),
+    GameBaseObject(28,"../Resources/Objects/Base/Iron.png","Iron","铁锭",Mine,99,1,true,250,false,INVAVID_NUM,false,INVAVID_NUM,false,true,{{"IronParticle",10}}),
+    GameBaseObject(29,"../Resources/Objects/Base/Fertilizer.png","Fertilizer","肥料",Farm,99,2,true,150,true,INVAVID_NUM,false,INVAVID_NUM,false,true,{{"Grass",5}}),
+    GameBaseObject(30,"../Resources/Objects/Base/Grass.png","Grass","草",Collect,99,1,true,5,false,INVAVID_NUM,false,INVAVID_NUM,false,true,{}),
+
 
 GameBaseObject(30, "../Resources/Objects/Base/Bigeye.png", "Bigeye", "大眼鱼", Fish,  // 大眼鱼
    100, // 最大存储量
@@ -808,13 +851,15 @@ struct BoxNode {
 };
 
 // 商品信息定义
-struct ProductNode {
+struct  ProductNode {
     GameCommonObject product;	// 商品信息
     int count;					// 商品数量
     int totalPrice;				// 商品价格
     Season discountSeason;      // 商品打折的季节
     Season increaseSeason;      // 商品涨价的季节
 };
+
+
 
 
 

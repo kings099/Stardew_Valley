@@ -149,27 +149,28 @@ const TileInfo InteractionManager::GetTileInfoAt(const Vec2& Tile_pos) {
         else if (pathProps.find("isStone") != pathProps.end() && pathProps["isStone"].asBool()) {
             tileInfo.type = TileConstants::Stone;
             tileInfo.drops.clear(); // 清空默认的 "None" 项
-            tileInfo.drops["石头"] = { TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::STONE_DROP_PROBABILITY }; // 掉落1个石头，概率为30%
+            tileInfo.drops["Stone"] = { TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::STONE_DROP_PROBABILITY }; // 掉落1个石头，概率为30%
+
         }
         // 对应树桩
         else if(pathProps.find("isWood") != pathProps.end() && pathProps["isWood"].asBool())
         {
             tileInfo.type = TileConstants::Wood;
             tileInfo.drops.clear(); // 清空默认的 "None" 项
-            tileInfo.drops["木材"] = {TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::BRANCH_DROP_PROBABILITY}; // 掉落1个木材，概率为30%
+            tileInfo.drops["Timber"] = {TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::BRANCH_DROP_PROBABILITY}; // 掉落1个木材，概率为30%
         }
         // 对应树枝
         else if (pathProps.find("isBranch") != pathProps.end() && pathProps["isWood"].asBool())
         {
             tileInfo.type = TileConstants::Branch;
             tileInfo.drops.clear(); // 清空默认的 "None" 项
-            tileInfo.drops["木材"] = { TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::BRANCH_DROP_PROBABILITY }; // 掉落1个木材，概率为30%
+            tileInfo.drops["Timber"] = { TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::BRANCH_DROP_PROBABILITY }; // 掉落1个木材，概率为30%
         }
         else if(pathProps.find("isTree") != pathProps.end() && pathProps["isTree"].asBool())
         {
             tileInfo.type = TileConstants::Tree;
             tileInfo.drops.clear(); // 清空默认的 "None" 项
-            tileInfo.drops["木材"] = { TileConstants::MUTI_DROP_QUANTITY, TileConstants::TREE_DROP_PROBABILITY }; // 掉落3个木材，概率为90%
+            tileInfo.drops["Timber"] = { TileConstants::MUTI_DROP_QUANTITY, TileConstants::TREE_DROP_PROBABILITY }; // 掉落3个木材，概率为90%
         }
     }
 
@@ -179,7 +180,7 @@ const TileInfo InteractionManager::GetTileInfoAt(const Vec2& Tile_pos) {
     if (WaterGID != 0) {
         tileInfo.type = TileConstants::Water;
     }
-    // 判断矿洞地图的矿石类型以及凋落物
+    // 判断矿洞地图的矿石类型以及掉落物
     if (_gameMap && _gameMap->getType() == MapType::Mine) {
         int MineGID = _gameMap->getTileGIDAt("ore", Tile_pos);
         GetMineInfo(MineGID, tileInfo);
@@ -214,15 +215,15 @@ void InteractionManager::GetMineInfo(int MineGID,TileInfo& tileInfo) {
     {
         tileInfo.type = TileConstants::Mine;//矿石
         tileInfo.drops.clear(); // 清空默认的 "None" 项
-        tileInfo.drops["Steel"] = { TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::MINE_DROP_PROBABILITY }; // 掉落1个铁，概率为50%
-        tileInfo.drops["石头"] = { TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::STONE_DROP_MINE_PROBABILITY };// 掉落石头 概率10%
+        tileInfo.drops["IronParticle"] = { TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::MINE_DROP_PROBABILITY }; // 掉落1个铁，概率为50%
+        tileInfo.drops["Stone"] = { TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::STONE_DROP_MINE_PROBABILITY };// 掉落石头 概率10%
         }
     else if (oreProps.find("isCopper") != oreProps.end() && oreProps["isCopper"].asBool())
     {
         tileInfo.type = TileConstants::Mine;//矿石
         tileInfo.drops.clear(); // 清空默认的 "None" 项
-        tileInfo.drops["铜粒"] = { TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::MINE_DROP_PROBABILITY }; // 掉落1个铜，概率为50%
-        tileInfo.drops["石头"] = { TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::STONE_DROP_MINE_PROBABILITY };// 掉落石头 概率10%
+        tileInfo.drops["CopperParticle"] = { TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::MINE_DROP_PROBABILITY }; // 掉落1个铜，概率为50%
+        tileInfo.drops["Stone"] = { TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::STONE_DROP_MINE_PROBABILITY };// 掉落石头 概率10%
         }
     else if (oreProps.find("isTreasure") != oreProps.end() && oreProps["isTreasure"].asBool())
     {

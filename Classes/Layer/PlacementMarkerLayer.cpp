@@ -19,7 +19,7 @@ bool PlacementMarkerLayer::init()
     if (!Layer::init()) {
         return false;
     }
-    _character = Character::getInstance("../Resources/Characters/Bear/BearDownAction1.png");
+    _character = Character::getInstance();
     return true;
 }
 
