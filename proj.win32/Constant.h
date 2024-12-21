@@ -137,6 +137,10 @@ namespace TileConstants {
         cocos2d::Vec2 tileCoord;        // 瓦片坐标
         int newGID;                     // 瓦片的新 GID
 
+        // 默认构造
+        TileChange()
+            : layerName(""), tileCoord(cocos2d::Vec2::ZERO), newGID(0) {}
+
         TileChange(const std::string& layer, const cocos2d::Vec2& coord, int gid)
             : layerName(layer), tileCoord(coord), newGID(gid) {}
     };

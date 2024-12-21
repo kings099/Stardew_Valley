@@ -39,6 +39,10 @@ bool GameMainScene::init()
     // 加载农场地图
     _farmMap = FarmMap::create("../Resources/Maps/Farm/Farm_Combat.tmx", treeLayer);
     Maplayer->addChild(_farmMap, MAP_LAYER_GRADE);
+    
+    // 加载地图存档
+    MapStateManager::getInstance().loadChangesFromFile("../GameData/MapChanges.dat");
+    _farmMap->applySavedChanges();
 
     // 加载角色
     _character = Character::getInstance();
@@ -138,5 +142,6 @@ void GameMainScene::menuCloseCallback(Ref* pSender)
     // 退出游戏
     _character->saveData();
     Box::getInstance().saveData("../GameData/BoxObjectListData.dat");
+    MapStateManager::getInstance().saveChangesToFile("../GameData/MapChanges.dat");
     Director::getInstance()->end();
 }
