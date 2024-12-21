@@ -114,17 +114,17 @@ bool CharacterObjectList::pickUpObject(GameBaseObject targetObject, int objectCo
 // TODO:设置单个物品的最大存储数量
 bool CharacterObjectList::pickUpObject(GameCommonObject targetObject, int objectCount, int targetIndex) {
 	// 查找物品栏中是否有相同物品
-	auto object = findObjectByObjectList(targetObject);
+	const int index = findObjectByObjectList(targetObject);
 	bool success = true;
 
 	// 如果没有相同物品，且物品栏已满，则返回false
-	if (object.count == 0 && checkObjectListFull()) {
+	if (index == -1 && checkObjectListFull()) {
 		success =  false;
 	}
 
 	// 如果有相同物品且物品栏该物品不是工具，则增加物品数量
-	if (object.count > 0 && (targetObject.type == Base)) {
-		object.count += objectCount;
+	if (index != -1 && (targetObject.type == Base)) {
+		_objectList[index].count += objectCount;
 	}
 	else {
 		if (targetIndex == INVAVID_NUM) {
@@ -172,16 +172,16 @@ bool CharacterObjectList::synthesisObject(GameBaseObject targetObject) {
 
 	// 寻找列表的物品原料
 	for (const auto& ingredient : targetObject._ingredients) {
-		ObjectListNode ingredientObject = findObjectByObjectList(ingredient.first);
-		if (ingredientObject.count < ingredient.second) {
+		int ingredientIndex = findObjectByObjectList(ingredient.first);
+		if (!(ingredientIndex != -1 && _objectList[ingredientIndex].count >= ingredient.second)) {
 			return false;
 		}
 	}
 
 	//合成物品
 	for (const auto& ingredient : targetObject._ingredients) {
-		ObjectListNode ingredientObject = findObjectByObjectList(ingredient.first);
-		ingredientObject.count -= ingredient.second;
+		int ingredientIndex = findObjectByObjectList(ingredient.first);
+		_objectList[ingredientIndex].count -= ingredient.second;
 	}
 	pickUpObject(targetObject, 1);
 	return true;
@@ -198,16 +198,16 @@ bool CharacterObjectList::synthesisObject(const std::string& targetObjectName) {
 
 	 // 寻找列表的物品原料
 	 for (const auto& ingredient : targetBaseObject->_ingredients) {
-		 ObjectListNode ingredientObject = findObjectByObjectList(ingredient.first);
-		 if (ingredientObject.count < ingredient.second) {
+		 int ingredientIndex = findObjectByObjectList(ingredient.first);
+		 if (!(ingredientIndex != -1 && _objectList[ingredientIndex].count >= ingredient.second)) {
 			 return false;
 		 }
 	 }
 
 	 //合成物品
 	 for (const auto& ingredient : targetBaseObject->_ingredients) {
-		 ObjectListNode ingredientObject = findObjectByObjectList(ingredient.first);
-		 ingredientObject.count -= ingredient.second;
+		 int ingredientIndex = findObjectByObjectList(ingredient.first);
+		 _objectList[ingredientIndex].count -= ingredient.second;
 	 }
 	 pickUpObject(targetObject, 1);
 	 return true;
@@ -228,28 +228,10 @@ ObjectListNode CharacterObjectList::getCurrentObject() {
 	return _objectList[_currentObjectIndex];
 }
 
-// 查找物品栏中是否有指定物品
-ObjectListNode CharacterObjectList::findObjectByObjectList(GameCommonObject targetObject) {
-	for (int i = 0; i < _maxObjectKindCount; i++) {
-		// 只有物品不是工具才会被查找
-		if (_objectList[i].count != 0 && _objectList[i].objectNode.object->_index == targetObject.object->_index && (targetObject.type == Base)) {
-			return _objectList[i];
-		}
-	}
-	// 没有找到
-	return  ObjectListNode{ {None,nullptr}, 0 ,Unselected };
+// 获取当前选中物品的名称
+std::string CharacterObjectList::getCurrentObjectName() {
+	return _objectList[_currentObjectIndex].objectNode.object->_name;
 }
-
-// 查找物品栏中是否有指定物品
-ObjectListNode CharacterObjectList::findObjectByObjectList(std::string targetObjectName) {
-	for (int i = 0; i < _maxObjectKindCount; i++) {
-		if (_objectList[i].objectNode.object != nullptr && _objectList[i].objectNode.object->_name == targetObjectName) {
-			return _objectList[i];
-		}
-	}
-	return  ObjectListNode{ {None,nullptr}, 0 ,Unselected };
-}
-
 
 // 获取物品栏状态
 bool CharacterObjectList::getObjectListStatus() {
@@ -287,9 +269,58 @@ void CharacterObjectList::setCurrentObject(int index) {
 	_currentObjectIndex = index;
 }
 
+// 丢弃指定数量的物品
+void CharacterObjectList::deleteObject(int objectCount, int targetIndex) {
+
+	if (targetIndex == INVAVID_NUM) {
+		int index = getCurrentObjectIndex();
+		if (_objectList[index].count < objectCount) {
+			return;
+		}
+		else {
+			_objectList[index].count -= objectCount;
+		}
+	}
+	else {
+		if (_objectList[targetIndex].count < objectCount) {
+			return;
+		}
+		else {
+			_objectList[index].count -= objectCount;
+		}
+	}
+}
+
 // 设置物品栏状态
 void CharacterObjectList::setObjectListStatus(bool status) {
 	_openObjectList = static_cast<bool>(status);
+}
+
+
+// 查找物品栏中是否有指定物品
+int CharacterObjectList::findObjectByObjectList(GameCommonObject targetObject) {
+	int index = -1;
+	for (int i = 0; i < _maxObjectKindCount; i++) {
+		// 只有物品不是工具才会被查找
+		if (_objectList[i].count!=0&& _objectList[i].objectNode.object->_index == targetObject.object->_index && (targetObject.type == Base)) {
+			index = i;
+			break;
+		}
+	}
+	// 没有找到
+	return index;
+}
+
+// 查找物品栏中是否有指定物品
+int CharacterObjectList::findObjectByObjectList(std::string targetObjectName) {
+	int index = -1;
+	for (int i = 0; i < _maxObjectKindCount; i++) {
+		if (_objectList[i].objectNode.object != nullptr && _objectList[i].objectNode.object->_name == targetObjectName) {
+			index = i;
+			break;
+		}
+	}
+	return index;
 }
 
 // 查找物品栏中是否有指定物品
