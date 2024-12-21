@@ -23,7 +23,8 @@ public:
 
     //砍木桩动画
     static void playWoodCuttingAnimation(const Vec2& position, TMXTiledMap* farmMap);
-
+    //砍树枝动画
+    static void playChopingBranchAnimation(const Vec2& position, TMXTiledMap* farmMap);
 private:
     // 创建帧动画的通用方法
     static Vector<SpriteFrame*> loadFrames(const std::string& basePath, int frameCount, const Rect& frameRect);

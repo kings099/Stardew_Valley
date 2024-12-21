@@ -213,7 +213,8 @@ constexpr float FAIL_TO_GET_FISH = 0.1f;                                        
 constexpr float WOOD_CUT_RATIO = 0.3f;                                          // 砍木桩动画的缩放比例
 constexpr float WEEDING_RATIO = 0.4f;                                           // 除草动画的缩放比例
 constexpr float STONE_BREAK_RATIO = 0.2f;                                       // 碎石动画的缩放比例
-constexpr float WATER_RATIO = 0.8f;                                             // 碎石动画的缩放比例
+constexpr float WATER_RATIO = 0.8f;                                             // 浇水动画的缩放比例
+constexpr float BRANCH_RATIO = 0.5f;                                            // 砍树枝动画的缩放比例
 
 // 地图类型设置
 enum class MapType {
