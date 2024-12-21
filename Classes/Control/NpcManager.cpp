@@ -39,11 +39,11 @@ NpcManager* NpcManager::getInstance() {
 // 初始化 NPC
 void NpcManager::initializeNPCs() {
     // 初始化 NPC 实例，并添加到 npcs 列表
-    NPC* npc1 = new NPC("Abigail", cocos2d::Vec2(100, 200), "../Resources/Characters/NPC/Abigail_1.png", { "../Resources/Characters/NPC/Abigail_1.png", "../Resources/Characters/NPC/Abigail_2.png" ,"../Resources/Characters/NPC/Abigail_3.png","../Resources/Characters/NPC/Abigail_4.png" });
+    NPC* npc1 = new NPC("Abigail", cocos2d::Vec2(100, 160), "../Resources/Characters/NPC/Abigail_1.png", { "../Resources/Characters/NPC/Abigail_1.png", "../Resources/Characters/NPC/Abigail_2.png" ,"../Resources/Characters/NPC/Abigail_3.png","../Resources/Characters/NPC/Abigail_4.png" });
     npc1->dialogues = {
-        "Hello, traveler!",
-        "I feel like you care about me.",
-        "Thank you for the gift!"
+        "Hello, traveler",
+        "I feel like you care about me",
+        "Thank you for the gift"
     };
     // 添加任务给 Abigail（现在奖励是好感度）
     Task* task1 = new Task("Give me a rare item from the mine.", 1, 1, 10); // 10 好感度

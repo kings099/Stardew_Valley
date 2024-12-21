@@ -39,6 +39,10 @@ public:
     int getRequiredItemId() const {
         return requiredItemId;
     }
+    // 设置任务完成状态
+    void setCompletion(bool completed) {
+        isCompleted = completed;
+    }
 
 private:
     std::string description;  // 任务描述

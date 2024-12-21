@@ -33,8 +33,8 @@ constexpr float LABEL_Y_OFFSET = 0.6f;                                     // �
 constexpr float HALF_FACTOR = 0.5f;                                        // 替代 / 2 的常量因子
 
 //NPC相关设置
-constexpr float NPC_WIDTH = 32;											    // NPC宽度
-constexpr float NPC_HEIGHT = 64;                                            // NPC高度
+constexpr float NPC_WIDTH = 16;											    // NPC宽度
+constexpr float NPC_HEIGHT =32;                                            // NPC高度
 
 
 // 移动相关设置

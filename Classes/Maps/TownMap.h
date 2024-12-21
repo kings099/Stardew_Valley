@@ -11,6 +11,7 @@
 #define TOWNMAP_H
 
 #include "GameMap.h"
+#include "Control/NPCManager.h"
 USING_NS_CC;
 
 class TownMap : public GameMap
