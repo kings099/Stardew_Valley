@@ -59,8 +59,6 @@ void GameViewController::update(float deltaTime) {
     // 获取屏幕可视区域大小
     auto visibleSize = Director::getInstance()->getVisibleSize();
 
-    CCLOG("map position:%f,%f", mapPosition.x, mapPosition.y);
-
     // 计算摄像机应该的位置：确保角色始终处于屏幕中央且限制摄像机位置确保不超出地图的边界
     Vec2 targetCameraPosition;
 
