@@ -41,37 +41,37 @@ void Crops::initializeResourceMap() {
     };
 
     //南瓜
-     resourceMap["pumpkin"] = {
-    "../Resources/Crops/Pumpkin/pumpkin_0.png",
-     "../Resources/Crops/Pumpkin/pumpkin_1.png",
-     "../Resources/Crops/Pumpkin/pumpkin_2.png",
-     "../Resources/Crops/Pumpkin/pumpkin_3.png",
-     "../Resources/Crops/Pumpkin/pumpkin_4.png",
-     "../Resources/Crops/Pumpkin/pumpkin_5.png"
+    resourceMap["pumpkin"] = {
+   "../Resources/Crops/Pumpkin/pumpkin_0.png",
+    "../Resources/Crops/Pumpkin/pumpkin_1.png",
+    "../Resources/Crops/Pumpkin/pumpkin_2.png",
+    "../Resources/Crops/Pumpkin/pumpkin_3.png",
+    "../Resources/Crops/Pumpkin/pumpkin_4.png",
+    "../Resources/Crops/Pumpkin/pumpkin_5.png"
     };
     //橡树
-     resourceMap["oak"] = {
-    "../Resources/Crops/Oak/oak_0.png",
-     "../Resources/Crops/Oak/oak_1.png",
-     "../Resources/Crops/Oak/oak_2.png",
-     "../Resources/Crops/Oak/oak_3.png"
-     };
+    resourceMap["oak"] = {
+   "../Resources/Crops/Oak/oak_0.png",
+    "../Resources/Crops/Oak/oak_1.png",
+    "../Resources/Crops/Oak/oak_2.png",
+    "../Resources/Crops/Oak/oak_3.png"
+    };
 
     //枫树
-     resourceMap["maple"] = {
-    "../Resources/Crops/Maple/maple_0.png",
-     "../Resources/Crops/Maple/maple_1.png",
-     "../Resources/Crops/Maple/maple_2.png",
-     "../Resources/Crops/Maple/maple_3.png"
-     };
+    resourceMap["maple"] = {
+   "../Resources/Crops/Maple/maple_0.png",
+    "../Resources/Crops/Maple/maple_1.png",
+    "../Resources/Crops/Maple/maple_2.png",
+    "../Resources/Crops/Maple/maple_3.png"
+    };
 
     //松树
-     resourceMap["pine"] = {
-    "../Resources/Crops/Pine/pine_0.png",
-     "../Resources/Crops/Pine/pine_1.png",
-     "../Resources/Crops/Pine/pine_2.png",
-     "../Resources/Crops/Pine/pine_3.png"
-     };
+    resourceMap["pine"] = {
+   "../Resources/Crops/Pine/pine_0.png",
+    "../Resources/Crops/Pine/pine_1.png",
+    "../Resources/Crops/Pine/pine_2.png",
+    "../Resources/Crops/Pine/pine_3.png"
+    };
 
     //普通草
     resourceMap["grass"] = {
@@ -97,18 +97,18 @@ void Crops::initializeResourceMap() {
             CCLOG(" - Texture: %s", texture.c_str());
         }
     }
-    
+
 }
 
 // 农作物的生长周期表（不同季节不同周期）
 std::unordered_map<std::string, std::unordered_map<Season, float>> Crops::growthCycles = {
     {"cauliflower", {{Season::Spring, 50.0f}, {Season::Summer, 50.0f}, {Season::Fall, 60.0f}, {Season::Winter,72.0f}}},
-    {"kale", {{Season::Spring, 30.0f}, {Season::Summer, 30.0f}, {Season::Fall, 40.0f}, {Season::Winter, 50.0f}}},
+    {"kale", {{Season::Spring, /*30*/1.0f}, {Season::Summer, 30.0f}, {Season::Fall, 40.0f}, {Season::Winter, 50.0f}}},
     {"pumpkin", {{Season::Spring, 2.0f}, {Season::Summer, 50.0f}, {Season::Fall, 60.0f}, {Season::Winter, 72.0f}}},
     {"oak", {{Season::Spring,2.0f}, {Season::Summer, 72.0f}, {Season::Fall, 96.0f}, {Season::Winter, 120.0f}}},
     {"maple", {{Season::Spring, 72.0f}, {Season::Summer, 72.0f}, {Season::Fall, 96.0f}, {Season::Winter, 120.0f}}},
     {"pine", {{Season::Spring, 72.0f}, {Season::Summer, 72.0f}, {Season::Fall, 96.0f}, {Season::Winter, 120.0f}}}
-  
+
 };
 
 // 树成熟阶段图片（不同季节的贴图）
@@ -136,7 +136,7 @@ std::unordered_map<std::string, std::unordered_map<Season, std::string>> Crops::
     {"kale", {{Season::Spring, "../Resources/Crops/Kale/kale_4.png"},
                  {Season::Summer, "../Resources/Crops/Kale/kale_4.png"},
                  {Season::Fall, "../Resources/Crops/Kale/kale_4.png"},
-                 {Season::Winter, "../Resources/Crops/Kale/kale_4.png"}} 
+                 {Season::Winter, "../Resources/Crops/Kale/kale_4.png"}}
     },
 
      {"pumpkin", {{Season::Spring, "../Resources/Crops/Pumpkin/pumpkin_5.png"},
@@ -205,19 +205,26 @@ bool Crops::init(const std::string& type, int maxGrowthStage) {
         CCLOG("Error: Failed to load sprite for type: %s", type.c_str());
         return false;
     }
-    
+
     sprite->setScale(CROP_START_RATIO);
     // 设置锚点（例如设置到底部中心点）
     sprite->setAnchorPoint(Vec2(CROP_HORIZONTAL_ANCHORPOINT, CROP_VERTICAL_ANCHORPOINT));
-    
+
 
     this->addChild(sprite);
     CCLOG("Crop initialized successfully");
+    this->schedule([this](float dt) {
+        this->updateGrowth(dt);
+        }, 0.5f, "crop_update");
     return true;
 }
 
 //更新植物的生长状态
 void Crops::updateGrowth(float deltaTime) {
+    // 检查是否被采摘
+    if (isRemoved == true) {
+        return;
+    }
     // 获取当前季节的生长周期
     float growthSpeed = 5.0f;
     if (growthCycles.find(type) != growthCycles.end()) {
@@ -246,6 +253,7 @@ void Crops::updateGrowth(float deltaTime) {
                     sprite->setScale(CROP_MATURE_RATIO);
                 }
                 CCLOG("Crop %s matured with texture: %s", type.c_str(), seasonTexture.c_str());
+                this->unschedule("crop_update");
             }
         }
         else {
@@ -258,21 +266,21 @@ void Crops::updateGrowth(float deltaTime) {
             }
         }
     }
-    // 检查是否枯萎
-    if (!isWatered) {
-        daysWithoutWater++;
-        if (daysWithoutWater >= 3) {
-            if (resourceMap.find("wilt") != resourceMap.end()) {
-                const auto& textures = resourceMap["wilt"];
-                if (!textures.empty()) {
-                    sprite->setTexture(textures[0]);
-                }
-            }
-        }
-    }
-    else {
-        daysWithoutWater = 0;
-    }
+    //// 检查是否枯萎
+    //if (!isWatered) {
+    //    daysWithoutWater++;
+    //    if (daysWithoutWater >= 3) {
+    //        if (resourceMap.find("wilt") != resourceMap.end()) {
+    //            const auto& textures = resourceMap["wilt"];
+    //            if (!textures.empty()) {
+    //                sprite->setTexture(textures[0]);
+    //            }
+    //        }
+    //    }
+    //}
+    //else {
+    //    daysWithoutWater = 0;
+    //}
     checkPests(); // 每次更新时检查病虫害
     isWatered = false; // 每次更新后重置浇水状态
 }
@@ -292,18 +300,32 @@ Season Crops::getSeason() {
 
 //检查植物是否患有病虫害
 void Crops::checkPests() {
-    if (!hasPests && CCRANDOM_0_1() < pestProbability) { // 随机概率感染病虫害
-        hasPests = true;
-        CCLOG("Crop infected with pests!");
-
-        // 更改贴图显示病虫害状态（假设有特定图片）
-        sprite->setTexture("../Resources/Crops/pests.png");
-       
+    if (isRemoved == true) {
+        return;
     }
+
+    //if (!hasPests && CCRANDOM_0_1() < pestProbability) { // 随机概率感染病虫害
+    //    hasPests = true;
+    //    CCLOG("Crop infected with pests!");
+
+    //    // 更改贴图显示病虫害状态（假设有特定图片）
+    //    sprite->setTexture("../Resources/Crops/pests.png");
+    //   
+    //}
 }
 
 //处理病虫害函数，使植物恢复正常
 void Crops::treatPests() {
+    // 检查当前指针是否为空指针，防止调用已释放的对象
+    if (isRemoved == true) {
+        return;
+    }
+
+    // 检查 sprite 是否为空指针
+    if (sprite == nullptr) {
+        CCLOG("Error: Attempt to update crop with null sprite.");
+        return;
+    }
     if (hasPests) {
         hasPests = false;
         CCLOG("Pests removed from crop!");
@@ -316,7 +338,7 @@ void Crops::treatPests() {
                 if (this->type == "maple" || this->type == "oak" || this->type == "pine") {
                     sprite->setScale(CROP_MATURE_RATIO);
                 }
-                sprite->setTexture(seasonTexture);               
+                sprite->setTexture(seasonTexture);
                 CCLOG("Restored crop to mature state with texture: %s", seasonTexture.c_str());
             }
         }
@@ -326,7 +348,7 @@ void Crops::treatPests() {
                 const auto& textures = resourceMap[type];
                 if (growthStage >= 0 && growthStage < textures.size()) {
                     sprite->setTexture(textures[growthStage]);
-                  
+
                 }
             }
         }
@@ -352,11 +374,11 @@ void Crops::waterCrop() {
 
     // 显示浇水动画
     auto waterEffect = Sprite::create("../Resources/Animations/water/water_1.png");
-    double x=sprite->getPosition().x;
+    double x = sprite->getPosition().x;
     double y = sprite->getPosition().y;
-    waterEffect->setPosition(Vec2(x, y-8));
+    waterEffect->setPosition(Vec2(x, y - 8));
     waterEffect->setScale(WATER_RATIO);
-    this->addChild(waterEffect,-1);
+    this->addChild(waterEffect, -1);
 
     // 执行动画
     waterEffect->runAction(animate);
@@ -373,11 +395,31 @@ void Crops::waterCrop() {
 
 //判断农作物是否已经成熟
 bool Crops::isReadyToHarvest() const {
+    // 检查农作物是否已经被采摘
+    if (isRemoved == true) {
+        return false;
+    }
+
+    // 检查 sprite 是否为空指针
+    if (sprite == nullptr) {
+        CCLOG("Error: Attempt to update crop with null sprite.");
+        return 0;
+    }
     return growthStage >= maxGrowthStage;
 }
 
 //设置农作物当前的成长阶段
 void Crops::setGrowthStage(int stage) {
+    // 检查当前指针是否为空指针，防止调用已释放的对象
+    if (isRemoved == true) {
+        return;
+    }
+
+    // 检查 sprite 是否为空指针
+    if (sprite == nullptr) {
+        CCLOG("Error: Attempt to update crop with null sprite.");
+        return;
+    }
     growthStage = std::min(stage, maxGrowthStage); // 确保阶段不超过最大值
     // 检查资源映射表中是否有当前农作物类型的资源
     if (growthStage == maxGrowthStage) {
@@ -403,6 +445,14 @@ void Crops::setGrowthStage(int stage) {
 
 //农作物收获时调用函数，删除当前农作物精灵
 void Crops::harvestCrop() {
+    // 检查当前指针是否为空指针，防止调用已释放的对象
+    if (this == nullptr) {
+        CCLOG("Error: Attempt to update a null crop pointer.");
+        return;
+    }
+    if (isRemoved == true) {//已经被采摘了的不能重复采摘
+        return;
+    }
     if (!canBePlanted()) { // 如果不满足条件（主要是等级检查）
         CCLOG("Crop '%s' cannot be planted due to level restriction.", type.c_str());
         return;
@@ -410,10 +460,15 @@ void Crops::harvestCrop() {
 
     if (isReadyToHarvest()) {
         CCLOG("Crop '%s' harvested successfully!", type.c_str());
-
+        this->unschedule("crop_update");
         // 安全移除父节点
         if (this->getParent()) {
             this->removeFromParent();
+            isRemoved = true;
+            /*if (this != nullptr) {
+                CCLOG("Crop EXIT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!", type.c_str());
+            }*/
+
         }
     }
     else {

@@ -55,7 +55,8 @@ public:
 
     static void setSeason(Season season); // 设置季节
     static Season getSeason();           // 获取当前季节
-    
+    bool isRemoved = false;
+
 private:
     bool isFertilized;         //是否施肥
     std::string type;          // 农作物类型
@@ -75,7 +76,7 @@ private:
 
     // 静态资源映射表
     static std::unordered_map<std::string, std::vector<std::string>> resourceMap;
-    
+
     // 加载资源表
     static void initializeResourceMap();
     cocos2d::Sprite* sprite;   // 农作物的显示精灵
