@@ -402,6 +402,8 @@ const std::map< GameCharacterAction, TileConstants::TileType> ACTION_TO_TILEMAP 
     { Weeding, TileConstants::Grass },         // 左键
     { Cutting, TileConstants::Tree },          // 左键
     { Mining, TileConstants::Stone },          // 左键
+    { Mining, TileConstants::Treasure },          // 左键
+    { Mining, TileConstants::Mine },          // 左键
     { Fishing, TileConstants::Water },         // 左键
     { Harvesting, TileConstants::Crop },       // 右键
     { Placement, TileConstants::Soil },        // 右键
