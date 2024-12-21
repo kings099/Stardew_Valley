@@ -137,6 +137,7 @@ GameCharacterAction CharacterAction::getRightButtonAction() {
 		}
 	}
 	case Seed:
+		return Seeding;
 	case Base:
 		return Placement;
 	default:

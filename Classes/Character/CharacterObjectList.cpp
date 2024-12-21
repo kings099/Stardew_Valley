@@ -44,6 +44,7 @@ void CharacterObjectList::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* ev
 	static bool isEKeyEnabled = true;
 	static bool isRKeyEnabled = true;
 	static bool isTKeyEnabled = true;
+	static bool isYKeyEnabled = true;
 	// 按下数字键,-和=键时切换物品栏
 	if (!_openObjectList) {
 		if (keyCode >= EventKeyboard::KeyCode::KEY_1 && keyCode <= EventKeyboard::KeyCode::KEY_9) {
@@ -68,24 +69,40 @@ void CharacterObjectList::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* ev
 		_openObjectList = !_openObjectList;
 		_openBox = false;
 		_openShop = false;
+		_openSynthesisTable = false;
 		isRKeyEnabled = !isRKeyEnabled;
 		isTKeyEnabled = !isTKeyEnabled;
+		isYKeyEnabled = !isYKeyEnabled;
 	}
 	// 按下R键打开物品栏和箱子
 	if (keyCode == EventKeyboard::KeyCode::KEY_R && isRKeyEnabled) {
 		_openObjectList = !_openObjectList;
 		_openBox = !_openBox;
 		_openShop = false;
+		_openSynthesisTable = false;
 		isEKeyEnabled = !isEKeyEnabled;
 		isTKeyEnabled = !isTKeyEnabled;
+		isYKeyEnabled = !isYKeyEnabled;
 	}
 	// 按下T建打开物品栏和商店
 	if (keyCode == EventKeyboard::KeyCode::KEY_T && isTKeyEnabled) {
 		_openObjectList = !_openObjectList;
 		_openBox = false;
 		_openShop = !_openShop;
+		_openSynthesisTable = false;
 		isEKeyEnabled = !isEKeyEnabled;
 		isRKeyEnabled = !isRKeyEnabled;
+		isYKeyEnabled = !isYKeyEnabled;
+	}
+	// 按下Y键打开合成表
+	if (keyCode == EventKeyboard::KeyCode::KEY_Y && isYKeyEnabled) {
+		_openObjectList = !_openObjectList;
+		_openBox = false;
+		_openShop = false;
+		_openSynthesisTable = !_openSynthesisTable;
+		isEKeyEnabled = !isEKeyEnabled;
+		isRKeyEnabled = !isRKeyEnabled;
+		isYKeyEnabled = !isYKeyEnabled;
 	}
 }
 

@@ -522,7 +522,6 @@ void UILayer::updateTimeDisplay() {
     // 获取 TimeManager 的实例
     const TimeManager* timeManager = TimeManager::getInstance();
 
-
     // 获取并更新日期信息（星期和日期）
     std::string weekDay = timeManager->getWeekDay();
     _timeLabel1->setString(weekDay);  // 显示星期几 
