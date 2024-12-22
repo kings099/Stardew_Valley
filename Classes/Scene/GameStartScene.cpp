@@ -1,27 +1,27 @@
 /****************************************************************
  * Project Name:  Stardew_Valley
- * File Name:     HelloScene.cpp
+ * File Name:     GameStartScene.cpp
  * File Function: 游戏启动场景类的实现
  * Author:        达思睿
  * Update Date:   2024/12/3
  * License:       MIT License
  ****************************************************************/
 
-#include "HelloWorldScene.h"
+#include "GameStartScene.h"
 
 
 using namespace cocos2d::experimental;
 USING_NS_CC;
 
 
-// 创建并返回 HelloWorld 场景
-Scene* HelloWorld::createScene()
+// 创建并返回 游戏启动场景
+Scene* GameStartScene::createScene()
 {
-    return HelloWorld::create();
+    return GameStartScene::create();
 }
 
-// 初始化 HelloWorld 场景
-bool HelloWorld::init()
+// 初始化 游戏启动场景
+bool GameStartScene::init()
 {
     // 创建场景
     if (!Scene::init()) {
@@ -40,7 +40,6 @@ bool HelloWorld::init()
     _titleSprite->setPosition(Vec2(origin.x + visibleSize.width / 2, origin.y + visibleSize.height * 0.7));
     this->addChild(_titleSprite);
 
-
     //加载开始结束菜单项
     this->createMenuWithImage();
 
@@ -52,7 +51,7 @@ bool HelloWorld::init()
 }
 
 //加载开始结束菜单项
-void HelloWorld::createMenuWithImage()
+void GameStartScene::createMenuWithImage()
 {
     // 获取当前可见区域（窗口）或屏幕区域的大小（宽度和高度）
     const auto visibleSize = Director::getInstance()->getVisibleSize();
@@ -62,7 +61,7 @@ void HelloWorld::createMenuWithImage()
     _startItem = HoverMenuItemImage::create(
         "../Resources/Helloworld/start.png",   // 普通状态下的图片
         "../Resources/Helloworld/start_.png",  // 悬停状态下的图片
-        CC_CALLBACK_1(HelloWorld::startGameCallback, this)  // 点击时调用的回调函数
+        CC_CALLBACK_1(GameStartScene::startGameCallback, this)  // 点击时调用的回调函数
     );
     _startItem->setPosition(Vec2(origin.x + visibleSize.width * 0.33, origin.y + visibleSize.height * 0.2f)); // 设置 "开始" 按钮的位置
 
@@ -70,7 +69,7 @@ void HelloWorld::createMenuWithImage()
     _exitItem = HoverMenuItemImage::create(
         "../Resources/Helloworld/end.png",    // 普通状态下的图片
         "../Resources/Helloworld/end_.png",   // 悬停状态下的图片
-        CC_CALLBACK_1(HelloWorld::exitGameCallback, this)  // 点击时调用的回调函数
+        CC_CALLBACK_1(GameStartScene::exitGameCallback, this)  // 点击时调用的回调函数
     );
     _exitItem->setPosition(Vec2(origin.x + visibleSize.width * 0.67, origin.y + visibleSize.height * 0.2f)); // 设置 "结束" 按钮的位置
 
@@ -82,7 +81,7 @@ void HelloWorld::createMenuWithImage()
 }
 
 // 加载背景图片
-void HelloWorld::initBackground() {
+void GameStartScene::initBackground() {
     // 获取屏幕的尺寸
     const auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
@@ -109,7 +108,7 @@ void HelloWorld::initBackground() {
     schedule([=](float dt) {
         // 每帧移动背景图片
         background1->setPositionX(background1->getPositionX() - BG_MOVE_SPEED);  // 移动速度可以根据需要调整
-        background2->setPositionX(background2->getPositionX() - BG_MOVE_SPEED);  //获取背景当前的 X 坐标，减去 2 意味着每帧将背景向左移动 2 个单位。
+        background2->setPositionX(background2->getPositionX() - BG_MOVE_SPEED);  // 获取背景当前的 X 坐标，减去 2 意味着每帧将背景向左移动 2 个单位。
 
         // 当第一个背景移出屏幕时，将其移到第二个背景的后面
         if (background1->getPositionX() <= -visibleSize.width / 2) {
@@ -124,16 +123,16 @@ void HelloWorld::initBackground() {
 }
 
 //点击开始按钮执行的回调函数
-void HelloWorld::startGameCallback(Ref* pSender)
+void GameStartScene::startGameCallback(Ref* pSender)
 {
     CCLOG("Start Game!");
     const auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
     // 按钮右移并隐藏
-    _startItem->runAction(MoveBy::create(1.0f, Vec2(visibleSize.width, 0)));  // 平滑地右移到屏幕外
-    _exitItem->runAction(MoveBy::create(1.0f, Vec2(visibleSize.width, 0)));   // 平滑地右移到屏幕外
-    _titleSprite->runAction(MoveBy::create(1.0f, Vec2(visibleSize.width, 0))); // 平滑地右移到屏幕外
+    _startItem->runAction(MoveBy::create(UPDATE_RATIO, Vec2(visibleSize.width, 0)));  // 平滑地右移到屏幕外
+    _exitItem->runAction(MoveBy::create(UPDATE_RATIO, Vec2(visibleSize.width, 0)));   // 平滑地右移到屏幕外
+    _titleSprite->runAction(MoveBy::create(UPDATE_RATIO, Vec2(visibleSize.width, 0))); // 平滑地右移到屏幕外
 
     auto loginLayer = LoginLayer::create();
     this->addChild(loginLayer);
@@ -141,8 +140,7 @@ void HelloWorld::startGameCallback(Ref* pSender)
 }
 
 //点击结束按钮执行的回调函数
-void HelloWorld::exitGameCallback(Ref* pSender)
+void GameStartScene::exitGameCallback(Ref* pSender)
 {
     Director::getInstance()->end();  // 结束应用
 }
-
