@@ -7,13 +7,13 @@
 class Task {
 public:
     // 构造函数
-    Task(std::string description, int requiredItemId, int requiredItemCount, int affectionReward)
-        : description(description), requiredItemId(requiredItemId), requiredItemCount(requiredItemCount),
+    Task(std::string description, std::string requiredItemName, int requiredItemCount, int affectionReward)
+        : description(description), requiredItemName(requiredItemName), requiredItemCount(requiredItemCount),
           currentItemCount(0), isCompleted(false), affectionReward(affectionReward) {}
 
     // 玩家赠送物品时更新任务进度
-    void addItem(int itemId, int count) {
-        if (itemId == requiredItemId) {
+    void addItem(std::string itemId, int count) {
+        if (itemId == requiredItemName) {
             currentItemCount += count;
             if (currentItemCount >= requiredItemCount) {
                 isCompleted = true;
@@ -35,18 +35,22 @@ public:
     int getAffectionReward() const {
         return affectionReward;
     }
-
-    int getRequiredItemId() const {
-        return requiredItemId;
+    // 获取需要的物品数量
+    int getRequiredItemCount() const {
+        return requiredItemCount;
     }
+
     // 设置任务完成状态
     void setCompletion(bool completed) {
         isCompleted = completed;
     }
 
+    std::string getRequiredItemName() const{
+        return  requiredItemName;
+    }
 private:
     std::string description;  // 任务描述
-    int requiredItemId;       // 需要的物品 ID
+    std::string requiredItemName;       // 需要的物品名
     int requiredItemCount;    // 需要的物品数量
     int currentItemCount;     // 当前物品数量
     bool isCompleted;         // 任务是否完成

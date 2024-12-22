@@ -25,16 +25,16 @@ GiftItemManager::GiftItemManager() {
 }
 
 void GiftItemManager::initializeGifts() {
-    GiftItem rose("Rose", 10);
-    rose.setAffectionForNPC("John", 20);  // John 对 Rose 的反应更大
-    rose.setAffectionForNPC("Mary", 5);   // Mary 对 Rose 的反应较小
+    GiftItem rose("Ring", 10);               //NPC对Ring反应的默认值
+    rose.setAffectionForNPC("Abigail", 20);  // Abigail 对 Ring 的反应更大
+    rose.setAffectionForNPC("Mary", 5);      // Mary 对 Rose 的反应较小
 
-    GiftItem chocolate("Chocolate", 5);
-    chocolate.setAffectionForNPC("John", 15);  // John 喜欢巧克力
-    chocolate.setAffectionForNPC("Mary", 10);  // Mary 也喜欢巧克力
+    GiftItem chocolate("Timber", 5);
+    chocolate.setAffectionForNPC("Abigail", 15);  
+    chocolate.setAffectionForNPC("Mary", 10); 
 
     GiftItem teddyBear("Teddy Bear", 15);
-    teddyBear.setAffectionForNPC("John", 30);  // John 很喜欢泰迪熊
+    teddyBear.setAffectionForNPC("Abigail", 30);  // John 很喜欢泰迪熊
     teddyBear.setAffectionForNPC("Mary", 10);  // Mary 对泰迪熊不感兴趣
 
     gifts.push_back(rose);

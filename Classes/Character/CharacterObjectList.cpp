@@ -32,6 +32,7 @@ CharacterObjectList::CharacterObjectList() :
 		pickUpObject("BeginnerFishingRods", 1);
 		pickUpObject("BeginnerKattle", 1);
 		pickUpObject("scythe", 1);
+		pickUpObject("Timber", 5);
 	}
 	pickUpObject("CopperParticle", 11);
 	synthesisObject("Copper");

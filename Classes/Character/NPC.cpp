@@ -53,20 +53,24 @@ void NPC::showDialog() {
     dialogueIndex = std::min(dialogueIndex, (int)dialogues.size() - 1);
     std::string username = CharacterInfo::getInstance()->getUsername();  // 获取用户名
     std::string dialogue = dialogues[dialogueIndex] + "," + username;
-
-    // 创建并显示 ChatLayer
-    ChatLayer* chatLayer = ChatLayer::create(dialogue);  // 创建 ChatLayer 实例并传入对话内容
-
-    // 设置对话框位置相对于 NPC
-    Vec2 npcPosition = getPosition();  // 获取 NPC 当前的位置
-    chatLayer->setPosition(npcPosition.x +250, npcPosition.y+60);  // 将对话框位置设置为 NPC 的位置
-
-    // 将 ChatLayer 添加为 NPC 的子节点
-    this->addChild(chatLayer, 1);  // 将 ChatLayer 添加为 NPC 的子节点，优先级设置为 1000
+    showDialogue(dialogue);
 }
 
+void NPC::showDialogue(const std::string& dialogueText) {
+    // 创建 ChatLayer 实例并传入对话内容
+    ChatLayer* chatLayer = ChatLayer::create(dialogueText);
+
+    // 获取 NPC 当前的位置
+    Vec2 npcPosition = getPosition();
+
+    // 设置对话框位置相对于 NPC
+    chatLayer->setPosition(npcPosition.x + 250, npcPosition.y + 60);
+
+    // 将 ChatLayer 添加为 NPC 的子节点
+    this->addChild(chatLayer, 1);  // 将 ChatLayer 添加为 NPC 的子节点，优先级设置为 1
+}
 // 增加好感度
-void NPC::increaseAffection(int value, bool isRomantic) {
+void NPC::increaseAffection(int value) {
     affection = std::min(100, affection + value);
 }
 
@@ -191,56 +195,82 @@ void NPC::playMarriageAnimation() {
 
 void NPC::showTaskList() {
     std::string taskInfo = "Available Tasks:\n";
-
     // 生成两个任务按钮
     if (tasks.size() >= 2) {
         // 获取任务1
         Task* task1 = tasks[0];
-        std::string task1Info = task1->getDescription() + (task1->checkCompletion() ? " (Completed)" : " (In Progress)");
-
         // 获取任务2
         Task* task2 = tasks[1];
-        std::string task2Info = task2->getDescription() + (task2->checkCompletion() ? " (Completed)" : " (In Progress)");
-
-        // 获取当前场景
-        auto runningScene = cocos2d::Director::getInstance()->getRunningScene();
-        if (!runningScene) {
-            return;
-        }
-
-        // 获取屏幕的宽度和高度，计算按钮的位置
-        const auto visibleSize = Director::getInstance()->getVisibleSize();
 
         // 创建任务1按钮
         auto taskButton1 = ui::Button::create();
-        taskButton1->setTitleText(task1Info);
-        taskButton1->setPosition(Vec2(250,180));
-        taskButton1->setTitleFontSize(24); // 设置字体大小
-        taskButton1->addClickEventListener([this, task1, runningScene](Ref* sender) {
-            if (!task1->checkCompletion()) {
-               
-            }
-            else {
-
-            }
-            });
-       this->addChild(taskButton1, 10);
+        taskButton1->setTitleText(task1->getDescription() + (task1->checkCompletion() ? " (Completed)" : " (In Progress)"));
+        taskButton1->setPosition(Vec2(250,200));
+        taskButton1->setTitleFontSize(24);
 
         // 创建任务2按钮
         auto taskButton2 = ui::Button::create();
-        taskButton2->setTitleText(task2Info);
-        taskButton2->setPosition(Vec2(250, 170));
-        taskButton2->setTitleFontSize(24); // 设置字体大小
-        taskButton2->addClickEventListener([this, task2, runningScene](Ref* sender) {
-            if (!task2->checkCompletion()) {
-                // 任务2的逻辑：检查玩家是否有5个木材
-              
+        taskButton2->setTitleText(task2->getDescription() + (task2->checkCompletion() ? " (Completed)" : " (In Progress)"));
+        taskButton2->setPosition(Vec2(250, 230));
+        taskButton2->setTitleFontSize(24); 
+
+        // 创建任务1按钮点击事件
+        taskButton1->addClickEventListener([this, task1,taskButton1, taskButton2](Ref* sender) {
+            this->removeChild(taskButton1);
+            this->removeChild(taskButton2);
+            if (!task1->checkCompletion()) {
+                // 任务1的逻辑：检查玩家是否有Ring
+                Character* _character = Character::getInstance(); // 获取 Character 的单例对象
+                int targetObjectIndex = _character->findObjectByObjectList(task1->getRequiredItemName()); // 判断数量
+                if (targetObjectIndex != -1 && _character->findObjectAtPosition(targetObjectIndex).count > task1->getRequiredItemCount()) {
+                    GiftItem* gift = GiftItemManager::getInstance()->getGiftByName(task1->getRequiredItemName());
+                    _character->deleteObject(targetObjectIndex, task1->getRequiredItemCount());
+                    this->giftItem(gift);
+                    this->increaseAffection(task1->getAffectionReward());
+                }
+                else {
+                    std::string dialogue = "Oh no,task can not be finished";
+                    showDialogue(dialogue);
+                }
             }
             else {
-
+                std::string dialogue = "Already be finished!";
+                showDialogue(dialogue);
             }
             });
-        runningScene->addChild(taskButton2, 10);
+       this->addChild(taskButton1, 1);
+
+       
+       // 创建任务2按钮点击事件
+        taskButton2->addClickEventListener([this, task2, taskButton1, taskButton2](Ref* sender) {
+            this->removeChild(taskButton1);
+            this->removeChild(taskButton2);
+            if (!task2->checkCompletion()) {
+                // 任务2的逻辑：检查玩家是否有5个木材
+                Character* _character = Character::getInstance(); // 获取 Character 的单例对象
+                int targetObjectIndex = _character->findObjectByObjectList(task2->getRequiredItemName()); // 判断数量
+                if (targetObjectIndex != -1 && _character->findObjectAtPosition(targetObjectIndex).count > task2->getRequiredItemCount()) {
+                    // 数量大于5，删除5个木材
+                    _character->deleteObject(targetObjectIndex, task2->getRequiredItemCount());
+                    //增加任务对应的好感度
+                    this->increaseAffection(task2->getAffectionReward());
+                    std::string dialogue= "Task be finished!\n";
+                    std::string affectionInfo = "Affection added: " + std::to_string(task2->getAffectionReward()) +
+                        ", Current Affection: " + std::to_string(getAffection());
+                    showDialogue(dialogue+affectionInfo);
+                    task2->setCompletion(true);
+                }
+                else {
+                    std::string dialogue = "Oh no,materials isn't enough";
+                    showDialogue(dialogue);
+                }
+            }
+            else {
+                std::string dialogue = "Already be finished!";
+                showDialogue(dialogue);
+            }
+            });
+        this->addChild(taskButton2, 1);
     }
 }
 
@@ -277,7 +307,6 @@ void NPC::giftItem(GiftItem* gift) {
     auto showChatLayer = CallFunc::create([this, affectionIncrease, gift]() {
         // 创建并显示 ChatLayer
         ChatLayer* chatLayer = ChatLayer::create("Thank you for the gift:" + gift->name + "  :)"); // 创建对话框
-
 
         // 设置 ChatLayer 的位置，相对于 NPC 的位置
         Vec2 npcPosition = getPosition();  // 获取 NPC 的位置
@@ -322,7 +351,7 @@ void NPC::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* event) {
         showDialog();
     }
     if (keyCode == EventKeyboard::KeyCode::KEY_G) {
-        // 触发 NPC 送礼物
+        // 触发 NPC 显示任务列表
         showTaskList();
     }
     if (keyCode == EventKeyboard::KeyCode::KEY_M) {

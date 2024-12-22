@@ -35,7 +35,7 @@ void ChatLayer::showMessage(const std::string& message) {
     this->addChild(dialogBg, 0);  
 
     // 创建并设置显示消息的标签
-    dialogLabel = Label::createWithSystemFont(message, "Arial", 24);
+    dialogLabel = Label::createWithSystemFont(message, "Arial", 20);
     dialogLabel->setDimensions(dialogWidth - 20, dialogHeight - 20);
     dialogLabel->setHorizontalAlignment(TextHAlignment::CENTER);
     dialogLabel->setVerticalAlignment(TextVAlignment::CENTER);
@@ -77,7 +77,7 @@ void ChatLayer::addAffectionText(const std::string& affectionInfo) {
     Size dialogSize = dialogBg->getContentSize();
 
     // 创建显示亲密度信息的标签
-    Label* affectionLabel = Label::createWithSystemFont(affectionInfo, "Arial", 24);
+    Label* affectionLabel = Label::createWithSystemFont(affectionInfo, "Arial", 20);
 
     // 设置标签的宽度和高度相对于对话框的比例
     float labelWidth = dialogSize.width * 1.2;  // 例如宽度占对话框的80%

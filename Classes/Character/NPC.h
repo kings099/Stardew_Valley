@@ -49,9 +49,10 @@ public:
     // NPC 显示对话框
     void showDialog();
 
+    void showDialogue(const std::string& dialogueText);
 
     // 增加好感度
-    void NPC::increaseAffection(int value, bool isRomantic = true);
+    void NPC::increaseAffection(int value);
 
     void NPC::marryPlayer();
 
