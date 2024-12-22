@@ -53,13 +53,11 @@ void GameViewController::update(float deltaTime) {
     // 地图大小
     Size mapSize = _map->getMapSize();
 
-
     // 获取摄像机
     auto camera = Director::getInstance()->getRunningScene()->getDefaultCamera();
 
     // 获取当前地图缩放比例
     float scale = _map->getScale();
-
 
     // 获取屏幕可视区域大小
     auto visibleSize = Director::getInstance()->getVisibleSize();
@@ -80,8 +78,8 @@ void GameViewController::update(float deltaTime) {
             mapPosition.x + visibleSize.width / 2.0f,
             mapPosition.x + mapSize.width * scale - visibleSize.width / 2.0f
         );
-
         float idealY = characterPosition.y;
+
         // 边界位置判断
         targetCameraPosition.y = clamp(
             idealY,
@@ -100,10 +98,7 @@ void GameViewController::update(float deltaTime) {
 
 void GameViewController::setMap(GameMap* newMap) {
     if (newMap != nullptr) {
-        //设置新地图
         _map = newMap;
-
-        CCLOG("GameViewController updated to new map: %p", _map);
     }
 }
 

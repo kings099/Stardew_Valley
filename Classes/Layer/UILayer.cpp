@@ -216,6 +216,17 @@ void UILayer::initializeSynthesisTable() {
             index++;
         }
     }
+
+    for (const auto& object : GAME_TOOL_OBJECTS_ATTRS) {
+        if (object._isUpgradable == true) {
+            _synthesisObjectSpriteImage[index] = HoverMenuItemImage::create(object._fileName, object._fileName, [this, object](cocos2d::Ref* sender) {_character->synthesizeObject(object); }, OBJECT_NODE_SCALE);
+            _synthesisObjectSpriteImage[index]->setPosition(LocationMap::getInstance().getSysthesisTableLocationMap().at(index));
+            _synthesisObjectSpriteImage[index]->setScale(OBJECT_NODE_SCALE);
+            this->addChild(_synthesisObjectSpriteImage[index], OBJECT_LAYER_GRADE);
+            _synthesisObjectSpriteImage[index]->setVisible(false);
+            index++;
+        }
+    }
 }
 
 // 更新物品栏
