@@ -530,6 +530,8 @@ public:
     }
 
     GameBaseObject() {};
+
+
 };
 
 
@@ -619,7 +621,7 @@ const std::vector<GameBaseObject> GAME_BASE_OBJECTS_ATTRS = {
     GameBaseObject(30,"../Resources/Objects/Base/Grass.png","Grass","草",Collect,99,1,true,5,false,INVAVID_NUM,false,INVAVID_NUM,false,true,{}),
 
 
-GameBaseObject(30, "../Resources/Objects/Base/Bigeye.png", "Bigeye", "大眼鱼", Fish,  // 大眼鱼
+GameBaseObject(31, "../Resources/Objects/Base/Bigeye.png", "Bigeye", "大眼鱼", Fish,  // 大眼鱼
    100, // 最大存储量
    1,   // 解锁所需等级
    true, // 是否能出售
@@ -633,7 +635,7 @@ GameBaseObject(30, "../Resources/Objects/Base/Bigeye.png", "Bigeye", "大眼鱼"
    {}    //合成物品的原料
 ),
 
-GameBaseObject(30, "../Resources/Objects/Base/LargemouthBass.png", "LargemouthBass", "大嘴鲈鱼", Fish,  // 大嘴鲈鱼
+GameBaseObject(32, "../Resources/Objects/Base/LargemouthBass.png", "LargemouthBass", "大嘴鲈鱼", Fish,  // 大嘴鲈鱼
    100, // 最大存储量
    2,   // 解锁所需等级
    true, // 是否能出售
@@ -647,7 +649,7 @@ GameBaseObject(30, "../Resources/Objects/Base/LargemouthBass.png", "LargemouthBa
    {}    //合成物品的原料
 ),
 
-GameBaseObject(30, "../Resources/Objects/Base/Salmon.png", "Salmon", "鲑鱼", Fish,  // 鲑鱼
+GameBaseObject(33, "../Resources/Objects/Base/Salmon.png", "Salmon", "鲑鱼", Fish,  // 鲑鱼
    100, // 最大存储量
    3,   // 解锁所需等级
    true, // 是否能出售
@@ -661,9 +663,9 @@ GameBaseObject(30, "../Resources/Objects/Base/Salmon.png", "Salmon", "鲑鱼", F
    {}    //合成物品的原料
 ),
 
-GameBaseObject(30, "../Resources/Objects/Base/Squid.png", "Squid", "鱿鱼", Fish,  // 鱿鱼
+GameBaseObject(34, "../Resources/Objects/Base/Squid.png", "Squid", "鱿鱼", Fish,  // 鱿鱼
    100, // 最大存储量
-   3,   // 解锁所需等级
+   1,   // 解锁所需等级
    true, // 是否能出售
    225,  // 出售价格
    false, // 是否可以购买
@@ -675,7 +677,7 @@ GameBaseObject(30, "../Resources/Objects/Base/Squid.png", "Squid", "鱿鱼", Fis
    {}    //合成物品的原料
 ),
 
-GameBaseObject(30, "../Resources/Objects/Base/Sardines.png", "Sardines", "沙丁鱼", Fish,  // 沙丁鱼
+GameBaseObject(35, "../Resources/Objects/Base/Sardines.png", "Sardines", "沙丁鱼", Fish,  // 沙丁鱼
    100, // 最大存储量
    2,   // 解锁所需等级
    true, // 是否能出售
@@ -689,7 +691,7 @@ GameBaseObject(30, "../Resources/Objects/Base/Sardines.png", "Sardines", "沙丁
    {}    //合成物品的原料
 ),
 
-GameBaseObject(30, "../Resources/Objects/Base/Herring.png", "Herring", "鲱鱼", Fish,  // 鲱鱼
+GameBaseObject(36, "../Resources/Objects/Base/Herring.png", "Herring", "鲱鱼", Fish,  // 鲱鱼
    100, // 最大存储量
    5,   // 解锁所需等级
    true, // 是否能出售
@@ -703,7 +705,7 @@ GameBaseObject(30, "../Resources/Objects/Base/Herring.png", "Herring", "鲱鱼",
    {}    //合成物品的原料
 ),
 
-GameBaseObject(30, "../Resources/Objects/Base/RedMullet.png", "RedMullet", "红鲻鱼", Fish,  // 红鲻鱼
+GameBaseObject(37, "../Resources/Objects/Base/RedMullet.png", "RedMullet", "红鲻鱼", Fish,  // 红鲻鱼
    100, // 最大存储量
    1,   // 解锁所需等级
    true, // 是否能出售
@@ -717,7 +719,7 @@ GameBaseObject(30, "../Resources/Objects/Base/RedMullet.png", "RedMullet", "红�
    {}    //合成物品的原料
 ),
 
-GameBaseObject(30, "../Resources/Objects/Base/Carps.png", "Carps", "鲤鱼", Fish,  // 鲤鱼
+GameBaseObject(38, "../Resources/Objects/Base/Carps.png", "Carps", "鲤鱼", Fish,  // 鲤鱼
    100, // 最大存储量
    1,   // 解锁所需等级
    true, // 是否能出售
@@ -731,7 +733,7 @@ GameBaseObject(30, "../Resources/Objects/Base/Carps.png", "Carps", "鲤鱼", Fis
    {}    //合成物品的原料
 ),
 
-GameBaseObject(30, "../Resources/Objects/Base/Octopus.png", "Octopus", "章鱼", Fish,  // 章鱼
+GameBaseObject(39, "../Resources/Objects/Base/Octopus.png", "Octopus", "章鱼", Fish,  // 章鱼
    100, // 最大存储量
    3,   // 解锁所需等级
    true, // 是否能出售
@@ -745,7 +747,7 @@ GameBaseObject(30, "../Resources/Objects/Base/Octopus.png", "Octopus", "章鱼",
    {}    //合成物品的原料
 ),
 
-GameBaseObject(30, "../Resources/Objects/Base/RedSnapper.png", "RedSnapper", "红鲷鱼", Fish,  // 红鲷鱼
+GameBaseObject(40, "../Resources/Objects/Base/RedSnapper.png", "RedSnapper", "红鲷鱼", Fish,  // 红鲷鱼
    100,     // 最大存储量
    3,       // 解锁所需等级
    true,    // 是否能出售
@@ -759,7 +761,7 @@ GameBaseObject(30, "../Resources/Objects/Base/RedSnapper.png", "RedSnapper", "�
    {}    //合成物品的原料
 ),
 
-GameBaseObject(30, "../Resources/Objects/Base/SmallmouthBass.png", "SmallmouthBass", "小嘴鲈鱼", Fish,  // 小嘴鲈鱼
+GameBaseObject(41, "../Resources/Objects/Base/SmallmouthBass.png", "SmallmouthBass", "小嘴鲈鱼", Fish,  // 小嘴鲈鱼
    100, // 最大存储量
    2,   // 解锁所需等级
    true, // 是否能出售
@@ -773,7 +775,7 @@ GameBaseObject(30, "../Resources/Objects/Base/SmallmouthBass.png", "SmallmouthBa
    {}    //合成物品的原料
 ),
 
-GameBaseObject(30, "../Resources/Objects/Base/TunaFish.png", "TunaFish", "金枪鱼", Fish,  // 金枪鱼
+GameBaseObject(42, "../Resources/Objects/Base/TunaFish.png", "TunaFish", "金枪鱼", Fish,  // 金枪鱼
    100, // 最大存储量
    3,   // 解锁所需等级
    true, // 是否能出售
@@ -789,6 +791,34 @@ GameBaseObject(30, "../Resources/Objects/Base/TunaFish.png", "TunaFish", "金枪
 
    // GameBaseObject(30,"","None","无效物品",GameObjectSkillType::None,0,0,false,INVAVID_NUM,false,INVAVID_NUM,false,INVAVID_NUM,false,false,{})
 };
+
+// 为每个物品类型创建名字到解锁等级的映射
+std::map<std::string, int> seedUnlockLevels;
+std::map<std::string, int> baseObjectUnlockLevels;
+
+// 初始化这些映射
+void initializeUnlockLevels() {
+    for (const auto& seed : GAME_SEED_OBJECTS_ATTRS) {
+        seedUnlockLevels[seed._name] = seed._level;
+    }
+    for (const auto& base : GAME_BASE_OBJECTS_ATTRS) {
+        baseObjectUnlockLevels[base._name] = base._level;
+    }
+}
+
+// 查找物品的解锁等级
+int getUnlockLevel(const std::string& itemName) {
+    if (seedUnlockLevels.find(itemName) != seedUnlockLevels.end()) {
+        return seedUnlockLevels[itemName];
+    }
+    else if (baseObjectUnlockLevels.find(itemName) != baseObjectUnlockLevels.end()) {
+        return baseObjectUnlockLevels[itemName];
+    }
+    else {
+        CCLOG("物品未找到: %s", itemName.c_str());  // 使用 CCLOG 输出错误信息
+        return -1; // 如果未找到该物品
+    }
+}
 
 // 游戏物品属性定义
 struct GameCommonObject {

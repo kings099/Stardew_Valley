@@ -152,8 +152,8 @@ void Crops::setPlayerLevel(int level) {
 }
 
 //由人物等级判断是否能种植当下农作物
-bool Crops::canBePlanted() const {
-    if (_type == "pumpkin" && _playerLevel < 3) {
+bool Crops::canBePlanted(const std::string& cropType){
+    if (cropType == "pumpkin" && _playerLevel < 3) {
         CCLOG("Error: Player level too low to plant pumpkin! Required level: 3");
         return false;
     }
@@ -162,6 +162,12 @@ bool Crops::canBePlanted() const {
 
 
 Crops* Crops::create(const std::string& type, int maxGrowthStage) {
+
+    // 在创建之前先检查能否种植
+    if (!canBePlanted(type)) {
+        CCLOG("Cannot plant this crop due to insufficient player level.");
+        return nullptr;
+    }
     CCLOG("Creating Crop instance...");
     Crops* ret = new Crops();
     if (ret && ret->init(type, maxGrowthStage)) {

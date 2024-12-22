@@ -44,7 +44,7 @@ public:
     void updateAnimation();
 
     // ²¶»ñÓã
-    static std::string catchFish(const Season season);
+    static std::string catchFish(const Season season, int playerLevel);
 
 private:
     std::string _name;                    // ÓãµÄÃû×Ö
