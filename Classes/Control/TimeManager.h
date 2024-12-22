@@ -1,3 +1,11 @@
+/****************************************************************
+ * Project Name:  Stardew_Valley
+ * File Name:     TimeManager.cpp
+ * File Function: 游戏内时间管理TimeManager的定义
+ * Author:        达思睿
+ * Update Date:   2024/12/21
+ * License:       MIT License
+ ****************************************************************/
 #pragma once
 #ifndef __TIMEMANAGER_H__
 #define __TIMEMANAGER_H__

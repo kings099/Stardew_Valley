@@ -260,25 +260,26 @@ constexpr int DAYS_IN_A_YEAR = 28;                                          // �
 constexpr int DAY_START = 6;                                                // 白天的开始时间
 constexpr int DAY_END = 18;                                                 // 白天的结束时间
 constexpr int WEATHER_NUM = 3;                                              // 天气数量
-constexpr float SUNNY_PROBABILITY = 0.5f;                            // 日间天气的概率
-constexpr float RAINY_PROBABILITY = 0.3f;                            // 雨天天气的概率
-constexpr float DRY_PROBABILITY = 0.2f;                              // 干旱天气的概率
+constexpr float SUNNY_PROBABILITY = 0.5f;                                   // 日间天气的概率
+constexpr float RAINY_PROBABILITY = 0.3f;                                   // 雨天天气的概率
+constexpr float DRY_PROBABILITY = 0.2f;                                     // 干旱天气的概率
 
 //农作物相关设置
-constexpr int MIN_GROWTHSTAGE = 0;                                          //最小生长阶段
-constexpr int CAULIFLOWER_MAX_GROWTHSTAGE = 5;                              //花椰菜共有5个生长阶段
-constexpr int KALE_MAX_GROWTHSTAGE = 5;                                     //甘蓝菜共有5个生长阶段
-constexpr int PUMPKIN_MAX_GROWTHSTAGE = 6;                                  //南瓜共有6个生长阶段
-constexpr int OAK_MAX_GROWTHSTAGE = 5;                                      //橡树共有5个生长阶段
-constexpr int MAPLE_MAX_GROWTHSTAGE = 5;                                    //枫树共有5个生长阶段
-constexpr int PINE_MAX_GROWTHSTAGE = 5;                                     //松树共有5个生长阶段
-constexpr float CROP_START_RATIO = 1.5f;                                    //农作物未成熟时的缩放比例
-constexpr float CROP_MATURE_RATIO = 1.0f;                                    //农作物成熟时的缩放比例
+constexpr int MIN_GROWTHSTAGE = 0;                                          // 最小生长阶段
+constexpr int CAULIFLOWER_MAX_GROWTHSTAGE = 5;                              // 花椰菜共有5个生长阶段
+constexpr int KALE_MAX_GROWTHSTAGE = 5;                                     // 甘蓝菜共有5个生长阶段
+constexpr int PUMPKIN_MAX_GROWTHSTAGE = 6;                                  // 南瓜共有6个生长阶段
+constexpr int OAK_MAX_GROWTHSTAGE = 5;                                      // 橡树共有5个生长阶段
+constexpr int MAPLE_MAX_GROWTHSTAGE = 5;                                    // 枫树共有5个生长阶段
+constexpr int PINE_MAX_GROWTHSTAGE = 5;                                     // 松树共有5个生长阶段
+constexpr float CROP_START_RATIO = 1.5f;                                    // 农作物未成熟时的缩放比例
+constexpr float CROP_MATURE_RATIO = 1.0f;                                   // 农作物成熟时的缩放比例
 constexpr float CROP_HORIZONTAL_ANCHORPOINT = 0.5f;					        // 树水平锚点
 constexpr float TREE_VERTICAL_ANCHORPOINT = 0.0f;						    // 树垂直锚点
 constexpr float CROP_VERTICAL_ANCHORPOINT = 0.5f;						    // 树垂直锚点
-constexpr float WILTTIME = 96.0f;                                           //枯萎时间
-constexpr float FERTILIZER_GROWTH_RATE = 0.8f;                              //施肥加快比例
+constexpr float WILTTIME = 96.0f;                                           // 枯萎时间
+constexpr float FERTILIZER_GROWTH_RATE = 0.8f;                              // 施肥加快比例
+
 //动物类设置
 constexpr float ANIMAL_RATIO = 1.0f;                                            //动物类的缩放比例
 constexpr float ANGRY_ICON_RATIO = 0.8f;                                        //动物发怒提示的缩放比例
@@ -474,17 +475,17 @@ struct StoreObjectInfo {
 // 角色动作和地图类型对应关系
 const std::map< GameCharacterAction, std::vector<TileConstants::TileType>> ACTION_TO_TILEMAP = {
     { NoneAction,   { TileConstants::Other }},
-    { Plowing,      { TileConstants::Soil}},           // 左键
-    { Seeding,      { TileConstants::Soiled }},        // 右键
+    { Plowing,      { TileConstants::Soil}},            // 左键
+    { Seeding,      { TileConstants::Soiled }},         // 右键
     { Watering,     { TileConstants::Soiled ,TileConstants::Crop }},       // 左键
-    { Fertilize,    { TileConstants::Soiled}},        // 左键
-    { GetWater,     { TileConstants::Water }},         // 右键
-    { Weeding,      { TileConstants::Grass }},         // 左键
+    { Fertilize,    { TileConstants::Soiled}},          // 左键
+    { GetWater,     { TileConstants::Water }},          // 右键
+    { Weeding,      { TileConstants::Grass }},          // 左键
     { Cutting,      { TileConstants::Tree ,TileConstants::Branch,TileConstants::Wood}},          // 左键
     { Mining,       { TileConstants::Stone,TileConstants::Mine ,TileConstants::Treasure}},            // 左键
-    { Fishing,      { TileConstants::Water }},         // 左键
-    { Harvesting,   { TileConstants::Crop }},          // 右键
-    { Placement,    { TileConstants::Soil }},          // 右键
+    { Fishing,      { TileConstants::Water }},          // 左键
+    { Harvesting,   { TileConstants::Crop }},           // 右键
+    { Placement,    { TileConstants::Soil }},           // 右键
     { Debug,        { TileConstants::Crop}},            // 左键
     //{ OpenBox,      {TileConstants::Box}},            // 右键
     { DestoryObject, {TileConstants::Other,TileConstants::Box}}         // 左键

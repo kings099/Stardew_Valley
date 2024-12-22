@@ -19,6 +19,7 @@ USING_NS_CC;
 class GameMap : public Node {
 public:
     GameMap(const Vec2& mapPosition = Vec2(0, 0));
+
     virtual ~GameMap();
 
     // 创建地图
@@ -54,7 +55,7 @@ public:
     // 替换指定图层的瓦片，在矿洞子类实现刷新逻辑记录
     virtual void replaceTileAt(const std::string& layerName, const Vec2& tileCoord, int newGID, bool isUserAction = true);
 
-    // 获取地图上节点的指针 虚函数
+    // 获取地图上节点的指针虚函数
     virtual Node* getNodeAtPosition(const Vec2& tilePos);
 
     // 获取瓦片地图指针
@@ -66,10 +67,8 @@ public:
     // 保存地图信息，虚函数是为了防止子类有其他需要保存的信息
     virtual void saveChangesToStateManager() const;
 
+    // 地图类型
     virtual MapType getType() const { return MapType::Generic; }
-
-
-
 protected:
     std::string _mapName;     // 地图文件名
     TMXTiledMap* _tile_map;  // 瓦片地图类
