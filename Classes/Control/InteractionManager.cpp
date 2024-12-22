@@ -341,7 +341,6 @@ void InteractionManager::getTreeAndChopAt(const Vec2& tilePos) {
     if(_gameMap->getType()==MapType::Farm)
     {
         auto treeSprite = dynamic_cast<Crops*>(node);
-        treeSprite->waterCrop();
         if (treeSprite) {
             CCLOG("Tree found at (%f, %f). Chopping tree...", tilePos.x, tilePos.y);
             treeSprite->chopTree();

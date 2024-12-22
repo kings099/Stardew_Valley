@@ -12,6 +12,7 @@
 
 #include "cocos2d.h"
 #include "proj.win32/Constant.h"
+#include "CropData.h"
 
 class Crops : public cocos2d::Node {
 public:
@@ -60,6 +61,8 @@ public:
     bool _isRemoved = false;
     // 玩家等级
     static int _playerLevel;
+    // 返回 CropData
+    CropData getCropData();
 
 private:
     bool _isFertilized;         //是否施肥
@@ -72,6 +75,7 @@ private:
     bool _hasPests;         // 标记是否有病虫害
     float _pestProbability; // 感染病虫害的概率
     cocos2d::Sprite* _sprite;   // 农作物的显示精灵
+    CropData _cropData;         //农作物的基本信息
     // 静态成员：季节和生长周期表
     static Season _currentSeason;
     static std::unordered_map<std::string, std::unordered_map<Season, float>> _growthCycles;

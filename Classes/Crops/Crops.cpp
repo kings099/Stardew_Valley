@@ -11,7 +11,7 @@
 
 USING_NS_CC;
 // 初始化静态变量
-Season Crops::_currentSeason = Season::Winter;
+Season Crops::_currentSeason = Season::Spring;
 int Crops::_playerLevel = 1; // 初始人物等级为1
 
 // 定义静态资源映射表
@@ -145,6 +145,17 @@ std::unordered_map<std::string, std::unordered_map<Season, std::string>> Crops::
            {Season::Winter, "../Resources/Crops/Pumpkin/pumpkin_5.png"}}
      }
 };
+CropData Crops::getCropData() {
+    _cropData.Harvest = _type;
+    _cropData._type = _type;
+    if (this->isReadyToHarvest()==true) {
+        _cropData._isHarvest=true;
+    }
+    else {
+        _cropData._isHarvest = false;
+    }
+    return _cropData;
+}
 //设置当前的人物等级
 void Crops::setPlayerLevel(int level) {
     _playerLevel = level;
@@ -213,13 +224,13 @@ bool Crops::init(const std::string& type, int maxGrowthStage) {
     }
 
     _sprite->setScale(CROP_START_RATIO);
-    //// 设置锚点（例如设置到底部中心点）
-    //if (_type == "maple" || _type == "pine" || _type == "oak") {
-        _sprite->setAnchorPoint(Vec2(CROP_HORIZONTAL_ANCHORPOINT, CROP_VERTICAL_ANCHORPOINT));
-    /*}
+    // 设置锚点（例如设置到底部中心点）
+    if (_type == "maple" || _type == "pine" || _type == "oak") {
+        _sprite->setAnchorPoint(Vec2(CROP_HORIZONTAL_ANCHORPOINT, TREE_VERTICAL_ANCHORPOINT));
+    }
     else {
-        _sprite->setAnchorPoint(Vec2(CROP_HORIZONTAL_ANCHORPOINT, 0.5));
-    }*/
+        _sprite->setAnchorPoint(Vec2(CROP_HORIZONTAL_ANCHORPOINT, CROP_VERTICAL_ANCHORPOINT));
+    }
 
     this->addChild(_sprite);
     CCLOG("Crop initialized successfully");
@@ -568,3 +579,5 @@ void Crops::chopTree() {
     // 执行动作
     this->_sprite->runAction(fullSequence);
 }
+
+
