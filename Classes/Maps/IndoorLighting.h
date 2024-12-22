@@ -10,10 +10,12 @@
 #ifndef INDOOR_LIGHTING_H
 #define INDOOR_LIGHTING_H
 #include "cocos2d.h"
+#include "proj.win32/Constant.h"
 
 // 使用RAII管理室内灯光
 class IndoorLighting {
 public:
+
     // 构造函数：初始化并添加灯光层
     explicit IndoorLighting(cocos2d::Node* parentNode);
 
@@ -21,7 +23,10 @@ public:
     ~IndoorLighting();
 
 private:
-    cocos2d::LayerColor* _lightingLayer; // 灯光层
-    cocos2d::Node* _parentNode;          // 父节点
+    // 灯光层
+    cocos2d::LayerColor* _lightingLayer;
+
+    // 父节点
+    cocos2d::Node* _parentNode;         
 };
 #endif // __INDOOR_LIGHTING_H_

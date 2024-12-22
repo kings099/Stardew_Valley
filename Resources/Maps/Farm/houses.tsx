@@ -13,7 +13,7 @@
  </tile>
  <tile id="2">
   <properties>
-   <property name="TargetMap" value="../Resources/Maps/Mine/MIne.tmx"/>
+   <property name="TargetMap" value="../Resources/Maps/Mine/Mine.tmx"/>
   </properties>
  </tile>
  <tile id="35">

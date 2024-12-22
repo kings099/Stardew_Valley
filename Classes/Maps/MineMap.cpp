@@ -80,7 +80,7 @@ void MineMap::replaceTileAt(const std::string& layerName, const Vec2& tileCoord,
         else if (tiletype == TileConstants::TileType::Mine) {
             // 如果瓦片类型为 "Mine"，20% 的概率保存毁坏状态
             float randomValue = CCRANDOM_0_1(); // 生成随机数 [0, 1]
-            if (randomValue <= 0.2f) {
+            if (randomValue <= TileConstants::UPDATA_POSIIBILITY) {
                 // 满足概率条件时保存更改
                 MapStateManager::getInstance().saveTileChange(
                     _mapName, TileConstants::TileChange(layerName, tileCoord, newGID));
@@ -92,7 +92,6 @@ void MineMap::replaceTileAt(const std::string& layerName, const Vec2& tileCoord,
             }
         }
         else {
-            // 其他瓦片类型直接保存
             MapStateManager::getInstance().saveTileChange(
                 _mapName, TileConstants::TileChange(layerName, tileCoord, newGID));
             CCLOG("Tile at (%f, %f) of type '%d' saved with new GID=%d", tileCoord.x, tileCoord.y, tiletype, newGID);
@@ -102,7 +101,7 @@ void MineMap::replaceTileAt(const std::string& layerName, const Vec2& tileCoord,
 
 // 获取指定瓦片的类型
 TileConstants::TileType MineMap::getTileTypeAt(const Vec2& tileCoord) const {
-    int layerGID = this->getTileGIDAt("ore", tileCoord); 
+    int layerGID = getTileGIDAt("ore", tileCoord); 
     if (layerGID == 0) {
         CCLOG("No tile found at (%f, %f)", tileCoord.x, tileCoord.y);
         return TileConstants::TileType::Other; // 返回默认类型

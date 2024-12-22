@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="80" height="65" tilewidth="16" tileheight="16" infinite="0" nextlayerid="17" nextobjectid="81">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="80" height="65" tilewidth="16" tileheight="16" infinite="0" nextlayerid="18" nextobjectid="81">
  <properties>
   <property name="AllowGrassSurviveInWinter" value="T"/>
   <property name="Outdoors" value="T"/>
@@ -745,6 +745,7 @@
  <tileset firstgid="2088" source="spring_outdoorsTileSheet_tree.tsx"/>
  <tileset firstgid="3208" source="houses.tsx"/>
  <tileset firstgid="3667" source="paths.tsx"/>
+ <tileset firstgid="3731" source="../Mine/springobjects.tr-TR.tsx"/>
  <layer id="15" name="Water" width="80" height="65">
   <data encoding="base64" compression="zlib">
    eJzt2EEKg0AQAEFf4Hfz/Rw8CVFJeg4Gq2A+0LDs7C4LAAAAAAAAAMDzvNbPw7Wjdhqeu+qm47Fv2+m390s/HTelnYb6Vfo1+nW6ddp12s3QrdMM4H7ca51dtfHe7CYa6ukPZIJ+jX6NM9zo1+jX6DdDv07DGfrN0W+Gfp1+jX7AP3gDgR/R5Q==
@@ -767,7 +768,7 @@
  </layer>
  <layer id="16" name="watering" width="80" height="65">
   <data encoding="base64" compression="zlib">
-   eJztw6ENADAMwLCw/v/vQEGfGLAlFwAAAAAAAAAAAAAAAPCjNxcAAAAAAACAWogzAgc=
+   eJztwTEBAAAAwqD1T20ND6AAAAAAAAAAAAAAAAAAAAAAAAAAAL4NUUAAAQ==
   </data>
  </layer>
  <layer id="12" name="Tree" width="80" height="65">

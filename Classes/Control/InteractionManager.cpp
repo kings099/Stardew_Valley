@@ -432,8 +432,10 @@ bool InteractionManager::MiningAt(const Vec2& tilePos) {
     //  对应非石头
     else if(tileinfo.type == TileConstants::TileType::Mine|| tileinfo.type == TileConstants::TileType::Treasure)// 矿物
     {
+
         _gameMap->replaceTileAt("path", tilePos, TileConstants::EMPTY_GID);
         _gameMap->replaceTileAt("ore", tilePos, TileConstants::EMPTY_GID);
+        AnimationHelper::playStoneBreakingAnimation(_gameMap->tileToRelative(tilePos), _gameMap->getTiledMap());
         return true;
 
     }
