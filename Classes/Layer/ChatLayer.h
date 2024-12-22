@@ -11,8 +11,8 @@
 #define CHATLAYER_H
 
 #include "cocos2d.h"
-
-
+#include"proj.win32/constant.h"
+#include "Character/NPC.h"
 class ChatLayer : public cocos2d::Layer {
 public:
     //构造函数
@@ -31,9 +31,9 @@ public:
     void ChatLayer::addAffectionText(const std::string& affectionInfo);
 
 private:
-    cocos2d::LayerColor* chatLayer;  ///< 半透明黑色背景层
-    cocos2d::Sprite* dialogBg;       ///< 对话框背景精灵
-    cocos2d::Label* dialogLabel;     ///< 显示消息的标签
+    cocos2d::LayerColor* _chatLayer;  ///< 半透明黑色背景层
+    cocos2d::Sprite* _dialogBg;       ///< 对话框背景精灵
+    cocos2d::Label* _dialogLabel;     ///< 显示消息的标签
 };
 
 #endif 

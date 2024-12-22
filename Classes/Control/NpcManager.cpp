@@ -11,7 +11,7 @@
 #include "NpcManager.h"
 
 // 初始化静态成员
-NpcManager* NpcManager::instance = nullptr;
+NpcManager* NpcManager::_instance = nullptr;
 
 // 构造函数
 NpcManager::NpcManager() {
@@ -22,61 +22,53 @@ NpcManager::NpcManager() {
 // 析构函数
 NpcManager::~NpcManager() {
     // 清理 NPC 列表
-    for (auto npc : npcs) {
+    for (auto npc : _npcs) {
         delete npc;
     }
-    npcs.clear();
+    _npcs.clear();
 }
 
 // 获取单例实例
 NpcManager* NpcManager::getInstance() {
-    if (!instance) {
-        instance = new NpcManager();  // 如果实例不存在，则创建
+    if (!_instance) {
+        _instance = new NpcManager();  // 如果实例不存在，则创建
     }
-    return instance;
+    return _instance;
 }
 
 // 初始化 NPC
 void NpcManager::initializeNPCs() {
     // 初始化 NPC 实例，并添加到 npcs 列表
-    NPC* npc1 = new NPC("Abigail", cocos2d::Vec2(100, 200), "../Resources/Characters/NPC/Abigail_1.png", { "../Resources/Characters/NPC/Abigail_1.png", "../Resources/Characters/NPC/Abigail_2.png" ,"../Resources/Characters/NPC/Abigail_3.png","../Resources/Characters/NPC/Abigail_4.png" });
-    npc1->dialogues = {
-        "Hello, traveler!",
-        "I feel like you care about me.",
-        "Thank you for the gift!"
+    NPC* npc1 = new NPC("Abigail", cocos2d::Vec2(100, 160), "../Resources/Characters/NPC/Abigail_1.png", { "../Resources/Characters/NPC/Abigail_1.png", "../Resources/Characters/NPC/Abigail_2.png" ,"../Resources/Characters/NPC/Abigail_3.png","../Resources/Characters/NPC/Abigail_4.png" });
+    npc1->_dialogues = {
+        "Hello, traveler",
+        "I feel like you care about me",
+        "Thank you for the gift"
     };
     // 添加任务给 Abigail（现在奖励是好感度）
-    Task* task1 = new Task("Give me a rare item from the mine.", 1, 1, 10); // 10 好感度
-    Task* task2 = new Task("Help me repair the building.", 2, 5, 20);      // 20 好感度
+    Task* task1 = new Task("Give me a gift from the mine.", "Timber", 1, 10);       // 10 好感度
+    Task* task2 = new Task("Help me repair the building.","Timber", 4, 20);                 // 20 好感度
 
     npc1->addTask(task1);
     npc1->addTask(task2);
 
     // 将 Abigail NPC 加入到 NPC 列表
-    npcs.push_back(npc1);
+    _npcs.push_back(npc1);
  
-    CCLOG("Abigail NPC initialized!");
 
     NPC* npc2 = new NPC("Mary", cocos2d::Vec2(300, 200), "../Resources/Characters/NPC/Abigail_1.png", { "../Resources/Characters/NPC/Abigail_1.png", "../Resources/Characters/NPC/Abigail_2.png" });
-    npc2->dialogues = {
-        "Welcome!",
-        "You are a kind person!",
-        "I appreciate your thoughtfulness!"
+    npc2->_dialogues = {
+        "Welcome",
+        "You are a kind person",
+        "I appreciate your thoughtfulness"
     };
-    npcs.push_back(npc2);
-    CCLOG("Mary NPC initialized!");
-
-    // 打印列表大小，确认 NPC 是否被添加
-    CCLOG("Number of NPCs: %d", npcs.size());
-    // 打印所有 NPC 名称
-    for (auto npc : npcs) {
-        CCLOG("NPC in list: %s", npc->getName().c_str());
-    }
+    _npcs.push_back(npc2);
+   
 }
 
 // 根据名称获取 NPC
 NPC* NpcManager::getNPCByName(const std::string& name) {
-    for (auto npc : npcs) {
+    for (auto npc : _npcs) {
         if (npc->getName() == name) {
             return npc;
         }

@@ -28,10 +28,14 @@ public:
 
     // 获取位置属性与屏幕坐标键值对(商店)
     const std::map<int, cocos2d::Vec2>& getStoreLocationMap() const;
+
+    // 获取位置属性与屏幕坐标键值对(合成表)
+    const std::map<int, cocos2d::Vec2>& getSysthesisTableLocationMap() const;
 private:
-    std::map<int, cocos2d::Vec2> _skillLevelLocationMap;    //位置属性与屏幕坐标键值对(技能等级)
-    std::map<Location, cocos2d::Vec2>_locationMap;          //位置属性与屏幕坐标键值对(物品栏)
-    std::map<int, cocos2d::Vec2>_storeLocationMap;          //位置属性与屏幕坐标键值对(商店)
+    std::map<int, cocos2d::Vec2> _skillLevelLocationMap;        //位置属性与屏幕坐标键值对(技能等级)
+    std::map<Location, cocos2d::Vec2>_locationMap;              //位置属性与屏幕坐标键值对(物品栏)
+    std::map<int, cocos2d::Vec2>_storeLocationMap;              //位置属性与屏幕坐标键值对(商店)
+    std::map<int , cocos2d::Vec2> _systhesisTableLocationMap;   //位置属性与屏幕坐标键值对(合成表)
     // 构造函数
     LocationMap();
 };

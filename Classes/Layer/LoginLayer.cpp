@@ -10,7 +10,7 @@
 #include "Character/CharacterInfo.h"
 #include "Scene/GameMainScene.h"
 
-LoginLayer::LoginLayer() : usernameInput(nullptr), farmNameInput(nullptr), favoriteInput(nullptr), submitButton(nullptr), loginLayer(nullptr)
+LoginLayer::LoginLayer() : _usernameInput(nullptr), _farmNameInput(nullptr), _favoriteInput(nullptr), _submitButton(nullptr), _loginLayer(nullptr)
 {
 }
 
@@ -40,10 +40,10 @@ bool LoginLayer::init()
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
     // 创建登录层
-    loginLayer = LayerColor::create(Color4B(0, 0, 0, 150)); // 半透明黑色背景层
-    if (loginLayer)
+    _loginLayer = LayerColor::create(Color4B(0, 0, 0, 150)); // 半透明黑色背景层
+    if (_loginLayer)
     {
-        this->addChild(loginLayer); // 将登录层添加到当前场景
+        this->addChild(_loginLayer); // 将登录层添加到当前场景
     }
     else
     {
@@ -55,67 +55,67 @@ bool LoginLayer::init()
     auto usernameInputBackground = cocos2d::ui::Scale9Sprite::create("../Resources/Helloworld/textBox.png");
     usernameInputBackground->setContentSize(Size(300, INPUT_BOX_HEIGHT_RATIO * visibleSize.height));
     usernameInputBackground->setPosition(Vec2(visibleSize.width * HALF_FACTOR, visibleSize.height * LABEL_Y_OFFSET));
-    loginLayer->addChild(usernameInputBackground);
+    _loginLayer->addChild(usernameInputBackground);
 
     // 创建用户名输入框
-    usernameInput = cocos2d::ui::TextField::create("Enter your username", "fonts/arial.ttf", FONT_SIZE);
-    usernameInput->setMaxLength(20);
-    usernameInput->setPosition(Vec2(visibleSize.width * HALF_FACTOR, visibleSize.height * LABEL_Y_OFFSET));
-    usernameInput->setAnchorPoint(Vec2(0.5f, 0.5f));
-    usernameInput->setTextHorizontalAlignment(TextHAlignment::CENTER);
-    usernameInput->setTextVerticalAlignment(TextVAlignment::CENTER);
-    loginLayer->addChild(usernameInput);
+    _usernameInput = cocos2d::ui::TextField::create("Enter your username", FONT_TYPE, FONT_SIZE);
+    _usernameInput->setMaxLength(20);
+    _usernameInput->setPosition(Vec2(visibleSize.width * HALF_FACTOR, visibleSize.height * LABEL_Y_OFFSET));
+    _usernameInput->setAnchorPoint(Vec2(0.5f, 0.5f));
+    _usernameInput->setTextHorizontalAlignment(TextHAlignment::CENTER);
+    _usernameInput->setTextVerticalAlignment(TextVAlignment::CENTER);
+    _loginLayer->addChild(_usernameInput);
 
     // 创建用户名标签
-    auto usernameLabel = Label::createWithTTF("Username", "fonts/arial.ttf", FONT_SIZE);
+    auto usernameLabel = Label::createWithTTF("Username", FONT_TYPE, FONT_SIZE);
     usernameLabel->setPosition(Vec2(visibleSize.width * HALF_FACTOR, visibleSize.height * LABEL_Y_OFFSET + INPUT_BOX_HEIGHT_RATIO * visibleSize.height * HALF_FACTOR + VERTICAL_SPACING_RATIO * visibleSize.height));
-    loginLayer->addChild(usernameLabel);
+    _loginLayer->addChild(usernameLabel);
 
     // 创建农场名输入框背景图
     auto farmNameInputBackground = cocos2d::ui::Scale9Sprite::create("../Resources/Helloworld/textBox.png");
     farmNameInputBackground->setContentSize(Size(300, INPUT_BOX_HEIGHT_RATIO * visibleSize.height));
     farmNameInputBackground->setPosition(Vec2(visibleSize.width * HALF_FACTOR, visibleSize.height * LABEL_Y_OFFSET - INPUT_BOX_SPACING_RATIO * visibleSize.height));
-    loginLayer->addChild(farmNameInputBackground);
+    _loginLayer->addChild(farmNameInputBackground);
 
     // 创建农场名输入框
-    farmNameInput = cocos2d::ui::TextField::create("Enter your farm name", "fonts/arial.ttf", FONT_SIZE);
-    farmNameInput->setMaxLength(20);
-    farmNameInput->setPosition(Vec2(visibleSize.width * HALF_FACTOR, visibleSize.height * LABEL_Y_OFFSET - INPUT_BOX_SPACING_RATIO * visibleSize.height));
-    farmNameInput->setAnchorPoint(Vec2(0.5f, 0.5f));
-    farmNameInput->setTextHorizontalAlignment(TextHAlignment::CENTER);
-    farmNameInput->setTextVerticalAlignment(TextVAlignment::CENTER);
-    loginLayer->addChild(farmNameInput);
+    _farmNameInput = cocos2d::ui::TextField::create("Enter your farm name", FONT_TYPE, FONT_SIZE);
+    _farmNameInput->setMaxLength(20);
+    _farmNameInput->setPosition(Vec2(visibleSize.width * HALF_FACTOR, visibleSize.height * LABEL_Y_OFFSET - INPUT_BOX_SPACING_RATIO * visibleSize.height));
+    _farmNameInput->setAnchorPoint(Vec2(0.5f, 0.5f));
+    _farmNameInput->setTextHorizontalAlignment(TextHAlignment::CENTER);
+    _farmNameInput->setTextVerticalAlignment(TextVAlignment::CENTER);
+    _loginLayer->addChild(_farmNameInput);
 
     // 创建农场名标签
-    auto farmNameLabel = Label::createWithTTF("Farm Name", "fonts/arial.ttf", FONT_SIZE);
+    auto farmNameLabel = Label::createWithTTF("Farm Name", FONT_TYPE, FONT_SIZE);
     farmNameLabel->setPosition(Vec2(visibleSize.width * HALF_FACTOR, visibleSize.height * LABEL_Y_OFFSET - INPUT_BOX_SPACING_RATIO * visibleSize.height + INPUT_BOX_HEIGHT_RATIO * visibleSize.height * HALF_FACTOR + VERTICAL_SPACING_RATIO * visibleSize.height));
-    loginLayer->addChild(farmNameLabel);
+    _loginLayer->addChild(farmNameLabel);
 
     // 创建最喜欢的东西输入框背景图
     auto favoriteInputBackground = cocos2d::ui::Scale9Sprite::create("../Resources/Helloworld/textBox.png");
     favoriteInputBackground->setContentSize(Size(300, INPUT_BOX_HEIGHT_RATIO * visibleSize.height));
     favoriteInputBackground->setPosition(Vec2(visibleSize.width * HALF_FACTOR, visibleSize.height * LABEL_Y_OFFSET - INPUT_BOX_SPACING_RATIO * visibleSize.height * 2));
-    loginLayer->addChild(favoriteInputBackground);
+    _loginLayer->addChild(favoriteInputBackground);
 
     // 创建最喜欢的东西输入框
-    favoriteInput = cocos2d::ui::TextField::create("Enter your favorite thing", "fonts/arial.ttf", FONT_SIZE);
-    favoriteInput->setMaxLength(20);
-    favoriteInput->setPosition(Vec2(visibleSize.width * HALF_FACTOR, visibleSize.height * LABEL_Y_OFFSET - INPUT_BOX_SPACING_RATIO * visibleSize.height * 2));
-    favoriteInput->setAnchorPoint(Vec2(0.5f, 0.5f));
-    favoriteInput->setTextHorizontalAlignment(TextHAlignment::CENTER);
-    favoriteInput->setTextVerticalAlignment(TextVAlignment::CENTER);
-    loginLayer->addChild(favoriteInput);
+    _favoriteInput = cocos2d::ui::TextField::create("Enter your favorite thing", FONT_TYPE, FONT_SIZE);
+    _favoriteInput->setMaxLength(20);
+    _favoriteInput->setPosition(Vec2(visibleSize.width * HALF_FACTOR, visibleSize.height * LABEL_Y_OFFSET - INPUT_BOX_SPACING_RATIO * visibleSize.height * 2));
+    _favoriteInput->setAnchorPoint(Vec2(0.5f, 0.5f));
+    _favoriteInput->setTextHorizontalAlignment(TextHAlignment::CENTER);
+    _favoriteInput->setTextVerticalAlignment(TextVAlignment::CENTER);
+    _loginLayer->addChild(_favoriteInput);
 
     // 创建最喜欢的东西标签
-    auto favoriteLabel = Label::createWithTTF("Favorite Thing", "fonts/arial.ttf", FONT_SIZE);
+    auto favoriteLabel = Label::createWithTTF("Favorite Thing", FONT_TYPE, FONT_SIZE);
     favoriteLabel->setPosition(Vec2(visibleSize.width * HALF_FACTOR, visibleSize.height * LABEL_Y_OFFSET - INPUT_BOX_SPACING_RATIO * visibleSize.height * 2 + INPUT_BOX_HEIGHT_RATIO * visibleSize.height * HALF_FACTOR + VERTICAL_SPACING_RATIO * visibleSize.height));
-    loginLayer->addChild(favoriteLabel);
+    _loginLayer->addChild(favoriteLabel);
 
     // 创建提交按钮
-    submitButton = cocos2d::ui::Button::create("../Resources/Helloworld/start.png", "../Resources/Helloworld/start_.png");
-    submitButton->setPosition(Vec2(visibleSize.width * HALF_FACTOR, visibleSize.height * LABEL_Y_OFFSET - INPUT_BOX_SPACING_RATIO * visibleSize.height * 3));
-    submitButton->addClickEventListener(CC_CALLBACK_1(LoginLayer::onSubmitClicked, this));
-    loginLayer->addChild(submitButton);
+    _submitButton = cocos2d::ui::Button::create("../Resources/Helloworld/start.png", "../Resources/Helloworld/start_.png");
+    _submitButton->setPosition(Vec2(visibleSize.width * HALF_FACTOR, visibleSize.height * LABEL_Y_OFFSET - INPUT_BOX_SPACING_RATIO * visibleSize.height * 3));
+    _submitButton->addClickEventListener(CC_CALLBACK_1(LoginLayer::onSubmitClicked, this));
+    _loginLayer->addChild(_submitButton);
 
     return true;
 }
@@ -123,25 +123,16 @@ bool LoginLayer::init()
 void LoginLayer::onSubmitClicked(Ref* sender)
 {
     // 获取输入的内容
-    std::string username = usernameInput->getString();
-    std::string farmName = farmNameInput->getString();
-    std::string favoriteThing = favoriteInput->getString();
-
-    // 打印输入内容
-    CCLOG("Username: %s, Farm Name: %s, Favorite Thing: %s", username.c_str(), farmName.c_str(), favoriteThing.c_str());
+    std::string username = _usernameInput->getString();
+    std::string farmName = _farmNameInput->getString();
+    std::string favoriteThing = _favoriteInput->getString();
 
     // 获取 CharacterInfo 的实例并保存数据
     CharacterInfo* characterInfo = CharacterInfo::getInstance();
     characterInfo->setCharacterInfo(username, farmName, favoriteThing);
 
-    // 打印保存后的信息
-    CCLOG("CharacterInfo after saving:");
-    CCLOG("Username: %s", characterInfo->getUsername().c_str());
-    CCLOG("Farm Name: %s", characterInfo->getFarmName().c_str());
-    CCLOG("Favorite Thing: %s", characterInfo->getFavoriteThing().c_str());
-
     // 隐藏登录界面
-    loginLayer->setVisible(false);
+    _loginLayer->setVisible(false);
 
     // 创建并切换到游戏主场景
     auto farmScene = GameMainScene::createScene();

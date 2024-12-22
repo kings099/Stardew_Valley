@@ -15,7 +15,7 @@ USING_NS_CC;
 
  // NPC 初始化
 NPC::NPC(std::string name, cocos2d::Vec2 position, const std::string& idleImage, const std::vector<std::string>& walkFrames)
-    : name(name), affection(0), isMarried(false), isMoving(false) {
+    : _name(name), _affection(0), _isMarried(false), _isMoving(false),_isProcessing(false) {
     setPosition(position);                    // 初始化 NPC 位置
     initializeSprite(idleImage, walkFrames);  // 初始化精灵和动画
 
@@ -27,101 +27,106 @@ NPC::NPC(std::string name, cocos2d::Vec2 position, const std::string& idleImage,
 
 // 初始化精灵和动画
 void NPC::initializeSprite(const std::string& idleImage, const std::vector<std::string>& walkFrames) {
-    sprite = cocos2d::Sprite::create(idleImage);
-    if (sprite == nullptr) {
-        CCLOG("Failed to load sprite: %s", idleImage.c_str());
-    }
-    sprite->setPosition(getPosition());
-    addChild(sprite);
+    _sprite = cocos2d::Sprite::create(idleImage);
+    _sprite->setPosition(getPosition());
+    addChild(_sprite);
 
     // 设置精灵缩放比例,让精灵的大小固定
-    sprite->setScaleX(NPC_WIDTH / sprite->getContentSize().width);  
-    sprite->setScaleY(NPC_HEIGHT / sprite->getContentSize().height); 
+    _sprite->setScaleX(NPC_WIDTH / _sprite->getContentSize().width);  
+    _sprite->setScaleY(NPC_HEIGHT / _sprite->getContentSize().height); 
 
+    
     // 设置行走动画
     cocos2d::Vector<cocos2d::SpriteFrame*> walkSpriteFrames;
     for (const auto& frame : walkFrames) {
         walkSpriteFrames.pushBack(cocos2d::SpriteFrame::create(frame, cocos2d::Rect(0, 0, 64, 64)));
     }
     cocos2d::Animation* walkAnim = cocos2d::Animation::createWithSpriteFrames(walkSpriteFrames, 0.2f);
-    walkAnimation = cocos2d::Animate::create(walkAnim);
+    _walkAnimation = cocos2d::Animate::create(walkAnim);
 }
 
-// 显示对话框
 void NPC::showDialog() {
-    int dialogueIndex = affection / 25;
-    dialogueIndex = std::min(dialogueIndex, (int)dialogues.size() - 1);
+    int dialogueIndex = _affection / AFFECTION_INDEX;
+    dialogueIndex = std::min(dialogueIndex, (int)_dialogues.size() - 1);
     std::string username = CharacterInfo::getInstance()->getUsername();  // 获取用户名
-    std::string dialogue = dialogues[dialogueIndex]+","+username;
-
-    // 创建并显示 ChatLayer
-    ChatLayer* chatLayer = ChatLayer::create(dialogue);  // 创建 ChatLayer 实例并传入对话内容
-    cocos2d::Scene* runningScene = cocos2d::Director::getInstance()->getRunningScene();
-    if (runningScene != nullptr) {
-        runningScene->addChild(chatLayer, 10);  // 将 ChatLayer 添加到当前场景
-    }
+    std::string dialogue = _dialogues[dialogueIndex] + "," + username;
+    showDialogue(dialogue);
 }
 
+void NPC::showDialogue(const std::string& dialogueText) {
+    // 创建 ChatLayer 实例并传入对话内容
+    ChatLayer* chatLayer = ChatLayer::create(dialogueText);
+
+    // 获取 NPC 当前的位置
+    Vec2 npcPosition = getPosition();
+
+    // 设置对话框位置相对于 NPC
+    chatLayer->setPosition(npcPosition.x + DIALOG_X_OFFSET, npcPosition.y + DIALOG_Y_OFFSET);
+
+    // 将 ChatLayer 添加为 NPC 的子节点
+    this->addChild(chatLayer); 
+}
 // 增加好感度
-void NPC::increaseAffection(int value, bool isRomantic) {
-    affection = std::min(100, affection + value);
+void NPC::increaseAffection(int value) {
+   _affection = std::min(MAX_AFFECTION, _affection + value);
 }
 
 // 显示询问用户是否求婚的UI
 void NPC::showMarriageChoices() {
-    if (affection >= 0 && !isMarried) {
-        // 获取当前场景
-        auto runningScene = cocos2d::Director::getInstance()->getRunningScene();
-        if (!runningScene) {
-            return;
-        }
-
-        const auto visibleSize = Director::getInstance()->getVisibleSize();
-        const auto origin = Director::getInstance()->getVisibleOrigin();
-
-      
+    if (_affection >= MARRIAGE_AFFECTION && !_isMarried) {
+        // 获取 NPC 当前的位置
+        Vec2 npcPosition = getPosition();
 
         // 创建一个自定义的对话框
         auto dialog = ui::Layout::create();
         dialog->setBackGroundColorType(ui::Layout::BackGroundColorType::SOLID);
-        dialog->setBackGroundColor(Color3B(0, 0, 0));
-        dialog->setOpacity(200);
-        dialog->setContentSize(Size(visibleSize.width * DIALOG_WIDTH_RATIO, visibleSize.height * DIALOG_HEIGHT_RATIO));
-        dialog->setPosition(Vec2(origin.x + visibleSize.width * 0.25f, origin.y + visibleSize.height * 0.375f));
-        runningScene->addChild(dialog, 10);
+        dialog->setBackGroundColor(Color3B(0, 0, 0));  // 设置背景为黑色
+        dialog->setBackGroundColorOpacity(128);  // 设置透明度为128（半透明）
 
-        // 创建询问文本信息，字体大小设为30
-        auto text = Label::createWithSystemFont("Would you like to propose?", "Arial", 30);
-        text->setPosition(Vec2(dialog->getContentSize().width / 2, dialog->getContentSize().height - dialog->getContentSize().height * 0.3f));
+        // 设置对话框大小
+        float dialogWidth = DIALOG_WIDTH;
+        float dialogHeight = DIALOG_HEIGHT;
+        dialog->setContentSize(Size(dialogWidth, dialogHeight));  // 设置对话框的内容大小
+
+        // 设置对话框的位置
+        dialog->setPosition(Vec2(DIALOG_X_OFFSET/2, DIALOG_Y_OFFSET/2));
+        this->addChild(dialog);  
+
+        // 创建询问文本信息
+        auto text = Label::createWithSystemFont("Would you like to propose?\nAffection is sufficient now!", FONT_TYPE, FONT_SIZE);
+        text->setPosition(Vec2(dialog->getContentSize().width / 2, dialog->getContentSize().height / 2));
         dialog->addChild(text);
 
-        // 创建额外的文本信息，字体大小设为30
-        auto text1 = Label::createWithSystemFont("Affection is sufficient now!", "Arial", 30);
-        text1->setPosition(Vec2(dialog->getContentSize().width / 2, dialog->getContentSize().height - dialog->getContentSize().height * 0.5f));
-        dialog->addChild(text1);
-
-        // "Yes" 按钮，玩家同意结婚，字体大小设为30
+        // "Yes" 按钮，玩家同意结婚
         auto yesButton = ui::Button::create();
         yesButton->setTitleText("Yes");
-        yesButton->setTitleFontSize(30);  // 设置按钮字体大小为30
-        yesButton->setPosition(Vec2(dialog->getContentSize().width / 2 - dialog->getContentSize().width * BUTTON_OFFSET_RATIO, dialog->getContentSize().height * BUTTON_SIZE_RATIO));
+        yesButton->setTitleFontSize(FONT_SIZE);  
+        yesButton->setPosition(Vec2(dialog->getContentSize().width * 0.3f, -dialog->getContentSize().height * 0.3f));
         yesButton->addClickEventListener([this, dialog](Ref* sender) {
-            marryPlayer();  // 玩家同意结婚
+            marryPlayer(); 
             dialog->removeFromParent();  // 移除对话框
+            _isProcessing = false;
             });
         dialog->addChild(yesButton);
 
-        // "No" 按钮，玩家拒绝结婚，字体大小设为30
+        // "No" 按钮，玩家拒绝结婚，字体大小设为24
         auto noButton = ui::Button::create();
         noButton->setTitleText("No");
-        noButton->setTitleFontSize(30);  // 设置按钮字体大小为30
-        noButton->setPosition(Vec2(dialog->getContentSize().width / 2 + dialog->getContentSize().width * BUTTON_OFFSET_RATIO, dialog->getContentSize().height * BUTTON_SIZE_RATIO));
+        noButton->setTitleFontSize(FONT_SIZE);  
+        noButton->setPosition(Vec2(dialog->getContentSize().width * 0.7f, -dialog->getContentSize().height * 0.3f));
         noButton->addClickEventListener([this, dialog](Ref* sender) {
             dialog->removeFromParent();  // 移除对话框
+            _isProcessing = false;
             });
         dialog->addChild(noButton);
     }
+    else {
+        std::string dialogue = "You can not propose!";
+        showDialogue(dialogue);
+        _isProcessing = false;
+    }
 }
+
 
 //处理求婚逻辑，包括播放动画，修改关系，消息提示用户已经结婚
 void NPC::marryPlayer() {
@@ -129,17 +134,19 @@ void NPC::marryPlayer() {
     playMarriageAnimation();
 
     // 设置婚姻状态
-    isMarried = true;
+    _isMarried = true;
 
     // 创建结婚消息的回调函数
     auto showWeddingMessage = [this]() {
         // 显示结婚消息
-        std::string weddingMessage = "You and " + name + " are now married!";
+        std::string weddingMessage = "You and " + _name + " are now married!";
         ChatLayer* chatLayer = ChatLayer::create(weddingMessage);
-        cocos2d::Scene* runningScene = cocos2d::Director::getInstance()->getRunningScene();
-        if (runningScene != nullptr) {
-            runningScene->addChild(chatLayer, 10);
-        }
+        // 设置对话框位置相对于 NPC
+
+        Vec2 npcPosition = getPosition();  // 获取 NPC 当前的位置
+        chatLayer->setPosition(npcPosition.x + DIALOG_X_OFFSET, npcPosition.y + DIALOG_Y_OFFSET);  // 将对话框位置设置为 NPC 的位置
+
+        this->addChild(chatLayer);
         };
 
     // 创建一个延时动作，在动画结束后调用 showWeddingMessage 函数
@@ -154,14 +161,14 @@ void NPC::playMarriageAnimation() {
     auto heartSprite = Sprite::create("../Resources/Characters/NPC/happy.png");
     // 设置开心表情的位置，偏移位置稍微往上
     Vec2 npcPosition = getPosition();
-    heartSprite->setPosition(npcPosition.x, npcPosition.y + (sprite->getContentSize().height / 2) * 1.2);  // 头顶位置
+    heartSprite->setPosition(npcPosition.x, npcPosition.y + _sprite->getContentSize().height / 2);  // 头顶位置
 
     // 将开心表情添加为 NPC 的子节点，这样它的坐标就会随 NPC 移动
-    this->addChild(heartSprite, 1);
+    this->addChild(heartSprite);
     heartSprite->setOpacity(0);  // 初始透明度为0，不可见
 
     // 放大效果
-    auto scaleUp = ScaleTo::create(0.3f, 1.5f);  // 放大效果
+    auto scaleUp = ScaleTo::create(3.0f, 1.5f);  // 放大效果
     auto scaleDown = ScaleTo::create(0.3f, 1.0f);  // 恢复到正常大小
 
     // 闪烁效果，快速地透明化和出现
@@ -169,7 +176,7 @@ void NPC::playMarriageAnimation() {
     auto fadeOut = FadeOut::create(0.2f);  // 渐隐效果
 
     // 颜色变化效果
-    auto colorChange = TintTo::create(0.2f, 255, 0, 0);  // 直接设置为红色
+    auto colorChange = TintTo::create(0.2f, 255, 0, 0);      // 直接设置为红色
     auto revertColor = TintTo::create(0.2f, 255, 255, 255); // 恢复为原来的颜色（白色）
 
     // 让心形精灵闪烁的动作序列
@@ -189,63 +196,94 @@ void NPC::playMarriageAnimation() {
 
 void NPC::showTaskList() {
     std::string taskInfo = "Available Tasks:\n";
-
     // 生成两个任务按钮
-    if (tasks.size() >= 2) {
+    if (_tasks.size() >= 2) {
         // 获取任务1
-        Task* task1 = tasks[0];
-        std::string task1Info = task1->getDescription() + (task1->checkCompletion() ? " (Completed)" : " (In Progress)");
-
+        Task* task1 = _tasks[0];
         // 获取任务2
-        Task* task2 = tasks[1];
-        std::string task2Info = task2->getDescription() + (task2->checkCompletion() ? " (Completed)" : " (In Progress)");
-
-        // 获取当前场景
-        auto runningScene = cocos2d::Director::getInstance()->getRunningScene();
-        if (!runningScene) {
-            return;
-        }
-
-        // 获取屏幕的宽度和高度，计算按钮的位置
-        const auto visibleSize = Director::getInstance()->getVisibleSize();
+        Task* task2 = _tasks[1];
 
         // 创建任务1按钮
         auto taskButton1 = ui::Button::create();
-        taskButton1->setTitleText(task1Info);
-        taskButton1->setPosition(Vec2(visibleSize.width / 2, visibleSize.height / 2 + 40));
-        taskButton1->setTitleFontSize(30); // 设置字体大小
-        taskButton1->addClickEventListener([this, task1, runningScene](Ref* sender) {
-            if (!task1->checkCompletion()) {
-                // 如果任务没有完成，执行任务
-                // 执行任务1的逻辑
-            }
-            else {
-
-            }
-            });
-        runningScene->addChild(taskButton1, 10);
+        taskButton1->setTitleText(task1->getDescription() + (task1->checkCompletion() ? " (Completed)" : " (In Progress)"));
+        taskButton1->setPosition(Vec2(250,200));
+        taskButton1->setTitleFontSize(24);
 
         // 创建任务2按钮
         auto taskButton2 = ui::Button::create();
-        taskButton2->setTitleText(task2Info);
-        taskButton2->setPosition(Vec2(visibleSize.width / 2, visibleSize.height / 2 - 40));
-        taskButton2->setTitleFontSize(30); // 设置字体大小
-        taskButton2->addClickEventListener([this, task2, runningScene](Ref* sender) {
-            if (!task2->checkCompletion()) {
-                // 如果任务没有完成，执行任务
-                // 执行任务2的逻辑
+        taskButton2->setTitleText(task2->getDescription() + (task2->checkCompletion() ? " (Completed)" : " (In Progress)"));
+        taskButton2->setPosition(Vec2(250, 230));
+        taskButton2->setTitleFontSize(24); 
+
+        // 创建任务1按钮点击事件
+        taskButton1->addClickEventListener([this, task1,taskButton1, taskButton2](Ref* sender) {
+            this->removeChild(taskButton1);
+            this->removeChild(taskButton2);
+            if (!task1->checkCompletion()) {
+                // 任务1的逻辑：检查玩家是否有Ring
+                Character* _character = Character::getInstance(); // 获取 Character 的单例对象
+                int targetObjectIndex = _character->findObjectByObjectList(task1->getRequiredItemName()); // 判断数量
+                if (targetObjectIndex != -1 && _character->findObjectAtPosition(targetObjectIndex).count > task1->getRequiredItemCount()) {
+                    GiftItem* gift = GiftItemManager::getInstance()->getGiftByName(task1->getRequiredItemName());
+                    _character->deleteObject(targetObjectIndex, task1->getRequiredItemCount());
+                    this->giftItem(gift);
+                    this->increaseAffection(task1->getAffectionReward());
+                    task1->setCompletion(true);
+                }
+                else {
+                    std::string dialogue = "Oh no,task can not be finished";
+                    showDialogue(dialogue);
+                }
             }
             else {
-
+                std::string dialogue = "Already be finished!";
+                showDialogue(dialogue);
             }
+            _isProcessing = false;
             });
-        runningScene->addChild(taskButton2, 10);
+       this->addChild(taskButton1);
+
+       
+       // 创建任务2按钮点击事件
+        taskButton2->addClickEventListener([this, task2, taskButton1, taskButton2](Ref* sender) {
+            this->removeChild(taskButton1);
+            this->removeChild(taskButton2);
+            if (!task2->checkCompletion()) {
+                // 任务2的逻辑：检查玩家是否有5个木材
+                Character* _character = Character::getInstance(); // 获取 Character 的单例对象
+                int targetObjectIndex = _character->findObjectByObjectList(task2->getRequiredItemName()); // 判断数量
+                if (targetObjectIndex != -1 && _character->findObjectAtPosition(targetObjectIndex).count > task2->getRequiredItemCount()) {
+                    // 数量大于5，删除5个木材
+                    _character->deleteObject(targetObjectIndex, task2->getRequiredItemCount());
+                    //增加任务对应的好感度
+                    this->increaseAffection(task2->getAffectionReward());
+                    std::string dialogue= "Task be finished!\n";
+                    std::string affectionInfo = "Affection added: " + std::to_string(task2->getAffectionReward()) +
+                        ", Current Affection: " + std::to_string(getAffection());
+                    showDialogue(dialogue+affectionInfo);
+                    task2->setCompletion(true);
+                }
+                else {
+                    std::string dialogue = "Oh no,materials isn't enough";
+                    showDialogue(dialogue);
+                }
+            }
+            else {
+                std::string dialogue = "Already be finished!";
+                showDialogue(dialogue);
+            }
+            _isProcessing = false;
+            });
+        this->addChild(taskButton2);
     }
+
+ 
+
 }
 
 
 void NPC::addTask(Task* task) {
-    tasks.push_back(task);
+    _tasks.push_back(task);
 }
 
 
@@ -255,86 +293,95 @@ bool NPC::isPlayerNear(cocos2d::Vec2 playerPosition) {
 }
 
 
-// 送礼物
 void NPC::giftItem(GiftItem* gift) {
-    int affectionIncrease = gift->getAffectionForNPC(name);  // 获取好感度增益
+    int affectionIncrease = gift->getAffectionForNPC(_name);  // 获取好感度增益
     increaseAffection(affectionIncrease);  // 更新 NPC 的亲密度
-
-    // 获取当前场景
-    cocos2d::Scene* runningScene = cocos2d::Director::getInstance()->getRunningScene();
-    if (!runningScene) {
-        return;
-    }
 
     // 在 NPC 头顶显示开心表情 2 秒
     Sprite* happyFace = Sprite::create("../Resources/Characters/NPC/happy.png");
 
-    
-   // 获取 NPC 的当前位置
+    // 获取 NPC 的当前位置
     Vec2 npcPosition = getPosition();
 
     // 设置开心表情的位置，偏移位置稍微往上
-    happyFace->setPosition(npcPosition.x, npcPosition.y + (sprite->getContentSize().height / 2)*1.2 );  // 头顶位置
-
+    happyFace->setPosition(npcPosition.x, npcPosition.y + _sprite->getContentSize().height/2);  // 头顶位置
 
     // 将开心表情添加为 NPC 的子节点，这样它的坐标就会随 NPC 移动
-    this->addChild(happyFace, 1); 
+    this->addChild(happyFace, 1);
 
     // 延迟 2 秒后移除开心表情并弹出 ChatLayer
     auto delay = DelayTime::create(2.0f);
-    auto showChatLayer = CallFunc::create([this, affectionIncrease, runningScene, gift]() {
+    auto showChatLayer = CallFunc::create([this, affectionIncrease, gift]() {
         // 创建并显示 ChatLayer
-        ChatLayer* chatLayer = ChatLayer::create("Thank you for the gift:" + gift->name + "  :)"); // 创建对话框
+        ChatLayer* chatLayer = ChatLayer::create("Thank you for the gift:" + gift->_name + "  :)"); 
+
+        // 设置 ChatLayer 的位置，相对于 NPC 的位置
+        Vec2 npcPosition = getPosition(); 
+        chatLayer->setPosition(npcPosition.x + DIALOG_X_OFFSET, npcPosition.y + DIALOG_Y_OFFSET);  
 
         // 在底部添加亲密度信息
         std::string affectionInfo = "Affection added: " + std::to_string(affectionIncrease) +
             ", Current Affection: " + std::to_string(getAffection());
-        chatLayer->addAffectionText(affectionInfo);  // 显示亲密度信息
+        chatLayer->addAffectionText(affectionInfo); 
 
-        // 将 ChatLayer 添加到当前场景
-        runningScene->addChild(chatLayer, 10);
+        // 将 ChatLayer 作为 NPC 的子节点
+        this->addChild(chatLayer); 
         });
 
-    // 创建一个移除开心表情并显示 ChatLayer的动作序列
+    // 创建一个移除开心表情并显示 ChatLayer 的动作序列
     auto removeAction = RemoveSelf::create();
     happyFace->runAction(Sequence::create(delay, removeAction, showChatLayer, nullptr));
-
-  
 }
-
 
 
 // 开始行走动画
 void NPC::startWalkingAnimation() {
-    if (sprite && walkAnimation) {
-        sprite->runAction(cocos2d::RepeatForever::create(walkAnimation));
+    if (_sprite && _walkAnimation) {
+        _sprite->runAction(cocos2d::RepeatForever::create(_walkAnimation));
     }
 }
 
 std::string NPC::getName() {
-    return name;
+    return _name;
 }
 
 // 获取当前好感度
 int NPC::getAffection() const {
-    return affection;  // 返回当前好感度
+    return _affection;  // 返回当前好感度
 }
 
 // 键盘按下事件处理
 void NPC::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* event) {
-    // 检查按下的是否是 T 键
-    if (keyCode == EventKeyboard::KeyCode::KEY_T) {
+    // 如果正在处理任务，直接返回
+
+    if (_isProcessing) {
+        return;
+    }
+
+    // 标记为正在处理任务
+    _isProcessing = true;
+ 
+    // 检查按下的是否是 K 键
+    if (keyCode == EventKeyboard::KeyCode::KEY_K) {
+        // 触发 NPC 显示对话框
+        showDialog();
+        _isProcessing = false;
+    }
+    // 检查按下的是否是 G 键
+    else if (keyCode == EventKeyboard::KeyCode::KEY_G) {
         // 触发 NPC 显示任务列表
         showTaskList();
+      
     }
-    if (keyCode == EventKeyboard::KeyCode::KEY_G) {
-        // 触发 NPC 送礼物
-        if (auto gift = GiftItemManager::getInstance()->getGiftByName("Rose")) { // 例如送“Rose”花
-            giftItem(gift);
-        }
-    }
-    if (keyCode == EventKeyboard::KeyCode::KEY_M) {
+    // 检查按下的是否是 M 键
+    else if (keyCode == EventKeyboard::KeyCode::KEY_M) {
         // 显示婚姻选择
         showMarriageChoices();
+   
     }
+}
+
+//设置任务处理状态
+void NPC::setIsProcessing(bool isProcessing) {
+    _isProcessing = isProcessing;
 }

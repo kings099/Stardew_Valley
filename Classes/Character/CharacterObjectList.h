@@ -42,13 +42,13 @@ public:
 	ObjectListNode deleteCurrentObject();
 
 	// 丢弃指定数量的物品
-	void deleteObject(int objectCount, int targetIndex= INVAVID_NUM);
+	void deleteObject(int objectCount, int targetIndex = INVAVID_NUM);
 
 	// 合成物品
-	bool synthesisObject(GameBaseObject targetObject);
+	bool synthesizeObject(GameBaseObject targetObject);
 
 	// 合成物品
-	bool synthesisObject(const std::string &targetObjectName);
+	bool synthesizeObject(const std::string &targetObjectName);
 
 	// 交换物品
 	void swapObject(int startIndex, int targetIndex);
@@ -64,6 +64,9 @@ public:
 
 	// 获取商店是否打开
 	bool getStoreStatus();
+
+	// 获取合成表是否打开
+	bool getSynthesisTableStatus();
 
 	// 查找指定位置的物品信息
 	ObjectListNode findObjectAtPosition(int index);
@@ -83,8 +86,8 @@ public:
 	// 设置当前选中的物品
 	void setCurrentObject(int index);
 
-	// 设置物品栏状态
-	void setObjectListStatus(bool status);
+	// 重置按键启用
+	void resetKeyEnabled();
 
 	// 保存数据
 	bool saveData(const std::string& fileName);
@@ -93,9 +96,10 @@ public:
 	bool loadData(const std::string& fileName);
 
 	// 回调函数
-	void setPickUpCallback(std::function<void(bool)> callback);
+	//void objectListChangeCallback(std::function<void(bool)> callback);
 
-	std::function<void(bool)> _pickUpCallback;  // 用于保存回调
+	std::function<void(bool)> _callback;  // 用于保存回调
+
 private:
 	std::vector<ObjectListNode> _objectList;	// 物品栏列表
 	int _maxObjectKindCount;					// 物品栏最大物品种类容量
@@ -104,6 +108,10 @@ private:
 	bool _openBox;								// 是否打开箱子
 	bool _openShop;							    // 是否打开商店
 	bool _openSynthesisTable;					// 是否打开合成台
+	bool _isEKeyEnabled;							// 是否启用E键
+	bool _isRKeyEnabled;							// 是否启用R键
+	bool _isTKeyEnabled;							// 是否启用T键
+	bool _isYKeyEnabled;							// 是否启用Y键
 	
 	// 查找物品栏中是否有指定物品
 	GameCommonObject findObjectByName(const std::string& name);

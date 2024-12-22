@@ -30,8 +30,8 @@ public:
     void startAudioCallback(cocos2d::Ref* pSender);
 
 private:
-    bool isAudioPlaying;  // “Ù∆µ≤•∑≈◊¥Ã¨
-    cocos2d::ui::Button* audioButton; // “Ù∆µøÿ÷∆∞¥≈•
+    bool _isAudioPlaying;  // “Ù∆µ≤•∑≈◊¥Ã¨
+    cocos2d::ui::Button* _audioButton; // “Ù∆µøÿ÷∆∞¥≈•
 };
 
 #endif // __AUDIO_CONTROL_LAYER_H__

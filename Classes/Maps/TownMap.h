@@ -11,6 +11,7 @@
 #define TOWNMAP_H
 
 #include "GameMap.h"
+#include "Control/NPCManager.h"
 USING_NS_CC;
 
 class TownMap : public GameMap
@@ -26,6 +27,8 @@ public:
     // 重写初始化函数 
     bool init(const std::string& mapFile, const Vec2& mapPosition) override;
 
+    // 根据获取小镇地图特定节点
+    Node* getNodeAtPosition(const Vec2& tilePos);
 
     MapType getType() const override { return MapType::Farm; }
 };

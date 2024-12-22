@@ -6,6 +6,11 @@
    <property name="TargetMap" value="../Resources/Maps/Farm/Farm_Combat.tmx"/>
   </properties>
  </tile>
+ <tile id="1">
+  <properties>
+   <property name="isCrop" type="bool" value="true"/>
+  </properties>
+ </tile>
  <tile id="7">
   <properties>
    <property name="canNotMove" type="bool" value="true"/>

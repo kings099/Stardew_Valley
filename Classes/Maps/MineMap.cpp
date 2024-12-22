@@ -126,3 +126,9 @@ TileConstants::TileType MineMap::getTileTypeAt(const Vec2& tileCoord) const {
 
     return TileConstants::TileType::Other; // 其他类型
 }
+
+Node* MineMap::getNodeAtPosition(const Vec2& tilePos) {
+    // 根据矿洞地图节点添加内容（目前暂无）
+
+    return nullptr;
+}

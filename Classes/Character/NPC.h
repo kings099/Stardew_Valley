@@ -21,21 +21,23 @@
 #include <vector>
 #include <string>
 #include"Character.h"
+#include"Box/Box.h"
+
 
 
 
 class NPC : public cocos2d::Node {
 public: 
-    std::string name;                    // NPC 的名字
-    int affection;                       // 好感度，范围 0 - 100
-    bool isMarried;                      // 是否已结婚
-    std::vector<std::string> dialogues;  // NPC 的对话内容
-    cocos2d::Vec2 destination;           // NPC 的目标位置
-    bool isMoving;                       // NPC 是否正在移动
-    cocos2d::Sprite* sprite;             // NPC 的精灵（外观）
-    cocos2d::Animate* walkAnimation;     // 行走动画
-    std::vector<Task*> tasks;            // NPC 拥有的任务
-
+    std::string _name;                    // NPC 的名字
+    int _affection;                       // 好感度，范围 0 - 100
+    bool _isMarried;                      // 是否已结婚
+    std::vector<std::string> _dialogues;  // NPC 的对话内容
+    cocos2d::Vec2 _destination;           // NPC 的目标位置
+    bool _isMoving;                       // NPC 是否正在移动
+    cocos2d::Sprite* _sprite;             // NPC 的精灵（外观）
+    cocos2d::Animate* _walkAnimation;     // 行走动画
+    std::vector<Task*> _tasks;            // NPC 拥有的任务
+    bool _isProcessing;                  // 用于判断是否正在处理任务
 
     // 构造函数，初始化 NPC 名字和位置
     NPC(std::string name, cocos2d::Vec2 position, const std::string& idleImage, const std::vector<std::string>& walkFrames);
@@ -47,9 +49,10 @@ public:
     // NPC 显示对话框
     void showDialog();
 
+    void showDialogue(const std::string& dialogueText);
 
     // 增加好感度
-    void NPC::increaseAffection(int value, bool isRomantic = true);
+    void NPC::increaseAffection(int value);
 
     void NPC::marryPlayer();
 
@@ -86,6 +89,8 @@ public:
     void showTaskList();
 
     void onKeyPressed(EventKeyboard::KeyCode keyCode, Event* event);
+
+    void setIsProcessing(bool isProcessing);
 
     };
 

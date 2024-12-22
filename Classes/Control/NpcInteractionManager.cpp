@@ -11,34 +11,3 @@
  ****************************************************************/
 #include "NpcInteractionManager.h"
 
-// 初始化静态成员
-NpcInteractionManager* NpcInteractionManager::instance = nullptr;
-
-NpcInteractionManager* NpcInteractionManager::getInstance() {
-    if (!instance) {
-        instance = new NpcInteractionManager();  // 如果实例不存在，则创建
-    }
-    return instance;
-}
-
-NpcInteractionManager::NpcInteractionManager() {
-    // 这里可以保持为空，NpcManager 和 GiftItemManager 已经是单例，不需要重复初始化
-}
-
-void NpcInteractionManager::giveGiftToNPC(const std::string& npcName, const std::string& giftName) {
-    // 直接通过单例获取 NpcManager 和 GiftItemManager
-    NPC* npc = NpcManager::getInstance()->getNPCByName(npcName);
-    GiftItem* gift = GiftItemManager::getInstance()->getGiftByName(giftName);
-
-    if (npc && gift) {
-        npc->giftItem(gift);  // 给 NPC 送礼物
-    }
-}
-
-void NpcInteractionManager::showDialog(const std::string& npcName) {
-    // 直接通过单例获取 NpcManager
-    NPC* npc = NpcManager::getInstance()->getNPCByName(npcName);
-    if (npc) {
-        NpcManager::getInstance()->showDialog(npc);  // 显示 NPC 对话
-    }
-}

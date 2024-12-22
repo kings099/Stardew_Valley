@@ -25,6 +25,11 @@
     <property name="isTree" type="bool" value="true"/>
    </properties>
   </tile>
+  <tile id="3">
+   <properties>
+    <property name="isCrop" type="bool" value="true"/>
+   </properties>
+  </tile>
   <tile id="6">
    <properties>
     <property name="canNotMove" type="bool" value="true"/>
@@ -768,7 +773,7 @@
  </layer>
  <layer id="16" name="watering" width="80" height="65">
   <data encoding="base64" compression="zlib">
-   eJztwTEBAAAAwqD1T20ND6AAAAAAAAAAAAAAAAAAAAAAAAAAAL4NUUAAAQ==
+   eJztzkEJAAAIBLD72b+vD1OICFuCJQAAAAAAAAAAAAAAAAAAAAAAwGdd1wMAgH0DYJwBBA==
   </data>
  </layer>
  <layer id="12" name="Tree" width="80" height="65">
