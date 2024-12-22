@@ -175,6 +175,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)\Resources\" /D /E /I /F /Y
     <ClCompile Include="..\Classes\CursorAndBUutton\HoverCursor.cpp" />
     <ClCompile Include="..\Classes\Layer\AudioControlLayer.cpp" />
     <ClCompile Include="..\Classes\Layer\ChatLayer.cpp" />
+    <ClCompile Include="..\Classes\Layer\FestivalLayer.cpp" />
     <ClCompile Include="..\Classes\Layer\LoginLayer.cpp" />
     <ClCompile Include="..\Classes\Layer\PlacementMarkerLayer.cpp" />
     <ClCompile Include="..\Classes\Layer\UILayer.cpp" />
@@ -217,6 +218,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)\Resources\" /D /E /I /F /Y
     <ClInclude Include="..\Classes\CursorAndBUutton\HoverCursor.h" />
     <ClInclude Include="..\Classes\Layer\AudioControlLayer.h" />
     <ClInclude Include="..\Classes\Layer\ChatLayer.h" />
+    <ClInclude Include="..\Classes\Layer\FestivalLayer.h" />
     <ClInclude Include="..\Classes\Layer\LoginLayer.h" />
     <ClInclude Include="..\Classes\Layer\PlacementMarkerLayer.h" />
     <ClInclude Include="..\Classes\Layer\UILayer.h" />
