@@ -320,7 +320,7 @@ void UILayer::initializeTimeDisplay() {
 
     _weatherLabel = Label::createWithSystemFont("", FONT_TYPE, FONT_SIZE);
     _weatherLabel->setPosition(_visibleSize.width * 0.9f, _visibleSize.height * 0.8f);
-    _weatherLabel->setTextColor(Color4B::ORANGE);
+    _weatherLabel->setTextColor(Color4B::BLACK);
     this->addChild(_weatherLabel, UI_LAYER_GRADE);
 }
 
@@ -571,7 +571,7 @@ void UILayer::updateTimeDisplay() {
     std::string timeOfDay = timeManager->getCurrentTime();
     _timeHourLabel->setString(season+"-"+dayOrNight + " " + timeOfDay);  // 显示白天/晚上和当前时间的代码部分
     std::string weather = timeManager->getCurrentWeatherStr();
-    _weatherLabel->setString(weather);  // 显示天气信息
+    _weatherLabel->setString("Weather: " + weather);  // 显示天气信息
 
     if (_lastWeekDay != weekDay) {
         _lastWeekDay = weekDay;
@@ -589,7 +589,7 @@ void UILayer::updateCharacterMoneyLabel() {
         this->removeChild(_characterMoneyLabel);
         _characterMoneyLabel = nullptr;
     }
-    _characterMoneyLabel = Label::create(std::to_string(_character->getMoney()), "../Resources/fonts/arial.ttf", FONT_SIZE);
+    _characterMoneyLabel = Label::create("Money: "+std::to_string(_character->getMoney()), "../Resources/fonts/arial.ttf", FONT_SIZE);
     _characterMoneyLabel->setPosition(Vec2(_visibleSize.width * 4 / 5 + 271, _visibleSize.height * 4 / 5 + 30));
     _characterMoneyLabel->setAnchorPoint(RIGHT_ALIGNED_ANCHOR);
     _characterMoneyLabel->setTextColor(Color4B::ORANGE);

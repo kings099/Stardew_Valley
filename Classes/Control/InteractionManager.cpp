@@ -292,8 +292,9 @@ void InteractionManager::ActionAnimation(GameCharacterAction action, const Vec2&
     case Harvesting:// 收获
         HarvestAt(TilePos);
         break;
-
-
+    case Debug:
+        TreatPestAt(TilePos);
+        break;
     }
     // 输出掉落物的调试信息
     for (const auto& dropPair : actionTileInfo.drops) {

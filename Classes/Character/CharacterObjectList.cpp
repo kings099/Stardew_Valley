@@ -342,7 +342,7 @@ void CharacterObjectList::resetKeyEnabled() {
 // 查找物品栏中是否有指定物品
 int CharacterObjectList::findObjectByObjectList(GameCommonObject targetObject) {
 	int index = -1;
-	if (targetObject.object->_name == "None") {
+	if (targetObject.type == None) {
 		return index;
 	}
 	for (int i = 0; i < _maxObjectKindCount; i++) {
