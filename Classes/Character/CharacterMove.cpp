@@ -3,13 +3,12 @@
  * File Name:     Character.cpp
  * File Function: 角色移动Character类的实现
  * Author:        尹诚成
- * Update Date:   2023/12/19
+ * Update Date:   2024/12/19
  * License:       MIT License
  ****************************************************************/
 
 #include<fstream>
 #include "CharacterMove.h"
-#include "Classes/Maps/GameMap.h"
 #include "../proj.win32/Constant.h"
 
 USING_NS_CC;
@@ -26,7 +25,6 @@ CharacterMove::CharacterMove() :
     const auto visibleSize = Director::getInstance()->getVisibleSize();
     const Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
-     // _character->setScale(2.0f);
     if (!loadData("../GameData/CharacterMoveData.dat")) {
         _lastDirection = Down;
         _currentDirection = Down;

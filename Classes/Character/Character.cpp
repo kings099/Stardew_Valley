@@ -9,7 +9,6 @@
 
 #include "Character.h"
 #include "../proj.win32/Constant.h"
-#include <algorithm>
 
 USING_NS_CC;
 // 获取单例

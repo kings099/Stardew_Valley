@@ -254,8 +254,6 @@ void CharacterAction::updateSkillExprience(GameCharacterAction gameCharacterActi
 	}
 }
 
-
-
 // ±£´æÊý¾Ý
 bool CharacterAction::saveData(const std::string& fileName) {
 	std::ofstream outFile(fileName, std::ios::binary );

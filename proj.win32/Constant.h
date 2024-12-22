@@ -58,7 +58,6 @@ constexpr float LABEL_Y_OFFSET = 0.6f;                                     // �
 constexpr float HALF_FACTOR = 0.5f;                                        // 替代 / 2 的常量因子
 
 //NPC相关设置
-
 constexpr float INTERACTION_DISTANCE = 30.0f;                               //能够与NPC实现互动的最小距离
 constexpr float NPC_WIDTH = 16;											    // NPC宽度
 constexpr float NPC_HEIGHT =32;                                             // NPC高度
@@ -70,7 +69,6 @@ constexpr float DIALOG_HEIGHT = 200.0f;                                     //�
 constexpr int DIALOG_X_OFFSET = 250;                                        //对话框相对NPC的偏移量
 constexpr int DIALOG_Y_OFFSET = 160;                                        //对话框相对于NPC的偏移量
 constexpr float FESTIVAL_UPDATE = 1.0f;
-
 
 // 角色相关设置
 constexpr int CHARACTER_WIDTH = 32;											// 角色宽度
@@ -279,15 +277,15 @@ constexpr float CROP_HORIZONTAL_ANCHORPOINT = 0.5f;					        // 树水平锚�
 constexpr float TREE_VERTICAL_ANCHORPOINT = 0.0f;						    // 树垂直锚点
 constexpr float CROP_VERTICAL_ANCHORPOINT = 0.5f;						    // 树垂直锚点
 
-//动物类
+//动物类设置
 constexpr float ANIMAL_RATIO = 1.0f;                                            //动物类的缩放比例
 constexpr float ANGRY_ICON_RATIO = 0.8f;                                        //动物发怒提示的缩放比例
 
-//鱼类
+//鱼类设置
 constexpr float FISH_RATIO = 1.0f;                                              // 鱼的缩放比例
 constexpr float FAIL_TO_GET_FISH = 0.3f;                                        // 钓不到鱼的概率
 
-//动画类
+//动画类设置
 constexpr float WOOD_CUT_RATIO = 0.3f;                                          // 砍木桩动画的缩放比例
 constexpr float WEEDING_RATIO = 0.4f;                                           // 除草动画的缩放比例
 constexpr float STONE_BREAK_RATIO = 0.2f;                                       // 碎石动画的缩放比例
@@ -296,11 +294,11 @@ constexpr float BRANCH_RATIO = 0.5f;                                            
 
 // 地图类型设置
 enum class MapType {
-    Generic,
-    Mine,
-    Farm,
-    Indoor,
-    Town
+    Generic,            // 通用地图
+    Mine,               // 矿洞地图
+    Farm,               // 农场地图
+    Indoor,             // 室内地图
+    Town                // 小镇地图
 };
 
 //游戏物品对应技能类型定义
@@ -309,7 +307,6 @@ enum GameObjectSkillType {
     Collect,			// 采集
     Mine,				// 采矿
     Fish,				// 钓鱼
-   // None,				// 无
 };
 
 // 游戏工具类型定义
