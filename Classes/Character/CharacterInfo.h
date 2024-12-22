@@ -32,11 +32,11 @@ private:
     CharacterInfo() {}
 
     // 存储唯一的实例，单例模式
-    static CharacterInfo* instance;
+    static CharacterInfo* _instance;
 
     // 用户信息
-    std::string username;
-    std::string farmName;
-    std::string favoriteThing;
+    std::string _username;
+    std::string _farmName;
+    std::string _favoriteThing;
 };
 

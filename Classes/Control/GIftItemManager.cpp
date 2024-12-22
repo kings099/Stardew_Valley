@@ -45,7 +45,7 @@ void GiftItemManager::initializeGifts() {
 GiftItem* GiftItemManager::getGiftByName(const std::string& name) {
     // 根据名称查找礼物
     for (auto& gift : _gifts) {
-        if (gift.name == name) {
+        if (gift._name == name) {
             return &gift;
         }
     }

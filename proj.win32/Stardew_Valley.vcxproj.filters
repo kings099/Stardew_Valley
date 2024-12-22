@@ -235,9 +235,6 @@
     <ClCompile Include="..\Classes\Character\NPC.cpp">
       <Filter>Classes\Character</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\Character\GiftItem.cpp">
-      <Filter>Classes\Character</Filter>
-    </ClCompile>
     <ClCompile Include="..\Classes\Control\NpcManager.cpp">
       <Filter>Classes\Control</Filter>
     </ClCompile>

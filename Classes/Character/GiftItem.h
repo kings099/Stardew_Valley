@@ -16,14 +16,14 @@
 
 class GiftItem {
 public:
-    std::string name;  // 礼物名称
-    int baseAffectionValue;  // 礼物的基本好感度增益
+    std::string _name;  // 礼物名称
+    int _baseAffectionValue;  // 礼物的基本好感度增益
 
     // 存储不同 NPC 对该礼物的不同好感度反应
     std::map<std::string, int> affectionByNPC;
 
     GiftItem(const std::string& name, int baseAffectionValue)
-        : name(name), baseAffectionValue(baseAffectionValue) {}
+        : _name(name), _baseAffectionValue(baseAffectionValue) {}
 
     // 设置某个 NPC 对该礼物的特殊好感度值
     void setAffectionForNPC(const std::string& npcName, int value) {
@@ -35,7 +35,7 @@ public:
         if (affectionByNPC.find(npcName) != affectionByNPC.end()) {
             return affectionByNPC[npcName];
         }
-        return baseAffectionValue;  // 默认使用基础好感度值
+        return _baseAffectionValue;  // 默认使用基础好感度值
     }
 };
 

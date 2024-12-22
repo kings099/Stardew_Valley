@@ -313,7 +313,7 @@ void NPC::giftItem(GiftItem* gift) {
     auto delay = DelayTime::create(2.0f);
     auto showChatLayer = CallFunc::create([this, affectionIncrease, gift]() {
         // 创建并显示 ChatLayer
-        ChatLayer* chatLayer = ChatLayer::create("Thank you for the gift:" + gift->name + "  :)"); 
+        ChatLayer* chatLayer = ChatLayer::create("Thank you for the gift:" + gift->_name + "  :)"); 
 
         // 设置 ChatLayer 的位置，相对于 NPC 的位置
         Vec2 npcPosition = getPosition(); 
