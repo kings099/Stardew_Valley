@@ -792,33 +792,6 @@ GameBaseObject(42, "../Resources/Objects/Base/TunaFish.png", "TunaFish", "金枪
    // GameBaseObject(30,"","None","无效物品",GameObjectSkillType::None,0,0,false,INVAVID_NUM,false,INVAVID_NUM,false,INVAVID_NUM,false,false,{})
 };
 
-// 为每个物品类型创建名字到解锁等级的映射
-std::map<std::string, int> seedUnlockLevels;
-std::map<std::string, int> baseObjectUnlockLevels;
-
-// 初始化这些映射
-void initializeUnlockLevels() {
-    for (const auto& seed : GAME_SEED_OBJECTS_ATTRS) {
-        seedUnlockLevels[seed._name] = seed._level;
-    }
-    for (const auto& base : GAME_BASE_OBJECTS_ATTRS) {
-        baseObjectUnlockLevels[base._name] = base._level;
-    }
-}
-
-// 查找物品的解锁等级
-int getUnlockLevel(const std::string& itemName) {
-    if (seedUnlockLevels.find(itemName) != seedUnlockLevels.end()) {
-        return seedUnlockLevels[itemName];
-    }
-    else if (baseObjectUnlockLevels.find(itemName) != baseObjectUnlockLevels.end()) {
-        return baseObjectUnlockLevels[itemName];
-    }
-    else {
-        CCLOG("物品未找到: %s", itemName.c_str());  // 使用 CCLOG 输出错误信息
-        return -1; // 如果未找到该物品
-    }
-}
 
 // 游戏物品属性定义
 struct GameCommonObject {

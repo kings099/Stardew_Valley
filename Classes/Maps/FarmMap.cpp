@@ -68,6 +68,7 @@ bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition, Node* Tr
     // 添加树木层
     _treeLayer = TreeLayer;
     plantTreesOnPathLayer(); 
+  
     //监听鼠标
     auto listener = EventListenerMouse::create();
     listener->onMouseDown = CC_CALLBACK_1(FarmMap::onMouseEvent, this);  // 监听鼠标点击事件

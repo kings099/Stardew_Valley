@@ -459,10 +459,10 @@ void Crops::harvestCrop() {
     if (_isRemoved == true) {//已经被采摘了的不能重复采摘
         return;
     }
-    if (!canBePlanted()) { // 如果不满足条件（主要是等级检查）
-        CCLOG("Crop '%s' cannot be planted due to level restriction.", _type.c_str());
-        return;
-    }
+    //if (!canBePlanted()) { // 如果不满足条件（主要是等级检查）
+    //    CCLOG("Crop '%s' cannot be planted due to level restriction.", _type.c_str());
+    //    return;
+    //}
 
     if (isReadyToHarvest()) {
         CCLOG("Crop '%s' harvested successfully!", _type.c_str());

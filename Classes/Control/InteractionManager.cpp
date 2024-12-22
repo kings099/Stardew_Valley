@@ -321,6 +321,7 @@ void InteractionManager::getTreeAndChopAt(const Vec2& tilePos) {
 
     // 使用多态调用 GameMap 的 getTreeAtPosition
     auto treeSprite = _gameMap->getTreeAtPosition(tilePos);
+    treeSprite->waterCrop();
     if (treeSprite) {
         CCLOG("Tree found at (%f, %f). Chopping tree...", tilePos.x, tilePos.y);
         treeSprite->chopTree();
