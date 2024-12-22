@@ -33,7 +33,7 @@ CharacterAction::CharacterAction():
 }
 
  // 按下鼠标事件触发函数
-void CharacterAction::onMouseDown(cocos2d::Event* event, GameCharacterAction& gameCharacterAction, cocos2d::Vec2& targetTilePos, InteractionManager* interactionManager) {
+bool CharacterAction::onMouseDown(cocos2d::Event* event, GameCharacterAction& gameCharacterAction, cocos2d::Vec2& targetTilePos, InteractionManager* interactionManager) {
 	const EventMouse* mouseEvent = dynamic_cast<EventMouse*>(event);
 	stopMove();
 	if (!getObjectListStatus()) {
@@ -44,18 +44,21 @@ void CharacterAction::onMouseDown(cocos2d::Event* event, GameCharacterAction& ga
 			gameCharacterAction = getRightButtonAction();
 		}
 		if (checkActionIsValid(gameCharacterAction, targetTilePos, interactionManager)) {
-			changeObject(gameCharacterAction, interactionManager);
+			getObject(gameCharacterAction, interactionManager);
 			updateSkillExprience(gameCharacterAction);
 			updateSkillLevel();
+			return true;
 		}
 		else {
 			gameCharacterAction = NoneAction;
+			return false;
 		}
 	}
+	return false;
 }
 
-// 获取物品
-void CharacterAction::changeObject(GameCharacterAction action, InteractionManager* interactionManager) {
+// 获得物品
+void CharacterAction::getObject(GameCharacterAction action, InteractionManager* interactionManager) {
 	TileInfo targetTileNode = getTileInfo(action, interactionManager);
 	std::string fishName = Fishs::catchFish(TimeManager::getInstance()->getCurrentSeason(),_skillLevel[Fish]);
 	switch (action) {
@@ -77,16 +80,27 @@ void CharacterAction::changeObject(GameCharacterAction action, InteractionManage
 				pickUpObject(fishName, 1);
 			}
 			break;
-		// 需要消耗物品的动作
-		case Seeding:
-		case Placement:
-			if (getCurrentObject().objectNode.object->_name == "Box") {	//放置箱子
-				Box::getInstance().addBox(BoxNode(targetTileNode.WorldPos));
-			}
-			//deleteObject(1, getCurrentObjectIndex());
+		
+		// 没有物品改变的动作
+		case DestoryObject:
 			break;
 		default:
 			break;
+	}
+}
+
+// 使用物品
+void CharacterAction::useObject(GameCharacterAction action, InteractionManager* interactionManager) {
+	TileInfo targetTileNode = getTileInfo(action, interactionManager);
+	switch (action) {
+		// 需要消耗物品的动作
+	case Seeding:
+	case Placement:
+		if (getCurrentObject().objectNode.object->_name == "Box") {	//放置箱子
+			Box::getInstance().addBox(BoxNode(targetTileNode.WorldPos));
+		}
+		deleteObject(1, getCurrentObjectIndex());
+		break;
 	}
 }
 
@@ -113,7 +127,7 @@ GameCharacterAction CharacterAction::getLeftButtonAction() {
 	ObjectListNode currentObject = getCurrentObject();
 	switch (currentObject.objectNode.type) {
 	case None:
-		return NoneAction;
+		return DestoryObject;
 	case Tool: {
 		auto toolObjectPtr = std::dynamic_pointer_cast<GameToolObject>(currentObject.objectNode.object);
 		return toolObjectPtr->_action;
@@ -167,6 +181,10 @@ bool CharacterAction::checkActionIsValid(GameCharacterAction action, Vec2& targe
 		if (action == test.first) {
 			for (auto& tileType : test.second) {
 				if (tileType == targetTileNode.type) {
+					if (action == Watering) {
+							
+						}
+
 					return action;
 				}
 			}

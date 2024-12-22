@@ -183,6 +183,39 @@ ObjectListNode CharacterObjectList::deleteCurrentObject() {
 	return tempObject;
 }
 
+// 丢弃指定数量的物品
+void CharacterObjectList::deleteObject(int objectCount, int targetIndex) {
+
+	if (targetIndex == INVAVID_NUM) {
+		int index = getCurrentObjectIndex();
+		if (_objectList[index].count < objectCount) {
+			return;
+		}
+		else {
+			_objectList[index].count -= objectCount;
+		}
+		if (_objectList[index].count == 0) {
+			_objectList[index] = { {None,nullptr},0,Unselected };
+		}
+	}
+	else {
+		if (_objectList[targetIndex].count < objectCount) {
+			return;
+		}
+		else {
+			_objectList[targetIndex].count -= objectCount;
+		}
+		if (_objectList[targetIndex].count == 0) {
+			_objectList[targetIndex] = { {None,nullptr},0,Unselected };
+		}
+	}
+
+	if (_callback) {
+		_callback(true);
+	}
+}
+
+
 // 合成物品
 bool CharacterObjectList::synthesizeObject(GameBaseObject targetObject) {
 	if (!targetObject._synthesis) {
@@ -308,6 +341,9 @@ void CharacterObjectList::resetKeyEnabled() {
 // 查找物品栏中是否有指定物品
 int CharacterObjectList::findObjectByObjectList(GameCommonObject targetObject) {
 	int index = -1;
+	if (targetObject.object->_name == "None") {
+		return index;
+	}
 	for (int i = 0; i < _maxObjectKindCount; i++) {
 		// 只有物品不是工具才会被查找
 		if (_objectList[i].count!=0&& _objectList[i].objectNode.object->_name == targetObject.object->_name && (targetObject.type != Tool)) {
@@ -317,35 +353,6 @@ int CharacterObjectList::findObjectByObjectList(GameCommonObject targetObject) {
 	}
 	// 没有找到
 	return index;
-}
-
-// 丢弃指定数量的物品
-void CharacterObjectList::deleteObject(int objectCount, int targetIndex) {
-
-	if (targetIndex == INVAVID_NUM) {
-		int index = getCurrentObjectIndex();
-		if (_objectList[index].count < objectCount) {
-			return;
-		}
-		else {
-			_objectList[index].count -= objectCount;
-		}
-		if (_objectList[index].count == 0) {
-			_objectList[index] = { {None,nullptr},0,Unselected };
-		}
-	}
-	else {
-		if (_objectList[targetIndex].count < objectCount) {
-			return;
-		}
-		else {
-			_objectList[targetIndex].count -= objectCount;
-		}
-		if (_objectList[targetIndex].count == 0) {
-			_objectList[targetIndex] = { {None,nullptr},0,Unselected };
-		}
-	}
-
 }
 
 // 查找物品栏中是否有指定物品

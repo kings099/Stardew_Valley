@@ -35,7 +35,6 @@ constexpr float LABEL_Y_OFFSET = 0.6f;                                     // �
 constexpr float HALF_FACTOR = 0.5f;                                        // 替代 / 2 的常量因子
 
 //NPC相关设置
-
 constexpr float NPC_WIDTH = 16;											    // NPC宽度
 constexpr float NPC_HEIGHT =32;                                             // NPC高度
 constexpr int   AFFECTION_INDEX = 25;                                       // NPC喜爱度因子
@@ -469,7 +468,7 @@ const std::map< GameCharacterAction, std::vector<TileConstants::TileType>> ACTIO
     { Harvesting,   { TileConstants::Crop }},          // 右键
     { Placement,    { TileConstants::Soil }},          // 右键
     //{ OpenBox,      {TileConstants::Box}},            // 右键
-    { DestoryObject, {TileConstants::Other} }         // 左键
+    { DestoryObject, {TileConstants::Other,TileConstants::Box}}         // 左键
   };
 
 // 游戏物品共有属性定义
