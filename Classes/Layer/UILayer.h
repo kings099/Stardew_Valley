@@ -48,23 +48,26 @@ public:
 	// 初始化技能板
 	void initializeSkillBoard();
 
+	// 初始化时间显示器
+	void initializeTimeDisplay();
+
 	// 初始化商店
 	void initializeShop();
 
 	// 更新物品栏
 	void updateObjectList();
 
-	// 显示物品图片
-	void showObjectImage();
-
-	// 初始化时间显示器
-	void initializeTimeDisplay();
-
 	// 更新时间显示器
 	void updateTimeDisplay();
 
+	// 更新角色金钱显示
+	void updateCharacterMoneyLabel();
+
 	// 更新UI界面
 	void update(float deltaTime);
+
+	// 显示物品图片
+	void showObjectImage();
 
 	// UILayer的create函数
 	CREATE_FUNC(UILayer);
@@ -75,12 +78,14 @@ private:
 	cocos2d::Size _visibleSize;														// 可见区域的大小
 	cocos2d::Label* _timeLabel1;													// 显示星期和日期的标签指针
 	cocos2d::Label* _timeLabel2;													// 显示白天/晚上和小时的标签指针
+	cocos2d::Label* _characterMoneyLabel;											// 角色金钱显示标签指针
 	cocos2d::Sprite* _timeDisplayLayer;												// 用作为时间显示器背景的图片指针
 	cocos2d::Sprite* _closedObjectListLayer;										// 物品栏关闭状态图片指针
 	cocos2d::Sprite* _openedObjectListLayer;										// 物品栏打开状态图片指针
 	cocos2d::Sprite* _boxObjectListLayer;											// 箱子物品栏图片指针
-	cocos2d::Sprite* _skillLevelBoardLayer;											// 技能板指针
-	cocos2d::Sprite* _shopLayer;													// 商店指针
+	cocos2d::Sprite* _skillLevelBoardLayer;											// 技能板图片指针
+	cocos2d::Sprite* _shopLayer;													// 商店图片指针
+	cocos2d::Sprite* _synthesisTableLayer;											// 合成表图片指针
 	cocos2d::Sprite* _selectObjectSpriteMarker[OBJECT_LIST_COLS];					// 选中物品的标记指针(关闭状态的物品栏）
 	cocos2d::Sprite* _skillLevelLayer[SKILL_KIND_NUM * SKILL_LEVEL_NUM];			// 技能等级指针
 	cocos2d::Sprite* _nearestPlacementMarker;										// 最近放置标记指针
@@ -100,6 +105,7 @@ private:
 	bool _storeStatus;																// 商店状态
 	int _lastSelectedObjectIndex;													// 上一次物品栏索引
 	Location _startLocation;														// 物品移动起始位置属性
+	std::string _lastWeekDay;														// 上一天的信息
 	// 创建物品图片 
 	void createObjectImage(ObjectImageInfo& objectImageInfo,const std::string spriteFileName,const int count);
 
@@ -126,9 +132,6 @@ private:
 
 	// 设置技能等级的显示状态
 	void setSkillLevel(bool show);
-
-	// 检查鼠标是否在某个精灵区域内
-	bool isMouseOverSprite(EventMouse* mouseEvent, const Vec2& mousePosition, cocos2d::Sprite* sprite);
 
 	// 关闭回调
 	void menuCloseCallback(cocos2d::Ref* pSender);

@@ -43,6 +43,7 @@ UILayer::UILayer() :
     _store = Store::getInstance();
     _store->refreshStock();
     _visibleSize = Director::getInstance()->getVisibleSize();
+    _lastWeekDay = "Monday";
     std::fill_n(_selectObjectSpriteMarker, OBJECT_LIST_COLS, nullptr);
     std::fill_n(_skillLevelLayer, SKILL_KIND_NUM * SKILL_LEVEL_NUM, nullptr);
     std::fill_n(_closedObjectSpriteImage, OBJECT_LIST_COLS, ObjectImageInfo());
@@ -59,7 +60,7 @@ UILayer::UILayer() :
     mouseListener->onMouseMove = CC_CALLBACK_1(UILayer::onMouseMove, this);
     mouseListener->onMouseUp = CC_CALLBACK_1(UILayer::onMouseUp, this);
     this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(mouseListener, this);
-
+    
     // 设置回调
     _character->_pickUpCallback = [this](bool success) {
         if (success) {
@@ -238,120 +239,48 @@ void UILayer::updateObjectList() {
     _lastObjectListStatus = _objectListStatus;
 }
 
-// 显示物品图片
-void UILayer::showObjectImage() {
-    _objectListStatus = _character->getObjectListStatus();
-    _boxObjectListStatus = _character->getBoxStatus();
-    _storeStatus = _character->getStoreStatus();
-    // 清空之前的数量标签
-        // 清空之前的数量标签
-    for (int i = 0; i < OBJECT_LIST_COLS; i++) {
-        if (_closedObjectSpriteImage[i].sprite != nullptr) {
-            this->removeChild(_closedObjectSpriteImage[i].sprite);
-            this->removeChild(_closedObjectSpriteImage[i].label);
-            _closedObjectSpriteImage[i] = { nullptr,nullptr }; // 重新初始化
-        }
-    }
-    for (int i = 0; i < OBJECT_LIST_ROWS; i++) {
-        for (int j = 0; j < OBJECT_LIST_COLS; j++) {
-            if (_openedObjectSpriteImage[i * OBJECT_LIST_COLS + j].sprite != nullptr) {
-                this->removeChild(_openedObjectSpriteImage[i * OBJECT_LIST_COLS + j].sprite);
-                this->removeChild(_openedObjectSpriteImage[i * OBJECT_LIST_COLS + j].label);
-                _openedObjectSpriteImage[i * OBJECT_LIST_COLS + j] = { nullptr,nullptr }; // 重新初始化
-            }
-        }
-    }
-    for (int i = 0; i < OBJECT_LIST_COLS; i++) {
-        if (_boxObjectSpriteImage[i].sprite != nullptr) {
-            this->removeChild(_boxObjectSpriteImage[i].sprite);
-            this->removeChild(_boxObjectSpriteImage[i].label);
-            _boxObjectSpriteImage[i] = { nullptr,nullptr }; // 重新初始化
-        }
-    }
-    for (int i = 0; i < PRODUCE_KIND_NUM_EACH_DAY; i++) {
-        if (_storeObjectInfo[i].sprite != nullptr) {
+// 初始化时间显示器
+void UILayer::initializeTimeDisplay() {
+    // 获取可见区域大小
+    _visibleSize = Director::getInstance()->getVisibleSize();
 
-            this->removeChild(_storeObjectInfo[i].sprite);
-            this->removeChild(_storeObjectInfo[i].namelabel);
-            this->removeChild(_storeObjectInfo[i].pricelabel);
-            _storeObjectInfo[i] = { nullptr,nullptr,nullptr }; // 重新初始化
+    // 计算右上角的位置
+    const Vec2 rightTopPos = Vec2(_visibleSize.width * 0.9f, _visibleSize.height * 0.9f);  // 右上角，调整到合适的偏移量
 
-        }    
-    }
-    // 显示物品图片
-    if (!_objectListStatus) {
-        for (int i = 0; i < OBJECT_LIST_COLS; i++) {
-            const auto objectInfo = _character->findObjectAtPosition(i);
-            if (objectInfo.count != 0) {
-                const auto objectSpriteFilename = objectInfo.objectNode.object->_fileName;
-                const int objectCount = objectInfo.count;
-                createObjectImage(_closedObjectSpriteImage[i], objectSpriteFilename, objectCount);
-                setObjectImagePosition(_closedObjectSpriteImage[i],LocationMap::getInstance().getLocationMap().at({ ClosedObjectList,i }));   
-            }
-        }
-        for (int i = 0; i < OBJECT_LIST_ROWS; i++) {
-            for (int j = 0; j < OBJECT_LIST_COLS; j++) {
-                if (_openedObjectSpriteImage[i * OBJECT_LIST_COLS + j].sprite != nullptr)
-                    setObjectImageVisible(_openedObjectSpriteImage[i * OBJECT_LIST_COLS + j], false);
-            }
-        }
-    }
-    else {
-        for (int i = 0; i < OBJECT_LIST_ROWS; i++) {
-            for (int j = 0; j < OBJECT_LIST_COLS; j++) {
-                const auto objectInfo = _character->findObjectAtPosition(i * OBJECT_LIST_COLS + j);
-                if (objectInfo.count != 0) {
-                    const auto objectSpriteFilename = objectInfo.objectNode.object->_fileName;
-                    const int objectCount = objectInfo.count;
-                    createObjectImage(_openedObjectSpriteImage[i * OBJECT_LIST_COLS + j], objectSpriteFilename, objectCount);
-                    setObjectImagePosition(_openedObjectSpriteImage[i * OBJECT_LIST_COLS + j], LocationMap::getInstance().getLocationMap().at({OpenedObjectList,i * OBJECT_LIST_COLS + j }));
-                }
-            }
-        }
-        for (int i = 0; i < OBJECT_LIST_COLS; i++) {
-            if (_closedObjectSpriteImage[i].sprite != nullptr)
-                setObjectImageVisible(_closedObjectSpriteImage[i], false);
-        }
-        if (_boxObjectListStatus && Box::getInstance().getBoxCount() != 0) {
-            for (int i = 0; i < OBJECT_LIST_COLS; i++) {
-                const auto boxObjectInfo = Box::getInstance().findObjectAtPosition(i);
-                if (boxObjectInfo.count != 0) {
-                    const auto objectSpriteFilename = boxObjectInfo.objectNode.object->_fileName;
-                    const int objectCount = boxObjectInfo.count;
-                    createObjectImage(_boxObjectSpriteImage[i], objectSpriteFilename, objectCount);
-                    setObjectImagePosition(_boxObjectSpriteImage[i], LocationMap::getInstance().getLocationMap().at({ OpenedBoxList,i }));
-                }
-            }
-        }
-        else {
-            for (int i = 0; i < OBJECT_LIST_COLS; i++) {
-                if (_boxObjectSpriteImage[i].sprite != nullptr)
-                    setObjectImageVisible(_boxObjectSpriteImage[i], false);
-            }
-        }
+    // 创建背景图片
+    _timeDisplayLayer = Sprite::create("../Resources/UI/timetable.png");
 
-        if (_storeStatus) {
-            for (int i = 0; i < PRODUCE_KIND_NUM_EACH_DAY; i++) {
-                const auto storeObjectInfo = _store->findObjectAtPosition(i);
-                if (storeObjectInfo.count != 0) {
-                    const auto objectSpriteFilename = storeObjectInfo.product.object->_fileName;
-                    const auto objectName = storeObjectInfo.product.object->_name;
-                    const int objectPrice = storeObjectInfo.totalPrice;
-                    createStoreObjectInfo(_storeObjectInfo[i], objectSpriteFilename, objectName, objectPrice);
-                    setStoreObjectInfoPosition(_storeObjectInfo[i], LocationMap::getInstance().getStoreLocationMap().at(i));
-                }
-            }
-        }
-        else {
-            for (int i = 0; i < PRODUCE_KIND_NUM_EACH_DAY; i++) {
-                if (_storeObjectInfo[i].sprite != nullptr) {
-                    setStoreObjectInfoVisible(_storeObjectInfo[i],false);
-                }
-            }
-        }
-    }
+    // 获取原始图片尺寸
+    const Size originalTimeDisplaySize = _timeDisplayLayer->getContentSize();
+
+    // 计算缩放比例，使得图片适应 16x16 像素
+    const float scaleX = UI_SCALE / originalTimeDisplaySize.width;  // 计算 X 方向的缩放比例
+    const float scaleY = UI_SCALE / originalTimeDisplaySize.height; // 计算 Y 方向的缩放比例
+
+    // 设置缩放比例
+    _timeDisplayLayer->setScale(scaleX, scaleY);
+
+    // 设置背景图片位置
+    _timeDisplayLayer->setPosition(rightTopPos);
+
+    // 添加到场景
+    this->addChild(_timeDisplayLayer, UI_LAYER_GRADE);
+
+    // 计算标签的位置，使其相对于背景位置
+    const Vec2 labelPos1 = Vec2(rightTopPos.x + originalTimeDisplaySize.width * 0.1, rightTopPos.y + originalTimeDisplaySize.height * scaleY * 0.32f);  // 在背景图片的顶部
+    const Vec2 labelPos2 = Vec2(rightTopPos.x + originalTimeDisplaySize.width * 0.1, rightTopPos.y - originalTimeDisplaySize.height * scaleY * 0.05f);  // 在 labelPos1 下面偏移 30
+
+    // 创建并初始化 timeLabel1 和 timeLabel2
+    _timeLabel1 = Label::createWithSystemFont("", "Arial", FONT_SIZE);
+    _timeLabel1->setPosition(labelPos1);
+    _timeLabel1->setTextColor(Color4B::ORANGE);
+    this->addChild(_timeLabel1, UI_LAYER_GRADE);
+
+    _timeLabel2 = Label::createWithSystemFont("", "Arial", FONT_SIZE);
+    _timeLabel2->setPosition(labelPos2);
+    _timeLabel2->setTextColor(Color4B::ORANGE);
+    this->addChild(_timeLabel2, UI_LAYER_GRADE);
 }
-
 
 // 按下鼠标事件触发函数
 void UILayer::onMouseDown(cocos2d::Event* event) {
@@ -401,7 +330,28 @@ void UILayer::onMouseDown(cocos2d::Event* event) {
         }
     }
 
-    // TODO: 商店相关的事件处理,鼠标点击相关区域判断为购买物品
+    if (_storeStatus) {
+        for (const auto& storeProdctPos : LocationMap::getInstance().getStoreLocationMap()) {
+            const auto sprite = _storeObjectInfo[storeProdctPos.first].sprite;
+            if (sprite != nullptr) {
+                const Vec2 spritePos = sprite->getPosition();
+                const Size spriteSize = sprite->getContentSize();
+                if (mouseEvent->getMouseButton() == EventMouse::MouseButton::BUTTON_LEFT &&
+                    location.x >= (spritePos.x - spriteSize.width * OBJECT_NODE_SCALE / 2) &&
+                    location.x <= (spritePos.x + spriteSize.width * OBJECT_NODE_SCALE / 2) &&
+                    location.y >= (spritePos.y - spriteSize.height * OBJECT_NODE_SCALE / 2) &&
+                    location.y <= (spritePos.y + spriteSize.height * OBJECT_NODE_SCALE / 2) &&
+                    _store->buyProduct(storeProdctPos.first)) {
+                        setStoreObjectInfoVisible(_storeObjectInfo[storeProdctPos.first], false);
+                        this->removeChild(_storeObjectInfo[storeProdctPos.first].sprite);
+                        this->removeChild(_storeObjectInfo[storeProdctPos.first].namelabel);
+                        this->removeChild(_storeObjectInfo[storeProdctPos.first].pricelabel);
+                        _storeObjectInfo[storeProdctPos.first] = { nullptr,nullptr,nullptr }; // 重新初始化
+                    
+                }
+            }
+        }
+    }
     
     if (_selectedObjectImage.sprite) {
         // 标记选中状态
@@ -472,11 +422,12 @@ void UILayer::onMouseUp(cocos2d::Event* event) {
             else if (currentPos.x >= OPEN_OBJIEC_LIST_SELL_BUTTON_LEFT_BOUDARY
                 && currentPos.x <= OPEN_OBJIEC_LIST_SELL_BUTTON_RIGHT_BOUDARY
                 && currentPos.y >= OPEN_OBJIEC_LIST_SELL_BUTTON_TOP_BOUDARY
-                && currentPos.y <= OPEN_OBJIEC_LIST_SELL_BUTTON_BOTTOM_BOUDARY) {
+                && currentPos.y <= OPEN_OBJIEC_LIST_SELL_BUTTON_BOTTOM_BOUDARY
+                && _character->getCurrentObject().objectNode.type != Tool) {
                 isSell = true;
             }
 
-            if (!isDelete) {
+            if (!isDelete && !isSell) {
                 // 遍历所有可放置位置
                 Vec2 nearestPoint = findNearestPoint(_selectedObjectImage.sprite);
 
@@ -529,8 +480,10 @@ void UILayer::onMouseUp(cocos2d::Event* event) {
                 _character->deleteCurrentObject();
             }
             else if (isSell) {
-                setObjectImageVisible(_selectedObjectImage, false);
-                _store->sellProduct(_character->getCurrentObject().objectNode, _character->getCurrentObject().count);
+                const auto targetObject = _character->getCurrentObject();
+                if (_store->sellProduct(targetObject.objectNode, targetObject.count)) {
+                   // setObjectImageVisible(_selectedObjectImage, false);
+                }
             }
             // 关闭放置标记层
             this->removeChild(_placementMarkerLayer);
@@ -562,48 +515,7 @@ void UILayer::onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Eve
     _lastSelectedObjectIndex = index;
 }
 
-// 初始化时间显示器
-void UILayer::initializeTimeDisplay() {
-    // 获取可见区域大小
-    _visibleSize = Director::getInstance()->getVisibleSize();
 
-    // 计算右上角的位置
-    const Vec2 rightTopPos = Vec2(_visibleSize.width * 0.9f, _visibleSize.height * 0.9f);  // 右上角，调整到合适的偏移量
-
-    // 创建背景图片
-    _timeDisplayLayer = Sprite::create("../Resources/UI/timetable.png");
-
-    // 获取原始图片尺寸
-    const Size originalTimeDisplaySize = _timeDisplayLayer->getContentSize();
-
-    // 计算缩放比例，使得图片适应 16x16 像素
-    const float scaleX = UI_SCALE / originalTimeDisplaySize.width;  // 计算 X 方向的缩放比例
-    const float scaleY = UI_SCALE / originalTimeDisplaySize.height; // 计算 Y 方向的缩放比例
-
-    // 设置缩放比例
-    _timeDisplayLayer->setScale(scaleX, scaleY);
-
-    // 设置背景图片位置
-    _timeDisplayLayer->setPosition(rightTopPos);
-
-    // 添加到场景
-    this->addChild(_timeDisplayLayer, UI_LAYER_GRADE);
-
-    // 计算标签的位置，使其相对于背景位置
-    const Vec2 labelPos1 = Vec2(rightTopPos.x + originalTimeDisplaySize.width * 0.1, rightTopPos.y + originalTimeDisplaySize.height * scaleY * 0.32f);  // 在背景图片的顶部
-    const Vec2 labelPos2 = Vec2(rightTopPos.x + originalTimeDisplaySize.width * 0.1, rightTopPos.y - originalTimeDisplaySize.height * scaleY * 0.05f);  // 在 labelPos1 下面偏移 30
-
-    // 创建并初始化 timeLabel1 和 timeLabel2
-    _timeLabel1 = Label::createWithSystemFont("", "Arial", FONT_SIZE);
-    _timeLabel1->setPosition(labelPos1);
-    _timeLabel1->setTextColor(Color4B::ORANGE);
-    this->addChild(_timeLabel1, UI_LAYER_GRADE);
-
-    _timeLabel2 = Label::createWithSystemFont("", "Arial", FONT_SIZE);
-    _timeLabel2->setPosition(labelPos2);
-    _timeLabel2->setTextColor(Color4B::ORANGE);
-    this->addChild(_timeLabel2, UI_LAYER_GRADE);
-}
 
 // 更新时间显示器
 void UILayer::updateTimeDisplay() {
@@ -620,7 +532,30 @@ void UILayer::updateTimeDisplay() {
     std::string dayOrNight = isDaytime ? "Day" : "Night";
     std::string timeOfDay = timeManager->getCurrentTime();
     _timeLabel2->setString(dayOrNight + " " + timeOfDay);  // 显示白天/晚上和当前时间的代码部分
+
+    if (_lastWeekDay != weekDay) {
+        _lastWeekDay = weekDay;
+
+        _store->refreshStock();
+        showObjectImage();
+    }
 }
+
+// 更新角色金钱显示
+void UILayer::updateCharacterMoneyLabel() {
+    // 创建角色金钱数量标签
+    if (_characterMoneyLabel != nullptr) {
+        this->removeChild(_characterMoneyLabel);
+        _characterMoneyLabel = nullptr;
+    }
+    _characterMoneyLabel = Label::create(std::to_string(_character->getMoney()), "Arial", FONT_SIZE);
+    _characterMoneyLabel->setPosition(Vec2(_visibleSize.width * 4 / 5 + 271, _visibleSize.height * 4 / 5 + 30));
+    _characterMoneyLabel->setAnchorPoint(RIGHT_ALIGNED_ANCHOR);
+    _characterMoneyLabel->setTextColor(Color4B::ORANGE);
+    this->addChild(_characterMoneyLabel, UI_LAYER_GRADE + 1);
+    _characterMoneyLabel->setVisible(true);
+}
+
 
 // 更新UI界面
 void UILayer::update(float deltaTime) {
@@ -635,6 +570,124 @@ void UILayer::update(float deltaTime) {
 
     // 更新时间显示器
     updateTimeDisplay();
+
+    // 更新金钱标签
+    updateCharacterMoneyLabel();
+}
+// 显示物品图片
+void UILayer::showObjectImage() {
+    _objectListStatus = _character->getObjectListStatus();
+    _boxObjectListStatus = _character->getBoxStatus();
+    _storeStatus = _character->getStoreStatus();
+    // 清空之前的数量标签
+        // 清空之前的数量标签
+    for (int i = 0; i < OBJECT_LIST_COLS; i++) {
+        if (_closedObjectSpriteImage[i].sprite != nullptr) {
+            this->removeChild(_closedObjectSpriteImage[i].sprite);
+            this->removeChild(_closedObjectSpriteImage[i].label);
+            _closedObjectSpriteImage[i] = { nullptr,nullptr }; // 重新初始化
+        }
+    }
+    for (int i = 0; i < OBJECT_LIST_ROWS; i++) {
+        for (int j = 0; j < OBJECT_LIST_COLS; j++) {
+            if (_openedObjectSpriteImage[i * OBJECT_LIST_COLS + j].sprite != nullptr) {
+                this->removeChild(_openedObjectSpriteImage[i * OBJECT_LIST_COLS + j].sprite);
+                this->removeChild(_openedObjectSpriteImage[i * OBJECT_LIST_COLS + j].label);
+                _openedObjectSpriteImage[i * OBJECT_LIST_COLS + j] = { nullptr,nullptr }; // 重新初始化
+            }
+        }
+    }
+    for (int i = 0; i < OBJECT_LIST_COLS; i++) {
+        if (_boxObjectSpriteImage[i].sprite != nullptr) {
+            this->removeChild(_boxObjectSpriteImage[i].sprite);
+            this->removeChild(_boxObjectSpriteImage[i].label);
+            _boxObjectSpriteImage[i] = { nullptr,nullptr }; // 重新初始化
+        }
+    }
+    for (int i = 0; i < PRODUCE_KIND_NUM_EACH_DAY; i++) {
+        if (_storeObjectInfo[i].sprite != nullptr) {
+            this->removeChild(_storeObjectInfo[i].sprite);
+            this->removeChild(_storeObjectInfo[i].namelabel);
+            this->removeChild(_storeObjectInfo[i].pricelabel);
+            _storeObjectInfo[i] = { nullptr,nullptr,nullptr }; // 重新初始化
+
+        }
+    }
+    // 显示物品图片
+    if (!_objectListStatus) {
+        for (int i = 0; i < OBJECT_LIST_COLS; i++) {
+            const auto objectInfo = _character->findObjectAtPosition(i);
+            if (objectInfo.count != 0) {
+                const auto objectSpriteFilename = objectInfo.objectNode.object->_fileName;
+                const int objectCount = objectInfo.count;
+                createObjectImage(_closedObjectSpriteImage[i], objectSpriteFilename, objectCount);
+                setObjectImagePosition(_closedObjectSpriteImage[i], LocationMap::getInstance().getLocationMap().at({ ClosedObjectList,i }));
+            }
+        }
+        for (int i = 0; i < OBJECT_LIST_ROWS; i++) {
+            for (int j = 0; j < OBJECT_LIST_COLS; j++) {
+                if (_openedObjectSpriteImage[i * OBJECT_LIST_COLS + j].sprite != nullptr)
+                    setObjectImageVisible(_openedObjectSpriteImage[i * OBJECT_LIST_COLS + j], false);
+            }
+        }
+    }
+    else {
+        for (int i = 0; i < OBJECT_LIST_ROWS; i++) {
+            for (int j = 0; j < OBJECT_LIST_COLS; j++) {
+                const auto objectInfo = _character->findObjectAtPosition(i * OBJECT_LIST_COLS + j);
+                if (objectInfo.count != 0) {
+                    const auto objectSpriteFilename = objectInfo.objectNode.object->_fileName;
+                    const int objectCount = objectInfo.count;
+                    createObjectImage(_openedObjectSpriteImage[i * OBJECT_LIST_COLS + j], objectSpriteFilename, objectCount);
+                    setObjectImagePosition(_openedObjectSpriteImage[i * OBJECT_LIST_COLS + j], LocationMap::getInstance().getLocationMap().at({ OpenedObjectList,i * OBJECT_LIST_COLS + j }));
+                }
+            }
+        }
+        for (int i = 0; i < OBJECT_LIST_COLS; i++) {
+            if (_closedObjectSpriteImage[i].sprite != nullptr)
+                setObjectImageVisible(_closedObjectSpriteImage[i], false);
+        }
+
+        // 如果打开箱子则显示箱子物品图片
+        if (_boxObjectListStatus && Box::getInstance().getBoxCount() != 0) {
+            for (int i = 0; i < OBJECT_LIST_COLS; i++) {
+                const auto boxObjectInfo = Box::getInstance().findObjectAtPosition(i);
+                if (boxObjectInfo.count != 0) {
+                    const auto objectSpriteFilename = boxObjectInfo.objectNode.object->_fileName;
+                    const int objectCount = boxObjectInfo.count;
+                    createObjectImage(_boxObjectSpriteImage[i], objectSpriteFilename, objectCount);
+                    setObjectImagePosition(_boxObjectSpriteImage[i], LocationMap::getInstance().getLocationMap().at({ OpenedBoxList,i }));
+                }
+            }
+        }
+        else {
+            for (int i = 0; i < OBJECT_LIST_COLS; i++) {
+                if (_boxObjectSpriteImage[i].sprite != nullptr)
+                    setObjectImageVisible(_boxObjectSpriteImage[i], false);
+            }
+        }
+
+        // 如果打开商店则显示商店物品图片
+        if (_storeStatus) {
+            for (int i = 0; i < PRODUCE_KIND_NUM_EACH_DAY; i++) {
+                const auto storeObjectInfo = _store->findObjectAtPosition(i);
+                if (storeObjectInfo.count != 0) {
+                    const auto objectSpriteFilename = storeObjectInfo.product.object->_fileName;
+                    const auto objectName = storeObjectInfo.product.object->_name;
+                    const int objectPrice = storeObjectInfo.totalPrice;
+                    createStoreObjectInfo(_storeObjectInfo[i], objectSpriteFilename, objectName, objectPrice);
+                    setStoreObjectInfoPosition(_storeObjectInfo[i], LocationMap::getInstance().getStoreLocationMap().at(i));
+                }
+            }
+        }
+        else {
+            for (int i = 0; i < PRODUCE_KIND_NUM_EACH_DAY; i++) {
+                if (_storeObjectInfo[i].sprite != nullptr) {
+                    setStoreObjectInfoVisible(_storeObjectInfo[i], false);
+                }
+            }
+        }
+    }
 }
 
 // 创建物品图片 
@@ -680,10 +733,8 @@ void UILayer::createStoreObjectInfo(StoreObjectInfo& storeObjectInfo, const std:
 // 设置商店物品图片位置
 void UILayer::setStoreObjectInfoPosition(const StoreObjectInfo& storeObjectInfo, const cocos2d::Vec2& position) {
     storeObjectInfo.sprite->setPosition(position);
-
     storeObjectInfo.namelabel->setPosition(position.x + OBJECT_STORE_IMAGE_NAME_HORIZONTAL_INTERVAL, position.y);
     storeObjectInfo.pricelabel->setPosition(position.x + OBJECT_STORE_IMAGE_NAME_HORIZONTAL_INTERVAL+OBJECT_STORE_NAME_PRICE_HORIZONTAL_INTERVAL, position.y );
-
 }
 
 // 设置商店物品图片是否可见
@@ -702,10 +753,7 @@ Vec2 UILayer::findNearestPoint(cocos2d::Sprite* objectSprite) {
     _objectListStatus = _character->getObjectListStatus();
     _boxObjectListStatus = _character->getBoxStatus();
 
-    if (!_objectListStatus) { // 物品栏关闭
-        // 这里可以添加逻辑
-    }
-    else {  // 物品栏打开
+    if (_objectListStatus)  {  // 物品栏打开
         for (const auto& point : LocationMap::getInstance().getLocationMap()) {
             const Location currentLocation = point.first;
 
@@ -739,7 +787,7 @@ Vec2 UILayer::findNearestPoint(cocos2d::Sprite* objectSprite) {
                     isEmpty = false;
                 }
             }
- 
+                
             if (isEmpty) {
                 const Vec2& emptyPoint = point.second;
                 const float distance = currentPos.distance(emptyPoint);

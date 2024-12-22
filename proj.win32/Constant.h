@@ -48,7 +48,6 @@ constexpr int CHARACTER_HEIGHT = 32;										// 角色高度
 constexpr float CHARACTER_MOVE_SPEED = 5.0f;								// 角色移动速度
 constexpr float CHARACTER_HORIZONTAL_ANCHORPOINT = 0.5f;					// 角色水平锚点
 constexpr float CHARACTER_VERTICAL_ANCHORPOINT = 0.25f;						// 角色垂直锚点
-constexpr int LEVEL0_TO_LEVEL1_EXPRIENCE = 10;                              // 从零级升到一级需要的经验值
 constexpr int LEVEL1_TO_LEVEL2_EXPRIENCE = 20;                              // 从一级升到二级需要的经验值
 constexpr int LEVEL2_TO_LEVEL3_EXPRIENCE = 50;                              // 从二级升到三级需要的经验值
 constexpr int LEVEL3_TO_LEVEL4_EXPRIENCE = 100;                             // 从三级升到四级需要的经验值
@@ -163,6 +162,8 @@ constexpr int OBJECT_BOX_START_X = 729;                                     // �
 constexpr int OBJECT_BOX_START_Y = 648;                                     // 箱子起始位置的Y坐标
 constexpr int OBJECT_STORE_IMAGE_START_X = 1410;                            // 商店售卖物品图片起始位置的X坐标
 constexpr int OBJECT_STORE_IMAGE_START_Y = 603;                             // 商店售卖物品图片起始位置的Y坐标
+constexpr int MONEY_COUNT_LABEL_START_X = 1807;                             // 角色金钱数量标签起始位置的X坐标
+constexpr int MONEY_COUNT_LABEL_START_Y = 894;                              // 角色金钱数量标签起始位置的Y坐标
 constexpr int OBJECT_STORE_IMAGE_NAME_HORIZONTAL_INTERVAL = 102;	        // 商店售卖物品图片名称水平间距
 constexpr int OBJECT_STORE_NAME_PRICE_HORIZONTAL_INTERVAL = 130;			// 商店售卖物品名称和价格水平间距
 constexpr int OBJECT_LIST_NODE_HORIZONTAL_INTERVAL = 42;					// 物品格子水平间距
@@ -177,6 +178,7 @@ constexpr int OPEN_OBJIEC_LIST_SELL_BUTTON_LEFT_BOUDARY = 1472;			    // 物品�
 constexpr int OPEN_OBJIEC_LIST_SELL_BUTTON_RIGHT_BOUDARY = 1600;			// 物品栏出售按钮右边界
 constexpr int OPEN_OBJIEC_LIST_SELL_BUTTON_TOP_BOUDARY = 328;				// 物品栏出售按钮上边界
 constexpr int OPEN_OBJIEC_LIST_SELL_BUTTON_BOTTOM_BOUDARY = 392;			// 物品栏出售按钮下边界
+const cocos2d::Vec2 RIGHT_ALIGNED_ANCHOR (1.0f, 0.5f );                     // 文字标签右对齐锚点设置
 
 //NPC求婚对话框相关设置
 const float DIALOG_WIDTH_RATIO = 0.5f;                                      // 对话框宽度占屏幕宽度的比例
@@ -252,6 +254,13 @@ enum Season {
     All					// 通用
 };
 
+// 游戏天气定义
+enum Weather {
+    Sunny,              // 晴天
+    Rainy,              // 雨天
+    Dry                 // 干旱
+};
+
 // 游戏物品类型定义
 enum GameObjectMapType {
     None,				// 空物品
@@ -293,6 +302,7 @@ enum LocationStatus {
 enum GameCharacterAction {
     NoneAction,			// 空动作
     Plowing,			// 耕地
+    Seeding,            // 播种
     Watering,			// 浇水
     Fertilize,          // 施肥
     GetWater,			// 取水
@@ -386,12 +396,15 @@ struct StoreObjectInfo {
 const std::map< GameCharacterAction, TileConstants::TileType> ACTION_TO_TILEMAP = {
     { NoneAction, TileConstants::Other },
     { Plowing,TileConstants::Soil },          // 左键
+    { Seeding,TileConstants::Soiled  },          // 右键
     { Watering, TileConstants::Soiled },       // 左键
     { Fertilize, TileConstants::Soiled },      // 左键
     { GetWater,TileConstants::Water },        // 右键
     { Weeding, TileConstants::Grass },         // 左键
     { Cutting, TileConstants::Tree },          // 左键
     { Mining, TileConstants::Stone },          // 左键
+    { Mining, TileConstants::Treasure },          // 左键
+    { Mining, TileConstants::Mine },          // 左键
     { Fishing, TileConstants::Water },         // 左键
     { Harvesting, TileConstants::Crop },       // 右键
     { Placement, TileConstants::Soil },        // 右键
@@ -426,23 +439,23 @@ public:
 class GameToolObject : public GameObject {
 public:
     int _level;                                     // 工具等级
-    int _actionCost;                                // 执行一次操作需要的次数
     int _durability;                                // 工具耐久度
     GameCharacterAction _action;                    // 工具当前执行的动作
     bool _isUpgradable ;                            // 是否可以升级
     std::map<std::string, int> _ingredients;	    // 升级工具的原料
 
     // 构造函数
-    GameToolObject(const int index, const std::string& fileName, const std::string& name,const std::string& nameCN, GameObjectSkillType type, int level, int actionCost, int durability, GameCharacterAction action, bool isUpgradable, std::map<std::string, int> ingredients) :
+    GameToolObject(const int index, const std::string& fileName, const std::string& name,const std::string& nameCN, GameObjectSkillType type, int level, int durability, GameCharacterAction action, bool isUpgradable, std::map<std::string, int> ingredients) :
         GameObject(index,fileName, name, nameCN,type),
         _level(level),
-        _actionCost(actionCost),
         _durability(durability),
         _action(action),
         _isUpgradable(isUpgradable),
         _ingredients(ingredients)
     {
     }
+
+    GameToolObject() {};
 };
 
 // 游戏种子物品属性定义
@@ -464,6 +477,7 @@ public:
         _sellPrice(sellPrice)
     {
     }
+    GameSeedObject() {};
 };
 
 // 游戏基础物品属性定义
@@ -496,26 +510,29 @@ public:
         _ingredients(ingredients)
     {
     }
+
+    GameBaseObject() {};
 };
+
 
 // 游戏工具类物品属性参数定义
 const std::vector<GameToolObject> GAME_TOOL_OBJECTS_ATTRS = {
-    GameToolObject(1,"../Resources/Objects/Tools/BeginnerHoe.png","BeginnerHoe", "初级锄头", Farm, 1, 1, INT_MAX, Plowing,false,{}),
-    GameToolObject(2,"../Resources/Objects/Tools/IntermediateHoe.png","IntermediateHoe", "中级锄头", Farm, 2, 1, INT_MAX, Plowing,true,{{"BeginnerHoe",1}, {"Copper",3}}),
-    GameToolObject(3,"../Resources/Objects/Tools/AdvancedHoe.png","AdvancedHoe" ,"高级锄头", Farm, 3, 1, INT_MAX, Plowing,true,{{"IntermediateHoe",1}, {"Iron",3}}),
-    GameToolObject(4,"../Resources/Objects/Tools/BeginnerAxe.png","BeginnerAxe","初级斧头", Collect, 1, 5, INT_MAX, Cutting,false,{}),
-    GameToolObject(5,"../Resources/Objects/Tools/IntermediateAxe.png","IntermediateAxe","中级斧头", Collect, 2, 4, INT_MAX, Cutting,true,{{"BeginnerAxe",1}, {"Copper",3}}),
-    GameToolObject(6,"../Resources/Objects/Tools/AdvancedAxe.png","AdvancedAxe", "高级斧头", Collect, 3, 3, INT_MAX, Cutting,true,{{"IntermediateAxe",1}, {"Iron",3}}),
-    GameToolObject(7,"../Resources/Objects/Tools/BeginnerPickaxe.png","BeginnerPickaxe","初级镐子", Mine, 1, 5, INT_MAX, Mining,false,{}),
-    GameToolObject(8,"../Resources/Objects/Tools/IntermediatePickaxe.png","IntermediatePickaxe", "中级镐子", Mine, 2, 4, INT_MAX, Mining,true,{{"BeginnerPickaxe",1}, {"Copper",3}}),
-    GameToolObject(9,"../Resources/Objects/Tools/AdvancedPickaxe.png","AdvancedPickaxe", "高级镐子", Mine, 3, 3, INT_MAX, Mining,true,{{"IntermediatePickaxe",1}, {"Iron",3}}),
-    GameToolObject(10,"../Resources/Objects/Tools/BeginnerFishingRods.png","BeginnerFishingRods", "初级鱼竿", Fish, 1, 1, INT_MAX, Fishing,false,{}),
-    GameToolObject(11,"../Resources/Objects/Tools/IntermediateFishingRods.png", "IntermediateFishingRods","中级鱼竿", Fish, 2, 1, INT_MAX, Fishing,true,{{"BeginnerFishingRods",1}, {"Copper",3}}),
-    GameToolObject(12,"../Resources/Objects/Tools/AdvancedFishingRods.png","AdvancedFishingRods", "高级鱼竿", Fish, 3, 1, INT_MAX, Fishing,true,{{"IntermediateFishingRods",1}, {"Iron",3}}),
-    GameToolObject(13,"../Resources/Objects/Tools/BeginnerKattle.png","BeginnerKattle", "初级水壶", Farm, 1, 1, 40, Watering,false,{}),
-    GameToolObject(14,"../Resources/Objects/Tools/IntermediateKattle.png","IntermediateKattle", "中级水壶", Farm, 2, 1, 55, Watering,true,{{"BeginnerKattle",1}, {"Copper",3}}),
-    GameToolObject(15,"../Resources/Objects/Tools/AdvancedKattle.png","AdvancedKattle", "高级水壶", Farm, 3, 1, 70, Watering,true,{{"IntermediateKattle",1}, {"Iron",3}}),
-    GameToolObject(16,"../Resources/Objects/Tools/scythe.png","scythe","镰刀",Collect,1,1,INT_MAX,Weeding,false,{})
+    GameToolObject(1,"../Resources/Objects/Tools/BeginnerHoe.png","BeginnerHoe", "初级锄头", Farm, 1, INT_MAX, Plowing,false,{}),
+    GameToolObject(2,"../Resources/Objects/Tools/IntermediateHoe.png","IntermediateHoe", "中级锄头", Farm, 2, INT_MAX, Plowing,true,{{"BeginnerHoe",1}, {"Copper",3}}),
+    GameToolObject(3,"../Resources/Objects/Tools/AdvancedHoe.png","AdvancedHoe" ,"高级锄头", Farm, 3, INT_MAX, Plowing,true,{{"IntermediateHoe",1}, {"Iron",3}}),
+    GameToolObject(4,"../Resources/Objects/Tools/BeginnerAxe.png","BeginnerAxe","初级斧头", Collect, 1, INT_MAX, Cutting,false,{}),
+    GameToolObject(5,"../Resources/Objects/Tools/IntermediateAxe.png","IntermediateAxe","中级斧头", Collect, 2, INT_MAX, Cutting,true,{{"BeginnerAxe",1}, {"Copper",3}}),
+    GameToolObject(6,"../Resources/Objects/Tools/AdvancedAxe.png","AdvancedAxe", "高级斧头", Collect, 3, INT_MAX, Cutting,true,{{"IntermediateAxe",1}, {"Iron",3}}),
+    GameToolObject(7,"../Resources/Objects/Tools/BeginnerPickaxe.png","BeginnerPickaxe","初级镐子", Mine, 1, INT_MAX, Mining,false,{}),
+    GameToolObject(8,"../Resources/Objects/Tools/IntermediatePickaxe.png","IntermediatePickaxe", "中级镐子", Mine, 2, INT_MAX, Mining,true,{{"BeginnerPickaxe",1}, {"Copper",3}}),
+    GameToolObject(9,"../Resources/Objects/Tools/AdvancedPickaxe.png","AdvancedPickaxe", "高级镐子", Mine, 3, INT_MAX, Mining,true,{{"IntermediatePickaxe",1}, {"Iron",3}}),
+    GameToolObject(10,"../Resources/Objects/Tools/BeginnerFishingRods.png","BeginnerFishingRods", "初级鱼竿", Fish, 1, INT_MAX, Fishing,false,{}),
+    GameToolObject(11,"../Resources/Objects/Tools/IntermediateFishingRods.png", "IntermediateFishingRods","中级鱼竿", Fish, 2,  INT_MAX, Fishing,true,{{"BeginnerFishingRods",1}, {"Copper",3}}),
+    GameToolObject(12,"../Resources/Objects/Tools/AdvancedFishingRods.png","AdvancedFishingRods", "高级鱼竿", Fish, 3, INT_MAX, Fishing,true,{{"IntermediateFishingRods",1}, {"Iron",3}}),
+    GameToolObject(13,"../Resources/Objects/Tools/BeginnerKattle.png","BeginnerKattle", "初级水壶", Farm, 1, 40, Watering,false,{}),
+    GameToolObject(14,"../Resources/Objects/Tools/IntermediateKattle.png","IntermediateKattle", "中级水壶", Farm, 2, 55, Watering,true,{{"BeginnerKattle",1}, {"Copper",3}}),
+    GameToolObject(15,"../Resources/Objects/Tools/AdvancedKattle.png","AdvancedKattle", "高级水壶", Farm, 3, 70, Watering,true,{{"IntermediateKattle",1}, {"Iron",3}}),
+    GameToolObject(16,"../Resources/Objects/Tools/scythe.png","scythe","镰刀",Collect,1,INT_MAX,Weeding,false,{})
 };
 
 // 游戏种子类物品属性参数定义
@@ -572,7 +589,7 @@ const std::vector<GameBaseObject> GAME_BASE_OBJECTS_ATTRS = {
     GameBaseObject(26,"../Resources/Objects/Base/IronParticle.png","IronParticle","铁粒",Mine,99,2,true,25,false,INVAVID_NUM,false,INVAVID_NUM,false,false,{}),
     GameBaseObject(27,"../Resources/Objects/Base/Copper.png","Copper","铜锭",Mine,99,1,true,120,false,INVAVID_NUM,false,INVAVID_NUM,false,true,{{"CopperParticle",10}}),
     GameBaseObject(28,"../Resources/Objects/Base/Iron.png","Iron","铁锭",Mine,99,1,true,250,false,INVAVID_NUM,false,INVAVID_NUM,false,true,{{"IronParticle",10}}),
-    GameBaseObject(29,"../Resources/Objects/Base/Fertilizer.png","Fertilizer","肥料",Farm,99,2,true,150,true,INVAVID_NUM,false,INVAVID_NUM,false,true,{{"Grass",5}}),
+    GameBaseObject(29,"../Resources/Objects/Base/Fertilizer.png","Fertilizer","肥料",Farm,99,1,true,150,true,200,false,INVAVID_NUM,false,true,{{"Grass",5}}),
     GameBaseObject(30,"../Resources/Objects/Base/Grass.png","Grass","草",Collect,99,1,true,5,false,INVAVID_NUM,false,INVAVID_NUM,false,true,{}),
 
 
@@ -703,15 +720,15 @@ GameBaseObject(30, "../Resources/Objects/Base/Octopus.png", "Octopus", "章鱼",
 ),
 
 GameBaseObject(30, "../Resources/Objects/Base/RedSnapper.png", "RedSnapper", "红鲷鱼", Fish,  // 红鲷鱼
-   100, // 最大存储量
-   3,   // 解锁所需等级
-   true, // 是否能出售
-   200,  // 出售价格
-   false, // 是否可以购买
+   100,     // 最大存储量
+   3,       // 解锁所需等级
+   true,    // 是否能出售
+   200,     // 出售价格
+   false,   // 是否可以购买
    INVAVID_NUM,    // 购买价格
-   true, // 是否可以食用
-   50,    // 食用恢复的能量值
-   false, // 能否放置
+   true,           // 是否可以食用
+   50,             // 食用恢复的能量值
+   false,          // 能否放置
    false, //能否合成
    {}    //合成物品的原料
 ),
@@ -803,9 +820,10 @@ struct GameCommonObject {
     }
 
     GameCommonObject(const GameBaseObject& baseObject) {
-        
+
     }
 };
+
 
 // 角色物品栏单个物品属性定义
 struct ObjectListNode {
