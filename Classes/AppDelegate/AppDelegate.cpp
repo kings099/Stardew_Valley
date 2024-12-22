@@ -90,7 +90,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     register_all_packages();
 
-    // 创建农场场景类
+    // 创建启动场景类
     auto scene =HelloWorld::createScene();
 
     // 运行启动场景

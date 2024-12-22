@@ -12,15 +12,17 @@
 
 
 USING_NS_CC;
-
+// 构造函数
 FestivalLayer::FestivalLayer() : _festivalButton(nullptr) {
-    // 构造函数
+  
 }
 
+// 析构函数
 FestivalLayer::~FestivalLayer() {
-    // 析构函数
+
 }
 
+// 初始化函数
 bool FestivalLayer::init() {
     if (!Layer::init()) {
         return false;
@@ -31,13 +33,13 @@ bool FestivalLayer::init() {
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
     // 创建节日活动按钮，默认设置为不可见
-    _festivalButton = ui::Button::create("../Resources/UI/festival.png", "../Resources/UI/festival.png");
+    _festivalButton = ui::Button::create("../Resources/UI/SkillStar.png", "../Resources/UI/SkillStar.png");
     _festivalButton->setPosition(Vec2(visibleSize.width - _festivalButton->getContentSize().width * 2,
         visibleSize.height - _festivalButton->getContentSize().height * 4));
     _festivalButton->setVisible(false); 
 
     // 创建社区活动按钮，默认设置为不可见
-    _communityButton = ui::Button::create("../Resources/UI/community.png", "../Resources/UI/community.png");
+    _communityButton = ui::Button::create("../Resources/UI/SkillStar.png", "../Resources/UI/SkillStar.png");
     _communityButton->setPosition(Vec2(visibleSize.width - _communityButton->getContentSize().width * 2,
         visibleSize.height - _communityButton->getContentSize().height * 6));
     _communityButton->setVisible(false);  // 默认按钮不可见
@@ -59,7 +61,7 @@ bool FestivalLayer::init() {
     return true;
 }
 
-// 合并后的回调函数，传入字符串消息
+//点击按钮执行的回调函数
 void FestivalLayer::onButtonClicked(Ref* pSender, const std::string& message) {
     // 创建并显示对话框
     const auto visibleSize = Director::getInstance()->getVisibleSize();
@@ -70,6 +72,8 @@ void FestivalLayer::onButtonClicked(Ref* pSender, const std::string& message) {
     this->addChild(chatLayer);
 }
 
+
+//更新节日按钮是否可见
 void FestivalLayer::updateFestivalButtonVisibility() {
     // 获取当前日期
     TimeManager* timeManager = TimeManager::getInstance();
@@ -84,6 +88,7 @@ void FestivalLayer::updateFestivalButtonVisibility() {
     }
 }
 
+//更新社区按钮是否可见
 void FestivalLayer::updateCommunityButtonVisibility() {
     // 获取当前日期
     TimeManager* timeManager = TimeManager::getInstance();
@@ -98,6 +103,7 @@ void FestivalLayer::updateCommunityButtonVisibility() {
     }
 }
 
+// 创建并返回一个FestivalLayer实例
 FestivalLayer* FestivalLayer::create() {
     FestivalLayer* ret = new FestivalLayer();
     if (ret && ret->init()) {

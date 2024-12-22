@@ -21,9 +21,6 @@
 #include <vector>
 #include <string>
 #include"Character.h"
-#include"Box/Box.h"
-
-
 
 
 class NPC : public cocos2d::Node {
@@ -54,8 +51,10 @@ public:
     // 增加好感度
     void NPC::increaseAffection(int value);
 
+    //执行求婚逻辑
     void NPC::marryPlayer();
-
+    
+    //播放求婚动画
     void NPC::playMarriageAnimation();
 
     //是否结婚的选择框
@@ -81,15 +80,17 @@ public:
 
     // 获取当前好感度
     int getAffection() const;
-
-    void showTaskCompletionReward(Task* task);
-
+ 
+    //增加NPC任务
     void addTask(Task* task);
 
+    //展示任务列表
     void showTaskList();
 
+    //键盘交互
     void onKeyPressed(EventKeyboard::KeyCode keyCode, Event* event);
 
+    //修改任务处理状态
     void setIsProcessing(bool isProcessing);
 
     };

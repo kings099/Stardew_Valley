@@ -10,12 +10,13 @@
 #include "ui/CocosGUI.h"
 
 USING_NS_CC;
-
+//构造函数
 ChatLayer::ChatLayer(const std::string& message) {
     // 直接调用 showMessage 来显示消息
     showMessage(message);
 }
 
+//创建并显示对话框
 void ChatLayer::showMessage(const std::string& message) {
     Size visibleSize = Director::getInstance()->getVisibleSize();
 
@@ -53,10 +54,12 @@ void ChatLayer::showMessage(const std::string& message) {
     this->addChild(menu);  
 }
 
+//关闭对话框 
 void ChatLayer::closeDialog(Ref* sender) {
     this->removeFromParentAndCleanup(true);  // 移除自己
 }
 
+//获取实例
 ChatLayer* ChatLayer::create(const std::string& message) {
     ChatLayer* layer = new ChatLayer(message);
     if (layer && layer->init()) {
@@ -69,6 +72,7 @@ ChatLayer* ChatLayer::create(const std::string& message) {
     }
 }
 
+//增加下方喜爱度显示文本，在送礼逻辑的时候才会显示
 void ChatLayer::addAffectionText(const std::string& affectionInfo) {
     // 获取对话框的尺寸
     Size dialogSize = _dialogBg->getContentSize();

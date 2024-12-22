@@ -45,6 +45,7 @@ void NPC::initializeSprite(const std::string& idleImage, const std::vector<std::
     _walkAnimation = cocos2d::Animate::create(walkAnim);
 }
 
+//展示NPC对话框，好感程度不同触发不同的内容
 void NPC::showDialog() {
     int dialogueIndex = _affection / AFFECTION_INDEX;
     dialogueIndex = std::min(dialogueIndex, (int)_dialogues.size() - 1);
@@ -53,6 +54,7 @@ void NPC::showDialog() {
     showDialogue(dialogue);
 }
 
+//根据传入的字符串展示对话框
 void NPC::showDialogue(const std::string& dialogueText) {
     // 创建 ChatLayer 实例并传入对话内容
     ChatLayer* chatLayer = ChatLayer::create(dialogueText);
@@ -66,6 +68,7 @@ void NPC::showDialogue(const std::string& dialogueText) {
     // 将 ChatLayer 添加为 NPC 的子节点
     this->addChild(chatLayer); 
 }
+
 // 增加好感度
 void NPC::increaseAffection(int value) {
    _affection = std::min(MAX_AFFECTION, _affection + value);
@@ -127,7 +130,6 @@ void NPC::showMarriageChoices() {
     }
 }
 
-
 //处理求婚逻辑，包括播放动画，修改关系，消息提示用户已经结婚
 void NPC::marryPlayer() {
     // 播放求婚动画，并在动画完成后显示结婚消息
@@ -156,6 +158,7 @@ void NPC::marryPlayer() {
     this->runAction(delayAction);
 }
 
+//播放求婚动画
 void NPC::playMarriageAnimation() {
     // 创建一个闪烁的心形精灵
     auto heartSprite = Sprite::create("../Resources/Characters/NPC/happy.png");
@@ -194,6 +197,7 @@ void NPC::playMarriageAnimation() {
         }), nullptr));
 }
 
+//展示任务列表并处理任务逻辑
 void NPC::showTaskList() {
     std::string taskInfo = "Available Tasks:\n";
     // 生成两个任务按钮
@@ -281,18 +285,17 @@ void NPC::showTaskList() {
 
 }
 
-
+//增加任务
 void NPC::addTask(Task* task) {
     _tasks.push_back(task);
 }
-
 
 // 判断玩家是否接近
 bool NPC::isPlayerNear(cocos2d::Vec2 playerPosition) {
     return playerPosition.distance(getPosition()) < INTERACTION_DISTANCE;
 }
 
-
+//执行送礼逻辑
 void NPC::giftItem(GiftItem* gift) {
     int affectionIncrease = gift->getAffectionForNPC(_name);  // 获取好感度增益
     increaseAffection(affectionIncrease);  // 更新 NPC 的亲密度
@@ -333,7 +336,6 @@ void NPC::giftItem(GiftItem* gift) {
     happyFace->runAction(Sequence::create(delay, removeAction, showChatLayer, nullptr));
 }
 
-
 // 开始行走动画
 void NPC::startWalkingAnimation() {
     if (_sprite && _walkAnimation) {
@@ -341,6 +343,7 @@ void NPC::startWalkingAnimation() {
     }
 }
 
+//获得NPC姓名
 std::string NPC::getName() {
     return _name;
 }

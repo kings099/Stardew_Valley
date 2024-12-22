@@ -26,7 +26,7 @@ const std::string APPLICATION_TITLE = u8"星露谷物语 Stardew Valley";       
 const cocos2d::Color4B HLAFBLACK = cocos2d::Color4B(0, 0, 0, 200);         // 半透明黑色
 
 //游戏登录界面相关设置
-constexpr float VISIBLE_SIZE_RATIO_X = 1.0f;                               // 横向屏幕宽度比例因子（常量，默认1.0）
+constexpr float UPDATE_RATIO= 1.0f;                                        // 组件移动速度
 constexpr float VISIBLE_SIZE_RATIO_Y = 1.0f;                               // 纵向屏幕高度比例因子（常量，默认1.0）
 constexpr float INPUT_BOX_HEIGHT_RATIO = 0.07f;                            // 输入框高度的比例因子（默认 7%）,实际数值为屏幕高度*该因子
 constexpr float VERTICAL_SPACING_RATIO = 0.02f;                            // 提示文本和输入框之间的垂直间距,实际数值为屏幕高度*该因子
@@ -37,7 +37,6 @@ constexpr float HALF_FACTOR = 0.5f;                                        // �
 //NPC相关设置
 
 constexpr float INTERACTION_DISTANCE = 30.0f;                               //能够与NPC实现互动的最小距离
-
 constexpr float NPC_WIDTH = 16;											    // NPC宽度
 constexpr float NPC_HEIGHT =32;                                             // NPC高度
 constexpr int   AFFECTION_INDEX = 25;                                       // NPC喜爱度因子
