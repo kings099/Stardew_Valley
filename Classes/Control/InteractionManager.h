@@ -63,6 +63,7 @@ private:
     // 储存角色周围 9 格瓦片的信息
     std::vector<TileInfo> _surroundingTiles;    
 
+
     //储存当前选中物品
     ObjectListNode _currentObject;              
 
@@ -92,6 +93,15 @@ private:
 
     // 对树干，树桩和树枝条的处理
     bool ChopTree(const Vec2& tilePos);
+
+    // 农作物收割凋落物更新情况
+    void HarvestInfo(const Vec2& tilePos,TileInfo& cropTileInfo);
+
+    // 触发收割时候地块变化
+    bool HarvestAt(const Vec2& tilePos);
+
+    // 处理害虫
+    bool TreatPestAt(const Vec2& tilePos);
 
     // 获取矿石信息
     void GetMineInfo(int MineGID, TileInfo& tile);

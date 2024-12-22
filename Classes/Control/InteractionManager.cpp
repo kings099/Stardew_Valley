@@ -172,11 +172,6 @@ const TileInfo InteractionManager::GetTileInfoAt(const Vec2& Tile_pos) {
             tileInfo.drops.clear(); // 清空默认的 "None" 项
             tileInfo.drops["Timber"] = { TileConstants::MUTI_DROP_QUANTITY, TileConstants::TREE_DROP_PROBABILITY }; // 掉落3个木材，概率为90%
         }
-        else if (pathProps.find("isCrop") != pathProps.end() && pathProps["isCrop"].asBool())
-        {
-            tileInfo.type = TileConstants::Crop;
-            // 暂时无法写掉落，需要农作物类提供接口
-        }
     }
 
     // 判断water层
@@ -216,6 +211,13 @@ const TileInfo InteractionManager::GetTileInfoAt(const Vec2& Tile_pos) {
 
         if (ObjectProps.find("isBox") != ObjectProps.end() && ObjectProps["isBox"].asBool()) {
             tileInfo.type = TileConstants::Box;
+        }
+        // 是否作物
+        ValueMap pathProps = _gameMap->getTilePropertiesForGID(pathGID);
+        if (pathProps.find("isCrop") != pathProps.end() && pathProps["isCrop"].asBool())
+        {
+            tileInfo.type = TileConstants::Crop;
+            HarvestInfo(Tile_pos, tileInfo);// 获取农作物的收割信息
         }
 
     }
@@ -284,8 +286,11 @@ void InteractionManager::ActionAnimation(GameCharacterAction action, const Vec2&
         FertilizeAt(TilePos);
         break;
     case DestoryObject:
-        // 可添加对应物品损坏的动画
+        // 此处可添加对应物品损坏的动画
         _gameMap->replaceTileAt("Object", TilePos, TileConstants::EMPTY_GID);
+        break;
+    case Harvesting:// 收获
+        HarvestAt(TilePos);
         break;
 
 
@@ -412,8 +417,7 @@ bool InteractionManager::placeObjectAtTile(const Vec2& tilePos) {
 
 // 浇水效果
 bool InteractionManager::WateringAt(const Vec2& tilePos) {
-    // 打印调试信息
-        CCLOG("WateringAt: tilePos = (%f, %f)", tilePos.x, tilePos.y);
+
     if (!_gameMap) {
         CCLOG("InteractionManager: _gameMap is null.");
         return false;
@@ -440,7 +444,7 @@ bool InteractionManager::FertilizeAt(const Vec2& tilePos) {
         return false;
     }
 
-    // 使用多态调用 GameMap 的 getTreeAtPosition获取农作物指针
+    // 使用多态调用 GameMap 的 getNodeAtPosition获取农作物指针
     auto node = _gameMap->getNodeAtPosition(tilePos);
     if(_gameMap->getType() == MapType::Farm)
     {
@@ -512,3 +516,90 @@ bool InteractionManager::ChopTree(const Vec2& tilePos) {
         return false;
     }
 }
+
+
+// 农作物收割凋落物更新情况
+void InteractionManager::HarvestInfo(const Vec2& tilePos, TileInfo& cropTileInfo) {
+    
+    // 保证地图文件存在
+    if (!_gameMap) {
+        CCLOG("InteractionManager: _gameMap is null.");
+        return;
+    }
+
+
+    // 使用多态调用 GameMap 的 getNodeAtPosition获取农作物指针
+    auto node = _gameMap->getNodeAtPosition(tilePos);
+    if (_gameMap->getType() == MapType::Farm)
+    {
+        auto cropSprite = dynamic_cast<Crops*>(node);
+        if (cropSprite != nullptr)
+        {
+            CropData cropSpriteData = cropSprite->getCropData();
+            if (cropSpriteData.isHarvest) {
+                cropTileInfo.drops.clear(); // 清空默认的 "None" 项
+                cropTileInfo.drops[cropSpriteData.Harvest] = { TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::CROP_POSIIBILITY };
+            }
+        }
+    }
+}
+
+// 触发收割时候地块变化
+bool InteractionManager::HarvestAt(const Vec2& tilePos) {
+    // 保证地图文件存在
+    if (!_gameMap) {
+        CCLOG("InteractionManager: _gameMap is null.");
+        return false;
+    }
+
+
+    // 使用多态调用 GameMap 的 getNodeAtPosition获取农作物指针
+    auto node = _gameMap->getNodeAtPosition(tilePos);
+    if (_gameMap->getType() == MapType::Farm)
+    {
+        auto cropSprite = dynamic_cast<Crops*>(node);
+        if (cropSprite != nullptr)
+        {
+            CropData cropSpriteData = cropSprite->getCropData();
+            if (cropSpriteData.isHarvest) {
+                cropSprite->harvestCrop();
+                _gameMap->replaceTileAt("path", tilePos, TileConstants::EMPTY_GID);
+                return true;
+            }
+            if (cropSpriteData.hasPests) {
+                cropSprite->treatPests();
+                return true;
+            }
+        }
+    }
+
+    return false;
+}
+
+// 处理害虫
+bool InteractionManager::TreatPestAt(const Vec2& tilePos) {
+    // 保证地图文件存在
+    if (!_gameMap) {
+        CCLOG("InteractionManager: _gameMap is null.");
+        return false;
+    }
+
+
+    // 使用多态调用 GameMap 的 getNodeAtPosition获取农作物指针
+    auto node = _gameMap->getNodeAtPosition(tilePos);
+    if (_gameMap->getType() == MapType::Farm)
+    {
+        auto cropSprite = dynamic_cast<Crops*>(node);
+        if (cropSprite != nullptr)
+        {
+            CropData cropSpriteData = cropSprite->getCropData();
+            if (cropSpriteData.hasPests) {
+                cropSprite->treatPests();
+                return true;
+            }
+        }
+    }
+
+    return false;
+}
+

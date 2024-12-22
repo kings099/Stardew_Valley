@@ -10,6 +10,7 @@
 
 #include "cocos2d.h"
 
+
 class CharacterInfo {
 public:
     // 获取单例实例，确保只存在一个 CharacterInfo 实例
@@ -31,12 +32,8 @@ private:
     // 私有化构造函数，确保只能通过 getInstance() 创建该类实例
     CharacterInfo() {}
 
-    // 存储唯一的实例，单例模式
-    static CharacterInfo* _instance;
-
     // 用户信息
     std::string _username;
     std::string _farmName;
     std::string _favoriteThing;
 };
-

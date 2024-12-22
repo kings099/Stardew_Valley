@@ -1,4 +1,3 @@
-
 /****************************************************************
  * Project Name:  Stardew_Valley
  * File Name:     GiftItemManager.cpp
@@ -10,18 +9,24 @@
  * Update Date:   2024/12/13
  * License:       MIT License
  ****************************************************************/
+
 #include "GiftItemManager.h"
 
 
- // 获取 GiftItemManager 的单例实例
+// 获取 GiftItemManager 的单例实例
 GiftItemManager* GiftItemManager::getInstance() {
-    static GiftItemManager instance;  // 静态局部变量，确保只创建一个实例
-    return &instance;  // 返回实例的指针
+    static GiftItemManager* instance= nullptr;
+    if (!instance) {
+        instance = new GiftItemManager(); // 仅在第一次调用时创建实例
+    }
+    return instance;
 }
+
 //构造函数
 GiftItemManager::GiftItemManager() {
     initializeGifts();
 }
+
 // 初始化礼物
 void GiftItemManager::initializeGifts() {
     GiftItem rose("Ring", 10);               //NPC对Ring反应的默认值

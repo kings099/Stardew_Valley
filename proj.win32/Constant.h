@@ -58,7 +58,6 @@ constexpr float LABEL_Y_OFFSET = 0.6f;                                     // �
 constexpr float HALF_FACTOR = 0.5f;                                        // 替代 / 2 的常量因子
 
 //NPC相关设置
-
 constexpr float INTERACTION_DISTANCE = 30.0f;                               //能够与NPC实现互动的最小距离
 constexpr float NPC_WIDTH = 16;											    // NPC宽度
 constexpr float NPC_HEIGHT =32;                                             // NPC高度
@@ -70,7 +69,6 @@ constexpr float DIALOG_HEIGHT = 200.0f;                                     //�
 constexpr int DIALOG_X_OFFSET = 250;                                        //对话框相对NPC的偏移量
 constexpr int DIALOG_Y_OFFSET = 160;                                        //对话框相对于NPC的偏移量
 constexpr float FESTIVAL_UPDATE = 1.0f;
-
 
 // 角色相关设置
 constexpr int CHARACTER_WIDTH = 32;											// 角色宽度
@@ -202,6 +200,7 @@ namespace TileConstants {
     constexpr float STONE_DROP_MINE_PROBABILITY = 0.1f;                         // 挖矿时石头掉落概率    
     constexpr float TREATURE_PROBABILITY = 1.0f;                                // 珍惜物品掉落概率
     constexpr float UPDATA_POSIIBILITY = 0.5f;                                  // 矿洞物品刷新几率
+    constexpr float CROP_POSIIBILITY = 0.8f;                                    // 农作物收割几率
 
     constexpr int DEFAULT_DROP_QUANTITY = 1;                                    // 默认掉落数量
     constexpr int MUTI_DROP_QUANTITY = 3;                                       // 默认多个掉落数量
@@ -279,7 +278,7 @@ constexpr float CROP_HORIZONTAL_ANCHORPOINT = 0.5f;					        // 树水平锚�
 constexpr float TREE_VERTICAL_ANCHORPOINT = 0.0f;						    // 树垂直锚点
 constexpr float CROP_VERTICAL_ANCHORPOINT = 0.5f;						    // 树垂直锚点
 
-//动物类
+//动物类设置
 constexpr float ANIMAL_RATIO = 1.0f;                                            //动物类的缩放比例
 constexpr float ANGRY_ICON_RATIO = 0.8f;                                        //动物发怒提示的缩放比例
 const cocos2d::Vec2 SHEEP_START_POSITION(416.0f, 832.0f); // 羊的位置
@@ -290,11 +289,11 @@ const cocos2d::Vec2 BIGEYE_POSITION(816.0f, 512.0f); // 金目鲷位置
 const cocos2d::Vec2 LARGEMOUTH_BASS_POSITION(720.0f, 512.0f); // 大口黑鲈位置
 const cocos2d::Vec2 SALMON_POSITION(880.0f, 512.0f); // 三文鱼位置
 
-//鱼类
+//鱼类设置
 constexpr float FISH_RATIO = 1.0f;                                              // 鱼的缩放比例
 constexpr float FAIL_TO_GET_FISH = 0.3f;                                        // 钓不到鱼的概率
 
-//动画类
+//动画类设置
 constexpr float WOOD_CUT_RATIO = 0.3f;                                          // 砍木桩动画的缩放比例
 constexpr float WEEDING_RATIO = 0.4f;                                           // 除草动画的缩放比例
 constexpr float STONE_BREAK_RATIO = 0.2f;                                       // 碎石动画的缩放比例
@@ -303,11 +302,11 @@ constexpr float BRANCH_RATIO = 0.5f;                                            
 
 // 地图类型设置
 enum class MapType {
-    Generic,
-    Mine,
-    Farm,
-    Indoor,
-    Town
+    Generic,            // 通用地图
+    Mine,               // 矿洞地图
+    Farm,               // 农场地图
+    Indoor,             // 室内地图
+    Town                // 小镇地图
 };
 
 //游戏物品对应技能类型定义
@@ -316,7 +315,6 @@ enum GameObjectSkillType {
     Collect,			// 采集
     Mine,				// 采矿
     Fish,				// 钓鱼
-   // None,				// 无
 };
 
 // 游戏工具类型定义
@@ -465,7 +463,7 @@ struct StoreObjectInfo {
             namelabel = other.namelabel;
             pricelabel = other.pricelabel;
         }
-        return *this;
+        return *this;   
     }
 };
 
@@ -594,20 +592,20 @@ public:
 // 游戏工具类物品属性参数定义
 const std::vector<GameToolObject> GAME_TOOL_OBJECTS_ATTRS = {
     GameToolObject(1,"../Resources/Objects/Tools/BeginnerHoe.png","BeginnerHoe", "初级锄头", Farm, 1, INT_MAX, Plowing,false,{}),
-    GameToolObject(2,"../Resources/Objects/Tools/IntermediateHoe.png","IntermediateHoe", "中级锄头", Farm, 2, INT_MAX, Plowing,true,{{"BeginnerHoe",1}, {"Copper",3}}),
-    GameToolObject(3,"../Resources/Objects/Tools/AdvancedHoe.png","AdvancedHoe" ,"高级锄头", Farm, 3, INT_MAX, Plowing,true,{{"IntermediateHoe",1}, {"Iron",3}}),
+    GameToolObject(2,"../Resources/Objects/Tools/IntermediateHoe.png","IntermediateHoe", "中级锄头", Farm, 2, INT_MAX, Plowing,true,{{"BeginnerHoe",1}, {"Copper",1}}),
+    GameToolObject(3,"../Resources/Objects/Tools/AdvancedHoe.png","AdvancedHoe" ,"高级锄头", Farm, 3, INT_MAX, Plowing,true,{{"IntermediateHoe",1}, {"Iron",1}}),
     GameToolObject(4,"../Resources/Objects/Tools/BeginnerAxe.png","BeginnerAxe","初级斧头", Collect, 1, INT_MAX, Cutting,false,{}),
-    GameToolObject(5,"../Resources/Objects/Tools/IntermediateAxe.png","IntermediateAxe","中级斧头", Collect, 2, INT_MAX, Cutting,true,{{"BeginnerAxe",1}, {"Copper",3}}),
-    GameToolObject(6,"../Resources/Objects/Tools/AdvancedAxe.png","AdvancedAxe", "高级斧头", Collect, 3, INT_MAX, Cutting,true,{{"IntermediateAxe",1}, {"Iron",3}}),
+    GameToolObject(5,"../Resources/Objects/Tools/IntermediateAxe.png","IntermediateAxe","中级斧头", Collect, 2, INT_MAX, Cutting,true,{{"BeginnerAxe",1}, {"Copper",1}}),
+    GameToolObject(6,"../Resources/Objects/Tools/AdvancedAxe.png","AdvancedAxe", "高级斧头", Collect, 3, INT_MAX, Cutting,true,{{"IntermediateAxe",1}, {"Iron",1}}),
     GameToolObject(7,"../Resources/Objects/Tools/BeginnerPickaxe.png","BeginnerPickaxe","初级镐子", Mine, 1, INT_MAX, Mining,false,{}),
-    GameToolObject(8,"../Resources/Objects/Tools/IntermediatePickaxe.png","IntermediatePickaxe", "中级镐子", Mine, 2, INT_MAX, Mining,true,{{"BeginnerPickaxe",1}, {"Copper",3}}),
-    GameToolObject(9,"../Resources/Objects/Tools/AdvancedPickaxe.png","AdvancedPickaxe", "高级镐子", Mine, 3, INT_MAX, Mining,true,{{"IntermediatePickaxe",1}, {"Iron",3}}),
+    GameToolObject(8,"../Resources/Objects/Tools/IntermediatePickaxe.png","IntermediatePickaxe", "中级镐子", Mine, 2, INT_MAX, Mining,true,{{"BeginnerPickaxe",1}, {"Copper",1}}),
+    GameToolObject(9,"../Resources/Objects/Tools/AdvancedPickaxe.png","AdvancedPickaxe", "高级镐子", Mine, 3, INT_MAX, Mining,true,{{"IntermediatePickaxe",1}, {"Iron",1}}),
     GameToolObject(10,"../Resources/Objects/Tools/BeginnerFishingRods.png","BeginnerFishingRods", "初级鱼竿", Fish, 1, INT_MAX, Fishing,false,{}),
-    GameToolObject(11,"../Resources/Objects/Tools/IntermediateFishingRods.png", "IntermediateFishingRods","中级鱼竿", Fish, 2,  INT_MAX, Fishing,true,{{"BeginnerFishingRods",1}, {"Copper",3}}),
-    GameToolObject(12,"../Resources/Objects/Tools/AdvancedFishingRods.png","AdvancedFishingRods", "高级鱼竿", Fish, 3, INT_MAX, Fishing,true,{{"IntermediateFishingRods",1}, {"Iron",3}}),
+    GameToolObject(11,"../Resources/Objects/Tools/IntermediateFishingRods.png", "IntermediateFishingRods","中级鱼竿", Fish, 2,  INT_MAX, Fishing,true,{{"BeginnerFishingRods",1}, {"Copper",1}}),
+    GameToolObject(12,"../Resources/Objects/Tools/AdvancedFishingRods.png","AdvancedFishingRods", "高级鱼竿", Fish, 3, INT_MAX, Fishing,true,{{"IntermediateFishingRods",1}, {"Iron",1}}),
     GameToolObject(13,"../Resources/Objects/Tools/BeginnerKattle.png","BeginnerKattle", "初级水壶", Farm, 1, 40, Watering,false,{}),
-    GameToolObject(14,"../Resources/Objects/Tools/IntermediateKattle.png","IntermediateKattle", "中级水壶", Farm, 2, 55, Watering,true,{{"BeginnerKattle",1}, {"Copper",3}}),
-    GameToolObject(15,"../Resources/Objects/Tools/AdvancedKattle.png","AdvancedKattle", "高级水壶", Farm, 3, 70, Watering,true,{{"IntermediateKattle",1}, {"Iron",3}}),
+    GameToolObject(14,"../Resources/Objects/Tools/IntermediateKattle.png","IntermediateKattle", "中级水壶", Farm, 2, 55, Watering,true,{{"BeginnerKattle",1}, {"Copper",1}}),
+    GameToolObject(15,"../Resources/Objects/Tools/AdvancedKattle.png","AdvancedKattle", "高级水壶", Farm, 3, 70, Watering,true,{{"IntermediateKattle",1}, {"Iron",1}}),
     GameToolObject(16,"../Resources/Objects/Tools/scythe.png","scythe","镰刀",Collect,1,INT_MAX,Weeding,false,{})
 };
 
@@ -618,7 +616,7 @@ const std::vector<GameSeedObject> GAME_SEED_OBJECTS_ATTRS = {
      GameSeedObject(19, "../Resources/Crops/Pumpkin/pumpkin_0.png","pumpkinSeed","南瓜种子",Farm,3,Fall,22,100,160)//南瓜种子
 };
 
-// 游戏种子名称到农作物名称的映射，可拓展
+// 游戏种子名称到农作物名称的映射
 const std::unordered_map<std::string, std::string> GAME_SEED_TO_CROP_MAP = {
     {"cauliflowerSeed", "cauliflower"},
     {"kaleSeed", "kale"},
