@@ -7,7 +7,7 @@
  * License:       MIT License
  ****************************************************************/
 #include "Crops.h"
-
+#include "Classes/Control/TimeManager.h"
 
 USING_NS_CC;
 // 初始化静态变量
@@ -270,6 +270,11 @@ void Crops::manageDrought(Weather currentWeather) {
 
 //更新植物的生长状态
 void Crops::updateGrowth(float deltaTime) {
+
+    const TimeManager* timeManager = TimeManager::getInstance();
+    Season currentSeason = timeManager->getCurrentSeason();
+    Crops::setSeason(currentSeason); // 设置当前季节
+
     // 检查是否被采摘
     if (_isRemoved == true) {
         return;

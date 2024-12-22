@@ -12,6 +12,7 @@
 #include "Classes/Animal/Animal.h"
 #include "Classes/Animal/Fish.h"
 
+
 USING_NS_CC;
 
 FarmMap::FarmMap(const Vec2& mapPosition)
@@ -51,8 +52,6 @@ bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition, Node* Tr
        
     }
     _mapName = mapFile;
-    //// 在场景初始化时设置季节
-    Crops::setSeason(Season::Spring); // 设置当前季节为春季
     
     applySavedChanges();
     // 初始化小动物
