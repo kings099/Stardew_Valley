@@ -17,6 +17,22 @@
 #include <map>
 #include "cocos2d.h"
 
+// 游戏季节定义
+enum Season {
+    Spring,				// 春天
+    Summer,				// 夏天
+    Fall,				// 秋天
+    Winter,				// 冬天
+    All					// 通用
+};
+
+// 游戏天气定义
+enum Weather {
+    Sunny,              // 晴天
+    Rainy,              // 雨天
+    Dry                 // 干旱
+};
+
 // 设备分辨率
 constexpr int DESIGN_RESOLUTION_WIDTH = 1920;                               // 设计分辨率宽度
 constexpr int DESIGN_RESOLUTION_HEIGHT = 1080;                              // 设计分辨率高度
@@ -53,18 +69,17 @@ constexpr float DIALOG_WIDTH = 500.0f;                                      //�
 constexpr float DIALOG_HEIGHT = 200.0f;                                     //对话框高度
 constexpr int DIALOG_X_OFFSET = 250;                                        //对话框相对NPC的偏移量
 constexpr int DIALOG_Y_OFFSET = 160;                                        //对话框相对于NPC的偏移量
+constexpr float FESTIVAL_UPDATE = 1.0f;
 
-
-// 移动相关设置
-constexpr auto INVIAID_KEY = cocos2d::EventKeyboard::KeyCode::KEY_NONE;		// 无效键值
-constexpr int INVAVID_NUM = -1;												// 无效编号
 
 // 角色相关设置
 constexpr int CHARACTER_WIDTH = 32;											// 角色宽度
 constexpr int CHARACTER_HEIGHT = 32;										// 角色高度
 constexpr float CHARACTER_MOVE_SPEED = 5.0f;								// 角色移动速度
 constexpr float CHARACTER_HORIZONTAL_ANCHORPOINT = 0.5f;					// 角色水平锚点
-constexpr float CHARACTER_VERTICAL_ANCHORPOINT = 0.25f;						// 角色垂直锚点
+constexpr float CHARACTER_VERTICAL_ANCHORPOINT = 0.5f;						// 角色垂直锚点
+constexpr int OBJECT_LIST_ROWS = 3;											// 物品列表行数
+constexpr int OBJECT_LIST_COLS = 12;										// 物品列表列数
 constexpr int LEVEL1_TO_LEVEL2_EXPRIENCE = 20;                              // 从一级升到二级需要的经验值
 constexpr int LEVEL2_TO_LEVEL3_EXPRIENCE = 50;                              // 从二级升到三级需要的经验值
 constexpr int LEVEL3_TO_LEVEL4_EXPRIENCE = 100;                             // 从三级升到四级需要的经验值
@@ -78,7 +93,8 @@ constexpr float SKILL_GET_ITEM_PROBABILITY = 0.1f;                          // �
 constexpr int SYNTHESIS_TABLE_ROWS = 4;                                     // 合成台行数
 constexpr int SYNTHESIS_TABLE_COLS = 6;                                     // 合成台列数
 constexpr float ACTION_RATE = 5.0f;											// 动作帧率
-
+constexpr auto INVIAID_KEY = cocos2d::EventKeyboard::KeyCode::KEY_NONE;		// 无效键值
+constexpr int INVAVID_NUM = -1;												// 无效编号
 
 // 商店相关设置
 constexpr int PRODUCE_KIND_NUM_EACH_DAY = 4;                                // 每日出售的商品种类数量
@@ -87,7 +103,6 @@ constexpr int PRODUCT_ATTR_NUM = 3;                                         // �
 constexpr float INCREASE_RATE_BY_SEASON = 1.2f;                             // 商品价格上涨比例(季节)
 constexpr float DISCOUNT_RATE_BY_SEASON = 0.8f;                             // 商品价格下跌比例(季节)
 constexpr float DISCOUNT_RATE_BY_WEEKDAY = 0.5f;                             // 商品价格下跌比例(日期)
-
 
 // 场景过渡相关
 constexpr float LERP_SPEED = 0.1f;											// 插值平滑速度
@@ -107,10 +122,6 @@ constexpr int MINE_CREAT_X = 1080;                                          // �
 constexpr int MINE_CREAT_Y = 1120;                                          // 矿洞地图的创建位置
 constexpr int MINE_TELE_X = 1;                                              // 农场室内地图传送X坐标
 constexpr int MINE_TELE_Y = 5;                                              // 农场室内地图传送Y坐标
-
-// 物品设置
-constexpr int OBJECT_LIST_ROWS = 3;											// 物品列表行数
-constexpr int OBJECT_LIST_COLS = 12;										// 物品列表列数
 
 // 初始界面相关设置
 constexpr int BG_MOVE_SPEED = 2;                                           //背景图移动速度
@@ -236,22 +247,6 @@ namespace TileConstants {
     };
 }
 
-// 游戏季节定义
-enum Season {
-    Spring,				// 春天
-    Summer,				// 夏天
-    Fall,				// 秋天
-    Winter,				// 冬天
-    All					// 通用
-};
-
-// 游戏天气定义
-enum Weather {
-    Sunny,              // 晴天
-    Rainy,              // 雨天
-    Dry                 // 干旱
-};
-
 // 游戏时间设置
 constexpr int INIT_DAY = 1;                                                 //游戏启动时的天数 
 constexpr int INIT_HOUR = 6;                                                //游戏启动时的时间
@@ -269,7 +264,6 @@ constexpr int WEATHER_NUM = 3;                                              // �
 constexpr float SUNNY_PROBABILITY = 0.5f;                            // 日间天气的概率
 constexpr float RAINY_PROBABILITY = 0.3f;                            // 雨天天气的概率
 constexpr float DRY_PROBABILITY = 0.2f;                              // 干旱天气的概率
-
 
 //农作物相关设置
 constexpr int MIN_GROWTHSTAGE = 0;                                          //最小生长阶段
@@ -308,7 +302,6 @@ enum class MapType {
     Indoor,
     Town
 };
-
 
 //游戏物品对应技能类型定义
 enum GameObjectSkillType {
@@ -412,7 +405,6 @@ struct ObjectImageInfo {
     cocos2d::Sprite* sprite; // 物品图片
     cocos2d::Label* label;   // 物品数量标签
     
-
     ObjectImageInfo() :
         sprite(nullptr),
         label(nullptr) {
@@ -457,6 +449,7 @@ struct StoreObjectInfo {
         return *this;
     }
 };
+
 
 // 角色动作和地图类型对应关系
 const std::map< GameCharacterAction, std::vector<TileConstants::TileType>> ACTION_TO_TILEMAP = {
@@ -576,8 +569,6 @@ public:
     }
 
     GameBaseObject() {};
-
-
 };
 
 
@@ -615,335 +606,40 @@ const std::unordered_map<std::string, std::string> GAME_SEED_TO_CROP_MAP = {
     {"pumpkinSeed", "pumpkin"}
 };
 
-
-// 游戏基础类物品属性参数定义
 const std::vector<GameBaseObject> GAME_BASE_OBJECTS_ATTRS = {
-     GameBaseObject(20, "../Resources/Crops/Cauliflower/cauliflower_4.png", "cauliflower","花椰菜", Farm,//花椰菜
-        500, // 最大存储量
-        1,   // 解锁所需等级
-        true, // 是否能出售
-        120,  // 出售价格
-        true, // 是否可以购买
-        150,    // 购买价格
-        true, // 是否可以食用
-        20,   // 食用恢复的能量值
-        false, // 能否放置
-        false, // 是否可以合成
-        {}    // 合成物品的原料
-    ),
-    GameBaseObject(21, "../Resources/Crops/Kale/kale_4.png", "kale", "甘蓝菜",Farm,//甘蓝菜
-        400, // 最大存储量
-        1,   // 解锁所需等级
-        true, // 是否能出售
-        100,  // 出售价格
-        true, // 是否可以购买
-        120,    // 购买价格
-        true, // 是否可以食用
-        15,   // 食用恢复的能量值
-        false, // 能否放置
-        false, // 是否可以合成
-        {}    // 合成物品的原料
-    ),
-    GameBaseObject(22, "../Resources/Crops/Pumpkin/pumpkin_5.png", "pumpkin","南瓜" ,Farm,//南瓜
-        600, // 最大存储量
-        3,   // 解锁所需等级
-        true, // 是否能出售
-        150,  // 出售价格
-        true, // 是否可以购买
-        180,    // 购买价格
-        true, // 是否可以食用
-        25,   // 食用恢复的能量值
-        false, // 能否放置
-        true,  // 是否可以合成
-        {{"pumpkin_seed", 3}, {"Fertilizer", 1}} // 合成物品的原料
-    ),
-    GameBaseObject(23,"../Resources/Objects/Base/Timber.png","Timber", "木材",Collect,99,1,true,3,false,INVAVID_NUM,false,INVAVID_NUM,false,false,{}),
-    GameBaseObject(24,"../Resources/Objects/Base/Stone.png","Stone","石头",Mine,99,1,true,5,false,INVAVID_NUM,false,INVAVID_NUM,false,false,{}),
-    GameBaseObject(25,"../Resources/Objects/Base/CopperParticle.png","CopperParticle","铜粒",Mine,99,1,true,12,false,INVAVID_NUM,false,INVAVID_NUM,false,false,{}),
-    GameBaseObject(26,"../Resources/Objects/Base/IronParticle.png","IronParticle","铁粒",Mine,99,2,true,25,false,INVAVID_NUM,false,INVAVID_NUM,false,false,{}),
-    GameBaseObject(27,"../Resources/Objects/Base/Copper.png","Copper","铜锭",Mine,99,1,true,120,false,INVAVID_NUM,false,INVAVID_NUM,false,true,{{"CopperParticle",5}}),
-    GameBaseObject(28,"../Resources/Objects/Base/Iron.png","Iron","铁锭",Mine,99,1,true,250,false,INVAVID_NUM,false,INVAVID_NUM,false,true,{{"IronParticle",5}}),
-    GameBaseObject(29,"../Resources/Objects/Base/Fertilizer.png","Fertilizer","肥料",Farm,99,1,true,150,true,200,false,INVAVID_NUM,false,true,{{"Grass",3}}),
-    GameBaseObject(30,"../Resources/Objects/Base/Grass.png","Grass","草",Collect,99,1,true,5,false,INVAVID_NUM,false,INVAVID_NUM,false,false,{}),
-    GameBaseObject(31,"../Resources/Objects/Base/Box.png","Box","箱子",Collect,1,1,true,5,false,INVAVID_NUM,false,INVAVID_NUM,false,true,{{"Timber",5}}),
-
-
-GameBaseObject(31, "../Resources/Objects/Base/Bigeye.png", "Bigeye", "大眼鱼", Fish,  // 大眼鱼
-   100, // 最大存储量
-   1,   // 解锁所需等级
-   true, // 是否能出售
-   150,  // 出售价格
-   false, // 是否可以购买
-   INVAVID_NUM,    // 购买价格
-   true, // 是否可以食用
-   40,    // 食用恢复的能量值
-   false, // 能否放置
-   false, //能否合成
-   {}    //合成物品的原料
-),
-
-GameBaseObject(32, "../Resources/Objects/Base/LargemouthBass.png", "LargemouthBass", "大嘴鲈鱼", Fish,  // 大嘴鲈鱼
-   100, // 最大存储量
-   2,   // 解锁所需等级
-   true, // 是否能出售
-   170,  // 出售价格
-   false, // 是否可以购买
-   INVAVID_NUM,    // 购买价格
-   true, // 是否可以食用
-   45,    // 食用恢复的能量值
-   false, // 能否放置
-   false, //能否合成
-   {}    //合成物品的原料
-),
-
-GameBaseObject(33, "../Resources/Objects/Base/Salmon.png", "Salmon", "鲑鱼", Fish,  // 鲑鱼
-   100, // 最大存储量
-   3,   // 解锁所需等级
-   true, // 是否能出售
-   200,  // 出售价格
-   false, // 是否可以购买
-   INVAVID_NUM,    // 购买价格
-   true, // 是否可以食用
-   50,    // 食用恢复的能量值
-   false, // 能否放置
-   false, //能否合成
-   {}    //合成物品的原料
-),
-
-GameBaseObject(34, "../Resources/Objects/Base/Squid.png", "Squid", "鱿鱼", Fish,  // 鱿鱼
-   100, // 最大存储量
-   1,   // 解锁所需等级
-   true, // 是否能出售
-   225,  // 出售价格
-   false, // 是否可以购买
-   INVAVID_NUM,    // 购买价格
-   true, // 是否可以食用
-   70,    // 食用恢复的能量值
-   false, // 能否放置
-   false, //能否合成
-   {}    //合成物品的原料
-),
-
-GameBaseObject(35, "../Resources/Objects/Base/Sardines.png", "Sardines", "沙丁鱼", Fish,  // 沙丁鱼
-   100, // 最大存储量
-   2,   // 解锁所需等级
-   true, // 是否能出售
-   150,  // 出售价格
-   false, // 是否可以购买
-   INVAVID_NUM,    // 购买价格
-   true, // 是否可以食用
-   40,    // 食用恢复的能量值
-   false, // 能否放置
-   false, //能否合成
-   {}    //合成物品的原料
-),
-
-GameBaseObject(36, "../Resources/Objects/Base/Herring.png", "Herring", "鲱鱼", Fish,  // 鲱鱼
-   100, // 最大存储量
-   5,   // 解锁所需等级
-   true, // 是否能出售
-   350,  // 出售价格
-   false, // 是否可以购买
-   INVAVID_NUM,    // 购买价格
-   true, // 是否可以食用
-   60,    // 食用恢复的能量值
-   false, // 能否放置
-   false, //能否合成
-   {}    //合成物品的原料
-),
-
-GameBaseObject(37, "../Resources/Objects/Base/RedMullet.png", "RedMullet", "红鲻鱼", Fish,  // 红鲻鱼
-   100, // 最大存储量
-   1,   // 解锁所需等级
-   true, // 是否能出售
-   180,  // 出售价格
-   false, // 是否可以购买
-   INVAVID_NUM,    // 购买价格
-   true, // 是否可以食用
-   35,    // 食用恢复的能量值
-   false, // 能否放置
-   false, //能否合成
-   {}    //合成物品的原料
-),
-
-GameBaseObject(38, "../Resources/Objects/Base/Carps.png", "Carps", "鲤鱼", Fish,  // 鲤鱼
-   100, // 最大存储量
-   1,   // 解锁所需等级
-   true, // 是否能出售
-   180,  // 出售价格
-   false, // 是否可以购买
-   INVAVID_NUM,    // 购买价格
-   true, // 是否可以食用
-   45,    // 食用恢复的能量值
-   false, // 能否放置
-   false, //能否合成
-   {}    //合成物品的原料
-),
-
-GameBaseObject(39, "../Resources/Objects/Base/Octopus.png", "Octopus", "章鱼", Fish,  // 章鱼
-   100, // 最大存储量
-   3,   // 解锁所需等级
-   true, // 是否能出售
-   275,  // 出售价格
-   false, // 是否可以购买
-   INVAVID_NUM,    // 购买价格
-   true, // 是否可以食用
-   70,    // 食用恢复的能量值
-   false, // 能否放置
-   false, //能否合成
-   {}    //合成物品的原料
-),
-
-GameBaseObject(40, "../Resources/Objects/Base/RedSnapper.png", "RedSnapper", "红鲷鱼", Fish,  // 红鲷鱼
-   100,     // 最大存储量
-   3,       // 解锁所需等级
-   true,    // 是否能出售
-   200,     // 出售价格
-   false,   // 是否可以购买
-   INVAVID_NUM,    // 购买价格
-   true,           // 是否可以食用
-   50,             // 食用恢复的能量值
-   false,          // 能否放置
-   false, //能否合成
-   {}    //合成物品的原料
-),
-
-GameBaseObject(41, "../Resources/Objects/Base/SmallmouthBass.png", "SmallmouthBass", "小嘴鲈鱼", Fish,  // 小嘴鲈鱼
-   100, // 最大存储量
-   2,   // 解锁所需等级
-   true, // 是否能出售
-   180,  // 出售价格
-   false, // 是否可以购买
-   INVAVID_NUM,    // 购买价格
-   true, // 是否可以食用
-   45,    // 食用恢复的能量值
-   false, // 能否放置
-   false, //能否合成
-   {}    //合成物品的原料
-),
-
-GameBaseObject(42, "../Resources/Objects/Base/TunaFish.png", "TunaFish", "金枪鱼", Fish,  // 金枪鱼
-   100, // 最大存储量
-   3,   // 解锁所需等级
-   true, // 是否能出售
-   300,  // 出售价格
-   false, // 是否可以购买
-   INVAVID_NUM,    // 购买价格
-   true, // 是否可以食用
-   70,    // 食用恢复的能量值
-   false, // 能否放置
-   false, //能否合成
-   {}    //合成物品的原料
-),
-
-GameBaseObject(43, "../Resources/Objects/Base/BakedFish.png", "BakedFish", "烤鱼", Collect,  // 烤鱼
-    100, // 最大存储量
-    2,   // 解锁所需等级
-    true, // 是否能出售
-    300,  // 出售价格
-    false, // 是否可以购买
-    INVAVID_NUM,    // 购买价格
-    true, // 是否可以食用
-    140,    // 食用恢复的能量值
-    true, // 能否放置
-    true, //能否合成
-    { {"Salmon",1 } }    //合成物品的原料
-),
-GameBaseObject(44, "../Resources/Objects/Base/FriedEgg.png", "FriedEgg", "煎鸡蛋", Collect,  // 煎鸡蛋
-    100, // 最大存储量
-    1,   // 解锁所需等级
-    true, // 是否能出售
-    200,  // 出售价格
-    false, // 是否可以购买
-    INVAVID_NUM,    // 购买价格
-    true, // 是否可以食用
-    70,    // 食用恢复的能量值
-    true, // 能否放置
-    true, //能否合成
-    { {"Egg",1 } }    //合成物品的原料
-),
-GameBaseObject(45, "../Resources/Objects/Base/Egg.png", "Egg", "鸡蛋", Collect,  // 鸡蛋
-    100, // 最大存储量
-    1,   // 解锁所需等级
-    true, // 是否能出售
-    150,  // 出售价格
-    false, // 是否可以购买
-    INVAVID_NUM,    // 购买价格
-    true, // 是否可以食用
-    70,    // 食用恢复的能量值
-    true, // 能否放置
-    false, //能否合成
-    { }    //合成物品的原料
-),
-GameBaseObject(46, "../Resources/Objects/Base/Sashimi.png", "Sashimi", "生鱼片", Collect,  // 生鱼片
-    100, // 最大存储量
-    1,   // 解锁所需等级
-    true, // 是否能出售
-    250,  // 出售价格
-    false, // 是否可以购买
-    INVAVID_NUM,    // 购买价格
-    true, // 是否可以食用
-    200,    // 食用恢复的能量值
-    true, // 能否放置
-    true, //能否合成
-    { {"Sardines",2}}    //合成物品的原料
-),
-GameBaseObject(47, "../Resources/Objects/Base/PumpkinSoup.png", "PumpkinSoup", "南瓜汤", Collect,  // 南瓜汤
-    100, // 最大存储量
-    1,   // 解锁所需等级
-    true, // 是否能出售
-    200,  // 出售价格
-    false, // 是否可以购买
-    INVAVID_NUM,    // 购买价格
-    true, // 是否可以食用
-    225,    // 食用恢复的能量值
-    true, // 能否放置
-    true, //能否合成
-    { {"pumpkin",2} }    //合成物品的原料
-),
-GameBaseObject(47, "../Resources/Objects/Base/Salad.png", "Salad", "沙拉", Collect,  // 沙拉
-    100, // 最大存储量
-    1,   // 解锁所需等级
-    true, // 是否能出售
-    280,  // 出售价格
-    false, // 是否可以购买
-    INVAVID_NUM,    // 购买价格
-    true, // 是否可以食用
-    280,    // 食用恢复的能量值
-    true, // 能否放置
-    true, //能否合成
-    { {"cauliflower",1}, {"kale",2}}    //合成物品的原料
-),
-GameBaseObject(48, "../Resources/Objects/Base/Ring.png", "Ring", "戒指", Mine,  // 戒指
-    100, // 最大存储量
-    1,   // 解锁所需等级
-    true, // 是否能出售
-    8000,  // 出售价格
-    true, // 是否可以购买
-    2000,    // 购买价格
-    false, // 是否可以食用
-    0,    // 食用恢复的能量值
-    true, // 能否放置
-    false, //能否合成
-    {}    //合成物品的原料
-    ),
-GameBaseObject(49, "../Resources/Objects/Base/Ruby.png", "Ruby", "红宝石", Mine,  // 红宝石
-    100, // 最大存储量
-    1,   // 解锁所需等级
-    true, // 是否能出售
-    2000,  // 出售价格
-    true, // 是否可以购买
-    1000,    // 购买价格
-    false, // 是否可以食用
-    0,    // 食用恢复的能量值
-    true, // 能否放置
-    false, //能否合成
-    {}    //合成物品的原料
-    ),
-
-   // GameBaseObject(30,"","None","无效物品",GameObjectSkillType::None,0,0,false,INVAVID_NUM,false,INVAVID_NUM,false,INVAVID_NUM,false,false,{})
+    GameBaseObject(20, "../Resources/Crops/Cauliflower/cauliflower_4.png", "cauliflower", "花椰菜", Farm, 500, 1, true, 120, true, 150, true, 20, false, false, {}),
+    GameBaseObject(21, "../Resources/Crops/Kale/kale_4.png", "kale", "甘蓝菜", Farm, 400, 1, true, 100, true, 120, true, 15, false, false, {}),
+    GameBaseObject(22, "../Resources/Crops/Pumpkin/pumpkin_5.png", "pumpkin", "南瓜", Farm, 600, 3, true, 150, true, 180, true, 25, false, true, {{"pumpkin_seed", 3}, {"Fertilizer", 1}}),
+    GameBaseObject(23,"../Resources/Objects/Base/Timber.png","Timber", "木材", Collect, 99, 1, true, 3, false, INVAVID_NUM, false, INVAVID_NUM, false, false, {}),
+    GameBaseObject(24,"../Resources/Objects/Base/Stone.png","Stone","石头", Mine, 99, 1, true, 5, false, INVAVID_NUM, false, INVAVID_NUM, false, false, {}),
+    GameBaseObject(25,"../Resources/Objects/Base/CopperParticle.png","CopperParticle","铜粒", Mine, 99, 1, true, 12, false, INVAVID_NUM, false, INVAVID_NUM, false, false, {}),
+    GameBaseObject(26,"../Resources/Objects/Base/IronParticle.png","IronParticle","铁粒", Mine, 99, 2, true, 25, false, INVAVID_NUM, false, INVAVID_NUM, false, false, {}),
+    GameBaseObject(27,"../Resources/Objects/Base/Copper.png","Copper","铜锭", Mine, 99, 1, true, 120, false, INVAVID_NUM, false, INVAVID_NUM, false, true, {{"CopperParticle",5}}),
+    GameBaseObject(28,"../Resources/Objects/Base/Iron.png","Iron","铁锭", Mine, 99, 1, true, 250, false, INVAVID_NUM, false, INVAVID_NUM, false, true, {{"IronParticle",5}}),
+    GameBaseObject(29,"../Resources/Objects/Base/Fertilizer.png","Fertilizer","肥料", Farm, 99, 1, true, 150, true, 200, false, INVAVID_NUM, false, true, {{"Grass",3}}),
+    GameBaseObject(30,"../Resources/Objects/Base/Grass.png","Grass","草", Collect, 99, 1, true, 5, false, INVAVID_NUM, false, INVAVID_NUM, false, false, {}),
+    GameBaseObject(31,"../Resources/Objects/Base/Box.png","Box","箱子", Collect, 1, 1, true, 5, false, INVAVID_NUM, false, INVAVID_NUM, false, true, {{"Timber",5}}),
+    GameBaseObject(31, "../Resources/Objects/Base/Bigeye.png", "Bigeye", "大眼鱼", Fish, 100, 1, true, 150, false, INVAVID_NUM, true, 40, false, false, {}),
+    GameBaseObject(32, "../Resources/Objects/Base/LargemouthBass.png", "LargemouthBass", "大嘴鲈鱼", Fish, 100, 2, true, 170, false, INVAVID_NUM, true, 45, false, false, {}),
+    GameBaseObject(33, "../Resources/Objects/Base/Salmon.png", "Salmon", "鲑鱼", Fish, 100, 3, true, 200, false, INVAVID_NUM, true, 50, false, false, {}),
+    GameBaseObject(34, "../Resources/Objects/Base/Squid.png", "Squid", "鱿鱼", Fish, 100, 1, true, 225, false, INVAVID_NUM, true, 70, false, false, {}),
+    GameBaseObject(35, "../Resources/Objects/Base/Sardines.png", "Sardines", "沙丁鱼", Fish, 100, 2, true, 150, false, INVAVID_NUM, true, 40, false, false, {}),
+    GameBaseObject(36, "../Resources/Objects/Base/Herring.png", "Herring", "鲱鱼", Fish, 100, 5, true, 350, false, INVAVID_NUM, true, 60, false, false, {}),
+    GameBaseObject(37, "../Resources/Objects/Base/RedMullet.png", "RedMullet", "红鲻鱼", Fish, 100, 1, true, 180, false, INVAVID_NUM, true, 35, false, false, {}),
+    GameBaseObject(38, "../Resources/Objects/Base/Carps.png", "Carps", "鲤鱼", Fish, 100, 1, true, 180, false, INVAVID_NUM, true, 45, false, false, {}),
+    GameBaseObject(39, "../Resources/Objects/Base/Octopus.png", "Octopus", "章鱼", Fish, 100, 3, true, 275, false, INVAVID_NUM, true, 70, false, false, {}),
+    GameBaseObject(40, "../Resources/Objects/Base/RedSnapper.png", "RedSnapper", "红鲷鱼", Fish, 100, 3, true, 200, false, INVAVID_NUM, true, 50, false, false, {}),
+    GameBaseObject(41, "../Resources/Objects/Base/SmallmouthBass.png", "SmallmouthBass", "小嘴鲈鱼", Fish, 100, 2, true, 180, false, INVAVID_NUM, true, 45, false, false, {}),
+    GameBaseObject(42, "../Resources/Objects/Base/TunaFish.png", "TunaFish", "金枪鱼", Fish, 100, 3, true, 300, false, INVAVID_NUM, true, 70, false, false, {}),
+    GameBaseObject(43, "../Resources/Objects/Base/BakedFish.png", "BakedFish", "烤鱼", Collect, 100, 2, true, 300, false, INVAVID_NUM, true, 140, true, true, {{"Salmon", 1}}),
+    GameBaseObject(44, "../Resources/Objects/Base/FriedEgg.png", "FriedEgg", "煎鸡蛋", Collect, 100, 1, true, 200, false, INVAVID_NUM, true, 70, true, true, {{"Egg", 1}}),
+    GameBaseObject(45, "../Resources/Objects/Base/Egg.png", "Egg", "鸡蛋", Collect, 100, 1, true, 150, false, INVAVID_NUM, true, 70, true, false, {}),
+    GameBaseObject(46, "../Resources/Objects/Base/Sashimi.png", "Sashimi", "生鱼片", Collect, 100, 1, true, 250, false, INVAVID_NUM, true, 200, true, true, {{"Sardines", 2}}),
+    GameBaseObject(47, "../Resources/Objects/Base/PumpkinSoup.png", "PumpkinSoup", "南瓜汤", Collect, 100, 1, true, 200, false, INVAVID_NUM, true, 225, true, true, {{"pumpkin", 2}}),
+    GameBaseObject(48, "../Resources/Objects/Base/Salad.png", "Salad", "沙拉", Collect, 100, 1, true, 280, false, INVAVID_NUM, true, 280, true, true, {{"cauliflower", 1}, {"kale", 2}}),
+    GameBaseObject(49, "../Resources/Objects/Base/Ring.png", "Ring", "戒指", Mine, 100, 1, true, 8000, true, 2000, false, 0, true, false, {}),
+    GameBaseObject(50, "../Resources/Objects/Base/Ruby.png", "Ruby", "红宝石", Mine, 100, 1, true, 2000, true, 1000, false, 0, true, false, {}),
 };
-
 
 // 游戏物品属性定义
 struct GameCommonObject {
@@ -983,7 +679,7 @@ struct GameCommonObject {
 
     void save(std::ofstream& outFile) const {
         outFile.write(reinterpret_cast<const char*>(&type), sizeof(type));
-        int objectID = object ? object->getID() : -1; // 假设有 getID 方法
+        int objectID = object ? object->getID() : -1;
         outFile.write(reinterpret_cast<const char*>(&objectID), sizeof(objectID));
     }
 
@@ -1004,6 +700,7 @@ struct GameCommonObject {
 
     }
 };
+
 
 
 // 角色物品栏单个物品属性定义
@@ -1033,7 +730,6 @@ struct BoxNode {
     int _maxObjectKindCount;						// 箱子最大容量
     cocos2d::Vec2 _worldPosition;					// 箱子坐标
 
-
     // 构造函数
     BoxNode() :
         _maxObjectKindCount(OBJECT_LIST_COLS)
@@ -1057,6 +753,5 @@ struct  ProductNode {
     Season discountSeason;      // 商品打折的季节
     Season increaseSeason;      // 商品涨价的季节
 };
-
 
 #endif // !_CONSTANT_H_

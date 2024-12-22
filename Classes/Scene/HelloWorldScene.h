@@ -13,9 +13,10 @@
 #include "SimpleAudioEngine.h"
 #include "Layer/LoginLayer.h"
 #include "ui/CocosGUI.h"
-#include "../Classes/Maps/FarmMap.h"
-#include "../Classes/Character/CharacterInfo.h"         
+#include "Maps/FarmMap.h"
+#include "Character/CharacterInfo.h"         
 #include "Layer/AudioControlLayer.h"
+#include "MenuImage/HoverMenuItemImage.h"
 
 class HelloWorld : public cocos2d::Scene
 {
