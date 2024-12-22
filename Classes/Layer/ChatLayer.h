@@ -31,9 +31,9 @@ public:
     void ChatLayer::addAffectionText(const std::string& affectionInfo);
 
 private:
-    cocos2d::LayerColor* chatLayer;  ///< 半透明黑色背景层
-    cocos2d::Sprite* dialogBg;       ///< 对话框背景精灵
-    cocos2d::Label* dialogLabel;     ///< 显示消息的标签
+    cocos2d::LayerColor* _chatLayer;  ///< 半透明黑色背景层
+    cocos2d::Sprite* _dialogBg;       ///< 对话框背景精灵
+    cocos2d::Label* _dialogLabel;     ///< 显示消息的标签
 };
 
 #endif 

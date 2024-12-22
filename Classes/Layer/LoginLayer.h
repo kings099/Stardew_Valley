@@ -21,6 +21,8 @@ class LoginLayer : public Layer
 public:
     // 构造函数
     LoginLayer();
+
+    //析构函数
     virtual ~LoginLayer();
 
     // 创建函数
@@ -35,15 +37,15 @@ public:
 
 private:
     // 输入框控件
-    cocos2d::ui::TextField* usernameInput;
-    cocos2d::ui::TextField* farmNameInput;
-    cocos2d::ui::TextField* favoriteInput;
+    cocos2d::ui::TextField* _usernameInput;
+    cocos2d::ui::TextField* _farmNameInput;
+    cocos2d::ui::TextField* _favoriteInput;
 
     // 按钮控件
-    cocos2d::ui::Button* submitButton;
+    cocos2d::ui::Button* _submitButton;
 
     // 登录界面层
-    LayerColor* loginLayer;
+    LayerColor* _loginLayer;
 };
 
 #endif // __LOGIN_LAYER_H__

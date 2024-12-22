@@ -141,7 +141,17 @@ namespace TileConstants {
 constexpr int OBJECT_LIST_ROWS = 3;											// 物品列表行数
 constexpr int OBJECT_LIST_COLS = 12;										// 物品列表列数
 
+//初始界面相关设置
+constexpr int BG_MOVE_SPEED = 2;
+constexpr float BG_UPDATE_RATIO = 0.016f;
+
+
+
+
+
+
 // UI 相关设置
+const std::string FONT_TYPE = "fonts/arial.ttf";                          // UI界面字体类型
 constexpr int UI_SCALE = 210.0f;                                            // UI界面缩放
 constexpr int FONT_SIZE = 20;                                               // 字体大小
 constexpr int MAP_LAYER_GRADE = 0;                                          // 地图层级

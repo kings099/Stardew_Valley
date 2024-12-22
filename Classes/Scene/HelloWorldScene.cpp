@@ -50,14 +50,14 @@ bool HelloWorld::init()
   
    
     // 加载并设置游戏标题图片,层级为1
-    titleSprite = Sprite::create("../Resources/Helloworld/gameTitle.png");  
-    if (titleSprite == nullptr) {
+    _titleSprite = Sprite::create("../Resources/Helloworld/gameTitle.png");  
+    if (_titleSprite == nullptr) {
         problemLoading("'gameTitle.png'");
     }
     else {
         // 设置标题图片的位置
-        titleSprite->setPosition(Vec2(origin.x + visibleSize.width / 2, origin.y + visibleSize.height * 0.7));
-        this->addChild(titleSprite, 1);  // 将标题添加到场景中
+        _titleSprite->setPosition(Vec2(origin.x + visibleSize.width / 2, origin.y + visibleSize.height * 0.7));
+        this->addChild(_titleSprite, 1);  // 将标题添加到场景中
     }
    
     //创建开始结束菜单项，层级为2
@@ -77,23 +77,23 @@ void HelloWorld::createMenuWithImage()
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
     // 创建 "开始" 按钮的图像
-    startItem = HoverMenuItemImage::create(
+    _startItem = HoverMenuItemImage::create(
         "../Resources/Helloworld/start.png",   // 普通状态下的图片
         "../Resources/Helloworld/start_.png",  // 悬停状态下的图片
         CC_CALLBACK_1(HelloWorld::startGameCallback, this)  // 点击时调用的回调函数
     );
-    startItem->setPosition(Vec2(origin.x + visibleSize.width * 0.33, origin.y + visibleSize.height * 0.2f)); // 设置 "开始" 按钮的位置
+    _startItem->setPosition(Vec2(origin.x + visibleSize.width * 0.33, origin.y + visibleSize.height * 0.2f)); // 设置 "开始" 按钮的位置
 
     // 创建 "结束" 按钮的图像
-    exitItem = HoverMenuItemImage::create(
+    _exitItem = HoverMenuItemImage::create(
         "../Resources/Helloworld/end.png",    // 普通状态下的图片
         "../Resources/Helloworld/end_.png",   // 悬停状态下的图片
         CC_CALLBACK_1(HelloWorld::exitGameCallback, this)  // 点击时调用的回调函数
     );
-    exitItem->setPosition(Vec2(origin.x + visibleSize.width * 0.67, origin.y + visibleSize.height * 0.2f)); // 设置 "结束" 按钮的位置
+    _exitItem->setPosition(Vec2(origin.x + visibleSize.width * 0.67, origin.y + visibleSize.height * 0.2f)); // 设置 "结束" 按钮的位置
 
     // 创建菜单，将 "开始" 和 "结束" 按钮添加到菜单中
-    auto menu = Menu::create(startItem, exitItem, nullptr);
+    auto menu = Menu::create(_startItem, _exitItem, nullptr);
     menu->setPosition(Vec2::ZERO);  // 设置菜单的原点位置
     this->addChild(menu, 2);  // 将菜单添加到场景中
    
@@ -125,8 +125,8 @@ void HelloWorld::initBackground() {
     // 启动定时器进行背景的移动
     schedule([=](float dt) {
         // 每帧移动背景图片
-        background1->setPositionX(background1->getPositionX() - 2);  // 移动速度可以根据需要调整
-        background2->setPositionX(background2->getPositionX() - 2);  //获取背景当前的 X 坐标，减去 2 意味着每帧将背景向左移动 2 个单位。
+        background1->setPositionX(background1->getPositionX() - BG_MOVE_SPEED);  // 移动速度可以根据需要调整
+        background2->setPositionX(background2->getPositionX() - BG_MOVE_SPEED);  //获取背景当前的 X 坐标，减去 2 意味着每帧将背景向左移动 2 个单位。
 
         // 当第一个背景移出屏幕时，将其移到第二个背景的后面
         if (background1->getPositionX() <= -visibleSize.width / 2) {
@@ -137,7 +137,7 @@ void HelloWorld::initBackground() {
         if (background2->getPositionX() <= -visibleSize.width / 2) {
             background2->setPositionX(background1->getPositionX() + visibleSize.width);
         }
-        }, 0.016f, "backgroundMoveKey");
+        }, BG_UPDATE_RATIO, "backgroundMoveKey");
 }
 
 void HelloWorld::startGameCallback(Ref* pSender)
@@ -147,9 +147,9 @@ void HelloWorld::startGameCallback(Ref* pSender)
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
     // 按钮右移并隐藏
-    startItem->runAction(MoveBy::create(1.0f, Vec2(visibleSize.width, 0)));  // 平滑地右移到屏幕外
-    exitItem->runAction(MoveBy::create(1.0f, Vec2(visibleSize.width, 0)));   // 平滑地右移到屏幕外
-    titleSprite->runAction(MoveBy::create(1.0f, Vec2(visibleSize.width, 0))); // 平滑地右移到屏幕外
+    _startItem->runAction(MoveBy::create(1.0f, Vec2(visibleSize.width, 0)));  // 平滑地右移到屏幕外
+    _exitItem->runAction(MoveBy::create(1.0f, Vec2(visibleSize.width, 0)));   // 平滑地右移到屏幕外
+    _titleSprite->runAction(MoveBy::create(1.0f, Vec2(visibleSize.width, 0))); // 平滑地右移到屏幕外
     
     auto loginLayer = LoginLayer::create();
     this->addChild(loginLayer);
