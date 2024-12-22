@@ -172,6 +172,9 @@
     <ClInclude Include="..\Classes\Maps\MineMap.h">
       <Filter>Classes\Maps</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\Maps\IndoorLighting.h">
+      <Filter>Classes\Maps</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\CursorAndBUutton\HoverCursor.cpp" />
@@ -287,6 +290,9 @@
       <Filter>Classes\Control</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\Maps\MineMap.cpp">
+      <Filter>Classes\Maps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Maps\IndoorLighting.cpp">
       <Filter>Classes\Maps</Filter>
     </ClCompile>
   </ItemGroup>

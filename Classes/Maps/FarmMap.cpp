@@ -21,6 +21,7 @@ FarmMap::~FarmMap() {
     if (_treeLayer) {
         _treeLayer->removeAllChildren();
     }
+    _eventDispatcher->removeEventListenersForTarget(this);
 }
 
 FarmMap* FarmMap::create(const std::string& mapFile, Node* TreeLayer, const Vec2& mapPosition)
@@ -67,6 +68,7 @@ bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition, Node* Tr
     // 添加树木层
     _treeLayer = TreeLayer;
     plantTreesOnPathLayer(); 
+  
     //监听鼠标
     auto listener = EventListenerMouse::create();
     listener->onMouseDown = CC_CALLBACK_1(FarmMap::onMouseEvent, this);  // 监听鼠标点击事件
@@ -95,7 +97,7 @@ bool FarmMap::onMouseEvent(cocos2d::Event* event)
         Vec2 mapPosition(mousePos.x + cameraOffset_x, mousePos.y + cameraOffset_y);
         Vec2 tiledPos = absoluteToTile(mapPosition);
         CCLOG("TILED POS: %f,%f", tiledPos.x, tiledPos.y);
-        int GID = getTileGIDAt("path", tiledPos);
+        int GID = getTileGIDAt("Object", tiledPos);
         CCLOG("click GID:%d", GID);
         Vec2 worldpos = tileToAbsolute(tiledPos);
         CCLOG("WORLD POS: %f,%f", worldpos.x, worldpos.y);
@@ -272,4 +274,21 @@ Crops* FarmMap::getTreeAtPosition(const Vec2& tilePos) {
 
     CCLOG("No tree found at tile position: (%f, %f)", tilePos.x, tilePos.y);
     return nullptr; // 未找到匹配的树精灵
+}
+
+void FarmMap::plantCrops(const Vec2& tilePos, const std::string cropName,const int characterLevel) {
+
+    // 设置玩家等级
+    Crops::setPlayerLevel(characterLevel);
+
+    int maxstage = KALE_MAX_GROWTHSTAGE;
+    if (cropName == "pumpkin")
+        maxstage = PUMPKIN_MAX_GROWTHSTAGE;
+    // 添加指定农作物
+    auto crop = Crops::create(cropName, maxstage);
+    _tile_map->addChild(crop,ANIMATION_LAYER_GRADE);
+
+    // 设置位置
+    crop->setPosition(tileToRelative(tilePos));
+    crop->setGrowthStage(MIN_GROWTHSTAGE);
 }

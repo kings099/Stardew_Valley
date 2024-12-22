@@ -125,7 +125,7 @@ const Vec2& GameMap::getPosition() {
 }
 
 // 获取某位置Layername图层的GID
-int GameMap::getTileGIDAt(const std::string& layerName, const Vec2& tileCoord)
+int GameMap::getTileGIDAt(const std::string& layerName, const Vec2& tileCoord) const
 {
     auto layer = _tile_map->getLayer(layerName);
     if (!layer) {
@@ -143,7 +143,7 @@ int GameMap::getTileGIDAt(const std::string& layerName, const Vec2& tileCoord)
 }
 
 // 获取某GID对应图块的属性
-cocos2d::ValueMap GameMap::getTilePropertiesForGID(int GID)
+cocos2d::ValueMap GameMap::getTilePropertiesForGID(int GID) const
 {
     if (GID == 0) return cocos2d::ValueMap();
     auto tileProperties = _tile_map->getPropertiesForGID(GID);

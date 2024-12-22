@@ -46,13 +46,13 @@ public:
     const Vec2& GameMap::getPosition();
 
     // 获取某位置Layername图层的GID
-    virtual int getTileGIDAt(const std::string& layerName, const Vec2& tileCoord);
+    int getTileGIDAt(const std::string& layerName, const Vec2& tileCoord) const ;
 
     // 获取某GID对应图块的属性
-    virtual cocos2d::ValueMap getTilePropertiesForGID(int GID);
+    cocos2d::ValueMap getTilePropertiesForGID(int GID) const;
 
-    // 替换指定图层的瓦片
-    void replaceTileAt(const std::string& layerName, const Vec2& tileCoord, int newGID, bool isUserAction = true);
+    // 替换指定图层的瓦片，在矿洞子类实现刷新逻辑记录
+    virtual void replaceTileAt(const std::string& layerName, const Vec2& tileCoord, int newGID, bool isUserAction = true);
 
     // 获取作物的指针，在农场子类中实现，其他类型返回nullptr
     virtual Crops* getTreeAtPosition(const Vec2& tilePos);
@@ -61,7 +61,7 @@ public:
     TMXTiledMap* getTiledMap() const;
 
     // 恢复存储的地图信息
-    void applySavedChanges();
+    virtual void applySavedChanges();
 
     // 保存地图信息，虚函数是为了防止子类有其他需要保存的信息
     virtual void saveChangesToStateManager() const;

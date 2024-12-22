@@ -22,6 +22,8 @@ constexpr int LARGE_RESOLUTION_HEIGHT = 1080;                               // �
 constexpr float FRAME_RATE = 60.0f;                                         // 游戏帧率
 const std::string APPLICATION_TITLE = u8"星露谷物语 Stardew Valley";         // 游戏应用标题
 
+// 颜色相关设置
+const cocos2d::Color4B HLAFBLACK = cocos2d::Color4B(0, 0, 0, 200);         // 半透明黑色
 
 //游戏登录界面相关设置
 constexpr float VISIBLE_SIZE_RATIO_X = 1.0f;                               // 横向屏幕宽度比例因子（常量，默认1.0）
@@ -93,6 +95,7 @@ constexpr int MINE_TELE_Y = 5;                                              // �
 // 地图图块相关
 namespace TileConstants {
     constexpr int DRY_FARM_TILE_GID = 2040;                                     // 干燥耕地效果动画图块GID
+    constexpr int WET_FARM_TILE_GID = 2044;                                     // 湿润耕地效果动画图块GID
     constexpr int EMPTY_GID = 0;                                                // 空白GID
     constexpr int WOOD_GID = 7;                                                 // 树桩标记GID（不可见）
     constexpr int OAK_GID = 10;                                                 // 桦树GID
@@ -112,7 +115,8 @@ namespace TileConstants {
     constexpr float MINE_DROP_PROBABILITY = 0.5f;                               // 矿物掉落概率    
     constexpr float STONE_DROP_MINE_PROBABILITY = 0.1f;                         // 挖矿时石头掉落概率    
     constexpr float TREATURE_PROBABILITY = 1.0f;                                // 珍惜物品掉落概率
-    
+    constexpr float UPDATA_POSIIBILITY = 0.5f;                                  // 矿洞物品刷新几率
+
     constexpr int DEFAULT_DROP_QUANTITY = 1;                                    // 默认掉落数量
     constexpr int MUTI_DROP_QUANTITY = 3;                                       // 默认多个掉落数量
 
@@ -130,18 +134,31 @@ namespace TileConstants {
         Soil,       // 可耕种土地
         Soiled,     // 已耕种土地
         Crop,       // 作物
-        Door,       // 门
         Other
     };
 
+    // 用于记录地图变化
     struct TileChange {
         std::string layerName;          // 图层名称
         cocos2d::Vec2 tileCoord;        // 瓦片坐标
         int newGID;                     // 瓦片的新 GID
 
+        // 默认构造
+        TileChange()
+            : layerName(""), tileCoord(cocos2d::Vec2::ZERO), newGID(0) {}
+
         TileChange(const std::string& layer, const cocos2d::Vec2& coord, int gid)
             : layerName(layer), tileCoord(coord), newGID(gid) {}
     };
+    
+
+    // 用于记录地图放置物品与对应GID的映射关系
+    const std::unordered_map<std::string, int> objectGIDMap = {
+            {"Box", 4231},
+            // 在此添加更多物品名称和对应的 GID
+    };
+
+
 }
 // 物品设置
 constexpr int OBJECT_LIST_ROWS = 3;											// 物品列表行数
@@ -200,14 +217,15 @@ constexpr int DAYS_IN_A_SEASON = 7;                                         // �
 constexpr int DAYS_IN_A_YEAR = 28;                                          // 一年28天
 
 //农作物相关设置
-constexpr int CAULIFLOWER_MAX_GROWTHSTAGE = 5;                              // 花椰菜共有5个生长阶段
-constexpr int KALE_MAX_GROWTHSTAGE = 5;                                     // 甘蓝菜共有5个生长阶段
-constexpr int PUMPKIN_MAX_GROWTHSTAGE = 6;                                  // 南瓜共有6个生长阶段
-constexpr int OAK_MAX_GROWTHSTAGE = 5;                                      // 橡树共有5个生长阶段
-constexpr int MAPLE_MAX_GROWTHSTAGE = 5;                                    // 枫树共有5个生长阶段
-constexpr int PINE_MAX_GROWTHSTAGE = 5;                                     // 松树共有5个生长阶段
-constexpr float CROP_START_RATIO = 1.5f;                                    // 农作物未成熟时的缩放比例
-constexpr float CROP_MATURE_RATIO = 1.0f;                                   // 农作物成熟时的缩放比例
+constexpr int MIN_GROWTHSTAGE = 0;                                          //最小生长阶段
+constexpr int CAULIFLOWER_MAX_GROWTHSTAGE = 5;                              //花椰菜共有5个生长阶段
+constexpr int KALE_MAX_GROWTHSTAGE = 5;                                     //甘蓝菜共有5个生长阶段
+constexpr int PUMPKIN_MAX_GROWTHSTAGE = 6;                                  //南瓜共有6个生长阶段
+constexpr int OAK_MAX_GROWTHSTAGE = 5;                                      //橡树共有5个生长阶段
+constexpr int MAPLE_MAX_GROWTHSTAGE = 5;                                    //枫树共有5个生长阶段
+constexpr int PINE_MAX_GROWTHSTAGE = 5;                                     //松树共有5个生长阶段
+constexpr float CROP_START_RATIO = 1.5f;                                    //农作物未成熟时的缩放比例
+constexpr float CROP_MATURE_RATIO = 1.0f;                                    //农作物成熟时的缩放比例
 constexpr float CROP_HORIZONTAL_ANCHORPOINT = 0.5f;					        // 树水平锚点
 constexpr float CROP_VERTICAL_ANCHORPOINT = 0.0f;						    // 树垂直锚点
 
@@ -231,6 +249,7 @@ enum class MapType {
     Generic,
     Mine,
     Farm,
+    Indoor,
     Town
 };
 
@@ -517,6 +536,8 @@ public:
     }
 
     GameBaseObject() {};
+
+
 };
 
 
@@ -546,6 +567,14 @@ const std::vector<GameSeedObject> GAME_SEED_OBJECTS_ATTRS = {
      GameSeedObject(18,"../Resources/Crops/Kale/kale_0.png","kaleSeed","甘蓝菜种子",Farm,1,Spring,21,60,90),//甘蓝菜种子
      GameSeedObject(19, "../Resources/Crops/Pumpkin/pumpkin_0.png","pumpkinSeed","南瓜种子",Farm,3,Fall,22,100,160)//南瓜种子
 };
+
+// 游戏种子名称到农作物名称的映射，可拓展
+const std::unordered_map<std::string, std::string> GAME_SEED_TO_CROP_MAP = {
+    {"cauliflowerSeed", "cauliflower"},
+    {"kaleSeed", "kale"},
+    {"pumpkinSeed", "pumpkin"}
+};
+
 
 // 游戏基础类物品属性参数定义
 const std::vector<GameBaseObject> GAME_BASE_OBJECTS_ATTRS = {
@@ -599,7 +628,7 @@ const std::vector<GameBaseObject> GAME_BASE_OBJECTS_ATTRS = {
     GameBaseObject(31,"../Resources/Objects/Base/Box.png","Box","箱子",Collect,1,1,true,5,false,INVAVID_NUM,false,INVAVID_NUM,false,true,{{"Timber",5}}),
 
 
-GameBaseObject(30, "../Resources/Objects/Base/Bigeye.png", "Bigeye", "大眼鱼", Fish,  // 大眼鱼
+GameBaseObject(31, "../Resources/Objects/Base/Bigeye.png", "Bigeye", "大眼鱼", Fish,  // 大眼鱼
    100, // 最大存储量
    1,   // 解锁所需等级
    true, // 是否能出售
@@ -613,7 +642,7 @@ GameBaseObject(30, "../Resources/Objects/Base/Bigeye.png", "Bigeye", "大眼鱼"
    {}    //合成物品的原料
 ),
 
-GameBaseObject(30, "../Resources/Objects/Base/LargemouthBass.png", "LargemouthBass", "大嘴鲈鱼", Fish,  // 大嘴鲈鱼
+GameBaseObject(32, "../Resources/Objects/Base/LargemouthBass.png", "LargemouthBass", "大嘴鲈鱼", Fish,  // 大嘴鲈鱼
    100, // 最大存储量
    2,   // 解锁所需等级
    true, // 是否能出售
@@ -627,7 +656,7 @@ GameBaseObject(30, "../Resources/Objects/Base/LargemouthBass.png", "LargemouthBa
    {}    //合成物品的原料
 ),
 
-GameBaseObject(30, "../Resources/Objects/Base/Salmon.png", "Salmon", "鲑鱼", Fish,  // 鲑鱼
+GameBaseObject(33, "../Resources/Objects/Base/Salmon.png", "Salmon", "鲑鱼", Fish,  // 鲑鱼
    100, // 最大存储量
    3,   // 解锁所需等级
    true, // 是否能出售
@@ -641,9 +670,9 @@ GameBaseObject(30, "../Resources/Objects/Base/Salmon.png", "Salmon", "鲑鱼", F
    {}    //合成物品的原料
 ),
 
-GameBaseObject(30, "../Resources/Objects/Base/Squid.png", "Squid", "鱿鱼", Fish,  // 鱿鱼
+GameBaseObject(34, "../Resources/Objects/Base/Squid.png", "Squid", "鱿鱼", Fish,  // 鱿鱼
    100, // 最大存储量
-   3,   // 解锁所需等级
+   1,   // 解锁所需等级
    true, // 是否能出售
    225,  // 出售价格
    false, // 是否可以购买
@@ -655,7 +684,7 @@ GameBaseObject(30, "../Resources/Objects/Base/Squid.png", "Squid", "鱿鱼", Fis
    {}    //合成物品的原料
 ),
 
-GameBaseObject(30, "../Resources/Objects/Base/Sardines.png", "Sardines", "沙丁鱼", Fish,  // 沙丁鱼
+GameBaseObject(35, "../Resources/Objects/Base/Sardines.png", "Sardines", "沙丁鱼", Fish,  // 沙丁鱼
    100, // 最大存储量
    2,   // 解锁所需等级
    true, // 是否能出售
@@ -669,7 +698,7 @@ GameBaseObject(30, "../Resources/Objects/Base/Sardines.png", "Sardines", "沙丁
    {}    //合成物品的原料
 ),
 
-GameBaseObject(30, "../Resources/Objects/Base/Herring.png", "Herring", "鲱鱼", Fish,  // 鲱鱼
+GameBaseObject(36, "../Resources/Objects/Base/Herring.png", "Herring", "鲱鱼", Fish,  // 鲱鱼
    100, // 最大存储量
    5,   // 解锁所需等级
    true, // 是否能出售
@@ -683,7 +712,7 @@ GameBaseObject(30, "../Resources/Objects/Base/Herring.png", "Herring", "鲱鱼",
    {}    //合成物品的原料
 ),
 
-GameBaseObject(30, "../Resources/Objects/Base/RedMullet.png", "RedMullet", "红鲻鱼", Fish,  // 红鲻鱼
+GameBaseObject(37, "../Resources/Objects/Base/RedMullet.png", "RedMullet", "红鲻鱼", Fish,  // 红鲻鱼
    100, // 最大存储量
    1,   // 解锁所需等级
    true, // 是否能出售
@@ -697,7 +726,7 @@ GameBaseObject(30, "../Resources/Objects/Base/RedMullet.png", "RedMullet", "红�
    {}    //合成物品的原料
 ),
 
-GameBaseObject(30, "../Resources/Objects/Base/Carps.png", "Carps", "鲤鱼", Fish,  // 鲤鱼
+GameBaseObject(38, "../Resources/Objects/Base/Carps.png", "Carps", "鲤鱼", Fish,  // 鲤鱼
    100, // 最大存储量
    1,   // 解锁所需等级
    true, // 是否能出售
@@ -711,7 +740,7 @@ GameBaseObject(30, "../Resources/Objects/Base/Carps.png", "Carps", "鲤鱼", Fis
    {}    //合成物品的原料
 ),
 
-GameBaseObject(30, "../Resources/Objects/Base/Octopus.png", "Octopus", "章鱼", Fish,  // 章鱼
+GameBaseObject(39, "../Resources/Objects/Base/Octopus.png", "Octopus", "章鱼", Fish,  // 章鱼
    100, // 最大存储量
    3,   // 解锁所需等级
    true, // 是否能出售
@@ -725,7 +754,7 @@ GameBaseObject(30, "../Resources/Objects/Base/Octopus.png", "Octopus", "章鱼",
    {}    //合成物品的原料
 ),
 
-GameBaseObject(30, "../Resources/Objects/Base/RedSnapper.png", "RedSnapper", "红鲷鱼", Fish,  // 红鲷鱼
+GameBaseObject(40, "../Resources/Objects/Base/RedSnapper.png", "RedSnapper", "红鲷鱼", Fish,  // 红鲷鱼
    100,     // 最大存储量
    3,       // 解锁所需等级
    true,    // 是否能出售
@@ -739,7 +768,7 @@ GameBaseObject(30, "../Resources/Objects/Base/RedSnapper.png", "RedSnapper", "�
    {}    //合成物品的原料
 ),
 
-GameBaseObject(30, "../Resources/Objects/Base/SmallmouthBass.png", "SmallmouthBass", "小嘴鲈鱼", Fish,  // 小嘴鲈鱼
+GameBaseObject(41, "../Resources/Objects/Base/SmallmouthBass.png", "SmallmouthBass", "小嘴鲈鱼", Fish,  // 小嘴鲈鱼
    100, // 最大存储量
    2,   // 解锁所需等级
    true, // 是否能出售
@@ -753,7 +782,7 @@ GameBaseObject(30, "../Resources/Objects/Base/SmallmouthBass.png", "SmallmouthBa
    {}    //合成物品的原料
 ),
 
-GameBaseObject(30, "../Resources/Objects/Base/TunaFish.png", "TunaFish", "金枪鱼", Fish,  // 金枪鱼
+GameBaseObject(42, "../Resources/Objects/Base/TunaFish.png", "TunaFish", "金枪鱼", Fish,  // 金枪鱼
    100, // 最大存储量
    3,   // 解锁所需等级
    true, // 是否能出售
@@ -769,6 +798,7 @@ GameBaseObject(30, "../Resources/Objects/Base/TunaFish.png", "TunaFish", "金枪
 
    // GameBaseObject(30,"","None","无效物品",GameObjectSkillType::None,0,0,false,INVAVID_NUM,false,INVAVID_NUM,false,INVAVID_NUM,false,false,{})
 };
+
 
 // 游戏物品属性定义
 struct GameCommonObject {

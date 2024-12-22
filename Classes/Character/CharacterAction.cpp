@@ -56,7 +56,7 @@ void CharacterAction::onMouseDown(cocos2d::Event* event, GameCharacterAction& ga
 // 获取物品
 void CharacterAction::getObject(GameCharacterAction action, InteractionManager* interactionManager) {
 	TileInfo targetTileNode = getTileInfo(action, interactionManager);
-	std::string fishName = Fishs::catchFish(TimeManager::getInstance()->getCurrentSeason());
+	std::string fishName = Fishs::catchFish(TimeManager::getInstance()->getCurrentSeason(),_skillLevel[Fish]);
 	switch (action) {
 		case NoneAction:
 			break;
