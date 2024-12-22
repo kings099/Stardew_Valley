@@ -198,7 +198,6 @@ void UILayer::initializeShop() {
     this->addChild(_sellObjectButton, UI_LAYER_GRADE);
     _sellObjectButton->setVisible(false);
 
-    // 创建商店物品图片
 }
 
 // 初始化合成表
