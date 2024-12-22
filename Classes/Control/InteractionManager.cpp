@@ -288,7 +288,7 @@ void InteractionManager::ActionAnimation(GameCharacterAction action, const Vec2&
         _gameMap->replaceTileAt("Object", TilePos, TileConstants::EMPTY_GID);
         break;
     case Harvesting:// 收获
-
+        HarvestAt(TilePos);
         break;
 
 
@@ -534,9 +534,9 @@ void InteractionManager::HarvestInfo(const Vec2& tilePos, TileInfo& cropTileInfo
         if (cropSprite != nullptr)
         {
             CropData cropSpriteData = cropSprite->getCropData();
-            if (cropSpriteData._isHarvest) {
+            if (cropSpriteData.isHarvest) {
                 cropTileInfo.drops.clear(); // 清空默认的 "None" 项
-                cropTileInfo.drops[cropSpriteData._Harvest] = { TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::CROP_POSIIBILITY };
+                cropTileInfo.drops[cropSpriteData.Harvest] = { TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::CROP_POSIIBILITY };
             }
         }
     }
@@ -547,7 +547,7 @@ bool InteractionManager::HarvestAt(const Vec2& tilePos) {
     // 保证地图文件存在
     if (!_gameMap) {
         CCLOG("InteractionManager: _gameMap is null.");
-        return;
+        return false;
     }
 
 
@@ -559,10 +559,13 @@ bool InteractionManager::HarvestAt(const Vec2& tilePos) {
         if (cropSprite != nullptr)
         {
             CropData cropSpriteData = cropSprite->getCropData();
-            if (cropSpriteData._isHarvest) {
+            if (cropSpriteData.isHarvest) {
                 cropSprite->harvestCrop();
                 _gameMap->replaceTileAt("path", tilePos, TileConstants::EMPTY_GID);
+                return true;
             }
         }
     }
+
+    return false;
 }
