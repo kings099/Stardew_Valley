@@ -12,7 +12,7 @@
 
 #include "cocos2d.h"
 #include "proj.win32/Constant.h"
-#include "CropData.h"
+
 
 class Crops : public cocos2d::Node {
 public:
