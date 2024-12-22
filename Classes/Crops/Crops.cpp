@@ -104,8 +104,8 @@ void Crops::initializeResourceMap() {
 std::unordered_map<std::string, std::unordered_map<Season, float>> Crops::_growthCycles = {
     {"cauliflower", {{Season::Spring, 50.0f}, {Season::Summer, 50.0f}, {Season::Fall, 60.0f}, {Season::Winter,72.0f}}},
     {"kale", {{Season::Spring, 30.0f}, {Season::Summer, 30.0f}, {Season::Fall, 40.0f}, {Season::Winter, 50.0f}}},
-    {"pumpkin", {{Season::Spring, 2.0f}, {Season::Summer, 50.0f}, {Season::Fall, 60.0f}, {Season::Winter, 72.0f}}},
-    {"oak", {{Season::Spring,2.0f}, {Season::Summer, 72.0f}, {Season::Fall, 96.0f}, {Season::Winter, 120.0f}}},
+    {"pumpkin", {{Season::Spring, 50.0f}, {Season::Summer, 50.0f}, {Season::Fall, 60.0f}, {Season::Winter, 72.0f}}},
+    {"oak", {{Season::Spring,50.0f}, {Season::Summer, 72.0f}, {Season::Fall, 96.0f}, {Season::Winter, 120.0f}}},
     {"maple", {{Season::Spring, 72.0f}, {Season::Summer, 72.0f}, {Season::Fall, 96.0f}, {Season::Winter, 120.0f}}},
     {"pine", {{Season::Spring, 72.0f}, {Season::Summer, 72.0f}, {Season::Fall, 96.0f}, {Season::Winter, 120.0f}}}
 
@@ -340,12 +340,39 @@ void Crops::updateGrowth(float deltaTime) {
     }
     if (_type != "oak" && _type != "maple" && _type != "pine") {
         Weather currentWeather = Weather::Dry;
+        currentWeather=timeManager->getCurrentWeather();
         this->manageDrought(currentWeather);
         checkPests(); // 每次更新时检查病虫害
         _isWatered = false; // 每次更新后重置浇水状态
     }
-}
 
+    // 检查枯萎时间
+    if (_daysWithoutWater > 0) {
+        _wiltTime += deltaTime;
+        if (_wiltTime >= 48.0f) {  // 枯萎超过48秒
+            removeCrop();
+            return;
+        }
+    }
+    else {
+        // 如果未枯萎，重置枯萎计时
+        _wiltTime = 0.0f;
+    }
+
+}
+void Crops::removeCrop() {
+    if (this->_isRemoved) {
+        CCLOG("Crop '%s' is already removed!", _type.c_str());
+        return;
+    }
+
+    CCLOG("Crop '%s' is removed due to prolonged wilting!", _type.c_str());
+    this->unschedule("crop_update");  // 停止更新
+    if (this->getParent()) {
+        this->removeFromParent();
+    }
+    this->_isRemoved = true;
+}
 //更新当前的季节
 void Crops::setSeason(Season season) {
     if (_currentSeason != season) { // 避免重复触发
@@ -519,17 +546,7 @@ void Crops::harvestCrop() {
     //}
 
     if (isReadyToHarvest()) {
-        CCLOG("Crop '%s' harvested successfully!", _type.c_str());
-        this->unschedule("crop_update");
-        // 安全移除父节点
-        if (this->getParent()) {
-            this->removeFromParent();
-            _isRemoved = true;
-            /*if (this != nullptr) {
-                CCLOG("Crop EXIT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!", type.c_str());
-            }*/
-
-        }
+        removeCrop();
     }
     else {
         CCLOG("Crop '%s' is not ready for harvest!", _type.c_str());

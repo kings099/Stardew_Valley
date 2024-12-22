@@ -356,8 +356,6 @@ int NPC::getAffection() const {
 // 键盘按下事件处理
 void NPC::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* event) {
     // 如果正在处理任务，直接返回
-
-    // 如果正在处理任务，直接返回
     if (keyCode == EventKeyboard::KeyCode::KEY_K || keyCode == EventKeyboard::KeyCode::KEY_G || keyCode == EventKeyboard::KeyCode::KEY_M) {
         if (_isProcessing) {
             return;
@@ -382,7 +380,6 @@ void NPC::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* event) {
         else if (keyCode == EventKeyboard::KeyCode::KEY_M) {
             // 显示婚姻选择
             showMarriageChoices();
-
         }
     }
 }

@@ -48,7 +48,7 @@ private:
 	int _skillExprience[SKILL_KIND_NUM];	// 技能经验值数组
 	int _skillLevel[SKILL_KIND_NUM];		// 技能等级数组
 	int _money;                             // 角色金钱
-
+	TileInfo _targetTileNode;				// 目标瓦片节点信息
 	// 获取角色打算执行的动作(鼠标左键)
 	GameCharacterAction getLeftButtonAction();
 
@@ -59,7 +59,7 @@ private:
 	bool checkActionIsValid(GameCharacterAction action,cocos2d::Vec2& targetTilePos, InteractionManager* interactionManager);
 
 	// 获取角色动作对象的瓦片信息
-	TileInfo getTileInfo(GameCharacterAction action, InteractionManager* interactionManager);
+	TileInfo getTileInfo( InteractionManager* interactionManager, GameCharacterAction action = NoneAction);
 
 	// 更新技能等级
 	void updateSkillLevel();
