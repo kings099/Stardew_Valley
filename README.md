@@ -10,8 +10,7 @@
 | 尹诚成 (组长) | 2351279 | |
 | 金恒宇 | 2352280 |  |
 | 达思睿 | 2352288 |**项目前端工作与NPC交互**  <br> `CharacterInfo` 类<br> `HelloWorldScene` 类 <br> `UILayer` 类<br> `TimeManager` 类 <br> `NPC` 类 <br> `NPCManager` 类 <br> `GiftItem` 类 <br> `GiftItemManager` 类  <br> `Task` 类<br> `LoginLayer` 类<br> `FestivalLayer` 类<br> `ChatLayer` 类<br> `AudioControlLayer` 类 <br> 图标按钮绘制 <br> 启动场景绘制 <br> 音频引擎  |
-  |
-| 胡宝怡 | 2353409 |  |
+| 胡宝怡 | 2353409 | |
 
 ## 成员贡献
 
