@@ -15,7 +15,7 @@ USING_NS_CC;
 
  // NPC 初始化
 NPC::NPC(std::string name, cocos2d::Vec2 position, const std::string& idleImage, const std::vector<std::string>& walkFrames)
-    : name(name), affection(0), isMarried(false), isMoving(false) {
+    : name(name), affection(0), isMarried(false), isMoving(false),_isProcessing(false) {
     setPosition(position);                    // 初始化 NPC 位置
     initializeSprite(idleImage, walkFrames);  // 初始化精灵和动画
 
@@ -67,7 +67,7 @@ void NPC::showDialogue(const std::string& dialogueText) {
     chatLayer->setPosition(npcPosition.x + 250, npcPosition.y + 60);
 
     // 将 ChatLayer 添加为 NPC 的子节点
-    this->addChild(chatLayer, 1);  // 将 ChatLayer 添加为 NPC 的子节点，优先级设置为 1
+    this->addChild(chatLayer, 1); 
 }
 // 增加好感度
 void NPC::increaseAffection(int value) {
@@ -111,6 +111,7 @@ void NPC::showMarriageChoices() {
         yesButton->addClickEventListener([this, dialog](Ref* sender) {
             marryPlayer();  // 玩家同意结婚
             dialog->removeFromParent();  // 移除对话框
+            _isProcessing = false;
             });
         dialog->addChild(yesButton);
 
@@ -121,8 +122,14 @@ void NPC::showMarriageChoices() {
         noButton->setPosition(Vec2(dialog->getContentSize().width * 0.7f, -dialog->getContentSize().height * 0.3f));
         noButton->addClickEventListener([this, dialog](Ref* sender) {
             dialog->removeFromParent();  // 移除对话框
+            _isProcessing = false;
             });
         dialog->addChild(noButton);
+    }
+    else {
+        std::string dialogue = "You can not propose!";
+        showDialogue(dialogue);
+        _isProcessing = false;
     }
 }
 
@@ -227,6 +234,7 @@ void NPC::showTaskList() {
                     _character->deleteObject(targetObjectIndex, task1->getRequiredItemCount());
                     this->giftItem(gift);
                     this->increaseAffection(task1->getAffectionReward());
+                    task1->setCompletion(true);
                 }
                 else {
                     std::string dialogue = "Oh no,task can not be finished";
@@ -237,6 +245,7 @@ void NPC::showTaskList() {
                 std::string dialogue = "Already be finished!";
                 showDialogue(dialogue);
             }
+            _isProcessing = false;
             });
        this->addChild(taskButton1, 1);
 
@@ -269,9 +278,13 @@ void NPC::showTaskList() {
                 std::string dialogue = "Already be finished!";
                 showDialogue(dialogue);
             }
+            _isProcessing = false;
             });
         this->addChild(taskButton2, 1);
     }
+
+ 
+
 }
 
 
@@ -345,17 +358,34 @@ int NPC::getAffection() const {
 
 // 键盘按下事件处理
 void NPC::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* event) {
-    // 检查按下的是否是 T 键
-    if (keyCode == EventKeyboard::KeyCode::KEY_K) {
-        // 触发 NPC 显示任务列表
-        showDialog();
+    // 如果正在处理任务，直接返回
+
+    if (_isProcessing) {
+        return;
     }
-    if (keyCode == EventKeyboard::KeyCode::KEY_G) {
+
+    // 标记为正在处理任务
+    _isProcessing = true;
+ 
+    // 检查按下的是否是 K 键
+    if (keyCode == EventKeyboard::KeyCode::KEY_K) {
+        // 触发 NPC 显示对话框
+        showDialog();
+        _isProcessing = false;
+    }
+    // 检查按下的是否是 G 键
+    else if (keyCode == EventKeyboard::KeyCode::KEY_G) {
         // 触发 NPC 显示任务列表
         showTaskList();
+      
     }
-    if (keyCode == EventKeyboard::KeyCode::KEY_M) {
+    // 检查按下的是否是 M 键
+    else if (keyCode == EventKeyboard::KeyCode::KEY_M) {
         // 显示婚姻选择
         showMarriageChoices();
+   
     }
+}
+void NPC::setIsProcessing(bool isProcessing) {
+    _isProcessing = isProcessing;
 }

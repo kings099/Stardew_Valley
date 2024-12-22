@@ -12,7 +12,7 @@
 
 #include "cocos2d.h"
 #include"proj.win32/constant.h"
-
+#include "Character/NPC.h"
 class ChatLayer : public cocos2d::Layer {
 public:
     //¹¹Ôìº¯Êý
