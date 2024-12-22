@@ -32,6 +32,21 @@ Fishs::~Fishs() {
     }
 }
 
+std::unordered_map<std::string, Fishs::FishData> Fishs::fishLevelMap = {
+    {"Bigeye", {"Bigeye", 1}},
+    {"LargemouthBass", {"LargemouthBass", 2}},
+    {"Salmon", {"Salmon", 3}},
+    {"Squid", {"Squid", 2}},
+    {"Sardines", {"Sardines", 1}},
+    {"Herring", {"Herring", 2}},
+    {"RedMullet", {"RedMullet", 3}},
+    {"Carps", {"Carps", 4}},
+    {"Octopuses", {"Octopuses", 5}},
+    {"RedSnapper", {"RedSnapper", 3}},
+    {"SmallmouthBass", {"SmallmouthBass", 2}},
+    {"TunaFish", {"TunaFish", 5}},
+};
+
 //初始化每个季节的鱼的类型
 void Fishs::initializeSeasonFishMap() {
     if (!_seasonFishMap.empty()) return;
@@ -63,6 +78,13 @@ bool Fishs::init(const std::string& name, const std::string& season, const Vec2&
     this->_position = position;
     this->_initialPosition = position;  // 保存初始位置
 
+    // 查找鱼的等级
+    if (fishLevelMap.find(name) != fishLevelMap.end()) {
+        _level = fishLevelMap[name].level;
+    }
+    else {
+        _level = 0;  // 默认等级
+    }
     // 加载鱼的初始精灵
     string fishImagePath = "../Resources/Objects/Base/" + name + ".png";
     _sprite = Sprite::create(fishImagePath);
@@ -209,9 +231,11 @@ std::string Fishs::catchFish(const Season season,int playerLevel) {
     // 创建一个候选的鱼类列表，筛选出玩家等级符合要求的鱼类
     std::vector<std::string> eligibleFishList;
     for (const auto& fishName : fishList) {
-        int fishUnlockLevel = getUnlockLevel(fishName);  // 获取鱼类的解锁等级
-        if (fishUnlockLevel <= playerLevel) {
-            eligibleFishList.push_back(fishName);  // 玩家等级满足，加入候选列表
+        if (fishLevelMap.find(fishName) != fishLevelMap.end()) {
+            int fishUnlockLevel = fishLevelMap[fishName].level;  // 获取鱼类的解锁等级
+            if (fishUnlockLevel <= playerLevel) {
+                eligibleFishList.push_back(fishName);  // 玩家等级满足，加入候选列表
+            }
         }
     }
     // 如果没有符合条件的鱼类
