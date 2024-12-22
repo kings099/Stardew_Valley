@@ -39,10 +39,7 @@ CharacterObjectList::CharacterObjectList() :
 		pickUpObject("BeginnerKattle", 1);
 		pickUpObject("scythe", 1);
 	}
-	pickUpObject("CopperParticle", 11);
-	synthesizeObject("Copper");
-	synthesizeObject("Copper");
-	synthesizeObject("Iron");
+	pickUpObject("Timber", 5);
 }
 
 // 按下键盘时的处理
@@ -201,8 +198,8 @@ bool CharacterObjectList::synthesizeObject(GameBaseObject targetObject) {
 
 	//合成物品
 	for (const auto& ingredient : targetObject._ingredients) {
-		int ingredientIndex = findObjectByObjectList(ingredient.first);
-		_objectList[ingredientIndex].count -= ingredient.second;
+		const int ingredientIndex = findObjectByObjectList(ingredient.first);
+		deleteObject(ingredient.second, ingredientIndex);
 	}
 	pickUpObject(targetObject, 1);
 	return true;
@@ -228,7 +225,7 @@ bool CharacterObjectList::synthesizeObject(const std::string& targetObjectName) 
 	 //合成物品
 	 for (const auto& ingredient : targetBaseObject->_ingredients) {
 		 int ingredientIndex = findObjectByObjectList(ingredient.first);
-		 _objectList[ingredientIndex].count -= ingredient.second;
+		 deleteObject(ingredient.second, ingredientIndex);
 	 }
 	 pickUpObject(targetObject, 1);
 	 return true;

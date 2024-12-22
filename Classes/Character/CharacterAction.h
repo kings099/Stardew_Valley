@@ -22,8 +22,8 @@ public:
 	// 按下鼠标事件触发函数
 	void onMouseDown(cocos2d::Event* event,GameCharacterAction &gameCharacterAction,cocos2d::Vec2 & targetTilePos, InteractionManager* interactionManager);
 
-	// 获取物品
-	void getObject(GameCharacterAction action,InteractionManager* interactionManager);
+	// 根据动作改变物品
+	void changeObject(GameCharacterAction action,InteractionManager* interactionManager);
 
 	// 获取技能等级
 	int getSkillLevel(GameObjectSkillType skillType);
@@ -41,6 +41,7 @@ public:
 	bool loadData(const std::string& fileName);
 
 private:
+
 	int _skillExprience[SKILL_KIND_NUM];	// 技能经验值数组
 	int _skillLevel[SKILL_KIND_NUM];		// 技能等级数组
 	int _money;                             // 角色金钱
@@ -63,8 +64,9 @@ private:
 	// 更新技能经验值
 	void updateSkillExprience(GameCharacterAction gameCharacterAction);
 
-	// 获取物品
-	void getObject();
+
+	// 使用物品
+	void useObject();
 };
 
 #endif // !_CHARACTER_ACTION_H_

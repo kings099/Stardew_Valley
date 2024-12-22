@@ -11,6 +11,7 @@
 #include "CharacterAction.h"
 #include "Animal/Fish.h"
 #include "Control/TimeManager.h"
+#include "Box/Box.h"
 #include"../proj.win32/Constant.h"
 
 USING_NS_CC;
@@ -43,7 +44,7 @@ void CharacterAction::onMouseDown(cocos2d::Event* event, GameCharacterAction& ga
 			gameCharacterAction = getRightButtonAction();
 		}
 		if (checkActionIsValid(gameCharacterAction, targetTilePos, interactionManager)) {
-			getObject(gameCharacterAction, interactionManager);
+			changeObject(gameCharacterAction, interactionManager);
 			updateSkillExprience(gameCharacterAction);
 			updateSkillLevel();
 		}
@@ -54,12 +55,13 @@ void CharacterAction::onMouseDown(cocos2d::Event* event, GameCharacterAction& ga
 }
 
 // 获取物品
-void CharacterAction::getObject(GameCharacterAction action, InteractionManager* interactionManager) {
+void CharacterAction::changeObject(GameCharacterAction action, InteractionManager* interactionManager) {
 	TileInfo targetTileNode = getTileInfo(action, interactionManager);
 	std::string fishName = Fishs::catchFish(TimeManager::getInstance()->getCurrentSeason(),_skillLevel[Fish]);
 	switch (action) {
 		case NoneAction:
 			break;
+		// 可以获得物品的动作
 		case Weeding:
 		case Cutting:
 		case Mining:
@@ -74,6 +76,14 @@ void CharacterAction::getObject(GameCharacterAction action, InteractionManager* 
 			if (fishName != "") {
 				pickUpObject(fishName, 1);
 			}
+			break;
+		// 需要消耗物品的动作
+		case Seeding:
+		case Placement:
+			if (getCurrentObject().objectNode.object->_name == "Box") {	//放置箱子
+				Box::getInstance().addBox(BoxNode(targetTileNode.WorldPos));
+			}
+			//deleteObject(1, getCurrentObjectIndex());
 			break;
 		default:
 			break;
@@ -227,11 +237,6 @@ void CharacterAction::updateSkillExprience(GameCharacterAction gameCharacterActi
 }
 
 
-
-// 获取物品
-void CharacterAction::getObject() {
-
-}
 
 // 保存数据
 bool CharacterAction::saveData(const std::string& fileName) {

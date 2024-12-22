@@ -363,7 +363,7 @@ bool InteractionManager::placeObjectAtTile(const Vec2& tilePos) {
         if (_gameMap->getType() == MapType::Farm) {
             FarmMap* farmMap = dynamic_cast<FarmMap*>(_gameMap);
             // 地图错误
-            if (!farmMap) {
+            if(!farmMap) {
                 CCLOG("Error: Failed to cast GameMap to FarmMap.");
                 return false;
             }

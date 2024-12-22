@@ -41,6 +41,9 @@ public:
 	// 丢弃当前选中的物品
 	ObjectListNode deleteCurrentObject();
 
+	// 丢弃指定数量的物品
+	void deleteObject(int objectCount, int targetIndex = INVAVID_NUM);
+
 	// 合成物品
 	bool synthesizeObject(GameBaseObject targetObject);
 
@@ -110,9 +113,6 @@ private:
 	bool _isTKeyEnabled;							// 是否启用T键
 	bool _isYKeyEnabled;							// 是否启用Y键
 	
-	// 丢弃指定数量的物品
-	void deleteObject(int objectCount, int targetIndex = INVAVID_NUM);
-
 	// 查找物品栏中是否有指定物品
 	GameCommonObject findObjectByName(const std::string& name);
 
