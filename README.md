@@ -69,6 +69,9 @@ A project of Stardew Valley based on [Cocos2d-x 3.17.2](https://docs.cocos.com/c
 ### 拓展功能
 * [X] 支持存档功能
 * [X] 支持合成物品
+* [X] 天气系统
+* [X] 商店系统
+ 
 
 ### 项目开发日志
 
