@@ -62,7 +62,7 @@ private:
     // 更新天气
     void updateWeather();
 
-    static TimeManager* instance;  // 单例指针
+    
 
     int _timeInSeconds;  // 游戏总时间（秒）
     int _day;            // 当前游戏日

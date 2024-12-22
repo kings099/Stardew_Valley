@@ -176,9 +176,6 @@
     <ClCompile Include="main.cpp">
       <Filter>Win32</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\AppDelegate\AppDelegate.cpp">
-      <Filter>Classes\AppDelegate</Filter>
-    </ClCompile>
     <ClCompile Include="..\Classes\Character\Character.cpp">
       <Filter>Classes\Character</Filter>
     </ClCompile>
@@ -283,6 +280,9 @@
     </ClCompile>
     <ClCompile Include="..\Classes\Layer\FestivalLayer.cpp">
       <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate\AppDelegate.cpp">
+      <Filter>Classes\AppDelegate</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
