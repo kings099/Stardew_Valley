@@ -375,6 +375,18 @@ enum GameCharacterAction {
     DestoryObject,		// 破坏物品
 };
 
+//农作物数据类型
+struct CropData {
+    std::string type;           // 农作物类型
+    bool isHarvest;             // 是否可以收获
+    std::string Harvest;        // 收获的东西
+    int growthStage;            //植物目前生长阶段
+    bool isWatered;             //是否浇水
+    int daysWithoutWater;       // 缺水的天数
+    bool hasPests;              // 是否有害虫
+    bool isFertilized;          // 是否施肥
+};
+
 
 // 单个瓦片坐标信息定义
 struct TileInfo {
