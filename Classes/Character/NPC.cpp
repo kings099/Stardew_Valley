@@ -61,10 +61,10 @@ void NPC::showDialogue(const std::string& dialogueText) {
     Vec2 npcPosition = getPosition();
 
     // 设置对话框位置相对于 NPC
-    chatLayer->setPosition(npcPosition.x + 250, npcPosition.y + 60);
+    chatLayer->setPosition(npcPosition.x + DIALOG_X_OFFSET, npcPosition.y + DIALOG_Y_OFFSET);
 
     // 将 ChatLayer 添加为 NPC 的子节点
-    this->addChild(chatLayer, 1); 
+    this->addChild(chatLayer); 
 }
 // 增加好感度
 void NPC::increaseAffection(int value) {
@@ -74,8 +74,8 @@ void NPC::increaseAffection(int value) {
 // 显示询问用户是否求婚的UI
 void NPC::showMarriageChoices() {
     if (_affection >= MARRIAGE_AFFECTION && !_isMarried) {
-        const auto visibleSize = Director::getInstance()->getVisibleSize();
-        const auto origin = Director::getInstance()->getVisibleOrigin();
+        // 获取 NPC 当前的位置
+        Vec2 npcPosition = getPosition();
 
         // 创建一个自定义的对话框
         auto dialog = ui::Layout::create();
@@ -83,30 +83,27 @@ void NPC::showMarriageChoices() {
         dialog->setBackGroundColor(Color3B(0, 0, 0));  // 设置背景为黑色
         dialog->setBackGroundColorOpacity(128);  // 设置透明度为128（半透明）
 
-        // 设置对话框的锚点为左下角 (0, 0)
-        dialog->setAnchorPoint(Vec2(0, 0));
-
         // 设置对话框大小
         float dialogWidth = DIALOG_WIDTH;
         float dialogHeight = DIALOG_HEIGHT;
         dialog->setContentSize(Size(dialogWidth, dialogHeight));  // 设置对话框的内容大小
 
-        // 设置对话框的位置为 (50, 0)
-        dialog->setPosition(Vec2(50, 0));
-        this->addChild(dialog);  // 添加到 NPC 层，设置优先级为 10 确保显示在最上层
+        // 设置对话框的位置
+        dialog->setPosition(Vec2(DIALOG_X_OFFSET/2, DIALOG_Y_OFFSET/2));
+        this->addChild(dialog);  
 
         // 创建询问文本信息
         auto text = Label::createWithSystemFont("Would you like to propose?\nAffection is sufficient now!", FONT_TYPE, FONT_SIZE);
         text->setPosition(Vec2(dialog->getContentSize().width / 2, dialog->getContentSize().height / 2));
         dialog->addChild(text);
 
-        // "Yes" 按钮，玩家同意结婚，字体大小设为24
+        // "Yes" 按钮，玩家同意结婚
         auto yesButton = ui::Button::create();
         yesButton->setTitleText("Yes");
-        yesButton->setTitleFontSize(FONT_SIZE);  // 设置按钮字体大小为24
+        yesButton->setTitleFontSize(FONT_SIZE);  
         yesButton->setPosition(Vec2(dialog->getContentSize().width * 0.3f, -dialog->getContentSize().height * 0.3f));
         yesButton->addClickEventListener([this, dialog](Ref* sender) {
-            marryPlayer();  // 玩家同意结婚
+            marryPlayer(); 
             dialog->removeFromParent();  // 移除对话框
             _isProcessing = false;
             });
@@ -115,7 +112,7 @@ void NPC::showMarriageChoices() {
         // "No" 按钮，玩家拒绝结婚，字体大小设为24
         auto noButton = ui::Button::create();
         noButton->setTitleText("No");
-        noButton->setTitleFontSize(FONT_SIZE);  // 设置按钮字体大小为24
+        noButton->setTitleFontSize(FONT_SIZE);  
         noButton->setPosition(Vec2(dialog->getContentSize().width * 0.7f, -dialog->getContentSize().height * 0.3f));
         noButton->addClickEventListener([this, dialog](Ref* sender) {
             dialog->removeFromParent();  // 移除对话框
@@ -147,7 +144,7 @@ void NPC::marryPlayer() {
         // 设置对话框位置相对于 NPC
 
         Vec2 npcPosition = getPosition();  // 获取 NPC 当前的位置
-        chatLayer->setPosition(npcPosition.x + 250, npcPosition.y + 60);  // 将对话框位置设置为 NPC 的位置
+        chatLayer->setPosition(npcPosition.x + DIALOG_X_OFFSET, npcPosition.y + DIALOG_Y_OFFSET);  // 将对话框位置设置为 NPC 的位置
 
         this->addChild(chatLayer);
         };
@@ -167,7 +164,7 @@ void NPC::playMarriageAnimation() {
     heartSprite->setPosition(npcPosition.x, npcPosition.y + _sprite->getContentSize().height / 2);  // 头顶位置
 
     // 将开心表情添加为 NPC 的子节点，这样它的坐标就会随 NPC 移动
-    this->addChild(heartSprite, 2);
+    this->addChild(heartSprite);
     heartSprite->setOpacity(0);  // 初始透明度为0，不可见
 
     // 放大效果
@@ -179,7 +176,7 @@ void NPC::playMarriageAnimation() {
     auto fadeOut = FadeOut::create(0.2f);  // 渐隐效果
 
     // 颜色变化效果
-    auto colorChange = TintTo::create(0.2f, 255, 0, 0);  // 直接设置为红色
+    auto colorChange = TintTo::create(0.2f, 255, 0, 0);      // 直接设置为红色
     auto revertColor = TintTo::create(0.2f, 255, 255, 255); // 恢复为原来的颜色（白色）
 
     // 让心形精灵闪烁的动作序列
@@ -244,7 +241,7 @@ void NPC::showTaskList() {
             }
             _isProcessing = false;
             });
-       this->addChild(taskButton1, 1);
+       this->addChild(taskButton1);
 
        
        // 创建任务2按钮点击事件
@@ -277,7 +274,7 @@ void NPC::showTaskList() {
             }
             _isProcessing = false;
             });
-        this->addChild(taskButton2, 1);
+        this->addChild(taskButton2);
     }
 
  
@@ -316,19 +313,19 @@ void NPC::giftItem(GiftItem* gift) {
     auto delay = DelayTime::create(2.0f);
     auto showChatLayer = CallFunc::create([this, affectionIncrease, gift]() {
         // 创建并显示 ChatLayer
-        ChatLayer* chatLayer = ChatLayer::create("Thank you for the gift:" + gift->name + "  :)"); // 创建对话框
+        ChatLayer* chatLayer = ChatLayer::create("Thank you for the gift:" + gift->name + "  :)"); 
 
         // 设置 ChatLayer 的位置，相对于 NPC 的位置
-        Vec2 npcPosition = getPosition();  // 获取 NPC 的位置
-        chatLayer->setPosition(npcPosition.x + 250, npcPosition.y + 60);  // 让对话框出现在 NPC 头顶
+        Vec2 npcPosition = getPosition(); 
+        chatLayer->setPosition(npcPosition.x + DIALOG_X_OFFSET, npcPosition.y + DIALOG_Y_OFFSET);  
 
         // 在底部添加亲密度信息
         std::string affectionInfo = "Affection added: " + std::to_string(affectionIncrease) +
             ", Current Affection: " + std::to_string(getAffection());
-        chatLayer->addAffectionText(affectionInfo);  // 显示亲密度信息
+        chatLayer->addAffectionText(affectionInfo); 
 
         // 将 ChatLayer 作为 NPC 的子节点
-        this->addChild(chatLayer, 1);  // 添加 ChatLayer 为 NPC 的子节点，并设置层级优先级为 1000
+        this->addChild(chatLayer); 
         });
 
     // 创建一个移除开心表情并显示 ChatLayer 的动作序列
@@ -383,6 +380,8 @@ void NPC::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* event) {
    
     }
 }
+
+//设置任务处理状态
 void NPC::setIsProcessing(bool isProcessing) {
     _isProcessing = isProcessing;
 }

@@ -40,6 +40,8 @@ constexpr int   MAX_AFFECTION = 100;                                        //�
 constexpr int   MARRIAGE_AFFECTION = 20;                                    //满足结婚条件的喜爱度下限
 constexpr float DIALOG_WIDTH = 500.0f;                                      //对话框宽度
 constexpr float DIALOG_HEIGHT = 120.0f;                                     //对话框高度
+constexpr int DIALOG_X_OFFSET = 250;                                        //对话框相对NPC的偏移量
+constexpr int DIALOG_Y_OFFSET = 160;                                        //对话框相对于NPC的偏移量
 // 移动相关设置
 constexpr auto INVIAID_KEY = cocos2d::EventKeyboard::KeyCode::KEY_NONE;		// 无效键值
 constexpr float ACTION_RATE = 5.0f;											// 动作帧率
