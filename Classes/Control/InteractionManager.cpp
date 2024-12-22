@@ -160,7 +160,7 @@ const TileInfo InteractionManager::GetTileInfoAt(const Vec2& Tile_pos) {
             tileInfo.drops["Timber"] = {TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::BRANCH_DROP_PROBABILITY}; // 掉落1个木材，概率为30%
         }
         // 对应树枝
-        else if (pathProps.find("isBranch") != pathProps.end() && pathProps["isWood"].asBool())
+        else if (pathProps.find("isBranch") != pathProps.end() && pathProps["isBranch"].asBool())
         {
             tileInfo.type = TileConstants::Branch;
             tileInfo.drops.clear(); // 清空默认的 "None" 项
@@ -255,12 +255,10 @@ void InteractionManager::ActionAnimation(GameCharacterAction action, const Vec2&
         AnimationHelper::playWeedingAnimation(_gameMap->tileToRelative(TilePos), _gameMap->getTiledMap());
         break;
     case Mining:
-        _gameMap->replaceTileAt("path", TilePos, TileConstants::EMPTY_GID);
-        AnimationHelper::playStoneBreakingAnimation(_gameMap->tileToRelative(TilePos), _gameMap->getTiledMap());      
+        MiningAt(TilePos);
         break;
     case Cutting:
-        _gameMap->replaceTileAt("path", TilePos, TileConstants::WOOD_GID); // 将类型改为树桩
-        getTreeAndChopAt(TilePos);
+        ChopTree(TilePos);
         break;
     case Placement:
     case Seeding:
@@ -332,7 +330,7 @@ void InteractionManager::getTreeAndChopAt(const Vec2& tilePos) {
     }
 }
 
-// 放置物品函数，待完善
+// 放置物品函数
 bool InteractionManager::placeObjectAtTile(const Vec2& tilePos) {
     const std::string currentObjectName = _currentObject.objectNode.object->_name;
     GameObjectMapType currentObjectType = _currentObject.objectNode.type;
@@ -433,6 +431,7 @@ bool InteractionManager::MiningAt(const Vec2& tilePos) {
     //  对应非石头
     else if(tileinfo.type == TileConstants::TileType::Mine|| tileinfo.type == TileConstants::TileType::Treasure)// 矿物
     {
+        _gameMap->replaceTileAt("path", tilePos, TileConstants::EMPTY_GID);
         _gameMap->replaceTileAt("ore", tilePos, TileConstants::EMPTY_GID);
         return true;
 
@@ -440,6 +439,39 @@ bool InteractionManager::MiningAt(const Vec2& tilePos) {
     else
     {
         CCLOG("unkonw mine type");
+        return false;
+    }
+}
+
+
+// 对树干，树桩和树枝条的处理
+bool InteractionManager::ChopTree(const Vec2& tilePos) {
+    TileInfo tileinfo = GetTileInfoAt(tilePos);
+
+    if(tileinfo.type == TileConstants::TileType::Tree)
+    {
+        // 砍树干对应动作
+        _gameMap->replaceTileAt("path", tilePos, TileConstants::WOOD_GID); // 将类型改为树桩
+        getTreeAndChopAt(tilePos);
+
+        return true;
+    }
+    else if (tileinfo.type == TileConstants::TileType::Wood) 
+    {
+        //砍树状对应动作
+        _gameMap->replaceTileAt("path", tilePos, TileConstants::EMPTY_GID);
+        _gameMap->replaceTileAt("Tree", tilePos, TileConstants::EMPTY_GID);
+        AnimationHelper::playWoodCuttingAnimation(_gameMap->tileToRelative(tilePos), _gameMap->getTiledMap());
+    }
+    else if(tileinfo.type == TileConstants::TileType::Branch)
+    {
+        // 树枝对应动作
+        _gameMap->replaceTileAt("path", tilePos, TileConstants::EMPTY_GID);
+        AnimationHelper::playChopingBranchAnimation(_gameMap->tileToRelative(tilePos), _gameMap->getTiledMap());
+    
+        return true;
+    }
+    else {
         return false;
     }
 }

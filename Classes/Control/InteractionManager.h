@@ -86,6 +86,9 @@ private:
     // 采矿
     bool MiningAt(const Vec2& tilePos);
 
+    // 对树干，树桩和树枝条的处理
+    bool ChopTree(const Vec2& tilePos);
+
     // 获取矿石信息
     void GetMineInfo(int MineGID, TileInfo& tile);
 };
