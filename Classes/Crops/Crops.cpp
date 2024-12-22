@@ -222,7 +222,7 @@ bool Crops::init(const std::string& type, int maxGrowthStage) {
     this->_daysWithoutWater = 0;
     this->_isFertilized = 0;
     this->_hasPests = false;    // 初始无病虫害
-    this->_pestProbability = 0.05f; // 感染概率 10%
+    this->_pestProbability = 0.05f; // 感染概率 5%
     // 初始化农作物的精灵
     _sprite = Sprite::create(_resourceMap[type][0]);
     if (_sprite == nullptr) {
@@ -307,7 +307,7 @@ void Crops::updateGrowth(float deltaTime) {
 
     // 如果施肥，加速生长
     if (_isFertilized) {
-        growthSpeed *= 0.8f; // 生长周期缩短 20%
+        growthSpeed *= FERTILIZER_GROWTH_RATE; // 生长周期缩短 20%
     }
 
     // 累积时间，进入下一个生长阶段
@@ -349,7 +349,7 @@ void Crops::updateGrowth(float deltaTime) {
     // 检查枯萎时间
     if (_daysWithoutWater > 0) {
         _wiltTime += deltaTime;
-        if (_wiltTime >= 48.0f) {  // 枯萎超过48秒
+        if (_wiltTime >= WILTTIME) {  // 枯萎超过4天
             removeCrop();
             return;
         }
