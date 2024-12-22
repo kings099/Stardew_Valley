@@ -146,7 +146,7 @@ GameCharacterAction CharacterAction::getRightButtonAction() {
 }
 
 // 判断角色是否可以执行动作
-bool CharacterAction::checkActionIsValid(GameCharacterAction action,Vec2 & targetTilePos, InteractionManager* interactionManager) {
+bool CharacterAction::checkActionIsValid(GameCharacterAction action, Vec2& targetTilePos, InteractionManager* interactionManager) {
 	if (action == NoneAction)
 		return NoneAction;
 
@@ -154,8 +154,12 @@ bool CharacterAction::checkActionIsValid(GameCharacterAction action,Vec2 & targe
 	targetTilePos = targetTileNode.tilePos;
 	// 检查动作是否与目标地块类型匹配
 	for (auto& test : ACTION_TO_TILEMAP) {
-		if (action == test.first && targetTileNode.type == test.second) {
-			return action;
+		if (action == test.first) {
+			for (auto& tileType : test.second) {
+				if (tileType == targetTileNode.type) {
+					return action;
+				}
+			}
 		}
 	}
 	return NoneAction;

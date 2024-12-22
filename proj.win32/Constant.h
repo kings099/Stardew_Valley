@@ -57,6 +57,7 @@ constexpr int SKILL_LEVEL_NUM = 5;                                          // �
 constexpr int MIN_FISHING_DISTANCE = 3;                                     // 鱼竿最小捕鱼距离
 constexpr int MAX_FISHING_DISTANCE = 5;                                     // 鱼竿最大捕鱼距离
 constexpr int START_UP_MONEY = 500;                                         // 初始金钱
+constexpr float SKILL_GET_ITEM_PROBABILITY = 0.1f;                          // 技能等级对获取物品概率的影响因子
 
 // 商店相关设置
 constexpr int PRODUCE_KIND_NUM_EACH_DAY = 4;                                // 每日出售的商品种类数量
@@ -181,10 +182,10 @@ constexpr int OPEN_OBJIEC_LIST_SELL_BUTTON_BOTTOM_BOUDARY = 392;			// 物品栏�
 const cocos2d::Vec2 RIGHT_ALIGNED_ANCHOR (1.0f, 0.5f );                     // 文字标签右对齐锚点设置
 
 //NPC求婚对话框相关设置
-const float DIALOG_WIDTH_RATIO = 0.5f;                                      // 对话框宽度占屏幕宽度的比例
-const float DIALOG_HEIGHT_RATIO = 0.25f;                                    // 对话框高度占屏幕高度的比例
-const float BUTTON_SIZE_RATIO = 0.1f;                                       // 按钮大小占对话框大小的比例
-const float BUTTON_OFFSET_RATIO = 0.2f;                                     // 按钮与对话框边缘的距离比例
+constexpr float DIALOG_WIDTH_RATIO = 0.5f;                                      // 对话框宽度占屏幕宽度的比例
+constexpr float DIALOG_HEIGHT_RATIO = 0.25f;                                    // 对话框高度占屏幕高度的比例
+constexpr float BUTTON_SIZE_RATIO = 0.1f;                                       // 按钮大小占对话框大小的比例
+constexpr float BUTTON_OFFSET_RATIO = 0.2f;                                     // 按钮与对话框边缘的距离比例
 
 // 游戏时间设置
 constexpr int HOURS_IN_A_DAY = 24;                                          // 一天24小时                                     
@@ -209,7 +210,7 @@ constexpr float ANGRY_ICON_RATIO = 0.8f;                                        
 
 //鱼类
 constexpr float FISH_RATIO = 1.0f;                                              //鱼的缩放比例
-constexpr float FAIL_TO_GET_FISH = 0.1f;                                        //钓不到鱼的概率
+constexpr float FAIL_TO_GET_FISH = 0.2f;                                        //钓不到鱼的概率
 
 //动画类
 constexpr float WOOD_CUT_RATIO = 0.3f;                                          // 砍木桩动画的缩放比例
@@ -294,7 +295,7 @@ enum LocationStatus {
     ClosedObjectList,		// 物品栏关闭
     OpenedObjectList,		// 物品栏打开
     OpenedBoxList,			// 箱子列表打开
-    OpenedShopList 		// 商店列表打开
+    OpenedShopList 		    // 商店列表打开
 };
 
 
@@ -319,10 +320,10 @@ enum GameCharacterAction {
 
 // 单个瓦片坐标信息定义
 struct TileInfo {
-    TileConstants::TileType type;
-    cocos2d::Vec2 tilePos;  // 瓦片坐标
-    cocos2d::Vec2 WorldPos; // 世界坐标
-    bool isObstacle;        // 是否为障碍物
+    TileConstants::TileType type;   // 瓦片类型
+    cocos2d::Vec2 tilePos;          // 瓦片坐标
+    cocos2d::Vec2 WorldPos;         // 世界坐标
+    bool isObstacle;                // 是否为障碍物
     std::unordered_map<std::string, std::pair<int, float>> drops; // 掉落物品映射 (物品名称 -> {数量, 概率})
 };
 
@@ -393,24 +394,22 @@ struct StoreObjectInfo {
 };
 
 // 角色动作和地图类型对应关系
-const std::map< GameCharacterAction, TileConstants::TileType> ACTION_TO_TILEMAP = {
-    { NoneAction, TileConstants::Other },
-    { Plowing,TileConstants::Soil },          // 左键
-    { Seeding,TileConstants::Soiled  },          // 右键
-    { Watering, TileConstants::Soiled },       // 左键
-    { Fertilize, TileConstants::Soiled },      // 左键
-    { GetWater,TileConstants::Water },        // 右键
-    { Weeding, TileConstants::Grass },         // 左键
-    { Cutting, TileConstants::Tree },          // 左键
-    { Mining, TileConstants::Stone },          // 左键
-    { Mining, TileConstants::Treasure },          // 左键
-    { Mining, TileConstants::Mine },          // 左键
-    { Fishing, TileConstants::Water },         // 左键
-    { Harvesting, TileConstants::Crop },       // 右键
-    { Placement, TileConstants::Soil },        // 右键
-  //  { OpenBox, Box},
-    { DestoryObject, TileConstants::Other}     // 左键
-};
+const std::map< GameCharacterAction, std::vector<TileConstants::TileType>> ACTION_TO_TILEMAP = {
+    { NoneAction,   { TileConstants::Other }},
+    { Plowing,      {TileConstants::Soil}},           // 左键
+    { Seeding,      {TileConstants::Soiled }},        // 右键
+    { Watering,     { TileConstants::Soiled }},       // 左键
+    { Fertilize,    { TileConstants::Soiled}},        // 左键
+    { GetWater,     {TileConstants::Water }},         // 右键
+    { Weeding,      {TileConstants::Grass }},         // 左键
+    { Cutting,      {TileConstants::Tree }},          // 左键
+    { Mining,       {TileConstants::Stone,TileConstants::Mine ,TileConstants::Treasure}},            // 左键
+    { Fishing,      {TileConstants::Water }},         // 左键
+    { Harvesting,   {TileConstants::Crop }},          // 右键
+    { Placement,    {TileConstants::Soil }},          // 右键
+    //  { OpenBox, Box},
+    { DestoryObject, {TileConstants::Other} }         // 左键
+  };
 
 // 游戏物品共有属性定义
 class GameObject {

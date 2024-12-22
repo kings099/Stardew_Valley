@@ -271,12 +271,12 @@ void UILayer::initializeTimeDisplay() {
     const Vec2 labelPos2 = Vec2(rightTopPos.x + originalTimeDisplaySize.width * 0.1, rightTopPos.y - originalTimeDisplaySize.height * scaleY * 0.05f);  // 在 labelPos1 下面偏移 30
 
     // 创建并初始化 timeLabel1 和 timeLabel2
-    _timeLabel1 = Label::createWithSystemFont("", "Arial", FONT_SIZE);
+    _timeLabel1 = Label::createWithSystemFont("", "../Resources/fonts/arial.ttf", FONT_SIZE);
     _timeLabel1->setPosition(labelPos1);
     _timeLabel1->setTextColor(Color4B::ORANGE);
     this->addChild(_timeLabel1, UI_LAYER_GRADE);
 
-    _timeLabel2 = Label::createWithSystemFont("", "Arial", FONT_SIZE);
+    _timeLabel2 = Label::createWithSystemFont("", "../Resources/fonts/arial.ttf", FONT_SIZE);
     _timeLabel2->setPosition(labelPos2);
     _timeLabel2->setTextColor(Color4B::ORANGE);
     this->addChild(_timeLabel2, UI_LAYER_GRADE);
@@ -548,7 +548,7 @@ void UILayer::updateCharacterMoneyLabel() {
         this->removeChild(_characterMoneyLabel);
         _characterMoneyLabel = nullptr;
     }
-    _characterMoneyLabel = Label::create(std::to_string(_character->getMoney()), "Arial", FONT_SIZE);
+    _characterMoneyLabel = Label::create(std::to_string(_character->getMoney()), "../Resources/fonts/arial.ttf", FONT_SIZE);
     _characterMoneyLabel->setPosition(Vec2(_visibleSize.width * 4 / 5 + 271, _visibleSize.height * 4 / 5 + 30));
     _characterMoneyLabel->setAnchorPoint(RIGHT_ALIGNED_ANCHOR);
     _characterMoneyLabel->setTextColor(Color4B::ORANGE);
