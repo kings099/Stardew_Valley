@@ -77,7 +77,7 @@ void MineMap::replaceTileAt(const std::string& layerName, const Vec2& tileCoord,
                 _mapName, TileConstants::TileChange(layerName, tileCoord, newGID));
             CCLOG("Treasure tile at (%f, %f) saved with new GID=%d", tileCoord.x, tileCoord.y, newGID);
         }
-        else if (tiletype == TileConstants::TileType::Mine) {
+        else if (tiletype == TileConstants::TileType::Mine|| tiletype == TileConstants::TileType::Other) {
             // 如果瓦片类型为 "Mine"，20% 的概率保存毁坏状态
             float randomValue = CCRANDOM_0_1(); // 生成随机数 [0, 1]
             if (randomValue <= TileConstants::UPDATA_POSIIBILITY) {
