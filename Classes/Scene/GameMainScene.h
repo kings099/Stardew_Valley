@@ -20,7 +20,6 @@
 #include "../Classes/MenuImage/HoverMenuItemImage.h"
 #include "../Classes/Layer/UILayer.h"
 #include "../Classes/Manager/TimeManager.h"
-#include "../Classes/Layer/TimeManagerUI.h"
 #include "Control/MapSwitchManager.h"
 #include "Layer/AudioControlLayer.h"
 #include "Layer/FestivalLayer.h"
