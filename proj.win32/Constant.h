@@ -149,7 +149,7 @@ namespace TileConstants {
 
     // 用于记录地图放置物品与对应GID的映射关系
     const std::unordered_map<std::string, int> objectGIDMap = {
-            {"Box", 101},
+            {"Box", 4231},
             // 在此添加更多物品名称和对应的 GID
     };
 

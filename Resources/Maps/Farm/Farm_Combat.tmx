@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="80" height="65" tilewidth="16" tileheight="16" infinite="0" nextlayerid="18" nextobjectid="81">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="80" height="65" tilewidth="16" tileheight="16" infinite="0" nextlayerid="19" nextobjectid="81">
  <properties>
   <property name="AllowGrassSurviveInWinter" value="T"/>
   <property name="Outdoors" value="T"/>
@@ -779,6 +779,11 @@
  <layer id="14" name="Teleport" width="80" height="65">
   <data encoding="base64" compression="zlib">
    eJzt0CEOACAMBMFKRD8Or0ZgUSBIw0xy/rIRAFDXyNcPatPvjn4A8Jf2+kBx+lFNzzXO6HdHPwAAAAAAAAAAAAAAAACAvQlORgVR
+  </data>
+ </layer>
+ <layer id="18" name="Object" width="80" height="65">
+  <data encoding="base64" compression="zlib">
+   eJzt1jENAAAIwDAk4BrbOOAjhKRVsHMRAACzyusCAAA+8Y8AAAAAAAAAAAAAAAAAAABsaHrwAS8=
   </data>
  </layer>
  <layer id="3" name="Collidable" width="80" height="65">
