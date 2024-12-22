@@ -420,3 +420,26 @@ bool InteractionManager::FertilizeAt(const Vec2& tilePos) {
     }
     return false;
 }
+
+bool InteractionManager::MiningAt(const Vec2& tilePos) {
+    TileInfo tileinfo = GetTileInfoAt(tilePos);
+
+    // 石头物品逻辑
+    if (tileinfo.type == TileConstants::TileType::Stone) {
+        _gameMap->replaceTileAt("path", tilePos, TileConstants::EMPTY_GID);
+        AnimationHelper::playStoneBreakingAnimation(_gameMap->tileToRelative(tilePos), _gameMap->getTiledMap());
+        return true;
+    }
+    //  对应非石头
+    else if(tileinfo.type == TileConstants::TileType::Mine|| tileinfo.type == TileConstants::TileType::Treasure)// 矿物
+    {
+        _gameMap->replaceTileAt("ore", tilePos, TileConstants::EMPTY_GID);
+        return true;
+
+    }
+    else
+    {
+        CCLOG("unkonw mine type");
+        return false;
+    }
+}
