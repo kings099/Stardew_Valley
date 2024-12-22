@@ -357,30 +357,33 @@ int NPC::getAffection() const {
 void NPC::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* event) {
     // 如果正在处理任务，直接返回
 
-    if (_isProcessing) {
-        return;
-    }
+    // 如果正在处理任务，直接返回
+    if (keyCode == EventKeyboard::KeyCode::KEY_K || keyCode == EventKeyboard::KeyCode::KEY_G || keyCode == EventKeyboard::KeyCode::KEY_M) {
+        if (_isProcessing) {
+            return;
+        }
 
-    // 标记为正在处理任务
-    _isProcessing = true;
- 
-    // 检查按下的是否是 K 键
-    if (keyCode == EventKeyboard::KeyCode::KEY_K) {
-        // 触发 NPC 显示对话框
-        showDialog();
-        _isProcessing = false;
-    }
-    // 检查按下的是否是 G 键
-    else if (keyCode == EventKeyboard::KeyCode::KEY_G) {
-        // 触发 NPC 显示任务列表
-        showTaskList();
-      
-    }
-    // 检查按下的是否是 M 键
-    else if (keyCode == EventKeyboard::KeyCode::KEY_M) {
-        // 显示婚姻选择
-        showMarriageChoices();
-   
+        // 标记为正在处理任务
+        _isProcessing = true;
+
+        // 检查按下的是否是 K 键
+        if (keyCode == EventKeyboard::KeyCode::KEY_K) {
+            // 触发 NPC 显示对话框
+            showDialog();
+            _isProcessing = false;
+        }
+        // 检查按下的是否是 G 键
+        else if (keyCode == EventKeyboard::KeyCode::KEY_G) {
+            // 触发 NPC 显示任务列表
+            showTaskList();
+
+        }
+        // 检查按下的是否是 M 键
+        else if (keyCode == EventKeyboard::KeyCode::KEY_M) {
+            // 显示婚姻选择
+            showMarriageChoices();
+
+        }
     }
 }
 
