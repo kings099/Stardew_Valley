@@ -44,8 +44,8 @@ public:
     //新增管理病虫害
     void checkPests();     // 检查病虫害
     void treatPests();     // 治疗病虫害
- 
-
+    //通过天气管理浇水
+    void manageDrought(Weather currentWeather);
     // 其他成员函数和变量
     static void setPlayerLevel(int level); // 设置人物等级
     // 判断是否能种植当前农作物

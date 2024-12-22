@@ -213,8 +213,13 @@ bool Crops::init(const std::string& type, int maxGrowthStage) {
     }
 
     _sprite->setScale(CROP_START_RATIO);
-    // 设置锚点（例如设置到底部中心点）
-    _sprite->setAnchorPoint(Vec2(CROP_HORIZONTAL_ANCHORPOINT, CROP_VERTICAL_ANCHORPOINT));
+    //// 设置锚点（例如设置到底部中心点）
+    //if (_type == "maple" || _type == "pine" || _type == "oak") {
+        _sprite->setAnchorPoint(Vec2(CROP_HORIZONTAL_ANCHORPOINT, CROP_VERTICAL_ANCHORPOINT));
+    /*}
+    else {
+        _sprite->setAnchorPoint(Vec2(CROP_HORIZONTAL_ANCHORPOINT, 0.5));
+    }*/
 
     this->addChild(_sprite);
     CCLOG("Crop initialized successfully");
@@ -223,6 +228,45 @@ bool Crops::init(const std::string& type, int maxGrowthStage) {
         }, 24.0f, "crop_update");
     return true;
 }
+
+// 根据天气管理干旱情况，判断是否需要浇水
+void Crops::manageDrought(Weather currentWeather) {
+    // 检查是否枯萎
+    if (!_isWatered) {
+        _daysWithoutWater++;
+        // 只处理干旱和晴天，雨天不需要浇水
+        if (currentWeather == Weather::Dry) {
+            // 干旱天气，每两天浇一次水
+            if (_daysWithoutWater >= 2) {
+                if (_resourceMap.find("wilt") != _resourceMap.end()) {
+                    const auto& textures = _resourceMap["wilt"];
+                    if (!textures.empty()) {
+                        _sprite->setTexture(textures[0]);
+                    }
+                }
+            }
+        }
+        else if (currentWeather == Weather::Sunny) {
+            if (_daysWithoutWater >= 3) {
+                if (_resourceMap.find("wilt") != _resourceMap.end()) {
+                    const auto& textures = _resourceMap["wilt"];
+                    if (!textures.empty()) {
+                        _sprite->setTexture(textures[0]);
+                    }
+                }
+            }
+        }
+        else if (currentWeather == Weather::Rainy) {
+            _daysWithoutWater = 0;
+        }
+        // 如果是雨天，不做任何操作
+    }
+    else {
+        _daysWithoutWater = 0;
+    }
+}
+
+
 
 //更新植物的生长状态
 void Crops::updateGrowth(float deltaTime) {
@@ -272,21 +316,8 @@ void Crops::updateGrowth(float deltaTime) {
         }
     }
     if (_type != "oak" && _type != "maple" && _type != "pine") {
-        // 检查是否枯萎
-        if (!_isWatered) {
-            _daysWithoutWater++;
-            if (_daysWithoutWater >= 3) {
-                if (_resourceMap.find("wilt") != _resourceMap.end()) {
-                    const auto& textures = _resourceMap["wilt"];
-                    if (!textures.empty()) {
-                        _sprite->setTexture(textures[0]);
-                    }
-                }
-            }
-        }
-        else {
-            _daysWithoutWater = 0;
-        }
+        Weather currentWeather = Weather::Dry;
+        this->manageDrought(currentWeather);
         checkPests(); // 每次更新时检查病虫害
         _isWatered = false; // 每次更新后重置浇水状态
     }

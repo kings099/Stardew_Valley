@@ -397,6 +397,8 @@ bool InteractionManager::placeObjectAtTile(const Vec2& tilePos) {
 
 // 浇水效果
 bool InteractionManager::WateringAt(const Vec2& tilePos) {
+    // 打印调试信息
+        CCLOG("WateringAt: tilePos = (%f, %f)", tilePos.x, tilePos.y);
     if (!_gameMap) {
         CCLOG("InteractionManager: _gameMap is null.");
         return false;

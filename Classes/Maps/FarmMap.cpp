@@ -281,6 +281,9 @@ void FarmMap::plantCrops(const Vec2& tilePos, const std::string cropName,const i
     // 设置玩家等级
     Crops::setPlayerLevel(characterLevel);
 
+    // 打印 tilePos 坐标信息
+    CCLOG("plantCrops - tilePos = (%f, %f)", tilePos.x, tilePos.y);
+
     int maxstage = KALE_MAX_GROWTHSTAGE;
     if (cropName == "pumpkin")
         maxstage = PUMPKIN_MAX_GROWTHSTAGE;
