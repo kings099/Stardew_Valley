@@ -54,6 +54,9 @@ public:
 	// 初始化商店
 	void initializeShop();
 
+	// 初始化合成表
+	void initializeSynthesisTable();
+
 	// 更新物品栏
 	void updateObjectList();
 
@@ -74,7 +77,7 @@ public:
 
 private:
 	Character* _character;															// 角色指针
-	Store *_store;																	// 商店类
+	Store *_store;																	// 商店指针
 	cocos2d::Size _visibleSize;														// 可见区域的大小
 	cocos2d::Label* _timeLabel1;													// 显示星期和日期的标签指针
 	cocos2d::Label* _timeLabel2;													// 显示白天/晚上和小时的标签指针
@@ -94,6 +97,7 @@ private:
 	ObjectImageInfo _boxObjectSpriteImage[OBJECT_LIST_COLS];						// 箱子物品图片指针
 	ObjectImageInfo _selectedObjectImage;											// 当前选中的物品图片对象
 	StoreObjectInfo _storeObjectInfo[PRODUCE_KIND_NUM_EACH_DAY];				    // 商店物品信息指针
+	HoverMenuItemImage* _synthesisObjectSpriteImage[SYNTHESIS_TABLE_COLS * SYNTHESIS_TABLE_ROWS];	// 合成表显示的物品图片指针
 	HoverMenuItemImage* _deleteObjectButton;										// 删除物品按钮
 	HoverMenuItemImage* _closeObjectListButton;										// 关闭物品栏按钮
 	HoverMenuItemImage* _sellObjectButton;											// 出售物品按钮
@@ -103,6 +107,7 @@ private:
 	bool _lastObjectListStatus;														// 上一次物品栏状态
 	bool _boxObjectListStatus;														// 是否打开箱子
 	bool _storeStatus;																// 商店状态
+	bool _synthesisTableStatus;														// 合成表状态
 	int _lastSelectedObjectIndex;													// 上一次物品栏索引
 	Location _startLocation;														// 物品移动起始位置属性
 	std::string _lastWeekDay;														// 上一天的信息
@@ -124,14 +129,18 @@ private:
 	// 设置商店物品图片是否可见
 	void setStoreObjectInfoVisible(const StoreObjectInfo& storeObjectInfo, bool visible);
 
+	// 设置技能表是否可见
+	void setSkillLevelVisible(bool visible);
+
+	// 设置合成表是否可见
+	void setSynthesisTableVisible(bool visible);
+
 	// 寻找最近可放置坐标
 	cocos2d::Vec2 findNearestPoint(cocos2d::Sprite* objectSprite);
 
 	// 设置选中物品标记框的显示状态
 	void setSelectObjectSpriteMarker(int index, bool show);
 
-	// 设置技能等级的显示状态
-	void setSkillLevel(bool show);
 
 	// 关闭回调
 	void menuCloseCallback(cocos2d::Ref* pSender);
