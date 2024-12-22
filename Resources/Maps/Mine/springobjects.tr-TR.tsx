@@ -19,6 +19,11 @@
    <property name="isSteel" type="bool" value="true"/>
   </properties>
  </tile>
+ <tile id="500">
+  <properties>
+   <property name="isBox" type="bool" value="true"/>
+  </properties>
+ </tile>
  <tile id="525">
   <properties>
    <property name="canNotMove" type="bool" value="true"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="50" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="6">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="50" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="14" nextobjectid="6">
  <properties>
   <property name="AmbientLight" value="80 80 40"/>
   <property name="ViewportFollowPlayer" type="bool" value="true"/>
@@ -12,8 +12,35 @@
   <image source="Mines/mine.png" width="256" height="288"/>
  </tileset>
  <tileset firstgid="353" source="paths.tsx"/>
- <tileset firstgid="417" source="springobjects.tr-TR.tsx"/>
+ <tileset firstgid="417" name="springobjects.tr-TR" tilewidth="16" tileheight="16" tilecount="936" columns="24">
+  <image source="springobjects.tr-TR.png" width="384" height="624"/>
+  <tile id="64">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+    <property name="isTreasure" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="379">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+    <property name="isCopper" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="380">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+    <property name="isSteel" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="525">
+   <properties>
+    <property name="canNotMove" type="bool" value="true"/>
+    <property name="isRing" type="bool" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
  <tileset firstgid="1353" source="../Farm/paths.tsx"/>
+ <tileset firstgid="1417" source="springobjects.tr-TR.tsx"/>
  <layer id="9" name="Collidable" width="50" height="20" opacity="0.9">
   <data encoding="base64" compression="zlib">
    eJztVTESgDAI6+L7/P9v3DlpSQg4SO6cSkOiBNcaDL7HffFPt65ILdOnEycfFbxefeYbV/qI3rc6mdn1vGZnvCpL1q/nozOrLKxWe6bW//Z+vHOUN3Mf7XWaY1aP5fO4ldlgtCG1mX0Q5UGA7jeUd6dR5QHRp85vtC/Ku+NU57pyLyv/NYPBX/EABO47ZQ==
@@ -44,9 +71,9 @@
    eJztzzEJAAAIAEEXw9m/kAUcBUHuEvxHAN9VXhfs+PIBAACTBvcgAJ0=
   </data>
  </layer>
- <layer id="7" name="ore" width="50" height="20">
+ <layer id="13" name="ore" width="50" height="20">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AU0ALIMhMWx6VmsAEZHO7EJT4KqA9Gwxo3wBY26HkLxgepfchIezdRG+CKf2LKGUrMJ1aeXDvoka5xpQVKgAydy3FahxOy+UO1rEGOh3VD1A+jYBSMglEAAgA5tQSm
+   eJxjYBgFo2AU0AKwsBMWx6VmsAFi/DIKaAtYR8MaJ8CWDtHFYOEHoodiWOJy80lW0tSTaj655mED2OKJHnGBbgc1yi1kM+jhB1qXtdOGYL2EDljpHCejYBSMglFAKwAAALICjA==
   </data>
  </layer>
 </map>
