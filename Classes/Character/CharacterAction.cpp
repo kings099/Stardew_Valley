@@ -61,17 +61,24 @@ bool CharacterAction::onMouseDown(cocos2d::Event* event, GameCharacterAction& ga
 void CharacterAction::getObject(GameCharacterAction action, InteractionManager* interactionManager) {
 	TileInfo targetTileNode = getTileInfo(action, interactionManager);
 	std::string fishName = Fishs::catchFish(TimeManager::getInstance()->getCurrentSeason(),_skillLevel[Fish]);
+	int probability = rand() % 100 + 1, extraObject = rand() % 100 + 1;
+	int extraObjectProbability = 100;
 	switch (action) {
 		case NoneAction:
 			break;
 		// 可以获得物品的动作
 		case Weeding:
+			extraObjectProbability -= _skillLevel[Farm] * SKILL_GET_ITEM_PROBABILITY * 100;
 		case Cutting:
+			extraObjectProbability -= _skillLevel[Collect] * SKILL_GET_ITEM_PROBABILITY * 100;
 		case Mining:
+			extraObjectProbability -= _skillLevel[Mine] * SKILL_GET_ITEM_PROBABILITY * 100;
 			for (const auto& drop : targetTileNode.drops) {
-				int probability = rand() % 100 + 1;
 				if (probability >= drop.second.second * 100) {
 					pickUpObject(drop.first, drop.second.first);
+				}
+				if (extraObject >= extraObjectProbability) {
+					pickUpObject(drop.first, 1);
 				}
 			}
 			break;

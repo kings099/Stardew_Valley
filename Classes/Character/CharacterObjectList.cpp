@@ -240,16 +240,13 @@ bool CharacterObjectList::synthesizeObject(GameBaseObject targetObject) {
 }
 
 // 合成物品
-bool CharacterObjectList::synthesizeObject(const std::string& targetObjectName) {
-	 GameCommonObject targetObject = findObjectByName(targetObjectName);
-	 if (targetObject.type != Base ) {
-		 return false;
-	 }
-
-	 GameBaseObject* targetBaseObject = dynamic_cast<GameBaseObject*>(targetObject.object.get());
+bool CharacterObjectList::synthesizeObject(GameToolObject targetObject) {
+	if (!targetObject._isUpgradable) {
+		return false;
+	}
 
 	 // 寻找列表的物品原料
-	 for (const auto& ingredient : targetBaseObject->_ingredients) {
+	 for (const auto& ingredient : targetObject._ingredients) {
 		 int ingredientIndex = findObjectByObjectList(ingredient.first);
 		 if (!(ingredientIndex != -1 && _objectList[ingredientIndex].count >= ingredient.second)) {
 			 return false;
@@ -257,7 +254,7 @@ bool CharacterObjectList::synthesizeObject(const std::string& targetObjectName) 
 	 }
 
 	 //合成物品
-	 for (const auto& ingredient : targetBaseObject->_ingredients) {
+	 for (const auto& ingredient : targetObject._ingredients) {
 		 int ingredientIndex = findObjectByObjectList(ingredient.first);
 		 deleteObject(ingredient.second, ingredientIndex);
 	 }
