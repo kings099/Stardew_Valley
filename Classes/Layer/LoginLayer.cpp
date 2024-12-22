@@ -10,14 +10,19 @@
 #include "Character/CharacterInfo.h"
 #include "Scene/GameMainScene.h"
 
+
+ // 构造函数
 LoginLayer::LoginLayer() : _usernameInput(nullptr), _farmNameInput(nullptr), _favoriteInput(nullptr), _submitButton(nullptr), _loginLayer(nullptr)
 {
 }
 
+
+//析构函数
 LoginLayer::~LoginLayer()
 {
 }
 
+// 创建函数
 LoginLayer* LoginLayer::create()
 {
     LoginLayer* ret = new LoginLayer();
@@ -33,6 +38,7 @@ LoginLayer* LoginLayer::create()
     }
 }
 
+// 初始化函数
 bool LoginLayer::init()
 {
     // 获取可见区域尺寸
@@ -120,6 +126,7 @@ bool LoginLayer::init()
     return true;
 }
 
+// 提交按钮回调
 void LoginLayer::onSubmitClicked(Ref* sender)
 {
     // 获取输入的内容

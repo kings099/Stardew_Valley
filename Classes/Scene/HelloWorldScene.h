@@ -10,6 +10,12 @@
 #define __HELLOWORLD_SCENE_H__
 
 #include "cocos2d.h"
+#include "SimpleAudioEngine.h"
+#include "Layer/LoginLayer.h"
+#include "ui/CocosGUI.h"
+#include "../Classes/Maps/FarmMap.h"
+#include "../Classes/Character/CharacterInfo.h"         
+#include "Layer/AudioControlLayer.h"
 
 class HelloWorld : public cocos2d::Scene
 {
@@ -35,13 +41,9 @@ public:
     // 开始游戏的回调函数
     void startGameCallback(Ref* pSender);
 
-    // 开始游戏后的处理
-    void onGameStart();
 
+    //创建HelloWorld 场景
     CREATE_FUNC(HelloWorld);
-
-    void HelloWorld::onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event);
-
 
 private:
     cocos2d::MenuItemImage* _startItem;  // "开始" 按钮
