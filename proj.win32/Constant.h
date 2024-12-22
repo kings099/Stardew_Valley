@@ -202,6 +202,7 @@ namespace TileConstants {
     constexpr float STONE_DROP_MINE_PROBABILITY = 0.1f;                         // 挖矿时石头掉落概率    
     constexpr float TREATURE_PROBABILITY = 1.0f;                                // 珍惜物品掉落概率
     constexpr float UPDATA_POSIIBILITY = 0.5f;                                  // 矿洞物品刷新几率
+    constexpr float CROP_POSIIBILITY = 0.8f;                                    // 农作物收割几率
 
     constexpr int DEFAULT_DROP_QUANTITY = 1;                                    // 默认掉落数量
     constexpr int MUTI_DROP_QUANTITY = 3;                                       // 默认多个掉落数量
