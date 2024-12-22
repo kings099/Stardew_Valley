@@ -15,7 +15,7 @@
 
 class Crops : public cocos2d::Node {
 public:
-    static Crops* create(const std::string& type, int maxGrowthStage);
+   
 
     // 初始化农作物
     bool init(const std::string& type, int maxGrowthStage);
@@ -44,19 +44,22 @@ public:
     //新增管理病虫害
     void checkPests();     // 检查病虫害
     void treatPests();     // 治疗病虫害
-
-    
+ 
 
     // 其他成员函数和变量
     static void setPlayerLevel(int level); // 设置人物等级
-    bool canBePlanted() const;             // 检查农作物是否满足种植条件
+    // 判断是否能种植当前农作物
+    static bool canBePlanted(const std::string& cropType);
+    // 创建农作物时检查是否可以种植
+    static Crops* create(const std::string& type, int maxGrowthStage);
     void chopTree();                       //砍树
     void harvestCrop();
 
     static void setSeason(Season season); // 设置季节
     static Season getSeason();           // 获取当前季节
     bool _isRemoved = false;
-    static int _playerLevel; // 人物等级（静态变量）
+    // 玩家等级
+    static int _playerLevel;
 
 private:
     bool _isFertilized;         //是否施肥
