@@ -44,6 +44,7 @@ bool CharacterAction::onMouseDown(cocos2d::Event* event, GameCharacterAction& ga
 			gameCharacterAction = getRightButtonAction();
 		}
 		_targetTileNode = getTileInfo(interactionManager, gameCharacterAction);
+		targetTilePos = _targetTileNode.tilePos;
 		if (checkActionIsValid(gameCharacterAction, targetTilePos, interactionManager)) {
 			getObject(gameCharacterAction, interactionManager);
 			updateSkillExprience(gameCharacterAction);
