@@ -280,6 +280,7 @@ void InteractionManager::ActionAnimation(GameCharacterAction action, const Vec2&
         placeObjectAtTile(TilePos);
         break;
     case Fertilize:
+        _gameMap->replaceTileAt("watering", TilePos, TileConstants::FIRT_FARM_TILE_GID, false);
         FertilizeAt(TilePos);
         break;
     case DestoryObject:
@@ -441,7 +442,7 @@ bool InteractionManager::FertilizeAt(const Vec2& tilePos) {
     if(_gameMap->getType() == MapType::Farm)
     {
         auto cropSprite = dynamic_cast<Crops*>(node);
-        if (!cropSprite)
+        if (cropSprite != nullptr)
         {
             cropSprite->fertilize();
             return true;

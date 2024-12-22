@@ -109,7 +109,7 @@ GameCharacterAction CharacterAction::getLeftButtonAction() {
 		return toolObjectPtr->_action;
 	}
 	case Base:
-		if (currentObject.objectNode.object->_name == "fertilizer") {
+		if (currentObject.objectNode.object->_name == "Fertilizer") {
 			return Fertilize;
 		}
 		else {

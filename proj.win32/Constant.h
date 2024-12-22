@@ -91,6 +91,7 @@ constexpr int MINE_TELE_Y = 5;                                              // �
 namespace TileConstants {
     constexpr int DRY_FARM_TILE_GID = 2040;                                     // 干燥耕地效果动画图块GID
     constexpr int WET_FARM_TILE_GID = 2044;                                     // 湿润耕地效果动画图块GID
+    constexpr int FIRT_FARM_TILE_GID = 2048;                                    // 模拟施肥动画效果
     constexpr int EMPTY_GID = 0;                                                // 空白GID
     constexpr int WOOD_GID = 7;                                                 // 树桩标记GID（不可见）
     constexpr int OAK_GID = 10;                                                 // 桦树GID

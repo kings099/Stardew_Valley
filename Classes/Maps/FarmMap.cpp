@@ -76,7 +76,7 @@ bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition, Node* Tr
     // 注册监听器
     _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
 
-    // 待定：添加农场地图独有的部分 例如事件监听器……
+    // 可继续添加农场地图独有的部分
 
     return true;
 }
@@ -97,7 +97,7 @@ bool FarmMap::onMouseEvent(cocos2d::Event* event)
         Vec2 mapPosition(mousePos.x + cameraOffset_x, mousePos.y + cameraOffset_y);
         Vec2 tiledPos = absoluteToTile(mapPosition);
         CCLOG("TILED POS: %f,%f", tiledPos.x, tiledPos.y);
-        int GID = getTileGIDAt("path", tiledPos);
+        int GID = getTileGIDAt("watering", tiledPos);
         CCLOG("click GID:%d", GID);
         Vec2 worldpos = tileToAbsolute(tiledPos);
         CCLOG("WORLD POS: %f,%f", worldpos.x, worldpos.y);
