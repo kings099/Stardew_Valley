@@ -2,7 +2,7 @@
  * Project Name:  Stardew_Valley
  * File Name:     MineMap.h
  * File Function: 初始化矿洞地图
- * Author:        胡宝怡、金恒宇（修改其中的虚函数，重写继承自基类的一些方法）
+ * Author:        胡宝怡、金恒宇（修改其中的虚函数，重写继承自基类的一些方法，灯光模拟类）
  * Update Date:   2024/12/20
  * License:       MIT License
  ****************************************************************/

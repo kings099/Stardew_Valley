@@ -16,6 +16,7 @@
 #include "Maps/IndoorMap.h"
 #include "Maps/TownMap.h"
 #include "Maps/MineMap.h"
+#include "Maps/IndoorLighting.h"
 #include "Character/Character.h"
 #include "GameViewController.h"
 #include "InteractionManager.h"
@@ -42,10 +43,21 @@ private:
 
 
 private:
-    Character* _character;  // 当前的角色对象
-    GameMap* _currentMap;   // 当前地图对象
-    GameViewController* _viewController; // 视角控制器
-    InteractionManager* _interactionManager; // 交互管理器
+    // 当前的角色对象
+    Character* _character; 
+
+    // 当前地图对象
+    GameMap* _currentMap; 
+
+    // 视角控制器
+    GameViewController* _viewController;
+
+    // 交互管理器
+    InteractionManager* _interactionManager; 
+
+    // RAII 管理灯光效果
+    std::unique_ptr<IndoorLighting> _lightingGuard; 
+
 
 };
 

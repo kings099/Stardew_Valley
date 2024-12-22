@@ -36,7 +36,6 @@ bool GameViewController::init(Character* character, GameMap* gamemap) {
 
     _character = character;
     _map = gamemap;
-    _darknessMask = nullptr;
 
     return true;
 }
@@ -104,14 +103,6 @@ void GameViewController::setMap(GameMap* newMap) {
         //设置新地图
         _map = newMap;
 
-        // 地图为矿洞地图添加黑暗效果
-        if (_map->getType() == MapType::Mine) {
-            enableDarknessEffect();
-        }
-        else
-        {
-            disableDarknessEffect();
-        }
         CCLOG("GameViewController updated to new map: %p", _map);
     }
 }
@@ -122,27 +113,4 @@ float GameViewController::clamp(float value, float minVal, float maxVal)
     return std::max(std::min(value, maxVal), minVal);
 }
 
-// 模拟黑暗环境
-void GameViewController::enableDarknessEffect() {
-    if (_darknessMask) {
-        return; // 如果已经存在蒙版，不重复添加
-    }
 
-    // 创建一个半透明的黑色 LayerColor
-    _darknessMask = cocos2d::LayerColor::create(HLAFBLACK);
-    if (_map) {
-        _map->addChild(_darknessMask, _map->getLocalZOrder() + 1); // 添加到地图节点上，层级高于地图内容
-    }
-
-    CCLOG("Darkness effect enabled.");
-}
-
-// 禁用黑暗环境模拟
-void GameViewController::disableDarknessEffect() {
-    if (!_darknessEnabled) return;
-    _darknessEnabled = false;
-
-    _darknessMask = nullptr;
-
-    CCLOG("Darkness effect disabled.");
-}
