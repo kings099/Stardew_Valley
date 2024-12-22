@@ -203,6 +203,16 @@ const TileInfo InteractionManager::GetTileInfoAt(const Vec2& Tile_pos) {
         if (FarmGID == TileConstants::DRY_FARM_TILE_GID) {
             tileInfo.type = TileConstants::Soiled;
         }
+
+        // 判断物品层
+        int ObjectGID = _gameMap->getTileGIDAt("Object", Tile_pos);
+
+        ValueMap ObjectProps = _gameMap->getTilePropertiesForGID(ObjectGID);
+
+        if (ObjectProps.find("isBox") != ObjectProps.end() && ObjectProps["isBox"].asBool()) {
+            tileInfo.type = TileConstants::Box;
+        }
+
     }
     return tileInfo;
 }
@@ -269,7 +279,6 @@ void InteractionManager::ActionAnimation(GameCharacterAction action, const Vec2&
         break;
     case DestoryObject:
         // 可添加对应物品损坏的动画
-
         _gameMap->replaceTileAt("Object", TilePos, TileConstants::EMPTY_GID);
         break;
 
