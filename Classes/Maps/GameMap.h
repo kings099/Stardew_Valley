@@ -22,7 +22,7 @@ public:
     virtual ~GameMap();
 
     // 创建地图
-    static GameMap* create(const std::string& mapFile, const Vec2& mapPosition = Vec2(0, 0));
+    virtual GameMap* create(const std::string& mapFile, const Vec2& mapPosition = Vec2(0, 0));
 
     // 初始化地图
     virtual bool init(const std::string& mapFile, const Vec2& mapPosition);
@@ -54,8 +54,8 @@ public:
     // 替换指定图层的瓦片，在矿洞子类实现刷新逻辑记录
     virtual void replaceTileAt(const std::string& layerName, const Vec2& tileCoord, int newGID, bool isUserAction = true);
 
-    // 获取作物的指针，在农场子类中实现，其他类型返回nullptr
-    virtual Crops* getTreeAtPosition(const Vec2& tilePos);
+    // 获取地图上节点的指针 虚函数
+    virtual Node* getNodeAtPosition(const Vec2& tilePos);
 
     // 获取瓦片地图指针
     TMXTiledMap* getTiledMap() const;
@@ -67,6 +67,8 @@ public:
     virtual void saveChangesToStateManager() const;
 
     virtual MapType getType() const { return MapType::Generic; }
+
+
 
 protected:
     std::string _mapName;     // 地图文件名

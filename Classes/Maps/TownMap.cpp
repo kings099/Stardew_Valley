@@ -40,3 +40,9 @@ bool TownMap::init(const std::string& mapFile, const Vec2& mapPosition)
     // 添加小镇地图初始化时需要创建的精灵
     return true;
 }
+
+Node* TownMap::getNodeAtPosition(const Vec2& tilePos) {
+
+    // 添加小镇地图特有节点逻辑 （暂无）
+    return nullptr; // 默认返回 nullpt
+}

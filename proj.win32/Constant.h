@@ -96,6 +96,7 @@ namespace TileConstants {
     constexpr int OAK_GID = 10;                                                 // 桦树GID
     constexpr int MAMPLE_GID = 11;                                              // MAMPLE GID
     constexpr int PINE_GID = 12;                                                // PINE GID
+    constexpr int CROP_INVISIBLE_GID = 4;                                       // 作物树根图块不可见GID
     constexpr int OAK_INVISIBLE_GID = 1;                                        // OAK树根图块不可见GID
     constexpr int MAMPLE_INVISIBLE_GID = 2;                                     // MAMPLE树根图块不可见GID
     constexpr int PINE_INVISIBLE_GID = 3;                                       // PINE树根图块不可见GID

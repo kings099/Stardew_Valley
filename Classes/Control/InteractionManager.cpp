@@ -172,6 +172,11 @@ const TileInfo InteractionManager::GetTileInfoAt(const Vec2& Tile_pos) {
             tileInfo.drops.clear(); // 清空默认的 "None" 项
             tileInfo.drops["Timber"] = { TileConstants::MUTI_DROP_QUANTITY, TileConstants::TREE_DROP_PROBABILITY }; // 掉落3个木材，概率为90%
         }
+        else if (pathProps.find("isCrop") != pathProps.end() && pathProps["isCrop"].asBool())
+        {
+            tileInfo.type = TileConstants::Crop;
+            // 暂时无法写掉落，需要农作物类提供接口
+        }
     }
 
     // 判断water层
@@ -257,7 +262,7 @@ void InteractionManager::ActionAnimation(GameCharacterAction action, const Vec2&
         _gameMap->replaceTileAt("farm", TilePos, TileConstants::DRY_FARM_TILE_GID);
         break;
     case Watering:
-        _gameMap->replaceTileAt("watering", TilePos, TileConstants::WET_FARM_TILE_GID);
+        _gameMap->replaceTileAt("watering", TilePos, TileConstants::WET_FARM_TILE_GID,false);
         WateringAt(TilePos);
         break;
     case Weeding:
@@ -328,15 +333,20 @@ void InteractionManager::getTreeAndChopAt(const Vec2& tilePos) {
         return;
     }
 
-    // 使用多态调用 GameMap 的 getTreeAtPosition
-    auto treeSprite = _gameMap->getTreeAtPosition(tilePos);
-    treeSprite->waterCrop();
-    if (treeSprite) {
-        CCLOG("Tree found at (%f, %f). Chopping tree...", tilePos.x, tilePos.y);
-        treeSprite->chopTree();
-    }
-    else {
-        CCLOG("No tree found at tile position: (%f, %f)", tilePos.x, tilePos.y);
+    // 使用多态调用 GameMap 的 getNodeAtPosition
+    auto node = _gameMap->getNodeAtPosition(tilePos);
+    // 转换为crop类型
+    if(_gameMap->getType()==MapType::Farm)
+    {
+        auto treeSprite = dynamic_cast<Crops*>(node);
+        treeSprite->waterCrop();
+        if (treeSprite) {
+            CCLOG("Tree found at (%f, %f). Chopping tree...", tilePos.x, tilePos.y);
+            treeSprite->chopTree();
+        }
+        else {
+            CCLOG("No tree found at tile position: (%f, %f)", tilePos.x, tilePos.y);
+        }
     }
 }
 
@@ -363,7 +373,10 @@ bool InteractionManager::placeObjectAtTile(const Vec2& tilePos) {
 
                 // 判断目标瓦片是否为耕地
                 TileInfo tileInfo = GetTileInfoAt(tilePos);
+
+                _gameMap->replaceTileAt("path", tilePos, TileConstants::CROP_INVISIBLE_GID);
                 farmMap->plantCrops(tilePos, cropName, _characterFarmLevel);
+
                 CCLOG("Planted crop '%s' at tile (%f, %f)", cropName.c_str(), tilePos.x, tilePos.y);
                 return true;
             }
@@ -403,11 +416,15 @@ bool InteractionManager::WateringAt(const Vec2& tilePos) {
     }
 
     // 使用多态调用 GameMap 的 getTreeAtPosition获取农作物指针
-    auto cropSprite = _gameMap->getTreeAtPosition(tilePos);
-    if(!cropSprite)
+    auto node = _gameMap->getNodeAtPosition(tilePos);
+    if(_gameMap->getType() == MapType::Farm)
     {
-        cropSprite->waterCrop();
-        return true;
+        auto cropSprite = dynamic_cast<Crops*>(node);
+        if (cropSprite!=nullptr)
+        {
+            cropSprite->waterCrop();
+            return true;
+        }
     }
     return false;
 }
@@ -420,11 +437,15 @@ bool InteractionManager::FertilizeAt(const Vec2& tilePos) {
     }
 
     // 使用多态调用 GameMap 的 getTreeAtPosition获取农作物指针
-    auto cropSprite = _gameMap->getTreeAtPosition(tilePos);
-    if (!cropSprite)
+    auto node = _gameMap->getNodeAtPosition(tilePos);
+    if(_gameMap->getType() == MapType::Farm)
     {
-        cropSprite->fertilize();
-        return true;
+        auto cropSprite = dynamic_cast<Crops*>(node);
+        if (!cropSprite)
+        {
+            cropSprite->fertilize();
+            return true;
+        }
     }
     return false;
 }
