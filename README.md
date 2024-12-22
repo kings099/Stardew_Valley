@@ -206,7 +206,7 @@ A project of Stardew Valley based on [Cocos2d-x 3.17.2](https://docs.cocos.com/c
 - 实现 `Animal` 类
 - 实现 `MapStateManager` 类
 - 实现 `MineMap` 类
-- 完善 ` FarmMap` 类
+- 完善 `FarmMap` 类
 
 #### 2024.12.21
 - 调整 `Fish` 类
