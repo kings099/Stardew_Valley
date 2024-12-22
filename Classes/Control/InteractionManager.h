@@ -100,6 +100,9 @@ private:
     // 触发收割时候地块变化
     bool HarvestAt(const Vec2& tilePos);
 
+    // 处理害虫
+    bool TreatPestAt(const Vec2& tilePos);
+
     // 获取矿石信息
     void GetMineInfo(int MineGID, TileInfo& tile);
 };
