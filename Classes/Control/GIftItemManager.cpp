@@ -15,8 +15,11 @@
 
 // 获取 GiftItemManager 的单例实例
 GiftItemManager* GiftItemManager::getInstance() {
-    static GiftItemManager instance;  // 静态局部变量，确保只创建一个实例
-    return &instance;  // 返回实例的指针
+    static GiftItemManager* instance= nullptr;
+    if (!instance) {
+        instance = new GiftItemManager(); // 仅在第一次调用时创建实例
+    }
+    return instance;
 }
 
 //构造函数

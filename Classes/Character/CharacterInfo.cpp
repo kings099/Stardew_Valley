@@ -6,19 +6,16 @@
  * Update Date:   2024/12/5
  * License:       MIT License
  ****************************************************************/
-#pragma once
+
 #include "CharacterInfo.h"
 
-// 初始化静态成员变量 instance 为 nullptr
-CharacterInfo* CharacterInfo::_instance = nullptr;
-
-// 获取单例实例，如果实例为空则创建一个新的实例
+ // 获取单例实例，静态局部变量实现单例
 CharacterInfo* CharacterInfo::getInstance() {
-    if (_instance == nullptr) {
-        // 如果实例不存在，创建并返回新的实例
-        _instance = new CharacterInfo();
+    static CharacterInfo* instance = nullptr;
+    if (!instance) {
+        instance = new CharacterInfo(); // 仅在第一次调用时创建实例
     }
-    return _instance;  // 返回单例实例
+    return instance;
 }
 
 // 设置角色信息，包括用户名、农场名和最喜欢的事物
