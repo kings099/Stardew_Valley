@@ -6,7 +6,7 @@
  * License:       MIT License
  ****************************************************************/
 #include "AppDelegate.h"
-#include "../Classes/Scene/HelloWorldScene.h"
+#include "../Classes/Scene/GameStartScene.h"
 #include "proj.win32/Constant.h"
 #include "Classes/Scene/GameMainScene.h"
 #include "audio/include/AudioEngine.h"
@@ -90,7 +90,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     register_all_packages();
 
     // 创建启动场景类
-    auto scene =HelloWorld::createScene();
+    auto scene = GameStartScene::createScene();
 
     // 运行启动场景
     director->runWithScene(scene);

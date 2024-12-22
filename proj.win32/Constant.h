@@ -277,10 +277,18 @@ constexpr float CROP_MATURE_RATIO = 1.0f;                                    //�
 constexpr float CROP_HORIZONTAL_ANCHORPOINT = 0.5f;					        // 树水平锚点
 constexpr float TREE_VERTICAL_ANCHORPOINT = 0.0f;						    // 树垂直锚点
 constexpr float CROP_VERTICAL_ANCHORPOINT = 0.5f;						    // 树垂直锚点
-
+constexpr float WILTTIME = 96.0f;                                           //枯萎时间
+constexpr float FERTILIZER_GROWTH_RATE = 0.8f;                              //施肥加快比例
 //动物类设置
 constexpr float ANIMAL_RATIO = 1.0f;                                            //动物类的缩放比例
 constexpr float ANGRY_ICON_RATIO = 0.8f;                                        //动物发怒提示的缩放比例
+const cocos2d::Vec2 SHEEP_START_POSITION(416.0f, 832.0f); // 羊的位置
+const cocos2d::Vec2 CHICKEN_START_POSITION(480.0f, 816.0f); // 鸡的位置
+const cocos2d::Vec2 COW_START_POSITION(464.0f, 800.0f); // 牛的位置
+
+const cocos2d::Vec2 BIGEYE_POSITION(816.0f, 512.0f); // 金目鲷位置
+const cocos2d::Vec2 LARGEMOUTH_BASS_POSITION(720.0f, 512.0f); // 大口黑鲈位置
+const cocos2d::Vec2 SALMON_POSITION(880.0f, 512.0f); // 三文鱼位置
 
 //鱼类设置
 constexpr float FISH_RATIO = 1.0f;                                              // 鱼的缩放比例

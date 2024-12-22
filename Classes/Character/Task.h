@@ -1,7 +1,7 @@
 /****************************************************************
  * Project Name:  Stardew_Valley
  * File Name:     Task.h
- * File Function: NPC任务类的定义和实现
+ * File Function: NPC任务类的定义
  * Author:        达思睿
  * Update Date:   2024/12/18
  * License:       MIT License
@@ -58,7 +58,7 @@ public:
     }
 private:
     std::string _description;  // 任务描述
-    std::string _requiredItemName;       // 需要的物品名
+    std::string _requiredItemName; // 需要的物品名
     int _requiredItemCount;    // 需要的物品数量
     int _currentItemCount;     // 当前物品数量
     bool _isCompleted;         // 任务是否完成

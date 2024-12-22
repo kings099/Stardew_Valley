@@ -2,21 +2,17 @@
 /****************************************************************
  * Project Name:  Stardew_Valley
  * File Name:     NpcManager.cpp
- * File Function: 负责管理游戏中的 NPC 实例NpcManager类的实现
-                  包括 NPC 的初始化、查询、对话等功能。
+ * File Function: 负责管理游戏中的 NPC 实例的NpcManager类的实现。
  * Author:        达思睿
  * Update Date:   2024/12/13
  * License:       MIT License
  ****************************************************************/
 #include "NpcManager.h"
 
-// 初始化静态成员
-NpcManager* NpcManager::_instance = nullptr;
+
 
 // 构造函数
-NpcManager::NpcManager() {
-
-}
+NpcManager::NpcManager() {}
 
 // 析构函数
 NpcManager::~NpcManager() {
@@ -28,6 +24,7 @@ NpcManager::~NpcManager() {
 
 // 获取单例实例
 NpcManager* NpcManager::getInstance() {
+    static NpcManager* _instance = nullptr;  // 单例实例
     if (!_instance) {
         _instance = new NpcManager();  // 如果实例不存在，则创建
     }

@@ -96,7 +96,7 @@ bool FarmMap::onMouseEvent(cocos2d::Event* event)
         Vec2 mapPosition(mousePos.x + cameraOffset_x, mousePos.y + cameraOffset_y);
         Vec2 tiledPos = absoluteToTile(mapPosition);
         CCLOG("TILED POS: %f,%f", tiledPos.x, tiledPos.y);
-        int GID = getTileGIDAt("watering", tiledPos);
+        int GID = getTileGIDAt("path", tiledPos);
         CCLOG("click GID:%d", GID);
         Vec2 worldpos = tileToAbsolute(tiledPos);
         CCLOG("WORLD POS: %f,%f", worldpos.x, worldpos.y);
@@ -183,30 +183,32 @@ void FarmMap::plantTreesOnPathLayer() {
 void FarmMap::initializeAnimals() {
     CCLOG("Initializing animals...");
 
-    Vec2 startPosition_1(416, 832); //羊
-    Animal* sheep = Animal::create("sheep", startPosition_1);
+    
+    
+    // 创建羊
+    Animal* sheep = Animal::create("sheep", SHEEP_START_POSITION);
     if (sheep) {
-        _tile_map->addChild(sheep,10);
+        _tile_map->addChild(sheep, 10);
         CCLOG("Sheep added successfully!");
     }
     else {
         CCLOG("Error: Failed to create sheep!");
     }
 
-    Vec2 startPosition_2(480, 816); //鸡
-    Animal* chicken = Animal::create("chicken", startPosition_2);
+    // 创建鸡
+    Animal* chicken = Animal::create("chicken", CHICKEN_START_POSITION);
     if (chicken) {
-        _tile_map->addChild(chicken,10);
+        _tile_map->addChild(chicken, 10);
         CCLOG("Chicken added successfully!");
     }
     else {
         CCLOG("Error: Failed to create chicken!");
     }
 
-    Vec2 startPosition_3(464, 800); //牛
-    Animal* cow = Animal::create("cow", startPosition_3);
+    // 创建牛
+    Animal* cow = Animal::create("cow", COW_START_POSITION);
     if (cow) {
-        _tile_map->addChild(cow,10);
+        _tile_map->addChild(cow, 10);
         CCLOG("Cow added successfully!");
     }
     else {
@@ -216,9 +218,8 @@ void FarmMap::initializeAnimals() {
 
 void FarmMap::initializeFishes() {
     CCLOG("Initializing fishes...");
-
-    Vec2 Position_1(816, 512);
-    Fishs* Bigeye = Fishs::create("Bigeye", "spring", Position_1);
+    // 创建金目鲷
+    Fishs* Bigeye = Fishs::create("Bigeye", "spring", BIGEYE_POSITION);
     if (Bigeye) {
         _tile_map->addChild(Bigeye, 10);  // 设置 z-order 确保在前景中
         CCLOG("Fish 0 added successfully!");
@@ -227,8 +228,8 @@ void FarmMap::initializeFishes() {
         CCLOG("Error: Failed to create fish_0!");
     }
 
-    Vec2 Position_2(720, 512);
-    Fishs* LargemouthBass = Fishs::create("LargemouthBass", "spring", Position_2);
+    // 创建大口黑鲈
+    Fishs* LargemouthBass = Fishs::create("LargemouthBass", "spring", LARGEMOUTH_BASS_POSITION);
     if (LargemouthBass) {
         _tile_map->addChild(LargemouthBass, 10);
         CCLOG("Fish 1 added successfully!");
@@ -237,8 +238,8 @@ void FarmMap::initializeFishes() {
         CCLOG("Error: Failed to create fish_1!");
     }
 
-    Vec2 Position_3(880, 512);
-    Fishs* Salmon = Fishs::create("Salmon", "spring", Position_3);
+    // 创建三文鱼
+    Fishs* Salmon = Fishs::create("Salmon", "spring", SALMON_POSITION);
     if (Salmon) {
         _tile_map->addChild(Salmon, 10);
         CCLOG("Fish 2 added successfully!");
@@ -246,6 +247,7 @@ void FarmMap::initializeFishes() {
     else {
         CCLOG("Error: Failed to create fish_2!");
     }
+
 }
 
 // 获取某个位置的树木指针

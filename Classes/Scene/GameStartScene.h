@@ -1,13 +1,14 @@
 ﻿/****************************************************************
  * Project Name:  Stardew_Valley
- * File Name:     HelloScene.h
- * File Function: 游戏启动场景HelloScene的实现
+ * File Name:     GameStartScene.h
+ * File Function: 游戏启动场景类的实现
  * Author:        达思睿
  * Update Date:   2024/12/5
  * License:       MIT License
  ****************************************************************/
-#ifndef __HELLOWORLD_SCENE_H__
-#define __HELLOWORLD_SCENE_H__
+
+#ifndef __GAMESTART_SCENE_H__
+#define __GAMESTART_SCENE_H__
 
 #include "cocos2d.h"
 #include "SimpleAudioEngine.h"
@@ -18,15 +19,15 @@
 #include "Layer/AudioControlLayer.h"
 #include "MenuImage/HoverMenuItemImage.h"
 
-class HelloWorld : public cocos2d::Scene
+class GameStartScene : public cocos2d::Scene
 {
 public:
-    // 创建并返回 HelloWorld 场景
+    // 创建并返回 游戏启动场景
     static cocos2d::Scene* createScene();
 
-    // 初始化 HelloWorld 场景
+    // 初始化 游戏启动场景
     virtual bool init();
-  
+
     // 关闭游戏的回调函数
     void menuCloseCallback(cocos2d::Ref* pSender);
 
@@ -35,23 +36,21 @@ public:
 
     // 初始化背景
     void initBackground();
- 
+
     // 退出游戏的回调函数
     void exitGameCallback(Ref* pSender);
 
     // 开始游戏的回调函数
     void startGameCallback(Ref* pSender);
 
-
-    //创建HelloWorld 场景
-    CREATE_FUNC(HelloWorld);
+    //创建 游戏启动场景
+    CREATE_FUNC(GameStartScene);
 
 private:
     cocos2d::MenuItemImage* _startItem;  // "开始" 按钮
     cocos2d::MenuItemImage* _exitItem;   // "结束" 按钮
-    cocos2d::Sprite* _titleSprite;        // 标题图像
-    cocos2d::Layer* _loginLayer;
-    
+    cocos2d::Sprite* _titleSprite;       // 标题图像
+    cocos2d::Layer* _loginLayer;         // 登录界面
 };
 
-#endif // __HELLOWORLD_SCENE_H__
+#endif // __GAMESTART_SCENE_H__

@@ -1,8 +1,8 @@
 /****************************************************************
  * Project Name:  Stardew_Valley
  * File Name:     CharacterAction.cpp
- * File Function: CharacterActionÀàµÄÊµÏÖ
- * Author:        Òü³Ï³É
+ * File Function: CharacterActionç±»çš„å®ç°
+ * Author:        å°¹è¯šæˆ
  * Update Date:   2024/12/20
  * License:       MIT License
  ****************************************************************/
@@ -16,7 +16,7 @@
 
 USING_NS_CC;
 
-// ¹¹Ôìº¯Êı
+// æ„é€ å‡½æ•°
 CharacterAction::CharacterAction():
 	CharacterObjectList(),
 	CharacterMove()
@@ -32,7 +32,7 @@ CharacterAction::CharacterAction():
 	updateSkillLevel();
 }
 
- // °´ÏÂÊó±êÊÂ¼ş´¥·¢º¯Êı
+ // æŒ‰ä¸‹é¼ æ ‡äº‹ä»¶è§¦å‘å‡½æ•°
 bool CharacterAction::onMouseDown(cocos2d::Event* event, GameCharacterAction& gameCharacterAction, cocos2d::Vec2& targetTilePos, InteractionManager* interactionManager) {
 	const EventMouse* mouseEvent = dynamic_cast<EventMouse*>(event);
 	stopMove();
@@ -43,14 +43,12 @@ bool CharacterAction::onMouseDown(cocos2d::Event* event, GameCharacterAction& ga
 		else if (mouseEvent->getMouseButton() == EventMouse::MouseButton::BUTTON_RIGHT) {
 			gameCharacterAction = getRightButtonAction();
 		}
-<<<<<<< Updated upstream
-		_targetTileNode = getTileInfo(interactionManager, gameCharacterAction);
-=======
+
 		if (gameCharacterAction != NoneAction) {
 			_targetTileNode = getTileInfo(interactionManager, gameCharacterAction);
 		}
 		targetTilePos = _targetTileNode.tilePos;
->>>>>>> Stashed changes
+
 		if (checkActionIsValid(gameCharacterAction, targetTilePos, interactionManager)) {
 w			getObject(gameCharacterAction, interactionManager);
 			updateSkillExprience(gameCharacterAction);
@@ -65,7 +63,7 @@ w			getObject(gameCharacterAction, interactionManager);
 	return false;
 }
 
-// »ñµÃÎïÆ·
+// è·å¾—ç‰©å“
 void CharacterAction::getObject(GameCharacterAction action, InteractionManager* interactionManager) {
 	std::string fishName = Fishs::catchFish(TimeManager::getInstance()->getCurrentSeason(),_skillLevel[Fish]);
 	int probability = rand() % 100 + 1, extraObject = rand() % 100 + 1;
@@ -73,7 +71,7 @@ void CharacterAction::getObject(GameCharacterAction action, InteractionManager* 
 	switch (action) {
 		case NoneAction:
 			break;
-		// ¿ÉÒÔ»ñµÃÎïÆ·µÄ¶¯×÷
+		// å¯ä»¥è·å¾—ç‰©å“çš„åŠ¨ä½œ
 		case Weeding:
 			extraObjectProbability -= _skillLevel[Farm] * SKILL_GET_ITEM_PROBABILITY * 100;
 		case Cutting:
@@ -97,7 +95,7 @@ void CharacterAction::getObject(GameCharacterAction action, InteractionManager* 
 			}
 			break;
 		
-		// Ã»ÓĞÎïÆ·¸Ä±äµÄ¶¯×÷
+		// æ²¡æœ‰ç‰©å“æ”¹å˜çš„åŠ¨ä½œ
 		//case DestoryObject:
 			break;
 		default:
@@ -105,13 +103,13 @@ void CharacterAction::getObject(GameCharacterAction action, InteractionManager* 
 	}
 }
 
-// Ê¹ÓÃÎïÆ·
+// ä½¿ç”¨ç‰©å“
 void CharacterAction::useObject(GameCharacterAction action, InteractionManager* interactionManager) {
 	switch (action) {
-		// ĞèÒªÏûºÄÎïÆ·µÄ¶¯×÷
+		// éœ€è¦æ¶ˆè€—ç‰©å“çš„åŠ¨ä½œ
 	case Seeding:
 	case Placement:
-		if (getCurrentObject().objectNode.object->_name == "Box") {	//·ÅÖÃÏä×Ó
+		if (getCurrentObject().objectNode.object->_name == "Box") {	//æ”¾ç½®ç®±å­
 			Box::getInstance().addBox(BoxNode(_targetTileNode.WorldPos));
 		}
 		deleteObject(1, getCurrentObjectIndex());
@@ -119,25 +117,25 @@ void CharacterAction::useObject(GameCharacterAction action, InteractionManager* 
 	}
 }
 
-// »ñÈ¡¼¼ÄÜµÈ¼¶
+// è·å–æŠ€èƒ½ç­‰çº§
 int CharacterAction::getSkillLevel(GameObjectSkillType skillType) {
 	if (skillType < 0 || skillType >= SKILL_KIND_NUM)
 		return -1;
 	return _skillLevel[skillType];
 }
 
-// »ñÈ¡¼¼ÄÜµÈ¼¶
+// è·å–æŠ€èƒ½ç­‰çº§
 int CharacterAction::getMoney() {
 	return _money;
 }
 
-// ĞŞ¸Ä½ÇÉ«½ğÇ®
+// ä¿®æ”¹è§’è‰²é‡‘é’±
 void CharacterAction::setMoney(int money) {
 	_money += money;
 }
 
 
-// »ñÈ¡½ÇÉ«´òËãÖ´ĞĞµÄ¶¯×÷(Êó±ê×ó¼ü)
+// è·å–è§’è‰²æ‰“ç®—æ‰§è¡Œçš„åŠ¨ä½œ(é¼ æ ‡å·¦é”®)
 GameCharacterAction CharacterAction::getLeftButtonAction() {
 	ObjectListNode currentObject = getCurrentObject();
 	switch (currentObject.objectNode.type) {
@@ -162,7 +160,7 @@ GameCharacterAction CharacterAction::getLeftButtonAction() {
 	}
 }
 
-// »ñÈ¡½ÇÉ«´òËãÖ´ĞĞµÄ¶¯×÷(Êó±êÓÒ¼ü)
+// è·å–è§’è‰²æ‰“ç®—æ‰§è¡Œçš„åŠ¨ä½œ(é¼ æ ‡å³é”®)
 GameCharacterAction CharacterAction::getRightButtonAction() {
 	ObjectListNode currentObject = getCurrentObject();
 	if (_targetTileNode.type == TileConstants::TileType::Crop) {
@@ -193,12 +191,12 @@ GameCharacterAction CharacterAction::getRightButtonAction() {
 	}
 }
 
-// ÅĞ¶Ï½ÇÉ«ÊÇ·ñ¿ÉÒÔÖ´ĞĞ¶¯×÷
+// åˆ¤æ–­è§’è‰²æ˜¯å¦å¯ä»¥æ‰§è¡ŒåŠ¨ä½œ
 bool CharacterAction::checkActionIsValid(GameCharacterAction action, Vec2& targetTilePos, InteractionManager* interactionManager) {
 	if (action == NoneAction)
 		return false;
 
-	// ¼ì²é¶¯×÷ÊÇ·ñÓëÄ¿±êµØ¿éÀàĞÍÆ¥Åä
+	// æ£€æŸ¥åŠ¨ä½œæ˜¯å¦ä¸ç›®æ ‡åœ°å—ç±»å‹åŒ¹é…
 	for (auto& test : ACTION_TO_TILEMAP) {
 		if (action == test.first) {
 			for (auto& tileType : test.second) {
@@ -214,7 +212,7 @@ bool CharacterAction::checkActionIsValid(GameCharacterAction action, Vec2& targe
 	return false;
 }
 
-// »ñÈ¡½ÇÉ«¶¯×÷¶ÔÏóµÄÍßÆ¬ĞÅÏ¢
+// è·å–è§’è‰²åŠ¨ä½œå¯¹è±¡çš„ç“¦ç‰‡ä¿¡æ¯
 TileInfo CharacterAction::getTileInfo( InteractionManager* interactionManager, GameCharacterAction action) {
 	TileInfo targetTileNode;
 	switch (action) {
@@ -232,9 +230,9 @@ TileInfo CharacterAction::getTileInfo( InteractionManager* interactionManager, G
 	return targetTileNode;
 }
 
-// ¸üĞÂ¼¼ÄÜµÈ¼¶
+// æ›´æ–°æŠ€èƒ½ç­‰çº§
 void CharacterAction::updateSkillLevel() {
-	// ¸üĞÂ¼¼ÄÜµÈ¼¶
+	// æ›´æ–°æŠ€èƒ½ç­‰çº§
 	for (int i = 0; i < SKILL_KIND_NUM; i++) {
 		if (LEVEL1_TO_LEVEL2_EXPRIENCE<=_skillExprience[i] && _skillExprience[i]<=LEVEL2_TO_LEVEL3_EXPRIENCE) {
 			_skillLevel[i] = 2;
@@ -252,9 +250,9 @@ void CharacterAction::updateSkillLevel() {
 }
 
 
-// ¸üĞÂ¼¼ÄÜ¾­ÑéÖµ
+// æ›´æ–°æŠ€èƒ½ç»éªŒå€¼
 void CharacterAction::updateSkillExprience(GameCharacterAction gameCharacterAction) {
-	// ¸üĞÂ¼¼ÄÜ¾­ÑéÖµ
+	// æ›´æ–°æŠ€èƒ½ç»éªŒå€¼
 	switch (gameCharacterAction) {
 	case Plowing:
 	case Harvesting:
@@ -275,7 +273,7 @@ void CharacterAction::updateSkillExprience(GameCharacterAction gameCharacterActi
 	}
 }
 
-// ±£´æÊı¾İ
+// ä¿å­˜æ•°æ®
 bool CharacterAction::saveData(const std::string& fileName) {
 	std::ofstream outFile(fileName, std::ios::binary );
 	if (!outFile) {
@@ -295,7 +293,7 @@ bool CharacterAction::saveData(const std::string& fileName) {
 	return true;
 }
 
-// ¼ÓÔØÊı¾İ
+// åŠ è½½æ•°æ®
 bool CharacterAction::loadData(const std::string& fileName) {
 	if (!fileExists(fileName)) {
 		CCLOG("File does not exist %s", fileName.c_str());

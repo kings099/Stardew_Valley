@@ -172,11 +172,6 @@ const TileInfo InteractionManager::GetTileInfoAt(const Vec2& Tile_pos) {
             tileInfo.drops.clear(); // 清空默认的 "None" 项
             tileInfo.drops["Timber"] = { TileConstants::MUTI_DROP_QUANTITY, TileConstants::TREE_DROP_PROBABILITY }; // 掉落3个木材，概率为90%
         }
-        else if (pathProps.find("isCrop") != pathProps.end() && pathProps["isCrop"].asBool())
-        {
-            tileInfo.type = TileConstants::Crop;
-            HarvestInfo(Tile_pos, tileInfo);// 获取农作物的收割信息
-        }
     }
 
     // 判断water层
@@ -216,6 +211,13 @@ const TileInfo InteractionManager::GetTileInfoAt(const Vec2& Tile_pos) {
 
         if (ObjectProps.find("isBox") != ObjectProps.end() && ObjectProps["isBox"].asBool()) {
             tileInfo.type = TileConstants::Box;
+        }
+        // 是否作物
+        ValueMap pathProps = _gameMap->getTilePropertiesForGID(pathGID);
+        if (pathProps.find("isCrop") != pathProps.end() && pathProps["isCrop"].asBool())
+        {
+            tileInfo.type = TileConstants::Crop;
+            HarvestInfo(Tile_pos, tileInfo);// 获取农作物的收割信息
         }
 
     }
@@ -565,8 +567,40 @@ bool InteractionManager::HarvestAt(const Vec2& tilePos) {
                 _gameMap->replaceTileAt("path", tilePos, TileConstants::EMPTY_GID);
                 return true;
             }
+            if (cropSpriteData.hasPests) {
+                cropSprite->treatPests();
+                return true;
+            }
         }
     }
 
     return false;
 }
+
+// 处理害虫
+bool InteractionManager::TreatPestAt(const Vec2& tilePos) {
+    // 保证地图文件存在
+    if (!_gameMap) {
+        CCLOG("InteractionManager: _gameMap is null.");
+        return false;
+    }
+
+
+    // 使用多态调用 GameMap 的 getNodeAtPosition获取农作物指针
+    auto node = _gameMap->getNodeAtPosition(tilePos);
+    if (_gameMap->getType() == MapType::Farm)
+    {
+        auto cropSprite = dynamic_cast<Crops*>(node);
+        if (cropSprite != nullptr)
+        {
+            CropData cropSpriteData = cropSprite->getCropData();
+            if (cropSpriteData.hasPests) {
+                cropSprite->treatPests();
+                return true;
+            }
+        }
+    }
+
+    return false;
+}
+

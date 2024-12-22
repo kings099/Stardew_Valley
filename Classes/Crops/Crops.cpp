@@ -104,8 +104,8 @@ void Crops::initializeResourceMap() {
 std::unordered_map<std::string, std::unordered_map<Season, float>> Crops::_growthCycles = {
     {"cauliflower", {{Season::Spring, 50.0f}, {Season::Summer, 50.0f}, {Season::Fall, 60.0f}, {Season::Winter,72.0f}}},
     {"kale", {{Season::Spring, 30.0f}, {Season::Summer, 30.0f}, {Season::Fall, 40.0f}, {Season::Winter, 50.0f}}},
-    {"pumpkin", {{Season::Spring, 2.0f}, {Season::Summer, 50.0f}, {Season::Fall, 60.0f}, {Season::Winter, 72.0f}}},
-    {"oak", {{Season::Spring,2.0f}, {Season::Summer, 72.0f}, {Season::Fall, 96.0f}, {Season::Winter, 120.0f}}},
+    {"pumpkin", {{Season::Spring, 50.0f}, {Season::Summer, 50.0f}, {Season::Fall, 60.0f}, {Season::Winter, 72.0f}}},
+    {"oak", {{Season::Spring,50.0f}, {Season::Summer, 72.0f}, {Season::Fall, 96.0f}, {Season::Winter, 120.0f}}},
     {"maple", {{Season::Spring, 72.0f}, {Season::Summer, 72.0f}, {Season::Fall, 96.0f}, {Season::Winter, 120.0f}}},
     {"pine", {{Season::Spring, 72.0f}, {Season::Summer, 72.0f}, {Season::Fall, 96.0f}, {Season::Winter, 120.0f}}}
 
@@ -222,7 +222,7 @@ bool Crops::init(const std::string& type, int maxGrowthStage) {
     this->_daysWithoutWater = 0;
     this->_isFertilized = 0;
     this->_hasPests = false;    // 初始无病虫害
-    this->_pestProbability = 0.05f; // 感染概率 10%
+    this->_pestProbability = 0.05f; // 感染概率 5%
     // 初始化农作物的精灵
     _sprite = Sprite::create(_resourceMap[type][0]);
     if (_sprite == nullptr) {
@@ -307,7 +307,7 @@ void Crops::updateGrowth(float deltaTime) {
 
     // 如果施肥，加速生长
     if (_isFertilized) {
-        growthSpeed *= 0.8f; // 生长周期缩短 20%
+        growthSpeed *= FERTILIZER_GROWTH_RATE; // 生长周期缩短 20%
     }
 
     // 累积时间，进入下一个生长阶段
@@ -340,12 +340,39 @@ void Crops::updateGrowth(float deltaTime) {
     }
     if (_type != "oak" && _type != "maple" && _type != "pine") {
         Weather currentWeather = Weather::Dry;
+        currentWeather=timeManager->getCurrentWeather();
         this->manageDrought(currentWeather);
         checkPests(); // 每次更新时检查病虫害
         _isWatered = false; // 每次更新后重置浇水状态
     }
-}
 
+    // 检查枯萎时间
+    if (_daysWithoutWater > 0) {
+        _wiltTime += deltaTime;
+        if (_wiltTime >= WILTTIME) {  // 枯萎超过4天
+            removeCrop();
+            return;
+        }
+    }
+    else {
+        // 如果未枯萎，重置枯萎计时
+        _wiltTime = 0.0f;
+    }
+
+}
+void Crops::removeCrop() {
+    if (this->_isRemoved) {
+        CCLOG("Crop '%s' is already removed!", _type.c_str());
+        return;
+    }
+
+    CCLOG("Crop '%s' is removed due to prolonged wilting!", _type.c_str());
+    this->unschedule("crop_update");  // 停止更新
+    if (this->getParent()) {
+        this->removeFromParent();
+    }
+    this->_isRemoved = true;
+}
 //更新当前的季节
 void Crops::setSeason(Season season) {
     if (_currentSeason != season) { // 避免重复触发
@@ -519,17 +546,7 @@ void Crops::harvestCrop() {
     //}
 
     if (isReadyToHarvest()) {
-        CCLOG("Crop '%s' harvested successfully!", _type.c_str());
-        this->unschedule("crop_update");
-        // 安全移除父节点
-        if (this->getParent()) {
-            this->removeFromParent();
-            _isRemoved = true;
-            /*if (this != nullptr) {
-                CCLOG("Crop EXIT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!", type.c_str());
-            }*/
-
-        }
+        removeCrop();
     }
     else {
         CCLOG("Crop '%s' is not ready for harvest!", _type.c_str());

@@ -135,6 +135,10 @@ bool CharacterObjectList::pickUpObject(GameCommonObject targetObject, int object
 	const int index = findObjectByObjectList(targetObject);
 	bool success = true;
 
+	if (targetObject.object->_name == "None") {
+		return false;
+	}
+
 	// 如果没有相同物品，且物品栏已满，则返回false
 	if (index == -1 && checkObjectListFull()) {
 		success =  false;

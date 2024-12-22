@@ -2,11 +2,11 @@
 
 USING_NS_CC;
 
-// 初始化单例指针
-TimeManager* TimeManager::instance = nullptr;
+
 
 // 获取 TimeManager 的单例
 TimeManager* TimeManager::getInstance() {
+    static TimeManager* instance=nullptr;  // 单例指针
     if (instance == nullptr) {
         instance = new TimeManager();
     }
@@ -31,16 +31,15 @@ void TimeManager::update(int deltaT) {
     _timeInSeconds += deltaT;
 
     // 防止 `timeInSeconds` 超过最大范围，使用模运算循环计时
-    _timeInSeconds %= (HOURS_IN_A_DAY * DAYS_IN_A_YEAR); // 限制为一年内的总秒数
+    _timeInSeconds %= (HOURS_IN_A_DAY * DAYS_IN_A_YEAR); 
 
     updateTime();
     updateDayNightCycle();
     updateSeason();
 }
 
-// 获取当前星期几（如：星期一、星期二）
+// 获取当前星期几
 std::string TimeManager::getWeekDay() const {
-    // 返回当前星期几
     std::string weekDays[] = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
     return weekDays[(_day - 1) % DAYS_IN_A_WEEK];  // 将天数转化为星期几
 }
