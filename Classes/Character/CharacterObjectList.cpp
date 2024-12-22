@@ -115,6 +115,7 @@ bool CharacterObjectList::pickUpObject(GameToolObject targetObject, int objectCo
 
 // 捡起物品
 bool CharacterObjectList::pickUpObject(GameSeedObject targetObject, int objectCount, int targetIndex) {
+	if(targetObject._level > )
 	std::shared_ptr<GameObject> targetObjectPtr = std::make_shared<GameSeedObject>(targetObject);
 	GameCommonObject commonObject(GameObjectMapType::Seed, targetObjectPtr);
 	return pickUpObject(commonObject, objectCount, targetIndex);
