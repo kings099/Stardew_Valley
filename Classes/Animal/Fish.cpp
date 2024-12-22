@@ -184,7 +184,7 @@ Vector<SpriteFrame*> Fishs::loadFrames(const std::vector<std::string>& framePath
 }
 
 //钓鱼函数，返回当前钓的鱼的类型
-std::string Fishs::catchFish(const Season season) {
+std::string Fishs::catchFish(const Season season,int playerLevel) {
     static bool seeded = false;
     if (!seeded) {
         srand(static_cast<unsigned int>(time(0)));
@@ -205,18 +205,33 @@ std::string Fishs::catchFish(const Season season) {
     //for (const auto& fish : fishList) {
     //    CCLOG(" - %s", fish.c_str());
     //}
+    
+    // 创建一个候选的鱼类列表，筛选出玩家等级符合要求的鱼类
+    std::vector<std::string> eligibleFishList;
+    for (const auto& fishName : fishList) {
+        int fishUnlockLevel = getUnlockLevel(fishName);  // 获取鱼类的解锁等级
+        if (fishUnlockLevel <= playerLevel) {
+            eligibleFishList.push_back(fishName);  // 玩家等级满足，加入候选列表
+        }
+    }
+    // 如果没有符合条件的鱼类
+    if (eligibleFishList.empty()) {
+        CCLOG("Player level %d is not high enough to catch any fish in this season.", playerLevel);
+        return "";
+    }
+
+   
     // 小概率不返回鱼
     if (rand() % 100 < FAIL_TO_GET_FISH) {  // 10%的概率不返回鱼
         CCLOG("No fish caught in this season.");
         return "";
     }
 
-    // 随机选择一种鱼
-    int randomIndex = rand()%fishList.size();
-
-    std::string fishName = fishList[randomIndex];
+    // 随机选择一个符合条件的鱼
+    int randomIndex = rand() % eligibleFishList.size();
+    std::string fishName_end = eligibleFishList[randomIndex];
 
     //// 创建并返回一个新的鱼对象
     //Fish* fish = Fish::create(fishName, season, Vec2(rand() % 100, rand() % 100));
-    return fishName;
+    return fishName_end;
 }
