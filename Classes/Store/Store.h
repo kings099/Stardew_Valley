@@ -29,13 +29,7 @@ public:
 	bool buyProduct(int index);
 
 	// 出售商品
-	bool sellProduct(const GameSeedObject targetObject,int objectCount);
-
-	// 出售商品
-	bool sellProduct(const GameBaseObject targetObject, int objectCount);
-
-	// 出售商品
-	bool sellProduct(const GameCommonObject targetObject, int totalPrice);
+	bool sellProduct(const GameCommonObject targetObject, int objectCount);
 
 	// 查找指定位置的商品信息
 	ProductNode findObjectAtPosition(int index);
@@ -56,7 +50,7 @@ private:
 	// 判断物品是否是种子的收获物
 	bool canHarvestFromAnySeed(const GameBaseObject& baseObject, GameSeedObject& seedObject);
 
-	// 根据季节更新价格
+	// 更新价格
 	void updatePrices();
 
 	// TODO：根据好感度更新价格

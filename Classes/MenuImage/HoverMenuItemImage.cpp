@@ -11,11 +11,12 @@
 #include"../proj.win32/Constant.h"
 
  // 构造函数
-HoverMenuItemImage *HoverMenuItemImage::create(const std::string& normalImage, const std::string& selectedImage, const std::function<void(Ref*)>& callback) {
+HoverMenuItemImage *HoverMenuItemImage::create(const std::string& normalImage, const std::string& selectedImage,const std::function<void(Ref*)>& callback,  float scale) {
     HoverMenuItemImage* item = new HoverMenuItemImage();
+   
     if (item && item->initWithNormalImage(normalImage, selectedImage, "", callback)) {
         item->autorelease();
-        item->init();
+        item->init(scale);
         return item;
     }
     CC_SAFE_DELETE(item);
@@ -23,8 +24,10 @@ HoverMenuItemImage *HoverMenuItemImage::create(const std::string& normalImage, c
 }
 
 // 初始化
- bool HoverMenuItemImage::init()  {
+ bool HoverMenuItemImage::init(float scale)  {
     // 注册鼠标事件
+     _scale = scale;
+     this->setScale(_scale);
     auto listener = EventListenerMouse::create();
     listener->onMouseMove = CC_CALLBACK_1(HoverMenuItemImage::onMouseMove, this);
     listener->onMouseDown = CC_CALLBACK_1(HoverMenuItemImage::onMouseUp, this);
@@ -37,10 +40,10 @@ HoverMenuItemImage *HoverMenuItemImage::create(const std::string& normalImage, c
      // 检查鼠标位置是否在按钮范围内
      Vec2 location = Vec2(event->getCursorX(), event->getCursorY());
      if (this->getBoundingBox().containsPoint(location)) {
-         scaleAnimation(ENLARGEMENT_RATIO);  // 鼠标悬停时放大
+         scaleAnimation(ENLARGEMENT_RATIO* _scale);  // 鼠标悬停时放大
      }
      else {
-         scaleAnimation(1.0f);  // 鼠标离开时还原
+         scaleAnimation(_scale);  // 鼠标离开时还原
      }
  }
 

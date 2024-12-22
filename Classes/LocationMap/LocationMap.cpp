@@ -33,6 +33,13 @@ const std::map<int, cocos2d::Vec2>& LocationMap::getSkillLevelLocationMap() cons
 const std::map<int, cocos2d::Vec2>& LocationMap::getStoreLocationMap() const {
     return _storeLocationMap;
 }
+
+// 获取位置属性与屏幕坐标键值对(合成表)
+const std::map<int, cocos2d::Vec2>& LocationMap::getSysthesisTableLocationMap() const {
+    return _systhesisTableLocationMap;
+}
+
+
 // 构造函数
 LocationMap::LocationMap()
 {
@@ -64,5 +71,12 @@ LocationMap::LocationMap()
     // 初始化位置属性与屏幕坐标键值对(商店)
     for (int i = 0; i < PRODUCE_KIND_NUM_EACH_DAY; i++) {
         _storeLocationMap[i] = cocos2d::Vec2(OBJECT_STORE_IMAGE_START_X, OBJECT_STORE_IMAGE_START_Y - i * OBJECT_LIST_NODE_VERTICAL_INTERVAL);
+    }
+
+    // 初始化位置属性与屏幕坐标键值对(合成表)
+    for (int i = 0; i < SYNTHESIS_TABLE_ROWS; i++) {
+        for (int j = 0; j < SYNTHESIS_TABLE_COLS; j++) {
+            _systhesisTableLocationMap[i * SYNTHESIS_TABLE_COLS + j] = cocos2d::Vec2(SYNTHESIS_TABLE_START_X + j * OBJECT_LIST_NODE_HORIZONTAL_INTERVAL, SYNTHESIS_TABLE_START_Y - i * OBJECT_LIST_NODE_VERTICAL_INTERVAL);
+        }
     }
 }

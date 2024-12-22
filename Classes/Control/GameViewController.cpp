@@ -12,7 +12,7 @@
 USING_NS_CC;
 
 GameViewController::GameViewController()
-    : _character(nullptr), _map(nullptr) {}
+    : _character(nullptr), _map(nullptr){}
 
 GameViewController* GameViewController::create(Character* character, GameMap* gamemap) {
     GameViewController* ret = new (std::nothrow) GameViewController();
@@ -47,28 +47,34 @@ void GameViewController::update(float deltaTime) {
     // 获取角色的位置
     Vec2 characterPosition = _character->updatePosition(deltaTime);
 
+    // 地图位置
     Vec2 mapPosition = _map->getPosition();
+
+    // 地图大小
     Size mapSize = _map->getMapSize();
+
 
     // 获取摄像机
     auto camera = Director::getInstance()->getRunningScene()->getDefaultCamera();
-    // 获取当前缩放比例
+
+    // 获取当前地图缩放比例
     float scale = _map->getScale();
 
 
     // 获取屏幕可视区域大小
     auto visibleSize = Director::getInstance()->getVisibleSize();
 
-    CCLOG("map position:%f,%f", mapPosition.x, mapPosition.y);
-
     // 计算摄像机应该的位置：确保角色始终处于屏幕中央且限制摄像机位置确保不超出地图的边界
     Vec2 targetCameraPosition;
 
+    // 地图小于屏幕大小
     if (mapSize.width * scale < visibleSize.width && mapSize.height * scale < visibleSize.height) {
         targetCameraPosition = characterPosition;
     }
     else {
+        // 目标位置是角色位置
         float idealX = characterPosition.x;
+        // 边界位置判断
         targetCameraPosition.x = clamp(
             idealX,
             mapPosition.x + visibleSize.width / 2.0f,
@@ -76,26 +82,27 @@ void GameViewController::update(float deltaTime) {
         );
 
         float idealY = characterPosition.y;
+        // 边界位置判断
         targetCameraPosition.y = clamp(
             idealY,
             mapPosition.y + visibleSize.height / 2.0f,
             mapPosition.y + mapSize.height * scale - visibleSize.height / 2.0f
         );
     }
-    //targetCameraPosition = characterPosition;
+
     Vec2 currentCameraPosition = camera->getPosition();
     // 以较慢的速度平滑过渡摄像机位置
     float lerpSpeed = 0.1f; // 调整此值以改变过渡的平滑度
     Vec2 newCameraPosition = currentCameraPosition.lerp(targetCameraPosition, lerpSpeed);
     camera->setPosition(newCameraPosition);
 
-
-
 }
 
 void GameViewController::setMap(GameMap* newMap) {
     if (newMap != nullptr) {
+        //设置新地图
         _map = newMap;
+
         CCLOG("GameViewController updated to new map: %p", _map);
     }
 }
@@ -105,4 +112,5 @@ float GameViewController::clamp(float value, float minVal, float maxVal)
 {
     return std::max(std::min(value, maxVal), minVal);
 }
+
 

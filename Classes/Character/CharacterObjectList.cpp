@@ -21,8 +21,14 @@ CharacterObjectList::CharacterObjectList() :
 	_openObjectList(false),
 	_openBox(false),
 	_openShop(false),
-	_pickUpCallback(nullptr)
+	_openSynthesisTable(false),
+	_isEKeyEnabled(true),
+	_isRKeyEnabled(true),
+	_isTKeyEnabled(true),
+	_isYKeyEnabled(true),
+	_callback(nullptr)
 {
+
 	if (!loadData("../GameData/CharacterObjectListData.dat")) {
 		// 初始化物品栏
 		_objectList.resize(_maxObjectKindCount, { ObjectListNode{ {None,nullptr}, 0 ,Unselected } });
@@ -34,17 +40,12 @@ CharacterObjectList::CharacterObjectList() :
 		pickUpObject("scythe", 1);
 		pickUpObject("Timber", 5);
 	}
-	pickUpObject("CopperParticle", 11);
-	synthesisObject("Copper");
-	synthesisObject("Copper");
-	synthesisObject("Iron");
+	pickUpObject("Timber", 5);
 }
 
 // 按下键盘时的处理
 void CharacterObjectList::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* event) {
-	static bool isEKeyEnabled = true;
-	static bool isRKeyEnabled = true;
-	static bool isTKeyEnabled = true;
+
 	// 按下数字键,-和=键时切换物品栏
 	if (!_openObjectList) {
 		if (keyCode >= EventKeyboard::KeyCode::KEY_1 && keyCode <= EventKeyboard::KeyCode::KEY_9) {
@@ -65,28 +66,44 @@ void CharacterObjectList::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* ev
 		}
 	}
 	// 按下E键打开/关闭物品栏
-	if (keyCode == EventKeyboard::KeyCode::KEY_E && isEKeyEnabled) {
+	if (keyCode == EventKeyboard::KeyCode::KEY_E && _isEKeyEnabled) {
 		_openObjectList = !_openObjectList;
 		_openBox = false;
 		_openShop = false;
-		isRKeyEnabled = !isRKeyEnabled;
-		isTKeyEnabled = !isTKeyEnabled;
+		_openSynthesisTable = false;
+		_isRKeyEnabled = !_isRKeyEnabled;
+		_isTKeyEnabled = !_isTKeyEnabled;
+		_isYKeyEnabled = !_isYKeyEnabled;
 	}
 	// 按下R键打开物品栏和箱子
-	if (keyCode == EventKeyboard::KeyCode::KEY_R && isRKeyEnabled) {
+	if (keyCode == EventKeyboard::KeyCode::KEY_R && _isRKeyEnabled) {
 		_openObjectList = !_openObjectList;
 		_openBox = !_openBox;
 		_openShop = false;
-		isEKeyEnabled = !isEKeyEnabled;
-		isTKeyEnabled = !isTKeyEnabled;
+		_openSynthesisTable = false;
+		_isEKeyEnabled = !_isEKeyEnabled;
+		_isTKeyEnabled = !_isTKeyEnabled;
+		_isYKeyEnabled = !_isYKeyEnabled;
 	}
 	// 按下T建打开物品栏和商店
-	if (keyCode == EventKeyboard::KeyCode::KEY_T && isTKeyEnabled) {
+	if (keyCode == EventKeyboard::KeyCode::KEY_T && _isTKeyEnabled) {
 		_openObjectList = !_openObjectList;
 		_openBox = false;
 		_openShop = !_openShop;
-		isEKeyEnabled = !isEKeyEnabled;
-		isRKeyEnabled = !isRKeyEnabled;
+		_openSynthesisTable = false;
+		_isEKeyEnabled = !_isEKeyEnabled;
+		_isRKeyEnabled = !_isRKeyEnabled;
+		_isYKeyEnabled = !_isYKeyEnabled;
+	}
+	// 按下Y键打开合成表
+	if (keyCode == EventKeyboard::KeyCode::KEY_Y && _isYKeyEnabled) {
+		_openObjectList = !_openObjectList;
+		_openBox = false;
+		_openShop = false;
+		_openSynthesisTable = !_openSynthesisTable;
+		_isEKeyEnabled = !_isEKeyEnabled;
+		_isRKeyEnabled = !_isRKeyEnabled;
+		_isTKeyEnabled = !_isTKeyEnabled;
 	}
 }
 
@@ -124,7 +141,7 @@ bool CharacterObjectList::pickUpObject(GameCommonObject targetObject, int object
 	}
 
 	// 如果有相同物品且物品栏该物品不是工具，则增加物品数量
-	if (index != -1 && (targetObject.type == Base)) {
+	if (index != -1 && (targetObject.type != Tool)) {
 		_objectList[index].count += objectCount;
 	}
 	else {
@@ -147,8 +164,8 @@ bool CharacterObjectList::pickUpObject(GameCommonObject targetObject, int object
 
 		}
 	}
-	if (_pickUpCallback) {
-		_pickUpCallback(success); 
+	if (_callback) {
+		_callback(success);
 	}
 	return success;
 }
@@ -161,12 +178,13 @@ bool CharacterObjectList::pickUpObject(const std::string& targetObjectName, int 
 // 丢弃当前选中的物品
 ObjectListNode CharacterObjectList::deleteCurrentObject() {
 	ObjectListNode tempObject = getCurrentObject();
-	_objectList[_currentObjectIndex] = { {None,nullptr},0,Selected };
+	int index = getCurrentObjectIndex();
+	deleteObject(tempObject.count, index);
 	return tempObject;
 }
 
 // 合成物品
-bool CharacterObjectList::synthesisObject(GameBaseObject targetObject) {
+bool CharacterObjectList::synthesizeObject(GameBaseObject targetObject) {
 	if (!targetObject._synthesis) {
 		return false;
 	}
@@ -181,15 +199,15 @@ bool CharacterObjectList::synthesisObject(GameBaseObject targetObject) {
 
 	//合成物品
 	for (const auto& ingredient : targetObject._ingredients) {
-		int ingredientIndex = findObjectByObjectList(ingredient.first);
-		_objectList[ingredientIndex].count -= ingredient.second;
+		const int ingredientIndex = findObjectByObjectList(ingredient.first);
+		deleteObject(ingredient.second, ingredientIndex);
 	}
 	pickUpObject(targetObject, 1);
 	return true;
 }
 
 // 合成物品
-bool CharacterObjectList::synthesisObject(const std::string& targetObjectName) {
+bool CharacterObjectList::synthesizeObject(const std::string& targetObjectName) {
 	 GameCommonObject targetObject = findObjectByName(targetObjectName);
 	 if (targetObject.type != Base ) {
 		 return false;
@@ -208,7 +226,7 @@ bool CharacterObjectList::synthesisObject(const std::string& targetObjectName) {
 	 //合成物品
 	 for (const auto& ingredient : targetBaseObject->_ingredients) {
 		 int ingredientIndex = findObjectByObjectList(ingredient.first);
-		 _objectList[ingredientIndex].count -= ingredient.second;
+		 deleteObject(ingredient.second, ingredientIndex);
 	 }
 	 pickUpObject(targetObject, 1);
 	 return true;
@@ -249,6 +267,11 @@ bool CharacterObjectList::getStoreStatus() {
 	return _openShop;
 }
 
+// 获取合成表是否打开
+bool CharacterObjectList::getSynthesisTableStatus() {
+	return _openSynthesisTable;
+}
+
 // 查找指定位置的物品信息
 ObjectListNode CharacterObjectList::findObjectAtPosition(int index) {
 	if (index < 0 || index >= _maxObjectKindCount) {
@@ -270,6 +293,32 @@ void CharacterObjectList::setCurrentObject(int index) {
 	_currentObjectIndex = index;
 }
 
+// 重置按键启用
+void CharacterObjectList::resetKeyEnabled() {
+	_openObjectList = false;
+	_openBox = false;
+	_openShop = false;
+	_openSynthesisTable = false;
+	_isEKeyEnabled = true;
+	_isRKeyEnabled = true;
+	_isTKeyEnabled = true;
+	_isYKeyEnabled = true;
+}
+
+// 查找物品栏中是否有指定物品
+int CharacterObjectList::findObjectByObjectList(GameCommonObject targetObject) {
+	int index = -1;
+	for (int i = 0; i < _maxObjectKindCount; i++) {
+		// 只有物品不是工具才会被查找
+		if (_objectList[i].count!=0&& _objectList[i].objectNode.object->_name == targetObject.object->_name && (targetObject.type != Tool)) {
+			index = i;
+			break;
+		}
+	}
+	// 没有找到
+	return index;
+}
+
 // 丢弃指定数量的物品
 void CharacterObjectList::deleteObject(int objectCount, int targetIndex) {
 
@@ -281,6 +330,9 @@ void CharacterObjectList::deleteObject(int objectCount, int targetIndex) {
 		else {
 			_objectList[index].count -= objectCount;
 		}
+		if (_objectList[index].count == 0) {
+			_objectList[index] = { {None,nullptr},0,Unselected };
+		}
 	}
 	else {
 		if (_objectList[targetIndex].count < objectCount) {
@@ -289,27 +341,11 @@ void CharacterObjectList::deleteObject(int objectCount, int targetIndex) {
 		else {
 			_objectList[targetIndex].count -= objectCount;
 		}
-	}
-}
-
-// 设置物品栏状态
-void CharacterObjectList::setObjectListStatus(bool status) {
-	_openObjectList = static_cast<bool>(status);
-}
-
-
-// 查找物品栏中是否有指定物品
-int CharacterObjectList::findObjectByObjectList(GameCommonObject targetObject) {
-	int index = -1;
-	for (int i = 0; i < _maxObjectKindCount; i++) {
-		// 只有物品不是工具才会被查找
-		if (_objectList[i].count!=0&& _objectList[i].objectNode.object->_index == targetObject.object->_index && (targetObject.type == Base)) {
-			index = i;
-			break;
+		if (_objectList[targetIndex].count == 0) {
+			_objectList[targetIndex] = { {None,nullptr},0,Unselected };
 		}
 	}
-	// 没有找到
-	return index;
+
 }
 
 // 查找物品栏中是否有指定物品
@@ -387,10 +423,6 @@ bool CharacterObjectList::checkObjectListEmpty() {
 	return isEmpty;
 }
 
-// 回调函数
-void CharacterObjectList::setPickUpCallback(std::function<void(bool)> callback) {
-	_pickUpCallback = callback;
-}
 
 // 保存数据
 bool CharacterObjectList::saveData(const std::string& fileName) {

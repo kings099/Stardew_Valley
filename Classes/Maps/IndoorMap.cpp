@@ -46,4 +46,12 @@ bool IndoorMap::init(const std::string& mapFile, const Vec2& mapPosition)
     return true;
 }
 
+// 获取室内地图特定节点
+Node* IndoorMap::getNodeAtPosition(const Vec2& tilePos) {
+    // 根据室内地图节点添加内容（目前暂无）
+
+    return nullptr;
+}
+
+
 

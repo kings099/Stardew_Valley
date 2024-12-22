@@ -143,7 +143,7 @@ const TileInfo InteractionManager::GetTileInfoAt(const Vec2& Tile_pos) {
         if (pathProps.find("isGrass") != pathProps.end() && pathProps["isGrass"].asBool()) {
             tileInfo.type = TileConstants::Grass; // 这个位置如果用草会报错 初步怀疑是编码的问题
             tileInfo.drops.clear(); // 清空默认的 "None" 项
-            // 这个位置如果用草会报错 初步怀疑是编码的问题
+
             tileInfo.drops["Grass"] = { TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::GRASS_DROP_PROBABILITY }; // 掉落1个草，概率为50%
         }
         else if (pathProps.find("isStone") != pathProps.end() && pathProps["isStone"].asBool()) {
@@ -160,7 +160,7 @@ const TileInfo InteractionManager::GetTileInfoAt(const Vec2& Tile_pos) {
             tileInfo.drops["Timber"] = {TileConstants::DEFAULT_DROP_QUANTITY, TileConstants::BRANCH_DROP_PROBABILITY}; // 掉落1个木材，概率为30%
         }
         // 对应树枝
-        else if (pathProps.find("isBranch") != pathProps.end() && pathProps["isWood"].asBool())
+        else if (pathProps.find("isBranch") != pathProps.end() && pathProps["isBranch"].asBool())
         {
             tileInfo.type = TileConstants::Branch;
             tileInfo.drops.clear(); // 清空默认的 "None" 项
@@ -171,6 +171,11 @@ const TileInfo InteractionManager::GetTileInfoAt(const Vec2& Tile_pos) {
             tileInfo.type = TileConstants::Tree;
             tileInfo.drops.clear(); // 清空默认的 "None" 项
             tileInfo.drops["Timber"] = { TileConstants::MUTI_DROP_QUANTITY, TileConstants::TREE_DROP_PROBABILITY }; // 掉落3个木材，概率为90%
+        }
+        else if (pathProps.find("isCrop") != pathProps.end() && pathProps["isCrop"].asBool())
+        {
+            tileInfo.type = TileConstants::Crop;
+            // 暂时无法写掉落，需要农作物类提供接口
         }
     }
 
@@ -203,8 +208,17 @@ const TileInfo InteractionManager::GetTileInfoAt(const Vec2& Tile_pos) {
         if (FarmGID == TileConstants::DRY_FARM_TILE_GID) {
             tileInfo.type = TileConstants::Soiled;
         }
-    }
 
+        // 判断物品层
+        int ObjectGID = _gameMap->getTileGIDAt("Object", Tile_pos);
+
+        ValueMap ObjectProps = _gameMap->getTilePropertiesForGID(ObjectGID);
+
+        if (ObjectProps.find("isBox") != ObjectProps.end() && ObjectProps["isBox"].asBool()) {
+            tileInfo.type = TileConstants::Box;
+        }
+
+    }
     return tileInfo;
 }
 
@@ -248,23 +262,33 @@ void InteractionManager::ActionAnimation(GameCharacterAction action, const Vec2&
         _gameMap->replaceTileAt("farm", TilePos, TileConstants::DRY_FARM_TILE_GID);
         break;
     case Watering:
-        _gameMap->replaceTileAt("farm", TilePos, TileConstants::DRY_FARM_TILE_GID);
+        _gameMap->replaceTileAt("watering", TilePos, TileConstants::WET_FARM_TILE_GID,false);
+        WateringAt(TilePos);
         break;
     case Weeding:
         _gameMap->replaceTileAt("path", TilePos, TileConstants::EMPTY_GID);
         AnimationHelper::playWeedingAnimation(_gameMap->tileToRelative(TilePos), _gameMap->getTiledMap());
         break;
     case Mining:
-        _gameMap->replaceTileAt("path", TilePos, TileConstants::EMPTY_GID);
-        AnimationHelper::playStoneBreakingAnimation(_gameMap->tileToRelative(TilePos), _gameMap->getTiledMap());      
+        MiningAt(TilePos);
         break;
     case Cutting:
-        _gameMap->replaceTileAt("path", TilePos, TileConstants::WOOD_GID); // 将类型改为树桩
-        getTreeAndChopAt(TilePos);
+        ChopTree(TilePos);
         break;
     case Placement:
-        // TODO : 放置
+    case Seeding:
+        placeObjectAtTile(TilePos);
         break;
+    case Fertilize:
+        _gameMap->replaceTileAt("watering", TilePos, TileConstants::FIRT_FARM_TILE_GID, false);
+        FertilizeAt(TilePos);
+        break;
+    case DestoryObject:
+        // 可添加对应物品损坏的动画
+        _gameMap->replaceTileAt("Object", TilePos, TileConstants::EMPTY_GID);
+        break;
+
+
     }
     // 输出掉落物的调试信息
     for (const auto& dropPair : actionTileInfo.drops) {
@@ -310,19 +334,178 @@ void InteractionManager::getTreeAndChopAt(const Vec2& tilePos) {
         return;
     }
 
-    // 使用多态调用 GameMap 的 getTreeAtPosition
-    auto treeSprite = _gameMap->getTreeAtPosition(tilePos);
-    if (treeSprite) {
-        CCLOG("Tree found at (%f, %f). Chopping tree...", tilePos.x, tilePos.y);
-        treeSprite->chopTree();
-    }
-    else {
-        CCLOG("No tree found at tile position: (%f, %f)", tilePos.x, tilePos.y);
+    // 使用多态调用 GameMap 的 getNodeAtPosition
+    auto node = _gameMap->getNodeAtPosition(tilePos);
+    // 转换为crop类型
+    if(_gameMap->getType()==MapType::Farm)
+    {
+        auto treeSprite = dynamic_cast<Crops*>(node);
+        treeSprite->waterCrop();
+        if (treeSprite) {
+            CCLOG("Tree found at (%f, %f). Chopping tree...", tilePos.x, tilePos.y);
+            treeSprite->chopTree();
+        }
+        else {
+            CCLOG("No tree found at tile position: (%f, %f)", tilePos.x, tilePos.y);
+        }
     }
 }
 
-// 放置物品函数，待完善
+// 放置物品函数
 bool InteractionManager::placeObjectAtTile(const Vec2& tilePos) {
-    
+    const std::string currentObjectName = _currentObject.objectNode.object->_name;
+    GameObjectMapType currentObjectType = _currentObject.objectNode.type;
+
+    // 当前物品为种子
+    if (currentObjectType == Seed) {
+
+        // 检查当前地图是否为农场
+        if (_gameMap->getType() == MapType::Farm) {
+            FarmMap* farmMap = dynamic_cast<FarmMap*>(_gameMap);
+            // 地图错误
+            if(!farmMap) {
+                CCLOG("Error: Failed to cast GameMap to FarmMap.");
+                return false;
+            }
+
+            // 判断种子是否可以种植
+            if (GAME_SEED_TO_CROP_MAP.find(currentObjectName) != GAME_SEED_TO_CROP_MAP.end()) {
+                std::string cropName = GAME_SEED_TO_CROP_MAP.at(currentObjectName);
+
+                // 判断目标瓦片是否为耕地
+                TileInfo tileInfo = GetTileInfoAt(tilePos);
+
+                _gameMap->replaceTileAt("path", tilePos, TileConstants::CROP_INVISIBLE_GID);
+                farmMap->plantCrops(tilePos, cropName, _characterFarmLevel);
+
+                CCLOG("Planted crop '%s' at tile (%f, %f)", cropName.c_str(), tilePos.x, tilePos.y);
+                return true;
+            }
+            else {
+                CCLOG("Error: Seed '%s' does not map to any crop.", currentObjectName.c_str());
+                return false;
+            }
+        }
+        else {
+            CCLOG("Error: Seeds can only be planted on FarmMap.");
+            return false;
+        }
+    }
+    else // 其他放置物品
+    {
+        // 在对应映射表寻找放置物品的GID，替换对应图块
+        auto it = TileConstants::objectGIDMap.find(currentObjectName);
+        if (it != TileConstants::objectGIDMap.end()) {
+            int targetGID = it->second;
+            _gameMap->replaceTileAt("Object", tilePos, targetGID);
+            CCLOG("Placed other object '%s' at (%f, %f) with GID=%d.", currentObjectName.c_str(), tilePos.x, tilePos.y, targetGID);
+            return true;
+        }
+        else {
+            CCLOG("Unknown object '%s' cannot be placed.", currentObjectName.c_str());
+            return false;
+        }
+    }
     return false;
+}
+
+// 浇水效果
+bool InteractionManager::WateringAt(const Vec2& tilePos) {
+    if (!_gameMap) {
+        CCLOG("InteractionManager: _gameMap is null.");
+        return false;
+    }
+
+    // 使用多态调用 GameMap 的 getTreeAtPosition获取农作物指针
+    auto node = _gameMap->getNodeAtPosition(tilePos);
+    if(_gameMap->getType() == MapType::Farm)
+    {
+        auto cropSprite = dynamic_cast<Crops*>(node);
+        if (cropSprite!=nullptr)
+        {
+            cropSprite->waterCrop();
+            return true;
+        }
+    }
+    return false;
+}
+
+// 施肥效果
+bool InteractionManager::FertilizeAt(const Vec2& tilePos) {
+    if (!_gameMap) {
+        CCLOG("InteractionManager: _gameMap is null.");
+        return false;
+    }
+
+    // 使用多态调用 GameMap 的 getTreeAtPosition获取农作物指针
+    auto node = _gameMap->getNodeAtPosition(tilePos);
+    if(_gameMap->getType() == MapType::Farm)
+    {
+        auto cropSprite = dynamic_cast<Crops*>(node);
+        if (cropSprite != nullptr)
+        {
+            cropSprite->fertilize();
+            return true;
+        }
+    }
+    return false;
+}
+
+bool InteractionManager::MiningAt(const Vec2& tilePos) {
+    TileInfo tileinfo = GetTileInfoAt(tilePos);
+
+    // 石头物品逻辑
+    if (tileinfo.type == TileConstants::TileType::Stone) {
+        _gameMap->replaceTileAt("path", tilePos, TileConstants::EMPTY_GID);
+        AnimationHelper::playStoneBreakingAnimation(_gameMap->tileToRelative(tilePos), _gameMap->getTiledMap());
+        return true;
+    }
+    //  对应非石头
+    else if(tileinfo.type == TileConstants::TileType::Mine|| tileinfo.type == TileConstants::TileType::Treasure)// 矿物
+    {
+
+        _gameMap->replaceTileAt("path", tilePos, TileConstants::EMPTY_GID);
+        _gameMap->replaceTileAt("ore", tilePos, TileConstants::EMPTY_GID);
+        AnimationHelper::playStoneBreakingAnimation(_gameMap->tileToRelative(tilePos), _gameMap->getTiledMap());
+        return true;
+
+    }
+    else
+    {
+        CCLOG("unkonw mine type");
+        return false;
+    }
+}
+
+
+// 对树干，树桩和树枝条的处理
+bool InteractionManager::ChopTree(const Vec2& tilePos) {
+    TileInfo tileinfo = GetTileInfoAt(tilePos);
+
+    if(tileinfo.type == TileConstants::TileType::Tree)
+    {
+        // 砍树干对应动作
+        _gameMap->replaceTileAt("path", tilePos, TileConstants::WOOD_GID); // 将类型改为树桩
+        getTreeAndChopAt(tilePos);
+
+        return true;
+    }
+    else if (tileinfo.type == TileConstants::TileType::Wood) 
+    {
+        //砍树状对应动作
+        _gameMap->replaceTileAt("path", tilePos, TileConstants::EMPTY_GID);
+        _gameMap->replaceTileAt("Tree", tilePos, TileConstants::EMPTY_GID);
+        AnimationHelper::playWoodCuttingAnimation(_gameMap->tileToRelative(tilePos), _gameMap->getTiledMap());
+    }
+    else if(tileinfo.type == TileConstants::TileType::Branch)
+    {
+        // 树枝对应动作
+        _gameMap->replaceTileAt("path", tilePos, TileConstants::EMPTY_GID);
+        AnimationHelper::playChopingBranchAnimation(_gameMap->tileToRelative(tilePos), _gameMap->getTiledMap());
+    
+        return true;
+    }
+    else {
+        return false;
+    }
 }

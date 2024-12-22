@@ -42,6 +42,9 @@ bool MapSwitchManager::init(Character* character, GameMap* currentMap, GameViewC
 bool MapSwitchManager::switchMap(const std::string& newMapFile, Vec2& teleportPOS, Node* TreeLayer,Node* MapLayer) {
     CCLOG("Switching map to: %s", newMapFile.c_str());
 
+    // 清理灯光效果（RAII 会自动销毁旧灯光）
+    _lightingGuard.reset();
+
     if (_currentMap) {
         // 保存当前地图状态
         _currentMap->saveChangesToStateManager();
@@ -65,6 +68,10 @@ bool MapSwitchManager::switchMap(const std::string& newMapFile, Vec2& teleportPO
     else if (newMapFile.find("Mine") != std::string::npos) {
         newMap = MineMap::create(newMapFile, Vec2(MINE_CREAT_X, MINE_CREAT_Y));
         teleportPOS = newMap->tileToAbsolute(Vec2(MINE_TELE_X, MINE_TELE_Y));
+        if (newMap) {
+            // 为矿洞地图添加灯光效果
+            _lightingGuard = std::make_unique<IndoorLighting>(newMap);
+        }
     }
     else {
         CCLOG("Unknown map type for file: %s", newMapFile.c_str());
@@ -78,7 +85,7 @@ bool MapSwitchManager::switchMap(const std::string& newMapFile, Vec2& teleportPO
 
     _currentMap = newMap;
     _currentMap->applySavedChanges();
-    MapLayer->addChild(_currentMap);
+    MapLayer->addChild(_currentMap,MAP_LAYER_GRADE);
 
     // 更新 InteractionManager 的地图引用
     if (_interactionManager) {
@@ -95,15 +102,6 @@ bool MapSwitchManager::switchMap(const std::string& newMapFile, Vec2& teleportPO
     return true;
 }
 
-Vec2 MapSwitchManager::getTargetPositionByID(int teleportID, GameMap* newMap) {
-    //auto allTeleportTiles = newMap->getAllTeleportTiles();
-    //for (const auto& tile : allTeleportTiles) {
-    //    if (tile.properties["teleportID"].asInt() == teleportID) {
-    //        return tile.position;
-    //    }
-    //}
-    return Vec2(0,0);
-}
 
 
 

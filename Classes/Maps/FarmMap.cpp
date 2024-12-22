@@ -21,6 +21,7 @@ FarmMap::~FarmMap() {
     if (_treeLayer) {
         _treeLayer->removeAllChildren();
     }
+    _eventDispatcher->removeEventListenersForTarget(this);
 }
 
 FarmMap* FarmMap::create(const std::string& mapFile, Node* TreeLayer, const Vec2& mapPosition)
@@ -67,6 +68,7 @@ bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition, Node* Tr
     // 添加树木层
     _treeLayer = TreeLayer;
     plantTreesOnPathLayer(); 
+  
     //监听鼠标
     auto listener = EventListenerMouse::create();
     listener->onMouseDown = CC_CALLBACK_1(FarmMap::onMouseEvent, this);  // 监听鼠标点击事件
@@ -74,7 +76,7 @@ bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition, Node* Tr
     // 注册监听器
     _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
 
-    // 待定：添加农场地图独有的部分 例如事件监听器……
+    // 可继续添加农场地图独有的部分
 
     return true;
 }
@@ -95,7 +97,7 @@ bool FarmMap::onMouseEvent(cocos2d::Event* event)
         Vec2 mapPosition(mousePos.x + cameraOffset_x, mousePos.y + cameraOffset_y);
         Vec2 tiledPos = absoluteToTile(mapPosition);
         CCLOG("TILED POS: %f,%f", tiledPos.x, tiledPos.y);
-        int GID = getTileGIDAt("path", tiledPos);
+        int GID = getTileGIDAt("watering", tiledPos);
         CCLOG("click GID:%d", GID);
         Vec2 worldpos = tileToAbsolute(tiledPos);
         CCLOG("WORLD POS: %f,%f", worldpos.x, worldpos.y);
@@ -247,29 +249,69 @@ void FarmMap::initializeFishes() {
     }
 }
 
-// 获取某个位置的农作物指针
-Crops* FarmMap::getTreeAtPosition(const Vec2& tilePos) {
-    if (!_treeLayer) {
-        CCLOG("Tree layer not initialized!");
-        return nullptr;
-    }
+// 获取某个位置的树木指针
+Node* FarmMap::getNodeAtPosition(const Vec2& tilePos) {
+    // 检查树层
+    if (_treeLayer) {
+        // 转换瓦片坐标到世界坐标
+        cocos2d::Vec2 treeWorldPos = tileToRelative(tilePos);
 
-    // 将瓦片坐标转换为相对地图的绝对坐标
-    Vec2 treeWorldPos = tileToRelative(tilePos);
-
-    // 遍历树木层的所有子节点
-    for (auto child : _treeLayer->getChildren()) {
-        auto sprite = dynamic_cast<Crops*>(child);
-        if (sprite) {
-            // 获取精灵的世界坐标
-            Vec2 spriteWorldPos = sprite->getPosition();
-            // 如果坐标相等，返回指针
-            if (spriteWorldPos.equals(treeWorldPos)) {
-                return sprite;
+        // 遍历树层的所有子节点
+        for (auto child : _treeLayer->getChildren()) {
+            auto tree = dynamic_cast<Crops*>(child);
+            if (tree && tree->getPosition().equals(treeWorldPos)) {
+                return tree; // 找到树节点
             }
         }
     }
 
-    CCLOG("No tree found at tile position: (%f, %f)", tilePos.x, tilePos.y);
-    return nullptr; // 未找到匹配的树精灵
+    // 检查瓦片地图中的作物
+    if (_tile_map) {
+        cocos2d::Vec2 cropWorldPos = tileToRelative(tilePos);
+
+        for (auto child : _tile_map->getChildren()) {
+            auto crop = dynamic_cast<Crops*>(child);
+            if (crop && crop->getPosition().equals(cropWorldPos)) {
+                return crop; // 找到作物节点
+            }
+        }
+    }
+    return nullptr;
+}
+
+// 获取某个位置的农作物指针
+Crops* FarmMap::getCropAtPosition(const Vec2& tilePos) {
+    if (!_tile_map) {
+        CCLOG("Tile map not initialized!");
+        return nullptr;
+    }
+
+    // 获取该位置指针，转换为Crop
+    auto node = getNodeAtPosition(tilePos);
+    auto crop = dynamic_cast<Crops*>(node);
+    if (crop) {
+        return crop;
+    }
+
+    CCLOG("No crop found at tile position: (%f, %f)", tilePos.x, tilePos.y);
+    return nullptr;
+}
+
+
+
+void FarmMap::plantCrops(const Vec2& tilePos, const std::string cropName,const int characterLevel) {
+
+    // 设置玩家等级
+    Crops::setPlayerLevel(characterLevel);
+
+    int maxstage = KALE_MAX_GROWTHSTAGE;
+    if (cropName == "pumpkin")
+        maxstage = PUMPKIN_MAX_GROWTHSTAGE;
+    // 添加指定农作物
+    auto crop = Crops::create(cropName, maxstage);
+    _tile_map->addChild(crop,ANIMATION_LAYER_GRADE);
+
+    // 设置位置
+    crop->setPosition(tileToRelative(tilePos));
+    crop->setGrowthStage(MIN_GROWTHSTAGE);
 }

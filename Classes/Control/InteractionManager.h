@@ -50,10 +50,24 @@ public:
     // 获取角色前方第n格地块信息
     const TileInfo GetLineTileInfo(Direction dir, int distance, const Vec2& WroldPos);
 
-private:
-    GameMap* _gameMap;                          // 当前地图对象
+    // 更新角色选中物品名称
+    void updateCurrentObject(const ObjectListNode& object,const int& characterLevel){
+        _currentObject = object;
+        _characterFarmLevel = characterLevel;
+    }
 
-    std::vector<TileInfo> _surroundingTiles;    // 储存角色周围 9 格瓦片的信息
+private:
+    // 当前地图对象
+    GameMap* _gameMap;                          
+
+    // 储存角色周围 9 格瓦片的信息
+    std::vector<TileInfo> _surroundingTiles;    
+
+    //储存当前选中物品
+    ObjectListNode _currentObject;              
+
+    // 储存玩家等级
+    int _characterFarmLevel;
 
     // 判断指定瓦片位置是否为不可通行区域
     bool isCollidableAtPos(const cocos2d::Vec2& tilePos);
@@ -65,10 +79,22 @@ private:
     void getTreeAndChopAt(const Vec2& tilePos);
 
     // 放置物品的方法
-    bool placeObjectAtTile(const cocos2d::Vec2& tilePos);
+    bool placeObjectAtTile(const Vec2& tilePos);
+
+    // 浇水方法
+    bool WateringAt(const Vec2& tilePos);
+
+    // 施肥
+    bool FertilizeAt(const Vec2& tilePos);
+
+    // 采矿
+    bool MiningAt(const Vec2& tilePos);
+
+    // 对树干，树桩和树枝条的处理
+    bool ChopTree(const Vec2& tilePos);
 
     // 获取矿石信息
-    void InteractionManager::GetMineInfo(int MineGID, TileInfo& tile);
+    void GetMineInfo(int MineGID, TileInfo& tile);
 };
 
 #endif // INTERACTION_MANAGER_H

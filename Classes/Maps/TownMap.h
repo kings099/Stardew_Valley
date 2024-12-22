@@ -19,14 +19,16 @@ class TownMap : public GameMap
 public:
     // 构造函数和析构函数
     TownMap(const Vec2& mapPosition);
-    virtual ~TownMap();
+    ~TownMap();
 
     // 创建函数
     static TownMap* create(const std::string& mapFile, const Vec2& mapPosition = Vec2(0, 0));
 
     // 重写初始化函数 
-    virtual bool init(const std::string& mapFile, const Vec2& mapPosition) override;
+    bool init(const std::string& mapFile, const Vec2& mapPosition) override;
 
+    // 根据获取小镇地图特定节点
+    Node* getNodeAtPosition(const Vec2& tilePos);
 
     MapType getType() const override { return MapType::Farm; }
 };

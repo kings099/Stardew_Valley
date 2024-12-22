@@ -125,7 +125,7 @@ const Vec2& GameMap::getPosition() {
 }
 
 // 获取某位置Layername图层的GID
-int GameMap::getTileGIDAt(const std::string& layerName, const Vec2& tileCoord)
+int GameMap::getTileGIDAt(const std::string& layerName, const Vec2& tileCoord) const
 {
     auto layer = _tile_map->getLayer(layerName);
     if (!layer) {
@@ -143,7 +143,7 @@ int GameMap::getTileGIDAt(const std::string& layerName, const Vec2& tileCoord)
 }
 
 // 获取某GID对应图块的属性
-cocos2d::ValueMap GameMap::getTilePropertiesForGID(int GID)
+cocos2d::ValueMap GameMap::getTilePropertiesForGID(int GID) const
 {
     if (GID == 0) return cocos2d::ValueMap();
     auto tileProperties = _tile_map->getPropertiesForGID(GID);
@@ -186,8 +186,8 @@ TMXTiledMap* GameMap::getTiledMap() const {
     return _tile_map;
 }
 
-//获取农作物精灵指针，只在农场地图有效，在农场地图中重写
-Crops* GameMap::getTreeAtPosition(const Vec2& tilePos) {
+//获取节点指针
+Node* GameMap::getNodeAtPosition(const Vec2& tilePos) {
     return nullptr; // 默认返回 nullptr
 }
 
