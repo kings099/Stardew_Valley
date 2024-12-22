@@ -72,7 +72,7 @@ A project of Stardew Valley based on [Cocos2d-x 3.17.2](https://docs.cocos.com/c
 * [X] 天气系统
 * [X] 商店系统
 
-* 功能和架构
+### 功能和架构
 
   * [x] 界面精美
 
@@ -228,6 +228,34 @@ A project of Stardew Valley based on [Cocos2d-x 3.17.2](https://docs.cocos.com/c
             if (_uiLayer) { _uiLayer->update(deltaTime); }
             }, "ViewControllerUpdate");
       ```
+    * 多态性
+
+      在项目中，多态性是一个核心的面向对象编程特性，它使得不同类型的对象可以通过统一的接口进行操作。
+
+      * 基类与派生类
+
+ 	项目中定义了一个基类 GameMap，该类提供了地图相关功能的接口和基础实现。具体的地图实现类（如 FarmMap、IndoorMap、MineMap 和 TownMap）则从 GameMap 继承而来。每个子类根据自身的需要重新实现基类中的虚函数。
+
+      * 虚函数
+
+        在派生类中，这些虚函数可以根据具体的地图类型重写，以实现特定的行为。这意味着你可以使用基类指针来操作子类对象，而程序会在运行时根据对象的实际类型决定调用哪个函数，使用示例如下：
+
+    	```cpp
+     	virtual bool init(const std::string& mapFile, const Vec2& mapPosition);
+    	virtual Node* getNodeAtPosition(const Vec2& tilePos);
+        ```
+
+      * 智能指针
+        
+	智能指针是 C++11 引入的一种用来管理动态分配内存的工具，它通过 RAII（资源获取即初始化）方式来自动管理对象的生命周期。下面将详细介绍智能指针的类型、特点以及在项目中的使用场景。
+
+	* std::shared_ptr
+
+     	  std::shared_ptr 是一种共享所有权的智能指针，可以有多个指针指向同一个对象，通过引用计数来管理对象的生命周期。只有当所有指向该对象的 std::shared_ptr 被销毁时，才会释放内存，使用示例如下：
+    
+	  ```
+      	  std::shared_ptr<GameObject> targetObjectPtr = std::make_shared<GameToolObject>(targetObject);
+          ```    
 
     * `Unicode` 编码支持
 
