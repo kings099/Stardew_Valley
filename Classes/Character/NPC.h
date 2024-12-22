@@ -35,7 +35,7 @@ public:
     cocos2d::Sprite* _sprite;             // NPC 的精灵（外观）
     cocos2d::Animate* _walkAnimation;     // 行走动画
     std::vector<Task*> _tasks;            // NPC 拥有的任务
-    bool _isProcessing;                  // 用于判断是否正在处理任务
+    bool _isProcessing;                   // 用于判断是否正在处理任务
 
     // 构造函数，初始化 NPC 名字和位置
     NPC(std::string name, cocos2d::Vec2 position, const std::string& idleImage, const std::vector<std::string>& walkFrames);
