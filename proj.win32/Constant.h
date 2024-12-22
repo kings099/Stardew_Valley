@@ -34,9 +34,12 @@ constexpr float HALF_FACTOR = 0.5f;                                        // �
 
 //NPC相关设置
 constexpr float NPC_WIDTH = 16;											    // NPC宽度
-constexpr float NPC_HEIGHT =32;                                            // NPC高度
-
-
+constexpr float NPC_HEIGHT =32;                                             // NPC高度
+constexpr int   AFFECTION_INDEX = 25;                                       // NPC喜爱度因子
+constexpr int   MAX_AFFECTION = 100;                                        //最大喜爱度的值
+constexpr int   MARRIAGE_AFFECTION = 20;                                    //满足结婚条件的喜爱度下限
+constexpr float DIALOG_WIDTH = 500.0f;                                      //对话框宽度
+constexpr float DIALOG_HEIGHT = 120.0f;                                     //对话框高度
 // 移动相关设置
 constexpr auto INVIAID_KEY = cocos2d::EventKeyboard::KeyCode::KEY_NONE;		// 无效键值
 constexpr float ACTION_RATE = 5.0f;											// 动作帧率
@@ -142,8 +145,8 @@ constexpr int OBJECT_LIST_ROWS = 3;											// 物品列表行数
 constexpr int OBJECT_LIST_COLS = 12;										// 物品列表列数
 
 //初始界面相关设置
-constexpr int BG_MOVE_SPEED = 2;
-constexpr float BG_UPDATE_RATIO = 0.016f;
+constexpr int BG_MOVE_SPEED = 2;                                           //背景图移动速度
+constexpr float BG_UPDATE_RATIO = 0.016f;                                  //背景图更新速度
 
 
 
@@ -151,7 +154,8 @@ constexpr float BG_UPDATE_RATIO = 0.016f;
 
 
 // UI 相关设置
-const std::string FONT_TYPE = "fonts/arial.ttf";                          // UI界面字体类型
+
+const std::string FONT_TYPE = "fonts/arial.ttf";                            // UI界面字体类型
 constexpr int UI_SCALE = 210.0f;                                            // UI界面缩放
 constexpr int FONT_SIZE = 20;                                               // 字体大小
 constexpr int MAP_LAYER_GRADE = 0;                                          // 地图层级
@@ -196,10 +200,28 @@ const float DIALOG_HEIGHT_RATIO = 0.25f;                                    // �
 const float BUTTON_SIZE_RATIO = 0.1f;                                       // 按钮大小占对话框大小的比例
 const float BUTTON_OFFSET_RATIO = 0.2f;                                     // 按钮与对话框边缘的距离比例
 
+
+// 游戏季节定义
+enum Season {
+    Spring,				// 春天
+    Summer,				// 夏天
+    Fall,				// 秋天
+    Winter,				// 冬天
+    All					// 通用
+};
 // 游戏时间设置
+
+constexpr int INIT_DAY = 1;                                                 //游戏启动时的天数 
+constexpr int INIT_HOUR = 6;                                                //游戏启动时的时间
+constexpr int INIT_MIN = 0;                                                 //游戏启动时的分钟数
+constexpr bool INIT_IS_DAY = 0;                                             //游戏启动时是否白天
+const Season  INIT_SEASON =Season::Spring;                                  //游戏启动时的季节
 constexpr int HOURS_IN_A_DAY = 24;                                          // 一天24小时                                     
 constexpr int DAYS_IN_A_SEASON = 7;                                         // 每季7天
+constexpr int DAYS_IN_A_WEEK = 7;                                           // 每周7天
 constexpr int DAYS_IN_A_YEAR = 28;                                          // 一年28天
+constexpr int DAY_START = 6;                                                // 白天的开始时间
+constexpr int DAY_END = 18;                                                 // 白天的结束时间
 
 //农作物相关
 constexpr int CAULIFLOWER_MAX_GROWTHSTAGE = 5;                              //花椰菜共有5个生长阶段
@@ -253,15 +275,6 @@ enum GameTools {
     Pickaxe,			// 镐子
     FishingRod,			// 鱼竿
     Kettle				// 水壶
-};
-
-// 游戏季节定义
-enum Season {
-    Spring,				// 春天
-    Summer,				// 夏天
-    Fall,				// 秋天
-    Winter,				// 冬天
-    All					// 通用
 };
 
 // 游戏物品类型定义
@@ -874,9 +887,6 @@ struct  ProductNode {
     Season discountSeason;      // 商品打折的季节
     Season increaseSeason;      // 商品涨价的季节
 };
-
-
-
 
 
 #endif // !_CONSTANT_H_

@@ -37,14 +37,14 @@ void GiftItemManager::initializeGifts() {
     teddyBear.setAffectionForNPC("Abigail", 30);  // John 很喜欢泰迪熊
     teddyBear.setAffectionForNPC("Mary", 10);  // Mary 对泰迪熊不感兴趣
 
-    gifts.push_back(rose);
-    gifts.push_back(chocolate);
-    gifts.push_back(teddyBear);
+    _gifts.push_back(rose);
+    _gifts.push_back(chocolate);
+    _gifts.push_back(teddyBear);
 }
 
 GiftItem* GiftItemManager::getGiftByName(const std::string& name) {
     // 根据名称查找礼物
-    for (auto& gift : gifts) {
+    for (auto& gift : _gifts) {
         if (gift.name == name) {
             return &gift;
         }

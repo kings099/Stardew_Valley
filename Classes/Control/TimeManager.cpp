@@ -15,7 +15,7 @@ TimeManager* TimeManager::getInstance() {
 
 // 构造函数
 TimeManager::TimeManager()
-    : timeInSeconds(6), day(1),hour(6), minute(0), season(Spring), isDay(true) {
+    : _timeInSeconds(INIT_HOUR), _day(INIT_DAY),_hour(INIT_HOUR), _minute(INIT_MIN), _season(INIT_SEASON), _isDay(INIT_IS_DAY) {
     // 初始化时间（从第1天的6:00开始）
     updateTime();
 }
@@ -28,10 +28,10 @@ TimeManager::~TimeManager() {
 // 更新游戏时间
 void TimeManager::update(int deltaT) {
     // 每次调用时更新游戏时间，deltaT为现实世界的秒数
-    timeInSeconds += deltaT;
+    _timeInSeconds += deltaT;
 
     // 防止 `timeInSeconds` 超过最大范围，使用模运算循环计时
-    timeInSeconds %= (HOURS_IN_A_DAY * DAYS_IN_A_YEAR); // 限制为一年内的总秒数
+    _timeInSeconds %= (HOURS_IN_A_DAY * DAYS_IN_A_YEAR); // 限制为一年内的总秒数
 
     updateTime();
     updateDayNightCycle();
@@ -42,24 +42,24 @@ void TimeManager::update(int deltaT) {
 std::string TimeManager::getWeekDay() const {
     // 返回当前星期几
     std::string weekDays[] = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
-    return weekDays[(day - 1) % 7];  // 将天数转化为星期几
+    return weekDays[(_day - 1) % DAYS_IN_A_WEEK];  // 将天数转化为星期几
 }
 
 // 获取当前时间（小时:分钟）格式的字符串
 std::string TimeManager::getCurrentTime() const {
     // 返回当前时间（小时:分钟）格式
-    return StringUtils::format("%02d:%02d", hour, minute);
+    return StringUtils::format("%02d:%02d", _hour, _minute);
 }
 
 // 获取当前季节
 Season TimeManager::getCurrentSeason() const {
-    return season;
+    return _season;
 }
 
 
 // 获取当前季节的字符串表示
 std::string TimeManager::getCurrentSeason_() const {
-    switch (season) {
+    switch (_season) {
     case Spring:
         return "Spr";  // 春天
     case Summer:
@@ -73,13 +73,14 @@ std::string TimeManager::getCurrentSeason_() const {
     }
 }
 
+// 获取当前日期
 int TimeManager::getCurrentDay() const {
-    return day;
+    return _day;
 }
 
 // 判断是否是白天
 bool TimeManager::isDaytime() const {
-    return isDay;
+    return _isDay;
 }
 
 // 启动时间更新
@@ -97,32 +98,30 @@ void TimeManager::startUpdating() {
 void TimeManager::stopUpdating() {
     // 停止时间更新
     auto scheduler = Director::getInstance()->getScheduler();
-    scheduler->unschedule("timeUpdateKey", this);
+    scheduler->unschedule("_timeUpdateKey", this);
 }
 
 // 更新时间（小时、分钟、天数）
 void TimeManager::updateTime() {
     // 通过计算更新小时、分钟、天数、季节等信息
-    hour = timeInSeconds % HOURS_IN_A_DAY;  // 每24小时为1天
-    day = (timeInSeconds / HOURS_IN_A_DAY) + 1;  // 每86400秒为1天
-    minute = 0;  // 每60秒为1分钟
+    _hour = _timeInSeconds % HOURS_IN_A_DAY;  // 每24小时为1天
+    _day = (_timeInSeconds / HOURS_IN_A_DAY) + 1;  // 每86400秒为1天
+    _minute = 0;  // 每60秒为1分钟
 
     // 判断当前是白天还是黑夜
-    isDay = (hour >= 6 && hour < 18); // 假设白天是早上6点到晚上6点
+    _isDay = (_hour >= DAY_START && _hour < DAY_END); // 假设白天是早上6点到晚上6点
 }
 
 // 获取当前季节
 void TimeManager::updateDayNightCycle() {
     // 根据时间来更新昼夜变化
-    isDay = (hour >= 6 && hour < 18);
+    _isDay = (_hour >= DAY_START && _hour < DAY_END);
 }
-
-
 
 // 更新季节
 void TimeManager::updateSeason() {
-    // 每91天是一个季节变化 (1年 = 4季节，每季节7天)
-    season = static_cast<Season>((day - 1) / DAYS_IN_A_SEASON % 4);  // 4季节循环：0 Spring, 1 Summer, 2 Fall, 3 Winter
+    // 每7天是一个季节变化 
+    _season = static_cast<Season>((_day - 1) / DAYS_IN_A_SEASON % 4);  // 4季节循环：0 Spring, 1 Summer, 2 Fall, 3 Winter
 }
 
 

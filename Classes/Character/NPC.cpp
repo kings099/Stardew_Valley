@@ -15,7 +15,7 @@ USING_NS_CC;
 
  // NPC 初始化
 NPC::NPC(std::string name, cocos2d::Vec2 position, const std::string& idleImage, const std::vector<std::string>& walkFrames)
-    : name(name), affection(0), isMarried(false), isMoving(false),_isProcessing(false) {
+    : _name(name), _affection(0), _isMarried(false), _isMoving(false),_isProcessing(false) {
     setPosition(position);                    // 初始化 NPC 位置
     initializeSprite(idleImage, walkFrames);  // 初始化精灵和动画
 
@@ -27,32 +27,29 @@ NPC::NPC(std::string name, cocos2d::Vec2 position, const std::string& idleImage,
 
 // 初始化精灵和动画
 void NPC::initializeSprite(const std::string& idleImage, const std::vector<std::string>& walkFrames) {
-    sprite = cocos2d::Sprite::create(idleImage);
-    if (sprite == nullptr) {
-        CCLOG("Failed to load sprite: %s", idleImage.c_str());
-    }
-    sprite->setPosition(getPosition());
-    addChild(sprite);
+    _sprite = cocos2d::Sprite::create(idleImage);
+    _sprite->setPosition(getPosition());
+    addChild(_sprite);
 
     // 设置精灵缩放比例,让精灵的大小固定
-    sprite->setScaleX(NPC_WIDTH / sprite->getContentSize().width);  
-    sprite->setScaleY(NPC_HEIGHT / sprite->getContentSize().height); 
+    _sprite->setScaleX(NPC_WIDTH / _sprite->getContentSize().width);  
+    _sprite->setScaleY(NPC_HEIGHT / _sprite->getContentSize().height); 
 
-    CCLOG("NPC Width: %f, Height: %f", sprite->getContentSize().width, sprite->getContentSize().height);
+    
     // 设置行走动画
     cocos2d::Vector<cocos2d::SpriteFrame*> walkSpriteFrames;
     for (const auto& frame : walkFrames) {
         walkSpriteFrames.pushBack(cocos2d::SpriteFrame::create(frame, cocos2d::Rect(0, 0, 64, 64)));
     }
     cocos2d::Animation* walkAnim = cocos2d::Animation::createWithSpriteFrames(walkSpriteFrames, 0.2f);
-    walkAnimation = cocos2d::Animate::create(walkAnim);
+    _walkAnimation = cocos2d::Animate::create(walkAnim);
 }
 
 void NPC::showDialog() {
-    int dialogueIndex = affection / 25;
-    dialogueIndex = std::min(dialogueIndex, (int)dialogues.size() - 1);
+    int dialogueIndex = _affection / AFFECTION_INDEX;
+    dialogueIndex = std::min(dialogueIndex, (int)_dialogues.size() - 1);
     std::string username = CharacterInfo::getInstance()->getUsername();  // 获取用户名
-    std::string dialogue = dialogues[dialogueIndex] + "," + username;
+    std::string dialogue = _dialogues[dialogueIndex] + "," + username;
     showDialogue(dialogue);
 }
 
@@ -71,12 +68,12 @@ void NPC::showDialogue(const std::string& dialogueText) {
 }
 // 增加好感度
 void NPC::increaseAffection(int value) {
-    affection = std::min(100, affection + value);
+   _affection = std::min(MAX_AFFECTION, _affection + value);
 }
 
 // 显示询问用户是否求婚的UI
 void NPC::showMarriageChoices() {
-    if (affection >= 0 && !isMarried) {
+    if (_affection >= MARRIAGE_AFFECTION && !_isMarried) {
         const auto visibleSize = Director::getInstance()->getVisibleSize();
         const auto origin = Director::getInstance()->getVisibleOrigin();
 
@@ -90,23 +87,23 @@ void NPC::showMarriageChoices() {
         dialog->setAnchorPoint(Vec2(0, 0));
 
         // 设置对话框大小
-        float dialogWidth = 500.0f;
-        float dialogHeight = 120.f;
+        float dialogWidth = DIALOG_WIDTH;
+        float dialogHeight = DIALOG_HEIGHT;
         dialog->setContentSize(Size(dialogWidth, dialogHeight));  // 设置对话框的内容大小
 
         // 设置对话框的位置为 (50, 0)
         dialog->setPosition(Vec2(50, 0));
-        this->addChild(dialog, 10);  // 添加到 NPC 层，设置优先级为 10 确保显示在最上层
+        this->addChild(dialog);  // 添加到 NPC 层，设置优先级为 10 确保显示在最上层
 
         // 创建询问文本信息
-        auto text = Label::createWithSystemFont("Would you like to propose?\nAffection is sufficient now!", "Arial", 24);
+        auto text = Label::createWithSystemFont("Would you like to propose?\nAffection is sufficient now!", FONT_TYPE, FONT_SIZE);
         text->setPosition(Vec2(dialog->getContentSize().width / 2, dialog->getContentSize().height / 2));
         dialog->addChild(text);
 
         // "Yes" 按钮，玩家同意结婚，字体大小设为24
         auto yesButton = ui::Button::create();
         yesButton->setTitleText("Yes");
-        yesButton->setTitleFontSize(24);  // 设置按钮字体大小为24
+        yesButton->setTitleFontSize(FONT_SIZE);  // 设置按钮字体大小为24
         yesButton->setPosition(Vec2(dialog->getContentSize().width * 0.3f, -dialog->getContentSize().height * 0.3f));
         yesButton->addClickEventListener([this, dialog](Ref* sender) {
             marryPlayer();  // 玩家同意结婚
@@ -118,7 +115,7 @@ void NPC::showMarriageChoices() {
         // "No" 按钮，玩家拒绝结婚，字体大小设为24
         auto noButton = ui::Button::create();
         noButton->setTitleText("No");
-        noButton->setTitleFontSize(24);  // 设置按钮字体大小为24
+        noButton->setTitleFontSize(FONT_SIZE);  // 设置按钮字体大小为24
         noButton->setPosition(Vec2(dialog->getContentSize().width * 0.7f, -dialog->getContentSize().height * 0.3f));
         noButton->addClickEventListener([this, dialog](Ref* sender) {
             dialog->removeFromParent();  // 移除对话框
@@ -140,19 +137,19 @@ void NPC::marryPlayer() {
     playMarriageAnimation();
 
     // 设置婚姻状态
-    isMarried = true;
+    _isMarried = true;
 
     // 创建结婚消息的回调函数
     auto showWeddingMessage = [this]() {
         // 显示结婚消息
-        std::string weddingMessage = "You and " + name + " are now married!";
+        std::string weddingMessage = "You and " + _name + " are now married!";
         ChatLayer* chatLayer = ChatLayer::create(weddingMessage);
         // 设置对话框位置相对于 NPC
 
         Vec2 npcPosition = getPosition();  // 获取 NPC 当前的位置
         chatLayer->setPosition(npcPosition.x + 250, npcPosition.y + 60);  // 将对话框位置设置为 NPC 的位置
 
-        this->addChild(chatLayer, 1);
+        this->addChild(chatLayer);
         };
 
     // 创建一个延时动作，在动画结束后调用 showWeddingMessage 函数
@@ -167,7 +164,7 @@ void NPC::playMarriageAnimation() {
     auto heartSprite = Sprite::create("../Resources/Characters/NPC/happy.png");
     // 设置开心表情的位置，偏移位置稍微往上
     Vec2 npcPosition = getPosition();
-    heartSprite->setPosition(npcPosition.x, npcPosition.y + sprite->getContentSize().height / 2);  // 头顶位置
+    heartSprite->setPosition(npcPosition.x, npcPosition.y + _sprite->getContentSize().height / 2);  // 头顶位置
 
     // 将开心表情添加为 NPC 的子节点，这样它的坐标就会随 NPC 移动
     this->addChild(heartSprite, 2);
@@ -203,11 +200,11 @@ void NPC::playMarriageAnimation() {
 void NPC::showTaskList() {
     std::string taskInfo = "Available Tasks:\n";
     // 生成两个任务按钮
-    if (tasks.size() >= 2) {
+    if (_tasks.size() >= 2) {
         // 获取任务1
-        Task* task1 = tasks[0];
+        Task* task1 = _tasks[0];
         // 获取任务2
-        Task* task2 = tasks[1];
+        Task* task2 = _tasks[1];
 
         // 创建任务1按钮
         auto taskButton1 = ui::Button::create();
@@ -289,7 +286,7 @@ void NPC::showTaskList() {
 
 
 void NPC::addTask(Task* task) {
-    tasks.push_back(task);
+    _tasks.push_back(task);
 }
 
 
@@ -300,7 +297,7 @@ bool NPC::isPlayerNear(cocos2d::Vec2 playerPosition) {
 
 
 void NPC::giftItem(GiftItem* gift) {
-    int affectionIncrease = gift->getAffectionForNPC(name);  // 获取好感度增益
+    int affectionIncrease = gift->getAffectionForNPC(_name);  // 获取好感度增益
     increaseAffection(affectionIncrease);  // 更新 NPC 的亲密度
 
     // 在 NPC 头顶显示开心表情 2 秒
@@ -310,7 +307,7 @@ void NPC::giftItem(GiftItem* gift) {
     Vec2 npcPosition = getPosition();
 
     // 设置开心表情的位置，偏移位置稍微往上
-    happyFace->setPosition(npcPosition.x, npcPosition.y + sprite->getContentSize().height/2);  // 头顶位置
+    happyFace->setPosition(npcPosition.x, npcPosition.y + _sprite->getContentSize().height/2);  // 头顶位置
 
     // 将开心表情添加为 NPC 的子节点，这样它的坐标就会随 NPC 移动
     this->addChild(happyFace, 1);
@@ -342,18 +339,18 @@ void NPC::giftItem(GiftItem* gift) {
 
 // 开始行走动画
 void NPC::startWalkingAnimation() {
-    if (sprite && walkAnimation) {
-        sprite->runAction(cocos2d::RepeatForever::create(walkAnimation));
+    if (_sprite && _walkAnimation) {
+        _sprite->runAction(cocos2d::RepeatForever::create(_walkAnimation));
     }
 }
 
 std::string NPC::getName() {
-    return name;
+    return _name;
 }
 
 // 获取当前好感度
 int NPC::getAffection() const {
-    return affection;  // 返回当前好感度
+    return _affection;  // 返回当前好感度
 }
 
 // 键盘按下事件处理

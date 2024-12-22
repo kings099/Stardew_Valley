@@ -55,12 +55,12 @@ private:
 
     static TimeManager* instance;  // 单例指针
 
-    int timeInSeconds;  // 游戏总时间（秒）
-    int day;            // 当前游戏日
-    int hour;           // 当前小时
-    int minute;         // 当前分钟
-    Season season;         // 当前季节
-    bool isDay;         // 是否为白天
+    int _timeInSeconds;  // 游戏总时间（秒）
+    int _day;            // 当前游戏日
+    int _hour;           // 当前小时
+    int _minute;         // 当前分钟
+    Season _season;         // 当前季节
+    bool _isDay;         // 是否为白天
 };
 
 #endif // ! __TIMEMANAGER_H__

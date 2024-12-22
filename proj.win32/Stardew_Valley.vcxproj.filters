@@ -127,9 +127,6 @@
     <ClInclude Include="..\Classes\Control\GiftItemManager.h">
       <Filter>Classes\Control</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\Control\NpcInteractionManager.h">
-      <Filter>Classes\Control</Filter>
-    </ClInclude>
     <ClInclude Include="..\Classes\Layer\ChatLayer.h">
       <Filter>Classes\Layer</Filter>
     </ClInclude>
@@ -247,9 +244,6 @@
     <ClCompile Include="..\Classes\Control\GIftItemManager.cpp">
       <Filter>Classes\Control</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\Control\NpcInteractionManager.cpp">
-      <Filter>Classes\Control</Filter>
-    </ClCompile>
     <ClCompile Include="..\Classes\Layer\ChatLayer.cpp">
       <Filter>Classes\Layer</Filter>
     </ClCompile>
@@ -264,9 +258,6 @@
     </ClCompile>
     <ClCompile Include="..\Classes\Layer\AudioControlLayer.cpp">
       <Filter>Classes\Layer</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Character\Task.cpp">
-      <Filter>Classes\Character</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\Box\Box.cpp">
       <Filter>Classes\Box</Filter>
