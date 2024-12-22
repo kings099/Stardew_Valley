@@ -275,7 +275,11 @@ Crops* FarmMap::getTreeAtPosition(const Vec2& tilePos) {
     return nullptr; // 未找到匹配的树精灵
 }
 
-void FarmMap::plantCrops(const Vec2& tilePos, const std::string cropName) {
+void FarmMap::plantCrops(const Vec2& tilePos, const std::string cropName,const int characterLevel) {
+
+    // 设置玩家等级
+    Crops::setPlayerLevel(characterLevel);
+
     int maxstage = KALE_MAX_GROWTHSTAGE;
     if (cropName == "pumpkin")
         maxstage = PUMPKIN_MAX_GROWTHSTAGE;

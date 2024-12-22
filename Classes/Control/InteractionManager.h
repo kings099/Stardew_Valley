@@ -51,8 +51,9 @@ public:
     const TileInfo GetLineTileInfo(Direction dir, int distance, const Vec2& WroldPos);
 
     // 更新角色选中物品名称
-    void updateCurrentObject(const ObjectListNode& object){
+    void updateCurrentObject(const ObjectListNode& object,const int& characterLevel){
         _currentObject = object;
+        _characterFarmLevel = characterLevel;
     }
 
 private:
@@ -64,6 +65,9 @@ private:
 
     //储存当前选中物品
     ObjectListNode _currentObject;              
+
+    // 储存玩家等级
+    int _characterFarmLevel;
 
     // 判断指定瓦片位置是否为不可通行区域
     bool isCollidableAtPos(const cocos2d::Vec2& tilePos);

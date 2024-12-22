@@ -44,7 +44,7 @@ public:
     MapType getType() const override { return MapType::Farm; }
 
     // 种植作物
-    void plantCrops(const Vec2& tilePos, const std::string cropName);
+    void plantCrops(const Vec2& tilePos, const std::string cropName,const int characterLevel);
 
 private:
     cocos2d::Node* _treeLayer; // 树木层节点

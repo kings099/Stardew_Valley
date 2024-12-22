@@ -95,7 +95,7 @@ bool GameMainScene::init()
         GameCharacterAction action;
         this->_character->onMouseDown(event, action, actionTilePos, _interaction);
         // 更新当前选中物品给地图类
-        _interaction->updateCurrentObject(_character->getCurrentObject());
+        _interaction->updateCurrentObject(_character->getCurrentObject(),_character->getSkillLevel(GameObjectSkillType::Farm));
         _interaction->ActionAnimation(action, actionTilePos);
         CCLOG("target tile: (%f, %f), action: %d",
             actionTilePos.x, actionTilePos.y, action);

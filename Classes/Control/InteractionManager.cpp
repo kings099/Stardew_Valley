@@ -353,7 +353,7 @@ bool InteractionManager::placeObjectAtTile(const Vec2& tilePos) {
 
                 // 判断目标瓦片是否为耕地
                 TileInfo tileInfo = GetTileInfoAt(tilePos);
-                farmMap->plantCrops(tilePos, cropName);
+                farmMap->plantCrops(tilePos, cropName, _characterFarmLevel);
                 CCLOG("Planted crop '%s' at tile (%f, %f)", cropName.c_str(), tilePos.x, tilePos.y);
                 return true;
             }
