@@ -11,19 +11,18 @@
 
 USING_NS_CC;
 
-Scene* GameMainScene::createScene()
-{
+// 创建场景
+Scene* GameMainScene::createScene(){
     return GameMainScene::create();
 }
 
 
-bool GameMainScene::init()
-{
+// 初始化
+bool GameMainScene::init(){
     // 调用父类初始化
     if (!Scene::init()) {
         return false;
     }
-
 
     // 初始化地图和角色
     initializeMapAndCharacter();
@@ -42,7 +41,7 @@ bool GameMainScene::init()
     return true;
 }
 
-
+// 初始化地图和角色
 void GameMainScene::initializeMapAndCharacter() {
     // 创建树木层
     auto treeLayer = Node::create();
@@ -67,7 +66,7 @@ void GameMainScene::initializeMapAndCharacter() {
     this->addChild(_character, CHARACTER_LAYER_GRADE);
 }
 
-
+// 初始化视角控制和交互管理
 void GameMainScene::initializeViewControllerAndInteraction() {
     // 初始化视角控制器
     _viewController = GameViewController::create(_character, _farmMap);
@@ -82,7 +81,7 @@ void GameMainScene::initializeViewControllerAndInteraction() {
     this->addChild(_mapSwitchManager);
 }
 
-
+// 初始化 UI 层
 void GameMainScene::initializeUI() {
     // 创建 UI 容器
     _uiContainer = Node::create();
@@ -97,11 +96,15 @@ void GameMainScene::initializeUI() {
     auto audioControlLayer = AudioControlLayer::create();
     _uiContainer->addChild(audioControlLayer);
 
+    // 创建节日控制层并添加到 UI 容器
+    auto fesivalLayer = FestivalLayer::create();
+    _uiContainer->addChild(fesivalLayer);
+
     // 启动时间管理器
     TimeManager::getInstance()->startUpdating();
 }
 
-
+// 注册输入事件监听器
 void GameMainScene::registerInputListeners() {
     // 注册键盘监听器
     auto keyboardListener = EventListenerKeyboard::create();
@@ -119,15 +122,18 @@ void GameMainScene::registerInputListeners() {
     mouseListener->onMouseDown = [this](Event* event) {
         Vec2 actionTilePos;
         GameCharacterAction action;
-        _character->onMouseDown(event, action, actionTilePos, _interaction);
-        _interaction->updateCurrentObject(_character->getCurrentObject(), _character->getSkillLevel(GameObjectSkillType::Farm));
-        _interaction->ActionAnimation(action, actionTilePos);
+        if (_character->onMouseDown(event, action, actionTilePos, _interaction)) {
+            _interaction->updateCurrentObject(_character->getCurrentObject(), _character->getSkillLevel(GameObjectSkillType::Farm));
+            _interaction->ActionAnimation(action, actionTilePos);
+            _character->useObject(action, _interaction);
+        }
+
         CCLOG("target tile: (%f, %f), action: %d", actionTilePos.x, actionTilePos.y, action);
         };
     _eventDispatcher->addEventListenerWithSceneGraphPriority(mouseListener, this);
 }
 
-
+// 注册更新回调函数
 void GameMainScene::registerUpdateCallbacks() {
     // 地图切换检查
     this->schedule([this](float deltaTime) {
@@ -161,7 +167,7 @@ void GameMainScene::registerUpdateCallbacks() {
         }, "ViewControllerUpdate");
 }
 
-
+// 关闭回调
 void GameMainScene::menuCloseCallback(Ref* pSender)
 {
     // 退出游戏

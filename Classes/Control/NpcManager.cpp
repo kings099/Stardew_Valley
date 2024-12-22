@@ -46,7 +46,7 @@ void NpcManager::initializeNPCs() {
         "Thank you for the gift"
     };
     // 添加任务给 Abigail（现在奖励是好感度）
-    Task* task1 = new Task("Give me a gift from the mine.", "Timber", 1, 10);       // 10 好感度
+    Task* task1 = new Task("Give me a gift (I like pumpkin)", "pumpkin", 1, 10);                 // 10 好感度
     Task* task2 = new Task("Help me repair the building.","Timber", 4, 20);                 // 20 好感度
 
     npc1->addTask(task1);

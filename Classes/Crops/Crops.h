@@ -1,9 +1,9 @@
 /****************************************************************
  * Project Name:  Stardew_Valley
  * File Name:     Crops.h
- * File Function: Å©×÷ÎïÀàµÄÍ·ÎÄ¼þ
- * Author:        ºú±¦âù
- * Update Date:   2024/12/11
+ * File Function: Å©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·ï¿½Ä¼ï¿½
+ * Author:        ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * Update Date:   2024/12/22
  * License:       MIT License
  ****************************************************************/
 #pragma once
@@ -18,75 +18,89 @@ class Crops : public cocos2d::Node {
 public:
    
 
-    // ³õÊ¼»¯Å©×÷Îï
+    // ï¿½ï¿½Ê¼ï¿½ï¿½Å©ï¿½ï¿½ï¿½ï¿½
     bool init(const std::string& type, int maxGrowthStage);
 
-    // ¸üÐÂÉú³¤Âß¼­
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß¼ï¿½
     void updateGrowth(float deltaTime);
 
-    // ½½Ë®Âß¼­
+    // ï¿½ï¿½Ë®ï¿½ß¼ï¿½
     void waterCrop();
 
-    // ÅÐ¶ÏÊÇ·ñ¿ÉÒÔÊÕ»ñ
+    // ï¿½Ð¶ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½Õ»ï¿½
     bool isReadyToHarvest() const;
 
-    // ÉèÖÃÉú³¤½×¶Î
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¶ï¿½
     void setGrowthStage(int stage);
 
-    // »ñÈ¡Å©×÷ÎïÀàÐÍ
+    // ï¿½ï¿½È¡Å©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     std::string getType() const { return _type; }
 
-    // »ñÈ¡µ±Ç°Éú³¤½×¶Î
+    // ï¿½ï¿½È¡ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½×¶ï¿½
     int getGrowthStage() const { return _growthStage; }
 
-    // ÐÂÔö£ºÊ©·Êº¯Êý
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê©ï¿½Êºï¿½ï¿½ï¿½
     void fertilize();
 
-    //ÐÂÔö¹ÜÀí²¡³æº¦
-    void checkPests();     // ¼ì²é²¡³æº¦
-    void treatPests();     // ÖÎÁÆ²¡³æº¦
-    //Í¨¹ýÌìÆø¹ÜÀí½½Ë®
+
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æº¦
+    void checkPests();     // ï¿½ï¿½é²¡ï¿½æº¦
+    void treatPests();     // ï¿½ï¿½ï¿½Æ²ï¿½ï¿½æº¦
+    //Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë®
     void manageDrought(Weather currentWeather);
-    // ÆäËû³ÉÔ±º¯ÊýºÍ±äÁ¿
-    static void setPlayerLevel(int level); // ÉèÖÃÈËÎïµÈ¼¶
-    // ÅÐ¶ÏÊÇ·ñÄÜÖÖÖ²µ±Ç°Å©×÷Îï
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½Í±ï¿½ï¿½ï¿½
+    static void setPlayerLevel(int level); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¼ï¿½
+
+    // ï¿½Ð¶ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½Ö²ï¿½ï¿½Ç°Å©ï¿½ï¿½ï¿½ï¿½
     static bool canBePlanted(const std::string& cropType);
-    // ´´½¨Å©×÷ÎïÊ±¼ì²éÊÇ·ñ¿ÉÒÔÖÖÖ²
+
+    // ï¿½ï¿½ï¿½ï¿½Å©ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö²
     static Crops* create(const std::string& type, int maxGrowthStage);
-    void chopTree();                       //¿³Ê÷
+
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    void chopTree();                     
+
+    //Å©ï¿½ï¿½ï¿½ï¿½ï¿½Õ»ï¿½Ê±ï¿½ï¿½ï¿½Ãºï¿½ï¿½ï¿½ï¿½ï¿½É¾ï¿½ï¿½ï¿½ï¿½Ç°Å©ï¿½ï¿½ï¿½ï¾«ï¿½ï¿½
     void harvestCrop();
 
-    static void setSeason(Season season); // ÉèÖÃ¼¾½Ú
-    static Season getSeason();           // »ñÈ¡µ±Ç°¼¾½Ú
+    // ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½
+    static void setSeason(Season season);
+
+    // ï¿½ï¿½È¡ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½
+    static Season getSeason();        
+
+    // ï¿½Æ³ï¿½Å©ï¿½ï¿½ï¿½ï¿½
     bool _isRemoved = false;
-    // Íæ¼ÒµÈ¼¶
+
+    // ï¿½ï¿½ÒµÈ¼ï¿½
     static int _playerLevel;
-    // ·µ»Ø CropData
+    // ï¿½ï¿½ï¿½ï¿½ CropData
     CropData getCropData();
 
 private:
-    bool _isFertilized;         //ÊÇ·ñÊ©·Ê
-    std::string _type;          // Å©×÷ÎïÀàÐÍ
-    int _growthStage;           // µ±Ç°Éú³¤½×¶Î
-    int _maxGrowthStage;        // ×î´óÉú³¤½×¶Î
-    float _growthTimer;         // Éú³¤¼ÆÊ±Æ÷
-    bool _isWatered;            // ÊÇ·ñ±»½½Ë®
-    int _daysWithoutWater;       //Ã»ÓÐ±»½½Ë®µÄÌìÊý
-    bool _hasPests;         // ±ê¼ÇÊÇ·ñÓÐ²¡³æº¦
-    float _pestProbability; // ¸ÐÈ¾²¡³æº¦µÄ¸ÅÂÊ
-    cocos2d::Sprite* _sprite;   // Å©×÷ÎïµÄÏÔÊ¾¾«Áé
-    CropData _cropData;         //Å©×÷ÎïµÄ»ù±¾ÐÅÏ¢
-    // ¾²Ì¬³ÉÔ±£º¼¾½ÚºÍÉú³¤ÖÜÆÚ±í
+    bool _isFertilized;         // ï¿½Ç·ï¿½Ê©ï¿½ï¿½
+    std::string _type;          // Å©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    int _growthStage;           // ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½×¶ï¿½
+    int _maxGrowthStage;        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¶ï¿½
+    float _growthTimer;         // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
+    bool _isWatered;            // ï¿½Ç·ñ±»½ï¿½Ë®
+    int _daysWithoutWater;      // Ã»ï¿½Ð±ï¿½ï¿½ï¿½Ë®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    bool _hasPests;             // ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½Ð²ï¿½ï¿½æº¦
+    float _pestProbability;     // ï¿½ï¿½È¾ï¿½ï¿½ï¿½æº¦ï¿½Ä¸ï¿½ï¿½ï¿½
+    cocos2d::Sprite* _sprite;   // Å©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½
+
+    CropData _cropData;         //Å©ï¿½ï¿½ï¿½ï¿½Ä»ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
+    // ï¿½ï¿½Ì¬ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½Úºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú±ï¿½
     static Season _currentSeason;
     static std::unordered_map<std::string, std::unordered_map<Season, float>> _growthCycles;
 
-    // ÓÃÓÚ´æ´¢²»Í¬¼¾½ÚÏÂÅ©×÷Îï³ÉÊì½×¶ÎµÄÍ¼Æ¬
+    // ï¿½ï¿½ï¿½Ú´æ´¢ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¶Îµï¿½Í¼Æ¬
     static std::unordered_map<std::string, std::unordered_map<Season, std::string>> _matureTextures;
 
-    // ¾²Ì¬×ÊÔ´Ó³Éä±í
+    // ï¿½ï¿½Ì¬ï¿½ï¿½Ô´Ó³ï¿½ï¿½ï¿½
     static std::unordered_map<std::string, std::vector<std::string>> _resourceMap;
 
-    // ¼ÓÔØ×ÊÔ´±í
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ï¿½
     static void initializeResourceMap();
    
 };

@@ -36,21 +36,21 @@ constexpr float HALF_FACTOR = 0.5f;                                        // �
 
 //NPC相关设置
 
+constexpr float INTERACTION_DISTANCE = 30.0f;                               //能够与NPC实现互动的最小距离
+
 constexpr float NPC_WIDTH = 16;											    // NPC宽度
 constexpr float NPC_HEIGHT =32;                                             // NPC高度
 constexpr int   AFFECTION_INDEX = 25;                                       // NPC喜爱度因子
 constexpr int   MAX_AFFECTION = 100;                                        //最大喜爱度的值
 constexpr int   MARRIAGE_AFFECTION = 20;                                    //满足结婚条件的喜爱度下限
 constexpr float DIALOG_WIDTH = 500.0f;                                      //对话框宽度
-constexpr float DIALOG_HEIGHT = 120.0f;                                     //对话框高度
+constexpr float DIALOG_HEIGHT = 200.0f;                                     //对话框高度
 constexpr int DIALOG_X_OFFSET = 250;                                        //对话框相对NPC的偏移量
 constexpr int DIALOG_Y_OFFSET = 160;                                        //对话框相对于NPC的偏移量
 
 
-
 // 移动相关设置
 constexpr auto INVIAID_KEY = cocos2d::EventKeyboard::KeyCode::KEY_NONE;		// 无效键值
-
 constexpr int INVAVID_NUM = -1;												// 无效编号
 
 // 角色相关设置
@@ -183,7 +183,7 @@ constexpr float BG_UPDATE_RATIO = 0.016f;                                  //背
 
 
 // UI 相关设置
-
+constexpr float FESTIVAL_UPDATE = 1.0f;                                     //节日UI界面的更新频率
 const std::string FONT_TYPE = "fonts/arial.ttf";                            // UI界面字体类型
 constexpr int UI_SCALE = 210.0f;                                            // UI界面缩放
 constexpr int FONT_SIZE = 20;                                               // 字体大小
@@ -467,7 +467,7 @@ const std::map< GameCharacterAction, std::vector<TileConstants::TileType>> ACTIO
     { Harvesting,   { TileConstants::Crop }},          // 右键
     { Placement,    { TileConstants::Soil }},          // 右键
     //{ OpenBox,      {TileConstants::Box}},            // 右键
-    { DestoryObject, {TileConstants::Other} }         // 左键
+    { DestoryObject, {TileConstants::Other,TileConstants::Box}}         // 左键
   };
 
 // 游戏物品共有属性定义
