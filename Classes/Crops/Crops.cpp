@@ -375,7 +375,7 @@ void Crops::waterCrop() {
     frames.pushBack(SpriteFrame::create("../Resources/Animations/water/water_5.png", Rect(0, 0, 70, 70)));
 
     // 创建动画
-    Animation* animation = Animation::createWithSpriteFrames(frames, 0.7f);  // 每帧持续0.2秒
+    Animation* animation = Animation::createWithSpriteFrames(frames, 0.2f);  // 每帧持续0.2秒
     Animate* animate = Animate::create(animation);
 
     // 显示浇水动画
