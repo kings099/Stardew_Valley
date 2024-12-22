@@ -43,6 +43,7 @@ bool CharacterAction::onMouseDown(cocos2d::Event* event, GameCharacterAction& ga
 		else if (mouseEvent->getMouseButton() == EventMouse::MouseButton::BUTTON_RIGHT) {
 			gameCharacterAction = getRightButtonAction();
 		}
+		_targetTileNode = getTileInfo(interactionManager, gameCharacterAction);
 		if (checkActionIsValid(gameCharacterAction, targetTilePos, interactionManager)) {
 			getObject(gameCharacterAction, interactionManager);
 			updateSkillExprience(gameCharacterAction);
@@ -59,7 +60,6 @@ bool CharacterAction::onMouseDown(cocos2d::Event* event, GameCharacterAction& ga
 
 // 获得物品
 void CharacterAction::getObject(GameCharacterAction action, InteractionManager* interactionManager) {
-	TileInfo targetTileNode = getTileInfo(action, interactionManager);
 	std::string fishName = Fishs::catchFish(TimeManager::getInstance()->getCurrentSeason(),_skillLevel[Fish]);
 	int probability = rand() % 100 + 1, extraObject = rand() % 100 + 1;
 	int extraObjectProbability = 100;
@@ -73,7 +73,9 @@ void CharacterAction::getObject(GameCharacterAction action, InteractionManager* 
 			extraObjectProbability -= _skillLevel[Collect] * SKILL_GET_ITEM_PROBABILITY * 100;
 		case Mining:
 			extraObjectProbability -= _skillLevel[Mine] * SKILL_GET_ITEM_PROBABILITY * 100;
-			for (const auto& drop : targetTileNode.drops) {
+		case Harvesting:
+			extraObjectProbability -= _skillLevel[Farm]* SKILL_GET_ITEM_PROBABILITY * 100;
+			for (const auto& drop : _targetTileNode.drops) {
 				if (probability >= drop.second.second * 100) {
 					pickUpObject(drop.first, drop.second.first);
 				}
@@ -89,7 +91,7 @@ void CharacterAction::getObject(GameCharacterAction action, InteractionManager* 
 			break;
 		
 		// 没有物品改变的动作
-		case DestoryObject:
+		//case DestoryObject:
 			break;
 		default:
 			break;
@@ -98,13 +100,12 @@ void CharacterAction::getObject(GameCharacterAction action, InteractionManager* 
 
 // 使用物品
 void CharacterAction::useObject(GameCharacterAction action, InteractionManager* interactionManager) {
-	TileInfo targetTileNode = getTileInfo(action, interactionManager);
 	switch (action) {
 		// 需要消耗物品的动作
 	case Seeding:
 	case Placement:
 		if (getCurrentObject().objectNode.object->_name == "Box") {	//放置箱子
-			Box::getInstance().addBox(BoxNode(targetTileNode.WorldPos));
+			Box::getInstance().addBox(BoxNode(_targetTileNode.WorldPos));
 		}
 		deleteObject(1, getCurrentObjectIndex());
 		break;
@@ -134,6 +135,9 @@ GameCharacterAction CharacterAction::getLeftButtonAction() {
 	ObjectListNode currentObject = getCurrentObject();
 	switch (currentObject.objectNode.type) {
 	case None:
+		if (_targetTileNode.type == TileConstants::TileType::Crop) {
+			return Debug;
+		}
 		return DestoryObject;
 	case Tool: {
 		auto toolObjectPtr = std::dynamic_pointer_cast<GameToolObject>(currentObject.objectNode.object);
@@ -170,7 +174,10 @@ GameCharacterAction CharacterAction::getRightButtonAction() {
 	case Seed:
 		return Seeding;
 	case Base:
-		return Placement;
+		if (!_targetTileNode.isObstacle) {
+			return Placement;
+		}
+		return NoneAction;
 	default:
 		return NoneAction;
 	}
@@ -181,7 +188,7 @@ bool CharacterAction::checkActionIsValid(GameCharacterAction action, Vec2& targe
 	if (action == NoneAction)
 		return NoneAction;
 
-	TileInfo targetTileNode = getTileInfo(action, interactionManager);
+	TileInfo targetTileNode = getTileInfo(interactionManager, action);
 	targetTilePos = targetTileNode.tilePos;
 	// 检查动作是否与目标地块类型匹配
 	for (auto& test : ACTION_TO_TILEMAP) {
@@ -201,7 +208,7 @@ bool CharacterAction::checkActionIsValid(GameCharacterAction action, Vec2& targe
 }
 
 // 获取角色动作对象的瓦片信息
-TileInfo CharacterAction::getTileInfo(GameCharacterAction action, InteractionManager* interactionManager) {
+TileInfo CharacterAction::getTileInfo( InteractionManager* interactionManager, GameCharacterAction action) {
 	TileInfo targetTileNode;
 	switch (action) {
 	case Fishing:

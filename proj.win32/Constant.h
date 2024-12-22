@@ -369,6 +369,8 @@ enum GameCharacterAction {
     Fishing,		    // 钓鱼
     Harvesting,			// 收获
     Placement,			// 放置
+    Feeding,			// 喂养
+    Debug,				// 除虫
     OpenBox,			// 打开箱子
     DestoryObject,		// 破坏物品
 };
@@ -466,7 +468,7 @@ const std::map< GameCharacterAction, std::vector<TileConstants::TileType>> ACTIO
     { NoneAction,   { TileConstants::Other }},
     { Plowing,      { TileConstants::Soil}},           // 左键
     { Seeding,      { TileConstants::Soiled }},        // 右键
-    { Watering,     { TileConstants::Soiled }},       // 左键
+    { Watering,     { TileConstants::Soiled ,TileConstants::Crop }},       // 左键
     { Fertilize,    { TileConstants::Soiled}},        // 左键
     { GetWater,     { TileConstants::Water }},         // 右键
     { Weeding,      { TileConstants::Grass }},         // 左键
@@ -475,6 +477,7 @@ const std::map< GameCharacterAction, std::vector<TileConstants::TileType>> ACTIO
     { Fishing,      { TileConstants::Water }},         // 左键
     { Harvesting,   { TileConstants::Crop }},          // 右键
     { Placement,    { TileConstants::Soil }},          // 右键
+    { Debug,        { TileConstants::Crop}},            // 左键
     //{ OpenBox,      {TileConstants::Box}},            // 右键
     { DestoryObject, {TileConstants::Other,TileConstants::Box}}         // 左键
   };
@@ -627,8 +630,8 @@ const std::vector<GameBaseObject> GAME_BASE_OBJECTS_ATTRS = {
     GameBaseObject(27,"../Resources/Objects/Base/Copper.png","Copper","铜锭", Mine, 99, 1, true, 120, false, INVAVID_NUM, false, INVAVID_NUM, false, true, {{"CopperParticle",5}}),
     GameBaseObject(28,"../Resources/Objects/Base/Iron.png","Iron","铁锭", Mine, 99, 1, true, 250, false, INVAVID_NUM, false, INVAVID_NUM, false, true, {{"IronParticle",5}}),
     GameBaseObject(29,"../Resources/Objects/Base/Fertilizer.png","Fertilizer","肥料", Farm, 99, 1, true, 150, true, 200, false, INVAVID_NUM, false, true, {{"Grass",3}}),
-    GameBaseObject(30,"../Resources/Objects/Base/Grass.png","Grass","草", Collect, 99, 1, true, 5, false, INVAVID_NUM, false, INVAVID_NUM, false, false, {}),
-    GameBaseObject(31,"../Resources/Objects/Base/Box.png","Box","箱子", Collect, 1, 1, true, 5, false, INVAVID_NUM, false, INVAVID_NUM, false, true, {{"Timber",5}}),
+    GameBaseObject(30,"../Resources/Objects/Base/Grass.png","Grass","草", Collect, 99, 1, true, 5, false, INVAVID_NUM, false, INVAVID_NUM, true, false, {}),
+    GameBaseObject(31,"../Resources/Objects/Base/Box.png","Box","箱子", Collect, 1, 1, true, 5, false, INVAVID_NUM, false, INVAVID_NUM, true, true, {{"Timber",5}}),
     GameBaseObject(31, "../Resources/Objects/Base/Bigeye.png", "Bigeye", "大眼鱼", Fish, 100, 1, true, 150, false, INVAVID_NUM, true, 40, false, false, {}),
     GameBaseObject(32, "../Resources/Objects/Base/LargemouthBass.png", "LargemouthBass", "大嘴鲈鱼", Fish, 100, 2, true, 170, false, INVAVID_NUM, true, 45, false, false, {}),
     GameBaseObject(33, "../Resources/Objects/Base/Salmon.png", "Salmon", "鲑鱼", Fish, 100, 3, true, 200, false, INVAVID_NUM, true, 50, false, false, {}),
