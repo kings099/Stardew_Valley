@@ -2,6 +2,20 @@
 
 星露谷物语[Sprit-Sheet-Resource](https://www.spriters-resource.com/pc_computer/stardewvalley/)
 
+## 项目名称
+
+Stardew_Valley
+
+## 项目简介
+
+A project of Stardew Valley based on [Cocos2d-x 3.17.2](https://docs.cocos.com/cocos2d-x/manual).
+
+基于 [Cocos2d-x 3.17.2](https://docs.cocos.com/cocos2d-x/manual) 开发的星露谷游戏项目。
+
+> * Programing Paradigm 2024 (2024年同济大学程序设计范式)
+
+该项目是一个基于 [Cocos2d-x 3.17.2](https://docs.cocos.com/cocos2d-x/manual) 开发的星露谷游戏，灵感来自于《星露谷》《我的世界》等游戏，玩家将管理⾃⼰的农场，种植作物，养殖动物，与镇上的居⺠互动，参与节⽇活动，并探索周围的⾃然环境。
+
 ---
 ## 成员分工
 
@@ -20,9 +34,40 @@
 | 金恒宇 | 2352280 |  |  |  |
 | 达思睿 | 2352288 |  |  |  |
 | 胡宝怡 | 2353409 |  |  |  |
----
+
+## 项目组成
+
+* `/Classes`
+类定义与类实现
+
+* `/Resources`
+资源文件
+
+* `/GameData`
+游戏数据
+
+* `/cocos2d`
+依赖文件
+
+* `/proj.win32`
+游戏程序
+
+## 项目实现功能与项目技术细节
+
+### 基础功能
+
+* [X] 有初始界面
+* [X] 支持背景音效
+* [X] 支持耕种、种植、收获农作物等操作
+* [X] 支持养殖动物并获取相关畜产品
+* [X] 支持对游戏内物品资源的存储
+* [X] 支持与小镇上的NPC居民建立关系
+* [X] 支持接受居民委托的相关任务
+* [X] 支持挖掘矿物，钓鱼和收集稀有物品
+* [X] 支持技能升级以及随技能提升解锁新的物品 
+
 ### 项目开发日志
----
+
 #### 2024.11.22
 - Cocos2d-x 3.17.2及相关环境配置  
 - Markdown 基本语言掌握
