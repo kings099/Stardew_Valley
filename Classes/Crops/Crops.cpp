@@ -7,11 +7,11 @@
  * License:       MIT License
  ****************************************************************/
 #include "Crops.h"
-
+#include "Classes/Control/TimeManager.h"
 
 USING_NS_CC;
 // 初始化静态变量
-Season Crops::_currentSeason = Season::Winter;
+Season Crops::_currentSeason = Season::Spring;
 int Crops::_playerLevel = 1; // 初始人物等级为1
 
 // 定义静态资源映射表
@@ -145,6 +145,17 @@ std::unordered_map<std::string, std::unordered_map<Season, std::string>> Crops::
            {Season::Winter, "../Resources/Crops/Pumpkin/pumpkin_5.png"}}
      }
 };
+CropData Crops::getCropData() {
+    _cropData.Harvest = _type;
+    _cropData._type = _type;
+    if (this->isReadyToHarvest()==true) {
+        _cropData._isHarvest=true;
+    }
+    else {
+        _cropData._isHarvest = false;
+    }
+    return _cropData;
+}
 //设置当前的人物等级
 void Crops::setPlayerLevel(int level) {
     _playerLevel = level;
@@ -214,7 +225,12 @@ bool Crops::init(const std::string& type, int maxGrowthStage) {
 
     _sprite->setScale(CROP_START_RATIO);
     // 设置锚点（例如设置到底部中心点）
-    _sprite->setAnchorPoint(Vec2(CROP_HORIZONTAL_ANCHORPOINT, CROP_VERTICAL_ANCHORPOINT));
+    if (_type == "maple" || _type == "pine" || _type == "oak") {
+        _sprite->setAnchorPoint(Vec2(CROP_HORIZONTAL_ANCHORPOINT, TREE_VERTICAL_ANCHORPOINT));
+    }
+    else {
+        _sprite->setAnchorPoint(Vec2(CROP_HORIZONTAL_ANCHORPOINT, CROP_VERTICAL_ANCHORPOINT));
+    }
 
     this->addChild(_sprite);
     CCLOG("Crop initialized successfully");
@@ -224,8 +240,52 @@ bool Crops::init(const std::string& type, int maxGrowthStage) {
     return true;
 }
 
+// 根据天气管理干旱情况，判断是否需要浇水
+void Crops::manageDrought(Weather currentWeather) {
+    // 检查是否枯萎
+    if (!_isWatered) {
+        _daysWithoutWater++;
+        // 只处理干旱和晴天，雨天不需要浇水
+        if (currentWeather == Weather::Dry) {
+            // 干旱天气，每两天浇一次水
+            if (_daysWithoutWater >= 2) {
+                if (_resourceMap.find("wilt") != _resourceMap.end()) {
+                    const auto& textures = _resourceMap["wilt"];
+                    if (!textures.empty()) {
+                        _sprite->setTexture(textures[0]);
+                    }
+                }
+            }
+        }
+        else if (currentWeather == Weather::Sunny) {
+            if (_daysWithoutWater >= 3) {
+                if (_resourceMap.find("wilt") != _resourceMap.end()) {
+                    const auto& textures = _resourceMap["wilt"];
+                    if (!textures.empty()) {
+                        _sprite->setTexture(textures[0]);
+                    }
+                }
+            }
+        }
+        else if (currentWeather == Weather::Rainy) {
+            _daysWithoutWater = 0;
+        }
+        // 如果是雨天，不做任何操作
+    }
+    else {
+        _daysWithoutWater = 0;
+    }
+}
+
+
+
 //更新植物的生长状态
 void Crops::updateGrowth(float deltaTime) {
+
+    const TimeManager* timeManager = TimeManager::getInstance();
+    Season currentSeason = timeManager->getCurrentSeason();
+    Crops::setSeason(currentSeason); // 设置当前季节
+
     // 检查是否被采摘
     if (_isRemoved == true) {
         return;
@@ -272,21 +332,8 @@ void Crops::updateGrowth(float deltaTime) {
         }
     }
     if (_type != "oak" && _type != "maple" && _type != "pine") {
-        // 检查是否枯萎
-        if (!_isWatered) {
-            _daysWithoutWater++;
-            if (_daysWithoutWater >= 3) {
-                if (_resourceMap.find("wilt") != _resourceMap.end()) {
-                    const auto& textures = _resourceMap["wilt"];
-                    if (!textures.empty()) {
-                        _sprite->setTexture(textures[0]);
-                    }
-                }
-            }
-        }
-        else {
-            _daysWithoutWater = 0;
-        }
+        Weather currentWeather = Weather::Dry;
+        this->manageDrought(currentWeather);
         checkPests(); // 每次更新时检查病虫害
         _isWatered = false; // 每次更新后重置浇水状态
     }
@@ -375,7 +422,7 @@ void Crops::waterCrop() {
     frames.pushBack(SpriteFrame::create("../Resources/Animations/water/water_5.png", Rect(0, 0, 70, 70)));
 
     // 创建动画
-    Animation* animation = Animation::createWithSpriteFrames(frames, 0.7f);  // 每帧持续0.2秒
+    Animation* animation = Animation::createWithSpriteFrames(frames, 0.2f);  // 每帧持续0.2秒
     Animate* animate = Animate::create(animation);
 
     // 显示浇水动画
@@ -532,3 +579,5 @@ void Crops::chopTree() {
     // 执行动作
     this->_sprite->runAction(fullSequence);
 }
+
+

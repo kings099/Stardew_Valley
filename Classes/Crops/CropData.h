@@ -14,10 +14,9 @@
 #include "cocos2d.h"
 
 struct CropData {
-    std::string type;  // 农作物类型
-    cocos2d::Vec2 position; // 位置
-    int growthStage;   // 当前生长阶段
-    bool isWatered;    // 是否已被浇水
+    std::string _type;  // 农作物类型
+    bool _isHarvest;   // 是否可以收获
+    std::string Harvest;    // 收获的东西
 };
 
 #endif // __CROP_DATA_H__

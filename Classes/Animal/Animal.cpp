@@ -15,8 +15,8 @@ std::unordered_map<std::string, std::vector<std::string>> Animal::_resourceMap;
 std::unordered_map<std::string, std::unordered_map<std::string, std::vector<std::string>>> Animal::_animationMap;
 
 Animal::Animal()
-    : _type("chicken"), _affection(100.0f), _isFed(false), _lastFedTime(0.0f),
-    _affectionDecayRate(1.0f), _maxAffection(100.0f), _sprite(nullptr), _currentAnimation(nullptr),
+    : _type("chicken"), _affection(120.0f), _isFed(false), _lastFedTime(0.0f), _previousAffection(24.0f), _secondLastAffection(24.0f),
+    _affectionDecayRate(1.0f), _maxAffection(120.0f), _sprite(nullptr), _currentAnimation(nullptr), currentEggCount(0),
     _areaSize(40.0f), _angryIcon(nullptr) {  // 初始化怒气图标为 nullptr
 }
 
@@ -162,7 +162,7 @@ bool Animal::init(const std::string& type, const Vec2& startPosition) {
     addChild(_sprite);
 
     // 开始定时更新小动物的位置
-    if (this->_type == "chicken") {
+    if (this->_type == "chicken") {//小鸡走的比牛羊快
         schedule([this](float deltaTime) {
             setRandomMovement(deltaTime);  // 更新位置
             }, 0.4f, "move_key");  // 每0.3秒更新一次
@@ -177,7 +177,7 @@ bool Animal::init(const std::string& type, const Vec2& startPosition) {
 
     schedule([this](float deltaTime) {
         updateAffection(deltaTime);  // 更新好感度
-        }, 1.0f, "affection_key");  // 每1秒更新一次好感度
+        }, 1.0f, "affection_key");  // 每一天更新一次好感度
 
 }
 
@@ -185,22 +185,55 @@ bool Animal::init(const std::string& type, const Vec2& startPosition) {
 void Animal::feed() {
     _isFed = true;
     _affection = _maxAffection;  // 喂养后好感度恢复到最大值
-    _lastFedTime = 0.0f;  // 重置喂养时间
+    //_lastFedTime = 0.0f;  // 重置喂养时间
     CCLOG("%s is fed!", _type.c_str());
 }
 
-//更新动物好感度
+// 更新动物好感度
 void Animal::updateAffection(float deltaTime) {
+    //_lastFedTime = 0.0f;  // 跟踪动物存在的总时间（秒）
+
+    //totalTime += deltaTime;
+
+    // 好感度衰减逻辑
     if (!_isFed) {
         _lastFedTime += deltaTime;
-        _affection -= _affectionDecayRate * deltaTime;  // 根据时间衰减好感度
-        if (_affection < 0) _affection = 0;
-
-        // 如果好感度降为零，触发发怒函数
-        if (isAngry()) {
-            handleAngry();
+        _affection -= _affectionDecayRate * deltaTime;  // 每秒根据衰减率更新好感度
+        if (_affection < 0) {
+            _affection = 0;  // 好感度不能为负
         }
     }
+    else {
+        // 如果喂养过，恢复好感度
+        _affection = _maxAffection;
+        _isFed = false;  // 重置喂养状态，等待下次喂养
+    }
+
+    // 如果好感度为0，触发动物发怒
+    if (_affection == 0) {
+        if (isAngry()) {
+            handleAngry();  // 处理动物发怒逻辑
+        }
+    }
+
+    // 判断是否满足下蛋条件
+    if (_type == "chicken" && _lastFedTime >= 24.0f) {
+        if (_affection > 0) {
+            layEgg();  // 调用下蛋函数
+        }
+    }
+
+    // 每24秒重置时间，并更新好感度衰减和下蛋条件
+    if (_lastFedTime >= 24.0f) {
+        _lastFedTime = 0.0f;  // 重置时间计数器
+    }
+}
+
+// 下蛋函数
+void Animal::layEgg() { 
+    // 无论如何，增加蛋的数量
+    currentEggCount++;
+    CCLOG("!!!!!!!!!!!Current egg count: %d!!!!!!!!!!!!", currentEggCount);  // 输出当前蛋的数量
 }
 
 //返回动物是否发怒的判断
