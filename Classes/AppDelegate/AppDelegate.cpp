@@ -1,16 +1,14 @@
+/****************************************************************
+ * Project Name:  Stardew_Valley
+ * File Name:     AppDelegate.cpp
+ * File Function: Main function of the game.
+ * Update Date:   2024/12/20
+ * License:       MIT License
+ ****************************************************************/
 #include "AppDelegate.h"
 #include "../Classes/Scene/HelloWorldScene.h"
 #include "proj.win32/Constant.h"
 #include "Classes/Scene/GameMainScene.h"
-
-// #define USE_AUDIO_ENGINE 1
-// #define USE_SIMPLE_AUDIO_ENGINE 1
-
-#if USE_AUDIO_ENGINE && USE_SIMPLE_AUDIO_ENGINE
-#error "Don't use AudioEngine and SimpleAudioEngine at the same time. Please just select one in your game!"
-#endif
-
-
 #include "audio/include/AudioEngine.h"
 using namespace cocos2d::experimental;
 
@@ -49,6 +47,7 @@ static int register_all_packages()
 bool AppDelegate::applicationDidFinishLaunching() {
     // 获取游戏引擎的导演实例
     auto director = Director::getInstance();
+
     // 获取 OpenGL 视图
     auto glview = director->getOpenGLView();
 
@@ -96,6 +95,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     // 运行启动场景
     director->runWithScene(scene);
 
+    // 预加载音乐
     AudioEngine::preload("../Resources/Music/HelloMusic.mp3", [](bool success) {
         if (success) {
             CCLOG("Audio loaded successfully");
@@ -112,16 +112,11 @@ bool AppDelegate::applicationDidFinishLaunching() {
 // 当应用程序进入后台时调用此函数
 void AppDelegate::applicationDidEnterBackground() {
     Director::getInstance()->stopAnimation();
-
-
     AudioEngine::pauseAll();
-
 }
 
 // this function will be called when the app is active again
 void AppDelegate::applicationWillEnterForeground() {
     Director::getInstance()->startAnimation();
-
     AudioEngine::resumeAll();
-
 }

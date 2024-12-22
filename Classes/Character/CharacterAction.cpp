@@ -43,9 +43,16 @@ bool CharacterAction::onMouseDown(cocos2d::Event* event, GameCharacterAction& ga
 		else if (mouseEvent->getMouseButton() == EventMouse::MouseButton::BUTTON_RIGHT) {
 			gameCharacterAction = getRightButtonAction();
 		}
+<<<<<<< Updated upstream
 		_targetTileNode = getTileInfo(interactionManager, gameCharacterAction);
+=======
+		if (gameCharacterAction != NoneAction) {
+			_targetTileNode = getTileInfo(interactionManager, gameCharacterAction);
+		}
+		targetTilePos = _targetTileNode.tilePos;
+>>>>>>> Stashed changes
 		if (checkActionIsValid(gameCharacterAction, targetTilePos, interactionManager)) {
-			getObject(gameCharacterAction, interactionManager);
+w			getObject(gameCharacterAction, interactionManager);
 			updateSkillExprience(gameCharacterAction);
 			updateSkillLevel();
 			return true;
