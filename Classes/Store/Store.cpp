@@ -26,7 +26,7 @@ Store::Store() :
 // 新的一天刷新商店货物
 void Store::refreshStock() {
 	_product.clear();
-	int seedProductKind = rand() % PRODUCE_KIND_NUM_EACH_DAY;
+	int seedProductKind = rand() % PRODUCE_KIND_NUM_EACH_DAY+1;	//至少有一个种子
 	int baseProductKind = PRODUCE_KIND_NUM_EACH_DAY - seedProductKind;
 	
 	// 随机选取后要判断是否能购买以及角色技能等级是否能解锁
