@@ -171,6 +171,9 @@
     <ClInclude Include="..\Classes\Maps\IndoorLighting.h">
       <Filter>Classes\Maps</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\Layer\FestivalLayer.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -280,6 +283,9 @@
     </ClCompile>
     <ClCompile Include="..\Classes\Maps\IndoorLighting.cpp">
       <Filter>Classes\Maps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\FestivalLayer.cpp">
+      <Filter>Classes\Layer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

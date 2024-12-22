@@ -33,7 +33,7 @@ const std::string APPLICATION_TITLE = u8"星露谷物语 Stardew Valley";       
 const cocos2d::Color4B HLAFBLACK = cocos2d::Color4B(0, 0, 0, 200);         // 半透明黑色
 
 //游戏登录界面相关设置
-constexpr float VISIBLE_SIZE_RATIO_X = 1.0f;                               // 横向屏幕宽度比例因子（常量，默认1.0）
+constexpr float UPDATE_RATIO= 1.0f;                                        // 组件移动速度
 constexpr float VISIBLE_SIZE_RATIO_Y = 1.0f;                               // 纵向屏幕高度比例因子（常量，默认1.0）
 constexpr float INPUT_BOX_HEIGHT_RATIO = 0.07f;                            // 输入框高度的比例因子（默认 7%）,实际数值为屏幕高度*该因子
 constexpr float VERTICAL_SPACING_RATIO = 0.02f;                            // 提示文本和输入框之间的垂直间距,实际数值为屏幕高度*该因子
@@ -42,15 +42,18 @@ constexpr float LABEL_Y_OFFSET = 0.6f;                                     // �
 constexpr float HALF_FACTOR = 0.5f;                                        // 替代 / 2 的常量因子
 
 //NPC相关设置
+
+constexpr float INTERACTION_DISTANCE = 30.0f;                               //能够与NPC实现互动的最小距离
 constexpr float NPC_WIDTH = 16;											    // NPC宽度
 constexpr float NPC_HEIGHT =32;                                             // NPC高度
 constexpr int   AFFECTION_INDEX = 25;                                       // NPC喜爱度因子
 constexpr int   MAX_AFFECTION = 100;                                        //最大喜爱度的值
 constexpr int   MARRIAGE_AFFECTION = 20;                                    //满足结婚条件的喜爱度下限
 constexpr float DIALOG_WIDTH = 500.0f;                                      //对话框宽度
-constexpr float DIALOG_HEIGHT = 120.0f;                                     //对话框高度
+constexpr float DIALOG_HEIGHT = 200.0f;                                     //对话框高度
 constexpr int DIALOG_X_OFFSET = 250;                                        //对话框相对NPC的偏移量
 constexpr int DIALOG_Y_OFFSET = 160;                                        //对话框相对于NPC的偏移量
+
 
 // 移动相关设置
 constexpr auto INVIAID_KEY = cocos2d::EventKeyboard::KeyCode::KEY_NONE;		// 无效键值
@@ -279,7 +282,8 @@ constexpr int PINE_MAX_GROWTHSTAGE = 5;                                     //�
 constexpr float CROP_START_RATIO = 1.5f;                                    //农作物未成熟时的缩放比例
 constexpr float CROP_MATURE_RATIO = 1.0f;                                    //农作物成熟时的缩放比例
 constexpr float CROP_HORIZONTAL_ANCHORPOINT = 0.5f;					        // 树水平锚点
-constexpr float CROP_VERTICAL_ANCHORPOINT = 0.0f;						    // 树垂直锚点
+constexpr float TREE_VERTICAL_ANCHORPOINT = 0.0f;						    // 树垂直锚点
+constexpr float CROP_VERTICAL_ANCHORPOINT = 0.5f;						    // 树垂直锚点
 
 //动物类
 constexpr float ANIMAL_RATIO = 1.0f;                                            //动物类的缩放比例
@@ -830,7 +834,112 @@ GameBaseObject(42, "../Resources/Objects/Base/TunaFish.png", "TunaFish", "金枪
    false, // 能否放置
    false, //能否合成
    {}    //合成物品的原料
-)
+),
+
+GameBaseObject(43, "../Resources/Objects/Base/BakedFish.png", "BakedFish", "烤鱼", Collect,  // 烤鱼
+    100, // 最大存储量
+    2,   // 解锁所需等级
+    true, // 是否能出售
+    300,  // 出售价格
+    false, // 是否可以购买
+    INVAVID_NUM,    // 购买价格
+    true, // 是否可以食用
+    140,    // 食用恢复的能量值
+    true, // 能否放置
+    true, //能否合成
+    { {"Salmon",1 } }    //合成物品的原料
+),
+GameBaseObject(44, "../Resources/Objects/Base/FriedEgg.png", "FriedEgg", "煎鸡蛋", Collect,  // 煎鸡蛋
+    100, // 最大存储量
+    1,   // 解锁所需等级
+    true, // 是否能出售
+    200,  // 出售价格
+    false, // 是否可以购买
+    INVAVID_NUM,    // 购买价格
+    true, // 是否可以食用
+    70,    // 食用恢复的能量值
+    true, // 能否放置
+    true, //能否合成
+    { {"Egg",1 } }    //合成物品的原料
+),
+GameBaseObject(45, "../Resources/Objects/Base/Egg.png", "Egg", "鸡蛋", Collect,  // 鸡蛋
+    100, // 最大存储量
+    1,   // 解锁所需等级
+    true, // 是否能出售
+    150,  // 出售价格
+    false, // 是否可以购买
+    INVAVID_NUM,    // 购买价格
+    true, // 是否可以食用
+    70,    // 食用恢复的能量值
+    true, // 能否放置
+    false, //能否合成
+    { }    //合成物品的原料
+),
+GameBaseObject(46, "../Resources/Objects/Base/Sashimi.png", "Sashimi", "生鱼片", Collect,  // 生鱼片
+    100, // 最大存储量
+    1,   // 解锁所需等级
+    true, // 是否能出售
+    250,  // 出售价格
+    false, // 是否可以购买
+    INVAVID_NUM,    // 购买价格
+    true, // 是否可以食用
+    200,    // 食用恢复的能量值
+    true, // 能否放置
+    true, //能否合成
+    { {"Sardines",2}}    //合成物品的原料
+),
+GameBaseObject(47, "../Resources/Objects/Base/PumpkinSoup.png", "PumpkinSoup", "南瓜汤", Collect,  // 南瓜汤
+    100, // 最大存储量
+    1,   // 解锁所需等级
+    true, // 是否能出售
+    200,  // 出售价格
+    false, // 是否可以购买
+    INVAVID_NUM,    // 购买价格
+    true, // 是否可以食用
+    225,    // 食用恢复的能量值
+    true, // 能否放置
+    true, //能否合成
+    { {"pumpkin",2} }    //合成物品的原料
+),
+GameBaseObject(47, "../Resources/Objects/Base/Salad.png", "Salad", "沙拉", Collect,  // 沙拉
+    100, // 最大存储量
+    1,   // 解锁所需等级
+    true, // 是否能出售
+    280,  // 出售价格
+    false, // 是否可以购买
+    INVAVID_NUM,    // 购买价格
+    true, // 是否可以食用
+    280,    // 食用恢复的能量值
+    true, // 能否放置
+    true, //能否合成
+    { {"cauliflower",1}, {"kale",2}}    //合成物品的原料
+),
+GameBaseObject(48, "../Resources/Objects/Base/Ring.png", "Ring", "戒指", Mine,  // 戒指
+    100, // 最大存储量
+    1,   // 解锁所需等级
+    true, // 是否能出售
+    8000,  // 出售价格
+    true, // 是否可以购买
+    2000,    // 购买价格
+    false, // 是否可以食用
+    0,    // 食用恢复的能量值
+    true, // 能否放置
+    false, //能否合成
+    {}    //合成物品的原料
+    ),
+GameBaseObject(49, "../Resources/Objects/Base/Ruby.png", "Ruby", "红宝石", Mine,  // 红宝石
+    100, // 最大存储量
+    1,   // 解锁所需等级
+    true, // 是否能出售
+    2000,  // 出售价格
+    true, // 是否可以购买
+    1000,    // 购买价格
+    false, // 是否可以食用
+    0,    // 食用恢复的能量值
+    true, // 能否放置
+    false, //能否合成
+    {}    //合成物品的原料
+    ),
 
    // GameBaseObject(30,"","None","无效物品",GameObjectSkillType::None,0,0,false,INVAVID_NUM,false,INVAVID_NUM,false,INVAVID_NUM,false,false,{})
 };

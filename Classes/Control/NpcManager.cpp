@@ -15,13 +15,11 @@ NpcManager* NpcManager::_instance = nullptr;
 
 // 构造函数
 NpcManager::NpcManager() {
-    // 可以在此进行初始化
-    // 例如：initializeNPCs();
+
 }
 
 // 析构函数
 NpcManager::~NpcManager() {
-    // 清理 NPC 列表
     for (auto npc : _npcs) {
         delete npc;
     }
@@ -46,13 +44,11 @@ void NpcManager::initializeNPCs() {
         "Thank you for the gift"
     };
     // 添加任务给 Abigail（现在奖励是好感度）
-    Task* task1 = new Task("Give me a gift from the mine.", "Timber", 1, 10);       // 10 好感度
-    Task* task2 = new Task("Help me repair the building.","Timber", 4, 20);                 // 20 好感度
+    Task* task1 = new Task("Give me a gift (I like pumpkin)", "pumpkin", 1, 10);               
+    Task* task2 = new Task("Help me repair the building.","Timber", 4, 20);                  
 
     npc1->addTask(task1);
     npc1->addTask(task2);
-
-    // 将 Abigail NPC 加入到 NPC 列表
     _npcs.push_back(npc1);
  
 

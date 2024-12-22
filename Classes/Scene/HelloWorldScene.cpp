@@ -7,32 +7,19 @@
  * License:       MIT License
  ****************************************************************/
 #include "HelloWorldScene.h"
-#include "SimpleAudioEngine.h"
-#include "Layer/LoginLayer.h"
-#include "ui/CocosGUI.h"
-#include "../Classes/Maps/FarmMap.h"
-#include "../Classes/Character/CharacterInfo.h"
-#include "../Classes/MenuImage/HoverMenuItemImage.h"
-#include "GameMainScene.h"
-#include "Control/NpcManager.h"             
-#include "Control/NpcInteractionManager.h"  
-#include "Layer/AudioControlLayer.h"
+
 
 using namespace cocos2d::experimental;
 USING_NS_CC;
 
+
+// 创建并返回 HelloWorld 场景
 Scene* HelloWorld::createScene()
 {
     return HelloWorld::create();
 }
 
-// Print useful error message instead of segfaulting when files are not there.
-static void problemLoading(const char* filename)
-{
-    printf("Error while loading: %s\n", filename);
-    printf("Depending on how you compiled you might have to add 'Resources/' in front of filenames in HelloWorldScene.cpp\n");
-}
-
+// 初始化 HelloWorld 场景
 bool HelloWorld::init()
 {
     // 创建场景
@@ -40,36 +27,30 @@ bool HelloWorld::init()
         return false;
     }
 
-    
     // 获取全局尺寸大小
     const auto visibleSize = Director::getInstance()->getVisibleSize();
     const Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
-    // 加载背景图片,层级为0
+    // 加载背景图片
     this->initBackground();
-  
-   
-    // 加载并设置游戏标题图片,层级为1
-    _titleSprite = Sprite::create("../Resources/Helloworld/gameTitle.png");  
-    if (_titleSprite == nullptr) {
-        problemLoading("'gameTitle.png'");
-    }
-    else {
-        // 设置标题图片的位置
-        _titleSprite->setPosition(Vec2(origin.x + visibleSize.width / 2, origin.y + visibleSize.height * 0.7));
-        this->addChild(_titleSprite, 1);  // 将标题添加到场景中
-    }
-   
-    //创建开始结束菜单项，层级为2
+
+    // 加载并设置游戏标题
+    _titleSprite = Sprite::create("../Resources/Helloworld/gameTitle.png");
+    _titleSprite->setPosition(Vec2(origin.x + visibleSize.width / 2, origin.y + visibleSize.height * 0.7));
+    this->addChild(_titleSprite);
+
+
+    //加载开始结束菜单项
     this->createMenuWithImage();
-  
-    // 创建音频控制层并添加到场景,层级为2
+
+    //加载音频控制层
     auto audioControlLayer = AudioControlLayer::create();
     this->addChild(audioControlLayer);
 
     return true;
 }
 
+//加载开始结束菜单项
 void HelloWorld::createMenuWithImage()
 {
     // 获取当前可见区域（窗口）或屏幕区域的大小（宽度和高度）
@@ -96,9 +77,10 @@ void HelloWorld::createMenuWithImage()
     auto menu = Menu::create(_startItem, _exitItem, nullptr);
     menu->setPosition(Vec2::ZERO);  // 设置菜单的原点位置
     this->addChild(menu, 2);  // 将菜单添加到场景中
-   
+
 }
 
+// 加载背景图片
 void HelloWorld::initBackground() {
     // 获取屏幕的尺寸
     const auto visibleSize = Director::getInstance()->getVisibleSize();
@@ -140,6 +122,7 @@ void HelloWorld::initBackground() {
         }, BG_UPDATE_RATIO, "backgroundMoveKey");
 }
 
+//点击开始按钮执行的回调函数
 void HelloWorld::startGameCallback(Ref* pSender)
 {
     CCLOG("Start Game!");
@@ -150,17 +133,15 @@ void HelloWorld::startGameCallback(Ref* pSender)
     _startItem->runAction(MoveBy::create(1.0f, Vec2(visibleSize.width, 0)));  // 平滑地右移到屏幕外
     _exitItem->runAction(MoveBy::create(1.0f, Vec2(visibleSize.width, 0)));   // 平滑地右移到屏幕外
     _titleSprite->runAction(MoveBy::create(1.0f, Vec2(visibleSize.width, 0))); // 平滑地右移到屏幕外
-    
+
     auto loginLayer = LoginLayer::create();
     this->addChild(loginLayer);
 
 }
 
-// exitGameCallback: 当点击“结束”按钮时，调用此函数
+//点击结束按钮执行的回调函数
 void HelloWorld::exitGameCallback(Ref* pSender)
 {
-    CCLOG("Exit Game!");  // 打印日志信息（用于调试）
-    // 退出游戏：退出应用
     Director::getInstance()->end();  // 结束应用
 }
 

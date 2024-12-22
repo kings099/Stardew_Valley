@@ -13,17 +13,16 @@
 #include "GiftItemManager.h"
 
 
-
+ // 获取 GiftItemManager 的单例实例
 GiftItemManager* GiftItemManager::getInstance() {
     static GiftItemManager instance;  // 静态局部变量，确保只创建一个实例
     return &instance;  // 返回实例的指针
 }
-
+//构造函数
 GiftItemManager::GiftItemManager() {
-    // 初始化礼物数据（例如可以在这里调用 initializeGifts() 方法）
     initializeGifts();
 }
-
+// 初始化礼物
 void GiftItemManager::initializeGifts() {
     GiftItem rose("Ring", 10);               //NPC对Ring反应的默认值
     rose.setAffectionForNPC("Abigail", 20);  // Abigail 对 Ring 的反应更大
@@ -42,6 +41,7 @@ void GiftItemManager::initializeGifts() {
     _gifts.push_back(teddyBear);
 }
 
+// 根据名称获取礼物
 GiftItem* GiftItemManager::getGiftByName(const std::string& name) {
     // 根据名称查找礼物
     for (auto& gift : _gifts) {
