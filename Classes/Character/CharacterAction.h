@@ -20,10 +20,13 @@ public:
 	CharacterAction();
 
 	// 按下鼠标事件触发函数
-	void onMouseDown(cocos2d::Event* event,GameCharacterAction &gameCharacterAction,cocos2d::Vec2 & targetTilePos, InteractionManager* interactionManager);
+	bool onMouseDown(cocos2d::Event* event,GameCharacterAction &gameCharacterAction,cocos2d::Vec2 & targetTilePos, InteractionManager* interactionManager);
 
-	// 根据动作改变物品
-	void changeObject(GameCharacterAction action,InteractionManager* interactionManager);
+	// 获得物品
+	void getObject(GameCharacterAction action,InteractionManager* interactionManager);
+
+	// 使用物品
+	void useObject(GameCharacterAction action, InteractionManager* interactionManager);
 
 	// 获取技能等级
 	int getSkillLevel(GameObjectSkillType skillType);

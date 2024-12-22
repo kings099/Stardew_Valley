@@ -95,9 +95,6 @@ public:
 	// 加载数据
 	bool loadData(const std::string& fileName);
 
-	// 回调函数
-	//void objectListChangeCallback(std::function<void(bool)> callback);
-
 	std::function<void(bool)> _callback;  // 用于保存回调
 
 private:

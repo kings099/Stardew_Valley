@@ -53,10 +53,6 @@ UILayer::UILayer() :
     std::fill_n(_openedObjectSpriteImage, OBJECT_LIST_COLS * OBJECT_LIST_ROWS, ObjectImageInfo());
     std::fill_n(_boxObjectSpriteImage, OBJECT_LIST_COLS, ObjectImageInfo());
     std::fill_n(_storeObjectInfo, PRODUCE_KIND_NUM_EACH_DAY, StoreObjectInfo());
- 
-    Box::getInstance().addBox(BoxNode(Vec2(_visibleSize.width / 2  , _visibleSize.height/2 )));
-    Box::getInstance().addBox(BoxNode(Vec2(_visibleSize.width / 2 + 100, _visibleSize.height / 2)));
-    Box::getInstance().addBox(BoxNode(Vec2(_visibleSize.width / 2 , _visibleSize.height / 2 + 100)));
     // 鼠标事件监听器
     auto mouseListener = cocos2d::EventListenerMouse::create();
     mouseListener->onMouseDown = CC_CALLBACK_1(UILayer::onMouseDown, this);
