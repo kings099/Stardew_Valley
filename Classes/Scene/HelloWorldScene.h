@@ -49,8 +49,8 @@ public:
 private:
     cocos2d::MenuItemImage* _startItem;  // "开始" 按钮
     cocos2d::MenuItemImage* _exitItem;   // "结束" 按钮
-    cocos2d::Sprite* _titleSprite;        // 标题图像
-    cocos2d::Layer* _loginLayer;
+    cocos2d::Sprite* _titleSprite;       // 标题图像
+    cocos2d::Layer* _loginLayer;         //登录界面
     
 };
 
