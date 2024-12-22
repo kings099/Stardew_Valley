@@ -97,6 +97,10 @@ void GameMainScene::initializeUI() {
     auto audioControlLayer = AudioControlLayer::create();
     _uiContainer->addChild(audioControlLayer);
 
+    // 创建节日控制层并添加到 UI 容器
+    auto fesivalLayer = FestivalLayer::create();
+    _uiContainer->addChild(fesivalLayer);
+
     // 启动时间管理器
     TimeManager::getInstance()->startUpdating();
 }

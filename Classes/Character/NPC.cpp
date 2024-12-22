@@ -289,7 +289,7 @@ void NPC::addTask(Task* task) {
 
 // 判断玩家是否接近
 bool NPC::isPlayerNear(cocos2d::Vec2 playerPosition) {
-    return playerPosition.distance(getPosition()) < 50.0f;
+    return playerPosition.distance(getPosition()) < INTERACTION_DISTANCE;
 }
 
 
