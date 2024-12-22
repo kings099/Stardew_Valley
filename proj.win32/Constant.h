@@ -421,12 +421,12 @@ const std::map< GameCharacterAction, std::vector<TileConstants::TileType>> ACTIO
     { Fertilize,    { TileConstants::Soiled}},        // 左键
     { GetWater,     {TileConstants::Water }},         // 右键
     { Weeding,      {TileConstants::Grass }},         // 左键
-    { Cutting,      {TileConstants::Tree }},          // 左键
+    { Cutting,      {TileConstants::Tree ,TileConstants::Branch,TileConstants::Wood}},          // 左键
     { Mining,       {TileConstants::Stone,TileConstants::Mine ,TileConstants::Treasure}},            // 左键
     { Fishing,      {TileConstants::Water }},         // 左键
     { Harvesting,   {TileConstants::Crop }},          // 右键
     { Placement,    {TileConstants::Soil }},          // 右键
-    //  { OpenBox, Box},
+    //{ OpenBox,      {TileConstants::Box}},            // 右键
     { DestoryObject, {TileConstants::Other} }         // 左键
   };
 
