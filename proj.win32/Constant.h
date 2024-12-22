@@ -143,7 +143,7 @@ constexpr int OBJECT_LIST_COLS = 12;										// 物品列表列数
 
 // UI 相关设置
 constexpr int UI_SCALE = 210.0f;                                            // UI界面缩放
-constexpr int FONT_SIZE = 24;                                               // 字体大小
+constexpr int FONT_SIZE = 20;                                               // 字体大小
 constexpr int MAP_LAYER_GRADE = 0;                                          // 地图层级
 constexpr int CHARACTER_LAYER_GRADE = 1;                                    // 角色层级
 constexpr int TREE_LAYER_GRADE = 2;                                         // 树木层级

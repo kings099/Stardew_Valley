@@ -22,6 +22,9 @@ public:
     // 获取当前季节
     Season getCurrentSeason() const;
 
+    // 获取当前季节
+    std::string getCurrentSeason_() const;
+
     // 获取当前游戏日
     int getCurrentDay() const;
 

@@ -56,6 +56,23 @@ Season TimeManager::getCurrentSeason() const {
     return season;
 }
 
+
+// 获取当前季节的字符串表示
+std::string TimeManager::getCurrentSeason_() const {
+    switch (season) {
+    case Spring:
+        return "Spr";  // 春天
+    case Summer:
+        return "Sum";  // 夏天
+    case Fall:
+        return "Aut";  // 秋天
+    case Winter:
+        return "Win";  // 冬天
+    default:
+        return "Unknown";  // 默认返回未知
+    }
+}
+
 int TimeManager::getCurrentDay() const {
     return day;
 }
@@ -99,6 +116,8 @@ void TimeManager::updateDayNightCycle() {
     // 根据时间来更新昼夜变化
     isDay = (hour >= 6 && hour < 18);
 }
+
+
 
 // 更新季节
 void TimeManager::updateSeason() {

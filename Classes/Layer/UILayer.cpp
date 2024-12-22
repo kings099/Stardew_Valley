@@ -527,10 +527,10 @@ void UILayer::updateTimeDisplay() {
 
     // 获取并更新时间信息（白天/晚上和当前时间）
     const bool isDaytime = timeManager->isDaytime();
-
-    std::string dayOrNight = isDaytime ? "Day" : "Night";
+    std::string season = timeManager->getCurrentSeason_();
+    std::string dayOrNight = isDaytime ? "D" : "N";
     std::string timeOfDay = timeManager->getCurrentTime();
-    _timeLabel2->setString(dayOrNight + " " + timeOfDay);  // 显示白天/晚上和当前时间的代码部分
+    _timeLabel2->setString(season+"-"+dayOrNight + " " + timeOfDay);  // 显示白天/晚上和当前时间的代码部分
 }
 
 // 更新角色金钱显示
