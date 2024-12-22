@@ -78,7 +78,8 @@ public:
 
     // 获取农作物数据
     CropData getCropData();
-
+    //移除农作物
+    void removeCrop();
 private:
     bool _isFertilized;         // 是否施肥
     std::string _type;          // 农作物类型
@@ -90,7 +91,7 @@ private:
     bool _hasPests;             // 是否有害虫
     float _pestProbability;     // 害虫发生的概率
     cocos2d::Sprite* _sprite;   // 农作物的显示精灵
-
+    float _wiltTime=0.0f;            //农作物枯萎时间
     CropData _cropData;         // 农作物数据
 
     // 静态变量：当前季节
