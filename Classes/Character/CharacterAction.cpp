@@ -158,6 +158,9 @@ GameCharacterAction CharacterAction::getLeftButtonAction() {
 // 获取角色打算执行的动作(鼠标右键)
 GameCharacterAction CharacterAction::getRightButtonAction() {
 	ObjectListNode currentObject = getCurrentObject();
+	if (_targetTileNode.type == TileConstants::TileType::Crop) {
+		return Harvesting;
+	}
 	switch (currentObject.objectNode.type) {
 	case None:
 		return NoneAction;
@@ -186,25 +189,22 @@ GameCharacterAction CharacterAction::getRightButtonAction() {
 // 判断角色是否可以执行动作
 bool CharacterAction::checkActionIsValid(GameCharacterAction action, Vec2& targetTilePos, InteractionManager* interactionManager) {
 	if (action == NoneAction)
-		return NoneAction;
+		return false;
 
-	TileInfo targetTileNode = getTileInfo(interactionManager, action);
-	targetTilePos = targetTileNode.tilePos;
 	// 检查动作是否与目标地块类型匹配
 	for (auto& test : ACTION_TO_TILEMAP) {
 		if (action == test.first) {
 			for (auto& tileType : test.second) {
-				if (tileType == targetTileNode.type) {
-					if (action == Watering) {
-							
-						}
-
-					return action;
+				if (tileType == _targetTileNode.type) {
+					return true;
 				}
 			}
 		}
 	}
-	return NoneAction;
+	if (action == Placement && !_targetTileNode.isObstacle) {
+		return true;
+	}
+	return false;
 }
 
 // 获取角色动作对象的瓦片信息
