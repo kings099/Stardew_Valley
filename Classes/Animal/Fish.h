@@ -45,8 +45,22 @@ public:
 
     // 捕获鱼
     static std::string catchFish(const Season season, int playerLevel);
+    struct FishData {
+        std::string name;
+        int level;
+    };
+    static std::unordered_map<std::string, FishData> fishLevelMap;  // 鱼等级的映射表
+    // 获取鱼的等级
+    int getFishLevel() const {
+        return _level;
+    }
 
+    // 设置鱼的等级
+    void setFishLevel(int level) {
+        _level = level;
+    }
 private:
+    int _level;  // 鱼的等级
     std::string _name;                    // 鱼的名字
     std::string _season;                  // 当前季节
     Vec2 _position;                       // 当前鱼的位置
@@ -57,6 +71,7 @@ private:
     Vec2 _initialPosition;                // 保存鱼的初始位置
     // 季节性鱼类映射
     static std::unordered_map<Season, std::vector<std::string>> _seasonFishMap;
+    
 
     // 加载动画帧的辅助函数
     Vector<SpriteFrame*> loadFrames(const std::vector<std::string>& framePaths, const Rect& frameRect);
