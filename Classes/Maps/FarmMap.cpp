@@ -12,6 +12,7 @@
 #include "Classes/Animal/Animal.h"
 #include "Classes/Animal/Fish.h"
 
+
 USING_NS_CC;
 
 FarmMap::FarmMap(const Vec2& mapPosition)
@@ -51,8 +52,6 @@ bool FarmMap::init(const std::string& mapFile, const Vec2& mapPosition, Node* Tr
        
     }
     _mapName = mapFile;
-    //// 在场景初始化时设置季节
-    Crops::setSeason(Season::Spring); // 设置当前季节为春季
     
     applySavedChanges();
     // 初始化小动物
@@ -303,6 +302,9 @@ void FarmMap::plantCrops(const Vec2& tilePos, const std::string cropName,const i
 
     // 设置玩家等级
     Crops::setPlayerLevel(characterLevel);
+
+    // 打印 tilePos 坐标信息
+    CCLOG("plantCrops - tilePos = (%f, %f)", tilePos.x, tilePos.y);
 
     int maxstage = KALE_MAX_GROWTHSTAGE;
     if (cropName == "pumpkin")

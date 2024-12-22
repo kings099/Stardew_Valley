@@ -23,11 +23,13 @@ protected:
     Sprite* _angryIcon; // 动物发怒的图标
     std::string _type;   // 动物类型
     float _affection;    // 动物的好感度
+    float _previousAffection;  // 昨天的好感度
+    float _secondLastAffection;  // 前天的好感度
     bool _isFed;         // 是否被喂食
     float _lastFedTime;  // 上次喂食的时间
     float _affectionDecayRate; // 好感度衰减速度
     float _maxAffection;    // 最大好感度
-
+    int currentEggCount;  // 当前蛋的数量
     Sprite* _sprite;   // 动物的精灵
     Action* _currentAnimation; // 当前正在播放的动画
 
@@ -64,7 +66,7 @@ public:
 
     // 更新好感度
     void updateAffection(float deltaTime);
-
+   
     // 判断动物是否发怒
     bool isAngry() const;
 
@@ -82,7 +84,8 @@ public:
 
     // 播放方向动画
     void playDirectionAnimation(const std::string& direction, int repeatCount);
-
+    //下蛋函数
+    void layEgg();
 };
 
 #endif // ANIMAL_H

@@ -334,13 +334,13 @@ void InteractionManager::getTreeAndChopAt(const Vec2& tilePos) {
         return;
     }
 
+
     // 使用多态调用 GameMap 的 getNodeAtPosition
     auto node = _gameMap->getNodeAtPosition(tilePos);
     // 转换为crop类型
     if(_gameMap->getType()==MapType::Farm)
     {
         auto treeSprite = dynamic_cast<Crops*>(node);
-        treeSprite->waterCrop();
         if (treeSprite) {
             CCLOG("Tree found at (%f, %f). Chopping tree...", tilePos.x, tilePos.y);
             treeSprite->chopTree();
@@ -348,6 +348,7 @@ void InteractionManager::getTreeAndChopAt(const Vec2& tilePos) {
         else {
             CCLOG("No tree found at tile position: (%f, %f)", tilePos.x, tilePos.y);
         }
+
     }
 }
 
@@ -411,6 +412,8 @@ bool InteractionManager::placeObjectAtTile(const Vec2& tilePos) {
 
 // 浇水效果
 bool InteractionManager::WateringAt(const Vec2& tilePos) {
+    // 打印调试信息
+        CCLOG("WateringAt: tilePos = (%f, %f)", tilePos.x, tilePos.y);
     if (!_gameMap) {
         CCLOG("InteractionManager: _gameMap is null.");
         return false;
