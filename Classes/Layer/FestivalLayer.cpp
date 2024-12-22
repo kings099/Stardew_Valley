@@ -12,15 +12,17 @@
 
 
 USING_NS_CC;
-
+// 构造函数
 FestivalLayer::FestivalLayer() : _festivalButton(nullptr) {
-    // 构造函数
+  
 }
 
+// 析构函数
 FestivalLayer::~FestivalLayer() {
-    // 析构函数
+
 }
 
+// 初始化函数
 bool FestivalLayer::init() {
     if (!Layer::init()) {
         return false;
@@ -59,7 +61,7 @@ bool FestivalLayer::init() {
     return true;
 }
 
-// 合并后的回调函数，传入字符串消息
+//点击按钮执行的回调函数
 void FestivalLayer::onButtonClicked(Ref* pSender, const std::string& message) {
     // 创建并显示对话框
     const auto visibleSize = Director::getInstance()->getVisibleSize();
@@ -70,6 +72,8 @@ void FestivalLayer::onButtonClicked(Ref* pSender, const std::string& message) {
     this->addChild(chatLayer);
 }
 
+
+//更新节日按钮是否可见
 void FestivalLayer::updateFestivalButtonVisibility() {
     // 获取当前日期
     TimeManager* timeManager = TimeManager::getInstance();
@@ -84,6 +88,7 @@ void FestivalLayer::updateFestivalButtonVisibility() {
     }
 }
 
+//更新社区按钮是否可见
 void FestivalLayer::updateCommunityButtonVisibility() {
     // 获取当前日期
     TimeManager* timeManager = TimeManager::getInstance();
@@ -98,6 +103,7 @@ void FestivalLayer::updateCommunityButtonVisibility() {
     }
 }
 
+// 创建并返回一个FestivalLayer实例
 FestivalLayer* FestivalLayer::create() {
     FestivalLayer* ret = new FestivalLayer();
     if (ret && ret->init()) {

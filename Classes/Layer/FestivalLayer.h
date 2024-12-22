@@ -29,6 +29,8 @@ public:
     // 更新按钮的显示状态
     void updateFestivalButtonVisibility();
     void  updateCommunityButtonVisibility();
+
+    //点击按钮时执行的回调函数
     void onButtonClicked(Ref* pSender, const std::string& message);
 
 

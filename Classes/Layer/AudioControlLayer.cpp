@@ -11,15 +11,15 @@
 #include "audio/include/AudioEngine.h" // 引入音频引擎
 
 USING_NS_CC;
-
+//构造函数
 AudioControlLayer::AudioControlLayer() : _isAudioPlaying(true), _audioButton(nullptr) {
     // 构造函数
 }
-
+//析构函数
 AudioControlLayer::~AudioControlLayer() {
     // 析构函数
 }
-
+// 初始化
 bool AudioControlLayer::init() {
     if (!Layer::init()) {
         return false;
@@ -42,7 +42,7 @@ bool AudioControlLayer::init() {
 
     return true;
 }
-
+// 停止音频回调函数
 void AudioControlLayer::stopAudioCallback(Ref* pSender) {
     if (_isAudioPlaying) {
         // 停止所有音频播放
@@ -72,7 +72,7 @@ void AudioControlLayer::stopAudioCallback(Ref* pSender) {
         _audioButton->addClickEventListener(CC_CALLBACK_1(AudioControlLayer::stopAudioCallback, this));
     }
 }
-
+// 播放音频回调函数
 void AudioControlLayer::startAudioCallback(Ref* pSender) {
     // 播放音频
     cocos2d::experimental::AudioEngine::play2d("../Resources/Music/HelloMusic.mp3", true);
@@ -87,7 +87,7 @@ void AudioControlLayer::startAudioCallback(Ref* pSender) {
     // 更新按钮回调函数为停止音频
     _audioButton->addClickEventListener(CC_CALLBACK_1(AudioControlLayer::stopAudioCallback, this));
 }
-
+// 创建实例
 AudioControlLayer* AudioControlLayer::create() {
     AudioControlLayer* ret = new AudioControlLayer();
     if (ret && ret->init()) {
