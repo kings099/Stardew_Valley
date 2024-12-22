@@ -79,9 +79,10 @@ private:
 	Character* _character;															// 角色指针
 	Store *_store;																	// 商店指针
 	cocos2d::Size _visibleSize;														// 可见区域的大小
-	cocos2d::Label* _timeLabel1;													// 显示星期和日期的标签指针
-	cocos2d::Label* _timeLabel2;													// 显示白天/晚上和小时的标签指针
+	cocos2d::Label* _weekDayLabel;													// 显示星期和日期的标签指针
+	cocos2d::Label* _timeHourLabel;													// 显示白天/晚上和小时的标签指针
 	cocos2d::Label* _characterMoneyLabel;											// 角色金钱显示标签指针
+	cocos2d::Label* _weatherLabel;													// 天气标签指针
 	cocos2d::Sprite* _timeDisplayLayer;												// 用作为时间显示器背景的图片指针
 	cocos2d::Sprite* _closedObjectListLayer;										// 物品栏关闭状态图片指针
 	cocos2d::Sprite* _openedObjectListLayer;										// 物品栏打开状态图片指针

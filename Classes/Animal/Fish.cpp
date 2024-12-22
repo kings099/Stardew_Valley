@@ -246,7 +246,7 @@ std::string Fishs::catchFish(const Season season,int playerLevel) {
 
    
     // 小概率不返回鱼
-    if (rand() % 100 < FAIL_TO_GET_FISH) {  // 10%的概率不返回鱼
+    if (rand() % 100 < FAIL_TO_GET_FISH) {  // 有概率概率不返回鱼,与人物技能等级
         CCLOG("No fish caught in this season.");
         return "";
     }

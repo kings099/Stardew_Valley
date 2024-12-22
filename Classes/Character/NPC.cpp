@@ -45,6 +45,7 @@ void NPC::initializeSprite(const std::string& idleImage, const std::vector<std::
     _walkAnimation = cocos2d::Animate::create(walkAnim);
 }
 
+// NPC 显示对话框
 void NPC::showDialog() {
     int dialogueIndex = _affection / AFFECTION_INDEX;
     dialogueIndex = std::min(dialogueIndex, (int)_dialogues.size() - 1);
@@ -53,6 +54,7 @@ void NPC::showDialog() {
     showDialogue(dialogue);
 }
 
+// 
 void NPC::showDialogue(const std::string& dialogueText) {
     // 创建 ChatLayer 实例并传入对话内容
     ChatLayer* chatLayer = ChatLayer::create(dialogueText);
@@ -66,6 +68,7 @@ void NPC::showDialogue(const std::string& dialogueText) {
     // 将 ChatLayer 添加为 NPC 的子节点
     this->addChild(chatLayer); 
 }
+
 // 增加好感度
 void NPC::increaseAffection(int value) {
    _affection = std::min(MAX_AFFECTION, _affection + value);

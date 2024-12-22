@@ -15,7 +15,7 @@
 #include <unordered_map>
 #include <vector>
 #include <string>
-#include "proj.win32/Constant.h"
+#include "../proj.win32/Constant.h"
 
 USING_NS_CC;
 
@@ -60,7 +60,7 @@ public:
         _level = level;
     }
 private:
-    int _level;  // 鱼的等级
+    int _level;                           // 鱼的等级
     std::string _name;                    // 鱼的名字
     std::string _season;                  // 当前季节
     Vec2 _position;                       // 当前鱼的位置
@@ -69,6 +69,7 @@ private:
     Animate* _currentAnimation;           // 当前动画
     int _moveDirection;                   // 鱼的移动方向 (1: 向右, -1: 向左)
     Vec2 _initialPosition;                // 保存鱼的初始位置
+
     // 季节性鱼类映射
     static std::unordered_map<Season, std::vector<std::string>> _seasonFishMap;
     

@@ -11,6 +11,7 @@
 #pragma once
 #ifndef NPC_H
 #define NPC_H
+
 #include "cocos2d.h"
 #include "Task.h"
 #include "GiftItem.h"
@@ -22,9 +23,6 @@
 #include <string>
 #include"Character.h"
 #include"Box/Box.h"
-
-
-
 
 class NPC : public cocos2d::Node {
 public: 
@@ -41,7 +39,6 @@ public:
 
     // 构造函数，初始化 NPC 名字和位置
     NPC(std::string name, cocos2d::Vec2 position, const std::string& idleImage, const std::vector<std::string>& walkFrames);
-
    
     // 初始化 NPC 的精灵和动画
     void initializeSprite(const std::string& idleImage, const std::vector<std::string>& walkFrames);

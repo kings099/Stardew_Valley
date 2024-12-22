@@ -22,11 +22,17 @@ public:
     // 获取当前季节
     Season getCurrentSeason() const;
 
-    // 获取当前季节
-    std::string getCurrentSeason_() const;
+    // 获取当前季节的字符串表示
+    std::string getCurrentSeasonStr() const;
 
     // 获取当前游戏日
     int getCurrentDay() const;
+
+    // 获取当前天气
+    Weather getCurrentWeather() const;
+
+    // 获取当前天气的字符串表示
+    std::string getCurrentWeatherStr() const;
 
     // 判断是否是白天
     bool isDaytime() const;
@@ -53,13 +59,17 @@ private:
     // 更新季节
     void updateSeason();
 
+    // 更新天气
+    void updateWeather();
+
     static TimeManager* instance;  // 单例指针
 
     int _timeInSeconds;  // 游戏总时间（秒）
     int _day;            // 当前游戏日
     int _hour;           // 当前小时
     int _minute;         // 当前分钟
-    Season _season;         // 当前季节
+    Season _season;      // 当前季节
+    Weather _weather;    // 当前天气
     bool _isDay;         // 是否为白天
 };
 
