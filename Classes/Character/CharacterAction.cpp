@@ -81,10 +81,10 @@ void CharacterAction::getObject(GameCharacterAction action, InteractionManager* 
 }
 
 // 获取技能等级
-int CharacterAction::getSkillLevel(int index) {
-	if (index < 0 || index >= SKILL_KIND_NUM)
+int CharacterAction::getSkillLevel(GameObjectSkillType skillType) {
+	if (skillType < 0 || skillType >= SKILL_KIND_NUM)
 		return -1;
-	return _skillLevel[index];
+	return _skillLevel[skillType];
 }
 
 // 获取技能等级

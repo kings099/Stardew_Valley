@@ -36,15 +36,15 @@ std::unordered_map<std::string, Fishs::FishData> Fishs::fishLevelMap = {
     {"Bigeye", {"Bigeye", 1}},
     {"LargemouthBass", {"LargemouthBass", 2}},
     {"Salmon", {"Salmon", 3}},
-    {"Squid", {"Squid", 2}},
-    {"Sardines", {"Sardines", 1}},
-    {"Herring", {"Herring", 2}},
-    {"RedMullet", {"RedMullet", 3}},
-    {"Carps", {"Carps", 4}},
-    {"Octopuses", {"Octopuses", 5}},
+    {"Squid", {"Squid", 1}},
+    {"Sardines", {"Sardines", 2}},
+    {"Herring", {"Herring", 5}},
+    {"RedMullet", {"RedMullet", 1}},
+    {"Carps", {"Carps", 1}},
+    {"Octopuses", {"Octopuses", 3}},
     {"RedSnapper", {"RedSnapper", 3}},
     {"SmallmouthBass", {"SmallmouthBass", 2}},
-    {"TunaFish", {"TunaFish", 5}},
+    {"TunaFish", {"TunaFish", 3}},
 };
 
 //初始化每个季节的鱼的类型

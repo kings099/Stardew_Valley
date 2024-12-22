@@ -26,7 +26,7 @@ public:
 	void getObject(GameCharacterAction action,InteractionManager* interactionManager);
 
 	// 获取技能等级
-	int getSkillLevel(int index);
+	int getSkillLevel(GameObjectSkillType skillType);
 
     // 获取角色金钱
 	int getMoney();

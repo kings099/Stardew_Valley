@@ -25,6 +25,7 @@ UILayer::UILayer() :
     _boxObjectListLayer(nullptr),
     _skillLevelBoardLayer(nullptr),
     _shopLayer(nullptr),
+    _synthesisTableLayer(nullptr),
     _nearestPlacementMarker(nullptr),
     _selectedObjectImage({nullptr,nullptr}),
     _deleteObjectButton(nullptr),
@@ -36,6 +37,7 @@ UILayer::UILayer() :
     _lastObjectListStatus(false),
     _boxObjectListStatus(false),
     _storeStatus(false),
+    _synthesisTableStatus(false),
     _lastSelectedObjectIndex(0),
     _startLocation({OpenedObjectList,-1})
 {
@@ -46,6 +48,7 @@ UILayer::UILayer() :
     _lastWeekDay = "Monday";
     std::fill_n(_selectObjectSpriteMarker, OBJECT_LIST_COLS, nullptr);
     std::fill_n(_skillLevelLayer, SKILL_KIND_NUM * SKILL_LEVEL_NUM, nullptr);
+    std::fill_n(_synthesisObjectSpriteImage, SYNTHESIS_TABLE_COLS * SYNTHESIS_TABLE_ROWS, nullptr);
     std::fill_n(_closedObjectSpriteImage, OBJECT_LIST_COLS, ObjectImageInfo());
     std::fill_n(_openedObjectSpriteImage, OBJECT_LIST_COLS * OBJECT_LIST_ROWS, ObjectImageInfo());
     std::fill_n(_boxObjectSpriteImage, OBJECT_LIST_COLS, ObjectImageInfo());
@@ -62,7 +65,7 @@ UILayer::UILayer() :
     this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(mouseListener, this);
     
     // 设置回调
-    _character->_pickUpCallback = [this](bool success) {
+    _character->_callback = [this](bool success) {
         if (success) {
             updateObjectList();
             showObjectImage();
@@ -96,6 +99,7 @@ bool UILayer::init() {
     showObjectImage();
     initializeSkillBoard();
     initializeShop();
+    initializeSynthesisTable();
     initializeTimeDisplay();
     return true;
 }
@@ -113,7 +117,7 @@ void UILayer::initializeObjectList() {
     _openedObjectListLayer->setVisible(false);
 
     _boxObjectListLayer = Sprite::create("../Resources/UI/BoxList.png");
-    _boxObjectListLayer->setPosition(Vec2(_visibleSize.width / 2, _visibleSize.height*3/5));
+    _boxObjectListLayer->setPosition(Vec2(_visibleSize.width / 2, _visibleSize.height * 3 / 5));
     this->addChild(_boxObjectListLayer, UI_LAYER_GRADE);
     _boxObjectListLayer->setVisible(false);
 
@@ -130,7 +134,7 @@ void UILayer::initializeObjectList() {
     _deleteObjectButton = HoverMenuItemImage::create(
         "../Resources/UI/DefaultGarbageBinButton.png",
         "../Resources/UI/HoverGarbageBinButton.png",
-        [this](cocos2d::Ref* sender) { _character->setObjectListStatus(false);  }
+        [this](cocos2d::Ref* sender) {}
     );//character->deleteCurrentObject();
     _deleteObjectButton->setPosition(Vec2(_visibleSize.width * 2 / 3, _visibleSize.height / 2));
     this->addChild(_deleteObjectButton, UI_LAYER_GRADE);
@@ -140,7 +144,7 @@ void UILayer::initializeObjectList() {
     _closeObjectListButton = HoverMenuItemImage::create(
         "../Resources/UI/defaultCloseMenuButton.png",
         "../Resources/UI/defaultCloseMenuButton.png",
-        [this](cocos2d::Ref* sender) { _character->setObjectListStatus(false); }
+        [this](cocos2d::Ref* sender) {  _character->resetKeyEnabled(); }
     );
     _closeObjectListButton->setPosition(Vec2(_visibleSize.width * 2 / 3, _visibleSize.height * 3 / 5));
     this->addChild(_closeObjectListButton, UI_LAYER_GRADE);
@@ -170,7 +174,7 @@ void UILayer::initializeSkillBoard() {
         for (int j = 0; j < SKILL_LEVEL_NUM; j++) {
             _skillLevelLayer[i * SKILL_LEVEL_NUM + j] = Sprite::create("../Resources/UI/SkillStar.png");
             _skillLevelLayer[i * SKILL_LEVEL_NUM + j]->setPosition(LocationMap::getInstance().getSkillLevelLocationMap().at(i * SKILL_LEVEL_NUM + j));
-            this->addChild(_skillLevelLayer[i * SKILL_LEVEL_NUM + j], UI_LAYER_GRADE + 1);
+            this->addChild(_skillLevelLayer[i * SKILL_LEVEL_NUM + j], OBJECT_LAYER_GRADE);
             _skillLevelLayer[i * SKILL_LEVEL_NUM + j]->setVisible(false);
         }
     }
@@ -193,14 +197,34 @@ void UILayer::initializeShop() {
     _sellObjectButton->setPosition(Vec2(_visibleSize.width * 4 / 5, _visibleSize.height * 1 / 3));
     this->addChild(_sellObjectButton, UI_LAYER_GRADE);
     _sellObjectButton->setVisible(false);
+
+    // 创建商店物品图片
+}
+
+// 初始化合成表
+void UILayer::initializeSynthesisTable() {
+    // 创建合成表背景板
+    _synthesisTableLayer = Sprite::create("../Resources/UI/SynthesisTable.png");
+    _synthesisTableLayer->setPosition(Vec2(_visibleSize.width * 4 / 5, _visibleSize.height / 2));
+    this->addChild(_synthesisTableLayer, UI_LAYER_GRADE);
+    _synthesisTableLayer->setVisible(false);
+
+    // 创建可合成物品图片
+    int index = 0;
+    for (const auto& object : GAME_BASE_OBJECTS_ATTRS) {
+        if (object._synthesis == true) {
+            _synthesisObjectSpriteImage[index] = HoverMenuItemImage::create(object._fileName, object._fileName, [this, object](cocos2d::Ref* sender) {_character->synthesizeObject(object);}, OBJECT_NODE_SCALE);
+            _synthesisObjectSpriteImage[index]->setPosition(LocationMap::getInstance().getSysthesisTableLocationMap().at(index));
+            _synthesisObjectSpriteImage[index]->setScale(OBJECT_NODE_SCALE);
+            this->addChild(_synthesisObjectSpriteImage[index], OBJECT_LAYER_GRADE);
+            _synthesisObjectSpriteImage[index]->setVisible(false);
+            index++;
+        }
+    }
 }
 
 // 更新物品栏
 void UILayer::updateObjectList() {
-    // 获取角色的物品栏状态和窗口大小
-    _objectListStatus = _character->getObjectListStatus();
-    _boxObjectListStatus = _character->getBoxStatus();
-    _storeStatus = _character->getStoreStatus();
     const int index = _character->getCurrentObjectIndex();
     // 根据角色的物品栏状态初始化物品栏背景
     if (!_objectListStatus) {
@@ -213,8 +237,8 @@ void UILayer::updateObjectList() {
         _deleteObjectButton->setVisible(false);
         _closeObjectListButton->setVisible(false);
         setSelectObjectSpriteMarker(index, true);
-        _skillLevelBoardLayer->setVisible(false);
-        setSkillLevel(false);
+        setSkillLevelVisible(false);
+        setSynthesisTableVisible(false);
     }
     else {
         _closedObjectListLayer->setVisible(false);
@@ -223,17 +247,24 @@ void UILayer::updateObjectList() {
             _boxObjectListLayer->setVisible(true);
             _shopLayer->setVisible(false);
             _sellObjectButton->setVisible(false);
+            setSynthesisTableVisible(false);
         }
         else if (_storeStatus) {
             _boxObjectListLayer->setVisible(false);
             _shopLayer->setVisible(true);
             _sellObjectButton->setVisible(true);
+            setSynthesisTableVisible(false);
+        }
+        else if (_synthesisTableStatus) {
+            _boxObjectListLayer->setVisible(false);
+            _shopLayer->setVisible(false);
+            _sellObjectButton->setVisible(false);
+            setSynthesisTableVisible(true);
         }
         _deleteObjectButton->setVisible(true);
         _closeObjectListButton->setVisible(true);
         setSelectObjectSpriteMarker(index, false);
-        _skillLevelBoardLayer->setVisible(true);
-        setSkillLevel(true);
+        setSkillLevelVisible(true);
  
     }
     _lastObjectListStatus = _objectListStatus;
@@ -286,9 +317,6 @@ void UILayer::initializeTimeDisplay() {
 void UILayer::onMouseDown(cocos2d::Event* event) {
     EventMouse* mouseEvent = dynamic_cast<EventMouse*>(event);
     Vec2 location = mouseEvent->getLocationInView();
-    _objectListStatus = _character->getObjectListStatus();
-    _boxObjectListStatus = _character->getBoxStatus();
-    _storeStatus = _character->getStoreStatus();
     _selectedObjectImage = { nullptr,nullptr };
 
     // 当物品栏被打开时才会检测
@@ -398,9 +426,6 @@ void UILayer::onMouseMove(cocos2d::Event* event) {
 
 // 释放鼠标事件触发函数
 void UILayer::onMouseUp(cocos2d::Event* event) {
-    _objectListStatus = _character->getObjectListStatus();
-    _boxObjectListStatus = _character->getBoxStatus();
-    _storeStatus = _character->getStoreStatus();
     if (_objectListStatus) {
         if (_selectedObjectImage.sprite != nullptr) {
             // 取消选中状态
@@ -497,6 +522,10 @@ void UILayer::onMouseUp(cocos2d::Event* event) {
 void UILayer::onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event) {
     const int index = _character->getCurrentObjectIndex();
     _objectListStatus = _character->getObjectListStatus();
+    _boxObjectListStatus = _character->getBoxStatus();
+    _storeStatus = _character->getStoreStatus();
+    _synthesisTableStatus = _character->getSynthesisTableStatus();
+    
     setSelectObjectSpriteMarker(_lastSelectedObjectIndex, false);
     if (!_objectListStatus) {
         setSelectObjectSpriteMarker(index, true);
@@ -514,8 +543,6 @@ void UILayer::onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Eve
     }
     _lastSelectedObjectIndex = index;
 }
-
-
 
 // 更新时间显示器
 void UILayer::updateTimeDisplay() {
@@ -560,13 +587,13 @@ void UILayer::updateCharacterMoneyLabel() {
 // 更新UI界面
 void UILayer::update(float deltaTime) {
     // 更新物品栏
-    _objectListStatus = _character->getObjectListStatus();
-
     // 根据物品栏状态更新物品栏图片
     if (_objectListStatus != _lastObjectListStatus) {
         updateObjectList();
         showObjectImage();
     }
+
+    // TODO:补充合成表逻辑
 
     // 更新时间显示器
     updateTimeDisplay();
@@ -576,11 +603,7 @@ void UILayer::update(float deltaTime) {
 }
 // 显示物品图片
 void UILayer::showObjectImage() {
-    _objectListStatus = _character->getObjectListStatus();
-    _boxObjectListStatus = _character->getBoxStatus();
-    _storeStatus = _character->getStoreStatus();
     // 清空之前的数量标签
-        // 清空之前的数量标签
     for (int i = 0; i < OBJECT_LIST_COLS; i++) {
         if (_closedObjectSpriteImage[i].sprite != nullptr) {
             this->removeChild(_closedObjectSpriteImage[i].sprite);
@@ -744,14 +767,38 @@ void UILayer::setStoreObjectInfoVisible(const StoreObjectInfo& storeObjectInfo, 
     storeObjectInfo.pricelabel->setVisible(visible);
 }
 
+// 设置技能表是否可见
+void UILayer::setSkillLevelVisible(bool visible) {
+    _skillLevelBoardLayer->setVisible(visible);
+
+    for (int i = 0; i < SKILL_KIND_NUM; i++) {
+        const int skillLevel = _character->getSkillLevel(static_cast<GameObjectSkillType>(i));
+        if (skillLevel > 0) {
+            for (int j = 0; j < skillLevel; j++) {
+                _skillLevelLayer[i * SKILL_LEVEL_NUM + j]->setVisible(visible);
+            }
+        }
+    }
+}
+
+// 设置合成表是否可见
+void UILayer::setSynthesisTableVisible(bool visible) {
+    _synthesisTableLayer->setVisible(visible);
+
+    for (int i = 0; i < SYNTHESIS_TABLE_ROWS; i++) {
+        for (int j = 0; j < SYNTHESIS_TABLE_COLS; j++) {
+            if (_synthesisObjectSpriteImage[i * SYNTHESIS_TABLE_COLS + j] != nullptr) {
+                _synthesisObjectSpriteImage[i * SYNTHESIS_TABLE_COLS + j]->setVisible(visible);
+            }
+        }
+    }
+}
+
 // 寻找最近可放置坐标
 Vec2 UILayer::findNearestPoint(cocos2d::Sprite* objectSprite) {
     float minDistance = FLT_MAX;
     Vec2 nearestPoint;
-
     const Vec2 currentPos = objectSprite->getPosition();
-    _objectListStatus = _character->getObjectListStatus();
-    _boxObjectListStatus = _character->getBoxStatus();
 
     if (_objectListStatus)  {  // 物品栏打开
         for (const auto& point : LocationMap::getInstance().getLocationMap()) {
@@ -772,9 +819,6 @@ Vec2 UILayer::findNearestPoint(cocos2d::Sprite* objectSprite) {
                 else {
                     continue;
                 }
-            }
-            else if (currentLocation.status == OpenedShopList) {
-                continue;
             }
 
             if (currentLocation.status == OpenedObjectList) {
@@ -809,17 +853,6 @@ void UILayer::setSelectObjectSpriteMarker(int index, bool show) {
         _selectObjectSpriteMarker[index]->setVisible(show);
 }
 
-// 设置技能等级的显示状态
-void UILayer::setSkillLevel(bool show) {
-    for (int i = 0; i < SKILL_KIND_NUM; i++) {
-        const int skillLevel = _character->getSkillLevel(i);
-        if (skillLevel > 0) {
-            for (int j = 0; j < skillLevel; j++) {
-                _skillLevelLayer[i * SKILL_LEVEL_NUM + j]->setVisible(show);
-            }
-        }
-    }
-}
 
 // 关闭回调
 void UILayer::menuCloseCallback(cocos2d::Ref* pSender) {
