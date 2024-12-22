@@ -23,22 +23,22 @@ CharacterInfo* CharacterInfo::getInstance() {
 
 // 设置角色信息，包括用户名、农场名和最喜欢的事物
 void CharacterInfo::setCharacterInfo(const std::string& username, const std::string& farmName, const std::string& favoriteThing) {
-    this->_username = username;      // 设置用户名
-    this->_farmName = farmName;      // 设置农场名称
-    this->_favoriteThing = favoriteThing;  // 设置最喜欢的事物
+    this->_username = username;      
+    this->_farmName = farmName;    
+    this->_favoriteThing = favoriteThing; 
 }
 
 // 获取用户名
 std::string CharacterInfo::getUsername() const {
-    return _username;  // 返回用户名
+    return _username; 
 }
 
 // 获取农场名称
 std::string CharacterInfo::getFarmName() const {
-    return _farmName;  // 返回农场名称
+    return _farmName;  
 }
 
 // 获取最喜欢的事物
 std::string CharacterInfo::getFavoriteThing() const {
-    return _favoriteThing;  // 返回最喜欢的事物
+    return _favoriteThing;
 }

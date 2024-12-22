@@ -1,4 +1,3 @@
-
  /****************************************************************
   * Project Name:  Stardew_Valley
   * File Name:     FestivalLayer.cpp

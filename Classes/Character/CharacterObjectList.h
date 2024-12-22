@@ -48,7 +48,7 @@ public:
 	bool synthesizeObject(GameBaseObject targetObject);
 
 	// 合成物品
-	bool synthesizeObject(const std::string &targetObjectName);
+	bool synthesizeObject(GameToolObject targetObject);
 
 	// 交换物品
 	void swapObject(int startIndex, int targetIndex);
