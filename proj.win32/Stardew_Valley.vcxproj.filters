@@ -81,7 +81,7 @@
     <ClInclude Include="..\Classes\Control\GameViewController.h">
       <Filter>Classes\Control</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\Scene\HelloWorldScene.h">
+    <ClInclude Include="..\Classes\Scene\GameStartScene.h">
       <Filter>Classes\Scene</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Scene\GameMainScene.h">
@@ -200,7 +200,7 @@
     <ClCompile Include="..\Classes\Control\GameViewController.cpp">
       <Filter>Classes\Control</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\Scene\HelloWorldScene.cpp">
+    <ClCompile Include="..\Classes\Scene\GameStartScene.cpp">
       <Filter>Classes\Scene</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\Scene\GameMainScene.cpp">
