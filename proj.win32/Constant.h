@@ -277,7 +277,8 @@ constexpr float CROP_MATURE_RATIO = 1.0f;                                    //�
 constexpr float CROP_HORIZONTAL_ANCHORPOINT = 0.5f;					        // 树水平锚点
 constexpr float TREE_VERTICAL_ANCHORPOINT = 0.0f;						    // 树垂直锚点
 constexpr float CROP_VERTICAL_ANCHORPOINT = 0.5f;						    // 树垂直锚点
-
+constexpr float WILTTIME = 96.0f;                                           //枯萎时间
+constexpr float FERTILIZER_GROWTH_RATE = 0.8f;                              //施肥加快比例
 //动物类设置
 constexpr float ANIMAL_RATIO = 1.0f;                                            //动物类的缩放比例
 constexpr float ANGRY_ICON_RATIO = 0.8f;                                        //动物发怒提示的缩放比例
