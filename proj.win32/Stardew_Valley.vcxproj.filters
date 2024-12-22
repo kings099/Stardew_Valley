@@ -108,9 +108,6 @@
     <ClInclude Include="..\Classes\Control\MapSwitchManager.h">
       <Filter>Classes\Control</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\Crops\CropData.h">
-      <Filter>Classes\Crops</Filter>
-    </ClInclude>
     <ClInclude Include="..\Classes\Crops\Crops.h">
       <Filter>Classes\Crops</Filter>
     </ClInclude>

@@ -147,19 +147,19 @@ std::unordered_map<std::string, std::unordered_map<Season, std::string>> Crops::
 };
 
 CropData Crops::getCropData() {
-    _cropData._Harvest = _type;
-    _cropData._type = _type;
+    _cropData.Harvest = _type;
+    _cropData.type = _type;
     if (this->isReadyToHarvest()==true) {
-        _cropData._isHarvest=true;
+        _cropData.isHarvest=true;
     }
     else {
-        _cropData._isHarvest = false;
+        _cropData.isHarvest = false;
     }
-    _cropData._isWatered = _isWatered;
-    _cropData._daysWithoutWater = _daysWithoutWater;
-    _cropData._growthStage = _growthStage;
-    _cropData._hasPests = _hasPests;
-    _cropData._isFertilized = _isFertilized;
+    _cropData.isWatered = _isWatered;
+    _cropData.daysWithoutWater = _daysWithoutWater;
+    _cropData.growthStage = _growthStage;
+    _cropData.hasPests = _hasPests;
+    _cropData.isFertilized = _isFertilized;
     return _cropData;
 }
 
