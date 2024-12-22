@@ -171,6 +171,7 @@ constexpr int UI_SCALE = 210.0f;                                            // U
 constexpr int FONT_SIZE = 24;                                               // 字体大小
 constexpr int MAP_LAYER_GRADE = 0;                                          // 地图层级
 constexpr int CHARACTER_LAYER_GRADE = 1;                                    // 角色层级
+constexpr int VIEW_CONTROLLER_LAYER_GRADE = 1;                              // 视角控制类层级
 constexpr int TREE_LAYER_GRADE = 2;                                         // 树木层级
 constexpr int UI_LAYER_GRADE = 3;                                           // UI层级
 constexpr int OBJECT_LAYER_GRADE = 4;                                       // 物品层级

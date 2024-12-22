@@ -7,8 +7,8 @@
  * License:       MIT License
  ****************************************************************/
 #pragma once
-#ifndef __FARM_SCENE_H__
-#define __FARM_SCENE_H__
+#ifndef __GAME_MAIN_SCENE_H__
+#define __GAME_MAIN_SCENE_H__
 
 #include "cocos2d.h"
 #include "SimpleAudioEngine.h"
@@ -41,20 +41,46 @@ public:
     
 
 private:
-    // 农场地图
-    FarmMap* _farmMap;
-  
-    // 角色
-    Character* _character;
+
+    // 模块化初始化方法
+    // 初始化地图和角色
+    void initializeMapAndCharacter();  
+
+    // 初始化视角控制和交互管理
+    void initializeViewControllerAndInteraction();
+
+    // 初始化 UI 层
+    void initializeUI();     
+
+    // 注册输入事件监听器
+    void registerInputListeners();
+
+    // 注册更新回调函数
+    void registerUpdateCallbacks();        
+
+    // 成员变量
+
+    // 当前地图指针 初始地图为农场地图
+    FarmMap* _farmMap = nullptr;                
+
+    // 角色单例
+    Character* _character = nullptr;           
 
     // 视角控制器
-    GameViewController* _viewController;
+    GameViewController* _viewController = nullptr; 
 
-    // 交互类管理
-    InteractionManager* _interaction;
+    // 交互管理器
+    InteractionManager* _interaction = nullptr; 
 
-    // UI层
-    UILayer* _uiLayer;
+    // UI 层
+    UILayer* _uiLayer = nullptr;                
+
+    // ui容器
+    Node* _uiContainer = nullptr;
+
+    // 地图切换管理器   
+    MapSwitchManager* _mapSwitchManager = nullptr;  
+
 };
 
-#endif // __FARM_SCENE_H__
+#endif // __GAME_MAIN_SCENE_H__
