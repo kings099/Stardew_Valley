@@ -51,7 +51,7 @@ public:
     // 获取某GID对应图块的属性
     cocos2d::ValueMap getTilePropertiesForGID(int GID) const;
 
-    // 替换指定图层的瓦片
+    // 替换指定图层的瓦片，在矿洞子类实现刷新逻辑记录
     virtual void replaceTileAt(const std::string& layerName, const Vec2& tileCoord, int newGID, bool isUserAction = true);
 
     // 获取作物的指针，在农场子类中实现，其他类型返回nullptr

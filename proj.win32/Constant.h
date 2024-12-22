@@ -129,7 +129,6 @@ namespace TileConstants {
         Soil,       // 可耕种土地
         Soiled,     // 已耕种土地
         Crop,       // 作物
-        Door,       // 门
         Other
     };
 
