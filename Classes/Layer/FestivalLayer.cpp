@@ -31,13 +31,13 @@ bool FestivalLayer::init() {
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
     // 创建节日活动按钮，默认设置为不可见
-    _festivalButton = ui::Button::create("../Resources/UI/festival.png", "../Resources/UI/festival.png");
+    _festivalButton = ui::Button::create("../Resources/UI/SkillStar.png", "../Resources/UI/SkillStar.png");
     _festivalButton->setPosition(Vec2(visibleSize.width - _festivalButton->getContentSize().width * 2,
         visibleSize.height - _festivalButton->getContentSize().height * 4));
     _festivalButton->setVisible(false); 
 
     // 创建社区活动按钮，默认设置为不可见
-    _communityButton = ui::Button::create("../Resources/UI/community.png", "../Resources/UI/community.png");
+    _communityButton = ui::Button::create("../Resources/UI/SkillStar.png", "../Resources/UI/SkillStar.png");
     _communityButton->setPosition(Vec2(visibleSize.width - _communityButton->getContentSize().width * 2,
         visibleSize.height - _communityButton->getContentSize().height * 6));
     _communityButton->setVisible(false);  // 默认按钮不可见
