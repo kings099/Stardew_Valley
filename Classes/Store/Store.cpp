@@ -70,11 +70,16 @@ bool Store::buyProduct(int index) {
 	if (characterMoney < _product[index].totalPrice) {
 		return false;
 	}
+	else if (_product[index].product.type == None) {
+		return false;
+	}
 	
-	_character->setMoney(_product[index].totalPrice * -1);
-	_character->pickUpObject(_product[index].product, _product[index].count);
-	_product[index] = { {  None,nullptr}, 0, 0, Season::All, Season::All };
-	return true;
+	if (_character->pickUpObject(_product[index].product, _product[index].count) == true) {
+		_character->setMoney(_product[index].totalPrice * -1);
+		_product[index] = { {  None,nullptr}, 0, 0, Season::All, Season::All };
+		return true;
+	}
+	return false;
 }
 
 // 出售商品
@@ -114,10 +119,12 @@ void Store::setSellProductCallback(std::function<void(bool)> callback) {
 	_sellProductCallback = callback;
 }
 
-// 根据季节更新价格
+// 更新价格
 void Store::updatePrices() {
 	_timeManager = TimeManager::getInstance();
-	int season = _timeManager->getCurrentSeason();
+
+	// 根据季节更新价格
+	const int season = _timeManager->getCurrentSeason();
 	for (int i = 0; i < _product.size(); i++) {
 		// 物品存在价格浮动
 		if (_product[i].discountSeason != Season::All) {
@@ -127,6 +134,14 @@ void Store::updatePrices() {
 			else if (_product[i].increaseSeason == season) {// 涨价
 				_product[i].totalPrice *= INCREASE_RATE_BY_SEASON;
 			}
+		}
+	}
+
+	// 根据日期更新价格
+	std::string weekDay = _timeManager->getWeekDay();
+	if (weekDay == "Thursday") {
+		for (int i = 0; i < _product.size(); i++) {
+			_product[i].totalPrice *= DISCOUNT_RATE_BY_SEASON;
 		}
 	}
 }

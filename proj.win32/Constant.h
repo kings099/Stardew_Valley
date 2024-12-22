@@ -8,7 +8,7 @@
 #include<fstream>
 #include <map>
 #include "cocos2d.h"
-
+#include"../Classes/MenuImage/HoverMenuItemImage.h"
 
 // 设备分辨率
 constexpr int DESIGN_RESOLUTION_WIDTH = 1920;                               // 设计分辨率宽度
@@ -36,10 +36,9 @@ constexpr float HALF_FACTOR = 0.5f;                                        // �
 constexpr float NPC_WIDTH = 32;											    // NPC宽度
 constexpr float NPC_HEIGHT = 64;                                            // NPC高度
 
-
 // 移动相关设置
 constexpr auto INVIAID_KEY = cocos2d::EventKeyboard::KeyCode::KEY_NONE;		// 无效键值
-constexpr float ACTION_RATE = 5.0f;											// 动作帧率
+
 constexpr int INVAVID_NUM = -1;												// 无效编号
 
 // 角色相关设置
@@ -58,6 +57,10 @@ constexpr int MIN_FISHING_DISTANCE = 3;                                     // �
 constexpr int MAX_FISHING_DISTANCE = 5;                                     // 鱼竿最大捕鱼距离
 constexpr int START_UP_MONEY = 500;                                         // 初始金钱
 constexpr float SKILL_GET_ITEM_PROBABILITY = 0.1f;                          // 技能等级对获取物品概率的影响因子
+constexpr int SYNTHESIS_TABLE_ROWS = 4;                                     // 合成台行数
+constexpr int SYNTHESIS_TABLE_COLS = 6;                                     // 合成台列数
+constexpr float ACTION_RATE = 5.0f;											// 动作帧率
+
 
 // 商店相关设置
 constexpr int PRODUCE_KIND_NUM_EACH_DAY = 4;                                // 每日出售的商品种类数量
@@ -65,6 +68,8 @@ constexpr int MAX_PRODUCT_COUNT_EACH_DAY = 5;                               // �
 constexpr int PRODUCT_ATTR_NUM = 3;                                         // 商品属性数量
 constexpr float INCREASE_RATE_BY_SEASON = 1.2f;                             // 商品价格上涨比例(季节)
 constexpr float DISCOUNT_RATE_BY_SEASON = 0.8f;                             // 商品价格下跌比例(季节)
+constexpr float DISCOUNT_RATE_BY_WEEKDAY = 0.5f;                             // 商品价格下跌比例(日期)
+
 
 // 场景过渡相关
 constexpr float LERP_SPEED = 0.1f;											// 插值平滑速度
@@ -165,6 +170,8 @@ constexpr int OBJECT_STORE_IMAGE_START_X = 1410;                            // �
 constexpr int OBJECT_STORE_IMAGE_START_Y = 603;                             // 商店售卖物品图片起始位置的Y坐标
 constexpr int MONEY_COUNT_LABEL_START_X = 1807;                             // 角色金钱数量标签起始位置的X坐标
 constexpr int MONEY_COUNT_LABEL_START_Y = 894;                              // 角色金钱数量标签起始位置的Y坐标
+constexpr int SYNTHESIS_TABLE_START_X = 1431;                               // 合成表图片起始位置的X坐标
+constexpr int SYNTHESIS_TABLE_START_Y = 583;                                // 合成表图片起始位置的Y坐标
 constexpr int OBJECT_STORE_IMAGE_NAME_HORIZONTAL_INTERVAL = 102;	        // 商店售卖物品图片名称水平间距
 constexpr int OBJECT_STORE_NAME_PRICE_HORIZONTAL_INTERVAL = 130;			// 商店售卖物品名称和价格水平间距
 constexpr int OBJECT_LIST_NODE_HORIZONTAL_INTERVAL = 42;					// 物品格子水平间距
@@ -182,25 +189,25 @@ constexpr int OPEN_OBJIEC_LIST_SELL_BUTTON_BOTTOM_BOUDARY = 392;			// 物品栏�
 const cocos2d::Vec2 RIGHT_ALIGNED_ANCHOR (1.0f, 0.5f );                     // 文字标签右对齐锚点设置
 
 //NPC求婚对话框相关设置
-constexpr float DIALOG_WIDTH_RATIO = 0.5f;                                      // 对话框宽度占屏幕宽度的比例
-constexpr float DIALOG_HEIGHT_RATIO = 0.25f;                                    // 对话框高度占屏幕高度的比例
-constexpr float BUTTON_SIZE_RATIO = 0.1f;                                       // 按钮大小占对话框大小的比例
-constexpr float BUTTON_OFFSET_RATIO = 0.2f;                                     // 按钮与对话框边缘的距离比例
+constexpr float DIALOG_WIDTH_RATIO = 0.5f;                                  // 对话框宽度占屏幕宽度的比例
+constexpr float DIALOG_HEIGHT_RATIO = 0.25f;                                // 对话框高度占屏幕高度的比例
+constexpr float BUTTON_SIZE_RATIO = 0.1f;                                   // 按钮大小占对话框大小的比例
+constexpr float BUTTON_OFFSET_RATIO = 0.2f;                                 // 按钮与对话框边缘的距离比例
 
 // 游戏时间设置
 constexpr int HOURS_IN_A_DAY = 24;                                          // 一天24小时                                     
 constexpr int DAYS_IN_A_SEASON = 7;                                         // 每季7天
 constexpr int DAYS_IN_A_YEAR = 28;                                          // 一年28天
 
-//农作物相关
-constexpr int CAULIFLOWER_MAX_GROWTHSTAGE = 5;                              //花椰菜共有5个生长阶段
-constexpr int KALE_MAX_GROWTHSTAGE = 5;                                     //甘蓝菜共有5个生长阶段
-constexpr int PUMPKIN_MAX_GROWTHSTAGE = 6;                                  //南瓜共有6个生长阶段
-constexpr int OAK_MAX_GROWTHSTAGE = 5;                                      //橡树共有5个生长阶段
-constexpr int MAPLE_MAX_GROWTHSTAGE = 5;                                    //枫树共有5个生长阶段
-constexpr int PINE_MAX_GROWTHSTAGE = 5;                                     //松树共有5个生长阶段
-constexpr float CROP_START_RATIO = 1.5f;                                    //农作物未成熟时的缩放比例
-constexpr float CROP_MATURE_RATIO = 1.0f;                                    //农作物成熟时的缩放比例
+//农作物相关设置
+constexpr int CAULIFLOWER_MAX_GROWTHSTAGE = 5;                              // 花椰菜共有5个生长阶段
+constexpr int KALE_MAX_GROWTHSTAGE = 5;                                     // 甘蓝菜共有5个生长阶段
+constexpr int PUMPKIN_MAX_GROWTHSTAGE = 6;                                  // 南瓜共有6个生长阶段
+constexpr int OAK_MAX_GROWTHSTAGE = 5;                                      // 橡树共有5个生长阶段
+constexpr int MAPLE_MAX_GROWTHSTAGE = 5;                                    // 枫树共有5个生长阶段
+constexpr int PINE_MAX_GROWTHSTAGE = 5;                                     // 松树共有5个生长阶段
+constexpr float CROP_START_RATIO = 1.5f;                                    // 农作物未成熟时的缩放比例
+constexpr float CROP_MATURE_RATIO = 1.0f;                                   // 农作物成熟时的缩放比例
 constexpr float CROP_HORIZONTAL_ANCHORPOINT = 0.5f;					        // 树水平锚点
 constexpr float CROP_VERTICAL_ANCHORPOINT = 0.0f;						    // 树垂直锚点
 
@@ -209,8 +216,8 @@ constexpr float ANIMAL_RATIO = 1.0f;                                            
 constexpr float ANGRY_ICON_RATIO = 0.8f;                                        //动物发怒提示的缩放比例
 
 //鱼类
-constexpr float FISH_RATIO = 1.0f;                                              //鱼的缩放比例
-constexpr float FAIL_TO_GET_FISH = 0.2f;                                        //钓不到鱼的概率
+constexpr float FISH_RATIO = 1.0f;                                              // 鱼的缩放比例
+constexpr float FAIL_TO_GET_FISH = 0.3f;                                        // 钓不到鱼的概率
 
 //动画类
 constexpr float WOOD_CUT_RATIO = 0.3f;                                          // 砍木桩动画的缩放比例
@@ -295,7 +302,6 @@ enum LocationStatus {
     ClosedObjectList,		// 物品栏关闭
     OpenedObjectList,		// 物品栏打开
     OpenedBoxList,			// 箱子列表打开
-    OpenedShopList 		    // 商店列表打开
 };
 
 
@@ -396,17 +402,17 @@ struct StoreObjectInfo {
 // 角色动作和地图类型对应关系
 const std::map< GameCharacterAction, std::vector<TileConstants::TileType>> ACTION_TO_TILEMAP = {
     { NoneAction,   { TileConstants::Other }},
-    { Plowing,      {TileConstants::Soil}},           // 左键
-    { Seeding,      {TileConstants::Soiled }},        // 右键
+    { Plowing,      { TileConstants::Soil}},           // 左键
+    { Seeding,      { TileConstants::Soiled }},        // 右键
     { Watering,     { TileConstants::Soiled }},       // 左键
     { Fertilize,    { TileConstants::Soiled}},        // 左键
-    { GetWater,     {TileConstants::Water }},         // 右键
-    { Weeding,      {TileConstants::Grass }},         // 左键
-    { Cutting,      {TileConstants::Tree ,TileConstants::Branch,TileConstants::Wood}},          // 左键
-    { Mining,       {TileConstants::Stone,TileConstants::Mine ,TileConstants::Treasure}},            // 左键
-    { Fishing,      {TileConstants::Water }},         // 左键
-    { Harvesting,   {TileConstants::Crop }},          // 右键
-    { Placement,    {TileConstants::Soil }},          // 右键
+    { GetWater,     { TileConstants::Water }},         // 右键
+    { Weeding,      { TileConstants::Grass }},         // 左键
+    { Cutting,      { TileConstants::Tree ,TileConstants::Branch,TileConstants::Wood}},          // 左键
+    { Mining,       { TileConstants::Stone,TileConstants::Mine ,TileConstants::Treasure}},            // 左键
+    { Fishing,      { TileConstants::Water }},         // 左键
+    { Harvesting,   { TileConstants::Crop }},          // 右键
+    { Placement,    { TileConstants::Soil }},          // 右键
     //{ OpenBox,      {TileConstants::Box}},            // 右键
     { DestoryObject, {TileConstants::Other} }         // 左键
   };
@@ -586,10 +592,11 @@ const std::vector<GameBaseObject> GAME_BASE_OBJECTS_ATTRS = {
     GameBaseObject(24,"../Resources/Objects/Base/Stone.png","Stone","石头",Mine,99,1,true,5,false,INVAVID_NUM,false,INVAVID_NUM,false,false,{}),
     GameBaseObject(25,"../Resources/Objects/Base/CopperParticle.png","CopperParticle","铜粒",Mine,99,1,true,12,false,INVAVID_NUM,false,INVAVID_NUM,false,false,{}),
     GameBaseObject(26,"../Resources/Objects/Base/IronParticle.png","IronParticle","铁粒",Mine,99,2,true,25,false,INVAVID_NUM,false,INVAVID_NUM,false,false,{}),
-    GameBaseObject(27,"../Resources/Objects/Base/Copper.png","Copper","铜锭",Mine,99,1,true,120,false,INVAVID_NUM,false,INVAVID_NUM,false,true,{{"CopperParticle",10}}),
-    GameBaseObject(28,"../Resources/Objects/Base/Iron.png","Iron","铁锭",Mine,99,1,true,250,false,INVAVID_NUM,false,INVAVID_NUM,false,true,{{"IronParticle",10}}),
-    GameBaseObject(29,"../Resources/Objects/Base/Fertilizer.png","Fertilizer","肥料",Farm,99,1,true,150,true,200,false,INVAVID_NUM,false,true,{{"Grass",5}}),
-    GameBaseObject(30,"../Resources/Objects/Base/Grass.png","Grass","草",Collect,99,1,true,5,false,INVAVID_NUM,false,INVAVID_NUM,false,true,{}),
+    GameBaseObject(27,"../Resources/Objects/Base/Copper.png","Copper","铜锭",Mine,99,1,true,120,false,INVAVID_NUM,false,INVAVID_NUM,false,true,{{"CopperParticle",5}}),
+    GameBaseObject(28,"../Resources/Objects/Base/Iron.png","Iron","铁锭",Mine,99,1,true,250,false,INVAVID_NUM,false,INVAVID_NUM,false,true,{{"IronParticle",5}}),
+    GameBaseObject(29,"../Resources/Objects/Base/Fertilizer.png","Fertilizer","肥料",Farm,99,1,true,150,true,200,false,INVAVID_NUM,false,true,{{"Grass",3}}),
+    GameBaseObject(30,"../Resources/Objects/Base/Grass.png","Grass","草",Collect,99,1,true,5,false,INVAVID_NUM,false,INVAVID_NUM,false,false,{}),
+    GameBaseObject(31,"../Resources/Objects/Base/Box.png","Box","箱子",Collect,1,1,true,5,false,INVAVID_NUM,false,INVAVID_NUM,false,true,{{"Timber",5}}),
 
 
 GameBaseObject(30, "../Resources/Objects/Base/Bigeye.png", "Bigeye", "大眼鱼", Fish,  // 大眼鱼
