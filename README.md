@@ -22,7 +22,7 @@ A project of Stardew Valley based on [Cocos2d-x 3.17.2](https://docs.cocos.com/c
 | 姓名 | 学号 | 分工 |
 | :---: | :---: | :---: |
 | 尹诚成 (组长) | 2351279 |**项目后端与UI设计** <br>代码审查 <br>`Character`类 <br>`CharacterAction`类 <br>`CharacterObjectList`类 <br>`CharacterMove`类 <br>`Box`类 <br>`PlacementMarkerLayer`类 <br>`UILayer`类 <br>`LoactionMap`类 <br>`HoverMenuItemImage`类 |
-| 金恒宇 | 2352280 |  |
+| 金恒宇 | 2352280 |**项目后端与前端对接** <br>地图类统筹 <br>`GameViewControlle`类 <br>`InteractionManager`类 <br>`MapStateManager`类 <br>`MapSwitchManager`类 <br>`GameMap`类 <br>`FarmMap`类 <br>`TownMap`类 <br>`MineMap`类 <br>`IndoorLighting`类<br> `GameMainScene`类 <br> 农场地图绘制 小镇地图绘制|
 | 达思睿 | 2352288 |**UI设计与NPC交互**  <br> `CharacterInfo` 类<br> `HelloWorldScene` 类 <br> `UILayer` 类<br> `TimeManager` 类 <br> `NPC` 类 <br> `NPCManager` 类 <br> `GiftItem` 类 <br> `GiftItemManager` 类  <br> `Task` 类<br> `LoginLayer` 类<br> `FestivalLayer` 类<br> `ChatLayer` 类<br> `AudioControlLayer` 类 <br> 图标按钮绘制 <br> 启动场景绘制 <br> 音频引擎  |
 | 胡宝怡 | 2353409 | |
 
