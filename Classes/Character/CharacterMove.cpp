@@ -34,7 +34,7 @@ CharacterMove::CharacterMove() :
     }
     // 创建精灵并设置初始位置
     _character = Sprite::create("../Resources/Characters/Bear/BearDownAction1.png");
-    _character->setAnchorPoint(Vec2(0.5, 0.5));
+    _character->setAnchorPoint(Vec2(CHARACTER_HORIZONTAL_ANCHORPOINT, CHARACTER_VERTICAL_ANCHORPOINT));
    // _character->setPosition(_position);
     this->addChild(_character);
     _character->setPosition(Vec2(visibleSize.width / 2, visibleSize.height / 2));
