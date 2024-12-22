@@ -17,8 +17,8 @@ USING_NS_CC;
 
 // 构造函数
 UILayer::UILayer() :
-    _timeLabel1(nullptr),
-    _timeLabel2(nullptr),
+    _weekDayLabel(nullptr),
+    _timeHourLabel(nullptr),
     _timeDisplayLayer(nullptr),
     _closedObjectListLayer(nullptr),
     _openedObjectListLayer(nullptr),
@@ -296,16 +296,21 @@ void UILayer::initializeTimeDisplay() {
     const Vec2 labelPos1 = Vec2(rightTopPos.x + originalTimeDisplaySize.width * 0.1, rightTopPos.y + originalTimeDisplaySize.height * scaleY * 0.32f);  // 在背景图片的顶部
     const Vec2 labelPos2 = Vec2(rightTopPos.x + originalTimeDisplaySize.width * 0.1, rightTopPos.y - originalTimeDisplaySize.height * scaleY * 0.05f);  // 在 labelPos1 下面偏移 30
 
-    // 创建并初始化 timeLabel1 和 timeLabel2
-    _timeLabel1 = Label::createWithSystemFont("", "../Resources/fonts/arial.ttf", FONT_SIZE);
-    _timeLabel1->setPosition(labelPos1);
-    _timeLabel1->setTextColor(Color4B::ORANGE);
-    this->addChild(_timeLabel1, UI_LAYER_GRADE);
+    // 创建并初始化 _weekDayLabel 和 _timeHourLabel
+    _weekDayLabel = Label::createWithSystemFont("", FONT_TYPE, FONT_SIZE);
+    _weekDayLabel->setPosition(labelPos1);
+    _weekDayLabel->setTextColor(Color4B::ORANGE);
+    this->addChild(_weekDayLabel, UI_LAYER_GRADE);
 
-    _timeLabel2 = Label::createWithSystemFont("", "../Resources/fonts/arial.ttf", FONT_SIZE);
-    _timeLabel2->setPosition(labelPos2);
-    _timeLabel2->setTextColor(Color4B::ORANGE);
-    this->addChild(_timeLabel2, UI_LAYER_GRADE);
+    _timeHourLabel = Label::createWithSystemFont("", FONT_TYPE, FONT_SIZE);
+    _timeHourLabel->setPosition(labelPos2);
+    _timeHourLabel->setTextColor(Color4B::ORANGE);
+    this->addChild(_timeHourLabel, UI_LAYER_GRADE);
+
+    _weatherLabel = Label::createWithSystemFont("", FONT_TYPE, FONT_SIZE);
+    _weatherLabel->setPosition(_visibleSize.width * 0.9f, _visibleSize.height * 0.8f);
+    _weatherLabel->setTextColor(Color4B::ORANGE);
+    this->addChild(_weatherLabel, UI_LAYER_GRADE);
 }
 
 // 按下鼠标事件触发函数
@@ -353,6 +358,7 @@ void UILayer::onMouseDown(cocos2d::Event* event) {
         }
     }
 
+    // 当商店被打开时才会检测
     if (_storeStatus) {
         for (const auto& storeProdctPos : LocationMap::getInstance().getStoreLocationMap()) {
             const auto sprite = _storeObjectInfo[storeProdctPos.first].sprite;
@@ -370,7 +376,6 @@ void UILayer::onMouseDown(cocos2d::Event* event) {
                         this->removeChild(_storeObjectInfo[storeProdctPos.first].namelabel);
                         this->removeChild(_storeObjectInfo[storeProdctPos.first].pricelabel);
                         _storeObjectInfo[storeProdctPos.first] = { nullptr,nullptr,nullptr }; // 重新初始化
-                    
                 }
             }
         }
@@ -546,17 +551,16 @@ void UILayer::updateTimeDisplay() {
 
     // 获取并更新日期信息（星期和日期）
     std::string weekDay = timeManager->getWeekDay();
-    _timeLabel1->setString(weekDay);  // 显示星期几 
+    _weekDayLabel->setString(weekDay);  // 显示星期几 
 
-    // 获取并更新时间信息（白天/晚上和当前时间）
+    // 获取并更新时间信息（白天/晚上,当前时间,天气）
     const bool isDaytime = timeManager->isDaytime();
-    std::string season = timeManager->getCurrentSeason_();
+    std::string season = timeManager->getCurrentSeasonStr();
     std::string dayOrNight = isDaytime ? "D" : "N";
     std::string timeOfDay = timeManager->getCurrentTime();
-
-    _timeLabel2->setString(season+"-"+dayOrNight + " " + timeOfDay);  // 显示白天/晚上和当前时间的代码部分
-
- 
+    _timeHourLabel->setString(season+"-"+dayOrNight + " " + timeOfDay);  // 显示白天/晚上和当前时间的代码部分
+    std::string weather = timeManager->getCurrentWeatherStr();
+    _weatherLabel->setString(weather);  // 显示天气信息
 
     if (_lastWeekDay != weekDay) {
         _lastWeekDay = weekDay;
@@ -715,7 +719,7 @@ void UILayer::showObjectImage() {
 // 创建物品图片 
 void UILayer::createObjectImage(ObjectImageInfo& objectImageInfo, const std::string spriteFileName, const int count) {
     objectImageInfo.sprite = Sprite::create(spriteFileName);
-    objectImageInfo.label = Label::createWithTTF(std::to_string(count), "../Resources/Fonts/arial.ttf", FONT_SIZE * 2 / 3);
+    objectImageInfo.label = Label::createWithTTF(std::to_string(count), FONT_TYPE, FONT_SIZE * 2 / 3);
     objectImageInfo.sprite->setScale(OBJECT_NODE_SCALE);
     objectImageInfo.label->setTextColor(Color4B::BLACK);
     this->addChild(objectImageInfo.sprite, OBJECT_LAYER_GRADE);
@@ -740,8 +744,8 @@ void UILayer::setObjectImageVisible(const ObjectImageInfo& objectImageInfo, bool
 // 创建商店物品信息
 void UILayer::createStoreObjectInfo(StoreObjectInfo& storeObjectInfo, const std::string spriteFileName, const std::string spriteName, const int price) {
     storeObjectInfo.sprite = Sprite::create(spriteFileName);
-    storeObjectInfo.namelabel = Label::createWithTTF(spriteName, "../Resources/Fonts/arial.ttf", FONT_SIZE * 2 / 3);
-    storeObjectInfo.pricelabel = Label::createWithTTF(std::to_string(price), "../Resources/Fonts/arial.ttf", FONT_SIZE * 2 / 3);
+    storeObjectInfo.namelabel = Label::createWithTTF(spriteName, FONT_TYPE, FONT_SIZE * 2 / 3);
+    storeObjectInfo.pricelabel = Label::createWithTTF(std::to_string(price), FONT_TYPE, FONT_SIZE * 2 / 3);
 
     storeObjectInfo.sprite->setScale(OBJECT_NODE_SCALE);
     storeObjectInfo.namelabel->setTextColor(Color4B::BLACK);

@@ -1,14 +1,21 @@
-﻿#pragma once
+﻿/****************************************************************
+ * Project Name:  Stardew_Valley
+ * File Name:     constant.h
+ * File Function: 常变量和物品类设计头文件constant.h的定义
+ * Author:        尹诚成，金恒宇，胡宝怡，达思睿
+ * Update Date:   2023/12/22
+ * License:       MIT License
+ ****************************************************************/
+
+#pragma once
 #ifndef _CONSTANT_H_
 #define _CONSTANT_H_
-
 
 #include <string>
 #include <memory>
 #include<fstream>
 #include <map>
 #include "cocos2d.h"
-#include"../Classes/MenuImage/HoverMenuItemImage.h"
 
 // 设备分辨率
 constexpr int DESIGN_RESOLUTION_WIDTH = 1920;                               // 设计分辨率宽度
@@ -101,7 +108,64 @@ constexpr int MINE_CREAT_Y = 1120;                                          // �
 constexpr int MINE_TELE_X = 1;                                              // 农场室内地图传送X坐标
 constexpr int MINE_TELE_Y = 5;                                              // 农场室内地图传送Y坐标
 
-// 地图图块相关
+// 物品设置
+constexpr int OBJECT_LIST_ROWS = 3;											// 物品列表行数
+constexpr int OBJECT_LIST_COLS = 12;										// 物品列表列数
+
+// 初始界面相关设置
+constexpr int BG_MOVE_SPEED = 2;                                           //背景图移动速度
+constexpr float BG_UPDATE_RATIO = 0.016f;                                  //背景图更新速度
+
+// UI 相关设置
+const std::string FONT_TYPE = "../Resources/fonts/arial.ttf";               // UI界面字体类型
+constexpr int UI_SCALE = 210.0f;                                            // UI界面缩放
+constexpr int FONT_SIZE = 20;                                               // 字体大小
+constexpr int MAP_LAYER_GRADE = 0;                                          // 地图层级
+constexpr int CHARACTER_LAYER_GRADE = 1;                                    // 角色层级
+constexpr int VIEW_CONTROLLER_LAYER_GRADE = 1;                              // 视角控制类层级
+constexpr int TREE_LAYER_GRADE = 2;                                         // 树木层级
+constexpr int UI_LAYER_GRADE = 3;                                           // UI层级
+constexpr int OBJECT_LAYER_GRADE = 4;                                       // 物品层级
+constexpr int ANIMATION_LAYER_GRADE = 10;                                   // 动画层级
+constexpr float ENLARGEMENT_RATIO = 1.2f;									// 按钮动画缩放比例
+constexpr float ENLARGEMENT_TIME = 0.15f;									// 按钮动画缩放时间
+constexpr int CLOSE_OBJECT_LIST_START_X = 729;								// 物品栏(关闭状态)起始位置的X坐标
+constexpr int CLOSE_OBJECT_LIST_START_Y = 1056;								// 物品栏(关闭状态)起始位置的Y坐标
+constexpr int OPEN_OBJECT_LIST_START_X = 729;								// 物品栏(开启状态)起始位置的X坐标
+constexpr int OPEN_OBJECT_LIST_START_Y = 582;								// 物品栏(开启状态)起始位置的Y坐标
+constexpr int SKILL_LEVEL_START_X = 417;                                    // 技能栏起始位置的X坐标
+constexpr int SKILL_LEVEL_START_Y = 456;                                    // 技能栏起始位置的Y坐标
+constexpr int OBJECT_BOX_START_X = 729;                                     // 箱子起始位置的X坐标
+constexpr int OBJECT_BOX_START_Y = 648;                                     // 箱子起始位置的Y坐标
+constexpr int OBJECT_STORE_IMAGE_START_X = 1410;                            // 商店售卖物品图片起始位置的X坐标
+constexpr int OBJECT_STORE_IMAGE_START_Y = 603;                             // 商店售卖物品图片起始位置的Y坐标
+constexpr int MONEY_COUNT_LABEL_START_X = 1807;                             // 角色金钱数量标签起始位置的X坐标
+constexpr int MONEY_COUNT_LABEL_START_Y = 894;                              // 角色金钱数量标签起始位置的Y坐标
+constexpr int SYNTHESIS_TABLE_START_X = 1431;                               // 合成表图片起始位置的X坐标
+constexpr int SYNTHESIS_TABLE_START_Y = 583;                                // 合成表图片起始位置的Y坐标
+constexpr int WEATHER_LABEL_START_X = 1807;                                 // 天气标签起始位置的X坐标
+constexpr int WEATHER_LABEL_START_Y = 920;                                  // 天气标签起始位置的Y坐标
+constexpr int OBJECT_STORE_IMAGE_NAME_HORIZONTAL_INTERVAL = 102;	        // 商店售卖物品图片名称水平间距
+constexpr int OBJECT_STORE_NAME_PRICE_HORIZONTAL_INTERVAL = 130;			// 商店售卖物品名称和价格水平间距
+constexpr int OBJECT_LIST_NODE_HORIZONTAL_INTERVAL = 42;					// 物品格子水平间距
+constexpr int OBJECT_LIST_NODE_VERTICAL_INTERVAL = 42;						// 物品格子垂直间距
+constexpr float OBJECT_NODE_SCALE = 2.0f;									// 物品缩放比例
+constexpr float BUTTON_SCALE = 2.0f;										// 按钮缩放比例
+constexpr int OPEN_OBJIEC_LIST_DELETE_BUTTON_LEFT_BOUDARY = 1272;			// 物品栏删除按钮左边界
+constexpr int OPEN_OBJIEC_LIST_DELETE_BUTTON_RIGHT_BOUDARY = 1298;			// 物品栏删除按钮右边界
+constexpr int OPEN_OBJIEC_LIST_DELETE_BUTTON_TOP_BOUDARY = 512;				// 物品栏删除按钮上边界
+constexpr int OPEN_OBJIEC_LIST_DELETE_BUTTON_BOTTOM_BOUDARY = 568;			// 物品栏删除按钮下边界
+constexpr int OPEN_OBJIEC_LIST_SELL_BUTTON_LEFT_BOUDARY = 1472;			    // 物品栏出售按钮左边界
+constexpr int OPEN_OBJIEC_LIST_SELL_BUTTON_RIGHT_BOUDARY = 1600;			// 物品栏出售按钮右边界
+constexpr int OPEN_OBJIEC_LIST_SELL_BUTTON_TOP_BOUDARY = 328;				// 物品栏出售按钮上边界
+constexpr int OPEN_OBJIEC_LIST_SELL_BUTTON_BOTTOM_BOUDARY = 392;			// 物品栏出售按钮下边界
+const cocos2d::Vec2 RIGHT_ALIGNED_ANCHOR (1.0f, 0.5f );                     // 文字标签右对齐锚点设置
+constexpr float DIALOG_WIDTH_RATIO = 0.5f;                                  // 对话框宽度占屏幕宽度的比例
+constexpr float DIALOG_HEIGHT_RATIO = 0.25f;                                // 对话框高度占屏幕高度的比例
+constexpr float BUTTON_SIZE_RATIO = 0.1f;                                   // 按钮大小占对话框大小的比例
+constexpr float BUTTON_OFFSET_RATIO = 0.2f;                                 // 按钮与对话框边缘的距离比例
+
+// 地图图块相关设置
 namespace TileConstants {
     constexpr int DRY_FARM_TILE_GID = 2040;                                     // 干燥耕地效果动画图块GID
     constexpr int WET_FARM_TILE_GID = 2044;                                     // 湿润耕地效果动画图块GID
@@ -156,81 +220,21 @@ namespace TileConstants {
 
         // 默认构造
         TileChange()
-            : layerName(""), tileCoord(cocos2d::Vec2::ZERO), newGID(0) {}
+            : layerName(""), tileCoord(cocos2d::Vec2::ZERO), newGID(0) {
+        }
 
         TileChange(const std::string& layer, const cocos2d::Vec2& coord, int gid)
-            : layerName(layer), tileCoord(coord), newGID(gid) {}
+            : layerName(layer), tileCoord(coord), newGID(gid) {
+        }
     };
-    
+
 
     // 用于记录地图放置物品与对应GID的映射关系
     const std::unordered_map<std::string, int> objectGIDMap = {
             {"Box", 4231},
             // 在此添加更多物品名称和对应的 GID
     };
-
-
 }
-// 物品设置
-constexpr int OBJECT_LIST_ROWS = 3;											// 物品列表行数
-constexpr int OBJECT_LIST_COLS = 12;										// 物品列表列数
-
-//初始界面相关设置
-constexpr int BG_MOVE_SPEED = 2;                                           //背景图移动速度
-constexpr float BG_UPDATE_RATIO = 0.016f;                                  //背景图更新速度
-
-
-
-// UI 相关设置
-constexpr float FESTIVAL_UPDATE = 1.0f;                                     //节日UI界面的更新频率
-const std::string FONT_TYPE = "fonts/arial.ttf";                            // UI界面字体类型
-constexpr int UI_SCALE = 210.0f;                                            // UI界面缩放
-constexpr int FONT_SIZE = 20;                                               // 字体大小
-constexpr int MAP_LAYER_GRADE = 0;                                          // 地图层级
-constexpr int CHARACTER_LAYER_GRADE = 1;                                    // 角色层级
-constexpr int VIEW_CONTROLLER_LAYER_GRADE = 1;                              // 视角控制类层级
-constexpr int TREE_LAYER_GRADE = 2;                                         // 树木层级
-constexpr int UI_LAYER_GRADE = 3;                                           // UI层级
-constexpr int OBJECT_LAYER_GRADE = 4;                                       // 物品层级
-constexpr int ANIMATION_LAYER_GRADE = 10;                                   // 动画层级
-constexpr float ENLARGEMENT_RATIO = 1.2f;									// 按钮动画缩放比例
-constexpr float ENLARGEMENT_TIME = 0.15f;									// 按钮动画缩放时间
-constexpr int CLOSE_OBJECT_LIST_START_X = 729;								// 物品栏(关闭状态)起始位置的X坐标
-constexpr int CLOSE_OBJECT_LIST_START_Y = 1056;								// 物品栏(关闭状态)起始位置的Y坐标
-constexpr int OPEN_OBJECT_LIST_START_X = 729;								// 物品栏(开启状态)起始位置的X坐标
-constexpr int OPEN_OBJECT_LIST_START_Y = 582;								// 物品栏(开启状态)起始位置的Y坐标
-constexpr int SKILL_LEVEL_START_X = 417;                                    // 技能栏起始位置的X坐标
-constexpr int SKILL_LEVEL_START_Y = 456;                                    // 技能栏起始位置的Y坐标
-constexpr int OBJECT_BOX_START_X = 729;                                     // 箱子起始位置的X坐标
-constexpr int OBJECT_BOX_START_Y = 648;                                     // 箱子起始位置的Y坐标
-constexpr int OBJECT_STORE_IMAGE_START_X = 1410;                            // 商店售卖物品图片起始位置的X坐标
-constexpr int OBJECT_STORE_IMAGE_START_Y = 603;                             // 商店售卖物品图片起始位置的Y坐标
-constexpr int MONEY_COUNT_LABEL_START_X = 1807;                             // 角色金钱数量标签起始位置的X坐标
-constexpr int MONEY_COUNT_LABEL_START_Y = 894;                              // 角色金钱数量标签起始位置的Y坐标
-constexpr int SYNTHESIS_TABLE_START_X = 1431;                               // 合成表图片起始位置的X坐标
-constexpr int SYNTHESIS_TABLE_START_Y = 583;                                // 合成表图片起始位置的Y坐标
-constexpr int OBJECT_STORE_IMAGE_NAME_HORIZONTAL_INTERVAL = 102;	        // 商店售卖物品图片名称水平间距
-constexpr int OBJECT_STORE_NAME_PRICE_HORIZONTAL_INTERVAL = 130;			// 商店售卖物品名称和价格水平间距
-constexpr int OBJECT_LIST_NODE_HORIZONTAL_INTERVAL = 42;					// 物品格子水平间距
-constexpr int OBJECT_LIST_NODE_VERTICAL_INTERVAL = 42;						// 物品格子垂直间距
-constexpr float OBJECT_NODE_SCALE = 2.0f;									// 物品缩放比例
-constexpr float BUTTON_SCALE = 2.0f;										// 按钮缩放比例
-constexpr int OPEN_OBJIEC_LIST_DELETE_BUTTON_LEFT_BOUDARY = 1272;			// 物品栏删除按钮左边界
-constexpr int OPEN_OBJIEC_LIST_DELETE_BUTTON_RIGHT_BOUDARY = 1298;			// 物品栏删除按钮右边界
-constexpr int OPEN_OBJIEC_LIST_DELETE_BUTTON_TOP_BOUDARY = 512;				// 物品栏删除按钮上边界
-constexpr int OPEN_OBJIEC_LIST_DELETE_BUTTON_BOTTOM_BOUDARY = 568;			// 物品栏删除按钮下边界
-constexpr int OPEN_OBJIEC_LIST_SELL_BUTTON_LEFT_BOUDARY = 1472;			    // 物品栏出售按钮左边界
-constexpr int OPEN_OBJIEC_LIST_SELL_BUTTON_RIGHT_BOUDARY = 1600;			// 物品栏出售按钮右边界
-constexpr int OPEN_OBJIEC_LIST_SELL_BUTTON_TOP_BOUDARY = 328;				// 物品栏出售按钮上边界
-constexpr int OPEN_OBJIEC_LIST_SELL_BUTTON_BOTTOM_BOUDARY = 392;			// 物品栏出售按钮下边界
-const cocos2d::Vec2 RIGHT_ALIGNED_ANCHOR (1.0f, 0.5f );                     // 文字标签右对齐锚点设置
-
-//NPC求婚对话框相关设置
-constexpr float DIALOG_WIDTH_RATIO = 0.5f;                                  // 对话框宽度占屏幕宽度的比例
-constexpr float DIALOG_HEIGHT_RATIO = 0.25f;                                // 对话框高度占屏幕高度的比例
-constexpr float BUTTON_SIZE_RATIO = 0.1f;                                   // 按钮大小占对话框大小的比例
-constexpr float BUTTON_OFFSET_RATIO = 0.2f;                                 // 按钮与对话框边缘的距离比例
-
 
 // 游戏季节定义
 enum Season {
@@ -240,19 +244,32 @@ enum Season {
     Winter,				// 冬天
     All					// 通用
 };
-// 游戏时间设置
 
+// 游戏天气定义
+enum Weather {
+    Sunny,              // 晴天
+    Rainy,              // 雨天
+    Dry                 // 干旱
+};
+
+// 游戏时间设置
 constexpr int INIT_DAY = 1;                                                 //游戏启动时的天数 
 constexpr int INIT_HOUR = 6;                                                //游戏启动时的时间
 constexpr int INIT_MIN = 0;                                                 //游戏启动时的分钟数
 constexpr bool INIT_IS_DAY = 0;                                             //游戏启动时是否白天
-const Season  INIT_SEASON =Season::Spring;                                  //游戏启动时的季节
+const Season  INIT_SEASON = Season::Spring;                                  //游戏启动时的季节
+const Weather INIT_WEATHER = Weather::Sunny;                                //游戏启动时的天气
 constexpr int HOURS_IN_A_DAY = 24;                                          // 一天24小时                                     
 constexpr int DAYS_IN_A_SEASON = 7;                                         // 每季7天
 constexpr int DAYS_IN_A_WEEK = 7;                                           // 每周7天
 constexpr int DAYS_IN_A_YEAR = 28;                                          // 一年28天
 constexpr int DAY_START = 6;                                                // 白天的开始时间
 constexpr int DAY_END = 18;                                                 // 白天的结束时间
+constexpr int WEATHER_NUM = 3;                                              // 天气数量
+constexpr float SUNNY_PROBABILITY = 0.5f;                            // 日间天气的概率
+constexpr float RAINY_PROBABILITY = 0.3f;                            // 雨天天气的概率
+constexpr float DRY_PROBABILITY = 0.2f;                              // 干旱天气的概率
+
 
 //农作物相关设置
 constexpr int MIN_GROWTHSTAGE = 0;                                          //最小生长阶段
@@ -310,16 +327,6 @@ enum GameTools {
     FishingRod,			// 鱼竿
     Kettle				// 水壶
 };
-
-
-
-// 游戏天气定义
-enum Weather {
-    Sunny,              // 晴天
-    Rainy,              // 雨天
-    Dry                 // 干旱
-};
-
 
 // 游戏物品类型定义
 enum GameObjectMapType {

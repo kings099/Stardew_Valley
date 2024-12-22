@@ -1,16 +1,17 @@
 /****************************************************************
  * Project Name:  Stardew_Valley
  * File Name:     NPC.h
- * File Function: ·â×°ÁËÓë NPC Ïà¹ØµÄ»ù±¾¹¦ÄÜ£¬
-                  ÈçÏÔÊ¾¶Ô»°¿ò¡¢Ôö¼ÓºÃ¸Ğ¶È¡¢½ÓÊÜÀñÎï¡¢²¥·ÅĞĞ×ß¶¯»­µÈ¡£
-                  NPC ¶ÔÏó¿ÉÒÔÓëÍæ¼Ò»¥¶¯£¬°üÀ¨¶Ô»°ÒÔ¼°ËÍÀñ¡£
- * Author:        ´ïË¼î£
+ * File Function: å°è£…äº†ä¸ NPC ç›¸å…³çš„åŸºæœ¬åŠŸèƒ½ï¼Œ
+                  å¦‚æ˜¾ç¤ºå¯¹è¯æ¡†ã€å¢åŠ å¥½æ„Ÿåº¦ã€æ¥å—ç¤¼ç‰©ã€æ’­æ”¾è¡Œèµ°åŠ¨ç”»ç­‰ã€‚
+                  NPC å¯¹è±¡å¯ä»¥ä¸ç©å®¶äº’åŠ¨ï¼ŒåŒ…æ‹¬å¯¹è¯ä»¥åŠé€ç¤¼ã€‚
+ * Author:        è¾¾æ€ç¿
  * Update Date:   2024/12/13
  * License:       MIT License
  ****************************************************************/
 #pragma once
 #ifndef NPC_H
 #define NPC_H
+
 #include "cocos2d.h"
 #include "Task.h"
 #include "GiftItem.h"
@@ -21,76 +22,75 @@
 #include <vector>
 #include <string>
 #include"Character.h"
-
+#include"Box/Box.h"
 
 class NPC : public cocos2d::Node {
 public: 
-    std::string _name;                    // NPC µÄÃû×Ö
-    int _affection;                       // ºÃ¸Ğ¶È£¬·¶Î§ 0 - 100
-    bool _isMarried;                      // ÊÇ·ñÒÑ½á»é
-    std::vector<std::string> _dialogues;  // NPC µÄ¶Ô»°ÄÚÈİ
-    cocos2d::Vec2 _destination;           // NPC µÄÄ¿±êÎ»ÖÃ
-    bool _isMoving;                       // NPC ÊÇ·ñÕıÔÚÒÆ¶¯
-    cocos2d::Sprite* _sprite;             // NPC µÄ¾«Áé£¨Íâ¹Û£©
-    cocos2d::Animate* _walkAnimation;     // ĞĞ×ß¶¯»­
-    std::vector<Task*> _tasks;            // NPC ÓµÓĞµÄÈÎÎñ
-    bool _isProcessing;                  // ÓÃÓÚÅĞ¶ÏÊÇ·ñÕıÔÚ´¦ÀíÈÎÎñ
+    std::string _name;                    // NPC çš„åå­—
+    int _affection;                       // å¥½æ„Ÿåº¦ï¼ŒèŒƒå›´ 0 - 100
+    bool _isMarried;                      // æ˜¯å¦å·²ç»“å©š
+    std::vector<std::string> _dialogues;  // NPC çš„å¯¹è¯å†…å®¹
+    cocos2d::Vec2 _destination;           // NPC çš„ç›®æ ‡ä½ç½®
+    bool _isMoving;                       // NPC æ˜¯å¦æ­£åœ¨ç§»åŠ¨
+    cocos2d::Sprite* _sprite;             // NPC çš„ç²¾çµï¼ˆå¤–è§‚ï¼‰
+    cocos2d::Animate* _walkAnimation;     // è¡Œèµ°åŠ¨ç”»
+    std::vector<Task*> _tasks;            // NPC æ‹¥æœ‰çš„ä»»åŠ¡
+    bool _isProcessing;                  // ç”¨äºåˆ¤æ–­æ˜¯å¦æ­£åœ¨å¤„ç†ä»»åŠ¡
 
-    // ¹¹Ôìº¯Êı£¬³õÊ¼»¯ NPC Ãû×ÖºÍÎ»ÖÃ
+    // æ„é€ å‡½æ•°ï¼Œåˆå§‹åŒ– NPC åå­—å’Œä½ç½®
     NPC(std::string name, cocos2d::Vec2 position, const std::string& idleImage, const std::vector<std::string>& walkFrames);
-
    
-    // ³õÊ¼»¯ NPC µÄ¾«ÁéºÍ¶¯»­
+    // åˆå§‹åŒ– NPC çš„ç²¾çµå’ŒåŠ¨ç”»
     void initializeSprite(const std::string& idleImage, const std::vector<std::string>& walkFrames);
 
-    // NPC ÏÔÊ¾¶Ô»°¿ò
+    // NPC æ˜¾ç¤ºå¯¹è¯æ¡†
     void showDialog();
 
     void showDialogue(const std::string& dialogueText);
 
-    // Ôö¼ÓºÃ¸Ğ¶È
+    // å¢åŠ å¥½æ„Ÿåº¦
     void NPC::increaseAffection(int value);
 
-    //Ö´ĞĞÇó»éÂß¼­
+    //æ‰§è¡Œæ±‚å©šé€»è¾‘
     void NPC::marryPlayer();
     
-    //²¥·ÅÇó»é¶¯»­
+    //æ’­æ”¾æ±‚å©šåŠ¨ç”»
     void NPC::playMarriageAnimation();
 
-    //ÊÇ·ñ½á»éµÄÑ¡Ôñ¿ò
+    //æ˜¯å¦ç»“å©šçš„é€‰æ‹©æ¡†
     void NPC::showMarriageChoices();
 
-    // ¼ì²éÍæ¼ÒÊÇ·ñÔÚ NPC ¸½½ü
+    // æ£€æŸ¥ç©å®¶æ˜¯å¦åœ¨ NPC é™„è¿‘
     bool isPlayerNear(cocos2d::Vec2 playerPosition);
 
-    // ËÍÀñÎï
+    // é€ç¤¼ç‰©
     void NPC::giftItem(GiftItem* gift);
 
-    // Ê¹ NPC ÒÆ¶¯µ½Ä¿±êÎ»ÖÃ
+    // ä½¿ NPC ç§»åŠ¨åˆ°ç›®æ ‡ä½ç½®
     void moveTo(cocos2d::Vec2 targetPosition);
 
-    //Æô¶¯ĞĞ×ß¶¯»­
+    //å¯åŠ¨è¡Œèµ°åŠ¨ç”»
     void startWalkingAnimation();
 
-    //·µ»Øµ±Ç°NPCµÄĞÕÃû
+    //è¿”å›å½“å‰NPCçš„å§“å
     std::string getName();
     
-    //¹Ø±Õ¶Ô»°
+    //å…³é—­å¯¹è¯
     void closeDialog(cocos2d::Ref* sender);
 
-    // »ñÈ¡µ±Ç°ºÃ¸Ğ¶È
+    // è·å–å½“å‰å¥½æ„Ÿåº¦
     int getAffection() const;
  
-    //Ôö¼ÓNPCÈÎÎñ
+    //å¢åŠ NPCä»»åŠ¡
     void addTask(Task* task);
 
-    //Õ¹Ê¾ÈÎÎñÁĞ±í
+    //å±•ç¤ºä»»åŠ¡åˆ—è¡¨
     void showTaskList();
 
-    //¼üÅÌ½»»¥
+    //é”®ç›˜äº¤äº’
     void onKeyPressed(EventKeyboard::KeyCode keyCode, Event* event);
 
-    //ĞŞ¸ÄÈÎÎñ´¦Àí×´Ì¬
+    //ä¿®æ”¹ä»»åŠ¡å¤„ç†çŠ¶æ€
     void setIsProcessing(bool isProcessing);
 
     };

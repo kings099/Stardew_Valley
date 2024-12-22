@@ -51,7 +51,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Classes\CursorAndBUutton\HoverCursor.h" />
     <ClInclude Include="main.h">
       <Filter>Win32</Filter>
     </ClInclude>
@@ -177,7 +176,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Classes\CursorAndBUutton\HoverCursor.cpp" />
     <ClCompile Include="main.cpp">
       <Filter>Win32</Filter>
     </ClCompile>
