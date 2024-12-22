@@ -35,8 +35,18 @@ constexpr float LABEL_Y_OFFSET = 0.6f;                                     // �
 constexpr float HALF_FACTOR = 0.5f;                                        // 替代 / 2 的常量因子
 
 //NPC相关设置
-constexpr float NPC_WIDTH = 32;											    // NPC宽度
-constexpr float NPC_HEIGHT = 64;                                            // NPC高度
+
+constexpr float NPC_WIDTH = 16;											    // NPC宽度
+constexpr float NPC_HEIGHT =32;                                             // NPC高度
+constexpr int   AFFECTION_INDEX = 25;                                       // NPC喜爱度因子
+constexpr int   MAX_AFFECTION = 100;                                        //最大喜爱度的值
+constexpr int   MARRIAGE_AFFECTION = 20;                                    //满足结婚条件的喜爱度下限
+constexpr float DIALOG_WIDTH = 500.0f;                                      //对话框宽度
+constexpr float DIALOG_HEIGHT = 120.0f;                                     //对话框高度
+constexpr int DIALOG_X_OFFSET = 250;                                        //对话框相对NPC的偏移量
+constexpr int DIALOG_Y_OFFSET = 160;                                        //对话框相对于NPC的偏移量
+
+
 
 // 移动相关设置
 constexpr auto INVIAID_KEY = cocos2d::EventKeyboard::KeyCode::KEY_NONE;		// 无效键值
@@ -166,9 +176,20 @@ namespace TileConstants {
 constexpr int OBJECT_LIST_ROWS = 3;											// 物品列表行数
 constexpr int OBJECT_LIST_COLS = 12;										// 物品列表列数
 
+//初始界面相关设置
+constexpr int BG_MOVE_SPEED = 2;                                           //背景图移动速度
+constexpr float BG_UPDATE_RATIO = 0.016f;                                  //背景图更新速度
+
+
+
+
+
+
 // UI 相关设置
+
+const std::string FONT_TYPE = "fonts/arial.ttf";                            // UI界面字体类型
 constexpr int UI_SCALE = 210.0f;                                            // UI界面缩放
-constexpr int FONT_SIZE = 24;                                               // 字体大小
+constexpr int FONT_SIZE = 20;                                               // 字体大小
 constexpr int MAP_LAYER_GRADE = 0;                                          // 地图层级
 constexpr int CHARACTER_LAYER_GRADE = 1;                                    // 角色层级
 constexpr int VIEW_CONTROLLER_LAYER_GRADE = 1;                              // 视角控制类层级
@@ -214,10 +235,28 @@ constexpr float DIALOG_HEIGHT_RATIO = 0.25f;                                // �
 constexpr float BUTTON_SIZE_RATIO = 0.1f;                                   // 按钮大小占对话框大小的比例
 constexpr float BUTTON_OFFSET_RATIO = 0.2f;                                 // 按钮与对话框边缘的距离比例
 
+
+// 游戏季节定义
+enum Season {
+    Spring,				// 春天
+    Summer,				// 夏天
+    Fall,				// 秋天
+    Winter,				// 冬天
+    All					// 通用
+};
 // 游戏时间设置
+
+constexpr int INIT_DAY = 1;                                                 //游戏启动时的天数 
+constexpr int INIT_HOUR = 6;                                                //游戏启动时的时间
+constexpr int INIT_MIN = 0;                                                 //游戏启动时的分钟数
+constexpr bool INIT_IS_DAY = 0;                                             //游戏启动时是否白天
+const Season  INIT_SEASON =Season::Spring;                                  //游戏启动时的季节
 constexpr int HOURS_IN_A_DAY = 24;                                          // 一天24小时                                     
 constexpr int DAYS_IN_A_SEASON = 7;                                         // 每季7天
+constexpr int DAYS_IN_A_WEEK = 7;                                           // 每周7天
 constexpr int DAYS_IN_A_YEAR = 28;                                          // 一年28天
+constexpr int DAY_START = 6;                                                // 白天的开始时间
+constexpr int DAY_END = 18;                                                 // 白天的结束时间
 
 //农作物相关设置
 constexpr int MIN_GROWTHSTAGE = 0;                                          //最小生长阶段
@@ -275,14 +314,7 @@ enum GameTools {
     Kettle				// 水壶
 };
 
-// 游戏季节定义
-enum Season {
-    Spring,				// 春天
-    Summer,				// 夏天
-    Fall,				// 秋天
-    Winter,				// 冬天
-    All					// 通用
-};
+
 
 // 游戏天气定义
 enum Weather {
@@ -290,6 +322,7 @@ enum Weather {
     Rainy,              // 雨天
     Dry                 // 干旱
 };
+
 
 // 游戏物品类型定义
 enum GameObjectMapType {
@@ -915,9 +948,6 @@ struct  ProductNode {
     Season discountSeason;      // 商品打折的季节
     Season increaseSeason;      // 商品涨价的季节
 };
-
-
-
 
 
 #endif // !_CONSTANT_H_

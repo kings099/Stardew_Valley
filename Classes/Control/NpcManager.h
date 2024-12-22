@@ -26,6 +26,6 @@ private:
     NpcManager();  // 私有构造函数，避免外部实例化
     ~NpcManager();  // 析构函数
 
-    static NpcManager* instance;  // 单例实例
-    std::vector<NPC*> npcs;  // NPC 列表
+    static NpcManager* _instance;  // 单例实例
+    std::vector<NPC*> _npcs;  // NPC 列表
 };

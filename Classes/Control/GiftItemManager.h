@@ -16,5 +16,5 @@ private:
     GiftItemManager(const GiftItemManager&) = delete;  // 禁用拷贝构造函数
     GiftItemManager& operator=(const GiftItemManager&) = delete;  // 禁用赋值操作符
 
-    std::vector<GiftItem> gifts;  // 礼物列表
+    std::vector<GiftItem> _gifts;  // 礼物列表
 };
