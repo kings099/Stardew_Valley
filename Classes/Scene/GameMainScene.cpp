@@ -39,6 +39,10 @@ bool GameMainScene::init()
     // 加载农场地图
     _farmMap = FarmMap::create("../Resources/Maps/Farm/Farm_Combat.tmx", treeLayer);
     Maplayer->addChild(_farmMap, MAP_LAYER_GRADE);
+    
+    // 加载地图存档
+    MapStateManager::getInstance().loadChangesFromFile("../GameData/MapChanges.dat");
+    _farmMap->applySavedChanges();
 
     // 加载角色
     _character = Character::getInstance();
@@ -46,7 +50,7 @@ bool GameMainScene::init()
    
     // 初始化视角控制器
     _viewController = GameViewController::create(_character, _farmMap);
-    this->addChild(_viewController);
+    this->addChild(_viewController,100);
 
     // 初始化交互管理器
     _interaction = InteractionManager::create(_farmMap);
@@ -90,6 +94,8 @@ bool GameMainScene::init()
         Vec2 actionTilePos;
         GameCharacterAction action;
         this->_character->onMouseDown(event, action, actionTilePos, _interaction);
+        // 更新当前选中物品给地图类
+        _interaction->updateCurrentObject(_character->getCurrentObject(),_character->getSkillLevel(GameObjectSkillType::Farm));
         _interaction->ActionAnimation(action, actionTilePos);
         CCLOG("target tile: (%f, %f), action: %d",
             actionTilePos.x, actionTilePos.y, action);
@@ -136,5 +142,6 @@ void GameMainScene::menuCloseCallback(Ref* pSender)
     // 退出游戏
     _character->saveData();
     Box::getInstance().saveData("../GameData/BoxObjectListData.dat");
+    MapStateManager::getInstance().saveChangesToFile("../GameData/MapChanges.dat");
     Director::getInstance()->end();
 }

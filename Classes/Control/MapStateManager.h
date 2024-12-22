@@ -13,6 +13,7 @@
 #include <unordered_map>
 #include <vector>
 #include <string>
+#include <fstream>
 #include "proj.win32/Constant.h"
 #include "cocos2d.h"
 
@@ -30,6 +31,13 @@ public:
 
     // 清除指定地图的所有更改
     void clearTileChanges(const std::string& mapName);
+
+    // 保存地图信息到文件
+    void saveChangesToFile(const std::string& fileName) const;
+
+    // 读取地图信息到文件
+    void loadChangesFromFile(const std::string& fileName);
+
 
 private:
     // 构造函数和析构函数私有化

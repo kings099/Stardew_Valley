@@ -27,15 +27,21 @@ public:
 
 private:
     Character* _character;  // 角色对象
+
     GameMap* _map;      // 地图对象
 
-    GameViewController();  // 构造函数，接受角色对象
+
+
+    // 构造函数
+    GameViewController(); 
 
     //视判断辅助函数
     float GameViewController::clamp(float value, float minVal, float maxVal);
 
     // 初始化方法
     bool init(Character* character, GameMap* gamemap);
+
+
 };
 
 #endif // __GAME_VIEW_CONTROLLER_H__

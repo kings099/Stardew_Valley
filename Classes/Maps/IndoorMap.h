@@ -21,15 +21,15 @@ class IndoorMap :public GameMap
 {
 public:
     IndoorMap(const Vec2& mapPosition);
-    virtual ~IndoorMap();
+    ~IndoorMap();
 
     // 在mapposition位置创建农场地图，默认为0，0
     static IndoorMap* create(const std::string& mapFile, const Vec2& mapPosition = Vec2(0, 0));
 
     // 初始化函数
-    virtual bool init(const std::string& mapFile, const Vec2& mapPosition);
+    bool init(const std::string& mapFile, const Vec2& mapPosition);
 
-    MapType getType() const override { return MapType::Farm; }
+    MapType getType() const override { return MapType::Indoor; }
 };
 
 #endif // __INDOOR_MAP_H_
