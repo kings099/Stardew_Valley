@@ -37,8 +37,12 @@ public:
     // 获取树木图层
     static void setTreeLayer(cocos2d::Node* treeLayer);
 
-    // 获取指定位置的树木精灵指针
-    Crops* getTreeAtPosition(const Vec2& tilePos) override;
+    // 重写获取节点的方法
+    Node* getNodeAtPosition(const Vec2& tilePos) override;
+
+    // 获取农作物指针的方法
+    Crops* getCropAtPosition(const Vec2& tilePos);
+
 
     // 获取地图类型
     MapType getType() const override { return MapType::Farm; }

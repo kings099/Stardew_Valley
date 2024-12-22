@@ -26,6 +26,9 @@ public:
     // 在mapposition位置创建农场地图，默认为0，0
     static IndoorMap* create(const std::string& mapFile, const Vec2& mapPosition = Vec2(0, 0));
 
+    // 重写基类函数，获取室内地图类型的某节点
+    Node* getNodeAtPosition(const Vec2& tilePos);
+
     // 初始化函数
     bool init(const std::string& mapFile, const Vec2& mapPosition);
 

@@ -32,6 +32,9 @@ public:
     // 重写替换地块逻辑，增加刷新逻辑
     void replaceTileAt(const std::string& layerName, const Vec2& tileCoord, int newGID, bool isUserAction = true) override;
 
+    // 重写基类函数，获取矿洞地图类型的某节点
+    Node* getNodeAtPosition(const Vec2& tilePos);
+
     MapType getType() const { return MapType::Mine; }
 
 private:

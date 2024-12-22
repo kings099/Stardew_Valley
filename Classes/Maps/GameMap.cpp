@@ -186,8 +186,8 @@ TMXTiledMap* GameMap::getTiledMap() const {
     return _tile_map;
 }
 
-//获取农作物精灵指针，只在农场地图有效，在农场地图中重写
-Crops* GameMap::getTreeAtPosition(const Vec2& tilePos) {
+//获取节点指针
+Node* GameMap::getNodeAtPosition(const Vec2& tilePos) {
     return nullptr; // 默认返回 nullptr
 }
 
