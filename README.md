@@ -430,6 +430,9 @@ A project of Stardew Valley based on [Cocos2d-x 3.17.2](https://docs.cocos.com/c
 - 调整UI与用户交互细节
 - 基本实现市场经济系统
 
+#### 2024.12.21
+- 完成合成表功能
+- 项目测试与收尾工作
 
 ---
 #### 文档更新日期：2024年12月22日
