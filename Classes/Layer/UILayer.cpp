@@ -75,17 +75,6 @@ UILayer::UILayer() :
     };
 }
 
-// 析构函数
-UILayer::~UILayer() {
-    //delete _character;
-    //delete _objectListLayer;
-    //delete _timeLabel1;
-    //delete _timeLabel2;
-    //delete _timeDisplayLayer;
-    //delete _deleteObjectButton;
-    //delete _closeObjectListButton;
-}
-
 // 初始化UI层
 bool UILayer::init() {
     if (!Layer::init()) {
