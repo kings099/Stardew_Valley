@@ -1,8 +1,8 @@
 /****************************************************************
  * Project Name:  Stardew_Valley
  * File Name:     UILayer.h
- * File Function: UI½çÃæUILayerÀàµÄ¶¨Òå
- * Author:        ´ïË¼î££¬Òü³Ï³É
+ * File Function: UIç•Œé¢UILayerç±»çš„å®šä¹‰
+ * Author:        è¾¾æ€ç¿ï¼Œå°¹è¯šæˆ
  * Update Date:   2024/12/18
  * License:       MIT License
  ****************************************************************/
@@ -21,129 +21,126 @@
 
 class UILayer : public cocos2d::Layer {
 public:
-	// ¹¹Ôìº¯Êı
+	// æ„é€ å‡½æ•°
 	UILayer();
 
-	// Îö¹¹º¯Êı
-	~UILayer();
-
-	// ³õÊ¼»¯UI²ã
+	// åˆå§‹åŒ–UIå±‚
 	virtual bool init();
 
-	// °´ÏÂÊó±êÊÂ¼ş´¥·¢º¯Êı
+	// æŒ‰ä¸‹é¼ æ ‡äº‹ä»¶è§¦å‘å‡½æ•°
 	void onMouseDown(cocos2d::Event* event);
 
-	// ÒÆ¶¯Êó±êÊÂ¼ş´¥·¢º¯Êı
+	// ç§»åŠ¨é¼ æ ‡äº‹ä»¶è§¦å‘å‡½æ•°
 	void onMouseMove(cocos2d::Event* event);
 
-	// ÊÍ·ÅÊó±êÊÂ¼ş´¥·¢º¯Êı
+	// é‡Šæ”¾é¼ æ ‡äº‹ä»¶è§¦å‘å‡½æ•°
 	void onMouseUp(cocos2d::Event* event);
 
-	// °´ÏÂ¼üÅÌÊÂ¼ş´¥·¢º¯Êı
+	// æŒ‰ä¸‹é”®ç›˜äº‹ä»¶è§¦å‘å‡½æ•°
 	void onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event);
 
-	// ³õÊ¼»¯ÎïÆ·À¸
+	// åˆå§‹åŒ–ç‰©å“æ 
 	void initializeObjectList();
 
-	// ³õÊ¼»¯¼¼ÄÜ°å
+	// åˆå§‹åŒ–æŠ€èƒ½æ¿
 	void initializeSkillBoard();
 
-	// ³õÊ¼»¯Ê±¼äÏÔÊ¾Æ÷
+	// åˆå§‹åŒ–æ—¶é—´æ˜¾ç¤ºå™¨
 	void initializeTimeDisplay();
 
-	// ³õÊ¼»¯ÉÌµê
+	// åˆå§‹åŒ–å•†åº—
 	void initializeShop();
 
-	// ³õÊ¼»¯ºÏ³É±í
+	// åˆå§‹åŒ–åˆæˆè¡¨
 	void initializeSynthesisTable();
 
-	// ¸üĞÂÎïÆ·À¸
+	// æ›´æ–°ç‰©å“æ 
 	void updateObjectList();
 
-	// ¸üĞÂÊ±¼äÏÔÊ¾Æ÷
+	// æ›´æ–°æ—¶é—´æ˜¾ç¤ºå™¨
 	void updateTimeDisplay();
 
-	// ¸üĞÂ½ÇÉ«½ğÇ®ÏÔÊ¾
+	// æ›´æ–°è§’è‰²é‡‘é’±æ˜¾ç¤º
 	void updateCharacterMoneyLabel();
 
-	// ¸üĞÂUI½çÃæ
+	// æ›´æ–°UIç•Œé¢
 	void update(float deltaTime);
 
-	// ÏÔÊ¾ÎïÆ·Í¼Æ¬
+	// æ˜¾ç¤ºç‰©å“å›¾ç‰‡
 	void showObjectImage();
 
-	// UILayerµÄcreateº¯Êı
+	// UILayerçš„createå‡½æ•°
 	CREATE_FUNC(UILayer);
 
 private:
-	Character* _character;															// ½ÇÉ«Ö¸Õë
-	Store *_store;																	// ÉÌµêÖ¸Õë
-	cocos2d::Size _visibleSize;														// ¿É¼ûÇøÓòµÄ´óĞ¡
-	cocos2d::Label* _weekDayLabel;													// ÏÔÊ¾ĞÇÆÚºÍÈÕÆÚµÄ±êÇ©Ö¸Õë
-	cocos2d::Label* _timeHourLabel;													// ÏÔÊ¾°×Ìì/ÍíÉÏºÍĞ¡Ê±µÄ±êÇ©Ö¸Õë
-	cocos2d::Label* _characterMoneyLabel;											// ½ÇÉ«½ğÇ®ÏÔÊ¾±êÇ©Ö¸Õë
-	cocos2d::Label* _weatherLabel;													// ÌìÆø±êÇ©Ö¸Õë
-	cocos2d::Sprite* _timeDisplayLayer;												// ÓÃ×÷ÎªÊ±¼äÏÔÊ¾Æ÷±³¾°µÄÍ¼Æ¬Ö¸Õë
-	cocos2d::Sprite* _closedObjectListLayer;										// ÎïÆ·À¸¹Ø±Õ×´Ì¬Í¼Æ¬Ö¸Õë
-	cocos2d::Sprite* _openedObjectListLayer;										// ÎïÆ·À¸´ò¿ª×´Ì¬Í¼Æ¬Ö¸Õë
-	cocos2d::Sprite* _boxObjectListLayer;											// Ïä×ÓÎïÆ·À¸Í¼Æ¬Ö¸Õë
-	cocos2d::Sprite* _skillLevelBoardLayer;											// ¼¼ÄÜ°åÍ¼Æ¬Ö¸Õë
-	cocos2d::Sprite* _shopLayer;													// ÉÌµêÍ¼Æ¬Ö¸Õë
-	cocos2d::Sprite* _synthesisTableLayer;											// ºÏ³É±íÍ¼Æ¬Ö¸Õë
-	cocos2d::Sprite* _selectObjectSpriteMarker[OBJECT_LIST_COLS];					// Ñ¡ÖĞÎïÆ·µÄ±ê¼ÇÖ¸Õë(¹Ø±Õ×´Ì¬µÄÎïÆ·À¸£©
-	cocos2d::Sprite* _skillLevelLayer[SKILL_KIND_NUM * SKILL_LEVEL_NUM];			// ¼¼ÄÜµÈ¼¶Ö¸Õë
-	cocos2d::Sprite* _nearestPlacementMarker;										// ×î½ü·ÅÖÃ±ê¼ÇÖ¸Õë
-	ObjectImageInfo _closedObjectSpriteImage[OBJECT_LIST_COLS];						// ÎïÆ·À¸¹Ø±ÕÊ±ÏÔÊ¾µÄÎïÆ·Í¼Æ¬Ö¸Õë
-	ObjectImageInfo _openedObjectSpriteImage[OBJECT_LIST_COLS * OBJECT_LIST_ROWS];	// ÎïÆ·À¸´ò¿ªÊ±ÏÔÊ¾µÄÎïÆ·Í¼Æ¬Ö¸Õë
-	ObjectImageInfo _boxObjectSpriteImage[OBJECT_LIST_COLS];						// Ïä×ÓÎïÆ·Í¼Æ¬Ö¸Õë
-	ObjectImageInfo _selectedObjectImage;											// µ±Ç°Ñ¡ÖĞµÄÎïÆ·Í¼Æ¬¶ÔÏó
-	StoreObjectInfo _storeObjectInfo[PRODUCE_KIND_NUM_EACH_DAY];				    // ÉÌµêÎïÆ·ĞÅÏ¢Ö¸Õë
-	HoverMenuItemImage* _synthesisObjectSpriteImage[SYNTHESIS_TABLE_COLS * SYNTHESIS_TABLE_ROWS];	// ºÏ³É±íÏÔÊ¾µÄÎïÆ·Í¼Æ¬Ö¸Õë
-	HoverMenuItemImage* _deleteObjectButton;										// É¾³ıÎïÆ·°´Å¥
-	HoverMenuItemImage* _closeObjectListButton;										// ¹Ø±ÕÎïÆ·À¸°´Å¥
-	HoverMenuItemImage* _sellObjectButton;											// ³öÊÛÎïÆ·°´Å¥
-	HoverMenuItemImage* _exitButton;												// ÍË³ö°´Å¥
-	PlacementMarkerLayer* _placementMarkerLayer;									// ·ÅÖÃ±ê¼Ç²ãÀàÖ¸Õë
-	bool _objectListStatus;															// ÎïÆ·À¸×´Ì¬
-	bool _lastObjectListStatus;														// ÉÏÒ»´ÎÎïÆ·À¸×´Ì¬
-	bool _boxObjectListStatus;														// ÊÇ·ñ´ò¿ªÏä×Ó
-	bool _storeStatus;																// ÉÌµê×´Ì¬
-	bool _synthesisTableStatus;														// ºÏ³É±í×´Ì¬
-	int _lastSelectedObjectIndex;													// ÉÏÒ»´ÎÎïÆ·À¸Ë÷Òı
-	Location _startLocation;														// ÎïÆ·ÒÆ¶¯ÆğÊ¼Î»ÖÃÊôĞÔ
-	std::string _lastWeekDay;														// ÉÏÒ»ÌìµÄĞÅÏ¢
-	// ´´½¨ÎïÆ·Í¼Æ¬ 
+	Character* _character;															// è§’è‰²æŒ‡é’ˆ
+	Store *_store;																	// å•†åº—æŒ‡é’ˆ
+	cocos2d::Size _visibleSize;														// å¯è§åŒºåŸŸçš„å¤§å°
+	cocos2d::Label* _weekDayLabel;													// æ˜¾ç¤ºæ˜ŸæœŸå’Œæ—¥æœŸçš„æ ‡ç­¾æŒ‡é’ˆ
+	cocos2d::Label* _timeHourLabel;													// æ˜¾ç¤ºç™½å¤©/æ™šä¸Šå’Œå°æ—¶çš„æ ‡ç­¾æŒ‡é’ˆ
+	cocos2d::Label* _characterMoneyLabel;											// è§’è‰²é‡‘é’±æ˜¾ç¤ºæ ‡ç­¾æŒ‡é’ˆ
+	cocos2d::Label* _weatherLabel;													// å¤©æ°”æ ‡ç­¾æŒ‡é’ˆ
+	cocos2d::Sprite* _timeDisplayLayer;												// ç”¨ä½œä¸ºæ—¶é—´æ˜¾ç¤ºå™¨èƒŒæ™¯çš„å›¾ç‰‡æŒ‡é’ˆ
+	cocos2d::Sprite* _closedObjectListLayer;										// ç‰©å“æ å…³é—­çŠ¶æ€å›¾ç‰‡æŒ‡é’ˆ
+	cocos2d::Sprite* _openedObjectListLayer;										// ç‰©å“æ æ‰“å¼€çŠ¶æ€å›¾ç‰‡æŒ‡é’ˆ
+	cocos2d::Sprite* _boxObjectListLayer;											// ç®±å­ç‰©å“æ å›¾ç‰‡æŒ‡é’ˆ
+	cocos2d::Sprite* _skillLevelBoardLayer;											// æŠ€èƒ½æ¿å›¾ç‰‡æŒ‡é’ˆ
+	cocos2d::Sprite* _shopLayer;													// å•†åº—å›¾ç‰‡æŒ‡é’ˆ
+	cocos2d::Sprite* _synthesisTableLayer;											// åˆæˆè¡¨å›¾ç‰‡æŒ‡é’ˆ
+	cocos2d::Sprite* _selectObjectSpriteMarker[OBJECT_LIST_COLS];					// é€‰ä¸­ç‰©å“çš„æ ‡è®°æŒ‡é’ˆ(å…³é—­çŠ¶æ€çš„ç‰©å“æ ï¼‰
+	cocos2d::Sprite* _skillLevelLayer[SKILL_KIND_NUM * SKILL_LEVEL_NUM];			// æŠ€èƒ½ç­‰çº§æŒ‡é’ˆ
+	cocos2d::Sprite* _nearestPlacementMarker;										// æœ€è¿‘æ”¾ç½®æ ‡è®°æŒ‡é’ˆ
+	ObjectImageInfo _closedObjectSpriteImage[OBJECT_LIST_COLS];						// ç‰©å“æ å…³é—­æ—¶æ˜¾ç¤ºçš„ç‰©å“å›¾ç‰‡æŒ‡é’ˆ
+	ObjectImageInfo _openedObjectSpriteImage[OBJECT_LIST_COLS * OBJECT_LIST_ROWS];	// ç‰©å“æ æ‰“å¼€æ—¶æ˜¾ç¤ºçš„ç‰©å“å›¾ç‰‡æŒ‡é’ˆ
+	ObjectImageInfo _boxObjectSpriteImage[OBJECT_LIST_COLS];						// ç®±å­ç‰©å“å›¾ç‰‡æŒ‡é’ˆ
+	ObjectImageInfo _selectedObjectImage;											// å½“å‰é€‰ä¸­çš„ç‰©å“å›¾ç‰‡å¯¹è±¡
+	StoreObjectInfo _storeObjectInfo[PRODUCE_KIND_NUM_EACH_DAY];				    // å•†åº—ç‰©å“ä¿¡æ¯æŒ‡é’ˆ
+	HoverMenuItemImage* _synthesisObjectSpriteImage[SYNTHESIS_TABLE_COLS * SYNTHESIS_TABLE_ROWS];	// åˆæˆè¡¨æ˜¾ç¤ºçš„ç‰©å“å›¾ç‰‡æŒ‡é’ˆ
+	HoverMenuItemImage* _deleteObjectButton;										// åˆ é™¤ç‰©å“æŒ‰é’®
+	HoverMenuItemImage* _closeObjectListButton;										// å…³é—­ç‰©å“æ æŒ‰é’®
+	HoverMenuItemImage* _sellObjectButton;											// å‡ºå”®ç‰©å“æŒ‰é’®
+	HoverMenuItemImage* _exitButton;												// é€€å‡ºæŒ‰é’®
+	PlacementMarkerLayer* _placementMarkerLayer;									// æ”¾ç½®æ ‡è®°å±‚ç±»æŒ‡é’ˆ
+	bool _objectListStatus;															// ç‰©å“æ çŠ¶æ€
+	bool _lastObjectListStatus;														// ä¸Šä¸€æ¬¡ç‰©å“æ çŠ¶æ€
+	bool _boxObjectListStatus;														// æ˜¯å¦æ‰“å¼€ç®±å­
+	bool _storeStatus;																// å•†åº—çŠ¶æ€
+	bool _synthesisTableStatus;														// åˆæˆè¡¨çŠ¶æ€
+	int _lastSelectedObjectIndex;													// ä¸Šä¸€æ¬¡ç‰©å“æ ç´¢å¼•
+	Location _startLocation;														// ç‰©å“ç§»åŠ¨èµ·å§‹ä½ç½®å±æ€§
+	std::string _lastWeekDay;														// ä¸Šä¸€å¤©çš„ä¿¡æ¯
+	// åˆ›å»ºç‰©å“å›¾ç‰‡ 
 	void createObjectImage(ObjectImageInfo& objectImageInfo,const std::string spriteFileName,const int count);
 
-	// ÉèÖÃÎïÆ·Í¼Æ¬Î»ÖÃ
+	// è®¾ç½®ç‰©å“å›¾ç‰‡ä½ç½®
 	void setObjectImagePosition(const ObjectImageInfo& objectImageInfo, const cocos2d::Vec2& position);
 
-	// ÉèÖÃÎïÆ·Í¼Æ¬ÊÇ·ñ¿É¼û
+	// è®¾ç½®ç‰©å“å›¾ç‰‡æ˜¯å¦å¯è§
 	void setObjectImageVisible(const ObjectImageInfo& objectImageInfo, bool visible);
 
-	// ´´½¨ÉÌµêÎïÆ·ĞÅÏ¢
+	// åˆ›å»ºå•†åº—ç‰©å“ä¿¡æ¯
 	void createStoreObjectInfo(StoreObjectInfo& storeObjectInfo, const std::string spriteFileName,const std::string spriteName, const int price);
 
-	// ÉèÖÃÉÌµêÎïÆ·Í¼Æ¬Î»ÖÃ
+	// è®¾ç½®å•†åº—ç‰©å“å›¾ç‰‡ä½ç½®
 	void setStoreObjectInfoPosition(const StoreObjectInfo& storeObjectInfo, const cocos2d::Vec2& position);
 
-	// ÉèÖÃÉÌµêÎïÆ·Í¼Æ¬ÊÇ·ñ¿É¼û
+	// è®¾ç½®å•†åº—ç‰©å“å›¾ç‰‡æ˜¯å¦å¯è§
 	void setStoreObjectInfoVisible(const StoreObjectInfo& storeObjectInfo, bool visible);
 
-	// ÉèÖÃ¼¼ÄÜ±íÊÇ·ñ¿É¼û
+	// è®¾ç½®æŠ€èƒ½è¡¨æ˜¯å¦å¯è§
 	void setSkillLevelVisible(bool visible);
 
-	// ÉèÖÃºÏ³É±íÊÇ·ñ¿É¼û
+	// è®¾ç½®åˆæˆè¡¨æ˜¯å¦å¯è§
 	void setSynthesisTableVisible(bool visible);
 
-	// Ñ°ÕÒ×î½ü¿É·ÅÖÃ×ø±ê
+	// å¯»æ‰¾æœ€è¿‘å¯æ”¾ç½®åæ ‡
 	cocos2d::Vec2 findNearestPoint(cocos2d::Sprite* objectSprite);
 
-	// ÉèÖÃÑ¡ÖĞÎïÆ·±ê¼Ç¿òµÄÏÔÊ¾×´Ì¬
+	// è®¾ç½®é€‰ä¸­ç‰©å“æ ‡è®°æ¡†çš„æ˜¾ç¤ºçŠ¶æ€
 	void setSelectObjectSpriteMarker(int index, bool show);
 
 
-	// ¹Ø±Õ»Øµ÷
+	// å…³é—­å›è°ƒ
 	void menuCloseCallback(cocos2d::Ref* pSender);
 };
 
