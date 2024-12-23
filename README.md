@@ -241,7 +241,7 @@ A project of Stardew Valley based on [Cocos2d-x 3.17.2](https://docs.cocos.com/c
         在派生类中，这些虚函数可以根据具体的地图类型重写，以实现特定的行为。这意味着你可以使用基类指针来操作子类对象，而程序会在运行时根据对象的实际类型决定调用哪个函数，使用示例如下：
 
     	```cpp
-     	virtual bool init(const std::string& mapFile, const Vec2& mapPosition);
+     	virtual void replaceTileAt(const std::string& layerName, const Vec2& tileCoord, int newGID, bool isUserAction);
     	virtual Node* getNodeAtPosition(const Vec2& tilePos);
         ```
 
@@ -280,6 +280,10 @@ A project of Stardew Valley based on [Cocos2d-x 3.17.2](https://docs.cocos.com/c
     * 游戏背景音乐与音效
 
       游戏背景音乐结合了《星露谷》中的音乐音效，更加还原。
+
+    * 游戏地图与交互动画
+
+      游戏地图鱼交互动画按《星露谷》官方地图和动画制作，所有地图均能在官方地图找到对应。
 
   * [x] 常变量的集中定义
 
